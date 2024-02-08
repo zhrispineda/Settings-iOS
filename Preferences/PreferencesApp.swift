@@ -2,7 +2,7 @@
 //  PreferencesApp.swift
 //  Preferences
 //
-//  Created by Chris on 2/7/24.
+//  Settings
 //
 
 import SwiftUI
