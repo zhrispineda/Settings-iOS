@@ -20,8 +20,8 @@ struct ContentView: View {
             Color.primary
                 .opacity(0.35)
                 .ignoresSafeArea()
-            HStack(spacing: 0.3) {
-                NavigationStack { // TODO: Clean up loops, maybe separate iPad and iPhone views
+            HStack(spacing: 0.25) {
+                NavigationStack {
                     if UIDevice.current.localizedModel == "iPad" {
                         List(selection: $selection) {
                             Button(action: {}, label: {
@@ -46,53 +46,29 @@ struct ContentView: View {
                                 .padding(.vertical, -5)
                             })
                             
+                            // MARK: Focus Settings
                             Section {
                                 ForEach(focusSettings) { setting in
                                     Button(action: {
                                         id = UUID() // Reset destination
                                         selection = setting.type
                                     }, label: {
-                                        HStack(spacing: 15) {
-                                            ZStack {
-                                                setting.color
-                                                    .frame(width: 30, height: 30)
-                                                    .clipShape(RoundedRectangle(cornerRadius: 5))
-                                                    .overlay(
-                                                        RoundedRectangle(cornerRadius: 5)
-                                                            .stroke(Color.white, lineWidth: 0.1))
-                                                Image(systemName: setting.icon)
-                                                    .imageScale(.large)
-                                                    .foregroundStyle(.white)
-                                            }
-                                            Text(setting.id)
-                                        }
-                                        .foregroundStyle(selection == setting.type ? Color.white : Color(UIColor.label))
+                                        SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id)
+                                            .foregroundStyle(selection == setting.type ? Color.white : Color(UIColor.label))
                                     })
                                     .listRowBackground(selection == setting.type ? Color.blue : nil)
                                 }
                             }
                             
+                            // MARK: Main Settings
                             Section {
                                 ForEach(mainSettings) { setting in
                                     Button(action: {
                                         id = UUID() // Reset destination
                                         selection = setting.type
                                     }, label: {
-                                        HStack(spacing: 15) {
-                                            ZStack {
-                                                setting.color
-                                                    .frame(width: 30, height: 30)
-                                                    .clipShape(RoundedRectangle(cornerRadius: 5))
-                                                    .overlay(
-                                                        RoundedRectangle(cornerRadius: 5)
-                                                            .stroke(Color.white, lineWidth: 0.1))
-                                                Image(systemName: setting.icon)
-                                                    .imageScale(.large)
-                                                    .foregroundStyle(.white)
-                                            }
-                                            Text(setting.id)
-                                        }
-                                        .foregroundStyle(selection == setting.type ? Color.white : Color(UIColor.label))
+                                        SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id)
+                                            .foregroundStyle(selection == setting.type ? Color.white : Color(UIColor.label))
                                     })
                                     .listRowBackground(selection == setting.type ? Color.blue : nil)
                                 }
@@ -135,45 +111,21 @@ struct ContentView: View {
                                 })
                             }
                             
+                            // MARK: Focus Settings
                             Section {
                                 ForEach(focusSettings) { setting in
-                                    NavigationLink(destination: setting.destination) {
-                                        HStack(spacing: 15) {
-                                            ZStack {
-                                                setting.color
-                                                    .frame(width: 30, height: 30)
-                                                    .clipShape(RoundedRectangle(cornerRadius: 5))
-                                                    .overlay(
-                                                        RoundedRectangle(cornerRadius: 5)
-                                                            .stroke(Color.white, lineWidth: 0.1))
-                                                Image(systemName: setting.icon)
-                                                    .imageScale(.large)
-                                                    .foregroundStyle(.white)
-                                            }
-                                            Text(setting.id)
-                                        }
-                                    }
+                                    SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, content: {
+                                        setting.destination
+                                    })
                                 }
                             }
                             
+                            // MARK: Main Settings
                             Section {
                                 ForEach(mainSettings) { setting in
-                                    NavigationLink(destination: setting.destination) {
-                                        HStack(spacing: 15) {
-                                            ZStack {
-                                                setting.color
-                                                    .frame(width: 30, height: 30)
-                                                    .clipShape(RoundedRectangle(cornerRadius: 5))
-                                                    .overlay(
-                                                        RoundedRectangle(cornerRadius: 5)
-                                                            .stroke(Color.white, lineWidth: 0.1))
-                                                Image(systemName: setting.icon)
-                                                    .imageScale(.large)
-                                                    .foregroundStyle(.white)
-                                            }
-                                            Text(setting.id)
-                                        }
-                                    }
+                                    SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, content: {
+                                        setting.destination
+                                    })
                                 }
                             }
                         }

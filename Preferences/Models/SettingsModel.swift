@@ -7,6 +7,11 @@
 
 import SwiftUI
 
+enum SettingsModel: String, CaseIterable {
+    case screenTime = "Screen Time"
+    case general = "General"
+}
+
 struct SettingsItem<Content: View>: Identifiable {
     var id: String { title }
     let type: SettingsModel
@@ -14,11 +19,6 @@ struct SettingsItem<Content: View>: Identifiable {
     let icon: String
     var color: Color = Color(.gray)
     let destination: Content
-}
-
-enum SettingsModel: String, CaseIterable {
-    case screenTime = "Screen Time"
-    case general = "General"
 }
 
 // Focus Settings: Screen Time
