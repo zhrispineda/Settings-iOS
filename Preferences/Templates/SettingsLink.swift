@@ -9,14 +9,20 @@ import SwiftUI
 
 struct SettingsLink<Content: View>: View {
     let color: Color
+    let iconColor: Color
     let icon: String
+    let larger: Bool
     let id: String
+    let subtitle: String
     let content: Content
     
-    init(color: Color = Color.clear, icon: String, id: String, @ViewBuilder content: () -> Content) {
+    init(color: Color = Color.clear, iconColor: Color = Color.white, icon: String, larger: Bool = true, id: String, subtitle: String = String(), @ViewBuilder content: () -> Content) {
         self.color = color
+        self.iconColor = iconColor
         self.icon = icon
+        self.larger = larger
         self.id = id
+        self.subtitle = subtitle
         self.content = content()
     }
     
@@ -30,11 +36,33 @@ struct SettingsLink<Content: View>: View {
                         .overlay(
                             RoundedRectangle(cornerRadius: 5)
                                 .stroke(Color.white, lineWidth: 0.1))
-                    Image(systemName: icon)
-                        .imageScale(.large)
-                        .foregroundStyle(.white)
+                    if icon == "chevron.compact.up" {
+                        VStack(spacing: -2) {
+                            Image(systemName: icon)
+                                .imageScale(.small)
+                                .foregroundStyle(iconColor)
+                            Image(systemName: icon)
+                                .imageScale(.medium)
+                                .foregroundStyle(iconColor)
+                            Image(systemName: icon)
+                                .imageScale(.large)
+                                .foregroundStyle(iconColor)
+                        }
+                    } else {
+                        Image(systemName: icon)
+                            .imageScale(larger ? .large : .medium)
+                            .fontWeight(icon == "nosign" ? .bold : .regular)
+                            .foregroundStyle(iconColor)
+                    }
                 }
-                Text(id)
+                VStack(alignment: .leading) {
+                    Text(id)
+                    if !subtitle.isEmpty {
+                        Text(subtitle)
+                            .font(.subheadline)
+                            .foregroundStyle(.secondary)
+                    }
+                }
             }
         }
     }
@@ -43,7 +71,7 @@ struct SettingsLink<Content: View>: View {
 #Preview {
     NavigationStack {
         List {
-            SettingsLink(color: Color.blue, icon: "clock.fill", id: "Clock", content: {
+            SettingsLink(color: Color.blue, icon: "squares.leading.rectangle", id: "Clock", subtitle: "Select a time", content: {
                 EmptyView()
             })
         }

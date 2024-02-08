@@ -15,6 +15,7 @@ class DeviceInfo: ObservableObject {
 
 enum SettingsModel: String, CaseIterable {
     case screenTime = "Screen Time"
+    case multitaskGestures = "Multitasking & Gestures"
     case general = "General"
 }
 
@@ -35,6 +36,7 @@ let focusSettings: [SettingsItem] = [
 // Main Settings: General
 let mainSettings: [SettingsItem] = [
     SettingsItem(type: .general, title: "General", icon: "gear", color: .gray, destination: AnyView(GeneralView())),
+    SettingsItem(type: .multitaskGestures, title: "Multitasking & Gestures", icon: "squares.leading.rectangle", color: .blue, destination: AnyView(EmptyView()))
 ]
 
 // Combined Settings Array

@@ -15,6 +15,7 @@ struct ContentView: View {
     @State private var destination = AnyView(GeneralView())
     @State private var isOnLandscapeOrientation: Bool = UIDevice.current.orientation.isLandscape
     @State private var id = UUID()
+    let tabletOnly = ["Multitasking & Gestures"]
     
     var body: some View {
         ZStack {
@@ -72,7 +73,7 @@ struct ContentView: View {
                                         SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id)
                                             .foregroundStyle(selection == setting.type ? Color.white : Color(UIColor.label))
                                     })
-                                    .listRowBackground(selection == setting.type ? Color.blue : nil)
+                                    .listRowBackground(selection == setting.type ? Color.blue.opacity(0.75) : nil)
                                 }
                             }
                         }
@@ -127,9 +128,11 @@ struct ContentView: View {
                             // MARK: Main Settings
                             Section {
                                 ForEach(mainSettings) { setting in
-                                    SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, content: {
-                                        setting.destination
-                                    })
+                                    if !tabletOnly.contains(setting.id) {
+                                        SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, content: {
+                                            setting.destination
+                                        })
+                                    }
                                 }
                             }
                         }

@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+let smallerIcons = ["squares.leading.rectangle"]
+
 struct SettingsLabel: View {
     let color: Color
     let icon: String
@@ -28,7 +30,7 @@ struct SettingsLabel: View {
                         RoundedRectangle(cornerRadius: 5)
                             .stroke(Color.white, lineWidth: 0.1))
                 Image(systemName: icon)
-                    .imageScale(.large)
+                    .imageScale(smallerIcons.contains(icon) ? .medium : .large)
                     .foregroundStyle(.white)
             }
             Text(id)

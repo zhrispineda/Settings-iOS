@@ -22,7 +22,7 @@ struct CustomList<Content: View>: View {
             .navigationTitle(title)
             .navigationBarTitleDisplayMode(.inline)
             .padding(.top, -19)
-            .padding(.horizontal, DeviceInfo().isPhone ? 0 : 35)
+            .padding(.horizontal, DeviceInfo().isPhone ? 0 : (UIDevice.current.orientation.isLandscape ? 35 : 0))
         }
     }
 }
