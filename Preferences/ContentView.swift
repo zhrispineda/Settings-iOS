@@ -22,6 +22,7 @@ struct ContentView: View {
                 .ignoresSafeArea()
             HStack(spacing: 0.25) {
                 NavigationStack {
+                    // MARK: - iPadOS Settings
                     if UIDevice.current.localizedModel == "iPad" {
                         List(selection: $selection) {
                             Button(action: {}, label: {
@@ -78,6 +79,7 @@ struct ContentView: View {
                         .searchable(text: $searchText, placement: .navigationBarDrawer)
                         .onReceive(NotificationCenter.default.publisher(for: UIDevice.orientationDidChangeNotification)) { _ in
                             if UIDevice.current.orientation.rawValue <= 4 {
+                                // Changes frame sizes when changing orientation on iPadOS
                                 isOnLandscapeOrientation = UIDevice.current.orientation.isLandscape
                             }
                         }
@@ -86,7 +88,8 @@ struct ContentView: View {
                                 destination = selectedSettingsItem.destination
                             }
                         })
-                    } else {
+                    } else { 
+                        // MARK: - iOS Settings
                         List {
                             Section {
                                 Button(action: {}, label: {

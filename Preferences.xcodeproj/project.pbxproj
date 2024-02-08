@@ -13,6 +13,8 @@
 		833F0AD72B744D190036EAD2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 833F0AD62B744D190036EAD2 /* Preview Assets.xcassets */; };
 		835683922B753FDD000FB136 /* SettingsLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835683912B753FDD000FB136 /* SettingsLink.swift */; };
 		835683942B754623000FB136 /* SettingsLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835683932B754623000FB136 /* SettingsLabel.swift */; };
+		835683972B754EE4000FB136 /* VersionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835683962B754EE4000FB136 /* VersionView.swift */; };
+		835683992B7551D3000FB136 /* CertificateTrustSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835683982B7551D3000FB136 /* CertificateTrustSettingsView.swift */; };
 		838C23232B746CF90053D4C5 /* GeneralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838C23222B746CF90053D4C5 /* GeneralView.swift */; };
 		838C23262B746D290053D4C5 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838C23252B746D290053D4C5 /* SettingsModel.swift */; };
 		838C23292B748F3B0053D4C5 /* ScreenTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838C23282B748F3B0053D4C5 /* ScreenTimeView.swift */; };
@@ -29,6 +31,8 @@
 		833F0AD62B744D190036EAD2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		835683912B753FDD000FB136 /* SettingsLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLink.swift; sourceTree = "<group>"; };
 		835683932B754623000FB136 /* SettingsLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLabel.swift; sourceTree = "<group>"; };
+		835683962B754EE4000FB136 /* VersionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionView.swift; sourceTree = "<group>"; };
+		835683982B7551D3000FB136 /* CertificateTrustSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificateTrustSettingsView.swift; sourceTree = "<group>"; };
 		838C23222B746CF90053D4C5 /* GeneralView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralView.swift; sourceTree = "<group>"; };
 		838C23252B746D290053D4C5 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
 		838C23282B748F3B0053D4C5 /* ScreenTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTimeView.swift; sourceTree = "<group>"; };
@@ -86,6 +90,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		835683952B754ED3000FB136 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				835683962B754EE4000FB136 /* VersionView.swift */,
+				835683982B7551D3000FB136 /* CertificateTrustSettingsView.swift */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
 		838C23212B7468870053D4C5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +131,7 @@
 		838C232C2B74974B0053D4C5 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				835683952B754ED3000FB136 /* About */,
 				838C232D2B7497530053D4C5 /* AboutView.swift */,
 			);
 			path = General;
@@ -198,6 +212,8 @@
 				838C23292B748F3B0053D4C5 /* ScreenTimeView.swift in Sources */,
 				835683942B754623000FB136 /* SettingsLabel.swift in Sources */,
 				835683922B753FDD000FB136 /* SettingsLink.swift in Sources */,
+				835683972B754EE4000FB136 /* VersionView.swift in Sources */,
+				835683992B7551D3000FB136 /* CertificateTrustSettingsView.swift in Sources */,
 				838C23232B746CF90053D4C5 /* GeneralView.swift in Sources */,
 				833F0AD22B744D180036EAD2 /* ContentView.swift in Sources */,
 				838C232B2B7492170053D4C5 /* CustomList.swift in Sources */,
