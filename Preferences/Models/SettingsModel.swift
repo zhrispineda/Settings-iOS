@@ -7,6 +7,12 @@
 
 import SwiftUI
 
+class DeviceInfo: ObservableObject {
+    @Published var model: String = UIDevice.current.localizedModel
+    
+    var isPhone = UIDevice.current.localizedModel == "iPhone"
+}
+
 enum SettingsModel: String, CaseIterable {
     case screenTime = "Screen Time"
     case general = "General"

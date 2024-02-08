@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     // Variables
+    @EnvironmentObject var devceInfo: DeviceInfo
     @State private var searchText = String()
     @State private var selection: SettingsModel? = .general
     @State private var destination = AnyView(GeneralView())
@@ -23,7 +24,7 @@ struct ContentView: View {
             HStack(spacing: 0.25) {
                 NavigationStack {
                     // MARK: - iPadOS Settings
-                    if UIDevice.current.localizedModel == "iPad" {
+                    if devceInfo.model == "iPad" {
                         List(selection: $selection) {
                             Button(action: {}, label: {
                                 HStack {
@@ -32,7 +33,7 @@ struct ContentView: View {
                                         .fontWeight(.thin)
                                         .frame(width: 54, height: 54)
                                     VStack {
-                                        Text("Sign in to your \(UIDevice.current.localizedModel)")
+                                        Text("Sign in to your \(devceInfo.model)")
                                             .font(.system(size: 16))
                                             .padding(.bottom, 0)
                                             .frame(maxWidth: .infinity, alignment: .leading)
@@ -99,7 +100,7 @@ struct ContentView: View {
                                             .fontWeight(.thin)
                                             .frame(width: 54, height: 54)
                                         VStack {
-                                            Text("Sign in to your \(UIDevice.current.localizedModel)")
+                                            Text("Sign in to your \(devceInfo.model)")
                                                 .font(.system(size: 16))
                                                 .padding(.bottom, 0)
                                                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -149,4 +150,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+        .environmentObject(DeviceInfo())
 }

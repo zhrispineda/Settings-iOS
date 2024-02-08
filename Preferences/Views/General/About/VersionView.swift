@@ -9,19 +9,25 @@ import SwiftUI
 
 struct VersionView: View {
     var body: some View {
-        List {
-            Section(content: {
-                VStack(alignment: .leading) {
-                    Text("**\(UIDevice().systemName) \(UIDevice().systemVersion) (21E5195d)**")
-                    Text("This update includes improvements and bug fixes for your \(UIDevice().localizedModel).")
-                        .foregroundStyle(.secondary)
-                }
-            }, header: {
-                Text("\(UIDevice().systemName) Version")
-            })
+        
+        ZStack {
+            Color(UIColor.systemGroupedBackground)
+                .ignoresSafeArea()
+            List {
+                Section(content: {
+                    VStack(alignment: .leading) {
+                        Text("**\(UIDevice().systemName) \(UIDevice().systemVersion) (21E5195d)**")
+                        Text("This update includes improvements and bug fixes for your \(UIDevice().localizedModel).")
+                            .foregroundStyle(.secondary)
+                    }
+                }, header: {
+                    Text("\(UIDevice().systemName) Version")
+                })
+            }
+            .navigationTitle("\(UIDevice().systemName) Version")
+            .navigationBarTitleDisplayMode(.inline)
+            .padding(.horizontal, DeviceInfo().isPhone ? 0 : 35)
         }
-        .navigationTitle("\(UIDevice().systemName) Version")
-        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

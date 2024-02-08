@@ -13,12 +13,17 @@ struct CustomList<Content: View>: View {
     @ViewBuilder let content: Content
     
     var body: some View {
-        List {
-            content
+        ZStack {
+            Color(UIColor.systemGroupedBackground)
+                .ignoresSafeArea()
+            List {
+                content
+            }
+            .navigationTitle(title)
+            .navigationBarTitleDisplayMode(.inline)
+            .padding(.top, -19)
+            .padding(.horizontal, DeviceInfo().isPhone ? 0 : 35)
         }
-        .navigationTitle(title)
-        .navigationBarTitleDisplayMode(.inline)
-        .padding(.top, -19)
     }
 }
 
