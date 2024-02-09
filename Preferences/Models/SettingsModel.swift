@@ -11,10 +11,12 @@ class DeviceInfo: ObservableObject {
     @Published var model: String = UIDevice.current.localizedModel
     
     var isPhone = UIDevice.current.localizedModel == "iPhone"
+    var isTablet = UIDevice.current.localizedModel == "iPad"
 }
 
 enum SettingsModel: String, CaseIterable {
     case screenTime = "Screen Time"
+    case actionButton = "Action Button"
     
     case multitaskGestures = "Multitasking & Gestures"
     case accessibility = "Accessibility"
@@ -32,6 +34,8 @@ enum SettingsModel: String, CaseIterable {
     case siriSearch = "Siri & Search"
     case photos = "Photos"
     case gameCenter = "Game Center"
+    
+    case developer = "Developer"
 }
 
 struct SettingsItem<Content: View>: Identifiable {
@@ -43,38 +47,44 @@ struct SettingsItem<Content: View>: Identifiable {
     let destination: Content
 }
 
-let smallerIcons = ["squares.leading.rectangle", "key.fill"]
+let smallerIcons = ["arrow.turn.up.forward.iphone", "squares.leading.rectangle", "key.fill", "hammer.fill"]
 
 // Attention Settings: Screen Time
 let attentionSettings: [SettingsItem] = [
     SettingsItem(type: .screenTime, title: "Screen Time", icon: "hourglass", color: .indigo, destination: AnyView(ScreenTimeView())),
+    SettingsItem(type: .actionButton, title: "Action Button", icon: "arrow.turn.up.forward.iphone", color: .blue, destination: AnyView(ActionButtonView()))
 ]
 
 // Main Settings: General
 let mainSettings: [SettingsItem] = [
     SettingsItem(type: .general, title: "General", icon: "gear", color: .gray, destination: AnyView(GeneralView())),
-    SettingsItem(type: .multitaskGestures, title: "Multitasking & Gestures", icon: "squares.leading.rectangle", color: .blue, destination: AnyView(EmptyView())),
-    SettingsItem(type: .accessibility, title: "Accessibility", icon: "accessibility", color: .blue, destination: AnyView(EmptyView())),
-    SettingsItem(type: .privacySecurity, title: "Privacy & Security", icon: "hand.raised.fill", color: .blue, destination: AnyView(EmptyView()))
+    SettingsItem(type: .multitaskGestures, title: "Multitasking & Gestures", icon: "squares.leading.rectangle", color: .blue, destination: AnyView(MultitaskingGesturesView())),
+    SettingsItem(type: .accessibility, title: "Accessibility", icon: "accessibility", color: .blue, destination: AnyView(AccessibilityView())),
+    SettingsItem(type: .privacySecurity, title: "Privacy & Security", icon: "hand.raised.fill", color: .blue, destination: AnyView(PrivacySecurityView()))
 ]
 
 // Services Settings: Passwords
 let servicesSettings: [SettingsItem] = [
-    SettingsItem(type: .passwords, title: "Passwords", icon: "key.fill", color: .gray, destination: AnyView(EmptyView()))
+    SettingsItem(type: .passwords, title: "Passwords", icon: "key.fill", color: .gray, destination: AnyView(PasswordsView()))
 ]
 
 // Apps Settings: Safari
 let appsSettings: [SettingsItem] = [
-    SettingsItem(type: .safari, title: "Safari", icon: "applesafari", destination: AnyView(EmptyView())),
-    SettingsItem(type: .news, title: "News", icon: "applenews", destination: AnyView(EmptyView())),
-    SettingsItem(type: .translate, title: "Translate", icon: "Icon", color: .white, destination: AnyView(EmptyView())),
-    SettingsItem(type: .maps, title: "Maps", icon: "applemaps", destination: AnyView(EmptyView())),
-    SettingsItem(type: .shortcuts, title: "Shortcuts", icon: "appleshortcuts", destination: AnyView(EmptyView())),
-    SettingsItem(type: .health, title: "Health", icon: "applehealth", destination: AnyView(EmptyView())),
-    SettingsItem(type: .siriSearch, title: "Siri & Search", icon: "applesiri", color: Color(UIColor.systemBackground), destination: AnyView(EmptyView())),
-    SettingsItem(type: .photos, title: "Photos", icon: "applephotos", destination: AnyView(EmptyView())),
-    SettingsItem(type: .gameCenter, title: "Game Center", icon: "applegamecenter", destination: AnyView(EmptyView()))
+    SettingsItem(type: .safari, title: "Safari", icon: "applesafari", destination: AnyView(SafariView())),
+    SettingsItem(type: .news, title: "News", icon: "applenews", destination: AnyView(NewsView())),
+    SettingsItem(type: .translate, title: "Translate", icon: "Icon", color: .white, destination: AnyView(TranslateView())),
+    SettingsItem(type: .maps, title: "Maps", icon: "applemaps", destination: AnyView(MapsView())),
+    SettingsItem(type: .shortcuts, title: "Shortcuts", icon: "appleshortcuts", destination: AnyView(ShortcutsView())),
+    SettingsItem(type: .health, title: "Health", icon: "applehealth", destination: AnyView(HealthView())),
+    SettingsItem(type: .siriSearch, title: "Siri & Search", icon: "applesiri", color: Color(UIColor.systemBackground), destination: AnyView(SiriSearchView())),
+    SettingsItem(type: .photos, title: "Photos", icon: "applephotos", destination: AnyView(PhotosView())),
+    SettingsItem(type: .gameCenter, title: "Game Center", icon: "applegamecenter", destination: AnyView(GameCenterView()))
+]
+
+// Developer Settings: Developer
+let developerSettings: [SettingsItem] = [
+    SettingsItem(type: .developer, title: "Developer", icon: "hammer.fill", color: .gray, destination: AnyView(DeveloperView()))
 ]
 
 // Combined Settings Array
-let combinedSettings = attentionSettings + mainSettings + servicesSettings + appsSettings
+let combinedSettings = attentionSettings + mainSettings + servicesSettings + appsSettings + developerSettings

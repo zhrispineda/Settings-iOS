@@ -52,14 +52,16 @@ struct ContentView: View {
                             // MARK: Attention Settings
                             Section {
                                 ForEach(attentionSettings) { setting in
-                                    Button(action: {
-                                        id = UUID() // Reset destination
-                                        selection = setting.type
-                                    }, label: {
-                                        SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id)
-                                            .foregroundStyle(selection == setting.type ? Color.white : Color(UIColor.label))
-                                    })
-                                    .listRowBackground(selection == setting.type ? Color.blue : nil)
+                                    if setting.id != "Action Button" {
+                                        Button(action: {
+                                            id = UUID() // Reset destination
+                                            selection = setting.type
+                                        }, label: {
+                                            SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id)
+                                                .foregroundStyle(selection == setting.type ? Color.white : Color(UIColor.label))
+                                        })
+                                        .listRowBackground(selection == setting.type ? Color.blue : nil)
+                                    }
                                 }
                             }
                             
@@ -94,6 +96,20 @@ struct ContentView: View {
                             // MARK: Apps Settings
                             Section {
                                 ForEach(appsSettings) { setting in
+                                    Button(action: {
+                                        id = UUID() // Reset destination
+                                        selection = setting.type
+                                    }, label: {
+                                        SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id)
+                                            .foregroundStyle(selection == setting.type ? Color.white : Color(UIColor.label))
+                                    })
+                                    .listRowBackground(selection == setting.type ? Color.blue.opacity(0.75) : nil)
+                                }
+                            }
+                            
+                            // MARK: Developer Settings
+                            Section {
+                                ForEach(developerSettings) { setting in
                                     Button(action: {
                                         id = UUID() // Reset destination
                                         selection = setting.type
@@ -152,9 +168,17 @@ struct ContentView: View {
                             // MARK: Attention Settings
                             Section {
                                 ForEach(attentionSettings) { setting in
-                                    SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, content: {
-                                        setting.destination
-                                    })
+                                    if setting.id == "Action Button" {
+                                        if UIDevice.current.name.contains("15 Pro") {
+                                            SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, content: {
+                                                setting.destination
+                                            })
+                                        }
+                                    } else if setting.id != "Action Button" {
+                                        SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, content: {
+                                            setting.destination
+                                        })
+                                    }
                                 }
                             }
                             
@@ -183,6 +207,17 @@ struct ContentView: View {
                             // MARK: Apps Settings
                             Section {
                                 ForEach(appsSettings) { setting in
+                                    if !tabletOnly.contains(setting.id) {
+                                        SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, content: {
+                                            setting.destination
+                                        })
+                                    }
+                                }
+                            }
+                            
+                            // MARK: Developer Settings
+                            Section {
+                                ForEach(developerSettings) { setting in
                                     if !tabletOnly.contains(setting.id) {
                                         SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, content: {
                                             setting.destination
