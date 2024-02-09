@@ -11,6 +11,7 @@ struct CustomList<Content: View>: View {
     // Variables
     var title: String = String()
     @ViewBuilder let content: Content
+    @State private var isOnLandscapeOrientation = UIDevice.current.orientation.isLandscape
     
     var body: some View {
         ZStack {
@@ -22,7 +23,12 @@ struct CustomList<Content: View>: View {
             .navigationTitle(title)
             .navigationBarTitleDisplayMode(.inline)
             .padding(.top, -19)
-            .padding(.horizontal, DeviceInfo().isPhone ? 0 : (UIDevice.current.orientation.isLandscape ? 35 : 0))
+            .padding(.horizontal, DeviceInfo().isPhone ? 0 : (isOnLandscapeOrientation ? 35 : 0))
+        }
+        .onReceive(NotificationCenter.default.publisher(for: UIDevice.orientationDidChangeNotification)) { _ in
+            if !DeviceInfo().isPhone && UIDevice.current.orientation.rawValue <= 4 {
+                isOnLandscapeOrientation = UIDevice.current.orientation.isLandscape
+            }
         }
     }
 }

@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-let smallerIcons = ["squares.leading.rectangle"]
-
 struct SettingsLabel: View {
     let color: Color
     let icon: String
@@ -25,13 +23,20 @@ struct SettingsLabel: View {
             ZStack {
                 color
                     .frame(width: 30, height: 30)
-                    .clipShape(RoundedRectangle(cornerRadius: 5))
+                    .clipShape(RoundedRectangle(cornerRadius: 6))
                     .overlay(
                         RoundedRectangle(cornerRadius: 5)
                             .stroke(Color.white, lineWidth: 0.1))
-                Image(systemName: icon)
-                    .imageScale(smallerIcons.contains(icon) ? .medium : .large)
-                    .foregroundStyle(.white)
+                if UIImage(systemName: icon) != nil {
+                    Image(systemName: icon)
+                        .imageScale(smallerIcons.contains(icon) ? .medium : .large)
+                        .foregroundStyle(.white)
+                } else {
+                    Image(icon)
+                        .resizable()
+                        .clipShape(RoundedRectangle(cornerRadius: 5))
+                        .frame(width: 30, height: 30)
+                }
             }
             Text(id)
         }
@@ -41,7 +46,7 @@ struct SettingsLabel: View {
 #Preview {
     NavigationStack {
         List {
-            SettingsLabel(color: Color.blue, icon: "clock.fill", id: "Clock")
+            SettingsLabel(color: Color.blue, icon: "icon", id: "Safari")
         }
     }
 }

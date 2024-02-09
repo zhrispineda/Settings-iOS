@@ -35,24 +35,31 @@ struct SettingsLink<Content: View>: View {
                         .clipShape(RoundedRectangle(cornerRadius: 5))
                         .overlay(
                             RoundedRectangle(cornerRadius: 5)
-                                .stroke(Color.white, lineWidth: 0.1))
-                    if icon == "chevron.compact.up" {
-                        VStack(spacing: -2) {
+                                .stroke(Color.gray.opacity(0.5), lineWidth: 0.5))
+                    if UIImage(systemName: icon) != nil {
+                        if icon == "chevron.compact.up" {
+                            VStack(spacing: -2) {
+                                Image(systemName: icon)
+                                    .imageScale(.small)
+                                    .foregroundStyle(iconColor)
+                                Image(systemName: icon)
+                                    .imageScale(.medium)
+                                    .foregroundStyle(iconColor)
+                                Image(systemName: icon)
+                                    .imageScale(.large)
+                                    .foregroundStyle(iconColor)
+                            }
+                        } else {
                             Image(systemName: icon)
-                                .imageScale(.small)
-                                .foregroundStyle(iconColor)
-                            Image(systemName: icon)
-                                .imageScale(.medium)
-                                .foregroundStyle(iconColor)
-                            Image(systemName: icon)
-                                .imageScale(.large)
+                                .imageScale(larger && !smallerIcons.contains(icon) ? .large : .medium)
+                                .fontWeight(icon == "nosign" ? .bold : .regular)
                                 .foregroundStyle(iconColor)
                         }
                     } else {
-                        Image(systemName: icon)
-                            .imageScale(larger ? .large : .medium)
-                            .fontWeight(icon == "nosign" ? .bold : .regular)
-                            .foregroundStyle(iconColor)
+                        Image(icon)
+                            .resizable()
+                            .clipShape(RoundedRectangle(cornerRadius: 5))
+                            .frame(width: 30, height: 30)
                     }
                 }
                 VStack(alignment: .leading) {
@@ -71,7 +78,7 @@ struct SettingsLink<Content: View>: View {
 #Preview {
     NavigationStack {
         List {
-            SettingsLink(color: Color.blue, icon: "squares.leading.rectangle", id: "Clock", subtitle: "Select a time", content: {
+            SettingsLink(color: Color(UIColor.systemBackground), icon: "applesiri", id: "Siri", content: {
                 EmptyView()
             })
         }

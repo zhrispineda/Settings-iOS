@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     // Variables
-    @EnvironmentObject var devceInfo: DeviceInfo
+    @EnvironmentObject var deviceInfo: DeviceInfo
     @State private var searchText = String()
     @State private var selection: SettingsModel? = .general
     @State private var destination = AnyView(GeneralView())
@@ -25,7 +25,7 @@ struct ContentView: View {
             HStack(spacing: 0.25) {
                 NavigationStack {
                     // MARK: - iPadOS Settings
-                    if devceInfo.model == "iPad" {
+                    if !deviceInfo.isPhone {
                         List(selection: $selection) {
                             Button(action: {}, label: {
                                 HStack {
@@ -34,7 +34,7 @@ struct ContentView: View {
                                         .fontWeight(.thin)
                                         .frame(width: 54, height: 54)
                                     VStack {
-                                        Text("Sign in to your \(devceInfo.model)")
+                                        Text("Sign in to your \(deviceInfo.model)")
                                             .font(.system(size: 16))
                                             .padding(.bottom, 0)
                                             .frame(maxWidth: .infinity, alignment: .leading)
@@ -49,9 +49,9 @@ struct ContentView: View {
                                 .padding(.vertical, -5)
                             })
                             
-                            // MARK: Focus Settings
+                            // MARK: Attention Settings
                             Section {
-                                ForEach(focusSettings) { setting in
+                                ForEach(attentionSettings) { setting in
                                     Button(action: {
                                         id = UUID() // Reset destination
                                         selection = setting.type
@@ -76,6 +76,34 @@ struct ContentView: View {
                                     .listRowBackground(selection == setting.type ? Color.blue.opacity(0.75) : nil)
                                 }
                             }
+                            
+                            // MARK: Services Settings
+                            Section {
+                                ForEach(servicesSettings) { setting in
+                                    Button(action: {
+                                        id = UUID() // Reset destination
+                                        selection = setting.type
+                                    }, label: {
+                                        SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id)
+                                            .foregroundStyle(selection == setting.type ? Color.white : Color(UIColor.label))
+                                    })
+                                    .listRowBackground(selection == setting.type ? Color.blue.opacity(0.75) : nil)
+                                }
+                            }
+                            
+                            // MARK: Apps Settings
+                            Section {
+                                ForEach(appsSettings) { setting in
+                                    Button(action: {
+                                        id = UUID() // Reset destination
+                                        selection = setting.type
+                                    }, label: {
+                                        SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id)
+                                            .foregroundStyle(selection == setting.type ? Color.white : Color(UIColor.label))
+                                    })
+                                    .listRowBackground(selection == setting.type ? Color.blue.opacity(0.75) : nil)
+                                }
+                            }
                         }
                         .navigationTitle("Settings")
                         .searchable(text: $searchText, placement: .navigationBarDrawer)
@@ -85,6 +113,11 @@ struct ContentView: View {
                                 isOnLandscapeOrientation = UIDevice.current.orientation.isLandscape
                             }
                         }
+                        .onAppear(perform: {
+                            if UIDevice.current.orientation.rawValue <= 4 {
+                                isOnLandscapeOrientation = UIDevice.current.orientation.isLandscape
+                            }
+                        })
                         .onChange(of: selection, { // Change views when selecting sidebar navigation links
                             if let selectedSettingsItem = combinedSettings.first(where: { $0.type == selection }) {
                                 destination = selectedSettingsItem.destination
@@ -101,7 +134,7 @@ struct ContentView: View {
                                             .fontWeight(.thin)
                                             .frame(width: 54, height: 54)
                                         VStack {
-                                            Text("Sign in to your \(devceInfo.model)")
+                                            Text("Sign in to your \(deviceInfo.model)")
                                                 .font(.system(size: 16))
                                                 .padding(.bottom, 0)
                                                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -116,9 +149,9 @@ struct ContentView: View {
                                 })
                             }
                             
-                            // MARK: Focus Settings
+                            // MARK: Attention Settings
                             Section {
-                                ForEach(focusSettings) { setting in
+                                ForEach(attentionSettings) { setting in
                                     SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, content: {
                                         setting.destination
                                     })
@@ -135,13 +168,35 @@ struct ContentView: View {
                                     }
                                 }
                             }
+                            
+                            // MARK: Services Settings
+                            Section {
+                                ForEach(servicesSettings) { setting in
+                                    if !tabletOnly.contains(setting.id) {
+                                        SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, content: {
+                                            setting.destination
+                                        })
+                                    }
+                                }
+                            }
+                            
+                            // MARK: Apps Settings
+                            Section {
+                                ForEach(appsSettings) { setting in
+                                    if !tabletOnly.contains(setting.id) {
+                                        SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, content: {
+                                            setting.destination
+                                        })
+                                    }
+                                }
+                            }
                         }
                         .navigationTitle("Settings")
                         .searchable(text: $searchText)
                     }
                 }
-                .frame(maxWidth: UIDevice.current.localizedModel == "iPad" ? (isOnLandscapeOrientation ? 400 : 320) : nil)
-                if UIDevice.current.localizedModel == "iPad" {
+                .frame(maxWidth: !deviceInfo.isPhone ? (isOnLandscapeOrientation ? 415 : 320) : nil)
+                if !deviceInfo.isPhone {
                     NavigationStack {
                         destination
                     }.id(id)
