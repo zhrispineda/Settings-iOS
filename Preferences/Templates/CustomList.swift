@@ -35,7 +35,7 @@ struct CustomList<Content: View>: View {
 
 #Preview {
     NavigationStack {
-        CustomList(title: "Test") {
+        CustomList(title: "Developer") {
             Text("Hello, World!")
         }
     }

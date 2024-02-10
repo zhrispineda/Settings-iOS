@@ -136,6 +136,7 @@
 			children = (
 				838C232C2B74974B0053D4C5 /* General */,
 				838C23282B748F3B0053D4C5 /* ScreenTimeView.swift */,
+				83815CFA2B76908700F53A0F /* ActionButtonView.swift */,
 				838C23222B746CF90053D4C5 /* GeneralView.swift */,
 				83815CE02B768CF300F53A0F /* MultitaskingGesturesView.swift */,
 				83815CDE2B768C2200F53A0F /* AccessibilityView.swift */,
@@ -151,7 +152,6 @@
 				83815CF42B768F3600F53A0F /* PhotosView.swift */,
 				83815CF62B768F4800F53A0F /* GameCenterView.swift */,
 				83815CF82B768F5C00F53A0F /* DeveloperView.swift */,
-				83815CFA2B76908700F53A0F /* ActionButtonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
