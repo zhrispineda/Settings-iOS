@@ -7,13 +7,17 @@
 
 import SwiftUI
 
+// MARK: DeviceInfo class
 class DeviceInfo: ObservableObject {
     @Published var model: String = UIDevice.current.localizedModel
     
     var isPhone = UIDevice.current.localizedModel == "iPhone"
     var isTablet = UIDevice.current.localizedModel == "iPad"
+    var hasHomeButton = UIDevice.current.name.contains("SE")
 }
 
+
+// MARK: SettingsModel data
 enum SettingsModel: String, CaseIterable {
     case screenTime = "Screen Time"
     case actionButton = "Action Button"

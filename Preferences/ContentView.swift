@@ -230,8 +230,8 @@ struct ContentView: View {
                         .searchable(text: $searchText)
                     }
                 }
-                .frame(maxWidth: !deviceInfo.isPhone ? (isOnLandscapeOrientation ? 415 : 320) : nil)
-                if !deviceInfo.isPhone {
+                .frame(maxWidth: deviceInfo.isTablet ? (isOnLandscapeOrientation ? 415 : 320) : nil)
+                if deviceInfo.isTablet {
                     NavigationStack {
                         destination
                     }.id(id)

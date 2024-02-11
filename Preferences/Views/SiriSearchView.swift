@@ -26,7 +26,7 @@ struct SiriSearchView: View {
     var body: some View {
         CustomList(title: "Siri & Search") {
             Section(content: {
-                Toggle("Press \(DeviceInfo().isPhone ? "Side Button" : "Top Button") for Siri", isOn: $siriEnabled)
+                Toggle("Press \(DeviceInfo().isPhone ? "\(DeviceInfo().hasHomeButton ? "Home" : "Side") Button" : "Top Button") for Siri", isOn: $siriEnabled)
                 NavigationLink(destination: {}, label: {
                     HRowLabels(title: "Language", subtitle: "English (United States)")
                 })
