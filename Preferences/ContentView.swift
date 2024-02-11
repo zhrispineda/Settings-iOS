@@ -96,14 +96,16 @@ struct ContentView: View {
                             // MARK: Apps Settings
                             Section {
                                 ForEach(appsSettings) { setting in
-                                    Button(action: {
-                                        id = UUID() // Reset destination
-                                        selection = setting.type
-                                    }, label: {
-                                        SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id)
-                                            .foregroundStyle(selection == setting.type ? Color.white : Color(UIColor.label))
-                                    })
-                                    .listRowBackground(selection == setting.type ? Color.blue.opacity(0.75) : nil)
+                                    if setting.id != "Health" {
+                                        Button(action: {
+                                            id = UUID() // Reset destination
+                                            selection = setting.type
+                                        }, label: {
+                                            SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id)
+                                                .foregroundStyle(selection == setting.type ? Color.white : Color(UIColor.label))
+                                        })
+                                        .listRowBackground(selection == setting.type ? Color.blue.opacity(0.75) : nil)
+                                    }
                                 }
                             }
                             

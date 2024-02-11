@@ -71,6 +71,7 @@
 		838C232A2B7492170053D4C5 /* CustomList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomList.swift; sourceTree = "<group>"; };
 		838C232D2B7497530053D4C5 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		838C232F2B74978C0053D4C5 /* HRowLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRowLabels.swift; sourceTree = "<group>"; };
+		83CC61982B7952B800DAF0C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +104,7 @@
 		833F0ACE2B744D180036EAD2 /* Preferences */ = {
 			isa = PBXGroup;
 			children = (
+				83CC61982B7952B800DAF0C1 /* Info.plist */,
 				838C23272B746D6B0053D4C5 /* Templates */,
 				838C23242B746D200053D4C5 /* Models */,
 				838C23212B7468870053D4C5 /* Views */,
@@ -420,9 +422,9 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Preferences/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Settings;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
@@ -458,9 +460,9 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Preferences/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Settings;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;

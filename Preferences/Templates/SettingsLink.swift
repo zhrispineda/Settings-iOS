@@ -68,6 +68,7 @@ struct SettingsLink<Content: View>: View {
                             Image(icon)
                                 .resizable()
                                 .scaledToFit()
+                                .foregroundStyle(.white)
                                 .frame(height: 24)
                         default:
                         Image(icon)

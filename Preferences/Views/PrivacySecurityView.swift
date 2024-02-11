@@ -25,7 +25,9 @@ struct PrivacySecurityView: View {
                 SettingsLink(color: .gray, icon: "waveform", id: "Speech Recognition", content: {})
                 SettingsLink(color: .white, icon: "Icon", id: "Camera", content: {})
                 SettingsLink(icon: "applehealth", id: "Health", content: {})
-                SettingsLink(color: .blue, icon: "point.3.filled.connected.trianglepath.dotted", id: "Research Sensor & Usage Data", content: {})
+                if DeviceInfo().isPhone {
+                    SettingsLink(color: .blue, icon: "point.3.filled.connected.trianglepath.dotted", id: "Research Sensor & Usage Data", content: {})
+                }
                 SettingsLink(icon: "applehome", id: "HomeKit", content: {})
                 SettingsLink(icon: "applewallet", id: "Wallet", content: {})
                 SettingsLink(icon: "applemusic", id: "Media & Apple Music", content: {})
@@ -36,11 +38,13 @@ struct PrivacySecurityView: View {
                 Text("As apps request access, they will be added in the categories above.")
             })
             
-            Section(content: {
-                SettingsLink(color: .white, iconColor: .blue, icon: "person.badge.shield.checkmark.fill", larger: false, id: "Safety Check", content: {})
-            }, footer: {
-                Text("Protect your personal safety by staying aware of which people, apps, and devices have access to your information.")
-            })
+            if DeviceInfo().isPhone {
+                Section(content: {
+                    SettingsLink(color: .white, iconColor: .blue, icon: "person.badge.shield.checkmark.fill", larger: false, id: "Safety Check", content: {})
+                }, footer: {
+                    Text("Protect your personal safety by staying aware of which people, apps, and devices have access to your information.")
+                })
+            }
             
             Section(content: {
                 SettingsLink(color: .blue, icon: "eye.trianglebadge.exclamationmark.fill", larger: false, id: "Sensitive Content Warning", status: "Off", content: {})
