@@ -14,15 +14,17 @@ struct SettingsLink<Content: View>: View {
     let larger: Bool
     let id: String
     let subtitle: String
+    let status: String
     let content: Content
     
-    init(color: Color = Color.clear, iconColor: Color = Color.white, icon: String, larger: Bool = true, id: String, subtitle: String = String(), @ViewBuilder content: () -> Content) {
+    init(color: Color = Color.clear, iconColor: Color = Color.white, icon: String, larger: Bool = true, id: String, subtitle: String = String(), status: String = String(), @ViewBuilder content: () -> Content) {
         self.color = color
         self.iconColor = iconColor
         self.icon = icon
         self.larger = larger
         self.id = id
         self.subtitle = subtitle
+        self.status = status
         self.content = content()
     }
     
@@ -61,10 +63,18 @@ struct SettingsLink<Content: View>: View {
                                 .foregroundStyle(iconColor)
                         }
                     } else {
+                        switch icon {
+                        case "logo.bluetooth":
+                            Image(icon)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(height: 24)
+                        default:
                         Image(icon)
                             .resizable()
                             .clipShape(RoundedRectangle(cornerRadius: 5))
                             .frame(width: 30, height: 30)
+                        }
                     }
                 }
                 VStack(alignment: .leading) {
@@ -75,6 +85,11 @@ struct SettingsLink<Content: View>: View {
                             .foregroundStyle(.secondary)
                     }
                 }
+                if !status.isEmpty {
+                    Spacer()
+                    Text(status)
+                        .foregroundStyle(.secondary)
+                }
             }
         }
     }
@@ -83,7 +98,7 @@ struct SettingsLink<Content: View>: View {
 #Preview {
     NavigationStack {
         List {
-            SettingsLink(color: Color(UIColor.systemBackground), icon: "appclip", id: "App Clips", content: {
+            SettingsLink(color: .blue, icon: "logo.bluetooth", id: "Bluetooth", content: {
                 EmptyView()
             })
         }
