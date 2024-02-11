@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AboutView: View {
     // Variables
-    @State private var showingModelNumber = true
+    @State private var showingModelNumber = false
     @State private var serialNumber = ""
     @State private var availableStorage: String = getAvailableStorage() ?? "N/A"
     @State private var totalStorage: String = getTotalStorage() ?? "N/A"
@@ -39,6 +39,7 @@ struct AboutView: View {
                 HRowLabels(title: "Songs", subtitle: "0")
                 HRowLabels(title: "Videos", subtitle: "0")
                 HRowLabels(title: "Photos", subtitle: "0")
+                HRowLabels(title: "Applications", subtitle: "1")
                 HRowLabels(title: "Capacity", subtitle: totalStorage)
                 HRowLabels(title: "Available", subtitle: availableStorage)
             }
@@ -60,6 +61,8 @@ struct AboutView: View {
             modelNumber = "A2848"
         case "iPhone SE (3rd generation)":
             modelNumber = "A2595"
+        case "iPad mini (6th generation)":
+            modelNumber = "A2567"
         case "iPad Pro (12.9-inch) (6th generation)":
             modelNumber = "A2436"
         case "iPad Pro (11-inch) (4th generation)":

@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+let defaultPaddingViews = ["Siri & Search", "Game Center", "Developer"]
+
 struct CustomList<Content: View>: View {
     // Variables
     var title: String = String()
@@ -22,7 +24,7 @@ struct CustomList<Content: View>: View {
             }
             .navigationTitle(title)
             .navigationBarTitleDisplayMode(.inline)
-            .padding(.top, -19)
+            .padding(.top, defaultPaddingViews.contains(title) ? 0 : -19)
             .padding(.horizontal, DeviceInfo().isPhone ? 0 : (isOnLandscapeOrientation ? 35 : 0))
         }
         .onReceive(NotificationCenter.default.publisher(for: UIDevice.orientationDidChangeNotification)) { _ in

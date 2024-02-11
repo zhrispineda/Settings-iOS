@@ -103,7 +103,7 @@ struct KeyboardView: View {
                         .alert("Turn Off Dictation?", isPresented: $showingDictationDisableAlert,
                                             actions: {
                             Button("Turn Off Dictation", role: .none) {}
-                            Button("Cancel", role: .cancel) {}
+                            Button("Cancel", role: .cancel) {  }
                         }, message: {
                             Text("The information Dictation uses to respond to your requests is also used for Siri and will remain on Apple servers unless Siri is also turned off.")
                         })

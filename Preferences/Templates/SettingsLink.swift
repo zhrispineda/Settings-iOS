@@ -37,7 +37,8 @@ struct SettingsLink<Content: View>: View {
                             RoundedRectangle(cornerRadius: 5)
                                 .stroke(Color.gray.opacity(0.5), lineWidth: 0.5))
                     if UIImage(systemName: icon) != nil {
-                        if icon == "chevron.compact.up" {
+                        switch icon {
+                        case "chevron.compact.up":
                             VStack(spacing: -2) {
                                 Image(systemName: icon)
                                     .imageScale(.small)
@@ -49,7 +50,11 @@ struct SettingsLink<Content: View>: View {
                                     .imageScale(.large)
                                     .foregroundStyle(iconColor)
                             }
-                        } else {
+                        case "appclip":
+                            Image(systemName: icon)
+                                .foregroundStyle(.blue)
+                                .imageScale(.large)
+                        default:
                             Image(systemName: icon)
                                 .imageScale(larger && !smallerIcons.contains(icon) ? .large : .medium)
                                 .fontWeight(icon == "nosign" ? .bold : .regular)
@@ -78,7 +83,7 @@ struct SettingsLink<Content: View>: View {
 #Preview {
     NavigationStack {
         List {
-            SettingsLink(color: Color(UIColor.systemBackground), icon: "applesiri", id: "Siri", content: {
+            SettingsLink(color: Color(UIColor.systemBackground), icon: "appclip", id: "App Clips", content: {
                 EmptyView()
             })
         }
