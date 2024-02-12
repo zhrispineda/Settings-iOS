@@ -31,7 +31,7 @@ struct PrivacySecurityView: View {
                 SettingsLink(icon: "applehome", id: "HomeKit", content: {})
                 SettingsLink(icon: "applewallet", id: "Wallet", content: {})
                 SettingsLink(icon: "applemusic", id: "Media & Apple Music", content: {})
-                SettingsLink(icon: "applefiles", id: "Files & Folders", content: {})
+                SettingsLink(icon: "applefiles", id: "Files and Folders", content: {})
                 SettingsLink(color: .indigo, icon: "moon.fill", larger: false, id: "Focus", content: {})
                 NavigationLink("Passkeys Access for Web Browsers", destination: {})
             }, footer: {
