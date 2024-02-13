@@ -9,7 +9,26 @@ import SwiftUI
 
 struct HealthView: View {
     var body: some View {
-        Text("Hello, World!")
+        CustomList(title: "Health") {
+            Section(content: {
+                SettingsLink(icon: "applesiri", id: "Siri & Search", content: {})
+            }, header: {
+                Text("Allow Health to Access")
+            })
+            
+            Section(content: {
+                NavigationLink("Health Details", destination: {})
+                NavigationLink("Medical ID", destination: {})
+            }, header: {
+                Text("Medical Details")
+            })
+            
+            Section(content: {
+                NavigationLink("Data Access & Devices", destination: {})
+            }, header: {
+                Text("Data")
+            })
+        }
     }
 }
 
