@@ -11,8 +11,12 @@ struct SiriSearchView: View {
     // Variables
     @State private var siriEnabled = true
     @State private var showingDisableSiriAlert = false
+    @State private var showingDisableSiriPopup = false
+    @State private var showingEnableSiriAlert = false
+    @State private var showingEnableSiriPopup = false
     @State private var showSuggestionsEnabled = true
     @State private var showingResetHiddenSuggestionsAlert = false
+    @State private var showingResetHiddenSuggestionsPopup = false
     @State private var showRecentsEnabled = true
     
     @State private var showInLookUpEnabled = true
@@ -27,6 +31,33 @@ struct SiriSearchView: View {
         CustomList(title: "Siri & Search") {
             Section(content: {
                 Toggle("Press \(DeviceInfo().isPhone ? "\(DeviceInfo().hasHomeButton ? "Home" : "Side") Button" : "Top Button") for Siri", isOn: $siriEnabled)
+                    .alert("Turn Off Siri?", isPresented: $showingDisableSiriAlert) {
+                        Button("Turn Off Siri") {}
+                        Button("Cancel", role: .cancel) {}
+                    } message: {
+                        Text("The information Siri uses to respond to your requests will be removed from Apple servers. If you want to use Siri later, it will take some time to re-send this information.")
+                    }
+                    .alert("Enable Siri?", isPresented: $showingEnableSiriAlert) {
+                        Button("Enable Siri") {}
+                        Button("Cancel", role: .cancel) {}
+                    } message: {
+                        Text("Siri sends information like your voice input, contacts, and location to Apple to process your requests.")
+                    }
+                    .confirmationDialog("Turn Off Siri", isPresented: $showingDisableSiriPopup, titleVisibility: .visible) {
+                        Button("Turn Off Siri") {}
+                        Button("Cancel", role: .cancel) {}
+                    } message: {
+                        Text("The information Siri uses to respond to your requests will be removed from Apple servers. If you want to use Siri later, it will take some time to re-send this information.")
+                    }
+                    .confirmationDialog("Enable Siri", isPresented: $showingEnableSiriPopup, titleVisibility: .visible) {
+                        Button("Enable Siri") {}
+                        Button("Cancel", role: .cancel) {}
+                    } message: {
+                        Text("Siri sends information like your voice input, contacts, and location to Apple to process your requests.")
+                    }
+                    .onChange(of: siriEnabled, {
+                        siriEnabled ? DeviceInfo().isPhone ? showingEnableSiriPopup.toggle() : showingEnableSiriAlert.toggle() : DeviceInfo().isPhone ? showingDisableSiriPopup.toggle() : showingDisableSiriAlert.toggle()
+                    })
                 NavigationLink(destination: {}, label: {
                     HRowLabels(title: "Language", subtitle: "English (United States)")
                 })
@@ -55,7 +86,13 @@ struct SiriSearchView: View {
             
             Section(content: {
                 Toggle("Show Suggestions", isOn: $showSuggestionsEnabled)
-                Button("Reset Hidden Suggestions", action: { showingResetHiddenSuggestionsAlert.toggle() })
+                Button("Reset Hidden Suggestions", action: { DeviceInfo().isPhone ? showingResetHiddenSuggestionsAlert.toggle() : showingResetHiddenSuggestionsPopup.toggle() })
+                    .alert("Reset", isPresented: $showingResetHiddenSuggestionsPopup) {
+                        Button("Reset", role: .destructive) {}
+                        Button("Cancel", role: .cancel) {}
+                    } message: {
+                        Text("Resetting will allow previously hidden suggestions to resume showing up again.")
+                    }
                     .confirmationDialog("Resetting will allow previously hidden suggestions to resume showing up again.", isPresented: $showingResetHiddenSuggestionsAlert, titleVisibility: .visible) {
                         Button("Reset", role: .destructive) {}
                         Button("Cancel", role: .cancel) {}

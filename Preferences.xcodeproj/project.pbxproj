@@ -37,6 +37,7 @@
 		838C232B2B7492170053D4C5 /* CustomList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838C232A2B7492170053D4C5 /* CustomList.swift */; };
 		838C232E2B7497530053D4C5 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838C232D2B7497530053D4C5 /* AboutView.swift */; };
 		838C23302B74978C0053D4C5 /* HRowLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838C232F2B74978C0053D4C5 /* HRowLabels.swift */; };
+		83B98E302B7C087B007F6C94 /* IconToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B98E2F2B7C087B007F6C94 /* IconToggle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,7 @@
 		838C232A2B7492170053D4C5 /* CustomList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomList.swift; sourceTree = "<group>"; };
 		838C232D2B7497530053D4C5 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		838C232F2B74978C0053D4C5 /* HRowLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRowLabels.swift; sourceTree = "<group>"; };
+		83B98E2F2B7C087B007F6C94 /* IconToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconToggle.swift; sourceTree = "<group>"; };
 		83CC61982B7952B800DAF0C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -173,6 +175,7 @@
 				838C232F2B74978C0053D4C5 /* HRowLabels.swift */,
 				835683912B753FDD000FB136 /* SettingsLink.swift */,
 				835683932B754623000FB136 /* SettingsLabel.swift */,
+				83B98E2F2B7C087B007F6C94 /* IconToggle.swift */,
 			);
 			path = Templates;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83B98E302B7C087B007F6C94 /* IconToggle.swift in Sources */,
 				838C23262B746D290053D4C5 /* SettingsModel.swift in Sources */,
 				83815CDF2B768C2200F53A0F /* AccessibilityView.swift in Sources */,
 				83815CEF2B768EF000F53A0F /* ShortcutsView.swift in Sources */,

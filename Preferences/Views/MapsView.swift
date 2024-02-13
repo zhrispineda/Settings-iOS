@@ -20,7 +20,7 @@ struct MapsView: View {
         CustomList(title: "Maps") {
             Section(content: {
                 SettingsLink(icon: "applesiri", id: "Siri & Search", content: {})
-                Toggle("Background App Refresh", isOn: $backgroundAppRefreshEnabled)
+                IconToggle(enabled: backgroundAppRefreshEnabled, color: .gray, icon: "gear", title: "Background App Refresh")
             }, header: {
                 Text("Allow Maps to Access")
             }, footer: {
