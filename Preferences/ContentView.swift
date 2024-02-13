@@ -29,7 +29,8 @@ struct ContentView: View {
                         List(selection: $selection) {
                             Button(action: {}, label: {
                                 HStack {
-                                    Image(systemName: "person.crop.circle.fill")                                        .resizable()
+                                    Image(systemName: "person.crop.circle.fill")
+                                        .resizable()
                                         .foregroundStyle(Color(UIColor.systemGray6), Color(UIColor.systemGray2))
                                         .fontWeight(.thin)
                                         .frame(width: 54, height: 54)

@@ -40,10 +40,9 @@ struct SiriSearchView: View {
                             .foregroundStyle(Color(UIColor.label))
                         Spacer()
                         Text("None")
-                            .foregroundStyle(.secondary)
-                            .foregroundStyle(Color(UIColor.label))
+                            .foregroundStyle(Color(UIColor.secondaryLabel))
                         Image(systemName: "chevron.right")
-                            .foregroundStyle(.secondary)
+                            .foregroundStyle(Color(UIColor.tertiaryLabel))
                     }
                 })
                 NavigationLink("Siri & Dictation History", destination: {})
