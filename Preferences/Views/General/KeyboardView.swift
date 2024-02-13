@@ -25,7 +25,9 @@ struct KeyboardView: View {
     
     @State private var dictationEnabled = true
     @State private var showingDictationEnableAlert = false
+    @State private var showingDictationEnablePopup = false
     @State private var showingDictationDisableAlert = false
+    @State private var showingDictationDisablePopup = false
     @State private var autoPunctuationEnabled = true
     
     @State private var stickersEnabled = true
@@ -77,37 +79,33 @@ struct KeyboardView: View {
             })
             
             Section(content: {
-                if DeviceInfo().isPhone {
-                    Toggle("Enable Dictation", isOn: $dictationEnabled)
-                        .confirmationDialog("Dictation sends information like your voice input, contacts, and location to Apple when necessary for processing your requests.", isPresented: $showingDictationEnableAlert,
-                                            titleVisibility: .visible,
-                                            actions: {
-                            Button("Enable Dictation", role: .none) {}
-                            Button("Cancel", role: .cancel) {}
-                        })
-                        .confirmationDialog("The information Dictation uses to respond to your requests is also used for Siri and will remain on Apple servers unless Siri is also turned off.", isPresented: $showingDictationDisableAlert,
-                                            titleVisibility: .visible,
-                                            actions: {
-                            Button("Turn Off Dictation", role: .none) {}
-                            Button("Cancel", role: .cancel) {}
-                        })
-                } else {
-                    Toggle("Enable Dictation", isOn: $dictationEnabled)
-                        .alert("Enable Dictation?", isPresented: $showingDictationEnableAlert,
-                                            actions: {
-                            Button("Enable Dictation", role: .none) {}
-                            Button("Cancel", role: .cancel) {}
-                        }, message: {
-                            Text("Dictation sends information like your voice input, contacts, and location to Apple when necessary for processing your requests.")
-                        })
-                        .alert("Turn Off Dictation?", isPresented: $showingDictationDisableAlert,
-                                            actions: {
-                            Button("Turn Off Dictation", role: .none) {}
-                            Button("Cancel", role: .cancel) {  }
-                        }, message: {
-                            Text("The information Dictation uses to respond to your requests is also used for Siri and will remain on Apple servers unless Siri is also turned off.")
-                        })
-                }
+                Toggle("Enable Dictation", isOn: $dictationEnabled)
+                    .alert("Enable Dictation?", isPresented: $showingDictationEnableAlert,
+                           actions: {
+                        Button("Enable Dictation", role: .none) {}
+                        Button("Cancel", role: .cancel) {}
+                    }, message: {
+                        Text("Dictation sends information like your voice input, contacts, and location to Apple when necessary for processing your requests.")
+                    })
+                    .alert("Turn Off Dictation?", isPresented: $showingDictationDisableAlert,
+                           actions: {
+                        Button("Turn Off Dictation", role: .none) {}
+                        Button("Cancel", role: .cancel) {  }
+                    }, message: {
+                        Text("The information Dictation uses to respond to your requests is also used for Siri and will remain on Apple servers unless Siri is also turned off.")
+                    })
+                    .confirmationDialog("Dictation sends information like your voice input, contacts, and location to Apple when necessary for processing your requests.", isPresented: $showingDictationEnablePopup,
+                                        titleVisibility: .visible,
+                                        actions: {
+                        Button("Enable Dictation", role: .none) {}
+                        Button("Cancel", role: .cancel) {}
+                    })
+                    .confirmationDialog("The information Dictation uses to respond to your requests is also used for Siri and will remain on Apple servers unless Siri is also turned off.", isPresented: $showingDictationDisablePopup,
+                                        titleVisibility: .visible,
+                                        actions: {
+                        Button("Turn Off Dictation", role: .none) {}
+                        Button("Cancel", role: .cancel) {}
+                    })
                 Toggle("Auto-Punctuation", isOn: $autoPunctuationEnabled)
                 if dictationEnabled {
                     NavigationLink(destination: {}, label: {
@@ -129,7 +127,7 @@ struct KeyboardView: View {
                 }
             })
             .onChange(of: dictationEnabled, {
-                dictationEnabled ? showingDictationEnableAlert.toggle() : showingDictationDisableAlert.toggle()
+                dictationEnabled ? (DeviceInfo().isPhone ? showingDictationEnablePopup.toggle() : showingDictationEnableAlert.toggle()) : (DeviceInfo().isPhone ? showingDictationDisablePopup.toggle() : showingDictationDisableAlert.toggle())
             })
             
             Section(content: {
