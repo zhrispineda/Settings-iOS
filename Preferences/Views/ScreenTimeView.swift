@@ -34,7 +34,7 @@ struct ScreenTimeView: View {
             
             Section(content: {
                 SettingsLink(color: Color.cyan, icon: "chart.bar.xaxis", id: "App & Website Activity", subtitle: "Reports, Downtime & App Limits", content: {})
-                SettingsLink(color: Color.white, iconColor: Color.blue, icon: "chevron.compact.up", id: "Screen Distance", subtitle: "Reduce eye strain", content: {})
+                SettingsLink(color: Color.white, iconColor: Color.blue, icon: "screen-distance.symbol_Normal", id: "Screen Distance", subtitle: "Reduce eye strain", content: {})
             }, header: {
                 Text("Limit Usage")
             })

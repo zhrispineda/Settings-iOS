@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-let defaultPaddingViews = ["Accessibility", "News", "Maps", "Health", "Siri & Search", "Photos", "Game Center", "Developer"]
+let defaultPaddingViews = ["Accessibility", "Safari", "News", "Maps", "Health", "Siri & Search", "Photos", "Game Center", "Developer"]
 
 struct CustomList<Content: View>: View {
     // Variables

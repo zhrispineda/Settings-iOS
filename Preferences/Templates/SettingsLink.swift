@@ -34,28 +34,20 @@ struct SettingsLink<Content: View>: View {
                 ZStack {
                     color
                         .frame(width: 30, height: 30)
-                        .clipShape(RoundedRectangle(cornerRadius: 5))
+                        .clipShape(RoundedRectangle(cornerRadius: 6))
                         .overlay(
                             RoundedRectangle(cornerRadius: 5)
                                 .stroke(Color.gray.opacity(0.5), lineWidth: 0.5))
                     if UIImage(systemName: icon) != nil {
                         switch icon {
-                        case "chevron.compact.up":
-                            VStack(spacing: -2) {
-                                Image(systemName: icon)
-                                    .imageScale(.small)
-                                    .foregroundStyle(iconColor)
-                                Image(systemName: icon)
-                                    .imageScale(.medium)
-                                    .foregroundStyle(iconColor)
-                                Image(systemName: icon)
-                                    .imageScale(.large)
-                                    .foregroundStyle(iconColor)
-                            }
                         case "appclip":
                             Image(systemName: icon)
                                 .foregroundStyle(.blue)
                                 .imageScale(.large)
+                        case "eye.trianglebadge.exclamationmark.fill":
+                            Image(systemName: icon)
+                                .imageScale(.small)
+                                .foregroundStyle(iconColor)
                         default:
                             Image(systemName: icon)
                                 .imageScale(larger && !smallerIcons.contains(icon) ? .large : .medium)
@@ -64,6 +56,16 @@ struct SettingsLink<Content: View>: View {
                         }
                     } else {
                         switch icon {
+                        case "screen-distance.symbol_Normal":
+                            Image(icon)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(height: 20)
+                        case "Sensor and Usage Data - 80_Normal":
+                            Image(icon)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(height: 20)
                         case "logo.bluetooth":
                             Image(icon)
                                 .resizable()
@@ -73,7 +75,7 @@ struct SettingsLink<Content: View>: View {
                         default:
                         Image(icon)
                             .resizable()
-                            .clipShape(RoundedRectangle(cornerRadius: 5))
+                            .clipShape(RoundedRectangle(cornerRadius: 5.0))
                             .frame(width: 30, height: 30)
                         }
                     }
@@ -99,7 +101,10 @@ struct SettingsLink<Content: View>: View {
 #Preview {
     NavigationStack {
         List {
-            SettingsLink(color: .blue, icon: "logo.bluetooth", id: "Bluetooth", content: {
+            SettingsLink(color: .blue, icon: "applesafari", id: "Safari", content: {
+                EmptyView()
+            })
+            SettingsLink(color: .blue, icon: "applesiri", id: "Siri", content: {
                 EmptyView()
             })
         }

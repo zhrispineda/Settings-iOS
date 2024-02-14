@@ -46,7 +46,7 @@ struct SettingsLabel: View {
 #Preview {
     NavigationStack {
         List {
-            SettingsLabel(color: Color.blue, icon: "icon", id: "Safari")
+            SettingsLabel(color: Color.blue, icon: "Placeholder_Normal", id: "Safari")
         }
     }
 }

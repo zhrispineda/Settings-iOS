@@ -23,10 +23,10 @@ struct PrivacySecurityView: View {
                 SettingsLink(color: .blue, icon: "network", id: "Local Network", content: {})
                 SettingsLink(color: .orange, icon: "mic.fill", larger: false, id: "Microphone", content: {})
                 SettingsLink(color: .gray, icon: "waveform", id: "Speech Recognition", content: {})
-                SettingsLink(color: .white, icon: "Icon", id: "Camera", content: {})
+                SettingsLink(color: .white, icon: "Placeholder_Normal", id: "Camera", content: {})
                 SettingsLink(icon: "applehealth", id: "Health", content: {})
                 if DeviceInfo().isPhone {
-                    SettingsLink(color: .blue, icon: "point.3.filled.connected.trianglepath.dotted", id: "Research Sensor & Usage Data", content: {})
+                    SettingsLink(color: .blue, icon: "Sensor and Usage Data - 80_Normal", id: "Research Sensor & Usage Data", content: {})
                 }
                 SettingsLink(icon: "applehome", id: "HomeKit", content: {})
                 SettingsLink(icon: "applewallet", id: "Wallet", content: {})

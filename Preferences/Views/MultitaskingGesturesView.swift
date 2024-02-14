@@ -69,7 +69,6 @@ struct MultitaskingGesturesView: View {
                     }
                     Spacer()
                 }
-                
             }, header: {
                 Text("Multitasking")
             }, footer: {

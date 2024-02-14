@@ -56,7 +56,7 @@ let smallerIcons = ["arrow.turn.up.forward.iphone", "squares.leading.rectangle",
 // Attention Settings: Screen Time
 let attentionSettings: [SettingsItem] = [
     SettingsItem(type: .screenTime, title: "Screen Time", icon: "hourglass", color: .indigo, destination: AnyView(ScreenTimeView())),
-    SettingsItem(type: .actionButton, title: "Action Button", icon: "arrow.turn.up.forward.iphone", color: .blue, destination: AnyView(ActionButtonView()))
+    SettingsItem(type: .actionButton, title: "Action Button", icon: "actionbutton_Normal", color: .blue, destination: AnyView(ActionButtonView()))
 ]
 
 // Main Settings: General
@@ -76,7 +76,7 @@ let servicesSettings: [SettingsItem] = [
 let appsSettings: [SettingsItem] = [
     SettingsItem(type: .safari, title: "Safari", icon: "applesafari", destination: AnyView(SafariView())),
     SettingsItem(type: .news, title: "News", icon: "applenews", destination: AnyView(NewsView())),
-    SettingsItem(type: .translate, title: "Translate", icon: "Icon", color: .white, destination: AnyView(TranslateView())),
+    SettingsItem(type: .translate, title: "Translate", icon: "Placeholder_Normal", color: .white, destination: AnyView(TranslateView())),
     SettingsItem(type: .maps, title: "Maps", icon: "applemaps", destination: AnyView(MapsView())),
     SettingsItem(type: .shortcuts, title: "Shortcuts", icon: "appleshortcuts", destination: AnyView(ShortcutsView())),
     SettingsItem(type: .health, title: "Health", icon: "applehealth", destination: AnyView(HealthView())),
