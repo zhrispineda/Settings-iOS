@@ -84,7 +84,7 @@ struct SafariView: View {
                                     .frame(height: 100)
                                     .clipShape(RoundedRectangle(cornerRadius: 10.0))
                                     .padding(.top)
-                                Text("Off")
+                                Text(DeviceInfo().isTablet ? "Off" : "Tab Bar")
                                     .font(.subheadline)
                                 Image(systemName: separateTabBarEnabled ? "checkmark.circle.fill" : "circle")
                                     .foregroundStyle(separateTabBarEnabled ? Color(UIColor.systemBackground) : Color(UIColor.tertiaryLabel), .blue)
@@ -106,7 +106,7 @@ struct SafariView: View {
                                     .frame(height: 100)
                                     .clipShape(RoundedRectangle(cornerRadius: 10.0))
                                     .padding(.top)
-                                Text("Split View & Slide Over")
+                                Text(DeviceInfo().isTablet ? "Split View & Slide Over" : "Single Tab")
                                     .font(.subheadline)
                                 Image(systemName: !separateTabBarEnabled ? "checkmark.circle.fill" : "circle")
                                     .foregroundStyle(!separateTabBarEnabled ? Color(UIColor.systemBackground) : Color(UIColor.tertiaryLabel), .blue)
@@ -118,7 +118,9 @@ struct SafariView: View {
                     }
                     Spacer()
                 }
-                Toggle("Landscape Tab Bar", isOn: $landscapeTabBarEnabled)
+                if !UIDevice.current.name.contains("SE") {
+                    Toggle("Landscape Tab Bar", isOn: $landscapeTabBarEnabled)
+                }
                 Toggle("Allow Website Tinting", isOn: $allowWebsiteTintingEnabled)
                 NavigationLink(destination: {}, label: {
                     HRowLabels(title: "Open Links", subtitle: "In New Tab")

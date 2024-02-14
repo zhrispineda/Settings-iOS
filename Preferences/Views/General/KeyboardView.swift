@@ -59,11 +59,13 @@ struct KeyboardView: View {
                 }
                 Toggle("Check Spelling", isOn: $checkSpellingEnabled)
                 Toggle("Enable Caps Lock", isOn: $capsLockEnabled)
-                if !DeviceInfo().isPhone {
+                if DeviceInfo().isTablet {
                     Toggle("Shortcuts", isOn: $shortcutsEnabled)
                 }
                 Toggle("Smart Punctuation", isOn: $smartPunctuationEnabled)
-                Toggle("Enable Key Flicks", isOn: $keyFlicksEnabled)
+                if DeviceInfo().isTablet {
+                    Toggle("Enable Key Flicks", isOn: $keyFlicksEnabled)
+                }
                 Toggle("Slide \(DeviceInfo().isPhone ? "" : "on Floating Keyboard ")to Type", isOn: $slideTypeEnabled.animation())
                 if slideTypeEnabled {
                     Toggle("Delete Slide-to-Type by Word", isOn: $deleteSlideTypeWordEnabled)

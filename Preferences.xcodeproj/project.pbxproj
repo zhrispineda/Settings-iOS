@@ -38,6 +38,11 @@
 		838C232E2B7497530053D4C5 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838C232D2B7497530053D4C5 /* AboutView.swift */; };
 		838C23302B74978C0053D4C5 /* HRowLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838C232F2B74978C0053D4C5 /* HRowLabels.swift */; };
 		83B98E302B7C087B007F6C94 /* IconToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B98E2F2B7C087B007F6C94 /* IconToggle.swift */; };
+		83F3F6A12B7D12B6003CC310 /* DictionaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3F6A02B7D12B6003CC310 /* DictionaryView.swift */; };
+		83F3F6A32B7D1454003CC310 /* VPNDeviceManagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3F6A22B7D1454003CC310 /* VPNDeviceManagementView.swift */; };
+		83F3F6A52B7D16F6003CC310 /* GameControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3F6A42B7D16F6003CC310 /* GameControllerView.swift */; };
+		83F3F6A72B7D2BAA003CC310 /* FontsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3F6A62B7D2BAA003CC310 /* FontsView.swift */; };
+		83F3F6A92B7D2EFE003CC310 /* LanguageRegionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3F6A82B7D2EFE003CC310 /* LanguageRegionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +79,11 @@
 		838C232F2B74978C0053D4C5 /* HRowLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRowLabels.swift; sourceTree = "<group>"; };
 		83B98E2F2B7C087B007F6C94 /* IconToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconToggle.swift; sourceTree = "<group>"; };
 		83CC61982B7952B800DAF0C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		83F3F6A02B7D12B6003CC310 /* DictionaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryView.swift; sourceTree = "<group>"; };
+		83F3F6A22B7D1454003CC310 /* VPNDeviceManagementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNDeviceManagementView.swift; sourceTree = "<group>"; };
+		83F3F6A42B7D16F6003CC310 /* GameControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControllerView.swift; sourceTree = "<group>"; };
+		83F3F6A62B7D2BAA003CC310 /* FontsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsView.swift; sourceTree = "<group>"; };
+		83F3F6A82B7D2EFE003CC310 /* LanguageRegionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageRegionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +196,11 @@
 				835683952B754ED3000FB136 /* About */,
 				838C232D2B7497530053D4C5 /* AboutView.swift */,
 				8356839A2B755AB3000FB136 /* KeyboardView.swift */,
+				83F3F6A42B7D16F6003CC310 /* GameControllerView.swift */,
+				83F3F6A62B7D2BAA003CC310 /* FontsView.swift */,
+				83F3F6A02B7D12B6003CC310 /* DictionaryView.swift */,
+				83F3F6A82B7D2EFE003CC310 /* LanguageRegionView.swift */,
+				83F3F6A22B7D1454003CC310 /* VPNDeviceManagementView.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -264,6 +279,7 @@
 				838C23262B746D290053D4C5 /* SettingsModel.swift in Sources */,
 				83815CDF2B768C2200F53A0F /* AccessibilityView.swift in Sources */,
 				83815CEF2B768EF000F53A0F /* ShortcutsView.swift in Sources */,
+				83F3F6A12B7D12B6003CC310 /* DictionaryView.swift in Sources */,
 				8356839B2B755AB3000FB136 /* KeyboardView.swift in Sources */,
 				838C232E2B7497530053D4C5 /* AboutView.swift in Sources */,
 				838C23292B748F3B0053D4C5 /* ScreenTimeView.swift in Sources */,
@@ -271,8 +287,12 @@
 				83815CF72B768F4800F53A0F /* GameCenterView.swift in Sources */,
 				83815CF52B768F3600F53A0F /* PhotosView.swift in Sources */,
 				83815CF32B768F1E00F53A0F /* SiriSearchView.swift in Sources */,
+				83F3F6A92B7D2EFE003CC310 /* LanguageRegionView.swift in Sources */,
+				83F3F6A72B7D2BAA003CC310 /* FontsView.swift in Sources */,
+				83F3F6A52B7D16F6003CC310 /* GameControllerView.swift in Sources */,
 				83815CE32B768D5800F53A0F /* PrivacySecurityView.swift in Sources */,
 				835683942B754623000FB136 /* SettingsLabel.swift in Sources */,
+				83F3F6A32B7D1454003CC310 /* VPNDeviceManagementView.swift in Sources */,
 				83815CF92B768F5C00F53A0F /* DeveloperView.swift in Sources */,
 				83815CE92B768E3600F53A0F /* NewsView.swift in Sources */,
 				835683922B753FDD000FB136 /* SettingsLink.swift in Sources */,

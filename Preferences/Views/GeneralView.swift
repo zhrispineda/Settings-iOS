@@ -16,18 +16,22 @@ struct GeneralView: View {
             
             Section {
                 NavigationLink("Keyboard", destination: KeyboardView())
-                NavigationLink("Game Controllers", destination: {})
-                NavigationLink("Fonts", destination: {})
-                NavigationLink("Language & Region", destination: {})
-                NavigationLink("Dictionary", destination: {})
+                NavigationLink("Game Controllers", destination: GameControllerView())
+                NavigationLink("Fonts", destination: FontsView())
+                NavigationLink("Language & Region", destination: LanguageRegionView())
+                NavigationLink("Dictionary", destination: DictionaryView())
             }
             
             Section {
-                NavigationLink("VPN & Device Management", destination: {})
+                NavigationLink("VPN & Device Management", destination: VPNDeviceManagementView())
             }
             
             Section {
-                NavigationLink("Transfer or Reset \(UIDevice().localizedModel)", destination: {})
+                NavigationLink("Transfer or Reset \(UIDevice().localizedModel)", destination: {
+                    Color(UIColor.systemGroupedBackground)
+                        .ignoresSafeArea()
+                        .navigationTitle("Transfer or Reset \(UIDevice().localizedModel)")
+                })
             }
         }
     }
