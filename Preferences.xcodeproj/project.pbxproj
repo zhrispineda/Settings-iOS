@@ -31,6 +31,8 @@
 		83815CF72B768F4800F53A0F /* GameCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83815CF62B768F4800F53A0F /* GameCenterView.swift */; };
 		83815CF92B768F5C00F53A0F /* DeveloperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83815CF82B768F5C00F53A0F /* DeveloperView.swift */; };
 		83815CFB2B76908700F53A0F /* ActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83815CFA2B76908700F53A0F /* ActionButtonView.swift */; };
+		838A9EC22B7E81EC00ED261C /* ContentPrivacyRestrictionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838A9EC12B7E81EC00ED261C /* ContentPrivacyRestrictionsView.swift */; };
+		838A9EC42B7E823300ED261C /* CustomNavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838A9EC32B7E823300ED261C /* CustomNavigationLink.swift */; };
 		838C23232B746CF90053D4C5 /* GeneralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838C23222B746CF90053D4C5 /* GeneralView.swift */; };
 		838C23262B746D290053D4C5 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838C23252B746D290053D4C5 /* SettingsModel.swift */; };
 		838C23292B748F3B0053D4C5 /* ScreenTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838C23282B748F3B0053D4C5 /* ScreenTimeView.swift */; };
@@ -71,6 +73,8 @@
 		83815CF62B768F4800F53A0F /* GameCenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCenterView.swift; sourceTree = "<group>"; };
 		83815CF82B768F5C00F53A0F /* DeveloperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperView.swift; sourceTree = "<group>"; };
 		83815CFA2B76908700F53A0F /* ActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonView.swift; sourceTree = "<group>"; };
+		838A9EC12B7E81EC00ED261C /* ContentPrivacyRestrictionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentPrivacyRestrictionsView.swift; sourceTree = "<group>"; };
+		838A9EC32B7E823300ED261C /* CustomNavigationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationLink.swift; sourceTree = "<group>"; };
 		838C23222B746CF90053D4C5 /* GeneralView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralView.swift; sourceTree = "<group>"; };
 		838C23252B746D290053D4C5 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
 		838C23282B748F3B0053D4C5 /* ScreenTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTimeView.swift; sourceTree = "<group>"; };
@@ -145,9 +149,18 @@
 			path = About;
 			sourceTree = "<group>";
 		};
+		838A9EC02B7E81D900ED261C /* Screen Time */ = {
+			isa = PBXGroup;
+			children = (
+				838A9EC12B7E81EC00ED261C /* ContentPrivacyRestrictionsView.swift */,
+			);
+			path = "Screen Time";
+			sourceTree = "<group>";
+		};
 		838C23212B7468870053D4C5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				838A9EC02B7E81D900ED261C /* Screen Time */,
 				838C232C2B74974B0053D4C5 /* General */,
 				838C23282B748F3B0053D4C5 /* ScreenTimeView.swift */,
 				83815CFA2B76908700F53A0F /* ActionButtonView.swift */,
@@ -186,6 +199,7 @@
 				835683912B753FDD000FB136 /* SettingsLink.swift */,
 				835683932B754623000FB136 /* SettingsLabel.swift */,
 				83B98E2F2B7C087B007F6C94 /* IconToggle.swift */,
+				838A9EC32B7E823300ED261C /* CustomNavigationLink.swift */,
 			);
 			path = Templates;
 			sourceTree = "<group>";
@@ -276,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83B98E302B7C087B007F6C94 /* IconToggle.swift in Sources */,
+				838A9EC22B7E81EC00ED261C /* ContentPrivacyRestrictionsView.swift in Sources */,
 				838C23262B746D290053D4C5 /* SettingsModel.swift in Sources */,
 				83815CDF2B768C2200F53A0F /* AccessibilityView.swift in Sources */,
 				83815CEF2B768EF000F53A0F /* ShortcutsView.swift in Sources */,
@@ -288,6 +303,7 @@
 				83815CF52B768F3600F53A0F /* PhotosView.swift in Sources */,
 				83815CF32B768F1E00F53A0F /* SiriSearchView.swift in Sources */,
 				83F3F6A92B7D2EFE003CC310 /* LanguageRegionView.swift in Sources */,
+				838A9EC42B7E823300ED261C /* CustomNavigationLink.swift in Sources */,
 				83F3F6A72B7D2BAA003CC310 /* FontsView.swift in Sources */,
 				83F3F6A52B7D16F6003CC310 /* GameControllerView.swift in Sources */,
 				83815CE32B768D5800F53A0F /* PrivacySecurityView.swift in Sources */,

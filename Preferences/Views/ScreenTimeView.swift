@@ -33,8 +33,18 @@ struct ScreenTimeView: View {
             }
             
             Section(content: {
-                SettingsLink(color: Color.cyan, icon: "chart.bar.xaxis", id: "App & Website Activity", subtitle: "Reports, Downtime & App Limits", content: {})
-                SettingsLink(color: Color.white, iconColor: Color.blue, icon: "screen-distance.symbol_Normal", id: "Screen Distance", subtitle: "Reduce eye strain", content: {})
+                Button(action: {
+                    // TODO: Popup
+                }, label: {
+                    SettingsLink(color: Color.cyan, icon: "chart.bar.xaxis", id: "App & Website Activity", subtitle: "Reports, Downtime & App Limits", content: {})
+                        .foregroundStyle(Color(UIColor.label))
+                })
+                Button(action: {
+                    // TODO: Popup
+                }, label: {
+                    SettingsLink(color: Color.white, iconColor: Color.blue, icon: "screen-distance.symbol_Normal", id: "Screen Distance", subtitle: "Reduce eye strain", content: {})
+                        .foregroundStyle(Color(UIColor.label))
+                })
             }, header: {
                 Text("Limit Usage")
             })
@@ -46,7 +56,7 @@ struct ScreenTimeView: View {
             })
             
             Section(content: {
-                SettingsLink(color: Color.red, icon: "nosign", larger: false, id: "Content & Privacy Restrictions", subtitle: "Block inappropriate content", content: {})
+                SettingsLink(color: Color.red, icon: "nosign", larger: false, id: "Content & Privacy Restrictions", subtitle: "Block inappropriate content", content: { ContentPrivacyRestrictionsView() })
             }, header: {
                 Text("Restrictions")
             })
