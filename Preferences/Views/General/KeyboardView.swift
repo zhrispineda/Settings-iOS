@@ -35,18 +35,13 @@ struct KeyboardView: View {
     var body: some View {
         CustomList(title: "Keyboards") {
             Section {
-                NavigationLink(destination: {}, label: {
-                    HRowLabels(title: "Keyboards", subtitle: "2")
-                })
                 NavigationLink("Hardware Keyboard", destination: {})
             }
             
             Section {
                 NavigationLink("Text Replacement", destination: {})
                 if DeviceInfo().isPhone {
-                    NavigationLink(destination: {}, label: {
-                        HRowLabels(title: "One-Handed Keyboard", subtitle: "Off")
-                    })
+                    CustomNavigationLink(title: "One-Handed Keyboard", status: "Off", destination: EmptyView())
                 }
             }
             

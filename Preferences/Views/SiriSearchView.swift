@@ -58,12 +58,8 @@ struct SiriSearchView: View {
                     .onChange(of: siriEnabled, {
                         siriEnabled ? (DeviceInfo().isPhone ? showingEnableSiriPopup.toggle() : showingEnableSiriAlert.toggle()) : (DeviceInfo().isPhone ? showingDisableSiriPopup.toggle() : showingDisableSiriAlert.toggle())
                     })
-                NavigationLink(destination: {}, label: {
-                    HRowLabels(title: "Language", subtitle: "English (United States)")
-                })
-                NavigationLink(destination: {}, label: {
-                    HRowLabels(title: "Siri Voice", subtitle: "American (Voice 4)")
-                })
+                CustomNavigationLink(title: "Language", status: "English (United States)", destination: EmptyView())
+                CustomNavigationLink(title: "Siri Voice", status: "American (Voice 4)", destination: EmptyView())
                 NavigationLink("Siri Responses", destination: {})
                 Button(action: {}, label: { // TODO: Popover
                     HStack {

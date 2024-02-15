@@ -18,30 +18,28 @@ struct AboutView: View {
     var body: some View {
         CustomList(title: "About") {
             Section {
-                HRowLabels(title: "Name", subtitle: UIDevice().localizedModel)
+                HText("Name", status: UIDevice().localizedModel)
                 
-                NavigationLink(destination: VersionView()) {
-                    HRowLabels(title: "\(UIDevice().systemName) Version", subtitle: UIDevice().systemVersion)
-                }
+                CustomNavigationLink(title: "\(UIDevice().systemName) Version", status: UIDevice().systemVersion, destination: VersionView())
                 
-                HRowLabels(title: "Model Name", subtitle: UIDevice.current.name)
-                HRowLabels(title: "Model Number", subtitle: showingModelNumber ? getModelNumber() : "\(getModelNumber())LL/A")
+                HText("Model Name", status: UIDevice.current.name)
+                HText("Model Number", status: showingModelNumber ? getModelNumber() : "\(getModelNumber())LL/A")
                     .onTapGesture {
                         showingModelNumber.toggle()
                     }
-                HRowLabels(title: "Serial Number", subtitle: serialNumber)
+                HText("Serial Number", status: serialNumber)
                     .onAppear(perform: {
                         serialNumber = randomSerialNumber()
                     })
             }
             
             Section {
-                HRowLabels(title: "Songs", subtitle: "0")
-                HRowLabels(title: "Videos", subtitle: "0")
-                HRowLabels(title: "Photos", subtitle: "0")
-                HRowLabels(title: "Applications", subtitle: "1")
-                HRowLabels(title: "Capacity", subtitle: totalStorage)
-                HRowLabels(title: "Available", subtitle: availableStorage)
+                HText("Songs", status: "0")
+                HText("Videos", status: "0")
+                HText("Photos", status: "0")
+                HText("Applications", status: "1")
+                HText("Capacity", status: totalStorage)
+                HText("Available", status: availableStorage)
             }
             
             Section {

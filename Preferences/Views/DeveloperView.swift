@@ -45,9 +45,7 @@ struct DeveloperView: View {
             })
             
             Section(content: {
-                NavigationLink(destination: {}, label: {
-                    HRowLabels(title: "View", subtitle: "Default")
-                })
+                CustomNavigationLink(title: "View", status: "Default", destination: EmptyView())
             }, header: {
                 Text("Display Zoom")
             }, footer: {

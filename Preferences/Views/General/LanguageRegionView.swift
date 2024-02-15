@@ -37,27 +37,13 @@ struct LanguageRegionView: View {
             })
             
             Section {
-                NavigationLink(destination: {}, label: {
-                    HRowLabels(title: "Region", subtitle: "United States")
-                })
-                NavigationLink(destination: {}, label: {
-                    HRowLabels(title: "Calendar", subtitle: "Gregorian")
-                })
-                NavigationLink(destination: {}, label: {
-                    HRowLabels(title: "Temperature", subtitle: "°F")
-                })
-                NavigationLink(destination: {}, label: {
-                    HRowLabels(title: "Measurement System", subtitle: "US")
-                })
-                NavigationLink(destination: {}, label: {
-                    HRowLabels(title: "First Day of Week", subtitle: "Sunday")
-                })
-                NavigationLink(destination: {}, label: {
-                    HRowLabels(title: "Date Format", subtitle: "8/19/24")
-                })
-                NavigationLink(destination: {}, label: {
-                    HRowLabels(title: "Number Format", subtitle: "1,234,567.89")
-                })
+                CustomNavigationLink(title: "Region", status: "United States", destination: EmptyView())
+                CustomNavigationLink(title: "Calendar", status: "Gregorian", destination: EmptyView())
+                CustomNavigationLink(title: "Temperature", status: "°F", destination: EmptyView())
+                CustomNavigationLink(title: "Measurement System", status: "US", destination: EmptyView())
+                CustomNavigationLink(title: "First Day of Week", status: "Sunday", destination: EmptyView())
+                CustomNavigationLink(title: "Date Format", status: "8/19/24", destination: EmptyView())
+                CustomNavigationLink(title: "Number Format", status: "1,234,567.89", destination: EmptyView())
             }
             
             Section(content: {

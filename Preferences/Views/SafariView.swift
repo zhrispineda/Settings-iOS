@@ -34,15 +34,11 @@ struct SafariView: View {
             })
             
             Section(content: {
-                NavigationLink(destination: {}, label: {
-                    HRowLabels(title: "Search Engine", subtitle: "Google")
-                })
+                CustomNavigationLink(title: "Search Engine", status: "Google", destination: EmptyView())
                 Toggle("Also Use in Private Browsing", isOn: $alsoUsePrivateBrowsingEnabled)
                 Toggle("Search Engine Suggestions", isOn: $searchEngineSuggestionsEnabled)
                 Toggle("Safari Suggestions", isOn: $safariSuggestionsEnabled)
-                NavigationLink(destination: {}, label: {
-                    HRowLabels(title: "Quick Website Search", subtitle: "On")
-                })
+                CustomNavigationLink(title: "Quick Website Search", status: "On", destination: EmptyView())
                 Toggle("Preload Top Hit", isOn: $preloadTopHitEnabled)
             }, header: {
                 Text("Search")
@@ -52,20 +48,15 @@ struct SafariView: View {
             
             Section(content: {
                 NavigationLink("AutoFill", destination: {})
-                NavigationLink(destination: {}, label: { HRowLabels(title: "Favorites", subtitle: "Favorites")
-                })
+                CustomNavigationLink(title: "Favorites", status: "Favorites", destination: EmptyView())
                 if DeviceInfo().isTablet {
                     Toggle("Show Favorites Bar", isOn: $showFavoritesBarEnabled)
-                    NavigationLink(destination: {}, label: {
-                        HRowLabels(title: "Favorites Bar Appearance", subtitle: "Show Icons and Text")
-                    })
+                    CustomNavigationLink(title: "Favorites Bar Appearance", status: "Show Icons and Text", destination: EmptyView())
                     Toggle("Show Links on Hover", isOn: $showLinksHoverEnabled)
                 }
                 Toggle("Block Pop-ups", isOn: $blockPopUpsEnabled)
                 NavigationLink("Extensions", destination: {})
-                NavigationLink(destination: {}, label: {
-                    HRowLabels(title: "Downloads", subtitle: "On My \(DeviceInfo().model)")
-                })
+                CustomNavigationLink(title: "Downloads", status: "On My \(DeviceInfo().model)", destination: EmptyView())
             }, header: {
                 Text("General")
             })
@@ -122,12 +113,8 @@ struct SafariView: View {
                     Toggle("Landscape Tab Bar", isOn: $landscapeTabBarEnabled)
                 }
                 Toggle("Allow Website Tinting", isOn: $allowWebsiteTintingEnabled)
-                NavigationLink(destination: {}, label: {
-                    HRowLabels(title: "Open Links", subtitle: "In New Tab")
-                })
-                NavigationLink(destination: {}, label: {
-                    HRowLabels(title: "Close Tabs", subtitle: "Manually")
-                })
+                CustomNavigationLink(title: "Open Links", status: "In New Tab", destination: EmptyView())
+                CustomNavigationLink(title: "Close Tabs", status: "Manually", destination: EmptyView())
             }, header: {
                 Text("Tabs")
             }, footer: {
@@ -147,9 +134,7 @@ struct SafariView: View {
             
             Section(content: {
                 Toggle("Prevent Cross-Site Tracking", isOn: $preventCrossSiteTrackingEnabled)
-                NavigationLink(destination: {}, label: {
-                    HRowLabels(title: "Hide IP Address", subtitle: "Off")
-                })
+                CustomNavigationLink(title: "Hide IP Address", status: "Off", destination: EmptyView())
                 Toggle("Require Passcode to Unlock Private Browsing", isOn: $requirePasscodeUnlockPrivateBrowsingEnabled)
                 Toggle("Fradulent Website Warning", isOn: $fradulentWebsiteWarningEnabled)
             }, header: {
