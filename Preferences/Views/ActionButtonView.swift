@@ -14,6 +14,7 @@ struct ActionButtonView: View {
     var body: some View {
         Color.black
             .ignoresSafeArea()
+            .navigationBarTitleDisplayMode(.inline)
             .navigationBarBackButtonHidden()
             .navigationBarItems(leading: CustomButon {
                 dismiss()

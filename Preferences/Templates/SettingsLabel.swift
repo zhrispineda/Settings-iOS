@@ -26,7 +26,7 @@ struct SettingsLabel: View {
                     .clipShape(RoundedRectangle(cornerRadius: 6))
                     .overlay(
                         RoundedRectangle(cornerRadius: 5)
-                            .stroke(Color.white, lineWidth: 0.1))
+                            .stroke(Color.gray.opacity(0.5), lineWidth: 0.5))
                 if UIImage(systemName: icon) != nil {
                     Image(systemName: icon)
                         .imageScale(smallerIcons.contains(icon) ? .medium : .large)
@@ -46,7 +46,8 @@ struct SettingsLabel: View {
 #Preview {
     NavigationStack {
         List {
-            SettingsLabel(color: Color.blue, icon: "Placeholder_Normal", id: "Safari")
+            SettingsLabel(color: Color.gray, icon: "applesafari", id: "Safari")
+            SettingsLabel(color: Color.gray, icon: "gear", id: "Safari")
         }
     }
 }

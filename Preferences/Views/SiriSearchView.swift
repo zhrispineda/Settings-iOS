@@ -56,7 +56,7 @@ struct SiriSearchView: View {
                         Text("Siri sends information like your voice input, contacts, and location to Apple to process your requests.")
                     }
                     .onChange(of: siriEnabled, {
-                        siriEnabled ? DeviceInfo().isPhone ? showingEnableSiriPopup.toggle() : showingEnableSiriAlert.toggle() : DeviceInfo().isPhone ? showingDisableSiriPopup.toggle() : showingDisableSiriAlert.toggle()
+                        siriEnabled ? (DeviceInfo().isPhone ? showingEnableSiriPopup.toggle() : showingEnableSiriAlert.toggle()) : (DeviceInfo().isPhone ? showingDisableSiriPopup.toggle() : showingDisableSiriAlert.toggle())
                     })
                 NavigationLink(destination: {}, label: {
                     HRowLabels(title: "Language", subtitle: "English (United States)")

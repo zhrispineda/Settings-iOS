@@ -19,7 +19,7 @@ struct LanguageRegionView: View {
                     HStack {
                         VStack(alignment: .leading) {
                             Text(lang)
-                            Text("iPhone Language")
+                            Text("\(DeviceInfo().model) Language")
                                 .font(.caption)
                                 .foregroundStyle(.secondary)
                         }
