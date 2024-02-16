@@ -50,7 +50,7 @@ struct ScreenTimeView: View {
             })
             
             Section(content: {
-                SettingsLink(color: Color.blue, icon: "bubble.left.and.exclamationmark.bubble.right.fill", larger: false, id: "Communication Safety", subtitle: "Protect from Sensitive Content", content: {})
+                SettingsLink(color: Color.blue, icon: "bubble.left.and.exclamationmark.bubble.right.fill", larger: false, id: "Communication Safety", subtitle: "Protect from sensitive content", content: {})
             }, header: {
                 Text("Communication")
             })

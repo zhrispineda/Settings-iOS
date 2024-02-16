@@ -16,6 +16,8 @@
 		835683972B754EE4000FB136 /* VersionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835683962B754EE4000FB136 /* VersionView.swift */; };
 		835683992B7551D3000FB136 /* CertificateTrustSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835683982B7551D3000FB136 /* CertificateTrustSettingsView.swift */; };
 		8356839B2B755AB3000FB136 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8356839A2B755AB3000FB136 /* KeyboardView.swift */; };
+		837C03072B7F192F004D6C71 /* AppInstallationsPurchasesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C03062B7F192F004D6C71 /* AppInstallationsPurchasesView.swift */; };
+		837C03092B7F1AE0004D6C71 /* AllowDenySelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C03082B7F1AE0004D6C71 /* AllowDenySelection.swift */; };
 		83815CDF2B768C2200F53A0F /* AccessibilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83815CDE2B768C2200F53A0F /* AccessibilityView.swift */; };
 		83815CE12B768CF300F53A0F /* MultitaskingGesturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83815CE02B768CF300F53A0F /* MultitaskingGesturesView.swift */; };
 		83815CE32B768D5800F53A0F /* PrivacySecurityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83815CE22B768D5800F53A0F /* PrivacySecurityView.swift */; };
@@ -58,6 +60,8 @@
 		835683962B754EE4000FB136 /* VersionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionView.swift; sourceTree = "<group>"; };
 		835683982B7551D3000FB136 /* CertificateTrustSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificateTrustSettingsView.swift; sourceTree = "<group>"; };
 		8356839A2B755AB3000FB136 /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
+		837C03062B7F192F004D6C71 /* AppInstallationsPurchasesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInstallationsPurchasesView.swift; sourceTree = "<group>"; };
+		837C03082B7F1AE0004D6C71 /* AllowDenySelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowDenySelection.swift; sourceTree = "<group>"; };
 		83815CDE2B768C2200F53A0F /* AccessibilityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityView.swift; sourceTree = "<group>"; };
 		83815CE02B768CF300F53A0F /* MultitaskingGesturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultitaskingGesturesView.swift; sourceTree = "<group>"; };
 		83815CE22B768D5800F53A0F /* PrivacySecurityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacySecurityView.swift; sourceTree = "<group>"; };
@@ -149,9 +153,18 @@
 			path = About;
 			sourceTree = "<group>";
 		};
+		837C03052B7F1917004D6C71 /* Content & Privacy Restrictions */ = {
+			isa = PBXGroup;
+			children = (
+				837C03062B7F192F004D6C71 /* AppInstallationsPurchasesView.swift */,
+			);
+			path = "Content & Privacy Restrictions";
+			sourceTree = "<group>";
+		};
 		838A9EC02B7E81D900ED261C /* Screen Time */ = {
 			isa = PBXGroup;
 			children = (
+				837C03052B7F1917004D6C71 /* Content & Privacy Restrictions */,
 				838A9EC12B7E81EC00ED261C /* ContentPrivacyRestrictionsView.swift */,
 			);
 			path = "Screen Time";
@@ -200,6 +213,7 @@
 				835683932B754623000FB136 /* SettingsLabel.swift */,
 				83B98E2F2B7C087B007F6C94 /* IconToggle.swift */,
 				838A9EC32B7E823300ED261C /* CustomNavigationLink.swift */,
+				837C03082B7F1AE0004D6C71 /* AllowDenySelection.swift */,
 			);
 			path = Templates;
 			sourceTree = "<group>";
@@ -306,6 +320,7 @@
 				838A9EC42B7E823300ED261C /* CustomNavigationLink.swift in Sources */,
 				83F3F6A72B7D2BAA003CC310 /* FontsView.swift in Sources */,
 				83F3F6A52B7D16F6003CC310 /* GameControllerView.swift in Sources */,
+				837C03072B7F192F004D6C71 /* AppInstallationsPurchasesView.swift in Sources */,
 				83815CE32B768D5800F53A0F /* PrivacySecurityView.swift in Sources */,
 				835683942B754623000FB136 /* SettingsLabel.swift in Sources */,
 				83F3F6A32B7D1454003CC310 /* VPNDeviceManagementView.swift in Sources */,
@@ -320,6 +335,7 @@
 				838C23232B746CF90053D4C5 /* GeneralView.swift in Sources */,
 				833F0AD22B744D180036EAD2 /* ContentView.swift in Sources */,
 				83815CFB2B76908700F53A0F /* ActionButtonView.swift in Sources */,
+				837C03092B7F1AE0004D6C71 /* AllowDenySelection.swift in Sources */,
 				83815CEB2B768E4A00F53A0F /* TranslateView.swift in Sources */,
 				83815CE12B768CF300F53A0F /* MultitaskingGesturesView.swift in Sources */,
 				838C232B2B7492170053D4C5 /* CustomList.swift in Sources */,

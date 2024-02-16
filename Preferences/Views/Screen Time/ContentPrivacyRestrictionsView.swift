@@ -18,7 +18,7 @@ struct ContentPrivacyRestrictionsView: View {
             }
             
             Section {
-                NavigationLink("App Installations & Purchases", destination: {})
+                NavigationLink("App Installations & Purchases", destination: AppInstallationsPurchasesView())
                 NavigationLink("Allowed Apps", destination: {})
                 NavigationLink("Content Restrictions", destination: {})
             }
