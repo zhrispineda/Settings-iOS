@@ -1,5 +1,5 @@
 //
-//  destinationRestrictionsView.swift
+//  ContentRestrictionsView.swift
 //  Preferences
 //
 //  Settings > Screen Time > Content & Privacy Restrictions > Content Restrictions
@@ -24,7 +24,7 @@ struct ContentRestrictionsView: View {
             })
             
             Section(content: {
-                CustomNavigationLink(title: "Web Content", status: "Unrestricted", destination: EmptyView())
+                CustomNavigationLink(title: "Web Content", status: "Unrestricted", destination: WebContentView())
             }, header: {
                 Text("Web Content")
             })
@@ -37,7 +37,7 @@ struct ContentRestrictionsView: View {
             })
             
             Section(content: {
-                CustomNavigationLink(title: "Multiplayer Games", status: "Allow with Everyone", destination: EmptyView())
+                CustomNavigationLink(title: "Multiplayer Games", status: "Allow with Everyone", destination: AllowDenySelection(title: "Multiplayer Games", options: ["Don‘t Allow", "Allow with Friends Only", "Allow with Everyone"], selected: "Allow with Everyone"))
                 CustomNavigationLink(title: "Adding Friends", status: "Allow", destination: AllowDenySelection(title: "Adding Friends"))
                 CustomNavigationLink(title: "Connect with Friends", status: "Allow", destination: AllowDenySelection(title: "Connect with Friends"))
                 CustomNavigationLink(title: "Screen Recording", status: "Allow", destination: AllowDenySelection(title: "Screen Recording"))

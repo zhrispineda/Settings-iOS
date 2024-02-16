@@ -18,18 +18,31 @@ struct AllowDenySelection: View {
     
     var body: some View {
         CustomList(title: title) {
-            ForEach(options, id: \.self) { option in
-                Button(action: {
-                    selected = option
-                }, label: {
-                    HStack {
-                        Text(option)
-                            .foregroundStyle(Color(UIColor.label))
-                        Spacer()
-                        Image(systemName: "\(selected == option ? "checkmark" : "")")
+            Section(content: {
+                ForEach(options, id: \.self) { option in
+                    Button(action: {
+                        selected = option
+                    }, label: {
+                        HStack {
+                            Text(option)
+                                .foregroundStyle(Color(UIColor.label))
+                            Spacer()
+                            Image(systemName: "\(selected == option ? "checkmark" : "")")
+                        }
+                    })
+                }
+            }, footer: {
+                if title == "Connect with Friends" {
+                    VStack {
+                        Text("By selecting “Allow,“ apps can ask for permission to connect you with your Game Center friends.\n")
+                        Text("\nDisallowing prevents apps from asking if they can connect you with your Game Center friends and restricts this device from sharing your Game Center friends list with other apps.")
                     }
-                })
-            }
+                } else if title == "Private Messaging" {
+                    VStack {
+                        Text("Disallowing prevents you from sending custom messages to other players and using voice chat in games.")
+                    }
+                }
+            })
         }
     }
 }

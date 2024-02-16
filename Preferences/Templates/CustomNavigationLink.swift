@@ -25,6 +25,7 @@ struct CustomNavigationLink<Content: View>: View {
             HStack {
                 VStack(alignment: .leading) {
                     Text(title)
+                        .lineLimit(1)
                     if !subtitle.isEmpty {
                         Text(subtitle)
                             .foregroundStyle(.secondary)
@@ -34,6 +35,7 @@ struct CustomNavigationLink<Content: View>: View {
                 if !status.isEmpty {
                     Spacer()
                     Text(status)
+                        .lineLimit(1)
                         .foregroundStyle(.secondary)
                 }
             }
