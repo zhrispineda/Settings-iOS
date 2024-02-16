@@ -36,7 +36,7 @@ struct ScreenTimeView: View {
                 Button(action: {
                     // TODO: Popup
                 }, label: {
-                    SettingsLink(color: Color.cyan, icon: "chart.bar.xaxis", id: "App & Website Activity", subtitle: "Reports, Downtime & App Limits", content: {})
+                    SettingsLink(color: Color.cyan, icon: "chart.bar.xaxis", larger: false, id: "App & Website Activity", subtitle: "Reports, Downtime & App Limits", content: {})
                         .foregroundStyle(Color(UIColor.label))
                 })
                 Button(action: {

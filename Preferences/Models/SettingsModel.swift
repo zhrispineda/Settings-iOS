@@ -51,7 +51,7 @@ struct SettingsItem<Content: View>: Identifiable {
     let destination: Content
 }
 
-let smallerIcons = ["arrow.turn.up.forward.iphone", "squares.leading.rectangle", "key.fill", "hammer.fill"]
+let smallerIcons = ["arrow.turn.up.forward.iphone", "squares.leading.rectangle", "key.fill", "hammer.fill", "shareplay"]
 
 // Attention Settings: Screen Time
 let attentionSettings: [SettingsItem] = [
