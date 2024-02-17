@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		832EF38A2B8071C00066A1BF /* RestrictionsLocationServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832EF3892B8071C00066A1BF /* RestrictionsLocationServicesView.swift */; };
+		832EF38C2B81264E0066A1BF /* LocationAlertsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832EF38B2B81264E0066A1BF /* LocationAlertsView.swift */; };
 		833F0AD02B744D180036EAD2 /* PreferencesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833F0ACF2B744D180036EAD2 /* PreferencesApp.swift */; };
 		833F0AD22B744D180036EAD2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833F0AD12B744D180036EAD2 /* ContentView.swift */; };
 		833F0AD42B744D190036EAD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 833F0AD32B744D190036EAD2 /* Assets.xcassets */; };
@@ -56,6 +58,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		832EF3892B8071C00066A1BF /* RestrictionsLocationServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestrictionsLocationServicesView.swift; sourceTree = "<group>"; };
+		832EF38B2B81264E0066A1BF /* LocationAlertsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAlertsView.swift; sourceTree = "<group>"; };
 		833F0ACC2B744D180036EAD2 /* Preferences.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Preferences.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		833F0ACF2B744D180036EAD2 /* PreferencesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesApp.swift; sourceTree = "<group>"; };
 		833F0AD12B744D180036EAD2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -117,6 +121,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		832EF38D2B81268A0066A1BF /* Location Services */ = {
+			isa = PBXGroup;
+			children = (
+				832EF38B2B81264E0066A1BF /* LocationAlertsView.swift */,
+			);
+			path = "Location Services";
+			sourceTree = "<group>";
+		};
 		833F0AC32B744D180036EAD2 = {
 			isa = PBXGroup;
 			children = (
@@ -168,10 +180,12 @@
 		837C03052B7F1917004D6C71 /* Content & Privacy Restrictions */ = {
 			isa = PBXGroup;
 			children = (
+				832EF38D2B81268A0066A1BF /* Location Services */,
 				8382739F2B7F28CA000F4228 /* Content Restrictions */,
 				837C03062B7F192F004D6C71 /* AppInstallationsPurchasesView.swift */,
 				8382739B2B7F21E4000F4228 /* AllowedAppsView.swift */,
 				8382739D2B7F25D4000F4228 /* ContentRestrictionsView.swift */,
+				832EF3892B8071C00066A1BF /* RestrictionsLocationServicesView.swift */,
 			);
 			path = "Content & Privacy Restrictions";
 			sourceTree = "<group>";
@@ -337,6 +351,7 @@
 				83F3F6A12B7D12B6003CC310 /* DictionaryView.swift in Sources */,
 				8356839B2B755AB3000FB136 /* KeyboardView.swift in Sources */,
 				838C232E2B7497530053D4C5 /* AboutView.swift in Sources */,
+				832EF38A2B8071C00066A1BF /* RestrictionsLocationServicesView.swift in Sources */,
 				838C23292B748F3B0053D4C5 /* ScreenTimeView.swift in Sources */,
 				83815CE52B768DBA00F53A0F /* PasswordsView.swift in Sources */,
 				83815CF72B768F4800F53A0F /* GameCenterView.swift in Sources */,
@@ -358,6 +373,7 @@
 				83815CE92B768E3600F53A0F /* NewsView.swift in Sources */,
 				835683922B753FDD000FB136 /* SettingsLink.swift in Sources */,
 				835683972B754EE4000FB136 /* VersionView.swift in Sources */,
+				832EF38C2B81264E0066A1BF /* LocationAlertsView.swift in Sources */,
 				83815CF12B768F0500F53A0F /* HealthView.swift in Sources */,
 				83815CE72B768DF100F53A0F /* SafariView.swift in Sources */,
 				83815CED2B768E8300F53A0F /* MapsView.swift in Sources */,

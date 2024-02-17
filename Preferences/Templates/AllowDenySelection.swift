@@ -38,9 +38,9 @@ struct AllowDenySelection: View {
                         Text("\nDisallowing prevents apps from asking if they can connect you with your Game Center friends and restricts this device from sharing your Game Center friends list with other apps.")
                     }
                 } else if title == "Private Messaging" {
-                    VStack {
-                        Text("Disallowing prevents you from sending custom messages to other players and using voice chat in games.")
-                    }
+                    Text("Disallowing prevents you from sending custom messages to other players and using voice chat in games.")
+                } else if title == "Account Changes" {
+                    Text("Disallowing changes prevents adding, removing, or modifying accounts in Passwords & Accounts.")
                 }
             })
         }

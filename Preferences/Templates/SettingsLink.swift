@@ -82,6 +82,7 @@ struct SettingsLink<Content: View>: View {
                 }
                 VStack(alignment: .leading) {
                     Text(id)
+                        .lineLimit(1)
                     if !subtitle.isEmpty {
                         Text(subtitle)
                             .font(.subheadline)
@@ -90,8 +91,14 @@ struct SettingsLink<Content: View>: View {
                 }
                 if !status.isEmpty {
                     Spacer()
-                    Text(status)
-                        .foregroundStyle(.secondary)
+                    if status == "location.fill" {
+                        Image(systemName: "location.fill")
+                            .foregroundStyle(.gray)
+                    } else {
+                        Text(status)
+                            .lineLimit(1)
+                            .foregroundStyle(.secondary)
+                    }
                 }
             }
         }

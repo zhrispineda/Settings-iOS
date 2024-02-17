@@ -25,9 +25,11 @@ struct ContentView: View {
             HStack(spacing: 0.25) {
                 NavigationStack {
                     // MARK: - iPadOS Settings
-                    if !deviceInfo.isPhone {
+                    if deviceInfo.isTablet {
                         List(selection: $selection) {
-                            Button(action: {}, label: {
+                            Button(action: {
+                                // TODO: Apple ID Sheet
+                            }, label: {
                                 HStack {
                                     Image(systemName: "person.crop.circle.fill")
                                         .resizable()
@@ -148,10 +150,11 @@ struct ContentView: View {
                             Section {
                                 Button(action: {}, label: {
                                     HStack {
-                                        Image(systemName: "person.crop.circle.fill")                                        .resizable()
+                                        Image(systemName: "person.crop.circle.fill")
+                                            .resizable()
+                                            .frame(width: 54, height: 54)
                                             .foregroundStyle(Color(UIColor.systemGray6), Color(UIColor.systemGray2))
                                             .fontWeight(.thin)
-                                            .frame(width: 54, height: 54)
                                         VStack {
                                             Text("Sign in to your \(deviceInfo.model)")
                                                 .font(.system(size: 16))
@@ -237,7 +240,8 @@ struct ContentView: View {
                 if deviceInfo.isTablet {
                     NavigationStack {
                         destination
-                    }.id(id)
+                    }
+                    .id(id)
                 }
             }
         }

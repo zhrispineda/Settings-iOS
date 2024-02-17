@@ -16,6 +16,7 @@ struct CustomNavigationLink<Content: View>: View {
     var title = String()
     var subtitle = String()
     var status = String()
+    var location = false
     var destination: Content
     
     var body: some View {
@@ -34,6 +35,10 @@ struct CustomNavigationLink<Content: View>: View {
                 }
                 if !status.isEmpty {
                     Spacer()
+                    if location {
+                        Image(systemName: "location.fill")
+                            .foregroundStyle(.purple)
+                    }
                     Text(status)
                         .lineLimit(1)
                         .foregroundStyle(.secondary)

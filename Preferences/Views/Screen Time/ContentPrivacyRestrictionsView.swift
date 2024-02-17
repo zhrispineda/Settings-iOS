@@ -25,7 +25,7 @@ struct ContentPrivacyRestrictionsView: View {
             .disabled(!contentPrivacyRestrictionsEnabled)
             
             Section(content: {
-                CustomNavigationLink(title: "Location Services", status: "Allow", destination: EmptyView())
+                CustomNavigationLink(title: "Location Services", status: "Allow", destination: RestrictionsLocationServicesView())
                 CustomNavigationLink(title: "Contacts", status: "Allow", destination: EmptyView())
                 CustomNavigationLink(title: "Calendars", status: "Allow", destination: EmptyView())
                 CustomNavigationLink(title: "Reminders", status: "Allow", destination: EmptyView())
@@ -43,13 +43,13 @@ struct ContentPrivacyRestrictionsView: View {
             .disabled(!contentPrivacyRestrictionsEnabled)
             
             Section(content: {
-                CustomNavigationLink(title: "Passcode Changes", status: "Allow", destination: EmptyView())
-                CustomNavigationLink(title: "Account Changes", status: "Allow", destination: EmptyView())
-                CustomNavigationLink(title: "Cellular Data Changes", status: "Allow", destination: EmptyView())
-                CustomNavigationLink(title: "Reduce Loud Sounds", status: "Allow", destination: EmptyView())
-                CustomNavigationLink(title: "Driving Focus", status: "Allow", destination: EmptyView())
-                CustomNavigationLink(title: "TV Provider", status: "Allow", destination: EmptyView())
-                CustomNavigationLink(title: "Background App Activities", status: "Allow", destination: EmptyView())
+                CustomNavigationLink(title: "Passcode Changes", status: "Allow", destination: AllowDenySelection(title: "Passcode Changes"))
+                CustomNavigationLink(title: "Account Changes", status: "Allow", destination: AllowDenySelection(title: "Account Changes"))
+                CustomNavigationLink(title: "Cellular Data Changes", status: "Allow", destination: AllowDenySelection(title: "Cellular Data Changes"))
+                CustomNavigationLink(title: "Reduce Loud Sounds", status: "Allow", destination: AllowDenySelection(title: "Reduce Loud Sounds"))
+                CustomNavigationLink(title: "Driving Focus", status: "Allow", destination: AllowDenySelection(title: "Driving Focus"))
+                CustomNavigationLink(title: "TV Provider", status: "Allow", destination: AllowDenySelection(title: "TV Provider"))
+                CustomNavigationLink(title: "Background App Activities", status: "Allow", destination: AllowDenySelection(title: "Background App Activities"))
             }, header: {
                 Text("Allow Changes:")
             })
