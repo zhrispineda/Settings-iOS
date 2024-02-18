@@ -12,6 +12,7 @@
 		832EF38F2B814EC80066A1BF /* LocationPermissionsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832EF38E2B814EC80066A1BF /* LocationPermissionsDetailView.swift */; };
 		832EF3912B8172560066A1BF /* AppClipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832EF3902B8172560066A1BF /* AppClipsView.swift */; };
 		832EF3932B8179070066A1BF /* SystemServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832EF3922B8179070066A1BF /* SystemServicesView.swift */; };
+		832EF3952B8182550066A1BF /* ContentPrivacyRestrictionsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832EF3942B8182550066A1BF /* ContentPrivacyRestrictionsDetailView.swift */; };
 		833F0AD02B744D180036EAD2 /* PreferencesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833F0ACF2B744D180036EAD2 /* PreferencesApp.swift */; };
 		833F0AD22B744D180036EAD2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833F0AD12B744D180036EAD2 /* ContentView.swift */; };
 		833F0AD42B744D190036EAD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 833F0AD32B744D190036EAD2 /* Assets.xcassets */; };
@@ -66,6 +67,7 @@
 		832EF38E2B814EC80066A1BF /* LocationPermissionsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionsDetailView.swift; sourceTree = "<group>"; };
 		832EF3902B8172560066A1BF /* AppClipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppClipsView.swift; sourceTree = "<group>"; };
 		832EF3922B8179070066A1BF /* SystemServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemServicesView.swift; sourceTree = "<group>"; };
+		832EF3942B8182550066A1BF /* ContentPrivacyRestrictionsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentPrivacyRestrictionsDetailView.swift; sourceTree = "<group>"; };
 		833F0ACC2B744D180036EAD2 /* Preferences.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Preferences.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		833F0ACF2B744D180036EAD2 /* PreferencesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesApp.swift; sourceTree = "<group>"; };
 		833F0AD12B744D180036EAD2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 				8382739B2B7F21E4000F4228 /* AllowedAppsView.swift */,
 				8382739D2B7F25D4000F4228 /* ContentRestrictionsView.swift */,
 				832EF3892B8071C00066A1BF /* RestrictionsLocationServicesView.swift */,
+				832EF3942B8182550066A1BF /* ContentPrivacyRestrictionsDetailView.swift */,
 			);
 			path = "Content & Privacy Restrictions";
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				8382739E2B7F25D4000F4228 /* ContentRestrictionsView.swift in Sources */,
 				838273A32B7FD37B000F4228 /* TVView.swift in Sources */,
 				83815CE92B768E3600F53A0F /* NewsView.swift in Sources */,
+				832EF3952B8182550066A1BF /* ContentPrivacyRestrictionsDetailView.swift in Sources */,
 				835683922B753FDD000FB136 /* SettingsLink.swift in Sources */,
 				835683972B754EE4000FB136 /* VersionView.swift in Sources */,
 				832EF38C2B81264E0066A1BF /* LocationAlertsView.swift in Sources */,
