@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		832EF38A2B8071C00066A1BF /* RestrictionsLocationServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832EF3892B8071C00066A1BF /* RestrictionsLocationServicesView.swift */; };
 		832EF38C2B81264E0066A1BF /* LocationAlertsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832EF38B2B81264E0066A1BF /* LocationAlertsView.swift */; };
+		832EF38F2B814EC80066A1BF /* LocationPermissionsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832EF38E2B814EC80066A1BF /* LocationPermissionsDetailView.swift */; };
+		832EF3912B8172560066A1BF /* AppClipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832EF3902B8172560066A1BF /* AppClipsView.swift */; };
+		832EF3932B8179070066A1BF /* SystemServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832EF3922B8179070066A1BF /* SystemServicesView.swift */; };
 		833F0AD02B744D180036EAD2 /* PreferencesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833F0ACF2B744D180036EAD2 /* PreferencesApp.swift */; };
 		833F0AD22B744D180036EAD2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833F0AD12B744D180036EAD2 /* ContentView.swift */; };
 		833F0AD42B744D190036EAD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 833F0AD32B744D190036EAD2 /* Assets.xcassets */; };
@@ -60,6 +63,9 @@
 /* Begin PBXFileReference section */
 		832EF3892B8071C00066A1BF /* RestrictionsLocationServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestrictionsLocationServicesView.swift; sourceTree = "<group>"; };
 		832EF38B2B81264E0066A1BF /* LocationAlertsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAlertsView.swift; sourceTree = "<group>"; };
+		832EF38E2B814EC80066A1BF /* LocationPermissionsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionsDetailView.swift; sourceTree = "<group>"; };
+		832EF3902B8172560066A1BF /* AppClipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppClipsView.swift; sourceTree = "<group>"; };
+		832EF3922B8179070066A1BF /* SystemServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemServicesView.swift; sourceTree = "<group>"; };
 		833F0ACC2B744D180036EAD2 /* Preferences.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Preferences.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		833F0ACF2B744D180036EAD2 /* PreferencesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesApp.swift; sourceTree = "<group>"; };
 		833F0AD12B744D180036EAD2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -125,6 +131,9 @@
 			isa = PBXGroup;
 			children = (
 				832EF38B2B81264E0066A1BF /* LocationAlertsView.swift */,
+				832EF38E2B814EC80066A1BF /* LocationPermissionsDetailView.swift */,
+				832EF3902B8172560066A1BF /* AppClipsView.swift */,
+				832EF3922B8179070066A1BF /* SystemServicesView.swift */,
 			);
 			path = "Location Services";
 			sourceTree = "<group>";
@@ -346,7 +355,9 @@
 				83B98E302B7C087B007F6C94 /* IconToggle.swift in Sources */,
 				838A9EC22B7E81EC00ED261C /* ContentPrivacyRestrictionsView.swift in Sources */,
 				838C23262B746D290053D4C5 /* SettingsModel.swift in Sources */,
+				832EF3932B8179070066A1BF /* SystemServicesView.swift in Sources */,
 				83815CDF2B768C2200F53A0F /* AccessibilityView.swift in Sources */,
+				832EF3912B8172560066A1BF /* AppClipsView.swift in Sources */,
 				83815CEF2B768EF000F53A0F /* ShortcutsView.swift in Sources */,
 				83F3F6A12B7D12B6003CC310 /* DictionaryView.swift in Sources */,
 				8356839B2B755AB3000FB136 /* KeyboardView.swift in Sources */,
@@ -366,6 +377,7 @@
 				83815CE32B768D5800F53A0F /* PrivacySecurityView.swift in Sources */,
 				835683942B754623000FB136 /* SettingsLabel.swift in Sources */,
 				83F3F6A32B7D1454003CC310 /* VPNDeviceManagementView.swift in Sources */,
+				832EF38F2B814EC80066A1BF /* LocationPermissionsDetailView.swift in Sources */,
 				83815CF92B768F5C00F53A0F /* DeveloperView.swift in Sources */,
 				838273A52B7FD4CF000F4228 /* AppsView.swift in Sources */,
 				8382739E2B7F25D4000F4228 /* ContentRestrictionsView.swift in Sources */,

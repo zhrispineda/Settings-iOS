@@ -61,20 +61,27 @@ struct RestrictionsLocationServicesView: View {
             
             if locationServicesEnabled {
                 Section(content: {
-                    SettingsLink(color: .white, icon: "appclip", id: "App Clips", content: {})
-                    CustomNavigationLink(title: "AppGenius.bundle", status: "Never", destination: EmptyView())
-                    CustomNavigationLink(title: "AssistantServices.framework", status: "When Shared", destination: EmptyView())
-                    CustomNavigationLink(title: "BulletinBoard.framework", status: "When Shared", destination: EmptyView())
-                    CustomNavigationLink(title: "CompassCalibration.bundle", status: "When Shared", destination: EmptyView())
-                    CustomNavigationLink(title: "Emergency SOS.bundle", status: "When Shared", destination: EmptyView())
-                    CustomNavigationLink(title: "MobileWiFi.framework", status: "When Shared", destination: EmptyView())
-                    CustomNavigationLink(title: "MotionCalibration.bundle", status: "When Shared", destination: EmptyView())
-                    CustomNavigationLink(title: "PassbookMerchantLookup.bundle", status: "When Shared", destination: EmptyView())
-                    SettingsLink(icon: "Placeholder_Normal", id: "Share My Location", status: "When Shared", content: {})
-                    SettingsLink(icon: "applesiri", id: "Siri & Dictation", status: "When Shared", content: {})
-                    CustomNavigationLink(title: "SystemCustomization.bundle", status: "When Shared", location: true, destination: EmptyView())
-                    CustomNavigationLink(title: "Traffic.bundle", status: "When Shared", destination: EmptyView())
-                    SettingsLink(color: .gray, icon: "gear", id: "System Services", status: "location.fill", content: {})
+                    SettingsLink(color: .white, icon: "appclip", id: "App Clips", content: { AppClipsView()
+                    })
+                    CustomNavigationLink(title: "AppGenius.bundle", status: "Never", destination: LocationPermissionsDetailView(title: "AppGenius.bundle", selected: "Never"))
+                    CustomNavigationLink(title: "AssistantServices.framework", status: "When Shared", destination: LocationPermissionsDetailView(title: "AssistantServices.framework"))
+                    CustomNavigationLink(title: "BulletinBoard.framework", status: "When Shared", destination: LocationPermissionsDetailView(title: "BulletinBoard.framework"))
+                    CustomNavigationLink(title: "CompassCalibration.bundle", status: "When Shared", destination: LocationPermissionsDetailView(title: "CompassCalibration.bundle"))
+                    CustomNavigationLink(title: "Emergency SOS.bundle", status: "When Shared", destination: LocationPermissionsDetailView(title: "Emergency SOS.bundle"))
+                    CustomNavigationLink(title: "MobileWiFi.framework", status: "When Shared", destination: LocationPermissionsDetailView(title: "MobileWiFi.framework"))
+                    CustomNavigationLink(title: "MotionCalibration.bundle", status: "When Shared", destination: LocationPermissionsDetailView(title: "MotionCalibration.bundle"))
+                    CustomNavigationLink(title: "PassbookMerchantLookup.bundle", status: "When Shared", destination: LocationPermissionsDetailView(title: "PassbookMerchantLookup.bundle"))
+                    SettingsLink(icon: "Placeholder_Normal", id: "Share My Location", status: "When Shared", content: {
+                        LocationPermissionsDetailView(title: "Share My Location")
+                    })
+                    SettingsLink(icon: "applesiri", id: "Siri & Dictation", status: "When Shared", content: {
+                        LocationPermissionsDetailView(title: "Siri & Dictation")
+                    })
+                    CustomNavigationLink(title: "SystemCustomization.bundle", status: "When Shared", location: true, destination: LocationPermissionsDetailView(title: "SystemCustomization.bundle"))
+                    CustomNavigationLink(title: "Traffic.bundle", status: "When Shared", destination: LocationPermissionsDetailView(title: "Traffic.bundle"))
+                    SettingsLink(color: .gray, icon: "gear", id: "System Services", status: "location.fill", content: {
+                        SystemServicesView()
+                    })
                 }, footer: {
                     VStack(alignment: .leading) {
                         Text("System services that have requested access to your location will appear here.\n")
