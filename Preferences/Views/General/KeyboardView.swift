@@ -35,13 +35,14 @@ struct KeyboardView: View {
     var body: some View {
         CustomList(title: "Keyboards") {
             Section {
-                NavigationLink("Hardware Keyboard", destination: {})
+                CustomNavigationLink(title: "Keyboards", status: "2", destination: KeyboardsView())
+                NavigationLink("Hardware Keyboard", destination: HardwareKeyboardView())
             }
             
             Section {
-                NavigationLink("Text Replacement", destination: {})
+                NavigationLink("Text Replacement", destination: TextReplacementView())
                 if DeviceInfo().isPhone {
-                    CustomNavigationLink(title: "One-Handed Keyboard", status: "Off", destination: EmptyView())
+                    CustomNavigationLink(title: "One-Handed Keyboard", status: "Off", destination: OneHandedKeyboardView())
                 }
             }
             
@@ -105,7 +106,7 @@ struct KeyboardView: View {
                     })
                 Toggle("Auto-Punctuation", isOn: $autoPunctuationEnabled)
                 if dictationEnabled {
-                    NavigationLink(destination: {}, label: {
+                    NavigationLink(destination: DictationShortcutView(), label: {
                         HStack {
                             Text("Dictation Shortcut")
                             Spacer()
