@@ -13,6 +13,8 @@ class DeviceInfo: ObservableObject {
     
     var isPhone = UIDevice.current.localizedModel == "iPhone"
     var isTablet = UIDevice.current.localizedModel == "iPad"
+    var isPro = UIDevice.current.name.contains("Pro")
+    var isLargestTablet = UIDevice.current.name.contains("12.9")
     var hasHomeButton = UIDevice.current.name.contains("SE")
 }
 

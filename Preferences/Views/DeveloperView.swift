@@ -10,6 +10,7 @@ import SwiftUI
 struct DeveloperView: View {
     // Variables
     @State private var darkAppearanceEnabled = false
+    @State private var showingDisplayZoomSheet = false
     @State private var uiAutomationEnabled = true
     @State private var fastAppTerminationEnabled = false
     
@@ -44,13 +45,29 @@ struct DeveloperView: View {
                 Text("Appearance")
             })
             
-            Section(content: {
-                CustomNavigationLink(title: "View", status: "Default", destination: EmptyView())
-            }, header: {
-                Text("Display Zoom")
-            }, footer: {
-                Text("Choose a view for \(UIDevice().localizedModel). Zoomed shows larger controls. Standard shows more content.")
-            })
+            if DeviceInfo().isPhone || (DeviceInfo().isTablet && DeviceInfo().isPro) {
+                Section(content: {
+                    if DeviceInfo().isPhone {
+                        CustomNavigationLink(title: "View", status: "Default", destination: DisplayZoomView())
+                    } else {
+                        Button(action: {
+                            showingDisplayZoomSheet.toggle()
+                        }, label: {
+                            HText("View", status: "Default")
+                        })
+                        .foregroundStyle(Color(UIColor.label))
+                        .sheet(isPresented: $showingDisplayZoomSheet) {
+                            NavigationStack {
+                                DisplayZoomView(options: DeviceInfo().isLargestTablet ? ["Larger Text", "Default", "More Space"] : ["Default", "More Space"])
+                            }
+                        }
+                    }
+                }, header: {
+                    Text("Display Zoom")
+                }, footer: {
+                    Text("Choose a view for \(UIDevice().localizedModel). Zoomed shows larger controls. Standard shows more content.")
+                })
+            }
             
             Section(content: {
                 Button("Clear Trusted Computer", action: {})
@@ -86,7 +103,7 @@ struct DeveloperView: View {
             }
             
             Section(content: {
-                NavigationLink("AirPlay Suggestions", destination: {})
+                NavigationLink("AirPlay Suggestions", destination: AirPlaySuggestionsView())
                 Button("Reset Media Services", action: {})
             }, header: {
                 Text("Media Services Testing")
@@ -101,13 +118,13 @@ struct DeveloperView: View {
             })
             
             Section(content: {
-                NavigationLink("TV Provider", destination: {})
+                NavigationLink("TV Provider", destination: TVProviderView())
             }, header: {
                 Text("TV Provider Testing")
             })
             
             Section(content: {
-                NavigationLink("TV App", destination: {})
+                NavigationLink("TV App", destination: TVAppView())
             }, header: {
                 Text("TV App Testing")
             })
@@ -181,5 +198,7 @@ struct DeveloperView: View {
 }
 
 #Preview {
-    DeveloperView()
+    NavigationStack {
+        DeveloperView()
+    }
 }
