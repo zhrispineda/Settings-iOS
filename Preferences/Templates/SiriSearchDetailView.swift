@@ -18,11 +18,12 @@ struct SiriSearchDetailView: View {
     @State private var suggestAppEnabled = true
     @State private var suggestNotificationsEnabled = true
     var appName: String = String()
+    var title: String = "Siri & Search"
     
-    let showInAppApps = ["Safari", "Calendar", "Maps", "News"]
+    let showInAppApps = ["Calendar", "Contacts", "Maps", "Messages", "News", "Reminders", "Safari"]
     
     var body: some View {
-        CustomList(title: "Siri & Search") {
+        CustomList(title: title) {
             Section(content: {
                 Toggle("Learn from this App", isOn: $learnFromAppEnabled)
             }, footer: {

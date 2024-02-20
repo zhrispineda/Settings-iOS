@@ -9,6 +9,8 @@ import SwiftUI
 
 struct SiriSearchView: View {
     // Variables
+    let apps = ["Calendar", "Contacts", "Files", "Health", "Maps", "Messages", "News", "Photos", "Reminders", "Safari", "Settings", "Wallet"]
+    
     @State private var siriEnabled = true
     @State private var showingDisableSiriAlert = false
     @State private var showingDisableSiriPopup = false
@@ -119,21 +121,17 @@ struct SiriSearchView: View {
             })
             
             Section {
-                SettingsLink(icon: "appclip", id: "App Clips", content: {})
-                SettingsLink(icon: "applecalendar", id: "Calendar", content: {})
-                SettingsLink(icon: "applecontacts", id: "Contacts", content: {})
-                SettingsLink(icon: "applefiles", id: "Files", content: {})
-                SettingsLink(icon: "applehealth", id: "Health", content: {})
-                SettingsLink(icon: "applemaps", id: "Maps", content: {})
-                SettingsLink(icon: "applemessages", id: "Messages", content: {})
-                SettingsLink(icon: "applenews", id: "News", content: {})
-                SettingsLink(icon: "applephotos", id: "Photos", content: {})
-                SettingsLink(icon: "applereminders", id: "Reminders", content: {})
-                SettingsLink(icon: "applesafari", id: "Safari", content: {})
-                SettingsLink(icon: "applesettings", id: "Settings", content: {})
-                SettingsLink(icon: "appleshortcuts", id: "Shortcuts", content: {})
-                SettingsLink(icon: "applewallet", id: "Wallet", content: {})
-                SettingsLink(icon: "apple watch", id: "Watch", content: {})
+                SettingsLink(color: .white, icon: "appclip", id: "App Clips", content: {
+                    SiriAppClipsView()
+                })
+                ForEach(apps, id: \.self) { app in
+                    SettingsLink(icon: "apple\(app.lowercased())", id: app, content: {
+                        SiriSearchDetailView(appName: app, title: app)
+                    })
+                }
+                SettingsLink(icon: "apple watch", id: "Watch", content: {
+                    SiriSearchDetailView(appName: "Watch", title: "Watch")
+                })
             }
         }
     }
