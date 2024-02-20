@@ -64,6 +64,7 @@
 		83B98E302B7C087B007F6C94 /* IconToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B98E2F2B7C087B007F6C94 /* IconToggle.swift */; };
 		83D4CB762B7FF0B000D6087D /* WebContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D4CB752B7FF0B000D6087D /* WebContentView.swift */; };
 		83DF95742B841F0900AEEB63 /* DownloadedLanguagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DF95732B841F0900AEEB63 /* DownloadedLanguagesView.swift */; };
+		83DF95762B84266E00AEEB63 /* SiriSearchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DF95752B84266E00AEEB63 /* SiriSearchDetailView.swift */; };
 		83F3F6A12B7D12B6003CC310 /* DictionaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3F6A02B7D12B6003CC310 /* DictionaryView.swift */; };
 		83F3F6A32B7D1454003CC310 /* VPNDeviceManagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3F6A22B7D1454003CC310 /* VPNDeviceManagementView.swift */; };
 		83F3F6A52B7D16F6003CC310 /* GameControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3F6A42B7D16F6003CC310 /* GameControllerView.swift */; };
@@ -135,6 +136,7 @@
 		83CC61982B7952B800DAF0C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		83D4CB752B7FF0B000D6087D /* WebContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebContentView.swift; sourceTree = "<group>"; };
 		83DF95732B841F0900AEEB63 /* DownloadedLanguagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadedLanguagesView.swift; sourceTree = "<group>"; };
+		83DF95752B84266E00AEEB63 /* SiriSearchDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriSearchDetailView.swift; sourceTree = "<group>"; };
 		83F3F6A02B7D12B6003CC310 /* DictionaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryView.swift; sourceTree = "<group>"; };
 		83F3F6A22B7D1454003CC310 /* VPNDeviceManagementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNDeviceManagementView.swift; sourceTree = "<group>"; };
 		83F3F6A42B7D16F6003CC310 /* GameControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControllerView.swift; sourceTree = "<group>"; };
@@ -335,6 +337,7 @@
 				83B98E2F2B7C087B007F6C94 /* IconToggle.swift */,
 				838A9EC32B7E823300ED261C /* CustomNavigationLink.swift */,
 				837C03082B7F1AE0004D6C71 /* AllowDenySelection.swift */,
+				83DF95752B84266E00AEEB63 /* SiriSearchDetailView.swift */,
 			);
 			path = Templates;
 			sourceTree = "<group>";
@@ -478,6 +481,7 @@
 				835683942B754623000FB136 /* SettingsLabel.swift in Sources */,
 				83F3F6A32B7D1454003CC310 /* VPNDeviceManagementView.swift in Sources */,
 				832EF38F2B814EC80066A1BF /* LocationPermissionsDetailView.swift in Sources */,
+				83DF95762B84266E00AEEB63 /* SiriSearchDetailView.swift in Sources */,
 				83815CF92B768F5C00F53A0F /* DeveloperView.swift in Sources */,
 				838273A52B7FD4CF000F4228 /* AppsView.swift in Sources */,
 				8382739E2B7F25D4000F4228 /* ContentRestrictionsView.swift in Sources */,

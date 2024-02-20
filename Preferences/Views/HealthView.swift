@@ -11,7 +11,9 @@ struct HealthView: View {
     var body: some View {
         CustomList(title: "Health") {
             Section(content: {
-                SettingsLink(icon: "applesiri", id: "Siri & Search", content: {})
+                SettingsLink(icon: "applesiri", id: "Siri & Search", content: {
+                    SiriSearchDetailView(appName: "Health")
+                })
             }, header: {
                 Text("Allow Health to Access")
             })

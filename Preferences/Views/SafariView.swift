@@ -28,7 +28,9 @@ struct SafariView: View {
     var body: some View {
         CustomList(title: "Safari") {
             Section(content: {
-                SettingsLink(icon: "applesiri", id: "Siri & Search", content: {})
+                SettingsLink(icon: "applesiri", id: "Siri & Search", content: {
+                    SiriSearchDetailView(appName: "Safari")
+                })
             }, header: {
                 Text("Allow Safari to Access")
             })
@@ -182,5 +184,7 @@ struct SafariView: View {
 }
 
 #Preview {
-    SafariView()
+    NavigationStack {
+        SafariView()
+    }
 }
