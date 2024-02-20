@@ -14,7 +14,7 @@ struct TranslateView: View {
     var body: some View {
         CustomList(title: "Translate") {
             Section(content: {
-                NavigationLink("Downloaded Languages", destination: {})
+                NavigationLink("Downloaded Languages", destination: DownloadedLanguagesView())
             }, footer: {
                 Text("Download languages to translate when offline or when on-device mode is turned on.")
             })
