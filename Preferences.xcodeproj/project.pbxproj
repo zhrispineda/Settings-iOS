@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		832928492B85779D006611CF /* TrackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832928482B85779D006611CF /* TrackingView.swift */; };
+		8329284B2B8578F4006611CF /* AppPermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8329284A2B8578F4006611CF /* AppPermissionsView.swift */; };
+		8329284E2B8580B3006611CF /* HeadphoneAudioLevelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8329284D2B8580B3006611CF /* HeadphoneAudioLevelsView.swift */; };
 		832EF38A2B8071C00066A1BF /* RestrictionsLocationServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832EF3892B8071C00066A1BF /* RestrictionsLocationServicesView.swift */; };
 		832EF38C2B81264E0066A1BF /* LocationAlertsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832EF38B2B81264E0066A1BF /* LocationAlertsView.swift */; };
 		832EF38F2B814EC80066A1BF /* LocationPermissionsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832EF38E2B814EC80066A1BF /* LocationPermissionsDetailView.swift */; };
@@ -78,6 +81,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		832928482B85779D006611CF /* TrackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingView.swift; sourceTree = "<group>"; };
+		8329284A2B8578F4006611CF /* AppPermissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPermissionsView.swift; sourceTree = "<group>"; };
+		8329284D2B8580B3006611CF /* HeadphoneAudioLevelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadphoneAudioLevelsView.swift; sourceTree = "<group>"; };
 		832EF3892B8071C00066A1BF /* RestrictionsLocationServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestrictionsLocationServicesView.swift; sourceTree = "<group>"; };
 		832EF38B2B81264E0066A1BF /* LocationAlertsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAlertsView.swift; sourceTree = "<group>"; };
 		832EF38E2B814EC80066A1BF /* LocationPermissionsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionsDetailView.swift; sourceTree = "<group>"; };
@@ -161,6 +167,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		832928472B857763006611CF /* Privacy & Security */ = {
+			isa = PBXGroup;
+			children = (
+				8329284C2B8580AA006611CF /* Health */,
+				832928482B85779D006611CF /* TrackingView.swift */,
+			);
+			path = "Privacy & Security";
+			sourceTree = "<group>";
+		};
+		8329284C2B8580AA006611CF /* Health */ = {
+			isa = PBXGroup;
+			children = (
+				8329284D2B8580B3006611CF /* HeadphoneAudioLevelsView.swift */,
+			);
+			path = Health;
+			sourceTree = "<group>";
+		};
 		832EF38D2B81268A0066A1BF /* Location Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -298,6 +321,7 @@
 			children = (
 				838A9EC02B7E81D900ED261C /* Screen Time */,
 				838C232C2B74974B0053D4C5 /* General */,
+				832928472B857763006611CF /* Privacy & Security */,
 				83DF95722B841EFB00AEEB63 /* Translate */,
 				83DF95772B84390D00AEEB63 /* Siri & Search */,
 				83F626D22B827EEC00ED343F /* Developer */,
@@ -341,6 +365,7 @@
 				838A9EC32B7E823300ED261C /* CustomNavigationLink.swift */,
 				837C03082B7F1AE0004D6C71 /* AllowDenySelection.swift */,
 				83DF95752B84266E00AEEB63 /* SiriSearchDetailView.swift */,
+				8329284A2B8578F4006611CF /* AppPermissionsView.swift */,
 			);
 			path = Templates;
 			sourceTree = "<group>";
@@ -479,6 +504,7 @@
 				83815CF52B768F3600F53A0F /* PhotosView.swift in Sources */,
 				832EF3982B8190430066A1BF /* DateFormatView.swift in Sources */,
 				8382739C2B7F21E4000F4228 /* AllowedAppsView.swift in Sources */,
+				832928492B85779D006611CF /* TrackingView.swift in Sources */,
 				83815CF32B768F1E00F53A0F /* SiriSearchView.swift in Sources */,
 				83F3F6A92B7D2EFE003CC310 /* LanguageRegionView.swift in Sources */,
 				83F626D42B827F0C00ED343F /* DisplayZoomView.swift in Sources */,
@@ -496,6 +522,7 @@
 				83815CF92B768F5C00F53A0F /* DeveloperView.swift in Sources */,
 				838273A52B7FD4CF000F4228 /* AppsView.swift in Sources */,
 				8382739E2B7F25D4000F4228 /* ContentRestrictionsView.swift in Sources */,
+				8329284E2B8580B3006611CF /* HeadphoneAudioLevelsView.swift in Sources */,
 				838273A32B7FD37B000F4228 /* TVView.swift in Sources */,
 				83F626D82B8289E100ED343F /* TVProviderView.swift in Sources */,
 				83815CE92B768E3600F53A0F /* NewsView.swift in Sources */,
@@ -509,6 +536,7 @@
 				83815CF12B768F0500F53A0F /* HealthView.swift in Sources */,
 				83F626D62B82884300ED343F /* AirPlaySuggestionsView.swift in Sources */,
 				83815CE72B768DF100F53A0F /* SafariView.swift in Sources */,
+				8329284B2B8578F4006611CF /* AppPermissionsView.swift in Sources */,
 				83815CED2B768E8300F53A0F /* MapsView.swift in Sources */,
 				832EF3A22B8198570066A1BF /* AddTextReplacementView.swift in Sources */,
 				835683992B7551D3000FB136 /* CertificateTrustSettingsView.swift in Sources */,
