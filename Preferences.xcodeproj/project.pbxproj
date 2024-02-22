@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		8319CE492B86D198007EC822 /* SecurityRecommendationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319CE482B86D198007EC822 /* SecurityRecommendationsView.swift */; };
 		8319CE4B2B86D22E007EC822 /* PasswordOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319CE4A2B86D22E007EC822 /* PasswordOptionsView.swift */; };
+		8319CE4D2B86D380007EC822 /* SafetyCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319CE4C2B86D380007EC822 /* SafetyCheckView.swift */; };
+		8319CE4F2B86DB44007EC822 /* SensitiveContentWarningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319CE4E2B86DB44007EC822 /* SensitiveContentWarningView.swift */; };
+		8319CE512B86DF8A007EC822 /* AppleAdvertisingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319CE502B86DF8A007EC822 /* AppleAdvertisingView.swift */; };
 		832928492B85779D006611CF /* TrackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832928482B85779D006611CF /* TrackingView.swift */; };
 		8329284B2B8578F4006611CF /* AppPermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8329284A2B8578F4006611CF /* AppPermissionsView.swift */; };
 		8329284E2B8580B3006611CF /* HeadphoneAudioLevelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8329284D2B8580B3006611CF /* HeadphoneAudioLevelsView.swift */; };
@@ -85,6 +88,9 @@
 /* Begin PBXFileReference section */
 		8319CE482B86D198007EC822 /* SecurityRecommendationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityRecommendationsView.swift; sourceTree = "<group>"; };
 		8319CE4A2B86D22E007EC822 /* PasswordOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordOptionsView.swift; sourceTree = "<group>"; };
+		8319CE4C2B86D380007EC822 /* SafetyCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyCheckView.swift; sourceTree = "<group>"; };
+		8319CE4E2B86DB44007EC822 /* SensitiveContentWarningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensitiveContentWarningView.swift; sourceTree = "<group>"; };
+		8319CE502B86DF8A007EC822 /* AppleAdvertisingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAdvertisingView.swift; sourceTree = "<group>"; };
 		832928482B85779D006611CF /* TrackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingView.swift; sourceTree = "<group>"; };
 		8329284A2B8578F4006611CF /* AppPermissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPermissionsView.swift; sourceTree = "<group>"; };
 		8329284D2B8580B3006611CF /* HeadphoneAudioLevelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadphoneAudioLevelsView.swift; sourceTree = "<group>"; };
@@ -185,6 +191,9 @@
 			children = (
 				8329284C2B8580AA006611CF /* Health */,
 				832928482B85779D006611CF /* TrackingView.swift */,
+				8319CE4C2B86D380007EC822 /* SafetyCheckView.swift */,
+				8319CE4E2B86DB44007EC822 /* SensitiveContentWarningView.swift */,
+				8319CE502B86DF8A007EC822 /* AppleAdvertisingView.swift */,
 			);
 			path = "Privacy & Security";
 			sourceTree = "<group>";
@@ -551,14 +560,17 @@
 				83815CF12B768F0500F53A0F /* HealthView.swift in Sources */,
 				83F626D62B82884300ED343F /* AirPlaySuggestionsView.swift in Sources */,
 				83815CE72B768DF100F53A0F /* SafariView.swift in Sources */,
+				8319CE4F2B86DB44007EC822 /* SensitiveContentWarningView.swift in Sources */,
 				8329284B2B8578F4006611CF /* AppPermissionsView.swift in Sources */,
 				83815CED2B768E8300F53A0F /* MapsView.swift in Sources */,
 				832EF3A22B8198570066A1BF /* AddTextReplacementView.swift in Sources */,
 				835683992B7551D3000FB136 /* CertificateTrustSettingsView.swift in Sources */,
 				838C23232B746CF90053D4C5 /* GeneralView.swift in Sources */,
 				833F0AD22B744D180036EAD2 /* ContentView.swift in Sources */,
+				8319CE512B86DF8A007EC822 /* AppleAdvertisingView.swift in Sources */,
 				83D4CB762B7FF0B000D6087D /* WebContentView.swift in Sources */,
 				83815CFB2B76908700F53A0F /* ActionButtonView.swift in Sources */,
+				8319CE4D2B86D380007EC822 /* SafetyCheckView.swift in Sources */,
 				837C03092B7F1AE0004D6C71 /* AllowDenySelection.swift in Sources */,
 				83DF95792B84391F00AEEB63 /* SiriAppClipsView.swift in Sources */,
 				83815CEB2B768E4A00F53A0F /* TranslateView.swift in Sources */,

@@ -74,20 +74,26 @@ struct PrivacySecurityView: View {
             
             if DeviceInfo().isPhone {
                 Section(content: {
-                    SettingsLink(color: .white, iconColor: .blue, icon: "person.badge.shield.checkmark.fill", larger: false, id: "Safety Check", content: {})
+                    SettingsLink(color: .white, iconColor: .blue, icon: "person.badge.shield.checkmark.fill", larger: false, id: "Safety Check", content: {
+                        SafetyCheckView()
+                    })
                 }, footer: {
                     Text("Protect your personal safety by staying aware of which people, apps, and devices have access to your information.")
                 })
             }
             
             Section(content: {
-                SettingsLink(color: .blue, icon: "eye.trianglebadge.exclamationmark.fill", larger: false, id: "Sensitive Content Warning", status: "Off", content: {})
+                SettingsLink(color: .blue, icon: "eye.trianglebadge.exclamationmark.fill", larger: false, id: "Sensitive Content Warning", status: "Off", content: {
+                    SensitiveContentWarningView()
+                })
             }, footer: {
-                Text("Detect nude photos and videos before they are viewed on your iPhone, and receive guidance to help make a safe choice. Apple does not have access to the photos or videos. [Learn more...](https://support.apple.com/en-us/105071)")
+                Text("Detect nude photos and videos before they are viewed on your \(DeviceInfo().model), and receive guidance to help make a safe choice. Apple does not have access to the photos or videos. [Learn more...](https://support.apple.com/en-us/105071)")
             })
             
             Section {
-                NavigationLink("Apple Advertising", destination: {})
+                NavigationLink("Apple Advertising", destination: {
+                    AppleAdvertisingView()
+                })
             }
         }
     }
