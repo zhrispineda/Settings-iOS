@@ -14,8 +14,12 @@ struct PasswordsView: View {
     var body: some View {
         CustomList(title: "Passwords") {
             Section {
-                SettingsLink(color: .green, icon: "shield.lefthalf.filled.badge.checkmark", larger: false, id: "Security Recommendations", subtitle: "No issues found", status: "0", content: {})
-                SettingsLink(color: .gray, icon: "switch.2", larger: false, id: "Password Options", content: {})
+                SettingsLink(color: .green, icon: "shield.lefthalf.filled.badge.checkmark", larger: false, id: "Security Recommendations", subtitle: "No issues found", status: "0", content: {
+                    SecurityRecommendationsView()
+                })
+                SettingsLink(color: .gray, icon: "switch.2", larger: false, id: "Password Options", content: {
+                    PasswordOptionsView()
+                })
             }
         }
         .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always))

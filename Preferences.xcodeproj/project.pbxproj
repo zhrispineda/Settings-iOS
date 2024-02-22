@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8319CE492B86D198007EC822 /* SecurityRecommendationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319CE482B86D198007EC822 /* SecurityRecommendationsView.swift */; };
+		8319CE4B2B86D22E007EC822 /* PasswordOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319CE4A2B86D22E007EC822 /* PasswordOptionsView.swift */; };
 		832928492B85779D006611CF /* TrackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832928482B85779D006611CF /* TrackingView.swift */; };
 		8329284B2B8578F4006611CF /* AppPermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8329284A2B8578F4006611CF /* AppPermissionsView.swift */; };
 		8329284E2B8580B3006611CF /* HeadphoneAudioLevelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8329284D2B8580B3006611CF /* HeadphoneAudioLevelsView.swift */; };
@@ -81,6 +83,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8319CE482B86D198007EC822 /* SecurityRecommendationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityRecommendationsView.swift; sourceTree = "<group>"; };
+		8319CE4A2B86D22E007EC822 /* PasswordOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordOptionsView.swift; sourceTree = "<group>"; };
 		832928482B85779D006611CF /* TrackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingView.swift; sourceTree = "<group>"; };
 		8329284A2B8578F4006611CF /* AppPermissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPermissionsView.swift; sourceTree = "<group>"; };
 		8329284D2B8580B3006611CF /* HeadphoneAudioLevelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadphoneAudioLevelsView.swift; sourceTree = "<group>"; };
@@ -167,6 +171,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8319CE472B86D17B007EC822 /* Passwords */ = {
+			isa = PBXGroup;
+			children = (
+				8319CE482B86D198007EC822 /* SecurityRecommendationsView.swift */,
+				8319CE4A2B86D22E007EC822 /* PasswordOptionsView.swift */,
+			);
+			path = Passwords;
+			sourceTree = "<group>";
+		};
 		832928472B857763006611CF /* Privacy & Security */ = {
 			isa = PBXGroup;
 			children = (
@@ -322,6 +335,7 @@
 				838A9EC02B7E81D900ED261C /* Screen Time */,
 				838C232C2B74974B0053D4C5 /* General */,
 				832928472B857763006611CF /* Privacy & Security */,
+				8319CE472B86D17B007EC822 /* Passwords */,
 				83DF95722B841EFB00AEEB63 /* Translate */,
 				83DF95772B84390D00AEEB63 /* Siri & Search */,
 				83F626D22B827EEC00ED343F /* Developer */,
@@ -497,6 +511,7 @@
 				83F3F6A12B7D12B6003CC310 /* DictionaryView.swift in Sources */,
 				8356839B2B755AB3000FB136 /* KeyboardView.swift in Sources */,
 				838C232E2B7497530053D4C5 /* AboutView.swift in Sources */,
+				8319CE492B86D198007EC822 /* SecurityRecommendationsView.swift in Sources */,
 				832EF38A2B8071C00066A1BF /* RestrictionsLocationServicesView.swift in Sources */,
 				838C23292B748F3B0053D4C5 /* ScreenTimeView.swift in Sources */,
 				83815CE52B768DBA00F53A0F /* PasswordsView.swift in Sources */,
@@ -553,6 +568,7 @@
 				838C23302B74978C0053D4C5 /* HText.swift in Sources */,
 				833F0AD02B744D180036EAD2 /* PreferencesApp.swift in Sources */,
 				832EF3A42B8199FA0066A1BF /* HardwareKeyboardView.swift in Sources */,
+				8319CE4B2B86D22E007EC822 /* PasswordOptionsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
