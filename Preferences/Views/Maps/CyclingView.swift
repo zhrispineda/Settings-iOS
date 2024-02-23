@@ -1,0 +1,29 @@
+//
+//  CyclingView.swift
+//  Preferences
+//
+//  Settings > Maps > Cycling
+//
+
+import SwiftUI
+
+struct CyclingView: View {
+    // Variables
+    @State private var avoidHillsEnabled = false
+    @State private var avoidBusyRoads = false
+    
+    var body: some View {
+        CustomList(title: "Cycling") {
+            Section(content: {
+                Toggle("Hills", isOn: $avoidHillsEnabled)
+                Toggle("Busy Roads", isOn: $avoidBusyRoads)
+            }, header: {
+                Text("\n\nAvoid")
+            })
+        }
+    }
+}
+
+#Preview {
+    CyclingView()
+}
