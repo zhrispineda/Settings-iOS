@@ -61,8 +61,8 @@ struct SiriSearchView: View {
                         siriEnabled ? (DeviceInfo().isPhone ? showingEnableSiriPopup.toggle() : showingEnableSiriAlert.toggle()) : (DeviceInfo().isPhone ? showingDisableSiriPopup.toggle() : showingDisableSiriAlert.toggle())
                     })
                 CustomNavigationLink(title: "Language", status: "English (United States)", destination: SiriLanguageView())
-                CustomNavigationLink(title: "Siri Voice", status: "American (Voice 4)", destination: EmptyView())
-                NavigationLink("Siri Responses", destination: {})
+                CustomNavigationLink(title: "Siri Voice", status: "American (Voice 4)", destination: SiriVoiceView())
+                NavigationLink("Siri Responses", destination: SiriResponsesView())
                 Button(action: {}, label: { // TODO: Popover
                     HStack {
                         Text("My Information")
@@ -74,8 +74,10 @@ struct SiriSearchView: View {
                             .foregroundStyle(Color(UIColor.tertiaryLabel))
                     }
                 })
-                NavigationLink("Siri & Dictation History", destination: {})
-                NavigationLink("Messaging with Siri", destination: {})
+                NavigationLink("Siri & Dictation History", destination: SiriDictationHistoryView())
+                NavigationLink("Messaging with Siri", destination: {
+                    CustomList(title: "Messaging with Siri") {}
+                })
             }, header: {
                 Text("Ask Siri")
             }, footer: {
