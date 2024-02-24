@@ -25,11 +25,13 @@ struct ShortcutsView: View {
             })
             
             Section {
-                NavigationLink("Advanced", destination: {})
+                NavigationLink("Advanced", destination: ShortcutsAdvancedView())
             }
             
             Section {
-                NavigationLink("Legal Notices", destination: {})
+                NavigationLink("Legal Notices", destination: {
+                    CustomList(title: "Legal Notices") {}
+                })
             }
         }
     }
