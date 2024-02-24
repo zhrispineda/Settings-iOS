@@ -60,7 +60,7 @@ struct SiriSearchView: View {
                     .onChange(of: siriEnabled, {
                         siriEnabled ? (DeviceInfo().isPhone ? showingEnableSiriPopup.toggle() : showingEnableSiriAlert.toggle()) : (DeviceInfo().isPhone ? showingDisableSiriPopup.toggle() : showingDisableSiriAlert.toggle())
                     })
-                CustomNavigationLink(title: "Language", status: "English (United States)", destination: EmptyView())
+                CustomNavigationLink(title: "Language", status: "English (United States)", destination: SiriLanguageView())
                 CustomNavigationLink(title: "Siri Voice", status: "American (Voice 4)", destination: EmptyView())
                 NavigationLink("Siri Responses", destination: {})
                 Button(action: {}, label: { // TODO: Popover
