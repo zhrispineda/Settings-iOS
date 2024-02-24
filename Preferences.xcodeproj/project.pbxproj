@@ -70,6 +70,10 @@
 		838273A12B7F28D6000F4228 /* MoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838273A02B7F28D6000F4228 /* MoviesView.swift */; };
 		838273A32B7FD37B000F4228 /* TVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838273A22B7FD37B000F4228 /* TVView.swift */; };
 		838273A52B7FD4CF000F4228 /* AppsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838273A42B7FD4CF000F4228 /* AppsView.swift */; };
+		83898FCA2B8A8F210020C7BB /* HealthDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83898FC92B8A8F210020C7BB /* HealthDetailsView.swift */; };
+		83898FCD2B8A94BE0020C7BB /* HealthDetailsDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83898FCC2B8A94BE0020C7BB /* HealthDetailsDataView.swift */; };
+		83898FCF2B8A9A1F0020C7BB /* MedicalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83898FCE2B8A9A1F0020C7BB /* MedicalView.swift */; };
+		83898FD12B8A9F680020C7BB /* DataAccessDevicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83898FD02B8A9F680020C7BB /* DataAccessDevicesView.swift */; };
 		838A9EC22B7E81EC00ED261C /* ContentPrivacyRestrictionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838A9EC12B7E81EC00ED261C /* ContentPrivacyRestrictionsView.swift */; };
 		838A9EC42B7E823300ED261C /* CustomNavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838A9EC32B7E823300ED261C /* CustomNavigationLink.swift */; };
 		838C23232B746CF90053D4C5 /* GeneralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838C23222B746CF90053D4C5 /* GeneralView.swift */; };
@@ -159,6 +163,10 @@
 		838273A02B7F28D6000F4228 /* MoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesView.swift; sourceTree = "<group>"; };
 		838273A22B7FD37B000F4228 /* TVView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVView.swift; sourceTree = "<group>"; };
 		838273A42B7FD4CF000F4228 /* AppsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsView.swift; sourceTree = "<group>"; };
+		83898FC92B8A8F210020C7BB /* HealthDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDetailsView.swift; sourceTree = "<group>"; };
+		83898FCC2B8A94BE0020C7BB /* HealthDetailsDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDetailsDataView.swift; sourceTree = "<group>"; };
+		83898FCE2B8A9A1F0020C7BB /* MedicalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalView.swift; sourceTree = "<group>"; };
+		83898FD02B8A9F680020C7BB /* DataAccessDevicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAccessDevicesView.swift; sourceTree = "<group>"; };
 		838A9EC12B7E81EC00ED261C /* ContentPrivacyRestrictionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentPrivacyRestrictionsView.swift; sourceTree = "<group>"; };
 		838A9EC32B7E823300ED261C /* CustomNavigationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationLink.swift; sourceTree = "<group>"; };
 		838C23222B746CF90053D4C5 /* GeneralView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralView.swift; sourceTree = "<group>"; };
@@ -366,6 +374,25 @@
 			path = "Content Restrictions";
 			sourceTree = "<group>";
 		};
+		83898FC82B8A8EF20020C7BB /* Health */ = {
+			isa = PBXGroup;
+			children = (
+				83898FCB2B8A94A20020C7BB /* Health Details */,
+				83898FC92B8A8F210020C7BB /* HealthDetailsView.swift */,
+				83898FCE2B8A9A1F0020C7BB /* MedicalView.swift */,
+				83898FD02B8A9F680020C7BB /* DataAccessDevicesView.swift */,
+			);
+			path = Health;
+			sourceTree = "<group>";
+		};
+		83898FCB2B8A94A20020C7BB /* Health Details */ = {
+			isa = PBXGroup;
+			children = (
+				83898FCC2B8A94BE0020C7BB /* HealthDetailsDataView.swift */,
+			);
+			path = "Health Details";
+			sourceTree = "<group>";
+		};
 		838A9EC02B7E81D900ED261C /* Screen Time */ = {
 			isa = PBXGroup;
 			children = (
@@ -384,6 +411,7 @@
 				8319CE472B86D17B007EC822 /* Passwords */,
 				83DF95722B841EFB00AEEB63 /* Translate */,
 				83585B6F2B8847230046A0C3 /* Maps */,
+				83898FC82B8A8EF20020C7BB /* Health */,
 				83DF95772B84390D00AEEB63 /* Siri & Search */,
 				83F626D22B827EEC00ED343F /* Developer */,
 				838C23282B748F3B0053D4C5 /* ScreenTimeView.swift */,
@@ -580,9 +608,11 @@
 				83F626D42B827F0C00ED343F /* DisplayZoomView.swift in Sources */,
 				838A9EC42B7E823300ED261C /* CustomNavigationLink.swift in Sources */,
 				832EF39B2B8192A90066A1BF /* DictationShortcutView.swift in Sources */,
+				83898FCF2B8A9A1F0020C7BB /* MedicalView.swift in Sources */,
 				83585B772B8848430046A0C3 /* CyclingView.swift in Sources */,
 				83F3F6A72B7D2BAA003CC310 /* FontsView.swift in Sources */,
 				83F3F6A52B7D16F6003CC310 /* GameControllerView.swift in Sources */,
+				83898FD12B8A9F680020C7BB /* DataAccessDevicesView.swift in Sources */,
 				832EF3A92B819BB90066A1BF /* HardwareKeyboardLanguageView.swift in Sources */,
 				837C03072B7F192F004D6C71 /* AppInstallationsPurchasesView.swift in Sources */,
 				83815CE32B768D5800F53A0F /* PrivacySecurityView.swift in Sources */,
@@ -599,9 +629,11 @@
 				83F626D82B8289E100ED343F /* TVProviderView.swift in Sources */,
 				83815CE92B768E3600F53A0F /* NewsView.swift in Sources */,
 				83F626DA2B828E8C00ED343F /* TVAppView.swift in Sources */,
+				83898FCA2B8A8F210020C7BB /* HealthDetailsView.swift in Sources */,
 				832EF3952B8182550066A1BF /* ContentPrivacyRestrictionsDetailView.swift in Sources */,
 				835683922B753FDD000FB136 /* SettingsLink.swift in Sources */,
 				835683972B754EE4000FB136 /* VersionView.swift in Sources */,
+				83898FCD2B8A94BE0020C7BB /* HealthDetailsDataView.swift in Sources */,
 				837B0F602B89B22900B22455 /* SiriVoiceView.swift in Sources */,
 				83DF95742B841F0900AEEB63 /* DownloadedLanguagesView.swift in Sources */,
 				832EF38C2B81264E0066A1BF /* LocationAlertsView.swift in Sources */,

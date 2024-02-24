@@ -19,14 +19,14 @@ struct HealthView: View {
             })
             
             Section(content: {
-                NavigationLink("Health Details", destination: {})
-                NavigationLink("Medical ID", destination: {})
+                NavigationLink("Health Details", destination: HealthDetailsView())
+                NavigationLink("Medical ID", destination: MedicalView())
             }, header: {
                 Text("Medical Details")
             })
             
             Section(content: {
-                NavigationLink("Data Access & Devices", destination: {})
+                NavigationLink("Data Access & Devices", destination: DataAccessDevicesView())
             }, header: {
                 Text("Data")
             })
@@ -35,5 +35,7 @@ struct HealthView: View {
 }
 
 #Preview {
-    HealthView()
+    NavigationStack {
+        HealthView()
+    }
 }
