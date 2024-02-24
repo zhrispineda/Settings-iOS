@@ -44,6 +44,7 @@
 		83585B752B8848110046A0C3 /* TransitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83585B742B8848110046A0C3 /* TransitView.swift */; };
 		83585B772B8848430046A0C3 /* CyclingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83585B762B8848430046A0C3 /* CyclingView.swift */; };
 		837B0F5B2B8989E000B22455 /* SiriLanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837B0F5A2B8989E000B22455 /* SiriLanguageView.swift */; };
+		837B0F5E2B89986B00B22455 /* EnglishIndiaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837B0F5D2B89986B00B22455 /* EnglishIndiaView.swift */; };
 		837C03072B7F192F004D6C71 /* AppInstallationsPurchasesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C03062B7F192F004D6C71 /* AppInstallationsPurchasesView.swift */; };
 		837C03092B7F1AE0004D6C71 /* AllowDenySelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C03082B7F1AE0004D6C71 /* AllowDenySelection.swift */; };
 		83815CDF2B768C2200F53A0F /* AccessibilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83815CDE2B768C2200F53A0F /* AccessibilityView.swift */; };
@@ -129,6 +130,7 @@
 		83585B742B8848110046A0C3 /* TransitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitView.swift; sourceTree = "<group>"; };
 		83585B762B8848430046A0C3 /* CyclingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyclingView.swift; sourceTree = "<group>"; };
 		837B0F5A2B8989E000B22455 /* SiriLanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriLanguageView.swift; sourceTree = "<group>"; };
+		837B0F5D2B89986B00B22455 /* EnglishIndiaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglishIndiaView.swift; sourceTree = "<group>"; };
 		837C03062B7F192F004D6C71 /* AppInstallationsPurchasesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInstallationsPurchasesView.swift; sourceTree = "<group>"; };
 		837C03082B7F1AE0004D6C71 /* AllowDenySelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowDenySelection.swift; sourceTree = "<group>"; };
 		83815CDE2B768C2200F53A0F /* AccessibilityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityView.swift; sourceTree = "<group>"; };
@@ -325,6 +327,14 @@
 			path = Maps;
 			sourceTree = "<group>";
 		};
+		837B0F5C2B89985C00B22455 /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				837B0F5D2B89986B00B22455 /* EnglishIndiaView.swift */,
+			);
+			path = Language;
+			sourceTree = "<group>";
+		};
 		837C03052B7F1917004D6C71 /* Content & Privacy Restrictions */ = {
 			isa = PBXGroup;
 			children = (
@@ -443,6 +453,7 @@
 		83DF95772B84390D00AEEB63 /* Siri & Search */ = {
 			isa = PBXGroup;
 			children = (
+				837B0F5C2B89985C00B22455 /* Language */,
 				83DF95782B84391E00AEEB63 /* SiriAppClipsView.swift */,
 				837B0F5A2B8989E000B22455 /* SiriLanguageView.swift */,
 			);
@@ -541,6 +552,7 @@
 				83815CDF2B768C2200F53A0F /* AccessibilityView.swift in Sources */,
 				832EF3912B8172560066A1BF /* AppClipsView.swift in Sources */,
 				83815CEF2B768EF000F53A0F /* ShortcutsView.swift in Sources */,
+				837B0F5E2B89986B00B22455 /* EnglishIndiaView.swift in Sources */,
 				83F3F6A12B7D12B6003CC310 /* DictionaryView.swift in Sources */,
 				8356839B2B755AB3000FB136 /* KeyboardView.swift in Sources */,
 				838C232E2B7497530053D4C5 /* AboutView.swift in Sources */,
