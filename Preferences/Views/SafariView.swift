@@ -150,12 +150,12 @@ struct SafariView: View {
             }
             
             Section(content: {
-                NavigationLink("Page Zoom", destination: {})
-                NavigationLink("Request Desktop Website", destination: {})
-                NavigationLink("Reader", destination: {})
-                NavigationLink("Camera", destination: {})
-                NavigationLink("Microphone", destination: {})
-                NavigationLink("Location", destination: {})
+                NavigationLink("Page Zoom", destination: PageZoomView())
+                NavigationLink("Request Desktop Website", destination: RequestDesktopWebsiteView())
+                NavigationLink("Reader", destination: SafariReaderView())
+                NavigationLink("Camera", destination: SafariCameraView())
+                NavigationLink("Microphone", destination: SafariMicrophoneView())
+                NavigationLink("Location", destination: SafariLocationView())
             }, header: {
                 Text("Settings for Websites")
             })
