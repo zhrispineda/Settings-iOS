@@ -86,6 +86,8 @@
 		83B98E302B7C087B007F6C94 /* IconToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B98E2F2B7C087B007F6C94 /* IconToggle.swift */; };
 		83D3085C2B8AC2FA002A9B7F /* SafariAdvancedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D3085B2B8AC2FA002A9B7F /* SafariAdvancedView.swift */; };
 		83D3085F2B8AC3D3002A9B7F /* FeatureFlagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D3085E2B8AC3D3002A9B7F /* FeatureFlagsView.swift */; };
+		83D308612B8ACC8C002A9B7F /* AdvancedTrackingFingerprintingProtectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D308602B8ACC8C002A9B7F /* AdvancedTrackingFingerprintingProtectionView.swift */; };
+		83D308632B8ACD22002A9B7F /* WebsiteDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D308622B8ACD22002A9B7F /* WebsiteDataView.swift */; };
 		83D4CB762B7FF0B000D6087D /* WebContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D4CB752B7FF0B000D6087D /* WebContentView.swift */; };
 		83DF95742B841F0900AEEB63 /* DownloadedLanguagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DF95732B841F0900AEEB63 /* DownloadedLanguagesView.swift */; };
 		83DF95762B84266E00AEEB63 /* SiriSearchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DF95752B84266E00AEEB63 /* SiriSearchDetailView.swift */; };
@@ -183,6 +185,8 @@
 		83CC61982B7952B800DAF0C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		83D3085B2B8AC2FA002A9B7F /* SafariAdvancedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariAdvancedView.swift; sourceTree = "<group>"; };
 		83D3085E2B8AC3D3002A9B7F /* FeatureFlagsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureFlagsView.swift; sourceTree = "<group>"; };
+		83D308602B8ACC8C002A9B7F /* AdvancedTrackingFingerprintingProtectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedTrackingFingerprintingProtectionView.swift; sourceTree = "<group>"; };
+		83D308622B8ACD22002A9B7F /* WebsiteDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsiteDataView.swift; sourceTree = "<group>"; };
 		83D4CB752B7FF0B000D6087D /* WebContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebContentView.swift; sourceTree = "<group>"; };
 		83DF95732B841F0900AEEB63 /* DownloadedLanguagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadedLanguagesView.swift; sourceTree = "<group>"; };
 		83DF95752B84266E00AEEB63 /* SiriSearchDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriSearchDetailView.swift; sourceTree = "<group>"; };
@@ -504,6 +508,8 @@
 		83D3085D2B8AC3CA002A9B7F /* Advanced */ = {
 			isa = PBXGroup;
 			children = (
+				83D308622B8ACD22002A9B7F /* WebsiteDataView.swift */,
+				83D308602B8ACC8C002A9B7F /* AdvancedTrackingFingerprintingProtectionView.swift */,
 				83D3085E2B8AC3D3002A9B7F /* FeatureFlagsView.swift */,
 			);
 			path = Advanced;
@@ -639,6 +645,7 @@
 				83815CF32B768F1E00F53A0F /* SiriSearchView.swift in Sources */,
 				83F3F6A92B7D2EFE003CC310 /* LanguageRegionView.swift in Sources */,
 				837B0F642B89B5E700B22455 /* SiriDictationHistoryView.swift in Sources */,
+				83D308632B8ACD22002A9B7F /* WebsiteDataView.swift in Sources */,
 				83F626D42B827F0C00ED343F /* DisplayZoomView.swift in Sources */,
 				838A9EC42B7E823300ED261C /* CustomNavigationLink.swift in Sources */,
 				832EF39B2B8192A90066A1BF /* DictationShortcutView.swift in Sources */,
@@ -656,6 +663,7 @@
 				832EF38F2B814EC80066A1BF /* LocationPermissionsDetailView.swift in Sources */,
 				83DF95762B84266E00AEEB63 /* SiriSearchDetailView.swift in Sources */,
 				83815CF92B768F5C00F53A0F /* DeveloperView.swift in Sources */,
+				83D308612B8ACC8C002A9B7F /* AdvancedTrackingFingerprintingProtectionView.swift in Sources */,
 				838273A52B7FD4CF000F4228 /* AppsView.swift in Sources */,
 				8382739E2B7F25D4000F4228 /* ContentRestrictionsView.swift in Sources */,
 				8329284E2B8580B3006611CF /* HeadphoneAudioLevelsView.swift in Sources */,

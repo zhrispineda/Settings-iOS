@@ -18,11 +18,11 @@ struct SafariAdvancedView: View {
     var body: some View {
         CustomList(title: "Advanced") {
             Section {
-                NavigationLink("Website Data", destination: {})
+                NavigationLink("Website Data", destination: WebsiteDataView())
             }
             
             Section(content: {
-                CustomNavigationLink(title: "Advanced Tracking and Fingerprinting Protection", status: "Private Browsing", destination: EmptyView())
+                CustomNavigationLink(title: "Advanced Tracking and Fingerprinting Protection", status: "Private Browsing", destination: AdvancedTrackingFingerprintingProtectionView())
                 Toggle("Block All Cookies", isOn: $blockAllCookiesEnabled)
                     .onChange(of: blockAllCookiesEnabled, {
                         showingBlockCookiesAlert = blockAllCookiesEnabled
