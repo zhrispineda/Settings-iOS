@@ -36,7 +36,7 @@ struct SafariView: View {
             })
             
             Section(content: {
-                CustomNavigationLink(title: "Search Engine", status: "Google", destination: AllowDenySelection(title: "Search Engine", options: ["Google", "Yahoo", "Bing", "DuckDuckGo", "Ecosia"], selected: "Google"))
+                CustomNavigationLink(title: "Search Engine", status: "Google", destination: SelectOptionList(title: "Search Engine", options: ["Google", "Yahoo", "Bing", "DuckDuckGo", "Ecosia"], selected: "Google"))
                 Toggle("Also Use in Private Browsing", isOn: $alsoUsePrivateBrowsingEnabled)
                 Toggle("Search Engine Suggestions", isOn: $searchEngineSuggestionsEnabled)
                 Toggle("Safari Suggestions", isOn: $safariSuggestionsEnabled)
@@ -115,8 +115,8 @@ struct SafariView: View {
                     Toggle("Landscape Tab Bar", isOn: $landscapeTabBarEnabled)
                 }
                 Toggle("Allow Website Tinting", isOn: $allowWebsiteTintingEnabled)
-                CustomNavigationLink(title: "Open Links", status: "In New Tab", destination: AllowDenySelection(title: "Open Links", options: ["In New Tab", "In Background"], selected: "In New Tab"))
-                CustomNavigationLink(title: "Close Tabs", status: "Manually", destination: AllowDenySelection(title: "Close Tabs", options: ["Manually", "After One Day", "After One Week", "After One Month"], selected: "Manually"))
+                CustomNavigationLink(title: "Open Links", status: "In New Tab", destination: SelectOptionList(title: "Open Links", options: ["In New Tab", "In Background"], selected: "In New Tab"))
+                CustomNavigationLink(title: "Close Tabs", status: "Manually", destination: SelectOptionList(title: "Close Tabs", options: ["Manually", "After One Day", "After One Week", "After One Month"], selected: "Manually"))
             }, header: {
                 Text("Tabs")
             }, footer: {

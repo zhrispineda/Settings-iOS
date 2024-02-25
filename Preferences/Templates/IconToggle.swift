@@ -2,11 +2,20 @@
 //  IconToggle.swift
 //  Preferences
 //
-//  Toggle with an SF symbol and background icon color.
-//
 
 import SwiftUI
 
+/// A template for displaying a toggle with a rounded icon.
+/// ```swift
+/// var body: some View {
+///     List {
+///         IconToggle(color: Color.gray, icon: "gear", title: "Automatic Updates")
+///     }
+/// }
+/// ```
+/// - Parameter color: The ``Color`` to use as the icon background.
+/// - Parameter icon: The ``String`` name of the image asset or symbol.
+/// - Parameter title: The ``String`` name of the label to display.
 struct IconToggle: View {
     // Variables
     @State var enabled = Bool()

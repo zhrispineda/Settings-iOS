@@ -49,7 +49,7 @@
 		837B0F622B89B49B00B22455 /* SiriResponsesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837B0F612B89B49B00B22455 /* SiriResponsesView.swift */; };
 		837B0F642B89B5E700B22455 /* SiriDictationHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837B0F632B89B5E700B22455 /* SiriDictationHistoryView.swift */; };
 		837C03072B7F192F004D6C71 /* AppInstallationsPurchasesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C03062B7F192F004D6C71 /* AppInstallationsPurchasesView.swift */; };
-		837C03092B7F1AE0004D6C71 /* AllowDenySelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C03082B7F1AE0004D6C71 /* AllowDenySelection.swift */; };
+		837C03092B7F1AE0004D6C71 /* SelectOptionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C03082B7F1AE0004D6C71 /* SelectOptionList.swift */; };
 		837F1DC52B8AEC1E00665EAB /* HideAddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837F1DC42B8AEC1E00665EAB /* HideAddressView.swift */; };
 		837F1DCB2B8AEF1A00665EAB /* DownloadsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837F1DCA2B8AEF1A00665EAB /* DownloadsView.swift */; };
 		837F1DCD2B8AF0D400665EAB /* ExtensionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837F1DCC2B8AF0D400665EAB /* ExtensionsView.swift */; };
@@ -160,7 +160,7 @@
 		837B0F612B89B49B00B22455 /* SiriResponsesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriResponsesView.swift; sourceTree = "<group>"; };
 		837B0F632B89B5E700B22455 /* SiriDictationHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriDictationHistoryView.swift; sourceTree = "<group>"; };
 		837C03062B7F192F004D6C71 /* AppInstallationsPurchasesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInstallationsPurchasesView.swift; sourceTree = "<group>"; };
-		837C03082B7F1AE0004D6C71 /* AllowDenySelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowDenySelection.swift; sourceTree = "<group>"; };
+		837C03082B7F1AE0004D6C71 /* SelectOptionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectOptionList.swift; sourceTree = "<group>"; };
 		837F1DC42B8AEC1E00665EAB /* HideAddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideAddressView.swift; sourceTree = "<group>"; };
 		837F1DCA2B8AEF1A00665EAB /* DownloadsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsView.swift; sourceTree = "<group>"; };
 		837F1DCC2B8AF0D400665EAB /* ExtensionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsView.swift; sourceTree = "<group>"; };
@@ -407,6 +407,13 @@
 			path = AutoFill;
 			sourceTree = "<group>";
 		};
+		837F1DD72B8AF40C00665EAB /* Accessibility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Accessibility;
+			sourceTree = "<group>";
+		};
 		8382739F2B7F28CA000F4228 /* Content Restrictions */ = {
 			isa = PBXGroup;
 			children = (
@@ -459,6 +466,7 @@
 			children = (
 				838A9EC02B7E81D900ED261C /* Screen Time */,
 				838C232C2B74974B0053D4C5 /* General */,
+				837F1DD72B8AF40C00665EAB /* Accessibility */,
 				832928472B857763006611CF /* Privacy & Security */,
 				8319CE472B86D17B007EC822 /* Passwords */,
 				83D3085A2B8AC28B002A9B7F /* Safari */,
@@ -506,7 +514,7 @@
 				835683932B754623000FB136 /* SettingsLabel.swift */,
 				83B98E2F2B7C087B007F6C94 /* IconToggle.swift */,
 				838A9EC32B7E823300ED261C /* CustomNavigationLink.swift */,
-				837C03082B7F1AE0004D6C71 /* AllowDenySelection.swift */,
+				837C03082B7F1AE0004D6C71 /* SelectOptionList.swift */,
 				83DF95752B84266E00AEEB63 /* SiriSearchDetailView.swift */,
 				8329284A2B8578F4006611CF /* AppPermissionsView.swift */,
 			);
@@ -752,7 +760,7 @@
 				83D4CB762B7FF0B000D6087D /* WebContentView.swift in Sources */,
 				83815CFB2B76908700F53A0F /* ActionButtonView.swift in Sources */,
 				8319CE4D2B86D380007EC822 /* SafetyCheckView.swift in Sources */,
-				837C03092B7F1AE0004D6C71 /* AllowDenySelection.swift in Sources */,
+				837C03092B7F1AE0004D6C71 /* SelectOptionList.swift in Sources */,
 				837F1DD12B8AF1C500665EAB /* AutoFillView.swift in Sources */,
 				83DF95792B84391F00AEEB63 /* SiriAppClipsView.swift in Sources */,
 				83815CEB2B768E4A00F53A0F /* TranslateView.swift in Sources */,

@@ -8,6 +8,12 @@
 
 import SwiftUI
 
+/// A ``View`` template for displaying options regarding Siri Suggestions and apps.
+/// ```swift
+/// SiriSearchDetailView(appName: "News", title: "News")
+/// ```
+/// - Parameter appName: The ``String`` to display as the app name for the ``View``.
+/// - Parameter title: The ``String``to display as the title of the ``View``.
 struct SiriSearchDetailView: View {
     // Variables
     @State private var learnFromAppEnabled = true

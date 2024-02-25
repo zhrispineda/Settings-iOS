@@ -2,15 +2,21 @@
 //  CustomNavigationLink.swift
 //  Preferences
 //
-/// Template for a NavigationLink with subtitle and status text.
-/// - Parameters:
-///   - title: The main text describing the label.
-///   - subtitle: The sub-title text below the title describing the title.
-///   - status: Description of a state of a destination's controls.
-///   - destination: A view for the navigation link to present.
 
 import SwiftUI
 
+/// A template for a NavigationLink with subtitle and status text.
+/// ```swift
+/// var body: some View {
+///     List {
+///         CustomNavigationLink(title: "Title", subtitle: "Subtitle", status: "Status", destination: EmptyView())
+///     }
+/// }
+/// ```
+/// - Parameter title: The ``String`` to display as the description of the ``NavigationLink``.
+/// - Parameter subtitle: The ``String`` text to display below the title.
+/// - Parameter status: The ``String`` displaying the state of the view within.
+/// - Parameter destination: A ``Content`` view destination.
 struct CustomNavigationLink<Content: View>: View {
     // Variables
     var title = String()

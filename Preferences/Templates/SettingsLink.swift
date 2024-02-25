@@ -2,11 +2,27 @@
 //  SettingsLink.swift
 //  Preferences
 //
-//  Template for displaying a NavigationLink with a rounded icon and text.
-//
 
 import SwiftUI
 
+/// A template for displaying a NavigationLink with a rounded icon and quick information.
+/// ```swift
+/// var body: some View {
+///     List {
+///         SettingsLink(color: .gray, icon: "gear", id: "Settings", content: {
+///             EmptyView()
+///         })
+///     }
+/// }
+/// ```
+/// - Parameter color: The ``Color`` of the icon's background.
+/// - Parameter iconColor: The ``Color`` of the icon.
+/// - Parameter icon: The ``String`` name of the image asset or symbol.
+/// - Parameter larger: An optional ``Bool`` of whether the icon size should be larger or not.
+/// - Parameter id: The ``String`` name of the link to display.
+/// - Parameter subtitle: An optional ``String`` below the id displaying a short summary.
+/// - Parameter status: An optional ``String`` on the opposing side displaying its current state.
+/// - Parameter content: The destination ``Content`` for the NavigationLink.
 struct SettingsLink<Content: View>: View {
     let color: Color
     let iconColor: Color

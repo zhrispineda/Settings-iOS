@@ -2,11 +2,20 @@
 //  SettingsLabel.swift
 //  Preferences
 //
-//  Template for displaying a label with a rounded icon and text.
-//
 
 import SwiftUI
 
+/// A template for displaying a label with a rounded icon and text.
+/// ```swift
+/// var body: some View {
+///     List {
+///         SettingsLabel(color: Color.gray, icon: "gear", id: "Settings")
+///     }
+/// }
+/// ```
+/// - Parameter color: The ``Color`` to use as the icon background.
+/// - Parameter icon: The ``String`` name of the image asset or symbol.
+/// - Parameter id: The ``String`` name of the label to display.
 struct SettingsLabel: View {
     let color: Color
     let icon: String

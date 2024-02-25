@@ -16,7 +16,7 @@ struct KeyboardsView: View {
             Section {
                 ForEach(keyboards, id: \.self) { keyboard in
                     if keyboard != "Emoji" {
-                        NavigationLink(keyboard, destination: AllowDenySelection(title: "English (US)", options: ["QWERTY", "AZERTY", "QWERTZ", "Dvorak"], selected: "QWERTY"))
+                        NavigationLink(keyboard, destination: SelectOptionList(title: "English (US)", options: ["QWERTY", "AZERTY", "QWERTZ", "Dvorak"], selected: "QWERTY"))
                     } else {
                         Text(keyboard)
                     }

@@ -1,16 +1,18 @@
 //
-//  AllowDenySelection.swift
+//  SelectOptionList.swift
 //  Preferences
 //
-/// View with a selectable List for holding two options: `Allow` or `Don‘t Allow`, which can be customized.
-/// - Parameters:
-///   - title: The navigation title to use for the view.
-///   - options: Available options to choose from.
-///   - selected: Select option to be chosen by default.
 
 import SwiftUI
 
-struct AllowDenySelection: View {
+/// A ``CustomList`` ``View`` template for having options that can be selected and can also be customized.
+/// ```swift
+/// SelectOptionList(title: "Receive Updates", options: ["Yes", "No"], selected: "Yes")
+/// ```
+/// - Parameter title: The ``String`` to display as the title of the ``View``.
+/// - Parameter options: The ``String Array``of available options to pick from..
+/// - Parameter selected: The ``String`` holding the currently selected value.
+struct SelectOptionList: View {
     // Variables
     var title = String()
     var options = ["Allow", "Don‘t Allow"]
@@ -48,5 +50,5 @@ struct AllowDenySelection: View {
 }
 
 #Preview {
-    AllowDenySelection()
+    SelectOptionList()
 }

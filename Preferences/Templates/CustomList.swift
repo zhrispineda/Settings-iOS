@@ -2,13 +2,21 @@
 //  CustomList.swift
 //  Preferences
 //
-//  Template for a custom List with common properties
-//
 
 import SwiftUI
 
 let defaultPaddingViews = ["Content Restrictions", "Web Content", "App Installations & Purchases", "Language & Region", "Accessibility", "Safari", "News", "Maps", "Health", "Siri & Search", "Photos", "Game Center", "Developer"]
 
+/// A List that is customized to include commonly used properties and adjustments.
+/// ```swift
+/// var body: some View {
+///     CustomList(title: "My Title") {
+///         Text("Hello, World!")
+///     }
+/// }
+/// ```
+/// - Parameter title: The ``String`` of the inline navigation title
+/// - Parameter content: The ``Content`` to display within
 struct CustomList<Content: View>: View {
     // Variables
     var title: String = String()

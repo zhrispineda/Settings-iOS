@@ -16,6 +16,7 @@ struct ContentView: View {
     @State private var isOnLandscapeOrientation: Bool = UIDevice.current.orientation.isLandscape
     @State private var id = UUID()
     let tabletOnly = ["Multitasking & Gestures"]
+    let phoneOnly = ["Action Button", "Health"]
     
     var body: some View {
         ZStack {
@@ -55,7 +56,7 @@ struct ContentView: View {
                             // MARK: Attention Settings
                             Section {
                                 ForEach(attentionSettings) { setting in
-                                    if setting.id != "Action Button" {
+                                    if !phoneOnly.contains(setting.id) {
                                         Button(action: {
                                             id = UUID() // Reset destination
                                             selection = setting.type
@@ -99,7 +100,7 @@ struct ContentView: View {
                             // MARK: Apps Settings
                             Section {
                                 ForEach(appsSettings) { setting in
-                                    if setting.id != "Health" {
+                                    if !phoneOnly.contains(setting.id) {
                                         Button(action: {
                                             id = UUID() // Reset destination
                                             selection = setting.type

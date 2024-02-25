@@ -32,7 +32,7 @@ struct HardwareKeyboardView: View {
             }
             
             Section(content: {
-                CustomNavigationLink(title: "Keyboard Type", status: "ANSI", destination: AllowDenySelection(title: "Keyboard Type", options: ["ANSI (U.S.)", "ISO (International)", "JIS (Japan)"], selected: "ANSI (U.S.)"))
+                CustomNavigationLink(title: "Keyboard Type", status: "ANSI", destination: SelectOptionList(title: "Keyboard Type", options: ["ANSI (U.S.)", "ISO (International)", "JIS (Japan)"], selected: "ANSI (U.S.)"))
             }, footer: {
                 Text("Choose the correct type for your keyboard to ensure that all keys function correctly.")
             })

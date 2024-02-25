@@ -2,11 +2,15 @@
 //  AppPermissionsView.swift
 //  Preferences
 //
-//  Template for Privacy & Security selections.
-//
 
 import SwiftUI
 
+/// A ``View`` template for displaying options regarding Privacy & Security based on the given ``permissionName``.
+/// ```swift
+/// AppPermissionsView(permissionName: "Contacts")
+/// ```
+/// - Parameter permissionName: The ``String`` to display as the permission for the ``View``.
+/// - Parameter appClipsPermission: The  optional ``String`` to use when relating to App Clips.
 struct AppPermissionsView: View {
     var permissionName = String()
     var appClipPermission = String()

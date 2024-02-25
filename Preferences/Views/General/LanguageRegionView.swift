@@ -63,11 +63,11 @@ struct LanguageRegionView: View {
                     }
                     .foregroundStyle(Color(UIColor.label))
                 })
-                CustomNavigationLink(title: "Temperature", status: "°F", destination: AllowDenySelection(title: "Temperature", options: ["Celsius (°C)", "Fahrenheit (°F)"], selected: "Fahrenheit (°F)"))
-                CustomNavigationLink(title: "Measurement System", status: "US", destination: AllowDenySelection(title: "Measurement System", options: ["Metric", "US", "UK"], selected: "US"))
-                CustomNavigationLink(title: "First Day of Week", status: "Sunday", destination: AllowDenySelection(title: "First Day of Week", options: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], selected: "Sunday"))
+                CustomNavigationLink(title: "Temperature", status: "°F", destination: SelectOptionList(title: "Temperature", options: ["Celsius (°C)", "Fahrenheit (°F)"], selected: "Fahrenheit (°F)"))
+                CustomNavigationLink(title: "Measurement System", status: "US", destination: SelectOptionList(title: "Measurement System", options: ["Metric", "US", "UK"], selected: "US"))
+                CustomNavigationLink(title: "First Day of Week", status: "Sunday", destination: SelectOptionList(title: "First Day of Week", options: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], selected: "Sunday"))
                 CustomNavigationLink(title: "Date Format", status: "8/19/24", destination: DateFormatView())
-                CustomNavigationLink(title: "Number Format", status: "1,234,567.89", destination: AllowDenySelection(title: "Number Format", options: ["1,234,567.89", "1.234.567,89", "1234567.89", "1 234 567,89"], selected: "1,234,567.89"))
+                CustomNavigationLink(title: "Number Format", status: "1,234,567.89", destination: SelectOptionList(title: "Number Format", options: ["1,234,567.89", "1.234.567,89", "1234567.89", "1 234 567,89"], selected: "1,234,567.89"))
             }
             
             Section(content: {
