@@ -177,7 +177,7 @@ struct SafariView: View {
             })
             
             Section {
-                NavigationLink("Advanced", destination: {})
+                NavigationLink("Advanced", destination: SafariAdvancedView())
             }
         }
     }
