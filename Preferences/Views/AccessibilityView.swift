@@ -14,7 +14,9 @@ struct AccessibilityView: View {
                 SettingsLink(color: .blue, icon: "textformat.size", larger: false, id: "Display & Text Size", content: {
                     DisplayTextSizeView()
                 })
-                SettingsLink(color: .green, icon: "circle.dotted.and.circle", larger: false, id: "Motion", content: {})
+                SettingsLink(color: .green, icon: "circle.dotted.and.circle", larger: false, id: "Motion", content: {
+                    MotionView()
+                })
                 SettingsLink(color: Color(UIColor.systemGray3), icon: "rectangle.3.group.bubble.fill", larger: false, id: "Spoken Content", content: {})
             }, header: {
                 Text("Vision")

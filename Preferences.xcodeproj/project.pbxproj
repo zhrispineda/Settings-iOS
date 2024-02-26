@@ -103,6 +103,7 @@
 		83D3086D2B8AD2BC002A9B7F /* RequestDesktopWebsiteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D3086C2B8AD2BC002A9B7F /* RequestDesktopWebsiteView.swift */; };
 		83D3086F2B8AD4E7002A9B7F /* PageZoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D3086E2B8AD4E7002A9B7F /* PageZoomView.swift */; };
 		83D31F6F2B8D1DCB0057CFDB /* LargerTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D31F6E2B8D1DCB0057CFDB /* LargerTextView.swift */; };
+		83D31F712B8D22DD0057CFDB /* MotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D31F702B8D22DD0057CFDB /* MotionView.swift */; };
 		83D4CB762B7FF0B000D6087D /* WebContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D4CB752B7FF0B000D6087D /* WebContentView.swift */; };
 		83DF95742B841F0900AEEB63 /* DownloadedLanguagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DF95732B841F0900AEEB63 /* DownloadedLanguagesView.swift */; };
 		83DF95762B84266E00AEEB63 /* SiriSearchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DF95752B84266E00AEEB63 /* SiriSearchDetailView.swift */; };
@@ -217,6 +218,7 @@
 		83D3086C2B8AD2BC002A9B7F /* RequestDesktopWebsiteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestDesktopWebsiteView.swift; sourceTree = "<group>"; };
 		83D3086E2B8AD4E7002A9B7F /* PageZoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageZoomView.swift; sourceTree = "<group>"; };
 		83D31F6E2B8D1DCB0057CFDB /* LargerTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargerTextView.swift; sourceTree = "<group>"; };
+		83D31F702B8D22DD0057CFDB /* MotionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionView.swift; sourceTree = "<group>"; };
 		83D4CB752B7FF0B000D6087D /* WebContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebContentView.swift; sourceTree = "<group>"; };
 		83DF95732B841F0900AEEB63 /* DownloadedLanguagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadedLanguagesView.swift; sourceTree = "<group>"; };
 		83DF95752B84266E00AEEB63 /* SiriSearchDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriSearchDetailView.swift; sourceTree = "<group>"; };
@@ -416,6 +418,7 @@
 			children = (
 				83D31F6D2B8D1DB20057CFDB /* Display & Text Size */,
 				833F190A2B8BE05A00067C37 /* DisplayTextSizeView.swift */,
+				83D31F702B8D22DD0057CFDB /* MotionView.swift */,
 			);
 			path = Accessibility;
 			sourceTree = "<group>";
@@ -738,6 +741,7 @@
 				835683942B754623000FB136 /* SettingsLabel.swift in Sources */,
 				83F3F6A32B7D1454003CC310 /* VPNDeviceManagementView.swift in Sources */,
 				832EF38F2B814EC80066A1BF /* LocationPermissionsDetailView.swift in Sources */,
+				83D31F712B8D22DD0057CFDB /* MotionView.swift in Sources */,
 				83DF95762B84266E00AEEB63 /* SiriSearchDetailView.swift in Sources */,
 				837F1DD42B8AF2B400665EAB /* CreditCardsView.swift in Sources */,
 				83815CF92B768F5C00F53A0F /* DeveloperView.swift in Sources */,
