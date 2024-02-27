@@ -22,9 +22,9 @@ struct AccessibilityKeyboardsView: View {
             })
             
             Section(content: {
-                CustomNavigationLink(title: "Key Repeat", status: "On", destination: EmptyView())
-                CustomNavigationLink(title: "Sticky Keys", status: "Off", destination: EmptyView())
-                CustomNavigationLink(title: "Slow Keys", status: "Off", destination: EmptyView())
+                CustomNavigationLink(title: "Key Repeat", status: "On", destination: KeyRepeatView())
+                CustomNavigationLink(title: "Sticky Keys", status: "Off", destination: StickyKeysView())
+                CustomNavigationLink(title: "Slow Keys", status: "Off", destination: SlowKeysView())
             }, footer: {
                 Text("Customize the typing experience when using an external keyboard.")
             })

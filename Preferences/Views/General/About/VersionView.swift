@@ -16,9 +16,10 @@ struct VersionView: View {
             List {
                 Section(content: {
                     VStack(alignment: .leading) {
-                        Text("**\(UIDevice().systemName) \(UIDevice().systemVersion) (21E5200d)**")
+                        Text("**\(UIDevice().systemName) \(UIDevice().systemVersion) (21E213)**")
                         Text("This update includes improvements and bug fixes for your \(UIDevice().localizedModel).")
                             .foregroundStyle(.secondary)
+                            .font(.callout)
                     }
                 }, header: {
                     Text("\(UIDevice().systemName) Version")

@@ -139,6 +139,9 @@
 		83F78A172B8E888600025062 /* KeyboardCommandsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F78A162B8E888600025062 /* KeyboardCommandsView.swift */; };
 		83F78A192B8E8CFD00025062 /* AutoHideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F78A182B8E8CFD00025062 /* AutoHideView.swift */; };
 		83F78A1B2B8E8E3900025062 /* KeyboardColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F78A1A2B8E8E3900025062 /* KeyboardColorView.swift */; };
+		83F78A1D2B8E90F300025062 /* KeyRepeatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F78A1C2B8E90F300025062 /* KeyRepeatView.swift */; };
+		83F78A1F2B8E92AD00025062 /* StickyKeysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F78A1E2B8E92AD00025062 /* StickyKeysView.swift */; };
+		83F78A212B8E935300025062 /* SlowKeysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F78A202B8E935300025062 /* SlowKeysView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -276,6 +279,9 @@
 		83F78A162B8E888600025062 /* KeyboardCommandsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardCommandsView.swift; sourceTree = "<group>"; };
 		83F78A182B8E8CFD00025062 /* AutoHideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoHideView.swift; sourceTree = "<group>"; };
 		83F78A1A2B8E8E3900025062 /* KeyboardColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardColorView.swift; sourceTree = "<group>"; };
+		83F78A1C2B8E90F300025062 /* KeyRepeatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyRepeatView.swift; sourceTree = "<group>"; };
+		83F78A1E2B8E92AD00025062 /* StickyKeysView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyKeysView.swift; sourceTree = "<group>"; };
+		83F78A202B8E935300025062 /* SlowKeysView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlowKeysView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -759,6 +765,9 @@
 			children = (
 				83F78A152B8E886400025062 /* Full Keyboard Access */,
 				83F78A132B8E87BF00025062 /* FullKeyboardAccessView.swift */,
+				83F78A1C2B8E90F300025062 /* KeyRepeatView.swift */,
+				83F78A1E2B8E92AD00025062 /* StickyKeysView.swift */,
+				83F78A202B8E935300025062 /* SlowKeysView.swift */,
 			);
 			path = Keyboards;
 			sourceTree = "<group>";
@@ -942,17 +951,20 @@
 				8329284B2B8578F4006611CF /* AppPermissionsView.swift in Sources */,
 				83815CED2B768E8300F53A0F /* MapsView.swift in Sources */,
 				83D31F8B2B8E3DF60057CFDB /* VoiceDetailView.swift in Sources */,
+				83F78A1F2B8E92AD00025062 /* StickyKeysView.swift in Sources */,
 				832EF3A22B8198570066A1BF /* AddTextReplacementView.swift in Sources */,
 				835683992B7551D3000FB136 /* CertificateTrustSettingsView.swift in Sources */,
 				838C23232B746CF90053D4C5 /* GeneralView.swift in Sources */,
 				83585B732B8847A70046A0C3 /* WalkingView.swift in Sources */,
 				833F0AD22B744D180036EAD2 /* ContentView.swift in Sources */,
+				83F78A1D2B8E90F300025062 /* KeyRepeatView.swift in Sources */,
 				8319CE512B86DF8A007EC822 /* AppleAdvertisingView.swift in Sources */,
 				83D31F7E2B8D707D0057CFDB /* PronunciationVoicesView.swift in Sources */,
 				83D4CB762B7FF0B000D6087D /* WebContentView.swift in Sources */,
 				83815CFB2B76908700F53A0F /* ActionButtonView.swift in Sources */,
 				8319CE4D2B86D380007EC822 /* SafetyCheckView.swift in Sources */,
 				837C03092B7F1AE0004D6C71 /* SelectOptionList.swift in Sources */,
+				83F78A212B8E935300025062 /* SlowKeysView.swift in Sources */,
 				83D31F932B8E643E0057CFDB /* FallbackActionView.swift in Sources */,
 				837F1DD12B8AF1C500665EAB /* AutoFillView.swift in Sources */,
 				83DF95792B84391F00AEEB63 /* SiriAppClipsView.swift in Sources */,
