@@ -32,7 +32,7 @@ struct SpeakSelectionView: View {
                 })
                 
                 Section {
-                    NavigationLink("Voices", destination: EmptyView())
+                    NavigationLink("Voices", destination: SpeakSelectionVoicesView())
                 }
                 
                 Section(content: {

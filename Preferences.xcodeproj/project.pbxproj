@@ -111,6 +111,9 @@
 		83D31F7E2B8D707D0057CFDB /* PronunciationVoicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D31F7D2B8D707D0057CFDB /* PronunciationVoicesView.swift */; };
 		83D31F802B8D74A10057CFDB /* HighlightContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D31F7F2B8D74A10057CFDB /* HighlightContentView.swift */; };
 		83D31F832B8D9AAC0057CFDB /* HighlightColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D31F822B8D9AAC0057CFDB /* HighlightColorView.swift */; };
+		83D31F852B8E3C640057CFDB /* SpeakSelectionVoicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D31F842B8E3C640057CFDB /* SpeakSelectionVoicesView.swift */; };
+		83D31F882B8E3DA90057CFDB /* SpeakSelectionVoiceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D31F872B8E3DA90057CFDB /* SpeakSelectionVoiceDetailView.swift */; };
+		83D31F8B2B8E3DF60057CFDB /* VoiceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D31F8A2B8E3DF60057CFDB /* VoiceDetailView.swift */; };
 		83D4CB762B7FF0B000D6087D /* WebContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D4CB752B7FF0B000D6087D /* WebContentView.swift */; };
 		83DF95742B841F0900AEEB63 /* DownloadedLanguagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DF95732B841F0900AEEB63 /* DownloadedLanguagesView.swift */; };
 		83DF95762B84266E00AEEB63 /* SiriSearchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DF95752B84266E00AEEB63 /* SiriSearchDetailView.swift */; };
@@ -233,6 +236,9 @@
 		83D31F7D2B8D707D0057CFDB /* PronunciationVoicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PronunciationVoicesView.swift; sourceTree = "<group>"; };
 		83D31F7F2B8D74A10057CFDB /* HighlightContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightContentView.swift; sourceTree = "<group>"; };
 		83D31F822B8D9AAC0057CFDB /* HighlightColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightColorView.swift; sourceTree = "<group>"; };
+		83D31F842B8E3C640057CFDB /* SpeakSelectionVoicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakSelectionVoicesView.swift; sourceTree = "<group>"; };
+		83D31F872B8E3DA90057CFDB /* SpeakSelectionVoiceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakSelectionVoiceDetailView.swift; sourceTree = "<group>"; };
+		83D31F8A2B8E3DF60057CFDB /* VoiceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceDetailView.swift; sourceTree = "<group>"; };
 		83D4CB752B7FF0B000D6087D /* WebContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebContentView.swift; sourceTree = "<group>"; };
 		83DF95732B841F0900AEEB63 /* DownloadedLanguagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadedLanguagesView.swift; sourceTree = "<group>"; };
 		83DF95752B84266E00AEEB63 /* SiriSearchDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriSearchDetailView.swift; sourceTree = "<group>"; };
@@ -608,8 +614,10 @@
 			children = (
 				83D31F772B8D49780057CFDB /* Pronunciations */,
 				83D31F812B8D9A840057CFDB /* Highlight Content */,
+				83D31F862B8E3D9D0057CFDB /* Voices */,
 				83D31F752B8D48870057CFDB /* PronunciationsView.swift */,
 				83D31F7F2B8D74A10057CFDB /* HighlightContentView.swift */,
+				83D31F842B8E3C640057CFDB /* SpeakSelectionVoicesView.swift */,
 			);
 			path = "Speak Selection";
 			sourceTree = "<group>";
@@ -638,6 +646,23 @@
 				83D31F822B8D9AAC0057CFDB /* HighlightColorView.swift */,
 			);
 			path = "Highlight Content";
+			sourceTree = "<group>";
+		};
+		83D31F862B8E3D9D0057CFDB /* Voices */ = {
+			isa = PBXGroup;
+			children = (
+				83D31F892B8E3DEE0057CFDB /* Voice */,
+				83D31F872B8E3DA90057CFDB /* SpeakSelectionVoiceDetailView.swift */,
+			);
+			path = Voices;
+			sourceTree = "<group>";
+		};
+		83D31F892B8E3DEE0057CFDB /* Voice */ = {
+			isa = PBXGroup;
+			children = (
+				83D31F8A2B8E3DF60057CFDB /* VoiceDetailView.swift */,
+			);
+			path = Voice;
 			sourceTree = "<group>";
 		};
 		83DF95722B841EFB00AEEB63 /* Translate */ = {
@@ -821,6 +846,7 @@
 				837F1DD62B8AF31F00665EAB /* QuickWebsiteSearchView.swift in Sources */,
 				832EF38C2B81264E0066A1BF /* LocationAlertsView.swift in Sources */,
 				832EF39F2B8197980066A1BF /* TextReplacementView.swift in Sources */,
+				83D31F852B8E3C640057CFDB /* SpeakSelectionVoicesView.swift in Sources */,
 				83D31F792B8D49820057CFDB /* ReplacementView.swift in Sources */,
 				83D308692B8AD145002A9B7F /* SafariCameraView.swift in Sources */,
 				83815CF12B768F0500F53A0F /* HealthView.swift in Sources */,
@@ -829,6 +855,7 @@
 				8319CE4F2B86DB44007EC822 /* SensitiveContentWarningView.swift in Sources */,
 				8329284B2B8578F4006611CF /* AppPermissionsView.swift in Sources */,
 				83815CED2B768E8300F53A0F /* MapsView.swift in Sources */,
+				83D31F8B2B8E3DF60057CFDB /* VoiceDetailView.swift in Sources */,
 				832EF3A22B8198570066A1BF /* AddTextReplacementView.swift in Sources */,
 				835683992B7551D3000FB136 /* CertificateTrustSettingsView.swift in Sources */,
 				838C23232B746CF90053D4C5 /* GeneralView.swift in Sources */,
@@ -853,6 +880,7 @@
 				838C23302B74978C0053D4C5 /* HText.swift in Sources */,
 				83585B752B8848110046A0C3 /* TransitView.swift in Sources */,
 				833F0AD02B744D180036EAD2 /* PreferencesApp.swift in Sources */,
+				83D31F882B8E3DA90057CFDB /* SpeakSelectionVoiceDetailView.swift in Sources */,
 				837F1DCF2B8AF13600665EAB /* FavoritesView.swift in Sources */,
 				832EF3A42B8199FA0066A1BF /* HardwareKeyboardView.swift in Sources */,
 				837B0F622B89B49B00B22455 /* SiriResponsesView.swift in Sources */,
