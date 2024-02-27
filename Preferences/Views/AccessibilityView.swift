@@ -35,7 +35,9 @@ struct AccessibilityView: View {
                         ControlNearbyDevicesView()
                     })
                 }
-                SettingsLink(color: .gray, icon: "keyboard", larger: false, id: "Keyboards", content: {})
+                SettingsLink(color: .gray, icon: "keyboard", larger: false, id: "Keyboards", content: {
+                    AccessibilityKeyboardsView()
+                })
             }, header: {
                 Text("Physical and Motor")
             })

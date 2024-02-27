@@ -13,6 +13,8 @@ extension Color {
         switch name {
         case "Label":
             return Color(UIColor.label)
+        case "Default":
+            return Color.accentColor
         case "Gray":
             return Color.gray
         case "White":
