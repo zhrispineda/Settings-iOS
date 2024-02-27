@@ -16,7 +16,7 @@ struct TouchView: View {
             Section(content: {
                 CustomNavigationLink(title: "AssistiveTouch", status: "Off", destination: AssistiveTouchView())
             }, footer: {
-                Text("AssistiveTouchInstructionalTextFormat_IPHONE")
+                Text(DeviceInfo().isPhone ? "AssistiveTouchInstructionalTextFormat_IPHONE" : "AssistiveTouchInstructionalTextFormat_IPAD")
             })
             
             Section(content: {

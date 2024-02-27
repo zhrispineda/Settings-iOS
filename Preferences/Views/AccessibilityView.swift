@@ -29,7 +29,12 @@ struct AccessibilityView: View {
                 SettingsLink(color: .blue, icon: "hand.point.up.left.fill", id: "Touch", content: {
                     TouchView()
                 })
-                SettingsLink(color: .blue, icon: "dot.radiowaves.up.forward", id: "Control Nearby Devices", content: {})
+                // TODO: Face ID & Attention
+                if DeviceInfo().isPhone {
+                    SettingsLink(color: .blue, icon: "dot.radiowaves.up.forward", id: "Control Nearby Devices", content: {
+                        ControlNearbyDevicesView()
+                    })
+                }
                 SettingsLink(color: .gray, icon: "keyboard", larger: false, id: "Keyboards", content: {})
             }, header: {
                 Text("Physical and Motor")
@@ -57,5 +62,7 @@ struct AccessibilityView: View {
 }
 
 #Preview {
-    AccessibilityView()
+    NavigationStack {
+        AccessibilityView()
+    }
 }
