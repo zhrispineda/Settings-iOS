@@ -51,7 +51,9 @@ struct AccessibilityView: View {
             })
             
             Section(content: {
-                SettingsLink(color: Color(UIColor.systemGray3), icon: "keyboard", larger: false, id: "Live Speech", content: {})
+                SettingsLink(color: Color(UIColor.systemGray3), icon: "keyboard", larger: false, id: "Live Speech", content: {
+                    LiveSpeechView()
+                })
             }, header: {
                 Text("Speech")
             })
