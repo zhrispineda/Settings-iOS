@@ -22,7 +22,7 @@ struct FavoritesView: View {
                             .fontWeight(.light)
                             .foregroundStyle(.blue)
                         Text("Favorites")
-                            .tint(Color(UIColor.label))
+                            .tint(Color["Label"])
                         Spacer()
                         Image(systemName: "checkmark")
                     }

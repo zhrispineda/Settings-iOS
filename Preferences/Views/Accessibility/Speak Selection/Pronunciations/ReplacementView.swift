@@ -65,10 +65,10 @@ struct ReplacementView: View {
                                 switch option {
                                 case "Watch":
                                     SettingsLabel(icon: "apple \(option.lowercased())", id: option)
-                                        .foregroundStyle(Color(UIColor.label))
+                                        .foregroundStyle(Color["Label"])
                                 default:
                                     SettingsLabel(icon: "apple\(option.lowercased())", id: option)
-                                        .foregroundStyle(Color(UIColor.label))
+                                        .foregroundStyle(Color["Label"])
                                 }
                                 Spacer()
                                 Image(systemName: "\(selected.contains(option) ? "checkmark" : "")")

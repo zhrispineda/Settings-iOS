@@ -30,7 +30,7 @@ struct AutoFillView: View {
                         Image(systemName: "chevron.right")
                             .foregroundStyle(.secondary)
                     }
-                    .tint(Color(UIColor.label))
+                    .tint(Color["Label"])
                 })
             }
             

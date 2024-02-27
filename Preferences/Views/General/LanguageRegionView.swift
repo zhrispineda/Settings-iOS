@@ -48,7 +48,7 @@ struct LanguageRegionView: View {
                             .imageScale(.small)
                             .fontWeight(.medium)
                     }
-                    .foregroundStyle(Color(UIColor.label))
+                    .foregroundStyle(Color["Label"])
                 })
                 Button(action: {}, label: {
                     HStack {
@@ -61,7 +61,7 @@ struct LanguageRegionView: View {
                             .imageScale(.small)
                             .fontWeight(.medium)
                     }
-                    .foregroundStyle(Color(UIColor.label))
+                    .foregroundStyle(Color["Label"])
                 })
                 CustomNavigationLink(title: "Temperature", status: "°F", destination: SelectOptionList(title: "Temperature", options: ["Celsius (°C)", "Fahrenheit (°F)"], selected: "Fahrenheit (°F)"))
                 CustomNavigationLink(title: "Measurement System", status: "US", destination: SelectOptionList(title: "Measurement System", options: ["Metric", "US", "UK"], selected: "US"))

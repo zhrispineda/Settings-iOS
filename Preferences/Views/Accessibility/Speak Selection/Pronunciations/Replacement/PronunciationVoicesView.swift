@@ -20,7 +20,7 @@ struct PronunciationVoicesView: View {
                 }, label: {
                     HStack {
                         Text("All")
-                            .foregroundStyle(Color(UIColor.label))
+                            .foregroundStyle(Color["Label"])
                         Spacer()
                         Image(systemName: "checkmark")
                             .opacity(selected.contains("All") ? 1 : 0)
@@ -45,7 +45,7 @@ struct PronunciationVoicesView: View {
                     }, label: {
                         HStack {
                             Text(option)
-                                .foregroundStyle(Color(UIColor.label))
+                                .foregroundStyle(Color["Label"])
                             Spacer()
                             Image(systemName: "checkmark")
                                 .opacity(selected.contains(option) ? 1 : 0)

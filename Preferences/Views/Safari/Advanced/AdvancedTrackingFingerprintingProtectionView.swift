@@ -18,7 +18,7 @@ struct AdvancedTrackingFingerprintingProtectionView: View {
                 Button(action: { selected = option }, label: {
                     HStack {
                         Text(option)
-                            .foregroundStyle(Color(UIColor.label))
+                            .foregroundStyle(Color["Label"])
                         Spacer()
                         if selected == option {
                             Image(systemName: "checkmark")

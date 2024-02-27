@@ -43,7 +43,7 @@ struct ContentView: View {
                                             .padding(.bottom, 0)
                                             .frame(maxWidth: .infinity, alignment: .leading)
                                         Text("Set up iCloud, the App Store, and more.")
-                                            .foregroundStyle(Color(UIColor.label))
+                                            .foregroundStyle(Color["Label"])
                                             .font(.system(size: 13))
                                             .frame(maxWidth: .infinity, alignment: .leading)
                                             .padding(.trailing)
@@ -62,7 +62,7 @@ struct ContentView: View {
                                             selection = setting.type
                                         }, label: {
                                             SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id)
-                                                .foregroundStyle(selection == setting.type ? Color.white : Color(UIColor.label))
+                                                .foregroundStyle(selection == setting.type ? Color.white : Color["Label"])
                                         })
                                         .listRowBackground(selection == setting.type ? Color.blue : nil)
                                     }
@@ -77,7 +77,7 @@ struct ContentView: View {
                                         selection = setting.type
                                     }, label: {
                                         SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id)
-                                            .foregroundStyle(selection == setting.type ? Color.white : Color(UIColor.label))
+                                            .foregroundStyle(selection == setting.type ? Color.white : Color["Label"])
                                     })
                                     .listRowBackground(selection == setting.type ? Color.blue.opacity(0.75) : nil)
                                 }
@@ -91,7 +91,7 @@ struct ContentView: View {
                                         selection = setting.type
                                     }, label: {
                                         SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id)
-                                            .foregroundStyle(selection == setting.type ? Color.white : Color(UIColor.label))
+                                            .foregroundStyle(selection == setting.type ? Color.white : Color["Label"])
                                     })
                                     .listRowBackground(selection == setting.type ? Color.blue.opacity(0.75) : nil)
                                 }
@@ -106,7 +106,7 @@ struct ContentView: View {
                                             selection = setting.type
                                         }, label: {
                                             SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id)
-                                                .foregroundStyle(selection == setting.type ? Color.white : Color(UIColor.label))
+                                                .foregroundStyle(selection == setting.type ? Color.white : Color["Label"])
                                         })
                                         .listRowBackground(selection == setting.type ? Color.blue.opacity(0.75) : nil)
                                     }
@@ -121,7 +121,7 @@ struct ContentView: View {
                                         selection = setting.type
                                     }, label: {
                                         SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id)
-                                            .foregroundStyle(selection == setting.type ? Color.white : Color(UIColor.label))
+                                            .foregroundStyle(selection == setting.type ? Color.white : Color["Label"])
                                     })
                                     .listRowBackground(selection == setting.type ? Color.blue.opacity(0.75) : nil)
                                 }
@@ -162,7 +162,7 @@ struct ContentView: View {
                                                 .padding(.bottom, 0)
                                                 .frame(maxWidth: .infinity, alignment: .leading)
                                             Text("Set up iCloud, the App Store, and more.")
-                                                .foregroundStyle(Color(UIColor.label))
+                                                .foregroundStyle(Color["Label"])
                                                 .font(.system(size: 13))
                                                 .frame(maxWidth: .infinity, alignment: .leading)
                                         }

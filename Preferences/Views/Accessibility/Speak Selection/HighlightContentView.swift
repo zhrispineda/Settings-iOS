@@ -31,7 +31,7 @@ struct HighlightContentView: View {
                         }, label: {
                             HStack {
                                 Text(option)
-                                    .foregroundStyle(Color(UIColor.label))
+                                    .foregroundStyle(Color["Label"])
                                 Spacer()
                                 Image(systemName: "checkmark")
                                     .opacity(selectedHighlightOption == option ? 1 : 0)
@@ -48,7 +48,7 @@ struct HighlightContentView: View {
                             }, label: {
                                 HStack {
                                     Text(option)
-                                        .foregroundStyle(Color(UIColor.label))
+                                        .foregroundStyle(Color["Label"])
                                     Spacer()
                                     Image(systemName: "checkmark")
                                         .opacity(selectedHighlightStyle == option ? 1 : 0)

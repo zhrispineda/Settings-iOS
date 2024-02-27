@@ -29,7 +29,7 @@ struct DictationShortcutView: View {
                                     .foregroundStyle(.blue)
                             }
                         }
-                        .foregroundStyle(Color(UIColor.label))
+                        .foregroundStyle(Color["Label"])
                     })
                 }
             }, header: {

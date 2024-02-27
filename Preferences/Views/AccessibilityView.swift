@@ -11,6 +11,7 @@ struct AccessibilityView: View {
     var body: some View {
         CustomList(title: "Accessibility") {
             Section(content: {
+                // TODO: Hover Text (iPad)
                 SettingsLink(color: .blue, icon: "textformat.size", larger: false, id: "Display & Text Size", content: {
                     DisplayTextSizeView()
                 })
@@ -25,7 +26,9 @@ struct AccessibilityView: View {
             })
             
             Section(content: {
-                SettingsLink(color: .blue, icon: "hand.point.up.left.fill", id: "Touch", content: {})
+                SettingsLink(color: .blue, icon: "hand.point.up.left.fill", id: "Touch", content: {
+                    TouchView()
+                })
                 SettingsLink(color: .blue, icon: "dot.radiowaves.up.forward", id: "Control Nearby Devices", content: {})
                 SettingsLink(color: .gray, icon: "keyboard", larger: false, id: "Keyboards", content: {})
             }, header: {

@@ -21,7 +21,7 @@ struct WebContentView: View {
                     Button(action: { selectedOption = option }, label: {
                         HStack {
                             Text(option)
-                                .foregroundStyle(Color(UIColor.label))
+                                .foregroundStyle(Color["Label"])
                             Spacer()
                             if selectedOption == option {
                                 Image(systemName: "checkmark")

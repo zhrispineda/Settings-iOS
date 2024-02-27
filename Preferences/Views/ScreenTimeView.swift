@@ -37,13 +37,13 @@ struct ScreenTimeView: View {
                     // TODO: Popup
                 }, label: {
                     SettingsLink(color: Color.cyan, icon: "chart.bar.xaxis", larger: false, id: "App & Website Activity", subtitle: "Reports, Downtime & App Limits", content: {})
-                        .foregroundStyle(Color(UIColor.label))
+                        .foregroundStyle(Color["Label"])
                 })
                 Button(action: {
                     // TODO: Popup
                 }, label: {
                     SettingsLink(color: Color.white, iconColor: Color.blue, icon: "screen-distance.symbol_Normal", id: "Screen Distance", subtitle: "Reduce eye strain", content: {})
-                        .foregroundStyle(Color(UIColor.label))
+                        .foregroundStyle(Color["Label"])
                 })
             }, header: {
                 Text("Limit Usage")

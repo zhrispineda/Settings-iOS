@@ -36,7 +36,7 @@ struct KeyboardsView: View {
                             .imageScale(.small)
                             .fontWeight(.medium)
                     }
-                    .foregroundStyle(Color(UIColor.label))
+                    .foregroundStyle(Color["Label"])
                 })
             }
         }

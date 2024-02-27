@@ -58,7 +58,7 @@ struct SafetyCheckView: View {
                                 .bold()
                         }
                     }
-                    .foregroundStyle(Color(UIColor.label))
+                    .foregroundStyle(Color["Label"])
                 })
             }
             
@@ -88,7 +88,7 @@ struct SafetyCheckView: View {
                                 .bold()
                         }
                     }
-                    .foregroundStyle(Color(UIColor.label))
+                    .foregroundStyle(Color["Label"])
                 })
             }
         }

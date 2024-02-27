@@ -1,20 +1,27 @@
 //
-//  OneHandedKeyboardView.swift
+//  FallbackActionView.swift
 //  Preferences
 //
-//  Settings > General > Keyboard > One-Handed Keyboard
+//  Settings > Accessibility > Touch > AssistiveTouch > Fallback Action
 //
 
 import SwiftUI
 
-struct OneHandedKeyboardView: View {
+struct FallbackActionView: View {
     // Variables
-    @State private var selected = "Off"
-    let options = ["Off", "Left", "Right"]
+    @State private var fallbackActionEnabled = true
+    @State private var selected = "Tap"
+    let options = ["Tap", "Dwell"]
     
     var body: some View {
-        CustomList(title: "One-Handed Keyboard") {
+        CustomList(title: "MOUSE_POINTER_DWELL_AUTOREVERT") {
             Section(content: {
+                Toggle("MOUSE_POINTER_DWELL_AUTOREVERT_ENABLED", isOn: $fallbackActionEnabled)
+            }, footer: {
+                Text("MOUSE_POINTER_DWELL_AUTOREVERT_FOOTER")
+            })
+            
+            Section {
                 ForEach(options, id: \.self) { option in
                     Button(action: {
                         selected = option
@@ -27,13 +34,13 @@ struct OneHandedKeyboardView: View {
                         }
                     })
                 }
-            }, footer: {
-                Text("You can quickly access these settings by pressing and holding the Emoji or Globe key on the keyboard.")
-            })
+            }
         }
     }
 }
 
 #Preview {
-    OneHandedKeyboardView()
+    NavigationStack {
+        FallbackActionView()
+    }
 }

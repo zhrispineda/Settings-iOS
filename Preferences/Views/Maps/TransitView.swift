@@ -25,7 +25,7 @@ struct TransitView: View {
                     }, label: {
                         HStack {
                             Text(option)
-                                .foregroundStyle(Color(UIColor.label))
+                                .foregroundStyle(Color["Label"])
                             Spacer()
                             if selectedOptions.contains(option) {
                                 Image(systemName: "checkmark")

@@ -25,7 +25,7 @@ struct LocationPermissionsDetailView: View {
                     }, label: {
                         HStack {
                             Text(option)
-                                .foregroundStyle(Color(UIColor.label))
+                                .foregroundStyle(Color["Label"])
                             Spacer()
                             Image(systemName: "checkmark")
                                 .opacity(selected == option ? 1 : 0)

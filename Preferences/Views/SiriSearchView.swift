@@ -66,7 +66,7 @@ struct SiriSearchView: View {
                 Button(action: {}, label: { // TODO: Popover
                     HStack {
                         Text("My Information")
-                            .foregroundStyle(Color(UIColor.label))
+                            .foregroundStyle(Color["Label"])
                         Spacer()
                         Text("None")
                             .foregroundStyle(Color(UIColor.secondaryLabel))

@@ -24,7 +24,7 @@ struct DisplayZoomView: View {
                 }, label: {
                     HStack {
                         Text(option)
-                            .foregroundStyle(Color(UIColor.label))
+                            .foregroundStyle(Color["Label"])
                         Spacer()
                         Image(systemName: "\(selected == option ? "checkmark" : "")")
                             .bold()

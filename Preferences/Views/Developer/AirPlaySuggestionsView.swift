@@ -22,7 +22,7 @@ struct AirPlaySuggestionsView: View {
                         HStack {
                             Text(option)
                                 .lineLimit(1)
-                                .foregroundStyle(Color(UIColor.label))
+                                .foregroundStyle(Color["Label"])
                             Spacer()
                             Image(systemName: "\(selected == option ? "checkmark" : "")")
                                 .bold()

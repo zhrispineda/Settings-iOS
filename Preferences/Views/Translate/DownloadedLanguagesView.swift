@@ -52,7 +52,7 @@ struct DownloadedLanguagesView: View {
                     }, label: {
                         HStack {
                             Text(language)
-                                .foregroundStyle(Color(UIColor.label))
+                                .foregroundStyle(Color["Label"])
                             Spacer()
                             Image(systemName: "arrow.down.circle")
                                 .imageScale(.large)

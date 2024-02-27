@@ -28,7 +28,7 @@ struct SiriVoiceView: View {
                     Button(action: { selectedVariety = option }, label: {
                         HStack {
                             Text(option)
-                                .foregroundStyle(Color(UIColor.label))
+                                .foregroundStyle(Color["Label"])
                             Spacer()
                             if selectedVariety == option {
                                 Image(systemName: "checkmark")
@@ -47,7 +47,7 @@ struct SiriVoiceView: View {
                         Button(action: { selectedAmericanVoice = option }, label: {
                             HStack {
                                 Text(option)
-                                    .foregroundStyle(Color(UIColor.label))
+                                    .foregroundStyle(Color["Label"])
                                 Spacer()
                                 if selectedAmericanVoice == option {
                                     Image(systemName: "checkmark")
@@ -60,7 +60,7 @@ struct SiriVoiceView: View {
                         Button(action: { selectedBritishVoice = option }, label: {
                             HStack {
                                 Text(option)
-                                    .foregroundStyle(Color(UIColor.label))
+                                    .foregroundStyle(Color["Label"])
                                 Spacer()
                                 if selectedBritishVoice == option {
                                     Image(systemName: "checkmark")
@@ -73,7 +73,7 @@ struct SiriVoiceView: View {
                         Button(action: { selectedIndianVoice = option }, label: {
                             HStack {
                                 Text(option)
-                                    .foregroundStyle(Color(UIColor.label))
+                                    .foregroundStyle(Color["Label"])
                                 Spacer()
                                 if selectedIndianVoice == option {
                                     Image(systemName: "checkmark")
@@ -86,7 +86,7 @@ struct SiriVoiceView: View {
                         Button(action: { selectedOtherVoice = option }, label: {
                             HStack {
                                 Text(option)
-                                    .foregroundStyle(Color(UIColor.label))
+                                    .foregroundStyle(Color["Label"])
                                 Spacer()
                                 if selectedOtherVoice == option {
                                     Image(systemName: "checkmark")

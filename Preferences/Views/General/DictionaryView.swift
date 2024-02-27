@@ -42,7 +42,7 @@ struct DictionaryView: View {
                                     .font(.caption)
                             }
                         }
-                        .foregroundStyle(Color(UIColor.label))
+                        .foregroundStyle(Color["Label"])
                     }, icon: {
                         Image(systemName: "checkmark")
                             .opacity(selected.contains(dict.dictionary) ? 1 : 0)

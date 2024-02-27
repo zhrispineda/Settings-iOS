@@ -32,7 +32,7 @@ struct IconToggle: View {
                         .clipShape(RoundedRectangle(cornerRadius: 6))
                         .overlay(
                             RoundedRectangle(cornerRadius: 5)
-                                .stroke(Color(UIColor.label), lineWidth: 0.1))
+                                .stroke(Color["Label"], lineWidth: 0.1))
                     if UIImage(systemName: icon) != nil {
                         Image(systemName: icon)
                             .imageScale(smallerIcons.contains(icon) ? .medium : .large)

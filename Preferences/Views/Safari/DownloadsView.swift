@@ -22,7 +22,7 @@ struct DownloadsView: View {
                                 .foregroundStyle(.secondary)
                                 .font(.footnote)
                         }
-                        .tint(Color(UIColor.label))
+                        .tint(Color["Label"])
                         Spacer()
                         Image(systemName: "checkmark")
                     }
@@ -37,7 +37,7 @@ struct DownloadsView: View {
                         Text("Other...")
                     }
                 })
-                .tint(Color(UIColor.label))
+                .tint(Color["Label"])
             }, header: {
                 Text("\n\nStore Downloaded Files On:")
             }, footer: {

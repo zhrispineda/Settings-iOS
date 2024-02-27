@@ -55,7 +55,7 @@ struct DeveloperView: View {
                         }, label: {
                             HText("View", status: "Default")
                         })
-                        .foregroundStyle(Color(UIColor.label))
+                        .foregroundStyle(Color["Label"])
                         .sheet(isPresented: $showingDisplayZoomSheet) {
                             NavigationStack {
                                 DisplayZoomView(options: DeviceInfo().isLargestTablet ? ["Larger Text", "Default", "More Space"] : ["Default", "More Space"])
