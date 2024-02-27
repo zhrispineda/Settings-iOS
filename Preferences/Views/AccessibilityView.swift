@@ -43,7 +43,9 @@ struct AccessibilityView: View {
             })
             
             Section(content: {
-                SettingsLink(color: .blue, icon: "captions.bubble.fill", larger: false, id: "Subtitles & Captioning", content: {})
+                SettingsLink(color: .blue, icon: "captions.bubble.fill", larger: false, id: "Subtitles & Captioning", content: {
+                    SubtitlesCaptioningView()
+                })
             }, header: {
                 Text("Hearing")
             })

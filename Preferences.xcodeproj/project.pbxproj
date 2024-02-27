@@ -142,6 +142,8 @@
 		83F78A1D2B8E90F300025062 /* KeyRepeatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F78A1C2B8E90F300025062 /* KeyRepeatView.swift */; };
 		83F78A1F2B8E92AD00025062 /* StickyKeysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F78A1E2B8E92AD00025062 /* StickyKeysView.swift */; };
 		83F78A212B8E935300025062 /* SlowKeysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F78A202B8E935300025062 /* SlowKeysView.swift */; };
+		83F78A232B8E99D200025062 /* SubtitlesCaptioningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F78A222B8E99D200025062 /* SubtitlesCaptioningView.swift */; };
+		83F78A262B8E9ABB00025062 /* StyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F78A252B8E9ABB00025062 /* StyleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -282,6 +284,8 @@
 		83F78A1C2B8E90F300025062 /* KeyRepeatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyRepeatView.swift; sourceTree = "<group>"; };
 		83F78A1E2B8E92AD00025062 /* StickyKeysView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyKeysView.swift; sourceTree = "<group>"; };
 		83F78A202B8E935300025062 /* SlowKeysView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlowKeysView.swift; sourceTree = "<group>"; };
+		83F78A222B8E99D200025062 /* SubtitlesCaptioningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitlesCaptioningView.swift; sourceTree = "<group>"; };
+		83F78A252B8E9ABB00025062 /* StyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -470,12 +474,14 @@
 				83D31F6D2B8D1DB20057CFDB /* Display & Text Size */,
 				83D31F742B8D486B0057CFDB /* Speak Selection */,
 				83F78A102B8E7F5900025062 /* Keyboards */,
+				83F78A242B8E9AA500025062 /* Subtitles & Captioning */,
 				833F190A2B8BE05A00067C37 /* DisplayTextSizeView.swift */,
 				83D31F702B8D22DD0057CFDB /* MotionView.swift */,
 				83D31F722B8D458E0057CFDB /* SpeakSelectionView.swift */,
 				83D31F8C2B8E41110057CFDB /* TouchView.swift */,
 				83F78A0E2B8E7D5000025062 /* ControlNearbyDevicesView.swift */,
 				83F78A112B8E7F6D00025062 /* AccessibilityKeyboardsView.swift */,
+				83F78A222B8E99D200025062 /* SubtitlesCaptioningView.swift */,
 			);
 			path = Accessibility;
 			sourceTree = "<group>";
@@ -782,6 +788,14 @@
 			path = "Full Keyboard Access";
 			sourceTree = "<group>";
 		};
+		83F78A242B8E9AA500025062 /* Subtitles & Captioning */ = {
+			isa = PBXGroup;
+			children = (
+				83F78A252B8E9ABB00025062 /* StyleView.swift */,
+			);
+			path = "Subtitles & Captioning";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -897,6 +911,7 @@
 				838A9EC42B7E823300ED261C /* CustomNavigationLink.swift in Sources */,
 				832EF39B2B8192A90066A1BF /* DictationShortcutView.swift in Sources */,
 				83898FCF2B8A9A1F0020C7BB /* MedicalView.swift in Sources */,
+				83F78A262B8E9ABB00025062 /* StyleView.swift in Sources */,
 				83D308672B8AD059002A9B7F /* SafariMicrophoneView.swift in Sources */,
 				83585B772B8848430046A0C3 /* CyclingView.swift in Sources */,
 				83D31F902B8E44E60057CFDB /* AssistiveTouchView.swift in Sources */,
@@ -934,6 +949,7 @@
 				835683972B754EE4000FB136 /* VersionView.swift in Sources */,
 				83D31F8D2B8E41110057CFDB /* TouchView.swift in Sources */,
 				83898FCD2B8A94BE0020C7BB /* HealthDetailsDataView.swift in Sources */,
+				83F78A232B8E99D200025062 /* SubtitlesCaptioningView.swift in Sources */,
 				837B0F602B89B22900B22455 /* SiriVoiceView.swift in Sources */,
 				83DF95742B841F0900AEEB63 /* DownloadedLanguagesView.swift in Sources */,
 				837F1DD62B8AF31F00665EAB /* QuickWebsiteSearchView.swift in Sources */,
