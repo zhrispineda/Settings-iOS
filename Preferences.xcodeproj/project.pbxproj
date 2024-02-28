@@ -95,6 +95,7 @@
 		83B893B92B8FCE5F005705A3 /* HoverTextFontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B893B82B8FCE5F005705A3 /* HoverTextFontView.swift */; };
 		83B893BB2B8FD381005705A3 /* HoverTextSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B893BA2B8FD381005705A3 /* HoverTextSizeView.swift */; };
 		83B893BD2B8FD82D005705A3 /* FaceAttentionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B893BC2B8FD82D005705A3 /* FaceAttentionView.swift */; };
+		83B893C02B8FDBE8005705A3 /* iPhone15_Pro_NaturalTitanium_v0005-D83-D84.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 83B893BF2B8FDBE8005705A3 /* iPhone15_Pro_NaturalTitanium_v0005-D83-D84.usdz */; };
 		83B98E302B7C087B007F6C94 /* IconToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B98E2F2B7C087B007F6C94 /* IconToggle.swift */; };
 		83D3085C2B8AC2FA002A9B7F /* SafariAdvancedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D3085B2B8AC2FA002A9B7F /* SafariAdvancedView.swift */; };
 		83D3085F2B8AC3D3002A9B7F /* FeatureFlagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D3085E2B8AC3D3002A9B7F /* FeatureFlagsView.swift */; };
@@ -243,6 +244,8 @@
 		83B893B82B8FCE5F005705A3 /* HoverTextFontView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoverTextFontView.swift; sourceTree = "<group>"; };
 		83B893BA2B8FD381005705A3 /* HoverTextSizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoverTextSizeView.swift; sourceTree = "<group>"; };
 		83B893BC2B8FD82D005705A3 /* FaceAttentionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceAttentionView.swift; sourceTree = "<group>"; };
+		83B893BF2B8FDBE8005705A3 /* iPhone15_Pro_NaturalTitanium_v0005-D83-D84.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "iPhone15_Pro_NaturalTitanium_v0005-D83-D84.usdz"; sourceTree = "<group>"; };
+		83B893C12B8FDD94005705A3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		83B98E2F2B7C087B007F6C94 /* IconToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconToggle.swift; sourceTree = "<group>"; };
 		83CC61982B7952B800DAF0C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		83D3085B2B8AC2FA002A9B7F /* SafariAdvancedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariAdvancedView.swift; sourceTree = "<group>"; };
@@ -411,7 +414,9 @@
 		833F0ACE2B744D180036EAD2 /* Preferences */ = {
 			isa = PBXGroup;
 			children = (
+				83B893C12B8FDD94005705A3 /* README.md */,
 				83CC61982B7952B800DAF0C1 /* Info.plist */,
+				83B893BE2B8FDBDB005705A3 /* Resources */,
 				838C23272B746D6B0053D4C5 /* Templates */,
 				838C23242B746D200053D4C5 /* Models */,
 				838C23212B7468870053D4C5 /* Views */,
@@ -636,6 +641,14 @@
 				83B893BA2B8FD381005705A3 /* HoverTextSizeView.swift */,
 			);
 			path = "Hover Text";
+			sourceTree = "<group>";
+		};
+		83B893BE2B8FDBDB005705A3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				83B893BF2B8FDBE8005705A3 /* iPhone15_Pro_NaturalTitanium_v0005-D83-D84.usdz */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		83D3085A2B8AC28B002A9B7F /* Safari */ = {
@@ -899,6 +912,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83B893C02B8FDBE8005705A3 /* iPhone15_Pro_NaturalTitanium_v0005-D83-D84.usdz in Resources */,
 				833F0AD72B744D190036EAD2 /* Preview Assets.xcassets in Resources */,
 				833F0AD42B744D190036EAD2 /* Assets.xcassets in Resources */,
 			);

@@ -6,19 +6,33 @@
 //
 
 import SwiftUI
+import SceneKit
 
 struct ActionButtonView: View {
     // Variables
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
-        Color.black
-            .ignoresSafeArea()
-            .navigationBarTitleDisplayMode(.inline)
-            .navigationBarBackButtonHidden()
-            .navigationBarItems(leading: CustomButon {
-                dismiss()
-            })
+        ZStack {
+            ActionButtonRender()
+                .ignoresSafeArea()
+            VStack {
+                Rectangle()
+                    .fill(LinearGradient(gradient: Gradient(colors: [Color.black, Color.black.opacity(0.01)]), startPoint: .top, endPoint: .bottom))
+                    .edgesIgnoringSafeArea(.all)
+                    .frame(maxHeight: 10)
+                Spacer()
+                Rectangle()
+                    .fill(LinearGradient(gradient: Gradient(colors: [Color.black, Color.black.opacity(0.01)]), startPoint: .bottom, endPoint: .top))
+                    .edgesIgnoringSafeArea(.all)
+                    .frame(maxHeight: 10)
+            }
+        }
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationBarBackButtonHidden(true)
+        .navigationBarItems(leading: CustomButon {
+            dismiss()
+        })
     }
 }
 
@@ -38,6 +52,26 @@ struct CustomButon: View {
     }
 }
 
+struct ActionButtonRender: UIViewRepresentable {
+    func makeUIView(context: Context) -> SCNView {
+        let sceneView = SCNView()
+        sceneView.allowsCameraControl = true
+        sceneView.antialiasingMode = .multisampling4X
+        sceneView.autoenablesDefaultLighting = true
+        sceneView.backgroundColor = .black
+        let scene = SCNScene(named: "iPhone15_Pro_NaturalTitanium_v0005-D83-D84.usdz")
+        sceneView.scene = scene
+        
+        return sceneView
+    }
+    
+    func updateUIView(_ uiView: SCNView, context: Context) {
+        // Empty
+    }
+}
+
 #Preview {
-    ActionButtonView()
+    NavigationStack {
+        ActionButtonView()
+    }
 }
