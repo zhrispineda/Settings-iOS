@@ -33,7 +33,11 @@ struct AccessibilityView: View {
                 SettingsLink(color: .blue, icon: "hand.point.up.left.fill", id: "Touch", content: {
                     TouchView()
                 })
-                // TODO: Face ID & Attention
+                if DeviceInfo().hasFaceAuth {
+                    SettingsLink(color: .green, icon: "faceid", id: "Face ID & Attention", content: {
+                        FaceAttentionView()
+                    })
+                }
                 if DeviceInfo().isPhone {
                     SettingsLink(color: .blue, icon: "dot.radiowaves.up.forward", id: "Control Nearby Devices", content: {
                         ControlNearbyDevicesView()

@@ -106,13 +106,7 @@ struct KeyboardView: View {
                     })
                 Toggle("Auto-Punctuation", isOn: $autoPunctuationEnabled)
                 if dictationEnabled {
-                    NavigationLink(destination: DictationShortcutView(), label: {
-                        HStack {
-                            Text("Dictation Shortcut")
-                            Spacer()
-                            Label("Control", systemImage: "control").foregroundStyle(.secondary)
-                        }
-                    })
+                    CustomNavigationLink(title: "Dictation Shortcut", status: "⌃ Control", destination: DictationShortcutView())
                 }
             }, header: {
                 Text("Dictation")

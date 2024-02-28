@@ -48,6 +48,7 @@ class DeviceInfo: ObservableObject {
     var isPro = UIDevice.current.name.contains("Pro")
     var isLargestTablet = UIDevice.current.name.contains("12.9")
     var hasHomeButton = UIDevice.current.name.contains("SE")
+    var hasFaceAuth = !UIDevice.current.name.contains("SE") && !UIDevice.current.name.contains("Air") && !UIDevice.current.name.contains("iPad (")
 }
 
 
