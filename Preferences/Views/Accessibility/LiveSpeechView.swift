@@ -20,7 +20,7 @@ struct LiveSpeechView: View {
             })
             
             Section {
-                NavigationLink("Favorite Phrases", destination: {})
+                NavigationLink("Favorite Phrases", destination: FavoritePhrasesView())
             }
             
             Section(content: {

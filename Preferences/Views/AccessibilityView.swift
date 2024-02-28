@@ -11,14 +11,18 @@ struct AccessibilityView: View {
     var body: some View {
         CustomList(title: "Accessibility") {
             Section(content: {
-                // TODO: Hover Text (iPad)
+                if DeviceInfo().isTablet {
+                    SettingsLink(color: .blue, icon: "character.magnify", larger: false, id: "Hover Text", status: "Off", content: {
+                        HoverTextView()
+                    })
+                }
                 SettingsLink(color: .blue, icon: "textformat.size", larger: false, id: "Display & Text Size", content: {
                     DisplayTextSizeView()
                 })
                 SettingsLink(color: .green, icon: "circle.dotted.and.circle", larger: false, id: "Motion", content: {
                     MotionView()
                 })
-                SettingsLink(color: Color(UIColor.systemGray3), icon: "rectangle.3.group.bubble.fill", larger: false, id: "Spoken Content", content: {
+                SettingsLink(color: .gray, icon: "rectangle.3.group.bubble.fill", larger: false, id: "Spoken Content", content: {
                     SpeakSelectionView()
                 })
             }, header: {
@@ -51,7 +55,7 @@ struct AccessibilityView: View {
             })
             
             Section(content: {
-                SettingsLink(color: Color(UIColor.systemGray3), icon: "keyboard", larger: false, id: "Live Speech", content: {
+                SettingsLink(color: .gray, icon: "keyboard", larger: false, id: "Live Speech", status: "Off", content: {
                     LiveSpeechView()
                 })
             }, header: {

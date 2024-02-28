@@ -91,6 +91,9 @@
 		838C232B2B7492170053D4C5 /* CustomList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838C232A2B7492170053D4C5 /* CustomList.swift */; };
 		838C232E2B7497530053D4C5 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838C232D2B7497530053D4C5 /* AboutView.swift */; };
 		838C23302B74978C0053D4C5 /* HText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838C232F2B74978C0053D4C5 /* HText.swift */; };
+		83B893B62B8FC844005705A3 /* HoverTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B893B52B8FC844005705A3 /* HoverTextView.swift */; };
+		83B893B92B8FCE5F005705A3 /* HoverTextFontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B893B82B8FCE5F005705A3 /* HoverTextFontView.swift */; };
+		83B893BB2B8FD381005705A3 /* HoverTextSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B893BA2B8FD381005705A3 /* HoverTextSizeView.swift */; };
 		83B98E302B7C087B007F6C94 /* IconToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B98E2F2B7C087B007F6C94 /* IconToggle.swift */; };
 		83D3085C2B8AC2FA002A9B7F /* SafariAdvancedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D3085B2B8AC2FA002A9B7F /* SafariAdvancedView.swift */; };
 		83D3085F2B8AC3D3002A9B7F /* FeatureFlagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D3085E2B8AC3D3002A9B7F /* FeatureFlagsView.swift */; };
@@ -235,6 +238,9 @@
 		838C232A2B7492170053D4C5 /* CustomList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomList.swift; sourceTree = "<group>"; };
 		838C232D2B7497530053D4C5 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		838C232F2B74978C0053D4C5 /* HText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HText.swift; sourceTree = "<group>"; };
+		83B893B52B8FC844005705A3 /* HoverTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoverTextView.swift; sourceTree = "<group>"; };
+		83B893B82B8FCE5F005705A3 /* HoverTextFontView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoverTextFontView.swift; sourceTree = "<group>"; };
+		83B893BA2B8FD381005705A3 /* HoverTextSizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoverTextSizeView.swift; sourceTree = "<group>"; };
 		83B98E2F2B7C087B007F6C94 /* IconToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconToggle.swift; sourceTree = "<group>"; };
 		83CC61982B7952B800DAF0C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		83D3085B2B8AC2FA002A9B7F /* SafariAdvancedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariAdvancedView.swift; sourceTree = "<group>"; };
@@ -476,12 +482,14 @@
 		837F1DD72B8AF40C00665EAB /* Accessibility */ = {
 			isa = PBXGroup;
 			children = (
+				83B893B72B8FCB7D005705A3 /* Hover Text */,
 				83D31F8E2B8E44C90057CFDB /* Touch */,
 				83D31F6D2B8D1DB20057CFDB /* Display & Text Size */,
 				83D31F742B8D486B0057CFDB /* Speak Selection */,
 				83F78A102B8E7F5900025062 /* Keyboards */,
 				83F78A242B8E9AA500025062 /* Subtitles & Captioning */,
 				83F78A292B8EA37600025062 /* Live Speech */,
+				83B893B52B8FC844005705A3 /* HoverTextView.swift */,
 				833F190A2B8BE05A00067C37 /* DisplayTextSizeView.swift */,
 				83D31F702B8D22DD0057CFDB /* MotionView.swift */,
 				83D31F722B8D458E0057CFDB /* SpeakSelectionView.swift */,
@@ -616,6 +624,15 @@
 				83F3F6A22B7D1454003CC310 /* VPNDeviceManagementView.swift */,
 			);
 			path = General;
+			sourceTree = "<group>";
+		};
+		83B893B72B8FCB7D005705A3 /* Hover Text */ = {
+			isa = PBXGroup;
+			children = (
+				83B893B82B8FCE5F005705A3 /* HoverTextFontView.swift */,
+				83B893BA2B8FD381005705A3 /* HoverTextSizeView.swift */,
+			);
+			path = "Hover Text";
 			sourceTree = "<group>";
 		};
 		83D3085A2B8AC28B002A9B7F /* Safari */ = {
@@ -892,6 +909,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83B98E302B7C087B007F6C94 /* IconToggle.swift in Sources */,
+				83B893B62B8FC844005705A3 /* HoverTextView.swift in Sources */,
 				838A9EC22B7E81EC00ED261C /* ContentPrivacyRestrictionsView.swift in Sources */,
 				832EF3A72B819B2E0066A1BF /* ModifierKeysView.swift in Sources */,
 				83F78A0F2B8E7D5000025062 /* ControlNearbyDevicesView.swift in Sources */,
@@ -915,6 +933,7 @@
 				8319CE492B86D198007EC822 /* SecurityRecommendationsView.swift in Sources */,
 				832EF38A2B8071C00066A1BF /* RestrictionsLocationServicesView.swift in Sources */,
 				838C23292B748F3B0053D4C5 /* ScreenTimeView.swift in Sources */,
+				83B893B92B8FCE5F005705A3 /* HoverTextFontView.swift in Sources */,
 				83815CE52B768DBA00F53A0F /* PasswordsView.swift in Sources */,
 				83D31F732B8D458E0057CFDB /* SpeakSelectionView.swift in Sources */,
 				83815CF72B768F4800F53A0F /* GameCenterView.swift in Sources */,
@@ -1025,6 +1044,7 @@
 				83585B752B8848110046A0C3 /* TransitView.swift in Sources */,
 				833F0AD02B744D180036EAD2 /* PreferencesApp.swift in Sources */,
 				83D31F882B8E3DA90057CFDB /* SpeakSelectionVoiceDetailView.swift in Sources */,
+				83B893BB2B8FD381005705A3 /* HoverTextSizeView.swift in Sources */,
 				837F1DCF2B8AF13600665EAB /* FavoritesView.swift in Sources */,
 				832EF3A42B8199FA0066A1BF /* HardwareKeyboardView.swift in Sources */,
 				837B0F622B89B49B00B22455 /* SiriResponsesView.swift in Sources */,

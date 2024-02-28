@@ -17,11 +17,13 @@ struct LargerTextView: View {
                 Section {
                     Toggle("Larger Accessibility Sizes", isOn: $largerAccessibilitySizes)
                 }
-                Text("Apps that support Dynamic Type will adjust to your preferred reading size above.")
-                    .multilineTextAlignment(.center)
-                    .offset(y: -10)
-                    .listRowBackground(Color.clear)
-                    .frame(maxWidth: .infinity)
+                if DeviceInfo().isPhone {
+                    Text("Apps that support Dynamic Type will adjust to your preferred reading size below.")
+                        .multilineTextAlignment(.center)
+                        .offset(y: -10)
+                        .listRowBackground(Color.clear)
+                        .frame(maxWidth: .infinity)
+                }
             }
             TextSizeView(largerAccessibilitySizes: $largerAccessibilitySizes)
         }
@@ -37,9 +39,15 @@ struct TextSizeView: View {
         VStack {
             Spacer()
             ZStack {
-                Rectangle()
-                    .frame(height: 90)
-                    .foregroundStyle(Color(UIColor.tertiarySystemBackground))
+                if DeviceInfo().isPhone {
+                    Rectangle()
+                        .frame(height: 90)
+                        .foregroundStyle(Color(UIColor.systemFill))
+                } else {
+                    RoundedRectangle(cornerRadius: 15.0)
+                        .frame(height: 90)
+                        .foregroundStyle(Color(UIColor.systemFill))
+                }
                 Slider(value: $textSize,
                        in: 0.0...(largerAccessibilitySizes ? 11.0 : 6.0),
                        step: 1.0,
@@ -51,7 +59,15 @@ struct TextSizeView: View {
                 .imageScale(.large)
                 .padding()
             }
-            .padding(.bottom)
+            .padding(DeviceInfo().isPhone ? .bottom : .all)
+            if DeviceInfo().isTablet {
+                Text("Apps that support Dynamic Type will adjust to your preferred reading size above.")
+                    .multilineTextAlignment(.center)
+                    .offset(y: -10)
+                    .listRowBackground(Color.clear)
+                    .frame(maxWidth: .infinity)
+                Spacer()
+            }
         }
     }
 }
