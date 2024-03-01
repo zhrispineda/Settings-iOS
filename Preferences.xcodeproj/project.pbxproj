@@ -45,6 +45,9 @@
 		83585B752B8848110046A0C3 /* TransitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83585B742B8848110046A0C3 /* TransitView.swift */; };
 		83585B772B8848430046A0C3 /* CyclingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83585B762B8848430046A0C3 /* CyclingView.swift */; };
 		8373E7322B910AF8004285EA /* AppWebsiteActivitySheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8373E7312B910AF8004285EA /* AppWebsiteActivitySheetView.swift */; };
+		8373E7342B9162BD004285EA /* ScreenDistanceSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8373E7332B9162BD004285EA /* ScreenDistanceSheetView.swift */; };
+		8373E7362B91660F004285EA /* SensitivePhotosVideosProtectionSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8373E7352B91660F004285EA /* SensitivePhotosVideosProtectionSheetView.swift */; };
+		8373E7382B9168C9004285EA /* CommunicationSafetyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8373E7372B9168C9004285EA /* CommunicationSafetyView.swift */; };
 		837B0F5B2B8989E000B22455 /* SiriLanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837B0F5A2B8989E000B22455 /* SiriLanguageView.swift */; };
 		837B0F5E2B89986B00B22455 /* EnglishIndiaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837B0F5D2B89986B00B22455 /* EnglishIndiaView.swift */; };
 		837B0F602B89B22900B22455 /* SiriVoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837B0F5F2B89B22900B22455 /* SiriVoiceView.swift */; };
@@ -195,6 +198,9 @@
 		83585B742B8848110046A0C3 /* TransitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitView.swift; sourceTree = "<group>"; };
 		83585B762B8848430046A0C3 /* CyclingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyclingView.swift; sourceTree = "<group>"; };
 		8373E7312B910AF8004285EA /* AppWebsiteActivitySheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWebsiteActivitySheetView.swift; sourceTree = "<group>"; };
+		8373E7332B9162BD004285EA /* ScreenDistanceSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenDistanceSheetView.swift; sourceTree = "<group>"; };
+		8373E7352B91660F004285EA /* SensitivePhotosVideosProtectionSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensitivePhotosVideosProtectionSheetView.swift; sourceTree = "<group>"; };
+		8373E7372B9168C9004285EA /* CommunicationSafetyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicationSafetyView.swift; sourceTree = "<group>"; };
 		837B0F5A2B8989E000B22455 /* SiriLanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriLanguageView.swift; sourceTree = "<group>"; };
 		837B0F5D2B89986B00B22455 /* EnglishIndiaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglishIndiaView.swift; sourceTree = "<group>"; };
 		837B0F5F2B89B22900B22455 /* SiriVoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriVoiceView.swift; sourceTree = "<group>"; };
@@ -462,6 +468,8 @@
 			isa = PBXGroup;
 			children = (
 				8373E7312B910AF8004285EA /* AppWebsiteActivitySheetView.swift */,
+				8373E7332B9162BD004285EA /* ScreenDistanceSheetView.swift */,
+				8373E7352B91660F004285EA /* SensitivePhotosVideosProtectionSheetView.swift */,
 			);
 			path = Sheets;
 			sourceTree = "<group>";
@@ -564,6 +572,7 @@
 				8373E7302B910ADD004285EA /* Sheets */,
 				837C03052B7F1917004D6C71 /* Content & Privacy Restrictions */,
 				838A9EC12B7E81EC00ED261C /* ContentPrivacyRestrictionsView.swift */,
+				8373E7372B9168C9004285EA /* CommunicationSafetyView.swift */,
 			);
 			path = "Screen Time";
 			sourceTree = "<group>";
@@ -1007,6 +1016,7 @@
 				83DF95762B84266E00AEEB63 /* SiriSearchDetailView.swift in Sources */,
 				837F1DD42B8AF2B400665EAB /* CreditCardsView.swift in Sources */,
 				83815CF92B768F5C00F53A0F /* DeveloperView.swift in Sources */,
+				8373E7342B9162BD004285EA /* ScreenDistanceSheetView.swift in Sources */,
 				83D308612B8ACC8C002A9B7F /* AdvancedTrackingFingerprintingProtectionView.swift in Sources */,
 				838273A52B7FD4CF000F4228 /* AppsView.swift in Sources */,
 				8382739E2B7F25D4000F4228 /* ContentRestrictionsView.swift in Sources */,
@@ -1018,6 +1028,7 @@
 				83F626DA2B828E8C00ED343F /* TVAppView.swift in Sources */,
 				83898FCA2B8A8F210020C7BB /* HealthDetailsView.swift in Sources */,
 				832EF3952B8182550066A1BF /* ContentPrivacyRestrictionsDetailView.swift in Sources */,
+				8373E7362B91660F004285EA /* SensitivePhotosVideosProtectionSheetView.swift in Sources */,
 				83D31F972B8E645D0057CFDB /* HotCornersView.swift in Sources */,
 				835683922B753FDD000FB136 /* SettingsLink.swift in Sources */,
 				835683972B754EE4000FB136 /* VersionView.swift in Sources */,
@@ -1039,6 +1050,7 @@
 				83815CF12B768F0500F53A0F /* HealthView.swift in Sources */,
 				83F626D62B82884300ED343F /* AirPlaySuggestionsView.swift in Sources */,
 				83815CE72B768DF100F53A0F /* SafariView.swift in Sources */,
+				8373E7382B9168C9004285EA /* CommunicationSafetyView.swift in Sources */,
 				8319CE4F2B86DB44007EC822 /* SensitiveContentWarningView.swift in Sources */,
 				83D31F9A2B8E6B360057CFDB /* HotCornersDetailView.swift in Sources */,
 				8329284B2B8578F4006611CF /* AppPermissionsView.swift in Sources */,

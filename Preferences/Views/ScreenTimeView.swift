@@ -10,6 +10,8 @@ import SwiftUI
 struct ScreenTimeView: View {
     // Variables
     @State private var showingAppWebsiteActivitySheet = false
+    @State private var showingScreenDistanceSheet = false
+    @State private var showingCommunicationSafetySheet = false
     
     var body: some View {
         CustomList(title: "Screen Time") {
@@ -42,21 +44,32 @@ struct ScreenTimeView: View {
                     SettingsLink(color: Color.cyan, icon: "chart.bar.xaxis", larger: false, id: "App & Website Activity", subtitle: "Reports, Downtime & App Limits", content: {})
                         .foregroundStyle(Color["Label"])
                 })
-                .popover(isPresented: $showingAppWebsiteActivitySheet, content: {
+                .sheet(isPresented: $showingAppWebsiteActivitySheet, content: {
                     AppWebsiteActivitySheetView()
                 })
                 Button(action: {
-                    // TODO: Popup
+                    showingScreenDistanceSheet.toggle()
                 }, label: {
                     SettingsLink(color: Color.white, iconColor: Color.blue, icon: "screen-distance.symbol_Normal", id: "Screen Distance", subtitle: "Reduce eye strain", content: {})
                         .foregroundStyle(Color["Label"])
+                })
+                .sheet(isPresented: $showingScreenDistanceSheet, content: {
+                    ScreenDistanceSheetView()
                 })
             }, header: {
                 Text("Limit Usage")
             })
             
             Section(content: {
-                SettingsLink(color: Color.blue, icon: "bubble.left.and.exclamationmark.bubble.right.fill", larger: false, id: "Communication Safety", subtitle: "Protect from sensitive content", content: {})
+                SettingsLink(color: Color.blue, icon: "bubble.left.and.exclamationmark.bubble.right.fill", larger: false, id: "Communication Safety", subtitle: "Protect from sensitive content", content: {
+                    CommunicationSafetyView()
+                        .onAppear(perform: {
+                            showingCommunicationSafetySheet.toggle()
+                        })
+                })
+                .sheet(isPresented: $showingCommunicationSafetySheet, content: {
+                    SensitivePhotosVideosProtectionSheetView()
+                })
             }, header: {
                 Text("Communication")
             })

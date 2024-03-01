@@ -94,7 +94,7 @@ struct AppWebsiteActivitySheetView: View {
                     dismiss()
                 })
             }
-            .padding(.horizontal)
+            .padding([.horizontal, .bottom])
         }
     }
 }
