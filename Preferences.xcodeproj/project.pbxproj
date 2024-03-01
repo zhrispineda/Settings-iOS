@@ -44,6 +44,7 @@
 		83585B732B8847A70046A0C3 /* WalkingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83585B722B8847A70046A0C3 /* WalkingView.swift */; };
 		83585B752B8848110046A0C3 /* TransitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83585B742B8848110046A0C3 /* TransitView.swift */; };
 		83585B772B8848430046A0C3 /* CyclingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83585B762B8848430046A0C3 /* CyclingView.swift */; };
+		8373E7322B910AF8004285EA /* AppWebsiteActivitySheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8373E7312B910AF8004285EA /* AppWebsiteActivitySheetView.swift */; };
 		837B0F5B2B8989E000B22455 /* SiriLanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837B0F5A2B8989E000B22455 /* SiriLanguageView.swift */; };
 		837B0F5E2B89986B00B22455 /* EnglishIndiaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837B0F5D2B89986B00B22455 /* EnglishIndiaView.swift */; };
 		837B0F602B89B22900B22455 /* SiriVoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837B0F5F2B89B22900B22455 /* SiriVoiceView.swift */; };
@@ -193,6 +194,7 @@
 		83585B722B8847A70046A0C3 /* WalkingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkingView.swift; sourceTree = "<group>"; };
 		83585B742B8848110046A0C3 /* TransitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitView.swift; sourceTree = "<group>"; };
 		83585B762B8848430046A0C3 /* CyclingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyclingView.swift; sourceTree = "<group>"; };
+		8373E7312B910AF8004285EA /* AppWebsiteActivitySheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWebsiteActivitySheetView.swift; sourceTree = "<group>"; };
 		837B0F5A2B8989E000B22455 /* SiriLanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriLanguageView.swift; sourceTree = "<group>"; };
 		837B0F5D2B89986B00B22455 /* EnglishIndiaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglishIndiaView.swift; sourceTree = "<group>"; };
 		837B0F5F2B89B22900B22455 /* SiriVoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriVoiceView.swift; sourceTree = "<group>"; };
@@ -456,6 +458,14 @@
 			path = Maps;
 			sourceTree = "<group>";
 		};
+		8373E7302B910ADD004285EA /* Sheets */ = {
+			isa = PBXGroup;
+			children = (
+				8373E7312B910AF8004285EA /* AppWebsiteActivitySheetView.swift */,
+			);
+			path = Sheets;
+			sourceTree = "<group>";
+		};
 		837B0F5C2B89985C00B22455 /* Language */ = {
 			isa = PBXGroup;
 			children = (
@@ -551,6 +561,7 @@
 		838A9EC02B7E81D900ED261C /* Screen Time */ = {
 			isa = PBXGroup;
 			children = (
+				8373E7302B910ADD004285EA /* Sheets */,
 				837C03052B7F1917004D6C71 /* Content & Privacy Restrictions */,
 				838A9EC12B7E81EC00ED261C /* ContentPrivacyRestrictionsView.swift */,
 			);
@@ -931,6 +942,7 @@
 				832EF3A72B819B2E0066A1BF /* ModifierKeysView.swift in Sources */,
 				83F78A0F2B8E7D5000025062 /* ControlNearbyDevicesView.swift in Sources */,
 				838C23262B746D290053D4C5 /* SettingsModel.swift in Sources */,
+				8373E7322B910AF8004285EA /* AppWebsiteActivitySheetView.swift in Sources */,
 				832EF39D2B8193B50066A1BF /* OneHandedKeyboardView.swift in Sources */,
 				83F78A142B8E87BF00025062 /* FullKeyboardAccessView.swift in Sources */,
 				832EF3AB2B819C2A0066A1BF /* KeyboardsView.swift in Sources */,

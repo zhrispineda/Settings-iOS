@@ -149,7 +149,9 @@ struct ContentView: View {
                         // MARK: - iOS Settings
                         List {
                             Section {
-                                Button(action: {}, label: {
+                                Button(action: {
+                                    // TODO: Apple ID
+                                }, label: {
                                     HStack {
                                         Image(systemName: "person.crop.circle.fill")
                                             .resizable()

@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ScreenTimeView: View {
+    // Variables
+    @State private var showingAppWebsiteActivitySheet = false
+    
     var body: some View {
         CustomList(title: "Screen Time") {
             Section {
@@ -34,10 +37,13 @@ struct ScreenTimeView: View {
             
             Section(content: {
                 Button(action: {
-                    // TODO: Popup
+                    showingAppWebsiteActivitySheet.toggle()
                 }, label: {
                     SettingsLink(color: Color.cyan, icon: "chart.bar.xaxis", larger: false, id: "App & Website Activity", subtitle: "Reports, Downtime & App Limits", content: {})
                         .foregroundStyle(Color["Label"])
+                })
+                .popover(isPresented: $showingAppWebsiteActivitySheet, content: {
+                    AppWebsiteActivitySheetView()
                 })
                 Button(action: {
                     // TODO: Popup
