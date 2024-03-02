@@ -45,9 +45,10 @@ struct AppWebsiteActivitySheetView: View {
                 
                 VStack(alignment: .leading) {
                     HStack {
-                        Image(systemName: "clock")
-                            .font(.largeTitle)
-                            .foregroundStyle(.blue)
+                        Image("downtime20x20")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 40)
                             .frame(minWidth: 50)
                         VStack(alignment: .leading) {
                             Text("**Downtime**")
