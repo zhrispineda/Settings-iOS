@@ -48,7 +48,7 @@ struct PrivacySecurityView: View {
                     AppPermissionsView(permissionName: "Health")
                 })
                 if DeviceInfo().isPhone {
-                    SettingsLink(color: .blue, icon: "Sensor and Usage Data - 80_Normal", id: "Research Sensor & Usage Data", content: {
+                    SettingsLink(icon: "sensorKit60x60", id: "Research Sensor & Usage Data", content: {
                         AppPermissionsView(permissionName: "Research & Usage Data")
                     })
                 }

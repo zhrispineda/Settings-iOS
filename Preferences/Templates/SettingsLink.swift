@@ -50,9 +50,9 @@ struct SettingsLink<Content: View>: View {
                 ZStack {
                     color
                         .frame(width: 30, height: 30)
-                        .clipShape(RoundedRectangle(cornerRadius: 6))
+                        .clipShape(RoundedRectangle(cornerRadius: 7))
                         .overlay(
-                            RoundedRectangle(cornerRadius: 5)
+                            RoundedRectangle(cornerRadius: 6)
                                 .stroke(Color.gray.opacity(0.5), lineWidth: 0.5))
                     if UIImage(systemName: icon) != nil {
                         switch icon {
@@ -77,11 +77,6 @@ struct SettingsLink<Content: View>: View {
                                 .resizable()
                                 .scaledToFit()
                                 .frame(height: 20)
-                        case "Sensor and Usage Data - 80_Normal":
-                            Image(icon)
-                                .resizable()
-                                .scaledToFit()
-                                .frame(height: 20)
                         case "logo.bluetooth":
                             Image(icon)
                                 .resizable()
@@ -93,6 +88,7 @@ struct SettingsLink<Content: View>: View {
                             .resizable()
                             .clipShape(RoundedRectangle(cornerRadius: 5.0))
                             .frame(width: 30, height: 30)
+                            .clipShape(RoundedRectangle(cornerRadius: 6))
                         }
                     }
                 }
@@ -124,7 +120,10 @@ struct SettingsLink<Content: View>: View {
 #Preview {
     NavigationStack {
         List {
-            SettingsLink(color: .blue, icon: "applesafari", id: "Safari", content: {
+            SettingsLink(icon: "applesafari", id: "Safari", content: {
+                EmptyView()
+            })
+            SettingsLink(icon: "sensorKit60x60", id: "Safari", content: {
                 EmptyView()
             })
             SettingsLink(color: .blue, icon: "applesiri", id: "Siri", content: {

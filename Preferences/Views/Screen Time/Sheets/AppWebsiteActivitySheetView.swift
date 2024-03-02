@@ -15,9 +15,10 @@ struct AppWebsiteActivitySheetView: View {
         ZStack {
             VStack {
                 VStack(spacing: 15) {
-                    Image(systemName: "person.fill")
-                        .font(.system(size: 72))
-                        .foregroundStyle(.blue)
+                    Image("person.badge.hourglass.fill")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(height: 70)
                     Text("App & Website\nActivity")
                         .font(.largeTitle)
                         .bold()
@@ -28,7 +29,7 @@ struct AppWebsiteActivitySheetView: View {
                 VStack(alignment: .leading) {
                     HStack {
                         Image(systemName: "chart.line.uptrend.xyaxis")
-                            .font(.largeTitle)
+                            .font(.title)
                             .foregroundStyle(.blue)
                             .frame(minWidth: 50)
                         VStack(alignment: .leading) {
@@ -48,7 +49,7 @@ struct AppWebsiteActivitySheetView: View {
                         Image("downtime20x20")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 40)
+                            .frame(width: 34)
                             .frame(minWidth: 50)
                         VStack(alignment: .leading) {
                             Text("**Downtime**")
@@ -80,6 +81,7 @@ struct AppWebsiteActivitySheetView: View {
                     .padding(.horizontal)
                 }
             }
+            .padding(.horizontal, 5)
             .padding(.top, -100)
             VStack(spacing: 20) {
                 Spacer()
