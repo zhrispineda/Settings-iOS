@@ -10,6 +10,7 @@ import SwiftUI
 struct AppWebsiteActivitySheetView: View {
     // Variables
     @Environment(\.dismiss) private var dismiss
+    @Binding var appWebsiteActivityEnabled: Bool
     
     var body: some View {
         ZStack {
@@ -86,6 +87,7 @@ struct AppWebsiteActivitySheetView: View {
             VStack(spacing: 20) {
                 Spacer()
                 Button("**Turn On App & Website Activity**", action: {
+                    appWebsiteActivityEnabled.toggle()
                     dismiss()
                 })
                 .frame(maxWidth: .infinity)
@@ -103,5 +105,5 @@ struct AppWebsiteActivitySheetView: View {
 }
 
 #Preview {
-    AppWebsiteActivitySheetView()
+    AppWebsiteActivitySheetView(appWebsiteActivityEnabled: .constant(false))
 }
