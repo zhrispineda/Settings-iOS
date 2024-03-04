@@ -10,6 +10,7 @@ import SwiftUI
 struct ScreenTimeView: View {
     // Variables
     @State private var appWebsiteActivityEnabled = false
+    @State private var showingDisableScreenTimeDialog = false
     @State private var showingAppWebsiteActivitySheet = false
     @State private var showingScreenDistanceSheet = false
     @State private var showingCommunicationSafetySheet = false
@@ -62,9 +63,15 @@ struct ScreenTimeView: View {
             
             Section(content: { // TODO: Optimize sheets for iPad
                 if appWebsiteActivityEnabled {
-                    SettingsLink(icon: "Downtime80x80", id: "Downtime", subtitle: "Schedule time away from the screen", content: {})
-                    SettingsLink(icon: "App Limits80x80", id: "App Limits", subtitle: "Set time limits for apps", content: {})
-                    SettingsLink(icon: "AlwaysAllow29x29", id: "Always Allowed", subtitle: "Choose apps to allow at all times", content: {})
+                    SettingsLink(icon: "Downtime80x80", id: "Downtime", subtitle: "Schedule time away from the screen", content: {
+                        DowntimeView()
+                    })
+                    SettingsLink(icon: "App Limits80x80", id: "App Limits", subtitle: "Set time limits for apps", content: {
+                        AppLimitsView()
+                    })
+                    SettingsLink(icon: "AlwaysAllow29x29", id: "Always Allowed", subtitle: "Choose apps to allow at all times", content: {
+                        AlwaysAllowedView()
+                    })
                 } else {
                     Button(action: {
                         showingAppWebsiteActivitySheet.toggle()
@@ -74,6 +81,7 @@ struct ScreenTimeView: View {
                     })
                     .sheet(isPresented: $showingAppWebsiteActivitySheet, content: {
                         AppWebsiteActivitySheetView(appWebsiteActivityEnabled: $appWebsiteActivityEnabled)
+                            .frame(width: 400, height: 730)
                     })
                 }
                 SettingsLink(color: Color.white, iconColor: Color.blue, icon: "screen-distance.symbol_Normal", id: "Screen Distance", subtitle: "Reduce eye strain", content: {
@@ -84,6 +92,7 @@ struct ScreenTimeView: View {
                 })
                 .sheet(isPresented: $showingScreenDistanceSheet, content: {
                     ScreenDistanceSheetView()
+                        .frame(width: 400, height: 730)
                 })
             }, header: {
                 Text("Limit Usage")
@@ -98,6 +107,7 @@ struct ScreenTimeView: View {
                 })
                 .sheet(isPresented: $showingCommunicationSafetySheet, content: {
                     SensitivePhotosVideosProtectionSheetView()
+                        .frame(width: 400, height: 730)
                 })
             }, header: {
                 Text("Communication")
@@ -120,6 +130,24 @@ struct ScreenTimeView: View {
             }, footer: {
                 Text("Sign in to iCloud to report your screen time on any iPad or iPhone, or set up Family Sharing to use Screen Time with your family‘s devices.")
             })
+            
+            if appWebsiteActivityEnabled {
+                Section(content: {
+                    Button("Turn Off App & Website Activity", action: {
+                        showingDisableScreenTimeDialog.toggle()
+                    })
+                    .foregroundStyle(.red)
+                    .confirmationDialog("Screen time will no longer be reported, and all limits and downtime settings will be turned off.", isPresented: $showingDisableScreenTimeDialog, titleVisibility: .visible, actions: {
+                        Button("Turn Off App & Website Activity", role: .destructive) {
+                            withAnimation {
+                                appWebsiteActivityEnabled.toggle()
+                            }
+                        }
+                    })
+                }, footer: {
+                    Text("Turning off App & Website Activity disables real-time reporting, Downtime, App Limits, and Always Allowed.")
+                })
+            }
         }
     }
 }

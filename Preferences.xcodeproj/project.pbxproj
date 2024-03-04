@@ -97,6 +97,9 @@
 		838C23302B74978C0053D4C5 /* HText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838C232F2B74978C0053D4C5 /* HText.swift */; };
 		83B619C92B93DEBD00EFEA90 /* ScreenDistanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B619C82B93DEBD00EFEA90 /* ScreenDistanceView.swift */; };
 		83B619CB2B93EE2400EFEA90 /* AppWebsiteActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B619CA2B93EE2400EFEA90 /* AppWebsiteActivityView.swift */; };
+		83B619CD2B93F91500EFEA90 /* DowntimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B619CC2B93F91500EFEA90 /* DowntimeView.swift */; };
+		83B619CF2B941B9C00EFEA90 /* AppLimitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B619CE2B941B9C00EFEA90 /* AppLimitsView.swift */; };
+		83B619D12B941C4F00EFEA90 /* AlwaysAllowedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B619D02B941C4F00EFEA90 /* AlwaysAllowedView.swift */; };
 		83B893B62B8FC844005705A3 /* HoverTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B893B52B8FC844005705A3 /* HoverTextView.swift */; };
 		83B893B92B8FCE5F005705A3 /* HoverTextFontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B893B82B8FCE5F005705A3 /* HoverTextFontView.swift */; };
 		83B893BB2B8FD381005705A3 /* HoverTextSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B893BA2B8FD381005705A3 /* HoverTextSizeView.swift */; };
@@ -252,6 +255,9 @@
 		838C232F2B74978C0053D4C5 /* HText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HText.swift; sourceTree = "<group>"; };
 		83B619C82B93DEBD00EFEA90 /* ScreenDistanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenDistanceView.swift; sourceTree = "<group>"; };
 		83B619CA2B93EE2400EFEA90 /* AppWebsiteActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWebsiteActivityView.swift; sourceTree = "<group>"; };
+		83B619CC2B93F91500EFEA90 /* DowntimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DowntimeView.swift; sourceTree = "<group>"; };
+		83B619CE2B941B9C00EFEA90 /* AppLimitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLimitsView.swift; sourceTree = "<group>"; };
+		83B619D02B941C4F00EFEA90 /* AlwaysAllowedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlwaysAllowedView.swift; sourceTree = "<group>"; };
 		83B893B52B8FC844005705A3 /* HoverTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoverTextView.swift; sourceTree = "<group>"; };
 		83B893B82B8FCE5F005705A3 /* HoverTextFontView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoverTextFontView.swift; sourceTree = "<group>"; };
 		83B893BA2B8FD381005705A3 /* HoverTextSizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoverTextSizeView.swift; sourceTree = "<group>"; };
@@ -576,9 +582,12 @@
 				8373E7302B910ADD004285EA /* Sheets */,
 				837C03052B7F1917004D6C71 /* Content & Privacy Restrictions */,
 				83B619CA2B93EE2400EFEA90 /* AppWebsiteActivityView.swift */,
+				83B619CC2B93F91500EFEA90 /* DowntimeView.swift */,
+				83B619CE2B941B9C00EFEA90 /* AppLimitsView.swift */,
 				83B619C82B93DEBD00EFEA90 /* ScreenDistanceView.swift */,
 				8373E7372B9168C9004285EA /* CommunicationSafetyView.swift */,
 				838A9EC12B7E81EC00ED261C /* ContentPrivacyRestrictionsView.swift */,
+				83B619D02B941C4F00EFEA90 /* AlwaysAllowedView.swift */,
 			);
 			path = "Screen Time";
 			sourceTree = "<group>";
@@ -991,6 +1000,7 @@
 				8382739C2B7F21E4000F4228 /* AllowedAppsView.swift in Sources */,
 				832928492B85779D006611CF /* TrackingView.swift in Sources */,
 				83B619CB2B93EE2400EFEA90 /* AppWebsiteActivityView.swift in Sources */,
+				83B619CD2B93F91500EFEA90 /* DowntimeView.swift in Sources */,
 				83815CF32B768F1E00F53A0F /* SiriSearchView.swift in Sources */,
 				83F3F6A92B7D2EFE003CC310 /* LanguageRegionView.swift in Sources */,
 				837B0F642B89B5E700B22455 /* SiriDictationHistoryView.swift in Sources */,
@@ -1010,6 +1020,7 @@
 				83D31F7C2B8D67460057CFDB /* PronunciationLanguagesView.swift in Sources */,
 				83F3F6A52B7D16F6003CC310 /* GameControllerView.swift in Sources */,
 				83898FD12B8A9F680020C7BB /* DataAccessDevicesView.swift in Sources */,
+				83B619D12B941C4F00EFEA90 /* AlwaysAllowedView.swift in Sources */,
 				83D31F762B8D48870057CFDB /* PronunciationsView.swift in Sources */,
 				832EF3A92B819BB90066A1BF /* HardwareKeyboardLanguageView.swift in Sources */,
 				83B619C92B93DEBD00EFEA90 /* ScreenDistanceView.swift in Sources */,
@@ -1080,6 +1091,7 @@
 				83F78A212B8E935300025062 /* SlowKeysView.swift in Sources */,
 				83D31F932B8E643E0057CFDB /* FallbackActionView.swift in Sources */,
 				837F1DD12B8AF1C500665EAB /* AutoFillView.swift in Sources */,
+				83B619CF2B941B9C00EFEA90 /* AppLimitsView.swift in Sources */,
 				83DF95792B84391F00AEEB63 /* SiriAppClipsView.swift in Sources */,
 				83815CEB2B768E4A00F53A0F /* TranslateView.swift in Sources */,
 				83D3086B2B8AD1F3002A9B7F /* SafariReaderView.swift in Sources */,

@@ -87,7 +87,9 @@ struct AppWebsiteActivitySheetView: View {
             VStack(spacing: 20) {
                 Spacer()
                 Button("**Turn On App & Website Activity**", action: {
-                    appWebsiteActivityEnabled.toggle()
+                    withAnimation {
+                        appWebsiteActivityEnabled.toggle()
+                    }
                     dismiss()
                 })
                 .frame(maxWidth: .infinity)
