@@ -11,6 +11,7 @@ struct ContentView: View {
     // Variables
     @EnvironmentObject var deviceInfo: DeviceInfo
     @State private var searchText = String()
+    @State private var showingSignInSheet = false
     @State private var selection: SettingsModel? = .general
     @State private var destination = AnyView(GeneralView())
     @State private var isOnLandscapeOrientation: Bool = UIDevice.current.orientation.isLandscape
@@ -150,7 +151,7 @@ struct ContentView: View {
                         List {
                             Section {
                                 Button(action: {
-                                    // TODO: Apple ID
+                                    showingSignInSheet.toggle()
                                 }, label: {
                                     HStack {
                                         Image(systemName: "person.crop.circle.fill")
@@ -171,6 +172,12 @@ struct ContentView: View {
                                         .padding(.leading, 5)
                                     }
                                     .padding(.vertical, -5)
+                                })
+                                .sheet(isPresented: $showingSignInSheet, content: {
+                                    NavigationStack {
+                                        SelectSignInOptionView()
+                                            .interactiveDismissDisabled()
+                                    }
                                 })
                             }
                             
