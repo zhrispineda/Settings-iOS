@@ -10,6 +10,7 @@ import SwiftUI
 struct SelectSignInOptionView: View {
     // Variables
     @Environment(\.dismiss) private var dismiss
+    @State private var showingAlert = false
     
     var body: some View {
         ZStack {
@@ -25,19 +26,53 @@ struct SelectSignInOptionView: View {
                 }
                 .multilineTextAlignment(.center)
                 .listRowBackground(Color.clear)
+                .padding(.horizontal, 5)
                 
                 Section {
                     VStack {
-                        Button(action: {}, label: {
-                            Text("Use Another Apple Device")
+                        Button(action: {
+                            
+                        }, label: {
+                            HStack {
+                                Image(systemName: "iphone.gen3")
+                                    .foregroundStyle(.blue)
+                                    .font(.system(size: 42))
+                                    .padding(.horizontal, 5)
+                                VStack(alignment: .leading) {
+                                    Text("**Use Another Apple Device**")
+                                    Text("Bring another Apple device nearby to sign in quickly and easily. Available for iOS 17 and later.")
+                                        .font(.subheadline)
+                                        .foregroundStyle(.secondary)
+                                }
+                                .padding(.vertical, 5)
+                                Spacer()
+                                Image(systemName: "chevron.right")
+                                    .imageScale(.small)
+                                    .foregroundStyle(.tertiary)
+                            }
+                            .foregroundStyle(Color["Label"])
                         })
                     }
                 }
                 
                 Section {
                     VStack {
-                        Button(action: {}, label: {
-                            Text("Sign in Manually")
+                        NavigationLink(destination: {
+                            AppleAccountLoginView()
+                        }, label: {
+                            HStack {
+                                Image(systemName: "ellipsis.rectangle")
+                                    .foregroundStyle(.blue)
+                                    .font(.system(size: 40))
+                                    .padding(.horizontal, 5)
+                                VStack(alignment: .leading) {
+                                    Text("**Sign in Manually**")
+                                    Text("Enter an email address or phone number and password then verify your identity.")
+                                        .font(.subheadline)
+                                        .foregroundStyle(.secondary)
+                                }
+                                .padding(.vertical, 5)
+                            }
                         })
                     }
                 }
@@ -48,8 +83,16 @@ struct SelectSignInOptionView: View {
                     Color(UIColor.secondarySystemGroupedBackground)
                         .frame(maxWidth: .infinity)
                         .frame(height: 100)
-                    Button(action: {}, label: {
+                    Button(action: {
+                        showingAlert.toggle()
+                    }, label: {
                         Text("**Don‘t have an Apple ID?**")
+                    })
+                    .alert("Could Not Create Apple ID", isPresented: $showingAlert, actions: {
+                        Link("Learn More", destination: URL(string: "https://support.apple.com/en-us/101661")!)
+                        Button("OK", action: {})
+                    }, message: {
+                        Text("The iPhoneSimulator has been used to create too many new Apple IDs. Contact Apple Support to request another Apple ID to use with this iPhoneSimulator.")
                     })
                 }
             }
@@ -59,8 +102,8 @@ struct SelectSignInOptionView: View {
                 Button(action: {
                     dismiss()
                 }, label: {
-                    Image(systemName: "x.circle.fill")
-                        .imageScale(.large)
+                    Image(systemName: "xmark.circle.fill")
+                        .font(.system(size: 24))
                         .foregroundStyle(.gray, Color(UIColor.systemFill))
                 })
             })
