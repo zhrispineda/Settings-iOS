@@ -30,7 +30,7 @@ struct ContentView: View {
                     if deviceInfo.isTablet {
                         List(selection: $selection) {
                             Button(action: {
-                                // TODO: Apple ID Sheet
+                                showingSignInSheet.toggle()
                             }, label: {
                                 HStack {
                                     Image(systemName: "person.crop.circle.fill")
@@ -52,6 +52,12 @@ struct ContentView: View {
                                     .padding(.leading, 5)
                                 }
                                 .padding(.vertical, -5)
+                            })
+                            .sheet(isPresented: $showingSignInSheet, content: {
+                                NavigationStack {
+                                    SelectSignInOptionView()
+                                        .interactiveDismissDisabled()
+                                }
                             })
                             
                             // MARK: Attention Settings

@@ -12,6 +12,9 @@ struct GeneralView: View {
         CustomList(title: "General") {
             Section {
                 NavigationLink("About", destination: AboutView())
+                if !Configuration().isSimulator {
+                    NavigationLink("Software Update", destination: {})
+                }
             }
             
             Section {

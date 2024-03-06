@@ -83,6 +83,7 @@ struct SelectSignInOptionView: View {
                     Color(UIColor.secondarySystemGroupedBackground)
                         .frame(maxWidth: .infinity)
                         .frame(height: 100)
+                        .opacity(DeviceInfo().isPhone ? 1 : 0)
                     Button(action: {
                         showingAlert.toggle()
                     }, label: {

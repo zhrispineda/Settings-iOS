@@ -7,6 +7,11 @@
 
 import SwiftUI
 
+// MARK: Global variables
+struct Configuration {
+    let isSimulator = true
+}
+
 // MARK: Color extension
 extension Color {
     static subscript(name: String) -> Color {
