@@ -31,7 +31,7 @@ struct SelectSignInOptionView: View {
                 Section {
                     VStack {
                         Button(action: {
-                            
+                            dismiss()
                         }, label: {
                             HStack {
                                 Image(systemName: "iphone.gen3")
@@ -91,7 +91,9 @@ struct SelectSignInOptionView: View {
                     })
                     .alert("Could Not Create Apple ID", isPresented: $showingAlert, actions: {
                         Link("Learn More", destination: URL(string: "https://support.apple.com/en-us/101661")!)
-                        Button("OK", action: {})
+                        Button("OK", action: {
+                            dismiss()
+                        })
                     }, message: {
                         Text("The iPhoneSimulator has been used to create too many new Apple IDs. Contact Apple Support to request another Apple ID to use with this iPhoneSimulator.")
                     })

@@ -10,9 +10,11 @@ import SwiftUI
 struct AppleAccountLoginView: View {
     // Variables
     @Environment(\.dismiss) private var dismiss
-    @State private var username = ""
-    @State private var password = ""
-    @State private var showAlert: Bool = false
+    @State private var username = String()
+    @State private var signingIn = false
+    @State private var showingAlert = false
+    @State private var showingOptionsAlert = false
+    @State private var showingErrorAlert = false
     
     var body: some View {
         List {
@@ -41,46 +43,91 @@ struct AppleAccountLoginView: View {
                         .background(Color(UIColor.systemGray5))
                         .cornerRadius(10)
                     Spacer()
-                    Button(action: {}, label: {
+                    Button(action: {
+                        showingOptionsAlert.toggle()
+                    }, label: {
                         Text("Forgot password or don‘t have an Apple ID?")
                             .multilineTextAlignment(.center)
+                            .foregroundStyle(.accent)
                     })
+                    .buttonStyle(.plain)
+                    .disabled(showingOptionsAlert)
                     Spacer()
-                    Button(action: {}, label: {
+                    ZStack {
+                        NavigationLink(destination: {}, label: {
+                            EmptyView()
+                        })
+                        .opacity(0)
                         Text("Sign in a child in my Family")
-                            .multilineTextAlignment(.center)
-                    })
+                            .foregroundStyle(.accent)
+                    }
                 }
+                .alert("Forgot password or don‘t have an Apple ID?", isPresented: $showingOptionsAlert, actions: {
+                    Button("Forgot Password or Apple ID", role: .none, action: {})
+                    Button("Create Apple ID", role: .none, action: {
+                        showingErrorAlert.toggle()
+                    })
+                    Button("Cancel", role: .cancel, action: {})
+                })
+                .alert("Could Not Create Apple ID", isPresented: $showingErrorAlert, actions: {
+                    Link("Learn More", destination: URL(string: "https://support.apple.com/en-us/101661")!)
+                    Button("OK", action: {})
+                }, message: {
+                    Text("The iPhoneSimulator has been used to create too many new Apple IDs. Contact Apple Support to request another Apple ID to use with this iPhoneSimulator.")
+                })
             }
             .listRowBackground(Color.clear)
             
             Section {
                 VStack {
-                    Button(action: {}, label: {
-                        Image("GDPR_Blue")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(height: 23)
-                        Text("Your Apple ID information is used to enable Apple services when you sign in, including iCloud Backup, which automatically backs up the data on your device in case you need to replace or restore it. Your device serial number may be used to check eligibility for service offers.\n[See how your data is managed..](_)\n")
-                            .frame(maxWidth: .infinity, alignment: .center)
-                            .multilineTextAlignment(.center)
-                            .font(.caption2)
-                            .foregroundStyle(.gray)
-                    })
-                    
                     Button(action: {
                         // Empty
                     }, label: {
-                        Text("Continue")
-                            .fontWeight(.medium)
-                            .font(.headline)
-                            .frame(maxWidth: .infinity, maxHeight: .infinity)
-                            .background(username.count < 1 ? Color(UIColor.systemGray5) : Color.blue)
-                            .foregroundStyle(username.count < 1 ? Color(UIColor.systemGray) : Color.white)
-                            .cornerRadius(15)
+                        VStack {
+                            Image("GDPR_Blue")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(height: 23)
+                            Text("Your Apple ID information is used to enable Apple services when you sign in, including iCloud Backup, which automatically backs up the data on your device in case you need to replace or restore it. Your device serial number may be used to check eligibility for service offers.\n[See how your data is managed..](_)\n")
+                                .frame(maxWidth: .infinity, alignment: .center)
+                                .multilineTextAlignment(.center)
+                                .font(.caption2)
+                                .foregroundStyle(.gray)
+                        }
+                    })
+                    .buttonStyle(.plain)
+                    
+                    Button(action: {
+                        signingIn.toggle()
+                        showingAlert.toggle()
+                    }, label: {
+                        if signingIn || showingOptionsAlert {
+                            ProgressView()
+                                .fontWeight(.medium)
+                                .font(.headline)
+                                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                                .background(Color(UIColor.systemGray5))
+                                .foregroundStyle(Color(UIColor.systemGray))
+                                .cornerRadius(15)
+                        } else {
+                            Text("Continue")
+                                .fontWeight(.medium)
+                                .font(.headline)
+                                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                                .background(username.count < 1 ? Color(UIColor.systemGray5) : Color.blue)
+                                .foregroundStyle(username.count < 1 ? Color(UIColor.systemGray) : Color.white)
+                                .cornerRadius(15)
+                        }
                     })
                     .frame(height: 50)
                     .disabled(username.count < 1)
+                    .alert("Verification Failed", isPresented: $showingAlert) {
+                        Button("OK") {
+                            signingIn.toggle()
+                        }
+                    } message: {
+                        Text("There was an error connecting to the Apple ID server.")
+                    }
                 }
             }
             .listRowBackground(Color.clear)
