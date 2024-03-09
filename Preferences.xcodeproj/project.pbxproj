@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		830DA8022B9BE17B001EE76F /* ParentGuardianSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830DA8012B9BE17B001EE76F /* ParentGuardianSignInView.swift */; };
 		8319CE492B86D198007EC822 /* SecurityRecommendationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319CE482B86D198007EC822 /* SecurityRecommendationsView.swift */; };
 		8319CE4B2B86D22E007EC822 /* PasswordOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319CE4A2B86D22E007EC822 /* PasswordOptionsView.swift */; };
 		8319CE4D2B86D380007EC822 /* SafetyCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319CE4C2B86D380007EC822 /* SafetyCheckView.swift */; };
@@ -45,6 +46,7 @@
 		83585B752B8848110046A0C3 /* TransitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83585B742B8848110046A0C3 /* TransitView.swift */; };
 		83585B772B8848430046A0C3 /* CyclingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83585B762B8848430046A0C3 /* CyclingView.swift */; };
 		836A7E892B981D8E00FA3223 /* AppleAccountLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836A7E882B981D8E00FA3223 /* AppleAccountLoginView.swift */; };
+		836A7E8B2B995E4000FA3223 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836A7E8A2B995E4000FA3223 /* ForgotPasswordView.swift */; };
 		8373E7322B910AF8004285EA /* AppWebsiteActivitySheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8373E7312B910AF8004285EA /* AppWebsiteActivitySheetView.swift */; };
 		8373E7342B9162BD004285EA /* ScreenDistanceSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8373E7332B9162BD004285EA /* ScreenDistanceSheetView.swift */; };
 		8373E7362B91660F004285EA /* SensitivePhotosVideosProtectionSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8373E7352B91660F004285EA /* SensitivePhotosVideosProtectionSheetView.swift */; };
@@ -166,6 +168,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		830DA8012B9BE17B001EE76F /* ParentGuardianSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentGuardianSignInView.swift; sourceTree = "<group>"; };
 		8319CE482B86D198007EC822 /* SecurityRecommendationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityRecommendationsView.swift; sourceTree = "<group>"; };
 		8319CE4A2B86D22E007EC822 /* PasswordOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordOptionsView.swift; sourceTree = "<group>"; };
 		8319CE4C2B86D380007EC822 /* SafetyCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyCheckView.swift; sourceTree = "<group>"; };
@@ -205,6 +208,7 @@
 		83585B742B8848110046A0C3 /* TransitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitView.swift; sourceTree = "<group>"; };
 		83585B762B8848430046A0C3 /* CyclingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyclingView.swift; sourceTree = "<group>"; };
 		836A7E882B981D8E00FA3223 /* AppleAccountLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAccountLoginView.swift; sourceTree = "<group>"; };
+		836A7E8A2B995E4000FA3223 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		8373E7312B910AF8004285EA /* AppWebsiteActivitySheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWebsiteActivitySheetView.swift; sourceTree = "<group>"; };
 		8373E7332B9162BD004285EA /* ScreenDistanceSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenDistanceSheetView.swift; sourceTree = "<group>"; };
 		8373E7352B91660F004285EA /* SensitivePhotosVideosProtectionSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensitivePhotosVideosProtectionSheetView.swift; sourceTree = "<group>"; };
@@ -523,6 +527,8 @@
 			children = (
 				837D1E272B96BF9B00EDA7ED /* SelectSignInOptionView.swift */,
 				836A7E882B981D8E00FA3223 /* AppleAccountLoginView.swift */,
+				836A7E8A2B995E4000FA3223 /* ForgotPasswordView.swift */,
+				830DA8012B9BE17B001EE76F /* ParentGuardianSignInView.swift */,
 			);
 			path = Sheets;
 			sourceTree = "<group>";
@@ -1041,6 +1047,7 @@
 				83F78A1B2B8E8E3900025062 /* KeyboardColorView.swift in Sources */,
 				83D31F7C2B8D67460057CFDB /* PronunciationLanguagesView.swift in Sources */,
 				83F3F6A52B7D16F6003CC310 /* GameControllerView.swift in Sources */,
+				830DA8022B9BE17B001EE76F /* ParentGuardianSignInView.swift in Sources */,
 				837D1E282B96BF9B00EDA7ED /* SelectSignInOptionView.swift in Sources */,
 				83898FD12B8A9F680020C7BB /* DataAccessDevicesView.swift in Sources */,
 				83B619D12B941C4F00EFEA90 /* AlwaysAllowedView.swift in Sources */,
@@ -1060,6 +1067,7 @@
 				83815CF92B768F5C00F53A0F /* DeveloperView.swift in Sources */,
 				8373E7342B9162BD004285EA /* ScreenDistanceSheetView.swift in Sources */,
 				83D308612B8ACC8C002A9B7F /* AdvancedTrackingFingerprintingProtectionView.swift in Sources */,
+				836A7E8B2B995E4000FA3223 /* ForgotPasswordView.swift in Sources */,
 				838273A52B7FD4CF000F4228 /* AppsView.swift in Sources */,
 				8382739E2B7F25D4000F4228 /* ContentRestrictionsView.swift in Sources */,
 				8329284E2B8580B3006611CF /* HeadphoneAudioLevelsView.swift in Sources */,

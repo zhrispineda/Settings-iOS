@@ -1,13 +1,13 @@
 //
-//  AppleAccountLoginView.swift
+//  ParentGuardianSignInView.swift
 //  Preferences
 //
-//  Settings > Sign in > Sign in Manually
+//  Settings > Sign in > Sign in Manually > Sign in a child in my Family
 //
 
 import SwiftUI
 
-struct AppleAccountLoginView: View {
+struct ParentGuardianSignInView: View {
     // Variables
     @Environment(\.dismiss) private var dismiss
     @State private var signingIn = false
@@ -21,22 +21,23 @@ struct AppleAccountLoginView: View {
         List {
             Section {
                 VStack(alignment: .center, spacing: 15) {
-                    Image("AppleAccount_Icon_Blue90x90")
+                    Image(systemName: "figure.and.child.holdinghands")
                         .foregroundStyle(.blue)
-                        .font(.largeTitle)
-                    Text("Apple ID")
-                        .font(.largeTitle)
+                        .font(.system(size: 64))
+                    Text("Parent or Guardian Apple ID Sign In")
+                        .font(.title)
                         .fontWeight(.bold)
-                    Text("Sign in with an email or phone number to use iCloud, the App Store, Messages, or other Apple services.")
-                        .multilineTextAlignment(.center)
+                    Text("Sign in with your Apple ID to set up this device for a child 12 of younger.")
                 }
-                .padding(.horizontal, 15)
+                .padding(.horizontal, 10)
+                .multilineTextAlignment(.center)
             }
             .listRowBackground(Color.clear)
+            .frame(maxWidth: .infinity)
             
             Section {
                 VStack(alignment: .center) {
-                    TextField("Email or Phone Number", text: $username)
+                    TextField("Email", text: $username)
                         .padding(.vertical)
                         .padding(.leading, 5)
                         .frame(height: 48)
@@ -53,15 +54,6 @@ struct AppleAccountLoginView: View {
                     })
                     .buttonStyle(.plain)
                     .disabled(showingOptionsAlert)
-                    Spacer()
-                    ZStack {
-                        NavigationLink(destination: ParentGuardianSignInView(), label: {
-                            EmptyView()
-                        })
-                        .opacity(0)
-                        Text("Sign in a child in my Family")
-                            .foregroundStyle(.accent)
-                    }
                 }
                 .alert("Forgot password or don‘t have an Apple ID?", isPresented: $showingOptionsAlert, actions: {
                     Button("Forgot Password or Apple ID", role: .none, action: {
@@ -80,11 +72,13 @@ struct AppleAccountLoginView: View {
                 })
                 .sheet(isPresented: $showingForgotPasswordSheet, content: {
                     NavigationStack {
-                        ForgotPasswordView()
+                        ForgotPasswordView(guardianMode: true)
                     }
                 })
+                Spacer()
             }
             .listRowBackground(Color.clear)
+            .listRowSeparator(.hidden)
             
             Section {
                 VStack {
@@ -140,21 +134,11 @@ struct AppleAccountLoginView: View {
             }
             .listRowBackground(Color.clear)
         }
-        .navigationBarBackButtonHidden()
-        .toolbar {
-            ToolbarItem(placement: .topBarLeading) {
-                Button(action: {
-                    dismiss()
-                }, label: {
-                    Image(systemName: "chevron.left")
-                })
-            }
-        }
     }
 }
 
 #Preview {
     NavigationStack {
-        AppleAccountLoginView()
+        ParentGuardianSignInView()
     }
 }
