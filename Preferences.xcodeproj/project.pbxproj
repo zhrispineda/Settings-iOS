@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83096BD82BA232D50082DB61 /* AppleAccountSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83096BD72BA232D50082DB61 /* AppleAccountSignInView.swift */; };
 		830DA8022B9BE17B001EE76F /* ParentGuardianSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830DA8012B9BE17B001EE76F /* ParentGuardianSignInView.swift */; };
 		8319CE492B86D198007EC822 /* SecurityRecommendationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319CE482B86D198007EC822 /* SecurityRecommendationsView.swift */; };
 		8319CE4B2B86D22E007EC822 /* PasswordOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319CE4A2B86D22E007EC822 /* PasswordOptionsView.swift */; };
@@ -168,6 +169,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		83096BD72BA232D50082DB61 /* AppleAccountSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAccountSignInView.swift; sourceTree = "<group>"; };
 		830DA8012B9BE17B001EE76F /* ParentGuardianSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentGuardianSignInView.swift; sourceTree = "<group>"; };
 		8319CE482B86D198007EC822 /* SecurityRecommendationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityRecommendationsView.swift; sourceTree = "<group>"; };
 		8319CE4A2B86D22E007EC822 /* PasswordOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordOptionsView.swift; sourceTree = "<group>"; };
@@ -342,6 +344,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		83096BD62BA232C30082DB61 /* Game Center */ = {
+			isa = PBXGroup;
+			children = (
+				83096BD72BA232D50082DB61 /* AppleAccountSignInView.swift */,
+			);
+			path = "Game Center";
+			sourceTree = "<group>";
+		};
 		8319CE472B86D17B007EC822 /* Passwords */ = {
 			isa = PBXGroup;
 			children = (
@@ -634,6 +644,7 @@
 				83898FD22B8AA2240020C7BB /* Shortcuts */,
 				83898FC82B8A8EF20020C7BB /* Health */,
 				83DF95772B84390D00AEEB63 /* Siri & Search */,
+				83096BD62BA232C30082DB61 /* Game Center */,
 				83F626D22B827EEC00ED343F /* Developer */,
 				838C23282B748F3B0053D4C5 /* ScreenTimeView.swift */,
 				83815CFA2B76908700F53A0F /* ActionButtonView.swift */,
@@ -1101,6 +1112,7 @@
 				83F626D62B82884300ED343F /* AirPlaySuggestionsView.swift in Sources */,
 				83815CE72B768DF100F53A0F /* SafariView.swift in Sources */,
 				8373E7382B9168C9004285EA /* CommunicationSafetyView.swift in Sources */,
+				83096BD82BA232D50082DB61 /* AppleAccountSignInView.swift in Sources */,
 				8319CE4F2B86DB44007EC822 /* SensitiveContentWarningView.swift in Sources */,
 				83D31F9A2B8E6B360057CFDB /* HotCornersDetailView.swift in Sources */,
 				8329284B2B8578F4006611CF /* AppPermissionsView.swift in Sources */,

@@ -15,8 +15,7 @@ struct StyleView: View {
     var body: some View {
         CustomList(title: "Style") {
             ZStack {
-                Rectangle()
-                    .foregroundStyle(.cyan)
+                Image("clouds2visionpro1024x805")
                 VStack {
                     ZStack {
                         switch selected {
@@ -38,25 +37,24 @@ struct StyleView: View {
                         case "Large Text":
                             Rectangle()
                                 .foregroundStyle(Color.black).opacity(0.5)
-                                .frame(width: 200, height: 40)
-                                .clipShape(RoundedRectangle(cornerRadius: 50.0))
+                                .frame(width: 180, height: 23)
+                                .clipShape(RoundedRectangle(cornerRadius: 5.0))
                             Text("Subtitles look like this.")
                                 .foregroundStyle(.white)
                         default:
                             Rectangle()
                                 .foregroundStyle(Color.black).opacity(0.5)
                                 .frame(width: 150, height: 20)
-                                .clipShape(RoundedRectangle(cornerRadius: 50.0))
+                                .clipShape(RoundedRectangle(cornerRadius: 5.0))
                             Text("Subtitles look like this.")
                                 .foregroundStyle(.white)
                                 .font(.caption)
                         }
                     }
-                    .padding(.top, 125)
+                    .padding(.top, 165)
                 }
             }
             .ignoresSafeArea(.all)
-            .padding(-100)
             .listRowBackground(Color.clear)
             .frame(height: 200)
             
