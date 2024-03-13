@@ -30,6 +30,7 @@ struct AppleAccountLoginView: View {
                     Text("Sign in with an email or phone number to use iCloud, the App Store, Messages, or other Apple services.")
                         .multilineTextAlignment(.center)
                 }
+                .frame(maxWidth: .infinity)
                 .padding(.horizontal, 15)
             }
             .listRowBackground(Color.clear)

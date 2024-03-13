@@ -22,7 +22,7 @@ struct AccessibilityView: View {
                 SettingsLink(color: .green, icon: "circle.dotted.and.circle", larger: false, id: "Motion", content: {
                     MotionView()
                 })
-                SettingsLink(color: .gray, icon: "rectangle.3.group.bubble.fill", larger: false, id: "Spoken Content", content: {
+                SettingsLink(icon: "Speech29x29", id: "Spoken Content", content: {
                     SpeakSelectionView()
                 })
             }, header: {
@@ -34,12 +34,12 @@ struct AccessibilityView: View {
                     TouchView()
                 })
                 if DeviceInfo().hasFaceAuth {
-                    SettingsLink(color: .green, icon: "faceid", id: "Face ID & Attention", content: {
+                    SettingsLink(icon: "FaceID29x29", id: "Face ID & Attention", content: {
                         FaceAttentionView()
                     })
                 }
                 if DeviceInfo().isPhone {
-                    SettingsLink(color: .blue, icon: "dot.radiowaves.up.forward", id: "Control Nearby Devices", content: {
+                    SettingsLink(icon: "ControlNearby29x29", id: "Control Nearby Devices", content: {
                         ControlNearbyDevicesView()
                     })
                 }
@@ -59,7 +59,7 @@ struct AccessibilityView: View {
             })
             
             Section(content: {
-                SettingsLink(color: .gray, icon: "keyboard", larger: false, id: "Live Speech", status: "Off", content: {
+                SettingsLink(icon: "LiveSpeech29x29", id: "Live Speech", status: "Off", content: {
                     LiveSpeechView()
                 })
             }, header: {

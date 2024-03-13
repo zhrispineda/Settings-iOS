@@ -45,15 +45,17 @@ struct ParentGuardianSignInView: View {
                         .background(Color(UIColor.systemGray5))
                         .cornerRadius(10)
                     Spacer()
-                    Button(action: {
-                        showingOptionsAlert.toggle()
-                    }, label: {
-                        Text("Forgot password or don‘t have an Apple ID?")
-                            .multilineTextAlignment(.center)
-                            .foregroundStyle(.accent)
-                    })
-                    .buttonStyle(.plain)
-                    .disabled(showingOptionsAlert)
+                    if DeviceInfo().isPhone {
+                        Button(action: {
+                            showingOptionsAlert.toggle()
+                        }, label: {
+                            Text("Forgot password or don‘t have an Apple ID?")
+                                .multilineTextAlignment(.center)
+                                .foregroundStyle(.accent)
+                        })
+                        .buttonStyle(.plain)
+                        .disabled(showingOptionsAlert)
+                    }
                 }
                 .alert("Forgot password or don‘t have an Apple ID?", isPresented: $showingOptionsAlert, actions: {
                     Button("Forgot Password or Apple ID", role: .none, action: {
