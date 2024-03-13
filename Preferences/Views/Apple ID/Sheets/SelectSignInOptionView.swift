@@ -34,17 +34,17 @@ struct SelectSignInOptionView: View {
                             dismiss()
                         }, label: {
                             HStack {
-                                Image(systemName: "iphone.gen3")
+                                Image("ProximitySymbol-iPhone-iPad-2")
                                     .foregroundStyle(.blue)
                                     .font(.system(size: 42))
-                                    .padding(.horizontal, 5)
+                                    .frame(width: 70)
                                 VStack(alignment: .leading) {
                                     Text("**Use Another Apple Device**")
                                     Text("Bring another Apple device nearby to sign in quickly and easily. Available for iOS 17 and later.")
                                         .font(.subheadline)
                                         .foregroundStyle(.secondary)
                                 }
-                                .padding(.vertical, 5)
+                                .padding(5)
                                 Spacer()
                                 Image(systemName: "chevron.right")
                                     .imageScale(.small)
@@ -64,14 +64,14 @@ struct SelectSignInOptionView: View {
                                 Image(systemName: "ellipsis.rectangle")
                                     .foregroundStyle(.blue)
                                     .font(.system(size: 40))
-                                    .padding(.horizontal, 5)
+                                    .frame(width: 70)
                                 VStack(alignment: .leading) {
                                     Text("**Sign in Manually**")
                                     Text("Enter an email address or phone number and password then verify your identity.")
                                         .font(.subheadline)
                                         .foregroundStyle(.secondary)
                                 }
-                                .padding(.vertical, 5)
+                                .padding(5)
                             }
                         })
                     }

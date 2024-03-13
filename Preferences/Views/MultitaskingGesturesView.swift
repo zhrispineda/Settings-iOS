@@ -29,7 +29,7 @@ struct MultitaskingGesturesView: View {
                             splitViewSlideOverEnabled = false
                         }, label: {
                             VStack(spacing: 15) {
-                                Image("nomultitasking")
+                                Image("OneAppAtATime160x120")
                                     .resizable()
                                     .scaledToFit()
                                     .frame(height: 125)
@@ -51,7 +51,7 @@ struct MultitaskingGesturesView: View {
                             splitViewSlideOverEnabled = true
                         }, label: {
                             VStack(spacing: 15) {
-                                Image("splitviewslideover")
+                                Image("SplitViewSlideOver160x120")
                                     .resizable()
                                     .scaledToFit()
                                     .frame(height: 125)
