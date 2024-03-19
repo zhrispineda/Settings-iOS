@@ -14,6 +14,7 @@ struct ScreenTimeView: View {
     @State private var showingAppWebsiteActivitySheet = false
     @State private var showingScreenDistanceSheet = false
     @State private var showingCommunicationSafetySheet = false
+    @State private var showingAppleAccountSheet = false
     
     var body: some View {
         CustomList(title: "Screen Time") {
@@ -126,7 +127,14 @@ struct ScreenTimeView: View {
             })
             
             Section(content: {
-                Button("Use with Other Devices or Family", action: {}) // TODO: Fullscreen sheet
+                Button("Use with Other Devices or Family", action: {
+                    showingAppleAccountSheet.toggle()
+                })
+                .sheet(isPresented: $showingAppleAccountSheet) {
+                    NavigationStack {
+                        AppleAccountLoginView(isMainSheet: true)
+                    }
+                }
             }, footer: {
                 Text("Sign in to iCloud to report your screen time on any iPad or iPhone, or set up Family Sharing to use Screen Time with your family‘s devices.")
             })

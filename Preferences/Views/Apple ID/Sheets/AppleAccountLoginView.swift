@@ -10,6 +10,7 @@ import SwiftUI
 struct AppleAccountLoginView: View {
     // Variables
     @Environment(\.dismiss) private var dismiss
+    @State var isMainSheet = false
     @State private var signingIn = false
     @State private var showingAlert = false
     @State private var showingOptionsAlert = false
@@ -56,13 +57,15 @@ struct AppleAccountLoginView: View {
                     .buttonStyle(.plain)
                     .disabled(showingOptionsAlert)
                     Spacer()
-                    ZStack {
-                        NavigationLink(destination: ParentGuardianSignInView(), label: {
-                            EmptyView()
-                        })
-                        .opacity(0)
-                        Text("Sign in a child in my Family")
-                            .foregroundStyle(.accent)
+                    if !isMainSheet {
+                        ZStack {
+                            NavigationLink(destination: ParentGuardianSignInView(), label: {
+                                EmptyView()
+                            })
+                            .opacity(0)
+                            Text("Sign in a child in my Family")
+                                .foregroundStyle(.accent)
+                        }
                     }
                 }
                 .alert("Forgot password or don‘t have an Apple ID?", isPresented: $showingOptionsAlert, actions: {
@@ -144,12 +147,24 @@ struct AppleAccountLoginView: View {
         }
         .navigationBarBackButtonHidden()
         .toolbar {
-            ToolbarItem(placement: .topBarLeading) {
-                Button(action: {
-                    dismiss()
-                }, label: {
-                    Image(systemName: "chevron.left")
+            if isMainSheet {
+                ToolbarItem(placement: .topBarTrailing, content: {
+                    Button(action: {
+                        dismiss()
+                    }, label: {
+                        Image(systemName: "xmark.circle.fill")
+                            .font(.system(size: 24))
+                            .foregroundStyle(.gray, Color(UIColor.systemFill))
+                    })
                 })
+            } else {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button(action: {
+                        dismiss()
+                    }, label: {
+                        Image(systemName: "chevron.left")
+                    })
+                }
             }
         }
     }
