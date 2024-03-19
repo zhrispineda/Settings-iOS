@@ -17,8 +17,9 @@ struct SelectSignInOptionView: View {
             List {
                 VStack(alignment: .center, spacing: 15) {
                     Image("AppleAccount_Icon_Blue90x90")
-                        .foregroundStyle(.blue)
-                        .font(.system(size: 48))
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 75)
                     Text("Apple ID")
                         .font(.title)
                         .bold()
@@ -27,6 +28,7 @@ struct SelectSignInOptionView: View {
                 .multilineTextAlignment(.center)
                 .listRowBackground(Color.clear)
                 .padding(.horizontal, 5)
+                .padding(.top, -10)
                 
                 Section {
                     VStack {
@@ -77,6 +79,7 @@ struct SelectSignInOptionView: View {
                     }
                 }
             }
+            
             VStack {
                 Spacer()
                 ZStack {

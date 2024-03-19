@@ -34,6 +34,7 @@ struct AppleAccountLoginView: View {
                 .padding(.horizontal, 15)
             }
             .listRowBackground(Color.clear)
+            .padding(.top, -10)
             
             Section {
                 VStack(alignment: .center) {
