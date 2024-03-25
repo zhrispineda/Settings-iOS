@@ -187,6 +187,18 @@ struct ContentView: View {
                                 })
                             }
                             
+                            if !Configuration().isSimulator {
+                                // MARK: Radio Settings
+                                Section {
+                                    IconToggle(enabled: false, color: Color.orange, icon: "airplane", title: "Airplane Mode")
+                                    ForEach(radioSettings) { setting in
+                                        SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Wi-Fi" ? "On" : "", content: {
+                                            setting.destination
+                                        })
+                                    }
+                                }
+                            }
+                            
                             // MARK: Attention Settings
                             Section {
                                 ForEach(attentionSettings) { setting in

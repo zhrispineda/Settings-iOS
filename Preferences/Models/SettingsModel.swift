@@ -59,6 +59,11 @@ class DeviceInfo: ObservableObject {
 
 // MARK: SettingsModel data
 enum SettingsModel: String, CaseIterable {
+    case wifi = "Wi-Fi"
+    case bluetooth = "Bluetooth"
+    case cellular = "Cellular"
+    case personalHotspot = "Personal Hotspot"
+    
     case screenTime = "Screen Time"
     case actionButton = "Action Button"
     
@@ -91,7 +96,16 @@ struct SettingsItem<Content: View>: Identifiable {
     let destination: Content
 }
 
-let smallerIcons = ["arrow.turn.up.forward.iphone", "squares.leading.rectangle", "key.fill", "hammer.fill", "shareplay"]
+// MARK: SF Symbol names for smaller icons
+let smallerIcons = ["airplane", "arrow.turn.up.forward.iphone", "personalhotspot", "squares.leading.rectangle", "key.fill", "hammer.fill", "shareplay", "wifi"]
+
+// Radio Settings: Wi-Fi, Bluetooth, Cellular, Personal Hotspot, VPN
+let radioSettings: [SettingsItem] = [
+    SettingsItem(type: .wifi, title: "Wi-Fi", icon: "wifi", color: .blue, destination: AnyView(EmptyView())),
+    SettingsItem(type: .bluetooth, title: "Bluetooth", icon: "logo.bluetooth", color: .blue, destination: AnyView(EmptyView())),
+    SettingsItem(type: .cellular, title: "Cellular", icon: "antenna.radiowaves.left.and.right", color: .green, destination: AnyView(EmptyView())),
+    SettingsItem(type: .personalHotspot, title: "Personal Hotspot", icon: "personalhotspot", color: .green, destination: AnyView(EmptyView())),
+]
 
 // Attention Settings: Screen Time
 let attentionSettings: [SettingsItem] = [
