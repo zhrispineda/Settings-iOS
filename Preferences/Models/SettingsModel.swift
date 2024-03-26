@@ -9,7 +9,7 @@ import SwiftUI
 
 // MARK: Global variables
 struct Configuration {
-    let isSimulator = true
+    let isSimulator = false
 }
 
 // MARK: Color extension
@@ -145,4 +145,4 @@ let developerSettings: [SettingsItem] = [
 ]
 
 // Combined Settings Array
-let combinedSettings = attentionSettings + mainSettings + servicesSettings + appsSettings + developerSettings
+let combinedSettings = radioSettings + attentionSettings + mainSettings + servicesSettings + appsSettings + developerSettings

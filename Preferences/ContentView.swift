@@ -60,6 +60,23 @@ struct ContentView: View {
                                 }
                             })
                             
+                            // MARK: Radio Settings
+                            if !Configuration().isSimulator {
+                                Section {
+                                    IconToggle(enabled: false, color: Color.orange, icon: "airplane", title: "Airplane Mode")
+                                    ForEach(radioSettings) { setting in
+                                        Button(action: {
+                                            id = UUID() // Reset destination
+                                            selection = setting.type
+                                        }, label: {
+                                            SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Wi-Fi" ? "On" : String())
+                                                .foregroundStyle(selection == setting.type ? Color.white : Color["Label"])
+                                        })
+                                        .listRowBackground(selection == setting.type ? Color.blue : nil)
+                                    }
+                                }
+                            }
+                            
                             // MARK: Attention Settings
                             Section {
                                 ForEach(attentionSettings) { setting in
@@ -228,33 +245,27 @@ struct ContentView: View {
                             // MARK: Services Settings
                             Section {
                                 ForEach(servicesSettings) { setting in
-                                    if !tabletOnly.contains(setting.id) {
-                                        SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, content: {
-                                            setting.destination
-                                        })
-                                    }
+                                    SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, content: {
+                                        setting.destination
+                                    })
                                 }
                             }
                             
                             // MARK: Apps Settings
                             Section {
                                 ForEach(appsSettings) { setting in
-                                    if !tabletOnly.contains(setting.id) {
-                                        SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, content: {
-                                            setting.destination
-                                        })
-                                    }
+                                    SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, content: {
+                                        setting.destination
+                                    })
                                 }
                             }
                             
                             // MARK: Developer Settings
                             Section {
                                 ForEach(developerSettings) { setting in
-                                    if !tabletOnly.contains(setting.id) {
-                                        SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, content: {
-                                            setting.destination
-                                        })
-                                    }
+                                    SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, content: {
+                                        setting.destination
+                                    })
                                 }
                             }
                         }

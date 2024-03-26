@@ -16,15 +16,18 @@ import SwiftUI
 /// - Parameter color: The ``Color`` to use as the icon background.
 /// - Parameter icon: The ``String`` name of the image asset or symbol.
 /// - Parameter id: The ``String`` name of the label to display.
+/// - Parameter status: The ``String`` name of the status to display.
 struct SettingsLabel: View {
     let color: Color
     let icon: String
     let id: String
+    let status: String
     
-    init(color: Color = Color.clear, icon: String, id: String) {
+    init(color: Color = Color.clear, icon: String, id: String, status: String = String()) {
         self.color = color
         self.icon = icon
         self.id = id
+        self.status = status
     }
     
     var body: some View {
@@ -43,11 +46,18 @@ struct SettingsLabel: View {
                 } else {
                     Image(icon)
                         .resizable()
+                        .scaledToFit()
                         .clipShape(RoundedRectangle(cornerRadius: 5))
-                        .frame(width: 30, height: 30)
+                        .foregroundStyle(.white)
+                        .frame(width: 30, height: icon == "logo.bluetooth" ? 24 : 30)
                 }
             }
             Text(id)
+            if !status.isEmpty {
+                Spacer()
+                Text(status)
+                    .foregroundStyle(.secondary)
+            }
         }
     }
 }
