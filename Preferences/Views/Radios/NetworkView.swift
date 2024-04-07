@@ -23,7 +23,7 @@ struct NetworkView: View {
                 })
             }, footer: {
                 if !networkEnabled {
-                    Text("AirDrop, AirPlay, Notify When Left Behind, and improved location accuracy require Wi-Fi.")
+                    Text("AirDrop, AirPlay, Notify When Left Behind, and \(DeviceInfo().isPhone ? "improved location accuracy" : "location services") require Wi-Fi.")
                 }
             })
             
