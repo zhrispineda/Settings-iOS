@@ -10,7 +10,7 @@ import SwiftUI
 struct AboutView: View {
     // Variables
     @State private var showingModelNumber = false
-    @State private var serialNumber = ""
+    @State private var serialNumber = String()
     @State private var availableStorage: String = getAvailableStorage() ?? "N/A"
     @State private var totalStorage: String = getTotalStorage() ?? "N/A"
 

@@ -103,6 +103,7 @@
 		838C232B2B7492170053D4C5 /* CustomList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838C232A2B7492170053D4C5 /* CustomList.swift */; };
 		838C232E2B7497530053D4C5 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838C232D2B7497530053D4C5 /* AboutView.swift */; };
 		838C23302B74978C0053D4C5 /* HText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838C232F2B74978C0053D4C5 /* HText.swift */; };
+		83AFA1022BC87FC8008D4E57 /* HotspotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AFA1012BC87FC8008D4E57 /* HotspotView.swift */; };
 		83B619C92B93DEBD00EFEA90 /* ScreenDistanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B619C82B93DEBD00EFEA90 /* ScreenDistanceView.swift */; };
 		83B619CB2B93EE2400EFEA90 /* AppWebsiteActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B619CA2B93EE2400EFEA90 /* AppWebsiteActivityView.swift */; };
 		83B619CD2B93F91500EFEA90 /* DowntimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B619CC2B93F91500EFEA90 /* DowntimeView.swift */; };
@@ -269,6 +270,7 @@
 		838C232A2B7492170053D4C5 /* CustomList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomList.swift; sourceTree = "<group>"; };
 		838C232D2B7497530053D4C5 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		838C232F2B74978C0053D4C5 /* HText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HText.swift; sourceTree = "<group>"; };
+		83AFA1012BC87FC8008D4E57 /* HotspotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotspotView.swift; sourceTree = "<group>"; };
 		83B619C82B93DEBD00EFEA90 /* ScreenDistanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenDistanceView.swift; sourceTree = "<group>"; };
 		83B619CA2B93EE2400EFEA90 /* AppWebsiteActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWebsiteActivityView.swift; sourceTree = "<group>"; };
 		83B619CC2B93F91500EFEA90 /* DowntimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DowntimeView.swift; sourceTree = "<group>"; };
@@ -443,6 +445,7 @@
 				832F517E2BBF4DC900335E5E /* NetworkView.swift */,
 				832FD83E2BC22EB000E99DEB /* BluetoothView.swift */,
 				8335A70B2BC358E8001E199D /* CellularView.swift */,
+				83AFA1012BC87FC8008D4E57 /* HotspotView.swift */,
 			);
 			path = Radios;
 			sourceTree = "<group>";
@@ -1040,6 +1043,7 @@
 				838C232E2B7497530053D4C5 /* AboutView.swift in Sources */,
 				837F1DCB2B8AEF1A00665EAB /* DownloadsView.swift in Sources */,
 				8319CE492B86D198007EC822 /* SecurityRecommendationsView.swift in Sources */,
+				83AFA1022BC87FC8008D4E57 /* HotspotView.swift in Sources */,
 				832EF38A2B8071C00066A1BF /* RestrictionsLocationServicesView.swift in Sources */,
 				838C23292B748F3B0053D4C5 /* ScreenTimeView.swift in Sources */,
 				83B893B92B8FCE5F005705A3 /* HoverTextFontView.swift in Sources */,
