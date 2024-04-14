@@ -10,6 +10,7 @@ import SwiftUI
 struct CellularView: View {
     // Variables
     @State private var cellularDataEnabled = true
+    @State private var mode: Int = 0
     @State private var wifiAssistEnabled = true
     @State private var cellularUsageStatisticsEnabled = true
     
@@ -44,7 +45,21 @@ struct CellularView: View {
             }
             
             Section(content: {
-                EmptyView()
+                Picker("Billing Period", selection: $mode) {
+                    Text("This Billing Period").tag(0)
+                    Text("Last Billing Period").tag(1)
+                }
+                .pickerStyle(SegmentedPickerStyle())
+                .padding(.horizontal, -10)
+                HStack {
+                    Text("APPS BY USAGE")
+                        .font(.system(size: 12))
+                    Spacer()
+                    Text("SORT BY NAME")
+                        .font(.system(size: 12))
+                        .foregroundStyle(.blue)
+                }
+                SettingsLink(color: .gray, icon: "gear", id: "System Services", status: "0 KB", content: {})
             }, header: {
                 Text("Cellular Data")
             })
