@@ -64,6 +64,7 @@ enum SettingsModel: String, CaseIterable {
     case cellular = "Cellular"
     case personalHotspot = "Personal Hotspot"
     
+    case notifications = "Notifications"
     case screenTime = "Screen Time"
     case actionButton = "Action Button"
     
@@ -107,8 +108,15 @@ let radioSettings: [SettingsItem] = [
     SettingsItem(type: .personalHotspot, title: "Personal Hotspot", icon: "personalhotspot", color: .green, destination: AnyView(HotspotView())),
 ]
 
-// Attention Settings: Screen Time
+// Attention Settings: Notifications, Screen Time
 let attentionSettings: [SettingsItem] = [
+    SettingsItem(type: .notifications, title: "Notifications", icon: "bell.badge.fill", color: .red, destination: AnyView(NotificationsView())),
+    SettingsItem(type: .screenTime, title: "Screen Time", icon: "hourglass", color: .indigo, destination: AnyView(ScreenTimeView())),
+//    SettingsItem(type: .actionButton, title: "Action Button", icon: "actionbutton_Normal", color: .blue, destination: AnyView(ActionButtonView()))
+]
+
+// Simulator Attention Settings: Screen Time
+let attentionSimulatorSettings: [SettingsItem] = [
     SettingsItem(type: .screenTime, title: "Screen Time", icon: "hourglass", color: .indigo, destination: AnyView(ScreenTimeView())),
     SettingsItem(type: .actionButton, title: "Action Button", icon: "actionbutton_Normal", color: .blue, destination: AnyView(ActionButtonView()))
 ]

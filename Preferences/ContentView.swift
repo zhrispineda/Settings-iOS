@@ -79,7 +79,7 @@ struct ContentView: View {
                             
                             // MARK: Attention Settings
                             Section {
-                                ForEach(attentionSettings) { setting in
+                                ForEach(Configuration().isSimulator ? attentionSimulatorSettings : attentionSettings) { setting in
                                     if !phoneOnly.contains(setting.id) {
                                         Button(action: {
                                             id = UUID() // Reset destination
@@ -218,7 +218,7 @@ struct ContentView: View {
                             
                             // MARK: Attention Settings
                             Section {
-                                ForEach(attentionSettings) { setting in
+                                ForEach(Configuration().isSimulator ? attentionSimulatorSettings : attentionSettings) { setting in
                                     if setting.id == "Action Button" && UIDevice.current.name.contains("15 Pro") {
                                         SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, content: {
                                             setting.destination
