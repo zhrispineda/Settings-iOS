@@ -65,6 +65,8 @@ enum SettingsModel: String, CaseIterable {
     case personalHotspot = "Personal Hotspot"
     
     case notifications = "Notifications"
+    case soundHaptics = "Sound & Haptics"
+    case focus = "Focus"
     case screenTime = "Screen Time"
     case actionButton = "Action Button"
     
@@ -98,7 +100,7 @@ struct SettingsItem<Content: View>: Identifiable {
 }
 
 // MARK: SF Symbol names for smaller icons
-let smallerIcons = ["airplane", "arrow.turn.up.forward.iphone", "personalhotspot", "squares.leading.rectangle", "key.fill", "hammer.fill", "shareplay", "wifi"]
+let smallerIcons = ["airplane", "arrow.turn.up.forward.iphone", "personalhotspot", "speaker.3.fill", "moon.fill", "squares.leading.rectangle", "key.fill", "hammer.fill", "shareplay", "wifi"]
 
 // Radio Settings: Wi-Fi, Bluetooth, Cellular, Personal Hotspot, VPN
 let radioSettings: [SettingsItem] = [
@@ -111,6 +113,8 @@ let radioSettings: [SettingsItem] = [
 // Attention Settings: Notifications, Screen Time
 let attentionSettings: [SettingsItem] = [
     SettingsItem(type: .notifications, title: "Notifications", icon: "bell.badge.fill", color: .red, destination: AnyView(NotificationsView())),
+    SettingsItem(type: .soundHaptics, title: DeviceInfo().isPhone ? "Sounds & Haptics" : "Sounds", icon: "speaker.3.fill", color: .pink, destination: AnyView(SoundsHapticsView())),
+    SettingsItem(type: .focus, title: "Focus", icon: "moon.fill", color: .indigo, destination: AnyView(EmptyView())),
     SettingsItem(type: .screenTime, title: "Screen Time", icon: "hourglass", color: .indigo, destination: AnyView(ScreenTimeView())),
 //    SettingsItem(type: .actionButton, title: "Action Button", icon: "actionbutton_Normal", color: .blue, destination: AnyView(ActionButtonView()))
 ]
