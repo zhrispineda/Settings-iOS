@@ -13,6 +13,10 @@ struct SoundsHapticsView: View {
     @State private var showInStatusBarEnabled = true
     @State private var volume = 0.5
     @State private var changeWithButtonsEnabled = true
+    @State private var keyboardClicksEnabled = true
+    @State private var lockSoundEnabled = true
+    @State private var systemHapticsEnabled = true
+    @State private var fixedPositionVolumeControlsEnabled = true
     
     var body: some View {
         CustomList(title: DeviceInfo().isPhone ? "Sounds & Haptics" : "Sounds") {
@@ -64,13 +68,45 @@ struct SoundsHapticsView: View {
             Section {
                 CustomNavigationLink(title: "Ringtone", status: "Reflection", destination: EmptyView())
                 CustomNavigationLink(title: "Text Tone", status: "Note", destination: EmptyView())
-                CustomNavigationLink(title: "New Voicemail", status: "Droplet", destination: EmptyView())
+                if DeviceInfo().isPhone {
+                    CustomNavigationLink(title: "New Voicemail", status: "Droplet", destination: EmptyView())
+                }
                 CustomNavigationLink(title: "New Mail", status: "None", destination: EmptyView())
                 CustomNavigationLink(title: "Sent Mail", status: "Swoosh", destination: EmptyView())
                 CustomNavigationLink(title: "Calendar Alerts", status: "Chord", destination: EmptyView())
                 CustomNavigationLink(title: "Reminder Alerts", status: "Chord", destination: EmptyView())
                 CustomNavigationLink(title: "Default Alerts", status: "Rebound", destination: EmptyView())
             }
+            
+            Section(content: {
+                if DeviceInfo().isPhone {
+                    CustomNavigationLink(title: "Keyboard Feedback", status: "Sound", destination: EmptyView())
+                } else {
+                    Toggle("Keyboard Clicks", isOn: $keyboardClicksEnabled)
+                }
+                Toggle("Lock Sound", isOn: $lockSoundEnabled)
+                if DeviceInfo().isPhone {
+                    Toggle("System Haptics", isOn: $systemHapticsEnabled)
+                }
+            }, header: {
+                Text("System Sounds\(DeviceInfo().isPhone ? " & Haptics" : "")")
+            }, footer: {
+                Text("Play \(DeviceInfo().isPhone ? "haptics" : "sounds") for system controls and interactions.")
+            })
+            
+            if !DeviceInfo().isPhone {
+                Section(content: {
+                    Toggle("Fixed Position Volume Controls", isOn: $fixedPositionVolumeControlsEnabled.animation())
+                }, footer: {
+                    Text(fixedPositionVolumeControlsEnabled ? "The volume up and down buttons will remain in a fixed position." : "The buttons will dynamically change depending on the orientation of your iPad.")
+                })
+            }
+            
+            Section(content: {
+                NavigationLink("Headphone Safety", destination: {})
+            }, header: {
+                Text("Headphone Audio")
+            })
         }
     }
 }
