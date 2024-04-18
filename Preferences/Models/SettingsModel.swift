@@ -70,9 +70,12 @@ enum SettingsModel: String, CaseIterable {
     case screenTime = "Screen Time"
     case actionButton = "Action Button"
     
+    case general = "General"
+    case controlCenter = "Control Center"
+    case displayBrightness = "Display & Brightness"
+    case homeScreenAppLibrary = "Home Screen & App Library"
     case multitaskGestures = "Multitasking & Gestures"
     case accessibility = "Accessibility"
-    case general = "General"
     case privacySecurity = "Privacy & Security"
     
     case passwords = "Passwords"
@@ -116,7 +119,6 @@ let attentionSettings: [SettingsItem] = [
     SettingsItem(type: .soundHaptics, title: DeviceInfo().isPhone ? "Sounds & Haptics" : "Sounds", icon: "speaker.3.fill", color: .pink, destination: AnyView(SoundsHapticsView())),
     SettingsItem(type: .focus, title: "Focus", icon: "moon.fill", color: .indigo, destination: AnyView(EmptyView())),
     SettingsItem(type: .screenTime, title: "Screen Time", icon: "hourglass", color: .indigo, destination: AnyView(ScreenTimeView())),
-//    SettingsItem(type: .actionButton, title: "Action Button", icon: "actionbutton_Normal", color: .blue, destination: AnyView(ActionButtonView()))
 ]
 
 // Simulator Attention Settings: Screen Time
@@ -128,6 +130,10 @@ let attentionSimulatorSettings: [SettingsItem] = [
 // Main Settings: General
 let mainSettings: [SettingsItem] = [
     SettingsItem(type: .general, title: "General", icon: "gear", color: .gray, destination: AnyView(GeneralView())),
+    SettingsItem(type: .controlCenter, title: "Control Center", icon: "switch.2", destination: AnyView(EmptyView())),
+    SettingsItem(type: .actionButton, title: "Action Button", icon: "actionbutton_Normal", color: .blue, destination: AnyView(ActionButtonView())),
+    SettingsItem(type: .displayBrightness, title: "Display & Brightness", icon: "sun.max.fill", color: .blue, destination: AnyView(EmptyView())),
+    SettingsItem(type: .homeScreenAppLibrary, title: "Home Screen & App Library", icon: "applehome screen & app library", color: .indigo, destination: AnyView(EmptyView())),
     SettingsItem(type: .multitaskGestures, title: "Multitasking & Gestures", icon: "squares.leading.rectangle", color: .blue, destination: AnyView(MultitaskingGesturesView())),
     SettingsItem(type: .accessibility, title: "Accessibility", icon: "accessibility", color: .blue, destination: AnyView(AccessibilityView())),
     SettingsItem(type: .privacySecurity, title: "Privacy & Security", icon: "hand.raised.fill", color: .blue, destination: AnyView(PrivacySecurityView()))

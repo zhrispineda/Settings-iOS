@@ -235,9 +235,15 @@ struct ContentView: View {
                             Section {
                                 ForEach(mainSettings) { setting in
                                     if !tabletOnly.contains(setting.id) {
-                                        SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, content: {
-                                            setting.destination
-                                        })
+                                        if setting.id == "Action Button" && UIDevice.current.name.contains("15 Pro") {
+                                            SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, content: {
+                                                setting.destination
+                                            })
+                                        } else if setting.id != "Action Button" {
+                                            SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, content: {
+                                                setting.destination
+                                            })
+                                        }
                                     }
                                 }
                             }
