@@ -136,6 +136,7 @@ let mainSettings: [SettingsItem] = [
     SettingsItem(type: .homeScreenAppLibrary, title: "Home Screen & App Library", icon: "applehome screen & app library", color: .indigo, destination: AnyView(EmptyView())),
     SettingsItem(type: .multitaskGestures, title: "Multitasking & Gestures", icon: "squares.leading.rectangle", color: .blue, destination: AnyView(MultitaskingGesturesView())),
     SettingsItem(type: .accessibility, title: "Accessibility", icon: "accessibility", color: .blue, destination: AnyView(AccessibilityView())),
+    SettingsItem(type: .general, title: "Wallpaper", icon: "Wallpaper", color: .clear, destination: AnyView(GeneralView())),
     SettingsItem(type: .privacySecurity, title: "Privacy & Security", icon: "hand.raised.fill", color: .blue, destination: AnyView(PrivacySecurityView()))
 ]
 
