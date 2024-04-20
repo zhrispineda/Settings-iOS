@@ -96,14 +96,16 @@ struct ContentView: View {
                             // MARK: Main Settings
                             Section {
                                 ForEach(mainSettings) { setting in
-                                    Button(action: {
-                                        id = UUID() // Reset destination
-                                        selection = setting.type
-                                    }, label: {
-                                        SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id)
-                                            .foregroundStyle(selection == setting.type ? Color.white : Color["Label"])
-                                    })
-                                    .listRowBackground(selection == setting.type ? Color.blue.opacity(0.75) : nil)
+                                    if !phoneOnly.contains(setting.id) {
+                                        Button(action: {
+                                            id = UUID() // Reset destination
+                                            selection = setting.type
+                                        }, label: {
+                                            SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id)
+                                                .foregroundStyle(selection == setting.type ? Color.white : Color["Label"])
+                                        })
+                                        .listRowBackground(selection == setting.type ? Color.blue.opacity(0.75) : nil)
+                                    }
                                 }
                             }
                             

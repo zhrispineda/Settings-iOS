@@ -76,6 +76,7 @@ enum SettingsModel: String, CaseIterable {
     case homeScreenAppLibrary = "Home Screen & App Library"
     case multitaskGestures = "Multitasking & Gestures"
     case accessibility = "Accessibility"
+    case wallpaper = "Wallpaper"
     case privacySecurity = "Privacy & Security"
     
     case passwords = "Passwords"
@@ -117,7 +118,7 @@ let radioSettings: [SettingsItem] = [
 let attentionSettings: [SettingsItem] = [
     SettingsItem(type: .notifications, title: "Notifications", icon: "bell.badge.fill", color: .red, destination: AnyView(NotificationsView())),
     SettingsItem(type: .soundHaptics, title: DeviceInfo().isPhone ? "Sounds & Haptics" : "Sounds", icon: "speaker.3.fill", color: .pink, destination: AnyView(SoundsHapticsView())),
-    SettingsItem(type: .focus, title: "Focus", icon: "moon.fill", color: .indigo, destination: AnyView(EmptyView())),
+    SettingsItem(type: .focus, title: "Focus", icon: "moon.fill", color: .indigo, destination: AnyView(FocusView())),
     SettingsItem(type: .screenTime, title: "Screen Time", icon: "hourglass", color: .indigo, destination: AnyView(ScreenTimeView())),
 ]
 
@@ -136,7 +137,7 @@ let mainSettings: [SettingsItem] = [
     SettingsItem(type: .homeScreenAppLibrary, title: "Home Screen & App Library", icon: "applehome screen & app library", color: .indigo, destination: AnyView(EmptyView())),
     SettingsItem(type: .multitaskGestures, title: "Multitasking & Gestures", icon: "squares.leading.rectangle", color: .blue, destination: AnyView(MultitaskingGesturesView())),
     SettingsItem(type: .accessibility, title: "Accessibility", icon: "accessibility", color: .blue, destination: AnyView(AccessibilityView())),
-    SettingsItem(type: .general, title: "Wallpaper", icon: "Wallpaper", color: .clear, destination: AnyView(GeneralView())),
+    SettingsItem(type: .wallpaper, title: "Wallpaper", icon: "Wallpaper", color: .clear, destination: AnyView(EmptyView())),
     SettingsItem(type: .privacySecurity, title: "Privacy & Security", icon: "hand.raised.fill", color: .blue, destination: AnyView(PrivacySecurityView()))
 ]
 

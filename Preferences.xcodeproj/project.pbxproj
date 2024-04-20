@@ -61,6 +61,7 @@
 		837B0F602B89B22900B22455 /* SiriVoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837B0F5F2B89B22900B22455 /* SiriVoiceView.swift */; };
 		837B0F622B89B49B00B22455 /* SiriResponsesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837B0F612B89B49B00B22455 /* SiriResponsesView.swift */; };
 		837B0F642B89B5E700B22455 /* SiriDictationHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837B0F632B89B5E700B22455 /* SiriDictationHistoryView.swift */; };
+		837B62FE2BD457F10045B95C /* FocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837B62FD2BD457F10045B95C /* FocusView.swift */; };
 		837C03072B7F192F004D6C71 /* AppInstallationsPurchasesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C03062B7F192F004D6C71 /* AppInstallationsPurchasesView.swift */; };
 		837C03092B7F1AE0004D6C71 /* SelectOptionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C03082B7F1AE0004D6C71 /* SelectOptionList.swift */; };
 		837D1E282B96BF9B00EDA7ED /* SelectSignInOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D1E272B96BF9B00EDA7ED /* SelectSignInOptionView.swift */; };
@@ -230,6 +231,7 @@
 		837B0F5F2B89B22900B22455 /* SiriVoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriVoiceView.swift; sourceTree = "<group>"; };
 		837B0F612B89B49B00B22455 /* SiriResponsesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriResponsesView.swift; sourceTree = "<group>"; };
 		837B0F632B89B5E700B22455 /* SiriDictationHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriDictationHistoryView.swift; sourceTree = "<group>"; };
+		837B62FD2BD457F10045B95C /* FocusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusView.swift; sourceTree = "<group>"; };
 		837C03062B7F192F004D6C71 /* AppInstallationsPurchasesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInstallationsPurchasesView.swift; sourceTree = "<group>"; };
 		837C03082B7F1AE0004D6C71 /* SelectOptionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectOptionList.swift; sourceTree = "<group>"; };
 		837D1E272B96BF9B00EDA7ED /* SelectSignInOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSignInOptionView.swift; sourceTree = "<group>"; };
@@ -520,6 +522,8 @@
 			children = (
 				836000772BCC7A470034DDF5 /* NotificationsView.swift */,
 				838134F62BCDA9380049E197 /* SoundsHapticsView.swift */,
+				837B62FD2BD457F10045B95C /* FocusView.swift */,
+				838C23282B748F3B0053D4C5 /* ScreenTimeView.swift */,
 			);
 			path = Attention;
 			sourceTree = "<group>";
@@ -680,7 +684,6 @@
 				83DF95772B84390D00AEEB63 /* Siri & Search */,
 				83096BD62BA232C30082DB61 /* Game Center */,
 				83F626D22B827EEC00ED343F /* Developer */,
-				838C23282B748F3B0053D4C5 /* ScreenTimeView.swift */,
 				83815CFA2B76908700F53A0F /* ActionButtonView.swift */,
 				838C23222B746CF90053D4C5 /* GeneralView.swift */,
 				83815CE02B768CF300F53A0F /* MultitaskingGesturesView.swift */,
@@ -1082,6 +1085,7 @@
 				83D3086D2B8AD2BC002A9B7F /* RequestDesktopWebsiteView.swift in Sources */,
 				832FD83F2BC22EB000E99DEB /* BluetoothView.swift in Sources */,
 				83D308652B8ACF48002A9B7F /* SafariLocationView.swift in Sources */,
+				837B62FE2BD457F10045B95C /* FocusView.swift in Sources */,
 				83D308632B8ACD22002A9B7F /* WebsiteDataView.swift in Sources */,
 				83F626D42B827F0C00ED343F /* DisplayZoomView.swift in Sources */,
 				838A9EC42B7E823300ED261C /* CustomNavigationLink.swift in Sources */,

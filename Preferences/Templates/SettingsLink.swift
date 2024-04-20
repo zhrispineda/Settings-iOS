@@ -44,6 +44,8 @@ struct SettingsLink<Content: View>: View {
         self.content = content()
     }
     
+    let noBorders = ["moon.fill"]
+    
     var body: some View {
         NavigationLink(destination: content) {
             HStack(spacing: 15) {
