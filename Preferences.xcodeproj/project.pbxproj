@@ -62,6 +62,7 @@
 		837B0F622B89B49B00B22455 /* SiriResponsesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837B0F612B89B49B00B22455 /* SiriResponsesView.swift */; };
 		837B0F642B89B5E700B22455 /* SiriDictationHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837B0F632B89B5E700B22455 /* SiriDictationHistoryView.swift */; };
 		837B62FE2BD457F10045B95C /* FocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837B62FD2BD457F10045B95C /* FocusView.swift */; };
+		837B63002BD5FE8E0045B95C /* ControlCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837B62FF2BD5FE8E0045B95C /* ControlCenterView.swift */; };
 		837C03072B7F192F004D6C71 /* AppInstallationsPurchasesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C03062B7F192F004D6C71 /* AppInstallationsPurchasesView.swift */; };
 		837C03092B7F1AE0004D6C71 /* SelectOptionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C03082B7F1AE0004D6C71 /* SelectOptionList.swift */; };
 		837D1E282B96BF9B00EDA7ED /* SelectSignInOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D1E272B96BF9B00EDA7ED /* SelectSignInOptionView.swift */; };
@@ -232,6 +233,7 @@
 		837B0F612B89B49B00B22455 /* SiriResponsesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriResponsesView.swift; sourceTree = "<group>"; };
 		837B0F632B89B5E700B22455 /* SiriDictationHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriDictationHistoryView.swift; sourceTree = "<group>"; };
 		837B62FD2BD457F10045B95C /* FocusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusView.swift; sourceTree = "<group>"; };
+		837B62FF2BD5FE8E0045B95C /* ControlCenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlCenterView.swift; sourceTree = "<group>"; };
 		837C03062B7F192F004D6C71 /* AppInstallationsPurchasesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInstallationsPurchasesView.swift; sourceTree = "<group>"; };
 		837C03082B7F1AE0004D6C71 /* SelectOptionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectOptionList.swift; sourceTree = "<group>"; };
 		837D1E272B96BF9B00EDA7ED /* SelectSignInOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSignInOptionView.swift; sourceTree = "<group>"; };
@@ -520,6 +522,7 @@
 		836000762BCC7A3A0034DDF5 /* Attention */ = {
 			isa = PBXGroup;
 			children = (
+				838A9EC02B7E81D900ED261C /* Screen Time */,
 				836000772BCC7A470034DDF5 /* NotificationsView.swift */,
 				838134F62BCDA9380049E197 /* SoundsHapticsView.swift */,
 				837B62FD2BD457F10045B95C /* FocusView.swift */,
@@ -671,7 +674,6 @@
 				837D1E252B96BF4500EDA7ED /* Apple ID */,
 				832FD8402BC230D500E99DEB /* Radios */,
 				836000762BCC7A3A0034DDF5 /* Attention */,
-				838A9EC02B7E81D900ED261C /* Screen Time */,
 				838C232C2B74974B0053D4C5 /* General */,
 				837F1DD72B8AF40C00665EAB /* Accessibility */,
 				832928472B857763006611CF /* Privacy & Security */,
@@ -700,6 +702,7 @@
 				83815CF42B768F3600F53A0F /* PhotosView.swift */,
 				83815CF62B768F4800F53A0F /* GameCenterView.swift */,
 				83815CF82B768F5C00F53A0F /* DeveloperView.swift */,
+				837B62FF2BD5FE8E0045B95C /* ControlCenterView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1071,6 +1074,7 @@
 				83D31F952B8E64550057CFDB /* MovementToleranceView.swift in Sources */,
 				83815CF52B768F3600F53A0F /* PhotosView.swift in Sources */,
 				83F78A2D2B8EA3C900025062 /* AddFavoritePhraseView.swift in Sources */,
+				837B63002BD5FE8E0045B95C /* ControlCenterView.swift in Sources */,
 				83D3085F2B8AC3D3002A9B7F /* FeatureFlagsView.swift in Sources */,
 				832EF3982B8190430066A1BF /* DateFormatView.swift in Sources */,
 				83D31F6F2B8D1DCB0057CFDB /* LargerTextView.swift in Sources */,

@@ -131,7 +131,7 @@ let attentionSimulatorSettings: [SettingsItem] = [
 // Main Settings: General
 let mainSettings: [SettingsItem] = [
     SettingsItem(type: .general, title: "General", icon: "gear", color: .gray, destination: AnyView(GeneralView())),
-    SettingsItem(type: .controlCenter, title: "Control Center", icon: "switch.2", destination: AnyView(EmptyView())),
+    SettingsItem(type: .controlCenter, title: "Control Center", icon: "switch.2", destination: AnyView(ControlCenterView())),
     SettingsItem(type: .actionButton, title: "Action Button", icon: "actionbutton_Normal", color: .blue, destination: AnyView(ActionButtonView())),
     SettingsItem(type: .displayBrightness, title: "Display & Brightness", icon: "sun.max.fill", color: .blue, destination: AnyView(EmptyView())),
     SettingsItem(type: .homeScreenAppLibrary, title: "Home Screen & App Library", icon: "applehome screen & app library", color: .indigo, destination: AnyView(EmptyView())),
