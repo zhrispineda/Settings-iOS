@@ -45,7 +45,7 @@ struct SoundsHapticsView: View {
             Section(content: {
                 Group {
                     Slider(value: $volume,
-                           in: 0...100,
+                           in: 0...1,
                            minimumValueLabel: Image(systemName: "speaker.fill"),
                            maximumValueLabel: Image(systemName: "speaker.wave.3.fill"),
                            label: {
