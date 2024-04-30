@@ -18,7 +18,11 @@ struct AboutView: View {
     var body: some View {
         CustomList(title: "About") {
             Section {
-                HText("Name", status: UIDevice().localizedModel)
+                if Configuration().isSimulator {
+                    HText("Name", status: UIDevice().localizedModel)
+                } else {
+                    CustomNavigationLink(title: "Name", status: UIDevice().localizedModel, destination: EmptyView())
+                }
                 
                 CustomNavigationLink(title: "\(UIDevice().systemName) Version", status: UIDevice().systemVersion, destination: VersionView())
                 
@@ -40,6 +44,38 @@ struct AboutView: View {
                 HText("Applications", status: "1")
                 HText("Capacity", status: totalStorage)
                 HText("Available", status: availableStorage)
+            }
+            
+            if !Configuration().isSimulator {
+                HText("Wi-Fi Address", status: "00:0A:AA:A0:A0:00") // TODO: Monospaced Digits
+                HText("Bluetooth", status: "00:0A:AA:A0:A0:00") // TODO: Monospaced Digits
+                HText("Modem Firmware", status: "1.60.02") // TODO: Monospaced Digits
+                NavigationLink("SEID", destination: {})
+                VStack {
+                    Text("EID")
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                    Text("00000000000000000000000000000000")
+                        .foregroundStyle(.secondary)
+                        .font(.subheadline)
+                        .monospaced()
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                }
+                HText("Carrier Lock", status: "No SIM restrictions")
+                
+                Section(content: {
+                    HText("Network", status: "Network")
+                    HText("Carrier", status: "Carrier 0.0")
+                    HText("IMEI", status: "00 000000 000000 0") // TODO: Monospaced Digits
+                    HText("ICCID", status: "0000000000000000000") // TODO: Monospaced Digits
+                }, header: {
+                    Text("eSIM")
+                })
+                
+                Section(content: {
+                    HText("IMEI2", status: "00 000000 000000 0") // TODO: Monospaced Digits
+                }, header: {
+                    Text("Available SIM")
+                })
             }
             
             Section {
