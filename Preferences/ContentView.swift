@@ -32,26 +32,7 @@ struct ContentView: View {
                             Button(action: {
                                 showingSignInSheet.toggle()
                             }, label: {
-                                HStack {
-                                    Image(systemName: "person.crop.circle.fill")
-                                        .resizable()
-                                        .foregroundStyle(Color(UIColor.systemGray6), Color(UIColor.systemGray2))
-                                        .fontWeight(.thin)
-                                        .frame(width: 54, height: 54)
-                                    VStack {
-                                        Text("Sign in to your \(deviceInfo.model)")
-                                            .font(.system(size: 16))
-                                            .padding(.bottom, 0)
-                                            .frame(maxWidth: .infinity, alignment: .leading)
-                                        Text("Set up iCloud, the App Store, and more.")
-                                            .foregroundStyle(Color["Label"])
-                                            .font(.system(size: 13))
-                                            .frame(maxWidth: .infinity, alignment: .leading)
-                                            .padding(.trailing)
-                                    }
-                                    .padding(.leading, 5)
-                                }
-                                .padding(.vertical, -5)
+                                AppleAccountSection()
                             })
                             .sheet(isPresented: $showingSignInSheet, content: {
                                 NavigationStack {
@@ -111,7 +92,7 @@ struct ContentView: View {
                             
                             // MARK: Services Settings
                             Section {
-                                ForEach(servicesSettings) { setting in
+                                ForEach(serviceSettings) { setting in
                                     Button(action: {
                                         id = UUID() // Reset destination
                                         selection = setting.type
@@ -125,7 +106,7 @@ struct ContentView: View {
                             
                             // MARK: Apps Settings
                             Section {
-                                ForEach(appsSettings) { setting in
+                                ForEach(appSettings) { setting in
                                     if !phoneOnly.contains(setting.id) {
                                         Button(action: {
                                             id = UUID() // Reset destination
@@ -178,25 +159,7 @@ struct ContentView: View {
                                 Button(action: {
                                     showingSignInSheet.toggle()
                                 }, label: {
-                                    HStack {
-                                        Image(systemName: "person.crop.circle.fill")
-                                            .resizable()
-                                            .frame(width: 54, height: 54)
-                                            .foregroundStyle(Color(UIColor.systemGray6), Color(UIColor.systemGray2))
-                                            .fontWeight(.thin)
-                                        VStack {
-                                            Text("Sign in to your \(deviceInfo.model)")
-                                                .font(.system(size: 16))
-                                                .padding(.bottom, 0)
-                                                .frame(maxWidth: .infinity, alignment: .leading)
-                                            Text("Set up iCloud, the App Store, and more.")
-                                                .foregroundStyle(Color["Label"])
-                                                .font(.system(size: 13))
-                                                .frame(maxWidth: .infinity, alignment: .leading)
-                                        }
-                                        .padding(.leading, 5)
-                                    }
-                                    .padding(.vertical, -5)
+                                    AppleAccountSection()
                                 })
                                 .sheet(isPresented: $showingSignInSheet, content: {
                                     NavigationStack {
@@ -251,31 +214,13 @@ struct ContentView: View {
                             }
                             
                             // MARK: Services Settings
-                            Section {
-                                ForEach(servicesSettings) { setting in
-                                    SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, content: {
-                                        setting.destination
-                                    })
-                                }
-                            }
+                            SettingsLinkSection(item: serviceSettings)
                             
                             // MARK: Apps Settings
-                            Section {
-                                ForEach(appsSettings) { setting in
-                                    SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, content: {
-                                        setting.destination
-                                    })
-                                }
-                            }
+                            SettingsLinkSection(item: appSettings)
                             
                             // MARK: Developer Settings
-                            Section {
-                                ForEach(developerSettings) { setting in
-                                    SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, content: {
-                                        setting.destination
-                                    })
-                                }
-                            }
+                            SettingsLinkSection(item: developerSettings)
                         }
                         .navigationTitle("Settings")
                         .searchable(text: $searchText)
@@ -288,6 +233,46 @@ struct ContentView: View {
                     }
                     .id(id)
                 }
+            }
+        }
+    }
+}
+
+struct AppleAccountSection: View {
+    @EnvironmentObject var deviceInfo: DeviceInfo
+    
+    var body: some View {
+        HStack {
+            Image(systemName: "person.crop.circle.fill")
+                .resizable()
+                .frame(width: 54, height: 54)
+                .foregroundStyle(Color(UIColor.systemGray6), Color(UIColor.systemGray2))
+                .fontWeight(.thin)
+            VStack {
+                Text("Sign in to your \(deviceInfo.model)")
+                    .font(.system(size: 16))
+                    .padding(.bottom, 0)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                Text("Set up iCloud, the App Store, and more.")
+                    .foregroundStyle(Color["Label"])
+                    .font(.system(size: 13))
+                    .frame(maxWidth: .infinity, alignment: .leading)
+            }
+            .padding(.leading, 5)
+        }
+        .padding(.vertical, -5)
+    }
+}
+
+struct SettingsLinkSection: View {
+    var item: [SettingsItem<AnyView>]
+    
+    var body: some View {
+        Section {
+            ForEach(item) { setting in
+                SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, content: {
+                    setting.destination
+                })
             }
         }
     }

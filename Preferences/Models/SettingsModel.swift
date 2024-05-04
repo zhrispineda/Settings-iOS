@@ -143,12 +143,12 @@ let mainSettings: [SettingsItem] = [
 ]
 
 // Services Settings: Passwords
-let servicesSettings: [SettingsItem] = [
+let serviceSettings: [SettingsItem] = [
     SettingsItem(type: .passwords, title: "Passwords", icon: "key.fill", color: .gray, destination: AnyView(PasswordsView()))
 ]
 
-// Apps Settings: Safari
-let appsSettings: [SettingsItem] = [
+// App Settings: Safari, News, Trnalsate, Maps, Shortcuts, Health, Siri & Search, Photos, Game Center
+let appSettings: [SettingsItem] = [
     SettingsItem(type: .safari, title: "Safari", icon: "applesafari", destination: AnyView(SafariView())),
     SettingsItem(type: .news, title: "News", icon: "applenews", destination: AnyView(NewsView())),
     SettingsItem(type: .translate, title: "Translate", icon: "Placeholder_Normal", color: .white, destination: AnyView(TranslateView())),
@@ -166,4 +166,4 @@ let developerSettings: [SettingsItem] = [
 ]
 
 // Combined Settings Array
-let combinedSettings = radioSettings + attentionSettings + mainSettings + servicesSettings + appsSettings + developerSettings
+let combinedSettings = radioSettings + attentionSettings + mainSettings + serviceSettings + appSettings + developerSettings
