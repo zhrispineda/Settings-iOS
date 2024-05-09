@@ -28,13 +28,18 @@ struct GeneralView: View {
                     NavigationLink("AirDrop", destination: EmptyView())
                     NavigationLink("AirPlay & Handoff", destination: EmptyView())
                     NavigationLink("Picture in Picture", destination: EmptyView())
+                    NavigationLink("CarPlay", destination: EmptyView())
                 }
+            }
+            
+            if !Configuration().isSimulator && DeviceInfo().hasHomeButton {
+                NavigationLink("Home Button", destination: EmptyView())
             }
             
             if !Configuration().isSimulator {
                 Section {
-                    NavigationLink("CarPlay", destination: EmptyView())
-                    NavigationLink("Matter Accessories", destination: EmptyView())
+                    //NavigationLink("CarPlay", destination: EmptyView())
+                    //NavigationLink("Matter Accessories", destination: EmptyView())
                 }
             }
             

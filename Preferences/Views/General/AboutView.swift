@@ -26,7 +26,7 @@ struct AboutView: View {
                 
                 CustomNavigationLink(title: "\(UIDevice().systemName) Version", status: UIDevice().systemVersion, destination: VersionView())
                 
-                HText("Model Name", status: UIDevice.current.name)
+                HText("Model Name", status: DeviceInfo().hasHomeButton && DeviceInfo().isPhone ? "iPhone SE" : UIDevice.current.name)
                 HText("Model Number", status: showingModelNumber ? getModelNumber() : "\(getModelNumber())LL/A")
                     .onTapGesture {
                         showingModelNumber.toggle()
@@ -36,6 +36,15 @@ struct AboutView: View {
                         serialNumber = randomSerialNumber()
                     })
             }
+            
+            Section(content: {
+                CustomNavigationLink(title: "Limited Warranty", status: "Expires: 1/1/25", destination: EmptyView())
+                Button(action: {}, label: {
+                    Text("Add AppleCare+ Coverage")
+                })
+            }, footer: {
+                Text("There are 60 days left to add coverage for accidental damage.")
+            })
             
             Section {
                 HText("Songs", status: "0")
