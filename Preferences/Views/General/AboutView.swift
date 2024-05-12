@@ -77,7 +77,7 @@ struct AboutView: View {
                     HText("IMEI", status: "00 000000 000000 0") // TODO: Monospaced Digits
                     HText("ICCID", status: "0000000000000000000") // TODO: Monospaced Digits
                 }, header: {
-                    Text("eSIM")
+                    Text(DeviceInfo().hasHomeButton && DeviceInfo().isPhone ? "Physical SIM" : "eSIM")
                 })
                 
                 Section(content: {

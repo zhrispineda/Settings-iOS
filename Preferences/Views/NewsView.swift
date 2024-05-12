@@ -23,8 +23,8 @@ struct NewsView: View {
                 SettingsLink(icon: "applesiri", id: "Siri & Search", content: {
                     SiriSearchDetailView(appName: "News")
                 })
-                IconToggle(enabled: liveActivitiesEnabled, color: .blue, icon: "clock.badge.fill", title: "Live Activities")
-                IconToggle(enabled: backgroundAppRefreshEnabled, color: .gray, icon: "gear", title: "Background App Refresh")
+                IconToggle(enabled: $liveActivitiesEnabled, color: .blue, icon: "clock.badge.fill", title: "Live Activities")
+                IconToggle(enabled: $backgroundAppRefreshEnabled, color: .gray, icon: "gear", title: "Background App Refresh")
             }, header: {
                 Text("Allow News to Access")
             })

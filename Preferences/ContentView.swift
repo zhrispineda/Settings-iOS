@@ -16,6 +16,7 @@ struct ContentView: View {
     @State private var destination = AnyView(GeneralView())
     @State private var isOnLandscapeOrientation: Bool = UIDevice.current.orientation.isLandscape
     @State private var id = UUID()
+    @State private var airplaneModeEnabled = false
     let tabletOnly = ["Multitasking & Gestures"]
     let phoneOnly = ["Action Button", "Health"]
     
@@ -44,7 +45,7 @@ struct ContentView: View {
                             // MARK: Radio Settings
                             if !Configuration().isSimulator {
                                 Section {
-                                    IconToggle(enabled: false, color: Color.orange, icon: "airplane", title: "Airplane Mode")
+                                    IconToggle(enabled: $airplaneModeEnabled, color: Color.orange, icon: "airplane", title: "Airplane Mode")
                                     ForEach(radioSettings) { setting in
                                         Button(action: {
                                             id = UUID() // Reset destination
@@ -161,6 +162,8 @@ struct ContentView: View {
                                 }, label: {
                                     AppleAccountSection()
                                 })
+//                                NavigationLink("Services Included with Purchase", destination: {})
+//                                    .font(.subheadline)
                                 .sheet(isPresented: $showingSignInSheet, content: {
                                     NavigationStack {
                                         SelectSignInOptionView()
@@ -169,14 +172,21 @@ struct ContentView: View {
                                 })
                             }
                             
+//                            Section(content: {
+//                                NavigationLink("Add AppleCare+ Coverage", destination: {})
+//                            }, footer: {
+//                                Text("There are 60 days left to add coverage for accidental damage.")
+//                            })
+                            
                             if !Configuration().isSimulator {
                                 // MARK: Radio Settings
                                 Section {
-                                    IconToggle(enabled: false, color: Color.orange, icon: "airplane", title: "Airplane Mode")
+                                    IconToggle(enabled: $airplaneModeEnabled, color: Color.orange, icon: "airplane", title: "Airplane Mode")
                                     ForEach(radioSettings) { setting in
-                                        SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Wi-Fi" ? "On" : "", content: {
+                                        SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Wi-Fi" ? "On" : setting.id == "Cellular" && airplaneModeEnabled ? "Airplane Mode" : "", content: {
                                             setting.destination
                                         })
+                                        .disabled(setting.id == "Personal Hotspot" && airplaneModeEnabled)
                                     }
                                 }
                             }

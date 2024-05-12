@@ -22,7 +22,7 @@ struct PasswordOptionsView: View {
             })
             
             Section(content: {
-                IconToggle(enabled: keychainEnabled, color: .gray, icon: "key.fill", title: "Keychain")
+                IconToggle(enabled: $keychainEnabled, color: .gray, icon: "key.fill", title: "Keychain")
             }, header: {
                 Text("Use Passwords and Passkeys From:")
             })

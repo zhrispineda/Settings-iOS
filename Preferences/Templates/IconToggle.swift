@@ -18,7 +18,7 @@ import SwiftUI
 /// - Parameter title: The ``String`` name of the label to display.
 struct IconToggle: View {
     // Variables
-    @State var enabled = Bool()
+    @Binding var enabled: Bool
     var color = Color(.blue)
     var icon = String()
     var title = String()
@@ -51,5 +51,5 @@ struct IconToggle: View {
 }
 
 #Preview {
-    IconToggle()
+    IconToggle(enabled: .constant(false), color: .gray, icon: "gear", title: "Background App Refresh")
 }

@@ -22,7 +22,7 @@ struct MapsView: View {
                 SettingsLink(icon: "applesiri", id: "Siri & Search", content: {
                     SiriSearchDetailView(appName: "Maps")
                 })
-                IconToggle(enabled: backgroundAppRefreshEnabled, color: .gray, icon: "gear", title: "Background App Refresh")
+                IconToggle(enabled: $backgroundAppRefreshEnabled, color: .gray, icon: "gear", title: "Background App Refresh")
             }, header: {
                 Text("Allow Maps to Access")
             }, footer: {
