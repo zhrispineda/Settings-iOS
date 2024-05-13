@@ -19,40 +19,40 @@ struct AboutView: View {
         CustomList(title: "About") {
             Section {
                 if Configuration().isSimulator {
-                    HText("Name", status: UIDevice().localizedModel)
+                    LabeledContent("Name", value: UIDevice().localizedModel)
                 } else {
                     CustomNavigationLink(title: "Name", status: UIDevice().localizedModel, destination: EmptyView())
                 }
                 
                 CustomNavigationLink(title: "\(UIDevice().systemName) Version", status: UIDevice().systemVersion, destination: VersionView())
                 
-                HText("Model Name", status: DeviceInfo().hasHomeButton && DeviceInfo().isPhone ? "iPhone SE" : UIDevice.current.name)
-                HText("Model Number", status: showingModelNumber ? getModelNumber() : "\(getModelNumber())LL/A")
+                LabeledContent("Model Name", value: DeviceInfo().hasHomeButton && DeviceInfo().isPhone ? "iPhone SE" : UIDevice.current.name)
+                LabeledContent("Model Number", value: showingModelNumber ? getModelNumber() : "\(getModelNumber())LL/A")
                     .onTapGesture {
                         showingModelNumber.toggle()
                     }
-                HText("Serial Number", status: serialNumber)
+                LabeledContent("Serial Number", value: serialNumber)
                     .onAppear(perform: {
                         serialNumber = randomSerialNumber()
                     })
             }
             
-            Section(content: {
-                CustomNavigationLink(title: "Limited Warranty", status: "Expires: 1/1/25", destination: EmptyView())
-                Button(action: {}, label: {
-                    Text("Add AppleCare+ Coverage")
-                })
-            }, footer: {
-                Text("There are 60 days left to add coverage for accidental damage.")
-            })
+//            Section(content: {
+//                CustomNavigationLink(title: "Limited Warranty", status: "Expires: 1/1/25", destination: EmptyView())
+//                Button(action: {}, label: {
+//                    Text("Add AppleCare+ Coverage")
+//                })
+//            }, footer: {
+//                Text("There are 60 days left to add coverage for accidental damage.")
+//            })
             
             Section {
-                HText("Songs", status: "0")
-                HText("Videos", status: "0")
-                HText("Photos", status: "0")
-                HText("Applications", status: "1")
-                HText("Capacity", status: totalStorage)
-                HText("Available", status: availableStorage)
+                LabeledContent("Songs", value: "0")
+                LabeledContent("Videos", value: "0")
+                LabeledContent("Photos", value: "0")
+                LabeledContent("Applications", value: "1")
+                LabeledContent("Capacity", value: totalStorage)
+                LabeledContent("Available", value: availableStorage)
             }
             
             if !Configuration().isSimulator {

@@ -19,8 +19,8 @@ struct HealthDetailsView: View {
             }
             
             Section {
-                HText("First Name", status: "Not Set")
-                HText("Last Name", status: "Not Set")
+                LabeledContent("First Name", value: "Not Set")
+                LabeledContent("Last Name", value: "Not Set")
                 CustomNavigationLink(title: "Date of Birth", status: "Not Set", destination: HealthDetailsDataView(title: "Date of Birth"))
                 CustomNavigationLink(title: "Sex", status: "Not Set", destination: HealthDetailsDataView(title: "Sex"))
                 CustomNavigationLink(title: "Blood Type", status: "Not Set", destination: HealthDetailsDataView(title: "Blood Type"))

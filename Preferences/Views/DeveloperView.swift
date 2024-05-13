@@ -53,7 +53,7 @@ struct DeveloperView: View {
                         Button(action: {
                             showingDisplayZoomSheet.toggle()
                         }, label: {
-                            HText("View", status: "Default")
+                            LabeledContent("View", value: "Default")
                         })
                         .foregroundStyle(Color["Label"])
                         .sheet(isPresented: $showingDisplayZoomSheet) {

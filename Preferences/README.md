@@ -5,7 +5,7 @@ SwiftUI recreation of the iOS & iPadOS Settings app.
 Will be added at a later date.
 
 ## Information
-- This personal project is a recreation of Apple's current and default Settings app for iPhone and iPad on **(Simulator.app) and iOS/iPadOS** using 17.4 (21E213/21E219).
+- This personal project is a recreation of Apple's current and default Settings app for iPhone and iPad on **(Simulator.app) and iOS/iPadOS** using 17.5 (21F79).
 - All features within the app are only simulations and have no effect on the device outside of the app.
 - Most views are complete, but lack features such as saving data, including basic variables, for now.
 - Since this project is based off of the Simulator and not a physical iPhone or iPad yet, aspects such as simulated controls and views for wireless settings, are missing or incomplete for now, and will be added or completed in the future.

@@ -172,11 +172,11 @@ struct ContentView: View {
                                 })
                             }
                             
-//                            Section(content: {
-//                                NavigationLink("Add AppleCare+ Coverage", destination: {})
-//                            }, footer: {
-//                                Text("There are 60 days left to add coverage for accidental damage.")
-//                            })
+                            Section(content: {
+                                NavigationLink("Add AppleCare+ Coverage", destination: {})
+                            }, footer: {
+                                Text("There are 60 days left to add coverage for accidental damage.")
+                            })
                             
                             if !Configuration().isSimulator {
                                 // MARK: Radio Settings

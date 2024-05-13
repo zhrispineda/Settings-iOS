@@ -11,8 +11,8 @@ struct CertificateTrustSettingsView: View {
     var body: some View {
         CustomList(title: "Certificate Trust Settings") {
             Section(content: {
-                HText("Trust Store Version", status: "2023071300")
-                HText("Trust Asset Version", status: "1002")
+                LabeledContent("Trust Store Version", value: "2024040500")
+                LabeledContent("Trust Asset Version", value: "1003")
             }, footer: {
                 Text("[Learn more about trusted certificates](https://support.apple.com/kb/HT5012)")
             })
