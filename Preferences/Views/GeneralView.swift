@@ -27,8 +27,10 @@ struct GeneralView: View {
                 Section {
                     NavigationLink("AirDrop", destination: EmptyView())
                     NavigationLink("AirPlay & Handoff", destination: EmptyView())
-                    NavigationLink("Picture in Picture", destination: EmptyView())
-                    NavigationLink("CarPlay", destination: EmptyView())
+                    if DeviceInfo().isPhone {
+                        NavigationLink("Picture in Picture", destination: EmptyView())
+                        NavigationLink("CarPlay", destination: EmptyView())
+                    }
                 }
             }
             

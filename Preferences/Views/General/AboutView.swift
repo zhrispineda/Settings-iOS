@@ -106,10 +106,12 @@ struct AboutView: View {
             modelNumber = "A2595"
         case "iPad mini (6th generation)":
             modelNumber = "A2567"
-        case "iPad Pro (12.9-inch) (6th generation)":
-            modelNumber = "A2436"
         case "iPad Pro (11-inch) (4th generation)":
             modelNumber = "A2759"
+        case "iPad Pro (12.9-inch) (6th generation)":
+            modelNumber = "A2436"
+        case "iPad Pro 13-inch (M4)":
+            modelNumber = "A2925"
         default:
             modelNumber = "N/A"
         }
