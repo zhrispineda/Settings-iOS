@@ -52,6 +52,7 @@ class DeviceInfo: ObservableObject {
     var isTablet = UIDevice.current.localizedModel == "iPad"
     var isPro = UIDevice.current.name.contains("Pro")
     var isLargestTablet = UIDevice.current.name.contains("12.9")
+    var isStageManagerCapable = UIDevice.current.name.contains("Air (5th") || UIDevice.current.name.contains("M2") || UIDevice.current.name.contains("M4") || UIDevice.current.name.contains("Pro (11") || UIDevice.current.name.contains("(12.9-inch) (3") || UIDevice.current.name.contains("(12.9-inch) (4") || UIDevice.current.name.contains("(12.9-inch) (5") || UIDevice.current.name.contains("(12.9-inch) (6")
     var hasHomeButton = UIDevice.current.name.contains("SE")
     var hasFaceAuth = !UIDevice.current.name.contains("SE") && !UIDevice.current.name.contains("Air") && !UIDevice.current.name.contains("iPad (")
     var hasAlwaysOnDisplay = UIDevice.current.name.contains("14 Pro") || UIDevice.current.name.contains("15 Pro")
@@ -91,6 +92,8 @@ enum SettingsModel: String, CaseIterable {
     case siriSearch = "Siri & Search"
     case photos = "Photos"
     case gameCenter = "Game Center"
+    
+    case tvProvider = "TV Provider"
     
     case developer = "Developer"
 }
@@ -158,6 +161,12 @@ let appSettings: [SettingsItem] = [
     SettingsItem(type: .siriSearch, title: "Siri & Search", icon: "applesiri", color: Color(UIColor.systemBackground), destination: AnyView(SiriSearchView())),
     SettingsItem(type: .photos, title: "Photos", icon: "applephotos", destination: AnyView(PhotosView())),
     SettingsItem(type: .gameCenter, title: "Game Center", icon: "applegamecenter", destination: AnyView(GameCenterView()))
+]
+
+// TV Provider Settings: TV Provider
+let tvProviderSettings: [SettingsItem] = [
+    SettingsItem(type: .tvProvider, title: "TV Provider", icon: "cable.coaxial", color: .black, destination: AnyView(EmptyView()))
+
 ]
 
 // Developer Settings: Developer

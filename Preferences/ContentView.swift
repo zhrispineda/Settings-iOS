@@ -230,6 +230,9 @@ struct ContentView: View {
                             SettingsLinkSection(item: appSettings)
                             
                             // MARK: Developer Settings
+                            SettingsLinkSection(item: tvProviderSettings)
+                            
+                            // MARK: Developer Settings
                             SettingsLinkSection(item: developerSettings)
                         }
                         .navigationTitle("Settings")
