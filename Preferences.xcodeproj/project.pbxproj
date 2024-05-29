@@ -176,6 +176,7 @@
 		83F78A2B2B8EA38300025062 /* FavoritePhrasesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F78A2A2B8EA38300025062 /* FavoritePhrasesView.swift */; };
 		83F78A2D2B8EA3C900025062 /* AddFavoritePhraseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F78A2C2B8EA3C900025062 /* AddFavoritePhraseView.swift */; };
 		83FCEFE52C07D7B2008BE814 /* Settings.gif in Resources */ = {isa = PBXBuildFile; fileRef = 83FCEFE42C07D7B2008BE814 /* Settings.gif */; };
+		83FCEFEA2C07F0DE008BE814 /* NetworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FCEFE92C07F0DE008BE814 /* NetworkDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -351,6 +352,7 @@
 		83F78A2A2B8EA38300025062 /* FavoritePhrasesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePhrasesView.swift; sourceTree = "<group>"; };
 		83F78A2C2B8EA3C900025062 /* AddFavoritePhraseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFavoritePhraseView.swift; sourceTree = "<group>"; };
 		83FCEFE42C07D7B2008BE814 /* Settings.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Settings.gif; sourceTree = "<group>"; };
+		83FCEFE92C07F0DE008BE814 /* NetworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -462,6 +464,7 @@
 		832FD8402BC230D500E99DEB /* Radios */ = {
 			isa = PBXGroup;
 			children = (
+				83FCEFE62C07F044008BE814 /* Network */,
 				832F517E2BBF4DC900335E5E /* NetworkView.swift */,
 				832FD83E2BC22EB000E99DEB /* BluetoothView.swift */,
 				8335A70B2BC358E8001E199D /* CellularView.swift */,
@@ -982,6 +985,14 @@
 			path = "Favorite Phrases";
 			sourceTree = "<group>";
 		};
+		83FCEFE62C07F044008BE814 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				83FCEFE92C07F0DE008BE814 /* NetworkDetailView.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1084,6 +1095,7 @@
 				838C23292B748F3B0053D4C5 /* ScreenTimeView.swift in Sources */,
 				83B893B92B8FCE5F005705A3 /* HoverTextFontView.swift in Sources */,
 				83815CE52B768DBA00F53A0F /* PasswordsView.swift in Sources */,
+				83FCEFEA2C07F0DE008BE814 /* NetworkDetailView.swift in Sources */,
 				83D31F732B8D458E0057CFDB /* SpeakSelectionView.swift in Sources */,
 				83815CF72B768F4800F53A0F /* GameCenterView.swift in Sources */,
 				83D31F952B8E64550057CFDB /* MovementToleranceView.swift in Sources */,

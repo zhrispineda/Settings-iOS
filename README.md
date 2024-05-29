@@ -1,5 +1,5 @@
 #  Settings-iOS
-SwiftUI recreation of the iOS & iPadOS Settings app.
+SwiftUI (work-in-progress) recreation of the iOS & iPadOS Settings app.
 
 ## Examples
 ![A GIF displaying the project's Settings app on different devices including a Dynamic Island iPhone, iPhone SE, and 11-inch iPad Pro.](Assets/Settings.gif)
