@@ -175,6 +175,7 @@
 		83F78A282B8EA1FF00025062 /* LiveSpeechView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F78A272B8EA1FF00025062 /* LiveSpeechView.swift */; };
 		83F78A2B2B8EA38300025062 /* FavoritePhrasesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F78A2A2B8EA38300025062 /* FavoritePhrasesView.swift */; };
 		83F78A2D2B8EA3C900025062 /* AddFavoritePhraseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F78A2C2B8EA3C900025062 /* AddFavoritePhraseView.swift */; };
+		83FCEFE52C07D7B2008BE814 /* Settings.gif in Resources */ = {isa = PBXBuildFile; fileRef = 83FCEFE42C07D7B2008BE814 /* Settings.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -349,6 +350,7 @@
 		83F78A272B8EA1FF00025062 /* LiveSpeechView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveSpeechView.swift; sourceTree = "<group>"; };
 		83F78A2A2B8EA38300025062 /* FavoritePhrasesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePhrasesView.swift; sourceTree = "<group>"; };
 		83F78A2C2B8EA3C900025062 /* AddFavoritePhraseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFavoritePhraseView.swift; sourceTree = "<group>"; };
+		83FCEFE42C07D7B2008BE814 /* Settings.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Settings.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -362,6 +364,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		83012BD62BFE516A00BF431C /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				83FCEFE42C07D7B2008BE814 /* Settings.gif */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		83096BD62BA232C30082DB61 /* Game Center */ = {
 			isa = PBXGroup;
 			children = (
@@ -479,6 +489,7 @@
 		833F0ACE2B744D180036EAD2 /* Preferences */ = {
 			isa = PBXGroup;
 			children = (
+				83012BD62BFE516A00BF431C /* Assets */,
 				83B893C12B8FDD94005705A3 /* README.md */,
 				83CC61982B7952B800DAF0C1 /* Info.plist */,
 				83B893BE2B8FDBDB005705A3 /* Resources */,
@@ -1030,6 +1041,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83B893C02B8FDBE8005705A3 /* iPhone15_Pro_NaturalTitanium_v0005-D83-D84.usdz in Resources */,
+				83FCEFE52C07D7B2008BE814 /* Settings.gif in Resources */,
 				833F0AD72B744D190036EAD2 /* Preview Assets.xcassets in Resources */,
 				833F0AD42B744D190036EAD2 /* Assets.xcassets in Resources */,
 			);
