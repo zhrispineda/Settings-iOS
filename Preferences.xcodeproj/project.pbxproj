@@ -473,6 +473,8 @@
 		833F0AC32B744D180036EAD2 = {
 			isa = PBXGroup;
 			children = (
+				83012BD62BFE516A00BF431C /* Assets */,
+				83B893C12B8FDD94005705A3 /* README.md */,
 				833F0ACE2B744D180036EAD2 /* Preferences */,
 				833F0ACD2B744D180036EAD2 /* Products */,
 			);
@@ -489,8 +491,6 @@
 		833F0ACE2B744D180036EAD2 /* Preferences */ = {
 			isa = PBXGroup;
 			children = (
-				83012BD62BFE516A00BF431C /* Assets */,
-				83B893C12B8FDD94005705A3 /* README.md */,
 				83CC61982B7952B800DAF0C1 /* Info.plist */,
 				83B893BE2B8FDBDB005705A3 /* Resources */,
 				838C23272B746D6B0053D4C5 /* Templates */,
