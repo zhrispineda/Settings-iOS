@@ -13,6 +13,7 @@ SwiftUI (work-in-progress) recreation of the iOS & iPadOS Settings app.
 
 ## Usage
 Open the project in Xcode and run with either a Simulator instance running iOS/iPadOS or a physical iPhone/iPad with Developer Mode enabled as a destination.
+To switch between the simulator or physical-like view of Settings, modify the `isSimulator` variable on line 12 of `SettingsModel.swift` under Preferences/Models.
 
 As this is a personal project for learning Swift and SwiftUI, feel free to fork, explore, and make the project your own for any personal purpose!
 

@@ -12,6 +12,7 @@ struct NetworkView: View {
     @State var editMode: EditMode = .inactive
     @State var isEditing = false
     @State private var networkEnabled = true
+    @State private var showingOtherNetwork = false
     
     var body: some View {
         CustomList(title: "Wi-Fi") {
@@ -38,12 +39,18 @@ struct NetworkView: View {
                 
                 if networkEnabled {
                     Section(content: {
-                        Button(action: {}, label: {
+                        Button(action: {
+                            showingOtherNetwork.toggle()
+                        }, label: {
                             HStack {
                                 Image(systemName: "checkmark")
                                     .foregroundStyle(.clear)
                                 Text("Other...")
                                     .foregroundStyle(Color["Label"])
+                                    .popover(isPresented: $showingOtherNetwork, content: {
+                                        OtherNetworkView()
+                                            .foregroundStyle(Color["Label"])
+                                    })
                             }
                         })
                     }, header: {
