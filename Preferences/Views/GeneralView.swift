@@ -13,7 +13,7 @@ struct GeneralView: View {
             Section {
                 NavigationLink("About", destination: AboutView())
                 if !Configuration().isSimulator {
-                    NavigationLink("Software Update", destination: {})
+                    NavigationLink("Software Update", destination: SoftwareUpdateView())
                 }
             }
             

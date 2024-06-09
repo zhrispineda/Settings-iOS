@@ -154,7 +154,7 @@ let serviceSettings: [SettingsItem] = [
 let appSettings: [SettingsItem] = [
     SettingsItem(type: .safari, title: "Safari", icon: "applesafari", destination: AnyView(SafariView())),
     SettingsItem(type: .news, title: "News", icon: "applenews", destination: AnyView(NewsView())),
-    SettingsItem(type: .translate, title: "Translate", icon: "Placeholder_Normal", color: .white, destination: AnyView(TranslateView())),
+    SettingsItem(type: .translate, title: "Translate", icon: Configuration().isSimulator ? "Placeholder_Normal" : "appletranslate", color: .white, destination: AnyView(TranslateView())),
     SettingsItem(type: .maps, title: "Maps", icon: "applemaps", destination: AnyView(MapsView())),
     SettingsItem(type: .shortcuts, title: "Shortcuts", icon: "appleshortcuts", destination: AnyView(ShortcutsView())),
     SettingsItem(type: .health, title: "Health", icon: "applehealth", destination: AnyView(HealthView())),
