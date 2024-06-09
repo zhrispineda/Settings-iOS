@@ -56,6 +56,7 @@ class DeviceInfo: ObservableObject {
     var hasHomeButton = UIDevice.current.name.contains("SE")
     var hasFaceAuth = !UIDevice.current.name.contains("SE") && !UIDevice.current.name.contains("Air") && !UIDevice.current.name.contains("iPad (")
     var hasAlwaysOnDisplay = UIDevice.current.name.contains("14 Pro") || UIDevice.current.name.contains("15 Pro")
+    var hasExtraBatteryFeatures = UIDevice.current.name.contains("15") || (UIDevice.current.name.contains("Air") && UIDevice.current.name.contains("M2")) || UIDevice.current.name.contains("M4")
 }
 
 
@@ -79,6 +80,7 @@ enum SettingsModel: String, CaseIterable {
     case multitaskGestures = "Multitasking & Gestures"
     case accessibility = "Accessibility"
     case wallpaper = "Wallpaper"
+    case battery = "Battery"
     case privacySecurity = "Privacy & Security"
     
     case passwords = "Passwords"
@@ -108,7 +110,7 @@ struct SettingsItem<Content: View>: Identifiable {
 }
 
 // MARK: SF Symbol names for smaller icons
-let smallerIcons = ["airplane", "arrow.turn.up.forward.iphone", "personalhotspot", "speaker.3.fill", "moon.fill", "squares.leading.rectangle", "key.fill", "hammer.fill", "shareplay", "wifi"]
+let smallerIcons = ["airplane", "arrow.turn.up.forward.iphone", "battery.100percent", "personalhotspot", "speaker.3.fill", "moon.fill", "squares.leading.rectangle", "key.fill", "hammer.fill", "shareplay", "wifi"]
 
 // Radio Settings: Wi-Fi, Bluetooth, Cellular, Personal Hotspot, VPN
 let radioSettings: [SettingsItem] = [
@@ -142,6 +144,7 @@ let mainSettings: [SettingsItem] = [
     SettingsItem(type: .multitaskGestures, title: "Multitasking & Gestures", icon: "squares.leading.rectangle", color: .blue, destination: AnyView(MultitaskingGesturesView())),
     SettingsItem(type: .accessibility, title: "Accessibility", icon: "accessibility", color: .blue, destination: AnyView(AccessibilityView())),
     SettingsItem(type: .wallpaper, title: "Wallpaper", icon: "Wallpaper", color: .clear, destination: AnyView(EmptyView())),
+    SettingsItem(type: .battery, title: "Battery", icon: "battery.100percent", color: .green, destination: AnyView(BatteryView())),
     SettingsItem(type: .privacySecurity, title: "Privacy & Security", icon: "hand.raised.fill", color: .blue, destination: AnyView(PrivacySecurityView()))
 ]
 

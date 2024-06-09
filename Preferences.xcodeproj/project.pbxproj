@@ -110,6 +110,7 @@
 		838C23302B74978C0053D4C5 /* HText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838C232F2B74978C0053D4C5 /* HText.swift */; };
 		839092BB2C0D213200924849 /* OtherNetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839092BA2C0D213200924849 /* OtherNetworkView.swift */; };
 		83AFA1022BC87FC8008D4E57 /* HotspotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AFA1012BC87FC8008D4E57 /* HotspotView.swift */; };
+		83B5504E2C165A85002DA622 /* BatteryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B5504D2C165A85002DA622 /* BatteryView.swift */; };
 		83B619C92B93DEBD00EFEA90 /* ScreenDistanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B619C82B93DEBD00EFEA90 /* ScreenDistanceView.swift */; };
 		83B619CB2B93EE2400EFEA90 /* AppWebsiteActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B619CA2B93EE2400EFEA90 /* AppWebsiteActivityView.swift */; };
 		83B619CD2B93F91500EFEA90 /* DowntimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B619CC2B93F91500EFEA90 /* DowntimeView.swift */; };
@@ -286,6 +287,7 @@
 		838C232F2B74978C0053D4C5 /* HText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HText.swift; sourceTree = "<group>"; };
 		839092BA2C0D213200924849 /* OtherNetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherNetworkView.swift; sourceTree = "<group>"; };
 		83AFA1012BC87FC8008D4E57 /* HotspotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotspotView.swift; sourceTree = "<group>"; };
+		83B5504D2C165A85002DA622 /* BatteryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryView.swift; sourceTree = "<group>"; };
 		83B619C82B93DEBD00EFEA90 /* ScreenDistanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenDistanceView.swift; sourceTree = "<group>"; };
 		83B619CA2B93EE2400EFEA90 /* AppWebsiteActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWebsiteActivityView.swift; sourceTree = "<group>"; };
 		83B619CC2B93F91500EFEA90 /* DowntimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DowntimeView.swift; sourceTree = "<group>"; };
@@ -712,6 +714,7 @@
 				83D268792BD7303800A86DA9 /* DisplayBrightnessView.swift */,
 				83815CE02B768CF300F53A0F /* MultitaskingGesturesView.swift */,
 				83815CDE2B768C2200F53A0F /* AccessibilityView.swift */,
+				83B5504D2C165A85002DA622 /* BatteryView.swift */,
 				83815CE22B768D5800F53A0F /* PrivacySecurityView.swift */,
 				83815CE42B768DBA00F53A0F /* PasswordsView.swift */,
 				83815CE62B768DF100F53A0F /* SafariView.swift */,
@@ -1092,6 +1095,7 @@
 				833F190B2B8BE05A00067C37 /* DisplayTextSizeView.swift in Sources */,
 				83D31F832B8D9AAC0057CFDB /* HighlightColorView.swift in Sources */,
 				83F3F6A12B7D12B6003CC310 /* DictionaryView.swift in Sources */,
+				83B5504E2C165A85002DA622 /* BatteryView.swift in Sources */,
 				8356839B2B755AB3000FB136 /* KeyboardView.swift in Sources */,
 				838C232E2B7497530053D4C5 /* AboutView.swift in Sources */,
 				837F1DCB2B8AEF1A00665EAB /* DownloadsView.swift in Sources */,
