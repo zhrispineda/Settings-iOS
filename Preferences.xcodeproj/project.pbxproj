@@ -111,6 +111,7 @@
 		839092BB2C0D213200924849 /* OtherNetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839092BA2C0D213200924849 /* OtherNetworkView.swift */; };
 		83AFA1022BC87FC8008D4E57 /* HotspotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AFA1012BC87FC8008D4E57 /* HotspotView.swift */; };
 		83B5504E2C165A85002DA622 /* BatteryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B5504D2C165A85002DA622 /* BatteryView.swift */; };
+		83B550512C166AD2002DA622 /* BatteryHealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B550502C166AD2002DA622 /* BatteryHealthView.swift */; };
 		83B619C92B93DEBD00EFEA90 /* ScreenDistanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B619C82B93DEBD00EFEA90 /* ScreenDistanceView.swift */; };
 		83B619CB2B93EE2400EFEA90 /* AppWebsiteActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B619CA2B93EE2400EFEA90 /* AppWebsiteActivityView.swift */; };
 		83B619CD2B93F91500EFEA90 /* DowntimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B619CC2B93F91500EFEA90 /* DowntimeView.swift */; };
@@ -288,6 +289,7 @@
 		839092BA2C0D213200924849 /* OtherNetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherNetworkView.swift; sourceTree = "<group>"; };
 		83AFA1012BC87FC8008D4E57 /* HotspotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotspotView.swift; sourceTree = "<group>"; };
 		83B5504D2C165A85002DA622 /* BatteryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryView.swift; sourceTree = "<group>"; };
+		83B550502C166AD2002DA622 /* BatteryHealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryHealthView.swift; sourceTree = "<group>"; };
 		83B619C82B93DEBD00EFEA90 /* ScreenDistanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenDistanceView.swift; sourceTree = "<group>"; };
 		83B619CA2B93EE2400EFEA90 /* AppWebsiteActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWebsiteActivityView.swift; sourceTree = "<group>"; };
 		83B619CC2B93F91500EFEA90 /* DowntimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DowntimeView.swift; sourceTree = "<group>"; };
@@ -698,6 +700,7 @@
 				836000762BCC7A3A0034DDF5 /* Attention */,
 				838C232C2B74974B0053D4C5 /* General */,
 				837F1DD72B8AF40C00665EAB /* Accessibility */,
+				83B5504F2C166AC5002DA622 /* Battery */,
 				832928472B857763006611CF /* Privacy & Security */,
 				8319CE472B86D17B007EC822 /* Passwords */,
 				83D3085A2B8AC28B002A9B7F /* Safari */,
@@ -771,6 +774,14 @@
 				83F3F6A22B7D1454003CC310 /* VPNDeviceManagementView.swift */,
 			);
 			path = General;
+			sourceTree = "<group>";
+		};
+		83B5504F2C166AC5002DA622 /* Battery */ = {
+			isa = PBXGroup;
+			children = (
+				83B550502C166AD2002DA622 /* BatteryHealthView.swift */,
+			);
+			path = Battery;
 			sourceTree = "<group>";
 		};
 		83B893B72B8FCB7D005705A3 /* Hover Text */ = {
@@ -1178,6 +1189,7 @@
 				8373E7362B91660F004285EA /* SensitivePhotosVideosProtectionSheetView.swift in Sources */,
 				83D31F972B8E645D0057CFDB /* HotCornersView.swift in Sources */,
 				835683922B753FDD000FB136 /* SettingsLink.swift in Sources */,
+				83B550512C166AD2002DA622 /* BatteryHealthView.swift in Sources */,
 				835683972B754EE4000FB136 /* VersionView.swift in Sources */,
 				83F78A2B2B8EA38300025062 /* FavoritePhrasesView.swift in Sources */,
 				83D31F8D2B8E41110057CFDB /* TouchView.swift in Sources */,

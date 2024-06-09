@@ -23,8 +23,10 @@ struct BatteryView: View {
             
             Section {
                 if DeviceInfo().hasExtraBatteryFeatures {
-                    CustomNavigationLink(title: "Battery Health", status: "Normal", destination: EmptyView())
-                    CustomNavigationLink(title: "Charging Optimization", status: "Optimized", destination: EmptyView())
+                    CustomNavigationLink(title: "Battery Health", status: "Normal", destination: BatteryHealthView())
+                    if DeviceInfo().isPhone {
+                        CustomNavigationLink(title: "Charging Optimization", status: "Optimized", destination: EmptyView())
+                    }
                 } else {
                     NavigationLink("Battery Health & Charging", destination: {})
                 }
