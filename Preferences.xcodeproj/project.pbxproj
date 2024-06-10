@@ -112,6 +112,7 @@
 		83AFA1022BC87FC8008D4E57 /* HotspotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AFA1012BC87FC8008D4E57 /* HotspotView.swift */; };
 		83B5504E2C165A85002DA622 /* BatteryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B5504D2C165A85002DA622 /* BatteryView.swift */; };
 		83B550512C166AD2002DA622 /* BatteryHealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B550502C166AD2002DA622 /* BatteryHealthView.swift */; };
+		83B550532C169BE3002DA622 /* ChargingOptimizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B550522C169BE3002DA622 /* ChargingOptimizationView.swift */; };
 		83B619C92B93DEBD00EFEA90 /* ScreenDistanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B619C82B93DEBD00EFEA90 /* ScreenDistanceView.swift */; };
 		83B619CB2B93EE2400EFEA90 /* AppWebsiteActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B619CA2B93EE2400EFEA90 /* AppWebsiteActivityView.swift */; };
 		83B619CD2B93F91500EFEA90 /* DowntimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B619CC2B93F91500EFEA90 /* DowntimeView.swift */; };
@@ -290,6 +291,7 @@
 		83AFA1012BC87FC8008D4E57 /* HotspotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotspotView.swift; sourceTree = "<group>"; };
 		83B5504D2C165A85002DA622 /* BatteryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryView.swift; sourceTree = "<group>"; };
 		83B550502C166AD2002DA622 /* BatteryHealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryHealthView.swift; sourceTree = "<group>"; };
+		83B550522C169BE3002DA622 /* ChargingOptimizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingOptimizationView.swift; sourceTree = "<group>"; };
 		83B619C82B93DEBD00EFEA90 /* ScreenDistanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenDistanceView.swift; sourceTree = "<group>"; };
 		83B619CA2B93EE2400EFEA90 /* AppWebsiteActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWebsiteActivityView.swift; sourceTree = "<group>"; };
 		83B619CC2B93F91500EFEA90 /* DowntimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DowntimeView.swift; sourceTree = "<group>"; };
@@ -780,6 +782,7 @@
 			isa = PBXGroup;
 			children = (
 				83B550502C166AD2002DA622 /* BatteryHealthView.swift */,
+				83B550522C169BE3002DA622 /* ChargingOptimizationView.swift */,
 			);
 			path = Battery;
 			sourceTree = "<group>";
@@ -1138,6 +1141,7 @@
 				83D3086D2B8AD2BC002A9B7F /* RequestDesktopWebsiteView.swift in Sources */,
 				832FD83F2BC22EB000E99DEB /* BluetoothView.swift in Sources */,
 				83D308652B8ACF48002A9B7F /* SafariLocationView.swift in Sources */,
+				83B550532C169BE3002DA622 /* ChargingOptimizationView.swift in Sources */,
 				837B62FE2BD457F10045B95C /* FocusView.swift in Sources */,
 				83D308632B8ACD22002A9B7F /* WebsiteDataView.swift in Sources */,
 				83F626D42B827F0C00ED343F /* DisplayZoomView.swift in Sources */,
