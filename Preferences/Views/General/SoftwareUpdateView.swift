@@ -17,7 +17,7 @@ struct SoftwareUpdateView: View {
                 CustomNavigationLink(title: "Automatic Updates", status: "On", destination: AutomaticUpdateView())
                 
                 if !checkingForUpdates && !updateCheckFailed {
-                    CustomNavigationLink(title: "Beta Updates", status: "\(UIDevice().systemName) 17 Developer Beta", destination: EmptyView())
+                    CustomNavigationLink(title: "Beta Updates", status: "\(UIDevice().systemName) 17 Developer Beta", destination: BetaUpdatesView())
                 }
             }
             
