@@ -14,7 +14,7 @@ struct SoftwareUpdateView: View {
     var body: some View {
         CustomList(title: "Software Update") {
             Section {
-                CustomNavigationLink(title: "Automatic Updates", status: "On", destination: EmptyView())
+                CustomNavigationLink(title: "Automatic Updates", status: "On", destination: AutomaticUpdateView())
                 
                 if !checkingForUpdates && !updateCheckFailed {
                     CustomNavigationLink(title: "Beta Updates", status: "\(UIDevice().systemName) 17 Developer Beta", destination: EmptyView())
@@ -40,7 +40,7 @@ struct SoftwareUpdateView: View {
                     }
                     
                     withAnimation {
-                        Text(checkingForUpdates ? "Checking for Updates..." : (updateCheckFailed ? "An error occurred while checking for a software update." : "\(UIDevice().systemName) is up to date"))
+                        Text(checkingForUpdates ? "Checking for Update..." : (updateCheckFailed ? "An error occurred while checking for a software update." : "\(UIDevice().systemName) is up to date"))
                             .font(.system(size: 12))
                             .foregroundStyle(.gray)
                             .padding(.bottom, 10)
