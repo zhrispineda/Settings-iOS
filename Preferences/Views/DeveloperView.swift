@@ -37,16 +37,18 @@ struct DeveloperView: View {
     @State private var showGraphicsHudEnabled = false
     @State private var logGraphicsPerformanceEnabled = false
     
+    @State private var hidLoggingEnabled = false
+    
     var body: some View {
         CustomList(title: "Developer") {
-            Section(content: {
+            Section {
                 Toggle("Dark Appearance", isOn: $darkAppearanceEnabled)
-            }, header: {
+            } header: {
                 Text("Appearance")
-            })
+            }
             
             if DeviceInfo().isPhone || (DeviceInfo().isTablet && DeviceInfo().isPro) {
-                Section(content: {
+                Section {
                     if DeviceInfo().isPhone {
                         CustomNavigationLink(title: "View", status: "Default", destination: DisplayZoomView())
                     } else {
@@ -62,137 +64,145 @@ struct DeveloperView: View {
                             }
                         }
                     }
-                }, header: {
+                } header: {
                     Text("Display Zoom")
-                }, footer: {
+                } footer: {
                     Text("Choose a view for \(UIDevice().localizedModel). Zoomed shows larger controls. Standard shows more content.")
-                })
+                }
             }
             
-            Section(content: {
+            Section {
                 Button("Clear Trusted Computer", action: {})
-            }, header: {
+            } header: {
                 Text("Paired Devices")
-            }, footer: {
+            } footer: {
                 Text("Removing trusted computers will delete all of the records of computers that you have paired with previously.")
-            })
+            }
             
-            Section(content: {
+            Section {
                 Toggle("Enable UI Automation", isOn: $uiAutomationEnabled)
-            }, header: {
+            } header: {
                 Text("UI Automation")
-            })
+            }
             
-            Section(content: {
+            Section {
                 Toggle("Fast App Termination", isOn: $fastAppTerminationEnabled)
-            }, header: {
+            } header: {
                 Text("State Restoration Testing")
-            }, footer: {
+            } footer: {
                 Text("Terminate instead of suspending apps when backgrounded to force apps to be relaunched when they are foregrounded.")
-            })
+            }
             
             if DeviceInfo().isPhone { // MARK: Wallet Testing
-                Section(content: {
+                Section {
                     Toggle("Additional Logging", isOn: $additionalLoggingEnabled)
                     Toggle("Allow HTTP Services", isOn: $allowHttpServicesEnabled)
                     Toggle("Disable Rate Limiting", isOn: $disableRateLimitingEnabled)
                     Toggle("NFC Pass Key Optional", isOn: $nfcPassKeyOptionalEnabled)
-                }, header: {
+                } header: {
                     Text("Wallet Testing")
-                })
+                }
             }
             
-            Section(content: {
-                NavigationLink("AirPlay Suggestions", destination: AirPlaySuggestionsView())
+            Section {
+                //NavigationLink("AirPlay Suggestions", destination: AirPlaySuggestionsView())
                 Button("Reset Media Services", action: {})
-            }, header: {
+            } header: {
                 Text("Media Services Testing")
-            })
+            }
             
-            Section(content: {
+            Section {
                 Toggle("Reset Local Data on Next Launch", isOn: $resetLocalDataNextLaunch)
-            }, header: {
+            } header: {
                 Text("News Testing")
-            }, footer: {
+            } footer: {
                 Text("Reset layouts, images, and other cached elements. Private data will not be affected.")
-            })
+            }
             
-            Section(content: {
+            Section {
                 NavigationLink("TV Provider", destination: TVProviderView())
-            }, header: {
+            } header: {
                 Text("TV Provider Testing")
-            })
+            }
             
-            Section(content: {
+            Section {
                 NavigationLink("TV App", destination: TVAppView())
-            }, header: {
+            } header: {
                 Text("TV App Testing")
-            })
+            }
             
-            Section(content: {
+            Section {
                 Button("Reindex All Items", action: {})
                 Button("Reindex All Items with Identifiers", action: {})
-            }, header: {
+            } header: {
                 Text("CoreSpotlight Testing")
-            })
+            }
             
-            Section(content: {
+            Section {
                 Toggle("WidgetKit Developer Mode", isOn: $widgetKitDeveloperModeEnabled)
-            }, header: {
+            } header: {
                 Text("WidgetKit Testing")
-            }, footer: {
+            } footer: {
                 Text("When turned on, your widgets will not be subject to the standard WidgetKit constraints to allow for debugging.")
-            })
+            }
             
-            Section(content: {
+            Section {
                 Toggle("Display Recent Shortcuts", isOn: $displayRecentShortcutsEnabled)
-            }, header: {
+            } header: {
                 Text("Shortcuts Testing")
-            }, footer: {
+            } footer: {
                 Text("When turned on, the Siri Suggestions Widget & Siri Watch Face show the most recently provided shortcuts rather than current predictions.")
-            })
+            }
             
-            Section(content: {
+            Section {
                 Toggle("Display Upcoming Media", isOn: $displayUpcomingMediaEnabled)
-            }, footer: {
+            } footer: {
                 Text("When turned on, Siri Suggestions in Search will show Upcoming Media Intents donated via INUpcomingMediaManager.")
-            })
+            }
             
-            Section(content: {
+            Section {
                 Toggle("Display Donations on Lock Screen", isOn: $displayDonationsLockScreenEnabled)
-            }, footer: {
+            } footer: {
                 Text("When turned on, the most recently donated shortcuts will be shown on the Lock Screen.")
-            })
+            }
             
-            Section(content: {
+            Section {
                 Button("Force Sync Shortcuts to Watch", action: {})
-            }, footer: {
+            } footer: {
                 Text("To force sync shortcuts, make sure Apple Watch is connected to its charger.")
-            })
+            }
             
-            Section(content: {
+            Section {
                 Toggle("Allow Any Domain", isOn: $allowAnyDomainsEnabled)
                 Toggle("Allow Unverified Sources", isOn: $allowUnverifiedSources)
-            }, header: {
+            } header: {
                 Text("Siri Event Suggestions Testing")
-            }, footer: {
+            } footer: {
                 Text("These settings affect Siri Event Suggestions from Mail and Safari. Enable Allow Any Domain to allow e-mails or web pages which have not yet been approved for Siri Event Suggestions by Apple. Enable Allow Unverified Sources to bypass DKIM or SSL authenticity verification for Siri Event Suggestions in Mail and Safari.")
-            })
+            }
             
-            Section(content: {
+            Section {
                 Toggle("Enable MIDI-CI", isOn: $enableMidiCi)
-            }, header: {
+            } header: {
                 Text("Enable MIDI-CI")
-            })
+            }
             
-            Section(content: {
+            Section {
                 Toggle("Show Graphics HUD", isOn: $showGraphicsHudEnabled)
                 Toggle("Log Graphics Performance", isOn: $logGraphicsPerformanceEnabled)
-            }, header: {
+            } header: {
                 Text("Graphics HUD")
-            }, footer: {
+            } footer: {
                 Text("The graphics performance HUD shows framerate, GPU time, memory usage, and can log performance data for later analysis.")
-            })
+            }
+            
+            Section {
+                Toggle("HID Logging", isOn: $hidLoggingEnabled)
+            } header: {
+                Text("Bluetooth Logging")
+            } footer: {
+                Text("Allow additional data exchanged over Bluetooth to be saved in packetlogger file.")
+            }
         }
     }
 }

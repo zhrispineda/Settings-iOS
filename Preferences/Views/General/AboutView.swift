@@ -71,20 +71,20 @@ struct AboutView: View {
                 }
                 HText("Carrier Lock", status: "No SIM restrictions")
                 
-                Section(content: {
+                Section {
                     HText("Network", status: "Network")
                     HText("Carrier", status: "Carrier 0.0")
                     HText("IMEI", status: "00 000000 000000 0") // TODO: Monospaced Digits
                     HText("ICCID", status: "0000000000000000000") // TODO: Monospaced Digits
-                }, header: {
+                } header: {
                     Text(DeviceInfo().hasHomeButton && DeviceInfo().isPhone ? "Physical SIM" : "eSIM")
-                })
+                }
                 
-                Section(content: {
+                Section {
                     HText("IMEI2", status: "00 000000 000000 0") // TODO: Monospaced Digits
-                }, header: {
+                } header: {
                     Text("Available SIM")
-                })
+                }
             }
             
             Section {

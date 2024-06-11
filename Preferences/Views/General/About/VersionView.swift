@@ -9,12 +9,11 @@ import SwiftUI
 
 struct VersionView: View {
     var body: some View {
-        
         ZStack {
             Color(UIColor.systemGroupedBackground)
                 .ignoresSafeArea()
             List {
-                Section(content: {
+                Section {
                     VStack(alignment: .leading) {
                         Text("**\(UIDevice().systemName) \(UIDevice().systemVersion) (22A5282m)**")
                         if Configuration().isSimulator {
@@ -37,9 +36,9 @@ struct VersionView: View {
 //                            Text("Learn More")
 //                        })
                     }
-                }, header: {
+                } header: {
                     Text("\(UIDevice().systemName) Version")
-                })
+                }
             }
             .navigationTitle("\(UIDevice().systemName) Version")
             .navigationBarTitleDisplayMode(.inline)
