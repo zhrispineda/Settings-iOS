@@ -68,7 +68,7 @@ struct SettingsLink<Content: View>: View {
                                 .foregroundStyle(iconColor)
                         default:
                             Image(systemName: icon)
-                                .symbolRenderingMode(.hierarchical)
+                                .symbolRenderingMode(icon == "questionmark.square.dashed" ? .hierarchical : .none)
                                 .imageScale(larger && !smallerIcons.contains(icon) ? .large : .medium)
                                 .fontWeight(icon == "nosign" ? .bold : .regular)
                                 .foregroundStyle(iconColor)

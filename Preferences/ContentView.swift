@@ -59,22 +59,6 @@ struct ContentView: View {
                                 }
                             }
                             
-                            // MARK: Attention Settings
-                            Section {
-                                ForEach(Configuration().isSimulator ? attentionSimulatorSettings : attentionSettings) { setting in
-                                    if !phoneOnly.contains(setting.id) {
-                                        Button(action: {
-                                            id = UUID() // Reset destination
-                                            selection = setting.type
-                                        }, label: {
-                                            SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id)
-                                                .foregroundStyle(selection == setting.type ? Color.white : Color["Label"])
-                                        })
-                                        .listRowBackground(selection == setting.type ? Color.blue : nil)
-                                    }
-                                }
-                            }
-                            
                             // MARK: Main Settings
                             Section {
                                 ForEach(mainSettings) { setting in
@@ -87,6 +71,22 @@ struct ContentView: View {
                                                 .foregroundStyle(selection == setting.type ? Color.white : Color["Label"])
                                         })
                                         .listRowBackground(selection == setting.type ? Color.blue.opacity(0.75) : nil)
+                                    }
+                                }
+                            }
+                            
+                            // MARK: Attention Settings
+                            Section {
+                                ForEach(Configuration().isSimulator ? attentionSimulatorSettings : attentionSettings) { setting in
+                                    if !phoneOnly.contains(setting.id) {
+                                        Button(action: {
+                                            id = UUID() // Reset destination
+                                            selection = setting.type
+                                        }, label: {
+                                            SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id)
+                                                .foregroundStyle(selection == setting.type ? Color.white : Color["Label"])
+                                        })
+                                        .listRowBackground(selection == setting.type ? Color.blue : nil)
                                     }
                                 }
                             }
@@ -172,11 +172,11 @@ struct ContentView: View {
                                 })
                             }
                             
-//                            Section(content: {
+//                            Section {
 //                                NavigationLink("Add AppleCare+ Coverage", destination: {})
-//                            }, footer: {
+//                            } footer: {
 //                                Text("There are 60 days left to add coverage for accidental damage.")
-//                            })
+//                            }
                             
                             if !Configuration().isSimulator {
                                 // MARK: Radio Settings
@@ -191,24 +191,9 @@ struct ContentView: View {
                                 }
                             }
                             
-                            // MARK: Attention Settings
-                            Section {
-                                ForEach(Configuration().isSimulator ? attentionSimulatorSettings : attentionSettings) { setting in
-                                    if setting.id == "Action Button" && UIDevice.current.name.contains("15 Pro") {
-                                        SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, content: {
-                                            setting.destination
-                                        })
-                                    } else if setting.id != "Action Button" {
-                                        SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, content: {
-                                            setting.destination
-                                        })
-                                    }
-                                }
-                            }
-                            
                             // MARK: Main Settings
                             Section {
-                                ForEach(mainSettings) { setting in
+                                ForEach(Configuration().isSimulator ? simulatorMainSettings : mainSettings) { setting in
                                     if !tabletOnly.contains(setting.id) {
                                         if setting.id == "Action Button" && UIDevice.current.name.contains("15 Pro") {
                                             SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, content: {
@@ -223,17 +208,39 @@ struct ContentView: View {
                                 }
                             }
                             
-                            // MARK: Services Settings 
+                            // MARK: Attention
+                            Section {
+                                ForEach(Configuration().isSimulator ? attentionSimulatorSettings : attentionSettings) { setting in
+                                    if setting.id == "Action Button" && UIDevice.current.name.contains("15 Pro") {
+                                        SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, content: {
+                                            setting.destination
+                                        })
+                                    } else if setting.id != "Action Button" {
+                                        SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, content: {
+                                            setting.destination
+                                        })
+                                    }
+                                }
+                            }
+                            
+                            // MARK: Services
+                            SettingsLinkSection(item: securitySettings)
+                            
+                            // MARK: Services
                             SettingsLinkSection(item: serviceSettings)
                             
-                            // MARK: Apps Settings
+                            // MARK: Apps
                             SettingsLinkSection(item: appSettings)
                             
-                            // MARK: Developer Settings
-                            SettingsLinkSection(item: tvProviderSettings)
+                            // MARK: TV Provider
+                            if !Configuration().isSimulator {
+                                SettingsLinkSection(item: tvProviderSettings)
+                            }
                             
-                            // MARK: Developer Settings
-                            SettingsLinkSection(item: developerSettings)
+                            // MARK: Developer
+                            if Configuration().isSimulator || Configuration().developerMode {
+                                SettingsLinkSection(item: developerSettings)
+                            }
                         }
                         .navigationTitle("Settings")
                         .searchable(text: $searchText)

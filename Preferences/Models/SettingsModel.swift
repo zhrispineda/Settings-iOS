@@ -10,6 +10,7 @@ import SwiftUI
 // MARK: Global variables
 struct Configuration {
     let isSimulator = true
+    let developerMode = true
 }
 
 // MARK: Color extension
@@ -77,10 +78,12 @@ enum SettingsModel: String, CaseIterable {
     case general = "General"
     case controlCenter = "Control Center"
     case displayBrightness = "Display & Brightness"
+    case camera = "Camera"
     case homeScreenAppLibrary = "Home Screen & App Library"
     case multitaskGestures = "Multitasking & Gestures"
     case accessibility = "Accessibility"
     case wallpaper = "Wallpaper"
+    case search = "Search"
     case standby = "StandBy"
     case battery = "Battery"
     case privacySecurity = "Privacy & Security"
@@ -93,8 +96,9 @@ enum SettingsModel: String, CaseIterable {
     case maps = "Maps"
     case shortcuts = "Shortcuts"
     case health = "Health"
-    case siriSearch = "Siri & Search"
+    case siri = "Siri"
     case photos = "Photos"
+    case appStore = "App Store"
     case gameCenter = "Game Center"
     
     case tvProvider = "TV Provider"
@@ -112,7 +116,7 @@ struct SettingsItem<Content: View>: Identifiable {
 }
 
 // MARK: SF Symbol names for smaller icons
-let smallerIcons = ["airplane", "arrow.turn.up.forward.iphone", "battery.100percent", "personalhotspot", "speaker.3.fill", "moon.fill", "squares.leading.rectangle", "key.fill", "hammer.fill", "shareplay", "wifi"]
+let smallerIcons = ["airplane", "arrow.turn.up.forward.iphone", "battery.100percent", "camera.fill", "personalhotspot", "speaker.3.fill", "magnifyingglass", "moon.fill", "squares.leading.rectangle", "key.fill", "hammer.fill", "shareplay", "wifi"]
 
 // Radio Settings: Wi-Fi, Bluetooth, Cellular, Personal Hotspot, VPN
 @MainActor let radioSettings: [SettingsItem] = [
@@ -133,7 +137,6 @@ let smallerIcons = ["airplane", "arrow.turn.up.forward.iphone", "battery.100perc
 // Simulator Attention Settings: Screen Time
 @MainActor let attentionSimulatorSettings: [SettingsItem] = [
     SettingsItem(type: .screenTime, title: "Screen Time", icon: "hourglass", color: .indigo, destination: AnyView(ScreenTimeView())),
-    SettingsItem(type: .actionButton, title: "Action Button", icon: "actionbutton_Normal", color: .blue, destination: AnyView(ActionButtonView()))
 ]
 
 // Main Settings: General
@@ -142,7 +145,7 @@ let smallerIcons = ["airplane", "arrow.turn.up.forward.iphone", "battery.100perc
     SettingsItem(type: .controlCenter, title: "Control Center", icon: "switch.2", destination: AnyView(ControlCenterView())),
     SettingsItem(type: .actionButton, title: "Action Button", icon: "actionbutton_Normal", color: .blue, destination: AnyView(ActionButtonView())),
     SettingsItem(type: .displayBrightness, title: "Display & Brightness", icon: "sun.max.fill", color: .blue, destination: AnyView(DisplayBrightnessView())),
-    SettingsItem(type: .homeScreenAppLibrary, title: "Home Screen & App Library", icon: "applehome screen & app library", color: .indigo, destination: AnyView(EmptyView())),
+    SettingsItem(type: .homeScreenAppLibrary, title: "Home Screen & App Library", icon: "apps.iphone", color: .blue, destination: AnyView(EmptyView())),
     SettingsItem(type: .multitaskGestures, title: "Multitasking & Gestures", icon: "squares.leading.rectangle", color: .blue, destination: AnyView(MultitaskingGesturesView())),
     SettingsItem(type: .accessibility, title: "Accessibility", icon: "accessibility", color: .blue, destination: AnyView(AccessibilityView())),
     SettingsItem(type: .wallpaper, title: "Wallpaper", icon: "Wallpaper", color: .clear, destination: AnyView(EmptyView())),
@@ -151,22 +154,45 @@ let smallerIcons = ["airplane", "arrow.turn.up.forward.iphone", "battery.100perc
     SettingsItem(type: .privacySecurity, title: "Privacy & Security", icon: "hand.raised.fill", color: .blue, destination: AnyView(PrivacySecurityView()))
 ]
 
+// Simulator Main Settings: General
+@MainActor let simulatorMainSettings: [SettingsItem] = [
+    SettingsItem(type: .general, title: "General", icon: "gear", color: .gray, destination: AnyView(GeneralView())),
+    SettingsItem(type: .accessibility, title: "Accessibility", icon: "accessibility", color: .blue, destination: AnyView(AccessibilityView())),
+    SettingsItem(type: .actionButton, title: "Action Button", icon: "actionbutton_Normal", color: .blue, destination: AnyView(ActionButtonView())),
+    SettingsItem(type: .camera, title: "Camera", icon: "camera.fill", color: .gray, destination: AnyView(EmptyView())),
+    SettingsItem(type: .homeScreenAppLibrary, title: "Home Screen & App Library", icon: "apps.iphone", color: .blue, destination: AnyView(EmptyView())),
+    //SettingsItem(type: .multitaskGestures, title: "Multitasking & Gestures", icon: "squares.leading.rectangle", color: .blue, destination: AnyView(MultitaskingGesturesView())),
+    SettingsItem(type: .search, title: "Search", icon: "magnifyingglass", color: .gray, destination: AnyView(SiriSearchView())),
+    SettingsItem(type: .siri, title: "Siri", icon: "applesiri", color: Color(UIColor.systemBackground), destination: AnyView(SiriSearchView())),
+    SettingsItem(type: .standby, title: "StandBy", icon: "applestandby", color: .black, destination: AnyView(EmptyView())),
+    //SettingsItem(type: .privacySecurity, title: "Privacy & Security", icon: "hand.raised.fill", color: .blue, destination: AnyView(PrivacySecurityView()))
+]
+
+// Security Settings: Privacy & Security
+@MainActor let securitySettings: [SettingsItem] = [
+    SettingsItem(type: .privacySecurity, title: "Privacy & Security", icon: "hand.raised.fill", color: .blue, destination: AnyView(PrivacySecurityView()))
+]
+
 // Services Settings: Passwords
 @MainActor let serviceSettings: [SettingsItem] = [
-    SettingsItem(type: .passwords, title: "Passwords", icon: "key.fill", color: .gray, destination: AnyView(PasswordsView()))
+    //SettingsItem(type: .passwords, title: "Passwords", icon: "key.fill", color: .gray, destination: AnyView(PasswordsView()))
+    SettingsItem(type: .appStore, title: "App Store", icon: "Placeholder_Normal", destination: AnyView(EmptyView())),
+    SettingsItem(type: .gameCenter, title: "Game Center", icon: Configuration().isSimulator ? "Placeholder_Normal" : "applegamecenter", destination: AnyView(GameCenterView())),
+    SettingsItem(type: .gameCenter, title: "Wallet & Apple Pay", icon: "applewallet", destination: AnyView(EmptyView()))
 ]
 
 // App Settings: Safari, News, Trnalsate, Maps, Shortcuts, Health, Siri & Search, Photos, Game Center
 @MainActor let appSettings: [SettingsItem] = [
-    SettingsItem(type: .safari, title: "Safari", icon: "applesafari", destination: AnyView(SafariView())),
-    SettingsItem(type: .news, title: "News", icon: "applenews", destination: AnyView(NewsView())),
-    SettingsItem(type: .translate, title: "Translate", icon: Configuration().isSimulator ? "Placeholder_Normal" : "appletranslate", color: .white, destination: AnyView(TranslateView())),
-    SettingsItem(type: .maps, title: "Maps", icon: "applemaps", destination: AnyView(MapsView())),
-    SettingsItem(type: .shortcuts, title: "Shortcuts", icon: "appleshortcuts", destination: AnyView(ShortcutsView())),
-    SettingsItem(type: .health, title: "Health", icon: "applehealth", destination: AnyView(HealthView())),
-    SettingsItem(type: .siriSearch, title: "Siri & Search", icon: "applesiri", color: Color(UIColor.systemBackground), destination: AnyView(SiriSearchView())),
-    SettingsItem(type: .photos, title: "Photos", icon: "applephotos", destination: AnyView(PhotosView())),
-    SettingsItem(type: .gameCenter, title: "Game Center", icon: "applegamecenter", destination: AnyView(GameCenterView()))
+    SettingsItem(type: .homeScreenAppLibrary, title: "Apps", icon: "applehome screen & app library", color: .indigo, destination: AnyView(EmptyView())),
+//    SettingsItem(type: .safari, title: "Safari", icon: "applesafari", destination: AnyView(SafariView())),
+//    SettingsItem(type: .news, title: "News", icon: "applenews", destination: AnyView(NewsView())),
+//    SettingsItem(type: .translate, title: "Translate", icon: Configuration().isSimulator ? "Placeholder_Normal" : "appletranslate", color: .white, destination: AnyView(TranslateView())),
+//    SettingsItem(type: .maps, title: "Maps", icon: "applemaps", destination: AnyView(MapsView())),
+//    SettingsItem(type: .shortcuts, title: "Shortcuts", icon: "appleshortcuts", destination: AnyView(ShortcutsView())),
+//    SettingsItem(type: .health, title: "Health", icon: "applehealth", destination: AnyView(HealthView())),
+//    SettingsItem(type: .siriSearch, title: "Siri & Search", icon: "applesiri", color: Color(UIColor.systemBackground), destination: AnyView(SiriSearchView())),
+//    SettingsItem(type: .photos, title: "Photos", icon: "applephotos", destination: AnyView(PhotosView())),
+//    SettingsItem(type: .gameCenter, title: "Game Center", icon: "applegamecenter", destination: AnyView(GameCenterView()))
 ]
 
 // TV Provider Settings: TV Provider
@@ -181,4 +207,4 @@ let smallerIcons = ["airplane", "arrow.turn.up.forward.iphone", "battery.100perc
 ]
 
 // Combined Settings Array
-@MainActor let combinedSettings = radioSettings + attentionSettings + mainSettings + serviceSettings + appSettings + developerSettings
+@MainActor let combinedSettings = radioSettings + attentionSettings + mainSettings + securitySettings + serviceSettings + appSettings + developerSettings
