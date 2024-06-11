@@ -32,9 +32,9 @@ struct SelectSignInOptionView: View {
                 
                 Section {
                     VStack {
-                        Button(action: {
+                        Button {
                             dismiss()
-                        }, label: {
+                        } label: {
                             HStack {
                                 Image("ProximitySymbol-iPhone-iPad-2")
                                     .foregroundStyle(.blue)
@@ -53,7 +53,7 @@ struct SelectSignInOptionView: View {
                                     .foregroundStyle(.tertiary)
                             }
                             .foregroundStyle(Color["Label"])
-                        })
+                        }
                     }
                 }
                 
@@ -87,32 +87,32 @@ struct SelectSignInOptionView: View {
                         .frame(maxWidth: .infinity)
                         .frame(height: DeviceInfo().hasHomeButton ? 50 : 100)
                         .opacity(DeviceInfo().isPhone ? 1 : 0)
-                    Button(action: {
+                    Button {
                         showingAlert.toggle()
-                    }, label: {
-                        Text("**Don‘t have an Apple ID?**")
-                    })
+                    } label: {
+                        Text("**Don‘t have an Apple Account?**")
+                    }
                     .alert("Could Not Create Apple ID", isPresented: $showingAlert, actions: {
                         Link("Learn More", destination: URL(string: "https://support.apple.com/en-us/101661")!)
                         Button("OK", action: {
                             dismiss()
                         })
                     }, message: {
-                        Text("The iPhoneSimulator has been used to create too many new Apple IDs. Contact Apple Support to request another Apple ID to use with this iPhoneSimulator.")
+                        Text("The iPhoneSimulator has been used to create too many new Apple Accounts. Contact Apple Support to request another Apple Account to use with this iPhoneSimulator.")
                     })
                 }
             }
         }
         .toolbar {
-            ToolbarItem(placement: .topBarTrailing, content: {
-                Button(action: {
+            ToolbarItem(placement: .topBarTrailing) {
+                Button {
                     dismiss()
-                }, label: {
+                } label: {
                     Image(systemName: "xmark.circle.fill")
                         .font(.system(size: 24))
                         .foregroundStyle(.gray, Color(UIColor.systemFill))
-                })
-            })
+                }
+            }
         }
     }
 }

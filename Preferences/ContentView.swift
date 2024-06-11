@@ -35,12 +35,12 @@ struct ContentView: View {
                             }, label: {
                                 AppleAccountSection()
                             })
-                            .sheet(isPresented: $showingSignInSheet, content: {
+                            .sheet(isPresented: $showingSignInSheet) {
                                 NavigationStack {
                                     SelectSignInOptionView()
                                         .interactiveDismissDisabled()
                                 }
-                            })
+                            }
                             
                             // MARK: Radio Settings
                             if !Configuration().isSimulator {
@@ -233,9 +233,9 @@ struct ContentView: View {
                             SettingsLinkSection(item: appSettings)
                             
                             // MARK: TV Provider
-                            if !Configuration().isSimulator {
-                                SettingsLinkSection(item: tvProviderSettings)
-                            }
+//                            if !Configuration().isSimulator {
+//                                SettingsLinkSection(item: tvProviderSettings)
+//                            }
                             
                             // MARK: Developer
                             if Configuration().isSimulator || Configuration().developerMode {

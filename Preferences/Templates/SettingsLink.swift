@@ -66,6 +66,10 @@ struct SettingsLink<Content: View>: View {
                             Image(systemName: icon)
                                 .imageScale(.small)
                                 .foregroundStyle(iconColor)
+                        case "sos":
+                            Image(systemName: icon)
+                                .imageScale(.small)
+                                .foregroundStyle(iconColor)
                         default:
                             Image(systemName: icon)
                                 .symbolRenderingMode(icon == "questionmark.square.dashed" ? .hierarchical : .none)
@@ -126,7 +130,7 @@ struct SettingsLink<Content: View>: View {
             SettingsLink(icon: "applesafari", id: "Safari", content: {
                 EmptyView()
             })
-            SettingsLink(icon: "sensorKit60x60", id: "Safari", content: {
+            SettingsLink(color: .red, icon: "sos", id: "Emergency SOS", content: {
                 EmptyView()
             })
             SettingsLink(color: .blue, icon: "applesiri", id: "Siri", content: {

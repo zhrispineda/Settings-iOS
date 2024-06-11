@@ -4,6 +4,8 @@ SwiftUI **(work-in-progress)** recreation of the iOS & iPadOS Settings app.
 ## Examples
 ![A GIF displaying the project's Settings app on different devices including a Dynamic Island iPhone, iPhone SE, and 11-inch iPad Pro.](Assets/Settings.gif)
 
+The GIF above displays 17.0's layout, but the project is already underway with matching 18.0's layout.
+
 ## Information
 - This personal project is a recreation of Apple's current and default Settings app for iPhone and iPad on **Simulator and iOS/iPadOS** running 18.0 (22A5282m).
 - All features within the app are only simulations and have no effect on the device outside of the app.
