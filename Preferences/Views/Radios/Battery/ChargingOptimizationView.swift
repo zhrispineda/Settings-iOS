@@ -19,9 +19,9 @@ struct ChargingOptimizationView: View {
     
     var body: some View {
         CustomList(title: "Charging Optimization") {
-            Section(content: {
+            Section {
                 ForEach(options, id: \.self) { option in
-                    Button(action: {
+                    Button {
                         if selected == "Optimized Battery Charging" && option == "None" {
                             showingNoneWarning.toggle()
                         } else if selected == "None" && option == "Optimized Battery Charging" {
@@ -29,16 +29,16 @@ struct ChargingOptimizationView: View {
                         }
                         
                         selected = option
-                    }, label: {
+                    } label: {
                         HStack {
                             Text(option)
                                 .foregroundStyle(Color["Label"])
                             Spacer()
                             Image(systemName: selected == option ? "checkmark" : "")
                         }
-                    })
+                    }
                 }
-            }, footer: {
+            } footer: {
                 switch selected {
                 case "None":
                     if temporaryOptimizePauseEnabled {
@@ -51,7 +51,7 @@ struct ChargingOptimizationView: View {
                 default:
                     Text("To reduce battery aging, \(DeviceInfo().model) learns from your daily charging routine so it can wait to finish charging past 80% until you need to use it. [Learn more...](https://support.apple.com/en-us/108055)")
                 }
-            })
+            }
             .alert("Optimized Battery Charging helps reduce battery aging.", isPresented: $showingNoneWarning, actions: {
                 Button("**Turn Off Until Tomorrow**", role: .none, action: {
                     temporaryOptimizePauseEnabled = true
@@ -64,15 +64,15 @@ struct ChargingOptimizationView: View {
                 })
             })
             
-            Section(content: {
+            Section {
                 Toggle("Clean Energy Charging", isOn: $cleanEnergyChargingEnabled)
                     .onChange(of: cleanEnergyChargingEnabled) {
                         showingCleanEnergyWarning = !cleanEnergyChargingEnabled
                         temporaryCleanPauseEnabled = false
                     }
-            }, footer: {
+            } footer: {
                 Text("In your region, \(DeviceInfo().model) will try to reduce your carbon footprint by selectively charging when lower carbon emission electricity is available. \(DeviceInfo().model) learns from your daily charging routine so it can reach full charge before you need to use it. \(temporaryCleanPauseEnabled ? "Clean Energy Charging is off until 6:00 AM. " : "")[Learn more...](https://support.apple.com/en-us/108068)")
-            })
+            }
             .alert("Clean Energy Charging helps reduce carbon footprint.", isPresented: $showingCleanEnergyWarning, actions: {
                 Button("**Turn Off Until Tomorrow**", role: .none, action: {
                     temporaryCleanPauseEnabled = true

@@ -28,7 +28,7 @@ struct BatteryView: View {
                         CustomNavigationLink(title: "Charging Optimization", status: "Optimized", destination: ChargingOptimizationView())
                     }
                 } else {
-                    NavigationLink("Battery Health & Charging", destination: {})
+                    NavigationLink("Battery Health & Charging", destination: BatteryHealthChargingView())
                 }
             }
             
