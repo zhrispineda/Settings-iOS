@@ -9,13 +9,13 @@ import SwiftUI
 
 struct BetaUpdatesView: View {
     // Variables
-    @State private var selected = "17 Developer Beta"
+    @State private var selected = "18 Developer Beta"
     @State private var showingAlert = false
-    let options = ["Off", "17 Public Beta", "17 Developer Beta"]
+    let options = ["Off", "18 Developer Beta"]
     
     var body: some View {
         CustomList(title: "Beta Updates") {
-            Section(content: {
+            Section {
                 ForEach(options, id: \.self) { option in
                     Button(action: {
                         selected = option
@@ -28,14 +28,14 @@ struct BetaUpdatesView: View {
                         }
                     })
                 }
-            }, footer: {
+            } footer: {
                 Text("Receive beta updates on this \(DeviceInfo().model) to test-drive pre-release versions of \(UIDevice().systemName) and provide feedback to help make Apple software even better. [Learn more...](https://beta.apple.com)")
-            })
+            }
             
             Section {
-                Button("Apple ID:", action: {
+                Button("Apple ID:") {
                     showingAlert.toggle()
-                })
+                }
                 .alert("Apple ID for Beta Updates", isPresented: $showingAlert) {
                     Button {
                         showingAlert.toggle()

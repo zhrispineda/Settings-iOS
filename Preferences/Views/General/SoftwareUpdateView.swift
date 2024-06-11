@@ -17,7 +17,7 @@ struct SoftwareUpdateView: View {
                 CustomNavigationLink(title: "Automatic Updates", status: "On", destination: AutomaticUpdateView())
                 
                 if !checkingForUpdates && !updateCheckFailed {
-                    CustomNavigationLink(title: "Beta Updates", status: "\(UIDevice().systemName) 17 Developer Beta", destination: BetaUpdatesView())
+                    CustomNavigationLink(title: "Beta Updates", status: "\(UIDevice().systemName) 18 Developer Beta", destination: BetaUpdatesView())
                 }
             }
             
@@ -55,9 +55,9 @@ struct SoftwareUpdateView: View {
             }
             .listRowBackground(Color.clear)
             .padding(.top, 200)
-            .onAppear(perform: {
+            .onAppear {
                 checkUpdate(withDelay: Double.random(in: 1.0...5.0))
-            })
+            }
         }
         .refreshable(action: {})
     }
