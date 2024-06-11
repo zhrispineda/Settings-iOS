@@ -10,8 +10,28 @@ import SwiftUI
 struct GeneralView: View {
     var body: some View {
         CustomList(title: "General") {
+            // General Tooltip Header
             Section {
-                NavigationLink("About", destination: AboutView())
+                VStack(spacing: 10) {
+                    HStack(spacing: 15) {
+                        Image("gear-icon-large40x40")
+                            .resizable()
+                            .frame(width: 56, height: 56)
+                        .padding(.top, 5)
+                    }
+                    Text("General")
+                        .bold()
+                        .font(.title2)
+                    Text("Manage your overall setup and preferences for \(DeviceInfo().model), such as software updates, device language\(DeviceInfo().isPhone ? ", CarPlay" : ""), AirDrop, and more.")
+                        .multilineTextAlignment(.center)
+                        .padding(.bottom)
+                }
+                .frame(maxWidth: .infinity)
+            }
+            .listRowSeparator(.hidden)
+        
+            Section {
+                SettingsLink(color: .gray, icon: Configuration().isSimulator ? "questionmark.app.dashed" : DeviceInfo().isPhone ? "iphone.gen3" : "ipad.gen2", id: "About", content: { AboutView() })
                 if !Configuration().isSimulator {
                     NavigationLink("Software Update", destination: SoftwareUpdateView())
                 }

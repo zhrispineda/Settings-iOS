@@ -20,7 +20,7 @@ struct SelectSignInOptionView: View {
                         .resizable()
                         .scaledToFit()
                         .frame(width: 75)
-                    Text("Apple ID")
+                    Text("Apple Account")
                         .font(.title)
                         .bold()
                     Text("Choose the method to sign in yourself or a child in your family on this device.")

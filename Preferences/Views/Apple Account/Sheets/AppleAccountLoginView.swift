@@ -25,7 +25,7 @@ struct AppleAccountLoginView: View {
                     Image("AppleAccount_Icon_Blue90x90")
                         .foregroundStyle(.blue)
                         .font(.largeTitle)
-                    Text("Apple ID")
+                    Text("Apple Account")
                         .font(.largeTitle)
                         .fontWeight(.bold)
                     Text("Sign in with an email or phone number to use iCloud, the App Store, Messages, or other Apple services.")

@@ -223,7 +223,7 @@ struct ContentView: View {
                                 }
                             }
                             
-                            // MARK: Services Settings
+                            // MARK: Services Settings 
                             SettingsLinkSection(item: serviceSettings)
                             
                             // MARK: Apps Settings
@@ -255,25 +255,27 @@ struct AppleAccountSection: View {
     @EnvironmentObject var deviceInfo: DeviceInfo
     
     var body: some View {
-        HStack {
-            Image(systemName: "person.crop.circle.fill")
-                .resizable()
-                .frame(width: 54, height: 54)
-                .foregroundStyle(Color(UIColor.systemGray6), Color(UIColor.systemGray2))
-                .fontWeight(.thin)
-            VStack {
-                Text("Sign in to your \(deviceInfo.model)")
-                    .font(.system(size: 16))
-                    .padding(.bottom, 0)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                Text("Set up iCloud, the App Store, and more.")
-                    .foregroundStyle(Color["Label"])
-                    .font(.system(size: 13))
-                    .frame(maxWidth: .infinity, alignment: .leading)
+        NavigationLink(destination: {}, label: {
+            HStack {
+                Image("AppleAccount_Icon_Blue90x90")
+                    .resizable()
+                    .frame(width: 60, height: 60)
+                VStack(spacing: 3) {
+                    Text("Apple Account")
+                        .bold()
+                        .font(.title3)
+                        .foregroundStyle(Color["Label"])
+                        .padding(.bottom, 0)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                    Text("Sign in to access your iCloud data, the App Store, Apple services, and more.")
+                        .foregroundStyle(Color.gray)
+                        .font(.system(size: 13))
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                }
+                .padding(.leading, 5)
             }
-            .padding(.leading, 5)
-        }
-        .padding(.vertical, -5)
+        })
+        .foregroundStyle(Color["Label"])
     }
 }
 

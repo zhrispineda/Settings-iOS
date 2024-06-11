@@ -9,7 +9,7 @@ import SwiftUI
 
 // MARK: Global variables
 struct Configuration {
-    let isSimulator = false
+    let isSimulator = true
 }
 
 // MARK: Color extension
@@ -45,6 +45,7 @@ extension Color {
 }
 
 // MARK: DeviceInfo class
+@MainActor
 class DeviceInfo: ObservableObject {
     @Published var model: String = UIDevice.current.localizedModel
     
@@ -80,6 +81,7 @@ enum SettingsModel: String, CaseIterable {
     case multitaskGestures = "Multitasking & Gestures"
     case accessibility = "Accessibility"
     case wallpaper = "Wallpaper"
+    case standby = "StandBy"
     case battery = "Battery"
     case privacySecurity = "Privacy & Security"
     
@@ -113,7 +115,7 @@ struct SettingsItem<Content: View>: Identifiable {
 let smallerIcons = ["airplane", "arrow.turn.up.forward.iphone", "battery.100percent", "personalhotspot", "speaker.3.fill", "moon.fill", "squares.leading.rectangle", "key.fill", "hammer.fill", "shareplay", "wifi"]
 
 // Radio Settings: Wi-Fi, Bluetooth, Cellular, Personal Hotspot, VPN
-let radioSettings: [SettingsItem] = [
+@MainActor let radioSettings: [SettingsItem] = [
     SettingsItem(type: .wifi, title: "Wi-Fi", icon: "wifi", color: .blue, destination: AnyView(NetworkView())),
     SettingsItem(type: .bluetooth, title: "Bluetooth", icon: "logo.bluetooth", color: .blue, destination: AnyView(BluetoothView())),
     SettingsItem(type: .cellular, title: "Cellular", icon: "antenna.radiowaves.left.and.right", color: .green, destination: AnyView(CellularView())),
@@ -121,7 +123,7 @@ let radioSettings: [SettingsItem] = [
 ]
 
 // Attention Settings: Notifications, Screen Time
-let attentionSettings: [SettingsItem] = [
+@MainActor let attentionSettings: [SettingsItem] = [
     SettingsItem(type: .notifications, title: "Notifications", icon: "bell.badge.fill", color: .red, destination: AnyView(NotificationsView())),
     SettingsItem(type: .soundHaptics, title: DeviceInfo().isPhone ? "Sounds & Haptics" : "Sounds", icon: "speaker.3.fill", color: .pink, destination: AnyView(SoundsHapticsView())),
     SettingsItem(type: .focus, title: "Focus", icon: "moon.fill", color: .indigo, destination: AnyView(FocusView())),
@@ -129,13 +131,13 @@ let attentionSettings: [SettingsItem] = [
 ]
 
 // Simulator Attention Settings: Screen Time
-let attentionSimulatorSettings: [SettingsItem] = [
+@MainActor let attentionSimulatorSettings: [SettingsItem] = [
     SettingsItem(type: .screenTime, title: "Screen Time", icon: "hourglass", color: .indigo, destination: AnyView(ScreenTimeView())),
     SettingsItem(type: .actionButton, title: "Action Button", icon: "actionbutton_Normal", color: .blue, destination: AnyView(ActionButtonView()))
 ]
 
 // Main Settings: General
-let mainSettings: [SettingsItem] = [
+@MainActor let mainSettings: [SettingsItem] = [
     SettingsItem(type: .general, title: "General", icon: "gear", color: .gray, destination: AnyView(GeneralView())),
     SettingsItem(type: .controlCenter, title: "Control Center", icon: "switch.2", destination: AnyView(ControlCenterView())),
     SettingsItem(type: .actionButton, title: "Action Button", icon: "actionbutton_Normal", color: .blue, destination: AnyView(ActionButtonView())),
@@ -144,17 +146,18 @@ let mainSettings: [SettingsItem] = [
     SettingsItem(type: .multitaskGestures, title: "Multitasking & Gestures", icon: "squares.leading.rectangle", color: .blue, destination: AnyView(MultitaskingGesturesView())),
     SettingsItem(type: .accessibility, title: "Accessibility", icon: "accessibility", color: .blue, destination: AnyView(AccessibilityView())),
     SettingsItem(type: .wallpaper, title: "Wallpaper", icon: "Wallpaper", color: .clear, destination: AnyView(EmptyView())),
+    SettingsItem(type: .standby, title: "StandBy", icon: "", destination: AnyView(EmptyView())),
     SettingsItem(type: .battery, title: "Battery", icon: "battery.100percent", color: .green, destination: AnyView(BatteryView())),
     SettingsItem(type: .privacySecurity, title: "Privacy & Security", icon: "hand.raised.fill", color: .blue, destination: AnyView(PrivacySecurityView()))
 ]
 
 // Services Settings: Passwords
-let serviceSettings: [SettingsItem] = [
+@MainActor let serviceSettings: [SettingsItem] = [
     SettingsItem(type: .passwords, title: "Passwords", icon: "key.fill", color: .gray, destination: AnyView(PasswordsView()))
 ]
 
 // App Settings: Safari, News, Trnalsate, Maps, Shortcuts, Health, Siri & Search, Photos, Game Center
-let appSettings: [SettingsItem] = [
+@MainActor let appSettings: [SettingsItem] = [
     SettingsItem(type: .safari, title: "Safari", icon: "applesafari", destination: AnyView(SafariView())),
     SettingsItem(type: .news, title: "News", icon: "applenews", destination: AnyView(NewsView())),
     SettingsItem(type: .translate, title: "Translate", icon: Configuration().isSimulator ? "Placeholder_Normal" : "appletranslate", color: .white, destination: AnyView(TranslateView())),
@@ -167,15 +170,15 @@ let appSettings: [SettingsItem] = [
 ]
 
 // TV Provider Settings: TV Provider
-let tvProviderSettings: [SettingsItem] = [
+@MainActor let tvProviderSettings: [SettingsItem] = [
     SettingsItem(type: .tvProvider, title: "TV Provider", icon: "cable.coaxial", color: .black, destination: AnyView(EmptyView()))
 
 ]
 
 // Developer Settings: Developer
-let developerSettings: [SettingsItem] = [
+@MainActor let developerSettings: [SettingsItem] = [
     SettingsItem(type: .developer, title: "Developer", icon: "hammer.fill", color: .gray, destination: AnyView(DeveloperView()))
 ]
 
 // Combined Settings Array
-let combinedSettings = radioSettings + attentionSettings + mainSettings + serviceSettings + appSettings + developerSettings
+@MainActor let combinedSettings = radioSettings + attentionSettings + mainSettings + serviceSettings + appSettings + developerSettings
