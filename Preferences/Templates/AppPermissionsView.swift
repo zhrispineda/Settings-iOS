@@ -19,7 +19,7 @@ struct AppPermissionsView: View {
     var body: some View {
         CustomList(title: permissionName) {
             if permissionName == "Calendars" {
-                Section(content: {
+                Section {
                     VStack(alignment: .leading) {
                         ZStack {
                             RoundedRectangle(cornerSize: CGSize(width: 10, height: 10))
@@ -70,82 +70,82 @@ struct AppPermissionsView: View {
                             .font(.caption2)
                             .padding(.leading)
                     }
-                }, footer: {
+                } footer: {
                     Text("Calendar events may include additional data, such as location, email addresses, or notes.")
-                })
+                }
             }
             
             if permissionName == "Photos" {
-                Section(content: {
+                Section {
                     VStack(alignment: .leading) {
                         Text("**Full Photo Library Access**")
                         Text("No Items")
                             .foregroundStyle(.secondary)
                     }
                     .padding(3)
-                }, footer: {
+                } footer: {
                     Text("Photos may contain data associated with location, depth information, captions, and audio.")
-                })
+                }
             }
             
             if permissionName == "Camera" || appClipPermission == "Camera" {
-                Section(content: {}, footer: {
+                Section {} footer: {
                     Text("Photos and videos taken with the camera may contain other information, such as where and when they were taken, and the depth of field.")
-                })
+                }
             }
             
             if permissionName == "Health" {
-                Section(content: {}, footer: {
+                Section {} footer: {
                     Text("Your data is encrypted on your device and can only be shared with your permission. \n[Learn more about Health & Privacy...](#)")
-                })
+                }
                 .padding(-15)
                 
                 Section {
                     NavigationLink("Headphone Audio Level", destination: HeadphoneAudioLevelsView())
                 }
                 
-                Section(content: {
+                Section {
                     Text("None")
                         .foregroundStyle(.secondary)
-                }, header: {
+                } header: {
                     Text("Apps and Services")
-                }, footer: {
+                } footer: {
                     Text("As apps and services request permission to update your Health data, they will be added to the list.")
-                })
+                }
                 
-                Section(content: {
+                Section {
                     Text("None")
                         .foregroundStyle(.secondary)
-                }, header: {
+                } header: {
                     Text("Research Studies")
-                }, footer: {
+                } footer: {
                     Text("As research studies request permission to read your data, they will be added to the list. You can review and manage all of the studies you are enrolled in by going to the Research app.")
-                })
+                }
             }
             
             if permissionName == "Wallet" {
-                Section(content: {}, footer: {
+                Section {} footer: {
                     Text("Your data is encrypted on your device and can only be shared with your permission.")
-                })
+                }
             }
             
             if permissionName == "Focus" {
-                Section(content: {}, footer: {
+                Section {} footer: {
                     Text("Your Focus status tells apps and people that you have notifications silenced.")
-                })
+                }
             }
             
-            Section(content: {
+            Section {
                 if appClipsEligible.contains(permissionName) {
                     SettingsLink(color: .white, icon: "appclip", id: "App Clips", content: {
                         AppPermissionsView(permissionName: "App Clips", appClipPermission: permissionName)
                     })
                 }
-            }, header: {
+            } header: {
                 if permissionName == "Focus" {
                     Text("Shared With")
                 }
-            },footer: {
+            } footer: {
                 switch permissionName {
                 case "App Clips":
                     switch appClipPermission {
@@ -191,7 +191,7 @@ struct AppPermissionsView: View {
                 default:
                     Text("Applications that have requested the ability to use \(permissionName) will appear here.")
                 }
-            })
+            }
         }
     }
 }

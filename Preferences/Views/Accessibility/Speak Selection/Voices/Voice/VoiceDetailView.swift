@@ -19,7 +19,7 @@ struct VoiceDetailView: View {
     
     var body: some View {
         CustomList(title: voice) {
-            Section(content: {
+            Section {
                 HStack {
                     Image(systemName: "play.circle")
                         .font(.largeTitle)
@@ -39,9 +39,9 @@ struct VoiceDetailView: View {
                             .foregroundStyle(.blue)
                     }
                 }
-            }, header: {
+            } header: {
                 Text("\n\(language)")
-            })
+            }
         }
     }
 }

@@ -78,7 +78,7 @@ struct ForgotPasswordView: View {
                         .listRowBackground(Color.clear)
                         .listRowSeparator(.hidden)
                         
-                        Section(content: {
+                        Section {
                             TextField("Email or Phone Number", text: $username)
                                 .padding(.leading, guardianMode ? 15 : 25)
                                 .frame(height: 42)
@@ -90,13 +90,13 @@ struct ForgotPasswordView: View {
                                         dismiss()
                                     }
                                 })
-                        }, footer: {
+                        } footer: {
                             if guardianMode {
                                 Text("Your privacy is important. If you‘re resetting your password on someone else‘s device, your personal information will not be saved on their device.")
                                     .padding(.top, -10)
                                     .padding(.horizontal)
                             }
-                        })
+                        }
                         .padding(.horizontal, guardianMode ? -20 : 0)
                     }
                     VStack {

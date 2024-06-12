@@ -18,11 +18,11 @@ struct ShortcutsView: View {
                 Toggle("iCloud Sync", isOn: $cloudSyncEnabled)
             }
             
-            Section(content: {
+            Section {
                 Toggle("Private Sharing", isOn: $privateSharingEnabled)
-            }, footer: {
+            } footer: {
                 Text("Allow receiving shortcuts directly from people in your contacts. Apple cannot verify the authenticity of shortcuts shared privately. [About Shortcuts Sharing & Privacy...](#)")
-            })
+            }
             
             Section {
                 NavigationLink("Advanced", destination: ShortcutsAdvancedView())

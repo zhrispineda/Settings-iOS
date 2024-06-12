@@ -30,35 +30,35 @@ struct SiriSearchDetailView: View {
     
     var body: some View {
         CustomList(title: title) {
-            Section(content: {
+            Section {
                 Toggle("Learn from this App", isOn: $learnFromAppEnabled)
-            }, footer: {
+            } footer: {
                 Text("Allow Siri to learn from how you use “\(appName)“ to make suggestions across apps.")
-            })
+            }
             
-            Section(content: {
+            Section {
                 Toggle("Show App in Search", isOn: $showAppInSearchEnabled)
                 if showAppInSearchEnabled {
                     Toggle("Show Content in Search", isOn: $showContentInSearchEnabled)
                 }
-            }, header: {
+            } header: {
                 Text("While Searching")
-            }, footer: {
+            } footer: {
                 Text("Allow “\(appName)“ the app and its content to appear in Search.")
-            })
+            }
             
-            Section(content: {
+            Section {
                 if showInAppApps.contains(appName) {
                     Toggle("Suggest in App", isOn: $suggestInAppEnabled)
                 }
                 Toggle("Suggest on Home Screen", isOn: $showHomeScreenEnabled)
                 Toggle("Suggest App", isOn: $suggestAppEnabled)
                 Toggle("Suggest Notifications", isOn: $suggestNotificationsEnabled)
-            }, header: {
+            } header: {
                 Text("Suggestions")
-            }, footer: {
+            } footer: {
                 Text("Allow suggestions and content from “\(appName)“ and Shortcuts for the app to appear \(showInAppApps.contains(appName) ? "in the app, in Search, in widgets, and as notifications" : "in Search and in widgets"). These suggestions and Shortcuts are based on how you use the app.")
-            })
+            }
         }
     }
 }
