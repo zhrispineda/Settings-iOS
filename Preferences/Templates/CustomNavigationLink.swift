@@ -26,9 +26,9 @@ struct CustomNavigationLink<Content: View>: View {
     var destination: Content
     
     var body: some View {
-        NavigationLink(destination: {
+        NavigationLink {
             destination
-        }, label: {
+        } label: {
             HStack {
                 VStack(alignment: .leading) {
                     Text(title)
@@ -50,7 +50,7 @@ struct CustomNavigationLink<Content: View>: View {
                         .foregroundStyle(.secondary)
                 }
             }
-        })
+        }
     }
 }
 

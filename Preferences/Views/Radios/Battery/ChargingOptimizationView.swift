@@ -74,15 +74,15 @@ struct ChargingOptimizationView: View {
                 Text("In your region, \(DeviceInfo().model) will try to reduce your carbon footprint by selectively charging when lower carbon emission electricity is available. \(DeviceInfo().model) learns from your daily charging routine so it can reach full charge before you need to use it. \(temporaryCleanPauseEnabled ? "Clean Energy Charging is off until 6:00 AM. " : "")[Learn more...](https://support.apple.com/en-us/108068)")
             }
             .alert("Clean Energy Charging helps reduce carbon footprint.", isPresented: $showingCleanEnergyWarning, actions: {
-                Button("**Turn Off Until Tomorrow**", role: .none, action: {
+                Button("**Turn Off Until Tomorrow**", role: .none) {
                     temporaryCleanPauseEnabled = true
-                })
-                Button("Turn Off", role: .none, action: {
+                }
+                Button("Turn Off", role: .none) {
                     cleanEnergyChargingEnabled = false
-                })
-                Button("Cancel", role: .none, action: {
+                }
+                Button("Cancel", role: .none) {
                     cleanEnergyChargingEnabled = true
-                })
+                }
             })
         }
     }

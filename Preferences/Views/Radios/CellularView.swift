@@ -16,15 +16,15 @@ struct CellularView: View {
     
     var body: some View {
         CustomList(title: "Cellular") {
-            Section(content: {
+            Section {
                 Toggle("Cellular Data", isOn: $cellularDataEnabled)
                 CustomNavigationLink(title: "Cellular Data Options", status: "Roaming Off", destination: EmptyView())
                 Button("Set Up Personal Hotspot", action: {})
-            }, footer: {
+            } footer: {
                 Text("Turn off cellular data to restrict all data to Wi-Fi, including email, web browsing, and push notifications.")
-            })
+            }
             
-            Section(content: {
+            Section {
                 Toggle("Turn On This Line", isOn: .constant(true))
                 CustomNavigationLink(title: "Cellular Plans", status: "Plan", destination: EmptyView())
                 CustomNavigationLink(title: "Network Selection", status: "Network", destination: EmptyView())
@@ -34,17 +34,17 @@ struct CellularView: View {
                 NavigationLink("Carrier Services", destination: {})
                 NavigationLink("SIM PIN", destination: {})
                 Button("Delete eSIM", role: .destructive, action: {})
-            }, header: {
+            } header: {
                 Text("Carrier")
-            })
-            
-            Section {
-                Button(action: {}, label: {
-                    Text("Add eSIM")
-                })
             }
             
-            Section(content: {
+            Section {
+                Button {} label: {
+                    Text("Add eSIM")
+                }
+            }
+            
+            Section {
                 Picker("Billing Period", selection: $mode) {
                     Text("This Billing Period").tag(0)
                     Text("Last Billing Period").tag(1)
@@ -60,39 +60,39 @@ struct CellularView: View {
                         .foregroundStyle(.blue)
                 }
                 SettingsLink(color: .gray, icon: "gear", id: "System Services", status: "0 KB", content: {})
-            }, header: {
+            } header: {
                 Text("Cellular Data")
-            })
+            }
             
-            Section(content: {
+            Section {
                 Toggle(isOn: $wifiAssistEnabled, label: {
                     Text("Wi-Fi Assist")
                     Text("0 KB")
                 })
-            }, footer: {
+            } footer: {
                 Text("Automatically use cellular data when Wi-Fi connectivity is poor.")
-            })
+            }
             
-//            Section(content: {
+//            Section {
 //                EmptyView()
-//            }, footer: {
+//            } footer: {
 //                Text("When not connected to Wi-Fi, use cellular network to transfer documents and data.")
-//            })
+//            }
             
-//            Section(content: {
+//            Section {
 //                EmptyView()
-//            }, footer: {
+//            } footer: {
 //                Text("When not connected to Wi-Fi, use your cellular network to automatically back up to iCloud. This may cause you to exceed your cellular data plan.")
-//            })
+//            }
             
-            Section(content: {
+            Section {
                 Toggle("Cellular Usage Statistics", isOn: $cellularUsageStatisticsEnabled)
                 Button("Reset Statistics", action: {})
-            }, header: {
+            } header: {
                 Text("Cellular Usage Statistics")
-            }, footer: {
+            } footer: {
                 Text("Disabling cellular usage statistics will disable all cellular usage tracking, as well as reset any currently tracked usage to zero.\n\nLast Reset: ")
-            })
+            }
         }
     }
 }

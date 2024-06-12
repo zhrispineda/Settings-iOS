@@ -22,16 +22,16 @@ struct SelectOptionList: View {
         CustomList(title: title) {
             Section {
                 ForEach(options, id: \.self) { option in
-                    Button(action: {
+                    Button {
                         selected = option
-                    }, label: {
+                    } label: {
                         HStack {
                             Text(option)
                                 .foregroundStyle(Color["Label"])
                             Spacer()
                             Image(systemName: "\(selected == option ? "checkmark" : "")")
                         }
-                    })
+                    }
                 }
             } footer: {
                 if title == "Connect with Friends" {

@@ -2,7 +2,7 @@
 //  SelectSignInOptionView.swift
 //  Preferences
 //
-//  Settings > Sign in to your [Device]
+//  Settings > Apple Account
 //
 
 import SwiftUI
@@ -59,9 +59,9 @@ struct SelectSignInOptionView: View {
                 
                 Section {
                     VStack {
-                        NavigationLink(destination: {
+                        NavigationLink {
                             AppleAccountLoginView()
-                        }, label: {
+                        } label: {
                             HStack {
                                 Image(systemName: "ellipsis.rectangle")
                                     .foregroundStyle(.blue)
@@ -75,7 +75,7 @@ struct SelectSignInOptionView: View {
                                 }
                                 .padding(5)
                             }
-                        })
+                        }
                     }
                 }
             }

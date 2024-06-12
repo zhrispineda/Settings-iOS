@@ -51,5 +51,7 @@ struct IconToggle: View {
 }
 
 #Preview {
-    IconToggle(enabled: .constant(false), color: .gray, icon: "gear", title: "Background App Refresh")
+    List {
+        IconToggle(enabled: .constant(false), color: .gray, icon: "gear", title: "Background App Refresh")
+    }
 }

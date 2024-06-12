@@ -2,7 +2,7 @@
 //  HotCornersDetailView.swift
 //  Preferences
 //
-//  Created by Chris on 2/27/24.
+//  Settings > Accessibility > Touch > AssistiveTouch > Hot Corners
 //
 
 import SwiftUI
@@ -18,73 +18,73 @@ struct HotCornersDetailView: View {
     
     var body: some View {
         CustomList(title: title) {
-            Section(content: {
+            Section {
                 ForEach(systemOptions, id: \.self) { option in
-                    Button(action: {
+                    Button {
                         selected = option
-                    }, label: {
+                    } label: {
                         HStack {
                             Text(option)
                                 .foregroundStyle(Color["Label"])
                             Spacer()
                             Image(systemName: "\(selected == option ? "checkmark" : "")")
                         }
-                    })
+                    }
                 }
-            }, header: {
+            } header: {
                 Text("\n\nSYSTEMHEADING")
-            })
+            }
             
-            Section(content: {
+            Section {
                 ForEach(accessibilityOptions, id: \.self) { option in
-                    Button(action: {
+                    Button {
                         selected = option
-                    }, label: {
+                    } label: {
                         HStack {
                             Text(option)
                                 .foregroundStyle(Color["Label"])
                             Spacer()
                             Image(systemName: "\(selected == option ? "checkmark" : "")")
                         }
-                    })
+                    }
                 }
-            }, header: {
+            } header: {
                 Text("ACCESSIBILITY")
-            })
+            }
             
-            Section(content: {
+            Section {
                 ForEach(scrollGestures, id: \.self) { option in
-                    Button(action: {
+                    Button {
                         selected = option
-                    }, label: {
+                    } label: {
                         HStack {
                             Text(option)
                                 .foregroundStyle(Color["Label"])
                             Spacer()
                             Image(systemName: "\(selected == option ? "checkmark" : "")")
                         }
-                    })
+                    }
                 }
-            }, header: {
+            } header: {
                 Text("SCROLLHEADING")
-            })
+            }
             
-            Section(content: {
+            Section {
                 ForEach(dwellControls, id: \.self) { option in
-                    Button(action: {
+                    Button {
                         selected = option
-                    }, label: {
+                    } label: {
                         HStack {
                             Text(option)
                                 .foregroundStyle(Color["Label"])
                             Spacer()
                             Image(systemName: "\(selected == option ? "checkmark" : "")")
                         }
-                    })
+                    }
                 }
-            }, header: {
+            } header: {
                 Text("DWELLHEADING")
-            })
+            }
         }
     }
 }

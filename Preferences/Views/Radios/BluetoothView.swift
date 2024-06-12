@@ -13,27 +13,27 @@ struct BluetoothView: View {
     
     var body: some View {
         CustomList(title: "Bluetooth") {
-            Section(content: {
-                SectionHelp(title: "", color: Color.blue, icon: "bluetooth", description: "Wirelessly connect accessories like keyboards, headphones, and speakers. [Learn more...](https://support.apple.com/guide/\(DeviceInfo().isPhone ?  "iphone/bluetooth-accessories-iph3c50f191/ios" : "ipad/bluetooth-accessories-ipad997da4cf/ipados"))")
+            Section {
+                SectionHelp(title: "Bluetooth", color: Color.blue, icon: "bluetooth", description: "Wirelessly connect accessories like keyboards, headphones, and speakers. [Learn more...](https://support.apple.com/guide/\(DeviceInfo().isPhone ?  "iphone/bluetooth-accessories-iph3c50f191/ios" : "ipad/bluetooth-accessories-ipad997da4cf/ipados"))")
                 Toggle("Bluetooth", isOn: $bluetoothEnabled.animation())
-            }, footer: {
+            } footer: {
                 if bluetoothEnabled {
                     Text("This \(UIDevice().localizedModel) is discoverable as \u{201C}\(UIDevice().localizedModel)\u{201D} while Bluetooth Settings is open.")
                 } else {
                     Text("AirDrop, AirPlay, Find My, and Location Services use Bluetooth.")
                 }
-            })
+            }
             
             if bluetoothEnabled {
-                Section(content: {
+                Section {
                     EmptyView()
-                }, header: {
+                } header: {
                     HStack {
                         Text("Devices")
                         ProgressView()
                             .padding(.horizontal, 1)
                     }
-                })
+                }
             }
         }
     }

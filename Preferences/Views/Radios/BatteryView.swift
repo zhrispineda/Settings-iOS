@@ -14,12 +14,12 @@ struct BatteryView: View {
     
     var body: some View {
         CustomList(title: "Battery") {
-            Section(content: {
+            Section {
                 Toggle("Battery Percentage", isOn: $batteryPercentageEnabled)
                 Toggle("Low Power Mode", isOn: $lowPowerModeEnabled)
-            }, footer: {
+            } footer: {
                 Text("Low Power Mode temporarily reduces background activity like downloads and mail fetch until you can fully charge your \(DeviceInfo().model).")
-            })
+            }
             
             Section {
                 if DeviceInfo().hasExtraBatteryFeatures {

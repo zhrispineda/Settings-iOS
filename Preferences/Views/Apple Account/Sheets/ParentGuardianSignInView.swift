@@ -24,10 +24,11 @@ struct ParentGuardianSignInView: View {
                     Image(systemName: "figure.and.child.holdinghands")
                         .foregroundStyle(.blue)
                         .font(.system(size: 64))
-                    Text("Parent or Guardian Apple ID Sign In")
+                    Text("Parent or Guardian Apple Account Sign In")
+                        .fixedSize(horizontal: false, vertical: true)
                         .font(.title)
                         .fontWeight(.bold)
-                    Text("Sign in with your Apple ID to set up this device for a child 12 of younger.")
+                    Text("Sign in with your Apple Account to set up this device for a child 12 or younger.")
                 }
                 .padding(.horizontal, 10)
                 .multilineTextAlignment(.center)
@@ -37,7 +38,7 @@ struct ParentGuardianSignInView: View {
             
             Section {
                 VStack(alignment: .center) {
-                    TextField("Email", text: $username)
+                    TextField("Email or Phone Number", text: $username)
                         .padding(.vertical)
                         .padding(.leading, 5)
                         .frame(height: 48)
@@ -45,20 +46,9 @@ struct ParentGuardianSignInView: View {
                         .background(Color(UIColor.systemGray5))
                         .cornerRadius(10)
                     Spacer()
-                    if DeviceInfo().isPhone {
-                        Button(action: {
-                            showingOptionsAlert.toggle()
-                        }, label: {
-                            Text("Forgot password or don‘t have an Apple ID?")
-                                .multilineTextAlignment(.center)
-                                .foregroundStyle(.accent)
-                        })
-                        .buttonStyle(.plain)
-                        .disabled(showingOptionsAlert)
-                    }
                 }
-                .alert("Forgot password or don‘t have an Apple ID?", isPresented: $showingOptionsAlert, actions: {
-                    Button("Forgot Password or Apple ID", role: .none, action: {
+                .alert("Forgot password or don‘t have an Apple Account?", isPresented: $showingOptionsAlert, actions: {
+                    Button("Forgot Password or Apple Account", role: .none, action: {
                         showingForgotPasswordSheet.toggle()
                     })
                     Button("Create Apple ID", role: .none, action: {
@@ -66,11 +56,11 @@ struct ParentGuardianSignInView: View {
                     })
                     Button("Cancel", role: .cancel, action: {})
                 })
-                .alert("Could Not Create Apple ID", isPresented: $showingErrorAlert, actions: {
+                .alert("Could Not Create Apple Account", isPresented: $showingErrorAlert, actions: {
                     Link("Learn More", destination: URL(string: "https://support.apple.com/en-us/101661")!)
                     Button("OK", action: {})
                 }, message: {
-                    Text("The iPhoneSimulator has been used to create too many new Apple IDs. Contact Apple Support to request another Apple ID to use with this iPhoneSimulator.")
+                    Text("The iPhoneSimulator has been used to create too many new Apple Accounts. Contact Apple Support to request another Apple Account to use with this iPhoneSimulator.")
                 })
                 .sheet(isPresented: $showingForgotPasswordSheet, content: {
                     NavigationStack {
@@ -84,9 +74,9 @@ struct ParentGuardianSignInView: View {
             
             Section {
                 VStack {
-                    Button(action: {
+                    Button {
                         // Empty
-                    }, label: {
+                    } label: {
                         VStack {
                             Image("GDPR_Blue")
                                 .resizable()
@@ -98,13 +88,13 @@ struct ParentGuardianSignInView: View {
                                 .font(.caption2)
                                 .foregroundStyle(.gray)
                         }
-                    })
+                    }
                     .buttonStyle(.plain)
                     
-                    Button(action: {
+                    Button {
                         signingIn.toggle()
                         showingAlert.toggle()
-                    }, label: {
+                    } label: {
                         if signingIn || showingOptionsAlert {
                             ProgressView()
                                 .fontWeight(.medium)
@@ -122,7 +112,7 @@ struct ParentGuardianSignInView: View {
                                 .foregroundStyle(username.count < 1 ? Color(UIColor.systemGray) : Color.white)
                                 .cornerRadius(15)
                         }
-                    })
+                    }
                     .frame(height: 50)
                     .disabled(username.count < 1)
                     .alert("Verification Failed", isPresented: $showingAlert) {
@@ -130,7 +120,7 @@ struct ParentGuardianSignInView: View {
                             signingIn.toggle()
                         }
                     } message: {
-                        Text("There was an error connecting to the Apple ID server.")
+                        Text("There was an error connecting to the Apple Account server.")
                     }
                 }
             }

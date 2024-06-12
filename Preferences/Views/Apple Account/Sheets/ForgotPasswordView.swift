@@ -33,9 +33,9 @@ struct ForgotPasswordView: View {
                     .listRowSeparator(.hidden)
                     
                     Section {
-                        Button(action: {
+                        Button {
                             showingEmailSentAlert.toggle()
-                        }, label: {
+                        } label: {
                             HStack {
                                 Text("Unlock By Email")
                                     .foregroundStyle(Color["Label"])
@@ -47,7 +47,7 @@ struct ForgotPasswordView: View {
                                         .foregroundStyle(.secondary)
                                 }
                             }
-                        })
+                        }
                         .alert("Unlock Email Sent",
                                isPresented: $showingEmailSentAlert
                         ) {
@@ -102,9 +102,9 @@ struct ForgotPasswordView: View {
                     VStack {
                         Spacer()
                         ZStack {
-                            NavigationLink(destination: {
+                            NavigationLink {
                                 ForgotPasswordView(showingUnlockOptions: true)
-                            }, label: {
+                            } label: {
                                 Text("Continue")
                                     .fontWeight(.medium)
                                     .font(.headline)
@@ -115,7 +115,7 @@ struct ForgotPasswordView: View {
                                     .padding(.horizontal, 40)
                                     .disabled(username.count < 1)
                                     .frame(height: 50)
-                            })
+                            }
                         }
                     }
                     .padding(.bottom, 50)
@@ -123,7 +123,7 @@ struct ForgotPasswordView: View {
             }
         }
         .toolbar {
-            ToolbarItem(placement: .topBarLeading, content: {
+            ToolbarItem(placement: .topBarLeading) {
                 Button(action: {
                     dismiss()
                 }, label: {
@@ -131,7 +131,7 @@ struct ForgotPasswordView: View {
                         .foregroundStyle(.accent)
                 })
                 .buttonStyle(.plain)
-            })
+            }
         }
     }
 }

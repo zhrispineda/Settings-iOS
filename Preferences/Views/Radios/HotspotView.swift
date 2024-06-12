@@ -15,11 +15,11 @@ struct HotspotView: View {
     
     var body: some View {
         CustomList(title: "Personal Hotspot") {
-            Section(content: {
+            Section {
                 EmptyView()
-            }, footer: {
+            } footer: {
                 Text("Personal Hotspot on your iPhone can provide Internet access to other devices signed into your iCloud account without requiring you to enter the password.")
-            })
+            }
             
             Section {
                 Toggle("Allow Others to Join", isOn: $allowOthersJoinEnabled)
@@ -29,23 +29,23 @@ struct HotspotView: View {
                     })
             }
             
-            Section(content: {
+            Section {
                 EmptyView()
-            }, footer: {
+            } footer: {
                 Text("Allow other users or devices not signed into iCloud to look for your shared network \u{201C}\(UIDevice().localizedModel)\u{201D} when you are in Personal Hotspot settings or when you turn it on in Control Center.")
-            })
+            }
             
-//            Section(content: {
+//            Section {
 //                NavigationLink("Family Sharing", destination: EmptyView())
-//            }, footer: {
+//            } footer: {
 //                Text("Share Personal Hotspot with members of Family Sharing")
-//            })
+//            }
             
-            Section(content: {
+            Section {
                 Toggle("Maximize Compatability", isOn: $maximizeCompatibility)
-            }, footer: {
+            } footer: {
                 Text("Internet performance may be reduced for devices connected to your hotspot when turned on.")
-            })
+            }
         }
     }
     

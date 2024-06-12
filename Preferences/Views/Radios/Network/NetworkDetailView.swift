@@ -12,7 +12,7 @@ struct NetworkDetailView: View {
     
     var body: some View {
         CustomList(title: "NETWORK") {
-//            Section(content: {
+//            Section {
 //                Text("**Unsecured Network**")
 //                Text("Open networks provide no security and expose all network traffic.")
 //                    .foregroundStyle(.secondary)
@@ -25,38 +25,38 @@ struct NetworkDetailView: View {
 //                    .listRowSeparator(.hidden)
 //                Text("Using a private address helps reduce tracking of your iPhone across different Wi-Fi networks.")
 //                    .foregroundStyle(.secondary)
-//            }, footer: {
+//            } footer: {
 //                Text("[Learn more about recommended settings for Wi-Fi...](#)")
-//            })
+//            }
             
             Section {
                 Button("Join This Network", action: {})
             }
             
-            Section(content: {
+            Section {
                 Toggle("Private Wi-Fi Address", isOn: $privateWifiAddressEnabled)
                 LabeledContent("Wi-Fi Address", value: "00:00:0X:XX:0X:X0")
-            }, footer: {
+            } footer: {
                 Text("Using a privatr address helps reduce tracking of your \(DeviceInfo().model) across different Wi-Fi networks.")
-            })
+            }
             
-            Section(content: {
+            Section {
                 CustomNavigationLink(title: "Configure IP", status: "Automatic", destination: EmptyView())
-            }, header: {
+            } header: {
                 Text("IPv4 Address")
-            })
+            }
             
-            Section(content: {
+            Section {
                 CustomNavigationLink(title: "Configure DNS", status: "Automatic", destination: EmptyView())
-            }, header: {
+            } header: {
                 Text("DNS")
-            })
+            }
             
-            Section(content: {
+            Section {
                 CustomNavigationLink(title: "Configure Proxy", status: "Off", destination: EmptyView())
-            }, header: {
+            } header: {
                 Text("HTTP Proxy")
-            })
+            }
         }
     }
 }

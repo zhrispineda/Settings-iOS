@@ -13,30 +13,30 @@ struct BatteryHealthView: View {
     
     var body: some View {
         CustomList(title: "Battery Health") {
-            Section(content: {
+            Section {
                 LabeledContent("Battery Health", value: "Normal")
-            }, footer: {
+            } footer: {
                 Text("This \(DeviceInfo().model) battery is performing as expected. [About Battery & Warranty...](#)")
-            })
+            }
             
-            Section(content: {
+            Section {
                 LabeledContent("Maximum Capacity", value: "\(maximumCapacity)%")
-            }, footer: {
+            } footer: {
                 Text("This is a measure of battery capacity relative to when it was new. Lower capacity may result in fewer hours of usage between charges.")
-            })
+            }
             
-            Section(content: {
+            Section {
                 LabeledContent("Cycle Count", value: "0")
-            }, footer: {
+            } footer: {
                 Text("This is the number of times \(DeviceInfo().model) has used your battery's capacity. [Learn more...](https://www.apple.com/batteries/why-lithium-ion/)")
-            })
+            }
             
             if DeviceInfo().isTablet {
-                Section(content: {
+                Section {
                     Toggle("80% Limit", isOn: $eightyPercentLimitEnabled)
-                }, footer: {
+                } footer: {
                     Text("iPad will only charge to about 80%. [Learn more...](https://support.apple.com/en-us/118418)")
-                })
+                }
             }
             
             Section {

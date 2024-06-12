@@ -47,13 +47,13 @@ struct AppleAccountLoginView: View {
                         .background(Color(UIColor.systemGray5))
                         .cornerRadius(10)
                     Spacer()
-                    Button(action: {
+                    Button {
                         showingOptionsAlert.toggle()
-                    }, label: {
+                    } label: {
                         Text("Forgot password or don‘t have an Apple ID?")
                             .multilineTextAlignment(.center)
                             .foregroundStyle(.accent)
-                    })
+                    }
                     .buttonStyle(.plain)
                     .disabled(showingOptionsAlert)
                     Spacer()
@@ -93,9 +93,9 @@ struct AppleAccountLoginView: View {
             
             Section {
                 VStack {
-                    Button(action: {
+                    Button {
                         // Empty
-                    }, label: {
+                    } label: {
                         VStack {
                             Image("GDPR_Blue")
                                 .resizable()
@@ -107,13 +107,13 @@ struct AppleAccountLoginView: View {
                                 .font(.caption2)
                                 .foregroundStyle(.gray)
                         }
-                    })
+                    }
                     .buttonStyle(.plain)
                     
-                    Button(action: {
+                    Button {
                         signingIn.toggle()
                         showingAlert.toggle()
-                    }, label: {
+                    } label: {
                         if signingIn || showingOptionsAlert {
                             ProgressView()
                                 .fontWeight(.medium)
@@ -131,7 +131,7 @@ struct AppleAccountLoginView: View {
                                 .foregroundStyle(username.count < 1 ? Color(UIColor.systemGray) : Color.white)
                                 .cornerRadius(15)
                         }
-                    })
+                    }
                     .frame(height: 50)
                     .disabled(username.count < 1)
                     .alert("Verification Failed", isPresented: $showingAlert) {
@@ -148,22 +148,22 @@ struct AppleAccountLoginView: View {
         .navigationBarBackButtonHidden()
         .toolbar {
             if isMainSheet {
-                ToolbarItem(placement: .topBarTrailing, content: {
-                    Button(action: {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
                         dismiss()
-                    }, label: {
+                    } label: {
                         Image(systemName: "xmark.circle.fill")
                             .font(.system(size: 24))
                             .foregroundStyle(.gray, Color(UIColor.systemFill))
-                    })
-                })
+                    }
+                }
             } else {
                 ToolbarItem(placement: .topBarLeading) {
-                    Button(action: {
+                    Button {
                         dismiss()
-                    }, label: {
+                    } label: {
                         Image(systemName: "chevron.left")
-                    })
+                    }
                 }
             }
         }
