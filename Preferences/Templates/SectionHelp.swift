@@ -27,7 +27,7 @@ struct SectionHelp: View {
             Text(title)
                 .bold()
                 .font(.title2)
-            Text(description)
+            Text(.init(description))
                 .font(.subheadline)
                 .padding(.bottom, -10)
                 .padding(.horizontal, -5)

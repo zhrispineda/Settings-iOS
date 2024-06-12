@@ -17,31 +17,31 @@ struct NetworkView: View {
     var body: some View {
         CustomList(title: "Wi-Fi") {
             if isEditing {
-                Section(content: {
-                    
-                }, header: {
+                Section {} header: {
                     Text("\n\nKnown Networks")
-                })
+                }
             } else {
-                Section(content: {
-                    Toggle(isOn: $networkEnabled, label: {
+                Section {
+                    SectionHelp(title: "Wi-Fi", color: Color.blue, icon: "wifi", description: "Connect to Wi-Fi, view available networks, and manage settings for joining networks and nearby hotspots. [Learn more about Wi-Fi settings...](https://support.apple.com/guide/\(DeviceInfo().isPhone ?  "iphone/connect-to-the-internet-iphd1cf4268/ios" : "ipad/connect-to-the-internet-ipad2db29c3a/ipados"))")
+                    
+                    Toggle(isOn: $networkEnabled) {
                         HStack {
                             Image(systemName: "checkmark")
                                 .foregroundStyle(.clear)
                             Text("Wi-Fi")
                         }
-                    })
-                }, footer: {
+                    }
+                } footer: {
                     if !networkEnabled {
                         Text("AirDrop, AirPlay, Notify When Left Behind, and \(DeviceInfo().isPhone ? "improved location accuracy" : "location services") require Wi-Fi.")
                     }
-                })
+                }
                 
                 if networkEnabled {
-                    Section(content: {
-                        Button(action: {
+                    Section {
+                        Button {
                             showingOtherNetwork.toggle()
-                        }, label: {
+                        } label: {
                             HStack {
                                 Image(systemName: "checkmark")
                                     .foregroundStyle(.clear)
@@ -52,44 +52,44 @@ struct NetworkView: View {
                                             .foregroundStyle(Color["Label"])
                                     })
                             }
-                        })
-                    }, header: {
+                        }
+                    } header: {
                         Text("Networks")
-                    })
+                    }
                     
-                    Section(content: {
+                    Section {
                         CustomNavigationLink(title: "Ask to Join Networks", status: "Off", destination: EmptyView())
-                    }, footer: {
+                    } footer: {
                         Text("Known networks will be joined automatically. If no known networks are available, you will have to manually select a network.")
-                    })
+                    }
                     
-                    Section(content: {
+                    Section {
                         CustomNavigationLink(title: "Auto-Join Hotspot", status: "Never", destination: EmptyView())
-                    }, footer: {
+                    } footer: {
                         Text("Allow this device to automatically discover nearby personal hotspots when no Wi-Fi network is available.")
-                    })
+                    }
                 }
             }
         }
         .toolbar {
             if isEditing {
-                ToolbarItem(placement: .topBarLeading, content: {
-                    Button("Cancel", action: {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button("Cancel") {
                         withAnimation {
                             isEditing.toggle()
                         }
-                    })
-                })
+                    }
+                }
             }
             
-            ToolbarItem(placement: .topBarTrailing, content: {
-                Button(isEditing ? "**Done**" : "Edit", action: {
+            ToolbarItem(placement: .topBarTrailing) {
+                Button(isEditing ? "**Done**" : "Edit") {
                     withAnimation {
                         isEditing.toggle()
                     }
-                })
+                }
                 .disabled(isEditing)
-            })
+            }
         }
     }
 }
