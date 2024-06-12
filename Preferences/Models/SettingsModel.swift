@@ -19,6 +19,8 @@ extension Color {
         switch name {
         case "Label":
             return Color(UIColor.label)
+        case "Hightlight":
+            return Color(red: 0.0, green: 1.0, blue: 1.0)
         case "Default":
             return Color.accentColor
         case "Gray":
@@ -101,8 +103,9 @@ enum SettingsModel: String, CaseIterable {
     case photos = "Photos"
     case appStore = "App Store"
     case gameCenter = "Game Center"
+    case wallet = "Wallet & Apple Pay"
     
-    case tvProvider = "TV Provider"
+    case apps = "Apps"
     
     case developer = "Developer"
 }
@@ -165,7 +168,7 @@ let smallerIcons = ["airplane", "arrow.turn.up.forward.iphone", "battery.100perc
     SettingsItem(type: .camera, title: "Camera", icon: "camera.fill", color: .gray, destination: AnyView(EmptyView())),
     SettingsItem(type: .homeScreenAppLibrary, title: "Home Screen & App Library", icon: "apps.iphone", color: .blue, destination: AnyView(EmptyView())),
     //SettingsItem(type: .multitaskGestures, title: "Multitasking & Gestures", icon: "squares.leading.rectangle", color: .blue, destination: AnyView(MultitaskingGesturesView())),
-    SettingsItem(type: .search, title: "Search", icon: "magnifyingglass", color: .gray, destination: AnyView(SiriSearchView())),
+    SettingsItem(type: .search, title: "Search", icon: "magnifyingglass", color: .gray, destination: AnyView(EmptyView())),
     SettingsItem(type: .siri, title: "Siri", icon: "applesiri", color: Color(UIColor.systemBackground), destination: AnyView(SiriSearchView())),
     SettingsItem(type: .standby, title: "StandBy", icon: "applestandby", color: .black, destination: AnyView(EmptyView())),
     //SettingsItem(type: .privacySecurity, title: "Privacy & Security", icon: "hand.raised.fill", color: .blue, destination: AnyView(PrivacySecurityView()))
@@ -173,8 +176,8 @@ let smallerIcons = ["airplane", "arrow.turn.up.forward.iphone", "battery.100perc
 
 // Security Settings: Privacy & Security
 @MainActor let securitySettings: [SettingsItem] = [
-    SettingsItem(type: .biometricPasscode, title: "\(DeviceInfo().hasFaceAuth ? "Face" : "Touch") ID & Passcode", icon: DeviceInfo().hasFaceAuth ? "faceid" : "lock.fill", color: DeviceInfo().hasFaceAuth ? .green : .red, destination: AnyView(PrivacySecurityView())),
-    SettingsItem(type: .emergencySOS, title: "Emergency SOS", icon: "sos", color: .red, destination: AnyView(PrivacySecurityView())),
+    SettingsItem(type: .biometricPasscode, title: "\(DeviceInfo().hasFaceAuth ? "Face" : "Touch") ID & Passcode", icon: DeviceInfo().hasFaceAuth ? "faceid" : "lock.fill", color: DeviceInfo().hasFaceAuth ? .green : .red, destination: AnyView(EmptyView())),
+    SettingsItem(type: .emergencySOS, title: "Emergency SOS", icon: "sos", color: .red, destination: AnyView(EmptyView())),
     SettingsItem(type: .privacySecurity, title: "Privacy & Security", icon: "hand.raised.fill", color: .blue, destination: AnyView(PrivacySecurityView()))
 ]
 
@@ -183,12 +186,12 @@ let smallerIcons = ["airplane", "arrow.turn.up.forward.iphone", "battery.100perc
     //SettingsItem(type: .passwords, title: "Passwords", icon: "key.fill", color: .gray, destination: AnyView(PasswordsView()))
     SettingsItem(type: .appStore, title: "App Store", icon: Configuration().isSimulator ? "Placeholder_Normal" : "appleappstore", destination: AnyView(EmptyView())),
     SettingsItem(type: .gameCenter, title: "Game Center", icon: Configuration().isSimulator ? "Placeholder_Normal" : "applegamecenter", destination: AnyView(GameCenterView())),
-    SettingsItem(type: .gameCenter, title: "Wallet & Apple Pay", icon: "applewallet", destination: AnyView(EmptyView()))
+    SettingsItem(type: .wallet, title: "Wallet & Apple Pay", icon: "applewallet", destination: AnyView(EmptyView()))
 ]
 
 // App Settings: Safari, News, Trnalsate, Maps, Shortcuts, Health, Siri & Search, Photos, Game Center
 @MainActor let appSettings: [SettingsItem] = [
-    SettingsItem(type: .homeScreenAppLibrary, title: "Apps", icon: "applehome screen & app library", color: .indigo, destination: AnyView(EmptyView())),
+    SettingsItem(type: .apps, title: "Apps", icon: "applehome screen & app library", color: .indigo, destination: AnyView(EmptyView())),
 //    SettingsItem(type: .safari, title: "Safari", icon: "applesafari", destination: AnyView(SafariView())),
 //    SettingsItem(type: .news, title: "News", icon: "applenews", destination: AnyView(NewsView())),
 //    SettingsItem(type: .translate, title: "Translate", icon: Configuration().isSimulator ? "Placeholder_Normal" : "appletranslate", color: .white, destination: AnyView(TranslateView())),
@@ -201,10 +204,9 @@ let smallerIcons = ["airplane", "arrow.turn.up.forward.iphone", "battery.100perc
 ]
 
 // TV Provider Settings: TV Provider
-@MainActor let tvProviderSettings: [SettingsItem] = [
-    SettingsItem(type: .tvProvider, title: "TV Provider", icon: "cable.coaxial", color: .black, destination: AnyView(EmptyView()))
-
-]
+//@MainActor let tvProviderSettings: [SettingsItem] = [
+    //SettingsItem(type: .tvProvider, title: "TV Provider", icon: "cable.coaxial", color: .black, destination: AnyView(EmptyView()))
+//]
 
 // Developer Settings: Developer
 @MainActor let developerSettings: [SettingsItem] = [

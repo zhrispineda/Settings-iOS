@@ -18,7 +18,7 @@ struct ContentView: View {
     @State private var id = UUID()
     @State private var airplaneModeEnabled = false
     let tabletOnly = ["Multitasking & Gestures"]
-    let phoneOnly = ["Action Button", "Health"]
+    let phoneOnly = ["Action Button", "Health", "Emergency SOS", "Personal Hotspot"]
     
     var body: some View {
         ZStack {
@@ -47,14 +47,14 @@ struct ContentView: View {
                                 Section {
                                     IconToggle(enabled: $airplaneModeEnabled, color: Color.orange, icon: "airplane", title: "Airplane Mode")
                                     ForEach(radioSettings) { setting in
-                                        Button(action: {
+                                        Button {
                                             id = UUID() // Reset destination
                                             selection = setting.type
-                                        }, label: {
+                                        } label: {
                                             SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Wi-Fi" ? "On" : String())
-                                                .foregroundStyle(selection == setting.type ? Color.white : Color["Label"])
-                                        })
-                                        .listRowBackground(selection == setting.type ? Color.blue : nil)
+                                                .foregroundStyle(selection == setting.type ? (Configuration().isSimulator ? Color.white : Color["Label"]) : Color["Label"])
+                                        }
+                                        .listRowBackground(selection == setting.type ? (Configuration().isSimulator ? Color.blue : Color("Selected")) : nil)
                                     }
                                 }
                             }
@@ -68,9 +68,9 @@ struct ContentView: View {
                                             selection = setting.type
                                         }, label: {
                                             SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id)
-                                                .foregroundStyle(selection == setting.type ? Color.white : Color["Label"])
+                                                .foregroundStyle(selection == setting.type ? (Configuration().isSimulator ? Color.white : Color["Label"]) : Color["Label"])
                                         })
-                                        .listRowBackground(selection == setting.type ? Color.blue.opacity(0.75) : nil)
+                                        .listRowBackground(selection == setting.type ? (Configuration().isSimulator ? Color.blue : Color("Selected")) : nil)
                                     }
                                 }
                             }
@@ -84,9 +84,9 @@ struct ContentView: View {
                                             selection = setting.type
                                         }, label: {
                                             SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id)
-                                                .foregroundStyle(selection == setting.type ? Color.white : Color["Label"])
+                                                .foregroundStyle(selection == setting.type ? (Configuration().isSimulator ? Color.white : Color["Label"]) : Color["Label"])
                                         })
-                                        .listRowBackground(selection == setting.type ? Color.blue : nil)
+                                        .listRowBackground(selection == setting.type ? (Configuration().isSimulator ? Color.blue : Color("Selected")) : nil)
                                     }
                                 }
                             }
@@ -99,9 +99,25 @@ struct ContentView: View {
                                         selection = setting.type
                                     }, label: {
                                         SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id)
-                                            .foregroundStyle(selection == setting.type ? Color.white : Color["Label"])
+                                            .foregroundStyle(selection == setting.type ? (Configuration().isSimulator ? Color.white : Color["Label"]) : Color["Label"])
                                     })
-                                    .listRowBackground(selection == setting.type ? Color.blue.opacity(0.75) : nil)
+                                    .listRowBackground(selection == setting.type ? (Configuration().isSimulator ? Color.blue : Color("Selected")) : nil)
+                                }
+                            }
+                            
+                            // MARK: Security Settings
+                            Section {
+                                ForEach(securitySettings) { setting in
+                                    if !phoneOnly.contains(setting.id) {
+                                        Button(action: {
+                                            id = UUID() // Reset destination
+                                            selection = setting.type
+                                        }, label: {
+                                            SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id)
+                                                .foregroundStyle(selection == setting.type ? (Configuration().isSimulator ? Color.white : Color["Label"]) : Color["Label"])
+                                        })
+                                        .listRowBackground(selection == setting.type ? (Configuration().isSimulator ? Color.blue : Color("Selected")) : nil)
+                                    }
                                 }
                             }
                             
@@ -114,9 +130,9 @@ struct ContentView: View {
                                             selection = setting.type
                                         }, label: {
                                             SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id)
-                                                .foregroundStyle(selection == setting.type ? Color.white : Color["Label"])
+                                                .foregroundStyle(selection == setting.type ? (Configuration().isSimulator ? Color.white : Color["Label"]) : Color["Label"])
                                         })
-                                        .listRowBackground(selection == setting.type ? Color.blue.opacity(0.75) : nil)
+                                        .listRowBackground(selection == setting.type ? (Configuration().isSimulator ? Color.blue : Color("Selected")) : nil)
                                     }
                                 }
                             }
@@ -129,9 +145,9 @@ struct ContentView: View {
                                         selection = setting.type
                                     }, label: {
                                         SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id)
-                                            .foregroundStyle(selection == setting.type ? Color.white : Color["Label"])
+                                            .foregroundStyle(selection == setting.type ? (Configuration().isSimulator ? Color.white : Color["Label"]) : Color["Label"])
                                     })
-                                    .listRowBackground(selection == setting.type ? Color.blue.opacity(0.75) : nil)
+                                    .listRowBackground(selection == setting.type ? (Configuration().isSimulator ? Color.blue : Color("Selected")) : nil)
                                 }
                             }
                         }
