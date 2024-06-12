@@ -18,7 +18,7 @@ struct ContentView: View {
     @State private var id = UUID()
     @State private var airplaneModeEnabled = false
     let tabletOnly = ["Multitasking & Gestures"]
-    let phoneOnly = ["Action Button", "Health", "Emergency SOS", "Personal Hotspot"]
+    let phoneOnly = ["Action Button", "Emergency SOS", "Health", "Personal Hotspot", "StandBy"]
     
     var body: some View {
         ZStack {
@@ -47,21 +47,23 @@ struct ContentView: View {
                                 Section {
                                     IconToggle(enabled: $airplaneModeEnabled, color: Color.orange, icon: "airplane", title: "Airplane Mode")
                                     ForEach(radioSettings) { setting in
-                                        Button {
-                                            id = UUID() // Reset destination
-                                            selection = setting.type
-                                        } label: {
-                                            SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Wi-Fi" ? "On" : String())
-                                                .foregroundStyle(selection == setting.type ? (Configuration().isSimulator ? Color.white : Color["Label"]) : Color["Label"])
+                                        if !phoneOnly.contains(setting.id) {
+                                            Button {
+                                                id = UUID() // Reset destination
+                                                selection = setting.type
+                                            } label: {
+                                                SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Wi-Fi" ? "On" : String())
+                                                    .foregroundStyle(selection == setting.type ? (Configuration().isSimulator ? Color.white : Color["Label"]) : Color["Label"])
+                                            }
+                                            .listRowBackground(selection == setting.type ? (Configuration().isSimulator ? Color.blue : Color("Selected")) : nil)
                                         }
-                                        .listRowBackground(selection == setting.type ? (Configuration().isSimulator ? Color.blue : Color("Selected")) : nil)
                                     }
                                 }
                             }
                             
                             // MARK: Main Settings
                             Section {
-                                ForEach(mainSettings) { setting in
+                                ForEach(Configuration().isSimulator ? simulatorMainSettings : mainSettings) { setting in
                                     if !phoneOnly.contains(setting.id) {
                                         Button(action: {
                                             id = UUID() // Reset destination
@@ -91,20 +93,6 @@ struct ContentView: View {
                                 }
                             }
                             
-                            // MARK: Services Settings
-                            Section {
-                                ForEach(serviceSettings) { setting in
-                                    Button(action: {
-                                        id = UUID() // Reset destination
-                                        selection = setting.type
-                                    }, label: {
-                                        SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id)
-                                            .foregroundStyle(selection == setting.type ? (Configuration().isSimulator ? Color.white : Color["Label"]) : Color["Label"])
-                                    })
-                                    .listRowBackground(selection == setting.type ? (Configuration().isSimulator ? Color.blue : Color("Selected")) : nil)
-                                }
-                            }
-                            
                             // MARK: Security Settings
                             Section {
                                 ForEach(Configuration().isSimulator ? simulatorSecuritySettings : securitySettings) { setting in
@@ -118,6 +106,20 @@ struct ContentView: View {
                                         })
                                         .listRowBackground(selection == setting.type ? (Configuration().isSimulator ? Color.blue : Color("Selected")) : nil)
                                     }
+                                }
+                            }
+                            
+                            // MARK: Services Settings
+                            Section {
+                                ForEach(serviceSettings) { setting in
+                                    Button(action: {
+                                        id = UUID() // Reset destination
+                                        selection = setting.type
+                                    }, label: {
+                                        SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id)
+                                            .foregroundStyle(selection == setting.type ? (Configuration().isSimulator ? Color.white : Color["Label"]) : Color["Label"])
+                                    })
+                                    .listRowBackground(selection == setting.type ? (Configuration().isSimulator ? Color.blue : Color("Selected")) : nil)
                                 }
                             }
                             
@@ -247,11 +249,6 @@ struct ContentView: View {
                             
                             // MARK: Apps
                             SettingsLinkSection(item: appSettings)
-                            
-                            // MARK: TV Provider
-//                            if !Configuration().isSimulator {
-//                                SettingsLinkSection(item: tvProviderSettings)
-//                            }
                             
                             // MARK: Developer
                             if Configuration().isSimulator || Configuration().developerMode {

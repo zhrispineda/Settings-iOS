@@ -20,9 +20,17 @@ struct SectionHelp: View {
                 color
                     .frame(width: 56, height: 56)
                     .clipShape(RoundedRectangle(cornerRadius: 13.0))
-                Image(systemName: icon)
-                    .font(.system(size: 36))
-                    .foregroundStyle(.white)
+                if UIImage(systemName: icon) != nil {
+                    Image(systemName: icon)
+                        .font(.system(size: 36))
+                        .foregroundStyle(.white)
+                } else {
+                    Image(icon)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 20)
+                        .foregroundStyle(.white)
+                }
             }
             Text(title)
                 .bold()
@@ -39,5 +47,5 @@ struct SectionHelp: View {
 }
 
 #Preview {
-    SectionHelp(title: "General", color: Color.gray, icon: "gear", description: "Manage your overall setup and preferences for \(DeviceInfo().model), such as software updates, device language\(DeviceInfo().isPhone ? ", CarPlay" : ""), AirDrop, and more.")
+    SectionHelp(title: "General", color: Color.blue, icon: "bluetooth", description: "Manage your overall setup and preferences for \(DeviceInfo().model), such as software updates, device language\(DeviceInfo().isPhone ? ", CarPlay" : ""), AirDrop, and more.")
 }

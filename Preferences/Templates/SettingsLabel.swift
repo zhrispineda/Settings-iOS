@@ -49,7 +49,7 @@ struct SettingsLabel: View {
                         .scaledToFit()
                         .clipShape(RoundedRectangle(cornerRadius: 5))
                         .foregroundStyle(.white)
-                        .frame(width: 30, height: icon == "logo.bluetooth" ? 24 : 30)
+                        .frame(width: 30, height: icon == "bluetooth" ? 21 : 30)
                 }
             }
             Text(id)
@@ -66,7 +66,7 @@ struct SettingsLabel: View {
     NavigationStack {
         List {
             SettingsLabel(color: Color.gray, icon: "applesafari", id: "Safari")
-            SettingsLabel(color: Color.gray, icon: "gear", id: "Safari")
+            SettingsLabel(color: Color.gray, icon: "bluetooth", id: "Safari")
         }
     }
 }

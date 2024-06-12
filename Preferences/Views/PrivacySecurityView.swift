@@ -29,7 +29,7 @@ struct PrivacySecurityView: View {
                 SettingsLink(icon: "applephotos", id: "Photos", content: {
                     AppPermissionsView(permissionName: "Photos")
                 })
-                SettingsLink(color: .blue, icon: "logo.bluetooth", id: "Bluetooth", content: {
+                SettingsLink(color: .blue, icon: "bluetooth", id: "Bluetooth", content: {
                     AppPermissionsView(permissionName: "Bluetooth")
                 })
                 SettingsLink(color: .blue, icon: "network", id: "Local Network", content: {

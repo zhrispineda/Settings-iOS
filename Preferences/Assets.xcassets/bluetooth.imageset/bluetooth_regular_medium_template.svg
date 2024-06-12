@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Generator: Apple Native CoreSVG 332-->
+<!DOCTYPE svg
+PUBLIC "-//W3C//DTD SVG 1.1//EN"
+       "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 10.2266 17.6475">
+ <defs>
+  <style>.hierarchical-0:primary{-sfsymbols-motion-group:0;-sfsymbols-layer-tags:bluetooth;}.monochrome-0{-sfsymbols-motion-group:0;-sfsymbols-layer-tags:bluetooth;}.multicolor-0:systemBlueColor{-sfsymbols-motion-group:0;-sfsymbols-layer-tags:bluetooth;}</style>
+ </defs>
+ <g id="s" transform="matrix(0.00830078 0 0 0.00830078 -2.86377 14.8252)">
+  <path class="monochrome-0 multicolor-0:systemBlueColor hierarchical-0:primary" d="m841 238c0 81 104 102 160 53l522-442c38-34 53-72 53-109 0-38-17-78-55-107l-446-353 447-353c39-29 55-69 55-107 0-37-14-76-53-109l-523-443c-65-54-160-27-160 53v765l-354-283c-20-16-42-26-65-26-44 0-77 35-77 76 0 27 10 50 31 66l459 360-459 362c-21 16-31 39-31 66 0 41 33 75 77 75 23 0 45-9 65-25l354-285Zm161-171v-635l400 310Zm0-939v-635l401 325Z"/>
+ </g>
+</svg>
