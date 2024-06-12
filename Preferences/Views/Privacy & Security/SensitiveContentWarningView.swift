@@ -32,7 +32,7 @@ struct SensitiveContentWarningView: View {
             
             if sensitiveContentWarningEnabled {
                 Section(content: {
-                    IconToggle(enabled: $airDropEnabled, color: .white, icon: "AirDropAlt", title: "AirDrop")
+                    IconToggle(enabled: $airDropEnabled, color: .white, icon: "airdrop", title: "AirDrop")
                     IconToggle(enabled: $contactsEnabled, icon: "applecontacts", title: "Contacts")
                     IconToggle(enabled: $messagesEnabled, icon: "applemessages", title: "Messages")
                     IconToggle(enabled: $videoMessagesEnabled, color: .green, icon: "video.bubble.fill", title: "Video Messages")

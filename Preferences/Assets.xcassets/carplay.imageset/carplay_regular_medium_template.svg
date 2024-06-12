@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Generator: Apple Native CoreSVG 332-->
+<!DOCTYPE svg
+PUBLIC "-//W3C//DTD SVG 1.1//EN"
+       "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 15.0825 16.9502">
+ <defs>
+  <style>.hierarchical-0:primary{-sfsymbols-motion-group:1;-sfsymbols-layer-tags:carplay;-sfsymbols-always-rotates:true;}.hierarchical-1:primary{-sfsymbols-motion-group:0;-sfsymbols-layer-tags:carplay;}.monochrome-0{-sfsymbols-motion-group:1;-sfsymbols-layer-tags:carplay;-sfsymbols-always-rotates:true;}.monochrome-1{-sfsymbols-motion-group:0;-sfsymbols-layer-tags:carplay;}.multicolor-0:tintColor{-sfsymbols-motion-group:1;-sfsymbols-layer-tags:carplay;-sfsymbols-always-rotates:true;}.multicolor-1:tintColor{-sfsymbols-motion-group:0;-sfsymbols-layer-tags:carplay;}</style>
+ </defs>
+ <g id="s" transform="matrix(0.00830078 0 0 0.00830078 -0.979492 14.4683)">
+  <path class="monochrome-0 multicolor-0:tintColor hierarchical-0:primary" d="m1139 299c381 0 648-216 758-342 26-30 38-60 38-87 0-54-44-92-93-92-29 0-60 13-85 42-103 119-311 278-618 278-457 0-820-364-820-820s362-821 818-821c309 0 514 161 619 279 25 29 55 42 84 42 50 0 94-38 94-92 0-27-12-57-38-87-110-127-377-342-759-342-557 0-1019 464-1019 1021s463 1021 1021 1021Z"/>
+  <path class="monochrome-1 multicolor-1:tintColor hierarchical-1:primary" d="m886-407c0 48 53 69 100 41l518-303c40-24 39-82 0-105l-518-303c-43-26-100-7-100 41Z"/>
+ </g>
+ <circle cx="8.46741" cy="8.47405" id="ra" r="0"/>
+</svg>

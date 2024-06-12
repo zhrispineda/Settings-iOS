@@ -85,6 +85,12 @@ struct SettingsLink<Content: View>: View {
                                 .resizable()
                                 .scaledToFit()
                                 .frame(height: 20)
+                        case "carplay":
+                            Image(icon)
+                                .resizable()
+                                .scaledToFit()
+                                .foregroundStyle(.white)
+                                .frame(height: 21)
                         case "bluetooth":
                             Image(icon)
                                 .resizable()
@@ -131,7 +137,7 @@ struct SettingsLink<Content: View>: View {
             SettingsLink(icon: "applesafari", id: "Safari", content: {
                 EmptyView()
             })
-            SettingsLink(color: .red, icon: "bluetooth", id: "Emergency SOS", content: {
+            SettingsLink(color: .red, icon: "carplay", id: "Emergency SOS", content: {
                 EmptyView()
             })
             SettingsLink(color: .blue, icon: "applesiri", id: "Siri", content: {
