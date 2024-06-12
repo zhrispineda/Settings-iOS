@@ -16,15 +16,24 @@ struct GeneralView: View {
             }
         
             Section {
-                SettingsLink(color: .gray, icon: Configuration().isSimulator ? "questionmark.app.dashed" : DeviceInfo().isPhone ? "iphone.gen3" : "ipad.gen2", id: "About", content: { AboutView() })
+                SettingsLink(color: .gray, icon: Configuration().isSimulator ? "questionmark.app.dashed" : DeviceInfo().isPhone ? "iphone.gen3" : "ipad.gen2", id: "About", content: {
+                    AboutView()
+                })
                 if !Configuration().isSimulator {
-                    NavigationLink("Software Update", destination: SoftwareUpdateView())
+                    SettingsLink(color: .gray, icon: "gear.badge", id: "Software Update", content: {
+                        SoftwareUpdateView()
+                    })
+                    SettingsLink(color: .gray, icon: "externaldrive.fill", id: "\(DeviceInfo().model) Storage", content: {
+                        EmptyView()
+                    })
                 }
             }
             
             if !Configuration().isSimulator {
                 Section {
-                    NavigationLink("AppleCare & Warranty", destination: EmptyView())
+                    SettingsLink(icon: "applecare", id: "AppleCare & Warranty", content: {
+                        EmptyView()
+                    })
                 }
             }
             

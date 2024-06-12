@@ -30,11 +30,11 @@ struct ContentView: View {
                     // MARK: - iPadOS Settings
                     if deviceInfo.isTablet {
                         List(selection: $selection) {
-                            Button(action: {
+                            Button {
                                 showingSignInSheet.toggle()
-                            }, label: {
+                            } label: {
                                 AppleAccountSection()
-                            })
+                            }
                             .sheet(isPresented: $showingSignInSheet) {
                                 NavigationStack {
                                     SelectSignInOptionView()
@@ -65,13 +65,13 @@ struct ContentView: View {
                             Section {
                                 ForEach(Configuration().isSimulator ? simulatorMainSettings : mainSettings) { setting in
                                     if !phoneOnly.contains(setting.id) {
-                                        Button(action: {
+                                        Button {
                                             id = UUID() // Reset destination
                                             selection = setting.type
-                                        }, label: {
+                                        } label: {
                                             SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id)
                                                 .foregroundStyle(selection == setting.type ? (Configuration().isSimulator ? Color.white : Color["Label"]) : Color["Label"])
-                                        })
+                                        }
                                         .listRowBackground(selection == setting.type ? (Configuration().isSimulator ? Color.blue : Color("Selected")) : nil)
                                     }
                                 }
@@ -81,13 +81,13 @@ struct ContentView: View {
                             Section {
                                 ForEach(Configuration().isSimulator ? attentionSimulatorSettings : attentionSettings) { setting in
                                     if !phoneOnly.contains(setting.id) {
-                                        Button(action: {
+                                        Button {
                                             id = UUID() // Reset destination
                                             selection = setting.type
-                                        }, label: {
+                                        } label: {
                                             SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id)
                                                 .foregroundStyle(selection == setting.type ? (Configuration().isSimulator ? Color.white : Color["Label"]) : Color["Label"])
-                                        })
+                                        }
                                         .listRowBackground(selection == setting.type ? (Configuration().isSimulator ? Color.blue : Color("Selected")) : nil)
                                     }
                                 }
@@ -97,13 +97,13 @@ struct ContentView: View {
                             Section {
                                 ForEach(Configuration().isSimulator ? simulatorSecuritySettings : securitySettings) { setting in
                                     if !phoneOnly.contains(setting.id) {
-                                        Button(action: {
+                                        Button {
                                             id = UUID() // Reset destination
                                             selection = setting.type
-                                        }, label: {
+                                        } label: {
                                             SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id)
                                                 .foregroundStyle(selection == setting.type ? (Configuration().isSimulator ? Color.white : Color["Label"]) : Color["Label"])
-                                        })
+                                        }
                                         .listRowBackground(selection == setting.type ? (Configuration().isSimulator ? Color.blue : Color("Selected")) : nil)
                                     }
                                 }
@@ -112,13 +112,13 @@ struct ContentView: View {
                             // MARK: Services Settings
                             Section {
                                 ForEach(serviceSettings) { setting in
-                                    Button(action: {
+                                    Button {
                                         id = UUID() // Reset destination
                                         selection = setting.type
-                                    }, label: {
+                                    } label: {
                                         SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id)
                                             .foregroundStyle(selection == setting.type ? (Configuration().isSimulator ? Color.white : Color["Label"]) : Color["Label"])
-                                    })
+                                    }
                                     .listRowBackground(selection == setting.type ? (Configuration().isSimulator ? Color.blue : Color("Selected")) : nil)
                                 }
                             }
@@ -275,26 +275,24 @@ struct AppleAccountSection: View {
     @EnvironmentObject var deviceInfo: DeviceInfo
     
     var body: some View {
-        NavigationLink(destination: {}, label: {
+        NavigationLink {} label: {
             HStack {
                 Image("AppleAccount_Icon_Blue90x90")
                     .resizable()
                     .frame(width: 60, height: 60)
-                VStack(spacing: 3) {
+                VStack(alignment: .leading, spacing: 3) {
                     Text("Apple Account")
                         .bold()
                         .font(.title3)
                         .foregroundStyle(Color["Label"])
                         .padding(.bottom, 0)
-                        .frame(maxWidth: .infinity, alignment: .leading)
                     Text("Sign in to access your iCloud data, the App Store, Apple services, and more.")
-                        .foregroundStyle(Color.gray)
+                        .foregroundStyle(.secondary)
                         .font(.system(size: 13))
-                        .frame(maxWidth: .infinity, alignment: .leading)
                 }
                 .padding(.leading, 5)
             }
-        })
+        }
         .foregroundStyle(Color["Label"])
     }
 }

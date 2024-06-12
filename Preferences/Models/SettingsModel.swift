@@ -120,7 +120,7 @@ struct SettingsItem<Content: View>: Identifiable {
 }
 
 // Smaller icons scaling
-let smallerIcons = ["airplane", "arrow.turn.up.forward.iphone", "battery.100percent", "camera.fill", "character.book.closed.fill", "personalhotspot", "speaker.3.fill", "magnifyingglass", "moon.fill", "squares.leading.rectangle", "key.fill", "hammer.fill", "shareplay", "textformat", "wifi"]
+let smallerIcons = ["airplane", "arrow.turn.up.forward.iphone", "battery.100percent", "camera.fill", "character.book.closed.fill", "externaldrive.fill", "personalhotspot", "speaker.3.fill", "magnifyingglass", "moon.fill", "squares.leading.rectangle", "key.fill", "hammer.fill", "shareplay", "textformat", "wifi"]
 
 // MARK: Radio Settings
 @MainActor let radioSettings: [SettingsItem] = [
