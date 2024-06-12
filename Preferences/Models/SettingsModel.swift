@@ -120,7 +120,7 @@ struct SettingsItem<Content: View>: Identifiable {
 }
 
 // MARK: SF Symbol names for smaller icons
-let smallerIcons = ["airplane", "arrow.turn.up.forward.iphone", "battery.100percent", "camera.fill", "personalhotspot", "speaker.3.fill", "magnifyingglass", "moon.fill", "squares.leading.rectangle", "key.fill", "hammer.fill", "shareplay", "wifi"]
+let smallerIcons = ["airplane", "arrow.turn.up.forward.iphone", "battery.100percent", "camera.fill", "character.book.closed.fill", "personalhotspot", "speaker.3.fill", "magnifyingglass", "moon.fill", "squares.leading.rectangle", "key.fill", "hammer.fill", "shareplay", "textformat", "wifi"]
 
 // Radio Settings: Wi-Fi, Bluetooth, Cellular, Personal Hotspot, VPN
 @MainActor let radioSettings: [SettingsItem] = [
@@ -181,6 +181,11 @@ let smallerIcons = ["airplane", "arrow.turn.up.forward.iphone", "battery.100perc
     SettingsItem(type: .privacySecurity, title: "Privacy & Security", icon: "hand.raised.fill", color: .blue, destination: AnyView(PrivacySecurityView()))
 ]
 
+// Simulator Security Settings: Privacy & Security
+@MainActor let simulatorSecuritySettings: [SettingsItem] = [
+    SettingsItem(type: .privacySecurity, title: "Privacy & Security", icon: "hand.raised.fill", color: .blue, destination: AnyView(PrivacySecurityView()))
+]
+
 // Services Settings: Passwords
 @MainActor let serviceSettings: [SettingsItem] = [
     //SettingsItem(type: .passwords, title: "Passwords", icon: "key.fill", color: .gray, destination: AnyView(PasswordsView()))
@@ -214,4 +219,4 @@ let smallerIcons = ["airplane", "arrow.turn.up.forward.iphone", "battery.100perc
 ]
 
 // Combined Settings Array
-@MainActor let combinedSettings = radioSettings + attentionSettings + mainSettings + securitySettings + serviceSettings + appSettings + developerSettings
+@MainActor let combinedSettings = radioSettings + attentionSettings + mainSettings + securitySettings + serviceSettings + appSettings + developerSettings + simulatorMainSettings + simulatorSecuritySettings

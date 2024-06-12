@@ -107,7 +107,7 @@ struct ContentView: View {
                             
                             // MARK: Security Settings
                             Section {
-                                ForEach(securitySettings) { setting in
+                                ForEach(Configuration().isSimulator ? simulatorSecuritySettings : securitySettings) { setting in
                                     if !phoneOnly.contains(setting.id) {
                                         Button(action: {
                                             id = UUID() // Reset destination
@@ -240,7 +240,7 @@ struct ContentView: View {
                             }
                             
                             // MARK: Services
-                            SettingsLinkSection(item: securitySettings)
+                            SettingsLinkSection(item: Configuration().isSimulator ? simulatorSecuritySettings : securitySettings)
                             
                             // MARK: Services
                             SettingsLinkSection(item: serviceSettings)

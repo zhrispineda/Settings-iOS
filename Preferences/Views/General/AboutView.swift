@@ -50,7 +50,9 @@ struct AboutView: View {
                 LabeledContent("Songs", value: "0")
                 LabeledContent("Videos", value: "0")
                 LabeledContent("Photos", value: "0")
-                LabeledContent("Applications", value: "1")
+                if !Configuration().isSimulator {
+                    LabeledContent("Applications", value: "1")
+                }
                 LabeledContent("Capacity", value: totalStorage)
                 LabeledContent("Available", value: availableStorage)
             }

@@ -60,16 +60,17 @@ struct GeneralView: View {
             Section {
                 if !Configuration().isSimulator {
                     NavigationLink("Date & Time", destination: EmptyView())
+                    NavigationLink("Keyboard", destination: KeyboardView())
                 }
-                NavigationLink("Keyboard", destination: KeyboardView())
-                NavigationLink("Game Controllers", destination: GameControllerView())
-                NavigationLink("Fonts", destination: FontsView())
-                NavigationLink("Language & Region", destination: LanguageRegionView())
-                NavigationLink("Dictionary", destination: DictionaryView())
+                SettingsLink(color: .gray, icon: "ellipsis.rectangle", id: "AutoFill & Passwords", content: { EmptyView() })
+                SettingsLink(color: .blue, icon: "character.book.closed.fill", id: "Dictionary", content: { DictionaryView() })
+                SettingsLink(color: .gray, icon: "textformat", id: "Fonts", content: { FontsView() })
+                SettingsLink(color: .blue, icon: "globe", id: "Language & Region", content: { LanguageRegionView() })
+                //NavigationLink("Game Controllers", destination: GameControllerView())
             }
             
             Section {
-                NavigationLink("VPN & Device Management", destination: VPNDeviceManagementView())
+                SettingsLink(color: .gray, icon: "gear", id: "VPN & Device Management", content: { VPNDeviceManagementView() })
             }
             
             if !Configuration().isSimulator {
@@ -79,11 +80,7 @@ struct GeneralView: View {
             }
             
             Section {
-                NavigationLink("Transfer or Reset \(UIDevice().localizedModel)", destination: {
-                    Color(UIColor.systemGroupedBackground)
-                        .ignoresSafeArea()
-                        .navigationTitle("Transfer or Reset \(UIDevice().localizedModel)")
-                })
+                SettingsLink(color: .gray, icon: "arrow.counterclockwise", id: "Transfer or Reset \(UIDevice().localizedModel)", content: { EmptyView() })
                 if !Configuration().isSimulator {
                     Button("Shut Down", action: {})
                 }
