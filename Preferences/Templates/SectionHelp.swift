@@ -28,7 +28,7 @@ struct SectionHelp: View {
                     Image(icon)
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 56)
+                        .frame(width: icon == "bluetooth" ? 21 : 56)
                         .foregroundStyle(.white)
                 }
             }

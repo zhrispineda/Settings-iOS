@@ -2,6 +2,10 @@
 SwiftUI **(work-in-progress)** recreation of the iOS & iPadOS Settings app.
 
 ## Examples
+- Physical-like:
+![A GIF displaying the project's Settings app on different devices including a Dynamic Island iPhone, iPhone with Touch ID, and an 11-inch iPad.](Assets/SettingsB.gif)
+
+- Simulator:
 ![A GIF displaying the project's Settings app on different devices including a Dynamic Island iPhone, iPhone with Touch ID, and an 11-inch iPad.](Assets/Settings.gif)
 
 ## Information
