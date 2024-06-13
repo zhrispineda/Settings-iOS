@@ -87,7 +87,7 @@
 		83815CED2B768E8300F53A0F /* MapsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83815CEC2B768E8300F53A0F /* MapsView.swift */; };
 		83815CEF2B768EF000F53A0F /* ShortcutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83815CEE2B768EF000F53A0F /* ShortcutsView.swift */; };
 		83815CF12B768F0500F53A0F /* HealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83815CF02B768F0500F53A0F /* HealthView.swift */; };
-		83815CF32B768F1E00F53A0F /* SiriSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83815CF22B768F1E00F53A0F /* SiriSearchView.swift */; };
+		83815CF32B768F1E00F53A0F /* SiriView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83815CF22B768F1E00F53A0F /* SiriView.swift */; };
 		83815CF52B768F3600F53A0F /* PhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83815CF42B768F3600F53A0F /* PhotosView.swift */; };
 		83815CF72B768F4800F53A0F /* GameCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83815CF62B768F4800F53A0F /* GameCenterView.swift */; };
 		83815CF92B768F5C00F53A0F /* DeveloperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83815CF82B768F5C00F53A0F /* DeveloperView.swift */; };
@@ -270,7 +270,7 @@
 		83815CEC2B768E8300F53A0F /* MapsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsView.swift; sourceTree = "<group>"; };
 		83815CEE2B768EF000F53A0F /* ShortcutsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsView.swift; sourceTree = "<group>"; };
 		83815CF02B768F0500F53A0F /* HealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthView.swift; sourceTree = "<group>"; };
-		83815CF22B768F1E00F53A0F /* SiriSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriSearchView.swift; sourceTree = "<group>"; };
+		83815CF22B768F1E00F53A0F /* SiriView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriView.swift; sourceTree = "<group>"; };
 		83815CF42B768F3600F53A0F /* PhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosView.swift; sourceTree = "<group>"; };
 		83815CF62B768F4800F53A0F /* GameCenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCenterView.swift; sourceTree = "<group>"; };
 		83815CF82B768F5C00F53A0F /* DeveloperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperView.swift; sourceTree = "<group>"; };
@@ -736,7 +736,7 @@
 				83815CEC2B768E8300F53A0F /* MapsView.swift */,
 				83815CEE2B768EF000F53A0F /* ShortcutsView.swift */,
 				83815CF02B768F0500F53A0F /* HealthView.swift */,
-				83815CF22B768F1E00F53A0F /* SiriSearchView.swift */,
+				83815CF22B768F1E00F53A0F /* SiriView.swift */,
 				83815CF42B768F3600F53A0F /* PhotosView.swift */,
 				83815CF62B768F4800F53A0F /* GameCenterView.swift */,
 				83815CF82B768F5C00F53A0F /* DeveloperView.swift */,
@@ -755,16 +755,16 @@
 		838C23272B746D6B0053D4C5 /* Templates */ = {
 			isa = PBXGroup;
 			children = (
-				838C232A2B7492170053D4C5 /* CustomList.swift */,
-				838C232F2B74978C0053D4C5 /* HText.swift */,
-				835683912B753FDD000FB136 /* SettingsLink.swift */,
-				835683932B754623000FB136 /* SettingsLabel.swift */,
-				83B98E2F2B7C087B007F6C94 /* IconToggle.swift */,
-				838A9EC32B7E823300ED261C /* CustomNavigationLink.swift */,
-				837C03082B7F1AE0004D6C71 /* SelectOptionList.swift */,
-				83DF95752B84266E00AEEB63 /* SiriSearchDetailView.swift */,
 				8329284A2B8578F4006611CF /* AppPermissionsView.swift */,
+				838C232A2B7492170053D4C5 /* CustomList.swift */,
+				838A9EC32B7E823300ED261C /* CustomNavigationLink.swift */,
+				838C232F2B74978C0053D4C5 /* HText.swift */,
+				83B98E2F2B7C087B007F6C94 /* IconToggle.swift */,
 				8361A2282C19308600A7D5CC /* SectionHelp.swift */,
+				837C03082B7F1AE0004D6C71 /* SelectOptionList.swift */,
+				835683932B754623000FB136 /* SettingsLabel.swift */,
+				835683912B753FDD000FB136 /* SettingsLink.swift */,
+				83DF95752B84266E00AEEB63 /* SiriSearchDetailView.swift */,
 			);
 			path = Templates;
 			sourceTree = "<group>";
@@ -1156,7 +1156,7 @@
 				83B550562C16A6A5002DA622 /* AutomaticUpdateView.swift in Sources */,
 				83B619CB2B93EE2400EFEA90 /* AppWebsiteActivityView.swift in Sources */,
 				83B619CD2B93F91500EFEA90 /* DowntimeView.swift in Sources */,
-				83815CF32B768F1E00F53A0F /* SiriSearchView.swift in Sources */,
+				83815CF32B768F1E00F53A0F /* SiriView.swift in Sources */,
 				83F3F6A92B7D2EFE003CC310 /* LanguageRegionView.swift in Sources */,
 				837B0F642B89B5E700B22455 /* SiriDictationHistoryView.swift in Sources */,
 				83D3086D2B8AD2BC002A9B7F /* RequestDesktopWebsiteView.swift in Sources */,

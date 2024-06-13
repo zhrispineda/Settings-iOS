@@ -16,16 +16,16 @@ struct GeneralView: View {
             }
         
             Section {
-                SettingsLink(color: .gray, icon: Configuration().isSimulator ? "questionmark.app.dashed" : DeviceInfo().isPhone ? "iphone.gen3" : "ipad.gen2", id: "About", content: {
+                SettingsLink(color: .gray, icon: Configuration().isSimulator ? "questionmark.app.dashed" : DeviceInfo().isPhone ? "iphone.gen3" : "ipad.gen2", id: "About") {
                     AboutView()
-                })
+                }
                 if !Configuration().isSimulator {
-                    SettingsLink(color: .gray, icon: "gear.badge", id: "Software Update", content: {
+                    SettingsLink(color: .gray, icon: "gear.badge", id: "Software Update") {
                         SoftwareUpdateView()
-                    })
-                    SettingsLink(color: .gray, icon: "externaldrive.fill", id: "\(DeviceInfo().model) Storage", content: {
+                    }
+                    SettingsLink(color: .gray, icon: "externaldrive.fill", id: "\(DeviceInfo().model) Storage") {
                         EmptyView()
-                    })
+                    }
                 }
             }
             
@@ -68,56 +68,58 @@ struct GeneralView: View {
                     EmptyView()
                 }
                 if !Configuration().isSimulator {
-                    SettingsLink(color: .gray, icon: "arrow.circlepath", id: "Background App Refresh", content: {
+                    SettingsLink(color: .gray, icon: "arrow.circlepath", id: "Background App Refresh") {
                         EmptyView()
-                    })
-                    SettingsLink(color: .blue, icon: "calendar.badge.clock", id: "Date & Time", content: {
+                    }
+                    SettingsLink(color: .blue, icon: "calendar.badge.clock", id: "Date & Time") {
                         DictionaryView()
-                    })
+                    }
                 }
-                SettingsLink(color: .blue, icon: "character.book.closed.fill", id: "Dictionary", content: {
+                SettingsLink(color: .blue, icon: "character.book.closed.fill", id: "Dictionary") {
                     DictionaryView()
-                })
-                SettingsLink(color: .gray, icon: "textformat", id: "Fonts", content: {
+                }
+                SettingsLink(color: .gray, icon: "textformat", id: "Fonts") {
                     FontsView()
-                })
+                }
                 if !Configuration().isSimulator {
-                    SettingsLink(color: .gray, icon: "gamecontroller.fill", id: "Game Controller", content: {
+                    SettingsLink(color: .gray, icon: "gamecontroller.fill", id: "Game Controller") {
                         GameControllerView()
-                    })
-                    SettingsLink(color: .gray, icon: "keyboard.fill", id: "Keyboard", content: {
+                    }
+                    SettingsLink(color: .gray, icon: "keyboard.fill", id: "Keyboard") {
                         EmptyView()
-                    })
+                    }
                 }
-                SettingsLink(color: .blue, icon: "globe", id: "Language & Region", content: {
+                SettingsLink(color: .blue, icon: "globe", id: "Language & Region") {
                     LanguageRegionView()
-                })
+                }
             }
             
             if !Configuration().isSimulator {
                 Section {
-                    SettingsLink(icon: "cable.coaxial", id: "TV Provider", content: {
+                    SettingsLink(icon: "cable.coaxial", id: "TV Provider") {
                         EmptyView()
-                    })
+                    }
                 }
             }
             
             Section {
-                SettingsLink(color: .gray, icon: "gear", id: "VPN & Device Management", content: { VPNDeviceManagementView() })
+                SettingsLink(color: .gray, icon: "gear", id: "VPN & Device Management") {
+                    VPNDeviceManagementView()
+                }
             }
             
             if !Configuration().isSimulator {
                 Section {
-                    SettingsLink(color: .gray, icon: "text.justify.left", id: "Legal & Regulatory", content: {
+                    SettingsLink(color: .gray, icon: "text.justify.left", id: "Legal & Regulatory") {
                         EmptyView()
-                    })
+                    }
                 }
             }
             
             Section {
-                SettingsLink(color: .gray, icon: "arrow.counterclockwise", id: "Transfer or Reset \(UIDevice().localizedModel)", content: {
+                SettingsLink(color: .gray, icon: "arrow.counterclockwise", id: "Transfer or Reset \(UIDevice().localizedModel)") {
                     EmptyView()
-                })
+                }
                 if !Configuration().isSimulator {
                     Button("Shut Down") {}
                 }

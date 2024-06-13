@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SiriSearchView: View {
+struct SiriView: View {
     // Variables
     let apps = ["Calendar", "Contacts", "Files", "Health", "Maps", "Messages", "News", "Photos", "Reminders", "Safari", "Settings", "Wallet"]
     
@@ -16,6 +16,8 @@ struct SiriSearchView: View {
     @State private var showingDisableSiriPopup = false
     @State private var showingEnableSiriAlert = false
     @State private var showingEnableSiriPopup = false
+    @State private var allowSiriWhenLockedEnabled = true
+    
     @State private var showSuggestionsEnabled = true
     @State private var showingResetHiddenSuggestionsAlert = false
     @State private var showingResetHiddenSuggestionsPopup = false
@@ -30,8 +32,13 @@ struct SiriSearchView: View {
     @State private var showWhenListeningEnabled = true
     
     var body: some View {
-        CustomList(title: "Siri & Search") {
+        CustomList(title: "Siri") {
+            SectionHelp(title: "Siri", icon: "applesiri", description: "Customize your Siri settings-choose how to activate Siri and what Siri can do, such as announce calls and notifications and automatically send messages. [Learn more...](#)")
+            
             Section {
+                CustomNavigationLink(title: "Language", status: "English (United States)", destination: SiriLanguageView())
+                CustomNavigationLink(title: "Listen for", status: "Off", destination: EmptyView())
+                Toggle("Allow Siri When Locked", isOn: $allowSiriWhenLockedEnabled)
                 Toggle("Press \(DeviceInfo().isPhone ? "\(DeviceInfo().hasHomeButton ? "Home" : "Side") Button" : "Top Button") for Siri", isOn: $siriEnabled)
                     .alert("Turn Off Siri?", isPresented: $showingDisableSiriAlert) {
                         Button("Turn Off Siri") {}
@@ -60,9 +67,10 @@ struct SiriSearchView: View {
                     .onChange(of: siriEnabled) {
                         siriEnabled ? (DeviceInfo().isPhone ? showingEnableSiriPopup.toggle() : showingEnableSiriAlert.toggle()) : (DeviceInfo().isPhone ? showingDisableSiriPopup.toggle() : showingDisableSiriAlert.toggle())
                     }
-                CustomNavigationLink(title: "Language", status: "English (United States)", destination: SiriLanguageView())
                 CustomNavigationLink(title: "Siri Voice", status: "American (Voice 4)", destination: SiriVoiceView())
                 NavigationLink("Siri Responses", destination: SiriResponsesView())
+                NavigationLink("Announce Calls", destination: EmptyView())
+                NavigationLink("Announce Notifications", destination: EmptyView())
                 Button(action: {}, label: { // TODO: Popover
                     HStack {
                         Text("My Information")
@@ -74,18 +82,17 @@ struct SiriSearchView: View {
                             .foregroundStyle(Color(UIColor.tertiaryLabel))
                     }
                 })
-                NavigationLink("Siri & Dictation History", destination: SiriDictationHistoryView())
                 NavigationLink("Messaging with Siri", destination: {
                     CustomList(title: "Messaging with Siri") {}
                 })
             } header: {
-                Text("Ask Siri")
+                Text("Siri Requests")
             } footer: {
-                Text("Siri can help you get things done just by asking. [About Ask Siri & Privacy...](#)")
+                Text("Voice input is processed on \(DeviceInfo().model), but transcripts of your requests are sent to Apple. [About Ask Siri & Privacy...](#)")
             }
             
             Section {
-                Toggle("Show Suggestions", isOn: $showSuggestionsEnabled)
+                Toggle("Suggest Apps Before Searching", isOn: $showSuggestionsEnabled)
                 Button("Reset Hidden Suggestions", action: { DeviceInfo().isPhone ? showingResetHiddenSuggestionsAlert.toggle() : showingResetHiddenSuggestionsPopup.toggle() })
                     .alert("Reset", isPresented: $showingResetHiddenSuggestionsPopup) {
                         Button("Reset", role: .destructive) {}
@@ -98,42 +105,36 @@ struct SiriSearchView: View {
                         Button("Cancel", role: .cancel) {}
                     }
                 Toggle("Show Recents", isOn: $showRecentsEnabled)
-            } header: {
-                Text("Before Searching")
-            }
-            
-            Section {
-                Toggle("Show in Look Up", isOn: $showInLookUpEnabled)
-                Toggle("Show in Spotlight", isOn: $showInSpotlightEnabled)
-            } header: {
-                Text("Content from Apple")
-            } footer: {
-                Text("Apple can show content when looking up text or objects in photos, or when searching. [About Siri Suggestions, Search & Privacy...](#)")
-            }
-            
-            Section {
                 Toggle("Allow Notifications", isOn: $allowNotificationsEnabled)
                 Toggle("Show in App Library", isOn: $showAppLibraryEnabled)
                 Toggle("Show When Sharing", isOn: $showWhenSharingEnabled)
-                Toggle("Show When Listening", isOn: $showWhenListeningEnabled)
+                Toggle("Show Listening Suggestions", isOn: $showWhenListeningEnabled)
             } header: {
-                Text("Suggestions from Apple")
+                Text("Suggestions")
             } footer: {
-                Text("Apple can make suggestions in apps, on Home Screen, and on Lock Screen, or when sharing, searching, or using Look Up, and Keyboard. [About Siri Suggestions, Search & Privacy...](#)")
+                Text("Apple can make suggestions in Search, on Home Screen, and Lock Screen, when sharing, or when you may want to listen to media. [About Siri Suggestions, Search & Privacy...](#)")
             }
             
             Section {
                 SettingsLink(color: .white, icon: "appclip", id: "App Clips") {
                     SiriAppClipsView()
                 }
-                ForEach(apps, id: \.self) { app in
-                    SettingsLink(icon: "apple\(app.lowercased())", id: app) {
-                        SiriSearchDetailView(appName: app, title: app)
+                SettingsLink(icon: "applehome screen & app library", id: "Apps") {
+                    CustomList(title: "Apps") {
+                        ForEach(apps, id: \.self) { app in
+                            SettingsLink(icon: "apple\(app.lowercased())", id: app) {
+                                SiriSearchDetailView(appName: app, title: app)
+                            }
+                        }
+                        SettingsLink(icon: "apple watch", id: "Watch") {
+                            SiriSearchDetailView(appName: "Watch", title: "Watch")
+                        }
                     }
                 }
-                SettingsLink(icon: "apple watch", id: "Watch") {
-                    SiriSearchDetailView(appName: "Watch", title: "Watch")
-                }
+            }
+            
+            Section {
+                NavigationLink("Siri & Dictation History", destination: {})
             }
         }
     }
@@ -141,6 +142,6 @@ struct SiriSearchView: View {
 
 #Preview {
     NavigationStack {
-        SiriSearchView()
+        SiriView()
     }
 }

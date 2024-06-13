@@ -28,7 +28,7 @@ struct SectionHelp: View {
                     Image(icon)
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 20)
+                        .frame(width: 56)
                         .foregroundStyle(.white)
                 }
             }
@@ -47,5 +47,5 @@ struct SectionHelp: View {
 }
 
 #Preview {
-    SectionHelp(title: "Title", color: Color.blue, icon: "bluetooth", description: "Your description here.")
+    SectionHelp(title: "Title", color: Color.blue, icon: "applesiri", description: "Your description here.")
 }
