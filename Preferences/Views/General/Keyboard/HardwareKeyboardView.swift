@@ -19,23 +19,23 @@ struct HardwareKeyboardView: View {
                 CustomNavigationLink(title: "English (US)", status: "Automatic — U.S.", destination: HardwareKeyboardLanguageView())
             }
             
-            Section(content: {
+            Section {
                 Toggle("Auto-Capitalization", isOn: $autoCapitalizationEnabled)
                 Toggle("Auto-Correction", isOn: $autoCorrectionEnabled)
                 Toggle("\u{201C}.\u{201D} Shortcut", isOn: $periodShortcutEnabled)
-            }, footer: {
+            } footer: {
                 Text("Pressing the space bar twice will insert a period followed by a space.")
-            })
+            }
             
             Section {
                 NavigationLink("Modifier Keys", destination: ModifierKeysView())
             }
             
-            Section(content: {
+            Section {
                 CustomNavigationLink(title: "Keyboard Type", status: "ANSI", destination: SelectOptionList(title: "Keyboard Type", options: ["ANSI (U.S.)", "ISO (International)", "JIS (Japan)"], selected: "ANSI (U.S.)"))
-            }, footer: {
+            } footer: {
                 Text("Choose the correct type for your keyboard to ensure that all keys function correctly.")
-            })
+            }
         }
     }
 }

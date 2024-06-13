@@ -27,17 +27,17 @@ struct TextReplacementView: View {
         .navigationTitle("Text Replacement")
         .searchable(text: $searchText)
         .toolbar {
-            ToolbarItem(placement: .topBarTrailing, content: {
-                NavigationLink(destination: AddTextReplacementView(), label: {
+            ToolbarItem(placement: .topBarTrailing) {
+                NavigationLink(destination: AddTextReplacementView()) {
                     Image(systemName: "plus")
-                })
-            })
-            ToolbarItem(placement: .bottomBar, content: {
+                }
+            }
+            ToolbarItem(placement: .bottomBar) {
                 HStack {
                     EditButton()
                     Spacer()
                 }
-            })
+            }
         }
     }
 }

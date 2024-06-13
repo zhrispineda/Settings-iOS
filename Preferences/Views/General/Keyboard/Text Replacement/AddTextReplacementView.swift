@@ -15,7 +15,7 @@ struct AddTextReplacementView: View {
     
     var body: some View {
         CustomList(title: "Text Replacement") {
-            Section(content: {
+            Section {
                 HStack {
                     Text("Phrase")
                     TextField("", text: $phraseText)
@@ -26,17 +26,17 @@ struct AddTextReplacementView: View {
                     TextField("Optional", text: $shortcutText)
                         .padding(.horizontal, 5)
                 }
-            }, footer: {
+            } footer: {
                 Text("Create a shortcut that will automatically expand into the word or phrase as you type.")
-            })
+            }
         }
         .toolbar {
-            ToolbarItem(placement: .topBarTrailing, content: {
-                Button("Save", action: {
+            ToolbarItem(placement: .topBarTrailing) {
+                Button("Save") {
                     dismiss()
-                })
-                    .disabled(phraseText.isEmpty)
-            })
+                }
+                .disabled(phraseText.isEmpty)
+            }
         }
     }
 }

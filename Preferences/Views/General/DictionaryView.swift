@@ -26,14 +26,14 @@ struct DictionaryView: View {
     var body: some View {
         CustomList(title: "Dictionary") {
             ForEach(dictionaries) { dict in
-                Button(action: {
+                Button {
                     if let index = selected.firstIndex(of: dict.dictionary) {
                         selected.remove(at: index)
                     } else {
                         selected.append(dict.dictionary)
                     }
-                }, label: {
-                    Label(title: {
+                } label: {
+                    Label {
                         VStack(alignment: .leading) {
                             Text(dict.language)
                             if !dict.dictionary.isEmpty {
@@ -43,11 +43,11 @@ struct DictionaryView: View {
                             }
                         }
                         .foregroundStyle(Color["Label"])
-                    }, icon: {
+                    } icon: {
                         Image(systemName: "checkmark")
                             .opacity(selected.contains(dict.dictionary) ? 1 : 0)
-                    })
-                })
+                    }
+                }
             }
         }
     }

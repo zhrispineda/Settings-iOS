@@ -17,16 +17,18 @@ struct BetaUpdatesView: View {
         CustomList(title: "Beta Updates") {
             Section {
                 ForEach(options, id: \.self) { option in
-                    Button(action: {
+                    Button {
                         selected = option
-                    }, label: {
+                    } label: {
                         HStack {
                             Text(option == "Off" ? "Off" : "\(UIDevice().systemName) \(option)")
                                 .foregroundStyle(Color["Label"])
                             Spacer()
-                            Image(systemName: option == selected ? "checkmark" : "")
+                            if selected == option {
+                                Image(systemName: "checkmark")
+                            }
                         }
-                    })
+                    }
                 }
             } footer: {
                 Text("Receive beta updates on this \(Device().model) to test-drive pre-release versions of \(UIDevice().systemName) and provide feedback to help make Apple software even better. [Learn more...](https://beta.apple.com)")

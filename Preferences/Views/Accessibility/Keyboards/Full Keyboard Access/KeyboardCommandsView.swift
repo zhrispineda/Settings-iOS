@@ -78,109 +78,109 @@ struct KeyboardCommandsView: View {
     
     var body: some View {
         CustomList(title: "Commands") {
-            Section(content: {}, footer: {
+            Section {} footer: {
                 Text("Tap any command to customize its keyboard shortcut.")
-            })
-            
-            Section(content: {
-                ForEach($basicShortcuts) { $shortcut in
-                    Button(action: {
-                        showingKeyboardShortcutAlert.toggle()
-                    }, label: {
-                        HText(shortcut.name, status: shortcut.shortcut)
-                            .foregroundStyle(Color["Label"])
-                    })
-                    .alert("Keyboard Shortcut", isPresented: $showingKeyboardShortcutAlert) {
-                        Button("Done") {}.disabled(true)
-                        Button("Cancel", role: .cancel) {}
-                    } message: {
-                        Text("Enter a key combination on your keyboard.")
-                    }
-                }
-            }, header: {
-                Text("Basic")
-            })
-            
-            Section(content: {
-                ForEach($movementShortcuts) { $shortcut in
-                    Button(action: {
-                        showingKeyboardShortcutAlert.toggle()
-                    }, label: {
-                        HText(shortcut.name, status: shortcut.shortcut)
-                            .foregroundStyle(Color["Label"])
-                    })
-                    .alert("Keyboard Shortcut", isPresented: $showingKeyboardShortcutAlert) {
-                        Button("Done") {}.disabled(true)
-                        Button("Cancel", role: .cancel) {}
-                    } message: {
-                        Text("Enter a key combination on your keyboard.")
-                    }
-                }
-            }, header: {
-                Text("Movement")
-            })
-            
-            Section(content: {
-                ForEach($interactionShortcuts) { $shortcut in
-                    Button(action: {
-                        showingKeyboardShortcutAlert.toggle()
-                    }, label: {
-                        HText(shortcut.name, status: shortcut.shortcut)
-                            .foregroundStyle(Color["Label"])
-                    })
-                    .alert("Keyboard Shortcut", isPresented: $showingKeyboardShortcutAlert) {
-                        Button("Done") {}.disabled(true)
-                        Button("Cancel", role: .cancel) {}
-                    } message: {
-                        Text("Enter a key combination on your keyboard.")
-                    }
-                }
-            }, header: {
-                Text("Interaction")
-            })
-            
-            Section(content: {
-                ForEach($deviceShortcuts) { $shortcut in
-                    Button(action: {
-                        showingKeyboardShortcutAlert.toggle()
-                    }, label: {
-                        HText(shortcut.name, status: shortcut.shortcut)
-                            .foregroundStyle(Color["Label"])
-                    })
-                    .alert("Keyboard Shortcut", isPresented: $showingKeyboardShortcutAlert) {
-                        Button("Done") {}.disabled(true)
-                        Button("Cancel", role: .cancel) {}
-                    } message: {
-                        Text("Enter a key combination on your keyboard.")
-                    }
-                }
-            }, header: {
-                Text("Device")
-            })
-            
-            Section(content: {
-                ForEach($gestureShortcuts) { $shortcut in
-                    Button(action: {
-                        showingKeyboardShortcutAlert.toggle()
-                    }, label: {
-                        HText(shortcut.name, status: shortcut.shortcut)
-                            .foregroundStyle(Color["Label"])
-                    })
-                    .alert("Keyboard Shortcut", isPresented: $showingKeyboardShortcutAlert) {
-                        Button("Done") {}.disabled(true)
-                        Button("Cancel", role: .cancel) {}
-                    } message: {
-                        Text("Enter a key combination on your keyboard.")
-                    }
-                }
-            }, header: {
-                Text("Gestures")
-            })
+            }
             
             Section {
-                Button("Restore Defaults", action: {
+                ForEach($basicShortcuts) { $shortcut in
+                    Button {
+                        showingKeyboardShortcutAlert.toggle()
+                    } label: {
+                        HText(shortcut.name, status: shortcut.shortcut)
+                            .foregroundStyle(Color["Label"])
+                    }
+                    .alert("Keyboard Shortcut", isPresented: $showingKeyboardShortcutAlert) {
+                        Button("Done") {}.disabled(true)
+                        Button("Cancel", role: .cancel) {}
+                    } message: {
+                        Text("Enter a key combination on your keyboard.")
+                    }
+                }
+            } header: {
+                Text("Basic")
+            }
+            
+            Section {
+                ForEach($movementShortcuts) { $shortcut in
+                    Button {
+                        showingKeyboardShortcutAlert.toggle()
+                    } label: {
+                        HText(shortcut.name, status: shortcut.shortcut)
+                            .foregroundStyle(Color["Label"])
+                    }
+                    .alert("Keyboard Shortcut", isPresented: $showingKeyboardShortcutAlert) {
+                        Button("Done") {}.disabled(true)
+                        Button("Cancel", role: .cancel) {}
+                    } message: {
+                        Text("Enter a key combination on your keyboard.")
+                    }
+                }
+            } header: {
+                Text("Movement")
+            }
+            
+            Section {
+                ForEach($interactionShortcuts) { $shortcut in
+                    Button {
+                        showingKeyboardShortcutAlert.toggle()
+                    } label: {
+                        HText(shortcut.name, status: shortcut.shortcut)
+                            .foregroundStyle(Color["Label"])
+                    }
+                    .alert("Keyboard Shortcut", isPresented: $showingKeyboardShortcutAlert) {
+                        Button("Done") {}.disabled(true)
+                        Button("Cancel", role: .cancel) {}
+                    } message: {
+                        Text("Enter a key combination on your keyboard.")
+                    }
+                }
+            } header: {
+                Text("Interaction")
+            }
+            
+            Section {
+                ForEach($deviceShortcuts) { $shortcut in
+                    Button {
+                        showingKeyboardShortcutAlert.toggle()
+                    } label: {
+                        HText(shortcut.name, status: shortcut.shortcut)
+                            .foregroundStyle(Color["Label"])
+                    }
+                    .alert("Keyboard Shortcut", isPresented: $showingKeyboardShortcutAlert) {
+                        Button("Done") {}.disabled(true)
+                        Button("Cancel", role: .cancel) {}
+                    } message: {
+                        Text("Enter a key combination on your keyboard.")
+                    }
+                }
+            } header: {
+                Text("Device")
+            }
+            
+            Section {
+                ForEach($gestureShortcuts) { $shortcut in
+                    Button {
+                        showingKeyboardShortcutAlert.toggle()
+                    } label: {
+                        HText(shortcut.name, status: shortcut.shortcut)
+                            .foregroundStyle(Color["Label"])
+                    }
+                    .alert("Keyboard Shortcut", isPresented: $showingKeyboardShortcutAlert) {
+                        Button("Done") {}.disabled(true)
+                        Button("Cancel", role: .cancel) {}
+                    } message: {
+                        Text("Enter a key combination on your keyboard.")
+                    }
+                }
+            } header: {
+                Text("Gestures")
+            }
+            
+            Section {
+                Button("Restore Defaults") {
                     Device().isPhone ? showingRestoreDefaultsDialog.toggle() : showingRestoreDefaultsAlert.toggle()
-                })
+                }
                 .frame(maxWidth: .infinity)
                 .foregroundStyle(.red)
                 .confirmationDialog("This will reset all keyboard shortcuts to their default values.", isPresented: $showingRestoreDefaultsDialog,

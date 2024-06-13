@@ -75,7 +75,9 @@ struct GeneralView: View {
                     SettingsLink(color: .gray, icon: "gamecontroller.fill", id: "Game Controller") {
                         GameControllerView()
                     }
-                    SettingsLink(color: .gray, icon: "keyboard.fill", id: "Keyboard") {}
+                    SettingsLink(color: .gray, icon: "keyboard.fill", id: "Keyboard") {
+                        KeyboardView()
+                    }
                 }
                 SettingsLink(color: .blue, icon: "globe", id: "Language & Region") {
                     LanguageRegionView()

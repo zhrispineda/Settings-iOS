@@ -36,7 +36,7 @@ struct KeyboardView: View {
         CustomList(title: "Keyboards") {
             Section {
                 CustomNavigationLink(title: "Keyboards", status: "2", destination: KeyboardsView())
-                NavigationLink("Hardware Keyboard", destination: HardwareKeyboardView())
+                //NavigationLink("Hardware Keyboard", destination: HardwareKeyboardView())
             }
             
             Section {
@@ -46,7 +46,7 @@ struct KeyboardView: View {
                 }
             }
             
-            Section(content: {
+            Section {
                 Toggle("Auto-Capitalization", isOn: $autoCapitalizationEnabled)
                 Toggle("Auto-Correction", isOn: $autoCorrectionEnabled)
                 Toggle("Predictive Text", isOn: $predictiveTextEnabled.animation())
@@ -70,13 +70,13 @@ struct KeyboardView: View {
                     Toggle("Character Preview", isOn: $characterPreviewEnabled)
                 }
                 Toggle("\u{201C}.\u{201D} Shortcut", isOn: $periodShortcutEnabled)
-            }, header: {
+            } header: {
                 Text("All Keyboards")
-            }, footer: {
+            } footer: {
                 Text("Double tapping the space bar will insert a period followed by a space.")
-            })
+            }
             
-            Section(content: {
+            Section {
                 Toggle("Enable Dictation", isOn: $dictationEnabled)
                     .alert("Enable Dictation?", isPresented: $showingDictationEnableAlert,
                            actions: {
@@ -106,29 +106,32 @@ struct KeyboardView: View {
                     })
                 Toggle("Auto-Punctuation", isOn: $autoPunctuationEnabled)
                 if dictationEnabled {
-                    CustomNavigationLink(title: "Dictation Shortcut", status: "⌃ Control", destination: DictationShortcutView())
+                    if Device().isPhone {
+                        NavigationLink("Dictation Languages", destination: {})
+                    }
+                    //CustomNavigationLink(title: "Dictation Shortcut", status: "⌃ Control", destination: DictationShortcutView())
                 }
-            }, header: {
+            } header: {
                 Text("Dictation")
-            }, footer: {
+            } footer: {
                 VStack(alignment: .leading) {
                     Text("\(dictationEnabled ? "Dictation sends information to Apple when necessary for processing your requests. " : "")[About Dictation & Privacy...](#)")
-                    if dictationEnabled {
-                        Text("\nSupport for processing voice input on \(UIDevice().localizedModel) is downloading...")
-                    }
+//                    if dictationEnabled {
+//                        Text("\nSupport for processing voice input on \(UIDevice().localizedModel) is downloading...")
+//                    }
                 }
-            })
+            }
             .onChange(of: dictationEnabled, {
                 dictationEnabled ? (Device().isPhone ? showingDictationEnablePopup.toggle() : showingDictationEnableAlert.toggle()) : (Device().isPhone ? showingDictationDisablePopup.toggle() : showingDictationDisableAlert.toggle())
             })
             
-            Section(content: {
+            Section {
                 Toggle("Stickers", isOn: $stickersEnabled)
-            }, header: {
-                Text("Stickers")
-            }, footer: {
+            } header: {
+                Text("Emoji")
+            } footer: {
                 Text("Send stickers from the Emoji keyboard.")
-            })
+            }
         }
     }
 }

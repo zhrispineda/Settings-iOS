@@ -27,17 +27,7 @@ struct KeyboardsView: View {
             }
             
             Section {
-                Button(action: {}, label: {
-                    HStack {
-                        Text("Add New Keyboard...")
-                        Spacer()
-                        Image(systemName: "chevron.right")
-                            .foregroundStyle(.tertiary)
-                            .imageScale(.small)
-                            .fontWeight(.medium)
-                    }
-                    .foregroundStyle(Color["Label"])
-                })
+                Button("Add New Keyboard") {}
             }
         }
         .toolbar {

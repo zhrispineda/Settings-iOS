@@ -47,7 +47,7 @@ struct SoftwareUpdateView: View {
                     }
                     
                     if !checkingForUpdates && updateCheckFailed {
-                        Button("Try Again", action: {})
+                        Button("Try Again") {}
                             .font(.subheadline)
                     }
                 }

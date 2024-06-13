@@ -29,11 +29,12 @@ struct HText: View {
             Text(title)
             Spacer()
             Text(status)
-                .foregroundStyle(.secondary)
         }
     }
 }
 
 #Preview {
-    HText()
+    List {
+        HText("ABC", status: "123")
+    }
 }

@@ -47,10 +47,10 @@ struct NetworkView: View {
                                     .foregroundStyle(.clear)
                                 Text("Other...")
                                     .foregroundStyle(Color["Label"])
-                                    .popover(isPresented: $showingOtherNetwork, content: {
+                                    .popover(isPresented: $showingOtherNetwork) {
                                         OtherNetworkView()
                                             .foregroundStyle(Color["Label"])
-                                    })
+                                    }
                             }
                         }
                     } header: {

@@ -46,12 +46,12 @@ struct OtherNetworkView: View {
                     }
                 }
                 ToolbarItem(placement: .topBarLeading) {
-                    Button(action: {
+                    Button {
                         dismiss()
-                    }, label: {
+                    } label: {
                         Text("Cancel")
                             .padding(.top, 50)
-                    })
+                    }
                     .foregroundStyle(Color["Default"])
                 }
                 ToolbarItem(placement: .topBarTrailing) {

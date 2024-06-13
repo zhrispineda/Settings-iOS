@@ -14,9 +14,11 @@ struct DictationShortcutView: View {
     
     var body: some View {
         CustomList(title: "Dictation Shortcut") {
-            Section(content: {
+            Section {
                 ForEach(options, id: \.self) { option in
-                    Button(action: { selectedOption = option }, label: {
+                    Button {
+                        selectedOption = option
+                    } label: {
                         HStack {
                             if option == "None" {
                                 Text(option)
@@ -30,11 +32,11 @@ struct DictationShortcutView: View {
                             }
                         }
                         .foregroundStyle(Color["Label"])
-                    })
+                    }
                 }
-            }, header: {
+            } header: {
                 Text("\n\nPress twice to start dictation:")
-            })
+            }
         }
     }
 }

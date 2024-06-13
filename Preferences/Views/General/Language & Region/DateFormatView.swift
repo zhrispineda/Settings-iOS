@@ -22,20 +22,22 @@ struct DateFormatView: View {
     
     var body: some View {
         CustomList(title: "Date Format") {
-            Section(content: {
+            Section {
                 ForEach(options, id: \.self) { option in
-                    Button(action: {
+                    Button {
                         selected = option
-                    }, label: {
+                    } label: {
                         HStack {
                             Text(option)
                                 .foregroundStyle(Color["Label"])
                             Spacer()
-                            Image(systemName: "\(selected == option ? "checkmark" : "")")
+                            if selected == option {
+                                Image(systemName: "checkmark")
+                            }
                         }
-                    })
+                    }
                 }
-            }, footer: {
+            } footer: {
                 Text("""
                      Format Example:
                      • Short: \(selected)
@@ -43,11 +45,13 @@ struct DateFormatView: View {
                      • Long: August 19, 2024
                      • Full: Monday, August 19, 2024
                      """)
-            })
+            }
         }
     }
 }
 
 #Preview {
-    DateFormatView()
+    NavigationStack {
+        DateFormatView()
+    }
 }

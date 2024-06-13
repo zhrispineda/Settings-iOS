@@ -19,7 +19,7 @@ struct AboutView: View {
         CustomList(title: "About") {
             Section {
                 if Configuration().isSimulator {
-                    LabeledContent("Name", value: UIDevice().localizedModel)
+                    LabeledContent("Name", value: Device().model)
                 } else {
                     CustomNavigationLink(title: "Name", status: UIDevice().localizedModel, destination: EmptyView())
                 }
@@ -32,9 +32,9 @@ struct AboutView: View {
                         showingModelNumber.toggle()
                     }
                 LabeledContent("Serial Number", value: serialNumber)
-                    .onAppear(perform: {
+                    .onAppear {
                         serialNumber = randomSerialNumber()
-                    })
+                    }
             }
             
 //            Section(content: {
@@ -71,11 +71,11 @@ struct AboutView: View {
                         .monospaced()
                         .frame(maxWidth: .infinity, alignment: .leading)
                 }
-                HText("Carrier Lock", status: "No SIM restrictions")
+                LabeledContent("Carrier Lock", value: "No SIM restrictions")
                 
                 Section {
-                    HText("Network", status: "Network")
-                    HText("Carrier", status: "Carrier 0.0")
+                    LabeledContent("Network", value: "Network")
+                    LabeledContent("Carrier", value: "Carrier 0.0")
                     HText("IMEI", status: "00 000000 000000 0") // TODO: Monospaced Digits
                     HText("ICCID", status: "0000000000000000000") // TODO: Monospaced Digits
                 } header: {
