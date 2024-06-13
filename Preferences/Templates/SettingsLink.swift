@@ -24,25 +24,25 @@ import SwiftUI
 /// - Parameter status: An optional ``String`` on the opposing side displaying its current state.
 /// - Parameter content: The destination ``Content`` for the NavigationLink.
 struct SettingsLink<Content: View>: View {
-    let color: Color
-    let iconColor: Color
-    let icon: String
-    let larger: Bool
-    let id: String
-    let subtitle: String
-    let status: String
-    let content: Content
+    var color: Color = Color.black
+    var iconColor: Color = Color.white
+    var icon: String = String()
+    var larger: Bool = false
+    var id: String = String()
+    var subtitle: String = String()
+    var status: String = String()
+    @ViewBuilder var content: Content
     
-    init(color: Color = Color.clear, iconColor: Color = Color.white, icon: String, larger: Bool = true, id: String, subtitle: String = String(), status: String = String(), @ViewBuilder content: () -> Content) {
-        self.color = color
-        self.iconColor = iconColor
-        self.icon = icon
-        self.larger = larger
-        self.id = id
-        self.subtitle = subtitle
-        self.status = status
-        self.content = content()
-    }
+//    init(color: Color = Color.clear, iconColor: Color = Color.white, icon: String, larger: Bool = true, id: String, subtitle: String = String(), status: String = String(), @ViewBuilder content: () -> Content) {
+//        self.color = color
+//        self.iconColor = iconColor
+//        self.icon = icon
+//        self.larger = larger
+//        self.id = id
+//        self.subtitle = subtitle
+//        self.status = status
+//        self.content = content()
+//    }
     
     let noBorders = ["moon.fill"]
     let hierarchyIcons = ["questionmark.app.dashed", "questionmark.square.dashed"]
@@ -134,15 +134,10 @@ struct SettingsLink<Content: View>: View {
 #Preview {
     NavigationStack {
         List {
-            SettingsLink(icon: "applesafari", id: "Safari", content: {
+            SettingsLink(icon: "applesafari", id: "Safari") { EmptyView() }
+            SettingsLink(color: .red, icon: "carplay", id: "Emergency SOS") {
                 EmptyView()
-            })
-            SettingsLink(color: .red, icon: "carplay", id: "Emergency SOS", content: {
-                EmptyView()
-            })
-            SettingsLink(color: .blue, icon: "applesiri", id: "Siri", content: {
-                EmptyView()
-            })
+            }
         }
     }
 }

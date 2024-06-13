@@ -29,7 +29,9 @@ struct BatteryView: View {
                         NavigationLink("Charging", destination: ChargingOptimizationView())
                     }
                 } else {
-                    NavigationLink("Battery Health & Charging", destination: BatteryHealthChargingView())
+                    if DeviceInfo().isPhone {
+                        NavigationLink("Battery Health & Charging", destination: BatteryHealthChargingView())
+                    }
                 }
             }
             

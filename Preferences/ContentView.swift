@@ -7,6 +7,9 @@
 
 import SwiftUI
 
+// Variables
+let phoneOnly = ["Action Button", "Emergency SOS", "Health", "Personal Hotspot", "StandBy"]
+
 struct ContentView: View {
     // Variables
     @EnvironmentObject var deviceInfo: DeviceInfo
@@ -18,7 +21,6 @@ struct ContentView: View {
     @State private var id = UUID()
     @State private var airplaneModeEnabled = false
     let tabletOnly = ["Multitasking & Gestures"]
-    let phoneOnly = ["Action Button", "Emergency SOS", "Health", "Personal Hotspot", "StandBy"]
     
     var body: some View {
         ZStack {
@@ -42,7 +44,7 @@ struct ContentView: View {
                                 }
                             }
                             
-                            // MARK: Radio Settings
+                            // MARK: Radio
                             if !Configuration().isSimulator {
                                 Section {
                                     IconToggle(enabled: $airplaneModeEnabled, color: Color.orange, icon: "airplane", title: "Airplane Mode")
@@ -61,97 +63,23 @@ struct ContentView: View {
                                 }
                             }
                             
-                            // MARK: Main Settings
-                            Section {
-                                ForEach(Configuration().isSimulator ? simulatorMainSettings : mainSettings) { setting in
-                                    if !phoneOnly.contains(setting.id) {
-                                        Button {
-                                            id = UUID() // Reset destination
-                                            selection = setting.type
-                                        } label: {
-                                            SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id)
-                                                .foregroundStyle(selection == setting.type ? (Configuration().isSimulator ? Color.white : Color["Label"]) : Color["Label"])
-                                        }
-                                        .listRowBackground(selection == setting.type ? (Configuration().isSimulator ? Color.blue : Color("Selected")) : nil)
-                                    }
-                                }
-                            }
+                            // MARK: Main
+                            SettingsLabelSection(selection: $selection, id: $id, item: Configuration().isSimulator ? simulatorMainSettings : mainSettings)
                             
-                            // MARK: Attention Settings
-                            Section {
-                                ForEach(Configuration().isSimulator ? attentionSimulatorSettings : attentionSettings) { setting in
-                                    if !phoneOnly.contains(setting.id) {
-                                        Button {
-                                            id = UUID() // Reset destination
-                                            selection = setting.type
-                                        } label: {
-                                            SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id)
-                                                .foregroundStyle(selection == setting.type ? (Configuration().isSimulator ? Color.white : Color["Label"]) : Color["Label"])
-                                        }
-                                        .listRowBackground(selection == setting.type ? (Configuration().isSimulator ? Color.blue : Color("Selected")) : nil)
-                                    }
-                                }
-                            }
+                            // MARK: Attention
+                            SettingsLabelSection(selection: $selection, id: $id, item: Configuration().isSimulator ? attentionSimulatorSettings : attentionSettings)
                             
-                            // MARK: Security Settings
-                            Section {
-                                ForEach(Configuration().isSimulator ? simulatorSecuritySettings : securitySettings) { setting in
-                                    if !phoneOnly.contains(setting.id) {
-                                        Button {
-                                            id = UUID() // Reset destination
-                                            selection = setting.type
-                                        } label: {
-                                            SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id)
-                                                .foregroundStyle(selection == setting.type ? (Configuration().isSimulator ? Color.white : Color["Label"]) : Color["Label"])
-                                        }
-                                        .listRowBackground(selection == setting.type ? (Configuration().isSimulator ? Color.blue : Color("Selected")) : nil)
-                                    }
-                                }
-                            }
+                            // MARK: Security
+                            SettingsLabelSection(selection: $selection, id: $id, item: Configuration().isSimulator ? simulatorSecuritySettings : securitySettings)
                             
-                            // MARK: Services Settings
-                            Section {
-                                ForEach(serviceSettings) { setting in
-                                    Button {
-                                        id = UUID() // Reset destination
-                                        selection = setting.type
-                                    } label: {
-                                        SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id)
-                                            .foregroundStyle(selection == setting.type ? (Configuration().isSimulator ? Color.white : Color["Label"]) : Color["Label"])
-                                    }
-                                    .listRowBackground(selection == setting.type ? (Configuration().isSimulator ? Color.blue : Color("Selected")) : nil)
-                                }
-                            }
+                            // MARK: Services
+                            SettingsLabelSection(selection: $selection, id: $id, item: serviceSettings)
                             
-                            // MARK: Apps Settings
-                            Section {
-                                ForEach(appSettings) { setting in
-                                    if !phoneOnly.contains(setting.id) {
-                                        Button(action: {
-                                            id = UUID() // Reset destination
-                                            selection = setting.type
-                                        }, label: {
-                                            SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id)
-                                                .foregroundStyle(selection == setting.type ? (Configuration().isSimulator ? Color.white : Color["Label"]) : Color["Label"])
-                                        })
-                                        .listRowBackground(selection == setting.type ? (Configuration().isSimulator ? Color.blue : Color("Selected")) : nil)
-                                    }
-                                }
-                            }
+                            // MARK: Apps
+                            SettingsLabelSection(selection: $selection, id: $id, item: appSettings)
                             
-                            // MARK: Developer Settings
-                            Section {
-                                ForEach(developerSettings) { setting in
-                                    Button(action: {
-                                        id = UUID() // Reset destination
-                                        selection = setting.type
-                                    }, label: {
-                                        SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id)
-                                            .foregroundStyle(selection == setting.type ? (Configuration().isSimulator ? Color.white : Color["Label"]) : Color["Label"])
-                                    })
-                                    .listRowBackground(selection == setting.type ? (Configuration().isSimulator ? Color.blue : Color("Selected")) : nil)
-                                }
-                            }
+                            // MARK: Developer
+                            SettingsLabelSection(selection: $selection, id: $id, item: developerSettings)
                         }
                         .navigationTitle("Settings")
                         .searchable(text: $searchText, placement: .navigationBarDrawer)
@@ -171,23 +99,23 @@ struct ContentView: View {
                                 destination = selectedSettingsItem.destination
                             }
                         })
-                    } else { 
+                    } else {
                         // MARK: - iOS Settings
                         List {
                             Section {
-                                Button(action: {
+                                Button {
                                     showingSignInSheet.toggle()
-                                }, label: {
+                                } label: {
                                     AppleAccountSection()
-                                })
+                                }
 //                                NavigationLink("Services Included with Purchase", destination: {})
 //                                    .font(.subheadline)
-                                .sheet(isPresented: $showingSignInSheet, content: {
+                                .sheet(isPresented: $showingSignInSheet) {
                                     NavigationStack {
                                         SelectSignInOptionView()
                                             .interactiveDismissDisabled()
                                     }
-                                })
+                                }
                             }
                             
 //                            Section {
@@ -201,9 +129,9 @@ struct ContentView: View {
                                 Section {
                                     IconToggle(enabled: $airplaneModeEnabled, color: Color.orange, icon: "airplane", title: "Airplane Mode")
                                     ForEach(radioSettings) { setting in
-                                        SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Wi-Fi" ? "On" : setting.id == "Cellular" && airplaneModeEnabled ? "Airplane Mode" : "", content: {
+                                        SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Wi-Fi" ? "On" : setting.id == "Cellular" && airplaneModeEnabled ? "Airplane Mode" : "") {
                                             setting.destination
-                                        })
+                                        }
                                         .disabled(setting.id == "Personal Hotspot" && airplaneModeEnabled)
                                     }
                                 }
@@ -214,34 +142,22 @@ struct ContentView: View {
                                 ForEach(Configuration().isSimulator ? simulatorMainSettings : mainSettings) { setting in
                                     if !tabletOnly.contains(setting.id) {
                                         if setting.id == "Action Button" && UIDevice.current.name.contains("15 Pro") {
-                                            SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, content: {
+                                            SettingsLink(color: setting.color, icon: setting.icon, id: setting.id) {
                                                 setting.destination
-                                            })
+                                            }
                                         } else if setting.id != "Action Button" {
-                                            SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, content: {
+                                            SettingsLink(color: setting.color, icon: setting.icon, id: setting.id) {
                                                 setting.destination
-                                            })
+                                            }
                                         }
                                     }
                                 }
                             }
                             
                             // MARK: Attention
-                            Section {
-                                ForEach(Configuration().isSimulator ? attentionSimulatorSettings : attentionSettings) { setting in
-                                    if setting.id == "Action Button" && UIDevice.current.name.contains("15 Pro") {
-                                        SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, content: {
-                                            setting.destination
-                                        })
-                                    } else if setting.id != "Action Button" {
-                                        SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, content: {
-                                            setting.destination
-                                        })
-                                    }
-                                }
-                            }
+                            SettingsLinkSection(item: Configuration().isSimulator ? attentionSimulatorSettings : attentionSettings)
                             
-                            // MARK: Services
+                            // MARK: Security
                             SettingsLinkSection(item: Configuration().isSimulator ? simulatorSecuritySettings : securitySettings)
                             
                             // MARK: Services
@@ -297,15 +213,38 @@ struct AppleAccountSection: View {
     }
 }
 
+struct SettingsLabelSection: View {
+    @Binding var selection: SettingsModel?
+    @Binding var id: UUID
+    var item: [SettingsItem<AnyView>]
+    
+    var body: some View {
+        Section {
+            ForEach(item) { setting in
+                if !phoneOnly.contains(setting.id) {
+                    Button {
+                        id = UUID() // Reset destination
+                        selection = setting.type
+                    } label: {
+                        SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id)
+                            .foregroundStyle(selection == setting.type ? (Configuration().isSimulator ? Color.white : Color["Label"]) : Color["Label"])
+                    }
+                    .listRowBackground(selection == setting.type ? (Configuration().isSimulator ? Color.blue : Color("Selected")) : nil)
+                }
+            }
+        }
+    }
+}
+
 struct SettingsLinkSection: View {
     var item: [SettingsItem<AnyView>]
     
     var body: some View {
         Section {
             ForEach(item) { setting in
-                SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, content: {
+                SettingsLink(color: setting.color, icon: setting.icon, id: setting.id) {
                     setting.destination
-                })
+                }
             }
         }
     }

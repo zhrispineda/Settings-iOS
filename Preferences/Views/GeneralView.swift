@@ -31,42 +31,42 @@ struct GeneralView: View {
             
             if !Configuration().isSimulator {
                 Section {
-                    SettingsLink(icon: "applecare", id: "AppleCare & Warranty", content: {
+                    SettingsLink(icon: "applecare", id: "AppleCare & Warranty") {
                         EmptyView()
-                    })
+                    }
                 }
             }
             
             if !Configuration().isSimulator {
                 Section {
-                    SettingsLink(icon: "airdrop", id: "AirDrop", content: {
+                    SettingsLink(icon: "airdrop", id: "AirDrop") {
                         EmptyView()
-                    })
-                    SettingsLink(color: .blue, icon: "airplay.video", id: "AirPlay & Continuity", content: {
+                    }
+                    SettingsLink(color: .blue, icon: "airplay.video", id: "AirPlay & Continuity") {
                         EmptyView()
-                    })
+                    }
                     if DeviceInfo().isPhone {
-                        SettingsLink(icon: "pip", id: "Picture in Picture", content: {
+                        SettingsLink(icon: "pip", id: "Picture in Picture") {
                             EmptyView()
-                        })
-                        SettingsLink(color: .green, icon: "carplay", id: "CarPlay", content: {
+                        }
+                        SettingsLink(color: .green, icon: "carplay", id: "CarPlay") {
                             EmptyView()
-                        })
+                        }
                     }
                 }
             }
             
             if !Configuration().isSimulator && DeviceInfo().hasHomeButton {
                 NavigationLink("Home Button", destination: EmptyView())
-                SettingsLink(color: .gray, icon: "iphone.gen1", id: "Home Button", content: {
+                SettingsLink(color: .gray, icon: "iphone.gen1", id: "Home Button") {
                     EmptyView()
-                })
+                }
             }
             
             Section {
-                SettingsLink(color: .gray, icon: "ellipsis.rectangle", id: "AutoFill & Passwords", content: {
+                SettingsLink(color: .gray, icon: "ellipsis.rectangle", id: "AutoFill & Passwords") {
                     EmptyView()
-                })
+                }
                 if !Configuration().isSimulator {
                     SettingsLink(color: .gray, icon: "arrow.circlepath", id: "Background App Refresh", content: {
                         EmptyView()
