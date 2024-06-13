@@ -119,7 +119,7 @@ struct SettingsItem<Content: View>: Identifiable {
     let destination: Content
 }
 
-// Smaller icons scaling
+// Icon scaling
 let smallerIcons = ["airplane", "arrow.turn.up.forward.iphone", "calendar.badge.clock", "character.book.closed.fill", "eye.trianglebadge.exclamationmark.fill", "sos", "pip", "key.fill", "shareplay"]
 let largerIcons = ["accessibility", "bell.badge.fill", "faceid", "gear", "hand.raised.fill", "hourglass"]
 

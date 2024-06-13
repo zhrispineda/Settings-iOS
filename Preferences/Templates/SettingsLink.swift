@@ -115,7 +115,7 @@ struct SettingsLink<Content: View>: View {
 #Preview {
     NavigationStack {
         List {
-            SettingsLink(color: .gray, icon: "gear", id: "Settings") {}
+            SettingsLink(color: .gray, icon: "camera.fill", id: "Settings") {}
             SettingsLink(color: .green, icon: "faceid", id: "Emergency SOS") {}
         }
     }

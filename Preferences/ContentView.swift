@@ -12,7 +12,7 @@ let phoneOnly = ["Action Button", "Emergency SOS", "Health", "Personal Hotspot",
 
 struct ContentView: View {
     // Variables
-    @EnvironmentObject var deviceInfo: Device
+    @EnvironmentObject var device: Device
     @State private var searchText = String()
     @State private var showingSignInSheet = false
     @State private var selection: SettingsModel? = .general
@@ -30,7 +30,7 @@ struct ContentView: View {
             HStack(spacing: 0.25) {
                 NavigationStack {
                     // MARK: - iPadOS Settings
-                    if deviceInfo.isTablet {
+                    if device.isTablet {
                         List(selection: $selection) {
                             Button {
                                 showingSignInSheet.toggle()
@@ -146,7 +146,7 @@ struct ContentView: View {
                                                 setting.destination
                                             }
                                         } else if setting.id != "Action Button" {
-                                            SettingsLink(color: setting.color, icon: setting.icon, larger: true, id: setting.id) {
+                                            SettingsLink(color: setting.color, icon: setting.icon, id: setting.id) {
                                                 setting.destination
                                             }
                                         }
@@ -175,8 +175,8 @@ struct ContentView: View {
                         .searchable(text: $searchText)
                     }
                 }
-                .frame(maxWidth: deviceInfo.isTablet ? (isOnLandscapeOrientation ? 415 : 320) : nil)
-                if deviceInfo.isTablet {
+                .frame(maxWidth: device.isTablet ? (isOnLandscapeOrientation ? 415 : 320) : nil)
+                if device.isTablet {
                     NavigationStack {
                         destination
                     }

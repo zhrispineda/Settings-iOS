@@ -21,7 +21,6 @@ struct SiriView: View {
     @State private var showSuggestionsEnabled = true
     @State private var showingResetHiddenSuggestionsAlert = false
     @State private var showingResetHiddenSuggestionsPopup = false
-    @State private var showRecentsEnabled = true
     
     @State private var showInLookUpEnabled = true
     @State private var showInSpotlightEnabled = true
@@ -37,8 +36,10 @@ struct SiriView: View {
             
             Section {
                 CustomNavigationLink(title: "Language", status: "English (United States)", destination: SiriLanguageView())
+                if !siriEnabled {
+                    CustomNavigationLink(title: "Siri Voice", status: "American (Voice 4)", destination: SiriVoiceView())
+                }
                 CustomNavigationLink(title: "Listen for", status: "Off", destination: EmptyView())
-                Toggle("Allow Siri When Locked", isOn: $allowSiriWhenLockedEnabled)
                 Toggle("Press \(Device().isPhone ? "\(Device().hasHomeButton ? "Home" : "Side") Button" : "Top Button") for Siri", isOn: $siriEnabled)
                     .alert("Turn Off Siri?", isPresented: $showingDisableSiriAlert) {
                         Button("Turn Off Siri") {}
@@ -54,7 +55,9 @@ struct SiriView: View {
                     }
                     .confirmationDialog("Turn Off Siri", isPresented: $showingDisableSiriPopup, titleVisibility: .visible) {
                         Button("Turn Off Siri") {}
-                        Button("Cancel", role: .cancel) {}
+                        Button("Cancel", role: .cancel) {
+                            siriEnabled = true
+                        }
                     } message: {
                         Text("The information Siri uses to respond to your requests will be removed from Apple servers. If you want to use Siri later, it will take some time to re-send this information.")
                     }
@@ -67,28 +70,31 @@ struct SiriView: View {
                     .onChange(of: siriEnabled) {
                         siriEnabled ? (Device().isPhone ? showingEnableSiriPopup.toggle() : showingEnableSiriAlert.toggle()) : (Device().isPhone ? showingDisableSiriPopup.toggle() : showingDisableSiriAlert.toggle())
                     }
-                CustomNavigationLink(title: "Siri Voice", status: "American (Voice 4)", destination: SiriVoiceView())
-                NavigationLink("Siri Responses", destination: SiriResponsesView())
-                NavigationLink("Announce Calls", destination: EmptyView())
-                NavigationLink("Announce Notifications", destination: EmptyView())
-                Button(action: {}, label: { // TODO: Popover
-                    HStack {
-                        Text("My Information")
-                            .foregroundStyle(Color["Label"])
-                        Spacer()
-                        Text("None")
-                            .foregroundStyle(Color(UIColor.secondaryLabel))
-                        Image(systemName: "chevron.right")
-                            .foregroundStyle(Color(UIColor.tertiaryLabel))
-                    }
-                })
+                if siriEnabled {
+                    Toggle("Allow Siri When Locked", isOn: $allowSiriWhenLockedEnabled)
+                    CustomNavigationLink(title: "Siri Voice", status: "American (Voice 4)", destination: SiriVoiceView())
+                    NavigationLink("Siri Responses", destination: SiriResponsesView())
+                    NavigationLink("Announce Calls", destination: EmptyView())
+                    NavigationLink("Announce Notifications", destination: EmptyView())
+                    Button(action: {}, label: { // TODO: Popover
+                        HStack {
+                            Text("My Information")
+                                .foregroundStyle(Color["Label"])
+                            Spacer()
+                            Text("None")
+                                .foregroundStyle(Color(UIColor.secondaryLabel))
+                            Image(systemName: "chevron.right")
+                                .foregroundStyle(Color(UIColor.tertiaryLabel))
+                        }
+                    })
+                }
                 NavigationLink("Messaging with Siri", destination: {
                     CustomList(title: "Messaging with Siri") {}
                 })
             } header: {
                 Text("Siri Requests")
             } footer: {
-                Text("Voice input is processed on \(Device().model), but transcripts of your requests are sent to Apple. [About Ask Siri & Privacy...](#)")
+                Text(siriEnabled ? "Voice input is processed on \(Device().model), but transcripts of your requests are sent to Apple." : "Siri can help you get things done just by asking [About Ask Siri & Privacy...](#)")
             }
             
             Section {
@@ -104,7 +110,6 @@ struct SiriView: View {
                         Button("Reset", role: .destructive) {}
                         Button("Cancel", role: .cancel) {}
                     }
-                Toggle("Show Recents", isOn: $showRecentsEnabled)
                 Toggle("Allow Notifications", isOn: $allowNotificationsEnabled)
                 Toggle("Show in App Library", isOn: $showAppLibraryEnabled)
                 Toggle("Show When Sharing", isOn: $showWhenSharingEnabled)

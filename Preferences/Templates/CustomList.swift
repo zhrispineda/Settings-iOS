@@ -30,10 +30,10 @@ struct CustomList<Content: View>: View {
             List {
                 content
             }
+            .contentMargins(.horizontal, Device().isPhone ? nil : (isOnLandscapeOrientation ? 145 : 35), for: .scrollContent)
             .navigationTitle(title)
             .navigationBarTitleDisplayMode(.inline)
             .padding(.top, defaultPaddingViews.contains(title) ? 0 : -19)
-            .padding(.horizontal, Device().isPhone ? 0 : (isOnLandscapeOrientation ? 35 : 0))
         }
         .onReceive(NotificationCenter.default.publisher(for: UIDevice.orientationDidChangeNotification)) { _ in
             if !Device().isPhone && UIDevice.current.orientation.rawValue <= 4 {
@@ -44,9 +44,6 @@ struct CustomList<Content: View>: View {
 }
 
 #Preview {
-    NavigationStack {
-        CustomList(title: "Developer") {
-            Text("Hello, World!")
-        }
-    }
+    ContentView()
+        .environmentObject(Device())
 }
