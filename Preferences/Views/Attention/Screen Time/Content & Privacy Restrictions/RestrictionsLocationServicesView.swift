@@ -51,12 +51,12 @@ struct RestrictionsLocationServicesView: View {
                     })
                     .onChange(of: locationServicesEnabled, {
                         if !locationServicesEnabled {
-                            DeviceInfo().isPhone ? showingDisableLocationServicesDialog.toggle() : showingDisableLocationServicesAlert.toggle()
+                            Device().isPhone ? showingDisableLocationServicesDialog.toggle() : showingDisableLocationServicesAlert.toggle()
                         }
                     })
                 NavigationLink("Location Alerts", destination: LocationAlertsView())
             }, footer: {
-                Text("\(DeviceInfo().isTablet ? "Using Location Services requires turning on Wi-Fi.\n\n" : "")Location Services uses \(DeviceInfo().isTablet ? "Bluetooth and crowd-sourced Wi-Fi hotspot locations" : "GPS, Bluetooth, and crowd-sourced Wi-Fi hotspot and cell tower locations") to determine your approximate location. [About Location Services and Privacy...](#)")
+                Text("\(Device().isTablet ? "Using Location Services requires turning on Wi-Fi.\n\n" : "")Location Services uses \(Device().isTablet ? "Bluetooth and crowd-sourced Wi-Fi hotspot locations" : "GPS, Bluetooth, and crowd-sourced Wi-Fi hotspot and cell tower locations") to determine your approximate location. [About Location Services and Privacy...](#)")
             })
             
             if locationServicesEnabled {

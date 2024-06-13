@@ -12,7 +12,7 @@ let phoneOnly = ["Action Button", "Emergency SOS", "Health", "Personal Hotspot",
 
 struct ContentView: View {
     // Variables
-    @EnvironmentObject var deviceInfo: DeviceInfo
+    @EnvironmentObject var deviceInfo: Device
     @State private var searchText = String()
     @State private var showingSignInSheet = false
     @State private var selection: SettingsModel? = .general
@@ -188,7 +188,7 @@ struct ContentView: View {
 }
 
 struct AppleAccountSection: View {
-    @EnvironmentObject var deviceInfo: DeviceInfo
+    @EnvironmentObject var deviceInfo: Device
     
     var body: some View {
         NavigationLink {} label: {
@@ -252,5 +252,5 @@ struct SettingsLinkSection: View {
 
 #Preview {
     ContentView()
-        .environmentObject(DeviceInfo())
+        .environmentObject(Device())
 }

@@ -18,7 +18,7 @@ struct AccessibilityKeyboardsView: View {
             }, header: {
                 Text("\nHardware Keyboards")
             }, footer: {
-                Text("Use an external keyboard to control your \(DeviceInfo().model).")
+                Text("Use an external keyboard to control your \(Device().model).")
             })
             
             Section(content: {

@@ -33,10 +33,10 @@ struct CustomList<Content: View>: View {
             .navigationTitle(title)
             .navigationBarTitleDisplayMode(.inline)
             .padding(.top, defaultPaddingViews.contains(title) ? 0 : -19)
-            .padding(.horizontal, DeviceInfo().isPhone ? 0 : (isOnLandscapeOrientation ? 35 : 0))
+            .padding(.horizontal, Device().isPhone ? 0 : (isOnLandscapeOrientation ? 35 : 0))
         }
         .onReceive(NotificationCenter.default.publisher(for: UIDevice.orientationDidChangeNotification)) { _ in
-            if !DeviceInfo().isPhone && UIDevice.current.orientation.rawValue <= 4 {
+            if !Device().isPhone && UIDevice.current.orientation.rawValue <= 4 {
                 isOnLandscapeOrientation = UIDevice.current.orientation.isLandscape
             }
         }

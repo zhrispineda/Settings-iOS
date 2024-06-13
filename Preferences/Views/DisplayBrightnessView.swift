@@ -63,7 +63,7 @@ struct DisplayBrightnessView: View {
                 Toggle("Raise to Wake", isOn: $raiseToWakeEnabled)
             }
             
-            if DeviceInfo().hasAlwaysOnDisplay {
+            if Device().hasAlwaysOnDisplay {
                 Section(content: {
                     CustomNavigationLink(title: "Always On Display", status: "On", destination: EmptyView())
                 }, footer: {

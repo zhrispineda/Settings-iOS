@@ -26,7 +26,7 @@ struct AboutView: View {
                 
                 CustomNavigationLink(title: "\(UIDevice().systemName) Version", status: UIDevice().systemVersion, destination: VersionView())
                 
-                LabeledContent("Model Name", value: DeviceInfo().hasHomeButton && DeviceInfo().isPhone ? "iPhone SE" : UIDevice.current.name)
+                LabeledContent("Model Name", value: Device().hasHomeButton && Device().isPhone ? "iPhone SE" : UIDevice.current.name)
                 LabeledContent("Model Number", value: showingModelNumber ? getModelNumber() : "\(getModelNumber())LL/A")
                     .onTapGesture {
                         showingModelNumber.toggle()
@@ -79,7 +79,7 @@ struct AboutView: View {
                     HText("IMEI", status: "00 000000 000000 0") // TODO: Monospaced Digits
                     HText("ICCID", status: "0000000000000000000") // TODO: Monospaced Digits
                 } header: {
-                    Text(DeviceInfo().hasHomeButton && DeviceInfo().isPhone ? "Physical SIM" : "eSIM")
+                    Text(Device().hasHomeButton && Device().isPhone ? "Physical SIM" : "eSIM")
                 }
                 
                 Section {

@@ -19,7 +19,7 @@ struct SoundsHapticsView: View {
     @State private var fixedPositionVolumeControlsEnabled = true
     
     var body: some View {
-        CustomList(title: DeviceInfo().isPhone ? "Sounds & Haptics" : "Sounds") {
+        CustomList(title: Device().isPhone ? "Sounds & Haptics" : "Sounds") {
             Section {
                 Toggle(isOn: $silentModeEnabled.animation(), label: {
                     Label(
@@ -57,7 +57,7 @@ struct SoundsHapticsView: View {
                 .foregroundStyle(.secondary)
                 
                 Toggle("Change with Buttons", isOn: $changeWithButtonsEnabled)
-                if DeviceInfo().isPhone {
+                if Device().isPhone {
                     CustomNavigationLink(title: "Haptics", status: "Always Play", destination: EmptyView())
                 }
             } header: {
@@ -69,7 +69,7 @@ struct SoundsHapticsView: View {
             Section {
                 CustomNavigationLink(title: "Ringtone", status: "Reflection", destination: EmptyView())
                 CustomNavigationLink(title: "Text Tone", status: "Note", destination: EmptyView())
-                if DeviceInfo().isPhone {
+                if Device().isPhone {
                     CustomNavigationLink(title: "New Voicemail", status: "Droplet", destination: EmptyView())
                 }
                 CustomNavigationLink(title: "New Mail", status: "None", destination: EmptyView())
@@ -80,22 +80,22 @@ struct SoundsHapticsView: View {
             }
             
             Section {
-                if DeviceInfo().isPhone {
+                if Device().isPhone {
                     CustomNavigationLink(title: "Keyboard Feedback", status: "Sound", destination: EmptyView())
                 } else {
                     Toggle("Keyboard Clicks", isOn: $keyboardClicksEnabled)
                 }
                 Toggle("Lock Sound", isOn: $lockSoundEnabled)
-                if DeviceInfo().isPhone {
+                if Device().isPhone {
                     Toggle("System Haptics", isOn: $systemHapticsEnabled)
                 }
             } header: {
-                Text("System Sounds\(DeviceInfo().isPhone ? " & Haptics" : "")")
+                Text("System Sounds\(Device().isPhone ? " & Haptics" : "")")
             } footer: {
-                Text("Play \(DeviceInfo().isPhone ? "haptics" : "sounds") for system controls and interactions.")
+                Text("Play \(Device().isPhone ? "haptics" : "sounds") for system controls and interactions.")
             }
             
-            if !DeviceInfo().isPhone {
+            if !Device().isPhone {
                 Section {
                     Toggle("Fixed Position Volume Controls", isOn: $fixedPositionVolumeControlsEnabled.animation())
                 } footer: {

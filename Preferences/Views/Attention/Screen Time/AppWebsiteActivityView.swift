@@ -25,7 +25,7 @@ struct AppWebsiteActivityView: View {
             .pickerStyle(SegmentedPickerStyle())
             .padding(20)
             Spacer()
-            Text("As you use your \(DeviceInfo().model), screen time will be reported here.")
+            Text("As you use your \(Device().model), screen time will be reported here.")
                 .multilineTextAlignment(.center)
                 .foregroundStyle(.secondary)
             Spacer()

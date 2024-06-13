@@ -13,11 +13,11 @@ struct DownloadsView: View {
             Section(content: {
                 Button(action: {}, label: {
                     HStack(spacing: 15) {
-                        Image(systemName: "\(DeviceInfo().model.lowercased())")
+                        Image(systemName: "\(Device().model.lowercased())")
                             .font(.title)
                             .tint(.blue)
                         VStack(alignment: .leading) {
-                            Text("On My \(DeviceInfo().model)")
+                            Text("On My \(Device().model)")
                             Text("Downloads")
                                 .foregroundStyle(.secondary)
                                 .font(.footnote)
@@ -30,7 +30,7 @@ struct DownloadsView: View {
                 // TODO: Open File folder selection view
                 Button(action: {}, label: {
                     HStack {
-                        Image(systemName: "\(DeviceInfo().model.lowercased())")
+                        Image(systemName: "\(Device().model.lowercased())")
                             .font(.title)
                             .foregroundStyle(.blue)
                             .opacity(0.0)

@@ -33,7 +33,7 @@ struct DisplayZoomView: View {
             }
         }
         .toolbar {
-            if DeviceInfo().isTablet {
+            if Device().isTablet {
                 ToolbarItem(placement: .topBarLeading) {
                     Button(action: {
                         dismiss()
@@ -44,7 +44,7 @@ struct DisplayZoomView: View {
             }
             ToolbarItem(placement: .topBarTrailing) {
                 Button(action: {
-                    DeviceInfo().isPhone ? showingChangeDialog.toggle() : showingChangeAlert.toggle()
+                    Device().isPhone ? showingChangeDialog.toggle() : showingChangeAlert.toggle()
                 }, label: {
                     Text("Set")
                 })

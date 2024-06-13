@@ -47,9 +47,9 @@ struct DeveloperView: View {
                 Text("Appearance")
             }
             
-            if DeviceInfo().isPhone || (DeviceInfo().isTablet && DeviceInfo().isPro) {
+            if Device().isPhone || (Device().isTablet && Device().isPro) {
                 Section {
-                    if DeviceInfo().isPhone {
+                    if Device().isPhone {
                         CustomNavigationLink(title: "View", status: "Default", destination: DisplayZoomView())
                     } else {
                         Button(action: {
@@ -60,7 +60,7 @@ struct DeveloperView: View {
                         .foregroundStyle(Color["Label"])
                         .sheet(isPresented: $showingDisplayZoomSheet) {
                             NavigationStack {
-                                DisplayZoomView(options: DeviceInfo().isLargestTablet ? ["Larger Text", "Default", "More Space"] : ["Default", "More Space"])
+                                DisplayZoomView(options: Device().isLargestTablet ? ["Larger Text", "Default", "More Space"] : ["Default", "More Space"])
                             }
                         }
                     }
@@ -93,7 +93,7 @@ struct DeveloperView: View {
                 Text("Terminate instead of suspending apps when backgrounded to force apps to be relaunched when they are foregrounded.")
             }
             
-            if DeviceInfo().isPhone { // MARK: Wallet Testing
+            if Device().isPhone { // MARK: Wallet Testing
                 Section {
                     Toggle("Additional Logging", isOn: $additionalLoggingEnabled)
                     Toggle("Allow HTTP Services", isOn: $allowHttpServicesEnabled)

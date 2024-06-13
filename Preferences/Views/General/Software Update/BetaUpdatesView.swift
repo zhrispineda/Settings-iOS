@@ -29,7 +29,7 @@ struct BetaUpdatesView: View {
                     })
                 }
             } footer: {
-                Text("Receive beta updates on this \(DeviceInfo().model) to test-drive pre-release versions of \(UIDevice().systemName) and provide feedback to help make Apple software even better. [Learn more...](https://beta.apple.com)")
+                Text("Receive beta updates on this \(Device().model) to test-drive pre-release versions of \(UIDevice().systemName) and provide feedback to help make Apple software even better. [Learn more...](https://beta.apple.com)")
             }
             
             Section {

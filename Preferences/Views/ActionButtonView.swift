@@ -59,7 +59,7 @@ struct ActionButtonRender: UIViewRepresentable {
         sceneView.antialiasingMode = .multisampling4X
         sceneView.autoenablesDefaultLighting = true
         sceneView.backgroundColor = .black
-        let scene = SCNScene(named: "iPhone15_Pro_NaturalTitanium_v0005-D83-D84.usdz")
+        let scene = SCNScene(named: "iPhone15_Pro_NaturalTitanium.usdz")
         sceneView.scene = scene
         
         return sceneView

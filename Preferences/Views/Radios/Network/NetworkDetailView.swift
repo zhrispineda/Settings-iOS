@@ -37,7 +37,7 @@ struct NetworkDetailView: View {
                 Toggle("Private Wi-Fi Address", isOn: $privateWifiAddressEnabled)
                 LabeledContent("Wi-Fi Address", value: "00:00:0X:XX:0X:X0")
             } footer: {
-                Text("Using a privatr address helps reduce tracking of your \(DeviceInfo().model) across different Wi-Fi networks.")
+                Text("Using a privatr address helps reduce tracking of your \(Device().model) across different Wi-Fi networks.")
             }
             
             Section {

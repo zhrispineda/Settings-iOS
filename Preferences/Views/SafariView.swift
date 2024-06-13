@@ -51,14 +51,14 @@ struct SafariView: View {
             Section(content: {
                 NavigationLink("AutoFill", destination: AutoFillView())
                 CustomNavigationLink(title: "Favorites", status: "Favorites", destination: FavoritesView())
-                if DeviceInfo().isTablet {
+                if Device().isTablet {
                     Toggle("Show Favorites Bar", isOn: $showFavoritesBarEnabled)
                     CustomNavigationLink(title: "Favorites Bar Appearance", status: "Show Icons and Text", destination: EmptyView())
                     Toggle("Show Links on Hover", isOn: $showLinksHoverEnabled)
                 }
                 Toggle("Block Pop-ups", isOn: $blockPopUpsEnabled)
                 NavigationLink("Extensions", destination: ExtensionsView())
-                CustomNavigationLink(title: "Downloads", status: "On My \(DeviceInfo().model)", destination: DownloadsView())
+                CustomNavigationLink(title: "Downloads", status: "On My \(Device().model)", destination: DownloadsView())
             }, header: {
                 Text("General")
             })
@@ -77,7 +77,7 @@ struct SafariView: View {
                                     .frame(height: 100)
                                     .clipShape(RoundedRectangle(cornerRadius: 10.0))
                                     .padding(.top)
-                                Text(DeviceInfo().isTablet ? "Off" : "Tab Bar")
+                                Text(Device().isTablet ? "Off" : "Tab Bar")
                                     .font(.subheadline)
                                 Image(systemName: separateTabBarEnabled ? "checkmark.circle.fill" : "circle")
                                     .foregroundStyle(separateTabBarEnabled ? Color(UIColor.systemBackground) : Color(UIColor.tertiaryLabel), .blue)
@@ -99,7 +99,7 @@ struct SafariView: View {
                                     .frame(height: 100)
                                     .clipShape(RoundedRectangle(cornerRadius: 10.0))
                                     .padding(.top)
-                                Text(DeviceInfo().isTablet ? "Split View & Slide Over" : "Single Tab")
+                                Text(Device().isTablet ? "Split View & Slide Over" : "Single Tab")
                                     .font(.subheadline)
                                 Image(systemName: !separateTabBarEnabled ? "checkmark.circle.fill" : "circle")
                                     .foregroundStyle(!separateTabBarEnabled ? Color(UIColor.systemBackground) : Color(UIColor.tertiaryLabel), .blue)
@@ -160,7 +160,7 @@ struct SafariView: View {
                 Text("Settings for Websites")
             })
             
-            if DeviceInfo().isTablet {
+            if Device().isTablet {
                 Section(content: {
                     Toggle("Show Color in Compact Tab Bar", isOn: $showColorCompactTabBarEnabled)
                 }, header: {

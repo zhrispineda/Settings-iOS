@@ -4,11 +4,11 @@ SwiftUI **(work-in-progress)** recreation of the iOS & iPadOS Settings app.
 ## Examples
 - Physical-like:
 
-![A GIF displaying the project's Settings app on different devices including a Dynamic Island iPhone, iPhone with Touch ID, and an 11-inch iPad.](Assets/SettingsB.gif)
+![A GIF displaying the project's Settings app on different devices including a Dynamic Island iPhone, iPhone with Touch ID, and an 11-inch iPad.](Assets/SettingsPhysical.gif)
 
 - Simulator:
 
-![A GIF displaying the project's Settings app on different devices including a Dynamic Island iPhone, iPhone with Touch ID, and an 11-inch iPad.](Assets/Settings.gif)
+![A GIF displaying the project's Settings app on different devices including a Dynamic Island iPhone, iPhone with Touch ID, and an 11-inch iPad.](Assets/SettingsSimulator.gif)
 
 ## Information
 - This personal project is a recreation of Apple's current and default Settings app for iPhone and iPad on **Simulator and iOS/iPadOS** 18.0 **beta 1** (22A5282m).

@@ -16,7 +16,7 @@ struct LiveSpeechView: View {
             Section(content: {
                 Toggle("Live Speech", isOn: $liveSpeechEnabled)
             }, footer: {
-                Text("Triple-click the \(DeviceInfo().hasHomeButton ? "home" : "side") button to show Live Speech.")
+                Text("Triple-click the \(Device().hasHomeButton ? "home" : "side") button to show Live Speech.")
             })
             
             Section {

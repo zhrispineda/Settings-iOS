@@ -49,7 +49,7 @@ extension Color {
 
 // MARK: DeviceInfo class
 @MainActor
-class DeviceInfo: ObservableObject {
+class Device: ObservableObject {
     @Published var model: String = UIDevice.current.localizedModel
     
     var isPhone = UIDevice.current.localizedModel == "iPhone"
@@ -120,7 +120,8 @@ struct SettingsItem<Content: View>: Identifiable {
 }
 
 // Smaller icons scaling
-let smallerIcons = ["airplane", "airplay.video", "arrow.counterclockwise", "arrow.turn.up.forward.iphone", "battery.100percent", "calendar.badge.clock", "camera.fill", "character.book.closed.fill", "externaldrive.fill", "eye.trianglebadge.exclamationmark.fill", "gamecontroller.fill", "keyboard.fill", "personalhotspot", "sos", "speaker.3.fill", "moon.fill", "pip", "squares.leading.rectangle", "text.justify.left", "key.fill", "hammer.fill", "shareplay", "textformat", "wifi"]
+let smallerIcons = ["airplane", "arrow.turn.up.forward.iphone", "calendar.badge.clock", "character.book.closed.fill", "eye.trianglebadge.exclamationmark.fill", "sos", "pip", "key.fill", "shareplay"]
+let largerIcons = ["accessibility", "bell.badge.fill", "faceid", "gear", "hand.raised.fill", "hourglass"]
 
 // MARK: Radio Settings
 @MainActor let radioSettings: [SettingsItem] = [
@@ -134,7 +135,7 @@ let smallerIcons = ["airplane", "airplay.video", "arrow.counterclockwise", "arro
 // MARK: Attention Settings
 @MainActor let attentionSettings: [SettingsItem] = [
     SettingsItem(type: .notifications, title: "Notifications", icon: "bell.badge.fill", color: .red, destination: AnyView(NotificationsView())),
-    SettingsItem(type: .soundHaptics, title: DeviceInfo().isPhone ? "Sounds & Haptics" : "Sounds", icon: "speaker.3.fill", color: .pink, destination: AnyView(SoundsHapticsView())),
+    SettingsItem(type: .soundHaptics, title: Device().isPhone ? "Sounds & Haptics" : "Sounds", icon: "speaker.3.fill", color: .pink, destination: AnyView(SoundsHapticsView())),
     SettingsItem(type: .focus, title: "Focus", icon: "moon.fill", color: .indigo, destination: AnyView(FocusView())),
     SettingsItem(type: .screenTime, title: "Screen Time", icon: "hourglass", color: .indigo, destination: AnyView(ScreenTimeView())),
 ]
@@ -152,7 +153,7 @@ let smallerIcons = ["airplane", "airplay.video", "arrow.counterclockwise", "arro
     SettingsItem(type: .camera, title: "Camera", icon: "camera.fill", color: .gray, destination: AnyView(EmptyView())),
     SettingsItem(type: .controlCenter, title: "Control Center", icon: "switch.2", destination: AnyView(ControlCenterView())),
     SettingsItem(type: .displayBrightness, title: "Display & Brightness", icon: "sun.max.fill", color: .blue, destination: AnyView(DisplayBrightnessView())),
-    SettingsItem(type: .homeScreenAppLibrary, title: "Home Screen & App Library", icon: "apps.iphone", color: .blue, destination: AnyView(EmptyView())),
+    SettingsItem(type: .homeScreenAppLibrary, title: "Home Screen & App Library", icon: Device().isPhone ? "apps.iphone" : "apps.ipad", color: .blue, destination: AnyView(EmptyView())),
     SettingsItem(type: .multitaskGestures, title: "Multitasking & Gestures", icon: "squares.leading.rectangle", color: .blue, destination: AnyView(MultitaskingGesturesView())),
     SettingsItem(type: .search, title: "Search", icon: "magnifyingglass", color: .gray, destination: AnyView(EmptyView())),
     SettingsItem(type: .siri, title: "Siri", icon: "applesiri", color: Color(UIColor.systemBackground), destination: AnyView(SiriView())),
@@ -174,7 +175,7 @@ let smallerIcons = ["airplane", "airplay.video", "arrow.counterclockwise", "arro
 
 // MARK: Security Settings
 @MainActor let securitySettings: [SettingsItem] = [
-    SettingsItem(type: .biometricPasscode, title: "\(DeviceInfo().hasFaceAuth ? "Face" : "Touch") ID & Passcode", icon: DeviceInfo().hasFaceAuth ? "faceid" : "lock.fill", color: DeviceInfo().hasFaceAuth ? .green : .red, destination: AnyView(EmptyView())),
+    SettingsItem(type: .biometricPasscode, title: "\(Device().hasFaceAuth ? "Face" : "Touch") ID & Passcode", icon: Device().hasFaceAuth ? "faceid" : "lock.fill", color: Device().hasFaceAuth ? .green : .red, destination: AnyView(EmptyView())),
     SettingsItem(type: .emergencySOS, title: "Emergency SOS", icon: "sos", color: .red, destination: AnyView(EmptyView())),
     SettingsItem(type: .privacySecurity, title: "Privacy & Security", icon: "hand.raised.fill", color: .blue, destination: AnyView(PrivacySecurityView()))
 ]

@@ -47,7 +47,7 @@ struct PrivacySecurityView: View {
                 SettingsLink(icon: "applehealth", id: "Health", content: {
                     AppPermissionsView(permissionName: "Health")
                 })
-                if DeviceInfo().isPhone {
+                if Device().isPhone {
                     SettingsLink(icon: "sensorKit60x60", id: "Research Sensor & Usage Data", content: {
                         AppPermissionsView(permissionName: "Research & Usage Data")
                     })
@@ -72,7 +72,7 @@ struct PrivacySecurityView: View {
                 Text("As apps request access, they will be added in the categories above.")
             })
             
-            if DeviceInfo().isPhone {
+            if Device().isPhone {
                 Section(content: {
                     SettingsLink(color: .white, iconColor: .blue, icon: "person.badge.shield.checkmark.fill", larger: false, id: "Safety Check", content: {
                         SafetyCheckView()
@@ -87,7 +87,7 @@ struct PrivacySecurityView: View {
                     SensitiveContentWarningView()
                 })
             }, footer: {
-                Text("Detect nude photos and videos before they are viewed on your \(DeviceInfo().model), and receive guidance to help make a safe choice. Apple does not have access to the photos or videos. [Learn more...](https://support.apple.com/en-us/105071)")
+                Text("Detect nude photos and videos before they are viewed on your \(Device().model), and receive guidance to help make a safe choice. Apple does not have access to the photos or videos. [Learn more...](https://support.apple.com/en-us/105071)")
             })
             
             Section {

@@ -15,7 +15,7 @@ struct StyleView: View {
     var body: some View {
         CustomList(title: "Style") {
             ZStack {
-                Image(DeviceInfo().isPhone ? "clouds1480x350" : "clouds11024x805")
+                Image(Device().isPhone ? "clouds1480x350" : "clouds11024x805")
                 VStack {
                     ZStack {
                         switch selected {

@@ -39,7 +39,7 @@ struct SiriView: View {
                 CustomNavigationLink(title: "Language", status: "English (United States)", destination: SiriLanguageView())
                 CustomNavigationLink(title: "Listen for", status: "Off", destination: EmptyView())
                 Toggle("Allow Siri When Locked", isOn: $allowSiriWhenLockedEnabled)
-                Toggle("Press \(DeviceInfo().isPhone ? "\(DeviceInfo().hasHomeButton ? "Home" : "Side") Button" : "Top Button") for Siri", isOn: $siriEnabled)
+                Toggle("Press \(Device().isPhone ? "\(Device().hasHomeButton ? "Home" : "Side") Button" : "Top Button") for Siri", isOn: $siriEnabled)
                     .alert("Turn Off Siri?", isPresented: $showingDisableSiriAlert) {
                         Button("Turn Off Siri") {}
                         Button("Cancel", role: .cancel) {}
@@ -65,7 +65,7 @@ struct SiriView: View {
                         Text("Siri sends information like your voice input, contacts, and location to Apple to process your requests.")
                     }
                     .onChange(of: siriEnabled) {
-                        siriEnabled ? (DeviceInfo().isPhone ? showingEnableSiriPopup.toggle() : showingEnableSiriAlert.toggle()) : (DeviceInfo().isPhone ? showingDisableSiriPopup.toggle() : showingDisableSiriAlert.toggle())
+                        siriEnabled ? (Device().isPhone ? showingEnableSiriPopup.toggle() : showingEnableSiriAlert.toggle()) : (Device().isPhone ? showingDisableSiriPopup.toggle() : showingDisableSiriAlert.toggle())
                     }
                 CustomNavigationLink(title: "Siri Voice", status: "American (Voice 4)", destination: SiriVoiceView())
                 NavigationLink("Siri Responses", destination: SiriResponsesView())
@@ -88,12 +88,12 @@ struct SiriView: View {
             } header: {
                 Text("Siri Requests")
             } footer: {
-                Text("Voice input is processed on \(DeviceInfo().model), but transcripts of your requests are sent to Apple. [About Ask Siri & Privacy...](#)")
+                Text("Voice input is processed on \(Device().model), but transcripts of your requests are sent to Apple. [About Ask Siri & Privacy...](#)")
             }
             
             Section {
                 Toggle("Suggest Apps Before Searching", isOn: $showSuggestionsEnabled)
-                Button("Reset Hidden Suggestions", action: { DeviceInfo().isPhone ? showingResetHiddenSuggestionsAlert.toggle() : showingResetHiddenSuggestionsPopup.toggle() })
+                Button("Reset Hidden Suggestions", action: { Device().isPhone ? showingResetHiddenSuggestionsAlert.toggle() : showingResetHiddenSuggestionsPopup.toggle() })
                     .alert("Reset", isPresented: $showingResetHiddenSuggestionsPopup) {
                         Button("Reset", role: .destructive) {}
                         Button("Cancel", role: .cancel) {}

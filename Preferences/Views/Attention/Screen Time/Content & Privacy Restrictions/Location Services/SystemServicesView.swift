@@ -30,7 +30,7 @@ struct SystemServicesView: View {
             Section {
                 Toggle("Alerts & Shortcuts Automations", isOn: $alertsShortcutsAutomationsEnabled)
                 Toggle("Carbon Analysis", isOn: $carbonAnalysisEnabled)
-                if DeviceInfo().isPhone {
+                if Device().isPhone {
                     Toggle("Cell Network Search", isOn: $cellNetworkSearchEnabled)
                 }
                 Toggle("Device Management", isOn: $deviceManagementEnabled)
@@ -60,7 +60,7 @@ struct SystemServicesView: View {
             }
             
             Section(content: {
-                Toggle("\(DeviceInfo().model) Analytics", isOn: $deviceAnalyticsEnabled)
+                Toggle("\(Device().model) Analytics", isOn: $deviceAnalyticsEnabled)
                 Toggle("Routing & Traffic", isOn: $routingTrafficEnabled)
                 Toggle("Improve Maps", isOn: $improveMapsEnabled)
             }, header: {

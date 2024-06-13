@@ -49,7 +49,7 @@ struct ChargingOptimizationView: View {
                         temporaryOptimizePauseEnabled = false
                     }
             } footer: {
-                Text("When the charge limit is set to 100%, allow \(DeviceInfo().model) to wait to finish charging past 80% until the time you need to use it. \(temporaryOptimizePauseEnabled ? "Optimized Battery Charging is off until 6:00 AM. " : "")")
+                Text("When the charge limit is set to 100%, allow \(Device().model) to wait to finish charging past 80% until the time you need to use it. \(temporaryOptimizePauseEnabled ? "Optimized Battery Charging is off until 6:00 AM. " : "")")
             }
             .disabled(chargeLimit < 100.0)
             .alert("Optimized Battery Charging helps reduce battery aging.", isPresented: $showingOptimizeWarning, actions: {
@@ -71,7 +71,7 @@ struct ChargingOptimizationView: View {
                         temporaryCleanPauseEnabled = false
                     }
             } footer: {
-                Text("In your region, \(DeviceInfo().model) will try to reduce your carbon footprint by selectively charging when lower carbon emission electricity is available. \(DeviceInfo().model) learns from your daily charging routine so it can reach full charge before you need to use it. \(temporaryCleanPauseEnabled ? "Clean Energy Charging is off until 6:00 AM. " : "")[Learn more...](https://support.apple.com/en-us/108068)")
+                Text("In your region, \(Device().model) will try to reduce your carbon footprint by selectively charging when lower carbon emission electricity is available. \(Device().model) learns from your daily charging routine so it can reach full charge before you need to use it. \(temporaryCleanPauseEnabled ? "Clean Energy Charging is off until 6:00 AM. " : "")[Learn more...](https://support.apple.com/en-us/108068)")
             }
             .alert("Clean Energy Charging helps reduce carbon footprint.", isPresented: $showingCleanEnergyWarning, actions: {
                 Button("**Turn Off Until Tomorrow**", role: .none) {

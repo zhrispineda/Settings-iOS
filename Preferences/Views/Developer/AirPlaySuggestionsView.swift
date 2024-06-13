@@ -32,7 +32,7 @@ struct AirPlaySuggestionsView: View {
             }, header: {
                 Text("\n\nSuggestion Test Mode")
             }, footer: {
-                Text("When using a mode other than “Default“, select an AirPlay-capable TV as the suggested TV to use for testing. This TV must be connected to the same Wi-Fi network as this \(DeviceInfo().model).")
+                Text("When using a mode other than “Default“, select an AirPlay-capable TV as the suggested TV to use for testing. This TV must be connected to the same Wi-Fi network as this \(Device().model).")
             })
             
             if selected != "Default" {

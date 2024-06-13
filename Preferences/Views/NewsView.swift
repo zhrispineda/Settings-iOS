@@ -47,7 +47,7 @@ struct NewsView: View {
                     }
                     .onChange(of: restrictStoriesTodayEnabled, {
                         if restrictStoriesTodayEnabled {
-                            DeviceInfo().isPhone ? showingRestrictDialog.toggle() : showingRestrictAlert.toggle()
+                            Device().isPhone ? showingRestrictDialog.toggle() : showingRestrictAlert.toggle()
                         }
                     })
             }, header: {

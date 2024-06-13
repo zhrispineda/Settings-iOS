@@ -41,7 +41,7 @@ struct SettingsLabel: View {
                             .stroke(Color.gray.opacity(0.5), lineWidth: 0.5))
                 if UIImage(systemName: icon) != nil {
                     Image(systemName: icon)
-                        .imageScale(smallerIcons.contains(icon) ? .medium : .large)
+                        .imageScale(largerIcons.contains(icon) && !smallerIcons.contains(icon) ? .large : (smallerIcons.contains(icon) ? .small : .medium))
                         .foregroundStyle(.white)
                 } else {
                     Image(icon)
@@ -63,10 +63,8 @@ struct SettingsLabel: View {
 }
 
 #Preview {
-    NavigationStack {
-        List {
-            SettingsLabel(color: Color.gray, icon: "applesafari", id: "Safari")
-            SettingsLabel(color: Color.gray, icon: "bluetooth", id: "Safari")
-        }
+    List {
+        SettingsLabel(color: Color.gray, icon: "applesafari", id: "Safari")
+        SettingsLabel(color: Color.gray, icon: "battery.100percent", id: "Battery")
     }
 }

@@ -41,7 +41,7 @@ struct KeyboardView: View {
             
             Section {
                 NavigationLink("Text Replacement", destination: TextReplacementView())
-                if DeviceInfo().isPhone {
+                if Device().isPhone {
                     CustomNavigationLink(title: "One-Handed Keyboard", status: "Off", destination: OneHandedKeyboardView())
                 }
             }
@@ -55,18 +55,18 @@ struct KeyboardView: View {
                 }
                 Toggle("Check Spelling", isOn: $checkSpellingEnabled)
                 Toggle("Enable Caps Lock", isOn: $capsLockEnabled)
-                if DeviceInfo().isTablet {
+                if Device().isTablet {
                     Toggle("Shortcuts", isOn: $shortcutsEnabled)
                 }
                 Toggle("Smart Punctuation", isOn: $smartPunctuationEnabled)
-                if DeviceInfo().isTablet {
+                if Device().isTablet {
                     Toggle("Enable Key Flicks", isOn: $keyFlicksEnabled)
                 }
-                Toggle("Slide \(DeviceInfo().isPhone ? "" : "on Floating Keyboard ")to Type", isOn: $slideTypeEnabled.animation())
+                Toggle("Slide \(Device().isPhone ? "" : "on Floating Keyboard ")to Type", isOn: $slideTypeEnabled.animation())
                 if slideTypeEnabled {
                     Toggle("Delete Slide-to-Type by Word", isOn: $deleteSlideTypeWordEnabled)
                 }
-                if DeviceInfo().isPhone {
+                if Device().isPhone {
                     Toggle("Character Preview", isOn: $characterPreviewEnabled)
                 }
                 Toggle("\u{201C}.\u{201D} Shortcut", isOn: $periodShortcutEnabled)
@@ -119,7 +119,7 @@ struct KeyboardView: View {
                 }
             })
             .onChange(of: dictationEnabled, {
-                dictationEnabled ? (DeviceInfo().isPhone ? showingDictationEnablePopup.toggle() : showingDictationEnableAlert.toggle()) : (DeviceInfo().isPhone ? showingDictationDisablePopup.toggle() : showingDictationDisableAlert.toggle())
+                dictationEnabled ? (Device().isPhone ? showingDictationEnablePopup.toggle() : showingDictationEnableAlert.toggle()) : (Device().isPhone ? showingDictationDisablePopup.toggle() : showingDictationDisableAlert.toggle())
             })
             
             Section(content: {

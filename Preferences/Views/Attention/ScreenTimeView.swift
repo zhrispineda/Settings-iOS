@@ -21,7 +21,7 @@ struct ScreenTimeView: View {
             if appWebsiteActivityEnabled {
                 Section {
                     VStack {
-                        Text("As you use your \(DeviceInfo().model), screen time will be reported here.")
+                        Text("As you use your \(Device().model), screen time will be reported here.")
                             .font(.subheadline)
                             .foregroundStyle(.secondary)
                             .multilineTextAlignment(.center)

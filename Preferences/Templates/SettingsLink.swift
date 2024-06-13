@@ -35,7 +35,6 @@ struct SettingsLink<Content: View>: View {
     
     let noBorders = ["moon.fill"]
     let hierarchyIcons = ["questionmark.app.dashed", "questionmark.square.dashed"]
-    let largerIcons = ["gear"]
     
     var body: some View {
         NavigationLink(destination: content) {
@@ -117,7 +116,7 @@ struct SettingsLink<Content: View>: View {
     NavigationStack {
         List {
             SettingsLink(color: .gray, icon: "gear", id: "Settings") {}
-            SettingsLink(color: .red, icon: "sos", id: "Emergency SOS") {}
+            SettingsLink(color: .green, icon: "faceid", id: "Emergency SOS") {}
         }
     }
 }

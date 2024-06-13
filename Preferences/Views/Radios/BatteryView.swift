@@ -18,18 +18,18 @@ struct BatteryView: View {
                 Toggle("Battery Percentage", isOn: $batteryPercentageEnabled)
                 Toggle("Low Power Mode", isOn: $lowPowerModeEnabled)
             } footer: {
-                Text("Low Power Mode temporarily reduces background activity like downloads and mail fetch until you can fully charge your \(DeviceInfo().model).")
+                Text("Low Power Mode temporarily reduces background activity like downloads and mail fetch until you can fully charge your \(Device().model).")
             }
             
             Section {
-                if DeviceInfo().hasExtraBatteryFeatures {
+                if Device().hasExtraBatteryFeatures {
                     CustomNavigationLink(title: "Battery Health", status: "Normal", destination: BatteryHealthView())
-                    if DeviceInfo().isPhone {
+                    if Device().isPhone {
                         //CustomNavigationLink(title: "Charging Optimization", status: "Optimized", destination: ChargingOptimizationView())
                         NavigationLink("Charging", destination: ChargingOptimizationView())
                     }
                 } else {
-                    if DeviceInfo().isPhone {
+                    if Device().isPhone {
                         NavigationLink("Battery Health & Charging", destination: BatteryHealthChargingView())
                     }
                 }

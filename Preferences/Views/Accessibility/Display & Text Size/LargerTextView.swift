@@ -17,7 +17,7 @@ struct LargerTextView: View {
                 Section {
                     Toggle("Larger Accessibility Sizes", isOn: $largerAccessibilitySizes)
                 }
-                if DeviceInfo().isPhone {
+                if Device().isPhone {
                     Text("Apps that support Dynamic Type will adjust to your preferred reading size below.")
                         .multilineTextAlignment(.center)
                         .offset(y: -10)
@@ -39,7 +39,7 @@ struct TextSizeView: View {
         VStack {
             Spacer()
             ZStack {
-                if DeviceInfo().isPhone {
+                if Device().isPhone {
                     Rectangle()
                         .frame(height: 90)
                         .foregroundStyle(Color(UIColor.systemFill))
@@ -59,8 +59,8 @@ struct TextSizeView: View {
                 .imageScale(.large)
                 .padding()
             }
-            .padding(DeviceInfo().isPhone ? .bottom : .all)
-            if DeviceInfo().isTablet {
+            .padding(Device().isPhone ? .bottom : .all)
+            if Device().isTablet {
                 Text("Apps that support Dynamic Type will adjust to your preferred reading size above.")
                     .multilineTextAlignment(.center)
                     .offset(y: -10)

@@ -16,13 +16,13 @@ struct TouchView: View {
             Section(content: {
                 CustomNavigationLink(title: "AssistiveTouch", status: "Off", destination: AssistiveTouchView())
             }, footer: {
-                Text(DeviceInfo().isPhone ? "AssistiveTouchInstructionalTextFormat_IPHONE" : "AssistiveTouchInstructionalTextFormat_IPAD")
+                Text(Device().isPhone ? "AssistiveTouchInstructionalTextFormat_IPHONE" : "AssistiveTouchInstructionalTextFormat_IPAD")
             })
             
             Section(content: {
                 Toggle("Shake to Undo", isOn: $shakeUndoEnabled)
             }, footer: {
-                Text("If you tend to shake your \(DeviceInfo().model) by accident, you can disable Shake to Undo to prevent the Undo alert from appearing.")
+                Text("If you tend to shake your \(Device().model) by accident, you can disable Shake to Undo to prevent the Undo alert from appearing.")
             })
         }
     }

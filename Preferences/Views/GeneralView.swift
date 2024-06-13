@@ -12,28 +12,24 @@ struct GeneralView: View {
         CustomList(title: "General") {
             // General Tooltip Header
             Section {
-                SectionHelp(title: "General", color: Color.gray, icon: "gear", description: "Manage your overall setup and preferences for \(DeviceInfo().model), such as software updates, device language\(DeviceInfo().isPhone ? ", CarPlay" : ""), AirDrop, and more.")
+                SectionHelp(title: "General", color: Color.gray, icon: "gear", description: "Manage your overall setup and preferences for \(Device().model), such as software updates, device language\(Device().isPhone ? ", CarPlay" : ""), AirDrop, and more.")
             }
         
             Section {
-                SettingsLink(color: .gray, icon: Configuration().isSimulator ? "questionmark.app.dashed" : DeviceInfo().isPhone ? "iphone.gen3" : "ipad.gen2", id: "About") {
+                SettingsLink(color: .gray, icon: Configuration().isSimulator ? "questionmark.app.dashed" : Device().isPhone ? "iphone.gen3" : "ipad.gen2", id: "About") {
                     AboutView()
                 }
                 if !Configuration().isSimulator {
                     SettingsLink(color: .gray, icon: "gear.badge", id: "Software Update") {
                         SoftwareUpdateView()
                     }
-                    SettingsLink(color: .gray, icon: "externaldrive.fill", id: "\(DeviceInfo().model) Storage") {
-                        EmptyView()
-                    }
+                    SettingsLink(color: .gray, icon: "externaldrive.fill", id: "\(Device().model) Storage") {}
                 }
             }
             
             if !Configuration().isSimulator {
                 Section {
-                    SettingsLink(icon: "applecare", id: "AppleCare & Warranty") {
-                        EmptyView()
-                    }
+                    SettingsLink(icon: "applecare", id: "AppleCare & Warranty") {}
                 }
             }
             
@@ -45,7 +41,7 @@ struct GeneralView: View {
                     SettingsLink(color: .blue, icon: "airplay.video", id: "AirPlay & Continuity") {
                         EmptyView()
                     }
-                    if DeviceInfo().isPhone {
+                    if Device().isPhone {
                         SettingsLink(icon: "pip", id: "Picture in Picture") {
                             EmptyView()
                         }
@@ -56,21 +52,15 @@ struct GeneralView: View {
                 }
             }
             
-            if !Configuration().isSimulator && DeviceInfo().hasHomeButton {
+            if !Configuration().isSimulator && Device().hasHomeButton {
                 NavigationLink("Home Button", destination: EmptyView())
-                SettingsLink(color: .gray, icon: "iphone.gen1", id: "Home Button") {
-                    EmptyView()
-                }
+                SettingsLink(color: .gray, icon: "iphone.gen1", id: "Home Button") {}
             }
             
             Section {
-                SettingsLink(color: .gray, icon: "ellipsis.rectangle", id: "AutoFill & Passwords") {
-                    EmptyView()
-                }
+                SettingsLink(color: .gray, icon: "ellipsis.rectangle", id: "AutoFill & Passwords") {}
                 if !Configuration().isSimulator {
-                    SettingsLink(color: .gray, icon: "arrow.circlepath", id: "Background App Refresh") {
-                        EmptyView()
-                    }
+                    SettingsLink(color: .gray, icon: "arrow.circlepath", id: "Background App Refresh") {}
                     SettingsLink(color: .blue, icon: "calendar.badge.clock", id: "Date & Time") {
                         DictionaryView()
                     }
@@ -85,9 +75,7 @@ struct GeneralView: View {
                     SettingsLink(color: .gray, icon: "gamecontroller.fill", id: "Game Controller") {
                         GameControllerView()
                     }
-                    SettingsLink(color: .gray, icon: "keyboard.fill", id: "Keyboard") {
-                        EmptyView()
-                    }
+                    SettingsLink(color: .gray, icon: "keyboard.fill", id: "Keyboard") {}
                 }
                 SettingsLink(color: .blue, icon: "globe", id: "Language & Region") {
                     LanguageRegionView()
@@ -96,9 +84,7 @@ struct GeneralView: View {
             
             if !Configuration().isSimulator {
                 Section {
-                    SettingsLink(icon: "cable.coaxial", id: "TV Provider") {
-                        EmptyView()
-                    }
+                    SettingsLink(icon: "cable.coaxial", id: "TV Provider") {}
                 }
             }
             
@@ -110,16 +96,12 @@ struct GeneralView: View {
             
             if !Configuration().isSimulator {
                 Section {
-                    SettingsLink(color: .gray, icon: "text.justify.left", id: "Legal & Regulatory") {
-                        EmptyView()
-                    }
+                    SettingsLink(color: .gray, icon: "text.justify.left", id: "Legal & Regulatory") {}
                 }
             }
             
             Section {
-                SettingsLink(color: .gray, icon: "arrow.counterclockwise", id: "Transfer or Reset \(UIDevice().localizedModel)") {
-                    EmptyView()
-                }
+                SettingsLink(color: .gray, icon: "arrow.counterclockwise", id: "Transfer or Reset \(UIDevice().localizedModel)") {}
                 if !Configuration().isSimulator {
                     Button("Shut Down") {}
                 }

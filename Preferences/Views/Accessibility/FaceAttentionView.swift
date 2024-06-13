@@ -16,9 +16,9 @@ struct FaceAttentionView: View {
             Section(content: {
                 Toggle("Attention Aware Features", isOn: $attentionAwareFeatures)
             }, footer: {
-                if DeviceInfo().isPhone {
+                if Device().isPhone {
                     Text("iPhone will check for attention before dimming the display, expanding a notification when locked, or lowering the volume of some alerts.")
-                } else if DeviceInfo().isTablet {
+                } else if Device().isTablet {
                     Text("iPad will check for attention before dimming the display or lowering the volume of some alerts.")
                 }
             })

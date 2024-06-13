@@ -70,7 +70,7 @@ struct MultitaskingGesturesView: View {
                         .buttonStyle(.plain)
                     }
                     Spacer()
-                    if DeviceInfo().isStageManagerCapable {
+                    if Device().isStageManagerCapable {
                         VStack(spacing: 15) {
                             Button(action: {
                                 multitaskingMode = 2
@@ -109,7 +109,7 @@ struct MultitaskingGesturesView: View {
                 case 2:
                     Text("Use Stage Manager to multitask with ease. You can group, resize, and arrange windows in your ideal layout and tap to switch between apps. If your iPad is connected to an external display, you can use Stage Manager to move windows between iPad and your external display. [Learn more...](https://support.apple.com/guide/ipad/move-resize-and-organize-windows-ipad1240f36f/ipados)")
                 default:
-                    Text("You can use multitasking to work with more than one app at the same time. Turn on multitasking by choosing Split View & Slide Over\(DeviceInfo().isStageManagerCapable ? "or Stage Manager" : "").")
+                    Text("You can use multitasking to work with more than one app at the same time. Turn on multitasking by choosing Split View & Slide Over\(Device().isStageManagerCapable ? "or Stage Manager" : "").")
                 }
             })
             

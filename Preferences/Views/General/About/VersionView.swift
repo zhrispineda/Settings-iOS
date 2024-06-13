@@ -42,7 +42,7 @@ struct VersionView: View {
             }
             .navigationTitle("\(UIDevice().systemName) Version")
             .navigationBarTitleDisplayMode(.inline)
-            .padding(.horizontal, DeviceInfo().isPhone ? 0 : (UIDevice.current.orientation.isLandscape ? 35 : 0))
+            .padding(.horizontal, Device().isPhone ? 0 : (UIDevice.current.orientation.isLandscape ? 35 : 0))
         }
     }
 }

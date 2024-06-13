@@ -11,7 +11,7 @@ struct AccessibilityView: View {
     var body: some View {
         CustomList(title: "Accessibility") {
             Section(content: {
-                if DeviceInfo().isTablet {
+                if Device().isTablet {
                     SettingsLink(color: .blue, icon: "character.magnify", larger: false, id: "Hover Text", status: "Off", content: {
                         HoverTextView()
                     })
@@ -33,12 +33,12 @@ struct AccessibilityView: View {
                 SettingsLink(color: .blue, icon: "hand.point.up.left.fill", id: "Touch", content: {
                     TouchView()
                 })
-                if DeviceInfo().hasFaceAuth {
-                    SettingsLink(icon: "FaceID29x29", id: "Face ID & Attention", content: {
+                if Device().hasFaceAuth {
+                    SettingsLink(color: .green, icon: "faceid", id: "Face ID & Attention", content: {
                         FaceAttentionView()
                     })
                 }
-                if DeviceInfo().isPhone {
+                if Device().isPhone {
                     SettingsLink(icon: "ControlNearby29x29", id: "Control Nearby Devices", content: {
                         ControlNearbyDevicesView()
                     })
