@@ -24,43 +24,43 @@ struct PhotosView: View {
     
     var body: some View {
         CustomList(title: "Photos") {
-            Section(content: {
+            Section {
                 SettingsLink(icon: "applesiri", id: "Siri & Search", content: {
                     SiriSearchDetailView(appName: "Photos")
                 })
-            }, header: {
+            } header: {
                 Text("Allow Photos to Access")
-            })
+            }
             
-            Section(content: {
+            Section {
                 Toggle("Shared Albums", isOn: $sharedAlbumsEnabled)
                     .disabled(true)
-            }, header: {
+            } header: {
                 Text("Albums")
-            }, footer: {
+            } footer: {
                 Text("Create albums to share with other people, and subscribe to other people‘s shared albums.")
-            })
+            }
             
-            Section(content: {
+            Section {
                 Toggle("Use Passcode", isOn: $usePasscodeEnabled)
-            }, footer: {
+            } footer: {
                 Text("Your password is required to view the Hidden and Recently Deleted albums.")
-            })
+            }
             
-            Section(content: {
+            Section {
                 Toggle("Show Hidden Album", isOn: $showHiddenAlbumEnabled)
-            }, footer: {
+            } footer: {
                 Text("The Hidden album will appear in the Albums tab, under Utilities.")
-            })
+            }
             
             Section {
                 Toggle("Auto-Play Videos and Live Photos", isOn: $autoPlayVideosLivePhotosEnabled)
             }
             
-            Section(content: {
-                Button("Reset Suggested Memories", action: {
+            Section {
+                Button("Reset Suggested Memories") {
                     DeviceInfo().isPhone ? showingResetMemoriesAlert.toggle() : showingResetMemoriesPopup.toggle()
-                })
+                }
                 .confirmationDialog("Resetting will allow previously blocked places, dates, or holidays to once again be included in new Memories.", isPresented: $showingResetMemoriesAlert, titleVisibility: .visible) {
                     Button("Reset", role: .destructive) {}
                     Button("Cancel", role: .cancel) {}
@@ -85,42 +85,42 @@ struct PhotosView: View {
                     Text("Resetting will allow people and pets suggested less to once again be fully included in new Memories and Featured Photos.")
                 }
                 Toggle("Show Holiday Events", isOn: $showHolidayEventsEnabled)
-            }, header: {
+            } header: {
                 Text("Memories")
-            }, footer: {
+            } footer: {
                 Text("You can choose to see timely holiday events and those for your home country or region.")
-            })
+            }
             
-            Section(content: {
+            Section {
                 Toggle("Show Featured Content", isOn: $showFeaturedContentEnabled)
-            }, header: {
+            } header: {
                 Text("Memories & Featured Photos")
-            }, footer: {
+            } footer: {
                 Text("Allow Featured Photos and Memories to automatically appear on this device in places such as For You and Search in Photos, and in Widgets.")
-            })
+            }
             
-            Section(content: {
+            Section {
                 ForEach(options, id: \.self) { option in
-                    Button(action: {
+                    Button {
                         selected = option
-                    }, label: {
+                    } label: {
                         HStack {
                             Text(option)
                                 .foregroundStyle(Color["Label"])
                             Spacer()
                             Image(systemName: "\(selected == option ? "checkmark" : "")")
                         }
-                    })
+                    }
                 }
-            }, header: {
+            } header: {
                 Text("Transfer to Mac or PC")
-            }, footer: {
+            } footer: {
                 Text("Automatically transfer photos and videos in a compatible format, or always transfer the original file without checking for compatability.")
-            })
+            }
             
-            Section(content: {}, footer: {
+            Section {} footer: {
                 Text("[About Photos & Privacy...](#)")
-            })
+            }
         }
     }
 }

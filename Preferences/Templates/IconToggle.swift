@@ -24,7 +24,7 @@ struct IconToggle: View {
     var title = String()
     
     var body: some View {
-        Toggle(isOn: $enabled, label: {
+        Toggle(isOn: $enabled) {
             HStack(spacing: 15) {
                 ZStack {
                     color
@@ -46,7 +46,7 @@ struct IconToggle: View {
                 }
                 Text(title)
             }
-        })
+        }
     }
 }
 

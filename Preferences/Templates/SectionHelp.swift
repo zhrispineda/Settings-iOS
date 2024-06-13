@@ -47,5 +47,5 @@ struct SectionHelp: View {
 }
 
 #Preview {
-    SectionHelp(title: "General", color: Color.blue, icon: "bluetooth", description: "Manage your overall setup and preferences for \(DeviceInfo().model), such as software updates, device language\(DeviceInfo().isPhone ? ", CarPlay" : ""), AirDrop, and more.")
+    SectionHelp(title: "Title", color: Color.blue, icon: "bluetooth", description: "Your description here.")
 }

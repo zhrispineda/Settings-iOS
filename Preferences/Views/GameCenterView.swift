@@ -13,14 +13,14 @@ struct GameCenterView: View {
     
     var body: some View {
         CustomList(title: "Game Center") {
-            Section(content: {
+            Section {
                 Toggle("Game Center", isOn: $gameCenterEnabled)
                     .sheet(isPresented: $gameCenterEnabled, content: {
                         AppleAccountSignInView()
                     })
-            }, footer: {
+            } footer: {
                 Text("A social gaming service that lets you interact with friends, track, and compare scores and achievements, challenge other players, and compete in multiplayer games.\n\n[See how your data is managed...](#)")
-            })
+            }
         }
     }
 }
