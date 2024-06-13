@@ -22,7 +22,7 @@ struct SectionHelp: View {
                     .clipShape(RoundedRectangle(cornerRadius: 13.0))
                 if UIImage(systemName: icon) != nil {
                     Image(systemName: icon)
-                        .font(.system(size: 36))
+                        .font(.system(size: icon == "personalhotspot" ? 30 : 36))
                         .foregroundStyle(.white)
                 } else {
                     Image(icon)
@@ -47,5 +47,5 @@ struct SectionHelp: View {
 }
 
 #Preview {
-    SectionHelp(title: "Title", color: Color.blue, icon: "applesiri", description: "Your description here.")
+    SectionHelp(title: "Title", color: Color.blue, icon: "gear", description: "Your description here.")
 }

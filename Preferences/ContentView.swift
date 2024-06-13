@@ -146,7 +146,7 @@ struct ContentView: View {
                                                 setting.destination
                                             }
                                         } else if setting.id != "Action Button" {
-                                            SettingsLink(color: setting.color, icon: setting.icon, id: setting.id) {
+                                            SettingsLink(color: setting.color, icon: setting.icon, larger: true, id: setting.id) {
                                                 setting.destination
                                             }
                                         }

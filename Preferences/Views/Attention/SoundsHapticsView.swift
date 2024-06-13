@@ -20,7 +20,7 @@ struct SoundsHapticsView: View {
     
     var body: some View {
         CustomList(title: DeviceInfo().isPhone ? "Sounds & Haptics" : "Sounds") {
-            Section(content: {
+            Section {
                 Toggle(isOn: $silentModeEnabled.animation(), label: {
                     Label(
                         title: {
@@ -32,24 +32,25 @@ struct SoundsHapticsView: View {
                     )
                 })
                 .toggleStyle(SwitchToggleStyle(tint: silentModeEnabled ? .red : .accentColor))
-            }, header: {
+            } header: {
                 Text("\nSilent Mode")
-            }, footer: {
+            } footer: {
                 Text(silentModeEnabled ? "\(UIDevice().localizedModel) will not play ringtones, alerts, and system sounds. \(UIDevice().localizedModel) will still play alarms, timers, music, and audio from videos." : "\(UIDevice().localizedModel) will play ringtones, alerts, and system sounds.")
-            })
+                    .transition(.slide)
+            }
             
             Section {
                 Toggle("Show in Status Bar", isOn: $showInStatusBarEnabled)
             }
             
-            Section(content: {
+            Section {
                 Group {
                     Slider(value: $volume,
                            in: 0...1,
                            minimumValueLabel: Image(systemName: "speaker.fill"),
                            maximumValueLabel: Image(systemName: "speaker.wave.3.fill"),
                            label: {
-                               Text("Volume")
+                                Text("Volume")
                            }
                     )
                 }
@@ -59,11 +60,11 @@ struct SoundsHapticsView: View {
                 if DeviceInfo().isPhone {
                     CustomNavigationLink(title: "Haptics", status: "Always Play", destination: EmptyView())
                 }
-            }, header: {
+            } header: {
                 Text("Ringtone and Alerts")
-            }, footer: {
+            } footer: {
                 Text("The volume buttons \(changeWithButtonsEnabled ? "can be used to adjust" : "will not affect") the volume of the ringtone and alerts.")
-            })
+            }
             
             Section {
                 CustomNavigationLink(title: "Ringtone", status: "Reflection", destination: EmptyView())
@@ -78,7 +79,7 @@ struct SoundsHapticsView: View {
                 CustomNavigationLink(title: "Default Alerts", status: "Rebound", destination: EmptyView())
             }
             
-            Section(content: {
+            Section {
                 if DeviceInfo().isPhone {
                     CustomNavigationLink(title: "Keyboard Feedback", status: "Sound", destination: EmptyView())
                 } else {
@@ -88,25 +89,25 @@ struct SoundsHapticsView: View {
                 if DeviceInfo().isPhone {
                     Toggle("System Haptics", isOn: $systemHapticsEnabled)
                 }
-            }, header: {
+            } header: {
                 Text("System Sounds\(DeviceInfo().isPhone ? " & Haptics" : "")")
-            }, footer: {
+            } footer: {
                 Text("Play \(DeviceInfo().isPhone ? "haptics" : "sounds") for system controls and interactions.")
-            })
-            
-            if !DeviceInfo().isPhone {
-                Section(content: {
-                    Toggle("Fixed Position Volume Controls", isOn: $fixedPositionVolumeControlsEnabled.animation())
-                }, footer: {
-                    Text(fixedPositionVolumeControlsEnabled ? "The volume up and down buttons will remain in a fixed position." : "The buttons will dynamically change depending on the orientation of your iPad.")
-                })
             }
             
-            Section(content: {
+            if !DeviceInfo().isPhone {
+                Section {
+                    Toggle("Fixed Position Volume Controls", isOn: $fixedPositionVolumeControlsEnabled.animation())
+                } footer: {
+                    Text(fixedPositionVolumeControlsEnabled ? "The volume up and down buttons will remain in a fixed position." : "The buttons will dynamically change depending on the orientation of your iPad.")
+                }
+            }
+            
+            Section {
                 NavigationLink("Headphone Safety", destination: {})
-            }, header: {
+            } header: {
                 Text("Headphone Audio")
-            })
+            }
         }
     }
 }

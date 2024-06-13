@@ -16,6 +16,8 @@ struct CellularView: View {
     
     var body: some View {
         CustomList(title: "Cellular") {
+            SectionHelp(title: "Cellular", color: .green, icon: "antenna.radiowaves.left.and.right", description: "Find out how much data you're using, set data restrictions, and manage carrier settings such as eSIM and Wi-Fi calling. [Learn more...](https://support.apple.com/guide/iphone/view-or-change-cellular-data-settings-iph3dd5f213/ios)")
+            
             Section {
                 Toggle("Cellular Data", isOn: $cellularDataEnabled)
                 CustomNavigationLink(title: "Cellular Data Options", status: "Roaming Off", destination: EmptyView())
@@ -45,21 +47,26 @@ struct CellularView: View {
             }
             
             Section {
-                Picker("Billing Period", selection: $mode) {
-                    Text("This Billing Period").tag(0)
-                    Text("Last Billing Period").tag(1)
-                }
-                .pickerStyle(SegmentedPickerStyle())
-                .padding(.horizontal, -10)
-                HStack {
-                    Text("APPS BY USAGE")
-                        .font(.system(size: 12))
-                    Spacer()
-                    Text("SORT BY NAME")
-                        .font(.system(size: 12))
-                        .foregroundStyle(.blue)
-                }
                 SettingsLink(color: .gray, icon: "gear", id: "System Services", status: "0 KB", content: {})
+                NavigationLink("Show All") {
+                    CustomList(title: "Cellular Data Usage") {
+                        Picker("Billing Period", selection: $mode) {
+                            Text("This Billing Period").tag(0)
+                            Text("Last Billing Period").tag(1)
+                        }
+                        .pickerStyle(SegmentedPickerStyle())
+                        .padding(.horizontal, -10)
+                        HStack {
+                            Text("APPS BY USAGE")
+                                .font(.system(size: 12))
+                            Spacer()
+                            Text("SORT BY NAME")
+                                .font(.system(size: 12))
+                                .foregroundStyle(.blue)
+                        }
+                        SettingsLink(color: .gray, icon: "gear", id: "System Services", status: "0 KB", content: {})
+                    }
+                }
             } header: {
                 Text("Cellular Data")
             }

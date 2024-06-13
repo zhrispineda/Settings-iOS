@@ -9,9 +9,9 @@ import SwiftUI
 /// ```swift
 /// var body: some View {
 ///     List {
-///         SettingsLink(color: .gray, icon: "gear", id: "Settings", content: {
-///             EmptyView()
-///         })
+///         SettingsLink(color: .gray, icon: "gear", id: "Settings") {
+///             Text("My Settings")
+///         }
 ///     }
 /// }
 /// ```
@@ -33,19 +33,9 @@ struct SettingsLink<Content: View>: View {
     var status: String = String()
     @ViewBuilder var content: Content
     
-//    init(color: Color = Color.clear, iconColor: Color = Color.white, icon: String, larger: Bool = true, id: String, subtitle: String = String(), status: String = String(), @ViewBuilder content: () -> Content) {
-//        self.color = color
-//        self.iconColor = iconColor
-//        self.icon = icon
-//        self.larger = larger
-//        self.id = id
-//        self.subtitle = subtitle
-//        self.status = status
-//        self.content = content()
-//    }
-    
     let noBorders = ["moon.fill"]
     let hierarchyIcons = ["questionmark.app.dashed", "questionmark.square.dashed"]
+    let largerIcons = ["gear"]
     
     var body: some View {
         NavigationLink(destination: content) {
@@ -63,18 +53,10 @@ struct SettingsLink<Content: View>: View {
                             Image(systemName: icon)
                                 .foregroundStyle(.blue)
                                 .imageScale(.large)
-                        case "eye.trianglebadge.exclamationmark.fill":
-                            Image(systemName: icon)
-                                .imageScale(.small)
-                                .foregroundStyle(iconColor)
-                        case "sos":
-                            Image(systemName: icon)
-                                .imageScale(.small)
-                                .foregroundStyle(iconColor)
                         default:
                             Image(systemName: icon)
                                 .symbolRenderingMode(hierarchyIcons.contains(icon) ? .hierarchical : .none)
-                                .imageScale(larger && !smallerIcons.contains(icon) ? .large : .medium)
+                                .imageScale((larger || largerIcons.contains(icon)) && !smallerIcons.contains(icon) ? .large : (smallerIcons.contains(icon) ? .small : .medium))
                                 .fontWeight(icon == "nosign" ? .bold : .regular)
                                 .foregroundStyle(iconColor)
                         }
@@ -84,7 +66,7 @@ struct SettingsLink<Content: View>: View {
                             Image(icon)
                                 .resizable()
                                 .scaledToFit()
-                                .frame(height: 20)
+                                .frame(height: 21)
                         case "carplay":
                             Image(icon)
                                 .resizable()
@@ -134,10 +116,8 @@ struct SettingsLink<Content: View>: View {
 #Preview {
     NavigationStack {
         List {
-            SettingsLink(icon: "applesafari", id: "Safari") { EmptyView() }
-            SettingsLink(color: .red, icon: "carplay", id: "Emergency SOS") {
-                EmptyView()
-            }
+            SettingsLink(color: .gray, icon: "gear", id: "Settings") {}
+            SettingsLink(color: .red, icon: "sos", id: "Emergency SOS") {}
         }
     }
 }

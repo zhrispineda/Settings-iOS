@@ -120,7 +120,7 @@ struct SettingsItem<Content: View>: Identifiable {
 }
 
 // Smaller icons scaling
-let smallerIcons = ["airplane", "airplay.video", "arrow.counterclockwise", "arrow.turn.up.forward.iphone", "battery.100percent", "calendar.badge.clock", "camera.fill", "character.book.closed.fill", "externaldrive.fill", "gamecontroller.fill", "keyboard.fill", "personalhotspot", "speaker.3.fill", "magnifyingglass", "moon.fill", "pip", "squares.leading.rectangle", "text.justify.left", "key.fill", "hammer.fill", "shareplay", "textformat", "wifi"]
+let smallerIcons = ["airplane", "airplay.video", "arrow.counterclockwise", "arrow.turn.up.forward.iphone", "battery.100percent", "calendar.badge.clock", "camera.fill", "character.book.closed.fill", "externaldrive.fill", "eye.trianglebadge.exclamationmark.fill", "gamecontroller.fill", "keyboard.fill", "personalhotspot", "sos", "speaker.3.fill", "moon.fill", "pip", "squares.leading.rectangle", "text.justify.left", "key.fill", "hammer.fill", "shareplay", "textformat", "wifi"]
 
 // MARK: Radio Settings
 @MainActor let radioSettings: [SettingsItem] = [
@@ -148,7 +148,7 @@ let smallerIcons = ["airplane", "airplay.video", "arrow.counterclockwise", "arro
 @MainActor let mainSettings: [SettingsItem] = [
     SettingsItem(type: .general, title: "General", icon: "gear", color: .gray, destination: AnyView(GeneralView())),
     SettingsItem(type: .accessibility, title: "Accessibility", icon: "accessibility", color: .blue, destination: AnyView(AccessibilityView())),
-    SettingsItem(type: .actionButton, title: "Action Button", icon: "actionbutton_Normal", color: .blue, destination: AnyView(ActionButtonView())),
+    SettingsItem(type: .actionButton, title: "Action Button", icon: "actionbutton", color: .blue, destination: AnyView(ActionButtonView())),
     SettingsItem(type: .camera, title: "Camera", icon: "camera.fill", color: .gray, destination: AnyView(EmptyView())),
     SettingsItem(type: .controlCenter, title: "Control Center", icon: "switch.2", destination: AnyView(ControlCenterView())),
     SettingsItem(type: .displayBrightness, title: "Display & Brightness", icon: "sun.max.fill", color: .blue, destination: AnyView(DisplayBrightnessView())),
@@ -164,7 +164,7 @@ let smallerIcons = ["airplane", "airplay.video", "arrow.counterclockwise", "arro
 @MainActor let simulatorMainSettings: [SettingsItem] = [
     SettingsItem(type: .general, title: "General", icon: "gear", color: .gray, destination: AnyView(GeneralView())),
     SettingsItem(type: .accessibility, title: "Accessibility", icon: "accessibility", color: .blue, destination: AnyView(AccessibilityView())),
-    SettingsItem(type: .actionButton, title: "Action Button", icon: "actionbutton_Normal", color: .blue, destination: AnyView(ActionButtonView())),
+    SettingsItem(type: .actionButton, title: "Action Button", icon: "actionbutton", color: .blue, destination: AnyView(ActionButtonView())),
     SettingsItem(type: .camera, title: "Camera", icon: "camera.fill", color: .gray, destination: AnyView(EmptyView())),
     SettingsItem(type: .homeScreenAppLibrary, title: "Home Screen & App Library", icon: "apps.iphone", color: .blue, destination: AnyView(EmptyView())),
     SettingsItem(type: .multitaskGestures, title: "Multitasking & Gestures", icon: "squares.leading.rectangle", color: .blue, destination: AnyView(MultitaskingGesturesView())),

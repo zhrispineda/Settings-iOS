@@ -15,24 +15,18 @@ struct HotspotView: View {
     
     var body: some View {
         CustomList(title: "Personal Hotspot") {
-            Section {
-                EmptyView()
-            } footer: {
-                Text("Personal Hotspot on your iPhone can provide Internet access to other devices signed into your iCloud account without requiring you to enter the password.")
-            }
+            SectionHelp(title: "Personal Hotspot", color: .green, icon: "personalhotspot", description: "Share your \(DeviceInfo().model)'s internet connection with other devices. Personal Hotspot is useful when Wi-Fi isn't available. [Learn more...](https://support.apple.com/guide/iphone/share-your-internet-connection-iph45447ca6/ios)")
             
             Section {
                 Toggle("Allow Others to Join", isOn: $allowOthersJoinEnabled)
                 CustomNavigationLink(title: "Wi-Fi Password", status: password, destination: EmptyView())
-                    .onAppear(perform: {
+                    .onAppear {
                         password = randomPassword()
-                    })
+                    }
             }
             
-            Section {
-                EmptyView()
-            } footer: {
-                Text("Allow other users or devices not signed into iCloud to look for your shared network \u{201C}\(UIDevice().localizedModel)\u{201D} when you are in Personal Hotspot settings or when you turn it on in Control Center.")
+            Section {} footer: {
+                Text("Allow other users or devices not signed into iCloud to look for your shared network \u{201C}\(UIDevice().model)\u{201D} when you are in Personal Hotspot settings or when you turn it on in Control Center.")
             }
             
 //            Section {
