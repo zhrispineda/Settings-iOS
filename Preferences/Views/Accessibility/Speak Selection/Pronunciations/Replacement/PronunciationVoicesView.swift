@@ -15,22 +15,23 @@ struct PronunciationVoicesView: View {
     var body: some View {
         CustomList(title: "Voices") {
             Section {
-                Button(action: {
+                Button {
                     selected = ["All"]
-                }, label: {
+                } label: {
                     HStack {
                         Text("All")
                             .foregroundStyle(Color["Label"])
                         Spacer()
-                        Image(systemName: "checkmark")
-                            .opacity(selected.contains("All") ? 1 : 0)
+                        if selected.contains("All") {
+                            Image(systemName: "checkmark")
+                        }
                     }
-                })
+                }
             }
             
             Section {
                 ForEach(languages, id: \.self) { option in
-                    Button(action: {
+                    Button {
                         if selected.contains("All") {
                             selected = []
                         }
@@ -42,15 +43,16 @@ struct PronunciationVoicesView: View {
                         } else {
                             selected.append(option)
                         }
-                    }, label: {
+                    } label: {
                         HStack {
                             Text(option)
                                 .foregroundStyle(Color["Label"])
                             Spacer()
-                            Image(systemName: "checkmark")
-                                .opacity(selected.contains(option) ? 1 : 0)
+                            if selected.contains(option) {
+                                Image(systemName: "checkmark")
+                            }
                         }
-                    })
+                    }
                 }
             }
         }

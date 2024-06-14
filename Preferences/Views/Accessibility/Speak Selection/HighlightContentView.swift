@@ -24,50 +24,52 @@ struct HighlightContentView: View {
             if highlightContentEnabled {
                 Section {
                     ForEach(highlightOptions, id: \.self) { option in
-                        Button(action: {
+                        Button {
                             withAnimation {
                                 selectedHighlightOption = option
                             }
-                        }, label: {
+                        } label: {
                             HStack {
                                 Text(option)
                                     .foregroundStyle(Color["Label"])
                                 Spacer()
-                                Image(systemName: "checkmark")
-                                    .opacity(selectedHighlightOption == option ? 1 : 0)
+                                if selectedHighlightOption == option {
+                                    Image(systemName: "checkmark")
+                                }
                             }
-                        })
+                        }
                     }
                 }
                 
                 if selectedHighlightOption != "Words" {
-                    Section(content: {
+                    Section {
                         ForEach(highlightStyles, id: \.self) { option in
-                            Button(action: {
+                            Button {
                                 selectedHighlightStyle = option
-                            }, label: {
+                            } label: {
                                 HStack {
                                     Text(option)
                                         .foregroundStyle(Color["Label"])
                                     Spacer()
-                                    Image(systemName: "checkmark")
-                                        .opacity(selectedHighlightStyle == option ? 1 : 0)
+                                    if selectedHighlightOption == option {
+                                        Image(systemName: "checkmark")
+                                    }
                                 }
-                            })
+                            }
                         }
-                    }, header: {
+                    } header: {
                         Text("Sentence Highlight Style")
-                    })
+                    }
                 }
                 
-                Section(content: {
+                Section {
                     if selectedHighlightOption == "Words and Sentences" {
                         CustomNavigationLink(title: "Word Color", status: "Default", destination: HighlightColorView(title: "Word Color"))
                     }
                     CustomNavigationLink(title: "Sentence Color", status: "Default", destination: HighlightColorView(title: "Sentence Color"))
-                }, header: {
+                } header: {
                     Text("Highlight Colors")
-                })
+                }
             }
         }
     }

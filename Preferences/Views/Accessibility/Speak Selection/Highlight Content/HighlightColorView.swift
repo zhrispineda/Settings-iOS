@@ -17,9 +17,9 @@ struct HighlightColorView: View {
         CustomList(title: title) {
             Section {
                 ForEach(colors, id: \.self) { color in
-                    Button(action: {
+                    Button {
                         selected = color
-                    }, label: {
+                    } label: {
                         HStack {
                             Image(systemName: "circle.fill")
                                 .foregroundStyle(Color[color])
@@ -27,9 +27,11 @@ struct HighlightColorView: View {
                             Text(color)
                                 .foregroundStyle(Color["Label"])
                             Spacer()
-                            Image(systemName: "\(selected == color ? "checkmark" : "")")
+                            if selected == color {
+                                Image(systemName: "checkmark")
+                            }
                         }
-                    })
+                    }
                 }
             }
         }

@@ -13,9 +13,9 @@ struct PronunciationsView: View {
             // Empty
         }
         .toolbar {
-            NavigationLink(destination: ReplacementView(), label: {
+            NavigationLink(destination: ReplacementView()) {
                 Image(systemName: "plus")
-            })
+            }
         }
     }
 }

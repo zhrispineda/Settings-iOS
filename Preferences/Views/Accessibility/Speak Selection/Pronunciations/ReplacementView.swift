@@ -22,7 +22,7 @@ struct ReplacementView: View {
     
     var body: some View {
         CustomList(title: "Replacement") {
-            Section(content: {
+            Section {
                 HStack {
                     Text("Phrase\t\t")
                     Spacer()
@@ -40,9 +40,9 @@ struct ReplacementView: View {
                     .buttonStyle(.plain)
                     .disabled(phraseText.isEmpty)
                 }
-            }, footer: {
+            } footer: {
                 Text("Dictate or spell out how you want the phrase to be pronounced.")
-            })
+            }
             
             Section {
                 CustomNavigationLink(title: "Languages", status: "English (US)", destination: PronunciationLanguagesView())
@@ -52,15 +52,15 @@ struct ReplacementView: View {
             }
             
             if !applyAllAppsEnabled {
-                Section(content: {
+                Section {
                     ForEach(options, id: \.self) { option in
-                        Button(action: {
+                        Button {
                             if let index = selected.firstIndex(of: option) {
                                 selected.remove(at: index)
                             } else {
                                 selected.append(option)
                             }
-                        }, label: {
+                        } label: {
                             HStack {
                                 switch option {
                                 case "Watch":
@@ -73,11 +73,11 @@ struct ReplacementView: View {
                                 Spacer()
                                 Image(systemName: "\(selected.contains(option) ? "checkmark" : "")")
                             }
-                        })
+                        }
                     }
-                }, header: {
+                } header: {
                     Text("Apply To")
-                })
+                }
             }
         }
         .toolbar {
