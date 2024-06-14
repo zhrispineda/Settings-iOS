@@ -14,11 +14,11 @@ struct SlowKeysView: View {
     
     var body: some View {
         CustomList(title: "Slow Keys") {
-            Section(content: {
+            Section {
                 Toggle("Slow Keys", isOn: $slowKeysEnabled.animation())
-            }, footer: {
+            } footer: {
                 Text("Slow Keys adjusts the amount of time between when a key is pressed and when it is activated.")
-            })
+            }
             
             if slowKeysEnabled {
                 Section {

@@ -15,14 +15,14 @@ struct KeyRepeatView: View {
     
     var body: some View {
         CustomList(title: "Key Repeat") {
-            Section(content: {
+            Section {
                 Toggle("Key Repeat", isOn: $keyRepeatEnabled.animation())
-            }, footer: {
+            } footer: {
                 Text("Disable Key Repeat to prevent characters being entered multiple times with a single key press.")
-            })
+            }
             
             if keyRepeatEnabled {
-                Section(content: {
+                Section {
                     Stepper(
                         value: $keyRepeatInterval,
                         in: 0.03...2.00,
@@ -35,11 +35,11 @@ struct KeyRepeatView: View {
                                 .foregroundStyle(.secondary)
                         }
                     }
-                }, header: {
+                } header: {
                     Text("Key Repeat Interval")
-                })
+                }
                 
-                Section(content: {
+                Section {
                     Stepper(
                         value: $delayUntilRepeat,
                         in: 0.20...2.00,
@@ -52,9 +52,9 @@ struct KeyRepeatView: View {
                                 .foregroundStyle(.secondary)
                         }
                     }
-                }, header: {
+                } header: {
                     Text("Delay Until Repeat")
-                })
+                }
             }
         }
     }

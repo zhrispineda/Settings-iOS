@@ -188,11 +188,11 @@ struct KeyboardCommandsView: View {
                                     actions: {
                     Button("Restore Defaults", role: .destructive) {}
                 })
-                .alert("Restore Defaults", isPresented: $showingRestoreDefaultsAlert, actions: {
+                .alert("Restore Defaults", isPresented: $showingRestoreDefaultsAlert) {
                     Button("Restore Defaults", role: .destructive) {}
-                }, message: {
+                } message: {
                     Text("This will reset all keyboard shortcuts to their default values.")
-                })
+                }
             }
         }
     }

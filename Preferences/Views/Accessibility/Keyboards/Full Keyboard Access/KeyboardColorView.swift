@@ -16,9 +16,9 @@ struct KeyboardColorView: View {
         CustomList(title: "Color") {
             Section {
                 ForEach(colors, id: \.self) { color in
-                    Button(action: {
+                    Button {
                         selected = color
-                    }, label: {
+                    } label: {
                         HStack {
                             if color == "White" {
                                 Circle()
@@ -34,9 +34,11 @@ struct KeyboardColorView: View {
                             Text(color)
                                 .foregroundStyle(Color["Label"])
                             Spacer()
-                            Image(systemName: "\(selected == color ? "checkmark" : "")")
+                            if selected == color {
+                                Image(systemName: "checkmark")
+                            }
                         }
-                    })
+                    }
                 }
             }
         }

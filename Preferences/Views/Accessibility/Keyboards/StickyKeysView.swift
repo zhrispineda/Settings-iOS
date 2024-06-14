@@ -15,23 +15,23 @@ struct StickyKeysView: View {
     
     var body: some View {
         CustomList(title: "Sticky Keys") {
-            Section(content: {
+            Section {
                 Toggle("Sticky Keys", isOn: $stickyKeysEnabled)
-            }, footer: {
+            } footer: {
                 Text("Sticky Keys allows modifier keys to be set without having to hold the key down.")
-            })
+            }
             
-            Section(content: {
+            Section {
                 Toggle("Toggle With Shift Key", isOn: $toggleWithShiftKey)
-            }, footer: {
+            } footer: {
                 Text("Press the Shift key five times to toggle Sticky Keys.")
-            })
+            }
             
-            Section(content: {
+            Section {
                 Toggle("Sound", isOn: $soundEnabled)
-            }, footer: {
+            } footer: {
                 Text("Play a sound when a modifier key is set.")
-            })
+            }
         }
     }
 }

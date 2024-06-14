@@ -60,16 +60,16 @@ struct StyleView: View {
             
             Section {
                 ForEach(options, id: \.self) { option in
-                    Button(action: {
+                    Button {
                         selected = option
-                    }, label: {
+                    } label: {
                         HStack {
                             Text(option)
                                 .foregroundStyle(Color["Label"])
                             Spacer()
                             Image(systemName: "\(selected == option ? "checkmark" : "")")
                         }
-                    })
+                    }
                 }
                 NavigationLink("Create New Style...", destination: StyleView())
             }

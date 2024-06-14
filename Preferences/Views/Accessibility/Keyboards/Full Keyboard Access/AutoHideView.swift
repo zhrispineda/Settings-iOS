@@ -14,11 +14,11 @@ struct AutoHideView: View {
     
     var body: some View {
         CustomList(title: "Auto-Hide") {
-            Section(content: {
+            Section {
                 Toggle("Auto-Hide", isOn: $autoHideEnabled.animation())
-            }, footer: {
+            } footer: {
                 Text("The time it takes for focus to disappear due to inactivity.")
-            })
+            }
             
             if autoHideEnabled {
                 Section {
