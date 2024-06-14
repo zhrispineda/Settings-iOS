@@ -13,11 +13,11 @@ struct ScreenDistanceView: View {
     
     var body: some View {
         CustomList(title: "Screen Distance") {
-            Section(content: {
+            Section {
                 Toggle("Screen Distance", isOn: $screenDistanceEnabled)
-            }, footer: {
+            } footer: {
                 Text("To reduce eye strain, and the risk of myopia in children, Screen Distance will alert you to hold an iPhone or iPad with Face ID at a recommended distance.")
-            })
+            }
         }
     }
 }

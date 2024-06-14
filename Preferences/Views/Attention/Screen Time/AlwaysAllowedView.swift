@@ -17,7 +17,7 @@ struct AlwaysAllowedView: View {
     
     var body: some View {
         CustomList(title: "Always Allowed") {
-            Section(content: {
+            Section {
                 SettingsLabel(icon: "applephone", id: "Phone")
                 ForEach($includedControls, id: \.self) { $control in
                     SettingsLabel(icon: "apple\(control.lowercased())", id: control)
@@ -61,17 +61,18 @@ struct AlwaysAllowedView: View {
                         return index1 < index2
                     }
                 }
-            }, header: {
+            } header: {
                 VStack(alignment: .leading) {
                     Text("\n\nAllowed Apps")
                     Text("Always allowed apps are available during downtime, or if you select the “All Apps & Categories“ app limit.")
                         .textCase(.none)
                 }
-            })
-            Section(content: {
+            }
+            
+            Section {
                 ForEach($moreControls, id: \.self) { $control in
                     HStack(spacing: 15) {
-                        Button(action: {
+                        Button {
                             withAnimation { // Move element to the Allowed Apps list and sort it
                                 if let index = moreControls.firstIndex(of: control) {
                                     includedControls.append(moreControls.remove(at: index))
@@ -84,20 +85,20 @@ struct AlwaysAllowedView: View {
                                     }
                                 }
                             }
-                        }, label: {
+                        } label: {
                             ZStack {
                                 Image(systemName: "plus.circle.fill")
                                     .font(.title2)
                                     .foregroundStyle(.white, .green)
                             }
-                        })
+                        }
                         .buttonStyle(.plain)
                         SettingsLabel(icon: "apple\(control.lowercased())", id: control)
                     }
                 }
-            }, header: {
+            } header: {
                 Text("Choose Apps:")
-            })
+            }
         }
         .environment(\.editMode, Binding.constant(EditMode.active))
     }

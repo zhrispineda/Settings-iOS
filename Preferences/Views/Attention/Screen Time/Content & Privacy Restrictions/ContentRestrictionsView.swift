@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentRestrictionsView: View {
     var body: some View {
         CustomList(title: "Content Restrictions") {
-            Section(content: {
+            Section {
                 CustomNavigationLink(title: "Music, Podcasts, News, Fitness", status: "Explicit", destination: SelectOptionList(title: "Music, Podcasts, News, Fitness", options: ["Clean", "Explicit"], selected: "Explicit"))
                 CustomNavigationLink(title: "Music Videos", status: "On", destination: SelectOptionList(title: "Music Videos", options: ["Off", "On"], selected: "On"))
                 CustomNavigationLink(title: "Music Profiles", status: "On", destination: SelectOptionList(title: "Music Videos", options: ["Off", "On"], selected: "On"))
@@ -19,24 +19,24 @@ struct ContentRestrictionsView: View {
                 CustomNavigationLink(title: "Books", status: "Explicit", destination: SelectOptionList(title: "Books", options: ["Clean", "Explicit"], selected: "Explicit"))
                 CustomNavigationLink(title: "Apps", status: "17+", destination: AppsView())
                 CustomNavigationLink(title: "App Clips", status: "Allow", destination: SelectOptionList(title: "App Clips"))
-            }, header: {
+            } header: {
                 Text("Allowed Store Content")
-            })
+            }
             
-            Section(content: {
+            Section {
                 CustomNavigationLink(title: "Web Content", status: "Unrestricted", destination: WebContentView())
-            }, header: {
+            } header: {
                 Text("Web Content")
-            })
+            }
             
-            Section(content: {
+            Section {
                 CustomNavigationLink(title: "Web Search Content", status: "Allow", destination: SelectOptionList(title: "Web Search Content"))
                 CustomNavigationLink(title: "Explicit Language", status: "Allow", destination: SelectOptionList(title: "Explicit Language"))
-            }, header: {
+            } header: {
                 Text("Siri")
-            })
+            }
             
-            Section(content: {
+            Section {
                 CustomNavigationLink(title: "Multiplayer Games", status: "Allow with Everyone", destination: SelectOptionList(title: "Multiplayer Games", options: ["Don‘t Allow", "Allow with Friends Only", "Allow with Everyone"], selected: "Allow with Everyone"))
                 CustomNavigationLink(title: "Adding Friends", status: "Allow", destination: SelectOptionList(title: "Adding Friends"))
                 CustomNavigationLink(title: "Connect with Friends", status: "Allow", destination: SelectOptionList(title: "Connect with Friends"))
@@ -45,9 +45,9 @@ struct ContentRestrictionsView: View {
                 CustomNavigationLink(title: "Private Messaging", status: "Allow", destination: SelectOptionList(title: "Private Messaging"))
                 CustomNavigationLink(title: "Profile Privacy Changes", status: "Allow", destination: SelectOptionList(title: "Profile Privacy Changes"))
                 CustomNavigationLink(title: "Avatar & Nickname Changes", status: "Allow", destination: SelectOptionList(title: "Avatar & Nickname Changes"))
-            }, header: {
+            } header: {
                 Text("Game Center")
-            })
+            }
             
         }
     }

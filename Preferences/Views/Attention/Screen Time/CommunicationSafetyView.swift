@@ -14,28 +14,28 @@ struct CommunicationSafetyView: View {
     
     var body: some View {
         CustomList(title: "Communication Safety") {
-            Section(content: {
+            Section {
                 Toggle("Sensitive Content Warning", isOn: $communicationSafetyEnabled)
-            }, header: {
+            } header: {
                 Text("\n\nSensitive Photos and Videos")
-            }, footer: {
+            } footer: {
                 Text("Communication Safety can detect nude photos and videos before they‘re sent or viewed on your child‘s device, and provide guidance and age-appropriate resources to help them make a safe choice. Apple does not have access to the photos or videos. [Learn more...](https://support.apple.com/en-us/HT212850)")
-            })
+            }
             
-            Section(content: {
-                Button("View Child Safety Resources", action: {})
-            }, footer: {
+            Section {
+                Button("View Child Safety Resources") {}
+            } footer: {
                 Text("Resources to help have conversations with your child about digital safety topics like sexting and nudes.")
-            })
+            }
             
-            Section(content: {
+            Section {
                 Toggle("Improve Communication Safety", isOn: $improveCommunicationSafety)
                     .disabled(!communicationSafetyEnabled)
-            }, header: {
+            } header: {
                 Text("Analytics & Improvements")
-            }, footer: {
+            } footer: {
                 Text("Help Apple improve Communication Safety by sharing analytics and usage data. Analytics and data aggregated in a form that is not personally identifiable. No messages or media are shared with Apple. [About Improve Sensitive Content Safety & Privacy...](#)")
-            })
+            }
         }
     }
 }

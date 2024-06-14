@@ -24,7 +24,7 @@ struct ContentPrivacyRestrictionsView: View {
             }
             .disabled(!contentPrivacyRestrictionsEnabled)
             
-            Section(content: {
+            Section {
                 CustomNavigationLink(title: "Location Services", status: "Allow", destination: RestrictionsLocationServicesView())
                 CustomNavigationLink(title: "Contacts", status: "Allow", destination: ContentPrivacyRestrictionsDetailView(title: "Contacts"))
                 CustomNavigationLink(title: "Calendars", status: "Allow", destination: ContentPrivacyRestrictionsDetailView(title: "Calendars"))
@@ -37,12 +37,12 @@ struct ContentPrivacyRestrictionsView: View {
                 CustomNavigationLink(title: "Apple Advertising", status: "Allow", destination: SelectOptionList(title: "Apple Advertising"))
                 CustomNavigationLink(title: "Allow Apps to Request to Track", status: "Allow", destination: ContentPrivacyRestrictionsDetailView(title: "Allow Apps to Request to Track"))
                 CustomNavigationLink(title: "Media & Apple Music", status: "Allow", destination: ContentPrivacyRestrictionsDetailView(title: "Media & Apple Music"))
-            }, header: {
+            } header: {
                 Text("Privacy")
-            })
+            }
             .disabled(!contentPrivacyRestrictionsEnabled)
             
-            Section(content: {
+            Section {
                 CustomNavigationLink(title: "Passcode Changes", status: "Allow", destination: SelectOptionList(title: "Passcode Changes"))
                 CustomNavigationLink(title: "Account Changes", status: "Allow", destination: SelectOptionList(title: "Account Changes"))
                 CustomNavigationLink(title: "Cellular Data Changes", status: "Allow", destination: SelectOptionList(title: "Cellular Data Changes"))
@@ -50,9 +50,9 @@ struct ContentPrivacyRestrictionsView: View {
                 CustomNavigationLink(title: "Driving Focus", status: "Allow", destination: SelectOptionList(title: "Driving Focus"))
                 CustomNavigationLink(title: "TV Provider", status: "Allow", destination: SelectOptionList(title: "TV Provider"))
                 CustomNavigationLink(title: "Background App Activities", status: "Allow", destination: SelectOptionList(title: "Background App Activities"))
-            }, header: {
+            } header: {
                 Text("Allow Changes:")
-            })
+            }
             .disabled(!contentPrivacyRestrictionsEnabled)
         }
     }

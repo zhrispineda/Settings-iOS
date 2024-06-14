@@ -17,66 +17,63 @@ struct DowntimeView: View {
     
     var body: some View {
         CustomList(title: "Downtime") {
-            Section(content: {}, footer: {
+            Section {} footer: {
                 Text("During downtime, only apps that you choose to allow and phone calls will be available.")
-            })
+            }
             
-            Section(content: {
-                Button(downtimeEnabled ? (scheduledEnabled ? "Ignore Downtime Until Schedule" : "Turn Off Downtime") : "Turn On Downtime Until \(scheduledEnabled ? "Schedule" : "Tomorrow")", action: {
+            Section {
+                Button(downtimeEnabled ? (scheduledEnabled ? "Ignore Downtime Until Schedule" : "Turn Off Downtime") : "Turn On Downtime Until \(scheduledEnabled ? "Schedule" : "Tomorrow")") {
                     downtimeEnabled.toggle()
-                })
+                }
                 .tint(downtimeEnabled ? .red : .accent)
-            }, footer: {
+            } footer: {
                 Text(downtimeEnabled ? (scheduledEnabled ? "Give more screen time without adjusting your schedule." : "Resume using your device.") : "Downtime will be turned on until \(scheduledEnabled ? "schedule resumes" : "midnight").")
-            })
+            }
             
-            Section(content: {
+            Section {
                 Toggle("Scheduled", isOn: $scheduledEnabled)
-            }, footer: {
+            } footer: {
                 Text("Scheduled turns on downtime for the time period you select. A downtime reminder will appear five minutes before downtime.")
-            })
+            }
             
             if scheduledEnabled {
                 Section {
                     ForEach(options, id: \.self) { option in
-                        Button(action: {
+                        Button {
                             withAnimation {
                                 selected = option
                             }
-                        }, label: {
+                        } label: {
                             HStack {
                                 Text(option)
                                     .foregroundStyle(Color["Label"])
                                 Spacer()
-                                Image(systemName: "checkmark")
-                                    .opacity(selected == option ? 1 : 0)
-                                    .fontWeight(.medium)
+                                if selected == option {
+                                    Image(systemName: "checkmark")
+                                        .fontWeight(.medium)
+                                }
                             }
-                        })
+                        }
                     }
                 }
                 
-                Section(content: {
+                Section {
                     if selected == "Every Day" {
-                        Button(action: {
-                            // TODO
-                        }, label: {
+                        Button {} label: {
                             CustomNavigationLink(title: "Time", status: "10:00 PM–7:00 AM", destination: EmptyView())
                                 .foregroundStyle(Color["Label"])
-                        })
+                        }
                     } else {
                         ForEach(days, id: \.self) { day in
-                            Button(action: {
-                                // TODO
-                            }, label: {
+                            Button {} label: {
                                 CustomNavigationLink(title: day, status: "10:00 PM–7:00 AM", destination: EmptyView())
                                     .foregroundStyle(Color["Label"])
-                            })
+                            }
                         }
                     }
-                }, footer: {
+                } footer: {
                     Text("Downtime will apply to this device. A downtime reminder will appear five minutes before downtime begins.")
-                })
+                }
             }
         }
     }

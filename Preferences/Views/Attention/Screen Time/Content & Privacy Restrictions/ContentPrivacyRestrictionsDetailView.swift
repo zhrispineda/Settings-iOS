@@ -15,9 +15,9 @@ struct ContentPrivacyRestrictionsDetailView: View {
     
     var body: some View {
         CustomList(title: title) {
-            Section(content: {
+            Section {
                 ForEach(options, id: \.self) { option in
-                    Button(action: { selectedOption = option }, label: {
+                    Button { selectedOption = option } label: {
                         HStack {
                             Text(option)
                                 .foregroundStyle(Color["Label"])
@@ -26,9 +26,9 @@ struct ContentPrivacyRestrictionsDetailView: View {
                                 Image(systemName: "checkmark")
                             }
                         }
-                    })
+                    }
                 }
-            }, footer: {
+            } footer: {
                 switch title {
                 case "Media & Apple Music":
                     Text("Disallowing changes locks the settings below and prevents new apps from accessing Apple Music and using your media library.")
@@ -43,27 +43,27 @@ struct ContentPrivacyRestrictionsDetailView: View {
                 default:
                     Text("Disallowing changes locks the settings shown below and prevents new apps from using your \(title.lowercased()).")
                 }
-            })
+            }
             
             if title == "Photos" {
-                Section(content: {
+                Section {
                     VStack(alignment: .leading) {
                         Text("**Full Photo Library Access**")
                         Text("No Items")
                             .foregroundStyle(.secondary)
                     }
                     .padding(3)
-                }, footer: {
+                } footer: {
                     Text("Photos may contain data associated with location, depth information, captions, and audio.")
-                })
+                }
             }
             
-            Section(content: {
+            Section {
                 if title == "Bluetooth Sharing" || title == "Microphone" {
-                    SettingsLink(color: .white, icon: "appclip", id: "App Clips", content: { AppClipsView(completeView: false)
-                    })
+                    SettingsLink(color: .white, icon: "appclip", id: "App Clips") { AppClipsView(completeView: false)
+                    }
                 }
-            }, footer: {
+            } footer: {
                 switch title {
                 case "Media & Apple Music":
                     Text("Apps that have requested access to Apple Music, your music and video activity, and your media library appear here.")
@@ -80,7 +80,7 @@ struct ContentPrivacyRestrictionsDetailView: View {
                 default:
                     Text("Applications that have requested access to your \(title.lowercased()) will appear here.")
                 }
-            })
+            }
         }
     }
 }
