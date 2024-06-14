@@ -17,11 +17,11 @@ struct TouchView: View {
                 CustomNavigationLink(title: "AssistiveTouch", status: "Off", destination: AssistiveTouchView())
             }
             
-            Section(content: {
+            Section {
                 Toggle("Shake to Undo", isOn: $shakeUndoEnabled)
-            }, footer: {
+            } footer: {
                 Text("If you tend to shake your \(Device().model) by accident, you can disable Shake to Undo to prevent the Undo alert from appearing.")
-            })
+            }
         }
     }
 }

@@ -14,21 +14,21 @@ struct SubtitlesCaptioningView: View {
     
     var body: some View {
         CustomList(title: "Subtitles & Captioning") {
-            Section(content: {
+            Section {
                 Toggle("Closed Captioning + SDH", isOn: $closedCaptionsSDHEnabled)
-            }, footer: {
+            } footer: {
                 Text("When available, prefer captioning or subtitles for the deaf and hard of hearing.")
-            })
+            }
             
             Section {
                 CustomNavigationLink(title: "Style", status: "Transparent Background", destination: StyleView())
             }
             
-            Section(content: {
+            Section {
                 Toggle("Show Audio Transcriptions", isOn: $showAudioTranscriptionsEnabled)
-            }, footer: {
+            } footer: {
                 Text("Show audio transcriptions for announcements from HomePod.")
-            })
+            }
         }
     }
 }

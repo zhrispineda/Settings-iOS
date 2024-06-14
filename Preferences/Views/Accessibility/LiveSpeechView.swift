@@ -13,23 +13,23 @@ struct LiveSpeechView: View {
     
     var body: some View {
         CustomList(title: "Live Speech") {
-            Section(content: {
+            Section {
                 Toggle("Live Speech", isOn: $liveSpeechEnabled)
-            }, footer: {
+            } footer: {
                 Text("Triple-click the \(Device().hasHomeButton ? "home" : "side") button to show Live Speech.")
-            })
+            }
             
             Section {
                 NavigationLink("Favorite Phrases", destination: FavoritePhrasesView())
             }
             
-            Section(content: {
+            Section {
                 CustomNavigationLink(title: "English (US)", status: "Samantha", destination: SpeakSelectionVoiceDetailView(title: "English"))
-            }, header: {
+            } header: {
                 Text("Voices")
-            }, footer: {
+            } footer: {
                 Text("Live Speech uses Keyboards to determine available voices.")
-            })
+            }
         }
     }
 }

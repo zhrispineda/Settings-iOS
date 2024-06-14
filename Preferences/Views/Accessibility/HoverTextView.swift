@@ -18,38 +18,38 @@ struct HoverTextView: View {
     
     var body: some View {
         CustomList(title: "Hover Text") {
-            Section(content: {
+            Section {
                 Toggle("Hover Text", isOn: $hoverTextEnabled)
-            }, footer: {
+            } footer: {
                 Text("Display a large-text view of items under the pointer.")
-            })
+            }
             
-            Section(content: {
+            Section {
                 CustomNavigationLink(title: "Display Mode", status: "Top", destination: SelectOptionList(title: "Display Mode", options: ["Inline", "Top", "Bottom"], selected: "Top"))
                 CustomNavigationLink(title: "Scrolling Speed", status: "Default", destination: SelectOptionList(title: "Scrolling Speed", options: ["Slowest", "Slower", "Default", "Faster", "Fastest"], selected: "Default"))
                 CustomNavigationLink(title: "Font", status: "Default", destination: HoverTextFontView())
                 CustomNavigationLink(title: "Size", status: "On", destination: HoverTextSizeView())
-            }, header: {
+            } header: {
                 Text("Text")
-            })
+            }
             
-            Section(content: {
+            Section {
                 ColorPicker("Text Color", selection: $textColor)
                 ColorPicker("Insertion Point Color", selection: $insertionPointColor)
                 ColorPicker("Background Color", selection: $backgroundColor)
                 ColorPicker("Border Color", selection: $borderColor)
-            }, header: {
+            } header: {
                 Text("Colors")
-            })
+            }
             
-            Section(content: {
+            Section {
                 CustomNavigationLink(title: "Activation Modifier", status: "⌃ Control", destination: SelectOptionList(title: "Activation Modifier", options: ["⌃ Control", "⌥ Option", "⌘ Command"], selected: "⌃ Control"))
                 Toggle("Activation Lock", isOn: $activationLockEnabled)
-            }, header: {
+            } header: {
                 Text("Control")
-            }, footer: {
+            } footer: {
                 Text("Triple-press the activation modifier to lock.")
-            })
+            }
         }
     }
 }

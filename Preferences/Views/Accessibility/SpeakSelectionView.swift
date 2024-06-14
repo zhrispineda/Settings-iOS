@@ -14,28 +14,28 @@ struct SpeakSelectionView: View {
     
     var body: some View {
         CustomList(title: "Speak Selection") {
-            Section(content: {
+            Section {
                 Toggle("Speak Selection", isOn: $speakSelectionEnabled.animation())
-            }, footer: {
+            } footer: {
                 Text("A Speak button will appear when you select text.")
-            })
+            }
             
             Section {
                 NavigationLink("Pronunciations", destination: PronunciationsView())
             }
             
             if speakSelectionEnabled {
-                Section(content: {
+                Section {
                     CustomNavigationLink(title: "Highlight Content", status: "Off", destination: HighlightContentView())
-                }, footer: {
+                } footer: {
                     Text("Highlight content as it is spoken.")
-                })
+                }
                 
                 Section {
                     NavigationLink("Voices", destination: SpeakSelectionVoicesView())
                 }
                 
-                Section(content: {
+                Section {
                     Group {
                         Slider(value: $speakingRate,
                                in: 0.0...1.0,
@@ -46,9 +46,9 @@ struct SpeakSelectionView: View {
                     }
                     .imageScale(.large)
                     .foregroundStyle(.secondary)
-                }, header: {
+                } header: {
                     Text("Speaking Rate")
-                })
+                }
             }
         }
     }

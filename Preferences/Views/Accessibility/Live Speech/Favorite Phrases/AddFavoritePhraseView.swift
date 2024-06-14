@@ -14,22 +14,22 @@ struct AddFavoritePhraseView: View {
     
     var body: some View {
         CustomList(title: "Add Favorite Phrase") {
-            Section(content: {
+            Section {
                 HStack {
                     Text("Phrase\t\t")
                     TextField("", text: $phraseText)
                 }
-            }, footer: {
+            } footer: {
                 Text("Create phrases that you can quickly speak with Live Speech.")
-            })
+            }
         }
         .toolbar {
-            Button(action: {
+            Button {
                 dismiss()
-            }, label: {
+            } label: {
                 Text("Save")
                     .disabled(phraseText.isEmpty)
-            })
+            }
         }
     }
 }

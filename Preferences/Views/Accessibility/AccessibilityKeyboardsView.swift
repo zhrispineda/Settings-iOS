@@ -13,29 +13,29 @@ struct AccessibilityKeyboardsView: View {
     
     var body: some View {
         CustomList(title: "Keyboards") {
-            Section(content: {
+            Section {
                 CustomNavigationLink(title: "Full Keyboard Access", status: "Off", destination: FullKeyboardAccessView())
-            }, header: {
+            } header: {
                 Text("\nHardware Keyboards")
-            }, footer: {
+            } footer: {
                 Text("Use an external keyboard to control your \(Device().model).")
-            })
+            }
             
-            Section(content: {
+            Section {
                 CustomNavigationLink(title: "Key Repeat", status: "On", destination: KeyRepeatView())
                 CustomNavigationLink(title: "Sticky Keys", status: "Off", destination: StickyKeysView())
                 CustomNavigationLink(title: "Slow Keys", status: "Off", destination: SlowKeysView())
-            }, footer: {
+            } footer: {
                 Text("Customize the typing experience when using an external keyboard.")
-            })
+            }
             
-            Section(content: {
+            Section {
                 Toggle("Show Lowercase Keys", isOn: $showLowercaseKeysEnabled)
-            }, header: {
+            } header: {
                 Text("Software Keyboards")
-            }, footer: {
+            } footer: {
                 Text("This affects keyboards that use the Shift key to switch between uppercase and lowercase letters.")
-            })
+            }
         }
     }
 }

@@ -27,35 +27,35 @@ struct DisplayTextSizeView: View {
                 Toggle("On/Off Labels", isOn: $onOffLabelsEnabled)
             }
             
-            Section(content: {
+            Section {
                 Toggle("Reduce Transparency", isOn: $reduceTransparencyEnabled)
-            }, footer: {
+            } footer: {
                 Text("Improve contrast by reducing transparency and blurs on some backgrounds to increase legibility.")
-            })
+            }
             
-            Section(content: {
+            Section {
                 Toggle("Increase Contrast", isOn: $increaseContrastEnabled)
-            }, footer: {
+            } footer: {
                 Text("Increase color contrast between app foreground and background colors.")
-            })
+            }
             
-            Section(content: {
+            Section {
                 Toggle("Differentiate Without Color", isOn: $differentiateWithoutColorEnabled)
-            }, footer: {
+            } footer: {
                 Text("Replaces user interface items that rely solely on color to convey information with alternatives.")
-            })
+            }
             
-            Section(content: {
+            Section {
                 Toggle("Prefer Horizontal Text", isOn: $preferHorizontalTextEnabled)
-            }, footer: {
+            } footer: {
                 Text("Prefer horizontal text in languages that support vertical text.")
-            })
+            }
             
-            Section(content: {
+            Section {
                 Toggle("Smart Invert", isOn: $smartInvertEnabled)
-            }, footer: {
+            } footer: {
                 Text("Smart Invert reverses the colors of the display, except for images, media and some apps that use dark color styles.")
-            })
+            }
         }
     }
 }

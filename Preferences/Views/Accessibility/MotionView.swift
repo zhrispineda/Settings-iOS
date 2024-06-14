@@ -19,47 +19,49 @@ struct MotionView: View {
     
     var body: some View {
         CustomList(title: "Motion") {
-            Section(content: {
+            Section {
                 Toggle("Reduce Motion", isOn: $reduceMotionEnabled)
-            }, footer: {
+            } footer: {
                 Text("Reduce the motion of the user interface, including the parallax effect of icons.")
-            })
-            
-            if reduceMotionEnabled {
-                Section(content: {
-                    Toggle("Prefer Cross-Fade Transitions", isOn: $preferCrossFadeTransitionsEnabled)
-                }, footer: {
-                    Text("Reduce the motion for user interface controls that slide in when appearing and disappearing.")
-                })
             }
             
-            Section(content: {
+            if reduceMotionEnabled {
+                Section {
+                    Toggle("Prefer Cross-Fade Transitions", isOn: $preferCrossFadeTransitionsEnabled)
+                } footer: {
+                    Text("Reduce the motion for user interface controls that slide in when appearing and disappearing.")
+                }
+            }
+            
+            Section {
                 Toggle("Auto-Play Message Effects", isOn: $autoPlayMessageEffectsEnabled)
-            }, footer: {
+            } footer: {
                 Text("Allows fullscreen effects in the Messages app to auto-play.")
-            })
+            }
             
-            Section(content: {
+            Section {
                 Toggle("Auto-Play Animated Images", isOn: $autoPlayAnimatedImagesEnabled)
-            }, footer: {
+            } footer: {
                 Text("Controls whether images animate on the Web and in apps.")
-            })
+            }
             
-            Section(content: {
+            Section {
                 Toggle("Dim Flashing Lights", isOn: $dimFlashingLightsEnabled)
-            }, footer: {
+            } footer: {
                 Text("Video content that depicts repeated flashing or strobing lights will be automatically dimmed. The video timeline will display when flashing lights occur in the content for supported media.")
-            })
+            }
             
-            Section(content: {
+            Section {
                 Toggle("Auto-Play Video Previews", isOn: $autoPlayVideoPreviewsEnabled)
-            })
+            }
             
-            Section(content: {
-                Toggle("Limit Frame Rate", isOn: $limitFrameRateEnabled)
-            }, footer: {
-                Text("Sets the maximum frame rate of the display to 60 frames per second.")
-            })
+            if Device().isPro {
+                Section {
+                    Toggle("Limit Frame Rate", isOn: $limitFrameRateEnabled)
+                } footer: {
+                    Text("Sets the maximum frame rate of the display to 60 frames per second.")
+                }
+            }
         }
     }
 }

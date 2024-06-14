@@ -13,9 +13,9 @@ struct FavoritePhrasesView: View {
             // Empty
         }
         .toolbar {
-            NavigationLink(destination: AddFavoritePhraseView(), label: {
+            NavigationLink(destination: AddFavoritePhraseView()) {
                 Image(systemName: "plus")
-            })
+            }
         }
     }
 }
