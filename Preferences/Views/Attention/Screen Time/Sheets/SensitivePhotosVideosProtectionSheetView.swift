@@ -34,17 +34,17 @@ struct SensitivePhotosVideosProtectionSheetView: View {
             .padding(.horizontal, 30)
             VStack(spacing: 20) {
                 Spacer()
-                Button("**Continue**", action: {
+                Button("**Continue**") {
                     dismiss()
-                })
+                }
                 .frame(maxWidth: .infinity)
                 .padding()
                 .background(.blue)
                 .foregroundStyle(.white)
                 .clipShape(RoundedRectangle(cornerRadius: 15.0))
-                Button("**Not Now**", action: {
+                Button("**Not Now**") {
                     dismiss()
-                })
+                }
             }
             .padding([.horizontal, .bottom])
         }

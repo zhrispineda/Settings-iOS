@@ -59,13 +59,13 @@ struct SystemServicesView: View {
                 Toggle("System Customization", isOn: $systemCustomizationEnabled)
             }
             
-            Section(content: {
+            Section {
                 Toggle("\(Device().model) Analytics", isOn: $deviceAnalyticsEnabled)
                 Toggle("Routing & Traffic", isOn: $routingTrafficEnabled)
                 Toggle("Improve Maps", isOn: $improveMapsEnabled)
-            }, header: {
+            } header: {
                 Text("Product Improvement")
-            }, footer: {
+            } footer: {
                 VStack(alignment: .leading) {
                     Text("Allow Apple to use your frequent location information to improve Maps. [About Improve Maps & Privacy...](#)\n\n\n")
                     
@@ -89,13 +89,13 @@ struct SystemServicesView: View {
                         .padding(.trailing)
                     }
                 }
-            })
+            }
             
-            Section(content: {
+            Section {
                 Toggle("Status Bar Icon", isOn: $controlCenterIconEnabled)
-            }, footer: {
+            } footer: {
                 Text("Show the Location Services icon in the Status Bar when the services above request your location.")
-            })
+            }
         }
     }
 }

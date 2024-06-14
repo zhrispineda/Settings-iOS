@@ -16,9 +16,9 @@ struct WebContentView: View {
     
     var body: some View {
         CustomList(title: "Web Content") {
-            Section(content: {
+            Section {
                 ForEach(options, id: \.self) { option in
-                    Button(action: { selectedOption = option }, label: {
+                    Button { selectedOption = option } label: {
                         HStack {
                             Text(option)
                                 .foregroundStyle(Color["Label"])
@@ -27,20 +27,20 @@ struct WebContentView: View {
                                 Image(systemName: "checkmark")
                             }
                         }
-                    })
+                    }
                 }
-            }, header: {
+            } header: {
                 Text("Web Content")
-            }, footer: {
+            } footer: {
                 if selectedOption == "Allowed Websites" {
                     Text("Allow access only to the websites below.")
                 } else if selectedOption == "Limit Adult Websites" {
                     Text("Limit access to many adult websites automatically. Specific allowed and restricted websites can be added below.")
                 }
-            })
+            }
             
             if selectedOption == "Allowed Websites" {
-                Section(content: {
+                Section {
                     ForEach($allowedWebsites, id: \.self, editActions: .delete) { $option in
                         Text(option)
                     }
@@ -50,33 +50,33 @@ struct WebContentView: View {
                         Text("Add Website")
                             .foregroundStyle(.blue)
                     }
-                }, header: {
+                } header: {
                     Text("Only Allow These Websites:")
-                })
+                }
             }
             
             if selectedOption == "Limit Adult Websites" {
-                Section(content: {
+                Section {
                     ZStack(alignment: .leading) {
                         NavigationLink("", destination: {})
                             .opacity(0)
                         Text("Add Website")
                             .foregroundStyle(.blue)
                     }
-                }, header: {
+                } header: {
                     Text("Always Allow:")
-                })
+                }
                 
-                Section(content: {
+                Section {
                     ZStack(alignment: .leading) {
                         NavigationLink("", destination: {})
                             .opacity(0)
                         Text("Add Website")
                             .foregroundStyle(.blue)
                     }
-                }, header: {
+                } header: {
                     Text("Never Allow:")
-                })
+                }
             }
         }
     }

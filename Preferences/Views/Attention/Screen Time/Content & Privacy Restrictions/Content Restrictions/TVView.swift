@@ -17,7 +17,7 @@ struct TVView: View {
     var body: some View {
         CustomList(title: "TV") {
             ForEach(options, id: \.self) { option in
-                Button(action: { selectedOption = option }, label: {
+                Button { selectedOption = option } label: {
                     HStack {
                         Text(option)
                             .foregroundStyle(Color["Label"])
@@ -26,7 +26,7 @@ struct TVView: View {
                             Image(systemName: "checkmark")
                         }
                     }
-                })
+                }
             }
             
             Section {

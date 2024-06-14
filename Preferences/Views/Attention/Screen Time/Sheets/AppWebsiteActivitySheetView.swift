@@ -86,20 +86,20 @@ struct AppWebsiteActivitySheetView: View {
             .padding(.top, -100)
             VStack(spacing: 20) {
                 Spacer()
-                Button("**Turn On App & Website Activity**", action: {
+                Button("**Turn On App & Website Activity**") {
                     withAnimation {
                         appWebsiteActivityEnabled.toggle()
                     }
                     dismiss()
-                })
+                }
                 .frame(maxWidth: .infinity)
                 .padding()
                 .background(.blue)
                 .foregroundStyle(.white)
                 .clipShape(RoundedRectangle(cornerRadius: 15.0))
-                Button("**Not Now**", action: {
+                Button("**Not Now**") {
                     dismiss()
-                })
+                }
             }
             .padding([.horizontal, .bottom])
         }

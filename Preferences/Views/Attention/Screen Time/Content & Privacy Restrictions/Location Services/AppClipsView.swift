@@ -14,11 +14,11 @@ struct AppClipsView: View {
     
     var body: some View {
         CustomList(title: "App Clips") {
-            Section(content: {
+            Section {
                 if completeView {
                     Toggle("Confirm Location", isOn: $confirmLocationEnabled)
                 }
-            }, footer: {
+            } footer: {
                 VStack(alignment: .leading) {
                     if completeView {
                         Text("Your location is used to confirm to app clips that scanned tags haven‘t been moved from where they belong.\n\n")
@@ -43,7 +43,7 @@ struct AppClipsView: View {
                         .padding(.trailing)
                     }
                 }
-            })
+            }
         }
     }
 }
