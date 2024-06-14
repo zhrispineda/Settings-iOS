@@ -15,25 +15,25 @@ struct PasswordOptionsView: View {
     
     var body: some View {
         CustomList(title: "Password Options") {
-            Section(content: {
+            Section {
                 Toggle("AutoFill Passwords and Passkeys", isOn: $autoFillPasswordPasskeysEnabled)
-            }, footer: {
+            } footer: {
                 Text("AutoFill helps you sign into apps and websites.")
-            })
+            }
             
-            Section(content: {
+            Section {
                 IconToggle(enabled: $keychainEnabled, color: .gray, icon: "key.fill", title: "Keychain")
-            }, header: {
+            } header: {
                 Text("Use Passwords and Passkeys From:")
-            })
+            }
             
-            Section(content: {
+            Section {
                 Toggle("Delete After Use", isOn: $deleteAfterUseEnabled)
-            }, header: {
+            } header: {
                 Text("Verification Codes")
-            }, footer: {
+            } footer: {
                 Text("Automatically delete verification codes in Messages and Mail after they are used.")
-            })
+            }
         }
     }
 }

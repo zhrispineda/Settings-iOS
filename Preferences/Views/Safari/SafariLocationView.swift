@@ -14,11 +14,11 @@ struct SafariLocationView: View {
     
     var body: some View {
         CustomList(title: "Location") {
-            Section(content: {
+            Section {
                 ForEach(options, id: \.self) { option in
-                    Button(action: { 
+                    Button {
                         selectedOption = option
-                    }, label: {
+                    } label: {
                         HStack {
                             Text(option)
                                 .foregroundStyle(Color["Label"])
@@ -27,11 +27,11 @@ struct SafariLocationView: View {
                                 Image(systemName: "checkmark")
                             }
                         }
-                    })
+                    }
                 }
-            }, header: {
+            } header: {
                 Text("\n\nLocation Access On All Websites")
-            })
+            }
         }
         .toolbar {
             EditButton()

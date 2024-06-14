@@ -11,7 +11,7 @@ struct CreditCardsView: View {
     var body: some View {
         CustomList(title: "Credit Cards") {
             // TODO: Toggle sheet
-            Button("Add Credit Card", action: {})
+            Button("Add Credit Card") {}
         }
         .toolbar {
             EditButton()

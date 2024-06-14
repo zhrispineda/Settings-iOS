@@ -206,13 +206,13 @@ struct FeatureFlagsView: View {
     
     var body: some View {
         CustomList(title: "WebKit Feature Flags") {
-            Section(content: {
+            Section {
                 ForEach($featureFlags) { $flag in
                     Toggle(flag.title, isOn: $flag.isOn)
                 }
-            }, header: {
+            } header: {
                 Text("\n\nWebKit Feature Flags")
-            })
+            }
             
             Section {
                 Button("Reset All to Defaults", action: {})

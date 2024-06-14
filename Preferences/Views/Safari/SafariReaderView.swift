@@ -13,11 +13,11 @@ struct SafariReaderView: View {
     
     var body: some View {
         CustomList(title: "Reader") {
-            Section(content: {
+            Section {
                 Toggle("All Websites", isOn: $allWebsitesEnabled)
-            }, header: {
+            } header: {
                 Text("\n\nAutomatically Use Reader On")
-            })
+            }
         }
         .toolbar {
             EditButton()

@@ -99,7 +99,7 @@ struct SafetyCheckView: View {
         }
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
-                Button("Quick Exit", action: {})
+                Button("Quick Exit") {}
             }
         }
     }

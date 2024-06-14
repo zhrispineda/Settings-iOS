@@ -15,7 +15,7 @@ struct AdvancedTrackingFingerprintingProtectionView: View {
     var body: some View {
         CustomList(title: "Advanced Tracking and Fingerprinting Protection") {
             ForEach(options, id: \.self) { option in
-                Button(action: { selected = option }, label: {
+                Button { selected = option } label: {
                     HStack {
                         Text(option)
                             .foregroundStyle(Color["Label"])
@@ -25,7 +25,7 @@ struct AdvancedTrackingFingerprintingProtectionView: View {
                                 .fontWeight(.medium)
                         }
                     }
-                })
+                }
             }
         }
     }

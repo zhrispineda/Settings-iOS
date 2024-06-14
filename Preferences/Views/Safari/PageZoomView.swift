@@ -14,9 +14,9 @@ struct PageZoomView: View {
     
     var body: some View {
         CustomList(title: "Page Zoom") {
-            Section(content: {
+            Section {
                 ForEach(options, id: \.self) { option in
-                    Button(action: { selectedOption = option }, label: {
+                    Button { selectedOption = option } label: {
                         HStack {
                             Text(option)
                                 .foregroundStyle(Color["Label"])
@@ -25,11 +25,11 @@ struct PageZoomView: View {
                                 Image(systemName: "checkmark")
                             }
                         }
-                    })
+                    }
                 }
-            }, header: {
+            } header: {
                 Text("\n\nPage Zoom On All Websites")
-            })
+            }
         }
         .toolbar {
             EditButton()

@@ -13,7 +13,7 @@ struct WebsiteDataView: View {
     
     var body: some View {
         CustomList(title: "Website Data") {
-            Section(content: {}, header: {
+            Section {} header: {
                 HStack {
                     Text("Website Data")
                     Spacer()
@@ -21,7 +21,7 @@ struct WebsiteDataView: View {
                         .textCase(.none)
                 }
                 .padding(.top, 10)
-            })
+            }
         }
         .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always))
         .toolbar {

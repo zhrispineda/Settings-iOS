@@ -14,9 +14,9 @@ struct HideAddressView: View {
     
     var body: some View {
         CustomList(title: "Hide IP Address") {
-            Section(content: {
+            Section {
                 ForEach(options, id: \.self) { option in
-                    Button(action: { selectedOption = option }, label: {
+                    Button { selectedOption = option } label: {
                         HStack {
                             Text(option)
                                 .foregroundStyle(Color["Label"])
@@ -25,11 +25,11 @@ struct HideAddressView: View {
                                 Image(systemName: "checkmark")
                             }
                         }
-                    })
+                    }
                 }
-            }, footer: {
+            } footer: {
                 Text("Your IP address can be used to determine your personal information, like your location. To protect this information, Safari can hide your IP address from known trackers. [Learn more...](#)")
-            })
+            }
         }
     }
     

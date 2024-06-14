@@ -9,16 +9,16 @@ import SwiftUI
 
 struct SafariCameraView: View {
     // Variables
-    @State private var selectedOption: String? = "Ask"
+    @State private var selectedOption = "Ask"
     let options = ["Ask", "Deny", "Allow"]
     
     var body: some View {
         CustomList(title: "Camera") {
-            Section(content: {
+            Section {
                 ForEach(options, id: \.self) { option in
-                    Button(action: {
+                    Button {
                         selectedOption = option
-                    }, label: {
+                    } label: {
                         HStack {
                             Text(option)
                                 .foregroundStyle(Color["Label"])
@@ -27,11 +27,11 @@ struct SafariCameraView: View {
                                 Image(systemName: "checkmark")
                             }
                         }
-                    })
+                    }
                 }
-            }, header: {
+            } header: {
                 Text("\n\nCamera Access On All Websites")
-            })
+            }
         }
         .toolbar {
             EditButton()

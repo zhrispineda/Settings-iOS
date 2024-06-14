@@ -14,14 +14,14 @@ struct AutoFillView: View {
     
     var body: some View {
         CustomList(title: "AutoFill") {
-            Section(content: {}, footer: {
+            Section {} footer: {
                 Text("Automatically fill out web forms using your contact or credit card info.")
-            })
+            }
             
             Section {
                 Toggle("Use Contact Info", isOn: $useContactInfoEnabled)
                 // TODO: Contacts sheet popup for button
-                Button(action: {}, label: {
+                Button {} label: {
                     HStack {
                         Text("My Info")
                         Spacer()
@@ -31,7 +31,7 @@ struct AutoFillView: View {
                             .foregroundStyle(.secondary)
                     }
                     .tint(Color["Label"])
-                })
+                }
             }
             
             Section {

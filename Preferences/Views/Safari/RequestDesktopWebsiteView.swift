@@ -13,11 +13,11 @@ struct RequestDesktopWebsiteView: View {
     
     var body: some View {
         CustomList(title: "Request Desktop Website") {
-            Section(content: {
+            Section {
                 Toggle("All Websites", isOn: $allWebsitesEnabled)
-            }, header: {
+            } header: {
                 Text("\n\nRequest Desktop Website On")
-            })
+            }
         }
         .toolbar {
             EditButton()

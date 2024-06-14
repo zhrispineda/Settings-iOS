@@ -14,11 +14,11 @@ struct SafariMicrophoneView: View {
     
     var body: some View {
         CustomList(title: "Microphone") {
-            Section(content: {
+            Section {
                 ForEach(options, id: \.self) { option in
-                    Button(action: {
+                    Button {
                         selectedOption = option
-                    }, label: {
+                    } label: {
                         HStack {
                             Text(option)
                                 .foregroundStyle(Color["Label"])
@@ -27,11 +27,11 @@ struct SafariMicrophoneView: View {
                                 Image(systemName: "checkmark")
                             }
                         }
-                    })
+                    }
                 }
-            }, header: {
+            } header: {
                 Text("\n\nMicrophone Access On All Websites")
-            })
+            }
         }
         .toolbar {
             EditButton()
