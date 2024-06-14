@@ -13,11 +13,9 @@ struct FocusView: View {
     
     var body: some View {
         CustomList(title: "Focus") {
-            Section(content: {
+            Section {
                 // Do Not Disturb
-                NavigationLink {
-                    EmptyView()
-                } label: {
+                NavigationLink {} label: {
                     HStack {
                         Image(systemName: "moon.fill").imageScale(.large)
                             .frame(width: 30)
@@ -28,9 +26,7 @@ struct FocusView: View {
                 }
                 
                 // Personal
-                NavigationLink {
-                    EmptyView()
-                } label: {
+                NavigationLink {} label: {
                     HStack {
                         Image(systemName: "person.fill").imageScale(.large)
                             .frame(width: 30)
@@ -43,9 +39,7 @@ struct FocusView: View {
                 }
                 
                 // Sleep
-                NavigationLink {
-                    EmptyView()
-                } label: {
+                NavigationLink {} label: {
                     HStack {
                         Image(systemName: "bed.double.fill").imageScale(.large)
                             .frame(width: 30)
@@ -58,9 +52,7 @@ struct FocusView: View {
                 }
                 
                 // Work
-                NavigationLink {
-                    EmptyView()
-                } label: {
+                NavigationLink {} label: {
                     HStack {
                         Image(systemName: "person.crop.square.fill").imageScale(.large)
                             .frame(width: 30)
@@ -71,27 +63,27 @@ struct FocusView: View {
                         Text("Set Up").foregroundStyle(.secondary)
                     }
                 }
-            }, footer: {
+            } footer: {
                 Text("Focus lets you customize your device and silence calls and notifications. Turn it on and off in Control Center.")
-            })
+            }
             
-            Section(content: {
+            Section {
                 Toggle("Share Across Devices", isOn: $shareAcrossDevicesEnabled)
-            }, footer: {
+            } footer: {
                 Text("Focus is shared across your devices, and turning one on for this device will turn it on for all of them.")
-            })
+            }
             
-            Section(content: {
+            Section {
                 CustomNavigationLink(title: "Focus Status", status: "Off", destination: EmptyView())
-            }, footer: {
+            } footer: {
                 Text("When you give an app permission, it can share that you have notifications silenced when using Focus.")
-            })
+            }
         }
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
-                Button(action: {}, label: {
+                Button {} label: {
                     Image(systemName: "plus")
-                })
+                }
             }
         }
     }

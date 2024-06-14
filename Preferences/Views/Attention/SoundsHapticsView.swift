@@ -21,7 +21,7 @@ struct SoundsHapticsView: View {
     var body: some View {
         CustomList(title: Device().isPhone ? "Sounds & Haptics" : "Sounds") {
             Section {
-                Toggle(isOn: $silentModeEnabled.animation(), label: {
+                Toggle(isOn: $silentModeEnabled.animation()) {
                     Label(
                         title: {
                             Text("Silent Mode")
@@ -30,7 +30,7 @@ struct SoundsHapticsView: View {
                                 .foregroundStyle(silentModeEnabled ? .red : .secondary)
                         }
                     )
-                })
+                }
                 .toggleStyle(SwitchToggleStyle(tint: silentModeEnabled ? .red : .accentColor))
             } header: {
                 Text("\nSilent Mode")
@@ -104,7 +104,7 @@ struct SoundsHapticsView: View {
             }
             
             Section {
-                NavigationLink("Headphone Safety", destination: {})
+                NavigationLink("Headphone Safety") {}
             } header: {
                 Text("Headphone Audio")
             }

@@ -13,30 +13,32 @@ struct HeadphoneAudioLevelsView: View {
     
     var body: some View {
         CustomList(title: "Headphone Audio Levels") {
-            Section(content: {
+            Section {
                 ForEach(options, id: \.self) { option in
-                    Button(action: {
+                    Button {
                         selected = option
-                    }, label: {
+                    } label: {
                         HStack {
                             Text(option)
                                 .foregroundStyle(Color["Label"])
                             Spacer()
-                            Image(systemName: "\(selected == option ? "checkmark" : "")")
-                                .bold()
+                            if selected == option {
+                                Image(systemName: "checkmark")
+                                    .bold()
+                            }
                         }
-                    })
+                    }
                 }
-            }, header: {
+            } header: {
                 Text("\n\nSave In Health")
-            }, footer: {
+            } footer: {
                 Text("Your device does not record or save any sound to measure audio levels.")
-            })
+            }
             
             if selected == "For 8 Days" {
-                Section(content: {}, footer: {
+                Section {} footer: {
                     Text("This data must be saved for eight days to provide notifications that may protect your hearing. The data will be deleted after eight days.")
-                })
+                }
             }
         }
     }

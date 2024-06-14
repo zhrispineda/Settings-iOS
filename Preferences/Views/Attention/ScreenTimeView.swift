@@ -44,99 +44,99 @@ struct ScreenTimeView: View {
                 }
             }
             
-            Section(content: { // TODO: Optimize sheets for iPad
+            Section {
                 if appWebsiteActivityEnabled {
-                    SettingsLink(icon: "Downtime80x80", id: "Downtime", subtitle: "Schedule time away from the screen", content: {
+                    SettingsLink(icon: "Downtime80x80", id: "Downtime", subtitle: "Schedule time away from the screen") {
                         DowntimeView()
-                    })
-                    SettingsLink(icon: "App Limits80x80", id: "App Limits", subtitle: "Set time limits for apps", content: {
+                    }
+                    SettingsLink(icon: "App Limits80x80", id: "App Limits", subtitle: "Set time limits for apps") {
                         AppLimitsView()
-                    })
-                    SettingsLink(icon: "AlwaysAllow29x29", id: "Always Allowed", subtitle: "Choose apps to allow at all times", content: {
+                    }
+                    SettingsLink(icon: "AlwaysAllow29x29", id: "Always Allowed", subtitle: "Choose apps to allow at all times") {
                         AlwaysAllowedView()
-                    })
+                    }
                 } else {
-                    Button(action: {
+                    Button {
                         showingAppWebsiteActivitySheet.toggle()
-                    }, label: {
-                        SettingsLink(color: Color.cyan, icon: "chart.bar.xaxis", larger: false, id: "App & Website Activity", subtitle: "Reports, Downtime & App Limits", content: {})
+                    } label: {
+                        SettingsLink(color: Color.cyan, icon: "chart.bar.xaxis", larger: false, id: "App & Website Activity", subtitle: "Reports, Downtime & App Limits") {}
                             .foregroundStyle(Color["Label"])
-                    })
-                    .sheet(isPresented: $showingAppWebsiteActivitySheet, content: {
+                    }
+                    .sheet(isPresented: $showingAppWebsiteActivitySheet) {
                         AppWebsiteActivitySheetView(appWebsiteActivityEnabled: $appWebsiteActivityEnabled)
                             .frame(width: 400, height: 730)
-                    })
+                    }
                 }
-                SettingsLink(color: Color.white, iconColor: Color.blue, icon: "screen-distance.symbol_Normal", id: "Screen Distance", subtitle: "Reduce eye strain", content: {
+                SettingsLink(color: Color.white, iconColor: Color.blue, icon: "screen-distance.symbol_Normal", id: "Screen Distance", subtitle: "Reduce eye strain") {
                     ScreenDistanceView()
-                        .onAppear(perform: {
+                        .onAppear {
                             showingScreenDistanceSheet.toggle()
-                        })
-                })
-                .sheet(isPresented: $showingScreenDistanceSheet, content: {
+                        }
+                }
+                .sheet(isPresented: $showingScreenDistanceSheet) {
                     ScreenDistanceSheetView()
                         .frame(width: 400, height: 730)
-                })
-            }, header: {
+                }
+            } header: {
                 Text("Limit Usage")
-            })
+            }
             
-            Section(content: {
-                SettingsLink(color: Color.blue, icon: "bubble.left.and.exclamationmark.bubble.right.fill", larger: false, id: "Communication Safety", subtitle: "Protect from sensitive content", content: {
+            Section {
+                SettingsLink(color: Color.blue, icon: "bubble.left.and.exclamationmark.bubble.right.fill", larger: false, id: "Communication Safety", subtitle: "Protect from sensitive content") {
                     CommunicationSafetyView()
-                        .onAppear(perform: {
+                        .onAppear {
                             showingCommunicationSafetySheet.toggle()
-                        })
-                })
-                .sheet(isPresented: $showingCommunicationSafetySheet, content: {
+                        }
+                }
+                .sheet(isPresented: $showingCommunicationSafetySheet) {
                     SensitivePhotosVideosProtectionSheetView()
                         .frame(width: 400, height: 730)
-                })
-            }, header: {
+                }
+            } header: {
                 Text("Communication")
-            })
+            }
             
-            Section(content: {
-                SettingsLink(color: Color.red, icon: "nosign", larger: false, id: "Content & Privacy Restrictions", subtitle: "Block inappropriate content", content: { ContentPrivacyRestrictionsView() })
-            }, header: {
+            Section {
+                SettingsLink(color: Color.red, icon: "nosign", larger: false, id: "Content & Privacy Restrictions", subtitle: "Block inappropriate content") { ContentPrivacyRestrictionsView() }
+            } header: {
                 Text("Restrictions")
-            })
+            }
             
-            Section(content: {
+            Section {
                 Button("Lock Screen Time Settings", action: {}) // TODO: Fullscreen sheet
-            }, footer: {
+            } footer: {
                 Text("Use a passcode to secure Screen Time settings.")
-            })
+            }
             
-            Section(content: {
-                Button("Use with Other Devices or Family", action: {
+            Section {
+                Button("Use with Other Devices or Family") {
                     showingAppleAccountSheet.toggle()
-                })
+                }
                 .sheet(isPresented: $showingAppleAccountSheet) {
                     NavigationStack {
                         AppleAccountLoginView(isMainSheet: true)
                     }
                 }
-            }, footer: {
+            } footer: {
                 Text("Sign in to iCloud to report your screen time on any iPad or iPhone, or set up Family Sharing to use Screen Time with your family‘s devices.")
-            })
+            }
             
             if appWebsiteActivityEnabled {
-                Section(content: {
-                    Button("Turn Off App & Website Activity", action: {
+                Section {
+                    Button("Turn Off App & Website Activity") {
                         showingDisableScreenTimeDialog.toggle()
-                    })
+                    }
                     .foregroundStyle(.red)
-                    .confirmationDialog("Screen time will no longer be reported, and all limits and downtime settings will be turned off.", isPresented: $showingDisableScreenTimeDialog, titleVisibility: .visible, actions: {
+                    .confirmationDialog("Screen time will no longer be reported, and all limits and downtime settings will be turned off.", isPresented: $showingDisableScreenTimeDialog, titleVisibility: .visible) {
                         Button("Turn Off App & Website Activity", role: .destructive) {
                             withAnimation {
                                 appWebsiteActivityEnabled.toggle()
                             }
                         }
-                    })
-                }, footer: {
+                    }
+                } footer: {
                     Text("Turning off App & Website Activity disables real-time reporting, Downtime, App Limits, and Always Allowed.")
-                })
+                }
             }
         }
     }

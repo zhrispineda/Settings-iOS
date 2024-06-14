@@ -33,9 +33,9 @@ struct SafetyCheckView: View {
             }
             
             Section {
-                Button(action: {
+                Button {
                     showingAlert.toggle()
-                }, label: {
+                } label: {
                     HStack {
                         Image(systemName: "person.2.gobackward")
                             .symbolRenderingMode(.hierarchical)
@@ -59,13 +59,13 @@ struct SafetyCheckView: View {
                         }
                     }
                     .foregroundStyle(Color["Label"])
-                })
+                }
             }
             
             Section {
-                Button(action: {
+                Button {
                     showingAlert.toggle()
-                }, label: {
+                } label: {
                     HStack {
                         Image(systemName: "person.2.badge.gearshape.fill")
                             .symbolRenderingMode(.hierarchical)
@@ -89,7 +89,7 @@ struct SafetyCheckView: View {
                         }
                     }
                     .foregroundStyle(Color["Label"])
-                })
+                }
             }
         }
         .alert("iCloud Account with Two-Factor Authentication Required", isPresented: $showingAlert) {

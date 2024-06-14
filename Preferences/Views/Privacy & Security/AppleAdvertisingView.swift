@@ -10,21 +10,21 @@ import SwiftUI
 struct AppleAdvertisingView: View {
     var body: some View {
         CustomList(title: "Apple Advertising") {
-            Section(content: {}, header: {
+            Section {} header: {
                 Text("\n\nApple-Delivered Advertising")
-            }, footer: {
+            } footer: {
                 Text("The Apple advertising platform does not track you. It is designed to protect your privacy and does not follow you across apps and websites owned by other companies. You have control over how Apple uses your information. [About Apple Advertising & Privacy...](#)")
-            })
+            }
             
-            Section(content: {
-                Button("View Ad Targeting Information", action: {})
-            }, footer: {
+            Section {
+                Button("View Ad Targeting Information") {}
+            } footer: {
                 Text("Ad targeting information is used by Apple to personalize your ad experience.")
-            })
+            }
             
-            Section(content: {}, footer: {
+            Section {} footer: {
                 Text("After the App Store, Apple News, or Stocks asks your permission to receive personalized ads, a setting will appear here reflecting your choice.")
-            })
+            }
         }
     }
 }
