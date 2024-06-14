@@ -2,7 +2,7 @@
 //  HealthDetailsDataView.swift
 //  Preferences
 //
-//  Settings > Health > Health Details > [Health Data]
+//  Settings > Apps > Health > Health Details > [Health Data]
 //
 
 import SwiftUI
@@ -13,23 +13,23 @@ struct HealthDetailsDataView: View {
     
     var body: some View {
         CustomList(title: title) {
-            Section(content: {
+            Section {
                 Text("None")
                     .foregroundStyle(.secondary)
-            }, header: {
+            } header: {
                 Text("\n\nApps and Services Allowed to Read Data")
-            }, footer: {
+            } footer: {
                 Text("Share \(title.contains("Fitzpatrick") ? "Fitzpatrick skin type" : title.contains("That") ? "this" : title.lowercased()) data with apps and services listed above. As apps and services request access to your Health data, they will be added to the list.")
-            })
+            }
             
-            Section(content: {
+            Section {
                 Text("None")
                     .foregroundStyle(.secondary)
-            }, header: {
+            } header: {
                 Text("Research Studies Allowed to Read Data")
-            }, footer: {
+            } footer: {
                 Text("Share \(title.contains("Fitzpatrick") ? "Fitzpatrick skin type" : title.contains("That") ? "this" : title.lowercased()) data with the studies in Research listed above. As you authorize studies in the Research app they will be added to the list. You can review and manage all of the studies you are enrolled in by going to the Research app.")
-            })
+            }
             
             if title == "Fitzpatrick Skin Type" {
                 VStack(alignment: .leading, spacing: 5) {

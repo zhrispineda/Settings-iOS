@@ -19,17 +19,19 @@ struct DisplayZoomView: View {
     var body: some View {
         CustomList(title: "Display Zoom") {
             ForEach(options, id: \.self) { option in
-                Button(action: {
+                Button {
                     selected = option
-                }, label: {
+                } label: {
                     HStack {
                         Text(option)
                             .foregroundStyle(Color["Label"])
                         Spacer()
-                        Image(systemName: "\(selected == option ? "checkmark" : "")")
-                            .bold()
+                        if selected == option {
+                            Image(systemName: "checkmark")
+                                .bold()
+                        }
                     }
-                })
+                }
             }
         }
         .toolbar {
@@ -43,23 +45,22 @@ struct DisplayZoomView: View {
                 }
             }
             ToolbarItem(placement: .topBarTrailing) {
-                Button(action: {
+                Button {
                     Device().isPhone ? showingChangeDialog.toggle() : showingChangeAlert.toggle()
-                }, label: {
+                } label: {
                     Text("Set")
-                })
+                }
                 .disabled(selected == lastSelection)
             }
         }
-        .alert("Use \(selected == "Larger Text" ? "Zoomed" : "More Space")", isPresented: $showingChangeAlert,
-               actions: {
+        .alert("Use \(selected == "Larger Text" ? "Zoomed" : "More Space")", isPresented: $showingChangeAlert) {
             Button("Use \(selected == "Larger Text" ? "Zoomed" : "More Space")", role: .none) {
                 lastSelection = selected
             }
             Button("Cancel", role: .cancel) {}
-        }, message: {
+        } message: {
             Text("Changing Display Zoom will restart iPad.")
-        })
+        }
         .confirmationDialog("Changing Display Zoom will restart iPhone.", isPresented: $showingChangeDialog,
                             titleVisibility: .visible,
                             actions: {

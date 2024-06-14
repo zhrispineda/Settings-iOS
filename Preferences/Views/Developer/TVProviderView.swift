@@ -15,34 +15,34 @@ struct TVProviderView: View {
     
     var body: some View {
         CustomList(title: "TV Provider") {
-            Section(content: {
+            Section {
                 Toggle("Cache Buster", isOn: $cacheBusterEnabled)
-            }, header: {
+            } header: {
                 Text("\n\nOptions")
-            }, footer: {
+            } footer: {
                 Text("When enabled, the query parameter “cachebuster“ will be added to development TV Provider Auth URLs.")
-            })
+            }
             
-            Section(content: {
+            Section {
                 Toggle("Disable Timeouts", isOn: $disableTimeoutsEnabled)
-            }, footer: {
+            } footer: {
                 Text("When enabled, the defauzlt callback timeouts will be disabled in development TV Provider authentication contexts.")
-            })
+            }
             
-            Section(content: {
+            Section {
                 Toggle("Simulate Expired Token", isOn: $disableTimeoutsEnabled)
-            }, footer: {
+            } footer: {
                 Text("When enabled, authentication tokens provided to applications and the JavaScript authentication context will have an expiration date in the past.")
-            })
+            }
             
-            Section(content: {
-                Button(action: {}, label: {
+            Section {
+                Button {} label: {
                     Text("Add TV Provider")
                         .frame(maxWidth: .infinity)
-                })
-            }, header: {
+                }
+            } header: {
                 Text("Development TV Providers")
-            })
+            }
         }
     }
 }

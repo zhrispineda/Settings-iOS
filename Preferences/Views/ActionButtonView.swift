@@ -40,9 +40,9 @@ struct CustomButon: View {
     var action: () -> Void
     
     var body: some View {
-        Button(action: {
+        Button {
             self.action()
-        }) {
+        } label: {
             HStack {
                 Image(systemName: "chevron.left")
                 Text("Settings")

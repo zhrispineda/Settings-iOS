@@ -2,7 +2,7 @@
 //  SiriSearchView.swift
 //  Preferences
 //
-//  Settings > Siri & Search
+//  Settings > Siri
 //
 
 import SwiftUI
@@ -76,7 +76,7 @@ struct SiriView: View {
                     NavigationLink("Siri Responses", destination: SiriResponsesView())
                     NavigationLink("Announce Calls", destination: EmptyView())
                     NavigationLink("Announce Notifications", destination: EmptyView())
-                    Button(action: {}, label: { // TODO: Popover
+                    Button {} label: { // TODO: Popover
                         HStack {
                             Text("My Information")
                                 .foregroundStyle(Color["Label"])
@@ -86,7 +86,7 @@ struct SiriView: View {
                             Image(systemName: "chevron.right")
                                 .foregroundStyle(Color(UIColor.tertiaryLabel))
                         }
-                    })
+                    }
                 }
                 NavigationLink("Messaging with Siri", destination: {
                     CustomList(title: "Messaging with Siri") {}
@@ -139,7 +139,7 @@ struct SiriView: View {
             }
             
             Section {
-                NavigationLink("Siri & Dictation History", destination: {})
+                NavigationLink("Siri & Dictation History") {}
             }
         }
     }

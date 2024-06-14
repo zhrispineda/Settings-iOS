@@ -2,7 +2,7 @@
 //  SiriLanguageView.swift
 //  Preferences
 //
-//  Settings > Siri & Search > Language
+//  Settings > Siri > Language
 //
 
 import SwiftUI
@@ -19,16 +19,16 @@ struct SiriLanguageView: View {
                 if lang == "English (India)" {
                     NavigationLink(destination: EnglishIndiaView(), label: {
                         Label(lang, systemImage: selected == lang ? "checkmark" : "")
-                            .tint(.white)
+                            .tint(Color["Label"])
                     })
                 } else {
-                    Button(action: {
+                    Button {
                         selected = lang
-                    }, label: {
+                    } label: {
                         Label(lang, systemImage: selected == lang ? "checkmark" : "")
-                            .tint(.white)
+                            .tint(Color["Label"])
                             .lineLimit(1)
-                    })
+                    }
                 }
             }
         }

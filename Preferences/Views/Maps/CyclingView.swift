@@ -14,12 +14,12 @@ struct CyclingView: View {
     
     var body: some View {
         CustomList(title: "Cycling") {
-            Section(content: {
+            Section {
                 Toggle("Hills", isOn: $avoidHillsEnabled)
                 Toggle("Busy Roads", isOn: $avoidBusyRoads)
-            }, header: {
+            } header: {
                 Text("\n\nAvoid")
-            })
+            }
         }
     }
 }

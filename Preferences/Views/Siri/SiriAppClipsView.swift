@@ -2,7 +2,7 @@
 //  SiriAppClipsView.swift
 //  Preferences
 //
-//  Settings > Siri & Search > App Clips
+//  Settings > Siri > App Clips
 //
 
 import SwiftUI
@@ -15,22 +15,22 @@ struct SiriAppClipsView: View {
     
     var body: some View {
         CustomList(title: "App Clips") {
-            Section(content: {
+            Section {
                 Toggle("Learn from App Clips", isOn: $learnAppClipsEnabled)
-            }, header: {
+            } header: {
                 Text("\n\nIn App Clips")
-            }, footer: {
+            } footer: {
                 Text("Allow Siri to learn how you use app clips to make suggestions across apps.")
-            })
+            }
             
-            Section(content: {
+            Section {
                 Toggle("Show in Search", isOn: $showSearchEnabled)
                 Toggle("Suggest App Clips", isOn: $suggestAppClipsEnabled)
-            }, header: {
+            } header: {
                 Text("On Home Screen")
-            }, footer: {
+            } footer: {
                 Text("Allow Search and Shortcuts to show app clips. App clip suggestions are based on your location.")
-            })
+            }
         }
     }
 }

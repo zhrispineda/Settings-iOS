@@ -14,15 +14,15 @@ struct TransitView: View {
     
     var body: some View {
         CustomList(title: "Transit") {
-            Section(content: {
+            Section {
                 ForEach(options, id: \.self) { option in
-                    Button(action: {
+                    Button {
                         if let index = selectedOptions.firstIndex(of: option) {
                             selectedOptions.remove(at: index)
                         } else {
                             selectedOptions.append(option)
                         }
-                    }, label: {
+                    } label: {
                         HStack {
                             Text(option)
                                 .foregroundStyle(Color["Label"])
@@ -31,14 +31,14 @@ struct TransitView: View {
                                 Image(systemName: "checkmark")
                             }
                         }
-                    })
+                    }
                     .disabled(selectedOptions.contains(option) && selectedOptions.count < 2)
                 }
-            }, header: {
+            } header: {
                 Text("\n\nPrefer Trips Using")
-            }, footer: {
+            } footer: {
                 Text("Prefer these vehicles when planning transit trips.")
-            })
+            }
         }
     }
 }

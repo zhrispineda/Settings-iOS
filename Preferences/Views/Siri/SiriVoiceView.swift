@@ -2,7 +2,7 @@
 //  SiriVoiceView.swift
 //  Preferences
 //
-//  Settings > Siri & Search > Siri Voice
+//  Settings > Siri > Siri Voice
 //
 
 import SwiftUI
@@ -23,9 +23,9 @@ struct SiriVoiceView: View {
     
     var body: some View {
         CustomList(title: "Siri Voice") {
-            Section(content: {
+            Section {
                 ForEach(varietyOptions, id: \.self) { option in
-                    Button(action: { selectedVariety = option }, label: {
+                    Button { selectedVariety = option } label: {
                         HStack {
                             Text(option)
                                 .foregroundStyle(Color["Label"])
@@ -34,17 +34,17 @@ struct SiriVoiceView: View {
                                 Image(systemName: "checkmark")
                             }
                         }
-                    })
+                    }
                 }
-            }, header: {
+            } header: {
                 Text("\n\nVariety")
-            })
+            }
             
-            Section(content: {
+            Section {
                 switch selectedVariety {
                 case "American":
                     ForEach(AmericanVoiceOptions, id: \.self) { option in
-                        Button(action: { selectedAmericanVoice = option }, label: {
+                        Button { selectedAmericanVoice = option } label: {
                             HStack {
                                 Text(option)
                                     .foregroundStyle(Color["Label"])
@@ -53,11 +53,11 @@ struct SiriVoiceView: View {
                                     Image(systemName: "checkmark")
                                 }
                             }
-                        })
+                        }
                     }
                 case "British":
                     ForEach(BritishVoiceOptions, id: \.self) { option in
-                        Button(action: { selectedBritishVoice = option }, label: {
+                        Button { selectedBritishVoice = option } label: {
                             HStack {
                                 Text(option)
                                     .foregroundStyle(Color["Label"])
@@ -66,11 +66,11 @@ struct SiriVoiceView: View {
                                     Image(systemName: "checkmark")
                                 }
                             }
-                        })
+                        }
                     }
                 case "Indian":
                     ForEach(voiceOptions, id: \.self) { option in
-                        Button(action: { selectedIndianVoice = option }, label: {
+                        Button { selectedIndianVoice = option } label: {
                             HStack {
                                 Text(option)
                                     .foregroundStyle(Color["Label"])
@@ -79,11 +79,11 @@ struct SiriVoiceView: View {
                                     Image(systemName: "checkmark")
                                 }
                             }
-                        })
+                        }
                     }
                 default:
                     ForEach(voiceOptions, id: \.self) { option in
-                        Button(action: { selectedOtherVoice = option }, label: {
+                        Button { selectedOtherVoice = option } label: {
                             HStack {
                                 Text(option)
                                     .foregroundStyle(Color["Label"])
@@ -92,12 +92,12 @@ struct SiriVoiceView: View {
                                     Image(systemName: "checkmark")
                                 }
                             }
-                        })
+                        }
                     }
                 }
-            }, header: {
+            } header: {
                 Text("Voice")
-            })
+            }
         }
     }
 }

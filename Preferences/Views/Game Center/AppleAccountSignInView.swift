@@ -21,7 +21,7 @@ struct AppleAccountSignInView: View {
         List {
             Section {
                 VStack(alignment: .center, spacing: 15) {
-                    Text("Apple ID")
+                    Text("Apple Account")
                         .font(.largeTitle)
                         .fontWeight(.bold)
                     Text("Sign in with an email or phone number to use Game Center.")
@@ -42,29 +42,27 @@ struct AppleAccountSignInView: View {
                         .background(Color(UIColor.systemGray5))
                         .cornerRadius(10)
                     Spacer()
-                    Button(action: {
+                    Button {
                         showingForgotPasswordSheet.toggle()
-                    }, label: {
+                    } label: {
                         Text("Forgot password?")
                             .multilineTextAlignment(.center)
                             .foregroundStyle(.accent)
-                    })
+                    }
                     .buttonStyle(.plain)
                     .disabled(showingOptionsAlert)
                 }
-                .sheet(isPresented: $showingForgotPasswordSheet, content: {
+                .sheet(isPresented: $showingForgotPasswordSheet) {
                     NavigationStack {
                         ForgotPasswordView()
                     }
-                })
+                }
             }
             .listRowBackground(Color.clear)
             
             Section {
                 VStack {
-                    Button(action: {
-                        // Empty
-                    }, label: {
+                    Button {} label: {
                         VStack {
                             Image("GDPR_Blue")
                                 .resizable()
@@ -76,13 +74,13 @@ struct AppleAccountSignInView: View {
                                 .font(.caption2)
                                 .foregroundStyle(.gray)
                         }
-                    })
+                    }
                     .buttonStyle(.plain)
                     
-                    Button(action: {
+                    Button {
                         signingIn.toggle()
                         showingAlert.toggle()
-                    }, label: {
+                    } label: {
                         if signingIn || showingOptionsAlert {
                             ProgressView()
                                 .fontWeight(.medium)
@@ -100,7 +98,7 @@ struct AppleAccountSignInView: View {
                                 .foregroundStyle(username.count < 1 ? Color(UIColor.systemGray) : Color.white)
                                 .cornerRadius(15)
                         }
-                    })
+                    }
                     .frame(height: 50)
                     .disabled(username.count < 1)
                     .alert("Verification Failed", isPresented: $showingAlert) {
@@ -117,11 +115,11 @@ struct AppleAccountSignInView: View {
         .navigationBarBackButtonHidden()
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
-                Button(action: {
+                Button {
                     dismiss()
-                }, label: {
+                } label: {
                     Image(systemName: "chevron.left")
-                })
+                }
             }
         }
     }

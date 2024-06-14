@@ -2,7 +2,7 @@
 //  HealthView.swift
 //  Preferences
 //
-//  Settings > Health
+//  Settings > Apps > Health
 //
 
 import SwiftUI

@@ -2,7 +2,7 @@
 //  SiriResponsesView.swift
 //  Preferences
 //
-//  Settings > Siri & Search > Siri Responses
+//  Settings > Siri > Siri Responses
 //
 
 import SwiftUI
@@ -16,11 +16,11 @@ struct SiriResponsesView: View {
     
     var body: some View {
         CustomList(title: "Siri Responses") {
-            Section(content: {
+            Section {
                 ForEach(options, id: \.self) { option in
-                    Button(action: {
+                    Button {
                         selectedOption = option
-                    }, label: {
+                    } label: {
                         HStack {
                             Text(option)
                                 .foregroundStyle(Color["Label"])
@@ -29,23 +29,23 @@ struct SiriResponsesView: View {
                                 Image(systemName: "checkmark")
                             }
                         }
-                    })
+                    }
                 }
-            }, header: {
+            } header: {
                 Text("\n\nSpoken Responses")
-            })
+            }
             
-            Section(content: {
+            Section {
                 Toggle("Always Show Siri Captions", isOn: $alwaysShowSiriCaptionsEnabled)
-            }, footer: {
+            } footer: {
                 Text("Show what Siri says on screen.")
-            })
+            }
             
-            Section(content: {
+            Section {
                 Toggle("Always Show Speech", isOn: $alwaysShowSpeechEnabled)
-            }, footer: {
+            } footer: {
                 Text("Show a transcription of your speech on screen.")
-            })
+            }
         }
     }
 }

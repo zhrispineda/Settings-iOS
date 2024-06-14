@@ -10,11 +10,11 @@ import SwiftUI
 struct TVAppView: View {
     var body: some View {
         CustomList(title: "TV App") {
-            Section(content: {}, footer: {
+            Section {} footer: {
                 Text("\nNo developer accounts added. User accounts written by developer apps will be listed here.")
                     .frame(maxWidth: .infinity)
                     .multilineTextAlignment(.center)
-            })
+            }
         }
     }
 }

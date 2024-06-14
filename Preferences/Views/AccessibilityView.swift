@@ -10,67 +10,65 @@ import SwiftUI
 struct AccessibilityView: View {
     var body: some View {
         CustomList(title: "Accessibility") {
-            Section(content: {
+            Section {
                 if Device().isTablet {
-                    SettingsLink(color: .blue, icon: "character.magnify", larger: false, id: "Hover Text", status: "Off", content: {
+                    SettingsLink(color: .blue, icon: "character.magnify", larger: false, id: "Hover Text", status: "Off") {
                         HoverTextView()
-                    })
+                    }
                 }
-                SettingsLink(color: .blue, icon: "textformat.size", larger: false, id: "Display & Text Size", content: {
+                SettingsLink(color: .blue, icon: "textformat.size", larger: false, id: "Display & Text Size") {
                     DisplayTextSizeView()
-                })
-                SettingsLink(color: .green, icon: "circle.dotted.and.circle", larger: false, id: "Motion", content: {
+                }
+                SettingsLink(color: .green, icon: "circle.dotted.and.circle", larger: false, id: "Motion") {
                     MotionView()
-                })
-                SettingsLink(icon: "Speech29x29", id: "Spoken Content", content: {
+                }
+                SettingsLink(icon: "Speech29x29", id: "Spoken Content") {
                     SpeakSelectionView()
-                })
-            }, header: {
+                }
+            } header: {
                 Text("Vision")
-            })
+            }
             
-            Section(content: {
-                SettingsLink(color: .blue, icon: "hand.point.up.left.fill", id: "Touch", content: {
+            Section {
+                SettingsLink(color: .blue, icon: "hand.point.up.left.fill", id: "Touch") {
                     TouchView()
-                })
+                }
                 if Device().hasFaceAuth {
-                    SettingsLink(color: .green, icon: "faceid", id: "Face ID & Attention", content: {
+                    SettingsLink(color: .green, icon: "faceid", id: "Face ID & Attention") {
                         FaceAttentionView()
-                    })
+                    }
                 }
                 if Device().isPhone {
-                    SettingsLink(icon: "ControlNearby29x29", id: "Control Nearby Devices", content: {
+                    SettingsLink(icon: "ControlNearby29x29", id: "Control Nearby Devices") {
                         ControlNearbyDevicesView()
-                    })
+                    }
                 }
-                SettingsLink(color: .gray, icon: "keyboard", larger: false, id: "Keyboards", content: {
+                SettingsLink(color: .gray, icon: "keyboard", larger: false, id: "Keyboards") {
                     AccessibilityKeyboardsView()
-                })
-            }, header: {
+                }
+            } header: {
                 Text("Physical and Motor")
-            })
+            }
             
-            Section(content: {
-                SettingsLink(color: .blue, icon: "captions.bubble.fill", larger: false, id: "Subtitles & Captioning", content: {
+            Section {
+                SettingsLink(color: .blue, icon: "captions.bubble.fill", larger: false, id: "Subtitles & Captioning") {
                     SubtitlesCaptioningView()
-                })
-            }, header: {
+                }
+            } header: {
                 Text("Hearing")
-            })
+            }
             
-            Section(content: {
-                SettingsLink(icon: "LiveSpeech29x29", id: "Live Speech", status: "Off", content: {
+            Section {
+                SettingsLink(icon: "LiveSpeech29x29", id: "Live Speech", status: "Off") {
                     LiveSpeechView()
-                })
-            }, header: {
+                }
+            } header: {
                 Text("Speech")
-            })
+            }
             
-            Section(content: {
-                // Empty
-            }, header: {
+            Section {} header: {
                 Text("General")
-            })
+            }
         }
     }
 }

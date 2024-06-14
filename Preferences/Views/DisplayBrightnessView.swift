@@ -17,22 +17,22 @@ struct DisplayBrightnessView: View {
     
     var body: some View {
         CustomList(title: "Display & Brightness") {
-            Section(content: {
+            Section {
                 // TODO: Light & Dark options
                 Toggle("Automatic", isOn: $automaticEnabled.animation())
                 if automaticEnabled {
                     CustomNavigationLink(title: "Options", status: "Light Until Sunset", destination: EmptyView())
                 }
-            }, header: {
+            } header: {
                 Text("\n\nAppearance")
-            })
+            }
             
-            Section(content: {
-                NavigationLink("Text Size", destination: {})
+            Section {
+                NavigationLink("Text Size") {}
                 Toggle("Bold Text", isOn: $boldTextEnabled)
-            })
+            }
             
-            Section(content: {
+            Section {
                 Group {
                     Slider(value: $brightness,
                            in: 0.0...1.0,
@@ -48,11 +48,11 @@ struct DisplayBrightnessView: View {
                 }
                 
                 Toggle("True Tone", isOn: $trueToneEnabled)
-            }, header: {
+            } header: {
                 Text("Brightness")
-            }, footer: {
+            } footer: {
                 Text("Automatically adapt \(UIDevice().localizedModel) display based on ambient lighting conditions to make colors appear consistent in different environments.")
-            })
+            }
             
             Section {
                 CustomNavigationLink(title: "Night Shift", status: "Off", destination: EmptyView())
@@ -64,20 +64,20 @@ struct DisplayBrightnessView: View {
             }
             
             if Device().hasAlwaysOnDisplay {
-                Section(content: {
+                Section {
                     CustomNavigationLink(title: "Always On Display", status: "On", destination: EmptyView())
-                }, footer: {
+                } footer: {
                     Text("Always On Display dims the Lock Screen while keeping information like time, widgets, and notifications visible using minimal power.")
-                })
+                }
             }
             
-            Section(content: {
+            Section {
                 CustomNavigationLink(title: "Display Zoom", status: "Default", destination: EmptyView())
-            }, header: {
+            } header: {
                 Text("Display")
-            }, footer: {
+            } footer: {
                 Text("Choose a view for \(UIDevice().localizedModel). Larger Text shows larger controls. Default shows more content.")
-            })
+            }
         }
     }
 }

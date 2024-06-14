@@ -2,7 +2,7 @@
 //  ShortcutsView.swift
 //  Preferences
 //
-//  Settings > Shortcuts
+//  Settings > Apps > Shortcuts
 //
 
 import SwiftUI

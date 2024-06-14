@@ -14,34 +14,36 @@ struct AirPlaySuggestionsView: View {
     
     var body: some View {
         CustomList(title: "AirPlay Suggestions") {
-            Section(content: {
+            Section {
                 ForEach(options, id: \.self) { option in
-                    Button(action: {
+                    Button {
                         selected = option
-                    }, label: {
+                    } label: {
                         HStack {
                             Text(option)
                                 .lineLimit(1)
                                 .foregroundStyle(Color["Label"])
                             Spacer()
-                            Image(systemName: "\(selected == option ? "checkmark" : "")")
-                                .bold()
+                            if selected == option {
+                                Image(systemName: "checkmark")
+                                    .bold()
+                            }
                         }
-                    })
+                    }
                 }
-            }, header: {
+            } header: {
                 Text("\n\nSuggestion Test Mode")
-            }, footer: {
+            } footer: {
                 Text("When using a mode other than “Default“, select an AirPlay-capable TV as the suggested TV to use for testing. This TV must be connected to the same Wi-Fi network as this \(Device().model).")
-            })
+            }
             
             if selected != "Default" {
-                Section(content: {
+                Section {
                     ProgressView()
                         .frame(maxWidth: .infinity)
-                }, header: {
+                } header: {
                     Text("Choose a Suggested TV")
-                })
+                }
             }
         }
     }

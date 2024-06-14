@@ -2,7 +2,7 @@
 //  SafariView.swift
 //  Preferences
 //
-//  Settings > Safari
+//  Settings > Apps > Safari
 //
 
 import SwiftUI
@@ -27,28 +27,28 @@ struct SafariView: View {
     
     var body: some View {
         CustomList(title: "Safari") {
-            Section(content: {
-                SettingsLink(icon: "applesiri", id: "Siri & Search", content: {
+            Section {
+                SettingsLink(icon: "applesiri", id: "Siri & Search") {
                     SiriSearchDetailView(appName: "Safari")
-                })
-            }, header: {
+                }
+            } header: {
                 Text("Allow Safari to Access")
-            })
+            }
             
-            Section(content: {
+            Section {
                 CustomNavigationLink(title: "Search Engine", status: "Google", destination: SelectOptionList(title: "Search Engine", options: ["Google", "Yahoo", "Bing", "DuckDuckGo", "Ecosia"], selected: "Google"))
                 Toggle("Also Use in Private Browsing", isOn: $alsoUsePrivateBrowsingEnabled)
                 Toggle("Search Engine Suggestions", isOn: $searchEngineSuggestionsEnabled)
                 Toggle("Safari Suggestions", isOn: $safariSuggestionsEnabled)
                 CustomNavigationLink(title: "Quick Website Search", status: "On", destination: QuickWebsiteSearchView())
                 Toggle("Preload Top Hit", isOn: $preloadTopHitEnabled)
-            }, header: {
+            } header: {
                 Text("Search")
-            }, footer: {
+            } footer: {
                 Text("Private Browsing uses on-device information to provide search suggestions. No data is shared with the service provider. [About Siri Suggestions, Search & Privacy...](#)")
-            })
+            }
             
-            Section(content: {
+            Section {
                 NavigationLink("AutoFill", destination: AutoFillView())
                 CustomNavigationLink(title: "Favorites", status: "Favorites", destination: FavoritesView())
                 if Device().isTablet {
@@ -59,17 +59,17 @@ struct SafariView: View {
                 Toggle("Block Pop-ups", isOn: $blockPopUpsEnabled)
                 NavigationLink("Extensions", destination: ExtensionsView())
                 CustomNavigationLink(title: "Downloads", status: "On My \(Device().model)", destination: DownloadsView())
-            }, header: {
+            } header: {
                 Text("General")
-            })
+            }
             
-            Section(content: {
+            Section {
                 HStack {
                     Spacer()
                     VStack(spacing: 15) {
-                        Button(action: {
+                        Button {
                             separateTabBarEnabled = true
-                        }, label: {
+                        } label: {
                             VStack(spacing: 15) {
                                 Image("") // TODO: Images per device type, for both dark and light mode
                                     .resizable()
@@ -84,14 +84,14 @@ struct SafariView: View {
                                     .font(.title)
                                     .fontWeight(.light)
                             }
-                        })
+                        }
                         .buttonStyle(.plain)
                     }
                     Spacer()
                     VStack(spacing: 15) {
-                        Button(action: {
+                        Button {
                             separateTabBarEnabled = false
-                        }, label: {
+                        } label: {
                             VStack(spacing: 15) {
                                 Image("") // TODO: Images per device type, for both dark and light mode
                                     .resizable()
@@ -106,7 +106,7 @@ struct SafariView: View {
                                     .font(.title)
                                     .fontWeight(.light)
                             }
-                        })
+                        }
                         .buttonStyle(.plain)
                     }
                     Spacer()
@@ -117,64 +117,64 @@ struct SafariView: View {
                 Toggle("Allow Website Tinting", isOn: $allowWebsiteTintingEnabled)
                 CustomNavigationLink(title: "Open Links", status: "In New Tab", destination: SelectOptionList(title: "Open Links", options: ["In New Tab", "In Background"], selected: "In New Tab"))
                 CustomNavigationLink(title: "Close Tabs", status: "Manually", destination: SelectOptionList(title: "Close Tabs", options: ["Manually", "After One Day", "After One Week", "After One Month"], selected: "Manually"))
-            }, header: {
+            } header: {
                 Text("Tabs")
-            }, footer: {
+            } footer: {
                 Text("Allow Safari to automatically close tabs that haven‘t recently been viewed.")
-            })
+            }
             
-            Section(content: {
-                Button("New Profile", action: {})
-            }, header: {
+            Section {
+                Button("New Profile") {}
+            } header: {
                 Text("Profiles")
-            }, footer: {
+            } footer: {
                 VStack(alignment: .leading) {
                     Text("Profiles allow you to keep your browsing separated. You may want to set up a profile for work or school. Your history, cookies, and website data will be distinct per profile.\n")
                     Text("When you start using profiles, a default Personal profile will automatically be ceated based on your current settings. You can create additional profiles, add a name and an icon to each, and also set custom Favorites to personalize the experience.")
                 }
-            })
+            }
             
-            Section(content: {
+            Section {
                 Toggle("Prevent Cross-Site Tracking", isOn: $preventCrossSiteTrackingEnabled)
                 CustomNavigationLink(title: "Hide IP Address", status: "Off", destination: HideAddressView())
                 Toggle("Require Passcode to Unlock Private Browsing", isOn: $requirePasscodeUnlockPrivateBrowsingEnabled)
                 Toggle("Fradulent Website Warning", isOn: $fradulentWebsiteWarningEnabled)
-            }, header: {
+            } header: {
                 Text("Privacy & Security")
-            }, footer: {
+            } footer: {
                 Text("[About Safari & Privacy...](#)")
-            })
-            
-            Section {
-                Button("Clear History and Website Data", action: {})
             }
             
-            Section(content: {
+            Section {
+                Button("Clear History and Website Data") {}
+            }
+            
+            Section {
                 NavigationLink("Page Zoom", destination: PageZoomView())
                 NavigationLink("Request Desktop Website", destination: RequestDesktopWebsiteView())
                 NavigationLink("Reader", destination: SafariReaderView())
                 NavigationLink("Camera", destination: SafariCameraView())
                 NavigationLink("Microphone", destination: SafariMicrophoneView())
                 NavigationLink("Location", destination: SafariLocationView())
-            }, header: {
+            } header: {
                 Text("Settings for Websites")
-            })
-            
-            if Device().isTablet {
-                Section(content: {
-                    Toggle("Show Color in Compact Tab Bar", isOn: $showColorCompactTabBarEnabled)
-                }, header: {
-                    Text("Accessibility")
-                })
             }
             
-            Section(content: {
+            if Device().isTablet {
+                Section {
+                    Toggle("Show Color in Compact Tab Bar", isOn: $showColorCompactTabBarEnabled)
+                } header: {
+                    Text("Accessibility")
+                }
+            }
+            
+            Section {
                 Toggle("Automatically Save Offline", isOn: $automaticallySaveOfflineEnabled)
-            }, header: {
+            } header: {
                 Text("Reading List")
-            }, footer: {
+            } footer: {
                 Text("Automatically save all Reading List items from iCloud for offline reading.")
-            })
+            }
             
             Section {
                 NavigationLink("Advanced", destination: SafariAdvancedView())

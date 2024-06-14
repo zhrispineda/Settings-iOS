@@ -15,12 +15,12 @@ struct DownloadedLanguagesView: View {
     
     var body: some View {
         CustomList(title: "Manage Languages") {
-            Section(content: {}, footer: {
+            Section {} footer: {
                 Text("Both input and output languages must be downloaded to enable offline translation.")
-            })
+            }
             
             if !downloaded.isEmpty {
-                Section(content: {
+                Section {
                     ForEach($downloaded, id: \.self, editActions: .delete) { $language in
                         Text(language)
                     }
@@ -37,19 +37,19 @@ struct DownloadedLanguagesView: View {
                             return index1 < index2
                         }
                     }
-                }, header: {
+                } header: {
                     Text("Available Offline")
-                })
+                }
             }
             
-            Section(content: {
+            Section {
                 ForEach(languages, id: \.self) { language in
-                    Button(action: {
+                    Button {
                         downloaded.append(language)
                         if let index = languages.firstIndex(of: language) {
                             languages.remove(at: index)
                         }
-                    }, label: {
+                    } label: {
                         HStack {
                             Text(language)
                                 .foregroundStyle(Color["Label"])
@@ -58,16 +58,16 @@ struct DownloadedLanguagesView: View {
                                 .imageScale(.large)
                                 .bold()
                         }
-                    })
+                    }
                 }
-            }, header: {
+            } header: {
                 Text("Languages Available for Download")
-            })
+            }
         }
         .toolbar {
             if !downloaded.isEmpty {
-                EditButton()
-                    .bold()
+                //EditButton()
+                    //.bold()
             }
         }
     }

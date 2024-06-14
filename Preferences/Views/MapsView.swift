@@ -2,7 +2,7 @@
 //  MapsView.swift
 //  Preferences
 //
-//  Settings > Maps
+//  Settings > Apps > Maps
 //
 
 import SwiftUI
@@ -18,57 +18,59 @@ struct MapsView: View {
     
     var body: some View {
         CustomList(title: "Maps") {
-            Section(content: {
+            Section {
                 SettingsLink(icon: "applesiri", id: "Siri & Search", content: {
                     SiriSearchDetailView(appName: "Maps")
                 })
                 IconToggle(enabled: $backgroundAppRefreshEnabled, color: .gray, icon: "gear", title: "Background App Refresh")
-            }, header: {
+            } header: {
                 Text("Allow Maps to Access")
-            }, footer: {
+            } footer: {
                 Text("[About Apple Maps & Privacy...](#)")
-            })
+            }
             
-            Section(content: {
+            Section {
                 ForEach(options, id: \.self) { option in
-                    Button(action: {
+                    Button {
                         selected = option
-                    }, label: {
+                    } label: {
                         HStack {
                             Text(option)
                                 .foregroundStyle(Color["Label"])
                             Spacer()
-                            Image(systemName: "\(selected == option ? "checkmark" : "")")
+                            if selected == option {
+                                Image(systemName: "checkmark")
+                            }
                         }
-                    })
+                    }
                 }
-            }, header: {
+            } header: {
                 Text("Preferred Type of Travel")
-            }, footer: {
+            } footer: {
                 Text("When available, this transportation type will be used to get directions and to estimate your travel time.")
-            })
+            }
             
-            Section(content: {
+            Section {
                 NavigationLink("Driving", destination: DrivingView())
                 NavigationLink("Walking", destination: WalkingView())
                 NavigationLink("Transit", destination: TransitView())
                 NavigationLink("Cycling", destination: CyclingView())
-            }, header: {
+            } header: {
                 Text("Directions")
-            })
+            }
             
-            Section(content: {
+            Section {
                 Toggle("Air Quality Index", isOn: $airQualityIndexEnabled)
                 Toggle("Weather Conditions", isOn: $weatherConditionsEnabled)
-            }, header: {
+            } header: {
                 Text("Climate")
-            })
+            }
             
-            Section(content: {
+            Section {
                 Toggle("Always in English", isOn: $alwaysEnglishEnabled)
-            }, header: {
+            } header: {
                 Text("Map Labels")
-            })
+            }
         }
     }
 }

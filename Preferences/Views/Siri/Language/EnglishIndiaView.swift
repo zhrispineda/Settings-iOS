@@ -2,7 +2,7 @@
 //  EnglishIndiaView.swift
 //  Preferences
 //
-//  Settings > Siri & Search > Language > English (India)
+//  Settings > Siri > Language > English (India)
 //
 
 import SwiftUI
@@ -13,28 +13,28 @@ struct EnglishIndiaView: View {
     
     var body: some View {
         CustomList(title: "English (India)") {
-            Section(content: {}, footer: {
+            Section {} footer: {
                 Text("Siri can recognize multiple languages in India. You can speak to Siri using English mixed with Bangla, Gujarati, Hindi, Kannada, Malayalam, Marathi, Punjabi, Tamil, or Telugu. [Learn more...](https://support.apple.com/en-us/105012)")
-            })
+            }
             
-            Section(content: {
+            Section {
                 ForEach(options, id: \.self) { option in
-                    Button(action: {
+                    Button {
                         selected = option
-                    }, label: {
+                    } label: {
                         Label(option, systemImage: selected == option ? "checkmark" : "")
-                            .tint(.white)
-                    })
+                            .tint(Color["Label"])
+                    }
                 }
-            }, header: {
+            } header: {
                 Text("Preferred Response Language")
-            }, footer: {
+            } footer: {
                 if selected == "English Only" {
                     Text("Siri will respond in English only.")
                 } else {
                     Text("Siri will respond either in English or in Hindi, based on the primary language you use to interact with Siri. This selection applies to iOS only.")
                 }
-            })
+            }
         }
     }
 }

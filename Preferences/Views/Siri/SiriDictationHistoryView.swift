@@ -2,7 +2,7 @@
 //  SiriDictationHistoryView.swift
 //  Preferences
 //
-//  Settings > Siri & Search > Siri & Dictation History
+//  Settings > Siri > Siri & Dictation History
 //
 
 import SwiftUI
@@ -16,10 +16,10 @@ struct SiriDictationHistoryView: View {
     
     var body: some View {
         CustomList(title: "Siri & Dictation History") {
-            Section(content: {
-                Button("Delete Siri & Dictation History", action: {
+            Section {
+                Button("Delete Siri & Dictation History") {
                     Device().isPhone ? showingDeleteHistoryDialog.toggle() : showingDeleteHistoryAlert.toggle()
-                })
+                }
                 .foregroundStyle(.red)
                 .alert("Delete Siri & Dictation History", isPresented: $showingDeleteHistoryAlert) {
                     Button("Delete Siri & Dictation History", role: .destructive) { showingProcessRequestAlert.toggle()
@@ -42,9 +42,9 @@ struct SiriDictationHistoryView: View {
                 } message: {
                     Text("Your Siri and Dictation history will be deleted.")
                 }
-            }, footer: {
+            } footer: {
                 Text("Delete Siri & Dictation interactions currently associated with this \(Device().model) from Apple servers. [About Improve Siri & Dictation...](#)")
-            })
+            }
         }
     }
 }

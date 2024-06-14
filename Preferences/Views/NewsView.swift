@@ -2,7 +2,7 @@
 //  NewsView.swift
 //  Preferences
 //
-//  Settings > News
+//  Settings > Apps > News
 //
 
 import SwiftUI
@@ -19,17 +19,17 @@ struct NewsView: View {
     
     var body: some View {
         CustomList(title: "News") {
-            Section(content: {
-                SettingsLink(icon: "applesiri", id: "Siri & Search", content: {
+            Section {
+                SettingsLink(icon: "applesiri", id: "Siri & Search") {
                     SiriSearchDetailView(appName: "News")
-                })
+                }
                 IconToggle(enabled: $liveActivitiesEnabled, color: .blue, icon: "clock.badge.fill", title: "Live Activities")
                 IconToggle(enabled: $backgroundAppRefreshEnabled, color: .gray, icon: "gear", title: "Background App Refresh")
-            }, header: {
+            } header: {
                 Text("Allow News to Access")
-            })
+            }
             
-            Section(content: {
+            Section {
                 Toggle("Restrict Stories in Today", isOn: $restrictStoriesTodayEnabled)
                     .alert("Restrict Stories?", isPresented: $showingRestrictAlert) {
                         Button("Turn On") {}
@@ -45,32 +45,32 @@ struct NewsView: View {
                             restrictStoriesTodayEnabled.toggle()
                         }
                     }
-                    .onChange(of: restrictStoriesTodayEnabled, {
+                    .onChange(of: restrictStoriesTodayEnabled) {
                         if restrictStoriesTodayEnabled {
                             Device().isPhone ? showingRestrictDialog.toggle() : showingRestrictAlert.toggle()
                         }
-                    })
-            }, header: {
+                    }
+            } header: {
                 Text("News Settings")
-            }, footer: {
+            } footer: {
                 Text("Only stories from channels you follow will appear in Today. All other sources will be blocked.")
-            })
+            }
             
-            Section(content: {
+            Section {
                 Toggle("Download Issues", isOn: $downloadIssuesEnabled)
-            }, header: {
+            } header: {
                 Text("Automatic Downloads")
-            }, footer: {
+            } footer: {
                 Text("Automatically download magazine issues for offline reading. Requires an Apple News+ subscription.")
-            })
+            }
             
-            Section(content: {
-                Button("About Apple News & Privacy", action: {})
-                Button("Apple News Newsletters & Privacy", action: {})
+            Section {
+                Button("About Apple News & Privacy") {}
+                Button("Apple News Newsletters & Privacy") {}
                 Toggle("Reset Identifier", isOn: $resetIdentifierEnabled)
-            }, footer: {
+            } footer: {
                 Text("Turn on to reset the identifier used by Apple News and Stocks to report statistics to news publishers. The identifier will be reset the next time you open Apple News.")
-            })
+            }
         }
     }
 }
