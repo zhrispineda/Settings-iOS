@@ -29,6 +29,7 @@ struct HText: View {
             Text(title)
             Spacer()
             Text(status)
+                .foregroundStyle(.secondary)
         }
     }
 }

@@ -14,7 +14,7 @@ struct AssistiveTouchView: View {
     
     var body: some View {
         CustomList {
-            Section(content: {
+            Section {
                 Toggle("MOUSE_POINTER_DWELL_CONTROL", isOn: $mousePointerDwellControlEnabled)
                 CustomNavigationLink(title: "MOUSE_POINTER_DWELL_AUTOREVERT", status: "Tap", destination: FallbackActionView())
                 NavigationLink("MOUSE_POINTER_DWELL_TOLERANCE", destination: MovementToleranceView())
@@ -31,9 +31,9 @@ struct AssistiveTouchView: View {
                             .foregroundStyle(.secondary)
                     }
                 }
-            }, footer: {
+            } footer: {
                 Text("MOUSE_POINTER_DWELL_CONTROL_FOOTER")
-            })
+            }
         }
     }
 }

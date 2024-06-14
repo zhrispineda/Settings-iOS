@@ -13,11 +13,11 @@ struct MovementToleranceView: View {
     
     var body: some View {
         CustomList(title: "MOUSE_POINTER_DWELL_TOLERANCE") {
-            Section(content: {
+            Section {
                 Slider(value: $tolerance, in: 0.0...200.0, step: 1.0)
-            }, footer: {
+            } footer: {
                 Text("DWELL_MOVEMENT_TOLERACE_FOOTER")
-            })
+            }
             
             Section {
                 Circle()

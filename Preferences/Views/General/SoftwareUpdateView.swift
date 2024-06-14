@@ -47,7 +47,10 @@ struct SoftwareUpdateView: View {
                     }
                     
                     if !checkingForUpdates && updateCheckFailed {
-                        Button("Try Again") {}
+                        Button("Try Again") {
+                            updateCheckFailed = false
+                            checkUpdate(withDelay: Double.random(in: 1.0...5.0))
+                        }
                             .font(.subheadline)
                     }
                 }

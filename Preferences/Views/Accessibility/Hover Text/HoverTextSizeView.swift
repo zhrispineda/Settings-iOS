@@ -47,9 +47,9 @@ struct HoverTextSizeSlider: View {
                 .padding()
             }
             .padding()
-            Button(action: {
+            Button {
                 textSize = 3.0
-            }, label: {
+            } label: {
                 ZStack {
                     RoundedRectangle(cornerRadius: 15.0)
                         .frame(height: 50)
@@ -57,7 +57,7 @@ struct HoverTextSizeSlider: View {
                     Text("Reset Font Size to Default")
                 }
                 .padding()
-            })
+            }
             Spacer()
         }
     }

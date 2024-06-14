@@ -13,11 +13,9 @@ struct TouchView: View {
     
     var body: some View {
         CustomList(title: "Touch") {
-            Section(content: {
+            Section {
                 CustomNavigationLink(title: "AssistiveTouch", status: "Off", destination: AssistiveTouchView())
-            }, footer: {
-                Text(Device().isPhone ? "AssistiveTouchInstructionalTextFormat_IPHONE" : "AssistiveTouchInstructionalTextFormat_IPAD")
-            })
+            }
             
             Section(content: {
                 Toggle("Shake to Undo", isOn: $shakeUndoEnabled)

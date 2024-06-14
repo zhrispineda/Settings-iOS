@@ -15,9 +15,9 @@ struct VPNDeviceManagementView: View {
         Color(UIColor.systemGroupedBackground)
             .ignoresSafeArea()
             .navigationTitle("VPN & Device Management")
-            .onAppear(perform: {
+            .onAppear {
                 dismiss()
-            })
+            }
     }
 }
 

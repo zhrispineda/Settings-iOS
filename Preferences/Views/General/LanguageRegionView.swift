@@ -14,7 +14,7 @@ struct LanguageRegionView: View {
     
     var body: some View {
         CustomList(title: "Language & Region") {
-            Section(content: {
+            Section {
                 ForEach($languages, id: \.self, editActions: .move) { $lang in
                     HStack {
                         VStack(alignment: .leading) {
@@ -29,15 +29,15 @@ struct LanguageRegionView: View {
                             .foregroundStyle(.tertiary)
                     }
                 }
-                Button("Add Language...", action: {})
-            }, header: {
+                Button("Add Language...") {}
+            } header: {
                 Text("Preferred Languages")
-            }, footer: {
+            } footer: {
                 Text("Apps and websites will use the first language in this list that they support.")
-            })
+            }
             
             Section {
-                Button(action: {}, label: {
+                Button {} label: {
                     HStack {
                         Text("Region")
                         Spacer()
@@ -49,8 +49,8 @@ struct LanguageRegionView: View {
                             .fontWeight(.medium)
                     }
                     .foregroundStyle(Color["Label"])
-                })
-                Button(action: {}, label: {
+                }
+                Button {} label: {
                     HStack {
                         Text("Calendar")
                         Spacer()
@@ -62,7 +62,7 @@ struct LanguageRegionView: View {
                             .fontWeight(.medium)
                     }
                     .foregroundStyle(Color["Label"])
-                })
+                }
                 CustomNavigationLink(title: "Temperature", status: "°F", destination: SelectOptionList(title: "Temperature", options: ["Celsius (°C)", "Fahrenheit (°F)"], selected: "Fahrenheit (°F)"))
                 CustomNavigationLink(title: "Measurement System", status: "US", destination: SelectOptionList(title: "Measurement System", options: ["Metric", "US", "UK"], selected: "US"))
                 CustomNavigationLink(title: "First Day of Week", status: "Sunday", destination: SelectOptionList(title: "First Day of Week", options: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], selected: "Sunday"))
@@ -70,11 +70,11 @@ struct LanguageRegionView: View {
                 CustomNavigationLink(title: "Number Format", status: "1,234,567.89", destination: SelectOptionList(title: "Number Format", options: ["1,234,567.89", "1.234.567,89", "1234567.89", "1 234 567,89"], selected: "1,234,567.89"))
             }
             
-            Section(content: {
+            Section {
                 Toggle("Live Text", isOn: $liveTextEnabled)
-            }, footer: {
+            } footer: {
                 Text("Select text in images to copy or taker action.")
-            })
+            }
             
             Section {
                 VStack(alignment: .center) {

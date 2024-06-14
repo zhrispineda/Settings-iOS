@@ -14,19 +14,38 @@ struct HoverTextFontView: View {
     
     var body: some View {
         CustomList(title: "Font") {
-            ForEach(options, id: \.self) { font in
-                Button(action: {
-                    selected = font
-                }, label: {
+            Section {
+                Button {
+                    selected = "Default"
+                } label: {
                     HStack {
-                        Text(font)
-                            .font(Font.custom(font, size: 18))
+                        Text("Default")
+                            .font(.system(size: 18))
                             .foregroundStyle(Color["Label"])
                         Spacer()
-                        Image(systemName: "checkmark")
-                            .opacity(selected == font ? 1 : 0)
+                        if selected == "Default" {
+                            Image(systemName: "checkmark")
+                        }
                     }
-                })
+                }
+            }
+            
+            Section {
+                ForEach(UIFont.familyNames, id: \.self) { font in
+                    Button {
+                        selected = font
+                    } label: {
+                        HStack {
+                            Text(font)
+                                .font(Font.custom(font, size: 18))
+                                .foregroundStyle(Color["Label"])
+                            Spacer()
+                            if selected == font {
+                                Image(systemName: "checkmark")
+                            }
+                        }
+                    }
+                }
             }
         }
     }

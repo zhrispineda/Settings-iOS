@@ -15,24 +15,26 @@ struct FallbackActionView: View {
     
     var body: some View {
         CustomList(title: "MOUSE_POINTER_DWELL_AUTOREVERT") {
-            Section(content: {
+            Section {
                 Toggle("MOUSE_POINTER_DWELL_AUTOREVERT_ENABLED", isOn: $fallbackActionEnabled)
-            }, footer: {
+            } footer: {
                 Text("MOUSE_POINTER_DWELL_AUTOREVERT_FOOTER")
-            })
+            }
             
             Section {
                 ForEach(options, id: \.self) { option in
-                    Button(action: {
+                    Button {
                         selected = option
-                    }, label: {
+                    } label: {
                         HStack {
                             Text(option)
                                 .foregroundStyle(Color["Label"])
                             Spacer()
-                            Image(systemName: "\(selected == option ? "checkmark" : "")")
+                            if selected == option {
+                                Image(systemName: "checkmark")
+                            }
                         }
-                    })
+                    }
                 }
             }
         }

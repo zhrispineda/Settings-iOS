@@ -27,7 +27,9 @@ struct HotCornersDetailView: View {
                             Text(option)
                                 .foregroundStyle(Color["Label"])
                             Spacer()
-                            Image(systemName: "\(selected == option ? "checkmark" : "")")
+                            if selected == option {
+                                Image(systemName: "checkmark")
+                            }
                         }
                     }
                 }
@@ -44,7 +46,9 @@ struct HotCornersDetailView: View {
                             Text(option)
                                 .foregroundStyle(Color["Label"])
                             Spacer()
-                            Image(systemName: "\(selected == option ? "checkmark" : "")")
+                            if selected == option {
+                                Image(systemName: "checkmark")
+                            }
                         }
                     }
                 }
@@ -61,7 +65,9 @@ struct HotCornersDetailView: View {
                             Text(option)
                                 .foregroundStyle(Color["Label"])
                             Spacer()
-                            Image(systemName: "\(selected == option ? "checkmark" : "")")
+                            if selected == option {
+                                Image(systemName: "checkmark")
+                            }
                         }
                     }
                 }
@@ -78,7 +84,9 @@ struct HotCornersDetailView: View {
                             Text(option)
                                 .foregroundStyle(Color["Label"])
                             Spacer()
-                            Image(systemName: "\(selected == option ? "checkmark" : "")")
+                            if selected == option {
+                                Image(systemName: "checkmark")
+                            }
                         }
                     }
                 }
