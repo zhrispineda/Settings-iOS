@@ -130,6 +130,7 @@
 		83B893BD2B8FD82D005705A3 /* FaceAttentionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B893BC2B8FD82D005705A3 /* FaceAttentionView.swift */; };
 		83B893C02B8FDBE8005705A3 /* iPhone15_Pro_NaturalTitanium.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 83B893BF2B8FDBE8005705A3 /* iPhone15_Pro_NaturalTitanium.usdz */; };
 		83B98E302B7C087B007F6C94 /* IconToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B98E2F2B7C087B007F6C94 /* IconToggle.swift */; };
+		83C94CA52C1E0192005EBBC5 /* AppleCareWarrantyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C94CA42C1E0192005EBBC5 /* AppleCareWarrantyView.swift */; };
 		83D2687A2BD7303800A86DA9 /* DisplayBrightnessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D268792BD7303800A86DA9 /* DisplayBrightnessView.swift */; };
 		83D3085C2B8AC2FA002A9B7F /* SafariAdvancedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D3085B2B8AC2FA002A9B7F /* SafariAdvancedView.swift */; };
 		83D3085F2B8AC3D3002A9B7F /* FeatureFlagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D3085E2B8AC3D3002A9B7F /* FeatureFlagsView.swift */; };
@@ -316,6 +317,7 @@
 		83B893BF2B8FDBE8005705A3 /* iPhone15_Pro_NaturalTitanium.usdz */ = {isa = PBXFileReference; lastKnownFileType = file; path = iPhone15_Pro_NaturalTitanium.usdz; sourceTree = "<group>"; };
 		83B893C12B8FDD94005705A3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		83B98E2F2B7C087B007F6C94 /* IconToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconToggle.swift; sourceTree = "<group>"; };
+		83C94CA42C1E0192005EBBC5 /* AppleCareWarrantyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleCareWarrantyView.swift; sourceTree = "<group>"; };
 		83CC61982B7952B800DAF0C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		83D268792BD7303800A86DA9 /* DisplayBrightnessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayBrightnessView.swift; sourceTree = "<group>"; };
 		83D3085B2B8AC2FA002A9B7F /* SafariAdvancedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariAdvancedView.swift; sourceTree = "<group>"; };
@@ -784,10 +786,11 @@
 				832EF3962B818EE80066A1BF /* Language & Region */,
 				838C232D2B7497530053D4C5 /* AboutView.swift */,
 				833854F62C1648CD00339C4F /* SoftwareUpdateView.swift */,
-				8356839A2B755AB3000FB136 /* KeyboardView.swift */,
-				83F3F6A42B7D16F6003CC310 /* GameControllerView.swift */,
-				83F3F6A62B7D2BAA003CC310 /* FontsView.swift */,
+				83C94CA42C1E0192005EBBC5 /* AppleCareWarrantyView.swift */,
 				83F3F6A02B7D12B6003CC310 /* DictionaryView.swift */,
+				83F3F6A62B7D2BAA003CC310 /* FontsView.swift */,
+				83F3F6A42B7D16F6003CC310 /* GameControllerView.swift */,
+				8356839A2B755AB3000FB136 /* KeyboardView.swift */,
 				83F3F6A82B7D2EFE003CC310 /* LanguageRegionView.swift */,
 				83F3F6A22B7D1454003CC310 /* VPNDeviceManagementView.swift */,
 			);
@@ -1202,6 +1205,7 @@
 				832EF38F2B814EC80066A1BF /* LocationPermissionsDetailView.swift in Sources */,
 				83F78A192B8E8CFD00025062 /* AutoHideView.swift in Sources */,
 				83D31F712B8D22DD0057CFDB /* MotionView.swift in Sources */,
+				83C94CA52C1E0192005EBBC5 /* AppleCareWarrantyView.swift in Sources */,
 				83DF95762B84266E00AEEB63 /* SiriSearchDetailView.swift in Sources */,
 				837F1DD42B8AF2B400665EAB /* CreditCardsView.swift in Sources */,
 				833854F72C1648CD00339C4F /* SoftwareUpdateView.swift in Sources */,

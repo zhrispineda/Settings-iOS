@@ -29,25 +29,19 @@ struct GeneralView: View {
             
             if !Configuration().isSimulator {
                 Section {
-                    SettingsLink(icon: "applecare", id: "AppleCare & Warranty") {}
+                    SettingsLink(icon: "applecare", id: "AppleCare & Warranty") {
+                        AppleCareWarrantyView()
+                    }
                 }
             }
             
             if !Configuration().isSimulator {
                 Section {
-                    SettingsLink(icon: "airdrop", id: "AirDrop") {
-                        EmptyView()
-                    }
-                    SettingsLink(color: .blue, icon: "airplay.video", id: "AirPlay & Continuity") {
-                        EmptyView()
-                    }
+                    SettingsLink(icon: "airdrop", id: "AirDrop") {}
+                    SettingsLink(color: .blue, icon: "airplay.video", id: "AirPlay & Continuity") {}
                     if Device().isPhone {
-                        SettingsLink(icon: "pip", id: "Picture in Picture") {
-                            EmptyView()
-                        }
-                        SettingsLink(color: .green, icon: "carplay", id: "CarPlay") {
-                            EmptyView()
-                        }
+                        SettingsLink(icon: "pip", id: "Picture in Picture") {}
+                        SettingsLink(color: .green, icon: "carplay", id: "CarPlay") {}
                     }
                 }
             }
@@ -61,9 +55,7 @@ struct GeneralView: View {
                 SettingsLink(color: .gray, icon: "ellipsis.rectangle", id: "AutoFill & Passwords") {}
                 if !Configuration().isSimulator {
                     SettingsLink(color: .gray, icon: "arrow.circlepath", id: "Background App Refresh") {}
-                    SettingsLink(color: .blue, icon: "calendar.badge.clock", id: "Date & Time") {
-                        DictionaryView()
-                    }
+                    SettingsLink(color: .blue, icon: "calendar.badge.clock", id: "Date & Time") {}
                 }
                 SettingsLink(color: .blue, icon: "character.book.closed.fill", id: "Dictionary") {
                     DictionaryView()
@@ -103,7 +95,7 @@ struct GeneralView: View {
             }
             
             Section {
-                SettingsLink(color: .gray, icon: "arrow.counterclockwise", id: "Transfer or Reset \(UIDevice().localizedModel)") {}
+                SettingsLink(color: .gray, icon: "arrow.counterclockwise", id: "Transfer or Reset \(Device().model)") {}
                 if !Configuration().isSimulator {
                     Button("Shut Down") {}
                 }

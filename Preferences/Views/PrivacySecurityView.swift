@@ -13,68 +13,76 @@ struct PrivacySecurityView: View {
             SectionHelp(title: "Privacy & Security", color: .blue, icon: "hand.raised.fill", description: "The advanced security and privacy features in \(UIDevice().systemName) help to safeguard your data while also providing contorl over the sharing of personal information. [Learn more...](https://support.apple.com/guide/iphone/use-built-in-privacy-and-security-protections-iph6e7d349d1/ios)")
             
             Section {
-                SettingsLink(color: .blue, icon: "location.fill", id: "Location Services", subtitle: "0 always, 0 while using") {
+                SettingsLink(color: .blue, icon: "location.fill", id: "Location Services", subtitle: "1 while using") {
                     EmptyView()
                 }
-                SettingsLink(color: .orange, icon: "app.connected.to.app.below.fill", larger: false, id: "Tracking") {
+                SettingsLink(color: .orange, icon: "app.connected.to.app.below.fill", id: "Tracking", status: "0") {
                     TrackingView()
                 }
             }
             
             Section {
-                SettingsLink(icon: "applecontacts", id: "Contacts") {
-                    AppPermissionsView(permissionName: "Contacts")
-                }
-                SettingsLink(icon: "applecalendar", id: "Calendars") {
+                SettingsLink(icon: "applecalendar", id: "Calendars", subtitle: "None") {
                     AppPermissionsView(permissionName: "Calendars")
                 }
-                SettingsLink(icon: "applereminders", id: "Reminders") {
-                    AppPermissionsView(permissionName: "Reminders")
+                SettingsLink(icon: "applecontacts", id: "Contacts", subtitle: "None") {
+                    AppPermissionsView(permissionName: "Contacts")
                 }
-                SettingsLink(icon: "applephotos", id: "Photos") {
+                SettingsLink(icon: "applefiles", id: "Files & Folders", subtitle: "None") {
+                    AppPermissionsView(permissionName: "Files & Folders")
+                }
+                SettingsLink(color: .indigo, icon: "moon.fill", id: "Focus", subtitle: "None") {
+                    AppPermissionsView(permissionName: "Focus")
+                }
+                SettingsLink(icon: "applehealth", id: "Health", subtitle: "None") {
+                    AppPermissionsView(permissionName: "Health")
+                }
+                SettingsLink(icon: "applehome", id: "HomeKit", subtitle: "None") {
+                    AppPermissionsView(permissionName: "HomeKit")
+                }
+                SettingsLink(icon: "applemusic", id: "Media & Apple Music", subtitle: "None") {
+                    AppPermissionsView(permissionName: "Media & Apple Music")
+                }
+                SettingsLink(color :.gray, icon: "person.badge.key.fill", id: "Passkeys Access for Web Browsers", subtitle: "None") {
+                    AppPermissionsView(permissionName: "Passkeys Access for Web Browsers")
+                }
+                SettingsLink(icon: "applephotos", id: "Photos", subtitle: "None") {
                     AppPermissionsView(permissionName: "Photos")
                 }
-                SettingsLink(color: .blue, icon: "bluetooth", id: "Bluetooth") {
+                SettingsLink(icon: "applereminders", id: "Reminders", subtitle: "None") {
+                    AppPermissionsView(permissionName: "Reminders")
+                }
+                if Device().isPhone {
+                    SettingsLink(icon: "applewallet", id: "Wallet", subtitle: "None") {
+                        AppPermissionsView(permissionName: "Wallet")
+                    }
+                }
+            }
+            
+            Section {
+                SettingsLink(color: .blue, icon: "bluetooth", id: "Bluetooth", status: "0") {
                     AppPermissionsView(permissionName: "Bluetooth")
                 }
-                SettingsLink(color: .blue, icon: "network", id: "Local Network") {
-                    AppPermissionsView(permissionName: "Local Network")
-                }
-                SettingsLink(color: .orange, icon: "mic.fill", larger: false, id: "Microphone") {
-                    AppPermissionsView(permissionName: "Microphone")
-                }
-                SettingsLink(color: .gray, icon: "waveform", id: "Speech Recognition") {
-                    AppPermissionsView(permissionName: "Speech Recognition")
-                }
-                SettingsLink(color: .white, icon: "Placeholder_Normal", id: "Camera") {
+                SettingsLink(color: .gray, icon: "camera.fill", id: "Camera", status: "0") {
                     AppPermissionsView(permissionName: "Camera")
                 }
-                SettingsLink(icon: "applehealth", id: "Health", content: {
-                    AppPermissionsView(permissionName: "Health")
-                })
+                SettingsLink(color: .blue, icon: "network", id: "Local Network", status: "0") {
+                    AppPermissionsView(permissionName: "Local Network")
+                }
+                SettingsLink(color: .orange, icon: "mic.fill", id: "Microphone", status: "0") {
+                    AppPermissionsView(permissionName: "Microphone")
+                }
+                SettingsLink(color: .green, icon: "figure.run", id: "Motion & Fitness", status: "0") {
+                    AppPermissionsView(permissionName: "Microphone")
+                }
+                SettingsLink(color: .gray, icon: "waveform", id: "Speech Recognition", status: "0") {
+                    AppPermissionsView(permissionName: "Speech Recognition")
+                }
                 if Device().isPhone {
                     SettingsLink(icon: "sensorKit60x60", id: "Research Sensor & Usage Data") {
                         AppPermissionsView(permissionName: "Research & Usage Data")
                     }
                 }
-                SettingsLink(icon: "applehome", id: "HomeKit") {
-                    AppPermissionsView(permissionName: "HomeKit")
-                }
-                SettingsLink(icon: "applewallet", id: "Wallet") {
-                    AppPermissionsView(permissionName: "Wallet")
-                }
-                SettingsLink(icon: "applemusic", id: "Media & Apple Music") {
-                    AppPermissionsView(permissionName: "Media & Apple Music")
-                }
-                SettingsLink(icon: "applefiles", id: "Files and Folders") {
-                    AppPermissionsView(permissionName: "Files and Folders")
-                }
-                SettingsLink(color: .indigo, icon: "moon.fill", larger: false, id: "Focus") {
-                    AppPermissionsView(permissionName: "Focus")
-                }
-                NavigationLink("Passkeys Access for Web Browsers", destination: AppPermissionsView(permissionName: "PassKeys Access for Web Browsers"))
-            } footer: {
-                Text("As apps request access, they will be added in the categories above.")
             }
             
             if Device().isPhone {
@@ -96,7 +104,16 @@ struct PrivacySecurityView: View {
             }
             
             Section {
-                NavigationLink("Apple Advertising", destination: AppleAdvertisingView())
+                SettingsLink(color: .blue, icon: "chart.bar.xaxis", id: "Analytics & Improvement") {
+                    AppleAdvertisingView()
+                }
+                SettingsLink(color: .blue, icon: "megaphone.fill", id: "Apple Advertising") {
+                    AppleAdvertisingView()
+                }
+            }
+            
+            Section {} header: {
+                Text("Security")
             }
         }
     }
