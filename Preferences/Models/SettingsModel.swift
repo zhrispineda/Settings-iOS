@@ -175,7 +175,7 @@ let largerIcons = ["accessibility", "bell.badge.fill", "faceid", "gear", "hand.r
 
 // MARK: Security Settings
 @MainActor let securitySettings: [SettingsItem] = [
-    SettingsItem(type: .biometricPasscode, title: "\(Device().hasFaceAuth ? "Face" : "Touch") ID & Passcode", icon: Device().hasFaceAuth ? "faceid" : "lock.fill", color: Device().hasFaceAuth ? .green : .red, destination: AnyView(EmptyView())),
+    SettingsItem(type: .biometricPasscode, title: "\(Device().hasFaceAuth ? "Face" : "Touch") ID & Passcode", icon: Device().hasFaceAuth ? "faceid" : "lock.fill", color: Device().hasFaceAuth ? .green : .red, destination: AnyView(BiometricPasscodeView())),
     SettingsItem(type: .emergencySOS, title: "Emergency SOS", icon: "sos", color: .red, destination: AnyView(EmptyView())),
     SettingsItem(type: .privacySecurity, title: "Privacy & Security", icon: "hand.raised.fill", color: .blue, destination: AnyView(PrivacySecurityView()))
 ]

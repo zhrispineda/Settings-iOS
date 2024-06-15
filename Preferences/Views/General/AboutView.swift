@@ -36,14 +36,14 @@ struct AboutView: View {
                     }
             }
             
-//            Section(content: {
+//            Section {
 //                CustomNavigationLink(title: "Limited Warranty", status: "Expires: 1/1/25", destination: EmptyView())
-//                Button(action: {}, label: {
+//                Button {} label: {
 //                    Text("Add AppleCare+ Coverage")
-//                })
-//            }, footer: {
+//                }
+//            } footer: {
 //                Text("There are 60 days left to add coverage for accidental damage.")
-//            })
+//            }
             
             Section {
                 LabeledContent("Songs", value: "0")

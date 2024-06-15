@@ -23,7 +23,7 @@ struct SectionHelp: View {
                 if UIImage(systemName: icon) != nil {
                     Image(systemName: icon)
                         .font(.system(size: icon == "personalhotspot" ? 30 : 36))
-                        .foregroundStyle(.white)
+                        .foregroundStyle(icon == "touchid" ? .pink : .white)
                 } else {
                     Image(icon)
                         .resizable()
