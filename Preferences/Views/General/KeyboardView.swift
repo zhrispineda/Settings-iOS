@@ -117,7 +117,7 @@ struct KeyboardView: View {
                 VStack(alignment: .leading) {
                     Text("\(dictationEnabled ? "Dictation sends information to Apple when necessary for processing your requests. " : "")[About Dictation & Privacy...](#)")
 //                    if dictationEnabled {
-//                        Text("\nSupport for processing voice input on \(UIDevice().localizedModel) is downloading...")
+//                        Text("\nSupport for processing voice input on \(Device().model) is downloading...")
 //                    }
                 }
             }

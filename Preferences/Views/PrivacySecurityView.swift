@@ -13,9 +13,7 @@ struct PrivacySecurityView: View {
             SectionHelp(title: "Privacy & Security", color: .blue, icon: "hand.raised.fill", description: "The advanced security and privacy features in \(UIDevice().systemName) help to safeguard your data while also providing contorl over the sharing of personal information. [Learn more...](https://support.apple.com/guide/iphone/use-built-in-privacy-and-security-protections-iph6e7d349d1/ios)")
             
             Section {
-                SettingsLink(color: .blue, icon: "location.fill", id: "Location Services", subtitle: "1 while using") {
-                    EmptyView()
-                }
+                SettingsLink(color: .blue, icon: "location.fill", id: "Location Services", subtitle: "1 while using") {}
                 SettingsLink(color: .orange, icon: "app.connected.to.app.below.fill", id: "Tracking", status: "0") {
                     TrackingView()
                 }
@@ -43,7 +41,7 @@ struct PrivacySecurityView: View {
                 SettingsLink(icon: "applemusic", id: "Media & Apple Music", subtitle: "None") {
                     AppPermissionsView(permissionName: "Media & Apple Music")
                 }
-                SettingsLink(color :.gray, icon: "person.badge.key.fill", id: "Passkeys Access for Web Browsers", subtitle: "None") {
+                SettingsLink(color: .gray, icon: "person.badge.key.fill", id: "Passkeys Access for Web Browsers", subtitle: "None") {
                     AppPermissionsView(permissionName: "Passkeys Access for Web Browsers")
                 }
                 SettingsLink(icon: "applephotos", id: "Photos", subtitle: "None") {
@@ -87,7 +85,7 @@ struct PrivacySecurityView: View {
             
             if Device().isPhone {
                 Section {
-                    SettingsLink(color: .white, iconColor: .blue, icon: "person.badge.shield.checkmark.fill", larger: false, id: "Safety Check") {
+                    SettingsLink(color: .white, iconColor: .blue, icon: "person.badge.shield.checkmark.fill", id: "Safety Check") {
                         SafetyCheckView()
                     }
                 } footer: {
@@ -96,7 +94,7 @@ struct PrivacySecurityView: View {
             }
             
             Section {
-                SettingsLink(color: .blue, icon: "eye.trianglebadge.exclamationmark.fill", larger: false, id: "Sensitive Content Warning", status: "Off") {
+                SettingsLink(color: .blue, icon: "eye.trianglebadge.exclamationmark.fill", id: "Sensitive Content Warning", status: "Off") {
                     SensitiveContentWarningView()
                 }
             } footer: {

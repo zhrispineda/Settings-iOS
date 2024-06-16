@@ -59,9 +59,7 @@ struct AppleAccountLoginView: View {
                     Spacer()
                     if !isMainSheet {
                         ZStack {
-                            NavigationLink(destination: ParentGuardianSignInView(), label: {
-                                EmptyView()
-                            })
+                            NavigationLink(destination: ParentGuardianSignInView()) {}
                             .opacity(0)
                             Text("Sign in a child in my Family")
                                 .foregroundStyle(.accent)

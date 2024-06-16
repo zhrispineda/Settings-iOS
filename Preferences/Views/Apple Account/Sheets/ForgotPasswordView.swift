@@ -124,12 +124,12 @@ struct ForgotPasswordView: View {
         }
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
-                Button(action: {
+                Button {
                     dismiss()
-                }, label: {
+                } label: {
                     Text("Cancel")
                         .foregroundStyle(.accent)
-                })
+                }
                 .buttonStyle(.plain)
             }
         }

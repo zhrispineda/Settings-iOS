@@ -51,7 +51,7 @@ struct DisplayBrightnessView: View {
             } header: {
                 Text("Brightness")
             } footer: {
-                Text("Automatically adapt \(UIDevice().localizedModel) display based on ambient lighting conditions to make colors appear consistent in different environments.")
+                Text("Automatically adapt \(Device().model) display based on ambient lighting conditions to make colors appear consistent in different environments.")
             }
             
             Section {
@@ -76,7 +76,7 @@ struct DisplayBrightnessView: View {
             } header: {
                 Text("Display")
             } footer: {
-                Text("Choose a view for \(UIDevice().localizedModel). Larger Text shows larger controls. Default shows more content.")
+                Text("Choose a view for \(Device().model). Larger Text shows larger controls. Default shows more content.")
             }
         }
     }

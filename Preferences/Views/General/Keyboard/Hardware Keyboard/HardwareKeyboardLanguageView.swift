@@ -16,9 +16,9 @@ struct HardwareKeyboardLanguageView: View {
     var body: some View {
         CustomList(title: "English (US)") {
             ForEach(options, id: \.self) { option in
-                Button(action: {
+                Button {
                     selectedOption = option
-                }, label: {
+                } label: {
                     HStack {
                         Text(option)
                             .foregroundStyle(Color["Label"])
@@ -27,7 +27,7 @@ struct HardwareKeyboardLanguageView: View {
                             Image(systemName: "checkmark")
                         }
                     }
-                })
+                }
             }
         }
     }

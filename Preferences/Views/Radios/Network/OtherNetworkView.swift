@@ -55,12 +55,12 @@ struct OtherNetworkView: View {
                     .foregroundStyle(Color["Default"])
                 }
                 ToolbarItem(placement: .topBarTrailing) {
-                    Button(action: {
+                    Button {
                         dismiss()
-                    }, label: {
+                    } label: {
                         Text("**Join**")
                             .padding(.top, 50)
-                    })
+                    }
                     .foregroundStyle(Color["Default"])
                     .disabled(true)
                 }

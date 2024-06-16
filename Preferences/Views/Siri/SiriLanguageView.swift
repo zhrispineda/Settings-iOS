@@ -17,10 +17,10 @@ struct SiriLanguageView: View {
         CustomList(title: "Language") {
             ForEach(languages, id: \.self) { lang in
                 if lang == "English (India)" {
-                    NavigationLink(destination: EnglishIndiaView(), label: {
+                    NavigationLink(destination: EnglishIndiaView()) {
                         Label(lang, systemImage: selected == lang ? "checkmark" : "")
                             .tint(Color["Label"])
-                    })
+                    }
                 } else {
                     Button {
                         selected = lang

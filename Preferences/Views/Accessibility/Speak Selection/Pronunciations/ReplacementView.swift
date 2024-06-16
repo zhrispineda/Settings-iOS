@@ -32,11 +32,11 @@ struct ReplacementView: View {
                     Text("Substitution")
                     TextField("", text: $substitutionText)
                     Spacer()
-                    Button(action: {}, label: {
+                    Button {} label: {
                         Image(systemName: "mic.circle")
                             .font(.title)
                             .fontWeight(.ultraLight)
-                    })
+                    }
                     .buttonStyle(.plain)
                     .disabled(phraseText.isEmpty)
                 }

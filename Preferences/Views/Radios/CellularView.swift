@@ -72,10 +72,10 @@ struct CellularView: View {
             }
             
             Section {
-                Toggle(isOn: $wifiAssistEnabled, label: {
+                Toggle(isOn: $wifiAssistEnabled) {
                     Text("Wi-Fi Assist")
                     Text("0 KB")
-                })
+                }
             } footer: {
                 Text("Automatically use cellular data when Wi-Fi connectivity is poor.")
             }

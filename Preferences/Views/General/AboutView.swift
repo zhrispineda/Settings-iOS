@@ -20,7 +20,7 @@ struct AboutView: View {
                 if Configuration().isSimulator {
                     LabeledContent("Name", value: Device().model)
                 } else {
-                    CustomNavigationLink(title: "Name", status: UIDevice().localizedModel, destination: EmptyView())
+                    CustomNavigationLink(title: "Name", status: Device().model, destination: EmptyView())
                 }
                 
                 CustomNavigationLink(title: "\(UIDevice().systemName) Version", status: UIDevice().systemVersion, destination: VersionView())

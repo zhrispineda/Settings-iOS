@@ -37,11 +37,11 @@ struct DisplayZoomView: View {
         .toolbar {
             if Device().isTablet {
                 ToolbarItem(placement: .topBarLeading) {
-                    Button(action: {
+                    Button {
                         dismiss()
-                    }, label: {
+                    } label: {
                         Text("Cancel")
-                    })
+                    }
                 }
             }
             ToolbarItem(placement: .topBarTrailing) {

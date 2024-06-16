@@ -47,7 +47,7 @@ struct SystemServicesView: View {
                         showingNetworkingAlert = !networkingWirelessEnabled
                     }
                 Toggle("Setting Time Zone", isOn: $settingTimeZoneEnabled)
-                Toggle(isOn: $suggestionsSearchEnabled, label: {
+                Toggle(isOn: $suggestionsSearchEnabled) {
                     HStack {
                         Text("Suggestions & Search")
                         Spacer()
@@ -55,7 +55,7 @@ struct SystemServicesView: View {
                             .foregroundStyle(.gray)
                             .font(.title2)
                     }
-                })
+                }
                 Toggle("System Customization", isOn: $systemCustomizationEnabled)
             }
             

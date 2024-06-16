@@ -17,14 +17,14 @@ struct VersionView: View {
                     VStack(alignment: .leading) {
                         Text("**\(UIDevice().systemName) \(UIDevice().systemVersion) (22A5282m)**")
                         if Configuration().isSimulator {
-                            Text("This update includes improvements and bug fixes for your \(UIDevice().localizedModel).")
+                            Text("This update includes improvements and bug fixes for your \(Device().model).")
                                 .foregroundStyle(.secondary)
                                 .font(.callout)
                         } else {
-                            Text("This update includes improvements and bug fixes for your \(UIDevice().localizedModel).")
+                            Text("This update includes improvements and bug fixes for your \(Device().model).")
                                 .foregroundStyle(.secondary)
                                 .font(.callout)
-//                            Text("This update introduces new emoji, transcripts in Apple Podcasts and includes other features, bug fixes, and and security updates for your \(UIDevice().localizedModel).\n")
+//                            Text("This update introduces new emoji, transcripts in Apple Podcasts and includes other features, bug fixes, and and security updates for your \(Device().model).\n")
 //                                .font(.callout)
 //                            Text("For more information on the security content of Apple software updates, please visit this website:\n https://support.apple.com/kb/HT201222\n")
 //                                .font(.callout)
@@ -32,9 +32,9 @@ struct VersionView: View {
                     }
                     
                     if !Configuration().isSimulator {
-//                        Button(action: {}, label: {
+//                        Button {} label: {
 //                            Text("Learn More")
-//                        })
+//                        }
                     }
                 } header: {
                     Text("\(UIDevice().systemName) Version")

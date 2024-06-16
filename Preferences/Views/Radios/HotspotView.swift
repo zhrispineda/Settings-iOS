@@ -26,7 +26,7 @@ struct HotspotView: View {
             }
             
             Section {} footer: {
-                Text("Allow other users or devices not signed into iCloud to look for your shared network \u{201C}\(UIDevice().model)\u{201D} when you are in Personal Hotspot settings or when you turn it on in Control Center.")
+                Text("Allow other users or devices not signed into iCloud to look for your shared network \u{201C}\(Device().model)\u{201D} when you are in Personal Hotspot settings or when you turn it on in Control Center.")
             }
             
 //            Section {

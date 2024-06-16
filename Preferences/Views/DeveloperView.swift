@@ -52,11 +52,11 @@ struct DeveloperView: View {
                     if Device().isPhone {
                         CustomNavigationLink(title: "View", status: "Default", destination: DisplayZoomView())
                     } else {
-                        Button(action: {
+                        Button {
                             showingDisplayZoomSheet.toggle()
-                        }, label: {
+                        } label: {
                             LabeledContent("View", value: "Default")
-                        })
+                        }
                         .foregroundStyle(Color["Label"])
                         .sheet(isPresented: $showingDisplayZoomSheet) {
                             NavigationStack {
@@ -67,7 +67,7 @@ struct DeveloperView: View {
                 } header: {
                     Text("Display Zoom")
                 } footer: {
-                    Text("Choose a view for \(UIDevice().localizedModel). Zoomed shows larger controls. Standard shows more content.")
+                    Text("Choose a view for \(Device().model). Zoomed shows larger controls. Standard shows more content.")
                 }
             }
             

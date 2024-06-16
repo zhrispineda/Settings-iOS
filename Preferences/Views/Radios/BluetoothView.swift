@@ -18,7 +18,7 @@ struct BluetoothView: View {
                 Toggle("Bluetooth", isOn: $bluetoothEnabled.animation())
             } footer: {
                 if bluetoothEnabled {
-                    Text("This \(UIDevice().localizedModel) is discoverable as \u{201C}\(UIDevice().localizedModel)\u{201D} while Bluetooth Settings is open.")
+                    Text("This \(Device().model) is discoverable as \u{201C}\(Device().model)\u{201D} while Bluetooth Settings is open.")
                 } else {
                     Text("AirDrop, AirPlay, Find My, and Location Services use Bluetooth.")
                 }

@@ -24,7 +24,7 @@ struct ChargingOptimizationView: View {
         //CustomList(title: "Charging Optimization") {
         CustomList(title: "Charging") {
             Section {} footer: {
-                Text("\(UIDevice().model) can learn from your charging and usage habits to set charge limits and decide when to charge, which can help preserve battery lifespan over time. [Learn more...](https://support.apple.com/en-us/108055)")
+                Text("\(Device().model) can learn from your charging and usage habits to set charge limits and decide when to charge, which can help preserve battery lifespan over time. [Learn more...](https://support.apple.com/en-us/108055)")
             }
             
             Section {

@@ -35,7 +35,7 @@ struct SoundsHapticsView: View {
             } header: {
                 Text("\nSilent Mode")
             } footer: {
-                Text(silentModeEnabled ? "\(UIDevice().localizedModel) will not play ringtones, alerts, and system sounds. \(UIDevice().localizedModel) will still play alarms, timers, music, and audio from videos." : "\(UIDevice().localizedModel) will play ringtones, alerts, and system sounds.")
+                Text(silentModeEnabled ? "\(Device().model) will not play ringtones, alerts, and system sounds. \(Device().model) will still play alarms, timers, music, and audio from videos." : "\(Device().model) will play ringtones, alerts, and system sounds.")
                     .transition(.slide)
             }
             
