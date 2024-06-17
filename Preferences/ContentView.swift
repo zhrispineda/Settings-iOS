@@ -9,6 +9,7 @@ import SwiftUI
 
 // Variables
 let phoneOnly = ["Action Button", "Emergency SOS", "Health", "Personal Hotspot", "StandBy"]
+let tabletOnly = ["Multitasking & Gestures"]
 
 struct ContentView: View {
     // Variables
@@ -20,7 +21,6 @@ struct ContentView: View {
     @State private var isOnLandscapeOrientation: Bool = UIDevice.current.orientation.isLandscape
     @State private var id = UUID()
     @State private var airplaneModeEnabled = false
-    let tabletOnly = ["Multitasking & Gestures"]
     
     var body: some View {
         ZStack {
@@ -108,8 +108,6 @@ struct ContentView: View {
                                 } label: {
                                     AppleAccountSection()
                                 }
-//                                NavigationLink("Services Included with Purchase", destination: {})
-//                                    .font(.subheadline)
                                 .sheet(isPresented: $showingSignInSheet) {
                                     NavigationStack {
                                         SelectSignInOptionView()
@@ -117,12 +115,6 @@ struct ContentView: View {
                                     }
                                 }
                             }
-                            
-//                            Section {
-//                                NavigationLink("Add AppleCare+ Coverage", destination: {})
-//                            } footer: {
-//                                Text("There are 60 days left to add coverage for accidental damage.")
-//                            }
                             
                             if !Configuration().isSimulator {
                                 // MARK: Radio Settings
@@ -138,21 +130,7 @@ struct ContentView: View {
                             }
                             
                             // MARK: Main Settings
-                            Section {
-                                ForEach(Configuration().isSimulator ? simulatorMainSettings : mainSettings) { setting in
-                                    if !tabletOnly.contains(setting.id) {
-                                        if setting.id == "Action Button" && UIDevice.current.name.contains("15 Pro") {
-                                            SettingsLink(color: setting.color, icon: setting.icon, id: setting.id) {
-                                                setting.destination
-                                            }
-                                        } else if setting.id != "Action Button" {
-                                            SettingsLink(color: setting.color, icon: setting.icon, id: setting.id) {
-                                                setting.destination
-                                            }
-                                        }
-                                    }
-                                }
-                            }
+                            SettingsLinkSection(item: Configuration().isSimulator ? simulatorMainSettings : mainSettings)
                             
                             // MARK: Attention
                             SettingsLinkSection(item: Configuration().isSimulator ? attentionSimulatorSettings : attentionSettings)
@@ -213,6 +191,7 @@ struct AppleAccountSection: View {
     }
 }
 
+// Settings Sidebar Label for iPadOS
 struct SettingsLabelSection: View {
     @Binding var selection: SettingsModel?
     @Binding var id: UUID
@@ -236,14 +215,23 @@ struct SettingsLabelSection: View {
     }
 }
 
+// Settings Link for iOS
 struct SettingsLinkSection: View {
     var item: [SettingsItem<AnyView>]
     
     var body: some View {
         Section {
             ForEach(item) { setting in
-                SettingsLink(color: setting.color, icon: setting.icon, id: setting.id) {
-                    setting.destination
+                if !tabletOnly.contains(setting.id) {
+                    if setting.id == "Action Button" && Device().hasActionButton {
+                        SettingsLink(color: setting.color, icon: setting.icon, id: setting.id) {
+                            setting.destination
+                        }
+                    } else if setting.id != "Action Button" {
+                        SettingsLink(color: setting.color, icon: setting.icon, id: setting.id) {
+                            setting.destination
+                        }
+                    }
                 }
             }
         }
