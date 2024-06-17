@@ -52,7 +52,9 @@ struct GeneralView: View {
             }
             
             Section {
-                SettingsLink(color: .gray, icon: "ellipsis.rectangle", id: "AutoFill & Passwords") {}
+                SettingsLink(color: .gray, icon: "ellipsis.rectangle", id: "AutoFill & Passwords") {
+                    AutoFillPasswordsView()
+                }
                 if !Configuration().isSimulator {
                     SettingsLink(color: .gray, icon: "arrow.circlepath", id: "Background App Refresh") {}
                     SettingsLink(color: .blue, icon: "calendar.badge.clock", id: "Date & Time") {}

@@ -22,10 +22,11 @@ struct IconToggle: View {
     var color = Color(.blue)
     var icon = String()
     var title = String()
+    var subtitle = String()
     
     var body: some View {
         Toggle(isOn: $enabled) {
-            HStack(spacing: 15) {
+            HStack(spacing: 10) {
                 ZStack {
                     color
                         .frame(width: 30, height: 30)
@@ -44,7 +45,14 @@ struct IconToggle: View {
                             .frame(width: 30, height: 30)
                     }
                 }
-                Text(title)
+                VStack(alignment: .leading, spacing: -3) {
+                    Text(title)
+                    if !subtitle.isEmpty {
+                        Text(subtitle)
+                            .font(.footnote)
+                            .foregroundStyle(.secondary)
+                    }
+                }
             }
         }
     }
@@ -52,6 +60,6 @@ struct IconToggle: View {
 
 #Preview {
     List {
-        IconToggle(enabled: .constant(false), color: .gray, icon: "gear", title: "Background App Refresh")
+        IconToggle(enabled: .constant(false), color: .gray, icon: "gear", title: "Passwords", subtitle: "Passkeys, passwords, and codes")
     }
 }
