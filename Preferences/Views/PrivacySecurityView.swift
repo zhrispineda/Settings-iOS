@@ -102,9 +102,7 @@ struct PrivacySecurityView: View {
             }
             
             Section {
-                SettingsLink(color: .blue, icon: "chart.bar.xaxis", id: "Analytics & Improvement") {
-                    AppleAdvertisingView()
-                }
+                SettingsLink(color: .blue, icon: "chart.bar.xaxis", id: "Analytics & Improvement") {}
                 SettingsLink(color: .blue, icon: "megaphone.fill", id: "Apple Advertising") {
                     AppleAdvertisingView()
                 }

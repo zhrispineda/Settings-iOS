@@ -37,6 +37,7 @@
 		8335A70C2BC358E8001E199D /* CellularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8335A70B2BC358E8001E199D /* CellularView.swift */; };
 		833854F72C1648CD00339C4F /* SoftwareUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833854F62C1648CD00339C4F /* SoftwareUpdateView.swift */; };
 		833C6EAC2C208A3900A8D91C /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C6EAB2C208A3900A8D91C /* CameraView.swift */; };
+		833C6EAE2C20C88000A8D91C /* HomeScreenAppLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C6EAD2C20C88000A8D91C /* HomeScreenAppLibraryView.swift */; };
 		833F0AD02B744D180036EAD2 /* PreferencesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833F0ACF2B744D180036EAD2 /* PreferencesApp.swift */; };
 		833F0AD22B744D180036EAD2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833F0AD12B744D180036EAD2 /* ContentView.swift */; };
 		833F0AD42B744D190036EAD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 833F0AD32B744D190036EAD2 /* Assets.xcassets */; };
@@ -222,6 +223,7 @@
 		8335A70B2BC358E8001E199D /* CellularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellularView.swift; sourceTree = "<group>"; };
 		833854F62C1648CD00339C4F /* SoftwareUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftwareUpdateView.swift; sourceTree = "<group>"; };
 		833C6EAB2C208A3900A8D91C /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		833C6EAD2C20C88000A8D91C /* HomeScreenAppLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenAppLibraryView.swift; sourceTree = "<group>"; };
 		833F0ACC2B744D180036EAD2 /* Preferences.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Preferences.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		833F0ACF2B744D180036EAD2 /* PreferencesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesApp.swift; sourceTree = "<group>"; };
 		833F0AD12B744D180036EAD2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -749,6 +751,7 @@
 				833C6EAB2C208A3900A8D91C /* CameraView.swift */,
 				837B62FF2BD5FE8E0045B95C /* ControlCenterView.swift */,
 				83D268792BD7303800A86DA9 /* DisplayBrightnessView.swift */,
+				833C6EAD2C20C88000A8D91C /* HomeScreenAppLibraryView.swift */,
 				83815CE02B768CF300F53A0F /* MultitaskingGesturesView.swift */,
 				83815CF22B768F1E00F53A0F /* SiriView.swift */,
 				83B1CFB62C1D56C900C2263C /* BiometricPasscodeView.swift */,
@@ -1291,6 +1294,7 @@
 				83F78A172B8E888600025062 /* KeyboardCommandsView.swift in Sources */,
 				83815CE12B768CF300F53A0F /* MultitaskingGesturesView.swift in Sources */,
 				837F1DCD2B8AF0D400665EAB /* ExtensionsView.swift in Sources */,
+				833C6EAE2C20C88000A8D91C /* HomeScreenAppLibraryView.swift in Sources */,
 				83D31F802B8D74A10057CFDB /* HighlightContentView.swift in Sources */,
 				838C232B2B7492170053D4C5 /* CustomList.swift in Sources */,
 				838C23302B74978C0053D4C5 /* HText.swift in Sources */,

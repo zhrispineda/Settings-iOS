@@ -14,7 +14,7 @@ struct ControlCenterView: View {
     var body: some View {
         CustomList(title: "Control Center") {
             Section {} footer: {
-                Text("Swipe down from the top-right edge to open Control Center.")
+                Text("Swipe \(Device().hasHomeButton ? "up from the bottom of the screen to view" : "down from the top-right edge to open") Control Center.")
             }
             
             Section {
