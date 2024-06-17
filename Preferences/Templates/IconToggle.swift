@@ -16,6 +16,7 @@ import SwiftUI
 /// - Parameter color: The ``Color`` to use as the icon background.
 /// - Parameter icon: The ``String`` name of the image asset or symbol.
 /// - Parameter title: The ``String`` name of the label to display.
+/// - Parameter subtitle: The ``String`` text of the subtitle to display.
 struct IconToggle: View {
     // Variables
     @Binding var enabled: Bool

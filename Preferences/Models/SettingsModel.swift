@@ -47,7 +47,7 @@ extension Color {
     }
 }
 
-// MARK: DeviceInfo class
+// MARK: Device class
 @MainActor
 class Device: ObservableObject {
     @Published var model: String = UIDevice.current.localizedModel
@@ -57,8 +57,13 @@ class Device: ObservableObject {
     var isPro = UIDevice.current.name.contains("Pro")
     var isLargestTablet = UIDevice.current.name.contains("12.9")
     var isStageManagerCapable = UIDevice.current.name.contains("Air (5th") || UIDevice.current.name.contains("M2") || UIDevice.current.name.contains("M4") || UIDevice.current.name.contains("Pro (11") || UIDevice.current.name.contains("(12.9-inch) (3") || UIDevice.current.name.contains("(12.9-inch) (4") || UIDevice.current.name.contains("(12.9-inch) (5") || UIDevice.current.name.contains("(12.9-inch) (6")
+    var isCinematicCapable = UIDevice.current.name.contains("iPhone 13") || UIDevice.current.name.contains("14") || UIDevice.current.name.contains("15")
+    var isPhotographicStylesCapable = UIDevice.current.name.contains("SE (3") || UIDevice.current.name.contains("iPhone 13") || UIDevice.current.name.contains("14") || UIDevice.current.name.contains("15")
+    var isPortraitsPhotoModeCapable = UIDevice.current.name.contains("15")
+    var isLensCorrectionCapable = !UIDevice.current.name.contains("SE")
     var hasHomeButton = UIDevice.current.name.contains("SE")
     var hasFaceAuth = !UIDevice.current.name.contains("SE") && !UIDevice.current.name.contains("Air") && !UIDevice.current.name.contains("iPad (") && !UIDevice.current.name.contains("iPad mini")
+    var hasMacroLens = UIDevice.current.name.contains("13 Pro") || UIDevice.current.name.contains("14 Pro") || UIDevice.current.name.contains("15 Pro")
     var hasAlwaysOnDisplay = UIDevice.current.name.contains("14 Pro") || UIDevice.current.name.contains("15 Pro")
     var hasExtraBatteryFeatures = UIDevice.current.name.contains("15") || (UIDevice.current.name.contains("Air") && UIDevice.current.name.contains("M2")) || UIDevice.current.name.contains("M4")
     var hasActionButton = UIDevice.current.name.contains("15 Pro")
@@ -151,7 +156,7 @@ let largerIcons = ["accessibility", "bell.badge.fill", "faceid", "gear", "hand.r
     SettingsItem(type: .general, title: "General", icon: "gear", color: .gray, destination: AnyView(GeneralView())),
     SettingsItem(type: .accessibility, title: "Accessibility", icon: "accessibility", color: .blue, destination: AnyView(AccessibilityView())),
     SettingsItem(type: .actionButton, title: "Action Button", icon: "actionbutton", color: .blue, destination: AnyView(ActionButtonView())),
-    SettingsItem(type: .camera, title: "Camera", icon: "camera.fill", color: .gray, destination: AnyView(EmptyView())),
+    SettingsItem(type: .camera, title: "Camera", icon: "camera.fill", color: .gray, destination: AnyView(CameraView())),
     SettingsItem(type: .controlCenter, title: "Control Center", icon: "switch.2", destination: AnyView(ControlCenterView())),
     SettingsItem(type: .displayBrightness, title: "Display & Brightness", icon: "sun.max.fill", color: .blue, destination: AnyView(DisplayBrightnessView())),
     SettingsItem(type: .homeScreenAppLibrary, title: "Home Screen & App Library", icon: Device().isPhone ? "apps.iphone" : "apps.ipad", color: .blue, destination: AnyView(EmptyView())),
