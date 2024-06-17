@@ -29,7 +29,7 @@ struct SafariView: View {
         CustomList(title: "Safari") {
             Section {
                 SettingsLink(icon: "applesiri", id: "Siri & Search") {
-                    SiriSearchDetailView(appName: "Safari")
+                    SiriDetailView(appName: "Safari")
                 }
             } header: {
                 Text("Allow Safari to Access")

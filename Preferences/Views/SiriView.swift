@@ -22,9 +22,6 @@ struct SiriView: View {
     @State private var showingResetHiddenSuggestionsAlert = false
     @State private var showingResetHiddenSuggestionsPopup = false
     
-    @State private var showInLookUpEnabled = true
-    @State private var showInSpotlightEnabled = true
-    
     @State private var allowNotificationsEnabled = true
     @State private var showAppLibraryEnabled = true
     @State private var showWhenSharingEnabled = true
@@ -128,11 +125,11 @@ struct SiriView: View {
                     CustomList(title: "Apps") {
                         ForEach(apps, id: \.self) { app in
                             SettingsLink(icon: "apple\(app.lowercased())", id: app) {
-                                SiriSearchDetailView(appName: app, title: app)
+                                SiriDetailView(appName: app, title: app)
                             }
                         }
                         SettingsLink(icon: "apple watch", id: "Watch") {
-                            SiriSearchDetailView(appName: "Watch", title: "Watch")
+                            SiriDetailView(appName: "Watch", title: "Watch")
                         }
                     }
                 }

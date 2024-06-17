@@ -26,7 +26,7 @@ struct PhotosView: View {
         CustomList(title: "Photos") {
             Section {
                 SettingsLink(icon: "applesiri", id: "Siri & Search", content: {
-                    SiriSearchDetailView(appName: "Photos")
+                    SiriDetailView(appName: "Photos")
                 })
             } header: {
                 Text("Allow Photos to Access")

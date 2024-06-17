@@ -21,7 +21,7 @@ struct NewsView: View {
         CustomList(title: "News") {
             Section {
                 SettingsLink(icon: "applesiri", id: "Siri & Search") {
-                    SiriSearchDetailView(appName: "News")
+                    SiriDetailView(appName: "News")
                 }
                 IconToggle(enabled: $liveActivitiesEnabled, color: .blue, icon: "clock.badge.fill", title: "Live Activities")
                 IconToggle(enabled: $backgroundAppRefreshEnabled, color: .gray, icon: "gear", title: "Background App Refresh")

@@ -1,5 +1,5 @@
 //
-//  SiriSearchDetailView.swift
+//  SiriDetailView.swift
 //  Preferences
 //
 //  Settings > [App] > Siri & Search
@@ -10,15 +10,13 @@ import SwiftUI
 
 /// A ``View`` template for displaying options regarding Siri Suggestions and apps.
 /// ```swift
-/// SiriSearchDetailView(appName: "News", title: "News")
+/// SiriDetailView(appName: "News", title: "News")
 /// ```
 /// - Parameter appName: The ``String`` to display as the app name for the ``View``.
 /// - Parameter title: The ``String``to display as the title of the ``View``.
-struct SiriSearchDetailView: View {
+struct SiriDetailView: View {
     // Variables
     @State private var learnFromAppEnabled = true
-    @State private var showAppInSearchEnabled = true
-    @State private var showContentInSearchEnabled = true
     @State private var suggestInAppEnabled = true
     @State private var showHomeScreenEnabled = true
     @State private var suggestAppEnabled = true
@@ -34,17 +32,6 @@ struct SiriSearchDetailView: View {
                 Toggle("Learn from this App", isOn: $learnFromAppEnabled)
             } footer: {
                 Text("Allow Siri to learn from how you use “\(appName)“ to make suggestions across apps.")
-            }
-            
-            Section {
-                Toggle("Show App in Search", isOn: $showAppInSearchEnabled)
-                if showAppInSearchEnabled {
-                    Toggle("Show Content in Search", isOn: $showContentInSearchEnabled)
-                }
-            } header: {
-                Text("While Searching")
-            } footer: {
-                Text("Allow “\(appName)“ the app and its content to appear in Search.")
             }
             
             Section {
@@ -64,5 +51,7 @@ struct SiriSearchDetailView: View {
 }
 
 #Preview {
-    SiriSearchDetailView()
+    NavigationStack {
+        SiriDetailView()
+    }
 }

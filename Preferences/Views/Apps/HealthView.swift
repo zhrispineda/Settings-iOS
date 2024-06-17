@@ -12,7 +12,7 @@ struct HealthView: View {
         CustomList(title: "Health") {
             Section {
                 SettingsLink(icon: "applesiri", id: "Siri & Search") {
-                    SiriSearchDetailView(appName: "Health")
+                    SiriDetailView(appName: "Health")
                 }
             } header: {
                 Text("Allow Health to Access")

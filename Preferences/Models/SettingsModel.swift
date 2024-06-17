@@ -161,7 +161,7 @@ let largerIcons = ["accessibility", "bell.badge.fill", "faceid", "gear", "hand.r
     SettingsItem(type: .displayBrightness, title: "Display & Brightness", icon: "sun.max.fill", color: .blue, destination: AnyView(DisplayBrightnessView())),
     SettingsItem(type: .homeScreenAppLibrary, title: "Home Screen & App Library", icon: Device().isPhone ? "apps.iphone" : "apps.ipad", color: .blue, destination: AnyView(HomeScreenAppLibraryView())),
     SettingsItem(type: .multitaskGestures, title: "Multitasking & Gestures", icon: "squares.leading.rectangle", color: .blue, destination: AnyView(MultitaskingGesturesView())),
-    SettingsItem(type: .search, title: "Search", icon: "magnifyingglass", color: .gray, destination: AnyView(EmptyView())),
+    SettingsItem(type: .search, title: "Search", icon: "magnifyingglass", color: .gray, destination: AnyView(SearchView())),
     SettingsItem(type: .siri, title: "Siri", icon: "applesiri", color: Color(UIColor.systemBackground), destination: AnyView(SiriView())),
     SettingsItem(type: .standby, title: "StandBy", icon: "applestandby", destination: AnyView(EmptyView())),
     SettingsItem(type: .wallpaper, title: "Wallpaper", icon: "Wallpaper", color: .clear, destination: AnyView(EmptyView())),
@@ -175,7 +175,7 @@ let largerIcons = ["accessibility", "bell.badge.fill", "faceid", "gear", "hand.r
     SettingsItem(type: .camera, title: "Camera", icon: "camera.fill", color: .gray, destination: AnyView(CameraView())),
     SettingsItem(type: .homeScreenAppLibrary, title: "Home Screen & App Library", icon: "apps.iphone", color: .blue, destination: AnyView(HomeScreenAppLibraryView())),
     SettingsItem(type: .multitaskGestures, title: "Multitasking & Gestures", icon: "squares.leading.rectangle", color: .blue, destination: AnyView(MultitaskingGesturesView())),
-    SettingsItem(type: .search, title: "Search", icon: "magnifyingglass", color: .gray, destination: AnyView(EmptyView())),
+    SettingsItem(type: .search, title: "Search", icon: "magnifyingglass", color: .gray, destination: AnyView(SearchView())),
     SettingsItem(type: .siri, title: "Siri", icon: "applesiri", color: Color(UIColor.systemBackground), destination: AnyView(SiriView())),
 ]
 
