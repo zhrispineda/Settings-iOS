@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SiriView: View {
     // Variables
-    let apps = ["Calendar", "Contacts", "Files", "Health", "Maps", "Messages", "News", "Photos", "Reminders", "Safari", "Settings", "Wallet"]
+    let apps = ["Calendar", "Contacts", "Files", "Health", "Maps", "Messages", "News", "Photos", "Reminders", "Safari", "Settings", "Wallet", "Watch"]
     
     @State private var siriEnabled = true
     @State private var showingDisableSiriAlert = false
@@ -29,7 +29,7 @@ struct SiriView: View {
     
     var body: some View {
         CustomList(title: "Siri") {
-            SectionHelp(title: "Siri", icon: "applesiri", description: "Customize your Siri settings-choose how to activate Siri and what Siri can do, such as announce calls and notifications and automatically send messages. [Learn more...](#)")
+            SectionHelp(title: "Siri", icon: "appleSiri", description: "Customize your Siri settings-choose how to activate Siri and what Siri can do, such as announce calls and notifications and automatically send messages. [Learn more...](#)")
             
             Section {
                 CustomNavigationLink(title: "Language", status: "English (United States)", destination: SiriLanguageView())
@@ -124,7 +124,7 @@ struct SiriView: View {
                 SettingsLink(icon: "applehome screen & app library", id: "Apps") {
                     CustomList(title: "Apps") {
                         ForEach(apps, id: \.self) { app in
-                            SettingsLink(icon: "apple\(app.lowercased())", id: app) {
+                            SettingsLink(icon: "apple\(app)", id: app) {
                                 SiriDetailView(appName: app, title: app)
                             }
                         }

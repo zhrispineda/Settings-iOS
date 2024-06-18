@@ -16,7 +16,7 @@ struct SelectSignInOptionView: View {
         ZStack {
             List {
                 VStack(alignment: .center, spacing: 15) {
-                    Image("AppleAccount_Icon_Blue90x90")
+                    Image("appleAccount")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 75)

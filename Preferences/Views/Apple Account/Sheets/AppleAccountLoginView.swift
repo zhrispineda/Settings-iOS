@@ -22,7 +22,7 @@ struct AppleAccountLoginView: View {
         List {
             Section {
                 VStack(alignment: .center, spacing: 15) {
-                    Image("AppleAccount_Icon_Blue90x90")
+                    Image("appleAccount")
                         .foregroundStyle(.blue)
                         .font(.largeTitle)
                     Text("Apple Account")

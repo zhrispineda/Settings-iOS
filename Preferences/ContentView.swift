@@ -171,7 +171,7 @@ struct AppleAccountSection: View {
     var body: some View {
         NavigationLink {} label: {
             HStack {
-                Image("AppleAccount_Icon_Blue90x90")
+                Image("appleAccount")
                     .resizable()
                     .frame(width: 60, height: 60)
                 VStack(alignment: .leading, spacing: 3) {

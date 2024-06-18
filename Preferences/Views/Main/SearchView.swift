@@ -37,7 +37,7 @@ struct SearchView: View {
                     SiriAppClipsView()
                 }
                 ForEach(apps, id: \.self) { app in
-                    SettingsLink(icon: "apple\(app.lowercased())", id: app) {
+                    SettingsLink(icon: "apple\(app)", id: app) {
                         SearchDetailView(appName: app)
                     }
                 }
