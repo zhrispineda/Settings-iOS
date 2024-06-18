@@ -163,7 +163,7 @@ let largerIcons = ["accessibility", "bell.badge.fill", "faceid", "gear", "hand.r
     SettingsItem(type: .multitaskGestures, title: "Multitasking & Gestures", icon: "squares.leading.rectangle", color: .blue, destination: AnyView(MultitaskingGesturesView())),
     SettingsItem(type: .search, title: "Search", icon: "magnifyingglass", color: .gray, destination: AnyView(SearchView())),
     SettingsItem(type: .siri, title: "Siri", icon: "applesiri", color: Color(UIColor.systemBackground), destination: AnyView(SiriView())),
-    SettingsItem(type: .standby, title: "StandBy", icon: "applestandby", destination: AnyView(EmptyView())),
+    SettingsItem(type: .standby, title: "StandBy", icon: "applestandby", destination: AnyView(StandByView())),
     SettingsItem(type: .wallpaper, title: "Wallpaper", icon: "Wallpaper", color: .clear, destination: AnyView(EmptyView())),
 ]
 

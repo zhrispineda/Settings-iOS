@@ -3,7 +3,7 @@ SwiftUI **(work-in-progress)** recreation of the iOS & iPadOS Settings app.
 
 **IMPORTANT:** This project is being worked on using **Xcode 16 beta** and **Swift 6.0**. To use this project on Xcode 15 or older, change the version of Swift to 5.0:
 
-(Top of project sidebar) Preferences > TARGETS > Build Settings > Swift Compiler - Language > Swift Language Version > Change the value `Swift 6` to `Swift 5` on Xcode 15 or older
+(Top of project sidebar) Preferences > TARGETS > Preferences > Build Settings > (Scroll to bottom) Swift Compiler - Language > Swift Language Version > Change the value `Swift 6` to `Swift 5` on Xcode 15
 
 ## Examples
 - Physical-like:

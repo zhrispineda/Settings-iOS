@@ -173,6 +173,7 @@
 		83F3F6A72B7D2BAA003CC310 /* FontsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3F6A62B7D2BAA003CC310 /* FontsView.swift */; };
 		83F3F6A92B7D2EFE003CC310 /* LanguageRegionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3F6A82B7D2EFE003CC310 /* LanguageRegionView.swift */; };
 		83F516B82C21B7FA0004E87A /* SettingsPhysical.gif in Resources */ = {isa = PBXBuildFile; fileRef = 83F516B72C21B7FA0004E87A /* SettingsPhysical.gif */; };
+		83F516BA2C21D88B0004E87A /* StandByView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F516B92C21D88B0004E87A /* StandByView.swift */; };
 		83F626D42B827F0C00ED343F /* DisplayZoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F626D32B827F0C00ED343F /* DisplayZoomView.swift */; };
 		83F626D62B82884300ED343F /* AirPlaySuggestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F626D52B82884300ED343F /* AirPlaySuggestionsView.swift */; };
 		83F626D82B8289E100ED343F /* TVProviderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F626D72B8289E100ED343F /* TVProviderView.swift */; };
@@ -364,6 +365,7 @@
 		83F3F6A62B7D2BAA003CC310 /* FontsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsView.swift; sourceTree = "<group>"; };
 		83F3F6A82B7D2EFE003CC310 /* LanguageRegionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageRegionView.swift; sourceTree = "<group>"; };
 		83F516B72C21B7FA0004E87A /* SettingsPhysical.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SettingsPhysical.gif; sourceTree = "<group>"; };
+		83F516B92C21D88B0004E87A /* StandByView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandByView.swift; sourceTree = "<group>"; };
 		83F626D32B827F0C00ED343F /* DisplayZoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayZoomView.swift; sourceTree = "<group>"; };
 		83F626D52B82884300ED343F /* AirPlaySuggestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPlaySuggestionsView.swift; sourceTree = "<group>"; };
 		83F626D72B8289E100ED343F /* TVProviderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVProviderView.swift; sourceTree = "<group>"; };
@@ -508,13 +510,19 @@
 		833C6EAA2C2087BB00A8D91C /* Apps */ = {
 			isa = PBXGroup;
 			children = (
-				83815CE62B768DF100F53A0F /* SafariView.swift */,
-				83815CE82B768E3600F53A0F /* NewsView.swift */,
-				83815CEA2B768E4A00F53A0F /* TranslateView.swift */,
-				83815CEC2B768E8300F53A0F /* MapsView.swift */,
-				83815CEE2B768EF000F53A0F /* ShortcutsView.swift */,
+				83898FC82B8A8EF20020C7BB /* Health */,
+				83585B6F2B8847230046A0C3 /* Maps */,
+				8319CE472B86D17B007EC822 /* Passwords */,
+				83D3085A2B8AC28B002A9B7F /* Safari */,
+				83898FD22B8AA2240020C7BB /* Shortcuts */,
+				83DF95722B841EFB00AEEB63 /* Translate */,
 				83815CF02B768F0500F53A0F /* HealthView.swift */,
+				83815CEC2B768E8300F53A0F /* MapsView.swift */,
+				83815CE82B768E3600F53A0F /* NewsView.swift */,
 				83815CF42B768F3600F53A0F /* PhotosView.swift */,
+				83815CE62B768DF100F53A0F /* SafariView.swift */,
+				83815CEE2B768EF000F53A0F /* ShortcutsView.swift */,
+				83815CEA2B768E4A00F53A0F /* TranslateView.swift */,
 			);
 			path = Apps;
 			sourceTree = "<group>";
@@ -740,12 +748,6 @@
 				83DF95772B84390D00AEEB63 /* Siri */,
 				836000762BCC7A3A0034DDF5 /* Attention */,
 				832928472B857763006611CF /* Privacy & Security */,
-				8319CE472B86D17B007EC822 /* Passwords */,
-				83D3085A2B8AC28B002A9B7F /* Safari */,
-				83DF95722B841EFB00AEEB63 /* Translate */,
-				83585B6F2B8847230046A0C3 /* Maps */,
-				83898FD22B8AA2240020C7BB /* Shortcuts */,
-				83898FC82B8A8EF20020C7BB /* Health */,
 				83096BD62BA232C30082DB61 /* Game Center */,
 				833C6EAA2C2087BB00A8D91C /* Apps */,
 				83F626D22B827EEC00ED343F /* Developer */,
@@ -759,6 +761,7 @@
 				83815CE02B768CF300F53A0F /* MultitaskingGesturesView.swift */,
 				833C6EAF2C20CCEF00A8D91C /* SearchView.swift */,
 				83815CF22B768F1E00F53A0F /* SiriView.swift */,
+				83F516B92C21D88B0004E87A /* StandByView.swift */,
 				83B1CFB62C1D56C900C2263C /* BiometricPasscodeView.swift */,
 				83815CE22B768D5800F53A0F /* PrivacySecurityView.swift */,
 				83815CF62B768F4800F53A0F /* GameCenterView.swift */,
@@ -1168,6 +1171,7 @@
 				83FCEFEA2C07F0DE008BE814 /* NetworkDetailView.swift in Sources */,
 				83D31F732B8D458E0057CFDB /* SpeakSelectionView.swift in Sources */,
 				83815CF72B768F4800F53A0F /* GameCenterView.swift in Sources */,
+				83F516BA2C21D88B0004E87A /* StandByView.swift in Sources */,
 				83D31F952B8E64550057CFDB /* MovementToleranceView.swift in Sources */,
 				83815CF52B768F3600F53A0F /* PhotosView.swift in Sources */,
 				839092BB2C0D213200924849 /* OtherNetworkView.swift in Sources */,
