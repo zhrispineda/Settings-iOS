@@ -26,12 +26,9 @@ struct SectionHelp: View {
                     Image(systemName: icon)
                         .font(.system(size: icon == "personalhotspot" ? 30 : 36))
                         .foregroundStyle(icon == "touchid" ? .pink : .white)
-                } else {
-                    Image(icon)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: icon == "bluetooth" ? 21 : 56)
-                        .foregroundStyle(.white)
+                } else if icon == "bluetooth" {
+                    Image(_internalSystemName: "bluetooth")
+                        .font(.system(size: 36))
                 }
             }
             Text(title)
@@ -49,5 +46,5 @@ struct SectionHelp: View {
 }
 
 #Preview {
-    SectionHelp(title: "Title", color: Color.blue, icon: "gear", description: "Your description here.")
+    SectionHelp(title: "Title", color: Color.blue, icon: "bluetooth", description: "Your description here.")
 }

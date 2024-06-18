@@ -39,10 +39,15 @@ struct IconToggle: View {
                             .imageScale(smallerIcons.contains(icon) ? .medium : .large)
                             .foregroundStyle(.white)
                     } else {
-                        Image(icon)
-                            .resizable()
-                            .clipShape(RoundedRectangle(cornerRadius: 6))
-                            .frame(width: 30, height: 30)
+                        if icon == "airdrop" {
+                            Image(_internalSystemName: icon)
+                                .foregroundStyle(.blue)
+                        } else {
+                            Image(icon)
+                                .resizable()
+                                .clipShape(RoundedRectangle(cornerRadius: 6))
+                                .frame(width: 30, height: 30)
+                        }
                     }
                 }
                 VStack(alignment: .leading, spacing: -3) {

@@ -37,7 +37,7 @@ struct GeneralView: View {
             
             if !Configuration().isSimulator {
                 Section {
-                    SettingsLink(icon: "airdrop", id: "AirDrop") {}
+                    SettingsLink(color: .white, iconColor: .blue, icon: "airdrop", id: "AirDrop") {}
                     SettingsLink(color: .blue, icon: "airplay.video", id: "AirPlay & Continuity") {}
                     if Device().isPhone {
                         SettingsLink(icon: "pip", id: "Picture in Picture") {}

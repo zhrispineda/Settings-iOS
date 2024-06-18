@@ -35,6 +35,7 @@ struct SettingsLink<Content: View>: View {
     
     let noBorders = ["moon.fill"]
     let hierarchyIcons = ["questionmark.app.dashed", "questionmark.square.dashed"]
+    let internalIcons = ["airdrop", "bluetooth", "carplay"]
     
     var body: some View {
         NavigationLink(destination: content) {
@@ -65,24 +66,17 @@ struct SettingsLink<Content: View>: View {
                                 .resizable()
                                 .scaledToFit()
                                 .frame(height: 21)
-                        case "carplay":
-                            Image(icon)
-                                .resizable()
-                                .scaledToFit()
-                                .foregroundStyle(.white)
-                                .frame(height: 21)
-                        case "bluetooth":
-                            Image(icon)
-                                .resizable()
-                                .scaledToFit()
-                                .foregroundStyle(.white)
-                                .frame(height: 21)
                         default:
-                        Image(icon)
-                            .resizable()
-                            .clipShape(RoundedRectangle(cornerRadius: 5.0))
-                            .frame(width: 30, height: 30)
-                            .clipShape(RoundedRectangle(cornerRadius: 6))
+                            if internalIcons.contains(icon) {
+                                Image(_internalSystemName: icon)
+                                    .foregroundStyle(iconColor)
+                            } else {
+                                Image(icon)
+                                    .resizable()
+                                    .clipShape(RoundedRectangle(cornerRadius: 5.0))
+                                    .frame(width: 30, height: 30)
+                                    .clipShape(RoundedRectangle(cornerRadius: 6))
+                            }
                         }
                     }
                 }
@@ -115,8 +109,8 @@ struct SettingsLink<Content: View>: View {
     NavigationStack {
         List {
             SettingsLink(color: .gray, icon: "camera.fill", id: "Settings", subtitle: "Camera") {}
-            SettingsLink(color: .green, icon: "faceid", id: "Emergency SOS") {}
-            SettingsLink(color: .black, icon: "appleStandBy", id: "StandBy") {}
+            SettingsLink(color: .white, icon: "airdrop", id: "Emergency SOS") {}
+            SettingsLink(color: .blue, icon: "bluetooth", id: "StandBy") {}
         }
     }
 }

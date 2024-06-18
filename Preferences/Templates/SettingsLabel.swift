@@ -43,12 +43,16 @@ struct SettingsLabel: View {
                         .imageScale(largerIcons.contains(icon) && !smallerIcons.contains(icon) ? .large : (smallerIcons.contains(icon) ? .small : .medium))
                         .foregroundStyle(.white)
                 } else {
-                    Image(icon)
-                        .resizable()
-                        .scaledToFit()
-                        .clipShape(RoundedRectangle(cornerRadius: 5))
-                        .foregroundStyle(.white)
-                        .frame(width: 30, height: icon == "bluetooth" ? 21 : 30)
+                    if icon == "bluetooth" {
+                        Image(_internalSystemName: icon)
+                    } else {
+                        Image(icon)
+                            .resizable()
+                            .scaledToFit()
+                            .clipShape(RoundedRectangle(cornerRadius: 5))
+                            .foregroundStyle(.white)
+                            .frame(width: 30)
+                    }
                 }
             }
             Text(id)
@@ -63,7 +67,8 @@ struct SettingsLabel: View {
 
 #Preview {
     List {
-        SettingsLabel(color: Color.gray, icon: "applesafari", id: "Safari")
+        SettingsLabel(color: Color.gray, icon: "appleSafari", id: "Safari")
+        SettingsLabel(color: Color.gray, icon: "bluetooth", id: "Bluetooth")
         SettingsLabel(color: Color.gray, icon: "battery.100percent", id: "Battery")
     }
 }
