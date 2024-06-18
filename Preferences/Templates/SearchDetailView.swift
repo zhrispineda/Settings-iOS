@@ -2,8 +2,7 @@
 //  SearchDetailView.swift
 //  Preferences
 //
-//  Settings > [App] > Siri & Search
-//  Settings > Siri & Search > [App]
+//  Settings > Search > [App]
 //
 
 import SwiftUI

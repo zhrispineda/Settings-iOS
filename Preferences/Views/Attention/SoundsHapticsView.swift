@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SoundsHapticsView: View {
     // Variables
-    @State private var silentModeEnabled = true
+    @State private var silentModeEnabled = false
     @State private var showInStatusBarEnabled = true
     @State private var volume = 0.5
     @State private var changeWithButtonsEnabled = true

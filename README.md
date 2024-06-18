@@ -1,6 +1,10 @@
 #  Settings-iOS
 SwiftUI **(work-in-progress)** recreation of the iOS & iPadOS Settings app.
 
+**IMPORTANT:** This project is being worked on using **Xcode 16 beta** and **Swift 6.0**. To use this project on Xcode 15 or older, change the version of Swift to 5.0:
+
+(Top of project sidebar) Preferences > TARGETS > Build Settings > Swift Compiler - Language > Swift Language Version > Change the value `Swift 6` to `Swift 5` on Xcode 15 or older
+
 ## Examples
 - Physical-like:
 
@@ -18,7 +22,7 @@ SwiftUI **(work-in-progress)** recreation of the iOS & iPadOS Settings app.
 ## Usage
 Open the project in Xcode and run with either a Simulator instance running iOS/iPadOS or a physical iPhone/iPad with Developer Mode enabled as a destination.
 
-**IMPORTANT:** To switch between the simulator or physical-like view of Settings, modify the `isSimulator` variable on line 12 of `SettingsModel.swift` under Preferences/Models.
+To switch between the simulator or physical-like view of Settings, modify the `isSimulator` variable on line 12 of `SettingsModel.swift` under Preferences/Models.
 
 As this is a personal project for learning Swift and SwiftUI, feel free to download and modify the project for your own personal purposes.
 
@@ -31,3 +35,7 @@ As this is a personal project for learning Swift and SwiftUI, feel free to downl
 - All assets such as icons and images are not my own in any way.
 - This app is a recreation of Apple's own apps and designs for learning purposes only.
 - Feel free to look through the commit history to see the project evolve from a single view to its current state.
+
+## Other Settings Projects
+- **visionOS Settings** https://github.com/zhrispineda/Settings-visionOS
+- **watchOS Settings** https://github.com/zhrispineda/Settings-watchOS
