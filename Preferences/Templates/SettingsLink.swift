@@ -35,7 +35,7 @@ struct SettingsLink<Content: View>: View {
     
     let noBorders = ["moon.fill"]
     let hierarchyIcons = ["questionmark.app.dashed", "questionmark.square.dashed"]
-    let internalIcons = ["airdrop", "bluetooth", "carplay"]
+    let internalIcons = ["airdrop", "bluetooth", "carplay", "iphone.action.button.arrow.right"]
     
     var body: some View {
         NavigationLink(destination: content) {
@@ -52,6 +52,12 @@ struct SettingsLink<Content: View>: View {
                             Image(systemName: icon)
                                 .foregroundStyle(.blue)
                                 .imageScale(.large)
+                                .foregroundStyle(iconColor)
+                        case "faceid":
+                            Image(systemName: icon)
+                                .symbolRenderingMode(id.contains("Attention") ? .hierarchical : nil)
+                                .imageScale(.large)
+                                .foregroundStyle(iconColor)
                         default:
                             Image(systemName: icon)
                                 .symbolRenderingMode(hierarchyIcons.contains(icon) ? .hierarchical : .none)
@@ -110,7 +116,7 @@ struct SettingsLink<Content: View>: View {
         List {
             SettingsLink(color: .gray, icon: "camera.fill", id: "Settings", subtitle: "Camera") {}
             SettingsLink(color: .white, icon: "airdrop", id: "Emergency SOS") {}
-            SettingsLink(color: .blue, icon: "bluetooth", id: "StandBy") {}
+            SettingsLink(color: .blue, icon: "faceid", id: "StandBy") {}
         }
     }
 }

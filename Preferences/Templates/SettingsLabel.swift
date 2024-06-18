@@ -45,6 +45,7 @@ struct SettingsLabel: View {
                 } else {
                     if icon == "bluetooth" {
                         Image(_internalSystemName: icon)
+                            .foregroundStyle(.white)
                     } else {
                         Image(icon)
                             .resizable()

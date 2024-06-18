@@ -16,8 +16,10 @@ struct AppWebsiteActivitySheetView: View {
         ZStack {
             VStack {
                 VStack(spacing: 15) {
-                    Image("person.badge.hourglass.fill")
+                    Image(_internalSystemName: "person.badge.hourglass.fill")
                         .resizable()
+                        .foregroundStyle(.blue)
+                        .symbolRenderingMode(.hierarchical)
                         .scaledToFit()
                         .frame(height: 70)
                     Text("App & Website\nActivity")
@@ -47,9 +49,10 @@ struct AppWebsiteActivitySheetView: View {
                 
                 VStack(alignment: .leading) {
                     HStack {
-                        Image("downtime20x20")
+                        Image(_internalSystemName: "downtime")
                             .resizable()
                             .scaledToFit()
+                            .foregroundStyle(.blue)
                             .frame(width: 34)
                             .frame(minWidth: 50)
                         VStack(alignment: .leading) {
