@@ -35,7 +35,7 @@ struct SettingsLink<Content: View>: View {
     
     let noBorders = ["moon.fill"]
     let hierarchyIcons = ["questionmark.app.dashed", "questionmark.square.dashed"]
-    let internalIcons = ["airdrop", "bluetooth", "carplay", "iphone.action.button.arrow.right"]
+    let internalIcons = ["airdrop", "bluetooth", "carplay", "iphone.action.button.arrow.right", "sensorkit"]
     
     var body: some View {
         NavigationLink(destination: content) {

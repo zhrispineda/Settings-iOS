@@ -20,38 +20,38 @@ struct PrivacySecurityView: View {
             }
             
             Section {
-                SettingsLink(icon: "applecalendar", id: "Calendars", subtitle: "None") {
+                SettingsLink(icon: "appleCalendar", id: "Calendars", subtitle: "None") {
                     AppPermissionsView(permissionName: "Calendars")
                 }
-                SettingsLink(icon: "applecontacts", id: "Contacts", subtitle: "None") {
+                SettingsLink(icon: "appleContacts", id: "Contacts", subtitle: "None") {
                     AppPermissionsView(permissionName: "Contacts")
                 }
-                SettingsLink(icon: "applefiles", id: "Files & Folders", subtitle: "None") {
+                SettingsLink(icon: "appleFiles", id: "Files & Folders", subtitle: "None") {
                     AppPermissionsView(permissionName: "Files & Folders")
                 }
                 SettingsLink(color: .indigo, icon: "moon.fill", id: "Focus", subtitle: "None") {
                     AppPermissionsView(permissionName: "Focus")
                 }
-                SettingsLink(icon: "applehealth", id: "Health", subtitle: "None") {
+                SettingsLink(icon: "appleHealth", id: "Health", subtitle: "None") {
                     AppPermissionsView(permissionName: "Health")
                 }
-                SettingsLink(icon: "applehome", id: "HomeKit", subtitle: "None") {
+                SettingsLink(icon: "appleHome", id: "HomeKit", subtitle: "None") {
                     AppPermissionsView(permissionName: "HomeKit")
                 }
-                SettingsLink(icon: "applemusic", id: "Media & Apple Music", subtitle: "None") {
+                SettingsLink(icon: "appleMusic", id: "Media & Apple Music", subtitle: "None") {
                     AppPermissionsView(permissionName: "Media & Apple Music")
                 }
                 SettingsLink(color: .gray, icon: "person.badge.key.fill", id: "Passkeys Access for Web Browsers", subtitle: "None") {
                     AppPermissionsView(permissionName: "Passkeys Access for Web Browsers")
                 }
-                SettingsLink(icon: "applephotos", id: "Photos", subtitle: "None") {
+                SettingsLink(icon: "applePhotos", id: "Photos", subtitle: "None") {
                     AppPermissionsView(permissionName: "Photos")
                 }
-                SettingsLink(icon: "applereminders", id: "Reminders", subtitle: "None") {
+                SettingsLink(icon: "appleReminders", id: "Reminders", subtitle: "None") {
                     AppPermissionsView(permissionName: "Reminders")
                 }
                 if Device().isPhone {
-                    SettingsLink(icon: "applewallet", id: "Wallet", subtitle: "None") {
+                    SettingsLink(icon: "appleWallet", id: "Wallet", subtitle: "None") {
                         AppPermissionsView(permissionName: "Wallet")
                     }
                 }
@@ -77,7 +77,7 @@ struct PrivacySecurityView: View {
                     AppPermissionsView(permissionName: "Speech Recognition")
                 }
                 if Device().isPhone {
-                    SettingsLink(icon: "sensorKit60x60", id: "Research Sensor & Usage Data") {
+                    SettingsLink(color: .blue, icon: "sensorkit", id: "Research Sensor & Usage Data") {
                         AppPermissionsView(permissionName: "Research & Usage Data")
                     }
                 }
