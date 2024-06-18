@@ -1,5 +1,5 @@
 //
-//  AppsView.swift
+//  AppRestrictionsView.swift
 //  Preferences
 //
 //  Settings > Screen Time > Content & Privacy Restrictions > Content Restrictions > Apps
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AppsView: View {
+struct AppRestrictionsView: View {
     // Variables
     @State private var selectedOption = "17+"
     let options = ["Don't Allow", "4+", "9+", "12+", "17+"]
@@ -31,5 +31,5 @@ struct AppsView: View {
 }
 
 #Preview {
-    AppsView()
+    AppRestrictionsView()
 }

@@ -17,7 +17,7 @@ struct ContentRestrictionsView: View {
                 CustomNavigationLink(title: "Movies", status: "Allow All", destination: MoviesView())
                 CustomNavigationLink(title: "TV", status: "Allow All", destination: TVView())
                 CustomNavigationLink(title: "Books", status: "Explicit", destination: SelectOptionList(title: "Books", options: ["Clean", "Explicit"], selected: "Explicit"))
-                CustomNavigationLink(title: "Apps", status: "17+", destination: AppsView())
+                CustomNavigationLink(title: "Apps", status: "17+", destination: AppRestrictionsView())
                 CustomNavigationLink(title: "App Clips", status: "Allow", destination: SelectOptionList(title: "App Clips"))
             } header: {
                 Text("Allowed Store Content")
