@@ -33,12 +33,11 @@ struct SettingsLabel: View {
     var body: some View {
         HStack(spacing: 15) {
             ZStack {
-                color
-                    .frame(width: 30, height: 30)
-                    .clipShape(RoundedRectangle(cornerRadius: 6))
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 5)
-                            .stroke(Color.gray.opacity(0.5), lineWidth: 0.5))
+                Image(systemName: "app.fill")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 30)
+                    .foregroundStyle(color)
                 if UIImage(systemName: icon) != nil {
                     Image(systemName: icon)
                         .imageScale(largerIcons.contains(icon) && !smallerIcons.contains(icon) ? .large : (smallerIcons.contains(icon) ? .small : .medium))

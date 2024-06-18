@@ -40,12 +40,11 @@ struct SettingsLink<Content: View>: View {
         NavigationLink(destination: content) {
             HStack(spacing: 15) {
                 ZStack {
-                    color
-                        .frame(width: 30, height: 30)
-                        .clipShape(RoundedRectangle(cornerRadius: 7))
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 6)
-                                .stroke(Color.gray.opacity(0.5), lineWidth: 0.5))
+                    Image(systemName: "app.fill")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 30)
+                        .foregroundStyle(color)
                     if UIImage(systemName: icon) != nil {
                         switch icon {
                         case "appclip":
@@ -117,6 +116,7 @@ struct SettingsLink<Content: View>: View {
         List {
             SettingsLink(color: .gray, icon: "camera.fill", id: "Settings", subtitle: "Camera") {}
             SettingsLink(color: .green, icon: "faceid", id: "Emergency SOS") {}
+            SettingsLink(color: .black, icon: "appleStandBy", id: "StandBy") {}
         }
     }
 }

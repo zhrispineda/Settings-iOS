@@ -17,9 +17,11 @@ struct SectionHelp: View {
     var body: some View {
         VStack(spacing: 10) {
             ZStack {
-                color
-                    .frame(width: 56, height: 56)
-                    .clipShape(RoundedRectangle(cornerRadius: 13.0))
+                Image(systemName: "app.fill")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 56)
+                    .foregroundStyle(color)
                 if UIImage(systemName: icon) != nil {
                     Image(systemName: icon)
                         .font(.system(size: icon == "personalhotspot" ? 30 : 36))

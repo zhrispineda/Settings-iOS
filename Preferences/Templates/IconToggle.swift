@@ -29,12 +29,11 @@ struct IconToggle: View {
         Toggle(isOn: $enabled) {
             HStack(spacing: 10) {
                 ZStack {
-                    color
-                        .frame(width: 30, height: 30)
-                        .clipShape(RoundedRectangle(cornerRadius: 6))
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 5)
-                                .stroke(Color["Label"], lineWidth: 0.1))
+                    Image(systemName: "app.fill")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 30)
+                        .foregroundStyle(color)
                     if UIImage(systemName: icon) != nil {
                         Image(systemName: icon)
                             .imageScale(smallerIcons.contains(icon) ? .medium : .large)
@@ -42,7 +41,7 @@ struct IconToggle: View {
                     } else {
                         Image(icon)
                             .resizable()
-                            .clipShape(RoundedRectangle(cornerRadius: 5))
+                            .clipShape(RoundedRectangle(cornerRadius: 6))
                             .frame(width: 30, height: 30)
                     }
                 }
@@ -61,6 +60,6 @@ struct IconToggle: View {
 
 #Preview {
     List {
-        IconToggle(enabled: .constant(false), color: .gray, icon: "gear", title: "Passwords", subtitle: "Passkeys, passwords, and codes")
+        IconToggle(enabled: .constant(false), color: .gray, icon: "appleHealth", title: "Passwords", subtitle: "Passkeys, passwords, and codes")
     }
 }

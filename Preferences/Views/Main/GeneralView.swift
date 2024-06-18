@@ -29,7 +29,7 @@ struct GeneralView: View {
             
             if !Configuration().isSimulator {
                 Section {
-                    SettingsLink(icon: "applecare", id: "AppleCare & Warranty") {
+                    SettingsLink(icon: "appleCare", id: "AppleCare & Warranty") {
                         AppleCareWarrantyView()
                     }
                 }
