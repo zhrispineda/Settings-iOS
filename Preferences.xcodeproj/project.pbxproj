@@ -117,6 +117,7 @@
 		8393425E2C18CE5B00B48679 /* BatteryHealthChargingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8393425D2C18CE5B00B48679 /* BatteryHealthChargingView.swift */; };
 		83A5DA512C2335580012ACB3 /* PermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5DA502C2335580012ACB3 /* PermissionsView.swift */; };
 		83A5DA532C234DCB0012ACB3 /* LanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5DA522C234DCB0012ACB3 /* LanguageView.swift */; };
+		83A5DA552C2366A60012ACB3 /* TransferResetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5DA542C2366A60012ACB3 /* TransferResetView.swift */; };
 		83AFA1022BC87FC8008D4E57 /* HotspotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AFA1012BC87FC8008D4E57 /* HotspotView.swift */; };
 		83B1CFB72C1D56C900C2263C /* BiometricPasscodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B1CFB62C1D56C900C2263C /* BiometricPasscodeView.swift */; };
 		83B5504E2C165A85002DA622 /* BatteryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B5504D2C165A85002DA622 /* BatteryView.swift */; };
@@ -314,6 +315,7 @@
 		8393425D2C18CE5B00B48679 /* BatteryHealthChargingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryHealthChargingView.swift; sourceTree = "<group>"; };
 		83A5DA502C2335580012ACB3 /* PermissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsView.swift; sourceTree = "<group>"; };
 		83A5DA522C234DCB0012ACB3 /* LanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageView.swift; sourceTree = "<group>"; };
+		83A5DA542C2366A60012ACB3 /* TransferResetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferResetView.swift; sourceTree = "<group>"; };
 		83AFA1012BC87FC8008D4E57 /* HotspotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotspotView.swift; sourceTree = "<group>"; };
 		83B1CFB62C1D56C900C2263C /* BiometricPasscodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricPasscodeView.swift; sourceTree = "<group>"; };
 		83B5504D2C165A85002DA622 /* BatteryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryView.swift; sourceTree = "<group>"; };
@@ -814,6 +816,7 @@
 				8356839A2B755AB3000FB136 /* KeyboardView.swift */,
 				83F3F6A82B7D2EFE003CC310 /* LanguageRegionView.swift */,
 				83F3F6A22B7D1454003CC310 /* VPNDeviceManagementView.swift */,
+				83A5DA542C2366A60012ACB3 /* TransferResetView.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -1344,6 +1347,7 @@
 				83D31F932B8E643E0057CFDB /* FallbackActionView.swift in Sources */,
 				837F1DD12B8AF1C500665EAB /* AutoFillView.swift in Sources */,
 				83B619CF2B941B9C00EFEA90 /* AppLimitsView.swift in Sources */,
+				83A5DA552C2366A60012ACB3 /* TransferResetView.swift in Sources */,
 				83DF95792B84391F00AEEB63 /* SiriAppClipsView.swift in Sources */,
 				83815CEB2B768E4A00F53A0F /* TranslateView.swift in Sources */,
 				836A7E892B981D8E00FA3223 /* AppleAccountLoginView.swift in Sources */,

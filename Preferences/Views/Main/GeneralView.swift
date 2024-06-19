@@ -97,7 +97,11 @@ struct GeneralView: View {
             }
             
             Section {
-                SettingsLink(color: .gray, icon: "arrow.counterclockwise", id: "Transfer or Reset \(Device().model)") {}
+                SettingsLink(color: .gray, icon: "arrow.counterclockwise", id: "Transfer or Reset \(Device().model)") {
+                    if !Configuration().isSimulator {
+                        TransferResetView()
+                    }
+                }
                 if !Configuration().isSimulator {
                     Button("Shut Down") {}
                 }

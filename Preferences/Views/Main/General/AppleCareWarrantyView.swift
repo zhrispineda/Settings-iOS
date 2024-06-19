@@ -18,6 +18,7 @@ struct AppleCareWarrantyView: View {
                 Text("Coverage is shown for devices connected to your Apple Account and select Bluetooth-paired devices.")
             }
         }
+        .refreshable(action: {})
     }
 }
 
