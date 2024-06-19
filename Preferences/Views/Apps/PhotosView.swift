@@ -25,7 +25,7 @@ struct PhotosView: View {
     var body: some View {
         CustomList(title: "Photos") {
             Section {
-                SettingsLink(icon: "applesiri", id: "Siri & Search", content: {
+                SettingsLink(icon: "appleSiri", id: "Siri & Search", content: {
                     SiriDetailView(appName: "Photos")
                 })
             } header: {

@@ -33,9 +33,8 @@ struct SettingsLink<Content: View>: View {
     var status: String = String()
     @ViewBuilder var content: Content
     
-    let noBorders = ["moon.fill"]
     let hierarchyIcons = ["questionmark.app.dashed", "questionmark.square.dashed"]
-    let internalIcons = ["airdrop", "bluetooth", "carplay", "iphone.action.button.arrow.right", "sensorkit"]
+    let internalIcons = ["airdrop", "bluetooth", "carplay", "iphone.action.button.arrow.right", "keyboard.badge.waveform.fill", "sensorkit"]
     
     var body: some View {
         NavigationLink(destination: content) {
@@ -76,6 +75,7 @@ struct SettingsLink<Content: View>: View {
                             if internalIcons.contains(icon) {
                                 Image(_internalSystemName: icon)
                                     .foregroundStyle(iconColor)
+                                    .imageScale(icon == "keyboard.badge.waveform.fill" ? .small : .medium)
                             } else {
                                 Image(icon)
                                     .resizable()

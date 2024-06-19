@@ -37,6 +37,7 @@ struct IconToggle: View {
                     if UIImage(systemName: icon) != nil {
                         Image(systemName: icon)
                             .imageScale(smallerIcons.contains(icon) ? .medium : .large)
+                            .symbolRenderingMode(icon == "faceid" ? .hierarchical : nil)
                             .foregroundStyle(.white)
                     } else {
                         if icon == "airdrop" {

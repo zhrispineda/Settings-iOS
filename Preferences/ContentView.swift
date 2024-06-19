@@ -89,16 +89,16 @@ struct ContentView: View {
                                 isOnLandscapeOrientation = UIDevice.current.orientation.isLandscape
                             }
                         }
-                        .onAppear(perform: {
+                        .onAppear {
                             if UIDevice.current.orientation.rawValue <= 4 {
                                 isOnLandscapeOrientation = UIDevice.current.orientation.isLandscape
                             }
-                        })
-                        .onChange(of: selection, { // Change views when selecting sidebar navigation links
+                        }
+                        .onChange(of: selection) { // Change views when selecting sidebar navigation links
                             if let selectedSettingsItem = combinedSettings.first(where: { $0.type == selection }) {
                                 destination = selectedSettingsItem.destination
                             }
-                        })
+                        }
                     } else {
                         // MARK: - iOS Settings
                         List {

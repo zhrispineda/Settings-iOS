@@ -126,7 +126,7 @@ struct SettingsItem<Content: View>: Identifiable {
 }
 
 // Icon scaling
-let smallerIcons = ["airplane", "arrow.turn.up.forward.iphone", "calendar.badge.clock", "character.book.closed.fill", "eye.trianglebadge.exclamationmark.fill", "sos", "pip", "key.fill", "shareplay"]
+let smallerIcons = ["airplane", "arrow.turn.up.forward.iphone", "calendar.badge.clock", "camera.fill", "character.book.closed.fill", "eye.trianglebadge.exclamationmark.fill", "moon.fill", "sos", "pip", "key.fill", "shareplay"]
 let largerIcons = ["accessibility", "bell.badge.fill", "faceid", "gear", "hand.raised.fill", "hourglass"]
 
 // MARK: Radio Settings
@@ -195,7 +195,7 @@ let largerIcons = ["accessibility", "bell.badge.fill", "faceid", "gear", "hand.r
 // MARK: Services Settings
 @MainActor let serviceSettings: [SettingsItem] = [
     //SettingsItem(type: .passwords, title: "Passwords", icon: "key.fill", color: .gray, destination: AnyView(PasswordsView()))
-    SettingsItem(type: .appStore, title: "App Store", icon: Configuration().isSimulator ? "Placeholder_Normal" : "appleAppStore", destination: AnyView(AppStoreView())),
+    SettingsItem(type: .appStore, title: "App Store", icon: Configuration().isSimulator ? "Placeholder_Normal" : "appleAppStore", destination: Configuration().isSimulator ? AnyView(EmptyView()) : AnyView(AppStoreView())),
     SettingsItem(type: .gameCenter, title: "Game Center", icon: Configuration().isSimulator ? "Placeholder_Normal" : "appleGameCenter", destination: AnyView(GameCenterView())),
     SettingsItem(type: .wallet, title: "Wallet & Apple Pay", icon: "appleWallet", destination: AnyView(WalletView()))
 ]

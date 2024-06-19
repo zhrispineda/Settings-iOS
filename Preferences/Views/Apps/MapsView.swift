@@ -19,7 +19,7 @@ struct MapsView: View {
     var body: some View {
         CustomList(title: "Maps") {
             Section {
-                SettingsLink(icon: "applesiri", id: "Siri & Search", content: {
+                SettingsLink(icon: "appleSiri", id: "Siri & Search", content: {
                     SiriDetailView(appName: "Maps")
                 })
                 IconToggle(enabled: $backgroundAppRefreshEnabled, color: .gray, icon: "gear", title: "Background App Refresh")

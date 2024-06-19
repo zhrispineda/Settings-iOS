@@ -61,7 +61,7 @@ struct AccessibilityView: View {
             }
             
             Section {
-                SettingsLink(icon: "LiveSpeech29x29", id: "Live Speech", status: "Off") {
+                SettingsLink(color: .black, icon: "keyboard.badge.waveform.fill", id: "Live Speech", status: "Off") {
                     LiveSpeechView()
                 }
             } header: {
