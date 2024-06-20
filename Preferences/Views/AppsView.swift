@@ -15,7 +15,7 @@ struct AppsView: View {
     let apps = ["Calendar", "Contacts", "Files", "Fitness", "Health", "Maps", "Messages", "News", "Passwords", "Photos", "Reminders", "Safari", "Shortcuts", "Translate", "Wallet", "Watch"]
 
     var groupedApps: [String: [String]] {
-        Dictionary(grouping: !Configuration().isSimulator ? simulatorApps : apps, by: { String($0.prefix(1)) })
+        Dictionary(grouping: Configuration().isSimulator ? simulatorApps : apps, by: { String($0.prefix(1)) })
     }
 
     var body: some View {

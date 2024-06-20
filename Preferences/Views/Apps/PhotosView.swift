@@ -24,13 +24,7 @@ struct PhotosView: View {
     
     var body: some View {
         CustomList(title: "Photos") {
-            Section {
-                SettingsLink(icon: "appleSiri", id: "Siri & Search", content: {
-                    SiriDetailView(appName: "Photos")
-                })
-            } header: {
-                Text("Allow Photos to Access")
-            }
+            PermissionsView(appName: "Photos", cellular: false, location: false, notifications: false, cellularEnabled: .constant(false))
             
             Section {
                 Toggle("Shared Albums", isOn: $sharedAlbumsEnabled)
@@ -128,5 +122,7 @@ struct PhotosView: View {
 }
 
 #Preview {
-    PhotosView()
+    NavigationStack {
+        PhotosView()
+    }
 }
