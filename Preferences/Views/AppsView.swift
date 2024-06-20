@@ -11,10 +11,11 @@ struct AppsView: View {
     // Variables
     @State private var searchText = String()
     
-    let apps = ["Calendar", "Contacts", "Files", "Health", "Maps", "Messages", "News", "Photos", "Reminders", "Safari", "Settings", "Wallet", "Watch"]
+    let simulatorApps = ["Calendar", "Contacts", "Files", "Fitness", "Health", "Maps", "Messages", "News", "Passwords", "Photos", "Reminders", "Safari", "Shortcuts", "Watch"]
+    let apps = ["Calendar", "Contacts", "Files", "Fitness", "Health", "Maps", "Messages", "News", "Passwords", "Photos", "Reminders", "Safari", "Shortcuts", "Translate", "Wallet", "Watch"]
 
     var groupedApps: [String: [String]] {
-        Dictionary(grouping: apps, by: { String($0.prefix(1)) })
+        Dictionary(grouping: !Configuration().isSimulator ? simulatorApps : apps, by: { String($0.prefix(1)) })
     }
 
     var body: some View {
@@ -22,10 +23,30 @@ struct AppsView: View {
             ForEach(groupedApps.keys.sorted(), id: \.self) { key in
                 Section(header: Text(key)) {
                     ForEach(groupedApps[key]!, id: \.self) { app in
-                        SettingsLink(icon: "apple\(app)", id: app) {}
+                        SettingsLink(icon: "apple\(app)", id: app) {
+                            switch app {
+                            case "Health":
+                                HealthView()
+                            case "Maps":
+                                MapsView()
+                            case "News":
+                                NewsView()
+                            case "Photos":
+                                PhotosView()
+                            case "Safari":
+                                SafariView()
+                            case "Shortcuts":
+                                ShortcutsView()
+                            case "Translate":
+                                TranslateView()
+                            default:
+                                EmptyView()
+                            }
+                        }
                     }
                 }
             }
+            SettingsLink(color: .blue, icon: "square.stack.3d.up.slash.fill", id: "Hidden Apps") {}
         }
         .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always))
     }
