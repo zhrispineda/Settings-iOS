@@ -13,19 +13,8 @@ struct TransferResetView: View {
     var body: some View {
         CustomList(title: "Transfer or Reset \(Device().model)") {
             VStack(alignment: .center) {
-                Image(systemName: "\(Device().model.lowercased()).gen\(Device().hasHomeButton ? "1" : "2")")
-                    .font(.system(size: 50))
-                    .foregroundStyle(.blue)
-                    .symbolRenderingMode(.monochrome)
-                ZStack {
-                    Color("Background")
-                        .frame(width: Device().isPhone ? 35 : 45, height: Device().isPhone ? 55 : 59)
-                    Image(systemName: "apps.\(Device().model.lowercased())")
-                        .font(.system(size: 50))
-                        .foregroundStyle(.blue)
-                        .symbolRenderingMode(.monochrome)
-                }
-                .padding([.top, .trailing], -40)
+                Image(Device().isPhone ? (Device().hasHomeButton ? "ClassiciPhone" : "ModerniPhone") : "ModerniPad")
+                    .foregroundStyle(.accent)
                 Text("**Prepare for New \(Device().model)**")
                 Text("Make sure everything's ready to transfer to a new \(Device().model), even if you don't currently have enough iCloud storage to back up.")
                     .font(.footnote)
@@ -48,8 +37,8 @@ struct TransferResetView: View {
                 Button("Reset Location & Privacy") {}
         })
         List {
-            Button("Reset", action: { showingResetOptions.toggle() })
-            Button("Erase All Content and Settings", action: {})
+            Button("Reset") { showingResetOptions.toggle() }
+            Button("Erase All Content and Settings") {}
         }
         .padding(.top, -25)
         .frame(maxHeight: 100)
