@@ -9,6 +9,14 @@ import SwiftUI
 
 struct DisplayBrightnessView: View {
     // Variables
+    @Environment(\.colorScheme) var colorScheme
+    @State private var appearance: Theme = .dark
+    
+    enum Theme {
+        case dark
+        case light
+    }
+    
     @State private var automaticEnabled = false
     @State private var boldTextEnabled = false
     @State private var brightness = 0.5
@@ -18,8 +26,48 @@ struct DisplayBrightnessView: View {
     var body: some View {
         CustomList(title: "Display & Brightness") {
             Section {
-                // TODO: Light & Dark options
+                HStack {
+                    Text("") // For listRowSeparator
+                    Spacer()
+                    Button {
+                        appearance = .light
+                    } label: {
+                        VStack(spacing: 15) {
+                            Image("\(Device().model.lowercased())-appearance-light")
+                                .padding(.top)
+                            Text("Light")
+                                .font(.subheadline)
+                                .padding(.bottom, -5)
+                            Image(systemName: appearance == .light ? "checkmark.circle.fill": "circle")
+                                .foregroundStyle(appearance == .light ? Color.white : Color.secondary, .blue)
+                                .fontWeight(.light)
+                        }
+                    }
+                    .buttonStyle(.plain)
+                    Spacer()
+                    Button {
+                        appearance = .dark
+                    } label: {
+                        VStack(spacing: 15) {
+                            Image("\(Device().model.lowercased())-appearance-dark")
+                                .padding(.top)
+                            Text("Dark")
+                                .font(.subheadline)
+                                .padding(.bottom, -5)
+                            Image(systemName: appearance == .dark ? "checkmark.circle.fill": "circle")
+                                .foregroundStyle(appearance == .dark ? Color.white : Color.secondary, .blue)
+                                .fontWeight(.light)
+                        }
+                    }
+                    .buttonStyle(.plain)
+                    Spacer()
+                }
+                .onAppear {
+                    appearance = colorScheme == .dark ? .dark : .light
+                }
+                
                 Toggle("Automatic", isOn: $automaticEnabled.animation())
+                
                 if automaticEnabled {
                     CustomNavigationLink(title: "Options", status: "Light Until Sunset", destination: EmptyView())
                 }
