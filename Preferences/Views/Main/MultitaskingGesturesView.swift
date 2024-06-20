@@ -31,7 +31,7 @@ struct MultitaskingGesturesView: View {
                             multitaskingMode = 0
                         } label: {
                             VStack(spacing: 15) {
-                                Image("OneAppAtATime160x120")
+                                Image("OneAppAtATime")
                                     .resizable()
                                     .scaledToFit()
                                     .frame(height: 125)
@@ -53,7 +53,7 @@ struct MultitaskingGesturesView: View {
                             multitaskingMode = 1
                         } label: {
                             VStack(spacing: 15) {
-                                Image("SplitViewSlideOver160x120")
+                                Image("SplitViewSlideOver")
                                     .resizable()
                                     .scaledToFit()
                                     .frame(height: 125)
@@ -76,7 +76,7 @@ struct MultitaskingGesturesView: View {
                                 multitaskingMode = 2
                             } label: {
                                 VStack(spacing: 15) {
-                                    Image("iPad_Messages_Safari_StageManager_Normal")
+                                    Image("iPad_Messages_Safari_StageManager")
                                         .resizable()
                                         .scaledToFit()
                                         .frame(height: 125)

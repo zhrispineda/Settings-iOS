@@ -36,7 +36,7 @@ struct SelectSignInOptionView: View {
                             dismiss()
                         } label: {
                             HStack {
-                                Image("ProximitySymbol-iPhone-iPad-2")
+                                Image("ProximitySymbol-iPhone-iPad")
                                     .foregroundStyle(.blue)
                                     .font(.system(size: 42))
                                     .frame(width: 70)
@@ -92,14 +92,14 @@ struct SelectSignInOptionView: View {
                     } label: {
                         Text("**Don‘t have an Apple Account?**")
                     }
-                    .alert("Could Not Create Apple ID", isPresented: $showingAlert, actions: {
+                    .alert("Could Not Create Apple ID", isPresented: $showingAlert) {
                         Link("Learn More", destination: URL(string: "https://support.apple.com/en-us/101661")!)
-                        Button("OK", action: {
+                        Button("OK") {
                             dismiss()
-                        })
-                    }, message: {
+                        }
+                    } message: {
                         Text("The iPhoneSimulator has been used to create too many new Apple Accounts. Contact Apple Support to request another Apple Account to use with this iPhoneSimulator.")
-                    })
+                    }
                 }
             }
         }
