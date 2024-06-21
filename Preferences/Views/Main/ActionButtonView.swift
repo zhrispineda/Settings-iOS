@@ -14,18 +14,30 @@ struct ActionButtonView: View {
     
     var body: some View {
         ZStack {
-            ActionButtonRender()
+            //ActionButtonRender()
+            Image("actionButton")
+                .resizable()
                 .ignoresSafeArea()
+                .scaledToFill()
+            
             VStack {
                 Rectangle()
-                    .fill(LinearGradient(gradient: Gradient(colors: [Color.black, Color.black.opacity(0.01)]), startPoint: .top, endPoint: .bottom))
-                    .edgesIgnoringSafeArea(.all)
-                    .frame(maxHeight: 10)
+                    .frame(height: 200)
+                    .mask(
+                        LinearGradient(
+                            gradient: .init(colors: [.black.opacity(0.95)]), startPoint: .bottom, endPoint: .top)
+                    )
+                    .blur(radius: 25, opaque: false)
+                    .offset(y: -80)
                 Spacer()
                 Rectangle()
-                    .fill(LinearGradient(gradient: Gradient(colors: [Color.black, Color.black.opacity(0.01)]), startPoint: .bottom, endPoint: .top))
-                    .edgesIgnoringSafeArea(.all)
-                    .frame(maxHeight: 10)
+                    .frame(height: 300)
+                    .mask(
+                        LinearGradient(
+                            gradient: .init(colors: [.black.opacity(0.95)]), startPoint: .bottom, endPoint: .top)
+                    )
+                    .blur(radius: 40, opaque: false)
+                    .offset(y: 70)
             }
         }
         .navigationBarTitleDisplayMode(.inline)
@@ -65,9 +77,7 @@ struct ActionButtonRender: UIViewRepresentable {
         return sceneView
     }
     
-    func updateUIView(_ uiView: SCNView, context: Context) {
-        // Empty
-    }
+    func updateUIView(_ uiView: SCNView, context: Context) {}
 }
 
 #Preview {
