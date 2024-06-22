@@ -25,12 +25,16 @@ struct AppsView: View {
                     ForEach(groupedApps[key]!, id: \.self) { app in
                         SettingsLink(icon: "apple\(app)", id: app) {
                             switch app {
+                            case "Calendar":
+                                CalendarView()
                             case "Health":
                                 HealthView()
                             case "Maps":
                                 MapsView()
                             case "News":
                                 NewsView()
+                            case "Passwords":
+                                PasswordsView()
                             case "Photos":
                                 PhotosView()
                             case "Safari":

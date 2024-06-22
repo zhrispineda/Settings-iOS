@@ -20,15 +20,28 @@ struct SectionHelp: View {
                 Image(systemName: "app.fill")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 56)
-                    .foregroundStyle(color)
+                    .frame(width: 60)
+                    .foregroundStyle(UIImage(systemName: icon) != nil ? color : .black)
                 if UIImage(systemName: icon) != nil {
                     Image(systemName: icon)
                         .font(.system(size: icon == "personalhotspot" ? 30 : 36))
                         .foregroundStyle(icon == "touchid" ? .pink : .white)
                 } else if icon == "bluetooth" {
-                    Image(_internalSystemName: "bluetooth")
+                    Image(_internalSystemName: icon)
+                        .foregroundStyle(.white)
                         .font(.system(size: 36))
+                } else {
+                    Image(icon)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 60)
+                        .mask {
+                            Image(systemName: "app.fill")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 60)
+                                .foregroundStyle(.black)
+                        }
                 }
             }
             Text(title)
@@ -46,5 +59,5 @@ struct SectionHelp: View {
 }
 
 #Preview {
-    SectionHelp(title: "Title", color: Color.blue, icon: "bluetooth", description: "Your description here.")
+    SectionHelp(title: "Title", color: Color.blue, icon: "appleCalendar", description: "Your description here.")
 }

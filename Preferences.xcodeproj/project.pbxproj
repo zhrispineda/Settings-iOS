@@ -55,6 +55,7 @@
 		83585B752B8848110046A0C3 /* TransitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83585B742B8848110046A0C3 /* TransitView.swift */; };
 		83585B772B8848430046A0C3 /* CyclingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83585B762B8848430046A0C3 /* CyclingView.swift */; };
 		836000782BCC7A470034DDF5 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836000772BCC7A470034DDF5 /* NotificationsView.swift */; };
+		836167D82C25FA3A00458CD8 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836167D72C25FA3A00458CD8 /* CalendarView.swift */; };
 		8361A2292C19308600A7D5CC /* SectionHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8361A2282C19308600A7D5CC /* SectionHelp.swift */; };
 		8361A22B2C193DBA00A7D5CC /* SettingsSimulator.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8361A22A2C193DBA00A7D5CC /* SettingsSimulator.gif */; };
 		836A7E892B981D8E00FA3223 /* AppleAccountLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836A7E882B981D8E00FA3223 /* AppleAccountLoginView.swift */; };
@@ -253,6 +254,7 @@
 		83585B742B8848110046A0C3 /* TransitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitView.swift; sourceTree = "<group>"; };
 		83585B762B8848430046A0C3 /* CyclingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyclingView.swift; sourceTree = "<group>"; };
 		836000772BCC7A470034DDF5 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
+		836167D72C25FA3A00458CD8 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		8361A2282C19308600A7D5CC /* SectionHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHelp.swift; sourceTree = "<group>"; };
 		8361A22A2C193DBA00A7D5CC /* SettingsSimulator.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SettingsSimulator.gif; sourceTree = "<group>"; };
 		836A7E882B981D8E00FA3223 /* AppleAccountLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAccountLoginView.swift; sourceTree = "<group>"; };
@@ -531,6 +533,7 @@
 				83D3085A2B8AC28B002A9B7F /* Safari */,
 				83898FD22B8AA2240020C7BB /* Shortcuts */,
 				83DF95722B841EFB00AEEB63 /* Translate */,
+				836167D72C25FA3A00458CD8 /* CalendarView.swift */,
 				83815CF02B768F0500F53A0F /* HealthView.swift */,
 				83815CEC2B768E8300F53A0F /* MapsView.swift */,
 				83815CE82B768E3600F53A0F /* NewsView.swift */,
@@ -1236,6 +1239,7 @@
 				83B619CB2B93EE2400EFEA90 /* AppWebsiteActivityView.swift in Sources */,
 				83B619CD2B93F91500EFEA90 /* DowntimeView.swift in Sources */,
 				83815CF32B768F1E00F53A0F /* SiriView.swift in Sources */,
+				836167D82C25FA3A00458CD8 /* CalendarView.swift in Sources */,
 				83F3F6A92B7D2EFE003CC310 /* LanguageRegionView.swift in Sources */,
 				837B0F642B89B5E700B22455 /* SiriDictationHistoryView.swift in Sources */,
 				83D3086D2B8AD2BC002A9B7F /* RequestDesktopWebsiteView.swift in Sources */,
