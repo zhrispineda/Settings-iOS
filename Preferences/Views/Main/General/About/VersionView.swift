@@ -15,19 +15,20 @@ struct VersionView: View {
             List {
                 Section {
                     VStack(alignment: .leading) {
-                        Text("**\(UIDevice().systemName) \(UIDevice().systemVersion) (22A5282m)**")
+                        Text("**\(UIDevice().systemName) \(UIDevice().systemVersion) (22A5297f)**")
                         if Configuration().isSimulator {
                             Text("This update includes improvements and bug fixes for your \(Device().model).")
                                 .foregroundStyle(.secondary)
                                 .font(.callout)
                         } else {
-                            Text("This update includes improvements and bug fixes for your \(Device().model).")
-                                .foregroundStyle(.secondary)
+                            Text("\(UIDevice().systemName) beta gives you an early preview of upcoming apps, features, and technologies. Please back up your \(Device().model) before you install the beta.\n")
                                 .font(.callout)
-//                            Text("This update introduces new emoji, transcripts in Apple Podcasts and includes other features, bug fixes, and and security updates for your \(Device().model).\n")
-//                                .font(.callout)
-//                            Text("For more information on the security content of Apple software updates, please visit this website:\n https://support.apple.com/kb/HT201222\n")
-//                                .font(.callout)
+                            Text("""
+                                For more information, please visit one of the following programs:
+                                \u{2022} Apple Beta Software Program at [beta.apple.com](beta.apple.com)
+                                \u{2022} Apple Developer Program at [developer.apple.com](developer.apple.com)
+                                """)
+                                .font(.callout)
                         }
                     }
                     
