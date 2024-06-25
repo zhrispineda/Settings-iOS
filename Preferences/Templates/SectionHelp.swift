@@ -20,8 +20,8 @@ struct SectionHelp: View {
                 Image(systemName: "app.fill")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 60)
-                    .foregroundStyle(UIImage(systemName: icon) != nil ? color : .black)
+                    .frame(width: 64)
+                    .foregroundStyle(UIImage(systemName: icon) != nil || icon == "bluetooth" ? color : .black)
                 if UIImage(systemName: icon) != nil {
                     Image(systemName: icon)
                         .font(.system(size: icon == "personalhotspot" ? 30 : 36))
@@ -46,9 +46,9 @@ struct SectionHelp: View {
             }
             Text(title)
                 .bold()
-                .font(.title2)
+                .font(.title3)
             Text(.init(description))
-                .font(.subheadline)
+                .font(.footnote)
                 .padding(.bottom, -10)
                 .padding(.horizontal, -5)
         }
@@ -59,5 +59,5 @@ struct SectionHelp: View {
 }
 
 #Preview {
-    SectionHelp(title: "Title", color: Color.blue, icon: "appleCalendar", description: "Your description here.")
+    SectionHelp(title: "Title", color: Color.blue, icon: "wifi", description: "Your description here.")
 }

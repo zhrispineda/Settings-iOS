@@ -22,6 +22,7 @@ struct ActionButtonView: View {
             
             VStack {
                 Rectangle()
+                    .foregroundStyle(.black)
                     .frame(height: 200)
                     .mask(
                         LinearGradient(
@@ -31,6 +32,7 @@ struct ActionButtonView: View {
                     .offset(y: -80)
                 Spacer()
                 Rectangle()
+                    .foregroundStyle(.black)
                     .frame(height: 300)
                     .mask(
                         LinearGradient(
