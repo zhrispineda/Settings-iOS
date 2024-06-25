@@ -67,7 +67,7 @@ struct ScreenTimeView: View {
                             .frame(width: 400, height: 730)
                     }
                 }
-                SettingsLink(color: Color.white, iconColor: Color.blue, icon: "screen-distance.symbol_Normal", id: "Screen Distance", subtitle: "Reduce eye strain") {
+                SettingsLink(color: Color.white, iconColor: Color.blue, icon: "screen-distance.symbol", id: "Screen Distance", subtitle: "Reduce eye strain") {
                     ScreenDistanceView()
                         .onAppear {
                             showingScreenDistanceSheet.toggle()

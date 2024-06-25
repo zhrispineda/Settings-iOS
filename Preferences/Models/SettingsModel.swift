@@ -194,9 +194,8 @@ let largerIcons = ["accessibility", "bell.badge.fill", "faceid", "gear", "hand.r
 
 // MARK: Services Settings
 @MainActor let serviceSettings: [SettingsItem] = [
-    //SettingsItem(type: .passwords, title: "Passwords", icon: "key.fill", color: .gray, destination: AnyView(PasswordsView()))
-    SettingsItem(type: .appStore, title: "App Store", icon: Configuration().isSimulator ? "Placeholder_Normal" : "appleAppStore", destination: Configuration().isSimulator ? AnyView(EmptyView()) : AnyView(AppStoreView())),
-    SettingsItem(type: .gameCenter, title: "Game Center", icon: Configuration().isSimulator ? "Placeholder_Normal" : "appleGameCenter", destination: AnyView(GameCenterView())),
+    SettingsItem(type: .appStore, title: "App Store", icon: Configuration().isSimulator ? "Placeholder" : "appleAppStore", destination: Configuration().isSimulator ? AnyView(EmptyView()) : AnyView(AppStoreView())),
+    SettingsItem(type: .gameCenter, title: "Game Center", icon: Configuration().isSimulator ? "Placeholder" : "appleGameCenter", destination: AnyView(GameCenterView())),
     SettingsItem(type: .wallet, title: "Wallet & Apple Pay", icon: "appleWallet", destination: AnyView(WalletView()))
 ]
 

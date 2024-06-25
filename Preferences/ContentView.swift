@@ -20,7 +20,7 @@ struct ContentView: View {
     @State private var destination = AnyView(GeneralView())
     @State private var isOnLandscapeOrientation: Bool = UIDevice.current.orientation.isLandscape
     @State private var id = UUID()
-    @State private var airplaneModeEnabled = false
+    @AppStorage("airplaneMode") private var airplaneModeEnabled = false
     
     var body: some View {
         ZStack {

@@ -71,7 +71,7 @@ struct RestrictionsLocationServicesView: View {
                     CustomNavigationLink(title: "MobileWiFi.framework", status: "When Shared", destination: LocationPermissionsDetailView(title: "MobileWiFi.framework"))
                     CustomNavigationLink(title: "MotionCalibration.bundle", status: "When Shared", destination: LocationPermissionsDetailView(title: "MotionCalibration.bundle"))
                     CustomNavigationLink(title: "PassbookMerchantLookup.bundle", status: "When Shared", destination: LocationPermissionsDetailView(title: "PassbookMerchantLookup.bundle"))
-                    SettingsLink(icon: "Placeholder_Normal", id: "Share My Location", status: "When Shared") {
+                    SettingsLink(icon: "Placeholder", id: "Share My Location", status: "When Shared") {
                         LocationPermissionsDetailView(title: "Share My Location")
                     }
                     SettingsLink(icon: "applesiri", id: "Siri & Dictation", status: "When Shared") {

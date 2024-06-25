@@ -433,13 +433,6 @@
 			path = "Game Center";
 			sourceTree = "<group>";
 		};
-		8319CE472B86D17B007EC822 /* Passwords */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Passwords;
-			sourceTree = "<group>";
-		};
 		832928472B857763006611CF /* Privacy & Security */ = {
 			isa = PBXGroup;
 			children = (
@@ -529,7 +522,6 @@
 			children = (
 				83898FC82B8A8EF20020C7BB /* Health */,
 				83585B6F2B8847230046A0C3 /* Maps */,
-				8319CE472B86D17B007EC822 /* Passwords */,
 				83D3085A2B8AC28B002A9B7F /* Safari */,
 				83898FD22B8AA2240020C7BB /* Shortcuts */,
 				83DF95722B841EFB00AEEB63 /* Translate */,

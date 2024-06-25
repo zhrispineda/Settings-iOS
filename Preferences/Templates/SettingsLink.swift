@@ -66,7 +66,7 @@ struct SettingsLink<Content: View>: View {
                         }
                     } else {
                         switch icon {
-                        case "screen-distance.symbol_Normal":
+                        case "screen-distance.symbol":
                             Image(icon)
                                 .resizable()
                                 .scaledToFit()
