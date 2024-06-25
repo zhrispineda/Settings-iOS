@@ -29,10 +29,6 @@ To switch between the simulator or physical-like view of Settings, modify the `i
 
 As this is a personal project for learning Swift and SwiftUI, feel free to download and modify the project for your own personal purposes.
 
-## To Do
-- Basic data saving and retrieval.
-- Complete missing views.
-
 ## Disclaimers
 - All assets such as icons and images are not my own in any way.
 - This app is a recreation of Apple's own apps and designs for learning purposes only.
