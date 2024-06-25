@@ -1,17 +1,18 @@
 {
   "images" : [
     {
-      "idiom" : "universal",
-      "scale" : "1x"
+      "filename" : "Siri_Normal@3x.png",
+      "idiom" : "universal"
     },
     {
-      "filename" : "AppIcon60x60@2x.png",
-      "idiom" : "universal",
-      "scale" : "2x"
-    },
-    {
-      "idiom" : "universal",
-      "scale" : "3x"
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "SiriDark_Normal@3x.png",
+      "idiom" : "universal"
     }
   ],
   "info" : {

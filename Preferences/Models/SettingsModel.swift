@@ -126,7 +126,7 @@ struct SettingsItem<Content: View>: Identifiable {
 }
 
 // Icon scaling
-let smallerIcons = ["airplane", "arrow.turn.up.forward.iphone", "calendar.badge.clock", "camera.fill", "character.book.closed.fill", "eye.trianglebadge.exclamationmark.fill", "moon.fill", "sos", "pip", "key.fill", "shareplay"]
+let smallerIcons = ["airplane", "arrow.turn.up.forward.iphone", "calendar.badge.clock", "camera.fill", "character.book.closed.fill", "eye.trianglebadge.exclamationmark.fill", "sos", "pip", "key.fill", "shareplay"]
 let largerIcons = ["accessibility", "bell.badge.fill", "faceid", "gear", "hand.raised.fill", "hourglass"]
 
 // MARK: Radio Settings

@@ -1,17 +1,18 @@
 {
   "images" : [
     {
-      "filename" : "applephotos.png",
-      "idiom" : "universal",
-      "scale" : "1x"
+      "filename" : "Photos-1024_Light_Normal.png",
+      "idiom" : "universal"
     },
     {
-      "idiom" : "universal",
-      "scale" : "2x"
-    },
-    {
-      "idiom" : "universal",
-      "scale" : "3x"
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "Photos-1024_Dark_Normal.png",
+      "idiom" : "universal"
     }
   ],
   "info" : {

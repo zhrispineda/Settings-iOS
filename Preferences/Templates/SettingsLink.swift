@@ -54,7 +54,7 @@ struct SettingsLink<Content: View>: View {
                                 .foregroundStyle(iconColor)
                         case "faceid":
                             Image(systemName: icon)
-                                .symbolRenderingMode(id.contains("Attention") ? .hierarchical : nil)
+                                .symbolRenderingMode(.hierarchical)
                                 .imageScale(.large)
                                 .foregroundStyle(iconColor)
                         default:
@@ -116,7 +116,7 @@ struct SettingsLink<Content: View>: View {
         List {
             SettingsLink(color: .gray, icon: "camera.fill", id: "Settings", subtitle: "Camera") {}
             SettingsLink(color: .white, icon: "airdrop", id: "Emergency SOS") {}
-            SettingsLink(color: .blue, icon: "faceid", id: "StandBy") {}
+            SettingsLink(color: .blue, icon: "faceid", id: "Attention") {}
         }
     }
 }

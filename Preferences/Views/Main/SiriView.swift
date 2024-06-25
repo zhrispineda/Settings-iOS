@@ -29,7 +29,7 @@ struct SiriView: View {
     
     var body: some View {
         CustomList(title: "Siri") {
-            SectionHelp(title: "Siri", icon: "appleSiri", description: "Customize your Siri settings-choose how to activate Siri and what Siri can do, such as announce calls and notifications and automatically send messages. [Learn more...](#)")
+            SectionHelp(title: "Siri", icon: "appleSiri", description: "Siri is an intelligent assistant that helps you find information and get things done. [Learn more...](#)")
             
             Section {
                 CustomNavigationLink(title: "Language", status: "English (United States)", destination: SiriLanguageView())
@@ -37,36 +37,36 @@ struct SiriView: View {
                     CustomNavigationLink(title: "Siri Voice", status: "American (Voice 4)", destination: SiriVoiceView())
                 }
                 CustomNavigationLink(title: "Listen for", status: "Off", destination: EmptyView())
-                Toggle("Press \(Device().isPhone ? "\(Device().hasHomeButton ? "Home" : "Side") Button" : "Top Button") for Siri", isOn: $siriEnabled)
-                    .alert("Turn Off Siri?", isPresented: $showingDisableSiriAlert) {
-                        Button("Turn Off Siri") {}
-                        Button("Cancel", role: .cancel) {}
-                    } message: {
-                        Text("The information Siri uses to respond to your requests will be removed from Apple servers. If you want to use Siri later, it will take some time to re-send this information.")
-                    }
-                    .alert("Enable Siri?", isPresented: $showingEnableSiriAlert) {
-                        Button("Enable Siri") {}
-                        Button("Cancel", role: .cancel) {}
-                    } message: {
-                        Text("Siri sends information like your voice input, contacts, and location to Apple to process your requests.")
-                    }
-                    .confirmationDialog("Turn Off Siri", isPresented: $showingDisableSiriPopup, titleVisibility: .visible) {
-                        Button("Turn Off Siri") {}
-                        Button("Cancel", role: .cancel) {
-                            siriEnabled = true
-                        }
-                    } message: {
-                        Text("The information Siri uses to respond to your requests will be removed from Apple servers. If you want to use Siri later, it will take some time to re-send this information.")
-                    }
-                    .confirmationDialog("Enable Siri", isPresented: $showingEnableSiriPopup, titleVisibility: .visible) {
-                        Button("Enable Siri") {}
-                        Button("Cancel", role: .cancel) {}
-                    } message: {
-                        Text("Siri sends information like your voice input, contacts, and location to Apple to process your requests.")
-                    }
-                    .onChange(of: siriEnabled) {
-                        siriEnabled ? (Device().isPhone ? showingEnableSiriPopup.toggle() : showingEnableSiriAlert.toggle()) : (Device().isPhone ? showingDisableSiriPopup.toggle() : showingDisableSiriAlert.toggle())
-                    }
+//                Toggle("Press \(Device().isPhone ? "\(Device().hasHomeButton ? "Home" : "Side") Button" : "Top Button") for Siri", isOn: $siriEnabled)
+//                    .alert("Turn Off Siri?", isPresented: $showingDisableSiriAlert) {
+//                        Button("Turn Off Siri") {}
+//                        Button("Cancel", role: .cancel) {}
+//                    } message: {
+//                        Text("The information Siri uses to respond to your requests will be removed from Apple servers. If you want to use Siri later, it will take some time to re-send this information.")
+//                    }
+//                    .alert("Enable Siri?", isPresented: $showingEnableSiriAlert) {
+//                        Button("Enable Siri") {}
+//                        Button("Cancel", role: .cancel) {}
+//                    } message: {
+//                        Text("Siri sends information like your voice input, contacts, and location to Apple to process your requests.")
+//                    }
+//                    .confirmationDialog("Turn Off Siri", isPresented: $showingDisableSiriPopup, titleVisibility: .visible) {
+//                        Button("Turn Off Siri") {}
+//                        Button("Cancel", role: .cancel) {
+//                            siriEnabled = true
+//                        }
+//                    } message: {
+//                        Text("The information Siri uses to respond to your requests will be removed from Apple servers. If you want to use Siri later, it will take some time to re-send this information.")
+//                    }
+//                    .confirmationDialog("Enable Siri", isPresented: $showingEnableSiriPopup, titleVisibility: .visible) {
+//                        Button("Enable Siri") {}
+//                        Button("Cancel", role: .cancel) {}
+//                    } message: {
+//                        Text("Siri sends information like your voice input, contacts, and location to Apple to process your requests.")
+//                    }
+//                    .onChange(of: siriEnabled) {
+//                        siriEnabled ? (Device().isPhone ? showingEnableSiriPopup.toggle() : showingEnableSiriAlert.toggle()) : (Device().isPhone ? showingDisableSiriPopup.toggle() : showingDisableSiriAlert.toggle())
+//                    }
                 if siriEnabled {
                     Toggle("Allow Siri When Locked", isOn: $allowSiriWhenLockedEnabled)
                     CustomNavigationLink(title: "Siri Voice", status: "American (Voice 4)", destination: SiriVoiceView())
@@ -85,6 +85,7 @@ struct SiriView: View {
                         }
                     }
                 }
+                NavigationLink("Siri & Dictation History") {}
                 NavigationLink("Messaging with Siri", destination: {
                     CustomList(title: "Messaging with Siri") {}
                 })
@@ -133,10 +134,6 @@ struct SiriView: View {
                         }
                     }
                 }
-            }
-            
-            Section {
-                NavigationLink("Siri & Dictation History") {}
             }
         }
     }
