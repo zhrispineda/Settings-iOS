@@ -21,6 +21,7 @@ struct ContentView: View {
     @State private var isOnLandscapeOrientation: Bool = UIDevice.current.orientation.isLandscape
     @State private var id = UUID()
     @AppStorage("airplaneMode") private var airplaneModeEnabled = false
+    @AppStorage("vpn") private var vpnEnabled = false
     
     var body: some View {
         ZStack {
@@ -60,6 +61,7 @@ struct ContentView: View {
                                             .listRowBackground(selection == setting.type ? (Configuration().isSimulator ? Color.blue : Color("Selected")) : nil)
                                         }
                                     }
+                                    IconToggle(enabled: $vpnEnabled, color: .blue, icon: "network.connected.to.line.below", title: "VPN")
                                 }
                             }
                             
@@ -76,7 +78,7 @@ struct ContentView: View {
                             SettingsLabelSection(selection: $selection, id: $id, item: serviceSettings)
                             
                             // MARK: Apps
-                            SettingsLabelSection(selection: $selection, id: $id, item: appSettings)
+                            SettingsLabelSection(selection: $selection, id: $id, item: appsSettings)
                             
                             // MARK: Developer
                             SettingsLabelSection(selection: $selection, id: $id, item: developerSettings)
@@ -126,6 +128,7 @@ struct ContentView: View {
                                         }
                                         .disabled(setting.id == "Personal Hotspot" && airplaneModeEnabled)
                                     }
+                                    IconToggle(enabled: $vpnEnabled, color: .blue, icon: "network.connected.to.line.below", title: "VPN")
                                 }
                             }
                             
@@ -142,7 +145,7 @@ struct ContentView: View {
                             SettingsLinkSection(item: serviceSettings)
                             
                             // MARK: Apps
-                            SettingsLinkSection(item: appSettings)
+                            SettingsLinkSection(item: appsSettings)
                             
                             // MARK: Developer
                             if Configuration().isSimulator || Configuration().developerMode {
@@ -165,6 +168,7 @@ struct ContentView: View {
     }
 }
 
+// MARK: Apple Account Button
 struct AppleAccountSection: View {
     @EnvironmentObject var deviceInfo: Device
     
@@ -191,7 +195,7 @@ struct AppleAccountSection: View {
     }
 }
 
-// Settings Sidebar Label for iPadOS
+// MARK: - Settings Sidebar Label for iPadOS
 struct SettingsLabelSection: View {
     @Binding var selection: SettingsModel?
     @Binding var id: UUID
@@ -215,7 +219,7 @@ struct SettingsLabelSection: View {
     }
 }
 
-// Settings Link for iOS
+// MARK: - Settings Link for iOS
 struct SettingsLinkSection: View {
     var item: [SettingsItem<AnyView>]
     

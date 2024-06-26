@@ -37,8 +37,9 @@ struct SelectSignInOptionView: View {
                         } label: {
                             HStack {
                                 Image("ProximitySymbol-iPhone-iPad")
+                                    .resizable()
+                                    .scaledToFit()
                                     .foregroundStyle(.blue)
-                                    .font(.system(size: 42))
                                     .frame(width: 70)
                                 VStack(alignment: .leading) {
                                     Text("**Use Another Apple Device**")

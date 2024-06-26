@@ -15,7 +15,7 @@ struct HotspotView: View {
     
     var body: some View {
         CustomList(title: "Personal Hotspot") {
-            SectionHelp(title: "Personal Hotspot", color: .green, icon: "personalhotspot", description: "Share your \(Device().model)'s internet connection with other devices. Personal Hotspot is useful when Wi-Fi isn't available. [Learn more...](https://support.apple.com/guide/iphone/share-your-internet-connection-iph45447ca6/ios)")
+            SectionHelp(title: "Personal Hotspot", color: .green, icon: "personalhotspot", description: "Share your \(Device().model)'s internet connection with other devices. Personal Hotspot is useful when Wi-Fi isn't available.\n[Learn more...](https://support.apple.com/guide/iphone/share-your-internet-connection-iph45447ca6/ios)")
             
             Section {
                 Toggle("Allow Others to Join", isOn: $allowOthersJoinEnabled)

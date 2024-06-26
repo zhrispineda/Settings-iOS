@@ -16,7 +16,7 @@ struct CellularView: View {
     
     var body: some View {
         CustomList(title: "Cellular") {
-            SectionHelp(title: "Cellular", color: .green, icon: "antenna.radiowaves.left.and.right", description: "Find out how much data you're using, set data restrictions, and manage carrier settings such as eSIM and Wi-Fi calling. [Learn more...](https://support.apple.com/guide/iphone/view-or-change-cellular-data-settings-iph3dd5f213/ios)")
+            SectionHelp(title: "Cellular", color: .green, icon: "antenna.radiowaves.left.and.right", description: "Find out how much data you're using, set data restrictions, and manage carrier settings such as eSIM and Wi-Fi calling.\n[Learn more...](https://support.apple.com/guide/iphone/view-or-change-cellular-data-settings-iph3dd5f213/ios)")
             
             Section {
                 Toggle("Cellular Data", isOn: $cellularDataEnabled)

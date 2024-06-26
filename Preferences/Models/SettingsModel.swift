@@ -200,7 +200,7 @@ let largerIcons = ["accessibility", "bell.badge.fill", "faceid", "gear", "hand.r
 ]
 
 // MARK: App Settings
-@MainActor let appSettings: [SettingsItem] = [
+@MainActor let appsSettings: [SettingsItem] = [
     SettingsItem(type: .apps, title: "Apps", icon: "applehome screen & app library", color: .indigo, destination: AnyView(AppsView()))
 ]
 
@@ -210,4 +210,4 @@ let largerIcons = ["accessibility", "bell.badge.fill", "faceid", "gear", "hand.r
 ]
 
 // MARK: Combined Settings Array
-@MainActor let combinedSettings = radioSettings + attentionSettings + mainSettings + securitySettings + serviceSettings + appSettings + developerSettings + simulatorMainSettings + simulatorSecuritySettings
+@MainActor let combinedSettings = radioSettings + attentionSettings + mainSettings + securitySettings + serviceSettings + appsSettings + developerSettings + simulatorMainSettings + simulatorSecuritySettings

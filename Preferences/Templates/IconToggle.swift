@@ -43,6 +43,9 @@ struct IconToggle: View {
                         if icon == "airdrop" {
                             Image(_internalSystemName: icon)
                                 .foregroundStyle(.blue)
+                        } else if icon == "network.connected.to.line.below" {
+                            Image(_internalSystemName: icon)
+                                .foregroundStyle(.white)
                         } else {
                             Image(icon)
                                 .resizable()
@@ -67,5 +70,6 @@ struct IconToggle: View {
 #Preview {
     List {
         IconToggle(enabled: .constant(false), color: .gray, icon: "appleHealth", title: "Passwords", subtitle: "Passkeys, passwords, and codes")
+        IconToggle(enabled: .constant(false), color: .blue, icon: "network.connected.to.line.below", title: "VPN")
     }
 }

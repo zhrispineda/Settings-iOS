@@ -14,7 +14,7 @@ struct BluetoothView: View {
     var body: some View {
         CustomList(title: "Bluetooth") {
             Section {
-                SectionHelp(title: "Bluetooth", color: Color.blue, icon: "bluetooth", description: "Connect to accessories you can use for activities such as streaming music, making phone calls, and gaming. [Learn more...](https://support.apple.com/guide/\(Device().isPhone ?  "iphone/bluetooth-accessories-iph3c50f191/ios" : "ipad/bluetooth-accessories-ipad997da4cf/ipados"))")
+                SectionHelp(title: "Bluetooth", color: Color.blue, icon: "bluetooth", description: "Connect to accessories you can use for activities such as streaming music, making phone calls, and gaming.\n[Learn more...](https://support.apple.com/guide/\(Device().isPhone ?  "iphone/bluetooth-accessories-iph3c50f191/ios" : "ipad/bluetooth-accessories-ipad997da4cf/ipados"))")
                 Toggle("Bluetooth", isOn: $bluetoothEnabled.animation())
             } footer: {
                 if bluetoothEnabled {
