@@ -13,6 +13,7 @@ struct AboutView: View {
     @State private var serialNumber = String()
     @State private var availableStorage: String = getAvailableStorage() ?? "N/A"
     @State private var totalStorage: String = getTotalStorage() ?? "N/A"
+    @AppStorage("DeviceName") private var deviceName = Device().model
     
     var body: some View {
         CustomList(title: "About") {
@@ -20,7 +21,7 @@ struct AboutView: View {
                 if Configuration().isSimulator {
                     LabeledContent("Name", value: Device().model)
                 } else {
-                    CustomNavigationLink(title: "Name", status: Device().model, destination: EmptyView())
+                    CustomNavigationLink(title: "Name", status: deviceName, destination: NameView())
                 }
                 
                 CustomNavigationLink(title: "\(UIDevice().systemName) Version", status: UIDevice().systemVersion, destination: VersionView())
@@ -35,15 +36,6 @@ struct AboutView: View {
                         serialNumber = randomSerialNumber()
                     }
             }
-            
-//            Section {
-//                CustomNavigationLink(title: "Limited Warranty", status: "Expires: 1/1/25", destination: EmptyView())
-//                Button {} label: {
-//                    Text("Add AppleCare+ Coverage")
-//                }
-//            } footer: {
-//                Text("There are 60 days left to add coverage for accidental damage.")
-//            }
             
             Section {
                 LabeledContent("Songs", value: "0")
