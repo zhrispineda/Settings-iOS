@@ -36,15 +36,20 @@ struct IconToggle: View {
                         .foregroundStyle(color)
                     if UIImage(systemName: icon) != nil {
                         Image(systemName: icon)
-                            .imageScale(smallerIcons.contains(icon) ? .medium : .large)
-                            .symbolRenderingMode(icon == "faceid" ? .hierarchical : nil)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 18)
                             .foregroundStyle(.white)
+                            .symbolRenderingMode(icon == "faceid" ? .hierarchical : nil)
                     } else {
                         if icon == "airdrop" {
                             Image(_internalSystemName: icon)
                                 .foregroundStyle(.blue)
                         } else if icon == "network.connected.to.line.below" {
                             Image(_internalSystemName: icon)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 18)
                                 .foregroundStyle(.white)
                         } else {
                             Image(icon)
@@ -69,7 +74,8 @@ struct IconToggle: View {
 
 #Preview {
     List {
-        IconToggle(enabled: .constant(false), color: .gray, icon: "appleHealth", title: "Passwords", subtitle: "Passkeys, passwords, and codes")
+        IconToggle(enabled: .constant(false), color: .gray, icon: "airplane", title: "Passwords", subtitle: "Passkeys, passwords, and codes")
         IconToggle(enabled: .constant(false), color: .blue, icon: "network.connected.to.line.below", title: "VPN")
+        IconToggle(enabled: .constant(false), color: .blue, icon: "key.fill", title: "VPN")
     }
 }
