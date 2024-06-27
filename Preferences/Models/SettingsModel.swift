@@ -163,8 +163,8 @@ let largerIcons = ["accessibility", "bell.badge.fill", "faceid", "gear", "hand.r
     SettingsItem(type: .multitaskGestures, title: "Multitasking & Gestures", icon: "squares.leading.rectangle", color: .blue, destination: AnyView(MultitaskingGesturesView())),
     SettingsItem(type: .search, title: "Search", icon: "magnifyingglass", color: .gray, destination: AnyView(SearchView())),
     SettingsItem(type: .siri, title: "Siri", icon: "appleSiri", color: Color(UIColor.systemBackground), destination: AnyView(SiriView())),
-    SettingsItem(type: .standby, title: "StandBy", icon: "appleStandBy", destination: AnyView(StandByView())),
-    SettingsItem(type: .wallpaper, title: "Wallpaper", icon: "Wallpaper", color: .clear, destination: AnyView(WallpaperView())),
+    SettingsItem(type: .standby, title: "StandBy", icon: "clock.filled.and.widget.filled", color: .black, destination: AnyView(StandByView())),
+    SettingsItem(type: .wallpaper, title: "Wallpaper", icon: "apple.photos", color: .cyan, destination: AnyView(WallpaperView())),
 ]
 
 // MARK: Simulator Main Settings

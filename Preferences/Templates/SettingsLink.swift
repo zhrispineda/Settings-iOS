@@ -34,7 +34,7 @@ struct SettingsLink<Content: View>: View {
     @ViewBuilder var content: Content
     
     let hierarchyIcons = ["questionmark.app.dashed", "questionmark.square.dashed"]
-    let internalIcons = ["airdrop", "bluetooth", "carplay", "iphone.action.button.arrow.right", "keyboard.badge.waveform.fill", "sensorkit"]
+    let internalIcons = ["airdrop", "apple.photos", "bluetooth", "carplay", "chevron.3.up.perspective", "clock.filled.and.widget.filled", "iphone.action.button.arrow.right", "keyboard.badge.waveform.fill", "sensorkit"]
     
     var body: some View {
         NavigationLink(destination: content) {
@@ -65,24 +65,16 @@ struct SettingsLink<Content: View>: View {
                                 .foregroundStyle(iconColor)
                         }
                     } else {
-                        switch icon {
-                        case "screen-distance.symbol":
+                        if internalIcons.contains(icon) {
+                            Image(_internalSystemName: icon)
+                                .foregroundStyle(iconColor)
+                                .imageScale(icon == "keyboard.badge.waveform.fill" ? .small : .medium)
+                        } else {
                             Image(icon)
                                 .resizable()
-                                .scaledToFit()
-                                .frame(height: 21)
-                        default:
-                            if internalIcons.contains(icon) {
-                                Image(_internalSystemName: icon)
-                                    .foregroundStyle(iconColor)
-                                    .imageScale(icon == "keyboard.badge.waveform.fill" ? .small : .medium)
-                            } else {
-                                Image(icon)
-                                    .resizable()
-                                    .clipShape(RoundedRectangle(cornerRadius: 5.0))
-                                    .frame(width: 30, height: 30)
-                                    .clipShape(RoundedRectangle(cornerRadius: 6))
-                            }
+                                .clipShape(RoundedRectangle(cornerRadius: 5.0))
+                                .frame(width: 30, height: 30)
+                                .clipShape(RoundedRectangle(cornerRadius: 6))
                         }
                     }
                 }
@@ -115,7 +107,7 @@ struct SettingsLink<Content: View>: View {
     NavigationStack {
         List {
             SettingsLink(color: .gray, icon: "camera.fill", id: "Settings", subtitle: "Camera") {}
-            SettingsLink(color: .white, icon: "airdrop", id: "Emergency SOS") {}
+            SettingsLink(color: .black, icon: "clock.filled.and.widget.filled", id: "Emergency SOS") {}
             SettingsLink(color: .blue, icon: "faceid", id: "Attention") {}
         }
     }
