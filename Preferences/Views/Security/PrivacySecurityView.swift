@@ -70,7 +70,7 @@ struct PrivacySecurityView: View {
                 SettingsLink(color: .orange, icon: "mic.fill", id: "Microphone", status: "0") {
                     AppPermissionsView(permissionName: "Microphone")
                 }
-                SettingsLink(color: .green, icon: "figure.run", id: "Motion & Fitness", status: "0") {
+                SettingsLink(color: .green, icon: "figure.run.motion", id: "Motion & Fitness", status: "0") {
                     AppPermissionsView(permissionName: "Microphone")
                 }
                 SettingsLink(color: .gray, icon: "waveform", id: "Speech Recognition", status: "0") {

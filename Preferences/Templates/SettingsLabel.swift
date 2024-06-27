@@ -23,6 +23,8 @@ struct SettingsLabel: View {
     let id: String
     let status: String
     
+    let internalIcons = ["apple.photos", "bluetooth"]
+    
     init(color: Color = Color.clear, icon: String, id: String, status: String = String()) {
         self.color = color
         self.icon = icon
@@ -40,10 +42,10 @@ struct SettingsLabel: View {
                     .foregroundStyle(color)
                 if UIImage(systemName: icon) != nil {
                     Image(systemName: icon)
-                        .imageScale(largerIcons.contains(icon) && !smallerIcons.contains(icon) ? .large : (smallerIcons.contains(icon) ? .small : .medium))
+                        .symbolRenderingMode(icon == "faceid" ? .hierarchical : nil)
                         .foregroundStyle(.white)
                 } else {
-                    if icon == "bluetooth" {
+                    if internalIcons.contains(icon) {
                         Image(_internalSystemName: icon)
                             .foregroundStyle(.white)
                     } else {

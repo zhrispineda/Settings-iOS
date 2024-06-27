@@ -59,5 +59,11 @@ struct SectionHelp: View {
 }
 
 #Preview {
-    SectionHelp(title: "Title", color: Color.blue, icon: "appleCalendar", description: "Your description here.")
+    NavigationStack {
+        List {
+            Section {
+                SectionHelp(title: "Title", color: Color.blue, icon: "wifi", description: "Description")
+            }
+        }
+    }
 }
