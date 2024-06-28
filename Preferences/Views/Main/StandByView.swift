@@ -24,7 +24,7 @@ struct StandByView: View {
             
             if standByEnabled {
                 if Device().hasAlwaysOnDisplay {
-                    NavigationLink("Display") {}
+                    NavigationLink("Display", destination: DisplayView())
                 } else {
                     Section {
                         Toggle("Night Mode", isOn: $nightModeEnabled)
