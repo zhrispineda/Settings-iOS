@@ -2,7 +2,6 @@
 //  PermissionsView.swift
 //  Preferences
 //
-//
 
 import SwiftUI
 
