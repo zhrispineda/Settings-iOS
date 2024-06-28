@@ -29,20 +29,28 @@ struct SelectOptionList: View {
                             Text(option)
                                 .foregroundStyle(Color["Label"])
                             Spacer()
-                            Image(systemName: "\(selected == option ? "checkmark" : "")")
+                            if option == selected {
+                                Image(systemName: "checkmark")
+                                    .fontWeight(.semibold)
+                            }
                         }
                     }
                 }
             } footer: {
-                if title == "Connect with Friends" {
+                switch title {
+                case "Account Changes":
+                    Text("Disallowing changes prevents adding, removing, or modifying accounts in Passwords & Accounts.")
+                case "Ask to Join Networks":
+                    Text("Known networks will be joined automatically. If no know networks are available, you will \(selected == "Off" ? "have to manually select a network." : "be \(selected == "Notify" ? "notified of available networks." : "asked before joining a new network.")")")
+                case "Connect with Friends":
                     VStack {
                         Text("By selecting “Allow,“ apps can ask for permission to connect you with your Game Center friends.\n")
                         Text("\nDisallowing prevents apps from asking if they can connect you with your Game Center friends and restricts this device from sharing your Game Center friends list with other apps.")
                     }
-                } else if title == "Private Messaging" {
+                case "Private Messaging":
                     Text("Disallowing prevents you from sending custom messages to other players and using voice chat in games.")
-                } else if title == "Account Changes" {
-                    Text("Disallowing changes prevents adding, removing, or modifying accounts in Passwords & Accounts.")
+                default:
+                    EmptyView()
                 }
             }
         }

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BluetoothView: View {
     // Variables
-    @State private var bluetoothEnabled = true
+    @AppStorage("bluetooth") private var bluetoothEnabled = true
     
     var body: some View {
         CustomList(title: "Bluetooth") {

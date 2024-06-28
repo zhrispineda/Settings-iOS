@@ -21,6 +21,8 @@ struct ContentView: View {
     @State private var isOnLandscapeOrientation: Bool = UIDevice.current.orientation.isLandscape
     @State private var id = UUID()
     @AppStorage("airplaneMode") private var airplaneModeEnabled = false
+    @AppStorage("wifi") private var wifiEnabled = true
+    @AppStorage("bluetooth") private var bluetoothEnabled = true
     @AppStorage("vpn") private var vpnEnabled = false
     
     var body: some View {
@@ -55,7 +57,7 @@ struct ContentView: View {
                                                 id = UUID() // Reset destination
                                                 selection = setting.type
                                             } label: {
-                                                SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Wi-Fi" ? "On" : String())
+                                                SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Wi-Fi" ? (wifiEnabled ? "Not Connected" : "Off") : setting.id == "Bluetooth" ? (bluetoothEnabled ? "On" : "Off") : String())
                                                     .foregroundStyle(selection == setting.type ? (Configuration().isSimulator ? Color.white : Color["Label"]) : Color["Label"])
                                             }
                                             .listRowBackground(selection == setting.type ? (Configuration().isSimulator ? Color.blue : Color("Selected")) : nil)
@@ -123,7 +125,7 @@ struct ContentView: View {
                                 Section {
                                     IconToggle(enabled: $airplaneModeEnabled, color: Color.orange, icon: "airplane", title: "Airplane Mode")
                                     ForEach(radioSettings) { setting in
-                                        SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Wi-Fi" ? "On" : setting.id == "Cellular" && airplaneModeEnabled ? "Airplane Mode" : "") {
+                                        SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Wi-Fi" ? (wifiEnabled ? "Not Connected" : "Off") : setting.id == "Bluetooth" ? (bluetoothEnabled ? "On" : "Off") : String()) {
                                             setting.destination
                                         }
                                         .disabled(setting.id == "Personal Hotspot" && airplaneModeEnabled)
