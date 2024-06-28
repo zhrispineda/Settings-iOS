@@ -126,8 +126,10 @@ struct SettingsItem<Content: View>: Identifiable {
 }
 
 // Icon scaling
-let smallerIcons = ["airplane", "arrow.turn.up.forward.iphone", "calendar.badge.clock", "camera.fill", "character.book.closed.fill", "eye.trianglebadge.exclamationmark.fill", "sos", "pip", "key.fill", "shareplay"]
-let largerIcons = ["accessibility", "bell.badge.fill", "faceid", "gear", "hand.raised.fill", "hourglass"]
+let smallerIcons = ["apps.iphone", "apps.ipad", "bluetooth", "hand.raised.fill", "hourglass", "ipad.gen2", "iphone.gen3"]
+let largerIcons = [""]
+let hierarchyIcons = ["faceid", "questionmark.app.dashed", "questionmark.square.dashed"]
+let internalIcons = ["airdrop", "apple.photos", "bluetooth", "carplay", "chevron.3.up.perspective", "clock.filled.and.widget.filled", "figure.run.motion", "iphone.action.button.arrow.right", "iphone.badge.dot.radiowaves.up.forward", "keyboard.badge.waveform.fill", "sensorkit"]
 
 // MARK: Radio Settings
 @MainActor let radioSettings: [SettingsItem] = [

@@ -16,14 +16,14 @@ struct AccessibilityView: View {
             
             Section {
                 if Device().isTablet {
-                    SettingsLink(color: .blue, icon: "character.magnify", larger: false, id: "Hover Text", status: "Off") {
+                    SettingsLink(color: .blue, icon: "character.magnify", id: "Hover Text", status: "Off") {
                         HoverTextView()
                     }
                 }
-                SettingsLink(color: .blue, icon: "textformat.size", larger: false, id: "Display & Text Size") {
+                SettingsLink(color: .blue, icon: "textformat.size", id: "Display & Text Size") {
                     DisplayTextSizeView()
                 }
-                SettingsLink(color: .green, icon: "circle.dotted.and.circle", larger: false, id: "Motion") {
+                SettingsLink(color: .green, icon: "circle.dotted.and.circle", id: "Motion") {
                     MotionView()
                 }
                 SettingsLink(icon: "Speech29x29", id: "Spoken Content") {
@@ -47,7 +47,7 @@ struct AccessibilityView: View {
                         ControlNearbyDevicesView()
                     }
                 }
-                SettingsLink(color: .gray, icon: "keyboard", larger: false, id: "Keyboards") {
+                SettingsLink(color: .gray, icon: "keyboard", id: "Keyboards") {
                     AccessibilityKeyboardsView()
                 }
             } header: {
@@ -55,7 +55,7 @@ struct AccessibilityView: View {
             }
             
             Section {
-                SettingsLink(color: .blue, icon: "captions.bubble.fill", larger: false, id: "Subtitles & Captioning") {
+                SettingsLink(color: .blue, icon: "captions.bubble.fill", id: "Subtitles & Captioning") {
                     SubtitlesCaptioningView()
                 }
             } header: {

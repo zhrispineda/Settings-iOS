@@ -18,19 +18,10 @@ import SwiftUI
 /// - Parameter id: The ``String`` name of the label to display.
 /// - Parameter status: The ``String`` name of the status to display.
 struct SettingsLabel: View {
-    let color: Color
-    let icon: String
-    let id: String
-    let status: String
-    
-    let internalIcons = ["apple.photos", "bluetooth"]
-    
-    init(color: Color = Color.clear, icon: String, id: String, status: String = String()) {
-        self.color = color
-        self.icon = icon
-        self.id = id
-        self.status = status
-    }
+    var color: Color = Color.gray
+    var icon: String = String()
+    var id: String = String()
+    var status: String = String()
     
     var body: some View {
         HStack(spacing: 15) {
@@ -42,23 +33,23 @@ struct SettingsLabel: View {
                     .foregroundStyle(color)
                 if UIImage(systemName: icon) != nil {
                     Image(systemName: icon)
-                        .symbolRenderingMode(icon == "faceid" ? .hierarchical : nil)
+                        .symbolRenderingMode(hierarchyIcons.contains(icon) ? .hierarchical : .none)
+                        .foregroundStyle(.white)
+                } else if internalIcons.contains(icon) {
+                    Image(_internalSystemName: icon)
                         .foregroundStyle(.white)
                 } else {
-                    if internalIcons.contains(icon) {
-                        Image(_internalSystemName: icon)
-                            .foregroundStyle(.white)
-                    } else {
-                        Image(icon)
-                            .resizable()
-                            .scaledToFit()
-                            .clipShape(RoundedRectangle(cornerRadius: 5))
-                            .foregroundStyle(.white)
-                            .frame(width: 30)
-                    }
+                    Image(icon)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 30)
+                        .clipShape(RoundedRectangle(cornerRadius: 6))
+                        .foregroundStyle(.white)
                 }
             }
+            
             Text(id)
+            
             if !status.isEmpty {
                 Spacer()
                 Text(status)
@@ -69,9 +60,6 @@ struct SettingsLabel: View {
 }
 
 #Preview {
-    List {
-        SettingsLabel(color: Color.gray, icon: "appleSafari", id: "Safari")
-        SettingsLabel(color: Color.gray, icon: "bluetooth", id: "Bluetooth")
-        SettingsLabel(color: Color.gray, icon: "battery.100percent", id: "Battery")
-    }
+    ContentView()
+        .environmentObject(Device())
 }

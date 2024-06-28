@@ -59,7 +59,7 @@ struct ScreenTimeView: View {
                     Button {
                         showingAppWebsiteActivitySheet.toggle()
                     } label: {
-                        SettingsLink(color: Color.cyan, icon: "chart.bar.xaxis", larger: false, id: "App & Website Activity", subtitle: "Reports, Downtime & App Limits") {}
+                        SettingsLink(color: Color.cyan, icon: "chart.bar.xaxis", id: "App & Website Activity", subtitle: "Reports, Downtime & App Limits") {}
                             .foregroundStyle(Color["Label"])
                     }
                     .sheet(isPresented: $showingAppWebsiteActivitySheet) {
@@ -82,7 +82,7 @@ struct ScreenTimeView: View {
             }
             
             Section {
-                SettingsLink(color: Color.blue, icon: "bubble.left.and.exclamationmark.bubble.right.fill", larger: false, id: "Communication Safety", subtitle: "Protect from sensitive content") {
+                SettingsLink(color: Color.blue, icon: "bubble.left.and.exclamationmark.bubble.right.fill", id: "Communication Safety", subtitle: "Protect from sensitive content") {
                     CommunicationSafetyView()
                         .onAppear {
                             showingCommunicationSafetySheet.toggle()
@@ -97,7 +97,7 @@ struct ScreenTimeView: View {
             }
             
             Section {
-                SettingsLink(color: Color.red, icon: "nosign", larger: false, id: "Content & Privacy Restrictions", subtitle: "Block inappropriate content") { ContentPrivacyRestrictionsView() }
+                SettingsLink(color: Color.red, icon: "nosign", id: "Content & Privacy Restrictions", subtitle: "Block inappropriate content") { ContentPrivacyRestrictionsView() }
             } header: {
                 Text("Restrictions")
             }

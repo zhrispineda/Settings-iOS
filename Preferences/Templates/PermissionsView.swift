@@ -55,7 +55,7 @@ struct PermissionsView: View {
                 SettingsLink(color: .red, icon: "bell.badge.fill", id: "Notifications", subtitle: "Banners, Sounds, Badges") {}
             }
             if liveActivity {
-                SettingsLink(color: .blue, icon: "clock.badge.fill", larger: true, id: "Live Activities") {}
+                SettingsLink(color: .blue, icon: "clock.badge.fill", id: "Live Activities") {}
             }
             if liveActivityToggle {
                 IconToggle(enabled: $liveActivityEnabled, color: .blue, icon: "clock.badge.fill", title: "Live Activities")
