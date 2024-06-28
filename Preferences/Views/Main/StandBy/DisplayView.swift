@@ -26,7 +26,7 @@ struct DisplayView: View {
                 .pickerStyle(.inline)
                 .labelsHidden()
             } header: {
-                Text("\nTurn Display Off")
+                Text("\n\nTurn Display Off")
             } footer: {
                 Text("When set to Automatically, the display will intelligently turn off when iPhone is not in use and the room is dark.")
             }
@@ -37,7 +37,7 @@ struct DisplayView: View {
             } header: {
                 Text("At Night")
             } footer: {
-                Text("StandBy with a red tint in lower ambient lighting.")
+                Text("StandBy displays with a red tint in low ambient lighting.")
             }
             
             if selected == "Automatically" {
