@@ -71,6 +71,7 @@ struct NetworkView: View {
                 }
             }
         }
+        .navigationBarBackButtonHidden(isEditing)
         .toolbar {
             if isEditing {
                 ToolbarItem(placement: .topBarLeading) {

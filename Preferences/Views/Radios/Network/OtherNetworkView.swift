@@ -35,22 +35,17 @@ struct OtherNetworkView: View {
                     }
                 }
             }
+            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .principal) {
-                    VStack {
-                        Text("Enter network information")
-                            .font(.subheadline)
-                            .offset(y: -5)
-                        Text("**Other Network**")
-                            .offset(y: 15)
-                    }
+                    Text("**Other Network**")
                 }
                 ToolbarItem(placement: .topBarLeading) {
                     Button {
                         dismiss()
                     } label: {
                         Text("Cancel")
-                            .padding(.top, 50)
+                            .padding(.top, 10)
                     }
                     .foregroundStyle(Color["Default"])
                 }
@@ -59,7 +54,7 @@ struct OtherNetworkView: View {
                         dismiss()
                     } label: {
                         Text("**Join**")
-                            .padding(.top, 50)
+                            .padding(.top, 10)
                     }
                     .foregroundStyle(Color["Default"])
                     .disabled(true)

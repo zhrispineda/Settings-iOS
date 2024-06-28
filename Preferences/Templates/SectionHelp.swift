@@ -55,6 +55,7 @@ struct SectionHelp: View {
         .padding()
         .multilineTextAlignment(.center)
         .frame(maxWidth: .infinity)
+        .fixedSize(horizontal: false, vertical: true)
     }
 }
 

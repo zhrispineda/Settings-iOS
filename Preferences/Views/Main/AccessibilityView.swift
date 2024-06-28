@@ -10,7 +10,9 @@ import SwiftUI
 struct AccessibilityView: View {
     var body: some View {
         CustomList(title: "Accessibility") {
-            SectionHelp(title: "Accessibility", color: .blue, icon: "accessibility", description: "Personalize \(Device().model) in ways that work best for you with accessibility features for vision, mobility, hearing, speech, and cognition. [Learn more...](https://support.apple.com/guide/iphone/get-started-with-accessibility-features-iph3e2e4367/ios)")
+            Section {
+                SectionHelp(title: "Accessibility", color: .blue, icon: "accessibility", description: "Personalize \(Device().model) in ways that work best for you with accessibility features for vision, mobility, hearing, speech, and cognition. [Learn more...](https://support.apple.com/guide/iphone/get-started-with-accessibility-features-iph3e2e4367/ios)")
+            }
             
             Section {
                 if Device().isTablet {
@@ -41,7 +43,7 @@ struct AccessibilityView: View {
                     }
                 }
                 if Device().isPhone {
-                    SettingsLink(icon: "ControlNearby29x29", id: "Control Nearby Devices") {
+                    SettingsLink(color: .blue, icon: "iphone.badge.dot.radiowaves.up.forward", id: "Control Nearby Devices") {
                         ControlNearbyDevicesView()
                     }
                 }
