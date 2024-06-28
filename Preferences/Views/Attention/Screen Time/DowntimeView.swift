@@ -37,25 +37,12 @@ struct DowntimeView: View {
             }
             
             if scheduledEnabled {
-                Section {
-                    ForEach(options, id: \.self) { option in
-                        Button {
-                            withAnimation {
-                                selected = option
-                            }
-                        } label: {
-                            HStack {
-                                Text(option)
-                                    .foregroundStyle(Color["Label"])
-                                Spacer()
-                                if selected == option {
-                                    Image(systemName: "checkmark")
-                                        .fontWeight(.medium)
-                                }
-                            }
-                        }
+                Picker("", selection: $selected) {
+                    ForEach(options, id: \.self) {
+                        Text($0)
                     }
                 }
+                .pickerStyle(.inline)
                 
                 Section {
                     if selected == "Every Day" {

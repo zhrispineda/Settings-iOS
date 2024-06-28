@@ -21,22 +21,12 @@ struct FallbackActionView: View {
                 Text("MOUSE_POINTER_DWELL_AUTOREVERT_FOOTER")
             }
             
-            Section {
-                ForEach(options, id: \.self) { option in
-                    Button {
-                        selected = option
-                    } label: {
-                        HStack {
-                            Text(option)
-                                .foregroundStyle(Color["Label"])
-                            Spacer()
-                            if selected == option {
-                                Image(systemName: "checkmark")
-                            }
-                        }
-                    }
+            Picker(selection: $selected, label: EmptyView()) {
+                ForEach(options, id: \.self) {
+                    Text($0)
                 }
             }
+            .pickerStyle(.inline)
         }
     }
 }

@@ -18,21 +18,12 @@ struct DisplayZoomView: View {
     
     var body: some View {
         CustomList(title: "Display Zoom") {
-            ForEach(options, id: \.self) { option in
-                Button {
-                    selected = option
-                } label: {
-                    HStack {
-                        Text(option)
-                            .foregroundStyle(Color["Label"])
-                        Spacer()
-                        if selected == option {
-                            Image(systemName: "checkmark")
-                                .bold()
-                        }
-                    }
+            Picker("", selection: $selected) {
+                ForEach(options, id: \.self) {
+                    Text($0)
                 }
             }
+            .pickerStyle(.inline)
         }
         .toolbar {
             if Device().isTablet {

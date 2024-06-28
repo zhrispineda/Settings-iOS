@@ -2,7 +2,7 @@
 //  HotCornersDetailView.swift
 //  Preferences
 //
-//  Settings > Accessibility > Touch > AssistiveTouch > Hot Corners
+//  Settings > Accessibility > Touch > AssistiveTouch > Hot Corners > [Option]
 //
 
 import SwiftUI
@@ -18,81 +18,33 @@ struct HotCornersDetailView: View {
     
     var body: some View {
         CustomList(title: title) {
-            Section {
-                ForEach(systemOptions, id: \.self) { option in
-                    Button {
-                        selected = option
-                    } label: {
-                        HStack {
-                            Text(option)
-                                .foregroundStyle(Color["Label"])
-                            Spacer()
-                            if selected == option {
-                                Image(systemName: "checkmark")
-                            }
-                        }
-                    }
+            Picker("\nSYSTEMHEADING", selection: $selected) {
+                ForEach(systemOptions, id: \.self) {
+                    Text($0)
                 }
-            } header: {
-                Text("\n\nSYSTEMHEADING")
             }
+            .pickerStyle(.inline)
             
-            Section {
-                ForEach(accessibilityOptions, id: \.self) { option in
-                    Button {
-                        selected = option
-                    } label: {
-                        HStack {
-                            Text(option)
-                                .foregroundStyle(Color["Label"])
-                            Spacer()
-                            if selected == option {
-                                Image(systemName: "checkmark")
-                            }
-                        }
-                    }
+            Picker("ACCESSIBILITY", selection: $selected) {
+                ForEach(accessibilityOptions, id: \.self) {
+                    Text($0)
                 }
-            } header: {
-                Text("ACCESSIBILITY")
             }
+            .pickerStyle(.inline)
             
-            Section {
-                ForEach(scrollGestures, id: \.self) { option in
-                    Button {
-                        selected = option
-                    } label: {
-                        HStack {
-                            Text(option)
-                                .foregroundStyle(Color["Label"])
-                            Spacer()
-                            if selected == option {
-                                Image(systemName: "checkmark")
-                            }
-                        }
-                    }
+            Picker("SCROLLHEADING", selection: $selected) {
+                ForEach(scrollGestures, id: \.self) {
+                    Text($0)
                 }
-            } header: {
-                Text("SCROLLHEADING")
             }
+            .pickerStyle(.inline)
             
-            Section {
-                ForEach(dwellControls, id: \.self) { option in
-                    Button {
-                        selected = option
-                    } label: {
-                        HStack {
-                            Text(option)
-                                .foregroundStyle(Color["Label"])
-                            Spacer()
-                            if selected == option {
-                                Image(systemName: "checkmark")
-                            }
-                        }
-                    }
+            Picker("DWELLHEADING", selection: $selected) {
+                ForEach(dwellControls, id: \.self) {
+                    Text($0)
                 }
-            } header: {
-                Text("DWELLHEADING")
             }
+            .pickerStyle(.inline)
         }
     }
 }

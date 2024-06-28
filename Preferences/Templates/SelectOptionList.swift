@@ -58,5 +58,7 @@ struct SelectOptionList: View {
 }
 
 #Preview {
-    SelectOptionList()
+    NavigationStack {
+        SelectOptionList()
+    }
 }
