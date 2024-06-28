@@ -33,8 +33,18 @@ struct DisplayBrightnessView: View {
                         appearance = .light
                     } label: {
                         VStack(spacing: 15) {
-                            Image("\(Device().model.lowercased())-appearance-light")
-                                .padding(.top)
+                            ZStack {
+                                Image("\(Device().model.lowercased())-appearance-light")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 60)
+                                    .padding(.top, 5)
+                                Text("9:41")
+                                    .font(.footnote)
+                                    .fontWeight(.semibold)
+                                    .foregroundStyle(.white)
+                                    .padding(.bottom, 55)
+                            }
                             Text("Light")
                                 .font(.subheadline)
                                 .padding(.bottom, -5)
@@ -49,8 +59,18 @@ struct DisplayBrightnessView: View {
                         appearance = .dark
                     } label: {
                         VStack(spacing: 15) {
-                            Image("\(Device().model.lowercased())-appearance-dark")
-                                .padding(.top)
+                            ZStack {
+                                Image("\(Device().model.lowercased())-appearance-dark")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 60)
+                                    .padding(.top, 5)
+                                Text("9:41")
+                                    .font(.footnote)
+                                    .fontWeight(.semibold)
+                                    .foregroundStyle(.white)
+                                    .padding(.bottom, 55)
+                            }
                             Text("Dark")
                                 .font(.subheadline)
                                 .padding(.bottom, -5)
@@ -72,7 +92,7 @@ struct DisplayBrightnessView: View {
                     CustomNavigationLink(title: "Options", status: "Light Until Sunset", destination: EmptyView())
                 }
             } header: {
-                Text("\n\nAppearance")
+                Text("\nAppearance")
             }
             
             Section {
