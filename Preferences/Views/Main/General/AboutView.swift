@@ -18,7 +18,7 @@ struct AboutView: View {
     var body: some View {
         CustomList(title: "About") {
             Section {
-                if Configuration().isSimulator {
+                if UIDevice.isSimulator {
                     LabeledContent("Name", value: Device().model)
                 } else {
                     CustomNavigationLink(title: "Name", status: deviceName, destination: NameView())
@@ -26,7 +26,7 @@ struct AboutView: View {
                 
                 CustomNavigationLink(title: "\(UIDevice().systemName) Version", status: UIDevice().systemVersion, destination: VersionView())
                 
-                LabeledContent("Model Name", value: Device().hasHomeButton && Device().isPhone ? "iPhone SE" : UIDevice.current.name)
+                LabeledContent("Model Name", value: UIDevice.fullModel)
                 LabeledContent("Model Number", value: showingModelNumber ? getModelNumber() : "\(getModelNumber())LL/A")
                     .onTapGesture {
                         showingModelNumber.toggle()
@@ -41,14 +41,14 @@ struct AboutView: View {
                 LabeledContent("Songs", value: "0")
                 LabeledContent("Videos", value: "0")
                 LabeledContent("Photos", value: "0")
-                if !Configuration().isSimulator {
+                if !UIDevice.isSimulator {
                     LabeledContent("Applications", value: "1")
                 }
                 LabeledContent("Capacity", value: totalStorage)
                 LabeledContent("Available", value: availableStorage)
             }
             
-            if !Configuration().isSimulator {
+            if !UIDevice.isSimulator {
                 HText("Wi-Fi Address", status: "00:0A:AA:A0:A0:00") // TODO: Monospaced Digits
                 HText("Bluetooth", status: "00:0A:AA:A0:A0:00") // TODO: Monospaced Digits
                 HText("Modem Firmware", status: "1.60.02") // TODO: Monospaced Digits
@@ -90,12 +90,12 @@ struct AboutView: View {
     func getModelNumber() -> String {
         var modelNumber: String
         
-        switch UIDevice.current.name {
+        switch UIDevice.fullModel {
         case "iPhone 15 Pro Max":
             modelNumber = "A2849"
         case "iPhone 15 Pro":
             modelNumber = "A2848"
-        case "iPhone SE (3rd generation)":
+        case "iPhone SE":
             modelNumber = "A2595"
         case "iPad mini (6th generation)":
             modelNumber = "A2567"

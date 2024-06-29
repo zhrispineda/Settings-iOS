@@ -9,7 +9,7 @@ import SwiftUI
 
 // MARK: Global variables
 struct Configuration {
-    let isSimulator = false
+    let forcePhysical = true
     let developerMode = true
 }
 
@@ -19,10 +19,6 @@ extension Color {
         switch name {
         case "Label":
             return Color(UIColor.label)
-        case "Hightlight":
-            return Color(red: 0.0, green: 1.0, blue: 1.0)
-        case "Default":
-            return Color.accentColor
         case "Gray":
             return Color.gray
         case "White":
@@ -47,7 +43,7 @@ extension Color {
     }
 }
 
-// MARK: Device class
+// MARK: Device class; Simulator only
 @MainActor
 class Device: ObservableObject {
     @Published var model: String = UIDevice.current.localizedModel
@@ -67,53 +63,100 @@ class Device: ObservableObject {
     var hasAlwaysOnDisplay = UIDevice.current.name.contains("14 Pro") || UIDevice.current.name.contains("15 Pro")
     var hasExtraBatteryFeatures = UIDevice.current.name.contains("15") || (UIDevice.current.name.contains("Air") && UIDevice.current.name.contains("M2")) || UIDevice.current.name.contains("M4")
     var hasActionButton = UIDevice.current.name.contains("15 Pro")
+    
+    var physicalModel = UIDevice.fullModel
+}
+
+// MARK: UIDevice extension for physical devices
+public extension UIDevice {
+    static let fullModel: String = {
+        var systemInfo = utsname()
+        uname(&systemInfo)
+        let machineMirror = Mirror(reflecting: systemInfo.machine)
+        let identifier = machineMirror.children.reduce("") { identifier, element in
+            guard let value = element.value as? Int8, value != 0 else { return identifier }
+            return identifier + String(UnicodeScalar(UInt8(value)))
+        }
+        
+        @MainActor func getDevice(identifier: String) -> String {
+            switch identifier {
+            // iPhone models
+            case "iPhone12,8", "iPhone14,6":
+                return "iPhone SE"
+            case "iPhone 11,2":
+                return "iPhone XS"
+            case "iPhone 11,4", "iPhone 11,6":
+                return "iPhone XS Max"
+            case "iPhone11,8":
+                return "iPhone XR"
+                
+            case "iPhone15,4":
+                return "iPhone 15"
+            case "iPhone15,5":
+                return "iPhone 15 Plus"
+            case "iPhone16,1":
+                return "iPhone 15 Pro"
+            case "iPhone16,2":
+                return "iPhone 15 Pro Max"
+                
+            case "iPad14,1", "iPad14,2":
+                return "iPad mini"
+            case "iPad14,11":
+                return "iPad Air 13-inch (M2)"
+                
+            case "iPad16,3", "iPad16,4":
+                return "iPad Pro 11-inch (M4)"
+            case "iPad16,5", "iPad16,6":
+                return "iPad Pro 13-inch (M4)"
+            case "N/A":
+                return "N/A"
+            case "arm64":
+                return Configuration().forcePhysical ? getDevice(identifier: ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] ?? "N/A") : "Simulator"
+            default:
+                return identifier
+            }
+        }
+        
+        return UIDevice.isSimulator ? getDevice(identifier: ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] ?? "N/A") : getDevice(identifier: identifier)
+    }()
+    
+    static let isSimulator: Bool = {
+        return ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] != nil && !Configuration().forcePhysical
+    }()
 }
 
 
-// MARK: SettingsModel data
+// MARK: - SettingsModel data
 enum SettingsModel: String, CaseIterable {
-    case wifi = "Wi-Fi"
-    case bluetooth = "Bluetooth"
-    case cellular = "Cellular"
-    case personalHotspot = "Personal Hotspot"
-    
-    case notifications = "Notifications"
-    case soundHaptics = "Sound & Haptics"
-    case focus = "Focus"
-    case screenTime = "Screen Time"
+    case accessibility = "Accessibility"
     case actionButton = "Action Button"
-    
-    case general = "General"
-    case controlCenter = "Control Center"
-    case displayBrightness = "Display & Brightness"
+    case apps = "Apps"
+    case appStore = "App Store"
+    case battery = "Battery"
+    case biometricPasscode = "Biometric & Passcode"
+    case bluetooth = "Bluetooth"
     case camera = "Camera"
+    case cellular = "Cellular"
+    case controlCenter = "Control Center"
+    case developer = "Developer"
+    case displayBrightness = "Display & Brightness"
+    case emergencySOS = "Emergency SOS"
+    case focus = "Focus"
+    case gameCenter = "Game Center"
+    case general = "General"
     case homeScreenAppLibrary = "Home Screen & App Library"
     case multitaskGestures = "Multitasking & Gestures"
-    case accessibility = "Accessibility"
-    case wallpaper = "Wallpaper"
-    case search = "Search"
-    case standby = "StandBy"
-    case battery = "Battery"
+    case notifications = "Notifications"
+    case personalHotspot = "Personal Hotspot"
     case privacySecurity = "Privacy & Security"
-    
-    case biometricPasscode = "Biometric & Passcode"
-    case emergencySOS = "Emergency SOS"
-    
-    case safari = "Safari"
-    case news = "News"
-    case translate = "Translate"
-    case maps = "Maps"
-    case shortcuts = "Shortcuts"
-    case health = "Health"
+    case screenTime = "Screen Time"
+    case search = "Search"
     case siri = "Siri"
-    case photos = "Photos"
-    case appStore = "App Store"
-    case gameCenter = "Game Center"
-    case wallet = "Wallet & Apple Pay"
-    
-    case apps = "Apps"
-    
-    case developer = "Developer"
+    case soundHaptics = "Sound & Haptics"
+    case standby = "StandBy"
+    case wallet = "Wallet"
+    case wallpaper = "Wallpaper"
+    case wifi = "Wi-Fi"
 }
 
 struct SettingsItem<Content: View>: Identifiable {
@@ -125,12 +168,13 @@ struct SettingsItem<Content: View>: Identifiable {
     let destination: Content
 }
 
-// Icon scaling
+// MARK: Icons information
 let smallerIcons = ["apps.iphone", "apps.ipad", "bluetooth", "hand.raised.fill", "hourglass", "ipad.gen2", "iphone.gen3"]
 let largerIcons = [""]
 let hierarchyIcons = ["faceid", "questionmark.app.dashed", "questionmark.square.dashed"]
 let internalIcons = ["airdrop", "apple.photos", "bluetooth", "carplay", "chevron.3.up.perspective", "clock.filled.and.widget.filled", "figure.run.motion", "iphone.action.button.arrow.right", "iphone.badge.dot.radiowaves.up.forward", "keyboard.badge.waveform.fill", "network.connected.to.line.below", "sensorkit"]
 
+// MARK: - Settings Layout
 // MARK: Radio Settings
 @MainActor let radioSettings: [SettingsItem] = [
     SettingsItem(type: .wifi, title: "Wi-Fi", icon: "wifi", color: .blue, destination: AnyView(NetworkView())),
@@ -179,7 +223,7 @@ let internalIcons = ["airdrop", "apple.photos", "bluetooth", "carplay", "chevron
     SettingsItem(type: .multitaskGestures, title: "Multitasking & Gestures", icon: "squares.leading.rectangle", color: .blue, destination: AnyView(MultitaskingGesturesView())),
     SettingsItem(type: .search, title: "Search", icon: "magnifyingglass", color: .gray, destination: AnyView(SearchView())),
     SettingsItem(type: .siri, title: "Siri", icon: "appleSiri", color: Color(UIColor.systemBackground), destination: AnyView(SiriView())),
-    SettingsItem(type: .standby, title: "StandBy", icon: "appleStandBy", destination: AnyView(StandByView())),
+    SettingsItem(type: .standby, title: "StandBy", icon: "clock.filled.and.widget.filled", color: .black, destination: AnyView(StandByView())),
 ]
 
 // MARK: Security Settings
@@ -196,8 +240,8 @@ let internalIcons = ["airdrop", "apple.photos", "bluetooth", "carplay", "chevron
 
 // MARK: Services Settings
 @MainActor let serviceSettings: [SettingsItem] = [
-    SettingsItem(type: .appStore, title: "App Store", icon: Configuration().isSimulator ? "Placeholder" : "appleAppStore", destination: Configuration().isSimulator ? AnyView(EmptyView()) : AnyView(AppStoreView())),
-    SettingsItem(type: .gameCenter, title: "Game Center", icon: Configuration().isSimulator ? "Placeholder" : "appleGameCenter", destination: AnyView(GameCenterView())),
+    SettingsItem(type: .appStore, title: "App Store", icon: UIDevice.isSimulator ? "Placeholder" : "appleAppStore", destination: UIDevice.isSimulator ? AnyView(EmptyView()) : AnyView(AppStoreView())),
+    SettingsItem(type: .gameCenter, title: "Game Center", icon: UIDevice.isSimulator ? "Placeholder" : "appleGameCenter", destination: AnyView(GameCenterView())),
     SettingsItem(type: .wallet, title: "Wallet & Apple Pay", icon: "appleWallet", destination: AnyView(WalletView()))
 ]
 

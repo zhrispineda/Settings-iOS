@@ -16,10 +16,10 @@ struct GeneralView: View {
             }
         
             Section {
-                SettingsLink(color: .gray, icon: Configuration().isSimulator ? "questionmark.app.dashed" : Device().isPhone ? "iphone.gen3" : "ipad.gen2", id: "About") {
+                SettingsLink(color: .gray, icon: UIDevice.isSimulator ? "questionmark.app.dashed" : Device().isPhone ? "iphone.gen3" : "ipad.gen2", id: "About") {
                     AboutView()
                 }
-                if !Configuration().isSimulator {
+                if !UIDevice.isSimulator {
                     SettingsLink(color: .gray, icon: "gear.badge", id: "Software Update") {
                         SoftwareUpdateView()
                     }
@@ -27,7 +27,7 @@ struct GeneralView: View {
                 }
             }
             
-            if !Configuration().isSimulator {
+            if !UIDevice.isSimulator {
                 Section {
                     SettingsLink(icon: "appleCare", id: "AppleCare & Warranty") {
                         AppleCareWarrantyView()
@@ -35,7 +35,7 @@ struct GeneralView: View {
                 }
             }
             
-            if !Configuration().isSimulator {
+            if !UIDevice.isSimulator {
                 Section {
                     SettingsLink(color: .white, iconColor: .blue, icon: "airdrop", id: "AirDrop") {}
                     SettingsLink(color: .blue, icon: "airplay.video", id: "AirPlay & Continuity") {}
@@ -46,7 +46,7 @@ struct GeneralView: View {
                 }
             }
             
-            if !Configuration().isSimulator && Device().hasHomeButton {
+            if !UIDevice.isSimulator && Device().hasHomeButton {
                 NavigationLink("Home Button", destination: EmptyView())
                 SettingsLink(color: .gray, icon: "iphone.gen1", id: "Home Button") {}
             }
@@ -55,7 +55,7 @@ struct GeneralView: View {
                 SettingsLink(color: .gray, icon: "ellipsis.rectangle", id: "AutoFill & Passwords") {
                     AutoFillPasswordsView()
                 }
-                if !Configuration().isSimulator {
+                if !UIDevice.isSimulator {
                     SettingsLink(color: .gray, icon: "arrow.circlepath", id: "Background App Refresh") {}
                     SettingsLink(color: .blue, icon: "calendar.badge.clock", id: "Date & Time") {}
                 }
@@ -65,7 +65,7 @@ struct GeneralView: View {
                 SettingsLink(color: .gray, icon: "textformat", id: "Fonts") {
                     FontsView()
                 }
-                if !Configuration().isSimulator {
+                if !UIDevice.isSimulator {
                     SettingsLink(color: .gray, icon: "gamecontroller.fill", id: "Game Controller") {
                         GameControllerView()
                     }
@@ -78,7 +78,7 @@ struct GeneralView: View {
                 }
             }
             
-            if !Configuration().isSimulator {
+            if !UIDevice.isSimulator {
                 Section {
                     SettingsLink(icon: "cable.coaxial", id: "TV Provider") {}
                 }
@@ -90,7 +90,7 @@ struct GeneralView: View {
                 }
             }
             
-            if !Configuration().isSimulator {
+            if !UIDevice.isSimulator {
                 Section {
                     SettingsLink(color: .gray, icon: "text.justify.left", id: "Legal & Regulatory") {}
                 }
@@ -98,11 +98,11 @@ struct GeneralView: View {
             
             Section {
                 SettingsLink(color: .gray, icon: "arrow.counterclockwise", id: "Transfer or Reset \(Device().model)") {
-                    if !Configuration().isSimulator {
+                    if !UIDevice.isSimulator {
                         TransferResetView()
                     }
                 }
-                if !Configuration().isSimulator {
+                if !UIDevice.isSimulator {
                     Button("Shut Down") {}
                 }
             }

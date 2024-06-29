@@ -13,7 +13,7 @@ struct VersionView: View {
             Section {
                 VStack(alignment: .leading) {
                     Text("**\(UIDevice().systemName) \(UIDevice().systemVersion) (22A5297f)**")
-                    if Configuration().isSimulator {
+                    if UIDevice.isSimulator {
                         Text("This update includes improvements and bug fixes for your \(Device().model).")
                             .foregroundStyle(.secondary)
                             .font(.callout)

@@ -48,7 +48,7 @@ struct ContentView: View {
                             }
                             
                             // MARK: Radio
-                            if !Configuration().isSimulator {
+                            if !UIDevice.isSimulator {
                                 Section {
                                     IconToggle(enabled: $airplaneModeEnabled, color: Color.orange, icon: "airplane", title: "Airplane Mode")
                                     ForEach(radioSettings) { setting in
@@ -58,9 +58,9 @@ struct ContentView: View {
                                                 selection = setting.type
                                             } label: {
                                                 SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Wi-Fi" ? (wifiEnabled ? "Not Connected" : "Off") : setting.id == "Bluetooth" ? (bluetoothEnabled ? "On" : "Off") : String())
-                                                    .foregroundStyle(selection == setting.type ? (Configuration().isSimulator ? Color.white : Color["Label"]) : Color["Label"])
+                                                    .foregroundStyle(selection == setting.type ? (UIDevice.isSimulator ? Color.white : Color["Label"]) : Color["Label"])
                                             }
-                                            .listRowBackground(selection == setting.type ? (Configuration().isSimulator ? Color.blue : Color("Selected")) : nil)
+                                            .listRowBackground(selection == setting.type ? (UIDevice.isSimulator ? Color.blue : Color("Selected")) : nil)
                                         }
                                     }
                                     IconToggle(enabled: $vpnEnabled, color: .blue, icon: "network.connected.to.line.below", title: "VPN")
@@ -68,13 +68,13 @@ struct ContentView: View {
                             }
                             
                             // MARK: Main
-                            SettingsLabelSection(selection: $selection, id: $id, item: Configuration().isSimulator ? simulatorMainSettings : mainSettings)
+                            SettingsLabelSection(selection: $selection, id: $id, item: UIDevice.isSimulator ? simulatorMainSettings : mainSettings)
                             
                             // MARK: Attention
-                            SettingsLabelSection(selection: $selection, id: $id, item: Configuration().isSimulator ? attentionSimulatorSettings : attentionSettings)
+                            SettingsLabelSection(selection: $selection, id: $id, item: UIDevice.isSimulator ? attentionSimulatorSettings : attentionSettings)
                             
                             // MARK: Security
-                            SettingsLabelSection(selection: $selection, id: $id, item: Configuration().isSimulator ? simulatorSecuritySettings : securitySettings)
+                            SettingsLabelSection(selection: $selection, id: $id, item: UIDevice.isSimulator ? simulatorSecuritySettings : securitySettings)
                             
                             // MARK: Services
                             SettingsLabelSection(selection: $selection, id: $id, item: serviceSettings)
@@ -120,7 +120,7 @@ struct ContentView: View {
                                 }
                             }
                             
-                            if !Configuration().isSimulator {
+                            if !UIDevice.isSimulator {
                                 // MARK: Radio Settings
                                 Section {
                                     IconToggle(enabled: $airplaneModeEnabled, color: Color.orange, icon: "airplane", title: "Airplane Mode")
@@ -135,13 +135,13 @@ struct ContentView: View {
                             }
                             
                             // MARK: Main Settings
-                            SettingsLinkSection(item: Configuration().isSimulator ? simulatorMainSettings : mainSettings)
+                            SettingsLinkSection(item: UIDevice.isSimulator ? simulatorMainSettings : mainSettings)
                             
                             // MARK: Attention
-                            SettingsLinkSection(item: Configuration().isSimulator ? attentionSimulatorSettings : attentionSettings)
+                            SettingsLinkSection(item: UIDevice.isSimulator ? attentionSimulatorSettings : attentionSettings)
                             
                             // MARK: Security
-                            SettingsLinkSection(item: Configuration().isSimulator ? simulatorSecuritySettings : securitySettings)
+                            SettingsLinkSection(item: UIDevice.isSimulator ? simulatorSecuritySettings : securitySettings)
                             
                             // MARK: Services
                             SettingsLinkSection(item: serviceSettings)
@@ -150,7 +150,7 @@ struct ContentView: View {
                             SettingsLinkSection(item: appsSettings)
                             
                             // MARK: Developer
-                            if Configuration().isSimulator || Configuration().developerMode {
+                            if UIDevice.isSimulator || Configuration().developerMode {
                                 SettingsLinkSection(item: developerSettings)
                             }
                         }
@@ -212,9 +212,9 @@ struct SettingsLabelSection: View {
                         selection = setting.type
                     } label: {
                         SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id)
-                            .foregroundStyle(selection == setting.type ? (Configuration().isSimulator ? Color.white : Color["Label"]) : Color["Label"])
+                            .foregroundStyle(selection == setting.type ? (UIDevice.isSimulator ? Color.white : Color["Label"]) : Color["Label"])
                     }
-                    .listRowBackground(selection == setting.type ? (Configuration().isSimulator ? Color.blue : Color("Selected")) : nil)
+                    .listRowBackground(selection == setting.type ? (UIDevice.isSimulator ? Color.blue : Color("Selected")) : nil)
                 }
             }
         }
