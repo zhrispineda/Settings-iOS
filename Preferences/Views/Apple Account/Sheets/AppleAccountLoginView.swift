@@ -23,8 +23,9 @@ struct AppleAccountLoginView: View {
             Section {
                 VStack(alignment: .center, spacing: 15) {
                     Image("appleAccount")
-                        .foregroundStyle(.blue)
-                        .font(.largeTitle)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 100)
                     Text("Apple Account")
                         .font(.largeTitle)
                         .fontWeight(.bold)
@@ -50,7 +51,7 @@ struct AppleAccountLoginView: View {
                     Button {
                         showingOptionsAlert.toggle()
                     } label: {
-                        Text("Forgot password or don‘t have an Apple ID?")
+                        Text("Forgot password?")
                             .multilineTextAlignment(.center)
                             .foregroundStyle(.accent)
                     }

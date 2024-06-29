@@ -9,12 +9,9 @@ import SwiftUI
 
 struct ParentGuardianSignInView: View {
     // Variables
-    @Environment(\.dismiss) private var dismiss
     @State private var signingIn = false
     @State private var showingAlert = false
     @State private var showingOptionsAlert = false
-    @State private var showingErrorAlert = false
-    @State private var showingForgotPasswordSheet = false
     @State private var username = String()
     
     var body: some View {
@@ -47,27 +44,8 @@ struct ParentGuardianSignInView: View {
                         .cornerRadius(10)
                     Spacer()
                 }
-                .alert("Forgot password or don‘t have an Apple Account?", isPresented: $showingOptionsAlert, actions: {
-                    Button("Forgot Password or Apple Account", role: .none, action: {
-                        showingForgotPasswordSheet.toggle()
-                    })
-                    Button("Create Apple ID", role: .none, action: {
-                        showingErrorAlert.toggle()
-                    })
-                    Button("Cancel", role: .cancel, action: {})
-                })
-                .alert("Could Not Create Apple Account", isPresented: $showingErrorAlert, actions: {
-                    Link("Learn More", destination: URL(string: "https://support.apple.com/en-us/101661")!)
-                    Button("OK", action: {})
-                }, message: {
-                    Text("The iPhoneSimulator has been used to create too many new Apple Accounts. Contact Apple Support to request another Apple Account to use with this iPhoneSimulator.")
-                })
-                .sheet(isPresented: $showingForgotPasswordSheet, content: {
-                    NavigationStack {
-                        ForgotPasswordView(guardianMode: true)
-                    }
-                })
                 Spacer()
+                    .frame(minHeight: 80)
             }
             .listRowBackground(Color.clear)
             .listRowSeparator(.hidden)
