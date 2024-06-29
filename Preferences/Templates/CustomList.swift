@@ -5,7 +5,7 @@
 
 import SwiftUI
 
-let defaultPaddingViews = ["Accessibility", "App Installations & Purchases", "Content Restrictions", "Developer", "Game Center", "Health", "Language & Region", "Maps", "News", "Photos", "Safari", "Web Content"]
+let defaultPaddingViews = ["Accessibility", "App Installations & Purchases", "Content Restrictions", "Developer", "Display", "Game Center", "Health", "Language & Region", "Maps", "News", "Photos", "Safari", "Web Content"]
 
 /// A List that is customized to include commonly used properties and adjustments.
 /// ```swift

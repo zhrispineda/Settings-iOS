@@ -21,21 +21,13 @@ struct SelectOptionList: View {
     var body: some View {
         CustomList(title: title) {
             Section {
-                ForEach(options, id: \.self) { option in
-                    Button {
-                        selected = option
-                    } label: {
-                        HStack {
-                            Text(option)
-                                .foregroundStyle(Color["Label"])
-                            Spacer()
-                            if option == selected {
-                                Image(systemName: "checkmark")
-                                    .fontWeight(.semibold)
-                            }
-                        }
+                Picker("", selection: $selected) {
+                    ForEach(options, id: \.self) {
+                        Text($0)
                     }
                 }
+                .pickerStyle(.inline)
+                .labelsHidden()
             } footer: {
                 switch title {
                 case "Account Changes":

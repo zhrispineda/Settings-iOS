@@ -30,20 +30,13 @@ struct MapsView: View {
             }
             
             Section {
-                ForEach(options, id: \.self) { option in
-                    Button {
-                        selected = option
-                    } label: {
-                        HStack {
-                            Text(option)
-                                .foregroundStyle(Color["Label"])
-                            Spacer()
-                            if selected == option {
-                                Image(systemName: "checkmark")
-                            }
-                        }
+                Picker("", selection: $selected) {
+                    ForEach(options, id: \.self) {
+                        Text($0)
                     }
                 }
+                .pickerStyle(.inline)
+                .labelsHidden()
             } header: {
                 Text("Preferred Type of Travel")
             } footer: {

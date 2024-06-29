@@ -18,18 +18,13 @@ struct RestrictionsLocationServicesView: View {
     var body: some View {
         CustomList(title: "Location Services") {
             Section {
-                ForEach(options, id: \.self) { option in
-                    Button {
-                        selected = option
-                    } label: {
-                        HStack {
-                            Text(option)
-                                .foregroundStyle(Color["Label"])
-                            Spacer()
-                            Image(systemName: "\(selected == option ? "checkmark" : "")")
-                        }
+                Picker("", selection: $selected) {
+                    ForEach(options, id: \.self) {
+                        Text($0)
                     }
                 }
+                .pickerStyle(.inline)
+                .labelsHidden()
             } footer: {
                 Text("Disallowing changes locks the settings shown below and prevents new apps from using location services.")
             }

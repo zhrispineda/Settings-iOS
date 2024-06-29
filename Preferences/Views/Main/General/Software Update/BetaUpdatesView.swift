@@ -11,25 +11,18 @@ struct BetaUpdatesView: View {
     // Variables
     @State private var selected = "18 Developer Beta"
     @State private var showingAlert = false
-    let options = ["Off", "18 Developer Beta"]
+    let options = ["Off", "\(UIDevice().systemName) 18 Developer Beta"]
     
     var body: some View {
         CustomList(title: "Beta Updates") {
             Section {
-                ForEach(options, id: \.self) { option in
-                    Button {
-                        selected = option
-                    } label: {
-                        HStack {
-                            Text(option == "Off" ? "Off" : "\(UIDevice().systemName) \(option)")
-                                .foregroundStyle(Color["Label"])
-                            Spacer()
-                            if selected == option {
-                                Image(systemName: "checkmark")
-                            }
-                        }
+                Picker("", selection: $selected) {
+                    ForEach(options, id: \.self) {
+                        Text($0)
                     }
                 }
+                .pickerStyle(.inline)
+                .labelsHidden()
             } footer: {
                 Text("Receive beta updates on this \(Device().model) to test-drive pre-release versions of \(UIDevice().systemName) and provide feedback to help make Apple software even better. [Learn more...](https://beta.apple.com)")
             }

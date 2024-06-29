@@ -14,21 +14,13 @@ struct HeadphoneAudioLevelsView: View {
     var body: some View {
         CustomList(title: "Headphone Audio Levels") {
             Section {
-                ForEach(options, id: \.self) { option in
-                    Button {
-                        selected = option
-                    } label: {
-                        HStack {
-                            Text(option)
-                                .foregroundStyle(Color["Label"])
-                            Spacer()
-                            if selected == option {
-                                Image(systemName: "checkmark")
-                                    .bold()
-                            }
-                        }
+                Picker("", selection: $selected) {
+                    ForEach(options, id: \.self) {
+                        Text($0)
                     }
                 }
+                .pickerStyle(.inline)
+                .labelsHidden()
             } header: {
                 Text("\n\nSave In Health")
             } footer: {

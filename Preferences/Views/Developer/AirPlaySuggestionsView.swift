@@ -15,22 +15,13 @@ struct AirPlaySuggestionsView: View {
     var body: some View {
         CustomList(title: "AirPlay Suggestions") {
             Section {
-                ForEach(options, id: \.self) { option in
-                    Button {
-                        selected = option
-                    } label: {
-                        HStack {
-                            Text(option)
-                                .lineLimit(1)
-                                .foregroundStyle(Color["Label"])
-                            Spacer()
-                            if selected == option {
-                                Image(systemName: "checkmark")
-                                    .bold()
-                            }
-                        }
+                Picker("", selection: $selected) {
+                    ForEach(options, id: \.self) {
+                        Text($0)
                     }
                 }
+                .pickerStyle(.inline)
+                .labelsHidden()
             } header: {
                 Text("\n\nSuggestion Test Mode")
             } footer: {

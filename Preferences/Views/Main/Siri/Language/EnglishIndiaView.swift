@@ -18,14 +18,13 @@ struct EnglishIndiaView: View {
             }
             
             Section {
-                ForEach(options, id: \.self) { option in
-                    Button {
-                        selected = option
-                    } label: {
-                        Label(option, systemImage: selected == option ? "checkmark" : "")
-                            .tint(Color["Label"])
+                Picker("", selection: $selected) {
+                    ForEach(options, id: \.self) {
+                        Text($0)
                     }
                 }
+                .pickerStyle(.inline)
+                .labelsHidden()
             } header: {
                 Text("Preferred Response Language")
             } footer: {
