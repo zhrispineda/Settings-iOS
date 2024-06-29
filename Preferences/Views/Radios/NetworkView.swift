@@ -18,7 +18,7 @@ struct NetworkView: View {
         CustomList(title: "Wi-Fi") {
             if isEditing {
                 Section {} header: {
-                    Text("\n\nKnown Networks")
+                    Text("Known Networks")
                 }
             } else {
                 Section {
@@ -71,6 +71,7 @@ struct NetworkView: View {
                 }
             }
         }
+        .padding(.top, isEditing ? 19 : 0)
         .navigationBarBackButtonHidden(isEditing)
         .toolbar {
             if isEditing {

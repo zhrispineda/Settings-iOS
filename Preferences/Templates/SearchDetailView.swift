@@ -26,11 +26,12 @@ struct SearchDetailView: View {
                     Toggle("Show Content in Search", isOn: $showContentInSearchEnabled)
                 }
             } header: {
-                Text("\n\nWhile Searching")
+                Text("While Searching")
             } footer: {
                 Text("Allow “\(appName)“ the app and its content to appear in Search.")
             }
         }
+        .padding(.top, 19)
     }
 }
 

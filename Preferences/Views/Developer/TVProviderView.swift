@@ -18,7 +18,7 @@ struct TVProviderView: View {
             Section {
                 Toggle("Cache Buster", isOn: $cacheBusterEnabled)
             } header: {
-                Text("\n\nOptions")
+                Text("Options")
             } footer: {
                 Text("When enabled, the query parameter “cachebuster“ will be added to development TV Provider Auth URLs.")
             }
@@ -48,5 +48,7 @@ struct TVProviderView: View {
 }
 
 #Preview {
-    TVProviderView()
+    NavigationStack {
+        TVProviderView()
+    }
 }
