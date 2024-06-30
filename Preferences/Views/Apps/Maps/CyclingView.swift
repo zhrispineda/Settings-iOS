@@ -18,7 +18,7 @@ struct CyclingView: View {
                 Toggle("Hills", isOn: $avoidHillsEnabled)
                 Toggle("Busy Roads", isOn: $avoidBusyRoads)
             } header: {
-                Text("\n\nAvoid")
+                Text("Avoid")
             }
         }
     }

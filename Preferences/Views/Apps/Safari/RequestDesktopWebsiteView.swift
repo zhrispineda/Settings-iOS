@@ -16,7 +16,7 @@ struct RequestDesktopWebsiteView: View {
             Section {
                 Toggle("All Websites", isOn: $allWebsitesEnabled)
             } header: {
-                Text("\n\nRequest Desktop Website On")
+                Text("Request Desktop Website On")
             }
         }
         .toolbar {

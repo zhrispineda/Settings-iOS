@@ -28,7 +28,7 @@ struct PageZoomView: View {
                     }
                 }
             } header: {
-                Text("\n\nPage Zoom On All Websites")
+                Text("Page Zoom On All Websites")
             }
         }
         .toolbar {

@@ -30,7 +30,7 @@ struct SafariMicrophoneView: View {
                     }
                 }
             } header: {
-                Text("\n\nMicrophone Access On All Websites")
+                Text("Microphone Access On All Websites")
             }
         }
         .toolbar {

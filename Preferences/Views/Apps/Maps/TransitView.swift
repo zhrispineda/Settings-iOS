@@ -35,7 +35,7 @@ struct TransitView: View {
                     .disabled(selectedOptions.contains(option) && selectedOptions.count < 2)
                 }
             } header: {
-                Text("\n\nPrefer Trips Using")
+                Text("Prefer Trips Using")
             } footer: {
                 Text("Prefer these vehicles when planning transit trips.")
             }

@@ -16,7 +16,7 @@ struct SafariReaderView: View {
             Section {
                 Toggle("All Websites", isOn: $allWebsitesEnabled)
             } header: {
-                Text("\n\nAutomatically Use Reader On")
+                Text("Automatically Use Reader On")
             }
         }
         .toolbar {

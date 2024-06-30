@@ -18,7 +18,7 @@ struct DrivingView: View {
                 Toggle("Tolls", isOn: $avoidTollsEnabled)
                 Toggle("Highways", isOn: $avoidHighwaysEnabled)
             } header: {
-                Text("\n\nAvoid")
+                Text("Avoid")
             }
         }
     }

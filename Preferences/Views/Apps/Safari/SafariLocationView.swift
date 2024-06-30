@@ -30,7 +30,7 @@ struct SafariLocationView: View {
                     }
                 }
             } header: {
-                Text("\n\nLocation Access On All Websites")
+                Text("Location Access On All Websites")
             }
         }
         .toolbar {

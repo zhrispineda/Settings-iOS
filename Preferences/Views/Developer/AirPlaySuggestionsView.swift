@@ -23,7 +23,7 @@ struct AirPlaySuggestionsView: View {
                 .pickerStyle(.inline)
                 .labelsHidden()
             } header: {
-                Text("\n\nSuggestion Test Mode")
+                Text("Suggestion Test Mode")
             } footer: {
                 Text("When using a mode other than “Default“, select an AirPlay-capable TV as the suggested TV to use for testing. This TV must be connected to the same Wi-Fi network as this \(Device().model).")
             }

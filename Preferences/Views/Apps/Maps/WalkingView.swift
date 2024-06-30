@@ -20,7 +20,7 @@ struct WalkingView: View {
                 Toggle("Busy Roads", isOn: $avoidBusyRoadsEnabled)
                 Toggle("Stairs", isOn: $avoidStairsEnabled)
             } header: {
-                Text("\n\nAvoid")
+                Text("Avoid")
             }
         }
     }

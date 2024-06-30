@@ -30,9 +30,10 @@ struct SafariCameraView: View {
                     }
                 }
             } header: {
-                Text("\n\nCamera Access On All Websites")
+                Text("Camera Access On All Websites")
             }
         }
+        .padding(.top, 19)
         .toolbar {
             EditButton()
                 .disabled(true)

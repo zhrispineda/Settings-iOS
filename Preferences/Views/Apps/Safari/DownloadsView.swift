@@ -39,7 +39,7 @@ struct DownloadsView: View {
                 }
                 .tint(Color["Label"])
             } header: {
-                Text("\n\nStore Downloaded Files On:")
+                Text("Store Downloaded Files On:")
             } footer: {
                 Text("Store downloads only on this device, and do not make them available on other devices.")
             }
