@@ -2,7 +2,7 @@
 //  FeatureFlagsView.swift
 //  Preferences
 //
-//  Settings > Safari > Advanced > Feature Flags
+//  Settings > Apps > Safari > Advanced > Feature Flags
 //
 
 import SwiftUI
@@ -19,10 +19,7 @@ struct FeatureFlagsView: View {
     @State private var featureFlags = [
         Flag(title: "::grammar-error and ::spelling-error pseudo-elements", isOn: true),
         Flag(title: "::thumb and ::track pseudo-elements", isOn: false),
-        Flag(title: ":focus-visible pseudo-class", isOn: true),
-        Flag(title: ":has() pseudo-class", isOn: true),
         Flag(title: "<select> showPicker() method", isOn: false),
-        Flag(title: "ARIA Reflection for Element References", isOn: true),
         Flag(title: "AbortSignal.any() API", isOn: false),
         Flag(title: "AccessHandle API", isOn: true),
         Flag(title: "Allow WebGL in Web Workers", isOn: true),
@@ -211,7 +208,7 @@ struct FeatureFlagsView: View {
                     Toggle(flag.title, isOn: $flag.isOn)
                 }
             } header: {
-                Text("\n\nWebKit Feature Flags")
+                Text("WebKit Feature Flags")
             }
             
             Section {

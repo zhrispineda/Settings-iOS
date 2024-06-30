@@ -11,7 +11,7 @@ struct AppleAdvertisingView: View {
     var body: some View {
         CustomList(title: "Apple Advertising") {
             Section {} header: {
-                Text("\n\nApple-Delivered Advertising")
+                Text("Apple-Delivered Advertising")
             } footer: {
                 Text("The Apple advertising platform does not track you. It is designed to protect your privacy and does not follow you across apps and websites owned by other companies. You have control over how Apple uses your information. [About Apple Advertising & Privacy...](#)")
             }

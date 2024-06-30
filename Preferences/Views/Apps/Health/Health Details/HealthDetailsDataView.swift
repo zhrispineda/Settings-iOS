@@ -17,7 +17,7 @@ struct HealthDetailsDataView: View {
                 Text("None")
                     .foregroundStyle(.secondary)
             } header: {
-                Text("\n\nApps and Services Allowed to Read Data")
+                Text("Apps and Services Allowed to Read Data")
             } footer: {
                 Text("Share \(title.contains("Fitzpatrick") ? "Fitzpatrick skin type" : title.contains("That") ? "this" : title.lowercased()) data with apps and services listed above. As apps and services request access to your Health data, they will be added to the list.")
             }
@@ -42,9 +42,12 @@ struct HealthDetailsDataView: View {
                     Text("[Mayo Clinic](https://www.mayoclinic.org)")
                         .font(.caption)
                 }
+                .listRowBackground(Color.clear)
+                .listRowSeparator(.hidden)
             }
         }
         .listStyle(.grouped)
+        .padding(.top, 19)
     }
 }
 
