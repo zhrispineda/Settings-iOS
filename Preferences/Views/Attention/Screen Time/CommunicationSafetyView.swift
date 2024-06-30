@@ -17,7 +17,7 @@ struct CommunicationSafetyView: View {
             Section {
                 Toggle("Sensitive Content Warning", isOn: $communicationSafetyEnabled)
             } header: {
-                Text("\n\nSensitive Photos and Videos")
+                Text("Sensitive Photos and Videos")
             } footer: {
                 Text("Communication Safety can detect nude photos and videos before they‘re sent or viewed on your child‘s device, and provide guidance and age-appropriate resources to help them make a safe choice. Apple does not have access to the photos or videos. [Learn more...](https://support.apple.com/en-us/HT212850)")
             }

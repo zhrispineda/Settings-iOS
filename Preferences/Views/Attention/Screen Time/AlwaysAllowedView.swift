@@ -18,9 +18,9 @@ struct AlwaysAllowedView: View {
     var body: some View {
         CustomList(title: "Always Allowed") {
             Section {
-                SettingsLabel(icon: "applephone", id: "Phone")
+                SettingsLabel(icon: "applePhone", id: "Phone")
                 ForEach($includedControls, id: \.self) { $control in
-                    SettingsLabel(icon: "apple\(control.lowercased())", id: control)
+                    SettingsLabel(icon: "apple\(control)", id: control)
                     // TODO: Figure out swipe controls (change from Delete to Remove) and alert for removing Messages
 //                        .swipeActions(edge: .trailing) {
 //                            Button(role: .destructive, action: {
@@ -63,7 +63,7 @@ struct AlwaysAllowedView: View {
                 }
             } header: {
                 VStack(alignment: .leading) {
-                    Text("\n\nAllowed Apps")
+                    Text("Allowed Apps")
                     Text("Always allowed apps are available during downtime, or if you select the “All Apps & Categories“ app limit.")
                         .textCase(.none)
                 }
@@ -93,7 +93,7 @@ struct AlwaysAllowedView: View {
                             }
                         }
                         .buttonStyle(.plain)
-                        SettingsLabel(icon: "apple\(control.lowercased())", id: control)
+                        SettingsLabel(icon: "apple\(control)", id: control)
                     }
                 }
             } header: {

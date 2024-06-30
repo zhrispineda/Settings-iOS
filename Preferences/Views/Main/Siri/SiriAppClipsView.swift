@@ -18,7 +18,7 @@ struct SiriAppClipsView: View {
             Section {
                 Toggle("Learn from App Clips", isOn: $learnAppClipsEnabled)
             } header: {
-                Text("\n\nIn App Clips")
+                Text("In App Clips")
             } footer: {
                 Text("Allow Siri to learn how you use app clips to make suggestions across apps.")
             }

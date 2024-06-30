@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BetaUpdatesView: View {
     // Variables
-    @State private var selected = "18 Developer Beta"
+    @State private var selected = "\(UIDevice().systemName) 18 Developer Beta"
     @State private var showingAlert = false
     let options = ["Off", "\(UIDevice().systemName) 18 Developer Beta"]
     

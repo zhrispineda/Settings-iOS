@@ -13,7 +13,7 @@ struct AppleCareWarrantyView: View {
             Section {
                 SettingsLink(icon: Device().model.lowercased(), id: Device().model, subtitle: "Limited Warranty") {}
             } header: {
-                Text("\n\nThis Device")
+                Text("This Device")
             } footer: {
                 Text("Coverage is shown for devices connected to your Apple Account and select Bluetooth-paired devices.")
             }

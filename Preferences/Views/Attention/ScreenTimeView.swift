@@ -31,7 +31,7 @@ struct ScreenTimeView: View {
                     .padding(.horizontal, 0)
                     NavigationLink("See All App & Website Activity", destination: AppWebsiteActivityView())
                 } header: {
-                    Text("\n\n\(UIDevice.current.name)")
+                    Text(UIDevice.current.name)
                 } footer: {
                     HStack(spacing: 5) {
                         Text("Updated today at \(Date.now, format: .dateTime.hour().minute())")
@@ -139,6 +139,7 @@ struct ScreenTimeView: View {
                 }
             }
         }
+        .padding(.top, appWebsiteActivityEnabled ? 19 : 0)
     }
 }
 

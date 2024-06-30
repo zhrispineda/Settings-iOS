@@ -25,7 +25,7 @@ struct LocationPermissionsDetailView: View {
                 .pickerStyle(.inline)
                 .labelsHidden()
             } header: {
-                Text("\n\nAllow Location Access")
+                Text("Allow Location Access")
             } footer: {
                 if title == "Siri & Dictation" {
                     Text("App explanation: \u{201C}Siri uses your location for things like answering questions and offering suggestions about what‘s nearby.\u{201D}")
@@ -40,6 +40,7 @@ struct LocationPermissionsDetailView: View {
                 }
             }
         }
+        .padding(.top, 19)
     }
 }
 

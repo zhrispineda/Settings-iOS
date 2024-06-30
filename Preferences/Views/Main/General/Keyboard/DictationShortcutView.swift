@@ -35,7 +35,7 @@ struct DictationShortcutView: View {
                     }
                 }
             } header: {
-                Text("\n\nPress twice to start dictation:")
+                Text("Press twice to start dictation:")
             }
         }
     }

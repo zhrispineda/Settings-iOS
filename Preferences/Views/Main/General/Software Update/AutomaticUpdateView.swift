@@ -19,7 +19,7 @@ struct AutomaticUpdateView: View {
                 Toggle("\(UIDevice().systemName) Updates", isOn: $automaticUpdatesEnabled)
                 Toggle("Security Responses & System Files", isOn: $securityResponsesEnabled)
             } header: {
-                Text("\n\nAutomatically Install")
+                Text("Automatically Install")
             } footer: {
                 Text("Automatically install \(UIDevice().systemName) software updates when this \(Device().model) is connected to Wi-Fi, charging, and locked.")
             }

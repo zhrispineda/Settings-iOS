@@ -9,30 +9,23 @@ import SwiftUI
 
 struct SiriResponsesView: View {
     // Variables
-    @State private var selectedOption = "Automatic"
-    let options = ["Prefer Silent Responses", "Automatic", "Prefer Spoken Responses"]
+    @State private var selected = "Automatic"
     @State private var alwaysShowSiriCaptionsEnabled = false
     @State private var alwaysShowSpeechEnabled = false
+    let options = ["Prefer Silent Responses", "Automatic", "Prefer Spoken Responses"]
     
     var body: some View {
         CustomList(title: "Siri Responses") {
             Section {
-                ForEach(options, id: \.self) { option in
-                    Button {
-                        selectedOption = option
-                    } label: {
-                        HStack {
-                            Text(option)
-                                .foregroundStyle(Color["Label"])
-                            Spacer()
-                            if selectedOption == option {
-                                Image(systemName: "checkmark")
-                            }
-                        }
+                Picker("", selection: $selected) {
+                    ForEach(options, id: \.self) {
+                        Text($0)
                     }
                 }
+                .pickerStyle(.inline)
+                .labelsHidden()
             } header: {
-                Text("\n\nSpoken Responses")
+                Text("Spoken Responses")
             }
             
             Section {
