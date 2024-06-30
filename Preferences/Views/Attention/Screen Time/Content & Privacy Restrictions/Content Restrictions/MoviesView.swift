@@ -9,25 +9,20 @@ import SwiftUI
 
 struct MoviesView: View {
     // Variables
-    @State private var selectedOption = "Allow All"
+    @State private var selected = "Allow All"
     let options = ["Don't Allow", "NR", "G", "PG", "PG-13", "R", "NC-17", "Unrated", "Allow All"]
     
     @State private var showMoviesCloudEnabled = true
     
     var body: some View {
         CustomList(title: "Movies") {
-            ForEach(options, id: \.self) { option in
-                Button { selectedOption = option } label: {
-                    HStack {
-                        Text(option)
-                            .foregroundStyle(Color["Label"])
-                        Spacer()
-                        if selectedOption == option {
-                            Image(systemName: "checkmark")
-                        }
-                    }
+            Picker("", selection: $selected) {
+                ForEach(options, id: \.self) {
+                    Text($0)
                 }
             }
+            .pickerStyle(.inline)
+            .labelsHidden()
             
             Section {
                 Toggle("Show Movies in the Cloud", isOn: $showMoviesCloudEnabled)

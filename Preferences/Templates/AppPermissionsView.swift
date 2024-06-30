@@ -198,6 +198,6 @@ struct AppPermissionsView: View {
 
 #Preview {
     NavigationStack {
-        AppPermissionsView()
+        AppPermissionsView(permissionName: "Calendars")
     }
 }

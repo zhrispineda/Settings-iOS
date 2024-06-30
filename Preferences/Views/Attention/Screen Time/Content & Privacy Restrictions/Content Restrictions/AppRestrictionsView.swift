@@ -9,23 +9,18 @@ import SwiftUI
 
 struct AppRestrictionsView: View {
     // Variables
-    @State private var selectedOption = "17+"
+    @State private var selected = "17+"
     let options = ["Don't Allow", "4+", "9+", "12+", "17+"]
     
     var body: some View {
         CustomList(title: "Apps") {
-            ForEach(options, id: \.self) { option in
-                Button { selectedOption = option } label: {
-                    HStack {
-                        Text(option)
-                            .foregroundStyle(Color["Label"])
-                        Spacer()
-                        if selectedOption == option {
-                            Image(systemName: "checkmark")
-                        }
-                    }
+            Picker("", selection: $selected) {
+                ForEach(options, id: \.self) {
+                    Text($0)
                 }
             }
+            .pickerStyle(.inline)
+            .labelsHidden()
         }
     }
 }

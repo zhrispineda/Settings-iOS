@@ -9,25 +9,20 @@ import SwiftUI
 
 struct TVView: View {
     // Variables
-    @State private var selectedOption = "Allow All"
+    @State private var selected = "Allow All"
     let options = ["Don't Allow", "TV-Y", "TV-Y7", "TV-Y7-FV", "TV-G", "TV-PG", "TV-14", "TV-MA", "Allow All"]
     
     @State private var showMoviesCloudEnabled = true
     
     var body: some View {
         CustomList(title: "TV") {
-            ForEach(options, id: \.self) { option in
-                Button { selectedOption = option } label: {
-                    HStack {
-                        Text(option)
-                            .foregroundStyle(Color["Label"])
-                        Spacer()
-                        if selectedOption == option {
-                            Image(systemName: "checkmark")
-                        }
-                    }
+            Picker("", selection: $selected) {
+                ForEach(options, id: \.self) {
+                    Text($0)
                 }
             }
+            .pickerStyle(.inline)
+            .labelsHidden()
             
             Section {
                 Toggle("Show TV Shows in the Cloud", isOn: $showMoviesCloudEnabled)

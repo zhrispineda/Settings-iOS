@@ -2,31 +2,26 @@
 //  HideAddressView.swift
 //  Preferences
 //
-//  Settings > Safari > Hide IP Address
+//  Settings > Apps > Safari > Hide IP Address
 //
 
 import SwiftUI
 
 struct HideAddressView: View {
     // Variables
-    @State private var selectedOption = "Off"
+    @State private var selected = "Off"
     let options = ["From Trackers", "Off"]
     
     var body: some View {
         CustomList(title: "Hide IP Address") {
             Section {
-                ForEach(options, id: \.self) { option in
-                    Button { selectedOption = option } label: {
-                        HStack {
-                            Text(option)
-                                .foregroundStyle(Color["Label"])
-                            Spacer()
-                            if selectedOption == option {
-                                Image(systemName: "checkmark")
-                            }
-                        }
+                Picker("", selection: $selected) {
+                    ForEach(options, id: \.self) {
+                        Text($0)
                     }
                 }
+                .pickerStyle(.inline)
+                .labelsHidden()
             } footer: {
                 Text("Your IP address can be used to determine your personal information, like your location. To protect this information, Safari can hide your IP address from known trackers. [Learn more...](#)")
             }

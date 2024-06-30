@@ -22,44 +22,21 @@ struct HighlightContentView: View {
             }
             
             if highlightContentEnabled {
-                Section {
-                    ForEach(highlightOptions, id: \.self) { option in
-                        Button {
-                            withAnimation {
-                                selectedHighlightOption = option
-                            }
-                        } label: {
-                            HStack {
-                                Text(option)
-                                    .foregroundStyle(Color["Label"])
-                                Spacer()
-                                if selectedHighlightOption == option {
-                                    Image(systemName: "checkmark")
-                                }
-                            }
-                        }
+                Picker("", selection: $selectedHighlightOption.animation()) {
+                    ForEach(highlightOptions, id: \.self) {
+                        Text($0)
                     }
                 }
+                .pickerStyle(.inline)
+                .labelsHidden()
                 
                 if selectedHighlightOption != "Words" {
-                    Section {
-                        ForEach(highlightStyles, id: \.self) { option in
-                            Button {
-                                selectedHighlightStyle = option
-                            } label: {
-                                HStack {
-                                    Text(option)
-                                        .foregroundStyle(Color["Label"])
-                                    Spacer()
-                                    if selectedHighlightOption == option {
-                                        Image(systemName: "checkmark")
-                                    }
-                                }
-                            }
+                    Picker("Sentence Highlight Style", selection: $selectedHighlightStyle) {
+                        ForEach(highlightStyles, id: \.self) {
+                            Text($0)
                         }
-                    } header: {
-                        Text("Sentence Highlight Style")
                     }
+                    .pickerStyle(.inline)
                 }
                 
                 Section {

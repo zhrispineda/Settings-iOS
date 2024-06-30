@@ -9,34 +9,21 @@ import SwiftUI
 
 struct DictationShortcutView: View {
     // Variables
-    @State private var selectedOption: String? = "Control"
+    @State private var selectedOption = "Control"
     let options = ["Control", "Command", "None"]
     
     var body: some View {
         CustomList(title: "Dictation Shortcut") {
-            Section {
-                ForEach(options, id: \.self) { option in
-                    Button {
-                        selectedOption = option
-                    } label: {
-                        HStack {
-                            if option == "None" {
-                                Text(option)
-                            } else {
-                                Text(Image(systemName: "\(option.lowercased())")) + Text("\t" + option)
-                            }
-                            Spacer()
-                            if selectedOption == option {
-                                Image(systemName: "checkmark")
-                                    .foregroundStyle(.blue)
-                            }
-                        }
-                        .foregroundStyle(Color["Label"])
+            Picker("Press Twice to Start Dictation:", selection: $selectedOption) {
+                ForEach(options, id: \.self) {
+                    if $0 != "None" {
+                        Text(Image(systemName: "\($0.lowercased())")) + Text($0)
+                    } else {
+                        Text($0)
                     }
                 }
-            } header: {
-                Text("Press twice to start dictation:")
             }
+            .pickerStyle(.inline)
         }
     }
 }

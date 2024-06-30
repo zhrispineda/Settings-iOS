@@ -10,24 +10,19 @@ import SwiftUI
 struct ContentPrivacyRestrictionsDetailView: View {
     // Variables
     var title = String()
-    @State private var selectedOption = "Allow Changes"
+    @State private var selected = "Allow Changes"
     let options = ["Allow Changes", "Don't Allow Changes"]
     
     var body: some View {
         CustomList(title: title) {
             Section {
-                ForEach(options, id: \.self) { option in
-                    Button { selectedOption = option } label: {
-                        HStack {
-                            Text(option)
-                                .foregroundStyle(Color["Label"])
-                            Spacer()
-                            if selectedOption == option {
-                                Image(systemName: "checkmark")
-                            }
-                        }
+                Picker("", selection: $selected) {
+                    ForEach(options, id: \.self) {
+                        Text($0)
                     }
                 }
+                .pickerStyle(.inline)
+                .labelsHidden()
             } footer: {
                 switch title {
                 case "Media & Apple Music":

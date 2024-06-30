@@ -9,26 +9,19 @@ import SwiftUI
 
 struct SafariMicrophoneView: View {
     // Variables
-    @State private var selectedOption = "Ask"
+    @State private var selected = "Ask"
     let options = ["Ask", "Deny", "Allow"]
     
     var body: some View {
         CustomList(title: "Microphone") {
             Section {
-                ForEach(options, id: \.self) { option in
-                    Button {
-                        selectedOption = option
-                    } label: {
-                        HStack {
-                            Text(option)
-                                .foregroundStyle(Color["Label"])
-                            Spacer()
-                            if selectedOption == option {
-                                Image(systemName: "checkmark")
-                            }
-                        }
+                Picker("", selection: $selected) {
+                    ForEach(options, id: \.self) {
+                        Text($0)
                     }
                 }
+                .pickerStyle(.inline)
+                .labelsHidden()
             } header: {
                 Text("Microphone Access On All Websites")
             }
