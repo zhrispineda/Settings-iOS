@@ -14,7 +14,7 @@ struct DataAccessDevicesView: View {
                 Text("None")
                     .foregroundStyle(.secondary)
             } header: {
-                Text("\n\nApps and Services")
+                Text("Apps and Services")
             } footer: {
                 Text("As apps and services request permission to update your Health data, they will be added to the list.")
             }

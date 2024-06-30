@@ -17,83 +17,58 @@ struct SiriVoiceView: View {
     @State private var selectedIndianVoice = "Voice 1"
     @State private var selectedOtherVoice = "Voice 2"
     
-    let AmericanVoiceOptions = ["Voice 1", "Voice 2", "Voice 3", "Voice 4", "Voice 5"]
-    let BritishVoiceOptions = ["Voice 1", "Voice 2", "Voice 3", "Voice 4"]
+    let americanVoiceOptions = ["Voice 1", "Voice 2", "Voice 3", "Voice 4", "Voice 5"]
+    let britishVoiceOptions = ["Voice 1", "Voice 2", "Voice 3", "Voice 4"]
     let voiceOptions = ["Voice 1", "Voice 2"]
     
     var body: some View {
         CustomList(title: "Siri Voice") {
             Section {
-                ForEach(varietyOptions, id: \.self) { option in
-                    Button { selectedVariety = option } label: {
-                        HStack {
-                            Text(option)
-                                .foregroundStyle(Color["Label"])
-                            Spacer()
-                            if selectedVariety == option {
-                                Image(systemName: "checkmark")
-                            }
-                        }
+                Picker("", selection: $selectedVariety) {
+                    ForEach(varietyOptions, id: \.self) {
+                        Text($0)
                     }
                 }
+                .pickerStyle(.inline)
+                .labelsHidden()
             } header: {
-                Text("\n\nVariety")
+                Text("Variety")
             }
             
             Section {
                 switch selectedVariety {
                 case "American":
-                    ForEach(AmericanVoiceOptions, id: \.self) { option in
-                        Button { selectedAmericanVoice = option } label: {
-                            HStack {
-                                Text(option)
-                                    .foregroundStyle(Color["Label"])
-                                Spacer()
-                                if selectedAmericanVoice == option {
-                                    Image(systemName: "checkmark")
-                                }
-                            }
+                    Picker("", selection: $selectedAmericanVoice) {
+                        ForEach(americanVoiceOptions, id: \.self) {
+                            Text($0)
                         }
                     }
+                    .pickerStyle(.inline)
+                    .labelsHidden()
                 case "British":
-                    ForEach(BritishVoiceOptions, id: \.self) { option in
-                        Button { selectedBritishVoice = option } label: {
-                            HStack {
-                                Text(option)
-                                    .foregroundStyle(Color["Label"])
-                                Spacer()
-                                if selectedBritishVoice == option {
-                                    Image(systemName: "checkmark")
-                                }
-                            }
+                    Picker("", selection: $selectedBritishVoice) {
+                        ForEach(britishVoiceOptions, id: \.self) {
+                            Text($0)
                         }
                     }
+                    .pickerStyle(.inline)
+                    .labelsHidden()
                 case "Indian":
-                    ForEach(voiceOptions, id: \.self) { option in
-                        Button { selectedIndianVoice = option } label: {
-                            HStack {
-                                Text(option)
-                                    .foregroundStyle(Color["Label"])
-                                Spacer()
-                                if selectedIndianVoice == option {
-                                    Image(systemName: "checkmark")
-                                }
-                            }
+                    Picker("", selection: $selectedIndianVoice) {
+                        ForEach(voiceOptions, id: \.self) {
+                            Text($0)
                         }
                     }
+                    .pickerStyle(.inline)
+                    .labelsHidden()
                 default:
-                    ForEach(voiceOptions, id: \.self) { option in
-                        Button { selectedOtherVoice = option } label: {
-                            HStack {
-                                Text(option)
-                                    .foregroundStyle(Color["Label"])
-                                Spacer()
-                                if selectedOtherVoice == option {
-                                    Image(systemName: "checkmark")
-                                }
-                            }
+                    Picker("", selection: $selectedOtherVoice) {
+                        ForEach(voiceOptions, id: \.self) {
+                            Text($0)
                         }
                     }
+                    .pickerStyle(.inline)
+                    .labelsHidden()
                 }
             } header: {
                 Text("Voice")

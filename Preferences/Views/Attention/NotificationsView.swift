@@ -18,7 +18,7 @@ struct NotificationsView: View {
             Section {
                 EmptyView()
             } header: {
-                Text("\n\nDisplay As")
+                Text("Display As")
             } footer: {
                 Text("Choose the default for how notifications appear.")
             }

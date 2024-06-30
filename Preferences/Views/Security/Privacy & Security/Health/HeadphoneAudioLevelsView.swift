@@ -22,7 +22,7 @@ struct HeadphoneAudioLevelsView: View {
                 .pickerStyle(.inline)
                 .labelsHidden()
             } header: {
-                Text("\n\nSave In Health")
+                Text("Save In Health")
             } footer: {
                 Text("Your device does not record or save any sound to measure audio levels.")
             }
