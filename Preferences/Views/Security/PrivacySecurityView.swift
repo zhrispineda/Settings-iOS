@@ -57,15 +57,10 @@ struct PrivacySecurityView: View {
                 }
             }
             
-            if Device().isPhone && !UIDevice.isSimulator {
-                Section {
-                    SettingsLink(color: .indigo, icon: "pencil.and.sparkles", id: "Journaling Suggestions") {
-                        EmptyView()
-                    }
-                }
-            }
-            
             Section {
+                SettingsLink(color: .blue, icon: "Accessory", id: "Accessories", status: "0") {
+                    AppPermissionsView(permissionName: "Bluetooth")
+                }
                 SettingsLink(color: .blue, icon: "bluetooth", id: "Bluetooth", status: "0") {
                     AppPermissionsView(permissionName: "Bluetooth")
                 }
@@ -81,12 +76,23 @@ struct PrivacySecurityView: View {
                 SettingsLink(color: .green, icon: "figure.run.motion", id: "Motion & Fitness", status: "0") {
                     AppPermissionsView(permissionName: "Microphone")
                 }
-                SettingsLink(color: .gray, icon: "waveform", id: "Speech Recognition", status: "0") {
-                    AppPermissionsView(permissionName: "Speech Recognition")
+                SettingsLink(color: .blue, icon: "nearby.interactions", id: "Nearby Interactions", status: "0") {
+                    AppPermissionsView(permissionName: "Nearby Interactions")
                 }
                 if Device().isPhone {
-                    SettingsLink(color: .blue, icon: "sensorkit", id: "Research Sensor & Usage Data") {
+                    SettingsLink(color: .blue, icon: "sensorkit", id: "Research Sensor & Usage Data", status: "0") {
                         AppPermissionsView(permissionName: "Research & Usage Data")
+                    }
+                    SettingsLink(color: .gray, icon: "waveform", id: "Speech Recognition", status: "0") {
+                        AppPermissionsView(permissionName: "Speech Recognition")
+                    }
+                }
+            }
+            
+            if Device().isPhone && !UIDevice.isSimulator {
+                Section {
+                    SettingsLink(color: .indigo, icon: "pencil.and.sparkles", id: "Journaling Suggestions") {
+                        EmptyView()
                     }
                 }
             }
@@ -116,7 +122,24 @@ struct PrivacySecurityView: View {
                 }
             }
             
-            Section {} header: {
+            Section {
+                if !UIDevice.isSimulator {
+                    SettingsLink(color: .green, icon: "shield.lefthalf.filled", id: "App Privacy Report") {}
+                }
+            }
+            
+            Section {
+                if !UIDevice.isSimulator {
+                    if Configuration().developerMode {
+                        SettingsLink(color: .gray, icon: "hammer.fill", id: "Developer Mode", status: "On") {
+                            EmptyView()
+                        }
+                    }
+                    SettingsLink(color: .blue, icon: "hand.raised.fill", id: "Lockdown Mode", status: "Off") {
+                        EmptyView()
+                    }
+                }
+            } header: {
                 Text("Security")
             }
         }
