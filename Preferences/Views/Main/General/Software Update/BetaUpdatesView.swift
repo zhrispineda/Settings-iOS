@@ -28,20 +28,20 @@ struct BetaUpdatesView: View {
             }
             
             Section {
-                Button("Apple ID:") {
+                Button("Apple Account:") {
                     showingAlert.toggle()
                 }
-                .alert("Apple ID for Beta Updates", isPresented: $showingAlert) {
+                .alert("Apple Account for Beta Updates", isPresented: $showingAlert) {
                     Button {
                         showingAlert.toggle()
                     } label: {
-                        Text("Use a different Apple ID...")
+                        Text("Use a different Apple Account...")
                     }
                     Button("Cancel", role: .cancel) {
                         showingAlert.toggle()
                     }
                 } message: {
-                    Text("Signed in as .\n\nYou can sign in with a different Apple ID that is enrolled in the Apple Beta Software Program or Apple Developer Program.")
+                    Text("Signed in as .\n\nYou can sign in with a different Apple Account that is enrolled in the Apple Beta Software Program or Apple Developer Program.")
                 }
                 
             }

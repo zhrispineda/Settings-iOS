@@ -57,6 +57,14 @@ struct PrivacySecurityView: View {
                 }
             }
             
+            if Device().isPhone && !UIDevice.isSimulator {
+                Section {
+                    SettingsLink(color: .indigo, icon: "pencil.and.sparkles", id: "Journaling Suggestions") {
+                        EmptyView()
+                    }
+                }
+            }
+            
             Section {
                 SettingsLink(color: .blue, icon: "bluetooth", id: "Bluetooth", status: "0") {
                     AppPermissionsView(permissionName: "Bluetooth")

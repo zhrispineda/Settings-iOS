@@ -172,7 +172,7 @@ struct SettingsItem<Content: View>: Identifiable {
 let smallerIcons = ["apps.iphone", "apps.ipad", "bluetooth", "hand.raised.fill", "hourglass", "ipad.gen2", "iphone.gen3", "mic.fill"]
 let largerIcons = [""]
 let hierarchyIcons = ["faceid", "questionmark.app.dashed", "questionmark.square.dashed"]
-let internalIcons = ["airdrop", "apple.photos", "bluetooth", "carplay", "chevron.3.up.perspective", "clock.filled.and.widget.filled", "figure.run.motion", "iphone.action.button.arrow.right", "iphone.badge.dot.radiowaves.up.forward", "keyboard.badge.waveform.fill", "network.connected.to.line.below", "sensorkit"]
+let internalIcons = ["airdrop", "apple.photos", "bluetooth", "carplay", "chevron.3.up.perspective", "clock.filled.and.widget.filled", "figure.run.motion", "iphone.action.button.arrow.right", "iphone.badge.dot.radiowaves.up.forward", "keyboard.badge.waveform.fill", "network.connected.to.line.below", "pencil.and.sparkles", "sensorkit"]
 
 // MARK: - Settings Layout
 // MARK: Radio Settings
