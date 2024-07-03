@@ -28,7 +28,7 @@ struct TransitView: View {
                                 .foregroundStyle(Color["Label"])
                             Spacer()
                             if selectedOptions.contains(option) {
-                                Image(systemName: "checkmark")
+                                Image(systemName: "checkmark").fontWeight(.semibold)
                             }
                         }
                     }

@@ -51,7 +51,7 @@ struct PermissionsView: View {
                 }
             }
             if notifications {
-                SettingsLink(color: .red, icon: "bell.badge.fill", id: "Notifications", subtitle: "Banners, Sounds, Badges") {}
+                SettingsLink(color: .red, icon: "bell.badge.fill", id: "Notifications", subtitle: appName == "Maps" ? "Banners, Sounds" : "Banners, Sounds, Badges") {}
             }
             if liveActivity {
                 SettingsLink(color: .blue, icon: "clock.badge.fill", id: "Live Activities") {}
@@ -73,7 +73,7 @@ struct PermissionsView: View {
             Text("\nAllow \(appName) To Access")
         } footer: {
             if appName == "Maps" {
-                Text("[About Apple Maps & Privacy](POPOVER)")
+                Text("[About Apple Maps & Privacy...](POPOVER)")
             } else if appName == "Music" {
                 Text("Use cellular data for downloads, streaming, updating your library, and loading artwork.")
             }
