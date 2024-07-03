@@ -50,6 +50,12 @@ struct SettingsLink<Content: View>: View {
                             .frame(width: smallerIcons.contains(icon) ? 13 : 20)
                             .symbolRenderingMode(hierarchyIcons.contains(icon) ? .hierarchical : .none)
                             .foregroundStyle(iconColor)
+                    } else if icon.contains("custom") {
+                        Image(icon)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: smallerIcons.contains(icon) ? 13 : 20)
+                            .foregroundStyle(.gray, .white)
                     } else if internalIcons.contains(icon) {
                         Image(_internalSystemName: icon)
                             .resizable()
@@ -96,5 +102,5 @@ struct SettingsLink<Content: View>: View {
 
 #Preview {
     ContentView()
-        .environmentObject(Device())
+      .environmentObject(Device())
 }
