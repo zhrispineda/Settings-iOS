@@ -198,14 +198,20 @@ struct FeatureFlagsView: View {
         Flag(title: "element.checkVisibility() API", isOn: true),
         Flag(title: "requestIdleCallback", isOn: false),
         Flag(title: "word-break: auto-phrase enabled", isOn: false),
-        Flag(title: "Passkeys site-specific hacks", isOn: true)
+        Flag(title: "Passkeys site-specific hacks", isOn: true),
+        Flag(title: "Fullscreen API", isOn: false)
     ]
     
     var body: some View {
         CustomList(title: "WebKit Feature Flags") {
             Section {
                 ForEach($featureFlags) { $flag in
-                    Toggle(flag.title, isOn: $flag.isOn)
+                    HStack { // Temporary workaround since 2-lined text can push toggles
+                        Text(flag.title)
+                        Spacer()
+                        Toggle(flag.title, isOn: $flag.isOn)
+                            .labelsHidden()
+                    }
                 }
             } header: {
                 Text("WebKit Feature Flags")

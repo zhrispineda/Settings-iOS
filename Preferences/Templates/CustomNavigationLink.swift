@@ -32,7 +32,7 @@ struct CustomNavigationLink<Content: View>: View {
             HStack {
                 VStack(alignment: .leading) {
                     Text(title)
-                        .lineLimit(1)
+                        .lineLimit(2)
                     if !subtitle.isEmpty {
                         Text(subtitle)
                             .foregroundStyle(.secondary)
@@ -55,7 +55,12 @@ struct CustomNavigationLink<Content: View>: View {
 }
 
 #Preview {
-    List {
-        CustomNavigationLink(title: "Title", subtitle: "Subtitle", status: "Status", destination: EmptyView())
+    NavigationStack {
+        List {
+            CustomNavigationLink(title: "Title", destination: EmptyView())
+            CustomNavigationLink(title: "Title", subtitle: "Subtitle", destination: EmptyView())
+            CustomNavigationLink(title: "Title", status: "Status", destination: EmptyView())
+            CustomNavigationLink(title: "Title", subtitle: "Subtitle", status: "Status", destination: EmptyView())
+        }
     }
 }

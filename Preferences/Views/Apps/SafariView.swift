@@ -19,9 +19,12 @@ struct SafariView: View {
     @State private var separateTabBarEnabled = true
     @State private var landscapeTabBarEnabled = true
     @State private var allowWebsiteTintingEnabled = true
+    
     @State private var preventCrossSiteTrackingEnabled = true
     @State private var requirePasscodeUnlockPrivateBrowsingEnabled = false
     @State private var fradulentWebsiteWarningEnabled = true
+    @State private var highlightsEnabled = false
+    
     @State private var showColorCompactTabBarEnabled = true
     @State private var automaticallySaveOfflineEnabled = false
     
@@ -34,6 +37,8 @@ struct SafariView: View {
             } header: {
                 Text("Allow Safari to Access")
             }
+            
+            CustomNavigationLink(title: "Default Browser App", status: "Safari", destination: EmptyView())
             
             Section {
                 CustomNavigationLink(title: "Search Engine", status: "Google", destination: SelectOptionList(title: "Search Engine", options: ["Google", "Yahoo", "Bing", "DuckDuckGo", "Ecosia"], selected: "Google"))
@@ -139,6 +144,7 @@ struct SafariView: View {
                 CustomNavigationLink(title: "Hide IP Address", status: "Off", destination: HideAddressView())
                 Toggle("Require Passcode to Unlock Private Browsing", isOn: $requirePasscodeUnlockPrivateBrowsingEnabled)
                 Toggle("Fradulent Website Warning", isOn: $fradulentWebsiteWarningEnabled)
+                Toggle("Highlights", isOn: $highlightsEnabled)
             } header: {
                 Text("Privacy & Security")
             } footer: {
