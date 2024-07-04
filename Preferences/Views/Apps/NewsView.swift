@@ -24,7 +24,7 @@ struct NewsView: View {
             }
             
             Section {
-                Link("Join Apple News+", destination: URL(string: "applenews://")!)
+                Link("Join Apple News+", destination: URL(string: "applenews://subscription")!)
                 NavigationLink("Automatic Downloads") {}
                     .disabled(true)
             } header: {
