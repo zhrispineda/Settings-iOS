@@ -41,13 +41,11 @@ struct MapsView: View {
                 Text("When available, this transportation type will be used to get directions and to estimate your travel time.")
             }
             
-            Section {
+            Section("Directions") {
                 NavigationLink("Driving", destination: DrivingView())
                 NavigationLink("Walking", destination: WalkingView())
                 NavigationLink("Transit", destination: TransitView())
                 NavigationLink("Cycling", destination: CyclingView())
-            } header: {
-                Text("Directions")
             }
             
             if !UIDevice.isSimulator && Device().isPhone {
@@ -56,11 +54,9 @@ struct MapsView: View {
                 }
             }
             
-            Section {
+            Section("Climate") {
                 Toggle("Air Quality Index", isOn: $airQualityIndexEnabled)
                 Toggle("Weather Conditions", isOn: $weatherConditionsEnabled)
-            } header: {
-                Text("Climate")
             }
             
             Section {
