@@ -9,18 +9,18 @@ import SwiftUI
 
 struct ControlCenterView: View {
     // Variables
-    @State private var accessWithinAppsEnabled = true
+    @AppStorage("allowControlCenterInApps") private var allowControlCenterInApps = true
     
     var body: some View {
-        CustomList(title: "Control Center") {
+        CustomList(title: "CONTROLCENTER") {
             Section {} footer: {
-                Text("Swipe \(Device().hasHomeButton ? "up from the bottom of the screen to view" : "down from the top-right edge to open") Control Center.")
+                Text(Device().hasHomeButton ? "SWIPE_BOTTOM_INSTRUCTIONS" : "SWIPE_TOPRIGHT_EDGE_INSTRUCTIONS")
             }
             
             Section {
-                Toggle("Access Within Apps", isOn: $accessWithinAppsEnabled)
+                Toggle("ALLOWED_WITHIN_APPS", isOn: $allowControlCenterInApps)
             } footer: {
-                Text("Allow access to Control Center within apps. When disabled, you can still access Control Center from the Home Screen.")
+                Text("ALLOWED_WITHIN_APPS_FOOTER")
             }
         }
     }

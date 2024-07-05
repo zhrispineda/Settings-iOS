@@ -36,10 +36,12 @@
 		832FD83F2BC22EB000E99DEB /* BluetoothView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832FD83E2BC22EB000E99DEB /* BluetoothView.swift */; };
 		8335A70C2BC358E8001E199D /* CellularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8335A70B2BC358E8001E199D /* CellularView.swift */; };
 		833854F72C1648CD00339C4F /* SoftwareUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833854F62C1648CD00339C4F /* SoftwareUpdateView.swift */; };
+		833BA3372C38529B00755A5A /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 833BA3362C38529B00755A5A /* Localizable.xcstrings */; };
 		833C6EAC2C208A3900A8D91C /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C6EAB2C208A3900A8D91C /* CameraView.swift */; };
 		833C6EAE2C20C88000A8D91C /* HomeScreenAppLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C6EAD2C20C88000A8D91C /* HomeScreenAppLibraryView.swift */; };
 		833C6EB02C20CCEF00A8D91C /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C6EAF2C20CCEF00A8D91C /* SearchView.swift */; };
 		833C6EB22C20CE7800A8D91C /* SearchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C6EB12C20CE7800A8D91C /* SearchDetailView.swift */; };
+		833D73922C384782009C236A /* DevicesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833D73912C38477C009C236A /* DevicesModel.swift */; };
 		833F0AD02B744D180036EAD2 /* PreferencesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833F0ACF2B744D180036EAD2 /* PreferencesApp.swift */; };
 		833F0AD22B744D180036EAD2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833F0AD12B744D180036EAD2 /* ContentView.swift */; };
 		833F0AD42B744D190036EAD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 833F0AD32B744D190036EAD2 /* Assets.xcassets */; };
@@ -237,10 +239,12 @@
 		832FD83E2BC22EB000E99DEB /* BluetoothView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothView.swift; sourceTree = "<group>"; };
 		8335A70B2BC358E8001E199D /* CellularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellularView.swift; sourceTree = "<group>"; };
 		833854F62C1648CD00339C4F /* SoftwareUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftwareUpdateView.swift; sourceTree = "<group>"; };
+		833BA3362C38529B00755A5A /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		833C6EAB2C208A3900A8D91C /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		833C6EAD2C20C88000A8D91C /* HomeScreenAppLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenAppLibraryView.swift; sourceTree = "<group>"; };
 		833C6EAF2C20CCEF00A8D91C /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		833C6EB12C20CE7800A8D91C /* SearchDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDetailView.swift; sourceTree = "<group>"; };
+		833D73912C38477C009C236A /* DevicesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesModel.swift; sourceTree = "<group>"; };
 		833F0ACC2B744D180036EAD2 /* Preferences.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Preferences.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		833F0ACF2B744D180036EAD2 /* PreferencesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesApp.swift; sourceTree = "<group>"; };
 		833F0AD12B744D180036EAD2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -574,6 +578,7 @@
 				833F0AD12B744D180036EAD2 /* ContentView.swift */,
 				833F0AD32B744D190036EAD2 /* Assets.xcassets */,
 				833F0AD52B744D190036EAD2 /* Preview Content */,
+				833BA3362C38529B00755A5A /* Localizable.xcstrings */,
 			);
 			path = Preferences;
 			sourceTree = "<group>";
@@ -785,6 +790,7 @@
 		838C23242B746D200053D4C5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				833D73912C38477C009C236A /* DevicesModel.swift */,
 				838C23252B746D290053D4C5 /* SettingsModel.swift */,
 			);
 			path = Models;
@@ -1167,6 +1173,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 833F0AC32B744D180036EAD2;
 			productRefGroup = 833F0ACD2B744D180036EAD2 /* Products */;
@@ -1185,6 +1192,7 @@
 			files = (
 				83F516B82C21B7FA0004E87A /* SettingsPhysical.gif in Resources */,
 				83B893C02B8FDBE8005705A3 /* iPhone15_Pro_NaturalTitanium.usdz in Resources */,
+				833BA3372C38529B00755A5A /* Localizable.xcstrings in Resources */,
 				833F0AD72B744D190036EAD2 /* Preview Assets.xcassets in Resources */,
 				833F0AD42B744D190036EAD2 /* Assets.xcassets in Resources */,
 				8361A22B2C193DBA00A7D5CC /* SettingsSimulator.gif in Resources */,
@@ -1382,6 +1390,7 @@
 				83585B752B8848110046A0C3 /* TransitView.swift in Sources */,
 				836000782BCC7A470034DDF5 /* NotificationsView.swift in Sources */,
 				833F0AD02B744D180036EAD2 /* PreferencesApp.swift in Sources */,
+				833D73922C384782009C236A /* DevicesModel.swift in Sources */,
 				83D31F882B8E3DA90057CFDB /* SpeakSelectionVoiceDetailView.swift in Sources */,
 				83A5DA512C2335580012ACB3 /* PermissionsView.swift in Sources */,
 				83B893BB2B8FD381005705A3 /* HoverTextSizeView.swift in Sources */,
@@ -1456,7 +1465,9 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
@@ -1512,6 +1523,8 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

@@ -31,7 +31,7 @@ struct CustomList<Content: View>: View {
                 content
             }
             .contentMargins(.horizontal, Device().isPhone ? nil : (isOnLandscapeOrientation ? 145 : 35), for: .scrollContent)
-            .navigationTitle(title)
+            .navigationTitle(LocalizedStringKey(title))
             .navigationBarTitleDisplayMode(.inline)
             .padding(.top, defaultPaddingViews.contains(title) ? 0 : -19)
         }

@@ -74,7 +74,7 @@ struct SettingsLink<Content: View>: View {
                 
                 // Title and status text
                 VStack(alignment: .leading, spacing: -1) {
-                    Text(id)
+                    Text(LocalizedStringKey(id))
                         .lineLimit(1)
                     if !subtitle.isEmpty {
                         Text(subtitle)

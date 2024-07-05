@@ -52,7 +52,7 @@ struct SectionHelp: View {
             Text(.init(description))
                 .font(.footnote)
                 .padding(.bottom, -10)
-                .padding(.horizontal, -5)
+                .padding(.horizontal, -3)
         }
         .padding()
         .multilineTextAlignment(.center)

@@ -20,7 +20,7 @@ struct GeneralView: View {
                     AboutView()
                 }
                 if !UIDevice.isSimulator {
-                    SettingsLink(color: .gray, icon: "gear.badge", id: "Software Update") {
+                    SettingsLink(color: .gray, icon: "gear.badge", id: "SOFTWARE_UPDATE") {
                         SoftwareUpdateView()
                     }
                     SettingsLink(color: .gray, icon: "externaldrive.fill", id: "\(Device().model) Storage") {}
@@ -29,7 +29,7 @@ struct GeneralView: View {
             
             if !UIDevice.isSimulator {
                 Section {
-                    SettingsLink(icon: "appleCare", id: "AppleCare & Warranty") {
+                    SettingsLink(icon: "appleCare", id: "COVERAGE") {
                         AppleCareWarrantyView()
                     }
                 }
