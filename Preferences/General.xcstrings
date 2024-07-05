@@ -12,6 +12,61 @@
         }
       }
     },
+    "AIRDROP" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AirDrop"
+          }
+        }
+      }
+    },
+    "AUTO_CONTENT_DOWNLOAD" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Background App Refresh"
+          }
+        }
+      }
+    },
+    "AUTOFILL" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AutoFill & Passwords"
+          }
+        }
+      }
+    },
+    "CARPLAY" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CarPlay"
+          }
+        }
+      }
+    },
+    "CONTINUITY" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AirPlay & Continuity"
+          }
+        }
+      }
+    },
     "COVERAGE" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -19,6 +74,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "AppleCare & Warranty"
+          }
+        }
+      }
+    },
+    "DATE_AND_TIME" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Date & Time"
           }
         }
       }
@@ -46,6 +112,39 @@
         }
       }
     },
+    "DICTIONARY" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dictionary"
+          }
+        }
+      }
+    },
+    "FONT_SETTING" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fonts"
+          }
+        }
+      }
+    },
+    "GAME_CONTROLLER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Game Controller"
+          }
+        }
+      }
+    },
     "General" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -57,6 +156,61 @@
         }
       }
     },
+    "HOME_BUTTON" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Home Button"
+          }
+        }
+      }
+    },
+    "INTERNATIONAL" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Language & Region"
+          }
+        }
+      }
+    },
+    "LEGAL_AND_REGULATORY_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Legal & Regulatory"
+          }
+        }
+      }
+    },
+    "PiP" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Picture in Picture"
+          }
+        }
+      }
+    },
+    "SHUTDOWN_LABEL" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shut Down"
+          }
+        }
+      }
+    },
     "SOFTWARE_UPDATE" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -64,6 +218,51 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Software Update"
+          }
+        }
+      }
+    },
+    "TRANSFER_OR_RESET_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "device" : {
+              "ipad" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Transfer or Reset iPad"
+                }
+              },
+              "iphone" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Transfer or Reset iPhone"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "TV_PROVIDER_LABEL" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "TV Provider"
+          }
+        }
+      }
+    },
+    "VPN_DEVICE_MANAGEMENT" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VPN & Device Management"
           }
         }
       }

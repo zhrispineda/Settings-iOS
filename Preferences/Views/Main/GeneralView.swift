@@ -36,73 +36,73 @@ struct GeneralView: View {
             
             if !UIDevice.isSimulator {
                 Section {
-                    SettingsLink(color: .white, iconColor: .blue, icon: "airdrop", id: "AirDrop") {}
-                    SettingsLink(color: .blue, icon: "airplay.video", id: "AirPlay & Continuity") {}
+                    SettingsLink(color: .white, iconColor: .blue, icon: "airdrop", id: String(localized: "AIRDROP", table: "General")) {}
+                    SettingsLink(color: .blue, icon: "airplay.video", id: String(localized: "CONTINUITY", table: "General")) {}
                     if Device().isPhone {
-                        SettingsLink(icon: "pip", id: "Picture in Picture") {}
-                        SettingsLink(color: .green, icon: "carplay", id: "CarPlay") {}
+                        SettingsLink(icon: "pip", id: String(localized: "PiP", table: "General")) {}
+                        SettingsLink(color: .green, icon: "carplay", id: String(localized: "CARPLAY", table: "General")) {}
                     }
                 }
             }
             
             if !UIDevice.isSimulator && Device().hasHomeButton {
                 NavigationLink("Home Button", destination: EmptyView())
-                SettingsLink(color: .gray, icon: "iphone.gen1", id: "Home Button") {}
+                SettingsLink(color: .gray, icon: "iphone.gen1", id: String(localized: "HOME_BUTTON", table: "General")) {}
             }
             
             Section {
-                SettingsLink(color: .gray, icon: "ellipsis.rectangle", id: "AutoFill & Passwords") {
+                SettingsLink(color: .gray, icon: "ellipsis.rectangle", id: String(localized: "AUTOFILL", table: "General")) {
                     AutoFillPasswordsView()
                 }
                 if !UIDevice.isSimulator {
-                    SettingsLink(color: .gray, icon: "arrow.circlepath", id: "Background App Refresh") {}
-                    SettingsLink(color: .blue, icon: "calendar.badge.clock", id: "Date & Time") {}
+                    SettingsLink(color: .gray, icon: "arrow.circlepath", id: String(localized: "AUTO_CONTENT_DOWNLOAD", table: "General")) {}
+                    SettingsLink(color: .blue, icon: "calendar.badge.clock", id: String(localized: "DATE_AND_TIME", table: "General")) {}
                 }
-                SettingsLink(color: .blue, icon: "character.book.closed.fill", id: "Dictionary") {
+                SettingsLink(color: .blue, icon: "character.book.closed.fill", id: String(localized: "DICTIONARY", table: "General")) {
                     DictionaryView()
                 }
-                SettingsLink(color: .gray, icon: "textformat", id: "Fonts") {
+                SettingsLink(color: .gray, icon: "textformat", id: String(localized: "FONT_SETTING", table: "General")) {
                     FontsView()
                 }
                 if !UIDevice.isSimulator {
-                    SettingsLink(color: .gray, icon: "gamecontroller.fill", id: "Game Controller") {
+                    SettingsLink(color: .gray, icon: "gamecontroller.fill", id: String(localized: "GAME_CONTROLLER", table: "General")) {
                         GameControllerView()
                     }
-                    SettingsLink(color: .gray, icon: "keyboard.fill", id: "Keyboard") {
+                    SettingsLink(color: .gray, icon: "keyboard.fill", id: String(localized: "Keyboard", table: "General")) {
                         KeyboardView()
                     }
                 }
-                SettingsLink(color: .blue, icon: "globe", id: "Language & Region") {
+                SettingsLink(color: .blue, icon: "globe", id: String(localized: "INTERNATIONAL", table: "General")) {
                     LanguageRegionView()
                 }
             }
             
             if !UIDevice.isSimulator {
                 Section {
-                    SettingsLink(icon: "cable.coaxial", id: "TV Provider") {}
+                    SettingsLink(icon: "cable.coaxial", id: String(localized: "TV_PROVIDER_LABEL", table: "General")) {}
                 }
             }
             
             Section {
-                SettingsLink(color: .gray, icon: "gear", id: "VPN & Device Management") {
+                SettingsLink(color: .gray, icon: "gear", id: String(localized: "VPN_DEVICE_MANAGEMENT", table: "General")) {
                     VPNDeviceManagementView()
                 }
             }
             
             if !UIDevice.isSimulator {
                 Section {
-                    SettingsLink(color: .gray, icon: "text.justify.left", id: "Legal & Regulatory") {}
+                    SettingsLink(color: .gray, icon: "text.justify.left", id: String(localized: "LEGAL_AND_REGULATORY_TITLE", table: "General")) {}
                 }
             }
             
             Section {
-                SettingsLink(color: .gray, icon: "arrow.counterclockwise", id: "Transfer or Reset \(Device().model)") {
+                SettingsLink(color: .gray, icon: "arrow.counterclockwise", id: String(localized: "TRANSFER_OR_RESET_TITLE", table: "General")) {
                     if !UIDevice.isSimulator {
                         TransferResetView()
                     }
                 }
                 if !UIDevice.isSimulator {
-                    Button("Shut Down") {}
+                    Button(String(localized: "SHUTDOWN_LABEL", table: "General")) {}
                 }
             }
         }
