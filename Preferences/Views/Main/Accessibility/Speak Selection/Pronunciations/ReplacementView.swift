@@ -8,7 +8,6 @@
 import SwiftUI
 import AVFoundation
 
-
 struct ReplacementView: View {
     // Variables
     let synthesizer = AVSpeechSynthesizer()
@@ -62,14 +61,8 @@ struct ReplacementView: View {
                             }
                         } label: {
                             HStack {
-                                switch option {
-                                case "Watch":
-                                    SettingsLabel(icon: "apple \(option.lowercased())", id: option)
-                                        .foregroundStyle(Color["Label"])
-                                default:
-                                    SettingsLabel(icon: "apple\(option.lowercased())", id: option)
-                                        .foregroundStyle(Color["Label"])
-                                }
+                                SettingsLabel(icon: "apple\(option)", id: option)
+                                    .foregroundStyle(Color["Label"])
                                 Spacer()
                                 Image(systemName: "\(selected.contains(option) ? "checkmark" : "")")
                             }

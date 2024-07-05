@@ -33,7 +33,7 @@ struct SearchView: View {
             }
             
             Section {
-                SettingsLink(color: .white, icon: "appclip", id: "App Clips") {
+                SettingsLink(color: .white, iconColor: .blue, icon: "appclip", id: "App Clips") {
                     SiriAppClipsView()
                 }
                 ForEach(apps, id: \.self) { app in

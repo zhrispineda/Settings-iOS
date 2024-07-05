@@ -119,10 +119,10 @@ struct SiriView: View {
             }
             
             Section {
-                SettingsLink(color: .white, icon: "appclip", id: "App Clips") {
+                SettingsLink(color: .white, iconColor: .blue, icon: "appclip", id: "App Clips") {
                     SiriAppClipsView()
                 }
-                SettingsLink(icon: "applehome screen & app library", id: "Apps") {
+                SettingsLink(icon: "appleHome Screen & App Library", id: "Apps") {
                     CustomList(title: "Apps") {
                         ForEach(apps, id: \.self) { app in
                             SettingsLink(icon: "apple\(app)", id: app) {

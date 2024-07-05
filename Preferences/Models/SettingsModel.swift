@@ -9,6 +9,7 @@ import SwiftUI
 
 // MARK: Global variables
 struct Configuration {
+    let forceCellular = false
     let forcePhysical = true
     let developerMode = true
 }
@@ -69,6 +70,18 @@ class Device: ObservableObject {
 
 // MARK: UIDevice extension for physical devices
 public extension UIDevice {
+    static let identifier: String = {
+        var systemInfo = utsname()
+        uname(&systemInfo)
+        let machineMirror = Mirror(reflecting: systemInfo.machine)
+        let identifier = machineMirror.children.reduce("") { identifier, element in
+            guard let value = element.value as? Int8, value != 0 else { return identifier }
+            return identifier + String(UnicodeScalar(UInt8(value)))
+        }
+        
+        return ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] == "N/A" ? identifier : ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] ?? "N/A"
+    }()
+    
     static let fullModel: String = {
         var systemInfo = utsname()
         uname(&systemInfo)
@@ -118,6 +131,17 @@ public extension UIDevice {
         }
         
         return UIDevice.isSimulator ? getDevice(identifier: ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] ?? "N/A") : getDevice(identifier: identifier)
+    }()
+    
+    static let isCellularCapable: Bool = {
+        var identifier = UIDevice.identifier
+        
+        switch identifier {
+        case "iPad13,5", "iPad13,6", "iPad13,7", "iPad13,9", "iPad 13,10", "iPad13,11", "iPad14,4", "iPad14,6", "iPad16,4", "iPad16,6":
+            return true
+        default:
+            return identifier.contains("iPhone") || Configuration().forceCellular
+        }
     }()
     
     static let isSimulator: Bool = {
@@ -247,7 +271,7 @@ let internalIcons = ["airdrop", "apple.photos", "bluetooth", "carplay", "chevron
 
 // MARK: App Settings
 @MainActor let appsSettings: [SettingsItem] = [
-    SettingsItem(type: .apps, title: "Apps", icon: "applehome screen & app library", color: .indigo, destination: AnyView(AppsView()))
+    SettingsItem(type: .apps, title: "Apps", icon: "appleHome Screen & App Library", color: .indigo, destination: AnyView(AppsView()))
 ]
 
 // MARK: Developer Settings

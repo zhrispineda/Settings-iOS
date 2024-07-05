@@ -79,10 +79,8 @@ struct DeveloperView: View {
                 Text("Removing trusted computers will delete all of the records of computers that you have paired with previously.")
             }
             
-            Section {
+            Section("UI Automation") {
                 Toggle("Enable UI Automation", isOn: $uiAutomationEnabled)
-            } header: {
-                Text("UI Automation")
             }
             
             Section {
@@ -94,21 +92,17 @@ struct DeveloperView: View {
             }
             
             if Device().isPhone { // MARK: Wallet Testing
-                Section {
+                Section("Wallet Testing") {
                     Toggle("Additional Logging", isOn: $additionalLoggingEnabled)
                     Toggle("Allow HTTP Services", isOn: $allowHttpServicesEnabled)
                     Toggle("Disable Rate Limiting", isOn: $disableRateLimitingEnabled)
                     Toggle("NFC Pass Key Optional", isOn: $nfcPassKeyOptionalEnabled)
-                } header: {
-                    Text("Wallet Testing")
                 }
             }
             
-            Section {
+            Section("Media Services Testing") {
                 //NavigationLink("AirPlay Suggestions", destination: AirPlaySuggestionsView())
                 Button("Reset Media Services", action: {})
-            } header: {
-                Text("Media Services Testing")
             }
             
             Section {
@@ -119,10 +113,8 @@ struct DeveloperView: View {
                 Text("Reset layouts, images, and other cached elements. Private data will not be affected.")
             }
             
-            Section {
+            Section("TV Provider Testing") {
                 NavigationLink("TV Provider", destination: TVProviderView())
-            } header: {
-                Text("TV Provider Testing")
             }
             
             Section {
@@ -131,11 +123,9 @@ struct DeveloperView: View {
                 Text("TV App Testing")
             }
             
-            Section {
+            Section("CoreSpotlight Testing") {
                 Button("Reindex All Items", action: {})
                 Button("Reindex All Items with Identifiers", action: {})
-            } header: {
-                Text("CoreSpotlight Testing")
             }
             
             Section {
@@ -181,10 +171,8 @@ struct DeveloperView: View {
                 Text("These settings affect Siri Event Suggestions from Mail and Safari. Enable Allow Any Domain to allow e-mails or web pages which have not yet been approved for Siri Event Suggestions by Apple. Enable Allow Unverified Sources to bypass DKIM or SSL authenticity verification for Siri Event Suggestions in Mail and Safari.")
             }
             
-            Section {
-                Toggle("Enable MIDI-CI", isOn: $enableMidiCi)
-            } header: {
-                Text("Enable MIDI-CI")
+            Section("Enable MIDI-CI") {
+                Toggle("MIDI-CI Testing", isOn: $enableMidiCi)
             }
             
             Section {

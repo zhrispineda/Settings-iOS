@@ -33,7 +33,7 @@ struct HomeScreenAppLibraryView: View {
                     }
                 }
             } header: {
-                Text("\nNewly Downloaded Apps")
+                Text("Newly Downloaded Apps")
             }
             
             Section {
