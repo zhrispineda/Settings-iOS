@@ -44,6 +44,8 @@ struct SectionHelp: View {
                         }
                 }
             }
+            .accessibilityHidden(true)
+            
             Text(title)
                 .bold()
                 .font(.title3)

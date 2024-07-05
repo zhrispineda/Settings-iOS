@@ -48,11 +48,11 @@ struct AboutView: View {
                 LabeledContent("Available", value: availableStorage)
             }
             
-            if !UIDevice.isSimulator {
-                HText("Wi-Fi Address", status: "00:0A:AA:A0:A0:00") // TODO: Monospaced Digits
-                HText("Bluetooth", status: "00:0A:AA:A0:A0:00") // TODO: Monospaced Digits
-                HText("Modem Firmware", status: "1.60.02") // TODO: Monospaced Digits
-                NavigationLink("SEID", destination: {})
+            if !UIDevice.isSimulator && UIDevice.isCellularCapable {
+                HText("Wi-Fi Address", status: "00:0A:AA:A0:A0:00")
+                HText("Bluetooth", status: "00:0A:AA:A0:A0:00")
+                HText("Modem Firmware", status: "1.60.02")
+                NavigationLink("SEID") {}
                 VStack {
                     Text("EID")
                         .frame(maxWidth: .infinity, alignment: .leading)

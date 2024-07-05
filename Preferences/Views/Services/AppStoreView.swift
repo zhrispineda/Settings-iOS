@@ -25,7 +25,7 @@ struct AppStoreView: View {
             
             LanguageView()
             
-            Section {
+            Section("Automatic Downloads") {
                 Toggle(isOn: $appDownloadsEnabled) {
                     Text("App Downloads")
                     Text("Automatically install free and paid apps purchased on other devices.")
@@ -38,8 +38,6 @@ struct AppStoreView: View {
                     Text("In-App Content")
                     Text("Automatically install free and paid apps purchased on other devices.")
                 }
-            } header: {
-                Text("Automatic Downloads")
             }
             
             Section {
