@@ -1,0 +1,61 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "ALLOWED_WITHIN_APPS" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Access Within Apps"
+          }
+        }
+      }
+    },
+    "ALLOWED_WITHIN_APPS_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Allow access to Control Center within apps. When disabled, you can still access Control Center from the Home Screen."
+          }
+        }
+      }
+    },
+    "CONTROLCENTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Control Center"
+          }
+        }
+      }
+    },
+    "SWIPE_BOTTOM_INSTRUCTIONS" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Swipe up from the bottom of the screen to view Control Center."
+          }
+        }
+      }
+    },
+    "SWIPE_TOPRIGHT_EDGE_INSTRUCTIONS" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Swipe down from the top-right edge to open Control Center."
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

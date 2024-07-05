@@ -12,15 +12,15 @@ struct ControlCenterView: View {
     @AppStorage("allowControlCenterInApps") private var allowControlCenterInApps = true
     
     var body: some View {
-        CustomList(title: "CONTROLCENTER") {
+        CustomList(title: String(localized: "CONTROLCENTER", table: "ControlCenterSettings")) {
             Section {} footer: {
-                Text(Device().hasHomeButton ? "SWIPE_BOTTOM_INSTRUCTIONS" : "SWIPE_TOPRIGHT_EDGE_INSTRUCTIONS")
+                Text(Device().hasHomeButton ? "SWIPE_BOTTOM_INSTRUCTIONS" : "SWIPE_TOPRIGHT_EDGE_INSTRUCTIONS", tableName: "ControlCenterSettings")
             }
             
             Section {
-                Toggle("ALLOWED_WITHIN_APPS", isOn: $allowControlCenterInApps)
+                Toggle(String(localized: "ALLOWED_WITHIN_APPS", table: "ControlCenterSettings"), isOn: $allowControlCenterInApps)
             } footer: {
-                Text("ALLOWED_WITHIN_APPS_FOOTER")
+                Text("ALLOWED_WITHIN_APPS_FOOTER", tableName: "ControlCenterSettings")
             }
         }
     }

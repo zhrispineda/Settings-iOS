@@ -9,27 +9,26 @@ import SwiftUI
 
 struct GeneralView: View {
     var body: some View {
-        CustomList(title: "General") {
-            // General Tooltip Header
+        CustomList(title: String(localized: "General", table: "General")) {
             Section {
-                SectionHelp(title: "General", color: Color.gray, icon: "gear", description: "Manage your overall setup and preferences for \(Device().model), such as software updates, device language\(Device().isPhone ? ", CarPlay" : ""), AirDrop, and more.")
+                SectionHelp(title: String(localized: "General", table: "General"), color: Color.gray, icon: "gear", description: "PLACARD_SUBTITLE")
             }
         
             Section {
-                SettingsLink(color: .gray, icon: UIDevice.isSimulator ? "questionmark.app.dashed" : Device().isPhone ? "iphone.gen3" : "ipad.gen2", id: "About") {
+                SettingsLink(color: .gray, icon: UIDevice.isSimulator ? "questionmark.app.dashed" : Device().isPhone ? "iphone.gen3" : "ipad.gen2", id: String(localized: "About", table: "General")) {
                     AboutView()
                 }
                 if !UIDevice.isSimulator {
-                    SettingsLink(color: .gray, icon: "gear.badge", id: "SOFTWARE_UPDATE") {
+                    SettingsLink(color: .gray, icon: "gear.badge", id: String(localized: "SOFTWARE_UPDATE", table: "General")) {
                         SoftwareUpdateView()
                     }
-                    SettingsLink(color: .gray, icon: "externaldrive.fill", id: "\(Device().model) Storage") {}
+                    SettingsLink(color: .gray, icon: "externaldrive.fill", id: String(localized: "DEVICE_STORAGE", table: "General")) {}
                 }
             }
             
             if !UIDevice.isSimulator {
                 Section {
-                    SettingsLink(icon: "appleCare", id: "COVERAGE") {
+                    SettingsLink(icon: "appleCare", id: String(localized: "COVERAGE", table: "General")) {
                         AppleCareWarrantyView()
                     }
                 }

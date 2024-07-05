@@ -65,7 +65,7 @@ struct SectionHelp: View {
     NavigationStack {
         List {
             Section {
-                SectionHelp(title: "Title", color: Color.blue, icon: "wifi", description: "Description")
+                SectionHelp(title: "Title", color: Color.blue, icon: "wifi", description: "PLACARD_SUBTITLE")
             }
         }
     }
