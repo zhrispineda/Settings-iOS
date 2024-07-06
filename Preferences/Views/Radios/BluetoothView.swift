@@ -12,15 +12,15 @@ struct BluetoothView: View {
     @AppStorage("bluetooth") private var bluetoothEnabled = true
     
     var body: some View {
-        CustomList(title: "Bluetooth") {
+        CustomList(title: String(localized: "BLUETOOTH", table: "BluetoothSettings")) {
             Section {
-                SectionHelp(title: "Bluetooth", color: Color.blue, icon: "bluetooth", description: "Connect to accessories you can use for activities such as streaming music, making phone calls, and gaming. [Learn more...](https://support.apple.com/guide/\(Device().isPhone ?  "iphone/bluetooth-accessories-iph3c50f191/ios" : "ipad/bluetooth-accessories-ipad997da4cf/ipados"))")
-                Toggle("Bluetooth", isOn: $bluetoothEnabled.animation())
+                SectionHelp(title: String(localized: "BLUETOOTH", table: "BluetoothSettings"), color: Color.blue, icon: "bluetooth", description: "\(String(localized: "BLUETOOTHPLACARDINFO", table: "BluetoothSettings")) [\(String(localized: "LEARN_MORE", table: "BluetoothSettings"))](https://support.apple.com/guide/\(Device().isPhone ?  "iphone/bluetooth-accessories-iph3c50f191/ios" : "ipad/bluetooth-accessories-ipad997da4cf/ipados"))")
+                Toggle(String(localized: "BLUETOOTH", table: "BluetoothSettings"), isOn: $bluetoothEnabled.animation())
             } footer: {
                 if bluetoothEnabled {
-                    Text("This \(Device().model) is discoverable as \u{201C}\(Device().model)\u{201D} while Bluetooth Settings is open.")
+                    Text(String.localizedStringWithFormat(NSLocalizedString("DISCOVERABLE", tableName: "BluetoothSettings", comment: ""), UIDevice().model))
                 } else {
-                    Text("AirDrop, AirPlay, Find My, and Location Services use Bluetooth.")
+                    Text("POWER_OFF_WARNING", tableName: "BluetoothSettings")
                 }
             }
             
@@ -29,9 +29,13 @@ struct BluetoothView: View {
                     EmptyView()
                 } header: {
                     HStack {
-                        Text("Devices")
+                        Text("DEVICES", tableName: "BluetoothSettings")
                         ProgressView()
                             .padding(.horizontal, 1)
+                    }
+                } footer: {
+                    if Device().isPhone {
+                        Text(String.localizedStringWithFormat(NSLocalizedString("APPLE_WATCH_FOOTER_TEXT", tableName: "BluetoothSettings", comment: ""), "Apple Watch app"))
                     }
                 }
             }

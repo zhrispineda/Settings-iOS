@@ -85,6 +85,7 @@
 		837F1DD12B8AF1C500665EAB /* AutoFillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837F1DD02B8AF1C500665EAB /* AutoFillView.swift */; };
 		837F1DD42B8AF2B400665EAB /* CreditCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837F1DD32B8AF2B400665EAB /* CreditCardsView.swift */; };
 		837F1DD62B8AF31F00665EAB /* QuickWebsiteSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837F1DD52B8AF31F00665EAB /* QuickWebsiteSearchView.swift */; };
+		837FB16D2C39D461009B7A23 /* BluetoothSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 837FB16C2C39D461009B7A23 /* BluetoothSettings.xcstrings */; };
 		838134F72BCDA9380049E197 /* SoundsHapticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838134F62BCDA9380049E197 /* SoundsHapticsView.swift */; };
 		83815CDF2B768C2200F53A0F /* AccessibilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83815CDE2B768C2200F53A0F /* AccessibilityView.swift */; };
 		83815CE12B768CF300F53A0F /* MultitaskingGesturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83815CE02B768CF300F53A0F /* MultitaskingGesturesView.swift */; };
@@ -291,6 +292,7 @@
 		837F1DD02B8AF1C500665EAB /* AutoFillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoFillView.swift; sourceTree = "<group>"; };
 		837F1DD32B8AF2B400665EAB /* CreditCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardsView.swift; sourceTree = "<group>"; };
 		837F1DD52B8AF31F00665EAB /* QuickWebsiteSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickWebsiteSearchView.swift; sourceTree = "<group>"; };
+		837FB16C2C39D461009B7A23 /* BluetoothSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = BluetoothSettings.xcstrings; sourceTree = "<group>"; };
 		838134F62BCDA9380049E197 /* SoundsHapticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsHapticsView.swift; sourceTree = "<group>"; };
 		83815CDE2B768C2200F53A0F /* AccessibilityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityView.swift; sourceTree = "<group>"; };
 		83815CE02B768CF300F53A0F /* MultitaskingGesturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultitaskingGesturesView.swift; sourceTree = "<group>"; };
@@ -582,6 +584,7 @@
 				833F0AD12B744D180036EAD2 /* ContentView.swift */,
 				833F0AD32B744D190036EAD2 /* Assets.xcassets */,
 				833F0AD52B744D190036EAD2 /* Preview Content */,
+				837FB16C2C39D461009B7A23 /* BluetoothSettings.xcstrings */,
 				838C0D952C38A64900438E2D /* ControlCenterSettings.xcstrings */,
 				838C0D972C38A7FA00438E2D /* General.xcstrings */,
 				838C0D992C38A9A000438E2D /* Localizable.xcstrings */,
@@ -1203,6 +1206,7 @@
 				833F0AD42B744D190036EAD2 /* Assets.xcassets in Resources */,
 				8361A22B2C193DBA00A7D5CC /* SettingsSimulator.gif in Resources */,
 				838C0D962C38A64900438E2D /* ControlCenterSettings.xcstrings in Resources */,
+				837FB16D2C39D461009B7A23 /* BluetoothSettings.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
