@@ -20,6 +20,8 @@ struct ContentView: View {
     @State private var destination = AnyView(GeneralView())
     @State private var isOnLandscapeOrientation: Bool = UIDevice.current.orientation.isLandscape
     @State private var id = UUID()
+    @State private var showingCellular = false
+    @State private var showingVpn = false
     @AppStorage("airplaneMode") private var airplaneModeEnabled = false
     @AppStorage("wifi") private var wifiEnabled = true
     @AppStorage("bluetooth") private var bluetoothEnabled = true
@@ -125,12 +127,20 @@ struct ContentView: View {
                                 Section {
                                     IconToggle(enabled: $airplaneModeEnabled, color: Color.orange, icon: "airplane", title: "Airplane Mode")
                                     ForEach(radioSettings) { setting in
-                                        SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Wi-Fi" ? (wifiEnabled && !airplaneModeEnabled ? "Not Connected" : "Off") : setting.id == "Bluetooth" ? (bluetoothEnabled ? "On" : "Off") : setting.id == "Cellular" && airplaneModeEnabled ? "Airplane Mode" : String()) {
-                                            setting.destination
+                                        if setting.capability == .none {
+                                            SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Wi-Fi" ? (wifiEnabled && !airplaneModeEnabled ? "Not Connected" : "Off") : setting.id == "Bluetooth" ? (bluetoothEnabled ? "On" : "Off") : setting.id == "Cellular" && airplaneModeEnabled ? "Airplane Mode" : String()) {
+                                                setting.destination
+                                            }
+                                            .disabled(setting.id == "Personal Hotspot" && airplaneModeEnabled)
+                                        } else if setting.capability != .none && showingCellular {
+                                            SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Cellular" && airplaneModeEnabled ? "Airplane Mode" : String()) {
+                                                setting.destination
+                                            }
                                         }
-                                        .disabled(setting.id == "Personal Hotspot" && airplaneModeEnabled)
                                     }
-                                    IconToggle(enabled: $vpnEnabled, color: .blue, icon: "network.connected.to.line.below", title: "VPN")
+                                    if showingVpn {
+                                        IconToggle(enabled: $vpnEnabled, color: .blue, icon: "network.connected.to.line.below", title: "VPN")
+                                    }
                                 }
                             }
                             
@@ -152,6 +162,18 @@ struct ContentView: View {
                             // MARK: Developer
                             if UIDevice.isSimulator || Configuration().developerMode {
                                 SettingsLinkSection(item: developerSettings)
+                            }
+                        }
+                        .onAppear {
+                            Task {
+                                try? await Task.sleep(nanoseconds: 500_000_000)
+                                withAnimation {
+                                    showingCellular = true
+                                }
+                                try? await Task.sleep(nanoseconds: 500_000_000)
+                                withAnimation {
+                                    showingVpn = true
+                                }
                             }
                         }
                         .navigationTitle("Settings")
@@ -228,19 +250,27 @@ struct SettingsLinkSection: View {
     var body: some View {
         Section {
             ForEach(item) { setting in
-                if !tabletOnly.contains(setting.id) {
-                    if setting.id == "Action Button" && Device().hasActionButton {
-                        SettingsLink(color: setting.color, icon: setting.icon, id: setting.id) {
-                            setting.destination
-                        }
-                    } else if setting.id != "Action Button" {
-                        SettingsLink(color: setting.color, icon: setting.icon, id: setting.id) {
-                            setting.destination
-                        }
+                if !tabletOnly.contains(setting.id) && requiredCapabilities(capability: setting.capability) {
+                    SettingsLink(color: setting.color, icon: setting.icon, id: setting.id) {
+                        setting.destination
                     }
                 }
             }
         }
+    }
+}
+
+// MARK: - Required Capabilities Check
+@MainActor func requiredCapabilities(capability: Capabilities) -> Bool {
+    switch capability {
+    case .none:
+        return true
+    case .actionButton:
+        return Device().hasActionButton
+    case .cellular:
+        return UIDevice.isCellularCapable
+    case .vpn:
+        return true
     }
 }
 

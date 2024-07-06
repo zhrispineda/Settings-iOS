@@ -78,11 +78,19 @@ enum SettingsModel: String, CaseIterable {
     case wifi = "Wi-Fi"
 }
 
+enum Capabilities {
+    case none
+    case actionButton
+    case cellular
+    case vpn
+}
+
 struct SettingsItem<Content: View>: Identifiable {
     var id: String { title }
     let type: SettingsModel
     let title: String
     let icon: String
+    var capability: Capabilities = .none
     var color: Color = Color(.gray)
     let destination: Content
 }
@@ -98,7 +106,7 @@ let internalIcons = ["airdrop", "apple.photos", "bluetooth", "carplay", "chevron
 @MainActor let radioSettings: [SettingsItem] = [
     SettingsItem(type: .wifi, title: "Wi-Fi", icon: "wifi", color: .blue, destination: AnyView(NetworkView())),
     SettingsItem(type: .bluetooth, title: "Bluetooth", icon: "bluetooth", color: .blue, destination: AnyView(BluetoothView())),
-    SettingsItem(type: .cellular, title: "Cellular", icon: "antenna.radiowaves.left.and.right", color: .green, destination: AnyView(CellularView())),
+    SettingsItem(type: .cellular, title: "Cellular", icon: "antenna.radiowaves.left.and.right", capability: .cellular, color: .green, destination: AnyView(CellularView())),
     SettingsItem(type: .personalHotspot, title: "Personal Hotspot", icon: "personalhotspot", color: .green, destination: AnyView(HotspotView())),
     SettingsItem(type: .battery, title: "Battery", icon: "battery.100percent", color: .green, destination: AnyView(BatteryView())),
 ]
@@ -120,7 +128,7 @@ let internalIcons = ["airdrop", "apple.photos", "bluetooth", "carplay", "chevron
 @MainActor let mainSettings: [SettingsItem] = [
     SettingsItem(type: .general, title: "General", icon: "gear", color: .gray, destination: AnyView(GeneralView())),
     SettingsItem(type: .accessibility, title: "Accessibility", icon: "accessibility", color: .blue, destination: AnyView(AccessibilityView())),
-    SettingsItem(type: .actionButton, title: "Action Button", icon: "iphone.action.button.arrow.right", color: .blue, destination: AnyView(ActionButtonView())),
+    SettingsItem(type: .actionButton, title: "Action Button", icon: "iphone.action.button.arrow.right", capability: .actionButton, color: .blue, destination: AnyView(ActionButtonView())),
     SettingsItem(type: .camera, title: "Camera", icon: "camera.fill", color: .gray, destination: AnyView(CameraView())),
     SettingsItem(type: .controlCenter, title: "Control Center", icon: "switch.2", destination: AnyView(ControlCenterView())),
     SettingsItem(type: .displayBrightness, title: "Display & Brightness", icon: "sun.max.fill", color: .blue, destination: AnyView(DisplayBrightnessView())),

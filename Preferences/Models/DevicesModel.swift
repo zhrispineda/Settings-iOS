@@ -105,6 +105,10 @@ public extension UIDevice {
         }
     }()
     
+    static let ringerButtonCapability: Bool = { // Action Button
+        return identifier.contains("15 Pro")
+    }()
+    
     static let isSimulator: Bool = {
         return ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] != nil && !Configuration().forcePhysical
     }()
