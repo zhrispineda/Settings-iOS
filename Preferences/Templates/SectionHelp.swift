@@ -25,7 +25,7 @@ struct SectionHelp: View {
                     .foregroundStyle(UIImage(systemName: icon) != nil || icon == "bluetooth" ? color : .black)
                 if UIImage(systemName: icon) != nil {
                     Image(systemName: icon)
-                        .font(.system(size: icon == "personalhotspot" ? 30 : 36))
+                        .font(.system(size: icon == "personalhotspot" ? 30 : 42))
                         .foregroundStyle(icon == "touchid" ? .pink : iconColor)
                 } else if icon == "bluetooth" {
                     Image(_internalSystemName: icon)
@@ -53,7 +53,7 @@ struct SectionHelp: View {
             Text(.init(description))
                 .font(.footnote)
                 .padding(.bottom, -10)
-                .padding(.horizontal, -3)
+                .padding(.horizontal, -10)
         }
         .padding()
         .multilineTextAlignment(.center)
@@ -66,7 +66,7 @@ struct SectionHelp: View {
     NavigationStack {
         List {
             Section {
-                SectionHelp(title: "Title", color: Color.blue, icon: "wifi", description: "PLACARD_SUBTITLE")
+                SectionHelp(title: "Title", color: Color.blue, icon: "gear", description: "PLACARD_SUBTITLE")
             }
         }
     }

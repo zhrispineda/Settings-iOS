@@ -28,7 +28,7 @@ struct GeneralView: View {
             
             if !UIDevice.isSimulator {
                 Section {
-                    SettingsLink(icon: "appleCare", id: String(localized: "COVERAGE", table: "General")) {
+                    SettingsLink(color: Color.clear, icon: "appleCare", id: String(localized: "COVERAGE", table: "General")) {
                         AppleCareWarrantyView()
                     }
                 }
@@ -101,7 +101,10 @@ struct GeneralView: View {
                         TransferResetView()
                     }
                 }
-                if !UIDevice.isSimulator {
+            }
+            
+            if !UIDevice.isSimulator {
+                Section {
                     Button(String(localized: "SHUTDOWN_LABEL", table: "General")) {}
                 }
             }
