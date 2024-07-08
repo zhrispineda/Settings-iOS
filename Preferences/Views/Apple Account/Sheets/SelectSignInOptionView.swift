@@ -91,9 +91,10 @@ struct SelectSignInOptionView: View {
                     Button {
                         showingAlert.toggle()
                     } label: {
-                        Text("**Don‘t have an Apple Account?**")
+                        Text("Don‘t have an Apple Account?")
+                            .bold()
                     }
-                    .alert("Could Not Create Apple ID", isPresented: $showingAlert) {
+                    .alert("Could Not Create Apple Account", isPresented: $showingAlert) {
                         Link("Learn More", destination: URL(string: "https://support.apple.com/en-us/101661")!)
                         Button("OK") {
                             dismiss()

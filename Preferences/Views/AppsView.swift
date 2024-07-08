@@ -52,7 +52,13 @@ struct AppsView: View {
                     }
                     .id(key)
                 }
-                SettingsLink(color: .blue, icon: "square.stack.3d.up.slash.fill", id: "Hidden Apps") {}
+                SettingsLink(color: .gray, icon: "square.dashed", id: "Hidden Apps") {
+                    ContentUnavailableView(
+                        "No Hidden Apps",
+                        systemImage: "square.stack.3d.up.slash.fill",
+                        description: Text("No hidden apps found.")
+                    )
+                }
             }
             .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always))
             .scrollIndicators(.hidden)

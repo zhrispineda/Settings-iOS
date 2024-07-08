@@ -107,7 +107,7 @@ struct AppleAccountSignInView: View {
                             signingIn.toggle()
                         }
                     } message: {
-                        Text("There was an error connecting to the Apple ID server.")
+                        Text("There was an error connecting to the Apple Account server.")
                     }
                 }
             }

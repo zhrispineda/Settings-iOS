@@ -67,20 +67,20 @@ struct AppleAccountLoginView: View {
                         }
                     }
                 }
-                .alert("Forgot password or don‘t have an Apple ID?", isPresented: $showingOptionsAlert, actions: {
-                    Button("Forgot Password or Apple ID", role: .none) {
+                .alert("Forgot password or don‘t have an Apple Account?", isPresented: $showingOptionsAlert, actions: {
+                    Button("Forgot Password or Apple Account", role: .none) {
                         showingForgotPasswordSheet.toggle()
                     }
-                    Button("Create Apple ID", role: .none) {
+                    Button("Create Apple Account", role: .none) {
                         showingErrorAlert.toggle()
                     }
                     Button("Cancel", role: .cancel) {}
                 })
-                .alert("Could Not Create Apple ID", isPresented: $showingErrorAlert) {
+                .alert("Could Not Create Apple Account", isPresented: $showingErrorAlert) {
                     Link("Learn More", destination: URL(string: "https://support.apple.com/en-us/101661")!)
                     Button("OK") {}
                 } message: {
-                    Text("The iPhoneSimulator has been used to create too many new Apple IDs. Contact Apple Support to request another Apple ID to use with this iPhoneSimulator.")
+                    Text("The iPhoneSimulator has been used to create too many new Apple Accounts. Contact Apple Support to request another Apple Account to use with this iPhoneSimulator.")
                 }
                 .sheet(isPresented: $showingForgotPasswordSheet) {
                     NavigationStack {
@@ -139,7 +139,7 @@ struct AppleAccountLoginView: View {
                             signingIn.toggle()
                         }
                     } message: {
-                        Text("There was an error connecting to the Apple ID server.")
+                        Text("There was an error connecting to the Apple Account server.")
                     }
                 }
             }

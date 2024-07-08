@@ -2,7 +2,7 @@
 //  ForgotPasswordView.swift
 //  Preferences
 //
-//  Settings > Sign In > Sign in Manually > Forgot password or don‘t have an Apple ID?
+//  Settings > Sign In > Sign in Manually > Forgot password or don‘t have an Apple Account?
 //
 
 import SwiftUI
