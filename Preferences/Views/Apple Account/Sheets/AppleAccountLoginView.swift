@@ -68,25 +68,25 @@ struct AppleAccountLoginView: View {
                     }
                 }
                 .alert("Forgot password or don‘t have an Apple ID?", isPresented: $showingOptionsAlert, actions: {
-                    Button("Forgot Password or Apple ID", role: .none, action: {
+                    Button("Forgot Password or Apple ID", role: .none) {
                         showingForgotPasswordSheet.toggle()
-                    })
-                    Button("Create Apple ID", role: .none, action: {
+                    }
+                    Button("Create Apple ID", role: .none) {
                         showingErrorAlert.toggle()
-                    })
-                    Button("Cancel", role: .cancel, action: {})
+                    }
+                    Button("Cancel", role: .cancel) {}
                 })
-                .alert("Could Not Create Apple ID", isPresented: $showingErrorAlert, actions: {
+                .alert("Could Not Create Apple ID", isPresented: $showingErrorAlert) {
                     Link("Learn More", destination: URL(string: "https://support.apple.com/en-us/101661")!)
-                    Button("OK", action: {})
-                }, message: {
+                    Button("OK") {}
+                } message: {
                     Text("The iPhoneSimulator has been used to create too many new Apple IDs. Contact Apple Support to request another Apple ID to use with this iPhoneSimulator.")
-                })
-                .sheet(isPresented: $showingForgotPasswordSheet, content: {
+                }
+                .sheet(isPresented: $showingForgotPasswordSheet) {
                     NavigationStack {
                         ForgotPasswordView()
                     }
-                })
+                }
             }
             .listRowBackground(Color.clear)
             

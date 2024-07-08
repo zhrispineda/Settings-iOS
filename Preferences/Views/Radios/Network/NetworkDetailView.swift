@@ -30,7 +30,7 @@ struct NetworkDetailView: View {
 //            }
             
             Section {
-                Button("Join This Network", action: {})
+                Button("Join This Network") {}
             }
             
             Section {

@@ -62,7 +62,7 @@ struct SoftwareUpdateView: View {
                 checkUpdate(withDelay: Double.random(in: 1.0...5.0))
             }
         }
-        .refreshable(action: {})
+        .refreshable {}
     }
     
     func checkUpdate(withDelay delay: Double) {

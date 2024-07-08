@@ -103,7 +103,7 @@ struct ScreenTimeView: View {
             }
             
             Section {
-                Button("Lock Screen Time Settings", action: {}) // TODO: Fullscreen sheet
+                Button("Lock Screen Time Settings") {}
             } footer: {
                 Text("Use a passcode to secure Screen Time settings.")
             }

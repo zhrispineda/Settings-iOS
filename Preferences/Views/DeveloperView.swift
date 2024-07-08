@@ -72,7 +72,7 @@ struct DeveloperView: View {
             }
             
             Section {
-                Button("Clear Trusted Computer", action: {})
+                Button("Clear Trusted Computer") {}
             } header: {
                 Text("Paired Devices")
             } footer: {
@@ -102,7 +102,7 @@ struct DeveloperView: View {
             
             Section("Media Services Testing") {
                 //NavigationLink("AirPlay Suggestions", destination: AirPlaySuggestionsView())
-                Button("Reset Media Services", action: {})
+                Button("Reset Media Services") {}
             }
             
             Section {
@@ -124,8 +124,8 @@ struct DeveloperView: View {
             }
             
             Section("CoreSpotlight Testing") {
-                Button("Reindex All Items", action: {})
-                Button("Reindex All Items with Identifiers", action: {})
+                Button("Reindex All Items") {}
+                Button("Reindex All Items with Identifiers") {}
             }
             
             Section {
@@ -157,7 +157,7 @@ struct DeveloperView: View {
             }
             
             Section {
-                Button("Force Sync Shortcuts to Watch", action: {})
+                Button("Force Sync Shortcuts to Watch") {}
             } footer: {
                 Text("To force sync shortcuts, make sure Apple Watch is connected to its charger.")
             }

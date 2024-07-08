@@ -97,7 +97,7 @@ struct SiriView: View {
             
             Section {
                 Toggle("Suggest Apps Before Searching", isOn: $showSuggestionsEnabled)
-                Button("Reset Hidden Suggestions", action: { Device().isPhone ? showingResetHiddenSuggestionsAlert.toggle() : showingResetHiddenSuggestionsPopup.toggle() })
+                Button("Reset Hidden Suggestions") { Device().isPhone ? showingResetHiddenSuggestionsAlert.toggle() : showingResetHiddenSuggestionsPopup.toggle() }
                     .alert("Reset", isPresented: $showingResetHiddenSuggestionsPopup) {
                         Button("Reset", role: .destructive) {}
                         Button("Cancel", role: .cancel) {}

@@ -21,7 +21,7 @@ struct CellularView: View {
             Section {
                 Toggle("Cellular Data", isOn: $cellularDataEnabled)
                 CustomNavigationLink(title: "Cellular Data Options", status: "Roaming Off", destination: EmptyView())
-                Button("Set Up Personal Hotspot", action: {})
+                Button("Set Up Personal Hotspot") {}
             } footer: {
                 Text("Turn off cellular data to restrict all data to Wi-Fi, including email, web browsing, and push notifications.")
             }
@@ -33,9 +33,9 @@ struct CellularView: View {
                 CustomNavigationLink(title: "Wi-Fi Calling", status: "On", destination: EmptyView())
                 CustomNavigationLink(title: "Calls on Other Devices", status: "On", destination: EmptyView())
                 CustomNavigationLink(title: "Usage", status: "Used 0 KB - Unlimited", destination: EmptyView())
-                NavigationLink("Carrier Services", destination: {})
-                NavigationLink("SIM PIN", destination: {})
-                Button("Delete eSIM", role: .destructive, action: {})
+                NavigationLink("Carrier Services") {}
+                NavigationLink("SIM PIN") {}
+                Button("Delete eSIM", role: .destructive) {}
             } header: {
                 Text("Carrier")
             }
@@ -94,7 +94,7 @@ struct CellularView: View {
             
             Section {
                 Toggle("Cellular Usage Statistics", isOn: $cellularUsageStatisticsEnabled)
-                Button("Reset Statistics", action: {})
+                Button("Reset Statistics") {}
             } header: {
                 Text("Cellular Usage Statistics")
             } footer: {

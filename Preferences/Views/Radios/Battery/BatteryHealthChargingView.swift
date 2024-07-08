@@ -47,15 +47,15 @@ struct BatteryHealthChargingView: View {
                 Text("To reduce battery aging, \(Device().model) learns from your daily charging routines so it can wait to finish charging past 80% until you need to use it. \(temporaryOptimizePauseEnabled ? "Optimized Battery Charging is off until 6:00 AM. " : "")")
             }
             .alert("Optimized Battery Charging helps reduce battery aging.", isPresented: $showingOptimizeWarning, actions: {
-                Button("**Turn Off Until Tomorrow**", role: .none, action: {
+                Button("**Turn Off Until Tomorrow**", role: .none) {
                     temporaryOptimizePauseEnabled = true
-                })
-                Button("Turn Off", role: .none, action: {
+                }
+                Button("Turn Off", role: .none) {
                     temporaryOptimizePauseEnabled = false
-                })
-                Button("Cancel", role: .none, action: {
+                }
+                Button("Cancel", role: .none) {
                     optimizedBatteryChargingEnabled = true
-                })
+                }
             })
             
             Section {
@@ -68,15 +68,15 @@ struct BatteryHealthChargingView: View {
                 Text("In your region, \(Device().model) will try to reduce your carbon footprint by selectively charging when lower carbon emission electricity is available. \(Device().model) learns from your daily charging routine so it can reach full charge before you need to use it. \(temporaryCleanPauseEnabled ? "Clean Energy Charging is off until 6:00 AM. " : "")[Learn more...](https://support.apple.com/en-us/108068)")
             }
             .alert("Clean Energy Charging helps reduce carbon footprint.", isPresented: $showingCleanEnergyWarning, actions: {
-                Button("**Turn Off Until Tomorrow**", role: .none, action: {
+                Button("**Turn Off Until Tomorrow**", role: .none) {
                     temporaryCleanPauseEnabled = true
-                })
-                Button("Turn Off", role: .none, action: {
+                }
+                Button("Turn Off", role: .none) {
                     cleanEnergyChargingEnabled = false
-                })
-                Button("Cancel", role: .none, action: {
+                }
+                Button("Cancel", role: .none) {
                     cleanEnergyChargingEnabled = true
-                })
+                }
             })
         }
     }

@@ -53,15 +53,15 @@ struct ChargingOptimizationView: View {
             }
             .disabled(chargeLimit < 100.0)
             .alert("Optimized Battery Charging helps reduce battery aging.", isPresented: $showingOptimizeWarning, actions: {
-                Button("**Turn Off Until Tomorrow**", role: .none, action: {
+                Button("**Turn Off Until Tomorrow**", role: .none) {
                     temporaryOptimizePauseEnabled = true
-                })
-                Button("Turn Off", role: .none, action: {
+                }
+                Button("Turn Off", role: .none) {
                     temporaryOptimizePauseEnabled = false
-                })
-                Button("Cancel", role: .none, action: {
+                }
+                Button("Cancel", role: .none) {
                     optimizedBatteryChargingEnabled = true
-                })
+                }
             })
             
             Section {

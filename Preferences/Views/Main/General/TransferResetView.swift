@@ -22,7 +22,7 @@ struct TransferResetView: View {
             }
             HStack {
                 Spacer()
-                Button("Get Started", action: {})
+                Button("Get Started") {}
                 Spacer()
             }
         }

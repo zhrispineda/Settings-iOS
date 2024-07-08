@@ -218,7 +218,7 @@ struct FeatureFlagsView: View {
             }
             
             Section {
-                Button("Reset All to Defaults", action: {})
+                Button("Reset All to Defaults") {}
             }
         }
     }

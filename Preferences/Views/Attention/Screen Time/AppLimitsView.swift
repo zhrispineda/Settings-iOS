@@ -15,7 +15,7 @@ struct AppLimitsView: View {
             }
             
             Section {
-                Button("Add Limit", action: {})
+                Button("Add Limit") {}
             }
         }
     }

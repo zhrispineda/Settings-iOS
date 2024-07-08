@@ -15,7 +15,7 @@ struct ModifierKeysView: View {
             }
             
             Section {
-                Button("Restore Defaults", action: {})
+                Button("Restore Defaults") {}
             }
         }
     }

@@ -19,7 +19,7 @@ struct FontsView: View {
                     .multilineTextAlignment(.center)
                     .foregroundStyle(.secondary)
                     .font(.subheadline)
-                Button("Open App Store", action: {})
+                Button("Open App Store") {}
                     .padding(.vertical, 5)
             }
             .padding(30)
