@@ -14,22 +14,7 @@ struct SafetyCheckView: View {
     var body: some View {
         CustomList(title: "Safety Check") {
             Section {
-                VStack(spacing: 10) {
-                    Image(systemName: "person.badge.shield.checkmark.fill")
-                        .foregroundStyle(.blue)
-                        .font(.largeTitle)
-                        .symbolRenderingMode(.hierarchical)
-                    Text("Safety Check")
-                        .font(.title3)
-                        .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                    Text("If circumstances or trust levels change, Safety Check allows you to disconnect from people, apps, and devices you no longer want to be connected to.")
-                        .font(.subheadline)
-                    Text("[Learn More...](https://support.apple.com/guide/personal-safety/how-safety-check-works-ips2aad835e1/web)")
-                        .font(.subheadline)
-                        .padding(.vertical, 5)
-                }
-                .frame(maxWidth: .infinity)
-                .multilineTextAlignment(.center)
+                SectionHelp(title: "Safety Check", color: .white, iconColor: .blue, icon: "person.badge.shield.checkmark.fill", description: "Reset or manage access to your information across apps, devices, and people you‘re currently sharing with. [Learn More...](https://support.apple.com/guide/personal-safety/how-safety-check-works-ips2aad835e1/web)")
             }
             
             Section {

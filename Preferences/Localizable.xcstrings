@@ -1,6 +1,23 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "Airplane Mode" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Airplane Mode"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modo Avión"
+          }
+        }
+      }
+    },
     "PLACARD_SUBTITLE" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -17,6 +34,24 @@
                 "stringUnit" : {
                   "state" : "translated",
                   "value" : "Manage your overall setup and preferences for iPhone, such as software updates, device language, CarPlay, AirDrop, and more."
+                }
+              }
+            }
+          }
+        },
+        "es" : {
+          "variations" : {
+            "device" : {
+              "ipad" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Gestiona la configuración y las preferencias generales del iPad, como las actualizaciones de software, el idioma del dispositivo, AirDrop, etc."
+                }
+              },
+              "iphone" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Gestiona la configuración y las preferencias generales del iPhone, como las actualizaciones de software, el idioma del dispositivo, AirDrop, etc."
                 }
               }
             }

@@ -11,6 +11,7 @@ struct SectionHelp: View {
     // Variables
     var title = String()
     var color = Color.blue
+    var iconColor = Color.white
     var icon = String()
     var description = String()
     
@@ -25,7 +26,7 @@ struct SectionHelp: View {
                 if UIImage(systemName: icon) != nil {
                     Image(systemName: icon)
                         .font(.system(size: icon == "personalhotspot" ? 30 : 36))
-                        .foregroundStyle(icon == "touchid" ? .pink : .white)
+                        .foregroundStyle(icon == "touchid" ? .pink : iconColor)
                 } else if icon == "bluetooth" {
                     Image(_internalSystemName: icon)
                         .foregroundStyle(.white)

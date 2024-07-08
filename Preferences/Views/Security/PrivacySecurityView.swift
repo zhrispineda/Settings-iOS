@@ -59,7 +59,7 @@ struct PrivacySecurityView: View {
             
             Section {
                 SettingsLink(color: .blue, icon: "Accessory", id: "Accessories", status: "0") {
-                    AppPermissionsView(permissionName: "Bluetooth")
+                    AppPermissionsView(permissionName: "Accessories")
                 }
                 SettingsLink(color: .blue, icon: "bluetooth", id: "Bluetooth", status: "0") {
                     AppPermissionsView(permissionName: "Bluetooth")
@@ -74,14 +74,14 @@ struct PrivacySecurityView: View {
                     AppPermissionsView(permissionName: "Microphone")
                 }
                 SettingsLink(color: .green, icon: "figure.run.motion", id: "Motion & Fitness", status: "0") {
-                    AppPermissionsView(permissionName: "Microphone")
+                    AppPermissionsView(permissionName: "Motion & Fitness")
                 }
                 SettingsLink(color: .blue, icon: "nearby.interactions", id: "Nearby Interactions", status: "0") {
                     AppPermissionsView(permissionName: "Nearby Interactions")
                 }
                 if Device().isPhone {
                     SettingsLink(color: .blue, icon: "sensorkit", id: "Research Sensor & Usage Data", status: "0") {
-                        AppPermissionsView(permissionName: "Research & Usage Data")
+                        AppPermissionsView(permissionName: "Research Sensor & Usage Data")
                     }
                     SettingsLink(color: .gray, icon: "waveform", id: "Speech Recognition", status: "0") {
                         AppPermissionsView(permissionName: "Speech Recognition")
