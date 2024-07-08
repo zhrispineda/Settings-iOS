@@ -31,24 +31,23 @@ struct RestrictionsLocationServicesView: View {
             
             Section {
                 Toggle("Location Services", isOn: $locationServicesEnabled.animation())
-                    .alert("Location Services", isPresented: $showingDisableLocationServicesAlert,
-                           actions: {
+                    .alert("Location Services", isPresented: $showingDisableLocationServicesAlert) {
                         Button("Turn Off Dictation", role: .none) {}
                         Button("Cancel", role: .cancel) { locationServicesEnabled.toggle() }
-                    }, message: {
+                    } message: {
                         Text("Location Services will be disabled for all apps, but your personalized Location Services settings for apps will be temporarily restored if you use Find My iPad to enable Lost Mode.")
-                    })
+                    }
                     .confirmationDialog("Location Services will be disabled for all apps, but your personalized Location Services settings for apps will be temporarily restored if you use Find My iPhone to enable Lost Mode.", isPresented: $showingDisableLocationServicesDialog,
                                         titleVisibility: .visible,
                                         actions: {
                         Button("Turn Off", role: .destructive) {}
                         Button("Cancel", role: .cancel) { locationServicesEnabled.toggle() }
                     })
-                    .onChange(of: locationServicesEnabled, {
+                    .onChange(of: locationServicesEnabled) {
                         if !locationServicesEnabled {
                             Device().isPhone ? showingDisableLocationServicesDialog.toggle() : showingDisableLocationServicesAlert.toggle()
                         }
-                    })
+                    }
                 NavigationLink("Location Alerts", destination: LocationAlertsView())
             } footer: {
                 Text("\(Device().isTablet ? "Using Location Services requires turning on Wi-Fi.\n\n" : "")Location Services uses \(Device().isTablet ? "Bluetooth and crowd-sourced Wi-Fi hotspot locations" : "GPS, Bluetooth, and crowd-sourced Wi-Fi hotspot and cell tower locations") to determine your approximate location. [About Location Services and Privacy...](#)")

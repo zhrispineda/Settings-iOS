@@ -184,6 +184,7 @@
 		83F3F6A52B7D16F6003CC310 /* GameControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3F6A42B7D16F6003CC310 /* GameControllerView.swift */; };
 		83F3F6A72B7D2BAA003CC310 /* FontsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3F6A62B7D2BAA003CC310 /* FontsView.swift */; };
 		83F3F6A92B7D2EFE003CC310 /* LanguageRegionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3F6A82B7D2EFE003CC310 /* LanguageRegionView.swift */; };
+		83F455B32C3C8CA5009DB157 /* LocationServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F455B22C3C8CA5009DB157 /* LocationServicesView.swift */; };
 		83F516B82C21B7FA0004E87A /* SettingsPhysical.gif in Resources */ = {isa = PBXBuildFile; fileRef = 83F516B72C21B7FA0004E87A /* SettingsPhysical.gif */; };
 		83F516BA2C21D88B0004E87A /* StandByView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F516B92C21D88B0004E87A /* StandByView.swift */; };
 		83F516BC2C21E8F50004E87A /* WallpaperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F516BB2C21E8F50004E87A /* WallpaperView.swift */; };
@@ -393,6 +394,7 @@
 		83F3F6A42B7D16F6003CC310 /* GameControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControllerView.swift; sourceTree = "<group>"; };
 		83F3F6A62B7D2BAA003CC310 /* FontsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsView.swift; sourceTree = "<group>"; };
 		83F3F6A82B7D2EFE003CC310 /* LanguageRegionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageRegionView.swift; sourceTree = "<group>"; };
+		83F455B22C3C8CA5009DB157 /* LocationServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServicesView.swift; sourceTree = "<group>"; };
 		83F516B72C21B7FA0004E87A /* SettingsPhysical.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SettingsPhysical.gif; sourceTree = "<group>"; };
 		83F516B92C21D88B0004E87A /* StandByView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandByView.swift; sourceTree = "<group>"; };
 		83F516BB2C21E8F50004E87A /* WallpaperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperView.swift; sourceTree = "<group>"; };
@@ -457,6 +459,7 @@
 				8319CE4C2B86D380007EC822 /* SafetyCheckView.swift */,
 				8319CE4E2B86DB44007EC822 /* SensitiveContentWarningView.swift */,
 				8319CE502B86DF8A007EC822 /* AppleAdvertisingView.swift */,
+				83F455B22C3C8CA5009DB157 /* LocationServicesView.swift */,
 			);
 			path = "Privacy & Security";
 			sourceTree = "<group>";
@@ -1249,6 +1252,7 @@
 				832EF38A2B8071C00066A1BF /* RestrictionsLocationServicesView.swift in Sources */,
 				838C23292B748F3B0053D4C5 /* ScreenTimeView.swift in Sources */,
 				83B893B92B8FCE5F005705A3 /* HoverTextFontView.swift in Sources */,
+				83F455B32C3C8CA5009DB157 /* LocationServicesView.swift in Sources */,
 				83FCEFEA2C07F0DE008BE814 /* NetworkDetailView.swift in Sources */,
 				83D31F732B8D458E0057CFDB /* SpeakSelectionView.swift in Sources */,
 				83815CF72B768F4800F53A0F /* GameCenterView.swift in Sources */,
