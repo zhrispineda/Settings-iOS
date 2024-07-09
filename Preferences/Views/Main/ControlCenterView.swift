@@ -13,9 +13,25 @@ struct ControlCenterView: View {
     
     var body: some View {
         CustomList(title: String(localized: "CONTROLCENTER", table: "ControlCenterSettings")) {
-            Section {} footer: {
-                Text(Device().hasHomeButton ? "SWIPE_BOTTOM_INSTRUCTIONS" : "SWIPE_TOPRIGHT_EDGE_INSTRUCTIONS", tableName: "ControlCenterSettings")
+            Section {
+                HStack {
+                    VStack(alignment: .leading) {
+                        Text("CONTROL_CENTER_TIP_HEADER", tableName: "ControlCenterSettings")
+                            .bold()
+                            .font(.footnote)
+                        Text(Device().hasHomeButton ? "Swipe up from the bottom of the screen to view Control Center. Add, rearrange, and resize any control." : "Swipe down from the top-right edge to open Control Center. Add, rearrange, and resize any control.", tableName: "ControlCenterSettings")
+                            .foregroundStyle(.secondary)
+                            .font(.footnote)
+                        Spacer()
+                    }
+                    .padding(.leading, -5)
+                    .padding(.top, 5)
+                    Spacer()
+                        .frame(width: 60)
+                }
+                .frame(minHeight: 100)
             }
+            .listRowBackground(Color(UIColor.systemGray4))
             
             Section {
                 Toggle(String(localized: "ALLOWED_WITHIN_APPS", table: "ControlCenterSettings"), isOn: $allowControlCenterInApps)

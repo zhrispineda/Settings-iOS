@@ -9,6 +9,12 @@
             "state" : "translated",
             "value" : "Access Within Apps"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acceso desde apps"
+          }
         }
       }
     },
@@ -19,6 +25,63 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Allow access to Control Center within apps. When disabled, you can still access Control Center from the Home Screen."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se permite el acceso al centro de control desde las apps. Si está desactivado, se puede acceder desde la pantalla de inicio."
+          }
+        }
+      }
+    },
+    "CONTROL_CENTER_TIP_HEADER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Customize Control Center"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Customize Control Center"
+          }
+        }
+      }
+    },
+    "CONTROL_CENTER_TIP_INSTRUCTIONS_BOTTOM" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Swipe up from the bottom of the screen to view Control Center. Add, rearrange, and resize any control."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Swipe up from the bottom of the screen to view Control Center. Add, rearrange, and resize any control."
+          }
+        }
+      }
+    },
+    "CONTROL_CENTER_TIP_INSTRUCTIONS_TOP_RIGHT" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Swipe down from the top-right edge to open Control Center. Add, rearrange, and resize any control."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Swipe down from the top-right edge to open Control Center. Add, rearrange, and resize any control."
           }
         }
       }
@@ -31,27 +94,11 @@
             "state" : "translated",
             "value" : "Control Center"
           }
-        }
-      }
-    },
-    "SWIPE_BOTTOM_INSTRUCTIONS" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
+        },
+        "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Swipe up from the bottom of the screen to view Control Center."
-          }
-        }
-      }
-    },
-    "SWIPE_TOPRIGHT_EDGE_INSTRUCTIONS" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Swipe down from the top-right edge to open Control Center."
+            "value" : "Centro de control"
           }
         }
       }

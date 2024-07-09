@@ -40,7 +40,7 @@ public extension UIDevice {
             return identifier + String(UnicodeScalar(UInt8(value)))
         }
         
-        return ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] == "N/A" ? identifier : ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] ?? "N/A"
+        return ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] == nil ? identifier : ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] ?? "N/A"
     }()
     
     static let fullModel: String = {
@@ -106,6 +106,7 @@ public extension UIDevice {
     }()
     
     static let ringerButtonCapability: Bool = { // Action Button
+        var identifier = UIDevice.fullModel
         return identifier.contains("15 Pro")
     }()
     

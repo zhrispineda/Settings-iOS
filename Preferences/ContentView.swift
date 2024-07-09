@@ -266,7 +266,7 @@ struct SettingsLinkSection: View {
     case .none:
         return true
     case .actionButton:
-        return Device().hasActionButton
+        return UIDevice.ringerButtonCapability
     case .cellular:
         return UIDevice.isCellularCapable
     case .vpn:
