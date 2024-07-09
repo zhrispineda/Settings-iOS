@@ -15,39 +15,39 @@ struct StandByView: View {
     @State private var showPreviewsTapOnlyEnabled = false
     
     var body: some View {
-        CustomList(title: "StandBy") {
+        CustomList(title: String(localized: "AMBIENT_FEATURE_NAME", table: "AmbientSettings")) {
             Section {
-                Toggle("StandBy", isOn: $standByEnabled.animation())
+                Toggle(String(localized: "AMBIENT_FEATURE_NAME", table: "AmbientSettings"), isOn: $standByEnabled.animation())
             } footer: {
-                Text("StandBy will turn on when iPhone is placed on its side, while charging to show information like widgets, photo frames, or clocks.")
+                Text(String.localizedStringWithFormat(NSLocalizedString("AMBIENT_MODE_ENABLED_FOOTER", tableName: "AmbientSettings", comment: ""), String(localized: "AMBIENT_FEATURE_NAME", table: "AmbientSettings")))
             }
             
             if standByEnabled {
                 if Device().hasAlwaysOnDisplay {
-                    NavigationLink("Display", destination: DisplayView())
+                    NavigationLink(String(localized: "ALWAYS_ON_DISPLAY_OPTIONS", table: "AmbientSettings"), destination: DisplayView())
                 } else {
                     Section {
-                        Toggle("Night Mode", isOn: $nightModeEnabled)
+                        Toggle(String(localized: "NIGHT_MODE_ENABLED", table: "AmbientSettings"), isOn: $nightModeEnabled)
                     } header: {
-                        Text("Display")
+                        Text("DISPLAY_SETTINGS_GROUP_HEADER", tableName: "AmbientSettings")
                     } footer: {
-                        Text("StandBy displays with a red tint in low ambient lighting.")
+                        Text(String.localizedStringWithFormat(NSLocalizedString("NIGHT_MODE_ENABLED_FOOTER", tableName: "AmbientSettings", comment: ""), String(localized: "AMBIENT_FEATURE_NAME", table: "AmbientSettings")))
                     }
                 }
                 
                 Section {
-                    Toggle("Show Notifications", isOn: $showNotificationsEnabled.animation())
+                    Toggle(String(localized: "NOTIFICATIONS_ENABLED", table: "AmbientSettings"), isOn: $showNotificationsEnabled.animation())
                 } header: {
-                    Text("Notifications")
+                    Text("NOTIFICATIONS_GROUP_HEADER", tableName: "AmbientSettings")
                 } footer: {
-                    Text("Critical notifications will still be shown in StandBy if this switch is off.")
+                    Text(String.localizedStringWithFormat(NSLocalizedString("NOTIFICATIONS_ENABLED_FOOTER", tableName: "AmbientSettings", comment: ""), String(localized: "AMBIENT_FEATURE_NAME", table: "AmbientSettings")))
                 }
                 
                 if showNotificationsEnabled {
                     Section {
-                        Toggle("Show Preview on Tap Only", isOn: $showPreviewsTapOnlyEnabled)
+                        Toggle(String(localized: "NOTIFICATIONS_PREVIEW", table: "AmbientSettings"), isOn: $showPreviewsTapOnlyEnabled)
                     } footer: {
-                        Text("StandBy can hide the preview of a notification until you tap on it.")
+                        Text(String.localizedStringWithFormat(NSLocalizedString("NOTIFICATIONS_PREVIEW_FOOTER", tableName: "AmbientSettings", comment: ""), String(localized: "AMBIENT_FEATURE_NAME", table: "AmbientSettings")))
                     }
                 }
             }

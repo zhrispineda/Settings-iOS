@@ -1,0 +1,127 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "ALWAYS_ON_DISPLAY_OPTIONS" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Display"
+          }
+        }
+      }
+    },
+    "AMBIENT_FEATURE_NAME" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StandBy"
+          }
+        }
+      }
+    },
+    "AMBIENT_MODE_ENABLED_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ will turn on when iPhone is placed on its side while charging to show information like widgets, photo frames, or clocks."
+          }
+        }
+      }
+    },
+    "DISPLAY_SETTINGS_GROUP_HEADER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Display"
+          }
+        }
+      }
+    },
+    "NIGHT_MODE_ENABLED" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Night Mode"
+          }
+        }
+      }
+    },
+    "NIGHT_MODE_ENABLED_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ displays with a red tint in low ambient lighting."
+          }
+        }
+      }
+    },
+    "NOTIFICATIONS_ENABLED" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Show Notifications"
+          }
+        }
+      }
+    },
+    "NOTIFICATIONS_ENABLED_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Critical notifications will still be shown in %@ if this switch is off."
+          }
+        }
+      }
+    },
+    "NOTIFICATIONS_GROUP_HEADER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notifications"
+          }
+        }
+      }
+    },
+    "NOTIFICATIONS_PREVIEW" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Show Preview on Tap Only"
+          }
+        }
+      }
+    },
+    "NOTIFICATIONS_PREVIEW_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ can hide the preview of a notification until you tap on it."
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
