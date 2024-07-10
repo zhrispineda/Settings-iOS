@@ -22,7 +22,9 @@ struct GeneralView: View {
                     SettingsLink(color: .gray, icon: "gear.badge", id: String(localized: "SOFTWARE_UPDATE", table: "General")) {
                         SoftwareUpdateView()
                     }
-                    SettingsLink(color: .gray, icon: "externaldrive.fill", id: String(localized: "DEVICE_STORAGE", table: "General")) {}
+                    SettingsLink(color: .gray, icon: "externaldrive.fill", id: String(localized: "DEVICE_STORAGE", table: "General")) {
+                        StorageView()
+                    }
                 }
             }
             

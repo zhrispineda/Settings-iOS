@@ -180,6 +180,7 @@
 		83DF95742B841F0900AEEB63 /* DownloadedLanguagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DF95732B841F0900AEEB63 /* DownloadedLanguagesView.swift */; };
 		83DF95762B84266E00AEEB63 /* SiriDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DF95752B84266E00AEEB63 /* SiriDetailView.swift */; };
 		83DF95792B84391F00AEEB63 /* SiriAppClipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DF95782B84391E00AEEB63 /* SiriAppClipsView.swift */; };
+		83DFAB342C3F516F006C9C29 /* StorageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DFAB332C3F516F006C9C29 /* StorageView.swift */; };
 		83F3F6A12B7D12B6003CC310 /* DictionaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3F6A02B7D12B6003CC310 /* DictionaryView.swift */; };
 		83F3F6A32B7D1454003CC310 /* VPNDeviceManagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3F6A22B7D1454003CC310 /* VPNDeviceManagementView.swift */; };
 		83F3F6A52B7D16F6003CC310 /* GameControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3F6A42B7D16F6003CC310 /* GameControllerView.swift */; };
@@ -391,6 +392,7 @@
 		83DF95732B841F0900AEEB63 /* DownloadedLanguagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadedLanguagesView.swift; sourceTree = "<group>"; };
 		83DF95752B84266E00AEEB63 /* SiriDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriDetailView.swift; sourceTree = "<group>"; };
 		83DF95782B84391E00AEEB63 /* SiriAppClipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriAppClipsView.swift; sourceTree = "<group>"; };
+		83DFAB332C3F516F006C9C29 /* StorageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageView.swift; sourceTree = "<group>"; };
 		83F3F6A02B7D12B6003CC310 /* DictionaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryView.swift; sourceTree = "<group>"; };
 		83F3F6A22B7D1454003CC310 /* VPNDeviceManagementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNDeviceManagementView.swift; sourceTree = "<group>"; };
 		83F3F6A42B7D16F6003CC310 /* GameControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControllerView.swift; sourceTree = "<group>"; };
@@ -840,6 +842,7 @@
 				832EF3962B818EE80066A1BF /* Language & Region */,
 				838C232D2B7497530053D4C5 /* AboutView.swift */,
 				833854F62C1648CD00339C4F /* SoftwareUpdateView.swift */,
+				83DFAB332C3F516F006C9C29 /* StorageView.swift */,
 				83C94CA42C1E0192005EBBC5 /* AppleCareWarrantyView.swift */,
 				8319CE4A2B86D22E007EC822 /* AutoFillPasswordsView.swift */,
 				83F3F6A02B7D12B6003CC310 /* DictionaryView.swift */,
@@ -1385,6 +1388,7 @@
 				83B1CFB72C1D56C900C2263C /* BiometricPasscodeView.swift in Sources */,
 				83D4CB762B7FF0B000D6087D /* WebContentView.swift in Sources */,
 				83815CFB2B76908700F53A0F /* ActionButtonView.swift in Sources */,
+				83DFAB342C3F516F006C9C29 /* StorageView.swift in Sources */,
 				8319CE4D2B86D380007EC822 /* SafetyCheckView.swift in Sources */,
 				837C03092B7F1AE0004D6C71 /* SelectOptionList.swift in Sources */,
 				83F78A212B8E935300025062 /* SlowKeysView.swift in Sources */,
