@@ -34,7 +34,7 @@ struct SiriView: View {
             Section {
                 CustomNavigationLink(title: "Language", status: "English (United States)", destination: SiriLanguageView())
                 if !siriEnabled {
-                    CustomNavigationLink(title: "Siri Voice", status: "American (Voice 4)", destination: SiriVoiceView())
+                    CustomNavigationLink(title: "Voice", status: "American (Voice 4)", destination: SiriVoiceView())
                 }
                 CustomNavigationLink(title: "Listen for", status: "Off", destination: EmptyView())
 //                Toggle("Press \(Device().isPhone ? "\(Device().hasHomeButton ? "Home" : "Side") Button" : "Top Button") for Siri", isOn: $siriEnabled)
@@ -92,7 +92,7 @@ struct SiriView: View {
             } header: {
                 Text("Siri Requests")
             } footer: {
-                Text(siriEnabled ? "Voice input is processed on \(Device().model), but transcripts of your requests are sent to Apple." : "Siri can help you get things done just by asking [About Ask Siri & Privacy...](#)")
+                Text(siriEnabled ? "Voice input is processed on \(Device().model), but transcripts of your requests are sent to Apple. [About Siri & Privacy...](#)" : "Siri can help you get things done just by asking. [About Siri & Privacy...](#)")
             }
             
             Section {
@@ -115,7 +115,7 @@ struct SiriView: View {
             } header: {
                 Text("Suggestions")
             } footer: {
-                Text("Apple can make suggestions in Search, on Home Screen, and Lock Screen, when sharing, or when you may want to listen to media. [About Siri Suggestions, Search & Privacy...](#)")
+                Text("Apple can make suggestions in Search, on Home Screen and Lock Screen, when sharing, or when you may want to listen to media.")
             }
             
             Section {
@@ -134,6 +134,8 @@ struct SiriView: View {
                         }
                     }
                 }
+            } header: {
+                Text("Siri App Access")
             }
         }
     }

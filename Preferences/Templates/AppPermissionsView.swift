@@ -5,9 +5,12 @@
 
 import SwiftUI
 
-/// A ``View`` template for displaying options regarding Privacy & Security based on the given ``permissionName``.
+/// A ``CustomList`` template for displaying options regarding Privacy & Security based on the given ``permissionName``.
 /// ```swift
 /// AppPermissionsView(permissionName: "Contacts")
+/// ```
+/// ```swift
+/// AppPermissionsView(permissionName: "Camera", appClipPermission: "Camera")
 /// ```
 /// - Parameter permissionName: The ``String`` to display as the permission for the ``View``.
 /// - Parameter appClipsPermission: The  optional ``String`` to use when relating to App Clips.
@@ -210,6 +213,12 @@ struct AppPermissionsView: View {
     }
 }
 
+#Preview("Camera") {
+    NavigationStack {
+        AppPermissionsView(permissionName: "App Clips")
+    }
+}
+
 #Preview("Calendars") {
     NavigationStack {
         AppPermissionsView(permissionName: "Calendars")
@@ -219,12 +228,6 @@ struct AppPermissionsView: View {
 #Preview("Photos") {
     NavigationStack {
         AppPermissionsView(permissionName: "Photos")
-    }
-}
-
-#Preview("Camera") {
-    NavigationStack {
-        AppPermissionsView(permissionName: "Camera")
     }
 }
 

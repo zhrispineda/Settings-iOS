@@ -48,7 +48,7 @@ struct SectionHelp: View {
             .accessibilityHidden(true)
             
             Text(title)
-                .bold()
+                .fontWeight(.bold)
                 .font(.title3)
             Text(.init(description))
                 .font(.footnote)
@@ -66,7 +66,7 @@ struct SectionHelp: View {
     NavigationStack {
         List {
             Section {
-                SectionHelp(title: "Title", color: Color.blue, icon: "gear", description: "PLACARD_SUBTITLE")
+                SectionHelp(title: "General", color: Color.gray, icon: "gear", description: "PLACARD_SUBTITLE")
             }
         }
     }
