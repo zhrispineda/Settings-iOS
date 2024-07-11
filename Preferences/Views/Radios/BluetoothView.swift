@@ -12,13 +12,13 @@ struct BluetoothView: View {
     @AppStorage("bluetooth") private var bluetoothEnabled = true
     
     var body: some View {
-        CustomList(title: String(localized: "BLUETOOTH", table: "BluetoothSettings")) {
+        CustomList(title: "BLUETOOTH".localize(table: "BluetoothSettings")) {
             Section {
-                SectionHelp(title: String(localized: "BLUETOOTH", table: "BluetoothSettings"), color: Color.blue, icon: "bluetooth", description: "\(String(localized: "BLUETOOTHPLACARDINFO", table: "BluetoothSettings")) [\(String(localized: "LEARN_MORE", table: "BluetoothSettings"))](https://support.apple.com/guide/\(Device().isPhone ?  "iphone/bluetooth-accessories-iph3c50f191/ios" : "ipad/bluetooth-accessories-ipad997da4cf/ipados"))")
-                Toggle(String(localized: "BLUETOOTH", table: "BluetoothSettings"), isOn: $bluetoothEnabled.animation())
+                SectionHelp(title: "BLUETOOTH".localize(table: "BluetoothSettings"), color: Color.blue, icon: "bluetooth", description: "\("BLUETOOTHPLACARDINFO".localize(table: "BluetoothSettings")) [\("LEARN_MORE".localize(table: "BluetoothSettings"))](https://support.apple.com/guide/\(Device().isPhone ?  "iphone/bluetooth-accessories-iph3c50f191/ios" : "ipad/bluetooth-accessories-ipad997da4cf/ipados"))")
+                Toggle("BLUETOOTH".localize(table: "BluetoothSettings"), isOn: $bluetoothEnabled.animation())
             } footer: {
                 if bluetoothEnabled {
-                    Text(String.localizedStringWithFormat(NSLocalizedString("DISCOVERABLE", tableName: "BluetoothSettings", comment: ""), UIDevice().model))
+                    Text("DISCOVERABLE".localize(table: "BluetoothSettings", Device().model))
                 } else {
                     Text("POWER_OFF_WARNING", tableName: "BluetoothSettings")
                 }
@@ -35,7 +35,7 @@ struct BluetoothView: View {
                     }
                 } footer: {
                     if Device().isPhone {
-                        Text(String.localizedStringWithFormat(NSLocalizedString("APPLE_WATCH_FOOTER_TEXT", tableName: "BluetoothSettings", comment: ""), "Apple Watch app"))
+                        Text(.init("APPLE_WATCH_FOOTER_TEXT".localize(table: "BluetoothSettings", "[\("APPLE_WATCH_APP_LINK".localize(table: "BluetoothSettings"))](itms-watchs://)")))
                     }
                 }
             }

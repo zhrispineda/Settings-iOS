@@ -43,7 +43,7 @@ struct DisplayBrightnessView: View {
                                     .font(.footnote)
                                     .fontWeight(.semibold)
                                     .foregroundStyle(.white)
-                                    .padding(.bottom, 55)
+                                    .padding(.bottom, 70)
                             }
                             Text("Light")
                                 .font(.subheadline)
@@ -69,7 +69,7 @@ struct DisplayBrightnessView: View {
                                     .font(.footnote)
                                     .fontWeight(.semibold)
                                     .foregroundStyle(.white)
-                                    .padding(.bottom, 55)
+                                    .padding(.bottom, 70)
                             }
                             Text("Dark")
                                 .font(.subheadline)

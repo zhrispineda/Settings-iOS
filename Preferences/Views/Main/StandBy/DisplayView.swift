@@ -16,7 +16,7 @@ struct DisplayView: View {
     @State private var motionWakeEnabled = true
     
     var body: some View {
-        CustomList(title: "Display") {
+        CustomList(title: "Display", topPadding: true) {
             Section {
                 Picker("", selection: $selected) {
                     ForEach(options, id: \.self) {

@@ -47,7 +47,7 @@ struct StorageView: View {
                     }
                     .chartPlotStyle { plotArea in
                         ZStack {
-                            Color(UIColor.systemGray6)
+                            Color(UIColor.systemGroupedBackground)
                             Text("190.30 GB")
                                 .font(.subheadline)
                                 .foregroundStyle(Color["Label"])
