@@ -10,6 +10,7 @@ import SwiftUI
 struct BluetoothView: View {
     // Variables
     @AppStorage("bluetooth") private var bluetoothEnabled = true
+    @AppStorage("DeviceName") private var deviceName = Device().model
     
     var body: some View {
         CustomList(title: "BLUETOOTH".localize(table: "BluetoothSettings")) {
@@ -18,7 +19,7 @@ struct BluetoothView: View {
                 Toggle("BLUETOOTH".localize(table: "BluetoothSettings"), isOn: $bluetoothEnabled.animation())
             } footer: {
                 if bluetoothEnabled {
-                    Text("DISCOVERABLE".localize(table: "BluetoothSettings", Device().model))
+                    Text("DISCOVERABLE".localize(table: "BluetoothSettings", deviceName))
                 } else {
                     Text("POWER_OFF_WARNING", tableName: "BluetoothSettings")
                 }

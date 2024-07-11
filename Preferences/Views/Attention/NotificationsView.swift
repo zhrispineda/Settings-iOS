@@ -14,7 +14,7 @@ struct NotificationsView: View {
     @State private var testAlertsEnabled = false
     
     var body: some View {
-        CustomList(title: "Notifications") {
+        CustomList(title: "Notifications", topPadding: true) {
             Section {
                 EmptyView()
             } header: {
@@ -36,7 +36,9 @@ struct NotificationsView: View {
                 Text("Siri")
             }
             
-            Section {} header: {
+            Section {
+                SettingsLink(icon: "applePhotos", id: "Photos", subtitle: "Banners, Sounds, Badges") {}
+            } header: {
                 Text("Notification Style")
             }
             

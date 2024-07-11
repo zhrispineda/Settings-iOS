@@ -166,14 +166,10 @@ struct ContentView: View {
                         }
                         .onAppear {
                             Task {
-                                try? await Task.sleep(nanoseconds: 500_000_000)
-                                withAnimation {
-                                    showingCellular = true
-                                }
-                                try? await Task.sleep(nanoseconds: 500_000_000)
-                                withAnimation {
-                                    showingVpn = true
-                                }
+                                try await Task.sleep(nanoseconds: 500_000_000)
+                                withAnimation { showingCellular = true }
+                                try await Task.sleep(nanoseconds: 500_000_000)
+                                withAnimation { showingVpn = true }
                             }
                         }
                         .navigationTitle("Settings")

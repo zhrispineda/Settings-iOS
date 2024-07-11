@@ -1,0 +1,193 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "ALARM_SOUND" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Call Quietly"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Llamar discretamente"
+          }
+        }
+      }
+    },
+    "ALARM_SOUND_RELEASE_TO_CALL_FIVE_PRESSES_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Warning alarms, flashes and VoiceOver audio will be silenced when using “Hold and Release” or “5 Button Presses” to make an emergency call."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Los sonidos de alarma, los avisos LED intermitentes y el audio de VoiceOver se silenciarán al usar las opciones “Llamar manteniendo pulsado y soltando” o “Llamar pulsando 5 veces el botón” para hacer una llamada de emergencia."
+          }
+        }
+      }
+    },
+    "CALL_WITH_FIVE_PRESSES" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Call with 5 Button Presses"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Llamar pulsando 5 veces el botón"
+          }
+        }
+      }
+    },
+    "CALL_WITH_FIVE_PRESSES_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "If you rapidly press the side button five times a countdown begins and an alarm sounds. When the countdown ends, iPhone will call emergency services."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si pulsas el botón lateral rápidamente cinco veces seguidas, se iniciará una cuenta atrás y sonará una alarma. Cuando acabe la cuenta atrás, el iPhone llamará a los servicios de emergencia."
+          }
+        }
+      }
+    },
+    "CALL_WITH_HOLD_AND_RELEASE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Call with Hold and Release"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Llamar manteniendo pulsado"
+          }
+        }
+      }
+    },
+    "CALL_WITH_HOLD_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "If you continuously hold the side button and either volume button, a countdown begins and an alarm sounds. After the countdown, iPhone will call emergency services."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si mantienes pulsados el botón lateral y uno de los botones de volumen, se iniciará una cuenta atrás y sonará una alarma. Cuando acabe la cuenta atrás, el iPhone llamará a los servicios de emergencia."
+          }
+        }
+      }
+    },
+    "EMERGENCY_SOS" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Emergency SOS"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Emergencia SOS"
+          }
+        }
+      }
+    },
+    "OPEN_HEALTH_NO_EMERGENCY_CONTACTS" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Set up Emergency Contacts in Health"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Definir contactos de emergencia"
+          }
+        }
+      }
+    },
+    "PHONE_TRIGGER_ANIMATION_VOLUME_LOCK_HOLD_FOOTER_REQUIRE_SIM" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Press and hold the side button and either volume button to make an emergency call. In certain regions, you may need to specify an emergency service to dial. Auto Call requires a SIM card."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Mantén pulsado el botón lateral y uno de los botones de volumen para hacer una llamada de emergencia. En algunas regiones, puede que tengas que indicar el número del servicio de emergencias al que llamar. La llamada automática requiere una tarjeta SIM."
+          }
+        }
+      }
+    },
+    "SOS_PRIVACY_LINK" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "About Emergency SOS & Privacy"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acerca de “Emergencia SOS” y la privacidad"
+          }
+        }
+      }
+    },
+    "SOS_PRIVACY_NO_EMERGENCY_CONTACTS" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Emergency SOS will notify emergency contacts with messages that say you have called the emergency services. These messages also include your current location. You can set up emergency contacts for Emergency SOS in your Medical ID in the Health app.\n%@"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "“Emergencia SOS” enviará mensajes a tus contactos de emergencia para avisarles de que has llamado a los servicios de emergencia. Los mensajes también incluirán tu ubicación actual. Puedes configurar los contactos de emergencia de la función “Emergencia SOS” desde la sección “Datos médicos” de la app Salud.\n%@"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

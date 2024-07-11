@@ -2,8 +2,6 @@
 //  SettingsModel.swift
 //  Preferences
 //
-//  Settings
-//
 
 import SwiftUI
 

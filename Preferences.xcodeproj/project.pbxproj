@@ -48,6 +48,7 @@
 		833F0AD72B744D190036EAD2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 833F0AD62B744D190036EAD2 /* Preview Assets.xcassets */; };
 		833F190B2B8BE05A00067C37 /* DisplayTextSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833F190A2B8BE05A00067C37 /* DisplayTextSizeView.swift */; };
 		833F5B7D2C40391900C0A8C7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833F5B7C2C40391900C0A8C7 /* Extensions.swift */; };
+		833F5B7F2C4050AA00C0A8C7 /* SOS.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 833F5B7E2C4050AA00C0A8C7 /* SOS.xcstrings */; };
 		83470D162C35A1BC00CE8613 /* AppleAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83470D152C35A1BC00CE8613 /* AppleAccountView.swift */; };
 		835683922B753FDD000FB136 /* SettingsLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835683912B753FDD000FB136 /* SettingsLink.swift */; };
 		835683942B754623000FB136 /* SettingsLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835683932B754623000FB136 /* SettingsLabel.swift */; };
@@ -259,6 +260,7 @@
 		833F0AD62B744D190036EAD2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		833F190A2B8BE05A00067C37 /* DisplayTextSizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayTextSizeView.swift; sourceTree = "<group>"; };
 		833F5B7C2C40391900C0A8C7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		833F5B7E2C4050AA00C0A8C7 /* SOS.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = SOS.xcstrings; sourceTree = "<group>"; };
 		83470D152C35A1BC00CE8613 /* AppleAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAccountView.swift; sourceTree = "<group>"; };
 		835683912B753FDD000FB136 /* SettingsLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLink.swift; sourceTree = "<group>"; };
 		835683932B754623000FB136 /* SettingsLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLabel.swift; sourceTree = "<group>"; };
@@ -598,6 +600,7 @@
 				838C0D972C38A7FA00438E2D /* General.xcstrings */,
 				838C0D992C38A9A000438E2D /* Localizable.xcstrings */,
 				8319E8172C3DFB1E002EC116 /* AmbientSettings.xcstrings */,
+				833F5B7E2C4050AA00C0A8C7 /* SOS.xcstrings */,
 			);
 			path = Preferences;
 			sourceTree = "<group>";
@@ -1213,6 +1216,7 @@
 			files = (
 				83F516B82C21B7FA0004E87A /* SettingsPhysical.gif in Resources */,
 				83B893C02B8FDBE8005705A3 /* iPhone15_Pro_NaturalTitanium.usdz in Resources */,
+				833F5B7F2C4050AA00C0A8C7 /* SOS.xcstrings in Resources */,
 				838C0D9A2C38A9A000438E2D /* Localizable.xcstrings in Resources */,
 				8319E8182C3DFB1E002EC116 /* AmbientSettings.xcstrings in Resources */,
 				838C0D982C38A7FA00438E2D /* General.xcstrings in Resources */,
