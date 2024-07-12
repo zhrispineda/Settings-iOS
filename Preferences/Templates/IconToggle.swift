@@ -53,7 +53,7 @@ struct IconToggle: View {
                 }
                 
                 VStack(alignment: .leading, spacing: 0) {
-                    Text(title)
+                    Text(LocalizedStringKey(title))
                     if !subtitle.isEmpty {
                         Text(subtitle)
                             .font(.footnote)

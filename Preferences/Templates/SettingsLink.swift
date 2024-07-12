@@ -47,7 +47,7 @@ struct SettingsLink<Content: View>: View {
                         Image(systemName: icon)
                             .resizable()
                             .scaledToFit()
-                            .frame(width: smallerIcons.contains(icon) ? 13 : 20)
+                            .frame(width: smallerIcons.contains(icon) ? (icon == "appletvremote.gen4.fill" ? 8 : 13) : 20)
                             .symbolRenderingMode(hierarchyIcons.contains(icon) ? .hierarchical : .none)
                             .foregroundStyle(iconColor)
                     } else if icon.contains("custom") {

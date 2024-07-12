@@ -19,7 +19,7 @@ struct ControlCenterView: View {
                         Text("CONTROL_CENTER_TIP_HEADER", tableName: "ControlCenterSettings")
                             .bold()
                             .font(.footnote)
-                        Text(Device().hasHomeButton ? "Swipe up from the bottom of the screen to view Control Center. Add, rearrange, and resize any control." : "Swipe down from the top-right edge to open Control Center. Add, rearrange, and resize any control.", tableName: "ControlCenterSettings")
+                        Text(Device().hasHomeButton ? "CONTROL_CENTER_TIP_INSTRUCTIONS_BOTTOM" : "CONTROL_CENTER_TIP_INSTRUCTIONS_TOP_RIGHT", tableName: "ControlCenterSettings")
                             .foregroundStyle(.secondary)
                             .font(.footnote)
                         Spacer()
@@ -34,7 +34,7 @@ struct ControlCenterView: View {
             .listRowBackground(Color(UIColor.systemGray4))
             
             Section {
-                Toggle(String(localized: "ALLOWED_WITHIN_APPS", table: "ControlCenterSettings"), isOn: $allowControlCenterInApps)
+                Toggle("ALLOWED_WITHIN_APPS".localize(table: "ControlCenterSettings"), isOn: $allowControlCenterInApps)
             } footer: {
                 Text("ALLOWED_WITHIN_APPS_FOOTER", tableName: "ControlCenterSettings")
             }
