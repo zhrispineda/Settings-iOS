@@ -40,7 +40,7 @@ struct DeveloperView: View {
     @State private var hidLoggingEnabled = false
     
     var body: some View {
-        CustomList(title: "Developer") {
+        CustomList(title: "Developer", topPadding: true) {
             Section {
                 Toggle("Dark Appearance", isOn: $darkAppearanceEnabled)
             } header: {

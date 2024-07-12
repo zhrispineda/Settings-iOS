@@ -15,6 +15,10 @@ struct AccessibilityView: View {
             }
             
             Section {
+                if !UIDevice.isSimulator {
+                    SettingsLink(color: .black, icon: "voiceover", id: "VoiceOver", status: "Off") {}
+                    SettingsLink(color: .black, icon: "arrowtriangles.up.right.down.left.magnifyingglass", id: "Zoom", status: "Off") {}
+                }
                 if Device().isTablet {
                     SettingsLink(color: .blue, icon: "character.magnify", id: "Hover Text", status: "Off") {
                         HoverTextView()
@@ -26,8 +30,13 @@ struct AccessibilityView: View {
                 SettingsLink(color: .green, icon: "circle.dotted.and.circle", id: "Motion") {
                     MotionView()
                 }
-                SettingsLink(icon: "Speech29x29", id: "Spoken Content") {
+                SettingsLink(color: .black, icon: "rectangle.3.group.bubble.fill", id: "Spoken Content") {
                     SpeakSelectionView()
+                }
+                if !UIDevice.isSimulator {
+                    SettingsLink(color: .blue, icon: "quote.bubble.fill", id: "Audio Descriptions") {
+                        SpeakSelectionView()
+                    }
                 }
             } header: {
                 Text("Vision")
@@ -47,9 +56,6 @@ struct AccessibilityView: View {
                         ControlNearbyDevicesView()
                     }
                 }
-                SettingsLink(color: .gray, icon: "keyboard", id: "Keyboards") {
-                    AccessibilityKeyboardsView()
-                }
             } header: {
                 Text("Physical and Motor")
             }
@@ -66,8 +72,15 @@ struct AccessibilityView: View {
                 SettingsLink(color: .black, icon: "keyboard.badge.waveform.fill", id: "Live Speech", status: "Off") {
                     LiveSpeechView()
                 }
+                CustomNavigationLink(title: "Vocal Shortcuts", status: "Off", destination: EmptyView())
             } header: {
                 Text("Speech")
+            }
+            
+            Section {
+                SettingsLink(color: .gray, icon: "keyboard", id: "Keyboards & Typing") {}
+            } header: {
+                Text("Accessories")
             }
             
             Section {} header: {

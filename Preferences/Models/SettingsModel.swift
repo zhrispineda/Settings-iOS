@@ -64,10 +64,10 @@ struct SettingsItem<Content: View>: Identifiable {
 }
 
 // MARK: Icons information
-let smallerIcons = ["apps.iphone", "apps.ipad", "bluetooth", "hand.raised.fill", "hourglass", "ipad.gen2", "iphone.gen3", "mic.fill", "shield.fill"]
+let smallerIcons = ["apps.iphone", "apps.ipad", "bluetooth", "hand.raised.fill", "hourglass", "ipad.gen2", "iphone.badge.dot.radiowaves.up.forward", "iphone.gen3", "mic.fill", "shield.fill"]
 let largerIcons = [""]
 let hierarchyIcons = ["faceid", "questionmark.app.dashed", "questionmark.square.dashed"]
-let internalIcons = ["airdrop", "apple.photos", "bluetooth", "carplay", "chevron.3.up.perspective", "clock.filled.and.widget.filled", "figure.run.motion", "iphone.action.button.arrow.right", "iphone.badge.dot.radiowaves.up.forward", "keyboard.badge.waveform.fill", "nearby.interactions", "network.connected.to.line.below", "pencil.and.sparkles", "sensorkit"]
+let internalIcons = ["airdrop", "apple.photos", "arrowtriangles.up.right.down.left.magnifyingglass", "bluetooth", "carplay", "chevron.3.up.perspective", "clock.filled.and.widget.filled", "figure.run.motion", "iphone.action.button.arrow.right", "iphone.badge.dot.radiowaves.up.forward", "keyboard.badge.waveform.fill", "nearby.interactions", "network.connected.to.line.below", "pencil.and.sparkles", "sensorkit"]
 
 // MARK: - Settings Layout
 // MARK: Radio Settings
