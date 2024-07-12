@@ -8,113 +8,123 @@
 import SwiftUI
 
 struct AccessibilityView: View {
+    // Variables
+    let table = "Accessibility"
+    
     var body: some View {
-        CustomList(title: "ROOT_LEVEL_TITLE") {
+        CustomList(title: "ROOT_LEVEL_TITLE".localize(table: table)) {
             Section {
-                SectionHelp(title: "PLACARD_TITLE", color: .blue, icon: "accessibility", description: Device().isPhone ? "PLACARD_SUBTITLE_IPHONE [PLACARD_LEARN_MORE](https://support.apple.com/guide/iphone/get-started-with-accessibility-features-iph3e2e4367/ios)" : "PLACARD_SUBTITLE_IPAD [PLACARD_LEARN_MORE](https://support.apple.com/guide/ipad/ipados)")
+                SectionHelp(title: "PLACARD_TITLE".localize(table: table), color: .blue, icon: "accessibility", description: Device().isPhone ? "\("PLACARD_SUBTITLE_IPHONE".localize(table: table)) [\("PLACARD_LEARN_MORE".localize(table: "Accessibility"))](https://support.apple.com/guide/iphone/get-started-with-accessibility-features-iph3e2e4367/ios)" : "\("PLACARD_SUBTITLE_IPAD".localize(table: table)) [\("PLACARD_LEARN_MORE".localize(table: table))](https://support.apple.com/guide/ipad/")
             }
             
             Section {
                 if !UIDevice.isSimulator {
-                    SettingsLink(icon: "voiceover", id: "VOICEOVER_TITLE", status: "OFF") {}
-                    SettingsLink(icon: "arrowtriangles.up.right.down.left.magnifyingglass", id: "ZOOM_TITLE", status: "OFF") {}
+                    SettingsLink(icon: "voiceover", id: "VOICEOVER_TITLE".localize(table: table), status: "OFF".localize(table: table)) {}
+                    SettingsLink(icon: "arrowtriangles.up.right.down.left.magnifyingglass", id: "ZOOM_TITLE".localize(table: table), status: "OFF".localize(table: table)) {}
                 }
                 if Device().isTablet {
-                    SettingsLink(color: .blue, icon: "character.magnify", id: "HOVERTEXT_TITLE", status: "OFF") {
+                    SettingsLink(color: .blue, icon: "character.magnify", id: "HOVERTEXT_TITLE".localize(table: table), status: "OFF".localize(table: table)) {
                         HoverTextView()
                     }
                 }
-                SettingsLink(color: .blue, icon: "textformat.size", id: "DISPLAY_AND_TEXT") {
+                SettingsLink(color: .blue, icon: "textformat.size", id: "DISPLAY_AND_TEXT".localize(table: table)) {
                     DisplayTextSizeView()
                 }
-                SettingsLink(color: .green, icon: "circle.dotted.and.circle", id: "MOTION_TITLE") {
+                SettingsLink(color: .green, icon: "circle.dotted.and.circle", id: "MOTION_TITLE".localize(table: table)) {
                     MotionView()
                 }
-                SettingsLink(color: .black, icon: "rectangle.3.group.bubble.fill", id: "SPEECH_TITLE") {
+                SettingsLink(color: .black, icon: "rectangle.3.group.bubble.fill", id: "SPEECH_TITLE".localize(table: table)) {
                     SpeakSelectionView()
                 }
                 if !UIDevice.isSimulator {
-                    SettingsLink(color: .blue, icon: "quote.bubble.fill", id: "DESCRIPTIVE_VIDEO") {
+                    SettingsLink(color: .blue, icon: "quote.bubble.fill", id: "DESCRIPTIVE_VIDEO".localize(table: table)) {
                         SpeakSelectionView()
                     }
                 }
             } header: {
-                Text("VISION")
+                Text("VISION".localize(table: table))
             }
             
             Section {
-                SettingsLink(color: .blue, icon: "hand.point.up.left.fill", id: "TOUCH") {
+                SettingsLink(color: .blue, icon: "hand.point.up.left.fill", id: "TOUCH".localize(table: table)) {
                     TouchView()
                 }
                 if Device().hasFaceAuth {
-                    SettingsLink(color: .green, icon: "faceid", id: "FACE_ID") {
+                    SettingsLink(color: .green, icon: "faceid", id: "FACE_ID".localize(table: table)) {
                         FaceAttentionView()
                     }
                 }
                 if !UIDevice.isSimulator {
-                    SettingsLink(icon: "square.grid.2x2", id: "ScannerSwitchTitle") {}
-                    SettingsLink(color: .blue, icon: "voice.control", id: "CommandAndControlTitle") {}
+                    SettingsLink(icon: "square.grid.2x2", id: "ScannerSwitchTitle".localize(table: table)) {}
+                    SettingsLink(color: .blue, icon: "voice.control", id: "CommandAndControlTitle".localize(table: table)) {}
                     SettingsLink(color: .indigo, icon: "eye.tracking", id: "Eye Tracking") {}
-                    SettingsLink(color: .blue, icon: "iphone.side.button.arrow.left", id: "SIDE_CLICK_TITLE") {}
-                    SettingsLink(color: .blue, icon: "inset.filled.applewatch.case", id: "APPLE_WATCH_REMOTE_SCREEN") {}
+                    if Device().isPhone {
+                        SettingsLink(color: .blue, icon: "iphone.side.button.arrow.left", id: "SIDE_CLICK_TITLE".localize(table: table)) {}
+                        SettingsLink(color: .blue, icon: "inset.filled.applewatch.case", id: "APPLE_WATCH_REMOTE_SCREEN".localize(table: table)) {}
+                    } else {
+                        SettingsLink(color: .blue, icon: "ipad.top.button.arrow.down", id: "TOP_CLICK_TITLE".localize(table: table)) {}
+                        SettingsLink(color: .gray, icon: "pencil", id: "PencilTitle".localize(table: table)) {}
+                    }
                 }
                 if Device().isPhone {
-                    SettingsLink(color: .blue, icon: "iphone.badge.dot.radiowaves.up.forward", id: "CONTROL_NEARBY_DEVICES") {
+                    SettingsLink(color: .blue, icon: "iphone.badge.dot.radiowaves.up.forward", id: "CONTROL_NEARBY_DEVICES".localize(table: table)) {
                         ControlNearbyDevicesView()
                     }
                 }
             } header: {
-                Text("MOBILITY_HEADING")
+                Text("MOBILITY_HEADING".localize(table: table))
             }
             
             Section {
                 if !UIDevice.isSimulator {
-                    SettingsLink(color: .blue, icon: "ear", id: "HEARING_AID_TITLE") {}
-                    SettingsLink(color: .gray, icon: "switch.2", id: "HEARING_CONTROL_CENTER_TITLE") {}
-                    SettingsLink(color: .red, icon: "waveform.and.magnifyingglass", id: "SOUND_RECOGNITION_TITLE") {}
-                    SettingsLink(color: .green, icon: "teletype", id: "TTY_RTT_LABEL") {}
-                    SettingsLink(color: .blue, icon: "speaker.eye.fill", id: "AUDIO_VISUAL_TITLE") {}
+                    SettingsLink(color: .blue, icon: "ear", id: "HEARING_AID_TITLE".localize(table: table)) {}
+                    SettingsLink(color: .gray, icon: "switch.2", id: "HEARING_CONTROL_CENTER_TITLE".localize(table: table)) {}
+                    SettingsLink(color: .red, icon: "waveform.and.magnifyingglass", id: "SOUND_RECOGNITION_TITLE".localize(table: table)) {}
+                    SettingsLink(color: .green, icon: "teletype", id: "TTY_RTT_LABEL".localize(table: table)) {}
+                    SettingsLink(color: .blue, icon: "speaker.eye.fill", id: "AUDIO_VISUAL_TITLE".localize(table: table)) {}
                 }
-                SettingsLink(color: .blue, icon: "captions.bubble.fill", id: "SUBTITLES_CAPTIONING") {
+                SettingsLink(color: .blue, icon: "captions.bubble.fill", id: "SUBTITLES_CAPTIONING".localize(table: table)) {
                     SubtitlesCaptioningView()
                 }
                 if !UIDevice.isSimulator {
-                    SettingsLink(icon: "waveform.bubble.fill", id: "RTT_LIVE_TRANSCRIPTIONS_LABEL") {}
-                    SettingsLink(color: .red, icon: "apple.haptics.and.music.note", id: "Music Haptics") {}
+                    SettingsLink(icon: "waveform.bubble.fill", id: "RTT_LIVE_TRANSCRIPTIONS_LABEL".localize(table: table)) {}
+                    if Device().isPhone {
+                        SettingsLink(color: .red, icon: "apple.haptics.and.music.note", id: "Music Haptics") {}
+                    }
                 }
             } header: {
-                Text("HEARING")
+                Text("HEARING".localize(table: table))
             }
             
             Section {
-                SettingsLink(color: .black, icon: "keyboard.badge.waveform.fill", id: "LIVE_SPEECH", status: "OFF") {
+                SettingsLink(color: .black, icon: "keyboard.badge.waveform.fill", id: "LIVE_SPEECH".localize(table: table), status: "OFF".localize(table: table)) {
                     LiveSpeechView()
                 }
                 if UIDevice.isSimulator {
-                    CustomNavigationLink(title: "ADAPTIVE_VOICE_SHORTCUTS_TITLE", status: "OFF", destination: EmptyView())
+                    CustomNavigationLink(title: "ADAPTIVE_VOICE_SHORTCUTS_TITLE".localize(table: table), status: "OFF".localize(table: table), destination: EmptyView())
                 } else {
-                    SettingsLink(color: .blue, icon: "person.badge.waveform.fill", id: "ADAPTIVE_VOICE_SHORTCUTS_TITLE", status: "OFF") {}
-                    SettingsLink(icon: "waveform.arrow.triangle.branch.right", id: "ADAPTIVE_VOICE_SHORTCUTS_TITLE", status: "OFF") {}
+                    SettingsLink(color: .blue, icon: "person.badge.waveform.fill", id: "PERSONAL_VOICE_TITLE".localize(table: table), status: "OFF".localize(table: table)) {}
+                    SettingsLink(icon: "waveform.arrow.triangle.branch.right", id: "ADAPTIVE_VOICE_SHORTCUTS_TITLE".localize(table: table), status: "OFF".localize(table: table)) {}
                 }
             } header: {
-                Text("SPEECH_HEADING")
+                Text("SPEECH_HEADING".localize(table: table))
             }
             
             Section {
                 SettingsLink(color: .gray, icon: "keyboard.fill", id: "Keyboards & Typing") {}
                 if !UIDevice.isSimulator {
-                    SettingsLink(color: .gray, icon: "appletvremote.gen4.fill", id: "APPLE_TV_REMOTE") {}
+                    SettingsLink(color: .gray, icon: "appletvremote.gen4.fill", id: "APPLE_TV_REMOTE".localize(table: table)) {}
                 }
             } header: {
-                Text("ACCESSORIES_HEADING")
+                Text("ACCESSORIES_HEADING".localize(table: table))
             }
             
             Section {
                 if !UIDevice.isSimulator {
-                    SettingsLink(icon: "lock.square.dotted", id: "GUIDED_ACCESS_TITLE", status: "OFF") {}
-                    SettingsLink(color: .gray, icon: "apps.iphone.assistive.access", id: "AssistiveAccessTitle") {}
-                    SettingsLink(color: .clear, icon: "appleSiri", id: "SIRI_SETTINGS_TITLE") {}
-                    SettingsLink(color: .blue, icon: "accessibility", id: "TRIPLE_CLICK_TITLE", status: "OFF") {}
+                    SettingsLink(icon: "lock.square.dotted", id: "GUIDED_ACCESS_TITLE".localize(table: table), status: "OFF".localize(table: table)) {}
+                    SettingsLink(color: .gray, icon: "apps.iphone.assistive.access", id: "AssistiveAccessTitle".localize(table: table)) {}
+                    SettingsLink(color: .clear, icon: "appleSiri", id: "SIRI_SETTINGS_TITLE".localize(table: table)) {}
+                    SettingsLink(color: .blue, icon: "accessibility", id: "TRIPLE_CLICK_TITLE".localize(table: table), status: "OFF".localize(table: table)) {}
                     SettingsLink(color: .blue, icon: "app.badge.checkmark", id: "Per-App Settings") {}
                 }
             } header: {

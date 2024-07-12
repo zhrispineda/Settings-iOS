@@ -127,6 +127,7 @@
 		838C23302B74978C0053D4C5 /* HText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838C232F2B74978C0053D4C5 /* HText.swift */; };
 		839092BB2C0D213200924849 /* OtherNetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839092BA2C0D213200924849 /* OtherNetworkView.swift */; };
 		8393425E2C18CE5B00B48679 /* BatteryHealthChargingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8393425D2C18CE5B00B48679 /* BatteryHealthChargingView.swift */; };
+		839BB8A72C41DD61000F8245 /* Accessibility.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 839BB8A62C41DD61000F8245 /* Accessibility.xcstrings */; };
 		83A5DA512C2335580012ACB3 /* PermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5DA502C2335580012ACB3 /* PermissionsView.swift */; };
 		83A5DA532C234DCB0012ACB3 /* LanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5DA522C234DCB0012ACB3 /* LanguageView.swift */; };
 		83A5DA552C2366A60012ACB3 /* TransferResetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5DA542C2366A60012ACB3 /* TransferResetView.swift */; };
@@ -339,6 +340,7 @@
 		838C232F2B74978C0053D4C5 /* HText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HText.swift; sourceTree = "<group>"; };
 		839092BA2C0D213200924849 /* OtherNetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherNetworkView.swift; sourceTree = "<group>"; };
 		8393425D2C18CE5B00B48679 /* BatteryHealthChargingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryHealthChargingView.swift; sourceTree = "<group>"; };
+		839BB8A62C41DD61000F8245 /* Accessibility.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Accessibility.xcstrings; sourceTree = "<group>"; };
 		83A5DA502C2335580012ACB3 /* PermissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsView.swift; sourceTree = "<group>"; };
 		83A5DA522C234DCB0012ACB3 /* LanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageView.swift; sourceTree = "<group>"; };
 		83A5DA542C2366A60012ACB3 /* TransferResetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferResetView.swift; sourceTree = "<group>"; };
@@ -601,6 +603,7 @@
 				838C0D992C38A9A000438E2D /* Localizable.xcstrings */,
 				8319E8172C3DFB1E002EC116 /* AmbientSettings.xcstrings */,
 				833F5B7E2C4050AA00C0A8C7 /* SOS.xcstrings */,
+				839BB8A62C41DD61000F8245 /* Accessibility.xcstrings */,
 			);
 			path = Preferences;
 			sourceTree = "<group>";
@@ -1216,6 +1219,7 @@
 			files = (
 				83F516B82C21B7FA0004E87A /* SettingsPhysical.gif in Resources */,
 				83B893C02B8FDBE8005705A3 /* iPhone15_Pro_NaturalTitanium.usdz in Resources */,
+				839BB8A72C41DD61000F8245 /* Accessibility.xcstrings in Resources */,
 				833F5B7F2C4050AA00C0A8C7 /* SOS.xcstrings in Resources */,
 				838C0D9A2C38A9A000438E2D /* Localizable.xcstrings in Resources */,
 				8319E8182C3DFB1E002EC116 /* AmbientSettings.xcstrings in Resources */,

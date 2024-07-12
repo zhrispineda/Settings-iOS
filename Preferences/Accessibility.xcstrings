@@ -1,0 +1,479 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "ACCESSORIES_HEADING" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accessories"
+          }
+        }
+      }
+    },
+    "ADAPTIVE_VOICE_SHORTCUTS_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vocal Shortcuts"
+          }
+        }
+      }
+    },
+    "APPLE_TV_REMOTE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple TV Remote"
+          }
+        }
+      }
+    },
+    "APPLE_WATCH_REMOTE_SCREEN" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple Watch Mirroring"
+          }
+        }
+      }
+    },
+    "AssistiveAccessTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Assistive Access"
+          }
+        }
+      }
+    },
+    "AUDIO_VISUAL_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Audio & Visual"
+          }
+        }
+      }
+    },
+    "CommandAndControlTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voice Control"
+          }
+        }
+      }
+    },
+    "CONTROL_NEARBY_DEVICES" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Control Nearby Devices"
+          }
+        }
+      }
+    },
+    "DESCRIPTIVE_VIDEO" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Audio Descriptions"
+          }
+        }
+      }
+    },
+    "DISPLAY_AND_TEXT" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Display & Text Size"
+          }
+        }
+      }
+    },
+    "FACE_ID" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Face ID & Attention"
+          }
+        }
+      }
+    },
+    "GENERAL_HEADING" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "General"
+          }
+        }
+      }
+    },
+    "GUIDED_ACCESS_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guided Access"
+          }
+        }
+      }
+    },
+    "HEARING" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hearing"
+          }
+        }
+      }
+    },
+    "HEARING_AID_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hearing Devices"
+          }
+        }
+      }
+    },
+    "HEARING_CONTROL_CENTER_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hearing Control Center"
+          }
+        }
+      }
+    },
+    "HOVERTEXT_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hover Text"
+          }
+        }
+      }
+    },
+    "LIVE_SPEECH" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Live Speech"
+          }
+        }
+      }
+    },
+    "MOBILITY_HEADING" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Physical and Motor"
+          }
+        }
+      }
+    },
+    "MOTION_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Motion"
+          }
+        }
+      }
+    },
+    "OFF" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Off"
+          }
+        }
+      }
+    },
+    "PencilTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple Pencil"
+          }
+        }
+      }
+    },
+    "PERSONAL_VOICE_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personal Voice"
+          }
+        }
+      }
+    },
+    "PLACARD_LEARN_MORE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Learn more…"
+          }
+        }
+      }
+    },
+    "PLACARD_SUBTITLE_IPAD" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personalize iPad in ways that work best for you with accessibility features for vision, mobility, hearing, speech, and cognition."
+          }
+        }
+      }
+    },
+    "PLACARD_SUBTITLE_IPHONE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personalize iPhone in ways that work best for you with accessibility features for vision, mobility, hearing, speech, and cognition."
+          }
+        }
+      }
+    },
+    "PLACARD_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accessibility"
+          }
+        }
+      }
+    },
+    "ROOT_LEVEL_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accessibility"
+          }
+        }
+      }
+    },
+    "RTT_LIVE_TRANSCRIPTIONS_LABEL" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Live Captions"
+          }
+        }
+      }
+    },
+    "ScannerSwitchTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Switch Control"
+          }
+        }
+      }
+    },
+    "SIDE_CLICK_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Side Button"
+          }
+        }
+      }
+    },
+    "SIRI_SETTINGS_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri"
+          }
+        }
+      }
+    },
+    "SOUND_RECOGNITION_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sound Recognition"
+          }
+        }
+      }
+    },
+    "SPEECH_HEADING" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Speech"
+          }
+        }
+      }
+    },
+    "SPEECH_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spoken Content"
+          }
+        }
+      }
+    },
+    "SUBTITLES_CAPTIONING" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Subtitles & Captioning"
+          }
+        }
+      }
+    },
+    "TOP_CLICK_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Top Button"
+          }
+        }
+      }
+    },
+    "TOUCH" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Touch"
+          }
+        }
+      }
+    },
+    "TRIPLE_CLICK_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accessibility Shortcut"
+          }
+        }
+      }
+    },
+    "TTY_RTT_LABEL" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "RTT/TTY"
+          }
+        }
+      }
+    },
+    "VISION" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vision"
+          }
+        }
+      }
+    },
+    "VOICEOVER_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver"
+          }
+        }
+      }
+    },
+    "ZOOM_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zoom"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
