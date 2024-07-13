@@ -44,6 +44,16 @@ struct SectionHelp: View {
                                 .foregroundStyle(.black)
                         }
                 }
+                if title == "Apple Intelligence & Siri" {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 25.0)
+                            .frame(width: 40, height: 15)
+                        Text("BETA")
+                            .font(.caption)
+                            .foregroundStyle(.white)
+                    }
+                    .offset(x: 25, y: 26)
+                }
             }
             .accessibilityHidden(true)
             

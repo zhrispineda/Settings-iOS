@@ -28,8 +28,8 @@ struct SiriView: View {
     @State private var showWhenListeningEnabled = true
     
     var body: some View {
-        CustomList(title: "Siri") {
-            SectionHelp(title: "Siri", icon: "appleSiri", description: "Siri is an intelligent assistant that helps you find information and get things done. [Learn more...](#)")
+        CustomList(title: UIDevice.isSimulator ? "Apple Intelligence & Siri" : "Siri") {
+            SectionHelp(title: UIDevice.isSimulator ? "Apple Intelligence & Siri" : "Siri", icon: UIDevice.isSimulator ? "appleIntelligence" : "appleSiri", description: UIDevice.isSimulator ? "A personal intelligence system integrated deeply into your iPhone, apps, and Siri. [Learn more...](#)" : "Siri is an intelligent assistant that helps you find information and get things done. [Learn more...](#)")
             
             Section {
                 CustomNavigationLink(title: "Language", status: "English (United States)", destination: SiriLanguageView())

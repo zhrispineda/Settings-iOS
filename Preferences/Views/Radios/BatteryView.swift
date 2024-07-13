@@ -22,7 +22,7 @@ struct BatteryView: View {
             }
             
             Section {
-                if Device().hasExtraBatteryFeatures {
+                if UIDevice.DeviceSupportsBatteryInformation {
                     CustomNavigationLink(title: "Battery Health", status: "Normal", destination: BatteryHealthView())
                     if Device().isPhone {
                         //CustomNavigationLink(title: "Charging Optimization", status: "Optimized", destination: ChargingOptimizationView())
