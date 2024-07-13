@@ -262,9 +262,9 @@ struct SettingsLinkSection: View {
     case .none:
         return true
     case .actionButton:
-        return UIDevice.ringerButtonCapability
+        return UIDevice.RingerButtonCapability
     case .cellular:
-        return UIDevice.isCellularCapable
+        return UIDevice.CellularTelephonyCapability
     case .vpn:
         return true
     }

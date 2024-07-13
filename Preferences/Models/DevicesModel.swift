@@ -22,7 +22,6 @@ class Device: ObservableObject {
     var hasHomeButton = UIDevice.current.name.contains("SE")
     var hasFaceAuth = !UIDevice.current.name.contains("SE") && !UIDevice.current.name.contains("Air") && !UIDevice.current.name.contains("iPad (") && !UIDevice.current.name.contains("iPad mini")
     var hasMacroLens = UIDevice.current.name.contains("13 Pro") || UIDevice.current.name.contains("14 Pro") || UIDevice.current.name.contains("15 Pro")
-    var hasAlwaysOnDisplay = UIDevice.current.name.contains("14 Pro") || UIDevice.current.name.contains("15 Pro")
     
     var physicalModel = UIDevice.fullModel
 }
@@ -92,7 +91,7 @@ public extension UIDevice {
         return UIDevice.isSimulator ? getDevice(identifier: ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] ?? "N/A") : getDevice(identifier: identifier)
     }()
     
-    static let isCellularCapable: Bool = {
+    static let CellularTelephonyCapability: Bool = {
         var identifier = UIDevice.identifier
         
         switch identifier {
@@ -114,12 +113,23 @@ public extension UIDevice {
         }
     }()
     
-    static let ringerButtonCapability: Bool = { // Action Button
+    static let RingerButtonCapability: Bool = { // Action Button
         var identifier = UIDevice.fullModel
         return identifier.contains("15 Pro")
     }()
     
     static let isSimulator: Bool = {
         return ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] != nil && !Configuration().forcePhysical
+    }()
+    
+    static let AlwaysOnDisplayCapability: Bool = {
+        var identifier = UIDevice.identifier
+        
+        switch identifier {
+        case "iPhone15,2", "iPhone15,3", "iPhone16,1", "iPhone16,2":
+            return true
+        default:
+            return false
+        }
     }()
 }

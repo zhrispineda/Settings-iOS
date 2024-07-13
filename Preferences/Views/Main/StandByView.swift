@@ -23,7 +23,7 @@ struct StandByView: View {
             }
             
             if standByEnabled {
-                if Device().hasAlwaysOnDisplay {
+                if UIDevice.AlwaysOnDisplayCapability {
                     NavigationLink("ALWAYS_ON_DISPLAY_OPTIONS".localize(table: "AmbientSettings"), destination: DisplayView())
                 } else {
                     Section {

@@ -48,7 +48,7 @@ struct AboutView: View {
                 LabeledContent("Available", value: availableStorage)
             }
             
-            if !UIDevice.isSimulator && UIDevice.isCellularCapable {
+            if !UIDevice.isSimulator && UIDevice.CellularTelephonyCapability {
                 HText("Wi-Fi Address", status: "00:0A:AA:A0:A0:00")
                 HText("Bluetooth", status: "00:0A:AA:A0:A0:00")
                 HText("Modem Firmware", status: "1.60.02")

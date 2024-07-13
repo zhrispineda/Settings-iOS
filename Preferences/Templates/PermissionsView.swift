@@ -62,7 +62,7 @@ struct PermissionsView: View {
             if background {
                 IconToggle(enabled: $backgroundAppRefreshEnabled, color: .gray, icon: "gear", title: "Background App Refresh")
             }
-            if cellular && UIDevice.isCellularCapable {
+            if cellular && UIDevice.CellularTelephonyCapability {
                 IconToggle(enabled: $cellularEnabled, color: .green, icon: "antenna.radiowaves.left.and.right", title: "Cellular Data")
             }
             if phone {
