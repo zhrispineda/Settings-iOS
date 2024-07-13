@@ -3,9 +3,11 @@ A **work-in-progress** SwiftUI recreation of the iOS & iPadOS Settings app.
 
 > [!IMPORTANT]
 > 
-> This project is being worked on using **Xcode 16 beta** and **Swift 6.0**. To use this project on Xcode 15, change the version of Swift to 5.0:
+> This project is being worked on using **Xcode 16 beta** and **Swift 6**. To use this project in Xcode 15, change the version of Swift to 5:
 >
 > (Top of project sidebar) `Preferences` > Under `TARGETS` > `Preferences` > `Build Settings` > (Scroll to bottom) `Swift Compiler - Language` > `Swift Language Version` > Change the value `Swift 6` to `Swift 5`
+>
+> Delete the extra AppIcon assets (Dark and Tinted) as Xcode 15 does not support dark and tinted icons.
 >
 
 ## Examples

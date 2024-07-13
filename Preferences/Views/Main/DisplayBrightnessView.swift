@@ -131,7 +131,7 @@ struct DisplayBrightnessView: View {
                 Toggle("Raise to Wake", isOn: $raiseToWakeEnabled)
             }
             
-            if Device().hasAlwaysOnDisplay {
+            if UIDevice.AlwaysOnDisplayCapability {
                 Section {
                     CustomNavigationLink(title: "Always On Display", status: "On", destination: EmptyView())
                 } footer: {

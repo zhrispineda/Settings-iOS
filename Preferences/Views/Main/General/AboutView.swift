@@ -13,7 +13,7 @@ struct AboutView: View {
     @State private var serialNumber = String()
     @State private var availableStorage: String = getAvailableStorage() ?? "N/A"
     @State private var totalStorage: String = getTotalStorage() ?? "N/A"
-    @AppStorage("DeviceName") private var deviceName = Device().model
+    @AppStorage("DeviceName") private var deviceName = UIDevice().model
     
     var body: some View {
         CustomList(title: "About") {

@@ -10,7 +10,7 @@ import SwiftUI
 struct BluetoothView: View {
     // Variables
     @AppStorage("bluetooth") private var bluetoothEnabled = true
-    @AppStorage("DeviceName") private var deviceName = Device().model
+    @AppStorage("DeviceName") private var deviceName = UIDevice().model
     
     var body: some View {
         CustomList(title: "BLUETOOTH".localize(table: "BluetoothSettings")) {
