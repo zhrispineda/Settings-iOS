@@ -29,7 +29,7 @@ struct CameraView: View {
             Section {
                 CustomNavigationLink(title: "Record Video", status: "1080p at 30 fps", destination: EmptyView())
                 CustomNavigationLink(title: "Record Slo-mo", status: "1080p at 240 fps", destination: EmptyView())
-                if Device().isCinematicCapable {
+                if UIDevice.CinematicModeCapability {
                     CustomNavigationLink(title: "Record Cinematic", status: "1080p at 30 fps", destination: EmptyView())
                 }
                 if Device().isPhone {
@@ -81,7 +81,7 @@ struct CameraView: View {
                 }
             }
             
-            if Device().isPortraitsPhotoModeCapable {
+            if UIDevice.AlwaysCaptureDepthCapability {
                 Section {
                     Toggle("Portraits in Photo Mode", isOn: $portraitsPhotoModeEnabled)
                 } footer: {
@@ -97,7 +97,7 @@ struct CameraView: View {
                 }
             }
             
-            if Device().isLensCorrectionCapable {
+            if UIDevice.LensCorrectionCapability {
                 Section {
                     Toggle("Lens Correction", isOn: $lensCorrectionEnabled)
                 } footer: {
@@ -105,7 +105,7 @@ struct CameraView: View {
                 }
             }
             
-            if Device().hasMacroLens {
+            if UIDevice.MacroLensCapability {
                 Section {
                     Toggle("Macro Control", isOn: $macroControlEnabled)
                 } footer: {

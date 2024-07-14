@@ -15,12 +15,8 @@ class Device: ObservableObject {
     var isPro = UIDevice.current.name.contains("Pro")
     var isLargestTablet = UIDevice.current.name.contains("12.9")
     var isStageManagerCapable = UIDevice.current.name.contains("Air (5th") || UIDevice.current.name.contains("M2") || UIDevice.current.name.contains("M4") || UIDevice.current.name.contains("Pro (11") || UIDevice.current.name.contains("(12.9-inch) (3") || UIDevice.current.name.contains("(12.9-inch) (4") || UIDevice.current.name.contains("(12.9-inch) (5") || UIDevice.current.name.contains("(12.9-inch) (6")
-    var isCinematicCapable = UIDevice.current.name.contains("iPhone 13") || UIDevice.current.name.contains("14") || UIDevice.current.name.contains("15")
     var isPhotographicStylesCapable = UIDevice.current.name.contains("SE (3") || UIDevice.current.name.contains("iPhone 13") || UIDevice.current.name.contains("14") || UIDevice.current.name.contains("15")
-    var isPortraitsPhotoModeCapable = UIDevice.current.name.contains("15")
-    var isLensCorrectionCapable = !UIDevice.current.name.contains("SE")
     var hasFaceAuth = !UIDevice.current.name.contains("SE") && !UIDevice.current.name.contains("Air") && !UIDevice.current.name.contains("iPad (") && !UIDevice.current.name.contains("iPad mini")
-    var hasMacroLens = UIDevice.current.name.contains("13 Pro") || UIDevice.current.name.contains("14 Pro") || UIDevice.current.name.contains("15 Pro")
     
     var physicalModel = UIDevice.fullModel
 }
@@ -90,7 +86,18 @@ public extension UIDevice {
         return UIDevice.isSimulator ? getDevice(identifier: ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] ?? "N/A") : getDevice(identifier: identifier)
     }()
     
-    static let CellularTelephonyCapability: Bool = {
+    static let AlwaysCaptureDepthCapability: Bool = { // Always Capture Depth Info
+        var identifier = UIDevice.identifier
+        
+        switch identifier {
+        case "iPhone15,4", "iPhone15,5", "iPhone16,1", "iPhone16,2":
+            return true
+        default:
+            return false
+        }
+    }()
+    
+    static let CellularTelephonyCapability: Bool = { // Cellular Data
         var identifier = UIDevice.identifier
         
         switch identifier {
@@ -98,6 +105,17 @@ public extension UIDevice {
             return true
         default:
             return identifier.contains("iPhone") || Configuration().forceCellular
+        }
+    }()
+    
+    static let CinematicModeCapability: Bool = { // Cinematic Mode
+        var identifier = UIDevice.identifier
+        
+        switch identifier {
+        case "iPhone14,4", "iPhone14,5", "iPhone14,2", "iPhone14,3", "iPhone14,7", "iPhone14,8", "iPhone15,2", "iPhone15,3", "iPhone15,4", "iPhone15,5", "iPhone16,1", "iPhone16,2":
+            return true
+        default:
+            return false
         }
     }()
     
@@ -116,7 +134,29 @@ public extension UIDevice {
         var identifier = UIDevice.identifier
         
         switch identifier {
-        case "iPhone12,8", "iPhone14,6", "iPad11,3", "iPad7,11", "iPad7,12", "iPad11,6", "iPad11,7", "iPad12,1", "iPad12,2":
+        case "iPhone12,8", "iPhone14,6", "iPad11,3", "iPad7,11", "iPad7,12", "iPad11,1", "iPad11,2", "iPad11,6", "iPad11,7", "iPad12,1", "iPad12,2":
+            return true
+        default:
+            return false
+        }
+    }()
+    
+    static let LensCorrectionCapability: Bool = { // Lens Correction
+        var identifier = UIDevice.identifier
+        
+        switch identifier {
+        case "iPhone12,8", "iPhone14,6", "iPad7,11", "iPad7,12", "iPad8,1", "iPad8,2", "iPad8,3", "iPad8,4", "iPad8,5", "iPad8,6", "iPad8,7", "iPad8,8", "iPad8,9", "iPad8,10", "iPad8,11", "iPad8,12", "iPad11,1", "iPad11,2", "iPad11,3", "iPad11,4", "iPad11,6", "iPad11,7":
+            return false
+        default:
+            return true
+        }
+    }()
+    
+    static let MacroLensCapability: Bool = { // Macro Lens
+        var identifier = UIDevice.identifier
+        
+        switch identifier {
+        case "iPhone14,2", "iPhone14,3", "iPhone15,2", "iPhone15,3", "iPhone16,1", "iPhone16,2":
             return true
         default:
             return false

@@ -22,7 +22,7 @@ struct ContentView: View {
     @State private var id = UUID()
     @State private var showingCellular = false
     @State private var showingVpn = false
-    @AppStorage("airplaneMode") private var airplaneModeEnabled = false
+    @AppStorage("AirplaneMode") private var airplaneModeEnabled = false
     @AppStorage("wifi") private var wifiEnabled = true
     @AppStorage("bluetooth") private var bluetoothEnabled = true
     @AppStorage("vpn") private var vpnEnabled = false
