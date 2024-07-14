@@ -19,7 +19,7 @@ struct ControlCenterView: View {
                         Text("CONTROL_CENTER_TIP_HEADER", tableName: "ControlCenterSettings")
                             .bold()
                             .font(.footnote)
-                        Text(Device().hasHomeButton ? "CONTROL_CENTER_TIP_INSTRUCTIONS_BOTTOM" : "CONTROL_CENTER_TIP_INSTRUCTIONS_TOP_RIGHT", tableName: "ControlCenterSettings")
+                        Text(UIDevice.HomeButtonCapability ? "CONTROL_CENTER_TIP_INSTRUCTIONS_BOTTOM" : "CONTROL_CENTER_TIP_INSTRUCTIONS_TOP_RIGHT", tableName: "ControlCenterSettings")
                             .foregroundStyle(.secondary)
                             .font(.footnote)
                         Spacer()

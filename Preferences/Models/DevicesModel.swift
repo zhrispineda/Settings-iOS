@@ -19,7 +19,6 @@ class Device: ObservableObject {
     var isPhotographicStylesCapable = UIDevice.current.name.contains("SE (3") || UIDevice.current.name.contains("iPhone 13") || UIDevice.current.name.contains("14") || UIDevice.current.name.contains("15")
     var isPortraitsPhotoModeCapable = UIDevice.current.name.contains("15")
     var isLensCorrectionCapable = !UIDevice.current.name.contains("SE")
-    var hasHomeButton = UIDevice.current.name.contains("SE")
     var hasFaceAuth = !UIDevice.current.name.contains("SE") && !UIDevice.current.name.contains("Air") && !UIDevice.current.name.contains("iPad (") && !UIDevice.current.name.contains("iPad mini")
     var hasMacroLens = UIDevice.current.name.contains("13 Pro") || UIDevice.current.name.contains("14 Pro") || UIDevice.current.name.contains("15 Pro")
     
@@ -113,6 +112,17 @@ public extension UIDevice {
         }
     }()
     
+    static let HomeButtonCapability: Bool = { // Home Button
+        var identifier = UIDevice.identifier
+        
+        switch identifier {
+        case "iPhone12,8", "iPhone14,6", "iPad11,3", "iPad7,11", "iPad7,12", "iPad11,6", "iPad11,7", "iPad12,1", "iPad12,2":
+            return true
+        default:
+            return false
+        }
+    }()
+    
     static let RingerButtonCapability: Bool = { // Action Button
         var identifier = UIDevice.fullModel
         return identifier.contains("15 Pro")
@@ -122,7 +132,7 @@ public extension UIDevice {
         return ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] != nil && !Configuration().forcePhysical
     }()
     
-    static let AlwaysOnDisplayCapability: Bool = {
+    static let AlwaysOnDisplayCapability: Bool = { // Always On Display
         var identifier = UIDevice.identifier
         
         switch identifier {

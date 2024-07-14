@@ -86,7 +86,7 @@ struct SelectSignInOptionView: View {
                 ZStack {
                     Color(UIColor.secondarySystemGroupedBackground)
                         .frame(maxWidth: .infinity)
-                        .frame(height: Device().hasHomeButton ? 50 : 100)
+                        .frame(height: UIDevice.HomeButtonCapability ? 50 : 100)
                         .opacity(Device().isPhone ? 1 : 0)
                     Button {
                         showingAlert.toggle()

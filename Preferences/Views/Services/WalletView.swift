@@ -65,10 +65,12 @@ struct WalletView: View {
                     }
                 }
                 
-                Section {
-                    Toggle("Double-Click \(Device().hasHomeButton ? "Home" : "Side") Button", isOn: $doubleClickButtonEnabled)
-                } footer: {
-                    Text("Get cards and passes ready \(Device().hasHomeButton ? "from the lock screen by double-clicking the home" : "at any time by double-clicking the side") button.")
+                if Device().isPhone {
+                    Section {
+                        Toggle("Double-Click \(UIDevice.HomeButtonCapability ? "Home" : "Side") Button", isOn: $doubleClickButtonEnabled)
+                    } footer: {
+                        Text("Get cards and passes ready \(UIDevice.HomeButtonCapability ? "from the lock screen by double-clicking the home" : "at any time by double-clicking the side") button.")
+                    }
                 }
             }
             

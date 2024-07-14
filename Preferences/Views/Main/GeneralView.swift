@@ -47,8 +47,7 @@ struct GeneralView: View {
                 }
             }
             
-            if !UIDevice.isSimulator && Device().hasHomeButton {
-                NavigationLink("Home Button", destination: EmptyView())
+            if !UIDevice.isSimulator && UIDevice.HomeButtonCapability {
                 SettingsLink(color: .gray, icon: "iphone.gen1", id: String(localized: "HOME_BUTTON", table: "General")) {}
             }
             

@@ -13,7 +13,7 @@ struct TransferResetView: View {
     var body: some View {
         CustomList(title: "Transfer or Reset \(Device().model)") {
             VStack(alignment: .center) {
-                Image(Device().isPhone ? (Device().hasHomeButton ? "ClassiciPhone" : "ModerniPhone") : "ModerniPad")
+                Image(Device().isPhone ? (UIDevice.HomeButtonCapability ? "ClassiciPhone" : "ModerniPhone") : "ModerniPad")
                     .foregroundStyle(.accent)
                 Text("**Prepare for New \(Device().model)**")
                 Text("Make sure everything's ready to transfer to a new \(Device().model), even if you don't currently have enough iCloud storage to back up.")
