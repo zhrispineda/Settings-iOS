@@ -42,7 +42,7 @@ struct NotificationsView: View {
                 Text("Notification Style")
             }
             
-            if Device().isPhone {
+            if UIDevice.iPhone {
                 Section {
                     Toggle("AMBER Alerts", isOn: $amberAlertsEnabled)
                     CustomNavigationLink(title: "Emergency Alerts", status: "On", destination: EmptyView())

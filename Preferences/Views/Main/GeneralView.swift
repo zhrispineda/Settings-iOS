@@ -15,7 +15,7 @@ struct GeneralView: View {
             }
         
             Section {
-                SettingsLink(color: .gray, icon: UIDevice.isSimulator ? "questionmark.app.dashed" : Device().isPhone ? "iphone.gen3" : "ipad.gen2", id: String(localized: "About", table: "General")) {
+                SettingsLink(color: .gray, icon: UIDevice.isSimulator ? "questionmark.app.dashed" : UIDevice.iPhone ? "iphone.gen3" : "ipad.gen2", id: String(localized: "About", table: "General")) {
                     AboutView()
                 }
                 if !UIDevice.isSimulator {
@@ -40,7 +40,7 @@ struct GeneralView: View {
                 Section {
                     SettingsLink(color: .white, iconColor: .blue, icon: "airdrop", id: String(localized: "AIRDROP", table: "General")) {}
                     SettingsLink(color: .blue, icon: "airplay.video", id: String(localized: "CONTINUITY", table: "General")) {}
-                    if Device().isPhone {
+                    if UIDevice.iPhone {
                         SettingsLink(icon: "pip", id: String(localized: "PiP", table: "General")) {}
                         SettingsLink(color: .green, icon: "carplay", id: String(localized: "CARPLAY", table: "General")) {}
                     }

@@ -21,7 +21,7 @@ struct ScreenTimeView: View {
             if appWebsiteActivityEnabled {
                 Section {
                     VStack {
-                        Text("As you use your \(Device().model), screen time will be reported here.")
+                        Text("As you use your \(UIDevice.current.model), screen time will be reported here.")
                             .font(.subheadline)
                             .foregroundStyle(.secondary)
                             .multilineTextAlignment(.center)
@@ -31,7 +31,7 @@ struct ScreenTimeView: View {
                     .padding(.horizontal, 0)
                     NavigationLink("See All App & Website Activity", destination: AppWebsiteActivityView())
                 } header: {
-                    Text(UIDevice.current.name)
+                    Text(UIDevice.current.model)
                 } footer: {
                     HStack(spacing: 5) {
                         Text("Updated today at \(Date.now, format: .dateTime.hour().minute())")

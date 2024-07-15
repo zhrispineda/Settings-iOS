@@ -61,5 +61,4 @@ struct SettingsLabel: View {
 
 #Preview {
     ContentView()
-        .environmentObject(Device())
 }

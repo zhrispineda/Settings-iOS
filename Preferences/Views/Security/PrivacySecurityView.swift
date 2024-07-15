@@ -52,7 +52,7 @@ struct PrivacySecurityView: View {
                 SettingsLink(icon: "appleReminders", id: "Reminders", subtitle: "None") {
                     AppPermissionsView(permissionName: "Reminders")
                 }
-                if Device().isPhone {
+                if UIDevice.iPhone {
                     SettingsLink(icon: "appleWallet", id: "Wallet", subtitle: "None") {
                         AppPermissionsView(permissionName: "Wallet")
                     }
@@ -81,7 +81,7 @@ struct PrivacySecurityView: View {
                 SettingsLink(color: .blue, icon: "nearby.interactions", id: "Nearby Interactions", status: "0") {
                     AppPermissionsView(permissionName: "Nearby Interactions")
                 }
-                if Device().isPhone {
+                if UIDevice.iPhone {
                     SettingsLink(color: .blue, icon: "sensorkit", id: "Research Sensor & Usage Data", status: "0") {
                         AppPermissionsView(permissionName: "Research Sensor & Usage Data")
                     }
@@ -91,7 +91,7 @@ struct PrivacySecurityView: View {
                 }
             }
             
-            if Device().isPhone && !UIDevice.isSimulator {
+            if UIDevice.iPhone && !UIDevice.isSimulator {
                 Section {
                     SettingsLink(color: .indigo, icon: "pencil.and.sparkles", id: "Journaling Suggestions") {
                         EmptyView()
@@ -99,7 +99,7 @@ struct PrivacySecurityView: View {
                 }
             }
             
-            if Device().isPhone {
+            if UIDevice.iPhone {
                 Section {
                     SettingsLink(color: .white, iconColor: .blue, icon: "person.badge.shield.checkmark.fill", id: "Safety Check") {
                         SafetyCheckView()
@@ -114,7 +114,7 @@ struct PrivacySecurityView: View {
                     SensitiveContentWarningView()
                 }
             } footer: {
-                Text("Detect nude photos and videos before they are viewed on your \(Device().model), and receive guidance to help make a safe choice. Apple does not have access to the photos or videos. [Learn more...](https://support.apple.com/en-us/105071)")
+                Text("Detect nude photos and videos before they are viewed on your \(UIDevice.current.model), and receive guidance to help make a safe choice. Apple does not have access to the photos or videos. [Learn more...](https://support.apple.com/en-us/105071)")
             }
             
             Section {

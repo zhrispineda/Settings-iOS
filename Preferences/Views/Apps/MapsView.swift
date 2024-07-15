@@ -48,7 +48,7 @@ struct MapsView: View {
                 NavigationLink("Cycling", destination: CyclingView())
             }
             
-            if !UIDevice.isSimulator && Device().isPhone {
+            if !UIDevice.isSimulator && UIDevice.iPhone {
                 Section {
                     NavigationLink("Spoken Directions") {}
                 }

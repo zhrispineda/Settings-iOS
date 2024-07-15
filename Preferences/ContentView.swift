@@ -13,7 +13,6 @@ let tabletOnly = ["Multitasking & Gestures"]
 
 struct ContentView: View {
     // Variables
-    @EnvironmentObject var device: Device
     @State private var searchText = String()
     @State private var showingSignInSheet = false
     @State private var selection: SettingsModel? = .general
@@ -35,7 +34,7 @@ struct ContentView: View {
             HStack(spacing: 0.25) {
                 NavigationStack {
                     // MARK: - iPadOS Settings
-                    if device.isTablet {
+                    if UIDevice.iPad {
                         List(selection: $selection) {
                             Button {
                                 showingSignInSheet.toggle()
@@ -176,8 +175,8 @@ struct ContentView: View {
                         .searchable(text: $searchText)
                     }
                 }
-                .frame(maxWidth: device.isTablet ? (isOnLandscapeOrientation ? 415 : 320) : nil)
-                if device.isTablet {
+                .frame(maxWidth: UIDevice.iPad ? (isOnLandscapeOrientation ? 415 : 320) : nil)
+                if UIDevice.iPad {
                     NavigationStack {
                         destination
                     }
@@ -190,8 +189,6 @@ struct ContentView: View {
 
 // MARK: Apple Account Button
 struct AppleAccountSection: View {
-    @EnvironmentObject var deviceInfo: Device
-    
     var body: some View {
         NavigationLink {} label: {
             HStack {
@@ -272,5 +269,4 @@ struct SettingsLinkSection: View {
 
 #Preview {
     ContentView()
-        .environmentObject(Device())
 }

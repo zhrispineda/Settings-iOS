@@ -18,18 +18,18 @@ struct BatteryView: View {
                 Toggle("Battery Percentage", isOn: $batteryPercentageEnabled)
                 Toggle("Low Power Mode", isOn: $lowPowerModeEnabled)
             } footer: {
-                Text("Low Power Mode temporarily reduces background activity like downloads and mail fetch until you can fully charge your \(Device().model).")
+                Text("Low Power Mode temporarily reduces background activity like downloads and mail fetch until you can fully charge your \(UIDevice.current.model).")
             }
             
             Section {
                 if UIDevice.DeviceSupportsBatteryInformation {
                     CustomNavigationLink(title: "Battery Health", status: "Normal", destination: BatteryHealthView())
-                    if Device().isPhone {
+                    if UIDevice.iPhone {
                         //CustomNavigationLink(title: "Charging Optimization", status: "Optimized", destination: ChargingOptimizationView())
                         NavigationLink("Charging", destination: ChargingOptimizationView())
                     }
                 } else {
-                    if Device().isPhone {
+                    if UIDevice.iPhone {
                         NavigationLink("Battery Health & Charging", destination: BatteryHealthChargingView())
                     }
                 }

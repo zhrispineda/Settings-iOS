@@ -1,27 +1,12 @@
 //
-//  RequiredCapabilities.swift
+//  UIDeviceExtensions.swift
 //  Preferences
+//
+//  An extension on UIDevice to add a custom functions.
 //
 
 import SwiftUI
 
-// MARK: Device class; Simulator only
-@MainActor
-class Device: ObservableObject {
-    @Published var model: String = UIDevice.current.localizedModel
-    
-    var isPhone = UIDevice.current.localizedModel == "iPhone"
-    var isTablet = UIDevice.current.localizedModel == "iPad"
-    var isPro = UIDevice.current.name.contains("Pro")
-    var isLargestTablet = UIDevice.current.name.contains("12.9")
-    var isStageManagerCapable = UIDevice.current.name.contains("Air (5th") || UIDevice.current.name.contains("M2") || UIDevice.current.name.contains("M4") || UIDevice.current.name.contains("Pro (11") || UIDevice.current.name.contains("(12.9-inch) (3") || UIDevice.current.name.contains("(12.9-inch) (4") || UIDevice.current.name.contains("(12.9-inch) (5") || UIDevice.current.name.contains("(12.9-inch) (6")
-    var isPhotographicStylesCapable = UIDevice.current.name.contains("SE (3") || UIDevice.current.name.contains("iPhone 13") || UIDevice.current.name.contains("14") || UIDevice.current.name.contains("15")
-    var hasFaceAuth = !UIDevice.current.name.contains("SE") && !UIDevice.current.name.contains("Air") && !UIDevice.current.name.contains("iPad (") && !UIDevice.current.name.contains("iPad mini")
-    
-    var physicalModel = UIDevice.fullModel
-}
-
-// MARK: UIDevice extension for physical devices
 public extension UIDevice {
     static let identifier: String = {
         var systemInfo = utsname()
@@ -130,11 +115,43 @@ public extension UIDevice {
         }
     }()
     
+    static let DeviceSupportsEnhancedMultitasking: Bool = {
+        var identifier = UIDevice.identifier
+        
+        switch identifier {
+        case "iPad8,1", "iPad8,2", "iPad8,3", "iPad8,4", "iPad8,5", "iPad8,6", "iPad8,7", "iPad8,8", "iPad8,9", "iPad8,10", "iPad8,11", "iPad8,12", "iPad13,4", "iPad13,5", "iPad13,6", "iPad13,7", "iPad13,8", "iPad13,9", "iPad13,10", "iPad13,11", "iPad13,16", "iPad13,17", "iPad14,8", "iPad14,9", "iPad14,10", "iPad14,11":
+            return true
+        default:
+            return false
+        }
+    }()
+    
+    static let iPad: Bool = {
+        var identifier = UIDevice.identifier
+        return identifier.contains("iPad")
+    }()
+    
+    static let iPhone: Bool = {
+        var identifier = UIDevice.identifier
+        return identifier.contains("iPhone")
+    }()
+    
     static let HomeButtonCapability: Bool = { // Home Button
         var identifier = UIDevice.identifier
         
         switch identifier {
         case "iPhone12,8", "iPhone14,6", "iPad11,3", "iPad7,11", "iPad7,12", "iPad11,1", "iPad11,2", "iPad11,6", "iPad11,7", "iPad12,1", "iPad12,2":
+            return true
+        default:
+            return false
+        }
+    }()
+    
+    static let LargerSize: Bool = { // iPad 12.9/13 inch display
+        var identifier = UIDevice.identifier
+        
+        switch identifier {
+        case "iPad8,5", "iPad8,6", "iPad8,7", "iPad8,8", "iPad8,11", "iPad8,12", "iPad13,8", "iPad13,9", "iPad13,10", "iPad13,11", "iPad14,10", "iPad14,11", "iPad16,5", "iPad16,6":
             return true
         default:
             return false
@@ -161,6 +178,35 @@ public extension UIDevice {
         default:
             return false
         }
+    }()
+    
+    static let PearlIDCapability: Bool = { // Face ID
+        var identifier = UIDevice.identifier
+        
+        switch identifier {
+        case "iPhone12,8", "iPhone14,6", "iPad7,11", "iPad7,12", "iPad11,1", "iPad11,2", "iPad11,3", "iPad11,4", "iPad11,6", "iPad11,7", "iPad12,1", "iPad12,2", "iPad13,1", "iPad13,2", "iPad13,16", "iPad13,17", "iPad14,8", "iPad14,9", "iPad14,10", "iPad14,11":
+            return false
+        default:
+            return true
+            
+        }
+    }()
+    
+    static let PhotographicStylesCapability = { // Photographic Styles
+        var identifier = UIDevice.identifier
+        
+        switch identifier {
+        case "iPhone14,2", "iPhone14,3", "iPhone14,4", "iPhone14,5", "iPhone14,6", "iPhone14,7", "iPhone14,8", "iPhone15,2", "iPhone15,3", "iPhone15,4", "iPhone15,5", "iPhone16,1", "iPhone16,2":
+            return true
+        default:
+            return false
+        }
+    }()
+    
+    static let ProDevice = {
+        var identifier = UIDevice.identifier
+        
+        return identifier.contains("Pro")
     }()
     
     static let RingerButtonCapability: Bool = { // Action Button

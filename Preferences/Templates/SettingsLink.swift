@@ -102,5 +102,4 @@ struct SettingsLink<Content: View>: View {
 
 #Preview {
     ContentView()
-      .environmentObject(Device())
 }

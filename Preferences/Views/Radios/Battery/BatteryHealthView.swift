@@ -16,7 +16,7 @@ struct BatteryHealthView: View {
             Section {
                 LabeledContent("Battery Health", value: "Normal")
             } footer: {
-                Text("This \(Device().model) battery is performing as expected. [About Battery & Warranty...](#)")
+                Text("This \(UIDevice.current.model) battery is performing as expected. [About Battery & Warranty...](#)")
             }
             
             Section {
@@ -28,10 +28,10 @@ struct BatteryHealthView: View {
             Section {
                 LabeledContent("Cycle Count", value: "0")
             } footer: {
-                Text("This is the number of times \(Device().model) has used your battery's capacity. [Learn more...](https://www.apple.com/batteries/why-lithium-ion/)")
+                Text("This is the number of times \(UIDevice.current.model) has used your battery's capacity. [Learn more...](https://www.apple.com/batteries/why-lithium-ion/)")
             }
             
-            if Device().isTablet {
+            if UIDevice.iPad {
                 Section {
                     Toggle("80% Limit", isOn: $eightyPercentLimitEnabled)
                 } footer: {

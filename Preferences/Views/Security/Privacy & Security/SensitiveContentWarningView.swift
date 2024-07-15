@@ -21,7 +21,7 @@ struct SensitiveContentWarningView: View {
             Section {
                 Toggle("Sensitive Content Warning", isOn: $sensitiveContentWarningEnabled.animation())
             } footer: {
-                Text("Detect nude photos and videos before they are viewed on your \(Device().model), and receive guidance to help make a safe choice. Apple does not have access to the photos or videos. [Learn more...](https://support.apple.com/en-us/105071)")
+                Text("Detect nude photos and videos before they are viewed on your \(UIDevice.current.model), and receive guidance to help make a safe choice. Apple does not have access to the photos or videos. [Learn more...](https://support.apple.com/en-us/105071)")
             }
             
             Section {

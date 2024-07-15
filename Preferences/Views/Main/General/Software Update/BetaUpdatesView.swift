@@ -24,7 +24,7 @@ struct BetaUpdatesView: View {
                 .pickerStyle(.inline)
                 .labelsHidden()
             } footer: {
-                Text("Receive beta updates on this \(Device().model) to test-drive pre-release versions of \(UIDevice().systemName) and provide feedback to help make Apple software even better. [Learn more...](https://beta.apple.com)")
+                Text("Receive beta updates on this \(UIDevice.current.model) to test-drive pre-release versions of \(UIDevice().systemName) and provide feedback to help make Apple software even better. [Learn more...](https://beta.apple.com)")
             }
             
             Section {

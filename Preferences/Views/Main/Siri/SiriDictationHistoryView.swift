@@ -18,7 +18,7 @@ struct SiriDictationHistoryView: View {
         CustomList(title: "Siri & Dictation History") {
             Section {
                 Button("Delete Siri & Dictation History") {
-                    Device().isPhone ? showingDeleteHistoryDialog.toggle() : showingDeleteHistoryAlert.toggle()
+                    UIDevice.iPhone ? showingDeleteHistoryDialog.toggle() : showingDeleteHistoryAlert.toggle()
                 }
                 .foregroundStyle(.red)
                 .alert("Delete Siri & Dictation History", isPresented: $showingDeleteHistoryAlert) {
@@ -27,7 +27,7 @@ struct SiriDictationHistoryView: View {
                     }
                     Button("Cancel", role: .cancel) {}
                 } message: {
-                    Text("Siri & Dictation interactions currently associated with this \(Device().model) will be deleted from Apple servers.")
+                    Text("Siri & Dictation interactions currently associated with this \(UIDevice.current.model) will be deleted from Apple servers.")
                 }
                 .confirmationDialog("Delete Siri & Dictation History", isPresented: $showingDeleteHistoryDialog, titleVisibility: .visible) {
                     Button("Delete Siri & Dictation History", role: .destructive) { showingProcessRequestAlert.toggle()
@@ -35,7 +35,7 @@ struct SiriDictationHistoryView: View {
                     }
                     Button("Cancel", role: .cancel) {}
                 } message: {
-                    Text("Siri & Dictation interactions currently associated with this \(Device().model) will be deleted from Apple servers.")
+                    Text("Siri & Dictation interactions currently associated with this \(UIDevice.current.model) will be deleted from Apple servers.")
                 }
                 .alert("Your Process Is Being Requested", isPresented: $showingProcessRequestAlert) {
                     Button("OK") {}
@@ -43,7 +43,7 @@ struct SiriDictationHistoryView: View {
                     Text("Your Siri and Dictation history will be deleted.")
                 }
             } footer: {
-                Text("Delete Siri & Dictation interactions currently associated with this \(Device().model) from Apple servers. [About Improve Siri & Dictation...](#)")
+                Text("Delete Siri & Dictation interactions currently associated with this \(UIDevice.current.model) from Apple servers. [About Improve Siri & Dictation...](#)")
             }
         }
     }

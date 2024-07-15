@@ -34,7 +34,7 @@ struct BatteryHealthChargingView: View {
             Section {
                 Text("Peak Performance Capability")
             } footer: {
-                Text("Built-in dynamic software and hardware systems will help counter performance impacts that may be noticed as your \(Device().model) battery chemically ages.")
+                Text("Built-in dynamic software and hardware systems will help counter performance impacts that may be noticed as your \(UIDevice.current.model) battery chemically ages.")
             }
             
             Section {
@@ -44,7 +44,7 @@ struct BatteryHealthChargingView: View {
                         temporaryOptimizePauseEnabled = false
                     }
             } footer: {
-                Text("To reduce battery aging, \(Device().model) learns from your daily charging routines so it can wait to finish charging past 80% until you need to use it. \(temporaryOptimizePauseEnabled ? "Optimized Battery Charging is off until 6:00 AM. " : "")")
+                Text("To reduce battery aging, \(UIDevice.current.model) learns from your daily charging routines so it can wait to finish charging past 80% until you need to use it. \(temporaryOptimizePauseEnabled ? "Optimized Battery Charging is off until 6:00 AM. " : "")")
             }
             .alert("Optimized Battery Charging helps reduce battery aging.", isPresented: $showingOptimizeWarning, actions: {
                 Button("**Turn Off Until Tomorrow**", role: .none) {
@@ -65,7 +65,7 @@ struct BatteryHealthChargingView: View {
                         temporaryCleanPauseEnabled = false
                     }
             } footer: {
-                Text("In your region, \(Device().model) will try to reduce your carbon footprint by selectively charging when lower carbon emission electricity is available. \(Device().model) learns from your daily charging routine so it can reach full charge before you need to use it. \(temporaryCleanPauseEnabled ? "Clean Energy Charging is off until 6:00 AM. " : "")[Learn more...](https://support.apple.com/en-us/108068)")
+                Text("In your region, \(UIDevice.current.model) will try to reduce your carbon footprint by selectively charging when lower carbon emission electricity is available. \(UIDevice.current.model) learns from your daily charging routine so it can reach full charge before you need to use it. \(temporaryCleanPauseEnabled ? "Clean Energy Charging is off until 6:00 AM. " : "")[Learn more...](https://support.apple.com/en-us/108068)")
             }
             .alert("Clean Energy Charging helps reduce carbon footprint.", isPresented: $showingCleanEnergyWarning, actions: {
                 Button("**Turn Off Until Tomorrow**", role: .none) {

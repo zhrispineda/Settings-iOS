@@ -17,15 +17,15 @@ struct FaceAttentionView: View {
             Section {
                 Toggle("Require Attention for Face ID", isOn: $requireAttentionEnabled)
             } footer: {
-                Text("TrueDepth camera will provide an additional level of security by verifying that you are looking at \(Device().model) before unlocking. Some sunglasses may block attention detection.")
+                Text("TrueDepth camera will provide an additional level of security by verifying that you are looking at \(UIDevice.current.model) before unlocking. Some sunglasses may block attention detection.")
             }
             
             Section {
                 Toggle("Attention Aware Features", isOn: $attentionAwareFeaturesEnabled)
             } footer: {
-                if Device().isPhone {
+                if UIDevice.iPhone {
                     Text("iPhone will check for attention before dimming the display, expanding a notification when locked, or lowering the volume of some alerts.")
-                } else if Device().isTablet {
+                } else if UIDevice.iPad {
                     Text("iPad will check for attention before dimming the display or lowering the volume of some alerts.")
                 }
             }

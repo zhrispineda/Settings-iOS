@@ -26,7 +26,7 @@ struct DisplayZoomView: View {
             .pickerStyle(.inline)
         }
         .toolbar {
-            if Device().isTablet {
+            if UIDevice.iPad {
                 ToolbarItem(placement: .topBarLeading) {
                     Button {
                         dismiss()
@@ -37,7 +37,7 @@ struct DisplayZoomView: View {
             }
             ToolbarItem(placement: .topBarTrailing) {
                 Button {
-                    Device().isPhone ? showingChangeDialog.toggle() : showingChangeAlert.toggle()
+                    UIDevice.iPhone ? showingChangeDialog.toggle() : showingChangeAlert.toggle()
                 } label: {
                     Text("Set")
                 }

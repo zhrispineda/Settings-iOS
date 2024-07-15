@@ -45,12 +45,12 @@ struct RestrictionsLocationServicesView: View {
                     })
                     .onChange(of: locationServicesEnabled) {
                         if !locationServicesEnabled {
-                            Device().isPhone ? showingDisableLocationServicesDialog.toggle() : showingDisableLocationServicesAlert.toggle()
+                            UIDevice.iPhone ? showingDisableLocationServicesDialog.toggle() : showingDisableLocationServicesAlert.toggle()
                         }
                     }
                 NavigationLink("Location Alerts", destination: LocationAlertsView())
             } footer: {
-                Text("\(Device().isTablet ? "Using Location Services requires turning on Wi-Fi.\n\n" : "")Location Services uses \(Device().isTablet ? "Bluetooth and crowd-sourced Wi-Fi hotspot locations" : "GPS, Bluetooth, and crowd-sourced Wi-Fi hotspot and cell tower locations") to determine your approximate location. [About Location Services and Privacy...](#)")
+                Text("\(UIDevice.iPad ? "Using Location Services requires turning on Wi-Fi.\n\n" : "")Location Services uses \(UIDevice.iPad ? "Bluetooth and crowd-sourced Wi-Fi hotspot locations" : "GPS, Bluetooth, and crowd-sourced Wi-Fi hotspot and cell tower locations") to determine your approximate location. [About Location Services and Privacy...](#)")
             }
             
             if locationServicesEnabled {

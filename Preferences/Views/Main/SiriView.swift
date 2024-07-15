@@ -92,12 +92,12 @@ struct SiriView: View {
             } header: {
                 Text("Siri Requests")
             } footer: {
-                Text(siriEnabled ? "Voice input is processed on \(Device().model), but transcripts of your requests are sent to Apple. [About Siri & Privacy...](#)" : "Siri can help you get things done just by asking. [About Siri & Privacy...](#)")
+                Text(siriEnabled ? "Voice input is processed on \(UIDevice.current.model), but transcripts of your requests are sent to Apple. [About Siri & Privacy...](#)" : "Siri can help you get things done just by asking. [About Siri & Privacy...](#)")
             }
             
             Section {
                 Toggle("Suggest Apps Before Searching", isOn: $showSuggestionsEnabled)
-                Button("Reset Hidden Suggestions") { Device().isPhone ? showingResetHiddenSuggestionsAlert.toggle() : showingResetHiddenSuggestionsPopup.toggle() }
+                Button("Reset Hidden Suggestions") { UIDevice.iPhone ? showingResetHiddenSuggestionsAlert.toggle() : showingResetHiddenSuggestionsPopup.toggle() }
                     .alert("Reset", isPresented: $showingResetHiddenSuggestionsPopup) {
                         Button("Reset", role: .destructive) {}
                         Button("Cancel", role: .cancel) {}

@@ -34,7 +34,7 @@ struct DisplayBrightnessView: View {
                     } label: {
                         VStack(spacing: 15) {
                             ZStack {
-                                Image("\(Device().model.lowercased())-appearance-light")
+                                Image("\(UIDevice.current.model.lowercased())-appearance-light")
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 60)
@@ -60,7 +60,7 @@ struct DisplayBrightnessView: View {
                     } label: {
                         VStack(spacing: 15) {
                             ZStack {
-                                Image("\(Device().model.lowercased())-appearance-dark")
+                                Image("\(UIDevice.current.model.lowercased())-appearance-dark")
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 60)
@@ -119,7 +119,7 @@ struct DisplayBrightnessView: View {
             } header: {
                 Text("Brightness")
             } footer: {
-                Text("Automatically adapt \(Device().model) display based on ambient lighting conditions to make colors appear consistent in different environments.")
+                Text("Automatically adapt \(UIDevice.current.model) display based on ambient lighting conditions to make colors appear consistent in different environments.")
             }
             
             Section {
@@ -144,7 +144,7 @@ struct DisplayBrightnessView: View {
             } header: {
                 Text("Display")
             } footer: {
-                Text("Choose a view for \(Device().model). Larger Text shows larger controls. Default shows more content.")
+                Text("Choose a view for \(UIDevice.current.model). Larger Text shows larger controls. Default shows more content.")
             }
         }
     }

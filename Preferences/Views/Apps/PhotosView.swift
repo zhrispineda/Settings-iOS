@@ -53,7 +53,7 @@ struct PhotosView: View {
             
             Section {
                 Button("Reset Suggested Memories") {
-                    Device().isPhone ? showingResetMemoriesAlert.toggle() : showingResetMemoriesPopup.toggle()
+                    UIDevice.iPhone ? showingResetMemoriesAlert.toggle() : showingResetMemoriesPopup.toggle()
                 }
                 .confirmationDialog("Resetting will allow previously blocked places, dates, or holidays to once again be included in new Memories.", isPresented: $showingResetMemoriesAlert, titleVisibility: .visible) {
                     Button("Reset", role: .destructive) {}
@@ -66,7 +66,7 @@ struct PhotosView: View {
                     Text("Resetting will allow previously blocked places, dates, or holidays to once again be included in new Memories.")
                 }
                 Button("Reset People & Pets Suggestions") {
-                    Device().isPhone ? showingResetPeoplePetSuggestionsAlert.toggle() : showingResetPeoplePetSuggestionsPopup.toggle()
+                    UIDevice.iPhone ? showingResetPeoplePetSuggestionsAlert.toggle() : showingResetPeoplePetSuggestionsPopup.toggle()
                 }
                 .confirmationDialog("Resetting will allow people and pets suggested less to once again be fully included in new Memories and Featured Photos.", isPresented: $showingResetPeoplePetSuggestionsAlert, titleVisibility: .visible) {
                     Button("Reset", role: .destructive) {}

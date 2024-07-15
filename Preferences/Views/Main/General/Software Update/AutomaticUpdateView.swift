@@ -21,7 +21,7 @@ struct AutomaticUpdateView: View {
             } header: {
                 Text("Automatically Install")
             } footer: {
-                Text("Automatically install \(UIDevice().systemName) software updates when this \(Device().model) is connected to Wi-Fi, charging, and locked.")
+                Text("Automatically install \(UIDevice().systemName) software updates when this \(UIDevice.current.model) is connected to Wi-Fi, charging, and locked.")
             }
             
             Section {

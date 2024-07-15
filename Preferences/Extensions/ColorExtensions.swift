@@ -4,7 +4,6 @@
 //  An extension on Colors to add custom colors.
 //
 
-import Foundation
 import SwiftUI
 
 public extension Color {

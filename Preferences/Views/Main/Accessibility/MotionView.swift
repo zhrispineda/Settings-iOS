@@ -55,7 +55,7 @@ struct MotionView: View {
                 Toggle("Auto-Play Video Previews", isOn: $autoPlayVideoPreviewsEnabled)
             }
             
-            if Device().isPro {
+            if UIDevice.ProDevice {
                 Section {
                     Toggle("Limit Frame Rate", isOn: $limitFrameRateEnabled)
                 } footer: {

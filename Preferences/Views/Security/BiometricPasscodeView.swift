@@ -34,28 +34,28 @@ struct BiometricPasscodeView: View {
     @State private var showingEraseConfirmation = false
     
     var body: some View {
-        CustomList(title: "\(Device().hasFaceAuth ? "Face" : "Touch") ID & Passcode") {
-            SectionHelp(title: "\(Device().hasFaceAuth ? "Face" : "Touch") ID & Passcode", color: Device().hasFaceAuth ? .green : .white, icon: Device().hasFaceAuth ? "faceid" : "touchid", description: "\(Device().hasFaceAuth ? "Manage apps using Face ID and other \(Device().model) access settings, set up alternate appearances, and change your passcode." : "Turn on Touch ID and set a passcode to unlock your \(Device().model), authorize purchases, and access sensitive data.") [Learn more...](\(Device().hasFaceAuth ? "https://support.apple.com/guide/iphone/set-up-face-id-iph6d162927a/ios" : "https://support.apple.com/guide/iphone/set-up-touch-id-iph672384a0b/ios"))")
+        CustomList(title: "\(UIDevice.PearlIDCapability ? "Face" : "Touch") ID & Passcode") {
+            SectionHelp(title: "\(UIDevice.PearlIDCapability ? "Face" : "Touch") ID & Passcode", color: UIDevice.PearlIDCapability ? .green : .white, icon: UIDevice.PearlIDCapability ? "faceid" : "touchid", description: "\(UIDevice.PearlIDCapability ? "Manage apps using Face ID and other \(UIDevice.current.model) access settings, set up alternate appearances, and change your passcode." : "Turn on Touch ID and set a passcode to unlock your \(UIDevice.current.model), authorize purchases, and access sensitive data.") [Learn more...](\(UIDevice.PearlIDCapability ? "https://support.apple.com/guide/iphone/set-up-face-id-iph6d162927a/ios" : "https://support.apple.com/guide/iphone/set-up-touch-id-iph672384a0b/ios"))")
             
             Section {
-                Toggle("\(Device().model) Unlock", isOn: $allowFingerprintForUnlock)
+                Toggle("\(UIDevice.current.model) Unlock", isOn: $allowFingerprintForUnlock)
                 Toggle("iTunes & App Store", isOn: $allowFingerprintForStore)
                 Toggle("Contactless & Payments", isOn: $allowFingerprintForContactlessPayment)
                 Toggle("Password AutoFill", isOn: $forceAuthenticationBeforeAutoFill)
             } header: {
-                Text("Use \(Device().hasFaceAuth ? "Face" : "Touch") ID for:")
+                Text("Use \(UIDevice.PearlIDCapability ? "Face" : "Touch") ID for:")
             } footer: {
-                Text(Device().hasFaceAuth ? "\(Device().model) can recognize the unique, three-dimensional features of your face to allow secure access to apps and payments. [About Face ID & Privacy...](#)" : "Touch ID lets you use your fingerprint to unlock your device and make purchases with Apple Pay, App Store, and Apple Books. [About Touch ID & Privacy...](#)")
+                Text(UIDevice.PearlIDCapability ? "\(UIDevice.current.model) can recognize the unique, three-dimensional features of your face to allow secure access to apps and payments. [About Face ID & Privacy...](#)" : "Touch ID lets you use your fingerprint to unlock your device and make purchases with Apple Pay, App Store, and Apple Books. [About Touch ID & Privacy...](#)")
             }
             
-            if Device().hasFaceAuth {
+            if UIDevice.PearlIDCapability {
                 Section {
                     Button("Set Up an Alternate Appearance") {}
                 } footer: {
                     Text("In addition to continuously learning how you look, Face ID can recognize an alternate appearance.")
                 }
                 
-                if Device().isPhone {
+                if UIDevice.iPhone {
                     Section {
                         Toggle("Face ID with a Mask", isOn: $allowMaskUnlock)
                     } footer: {
@@ -73,16 +73,16 @@ struct BiometricPasscodeView: View {
                 } header: {
                     Text("Attention")
                 } footer: {
-                    Text("TrueDepth camera provides an additional level of security by verifying that you‘re looking at \(Device().model) before authenticating. Attention detection may not work with some sunglasses.\(Device().isPhone ? " Face ID will always require attention when you‘re wearing a mask." : "")")
+                    Text("TrueDepth camera provides an additional level of security by verifying that you‘re looking at \(UIDevice.current.model) before authenticating. Attention detection may not work with some sunglasses.\(UIDevice.iPhone ? " Face ID will always require attention when you‘re wearing a mask." : "")")
                 }
                 
                 Section {
                     Toggle("Attention Aware Features", isOn: $attentionAwareFeatures)
                 } footer: {
-                    Text("\(Device().model) will check for attention before dimming the display, expanding a notification when locked, or lowering the volume of some alerts.")
+                    Text("\(UIDevice.current.model) will check for attention before dimming the display, expanding a notification when locked, or lowering the volume of some alerts.")
                 }
                 
-                if Device().isPhone {
+                if UIDevice.iPhone {
                     CustomNavigationLink(title: "Stolen Device Protection", status: "Off", destination: EmptyView())
                 }
             } else {
@@ -96,7 +96,7 @@ struct BiometricPasscodeView: View {
                 Button("Turn Passcode Off") {}
                 Button("Change Passcode") {}
             } footer: {
-                Text("Changing your passcode on this \(Device().model) will not disconnect it from other devices or reset \(Device().isPhone ? "iPhone Mirroring, Wi-Fi sync," : "Wi-Fi sync") and watch pairing.")
+                Text("Changing your passcode on this \(UIDevice.current.model) will not disconnect it from other devices or reset \(UIDevice.iPhone ? "iPhone Mirroring, Wi-Fi sync," : "Wi-Fi sync") and watch pairing.")
             }
             
             Section {
@@ -110,11 +110,11 @@ struct BiometricPasscodeView: View {
                 Toggle("Lock Screen Widgets", isOn: $allowLockScreenWidgets)
                 Toggle("Live Activities", isOn: $allowLockScreenLiveActivities)
                 Toggle("Siri", isOn: $allowAssistantWhileLocked)
-                if Device().isPhone {
+                if UIDevice.iPhone {
                     Toggle("Reply with Message", isOn: $allowReplyWhileLocked)
                 }
                 Toggle("Home Control", isOn: $allowHomeControlWhileLocked)
-                if Device().isPhone {
+                if UIDevice.iPhone {
                     Toggle("Wallet", isOn: $allowPassbookWhileLocked)
                 }
                 Toggle("Return Missed Calls", isOn: $allowReturnCallsWhileLocked)
@@ -122,13 +122,13 @@ struct BiometricPasscodeView: View {
             } header: {
                 Text("Allow Access when Locked:")
             } footer: {
-                Text(allowUSBRestrictedMode ? "Turn off to prevent accessories from connecting when your \(Device().model) has been locked for more than an hour." : "Unlock \(Device().model) to allow accessories to connect when it has been more than an hour since your \(Device().model) was locked.")
+                Text(allowUSBRestrictedMode ? "Turn off to prevent accessories from connecting when your \(UIDevice.current.model) has been locked for more than an hour." : "Unlock \(UIDevice.current.model) to allow accessories to connect when it has been more than an hour since your \(UIDevice.current.model) was locked.")
             }
             
             Section {
                 Toggle("Erase Data", isOn: $allowEraseAfterFailedAttempts)
                     .confirmationDialog(
-                        "All data on this \(Device().model) will be erased after 10 failed passcode attempts.",
+                        "All data on this \(UIDevice.current.model) will be erased after 10 failed passcode attempts.",
                         isPresented: $showingEraseConfirmation,
                         titleVisibility: .visible
                     ) {
@@ -141,7 +141,7 @@ struct BiometricPasscodeView: View {
                         showingEraseConfirmation = allowEraseAfterFailedAttempts
                     }
             } footer: {
-                Text("Erase all data on this \(Device().model) after 10 failed passcode attempts.\n\nData protection is enabled.")
+                Text("Erase all data on this \(UIDevice.current.model) after 10 failed passcode attempts.\n\nData protection is enabled.")
             }
         }
     }

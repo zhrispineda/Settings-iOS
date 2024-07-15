@@ -25,7 +25,7 @@ struct AirPlaySuggestionsView: View {
             } header: {
                 Text("Suggestion Test Mode")
             } footer: {
-                Text("When using a mode other than “Default“, select an AirPlay-capable TV as the suggested TV to use for testing. This TV must be connected to the same Wi-Fi network as this \(Device().model).")
+                Text("When using a mode other than “Default“, select an AirPlay-capable TV as the suggested TV to use for testing. This TV must be connected to the same Wi-Fi network as this \(UIDevice.current.model).")
             }
             
             if selected != "Default" {

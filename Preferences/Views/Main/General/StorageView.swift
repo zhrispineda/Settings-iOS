@@ -28,12 +28,12 @@ struct StorageView: View {
     }
     
     var body: some View {
-        CustomList(title: "\(Device().model) Storage") {
+        CustomList(title: "\(UIDevice.current.model) Storage") {
             // Graph Section
             Section {
                 VStack {
                     HStack {
-                        Text("\(Device().model)")
+                        Text("\(UIDevice.current.model)")
                         Spacer()
                         Text("65.62 GB of 256 GB used")
                             .font(.subheadline)

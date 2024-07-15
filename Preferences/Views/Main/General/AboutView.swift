@@ -13,13 +13,13 @@ struct AboutView: View {
     @State private var serialNumber = String()
     @State private var availableStorage: String = getAvailableStorage() ?? "N/A"
     @State private var totalStorage: String = getTotalStorage() ?? "N/A"
-    @AppStorage("DeviceName") private var deviceName = UIDevice().model
+    @AppStorage("DeviceName") private var deviceName = UIDevice.current.model
     
     var body: some View {
         CustomList(title: "About") {
             Section {
                 if UIDevice.isSimulator {
-                    LabeledContent("Name", value: Device().model)
+                    LabeledContent("Name", value: UIDevice.current.model)
                 } else {
                     CustomNavigationLink(title: "Name", status: deviceName, destination: NameView())
                 }
@@ -70,7 +70,7 @@ struct AboutView: View {
                     HText("IMEI", status: "00 000000 000000 0") // TODO: Monospaced Digits
                     HText("ICCID", status: "0000000000000000000") // TODO: Monospaced Digits
                 } header: {
-                    Text(UIDevice.HomeButtonCapability && Device().isPhone ? "Physical SIM" : "eSIM")
+                    Text(UIDevice.HomeButtonCapability && UIDevice.iPhone ? "Physical SIM" : "eSIM")
                 }
                 
                 Section {

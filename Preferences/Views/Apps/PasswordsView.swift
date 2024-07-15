@@ -39,7 +39,7 @@ struct PasswordsView: View {
             Section {
                 Toggle("Detect Compromised Passwords", isOn: $detectCompromisedPasswordsEnabled)
             } footer: {
-                Text("\(Device().model) can securely monitor your passwords and alert you if they appear in known data leaks. [About Passwords & Privacy...](#)")
+                Text("\(UIDevice.current.model) can securely monitor your passwords and alert you if they appear in known data leaks. [About Passwords & Privacy...](#)")
             }
             
             Section {

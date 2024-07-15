@@ -19,7 +19,7 @@ struct SoundsHapticsView: View {
     @State private var fixedPositionVolumeControlsEnabled = true
     
     var body: some View {
-        CustomList(title: Device().isPhone ? "Sounds & Haptics" : "Sounds") {
+        CustomList(title: UIDevice.iPhone ? "Sounds & Haptics" : "Sounds") {
             Section {
                 Toggle(isOn: $silentModeEnabled.animation()) {
                     Label(
@@ -35,7 +35,7 @@ struct SoundsHapticsView: View {
             } header: {
                 Text("\nSilent Mode")
             } footer: {
-                Text(silentModeEnabled ? "\(Device().model) will not play ringtones, alerts, and system sounds. \(Device().model) will still play alarms, timers, music, and audio from videos." : "\(Device().model) will play ringtones, alerts, and system sounds.")
+                Text(silentModeEnabled ? "\(UIDevice.current.model) will not play ringtones, alerts, and system sounds. \(UIDevice.current.model) will still play alarms, timers, music, and audio from videos." : "\(UIDevice.current.model) will play ringtones, alerts, and system sounds.")
                     .transition(.slide)
             }
             
@@ -57,7 +57,7 @@ struct SoundsHapticsView: View {
                 .foregroundStyle(.secondary)
                 
                 Toggle("Change with Buttons", isOn: $changeWithButtonsEnabled)
-                if Device().isPhone {
+                if UIDevice.iPhone {
                     CustomNavigationLink(title: "Haptics", status: "Always Play", destination: EmptyView())
                 }
             } header: {
@@ -69,7 +69,7 @@ struct SoundsHapticsView: View {
             Section {
                 CustomNavigationLink(title: "Ringtone", status: "Reflection", destination: EmptyView())
                 CustomNavigationLink(title: "Text Tone", status: "Note", destination: EmptyView())
-                if Device().isPhone {
+                if UIDevice.iPhone {
                     CustomNavigationLink(title: "New Voicemail", status: "Droplet", destination: EmptyView())
                 }
                 CustomNavigationLink(title: "New Mail", status: "None", destination: EmptyView())
@@ -80,22 +80,22 @@ struct SoundsHapticsView: View {
             }
             
             Section {
-                if Device().isPhone {
+                if UIDevice.iPhone {
                     CustomNavigationLink(title: "Keyboard Feedback", status: "Sound", destination: EmptyView())
                 } else {
                     Toggle("Keyboard Clicks", isOn: $keyboardClicksEnabled)
                 }
                 Toggle("Lock Sound", isOn: $lockSoundEnabled)
-                if Device().isPhone {
+                if UIDevice.iPhone {
                     Toggle("System Haptics", isOn: $systemHapticsEnabled)
                 }
             } header: {
-                Text("System Sounds\(Device().isPhone ? " & Haptics" : "")")
+                Text("System Sounds\(UIDevice.iPhone ? " & Haptics" : "")")
             } footer: {
-                Text("Play \(Device().isPhone ? "haptics" : "sounds") for system controls and interactions.")
+                Text("Play \(UIDevice.iPhone ? "haptics" : "sounds") for system controls and interactions.")
             }
             
-            if !Device().isPhone {
+            if UIDevice.iPad {
                 Section {
                     Toggle("Fixed Position Volume Controls", isOn: $fixedPositionVolumeControlsEnabled.animation())
                 } footer: {

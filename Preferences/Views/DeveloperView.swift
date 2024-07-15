@@ -47,9 +47,9 @@ struct DeveloperView: View {
                 Text("Appearance")
             }
             
-            if Device().isPhone || (Device().isTablet && Device().isPro) {
+            if UIDevice.iPhone || (UIDevice.iPad && UIDevice.ProDevice) {
                 Section {
-                    if Device().isPhone {
+                    if UIDevice.iPhone {
                         CustomNavigationLink(title: "View", status: "Default", destination: DisplayZoomView())
                     } else {
                         Button {
@@ -60,14 +60,14 @@ struct DeveloperView: View {
                         .foregroundStyle(Color["Label"])
                         .sheet(isPresented: $showingDisplayZoomSheet) {
                             NavigationStack {
-                                DisplayZoomView(options: Device().isLargestTablet ? ["Larger Text", "Default", "More Space"] : ["Default", "More Space"])
+                                DisplayZoomView(options: UIDevice.LargerSize ? ["Larger Text", "Default", "More Space"] : ["Default", "More Space"])
                             }
                         }
                     }
                 } header: {
                     Text("Display Zoom")
                 } footer: {
-                    Text("Choose a view for \(Device().model). Zoomed shows larger controls. Standard shows more content.")
+                    Text("Choose a view for \(UIDevice.current.model). Zoomed shows larger controls. Standard shows more content.")
                 }
             }
             
@@ -91,7 +91,7 @@ struct DeveloperView: View {
                 Text("Terminate instead of suspending apps when backgrounded to force apps to be relaunched when they are foregrounded.")
             }
             
-            if Device().isPhone { // MARK: Wallet Testing
+            if UIDevice.iPhone { // MARK: Wallet Testing
                 Section("Wallet Testing") {
                     Toggle("Additional Logging", isOn: $additionalLoggingEnabled)
                     Toggle("Allow HTTP Services", isOn: $allowHttpServicesEnabled)

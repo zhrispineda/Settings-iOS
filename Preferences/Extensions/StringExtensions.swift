@@ -5,10 +5,8 @@
 //  An extension on String to add a localization function.
 //
 
-import Foundation
 import SwiftUI
 
-// MARK: String extension
 extension String {
     /// A function for localizing a String with a specified table and optional argument.
     /// ```swift

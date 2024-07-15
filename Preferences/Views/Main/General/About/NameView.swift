@@ -9,14 +9,14 @@ import SwiftUI
 
 struct NameView: View {
     // Variables
-    @AppStorage("DeviceName") private var deviceName = UIDevice().model
+    @AppStorage("DeviceName") private var deviceName = UIDevice.current.model
     @Environment(\.dismiss) private var dismiss
     @FocusState private var focusedName: Bool
     
     var body: some View {
         CustomList(title: "Name") {
             HStack {
-                TextField("Name", text: $deviceName, prompt: Text(Device().model))
+                TextField("Name", text: $deviceName, prompt: Text(UIDevice.current.model))
                     .focused($focusedName)
                     .onAppear {
                         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
@@ -25,7 +25,7 @@ struct NameView: View {
                     }
                     .onSubmit {
                         if deviceName.isEmpty {
-                            deviceName = Device().model
+                            deviceName = UIDevice.current.model
                         }
                         dismiss()
                     }

@@ -179,7 +179,7 @@ struct KeyboardCommandsView: View {
             
             Section {
                 Button("Restore Defaults") {
-                    Device().isPhone ? showingRestoreDefaultsDialog.toggle() : showingRestoreDefaultsAlert.toggle()
+                    UIDevice.iPhone ? showingRestoreDefaultsDialog.toggle() : showingRestoreDefaultsAlert.toggle()
                 }
                 .frame(maxWidth: .infinity)
                 .foregroundStyle(.red)

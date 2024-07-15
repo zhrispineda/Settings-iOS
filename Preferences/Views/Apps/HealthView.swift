@@ -14,7 +14,7 @@ struct HealthView: View {
             
             Section {
                 NavigationLink("Health Details", destination: HealthDetailsView())
-                if Device().isPhone {
+                if UIDevice.iPhone {
                     NavigationLink("Medical ID", destination: MedicalView())
                 }
             } header: {
@@ -27,7 +27,7 @@ struct HealthView: View {
                 Text("Data")
             }
             
-            if Device().isPhone {
+            if UIDevice.iPhone {
                 Section {
                     Link("Open Health Checklist", destination: URL(string: "x-apple-health://")!)
                 } footer: {

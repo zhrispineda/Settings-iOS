@@ -14,7 +14,7 @@ struct AccessibilityView: View {
     var body: some View {
         CustomList(title: "ROOT_LEVEL_TITLE".localize(table: table)) {
             Section {
-                SectionHelp(title: "PLACARD_TITLE".localize(table: table), color: .blue, icon: "accessibility", description: Device().isPhone ? "\("PLACARD_SUBTITLE_IPHONE".localize(table: table)) [\("PLACARD_LEARN_MORE".localize(table: "Accessibility"))](https://support.apple.com/guide/iphone/get-started-with-accessibility-features-iph3e2e4367/ios)" : "\("PLACARD_SUBTITLE_IPAD".localize(table: table)) [\("PLACARD_LEARN_MORE".localize(table: table))](https://support.apple.com/guide/ipad/")
+                SectionHelp(title: "PLACARD_TITLE".localize(table: table), color: .blue, icon: "accessibility", description: UIDevice.iPhone ? "\("PLACARD_SUBTITLE_IPHONE".localize(table: table)) [\("PLACARD_LEARN_MORE".localize(table: "Accessibility"))](https://support.apple.com/guide/iphone/get-started-with-accessibility-features-iph3e2e4367/ios)" : "\("PLACARD_SUBTITLE_IPAD".localize(table: table)) [\("PLACARD_LEARN_MORE".localize(table: table))](https://support.apple.com/guide/ipad/")
             }
             
             Section {
@@ -22,7 +22,7 @@ struct AccessibilityView: View {
                     SettingsLink(icon: "voiceover", id: "VOICEOVER_TITLE".localize(table: table), status: "OFF".localize(table: table)) {}
                     SettingsLink(icon: "arrowtriangles.up.right.down.left.magnifyingglass", id: "ZOOM_TITLE".localize(table: table), status: "OFF".localize(table: table)) {}
                 }
-                if Device().isTablet {
+                if UIDevice.iPad {
                     SettingsLink(color: .blue, icon: "character.magnify", id: "HOVERTEXT_TITLE".localize(table: table), status: "OFF".localize(table: table)) {
                         HoverTextView()
                     }
@@ -49,7 +49,7 @@ struct AccessibilityView: View {
                 SettingsLink(color: .blue, icon: "hand.point.up.left.fill", id: "TOUCH".localize(table: table)) {
                     TouchView()
                 }
-                if Device().hasFaceAuth {
+                if UIDevice.PearlIDCapability {
                     SettingsLink(color: .green, icon: "faceid", id: "FACE_ID".localize(table: table)) {
                         FaceAttentionView()
                     }
@@ -58,7 +58,7 @@ struct AccessibilityView: View {
                     SettingsLink(icon: "square.grid.2x2", id: "ScannerSwitchTitle".localize(table: table)) {}
                     SettingsLink(color: .blue, icon: "voice.control", id: "CommandAndControlTitle".localize(table: table)) {}
                     SettingsLink(color: .indigo, icon: "eye.tracking", id: "Eye Tracking") {}
-                    if Device().isPhone {
+                    if UIDevice.iPhone {
                         SettingsLink(color: .blue, icon: "iphone.side.button.arrow.left", id: "SIDE_CLICK_TITLE".localize(table: table)) {}
                         SettingsLink(color: .blue, icon: "inset.filled.applewatch.case", id: "APPLE_WATCH_REMOTE_SCREEN".localize(table: table)) {}
                     } else {
@@ -66,7 +66,7 @@ struct AccessibilityView: View {
                         SettingsLink(color: .gray, icon: "pencil", id: "PencilTitle".localize(table: table)) {}
                     }
                 }
-                if Device().isPhone {
+                if UIDevice.iPhone {
                     SettingsLink(color: .blue, icon: "iphone.badge.dot.radiowaves.up.forward", id: "CONTROL_NEARBY_DEVICES".localize(table: table)) {
                         ControlNearbyDevicesView()
                     }
@@ -88,7 +88,7 @@ struct AccessibilityView: View {
                 }
                 if !UIDevice.isSimulator {
                     SettingsLink(icon: "waveform.bubble.fill", id: "RTT_LIVE_TRANSCRIPTIONS_LABEL".localize(table: table)) {}
-                    if Device().isPhone {
+                    if UIDevice.iPhone {
                         SettingsLink(color: .red, icon: "apple.haptics.and.music.note", id: "Music Haptics") {}
                     }
                 }

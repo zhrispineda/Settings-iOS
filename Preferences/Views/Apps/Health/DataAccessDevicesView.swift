@@ -29,7 +29,7 @@ struct DataAccessDevicesView: View {
             }
             
             Section {
-                Label(UIDevice.isSimulator ? "\(UIDevice().systemName) Simulator" : Device().model, systemImage: "\(Device().model.lowercased())")
+                Label(UIDevice.isSimulator ? "\(UIDevice().systemName) Simulator" : UIDevice.current.model, systemImage: "\(UIDevice.current.model.lowercased())")
             } header: {
                 Text("Devices")
             }

@@ -25,7 +25,7 @@ struct WalkingView: View {
                 Text("Avoid")
             }
             
-            if Device().isPhone {
+            if UIDevice.iPhone {
                 Section {
                     Toggle("Raise to View", isOn: $raiseToView)
                 } header: {

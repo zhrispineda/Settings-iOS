@@ -29,7 +29,7 @@ struct FullKeyboardAccessView: View {
                     }
             } footer: {
                 Text("""
-                    **Use an external keyboard to control your \(Device().model).**
+                    **Use an external keyboard to control your \(UIDevice.current.model).**
                     \u{2022} To show Help: Tab H
                     \u{2022} To move forward: Tab
                     \u{2022} To move backward: \u{21E7} Tab

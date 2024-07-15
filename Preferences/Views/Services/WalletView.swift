@@ -24,7 +24,7 @@ struct WalletView: View {
     
     var body: some View {
         CustomList(title: "Wallet & Apple Pay") {
-            if Device().isPhone {
+            if UIDevice.iPhone {
                 if UIDevice.isSimulator {
                     PermissionsView(appName: "Wallet", cellular: false, location: false, cellularEnabled: $cellularEnabled)
                 } else {
@@ -36,7 +36,7 @@ struct WalletView: View {
                 Section {
                     Toggle("Apple Cash", isOn: $appleCashEnabled.animation())
                 } footer: {
-                    Text("Enable sending and receiving money on this \(Device().model).")
+                    Text("Enable sending and receiving money on this \(UIDevice.current.model).")
                 }
                 
                 Section {
@@ -61,11 +61,11 @@ struct WalletView: View {
                     Text("Payment Cards")
                 } footer: {
                     if !appleCashEnabled {
-                        Text("Pay with \(Device().hasFaceAuth ? "Face" : "Touch") ID using Apple Pay. Make purchases in apps and on the web without entering your card and shipping details. [See how your data is managed...](#)")
+                        Text("Pay with \(UIDevice.PearlIDCapability ? "Face" : "Touch") ID using Apple Pay. Make purchases in apps and on the web without entering your card and shipping details. [See how your data is managed...](#)")
                     }
                 }
                 
-                if Device().isPhone {
+                if UIDevice.iPhone {
                     Section {
                         Toggle("Double-Click \(UIDevice.HomeButtonCapability ? "Home" : "Side") Button", isOn: $doubleClickButtonEnabled)
                     } footer: {
@@ -78,13 +78,13 @@ struct WalletView: View {
                 Toggle("Hide Expired Passes", isOn: $hideExpiredPassesEnabled)
             }
             
-            if !UIDevice.isSimulator && Device().isPhone {
+            if !UIDevice.isSimulator && UIDevice.iPhone {
                 Section {
                     CustomNavigationLink(title: "Express Transit Card", status: "None", destination: EmptyView())
                 } header: {
                     Text("Transit Cards")
                 } footer: {
-                    Text("Your selected Express Transit card works automatically, without requiring \(Device().hasFaceAuth ? "Face" : "Touch") ID or your passcode, and may be available when your iPhone needs to be charged.")
+                    Text("Your selected Express Transit card works automatically, without requiring \(UIDevice.PearlIDCapability ? "Face" : "Touch") ID or your passcode, and may be available when your iPhone needs to be charged.")
                 }
                 
                 if appleCashEnabled {
@@ -126,7 +126,7 @@ struct WalletView: View {
                     } header: {
                         Text("Order Tracking")
                     } footer: {
-                        Text("Orders from participating merchants will be automatically added to Wallet\(Device().isPhone ? "." : "on your iPhone.")")
+                        Text("Orders from participating merchants will be automatically added to Wallet\(UIDevice.iPhone ? "." : "on your iPhone.")")
                     }
                 }
                 

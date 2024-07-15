@@ -67,5 +67,4 @@ struct IconToggle: View {
 
 #Preview {
     ContentView()
-        .environmentObject(Device())
 }

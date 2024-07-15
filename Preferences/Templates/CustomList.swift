@@ -29,13 +29,13 @@ struct CustomList<Content: View>: View {
             List {
                 content
             }
-            .contentMargins(.horizontal, Device().isPhone ? nil : (isOnLandscapeOrientation ? 145 : 35), for: .scrollContent)
+            .contentMargins(.horizontal, UIDevice.iPhone ? nil : (isOnLandscapeOrientation ? 145 : 35), for: .scrollContent)
             .navigationTitle(LocalizedStringKey(title))
             .navigationBarTitleDisplayMode(.inline)
             .padding(.top, topPadding ? 0 : -19)
         }
         .onReceive(NotificationCenter.default.publisher(for: UIDevice.orientationDidChangeNotification)) { _ in
-            if !Device().isPhone && UIDevice.current.orientation.rawValue <= 4 {
+            if UIDevice.iPad && UIDevice.current.orientation.rawValue <= 4 {
                 isOnLandscapeOrientation = UIDevice.current.orientation.isLandscape
             }
         }
@@ -44,5 +44,4 @@ struct CustomList<Content: View>: View {
 
 #Preview {
     ContentView()
-        .environmentObject(Device())
 }

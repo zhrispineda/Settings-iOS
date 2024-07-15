@@ -32,12 +32,12 @@ struct CameraView: View {
                 if UIDevice.CinematicModeCapability {
                     CustomNavigationLink(title: "Record Cinematic", status: "1080p at 30 fps", destination: EmptyView())
                 }
-                if Device().isPhone {
+                if UIDevice.iPhone {
                     CustomNavigationLink(title: "Record Sound", status: "Stereo", destination: EmptyView())
                 }
                 NavigationLink("Formats") {}
                 NavigationLink("Preserve Settings") {}
-                if Device().isPhone {
+                if UIDevice.iPhone {
                     Toggle("Use Volume Up for Burst", isOn: $useVolumeUpBurstEnabled)
                 }
                 Toggle("Scan QR Codes", isOn: $scanQrCodesEnabled)
@@ -48,14 +48,14 @@ struct CameraView: View {
                 Toggle("Grid", isOn: $gridEnabled)
                 Toggle("Level", isOn: $levelEnabled)
                 Toggle("Mirror Front Camera", isOn: $mirrorFrontCameraEnabled)
-                if Device().hasFaceAuth || Device().isPhone {
+                if UIDevice.PearlIDCapability || UIDevice.iPhone {
                     Toggle("View Outside the Frame", isOn: $viewOutsideFrameEnabled)
                 }
             } header: {
                 Text("Composition")
             }
             
-            if Device().isPhotographicStylesCapable {
+            if UIDevice.PhotographicStylesCapability {
                 Section {
                     Button("Photographic Styles") {}
                 } header: {
@@ -63,7 +63,7 @@ struct CameraView: View {
                 } footer: {
                     Text("Personalize the look of your photos by bringing your preferences into the capture. Photographic Styles use advanced scene understanding to apply the right amount of adjustments to different parts of the photo.")
                 }
-            } else if Device().isTablet {
+            } else if UIDevice.iPad {
                 Section {
                     Toggle("Scene Detection", isOn: $sceneDetectionEnabled)
                 } header: {
@@ -73,7 +73,7 @@ struct CameraView: View {
                 }
             }
             
-            if Device().isPro && Device().isPhone {
+            if UIDevice.ProDevice && UIDevice.iPhone {
                 Section {
                     CustomNavigationLink(title: "Main Camera", status: "24 & 28 & 35 mm", destination: EmptyView())
                 } footer: {
@@ -89,7 +89,7 @@ struct CameraView: View {
                 }
             }
             
-            if Device().isPhone {
+            if UIDevice.iPhone {
                 Section {
                     Toggle("Prioritize Faster Shooting", isOn: $prioritizeFasterShootingEnabled)
                 } footer: {

@@ -12,7 +12,6 @@ struct PreferencesApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(Device())
         }
     }
 }
