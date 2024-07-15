@@ -20,7 +20,7 @@ struct MapsView: View {
     let options = ["Driving", "Walking", "Transit", "Cycling"]
     
     var body: some View {
-        CustomList(title: "Maps") {
+        CustomList(title: "Maps", topPadding: true) {
             if UIDevice.isSimulator {
                 PermissionsView(appName: "Maps", background: true, cellular: false, location: false, notifications: false, cellularEnabled: .constant(true))
             } else {

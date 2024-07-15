@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HealthView: View {
     var body: some View {
-        CustomList(title: "Health") {
+        CustomList(title: "Health", topPadding: true) {
             PermissionsView(appName: "Health", cellular: false, location: false, cellularEnabled: .constant(false))
             
             Section {

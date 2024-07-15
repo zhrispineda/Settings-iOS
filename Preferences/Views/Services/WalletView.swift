@@ -23,7 +23,7 @@ struct WalletView: View {
     @State private var otherPayLaterOptionsEnabled = true
     
     var body: some View {
-        CustomList(title: "Wallet & Apple Pay") {
+        CustomList(title: "Wallet & Apple Pay", topPadding: true) {
             if UIDevice.iPhone {
                 if UIDevice.isSimulator {
                     PermissionsView(appName: "Wallet", cellular: false, location: false, cellularEnabled: $cellularEnabled)

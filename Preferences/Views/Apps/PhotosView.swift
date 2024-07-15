@@ -23,7 +23,7 @@ struct PhotosView: View {
     let options = ["Automatic", "Keep Originals"]
     
     var body: some View {
-        CustomList(title: "Photos") {
+        CustomList(title: "Photos", topPadding: true) {
             PermissionsView(appName: "Photos", cellular: false, location: false, notifications: false, cellularEnabled: .constant(false))
             
             Section {

@@ -20,7 +20,7 @@ struct PasswordsView: View {
     }
     
     var body: some View {
-        CustomList(title: "Passwords") {
+        CustomList(title: "Passwords", topPadding: true) {
             if UIDevice.isSimulator {
                 PermissionsView(appName: "Passwords", cellular: false, location: false, notifications: false, cellularEnabled: .constant(true))
             } else {

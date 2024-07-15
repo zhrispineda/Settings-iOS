@@ -34,10 +34,10 @@ struct PermissionsView: View {
                 IconToggle(enabled: $focusEnabled, color: .indigo, icon: "moon.fill", title: "Focus")
             }
             if location {
-                SettingsLink(color: .blue, icon: "location.fill", id: "Location", status: "Never", content: {})
+                SettingsLink(color: .blue, icon: "location.fill", id: "Location", status: "Never") {}
             }
             if photos {
-                SettingsLink(icon: "applePhotos", id: "Photos", status: "Limited Access", content: {})
+                SettingsLink(icon: "applePhotos", id: "Photos", status: "Limited Access") {}
             }
             if camera {
                 IconToggle(enabled: $cameraEnabled, color: .gray, icon: "camera.fill", title: "Camera")
@@ -70,7 +70,7 @@ struct PermissionsView: View {
                 SettingsLink(color: .red, icon: "phone.badge.waveform.fill", id: "Announce Calls", status: "Never") {}
             }
         } header: {
-            Text("\nAllow \(appName) To Access")
+            Text("Allow \(appName) To Access")
         } footer: {
             if appName == "Maps" {
                 Text("[About Apple Maps & Privacy...](POPOVER)")
@@ -83,7 +83,7 @@ struct PermissionsView: View {
 
 #Preview {
     NavigationStack {
-        CustomList(title: "Example") {
+        CustomList(title: "Example", topPadding: true) {
             PermissionsView(appName: "Example", cellularEnabled: .constant(true))
         }
     }

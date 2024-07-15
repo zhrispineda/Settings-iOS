@@ -16,7 +16,7 @@ struct NewsView: View {
     @State private var resetIdentifierEnabled = false
     
     var body: some View {
-        CustomList(title: "News") {
+        CustomList(title: "News", topPadding: true) {
             if UIDevice.isSimulator {
                 PermissionsView(appName: "News", background: true, cellular: false, liveActivityToggle: true, location: false, notifications: false, cellularEnabled: .constant(true))
             } else {

@@ -43,6 +43,9 @@ struct IconToggle: View {
                             .symbolRenderingMode(hierarchyIcons.contains(icon) ? .hierarchical : .none)
                     } else if internalIcons.contains(icon) {
                         Image(_internalSystemName: icon)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 17)
                             .foregroundStyle(icon == "airdrop" ? .blue : .white)
                     } else {
                         Image(icon)

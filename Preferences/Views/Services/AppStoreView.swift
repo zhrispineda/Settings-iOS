@@ -20,7 +20,7 @@ struct AppStoreView: View {
     @State private var offloadUnusedAppsEnabled = false
     
     var body: some View {
-        CustomList(title: "App Store") {
+        CustomList(title: "App Store", topPadding: true) {
             PermissionsView(appName: "App Store", cellularEnabled: $cellularEnabled)
             
             LanguageView()
