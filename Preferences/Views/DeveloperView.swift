@@ -11,7 +11,7 @@ struct DeveloperView: View {
     // Variables
     @State private var darkAppearanceEnabled = false
     @State private var showingDisplayZoomSheet = false
-    @State private var uiAutomationEnabled = true
+    @State private var uiAutomationEnabled = false
     @State private var fastAppTerminationEnabled = false
     
     @State private var additionalLoggingEnabled = false
@@ -41,13 +41,15 @@ struct DeveloperView: View {
     
     var body: some View {
         CustomList(title: "Developer", topPadding: true) {
-            Section {
-                Toggle("Dark Appearance", isOn: $darkAppearanceEnabled)
-            } header: {
-                Text("Appearance")
+            if UIDevice.isSimulator {
+                Section {
+                    Toggle("Dark Appearance", isOn: $darkAppearanceEnabled)
+                } header: {
+                    Text("Appearance")
+                }
             }
             
-            if UIDevice.iPhone || (UIDevice.iPad && UIDevice.ProDevice) {
+            if UIDevice.isSimulator && UIDevice.iPhone || (UIDevice.iPad && UIDevice.ProDevice) {
                 Section {
                     if UIDevice.iPhone {
                         CustomNavigationLink(title: "View", status: "Default", destination: DisplayZoomView())

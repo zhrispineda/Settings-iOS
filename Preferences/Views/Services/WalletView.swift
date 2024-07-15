@@ -28,7 +28,7 @@ struct WalletView: View {
                 if UIDevice.isSimulator {
                     PermissionsView(appName: "Wallet", cellular: false, location: false, cellularEnabled: $cellularEnabled)
                 } else {
-                    PermissionsView(appName: "Wallet", liveActivityToggle: true, location: false, cellularEnabled: $cellularEnabled)
+                    PermissionsView(appName: "Wallet & Apple Pay", liveActivityToggle: true, location: false, cellularEnabled: $cellularEnabled)
                 }
             }
             

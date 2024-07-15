@@ -15,7 +15,7 @@ struct HomeScreenAppLibraryView: View {
     @State private var showHomeScreenSearchEnabled = true
     
     var body: some View {
-        CustomList(title: "Home Screen & App Library") {
+        CustomList(title: "Home Screen & App Library", topPadding: true) {
             Section {
                 ForEach(options, id: \.self) { option in
                     Button {
