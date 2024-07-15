@@ -12,10 +12,11 @@ struct HotspotView: View {
     @State private var allowOthersJoinEnabled = false
     @State private var password = String()
     @State private var maximizeCompatibility = false
+    @AppStorage("DeviceName") private var deviceName = UIDevice.current.model
     
     var body: some View {
         CustomList(title: "Personal Hotspot") {
-            SectionHelp(title: "Personal Hotspot", color: .green, icon: "personalhotspot", description: "Share your \(UIDevice.current.model)'s internet connection with other devices. Personal Hotspot is useful when Wi-Fi isn't available.\n[Learn more...](https://support.apple.com/guide/iphone/share-your-internet-connection-iph45447ca6/ios)")
+            SectionHelp(title: "Personal Hotspot", color: .green, icon: "personalhotspot", description: "Personal Hotspot allows you to share a cellular internet connection from your \(UIDevice.current.model) to other nearby devices. [Learn more...](https://support.apple.com/guide/iphone/share-your-internet-connection-iph45447ca6/ios)")
             
             Section {
                 Toggle("Allow Others to Join", isOn: $allowOthersJoinEnabled)
@@ -26,7 +27,7 @@ struct HotspotView: View {
             }
             
             Section {} footer: {
-                Text("Allow other users or devices not signed into iCloud to look for your shared network \u{201C}\(UIDevice.current.model)\u{201D} when you are in Personal Hotspot settings or when you turn it on in Control Center.")
+                Text("Allow other users or devices not signed into iCloud to look for your shared network \u{201C}\(deviceName)\u{201D} when you are in Personal Hotspot settings or when you turn it on in Control Center.")
             }
             
 //            Section {

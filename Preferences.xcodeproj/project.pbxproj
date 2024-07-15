@@ -592,6 +592,7 @@
 			children = (
 				83CC61982B7952B800DAF0C1 /* Info.plist */,
 				83585FC62C435A4600B11C91 /* Extensions */,
+				83AC4BE22C456E6B006C7D13 /* Localizations */,
 				838C23242B746D200053D4C5 /* Models */,
 				83B893BE2B8FDBDB005705A3 /* Resources */,
 				838C23272B746D6B0053D4C5 /* Templates */,
@@ -600,13 +601,6 @@
 				833F0AD12B744D180036EAD2 /* ContentView.swift */,
 				833F0AD32B744D190036EAD2 /* Assets.xcassets */,
 				833F0AD52B744D190036EAD2 /* Preview Content */,
-				837FB16C2C39D461009B7A23 /* BluetoothSettings.xcstrings */,
-				838C0D952C38A64900438E2D /* ControlCenterSettings.xcstrings */,
-				838C0D972C38A7FA00438E2D /* General.xcstrings */,
-				838C0D992C38A9A000438E2D /* Localizable.xcstrings */,
-				8319E8172C3DFB1E002EC116 /* AmbientSettings.xcstrings */,
-				833F5B7E2C4050AA00C0A8C7 /* SOS.xcstrings */,
-				839BB8A62C41DD61000F8245 /* Accessibility.xcstrings */,
 			);
 			path = Preferences;
 			sourceTree = "<group>";
@@ -874,6 +868,20 @@
 				83A5DA542C2366A60012ACB3 /* TransferResetView.swift */,
 			);
 			path = General;
+			sourceTree = "<group>";
+		};
+		83AC4BE22C456E6B006C7D13 /* Localizations */ = {
+			isa = PBXGroup;
+			children = (
+				837FB16C2C39D461009B7A23 /* BluetoothSettings.xcstrings */,
+				838C0D952C38A64900438E2D /* ControlCenterSettings.xcstrings */,
+				838C0D972C38A7FA00438E2D /* General.xcstrings */,
+				838C0D992C38A9A000438E2D /* Localizable.xcstrings */,
+				8319E8172C3DFB1E002EC116 /* AmbientSettings.xcstrings */,
+				833F5B7E2C4050AA00C0A8C7 /* SOS.xcstrings */,
+				839BB8A62C41DD61000F8245 /* Accessibility.xcstrings */,
+			);
+			path = Localizations;
 			sourceTree = "<group>";
 		};
 		83B5504F2C166AC5002DA622 /* Battery */ = {

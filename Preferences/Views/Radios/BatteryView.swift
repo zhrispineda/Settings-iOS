@@ -13,24 +13,23 @@ struct BatteryView: View {
     @State private var lowPowerModeEnabled = false
     
     var body: some View {
-        CustomList(title: "Battery") {
+        CustomList(title: "BATTERY_TITLE") {
             Section {
-                Toggle("Battery Percentage", isOn: $batteryPercentageEnabled)
-                Toggle("Low Power Mode", isOn: $lowPowerModeEnabled)
+                Toggle("BATTERY_PERCENTAGE", isOn: $batteryPercentageEnabled)
+                Toggle("BATTERY_SAVER_MODE", isOn: $lowPowerModeEnabled)
             } footer: {
-                Text("Low Power Mode temporarily reduces background activity like downloads and mail fetch until you can fully charge your \(UIDevice.current.model).")
+                Text(UIDevice.iPhone ? "FOOTNOTE_BATTERYSAVERMODE_IPHONE" : "FOOTNOTE_BATTERYSAVERMODE_IPAD")
             }
             
             Section {
                 if UIDevice.DeviceSupportsBatteryInformation {
-                    CustomNavigationLink(title: "Battery Health", status: "Normal", destination: BatteryHealthView())
+                    CustomNavigationLink(title: "BATTERY_HEALTH_TITLE", status: "NORMAL_STATE", destination: BatteryHealthView())
                     if UIDevice.iPhone {
-                        //CustomNavigationLink(title: "Charging Optimization", status: "Optimized", destination: ChargingOptimizationView())
-                        NavigationLink("Charging", destination: ChargingOptimizationView())
+                        NavigationLink("CHARGING_TITLE_CHARGING", destination: ChargingOptimizationView())
                     }
                 } else {
                     if UIDevice.iPhone {
-                        NavigationLink("Battery Health & Charging", destination: BatteryHealthChargingView())
+                        NavigationLink("BATTERY_HEALTH", destination: BatteryHealthChargingView())
                     }
                 }
             }
