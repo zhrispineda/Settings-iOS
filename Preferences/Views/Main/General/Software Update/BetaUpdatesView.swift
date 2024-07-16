@@ -11,7 +11,7 @@ struct BetaUpdatesView: View {
     // Variables
     @State private var selected = "\(UIDevice().systemName) 18 Developer Beta"
     @State private var showingAlert = false
-    let options = ["Off", "\(UIDevice().systemName) 18 Developer Beta"]
+    let options = ["Off", "\(UIDevice().systemName) 18 Public Beta", "\(UIDevice().systemName) 18 Developer Beta"]
     
     var body: some View {
         CustomList(title: "Beta Updates") {

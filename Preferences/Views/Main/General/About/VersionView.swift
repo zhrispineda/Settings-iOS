@@ -12,7 +12,7 @@ struct VersionView: View {
         CustomList(title: "\(UIDevice().systemName) Version") {
             Section {
                 VStack(alignment: .leading) {
-                    Text("**\(UIDevice().systemName) \(UIDevice().systemVersion) (22A5307f)**")
+                    Text("**\(UIDevice().systemName) \(UIDevice().systemVersion) (22A5307i)**")
                     if UIDevice.isSimulator {
                         Text("This update includes improvements and bug fixes for your \(UIDevice.current.model).")
                             .foregroundStyle(.secondary)
