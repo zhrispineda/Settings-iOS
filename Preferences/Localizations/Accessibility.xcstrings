@@ -9,6 +9,12 @@
             "state" : "translated",
             "value" : "Accessories"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accesorios"
+          }
         }
       }
     },
@@ -20,6 +26,12 @@
             "state" : "translated",
             "value" : "Vocal Shortcuts"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atajos de voz"
+          }
         }
       }
     },
@@ -27,6 +39,12 @@
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple TV Remote"
+          }
+        },
+        "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Apple TV Remote"
@@ -42,6 +60,12 @@
             "state" : "translated",
             "value" : "Apple Watch Mirroring"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Duplicación del Apple Watch"
+          }
         }
       }
     },
@@ -52,6 +76,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Assistive Access"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acceso asistido"
           }
         }
       }
@@ -64,6 +94,12 @@
             "state" : "translated",
             "value" : "Audio & Visual"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Audio y efectos visuales"
+          }
         }
       }
     },
@@ -74,6 +110,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Voice Control"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Control por voz"
           }
         }
       }
@@ -86,6 +128,12 @@
             "state" : "translated",
             "value" : "Control Nearby Devices"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Controlar dispositivos cercanos"
+          }
         }
       }
     },
@@ -96,6 +144,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Audio Descriptions"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Audiodescripción"
           }
         }
       }
@@ -108,6 +162,12 @@
             "state" : "translated",
             "value" : "Display & Text Size"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pantalla y tamaño del texto"
+          }
         }
       }
     },
@@ -119,6 +179,12 @@
             "state" : "translated",
             "value" : "Face ID & Attention"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Face ID y atención"
+          }
         }
       }
     },
@@ -126,6 +192,12 @@
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "General"
+          }
+        },
+        "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "General"
@@ -141,6 +213,12 @@
             "state" : "translated",
             "value" : "Guided Access"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acceso guiado"
+          }
         }
       }
     },
@@ -151,6 +229,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hearing"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Audición"
           }
         }
       }
@@ -163,6 +247,12 @@
             "state" : "translated",
             "value" : "Hearing Devices"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Audífonos"
+          }
         }
       }
     },
@@ -173,6 +263,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hearing Control Center"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Centro de control de audición"
           }
         }
       }
@@ -185,6 +281,12 @@
             "state" : "translated",
             "value" : "Hover Text"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Texto flotante"
+          }
         }
       }
     },
@@ -195,6 +297,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Live Speech"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voz en tiempo real"
           }
         }
       }
@@ -207,6 +315,12 @@
             "state" : "translated",
             "value" : "Physical and Motor"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Habilidades físicas y motoras"
+          }
         }
       }
     },
@@ -217,6 +331,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Motion"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Movimento"
           }
         }
       }
@@ -229,6 +349,12 @@
             "state" : "translated",
             "value" : "Off"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No"
+          }
         }
       }
     },
@@ -239,6 +365,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Apple Pencil"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple Pencil"
           }
         }
       }
@@ -251,6 +383,12 @@
             "state" : "translated",
             "value" : "Personal Voice"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voz personal"
+          }
         }
       }
     },
@@ -261,6 +399,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Learn more…"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Más información…"
           }
         }
       }
@@ -273,6 +417,12 @@
             "state" : "translated",
             "value" : "Personalize iPad in ways that work best for you with accessibility features for vision, mobility, hearing, speech, and cognition."
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personaliza las funciones de accesibilidad del iPad como mejor se adapten a tus necesidades visuales, auditivas, cognitivas, de movilidad y de habla."
+          }
         }
       }
     },
@@ -283,6 +433,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Personalize iPhone in ways that work best for you with accessibility features for vision, mobility, hearing, speech, and cognition."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personaliza las funciones de accesibilidad del iPhone como mejor se adapten a tus necesidades visuales, auditivas, cognitivas, de movilidad y de habla."
           }
         }
       }
@@ -295,6 +451,12 @@
             "state" : "translated",
             "value" : "Accessibility"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accesibilidad"
+          }
         }
       }
     },
@@ -305,6 +467,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Accessibility"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accesibilidad"
           }
         }
       }
@@ -317,6 +485,12 @@
             "state" : "translated",
             "value" : "Live Captions"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Subtítulos en vivo"
+          }
         }
       }
     },
@@ -327,6 +501,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Switch Control"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Control por botón"
           }
         }
       }
@@ -339,6 +519,12 @@
             "state" : "translated",
             "value" : "Side Button"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Botón lateral"
+          }
         }
       }
     },
@@ -346,6 +532,12 @@
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri"
+          }
+        },
+        "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Siri"
@@ -361,6 +553,12 @@
             "state" : "translated",
             "value" : "Sound Recognition"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reconocimiento de sonidos"
+          }
         }
       }
     },
@@ -371,6 +569,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Speech"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voz"
           }
         }
       }
@@ -383,6 +587,12 @@
             "state" : "translated",
             "value" : "Spoken Content"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contenido leído"
+          }
         }
       }
     },
@@ -393,6 +603,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Subtitles & Captioning"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Subtítulos"
           }
         }
       }
@@ -405,6 +621,12 @@
             "state" : "translated",
             "value" : "Top Button"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Botón superior"
+          }
         }
       }
     },
@@ -415,6 +637,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Touch"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tocar"
           }
         }
       }
@@ -427,6 +655,12 @@
             "state" : "translated",
             "value" : "Accessibility Shortcut"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Función rápida"
+          }
         }
       }
     },
@@ -434,6 +668,12 @@
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "RTT/TTY"
+          }
+        },
+        "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "RTT/TTY"
@@ -449,6 +689,12 @@
             "state" : "translated",
             "value" : "Vision"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Visión"
+          }
         }
       }
     },
@@ -460,6 +706,12 @@
             "state" : "translated",
             "value" : "VoiceOver"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver"
+          }
         }
       }
     },
@@ -467,6 +719,12 @@
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zoom"
+          }
+        },
+        "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zoom"

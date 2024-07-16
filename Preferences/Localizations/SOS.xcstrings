@@ -148,7 +148,7 @@
         },
         "es" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Mantén pulsado el botón lateral y uno de los botones de volumen para hacer una llamada de emergencia. En algunas regiones, puede que tengas que indicar el número del servicio de emergencias al que llamar. La llamada automática requiere una tarjeta SIM."
           }
         }

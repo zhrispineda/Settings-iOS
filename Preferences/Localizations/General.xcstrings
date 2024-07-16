@@ -9,6 +9,12 @@
             "state" : "translated",
             "value" : "About"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Información"
+          }
         }
       }
     },
@@ -16,6 +22,12 @@
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AirDrop"
+          }
+        },
+        "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "AirDrop"
@@ -31,6 +43,12 @@
             "state" : "translated",
             "value" : "Background App Refresh"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Actualización en segundo plano"
+          }
         }
       }
     },
@@ -42,6 +60,12 @@
             "state" : "translated",
             "value" : "AutoFill & Passwords"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Autorrelleno y contraseñas"
+          }
         }
       }
     },
@@ -49,6 +73,12 @@
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CarPlay"
+          }
+        },
+        "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "CarPlay"
@@ -64,6 +94,12 @@
             "state" : "translated",
             "value" : "AirPlay & Continuity"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AirPlay y Continuidad"
+          }
         }
       }
     },
@@ -75,6 +111,12 @@
             "state" : "translated",
             "value" : "AppleCare & Warranty"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AppleCare y garantía"
+          }
         }
       }
     },
@@ -85,6 +127,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Date & Time"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fecha y hora"
           }
         }
       }
@@ -109,6 +157,24 @@
               }
             }
           }
+        },
+        "es" : {
+          "variations" : {
+            "device" : {
+              "ipad" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Almacenamiento del iPad"
+                }
+              },
+              "iphone" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Almacenamiento del iPhone"
+                }
+              }
+            }
+          }
         }
       }
     },
@@ -119,6 +185,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dictionary"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Diccionario"
           }
         }
       }
@@ -131,6 +203,12 @@
             "state" : "translated",
             "value" : "Fonts"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tipos de letra"
+          }
         }
       }
     },
@@ -142,6 +220,12 @@
             "state" : "translated",
             "value" : "Game Controller"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mando de videojuegos"
+          }
         }
       }
     },
@@ -149,6 +233,12 @@
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "General"
+          }
+        },
+        "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "General"
@@ -164,6 +254,12 @@
             "state" : "translated",
             "value" : "Home Button"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Botón de inicio"
+          }
         }
       }
     },
@@ -174,6 +270,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Language & Region"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Idioma y región"
           }
         }
       }
@@ -186,6 +288,12 @@
             "state" : "translated",
             "value" : "Legal & Regulatory"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Marco jurídico y normativo"
+          }
         }
       }
     },
@@ -196,6 +304,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Picture in Picture"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Imagen dentro de imagen"
           }
         }
       }
@@ -208,6 +322,12 @@
             "state" : "translated",
             "value" : "Shut Down"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apagar"
+          }
         }
       }
     },
@@ -218,6 +338,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Software Update"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Actualización de software"
           }
         }
       }
@@ -242,6 +368,24 @@
               }
             }
           }
+        },
+        "es" : {
+          "variations" : {
+            "device" : {
+              "ipad" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Transferir o restablecer el iPad"
+                }
+              },
+              "iphone" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Transferir o restablecer el iPhone"
+                }
+              }
+            }
+          }
         }
       }
     },
@@ -253,6 +397,12 @@
             "state" : "translated",
             "value" : "TV Provider"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Proveedor de TV"
+          }
         }
       }
     },
@@ -263,6 +413,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "VPN & Device Management"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VPN y gestión de dispositivos"
           }
         }
       }

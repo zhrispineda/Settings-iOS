@@ -9,6 +9,12 @@
             "state" : "translated",
             "value" : "Display"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pantalla"
+          }
         }
       }
     },
@@ -19,6 +25,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "StandBy"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En reposo"
           }
         }
       }
@@ -31,6 +43,12 @@
             "state" : "translated",
             "value" : "%@ will turn on when iPhone is placed on its side while charging to show information like widgets, photo frames, or clocks."
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cuando el iPhone se esté cargando en posición horizontal, se activará el modo “%@” para mostrar widgets, fotos o relojes."
+          }
         }
       }
     },
@@ -41,6 +59,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Display"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pantalla"
           }
         }
       }
@@ -53,6 +77,12 @@
             "state" : "translated",
             "value" : "Night Mode"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modo Noche"
+          }
         }
       }
     },
@@ -63,6 +93,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ displays with a red tint in low ambient lighting."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El modo “%@” se muestra en tonos rojos cuando hay poca luz ambiente."
           }
         }
       }
@@ -75,6 +111,12 @@
             "state" : "translated",
             "value" : "Show Notifications"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostrar notificaciones"
+          }
         }
       }
     },
@@ -85,6 +127,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Critical notifications will still be shown in %@ if this switch is off."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si esta opción está desactivada, las notificaciones importantes se seguirán mostrando en el modo “%@”."
           }
         }
       }
@@ -97,6 +145,12 @@
             "state" : "translated",
             "value" : "Notifications"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notificaciones"
+          }
         }
       }
     },
@@ -108,6 +162,12 @@
             "state" : "translated",
             "value" : "Show Preview on Tap Only"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostrar previsualización solo al tocar"
+          }
         }
       }
     },
@@ -118,6 +178,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ can hide the preview of a notification until you tap on it."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En el modo “%@”, se ocultará la previsualización de las notificaciones hasta que las toques."
           }
         }
       }
