@@ -36,7 +36,9 @@ struct SiriView: View {
                 if !siriEnabled {
                     CustomNavigationLink(title: "Voice", status: "American (Voice 4)", destination: SiriVoiceView())
                 }
-                CustomNavigationLink(title: "Listen for", status: "Off", destination: EmptyView())
+                if !UIDevice.isSimulator {
+                    CustomNavigationLink(title: "Listen for", status: "Off", destination: EmptyView())
+                }
 //                Toggle("Press \(Device().isPhone ? "\(Device().hasHomeButton ? "Home" : "Side") Button" : "Top Button") for Siri", isOn: $siriEnabled)
 //                    .alert("Turn Off Siri?", isPresented: $showingDisableSiriAlert) {
 //                        Button("Turn Off Siri") {}
@@ -68,11 +70,15 @@ struct SiriView: View {
 //                        siriEnabled ? (Device().isPhone ? showingEnableSiriPopup.toggle() : showingEnableSiriAlert.toggle()) : (Device().isPhone ? showingDisableSiriPopup.toggle() : showingDisableSiriAlert.toggle())
 //                    }
                 if siriEnabled {
-                    Toggle("Allow Siri When Locked", isOn: $allowSiriWhenLockedEnabled)
-                    CustomNavigationLink(title: "Siri Voice", status: "American (Voice 4)", destination: SiriVoiceView())
+                    if !UIDevice.isSimulator {
+                        Toggle("Allow Siri When Locked", isOn: $allowSiriWhenLockedEnabled)
+                    }
+                    CustomNavigationLink(title: "Voice", status: "American (Voice 4)", destination: SiriVoiceView())
                     NavigationLink("Siri Responses", destination: SiriResponsesView())
-                    NavigationLink("Announce Calls", destination: EmptyView())
-                    NavigationLink("Announce Notifications", destination: EmptyView())
+                    if !UIDevice.isSimulator {
+                        NavigationLink("Announce Calls", destination: EmptyView())
+                        NavigationLink("Announce Notifications", destination: EmptyView())
+                    }
                     Button {} label: { // TODO: Popover
                         HStack {
                             Text("My Information")
