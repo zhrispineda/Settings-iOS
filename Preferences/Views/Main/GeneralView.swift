@@ -38,7 +38,9 @@ struct GeneralView: View {
             
             if !UIDevice.isSimulator {
                 Section {
-                    SettingsLink(color: .white, iconColor: .blue, icon: "airdrop", id: String(localized: "AIRDROP", table: "General")) {}
+                    SettingsLink(color: .white, iconColor: .blue, icon: "airdrop", id: String(localized: "AIRDROP", table: "General")) {
+                        AirDropView()
+                    }
                     SettingsLink(color: .blue, icon: "airplay.video", id: String(localized: "CONTINUITY", table: "General")) {}
                     if UIDevice.iPhone {
                         SettingsLink(icon: "pip", id: String(localized: "PiP", table: "General")) {}
