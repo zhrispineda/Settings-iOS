@@ -42,7 +42,9 @@ struct GeneralView: View {
                     SettingsLink(color: .blue, icon: "airplay.video", id: String(localized: "CONTINUITY", table: "General")) {}
                     if UIDevice.iPhone {
                         SettingsLink(icon: "pip", id: String(localized: "PiP", table: "General")) {}
-                        SettingsLink(color: .green, icon: "carplay", id: String(localized: "CARPLAY", table: "General")) {}
+                        SettingsLink(color: .green, icon: "carplay", id: String(localized: "CARPLAY", table: "General")) {
+                            CarPlayView()
+                        }
                     }
                 }
             }

@@ -49,6 +49,7 @@
 		833F190B2B8BE05A00067C37 /* DisplayTextSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833F190A2B8BE05A00067C37 /* DisplayTextSizeView.swift */; };
 		833F5B7F2C4050AA00C0A8C7 /* SOS.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 833F5B7E2C4050AA00C0A8C7 /* SOS.xcstrings */; };
 		83470D162C35A1BC00CE8613 /* AppleAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83470D152C35A1BC00CE8613 /* AppleAccountView.swift */; };
+		834B5A222C4B3C83003A6940 /* CarPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B5A212C4B3C83003A6940 /* CarPlayView.swift */; };
 		835683922B753FDD000FB136 /* SettingsLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835683912B753FDD000FB136 /* SettingsLink.swift */; };
 		835683942B754623000FB136 /* SettingsLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835683932B754623000FB136 /* SettingsLabel.swift */; };
 		835683972B754EE4000FB136 /* VersionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835683962B754EE4000FB136 /* VersionView.swift */; };
@@ -264,6 +265,7 @@
 		833F190A2B8BE05A00067C37 /* DisplayTextSizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayTextSizeView.swift; sourceTree = "<group>"; };
 		833F5B7E2C4050AA00C0A8C7 /* SOS.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = SOS.xcstrings; sourceTree = "<group>"; };
 		83470D152C35A1BC00CE8613 /* AppleAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAccountView.swift; sourceTree = "<group>"; };
+		834B5A212C4B3C83003A6940 /* CarPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlayView.swift; sourceTree = "<group>"; };
 		835683912B753FDD000FB136 /* SettingsLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLink.swift; sourceTree = "<group>"; };
 		835683932B754623000FB136 /* SettingsLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLabel.swift; sourceTree = "<group>"; };
 		835683962B754EE4000FB136 /* VersionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionView.swift; sourceTree = "<group>"; };
@@ -860,6 +862,7 @@
 				833854F62C1648CD00339C4F /* SoftwareUpdateView.swift */,
 				83DFAB332C3F516F006C9C29 /* StorageView.swift */,
 				83C94CA42C1E0192005EBBC5 /* AppleCareWarrantyView.swift */,
+				834B5A212C4B3C83003A6940 /* CarPlayView.swift */,
 				8319CE4A2B86D22E007EC822 /* AutoFillPasswordsView.swift */,
 				83F3F6A02B7D12B6003CC310 /* DictionaryView.swift */,
 				83F3F6A62B7D2BAA003CC310 /* FontsView.swift */,
@@ -1388,6 +1391,7 @@
 				83898FCD2B8A94BE0020C7BB /* HealthDetailsDataView.swift in Sources */,
 				83F78A232B8E99D200025062 /* SubtitlesCaptioningView.swift in Sources */,
 				837B0F602B89B22900B22455 /* SiriVoiceView.swift in Sources */,
+				834B5A222C4B3C83003A6940 /* CarPlayView.swift in Sources */,
 				833C6EAC2C208A3900A8D91C /* CameraView.swift in Sources */,
 				83DF95742B841F0900AEEB63 /* DownloadedLanguagesView.swift in Sources */,
 				837F1DD62B8AF31F00665EAB /* QuickWebsiteSearchView.swift in Sources */,
