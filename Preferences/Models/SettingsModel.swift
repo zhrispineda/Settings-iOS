@@ -32,6 +32,7 @@ enum SettingsModel: String, CaseIterable {
     case gameCenter = "Game Center"
     case general = "General"
     case homeScreenAppLibrary = "Home Screen & App Library"
+    case icloud = "iCloud"
     case multitaskGestures = "Multitasking & Gestures"
     case notifications = "Notifications"
     case personalHotspot = "Personal Hotspot"
@@ -112,12 +113,13 @@ let internalIcons = ["airdrop", "apple.photos", "apps.iphone.assistive.access", 
 @MainActor let simulatorMainSettings: [SettingsItem] = [
     SettingsItem(type: .general, title: "General", icon: "gear", color: .gray, destination: AnyView(GeneralView())),
     SettingsItem(type: .accessibility, title: "Accessibility", icon: "accessibility", color: .blue, destination: AnyView(AccessibilityView())),
-    SettingsItem(type: .siri, title: "Apple Intelligence & Siri", icon: "appleIntelligence", color: Color(UIColor.systemBackground), destination: AnyView(SiriView())),
+    //SettingsItem(type: .siri, title: "Apple Intelligence & Siri", icon: "appleIntelligence", color: Color(UIColor.systemBackground), destination: AnyView(SiriView())),
     SettingsItem(type: .actionButton, title: "Action Button", icon: "iphone.action.button.arrow.right", capability: .actionButton, color: .blue, destination: AnyView(ActionButtonView())),
     SettingsItem(type: .camera, title: "Camera", icon: "camera.fill", color: .gray, destination: AnyView(CameraView())),
     SettingsItem(type: .homeScreenAppLibrary, title: "Home Screen & App Library", icon: "apps.iphone", color: .blue, destination: AnyView(HomeScreenAppLibraryView())),
     SettingsItem(type: .multitaskGestures, title: "Multitasking & Gestures", icon: "squares.leading.rectangle", color: .blue, destination: AnyView(MultitaskingGesturesView())),
     SettingsItem(type: .search, title: "Search", icon: "magnifyingglass", color: .gray, destination: AnyView(SearchView())),
+    SettingsItem(type: .siri, title: "Siri", icon: "appleSiri", color: Color(UIColor.systemBackground), destination: AnyView(SiriView())),
     SettingsItem(type: .standby, title: "StandBy", icon: "clock.filled.and.widget.filled", color: .black, destination: AnyView(StandByView())),
 ]
 
@@ -137,6 +139,7 @@ let internalIcons = ["airdrop", "apple.photos", "apps.iphone.assistive.access", 
 @MainActor let serviceSettings: [SettingsItem] = [
     SettingsItem(type: .appStore, title: "App Store", icon: UIDevice.isSimulator ? "Placeholder" : "appleAppStore", destination: UIDevice.isSimulator ? AnyView(EmptyView()) : AnyView(AppStoreView())),
     SettingsItem(type: .gameCenter, title: "Game Center", icon: UIDevice.isSimulator ? "Placeholder" : "appleGameCenter", destination: AnyView(GameCenterView())),
+    SettingsItem(type: .icloud, title: "iCloud", icon: "iCloud", destination: AnyView(EmptyView())),
     SettingsItem(type: .wallet, title: "Wallet & Apple Pay", icon: "appleWallet", destination: AnyView(WalletView()))
 ]
 

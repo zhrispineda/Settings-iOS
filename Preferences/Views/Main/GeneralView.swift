@@ -73,9 +73,9 @@ struct GeneralView: View {
                     SettingsLink(color: .gray, icon: "gamecontroller.fill", id: String(localized: "GAME_CONTROLLER", table: "General")) {
                         GameControllerView()
                     }
-                    SettingsLink(color: .gray, icon: "keyboard.fill", id: String(localized: "Keyboard", table: "General")) {
-                        KeyboardView()
-                    }
+                }
+                SettingsLink(color: .gray, icon: "keyboard.fill", id: String(localized: "Keyboard", table: "General")) {
+                    KeyboardView()
                 }
                 SettingsLink(color: .blue, icon: "globe", id: String(localized: "INTERNATIONAL", table: "General")) {
                     LanguageRegionView()

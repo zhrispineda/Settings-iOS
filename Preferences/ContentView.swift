@@ -214,6 +214,7 @@ struct AppleAccountSection: View {
 
 // MARK: - Settings Sidebar Label for iPadOS
 struct SettingsLabelSection: View {
+    @State private var showingSignInSheet = false
     @Binding var selection: SettingsModel?
     @Binding var id: UUID
     var item: [SettingsItem<AnyView>]
@@ -221,7 +222,20 @@ struct SettingsLabelSection: View {
     var body: some View {
         Section {
             ForEach(item) { setting in
-                if !phoneOnly.contains(setting.id) {
+                if setting.id == "iCloud" {
+                    Button {
+                        showingSignInSheet.toggle()
+                    } label: {
+                        SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id)
+                            .foregroundStyle(selection == setting.type ? (UIDevice.isSimulator ? Color.white : Color["Label"]) : Color["Label"])
+                    }
+                    .sheet(isPresented: $showingSignInSheet) {
+                        NavigationStack {
+                            SelectSignInOptionView()
+                                .interactiveDismissDisabled()
+                        }
+                    }
+                } else if !phoneOnly.contains(setting.id) {
                     Button {
                         id = UUID() // Reset destination
                         selection = setting.type
@@ -238,12 +252,28 @@ struct SettingsLabelSection: View {
 
 // MARK: - Settings Link for iOS
 struct SettingsLinkSection: View {
+    @State private var showingSignInSheet = false
     var item: [SettingsItem<AnyView>]
     
     var body: some View {
         Section {
             ForEach(item) { setting in
-                if !tabletOnly.contains(setting.id) && requiredCapabilities(capability: setting.capability) {
+                if setting.id == "iCloud" {
+                    Button {
+                        showingSignInSheet.toggle()
+                    } label: {
+                        SettingsLink(color: setting.color, icon: setting.icon, id: setting.id) {
+                            setting.destination
+                        }
+                        .foregroundStyle(Color["Label"])
+                    }
+                    .sheet(isPresented: $showingSignInSheet) {
+                        NavigationStack {
+                            SelectSignInOptionView()
+                                .interactiveDismissDisabled()
+                        }
+                    }
+                } else if !tabletOnly.contains(setting.id) && requiredCapabilities(capability: setting.capability) {
                     SettingsLink(color: setting.color, icon: setting.icon, id: setting.id) {
                         setting.destination
                     }
