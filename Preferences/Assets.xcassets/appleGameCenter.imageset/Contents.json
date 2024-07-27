@@ -1,7 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "applegamecenter.png",
+      "filename" : "1024x1024_Normal.png",
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "1024x1024 1_Normal.png",
       "idiom" : "universal"
     }
   ],
