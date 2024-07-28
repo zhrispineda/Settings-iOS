@@ -180,6 +180,17 @@ public extension UIDevice {
         }
     }()
     
+    static let NarrowNotch = { // Narrow Notch (iPhone 13, 13 mini, 13 Pro, 13 Pro Max, 14, 14 Plus)
+        var identifier = UIDevice.identifier
+        
+        switch identifier {
+        case "iPhone14,2", "iPhone14,3", "iPhone14,4", "iPhone14,5", "iPhone14,7", "iPhone14,8":
+            return true
+        default:
+            return false
+        }
+    }()
+    
     static let PearlIDCapability: Bool = { // Face ID
         var identifier = UIDevice.identifier
         
@@ -223,6 +234,17 @@ public extension UIDevice {
         
         switch identifier {
         case "iPhone15,2", "iPhone15,3", "iPhone16,1", "iPhone16,2":
+            return true
+        default:
+            return false
+        }
+    }()
+    
+    static let WideNotch = { // Wide Notch (iPhone XR, XS, XS Max, 11, 11 Pro, 11 Pro Max, 12, 12 mini, 12 Pro, 12 Pro Max)
+        var identifier = UIDevice.identifier
+        
+        switch identifier {
+        case "iPhone11,8", "iPhone11,2", "iPhone11,6", "iPhone11,4", "iPhone12,1", "iPhone12,3", "iPhone12,5", "iPhone13,1", "iPhone13,2", "iPhone13,3", "iPhone13,4":
             return true
         default:
             return false

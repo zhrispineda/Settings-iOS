@@ -29,7 +29,7 @@ struct SafariView: View {
     @State private var automaticallySaveOfflineEnabled = false
     
     var body: some View {
-        CustomList(title: "Safari") {
+        CustomList(title: "Safari", topPadding: true) {
             Section {
                 SettingsLink(icon: "appleSiri", id: "Siri & Search") {
                     SiriDetailView(appName: "Safari")
@@ -50,7 +50,7 @@ struct SafariView: View {
             } header: {
                 Text("Search")
             } footer: {
-                Text("Private Browsing uses on-device information to provide search suggestions. No data is shared with the service provider. [About Siri Suggestions, Search & Privacy...](#)")
+                Text("\(UIDevice.iPad ? "Private Browsing uses on-device information to provide search suggestions. No data is shared with the service provider. " : "")[About Siri Suggestions, Search & Privacy...](#)")
             }
             
             Section {
@@ -71,50 +71,53 @@ struct SafariView: View {
             Section {
                 HStack {
                     Spacer()
-                    VStack(spacing: 15) {
+                    VStack(spacing: 10) {
                         Button {
                             separateTabBarEnabled = true
                         } label: {
                             VStack(spacing: 15) {
-                                Image("") // TODO: Images per device type, for both dark and light mode
+                                Image(UIDevice.iPad ? "SeparateTabBarRectangular_Light" : UIDevice.HomeButtonCapability ? "Lowered_TabBar_LegacyHomeButton" : UIDevice.WideNotch ? "Lowered_TabBar_WideNotch" : UIDevice.NarrowNotch ? "Lowered_TabBar_NarrowNotch" : "Lowered_TabBar_D7x")
                                     .resizable()
+                                    .foregroundStyle(.blue)
                                     .scaledToFit()
                                     .frame(height: 100)
-                                    .clipShape(RoundedRectangle(cornerRadius: 10.0))
                                     .padding(.top)
-                                Text(UIDevice.iPad ? "Off" : "Tab Bar")
+                                Text(UIDevice.iPad ? "Separate Tab Bar" : "Tab Bar")
                                     .font(.subheadline)
                                 Image(systemName: separateTabBarEnabled ? "checkmark.circle.fill" : "circle")
                                     .foregroundStyle(separateTabBarEnabled ? Color(UIColor.systemBackground) : Color(UIColor.tertiaryLabel), .blue)
-                                    .font(.title)
+                                    .font(.title2)
                                     .fontWeight(.light)
                             }
                         }
                         .buttonStyle(.plain)
                     }
                     Spacer()
-                    VStack(spacing: 15) {
+                    VStack(spacing: 10) {
                         Button {
                             separateTabBarEnabled = false
                         } label: {
                             VStack(spacing: 15) {
-                                Image("") // TODO: Images per device type, for both dark and light mode
+                                Image(UIDevice.iPad ? "Compact_Tab_Bar_Setting" : UIDevice.HomeButtonCapability ? "Classic_SingleTab_LegacyHomeButton" : UIDevice.WideNotch ? "Classic_SingleTab_WideNotch" : UIDevice.NarrowNotch ? "Classic_SingleTab_NarrowNotch" : "Classic_SingleTab_D7x")
                                     .resizable()
+                                    .foregroundStyle(.blue)
                                     .scaledToFit()
                                     .frame(height: 100)
-                                    .clipShape(RoundedRectangle(cornerRadius: 10.0))
                                     .padding(.top)
-                                Text(UIDevice.iPad ? "Split View & Slide Over" : "Single Tab")
+                                Text(UIDevice.iPad ? "Compact Tab Bar" : "Single Tab")
                                     .font(.subheadline)
                                 Image(systemName: !separateTabBarEnabled ? "checkmark.circle.fill" : "circle")
                                     .foregroundStyle(!separateTabBarEnabled ? Color(UIColor.systemBackground) : Color(UIColor.tertiaryLabel), .blue)
-                                    .font(.title)
+                                    .font(.title2)
                                     .fontWeight(.light)
                             }
                         }
                         .buttonStyle(.plain)
                     }
                     Spacer()
+                }
+                .alignmentGuide(.listRowSeparatorLeading) { _ in
+                    return 0
                 }
                 if !UIDevice.current.model.contains("SE") {
                     Toggle("Landscape Tab Bar", isOn: $landscapeTabBarEnabled)
