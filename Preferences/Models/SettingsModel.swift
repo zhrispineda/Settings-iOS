@@ -76,7 +76,7 @@ let internalIcons = ["airdrop", "apple.photos", "apps.iphone.assistive.access", 
     SettingsItem(type: .wifi, title: "Wi-Fi", icon: "wifi", color: .blue, destination: AnyView(NetworkView())),
     SettingsItem(type: .bluetooth, title: "Bluetooth", icon: "bluetooth", color: .blue, destination: AnyView(BluetoothView())),
     SettingsItem(type: .cellular, title: "Cellular", icon: "antenna.radiowaves.left.and.right", capability: .cellular, color: .green, destination: AnyView(CellularView())),
-    SettingsItem(type: .personalHotspot, title: "Personal Hotspot", icon: "personalhotspot", color: .green, destination: AnyView(HotspotView())),
+    SettingsItem(type: .personalHotspot, title: "Personal Hotspot", icon: "personalhotspot", capability: .cellular, color: .green, destination: AnyView(HotspotView())),
     SettingsItem(type: .battery, title: "Battery", icon: "battery.100percent", color: .green, destination: AnyView(BatteryView())),
 ]
 

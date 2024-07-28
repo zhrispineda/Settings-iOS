@@ -35,6 +35,13 @@ struct ContentView: View {
                 NavigationStack {
                     // MARK: - iPadOS Settings
                     if UIDevice.iPad {
+                        if !showingVpn {
+                            Rectangle()
+                                .foregroundStyle(Color.clear)
+                                .listRowBackground(Color.clear)
+                                .frame(height: 100)
+                        }
+                        
                         List(selection: $selection) {
                             Button {
                                 showingSignInSheet.toggle()
@@ -58,7 +65,7 @@ struct ContentView: View {
                                                 id = UUID() // Reset destination
                                                 selection = setting.type
                                             } label: {
-                                                SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Wi-Fi" ? (wifiEnabled && airplaneModeEnabled ? "Not Connected" : "Off") : setting.id == "Bluetooth" ? (bluetoothEnabled ? "On" : "Off") : String())
+                                                SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Wi-Fi" ? (wifiEnabled && !airplaneModeEnabled ? "Not Connected" : "Off") : setting.id == "Bluetooth" ? (bluetoothEnabled ? "On" : "Off") : String())
                                                     .foregroundStyle(selection == setting.type ? (UIDevice.isSimulator ? Color.white : Color["Label"]) : Color["Label"])
                                             }
                                             .listRowBackground(selection == setting.type ? (UIDevice.isSimulator ? Color.blue : Color("Selected")) : nil)
@@ -87,6 +94,12 @@ struct ContentView: View {
                             SettingsLabelSection(selection: $selection, id: $id, item: developerSettings)
                         }
                         .navigationTitle("Settings")
+                        .onAppear {
+                            Task {
+                                try await Task.sleep(nanoseconds: 500_000_000)
+                                withAnimation { showingVpn = true }
+                            }
+                        }
                         .searchable(text: $searchText, placement: .navigationBarDrawer)
                         .onReceive(NotificationCenter.default.publisher(for: UIDevice.orientationDidChangeNotification)) { _ in
                             if UIDevice.current.orientation.rawValue <= 4 {
@@ -107,7 +120,14 @@ struct ContentView: View {
                     } else {
                         // MARK: - iOS Settings
                         List {
-                            Section {
+                            if !showingVpn {
+                                Rectangle()
+                                    .foregroundStyle(Color.clear)
+                                    .listRowBackground(Color.clear)
+                                    .frame(height: showingCellular ? 100 : 120)
+                            }
+                            
+                            Section { // Apple Account Section
                                 Button {
                                     showingSignInSheet.toggle()
                                 } label: {
@@ -127,13 +147,19 @@ struct ContentView: View {
                                     IconToggle(enabled: $airplaneModeEnabled, color: Color.orange, icon: "airplane", title: "Airplane Mode")
                                     ForEach(radioSettings) { setting in
                                         if setting.capability == .none {
-                                            SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Wi-Fi" ? (wifiEnabled && !airplaneModeEnabled ? "Not Connected" : "Off") : setting.id == "Bluetooth" ? (bluetoothEnabled ? "On" : "Off") : setting.id == "Cellular" && airplaneModeEnabled ? "Airplane Mode" : String()) {
+                                            SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Wi-Fi" ? (wifiEnabled && !airplaneModeEnabled ? "Not Connected" : "Off") : setting.id == "Bluetooth" ? (bluetoothEnabled ? "On" : "Off") : String()) {
                                                 setting.destination
                                             }
-                                            .disabled(setting.id == "Personal Hotspot" && airplaneModeEnabled)
                                         } else if setting.capability != .none && showingCellular {
-                                            SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Cellular" && airplaneModeEnabled ? "Airplane Mode" : String()) {
-                                                setting.destination
+                                            if setting.id == "Personal Hotspot" && showingVpn {
+                                                SettingsLink(color: setting.color, icon: setting.icon, id: setting.id) {
+                                                    setting.destination
+                                                }
+                                                .disabled(setting.id == "Personal Hotspot" && airplaneModeEnabled)
+                                            } else if setting.id != "Personal Hotspot" {
+                                                SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Cellular" && airplaneModeEnabled ? "Airplane Mode" : String()) {
+                                                    setting.destination
+                                                }
                                             }
                                         }
                                     }
