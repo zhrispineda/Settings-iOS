@@ -10,38 +10,39 @@ import SwiftUI
 struct BatteryHealthView: View {
     @State private var maximumCapacity = 100
     @State private var eightyPercentLimitEnabled = false
+    let table = "BatteryUI"
     
     var body: some View {
-        CustomList(title: "Battery Health") {
+        CustomList(title: "BATTERY_HEALTH_TITLE".localize(table: table)) {
             Section {
-                LabeledContent("Battery Health", value: "Normal")
+                LabeledContent("BATTERY_HEALTH_TITLE".localize(table: table), value: "NORMAL_STATE".localize(table: table))
             } footer: {
-                Text("This \(UIDevice.current.model) battery is performing as expected. [About Battery & Warranty...](#)")
+                Text(.init(UIDevice.iPhone ? "BATTERY_HEALTH_STATE_FOOTER_NORMAL_IPHONE".localize(table: table, "[\("ABOUT_BATTERY_LINK".localize(table: table))](#)") : "BATTERY_HEALTH_STATE_FOOTER_NORMAL_IPAD".localize(table: table, "[\("ABOUT_BATTERY_LINK".localize(table: table))](#)")))
             }
             
             Section {
-                LabeledContent("Maximum Capacity", value: "\(maximumCapacity)%")
+                LabeledContent("MAXIMUM_CAPACITY_NAME".localize(table: table), value: "\(maximumCapacity)%")
             } footer: {
-                Text("This is a measure of battery capacity relative to when it was new. Lower capacity may result in fewer hours of usage between charges.")
+                Text("MAXIMUM_CAPACITY_FOOTER_TEXT".localize(table: table))
             }
             
             Section {
-                LabeledContent("Cycle Count", value: "0")
+                LabeledContent("CYCLE_COUNT_TITLE".localize(table: table), value: "0")
             } footer: {
-                Text("This is the number of times \(UIDevice.current.model) has used your battery's capacity. [Learn more...](https://www.apple.com/batteries/why-lithium-ion/)")
+                Text(UIDevice.iPhone ? "CYCLE_COUNT_FOOTER_IPHONE".localize(table: table) : "CYCLE_COUNT_FOOTER_IPAD".localize(table: table)) + Text(" ") + Text("[\("LM_TEXT".localize(table: table))](\("CYCLE_COUNT_LINK".localize(table: table)))")
             }
             
             if UIDevice.iPad {
                 Section {
-                    Toggle("80% Limit", isOn: $eightyPercentLimitEnabled)
+                    Toggle("CHARGING_FIXED_LIMIT".localize(table: table, "80%"), isOn: $eightyPercentLimitEnabled)
                 } footer: {
-                    Text("iPad will only charge to about 80%. [Learn more...](https://support.apple.com/en-us/118418)")
+                    Text("FIXED_FOOTER_IPAD".localize(table: table, "80%")) + Text(" ") + Text("[\("LM_TEXT".localize(table: table))](\(UIDevice.iPhone ? "BW_LM_URL_2_IPHONE".localize(table: table) : "BW_LM_URL_2_IPAD".localize(table: table)))")
                 }
             }
             
             Section {
-                LabeledContent("Manufacture Date", value: "August 2023")
-                LabeledContent("First Use", value: "September 2023")
+                LabeledContent("MANUFACTURE_DATE_TITLE".localize(table: table), value: UIDevice.iPhone ? "August 2023" : "February 2024")
+                LabeledContent("FIRST_USE_TITLE".localize(table: table), value: UIDevice.iPhone ? "September 2023" : "May 2024")
             }
         }
     }

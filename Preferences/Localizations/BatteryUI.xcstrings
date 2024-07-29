@@ -1,6 +1,17 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "ABOUT_BATTERY_LINK" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "About Battery & Warranty…"
+          }
+        }
+      }
+    },
     "BATTERY_HEALTH" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -14,6 +25,28 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Salud y carga de la batería"
+          }
+        }
+      }
+    },
+    "BATTERY_HEALTH_STATE_FOOTER_NORMAL_IPAD" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This iPad battery is performing as expected. %@"
+          }
+        }
+      }
+    },
+    "BATTERY_HEALTH_STATE_FOOTER_NORMAL_IPHONE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This iPhone battery is performing as expected. %@"
           }
         }
       }
@@ -86,6 +119,39 @@
         }
       }
     },
+    "BW_LM_URL_2_IPAD" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "https://support.apple.com/118418"
+          }
+        }
+      }
+    },
+    "BW_LM_URL_2_IPHONE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "https://support.apple.com/105105"
+          }
+        }
+      }
+    },
+    "CHARGING_FIXED_LIMIT" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ Limit"
+          }
+        }
+      }
+    },
     "CHARGING_TITLE_CHARGING" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -99,6 +165,78 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cargando"
+          }
+        }
+      }
+    },
+    "CYCLE_COUNT_FOOTER_IPAD" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This is the number of times iPad has used your battery's capacity."
+          }
+        }
+      }
+    },
+    "CYCLE_COUNT_FOOTER_IPHONE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This is the number of times iPhone has used your battery's capacity."
+          }
+        }
+      }
+    },
+    "CYCLE_COUNT_LINK" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "https://www.apple.com/batteries/why-lithium-ion/"
+          }
+        }
+      }
+    },
+    "CYCLE_COUNT_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cycle Count"
+          }
+        }
+      }
+    },
+    "FIRST_USE_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "First Use"
+          }
+        }
+      }
+    },
+    "FIXED_FOOTER_IPAD" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your iPad will only charge to about %@."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El iPad solo se cargará hasta el %@."
           }
         }
       }
@@ -133,6 +271,67 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "El modo de bajo consumo reduce temporalmente la actividad en segundo plano, como las descargas y la comprobación del correo, hasta que el iPhone pueda cargarse por completo."
+          }
+        }
+      }
+    },
+    "LEARN_MORE_URL_IPAD" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "https://support.apple.com/118418"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "https://support.apple.com/118418"
+          }
+        }
+      }
+    },
+    "LM_TEXT" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Learn more…"
+          }
+        }
+      }
+    },
+    "MANUFACTURE_DATE_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manufacture Date"
+          }
+        }
+      }
+    },
+    "MAXIMUM_CAPACITY_FOOTER_TEXT" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This is a measure of battery capacity relative to when it was new. Lower capacity may result in fewer hours of usage between charges."
+          }
+        }
+      }
+    },
+    "MAXIMUM_CAPACITY_NAME" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maximum Capacity"
           }
         }
       }
