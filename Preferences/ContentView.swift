@@ -71,7 +71,9 @@ struct ContentView: View {
                                             .listRowBackground(selection == setting.type ? (UIDevice.isSimulator ? Color.blue : Color("Selected")) : nil)
                                         }
                                     }
-                                    IconToggle(enabled: $vpnEnabled, color: .blue, icon: "network.connected.to.line.below", title: "VPN")
+                                    if showingVpn {
+                                        IconToggle(enabled: $vpnEnabled, color: .blue, icon: "network.connected.to.line.below", title: "VPN")
+                                    }
                                 }
                             }
                             
