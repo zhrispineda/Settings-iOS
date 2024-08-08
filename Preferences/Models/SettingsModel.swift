@@ -65,7 +65,7 @@ struct SettingsItem<Content: View>: Identifiable {
 }
 
 // MARK: Icons information
-let smallerIcons = ["appletvremote.gen4.fill", "apps.iphone", "apps.iphone.assistive.access", "apps.ipad", "bluetooth", "ear", "hand.raised.fill", "hourglass", "ipad.gen2", "iphone", "iphone.badge.dot.radiowaves.up.forward", "iphone.gen1", "iphone.gen3", "mic.fill", "shield.fill"]
+let smallerIcons = ["appletvremote.gen4.fill", "apps.iphone", "apps.iphone.assistive.access", "apps.ipad", "bluetooth", "ear", "hand.raised.fill", "hourglass", "ipad.gen2", "iphone", "iphone.badge.dot.radiowaves.up.forward", "iphone.gen1", "iphone.gen3", "lock.fill", "mic.fill", "shield.fill"]
 let largerIcons = ["waveform.and.magnifyingglass"]
 let hierarchyIcons = ["faceid", "questionmark.app.dashed", "questionmark.square.dashed", "waveform.and.magnifyingglass"]
 let internalIcons = ["airdrop", "apple.photos", "apps.iphone.assistive.access", "arrowtriangles.up.right.down.left.magnifyingglass", "bluetooth", "carplay", "chevron.3.up.perspective", "clock.filled.and.widget.filled", "eye.tracking", "figure.run.motion", "ipad.top.button.arrow.down", "iphone.action.button.arrow.right", "iphone.badge.dot.radiowaves.up.forward", "iphone.side.button.arrow.left", "keyboard.badge.waveform.fill", "lock.square.dotted", "nearby.interactions", "network.connected.to.line.below", "pencil.and.sparkles", "person.badge.waveform.fill", "sensorkit", "speaker.eye.fill", "voice.control", "waveform.arrow.triangle.branch.right", "waveform.bubble.fill"]
@@ -98,6 +98,7 @@ let internalIcons = ["airdrop", "apple.photos", "apps.iphone.assistive.access", 
     SettingsItem(type: .general, title: "General", icon: "gear", color: .gray, destination: AnyView(GeneralView())),
     SettingsItem(type: .accessibility, title: "Accessibility", icon: "accessibility", color: .blue, destination: AnyView(AccessibilityView())),
     SettingsItem(type: .actionButton, title: "Action Button", icon: "iphone.action.button.arrow.right", capability: .actionButton, color: .blue, destination: AnyView(ActionButtonView())),
+    //SettingsItem(type: .siri, title: "Apple Intelligence & Siri", icon: "appleIntelligence", color: Color(UIColor.systemBackground), destination: AnyView(SiriView())),
     SettingsItem(type: .camera, title: "Camera", icon: "camera.fill", color: .gray, destination: AnyView(CameraView())),
     SettingsItem(type: .controlCenter, title: "Control Center", icon: "switch.2", destination: AnyView(ControlCenterView())),
     SettingsItem(type: .displayBrightness, title: "Display & Brightness", icon: "sun.max.fill", color: .blue, destination: AnyView(DisplayBrightnessView())),

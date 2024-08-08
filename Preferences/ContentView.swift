@@ -122,13 +122,6 @@ struct ContentView: View {
                     } else {
                         // MARK: - iOS Settings
                         List {
-                            if !showingVpn {
-                                Rectangle()
-                                    .foregroundStyle(Color.clear)
-                                    .listRowBackground(Color.clear)
-                                    .frame(height: showingCellular ? 100 : 120)
-                            }
-                            
                             Section { // Apple Account Section
                                 Button {
                                     showingSignInSheet.toggle()
@@ -152,22 +145,14 @@ struct ContentView: View {
                                             SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Wi-Fi" ? (wifiEnabled && !airplaneModeEnabled ? "Not Connected" : "Off") : setting.id == "Bluetooth" ? (bluetoothEnabled ? "On" : "Off") : String()) {
                                                 setting.destination
                                             }
-                                        } else if setting.capability != .none && showingCellular {
-                                            if setting.id == "Personal Hotspot" && showingVpn {
-                                                SettingsLink(color: setting.color, icon: setting.icon, id: setting.id) {
-                                                    setting.destination
-                                                }
-                                                .disabled(setting.id == "Personal Hotspot" && airplaneModeEnabled)
-                                            } else if setting.id != "Personal Hotspot" {
-                                                SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Cellular" && airplaneModeEnabled ? "Airplane Mode" : String()) {
-                                                    setting.destination
-                                                }
+                                        } else if setting.capability != .none {
+                                            SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Cellular" && airplaneModeEnabled ? "Airplane Mode" : String()) {
+                                                setting.destination
                                             }
+                                            .disabled(setting.id == "Personal Hotspot" && airplaneModeEnabled)
                                         }
                                     }
-                                    if showingVpn {
-                                        IconToggle(enabled: $vpnEnabled, color: .blue, icon: "network.connected.to.line.below", title: "VPN")
-                                    }
+                                    //IconToggle(enabled: $vpnEnabled, color: .blue, icon: "network.connected.to.line.below", title: "VPN")
                                 }
                             }
                             
