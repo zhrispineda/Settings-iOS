@@ -19,7 +19,6 @@ struct ContentView: View {
     @State private var destination = AnyView(GeneralView())
     @State private var isOnLandscapeOrientation: Bool = UIDevice.current.orientation.isLandscape
     @State private var id = UUID()
-    @State private var showingCellular = false
     @State private var showingVpn = false
     @AppStorage("AirplaneMode") private var airplaneModeEnabled = false
     @AppStorage("wifi") private var wifiEnabled = true
@@ -35,14 +34,16 @@ struct ContentView: View {
                 NavigationStack {
                     // MARK: - iPadOS Settings
                     if UIDevice.iPad {
-                        if !showingVpn {
-                            Rectangle()
-                                .foregroundStyle(Color.clear)
-                                .listRowBackground(Color.clear)
-                                .frame(height: 100)
-                        }
-                        
                         List(selection: $selection) {
+                            if !showingVpn {
+                                Section {
+                                    Rectangle()
+                                        .foregroundStyle(Color.clear)
+                                        .listRowBackground(Color.clear)
+                                        .frame(height: 25)
+                                }
+                            }
+                            
                             Button {
                                 showingSignInSheet.toggle()
                             } label: {
@@ -71,9 +72,7 @@ struct ContentView: View {
                                             .listRowBackground(selection == setting.type ? (UIDevice.isSimulator ? Color.blue : Color("Selected")) : nil)
                                         }
                                     }
-                                    if showingVpn {
-                                        IconToggle(enabled: $vpnEnabled, color: .blue, icon: "network.connected.to.line.below", title: "VPN")
-                                    }
+                                    //IconToggle(enabled: $vpnEnabled, color: .blue, icon: "network.connected.to.line.below", title: "VPN")
                                 }
                             }
                             
@@ -174,14 +173,6 @@ struct ContentView: View {
                             // MARK: Developer
                             if UIDevice.isSimulator || Configuration().developerMode {
                                 SettingsLinkSection(item: developerSettings)
-                            }
-                        }
-                        .onAppear {
-                            Task {
-                                try await Task.sleep(nanoseconds: 500_000_000)
-                                withAnimation { showingCellular = true }
-                                try await Task.sleep(nanoseconds: 500_000_000)
-                                withAnimation { showingVpn = true }
                             }
                         }
                         .navigationTitle("Settings")
