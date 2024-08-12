@@ -20,7 +20,7 @@ Simulator:
 ![A GIF displaying the project's Settings app on different devices including a Dynamic Island iPhone, iPhone with Touch ID, and an 11-inch iPad.](Assets/SettingsSimulator.gif)
 
 ## Information
-- This personal project is a recreation of Apple's Settings app for iOS and iPadOS 18 **beta 5** (22A5326f).
+- This personal project is a recreation of Apple's Settings app for iOS and iPadOS 18 **beta 6** (22A5338b).
 - All features within the app are only simulations and have no effect on the device outside of the app.
 - Aspects such as simulated controls and some views are incomplete for now.
 

@@ -65,10 +65,10 @@ struct SettingsItem<Content: View>: Identifiable {
 }
 
 // MARK: Icons information
-let smallerIcons = ["appletvremote.gen4.fill", "apps.iphone", "apps.iphone.assistive.access", "apps.ipad", "bluetooth", "ear", "hand.raised.fill", "hourglass", "ipad.gen2", "iphone", "iphone.badge.dot.radiowaves.up.forward", "iphone.gen1", "iphone.gen3", "lock.fill", "mic.fill", "shield.fill"]
+let smallerIcons = ["appletvremote.gen4.fill", "apps.iphone", "apps.iphone.assistive.access", "apps.ipad", "arrow.counterclockwise", "bluetooth", "checkmark.seal.text.page.fill", "ear", "hand.raised.fill", "hourglass", "ipad.gen2", "iphone", "iphone.badge.dot.radiowaves.up.forward", "iphone.gen1", "iphone.gen3", "lock.fill", "mic.fill", "shield.fill", "text.book.closed.fill"]
 let largerIcons = ["waveform.and.magnifyingglass"]
 let hierarchyIcons = ["faceid", "questionmark.app.dashed", "questionmark.square.dashed", "waveform.and.magnifyingglass"]
-let internalIcons = ["airdrop", "apple.photos", "apps.iphone.assistive.access", "arrowtriangles.up.right.down.left.magnifyingglass", "bluetooth", "carplay", "chevron.3.up.perspective", "clock.filled.and.widget.filled", "eye.tracking", "figure.run.motion", "ipad.top.button.arrow.down", "iphone.action.button.arrow.right", "iphone.badge.dot.radiowaves.up.forward", "iphone.side.button.arrow.left", "keyboard.badge.waveform.fill", "lock.square.dotted", "nearby.interactions", "network.connected.to.line.below", "pencil.and.sparkles", "person.badge.waveform.fill", "sensorkit", "speaker.eye.fill", "voice.control", "waveform.arrow.triangle.branch.right", "waveform.bubble.fill"]
+let internalIcons = ["airdrop", "apple.photos", "apps.iphone.assistive.access", "arrow.clockwise.app.stack.fill", "arrowtriangles.up.right.down.left.magnifyingglass", "bluetooth", "carplay", "chevron.3.up.perspective", "clock.filled.and.widget.filled", "eye.tracking", "figure.run.motion", "ipad.top.button.arrow.down", "iphone.action.button.arrow.right", "iphone.badge.dot.radiowaves.up.forward", "iphone.side.button.arrow.left", "keyboard.badge.waveform.fill", "key.dots.fill", "lock.square.dotted", "nearby.interactions", "network.connected.to.line.below", "pencil.and.sparkles", "person.badge.waveform.fill", "sensorkit", "speaker.eye.fill", "voice.control", "waveform.arrow.triangle.branch.right", "waveform.bubble.fill"]
 
 // MARK: - Settings Layout
 // MARK: Radio Settings

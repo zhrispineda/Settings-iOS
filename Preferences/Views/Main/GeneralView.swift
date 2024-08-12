@@ -56,24 +56,24 @@ struct GeneralView: View {
             }
             
             Section {
-                SettingsLink(color: .gray, icon: "ellipsis.rectangle", id: String(localized: "AUTOFILL", table: "General")) {
+                SettingsLink(color: .gray, icon: "key.dots.fill", id: String(localized: "AUTOFILL", table: "General")) {
                     AutoFillPasswordsView()
                 }
                 if !UIDevice.isSimulator {
-                    SettingsLink(color: .gray, icon: "arrow.circlepath", id: String(localized: "AUTO_CONTENT_DOWNLOAD", table: "General")) {}
+                    SettingsLink(color: .gray, icon: "arrow.clockwise.app.stack.fill", id: String(localized: "AUTO_CONTENT_DOWNLOAD", table: "General")) {}
                     SettingsLink(color: .blue, icon: "calendar.badge.clock", id: String(localized: "DATE_AND_TIME", table: "General")) {}
                 }
-                SettingsLink(color: .blue, icon: "character.book.closed.fill", id: String(localized: "DICTIONARY", table: "General")) {
+                SettingsLink(color: .blue, icon: "text.book.closed.fill", id: String(localized: "DICTIONARY", table: "General")) {
                     DictionaryView()
                 }
                 SettingsLink(color: .gray, icon: "textformat", id: String(localized: "FONT_SETTING", table: "General")) {
                     FontsView()
                 }
-                if !UIDevice.isSimulator {
-                    SettingsLink(color: .gray, icon: "gamecontroller.fill", id: String(localized: "GAME_CONTROLLER", table: "General")) {
-                        GameControllerView()
-                    }
-                }
+//                if !UIDevice.isSimulator {
+//                    SettingsLink(color: .gray, icon: "gamecontroller.fill", id: String(localized: "GAME_CONTROLLER", table: "General")) {
+//                        GameControllerView()
+//                    }
+//                }
                 SettingsLink(color: .gray, icon: "keyboard.fill", id: String(localized: "Keyboard", table: "General")) {
                     KeyboardView()
                 }
@@ -96,7 +96,7 @@ struct GeneralView: View {
             
             if !UIDevice.isSimulator {
                 Section {
-                    SettingsLink(color: .gray, icon: "text.justify.left", id: String(localized: "LEGAL_AND_REGULATORY_TITLE", table: "General")) {}
+                    SettingsLink(color: .gray, icon: "checkmark.seal.text.page.fill", id: String(localized: "LEGAL_AND_REGULATORY_TITLE", table: "General")) {}
                 }
             }
             
