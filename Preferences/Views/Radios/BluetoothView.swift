@@ -13,7 +13,7 @@ struct BluetoothView: View {
     @AppStorage("DeviceName") private var deviceName = UIDevice.current.model
     
     var body: some View {
-        CustomList(title: "BLUETOOTH".localize(table: "BluetoothSettings")) {
+        CustomList {
             Section {
                 SectionHelp(title: "BLUETOOTH".localize(table: "BluetoothSettings"), color: Color.blue, icon: "bluetooth", description: "\("BLUETOOTHPLACARDINFO".localize(table: "BluetoothSettings")) [\("LEARN_MORE".localize(table: "BluetoothSettings"))](https://support.apple.com/guide/\(UIDevice.iPhone ?  "iphone/bluetooth-accessories-iph3c50f191/ios" : "ipad/bluetooth-accessories-ipad997da4cf/ipados"))")
                 Toggle("BLUETOOTH".localize(table: "BluetoothSettings"), isOn: $bluetoothEnabled.animation())

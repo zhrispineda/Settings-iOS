@@ -38,6 +38,12 @@ struct AboutView: View {
             }
             
             Section {
+                NavigationLink(destination: AppleCareWarrantyView()) {
+                    LabeledContent("AppleCare+", value: "Expires: 9/21/25")
+                }
+            }
+            
+            Section {
                 LabeledContent("Songs", value: "0")
                 LabeledContent("Videos", value: "0")
                 LabeledContent("Photos", value: "0")
@@ -51,7 +57,7 @@ struct AboutView: View {
             if !UIDevice.isSimulator && UIDevice.CellularTelephonyCapability {
                 HText("Wi-Fi Address", status: "00:0A:AA:A0:A0:00")
                 HText("Bluetooth", status: "00:0A:AA:A0:A0:00")
-                HText("Modem Firmware", status: "1.60.02")
+                HText("Modem Firmware", status: "2.16.00")
                 NavigationLink("SEID") {}
                 VStack {
                     Text("EID")

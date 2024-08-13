@@ -15,7 +15,7 @@ struct NetworkView: View {
     @State private var showingOtherNetwork = false
     
     var body: some View {
-        CustomList(title: "Wi-Fi") {
+        CustomList {
             if isEditing {
                 Section {} header: {
                     Text("Known Networks")

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct GeneralView: View {
     var body: some View {
-        CustomList(title: String(localized: "General", table: "General")) {
+        CustomList {
             Section {
                 SectionHelp(title: String(localized: "General", table: "General"), color: Color.gray, icon: "gear", description: "PLACARD_SUBTITLE")
             }

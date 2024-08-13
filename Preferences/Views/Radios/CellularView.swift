@@ -15,8 +15,8 @@ struct CellularView: View {
     @State private var cellularUsageStatisticsEnabled = true
     
     var body: some View {
-        CustomList(title: "Cellular") {
-            SectionHelp(title: "Cellular", color: .green, icon: "antenna.radiowaves.left.and.right", description: "Find out how much data you're using, set data restrictions, and manage carrier settings such as eSIM and Wi-Fi calling. [Learn more...](https://support.apple.com/guide/iphone/view-or-change-cellular-data-settings-iph3dd5f213/ios)")
+        CustomList {
+            SectionHelp(title: "Cellular", color: .green, icon: "antenna.radiowaves.left.and.right", description: "Find out how much data you‘re using, set data restrictions, and manage carrier settings such as eSIM and Wi-Fi calling. [Learn more...](https://support.apple.com/guide/iphone/view-or-change-cellular-data-settings-iph3dd5f213/ios)")
             
             Section {
                 Toggle("Cellular Data", isOn: $cellularDataEnabled)
@@ -98,7 +98,7 @@ struct CellularView: View {
             } header: {
                 Text("Cellular Usage Statistics")
             } footer: {
-                Text("Disabling cellular usage statistics will disable all cellular usage tracking, as well as reset any currently tracked usage to zero.\n\nLast Reset: ")
+                Text("Disabling cellular usage statistics will disable all cellular usage tracking, as well as reset any currently tracked usage to zero.\n\nLast Reset: Sep 22, 2023 at 9:41 AM")
             }
         }
     }
