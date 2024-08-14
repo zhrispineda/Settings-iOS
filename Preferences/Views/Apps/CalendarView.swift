@@ -17,7 +17,7 @@ struct CalendarView: View {
     @State private var frameY: Double = 0
     
     var body: some View {
-        CustomList {
+        CustomList(title: "Calendar") {
             Section {
                 SectionHelp(title: "Calendar", icon: "appleCalendar", description: "Add and manage your accounts to create and edit events in the Calendar app. [Learn more...](https://support.apple.com/guide/\(UIDevice.iPhone ? "iphone/set-up-mail-contacts-and-calendar-accounts-ipha0d932e96/ios"  : "ipad/set-up-mail-contacts-and-calendar-accounts-ipadee835d39/ipados"))")
                     .overlay { // For calculating opacity of the principal toolbar item
@@ -29,7 +29,6 @@ struct CalendarView: View {
                                 }
                         }
                     }
-                    .navigationTitle("Calendar") // For subview back button
                 CustomNavigationLink(title: "Calendar Accounts", status: "1", destination: EmptyView())
             }
             

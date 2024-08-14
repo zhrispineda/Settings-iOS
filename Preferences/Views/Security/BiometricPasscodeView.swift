@@ -33,9 +33,21 @@ struct BiometricPasscodeView: View {
     @State private var allowEraseAfterFailedAttempts = false
     @State private var showingEraseConfirmation = false
     
+    @State private var opacity: Double = 0
+    @State private var frameY: Double = 0
+    
     var body: some View {
         CustomList(title: "\(UIDevice.PearlIDCapability ? "Face" : "Touch") ID & Passcode") {
             SectionHelp(title: "\(UIDevice.PearlIDCapability ? "Face" : "Touch") ID & Passcode", color: UIDevice.PearlIDCapability ? .green : .white, icon: UIDevice.PearlIDCapability ? "faceid" : "touchid", description: "\(UIDevice.PearlIDCapability ? "Manage apps using Face ID and other \(UIDevice.current.model) access settings, set up alternate appearances, and change your passcode." : "Turn on Touch ID and set a passcode to unlock your \(UIDevice.current.model), authorize purchases, and access sensitive data.") [Learn more...](\(UIDevice.PearlIDCapability ? "https://support.apple.com/guide/iphone/set-up-face-id-iph6d162927a/ios" : "https://support.apple.com/guide/iphone/set-up-touch-id-iph672384a0b/ios"))")
+                .overlay { // For calculating opacity of the principal toolbar item
+                    GeometryReader { geo in
+                        Color.clear
+                            .onChange(of: geo.frame(in: .scrollView).minY) {
+                                frameY = geo.frame(in: .scrollView).minY
+                                opacity = frameY / -30
+                            }
+                    }
+                }
             
             Section {
                 Toggle("\(UIDevice.current.model) Unlock", isOn: $allowFingerprintForUnlock)
@@ -142,6 +154,14 @@ struct BiometricPasscodeView: View {
                     }
             } footer: {
                 Text("Erase all data on this \(UIDevice.current.model) after 10 failed passcode attempts.\n\nData protection is enabled.")
+            }
+        }
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                Text("\(UIDevice.PearlIDCapability ? "Face" : "Touch") ID & Passcode")
+                    .fontWeight(.semibold)
+                    .font(.subheadline)
+                    .opacity(frameY < 50.0 ? opacity : 0) // Only fade when passing the help section title at the top
             }
         }
     }

@@ -8,9 +8,22 @@
 import SwiftUI
 
 struct PrivacySecurityView: View {
+    // Variables
+    @State private var opacity: Double = 0
+    @State private var frameY: Double = 0
+    
     var body: some View {
         CustomList(title: "Privacy & Security") {
             SectionHelp(title: "Privacy & Security", color: .blue, icon: "hand.raised.fill", description: "The advanced security and privacy features in \(UIDevice().systemName) help to safeguard your data while also providing control over the sharing of personal information. [Learn more...](https://support.apple.com/guide/iphone/use-built-in-privacy-and-security-protections-iph6e7d349d1/ios)")
+                .overlay { // For calculating opacity of the principal toolbar item
+                    GeometryReader { geo in
+                        Color.clear
+                            .onChange(of: geo.frame(in: .scrollView).minY) {
+                                frameY = geo.frame(in: .scrollView).minY
+                                opacity = frameY / -30
+                            }
+                    }
+                }
             
             Section {
                 SettingsLink(color: .blue, icon: "location.fill", id: "Location Services", subtitle: "1 while using") {
@@ -143,6 +156,14 @@ struct PrivacySecurityView: View {
                 }
             } header: {
                 Text("Security")
+            }
+        }
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                Text("Privacy & Security")
+                    .fontWeight(.semibold)
+                    .font(.subheadline)
+                    .opacity(frameY < 50.0 ? opacity : 0) // Only fade when passing the help section title at the top
             }
         }
     }
