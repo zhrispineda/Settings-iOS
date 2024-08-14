@@ -13,6 +13,8 @@ struct NetworkView: View {
     @State var isEditing = false
     @AppStorage("wifi") private var wifiEnabled = true
     @State private var showingOtherNetwork = false
+    @State private var opacity: Double = 0
+    @State private var frameY: Double = 0
     
     var body: some View {
         CustomList {
@@ -23,6 +25,15 @@ struct NetworkView: View {
             } else {
                 Section {
                     SectionHelp(title: "Wi-Fi", color: Color.blue, icon: "wifi", description: "Connect to Wi-Fi, view available networks, and manage settings for joining networks and nearby hotspots. [Learn more...](https://support.apple.com/guide/\(UIDevice.iPhone ?  "iphone/connect-to-the-internet-iphd1cf4268/ios" : "ipad/connect-to-the-internet-ipad2db29c3a/ipados"))")
+                        .overlay { // For calculating opacity of the principal toolbar item
+                            GeometryReader { geo in
+                                Color.clear
+                                    .onChange(of: geo.frame(in: .scrollView).minY) {
+                                        frameY = geo.frame(in: .scrollView).minY
+                                        opacity = frameY / -30
+                                    }
+                            }
+                        }
                     
                     Toggle(isOn: $wifiEnabled) {
                         HStack {
@@ -82,6 +93,12 @@ struct NetworkView: View {
                         }
                     }
                 }
+            }
+            
+            ToolbarItem(placement: .principal) {
+                Text("**Wi-Fi**")
+                    .font(.subheadline)
+                    .opacity(frameY < 50.0 ? opacity : 0) // Only fade when passing the help section title at the top
             }
             
             ToolbarItem(placement: .topBarTrailing) {

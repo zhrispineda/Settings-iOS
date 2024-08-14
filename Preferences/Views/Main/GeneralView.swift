@@ -8,10 +8,23 @@
 import SwiftUI
 
 struct GeneralView: View {
+    // Variables
+    @State private var opacity: Double = 0
+    @State private var frameY: Double = 0
+    
     var body: some View {
         CustomList {
             Section {
                 SectionHelp(title: String(localized: "General", table: "General"), color: Color.gray, icon: "gear", description: "PLACARD_SUBTITLE")
+                    .overlay { // For calculating opacity of the principal toolbar item
+                        GeometryReader { geo in
+                            Color.clear
+                                .onChange(of: geo.frame(in: .scrollView).minY) {
+                                    frameY = geo.frame(in: .scrollView).minY
+                                    opacity = frameY / -30
+                                }
+                        }
+                    }
             }
         
             Section {
@@ -112,6 +125,13 @@ struct GeneralView: View {
                 Section {
                     Button(String(localized: "SHUTDOWN_LABEL", table: "General")) {}
                 }
+            }
+        }
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                Text("**\("General".localize(table: "General"))**")
+                    .font(.subheadline)
+                    .opacity(frameY < 50.0 ? opacity : 0) // Only fade when passing the help section title at the top
             }
         }
     }

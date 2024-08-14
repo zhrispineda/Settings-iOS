@@ -13,10 +13,21 @@ struct HotspotView: View {
     @State private var password = String()
     @State private var maximizeCompatibility = false
     @AppStorage("DeviceName") private var deviceName = UIDevice.current.model
+    @State private var opacity: Double = 0
+    @State private var frameY: Double = 0
     
     var body: some View {
-        CustomList(title: "Personal Hotspot") {
+        CustomList {
             SectionHelp(title: "Personal Hotspot", color: .green, icon: "personalhotspot", description: "Personal Hotspot allows you to share a cellular internet connection from your \(UIDevice.current.model) to other nearby devices. [Learn more...](https://support.apple.com/guide/iphone/share-your-internet-connection-iph45447ca6/ios)")
+                .overlay { // For calculating opacity of the principal toolbar item
+                    GeometryReader { geo in
+                        Color.clear
+                            .onChange(of: geo.frame(in: .scrollView).minY) {
+                                frameY = geo.frame(in: .scrollView).minY
+                                opacity = frameY / -30
+                            }
+                    }
+                }
             
             Section {
                 Toggle("Allow Others to Join", isOn: $allowOthersJoinEnabled)
@@ -40,6 +51,13 @@ struct HotspotView: View {
                 Toggle("Maximize Compatability", isOn: $maximizeCompatibility)
             } footer: {
                 Text("Internet performance may be reduced for devices connected to your hotspot when turned on.")
+            }
+        }
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                Text("**Personal Hotspot**")
+                    .font(.subheadline)
+                    .opacity(frameY < 50.0 ? opacity : 0) // Only fade when passing the help section title at the top
             }
         }
     }

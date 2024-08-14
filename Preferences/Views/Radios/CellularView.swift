@@ -13,10 +13,21 @@ struct CellularView: View {
     @State private var mode: Int = 0
     @State private var wifiAssistEnabled = true
     @State private var cellularUsageStatisticsEnabled = true
+    @State private var opacity: Double = 0
+    @State private var frameY: Double = 0
     
     var body: some View {
         CustomList {
             SectionHelp(title: "Cellular", color: .green, icon: "antenna.radiowaves.left.and.right", description: "Find out how much data you‘re using, set data restrictions, and manage carrier settings such as eSIM and Wi-Fi calling. [Learn more...](https://support.apple.com/guide/iphone/view-or-change-cellular-data-settings-iph3dd5f213/ios)")
+                .overlay { // For calculating opacity of the principal toolbar item
+                    GeometryReader { geo in
+                        Color.clear
+                            .onChange(of: geo.frame(in: .scrollView).minY) {
+                                frameY = geo.frame(in: .scrollView).minY
+                                opacity = frameY / -30
+                            }
+                    }
+                }
             
             Section {
                 Toggle("Cellular Data", isOn: $cellularDataEnabled)
@@ -99,6 +110,13 @@ struct CellularView: View {
                 Text("Cellular Usage Statistics")
             } footer: {
                 Text("Disabling cellular usage statistics will disable all cellular usage tracking, as well as reset any currently tracked usage to zero.\n\nLast Reset: Sep 22, 2023 at 9:41 AM")
+            }
+        }
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                Text("**Cellular**")
+                    .font(.subheadline)
+                    .opacity(frameY < 50.0 ? opacity : 0) // Only fade when passing the help section title at the top
             }
         }
     }
