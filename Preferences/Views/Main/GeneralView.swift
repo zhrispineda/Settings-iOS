@@ -25,6 +25,7 @@ struct GeneralView: View {
                                 }
                         }
                     }
+                    .navigationTitle("General".localize(table: "General")) // For subview back button
             }
         
             Section {

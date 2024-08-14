@@ -17,9 +17,10 @@ struct SearchDetailView: View {
     @State private var showAppInSearchEnabled = true
     @State private var showContentInSearchEnabled = true
     var appName: String = String()
+    var appTitle = true
     
     var body: some View {
-        CustomList(title: appName) {
+        CustomList(title: appTitle ? appName : "Search") {
             Section {
                 Toggle("Show App in Search", isOn: $showAppInSearchEnabled)
                 if showAppInSearchEnabled {
@@ -37,6 +38,6 @@ struct SearchDetailView: View {
 
 #Preview {
     NavigationStack {
-        SearchDetailView()
+        SearchDetailView(appName: "Example")
     }
 }

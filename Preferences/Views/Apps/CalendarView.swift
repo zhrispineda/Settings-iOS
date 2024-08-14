@@ -13,17 +13,29 @@ struct CalendarView: View {
     @State private var weekViewStartsTodayEnabled = false
     @State private var showInviteeDeclinesEnabled = true
     @State private var locationSuggestionsEnabled = true
+    @State private var opacity: Double = 0
+    @State private var frameY: Double = 0
     
     var body: some View {
-        CustomList(title: "Calendar") {
+        CustomList {
             Section {
                 SectionHelp(title: "Calendar", icon: "appleCalendar", description: "Add and manage your accounts to create and edit events in the Calendar app. [Learn more...](https://support.apple.com/guide/\(UIDevice.iPhone ? "iphone/set-up-mail-contacts-and-calendar-accounts-ipha0d932e96/ios"  : "ipad/set-up-mail-contacts-and-calendar-accounts-ipadee835d39/ipados"))")
+                    .overlay { // For calculating opacity of the principal toolbar item
+                        GeometryReader { geo in
+                            Color.clear
+                                .onChange(of: geo.frame(in: .scrollView).minY) {
+                                    frameY = geo.frame(in: .scrollView).minY
+                                    opacity = frameY / -30
+                                }
+                        }
+                    }
+                    .navigationTitle("Calendar") // For subview back button
                 CustomNavigationLink(title: "Calendar Accounts", status: "1", destination: EmptyView())
             }
             
             PermissionsView(appName: "Calendar", cellular: false, location: false, notifications: false, cellularEnabled: .constant(false))
             
-            LanguageView()
+            //LanguageView()
             
             Section {
                 CustomNavigationLink(title: "Time Zone Override", status: "Off", destination: EmptyView())
@@ -39,6 +51,14 @@ struct CalendarView: View {
                 NavigationLink("Start Week On") {}
                 //CustomNavigationLink(title: "Default Calendar", status: "Personal", destination: EmptyView())
                 Toggle("Location Suggestions", isOn: $locationSuggestionsEnabled)
+            }
+        }
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                Text("Calendar")
+                    .fontWeight(.semibold)
+                    .font(.subheadline)
+                    .opacity(frameY < 50.0 ? opacity : 0) // Only fade when passing the help section title at the top
             }
         }
     }

@@ -46,8 +46,11 @@ struct PermissionsView: View {
                 IconToggle(enabled: $faceIdEnabled, color: .green, icon: "faceid", title: "Face ID")
             }
             if siri {
-                SettingsLink(icon: "appleSiri", id: "Siri & Search") {
+                SettingsLink(icon: "appleSiri", id: "Siri") {
                     SiriDetailView(appName: appName)
+                }
+                SettingsLink(color: .gray, icon: "magnifyingglass", id: "Search") {
+                    SearchDetailView(appName: appName, appTitle: false)
                 }
             }
             if notifications {

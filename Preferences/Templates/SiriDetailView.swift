@@ -22,7 +22,7 @@ struct SiriDetailView: View {
     @State private var suggestAppEnabled = true
     @State private var suggestNotificationsEnabled = true
     var appName: String = String()
-    var title: String = "Siri & Search"
+    var title: String = "Siri"
     
     let showInAppApps = ["Calendar", "Contacts", "Maps", "Messages", "News", "Reminders", "Safari"]
     
