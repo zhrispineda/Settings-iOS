@@ -19,7 +19,7 @@ struct ContentView: View {
     @State private var destination = AnyView(GeneralView())
     @State private var isOnLandscapeOrientation: Bool = UIDevice.current.orientation.isLandscape
     @State private var id = UUID()
-    @State private var showingVpn = false
+    @State private var preloadRect = false
     @AppStorage("AirplaneMode") private var airplaneModeEnabled = false
     @AppStorage("wifi") private var wifiEnabled = true
     @AppStorage("bluetooth") private var bluetoothEnabled = true
@@ -35,7 +35,7 @@ struct ContentView: View {
                     // MARK: - iPadOS Settings
                     if UIDevice.iPad {
                         List(selection: $selection) {
-                            if !showingVpn {
+                            if !preloadRect {
                                 Section {
                                     Rectangle()
                                         .foregroundStyle(Color.clear)
@@ -98,7 +98,7 @@ struct ContentView: View {
                         .onAppear {
                             Task {
                                 try await Task.sleep(nanoseconds: 500_000_000)
-                                withAnimation { showingVpn = true }
+                                withAnimation { preloadRect = true }
                             }
                         }
                         .searchable(text: $searchText, placement: .navigationBarDrawer)
@@ -148,7 +148,7 @@ struct ContentView: View {
                                             SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Cellular" && airplaneModeEnabled ? "Airplane Mode" : setting.id == "Personal Hotspot" ? "Off" : String()) {
                                                 setting.destination
                                             }
-                                            //.disabled(setting.id == "Personal Hotspot" && airplaneModeEnabled)
+                                            .disabled(setting.id == "Personal Hotspot" && airplaneModeEnabled)
                                         }
                                     }
                                     //IconToggle(enabled: $vpnEnabled, color: .blue, icon: "network.connected.to.line.below", title: "VPN")

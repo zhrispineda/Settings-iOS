@@ -37,9 +37,11 @@ struct AboutView: View {
                     }
             }
             
-            Section {
-                NavigationLink(destination: AppleCareWarrantyView()) {
-                    LabeledContent("AppleCare+", value: "Expires: 9/21/25")
+            if !UIDevice.isSimulator {
+                Section {
+                    NavigationLink(destination: AppleCareWarrantyView()) {
+                        LabeledContent("AppleCare+", value: "Expires: 9/21/25")
+                    }
                 }
             }
             

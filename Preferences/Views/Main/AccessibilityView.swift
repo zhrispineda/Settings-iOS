@@ -10,11 +10,22 @@ import SwiftUI
 struct AccessibilityView: View {
     // Variables
     let table = "Accessibility"
+    @State private var opacity: Double = 0
+    @State private var frameY: Double = 0
     
     var body: some View {
         CustomList(title: "ROOT_LEVEL_TITLE".localize(table: table)) {
             Section {
                 SectionHelp(title: "PLACARD_TITLE".localize(table: table), color: .blue, icon: "accessibility", description: UIDevice.iPhone ? "\("PLACARD_SUBTITLE_IPHONE".localize(table: table)) [\("PLACARD_LEARN_MORE".localize(table: "Accessibility"))](https://support.apple.com/guide/iphone/get-started-with-accessibility-features-iph3e2e4367/ios)" : "\("PLACARD_SUBTITLE_IPAD".localize(table: table)) [\("PLACARD_LEARN_MORE".localize(table: table))](https://support.apple.com/guide/ipad/get-started-with-accessibility-features-ipad9a2465f9/ipados)")
+                    .overlay { // For calculating opacity of the principal toolbar item
+                        GeometryReader { geo in
+                            Color.clear
+                                .onChange(of: geo.frame(in: .scrollView).minY) {
+                                    frameY = geo.frame(in: .scrollView).minY
+                                    opacity = frameY / -30
+                                }
+                        }
+                    }
             }
             
             Section {
@@ -129,6 +140,14 @@ struct AccessibilityView: View {
                 }
             } header: {
                 Text("GENERAL_HEADING")
+            }
+        }
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                Text("ROOT_LEVEL_TITLE".localize(table: table))
+                    .fontWeight(.semibold)
+                    .font(.subheadline)
+                    .opacity(frameY < 50.0 ? opacity : 0) // Only fade when passing the help section title at the top
             }
         }
     }

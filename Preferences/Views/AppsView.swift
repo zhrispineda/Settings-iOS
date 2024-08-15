@@ -60,7 +60,7 @@ struct AppsView: View {
                     )
                 }
             }
-            .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always))
+            .searchable(text: $searchText, placement: .toolbar)
             .scrollIndicators(.hidden)
             
             VStack {

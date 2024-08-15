@@ -11,10 +11,12 @@ struct AutoFillPasswordsView: View {
     // Variables
     @State private var autoFillPasswordPasskeysEnabled = true
     @State private var keychainEnabled = true
-    @State private var deleteAfterUseEnabled = true
+    @State private var deleteAfterUseEnabled = false
+    @State private var selected = "Passwords"
+    let options = ["Passwords"]
     
     var body: some View {
-        CustomList(title: "AutoFill & Passwords") {
+        CustomList(title: "AutoFill & Passwords", topPadding: true) {
             Section {
                 Toggle("AutoFill Passwords and Passkeys", isOn: $autoFillPasswordPasskeysEnabled)
             } footer: {
@@ -39,11 +41,17 @@ struct AutoFillPasswordsView: View {
                 HStack {
                     Text("Set Up Codes In")
                     Spacer()
-                    Text("Passwords")
-                        .foregroundStyle(.secondary)
+                    Picker("", selection: $selected) {
+                        ForEach(options, id: \.self) { option in
+                            Text(option)
+                        }
+                    }
+                    .pickerStyle(.menu)
+                    .labelsHidden()
+                    .tint(Color["Label"].secondary)
                 }
             } footer: {
-                Text("Open verification code setup links and QR code with this app.")
+                Text("Open verification code setup links and QR codes with this app.")
             }
         }
     }
