@@ -38,6 +38,8 @@
 		832FD83F2BC22EB000E99DEB /* BluetoothView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832FD83E2BC22EB000E99DEB /* BluetoothView.swift */; };
 		8335A70C2BC358E8001E199D /* CellularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8335A70B2BC358E8001E199D /* CellularView.swift */; };
 		833854F72C1648CD00339C4F /* SoftwareUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833854F62C1648CD00339C4F /* SoftwareUpdateView.swift */; };
+		833A44EF2C6E75BF003076F5 /* SystemFontsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833A44EE2C6E75BF003076F5 /* SystemFontsView.swift */; };
+		833A44F12C6E768E003076F5 /* MyFontsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833A44F02C6E768E003076F5 /* MyFontsView.swift */; };
 		833C6EAC2C208A3900A8D91C /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C6EAB2C208A3900A8D91C /* CameraView.swift */; };
 		833C6EAE2C20C88000A8D91C /* HomeScreenAppLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C6EAD2C20C88000A8D91C /* HomeScreenAppLibraryView.swift */; };
 		833C6EB02C20CCEF00A8D91C /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C6EAF2C20CCEF00A8D91C /* SearchView.swift */; };
@@ -254,6 +256,8 @@
 		832FD83E2BC22EB000E99DEB /* BluetoothView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothView.swift; sourceTree = "<group>"; };
 		8335A70B2BC358E8001E199D /* CellularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellularView.swift; sourceTree = "<group>"; };
 		833854F62C1648CD00339C4F /* SoftwareUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftwareUpdateView.swift; sourceTree = "<group>"; };
+		833A44EE2C6E75BF003076F5 /* SystemFontsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemFontsView.swift; sourceTree = "<group>"; };
+		833A44F02C6E768E003076F5 /* MyFontsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFontsView.swift; sourceTree = "<group>"; };
 		833C6EAB2C208A3900A8D91C /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		833C6EAD2C20C88000A8D91C /* HomeScreenAppLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenAppLibraryView.swift; sourceTree = "<group>"; };
 		833C6EAF2C20CCEF00A8D91C /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
@@ -552,6 +556,15 @@
 				83B5504D2C165A85002DA622 /* BatteryView.swift */,
 			);
 			path = Radios;
+			sourceTree = "<group>";
+		};
+		833A44ED2C6E7589003076F5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				833A44EE2C6E75BF003076F5 /* SystemFontsView.swift */,
+				833A44F02C6E768E003076F5 /* MyFontsView.swift */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		833C6EAA2C2087BB00A8D91C /* Apps */ = {
@@ -858,6 +871,7 @@
 			children = (
 				835683952B754ED3000FB136 /* About */,
 				83B550542C16A67E002DA622 /* Software Update */,
+				833A44ED2C6E7589003076F5 /* Fonts */,
 				832EF3992B8192930066A1BF /* Keyboard */,
 				832EF3962B818EE80066A1BF /* Language & Region */,
 				838C232D2B7497530053D4C5 /* AboutView.swift */,
@@ -1411,6 +1425,7 @@
 				83815CE72B768DF100F53A0F /* SafariView.swift in Sources */,
 				833C6EB22C20CE7800A8D91C /* SearchDetailView.swift in Sources */,
 				8373E7382B9168C9004285EA /* CommunicationSafetyView.swift in Sources */,
+				833A44F12C6E768E003076F5 /* MyFontsView.swift in Sources */,
 				83096BD82BA232D50082DB61 /* AppleAccountSignInView.swift in Sources */,
 				8319CE4F2B86DB44007EC822 /* SensitiveContentWarningView.swift in Sources */,
 				83B5505A2C16A94C002DA622 /* BetaUpdatesView.swift in Sources */,
@@ -1421,6 +1436,7 @@
 				83F78A1F2B8E92AD00025062 /* StickyKeysView.swift in Sources */,
 				832EF3A22B8198570066A1BF /* AddTextReplacementView.swift in Sources */,
 				83A5DA532C234DCB0012ACB3 /* LanguageView.swift in Sources */,
+				833A44EF2C6E75BF003076F5 /* SystemFontsView.swift in Sources */,
 				835683992B7551D3000FB136 /* CertificateTrustSettingsView.swift in Sources */,
 				838C23232B746CF90053D4C5 /* GeneralView.swift in Sources */,
 				83585B732B8847A70046A0C3 /* WalkingView.swift in Sources */,

@@ -13,7 +13,7 @@ struct GeneralView: View {
     @State private var frameY: Double = 0
     
     var body: some View {
-        CustomList(title: "General".localize(table: "General")) {
+        CustomList(title: "Back") {
             Section {
                 SectionHelp(title: String(localized: "General", table: "General"), color: Color.gray, icon: "gear", description: "PLACARD_SUBTITLE")
                     .overlay { // For calculating opacity of the principal toolbar item

@@ -37,7 +37,7 @@ struct BiometricPasscodeView: View {
     @State private var frameY: Double = 0
     
     var body: some View {
-        CustomList(title: "\(UIDevice.PearlIDCapability ? "Face" : "Touch") ID & Passcode") {
+        CustomList {
             SectionHelp(title: "\(UIDevice.PearlIDCapability ? "Face" : "Touch") ID & Passcode", color: UIDevice.PearlIDCapability ? .green : .white, icon: UIDevice.PearlIDCapability ? "faceid" : "touchid", description: "\(UIDevice.PearlIDCapability ? "Manage apps using Face ID and other \(UIDevice.current.model) access settings, set up alternate appearances, and change your passcode." : "Turn on Touch ID and set a passcode to unlock your \(UIDevice.current.model), authorize purchases, and access sensitive data.") [Learn more...](\(UIDevice.PearlIDCapability ? "https://support.apple.com/guide/iphone/set-up-face-id-iph6d162927a/ios" : "https://support.apple.com/guide/iphone/set-up-touch-id-iph672384a0b/ios"))")
                 .overlay { // For calculating opacity of the principal toolbar item
                     GeometryReader { geo in

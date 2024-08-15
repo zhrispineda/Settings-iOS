@@ -13,7 +13,7 @@ struct PrivacySecurityView: View {
     @State private var frameY: Double = 0
     
     var body: some View {
-        CustomList(title: "Privacy & Security") {
+        CustomList(title: "Back") {
             SectionHelp(title: "Privacy & Security", color: .blue, icon: "hand.raised.fill", description: "The advanced security and privacy features in \(UIDevice().systemName) help to safeguard your data while also providing control over the sharing of personal information. [Learn more...](https://support.apple.com/guide/iphone/use-built-in-privacy-and-security-protections-iph6e7d349d1/ios)")
                 .overlay { // For calculating opacity of the principal toolbar item
                     GeometryReader { geo in
