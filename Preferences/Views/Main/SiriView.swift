@@ -27,9 +27,21 @@ struct SiriView: View {
     @State private var showWhenSharingEnabled = true
     @State private var showWhenListeningEnabled = true
     
+    @State private var opacity: Double = 0
+    @State private var frameY: Double = 0
+    
     var body: some View {
-        CustomList(title: "Siri") {
+        CustomList {
             SectionHelp(title: "Siri", icon: "appleSiri", description: "Siri is an intelligent assistant that helps you find information and get things done. [Learn more...](#)")
+                .overlay { // For calculating opacity of the principal toolbar item
+                    GeometryReader { geo in
+                        Color.clear
+                            .onChange(of: geo.frame(in: .scrollView).minY) {
+                                frameY = geo.frame(in: .scrollView).minY
+                                opacity = frameY / -30
+                            }
+                    }
+                }
             
             Section {
                 CustomNavigationLink(title: "Language", status: "English (United States)", destination: SiriLanguageView())
@@ -143,6 +155,14 @@ struct SiriView: View {
                 }
             } header: {
                 Text("Siri App Access")
+            }
+        }
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                Text("Siri")
+                    .fontWeight(.semibold)
+                    .font(.subheadline)
+                    .opacity(frameY < 50.0 ? opacity : 0) // Only fade when passing the help section title at the top
             }
         }
     }

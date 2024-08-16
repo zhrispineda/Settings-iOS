@@ -8,7 +8,7 @@ import SwiftUI
 // MARK: Global variables
 struct Configuration {
     let forceCellular = false
-    let forcePhysical = false
+    let forcePhysical = true
     let developerMode = true
 }
 
