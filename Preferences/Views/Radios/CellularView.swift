@@ -109,7 +109,7 @@ struct CellularView: View {
             } header: {
                 Text("Cellular Usage Statistics")
             } footer: {
-                Text("Disabling cellular usage statistics will disable all cellular usage tracking, as well as reset any currently tracked usage to zero.\n\nLast Reset: Sep 22, 2023 at 9:41 AM")
+                Text("Disabling cellular usage statistics will disable all cellular usage tracking, as well as reset any currently tracked usage to zero.\n\nLast Reset: \(Date().formatted(date: .abbreviated, time: .shortened))")
             }
         }
         .toolbar {

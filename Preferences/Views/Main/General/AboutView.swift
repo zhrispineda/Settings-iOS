@@ -25,8 +25,10 @@ struct AboutView: View {
                 }
                 
                 CustomNavigationLink(title: "\(UIDevice().systemName) Version", status: UIDevice().systemVersion, destination: VersionView())
+                    .textSelection(.enabled)
                 
                 LabeledContent("Model Name", value: UIDevice.fullModel)
+                    .textSelection(.enabled)
                 LabeledContent("Model Number", value: showingModelNumber ? getModelNumber() : "\(getModelNumber())LL/A")
                     .onTapGesture {
                         showingModelNumber.toggle()

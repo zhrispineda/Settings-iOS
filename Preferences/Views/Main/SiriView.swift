@@ -49,7 +49,7 @@ struct SiriView: View {
                     CustomNavigationLink(title: "Voice", status: "American (Voice 4)", destination: SiriVoiceView())
                 }
                 if !UIDevice.isSimulator {
-                    CustomNavigationLink(title: "Listen for", status: "Off", destination: EmptyView())
+                    CustomNavigationLink(title: "Talk to Siri", status: "Off", destination: EmptyView())
                 }
 //                Toggle("Press \(Device().isPhone ? "\(Device().hasHomeButton ? "Home" : "Side") Button" : "Top Button") for Siri", isOn: $siriEnabled)
 //                    .alert("Turn Off Siri?", isPresented: $showingDisableSiriAlert) {
@@ -147,9 +147,6 @@ struct SiriView: View {
                             SettingsLink(icon: "apple\(app)", id: app) {
                                 SiriDetailView(appName: app, title: app)
                             }
-                        }
-                        SettingsLink(icon: "apple watch", id: "Watch") {
-                            SiriDetailView(appName: "Watch", title: "Watch")
                         }
                     }
                 }
