@@ -12,7 +12,6 @@ struct Configuration {
     let developerMode = true
 }
 
-
 // MARK: - SettingsModel data
 enum SettingsModel: String, CaseIterable {
     case accessibility = "Accessibility"
@@ -60,7 +59,7 @@ struct SettingsItem<Content: View>: Identifiable {
     let title: String
     let icon: String
     var capability: Capabilities = .none
-    var color: Color = Color(.gray)
+    var color: Color = Color.gray
     let destination: Content
 }
 
@@ -138,8 +137,15 @@ let internalIcons = ["airdrop", "apple.photos", "apps.iphone.assistive.access", 
 
 // MARK: Services Settings
 @MainActor let serviceSettings: [SettingsItem] = [
-    SettingsItem(type: .appStore, title: "App Store", icon: UIDevice.isSimulator ? "Placeholder" : "appleAppStore", destination: UIDevice.isSimulator ? AnyView(EmptyView()) : AnyView(AppStoreView())),
-    SettingsItem(type: .gameCenter, title: "Game Center", icon: UIDevice.isSimulator ? "Placeholder" : "appleGameCenter", destination: AnyView(GameCenterView())),
+    SettingsItem(type: .appStore, title: "App Store", icon: "appleAppStore", destination: UIDevice.isSimulator ? AnyView(EmptyView()) : AnyView(AppStoreView())),
+    SettingsItem(type: .gameCenter, title: "Game Center", icon: "appleGameCenter", destination: AnyView(GameCenterView())),
+    SettingsItem(type: .icloud, title: "iCloud", icon: "iCloud", destination: AnyView(EmptyView())),
+    SettingsItem(type: .wallet, title: "Wallet & Apple Pay", icon: "appleWallet", destination: AnyView(WalletView()))
+]
+
+// MARK: Simulator Service Settings
+@MainActor let simulatorServiceSettings: [SettingsItem] = [
+    SettingsItem(type: .gameCenter, title: "Game Center", icon: "Placeholder", color: .black, destination: AnyView(GameCenterView())),
     SettingsItem(type: .icloud, title: "iCloud", icon: "iCloud", destination: AnyView(EmptyView())),
     SettingsItem(type: .wallet, title: "Wallet & Apple Pay", icon: "appleWallet", destination: AnyView(WalletView()))
 ]

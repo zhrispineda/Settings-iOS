@@ -86,7 +86,7 @@ struct ContentView: View {
                             SettingsLabelSection(selection: $selection, id: $id, item: UIDevice.isSimulator ? simulatorSecuritySettings : securitySettings)
                             
                             // MARK: Services
-                            SettingsLabelSection(selection: $selection, id: $id, item: serviceSettings)
+                            SettingsLabelSection(selection: $selection, id: $id, item: UIDevice.isSimulator ? simulatorServiceSettings : serviceSettings)
                             
                             // MARK: Apps
                             SettingsLabelSection(selection: $selection, id: $id, item: appsSettings)
@@ -165,7 +165,7 @@ struct ContentView: View {
                             SettingsLinkSection(item: UIDevice.isSimulator ? simulatorSecuritySettings : securitySettings)
                             
                             // MARK: Services
-                            SettingsLinkSection(item: serviceSettings)
+                            SettingsLinkSection(item: UIDevice.isSimulator ? simulatorServiceSettings : serviceSettings)
                             
                             // MARK: Apps
                             SettingsLinkSection(item: appsSettings)

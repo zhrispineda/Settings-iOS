@@ -23,6 +23,9 @@ import SwiftUI
 /// - Parameter status: An optional ``String`` on the opposing side displaying its current state.
 /// - Parameter content: The destination ``Content`` for the NavigationLink.
 struct SettingsLink<Content: View>: View {
+    // Variables
+    @Environment(\.colorScheme) var colorScheme
+    
     var color: Color = Color.black
     var iconColor: Color = Color.white
     var icon: String = String()
@@ -36,11 +39,19 @@ struct SettingsLink<Content: View>: View {
             HStack(spacing: 15) {
                 ZStack {
                     // Background of icon
-                    Image(systemName: "app.fill")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 30)
-                        .foregroundStyle(color)
+                    if icon == "Placeholder" && colorScheme == .dark {
+                        Image(systemName: "app.fill")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 30)
+                            .foregroundStyle(.black.gradient)
+                    } else {
+                        Image(systemName: "app.fill")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 30)
+                            .foregroundStyle(color)
+                    }
                     
                     // Check if icon is an SF Symbol or an image asset
                     if UIImage(systemName: icon) != nil {
