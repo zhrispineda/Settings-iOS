@@ -20,7 +20,7 @@ struct AppsView: View {
 
     var body: some View {
         ZStack {
-            CustomList(title: "Apps") {
+            CustomList(title: UIDevice.iPad ? String() : "Apps") {
                 ForEach(groupedApps.keys.sorted(), id: \.self) { key in
                     Section(header: Text(key)) {
                         ForEach(groupedApps[key]!, id: \.self) { app in

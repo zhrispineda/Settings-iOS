@@ -9,7 +9,7 @@ import SwiftUI
 
 // Variables
 let phoneOnly = ["Action Button", "Emergency SOS", "Health", "Personal Hotspot", "StandBy"]
-let tabletOnly = ["Multitasking & Gestures"]
+let tabletOnly = ["Apple Pencil", "Multitasking & Gestures"]
 
 struct ContentView: View {
     // Variables

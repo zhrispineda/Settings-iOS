@@ -33,8 +33,11 @@ struct SettingsLabel: View {
                     .foregroundStyle(color)
                 if UIImage(systemName: icon) != nil {
                     Image(systemName: icon)
+                        .resizable()
+                        .scaledToFit()
                         .symbolRenderingMode(hierarchyIcons.contains(icon) ? .hierarchical : .none)
                         .foregroundStyle(.white)
+                        .frame(width: smallerIcons.contains(icon) ? 15 : 20)
                 } else if internalIcons.contains(icon) {
                     Image(_internalSystemName: icon)
                         .foregroundStyle(.white)
