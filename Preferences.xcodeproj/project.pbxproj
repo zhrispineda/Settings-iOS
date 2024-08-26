@@ -51,6 +51,7 @@
 		833F190B2B8BE05A00067C37 /* DisplayTextSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833F190A2B8BE05A00067C37 /* DisplayTextSizeView.swift */; };
 		833F5B7F2C4050AA00C0A8C7 /* SOS.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 833F5B7E2C4050AA00C0A8C7 /* SOS.xcstrings */; };
 		83470D162C35A1BC00CE8613 /* AppleAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83470D152C35A1BC00CE8613 /* AppleAccountView.swift */; };
+		834765E42C7D49D000DD6244 /* AirPlayContinuityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834765E32C7D49D000DD6244 /* AirPlayContinuityView.swift */; };
 		8349E22C2C7514F6007416C5 /* ApplePencilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8349E22B2C7514F6007416C5 /* ApplePencilView.swift */; };
 		834B5A222C4B3C83003A6940 /* CarPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B5A212C4B3C83003A6940 /* CarPlayView.swift */; };
 		834B5A242C4C1836003A6940 /* AirDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B5A232C4C1836003A6940 /* AirDropView.swift */; };
@@ -271,6 +272,7 @@
 		833F190A2B8BE05A00067C37 /* DisplayTextSizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayTextSizeView.swift; sourceTree = "<group>"; };
 		833F5B7E2C4050AA00C0A8C7 /* SOS.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = SOS.xcstrings; sourceTree = "<group>"; };
 		83470D152C35A1BC00CE8613 /* AppleAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAccountView.swift; sourceTree = "<group>"; };
+		834765E32C7D49D000DD6244 /* AirPlayContinuityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPlayContinuityView.swift; sourceTree = "<group>"; };
 		8349E22B2C7514F6007416C5 /* ApplePencilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePencilView.swift; sourceTree = "<group>"; };
 		834B5A212C4B3C83003A6940 /* CarPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlayView.swift; sourceTree = "<group>"; };
 		834B5A232C4C1836003A6940 /* AirDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirDropView.swift; sourceTree = "<group>"; };
@@ -881,6 +883,7 @@
 				83DFAB332C3F516F006C9C29 /* StorageView.swift */,
 				83C94CA42C1E0192005EBBC5 /* AppleCareWarrantyView.swift */,
 				834B5A232C4C1836003A6940 /* AirDropView.swift */,
+				834765E32C7D49D000DD6244 /* AirPlayContinuityView.swift */,
 				834B5A212C4B3C83003A6940 /* CarPlayView.swift */,
 				8319CE4A2B86D22E007EC822 /* AutoFillPasswordsView.swift */,
 				83F3F6A02B7D12B6003CC310 /* DictionaryView.swift */,
@@ -1354,6 +1357,7 @@
 				83F78A262B8E9ABB00025062 /* StyleView.swift in Sources */,
 				83D308672B8AD059002A9B7F /* SafariMicrophoneView.swift in Sources */,
 				83585B772B8848430046A0C3 /* CyclingView.swift in Sources */,
+				834765E42C7D49D000DD6244 /* AirPlayContinuityView.swift in Sources */,
 				83D31F902B8E44E60057CFDB /* AssistiveTouchView.swift in Sources */,
 				83F3F6A72B7D2BAA003CC310 /* FontsView.swift in Sources */,
 				83F78A1B2B8E8E3900025062 /* KeyboardColorView.swift in Sources */,

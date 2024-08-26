@@ -54,7 +54,9 @@ struct GeneralView: View {
                     SettingsLink(color: .white, iconColor: .blue, icon: "airdrop", id: String(localized: "AIRDROP", table: "General")) {
                         AirDropView()
                     }
-                    SettingsLink(color: .blue, icon: "airplay.video", id: String(localized: "CONTINUITY", table: "General")) {}
+                    SettingsLink(color: .blue, icon: "airplay.video", id: String(localized: "CONTINUITY", table: "General")) {
+                        AirPlayContinuityView()
+                    }
                     if UIDevice.iPhone {
                         SettingsLink(icon: "pip", id: String(localized: "PiP", table: "General")) {}
                         SettingsLink(color: .green, icon: "carplay", id: String(localized: "CARPLAY", table: "General")) {
