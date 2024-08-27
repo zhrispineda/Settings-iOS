@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83076D022C7E73D000BFFAFE /* PiPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83076D012C7E73D000BFFAFE /* PiPView.swift */; };
+		83076D042C7E754600BFFAFE /* BackgroundAppRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83076D032C7E754600BFFAFE /* BackgroundAppRefreshView.swift */; };
 		83096BD82BA232D50082DB61 /* AppleAccountSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83096BD72BA232D50082DB61 /* AppleAccountSignInView.swift */; };
 		8309893A2C44AA9C00535A8F /* UIDeviceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830989392C44AA9C00535A8F /* UIDeviceExtensions.swift */; };
 		830DA8022B9BE17B001EE76F /* ParentGuardianSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830DA8012B9BE17B001EE76F /* ParentGuardianSignInView.swift */; };
@@ -227,6 +229,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		83076D012C7E73D000BFFAFE /* PiPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiPView.swift; sourceTree = "<group>"; };
+		83076D032C7E754600BFFAFE /* BackgroundAppRefreshView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundAppRefreshView.swift; sourceTree = "<group>"; };
 		83096BD72BA232D50082DB61 /* AppleAccountSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAccountSignInView.swift; sourceTree = "<group>"; };
 		830989392C44AA9C00535A8F /* UIDeviceExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtensions.swift; sourceTree = "<group>"; };
 		830DA8012B9BE17B001EE76F /* ParentGuardianSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentGuardianSignInView.swift; sourceTree = "<group>"; };
@@ -884,8 +888,10 @@
 				83C94CA42C1E0192005EBBC5 /* AppleCareWarrantyView.swift */,
 				834B5A232C4C1836003A6940 /* AirDropView.swift */,
 				834765E32C7D49D000DD6244 /* AirPlayContinuityView.swift */,
+				83076D012C7E73D000BFFAFE /* PiPView.swift */,
 				834B5A212C4B3C83003A6940 /* CarPlayView.swift */,
 				8319CE4A2B86D22E007EC822 /* AutoFillPasswordsView.swift */,
+				83076D032C7E754600BFFAFE /* BackgroundAppRefreshView.swift */,
 				83F3F6A02B7D12B6003CC310 /* DictionaryView.swift */,
 				83F3F6A62B7D2BAA003CC310 /* FontsView.swift */,
 				83F3F6A42B7D16F6003CC310 /* GameControllerView.swift */,
@@ -1294,6 +1300,7 @@
 				838A9EC22B7E81EC00ED261C /* ContentPrivacyRestrictionsView.swift in Sources */,
 				832EF3A72B819B2E0066A1BF /* ModifierKeysView.swift in Sources */,
 				83F78A0F2B8E7D5000025062 /* ControlNearbyDevicesView.swift in Sources */,
+				83076D042C7E754600BFFAFE /* BackgroundAppRefreshView.swift in Sources */,
 				838C23262B746D290053D4C5 /* SettingsModel.swift in Sources */,
 				8373E7322B910AF8004285EA /* AppWebsiteActivitySheetView.swift in Sources */,
 				832EF39D2B8193B50066A1BF /* OneHandedKeyboardView.swift in Sources */,
@@ -1376,6 +1383,7 @@
 				83B619C92B93DEBD00EFEA90 /* ScreenDistanceView.swift in Sources */,
 				837C03072B7F192F004D6C71 /* AppInstallationsPurchasesView.swift in Sources */,
 				83815CE32B768D5800F53A0F /* PrivacySecurityView.swift in Sources */,
+				83076D022C7E73D000BFFAFE /* PiPView.swift in Sources */,
 				83898FD42B8AA25A0020C7BB /* ShortcutsAdvancedView.swift in Sources */,
 				835683942B754623000FB136 /* SettingsLabel.swift in Sources */,
 				83F3F6A32B7D1454003CC310 /* VPNDeviceManagementView.swift in Sources */,

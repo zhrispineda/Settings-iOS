@@ -58,7 +58,9 @@ struct GeneralView: View {
                         AirPlayContinuityView()
                     }
                     if UIDevice.iPhone {
-                        SettingsLink(icon: "pip", id: String(localized: "PiP", table: "General")) {}
+                        SettingsLink(icon: "pip", id: String(localized: "PiP", table: "General")) {
+                            PiPView()
+                        }
                         SettingsLink(color: .green, icon: "carplay", id: String(localized: "CARPLAY", table: "General")) {
                             CarPlayView()
                         }
@@ -75,7 +77,9 @@ struct GeneralView: View {
                     AutoFillPasswordsView()
                 }
                 if !UIDevice.isSimulator {
-                    SettingsLink(color: .gray, icon: "arrow.clockwise.app.stack.fill", id: String(localized: "AUTO_CONTENT_DOWNLOAD", table: "General")) {}
+                    SettingsLink(color: .gray, icon: "arrow.clockwise.app.stack.fill", id: String(localized: "AUTO_CONTENT_DOWNLOAD", table: "General")) {
+                        BackgroundAppRefreshView()
+                    }
                     SettingsLink(color: .blue, icon: "calendar.badge.clock", id: String(localized: "DATE_AND_TIME", table: "General")) {}
                 }
                 SettingsLink(color: .blue, icon: "text.book.closed.fill", id: String(localized: "DICTIONARY", table: "General")) {
