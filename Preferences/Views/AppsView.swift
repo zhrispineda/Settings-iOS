@@ -28,6 +28,8 @@ struct AppsView: View {
                                 switch app {
                                 case "Calendar":
                                     CalendarView()
+                                case "Contacts":
+                                    ContactsView()
                                 case "Health":
                                     HealthView()
                                 case "Maps":

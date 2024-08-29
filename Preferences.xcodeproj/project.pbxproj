@@ -190,6 +190,7 @@
 		83D31F952B8E64550057CFDB /* MovementToleranceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D31F942B8E64550057CFDB /* MovementToleranceView.swift */; };
 		83D31F972B8E645D0057CFDB /* HotCornersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D31F962B8E645D0057CFDB /* HotCornersView.swift */; };
 		83D31F9A2B8E6B360057CFDB /* HotCornersDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D31F992B8E6B360057CFDB /* HotCornersDetailView.swift */; };
+		83D3FB232C8102B200268E54 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D3FB222C8102B200268E54 /* ContactsView.swift */; };
 		83D4CB762B7FF0B000D6087D /* WebContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D4CB752B7FF0B000D6087D /* WebContentView.swift */; };
 		83DF95742B841F0900AEEB63 /* DownloadedLanguagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DF95732B841F0900AEEB63 /* DownloadedLanguagesView.swift */; };
 		83DF95762B84266E00AEEB63 /* SiriDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DF95752B84266E00AEEB63 /* SiriDetailView.swift */; };
@@ -416,6 +417,7 @@
 		83D31F942B8E64550057CFDB /* MovementToleranceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementToleranceView.swift; sourceTree = "<group>"; };
 		83D31F962B8E645D0057CFDB /* HotCornersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotCornersView.swift; sourceTree = "<group>"; };
 		83D31F992B8E6B360057CFDB /* HotCornersDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotCornersDetailView.swift; sourceTree = "<group>"; };
+		83D3FB222C8102B200268E54 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
 		83D4CB752B7FF0B000D6087D /* WebContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebContentView.swift; sourceTree = "<group>"; };
 		83DF95732B841F0900AEEB63 /* DownloadedLanguagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadedLanguagesView.swift; sourceTree = "<group>"; };
 		83DF95752B84266E00AEEB63 /* SiriDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriDetailView.swift; sourceTree = "<group>"; };
@@ -586,6 +588,7 @@
 				83898FD22B8AA2240020C7BB /* Shortcuts */,
 				83DF95722B841EFB00AEEB63 /* Translate */,
 				836167D72C25FA3A00458CD8 /* CalendarView.swift */,
+				83D3FB222C8102B200268E54 /* ContactsView.swift */,
 				83815CF02B768F0500F53A0F /* HealthView.swift */,
 				83815CEC2B768E8300F53A0F /* MapsView.swift */,
 				83815CE82B768E3600F53A0F /* NewsView.swift */,
@@ -1320,6 +1323,7 @@
 				833F190B2B8BE05A00067C37 /* DisplayTextSizeView.swift in Sources */,
 				83D31F832B8D9AAC0057CFDB /* HighlightColorView.swift in Sources */,
 				83F3F6A12B7D12B6003CC310 /* DictionaryView.swift in Sources */,
+				83D3FB232C8102B200268E54 /* ContactsView.swift in Sources */,
 				83B5504E2C165A85002DA622 /* BatteryView.swift in Sources */,
 				8356839B2B755AB3000FB136 /* KeyboardView.swift in Sources */,
 				838C232E2B7497530053D4C5 /* AboutView.swift in Sources */,
