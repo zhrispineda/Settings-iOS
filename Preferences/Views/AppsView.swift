@@ -30,6 +30,10 @@ struct AppsView: View {
                                     CalendarView()
                                 case "Contacts":
                                     ContactsView()
+                                case "Files":
+                                    FilesView()
+                                case "Fitness":
+                                    FitnessView()
                                 case "Health":
                                     HealthView()
                                 case "Maps":
