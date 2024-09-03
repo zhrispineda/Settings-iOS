@@ -38,6 +38,8 @@ struct AppsView: View {
                                     HealthView()
                                 case "Maps":
                                     MapsView()
+                                case "Messages":
+                                    MessagesView()
                                 case "News":
                                     NewsView()
                                 case "Passwords":

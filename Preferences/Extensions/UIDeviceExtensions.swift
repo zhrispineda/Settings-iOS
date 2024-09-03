@@ -250,4 +250,16 @@ public extension UIDevice {
             return false
         }
     }()
+    
+    // MARK: - EXPERIMENTAL
+    // TODO: Retrieve device information using MobileGestalt
+    static func checkDevice() {
+        let fileURL = URL(fileURLWithPath: "/private/var/containers/Shared/SystemGroup/systemgroup.com.apple.mobilegestaltcache/Library/Caches/com.apple.MobileGestalt.plist")
+        
+        if FileManager.default.fileExists(atPath: fileURL.path) {
+            print("Found MobileGestalt") // Physical device
+        } else {
+            print("Missing MobileGestalt") // Preview/Simulator
+        }
+    }
 }

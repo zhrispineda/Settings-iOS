@@ -180,6 +180,9 @@ struct ContentView: View {
                     }
                 }
                 .frame(maxWidth: UIDevice.iPad ? (isOnLandscapeOrientation ? 415 : 320) : nil)
+                .onAppear {
+                    UIDevice.checkDevice()
+                }
                 if UIDevice.iPad {
                     NavigationStack {
                         destination
