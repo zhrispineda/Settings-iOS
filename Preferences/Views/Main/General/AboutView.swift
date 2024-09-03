@@ -11,6 +11,7 @@ struct AboutView: View {
     // Variables
     @State private var showingModelNumber = false
     @State private var serialNumber = String()
+    @State private var mobileGestalt: [String: Any] = [:]
     @State private var availableStorage: String = getAvailableStorage() ?? "N/A"
     @State private var totalStorage: String = getTotalStorage() ?? "N/A"
     @AppStorage("DeviceName") private var deviceName = UIDevice.current.model
@@ -30,6 +31,7 @@ struct AboutView: View {
                 LabeledContent("Model Name", value: UIDevice.fullModel)
                     .textSelection(.enabled)
                 LabeledContent("Model Number", value: showingModelNumber ? getModelNumber() : "\(getModelNumber())LL/A")
+                    .contentShape(Rectangle())
                     .onTapGesture {
                         showingModelNumber.toggle()
                     }
@@ -100,6 +102,13 @@ struct AboutView: View {
     func getModelNumber() -> String {
         var modelNumber: String
         
+        // Check mobileGestalt first
+        if let mobileGestalt = UIDevice.checkDevice() {
+            let cacheExtra = mobileGestalt["CacheExtra"] as! [String : AnyObject]
+            return cacheExtra["97JDvERpVwO+GHtthIh7hA"] as! String // Model number
+        }
+        
+        // Fallback
         switch UIDevice.fullModel {
         case "iPhone 15 Pro Max":
             modelNumber = "A2849"

@@ -31,7 +31,7 @@ public extension UIDevice {
         
         @MainActor func getDevice(identifier: String) -> String {
             switch identifier {
-            // iPhone models
+                // iPhone models
             case "iPhone12,8", "iPhone14,6":
                 return "iPhone SE"
             case "iPhone 11,2":
@@ -253,13 +253,19 @@ public extension UIDevice {
     
     // MARK: - EXPERIMENTAL
     // TODO: Retrieve device information using MobileGestalt
-    static func checkDevice() {
+    static func checkDevice() -> [String: Any]? {
         let fileURL = URL(fileURLWithPath: "/private/var/containers/Shared/SystemGroup/systemgroup.com.apple.mobilegestaltcache/Library/Caches/com.apple.MobileGestalt.plist")
         
         if FileManager.default.fileExists(atPath: fileURL.path) {
             print("Found MobileGestalt") // Physical device
+            guard let dict = NSDictionary(contentsOf: fileURL) as? [String: Any] else {
+                print("Failed to load file: \(fileURL.path)")
+                return nil
+            }
+            return dict
         } else {
             print("Missing MobileGestalt") // Preview/Simulator
+            return nil
         }
     }
 }
