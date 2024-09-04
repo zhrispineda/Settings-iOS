@@ -12,7 +12,7 @@ struct VersionView: View {
         CustomList(title: "\(UIDevice().systemName) Version") {
             Section {
                 VStack(alignment: .leading) {
-                    Text("**\(UIDevice().systemName) \(UIDevice().systemVersion) (22A5350a)**")
+                    Text("**\(UIDevice().systemName) \(UIDevice().systemVersion) (\(getVersionBuild()))**")
                     if UIDevice.isSimulator {
                         Text("This update includes improvements and bug fixes for your \(UIDevice.current.model).")
                             .foregroundStyle(.secondary)
@@ -31,6 +31,15 @@ struct VersionView: View {
             } header: {
                 Text("\n\(UIDevice().systemName) Version")
             }
+        }
+    }
+    
+    func getVersionBuild() -> String {
+        if let mobileGestalt = UIDevice.checkDevice() {
+            let cacheExtra = mobileGestalt["CacheExtra"] as! [String : AnyObject]
+            return cacheExtra["mZfUC7qo4pURNhyMHZ62RQ"] as! String // Version build
+        } else {
+            return "22A5350a" // Fallback
         }
     }
 }

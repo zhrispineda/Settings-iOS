@@ -61,7 +61,7 @@ struct ContentView: View {
                                 Section {
                                     IconToggle(enabled: $airplaneModeEnabled, color: Color.orange, icon: "airplane", title: "Airplane Mode")
                                     ForEach(radioSettings) { setting in
-                                        if !phoneOnly.contains(setting.id) {
+                                        if !phoneOnly.contains(setting.id) && requiredCapabilities(capability: setting.capability) {
                                             Button {
                                                 id = UUID() // Reset destination
                                                 selection = setting.type

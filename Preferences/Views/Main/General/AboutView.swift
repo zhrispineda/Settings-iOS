@@ -30,7 +30,7 @@ struct AboutView: View {
                 
                 LabeledContent("Model Name", value: UIDevice.fullModel)
                     .textSelection(.enabled)
-                LabeledContent("Model Number", value: showingModelNumber ? getModelNumber() : "\(getModelNumber())LL/A")
+                LabeledContent("Model Number", value: showingModelNumber ? getRegulatoryModelNumber() : "\(getRegulatoryModelNumber())\(getRegionInfo())")
                     .contentShape(Rectangle())
                     .onTapGesture {
                         showingModelNumber.toggle()
@@ -98,8 +98,16 @@ struct AboutView: View {
         }
     }
     
+    func getRegionInfo() -> String {
+        if let mobileGestalt = UIDevice.checkDevice() {
+            let cacheExtra = mobileGestalt["CacheExtra"] as! [String : AnyObject]
+            return cacheExtra["zHeENZu+wbg7PUprwNwBWg"] as! String // RegionInfo check
+        }
+        return "LL/A" // Fallback
+    }
+    
     // Display corresponding model number
-    func getModelNumber() -> String {
+    func getRegulatoryModelNumber() -> String {
         var modelNumber: String
         
         // Check mobileGestalt first

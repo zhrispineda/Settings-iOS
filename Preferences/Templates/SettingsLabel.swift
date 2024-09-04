@@ -40,7 +40,10 @@ struct SettingsLabel: View {
                         .frame(width: smallerIcons.contains(icon) ? 15 : 20)
                 } else if internalIcons.contains(icon) {
                     Image(_internalSystemName: icon)
+                        .resizable()
                         .foregroundStyle(.white)
+                        .scaledToFit()
+                        .frame(width: smallerIcons.contains(icon) ? 11 : 20)
                 } else {
                     Image(icon)
                         .resizable()

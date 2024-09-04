@@ -83,8 +83,13 @@ public extension UIDevice {
     }()
     
     static let CellularTelephonyCapability: Bool = { // Cellular Data
-        var identifier = UIDevice.identifier
+        if let mobileGestalt = UIDevice.checkDevice() {
+            let cacheExtra = mobileGestalt["CacheExtra"] as! [String : AnyObject]
+            return cacheExtra["pB5sZVvnp+QjZQtt2KfQvA"] != nil // BasebandChipset check
+        }
         
+        // Fallback
+        var identifier = UIDevice.identifier
         switch identifier {
         case "iPad7,12", "iPad8,3", "iPad8,4", "iPad8,7", "iPad8,8", "iPad8,10", "iPad8,12", "iPad11,2", "iPad11,4", "iPad11,7", "iPad12,2", "iPad13,5", "iPad13,6", "iPad13,7", "iPad13,9", "iPad 13,10", "iPad13,11", "iPad13,2", "iPad13,17", "iPad13,19", "iPad14,2", "iPad14,4", "iPad14,6", "iPad14,9", "iPad14,11", "iPad16,4", "iPad16,6":
             return true
@@ -251,21 +256,16 @@ public extension UIDevice {
         }
     }()
     
-    // MARK: - EXPERIMENTAL
-    // TODO: Retrieve device information using MobileGestalt
     static func checkDevice() -> [String: Any]? {
         let fileURL = URL(fileURLWithPath: "/private/var/containers/Shared/SystemGroup/systemgroup.com.apple.mobilegestaltcache/Library/Caches/com.apple.MobileGestalt.plist")
         
-        if FileManager.default.fileExists(atPath: fileURL.path) {
-            print("Found MobileGestalt") // Physical device
+        if FileManager.default.fileExists(atPath: fileURL.path) { // Physical device
             guard let dict = NSDictionary(contentsOf: fileURL) as? [String: Any] else {
                 print("Failed to load file: \(fileURL.path)")
                 return nil
             }
             return dict
-        } else {
-            print("Missing MobileGestalt") // Preview/Simulator
-            return nil
         }
+        return nil // Preview/Simulator
     }
 }
