@@ -32,7 +32,7 @@ public extension UIDevice {
         @MainActor func getDevice(identifier: String) -> String {
             if let mobileGestalt = UIDevice.checkDevice() {
                 let cacheExtra = mobileGestalt["CacheExtra"] as! [String : AnyObject]
-                return cacheExtra["Z/dqyWS6OZTRy10UcmUAhw"] as! String // marketing-name
+                return cacheExtra["oPeik/9e8lQWMszEjbPzng"]?["ArtworkDeviceProductDescription"] as! String // Model name
             }
             
             // Fallback
