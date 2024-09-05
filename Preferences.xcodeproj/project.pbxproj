@@ -216,6 +216,7 @@
 		83F626D62B82884300ED343F /* AirPlaySuggestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F626D52B82884300ED343F /* AirPlaySuggestionsView.swift */; };
 		83F626D82B8289E100ED343F /* TVProviderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F626D72B8289E100ED343F /* TVProviderView.swift */; };
 		83F626DA2B828E8C00ED343F /* TVAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F626D92B828E8C00ED343F /* TVAppView.swift */; };
+		83F6E26C2C8A2E300060187F /* RemindersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F6E26B2C8A2E300060187F /* RemindersView.swift */; };
 		83F78A0F2B8E7D5000025062 /* ControlNearbyDevicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F78A0E2B8E7D5000025062 /* ControlNearbyDevicesView.swift */; };
 		83F78A122B8E7F6D00025062 /* AccessibilityKeyboardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F78A112B8E7F6D00025062 /* AccessibilityKeyboardsView.swift */; };
 		83F78A142B8E87BF00025062 /* FullKeyboardAccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F78A132B8E87BF00025062 /* FullKeyboardAccessView.swift */; };
@@ -446,6 +447,7 @@
 		83F626D52B82884300ED343F /* AirPlaySuggestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPlaySuggestionsView.swift; sourceTree = "<group>"; };
 		83F626D72B8289E100ED343F /* TVProviderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVProviderView.swift; sourceTree = "<group>"; };
 		83F626D92B828E8C00ED343F /* TVAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVAppView.swift; sourceTree = "<group>"; };
+		83F6E26B2C8A2E300060187F /* RemindersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersView.swift; sourceTree = "<group>"; };
 		83F78A0E2B8E7D5000025062 /* ControlNearbyDevicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlNearbyDevicesView.swift; sourceTree = "<group>"; };
 		83F78A112B8E7F6D00025062 /* AccessibilityKeyboardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityKeyboardsView.swift; sourceTree = "<group>"; };
 		83F78A132B8E87BF00025062 /* FullKeyboardAccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullKeyboardAccessView.swift; sourceTree = "<group>"; };
@@ -603,6 +605,7 @@
 				83815CE82B768E3600F53A0F /* NewsView.swift */,
 				8319CE482B86D198007EC822 /* PasswordsView.swift */,
 				83815CF42B768F3600F53A0F /* PhotosView.swift */,
+				83F6E26B2C8A2E300060187F /* RemindersView.swift */,
 				83815CE62B768DF100F53A0F /* SafariView.swift */,
 				83815CEE2B768EF000F53A0F /* ShortcutsView.swift */,
 				83815CEA2B768E4A00F53A0F /* TranslateView.swift */,
@@ -1323,6 +1326,7 @@
 				832EF3AB2B819C2A0066A1BF /* KeyboardsView.swift in Sources */,
 				83F516BE2C21EA100004E87A /* EmergencyView.swift in Sources */,
 				83585B712B88475A0046A0C3 /* DrivingView.swift in Sources */,
+				83F6E26C2C8A2E300060187F /* RemindersView.swift in Sources */,
 				832EF3932B8179070066A1BF /* SystemServicesView.swift in Sources */,
 				83815CDF2B768C2200F53A0F /* AccessibilityView.swift in Sources */,
 				832EF3912B8172560066A1BF /* AppClipsView.swift in Sources */,

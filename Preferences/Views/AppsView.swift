@@ -20,7 +20,7 @@ struct AppsView: View {
 
     var body: some View {
         ZStack {
-            CustomList(title: UIDevice.iPad ? String() : "Apps") {
+            CustomList(title: "Apps") {
                 ForEach(groupedApps.keys.sorted(), id: \.self) { key in
                     Section(header: Text(key)) {
                         ForEach(groupedApps[key]!, id: \.self) { app in
@@ -46,6 +46,8 @@ struct AppsView: View {
                                     PasswordsView()
                                 case "Photos":
                                     PhotosView()
+                                case "Reminders":
+                                    RemindersView()
                                 case "Safari":
                                     SafariView()
                                 case "Shortcuts":
@@ -70,6 +72,13 @@ struct AppsView: View {
             }
             .searchable(text: $searchText, placement: .toolbar)
             .scrollIndicators(.hidden)
+            .toolbar {
+                if UIDevice.iPad {
+                    ToolbarItem(placement: .principal) {
+                        Text(String()) // Keep navigation title for subviews but hide on iPadOS
+                    }
+                }
+            }
             
             VStack {
                 ForEach(characters, id: \.self) { char in

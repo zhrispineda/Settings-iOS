@@ -30,6 +30,12 @@ public extension UIDevice {
         }
         
         @MainActor func getDevice(identifier: String) -> String {
+            if let mobileGestalt = UIDevice.checkDevice() {
+                let cacheExtra = mobileGestalt["CacheExtra"] as! [String : AnyObject]
+                return cacheExtra["Z/dqyWS6OZTRy10UcmUAhw"] as! String // marketing-name
+            }
+            
+            // Fallback
             switch identifier {
                 // iPhone models
             case "iPhone12,8", "iPhone14,6":
