@@ -142,6 +142,7 @@
 		83A5DA512C2335580012ACB3 /* PermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5DA502C2335580012ACB3 /* PermissionsView.swift */; };
 		83A5DA532C234DCB0012ACB3 /* LanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5DA522C234DCB0012ACB3 /* LanguageView.swift */; };
 		83A5DA552C2366A60012ACB3 /* TransferResetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5DA542C2366A60012ACB3 /* TransferResetView.swift */; };
+		83AA1BD62C8B951B00A0B830 /* WatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AA1BD52C8B951B00A0B830 /* WatchView.swift */; };
 		83AC4BE42C457361006C7D13 /* BatteryUI.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83AC4BE32C457361006C7D13 /* BatteryUI.xcstrings */; };
 		83AFA1022BC87FC8008D4E57 /* HotspotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AFA1012BC87FC8008D4E57 /* HotspotView.swift */; };
 		83B00FF32C878F6400B18A94 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B00FF22C878F6400B18A94 /* MessagesView.swift */; };
@@ -371,6 +372,7 @@
 		83A5DA502C2335580012ACB3 /* PermissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsView.swift; sourceTree = "<group>"; };
 		83A5DA522C234DCB0012ACB3 /* LanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageView.swift; sourceTree = "<group>"; };
 		83A5DA542C2366A60012ACB3 /* TransferResetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferResetView.swift; sourceTree = "<group>"; };
+		83AA1BD52C8B951B00A0B830 /* WatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchView.swift; sourceTree = "<group>"; };
 		83AC4BE32C457361006C7D13 /* BatteryUI.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = BatteryUI.xcstrings; sourceTree = "<group>"; };
 		83AFA1012BC87FC8008D4E57 /* HotspotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotspotView.swift; sourceTree = "<group>"; };
 		83B00FF22C878F6400B18A94 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
@@ -609,6 +611,7 @@
 				83815CE62B768DF100F53A0F /* SafariView.swift */,
 				83815CEE2B768EF000F53A0F /* ShortcutsView.swift */,
 				83815CEA2B768E4A00F53A0F /* TranslateView.swift */,
+				83AA1BD52C8B951B00A0B830 /* WatchView.swift */,
 			);
 			path = Apps;
 			sourceTree = "<group>";
@@ -1500,6 +1503,7 @@
 				83D3085C2B8AC2FA002A9B7F /* SafariAdvancedView.swift in Sources */,
 				838273A12B7F28D6000F4228 /* MoviesView.swift in Sources */,
 				832F517F2BBF4DC900335E5E /* NetworkView.swift in Sources */,
+				83AA1BD62C8B951B00A0B830 /* WatchView.swift in Sources */,
 				83F78A172B8E888600025062 /* KeyboardCommandsView.swift in Sources */,
 				8309893A2C44AA9C00535A8F /* UIDeviceExtensions.swift in Sources */,
 				83815CE12B768CF300F53A0F /* MultitaskingGesturesView.swift in Sources */,
