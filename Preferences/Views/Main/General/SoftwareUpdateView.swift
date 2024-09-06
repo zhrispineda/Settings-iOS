@@ -16,50 +16,45 @@ struct SoftwareUpdateView: View {
             Section {
                 CustomNavigationLink(title: "Automatic Updates", status: "On", destination: AutomaticUpdateView())
                 
-                if !checkingForUpdates && !updateCheckFailed {
-                    CustomNavigationLink(title: "Beta Updates", status: "\(UIDevice().systemName) 18 Developer Beta", destination: BetaUpdatesView())
-                }
+//                if !checkingForUpdates && !updateCheckFailed {
+//                    CustomNavigationLink(title: "Beta Updates", status: "\(UIDevice().systemName) 18 Developer Beta", destination: BetaUpdatesView())
+//                }
             }
-            
-            HStack {
-                Spacer()
-                VStack {
-                    if checkingForUpdates {
-                        ProgressView()
-                            .controlSize(.large)
-                            .padding(.bottom, 1)
+            VStack {
+                if checkingForUpdates {
+                    ProgressView()
+                        .controlSize(.large)
+                        .padding(.bottom, 1)
+                } else {
+                    if updateCheckFailed {
+                        Text("Unable to Check for Update").fontWeight(.bold)
+                            .font(.system(size: 20))
                     } else {
-                        if updateCheckFailed {
-                            Text("Unable to Check for Update").fontWeight(.bold)
-                                .font(.system(size: 20))
-                        } else {
-                            Text("\(UIDevice().systemName) \(UIDevice().systemVersion)")
-                                .fontWeight(.bold)
-                                .font(.system(size: 20))
-                        }
-                    }
-                    
-                    withAnimation {
-                        Text(checkingForUpdates ? "Checking for Update..." : (updateCheckFailed ? "An error occurred while checking for a software update." : "\(UIDevice().systemName) is up to date"))
-                            .font(.system(size: 12))
-                            .foregroundStyle(.gray)
-                            .padding(.bottom, 10)
-                    }
-                    
-                    if !checkingForUpdates && updateCheckFailed {
-                        Button("Try Again") {
-                            updateCheckFailed = false
-                            checkUpdate(withDelay: Double.random(in: 1.0...5.0))
-                        }
-                            .font(.subheadline)
+                        Text("\(UIDevice().systemName) \(UIDevice().systemVersion)")
+                            .fontWeight(.bold)
+                            .font(.system(size: 20))
                     }
                 }
-                Spacer()
+                
+                withAnimation {
+                    Text(checkingForUpdates ? "Checking for Update..." : (updateCheckFailed ? "An error occurred while checking for a software update." : "\(UIDevice().systemName) is up to date"))
+                        .font(.system(size: 12))
+                        .foregroundStyle(.gray)
+                        .padding(.bottom, 10)
+                }
+                
+                if !checkingForUpdates && updateCheckFailed {
+                    Button("Try Again") {
+                        updateCheckFailed = false
+                        checkUpdate(withDelay: Double.random(in: 0.5...5.0))
+                    }
+                        .font(.subheadline)
+                }
             }
+            .frame(maxWidth: .infinity, minHeight: 300)
             .listRowBackground(Color.clear)
-            .padding(.top, 200)
             .onAppear {
-                checkUpdate(withDelay: Double.random(in: 1.0...5.0))
+                checkUpdate(withDelay: Double.random(in: 0.5...5.0))
             }
         }
         .refreshable {}

@@ -69,7 +69,7 @@ struct NetworkView: View {
                     }
                     
                     Section {
-                        CustomNavigationLink(title: "Ask to Join Networks", status: "Ask", destination: SelectOptionList(title: "Ask to Join Networks", options: ["Off", "Notify", "Ask"], selected: "Ask"))
+                        CustomNavigationLink(title: "Ask to Join Networks", status: "Notify", destination: SelectOptionList(title: "Ask to Join Networks", options: ["Off", "Notify", "Ask"], selected: "Notify"))
                     } footer: {
                         Text("Known networks will be joined automatically. If no known networks are available, you will have to manually select a network.")
                     }

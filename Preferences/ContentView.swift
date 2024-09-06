@@ -194,23 +194,21 @@ struct ContentView: View {
 // MARK: Apple Account Button
 struct AppleAccountSection: View {
     var body: some View {
-        NavigationLink {} label: {
-            HStack {
-                Image("appleAccount")
-                    .resizable()
-                    .frame(width: 60, height: 60)
-                VStack(alignment: .leading, spacing: 3) {
-                    Text("Apple Account")
-                        .bold()
-                        .font(.title3)
-                        .foregroundStyle(Color["Label"])
-                        .padding(.bottom, 0)
-                    Text("Sign in to access your iCloud data, the App Store, Apple services, and more.")
-                        .foregroundStyle(.secondary)
-                        .font(.system(size: 13))
-                }
-                .padding(.leading, 5)
+        HStack {
+            Image("appleAccount")
+                .resizable()
+                .frame(width: 60, height: 60)
+            VStack(alignment: .leading, spacing: 3) {
+                Text("Apple Account")
+                    .bold()
+                    .font(.title3)
+                    .foregroundStyle(Color["Label"])
+                    .padding(.bottom, 0)
+                Text("Sign in to access your iCloud data, the App Store, Apple services, and more.")
+                    .foregroundStyle(.secondary)
+                    .font(.system(size: 13))
             }
+            .padding(.leading, 5)
         }
         .foregroundStyle(Color["Label"])
     }
