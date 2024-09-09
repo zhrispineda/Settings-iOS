@@ -13,7 +13,7 @@ struct VersionView: View {
             Section {
                 VStack(alignment: .leading) {
                     Text("**\(UIDevice().systemName) \(UIDevice().systemVersion) (\(getVersionBuild()))**")
-                    if UIDevice.isSimulator || getReleaseType() == "Release" {
+                    if UIDevice.isSimulator || getReleaseType() != "Beta" {
                         Text("This update includes improvements and bug fixes for your \(UIDevice.current.model).")
                             .foregroundStyle(.secondary)
                             .font(.callout)
@@ -37,7 +37,9 @@ struct VersionView: View {
     func getReleaseType() -> String {
         if let mobileGestalt = UIDevice.checkDevice() {
             let cacheExtra = mobileGestalt["CacheExtra"] as! [String : AnyObject]
-            return cacheExtra["9UCjT7Qfi4xLVvPAKIzTCQ"] as! String // Release type
+            if let releaseType = cacheExtra["9UCjT7Qfi4xLVvPAKIzTCQ"] { // Release type
+                return releaseType as! String
+            }
         }
         return String()
     }
