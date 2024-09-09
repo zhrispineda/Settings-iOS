@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BatteryView: View {
     // Variables
-    @State private var batteryPercentageEnabled = false
+    @State private var batteryPercentageEnabled = true
     @State private var lowPowerModeEnabled = false
     let table = "BatteryUI"
     
