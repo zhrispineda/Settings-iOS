@@ -55,6 +55,14 @@ public extension UIDevice {
                 return "iPhone 15 Pro"
             case "iPhone16,2":
                 return "iPhone 15 Pro Max"
+            case "iPhone17,1":
+                return "iPhone 16 Pro"
+            case "iPhone17,2":
+                return "iPhone 16 Pro Max"
+            case "iPhone17,3":
+                return "iPhone 16"
+            case "iPhone17,4":
+                return "iPhone 16 Plus"
                 
             case "iPad14,1", "iPad14,2":
                 return "iPad mini"

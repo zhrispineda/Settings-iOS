@@ -118,10 +118,22 @@ struct AboutView: View {
         
         // Fallback
         switch UIDevice.fullModel {
+        case "iPhone 16 Pro Max":
+            modelNumber = "A3084"
+        case "iPhone 16 Pro":
+            modelNumber = "A3083"
+        case "iPhone 16 Plus":
+            modelNumber = "A3082"
+        case "iPhone 16":
+            modelNumber = "A3081"
         case "iPhone 15 Pro Max":
             modelNumber = "A2849"
         case "iPhone 15 Pro":
             modelNumber = "A2848"
+        case "iPhone 15 Plus":
+            modelNumber = "A2847"
+        case "iPhone 15":
+            modelNumber = "A2846"
         case "iPhone SE":
             modelNumber = "A2595"
         case "iPad mini (6th generation)":

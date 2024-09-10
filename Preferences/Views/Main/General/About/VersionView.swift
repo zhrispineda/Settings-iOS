@@ -6,18 +6,18 @@
 //
 
 import SwiftUI
+import os
 
 struct VersionView: View {
+    // Variables
+    let logger = Logger()
+    
     var body: some View {
         CustomList(title: "\(UIDevice().systemName) Version") {
             Section {
                 VStack(alignment: .leading) {
                     Text("**\(UIDevice().systemName) \(UIDevice().systemVersion) (\(getVersionBuild()))**")
-                    if UIDevice.isSimulator || getReleaseType() != "Beta" {
-                        Text("This update includes improvements and bug fixes for your \(UIDevice.current.model).")
-                            .foregroundStyle(.secondary)
-                            .font(.callout)
-                    } else {
+                    if UIDevice.isSimulator || getReleaseType() == "Beta" {
                         Text("\(UIDevice().systemName) beta gives you an early preview of upcoming apps, features, and technologies. Please back up your \(UIDevice.current.model) before you install the beta.\n")
                             .font(.callout)
                         Text("""
@@ -25,6 +25,10 @@ struct VersionView: View {
                             \u{2022} Apple Beta Software Program at [beta.apple.com](beta.apple.com)
                             \u{2022} Apple Developer Program at [developer.apple.com](developer.apple.com)
                             """)
+                        .font(.callout)
+                    } else {
+                        Text("This update includes improvements and bug fixes for your \(UIDevice.current.model).")
+                            .foregroundStyle(.secondary)
                             .font(.callout)
                     }
                 }
@@ -35,22 +39,25 @@ struct VersionView: View {
     }
     
     func getReleaseType() -> String {
-        if let mobileGestalt = UIDevice.checkDevice() {
-            let cacheExtra = mobileGestalt["CacheExtra"] as! [String : AnyObject]
-            if let releaseType = cacheExtra["9UCjT7Qfi4xLVvPAKIzTCQ"] { // Release type
-                return releaseType as! String
-            }
+        guard let mobileGestalt = UIDevice.checkDevice(),
+              let cacheExtra = mobileGestalt["CacheExtra"] as? [String: AnyObject],
+              let releaseType = cacheExtra["9UCjT7Qfi4xLVvPAKIzTCQ"] as? String else { // ReleaseType key
+            logger.info("Key ReleaseType not found! Will fallback to Release.")
+            return "Release" // Fallback
         }
-        return String()
+        logger.info("Found key ReleaseType: \(releaseType)")
+        return releaseType
     }
     
     func getVersionBuild() -> String {
-        if let mobileGestalt = UIDevice.checkDevice() {
-            let cacheExtra = mobileGestalt["CacheExtra"] as! [String : AnyObject]
-            return cacheExtra["mZfUC7qo4pURNhyMHZ62RQ"] as! String // Version build
-        } else {
-            return "22A5350a" // Fallback
+        guard let mobileGestalt = UIDevice.checkDevice(),
+              let cacheExtra = mobileGestalt["CacheExtra"] as? [String: AnyObject],
+              let buildVersion = cacheExtra["mZfUC7qo4pURNhyMHZ62RQ"] as? String else { // BuildVersion key
+            logger.info("Key BuildVersion not found! Will fallback to 22A3354.")
+            return "22A3354" // Fallback
         }
+        logger.info("Found key BuildVersion: \(buildVersion)")
+        return buildVersion
     }
 }
 

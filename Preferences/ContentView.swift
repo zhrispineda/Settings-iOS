@@ -125,7 +125,9 @@ struct ContentView: View {
                                 Button {
                                     showingSignInSheet.toggle()
                                 } label: {
-                                    AppleAccountSection()
+                                    NavigationLink{} label: {
+                                        AppleAccountSection()
+                                    }
                                 }
                                 .sheet(isPresented: $showingSignInSheet) {
                                     NavigationStack {
