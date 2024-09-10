@@ -241,7 +241,7 @@ public extension UIDevice {
     
     static let RingerButtonCapability: Bool = { // Action Button
         var identifier = UIDevice.fullModel
-        return identifier.contains("15 Pro")
+        return identifier.contains("15 Pro") || identifier.contains("16")
     }()
     
     static let isSimulator: Bool = {

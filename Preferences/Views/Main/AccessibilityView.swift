@@ -57,8 +57,10 @@ struct AccessibilityView: View {
             }
             
             Section {
-                SettingsLink(color: .blue, icon: "hand.point.up.left.fill", id: "TOUCH".localize(table: table)) {
-                    TouchView()
+                if !UIDevice.isSimulator {
+                    SettingsLink(color: .blue, icon: "hand.point.up.left.fill", id: "TOUCH".localize(table: table)) {
+                        TouchView()
+                    }
                 }
                 if UIDevice.PearlIDCapability {
                     SettingsLink(color: .green, icon: "faceid", id: "FACE_ID".localize(table: table)) {
@@ -139,7 +141,7 @@ struct AccessibilityView: View {
                     SettingsLink(color: .blue, icon: "app.badge.checkmark", id: "Per-App Settings") {}
                 }
             } header: {
-                Text("GENERAL_HEADING")
+                Text("GENERAL_HEADING".localize(table: table))
             }
         }
         .toolbar {

@@ -17,7 +17,7 @@ struct VersionView: View {
             Section {
                 VStack(alignment: .leading) {
                     Text("**\(UIDevice().systemName) \(UIDevice().systemVersion) (\(getVersionBuild()))**")
-                    if UIDevice.isSimulator || getReleaseType() == "Beta" {
+                    if getReleaseType() == "Beta" {
                         Text("\(UIDevice().systemName) beta gives you an early preview of upcoming apps, features, and technologies. Please back up your \(UIDevice.current.model) before you install the beta.\n")
                             .font(.callout)
                         Text("""

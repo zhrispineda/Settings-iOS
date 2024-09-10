@@ -14,7 +14,7 @@ struct PrivacySecurityView: View {
     
     var body: some View {
         CustomList(title: "Back") {
-            SectionHelp(title: "Privacy & Security", color: .blue, icon: "hand.raised.fill", description: "The advanced security and privacy features in \(UIDevice().systemName) help to safeguard your data while also providing control over the sharing of personal information. [Learn more...](https://support.apple.com/guide/iphone/use-built-in-privacy-and-security-protections-iph6e7d349d1/ios)")
+            SectionHelp(title: "Privacy & Security", color: .blue, icon: "hand.raised.fill", description: "Control which apps can access your data, location, camera, and microphone, and manage safety protections. [Learn more...](https://support.apple.com/guide/iphone/use-built-in-privacy-and-security-protections-iph6e7d349d1/ios)")
                 .overlay { // For calculating opacity of the principal toolbar item
                     GeometryReader { geo in
                         Color.clear
@@ -26,7 +26,7 @@ struct PrivacySecurityView: View {
                 }
             
             Section {
-                SettingsLink(color: .blue, icon: "location.fill", id: "Location Services", subtitle: "1 while using") {
+                SettingsLink(color: .blue, icon: "location.fill", id: "Location Services", subtitle: "None") {
                     LocationServicesView()
                 }
                 SettingsLink(color: .orange, icon: "app.connected.to.app.below.fill", id: "Tracking", status: "0") {
@@ -73,8 +73,10 @@ struct PrivacySecurityView: View {
             }
             
             Section {
-                SettingsLink(color: .blue, icon: "Accessory", id: "Accessories", status: "0") {
-                    AppPermissionsView(permissionName: "Accessories")
+                if !UIDevice.isSimulator {
+                    SettingsLink(color: .blue, icon: "Accessory", id: "Accessories", status: "0") {
+                        AppPermissionsView(permissionName: "Accessories")
+                    }
                 }
                 SettingsLink(color: .blue, icon: "bluetooth", id: "Bluetooth", status: "0") {
                     AppPermissionsView(permissionName: "Bluetooth")
@@ -143,8 +145,8 @@ struct PrivacySecurityView: View {
                 }
             }
             
-            Section {
-                if !UIDevice.isSimulator {
+            if !UIDevice.isSimulator {
+                Section {
                     if Configuration().developerMode {
                         SettingsLink(color: .gray, icon: "hammer.fill", id: "Developer Mode", status: "On") {
                             EmptyView()
@@ -153,9 +155,9 @@ struct PrivacySecurityView: View {
                     SettingsLink(color: .blue, icon: "hand.raised.fill", id: "Lockdown Mode", status: "Off") {
                         EmptyView()
                     }
+                } header: {
+                    Text("Security")
                 }
-            } header: {
-                Text("Security")
             }
         }
         .toolbar {
