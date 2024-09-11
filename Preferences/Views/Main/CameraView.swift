@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CameraView: View {
     // Variables
+    @State private var showingPhotographicStylesView = false
     @State private var useVolumeUpBurstEnabled = false
     @State private var scanQrCodesEnabled = true
     @State private var showDetectedTextEnabled = true
@@ -26,6 +27,24 @@ struct CameraView: View {
     
     var body: some View {
         CustomList(title: "Camera") {
+            if UIDevice.AdvancedPhotographicStylesCapability {
+                Section {
+                    Button {
+                        showingPhotographicStylesView.toggle()
+                    } label: {
+                        CustomNavigationLink(title: "Photographic Styles", status: "Standard", destination: EmptyView())
+                    }
+                    .foregroundStyle(Color["Label"])
+                    .fullScreenCover(isPresented: $showingPhotographicStylesView) {
+                        NavigationStack {
+                            PhotographicStylesView()
+                        }
+                    }
+                } footer: {
+                    Text("Photographic Styles uses advanced scene understanding to adjust specific colors in different parts of the photo. Personalize how skin tones appear with incredible nuance to get the exact look you want.")
+                }
+            }
+            
             Section {
                 CustomNavigationLink(title: "Record Video", status: "1080p at 30 fps", destination: EmptyView())
                 CustomNavigationLink(title: "Record Slo-mo", status: "1080p at 240 fps", destination: EmptyView())
@@ -33,7 +52,7 @@ struct CameraView: View {
                     CustomNavigationLink(title: "Record Cinematic", status: "1080p at 30 fps", destination: EmptyView())
                 }
                 if UIDevice.iPhone {
-                    CustomNavigationLink(title: "Record Sound", status: "Stereo", destination: EmptyView())
+                    CustomNavigationLink(title: "Record Sound", status: UIDevice.AdvancedPhotographicStylesCapability ? "Spatial Audio" : "Stereo", destination: EmptyView())
                 }
                 NavigationLink("Formats") {}
                 NavigationLink("Preserve Settings") {}
@@ -76,6 +95,10 @@ struct CameraView: View {
             if UIDevice.ProDevice && UIDevice.iPhone {
                 Section {
                     CustomNavigationLink(title: "Main Camera", status: "24 & 28 & 35 mm", destination: EmptyView())
+                } header: {
+                    if UIDevice.AdvancedPhotographicStylesCapability {
+                        Text("Photo Capture")
+                    }
                 } footer: {
                     Text("Tap the 1× zoom button to toggle between 24 mm and additional lenses.")
                 }
@@ -101,7 +124,7 @@ struct CameraView: View {
                 Section {
                     Toggle("Lens Correction", isOn: $lensCorrectionEnabled)
                 } footer: {
-                    Text("Correct lens distortion on the front camera.")
+                    Text("Correct lens distortion on the front and Ultra Wide camera.")
                 }
             }
             

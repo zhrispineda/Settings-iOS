@@ -89,7 +89,7 @@ public extension UIDevice {
         var identifier = UIDevice.identifier
         
         switch identifier {
-        case "iPhone15,4", "iPhone15,5", "iPhone16,1", "iPhone16,2":
+        case "iPhone15,4", "iPhone15,5", "iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4":
             return true
         default:
             return false
@@ -116,7 +116,7 @@ public extension UIDevice {
         var identifier = UIDevice.identifier
         
         switch identifier {
-        case "iPhone14,4", "iPhone14,5", "iPhone14,2", "iPhone14,3", "iPhone14,7", "iPhone14,8", "iPhone15,2", "iPhone15,3", "iPhone15,4", "iPhone15,5", "iPhone16,1", "iPhone16,2":
+        case "iPhone14,4", "iPhone14,5", "iPhone14,2", "iPhone14,3", "iPhone14,7", "iPhone14,8", "iPhone15,2", "iPhone15,3", "iPhone15,4", "iPhone15,5", "iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4":
             return true
         default:
             return false
@@ -127,7 +127,7 @@ public extension UIDevice {
         var identifier = UIDevice.identifier
         
         switch identifier {
-        case "iPhone15,4", "iPhone15,5", "iPhone16,1", "iPhone16,2", "iPad14,8", "iPad14,9", "iPad14,10", "iPad14,11", "iPad16,3", "iPad16,5", "iPad16,6":
+        case "iPhone15,4", "iPhone15,5", "iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4", "iPad14,8", "iPad14,9", "iPad14,10", "iPad14,11", "iPad16,3", "iPad16,5", "iPad16,6":
             return true
         default:
             return false
@@ -192,7 +192,7 @@ public extension UIDevice {
         var identifier = UIDevice.identifier
         
         switch identifier {
-        case "iPhone14,2", "iPhone14,3", "iPhone15,2", "iPhone15,3", "iPhone16,1", "iPhone16,2":
+        case "iPhone14,2", "iPhone14,3", "iPhone15,2", "iPhone15,3", "iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4":
             return true
         default:
             return false
@@ -222,6 +222,17 @@ public extension UIDevice {
         }
     }()
     
+    static let AdvancedPhotographicStylesCapability = { // Advanced Photographic Styles
+        var identifier = UIDevice.identifier
+        
+        switch identifier {
+        case "iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4":
+            return true
+        default:
+            return false
+        }
+    }()
+    
     static let PhotographicStylesCapability = { // Photographic Styles
         var identifier = UIDevice.identifier
         
@@ -234,7 +245,7 @@ public extension UIDevice {
     }()
     
     static let ProDevice = {
-        var identifier = UIDevice.identifier
+        var identifier = UIDevice.fullModel
         
         return identifier.contains("Pro")
     }()
