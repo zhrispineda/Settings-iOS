@@ -78,9 +78,11 @@ struct AppleAccountLoginView: View {
                 })
                 .alert("Could Not Create Apple Account", isPresented: $showingErrorAlert) {
                     Link("Learn More", destination: URL(string: "https://support.apple.com/en-us/101661")!)
-                    Button("OK") {}
+                    Button("OK") {
+                        dismiss()
+                    }
                 } message: {
-                    Text("The iPhoneSimulator has been used to create too many new Apple Accounts. Contact Apple Support to request another Apple Account to use with this iPhoneSimulator.")
+                    Text("This \(UIDevice.isSimulator ? "iPhoneSimulator" : UIDevice.current.model) has been used to create too many new Apple Accounts. Contact Apple Support to request another Apple Account to use with this \(UIDevice.isSimulator ? "iPhoneSimulator" : UIDevice.current.model).")
                 }
                 .sheet(isPresented: $showingForgotPasswordSheet) {
                     NavigationStack {
@@ -101,7 +103,7 @@ struct AppleAccountLoginView: View {
                                 .foregroundStyle(.blue)
                                 .scaledToFit()
                                 .frame(height: 23)
-                            Text("Your Apple ID information is used to enable Apple services when you sign in, including iCloud Backup, which automatically backs up the data on your device in case you need to replace or restore it. Your device serial number may be used to check eligibility for service offers.\n[See how your data is managed...](_)\n")
+                            Text("Your Apple Account information is used to enable Apple services when you sign in, including iCloud Backup, which automatically backs up the data on your device in case you need to replace or restore it. Your device serial number may be used to check eligibility for service offers.\n[See how your data is managed...](_)\n")
                                 .frame(maxWidth: .infinity, alignment: .center)
                                 .multilineTextAlignment(.center)
                                 .font(.caption2)

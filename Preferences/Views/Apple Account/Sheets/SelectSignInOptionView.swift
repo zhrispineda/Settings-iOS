@@ -103,7 +103,7 @@ struct SelectSignInOptionView: View {
                         dismiss()
                     }
                 } message: {
-                    Text("The iPhoneSimulator has been used to create too many new Apple Accounts. Contact Apple Support to request another Apple Account to use with this iPhoneSimulator.")
+                    Text("This \(UIDevice.isSimulator ? "iPhoneSimulator" : UIDevice.current.model) has been used to create too many new Apple Accounts. Contact Apple Support to request another Apple Account to use with this \(UIDevice.isSimulator ? "iPhoneSimulator" : UIDevice.current.model).")
                 }
             }
         }
