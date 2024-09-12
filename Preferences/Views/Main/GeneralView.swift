@@ -125,6 +125,11 @@ struct GeneralView: View {
                 SettingsLink(color: .gray, icon: "arrow.counterclockwise", id: String(localized: "TRANSFER_OR_RESET_TITLE", table: "General")) {
                     if !UIDevice.isSimulator {
                         TransferResetView()
+                    } else {
+                        Text(String())
+                            .onAppear {
+                                exit(0)
+                            }
                     }
                 }
             }

@@ -13,7 +13,7 @@ struct LanguageRegionView: View {
     @State private var liveTextEnabled = true
     
     var body: some View {
-        CustomList(title: "Language & Region") {
+        CustomList(title: "Language & Region", topPadding: true) {
             Section {
                 ForEach($languages, id: \.self, editActions: .move) { $lang in
                     HStack {

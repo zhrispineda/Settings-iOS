@@ -11,7 +11,6 @@ struct AboutView: View {
     // Variables
     @State private var showingModelNumber = false
     @State private var serialNumber = String()
-    @State private var mobileGestalt: [String: Any] = [:]
     @State private var availableStorage: String = getAvailableStorage() ?? "N/A"
     @State private var totalStorage: String = getTotalStorage() ?? "N/A"
     @AppStorage("DeviceName") private var deviceName = UIDevice.current.model
@@ -53,9 +52,7 @@ struct AboutView: View {
                 LabeledContent("Songs", value: "0")
                 LabeledContent("Videos", value: "0")
                 LabeledContent("Photos", value: "0")
-                if !UIDevice.isSimulator {
-                    LabeledContent("Applications", value: "1")
-                }
+                LabeledContent("Applications", value: "1")
                 LabeledContent("Capacity", value: totalStorage)
                 LabeledContent("Available", value: availableStorage)
             }

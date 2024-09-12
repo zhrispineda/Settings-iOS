@@ -13,6 +13,7 @@ struct KeyboardView: View {
     @State private var autoCorrectionEnabled = true
     @State private var predictiveTextEnabled = true
     @State private var showPredictionsInlineEnabled = true
+    @State private var showMathResults = true
     @State private var checkSpellingEnabled = true
     @State private var capsLockEnabled = true
     @State private var shortcutsEnabled = true
@@ -36,7 +37,6 @@ struct KeyboardView: View {
         CustomList(title: "Keyboards") {
             Section {
                 CustomNavigationLink(title: "Keyboards", status: "2", destination: KeyboardsView())
-                //NavigationLink("Hardware Keyboard", destination: HardwareKeyboardView())
             }
             
             Section {
@@ -44,6 +44,7 @@ struct KeyboardView: View {
                 if UIDevice.iPhone {
                     CustomNavigationLink(title: "One-Handed Keyboard", status: "Off", destination: OneHandedKeyboardView())
                 }
+                NavigationLink("Hardware Keyboard", destination: HardwareKeyboardView())
             }
             
             Section {
@@ -53,6 +54,7 @@ struct KeyboardView: View {
                 if predictiveTextEnabled {
                     Toggle("Show Predictions Inline", isOn: $showPredictionsInlineEnabled)
                 }
+                Toggle("Show Math Results", isOn: $showMathResults)
                 Toggle("Check Spelling", isOn: $checkSpellingEnabled)
                 Toggle("Enable Caps Lock", isOn: $capsLockEnabled)
                 if UIDevice.iPad {
@@ -106,10 +108,7 @@ struct KeyboardView: View {
                     })
                 Toggle("Auto-Punctuation", isOn: $autoPunctuationEnabled)
                 if dictationEnabled {
-                    if UIDevice.iPhone {
-                        NavigationLink("Dictation Languages", destination: {})
-                    }
-                    //CustomNavigationLink(title: "Dictation Shortcut", status: "⌃ Control", destination: DictationShortcutView())
+                    CustomNavigationLink(title: "Dictation Shortcut", status: "⌃\tControl", destination: DictationShortcutView())
                 }
             } header: {
                 Text("Dictation")

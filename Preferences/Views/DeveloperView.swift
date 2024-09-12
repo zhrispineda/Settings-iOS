@@ -11,7 +11,7 @@ struct DeveloperView: View {
     // Variables
     @State private var darkAppearanceEnabled = false
     @State private var showingDisplayZoomSheet = false
-    @State private var uiAutomationEnabled = false
+    @State private var uiAutomationEnabled = true
     @State private var fastAppTerminationEnabled = false
     
     @State private var additionalLoggingEnabled = false
@@ -38,6 +38,8 @@ struct DeveloperView: View {
     @State private var logGraphicsPerformanceEnabled = false
     
     @State private var hidLoggingEnabled = false
+    @State private var heartRateLogging = false
+    @State private var showAudioOutput = false
     
     var body: some View {
         CustomList(title: "Developer", topPadding: true) {
@@ -173,8 +175,8 @@ struct DeveloperView: View {
                 Text("These settings affect Siri Event Suggestions from Mail and Safari. Enable Allow Any Domain to allow e-mails or web pages which have not yet been approved for Siri Event Suggestions by Apple. Enable Allow Unverified Sources to bypass DKIM or SSL authenticity verification for Siri Event Suggestions in Mail and Safari.")
             }
             
-            Section("Enable MIDI-CI") {
-                Toggle("MIDI-CI Testing", isOn: $enableMidiCi)
+            Section("MIDI-CI Testing") {
+                Toggle("Enable MIDI-CI", isOn: $enableMidiCi)
             }
             
             Section {
@@ -188,10 +190,19 @@ struct DeveloperView: View {
             
             Section {
                 Toggle("HID Logging", isOn: $hidLoggingEnabled)
+                Toggle("Heart Rate Logging", isOn: $hidLoggingEnabled)
             } header: {
                 Text("Bluetooth Logging")
             } footer: {
                 Text("Allow additional data exchanged over Bluetooth to be saved in packetlogger file.")
+            }
+            
+            Section {
+                Toggle("Show Audio Output in Settings", isOn: $showAudioOutput)
+            } header: {
+                Text("Siri in Bluetooth Car Testing")
+            } footer: {
+                Text("Allow Siri to change audio route in a bluetooth vehicle. Go to Settings -> Siri & Search -> Siri Responses -> \"When Connected to Car Bluetooth\" to change the audio route.")
             }
         }
     }
