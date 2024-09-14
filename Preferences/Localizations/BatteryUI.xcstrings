@@ -9,6 +9,12 @@
             "state" : "translated",
             "value" : "About Battery & Warranty…"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acerca de la batería y la garantía…"
+          }
         }
       }
     },
@@ -37,6 +43,12 @@
             "state" : "translated",
             "value" : "This iPad battery is performing as expected. %@"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La batería de este iPad funciona con normalidad. %@"
+          }
         }
       }
     },
@@ -47,6 +59,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "This iPhone battery is performing as expected. %@"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La batería de este iPhone funciona con normalidad. %@"
           }
         }
       }
@@ -127,6 +145,12 @@
             "state" : "translated",
             "value" : "https://support.apple.com/118418"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "https://support.apple.com/118418"
+          }
         }
       }
     },
@@ -134,6 +158,12 @@
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "https://support.apple.com/105105"
+          }
+        },
+        "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "https://support.apple.com/105105"
@@ -148,6 +178,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ Limit"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Límite del %@"
           }
         }
       }
@@ -177,6 +213,12 @@
             "state" : "translated",
             "value" : "This is the number of times iPad has used your battery's capacity."
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Este es el número de veces que el iPad ha usado la capacidad completa de la batería."
+          }
         }
       }
     },
@@ -187,6 +229,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "This is the number of times iPhone has used your battery's capacity."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Este es el número de veces que el iPhone ha usado la capacidad completa de la batería."
           }
         }
       }
@@ -199,6 +247,12 @@
             "state" : "translated",
             "value" : "https://www.apple.com/batteries/why-lithium-ion/"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "https://www.apple.com/es/batteries/why-lithium-ion/"
+          }
         }
       }
     },
@@ -210,6 +264,12 @@
             "state" : "translated",
             "value" : "Cycle Count"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Número de ciclos"
+          }
         }
       }
     },
@@ -220,6 +280,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "First Use"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Primer uso"
           }
         }
       }
@@ -300,6 +366,12 @@
             "state" : "translated",
             "value" : "Learn more…"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Más información…"
+          }
         }
       }
     },
@@ -310,6 +382,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Manufacture Date"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fecha de fabricación"
           }
         }
       }
@@ -322,6 +400,12 @@
             "state" : "translated",
             "value" : "This is a measure of battery capacity relative to when it was new. Lower capacity may result in fewer hours of usage between charges."
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Este porcentaje indica la capacidad actual de la batería en relación con su capacidad cuando era nueva. Una capacidad inferior puede reducir las horas de uso entre carga y carga."
+          }
         }
       }
     },
@@ -332,6 +416,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Maximum Capacity"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Capacidad máxima"
           }
         }
       }
