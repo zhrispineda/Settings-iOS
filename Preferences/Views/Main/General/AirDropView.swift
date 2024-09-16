@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AirDropView: View {
     // Variables
-    @State private var selection = "Contacts Only"
+    @AppStorage("AirDropSelection") private var selection = "Receiving Off"
     @State private var nearbySharingEnabled = true
     @State private var cellularUsageEnabled = true
     let options = ["Receiving Off", "Contacts Only", "Everyone for 10 Minutes"]

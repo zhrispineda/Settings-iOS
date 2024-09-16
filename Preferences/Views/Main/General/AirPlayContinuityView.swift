@@ -10,16 +10,16 @@ import SwiftUI
 struct AirPlayContinuityView: View {
     // Variables
     @State private var transferHomePod = false
-    @State private var handoffEnabled = true
-    @State private var cursorKeyboardEnabled = true
-    @State private var continuityCameraEnabled = false
-    @State private var airPlayReceiverEnabled = false
+    @AppStorage("Handoff") private var handoffEnabled = true
+    @AppStorage("CursorKeyboard") private var cursorKeyboardEnabled = true
+    @AppStorage("ContinuityCamera") private var continuityCameraEnabled = true
+    @AppStorage("AirPlayReceiver") private var airPlayReceiverEnabled = false
     @State private var requirePassword = false
     
     var body: some View {
         CustomList(title: "AirPlay & Continuity") {
             Section {
-                CustomNavigationLink(title: "Automatically AirPlay", status: "Never", destination: EmptyView())
+                CustomNavigationLink(title: "Automatically AirPlay", status: "Automatic", destination: EmptyView())
             }
             
             if UIDevice.iPhone {

@@ -40,13 +40,13 @@ struct AboutView: View {
                     }
             }
             
-            if !UIDevice.isSimulator {
-                Section {
-                    NavigationLink(destination: AppleCareWarrantyView()) {
-                        LabeledContent("AppleCare+", value: "Expires: 9/21/25")
-                    }
-                }
-            }
+//            if !UIDevice.isSimulator {
+//                Section {
+//                    NavigationLink(destination: AppleCareWarrantyView()) {
+//                        LabeledContent("AppleCare+", value: "Expires: 9/21/25")
+//                    }
+//                }
+//            }
             
             Section {
                 LabeledContent("Songs", value: "0")
@@ -139,8 +139,10 @@ struct AboutView: View {
             modelNumber = "A2759"
         case "iPad Pro (12.9-inch) (6th generation)":
             modelNumber = "A2436"
+        case "iPad Pro 11-inch (M4)":
+            modelNumber = UIDevice.CellularTelephonyCapability ? "A2837" : "A2836"
         case "iPad Pro 13-inch (M4)":
-            modelNumber = "A2925"
+            modelNumber = UIDevice.CellularTelephonyCapability ? "A2926" : "A2925"
         default:
             modelNumber = "N/A"
         }
