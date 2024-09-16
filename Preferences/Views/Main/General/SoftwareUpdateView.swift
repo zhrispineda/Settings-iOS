@@ -9,7 +9,6 @@ import SwiftUI
 
 struct SoftwareUpdateView: View {
     @State private var checkingForUpdates = false
-    @State private var updateCheckFailed = false
     
     var body: some View {
         GeometryReader { geometry in
@@ -26,37 +25,28 @@ struct SoftwareUpdateView: View {
                         ProgressView()
                             .controlSize(.large)
                             .padding(.bottom, 1)
+                    }
+                    
+                    if checkingForUpdates {
+                        withAnimation {
+                            Text("Checking for Update...")
+                                .font(.system(size: 12))
+                                .foregroundStyle(.gray)
+                                .padding(.bottom, 10)
+                        }
                     } else {
-                        if updateCheckFailed {
-                            Text("Unable to Check for Update").fontWeight(.bold)
-                                .font(.system(size: 20))
-                        } else {
-                            Text("\(UIDevice().systemName) \(UIDevice().systemVersion)")
-                                .fontWeight(.bold)
-                                .font(.system(size: 20))
-                        }
-                    }
-                    
-                    withAnimation {
-                        Text(checkingForUpdates ? "Checking for Update..." : (updateCheckFailed ? "An error occurred while checking for a software update." : "\(UIDevice().systemName) is up to date"))
-                            .font(.system(size: 12))
-                            .foregroundStyle(.gray)
-                            .padding(.bottom, 10)
-                    }
-                    
-                    if !checkingForUpdates && updateCheckFailed {
-                        Button("Try Again") {
-                            updateCheckFailed = false
-                            checkUpdate(withDelay: Double.random(in: 0.5...5.0))
-                        }
-                        .font(.subheadline)
+                        ContentUnavailableView(
+                            "\(UIDevice().systemName) \(UIDevice().systemVersion)",
+                            systemImage: "",
+                            description: Text("\(UIDevice().systemName) is up to date")
+                        )
                     }
                 }
                 .frame(maxWidth: .infinity)
                 .listRowBackground(Color.clear)
                 .frame(height: geometry.size.height/1.4)
                 .onAppear {
-                    checkUpdate(withDelay: Double.random(in: 0.5...5.0))
+                    checkUpdate(withDelay: Double.random(in: 0.1...5.0))
                 }
             }
         }
