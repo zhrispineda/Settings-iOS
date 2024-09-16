@@ -14,7 +14,7 @@ struct AutomaticUpdateView: View {
     @State private var automaticDownloadsEnabled = true
     
     var body: some View {
-        CustomList(title: "Automatic Updates") {
+        CustomList(title: "Automatic Updates", topPadding: true) {
             Section {
                 Toggle("\(UIDevice().systemName) Updates", isOn: $automaticUpdatesEnabled)
                 Toggle("Security Responses & System Files", isOn: $securityResponsesEnabled)
