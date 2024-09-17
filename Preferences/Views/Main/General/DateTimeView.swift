@@ -10,6 +10,8 @@ import SwiftUI
 struct DateTimeView: View {
     // Variables
     @State private var twentyFourHourTime = false
+    @State private var showAmPmStatus = true
+    @State private var showDateStatus = true
     @State private var automaticTime = true
     @State private var showingDatePicker = false
     @State private var selectedDay: Date = Date()
@@ -19,6 +21,10 @@ struct DateTimeView: View {
         CustomList(title: "Date & Time") {
             Section {
                 Toggle("24-Hour Time", isOn: $twentyFourHourTime)
+                if UIDevice.iPad {
+                    Toggle("Show AM/PM in Status Bar", isOn: $showAmPmStatus)
+                    Toggle("Show Date in Status Bar", isOn: $showDateStatus)
+                }
             }
             
             Section {

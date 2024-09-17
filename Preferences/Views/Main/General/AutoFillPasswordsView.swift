@@ -43,9 +43,13 @@ struct AutoFillPasswordsView: View {
                     Spacer()
                     Picker("", selection: $selected) {
                         ForEach(options, id: \.self) { option in
-                            Text(option)
+                            HStack {
+                                Text(" " + option)
+                                Image("applePasswordsIcon")
+                            }
                         }
                     }
+                    .frame(maxHeight: 30)
                     .pickerStyle(.menu)
                     .labelsHidden()
                     .tint(Color["Label"].secondary)
