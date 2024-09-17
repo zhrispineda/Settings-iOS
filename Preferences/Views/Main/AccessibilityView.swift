@@ -30,7 +30,9 @@ struct AccessibilityView: View {
             
             Section {
                 if !UIDevice.isSimulator {
-                    SettingsLink(icon: "voiceover", id: "VOICEOVER_TITLE".localize(table: table), status: "OFF".localize(table: table)) {}
+                    SettingsLink(icon: "voiceover", id: "VOICEOVER_TITLE".localize(table: table), status: "OFF".localize(table: table)) {
+                        VoiceOverView()
+                    }
                     SettingsLink(icon: "arrowtriangles.up.right.down.left.magnifyingglass", id: "ZOOM_TITLE".localize(table: table), status: "OFF".localize(table: table)) {}
                 }
                 if UIDevice.iPad {

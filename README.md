@@ -16,20 +16,11 @@ Simulator instance mode:
 ![A GIF displaying the project‘s Settings app on different devices including a Dynamic Island iPhone, iPhone with Touch ID, and an 11-inch iPad.](Assets/SettingsSimulator.gif)
 
 ## Usage
-Open the project in Xcode and run with either a Simulator instance or a physical device with Developer Mode enabled as a destination.
+Open the project in Xcode 16 and run with either a Simulator instance or a physical device running iOS 18 with Developer Mode enabled as a destination.
 
 To switch between the simulator or physical-like view of Settings in Simulator or Preview, modify the `forcePhysical` variable on line 11 of `SettingsModel.swift` under Preferences/Models.
 
 As this is a personal project for learning Swift and SwiftUI, feel free to download and modify the project for your own personal purposes.
-
-> [!IMPORTANT]
-> 
-> This project is being worked on using **Xcode 16 beta** and **Swift 6**. To use this project in Xcode 15, change the version of Swift to 5:
->
-> (Top of project sidebar) `Preferences` > Under `TARGETS` > `Preferences` > `Build Settings` > (Scroll to bottom) `Swift Compiler - Language` > `Swift Language Version` > Change the value `Swift 6` to `Swift 5`
->
-> Delete either AppIcon asset (Dark or Tinted) as Xcode 15 does not support dark and tinted icons.
->
 
 ## Disclaimers
 - All assets such as icons and images are not my own in any way.
