@@ -105,7 +105,9 @@ struct GeneralView: View {
             
             if !UIDevice.isSimulator {
                 Section {
-                    SettingsLink(icon: "cable.coaxial", id: String(localized: "TV_PROVIDER_LABEL", table: "General")) {}
+                    SettingsLink(icon: "cable.coaxial", id: String(localized: "TV_PROVIDER_LABEL", table: "General")) {
+                        TVProviderView()
+                    }
                 }
             }
             

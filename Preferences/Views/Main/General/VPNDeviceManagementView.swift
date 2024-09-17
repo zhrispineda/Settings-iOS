@@ -12,15 +12,27 @@ struct VPNDeviceManagementView: View {
     @Environment(\.dismiss) private var dismiss
     
     var body: some View {
-        Color(UIColor.systemGroupedBackground)
-            .ignoresSafeArea()
-            .navigationTitle("VPN & Device Management")
-            .onAppear {
-                dismiss()
+        if UIDevice.isSimulator {
+            Color(UIColor.systemGroupedBackground)
+                .ignoresSafeArea()
+                .navigationTitle("VPN & Device Management")
+                .onAppear {
+                    dismiss()
+                }
+        } else {
+            CustomList(title: "VPN & Device Management") {
+                Section {
+                    SettingsLabel(color: .blue, icon: "network.connected.to.line.below", id: "VPN", status: "Not Connected")
+                }
+                
+                Button("Sign In to Work or School Account...") {}
             }
+        }
     }
 }
 
 #Preview {
-    VPNDeviceManagementView()
+    NavigationStack {
+        VPNDeviceManagementView()
+    }
 }

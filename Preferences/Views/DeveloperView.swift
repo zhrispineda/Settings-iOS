@@ -118,7 +118,7 @@ struct DeveloperView: View {
             }
             
             Section("TV Provider Testing") {
-                NavigationLink("TV Provider", destination: TVProviderView())
+                NavigationLink("TV Provider", destination: DTVProviderView())
             }
             
             Section {

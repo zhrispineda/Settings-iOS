@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TVProviderView: View {
+struct DTVProviderView: View {
     // Variables
     @State private var cacheBusterEnabled = false
     @State private var disableTimeoutsEnabled = false
@@ -49,6 +49,6 @@ struct TVProviderView: View {
 
 #Preview {
     NavigationStack {
-        TVProviderView()
+        DTVProviderView()
     }
 }

@@ -43,6 +43,7 @@
 		833854F72C1648CD00339C4F /* SoftwareUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833854F62C1648CD00339C4F /* SoftwareUpdateView.swift */; };
 		833A44EF2C6E75BF003076F5 /* SystemFontsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833A44EE2C6E75BF003076F5 /* SystemFontsView.swift */; };
 		833A44F12C6E768E003076F5 /* MyFontsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833A44F02C6E768E003076F5 /* MyFontsView.swift */; };
+		833C124B2C99AA1400CAEB36 /* TVProviderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C124A2C99AA1400CAEB36 /* TVProviderView.swift */; };
 		833C6EAC2C208A3900A8D91C /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C6EAB2C208A3900A8D91C /* CameraView.swift */; };
 		833C6EAE2C20C88000A8D91C /* HomeScreenAppLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C6EAD2C20C88000A8D91C /* HomeScreenAppLibraryView.swift */; };
 		833C6EB02C20CCEF00A8D91C /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C6EAF2C20CCEF00A8D91C /* SearchView.swift */; };
@@ -217,7 +218,7 @@
 		83F516C42C21EB550004E87A /* AppsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F516C32C21EB550004E87A /* AppsView.swift */; };
 		83F626D42B827F0C00ED343F /* DisplayZoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F626D32B827F0C00ED343F /* DisplayZoomView.swift */; };
 		83F626D62B82884300ED343F /* AirPlaySuggestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F626D52B82884300ED343F /* AirPlaySuggestionsView.swift */; };
-		83F626D82B8289E100ED343F /* TVProviderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F626D72B8289E100ED343F /* TVProviderView.swift */; };
+		83F626D82B8289E100ED343F /* DTVProviderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F626D72B8289E100ED343F /* DTVProviderView.swift */; };
 		83F626DA2B828E8C00ED343F /* TVAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F626D92B828E8C00ED343F /* TVAppView.swift */; };
 		83F6E26C2C8A2E300060187F /* RemindersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F6E26B2C8A2E300060187F /* RemindersView.swift */; };
 		83F78A0F2B8E7D5000025062 /* ControlNearbyDevicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F78A0E2B8E7D5000025062 /* ControlNearbyDevicesView.swift */; };
@@ -274,6 +275,7 @@
 		833854F62C1648CD00339C4F /* SoftwareUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftwareUpdateView.swift; sourceTree = "<group>"; };
 		833A44EE2C6E75BF003076F5 /* SystemFontsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemFontsView.swift; sourceTree = "<group>"; };
 		833A44F02C6E768E003076F5 /* MyFontsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFontsView.swift; sourceTree = "<group>"; };
+		833C124A2C99AA1400CAEB36 /* TVProviderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVProviderView.swift; sourceTree = "<group>"; };
 		833C6EAB2C208A3900A8D91C /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		833C6EAD2C20C88000A8D91C /* HomeScreenAppLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenAppLibraryView.swift; sourceTree = "<group>"; };
 		833C6EAF2C20CCEF00A8D91C /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
@@ -451,7 +453,7 @@
 		83F516C32C21EB550004E87A /* AppsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsView.swift; sourceTree = "<group>"; };
 		83F626D32B827F0C00ED343F /* DisplayZoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayZoomView.swift; sourceTree = "<group>"; };
 		83F626D52B82884300ED343F /* AirPlaySuggestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPlaySuggestionsView.swift; sourceTree = "<group>"; };
-		83F626D72B8289E100ED343F /* TVProviderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVProviderView.swift; sourceTree = "<group>"; };
+		83F626D72B8289E100ED343F /* DTVProviderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTVProviderView.swift; sourceTree = "<group>"; };
 		83F626D92B828E8C00ED343F /* TVAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVAppView.swift; sourceTree = "<group>"; };
 		83F6E26B2C8A2E300060187F /* RemindersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersView.swift; sourceTree = "<group>"; };
 		83F78A0E2B8E7D5000025062 /* ControlNearbyDevicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlNearbyDevicesView.swift; sourceTree = "<group>"; };
@@ -923,6 +925,7 @@
 				83F3F6A42B7D16F6003CC310 /* GameControllerView.swift */,
 				8356839A2B755AB3000FB136 /* KeyboardView.swift */,
 				83F3F6A82B7D2EFE003CC310 /* LanguageRegionView.swift */,
+				833C124A2C99AA1400CAEB36 /* TVProviderView.swift */,
 				83F3F6A22B7D1454003CC310 /* VPNDeviceManagementView.swift */,
 				83A5DA542C2366A60012ACB3 /* TransferResetView.swift */,
 			);
@@ -1185,7 +1188,7 @@
 			children = (
 				83F626D32B827F0C00ED343F /* DisplayZoomView.swift */,
 				83F626D52B82884300ED343F /* AirPlaySuggestionsView.swift */,
-				83F626D72B8289E100ED343F /* TVProviderView.swift */,
+				83F626D72B8289E100ED343F /* DTVProviderView.swift */,
 				83F626D92B828E8C00ED343F /* TVAppView.swift */,
 			);
 			path = Developer;
@@ -1444,7 +1447,7 @@
 				8329284E2B8580B3006611CF /* HeadphoneAudioLevelsView.swift in Sources */,
 				838273A32B7FD37B000F4228 /* TVView.swift in Sources */,
 				837B0F5B2B8989E000B22455 /* SiriLanguageView.swift in Sources */,
-				83F626D82B8289E100ED343F /* TVProviderView.swift in Sources */,
+				83F626D82B8289E100ED343F /* DTVProviderView.swift in Sources */,
 				83815CE92B768E3600F53A0F /* NewsView.swift in Sources */,
 				83F626DA2B828E8C00ED343F /* TVAppView.swift in Sources */,
 				83898FCA2B8A8F210020C7BB /* HealthDetailsView.swift in Sources */,
@@ -1472,6 +1475,7 @@
 				832EF39F2B8197980066A1BF /* TextReplacementView.swift in Sources */,
 				83D7B4512C925B0400C2B81E /* PhotographicStylesView.swift in Sources */,
 				83F78A122B8E7F6D00025062 /* AccessibilityKeyboardsView.swift in Sources */,
+				833C124B2C99AA1400CAEB36 /* TVProviderView.swift in Sources */,
 				83D31F852B8E3C640057CFDB /* SpeakSelectionVoicesView.swift in Sources */,
 				83F516C22C21EB1C0004E87A /* WalletView.swift in Sources */,
 				83D31F792B8D49820057CFDB /* ReplacementView.swift in Sources */,
