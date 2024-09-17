@@ -2,7 +2,7 @@
 //  TVProviderView.swift
 //  Preferences
 //
-//  Created by Chris on 9/17/24.
+//  Settings > General > TV Provider
 //
 
 import SwiftUI

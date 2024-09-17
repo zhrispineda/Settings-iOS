@@ -12,14 +12,16 @@ struct TransferResetView: View {
     
     var body: some View {
         CustomList(title: "Transfer or Reset \(UIDevice.current.model)") {
-            VStack(alignment: .center) {
+            VStack {
                 Image(UIDevice.iPhone ? (UIDevice.HomeButtonCapability ? "ClassiciPhone" : "ModerniPhone") : "ModerniPad")
                     .foregroundStyle(.accent)
                 Text("**Prepare for New \(UIDevice.current.model)**")
-                Text("Make sure everything's ready to transfer to a new \(UIDevice.current.model), even if you don't currently have enough iCloud storage to back up.")
+                Text("Make sure everything‘s ready to transfer to a new \(UIDevice.current.model), even if you don't currently have enough iCloud storage to back up.")
                     .font(.footnote)
                     .multilineTextAlignment(.center)
             }
+            .frame(maxWidth: .infinity, alignment: .center)
+            
             HStack {
                 Spacer()
                 Button("Get Started") {}
@@ -27,15 +29,15 @@ struct TransferResetView: View {
             }
         }
         .confirmationDialog("Select an option to reset", isPresented: $showingResetOptions,
-                            titleVisibility: .hidden,
-            actions: {
+                            titleVisibility: .hidden) {
                 Button("Reset All Settings") {}
                 Button("Reset Network Settings") {}
                 Button(UIDevice.iPhone ? "Delete All eSIMs" : "Subscriber Services") {}
                 Button("Reset Keyboard Dictionary") {}
                 Button("Reset Keyboard Dictionary") {}
                 Button("Reset Location & Privacy") {}
-        })
+        }
+        
         List {
             Button("Reset") { showingResetOptions.toggle() }
             Button("Erase All Content and Settings") {}

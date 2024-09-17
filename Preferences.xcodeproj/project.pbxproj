@@ -44,6 +44,7 @@
 		833A44EF2C6E75BF003076F5 /* SystemFontsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833A44EE2C6E75BF003076F5 /* SystemFontsView.swift */; };
 		833A44F12C6E768E003076F5 /* MyFontsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833A44F02C6E768E003076F5 /* MyFontsView.swift */; };
 		833C124B2C99AA1400CAEB36 /* TVProviderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C124A2C99AA1400CAEB36 /* TVProviderView.swift */; };
+		833C124D2C99AF6700CAEB36 /* LegalRegulatoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C124C2C99AF6700CAEB36 /* LegalRegulatoryView.swift */; };
 		833C6EAC2C208A3900A8D91C /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C6EAB2C208A3900A8D91C /* CameraView.swift */; };
 		833C6EAE2C20C88000A8D91C /* HomeScreenAppLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C6EAD2C20C88000A8D91C /* HomeScreenAppLibraryView.swift */; };
 		833C6EB02C20CCEF00A8D91C /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C6EAF2C20CCEF00A8D91C /* SearchView.swift */; };
@@ -276,6 +277,7 @@
 		833A44EE2C6E75BF003076F5 /* SystemFontsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemFontsView.swift; sourceTree = "<group>"; };
 		833A44F02C6E768E003076F5 /* MyFontsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFontsView.swift; sourceTree = "<group>"; };
 		833C124A2C99AA1400CAEB36 /* TVProviderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVProviderView.swift; sourceTree = "<group>"; };
+		833C124C2C99AF6700CAEB36 /* LegalRegulatoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalRegulatoryView.swift; sourceTree = "<group>"; };
 		833C6EAB2C208A3900A8D91C /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		833C6EAD2C20C88000A8D91C /* HomeScreenAppLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenAppLibraryView.swift; sourceTree = "<group>"; };
 		833C6EAF2C20CCEF00A8D91C /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
@@ -927,6 +929,7 @@
 				83F3F6A82B7D2EFE003CC310 /* LanguageRegionView.swift */,
 				833C124A2C99AA1400CAEB36 /* TVProviderView.swift */,
 				83F3F6A22B7D1454003CC310 /* VPNDeviceManagementView.swift */,
+				833C124C2C99AF6700CAEB36 /* LegalRegulatoryView.swift */,
 				83A5DA542C2366A60012ACB3 /* TransferResetView.swift */,
 			);
 			path = General;
@@ -1422,6 +1425,7 @@
 				83B619D12B941C4F00EFEA90 /* AlwaysAllowedView.swift in Sources */,
 				83D31F762B8D48870057CFDB /* PronunciationsView.swift in Sources */,
 				832EF3A92B819BB90066A1BF /* HardwareKeyboardLanguageView.swift in Sources */,
+				833C124D2C99AF6700CAEB36 /* LegalRegulatoryView.swift in Sources */,
 				83B619C92B93DEBD00EFEA90 /* ScreenDistanceView.swift in Sources */,
 				837C03072B7F192F004D6C71 /* AppInstallationsPurchasesView.swift in Sources */,
 				83815CE32B768D5800F53A0F /* PrivacySecurityView.swift in Sources */,
