@@ -37,7 +37,7 @@ public extension UIDevice {
             
             // Fallback
             switch identifier {
-                // iPhone models
+            // MARK: iPhone models
             case "iPhone12,8", "iPhone14,6":
                 return "iPhone SE"
             case "iPhone 11,2":
@@ -46,7 +46,36 @@ public extension UIDevice {
                 return "iPhone XS Max"
             case "iPhone11,8":
                 return "iPhone XR"
-                
+            case "iPhone12,1":
+                return "iPhone 11"
+            case "iPhone12,3":
+                return "iPhone 11 Pro"
+            case "iPhone12,5":
+                return "iPhone 11 Pro Max"
+            case "iPhone13,1":
+                return "iPhone 12 mini"
+            case "iPhone13,2":
+                return "iPhone 12"
+            case "iPhone13,3":
+                return "iPhone 12 Pro"
+            case "iPhone13,4":
+                return "iPhone 12 Pro Max"
+            case "iPhone14,2":
+                return "iPhone 13 Pro"
+            case "iPhone14,3":
+                return "iPhone 13 Pro Max"
+            case "iPhone14,4":
+                return "iPhone 13 mini"
+            case "iPhone14,5":
+                return "iPhone 13"
+            case "iPhone14,7":
+                return "iPhone 14"
+            case "iPhone14,8":
+                return "iPhone 14 Plus"
+            case "iPhone15,2":
+                return "iPhone 14 Pro"
+            case "iPhone15,3":
+                return "iPhone 14 Pro Max"
             case "iPhone15,4":
                 return "iPhone 15"
             case "iPhone15,5":
@@ -63,12 +92,43 @@ public extension UIDevice {
                 return "iPhone 16"
             case "iPhone17,4":
                 return "iPhone 16 Plus"
-                
+            // MARK: iPad models
+            case "iPad7,11", "iPad7,12":
+                return "iPad (7th generation)"
+            case "iPad8,1", "iPad8,2", "iPad8,3", "iPad8,4":
+                return "iPad Pro (11-inch) (1st generation)"
+            case "iPad8,5", "iPad8,6", "iPad8,7", "iPad8,8":
+                return "iPad Pro (12.9-inch) (3rd generation)"
+            case "iPad8,9", "iPad8,10":
+                return "iPad Pro (11-inch) (2nd generation)"
+            case "iPad8,11", "iPad8,12":
+                return "iPad Pro (12.9-inch) (4th generation)"
+            case "iPad11,1", "iPad11,2":
+                return "iPad mini (5th generation)"
+            case "iPad11,3", "iPad11,4":
+                return "iPad Air (3rd generation)"
+            case "iPad11,6", "iPad11,7":
+                return "iPad (8th generation)"
+            case "iPad12,1", "iPad12,2":
+                return "iPad (9th generation)"
+            case "iPad13,1", "iPad13,2":
+                return "iPad Air (4th generation)"
+            case "iPad13,4", "iPad13,5", "iPad13,6", "iPad13,7":
+                return "iPad Pro (11-inch) (3rd generation)"
+            case "iPad13,8", "iPad13,9", "iPad13,10", "iPad13,11":
+                return "iPad Pro (12.9-inch) (5th generation)"
+            case "iPad14,3", "iPad14,4":
+                return "iPad Pro (11-inch) (4th generation)"
+            case "iPad14,5", "iPad14,6":
+                return "iPad Pro (12.9-inch) (6th generation)"
+            case "iPad13,16", "iPad13,17":
+                return "iPad Air (5th generation)"
+            case "iPad13,18", "iPad13,19":
+                return "iPad (10th generation)"
             case "iPad14,1", "iPad14,2":
-                return "iPad mini"
+                return "iPad mini (6th generation)"
             case "iPad14,11":
                 return "iPad Air 13-inch (M2)"
-                
             case "iPad16,3", "iPad16,4":
                 return "iPad Pro 11-inch (M4)"
             case "iPad16,5", "iPad16,6":
