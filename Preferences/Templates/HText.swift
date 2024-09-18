@@ -18,10 +18,12 @@ import SwiftUI
 struct HText: View {
     var title = String()
     var status = String()
+    var monospaced = false
     
-    init(_ title: String = String(), status: String = String()) {
+    init(_ title: String = String(), status: String = String(), monospaced: Bool = false) {
         self.title = title
         self.status = status
+        self.monospaced = monospaced
     }
     
     var body: some View {
@@ -30,6 +32,7 @@ struct HText: View {
             Spacer()
             Text(status)
                 .foregroundStyle(.secondary)
+                .fontDesign(monospaced ? .monospaced : .default)
         }
     }
 }

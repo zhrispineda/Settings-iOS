@@ -29,14 +29,14 @@ struct AboutView: View {
                 
                 LabeledContent("Model Name", value: UIDevice.fullModel)
                     .textSelection(.enabled)
-                LabeledContent("Model Number", value: showingModelNumber ? getRegulatoryModelNumber() : "\(getRegulatoryModelNumber())\(getRegionInfo())")
+                HText("Model Number", status: showingModelNumber ? getRegulatoryModelNumber() : "\(getRegulatoryModelNumber())\(getRegionInfo())", monospaced: true)
                     .contentShape(Rectangle())
                     .onTapGesture {
                         showingModelNumber.toggle()
                     }
-                LabeledContent("Serial Number", value: serialNumber)
+                HText("Serial Number", status: serialNumber, monospaced: true)
                     .onAppear {
-                        serialNumber = randomSerialNumber()
+                        serialNumber = getRandomSerialNumber()
                     }
             }
             
@@ -58,14 +58,14 @@ struct AboutView: View {
             }
             
             if !UIDevice.isSimulator && UIDevice.CellularTelephonyCapability {
-                HText("Wi-Fi Address", status: "00:0A:AA:A0:A0:00")
-                HText("Bluetooth", status: "00:0A:AA:A0:A0:00")
-                HText("Modem Firmware", status: "2.16.00")
+                HText("Wi-Fi Address", status: "00:0A:AA:A0:A0:00", monospaced: true)
+                HText("Bluetooth", status: "00:0A:AA:A0:A0:00", monospaced: true)
+                HText("Modem Firmware", status: "0.00.00", monospaced: true)
                 NavigationLink("SEID") {}
                 VStack {
                     Text("EID")
                         .frame(maxWidth: .infinity, alignment: .leading)
-                    Text("00000000000000000000000000000000")
+                    Text(getRandomEID())
                         .foregroundStyle(.secondary)
                         .font(.subheadline)
                         .monospaced()
@@ -76,14 +76,14 @@ struct AboutView: View {
                 Section {
                     LabeledContent("Network", value: "Network")
                     LabeledContent("Carrier", value: "Carrier 0.0")
-                    HText("IMEI", status: "00 000000 000000 0") // TODO: Monospaced Digits
-                    HText("ICCID", status: "0000000000000000000") // TODO: Monospaced Digits
+                    HText("IMEI", status: "00 000000 000000 0", monospaced: true)
+                    HText("ICCID", status: getRandomICCID(), monospaced: true)
                 } header: {
                     Text(UIDevice.HomeButtonCapability && UIDevice.iPhone ? "Physical SIM" : "eSIM")
                 }
                 
                 Section {
-                    HText("IMEI2", status: "00 000000 000000 0") // TODO: Monospaced Digits
+                    HText("IMEI2", status: "00 000000 000000 0", monospaced: true)
                 } header: {
                     Text("Available SIM")
                 }
@@ -151,16 +151,50 @@ struct AboutView: View {
     }
     
     // Generate random characters as a serial number
-    func randomSerialNumber() -> String {
+    func getRandomSerialNumber() -> String {
         let letters = "BCDFGHJKLMNPQRTVWXYZ0123456789"
         var random = SystemRandomNumberGenerator()
-        var randomString = ""
+        var randomString = String()
         for _ in 0..<10 {
             let randomIndex = Int(random.next(upperBound: UInt32(letters.count)))
             let randomCharacter = letters[letters.index(letters.startIndex, offsetBy: randomIndex)]
             randomString.append(randomCharacter)
         }
         return randomString
+    }
+    
+    // Generate random characters as EID string
+    func getRandomEID() -> String {
+        let lowerBound = "10000000000000000000000000000000"
+        let upperBound = "99999999999999999999999999999999"
+        var randomNumber = String()
+
+        for i in 0..<lowerBound.count {
+            let lowerDigit = lowerBound[lowerBound.index(lowerBound.startIndex, offsetBy: i)].wholeNumberValue!
+            let upperDigit = upperBound[upperBound.index(upperBound.startIndex, offsetBy: i)].wholeNumberValue!
+
+            let digit = Int.random(in: lowerDigit...upperDigit)
+            randomNumber += "\(digit)"
+        }
+
+        return randomNumber
+    }
+    
+    // Generate random characters as EID string
+    func getRandomICCID() -> String {
+        let lowerBound = "1000000000000000000"
+        let upperBound = "9999999999999999999"
+        var randomNumber = String()
+
+        for i in 0..<lowerBound.count {
+            let lowerDigit = lowerBound[lowerBound.index(lowerBound.startIndex, offsetBy: i)].wholeNumberValue!
+            let upperDigit = upperBound[upperBound.index(upperBound.startIndex, offsetBy: i)].wholeNumberValue!
+
+            let digit = Int.random(in: lowerDigit...upperDigit)
+            randomNumber += "\(digit)"
+        }
+
+        return randomNumber
     }
 }
 
