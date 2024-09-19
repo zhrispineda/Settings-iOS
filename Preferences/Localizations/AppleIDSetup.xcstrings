@@ -1,0 +1,83 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "ACCOUNT_SETUP_CREATE_ACCOUNT_REBRAND" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Don’t have an Apple Account?"
+          }
+        }
+      }
+    },
+    "DISCOVERING_VIEW_BUTTON_SIGN_IN_MANUAL" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sign in Manually"
+          }
+        }
+      }
+    },
+    "LOGIN_FORM_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple Account"
+          }
+        }
+      }
+    },
+    "SIGN_IN_OPTION_ANOTHER_DEVICE_SUBTITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bring another Apple device nearby to sign in quickly and easily. Available for iOS 17 and later."
+          }
+        }
+      }
+    },
+    "SIGN_IN_OPTION_ANOTHER_DEVICE_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Use Another Apple Device"
+          }
+        }
+      }
+    },
+    "SIGN_IN_OPTION_ENTER_PASSWORD_SUBTITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter an email address or phone number and password then verify your identity."
+          }
+        }
+      }
+    },
+    "SIGN_IN_OPTIONS_DESCRIPTION" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choose the method to sign in yourself or a child in your family on this device."
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

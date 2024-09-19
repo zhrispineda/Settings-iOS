@@ -21,7 +21,7 @@ struct ParentGuardianSignInView: View {
                     Image(systemName: "figure.and.child.holdinghands")
                         .foregroundStyle(.blue)
                         .font(.system(size: 64))
-                    Text("Parent or Guardian Apple Account Sign In")
+                    Text("Parent or Guardian Sign In")
                         .fixedSize(horizontal: false, vertical: true)
                         .font(.title)
                         .fontWeight(.bold)
@@ -45,7 +45,7 @@ struct ParentGuardianSignInView: View {
                     Spacer()
                 }
                 Spacer()
-                    .frame(minHeight: 30)
+                    .frame(minHeight: 90)
             }
             .listRowBackground(Color.clear)
             .listRowSeparator(.hidden)

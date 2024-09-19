@@ -11,6 +11,7 @@ struct SelectSignInOptionView: View {
     // Variables
     @Environment(\.dismiss) private var dismiss
     @State private var showingAlert = false
+    let table = "AppleIDSetup"
     
     var body: some View {
         List {
@@ -19,11 +20,12 @@ struct SelectSignInOptionView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 75)
-                Text("Apple Account")
+                Text("LOGIN_FORM_TITLE".localize(table: table))
                     .font(.title)
                     .bold()
-                Text("Choose the method to sign in yourself or a child in your family on this device.")
+                Text("SIGN_IN_OPTIONS_DESCRIPTION".localize(table: table))
                     .multilineTextAlignment(.center)
+                    .padding(.horizontal)
             }
             .listRowBackground(Color.clear)
             .frame(maxWidth: .infinity, alignment: .center)
@@ -40,8 +42,9 @@ struct SelectSignInOptionView: View {
                                 .foregroundStyle(.blue)
                                 .frame(width: 64)
                             VStack(alignment: .leading) {
-                                Text("**Use Another Apple Device**")
-                                Text("Bring another Apple device nearby to sign in quickly and easily. Available for iOS 17 and later.")
+                                Text("SIGN_IN_OPTION_ANOTHER_DEVICE_TITLE".localize(table: table))
+                                    .bold()
+                                Text("SIGN_IN_OPTION_ANOTHER_DEVICE_SUBTITLE".localize(table: table))
                                     .font(.subheadline)
                                     .foregroundStyle(.secondary)
                             }
@@ -67,8 +70,9 @@ struct SelectSignInOptionView: View {
                                 .font(.system(size: 40))
                                 .frame(width: 70)
                             VStack(alignment: .leading) {
-                                Text("**Sign in Manually**")
-                                Text("Enter an email address or phone number and password then verify your identity.")
+                                Text("DISCOVERING_VIEW_BUTTON_SIGN_IN_MANUAL".localize(table: table))
+                                    .bold()
+                                Text("SIGN_IN_OPTION_ENTER_PASSWORD_SUBTITLE".localize(table: table))
                                     .font(.subheadline)
                                     .foregroundStyle(.secondary)
                             }
@@ -94,9 +98,10 @@ struct SelectSignInOptionView: View {
                 Button {
                     showingAlert.toggle()
                 } label: {
-                    Text("Don‘t have an Apple Account?")
+                    Text("ACCOUNT_SETUP_CREATE_ACCOUNT_REBRAND".localize(table: table))
                         .fontWeight(.semibold)
                 }
+                .padding(.bottom, 60)
                 .alert("Could Not Create Apple Account", isPresented: $showingAlert) {
                     Link("Learn More", destination: URL(string: "https://support.apple.com/en-us/101661")!)
                     Button("OK") {

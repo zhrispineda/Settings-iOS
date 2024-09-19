@@ -69,9 +69,11 @@ struct ForgotPasswordView: View {
                         VStack {
                             Text("**Forgot Password?**")
                                 .font(.largeTitle)
+                                .padding(.top, -20)
                                 .padding(.bottom, 5)
                             Text("Enter your email address or phone number that you use with your account to continue.")
-                                .font(.subheadline)
+                                .padding(.horizontal, -5)
+                                .padding(.bottom, -10)
                         }
                         .frame(maxWidth: .infinity)
                         .multilineTextAlignment(.center)
@@ -80,16 +82,16 @@ struct ForgotPasswordView: View {
                         
                         Section {
                             TextField("Email or Phone Number", text: $username)
-                                .padding(.leading, guardianMode ? 15 : 25)
+                                .padding(.leading, guardianMode ? 15 : 20)
                                 .frame(height: 42)
                                 .background(Color(UIColor.systemGray5))
                                 .cornerRadius(10)
                                 .listRowBackground(Color.clear)
-                                .onAppear(perform: {
+                                .onAppear {
                                     if !username.isEmpty {
                                         dismiss()
                                     }
-                                })
+                                }
                         } footer: {
                             if guardianMode {
                                 Text("Your privacy is important. If you‘re resetting your password on someone else‘s device, your personal information will not be saved on their device.")
@@ -97,13 +99,16 @@ struct ForgotPasswordView: View {
                                     .padding(.horizontal)
                             }
                         }
-                        .padding(.horizontal, guardianMode ? -20 : 0)
+                        .padding(.horizontal, guardianMode ? -20 : -20)
+                        .offset(y: -10)
                     }
+                    
                     VStack {
                         Spacer()
                         ZStack {
-                            NavigationLink {
-                                ForgotPasswordView(showingUnlockOptions: true)
+                            Button {
+                                showingFailedAlert.toggle()
+                                //ForgotPasswordView(showingUnlockOptions: true)
                             } label: {
                                 Text("Continue")
                                     .fontWeight(.medium)
@@ -115,6 +120,9 @@ struct ForgotPasswordView: View {
                                     .padding(.horizontal, 40)
                                     .disabled(username.count < 1)
                                     .frame(height: 50)
+                            }
+                            .alert("Cannot Reset Password", isPresented: $showingFailedAlert) {} message: {
+                                Text("This Apple Account is not valid or not supported.")
                             }
                         }
                     }

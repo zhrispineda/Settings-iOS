@@ -49,7 +49,7 @@ struct AppleAccountLoginView: View {
                         .cornerRadius(10)
                     Spacer()
                     Button {
-                        showingOptionsAlert.toggle()
+                        showingForgotPasswordSheet.toggle()
                     } label: {
                         Text("Forgot password?")
                             .multilineTextAlignment(.center)
@@ -67,7 +67,7 @@ struct AppleAccountLoginView: View {
                         }
                     }
                 }
-                .alert("Forgot password or don‘t have an Apple Account?", isPresented: $showingOptionsAlert, actions: {
+                .alert("Forgot password or don‘t have an Apple Account?", isPresented: $showingOptionsAlert) {
                     Button("Forgot Password or Apple Account", role: .none) {
                         showingForgotPasswordSheet.toggle()
                     }
@@ -75,7 +75,7 @@ struct AppleAccountLoginView: View {
                         showingErrorAlert.toggle()
                     }
                     Button("Cancel", role: .cancel) {}
-                })
+                }
                 .alert("Could Not Create Apple Account", isPresented: $showingErrorAlert) {
                     Link("Learn More", destination: URL(string: "https://support.apple.com/en-us/101661")!)
                     Button("OK") {
@@ -94,9 +94,7 @@ struct AppleAccountLoginView: View {
             
             Section {
                 VStack {
-                    Button {
-                        // Empty
-                    } label: {
+                    Button {} label: {
                         VStack {
                             Image(_internalSystemName: "privacy.handshake")
                                 .resizable()

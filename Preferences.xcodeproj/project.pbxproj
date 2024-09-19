@@ -13,6 +13,7 @@
 		8309893A2C44AA9C00535A8F /* UIDeviceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830989392C44AA9C00535A8F /* UIDeviceExtensions.swift */; };
 		830CFAC12C990DDA00733411 /* KeyboardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830CFAC02C990DDA00733411 /* KeyboardDetailView.swift */; };
 		830DA8022B9BE17B001EE76F /* ParentGuardianSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830DA8012B9BE17B001EE76F /* ParentGuardianSignInView.swift */; };
+		8318120E2C9BB99200EFEC5B /* AppleIDSetup.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8318120D2C9BB99200EFEC5B /* AppleIDSetup.xcstrings */; };
 		8319CE492B86D198007EC822 /* PasswordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319CE482B86D198007EC822 /* PasswordsView.swift */; };
 		8319CE4B2B86D22E007EC822 /* AutoFillPasswordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319CE4A2B86D22E007EC822 /* AutoFillPasswordsView.swift */; };
 		8319CE4D2B86D380007EC822 /* SafetyCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319CE4C2B86D380007EC822 /* SafetyCheckView.swift */; };
@@ -247,6 +248,7 @@
 		830989392C44AA9C00535A8F /* UIDeviceExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtensions.swift; sourceTree = "<group>"; };
 		830CFAC02C990DDA00733411 /* KeyboardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardDetailView.swift; sourceTree = "<group>"; };
 		830DA8012B9BE17B001EE76F /* ParentGuardianSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentGuardianSignInView.swift; sourceTree = "<group>"; };
+		8318120D2C9BB99200EFEC5B /* AppleIDSetup.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AppleIDSetup.xcstrings; sourceTree = "<group>"; };
 		8319CE482B86D198007EC822 /* PasswordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordsView.swift; sourceTree = "<group>"; };
 		8319CE4A2B86D22E007EC822 /* AutoFillPasswordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoFillPasswordsView.swift; sourceTree = "<group>"; };
 		8319CE4C2B86D380007EC822 /* SafetyCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyCheckView.swift; sourceTree = "<group>"; };
@@ -941,14 +943,15 @@
 		83AC4BE22C456E6B006C7D13 /* Localizations */ = {
 			isa = PBXGroup;
 			children = (
+				839BB8A62C41DD61000F8245 /* Accessibility.xcstrings */,
+				8318120D2C9BB99200EFEC5B /* AppleIDSetup.xcstrings */,
+				8319E8172C3DFB1E002EC116 /* AmbientSettings.xcstrings */,
+				83AC4BE32C457361006C7D13 /* BatteryUI.xcstrings */,
 				837FB16C2C39D461009B7A23 /* BluetoothSettings.xcstrings */,
 				838C0D952C38A64900438E2D /* ControlCenterSettings.xcstrings */,
 				838C0D972C38A7FA00438E2D /* General.xcstrings */,
 				838C0D992C38A9A000438E2D /* Localizable.xcstrings */,
-				8319E8172C3DFB1E002EC116 /* AmbientSettings.xcstrings */,
 				833F5B7E2C4050AA00C0A8C7 /* SOS.xcstrings */,
-				839BB8A62C41DD61000F8245 /* Accessibility.xcstrings */,
-				83AC4BE32C457361006C7D13 /* BatteryUI.xcstrings */,
 			);
 			path = Localizations;
 			sourceTree = "<group>";
@@ -1328,6 +1331,7 @@
 				838C0D962C38A64900438E2D /* ControlCenterSettings.xcstrings in Resources */,
 				837FB16D2C39D461009B7A23 /* BluetoothSettings.xcstrings in Resources */,
 				83AC4BE42C457361006C7D13 /* BatteryUI.xcstrings in Resources */,
+				8318120E2C9BB99200EFEC5B /* AppleIDSetup.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
