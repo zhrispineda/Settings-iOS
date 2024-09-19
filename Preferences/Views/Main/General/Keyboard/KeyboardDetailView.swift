@@ -16,7 +16,9 @@ struct KeyboardDetailView: View {
         CustomList(title: "English (US)", topPadding: true) {
             Section {
                 Text("English (US)")
-                NavigationLink("Add Language...") {}
+                NavigationLink("Add Language...") {
+                    AddLanguageView()
+                }
             } header: {
                 Text("Languages")
             } footer: {
