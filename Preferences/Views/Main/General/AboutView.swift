@@ -51,8 +51,10 @@ struct AboutView: View {
             Section {
                 LabeledContent("Songs", value: "0")
                 LabeledContent("Videos", value: "0")
-                LabeledContent("Photos", value: "0")
-                LabeledContent("Applications", value: "1")
+                LabeledContent("Photos", value: "6")
+                if !UIDevice.isSimulator {
+                    LabeledContent("Applications", value: "1")
+                }
                 LabeledContent("Capacity", value: totalStorage)
                 LabeledContent("Available", value: availableStorage)
             }

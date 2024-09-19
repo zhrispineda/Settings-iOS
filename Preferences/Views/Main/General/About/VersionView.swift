@@ -28,6 +28,7 @@ struct VersionView: View {
                         .font(.callout)
                     } else {
                         Text("This update includes improvements and bug fixes for your \(UIDevice.current.model).")
+                            .textSelection(.enabled)
                             .foregroundStyle(.secondary)
                             .font(.callout)
                     }

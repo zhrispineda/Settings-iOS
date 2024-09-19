@@ -50,9 +50,9 @@ struct AutoFillPasswordsView: View {
                         }
                     }
                     .frame(maxHeight: 30)
-                    .pickerStyle(.menu)
                     .labelsHidden()
-                    .tint(Color["Label"].secondary)
+                    .pickerStyle(.menu)
+                    .tint(.primary)
                 }
             } footer: {
                 Text("Open verification code setup links and QR codes with this app.")

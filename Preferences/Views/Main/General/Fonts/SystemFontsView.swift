@@ -14,8 +14,10 @@ struct SystemFontsView: View {
     var body: some View {
         CustomList(title: "System Fonts", topPadding: true) {
             Section("Installed Fonts") {
-                ForEach(UIFont.familyNames, id: \.self) {
-                    NavigationLink($0) {}
+                ForEach(UIFont.familyNames, id: \.self) { font in
+                    NavigationLink(font) {
+                        SystemFontsDetailView(fontName: font)
+                    }
                 }
             }
         }
