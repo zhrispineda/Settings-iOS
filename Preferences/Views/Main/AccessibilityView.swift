@@ -134,7 +134,9 @@ struct AccessibilityView: View {
             }
             
             Section {
-                SettingsLink(color: .gray, icon: "keyboard.fill", id: "Keyboards & Typing") {}
+                SettingsLink(color: .gray, icon: "keyboard.fill", id: "Keyboards & Typing") {
+                    KeyboardsTypingView()
+                }
                 if !UIDevice.isSimulator {
                     SettingsLink(color: .gray, icon: "appletvremote.gen4.fill", id: "APPLE_TV_REMOTE".localize(table: table)) {}
                 }
