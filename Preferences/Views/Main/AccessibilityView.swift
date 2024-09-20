@@ -14,7 +14,7 @@ struct AccessibilityView: View {
     @State private var frameY: Double = 0
     
     var body: some View {
-        CustomList(title: "ROOT_LEVEL_TITLE".localize(table: table)) {
+        CustomList(title: "Back") {
             Section {
                 SectionHelp(title: "PLACARD_TITLE".localize(table: table), color: .blue, icon: "accessibility", description: UIDevice.iPhone ? "\("PLACARD_SUBTITLE_IPHONE".localize(table: table)) [\("PLACARD_LEARN_MORE".localize(table: "Accessibility"))](https://support.apple.com/guide/iphone/get-started-with-accessibility-features-iph3e2e4367/ios)" : "\("PLACARD_SUBTITLE_IPAD".localize(table: table)) [\("PLACARD_LEARN_MORE".localize(table: table))](https://support.apple.com/guide/ipad/get-started-with-accessibility-features-ipad9a2465f9/ipados)")
                     .overlay { // For calculating opacity of the principal toolbar item
@@ -117,7 +117,14 @@ struct AccessibilityView: View {
                     LiveSpeechView()
                 }
                 if UIDevice.isSimulator {
-                    CustomNavigationLink(title: "ADAPTIVE_VOICE_SHORTCUTS_TITLE".localize(table: table), status: "OFF".localize(table: table), destination: EmptyView())
+                    NavigationLink {
+                        Text(String())
+                            .onAppear {
+                                exit(0)
+                            }
+                    } label: {
+                        CustomNavigationLink(title: "ADAPTIVE_VOICE_SHORTCUTS_TITLE".localize(table: table), status: "OFF".localize(table: table), destination: EmptyView())
+                    }
                 } else {
                     SettingsLink(color: .blue, icon: "person.badge.waveform.fill", id: "PERSONAL_VOICE_TITLE".localize(table: table), status: "OFF".localize(table: table)) {}
                     SettingsLink(icon: "waveform.arrow.triangle.branch.right", id: "ADAPTIVE_VOICE_SHORTCUTS_TITLE".localize(table: table), status: "OFF".localize(table: table)) {}

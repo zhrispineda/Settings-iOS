@@ -42,7 +42,7 @@ struct TextSizeView: View {
                 if UIDevice.iPhone {
                     Rectangle()
                         .frame(height: 90)
-                        .foregroundStyle(Color(UIColor.systemFill))
+                        .foregroundStyle(Color(.background))
                 } else {
                     RoundedRectangle(cornerRadius: 15.0)
                         .frame(height: 90)

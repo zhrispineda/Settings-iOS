@@ -62,7 +62,7 @@ struct AboutView: View {
             if !UIDevice.isSimulator && UIDevice.CellularTelephonyCapability {
                 HText("Wi-Fi Address", status: "00:0A:AA:A0:A0:00", monospaced: true)
                 HText("Bluetooth", status: "00:0A:AA:A0:A0:00", monospaced: true)
-                HText("Modem Firmware", status: "0.00.00", monospaced: true)
+                HText("Modem Firmware", status: "1.00.00", monospaced: true)
                 NavigationLink("SEID") {}
                 VStack {
                     Text("EID")

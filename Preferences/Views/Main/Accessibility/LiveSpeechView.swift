@@ -16,15 +16,23 @@ struct LiveSpeechView: View {
             Section {
                 Toggle("Live Speech", isOn: $liveSpeechEnabled)
             } footer: {
-                Text("Triple-click the \(UIDevice.HomeButtonCapability ? "home" : "side") button to show Live Speech.")
+                Text("Live Speech speaks aloud what you type using the speaker, and in calls. Triple-click the \(UIDevice.HomeButtonCapability ? "Home" : "Side") button to show Live Speech.\n[What‘s new in Live Speech...](#)")
             }
             
             Section {
-                NavigationLink("Favorite Phrases", destination: FavoritePhrasesView())
+                if UIDevice.isSimulator {
+                    NavigationLink("Phrases") {
+                        CustomList(title: "Phrases") {}
+                    }
+                } else {
+                    NavigationLink("Phrases", destination: PhrasesView())
+                }
+            } footer: {
+                Text("Create phrases that you can quickly speak with Live Speech.")
             }
             
             Section {
-                CustomNavigationLink(title: "English (US)", status: "Samantha", destination: SpeakSelectionVoiceDetailView(title: "English"))
+                CustomNavigationLink(title: "English (US)", status: "Siri Voice 4 (United States)", destination: SpeakSelectionVoiceDetailView(title: "English"))
             } header: {
                 Text("Voices")
             } footer: {
