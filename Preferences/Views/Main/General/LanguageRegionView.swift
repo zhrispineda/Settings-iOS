@@ -50,19 +50,7 @@ struct LanguageRegionView: View {
                     }
                     .foregroundStyle(Color["Label"])
                 }
-                Button {} label: {
-                    HStack {
-                        Text("Calendar")
-                        Spacer()
-                        Text("Gregorian")
-                            .foregroundStyle(.secondary)
-                        Image(systemName: "chevron.right")
-                            .foregroundStyle(.tertiary)
-                            .imageScale(.small)
-                            .fontWeight(.medium)
-                    }
-                    .foregroundStyle(Color["Label"])
-                }
+                CustomNavigationLink(title: "Calendar", status: "Gregorian", destination: CalendarTypeView())
                 CustomNavigationLink(title: "Temperature", status: "°F", destination: SelectOptionList(title: "Temperature", options: ["Celsius (°C)", "Fahrenheit (°F)"], selected: "Fahrenheit (°F)"))
                 CustomNavigationLink(title: "Measurement System", status: "US", destination: SelectOptionList(title: "Measurement System", options: ["Metric", "US", "UK"], selected: "US"))
                 CustomNavigationLink(title: "First Day of Week", status: "Sunday", destination: SelectOptionList(title: "First Day of Week", options: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], selected: "Sunday"))

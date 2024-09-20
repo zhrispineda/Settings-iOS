@@ -75,6 +75,7 @@ struct AccessibilityView: View {
                     SettingsLink(color: .indigo, icon: "eye.tracking", id: "Eye Tracking") {}
                     if UIDevice.iPhone {
                         SettingsLink(color: .blue, icon: "iphone.side.button.arrow.left", id: "SIDE_CLICK_TITLE".localize(table: table)) {}
+                        SettingsLink(color: .blue, icon: "iphone.side.button.arrow.left", id: "CAMERA_BUTTON_TITLE".localize(table: table)) {}
                         SettingsLink(color: .blue, icon: "inset.filled.applewatch.case", id: "APPLE_WATCH_REMOTE_SCREEN".localize(table: table)) {}
                     } else {
                         SettingsLink(color: .blue, icon: "ipad.top.button.arrow.down", id: "TOP_CLICK_TITLE".localize(table: table)) {}

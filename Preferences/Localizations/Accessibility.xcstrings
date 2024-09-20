@@ -103,6 +103,23 @@
         }
       }
     },
+    "CAMERA_BUTTON_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Camera Control"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Control de la cámara"
+          }
+        }
+      }
+    },
     "CommandAndControlTitle" : {
       "extractionState" : "manual",
       "localizations" : {

@@ -74,6 +74,7 @@ struct SettingsLink<Content: View>: View {
                             .frame(width: smallerIcons.contains(icon) ? 13 : 20)
                             .symbolRenderingMode(hierarchyIcons.contains(icon) ? .hierarchical : .none)
                             .foregroundStyle(iconColor)
+                            .scaleEffect(CGSize(width: 1.0, height: id == "Camera Control" ? -1.0 : 1.0))
                     } else {
                         Image(icon)
                             .resizable()

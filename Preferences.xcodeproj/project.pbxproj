@@ -125,6 +125,7 @@
 		838273A32B7FD37B000F4228 /* TVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838273A22B7FD37B000F4228 /* TVView.swift */; };
 		838273A52B7FD4CF000F4228 /* AppRestrictionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838273A42B7FD4CF000F4228 /* AppRestrictionsView.swift */; };
 		8383CD082C9C842A00BA06A0 /* SystemFontsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8383CD072C9C842A00BA06A0 /* SystemFontsDetailView.swift */; };
+		8385E8FA2C9E0E93008A3758 /* CalendarTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8385E8F92C9E0E93008A3758 /* CalendarTypeView.swift */; };
 		83898FCA2B8A8F210020C7BB /* HealthDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83898FC92B8A8F210020C7BB /* HealthDetailsView.swift */; };
 		83898FCD2B8A94BE0020C7BB /* HealthDetailsDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83898FCC2B8A94BE0020C7BB /* HealthDetailsDataView.swift */; };
 		83898FCF2B8A9A1F0020C7BB /* MedicalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83898FCE2B8A9A1F0020C7BB /* MedicalView.swift */; };
@@ -363,6 +364,7 @@
 		838273A22B7FD37B000F4228 /* TVView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVView.swift; sourceTree = "<group>"; };
 		838273A42B7FD4CF000F4228 /* AppRestrictionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRestrictionsView.swift; sourceTree = "<group>"; };
 		8383CD072C9C842A00BA06A0 /* SystemFontsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemFontsDetailView.swift; sourceTree = "<group>"; };
+		8385E8F92C9E0E93008A3758 /* CalendarTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTypeView.swift; sourceTree = "<group>"; };
 		83898FC92B8A8F210020C7BB /* HealthDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDetailsView.swift; sourceTree = "<group>"; };
 		83898FCC2B8A94BE0020C7BB /* HealthDetailsDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDetailsDataView.swift; sourceTree = "<group>"; };
 		83898FCE2B8A9A1F0020C7BB /* MedicalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalView.swift; sourceTree = "<group>"; };
@@ -547,6 +549,7 @@
 			isa = PBXGroup;
 			children = (
 				832EF3972B8190430066A1BF /* DateFormatView.swift */,
+				8385E8F92C9E0E93008A3758 /* CalendarTypeView.swift */,
 			);
 			path = "Language & Region";
 			sourceTree = "<group>";
@@ -1441,6 +1444,7 @@
 				838F37EC2C828754008C9909 /* FitnessView.swift in Sources */,
 				834765E42C7D49D000DD6244 /* AirPlayContinuityView.swift in Sources */,
 				83D31F902B8E44E60057CFDB /* AssistiveTouchView.swift in Sources */,
+				8385E8FA2C9E0E93008A3758 /* CalendarTypeView.swift in Sources */,
 				83F3F6A72B7D2BAA003CC310 /* FontsView.swift in Sources */,
 				83F78A1B2B8E8E3900025062 /* KeyboardColorView.swift in Sources */,
 				83D31F7C2B8D67460057CFDB /* PronunciationLanguagesView.swift in Sources */,

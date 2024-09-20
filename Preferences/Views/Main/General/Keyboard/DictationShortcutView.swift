@@ -13,13 +13,13 @@ struct DictationShortcutView: View {
     let options = ["Control", "Command", "None"]
     
     var body: some View {
-        CustomList(title: "Dictation Shortcut") {
+        CustomList(title: "Dictation Shortcut", topPadding: true) {
             Picker("Press Twice to Start Dictation:", selection: $selectedOption) {
-                ForEach(options, id: \.self) {
-                    if $0 != "None" {
-                        Text(Image(systemName: "\($0.lowercased())")) + Text($0)
+                ForEach(options, id: \.self) { shortcut in
+                    if shortcut != "None" {
+                        Text(Image(systemName: "\(shortcut.lowercased())")) + Text("\t\(shortcut)")
                     } else {
-                        Text($0)
+                        Text(shortcut)
                     }
                 }
             }
@@ -29,5 +29,7 @@ struct DictationShortcutView: View {
 }
 
 #Preview {
-    DictationShortcutView()
+    NavigationStack {
+        DictationShortcutView()
+    }
 }
