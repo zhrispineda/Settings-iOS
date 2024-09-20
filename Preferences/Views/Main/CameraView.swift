@@ -26,7 +26,17 @@ struct CameraView: View {
     @State private var macroControlEnabled = true
     
     var body: some View {
-        CustomList(title: "Camera") {
+        CustomList(title: "Camera", topPadding: true) {
+            if !UIDevice.isSimulator && UIDevice.AdvancedPhotographicStylesCapability {
+                Section {
+                    CustomNavigationLink(title: "Camera Control", status: "Camera", destination: EmptyView())
+                } header: {
+                    Text("System Settings")
+                } footer: {
+                    Text("Click Camera Control to open a camera app, then click again to use Camera Control as a shutter. Light-press to make adjustments. [Learn more.](#)")
+                }
+            }
+            
             if UIDevice.AdvancedPhotographicStylesCapability {
                 Section {
                     Button {
@@ -39,6 +49,10 @@ struct CameraView: View {
                         NavigationStack {
                             PhotographicStylesView()
                         }
+                    }
+                } header: {
+                    if !UIDevice.isSimulator {
+                        Text("App Settings")
                     }
                 } footer: {
                     Text("Photographic Styles uses advanced scene understanding to adjust specific colors in different parts of the photo. Personalize how skin tones appear with incredible nuance to get the exact look you want.")

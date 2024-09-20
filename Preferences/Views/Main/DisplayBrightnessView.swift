@@ -106,7 +106,7 @@ struct DisplayBrightnessView: View {
                            in: 0.0...1.0,
                            minimumValueLabel: Image(systemName: "sun.min.fill"),
                            maximumValueLabel: Image(systemName: "sun.max.fill"),
-                           label: { Text("Volume")  }
+                           label: { Text("Brightness")  }
                     )
                 }
                 .foregroundStyle(.secondary)
