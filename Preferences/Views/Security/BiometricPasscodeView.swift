@@ -9,14 +9,15 @@ import SwiftUI
 
 struct BiometricPasscodeView: View {
     // Variables
-    @State private var allowFingerprintForUnlock = true
-    @State private var allowFingerprintForStore = true
-    @State private var allowFingerprintForContactlessPayment = true
-    @State private var forceAuthenticationBeforeAutoFill = true
+    @State private var allowFingerprintForUnlock = false
+    @State private var allowFingerprintForStore = false
+    @State private var allowFingerprintForContactlessPayment = false
+    @State private var forceAuthenticationBeforeAutoFill = false
     
     @State private var allowMaskUnlock = false
     @State private var requireAttentionForUnlock = true
     @State private var attentionAwareFeatures = true
+    @State private var voiceDial = true
     
     @State private var allowLockScreenTodayView = true
     @State private var allowLockScreenNotificationsView = true
@@ -26,9 +27,9 @@ struct BiometricPasscodeView: View {
     @State private var allowAssistantWhileLocked = true
     @State private var allowReplyWhileLocked = true
     @State private var allowHomeControlWhileLocked = true
-    @State private var allowPassbookWhileLocked = true
+    @State private var allowPassbookWhileLocked = false
     @State private var allowReturnCallsWhileLocked = true
-    @State private var allowUSBRestrictedMode = true
+    @State private var allowUSBRestrictedMode = false
     
     @State private var allowEraseAfterFailedAttempts = false
     @State private var showingEraseConfirmation = false
@@ -62,23 +63,23 @@ struct BiometricPasscodeView: View {
             
             if UIDevice.PearlIDCapability {
                 Section {
-                    Button("Set Up an Alternate Appearance") {}
+                    Button("Set Up Face ID") {}
                 } footer: {
-                    Text("In addition to continuously learning how you look, Face ID can recognize an alternate appearance.")
+//                    Text("In addition to continuously learning how you look, Face ID can recognize an alternate appearance.")
                 }
                 
-                if UIDevice.iPhone {
-                    Section {
-                        Toggle("Face ID with a Mask", isOn: $allowMaskUnlock)
-                    } footer: {
-                        Text("Face ID is most accurate when it‘s set up for full-face recognition only. To use Face ID while wearing a mask, iPhone can recognize the unique features around the eye area to authenticate. You must be looking at your iPhone to use Face ID while wearing a mask.")
-                    }
-                }
-                
-                Section {
-                    Button("Reset Face ID") {}
-                        .tint(.red)
-                }
+//                if UIDevice.iPhone {
+//                    Section {
+//                        Toggle("Face ID with a Mask", isOn: $allowMaskUnlock)
+//                    } footer: {
+//                        Text("Face ID is most accurate when it‘s set up for full-face recognition only. To use Face ID while wearing a mask, iPhone can recognize the unique features around the eye area to authenticate. You must be looking at your iPhone to use Face ID while wearing a mask.")
+//                    }
+//                }
+//                
+//                Section {
+//                    Button("Reset Face ID") {}
+//                        .tint(.red)
+//                }
                 
                 Section {
                     Toggle("Require Attention for Face ID", isOn: $requireAttentionForUnlock)
@@ -95,7 +96,12 @@ struct BiometricPasscodeView: View {
                 }
                 
                 if UIDevice.iPhone {
-                    CustomNavigationLink(title: "Stolen Device Protection", status: "Off", destination: EmptyView())
+                    Section {
+                        CustomNavigationLink(title: "Stolen Device Protection", status: "Off", destination: EmptyView())
+                            .disabled(true)
+                    } footer: {
+                        Text("Stolen Device Protection is only available when Face ID is set up.")
+                    }
                 }
             } else {
                 Section {
@@ -105,14 +111,23 @@ struct BiometricPasscodeView: View {
             }
             
             Section {
-                Button("Turn Passcode Off") {}
+                Button("Turn Passcode On") {}
                 Button("Change Passcode") {}
+                    .disabled(true)
             } footer: {
-                Text("Changing your passcode on this \(UIDevice.current.model) will not disconnect it from other devices or reset \(UIDevice.iPhone ? "iPhone Mirroring, Wi-Fi sync," : "Wi-Fi sync") and watch pairing.")
+//                Text("Changing your passcode on this \(UIDevice.current.model) will not disconnect it from other devices or reset \(UIDevice.iPhone ? "iPhone Mirroring, Wi-Fi sync," : "Wi-Fi sync") and watch pairing.")
             }
             
             Section {
                 CustomNavigationLink(title: "Require Passcode", status: "Immediately", destination: EmptyView())
+                    .disabled(true)
+            }
+            
+            Section {
+                Toggle("Voice Dial", isOn: $voiceDial)
+                    .disabled(true)
+            } footer: {
+                Text("Music Voice Control is always enabled.")
             }
             
             Section {
@@ -136,9 +151,11 @@ struct BiometricPasscodeView: View {
             } footer: {
                 Text(allowUSBRestrictedMode ? "Turn off to prevent accessories from connecting when your \(UIDevice.current.model) has been locked for more than an hour." : "Unlock \(UIDevice.current.model) to allow accessories to connect when it has been more than an hour since your \(UIDevice.current.model) was locked.")
             }
+            .disabled(true)
             
             Section {
                 Toggle("Erase Data", isOn: $allowEraseAfterFailedAttempts)
+                    .disabled(true)
                     .confirmationDialog(
                         "All data on this \(UIDevice.current.model) will be erased after 10 failed passcode attempts.",
                         isPresented: $showingEraseConfirmation,
@@ -153,7 +170,7 @@ struct BiometricPasscodeView: View {
                         showingEraseConfirmation = allowEraseAfterFailedAttempts
                     }
             } footer: {
-                Text("Erase all data on this \(UIDevice.current.model) after 10 failed passcode attempts.\n\nData protection is enabled.")
+                Text("Erase all data on this \(UIDevice.current.model) after 10 failed passcode attempts.")//\n\nData protection is enabled.")
             }
         }
         .toolbar {
