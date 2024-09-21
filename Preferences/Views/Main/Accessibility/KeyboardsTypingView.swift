@@ -28,7 +28,7 @@ struct KeyboardsTypingView: View {
             } header: {
                 Text("Hardware Keyboards")
             } footer: {
-                Text("Use an external keyboard to control your \(UIDevice.current.model)")
+                Text("Use an external keyboard to control your \(UIDevice.current.model).")
             }
             
             Section {

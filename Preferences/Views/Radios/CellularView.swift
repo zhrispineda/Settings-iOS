@@ -30,66 +30,70 @@ struct CellularView: View {
                 }
             
             Section {
-                Toggle("Cellular Data", isOn: $cellularDataEnabled)
-                CustomNavigationLink(title: "Cellular Data Options", status: "Roaming Off", destination: EmptyView())
-                Button("Set Up Personal Hotspot") {}
-            } footer: {
-                Text("Turn off cellular data to restrict all data to Wi-Fi, including email, web browsing, and push notifications.")
+                Button("Set Up Cellular") {}
             }
             
-            Section {
-                Toggle("Turn On This Line", isOn: .constant(true))
-                CustomNavigationLink(title: "Cellular Plans", status: "Plan", destination: EmptyView())
-                CustomNavigationLink(title: "Network Selection", status: "Network", destination: EmptyView())
-                CustomNavigationLink(title: "Wi-Fi Calling", status: "On", destination: EmptyView())
-                CustomNavigationLink(title: "Calls on Other Devices", status: "On", destination: EmptyView())
-                CustomNavigationLink(title: "Usage", status: "Used 0 KB - Unlimited", destination: EmptyView())
-                NavigationLink("Carrier Services") {}
-                NavigationLink("SIM PIN") {}
-                Button("Delete eSIM", role: .destructive) {}
-            } header: {
-                Text("Carrier")
-            }
-            
-            Section {
-                Button {} label: {
-                    Text("Add eSIM")
-                }
-            }
-            
-            Section {
-                SettingsLink(color: .gray, icon: "gear", id: "System Services", status: "0 KB", content: {})
-                NavigationLink("Show All") {
-                    CustomList(title: "Cellular Data Usage") {
-                        Picker("Billing Period", selection: $mode) {
-                            Text("This Billing Period").tag(0)
-                            Text("Last Billing Period").tag(1)
-                        }
-                        .pickerStyle(SegmentedPickerStyle())
-                        .padding(.horizontal, -10)
-                        HStack {
-                            Text("APPS BY USAGE")
-                                .font(.system(size: 12))
-                            Spacer()
-                            Text("SORT BY NAME")
-                                .font(.system(size: 12))
-                                .foregroundStyle(.blue)
-                        }
-                        SettingsLink(color: .gray, icon: "gear", id: "System Services", status: "0 KB", content: {})
-                    }
-                }
-            } header: {
-                Text("Cellular Data")
-            }
-            
-            Section {
-                Toggle(isOn: $wifiAssistEnabled) {
-                    Text("Wi-Fi Assist")
-                    Text("0 KB")
-                }
-            } footer: {
-                Text("Automatically use cellular data when Wi-Fi connectivity is poor.")
-            }
+//            Section {
+//                Toggle("Cellular Data", isOn: $cellularDataEnabled)
+//                CustomNavigationLink(title: "Cellular Data Options", status: "Roaming Off", destination: EmptyView())
+//                Button("Set Up Personal Hotspot") {}
+//            } footer: {
+//                Text("Turn off cellular data to restrict all data to Wi-Fi, including email, web browsing, and push notifications.")
+//            }
+//            
+//            Section {
+//                Toggle("Turn On This Line", isOn: .constant(true))
+//                CustomNavigationLink(title: "Cellular Plans", status: "Plan", destination: EmptyView())
+//                CustomNavigationLink(title: "Network Selection", status: "Network", destination: EmptyView())
+//                CustomNavigationLink(title: "Wi-Fi Calling", status: "On", destination: EmptyView())
+//                CustomNavigationLink(title: "Calls on Other Devices", status: "On", destination: EmptyView())
+//                CustomNavigationLink(title: "Usage", status: "Used 0 KB - Unlimited", destination: EmptyView())
+//                NavigationLink("Carrier Services") {}
+//                NavigationLink("SIM PIN") {}
+//                Button("Delete eSIM", role: .destructive) {}
+//            } header: {
+//                Text("Carrier")
+//            }
+//            
+//            Section {
+//                Button {} label: {
+//                    Text("Add eSIM")
+//                }
+//            }
+//            
+//            Section {
+//                SettingsLink(color: .gray, icon: "gear", id: "System Services", status: "0 KB", content: {})
+//                NavigationLink("Show All") {
+//                    CustomList(title: "Cellular Data Usage") {
+//                        Picker("Billing Period", selection: $mode) {
+//                            Text("This Billing Period").tag(0)
+//                            Text("Last Billing Period").tag(1)
+//                        }
+//                        .pickerStyle(SegmentedPickerStyle())
+//                        .padding(.horizontal, -10)
+//                        HStack {
+//                            Text("APPS BY USAGE")
+//                                .font(.system(size: 12))
+//                            Spacer()
+//                            Text("SORT BY NAME")
+//                                .font(.system(size: 12))
+//                                .foregroundStyle(.blue)
+//                        }
+//                        SettingsLink(color: .gray, icon: "gear", id: "System Services", status: "0 KB", content: {})
+//                    }
+//                }
+//            } header: {
+//                Text("Cellular Data")
+//            }
+//            
+//            Section {
+//                Toggle(isOn: $wifiAssistEnabled) {
+//                    Text("Wi-Fi Assist")
+//                    Text("0 KB")
+//                }
+//            } footer: {
+//                Text("Automatically use cellular data when Wi-Fi connectivity is poor.")
+//            }
             
 //            Section {
 //                EmptyView()
@@ -103,14 +107,14 @@ struct CellularView: View {
 //                Text("When not connected to Wi-Fi, use your cellular network to automatically back up to iCloud. This may cause you to exceed your cellular data plan.")
 //            }
             
-            Section {
-                Toggle("Cellular Usage Statistics", isOn: $cellularUsageStatisticsEnabled)
-                Button("Reset Statistics") {}
-            } header: {
-                Text("Cellular Usage Statistics")
-            } footer: {
-                Text("Disabling cellular usage statistics will disable all cellular usage tracking, as well as reset any currently tracked usage to zero.\n\nLast Reset: \(Date().formatted(date: .abbreviated, time: .shortened))")
-            }
+//            Section {
+//                Toggle("Cellular Usage Statistics", isOn: $cellularUsageStatisticsEnabled)
+//                Button("Reset Statistics") {}
+//            } header: {
+//                Text("Cellular Usage Statistics")
+//            } footer: {
+//                Text("Disabling cellular usage statistics will disable all cellular usage tracking, as well as reset any currently tracked usage to zero.\n\nLast Reset: \(Date().formatted(date: .abbreviated, time: .shortened))")
+//            }
         }
         .toolbar {
             ToolbarItem(placement: .principal) {

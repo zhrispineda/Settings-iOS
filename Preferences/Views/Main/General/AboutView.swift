@@ -75,19 +75,20 @@ struct AboutView: View {
                 }
                 LabeledContent("Carrier Lock", value: "No SIM restrictions")
                 
-                Section {
-                    LabeledContent("Network", value: "Network")
-                    LabeledContent("Carrier", value: "Carrier 0.0")
-                    HText("IMEI", status: "00 000000 000000 0", monospaced: true)
-                    HText("ICCID", status: getRandomICCID(), monospaced: true)
-                } header: {
-                    Text(UIDevice.HomeButtonCapability && UIDevice.iPhone ? "Physical SIM" : "eSIM")
-                }
+//                Section {
+//                    LabeledContent("Network", value: "Network")
+//                    LabeledContent("Carrier", value: "Carrier 0.0")
+//                    HText("IMEI", status: "00 000000 000000 0", monospaced: true)
+//                    HText("ICCID", status: getRandomICCID(), monospaced: true)
+//                } header: {
+//                    Text(UIDevice.HomeButtonCapability && UIDevice.iPhone ? "Physical SIM" : "eSIM")
+//                }
                 
                 Section {
+                    HText("IMEI", status: "00 000000 000000 0", monospaced: true)
                     HText("IMEI2", status: "00 000000 000000 0", monospaced: true)
                 } header: {
-                    Text("Available SIM")
+                    Text("Available SIMs")
                 }
             }
             

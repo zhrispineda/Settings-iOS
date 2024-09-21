@@ -59,6 +59,10 @@ struct ContentView: View {
 //                            Section {
 //                                SettingsLabel(id: "Finish Setting Up Your \(UIDevice().model)", badgeCount: 1)
 //                            }
+//                            
+//                            Section {
+//                                SettingsLabel(id: "More for Your \(UIDevice().model)", badgeCount: 3)
+//                            }
                             
                             // MARK: Radio
                             if !UIDevice.isSimulator {
