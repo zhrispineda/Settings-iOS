@@ -9,38 +9,43 @@ import SwiftUI
 
 struct TransferResetView: View {
     @State private var showingResetOptions = false
+    let table = "Reset"
     
     var body: some View {
-        CustomList(title: "Transfer or Reset \(UIDevice.current.model)") {
+        CustomList(title: "TRANSFER_OR_RESET_TITLE".localize(table: "General")) {
             VStack {
                 Image(UIDevice.iPhone ? (UIDevice.HomeButtonCapability ? "ClassiciPhone" : "ModerniPhone") : "ModerniPad")
                     .foregroundStyle(.accent)
-                Text("**Prepare for New \(UIDevice.current.model)**")
-                Text("Make sure everything‘s ready to transfer to a new \(UIDevice.current.model), even if you don't currently have enough iCloud storage to back up.")
+                Text("PREBUDDY_LABEL".localize(table: table))
+                    .font(.headline)
+                    .padding(.vertical, 5)
+                Text("PREBUDDY_TEXT".localize(table: table))
                     .font(.footnote)
                     .multilineTextAlignment(.center)
             }
             .frame(maxWidth: .infinity, alignment: .center)
-            
-            HStack {
-                Spacer()
-                Button("Get Started") {}
-                Spacer()
+            .alignmentGuide(.listRowSeparatorLeading) { _ in
+                return 0
             }
-        }
-        .confirmationDialog("Select an option to reset", isPresented: $showingResetOptions,
-                            titleVisibility: .hidden) {
-                Button("Reset All Settings") {}
-                Button("Reset Network Settings") {}
-                Button(UIDevice.iPhone ? "Delete All eSIMs" : "Subscriber Services") {}
-                Button("Reset Keyboard Dictionary") {}
-                Button("Reset Keyboard Dictionary") {}
-                Button("Reset Location & Privacy") {}
+            
+            Button("GET_STARTED".localize(table: table)) {}
+                .frame(maxWidth: .infinity, alignment: .center)
         }
         
         List {
-            Button("Reset") { showingResetOptions.toggle() }
-            Button("Erase All Content and Settings") {}
+            Button("RESET".localize(table: table)) {
+                showingResetOptions.toggle()
+            }
+            .confirmationDialog("Select an option to reset", isPresented: $showingResetOptions,
+                                titleVisibility: .hidden) {
+                Button("CLEAR_LABEL".localize(table: table)) {}
+                Button("RESET_NETWORK_LABEL".localize(table: table)) {}
+                Button("RESET_KEYBOARD_DICTIONARY_LABEL".localize(table: table)) {}
+                Button("RESET_ICONS_LABEL".localize(table: table)) {}
+                Button("RESET_PERSONALIZED_HANDWRITING_STYLE_LABEL".localize(table: table)) {}
+                Button("RESET_PRIVACY_LABEL".localize(table: table)) {}
+            }
+            Button("ERASE_LABEL".localize(table: table)) {}
         }
         .padding(.top, -25)
         .frame(maxHeight: 100)

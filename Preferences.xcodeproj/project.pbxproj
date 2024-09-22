@@ -13,6 +13,7 @@
 		8309893A2C44AA9C00535A8F /* UIDeviceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830989392C44AA9C00535A8F /* UIDeviceExtensions.swift */; };
 		830CFAC12C990DDA00733411 /* KeyboardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830CFAC02C990DDA00733411 /* KeyboardDetailView.swift */; };
 		830DA8022B9BE17B001EE76F /* ParentGuardianSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830DA8012B9BE17B001EE76F /* ParentGuardianSignInView.swift */; };
+		8315C93B2CA098720022CBC3 /* Reset.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8315C93A2CA098720022CBC3 /* Reset.xcstrings */; };
 		8318120E2C9BB99200EFEC5B /* AppleIDSetup.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8318120D2C9BB99200EFEC5B /* AppleIDSetup.xcstrings */; };
 		8319CE492B86D198007EC822 /* PasswordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319CE482B86D198007EC822 /* PasswordsView.swift */; };
 		8319CE4B2B86D22E007EC822 /* AutoFillPasswordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319CE4A2B86D22E007EC822 /* AutoFillPasswordsView.swift */; };
@@ -252,6 +253,7 @@
 		830989392C44AA9C00535A8F /* UIDeviceExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtensions.swift; sourceTree = "<group>"; };
 		830CFAC02C990DDA00733411 /* KeyboardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardDetailView.swift; sourceTree = "<group>"; };
 		830DA8012B9BE17B001EE76F /* ParentGuardianSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentGuardianSignInView.swift; sourceTree = "<group>"; };
+		8315C93A2CA098720022CBC3 /* Reset.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Reset.xcstrings; sourceTree = "<group>"; };
 		8318120D2C9BB99200EFEC5B /* AppleIDSetup.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AppleIDSetup.xcstrings; sourceTree = "<group>"; };
 		8319CE482B86D198007EC822 /* PasswordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordsView.swift; sourceTree = "<group>"; };
 		8319CE4A2B86D22E007EC822 /* AutoFillPasswordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoFillPasswordsView.swift; sourceTree = "<group>"; };
@@ -979,6 +981,7 @@
 				838C0D952C38A64900438E2D /* ControlCenterSettings.xcstrings */,
 				838C0D972C38A7FA00438E2D /* General.xcstrings */,
 				838C0D992C38A9A000438E2D /* Localizable.xcstrings */,
+				8315C93A2CA098720022CBC3 /* Reset.xcstrings */,
 				833F5B7E2C4050AA00C0A8C7 /* SOS.xcstrings */,
 			);
 			path = Localizations;
@@ -1354,6 +1357,7 @@
 				8319E8182C3DFB1E002EC116 /* AmbientSettings.xcstrings in Resources */,
 				838C0D982C38A7FA00438E2D /* General.xcstrings in Resources */,
 				833F0AD72B744D190036EAD2 /* Preview Assets.xcassets in Resources */,
+				8315C93B2CA098720022CBC3 /* Reset.xcstrings in Resources */,
 				833F0AD42B744D190036EAD2 /* Assets.xcassets in Resources */,
 				8361A22B2C193DBA00A7D5CC /* SettingsSimulator.gif in Resources */,
 				838C0D962C38A64900438E2D /* ControlCenterSettings.xcstrings in Resources */,

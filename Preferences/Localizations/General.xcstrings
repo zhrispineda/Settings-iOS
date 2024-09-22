@@ -348,6 +348,23 @@
         }
       }
     },
+    "SW_DETAIL_OS" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This update includes improvements and bug fixes for your %@."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Esta actualización incluye mejoras y correcciones de errores para tu %@."
+          }
+        }
+      }
+    },
     "TRANSFER_OR_RESET_TITLE" : {
       "extractionState" : "manual",
       "localizations" : {
