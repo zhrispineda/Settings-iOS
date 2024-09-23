@@ -38,7 +38,7 @@ struct SettingsLabel: View {
                             .resizable()
                             .scaledToFit()
                             .symbolRenderingMode(hierarchyIcons.contains(icon) ? .hierarchical : .none)
-                            .foregroundStyle(.white)
+                            .foregroundStyle(color == .white ? .black : .white)
                             .frame(width: smallerIcons.contains(icon) ? 15 : 20)
                     } else if internalIcons.contains(icon) {
                         Image(_internalSystemName: icon)

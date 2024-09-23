@@ -1,0 +1,176 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "CAMERA_BUTTON_APP_LIST_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choose the app that will open when you click Camera Control."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selecciona la app que se abrirá al pulsar el control de la cámara."
+          }
+        }
+      }
+    },
+    "CAMERA_BUTTON_APP_LIST_NO_ACTION" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "None"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ninguna"
+          }
+        }
+      }
+    },
+    "CAMERA_BUTTON_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Camera Control"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Control de la cámara"
+          }
+        }
+      }
+    },
+    "CAPTURE_BUTTON_APP_LAUNCH_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choose a gesture to open the camera app."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selecciona con qué gesto quieres que se abra la app de la cámara."
+          }
+        }
+      }
+    },
+    "CAPTURE_BUTTON_CAPTURE_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Light-press Camera Control to quickly make adjustments. Double light-press to select a control."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pulsa suavemente el control de la cámara para realizar ajustes rápidamente. Púlsalo dos veces suavemente para seleccionar un control."
+          }
+        }
+      }
+    },
+    "CAPTURE_BUTTON_LAUNCH_APP_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "LAUNCH CAMERA"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ABRIR LA CÁMARA"
+          }
+        }
+      }
+    },
+    "CAPTURE_BUTTON_LAUNCH_DOUBLE_CLICK" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Double Click"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dos pulsaciones"
+          }
+        }
+      }
+    },
+    "CAPTURE_BUTTON_LAUNCH_SINGLE_CLICK" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Single Click"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una pulsación"
+          }
+        }
+      }
+    },
+    "CAPTURE_BUTTON_LIGHT_PRESS_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "LIGHT PRESS"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PRESIÓN SUAVE"
+          }
+        }
+      }
+    },
+    "HIDE_CAMERA_CONTROLS" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clean Preview"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Previsualizar sin mostrar controles"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

@@ -29,7 +29,7 @@ struct CameraView: View {
         CustomList(title: "Camera", topPadding: true) {
             if !UIDevice.isSimulator && UIDevice.AdvancedPhotographicStylesCapability {
                 Section {
-                    CustomNavigationLink(title: "Camera Control", status: "Camera", destination: EmptyView())
+                    CustomNavigationLink(title: "Camera Control", status: "Camera", destination: CameraControlView())
                 } header: {
                     Text("System Settings")
                 } footer: {

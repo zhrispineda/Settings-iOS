@@ -211,6 +211,8 @@
 		83DF95762B84266E00AEEB63 /* SiriDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DF95752B84266E00AEEB63 /* SiriDetailView.swift */; };
 		83DF95792B84391F00AEEB63 /* SiriAppClipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DF95782B84391E00AEEB63 /* SiriAppClipsView.swift */; };
 		83DFAB342C3F516F006C9C29 /* StorageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DFAB332C3F516F006C9C29 /* StorageView.swift */; };
+		83EC895F2CA0F8B500389F3B /* CameraControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EC895E2CA0F8B500389F3B /* CameraControlView.swift */; };
+		83EC89612CA102E900389F3B /* CameraSettings-CameraButton.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83EC89602CA102E900389F3B /* CameraSettings-CameraButton.xcstrings */; };
 		83F3F6A12B7D12B6003CC310 /* DictionaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3F6A02B7D12B6003CC310 /* DictionaryView.swift */; };
 		83F3F6A32B7D1454003CC310 /* VPNDeviceManagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3F6A22B7D1454003CC310 /* VPNDeviceManagementView.swift */; };
 		83F3F6A52B7D16F6003CC310 /* GameControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3F6A42B7D16F6003CC310 /* GameControllerView.swift */; };
@@ -454,6 +456,8 @@
 		83DF95752B84266E00AEEB63 /* SiriDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriDetailView.swift; sourceTree = "<group>"; };
 		83DF95782B84391E00AEEB63 /* SiriAppClipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriAppClipsView.swift; sourceTree = "<group>"; };
 		83DFAB332C3F516F006C9C29 /* StorageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageView.swift; sourceTree = "<group>"; };
+		83EC895E2CA0F8B500389F3B /* CameraControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraControlView.swift; sourceTree = "<group>"; };
+		83EC89602CA102E900389F3B /* CameraSettings-CameraButton.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "CameraSettings-CameraButton.xcstrings"; sourceTree = "<group>"; };
 		83F3F6A02B7D12B6003CC310 /* DictionaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryView.swift; sourceTree = "<group>"; };
 		83F3F6A22B7D1454003CC310 /* VPNDeviceManagementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNDeviceManagementView.swift; sourceTree = "<group>"; };
 		83F3F6A42B7D16F6003CC310 /* GameControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControllerView.swift; sourceTree = "<group>"; };
@@ -978,6 +982,7 @@
 				8319E8172C3DFB1E002EC116 /* AmbientSettings.xcstrings */,
 				83AC4BE32C457361006C7D13 /* BatteryUI.xcstrings */,
 				837FB16C2C39D461009B7A23 /* BluetoothSettings.xcstrings */,
+				83EC89602CA102E900389F3B /* CameraSettings-CameraButton.xcstrings */,
 				838C0D952C38A64900438E2D /* ControlCenterSettings.xcstrings */,
 				838C0D972C38A7FA00438E2D /* General.xcstrings */,
 				838C0D992C38A9A000438E2D /* Localizable.xcstrings */,
@@ -1151,6 +1156,7 @@
 			isa = PBXGroup;
 			children = (
 				83D7B4502C925B0400C2B81E /* PhotographicStylesView.swift */,
+				83EC895E2CA0F8B500389F3B /* CameraControlView.swift */,
 			);
 			path = Camera;
 			sourceTree = "<group>";
@@ -1353,6 +1359,7 @@
 				83B893C02B8FDBE8005705A3 /* iPhone15_Pro_NaturalTitanium.usdz in Resources */,
 				839BB8A72C41DD61000F8245 /* Accessibility.xcstrings in Resources */,
 				833F5B7F2C4050AA00C0A8C7 /* SOS.xcstrings in Resources */,
+				83EC89612CA102E900389F3B /* CameraSettings-CameraButton.xcstrings in Resources */,
 				838C0D9A2C38A9A000438E2D /* Localizable.xcstrings in Resources */,
 				8319E8182C3DFB1E002EC116 /* AmbientSettings.xcstrings in Resources */,
 				838C0D982C38A7FA00438E2D /* General.xcstrings in Resources */,
@@ -1569,6 +1576,7 @@
 				83D3086B2B8AD1F3002A9B7F /* SafariReaderView.swift in Sources */,
 				83D3085C2B8AC2FA002A9B7F /* SafariAdvancedView.swift in Sources */,
 				838273A12B7F28D6000F4228 /* MoviesView.swift in Sources */,
+				83EC895F2CA0F8B500389F3B /* CameraControlView.swift in Sources */,
 				833C124F2C99B40100CAEB36 /* VoiceOverView.swift in Sources */,
 				832F517F2BBF4DC900335E5E /* NetworkView.swift in Sources */,
 				83AA1BD62C8B951B00A0B830 /* WatchView.swift in Sources */,
