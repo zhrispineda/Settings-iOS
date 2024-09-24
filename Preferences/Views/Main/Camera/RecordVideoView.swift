@@ -45,7 +45,7 @@ struct RecordVideoView: View {
                     if UIDevice.iPhone && !UIDevice.ProDevice{
                         Text("CAM_RECORD_VIDEO_FOOTER_QUICKTAKE".localize(table: table))
                     } else {
-                        Text("QuickTake video will record with the current video setting up to 4K 60 fps in HDR.")
+                        Text("CAM_RECORD_VIDEO_FOOTER_TRUE_VIDEO".localize(table: table))
                     }
                     
                     Text("\n" + "CAM_RECORD_VIDEO_FOOTER_HEAD".localize(table: table))

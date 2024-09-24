@@ -800,6 +800,23 @@
         }
       }
     },
+    "CAM_RECORD_VIDEO_FOOTER_TRUE_VIDEO" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "QuickTake video will record with the current video setting up to 4K 60 fps in HDR."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Los vídeos con QuickTake se grabarán con el ajuste de vídeo actual (4K a 60 fps en HDR como máximo)."
+          }
+        }
+      }
+    },
     "CAM_RECORD_VIDEO_TITLE" : {
       "extractionState" : "manual",
       "localizations" : {
