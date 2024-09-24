@@ -194,7 +194,7 @@ public extension UIDevice {
         }
     }()
     
-    static let DeviceSupportsEnhancedMultitasking: Bool = {
+    static let DeviceSupportsEnhancedMultitasking: Bool = { // Stage Manager
         var identifier = UIDevice.identifier
         
         switch identifier {
@@ -281,6 +281,17 @@ public extension UIDevice {
             
         }
     }()
+
+    static let ActionModeCapability = { // Action Mode
+        var identifier = UIDevice.identifier
+        
+        switch identifier {
+        case "iPhone14,7", "iPhone14,8", "iPhone15,2", "iPhone15,3", "iPhone15,4", "iPhone15,5", "iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4":
+            return true
+        default:
+            return false
+        }
+    }()
     
     static let AdvancedPhotographicStylesCapability = { // Advanced Photographic Styles
         var identifier = UIDevice.identifier
@@ -324,6 +335,16 @@ public extension UIDevice {
         
         switch identifier {
         case "iPhone15,2", "iPhone15,3", "iPhone16,1", "iPhone16,2":
+            return true
+        default:
+            return false
+        }
+    }()
+    
+    static let RearFacingCameraHDRCapability: Bool = { // HDR Video
+        var identifier = UIDevice.identifier
+        switch identifier {
+        case "iPhone13,1", "iPhone13,2", "iPhone13,3", "iPhone13,4", "iPhone14,2", "iPhone14,3", "iPhone14,4", "iPhone14,5", "iPhone14,7", "iPhone14,8", "iPhone15,2", "iPhone15,3", "iPhone15,4", "iPhone15,5", "iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4":
             return true
         default:
             return false

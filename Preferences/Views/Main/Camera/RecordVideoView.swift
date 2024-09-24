@@ -64,10 +64,12 @@ struct RecordVideoView: View {
                     }
                     Text("CAM_RECORD_VIDEO_4K_30_HEVC\(hdrVideo ? "_DOLBY" : "")_FOOTER".localize(table: table))
                     Text("CAM_RECORD_VIDEO_4K_60_HEVC\(hdrVideo ? "_DOLBY" : "")_FOOTER".localize(table: table))
-                    if showPalFormats {
-                        Text("CAM_RECORD_VIDEO_4K_100_HEVC\(hdrVideo ? "_DOLBY" : "")_FOOTER".localize(table: table))
+                    if UIDevice.AdvancedPhotographicStylesCapability && UIDevice.ProDevice {
+                        if showPalFormats {
+                            Text("CAM_RECORD_VIDEO_4K_100_HEVC\(hdrVideo ? "_DOLBY" : "")_FOOTER".localize(table: table))
+                        }
+                        Text("CAM_RECORD_VIDEO_4K_120_HEVC\(hdrVideo ? "_DOLBY" : "")_FOOTER".localize(table: table))
                     }
-                    Text("CAM_RECORD_VIDEO_4K_120_HEVC\(hdrVideo ? "_DOLBY" : "")_FOOTER".localize(table: table))
                 }
             }
             
@@ -77,22 +79,26 @@ struct RecordVideoView: View {
                 Text("CAM_PAL_VIDEO_FORMATS_FOOTER".localize(table: table))
             }
             
-            Section {
-                Toggle("CAM_ENABLE_VIDEO_STABILIZATION_SWITCH".localize(table: table), isOn: $enhancedStabilization)
-            } footer: {
-                Text("CAM_ENABLE_VIDEO_STABILIZATION_FOOTER".localize(table: table))
+            if UIDevice.ActionModeCapability {
+                Section {
+                    Toggle("CAM_ENABLE_VIDEO_STABILIZATION_SWITCH".localize(table: table), isOn: $enhancedStabilization)
+                } footer: {
+                    Text("CAM_ENABLE_VIDEO_STABILIZATION_FOOTER".localize(table: table))
+                }
+                
+                Section {
+                    Toggle("CAM_ACTION_MODE_LOW_LIGHT".localize(table: table), isOn: $actionModeLowerLight)
+                } footer: {
+                    Text("CAM_ACTION_MODE_LOW_LIGHT_FOOTER".localize(table: table))
+                }
             }
             
-            Section {
-                Toggle("CAM_ACTION_MODE_LOW_LIGHT".localize(table: table), isOn: $actionModeLowerLight)
-            } footer: {
-                Text("CAM_ACTION_MODE_LOW_LIGHT_FOOTER".localize(table: table))
-            }
-            
-            Section {
-                Toggle("CAM_HDR_VIDEO_TITLE".localize(table: table), isOn: $hdrVideo)
-            } footer: {
-                Text(UIDevice.AdvancedPhotographicStylesCapability ? "CAM_HDR_VIDEO_FOOTER_4k120".localize(table: table) : "CAM_HDR_VIDEO_FOOTER".localize(table: table))
+            if UIDevice.RearFacingCameraHDRCapability {
+                Section {
+                    Toggle("CAM_HDR_VIDEO_TITLE".localize(table: table), isOn: $hdrVideo)
+                } footer: {
+                    Text(UIDevice.AdvancedPhotographicStylesCapability ? "CAM_HDR_VIDEO_FOOTER_4k120".localize(table: table) : "CAM_HDR_VIDEO_FOOTER".localize(table: table))
+                }
             }
             
             Section {
@@ -101,10 +107,12 @@ struct RecordVideoView: View {
                 Text("CAM_AUTO_FPS_VFR_FOOTER".localize(table: table))
             }
             
-            Section {
-                Toggle("CAM_VIDEO_RECORDING_DISABLE_CAMERA_SWITCHING_TITLE".localize(table: table), isOn: .constant(false))
-            } footer: {
-                Text("CAM_VIDEO_RECORDING_DISABLE_CAMERA_SWITCHING_FOOTER".localize(table: table))
+            if UIDevice.CinematicModeCapability {
+                Section {
+                    Toggle("CAM_VIDEO_RECORDING_DISABLE_CAMERA_SWITCHING_TITLE".localize(table: table), isOn: .constant(false))
+                } footer: {
+                    Text("CAM_VIDEO_RECORDING_DISABLE_CAMERA_SWITCHING_FOOTER".localize(table: table))
+                }
             }
             
             Section {
