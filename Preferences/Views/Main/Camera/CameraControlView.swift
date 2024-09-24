@@ -18,7 +18,7 @@ struct CameraControlView: View {
         AppSelection(id: "Camera", icon: "appleCamera"),
         AppSelection(id: "Code Scanner", icon: "appleScanner"),
         AppSelection(id: "Magnifier", icon: "appleMagnifier"),
-        AppSelection(id: "CAMERA_BUTTON_APP_LIST_NO_ACTION", icon: "circle.slash")
+        AppSelection(id: "CAMERA_BUTTON_APP_LIST_NO_ACTION", icon: "CSNoActionIcon")
     ]
     
     var body: some View {

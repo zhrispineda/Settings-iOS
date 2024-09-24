@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "CSNoActionIcon-3x_Normal@3x.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,890 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "CAM_ACTION_MODE_LOW_LIGHT" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Action Mode Lower Light"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modo Acción con poca luz"
+          }
+        }
+      }
+    },
+    "CAM_ACTION_MODE_LOW_LIGHT_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Action mode will decrease the stabilization to optimize for less bright scenes."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El modo Acción reducirá la estabilización para mejorar las escenas grabadas con menos luz."
+          }
+        }
+      }
+    },
+    "CAM_AUTO_FPS_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Auto FPS"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Frec. FPS automática"
+          }
+        }
+      }
+    },
+    "CAM_AUTO_FPS_VFR_30&60" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Auto 30 & 60 fps"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A 30 y 60 fps"
+          }
+        }
+      }
+    },
+    "CAM_AUTO_FPS_VFR_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automatically reduce the frame rate to improve low light video and to optimize file size."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reduce automáticamente la frecuencia de fotogramas para mejorar los vídeos con poca luz y optimizar el tamaño de archivo."
+          }
+        }
+      }
+    },
+    "CAM_ENABLE_VIDEO_STABILIZATION_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Video and Cinematic mode will stabilize videos by zooming in slightly."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Los modos Cine y Vídeo estabilizarán los vídeos aplicando un ligero zoom."
+          }
+        }
+      }
+    },
+    "CAM_ENABLE_VIDEO_STABILIZATION_SWITCH" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enhanced Stabilization"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Estabilización mejorada"
+          }
+        }
+      }
+    },
+    "CAM_HDR_VIDEO_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Video and Cinematic mode will record video in 10-bit high dynamic range including Dolby Vision."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Los modos Vídeo y Cine graban vídeo en alto rango dinámico (HDR) de 10 bits, incluido Dolby Vision."
+          }
+        }
+      }
+    },
+    "CAM_HDR_VIDEO_FOOTER_4k120" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Video, Slo-mo, and Cinematic mode will record video in 10-bit high dynamic range including Dolby Vision up to 120 fps."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Los modos Vídeo, “Cámara lenta” y Cine graban vídeo en alto rango dinámico (HDR) de 10 bits, incluido Dolby Vision de hasta 120 fps."
+          }
+        }
+      }
+    },
+    "CAM_HDR_VIDEO_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "HDR Video"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vídeo HDR"
+          }
+        }
+      }
+    },
+    "CAM_PAL_VIDEO_FORMATS_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PAL is a television video format used in many countries in Europe, Africa, Asia, and South America."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PAL es un formato de vídeo para televisión utilizado en muchos países de Europa, África, Asia y Sudamérica."
+          }
+        }
+      }
+    },
+    "CAM_PAL_VIDEO_FORMATS_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Show PAL Formats"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostrar formatos PAL"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_VIDEO_4K_24" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4K at 24 fps"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4K a 24 fps"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_VIDEO_4K_24_HEVC_DOLBY_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 150 MB with 4K at 24 fps (film style)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 150 MB a 4K y 24 fps (cinematográfico)"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_VIDEO_4K_24_HEVC_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 135 MB with 4K at 24 fps (film style)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 135 MB a 4K y 24 fps (cinematográfico)"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_VIDEO_4K_25" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4K at 25 fps (PAL)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4K a 25 fps (PAL)"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_VIDEO_4K_25_HEVC_DOLBY_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 190 MB with 4K at 25 fps (PAL TV)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 190 MB a 4K y 25 fps (TV PAL)"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_VIDEO_4K_25_HEVC_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 170 MB with 4K at 25 fps (PAL TV)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 170 MB a 4K y 25 fps (TV PAL)"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_VIDEO_4K_30" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4K at 30 fps"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4K a 30 fps"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_VIDEO_4K_30_HEVC_DOLBY_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 190 MB with 4K at 30 FPS (higher resolution)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 190 MB a 4K y 30 fps (mayor resolución)"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_VIDEO_4K_30_HEVC_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 170 MB with 4K at 30 FPS (higher resolution)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 170 MB a 4K y 30 fps (mayor resolución)"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_VIDEO_4K_60" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4K at 60 fps"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4K a 60 fps"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_VIDEO_4K_60_HEVC_DOLBY_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 440 MB with 4K at 60 fps (higher resolution, smoother)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 440 MB a 4K y 60 fps (mayor resolución y fluidez)"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_VIDEO_4K_60_HEVC_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 400 MB with 4K at 60 fps (higher resolution, smoother)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 400 MB a 4K y 60 fps (mayor resolución y fluidez)"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_VIDEO_4K_100" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4K at 25 fps (PAL)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4K a 25 fps (PAL)"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_VIDEO_4K_100_HEVC_DOLBY_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 700 MB with 4K at 100 fps (PAL TV, higher resolution)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 700 MB a 4K y 100 fps (TV PAL, mayor resolución)"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_VIDEO_4K_100_HEVC_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 630 MB with 4K at 100 fps (PAL TV, higher resolution)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 630 MB a 4K y 100 fps (TV PAL, mayor resolución)"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_VIDEO_4K_120" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4K at 120 fps"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4K a 120 fps"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_VIDEO_4K_120_HEVC_DOLBY_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 800 MB with 4K at 120 fps (higher resolution)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 800 MB a 4K y 120 fps (mayor resolución)"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_VIDEO_4K_120_HEVC_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 740 MB with 4K at 120 fps (higher resolution)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 740 MB a 4K y 120 fps (mayor resolución)"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_VIDEO_720p_30" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "720p HD at 30 fps"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "720p HD a 30 fps"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_VIDEO_720p_30_HEVC_DOLBY_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 45 MB with 720p HD at 30 fps (space saver)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 45 MB a 720p HD y 30 fps (menor tamaño)"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_VIDEO_720p_30_HEVC_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 40 MB with 720p HD at 30 fps (space saver)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 40 MB a 720p HD y 30 fps (menor tamaño)"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_VIDEO_1080p_25" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1080p HD at 25 fps (PAL)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1080p HD a 25 fps (PAL)"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_VIDEO_1080p_25_HEVC_DOLBY_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 65 MB with 1080p HD at 25 fps (PAL TV)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 65 MB a 1080p HD y 25 fps (TV PAL)"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_VIDEO_1080p_25_HEVC_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 60 MB with 1080p HD at 25 fps (PAL TV)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 60 MB a 1080p HD y 25 fps (TV PAL)"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_VIDEO_1080p_30" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1080p HD at 30 fps"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1080p HD a 30 fps"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_VIDEO_1080p_30_HEVC_DOLBY_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 65 MB with 1080p HD at 30 fps (default)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 65 MB a 1080p HD y 30 fps (por omisión)"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_VIDEO_1080p_30_HEVC_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 60 MB with 1080p HD at 30 fps (default)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 60 MB a 1080p HD y 30 fps (por omisión)"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_VIDEO_1080p_60" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1080p HD at 60 fps"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1080p HD a 60 fps"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_VIDEO_1080p_60_HEVC_DOLBY_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 100 MB with 1080p HD at 60 fps (smoother)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 100 MB a 1080p HD y 60 fps (mayor fluidez)"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_VIDEO_1080p_60_HEVC_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 90 MB with 1080p HD at 60 fps (smoother)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 90 MB a 1080p HD y 60 fps (mayor fluidez)"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_VIDEO_1080P_120" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1080p HD at 120 fps"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1080p HD a 120 fps"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_VIDEO_1080P_120_HEVC_DOLBY_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 190 MB with 1080p HD at 120 fps"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 190 MB a 1080p HD y 120 fps"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_VIDEO_1080P_120_HEVC_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 170 MB with 1080p HD at 120 fps"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 170 MB a 1080p HD y 120 fps"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_VIDEO_FOOTER_HEAD" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A minute of video will be approximately:"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un minuto de vídeo será aproximadamente:"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_VIDEO_FOOTER_QUICKTAKE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "QuickTake video will always record with 1080p HD at 30 fps."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Los vídeos con QuickTake siempre se grabarán a 1080p HD y 30 fps."
+          }
+        }
+      }
+    },
+    "CAM_RECORD_VIDEO_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Record Video"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grabar vídeo"
+          }
+        }
+      }
+    },
+    "CAM_VIDEO_RECORDING_DISABLE_CAMERA_SWITCHING_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Do not automatically switch between cameras while recording video."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La cámara no cambia automáticamente a otra durante la grabación de vídeo."
+          }
+        }
+      }
+    },
+    "CAM_VIDEO_RECORDING_DISABLE_CAMERA_SWITCHING_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lock Camera"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bloquear cámara"
+          }
+        }
+      }
+    },
+    "CAM_VIDEO_RECORDING_LOCK_WHITE_BALANCE_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lock white balance while recording video."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se bloquea el balance de blancos mientras se graba vídeo."
+          }
+        }
+      }
+    },
+    "CAM_VIDEO_RECORDING_LOCK_WHITE_BALANCE_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lock White Balance"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bloquear balance de blancos"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

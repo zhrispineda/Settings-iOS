@@ -60,8 +60,8 @@ struct CameraView: View {
             }
             
             Section {
-                CustomNavigationLink(title: "Record Video", status: "1080p at 30 fps", destination: EmptyView())
-                CustomNavigationLink(title: "Record Slo-mo", status: "1080p at 240 fps", destination: EmptyView())
+                CustomNavigationLink(title: "Record Video", status: "1080p at 30 fps", destination: RecordVideoView())
+                CustomNavigationLink(title: "Record Slo-mo", status: "1080p at 120 fps", destination: EmptyView())
                 if UIDevice.CinematicModeCapability {
                     CustomNavigationLink(title: "Record Cinematic", status: "1080p at 30 fps", destination: EmptyView())
                 }
