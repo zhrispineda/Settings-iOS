@@ -426,6 +426,23 @@
         }
       }
     },
+    "CAM_RECORD_CINEMATIC_FOOTER_HEAD" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A minute of Cinematic video will be approximately:"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un minuto de vídeo en formato Cine será aproximadamente:"
+          }
+        }
+      }
+    },
     "CAM_RECORD_CINEMATIC_TITLE" : {
       "extractionState" : "manual",
       "localizations" : {

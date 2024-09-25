@@ -176,7 +176,18 @@ public extension UIDevice {
         var identifier = UIDevice.identifier
         
         switch identifier {
-        case "iPhone14,4", "iPhone14,5", "iPhone14,2", "iPhone14,3", "iPhone14,7", "iPhone14,8", "iPhone15,2", "iPhone15,3", "iPhone15,4", "iPhone15,5", "iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4":
+        case "iPhone14,2", "iPhone14,3", "iPhone14,4", "iPhone14,5", "iPhone14,7", "iPhone14,8", "iPhone15,2", "iPhone15,3", "iPhone15,4", "iPhone15,5", "iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4":
+            return true
+        default:
+            return false
+        }
+    }()
+    
+    static let HigherResolutionCinematicModeCapability: Bool = { // 4K Cinematic Mode
+        var identifier = UIDevice.identifier
+        
+        switch identifier {
+        case "iPhone14,7", "iPhone14,8", "iPhone15,2", "iPhone15,3", "iPhone15,4", "iPhone15,5", "iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4":
             return true
         default:
             return false

@@ -12,6 +12,7 @@ struct CameraView: View {
     @AppStorage("CameraControlApp") private var selectedApp = "Camera"
     @AppStorage("CameraVideoSetting") private var selectedVideoSetting = "CAM_RECORD_VIDEO_1080p_30"
     @AppStorage("CameraSlomoSetting") private var selectedSlomoSetting = String()
+    @AppStorage("CameraCinematicSetting") private var selectedCinematicSetting = "CAM_RECORD_VIDEO_1080p_30"
     @State private var showingPhotographicStylesView = false
     @State private var useVolumeUpBurstEnabled = false
     @State private var scanQrCodesEnabled = true
@@ -31,7 +32,7 @@ struct CameraView: View {
     let table = "CameraSettings"
     
     init() {
-        if selectedSlomoSetting.isEmpty && !UIDevice.AdvancedPhotographicStylesCapability && !UIDevice.ProDevice {
+        if selectedSlomoSetting.isEmpty && !UIDevice.AdvancedPhotographicStylesCapability && !UIDevice.ProDevice || UIDevice.iPad {
             selectedSlomoSetting = "CAM_RECORD_SLOMO_1080p_240"
         } else if selectedSlomoSetting.isEmpty && UIDevice.AdvancedPhotographicStylesCapability && UIDevice.ProDevice {
             selectedSlomoSetting = "CAM_RECORD_SLOMO_1080p_120"
@@ -75,8 +76,8 @@ struct CameraView: View {
             Section {
                 CustomNavigationLink(title: "CAM_RECORD_VIDEO_TITLE".localize(table: table), status: "\(selectedVideoSetting)_SHORT".localize(table: table), destination: RecordVideoView())
                 CustomNavigationLink(title: "CAM_RECORD_SLOMO_TITLE".localize(table: table), status: "\(selectedSlomoSetting)_SHORT".localize(table: table), destination: RecordSlomoView())
-                if UIDevice.CinematicModeCapability {
-                    CustomNavigationLink(title: "CAM_RECORD_CINEMATIC_TITLE".localize(table: table), status: "CAM_RECORD_VIDEO_1080p_30_SHORT".localize(table: table), destination: EmptyView())
+                if UIDevice.HigherResolutionCinematicModeCapability {
+                    CustomNavigationLink(title: "CAM_RECORD_CINEMATIC_TITLE".localize(table: table), status: "\(selectedCinematicSetting)_SHORT".localize(table: table), destination: RecordCinematicView())
                 }
                 if UIDevice.iPhone {
                     CustomNavigationLink(title: "CAM_AUDIO_CONFIGURATION_TITLE".localize(table: table), status: UIDevice.AdvancedPhotographicStylesCapability ? "CAM_AUDIO_CONFIGURATION_CINEMATIC".localize(table: table) : "CAM_AUDIO_CONFIGURATION_STEREO".localize(table: table), destination: EmptyView())
