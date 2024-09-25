@@ -1,6 +1,74 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "APP_SETTINGS_HEADER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "APP SETTINGS"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AJUSTES DE LA APP"
+          }
+        }
+      }
+    },
+    "AUTO_MACRO_GROUP_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Show Camera control for automatically switching to the Ultra Wide camera to capture macro photos and videos."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Muestra el control de la cámara para cambiar automáticamente a la cámara con ultra gran angular para capturar fotos y vídeos en formato macro."
+          }
+        }
+      }
+    },
+    "AUTO_MACRO_SWITCH" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Macro Control"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Control de macro"
+          }
+        }
+      }
+    },
+    "BUTTON_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "About Camera and ARKit & Privacy…"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acerca de Cámara y ARKit y la privacidad…"
+          }
+        }
+      }
+    },
     "CAM_ACTION_MODE_LOW_LIGHT" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -31,6 +99,57 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "El modo Acción reducirá la estabilización para mejorar las escenas grabadas con menos luz."
+          }
+        }
+      }
+    },
+    "CAM_AUDIO_CONFIGURATION_CINEMATIC" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spatial Audio"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Audio espacial"
+          }
+        }
+      }
+    },
+    "CAM_AUDIO_CONFIGURATION_STEREO" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stereo"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Estéreo"
+          }
+        }
+      }
+    },
+    "CAM_AUDIO_CONFIGURATION_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Record Sound"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grabar sonido"
           }
         }
       }
@@ -86,6 +205,40 @@
         }
       }
     },
+    "CAM_CAPTURE_DYNAMIC_SHUTTER_SWITCH" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prioritize Faster Shooting"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Priorizar la velocidad sobre la calidad al hacer fotos"
+          }
+        }
+      }
+    },
+    "CAM_CAPTURE_GROUP_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Intelligently adapt image quality when rapidly pressing the shutter."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adapta automáticamente la calidad de la imagen cuando pulsas el obturador rápidamente varias veces."
+          }
+        }
+      }
+    },
     "CAM_ENABLE_VIDEO_STABILIZATION_FOOTER" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -116,6 +269,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Estabilización mejorada"
+          }
+        }
+      }
+    },
+    "CAM_FORMATS_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Formats"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Formatos"
           }
         }
       }
@@ -201,6 +371,108 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mostrar formatos PAL"
+          }
+        }
+      }
+    },
+    "CAM_PHOTO_CAPTURE_GROUP_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Photo Capture"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Captura de fotos"
+          }
+        }
+      }
+    },
+    "CAM_PHOTO_CAPTURE_HEADER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PHOTO CAPTURE"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CAPTURA DE FOTOS"
+          }
+        }
+      }
+    },
+    "CAM_PRESERVE_SETTINGS_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Preserve Settings"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conservar ajustes"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_CINEMATIC_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Record Cinematic"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grabar en modo Cine"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_SLOMO_1080p_120_SHORT" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1080p a 120 fps"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1080p a 120 fps"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_SLOMO_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Record Slo-mo"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grabar a cámara lenta"
           }
         }
       }
@@ -664,6 +936,23 @@
         }
       }
     },
+    "CAM_RECORD_VIDEO_1080p_30_SHORT" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1080p at 30 fps"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1080p a 30 fps"
+          }
+        }
+      }
+    },
     "CAM_RECORD_VIDEO_1080p_60" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -898,6 +1187,465 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bloquear balance de blancos"
+          }
+        }
+      }
+    },
+    "CAMERA_BUTTON_%@_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Click Camera Control to open a camera app, then click again to use Camera Control as a shutter. Light-press to make adjustments. Learn more."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pulsa el control de la cámara una vez para abrir una app de cámara y de nuevo para usarlo como obturador. Para realizar ajustes, púlsalo suavemente. Más información."
+          }
+        }
+      }
+    },
+    "CAMERA_BUTTON_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Camera Control"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Control de la cámara"
+          }
+        }
+      }
+    },
+    "CAMERA_SETTINGS_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Camera"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cámara"
+          }
+        }
+      }
+    },
+    "COMPOSITION_GROUP_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Composition"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Composición"
+          }
+        }
+      }
+    },
+    "FOCAL_LENGTH_GROUP_%@_AND_%@_AND_%@_MM" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ & %@ & %@ mm"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@, %@ y %@ mm"
+          }
+        }
+      }
+    },
+    "FOCAL_LENGTH_ROW_%@_MM_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tap the 1× zoom button to toggle between %@ mm and additional lenses."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toca el botón de zoom x1 para cambiar entre %@ mm y otros objetivos."
+          }
+        }
+      }
+    },
+    "FOCAL_LENGTH_ROW_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Main Camera"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cámara principal"
+          }
+        }
+      }
+    },
+    "FOCAL_LENGTH_ROW_TITLE_CAMERA_BUTTON" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fusion Camera"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cámara Fusion"
+          }
+        }
+      }
+    },
+    "Grid" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grid"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cuadrícula"
+          }
+        }
+      }
+    },
+    "HORIZON_LEVEL" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Level"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nivel"
+          }
+        }
+      }
+    },
+    "IDC_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Correct lens distortion on the front and Ultra Wide cameras."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Corrige la distorsión del objetivo en las cámaras frontal y trasera con ultra gran angular."
+          }
+        }
+      }
+    },
+    "IDC_SWITCH" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lens Correction"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Corrección del objetivo"
+          }
+        }
+      }
+    },
+    "MIRROR_FRONT_CAPTURES" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mirror Front Camera"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conservar efecto espejo"
+          }
+        }
+      }
+    },
+    "OVER_CAPTURE_VIEW_OUTSIDE_THE_FRAME_SWITCH" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "View Outside the Frame"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ver el área fuera del marco"
+          }
+        }
+      }
+    },
+    "PHOTO_MODE_DEPTH_GROUP_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automatically capture depth information if a person, dog, or cat is prominent in the frame in Photo mode, so you can apply Portrait effects later."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si en el encuadre de la cámara con el modo Foto hay una persona, un perro o un gato en primer plano, se capturará automáticamente la información de profundidad para que puedas convertir la foto en un retrato posteriormente."
+          }
+        }
+      }
+    },
+    "PHOTO_MODE_DEPTH_SWITCH" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Portraits in Photo Mode"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Retratos en el modo Foto"
+          }
+        }
+      }
+    },
+    "QR_CODES" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scan QR Codes"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escanear códigos QR"
+          }
+        }
+      }
+    },
+    "SEM_DEV_GROUP_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automatically improve photos of various scenes using intelligent image recognition."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mejora automáticamente las fotos de varias escenas con el reconocimiento inteligente de imágenes."
+          }
+        }
+      }
+    },
+    "SEM_DEV_SWITCH" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scene Detection"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Detección de escenas"
+          }
+        }
+      }
+    },
+    "SEMANTIC_STYLES_LABEL_STANDARD" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Standard"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Estándar"
+          }
+        }
+      }
+    },
+    "SEMANTIC_STYLES_ROW_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personalize the look of your photos by bringing your preferences into the capture. Photographic Styles use advanced scene understanding to apply the right amount of adjustments to different parts of the photo."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personaliza el aspecto de tus fotos de acuerdo con tus preferencias. Los estilos fotográficos utilizan el análisis avanzado de escenas para aplicar la cantidad adecuada de ajustes a las distintas partes de la foto."
+          }
+        }
+      }
+    },
+    "SEMANTIC_STYLES_ROW_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Photographic Styles"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Estilos fotográficos"
+          }
+        }
+      }
+    },
+    "SYSTEM_SETTINGS_HEADER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SYSTEM SETTINGS"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AJUSTES DEL SISTEMA"
+          }
+        }
+      }
+    },
+    "SYSTEM_STYLES_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Photographic Styles uses advanced scene understanding to adjust specific colors in different parts of the photo. Personalize how skin tones appear with incredible nuance to get the exact look you want."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gracias al análisis avanzado de escenas, los estilos fotográficos ajustan determinados colores de distintas partes de la foto y te permiten mostrar los tonos de piel con una gran variedad de matices para obtener el aspecto que buscas."
+          }
+        }
+      }
+    },
+    "SYSTEM_STYLES_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Photographic Styles"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Estilos fotográficos"
+          }
+        }
+      }
+    },
+    "TEXT_ANALYSIS" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Show Detected Text"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostrar texto detectado"
+          }
+        }
+      }
+    },
+    "VOLUME_UP_BURST" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Use Volume Up for Burst"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Botón de subir volumen para ráfaga"
           }
         }
       }

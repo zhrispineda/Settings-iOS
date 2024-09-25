@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CameraView: View {
     // Variables
+    @AppStorage("CameraControlApp") private var selectedApp = "Camera"
     @State private var showingPhotographicStylesView = false
     @State private var useVolumeUpBurstEnabled = false
     @State private var scanQrCodesEnabled = true
@@ -25,15 +26,17 @@ struct CameraView: View {
     @State private var lensCorrectionEnabled = true
     @State private var macroControlEnabled = true
     
+    let table = "CameraSettings"
+    
     var body: some View {
-        CustomList(title: "Camera", topPadding: true) {
+        CustomList(title: "CAMERA_SETTINGS_TITLE".localize(table: table), topPadding: true) {
             if !UIDevice.isSimulator && UIDevice.AdvancedPhotographicStylesCapability {
                 Section {
-                    CustomNavigationLink(title: "Camera Control", status: "Camera", destination: CameraControlView())
+                    CustomNavigationLink(title: "CAMERA_BUTTON_TITLE".localize(table: table), status: selectedApp, destination: CameraControlView())
                 } header: {
-                    Text("System Settings")
+                    Text("SYSTEM_SETTINGS_HEADER".localize(table: table))
                 } footer: {
-                    Text("Click Camera Control to open a camera app, then click again to use Camera Control as a shutter. Light-press to make adjustments. [Learn more.](#)")
+                    Text(.init("CAMERA_BUTTON_%@_FOOTER".localize(table: table).replacingOccurrences(of: "Learn more.", with: "[Learn more.](#)")))
                 }
             }
             
@@ -42,7 +45,7 @@ struct CameraView: View {
                     Button {
                         showingPhotographicStylesView.toggle()
                     } label: {
-                        CustomNavigationLink(title: "Photographic Styles", status: "Standard", destination: EmptyView())
+                        CustomNavigationLink(title: "SYSTEM_STYLES_TITLE".localize(table: table), status: "SEMANTIC_STYLES_LABEL_STANDARD".localize(table: table), destination: EmptyView())
                     }
                     .foregroundStyle(Color["Label"])
                     .fullScreenCover(isPresented: $showingPhotographicStylesView) {
@@ -52,105 +55,105 @@ struct CameraView: View {
                     }
                 } header: {
                     if !UIDevice.isSimulator {
-                        Text("App Settings")
+                        Text("APP_SETTINGS_HEADER".localize(table: table))
                     }
                 } footer: {
-                    Text("Photographic Styles uses advanced scene understanding to adjust specific colors in different parts of the photo. Personalize how skin tones appear with incredible nuance to get the exact look you want.")
+                    Text("SYSTEM_STYLES_FOOTER".localize(table: table))
                 }
             }
             
             Section {
-                CustomNavigationLink(title: "Record Video", status: "1080p at 30 fps", destination: RecordVideoView())
-                CustomNavigationLink(title: "Record Slo-mo", status: "1080p at 120 fps", destination: EmptyView())
+                CustomNavigationLink(title: "CAM_RECORD_VIDEO_TITLE".localize(table: table), status: "CAM_RECORD_VIDEO_1080p_30_SHORT".localize(table: table), destination: RecordVideoView())
+                CustomNavigationLink(title: "CAM_RECORD_SLOMO_TITLE".localize(table: table), status: "CAM_RECORD_SLOMO_1080p_120_SHORT".localize(table: table), destination: EmptyView())
                 if UIDevice.CinematicModeCapability {
-                    CustomNavigationLink(title: "Record Cinematic", status: "1080p at 30 fps", destination: EmptyView())
+                    CustomNavigationLink(title: "CAM_RECORD_CINEMATIC_TITLE".localize(table: table), status: "CAM_RECORD_VIDEO_1080p_30_SHORT".localize(table: table), destination: EmptyView())
                 }
                 if UIDevice.iPhone {
-                    CustomNavigationLink(title: "Record Sound", status: UIDevice.AdvancedPhotographicStylesCapability ? "Spatial Audio" : "Stereo", destination: EmptyView())
+                    CustomNavigationLink(title: "CAM_AUDIO_CONFIGURATION_TITLE".localize(table: table), status: UIDevice.AdvancedPhotographicStylesCapability ? "CAM_AUDIO_CONFIGURATION_CINEMATIC".localize(table: table) : "CAM_AUDIO_CONFIGURATION_STEREO".localize(table: table), destination: EmptyView())
                 }
-                NavigationLink("Formats") {}
-                NavigationLink("Preserve Settings") {}
+                NavigationLink("CAM_FORMATS_TITLE".localize(table: table)) {}
+                NavigationLink("CAM_PRESERVE_SETTINGS_TITLE".localize(table: table)) {}
                 if UIDevice.iPhone {
-                    Toggle("Use Volume Up for Burst", isOn: $useVolumeUpBurstEnabled)
+                    Toggle("VOLUME_UP_BURST".localize(table: table), isOn: $useVolumeUpBurstEnabled)
                 }
-                Toggle("Scan QR Codes", isOn: $scanQrCodesEnabled)
-                Toggle("Show Detected Text", isOn: $showDetectedTextEnabled)
+                Toggle("QR_CODES".localize(table: table), isOn: $scanQrCodesEnabled)
+                Toggle("TEXT_ANALYSIS".localize(table: table), isOn: $showDetectedTextEnabled)
             }
             
             Section {
-                Toggle("Grid", isOn: $gridEnabled)
-                Toggle("Level", isOn: $levelEnabled)
-                Toggle("Mirror Front Camera", isOn: $mirrorFrontCameraEnabled)
-                if UIDevice.PearlIDCapability || UIDevice.iPhone {
-                    Toggle("View Outside the Frame", isOn: $viewOutsideFrameEnabled)
+                Toggle("Grid".localize(table: table), isOn: $gridEnabled)
+                Toggle("HORIZON_LEVEL".localize(table: table), isOn: $levelEnabled)
+                Toggle("MIRROR_FRONT_CAPTURES".localize(table: table), isOn: $mirrorFrontCameraEnabled)
+                if UIDevice.ViewOutsideFrameCapability && UIDevice.iPhone {
+                    Toggle("OVER_CAPTURE_VIEW_OUTSIDE_THE_FRAME_SWITCH".localize(table: table), isOn: $viewOutsideFrameEnabled)
                 }
             } header: {
-                Text("Composition")
+                Text("COMPOSITION_GROUP_TITLE".localize(table: table))
             }
             
             if UIDevice.PhotographicStylesCapability {
                 Section {
-                    Button("Photographic Styles") {}
+                    Button("SEMANTIC_STYLES_ROW_TITLE".localize(table: table)) {}
                 } header: {
-                    Text("Photo Capture")
+                    Text("CAM_PHOTO_CAPTURE_GROUP_TITLE".localize(table: table))
                 } footer: {
-                    Text("Personalize the look of your photos by bringing your preferences into the capture. Photographic Styles use advanced scene understanding to apply the right amount of adjustments to different parts of the photo.")
+                    Text("SEMANTIC_STYLES_ROW_FOOTER".localize(table: table))
                 }
-            } else if UIDevice.iPad {
+            } else if UIDevice.iPad || UIDevice.SceneDetectionCapability {
                 Section {
-                    Toggle("Scene Detection", isOn: $sceneDetectionEnabled)
+                    Toggle("SEM_DEV_SWITCH".localize(table: table), isOn: $sceneDetectionEnabled)
                 } header: {
-                    Text("Photo Capture")
+                    Text("CAM_PHOTO_CAPTURE_HEADER".localize(table: table))
                 } footer: {
-                    Text("Automatically improve photos of various scenes using intelligent image recognition.")
+                    Text("SEM_DEV_GROUP_FOOTER".localize(table: table))
                 }
             }
             
             if UIDevice.ProDevice && UIDevice.iPhone {
                 Section {
-                    CustomNavigationLink(title: "Main Camera", status: "24 & 28 & 35 mm", destination: EmptyView())
+                    CustomNavigationLink(title: UIDevice.AdvancedPhotographicStylesCapability ? "FOCAL_LENGTH_ROW_TITLE_CAMERA_BUTTON".localize(table: table) : "FOCAL_LENGTH_ROW_TITLE".localize(table: table), status: "FOCAL_LENGTH_GROUP_%@_AND_%@_AND_%@_MM".localize(table: table, "24", "28", "35"), destination: EmptyView())
                 } header: {
                     if UIDevice.AdvancedPhotographicStylesCapability {
-                        Text("Photo Capture")
+                        Text("CAM_PHOTO_CAPTURE_HEADER".localize(table: table))
                     }
                 } footer: {
-                    Text("Tap the 1× zoom button to toggle between 24 mm and additional lenses.")
+                    Text("FOCAL_LENGTH_ROW_%@_MM_FOOTER".localize(table: table, "24"))
                 }
             }
             
             if UIDevice.AlwaysCaptureDepthCapability {
                 Section {
-                    Toggle("Portraits in Photo Mode", isOn: $portraitsPhotoModeEnabled)
+                    Toggle("PHOTO_MODE_DEPTH_SWITCH".localize(table: table), isOn: $portraitsPhotoModeEnabled)
                 } footer: {
-                    Text("Automatically capture depth information if a person, dog, or cat is prominent in the frame in Photo mode, so you can apply Portrait effects later.")
+                    Text("PHOTO_MODE_DEPTH_GROUP_FOOTER".localize(table: table))
                 }
             }
             
             if UIDevice.iPhone {
                 Section {
-                    Toggle("Prioritize Faster Shooting", isOn: $prioritizeFasterShootingEnabled)
+                    Toggle("CAM_CAPTURE_DYNAMIC_SHUTTER_SWITCH".localize(table: table), isOn: $prioritizeFasterShootingEnabled)
                 } footer: {
-                    Text("Intelligently adapt image quality when rapidly pressing the shutter.")
+                    Text("CAM_CAPTURE_GROUP_FOOTER".localize(table: table))
                 }
             }
             
             if UIDevice.LensCorrectionCapability {
                 Section {
-                    Toggle("Lens Correction", isOn: $lensCorrectionEnabled)
+                    Toggle("IDC_SWITCH".localize(table: table), isOn: $lensCorrectionEnabled)
                 } footer: {
-                    Text("Correct lens distortion on the front and Ultra Wide camera.")
+                    Text("IDC_FOOTER".localize(table: table))
                 }
             }
             
             if UIDevice.MacroLensCapability {
                 Section {
-                    Toggle("Macro Control", isOn: $macroControlEnabled)
+                    Toggle("AUTO_MACRO_SWITCH".localize(table: table), isOn: $macroControlEnabled)
                 } footer: {
-                    Text("Show Camera control for automatically switching to the Ultra Wide camera to capture macro photos and videos.")
+                    Text("AUTO_MACRO_GROUP_FOOTER".localize(table: table))
                 }
                 
                 Section {} footer: {
-                    Text("[About Camera and ARKit & Privacy...](#)")
+                    Text(.init("[" + "BUTTON_TITLE".localize(table: table) + "](#)")) // com.apple.onboarding.camera
                 }
             }
         }
