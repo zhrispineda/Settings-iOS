@@ -1,0 +1,91 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "SMART_STYLES_SETTINGS_INTRO_DESCRIPTION" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Photographic Styles lets you personalize how you appear in photos with incredible nuance to get the look you want."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Los estilos fotográficos te permiten personalizar el aspecto de tus fotos con una gran variedad de matices para obtener justo el resultado que buscas."
+          }
+        }
+      }
+    },
+    "SMART_STYLES_SETTINGS_INTRO_INSTRUCTION_NOT_ENOUGH_PHOTOS" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Select four photos captured with this iPhone. If you have not taken any photos, open Camera to begin."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selecciona cuatro fotos que hayas hecho con este iPhone. Si no has hecho ninguna, abre la cámara para empezar a hacerlas."
+          }
+        }
+      }
+    },
+    "SMART_STYLES_SETTINGS_LAUNCH_CAMERA" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open Camera"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abrir la cámara"
+          }
+        }
+      }
+    },
+    "SMART_STYLES_SETTINGS_NOT_ENOUGH_PHOTOS_DISMISS" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        }
+      }
+    },
+    "SMART_STYLES_SETTINGS_TITLE_INTRO" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Photographic Styles"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Estilos fotográficos"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

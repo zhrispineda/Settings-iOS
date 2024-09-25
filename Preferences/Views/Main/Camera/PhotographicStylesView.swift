@@ -10,25 +10,26 @@ import SwiftUI
 struct PhotographicStylesView: View {
     // Variables
     @Environment(\.dismiss) private var dismiss
+    let table = "CameraUI-SmartStyles"
     
     var body: some View {
         VStack(spacing: 10) {
             Image("onboarding_asset")
-            Text("Photographic Styles")
+            Text("SMART_STYLES_SETTINGS_TITLE_INTRO".localize(table: table))
                 .font(.largeTitle)
                 .fontWeight(.bold)
             Spacer()
-            Text("Select four photos captured with this iPhone. If you have not taken any photos, open Camera to begin.")
+            Text("SMART_STYLES_SETTINGS_INTRO_INSTRUCTION_NOT_ENOUGH_PHOTOS".localize(table: table))
                 .multilineTextAlignment(.center)
                 .foregroundStyle(.secondary)
                 .frame(height: 130)
             Spacer()
-            Text("Photographic Styles lets you personalize how you appear in photos with incredible nuance to get the look you want.")
+            Text("SMART_STYLES_SETTINGS_INTRO_DESCRIPTION".localize(table: table))
                 .multilineTextAlignment(.center)
                 .foregroundStyle(.secondary)
                 .frame(height: 130)
             Spacer()
-            Button("OK") {
+            Button("SMART_STYLES_SETTINGS_NOT_ENOUGH_PHOTOS_DISMISS".localize(table: table)) {
                 dismiss()
             }
             .fontWeight(.semibold)
@@ -37,7 +38,7 @@ struct PhotographicStylesView: View {
             .background(Color.blue)
             .foregroundStyle(Color.white)
             .cornerRadius(15)
-            Button("Open Camera") {
+            Button("SMART_STYLES_SETTINGS_LAUNCH_CAMERA".localize(table: table)) {
                 dismiss()
             }
             .padding(.top, 10)
