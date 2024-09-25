@@ -443,19 +443,189 @@
         }
       }
     },
+    "CAM_RECORD_SLOMO_4k_120_FOOTER_HDR" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 800 MB with 4K at 120 fps"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 800 MB a 4K y 120 fps"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_SLOMO_1080p_120" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1080p HD at 120 fps"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1080p HD a 120 fps"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_SLOMO_1080p_120_HEVC_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 170 MB with 1080p HD at 120 fps"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 170 MB a 1080p HD y 120 fps"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_SLOMO_1080p_120_HEVC_FOOTER_DEFAULT" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 170 MB with 1080p HD at 120 fps (default)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 170 MB a 1080p HD y 120 fps (por omisión)"
+          }
+        }
+      }
+    },
     "CAM_RECORD_SLOMO_1080p_120_SHORT" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "1080p a 120 fps"
+            "value" : "1080p at 120 fps"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1080p a 120 fps"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_SLOMO_1080p_240" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1080p HD at 240 fps"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1080p HD a 240 fps"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_SLOMO_1080p_240_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 480 MB with 1080p HD at 240 fps"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 480 MB a 1080p HD y 240 fps"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_SLOMO_1080p_240_FOOTER_DEFAULT" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 480 MB with 1080p HD at 240 fps (default)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "• 480 MB a 1080p HD y 240 fps (por omisión)"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_SLOMO_1080p_240_SHORT" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1080p at 240 fps"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1080p a 240 fps"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_SLOMO_FOOTER_FFC_120_ONLY" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The front camera will always record slo-mo at 120 fps."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La cámara frontal siempre grabará en cámara lenta a 120 fps."
+          }
+        }
+      }
+    },
+    "CAM_RECORD_SLOMO_FOOTER_HEAD" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A minute of slo-mo will be approximately:"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un minuto de vídeo a cámara lenta será aproximadamente:"
           }
         }
       }
@@ -528,6 +698,23 @@
         }
       }
     },
+    "CAM_RECORD_VIDEO_4K_24_SHORT" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4K at 24 fps"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4K a 24 fps"
+          }
+        }
+      }
+    },
     "CAM_RECORD_VIDEO_4K_25" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -575,6 +762,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "• 170 MB a 4K y 25 fps (TV PAL)"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_VIDEO_4K_25_SHORT" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4K at 25 fps"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4K a 25 fps"
           }
         }
       }
@@ -630,6 +834,23 @@
         }
       }
     },
+    "CAM_RECORD_VIDEO_4K_30_SHORT" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4K at 30 fps"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4K a 30 fps"
+          }
+        }
+      }
+    },
     "CAM_RECORD_VIDEO_4K_60" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -677,6 +898,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "• 400 MB a 4K y 60 fps (mayor resolución y fluidez)"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_VIDEO_4K_60_SHORT" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4K at 60 fps"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4K a 60 fps"
           }
         }
       }
@@ -732,6 +970,23 @@
         }
       }
     },
+    "CAM_RECORD_VIDEO_4K_100_SHORT" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4K at 100 fps"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4K a 100 fps"
+          }
+        }
+      }
+    },
     "CAM_RECORD_VIDEO_4K_120" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -779,6 +1034,40 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "• 740 MB a 4K y 120 fps (mayor resolución)"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_VIDEO_4K_120_SHORT" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4K at 120 fps"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4K a 120 fps"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_VIDEO_4K_SHORT" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4K at 30 fps"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4K a 30 fps"
           }
         }
       }
@@ -834,6 +1123,23 @@
         }
       }
     },
+    "CAM_RECORD_VIDEO_720p_30_SHORT" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "720p at 30 fps"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "720p a 30 fps"
+          }
+        }
+      }
+    },
     "CAM_RECORD_VIDEO_1080p_25" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -881,6 +1187,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "• 60 MB a 1080p HD y 25 fps (TV PAL)"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_VIDEO_1080p_25_SHORT" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1080p at 25 fps"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1080p a 25 fps"
           }
         }
       }
@@ -1004,6 +1327,23 @@
         }
       }
     },
+    "CAM_RECORD_VIDEO_1080p_60_SHORT" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1080p at 60 fps"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1080p a 60 fps"
+          }
+        }
+      }
+    },
     "CAM_RECORD_VIDEO_1080P_120" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -1051,6 +1391,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "• 170 MB a 1080p HD y 120 fps"
+          }
+        }
+      }
+    },
+    "CAM_RECORD_VIDEO_1080P_120_SHORT" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1080p at 120 fps"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1080p at 120 fps"
           }
         }
       }

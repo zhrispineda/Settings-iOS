@@ -10,6 +10,8 @@ import SwiftUI
 struct CameraView: View {
     // Variables
     @AppStorage("CameraControlApp") private var selectedApp = "Camera"
+    @AppStorage("CameraVideoSetting") private var selectedVideoSetting = "CAM_RECORD_VIDEO_1080p_30"
+    @AppStorage("CameraSlomoSetting") private var selectedSlomoSetting = String()
     @State private var showingPhotographicStylesView = false
     @State private var useVolumeUpBurstEnabled = false
     @State private var scanQrCodesEnabled = true
@@ -28,11 +30,19 @@ struct CameraView: View {
     
     let table = "CameraSettings"
     
+    init() {
+        if selectedSlomoSetting.isEmpty && !UIDevice.AdvancedPhotographicStylesCapability && !UIDevice.ProDevice {
+            selectedSlomoSetting = "CAM_RECORD_SLOMO_1080p_240"
+        } else if selectedSlomoSetting.isEmpty && UIDevice.AdvancedPhotographicStylesCapability && UIDevice.ProDevice {
+            selectedSlomoSetting = "CAM_RECORD_SLOMO_1080p_120"
+        }
+    }
+    
     var body: some View {
         CustomList(title: "CAMERA_SETTINGS_TITLE".localize(table: table), topPadding: true) {
             if !UIDevice.isSimulator && UIDevice.AdvancedPhotographicStylesCapability {
                 Section {
-                    CustomNavigationLink(title: "CAMERA_BUTTON_TITLE".localize(table: table), status: selectedApp, destination: CameraControlView())
+                    CustomNavigationLink(title: "CAMERA_BUTTON_TITLE".localize(table: table), status: selectedApp.localize(table: table + "-CameraButton"), destination: CameraControlView())
                 } header: {
                     Text("SYSTEM_SETTINGS_HEADER".localize(table: table))
                 } footer: {
@@ -63,8 +73,8 @@ struct CameraView: View {
             }
             
             Section {
-                CustomNavigationLink(title: "CAM_RECORD_VIDEO_TITLE".localize(table: table), status: "CAM_RECORD_VIDEO_1080p_30_SHORT".localize(table: table), destination: RecordVideoView())
-                CustomNavigationLink(title: "CAM_RECORD_SLOMO_TITLE".localize(table: table), status: "CAM_RECORD_SLOMO_1080p_120_SHORT".localize(table: table), destination: EmptyView())
+                CustomNavigationLink(title: "CAM_RECORD_VIDEO_TITLE".localize(table: table), status: "\(selectedVideoSetting)_SHORT".localize(table: table), destination: RecordVideoView())
+                CustomNavigationLink(title: "CAM_RECORD_SLOMO_TITLE".localize(table: table), status: "\(selectedSlomoSetting)_SHORT".localize(table: table), destination: RecordSlomoView())
                 if UIDevice.CinematicModeCapability {
                     CustomNavigationLink(title: "CAM_RECORD_CINEMATIC_TITLE".localize(table: table), status: "CAM_RECORD_VIDEO_1080p_30_SHORT".localize(table: table), destination: EmptyView())
                 }
