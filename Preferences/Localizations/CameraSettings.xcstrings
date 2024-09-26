@@ -120,6 +120,40 @@
         }
       }
     },
+    "CAM_AUDIO_CONFIGURATION_CINEMATIC_FOOTER_iPhone" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spatial Audio records in a 3D audio format and will make intelligent, automatic decisions about how to mix the audio when Cinematic mode is used, or an Audio Mix is selected in Photos."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El audio espacial se graba en formato 3D y se mezcla de forma inteligente y automática al usar el modo Cine o al seleccionar una mezcla de audio en la app Fotos."
+          }
+        }
+      }
+    },
+    "CAM_AUDIO_CONFIGURATION_MONO" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mono"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mono"
+          }
+        }
+      }
+    },
     "CAM_AUDIO_CONFIGURATION_STEREO" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -150,6 +184,40 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Grabar sonido"
+          }
+        }
+      }
+    },
+    "CAM_AUDIO_WIND_REMOVAL_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wind noise is automatically reduced in recorded video."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El ruido del viento se atenuará automáticamente en la grabación de vídeo."
+          }
+        }
+      }
+    },
+    "CAM_AUDIO_WIND_REMOVAL_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wind Noise Reduction"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reducción de ruido del viento"
           }
         }
       }
@@ -1561,6 +1629,40 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bloquear balance de blancos"
+          }
+        }
+      }
+    },
+    "CAM_VIDEO_RECORDING_MIX_AUDIO_WITH_OTHERS_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Audio playback will not pause automatically when recording video. When playing audio using the iPhone speaker, audio will be recorded in mono."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La reproducción de audio no se pausará automáticamente al grabar vídeo. Si el audio se reproduce a través del altavoz del iPhone, se grabará en formato mono."
+          }
+        }
+      }
+    },
+    "CAM_VIDEO_RECORDING_MIX_AUDIO_WITH_OTHERS_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Allow Audio Playback"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Permitir reproducción de audio"
           }
         }
       }

@@ -37,7 +37,7 @@ struct RecordSlomoView: View {
                 .labelsHidden()
             } footer: {
                 VStack(alignment: .leading) {
-                    if !UIDevice.HomeButtonCapability {
+                    if !UIDevice.HomeButtonCapability && !UIDevice.iPad {
                         Text("CAM_RECORD_SLOMO_FOOTER_FFC_120_ONLY".localize(table: table) + "\n")
                     }
                     Text("CAM_RECORD_SLOMO_FOOTER_HEAD".localize(table: table))

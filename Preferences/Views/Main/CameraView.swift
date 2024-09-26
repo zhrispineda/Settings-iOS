@@ -13,6 +13,7 @@ struct CameraView: View {
     @AppStorage("CameraVideoSetting") private var selectedVideoSetting = "CAM_RECORD_VIDEO_1080p_30"
     @AppStorage("CameraSlomoSetting") private var selectedSlomoSetting = String()
     @AppStorage("CameraCinematicSetting") private var selectedCinematicSetting = "CAM_RECORD_VIDEO_1080p_30"
+    @AppStorage("CameraSoundSetting") private var selectedSoundSetting = String()
     @State private var showingPhotographicStylesView = false
     @State private var useVolumeUpBurstEnabled = false
     @State private var scanQrCodesEnabled = true
@@ -36,6 +37,12 @@ struct CameraView: View {
             selectedSlomoSetting = "CAM_RECORD_SLOMO_1080p_240"
         } else if selectedSlomoSetting.isEmpty && UIDevice.AdvancedPhotographicStylesCapability && UIDevice.ProDevice {
             selectedSlomoSetting = "CAM_RECORD_SLOMO_1080p_120"
+        }
+        
+        if selectedSoundSetting.isEmpty && UIDevice.AdvancedPhotographicStylesCapability {
+            selectedSoundSetting = "CAM_AUDIO_CONFIGURATION_CINEMATIC"
+        } else if selectedSoundSetting.isEmpty {
+            selectedSoundSetting = "CAM_AUDIO_CONFIGURATION_STEREO"
         }
     }
     
@@ -79,9 +86,7 @@ struct CameraView: View {
                 if UIDevice.HigherResolutionCinematicModeCapability {
                     CustomNavigationLink(title: "CAM_RECORD_CINEMATIC_TITLE".localize(table: table), status: "\(selectedCinematicSetting)_SHORT".localize(table: table), destination: RecordCinematicView())
                 }
-                if UIDevice.iPhone {
-                    CustomNavigationLink(title: "CAM_AUDIO_CONFIGURATION_TITLE".localize(table: table), status: UIDevice.AdvancedPhotographicStylesCapability ? "CAM_AUDIO_CONFIGURATION_CINEMATIC".localize(table: table) : "CAM_AUDIO_CONFIGURATION_STEREO".localize(table: table), destination: EmptyView())
-                }
+                CustomNavigationLink(title: "CAM_AUDIO_CONFIGURATION_TITLE".localize(table: table), status: selectedSoundSetting.localize(table: table), destination: RecordSoundView())
                 NavigationLink("CAM_FORMATS_TITLE".localize(table: table)) {}
                 NavigationLink("CAM_PRESERVE_SETTINGS_TITLE".localize(table: table)) {}
                 if UIDevice.iPhone {

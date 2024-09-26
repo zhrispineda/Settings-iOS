@@ -209,6 +209,7 @@
 		83D31F9A2B8E6B360057CFDB /* HotCornersDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D31F992B8E6B360057CFDB /* HotCornersDetailView.swift */; };
 		83D3FB232C8102B200268E54 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D3FB222C8102B200268E54 /* ContactsView.swift */; };
 		83D4CB762B7FF0B000D6087D /* WebContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D4CB752B7FF0B000D6087D /* WebContentView.swift */; };
+		83D5957B2CA5BF19003EF0CD /* RecordSoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D5957A2CA5BF19003EF0CD /* RecordSoundView.swift */; };
 		83D7B4512C925B0400C2B81E /* PhotographicStylesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D7B4502C925B0400C2B81E /* PhotographicStylesView.swift */; };
 		83DF95742B841F0900AEEB63 /* DownloadedLanguagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DF95732B841F0900AEEB63 /* DownloadedLanguagesView.swift */; };
 		83DF95762B84266E00AEEB63 /* SiriDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DF95752B84266E00AEEB63 /* SiriDetailView.swift */; };
@@ -459,6 +460,7 @@
 		83D31F992B8E6B360057CFDB /* HotCornersDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotCornersDetailView.swift; sourceTree = "<group>"; };
 		83D3FB222C8102B200268E54 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
 		83D4CB752B7FF0B000D6087D /* WebContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebContentView.swift; sourceTree = "<group>"; };
+		83D5957A2CA5BF19003EF0CD /* RecordSoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSoundView.swift; sourceTree = "<group>"; };
 		83D7B4502C925B0400C2B81E /* PhotographicStylesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotographicStylesView.swift; sourceTree = "<group>"; };
 		83DF95732B841F0900AEEB63 /* DownloadedLanguagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadedLanguagesView.swift; sourceTree = "<group>"; };
 		83DF95752B84266E00AEEB63 /* SiriDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriDetailView.swift; sourceTree = "<group>"; };
@@ -1172,6 +1174,7 @@
 				83E2ADA62CA1D80A00DFED0C /* RecordVideoView.swift */,
 				831C80402CA4998500306574 /* RecordSlomoView.swift */,
 				833F20AD2CA4C93C00115E8F /* RecordCinematicView.swift */,
+				83D5957A2CA5BF19003EF0CD /* RecordSoundView.swift */,
 			);
 			path = Camera;
 			sourceTree = "<group>";
@@ -1606,6 +1609,7 @@
 				8349E22C2C7514F6007416C5 /* ApplePencilView.swift in Sources */,
 				837F1DCD2B8AF0D400665EAB /* ExtensionsView.swift in Sources */,
 				833C6EAE2C20C88000A8D91C /* HomeScreenAppLibraryView.swift in Sources */,
+				83D5957B2CA5BF19003EF0CD /* RecordSoundView.swift in Sources */,
 				83CCB7282C7FAD96003F51ED /* DateTimeView.swift in Sources */,
 				83D31F802B8D74A10057CFDB /* HighlightContentView.swift in Sources */,
 				83F516BC2C21E8F50004E87A /* WallpaperView.swift in Sources */,
