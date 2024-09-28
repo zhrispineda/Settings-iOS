@@ -33,7 +33,7 @@ struct CameraView: View {
     let table = "CameraSettings"
     
     init() {
-        if selectedSlomoSetting.isEmpty && !UIDevice.AdvancedPhotographicStylesCapability && !UIDevice.ProDevice || UIDevice.iPad {
+        if selectedSlomoSetting.isEmpty && !UIDevice.ProDevice || UIDevice.iPad {
             selectedSlomoSetting = "CAM_RECORD_SLOMO_1080p_240"
         } else if selectedSlomoSetting.isEmpty && UIDevice.AdvancedPhotographicStylesCapability && UIDevice.ProDevice {
             selectedSlomoSetting = "CAM_RECORD_SLOMO_1080p_120"

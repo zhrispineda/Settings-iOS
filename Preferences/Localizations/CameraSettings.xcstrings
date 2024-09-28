@@ -1,6 +1,23 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "48MP_CONTROL_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Show Camera control for capturing maximum resolution, up to 48 MP.\n\n48 MP can be captured on the Main camera at 1×. Night mode and flash photos will always be saved at 12 MP. Live Photos can be saved at 12 or 24 MP."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Muestra el control de la cámara para la captura de fotos en máxima resolución (hasta 48 Mpx).\n\nSe pueden tomar fotos con una resolución de 48 Mpx usando la cámara principal con la distancia focal por omisión (x1). Las fotos realizadas en el modo Noche y con flash siempre se guardarán en 12 Mpx. Las fotos con el ajuste Live Photo se pueden guardar en 12 o en 24 Mpx."
+          }
+        }
+      }
+    },
     "APP_SETTINGS_HEADER" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -609,6 +626,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "24 Mpx"
+          }
+        }
+      }
+    },
+    "CAM_PRESERVE_48MP_CONTROL_SWITCH" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resolution Control"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Control de la resolución"
           }
         }
       }

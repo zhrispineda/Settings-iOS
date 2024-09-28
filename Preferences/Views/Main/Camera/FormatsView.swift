@@ -11,6 +11,7 @@ struct FormatsView: View {
     // Variables
     @AppStorage("CameraFormatSetting") private var cameraFormat = "CAM_FORMATS_CAPTURE_HIGH_EFFICIENCY"
     @State private var proRawResolutionControl = false
+    @State private var resolutionControl = false
     @State private var proRawEnabled = false
     @State private var proResCapture = false
     let options = ["CAM_FORMATS_CAPTURE_HIGH_EFFICIENCY", "CAM_FORMATS_CAPTURE_MOST_COMPATIBLE"]
@@ -33,7 +34,7 @@ struct FormatsView: View {
             }
             
             if UIDevice.iPhone {
-                if UIDevice.RingerButtonCapability && UIDevice.ProDevice {
+                if UIDevice.RingerButtonCapability && UIDevice.ProDevice || UIDevice.fullModel.contains("iPhone 16") {
                     Section {
                         CustomNavigationLink(title: "ENHANCED_RESOLUTION_TITLE".localize(table: table), status: "CAM_PHOTO_RESOLUTION_24MP".localize(table: table), destination: EmptyView())
                     } header: {
@@ -47,10 +48,12 @@ struct FormatsView: View {
                     }
                 }
                 
-                if UIDevice.RearFacingCameraHDRCapability && UIDevice.ProDevice || UIDevice.fullModel.contains("iPhone17,") {
+                if UIDevice.RearFacingCameraHDRCapability {
                     Section {
                         if UIDevice.AlwaysOnDisplayCapability {
                             Toggle("CAM_PRESERVE_PRO_RAW_48MP_SWITCH".localize(table: table), isOn: $proRawResolutionControl)
+                        } else if UIDevice.AlwaysCaptureDepthCapability {
+                            Toggle("CAM_PRESERVE_48MP_CONTROL_SWITCH".localize(table: table), isOn: $resolutionControl)
                         } else {
                             Toggle("CAM_LINEAR_DNG_TITLE".localize(table: table), isOn: $proRawEnabled)
                         }
@@ -58,7 +61,7 @@ struct FormatsView: View {
                             CustomNavigationLink(title: "CAM_SECONDARY_PHOTO_FORMAT_TITLE".localize(table: table), status: "CAM_SECONDARY_PHOTO_FORMAT_RAW48_SHORT".localize(table: table), destination: EmptyView())
                         }
                     } footer: {
-                        Text("CAM_PRO_RAW_48MP_FOOTER".localize(table: table))
+                        Text("\(UIDevice.AlwaysCaptureDepthCapability ? "48MP_CONTROL_FOOTER" : "CAM_PRO_RAW_48MP_FOOTER")".localize(table: table))
                         
                     }
                 }
