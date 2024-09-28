@@ -341,6 +341,91 @@
         }
       }
     },
+    "CAM_FORMATS_CAPTURE_FOOTER_4k60_1080P240_HDR_VIDEO" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "To reduce file size, capture photos and videos in the High Efficiency HEIF/HEVC format. Most Compatible will always use JPEG/H.264. 4K at 60 fps, 1080p at 240 fps, and HDR video require High Efficiency."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Para reducir el tamaño de los archivos, usa el formato HEIF/HEVC de alta eficiencia para hacer fotos y vídeos. La opción “El más compatible” usa siempre los formatos JPEG/H.264. Los vídeos HDR, 4K a 60 fps y 1080p a 240 fps requieren el formato de alta eficiencia."
+          }
+        }
+      }
+    },
+    "CAM_FORMATS_CAPTURE_HIGH_EFFICIENCY" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "High Efficiency"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alta eficiencia"
+          }
+        }
+      }
+    },
+    "CAM_FORMATS_CAPTURE_MOST_COMPATIBLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Most Compatible"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El más compatible"
+          }
+        }
+      }
+    },
+    "CAM_FORMATS_CAPTURE_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Camera Capture"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modo de captura"
+          }
+        }
+      }
+    },
+    "CAM_FORMATS_PRO_RES_EXTERNAL_STORAGE_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Show Camera control for ProRes. ProRes is one of the most popular formats for professional video post-production. A minute of 10-bit HDR ProRes is approximately 1.7 GB for 30 fps at 1080p and 6 GB for 30 fps at 4K.\n\nProRes capture is supported for up to 30 fps at 4K and up to 60 fps at 1080p on internal storage or up to 60 fps at 4K when writing to external storage."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Muestra el control de ProRes en la cámara. ProRes es uno de los formatos de posproducción de vídeo profesional más conocidos. Un minuto de vídeo ProRes HDR de 10 bits equivale aproximadamente a 1,7 GB de resolución 1080p a 30 fps y a 6 GB de 4K a 30 fps.\n\nSe puede capturar ProRes con una resolución de 4K a 30 fps y de 1080p a 60 fps como máximo en el almacenamiento interno del dispositivo o de 4K a 60 fps como máximo en una unidad de almacenamiento externo."
+          }
+        }
+      }
+    },
     "CAM_FORMATS_TITLE" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -354,6 +439,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Formatos"
+          }
+        }
+      }
+    },
+    "CAM_FORMATS_VIDEO_CAPTURE_GROUP_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VIDEO CAPTURE"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CAPTURA DE VÍDEO"
           }
         }
       }
@@ -477,6 +579,57 @@
         }
       }
     },
+    "CAM_PHOTO_RESOLUTION_24MP" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "24 MP"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "24 Mpx"
+          }
+        }
+      }
+    },
+    "CAM_PRESERVE_PRO_RAW_48MP_SWITCH" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ProRAW & Resolution Control"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Control de la resolución y ProRAW"
+          }
+        }
+      }
+    },
+    "CAM_PRESERVE_PRO_RES_SWITCH" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple ProRes"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple ProRes"
+          }
+        }
+      }
+    },
     "CAM_PRESERVE_SETTINGS_TITLE" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -490,6 +643,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Conservar ajustes"
+          }
+        }
+      }
+    },
+    "CAM_PRO_RAW_48MP_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Show Camera control for ProRAW and maximum resolution, up to 48 MP.\n\n48 MP can be captured on the Main camera at 1×. Night mode, Live Photo, flash, and macro photos will always be saved at 12 MP.\n\nProRAW is a 10-bit file that uses the Linear DNG format to retain more information and dynamic range in the file, providing additional flexibility when editing exposure and white balance."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Muestra el control de la cámara para la captura de fotos en resolución ProRAW y en máxima resolución (hasta 48 Mpx).\n\nSe pueden tomar fotos con una resolución de 48 Mpx usando la cámara principal con la distancia focal por omisión (x1). Las fotos realizadas en el modo Noche, con el ajuste Live Photo, con flash o en formato macro siempre se guardarán en 12 Mpx.\n\nProRAW es un archivo de 10 bits que utiliza el formato DNG lineal para conservar más información y el rango dinámico del archivo, lo que ofrece más flexibilidad a la hora de editar la exposición y el balance de blancos."
           }
         }
       }
@@ -1565,6 +1735,40 @@
         }
       }
     },
+    "CAM_SECONDARY_PHOTO_FORMAT_HEIF48_SHORT" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "HEIF Max"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "HEIF máxima"
+          }
+        }
+      }
+    },
+    "CAM_SECONDARY_PHOTO_FORMAT_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pro Default"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Formato profesional por omisión"
+          }
+        }
+      }
+    },
     "CAM_VIDEO_RECORDING_DISABLE_CAMERA_SWITCHING_FOOTER" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -1731,6 +1935,57 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Composición"
+          }
+        }
+      }
+    },
+    "ENHANCED_RESOLUTION_FOOTER" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Photos on the Main camera at 1× can be saved at 12 or 24 MP. Photos taken with Night mode, macro, flash, or Portrait Lighting will be saved at 12 MP."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Las fotos tomadas con la cámara principal a x1 se pueden guardar en 12 o 24 Mpx. Las fotos que hagas en el modo Noche, Retrato, en formato macro o con flash siempre se guardarán en 12 Mpx."
+          }
+        }
+      }
+    },
+    "ENHANCED_RESOLUTION_FOOTER_CAMERA_BUTTON" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Photos on the Fusion camera at 1× can be saved at 12 or 24 MP. Photos taken with Night mode, macro, flash, or Portrait Lighting will be saved at 12 MP."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Las fotos que hagas con la cámara Fusion usando el zoom x1 se pueden guardar en una resolución de 12 Mpx o de 24 Mpx. Las que hagas en el modo Noche, en formato macro, con flash o con iluminación de retrato se guardarán en 12 Mpx."
+          }
+        }
+      }
+    },
+    "ENHANCED_RESOLUTION_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Photo Mode"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modo Foto"
           }
         }
       }
@@ -1935,6 +2190,40 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Retratos en el modo Foto"
+          }
+        }
+      }
+    },
+    "PRO_RES_COLOR_SPACE_HDR" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "HDR"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "HDR"
+          }
+        }
+      }
+    },
+    "PRO_RES_COLOR_SPACE_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ProRes Encoding"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Codificación ProRes"
           }
         }
       }

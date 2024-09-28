@@ -87,7 +87,9 @@ struct CameraView: View {
                     CustomNavigationLink(title: "CAM_RECORD_CINEMATIC_TITLE".localize(table: table), status: "\(selectedCinematicSetting)_SHORT".localize(table: table), destination: RecordCinematicView())
                 }
                 CustomNavigationLink(title: "CAM_AUDIO_CONFIGURATION_TITLE".localize(table: table), status: selectedSoundSetting.localize(table: table), destination: RecordSoundView())
-                NavigationLink("CAM_FORMATS_TITLE".localize(table: table)) {}
+                NavigationLink("CAM_FORMATS_TITLE".localize(table: table)) {
+                    FormatsView()
+                }
                 NavigationLink("CAM_PRESERVE_SETTINGS_TITLE".localize(table: table)) {}
                 if UIDevice.iPhone {
                     Toggle("VOLUME_UP_BURST".localize(table: table), isOn: $useVolumeUpBurstEnabled)
