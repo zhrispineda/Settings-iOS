@@ -345,7 +345,7 @@ public extension UIDevice {
         var identifier = UIDevice.identifier
         
         switch identifier {
-        case "iPhone15,2", "iPhone15,3", "iPhone16,1", "iPhone16,2":
+        case "iPhone15,2", "iPhone15,3", "iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2":
             return true
         default:
             return false

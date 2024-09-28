@@ -511,6 +511,23 @@
         }
       }
     },
+    "CAM_LINEAR_DNG_TITLE" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple ProRAW"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple ProRAW"
+          }
+        }
+      }
+    },
     "CAM_PAL_VIDEO_FORMATS_FOOTER" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -1748,6 +1765,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "HEIF máxima"
+          }
+        }
+      }
+    },
+    "CAM_SECONDARY_PHOTO_FORMAT_RAW48_SHORT" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ProRAW Max"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ProRAW máxima"
           }
         }
       }

@@ -10,8 +10,9 @@ import SwiftUI
 struct FormatsView: View {
     // Variables
     @AppStorage("CameraFormatSetting") private var cameraFormat = "CAM_FORMATS_CAPTURE_HIGH_EFFICIENCY"
-    @State private var proRawResolutionControl = true
-    @State private var proResCapture = true
+    @State private var proRawResolutionControl = false
+    @State private var proRawEnabled = false
+    @State private var proResCapture = false
     let options = ["CAM_FORMATS_CAPTURE_HIGH_EFFICIENCY", "CAM_FORMATS_CAPTURE_MOST_COMPATIBLE"]
     let table = "CameraSettings"
     
@@ -32,33 +33,40 @@ struct FormatsView: View {
             }
             
             if UIDevice.iPhone {
-                Section {
-                    CustomNavigationLink(title: "ENHANCED_RESOLUTION_TITLE".localize(table: table), status: "CAM_PHOTO_RESOLUTION_24MP".localize(table: table), destination: EmptyView())
-                } header: {
-                    Text("CAM_PHOTO_CAPTURE_HEADER".localize(table: table))
-                } footer: {
-                    if UIDevice.AdvancedPhotographicStylesCapability {
-                        Text("ENHANCED_RESOLUTION_FOOTER_CAMERA_BUTTON".localize(table: table))
-                    } else {
-                        Text("ENHANCED_RESOLUTION_FOOTER".localize(table: table))
+                if UIDevice.RingerButtonCapability && UIDevice.ProDevice {
+                    Section {
+                        CustomNavigationLink(title: "ENHANCED_RESOLUTION_TITLE".localize(table: table), status: "CAM_PHOTO_RESOLUTION_24MP".localize(table: table), destination: EmptyView())
+                    } header: {
+                        Text("CAM_PHOTO_CAPTURE_HEADER".localize(table: table))
+                    } footer: {
+                        if UIDevice.AdvancedPhotographicStylesCapability {
+                            Text("ENHANCED_RESOLUTION_FOOTER_CAMERA_BUTTON".localize(table: table))
+                        } else {
+                            Text("ENHANCED_RESOLUTION_FOOTER".localize(table: table))
+                        }
                     }
                 }
                 
-                if UIDevice.RearFacingCameraHDRCapability && UIDevice.ProDevice {
+                if UIDevice.RearFacingCameraHDRCapability && UIDevice.ProDevice || UIDevice.fullModel.contains("iPhone17,") {
                     Section {
-                        Toggle("CAM_PRESERVE_PRO_RAW_48MP_SWITCH".localize(table: table), isOn: $proRawResolutionControl)
+                        if UIDevice.AlwaysOnDisplayCapability {
+                            Toggle("CAM_PRESERVE_PRO_RAW_48MP_SWITCH".localize(table: table), isOn: $proRawResolutionControl)
+                        } else {
+                            Toggle("CAM_LINEAR_DNG_TITLE".localize(table: table), isOn: $proRawEnabled)
+                        }
                         if proRawResolutionControl {
-                            CustomNavigationLink(title: "CAM_SECONDARY_PHOTO_FORMAT_TITLE".localize(table: table), status: "CAM_SECONDARY_PHOTO_FORMAT_HEIF48_SHORT".localize(table: table), destination: EmptyView())
+                            CustomNavigationLink(title: "CAM_SECONDARY_PHOTO_FORMAT_TITLE".localize(table: table), status: "CAM_SECONDARY_PHOTO_FORMAT_RAW48_SHORT".localize(table: table), destination: EmptyView())
                         }
                     } footer: {
                         Text("CAM_PRO_RAW_48MP_FOOTER".localize(table: table))
+                        
                     }
                 }
                 
                 if UIDevice.CinematicModeCapability && UIDevice.ProDevice {
                     Section {
                         Toggle("CAM_PRESERVE_PRO_RES_SWITCH".localize(table: table), isOn: $proResCapture)
-                        if proResCapture {
+                        if proResCapture && UIDevice.RingerButtonCapability && UIDevice.ProDevice {
                             CustomNavigationLink(title: "PRO_RES_COLOR_SPACE_TITLE".localize(table: table), status: "PRO_RES_COLOR_SPACE_HDR".localize(table: table), destination: EmptyView())
                         }
                     } header: {
