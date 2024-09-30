@@ -19,65 +19,77 @@ struct BatteryHealthChargingView: View {
     @State private var showingCleanEnergyWarning = false
     @State private var temporaryCleanPauseEnabled = false
     
+    let table = "BatteryUI"
+    
     var body: some View {
-        CustomList(title: "Battery Health & Charging") {
-            Section {} footer: {
-                Text("Phone batteries, like all rechargeable batteries, are consumable components that become less effective as they age. [Learn more...](https://support.apple.com/en-us/106348)")
+        CustomList(title: "BATTERY_HEALTH".localize(table: table)) {
+            if maximumCapacity > 79 {
+                Section {} footer: {
+                    Text(.init("ABOUT_BATTERIES_TEXT_IPHONE".localize(table: table, "[\("ABOUT_BATTERIES_LINK".localize(table: table))](\("BW_LM_URL_3".localize(table: table)))")))
+                }
+            } else {
+                VStack(alignment: .leading) {
+                    Text("RECALIBRATION_TITLE".localize(table: table))
+                        .fontWeight(.semibold)
+                    Text("SERVICE_RECOMMENDED_IPHONE".localize(table: table))
+                        .font(.subheadline)
+                }
+                Button("SERVICE_RECOMMENDED_LINK".localize(table: table)) {}
             }
             
             Section {
-                LabeledContent("Maximum Capacity", value: "\(maximumCapacity)%")
+                LabeledContent("MAXIMUM_CAPACITY_NAME".localize(table: table), value: "\(maximumCapacity)%")
             } footer: {
-                Text("This is a measure of battery capacity relative to when it was new. Lower capacity may result in fewer hours of usage between charges.")
+                Text("MAXIMUM_CAPACITY_FOOTER_TEXT".localize(table: table))
             }
             
             Section {
-                Text("Peak Performance Capability")
+                Text("PPC_NAME".localize(table: table))
             } footer: {
-                Text("Built-in dynamic software and hardware systems will help counter performance impacts that may be noticed as your \(UIDevice.current.model) battery chemically ages.")
+                Text("PPC_PERFMGMT_DYNAMIC".localize(table: table))
             }
             
             Section {
-                Toggle("Optimized Battery Charging", isOn: $optimizedBatteryChargingEnabled)
+                Toggle("SC_TITLE".localize(table: table), isOn: $optimizedBatteryChargingEnabled)
                     .onChange(of: optimizedBatteryChargingEnabled) {
                         showingOptimizeWarning = !optimizedBatteryChargingEnabled
                         temporaryOptimizePauseEnabled = false
                     }
             } footer: {
-                Text("To reduce battery aging, \(UIDevice.current.model) learns from your daily charging routines so it can wait to finish charging past 80% until you need to use it. \(temporaryOptimizePauseEnabled ? "Optimized Battery Charging is off until 6:00 AM. " : "")")
+                Text("SC_FOOTER_TEXT".localize(table: table, "80%") + " \(temporaryOptimizePauseEnabled ? "SC_FOOTER_TEXT_TEMP_DISABLE_ADDITION".localize(table: table, "6:00 AM") : String())")
             }
-            .alert("Optimized Battery Charging helps reduce battery aging.", isPresented: $showingOptimizeWarning, actions: {
-                Button("**Turn Off Until Tomorrow**", role: .none) {
+            .alert("SC_ALERT_TITLE".localize(table: table), isPresented: $showingOptimizeWarning) {
+                Button("SC_ALERT_TEMP_DISABLE".localize(table: table), role: .none) {
                     temporaryOptimizePauseEnabled = true
                 }
-                Button("Turn Off", role: .none) {
+                Button("SC_ALERT_DISABLE".localize(table: table), role: .none) {
                     temporaryOptimizePauseEnabled = false
                 }
-                Button("Cancel", role: .none) {
+                Button("SC_ALERT_LEAVE_ON".localize(table: table), role: .none) {
                     optimizedBatteryChargingEnabled = true
                 }
-            })
+            }
             
             Section {
-                Toggle("Clean Energy Charging", isOn: $cleanEnergyChargingEnabled)
+                Toggle("CLEAN_ENERGY_TITLE".localize(table: table), isOn: $cleanEnergyChargingEnabled)
                     .onChange(of: cleanEnergyChargingEnabled) {
                         showingCleanEnergyWarning = !cleanEnergyChargingEnabled
                         temporaryCleanPauseEnabled = false
                     }
             } footer: {
-                Text("In your region, \(UIDevice.current.model) will try to reduce your carbon footprint by selectively charging when lower carbon emission electricity is available. \(UIDevice.current.model) learns from your daily charging routine so it can reach full charge before you need to use it. \(temporaryCleanPauseEnabled ? "Clean Energy Charging is off until 6:00 AM. " : "")[Learn more...](https://support.apple.com/en-us/108068)")
+                Text("CLEAN_ENERGY_FOOTER".localize(table: table) + " \(temporaryCleanPauseEnabled ? "SC_FOOTER_TEXT_TEMP_DISABLE_ADDITION".localize(table: table, "6:00 AM") : String())")
             }
-            .alert("Clean Energy Charging helps reduce carbon footprint.", isPresented: $showingCleanEnergyWarning, actions: {
-                Button("**Turn Off Until Tomorrow**", role: .none) {
+            .alert("CEC_ALERT_TITLE".localize(table: table), isPresented: $showingCleanEnergyWarning) {
+                Button("CEC_ALERT_TEMP_DISABLE".localize(table: table), role: .none) {
                     temporaryCleanPauseEnabled = true
                 }
-                Button("Turn Off", role: .none) {
+                Button("CEC_ALERT_DISABLE".localize(table: table), role: .none) {
                     cleanEnergyChargingEnabled = false
                 }
-                Button("Cancel", role: .none) {
+                Button("CEC_ALERT_LEAVE_ON".localize(table: table), role: .none) {
                     cleanEnergyChargingEnabled = true
                 }
-            })
+            }
         }
     }
 }

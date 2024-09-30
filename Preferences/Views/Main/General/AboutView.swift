@@ -76,7 +76,7 @@ struct AboutView: View {
                 LabeledContent("Carrier Lock", value: "No SIM restrictions")
                 
 //                Section {
-//                    LabeledContent("Network", value: "Network")
+//                    LabeledContent("Network", value: "Not Available")
 //                    LabeledContent("Carrier", value: "Carrier 0.0")
 //                    HText("IMEI", status: "00 000000 000000 0", monospaced: true)
 //                    HText("ICCID", status: getRandomICCID(), monospaced: true)

@@ -95,7 +95,9 @@ struct CameraView: View {
                 NavigationLink("CAM_FORMATS_TITLE".localize(table: table)) {
                     FormatsView()
                 }
-                NavigationLink("CAM_PRESERVE_SETTINGS_TITLE".localize(table: table)) {}
+                NavigationLink("CAM_PRESERVE_SETTINGS_TITLE".localize(table: table)) {
+                    PreserveSettingsView()
+                }
                 if UIDevice.iPhone {
                     Toggle("VOLUME_UP_BURST".localize(table: table), isOn: $useVolumeUpBurstEnabled)
                 }

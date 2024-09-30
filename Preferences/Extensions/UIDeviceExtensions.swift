@@ -352,6 +352,17 @@ public extension UIDevice {
         }
     }()
     
+    static let NightModeCapability: Bool = { // Night Mode
+        var identifier = UIDevice.identifier
+        
+        switch identifier {
+        case "iPhone11,2", "iPhone11,4", "iPhone11,6", "iPhone11,8", "iPhone12,8", "iPhone14,6":
+            return false
+        default:
+            return true
+        }
+    }()
+    
     static let RearFacingCameraHDRCapability: Bool = { // HDR Video
         var identifier = UIDevice.identifier
         

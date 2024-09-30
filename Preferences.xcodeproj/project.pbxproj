@@ -42,6 +42,8 @@
 		832EF3A72B819B2E0066A1BF /* ModifierKeysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832EF3A62B819B2E0066A1BF /* ModifierKeysView.swift */; };
 		832EF3A92B819BB90066A1BF /* HardwareKeyboardLanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832EF3A82B819BB90066A1BF /* HardwareKeyboardLanguageView.swift */; };
 		832EF3AB2B819C2A0066A1BF /* KeyboardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832EF3AA2B819C2A0066A1BF /* KeyboardsView.swift */; };
+		832F08752CAB13460075570C /* PreserveSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832F08742CAB13460075570C /* PreserveSettingsView.swift */; };
+		832F08792CAB27F40075570C /* BatteryUI.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 832F08782CAB27F40075570C /* BatteryUI.xcstrings */; };
 		832F517F2BBF4DC900335E5E /* NetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832F517E2BBF4DC900335E5E /* NetworkView.swift */; };
 		832FD83F2BC22EB000E99DEB /* BluetoothView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832FD83E2BC22EB000E99DEB /* BluetoothView.swift */; };
 		8335A70C2BC358E8001E199D /* CellularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8335A70B2BC358E8001E199D /* CellularView.swift */; };
@@ -162,7 +164,6 @@
 		83A5DA532C234DCB0012ACB3 /* LanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5DA522C234DCB0012ACB3 /* LanguageView.swift */; };
 		83A5DA552C2366A60012ACB3 /* TransferResetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5DA542C2366A60012ACB3 /* TransferResetView.swift */; };
 		83AA1BD62C8B951B00A0B830 /* WatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AA1BD52C8B951B00A0B830 /* WatchView.swift */; };
-		83AC4BE42C457361006C7D13 /* BatteryUI.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83AC4BE32C457361006C7D13 /* BatteryUI.xcstrings */; };
 		83AFA1022BC87FC8008D4E57 /* HotspotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AFA1012BC87FC8008D4E57 /* HotspotView.swift */; };
 		83B00FF32C878F6400B18A94 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B00FF22C878F6400B18A94 /* MessagesView.swift */; };
 		83B1CFB72C1D56C900C2263C /* BiometricPasscodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B1CFB62C1D56C900C2263C /* BiometricPasscodeView.swift */; };
@@ -295,6 +296,8 @@
 		832EF3A62B819B2E0066A1BF /* ModifierKeysView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifierKeysView.swift; sourceTree = "<group>"; };
 		832EF3A82B819BB90066A1BF /* HardwareKeyboardLanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardwareKeyboardLanguageView.swift; sourceTree = "<group>"; };
 		832EF3AA2B819C2A0066A1BF /* KeyboardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardsView.swift; sourceTree = "<group>"; };
+		832F08742CAB13460075570C /* PreserveSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreserveSettingsView.swift; sourceTree = "<group>"; };
+		832F08782CAB27F40075570C /* BatteryUI.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = BatteryUI.xcstrings; sourceTree = "<group>"; };
 		832F517E2BBF4DC900335E5E /* NetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkView.swift; sourceTree = "<group>"; };
 		832FD83E2BC22EB000E99DEB /* BluetoothView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothView.swift; sourceTree = "<group>"; };
 		8335A70B2BC358E8001E199D /* CellularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellularView.swift; sourceTree = "<group>"; };
@@ -416,7 +419,6 @@
 		83A5DA522C234DCB0012ACB3 /* LanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageView.swift; sourceTree = "<group>"; };
 		83A5DA542C2366A60012ACB3 /* TransferResetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferResetView.swift; sourceTree = "<group>"; };
 		83AA1BD52C8B951B00A0B830 /* WatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchView.swift; sourceTree = "<group>"; };
-		83AC4BE32C457361006C7D13 /* BatteryUI.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = BatteryUI.xcstrings; sourceTree = "<group>"; };
 		83AFA1012BC87FC8008D4E57 /* HotspotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotspotView.swift; sourceTree = "<group>"; };
 		83B00FF22C878F6400B18A94 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 		83B1CFB62C1D56C900C2263C /* BiometricPasscodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricPasscodeView.swift; sourceTree = "<group>"; };
@@ -1002,7 +1004,7 @@
 				839BB8A62C41DD61000F8245 /* Accessibility.xcstrings */,
 				8318120D2C9BB99200EFEC5B /* AppleIDSetup.xcstrings */,
 				8319E8172C3DFB1E002EC116 /* AmbientSettings.xcstrings */,
-				83AC4BE32C457361006C7D13 /* BatteryUI.xcstrings */,
+				832F08782CAB27F40075570C /* BatteryUI.xcstrings */,
 				837FB16C2C39D461009B7A23 /* BluetoothSettings.xcstrings */,
 				834565772CAAEB82002BE49D /* Camera.xcstrings */,
 				834565732CAAE673002BE49D /* CameraEditKit.xcstrings */,
@@ -1190,6 +1192,7 @@
 				833F20AD2CA4C93C00115E8F /* RecordCinematicView.swift */,
 				83D5957A2CA5BF19003EF0CD /* RecordSoundView.swift */,
 				83CB06962CA6283A00D7533A /* FormatsView.swift */,
+				832F08742CAB13460075570C /* PreserveSettingsView.swift */,
 			);
 			path = Camera;
 			sourceTree = "<group>";
@@ -1391,6 +1394,7 @@
 				83F516B82C21B7FA0004E87A /* SettingsPhysical.gif in Resources */,
 				834565742CAAE673002BE49D /* CameraEditKit.xcstrings in Resources */,
 				83B893C02B8FDBE8005705A3 /* iPhone15_Pro_NaturalTitanium.usdz in Resources */,
+				832F08792CAB27F40075570C /* BatteryUI.xcstrings in Resources */,
 				831C803F2CA4940F00306574 /* CameraUI-SmartStyles.xcstrings in Resources */,
 				834565762CAAE7B8002BE49D /* CameraSettings-CinematicAudio.xcstrings in Resources */,
 				839BB8A72C41DD61000F8245 /* Accessibility.xcstrings in Resources */,
@@ -1406,7 +1410,6 @@
 				838C0D962C38A64900438E2D /* ControlCenterSettings.xcstrings in Resources */,
 				837FB16D2C39D461009B7A23 /* BluetoothSettings.xcstrings in Resources */,
 				8345656E2CAADFD6002BE49D /* CameraSettings.xcstrings in Resources */,
-				83AC4BE42C457361006C7D13 /* BatteryUI.xcstrings in Resources */,
 				834565702CAAE202002BE49D /* CameraSettings-CameraButton.xcstrings in Resources */,
 				8318120E2C9BB99200EFEC5B /* AppleIDSetup.xcstrings in Resources */,
 				834565722CAAE313002BE49D /* CameraSettings-SmartStyles.xcstrings in Resources */,
@@ -1592,6 +1595,7 @@
 				832EF3A22B8198570066A1BF /* AddTextReplacementView.swift in Sources */,
 				83A5DA532C234DCB0012ACB3 /* LanguageView.swift in Sources */,
 				833A44EF2C6E75BF003076F5 /* SystemFontsView.swift in Sources */,
+				832F08752CAB13460075570C /* PreserveSettingsView.swift in Sources */,
 				835683992B7551D3000FB136 /* CertificateTrustSettingsView.swift in Sources */,
 				838C23232B746CF90053D4C5 /* GeneralView.swift in Sources */,
 				83585B732B8847A70046A0C3 /* WalkingView.swift in Sources */,
@@ -1788,7 +1792,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1307;
 				DEVELOPMENT_ASSET_PATHS = "\"Preferences/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
@@ -1808,7 +1812,7 @@
 				);
 				LOCALIZATION_EXPORT_SUPPORTED = NO;
 				LOCALIZED_STRING_SWIFTUI_SUPPORT = NO;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Preferences;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1829,7 +1833,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1307;
 				DEVELOPMENT_ASSET_PATHS = "\"Preferences/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
@@ -1849,7 +1853,7 @@
 				);
 				LOCALIZATION_EXPORT_SUPPORTED = NO;
 				LOCALIZED_STRING_SWIFTUI_SUPPORT = NO;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Preferences;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
