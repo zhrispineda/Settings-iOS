@@ -14,6 +14,7 @@ struct RecordSoundView: View {
     @AppStorage("CameraWindNoiseReduction") private var windNoiseReduction = true
     var options = ["CAM_AUDIO_CONFIGURATION_STEREO", "CAM_AUDIO_CONFIGURATION_MONO"]
     let table = "CameraSettings"
+    let cineTable = "CameraSettings-CinematicAudio"
     
     init() {
         if UIDevice.AdvancedPhotographicStylesCapability {
@@ -26,14 +27,14 @@ struct RecordSoundView: View {
             Section {
                 Picker("CAM_AUDIO_CONFIGURATION_TITLE".localize(table: table), selection: $selected) {
                     ForEach(options, id: \.self) { setting in
-                        Text(setting.localize(table: table))
+                        Text(setting.localize(table: setting.contains("CINE") ? cineTable : table))
                     }
                 }
                 .pickerStyle(.inline)
                 .labelsHidden()
             } footer: {
                 if UIDevice.AdvancedPhotographicStylesCapability {
-                    Text("CAM_AUDIO_CONFIGURATION_CINEMATIC_FOOTER_iPhone".localize(table: table))
+                    Text("CAM_AUDIO_CONFIGURATION_CINEMATIC_FOOTER_iPhone".localize(table: cineTable))
                 }
             }
             
@@ -47,9 +48,9 @@ struct RecordSoundView: View {
             
             if UIDevice.AdvancedPhotographicStylesCapability && selected != "CAM_AUDIO_CONFIGURATION_MONO" {
                 Section {
-                    Toggle("CAM_AUDIO_WIND_REMOVAL_TITLE".localize(table: table), isOn: $windNoiseReduction)
+                    Toggle("CAM_AUDIO_WIND_REMOVAL_TITLE".localize(table: cineTable), isOn: $windNoiseReduction)
                 } footer: {
-                    Text("CAM_AUDIO_WIND_REMOVAL_FOOTER".localize(table: table))
+                    Text("CAM_AUDIO_WIND_REMOVAL_FOOTER".localize(table: cineTable))
                 }
             }
         }

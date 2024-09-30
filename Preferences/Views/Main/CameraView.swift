@@ -31,6 +31,11 @@ struct CameraView: View {
     @State private var macroControlEnabled = true
     
     let table = "CameraSettings"
+    let buttonTable = "CameraSettings-CameraButton"
+    let stylesTable = "CameraSettings-SmartStyles"
+    let kitTable = "CameraEditKit"
+    let cineTable = "CameraSettings-CinematicAudio"
+    let privacyTable = "Camera"
     
     init() {
         if selectedSlomoSetting.isEmpty && !UIDevice.ProDevice || UIDevice.iPad {
@@ -50,11 +55,11 @@ struct CameraView: View {
         CustomList(title: "CAMERA_SETTINGS_TITLE".localize(table: table), topPadding: true) {
             if !UIDevice.isSimulator && UIDevice.AdvancedPhotographicStylesCapability {
                 Section {
-                    CustomNavigationLink(title: "CAMERA_BUTTON_TITLE".localize(table: table), status: selectedApp.localize(table: table + "-CameraButton"), destination: CameraControlView())
+                    CustomNavigationLink(title: "CAMERA_BUTTON_TITLE".localize(table: buttonTable), status: selectedApp.localize(table: buttonTable), destination: CameraControlView())
                 } header: {
-                    Text("SYSTEM_SETTINGS_HEADER".localize(table: table))
+                    Text("SYSTEM_SETTINGS_HEADER".localize(table: stylesTable))
                 } footer: {
-                    Text(.init("CAMERA_BUTTON_%@_FOOTER".localize(table: table).replacingOccurrences(of: "Learn more.", with: "[Learn more.](#)")))
+                    Text(.init("CAMERA_BUTTON_%@_FOOTER".localize(table: buttonTable).replacingOccurrences(of: "Learn more.", with: "[Learn more.](#)")))
                 }
             }
             
@@ -63,7 +68,7 @@ struct CameraView: View {
                     Button {
                         showingPhotographicStylesView.toggle()
                     } label: {
-                        CustomNavigationLink(title: "SYSTEM_STYLES_TITLE".localize(table: table), status: "SEMANTIC_STYLES_LABEL_STANDARD".localize(table: table), destination: EmptyView())
+                        CustomNavigationLink(title: "SYSTEM_STYLES_TITLE".localize(table: stylesTable), status: "SEMANTIC_STYLES_LABEL_STANDARD".localize(table: kitTable), destination: EmptyView())
                     }
                     .foregroundStyle(Color["Label"])
                     .fullScreenCover(isPresented: $showingPhotographicStylesView) {
@@ -73,10 +78,10 @@ struct CameraView: View {
                     }
                 } header: {
                     if !UIDevice.isSimulator {
-                        Text("APP_SETTINGS_HEADER".localize(table: table))
+                        Text("APP_SETTINGS_HEADER".localize(table: stylesTable))
                     }
                 } footer: {
-                    Text("SYSTEM_STYLES_FOOTER".localize(table: table))
+                    Text("SYSTEM_STYLES_FOOTER".localize(table: stylesTable))
                 }
             }
             
@@ -86,7 +91,7 @@ struct CameraView: View {
                 if UIDevice.HigherResolutionCinematicModeCapability {
                     CustomNavigationLink(title: "CAM_RECORD_CINEMATIC_TITLE".localize(table: table), status: "\(selectedCinematicSetting)_SHORT".localize(table: table), destination: RecordCinematicView())
                 }
-                CustomNavigationLink(title: "CAM_AUDIO_CONFIGURATION_TITLE".localize(table: table), status: selectedSoundSetting.localize(table: table), destination: RecordSoundView())
+                CustomNavigationLink(title: "CAM_AUDIO_CONFIGURATION_TITLE".localize(table: table), status: selectedSoundSetting.localize(table: selectedSoundSetting.contains("CINEMATIC") ? cineTable : table), destination: RecordSoundView())
                 NavigationLink("CAM_FORMATS_TITLE".localize(table: table)) {
                     FormatsView()
                 }
@@ -171,7 +176,7 @@ struct CameraView: View {
                 }
                 
                 Section {} footer: {
-                    Text(.init("[" + "BUTTON_TITLE".localize(table: table) + "](#)")) // com.apple.onboarding.camera
+                    Text(.init("[" + "BUTTON_TITLE".localize(table: privacyTable) + "](#)")) // com.apple.onboarding.camera
                 }
             }
         }

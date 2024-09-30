@@ -16,6 +16,7 @@ struct FormatsView: View {
     @State private var proResCapture = false
     let options = ["CAM_FORMATS_CAPTURE_HIGH_EFFICIENCY", "CAM_FORMATS_CAPTURE_MOST_COMPATIBLE"]
     let table = "CameraSettings"
+    let buttonTable = "CameraSettings-CameraButton"
     
     var body: some View {
         CustomList(title: "CAM_FORMATS_TITLE".localize(table: table), topPadding: true) {
@@ -41,7 +42,7 @@ struct FormatsView: View {
                         Text("CAM_PHOTO_CAPTURE_HEADER".localize(table: table))
                     } footer: {
                         if UIDevice.AdvancedPhotographicStylesCapability {
-                            Text("ENHANCED_RESOLUTION_FOOTER_CAMERA_BUTTON".localize(table: table))
+                            Text("ENHANCED_RESOLUTION_FOOTER_CAMERA_BUTTON".localize(table: buttonTable))
                         } else {
                             Text("ENHANCED_RESOLUTION_FOOTER".localize(table: table))
                         }
