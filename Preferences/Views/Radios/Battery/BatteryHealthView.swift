@@ -41,8 +41,8 @@ struct BatteryHealthView: View {
             }
             
             Section {
-                LabeledContent("MANUFACTURE_DATE_TITLE".localize(table: table), value: UIDevice.iPhone ? "August 2023" : "February 2024")
-                LabeledContent("FIRST_USE_TITLE".localize(table: table), value: UIDevice.iPhone ? "September 2023" : "May 2024")
+                LabeledContent("MANUFACTURE_DATE_TITLE".localize(table: table), value: UIDevice.iPhone ? "August 202\(UIDevice.AlwaysCaptureDepthCapability ? "4" : "3")" : "February 2024")
+                LabeledContent("FIRST_USE_TITLE".localize(table: table), value: UIDevice.iPhone ? "September 202\(UIDevice.AlwaysCaptureDepthCapability ? "4" : "3")" : "May 2024")
             }
         }
     }
