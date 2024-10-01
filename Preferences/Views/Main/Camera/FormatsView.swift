@@ -10,6 +10,7 @@ import SwiftUI
 struct FormatsView: View {
     // Variables
     @AppStorage("CameraFormatSetting") private var cameraFormat = "CAM_FORMATS_CAPTURE_HIGH_EFFICIENCY"
+    @AppStorage("CameraSlomoSetting") private var selectedSlomo = String()
     @State private var proRawResolutionControl = false
     @State private var resolutionControl = false
     @State private var proRawEnabled = false
@@ -28,6 +29,13 @@ struct FormatsView: View {
                 }
                 .pickerStyle(.inline)
                 .labelsHidden()
+                .onChange(of: cameraFormat) {
+                    if cameraFormat == "CAM_FORMATS_CAPTURE_MOST_COMPATIBLE" {
+                        selectedSlomo = "CAM_RECORD_SLOMO_720p_240"
+                    } else {
+                        selectedSlomo = "CAM_RECORD_SLOMO_1080p_240"
+                    }
+                }
             } header: {
                 Text("CAM_FORMATS_CAPTURE_TITLE".localize(table: table))
             } footer: {
