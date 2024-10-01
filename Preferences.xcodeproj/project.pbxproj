@@ -224,6 +224,8 @@
 		83D4CB762B7FF0B000D6087D /* WebContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D4CB752B7FF0B000D6087D /* WebContentView.swift */; };
 		83D5957B2CA5BF19003EF0CD /* RecordSoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D5957A2CA5BF19003EF0CD /* RecordSoundView.swift */; };
 		83D7B4512C925B0400C2B81E /* PhotographicStylesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D7B4502C925B0400C2B81E /* PhotographicStylesView.swift */; };
+		83DB888D2CAC94C4008218E6 /* AppleAccountUI.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83DB888C2CAC94C4008218E6 /* AppleAccountUI.xcstrings */; };
+		83DB888F2CAC97BF008218E6 /* AppleID.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83DB888E2CAC97BF008218E6 /* AppleID.xcstrings */; };
 		83DF95742B841F0900AEEB63 /* DownloadedLanguagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DF95732B841F0900AEEB63 /* DownloadedLanguagesView.swift */; };
 		83DF95762B84266E00AEEB63 /* SiriDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DF95752B84266E00AEEB63 /* SiriDetailView.swift */; };
 		83DF95792B84391F00AEEB63 /* SiriAppClipsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DF95782B84391E00AEEB63 /* SiriAppClipsView.swift */; };
@@ -486,6 +488,8 @@
 		83D4CB752B7FF0B000D6087D /* WebContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebContentView.swift; sourceTree = "<group>"; };
 		83D5957A2CA5BF19003EF0CD /* RecordSoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSoundView.swift; sourceTree = "<group>"; };
 		83D7B4502C925B0400C2B81E /* PhotographicStylesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotographicStylesView.swift; sourceTree = "<group>"; };
+		83DB888C2CAC94C4008218E6 /* AppleAccountUI.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AppleAccountUI.xcstrings; sourceTree = "<group>"; };
+		83DB888E2CAC97BF008218E6 /* AppleID.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AppleID.xcstrings; sourceTree = "<group>"; };
 		83DF95732B841F0900AEEB63 /* DownloadedLanguagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadedLanguagesView.swift; sourceTree = "<group>"; };
 		83DF95752B84266E00AEEB63 /* SiriDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriDetailView.swift; sourceTree = "<group>"; };
 		83DF95782B84391E00AEEB63 /* SiriAppClipsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriAppClipsView.swift; sourceTree = "<group>"; };
@@ -1016,6 +1020,8 @@
 				83A3E6902CAB98C3006F4643 /* Accessibility-D93.xcstrings */,
 				83A3E6922CAC2832006F4643 /* Accessibility-HapticMusic.xcstrings */,
 				8319E8172C3DFB1E002EC116 /* AmbientSettings.xcstrings */,
+				83DB888C2CAC94C4008218E6 /* AppleAccountUI.xcstrings */,
+				83DB888E2CAC97BF008218E6 /* AppleID.xcstrings */,
 				83349C9D2CAC5BDE00516A98 /* AppleIDSetup.xcstrings */,
 				832F08782CAB27F40075570C /* BatteryUI.xcstrings */,
 				837FB16C2C39D461009B7A23 /* BluetoothSettings.xcstrings */,
@@ -1421,10 +1427,12 @@
 				83A3E6912CAB98C3006F4643 /* Accessibility-D93.xcstrings in Resources */,
 				838C0D982C38A7FA00438E2D /* General.xcstrings in Resources */,
 				83A3E6932CAC2832006F4643 /* Accessibility-HapticMusic.xcstrings in Resources */,
+				83DB888F2CAC97BF008218E6 /* AppleID.xcstrings in Resources */,
 				833F0AD72B744D190036EAD2 /* Preview Assets.xcassets in Resources */,
 				8315C93B2CA098720022CBC3 /* Reset.xcstrings in Resources */,
 				833F0AD42B744D190036EAD2 /* Assets.xcassets in Resources */,
 				8361A22B2C193DBA00A7D5CC /* SettingsSimulator.gif in Resources */,
+				83DB888D2CAC94C4008218E6 /* AppleAccountUI.xcstrings in Resources */,
 				838C0D962C38A64900438E2D /* ControlCenterSettings.xcstrings in Resources */,
 				837FB16D2C39D461009B7A23 /* BluetoothSettings.xcstrings in Resources */,
 				8345656E2CAADFD6002BE49D /* CameraSettings.xcstrings in Resources */,

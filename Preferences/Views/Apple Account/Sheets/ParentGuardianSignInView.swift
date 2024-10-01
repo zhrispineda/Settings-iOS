@@ -13,6 +13,9 @@ struct ParentGuardianSignInView: View {
     @State private var showingAlert = false
     @State private var showingOptionsAlert = false
     @State private var username = String()
+    let setupTable = "AppleIDSetup"
+    let table = "AppleID"
+    let uiTable = "AppleAccountUI"
     
     var body: some View {
         List {
@@ -21,11 +24,11 @@ struct ParentGuardianSignInView: View {
                     Image(systemName: "figure.and.child.holdinghands")
                         .foregroundStyle(.blue)
                         .font(.system(size: 64))
-                    Text("Parent or Guardian Sign In")
+                    Text("PARENT_SIGN_IN_TITLE".localize(table: setupTable))
                         .fixedSize(horizontal: false, vertical: true)
                         .font(.title)
                         .fontWeight(.bold)
-                    Text("Sign in with your Apple Account to set up this device for a child 12 or younger.")
+                    Text("PARENT_SIGN_IN_REASON_REBRAND".localize(table: setupTable, "12"))
                 }
                 .padding(.horizontal, 10)
                 .multilineTextAlignment(.center)
@@ -35,7 +38,7 @@ struct ParentGuardianSignInView: View {
             
             Section {
                 VStack(alignment: .center) {
-                    TextField("Email or Phone Number", text: $username)
+                    TextField("LOGIN_FORM_TEXTFIELD_NAME".localize(table: setupTable), text: $username)
                         .padding(.vertical)
                         .padding(.leading, 5)
                         .frame(height: 48)
@@ -61,7 +64,7 @@ struct ParentGuardianSignInView: View {
                                 .foregroundStyle(.blue)
                                 .scaledToFit()
                                 .frame(height: 23)
-                            Text("Your Apple Account information is used to enable Apple services when you sign in, including iCloud Backup, which automatically backs up the data on your device in case you need to replace or restore it. Your device serial number may be used to check eligibility for service offers.\n[See how your data is managed..](_)\n")
+                            Text(.init("CREATE_ICLOUD_MAIL_ACCOUNT_EXPLANATION_FOOTER_REBRAND".localize(table: table) + "\n[\("CREATE_ICLOUD_MAIL_ACCOUNT_FOOTER_LEARN_MORE_BUTTON".localize(table: table))](\("CREATE_ICLOUD_MAIL_ACCOUNT_FOOTER_LEARN_MORE_KB_LINK".localize(table: table)))\n"))
                                 .frame(maxWidth: .infinity, alignment: .center)
                                 .multilineTextAlignment(.center)
                                 .font(.caption2)
@@ -83,7 +86,7 @@ struct ParentGuardianSignInView: View {
                                 .foregroundStyle(Color(UIColor.systemGray))
                                 .cornerRadius(15)
                         } else {
-                            Text("Continue")
+                            Text("LOGIN_FORM_BUTTON_CONTINUE".localize(table: setupTable))
                                 .fontWeight(.medium)
                                 .font(.headline)
                                 .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -94,12 +97,12 @@ struct ParentGuardianSignInView: View {
                     }
                     .frame(height: 50)
                     .disabled(username.count < 1)
-                    .alert("Verification Failed", isPresented: $showingAlert) {
-                        Button("OK") {
+                    .alert("VERIFICATION_FAILED_TITLE".localize(table: uiTable), isPresented: $showingAlert) {
+                        Button("SETUP_VIEW_BUTTON_OK".localize(table: setupTable)) {
                             signingIn.toggle()
                         }
                     } message: {
-                        Text("There was an error connecting to the Apple Account server.")
+                        Text("BAD_NETWORK_ALERT_MESSAGE_REBRAND".localize(table: uiTable))
                     }
                 }
             }

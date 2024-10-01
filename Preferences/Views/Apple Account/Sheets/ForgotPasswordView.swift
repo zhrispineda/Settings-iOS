@@ -15,6 +15,7 @@ struct ForgotPasswordView: View {
     @State private var showingEmailSentAlert = false
     @State var showingUnlockOptions = false
     @State var guardianMode = false
+    let table = "AppleAccountUI"
     
     var body: some View {
         NavigationStack {
@@ -55,7 +56,7 @@ struct ForgotPasswordView: View {
                                 showingEmailSentAlert.toggle()
                                 dismiss()
                             } label: {
-                                Text("OK")
+                                Text("OK".localize(table: table))
                             }
                         } message: {
                             Text("Follow the directions in the email to unlock your account.")
@@ -67,7 +68,8 @@ struct ForgotPasswordView: View {
                 ZStack {
                     List {
                         VStack {
-                            Text("**Forgot Password?**")
+                            Text("SIGN_IN_HELP_ALERT_TITLE_FORGOT_PASSWORD".localize(table: table))
+                                .fontWeight(.bold)
                                 .font(.largeTitle)
                                 .padding(.top, -20)
                                 .padding(.bottom, 5)
@@ -81,7 +83,7 @@ struct ForgotPasswordView: View {
                         .listRowSeparator(.hidden)
                         
                         Section {
-                            TextField("Email or Phone Number", text: $username)
+                            TextField("SIGN_IN_USERNAME_PLACEHOLDER".localize(table: table), text: $username)
                                 .padding(.leading, guardianMode ? 15 : 20)
                                 .frame(height: 42)
                                 .background(Color(UIColor.systemGray5))
@@ -110,7 +112,7 @@ struct ForgotPasswordView: View {
                                 showingFailedAlert.toggle()
                                 //ForgotPasswordView(showingUnlockOptions: true)
                             } label: {
-                                Text("Continue")
+                                Text("SIGN_IN_BUTTON_CONTINUE".localize(table: table))
                                     .fontWeight(.medium)
                                     .font(.headline)
                                     .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -135,7 +137,7 @@ struct ForgotPasswordView: View {
                 Button {
                     dismiss()
                 } label: {
-                    Text("Cancel")
+                    Text("SIGN_IN_ACTION_CANCEL".localize(table: table))
                         .foregroundStyle(.accent)
                 }
                 .buttonStyle(.plain)

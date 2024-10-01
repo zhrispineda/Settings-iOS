@@ -17,6 +17,9 @@ struct AppleAccountLoginView: View {
     @State private var showingErrorAlert = false
     @State private var showingForgotPasswordSheet = false
     @State private var username = String()
+    let setupTable = "AppleIDSetup"
+    let table = "AppleID"
+    let uiTable = "AppleAccountUI"
     
     var body: some View {
         List {
@@ -26,10 +29,11 @@ struct AppleAccountLoginView: View {
                         .resizable()
                         .scaledToFit()
                         .frame(width: 100)
-                    Text("Apple Account")
+                    Text("LOGIN_FORM_TITLE".localize(table: setupTable))
                         .font(.largeTitle)
                         .fontWeight(.bold)
-                    Text("Sign in with an email or phone number to use iCloud, the App Store, Messages, or other Apple services.")
+                        .multilineTextAlignment(.center)
+                    Text("SIGN_IN_SUBTITLE".localize(table: uiTable))
                         .multilineTextAlignment(.center)
                 }
                 .frame(maxWidth: .infinity)
@@ -40,7 +44,7 @@ struct AppleAccountLoginView: View {
             
             Section {
                 VStack(alignment: .center) {
-                    TextField("Email or Phone Number", text: $username)
+                    TextField("LOGIN_FORM_TEXTFIELD_NAME".localize(table: setupTable), text: $username)
                         .padding(.vertical)
                         .padding(.leading, 5)
                         .frame(height: 48)
@@ -51,7 +55,7 @@ struct AppleAccountLoginView: View {
                     Button {
                         showingForgotPasswordSheet.toggle()
                     } label: {
-                        Text("Forgot password?")
+                        Text("SIGN_IN_HELP_BUTTON_FORGOT".localize(table: uiTable))
                             .multilineTextAlignment(.center)
                             .foregroundStyle(.accent)
                     }
@@ -62,23 +66,25 @@ struct AppleAccountLoginView: View {
                         ZStack {
                             NavigationLink(destination: ParentGuardianSignInView()) {}
                             .opacity(0)
-                            Text("Sign in a child in my Family")
+                            .contentShape(Rectangle())
+                            .buttonStyle(.plain)
+                            Text("SIGN_IN_FOR_CHILD_BUTTON_TITLE".localize(table: uiTable))
                                 .foregroundStyle(.accent)
                         }
                     }
                 }
-                .alert("Forgot password or don‘t have an Apple Account?", isPresented: $showingOptionsAlert) {
-                    Button("Forgot Password or Apple Account", role: .none) {
+                .alert("SIGN_IN_HELP_ALERT_TITLE_FORGOT_OR_CREATE".localize(table: uiTable), isPresented: $showingOptionsAlert) {
+                    Button("IFORGOT_BUTTON_REBRAND".localize(table: table), role: .none) {
                         showingForgotPasswordSheet.toggle()
                     }
-                    Button("Create Apple Account", role: .none) {
+                    Button("SIGN_IN_HELP_ALERT_BUTTON_CREATE".localize(table: uiTable), role: .none) {
                         showingErrorAlert.toggle()
                     }
-                    Button("Cancel", role: .cancel) {}
+                    Button("SIGN_IN_HELP_ALERT_BUTTON_CANCEL".localize(table: uiTable), role: .cancel) {}
                 }
                 .alert("Could Not Create Apple Account", isPresented: $showingErrorAlert) {
                     Link("Learn More", destination: URL(string: "https://support.apple.com/en-us/101661")!)
-                    Button("OK") {
+                    Button("AUTHENTICATE_VIEW_BUTTON_TITLE".localize(table: setupTable)) {
                         dismiss()
                     }
                 } message: {
@@ -101,7 +107,7 @@ struct AppleAccountLoginView: View {
                                 .foregroundStyle(.blue)
                                 .scaledToFit()
                                 .frame(height: 23)
-                            Text("Your Apple Account information is used to enable Apple services when you sign in, including iCloud Backup, which automatically backs up the data on your device in case you need to replace or restore it. Your device serial number may be used to check eligibility for service offers.\n[See how your data is managed...](_)\n")
+                            Text(.init("CREATE_ICLOUD_MAIL_ACCOUNT_EXPLANATION_FOOTER_REBRAND".localize(table: table) + "\n[\("CREATE_ICLOUD_MAIL_ACCOUNT_FOOTER_LEARN_MORE_BUTTON".localize(table: table))](\("CREATE_ICLOUD_MAIL_ACCOUNT_FOOTER_LEARN_MORE_KB_LINK".localize(table: table)))\n"))
                                 .frame(maxWidth: .infinity, alignment: .center)
                                 .multilineTextAlignment(.center)
                                 .font(.caption2)
@@ -123,7 +129,7 @@ struct AppleAccountLoginView: View {
                                 .foregroundStyle(Color(UIColor.systemGray))
                                 .cornerRadius(15)
                         } else {
-                            Text("Continue")
+                            Text("LOGIN_FORM_BUTTON_CONTINUE".localize(table: setupTable))
                                 .fontWeight(.medium)
                                 .font(.headline)
                                 .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -134,12 +140,12 @@ struct AppleAccountLoginView: View {
                     }
                     .frame(height: 50)
                     .disabled(username.count < 1)
-                    .alert("Verification Failed", isPresented: $showingAlert) {
-                        Button("OK") {
+                    .alert("VERIFICATION_FAILED_TITLE".localize(table: uiTable), isPresented: $showingAlert) {
+                        Button("AUTHENTICATE_VIEW_BUTTON_TITLE".localize(table: setupTable)) {
                             signingIn.toggle()
                         }
                     } message: {
-                        Text("There was an error connecting to the Apple Account server.")
+                        Text("BAD_NETWORK_ALERT_MESSAGE_REBRAND".localize(table: uiTable))
                     }
                 }
             }
