@@ -136,7 +136,7 @@ struct CameraView: View {
             
             if UIDevice.ProDevice && UIDevice.iPhone {
                 Section {
-                    CustomNavigationLink(title: UIDevice.AdvancedPhotographicStylesCapability ? "FOCAL_LENGTH_ROW_TITLE_CAMERA_BUTTON".localize(table: table) : "FOCAL_LENGTH_ROW_TITLE".localize(table: table), status: "FOCAL_LENGTH_GROUP_%@_AND_%@_AND_%@_MM".localize(table: table, "24", "28", "35"), destination: EmptyView())
+                    CustomNavigationLink(title: UIDevice.AdvancedPhotographicStylesCapability && !UIDevice.isSimulator ? "FOCAL_LENGTH_ROW_TITLE_CAMERA_BUTTON".localize(table: buttonTable) : "FOCAL_LENGTH_ROW_TITLE".localize(table: table), status: "FOCAL_LENGTH_GROUP_%@_AND_%@_AND_%@_MM".localize(table: table, "24", "28", "35"), destination: FocalLengthView())
                 } header: {
                     if UIDevice.AdvancedPhotographicStylesCapability {
                         Text("CAM_PHOTO_CAPTURE_HEADER".localize(table: table))

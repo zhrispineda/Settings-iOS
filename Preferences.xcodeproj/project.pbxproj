@@ -163,6 +163,7 @@
 		83A3E68F2CAB9743006F4643 /* AccessibilityTitles.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83A3E68E2CAB9743006F4643 /* AccessibilityTitles.xcstrings */; };
 		83A3E6912CAB98C3006F4643 /* Accessibility-D93.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83A3E6902CAB98C3006F4643 /* Accessibility-D93.xcstrings */; };
 		83A3E6932CAC2832006F4643 /* Accessibility-HapticMusic.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83A3E6922CAC2832006F4643 /* Accessibility-HapticMusic.xcstrings */; };
+		83A3E6952CAC3091006F4643 /* FocalLengthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A3E6942CAC3091006F4643 /* FocalLengthView.swift */; };
 		83A5DA512C2335580012ACB3 /* PermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5DA502C2335580012ACB3 /* PermissionsView.swift */; };
 		83A5DA532C234DCB0012ACB3 /* LanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5DA522C234DCB0012ACB3 /* LanguageView.swift */; };
 		83A5DA552C2366A60012ACB3 /* TransferResetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5DA542C2366A60012ACB3 /* TransferResetView.swift */; };
@@ -421,6 +422,7 @@
 		83A3E68E2CAB9743006F4643 /* AccessibilityTitles.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AccessibilityTitles.xcstrings; sourceTree = "<group>"; };
 		83A3E6902CAB98C3006F4643 /* Accessibility-D93.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "Accessibility-D93.xcstrings"; sourceTree = "<group>"; };
 		83A3E6922CAC2832006F4643 /* Accessibility-HapticMusic.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "Accessibility-HapticMusic.xcstrings"; sourceTree = "<group>"; };
+		83A3E6942CAC3091006F4643 /* FocalLengthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocalLengthView.swift; sourceTree = "<group>"; };
 		83A5DA502C2335580012ACB3 /* PermissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsView.swift; sourceTree = "<group>"; };
 		83A5DA522C234DCB0012ACB3 /* LanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageView.swift; sourceTree = "<group>"; };
 		83A5DA542C2366A60012ACB3 /* TransferResetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferResetView.swift; sourceTree = "<group>"; };
@@ -1202,6 +1204,7 @@
 				83D5957A2CA5BF19003EF0CD /* RecordSoundView.swift */,
 				83CB06962CA6283A00D7533A /* FormatsView.swift */,
 				832F08742CAB13460075570C /* PreserveSettingsView.swift */,
+				83A3E6942CAC3091006F4643 /* FocalLengthView.swift */,
 			);
 			path = Camera;
 			sourceTree = "<group>";
@@ -1467,6 +1470,7 @@
 				837F1DCB2B8AEF1A00665EAB /* DownloadsView.swift in Sources */,
 				8319CE492B86D198007EC822 /* PasswordsView.swift in Sources */,
 				83AFA1022BC87FC8008D4E57 /* HotspotView.swift in Sources */,
+				83A3E6952CAC3091006F4643 /* FocalLengthView.swift in Sources */,
 				832EF38A2B8071C00066A1BF /* RestrictionsLocationServicesView.swift in Sources */,
 				838C23292B748F3B0053D4C5 /* ScreenTimeView.swift in Sources */,
 				83B893B92B8FCE5F005705A3 /* HoverTextFontView.swift in Sources */,
