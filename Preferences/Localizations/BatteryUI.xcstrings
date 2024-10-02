@@ -29957,6 +29957,24 @@
             "value": "Задати ліміт %@"
           }
         },
+        "ro": {
+          "variations": {
+            "device": {
+              "mac": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Fixează limita la %@"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Fixați limita la %@"
+                }
+              }
+            }
+          }
+        },
         "hr": {
           "stringUnit": {
             "state": "translated",
@@ -34420,6 +34438,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Скасувати"
+          }
+        },
+        "ro": {
+          "variations": {
+            "device": {
+              "mac": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Renunță"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Anulați"
+                }
+              }
+            }
           }
         },
         "hr": {
@@ -51337,6 +51373,12 @@
             "value": "App Apple Watch"
           }
         },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Εφαρμογή Watch"
+          }
+        },
         "ca": {
           "stringUnit": {
             "state": "translated",
@@ -53523,6 +53565,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Battery Percentage"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Akumuliatoriaus įkrovos procentas"
           }
         },
         "ms": {
@@ -60112,6 +60160,12 @@
             "value": "Optimalizované nabíjení"
           }
         },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Optimalizované nabíjanie"
+          }
+        },
         "bg": {
           "stringUnit": {
             "state": "translated",
@@ -61485,6 +61539,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Скасувати"
+          }
+        },
+        "ro": {
+          "variations": {
+            "device": {
+              "mac": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Renunță"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Anulați"
+                }
+              }
+            }
           }
         },
         "hr": {
@@ -71475,6 +71547,24 @@
             "value": "Скасувати"
           }
         },
+        "ro": {
+          "variations": {
+            "device": {
+              "mac": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Renunță"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Anulați"
+                }
+              }
+            }
+          }
+        },
         "hr": {
           "stringUnit": {
             "state": "translated",
@@ -74888,6 +74978,24 @@
             "value": "Встановити ліміт заряджання"
           }
         },
+        "ro": {
+          "variations": {
+            "device": {
+              "mac": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Fixează limita de încărcare"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Fixați limita de încărcare"
+                }
+              }
+            }
+          }
+        },
         "hr": {
           "stringUnit": {
             "state": "translated",
@@ -77599,6 +77707,12 @@
           "stringUnit": {
             "state": "translated",
             "value": "Pantalla bloq. y de inicio"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Οθόνη αφετ./κλειδ."
           }
         },
         "ca": {
@@ -87498,6 +87612,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Дозволити до завтра"
+          }
+        },
+        "ro": {
+          "variations": {
+            "device": {
+              "mac": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Permite până mâine"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Permiteți până mâine"
+                }
+              }
+            }
           }
         },
         "hr": {
