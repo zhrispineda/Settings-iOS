@@ -33,7 +33,7 @@ struct SelectOptionList: View {
                 case "Account Changes":
                     Text("Disallowing changes prevents adding, removing, or modifying accounts in Passwords & Accounts.")
                 case "Ask to Join Networks":
-                    Text("Known networks will be joined automatically. If no know networks are available, you will \(selected == "Off" ? "have to manually select a network." : "be \(selected == "Notify" ? "notified of available networks." : "asked before joining a new network.")")")
+                    Text("kWFLocAskToJoin\(selected)Footer".localize(table: "WiFiKitUILocalizableStrings"))
                 case "Connect with Friends":
                     VStack {
                         Text("By selecting “Allow,“ apps can ask for permission to connect you with your Game Center friends.\n")
