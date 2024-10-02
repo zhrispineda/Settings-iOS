@@ -4010,6 +4010,18 @@
             "value": "Ajouter un contact de récupération"
           }
         },
+        "ro": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Adăugați un contact de recuperare"
+                }
+              }
+            }
+          }
+        },
         "hr": {
           "stringUnit": {
             "state": "translated",
@@ -8844,6 +8856,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Continuer"
+          }
+        },
+        "ro": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Continuați"
+                }
+              }
+            }
           }
         },
         "hr": {
@@ -19062,6 +19086,18 @@
             "value": "Fermer"
           }
         },
+        "ro": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Închideți"
+                }
+              }
+            }
+          }
+        },
         "hr": {
           "stringUnit": {
             "state": "translated",
@@ -28471,6 +28507,18 @@
             "value": "Créer une clé de secours"
           }
         },
+        "ro": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Creați o nouă cheie de recuperare"
+                }
+              }
+            }
+          }
+        },
         "hr": {
           "stringUnit": {
             "state": "translated",
@@ -28732,6 +28780,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Annuler"
+          }
+        },
+        "ro": {
+          "variations": {
+            "device": {
+              "mac": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Renunță"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Anulați"
+                }
+              }
+            }
           }
         },
         "hr": {
@@ -29098,6 +29164,18 @@
             "value": "OK"
           }
         },
+        "ca": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "OK"
+                }
+              }
+            }
+          }
+        },
         "fr_CA": {
           "stringUnit": {
             "state": "translated",
@@ -29194,6 +29272,18 @@
             "value": "OK"
           }
         },
+        "sk": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "OK"
+                }
+              }
+            }
+          }
+        },
         "bg": {
           "stringUnit": {
             "state": "translated",
@@ -29222,6 +29312,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "OK"
+          }
+        },
+        "es": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "OK"
+                }
+              }
+            }
           }
         },
         "pt_BR": {
@@ -35704,6 +35806,18 @@
             "value": "Annuler"
           }
         },
+        "ro": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Anulați"
+                }
+              }
+            }
+          }
+        },
         "hr": {
           "stringUnit": {
             "state": "translated",
@@ -36234,6 +36348,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ajouter un contact de récupération"
+          }
+        },
+        "ro": {
+          "variations": {
+            "device": {
+              "mac": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Adaugă un contact de recuperare"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Adăugați un contact de recuperare"
+                }
+              }
+            }
           }
         },
         "hr": {
@@ -38920,6 +39052,18 @@
             "value": "Créer une clé de secours"
           }
         },
+        "ro": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Creați o nouă cheie de recuperare"
+                }
+              }
+            }
+          }
+        },
         "hr": {
           "stringUnit": {
             "state": "translated",
@@ -39719,6 +39863,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Désactiver la clé de secours"
+          }
+        },
+        "ro": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Dezactivați cheia de recuperare"
+                }
+              }
+            }
           }
         },
         "hr": {
@@ -40860,6 +41016,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ga door"
+          }
+        },
+        "ru": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Продолжить"
+                }
+              }
+            }
           }
         },
         "hu": {
@@ -42128,6 +42296,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Continuer"
+          }
+        },
+        "ro": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Continuați"
+                }
+              }
+            }
           }
         },
         "hr": {
@@ -44543,6 +44723,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Annuler"
+          }
+        },
+        "ro": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Anulați"
+                }
+              }
+            }
           }
         },
         "hr": {
@@ -55030,6 +55222,18 @@
             "value": "Se déconnecter"
           }
         },
+        "ro": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Ieșiți din cont"
+                }
+              }
+            }
+          }
+        },
         "hr": {
           "stringUnit": {
             "state": "translated",
@@ -61211,6 +61415,24 @@
             "value": "Se connecter plus tard"
           }
         },
+        "ro": {
+          "variations": {
+            "device": {
+              "mac": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Autentificare ulterioară"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Autentificați‑vă mai târziu"
+                }
+              }
+            }
+          }
+        },
         "hr": {
           "stringUnit": {
             "state": "translated",
@@ -66585,6 +66807,18 @@
             "value": "Ajouter un contact de récupération"
           }
         },
+        "ro": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Adăugați un contact de recuperare"
+                }
+              }
+            }
+          }
+        },
         "hr": {
           "stringUnit": {
             "state": "translated",
@@ -67922,6 +68156,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Imprimer"
+          }
+        },
+        "ro": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Tipăriți"
+                }
+              }
+            }
           }
         },
         "hr": {
@@ -69799,6 +70045,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "Désactiver la protection avancée des données"
+          }
+        },
+        "ro": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Dezactivați protecția avansată a datelor"
+                }
+              }
+            }
           }
         },
         "hr": {
@@ -73023,6 +73281,18 @@
             "value": "Réessayer"
           }
         },
+        "ro": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Reîncercați"
+                }
+              }
+            }
+          }
+        },
         "hr": {
           "stringUnit": {
             "state": "translated",
@@ -73284,6 +73554,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "SIGNER"
+          }
+        },
+        "ro": {
+          "variations": {
+            "device": {
+              "mac": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "SEMNEAZĂ"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "SEMNAȚI"
+                }
+              }
+            }
           }
         },
         "hr": {
@@ -76609,6 +76897,18 @@
             "value": "OK"
           }
         },
+        "ca": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "OK"
+                }
+              }
+            }
+          }
+        },
         "fr_CA": {
           "stringUnit": {
             "state": "translated",
@@ -76705,6 +77005,18 @@
             "value": "OK"
           }
         },
+        "sk": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "OK"
+                }
+              }
+            }
+          }
+        },
         "bg": {
           "stringUnit": {
             "state": "translated",
@@ -76733,6 +77045,18 @@
           "stringUnit": {
             "state": "translated",
             "value": "OK"
+          }
+        },
+        "es": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "OK"
+                }
+              }
+            }
           }
         },
         "pt_BR": {
@@ -81601,6 +81925,18 @@
             "value": "Imprimer à nouveau"
           }
         },
+        "ro": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Tipăriți din nou"
+                }
+              }
+            }
+          }
+        },
         "hr": {
           "stringUnit": {
             "state": "translated",
@@ -82131,6 +82467,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Ouvrir l’app Mots de passe"
+          }
+        },
+        "ro": {
+          "variations": {
+            "device": {
+              "mac": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Deschide aplicația Parole"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Deschideți aplicația Parole"
+                }
+              }
+            }
           }
         },
         "hr": {
@@ -83607,6 +83961,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Rediger"
+          }
+        },
+        "sv": {
+          "variations": {
+            "device": {
+              "mac": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Redigera"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Ändra"
+                }
+              }
+            }
           }
         },
         "zh_TW": {
@@ -89675,6 +90047,1067 @@
           "stringUnit": {
             "state": "translated",
             "value": "iCloud Driveに保存されているすべての書類およびデータがこのApple Vision Proから削除されます。"
+          }
+        }
+      }
+    },
+    "SIGN_OUT_PASSES_ORDERS": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Payment cards will be removed from Wallet."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Payment cards, keys and orders will be removed from Wallet."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Payment cards and orders will be removed from Wallet."
+                }
+              }
+            }
+          }
+        },
+        "he": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "כרטיסי תשלום יוסרו מ״ארנק״."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "כרטיסי תשלום, מפתחות והזמנות יוסרו מ״ארנק״."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "כרטיסי תשלום והזמנות יוסרו מ״ארנק״."
+                }
+              }
+            }
+          }
+        },
+        "ko": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "결제 카드가 지갑 앱에서 제거됩니다."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "결제 카드, 키 및 주문이 지갑 앱에서 제거됩니다."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "결제 카드 및 주문이 지갑 앱에서 제거됩니다."
+                }
+              }
+            }
+          }
+        },
+        "id": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Kartu pembayaran akan dihapus dari Dompet."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Kartu pembayaran, kunci, dan pesanan akan dihapus dari Dompet."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Kartu pembayaran dan pesanan akan dihapus dari Dompet."
+                }
+              }
+            }
+          }
+        },
+        "fi": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Maksukortit poistetaan Lompakosta."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Maksukortit, avaimet ja tilaukset poistetaan Lompakosta."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Maksukortit ja tilaukset poistetaan Lompakosta."
+                }
+              }
+            }
+          }
+        },
+        "tr": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Ödeme kartları Cüzdan’dan silinir."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Ödeme kartları, anahtarlar ve siparişler Cüzdan’dan silinir."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Ödeme kartları ve siparişler Cüzdan’dan silinir."
+                }
+              }
+            }
+          }
+        },
+        "nl": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Betaalkaarten worden verwijderd uit Wallet."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Betaalkaarten, sleutels en bestellingen worden verwijderd uit Wallet."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Betaalkaarten en bestellingen worden verwijderd uit Wallet."
+                }
+              }
+            }
+          }
+        },
+        "ru": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Платежные карты будут удалены из Wallet."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Платежные карты, ключи и заказы будут удалены из Wallet."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Платежные карты и заказы будут удалены из Wallet."
+                }
+              }
+            }
+          }
+        },
+        "hu": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "A fizetési kártyák el lesznek távolítva a Tárcából."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "A fizetési kártyák, kulcsok és rendelések el lesznek távolítva a Tárcából."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "A fizetési kártyák és rendelések el lesznek távolítva a Tárcából."
+                }
+              }
+            }
+          }
+        },
+        "it": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Le carte di pagamento verranno rimosse da Wallet."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Le carte di pagamento, le chiavi e gli ordini verranno rimossi da Wallet."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Le carte di pagamento e gli ordini verranno rimossi da Wallet."
+                }
+              }
+            }
+          }
+        },
+        "el": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Οι κάρτες πληρωμής θα αφαιρεθούν από το Πορτοφόλι."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Οι κάρτες πληρωμής, τα κλειδιά και οι παραγγελίες θα αφαιρεθούν από το Πορτοφόλι."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Οι κάρτες πληρωμής και οι παραγγελίες θα αφαιρεθούν από το Πορτοφόλι."
+                }
+              }
+            }
+          }
+        },
+        "es_419": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Se eliminarán de Wallet las tarjetas de pago."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Se eliminarán de Wallet los pedidos, las llaves y las tarjetas de pago."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Se eliminarán de Wallet los pedidos y las tarjetas de pago."
+                }
+              }
+            }
+          }
+        },
+        "ca": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "S’eliminaran les targetes de l’app Cartera."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "S’eliminaran les targetes, les claus i les comandes de l’app Cartera."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "S’eliminaran les targetes i les comandes de l’app Cartera."
+                }
+              }
+            }
+          }
+        },
+        "fr_CA": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Les cartes de paiement seront supprimées de Portefeuille."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Les cartes de paiement, les clés et les commandes seront supprimées de Portefeuille."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Les cartes de paiement et les commandes seront supprimées de Portefeuille."
+                }
+              }
+            }
+          }
+        },
+        "ar": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "ستتم إزالة بطاقات الدفع من المحفظة."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "ستتم إزالة بطاقات الدفع والمفاتيح والطلبات من المحفظة."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "ستتم إزالة بطاقات الدفع والطلبات من المحفظة."
+                }
+              }
+            }
+          }
+        },
+        "zh_HK": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "將會從「銀包」移除付款卡。"
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "將會從「銀包」移除付款卡、鎖匙和訂單。"
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "將會從「銀包」移除付款卡和訂單。"
+                }
+              }
+            }
+          }
+        },
+        "pl": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Karty płatnicze zostaną usunięte z Portfela."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Karty płatnicze, klucze, kluczyki i zamówienia zostaną usunięte z Portfela."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Karty płatnicze i zamówienia zostaną usunięte z Portfela."
+                }
+              }
+            }
+          }
+        },
+        "no": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Betalingskort vil bli fjernet fra Lommebok."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Betalingskort, nøkler og bestillinger vil bli fjernet fra Lommebok."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Betalingskort og bestillinger vil bli fjernet fra Lommebok."
+                }
+              }
+            }
+          }
+        },
+        "sv": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Kontokort tas bort från Plånbok."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Kontokort, nycklar och beställningar tas bort från Plånbok."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Kontokort och beställningar tas bort från Plånbok."
+                }
+              }
+            }
+          }
+        },
+        "zh_TW": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "付款卡將從「錢包」移除。"
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "付款卡、鑰匙和訂單將從「錢包」移除。"
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "付款卡和訂單將從「錢包」移除。"
+                }
+              }
+            }
+          }
+        },
+        "en": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Payment cards will be removed from Wallet."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Payment cards, keys, and orders will be removed from Wallet."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Payment cards and orders will be removed from Wallet."
+                }
+              }
+            }
+          }
+        },
+        "hi": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "भुगतान कार्ड वॉलेट से हटा दिए जाएँगे।"
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "भुगतान कार्ड, कीज़ और ऑर्डर वॉलेट से हटा दिए जाएँगे।"
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "भुगतान कार्ड और ऑर्डर वॉलेट से हटा दिए जाएँगे।"
+                }
+              }
+            }
+          }
+        },
+        "da": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Betalingskort fjernes fra Wallet."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Betalingskort, nøgler og ordrer fjernes fra Wallet."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Betalingskort og ordrer fjernes fra Wallet."
+                }
+              }
+            }
+          }
+        },
+        "th": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "บัตรชำระเงินจะถูกเอาออกจากกระเป๋าสตางค์"
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "บัตรชำระเงิน กุญแจ และคำสั่งซื้อจะถูกเอาออกจากกระเป๋าสตางค์"
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "บัตรชำระเงินและคำสั่งซื้อจะถูกเอาออกจากกระเป๋าสตางค์"
+                }
+              }
+            }
+          }
+        },
+        "zh_CN": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "付款卡将从“钱包”移除。"
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "付款卡、钥匙和订单将从“钱包”移除。"
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "付款卡和订单将从“钱包”移除。"
+                }
+              }
+            }
+          }
+        },
+        "en_GB": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Payment cards will be removed from Wallet."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Payment cards, keys and orders will be removed from Wallet."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Payment cards and orders will be removed from Wallet."
+                }
+              }
+            }
+          }
+        },
+        "lt": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Mokėjimo kortelės bus pašalintos iš „Piniginės“."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Mokėjimo kortelės, raktai ir užsakymai bus pašalinti iš „Piniginės“."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Mokėjimo kortelės ir užsakymai bus pašalinti iš „Piniginės“."
+                }
+              }
+            }
+          }
+        },
+        "ms": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Kad bayaran akan dikeluarkan daripada Wallet."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Kad bayaran, kunci dan pesanan akan dikeluarkan daripada Wallet."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Kad bayaran dan pesanan akan dikeluarkan daripada Wallet."
+                }
+              }
+            }
+          }
+        },
+        "cs": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Z Peněženky budou odstraněny platební karty."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Z Peněženky budou odstraněny platební karty, klíče a příkazy."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Z Peněženky budou odstraněny platební karty a příkazy."
+                }
+              }
+            }
+          }
+        },
+        "sk": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Platobné karty budú odstránené z Peňaženky."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Platobné karty, kľúče a objednávky budú odstránené z Peňaženky."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Platobné karty a objednávky budú odstránené z Peňaženky."
+                }
+              }
+            }
+          }
+        },
+        "bg": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Картите за плащане ще бъдат премахнати от Портфейл."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Картите за плащане, ключовете и поръчките ще бъдат премахнати от Портфейл."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Картите за плащане и поръчките ще бъдат премахнати от Портфейл."
+                }
+              }
+            }
+          }
+        },
+        "en_AU": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Payment cards will be removed from Wallet."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Payment cards, keys and orders will be removed from Wallet."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Payment cards and orders will be removed from Wallet."
+                }
+              }
+            }
+          }
+        },
+        "sl": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Plačilne kartice bodo odstranjene iz Denarnice."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Plačilne kartice, ključi in naročila bodo odstranjeni iz Denarnice."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Plačilne kartice in naročila bodo odstranjeni iz Denarnice."
+                }
+              }
+            }
+          }
+        },
+        "de": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Zahlungskarten werden aus Wallet entfernt."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Zahlungskarten, Schlüssel und Bestellungen werden aus Wallet entfernt."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Zahlungskarten und Bestellungen werden aus Wallet entfernt."
+                }
+              }
+            }
+          }
+        },
+        "vi": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Thẻ thanh toán sẽ bị xóa khỏi Ví."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Thẻ thanh toán, chìa khóa và đơn hàng sẽ bị xóa khỏi Ví."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Thẻ thanh toán và đơn hàng sẽ bị xóa khỏi Ví."
+                }
+              }
+            }
+          }
+        },
+        "es": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Las tarjetas de pago se eliminarán de la app Cartera."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Las tarjetas de pago, las llaves y los pedidos se eliminarán de la app Cartera."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Las tarjetas de pago y los pedidos se eliminarán de la app Cartera."
+                }
+              }
+            }
+          }
+        },
+        "pt_BR": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Os cartões de pagamento serão removidos do app Carteira."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Os cartões de pagamento, chaves e pedidos serão removidos do app Carteira."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Os cartões de pagamento e pedidos serão removidos do app Carteira."
+                }
+              }
+            }
+          }
+        },
+        "kk": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Төлем карталары Wallet қолданбасынан жойылады."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Төлем карталары, кілттер және тапсырыстар Wallet қолданбасынан жойылады."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Төлем карталары және тапсырыстар Wallet қолданбасынан жойылады."
+                }
+              }
+            }
+          }
+        },
+        "uk": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Платіжні картки буде вилучено з Гаманця."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Платіжні картки, ключі й замовлення буде вилучено з Гаманця."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Платіжні картки й замовлення буде вилучено з Гаманця."
+                }
+              }
+            }
+          }
+        },
+        "fr": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Les cartes de paiement seront supprimées de Cartes."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Les cartes de paiement, les clés et les commandes seront supprimées de Cartes."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Les cartes de paiement et les commandes seront supprimées de Cartes."
+                }
+              }
+            }
+          }
+        },
+        "ro": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Cardurile de plată vor fi eliminate din Portofel."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Cardurile de plată, cheile și comenzile vor fi eliminate din Portofel."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Cardurile de plată și comenzile vor fi eliminate din Portofel."
+                }
+              }
+            }
+          }
+        },
+        "hr": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Platne kartice i narudžbe uklonit će se iz Novčanika."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Platne kartice, ključevi i narudžbe uklonit će se iz Novčanika."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Platne kartice i narudžbe uklonit će se iz Novčanika."
+                }
+              }
+            }
+          }
+        },
+        "pt_PT": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Os cartões de pagamento serão removidos da Carteira."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "As chaves, as encomendas e os cartões de pagamento serão removidos da Carteira."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "As encomendas e os cartões de pagamento serão removidos da Carteira."
+                }
+              }
+            }
+          }
+        },
+        "ja": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "支払い用カードはウォレットから削除されます。"
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "支払い用カード、キー、および注文はウォレットから削除されます。"
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "支払い用カードと注文はウォレットから削除されます。"
+                }
+              }
+            }
           }
         }
       }

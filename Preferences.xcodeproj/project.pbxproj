@@ -24,6 +24,8 @@
 		832326FB2C9E338F00B0483B /* KeyboardsTypingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832326FA2C9E338F00B0483B /* KeyboardsTypingView.swift */; };
 		832877D92CAD8C7100013B0B /* Accessibility.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 832877D82CAD8C7100013B0B /* Accessibility.xcstrings */; };
 		832877DB2CAD915400013B0B /* AmbientSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 832877DA2CAD915400013B0B /* AmbientSettings.xcstrings */; };
+		832877DD2CAD95C300013B0B /* AppleAccountUI.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 832877DC2CAD95C300013B0B /* AppleAccountUI.xcstrings */; };
+		832877DF2CAD987B00013B0B /* AppleIDSetup.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 832877DE2CAD987B00013B0B /* AppleIDSetup.xcstrings */; };
 		832928492B85779D006611CF /* TrackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832928482B85779D006611CF /* TrackingView.swift */; };
 		8329284B2B8578F4006611CF /* AppPermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8329284A2B8578F4006611CF /* AppPermissionsView.swift */; };
 		8329284E2B8580B3006611CF /* HeadphoneAudioLevelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8329284D2B8580B3006611CF /* HeadphoneAudioLevelsView.swift */; };
@@ -46,7 +48,6 @@
 		832F08792CAB27F40075570C /* BatteryUI.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 832F08782CAB27F40075570C /* BatteryUI.xcstrings */; };
 		832F517F2BBF4DC900335E5E /* NetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832F517E2BBF4DC900335E5E /* NetworkView.swift */; };
 		832FD83F2BC22EB000E99DEB /* BluetoothView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832FD83E2BC22EB000E99DEB /* BluetoothView.swift */; };
-		83349C9E2CAC5BDE00516A98 /* AppleIDSetup.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83349C9D2CAC5BDE00516A98 /* AppleIDSetup.xcstrings */; };
 		8335A70C2BC358E8001E199D /* CellularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8335A70B2BC358E8001E199D /* CellularView.swift */; };
 		833854F72C1648CD00339C4F /* SoftwareUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833854F62C1648CD00339C4F /* SoftwareUpdateView.swift */; };
 		833A44EF2C6E75BF003076F5 /* SystemFontsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833A44EE2C6E75BF003076F5 /* SystemFontsView.swift */; };
@@ -225,7 +226,6 @@
 		83D4CB762B7FF0B000D6087D /* WebContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D4CB752B7FF0B000D6087D /* WebContentView.swift */; };
 		83D5957B2CA5BF19003EF0CD /* RecordSoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D5957A2CA5BF19003EF0CD /* RecordSoundView.swift */; };
 		83D7B4512C925B0400C2B81E /* PhotographicStylesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D7B4502C925B0400C2B81E /* PhotographicStylesView.swift */; };
-		83DB888D2CAC94C4008218E6 /* AppleAccountUI.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83DB888C2CAC94C4008218E6 /* AppleAccountUI.xcstrings */; };
 		83DB888F2CAC97BF008218E6 /* AppleID.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83DB888E2CAC97BF008218E6 /* AppleID.xcstrings */; };
 		83DF95742B841F0900AEEB63 /* DownloadedLanguagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DF95732B841F0900AEEB63 /* DownloadedLanguagesView.swift */; };
 		83DF95762B84266E00AEEB63 /* SiriDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DF95752B84266E00AEEB63 /* SiriDetailView.swift */; };
@@ -286,6 +286,8 @@
 		832326FA2C9E338F00B0483B /* KeyboardsTypingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardsTypingView.swift; sourceTree = "<group>"; };
 		832877D82CAD8C7100013B0B /* Accessibility.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Accessibility.xcstrings; sourceTree = "<group>"; };
 		832877DA2CAD915400013B0B /* AmbientSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AmbientSettings.xcstrings; sourceTree = "<group>"; };
+		832877DC2CAD95C300013B0B /* AppleAccountUI.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AppleAccountUI.xcstrings; sourceTree = "<group>"; };
+		832877DE2CAD987B00013B0B /* AppleIDSetup.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AppleIDSetup.xcstrings; sourceTree = "<group>"; };
 		832928482B85779D006611CF /* TrackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingView.swift; sourceTree = "<group>"; };
 		8329284A2B8578F4006611CF /* AppPermissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPermissionsView.swift; sourceTree = "<group>"; };
 		8329284D2B8580B3006611CF /* HeadphoneAudioLevelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadphoneAudioLevelsView.swift; sourceTree = "<group>"; };
@@ -308,7 +310,6 @@
 		832F08782CAB27F40075570C /* BatteryUI.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = BatteryUI.xcstrings; sourceTree = "<group>"; };
 		832F517E2BBF4DC900335E5E /* NetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkView.swift; sourceTree = "<group>"; };
 		832FD83E2BC22EB000E99DEB /* BluetoothView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothView.swift; sourceTree = "<group>"; };
-		83349C9D2CAC5BDE00516A98 /* AppleIDSetup.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AppleIDSetup.xcstrings; sourceTree = "<group>"; };
 		8335A70B2BC358E8001E199D /* CellularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellularView.swift; sourceTree = "<group>"; };
 		833854F62C1648CD00339C4F /* SoftwareUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftwareUpdateView.swift; sourceTree = "<group>"; };
 		833A44EE2C6E75BF003076F5 /* SystemFontsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemFontsView.swift; sourceTree = "<group>"; };
@@ -490,7 +491,6 @@
 		83D4CB752B7FF0B000D6087D /* WebContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebContentView.swift; sourceTree = "<group>"; };
 		83D5957A2CA5BF19003EF0CD /* RecordSoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSoundView.swift; sourceTree = "<group>"; };
 		83D7B4502C925B0400C2B81E /* PhotographicStylesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotographicStylesView.swift; sourceTree = "<group>"; };
-		83DB888C2CAC94C4008218E6 /* AppleAccountUI.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AppleAccountUI.xcstrings; sourceTree = "<group>"; };
 		83DB888E2CAC97BF008218E6 /* AppleID.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AppleID.xcstrings; sourceTree = "<group>"; };
 		83DF95732B841F0900AEEB63 /* DownloadedLanguagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadedLanguagesView.swift; sourceTree = "<group>"; };
 		83DF95752B84266E00AEEB63 /* SiriDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriDetailView.swift; sourceTree = "<group>"; };
@@ -1022,9 +1022,9 @@
 				83A3E6902CAB98C3006F4643 /* Accessibility-D93.xcstrings */,
 				83A3E6922CAC2832006F4643 /* Accessibility-HapticMusic.xcstrings */,
 				832877DA2CAD915400013B0B /* AmbientSettings.xcstrings */,
-				83DB888C2CAC94C4008218E6 /* AppleAccountUI.xcstrings */,
+				832877DC2CAD95C300013B0B /* AppleAccountUI.xcstrings */,
 				83DB888E2CAC97BF008218E6 /* AppleID.xcstrings */,
-				83349C9D2CAC5BDE00516A98 /* AppleIDSetup.xcstrings */,
+				832877DE2CAD987B00013B0B /* AppleIDSetup.xcstrings */,
 				832F08782CAB27F40075570C /* BatteryUI.xcstrings */,
 				837FB16C2C39D461009B7A23 /* BluetoothSettings.xcstrings */,
 				834565772CAAEB82002BE49D /* Camera.xcstrings */,
@@ -1417,7 +1417,6 @@
 			files = (
 				83A3E68F2CAB9743006F4643 /* AccessibilityTitles.xcstrings in Resources */,
 				83F516B82C21B7FA0004E87A /* SettingsPhysical.gif in Resources */,
-				83349C9E2CAC5BDE00516A98 /* AppleIDSetup.xcstrings in Resources */,
 				834565742CAAE673002BE49D /* CameraEditKit.xcstrings in Resources */,
 				83B893C02B8FDBE8005705A3 /* iPhone15_Pro_NaturalTitanium.usdz in Resources */,
 				832F08792CAB27F40075570C /* BatteryUI.xcstrings in Resources */,
@@ -1434,8 +1433,8 @@
 				8315C93B2CA098720022CBC3 /* Reset.xcstrings in Resources */,
 				832877D92CAD8C7100013B0B /* Accessibility.xcstrings in Resources */,
 				833F0AD42B744D190036EAD2 /* Assets.xcassets in Resources */,
+				832877DD2CAD95C300013B0B /* AppleAccountUI.xcstrings in Resources */,
 				8361A22B2C193DBA00A7D5CC /* SettingsSimulator.gif in Resources */,
-				83DB888D2CAC94C4008218E6 /* AppleAccountUI.xcstrings in Resources */,
 				838C0D962C38A64900438E2D /* ControlCenterSettings.xcstrings in Resources */,
 				837FB16D2C39D461009B7A23 /* BluetoothSettings.xcstrings in Resources */,
 				8345656E2CAADFD6002BE49D /* CameraSettings.xcstrings in Resources */,
@@ -1443,6 +1442,7 @@
 				8367F6862CACF23700323392 /* WiFiKitUILocalizableStrings.xcstrings in Resources */,
 				83A422342CAC60B100EED538 /* CameraSettings-4k120.xcstrings in Resources */,
 				834565702CAAE202002BE49D /* CameraSettings-CameraButton.xcstrings in Resources */,
+				832877DF2CAD987B00013B0B /* AppleIDSetup.xcstrings in Resources */,
 				834565722CAAE313002BE49D /* CameraSettings-SmartStyles.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

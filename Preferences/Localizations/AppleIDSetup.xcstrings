@@ -5492,6 +5492,24 @@
             "value": "Ignorer cette étape"
           }
         },
+        "ro": {
+          "variations": {
+            "device": {
+              "mac": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Omite acest pas"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Omiteți acest pas"
+                }
+              }
+            }
+          }
+        },
         "uk": {
           "stringUnit": {
             "state": "translated",
@@ -7703,6 +7721,24 @@
             "value": "موافق"
           }
         },
+        "ca": {
+          "variations": {
+            "device": {
+              "mac": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "D’acord"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "OK"
+                }
+              }
+            }
+          }
+        },
         "zh_HK": {
           "stringUnit": {
             "state": "translated",
@@ -7787,6 +7823,24 @@
             "value": "OK"
           }
         },
+        "sk": {
+          "variations": {
+            "device": {
+              "mac": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Potvrdiť"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "OK"
+                }
+              }
+            }
+          }
+        },
         "bg": {
           "stringUnit": {
             "state": "translated",
@@ -7815,6 +7869,48 @@
           "stringUnit": {
             "state": "translated",
             "value": "OK"
+          }
+        },
+        "es": {
+          "variations": {
+            "device": {
+              "mac": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Aceptar"
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "OK"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "OK"
+                }
+              }
+            }
+          }
+        },
+        "pt_BR": {
+          "variations": {
+            "device": {
+              "mac": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "OK"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "OK"
+                }
+              }
+            }
           }
         },
         "kk": {
@@ -9142,6 +9238,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Afficher %@"
+          }
+        },
+        "ro": {
+          "variations": {
+            "device": {
+              "mac": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Afișează %@"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Afișați %@"
+                }
+              }
+            }
           }
         },
         "uk": {
@@ -10977,6 +11091,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Activer et continuer"
+          }
+        },
+        "ro": {
+          "variations": {
+            "device": {
+              "mac": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Activează și continuă"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Activați și continuați"
+                }
+              }
+            }
           }
         },
         "uk": {
@@ -14655,6 +14787,24 @@
             "value": "Ouvrir lʼURL"
           }
         },
+        "ro": {
+          "variations": {
+            "device": {
+              "mac": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Deschide URL‑ul"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Deschideți URL‑ul"
+                }
+              }
+            }
+          }
+        },
         "uk": {
           "stringUnit": {
             "state": "translated",
@@ -15436,6 +15586,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Se connecter"
+          }
+        },
+        "ro": {
+          "variations": {
+            "device": {
+              "mac": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Conectează"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Conectați"
+                }
+              }
+            }
           }
         },
         "uk": {
@@ -17273,6 +17441,24 @@
             "value": "Continuer"
           }
         },
+        "ro": {
+          "variations": {
+            "device": {
+              "mac": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Continuă"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Continuați"
+                }
+              }
+            }
+          }
+        },
         "uk": {
           "stringUnit": {
             "state": "translated",
@@ -17791,6 +17977,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Fermer"
+          }
+        },
+        "ro": {
+          "variations": {
+            "device": {
+              "mac": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Închide"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Închideți"
+                }
+              }
+            }
           }
         },
         "uk": {
@@ -20656,6 +20860,24 @@
             "value": "Xong"
           }
         },
+        "es": {
+          "variations": {
+            "device": {
+              "mac": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Aceptar"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "OK"
+                }
+              }
+            }
+          }
+        },
         "pt_BR": {
           "stringUnit": {
             "state": "translated",
@@ -21576,6 +21798,24 @@
             "value": "موافق"
           }
         },
+        "ca": {
+          "variations": {
+            "device": {
+              "mac": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "D’acord"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "OK"
+                }
+              }
+            }
+          }
+        },
         "zh_HK": {
           "stringUnit": {
             "state": "translated",
@@ -21660,6 +21900,24 @@
             "value": "OK"
           }
         },
+        "sk": {
+          "variations": {
+            "device": {
+              "mac": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Potvrdiť"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "OK"
+                }
+              }
+            }
+          }
+        },
         "bg": {
           "stringUnit": {
             "state": "translated",
@@ -21688,6 +21946,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "OK"
+          }
+        },
+        "es": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Aceptar"
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "OK"
+                }
+              }
+            }
           }
         },
         "pt_BR": {
@@ -23286,6 +23562,24 @@
             "value": "Mettre à jour avec l’iPhone ou l’iPad"
           }
         },
+        "ro": {
+          "variations": {
+            "device": {
+              "mac": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Actualizează cu iPhone‑ul sau iPad‑ul"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Actualizați cu iPhone‑ul sau iPad‑ul"
+                }
+              }
+            }
+          }
+        },
         "uk": {
           "stringUnit": {
             "state": "translated",
@@ -24069,6 +24363,24 @@
             "value": "Accéder à Réglages"
           }
         },
+        "ro": {
+          "variations": {
+            "device": {
+              "mac": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Accesează Configurări"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Accesați Configurări"
+                }
+              }
+            }
+          }
+        },
         "uk": {
           "stringUnit": {
             "state": "translated",
@@ -24324,6 +24636,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Copier"
+          }
+        },
+        "ro": {
+          "variations": {
+            "device": {
+              "mac": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Copiază"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Copiați"
+                }
+              }
+            }
           }
         },
         "uk": {
@@ -24696,6 +25026,24 @@
             "value": "موافق"
           }
         },
+        "ca": {
+          "variations": {
+            "device": {
+              "mac": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "D’acord"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "OK"
+                }
+              }
+            }
+          }
+        },
         "zh_HK": {
           "stringUnit": {
             "state": "translated",
@@ -24814,6 +25162,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "OK"
+          }
+        },
+        "es": {
+          "variations": {
+            "device": {
+              "mac": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Aceptar"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "OK"
+                }
+              }
+            }
           }
         },
         "pt_BR": {
@@ -27464,6 +27830,24 @@
             "value": "Afficher le compte Apple"
           }
         },
+        "ro": {
+          "variations": {
+            "device": {
+              "mac": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Afișează contul Apple"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Afișați contul Apple"
+                }
+              }
+            }
+          }
+        },
         "uk": {
           "stringUnit": {
             "state": "translated",
@@ -28623,6 +29007,24 @@
             "value": "موافق"
           }
         },
+        "ca": {
+          "variations": {
+            "device": {
+              "mac": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "D’acord"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "OK"
+                }
+              }
+            }
+          }
+        },
         "zh_HK": {
           "stringUnit": {
             "state": "translated",
@@ -28707,6 +29109,24 @@
             "value": "OK"
           }
         },
+        "sk": {
+          "variations": {
+            "device": {
+              "mac": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Potvrdiť"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "OK"
+                }
+              }
+            }
+          }
+        },
         "bg": {
           "stringUnit": {
             "state": "translated",
@@ -28735,6 +29155,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "OK"
+          }
+        },
+        "es": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Aceptar"
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "OK"
+                }
+              }
+            }
           }
         },
         "pt_BR": {
@@ -32700,6 +33138,24 @@
             "value": "Se connecter"
           }
         },
+        "ro": {
+          "variations": {
+            "device": {
+              "mac": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Conectează"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Conectați"
+                }
+              }
+            }
+          }
+        },
         "uk": {
           "stringUnit": {
             "state": "translated",
@@ -33481,6 +33937,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "Se connecter"
+          }
+        },
+        "ro": {
+          "variations": {
+            "device": {
+              "mac": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Conectează"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Conectați"
+                }
+              }
+            }
           }
         },
         "uk": {
@@ -35037,6 +35511,24 @@
             "value": "Aceptar"
           }
         },
+        "pt_BR": {
+          "variations": {
+            "device": {
+              "mac": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "OK"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "OK"
+                }
+              }
+            }
+          }
+        },
         "kk": {
           "stringUnit": {
             "state": "translated",
@@ -35425,6 +35917,24 @@
             "value": "موافق"
           }
         },
+        "ca": {
+          "variations": {
+            "device": {
+              "mac": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "D’acord"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "OK"
+                }
+              }
+            }
+          }
+        },
         "zh_HK": {
           "stringUnit": {
             "state": "translated",
@@ -35509,6 +36019,24 @@
             "value": "OK"
           }
         },
+        "sk": {
+          "variations": {
+            "device": {
+              "mac": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Potvrdiť"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "OK"
+                }
+              }
+            }
+          }
+        },
         "bg": {
           "stringUnit": {
             "state": "translated",
@@ -35537,6 +36065,24 @@
           "stringUnit": {
             "state": "translated",
             "value": "OK"
+          }
+        },
+        "es": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Aceptar"
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "OK"
+                }
+              }
+            }
           }
         },
         "pt_BR": {
@@ -38450,6 +38996,24 @@
             "value": "Envoyer"
           }
         },
+        "ro": {
+          "variations": {
+            "device": {
+              "mac": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Trimite"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Trimiteți"
+                }
+              }
+            }
+          }
+        },
         "uk": {
           "stringUnit": {
             "state": "translated",
@@ -39733,6 +40297,42 @@
           "stringUnit": {
             "state": "translated",
             "value": "Xong"
+          }
+        },
+        "es": {
+          "variations": {
+            "device": {
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Aceptar"
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "OK"
+                }
+              }
+            }
+          }
+        },
+        "pt_BR": {
+          "variations": {
+            "device": {
+              "mac": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "OK"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "OK"
+                }
+              }
+            }
           }
         },
         "kk": {
