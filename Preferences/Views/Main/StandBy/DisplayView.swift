@@ -9,42 +9,42 @@ import SwiftUI
 
 struct DisplayView: View {
     // Variables
-    @State private var selected = "Automatically"
-    let options = ["Automatically", "After 20 Seconds", "Never"]
-    
-    @State private var nightModeEnabled = true
-    @State private var motionWakeEnabled = true
+    @AppStorage("AmbientSelectedSetting") private var selected = "ALWAYS_ON_DISPLAY_TURN_OFF_AUTOMATICALLY"
+    @AppStorage("AmbientEnabledSetting") private var nightModeEnabled = true
+    @AppStorage("AmbientMotionSetting") private var motionWakeEnabled = true
+    let options = ["ALWAYS_ON_DISPLAY_TURN_OFF_AUTOMATICALLY", "ALWAYS_ON_DISPLAY_TURN_OFF_AFTER_IDLE", "ALWAYS_ON_DISPLAY_TURN_OFF_NEVER"]
+    let table = "AmbientSettings"
     
     var body: some View {
-        CustomList(title: "Display", topPadding: true) {
+        CustomList(title: "ALWAYS_ON_DISPLAY_OPTIONS".localize(table: table), topPadding: true) {
             Section {
                 Picker("", selection: $selected) {
-                    ForEach(options, id: \.self) {
-                        Text($0)
+                    ForEach(options, id: \.self) { option in
+                        Text(option.localize(table: table))
                     }
                 }
                 .pickerStyle(.inline)
                 .labelsHidden()
             } header: {
-                Text("Turn Display Off")
+                Text("TURN_DISPLAY_OFF_GROUP_HEADER".localize(table: table))
             } footer: {
-                Text("When set to Automatically, the display will intelligently turn off when iPhone is not in use and the room is dark.")
+                Text("ALWAYS_ON_DISPLAY_TURN_OFF_FOOTER_AUTOMATICALLY".localize(table: table))
             }
             
             Section {
-                Toggle("Night Mode", isOn: $nightModeEnabled)
-                    .disabled(selected == "Never")
+                Toggle("NIGHT_MODE_ENABLED".localize(table: table), isOn: $nightModeEnabled)
+                    .disabled(selected == "ALWAYS_ON_DISPLAY_TURN_OFF_NEVER")
             } header: {
-                Text("At Night")
+                Text("AT_NIGHT_GROUP_HEADER".localize(table: table))
             } footer: {
-                Text("StandBy displays with a red tint in low ambient lighting.")
+                Text("NIGHT_MODE_ENABLED_FOOTER".localize(table: table, "AMBIENT_FEATURE_NAME"))
             }
             
-            if selected == "Automatically" {
+            if selected == "ALWAYS_ON_DISPLAY_TURN_OFF_AUTOMATICALLY" {
                 Section {
-                    Toggle("Motion To Wake", isOn: $motionWakeEnabled)
+                    Toggle("MOTION_TO_WAKE_ENABLED".localize(table: table), isOn: $motionWakeEnabled)
                 } footer: {
-                    Text("StandBy will turn on the display when motion is detected at night.")
+                    Text("MOTION_TO_WAKE_ENABLED_FOOTER".localize(table: table, "AMBIENT_FEATURE_NAME"))
                 }
             }
         }

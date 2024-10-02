@@ -1,193 +1,6331 @@
 {
-  "sourceLanguage" : "en",
-  "strings" : {
-    "ALWAYS_ON_DISPLAY_OPTIONS" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Display"
+  "sourceLanguage": "en",
+  "strings": {
+    "ALWAYS_ON_DISPLAY_TURN_OFF_AUTOMATICALLY": {
+      "extractionState": "manual",
+      "localizations": {
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automaticamente"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pantalla"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "자동"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "באופן אוטומטי"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Secara Otomatis"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automaattisesti"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Otomatik"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Автоматически"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automatikusan"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automatisch"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In automatico"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automáticamente"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Αυτόματα"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automàticament"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automatiquement"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自動"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自動"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automatiskt"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automatisk"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ऑटोमैटिकली"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automatisk"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automatically"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تلقائيًا"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automatycznie"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "อัตโนมัติ"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自动"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automatiškai"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automatically"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automáticamente"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automaticky"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automaticky"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automatik"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Автоматично"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automatically"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Samodejno"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automatisch"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tự động"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automáticamente"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automat"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Автоматты"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automatique"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automaticamente"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Автоматично"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automatski"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自動"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automatically"
           }
         }
       }
     },
-    "AMBIENT_FEATURE_NAME" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "StandBy"
+    "NOTIFICATIONS_PREVIEW_FOOTER": {
+      "extractionState": "manual",
+      "localizations": {
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ pode ocultar a pré‑visualização de uma notificação até tocar nela."
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "En reposo"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 모드에서 알림을 탭할 때까지 알림 미리보기를 가릴 수 있습니다."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "״%@״ יכול להסתיר את התצוגה המקדימה של עדכון עד להקשה עליו."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ dapat menyembunyikan pratinjau pemberitahuan hingga Anda mengetuknya."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ voi kätkeä ilmoituksen esikatselun, kunnes napautat sitä."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, bildirimin önizlemesini siz bildirime dokununcaya dek gizleyebilir."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Предпросмотр уведомления может быть скрыт в режиме «%@», пока Вы не коснетесь этого уведомления."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A(z) %@ képes elrejteni az értesítés előnézetét, amíg rá nem koppint."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ kan de voorvertoning van een melding verbergen totdat je erop tikt."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ può nascondere l’anteprima di una notifica finché non la tocchi."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ puede ocultar la vista previa de una notificación hasta que la toques."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Η δυνατότητα «%@» μπορεί να αποκρύπτει την προεπισκόπηση μιας γνωστοποίησης μέχρι να την αγγίξετε."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ pot ocultar la previsualització d’una notificació fins que la toquis."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ peut masquer l’aperçu d’une notification jusqu’à ce que vous touchiez cette dernière."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%[tt]@可以隱藏通知的預覽內容，直到你點一下為止。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@可以隱藏通知預覽，直至你點一下。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ kan gömma förhandsvisningen av en notis tills du trycker på den."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ kan vente med å forhåndsvise en varsling til du trykker på den."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "किसी सूचना के प्रीव्यू को %@ तब तक छिपाकर रख सकता है जब तक आप उस पर टैप नहीं करते।"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ kan skjule eksemplet på en notifikation, indtil du trykker på den."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ can hide the preview of a notification until you tap on it."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يمكن أن يخفي نمط %@ معاينة الإشعار إلى أن تضغط عليه."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ może ukrywać podgląd powiadomień i wyświetlać go dopiero po stuknięciu."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%[tt]@สามารถซ่อนการแสดงตัวอย่างของการแจ้งเตือนได้จนกว่าคุณจะแตะที่การแจ้งเตือน"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@可在你轻点前隐藏通知预览。"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funkcija „%@“ gali paslėpti pranešimo peržiūrą tol, kol jį bakstelėsite."
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ can hide the preview of a notification until you tap it."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ puede ocultar la vista previa de una notificación hasta que la toques."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ může skrývat náhledy oznámení, dokud na ně neklepnete."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ skryje náhľad hlásenia, pokiaľ naň neklepnete."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ boleh menyembunyikan pratonton pemberitahuan sehingga anda mengetik padanya."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ може да скрива прегледа на известие, докато не го докоснете."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ can hide the preview of a notification until you tap it."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ lahko skrije predogled obvestila, dokler nanj ne tapnete."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„%@“ kann die Vorschau von Mitteilungen ausblenden, bis du darauf tippst."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ có thể ẩn bản xem trước của thông báo đến khi bạn chạm vào thông báo."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En el modo “%@”, se ocultará la previsualización de las notificaciones hasta que las toques."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ poate ascunde previzualizarea unei notificări până când apăsați pe aceasta."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Хабарландыруды түрткенге дейін, %@ хабарландырудың алдын ала көрінісін жасырады."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ peut masquer l’aperçu d’une notification jusqu’à ce que vous la touchiez."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ pode ocultar a pré‑visualização de uma notificação até que você toque nela."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "У режимі «%@» передогляд сповіщень може приховуватися, доки ви не торкнете його."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ može sakriti pregled obavijesti sve dok je ne dodirnete."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "通知をタップするまで、%@でプレビューを表示しないようにすることができます。"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ can hide the preview of a notification until you tap it."
           }
         }
       }
     },
-    "AMBIENT_MODE_ENABLED_FOOTER" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ will turn on when iPhone is placed on its side while charging to show information like widgets, photo frames, or clocks."
+    "NOTIFICATIONS_GROUP_HEADER": {
+      "extractionState": "manual",
+      "localizations": {
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notificações"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cuando el iPhone se esté cargando en posición horizontal, se activará el modo “%@” para mostrar widgets, fotos o relojes."
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "알림"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "עדכונים"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pemberitahuan"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ilmoitukset"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bildirimler"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Уведомления"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Értesítések"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meldingen"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notifiche"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notificaciones"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Γνωστοποιήσεις"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notificacions"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notifications"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "通知"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "通知"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notiser"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Varslinger"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "सूचनाएँ"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notifikationer"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notifications"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الإشعارات"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Powiadomienia"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "การแจ้งเตือน"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "通知"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pranešimai"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notifications"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notificaciones"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oznámení"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hlásenia"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pemberitahuan"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Известия"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notifications"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Obvestila"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mitteilungen"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Thông báo"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notificaciones"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notificări"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Хабарландырулар"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notifications"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notificações"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сповіщення"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Obavijesti"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "通知"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notifications"
           }
         }
       }
     },
-    "DISPLAY_SETTINGS_GROUP_HEADER" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Display"
+    "NIGHT_MODE_ENABLED": {
+      "extractionState": "manual",
+      "localizations": {
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modo Noite"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pantalla"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "야간 모드"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "מצב לילה"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mode Malam"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yötila"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gece Modu"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ночной режим"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Éjszakai mód"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nachtmodus"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modalità notte"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modo Noche"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Νυχτερινή λειτουργία"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mode de nit"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mode Nuit"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "夜間模式"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "夜間模式"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nattläge"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nattmodus"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "नाइट मोड"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nattilstand"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Night Mode"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "النمط الليلي"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tryb Noc"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "โหมดกลางคืน"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "夜间模式"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Naktinis režimas"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Night Mode"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modo Noche"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Noční režim"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nočný režim"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mod Malam"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Нощен режим"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Night Mode"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nočni način"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nachtmodus"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chế độ Ban đêm"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modo Noche"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mod Noapte"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Түнгі режим"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mode Nuit"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modo Noite"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Нічний режим"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Noćni mod"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "夜間モード"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Night Mode"
           }
         }
       }
     },
-    "NIGHT_MODE_ENABLED" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Night Mode"
+    "NOTIFICATIONS_PREVIEW": {
+      "extractionState": "manual",
+      "localizations": {
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar pré‑visualização após tocar"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Modo Noche"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "탭할 때만 미리보기"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "תצוגה מקדימה בהקשה בלבד"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tampilkan Pratinjau Hanya Saat Diketuk"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Näytä esikatselu vain napautuksella"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Önizlemeyi Yalnızca Dokunulduğunda Göster"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Предпросмотр только по касанию"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Előnézet megjelenítése csak koppintással"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toon voorvertoning bij alleen tikken"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostra anteprima solo con tocco"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Previsualizar sólo al tocar"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Εμφάνιση προεπισκόπησης μόνο με άγγιγμα"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Previsualitza només en tocar"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Afficher l’aperçu au toucher uniquement"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "只在點一下時顯示預覽內容"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "只在點一下時顯示預覽"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Visa förhandsvisning endast efter tryck"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forhåndsvis kun ved trykk"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "केवल टैप करने पर प्रीव्यू दिखाएँ"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vis kun eksempel ved tryk"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show Preview on Tap Only"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إظهار المعاينة عند الضغط فقط"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pokazuj podgląd po stuknięciu"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "แสดงตัวอย่างเมื่อแตะเท่านั้น"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "仅轻点时显示预览"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rodyti peržiūrą tik bakstelėjus"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show Preview on Tap Only"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Previsualizar sólo al tocar"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Náhledy zobrazit až po klepnutí"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobraziť náhľad len pri klepnutí"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tunjukkan Pratonton apabila Diketik Sahaja"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Показвай прегледа само при докосване"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show Preview on Tap Only"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prikaži predogled samo ob tapu"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vorschau nur bei Tippen anzeigen"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chỉ hiển thị bản xem trước khi chạm"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar previsualización solo al tocar"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Afișare previzualizare doar la apăsare"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Тек түрткенде алдын ала көріністі көрсету"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Afficher l’aperçu au toucher uniquement"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar Pré-visualização Apenas ao Tocar"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Показувати передогляд тільки за дотиком"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prikaži pregled samo nakon dodira"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "タップしたときのみプレビューを表示"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show Preview on Tap Only"
           }
         }
       }
     },
-    "NIGHT_MODE_ENABLED_FOOTER" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ displays with a red tint in low ambient lighting."
+    "AMBIENT_MODE_ENABLED_FOOTER": {
+      "extractionState": "manual",
+      "localizations": {
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A funcionalidade %@ será ativada quando o iPhone for colocado em posição horizontal durante o carregamento, para mostrar informação como widgets, molduras de fotografias ou relógios."
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "El modo “%@” se muestra en tonos rojos cuando hay poca luz ambiente."
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "iPhone이 충전 중인 상태로 가로 화면 방향으로 놓여 있으면 %@ 기능이 활성화되어 위젯, 사진 프레임 또는 시계 등의 정보를 표시합니다."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "״%@״ יופעל כאשר ה-iPhone מונח על צידו תוך כדי טעינה כדי להציג מידע כמו וידג׳טים, מסגרות של תמונות או שעונים."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ akan menyala saat iPhone diletakkan menyamping sambil diisi dayanya untuk menampilkan informasi seperti widget, bingkai foto, atau jam."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ menee päälle, kun iPhone asetetaan lataamisen aikana kyljelleen, jolloin se näyttää tietoja, kuten widgettejä, valokuvakehyksiä tai kelloja."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, araç takımı, fotoğraf çerçevesi veya saat gibi bilgileri göstermek için iPhone şarj olurken yan koyulduğunda açılır."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Режим «%@» будет включаться на горизонтально повернутом iPhone во время зарядки, чтобы показывать виджеты, фоторамки или часы."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A %@ be fog kapcsolni, amikor az iPhone töltés közben az oldalára van fordítva, és információkat fog megjeleníteni, például widgeteket, fotókat vagy órákat."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ wordt ingeschakeld wanneer de iPhone tijdens het opladen op zijn zijkant wordt gezet om informatie zoals widgets, fotokaders of klokken weer te geven."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ si attiverà quando iPhone è in carica in orientamento orizzontale per mostrare informazioni come widget, orologi o foto."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El modo %@ se activará cuando el iPhone se esté recargando y en posición horizontal para mostrar información como widgets, marcos de fotos o relojes."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Όταν το iPhone τοποθετηθεί σε οριζόντια θέση και φορτίζεται, η λειτουργία «%@» θα ενεργοποιηθεί για εμφάνιση πληροφοριών, όπως widget, πλαίσια φωτογραφιών ή ρολόγια."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ s’activarà i mostrarà ginys, fotos o rellotges quan tinguis l’iPhone connectat al corrent i en posició horitzontal."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ s’activera pour afficher des éléments comme des widgets, des cadres photo ou des horloges quand l’iPhone sera en cours de recharge et placé sur le côté."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "iPhone橫向擺放並進行充電時，%[tt]@會開啟以顯示小工具、相框或時鐘等資訊。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "iPhone橫向擺放並進行充電時，%@會開啟以顯示小工具、相片或時鐘等資料。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ aktiveras när iPhone placeras i liggande läge och laddas för att visa information som widgetar, bildramar eller klockor."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ slås på når iPhonen legges på siden under lading, for å vise informasjon som widgeter, bilderammer eller klokker."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "iPhone लैंडस्केप में रखा गया हो और चार्ज पर लगा हो, तो %@ चालू हो जाएगा और विजेट, तस्वीर फ़्रेम या घड़ियों जैसी जानकारी दिखाई जाएगी।"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ slås til, når iPhone placeres i liggende retning og er tilsluttet en strømforsyning, for at vise oplysninger som f.eks. widgets, fotorammer eller ure."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ will turn on when iPhone is placed on its side while charging to show information like widgets, photo frames, or clocks."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "سيتم تشغيل %@ عند وضع iPhone على جانبه أثناء شحنه لإظهار معلومات مثل الأدوات أو إطارات الصور أو الساعات."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ będzie włączany po ustawieniu iPhone’a w orientacji poziomej i podłączeniu go do źródła zasilania. Tryb ten może wyświetlać widżety, ramki ze zdjęciami i zegary."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%[tt]@จะเปิดใช้เมื่อวาง iPhone ในแนวนอนในระหว่างชาร์จเพื่อแสดงข้อมูล เช่น วิดเจ็ต กรอบรูปภาพ หรือนาฬิกา"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "iPhone充电并横向放置时将打开%@，以显示小组件、照片或时钟等信息。"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funkcija „%@“ bus įjungta „iPhone“ pavertus ant šono, kai jis įkraunamas, kad būtų rodoma informacija, pvz., valdikliai, nuotraukų rėmeliai arba laikrodžiai."
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ will turn on when iPhone is placed on its side while charging to show information like widgets, photo frames or clocks."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El modo %@ se activará cuando el iPhone se esté recargando y en posición horizontal para mostrar información como widgets, marcos de fotos o relojes."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ se zapne a zobrazí informace, jako jsou widgety, fotky nebo hodiny, když bude iPhone ve vodorovné poloze a připojený k napájení."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ sa zapne a zobrazí informácie, ako sú widgety, fotorámiky alebo hodiny, keď bude iPhone vo vodorovnej polohe a pripojený k napájaniu."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ akan diaktifkan apabila iPhone diletakkan pada sisinya semasa mengecas untuk menunjukkan maklumat seperti widget, bingkai foto atau jam."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ ще се включи, когато iPhone е поставен хоризонтално, докато се зарежда, за да показва информация като инструменти, снимки или часовници."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ will turn on when iPhone is placed on its side while charging to show information like widgets, photo frames or clocks."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Način %@ se bo vklopil, ko iPhone med polnjenjem postavite ležeče, da se prikažejo informacije, kot so gradniki, fotografije ali ure."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„%@“ wird aktiviert, wenn das iPhone während des Ladens auf die Seite gestellt wird, um Informationen wie Widgets, Fotorahmen oder Uhren anzuzeigen."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ sẽ bật khi iPhone được đặt ở hướng ngang trong khi sạc để hiển thị các thông tin như tiện ích, khung ảnh hoặc đồng hồ."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cuando el iPhone se esté cargando en posición horizontal, se activará el modo “%@” para mostrar widgets, fotos o relojes."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modul %@ se va activa atunci când iPhone‑ul este așezat pe orizontală în timp ce se încarcă pentru a afișa informații precum widgeturi, rame foto digitale sau ceasuri."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ функциясы виджеттер, фото жиектемелер немесе сағаттар сияқты ақпаратты көрсету үшін зарядтау кезінде iPhone құрылғысын бүйірімен қойғанда іске қосылады."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ s’activera pour afficher des widgets, des photos ou des horloges lorsque l’iPhone sera en charge et placé en mode paysage."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O modo %@ será ativado quando o iPhone estiver sendo carregado e na horizontal, para mostrar informações como widgets, molduras de fotos ou relógios."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Режим «%@» вмикатиметься, коли iPhone розміщено горизонтально та підʼєднано до живлення, щоб показувати віджети, фотографії, годинники тощо."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ će se uključiti kad iPhone bude postavljen na bočnu stranu tijekom punjenja radi prikazivanja informacija poput widgeta, okvira fotografija ili satova."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@は、iPhoneが充電中で横向きになっているときにオンになり、ウィジェット、写真フレーム、時計などの情報が表示されます。"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ will turn on when iPhone is placed on its side while charging to show information like widgets, photo frames or clocks."
           }
         }
       }
     },
-    "NOTIFICATIONS_ENABLED" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Show Notifications"
+    "TURN_DISPLAY_OFF_GROUP_HEADER": {
+      "extractionState": "manual",
+      "localizations": {
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desligar ecrã"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Mostrar notificaciones"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "디스플레이 끄기"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "כיבוי התצוגה"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Matikan Layar"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Laita näyttö pois päältä"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ekranı Kapat"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Выключение дисплея"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kijelző kikapcsolása"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schakel scherm uit"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Disattiva schermo"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apagar pantalla"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Απενεργοποίηση οθόνης"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apaga la pantalla"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Éteindre l’écran"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "關閉螢幕"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "關閉螢幕"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stäng av skärmen"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Slå skjerm av"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "डिस्प्ले बंद करें"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Slå skærm fra"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turn Display Off"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إيقاف الشاشة"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wyłącz wyświetlacz"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ปิดจอภาพ"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "关闭显示屏"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Išjungti ekraną"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turn Display Off"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apagar pantalla"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Displej vypínat"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vypnúť displej"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Matikan Paparan"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Изключи екрана"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turn Display Off"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Izklop zaslona"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Display deaktivieren"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tắt màn hình"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apagar pantalla"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stingere afișaj"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Дисплейді өшіру"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Éteindre lʼécran"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desligar Tela"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вимикати екран"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Isključi zaslon"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "画面をオフにする"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turn Display Off"
           }
         }
       }
     },
-    "NOTIFICATIONS_ENABLED_FOOTER" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Critical notifications will still be shown in %@ if this switch is off."
+    "DISPLAY_SETTINGS_GROUP_HEADER": {
+      "extractionState": "manual",
+      "localizations": {
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Visualização"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Si esta opción está desactivada, las notificaciones importantes se seguirán mostrando en el modo “%@”."
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "디스플레이"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "תצוגה"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Layar"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Näyttö"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ekran"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Дисплей"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kijelző"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weergave"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schermo"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Visualización"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Οθόνη"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pantalla"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Écran"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "螢幕"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "螢幕"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skärm"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skjerm"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "डिस्प्ले"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skærm"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Display"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الشاشة"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wyświetlacz"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "จอภาพ"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "显示屏"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ekranas"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Display"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Visualización"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Displej"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Displej"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paparan"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Екран"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Display"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zaslon"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Display"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Màn hình"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pantalla"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Afișaj"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Дисплей"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Affichage"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tela"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Дисплей"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zaslon"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "画面表示"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Display"
           }
         }
       }
     },
-    "NOTIFICATIONS_GROUP_HEADER" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Notifications"
+    "ALWAYS_ON_DISPLAY_TURN_OFF_AFTER_IDLE": {
+      "extractionState": "manual",
+      "localizations": {
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Após 20 segundos"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Notificaciones"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20초 후"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "לאחר 20 שניות"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Setelah 20 Detik"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20 sekunnin kuluttua"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20 Saniye Sonra"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Через 20 секунд"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20 másodperc után"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Na 20 seconden"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dopo 20 secondi"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Después de veinte segundos"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Μετά από 20 δευτερόλεπτα"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Al cap de 20 segons"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Après 20 secondes"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20秒後"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20秒後"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Efter 20 sekunder"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Etter 20 sekunder"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20 सेकंड बाद"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Efter 20 sekunder"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "After 20 Seconds"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "بعد ٢٠ ثانية"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Po 20 sekundach"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "หลังจาก 20 วินาที"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20秒后"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Po 20 sekundžių"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "After 20 Seconds"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Después de veinte segundos"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Po 20 sekundách"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Po 20 sekundách"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Selepas 20 Saat"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "След 20 секунди"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "After 20 Seconds"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Po 20 sekundah"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nach 20 Sekunden"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sau 20 giây"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tras 20 segundos"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "După 20 de secunde"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20 секундтан кейін"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Après 20 secondes"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Após 20 Segundos"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Через 20 секунд"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nakon 20 sekundi"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "20秒後"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "After 20 Seconds"
           }
         }
       }
     },
-    "NOTIFICATIONS_PREVIEW" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Show Preview on Tap Only"
+    "NOTIFICATIONS_ENABLED": {
+      "extractionState": "manual",
+      "localizations": {
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar notificações"
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Mostrar previsualización solo al tocar"
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "알림 보기"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "הצגת עדכונים"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tampilkan Pemberitahuan"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Näytä ilmoitukset"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bildirimleri Göster"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Показ уведомлений"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Értesítések megjelenítése"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toon meldingen"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostra notifiche"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar notificaciones"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Εμφάνιση γνωστοποιήσεων"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostra les notificacions"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Afficher les notifications"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "顯示通知"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "顯示通知"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Visa notiser"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vis varslinger"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "सूचनाएँ दिखाएँ"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vis notifikationer"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show Notifications"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إظهار الإشعارات"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pokazuj powiadomienia"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "แสดงการแจ้งเตือน"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "显示通知"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rodyti pranešimus"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show Notifications"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar notificaciones"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobrazovat oznámení"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobrazovať hlásenia"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tunjukkan Pemberitahuan"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Покажи известия"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show Notifications"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prikaži obvestila"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mitteilungen einblenden"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hiển thị thông báo"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar notificaciones"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Afișare notificări"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Хабарландыруларды көрсету"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Afficher les notifications"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar Notificações"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Показувати сповіщення"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prikaži obavijesti"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "通知を表示"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show Notifications"
           }
         }
       }
     },
-    "NOTIFICATIONS_PREVIEW_FOOTER" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ can hide the preview of a notification until you tap on it."
+    "NOTIFICATIONS_ENABLED_FOOTER": {
+      "extractionState": "manual",
+      "localizations": {
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ continua a mostrar notificações críticas quando esta opção está desativada."
           }
         },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "En el modo “%@”, se ocultará la previsualización de las notificaciones hasta que las toques."
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 스위치가 꺼져 있어도 중요한 알림은 %@에 계속 표시됩니다."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "עדכונים קריטיים יוצגו ב״%@״ גם אם המתג יועבר למצב כבוי."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pemberitahuan penting masih akan ditampilkan di %@ jika pengalih ini mati."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ näyttää silti kriittiset ilmoitukset, jos tämä kytkin on pois päältä."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kritik bildirimler, bu ayar kapalıysa bile %@ etkinken görünür."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Важные уведомления будут отображаться в режиме «%@», даже если этот переключатель в положении «Выкл.»."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ha ez a kapcsoló ki van kapcsolva, a kritikus értesítések továbbra is megjelennek a következőben: %@."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kritieke meldingen worden nog steeds weergegeven in %@ als deze optie is uitgeschakeld."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se questo interruttore è disattivato, le notifiche urgenti verranno comunque mostrate in %@."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Incluso si están desactivadas, las notificaciones críticas se mostrarán en %@."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Οι κρίσιμες γνωστοποιήσεις θα εξακολουθήσουν να εμφανίζονται στην %@, αν είναι ανενεργός αυτός ο διακόπτης."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ continuarà mostrant els avisos crítics encara que aquesta opció estigui desactivada."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les notifications critiques s’afficheront quand même dans %@ en cas de désactivation."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "若關閉此開關，重要的通知仍會顯示在%[tt]@中。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "如關閉此開關，重要通知仍然會在%@中顯示。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kritiska notiser visas i %@ även om detta reglage är av."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kritiske varslinger vil fortsatt bli vist i %@ selv om du slår av denne bryteren."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "यदि यह स्विच बंद होता है, तब भी महत्वपूर्ण सूचनाएँ %@ में दिखाई जाएँगी।"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vigtige notifikationer vises stadig i %@, hvis denne kontakt er slået fra."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Critical notifications will still be shown in %@ if this switch is off."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "سيستمر إظهار الإشعارات العاجلة في %@ في حالة إيقاف مفتاح التبديل هذا."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ będzie nadal wyświetlać powiadomienia krytyczne, nawet jeśli ta opcja jest wyłączona."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "การแจ้งเตือนที่สำคัญจะแสดงใน%[tt]@หากสวิตซ์นี้ปิด"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "若关闭此开关，重要通知仍将在%@中显示。"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jei šis perjungiklis išjungtas, funkcijoje „%@“ vis tiek bus rodomi kritiniai pranešimai."
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Critical notifications will still be shown in %@ if this switch is off."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Incluso si están desactivadas, las notificaciones críticas se mostrarán en %@."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kritická oznámení bude %@ zobrazovat dál, i když tento přepínač vypnete."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kritické hlásenia bude %@ ďalej zobrazovať, aj keď tento prepínač vypnete."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pemberitahuan kritikal masih akan ditunjukkan dalam %@ jika suis ini tidak aktif."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Критичните известия ще се показват в режим \"%@\", дори ако този превключвател е изключен."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Critical notifications will still be shown in %@ if this switch is off."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kritična obvestila bodo še vedno prikazana v načinu %@, če je ta možnost izklopljena."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kritische Mitteilungen werden weiterhin in „%@“ angezeigt, wenn diese Option deaktiviert ist."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Thông báo quan trọng sẽ vẫn được hiển thị trong %@ nếu công tắc này bị tắt."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si esta opción está desactivada, las notificaciones importantes se seguirán mostrando en el modo “%@”."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ va continua să afișeze notificările critice dacă acest comutator este dezactivat."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Бұл опция өшірулі болса да, критикалық хабарландырулар %@ ішінде көрсетіле береді."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les notifications critiques seront toujours affichées dans %@ même si ce réglage est désactivé."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se você desativar, as notificações críticas ainda aparecerão no modo %@."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Критичні сповіщення все одно показуватимуться в режимі «%@», якщо цей перемикач вимкнено."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kritične obavijesti i dalje će se prikazivati u “%@” ako je ovaj prekidač isključen."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "このスイッチがオフになっていても、重大な通知は%@で表示されます。"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Critical notifications will still be shown in %@ if this switch is off."
+          }
+        }
+      }
+    },
+    "MOTION_TO_WAKE_ENABLED": {
+      "extractionState": "manual",
+      "localizations": {
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mover para reativar"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "움직임이 감지되면 깨우기"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "התעוררות בעת זיהוי תזוזה"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gerakan Untuk Bangun"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Herää liikkeestä"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hareket Edince Uyandır"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Выход из сна при движении"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Felébresztés mozgással"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beweging om te activeren"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Attiva con movimento"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Activar con movimiento"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Κίνηση για αφύπνιση"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Activa amb el moviment"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Activer avec le mouvement"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "動作喚醒"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "動作喚醒"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Väck med rörelse"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bevegelse for å vekke"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "सक्रिय करने के लिए हलचल करें"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bevægelse afbryder vågeblus"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Motion To Wake"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حرِّك للتنبيه"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Porusz, aby obudzić"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เคลื่อนไหวเพื่อปลุก"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "通过动作唤醒"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pajudinkite, kad pažadintumėte"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Motion To Wake"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Activar con movimiento"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Probudit při pohybu"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobudiť pri pohybe"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gerak untuk Bangunkan"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Движение за събуждане"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Motion To Wake"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vklop s premikom"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bei Bewegung aktivieren"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chuyển động để bật"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Activar con movimiento"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mișcare pentru trezire"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Іске қосу қимылы"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mouvement pour activer"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mover para Despertar"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Будити рухом"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uključenje kretanjem"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "動かすとスリープ解除"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Motion To Wake"
+          }
+        }
+      }
+    },
+    "ALWAYS_ON_DISPLAY_TURN_OFF_NEVER": {
+      "extractionState": "manual",
+      "localizations": {
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nunca"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "안 함"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "אף פעם"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jangan Pernah"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ei koskaan"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Asla"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Никогда"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Soha"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nooit"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mai"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nunca"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ποτέ"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mai"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jamais"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "永不"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "永不"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aldrig"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aldri"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "कभी नहीं"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aldrig"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Never"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مطلقًا"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nigdy"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ไม่เลย"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "永不"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Niekada"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Never"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nunca"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nevypínat"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nikdy"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jangan"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Никога"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Never"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nikoli"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nie"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Không"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nunca"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Niciodată"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ешқашан"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jamais"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nunca"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ніколи"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nikad"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "しない"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Never"
+          }
+        }
+      }
+    },
+    "BUMP_TO_WAKE_ENABLED_FOOTER": {
+      "extractionState": "manual",
+      "localizations": {
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quando esta opção está ativada, bater na mesa faz reativar a funcionalidade %@."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 설정이 켜져 있는 경우 사용자가 테이블에 부딪히면 %@에 의해 깨우기 상태가 됩니다."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "כאשר הגדרה זו מופעלת, ״%@״ יעיר את המכשיר בעת חבטה על השולחן."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jika pengaturan ini menyala, %@ akan terbangun saat Anda menyenggol meja."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kun tämä asetus on päällä, %@ herää, kun tömäytät pöytää."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, bu ayar açıkken masaya çarptığınızda açılır."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Если эта настройка включена, %@ выйдет из режима сна, когда Вы толкнете стол."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ha ez a beállítás be van kapcsolva, a(z) %@ fel fog ébredni, amikor meglöki az asztalt."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wanneer deze instelling is ingeschakeld, wordt de %@ geactiveerd wanneer je tegen de tafel stoot."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quando l’impostazione è attiva, %@ si attiverà se dai un colpetto sul tavolo."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si se activa, %@ iniciará al tocar la mesa."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Όταν είναι ενεργή αυτή η ρύθμιση, το %@ αφυπνίζεται όταν αγγίζετε το τραπέζι."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si aquesta opció està activada, s’activarà l’%@ quan facis un toc a la taula."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lorsque ce réglage est activé, %@ s’activera lorsque vous taperez sur la table."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "開啟此設定時，%[tt]@會在你敲桌子時喚醒螢幕。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "開啟此設定時，%@會在你敲桌子時喚醒螢幕。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "När den här inställningen är aktiverad väcks %@ när du stöter till bordet."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Når denne innstillingen er på, blir %@ vekket når du dulter borti bordet."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "इस सेटिंग के चालू रहने पर, जब आप टेबल से टकराएँगे तब %@ सक्रिय हो जाएगा।"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Når denne indstilling er slået til, afbrydes vågeblus på %@, når du puffer til bordet."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When this setting is on, %@ will wake when you bump the table."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عند تشغيل هذا الإعداد، سيتم تنبيه %@ عند الخبط على الطاولة."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gdy to ustawienie jest włączone, %@ będzie budził się po uderzeniu w blat, na którym jest ustawiony."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เมื่อเปิดการตั้งค่านี้ %[tt]@จะเปิดเมื่อคุณเคาะโต๊ะ"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "此设置打开时，敲桌子将唤醒%@。"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kai šis nustatymas įjungtas, „%@“ pažadinamas bakstelėjus stalą."
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When this setting is on, %@ will wake when you bump the table."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si se activa, %@ iniciará al tocar la mesa."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Když je toto nastavení zapnuté, %@ probudíte ťuknutím na stůl."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keď je toto nastavenie zapnuté, %@ zobudíte buchnutím do stola."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Semasa seting ini aktif, %@ akan dibangunkan apabila anda mengetuk meja."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Когато тази настройка е включена, %@ ще се събужда, когато побутнете масата."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When this setting is on, %@ will wake when you bump the table."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ko je ta nastavitev vklopljena, se bo %@ zbudil, ko ga rahlo udarite ob mizo."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wenn diese Einstellung aktiviert ist, wird der Ruhezustand von „%@“ beendet, wenn du gegen den Tisch stößt."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Khi cài đặt này được bật, %@ sẽ bật khi bạn gõ vào bàn."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si esta opción está activada, se activará la pantalla del modo “%@” cuando des un toque en la mesa."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Când această configurare este activată, %@ se va trezi când clătinați masa."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Бұл реттеу қосулы болғанда, үстелді соқсаңыз, %@ іске қосылады."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lorsque ce réglage est activé, %@ s’active lorsque vous heurtez la table."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quando esse ajuste está ativado, a tela do %@ é ativada com uma batida na mesa."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Якщо цей параметр увімкнено, %@ виходитиме з режиму сну, коли ви кладете пристрій на стіл."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kad je ova postavka uključena, %@ će se uključiti kad lagano udarite stol."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "この設定をオンにすると、テーブルにぶつけると%@によりスリープが解除されます。"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When this setting is on, %@ will wake when you bump the table."
+          }
+        }
+      }
+    },
+    "AMBIENT_FEATURE_NAME": {
+      "extractionState": "manual",
+      "localizations": {
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Em espera"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "스탠바이"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "מצב המתנה"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siaga"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "StandBy"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bekleme Modu"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ожидание"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Készenlét"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stand-by"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "StandBy"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En espera"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Αναμονή"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En repòs"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En veille"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "待機模式"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "待機模式"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Standby"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ventemodus"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "स्टैंडबाय"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "StandBy"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "StandBy"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الاستعداد"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tryb czuwania"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "สแตนด์บาย"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "待机显示"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Budėjimas"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "StandBy"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "StandBy"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Klidový režim"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pasívny režim"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "StandBy"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Настолен режим"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "StandBy"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stanje pripravljenosti"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Standby"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chế độ chờ"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En reposo"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "În repaus"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Күту режимі"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En veille"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Em Espera"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Очікування"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pripravno stanje"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "スタンバイ"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "StandBy"
+          }
+        }
+      }
+    },
+    "BUMP_TO_WAKE_ENABLED": {
+      "extractionState": "manual",
+      "localizations": {
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bater para reativar"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "부딪히면 깨우기"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "חבטה להתעוררות"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Senggol Untuk Bangun"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Herää tömäytyksestä"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çarpınca Uyandır"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Выход из сна при смещении"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Felébresztés lökéssel"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stoot om te activeren"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Attiva con colpo"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Activar con toque"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Άγγιγμα για αφύπνιση"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Activa amb un toc"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Activer avec une tape"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "敲桌喚醒"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "敲桌喚醒"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stöt till för att väcka"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dult for å vekke"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "सक्रिय करने के लिए टकराएँ"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Puf for at afbryde vågeblus"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bump To Wake"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اخبط للتنبيه"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Budź uderzeniem"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เคาะเพื่อปลุก"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "敲击唤醒"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bakstelėkite, kad pažadintumėte"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bump To Wake"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Activar con toque"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Probudit ťuknutím"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobudiť buchnutím"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ketuk untuk Bangunkan"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Побутване за събуждане"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bump To Wake"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vklop z rahlim udarcem"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zum Beenden des Ruhezustands anstoßen"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gõ để bật"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Activar con toque"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clătinare pentru trezire"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Іске қосу үшін соғу"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Taper pour activer"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bater para Despertar"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Будити поштовхом"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uključenje laganim udarcem"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "バンプしてスリープ解除"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bump To Wake"
+          }
+        }
+      }
+    },
+    "MOTION_TO_WAKE_ENABLED_FOOTER": {
+      "extractionState": "manual",
+      "localizations": {
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ ativará o ecrã quando for detetado movimento à noite."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "밤에 움직임이 감지되면 %@ 기능이 디스플레이를 켭니다."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "‏״%@״ יפעיל את התצוגה בעת זיהוי תזוזה בלילה."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ akan menyalakan layar saat gerakan terdeteksi di malam hari."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ laittaa näytön päälle, kun yöllä havaitaan liikettä."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, gece hareket saptandığında ekranı açar."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ включит дисплей, если ночью будет обнаружено движение."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A(z) %@ be fogja kapcsolni a kijelzőt, amikor éjszaka mozgást észlel."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Het scherm van %@ wordt ingeschakeld wanneer er 's nachts beweging wordt gedetecteerd."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ attiverà lo schermo se rileva movimenti di notte."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ activará la pantalla si detecta movimiento por la noche."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Η %@ ενεργοποιεί την οθόνη όταν ανιχνεύεται κίνηση τη νύχτα."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ activarà la pantalla si es detecta moviment durant la nit."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ allumera l’écran lorsque du mouvement sera détecté pendant la nuit."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%[tt]@會在夜間偵測到動作時開啟螢幕。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@會在夜間偵測到動作時開啟螢幕。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ väcker skärmen när rörelser detekteras på natten."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ vil slå på skjermen når det registreres bevegelser om natten."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "रात में हलचल का पता चलने पर %@ डिस्प्ले को चालू कर देगा।"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ tænder skærmen, når der registreres bevægelse i løbet af natten."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ will turn on the display when motion is detected at night."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "سيتم تشغيل شاشة %@ عند اكتشاف حركة في الليل."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ będzie włączał wyświetlacz w nocy po wykryciu ruchu."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%[tt]@จะเปิดจอภาพเมื่อตรวจพบการเคลื่อนไหวในเวลากลางคืน"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "夜间检测到动作时，%@将打开显示屏。"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kai parinktis „%@“ įjungta, naktį aptikus judėjimą įjungiamas ekranas."
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ will turn on the display when motion is detected at night."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ activará la pantalla si detecta movimiento por la noche."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ zapne displej, pokud v noci detekuje pohyb."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ zapne displej, ak v noci zachytí pohyb."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ akan menghidupkan paparan apabila pergerakan dikesan pada waktu malam."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ ще събуди екрана, когато бъде засечено движение през нощта."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ will turn on the display when motion is detected at night."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ vklopi zaslon, ko je ponoči zaznano premikanje."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das Display von „%@“ wird aktiviert, wenn nachts Bewegung erkannt wird."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ sẽ bật màn hình khi phát hiện thấy chuyển động vào ban đêm."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Durante el modo “%@”, se activará la pantalla cuando se detecte movimiento por la noche."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ va aprinde afișajul dacă se detectează mișcare pe timpul nopții."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Түнде қимыл анықталса, %@ дисплейді қосады."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ activera l’écran quand un mouvement sera détecté la nuit."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A tela do %@ será ativada se ele detectar movimento à noite."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "У режимі «%@» екран вмикатиметься, якщо вночі виявлено рух."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ će uključiti zaslon kad se detektira kretanje noću."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "夜間にデバイスが動かされたことを検知すると、%@により画面がオンになります。"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ will turn on the display when motion is detected at night."
+          }
+        }
+      }
+    },
+    "NIGHT_MODE_ENABLED_FOOTER": {
+      "extractionState": "manual",
+      "localizations": {
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ assume um tom avermelhado em condições de fraca luminosidade."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 기능은 주변이 어두우면 디스플레이를 붉은 색조로 표시합니다."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "‏״%@״ יוצג בגוון אדום כשהתאורה מסביב חלשה."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ ditampilkan dengan warna merah dalam kondisi rendah cahaya."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ on punasävyinen heikossa valaistuksessa."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@, ortam ışığı azken ekranı kızıl bir tonda gösterir."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Режим «%@» будет отображать больше красных оттенков, когда вокруг слабое освещение."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A %@ vörös színben jelenik meg, ha a környezeti fény gyenge."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ wordt weergegeven met een rode tint bij weinig omgevingslicht."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ presenta toni rossi quando l’illuminazione ambientale è debole."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ se presenta en un tono rojizo con luz ambiental tenue."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Η λειτουργία «%@» εμφανίζεται με κόκκινη απόχρωση σε χαμηλό φωτισμό περιβάλλοντος."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ es mostrarà en un to vermellós en entorns on hi hagi poca llum."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ s’affiche dans une teinte rouge lorsque la luminosité ambiante est faible."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%[tt]@會在環境光線低時以紅色調顯示。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "環境光線低時，%@會以紅色調顯示。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ visas med en röd färgton i lågt omgivningsljus."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ vises med et rødlig skjær i mørke omgivelser."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "परिवेशी प्रकाश कम होने पर %@ लाल रंगत के साथ डिस्प्ले होता है।"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ vises med en rødlig farvetone, når der er svag belysning i omgivelserne."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ displays with a red tint in low ambient lighting."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يُعرض %@ بلون أحمر في ظروف الإضاءة المحيطة المنخفضة."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "W słabych warunkach oświetleniowych %@ będzie wyświetlany z czerwonym zabarwieniem."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%[tt]@จะแสดงในสีแดงอ่อนเมื่อแสงที่อยู่โดยรอบสว่างน้อย"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@在环境光不足时，将呈红色调。"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kai funkcija „%@“ įjungta, esant silpnam aplinkos apšvietimui rodomas raudonas atspalvis."
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ displays with a red tint in low ambient lighting."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ se presenta en un tono rojizo con luz ambiental tenue."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ za slabého okolního osvětlení zbarví displej do červena."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "V tmavom prostredí %@ zafarbí obsah na displeji načerveno."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ dipaparkan dengan tinta merah dalam pencahayaan ambien malap."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ се показва в червен нюанс при слабо околно осветление."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ displays with a red tint in low ambient lighting."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ prikazuje vsebino v rdečem odtenku v okolici s šibko osvetlitvijo."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ färbt die Anzeige bei geringem Umgebungslicht rötlich."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ hiển thị với tông màu đỏ khi ánh sáng môi trường yếu."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El modo “%@” se muestra en tonos rojos cuando hay poca luz ambiente."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ va afișa într‑o tentă roșie în condiții de iluminare ambiantă scăzută."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ төмен қоршаған орта жарығында қызыл реңкте көрсетіледі."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ sʼaffiche avec une teinte rouge dans un éclairage ambiant faible."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Em condições de baixa iluminação, o modo %@ é exibido em tons de vermelho."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "За слабкого освітлення екран у режимі «%@» матиме червоний відтінок."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ prikazuje sadržaje u crvenoj nijansi pri niskom pozadinskom osvjetljenju."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@では、周囲が暗いときは赤の色調で表示されます。"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ displays with a red tint in low ambient lighting."
+          }
+        }
+      }
+    },
+    "ALWAYS_ON_DISPLAY_TURN_OFF_FOOTER_AFTER_IDLE": {
+      "extractionState": "manual",
+      "localizations": {
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se a opção definida for Automaticamente, o ecrã será desligado automaticamente quando o iPhone estiver inativo e num espaço escuro."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "‘자동’으로 설정하면 iPhone을 사용 중이 아니고 주변이 어두울 때 디스플레이가 지능적으로 꺼집니다."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "כשאפשרות זו מוגדרת ל״באופן אוטומטי״, התצוגה תיכבה מעצמה באופן חכם כשה-iPhone לא בשימוש והחדר חשוך."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jika diatur ke Secara Otomatis, layar akan dimatikan secara pintar saat iPhone tidak digunakan dan ruangan gelap."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kun asetukseksi on valittu Automaattisesti, näyttö sammuu älykkäästi, kun iPhonea ei käytetä ja huone on pimeä."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Otomatik olarak ayarlandığında iPhone kullanılmıyorsa ve oda karanlıksa ekran akıllı bir şekilde kapanır."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Когда выбран параметр «Автоматически», дисплей будет выключаться, если iPhone не используется и находится в темной комнате."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Amikor Automatikusan értékre van beállítva, a kijelző intelligens módon kikapcsol, amikor az iPhone nincs használatban, és a helyiség sötét."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wanneer het scherm is ingesteld op 'Automatisch', wordt het op intelligente wijze uitgeschakeld wanneer de iPhone niet wordt gebruikt en de kamer donker is."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quando è selezionata l’opzione “In automatico”, lo schermo si spegnerà in modo intelligente quando iPhone non è in uso e la stanza non è più illuminata."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si la opción Automáticamente se activa, la pantalla se apagará de manera inteligente cuando detecte que el iPhone no está en uso y la habitación esté obscura."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Όταν η οθόνη έχει ρυθμιστεί σε «Αυτόματα», θα απενεργοποιείται με έξυπνο τρόπο όταν το iPhone δεν χρησιμοποιείται και ο χώρος είναι σκοτεινός."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si has configurat l’iPhone perquè la pantalla s’apagui automàticament, s’apagarà de manera intel·ligent quan no la facis servir i siguis en un lloc fosc."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lorsque l’option Automatiquement est activée, l’écran s’éteint intelligemment lorsque l’iPhone n’est pas utilisé et que la pièce est sombre."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "若設定為「自動」，系統會在iPhone未使用且房間昏暗時聰明地關閉螢幕。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "設定為「自動」時，當iPhone並非使用中而房間黑暗時，螢幕會巧妙地關閉。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "När Automatiskt är inställt stängs skärmen av på ett intelligent sätt när iPhone inte används och rummet är mörkt."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Når Automatisk er valgt, slås skjermen av hvis iPhonen ikke er i bruk og befinner seg i et mørkt rom."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ऑटोमैटिकली पर सेट किया गया हो, तो इस्तेमाल में न होने और कमरे में अँधेरा होने पर iPhone इंटेलीजेंट तरीक़े से बंद हो जाएगा।"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Når indstillingen Automatisk er valgt, slukkes skærmen på intelligent vis, når iPhone ikke er i brug, og der er mørkt i lokalet."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When set to Automatically, the display will intelligently turn off when iPhone is not in use and the room is dark."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عند التعيين على \"تلقائيًا\"، ستتوقف الشاشة بذكاء عندما لا يكون iPhone مستخدَمًا وتكون الغرفة مظلمة."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wybranie opcji Automatycznie oznacza, że wyświetlacz będzie wyłączał się samodzielnie, gdy iPhone nie jest używany, a w pokoju jest ciemno."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เมื่อตั้งค่าเป็นอัตโนมัติ จอภาพจะปิดอย่างชาญฉลาดเมื่อ iPhone ไม่ได้ใช้งานและห้องมืด"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "设为“自动”时，显示屏将在iPhone未使用且室内光线较暗时智能关闭。"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kai nustatyta parinktis „Automatiškai“, ekranas išmaniuoju būdu išjungiamas, kai „iPhone“ nenaudojamas ir patalpa yra tamsi."
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When set to Automatically, the display will intelligently turn off when iPhone is not in use and the room is dark."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si la opción Automáticamente se activa, la pantalla se apagará de manera inteligente cuando detecte que el iPhone no está en uso y la habitación esté obscura."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Při nastavení volby Automaticky se bude displej inteligentně vypínat v době, kdy iPhone nepoužíváte a v místnosti je tma."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keď vyberiete možnosť Automaticky, displej sa inteligentne vypne vždy, keď iPhone nepoužívate a v miestnosti je tma."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apabila disetkan kepada Automatik, paparan akan dimatikan secara pintar apabila iPhone tidak digunakan dan bilik gelap."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "При настроен автоматичен режим, екранът ще се изключва интелигентно, когато iPhone не се използва и в стаята е тъмно."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When set to Automatically, the display will intelligently turn off when iPhone is not in use and the room is dark."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Če izberete Samodejno, se bo zaslon pametno izklopil, ko iPhone ni v uporabi in je v prostoru tema."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wenn „Automatisch“ festgelegt ist, wird das Display deaktiviert, sobald das iPhone nicht verwendet wird und die Umgebung dunkel ist."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Khi được đặt thành Tự động, màn hình sẽ tắt một cách thông minh khi iPhone không được sử dụng và phòng tối."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si seleccionas Automáticamente, la pantalla se apagará de forma automática cuando no se esté usando el iPhone y haya poca luz ambiente."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dacă este selectată opțiunea “Automat”, afișajul se va stinge în mod inteligent când iPhone‑ul nu este în uz și încăperea este întunecată."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Автоматты режимге орнатылғанда, iPhone қолданылып жатпаса және бөлме қараңғы болса, дисплей интеллектуалды түрде өшеді."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lorsque l’option Automatiquement est activée, l’écran s’éteindra intelligemment si lʼiPhone n’est pas utilisé et si la pièce est sombre."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quando a tela estiver definida como Automaticamente, ela será desativada de maneira inteligente se o iPhone não estiver em uso e o cômodo estiver escuro."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Коли ввімкнено параметр «Автоматично», екран вимикатиметься, якщо інтелектуальні алгоритми пристрою виявлятимуть, що iPhone не використовується і навколо темно."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kad je podešeno na Automatski, zaslon će se isključiti na inteligentan način kad se iPhone ne koristi i prostorija je tamna."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“自動”に設定すると、iPhoneが使われていなくて部屋が暗いときはインテリジェントにオフになります。"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When set to Automatically, the display will intelligently turn off when iPhone is not in use and the room is dark."
+          }
+        }
+      }
+    },
+    "ALWAYS_ON_DISPLAY_TURN_OFF_FOOTER_AUTOMATICALLY": {
+      "extractionState": "manual",
+      "localizations": {
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se a opção definida for Automaticamente, o ecrã será desligado automaticamente quando o iPhone estiver inativo e num espaço escuro."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "‘자동’으로 설정하면 iPhone을 사용 중이 아니고 주변이 어두울 때 디스플레이가 지능적으로 꺼집니다."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "כשאפשרות זו מוגדרת ל״באופן אוטומטי״, התצוגה תיכבה מעצמה באופן חכם כשה-iPhone לא בשימוש והחדר חשוך."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jika diatur ke Secara Otomatis, layar akan dimatikan secara pintar saat iPhone tidak digunakan dan ruangan gelap."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kun asetukseksi on valittu Automaattisesti, näyttö sammuu älykkäästi, kun iPhonea ei käytetä ja huone on pimeä."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Otomatik olarak ayarlandığında iPhone kullanılmıyorsa ve oda karanlıksa ekran akıllı bir şekilde kapanır."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Когда выбран параметр «Автоматически», дисплей будет выключаться, если iPhone не используется и находится в темной комнате."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Amikor Automatikusan értékre van beállítva, a kijelző intelligens módon kikapcsol, amikor az iPhone nincs használatban, és a helyiség sötét."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wanneer het scherm is ingesteld op 'Automatisch', wordt het op intelligente wijze uitgeschakeld wanneer de iPhone niet wordt gebruikt en de kamer donker is."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quando è selezionata l’opzione “In automatico”, lo schermo si spegnerà in modo intelligente quando iPhone non è in uso e la stanza non è più illuminata."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si la opción Automáticamente se activa, la pantalla se apagará de manera inteligente cuando detecte que el iPhone no está en uso y la habitación esté obscura."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Όταν η οθόνη έχει ρυθμιστεί σε «Αυτόματα», θα απενεργοποιείται με έξυπνο τρόπο όταν το iPhone δεν χρησιμοποιείται και ο χώρος είναι σκοτεινός."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si has configurat l’iPhone perquè la pantalla s’apagui automàticament, s’apagarà de manera intel·ligent quan no la facis servir i siguis en un lloc fosc."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lorsque l’option Automatiquement est activée, l’écran s’éteint intelligemment lorsque l’iPhone n’est pas utilisé et que la pièce est sombre."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "若設定為「自動」，系統會在iPhone未使用且房間昏暗時聰明地關閉螢幕。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "設定為「自動」時，當iPhone並非使用中而房間黑暗時，螢幕會巧妙地關閉。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "När Automatiskt är inställt stängs skärmen av på ett intelligent sätt när iPhone inte används och rummet är mörkt."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Når Automatisk er valgt, slås skjermen av hvis iPhonen ikke er i bruk og befinner seg i et mørkt rom."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ऑटोमैटिकली पर सेट किया गया हो, तो इस्तेमाल में न होने और कमरे में अँधेरा होने पर iPhone इंटेलीजेंट तरीक़े से बंद हो जाएगा।"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Når indstillingen Automatisk er valgt, slukkes skærmen på intelligent vis, når iPhone ikke er i brug, og der er mørkt i lokalet."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When set to Automatically, the display will intelligently turn off when iPhone is not in use and the room is dark."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عند التعيين على \"تلقائيًا\"، ستتوقف الشاشة بذكاء عندما لا يكون iPhone مستخدَمًا وتكون الغرفة مظلمة."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wybranie opcji Automatycznie oznacza, że wyświetlacz będzie wyłączał się samodzielnie, gdy iPhone nie jest używany, a w pokoju jest ciemno."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เมื่อตั้งค่าเป็นอัตโนมัติ จอภาพจะปิดอย่างชาญฉลาดเมื่อ iPhone ไม่ได้ใช้งานและห้องมืด"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "设为“自动”时，显示屏将在iPhone未使用且室内光线较暗时智能关闭。"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kai nustatyta parinktis „Automatiškai“, ekranas išmaniuoju būdu išjungiamas, kai „iPhone“ nenaudojamas ir patalpa yra tamsi."
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When set to Automatically, the display will intelligently turn off when iPhone is not in use and the room is dark."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si la opción Automáticamente se activa, la pantalla se apagará de manera inteligente cuando detecte que el iPhone no está en uso y la habitación esté obscura."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Při nastavení volby Automaticky se bude displej inteligentně vypínat v době, kdy iPhone nepoužíváte a v místnosti je tma."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keď vyberiete možnosť Automaticky, displej sa inteligentne vypne vždy, keď iPhone nepoužívate a v miestnosti je tma."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apabila disetkan kepada Automatik, paparan akan dimatikan secara pintar apabila iPhone tidak digunakan dan bilik gelap."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "При настроен автоматичен режим, екранът ще се изключва интелигентно, когато iPhone не се използва и в стаята е тъмно."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When set to Automatically, the display will intelligently turn off when iPhone is not in use and the room is dark."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Če izberete Samodejno, se bo zaslon pametno izklopil, ko iPhone ni v uporabi in je v prostoru tema."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wenn „Automatisch“ festgelegt ist, wird das Display deaktiviert, sobald das iPhone nicht verwendet wird und die Umgebung dunkel ist."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Khi được đặt thành Tự động, màn hình sẽ tắt một cách thông minh khi iPhone không được sử dụng và phòng tối."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si seleccionas Automáticamente, la pantalla se apagará de forma automática cuando no se esté usando el iPhone y haya poca luz ambiente."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dacă este selectată opțiunea “Automat”, afișajul se va stinge în mod inteligent când iPhone‑ul nu este în uz și încăperea este întunecată."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Автоматты режимге орнатылғанда, iPhone қолданылып жатпаса және бөлме қараңғы болса, дисплей интеллектуалды түрде өшеді."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lorsque l’option Automatiquement est activée, l’écran s’éteindra intelligemment si lʼiPhone n’est pas utilisé et si la pièce est sombre."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quando a tela estiver definida como Automaticamente, ela será desativada de maneira inteligente se o iPhone não estiver em uso e o cômodo estiver escuro."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Коли ввімкнено параметр «Автоматично», екран вимикатиметься, якщо інтелектуальні алгоритми пристрою виявлятимуть, що iPhone не використовується і навколо темно."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kad je podešeno na Automatski, zaslon će se isključiti na inteligentan način kad se iPhone ne koristi i prostorija je tamna."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“自動”に設定すると、iPhoneが使われていなくて部屋が暗いときはインテリジェントにオフになります。"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When set to Automatically, the display will intelligently turn off when iPhone is not in use and the room is dark."
+          }
+        }
+      }
+    },
+    "AT_NIGHT_GROUP_HEADER": {
+      "extractionState": "manual",
+      "localizations": {
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "À noite"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "밤에"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "בלילה"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pada Malam Hari"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yöllä"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gece"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ночью"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Éjszaka"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "'s Nachts"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Di notte"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Por la noche"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το βράδυ"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A la nit"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La nuit"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "夜間"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "夜間"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "På natten"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om kvelden"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "रात में"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om natten"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "At Night"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "في الليل"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "W nocy"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "กลางคืน"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "夜间"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nakties metu"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "At Night"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Por la noche"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "V noci"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "V noci"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pada Waktu Malam"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "През нощта"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "At Night"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ponoči"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nachts"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vào ban đêm"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Por la noche"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Noaptea"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Түнде"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La nuit"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "À Noite"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Уночі"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Noću"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "夜間"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "At Night"
+          }
+        }
+      }
+    },
+    "ALWAYS_ON_DISPLAY_TURN_OFF_FOOTER_NEVER": {
+      "extractionState": "manual",
+      "localizations": {
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se a opção definida for Automaticamente, o ecrã será desligado automaticamente quando o iPhone estiver inativo e num espaço escuro."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "‘자동’으로 설정하면 iPhone을 사용 중이 아니고 주변이 어두울 때 디스플레이가 지능적으로 꺼집니다."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "כשאפשרות זו מוגדרת ל״באופן אוטומטי״, התצוגה תיכבה מעצמה באופן חכם כשה-iPhone לא בשימוש והחדר חשוך."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jika diatur ke Secara Otomatis, layar akan dimatikan secara pintar saat iPhone tidak digunakan dan ruangan gelap."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kun asetukseksi on valittu Automaattisesti, näyttö sammuu älykkäästi, kun iPhonea ei käytetä ja huone on pimeä."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Otomatik olarak ayarlandığında iPhone kullanılmıyorsa ve oda karanlıksa ekran akıllı bir şekilde kapanır."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Когда выбран параметр «Автоматически», дисплей будет выключаться, если iPhone не используется и находится в темной комнате."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Amikor Automatikusan értékre van beállítva, a kijelző intelligens módon kikapcsol, amikor az iPhone nincs használatban, és a helyiség sötét."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wanneer het scherm is ingesteld op 'Automatisch', wordt het op intelligente wijze uitgeschakeld wanneer de iPhone niet wordt gebruikt en de kamer donker is."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quando è selezionata l’opzione “In automatico”, lo schermo si spegnerà in modo intelligente quando iPhone non è in uso e la stanza non è più illuminata."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si la opción Automáticamente se activa, la pantalla se apagará de manera inteligente cuando detecte que el iPhone no está en uso y la habitación esté obscura."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Όταν η οθόνη έχει ρυθμιστεί σε «Αυτόματα», θα απενεργοποιείται με έξυπνο τρόπο όταν το iPhone δεν χρησιμοποιείται και ο χώρος είναι σκοτεινός."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si has configurat l’iPhone perquè la pantalla s’apagui automàticament, s’apagarà de manera intel·ligent quan no la facis servir i siguis en un lloc fosc."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lorsque l’option Automatiquement est activée, l’écran s’éteint intelligemment lorsque l’iPhone n’est pas utilisé et que la pièce est sombre."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "若設定為「自動」，系統會在iPhone未使用且房間昏暗時聰明地關閉螢幕。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "設定為「自動」時，當iPhone並非使用中而房間黑暗時，螢幕會巧妙地關閉。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "När Automatiskt är inställt stängs skärmen av på ett intelligent sätt när iPhone inte används och rummet är mörkt."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Når Automatisk er valgt, slås skjermen av hvis iPhonen ikke er i bruk og befinner seg i et mørkt rom."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ऑटोमैटिकली पर सेट किया गया हो, तो इस्तेमाल में न होने और कमरे में अँधेरा होने पर iPhone इंटेलीजेंट तरीक़े से बंद हो जाएगा।"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Når indstillingen Automatisk er valgt, slukkes skærmen på intelligent vis, når iPhone ikke er i brug, og der er mørkt i lokalet."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When set to Automatically, the display will intelligently turn off when iPhone is not in use and the room is dark."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عند التعيين على \"تلقائيًا\"، ستتوقف الشاشة بذكاء عندما لا يكون iPhone مستخدَمًا وتكون الغرفة مظلمة."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wybranie opcji Automatycznie oznacza, że wyświetlacz będzie wyłączał się samodzielnie, gdy iPhone nie jest używany, a w pokoju jest ciemno."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เมื่อตั้งค่าเป็นอัตโนมัติ จอภาพจะปิดอย่างชาญฉลาดเมื่อ iPhone ไม่ได้ใช้งานและห้องมืด"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "设为“自动”时，显示屏将在iPhone未使用且室内光线较暗时智能关闭。"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kai nustatyta parinktis „Automatiškai“, ekranas išmaniuoju būdu išjungiamas, kai „iPhone“ nenaudojamas ir patalpa yra tamsi."
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When set to Automatically, the display will intelligently turn off when iPhone is not in use and the room is dark."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si la opción Automáticamente se activa, la pantalla se apagará de manera inteligente cuando detecte que el iPhone no está en uso y la habitación esté obscura."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Při nastavení volby Automaticky se bude displej inteligentně vypínat v době, kdy iPhone nepoužíváte a v místnosti je tma."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keď vyberiete možnosť Automaticky, displej sa inteligentne vypne vždy, keď iPhone nepoužívate a v miestnosti je tma."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apabila disetkan kepada Automatik, paparan akan dimatikan secara pintar apabila iPhone tidak digunakan dan bilik gelap."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "При настроен автоматичен режим, екранът ще се изключва интелигентно, когато iPhone не се използва и в стаята е тъмно."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When set to Automatically, the display will intelligently turn off when iPhone is not in use and the room is dark."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Če izberete Samodejno, se bo zaslon pametno izklopil, ko iPhone ni v uporabi in je v prostoru tema."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wenn „Automatisch“ festgelegt ist, wird das Display deaktiviert, sobald das iPhone nicht verwendet wird und die Umgebung dunkel ist."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Khi được đặt thành Tự động, màn hình sẽ tắt một cách thông minh khi iPhone không được sử dụng và phòng tối."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si seleccionas Automáticamente, la pantalla se apagará de forma automática cuando no se esté usando el iPhone y haya poca luz ambiente."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dacă este selectată opțiunea “Automat”, afișajul se va stinge în mod inteligent când iPhone‑ul nu este în uz și încăperea este întunecată."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Автоматты режимге орнатылғанда, iPhone қолданылып жатпаса және бөлме қараңғы болса, дисплей интеллектуалды түрде өшеді."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lorsque l’option Automatiquement est activée, l’écran s’éteindra intelligemment si lʼiPhone n’est pas utilisé et si la pièce est sombre."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quando a tela estiver definida como Automaticamente, ela será desativada de maneira inteligente se o iPhone não estiver em uso e o cômodo estiver escuro."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Коли ввімкнено параметр «Автоматично», екран вимикатиметься, якщо інтелектуальні алгоритми пристрою виявлятимуть, що iPhone не використовується і навколо темно."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kad je podešeno na Automatski, zaslon će se isključiti na inteligentan način kad se iPhone ne koristi i prostorija je tamna."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“自動”に設定すると、iPhoneが使われていなくて部屋が暗いときはインテリジェントにオフになります。"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When set to Automatically, the display will intelligently turn off when iPhone is not in use and the room is dark."
+          }
+        }
+      }
+    },
+    "ALWAYS_ON_DISPLAY_OPTIONS": {
+      "extractionState": "manual",
+      "localizations": {
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ecrã"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "디스플레이"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "תצוגה"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Layar"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Näyttö"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ekran"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Дисплей"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kijelző"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scherm"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schermo"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pantalla"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Οθόνη"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pantalla"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Écran"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "螢幕"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "螢幕"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skärm"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skjerm"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "डिस्प्ले"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skærm"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Display"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الشاشة"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wyświetlacz"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "จอภาพ"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "显示屏"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ekranas"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Display"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pantalla"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Displej"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Displej"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paparan"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Екран"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Display"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zaslon"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Display"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Màn hình"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pantalla"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Afișaj"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Дисплей"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Écran"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tela"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Дисплей"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zaslon"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "画面表示"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Display"
           }
         }
       }
     }
   },
-  "version" : "1.0"
+  "version": "1.0"
 }

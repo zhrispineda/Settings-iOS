@@ -9,45 +9,46 @@ import SwiftUI
 
 struct StandByView: View {
     // Variables
-    @State private var standByEnabled = true
-    @State private var nightModeEnabled = true
-    @State private var showNotificationsEnabled = true
-    @State private var showPreviewsTapOnlyEnabled = false
+    @AppStorage("AmbientEnabledSetting") private var standByEnabled = true
+    @AppStorage("AmbientNightSetting") private var nightModeEnabled = true
+    @AppStorage("AmbientNotificationSetting") private var showNotificationsEnabled = true
+    @AppStorage("AmbientPreviewSetting") private var showPreviewsTapOnlyEnabled = false
+    let table = "AmbientSettings"
     
     var body: some View {
-        CustomList(title: "AMBIENT_FEATURE_NAME".localize(table: "AmbientSettings")) {
+        CustomList(title: "AMBIENT_FEATURE_NAME".localize(table: table)) {
             Section {
-                Toggle("AMBIENT_FEATURE_NAME".localize(table: "AmbientSettings"), isOn: $standByEnabled.animation())
+                Toggle("AMBIENT_FEATURE_NAME".localize(table: table), isOn: $standByEnabled.animation())
             } footer: {
-                Text("AMBIENT_MODE_ENABLED_FOOTER".localize(table: "AmbientSettings", "AMBIENT_FEATURE_NAME"))
+                Text("AMBIENT_MODE_ENABLED_FOOTER".localize(table: table, "AMBIENT_FEATURE_NAME"))
             }
             
             if standByEnabled {
                 if UIDevice.AlwaysOnDisplayCapability {
-                    NavigationLink("ALWAYS_ON_DISPLAY_OPTIONS".localize(table: "AmbientSettings"), destination: DisplayView())
+                    NavigationLink("ALWAYS_ON_DISPLAY_OPTIONS".localize(table: table), destination: DisplayView())
                 } else {
                     Section {
-                        Toggle("NIGHT_MODE_ENABLED".localize(table: "AmbientSettings"), isOn: $nightModeEnabled)
+                        Toggle("NIGHT_MODE_ENABLED".localize(table: table), isOn: $nightModeEnabled)
                     } header: {
-                        Text("DISPLAY_SETTINGS_GROUP_HEADER", tableName: "AmbientSettings")
+                        Text("DISPLAY_SETTINGS_GROUP_HEADER", tableName: table)
                     } footer: {
-                        Text("NIGHT_MODE_ENABLED_FOOTER".localize(table: "AmbientSettings", "AMBIENT_FEATURE_NAME"))
+                        Text("NIGHT_MODE_ENABLED_FOOTER".localize(table: table, "AMBIENT_FEATURE_NAME"))
                     }
                 }
                 
                 Section {
-                    Toggle("NOTIFICATIONS_ENABLED".localize(table: "AmbientSettings"), isOn: $showNotificationsEnabled.animation())
+                    Toggle("NOTIFICATIONS_ENABLED".localize(table: table), isOn: $showNotificationsEnabled.animation())
                 } header: {
-                    Text("NOTIFICATIONS_GROUP_HEADER", tableName: "AmbientSettings")
+                    Text("NOTIFICATIONS_GROUP_HEADER", tableName: table)
                 } footer: {
-                    Text("NOTIFICATIONS_ENABLED_FOOTER".localize(table: "AmbientSettings", "AMBIENT_FEATURE_NAME"))
+                    Text("NOTIFICATIONS_ENABLED_FOOTER".localize(table: table, "AMBIENT_FEATURE_NAME"))
                 }
                 
                 if showNotificationsEnabled {
                     Section {
-                        Toggle("NOTIFICATIONS_PREVIEW".localize(table: "AmbientSettings"), isOn: $showPreviewsTapOnlyEnabled)
+                        Toggle("NOTIFICATIONS_PREVIEW".localize(table: table), isOn: $showPreviewsTapOnlyEnabled)
                     } footer: {
-                        Text("NOTIFICATIONS_PREVIEW_FOOTER".localize(table: "AmbientSettings", "AMBIENT_FEATURE_NAME"))
+                        Text("NOTIFICATIONS_PREVIEW_FOOTER".localize(table: table, "AMBIENT_FEATURE_NAME"))
                     }
                 }
             }
