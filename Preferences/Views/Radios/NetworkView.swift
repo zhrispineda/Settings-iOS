@@ -104,11 +104,12 @@ struct NetworkView: View {
             }
             
             ToolbarItem(placement: .topBarTrailing) {
-                Button(isEditing ? "**Done**" : "kWFLocEditListButtonTitle".localize(table: table)) {
+                Button(isEditing ? "Done" : "kWFLocEditListButtonTitle".localize(table: table)) {
                     withAnimation {
                         isEditing.toggle()
                     }
                 }
+                .fontWeight(isEditing ? .bold : .regular)
                 .disabled(isEditing)
             }
         }
