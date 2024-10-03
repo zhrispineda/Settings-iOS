@@ -84,7 +84,9 @@ struct SafetyCheckView: View {
         }
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
-                Button("Quick Exit") {}
+                Button("Quick Exit") {
+                    exit(0)
+                }
             }
         }
     }

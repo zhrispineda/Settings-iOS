@@ -12,11 +12,11 @@ struct HeadphoneAudioLevelsView: View {
     let options = ["For 8 Days", "Until I Delete"]
     
     var body: some View {
-        CustomList(title: "Headphone Audio Levels") {
+        CustomList(title: "Headphone Audio Levels", topPadding: true) {
             Section {
                 Picker("", selection: $selected) {
-                    ForEach(options, id: \.self) {
-                        Text($0)
+                    ForEach(options, id: \.self) { option in
+                        Text(option)
                     }
                 }
                 .pickerStyle(.inline)
@@ -37,5 +37,7 @@ struct HeadphoneAudioLevelsView: View {
 }
 
 #Preview {
-    HeadphoneAudioLevelsView()
+    NavigationStack {
+        HeadphoneAudioLevelsView()
+    }
 }

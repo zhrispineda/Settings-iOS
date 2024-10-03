@@ -71,6 +71,7 @@
 		833F0AD72B744D190036EAD2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 833F0AD62B744D190036EAD2 /* Preview Assets.xcassets */; };
 		833F190B2B8BE05A00067C37 /* DisplayTextSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833F190A2B8BE05A00067C37 /* DisplayTextSizeView.swift */; };
 		833F20AE2CA4C93C00115E8F /* RecordCinematicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833F20AD2CA4C93C00115E8F /* RecordCinematicView.swift */; };
+		83441A892CAF2B6A0022E193 /* Privacy.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83441A882CAF2B6A0022E193 /* Privacy.xcstrings */; };
 		834540C52C9CE2E100091E79 /* AddLanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834540C42C9CE2E100091E79 /* AddLanguageView.swift */; };
 		8345656E2CAADFD6002BE49D /* CameraSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8345656D2CAADFD6002BE49D /* CameraSettings.xcstrings */; };
 		834565702CAAE202002BE49D /* CameraSettings-CameraButton.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8345656F2CAAE202002BE49D /* CameraSettings-CameraButton.xcstrings */; };
@@ -334,6 +335,7 @@
 		833F0AD62B744D190036EAD2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		833F190A2B8BE05A00067C37 /* DisplayTextSizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayTextSizeView.swift; sourceTree = "<group>"; };
 		833F20AD2CA4C93C00115E8F /* RecordCinematicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordCinematicView.swift; sourceTree = "<group>"; };
+		83441A882CAF2B6A0022E193 /* Privacy.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Privacy.xcstrings; sourceTree = "<group>"; };
 		834540C42C9CE2E100091E79 /* AddLanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLanguageView.swift; sourceTree = "<group>"; };
 		8345656D2CAADFD6002BE49D /* CameraSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = CameraSettings.xcstrings; sourceTree = "<group>"; };
 		8345656F2CAAE202002BE49D /* CameraSettings-CameraButton.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "CameraSettings-CameraButton.xcstrings"; sourceTree = "<group>"; };
@@ -621,11 +623,11 @@
 			isa = PBXGroup;
 			children = (
 				8329284C2B8580AA006611CF /* Health */,
+				83F455B22C3C8CA5009DB157 /* LocationServicesView.swift */,
 				832928482B85779D006611CF /* TrackingView.swift */,
 				8319CE4C2B86D380007EC822 /* SafetyCheckView.swift */,
 				8319CE4E2B86DB44007EC822 /* SensitiveContentWarningView.swift */,
 				8319CE502B86DF8A007EC822 /* AppleAdvertisingView.swift */,
-				83F455B22C3C8CA5009DB157 /* LocationServicesView.swift */,
 			);
 			path = "Privacy & Security";
 			sourceTree = "<group>";
@@ -1087,6 +1089,7 @@
 				834565732CAAE673002BE49D /* CameraEditKit.xcstrings */,
 				832877E82CAEE14400013B0B /* CameraUI-SmartStyles.xcstrings */,
 				832877EA2CAEE2CB00013B0B /* ControlCenterSettings.xcstrings */,
+				83441A882CAF2B6A0022E193 /* Privacy.xcstrings */,
 				832877F82CAEE91600013B0B /* SOS.xcstrings */,
 				832877FA2CAEEA7E00013B0B /* WiFiKitUILocalizableStrings.xcstrings */,
 			);
@@ -1485,6 +1488,7 @@
 				8361A22B2C193DBA00A7D5CC /* SettingsSimulator.gif in Resources */,
 				8345656E2CAADFD6002BE49D /* CameraSettings.xcstrings in Resources */,
 				832877DB2CAD915400013B0B /* AmbientSettings.xcstrings in Resources */,
+				83441A892CAF2B6A0022E193 /* Privacy.xcstrings in Resources */,
 				832877E92CAEE14400013B0B /* CameraUI-SmartStyles.xcstrings in Resources */,
 				83A422342CAC60B100EED538 /* CameraSettings-4k120.xcstrings in Resources */,
 				832877FB2CAEEA7E00013B0B /* WiFiKitUILocalizableStrings.xcstrings in Resources */,
@@ -1874,7 +1878,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1307;
 				DEVELOPMENT_ASSET_PATHS = "\"Preferences/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 6Q4MRN2FMC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Preferences/Info.plist;

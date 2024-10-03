@@ -11,10 +11,11 @@ struct PrivacySecurityView: View {
     // Variables
     @State private var opacity: Double = 0
     @State private var frameY: Double = 0
+    let table = "Privacy"
     
     var body: some View {
         CustomList(title: "Back") {
-            SectionHelp(title: "Privacy & Security", color: .blue, icon: "hand.raised.fill", description: "Control which apps can access your data, location, camera, and microphone, and manage safety protections. [Learn more...](https://support.apple.com/guide/iphone/use-built-in-privacy-and-security-protections-iph6e7d349d1/ios)")
+            SectionHelp(title: "PRIVACY".localize(table: table), color: .blue, icon: "hand.raised.fill", description: "Control which apps can access your data, location, camera, and microphone, and manage safety protections. [Learn more...](https://support.apple.com/guide/iphone/use-built-in-privacy-and-security-protections-iph6e7d349d1/ios)")
                 .overlay { // For calculating opacity of the principal toolbar item
                     GeometryReader { geo in
                         Color.clear
@@ -26,89 +27,89 @@ struct PrivacySecurityView: View {
                 }
             
             Section {
-                SettingsLink(color: .blue, icon: "location.fill", id: "Location Services", subtitle: "None") {
+                SettingsLink(color: .blue, icon: "location.fill", id: "LOCATION_SERVICES".localize(table: table), subtitle: "None") {
                     LocationServicesView()
                 }
-                SettingsLink(color: .orange, icon: "app.connected.to.app.below.fill", id: "Tracking", status: "0") {
+                SettingsLink(color: .orange, icon: "app.connected.to.app.below.fill", id: "TRACKERS".localize(table: table), status: "0") {
                     TrackingView()
                 }
             }
             
             Section {
-                SettingsLink(icon: "appleCalendar", id: "Calendars", subtitle: "None") {
-                    AppPermissionsView(permissionName: "Calendars")
+                SettingsLink(icon: "appleCalendar", id: "CALENDARS".localize(table: table), subtitle: "CALENDARS_NO_ACCESS_AUTHORIZATION".localize(table: table)) {
+                    AppPermissionsView(permissionName: "CALENDARS")
                 }
-                SettingsLink(icon: "appleContacts", id: "Contacts", subtitle: "None") {
-                    AppPermissionsView(permissionName: "Contacts")
+                SettingsLink(icon: "appleContacts", id: "CONTACTS".localize(table: table), subtitle: "CONTACTS_NO_ACCESS_AUTHORIZATION".localize(table: table)) {
+                    AppPermissionsView(permissionName: "CONTACTS")
                 }
-                SettingsLink(icon: "appleFiles", id: "Files & Folders", subtitle: "None") {
-                    AppPermissionsView(permissionName: "Files & Folders")
+                SettingsLink(icon: "appleFiles", id: "FILEACCESS".localize(table: table), subtitle: "None") {
+                    AppPermissionsView(permissionName: "FILEACCESS")
                 }
-                SettingsLink(color: .indigo, icon: "moon.fill", id: "Focus", subtitle: "None") {
-                    AppPermissionsView(permissionName: "Focus")
+                SettingsLink(color: .indigo, icon: "moon.fill", id: "FOCUS".localize(table: table), subtitle: "None") {
+                    AppPermissionsView(permissionName: "FOCUS")
                 }
-                SettingsLink(icon: "appleHealth", id: "Health", subtitle: "None") {
-                    AppPermissionsView(permissionName: "Health")
+                SettingsLink(icon: "appleHealth", id: "HEALTH".localize(table: table), subtitle: "None") {
+                    AppPermissionsView(permissionName: "HEALTH")
                 }
-                SettingsLink(icon: "appleHome", id: "HomeKit", subtitle: "None") {
-                    AppPermissionsView(permissionName: "HomeKit")
+                SettingsLink(icon: "appleHome", id: "WILLOW".localize(table: table), subtitle: "None") {
+                    AppPermissionsView(permissionName: "WILLOW")
                 }
-                SettingsLink(icon: "appleMusic", id: "Media & Apple Music", subtitle: "None") {
-                    AppPermissionsView(permissionName: "Media & Apple Music")
+                SettingsLink(icon: "appleMusic", id: "MEDIALIBRARY".localize(table: table), subtitle: "None") {
+                    AppPermissionsView(permissionName: "MEDIALIBRARY")
                 }
-                SettingsLink(color: .gray, icon: "person.badge.key.fill", id: "Passkeys Access for Web Browsers", subtitle: "None") {
-                    AppPermissionsView(permissionName: "Passkeys Access for Web Browsers")
+                SettingsLink(color: .gray, icon: "person.badge.key.fill", id: "PASSKEYS".localize(table: table), subtitle: "None") {
+                    AppPermissionsView(permissionName: "PASSKEYS")
                 }
-                SettingsLink(icon: "applePhotos", id: "Photos", subtitle: "None") {
-                    AppPermissionsView(permissionName: "Photos")
+                SettingsLink(icon: "applePhotos", id: "PHOTOS".localize(table: table), subtitle: "PHOTOS_NO_ACCESS_AUTHORIZATION".localize(table: table)) {
+                    AppPermissionsView(permissionName: "PHOTOS")
                 }
-                SettingsLink(icon: "appleReminders", id: "Reminders", subtitle: "None") {
-                    AppPermissionsView(permissionName: "Reminders")
+                SettingsLink(icon: "appleReminders", id: "REMINDERS".localize(table: table), subtitle: "None") {
+                    AppPermissionsView(permissionName: "REMINDERS")
                 }
                 if UIDevice.iPhone {
-                    SettingsLink(icon: "appleWallet", id: "Wallet", subtitle: "None") {
-                        AppPermissionsView(permissionName: "Wallet")
+                    SettingsLink(icon: "appleWallet", id: "WALLET".localize(table: table), subtitle: "None") {
+                        AppPermissionsView(permissionName: "WALLET")
                     }
                 }
             }
             
             Section {
                 if !UIDevice.isSimulator {
-                    SettingsLink(color: .blue, icon: "Accessory", id: "Accessories", status: "0") {
-                        AppPermissionsView(permissionName: "Accessories")
+                    SettingsLink(color: .blue, icon: "Accessory", id: "ACCESSORY_SETUP".localize(table: table), status: "0") {
+                        AppPermissionsView(permissionName: "ACCESSORY_SETUP")
                     }
                 }
-                SettingsLink(color: .blue, icon: "bluetooth", id: "Bluetooth", status: "0") {
-                    AppPermissionsView(permissionName: "Bluetooth")
+                SettingsLink(color: .blue, icon: "bluetooth", id: "BT_PERIPHERAL".localize(table: table), status: "0") {
+                    AppPermissionsView(permissionName: "BT_PERIPHERAL")
                 }
-                SettingsLink(color: .gray, icon: "camera.fill", id: "Camera", status: "0") {
-                    AppPermissionsView(permissionName: "Camera")
+                SettingsLink(color: .gray, icon: "camera.fill", id: "CAMERA".localize(table: table), status: "0") {
+                    AppPermissionsView(permissionName: "CAMERA")
                 }
-                SettingsLink(color: .blue, icon: "network", id: "Local Network", status: "0") {
-                    AppPermissionsView(permissionName: "Local Network")
+                SettingsLink(color: .blue, icon: "network", id: "LOCAL_NETWORK".localize(table: table), status: "0") {
+                    AppPermissionsView(permissionName: "LOCAL_NETWORK")
                 }
-                SettingsLink(color: .orange, icon: "mic.fill", id: "Microphone", status: "0") {
-                    AppPermissionsView(permissionName: "Microphone")
+                SettingsLink(color: .orange, icon: "mic.fill", id: "MICROPHONE".localize(table: table), status: "0") {
+                    AppPermissionsView(permissionName: "MICROPHONE")
                 }
-                SettingsLink(color: .green, icon: "figure.run.motion", id: "Motion & Fitness", status: "0") {
-                    AppPermissionsView(permissionName: "Motion & Fitness")
+                SettingsLink(color: .green, icon: "figure.run.motion", id: "MOTION".localize(table: table), status: "0") {
+                    AppPermissionsView(permissionName: "MOTION")
                 }
-                SettingsLink(color: .blue, icon: "nearby.interactions", id: "Nearby Interactions", status: "0") {
-                    AppPermissionsView(permissionName: "Nearby Interactions")
+                SettingsLink(color: .blue, icon: "nearby.interactions", id: "NEARBY_INTERACTIONS".localize(table: table), status: "0") {
+                    AppPermissionsView(permissionName: "NEARBY_INTERACTIONS")
                 }
                 if UIDevice.iPhone {
                     SettingsLink(color: .blue, icon: "sensorkit", id: "Research Sensor & Usage Data", status: "0") {
                         AppPermissionsView(permissionName: "Research Sensor & Usage Data")
                     }
-                    SettingsLink(color: .gray, icon: "waveform", id: "Speech Recognition", status: "0") {
-                        AppPermissionsView(permissionName: "Speech Recognition")
+                    SettingsLink(color: .gray, icon: "waveform", id: "SPEECH_RECOGNITION".localize(table: table), status: "0") {
+                        AppPermissionsView(permissionName: "SPEECH_RECOGNITION")
                     }
                 }
             }
             
             if UIDevice.iPhone && !UIDevice.isSimulator {
                 Section {
-                    SettingsLink(color: .indigo, icon: "pencil.and.sparkles", id: "Journaling Suggestions") {
+                    SettingsLink(color: .indigo, icon: "pencil.and.sparkles", id: "JOURNALING_SUGGESTIONS".localize(table: table)) {
                         EmptyView()
                     }
                 }
@@ -133,26 +134,26 @@ struct PrivacySecurityView: View {
             }
             
             Section {
-                SettingsLink(color: .blue, icon: "chart.bar.xaxis", id: "Analytics & Improvement") {}
-                SettingsLink(color: .blue, icon: "megaphone.fill", id: "Apple Advertising") {
+                SettingsLink(color: .blue, icon: "chart.bar.xaxis", id: "PROBLEM_REPORTING".localize(table: table)) {}
+                SettingsLink(color: .blue, icon: "megaphone.fill", id: "ADVERTISING".localize(table: table)) {
                     AppleAdvertisingView()
                 }
             }
             
             Section {
                 if !UIDevice.isSimulator {
-                    SettingsLink(color: .green, icon: "shield.lefthalf.filled", id: "App Privacy Report") {}
+                    SettingsLink(color: .green, icon: "shield.lefthalf.filled", id: "APP_PRIVACY_REPORT".localize(table: table)) {}
                 }
             }
             
             if !UIDevice.isSimulator {
                 Section {
                     if Configuration().developerMode {
-                        SettingsLink(color: .gray, icon: "hammer.fill", id: "Developer Mode", status: "On") {
+                        SettingsLink(color: .gray, icon: "hammer.fill", id: "DEVELOPER_MODE".localize(table: table), status: "Off") {
                             EmptyView()
                         }
                     }
-                    SettingsLink(color: .blue, icon: "hand.raised.fill", id: "Lockdown Mode", status: "Off") {
+                    SettingsLink(color: .blue, icon: "hand.raised.fill", id: "Lockdown Mode", status: "Off".localize(table: table)) {
                         EmptyView()
                     }
                 } header: {
