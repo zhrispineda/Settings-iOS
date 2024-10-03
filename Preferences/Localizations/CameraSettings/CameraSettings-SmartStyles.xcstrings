@@ -1,0 +1,2427 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "CAM_PRESERVE_LIGHTING_ASPECT_FOOTER": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ניתן לשמור את יחס האורך והרוחב או את הגדרת התאורה, במקום לאפס אותם באופן אוטומטי."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "카메라를 자동으로 재설정하는 대신 마지막으로 사용한 영상비 또는 조명 설정을 유지합니다."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pertahankan pengaturan rasio aspek atau cahaya terakhir yang digunakan alih-alih mengatur ulang secara otomatis."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Älä nollaa kuvasuhdetta tai valoasetusta automaattisesti, vaan säilytä viimeksi käytetty."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Son kullanılan en boy oranı ya da ışık ayarını otomatik olarak sıfırlamak yerine korur."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bewaar de laatstgebruikte verhouding of lichtinstelling, in plaats van automatisch opnieuw in te stellen."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сохранять последние использованные настройки формата кадра и освещения вместо их автоматического сброса."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Az utoljára használt képarány- vagy fénybeállítás megőrzése az automatikus alaphelyzetbe állítás helyett."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mantieni le proporzioni o il tipo di luce che hai usato l’ultima volta. L’opzione non verrà reimpostata automaticamente."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conserva la proporción dimensional o la configuración de la iluminación más recientes en lugar de restablecerlos automáticamente."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Διατήρηση της αναλογίας διαστάσεων ή της ρύθμισης φωτισμού που χρησιμοποιήθηκε πιο πρόσφατα, αντί για αυτόματη επαναφορά."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conserva l’última proporció utilitzada i la configuració de llum, en lloc de restablir‑les automàticament."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الاحتفاظ بآخر إعداد مستخدم لنسبة العرض إلى الارتفاع أو الإضاءة، بدلاً من إعادة التعيين تلقائيًا."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保留上次使用的顯示比例或光線設定，而非自動重置。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保留上次使用的顯示比例或光線設定，不要自動重設。"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aplikacja zachowuje ostatnio użyte ustawienie proporcji lub oświetlenia, zamiast automatycznie je zerować."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Behåll de senast använda inställningarna för proportioner eller ljus istället för att automatiskt återställa."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Husk forrige brukte størrelsesforhold eller lysinnstilling i stedet for å nullstille automatisk."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Behold den forrige indstilling af billedformat eller lys fremfor at nulstille automatisk."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Preserve the last used aspect ratio or light setting, rather than automatically reset."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ऑटोमैटिकली रीसेट करने के बजाय पिछली बार उपयोग किए गए ऐस्पेक्ट रेशियो या प्रकाश सेटिंग संरक्षित करें।"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Applique la proportion ou la luminosité utilisés en dernier plutôt que de rétablir automatiquement les réglages."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "คงการตั้งค่าอัตราสัดส่วนหรือแสงไฟที่ใช้ล่าสุดไว้แทนที่จะรีเซ็ตโดยอัตโนมัติ"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保留上次使用的宽高比或光效设置，而非自动重设。"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Preserve the last used aspect ratio or light setting, rather than automatically reset."
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Išsaugokite vėliausiai naudotą vaizdo formato ar apšvietimo nustatymą, užuot automatiškai nustatydami iš naujo."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conserva la proporción dimensional o la configuración de la iluminación más recientes en lugar de restablecerlos automáticamente."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kekalkan seting nisbah aspek atau cahaya yang terakhir digunakan, berbanding mereset secara automatik."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Namiesto automatického resetovania zachová naposledy použité nastavenie pomeru strán alebo nasvietenia."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Naposledy použité nastavení poměru stran a nasvícení se bude místo automatického resetování zachovávat."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Запазва последно използваното съотношение на размерите на снимката или настройката за светлина, вместо да възстанови автоматичните."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ohrani nazadnje uporabljeno nastavitev razmerja širina/višina ali svetlobe, namesto da jo samodejno ponastavi."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Preserve the last used aspect ratio or light setting, rather than automatically reset."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Behalte das zuletzt verwendete Seitenverhältnis oder die zuletzt verwendete Lichteinstellung bei, anstatt sie automatisch zurückzusetzen."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bảo lưu cài đặt tỷ lệ khung hình hoặc ánh sáng được sử dụng sau cùng, thay vì tự động đặt lại."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Preserve a proporção ou o ajuste de luz usado pela última vez, em vez de redefini‑los automaticamente."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Зберігати останні застосовані пропорції або параметри світла замість автоскидання."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conservez le dernier réglage de proportions ou de clarté utilisé au lieu de le réinitialiser automatiquement."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Va fi menținută ultima configurare utilizată pentru raportul de aspect sau lumină, în locul resetării automate a acesteia."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Реттеулерді автоматты түрде бастапқы күйіне қайтарудың орнына соңғы пайдаланылған кадр форматын немесе жарықтықты сақтау."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conserva los ajustes de proporción o luz usados por última vez en lugar de restablecerlos automáticamente."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最後に使った縦横比、または照明設定を自動的にリセットせずに保持します。"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Očuvanje zadnjeg korištenog formata slike ili svjetla, umjesto automatskog prebacivanja."
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Manter a última proporção ou definição de iluminação, em vez de voltar automaticamente ao original."
+          }
+        }
+      }
+    },
+    "SYSTEM_SETTINGS_HEADER": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "הגדרות המערכת"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "시스템 설정"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PENGATURAN SISTEM"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "JÄRJESTELMÄASETUKSET"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SİSTEM AYARLARI"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SYSTEEMINSTELLINGEN"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "СИСТЕМНЫЕ НАСТРОЙКИ"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "RENDSZERBEÁLLÍTÁSOK"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "IMPOSTAZIONI DI SISTEMA"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CONFIGURACIÓN DEL SISTEMA"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ΡΥΘΜΙΣΕΙΣ ΣΥΣΤΗΜΑΤΟΣ"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CONFIGURACIÓ DEL SISTEMA"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إعدادات النظام"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "系統設定"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "系統設定"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "USTAWIENIA SYSTEMOWE"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SYSTEM​INSTÄLLNINGAR"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SYSTEM­INNSTILLINGER"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SYSTEM­INDSTILLINGER"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SYSTEM SETTINGS"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "सिस्टम सेटिंग्ज़"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "RÉGLAGES SYSTÈME"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "การตั้งค่าระบบ"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "系统设置"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SYSTEM SETTINGS"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SISTEMOS NUSTATYMAI"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CONFIGURACIÓN DEL SISTEMA"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SETING SISTEM"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SYSTÉMOVÉ NASTAVENIA"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NASTAVENÍ SYSTÉMU"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "СИСТЕМНИ НАСТРОЙКИ"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NASTAVITVE SISTEMA"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SYSTEM SETTINGS"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SYSTEMEINSTELLUNGEN"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CÀI ĐẶT HỆ THỐNG"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AJUSTES DO SISTEMA"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "СИСТЕМНІ ПАРАМЕТРИ"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "RÉGLAGES SYSTÈME"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CONFIGURĂRI SISTEM"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ЖҮЙЕ РЕТТЕУЛЕРІ"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AJUSTES DEL SISTEMA"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "システム設定"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "POSTAVKE SUSTAVA"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "DEFINIÇÕES DO SISTEMA"
+          }
+        }
+      }
+    },
+    "CAM_PRESERVE_SMART_STYLE_SWITCH": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "סגנונות צילומיים"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "사진 스타일"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gaya Fotografi"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valokuvatyyli"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotoğrafik Stil"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotografische stijl"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Фотографический стиль"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotografikus stílus"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stile fotografico"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estilo fotográfico"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Φωτογραφικό στιλ"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estil fotogràfic"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "النمط الفوتوغرافي"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "攝影風格"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "攝影風格"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Styl fotograficzny"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotografisk stil"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotostil"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotostil"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Photographic Style"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "फ़ोटोग्राफ़िक स्टाइल"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Style photographique"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "รูปแบบภาพถ่าย"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "摄影风格"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Photographic Style"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotografavimo stilius"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estilo fotográfico"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gaya Fotografi"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotografický štýl"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotografický styl"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Фотографски стил"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotografski slog"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Photographic Style"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotografischer Stil"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Phong cách nhiếp ảnh"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estilo Fotográfico"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Стиль фотографій"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Style photographique"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stil fotografic"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Фотографиялық стиль"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estilo fotográfico"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "フォトグラフスタイル"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotografski stil"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estilo fotográfico"
+          }
+        }
+      }
+    },
+    "CAM_PRESERVE_LIGHTING_ASPECT_SWITCH": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "פקדי יצירתיות"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "창의적 제어"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kontrol Kreatif"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Luovien toimintojen säätimet"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yaratıcı Denetimler"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Creatieve regelaars"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Творчество"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kreatív vezérlők"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Controlli ritocchi creativi"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Controles creativos"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Προσαρμοσμένα στοιχεία ελέγχου"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Controls creatius"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عناصر التحكم الإبداعية"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自訂控制項目"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自訂控制項目"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Narzędzia kreatywne"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kreativitetsreglage"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stilvalg"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kreative betjeninger"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Creative Controls"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "क्रियेटिव कंट्रोल"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Commandes créatives"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ตัวควบคุมสร้างสรรค์"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "智能控制"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Creative Controls"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kūrybiniai valdikliai"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Controles creativos"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kawalan Kreatif"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kreatívne ovládanie"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kreativní ovládání"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Управление на ефекти"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ustvarjalne krmilne funkcije"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Creative Controls"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kreative Steuerung"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bộ điều khiển sáng tạo"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Controles Criativos"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Творчі засоби"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Commandes créatives"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comenzi creative"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Шығармашылық"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajustes creativos"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "クリエイティブコントロール"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kreativne kontrole"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Controlos criativos"
+          }
+        }
+      }
+    },
+    "SYSTEM_STYLES_TITLE": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "סגנונות צילומיים"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "사진 스타일"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gaya Fotografi"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valokuvatyylit"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotoğrafik Stiller"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotografische stijlen"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Фотографические стили"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotografikus stílusok"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stili fotografici"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estilos fotográficos"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Φωτογραφικά στιλ"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estils fotogràfics"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الأنماط الفوتوغرافية"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "攝影風格"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "攝影風格"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Style fotograficzne"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotografiska stilar"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotostiler"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotostil"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Photographic Styles"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "फ़ोटोग्राफ़िक स्टाइल"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Styles photographiques"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "รูปแบบภาพถ่าย"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "摄影风格"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Photographic Styles"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotografavimo stiliai"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estilos fotográficos"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gaya Fotografi"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotografické štýly"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotografické styly"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Стил на снимане"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotografski slogi"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Photographic Styles"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotografische Stile"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Phong cách nhiếp ảnh"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estilos Fotográficos"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Стилі фотографій"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Styles photographiques"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stiluri fotografice"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Фотографиялық стильдер"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estilos fotográficos"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "フォトグラフスタイル"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotografski stilovi"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estilos fotográficos"
+          }
+        }
+      }
+    },
+    "SMART_STYLE_LABEL_SYSTEM_CUSTOMIZED": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "התאמה אישית של הסגנון הרגיל"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기본(사용자 설정)"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Standar Khusus"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Muokattu vakio"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Özel Standart"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aangepaste standaard"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Стандарт (пользовательский)"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Egyéni szabványos"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Standard personalizzato"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estándar personalizado"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Προσαρμογή τυπικού"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estàndard personalitzat"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "قياسي مخصص"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自訂標準風格"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自訂標準"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Standardowy własny"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Standardanpassning"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tilpasset standard"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Speciel standard"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Custom Standard"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "कस्टम स्टैंडर्ड"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Standard personnalisé"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "กำหนดมาตรฐาน"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自定义标准风格"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Custom Standard"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pasirinktinis standartinis"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estándar personalizado"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Standard Tersuai"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vlastný štandardný"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vlastní standardní"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Стандартен (персонализиран)"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prilagojeno standardno"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Custom Standard"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eigener Standard"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tiêu chuẩn tùy chỉnh"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Padrão Personalizado"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Власний стандартний"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Standard personnalisé"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Personalizat standard"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Арнаулы стандарт"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estándar personalizado"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "カスタム（標準）"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prilagođeni standard"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Padrão personalizado"
+          }
+        }
+      }
+    },
+    "SYSTEM_STYLES_FOOTER": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "המאפיין ״סגנונות צילומיים״ משתמש ביכולת הבנת סצנה מתקדמת כדי להתאים צבעים מסוימים בחלקים שונים של התמונה. באפשרותך להתאים באופן אישי את המראה של גוני העור שלך בדיוק מדהים כדי לקבל את התוצאה המדויקת הרצויה."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "사진 스타일이 고급 장면 파악 기능을 사용하여 사진의 각기 다른 부분에서 특정 색상을 조절합니다. 사진에 독창적인 뉘앙스를 가미하여 피부톤을 원하는 스타일로 개인 맞춤화합니다."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gaya Fotografi menggunakan pemahaman pemandangan mutakhir untuk menyesuaikan warna spesifik di berbagai bagian foto. Personalisasi bagaimana warna kulit ditampilkan dengan detail untuk mendapatkan tampilan yang Anda inginkan."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valokuvatyylit-ominaisuus käyttää kehittynyttä kuvaustilanteen tunnistusta ja säätää tiettyjä värejä kuvan eri osissa. Räätälöi ihonsävyt juuri sellaiseksi kuin haluat uskomattoman hienovaraisesti."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotoğrafik Stiller, fotoğrafların farklı bölümlerinde belirli renkleri ayarlamak için ileri düzey sahne algılamayı kullanır. Tam istediğiniz gibi görünmenizi sağlayan inanılmaz ayrıntılarla ten renklerinin nasıl görüneceğini kişiselleştirin."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Foto­grafische stijlen gebruiken een geavanceerd begrip van scènes om specifieke kleuren in verschillende delen van de foto aan te passen. Personaliseer hoe huidtinten worden weergegeven om met ongelooflijke nuance de exacte look te krijgen die je wilt."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Используя технологию усовершенствованного анализа кадра, Фотографические стили корректируют определенные цвета на различных участках фото. Тонкая детализация поможет создавать желаемые образы с особым вниманием к оттенку кожи."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Fotografikus stílusok a fejlett jelenetérzékelés segítségével állítják be az adott színeket a fotó különböző részein. Hihetetlen részletességgel szabhatja személyre a bőrszínárnyalatok megjelenését a fotókon, így azok pontosan úgy nézhetnek ki, ahogy szeretné."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gli stili fotografici sfruttano l’analisi avanzata delle scene per regolare colori specifici in diverse parti delle foto. Personalizza le tonalità della pelle con un’incredibile gamma di sfumature per ottenere esattamente il look che vuoi."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La función Estilos fotográficos utiliza la detección de escena avanzada para ajustar colores específicos en diferentes partes de la foto. Personaliza cómo se muestran los tonos de piel con increíbles matices para obtener la apariencia que deseas."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Τα Φωτογραφικά στιλ χρησιμοποιούν προηγμένη κατανόηση σκηνών για προσαρμογή συγκεκριμένων χρωμάτων σε διαφορετικά τμήματα της φωτογραφίας. Εξατομικεύστε την εμφάνιση των τόνων δέρματος μέσω μοναδικών επιλογών τονισμού για να λάβετε το ακριβές, επιθυμητό αποτέλεσμα."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gràcies a l’anàlisi avançada d’escenes, els estils fotogràfics permeten ajustar colors específics en diversos punts de la foto. Així, pots personalitzar els tons de pell amb una gran varietat de matisos."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تستخدم الأنماط الفوتوغرافية آلية فهم متقدمة للمَشاهد لضبط ألوان محددة في أجزاء مختلفة من الصورة. يمكن تخصيص مظهر درجات لون البشرة بدقة شديدة للوصول إلى المظهر الذي تريده تمامًا."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "「攝影風格」會使用進階的場景理解來調整照片不同部分的特定顏色。以精緻細節個人化膚色的外觀來精準呈現你要的樣貌。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "「攝影風格」使用進階的場景理解來調整相片中不同部份的特定顏色。個人化調整皮膚色調的細微差別，以獲得你想要的確切外觀。"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Style fotograficzne korzystają z zaawansowanej analizy scen i dostosowują wybrane kolory w różnych obszarach zdjęć. Pozwala to precyzyjnie personalizować wygląd karnacji fotografowanych osób."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotografiska stilar använder avancerad miljöförståelse till att justera vissa färger i olika delar av bilden. Personanpassa hur hudtoner ska framstå med otroliga nyanser och få precis den look du söker."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotostiler bruker avansert sceneforståelse for å justere bestemte farger i ulike områder av bildet. Tilpass små nyanser i hudfarger for å gi deg det uttrykket du ønsker."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Med Fotostil kan du bruge avanceret sceneregistrering til at justere bestemte farver på forskellige områder af fotoet. Tilpas, hvordan teint vises, ved at ændre små nuancer, så du får det udseende, du ønsker."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Photographic Styles uses advanced scene understanding to adjust specific colors in different parts of the photo. Personalize how skin tones appear with incredible nuance to get the exact look you want."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "फ़ोटोग्राफ़िक स्टाइल तस्वीर के विभिन्न हिस्सों में ख़ास रंगों को ऐडजस्ट करने के लिए उन्नत दृश्य समझदारी का इस्तेमाल करता है। गहन बारीकियों के साथ त्वचा के रंगों में बदलाव करें और अपना मनपसंद रूप पाएँ।"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les styles photographiques utilisent l’analyse avancée des scènes pour ajuster certaines couleurs dans plusieurs endroits de la photo. Personnalisez l’apparence des teints de la peau grâce à d’incroyables nuances qui vous permettent d’obtenir exactement le résultat que vous voulez."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "รูปแบบภาพถ่ายใช้การวิเคราะห์ฉากและองค์ประกอบภาพขั้นสูง เพื่อปรับแต่ละสีของรูปภาพให้กลมกลืนกันอย่างลงตัว ปรับแต่งโทนสีให้ผิวดูละเอียดและเรียบเนียนขึ้นเพื่อให้ได้ภาพในรูปแบบสีที่คุณต้องการสำหรับคุณโดยเฉพาะ"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“摄影风格”使用先进的场景理解技术，调整照片不同部分的特定颜色。通过极致微调个性化肤色，精准呈现你想要的效果。"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Photographic Styles uses advanced scene understanding to adjust specific colours in different parts of the photo. Personalise how skin tones appear with incredible nuance to get the exact look you want."
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Naudojant fotografavimo stilius taikoma pažangi scenos suvokimo funkcija ir koreguojamos konkrečios skirtingų nuotraukos dalių spalvos. Koreguokite subtiliausius odos atspalvius ir išgaukite norimą vaizdą."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La función Estilos fotográficos utiliza la detección de escena avanzada para ajustar colores específicos en diferentes partes de la foto. Personaliza cómo se muestran los tonos de piel con increíbles matices para obtener la apariencia que deseas."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gaya Fotografi menggunakan pemahaman adegan lanjutan untuk melaraskan warna khusus di bahagian berbeza pada foto. Peribadikan cara ton kulit kelihatan dengan nuansa menakjubkan untuk mendapatkan rupa tepat yang anda mahukan."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotografické štýly používajú pokročilú analýzu scén na úpravu konkrétnych farieb v rôznych častiach fotky. Umožňujú vám prispôsobiť odtieň pokožky do posledného detailu tak, aby ste dosiahli požadovaný vzhľad."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotografické styly přizpůsobují konkrétní barvy v různých částech fotky pomocí pokročilé analýzy scén. Umožňují upravit vzhled tónů pleti do posledního detailu a dosáhnout požadovaného efektu."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Функцията Фотографски стилове използва разширени методи за анализиране на сцената, за да коригира специфичните цветове в различни части на снимката. Персонализирайте начина, по който да се появяват цветовете на кожата с невероятни нюанси, за да получите желания външен вид."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Možnost Fotografski slogi uporablja napredno razumevanje prizorov za prilagajanje določenih barv na različnih delih fotografije. Prilagodite videz barv polti z izredno natančnostjo, da dosežete želeni rezultat."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Photographic Styles uses advanced scene understanding to adjust specific colours in different parts of the photo. Personalise how skin tones appear with incredible nuance to get the exact look you want."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„Fotografische Stile“ verwendet modernste Szenenerkennung, um bestimmte Farben in unterschiedlichen Bereichen des Fotos anzupassen. Passe detailgenau an, wie Hautfarben dargestellt werden – für die erwünschte Optik."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Phong cách nhiếp ảnh sử dụng khả năng nhận biết cảnh nâng cao để điều chỉnh một số màu sắc ở các phần khác nhau của ảnh. Cá nhân hóa màu da với độ tinh tế đáng kinh ngạc để có diện mạo đúng như ý."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Os Estilos Fotográficos usam a compreensão avançada da cena para ajustar cores específicas em partes diferentes da foto. Use nuances incríveis para personalizar sua aparência do jeito exato que você quer."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Стилі фотографій аналізують кадр, щоб підлаштувати певні кольори в різних ділянках фотографії. Персоналізуйте відтінки шкіри до найменших деталей, щоб виглядати саме так, як ви хочете."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les styles photographiques reposent sur une technologie avancée d’identification des scènes pour ajuster des couleurs spécifiques dans différentes parties de la photo. Personnalisez l’apparence des couleurs de peau avec une finesse incroyable pour obtenir exactement l’aspect voulu."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stilurile fotografice utilizează înțelegerea avansată a scenelor pentru a ajusta anumite culori din diferite părți ale pozei. Personalizați modul în care apar tonurile pielii cu o precizie nuanțată incredibilă, pentru a obține exact efectul dorit."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Фотографиялық стильдер фотоның әртүрлі бөліктеріндегі нақты түстерді реттеу үшін кеңейтілген көріністі анықтауды пайдаланады. Қажетті көріністі алу үшін тері реңктерінің көрсетілу жолдарын керемет ерекшеліктермен жекелендіріңіз."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gracias al análisis avanzado de escenas, los estilos fotográficos ajustan determinados colores de distintas partes de la foto y te permiten mostrar los tonos de piel con una gran variedad de matices para obtener el aspecto que buscas."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "フォトグラフスタイルでは、高度なシーン認識を使用して、写真内の異なる部分の特定のカラーを調整します。スキントーンを驚くようなニュアンスでパーソナライズして、望み通りの外観にすることができます。"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotografski stilovi koriste napredno razumijevanje scene za podešavanje određenih boja u različitim dijelovima fotografije. Personalizirajte izgled tonova kože s nevjerojatnim nijansama kako biste dobili točno onaj izgled koji želite."
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Os estilos fotográficos usam uma tecnologia avançada de análise de cenários para ajustar cores específicas em diversas partes da fotografia. Personalize o aspeto dos tons de pele com grande detalhe para obter o aspeto pretendido."
+          }
+        }
+      }
+    },
+    "CAM_PRESERVE_SMART_STYLE_FOOTER": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ניתן לשמור את הסגנון הצילומי האחרון שהיה בשימוש במקום לאפס אותו באופן אוטומטי."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "사진 스타일을 자동으로 재설정하는 대신 마지막으로 사용한 스타일을 유지합니다."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pertahankan Gaya Fotografi yang terakhir digunakan, alih-alih mengatur ulang secara otomatis."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Älä nollaa valokuvatyyliä automaattisesti, vaan säilytä viimeksi käytetty valokuvatyyli."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Otomatik olarak sıfırlamak yerine son kullanılan fotoğrafik stili korur."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bewaar de laatstgebruikte foto­grafische stijl in plaats van automatisch opnieuw in te stellen."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сохранять последний использованный фотографический стиль вместо автоматического сброса настроек."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Az utoljára használt fotografikus stílus megőrzése az automatikus alaphelyzetbe állítás helyett."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mantieni l’ultimo stile fotografico che hai utilizzato. L’opzione non verrà reimpostata automaticamente."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conserva el estilo fotográfico más reciente en lugar de restablecerlo automáticamente."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Διατήρηση του φωτογραφικού στιλ που χρησιμοποιήθηκε πιο πρόσφατα, αντί για αυτόματη επαναφορά."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conserva l’últim estil fotogràfic utilitzat, en lloc de restablir‑lo automàticament."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الاحتفاظ بآخر نمط فوتوغرافي مستخدم بدلًا من إعادة التعيين تلقائيًا."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保留上次使用的「攝影風格」，不要自動重置。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保留上次使用的「攝影風格」，不要自動重設。"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aplikacja zachowuje ostatnio użyte ustawienie stylu fotograficznego, zamiast automatycznie je zerować."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Behåll den fotografiska stil som användes senast istället för att automatiskt återställa."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Husk den sist brukte fotostilen i stedet for å nullstille automatisk."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Behold den forrige fotostil, fremfor at nulstille automatisk."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Preserve the last used Photographic Style, rather than automatically reset."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ऑटोमैटिकली रीसेट करने के बजाए पिछली बार इस्तेमाल किया गया फ़ोटोग्राफ़िक स्टाइल संरक्षित करें।"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Applique le dernier style photographique utilisé, plutôt que de rétablir automatiquement les réglages."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "คงรูปแบบภาพถ่ายที่ใช้ล่าสุดไว้แทนที่จะรีเซ็ตโดยอัตโนมัติ"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保留上次使用的摄影风格，而非自动重设。"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Preserve the last used Photographic Style, rather than automatically reset."
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Užuot automatiškai atkūrę fotografavimo stilių, išsaugokite paskutinį naudotą."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conserva el estilo fotográfico más reciente en lugar de restablecerlo automáticamente."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kekalkan Gaya Fotografi yang terakhir digunakan, berbanding mereset secara automatik."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Namiesto automatického resetovania zachová naposledy použitý fotografický štýl."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Místo automatického resetování se zachová naposledy použitý fotografický styl."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Запазва последно използвания Фотографски стил, вместо да възстанови автоматичния."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ohrani nazadnje uporabljeni fotografski slog, namesto da ga samodejno ponastavi."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Preserve the last used Photographic Style, rather than automatically reset."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Behalte den zuletzt verwendeten fotografischen Stil, anstatt ihn automatisch zurückzusetzen."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bảo lưu Phong cách nhiếp ảnh được sử dụng sau cùng, thay vì tự động đặt lại."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Preserva o último Estilo Fotográfico usado, em vez de redefini‑lo automaticamente."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Зберігати останній застосований стиль фотографій замість автоскидання."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conserve le dernier style photographique utilisé au lieu de réinitialiser automatiquement le réglage."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Va fi menținut ultimul stil fotografic utilizat, în locul resetării automate a acestuia."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Автоматты түрде бастапқы күйге қайтарудың орнына, соңғы пайдаланылған фотографиялық стильді сақтаңыз."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conserva el último estilo fotográfico usado en lugar de restablecerlo automáticamente."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自動的にリセットされずに、最後に使ったフォトグラフスタイルを保持します。"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Očuvajte zadnje korišteni Fotografski stil, umjesto automatskog resetiranja."
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Manter o último estilo fotográfico usado, em vez de voltar automaticamente ao original."
+          }
+        }
+      }
+    },
+    "APP_SETTINGS_HEADER": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "הגדרות היישום"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "앱 설정"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PENGATURAN APP"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "APPIASETUKSET"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "UYGULAMA AYARLARI"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "APPINSTELLINGEN"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "НАСТРОЙКИ ПРИЛОЖЕНИЯ"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "APPBEÁLLÍTÁSOK"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "IMPOSTAZIONI APP"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CONFIGURACIÓN DE APP"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ΡΥΘΜΙΣΕΙΣ ΕΦΑΡΜΟΓΗΣ"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CONFIGURACIÓ DE L’APP"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إعدادات التطبيق"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App設定"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "APP設定"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "USTAWIENIA APLIKACJI"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "APPINSTÄLLNINGAR"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "APPINNSTILLINGER"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "APPINDSTILLINGER"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "APP SETTINGS"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ऐप सेटिंग्ज़"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "RÉGLAGES DE L’APP"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "การตั้งค่าแอป"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "APP设置"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "APP SETTINGS"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PROGRAMOS NUSTATYMAI"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CONFIGURACIÓN DE APP"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SETING APP"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NASTAVENIA APKY"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NASTAVENÍ APLIKACE"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "НАСТРОЙКИ НА ПРИЛОЖЕНИЯ"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NASTAVITVE APLIKACIJE"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "APP SETTINGS"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "APP-EINSTELLUNGEN"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CÀI ĐẶT ỨNG DỤNG"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AJUSTES DE APP"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ПАРАМЕТРИ ПРОГРАМИ"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "RÉGLAGES DE L’APP"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CONFIGURĂRI APLICAȚIE"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ҚОЛДАНБА РЕТТЕУЛЕРІ"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AJUSTES DE LA APP"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アプリ設定"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "POSTAVKE APLIKACIJE"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "DEFINIÇÕES DA APLICAÇÃO"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}
