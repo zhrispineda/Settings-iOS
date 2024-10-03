@@ -54,8 +54,8 @@ struct VersionView: View {
         guard let mobileGestalt = UIDevice.checkDevice(),
               let cacheExtra = mobileGestalt["CacheExtra"] as? [String: AnyObject],
               let buildVersion = cacheExtra["mZfUC7qo4pURNhyMHZ62RQ"] as? String else { // BuildVersion key
-            logger.info("Key BuildVersion not found! Will fallback to 22A3354.")
-            return "22A3354" // Fallback
+            logger.info("Key BuildVersion not found! Will fallback to 22A3370.")
+            return "22A3370" // Fallback
         }
         logger.info("Found key BuildVersion: \(buildVersion)")
         return buildVersion
