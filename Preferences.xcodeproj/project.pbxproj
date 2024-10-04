@@ -36,6 +36,7 @@
 		832928492B85779D006611CF /* TrackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832928482B85779D006611CF /* TrackingView.swift */; };
 		8329284B2B8578F4006611CF /* AppPermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8329284A2B8578F4006611CF /* AppPermissionsView.swift */; };
 		8329284E2B8580B3006611CF /* HeadphoneAudioLevelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8329284D2B8580B3006611CF /* HeadphoneAudioLevelsView.swift */; };
+		832999532CAF93BA009AD115 /* MGHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832999522CAF93BA009AD115 /* MGHelper.swift */; };
 		832EF38A2B8071C00066A1BF /* RestrictionsLocationServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832EF3892B8071C00066A1BF /* RestrictionsLocationServicesView.swift */; };
 		832EF38C2B81264E0066A1BF /* LocationAlertsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832EF38B2B81264E0066A1BF /* LocationAlertsView.swift */; };
 		832EF38F2B814EC80066A1BF /* LocationPermissionsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832EF38E2B814EC80066A1BF /* LocationPermissionsDetailView.swift */; };
@@ -300,6 +301,7 @@
 		832928482B85779D006611CF /* TrackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingView.swift; sourceTree = "<group>"; };
 		8329284A2B8578F4006611CF /* AppPermissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPermissionsView.swift; sourceTree = "<group>"; };
 		8329284D2B8580B3006611CF /* HeadphoneAudioLevelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadphoneAudioLevelsView.swift; sourceTree = "<group>"; };
+		832999522CAF93BA009AD115 /* MGHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGHelper.swift; sourceTree = "<group>"; };
 		832EF3892B8071C00066A1BF /* RestrictionsLocationServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestrictionsLocationServicesView.swift; sourceTree = "<group>"; };
 		832EF38B2B81264E0066A1BF /* LocationAlertsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAlertsView.swift; sourceTree = "<group>"; };
 		832EF38E2B814EC80066A1BF /* LocationPermissionsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionsDetailView.swift; sourceTree = "<group>"; };
@@ -643,6 +645,14 @@
 			path = Health;
 			sourceTree = "<group>";
 		};
+		832999512CAF9302009AD115 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				832999522CAF93BA009AD115 /* MGHelper.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		832EF38D2B81268A0066A1BF /* Location Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -769,8 +779,8 @@
 			isa = PBXGroup;
 			children = (
 				83CC61982B7952B800DAF0C1 /* Info.plist */,
+				832999512CAF9302009AD115 /* Components */,
 				83585FC62C435A4600B11C91 /* Extensions */,
-				83AC4BE22C456E6B006C7D13 /* Localizations */,
 				838C23242B746D200053D4C5 /* Models */,
 				83B893BE2B8FDBDB005705A3 /* Resources */,
 				838C23272B746D6B0053D4C5 /* Templates */,
@@ -1130,6 +1140,7 @@
 		83B893BE2B8FDBDB005705A3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				83AC4BE22C456E6B006C7D13 /* Localizations */,
 				83B893BF2B8FDBE8005705A3 /* iPhone15_Pro_NaturalTitanium.usdz */,
 			);
 			path = Resources;
@@ -1509,6 +1520,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				832999532CAF93BA009AD115 /* MGHelper.swift in Sources */,
 				83B98E302B7C087B007F6C94 /* IconToggle.swift in Sources */,
 				838134F72BCDA9380049E197 /* SoundsHapticsView.swift in Sources */,
 				83B893B62B8FC844005705A3 /* HoverTextView.swift in Sources */,
@@ -1882,7 +1894,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1307;
 				DEVELOPMENT_ASSET_PATHS = "\"Preferences/Preview Content\"";
-				DEVELOPMENT_TEAM = 6Q4MRN2FMC;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Preferences/Info.plist;
@@ -1890,6 +1902,7 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = "";
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
@@ -1931,6 +1944,7 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = "";
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";

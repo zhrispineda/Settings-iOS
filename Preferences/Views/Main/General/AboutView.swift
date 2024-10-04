@@ -10,6 +10,7 @@ import SwiftUI
 struct AboutView: View {
     // Variables
     @State private var showingModelNumber = false
+    @State private var modelNumber = String()
     @State private var serialNumber = String()
     @State private var availableStorage: String = getAvailableStorage() ?? "N/A"
     @State private var totalStorage: String = getTotalStorage() ?? "N/A"
@@ -29,15 +30,16 @@ struct AboutView: View {
                 
                 LabeledContent("Model Name", value: UIDevice.fullModel)
                     .textSelection(.enabled)
-                HText("Model Number", status: showingModelNumber ? getRegulatoryModelNumber() : "\(getRegulatoryModelNumber())\(getRegionInfo())", monospaced: true)
+                HText("Model Number", status: showingModelNumber ? getRegulatoryModelNumber() : "\(modelNumber)\(getRegionInfo())", monospaced: true)
                     .contentShape(Rectangle())
                     .onTapGesture {
                         showingModelNumber.toggle()
                     }
                 HText("Serial Number", status: serialNumber, monospaced: true)
-                    .onAppear {
-                        serialNumber = getRandomSerialNumber()
-                    }
+            }
+            .onAppear {
+                modelNumber = MGHelper.read(key: "D0cJ8r7U5zve6uA6QbOiLA") ?? getRegulatoryModelNumber()
+                serialNumber = MGHelper.read(key: "VasUgeSzVyHdB27g2XpN0g") ?? getRandomSerialNumber()
             }
             
 //            if !UIDevice.isSimulator {
@@ -110,7 +112,7 @@ struct AboutView: View {
     func getRegulatoryModelNumber() -> String {
         var modelNumber: String
         
-        // Check mobileGestalt first
+        // Check MobileGestalt CacheExtra first
         if let mobileGestalt = UIDevice.checkDevice() {
             let cacheExtra = mobileGestalt["CacheExtra"] as! [String : AnyObject]
             return cacheExtra["97JDvERpVwO+GHtthIh7hA"] as! String // Model number
