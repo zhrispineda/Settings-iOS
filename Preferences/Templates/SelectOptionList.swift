@@ -22,8 +22,8 @@ struct SelectOptionList: View {
         CustomList(title: title) {
             Section {
                 Picker("", selection: $selected) {
-                    ForEach(options, id: \.self) {
-                        Text($0)
+                    ForEach(options, id: \.self) { option in
+                        Text(option)
                     }
                 }
                 .pickerStyle(.inline)

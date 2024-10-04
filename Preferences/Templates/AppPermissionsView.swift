@@ -29,11 +29,8 @@ struct AppPermissionsView: View {
             switch permissionName {
             case "App Clips":
                 Section {} footer: {
-                    switch appClipPermission {
-                    case "CAMERA":
+                    if appClipPermission == "CAMERA" {
                         Text("CAMERA_HEADER", tableName: table)
-                    default:
-                        EmptyView()
                     }
                 }
             case "CALENDARS":
@@ -41,24 +38,25 @@ struct AppPermissionsView: View {
                     VStack(alignment: .leading) {
                         ZStack {
                             RoundedRectangle(cornerSize: CGSize(width: 10, height: 10))
-                                .foregroundStyle(Color(UIColor.systemGray5))
-                                .shadow(radius: 5.0)
+                                .foregroundStyle(Color(UIColor.systemGray6))
+                                .shadow(radius: 0.3)
                                 .frame(width: 280, height: 75)
                                 .padding(.top, 40)
                             RoundedRectangle(cornerSize: CGSize(width: 10, height: 10))
-                                .foregroundStyle(Color(UIColor.systemGray5))
-                                .shadow(radius: 5.0)
+                                .foregroundStyle(Color(UIColor.systemGray6))
+                                .shadow(radius: 0.3)
                                 .frame(width: 300, height: 75)
                                 .padding(.top, 20)
                             RoundedRectangle(cornerSize: CGSize(width: 10, height: 10))
-                                .foregroundStyle(Color(UIColor.systemGray5))
-                                .shadow(radius: 5.0)
+                                .foregroundStyle(Color(UIColor.systemGray6))
+                                .shadow(radius: 0.3)
                                 .frame(width: 320, height: 75)
                             HStack {
                                 VStack(alignment: .leading) {
                                     Text("SUNDAY, MAR 10")
                                         .foregroundColor(.red)
                                         .font(.caption)
+                                        .fontWeight(.semibold)
                                     HStack {
                                         RoundedRectangle(cornerSize: CGSize(width: 10, height: 10))
                                             .foregroundStyle(Color(UIColor.systemPurple))
@@ -86,7 +84,7 @@ struct AppPermissionsView: View {
                             .padding(.leading)
                         Text("3 calendars, 50 events in the next year")
                             .foregroundStyle(.secondary)
-                            .font(.caption2)
+                            .font(.subheadline)
                             .padding(.leading)
                     }
                 } footer: {
@@ -171,10 +169,6 @@ struct AppPermissionsView: View {
                     SettingsLink(color: .white, iconColor: .blue, icon: "appclip", id: "App Clips") {
                         AppPermissionsView(permissionName: "App Clips", appClipPermission: permissionName)
                     }
-                } else if permissionName == "FOCUS" {
-                    //IconToggle(enabled: $messagesEnabled, icon: "appleMessages", title: "Messages")
-                } else if permissionName == ".localize(table: table)" {
-                    //IconToggle(enabled: $healthEnabled, icon: "appleHealth", title: "HEALTH".localize(table: table))
                 }
             } header: {
                 if permissionName == "FOCUS" {
@@ -213,6 +207,6 @@ struct AppPermissionsView: View {
 
 #Preview {
     NavigationStack {
-        AppPermissionsView(permissionName: "FOCUS")
+        AppPermissionsView(permissionName: "CALENDARS")
     }
 }

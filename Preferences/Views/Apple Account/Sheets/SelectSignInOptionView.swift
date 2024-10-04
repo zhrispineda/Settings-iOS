@@ -20,10 +20,10 @@ struct SelectSignInOptionView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 75)
-                Text("LOGIN_FORM_TITLE".localize(table: table))
+                Text("LOGIN_FORM_TITLE", tableName: table)
                     .font(.title)
                     .bold()
-                Text("SIGN_IN_OPTIONS_DESCRIPTION".localize(table: table))
+                Text("SIGN_IN_OPTIONS_DESCRIPTION", tableName: table)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal)
             }
@@ -42,9 +42,9 @@ struct SelectSignInOptionView: View {
                                 .foregroundStyle(.blue)
                                 .frame(width: 64)
                             VStack(alignment: .leading) {
-                                Text("SIGN_IN_OPTION_ANOTHER_DEVICE_TITLE".localize(table: table))
+                                Text("SIGN_IN_OPTION_ANOTHER_DEVICE_TITLE", tableName: table)
                                     .bold()
-                                Text("SIGN_IN_OPTION_ANOTHER_DEVICE_SUBTITLE".localize(table: table))
+                                Text("SIGN_IN_OPTION_ANOTHER_DEVICE_SUBTITLE", tableName: table)
                                     .font(.subheadline)
                                     .foregroundStyle(.secondary)
                             }
@@ -70,9 +70,9 @@ struct SelectSignInOptionView: View {
                                 .font(.system(size: 40))
                                 .frame(width: 70)
                             VStack(alignment: .leading) {
-                                Text("DISCOVERING_VIEW_BUTTON_SIGN_IN_MANUAL".localize(table: table))
+                                Text("DISCOVERING_VIEW_BUTTON_SIGN_IN_MANUAL", tableName: table)
                                     .bold()
-                                Text("SIGN_IN_OPTION_ENTER_PASSWORD_SUBTITLE".localize(table: table))
+                                Text("SIGN_IN_OPTION_ENTER_PASSWORD_SUBTITLE", tableName: table)
                                     .font(.subheadline)
                                     .foregroundStyle(.secondary)
                             }
@@ -98,7 +98,7 @@ struct SelectSignInOptionView: View {
                 Button {
                     showingAlert.toggle()
                 } label: {
-                    Text("ACCOUNT_SETUP_CREATE_ACCOUNT_REBRAND".localize(table: table))
+                    Text("ACCOUNT_SETUP_CREATE_ACCOUNT_REBRAND", tableName: table)
                         .fontWeight(.semibold)
                 }
                 .padding(.bottom, 60)
