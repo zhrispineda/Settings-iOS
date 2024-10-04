@@ -48,7 +48,7 @@ struct SiriView: View {
                 if !siriEnabled {
                     CustomNavigationLink(title: "Voice", status: "American (Voice 4)", destination: SiriVoiceView())
                 }
-                if !UIDevice.isSimulator {
+                if !UIDevice.IsSimulator {
                     CustomNavigationLink(title: "Talk to Siri", status: "Off", destination: EmptyView())
                 }
 //                Toggle("Press \(Device().isPhone ? "\(Device().hasHomeButton ? "Home" : "Side") Button" : "Top Button") for Siri", isOn: $siriEnabled)
@@ -82,12 +82,12 @@ struct SiriView: View {
 //                        siriEnabled ? (Device().isPhone ? showingEnableSiriPopup.toggle() : showingEnableSiriAlert.toggle()) : (Device().isPhone ? showingDisableSiriPopup.toggle() : showingDisableSiriAlert.toggle())
 //                    }
                 if siriEnabled {
-                    if !UIDevice.isSimulator {
+                    if !UIDevice.IsSimulator {
                         Toggle("Allow Siri When Locked", isOn: $allowSiriWhenLockedEnabled)
                     }
                     CustomNavigationLink(title: "Voice", status: "American (Voice 4)", destination: SiriVoiceView())
                     NavigationLink("Siri Responses", destination: SiriResponsesView())
-                    if !UIDevice.isSimulator {
+                    if !UIDevice.IsSimulator {
                         NavigationLink("Announce Calls", destination: EmptyView())
                         NavigationLink("Announce Notifications", destination: EmptyView())
                     }
@@ -110,7 +110,7 @@ struct SiriView: View {
             } header: {
                 Text("Siri Requests")
             } footer: {
-                Text(UIDevice.isSimulator ? "[About Siri & Privacy...](#)" : "Voice input is processed on \(UIDevice.current.model), but transcripts of your requests are sent to Apple. [About Siri & Privacy...](#)")
+                Text(UIDevice.IsSimulator ? "[About Siri & Privacy...](#)" : "Voice input is processed on \(UIDevice.current.model), but transcripts of your requests are sent to Apple. [About Siri & Privacy...](#)")
 //                Text(siriEnabled ? "Voice input is processed on \(UIDevice.current.model), but transcripts of your requests are sent to Apple. [About Siri & Privacy...](#)" : "Siri can help you get things done just by asking. [About Siri & Privacy...](#)")
             }
             

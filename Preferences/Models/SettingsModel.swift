@@ -139,7 +139,7 @@ let internalIcons = ["airdrop", "apple.photos", "apps.iphone.assistive.access", 
 
 // MARK: Services Settings
 @MainActor let serviceSettings: [SettingsItem] = [
-    SettingsItem(type: .appStore, title: "App Store", icon: "appleAppStore", destination: UIDevice.isSimulator ? AnyView(EmptyView()) : AnyView(AppStoreView())),
+    SettingsItem(type: .appStore, title: "App Store", icon: "appleAppStore", destination: UIDevice.IsSimulator ? AnyView(EmptyView()) : AnyView(AppStoreView())),
     SettingsItem(type: .gameCenter, title: "Game Center", icon: "appleGameCenter", destination: AnyView(GameCenterView())),
     SettingsItem(type: .icloud, title: "iCloud", icon: "iCloud", destination: AnyView(EmptyView())),
     SettingsItem(type: .wallet, title: "Wallet & Apple Pay", icon: "appleWallet", destination: AnyView(WalletView()))

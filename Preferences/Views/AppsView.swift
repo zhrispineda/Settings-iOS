@@ -15,7 +15,7 @@ struct AppsView: View {
     let characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ#".map(String.init)
     
     var groupedApps: [String: [String]] {
-        Dictionary(grouping: UIDevice.isSimulator ? simulatorApps : apps, by: { String($0.prefix(1)) })
+        Dictionary(grouping: UIDevice.IsSimulator ? simulatorApps : apps, by: { String($0.prefix(1)) })
     }
 
     var body: some View {

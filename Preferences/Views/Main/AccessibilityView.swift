@@ -32,7 +32,7 @@ struct AccessibilityView: View {
             }
             
             Section {
-                if !UIDevice.isSimulator {
+                if !UIDevice.IsSimulator {
                     SettingsLink(icon: "voiceover", id: "VOICEOVER_TITLE".localize(table: titleTable), status: "OFF".localize(table: table)) {
                         VoiceOverView()
                     }
@@ -52,7 +52,7 @@ struct AccessibilityView: View {
                 SettingsLink(color: .black, icon: "rectangle.3.group.bubble.fill", id: "SPEECH_TITLE".localize(table: titleTable)) {
                     SpeakSelectionView()
                 }
-                if !UIDevice.isSimulator {
+                if !UIDevice.IsSimulator {
                     SettingsLink(color: .blue, icon: "quote.bubble.fill", id: "DESCRIPTIVE_VIDEO_SETTING".localize(table: titleTable)) {
                         SpeakSelectionView()
                     }
@@ -62,7 +62,7 @@ struct AccessibilityView: View {
             }
             
             Section {
-                if !UIDevice.isSimulator {
+                if !UIDevice.IsSimulator {
                     SettingsLink(color: .blue, icon: "hand.point.up.left.fill", id: "TOUCH".localize(table: titleTable)) {
                         TouchView()
                     }
@@ -72,7 +72,7 @@ struct AccessibilityView: View {
                         FaceAttentionView()
                     }
                 }
-                if !UIDevice.isSimulator {
+                if !UIDevice.IsSimulator {
                     SettingsLink(icon: "square.grid.2x2", id: "ScannerSwitchTitle".localize(table: titleTable)) {}
                     SettingsLink(color: .blue, icon: "voice.control", id: "CommandAndControlTitle".localize(table: titleTable)) {}
                     SettingsLink(color: .indigo, icon: "eye.tracking", id: "Eye Tracking") {}
@@ -97,7 +97,7 @@ struct AccessibilityView: View {
             }
             
             Section {
-                if !UIDevice.isSimulator {
+                if !UIDevice.IsSimulator {
                     SettingsLink(color: .blue, icon: "ear", id: "HEARING_AID_TITLE".localize(table: titleTable)) {}
                     SettingsLink(color: .gray, icon: "switch.2", id: "HEARING_CONTROL_CENTER_TITLE".localize(table: table)) {}
                     SettingsLink(color: .red, icon: "waveform.and.magnifyingglass", id: "SOUND_RECOGNITION_TITLE".localize(table: titleTable)) {}
@@ -107,7 +107,7 @@ struct AccessibilityView: View {
                 SettingsLink(color: .blue, icon: "captions.bubble.fill", id: "SUBTITLES_CAPTIONING".localize(table: titleTable)) {
                     SubtitlesCaptioningView()
                 }
-                if !UIDevice.isSimulator {
+                if !UIDevice.IsSimulator {
                     SettingsLink(icon: "waveform.bubble.fill", id: "RTT_LIVE_TRANSCRIPTIONS_LABEL".localize(table: table)) {}
                     if UIDevice.iPhone {
                         SettingsLink(color: .red, icon: "apple.haptics.and.music.note", id: "HAPTIC_MUSIC_TITLE".localize(table: hapticTable)) {}
@@ -121,7 +121,7 @@ struct AccessibilityView: View {
                 SettingsLink(color: .black, icon: "keyboard.badge.waveform.fill", id: "LIVE_SPEECH_TITLE".localize(table: titleTable), status: "OFF".localize(table: table)) {
                     LiveSpeechView()
                 }
-                if UIDevice.isSimulator {
+                if UIDevice.IsSimulator {
                     NavigationLink {
                         Text(String())
                             .onAppear {
@@ -142,7 +142,7 @@ struct AccessibilityView: View {
                 SettingsLink(color: .gray, icon: "keyboard.fill", id: "KEYBOARDS".localize(table: titleTable)) {
                     KeyboardsTypingView()
                 }
-                if !UIDevice.isSimulator {
+                if !UIDevice.IsSimulator {
                     SettingsLink(color: .gray, icon: "appletvremote.gen4.fill", id: "APPLE_TV_REMOTE".localize(table: titleTable)) {}
                 }
             } header: {
@@ -150,7 +150,7 @@ struct AccessibilityView: View {
             }
             
             Section {
-                if !UIDevice.isSimulator {
+                if !UIDevice.IsSimulator {
                     SettingsLink(icon: "lock.square.dotted", id: "GUIDED_ACCESS_TITLE".localize(table: titleTable), status: "OFF".localize(table: table)) {}
                     SettingsLink(color: .gray, icon: "apps.iphone.assistive.access", id: "CLARITY_UI_TITLE".localize(table: titleTable)) {}
                     SettingsLink(color: .clear, icon: "appleSiri", id: "SIRI_SETTINGS_TITLE".localize(table: titleTable)) {}

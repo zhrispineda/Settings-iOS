@@ -26,7 +26,7 @@ struct PreserveSettingsView: View {
     
     var body: some View {
         CustomList(title: "Preserve Settings") {
-            if !UIDevice.isSimulator {
+            if !UIDevice.IsSimulator {
                 Section {
                     Toggle("CAM_PRESERVE_CAMERA_MODE_SWITCH".localize(table: table), isOn: $cameraMode)
                 } footer: {

@@ -29,10 +29,10 @@ struct GeneralView: View {
             }
         
             Section {
-                SettingsLink(color: .gray, icon: UIDevice.isSimulator ? "questionmark.app.dashed" : UIDevice.iPhone ? "iphone.gen3" : "ipad.gen2", id: "About".localize(table: table)) {
+                SettingsLink(color: .gray, icon: UIDevice.IsSimulator ? "questionmark.app.dashed" : UIDevice.iPhone ? "iphone.gen3" : "ipad.gen2", id: "About".localize(table: table)) {
                     AboutView()
                 }
-                if !UIDevice.isSimulator {
+                if !UIDevice.IsSimulator {
                     SettingsLink(color: .gray, icon: "gear.badge", id: "SOFTWARE_UPDATE".localize(table: table)) {
                         SoftwareUpdateView()
                     }
@@ -42,7 +42,7 @@ struct GeneralView: View {
                 }
             }
             
-            if !UIDevice.isSimulator {
+            if !UIDevice.IsSimulator {
                 Section {
                     SettingsLink(color: Color.clear, icon: "appleCare", id: "COVERAGE".localize(table: table)) {
                         AppleCareWarrantyView()
@@ -50,7 +50,7 @@ struct GeneralView: View {
                 }
             }
             
-            if !UIDevice.isSimulator {
+            if !UIDevice.IsSimulator {
                 Section {
                     SettingsLink(color: .white, iconColor: .blue, icon: "airdrop", id: "AIRDROP".localize(table: table)) {
                         AirDropView()
@@ -69,7 +69,7 @@ struct GeneralView: View {
                 }
             }
             
-            if !UIDevice.isSimulator && UIDevice.HomeButtonCapability {
+            if !UIDevice.IsSimulator && UIDevice.HomeButtonCapability {
                 SettingsLink(color: .gray, icon: "iphone.gen1", id: "HOME_BUTTON".localize(table: table)) {}
             }
             
@@ -77,7 +77,7 @@ struct GeneralView: View {
                 SettingsLink(color: .gray, icon: "key.dots.fill", id: "AUTOFILL".localize(table: table)) {
                     AutoFillPasswordsView()
                 }
-                if !UIDevice.isSimulator {
+                if !UIDevice.IsSimulator {
                     SettingsLink(color: .gray, icon: "arrow.clockwise.app.stack.fill", id: "AUTO_CONTENT_DOWNLOAD".localize(table: table)) {
                         BackgroundAppRefreshView()
                     }
@@ -104,7 +104,7 @@ struct GeneralView: View {
                 }
             }
             
-            if !UIDevice.isSimulator {
+            if !UIDevice.IsSimulator {
                 Section {
                     SettingsLink(icon: "cable.coaxial", id: "TV_PROVIDER_LABEL".localize(table: table)) {
                         TVProviderView()
@@ -118,7 +118,7 @@ struct GeneralView: View {
                 }
             }
             
-            if !UIDevice.isSimulator {
+            if !UIDevice.IsSimulator {
                 Section {
                     SettingsLink(color: .gray, icon: "checkmark.seal.text.page.fill", id: "LEGAL_AND_REGULATORY_TITLE".localize(table: table)) {
                         LegalRegulatoryView()
@@ -128,7 +128,7 @@ struct GeneralView: View {
             
             Section {
                 SettingsLink(color: .gray, icon: "arrow.counterclockwise", id: "TRANSFER_OR_RESET_TITLE".localize(table: table)) {
-                    if !UIDevice.isSimulator {
+                    if !UIDevice.IsSimulator {
                         TransferResetView()
                     } else {
                         Text(String())
@@ -139,7 +139,7 @@ struct GeneralView: View {
                 }
             }
             
-            if !UIDevice.isSimulator {
+            if !UIDevice.IsSimulator {
                 Section {
                     Button("SHUTDOWN_LABEL".localize(table: table)) {}
                 }

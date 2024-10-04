@@ -15,7 +15,7 @@ struct FaceAttentionView: View {
     
     var body: some View {
         CustomList(title: "Face ID & Attention") {
-            if !UIDevice.isSimulator {
+            if !UIDevice.IsSimulator {
                 Section {
                     Toggle("Require Attention for Face ID", isOn: $requireAttentionEnabled)
                 } footer: {
@@ -33,7 +33,7 @@ struct FaceAttentionView: View {
                 }
             }
             
-            if !UIDevice.isSimulator && UIDevice.iPhone {
+            if !UIDevice.IsSimulator && UIDevice.iPhone {
                 Section {
                     Toggle("Haptic on Successful Authentication", isOn: $hapticAuthentication)
                 } header: {

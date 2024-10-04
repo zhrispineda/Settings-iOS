@@ -20,7 +20,7 @@ struct LiveSpeechView: View {
             }
             
             Section {
-                if UIDevice.isSimulator {
+                if UIDevice.IsSimulator {
                     NavigationLink("Phrases") {
                         CustomList(title: "Phrases") {}
                     }

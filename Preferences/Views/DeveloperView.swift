@@ -43,7 +43,7 @@ struct DeveloperView: View {
     
     var body: some View {
         CustomList(title: "Developer", topPadding: true) {
-            if UIDevice.isSimulator {
+            if UIDevice.IsSimulator {
                 Section {
                     Toggle("Dark Appearance", isOn: $darkAppearanceEnabled)
                 } header: {
@@ -51,7 +51,7 @@ struct DeveloperView: View {
                 }
             }
             
-            if UIDevice.isSimulator && UIDevice.iPhone || (UIDevice.iPad && UIDevice.ProDevice) {
+            if UIDevice.IsSimulator && UIDevice.iPhone || (UIDevice.iPad && UIDevice.ProDevice) {
                 Section {
                     if UIDevice.iPhone {
                         CustomNavigationLink(title: "View", status: "Default", destination: DisplayZoomView())

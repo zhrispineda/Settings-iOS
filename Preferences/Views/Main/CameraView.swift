@@ -53,7 +53,7 @@ struct CameraView: View {
     
     var body: some View {
         CustomList(title: "CAMERA_SETTINGS_TITLE".localize(table: table), topPadding: true) {
-            if !UIDevice.isSimulator && UIDevice.AdvancedPhotographicStylesCapability {
+            if !UIDevice.IsSimulator && UIDevice.AdvancedPhotographicStylesCapability {
                 Section {
                     CustomNavigationLink(title: "CAMERA_BUTTON_TITLE".localize(table: buttonTable), status: selectedApp.localize(table: buttonTable), destination: CameraControlView())
                 } header: {
@@ -77,7 +77,7 @@ struct CameraView: View {
                         }
                     }
                 } header: {
-                    if !UIDevice.isSimulator {
+                    if !UIDevice.IsSimulator {
                         Text("APP_SETTINGS_HEADER", tableName: stylesTable)
                     }
                 } footer: {
@@ -136,7 +136,7 @@ struct CameraView: View {
             
             if UIDevice.ProDevice && UIDevice.iPhone {
                 Section {
-                    CustomNavigationLink(title: UIDevice.AdvancedPhotographicStylesCapability && !UIDevice.isSimulator ? "FOCAL_LENGTH_ROW_TITLE_CAMERA_BUTTON".localize(table: buttonTable) : "FOCAL_LENGTH_ROW_TITLE".localize(table: table), status: "FOCAL_LENGTH_GROUP_%@_AND_%@_AND_%@_MM".localize(table: table, "24", "28", "35"), destination: FocalLengthView())
+                    CustomNavigationLink(title: UIDevice.AdvancedPhotographicStylesCapability && !UIDevice.IsSimulator ? "FOCAL_LENGTH_ROW_TITLE_CAMERA_BUTTON".localize(table: buttonTable) : "FOCAL_LENGTH_ROW_TITLE".localize(table: table), status: "FOCAL_LENGTH_GROUP_%@_AND_%@_AND_%@_MM".localize(table: table, "24", "28", "35"), destination: FocalLengthView())
                 } header: {
                     if UIDevice.AdvancedPhotographicStylesCapability {
                         Text("CAM_PHOTO_CAPTURE_HEADER", tableName: table)

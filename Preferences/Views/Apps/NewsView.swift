@@ -17,7 +17,7 @@ struct NewsView: View {
     
     var body: some View {
         CustomList(title: "News", topPadding: true) {
-            if UIDevice.isSimulator {
+            if UIDevice.IsSimulator {
                 PermissionsView(appName: "News", background: true, cellular: false, liveActivityToggle: true, location: false, notifications: false, cellularEnabled: .constant(true))
             } else {
                 PermissionsView(appName: "News", background: true, cellular: true, liveActivityToggle: true, location: true, notifications: true, cellularEnabled: .constant(true))

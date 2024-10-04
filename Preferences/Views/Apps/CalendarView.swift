@@ -42,7 +42,7 @@ struct CalendarView: View {
                 Toggle("Week Numbers", isOn: $weekNumbersEnabled)
                 Toggle("Week View Starts On Today", isOn: $weekViewStartsTodayEnabled)
                 Toggle("Show Invitee Declines", isOn: $showInviteeDeclinesEnabled)
-                if !UIDevice.isSimulator {
+                if !UIDevice.IsSimulator {
                     CustomNavigationLink(title: "Sync", status: "All Events", destination: EmptyView())
                 }
                 NavigationLink("Default Alert Times") {}

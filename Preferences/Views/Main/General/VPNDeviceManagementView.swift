@@ -12,7 +12,7 @@ struct VPNDeviceManagementView: View {
     @Environment(\.dismiss) private var dismiss
     
     var body: some View {
-        if UIDevice.isSimulator {
+        if UIDevice.IsSimulator {
             Color(UIColor.systemGroupedBackground)
                 .ignoresSafeArea()
                 .navigationTitle("VPN & Device Management")

@@ -25,14 +25,14 @@ struct WalletView: View {
     var body: some View {
         CustomList(title: "Wallet & Apple Pay", topPadding: true) {
             if UIDevice.iPhone {
-                if UIDevice.isSimulator {
+                if UIDevice.IsSimulator {
                     PermissionsView(appName: "Wallet", cellular: false, location: false, cellularEnabled: $cellularEnabled)
                 } else {
                     PermissionsView(appName: "Wallet & Apple Pay", liveActivityToggle: true, location: false, cellularEnabled: $cellularEnabled)
                 }
             }
             
-            if !UIDevice.isSimulator {
+            if !UIDevice.IsSimulator {
                 Section {
                     Toggle("Apple Cash", isOn: $appleCashEnabled.animation())
                 } footer: {
@@ -78,7 +78,7 @@ struct WalletView: View {
                 Toggle("Hide Expired Passes", isOn: $hideExpiredPassesEnabled)
             }
             
-            if !UIDevice.isSimulator && UIDevice.iPhone {
+            if !UIDevice.IsSimulator && UIDevice.iPhone {
                 Section {
                     CustomNavigationLink(title: "Express Transit Card", status: "None", destination: EmptyView())
                 } header: {
@@ -119,7 +119,7 @@ struct WalletView: View {
                 Text("Verifies that your saved cards in Safari AutoFill are compatible with Apple Pay and allows you to use them in Wallet.")
             }
             
-            if !UIDevice.isSimulator {
+            if !UIDevice.IsSimulator {
                 if appleCashEnabled {
                     Section {
                         Toggle("Add Orders to Wallet", isOn: $addOrdersWalletEnabled)

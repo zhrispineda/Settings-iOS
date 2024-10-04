@@ -21,7 +21,7 @@ struct MapsView: View {
     
     var body: some View {
         CustomList(title: "Maps", topPadding: true) {
-            if UIDevice.isSimulator {
+            if UIDevice.IsSimulator {
                 PermissionsView(appName: "Maps", background: true, cellular: false, location: false, notifications: false, cellularEnabled: .constant(true))
             } else {
                 PermissionsView(appName: "Maps", background: true, cellularEnabled: .constant(true))
@@ -48,7 +48,7 @@ struct MapsView: View {
                 NavigationLink("Cycling", destination: CyclingView())
             }
             
-            if !UIDevice.isSimulator && UIDevice.iPhone {
+            if !UIDevice.IsSimulator && UIDevice.iPhone {
                 Section {
                     NavigationLink("Spoken Directions") {}
                 }
@@ -65,7 +65,7 @@ struct MapsView: View {
                 Text("Map Labels")
             }
             
-            if !UIDevice.isSimulator {
+            if !UIDevice.IsSimulator {
                 Section {
                     Toggle("Ratings and Photos", isOn: $ratingsPhotosEnabled)
                     Toggle("Show Ratings and Photos Suggestions", isOn: $showRatingsPhotoSuggestions)

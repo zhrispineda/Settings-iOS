@@ -74,7 +74,7 @@ struct PrivacySecurityView: View {
             }
             
             Section {
-                if !UIDevice.isSimulator {
+                if !UIDevice.IsSimulator {
                     SettingsLink(color: .blue, icon: "Accessory", id: "ACCESSORY_SETUP".localize(table: table), status: "0") {
                         AppPermissionsView(permissionName: "ACCESSORY_SETUP")
                     }
@@ -107,7 +107,7 @@ struct PrivacySecurityView: View {
                 }
             }
             
-            if UIDevice.iPhone && !UIDevice.isSimulator {
+            if UIDevice.iPhone && !UIDevice.IsSimulator {
                 Section {
                     SettingsLink(color: .indigo, icon: "pencil.and.sparkles", id: "JOURNALING_SUGGESTIONS".localize(table: table)) {
                         JournalingSuggestionsView()
@@ -141,12 +141,12 @@ struct PrivacySecurityView: View {
             }
             
             Section {
-                if !UIDevice.isSimulator {
+                if !UIDevice.IsSimulator {
                     SettingsLink(color: .green, icon: "shield.lefthalf.filled", id: "APP_PRIVACY_REPORT".localize(table: table)) {}
                 }
             }
             
-            if !UIDevice.isSimulator {
+            if !UIDevice.IsSimulator {
                 Section {
                     if Configuration().developerMode {
                         SettingsLink(color: .gray, icon: "hammer.fill", id: "DEVELOPER_MODE".localize(table: table), status: "Off") {

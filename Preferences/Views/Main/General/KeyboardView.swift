@@ -44,7 +44,7 @@ struct KeyboardView: View {
                 if UIDevice.iPhone {
                     CustomNavigationLink(title: "One-Handed Keyboard", status: "Off", destination: OneHandedKeyboardView())
                 }
-                if UIDevice.isSimulator {
+                if UIDevice.IsSimulator {
                     NavigationLink("Hardware Keyboard", destination: HardwareKeyboardView())
                 }
             }
@@ -109,7 +109,7 @@ struct KeyboardView: View {
                         Button("Cancel", role: .cancel) {}
                     })
                 Toggle("Auto-Punctuation", isOn: $autoPunctuationEnabled)
-                if dictationEnabled && UIDevice.isSimulator {
+                if dictationEnabled && UIDevice.IsSimulator {
                     CustomNavigationLink(title: "Dictation Shortcut", status: "⌃\tControl", destination: DictationShortcutView())
                 }
             } header: {

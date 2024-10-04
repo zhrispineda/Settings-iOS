@@ -16,7 +16,7 @@ struct FocalLengthView: View {
     let buttonTable = "CameraSettings-CameraButton"
     
     var body: some View {
-        CustomList(title: UIDevice.AdvancedPhotographicStylesCapability && !UIDevice.isSimulator ? "FOCAL_LENGTH_ROW_TITLE_CAMERA_BUTTON".localize(table: buttonTable) : "FOCAL_LENGTH_ROW_TITLE".localize(table: table), topPadding: true) {
+        CustomList(title: UIDevice.AdvancedPhotographicStylesCapability && !UIDevice.IsSimulator ? "FOCAL_LENGTH_ROW_TITLE_CAMERA_BUTTON".localize(table: buttonTable) : "FOCAL_LENGTH_ROW_TITLE".localize(table: table), topPadding: true) {
             Section {
                 Toggle("FOCAL_LENGTH_%@_MM".localize(table: table, "28"), isOn: $firstAdditionalLens)
                 Toggle("FOCAL_LENGTH_%@_MM".localize(table: table, "35"), isOn: $secondAdditionalLens)

@@ -142,7 +142,7 @@ public extension UIDevice {
             }
         }
         
-        return UIDevice.isSimulator ? getDevice(identifier: ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] ?? "N/A") : getDevice(identifier: identifier)
+        return UIDevice.IsSimulator ? getDevice(identifier: ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] ?? "N/A") : getDevice(identifier: identifier)
     }()
     
     static let AlwaysCaptureDepthCapability: Bool = { // Always Capture Depth Info
@@ -282,8 +282,12 @@ public extension UIDevice {
     }()
     
     static let PearlIDCapability: Bool = { // Face ID
-        var identifier = UIDevice.identifier
+        if let answer = MGHelper.read(key: "8olRm6C1xqr7AJGpLRnpSw") {
+            return Bool(answer)!
+        }
         
+        // Fallback
+        var identifier = UIDevice.identifier
         switch identifier {
         case "iPhone12,8", "iPhone14,6", "iPad7,11", "iPad7,12", "iPad11,1", "iPad11,2", "iPad11,3", "iPad11,4", "iPad11,6", "iPad11,7", "iPad12,1", "iPad12,2", "iPad13,1", "iPad13,2", "iPad13,16", "iPad13,17", "iPad14,8", "iPad14,9", "iPad14,10", "iPad14,11":
             return false
@@ -337,13 +341,22 @@ public extension UIDevice {
         return identifier.contains("15 Pro") || identifier.contains("16")
     }()
     
-    static let isSimulator: Bool = {
+    static let IsSimulator: Bool = {
+        if let answer = MGHelper.read(key: "ulMliLomP737aAOJ/w/evA") {
+            return Bool(answer)! && !Configuration().forcePhysical
+        }
+        
+        // Fallback
         return ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] != nil && !Configuration().forcePhysical
     }()
     
     static let AlwaysOnDisplayCapability: Bool = { // Always On Display
-        var identifier = UIDevice.identifier
+        if let answer = MGHelper.read(key: "2OOJf1VhaM7NxfRok3HbWQ") {
+            return Bool(answer)!
+        }
         
+        // Fallback
+        var identifier = UIDevice.identifier
         switch identifier {
         case "iPhone15,2", "iPhone15,3", "iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2":
             return true

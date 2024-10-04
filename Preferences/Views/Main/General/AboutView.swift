@@ -19,7 +19,7 @@ struct AboutView: View {
     var body: some View {
         CustomList(title: "About") {
             Section {
-                if UIDevice.isSimulator {
+                if UIDevice.IsSimulator {
                     LabeledContent("Name", value: UIDevice.current.model)
                 } else {
                     CustomNavigationLink(title: "Name", status: deviceName, destination: NameView())
@@ -54,14 +54,14 @@ struct AboutView: View {
                 LabeledContent("Songs", value: "0")
                 LabeledContent("Videos", value: "0")
                 LabeledContent("Photos", value: "6")
-                if !UIDevice.isSimulator {
+                if !UIDevice.IsSimulator {
                     LabeledContent("Applications", value: "1")
                 }
                 LabeledContent("Capacity", value: totalStorage)
                 LabeledContent("Available", value: availableStorage)
             }
             
-            if !UIDevice.isSimulator && UIDevice.CellularTelephonyCapability {
+            if !UIDevice.IsSimulator && UIDevice.CellularTelephonyCapability {
                 HText("Wi-Fi Address", status: "00:0A:AA:A0:A0:00", monospaced: true)
                 HText("Bluetooth", status: "00:0A:AA:A0:A0:00", monospaced: true)
                 HText("Modem Firmware", status: "1.00.00", monospaced: true)

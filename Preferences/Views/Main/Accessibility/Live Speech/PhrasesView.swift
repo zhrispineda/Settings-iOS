@@ -20,7 +20,7 @@ struct PhrasesView: View {
             }
         }
         .toolbar {
-            if !UIDevice.isSimulator {
+            if !UIDevice.IsSimulator {
                 NavigationLink(destination: AddFavoritePhraseView()) {
                     Image(systemName: "plus")
                 }
