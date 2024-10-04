@@ -72,6 +72,7 @@
 		833F190B2B8BE05A00067C37 /* DisplayTextSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833F190A2B8BE05A00067C37 /* DisplayTextSizeView.swift */; };
 		833F20AE2CA4C93C00115E8F /* RecordCinematicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833F20AD2CA4C93C00115E8F /* RecordCinematicView.swift */; };
 		83441A892CAF2B6A0022E193 /* Privacy.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83441A882CAF2B6A0022E193 /* Privacy.xcstrings */; };
+		83441A8B2CAF73740022E193 /* JournalingSuggestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83441A8A2CAF73740022E193 /* JournalingSuggestionsView.swift */; };
 		834540C52C9CE2E100091E79 /* AddLanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834540C42C9CE2E100091E79 /* AddLanguageView.swift */; };
 		8345656E2CAADFD6002BE49D /* CameraSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8345656D2CAADFD6002BE49D /* CameraSettings.xcstrings */; };
 		834565702CAAE202002BE49D /* CameraSettings-CameraButton.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8345656F2CAAE202002BE49D /* CameraSettings-CameraButton.xcstrings */; };
@@ -336,6 +337,7 @@
 		833F190A2B8BE05A00067C37 /* DisplayTextSizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayTextSizeView.swift; sourceTree = "<group>"; };
 		833F20AD2CA4C93C00115E8F /* RecordCinematicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordCinematicView.swift; sourceTree = "<group>"; };
 		83441A882CAF2B6A0022E193 /* Privacy.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Privacy.xcstrings; sourceTree = "<group>"; };
+		83441A8A2CAF73740022E193 /* JournalingSuggestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalingSuggestionsView.swift; sourceTree = "<group>"; };
 		834540C42C9CE2E100091E79 /* AddLanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLanguageView.swift; sourceTree = "<group>"; };
 		8345656D2CAADFD6002BE49D /* CameraSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = CameraSettings.xcstrings; sourceTree = "<group>"; };
 		8345656F2CAAE202002BE49D /* CameraSettings-CameraButton.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "CameraSettings-CameraButton.xcstrings"; sourceTree = "<group>"; };
@@ -628,6 +630,7 @@
 				8319CE4C2B86D380007EC822 /* SafetyCheckView.swift */,
 				8319CE4E2B86DB44007EC822 /* SensitiveContentWarningView.swift */,
 				8319CE502B86DF8A007EC822 /* AppleAdvertisingView.swift */,
+				83441A8A2CAF73740022E193 /* JournalingSuggestionsView.swift */,
 			);
 			path = "Privacy & Security";
 			sourceTree = "<group>";
@@ -1635,6 +1638,7 @@
 				8335A70C2BC358E8001E199D /* CellularView.swift in Sources */,
 				832EF3952B8182550066A1BF /* ContentPrivacyRestrictionsDetailView.swift in Sources */,
 				8373E7362B91660F004285EA /* SensitivePhotosVideosProtectionSheetView.swift in Sources */,
+				83441A8B2CAF73740022E193 /* JournalingSuggestionsView.swift in Sources */,
 				83D31F972B8E645D0057CFDB /* HotCornersView.swift in Sources */,
 				835683922B753FDD000FB136 /* SettingsLink.swift in Sources */,
 				83B550512C166AD2002DA622 /* BatteryHealthView.swift in Sources */,

@@ -16,8 +16,6 @@ import SwiftUI
 /// - Parameter appClipsPermission: The  optional ``String`` to use when relating to App Clips.
 struct AppPermissionsView: View {
     @AppStorage("PrivacyFitnessTrackingToggle") private var fitnessTracking = true
-    @AppStorage("PrivacyHealthToggle") private var healthEnabled = true
-    @AppStorage("PrivacyMessagesToggle") private var messagesEnabled = true
     var permissionName = String()
     var appClipPermission = String()
     let appClipsEligible = ["BT_PERIPHERAL", "CAMERA", "MICROPHONE"]

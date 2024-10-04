@@ -110,7 +110,7 @@ struct PrivacySecurityView: View {
             if UIDevice.iPhone && !UIDevice.isSimulator {
                 Section {
                     SettingsLink(color: .indigo, icon: "pencil.and.sparkles", id: "JOURNALING_SUGGESTIONS".localize(table: table)) {
-                        EmptyView()
+                        JournalingSuggestionsView()
                     }
                 }
             }

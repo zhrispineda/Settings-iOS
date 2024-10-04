@@ -57,7 +57,7 @@ struct CameraView: View {
                 Section {
                     CustomNavigationLink(title: "CAMERA_BUTTON_TITLE".localize(table: buttonTable), status: selectedApp.localize(table: buttonTable), destination: CameraControlView())
                 } header: {
-                    Text("SYSTEM_SETTINGS_HEADER".localize(table: stylesTable))
+                    Text("SYSTEM_SETTINGS_HEADER", tableName: stylesTable)
                 } footer: {
                     Text(.init("CAMERA_BUTTON_%@_FOOTER".localize(table: buttonTable).replacingOccurrences(of: "Learn more.", with: "[Learn more.](#)")))
                 }
@@ -78,10 +78,10 @@ struct CameraView: View {
                     }
                 } header: {
                     if !UIDevice.isSimulator {
-                        Text("APP_SETTINGS_HEADER".localize(table: stylesTable))
+                        Text("APP_SETTINGS_HEADER", tableName: stylesTable)
                     }
                 } footer: {
-                    Text("SYSTEM_STYLES_FOOTER".localize(table: stylesTable))
+                    Text("SYSTEM_STYLES_FOOTER", tableName: stylesTable)
                 }
             }
             
@@ -113,24 +113,24 @@ struct CameraView: View {
                     Toggle("OVER_CAPTURE_VIEW_OUTSIDE_THE_FRAME_SWITCH".localize(table: table), isOn: $viewOutsideFrameEnabled)
                 }
             } header: {
-                Text("COMPOSITION_GROUP_TITLE".localize(table: table))
+                Text("COMPOSITION_GROUP_TITLE", tableName: table)
             }
             
             if UIDevice.PhotographicStylesCapability {
                 Section {
                     Button("SEMANTIC_STYLES_ROW_TITLE".localize(table: table)) {}
                 } header: {
-                    Text("CAM_PHOTO_CAPTURE_GROUP_TITLE".localize(table: table))
+                    Text("CAM_PHOTO_CAPTURE_GROUP_TITLE", tableName: table)
                 } footer: {
-                    Text("SEMANTIC_STYLES_ROW_FOOTER".localize(table: table))
+                    Text("SEMANTIC_STYLES_ROW_FOOTER", tableName: table)
                 }
             } else if UIDevice.iPad || UIDevice.SceneDetectionCapability {
                 Section {
                     Toggle("SEM_DEV_SWITCH".localize(table: table), isOn: $sceneDetectionEnabled)
                 } header: {
-                    Text("CAM_PHOTO_CAPTURE_HEADER".localize(table: table))
+                    Text("CAM_PHOTO_CAPTURE_HEADER", tableName: table)
                 } footer: {
-                    Text("SEM_DEV_GROUP_FOOTER".localize(table: table))
+                    Text("SEM_DEV_GROUP_FOOTER", tableName: table)
                 }
             }
             
@@ -139,7 +139,7 @@ struct CameraView: View {
                     CustomNavigationLink(title: UIDevice.AdvancedPhotographicStylesCapability && !UIDevice.isSimulator ? "FOCAL_LENGTH_ROW_TITLE_CAMERA_BUTTON".localize(table: buttonTable) : "FOCAL_LENGTH_ROW_TITLE".localize(table: table), status: "FOCAL_LENGTH_GROUP_%@_AND_%@_AND_%@_MM".localize(table: table, "24", "28", "35"), destination: FocalLengthView())
                 } header: {
                     if UIDevice.AdvancedPhotographicStylesCapability {
-                        Text("CAM_PHOTO_CAPTURE_HEADER".localize(table: table))
+                        Text("CAM_PHOTO_CAPTURE_HEADER", tableName: table)
                     }
                 } footer: {
                     Text("FOCAL_LENGTH_ROW_%@_MM_FOOTER".localize(table: table, "24"))
@@ -150,7 +150,7 @@ struct CameraView: View {
                 Section {
                     Toggle("PHOTO_MODE_DEPTH_SWITCH".localize(table: table), isOn: $portraitsPhotoModeEnabled)
                 } footer: {
-                    Text("PHOTO_MODE_DEPTH_GROUP_FOOTER".localize(table: table))
+                    Text("PHOTO_MODE_DEPTH_GROUP_FOOTER", tableName: table)
                 }
             }
             
@@ -158,7 +158,7 @@ struct CameraView: View {
                 Section {
                     Toggle("CAM_CAPTURE_DYNAMIC_SHUTTER_SWITCH".localize(table: table), isOn: $prioritizeFasterShootingEnabled)
                 } footer: {
-                    Text("CAM_CAPTURE_GROUP_FOOTER".localize(table: table))
+                    Text("CAM_CAPTURE_GROUP_FOOTER", tableName: table)
                 }
             }
             
@@ -166,7 +166,7 @@ struct CameraView: View {
                 Section {
                     Toggle("IDC_SWITCH".localize(table: table), isOn: $lensCorrectionEnabled)
                 } footer: {
-                    Text("IDC_FOOTER".localize(table: table))
+                    Text("IDC_FOOTER", tableName: table)
                 }
             }
             
@@ -174,11 +174,11 @@ struct CameraView: View {
                 Section {
                     Toggle("AUTO_MACRO_SWITCH".localize(table: table), isOn: $macroControlEnabled)
                 } footer: {
-                    Text("AUTO_MACRO_GROUP_FOOTER".localize(table: table))
+                    Text("AUTO_MACRO_GROUP_FOOTER", tableName: table)
                 }
                 
                 Section {} footer: {
-                    Text(.init("[" + "BUTTON_TITLE".localize(table: privacyTable) + "](#)")) // com.apple.onboarding.camera
+                    Text(.init("[\("BUTTON_TITLE".localize(table: privacyTable))](#)")) // com.apple.onboarding.camera
                 }
             }
         }
