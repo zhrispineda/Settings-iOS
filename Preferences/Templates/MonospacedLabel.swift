@@ -21,6 +21,7 @@ import SwiftUI
 struct MonospacedLabel: View {
     var label = String()
     var value = String()
+    let ignoreChars = ["1", ":", ".", "/"]
     
     init(_ label: String = String(), value: String = String()) {
         self.label = label
@@ -33,7 +34,7 @@ struct MonospacedLabel: View {
             Spacer()
             HStack(spacing: 0) {
                 ForEach(value.map { String($0) }, id: \.self) { character in
-                    if character == ":" || character == "1" || character == "." {
+                    if ignoreChars.contains(character) {
                         Text(character)
                     } else {
                         Text(character)

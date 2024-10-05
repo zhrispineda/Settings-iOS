@@ -21,14 +21,6 @@ public extension UIDevice {
     }()
     
     static let fullModel: String = {
-        var systemInfo = utsname()
-        uname(&systemInfo)
-        let machineMirror = Mirror(reflecting: systemInfo.machine)
-        let identifier = machineMirror.children.reduce("") { identifier, element in
-            guard let value = element.value as? Int8, value != 0 else { return identifier }
-            return identifier + String(UnicodeScalar(UInt8(value)))
-        }
-        
         @MainActor func getDevice(identifier: String) -> String {
             if let mobileGestalt = UIDevice.checkDevice() {
                 let cacheExtra = mobileGestalt["CacheExtra"] as! [String : AnyObject]
