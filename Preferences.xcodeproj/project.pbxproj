@@ -72,6 +72,8 @@
 		833F0AD72B744D190036EAD2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 833F0AD62B744D190036EAD2 /* Preview Assets.xcassets */; };
 		833F190B2B8BE05A00067C37 /* DisplayTextSizeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833F190A2B8BE05A00067C37 /* DisplayTextSizeView.swift */; };
 		833F20AE2CA4C93C00115E8F /* RecordCinematicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833F20AD2CA4C93C00115E8F /* RecordCinematicView.swift */; };
+		8340A3C32CB0C723005ED66A /* SEIDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8340A3C22CB0C723005ED66A /* SEIDView.swift */; };
+		8340A3C52CB0CEDC005ED66A /* RadioAddressLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8340A3C42CB0CEDC005ED66A /* RadioAddressLabel.swift */; };
 		83441A892CAF2B6A0022E193 /* Privacy.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83441A882CAF2B6A0022E193 /* Privacy.xcstrings */; };
 		83441A8B2CAF73740022E193 /* JournalingSuggestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83441A8A2CAF73740022E193 /* JournalingSuggestionsView.swift */; };
 		834540C52C9CE2E100091E79 /* AddLanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834540C42C9CE2E100091E79 /* AddLanguageView.swift */; };
@@ -338,6 +340,8 @@
 		833F0AD62B744D190036EAD2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		833F190A2B8BE05A00067C37 /* DisplayTextSizeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayTextSizeView.swift; sourceTree = "<group>"; };
 		833F20AD2CA4C93C00115E8F /* RecordCinematicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordCinematicView.swift; sourceTree = "<group>"; };
+		8340A3C22CB0C723005ED66A /* SEIDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SEIDView.swift; sourceTree = "<group>"; };
+		8340A3C42CB0CEDC005ED66A /* RadioAddressLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioAddressLabel.swift; sourceTree = "<group>"; };
 		83441A882CAF2B6A0022E193 /* Privacy.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Privacy.xcstrings; sourceTree = "<group>"; };
 		83441A8A2CAF73740022E193 /* JournalingSuggestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalingSuggestionsView.swift; sourceTree = "<group>"; };
 		834540C42C9CE2E100091E79 /* AddLanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLanguageView.swift; sourceTree = "<group>"; };
@@ -815,6 +819,7 @@
 				837F00E52C2CA2F500B98374 /* NameView.swift */,
 				835683962B754EE4000FB136 /* VersionView.swift */,
 				835683982B7551D3000FB136 /* CertificateTrustSettingsView.swift */,
+				8340A3C22CB0C723005ED66A /* SEIDView.swift */,
 			);
 			path = About;
 			sourceTree = "<group>";
@@ -1049,6 +1054,7 @@
 				83DF95752B84266E00AEEB63 /* SiriDetailView.swift */,
 				833C6EB12C20CE7800A8D91C /* SearchDetailView.swift */,
 				83A5DA522C234DCB0012ACB3 /* LanguageView.swift */,
+				8340A3C42CB0CEDC005ED66A /* RadioAddressLabel.swift */,
 			);
 			path = Templates;
 			sourceTree = "<group>";
@@ -1643,6 +1649,7 @@
 				8329284E2B8580B3006611CF /* HeadphoneAudioLevelsView.swift in Sources */,
 				838273A32B7FD37B000F4228 /* TVView.swift in Sources */,
 				837B0F5B2B8989E000B22455 /* SiriLanguageView.swift in Sources */,
+				8340A3C32CB0C723005ED66A /* SEIDView.swift in Sources */,
 				83F626D82B8289E100ED343F /* DTVProviderView.swift in Sources */,
 				83815CE92B768E3600F53A0F /* NewsView.swift in Sources */,
 				83F626DA2B828E8C00ED343F /* TVAppView.swift in Sources */,
@@ -1676,6 +1683,7 @@
 				833C124B2C99AA1400CAEB36 /* TVProviderView.swift in Sources */,
 				83D31F852B8E3C640057CFDB /* SpeakSelectionVoicesView.swift in Sources */,
 				83F516C22C21EB1C0004E87A /* WalletView.swift in Sources */,
+				8340A3C52CB0CEDC005ED66A /* RadioAddressLabel.swift in Sources */,
 				83D31F792B8D49820057CFDB /* ReplacementView.swift in Sources */,
 				83D308692B8AD145002A9B7F /* SafariCameraView.swift in Sources */,
 				83815CF12B768F0500F53A0F /* HealthView.swift in Sources */,

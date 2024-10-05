@@ -30,12 +30,12 @@ struct AboutView: View {
                 
                 LabeledContent("Model Name", value: UIDevice.fullModel)
                     .textSelection(.enabled)
-                HText("Model Number", status: showingModelNumber ? getRegulatoryModelNumber() : "\(modelNumber)\(getRegionInfo())", monospaced: true)
+                LabeledContent("Model Number", value: showingModelNumber ? getRegulatoryModelNumber() : "\(modelNumber)\(getRegionInfo())")
                     .contentShape(Rectangle())
                     .onTapGesture {
                         showingModelNumber.toggle()
                     }
-                HText("Serial Number", status: serialNumber, monospaced: true)
+                LabeledContent("Serial Number", value: serialNumber)
             }
             .onAppear {
                 modelNumber = MGHelper.read(key: "D0cJ8r7U5zve6uA6QbOiLA") ?? getRegulatoryModelNumber()
@@ -62,10 +62,10 @@ struct AboutView: View {
             }
             
             if !UIDevice.IsSimulator && UIDevice.CellularTelephonyCapability {
-                HText("Wi-Fi Address", status: "00:0A:AA:A0:A0:00", monospaced: true)
-                HText("Bluetooth", status: "00:0A:AA:A0:A0:00", monospaced: true)
-                HText("Modem Firmware", status: "1.00.00", monospaced: true)
-                NavigationLink("SEID") {}
+                RadioAddressLabel("Wi-Fi Address", value: generateRandomAddress())
+                RadioAddressLabel("Bluetooth", value: generateRandomAddress())
+                RadioAddressLabel("Modem Firmware", value: "1.00.00")
+                NavigationLink("SEID", destination: SEIDView())
                 VStack {
                     Text("EID")
                         .frame(maxWidth: .infinity, alignment: .leading)
@@ -166,6 +166,22 @@ struct AboutView: View {
             randomString.append(randomCharacter)
         }
         return randomString
+    }
+    
+    // Generate random address
+    func generateRandomAddress() -> String {
+        let hexCharacters = "0123456789ABCDEF"
+        var macAddress = ""
+
+        for i in 0..<6 {
+            if i > 0 {
+                macAddress += ":"
+            }
+            let byte = (0..<2).map { _ in hexCharacters.randomElement()! }
+            macAddress += String(byte)
+        }
+        
+        return macAddress
     }
     
     // Generate random characters as EID string
