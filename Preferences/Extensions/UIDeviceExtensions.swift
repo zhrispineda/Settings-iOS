@@ -227,8 +227,12 @@ public extension UIDevice {
     }()
     
     static let HomeButtonCapability: Bool = { // Home Button
-        var identifier = UIDevice.identifier
+        if let answer = MGHelper.read(key: "JwLB44/jEB8aFDpXQ16Tuw") { // 1 = true; 2 = false
+            return answer == "1" ? true : false
+        }
         
+        // Fallback
+        var identifier = UIDevice.identifier
         switch identifier {
         case "iPhone12,8", "iPhone14,6", "iPad11,3", "iPad7,11", "iPad7,12", "iPad11,1", "iPad11,2", "iPad11,6", "iPad11,7", "iPad12,1", "iPad12,2":
             return true

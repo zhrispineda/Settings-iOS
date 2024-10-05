@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct BatteryHealthView: View {
-    @State private var maximumCapacity = 100
+    @State private var maximumCapacity = "100%"
     @State private var eightyPercentLimitEnabled = false
     let table = "BatteryUI"
     
@@ -21,7 +21,16 @@ struct BatteryHealthView: View {
             }
             
             Section {
-                LabeledContent("MAXIMUM_CAPACITY_NAME".localize(table: table), value: "\(maximumCapacity)%")
+                LabeledContent("MAXIMUM_CAPACITY_NAME".localize(table: table), value: maximumCapacity)
+                    .onAppear {
+                        // Get battery capacity value
+                        let answer = MGHelper.read(key: "f2DlVMUVcV+MeWs/g2ku+g") ?? "Unknown"
+                        if answer == "101" {
+                            maximumCapacity = "100%"
+                        } else if answer != "Unknown" {
+                            maximumCapacity = answer + "%"
+                        }
+                    }
             } footer: {
                 Text("MAXIMUM_CAPACITY_FOOTER_TEXT".localize(table: table))
             }

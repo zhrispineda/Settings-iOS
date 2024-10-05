@@ -23,7 +23,7 @@ struct BatteryHealthChargingView: View {
     
     var body: some View {
         CustomList(title: "BATTERY_HEALTH".localize(table: table)) {
-            if maximumCapacity > 79 {
+            if Int(maximumCapacity) > 79 {
                 Section {} footer: {
                     Text(.init("ABOUT_BATTERIES_TEXT_IPHONE".localize(table: table, "[\("ABOUT_BATTERIES_LINK".localize(table: table))](\("BW_LM_URL_3".localize(table: table)))")))
                 }
@@ -38,7 +38,16 @@ struct BatteryHealthChargingView: View {
             }
             
             Section {
-                LabeledContent("MAXIMUM_CAPACITY_NAME".localize(table: table), value: "\(maximumCapacity)%")
+                LabeledContent("MAXIMUM_CAPACITY_NAME".localize(table: table), value: "\(maximumCapacity == -1 ? "Unknown" : String(maximumCapacity))%")
+                    .onAppear {
+                        // Get battery capacity value
+                        let answer = MGHelper.read(key: "f2DlVMUVcV+MeWs/g2ku+g") ?? "-1"
+                        if answer == "101" {
+                            maximumCapacity = 100
+                        } else if answer != "-1" {
+                            maximumCapacity = Int(answer)!
+                        }
+                    }
             } footer: {
                 Text("MAXIMUM_CAPACITY_FOOTER_TEXT".localize(table: table))
             }
