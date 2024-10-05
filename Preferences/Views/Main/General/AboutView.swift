@@ -62,9 +62,9 @@ struct AboutView: View {
             }
             
             if !UIDevice.IsSimulator && UIDevice.CellularTelephonyCapability {
-                RadioAddressLabel("Wi-Fi Address", value: generateRandomAddress())
-                RadioAddressLabel("Bluetooth", value: generateRandomAddress())
-                RadioAddressLabel("Modem Firmware", value: "1.00.00")
+                MonospacedLabel("Wi-Fi Address", value: generateRandomAddress())
+                MonospacedLabel("Bluetooth", value: generateRandomAddress())
+                MonospacedLabel("Modem Firmware", value: "1.00.00")
                 NavigationLink("SEID", destination: SEIDView())
                 VStack {
                     Text("EID")
