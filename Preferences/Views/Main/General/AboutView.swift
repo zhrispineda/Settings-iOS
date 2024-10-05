@@ -102,8 +102,8 @@ struct AboutView: View {
 //                }
                 
                 Section {
-                    HText("IMEI", status: "00 000000 000000 0", monospaced: true)
-                    HText("IMEI2", status: "00 000000 000000 0", monospaced: true)
+                    MonospacedLabel("IMEI", value: "00 000000 000000 0")
+                    MonospacedLabel("IMEI2", value: "00 000000 000000 0")
                 } header: {
                     Text("Available SIMs")
                 }
