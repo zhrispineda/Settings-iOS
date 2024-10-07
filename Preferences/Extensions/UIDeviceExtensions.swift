@@ -17,7 +17,7 @@ public extension UIDevice {
             return identifier + String(UnicodeScalar(UInt8(value)))
         }
         
-        return ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] == nil ? identifier : ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] ?? "N/A"
+        return ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] == nil ? identifier : ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"]!
     }()
     
     static let fullModel: String = {
@@ -198,8 +198,12 @@ public extension UIDevice {
     }()
     
     static let DeviceSupportsEnhancedMultitasking: Bool = { // Stage Manager
-        var identifier = UIDevice.identifier
+        if let answer = MGHelper.read(key: "qeaj75wk3HF4DwQ8qbIi7g") {
+            return Bool(answer)!
+        }
         
+        // Fallback
+        var identifier = UIDevice.identifier
         switch identifier {
         case "iPad8,1", "iPad8,2", "iPad8,3", "iPad8,4", "iPad8,5", "iPad8,6", "iPad8,7", "iPad8,8", "iPad8,9", "iPad8,10", "iPad8,11", "iPad8,12", "iPad13,4", "iPad13,5", "iPad13,6", "iPad13,7", "iPad13,8", "iPad13,9", "iPad13,10", "iPad13,11", "iPad13,16", "iPad13,17", "iPad14,5", "iPad14,8", "iPad14,9", "iPad14,10", "iPad14,11", "iPad16,3", "iPad16,4", "iPad16,5", "iPad16,6":
             return true

@@ -11,19 +11,11 @@
 	<array>
 		<dict>
 			<key>UIApplicationShortcutItemIconSymbolName</key>
-			<string>battery.100percent</string>
+			<string>bluetooth</string>
 			<key>UIApplicationShortcutItemTitle</key>
-			<string>Battery</string>
+			<string>Bluetooth</string>
 			<key>UIApplicationShortcutItemType</key>
-			<string>com.example.battery</string>
-		</dict>
-		<dict>
-			<key>UIApplicationShortcutItemIconSymbolName</key>
-			<string>antenna.radiowaves.left.and.right</string>
-			<key>UIApplicationShortcutItemTitle</key>
-			<string>Cellular</string>
-			<key>UIApplicationShortcutItemType</key>
-			<string>com.example.cellular</string>
+			<string>com.example.bluetooth</string>
 		</dict>
 		<dict>
 			<key>UIApplicationShortcutItemIconSymbolName</key>
@@ -35,11 +27,19 @@
 		</dict>
 		<dict>
 			<key>UIApplicationShortcutItemIconSymbolName</key>
-			<string>bluetooth</string>
+			<string>antenna.radiowaves.left.and.right</string>
 			<key>UIApplicationShortcutItemTitle</key>
-			<string>Bluetooth</string>
+			<string>Cellular</string>
 			<key>UIApplicationShortcutItemType</key>
-			<string>com.example.bluetooth</string>
+			<string>com.example.cellular</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemIconSymbolName</key>
+			<string>battery.100percent</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Battery</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>com.example.battery</string>
 		</dict>
 	</array>
 </dict>
