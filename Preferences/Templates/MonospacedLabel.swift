@@ -39,7 +39,7 @@ struct MonospacedLabel: View {
                     } else {
                         Text(character)
                             .fontDesign(.monospaced)
-                            .kerning(-1)
+                            .kerning(-0.5)
                     }
                 }
             }
@@ -51,7 +51,7 @@ struct MonospacedLabel: View {
 #Preview {
     NavigationStack {
         CustomList(title: "MonospacedLabel Example") {
-            MonospacedLabel("Label", value: "01:AB:23:4C:56:78")
+            MonospacedLabel("Label", value: "MMX53LL/A")
         }
     }
 }

@@ -24,6 +24,45 @@ public extension UIDevice {
         }
     }
     
+    static let storageCapacity: String? = {
+        var diskCapacity = String()
+        var formatted = String()
+        
+        guard let answer = MGHelper.read(key: "uyejyEdaxNWSRQQwHmXz1A") else {
+            print("Cannot get storage capacity")
+            return "Error"
+        }
+        
+        let cleanedString = answer.trimmingCharacters(in: CharacterSet(charactersIn: "[]"))
+        let components = cleanedString.components(separatedBy: ", ")
+        for (index, value) in components.enumerated() {
+            if value.contains("TotalDiskCapacity") {
+                diskCapacity = value.replacingOccurrences(of: " ", with: "")
+                formatted = diskCapacity.components(separatedBy: [":"])[1]
+                switch Int(formatted) {
+                case 32000000000:
+                    return "32 GB"
+                case 64000000000:
+                    return "64 GB"
+                case 128000000000:
+                    return "128 GB"
+                case 256000000000:
+                    return "256 GB"
+                case 512000000000:
+                    return "512 GB"
+                case 1024000000000:
+                    return "1 TB"
+                case 2048000000000:
+                    return "2 TB"
+                default:
+                    return nil
+                }
+            }
+        }
+        
+        return nil
+    }()
+    
     // Returns the marketing name of the host device using either getDevice(identifier: String) or SIMULATOR_MODEL_IDENTIFIER.
     static let fullModel: String = {
         return UIDevice.IsSimulator ? getDevice(identifier: ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] ?? "N/A") : getDevice(identifier: identifier)

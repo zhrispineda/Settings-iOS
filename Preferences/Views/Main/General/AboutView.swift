@@ -12,8 +12,8 @@ struct AboutView: View {
     @State private var showingModelNumber = false
     @State private var modelNumber = String()
     @State private var serialNumber = String()
-    @State private var availableStorage: String = getAvailableStorage() ?? "N/A"
-    @State private var totalStorage: String = getTotalStorage() ?? "N/A"
+    @State private var availableStorage: String = getAvailableStorage() ?? "Error"
+    @State private var capacityStorage = String()
     @State private var wifiAddress = String()
     @State private var bluetoothAddress = String()
     @State private var eidValue = String()
@@ -40,21 +40,24 @@ struct AboutView: View {
                     }
                 LabeledContent("Serial Number", value: serialNumber)
             }
-            .onAppear {
-                modelNumber = MGHelper.read(key: "D0cJ8r7U5zve6uA6QbOiLA") ?? getRegulatoryModelNumber()
-                serialNumber = MGHelper.read(key: "VasUgeSzVyHdB27g2XpN0g") ?? getRandomSerialNumber()
-                wifiAddress = generateRandomAddress()
-                bluetoothAddress = generateRandomAddress()
-                eidValue = getRandomEID()
+            .task {
+                if modelNumber.isEmpty {
+                    capacityStorage = UIDevice.storageCapacity ?? getTotalStorage()!
+                    modelNumber = MGHelper.read(key: "D0cJ8r7U5zve6uA6QbOiLA") ?? getRegulatoryModelNumber()
+                    serialNumber = MGHelper.read(key: "VasUgeSzVyHdB27g2XpN0g") ?? getRandomSerialNumber()
+                    wifiAddress = generateRandomAddress()
+                    bluetoothAddress = generateRandomAddress()
+                    eidValue = getRandomEID()
+                }
             }
             
-//            if !UIDevice.isSimulator {
-//                Section {
-//                    NavigationLink(destination: AppleCareWarrantyView()) {
-//                        LabeledContent("AppleCare+", value: "Expires: 9/21/25")
-//                    }
-//                }
-//            }
+            //            if !UIDevice.isSimulator {
+            //                Section {
+            //                    NavigationLink(destination: AppleCareWarrantyView()) {
+            //                        LabeledContent("AppleCare+", value: "Expires: 9/21/25")
+            //                    }
+            //                }
+            //            }
             
             Section {
                 LabeledContent("Songs", value: "0")
@@ -63,7 +66,7 @@ struct AboutView: View {
                 if !UIDevice.IsSimulator {
                     LabeledContent("Applications", value: "1")
                 }
-                LabeledContent("Capacity", value: totalStorage)
+                LabeledContent("Capacity", value: capacityStorage)
                 LabeledContent("Available", value: availableStorage)
             }
             
@@ -92,14 +95,14 @@ struct AboutView: View {
                 }
                 LabeledContent("Carrier Lock", value: "No SIM restrictions")
                 
-//                Section {
-//                    LabeledContent("Network", value: "Not Available")
-//                    LabeledContent("Carrier", value: "Carrier 0.0")
-//                    HText("IMEI", status: "00 000000 000000 0", monospaced: true)
-//                    HText("ICCID", status: getRandomICCID(), monospaced: true)
-//                } header: {
-//                    Text(UIDevice.HomeButtonCapability && UIDevice.iPhone ? "Physical SIM" : "eSIM")
-//                }
+                //                Section {
+                //                    LabeledContent("Network", value: "Not Available")
+                //                    LabeledContent("Carrier", value: "Carrier 0.0")
+                //                    HText("IMEI", status: "00 000000 000000 0", monospaced: true)
+                //                    HText("ICCID", status: getRandomICCID(), monospaced: true)
+                //                } header: {
+                //                    Text(UIDevice.HomeButtonCapability && UIDevice.iPhone ? "Physical SIM" : "eSIM")
+                //                }
                 
                 Section {
                     MonospacedLabel("IMEI", value: "00 000000 000000 0")
@@ -155,17 +158,17 @@ struct AboutView: View {
     // Generate random address
     func generateRandomAddress() -> String {
         let hexCharacters = "0123456789ABCDEF"
-        var macAddress = ""
-
+        var address = ""
+        
         for i in 0..<6 {
             if i > 0 {
-                macAddress += ":"
+                address += ":"
             }
             let byte = (0..<2).map { _ in hexCharacters.randomElement()! }
-            macAddress += String(byte)
+            address += String(byte)
         }
         
-        return macAddress
+        return address
     }
     
     // Generate random characters as EID string
@@ -173,15 +176,15 @@ struct AboutView: View {
         let lowerBound = "10000000000000000000000000000000"
         let upperBound = "99999999999999999999999999999999"
         var randomNumber = String()
-
+        
         for i in 0..<lowerBound.count {
             let lowerDigit = lowerBound[lowerBound.index(lowerBound.startIndex, offsetBy: i)].wholeNumberValue!
             let upperDigit = upperBound[upperBound.index(upperBound.startIndex, offsetBy: i)].wholeNumberValue!
-
+            
             let digit = Int.random(in: lowerDigit...upperDigit)
             randomNumber += "\(digit)"
         }
-
+        
         return randomNumber
     }
     
@@ -190,15 +193,15 @@ struct AboutView: View {
         let lowerBound = "1000000000000000000"
         let upperBound = "9999999999999999999"
         var randomNumber = String()
-
+        
         for i in 0..<lowerBound.count {
             let lowerDigit = lowerBound[lowerBound.index(lowerBound.startIndex, offsetBy: i)].wholeNumberValue!
             let upperDigit = upperBound[upperBound.index(upperBound.startIndex, offsetBy: i)].wholeNumberValue!
-
+            
             let digit = Int.random(in: lowerDigit...upperDigit)
             randomNumber += "\(digit)"
         }
-
+        
         return randomNumber
     }
 }
@@ -238,7 +241,7 @@ func getTotalStorage() -> String? {
     } catch {
         print("Error: \(error.localizedDescription)")
     }
-    return nil
+    return "Error"
 }
 
 #Preview {
