@@ -116,7 +116,7 @@ struct ContentView: View {
                                 isOnLandscapeOrientation = UIDevice.current.orientation.isLandscape
                             }
                         }
-                        .onAppear {
+                        .task {
                             if UIDevice.current.orientation.rawValue <= 4 {
                                 isOnLandscapeOrientation = UIDevice.current.orientation.isLandscape
                             }

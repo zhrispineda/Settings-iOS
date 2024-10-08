@@ -10,7 +10,8 @@ import SwiftUI
 struct AboutView: View {
     // Variables
     @State private var showingModelNumber = false
-    @State private var modelNumber = String()
+    @AppStorage("ModelNumber") private var modelNumber = String()
+    @AppStorage("RegulatoryModelNumber") private var regulatoryModelNumber = String()
     @State private var serialNumber = String()
     @State private var availableStorage: String = getAvailableStorage() ?? "Error"
     @State private var capacityStorage = String()
@@ -33,7 +34,7 @@ struct AboutView: View {
                 
                 LabeledContent("Model Name", value: UIDevice.fullModel)
                     .textSelection(.enabled)
-                MonospacedLabel("Model Number", value: showingModelNumber ? getRegulatoryModelNumber() : "\(modelNumber)\(getRegionInfo())")
+                MonospacedLabel("Model Number", value: showingModelNumber ? regulatoryModelNumber : "\(modelNumber)\(getRegionInfo())")
                     .contentShape(Rectangle())
                     .onTapGesture {
                         showingModelNumber.toggle()
@@ -41,9 +42,10 @@ struct AboutView: View {
                 LabeledContent("Serial Number", value: serialNumber)
             }
             .task {
-                if modelNumber.isEmpty {
+                if serialNumber.isEmpty {
                     capacityStorage = UIDevice.storageCapacity ?? getTotalStorage()!
-                    modelNumber = MGHelper.read(key: "D0cJ8r7U5zve6uA6QbOiLA") ?? getRegulatoryModelNumber()
+                    modelNumber = MGHelper.read(key: "D0cJ8r7U5zve6uA6QbOiLA") ?? getRegulatoryModelNumber() // ModelNumber
+                    regulatoryModelNumber = getRegulatoryModelNumber()
                     serialNumber = MGHelper.read(key: "VasUgeSzVyHdB27g2XpN0g") ?? getRandomSerialNumber()
                     wifiAddress = generateRandomAddress()
                     bluetoothAddress = generateRandomAddress()
@@ -70,45 +72,50 @@ struct AboutView: View {
                 LabeledContent("Available", value: availableStorage)
             }
             
-            if !UIDevice.IsSimulator && UIDevice.CellularTelephonyCapability {
+            if !UIDevice.IsSimulator {
                 MonospacedLabel("Wi-Fi Address", value: wifiAddress)
                 MonospacedLabel("Bluetooth", value: bluetoothAddress)
-                MonospacedLabel("Modem Firmware", value: "1.00.00")
+                if UIDevice.CellularTelephonyCapability {
+                    MonospacedLabel("Modem Firmware", value: "1.00.00")
+                }
                 NavigationLink("SEID", destination: SEIDView())
-                VStack {
-                    Text("EID")
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                    HStack(spacing: 0) {
-                        ForEach(eidValue.map { String($0) }, id: \.self) { character in
-                            if character == "1" {
-                                Text(character)
-                            } else {
-                                Text(character)
-                                    .fontDesign(.monospaced)
-                                    .kerning(-1)
+                
+                if UIDevice.CellularTelephonyCapability {
+                    VStack {
+                        Text("EID")
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        HStack(spacing: 0) {
+                            ForEach(eidValue.map { String($0) }, id: \.self) { character in
+                                if character == "1" {
+                                    Text(character)
+                                } else {
+                                    Text(character)
+                                        .fontDesign(.monospaced)
+                                        .kerning(-1)
+                                }
                             }
                         }
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .foregroundStyle(.secondary)
+                        .font(.subheadline)
                     }
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .foregroundStyle(.secondary)
-                    .font(.subheadline)
-                }
-                LabeledContent("Carrier Lock", value: "No SIM restrictions")
-                
-                //                Section {
-                //                    LabeledContent("Network", value: "Not Available")
-                //                    LabeledContent("Carrier", value: "Carrier 0.0")
-                //                    HText("IMEI", status: "00 000000 000000 0", monospaced: true)
-                //                    HText("ICCID", status: getRandomICCID(), monospaced: true)
-                //                } header: {
-                //                    Text(UIDevice.HomeButtonCapability && UIDevice.iPhone ? "Physical SIM" : "eSIM")
-                //                }
-                
-                Section {
-                    MonospacedLabel("IMEI", value: "00 000000 000000 0")
-                    MonospacedLabel("IMEI2", value: "00 000000 000000 0")
-                } header: {
-                    Text("Available SIMs")
+                    LabeledContent("Carrier Lock", value: "No SIM restrictions")
+                    
+                    //                Section {
+                    //                    LabeledContent("Network", value: "Not Available")
+                    //                    LabeledContent("Carrier", value: "Carrier 0.0")
+                    //                    HText("IMEI", status: "00 000000 000000 0", monospaced: true)
+                    //                    HText("ICCID", status: getRandomICCID(), monospaced: true)
+                    //                } header: {
+                    //                    Text(UIDevice.HomeButtonCapability && UIDevice.iPhone ? "Physical SIM" : "eSIM")
+                    //                }
+                    
+                    Section {
+                        MonospacedLabel("IMEI", value: "00 000000 000000 0")
+                        MonospacedLabel("IMEI2", value: "00 000000 000000 0")
+                    } header: {
+                        Text("Available SIMs")
+                    }
                 }
             }
             
@@ -129,14 +136,14 @@ struct AboutView: View {
     // Display corresponding model number
     func getRegulatoryModelNumber() -> String {
         // Check MobileGestalt CacheExtra first
-        if let answer = MGHelper.read(key: "D0cJ8r7U5zve6uA6QbOiLA") {
+        if let answer = MGHelper.read(key: "97JDvERpVwO+GHtthIh7hA") { // RegulatoryModelNumber
             return answer
         }
         
         // Fallback
         if let mobileGestalt = UIDevice.checkDevice() {
             let cacheExtra = mobileGestalt["CacheExtra"] as! [String : AnyObject]
-            return cacheExtra["97JDvERpVwO+GHtthIh7hA"] as! String // Model number
+            return cacheExtra["97JDvERpVwO+GHtthIh7hA"] as! String // RegulatoryModelNumber cached
         }
         
         return "Error"
@@ -157,14 +164,14 @@ struct AboutView: View {
     
     // Generate random address
     func generateRandomAddress() -> String {
-        let hexCharacters = "0123456789ABCDEF"
-        var address = ""
+        let characters = "0123456789ABCDEF"
+        var address = String()
         
         for i in 0..<6 {
             if i > 0 {
                 address += ":"
             }
-            let byte = (0..<2).map { _ in hexCharacters.randomElement()! }
+            let byte = (0..<2).map { _ in characters.randomElement()! }
             address += String(byte)
         }
         
