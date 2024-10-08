@@ -35,7 +35,7 @@ struct StorageView: View {
                     HStack {
                         Text("\(UIDevice.current.model)")
                         Spacer()
-                        Text("65.62 GB of 256 GB used")
+                        Text("65.62 GB of \(UIDevice.storageCapacity ?? getTotalStorage()!) used")
                             .font(.subheadline)
                             .foregroundStyle(.secondary)
                     }
@@ -48,7 +48,7 @@ struct StorageView: View {
                     .chartPlotStyle { plotArea in
                         ZStack {
                             Color(UIColor.systemGroupedBackground)
-                            Text("190.30 GB")
+                            Text(getAvailableStorage() ?? String())
                                 .font(.subheadline)
                                 .foregroundStyle(Color["Label"])
                                 .padding(.leading, 70)

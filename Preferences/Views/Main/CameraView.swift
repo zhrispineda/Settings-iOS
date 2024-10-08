@@ -124,7 +124,7 @@ struct CameraView: View {
                 } footer: {
                     Text("SEMANTIC_STYLES_ROW_FOOTER", tableName: table)
                 }
-            } else if UIDevice.iPad || UIDevice.SceneDetectionCapability {
+            } else if UIDevice.SceneDetectionCapability {
                 Section {
                     Toggle("SEM_DEV_SWITCH".localize(table: table), isOn: $sceneDetectionEnabled)
                 } header: {
@@ -176,10 +176,10 @@ struct CameraView: View {
                 } footer: {
                     Text("AUTO_MACRO_GROUP_FOOTER", tableName: table)
                 }
-                
-                Section {} footer: {
-                    Text(.init("[\("BUTTON_TITLE".localize(table: privacyTable))](#)")) // com.apple.onboarding.camera
-                }
+            }
+            
+            Section {} footer: {
+                Text(.init("[\("BUTTON_TITLE".localize(table: privacyTable))](#)")) // com.apple.onboarding.camera
             }
         }
     }

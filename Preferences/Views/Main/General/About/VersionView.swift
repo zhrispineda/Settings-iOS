@@ -9,11 +9,9 @@ import SwiftUI
 import os
 
 struct VersionView: View {
-    // Variables
-    let logger = Logger()
-    
     var body: some View {
-        CustomList(title: "\(UIDevice().systemName) Version") {
+        CustomList(title: "\(UIDevice().systemName) Version", topPadding: true) {
+            Text(MGHelper.read(key: "4/DY21tHB40GBdt7Xk8Sdg") ?? "Error")
             Section {
                 VStack(alignment: .leading) {
                     Text("**\(UIDevice().systemName) \(UIDevice().systemVersion) (\(getVersionBuild()))**")
@@ -34,7 +32,7 @@ struct VersionView: View {
                     }
                 }
             } header: {
-                Text("\n\(UIDevice().systemName) Version")
+                Text("\(UIDevice().systemName) Version")
             }
         }
     }
@@ -43,10 +41,8 @@ struct VersionView: View {
         guard let mobileGestalt = UIDevice.checkDevice(),
               let cacheExtra = mobileGestalt["CacheExtra"] as? [String: AnyObject],
               let releaseType = cacheExtra["9UCjT7Qfi4xLVvPAKIzTCQ"] as? String else { // ReleaseType key
-            logger.info("Key ReleaseType not found! Will fallback to Release.")
             return "Release" // Fallback
         }
-        logger.info("Found key ReleaseType: \(releaseType)")
         return releaseType
     }
     
@@ -54,10 +50,8 @@ struct VersionView: View {
         guard let mobileGestalt = UIDevice.checkDevice(),
               let cacheExtra = mobileGestalt["CacheExtra"] as? [String: AnyObject],
               let buildVersion = cacheExtra["mZfUC7qo4pURNhyMHZ62RQ"] as? String else { // BuildVersion key
-            logger.info("Key BuildVersion not found! Will fallback to 22A3370.")
             return "22A3370" // Fallback
         }
-        logger.info("Found key BuildVersion: \(buildVersion)")
         return buildVersion
     }
 }
