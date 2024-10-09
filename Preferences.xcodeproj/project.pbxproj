@@ -166,6 +166,7 @@
 		838C23302B74978C0053D4C5 /* HText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838C232F2B74978C0053D4C5 /* HText.swift */; };
 		838F37EA2C82865B008C9909 /* FilesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838F37E92C82865B008C9909 /* FilesView.swift */; };
 		838F37EC2C828754008C9909 /* FitnessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838F37EB2C828754008C9909 /* FitnessView.swift */; };
+		838FE8CD2CB60A3300FDB1A8 /* AssistantSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 838FE8CC2CB60A3300FDB1A8 /* AssistantSettings.xcstrings */; };
 		839092BB2C0D213200924849 /* OtherNetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839092BA2C0D213200924849 /* OtherNetworkView.swift */; };
 		8393425E2C18CE5B00B48679 /* BatteryHealthChargingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8393425D2C18CE5B00B48679 /* BatteryHealthChargingView.swift */; };
 		83A3E68F2CAB9743006F4643 /* AccessibilityTitles.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83A3E68E2CAB9743006F4643 /* AccessibilityTitles.xcstrings */; };
@@ -435,6 +436,7 @@
 		838C232F2B74978C0053D4C5 /* HText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HText.swift; sourceTree = "<group>"; };
 		838F37E92C82865B008C9909 /* FilesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesView.swift; sourceTree = "<group>"; };
 		838F37EB2C828754008C9909 /* FitnessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessView.swift; sourceTree = "<group>"; };
+		838FE8CC2CB60A3300FDB1A8 /* AssistantSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AssistantSettings.xcstrings; sourceTree = "<group>"; };
 		839092BA2C0D213200924849 /* OtherNetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherNetworkView.swift; sourceTree = "<group>"; };
 		8393425D2C18CE5B00B48679 /* BatteryHealthChargingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryHealthChargingView.swift; sourceTree = "<group>"; };
 		83A3E68E2CAB9743006F4643 /* AccessibilityTitles.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AccessibilityTitles.xcstrings; sourceTree = "<group>"; };
@@ -1106,6 +1108,7 @@
 				832877DC2CAD95C300013B0B /* AppleAccountUI.xcstrings */,
 				83DB888E2CAC97BF008218E6 /* AppleID.xcstrings */,
 				832877DE2CAD987B00013B0B /* AppleIDSetup.xcstrings */,
+				838FE8CC2CB60A3300FDB1A8 /* AssistantSettings.xcstrings */,
 				832877E02CAD9A2C00013B0B /* BatteryUI.xcstrings */,
 				834565732CAAE673002BE49D /* CameraEditKit.xcstrings */,
 				832877E82CAEE14400013B0B /* CameraUI-SmartStyles.xcstrings */,
@@ -1514,6 +1517,7 @@
 				832877DB2CAD915400013B0B /* AmbientSettings.xcstrings in Resources */,
 				83441A892CAF2B6A0022E193 /* Privacy.xcstrings in Resources */,
 				832877E92CAEE14400013B0B /* CameraUI-SmartStyles.xcstrings in Resources */,
+				838FE8CD2CB60A3300FDB1A8 /* AssistantSettings.xcstrings in Resources */,
 				83A422342CAC60B100EED538 /* CameraSettings-4k120.xcstrings in Resources */,
 				832877FB2CAEEA7E00013B0B /* WiFiKitUILocalizableStrings.xcstrings in Resources */,
 				834565702CAAE202002BE49D /* CameraSettings-CameraButton.xcstrings in Resources */,

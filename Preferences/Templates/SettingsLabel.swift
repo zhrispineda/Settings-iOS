@@ -5,7 +5,7 @@
 
 import SwiftUI
 
-/// A template for displaying a label with a rounded icon and text.
+/// An HStack container for displaying a label with a rounded icon and text.
 /// ```swift
 /// var body: some View {
 ///     List {

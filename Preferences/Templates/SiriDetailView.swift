@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-/// A ``View`` template for displaying options regarding Siri Suggestions and apps.
+/// A ``View`` container for displaying options regarding Siri Suggestions and apps.
 /// ```swift
 /// SiriDetailView(appName: "News", title: "News")
 /// ```
@@ -23,15 +23,16 @@ struct SiriDetailView: View {
     @State private var suggestNotificationsEnabled = true
     var appName: String = String()
     var title: String = "Siri"
+    let table = "AssistantSettings"
     
     let showInAppApps = ["Calendar", "Contacts", "Maps", "Messages", "News", "Reminders", "Safari"]
     
     var body: some View {
         CustomList(title: title) {
             Section {
-                Toggle("Learn from this App", isOn: $learnFromAppEnabled)
+                Toggle("SIRIANDSEARCH_PERAPP_INAPP_LEARNFROMAPP_TOGGLE".localize(table: table, appName), isOn: $learnFromAppEnabled)
             } footer: {
-                Text("Allow Siri to learn from how you use “\(appName)“ to make suggestions across apps.")
+                Text("SIRIANDSEARCH_PERAPP_INAPP_FOOTER".localize(table: table, appName))
             }
             
             Section {
@@ -39,12 +40,12 @@ struct SiriDetailView: View {
                     Toggle("Suggest in App", isOn: $suggestInAppEnabled)
                 }
                 Toggle("Suggest on Home Screen", isOn: $showHomeScreenEnabled)
-                Toggle("Suggest App", isOn: $suggestAppEnabled)
+                Toggle("SIRIANDSEARCH_PERAPP_SUGGESTIONS_SUGGESTAPP_TOGGLE".localize(table: table), isOn: $suggestAppEnabled)
                 Toggle("Suggest Notifications", isOn: $suggestNotificationsEnabled)
             } header: {
-                Text("Suggestions")
+                Text("SIRIANDSEARCH_PERAPP_SUGGESTIONS_HEADER", tableName: table)
             } footer: {
-                Text("Allow suggestions and content from “\(appName)“ and Shortcuts for the app to appear \(showInAppApps.contains(appName) ? "in the app, in Search, in widgets, and as notifications" : "in Search and in widgets"). These suggestions and Shortcuts are based on how you use the app.")
+                Text(showInAppApps.contains(appName) ? "SIRIANDSEARCH_PERAPP_SUGGESTIONS_FOOTER_CONTACTSAPP_NONOTIFICATIONS".localize(table: table, appName) : "SIRIANDSEARCH_PERAPP_SUGGESTIONS_FOOTER_NOSHOW_NONOTIFICATIONS".localize(table: table, appName))
             }
         }
     }
@@ -52,6 +53,6 @@ struct SiriDetailView: View {
 
 #Preview {
     NavigationStack {
-        SiriDetailView()
+        SiriDetailView(appName: "News")
     }
 }
