@@ -5,7 +5,7 @@
 
 import SwiftUI
 
-/// A template for an HStack with title and status text on opposing sides of a row.
+/// An HStack container with title and status text on opposing sides.
 /// ```swift
 /// var body: some View {
 ///     List {
@@ -15,6 +15,7 @@ import SwiftUI
 /// ```
 /// - Parameter title: The ``String`` main text describing the label.
 /// - Parameter status: The ``String`` description of a state of a destination's controls.
+/// - Parameter monospaced: The ``Bool`` of whether the `status` text is monospaced.
 struct HText: View {
     var title = String()
     var status = String()

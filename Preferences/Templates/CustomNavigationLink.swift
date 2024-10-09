@@ -5,10 +5,13 @@
 
 import SwiftUI
 
-/// A template for a NavigationLink with subtitle and status text.
+/// A NavigationLink container with subtitle and status text.
 /// ```swift
 /// var body: some View {
 ///     List {
+///         CustomNavigationLink(title: "Title", destination: EmptyView())
+///         CustomNavigationLink(title: "Title", subtitle: "Subtitle", destination: EmptyView())
+///         CustomNavigationLink(title: "Title", status: "Status", destination: EmptyView())
 ///         CustomNavigationLink(title: "Title", subtitle: "Subtitle", status: "Status", destination: EmptyView())
 ///     }
 /// }

@@ -5,7 +5,7 @@
 
 import SwiftUI
 
-/// A template for displaying a toggle and a rounded icon next to a label.
+/// Toggle container with a rounded icon next to its label.
 /// ```swift
 /// var body: some View {
 ///     List {
@@ -69,5 +69,9 @@ struct IconToggle: View {
 }
 
 #Preview {
-    ContentView()
+    NavigationStack {
+        CustomList(title: "IconToggle") {
+            IconToggle(enabled: .constant(true), color: .blue, icon: "wifi", title: "Wi-Fi", subtitle: "Home")
+        }
+    }
 }

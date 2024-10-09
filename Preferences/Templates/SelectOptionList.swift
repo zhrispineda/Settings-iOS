@@ -17,6 +17,7 @@ struct SelectOptionList: View {
     var title = String()
     var options = ["Allow", "Don‘t Allow"]
     @State var selected = "Allow"
+    let table = "Restrictions"
     
     var body: some View {
         CustomList(title: title) {
@@ -31,16 +32,16 @@ struct SelectOptionList: View {
             } footer: {
                 switch title {
                 case "Account Changes":
-                    Text("Disallowing changes prevents adding, removing, or modifying accounts in Passwords & Accounts.")
+                    Text("AccountChangesFooterText", tableName: table)
                 case "Ask to Join Networks":
                     Text("kWFLocAskToJoin\(selected)Footer".localize(table: "WiFiKitUILocalizableStrings"))
                 case "Connect with Friends":
-                    VStack {
-                        Text("By selecting “Allow,“ apps can ask for permission to connect you with your Game Center friends.\n")
-                        Text("\nDisallowing prevents apps from asking if they can connect you with your Game Center friends and restricts this device from sharing your Game Center friends list with other apps.")
+                    VStack(alignment: .leading) {
+                        Text("ConnectWithFriendsExplanatoryFooterText", tableName: table)
+                        Text("\n" + "ConnectWithFriendsContinuedExplanatoryText".localize(table: table))
                     }
                 case "Private Messaging":
-                    Text("Disallowing prevents you from sending custom messages to other players and using voice chat in games.")
+                    Text("PrivateMessagingFooter", tableName: table)
                 default:
                     EmptyView()
                 }
@@ -51,6 +52,6 @@ struct SelectOptionList: View {
 
 #Preview {
     NavigationStack {
-        SelectOptionList()
+        SelectOptionList(title: "ConnectWithFriendsSpecifierName".localize(table: "Restrictions"))
     }
 }

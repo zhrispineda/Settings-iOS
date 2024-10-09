@@ -5,7 +5,7 @@
 
 import SwiftUI
 
-/// A List that is customized to include commonly used properties and adjustments.
+/// A List container that is customized to include commonly used properties and adjustments.
 /// ```swift
 /// var body: some View {
 ///     CustomList(title: "My Title") {
