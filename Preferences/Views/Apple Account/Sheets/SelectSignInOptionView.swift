@@ -16,10 +16,8 @@ struct SelectSignInOptionView: View {
     var body: some View {
         List {
             VStack(spacing: 15) {
-                Image("appleAccount")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 75)
+                animatedHeader()
+                    .frame(height: 100)
                 Text("LOGIN_FORM_TITLE", tableName: table)
                     .font(.title)
                     .bold()
@@ -112,6 +110,68 @@ struct SelectSignInOptionView: View {
                 }
             }
         }
+    }
+}
+
+struct animatedHeader: View {
+    var body: some View {
+        ZStack {
+            dottedRing
+            Image(systemName: "applelogo")
+                .foregroundStyle(.blue)
+                .font(.system(size: 25))
+                .offset(y: -2)
+        }
+    }
+    
+    var dottedRing: some View {
+        ZStack {
+            Color.blue.opacity(0.5)
+                .mask {
+                    ZStack {
+                        animatedDots(delay: 0.0)
+                            .scaleEffect(0.4)
+                            .rotationEffect(.degrees(2))
+                        animatedDots(delay: 0.25)
+                            .scaleEffect(0.3)
+                            .rotationEffect(.degrees(12))
+                    }
+                }
+        }
+    }
+}
+
+struct animatedDots: View {
+    let delay: Double
+    @State private var animating = false
+    @State private var rotation = 0.0
+    private let timer = Timer.publish(every: 3, on: .main, in: .common).autoconnect()
+    
+    var body: some View {
+        ring
+            .opacity(animating ? 1 : 0)
+            .scaleEffect(animating ? 1 : 0.5)
+            .rotationEffect(.degrees(rotation))
+            .onAppear {
+                withAnimation(.easeInOut(duration: 1.0).delay(delay)) {
+                    rotation += 90
+                    animating = true
+                }
+            }
+    }
+    
+    var ring: some View {
+        Canvas { context, size in
+            let dimensionOffset = size.width/2
+            let icon = context.resolve(Image(systemName: "circle.fill"))
+            var currentPoint = CGPoint(x: dimensionOffset - icon.size.width/0.2, y: 0)
+            
+            for _ in 0...20 {
+                currentPoint = currentPoint.applying(.init(rotationAngle: Angle.degrees(18).radians))
+                context.draw(icon, at: CGPoint(x: currentPoint.x + dimensionOffset, y: currentPoint.y + dimensionOffset))
+            }
+        }
+        .frame(width: 360, height: 360)
     }
 }
 
