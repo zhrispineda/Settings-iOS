@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-/// A ``View`` template for displaying options regarding Siri Suggestions and apps.
+/// A ``View`` container for displaying options regarding Siri Suggestions and apps.
 /// ```swift
 /// SearchDetailView(appName: "News")
 /// ```
@@ -18,21 +18,21 @@ struct SearchDetailView: View {
     @State private var showContentInSearchEnabled = true
     var appName: String = String()
     var appTitle = true
+    let table = "AssistantSettings"
     
     var body: some View {
-        CustomList(title: appTitle ? appName : "Search") {
+        CustomList(title: appTitle ? appName : "Search", topPadding: true) {
             Section {
-                Toggle("Show App in Search", isOn: $showAppInSearchEnabled)
+                Toggle("SIRIANDSEARCH_PERAPP_WHILESEARCHING_SHOWAPP_TOGGLE".localize(table: table), isOn: $showAppInSearchEnabled)
                 if showAppInSearchEnabled {
-                    Toggle("Show Content in Search", isOn: $showContentInSearchEnabled)
+                    Toggle("SIRIANDSEARCH_PERAPP_WHILESEARCHING_SHOWCONTENT_TOGGLE".localize(table: table), isOn: $showContentInSearchEnabled)
                 }
             } header: {
-                Text("While Searching")
+                Text("SIRIANDSEARCH_PERAPP_WHILESEARCHING_HEADER", tableName: table)
             } footer: {
-                Text("Allow “\(appName)“ the app and its content to appear in Search.")
+                Text("SIRIANDSEARCH_PERAPP_WHILESEARCHING_FOOTER".localize(table: table, appName))
             }
         }
-        .padding(.top, 19)
     }
 }
 

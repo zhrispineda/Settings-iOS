@@ -3,7 +3,7 @@
 //  Preferences
 //
 
-/// A template for displaying a label and information with a monospace-like format.
+/// An HStack container for displaying a label and information with a monospace-like format.
 /// ```swift
 /// var body: some View {
 ///     List {

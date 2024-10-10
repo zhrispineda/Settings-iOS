@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct LanguageView: View {
+    // Variables
+    let table = "PSSystemPolicy"
+    
     var body: some View {
         Section {
-            SettingsLink(color: .blue, icon: "globe", id: "Language", status: "English") {}
+            SettingsLink(color: .blue, icon: "globe", id: "LANGUAGE".localize(table: table), status: "English") {}
         } header: {
-            Text("Preferred Language")
+            Text("PREFERRED_LANGUAGE", tableName: table)
         }
     }
 }

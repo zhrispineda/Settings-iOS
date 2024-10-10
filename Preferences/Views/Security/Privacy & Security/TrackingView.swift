@@ -10,22 +10,25 @@ import SwiftUI
 struct TrackingView: View {
     // Variables
     @State private var allowAppsRequestTrackingEnabled = true
+    let table = "Privacy"
     
     var body: some View {
-        CustomList(title: "Tracking") {
+        CustomList(title: "TRACKERS".localize(table: table)) {
             Section {
-                Toggle("Allow Apps to Request to Track", isOn: $allowAppsRequestTrackingEnabled)
+                Toggle("ALLOW_ASK".localize(table: table), isOn: $allowAppsRequestTrackingEnabled)
             } footer: {
-                Text("Allow apps to ask to track your activity across other companies‘ apps and websites. When this is off, all new app tracking requests are automatically denied. [Learn more...](#)")
+                Text(.init("APP_TRACKING_HEADER_TEXT".localize(table: table) + " [\("APP_TRACKING_LINK_TEXT".localize(table: table))](#)"))
             }
             
             Section {} footer: {
-                Text("Apps that have asked for permission to track your activity with an identifier will appear here. Tracking activity is blocked by apps that you‘ve denied access to.")
+                Text("TRACKING_HEADER", tableName: table)
             }
         }
     }
 }
 
 #Preview {
-    TrackingView()
+    NavigationStack {
+        TrackingView()
+    }
 }
