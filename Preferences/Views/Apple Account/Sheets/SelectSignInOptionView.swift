@@ -153,9 +153,11 @@ struct animatedDots: View {
             .scaleEffect(animating ? 1 : 0.5)
             .rotationEffect(.degrees(rotation))
             .onAppear {
-                withAnimation(.easeInOut(duration: 1.0).delay(delay)) {
-                    rotation += 90
-                    animating = true
+                if rotation == 0.0 {
+                    withAnimation(.easeInOut(duration: 1.0).delay(delay)) {
+                        rotation += 90
+                        animating = true
+                    }
                 }
             }
     }

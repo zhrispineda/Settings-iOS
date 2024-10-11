@@ -6,6 +6,7 @@
 import SwiftUI
 
 struct PermissionsView: View {
+    // Variables
     var appName: String
     
     var background: Bool = false
@@ -28,19 +29,21 @@ struct PermissionsView: View {
     @State private var faceIdEnabled = true
     @State private var liveActivityEnabled = true
     
+    let table = "PSSystemPolicy"
+    
     var body: some View {
         Section {
             if focus {
-                IconToggle(enabled: $focusEnabled, color: .indigo, icon: "moon.fill", title: "Focus")
+                IconToggle(enabled: $focusEnabled, color: .indigo, icon: "moon.fill", title: "FOCUS".localize(table: table))
             }
             if location {
-                SettingsLink(color: .blue, icon: "location.fill", id: "Location", status: "Never") {}
+                SettingsLink(color: .blue, icon: "location.fill", id: "LOCATION_SERVICES".localize(table: table), status: "Never") {}
             }
             if photos {
-                SettingsLink(icon: "applePhotos", id: "Photos", status: "Limited Access") {}
+                SettingsLink(icon: "applePhotos", id: "PHOTOS".localize(table: table), status: "PHOTOS_LIMITED_AUTHORIZATION".localize(table: table)) {}
             }
             if camera {
-                IconToggle(enabled: $cameraEnabled, color: .gray, icon: "camera.fill", title: "Camera")
+                IconToggle(enabled: $cameraEnabled, color: .gray, icon: "camera.fill", title: "CAMERA".localize(table: table))
             }
             if faceID {
                 IconToggle(enabled: $faceIdEnabled, color: .green, icon: "faceid", title: "Face ID")
@@ -54,26 +57,26 @@ struct PermissionsView: View {
                 }
             }
             if notifications {
-                SettingsLink(color: .red, icon: "bell.badge.fill", id: "Notifications", subtitle: appName == "Maps" ? "Banners, Sounds" : "Banners, Sounds, Badges") {}
+                SettingsLink(color: .red, icon: "bell.badge.fill", id: "NOTIFICATIONS".localize(table: table), subtitle: appName == "Maps" ? "Banners, Sounds" : "Banners, Sounds, Badges") {}
             }
             if liveActivity {
-                SettingsLink(color: .blue, icon: "clock.badge.fill", id: "Live Activities") {}
+                SettingsLink(color: .blue, icon: "clock.badge.fill", id: "LIVE_ACTIVITIES".localize(table: table)) {}
             }
             if liveActivityToggle {
-                IconToggle(enabled: $liveActivityEnabled, color: .blue, icon: "clock.badge.fill", title: "Live Activities")
+                IconToggle(enabled: $liveActivityEnabled, color: .blue, icon: "clock.badge.fill", title: "LIVE_ACTIVITIES".localize(table: table))
             }
             if background {
-                IconToggle(enabled: $backgroundAppRefreshEnabled, color: .gray, icon: "gear", title: "Background App Refresh")
+                IconToggle(enabled: $backgroundAppRefreshEnabled, color: .gray, icon: "gear", title: "BACKGROUND_APP_REFRESH".localize(table: table))
             }
             if cellular && UIDevice.CellularTelephonyCapability {
-                IconToggle(enabled: $cellularEnabled, color: .green, icon: "antenna.radiowaves.left.and.right", title: "Cellular Data")
+                IconToggle(enabled: $cellularEnabled, color: .green, icon: "antenna.radiowaves.left.and.right", title: "CELLULAR_DATA".localize(table: table))
             }
             if phone {
                 SettingsLink(color: .green, icon: "phone.arrow.down.left.fill", id: "Incoming Calls", status: "Banner") {}
                 SettingsLink(color: .red, icon: "phone.badge.waveform.fill", id: "Announce Calls", status: "Never") {}
             }
         } header: {
-            Text("Allow \(appName) To Access")
+            Text("ALLOW_ACCESS_FORMAT".localize(table: table, appName))
         } footer: {
             if appName == "Maps" {
                 Text("[About Apple Maps & Privacy...](POPOVER)")
