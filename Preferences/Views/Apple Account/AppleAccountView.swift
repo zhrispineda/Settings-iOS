@@ -12,7 +12,7 @@ struct AppleAccountView: View {
     let table = "AppleAccountUI"
     
     var body: some View {
-        CustomList(title: "APPLE_ID_REBRAND") {
+        CustomList(title: "APPLE_ID_REBRAND".localize(table: table)) {
             VStack {
                 Button {} label: {
                     Image(_internalSystemName: "person.crop.circle.fill")

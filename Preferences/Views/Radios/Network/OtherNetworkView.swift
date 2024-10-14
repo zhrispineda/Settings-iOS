@@ -13,23 +13,24 @@ struct OtherNetworkView: View {
     @State private var networkName = String()
     @State private var password = String()
     @FocusState private var isFocused: Bool
+    let table = "WiFiKitUILocalizableStrings"
     
     var body: some View {
         NavigationStack {
             List {
                 Section {
                     HStack {
-                        Text("Name")
-                        TextField("Network Name", text: $networkName)
+                        Text("kWFLocOtherNetworkNameTitle", tableName: table)
+                        TextField("kWFLocOtherNetworkNamePlaceholder".localize(table: table), text: $networkName)
                             .focused($isFocused)
                             .padding(.leading, 10)
                     }
                 }
                 
                 Section {
-                    CustomNavigationLink(title: "Security", status: "WPA2/WPA3", destination: EmptyView())
+                    CustomNavigationLink(title: "kWFLocOtherNetworkSecurityTitle".localize(table: table), status: "kWFLocSecurityWPA2WPA3Title".localize(table: table), destination: EmptyView())
                     HStack {
-                        Text("Password")
+                        Text("kWFLocOtherNetworkPasswordTitle", tableName: table)
                         SecureField("", text: $password)
                             .padding(.leading, 10)
                     }
@@ -38,13 +39,14 @@ struct OtherNetworkView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .principal) {
-                    Text("**Other Network**")
+                    Text("kWFLocOtherNetworksTitle", tableName: table)
+                        .fontWeight(.semibold)
                 }
                 ToolbarItem(placement: .topBarLeading) {
                     Button {
                         dismiss()
                     } label: {
-                        Text("Cancel")
+                        Text("kWFLocAdhocJoinCancelButton", tableName: table)
                             .padding(.top, 10)
                     }
                 }
@@ -52,7 +54,8 @@ struct OtherNetworkView: View {
                     Button {
                         dismiss()
                     } label: {
-                        Text("**Join**")
+                        Text("kWFLocOtherNetworksJoinButton", tableName: table)
+                            .fontWeight(.semibold)
                             .padding(.top, 10)
                     }
                     .disabled(true)
