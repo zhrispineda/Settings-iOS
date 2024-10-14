@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct NetworkDetailView: View {
-    @State private var privateWifiAddressEnabled = true
+    @State private var privateAddressOption = "Fixed"
+    let table = "WiFiKitUILocalizableStrings"
     
     var body: some View {
         CustomList(title: "NETWORK") {
@@ -30,32 +31,45 @@ struct NetworkDetailView: View {
 //            }
             
             Section {
-                Button("Join This Network") {}
+                Button("kWFLocSettingJoinNetworkTitle".localize(table: table)) {}
             }
             
             Section {
-                Toggle("Private Wi-Fi Address", isOn: $privateWifiAddressEnabled)
-                LabeledContent("Wi-Fi Address", value: "00:00:0X:XX:0X:X0")
+                //Toggle("Private Wi-Fi Address", isOn: $privateWifiAddressEnabled)
+                CustomNavigationLink(title: "Private Wi-Fi Address", status: "Fixed", destination: SelectOptionList(title: "Private Wi-Fi Address", options: ["kWFLocRandomMACOffOption".localize(table: table), "kWFLocRandomMACStaticOption".localize(table: table), "kWFLocRandomMACRotatingOption".localize(table: table)], selected: privateAddressOption))
+                LabeledContent("MACAddress", value: generateRandomAddress())
             } footer: {
-                Text("Using a private address helps reduce tracking of your \(UIDevice.current.model) across different Wi-Fi networks.")
+                VStack(alignment: .leading) {
+                    Text("kWFLocPirvateAddressFooterMainTitle", tableName: table)
+                    switch privateAddressOption {
+                    case "kWFLocRandomMACOffOption":
+                        Text("kWFLocPirvateAddressFooterOffDetail", tableName: table)
+                    case "kWFLocRandomMACStaticOption":
+                        Text("kWFLocPirvateAddressFooterStaticDetail", tableName: table)
+                    case "kWFLocRandomMACRotatingOption":
+                        Text("kWFLocPirvateAddressFooterRotatingDetail", tableName: table)
+                    default:
+                        EmptyView()
+                    }
+                }
             }
             
             Section {
-                CustomNavigationLink(title: "Configure IP", status: "Automatic", destination: EmptyView())
+                CustomNavigationLink(title: "kWFLocSettingsIPConfigureTitle".localize(table: table), status: "kWFLocSettingsIPV4ConfigureAutomatic".localize(table: table), destination: EmptyView())
             } header: {
-                Text("IPv4 Address")
+                Text("kWFLocSettingsIPSectionTitle", tableName: table)
             }
             
             Section {
-                CustomNavigationLink(title: "Configure DNS", status: "Automatic", destination: EmptyView())
+                CustomNavigationLink(title: "kWFLocSettingsDNSConfigureButton".localize(table: table), status: "kWFLocSettingsDNSConfigureAutomatic".localize(table: table), destination: EmptyView())
             } header: {
-                Text("DNS")
+                Text("kWFLocSettingsDNSSectionTitle", tableName: table)
             }
             
             Section {
-                CustomNavigationLink(title: "Configure Proxy", status: "Off", destination: EmptyView())
+                CustomNavigationLink(title: "kWFLocSettingsProxyConfigureButton".localize(table: table), status: "kWFLocSettingsProxyConfigOffTitle".localize(table: table), destination: EmptyView())
             } header: {
-                Text("HTTP Proxy")
+                Text("kWFLocSettingsProxySectionTitle", tableName: table)
             }
         }
     }

@@ -162,22 +162,6 @@ struct AboutView: View {
         return randomString
     }
     
-    // Generate random address
-    func generateRandomAddress() -> String {
-        let characters = "0123456789ABCDEF"
-        var address = String()
-        
-        for i in 0..<6 {
-            if i > 0 {
-                address += ":"
-            }
-            let byte = (0..<2).map { _ in characters.randomElement()! }
-            address += String(byte)
-        }
-        
-        return address
-    }
-    
     // Generate random characters as EID string
     func getRandomEID() -> String {
         let lowerBound = "10000000000000000000000000000000"
@@ -211,6 +195,22 @@ struct AboutView: View {
         
         return randomNumber
     }
+}
+
+// Generate random address
+func generateRandomAddress() -> String {
+    let characters = "0123456789ABCDEF"
+    var address = String()
+    
+    for i in 0..<6 {
+        if i > 0 {
+            address += ":"
+        }
+        let byte = (0..<2).map { _ in characters.randomElement()! }
+        address += String(byte)
+    }
+    
+    return address
 }
 
 // Get available storage
