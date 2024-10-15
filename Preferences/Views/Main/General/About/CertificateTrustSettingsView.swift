@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct CertificateTrustSettingsView: View {
+    // Variables
+    let table = "General"
+    
     var body: some View {
-        CustomList(title: "Certificate Trust Settings") {
+        CustomList(title: "CERT_TRUST_SETTINGS") {
             Section {
-                LabeledContent("Trust Store Version", value: "2024051500")
-                LabeledContent("Trust Asset Version", value: "1004")
+                LabeledContent("TRUST_STORE_VERSION", value: "2024051500")
+                LabeledContent("TRUST_ASSET_VERSION".localize(table: table), value: "1004")
             } footer: {
-                Text("[Learn more about trusted certificates](https://support.apple.com/kb/HT5012)")
+                Text("[\("TRUST_STORE_ABOUT".localize(table: table))](\("TRUST_STORE_URL".localize(table: table)))")
             }
         }
     }

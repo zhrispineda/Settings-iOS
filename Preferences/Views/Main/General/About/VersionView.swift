@@ -11,7 +11,6 @@ import os
 struct VersionView: View {
     var body: some View {
         CustomList(title: "\(UIDevice().systemName) Version", topPadding: true) {
-            Text(MGHelper.read(key: "4/DY21tHB40GBdt7Xk8Sdg") ?? "Error")
             Section {
                 VStack(alignment: .leading) {
                     Text("**\(UIDevice().systemName) \(UIDevice().systemVersion) (\(getVersionBuild()))**")

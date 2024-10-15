@@ -55,7 +55,7 @@ struct BluetoothView: View {
         }
         .toolbar {
             ToolbarItem(placement: .principal) {
-                Text("\("BLUETOOTH".localize(table: "table"))")
+                Text("\("BLUETOOTH".localize(table: table))")
                     .fontWeight(.semibold)
                     .font(.subheadline)
                     .opacity(frameY < 50.0 ? opacity : 0) // Only fade when passing the help section title at the top

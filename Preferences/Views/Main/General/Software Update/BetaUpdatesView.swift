@@ -11,37 +11,38 @@ struct BetaUpdatesView: View {
     // Variables
     @State private var selected = "\(UIDevice().systemName) 18 Developer Beta"
     @State private var showingAlert = false
-    let options = ["Off", "\(UIDevice().systemName) 18 Public Beta", "\(UIDevice().systemName) 18 Developer Beta"]
+    let options = ["OFF", "\(UIDevice().systemName) 18 Public Beta", "\(UIDevice().systemName) 18 Developer Beta"]
+    let table = "Software Update"
     
     var body: some View {
-        CustomList(title: "Beta Updates") {
+        CustomList(title: "GET_BETA_UPDATES".localize(table: table)) {
             Section {
                 Picker("", selection: $selected) {
-                    ForEach(options, id: \.self) {
-                        Text($0)
+                    ForEach(options, id: \.self) { option in
+                        Text(option.localize(table: table))
                     }
                 }
                 .pickerStyle(.inline)
                 .labelsHidden()
             } footer: {
-                Text("Receive beta updates on this \(UIDevice.current.model) to test-drive pre-release versions of \(UIDevice().systemName) and provide feedback to help make Apple software even better. [Learn more...](https://beta.apple.com)")
+                Text(.init("BETA_UPDATES_FOOTER_IPHONE".localize(table: table, "[Learn more...](https://beta.apple.com)")))
             }
             
             Section {
-                Button("Apple Account:") {
+                Button("BETA_UPDATES_APPLE_ACCOUNT_PREFIX".localize(table: table, "j.appleseed@icloud.com")) {
                     showingAlert.toggle()
                 }
-                .alert("Apple Account for Beta Updates", isPresented: $showingAlert) {
+                .alert("BETA_UPDATES_APPLE_ACCOUNT_AUTHENTICATION_TITLE".localize(table: table), isPresented: $showingAlert) {
                     Button {
                         showingAlert.toggle()
                     } label: {
-                        Text("Use a different Apple Account...")
+                        Text("BETA_UPDATES_APPLE_ACCOUNT_MISMATCH_PROMPT", tableName: table)
                     }
-                    Button("Cancel", role: .cancel) {
+                    Button("CANCEL".localize(table: table), role: .cancel) {
                         showingAlert.toggle()
                     }
                 } message: {
-                    Text("Signed in as .\n\nYou can sign in with a different Apple Account that is enrolled in the Apple Beta Software Program or Apple Developer Program.")
+                    Text("BETA_UPDATES_APPLE_ACCOUNT_AUTHENTICATION_ALERT_MESSAGE".localize(table: table, "j.appleseed@icloud.com"))
                 }
                 
             }
