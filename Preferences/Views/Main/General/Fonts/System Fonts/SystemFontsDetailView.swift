@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SystemFontsDetailView: View {
     var fontName = "Font"
+    let table = "FontSettings"
     
     var body: some View {
         CustomList(title: fontName) {
@@ -17,17 +18,28 @@ struct SystemFontsDetailView: View {
                     Text(fontName)
                         .font(.title2)
                         .fontWeight(.semibold)
-                    Text("Copyright")
+                    Text("COPYRIGHT_TITLE", tableName: table)
                         .font(.caption)
                         .fontWeight(.semibold)
-                    Text("Version")
+                    Text("VERSION_TITLE", tableName: table)
                         .font(.caption)
                         .fontWeight(.semibold)
                 }
             }
             
-            Section("One Typeface") {
-                NavigationLink("Plain") {}
+            Section("FACES_PLURAL".localize(table: table)) {
+                NavigationLink("Plain") {
+                    TabView {
+                        Text("ALPHABET", tableName: table)
+                            .padding()
+                        Text("LOREM_IPSUM", tableName: table)
+                            .padding()
+                        Text(String())
+                    }
+                    .tabViewStyle(.page)
+                    .indexViewStyle(.page(backgroundDisplayMode: .always))
+                    .navigationTitle("Plain")
+                }
             }
         }
     }

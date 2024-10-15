@@ -8,24 +8,28 @@
 import SwiftUI
 
 struct MyFontsView: View {
+    // Variables
+    let table = "FontSettings"
+    
     var body: some View {
         ScrollView() {
             ZStack {
                 Spacer().containerRelativeFrame(.vertical)
                 VStack(alignment: .center) {
-                    Text("**No Fonts Installed**")
+                    Text("NO_FONTS_INSTALLED", tableName: table)
+                        .fontWeight(.bold)
                         .font(.title2)
-                    Text("You can download apps that install fonts from the App Store.")
+                    Text("NO_FONTS_INSTALLED_DETAIL", tableName: table)
                         .multilineTextAlignment(.center)
                         .foregroundStyle(.secondary)
                         .font(.subheadline)
-                    Button("Open App Store") {}
+                    Button("NO_FONTS_INSTALLED_APP_STORE_BUTTON".localize(table: table)) {}
                         .padding(.vertical, 5)
                 }
                 .padding(30)
             }
         }
-        .navigationTitle("My Fonts")
+        .navigationTitle("MY_FONTS".localize(table: table))
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             EditButton()

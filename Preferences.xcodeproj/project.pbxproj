@@ -179,6 +179,7 @@
 		83A5DA512C2335580012ACB3 /* PermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5DA502C2335580012ACB3 /* PermissionsView.swift */; };
 		83A5DA532C234DCB0012ACB3 /* LanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5DA522C234DCB0012ACB3 /* LanguageView.swift */; };
 		83A5DA552C2366A60012ACB3 /* TransferResetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5DA542C2366A60012ACB3 /* TransferResetView.swift */; };
+		83A7E15A2CBF047B0037F1FB /* FontSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83A7E1592CBF047B0037F1FB /* FontSettings.xcstrings */; };
 		83AA1BD62C8B951B00A0B830 /* WatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AA1BD52C8B951B00A0B830 /* WatchView.swift */; };
 		83AFA1022BC87FC8008D4E57 /* HotspotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AFA1012BC87FC8008D4E57 /* HotspotView.swift */; };
 		83B00FF32C878F6400B18A94 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B00FF22C878F6400B18A94 /* MessagesView.swift */; };
@@ -451,6 +452,7 @@
 		83A5DA502C2335580012ACB3 /* PermissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsView.swift; sourceTree = "<group>"; };
 		83A5DA522C234DCB0012ACB3 /* LanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageView.swift; sourceTree = "<group>"; };
 		83A5DA542C2366A60012ACB3 /* TransferResetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferResetView.swift; sourceTree = "<group>"; };
+		83A7E1592CBF047B0037F1FB /* FontSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = FontSettings.xcstrings; sourceTree = "<group>"; };
 		83AA1BD52C8B951B00A0B830 /* WatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchView.swift; sourceTree = "<group>"; };
 		83AFA1012BC87FC8008D4E57 /* HotspotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotspotView.swift; sourceTree = "<group>"; };
 		83B00FF22C878F6400B18A94 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
@@ -1117,6 +1119,7 @@
 				834565732CAAE673002BE49D /* CameraEditKit.xcstrings */,
 				832877E82CAEE14400013B0B /* CameraUI-SmartStyles.xcstrings */,
 				832877EA2CAEE2CB00013B0B /* ControlCenterSettings.xcstrings */,
+				83A7E1592CBF047B0037F1FB /* FontSettings.xcstrings */,
 				83441A882CAF2B6A0022E193 /* Privacy.xcstrings */,
 				834196262CB89D8F0038183D /* PSSystemPolicy.xcstrings */,
 				836CDF922CB602B300B1C5B2 /* Restrictions.xcstrings */,
@@ -1516,6 +1519,7 @@
 				832877D92CAD8C7100013B0B /* Accessibility.xcstrings in Resources */,
 				832877ED2CAEE55B00013B0B /* General.xcstrings in Resources */,
 				833F0AD42B744D190036EAD2 /* Assets.xcassets in Resources */,
+				83A7E15A2CBF047B0037F1FB /* FontSettings.xcstrings in Resources */,
 				832877E62CAD9C6000013B0B /* Devices.xcstrings in Resources */,
 				832877DD2CAD95C300013B0B /* AppleAccountUI.xcstrings in Resources */,
 				832877F62CAEE7C000013B0B /* Reset.xcstrings in Resources */,
