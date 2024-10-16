@@ -31,7 +31,7 @@ struct VersionView: View {
                     }
                 }
             } header: {
-                Text("\(UIDevice().systemName) Version")
+                Text("OS Version")
             }
         }
     }

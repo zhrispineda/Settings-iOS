@@ -19,27 +19,28 @@ struct AboutView: View {
     @State private var bluetoothAddress = String()
     @State private var eidValue = String()
     @AppStorage("DeviceName") private var deviceName = UIDevice.current.model
+    let table = "General"
     
     var body: some View {
-        CustomList(title: "About") {
+        CustomList(title: "About".localize(table: table)) {
             Section {
                 if UIDevice.IsSimulator {
-                    LabeledContent("Name", value: UIDevice.current.model)
+                    LabeledContent("Device_Name".localize(table: table), value: UIDevice.current.model)
                 } else {
-                    CustomNavigationLink(title: "Name", status: deviceName, destination: NameView())
+                    CustomNavigationLink(title: "Device_Name".localize(table: table), status: deviceName, destination: NameView())
                 }
                 
-                CustomNavigationLink(title: "\(UIDevice().systemName) Version", status: UIDevice().systemVersion, destination: VersionView())
+                CustomNavigationLink(title: "OS Version".localize(table: "Localizable"), status: UIDevice().systemVersion, destination: VersionView())
                     .textSelection(.enabled)
                 
-                LabeledContent("Model Name", value: UIDevice.fullModel)
+                LabeledContent("ProductModelName", value: UIDevice.fullModel)
                     .textSelection(.enabled)
-                MonospacedLabel("Model Number", value: showingModelNumber ? regulatoryModelNumber : "\(modelNumber)\(getRegionInfo())")
+                MonospacedLabel("ProductModel".localize(table: "Localizable"), value: showingModelNumber ? regulatoryModelNumber : "\(modelNumber)\(getRegionInfo())")
                     .contentShape(Rectangle())
                     .onTapGesture {
                         showingModelNumber.toggle()
                     }
-                LabeledContent("Serial Number", value: serialNumber)
+                LabeledContent("SerialNumber", value: serialNumber)
             }
             .task {
                 if serialNumber.isEmpty {
@@ -62,21 +63,21 @@ struct AboutView: View {
             //            }
             
             Section {
-                LabeledContent("Songs", value: "0")
-                LabeledContent("Videos", value: "0")
-                LabeledContent("Photos", value: "6")
+                LabeledContent("SONGS", value: "0")
+                LabeledContent("VIDEOS", value: "0")
+                LabeledContent("PHOTOS", value: "6")
                 if !UIDevice.IsSimulator {
-                    LabeledContent("Applications", value: "1")
+                    LabeledContent("APPLICATIONS", value: "1")
                 }
-                LabeledContent("Capacity", value: capacityStorage)
-                LabeledContent("Available", value: availableStorage)
+                LabeledContent("User Data Capacity", value: capacityStorage)
+                LabeledContent("User Data Available", value: availableStorage)
             }
             
             if !UIDevice.IsSimulator {
-                MonospacedLabel("Wi-Fi Address", value: wifiAddress)
-                MonospacedLabel("Bluetooth", value: bluetoothAddress)
+                MonospacedLabel("MACAddress".localize(table: "Localizable"), value: wifiAddress)
+                MonospacedLabel("BTMACAddress".localize(table: "Localizable"), value: bluetoothAddress)
                 if UIDevice.CellularTelephonyCapability {
-                    MonospacedLabel("Modem Firmware", value: "1.00.00")
+                    MonospacedLabel("ModemVersion".localize(table: "Localizable"), value: "1.00.00")
                 }
                 NavigationLink("SEID", destination: SEIDView())
                 
@@ -99,7 +100,7 @@ struct AboutView: View {
                         .foregroundStyle(.secondary)
                         .font(.subheadline)
                     }
-                    LabeledContent("Carrier Lock", value: "No SIM restrictions")
+                    LabeledContent("CARRIER_LOCK".localize(table: table), value: "CARRIER_LOCK_UNLOCKED".localize(table: table))
                     
                     //                Section {
                     //                    LabeledContent("Network", value: "Not Available")
@@ -111,16 +112,16 @@ struct AboutView: View {
                     //                }
                     
                     Section {
-                        MonospacedLabel("IMEI", value: "00 000000 000000 0")
-                        MonospacedLabel("IMEI2", value: "00 000000 000000 0")
+                        MonospacedLabel("ModemIMEI".localize(table: "Localizable"), value: "00 000000 000000 0")
+                        MonospacedLabel("ModemIMEI2".localize(table: table), value: "00 000000 000000 0")
                     } header: {
-                        Text("Available SIMs")
+                        Text("AVAILABLE_SIMS".localize(table: table))
                     }
                 }
             }
             
             Section {
-                NavigationLink("Certificate Trust Settings", destination: CertificateTrustSettingsView())
+                NavigationLink("CERT_TRUST_SETTINGS", destination: CertificateTrustSettingsView())
             }
         }
     }
