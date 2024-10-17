@@ -9,12 +9,13 @@ import SwiftUI
 
 struct SoftwareUpdateView: View {
     @State private var checkingForUpdates = false
+    let table = "Software Update"
     
     var body: some View {
         GeometryReader { geometry in
-            CustomList(title: "Software Update") {
+            CustomList(title: "SOFTWARE_UPDATE".localize(table: table)) {
                 Section {
-                    CustomNavigationLink(title: "Automatic Updates", status: "On", destination: AutomaticUpdateView())
+                    CustomNavigationLink(title: "AUTOMATIC_UPDATES".localize(table: table), status: "ON".localize(table: table), destination: AutomaticUpdateView())
                     
                     //                if !checkingForUpdates && !updateCheckFailed {
                     //                    CustomNavigationLink(title: "Beta Updates", status: "\(UIDevice().systemName) 18 Developer Beta", destination: BetaUpdatesView())
@@ -29,17 +30,25 @@ struct SoftwareUpdateView: View {
                     
                     if checkingForUpdates {
                         withAnimation {
-                            Text("Checking for Update...")
+                            Text("CHECKING_FOR_UPDATES", tableName: table)
                                 .font(.system(size: 12))
                                 .foregroundStyle(.gray)
                                 .padding(.bottom, 10)
                         }
                     } else {
-                        ContentUnavailableView(
-                            "\(UIDevice().systemName) \(UIDevice().systemVersion)",
-                            systemImage: "",
-                            description: Text("\(UIDevice().systemName) is up to date")
-                        )
+                        if UIDevice.iPhone {
+                            ContentUnavailableView(
+                                "\("OS_PLATFORM_IPHONE".localize(table: table)) \(UIDevice().systemVersion)",
+                                systemImage: "",
+                                description: Text("UP_TO_DATE_IPHONE", tableName: table)
+                            )
+                        } else if UIDevice.iPad {
+                            ContentUnavailableView(
+                                "\("OS_PLATFORM_IPAD".localize(table: table)) \(UIDevice().systemVersion)",
+                                systemImage: "",
+                                description: Text("UP_TO_DATE_IPAD", tableName: table)
+                            )
+                        }
                     }
                 }
                 .frame(maxWidth: .infinity)

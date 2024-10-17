@@ -13,6 +13,10 @@ struct BatteryView: View {
     @AppStorage("lowPowerMode") private var lowPowerModeEnabled = false
     let table = "BatteryUI"
     
+    init() {
+        lowPowerModeEnabled = ProcessInfo.processInfo.isLowPowerModeEnabled
+    }
+    
     var body: some View {
         CustomList(title: "BATTERY_TITLE".localize(table: table)) {
             Section {

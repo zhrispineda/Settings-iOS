@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct AppleCareWarrantyView: View {
+    // Variables
+    let table = "NewDeviceOutreachUI"
+    
     var body: some View {
 //        CustomList(title: "AppleCare & Warranty", topPadding: true) {
 //            Section {
@@ -23,13 +26,13 @@ struct AppleCareWarrantyView: View {
             ZStack {
                 Spacer().containerRelativeFrame(.vertical)
                 ContentUnavailableView(
-                    "Sign In with your Apple Account",
+                    "CC_NO_ACCOUNT_ERROR_TITLE".localize(table: table),
                     systemImage: "person.crop.circle",
-                    description: Text("Go to Settings and sign in with your Apple Account to view eligibility of your devices.")
+                    description: Text("CC_NO_ACCOUNT_ERROR_SUBTITLE", tableName: table)
                 )
             }
         }
-        .navigationTitle("AppleCare & Warranty")
+        .navigationTitle("COVERAGE".localize(table: "General"))
         .navigationBarTitleDisplayMode(.inline)
     }
 }
