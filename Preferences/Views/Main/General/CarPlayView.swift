@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct CarPlayView: View {
+    // Variables
+    let table = "CarKitSettings"
+    
     var body: some View {
-        CustomList(title: "CarPlay") {
+        CustomList(title: "CARPLAY_OPTIONS_ROW_TITLE".localize(table: table)) {
             Section {
                 Image("SiriWheel")
                     .resizable()
@@ -18,12 +21,12 @@ struct CarPlayView: View {
             }
             
             Section {} footer: {
-                Text("If your car supports wireless CarPlay, press and hold the voice control button on your steering wheel to start CarPlay setup.")
+                Text("WIRELESS_SETUP_FOOTER", tableName: table)
             }
             
             Section {} header: {
                 HStack {
-                    Text("Available Cars")
+                    Text("AVAILABLE_CARS", tableName: table)
                     ProgressView()
                 }
             }

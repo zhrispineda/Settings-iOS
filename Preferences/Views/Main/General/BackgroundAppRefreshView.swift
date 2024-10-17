@@ -10,21 +10,22 @@ import SwiftUI
 struct BackgroundAppRefreshView: View {
     // Variables
     @AppStorage("BackgroundAppRefreshToggle") private var backgroundAppRefreshToggle = true
-    @AppStorage("BackgroundAppRefreshPicker") private var backgroundAppRefreshPicker = "On"
+    @AppStorage("BackgroundAppRefreshPicker") private var backgroundAppRefreshPicker = "NONE"
+    let table = "AutomaticContentDownload"
     
     var body: some View {
-        CustomList(title: "Background App Refresh") {
+        CustomList(title: "AUTO_CONTENT_DOWNLOAD".localize(table: table)) {
             if UIDevice.CellularTelephonyCapability {
                 Section {
-                    CustomNavigationLink(title: "Background App Refresh", status: backgroundAppRefreshPicker, destination: SelectOptionList(title: "Background App Refresh", options: ["Off", "Wi-Fi", "Wi-Fi & Cellular Data"], selected: "Wi-Fi & Cellular Data"))
+                    CustomNavigationLink(title: "AUTO_CONTENT_DOWNLOAD".localize(table: table), status: backgroundAppRefreshPicker.localize(table: table), destination: SelectOptionList(title: "AUTO_CONTENT_DOWNLOAD".localize(table: table), options: ["NONE".localize(table: table), "WIFI_ONLY".localize(table: table), "WIFI_AND_CELLULAR".localize(table: table)], selected: "Wi-Fi & Cellular Data".localize(table: table)))
                 } footer: {
-                    Text("Allow apps to refresh their content when on Wi-Fi or cellular in the background. Turning off apps may help preserve battery life.")
+                    Text("FOOTER_WIFI_AND_CELLULAR", tableName: table)
                 }
             } else {
                 Section {
-                    Toggle("Background App Refresh", isOn: $backgroundAppRefreshToggle)
+                    Toggle("AUTO_CONTENT_DOWNLOAD".localize(table: table), isOn: $backgroundAppRefreshToggle)
                 } footer: {
-                    Text("Allow apps to refresh their content when on Wi-Fi in the background. Turning off apps may help preserve battery life.")
+                    Text("FOOTER_WIFI", tableName: table)
                 }
             }
             
