@@ -15,60 +15,57 @@ struct AirPlayContinuityView: View {
     @AppStorage("ContinuityCamera") private var continuityCameraEnabled = true
     @AppStorage("AirPlayReceiver") private var airPlayReceiverEnabled = false
     @State private var requirePassword = false
+    let table = "AirPlayAndHandoffSettings"
     
     var body: some View {
-        CustomList(title: "AirPlay & Continuity") {
+        CustomList(title: "AirPlay & Continuity".localize(table: table)) {
             Section {
-                CustomNavigationLink(title: "Automatically AirPlay", status: "Automatic", destination: EmptyView())
+                CustomNavigationLink(title: "Automatically AirPlay".localize(table: table), status: "Automatic".localize(table: table), destination: EmptyView())
             }
             
             if UIDevice.iPhone {
                 Section {
-                    Toggle("Transfer to HomePod", isOn: $transferHomePod)
+                    Toggle("Transfer to HomePod".localize(table: table), isOn: $transferHomePod)
                 } footer: {
-                    Text("When playing media, bring iPhone close to the top of HomePod to transfer what‘s playing.")
+                    Text("When playing media, bring iPhone close to the top of HomePod to transfer what’s playing.", tableName: table)
                 }
             }
             
             Section {
-                Toggle("Handoff", isOn: $handoffEnabled)
+                Toggle("Handoff".localize(table: table), isOn: $handoffEnabled)
             } footer: {
-                Text("Handoff lets you start something on one device and instantly pick it up on other devices using your iCloud account. The app you need appears in the app switcher and in the Dock on a Mac.")
+                Text("Handoff lets you start something on one device and instantly pick it up on other devices using your iCloud account. The app you need appears in the app switcher and in the Dock on a Mac.", tableName: table)
             }
             
             if UIDevice.iPad {
                 Section {
-                    Toggle("Cursor and Keyboard", isOn: $cursorKeyboardEnabled)
+                    Toggle("Cursor and Keyboard".localize(table: table), isOn: $cursorKeyboardEnabled)
                 } footer: {
-                    Text("Allow your cursor and keyboard to be used on any nearby Mac signed in to your iCloud account.")
+                    Text("Allow your cursor and keyboard to be used on any nearby Mac signed in to your iCloud account.", tableName: table)
                 }
             }
             
             Section {
-                Toggle("Continuity Camera", isOn: $continuityCameraEnabled)
+                Toggle("Continuity Camera".localize(table: table), isOn: $continuityCameraEnabled)
             } footer: {
-                if UIDevice.iPhone {
-                    Text("Use your iPhone as a webcam for your Mac when both devices are near each other.")
-                } else {
-                    Text("Use your iPad as a webcam for your Apple TV when both devices are near each other.")
-                }
+                Text("Use your Device as a webcam for your Mac when both devices are near each other.", tableName: table)
             }
             
             Section {
-                Toggle("AirPlay Receiver", isOn: $airPlayReceiverEnabled)
+                Toggle("AirPlay Receiver".localize(table: table), isOn: $airPlayReceiverEnabled)
                 if airPlayReceiverEnabled {
-                    CustomNavigationLink(title: "Allow AirPlay For", status: "Current User", destination: EmptyView())
+                    CustomNavigationLink(title: "Allow AirPlay For".localize(table: table), status: "Current User".localize(table: table), destination: EmptyView())
                 }
             } header: {
-                Text("AirPlay Receiver")
+                Text("AirPlay Receiver", tableName: table)
             } footer: {
-                Text("Stream or share content from Apple Vision Pro to your \(UIDevice.current.model).")
+                Text("Stream or share content from your Device to your Device.", tableName: table)
             }
             
             if airPlayReceiverEnabled {
-                Toggle("Require Password", isOn: $requirePassword)
+                Toggle("Require Password".localize(table: table), isOn: $requirePassword)
                 if requirePassword {
-                    Button("Set AirPlay Password") {}
+                    Button("Set AirPlay Password".localize(table: table)) {}
                 }
             }
         }

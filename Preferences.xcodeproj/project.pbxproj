@@ -101,6 +101,7 @@
 		83585B772B8848430046A0C3 /* CyclingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83585B762B8848430046A0C3 /* CyclingView.swift */; };
 		83585FC82C435A7B00B11C91 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83585FC72C435A7B00B11C91 /* ColorExtensions.swift */; };
 		83585FCA2C435B6700B11C91 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83585FC92C435B6700B11C91 /* StringExtensions.swift */; };
+		835BF1312CC19A2300F30DA1 /* AirPlayAndHandoffSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 835BF1302CC19A2300F30DA1 /* AirPlayAndHandoffSettings.xcstrings */; };
 		836000782BCC7A470034DDF5 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836000772BCC7A470034DDF5 /* NotificationsView.swift */; };
 		836167D82C25FA3A00458CD8 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836167D72C25FA3A00458CD8 /* CalendarView.swift */; };
 		8361A2292C19308600A7D5CC /* SectionHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8361A2282C19308600A7D5CC /* SectionHelp.swift */; };
@@ -262,6 +263,7 @@
 		83F626DA2B828E8C00ED343F /* TVAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F626D92B828E8C00ED343F /* TVAppView.swift */; };
 		83F6E26C2C8A2E300060187F /* RemindersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F6E26B2C8A2E300060187F /* RemindersView.swift */; };
 		83F745BA2CC18EC700FDB3BA /* NewDeviceOutreachUI.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83F745B92CC18EC700FDB3BA /* NewDeviceOutreachUI.xcstrings */; };
+		83F745BC2CC194F900FDB3BA /* AirDropSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83F745BB2CC194F900FDB3BA /* AirDropSettings.xcstrings */; };
 		83F78A0F2B8E7D5000025062 /* ControlNearbyDevicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F78A0E2B8E7D5000025062 /* ControlNearbyDevicesView.swift */; };
 		83F78A122B8E7F6D00025062 /* AccessibilityKeyboardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F78A112B8E7F6D00025062 /* AccessibilityKeyboardsView.swift */; };
 		83F78A142B8E87BF00025062 /* FullKeyboardAccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F78A132B8E87BF00025062 /* FullKeyboardAccessView.swift */; };
@@ -375,6 +377,7 @@
 		83585B762B8848430046A0C3 /* CyclingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyclingView.swift; sourceTree = "<group>"; };
 		83585FC72C435A7B00B11C91 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		83585FC92C435B6700B11C91 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		835BF1302CC19A2300F30DA1 /* AirPlayAndHandoffSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AirPlayAndHandoffSettings.xcstrings; sourceTree = "<group>"; };
 		836000772BCC7A470034DDF5 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		836167D72C25FA3A00458CD8 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		8361A2282C19308600A7D5CC /* SectionHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHelp.swift; sourceTree = "<group>"; };
@@ -538,6 +541,7 @@
 		83F626D92B828E8C00ED343F /* TVAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVAppView.swift; sourceTree = "<group>"; };
 		83F6E26B2C8A2E300060187F /* RemindersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersView.swift; sourceTree = "<group>"; };
 		83F745B92CC18EC700FDB3BA /* NewDeviceOutreachUI.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = NewDeviceOutreachUI.xcstrings; sourceTree = "<group>"; };
+		83F745BB2CC194F900FDB3BA /* AirDropSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AirDropSettings.xcstrings; sourceTree = "<group>"; };
 		83F78A0E2B8E7D5000025062 /* ControlNearbyDevicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlNearbyDevicesView.swift; sourceTree = "<group>"; };
 		83F78A112B8E7F6D00025062 /* AccessibilityKeyboardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityKeyboardsView.swift; sourceTree = "<group>"; };
 		83F78A132B8E87BF00025062 /* FullKeyboardAccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullKeyboardAccessView.swift; sourceTree = "<group>"; };
@@ -1112,6 +1116,8 @@
 				832877F72CAEE80F00013B0B /* CameraSettings */,
 				832877F22CAEE78C00013B0B /* GeneralSettingsUI */,
 				832877E72CADA2CD00013B0B /* OnBoardingBundles */,
+				83F745BB2CC194F900FDB3BA /* AirDropSettings.xcstrings */,
+				835BF1302CC19A2300F30DA1 /* AirPlayAndHandoffSettings.xcstrings */,
 				832877DA2CAD915400013B0B /* AmbientSettings.xcstrings */,
 				832877DC2CAD95C300013B0B /* AppleAccountUI.xcstrings */,
 				83DB888E2CAC97BF008218E6 /* AppleID.xcstrings */,
@@ -1506,6 +1512,7 @@
 			files = (
 				832877F92CAEE91600013B0B /* SOS.xcstrings in Resources */,
 				83A3E68F2CAB9743006F4643 /* AccessibilityTitles.xcstrings in Resources */,
+				83F745BC2CC194F900FDB3BA /* AirDropSettings.xcstrings in Resources */,
 				832877E12CAD9A2C00013B0B /* BatteryUI.xcstrings in Resources */,
 				83F516B82C21B7FA0004E87A /* SettingsPhysical.gif in Resources */,
 				834565742CAAE673002BE49D /* CameraEditKit.xcstrings in Resources */,
@@ -1521,6 +1528,7 @@
 				83326C882CBEE8970034C0D8 /* Software Update.xcstrings in Resources */,
 				832877D92CAD8C7100013B0B /* Accessibility.xcstrings in Resources */,
 				832877ED2CAEE55B00013B0B /* General.xcstrings in Resources */,
+				835BF1312CC19A2300F30DA1 /* AirPlayAndHandoffSettings.xcstrings in Resources */,
 				833F0AD42B744D190036EAD2 /* Assets.xcassets in Resources */,
 				83A7E15A2CBF047B0037F1FB /* FontSettings.xcstrings in Resources */,
 				832877E62CAD9C6000013B0B /* Devices.xcstrings in Resources */,

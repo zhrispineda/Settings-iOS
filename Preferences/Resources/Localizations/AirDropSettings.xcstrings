@@ -1,0 +1,5655 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ""
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ""
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ""
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ""
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ""
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ""
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ""
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ""
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ""
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ""
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ""
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ""
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ""
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ""
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ""
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ""
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ""
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ""
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ""
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ""
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ""
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ""
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ""
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ""
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ""
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ""
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ""
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ""
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ""
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ""
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ""
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ""
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ""
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ""
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ""
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ""
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ""
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ""
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ""
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ""
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ""
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ""
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ""
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": ""
+          }
+        }
+      }
+    },
+    "AirDrop Learn More Footer WLAN": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "‏AirDrop מאפשר לך לשתף פריטים באופן מיידי עם אנשים שנמצאים בסביבה. באפשרותך להפוך את המכשיר שלך לגלוי ב-AirDrop כדי לאפשר קבלת פריטים מכולם או רק מאנשי הקשר שלך. הפיכת המכשיר שלך לגלוי תפעיל את Bluetooth ואת תקשורת ה-WLAN. [פרטים נוספים…](⁨airDropSettingsOBK://⁩)"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop을 사용하여 근처에 있는 사람들과 즉시 공유할 수 있습니다. AirDrop에서 사용자를 발견할 수 있는 대상을 모든 사람으로 하거나 연락처에 있는 사람만으로 설정할 수 있습니다. 사용자를 찾을 수 있도록 하면 Bluetooth 및 WLAN이 켜집니다. [더 알⁠아⁠보⁠기…](airDropSettingsOBK://)"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop memungkinkan Anda berbagi langsung dengan orang di sekitar. Anda dapat ditemukan di AirDrop untuk menerima dari semua orang atau hanya orang di kontak Anda. Membuat diri Anda dapat ditemukan akan menyalakan Bluetooth dan WLAN. [Lebih Lanjut…](airDropSettingsOBK://)"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Via AirDrop kun je bestanden delen met anderen bij jou in de buurt. Je kunt jezelf in AirDrop detecteerbaar maken voor iedereen of alleen voor personen in Contacten. Als je jezelf detecteerbaar maakt, worden Bluetooth en WLAN ingeschakeld. [Meer informatie…](airDropSettingsOBK://)"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop, yakınınızdaki kişilerle anında paylaşmanızı sağlar. Herkesten veya yalnızca Kişiler’inizdeki kişilerden alabilmek için AirDrop’ta bulunabilir olabilirsiniz. Kendinizi bulunabilir yaptığınızda Bluetooth ve WLAN açılacaktır. [Daha Fazla Bilgi…](airDropSettingsOBK://)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop позволяет мгновенно делиться контентом с пользователями, находящимися рядом. Вы можете разрешить свое обнаружение в AirDrop и получать контент от любых пользователей или только от своих контактов. При включении обнаружения также будут включены Bluetooth и WLAN. [Подробнее…](airDropSettingsOBK://)"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDropin avulla jaat välittömästi lähellä olevien kanssa. Voit olla löydettävissä AirDropissa siten, että voit vastaanottaa kaikilta tai vain yhteystiedoiltasi. Jos asetat itsesi löydettäväksi, Bluetooth ja WLAN laitetaan päälle. [Lisätietoja…](airDropSettingsOBK://)"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Az AirDroppal egyszerűen megoszthat fájlokat a közelben lévőkkel. Felfedezhetővé teheti önmagát az AirDropban, és eldöntheti, hogy mindenkitől szeretne-e fogadni fájlokat, vagy csak a Kontaktokban szereplő személyekről. Ha felfedezhetővé teszi önmagát, azzal bekapcsolja a Bluetootht és a WLAN‑t. [Bővebben…](airDropSettingsOBK://)"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop ti consente di condividere contenuti all’istante con altre persone nelle vicinanze. Puoi renderti visibile con AirDrop e ricevere file da tutti o solo dai tuoi contatti. Rendendoti visibile, attiverai sia il Bluetooth, sia la rete WLAN. [Scopri di più…](airDropSettingsOBK://)"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop te permite compartir contenido al instante con personas que están cerca. Puedes hacerte visible para recibir elementos de cualquier persona o sólo de tus contactos. Al hacerlo, se activarán las conexiones Bluetooth y WLAN. [Obtén detalles…](airDropSettingsOBK://)"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το AirDrop σάς επιτρέπει να μοιράζεστε στοιχεία άμεσα με άτομα που βρίσκονται κοντά σας. Μπορείτε να κάνετε τη συσκευή σας ανακαλύψιμη στο AirDrop για να λαμβάνετε στοιχεία από όλα τα άτομα ή μόνο από άτομα που περιλαμβάνονται στις επαφές σας. Αν επιλέξετε να γίνει ανακαλύψιμη η συσκευή σας, θα ενεργοποιηθεί το Bluetooth και το WLAN. [Μάθετε περισσότερα…](airDropSettingsOBK://)"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’AirDrop et permet compartir continguts de manera instantània amb les persones que tinguis a prop. Pots fer que tothom pugui detectar‑te a l’AirDrop i enviar‑te ítems, o bé només qui tinguis als contactes. Si permets que se’t pugui detectar, s’activaran el Bluetooth i la WLAN. [Més informació…](airDropSettingsOBK://)"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يتيح لك الإرسال السريع المشاركة الفورية مع الأشخاص القريبين منك. يمكنك جعل جهازك قابلًا للاكتشاف في الإرسال السريع للاستلام من الجميع، أو فقط من الأشخاص الموجودين في جهات الاتصال لديك. عندما تجعل نفسك قابلًا للاكتشاف، سيؤدي ذلك إلى تشغيل Bluetooth و WLAN. [معرفة المزيد…](airDropSettingsOBK://)"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop能讓你快速與附近的人共享內容。你可以在AirDrop中接收所有人或只有聯絡人傳來的檔案。將你自己設為可被偵測的狀態，將會開啟藍牙和WLAN。[更多內容⋯](airDropSettingsOBK://)"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop讓你可以與附近的人即時共享。你可以在AirDrop中接收所有人或只有聯絡人傳來的檔案。開啟藍牙及WLAN會令自己處於可被偵測的狀態。[進一步了解⋯](airDropSettingsOBK://)"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Med AirDrop kan du dela ögonblickligen med andra i närheten. Du kan vara upptäckbar i AirDrop så att du kan ta emot från alla eller bara från dina kontakter. Om du gör dig upptäckbar aktiveras Bluetooth och WLAN. [Läs mer…](airDropSettingsOBK://)"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bruk AirDrop til å dele filer direkte med personer i nærheten. Du kan velge å være synlig for alle i AirDrop eller kun for personer i kontaktlisten din Hvis du gjør deg selv synlig, slås Bluetooth og WLAN på. [Finn ut mer…](airDropSettingsOBK://)"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop की मदद से आप आस-पास के लोगों के साथ तुरंत शेयर कर सकते हैं। आप AirDrop द्वारा प्राप्त करने के लिए हर किसी के द्वारा या केवल अपनी संपर्क सूची में शामिल लोगों के द्वारा ही खोजे जा सकते हैं। अपने आपको खोजे जाने का विकल्प चुनने पर Bluetooth और WLAN चालू हो जाएगा। [अधिक जानें…](airDropSettingsOBK://)"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Med AirDrop kan du hurtigt dele med andre i nærheden. Du kan være synlig i AirDrop for at modtage fra alle eller kun fra personer i dine kontakter. Bluetooth og WLAN bliver slået til, når du er synlig. [Læs mere…](airDropSettingsOBK://)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop lets you share instantly with people nearby. You can be discoverable in AirDrop to receive from everyone or only people in your contacts. Making yourself discoverable will turn on Bluetooth and WLAN. [Learn More…](airDropSettingsOBK://)"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop umożliwia natychmiastowe udostępnianie rzeczy osobom znajdującym się w pobliżu. Twoje urządzenie może być wykrywalne przez AirDrop, co pozwoli odbierać pliki od wszystkich lub tylko od Twoich kontaktów. Włączenie wykrywalności spowoduje włączenie Bluetooth i WLAN. [Więcej informacji…](airDropSettingsOBK://)"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop vous permet de partager des données instantanément avec des personnes à proximité. Vous pouvez autoriser tout le monde ou seulement vos contacts à vous détecter dans AirDrop. Le fait d’autoriser d’autres personnes à vous détecter activera Bluetooth et le réseau WLAN. [En savoir plus…](airDropSettingsOBK://)"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop ช่วยให้คุณแชร์กับผู้คนที่อยู่ใกล้เคียงได้ทันที คุณสามารถกำหนดให้ทุกคนมองเห็นคุณและคุณสามารถรับข้อมูลได้ใน AirDrop หรือเฉพาะผู้คนในรายชื่อของคุณเท่านั้น การกำหนดให้มองเห็นคุณได้จะเปิดบลูทูธและ WLAN [เรียนรู้เพิ่มเติม…](airDropSettingsOBK://)"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "隔空投送可让你与附近的用户立即共享。你可以设置在隔空投送中可被发现，以接收所有人或通讯录联系人发来的文件。使自己可被发现将会打开蓝牙和无线局域网。[进一步了解…](airDropSettingsOBK://)"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop lets you share instantly with people nearby. You can be discoverable in AirDrop to receive from everyone or only people in your contacts. Making yourself discoverable will turn on Bluetooth and WLAN. [Learn more…](airDropSettingsOBK://)"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„AirDrop“ leidžia akimirksniu bendrinti turinį su netoliese esančiais žmonėmis. Galite leisti „AirDrop“ paslaugai jus aptikti, kad gautumėte duomenis iš visų asmenų arba tik iš adresatų. [Sužinokite daugiau…](airDropSettingsOBK://)"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop te permite compartir contenido al instante con personas que están cerca. Puedes hacerte visible para recibir elementos de cualquier persona o sólo de tus contactos. Al hacerlo, se activarán las conexiones Bluetooth y WLAN. [Obtén detalles…](airDropSettingsOBK://)"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop vám umožňuje okamžitě sdílet data s lidmi ve vašem okolí. Chcete‑li přijímat data ode všech lidí nebo jen od svých kontaktů, můžete se nastavit jako viditelní přes AirDrop. Pokud to uděláte, zapne se Bluetooth a WLAN. [Další informace…](airDropSettingsOBK://)"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop membolehkan anda berkongsi serta-merta dengan orang berdekatan. Anda boleh ditemui dalam AirDrop untuk menerima daripada semua orang atau hanya orang dalam kenalan anda. Menjadikan diri anda boleh ditemui akan mengaktifkan Bluetooth dan WLAN. [Ketahui Lebih Lanjut…](airDropSettingsOBK://)"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop vám umožňuje okamžité zdieľanie s osobami vo vašej blízkosti. Ak chcete prijímať dáta od všetkých alebo len od ľudí to svojich kontaktov, môžete sa nastaviť ako viditeľní pre AirDrop. Ak sa nastavíte ako viditeľní, zapne sa Bluetooth a WLAN. [Viac informácií…](airDropSettingsOBK://)"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop ви позволява да споделяте незабавно с хората около вас. Можете да бъдете открити и да получавате чрез AirDrop от всички или само от хора от вашите контакти. Ако разрешите откриването, Bluetooth и WLAN ще се включат. [Научете повече…](airDropSettingsOBK://)"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop vam omogoča takojšnje deljenje z osebami v bližini. V funkciji AirDrop ste lahko vidni za prejem od kogarkoli ali samo od svojih stikov. Če omogočite vidnost, se bo vklopila povezava Bluetooth ali povezava z omrežjem WLAN. [Več o tem …](airDropSettingsOBK://)"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop lets you share instantly with people nearby. You can be discoverable in AirDrop to receive from everyone or only people in your contacts. Making yourself discoverable will turn on Bluetooth and WLAN. [Learn more…](airDropSettingsOBK://)"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mit AirDrop kannst du Daten sofort mit anderen in der Nähe teilen. Du kannst für den Empfang von Daten in AirDrop für alle oder nur für deine Kontakte sichtbar sein. Wenn du dich sichtbar machst, werden Bluetooth und WLAN aktiviert. [Weitere Infos …](airDropSettingsOBK://)"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop cho phép bạn chia sẻ tức thời với những người ở gần. Bạn có thể đặt trạng thái có thể tìm thấy trong AirDrop để nhận dữ liệu từ mọi người hoặc chỉ những người trong danh bạ của bạn. Đặt thiết bị của bạn thành có thể tìm thấy sẽ bật Bluetooth và WLAN. [Tìm hiểu thêm…](airDropSettingsOBK://)"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop vă permite să partajați instantaneu cu persoanele din apropiere. Vă puteți face dispozitivul detectabil prin AirDrop pentru a primi fișiere de la oricine sau doar de la contactele dvs. Dacă faceți dispozitivul detectabil, vor fi activate conexiunile Bluetooth și WLAN. [Mai multe…](airDropSettingsOBK://)"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop дає змогу миттєво надсилати різноманітний вміст користувачам поблизу. Можна зробити себе виявним в AirDrop, щоб отримувати матеріали від усіх чи лише від людей зі свого списку контактів. Перехід у виявний стан увімкне Bluetooth і WLAN. [Докладніше…](airDropSettingsOBK://)"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop функциясы қасыңыздағы адамдармен файлдарды жылдам бөлісуге мүмкіндік береді. AirDrop ішінде өзіңізді анықтау мүмкіндігін қосып, әркімнен немесе контактілеріңіздегі адамдардан ғана файлдар алуыңызға болады. Анықтау мүмкіндігін қоссаңыз, Bluetooth және WLAN функциялары да қосылады. [Толығырақ…](airDropSettingsOBK://)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop vous permet de partager instantanément des éléments avec des utilisateurs à proximité. Vous pouvez vous rendre détectable dans AirDrop pour recevoir des éléments de tous les utilisateurs ou de vos contacts uniquement. Si vous vous rendez détectable, le Bluetooth et le WLAN seront activés. [En savoir plus…](airDropSettingsOBK://)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop te permite compartir contenido al instante con personas que estén cerca. Para recibir archivos, puedes elegir ser visible para todo el mundo o solo para tus contactos. En ambos casos, se activará la función Bluetooth y la red WLAN. [Más información…](airDropSettingsOBK://)"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O AirDrop permite compartilhar itens instantaneamente com pessoas por perto. Você pode ficar visível no AirDrop para receber itens de qualquer pessoa ou somente dos seus contatos. Para isso, o Bluetooth e a rede WLAN serão ativados. [Saiba Mais…](airDropSettingsOBK://)"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDropで近くの人とすぐにデータを共有できます。AirDropで検出可能にして、すべての人から、または“連絡先”に登録済みの人のみから受信可能にできます。このデバイスを検出可能にすると、BluetoothとWLANがオンになります。[詳しい情報…](airDropSettingsOBK://)"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O AirDrop permite‑lhe partilhar de imediato com quem se encontra à sua volta. Pode optar por estar visível no AirDrop para poder receber ficheiros de qualquer pessoa ou só dos seus contactos. Se optar por estar visível, Bluetooth e WLAN serão ativados. [Saiba mais…](airDropSettingsOBK://)"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop vam omogućava neposredno dijeljenje s osobama u blizini. Možete podesiti da vas mogu pronaći u AirDropu kako biste primali sadržaje od svih ili samo od osoba u vašim kontaktima. Ako podesite da vas se može pronaći, uključit će se Bluetooth i WLAN. [Saznajte više…](airDropSettingsOBK://)"
+          }
+        }
+      }
+    },
+    "AirDrop Learn More Footer WIFI": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "‏AirDrop מאפשר לך לשתף פריטים באופן מיידי עם אנשים שנמצאים בסביבה. באפשרותך להפוך את המכשיר שלך לגלוי ב-AirDrop כדי לאפשר קבלת פריטים מכולם או רק מאנשי קשר שלך. [פרטים נוספים…](⁨airDropSettingsOBK://⁩)"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop을 사용하여 근처에 있는 사람들과 즉시 공유할 수 있습니다. AirDrop에서 사용자를 발견할 수 있는 대상을 모든 사람으로 하거나 연락처에 있는 사람만으로 설정할 수 있습니다. [더 알⁠아⁠보⁠기…](airDropSettingsOBK://)"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop memungkinkan Anda berbagi langsung dengan orang di sekitar. Anda dapat ditemukan di AirDrop untuk menerima dari semua orang atau hanya orang di kontak Anda. [Lebih Lanjut…](airDropSettingsOBK://)"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Via AirDrop kun je bestanden delen met anderen bij jou in de buurt. Je kunt jezelf in AirDrop detecteerbaar maken voor iedereen of alleen voor personen in Contacten. [Meer informatie…](airDropSettingsOBK://)"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop, yakınınızdaki kişilerle anında paylaşmanızı sağlar. Herkesten veya yalnızca Kişiler’inizdeki kişilerden alabilmek için AirDrop’ta bulunabilir olabilirsiniz. [Daha Fazla Bilgi…](airDropSettingsOBK://)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop позволяет мгновенно делиться контентом с пользователями, находящимися рядом. Вы можете разрешить свое обнаружение в AirDrop и получать контент от любых пользователей или только от своих контактов. [Подробнее…](airDropSettingsOBK://)"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDropin avulla jaat välittömästi lähellä olevien kanssa. Voit olla löydettävissä AirDropissa siten, että voit vastaanottaa kaikilta tai vain yhteystiedoiltasi. [Lisätietoja…](airDropSettingsOBK://)"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Az AirDroppal egyszerűen megoszthat fájlokat a közelben lévőkkel. Felfedezhetővé teheti önmagát az AirDropban, és eldöntheti, hogy mindenkitől szeretne-e fogadni fájlokat, vagy csak a Kontaktokban szereplő személyekről. [Bővebben…](airDropSettingsOBK://)"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop ti consente di condividere contenuti all’istante con altre persone nelle vicinanze. Puoi renderti visibile con AirDrop e ricevere file da tutti o solo dai tuoi contatti. [Scopri di più…](airDropSettingsOBK://)"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop te permite compartir contenido al instante con personas que están cerca. Puedes hacerte visible para recibir elementos de cualquier persona o sólo de tus contactos. [Obtén detalles…](airDropSettingsOBK://)"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το AirDrop σάς επιτρέπει να μοιράζεστε στοιχεία άμεσα με άτομα που βρίσκονται κοντά σας. Μπορείτε να κάνετε τη συσκευή σας ανακαλύψιμη στο AirDrop για να λαμβάνετε στοιχεία από όλα τα άτομα ή μόνο από άτομα που περιλαμβάνονται στις επαφές σας. [Μάθετε περισσότερα…](airDropSettingsOBK://)"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’AirDrop et permet compartir continguts de manera instantània amb les persones que tinguis a prop. Pots fer que tothom pugui detectar‑te a l’AirDrop i enviar‑te ítems, o bé només qui tinguis als contactes. [Més informació…](airDropSettingsOBK://)"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يتيح لك الإرسال السريع المشاركة الفورية مع الأشخاص القريبين منك. يمكنك جعل جهازك قابلًا للاكتشاف في الإرسال السريع للاستلام من الجميع، أو فقط من الأشخاص الموجودين في جهات الاتصال لديك. [معرفة المزيد…](airDropSettingsOBK://)"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop能讓你快速與附近的人共享內容。你可以在AirDrop中接收所有人或只有聯絡人傳來的檔案。[更多內容⋯](airDropSettingsOBK://)"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop讓你可以與附近的人即時共享。你可以在AirDrop中接收所有人或只有聯絡人傳來的檔案。[進一步了解⋯](airDropSettingsOBK://)"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Med AirDrop kan du dela ögonblickligen med andra i närheten. Du kan vara upptäckbar i AirDrop så att du kan ta emot från alla eller bara från dina kontakter. [Läs mer…](airDropSettingsOBK://)"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bruk AirDrop til å dele filer direkte med personer i nærheten. Du kan velge å være synlig for alle i AirDrop eller kun for personer i kontaktlisten din. [Finn ut mer…](airDropSettingsOBK://)"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop की मदद से आप आस-पास के लोगों के साथ तुरंत शेयर कर सकते हैं। आप AirDrop द्वारा प्राप्त करने के लिए हर किसी के द्वारा या केवल अपनी संपर्क सूची में शामिल लोगों के द्वारा ही खोजे जा सकते हैं। [अधिक जानें…](airDropSettingsOBK://)"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Med AirDrop kan du hurtigt dele med andre i nærheden. Du kan være synlig i AirDrop for at modtage fra alle eller kun fra personer i dine kontakter. [Læs mere…](airDropSettingsOBK://)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop lets you share instantly with people nearby. You can be discoverable in AirDrop to receive from everyone or only people in your contacts. [Learn More…](airDropSettingsOBK://)"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop umożliwia natychmiastowe udostępnianie rzeczy osobom znajdującym się w pobliżu. Twoje urządzenie może być wykrywalne przez AirDrop, co pozwoli odbierać pliki od wszystkich lub tylko od Twoich kontaktów. [Więcej informacji…](airDropSettingsOBK://)"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop vous permet de partager des données instantanément avec des personnes à proximité. Vous pouvez autoriser tout le monde ou seulement vos contacts à vous détecter dans AirDrop. [En savoir plus…](airDropSettingsOBK://)"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop ช่วยให้คุณแชร์กับผู้คนที่อยู่ใกล้เคียงได้ทันที คุณสามารถกำหนดให้ทุกคนมองเห็นคุณและคุณสามารถรับข้อมูลได้ใน AirDrop หรือเฉพาะผู้คนในรายชื่อของคุณเท่านั้น [เรียนรู้เพิ่มเติม…](airDropSettingsOBK://)"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "隔空投送可让你与附近的用户立即共享。你可以设置在隔空投送中可被发现，以接收所有人或通讯录联系人发来的文件。[进一步了解…](airDropSettingsOBK://)"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop lets you share instantly with people nearby. You can be discoverable in AirDrop to receive from everyone or only people in your contacts. [Learn more…](airDropSettingsOBK://)"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„AirDrop“ leidžia akimirksniu bendrinti turinį su netoliese esančiais žmonėmis. Galite leisti „AirDrop“ paslaugai jus aptikti, kad gautumėte duomenis iš visų asmenų arba tik iš adresatų. [Sužinokite daugiau…](airDropSettingsOBK://)"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop te permite compartir contenido al instante con personas que están cerca. Puedes hacerte visible para recibir elementos de cualquier persona o sólo de tus contactos. [Obtén detalles…](airDropSettingsOBK://)"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop vám umožňuje okamžitě sdílet data s lidmi ve vašem okolí. Chcete‑li přijímat data ode všech lidí nebo jen od svých kontaktů, můžete se nastavit jako viditelní přes AirDrop. [Další informace…](airDropSettingsOBK://)"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop membolehkan anda berkongsi serta-merta dengan orang berdekatan. Anda boleh ditemui dalam AirDrop untuk menerima daripada semua orang atau hanya orang dalam kenalan anda. [Ketahui Lebih Lanjut…](airDropSettingsOBK://)"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop vám umožňuje okamžité zdieľanie s osobami vo vašej blízkosti. Ak chcete prijímať dáta od všetkých alebo len od ľudí zo svojich kontaktov, môžete sa nastaviť ako viditeľní pre AirDrop. [Viac informácií…](airDropSettingsOBK://)"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop ви позволява да споделяте незабавно с хората около вас. Можете да бъдете открити и да получавате чрез AirDrop от всички или само от хора от вашите контакти. [Научете повече…](airDropSettingsOBK://)"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop vam omogoča takojšnje deljenje z osebami v bližini. V funkciji AirDrop ste lahko vidni za prejemanje od kogarkoli ali samo od svojih stikov. [Več o tem …](airDropSettingsOBK://)"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop lets you share instantly with people nearby. You can be discoverable in AirDrop to receive from everyone or only people in your contacts. [Learn more…](airDropSettingsOBK://)"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mit AirDrop kannst du Daten sofort mit anderen in der Nähe teilen. Du kannst für den Empfang von Daten in AirDrop für alle oder nur für deine Kontakte sichtbar sein. [Weitere Infos …](airDropSettingsOBK://)"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop cho phép bạn chia sẻ tức thời với những người ở gần. Bạn có thể đặt trạng thái có thể tìm thấy trong AirDrop để nhận dữ liệu từ mọi người hoặc chỉ những người trong danh bạ của bạn. [Tìm hiểu thêm…](airDropSettingsOBK://)"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop vă permite să partajați instantaneu cu persoanele din apropiere. Vă puteți face dispozitivul detectabil prin AirDrop pentru a primi fișiere de la oricine sau doar de la contactele dvs. [Mai multe…](airDropSettingsOBK://)"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop дає змогу миттєво надсилати різноманітний вміст користувачам поблизу. Можна зробити себе виявним в AirDrop, щоб отримувати матеріали від усіх чи лише від людей зі свого списку контактів. [Докладніше…](airDropSettingsOBK://)"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop функциясы қасыңыздағы адамдармен файлдарды жылдам бөлісуге мүмкіндік береді. AirDrop ішінде өзіңізді анықтау мүмкіндігін қосып, әркімнен немесе контактілеріңіздегі адамдардан ғана файлдар алуыңызға болады. [Толығырақ…](airDropSettingsOBK://)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop vous permet de partager instantanément des éléments avec des utilisateurs à proximité. Vous pouvez vous rendre détectable dans AirDrop pour recevoir des éléments de tous les utilisateurs ou de vos contacts uniquement. [En savoir plus…](airDropSettingsOBK://)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop te permite compartir contenido al instante con personas que estén cerca. Para recibir archivos, puedes elegir ser visible para todo el mundo o solo para tus contactos. [Más información…](airDropSettingsOBK://)"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O AirDrop permite compartilhar itens instantaneamente com pessoas por perto. Você pode ficar visível no AirDrop para receber itens de qualquer pessoa ou apenas dos seus contatos. [Saiba Mais…](airDropSettingsOBK://)"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDropで近くの人とすぐにデータを共有できます。AirDropで検出可能にして、すべての人から、または“連絡先”に登録済みの人のみから受信可能にできます。[詳しい情報…](airDropSettingsOBK://)"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O AirDrop permite‑lhe partilhar de imediato com quem se encontra à sua volta. Pode optar por estar visível no AirDrop para poder receber ficheiros de qualquer pessoa ou só dos seus contactos. [Saiba mais…](airDropSettingsOBK://)"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop vam omogućava neposredno dijeljenje s osobama u blizini. Možete podesiti da vas mogu pronaći u AirDropu kako biste primali sadržaje od svih ili samo od osoba u vašim kontaktima. [Saznajte više…](airDropSettingsOBK://)"
+          }
+        }
+      }
+    },
+    "Toggle Use Cellular Data": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "מעבר בין מצבי ״שימוש בנתונים סלולריים״"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "셀룰러 데이터 사용 토글"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ubah Gunakan Data Seluler"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "'Gebruik mobiele data' aan/uit"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hücresel Veri’yi Kullan Seçeneğini Aç/Kapat"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Включить или выключить сотовые данные"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Käytä mobiilidataa päälle/pois"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mobiladat-forgalom használatának be- és kikapcsolása"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Attiva/disattiva “Utilizza dati cellulare”"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Activa o desactiva Usar datos celulares"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Εναλλαγή της Χρήσης κινητού δικτύου"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Activa o desactiva l’opció “Utilitza les dades mòbils”"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تبديل استخدام البيانات الخلوية"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "切換使用行動數據"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "切換使用流動數據"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Växla Använd mobildata"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Slå av eller på Bruk mobildata"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“मोबाइल डेटा का उपयोग करें” टॉगल करें"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Slå Brug mobildata til/fra"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toggle Use Cellular Data"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Przełącz Używaj danych komórkowych"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Activer/désactiver « Utiliser les données cellulaires »"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "สลับระหว่างใช้หรือไม่ใช้ข้อมูลเซลลูลาร์"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "切换使用蜂窝数据"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toggle Use Mobile Data"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Perjungti parinktį „Naudoti mobiliojo ryšio duomenis“"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Activa o desactiva Usar datos celulares"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Přepnout volbu Používat mobilní data"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Togol Gunakan Data Selular"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prepnúť možnosť Použiť mobilné dáta"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Превключи използване на мобилни данни"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Preklopi možnost Uporabi mobilne podatke"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toggle Use Mobile Data"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mobile Daten verwenden ein/aus"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chuyển đổi Sử dụng dữ liệu di động"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comutare “Utilizare date celulare”"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Перемкнути використання стільникових даних"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ұялы деректерді пайдалануды қосу/өшіру"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Activer/désactiver « Utiliser les données cellulaires »"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Activar/desactivar “Usar datos móviles”"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ativar/Desativar Uso de Dados Celulares"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“モバイルデータ通信を使用”を切り替える"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ativar/desativar Usar dados móveis"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prebaci uporabu mobilnih podataka"
+          }
+        }
+      }
+    },
+    "AirDrop": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "‏AirDrop"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الإرسال السريع"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "隔空投送"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop"
+          }
+        }
+      }
+    },
+    "AirDrop Learn More Footer EDU WIFI": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "‏AirDrop מאפשר לך לשתף פריטים באופן מיידי עם אנשים שנמצאים בסביבה. באפשרותך להפוך את המכשיר שלך לגלוי ב-AirDrop כדי לאפשר קבלת פריטים מכולם. [פרטים נוספים…](airDropSettingsOBK://)"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop을 사용하여 근처에 있는 사람들과 즉시 공유할 수 있습니다. AirDrop에서 사용자를 발견할 수 있는 대상을 모든 사람으로 설정할 수 있습니다. [더 알⁠아⁠보⁠기…](airDropSettingsOBK://)"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop memungkinkan Anda berbagi langsung dengan orang di sekitar. Anda dapat ditemukan di AirDrop untuk menerima dari semua orang. [Lebih Lanjut…](airDropSettingsOBK://)"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Via AirDrop kun je bestanden delen met anderen bij jou in de buurt. Je kunt jezelf in AirDrop detecteerbaar maken voor iedereen. [Meer informatie…](airDropSettingsOBK://)"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop, yakınınızdaki kişilerle anında paylaşmanızı sağlar. Herkesten alabilmek için AirDrop’ta bulunabilir olabilirsiniz. [Daha Fazla Bilgi…](airDropSettingsOBK://)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop позволяет мгновенно делиться контентом с пользователями, находящимися рядом. Вы можете разрешить свое обнаружение в AirDrop и получать контент от любых пользователей. [Подробнее…](airDropSettingsOBK://)"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDropin avulla jaat välittömästi lähellä olevien kanssa. Voit olla löydettävissä AirDropissa siten, että voit vastaanottaa kaikilta. [Lisätietoja…](airDropSettingsOBK://)"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Az AirDroppal egyszerűen megoszthat fájlokat a közelben lévőkkel. Felfedezhetővé teheti önmagát az AirDropban, hogy bárkitől fogadhasson fájlokat. [Bővebben…](airDropSettingsOBK://)"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop ti consente di condividere contenuti all’istante con altre persone nelle vicinanze. Puoi renderti visibile con AirDrop e ricevere file da tutti. [Scopri di più…](airDropSettingsOBK://)"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop te permite compartir contenido al instante con personas que están cerca. Puedes hacerte visible para recibir elementos de cualquier persona. [Obtén detalles…](airDropSettingsOBK://)"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το AirDrop σάς επιτρέπει να μοιράζεστε στοιχεία άμεσα με άτομα που βρίσκονται κοντά σας. Μπορείτε να κάνετε τη συσκευή σας ανακαλύψιμη στο AirDrop για να λαμβάνετε στοιχεία από όλα τα άτομα. [Μάθετε περισσότερα…](airDropSettingsOBK://)"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’AirDrop et permet compartir continguts de manera instantània amb les persones que tinguis a prop. Pots fer que tothom pugui detectar‑te a l’AirDrop i enviar‑te ítems. [Més informació…](airDropSettingsOBK://)"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يتيح لك الإرسال السريع المشاركة الفورية مع الأشخاص القريبين منك. يمكنك جعل جهازك قابلًا للاكتشاف في الإرسال السريع للاستلام من الجميع. [معرفة المزيد…](airDropSettingsOBK://)"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop能讓你快速與附近的人共享內容。你可以在AirDrop中接收所有人傳來的檔案。[更多內容⋯](airDropSettingsOBK://)"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop讓你可以與附近的人即時共享。你可以在AirDrop中接收所有人傳來的檔案。[進一步了解⋯](airDropSettingsOBK://)"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Med AirDrop kan du dela ögonblickligen med andra i närheten. Du kan vara upptäckbar i AirDrop så att du kan ta emot från alla. [Läs mer…](airDropSettingsOBK://)"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bruk AirDrop til å dele filer direkte med personer i nærheten. Du kan velge å være synlig for alle i AirDrop. [Finn ut mer…](airDropSettingsOBK://)"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop की मदद से आप आस-पास के लोगों के साथ तुरंत शेयर कर सकते हैं। आप AirDrop द्वारा प्राप्त करने के लिए हर किसी के द्वारा खोजे जा सकते हैं। [अधिक जानें…](airDropSettingsOBK://)"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Med AirDrop kan du hurtigt dele med andre i nærheden. Du kan være synlig i AirDrop for at modtage fra alle. [Læs mere…](airDropSettingsOBK://)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop lets you share instantly with people nearby. You can be discoverable in AirDrop to receive from everyone. [Learn More…](airDropSettingsOBK://)"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop umożliwia natychmiastowe udostępnianie rzeczy osobom znajdującym się w pobliżu. Twoje urządzenie może być wykrywalne przez AirDrop, co pozwoli odbierać pliki od wszystkich. [Więcej informacji…](airDropSettingsOBK://)"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop vous permet de partager des données instantanément avec des personnes à proximité. Vous pouvez autoriser tout le monde à vous détecter dans AirDrop. [En savoir plus…](airDropSettingsOBK://)"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop ช่วยให้คุณแชร์กับผู้คนที่อยู่ใกล้เคียงได้ทันที คุณสามารถกำหนดให้ทุกคนมองเห็นคุณและคุณสามารถรับข้อมูลได้ใน AirDrop [เรียนรู้เพิ่มเติม…](airDropSettingsOBK://)"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "隔空投送可让你与附近的用户立即共享。你可以设置在隔空投送中可被发现，以接收所有人发来的文件。[进一步了解…](airDropSettingsOBK://)"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop lets you share instantly with people nearby. You can be discoverable in AirDrop to receive from everyone. [Learn more…](airDropSettingsOBK://)"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„AirDrop“ leidžia akimirksniu bendrinti turinį su netoliese esančiais žmonėmis. Galite leisti „AirDrop“ paslaugai jus aptikti, kad gautumėte duomenis iš visų asmenų. [Sužinokite daugiau…](airDropSettingsOBK://)"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop te permite compartir contenido al instante con personas que están cerca. Puedes hacerte visible para recibir elementos de cualquier persona. [Obtén detalles…](airDropSettingsOBK://)"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop vám umožňuje okamžitě sdílet data s lidmi ve vašem okolí. Chcete‑li přijímat data ode všech lidí, můžete se nastavit jako viditelní přes AirDrop. [Další informace…](airDropSettingsOBK://)"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop membolehkan anda berkongsi serta-merta dengan orang berdekatan. Anda boleh ditemui dalam AirDrop untuk menerima daripada semua orang. [Ketahui Lebih Lanjut…](airDropSettingsOBK://)"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop vám umožňuje okamžité zdieľanie s osobami vo vašej blízkosti. Ak chcete prijímať dáta od všetkých, môžete sa nastaviť ako viditeľní pre AirDrop. [Viac informácií…](airDropSettingsOBK://)"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop ви позволява да споделяте незабавно с хората около вас. Можете да бъдете открити и да получавате чрез AirDrop от всички. [Научете повече…](airDropSettingsOBK://)"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop vam omogoča takojšnje deljenje z osebami v bližini. V funkciji AirDrop ste lahko vidni za prejemanje od kogarkoli. [Več o tem …](airDropSettingsOBK://)"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop lets you share instantly with people nearby. You can be discoverable in AirDrop to receive from everyone. [Learn more…](airDropSettingsOBK://)"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mit AirDrop kannst du Daten sofort mit anderen in der Nähe teilen. Du kannst für den Empfang von Daten in AirDrop für alle sichtbar sein. [Weitere Infos …](airDropSettingsOBK://)"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop cho phép bạn chia sẻ tức thời với những người ở gần. Bạn có thể đặt trạng thái có thể tìm thấy trong AirDrop để nhận dữ liệu từ mọi người. [Tìm hiểu thêm…](airDropSettingsOBK://)"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop vă permite să partajați instantaneu cu persoanele din apropiere. Vă puteți face dispozitivul detectabil prin AirDrop pentru a primi fișiere de la oricine. [Mai multe…](airDropSettingsOBK://)"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop дає змогу миттєво надсилати різноманітний вміст користувачам поблизу. Можна зробити себе виявним в AirDrop, щоб отримувати матеріали від усіх. [Докладніше…](airDropSettingsOBK://)"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop функциясы қасыңыздағы адамдармен файлдарды жылдам бөлісуге мүмкіндік береді. AirDrop ішінде өзіңізді анықтау мүмкіндігін қосып, әркімнен файлдар алуыңызға болады. [Толығырақ…](airDropSettingsOBK://)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop vous permet de partager instantanément des éléments avec des utilisateurs à proximité. Vous pouvez vous rendre détectable dans AirDrop pour recevoir des éléments de la part de tous les utilisateurs. [En savoir plus…](airDropSettingsOBK://)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop te permite compartir contenido al instante con personas que estén cerca. Para recibir archivos, puedes elegir ser visible para todo el mundo. [Más información…](airDropSettingsOBK://)"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O AirDrop permite compartilhar itens instantaneamente com pessoas por perto. Você pode ficar visível no AirDrop para receber itens de qualquer pessoa. [Saiba Mais…](airDropSettingsOBK://)"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDropで近くの人とすぐにデータを共有できます。AirDropで検出可能にして、すべての人から受信可能にできます。[詳しい情報…](airDropSettingsOBK://)"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O AirDrop permite‑lhe partilhar de imediato com quem se encontra à sua volta. Pode optar por estar visível no AirDrop para poder receber ficheiros de qualquer pessoa. [Saiba mais…](airDropSettingsOBK://)"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop vam omogućava neposredno dijeljenje s osobama u blizini. Možete podesiti da vas mogu pronaći u AirDropu kako biste primali sadržaje od svih. [Saznajte više…](airDropSettingsOBK://)"
+          }
+        }
+      }
+    },
+    "AirDrop Learn More Footer EDU WLAN": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "‏AirDrop מאפשר לך לשתף פריטים באופן מיידי עם אנשים שנמצאים בסביבה. באפשרותך להפוך את המכשיר שלך לגלוי ב-AirDrop כדי לאפשר קבלת פריטים מכולם. הפיכת המכשיר שלך לגלוי תפעיל את Bluetooth ואת תקשורת ה-WLAN. [פרטים נוספים…](⁨airDropSettingsOBK://⁩)"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop을 사용하여 근처에 있는 사람들과 즉시 공유할 수 있습니다. AirDrop에서 사용자를 발견할 수 있는 대상을 모든 사람으로 설정할 수 있습니다. 사용자를 찾을 수 있도록 하면 Bluetooth 및 WLAN이 켜집니다. [더 알⁠아⁠보⁠기…](airDropSettingsOBK://)"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop memungkinkan Anda berbagi langsung dengan orang di sekitar. Anda dapat ditemukan di AirDrop untuk menerima dari semua orang. Membuat diri Anda dapat ditemukan akan menyalakan Bluetooth dan WLAN. [Lebih Lanjut…](airDropSettingsOBK://)"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Via AirDrop kun je bestanden delen met anderen bij jou in de buurt. Je kunt jezelf in AirDrop detecteerbaar maken voor iedereen. Als je jezelf detecteerbaar maakt, worden Bluetooth en WLAN ingeschakeld. [Meer informatie…](airDropSettingsOBK://)"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop, yakınınızdaki kişilerle anında paylaşmanızı sağlar. Herkesten alabilmek için AirDrop’ta bulunabilir olabilirsiniz. Kendinizi bulunabilir yaptığınızda Bluetooth ve WLAN açılacaktır. [Daha Fazla Bilgi…](airDropSettingsOBK://)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop позволяет мгновенно делиться контентом с пользователями, находящимися рядом. Вы можете разрешить свое обнаружение в AirDrop и получать контент от любых пользователей. При включении обнаружения также будут включены Bluetooth и WLAN. [Подробнее…](airDropSettingsOBK://)"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDropin avulla jaat välittömästi lähellä olevien kanssa. Voit olla löydettävissä AirDropissa siten, että voit vastaanottaa kaikilta. Jos asetat itsesi löydettäväksi, Bluetooth ja WLAN laitetaan päälle. [Lisätietoja…](airDropSettingsOBK://)"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Az AirDroppal egyszerűen megoszthat fájlokat a közelben lévőkkel. Felfedezhetővé teheti önmagát az AirDropban, hogy bárkitől fogadhasson fájlokat. Ha felfedezhetővé teszi önmagát, azzal bekapcsolja a Bluetootht és a WLAN‑t. [Bővebben…](airDropSettingsOBK://)"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop ti consente di condividere contenuti all’istante con altre persone nelle vicinanze. Puoi renderti visibile con AirDrop e ricevere file da tutti. Rendendoti visibile, attiverai sia il Bluetooth, sia la rete WLAN. [Scopri di più…](airDropSettingsOBK://)"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop te permite compartir contenido al instante con personas que están cerca. Puedes hacerte visible para recibir elementos de cualquier persona. Al hacerlo, se activarán las conexiones Bluetooth y WLAN. [Obtén detalles…](airDropSettingsOBK://)"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το AirDrop σάς επιτρέπει να μοιράζεστε στοιχεία άμεσα με άτομα που βρίσκονται κοντά σας. Μπορείτε να κάνετε τη συσκευή σας ανακαλύψιμη στο AirDrop για να λαμβάνετε στοιχεία από όλα τα άτομα. Αν επιλέξετε να γίνει ανακαλύψιμη η συσκευή σας, θα ενεργοποιηθεί το Bluetooth και το WLAN. [Μάθετε περισσότερα…](airDropSettingsOBK://)"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’AirDrop et permet compartir continguts de manera instantània amb les persones que tinguis a prop. Pots fer que tothom pugui detectar‑te a l’AirDrop i enviar‑te ítems. Si permets que se’t pugui detectar, s’activaran el Bluetooth i la WLAN. [Més informació…](airDropSettingsOBK://)"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يتيح لك الإرسال السريع المشاركة الفورية مع الأشخاص القريبين منك. يمكنك جعل جهازك قابلًا للاكتشاف في الإرسال السريع للاستلام من الجميع. عندما تجعل نفسك قابلًا للاكتشاف، سيؤدي ذلك إلى تشغيل Bluetooth و WLAN. [معرفة المزيد…](airDropSettingsOBK://)"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop能讓你快速與附近的人共享內容。你可以在AirDrop中接收所有人傳來的檔案。將你自己設為可被偵測的狀態，將會開啟藍牙和WLAN。[更多內容⋯](airDropSettingsOBK://)"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop讓你可以與附近的人即時共享。你可以在AirDrop中接收所有人傳來的檔案。開啟藍牙及WLAN會令自己處於可被偵測的狀態。[進一步了解⋯](airDropSettingsOBK://)"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Med AirDrop kan du dela ögonblickligen med andra i närheten. Du kan vara upptäckbar i AirDrop så att du kan ta emot från alla. Om du gör dig upptäckbar aktiveras Bluetooth och WLAN. [Läs mer…](airDropSettingsOBK://)"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bruk AirDrop til å dele filer direkte med personer i nærheten. Du kan velge å være synlig for alle i AirDrop. Hvis du gjør deg selv synlig, slås Bluetooth og WLAN på. [Finn ut mer…](airDropSettingsOBK://)"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop की मदद से आप आस-पास के लोगों के साथ तुरंत शेयर कर सकते हैं। आप AirDrop द्वारा प्राप्त करने के लिए हर किसी के द्वारा खोजे जा सकते हैं। अपने आपको खोजे जाने का विकल्प चुनने पर Bluetooth और WLAN चालू हो जाएगा। [अधिक जानें…](airDropSettingsOBK://)"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Med AirDrop kan du hurtigt dele med andre i nærheden. Du kan være synlig i AirDrop for at modtage fra alle. Bluetooth og WLAN bliver slået til, når du er synlig. [Læs mere…](airDropSettingsOBK://)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop lets you share instantly with people nearby. You can be discoverable in AirDrop to receive from everyone. Making yourself discoverable will turn on Bluetooth and WLAN. [Learn More…](airDropSettingsOBK://)"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop umożliwia natychmiastowe udostępnianie rzeczy osobom znajdującym się w pobliżu. Twoje urządzenie może być wykrywalne przez AirDrop, co pozwoli odbierać pliki od wszystkich. Włączenie wykrywalności spowoduje włączenie Bluetooth i WLAN. [Więcej informacji…](airDropSettingsOBK://)"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop vous permet de partager des données instantanément avec des personnes à proximité. Vous pouvez autoriser tout le monde à vous détecter dans AirDrop. Le fait d’autoriser d’autres personnes à vous détecter activera Bluetooth et le réseau WLAN. [En savoir plus…](airDropSettingsOBK://)"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop ช่วยให้คุณแชร์กับผู้คนที่อยู่ใกล้เคียงได้ทันที คุณสามารถกำหนดให้ทุกคนมองเห็นคุณและคุณสามารถรับข้อมูลได้ใน AirDrop การกำหนดให้มองเห็นคุณได้จะเปิดบลูทูธและ WLAN [เรียนรู้เพิ่มเติม…](airDropSettingsOBK://)"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "隔空投送可让你与附近的用户立即共享。你可以设置在隔空投送中可被发现，以接收所有人发来的文件。使自己可被发现将会打开蓝牙和无线局域网。[进一步了解…](airDropSettingsOBK://)"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop lets you share instantly with people nearby. You can be discoverable in AirDrop to receive from everyone. Making yourself discoverable will turn on Bluetooth and WLAN. [Learn more…](airDropSettingsOBK://)"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„AirDrop“ leidžia akimirksniu bendrinti turinį su netoliese esančiais žmonėmis. Galite leisti „AirDrop“ paslaugai jus aptikti, kad gautumėte duomenis iš visų asmenų. Jei leisite jus aptikti, bus įjungtas „Bluetooth“ ir WLAN. [Sužinokite daugiau…](airDropSettingsOBK://)"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop te permite compartir contenido al instante con personas que están cerca. Puedes hacerte visible para recibir elementos de cualquier persona. Al hacerlo, se activarán las conexiones Bluetooth y WLAN. [Obtén detalles…](airDropSettingsOBK://)"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop vám umožňuje okamžitě sdílet data s lidmi ve vašem okolí. Chcete‑li přijímat data ode všech lidí, můžete se nastavit jako viditelní přes AirDrop. Pokud to uděláte, zapne se Bluetooth a WLAN. [Další informace…](airDropSettingsOBK://)"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop membolehkan anda berkongsi serta-merta dengan orang berdekatan. Anda boleh ditemui dalam AirDrop untuk menerima daripada semua orang. Menjadikan diri anda boleh ditemui akan mengaktifkan Bluetooth dan WLAN. [Ketahui Lebih Lanjut…](airDropSettingsOBK://)"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop vám umožňuje okamžité zdieľanie s osobami vo vašej blízkosti. Ak chcete prijímať dáta od všetkých, môžete sa nastaviť ako viditeľní pre AirDrop. Ak sa nastavíte ako viditeľní, zapne sa Bluetooth a WLAN. [Viac informácií…](airDropSettingsOBK://)"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop ви позволява да споделяте незабавно с хората около вас. Можете да бъдете открити и да получавате чрез AirDrop от всички. Ако разрешите откриването, Bluetooth и WLAN ще се включат. [Научете повече…](airDropSettingsOBK://)"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop vam omogoča takojšnje deljenje z osebami v bližini. V funkciji AirDrop ste lahko vidni za prejem od kogarkoli. Če omogočite vidnost, se bo vklopila povezava Bluetooth ali povezava z omrežjem WLAN. [Več o tem …](airDropSettingsOBK://)"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop lets you share instantly with people nearby. You can be discoverable in AirDrop to receive from everyone. Making yourself discoverable will turn on Bluetooth and WLAN. [Learn more…](airDropSettingsOBK://)"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mit AirDrop kannst du Daten sofort mit anderen in der Nähe teilen. Du kannst für den Empfang von Daten in AirDrop für alle sichtbar sein. Wenn du dich sichtbar machst, werden Bluetooth und WLAN aktiviert. [Weitere Infos …](airDropSettingsOBK://)"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop cho phép bạn chia sẻ tức thời với những người ở gần. Bạn có thể đặt trạng thái có thể tìm thấy trong AirDrop để nhận dữ liệu từ mọi người. Đặt thiết bị của bạn thành có thể tìm thấy sẽ bật Bluetooth và WLAN. [Tìm hiểu thêm…](airDropSettingsOBK://)"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop vă permite să partajați instantaneu cu persoanele din apropiere. Vă puteți face dispozitivul detectabil prin AirDrop pentru a primi fișiere de la oricine. Dacă faceți dispozitivul detectabil, vor fi activate conexiunile Bluetooth și WLAN. [Mai multe…](airDropSettingsOBK://)"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop дає змогу миттєво надсилати різноманітний вміст користувачам поблизу. Можна зробити себе виявним в AirDrop, щоб отримувати матеріали від усіх. Перехід у виявний стан увімкне Bluetooth і WLAN. [Докладніше…](airDropSettingsOBK://)"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop функциясы қасыңыздағы адамдармен файлдарды жылдам бөлісуге мүмкіндік береді. AirDrop ішінде өзіңізді анықтау мүмкіндігін қосып, әркімнен файлдар алуыңызға болады. Анықтау мүмкіндігін қоссаңыз, Bluetooth және WLAN функциялары да қосылады. [Толығырақ…](airDropSettingsOBK://)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop vous permet de partager instantanément des éléments avec des utilisateurs à proximité. Vous pouvez vous rendre détectable dans AirDrop pour recevoir des éléments de tous les utilisateurs. Si vous vous rendez détectable, le Bluetooth et le WLAN seront activés. [En savoir plus…](airDropSettingsOBK://)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop te permite compartir contenido al instante con personas que estén cerca. Para recibir archivos, puedes elegir ser visible para todo el mundo. Al hacerlo, se activará la función Bluetooth y la red WLAN. [Más información…](airDropSettingsOBK://)"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O AirDrop permite compartilhar itens instantaneamente com pessoas por perto. Você pode ficar visível no AirDrop para receber itens de qualquer pessoa. Para isso, o Bluetooth e a rede WLAN serão ativados. [Saiba Mais…](airDropSettingsOBK://)"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDropで近くの人とすぐにデータを共有できます。AirDropで検出可能にして、すべての人から受信可能にできます。このデバイスを検出可能にすると、BluetoothとWLANがオンになります。[詳しい情報…](airDropSettingsOBK://)"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O AirDrop permite‑lhe partilhar de imediato com quem se encontra à sua volta. Pode optar por estar visível no AirDrop para poder receber ficheiros de qualquer pessoa. Se optar por estar visível, Bluetooth e WLAN serão ativados. [Saiba mais…](airDropSettingsOBK://)"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop vam omogućava neposredno dijeljenje s osobama u blizini. Možete podesiti da vas mogu pronaći u AirDropu kako biste primali sadržaje od svih. Ako podesite da vas se može pronaći, uključit će se Bluetooth i WLAN. [Saznajte više…](airDropSettingsOBK://)"
+          }
+        }
+      }
+    },
+    "Receiving Off": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "קבלת פריטים כבויה"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "수신 끔"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Penerimaan Mati"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ontvangen uit"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alma Kapalı"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Прием выключен"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vain lähetys"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fogadás ki"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ricezione non attiva"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No recibir"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Λήψη ανενεργή"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recepció desactivada"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إيقاف الاستلام"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "關閉接收"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "關閉接收"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mottagning av"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ingen"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "प्राप्ति बंद"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modtagelse slået fra"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Receiving Off"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odbieranie wyłączone"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Réception désactivée"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ปิดการรับ"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "接收关闭"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Receiving Off"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gavimas išjungtas"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No recibir"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Příjem je vypnutý"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hanya Hantar"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prijímanie je vypnuté"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Получаване: Изкл."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prejemanje je izklopljeno"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Receiving Off"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Empfangen aus"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Không nhận"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Primire oprită"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Отримання вимкнено"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "«Қабылдау» функциясы өшірулі"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Réception désactivée"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recepción desactivada"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recepção Desativada"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "受信しない"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Receção desativada"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Primanje isključeno"
+          }
+        }
+      }
+    },
+    "Continue to send and receive content when Wi-Fi is not available during AirDrop.": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ניתן להמשיך לשלוח ולקבל תכנים כשהרשת האלחוטית אינה זמינה במהלך פעילות AirDrop."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop 중에 Wi-Fi를 사용할 수 없을 때 계속해서 콘텐츠를 보내고 받습니다."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lanjutkan untuk mengirim dan menerima konten saat Wi-Fi tidak tersedia selama AirDrop."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blijf materiaal versturen en ontvangen wanneer wifi niet beschikbaar is tijdens AirDrop."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop sırasında Wi-Fi kullanılamıyorken içerik gönderip almayı sürdürün."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Можно отправлять и получать контент по AirDrop, даже если Wi‑Fi недоступен."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jatka sisällön lähettämistä ja vastaanottamista, kun Wi‑Fi ei ole saatavilla AirDropin aikana."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Továbbra is küldhet és fogadhat tartalmat, amikor a Wi‑Fi nem érhető el az AirDrop során."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continua a inviare e ricevere contenuti quando la rete Wi‑Fi non è disponibile durante l’uso di AirDrop."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continúa enviando y recibiendo contenido si no hay Wi-Fi disponible al usar AirDrop."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Συνέχιση αποστολής και λήψης περιεχομένου όταν το Wi-Fi δεν είναι διαθέσιμο κατά τη διάρκεια του AirDrop."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pots seguir enviant i rebent contingut per l’AirDrop quan no hi hagi una xarxa Wi‑Fi disponible."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استمر في إرسال واستلام المحتوى عند عدم توفر Wi-Fi أثناء الإرسال السريع."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop期間若無法使用Wi-Fi，仍繼續傳送和接收內容。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "如在進行AirDrop期間無法使用Wi-Fi，仍繼續傳送和接收內容。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fortsätt att skicka och ta emot innehåll när Wi‑Fi inte är tillgängligt under AirDrop."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fortsett å sende og motta innhold selv når Wi‑Fi ikke er tilgjengelig for AirDrop."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop के दौरान वाई-फ़ाई उपलब्ध नहीं होने पर कॉन्टेंट भेजना और प्राप्त करना जारी रखें।"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fortsæt med at sende og modtage indhold, når Wi-Fi ikke er tilgængeligt under AirDrop."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue to send and receive content when Wi-Fi is not available during AirDrop."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Możesz kontynuować wysyłanie i odbieranie rzeczy przez AirDrop, nawet po utracie połączenia z siecią Wi‑Fi."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continuez d’envoyer et de recevoir du contenu quand le Wi‑Fi n’est pas disponible lors d’un échange AirDrop."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ดำเนินการต่อเพื่อส่งและรับเนื้อหาเมื่อไม่มี Wi‑Fi ในระหว่าง AirDrop"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "隔空投送期间Wi-Fi不可用时，继续发送和接收内容。"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue to send and receive content when Wi-Fi is not available during AirDrop."
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toliau siųskite ir gaukite turinį, kai vykstant „AirDrop“ perkėlimui „Wi-Fi“ nepasiekiamas."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continúa enviando y recibiendo contenido si no hay Wi-Fi disponible al usar AirDrop."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odesílání a příjem dat přes AirDrop bude pokračovat i mimo dosah Wi‑Fi."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Teruskan menghantar dan menerima kandungan apabila Wi‑Fi tidak tersedia semasa AirDrop."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odosielanie a prijímanie dát cez AirDrop bude pokračovať aj bez pripojenia k Wi‑Fi."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Можете да изпращате и получавате съдържание чрез AirDrop, дори ако няма достъпна Wi-Fi мрежа."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nadaljujte pošiljanje in prejemanje vsebine, kadar Wi-Fi med storitvijo AirDrop ni na voljo."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue to send and receive content when Wi-Fi is not available during AirDrop."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sende und empfange weiterhin Inhalte, wenn während AirDrop kein WLAN verfügbar ist."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tiếp tục gửi và nhận nội dung khi Wi-Fi không khả dụng trong khi AirDrop."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continuați să trimiteți și să primiți conținut atunci când nu dispuneți de Wi‑Fi în timpul unui transfer AirDrop."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Продовжувати отримувати й надсилати вміст, якщо під час сеансу AirDrop зникне Wi‑Fi."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop сеансында Wi-Fi қолжетімді болмаған кезде, контентті жіберіп, қабылдай беріңіз."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continuez d’envoyer et de recevoir du contenu lorsque le Wi-Fi n’est pas disponible lors d’un transfert AirDrop."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Podrás seguir enviando y recibiendo contenido cuando la red Wi‑Fi no esté disponible mientras AirDrop esté en uso."
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue a enviar e receber conteúdo quando não houver uma rede Wi‑Fi disponível durante o uso do AirDrop."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop時にWi‑Fiが使用できない場合でもコンテンツの送受信を続けます。"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continuar a enviar e receber conteúdo quando a rede Wi‑Fi não está disponível durante o AirDrop."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nastavite slati i primati sadržaj kada Wi-Fi nije dostupan tijekom AirDropa."
+          }
+        }
+      }
+    },
+    "Easily swap numbers with NameDrop, share photos, and more by holding the top of your iPhone close to another iPhone.": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "‏NameDrop מאפשר לקרב את החלק העליון של ה-iPhone ל-iPhone אחר כדי להחליף במהירות מספרים, לשתף תמונות ועוד."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "iPhone의 상단을 다른 iPhone 가까이 대고 있으면 NameDrop으로 번호 교환, 사진 공유 등의 동작을 간편하게 할 수 있습니다."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Berbagi nomor dengan mudah menggunakan NameDrop, berbagi foto, dan lainnya dengan mendekatkan bagian atas iPhone Anda ke iPhone lain."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wissel gemakkelijk nummers uit met NameDrop, deel foto's en meer door de bovenkant van je iPhone dicht bij een andere iPhone te houden."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "iPhone’unuzun üst kısmını başka bir iPhone’a yaklaştırarak NameDrop ile kolayca numara alışverişi yapın, fotoğraf paylaşın ve daha fazlasını yapın."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "С легкостью делитесь номерами, фото и другим контентом с помощью функции NameDrop. Просто поднесите свой iPhone верхним краем к другому iPhone."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voit helposti mm. vaihtaa numeroita NameDropilla ja jakaa kuvia pitämällä iPhonen yläosaa toisen iPhonen lähellä."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Egyszerűen cserélhet számokat a NameDrop funkcióval, fotókat oszthat meg, és egyéb műveleteket hajthat végre, ha az iPhone‑ja felső részét közel tartja egy másik iPhone-hoz."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scambia facilmente numeri di telefono con NameDrop, condividi foto e altro ancora avvicinando la parte superiore del dispositivo a un altro iPhone."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Intercambia fácilmente números telefónicos con NameDrop y comparte fotos y demás contenido con sólo acercar la parte superior de tu iPhone al de alguien más."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ανταλλάξτε εύκολα αριθμούς τηλεφώνου μέσω NameDrop, κοινοποιήστε φωτογραφίες και πολλά ακόμη κρατώντας το πάνω μέρος του iPhone κοντά σε ένα άλλο iPhone."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Per compartir fotos i altres ítems i intercanviar números de telèfon fàcilment amb el NameDrop, apropa la part superior de l’iPhone a l’iPhone d’algú altre."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مبادلة الأرقام بسهولة باستخدام \"مشاركة معلوماتي\" ومشاركة الصور والمزيد عن طريق تقريب الجزء العلوي من iPhone من iPhone آخر."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "將此iPhone的上方靠近其他iPhone，便可使用NameDrop來輕鬆交換號碼、分享照片和使用其他功能。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "將iPhone頂部靠近另一部iPhone，即可透過NameDrop輕鬆交換電話號碼、共享相片等等。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Utväxla nummer enkelt med NameDrop, dela bilder och annat genom att hålla överdelen på iPhone nära en annan iPhone."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Utveksle nummer enkelt med NameDrop, del bilder og annet ved å holde toppen av iPhonen din nær en annen iPhone."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NameDrop के ज़रिए फ़ोन नंबरों का आसानी से लेनदेन करें, अपने iPhone के शीर्ष को किसी दूसरे iPhone के नज़दीक लाकर तस्वीरें आदि शेयर करें।"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Byt nemt telefonnumre med NameDrop, del fotos m.m. ved at holde toppen af din iPhone tæt på en anden iPhone."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Easily swap numbers with NameDrop, share photos, and more by holding the top of your iPhone close to another iPhone."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Łatwo wymieniaj się numerami, używając NameDrop, oraz udostępniaj zdjęcia i inne rzeczy, zbliżając górną krawędź tego iPhone’a do innego iPhone’a."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Échangez facilement vos numéros avec NameDrop, et partagez des photos et plus encore en rapprochant la partie supérieure de votre iPhone d’un autre iPhone."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "แลกเบอร์โทรกันด้วย NameDrop, แชร์รูปภาพ และอื่นๆ ได้ง่ายๆ โดยถือให้ด้านบนของ iPhone ของคุณให้อยู่ใกล้กับ iPhone อีกเครื่อง"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "将iPhone顶部靠近另一台iPhone，通过名片投送轻松交换电话号码、共享照片等。"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Easily swap numbers with NameDrop, share photos and more by holding the top of your iPhone close to another iPhone."
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lengvai keiskitės numeriais naudodami „NameDrop“, bendrinkite nuotraukas ir ne tik, laikydami „iPhone“ viršutinę dalį šalia kito „iPhone“."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Intercambia fácilmente números telefónicos con NameDrop y comparte fotos y demás contenido con sólo acercar la parte superior de tu iPhone al de alguien más."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Když iPhone podržíte horní stranou u jiného iPhonu, můžete si snadno vyměnit telefonní čísla přes NameDrop, nasdílet fotky a mnoho dalšího."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bertukar-tukar nombor telefon dengan mudah menggunakan NameDrop, berkongsi foto dan banyak lagi dengan memegang bahagian atas iPhone anda berdekatan iPhone lain."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Priblížením vrchnej časti tohto iPhonu k inému iPhonu si môžete jednoducho vymieňať čísla pomocou NameDropu, zdieľať fotky a ešte omnoho viac."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "С помощта на NameDrop можете лесно да разменяте номера, да споделяте снимки и други, като задържите горната страна на iPhone близо до друг iPhone."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "S funkcijo NameDrop si preprosto izmenjujte številke, delite fotografije in naredite še marsikaj, in sicer tako, da vrh iPhona približate drugemu iPhonu."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Easily swap numbers with NameDrop, share photos and more by holding the top of your iPhone close to another iPhone."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tausche mit NameDrop bequem Telefonnummern aus, teile Fotos und mehr, indem du die Oberseite deines iPhone nah an ein anderes iPhone hältst."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trao đổi số điện thoại dễ dàng với NameDrop, chia sẻ ảnh, v.v. bằng cách giữ cạnh trên của iPhone của bạn gần một iPhone khác."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schimbați cu ușurință numere de telefon prin NameDrop, partajați poze și multe altele ținând partea de sus a iPhone‑ului dvs. aproape de un alt iPhone."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Без зусиль обмінюйтеся телефонними номерами через NameDrop, поширюйте фотографії тощо, підносячи верхній край свого iPhone до іншого iPhone."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NameDrop арқылы нөмілермен оңай алмасу, фотоларды бөлісу және т.б. үшін iPhone құрылғысының жоғарғы бөлігін басқа iPhone құрылғысына жақын ұстаңыз."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Échangez facilement des numéros avec NameDrop, partagez des photos et plus encore en approchant le haut de votre iPhone d’un autre iPhone."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Intercambia números de teléfono usando NameDrop, comparte fotos y más acercando la parte superior del iPhone al iPhone de la otra persona."
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aproxime a parte superior do seu iPhone de outro iPhone para trocar números de telefone, compartilhar fotos e mais usando o NameDrop."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "iPhoneの上部を別のiPhoneの近くにかざすと、簡単にNameDropで番号を交換したり、写真を共有したりできます。"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aproximar a parte superior do iPhone de outro iPhone para trocar números através do NameDrop, partilhar fotografias e muito mais."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jednostavno razmijenite brojeve koristeći NameDrop, podijelite fotografije i ostalo držeći vrh iPhonea blizu drugog iPhonea."
+          }
+        }
+      }
+    },
+    "Everyone": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "כולם"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "모든 사람"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Semua Orang"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Iedereen"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Herkes"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Всем"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kaikki"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mindenki"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tutti"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Todos"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Όλα τα άτομα"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tothom"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الجميع"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "所有人"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "所有人"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alla"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alle"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "हर व्यक्ति"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alle"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Everyone"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wszyscy"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tout le monde"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ทุกคน"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "所有人"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Everyone"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Visi"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Todos"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Všichni"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Semua Orang"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Všetci"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Всеки"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vsi"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Everyone"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Für alle"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mọi người"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oricine"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Усі"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Әркім"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tout le monde"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Todo el mundo"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Qualquer Pessoa"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "すべての人"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Qualquer pessoa"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Svi"
+          }
+        }
+      }
+    },
+    "Change AirDrop Mode": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "שינוי המצב של AirDrop"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop 모드 변경"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ubah Mode AirDrop"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wijzig AirDrop-modus"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop Modunu Değiştir"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сменить режим AirDrop"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vaihda AirDrop-tila"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop mód módosítása"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cambia modalità di AirDrop"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cambiar el modo de AirDrop"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Αλλαγή λειτουργίας AirDrop"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Canvia el mode de l’AirDrop"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تغيير نمط الإرسال السريع"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "更改AirDrop模式"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "更改AirDrop模式"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ändra AirDrop-läge"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bytt AirDrop-modus"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop मोड बदलें"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skift AirDrop-funktion"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Change AirDrop Mode"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zmień tryb AirDrop"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Changer de mode AirDrop"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เปลี่ยนโหมด AirDrop"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "更改隔空投送模式"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Change AirDrop Mode"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keisti „AirDrop“ režimą"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cambiar el modo de AirDrop"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Změnit režim AirDropu"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tukar Mod AirDrop"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zmeniť režim AirDropu"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Промени режим на AirDrop"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spremeni način AirDrop"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Change AirDrop Mode"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop-Modus ändern"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Thay đổi chế độ AirDrop"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schimbare mod AirDrop"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Змінити режим AirDrop"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop режимін өзгерту"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Changer de mode AirDrop"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cambiar modo de AirDrop"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alterar Modo do AirDrop"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDropモードを変更"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alterar modo do AirDrop"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Promijeni način rada AirDropa"
+          }
+        }
+      }
+    },
+    "Everyone for 10 Minutes": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "כולם למשך 10 דקות"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "모든 사람에 대해 10분 동안"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Semua Orang selama 10 Menit"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Iedereen gedurende 10 minuten"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Herkes 10 Dakika"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Всем на 10 минут"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kaikki 10 minuutin ajan"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mindenki 10 percig"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tutti per 10 minuti"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Todos por 10 minutos"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Όλα τα άτομα για 10 λεπτά"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tothom durant 10 minuts"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الجميع لعشر دقائق"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "開放所有人10分鐘"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "所有人，限時10分鐘"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alla i 10 minuter"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alle i 10 minutter"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10 मिनट तक सभी के लिए"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alle i 10 minutter"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Everyone for 10 Minutes"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wszyscy przez 10 minut"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tout le monde pendant 10 minutes"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ทุกคนเป็นเวลา 10 นาที"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "所有人（10分钟）"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Everyone for 10 Minutes"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Visi 10 minučių"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Todos por 10 minutos"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Všichni na 10 minut"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Semua Orang selama 10 Minit"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Všetci na 10 minút"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Всеки за 10 минути"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vsi za 10 minut"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Everyone for 10 Minutes"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "10 Minuten für alle"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mọi người trong 10 phút"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oricine timp de 10 minute"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Усі на 10 хвилин"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Әркім 10 минутқа"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tout le monde pendant 10 minutes"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Todos durante 10 minutos"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Todas as Pessoas por 10 Minutos"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "すべての人（10分間のみ）"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Todos durante 10 minutos"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Svatko na 10 minuta"
+          }
+        }
+      }
+    },
+    "Contacts Only": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "אנשי קשר בלבד"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "연락처만"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hanya Kontak"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alleen contacten"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yalnızca Kişiler"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Только контактам"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vain yhteystiedot"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Csak kontaktok"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solo contatti"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sólo contactos"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Επαφές μόνο"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Només contactes"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جهات الاتصال فقط"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "只限聯絡人"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "只限通訊錄聯絡人"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bara kontakter"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kun kontakter"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "केवल संपर्क"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kun kontakter"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Contacts Only"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tylko kontakty"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Contacts uniquement"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "รายชื่อเท่านั้น"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "仅限联系人"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Contacts Only"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tik adresatai"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sólo contactos"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jen kontakty"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hanya Kenalan"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Len kontakty"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Само Контакти"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Samo stiki"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Contacts Only"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nur für Kontakte"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chỉ danh bạ"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Doar contactele"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Тільки контакти"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Тек контактілер"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Contacts uniquement"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Solo contactos"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apenas Contatos"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "連絡先のみ"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Só contactos"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Samo kontakti"
+          }
+        }
+      }
+    },
+    "Bringing Devices Together": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "קירוב מכשירים זה לזה"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기기를 서로 가까이 가져오기"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dekatkan Perangkat"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apparaten samenbrengen"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aygıtları Bir Araya Getirerek"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сближение устройств"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tuo laitteet yhteen"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eszközök összeérintése"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avvicinando i dispositivi"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acercar los dispositivos"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Τοποθέτηση συσκευών κοντά…"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En apropar els dispositius"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تقريب الجهازين"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "將裝置互相靠近"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "將裝置靠近"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sammanföra enheter"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Holde enhetene mot hverandre"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "डिवाइस एक दूसरे के नज़दीक लाकर"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Holde enhederne mod hinanden"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bringing Devices Together"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zbliżenie urządzeń do siebie"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rapprochement des appareils"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "นำอุปกรณ์ทั้งสองมาไว้ใกล้กัน"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "将设备彼此靠近"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bringing Devices Together"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Įrenginių suartinimas"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acercar los dispositivos"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Přiblížením zařízení k sobě"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mendekatkan Peranti"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Priblíženie zariadení"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Приближите устройствата"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ob približanju naprav"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bringing Devices Together"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geräte aneinanderhalten"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đưa các thiết bị lại gần nhau"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apropiind dispozitivele"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Зближення пристроїв"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Құрылғыларды жақындату"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Approcher les appareils"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acercar los dispositivos"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aproximar Dispositivos"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "デバイス同士を近づける"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aproximar os dispositivos"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Približite uređaje"
+          }
+        }
+      }
+    },
+    "General": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "כללי"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "일반"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Umum"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Algemeen"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Genel"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Основные"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yleiset"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Általános"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Generali"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "General"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Γενικά"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "General"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عام"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "一般"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "一般"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allmänt"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Generelt"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "सामान्य"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Generelt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "General"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ogólne"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Général"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ทั่วไป"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "通用"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "General"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bendrieji"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "General"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Obecné"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Umum"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Všeobecné"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Основни"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Splošno"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "General"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allgemein"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cài đặt chung"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "General"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Загальні"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Жалпы"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Général"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "General"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geral"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "一般"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geral"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Općenito"
+          }
+        }
+      }
+    },
+    "Toggle Bringing Devices Together": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "מעבר בין מצבי ״קירוב מכשירים זה לזה״"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "기기를 서로 가까이 가져오기 토글"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ubah Mendekatkan Perangkat"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "'Apparaten samenbrengen' aan/uit"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aygıtları Bir Araya Getirerek Seçeneğini Aç/Kapat"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Включить или выключить сближение устройств"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tuo laitteet yhteen päälle/pois"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eszközök összeérintésének be- és kikapcsolása"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Attiva/disattiva “Avvicinando i dispositivi”"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Activar o desactivar Acercar los dispositivos"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Εναλλαγή της Τοποθέτησης συσκευών κοντά"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Activa o desactiva l’opció “En apropar els dispositius”"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تبديل تقريب الجهازين"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "切換「將裝置互相靠近」"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "切換將裝置靠近"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Växla Sammanföra enheter"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Slå av eller på Holde enhetene mot hverandre"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“डिवाइस को एक साथ लाना” टॉगल करें"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Slå Holde enhederne mod hinanden til/fra"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toggle Bringing Devices Together"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Przełącz Zbliżenie urządzeń do siebie"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Activer/désactiver « Rapprochement des appareils »"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "สลับระหว่างนำหรือไม่นำอุปกรณ์ทั้งสองมาไว้ใกล้กัน"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "切换将设备彼此靠近"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toggle Bringing Devices Together"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Įjungti „Įrenginių suartinimą“"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Activar o desactivar Acercar los dispositivos"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Přepnout volbu Přiblížením zařízení k sobě"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Togol Dekatkan Peranti"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prepnúť nastavenie Priblíženie zariadení"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Превключи приближаване на устройствата"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Preklopi možnost Ob približanju naprav"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toggle Bringing Devices Together"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geräte aneinanderhalten ein/aus"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chuyển đổi Đưa các thiết bị lại gần nhau"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comutare “Apropiind dispozitivele”"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Перемкнути зближення пристроїв"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Құрылғыларды жақындатуды қосу/өшіру"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Activer/désactiver « Approcher les appareils »"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Activar/desactivar “Acercar los dispositivos”"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ativar/Desativar Aproximação dos Dispositivos"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“デバイス同士を近づける”を切り替える"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ativar/desativar Aproximar os dispositivos"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prebaci približavanje uređaja"
+          }
+        }
+      }
+    },
+    "Out of Range": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "מחוץ לטווח"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "범위 외"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Di Luar Jangkauan"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Buiten bereik"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kapsama Alanı Dışındayken"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вне диапазона"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kantaman ulkopuolella"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hatótávon kívül"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fuori raggio"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fuera del rango"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Εκτός εμβέλειας"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fora de l’abast"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "خارج النطاق"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "超出範圍"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "超出範圍"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Utanför räckvidden"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Utenfor rekkevidde"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "सीमा से बाहर"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Udenfor rækkevidde"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Out of Range"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poza zasięgiem"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hors de portée"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "อยู่นอกช่วงสัญญาณ"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "超出范围"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Out of Range"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Už diapazono ribų"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fuera del rango"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mimo dosah"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Di Luar Julat Liputan"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mimo dosahu"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Извън обхват"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zunaj dosega"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Out of Range"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Außerhalb des Bereichs"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ngoài phạm vi"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "În afara intervalului"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Поза межами"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ауқымнан тыс"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hors de portée"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fuera de alcance"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fora de Alcance"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "範囲外"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fora do raio de alcance"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Izvan dometa"
+          }
+        }
+      }
+    },
+    "Continue to send and receive content when WLAN is not available during AirDrop.": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ניתן להמשיך לשלוח ולקבל תכנים כשרשת ה-WLAN אינה זמינה במהלך פעילות AirDrop."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop 중에 WLAN을 사용할 수 없을 때 계속해서 콘텐츠를 보내고 받습니다."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lanjutkan untuk mengirim dan menerima konten saat WLAN tidak tersedia selama AirDrop."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blijf materiaal versturen en ontvangen wanneer WLAN niet beschikbaar is tijdens AirDrop."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop sırasında WLAN kullanılamıyorken içerik gönderip almayı sürdürün."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Можно отправлять и получать контент по AirDrop, даже если WLAN недоступен."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jatka sisällön lähettämistä ja vastaanottamista, kun WLAN ei ole saatavilla AirDropin aikana."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Továbbra is küldhet és fogadhat tartalmat, amikor a WLAN nem érhető el az AirDrop során."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continua a inviare e ricevere contenuti quando la rete WLAN non è disponibile durante l’uso di AirDrop."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continúa enviando y recibiendo contenido si no hay WLAN disponible al usar AirDrop."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Συνέχιση αποστολής και λήψης περιεχομένου όταν το WLAN δεν είναι διαθέσιμο κατά τη διάρκεια του AirDrop."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pots seguir enviant i rebent contingut per l’AirDrop quan no hi hagi una xarxa WLAN disponible."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استمر في إرسال واستلام المحتوى عند عدم توفر WLAN أثناء الإرسال السريع."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop期間若無法使用WLAN，仍繼續傳送和接收內容。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "如在進行AirDrop期間無法使用WLAN，仍繼續傳送和接收內容。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fortsätt att skicka och ta emot innehåll när WLAN inte är tillgängligt under AirDrop."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fortsett å sende og motta innhold selv når WLAN ikke er tilgjengelig for AirDrop."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop के दौरान WLAN उपलब्ध नहीं होने पर कॉन्टेंट भेजना और प्राप्त करना जारी रखें।"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fortsæt med at sende og modtage indhold, når WLAN ikke er tilgængeligt under AirDrop."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue to send and receive content when WLAN is not available during AirDrop."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Możesz kontynuować wysyłanie i odbieranie rzeczy przez AirDrop, nawet po utracie połączenia z siecią WLAN."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continuez d’envoyer et de recevoir du contenu quand le WLAN n’est pas disponible lors d’un échange AirDrop."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ดำเนินการต่อเพื่อส่งและรับเนื้อหาเมื่อไม่มี WLAN ในระหว่าง AirDrop"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "隔空投送期间无线局域网不可用时，继续发送和接收内容。"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue to send and receive content when WLAN is not available during AirDrop."
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toliau siųskite ir gaukite turinį, kai vykstant „AirDrop“ perkėlimui WLAN nepasiekiamas."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continúa enviando y recibiendo contenido si no hay WLAN disponible al usar AirDrop."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odesílání a příjem dat přes AirDrop bude pokračovat i mimo dosah WLAN."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Teruskan menghantar dan menerima kandungan apabila WLAN tidak tersedia semasa AirDrop."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odosielanie a prijímanie dát cez AirDrop bude pokračovať aj bez pripojenia k WLAN."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Можете да изпращате и получавате съдържание чрез AirDrop, дори ако няма достъпна WLAN мрежа."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nadaljujte pošiljanje in prejemanje vsebine, kadar WLAN med storitvijo AirDrop ni na voljo."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue to send and receive content when WLAN is not available during AirDrop."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sende und empfange weiterhin Inhalte, wenn während AirDrop kein WLAN verfügbar ist."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tiếp tục gửi và nhận nội dung khi WLAN không khả dụng trong khi AirDrop."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continuați să trimiteți și să primiți conținut atunci când nu dispuneți de WLAN în timpul unui transfer AirDrop."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Продовжувати отримувати й надсилати вміст, якщо під час сеансу AirDrop зникне WLAN."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop сеансында WLAN қолжетімді болмаған кезде, контентті жіберіп, қабылдай беріңіз."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continuez d’envoyer et de recevoir du contenu lorsque le WLAN n’est pas disponible lors d’un transfert AirDrop."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Podrás seguir enviando y recibiendo contenido cuando la red WLAN no esté disponible mientras AirDrop esté en uso."
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continue a enviar e receber conteúdo quando não houver uma rede WLAN disponível durante o uso do AirDrop."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AirDrop時にWLANが使用できない場合でもコンテンツの送受信を続けます。"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continuar a enviar e receber conteúdo quando a rede WLAN não está disponível durante o AirDrop."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nastavite slati i primati sadržaj kada WLAN nije dostupan tijekom AirDropa."
+          }
+        }
+      }
+    },
+    "Start Sharing By": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "התחלת שיתוף באמצעות:"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "공유 시작"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mulai Berbagi Dengan"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Begin met delen:"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paylaşmayı Başlatma Şekli"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Для передачи контента"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jaon aloitus"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Megosztás indítása"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avvia la condivisione"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Empieza a compartir"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Έναρξη κοινής χρήσης"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ús compartit"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "بدء المشاركة عن طريق"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "開始分享的方式"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "開始共享方式"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Starta delning genom att"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start deling ved å"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "शेयरिंग शुरू करें"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Begynd at dele ved at"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start Sharing By"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gest udostępniania"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mode de partage"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เริ่มแชร์โดย"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "通过以下方式开始共享"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start Sharing By"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pradėti bendrinti"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Empieza a compartir"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sdílení zahájíte"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mula Berkongsi Dengan"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spustiť zdieľanie cez"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Започнете споделянето като"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Začetek deljenja"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start Sharing By"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Teilen starten:"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bắt đầu chia sẻ bằng"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Porniți partajarea"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Поширення шляхом"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Бөлісуді бастау"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Partage"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Formas de compartir"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Começar a Compartilhar ao"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "共有の開始"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Iniciar partilha ao"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Započnite dijeliti"
+          }
+        }
+      }
+    },
+    "Use Cellular Data": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "שימוש בנתונים סלולריים"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "셀룰러 데이터 사용"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gunakan Data Seluler"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gebruik mobiele data"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hücresel Veri’yi Kullan"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сотовые данные"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Käytä mobiilidataa"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mobiladat-forgalom használata"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Utilizza dati cellulare"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usar datos celulares"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Χρήση κινητού δικτύου"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Utilitza dades mòbils"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "استخدام البيانات الخلوية"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "使用行動數據"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "使用流動數據"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Använd mobildata"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bruk mobildata"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "मोबाइल डेटा का उपयोग करें"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Brug mobildata"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Use Cellular Data"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Używaj danych komórkowych"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Utiliser les données cellulaires"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ใช้ข้อมูลเซลลูลาร์"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "使用蜂窝数据"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Use Mobile Data"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Naudoti mobiliojo ryšio duomenis"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usar datos celulares"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Používat mobilní data"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gunakan Data Selular"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Použiť mobilné dáta"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Използвай мобилни данни"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uporabi mobilne podatke"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Use Mobile Data"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mobile Daten verwenden"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sử dụng dữ liệu di động"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Utilizare date celulare"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Стільникові дані"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ұялы деректерді пайдалану"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Utiliser les données cellulaires"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usar datos móviles"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usar Dados Celulares"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "モバイルデータ通信を使用"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usar dados móveis"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Koristi mobilne podatke"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}
