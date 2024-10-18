@@ -16,26 +16,27 @@ struct DateTimeView: View {
     @State private var showingDatePicker = false
     @State private var selectedDay: Date = Date()
     @State private var selectedTime: Date = Date()
+    let table = "Date & Time"
     
     var body: some View {
-        CustomList(title: "Date & Time") {
+        CustomList(title: "DATE_TIME_TITLE".localize(table: table)) {
             Section {
-                Toggle("24-Hour Time", isOn: $twentyFourHourTime)
+                Toggle("24-Hour Time".localize(table: table), isOn: $twentyFourHourTime)
                 if UIDevice.iPad {
-                    Toggle("Show AM/PM in Status Bar", isOn: $showAmPmStatus)
-                    Toggle("Show Date in Status Bar", isOn: $showDateStatus)
+                    Toggle("SHOW_AMPM_IN_STATUS_BAR".localize(table: table), isOn: $showAmPmStatus)
+                    Toggle("SHOW_DATE_IN_STATUS_BAR".localize(table: table), isOn: $showDateStatus)
                 }
             }
             
             Section {
-                Toggle("Set Automatically", isOn: $automaticTime)
+                Toggle("SET_AUTOMATICALLY".localize(table: table), isOn: $automaticTime)
                     .onChange(of: automaticTime) {
                         showingDatePicker = false
                     }
                 if automaticTime {
-                    LabeledContent("Time Zone", value: "Cupertino")
+                    LabeledContent("TIME_ZONE".localize(table: table), value: "Cupertino")
                 } else {
-                    CustomNavigationLink(title: "Time Zone", status: "Cupertino", destination: EmptyView())
+                    CustomNavigationLink(title: "TIME_ZONE".localize(table: table), status: "Cupertino", destination: EmptyView())
                     HStack {
                         Spacer()
                         Text(selectedDay.formatted(date: .abbreviated, time: .omitted))
@@ -58,9 +59,10 @@ struct DateTimeView: View {
                         )
                         .datePickerStyle(.graphical)
                         .listRowSeparator(.hidden)
-                        DatePicker("**Time**", selection: $selectedTime, displayedComponents: .hourAndMinute)
+                        DatePicker("Time", selection: $selectedTime, displayedComponents: .hourAndMinute)
                             .listRowSeparator(.hidden)
                             .offset(y: -5)
+                            .fontWeight(.semibold)
                     }
                 }
             }

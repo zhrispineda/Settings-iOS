@@ -19,25 +19,20 @@ struct DateFormatView: View {
         "2024.08.19",
         "2024-08-19"
     ]
+    let table = "InternationalSettings"
     
     var body: some View {
-        CustomList(title: "Date Format") {
+        CustomList(title: "DATE_FORMAT".localize(table: table)) {
             Section {
                 Picker("", selection: $selected) {
-                    ForEach(options, id: \.self) {
-                        Text($0)
+                    ForEach(options, id: \.self) { option in
+                        Text(option)
                     }
                 }
                 .pickerStyle(.inline)
                 .labelsHidden()
             } footer: {
-                Text("""
-                     Format Example:
-                     • Short: \(selected)
-                     • Medium: Aug 19, 2024
-                     • Long: August 19, 2024
-                     • Full: Monday, August 19, 2024
-                     """)
+                Text("DATE_FORMAT_EXAMPLE_%@_%@_%@_%@".localize(table: table, selected, "Aug 19, 2024", "August 19, 2024", "Monday, August 19, 2024"))
             }
         }
     }

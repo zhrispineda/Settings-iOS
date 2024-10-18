@@ -11,11 +11,12 @@ struct CalendarTypeView: View {
     // Variables
     @State private var selected = "Gregorian"
     let options = ["Gregorian", "Japanese", "Buddhist"]
+    let table = "InternationalSettings"
     
     var body: some View {
-        CustomList(title: "Calendar", topPadding: true) {
-            Section("Calendar") {
-                Picker("Calendar", selection: $selected) {
+        CustomList(title: "CALENDAR".localize(table: table), topPadding: true) {
+            Section("CALENDAR".localize(table: table)) {
+                Picker("CALENDAR".localize(table: table), selection: $selected) {
                     ForEach(options, id: \.self) { calendar in
                         Text(calendar)
                     }

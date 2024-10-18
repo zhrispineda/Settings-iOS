@@ -8,12 +8,15 @@
 import SwiftUI
 
 struct GameControllerView: View {
+    // Variables
+    let table = "GameControlleriOSSettings"
+    
     var body: some View {
         VStack(spacing: 10) {
             Spacer()
             Image(systemName: "gamecontroller.fill")
                 .font(.largeTitle)
-            Text("Connect a controller to continue.")
+            Text("NO_CONTROLLER_CONNECTED", tableName: table)
             Spacer()
         }
     }
