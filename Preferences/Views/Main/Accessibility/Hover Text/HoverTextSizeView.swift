@@ -10,11 +10,12 @@ import SwiftUI
 struct HoverTextSizeView: View {
     // Variables
     @State private var largerAccessibilitySizes = true
+    let table = "Accessibility"
     
     var body: some View {
         ZStack {
             CustomList(title: "Size") {
-                Text("Hover Text will adjust to your preferred reading size below.")
+                Text("HOVER_TEXT_TEXT_SIZE_DESCRIPTION", tableName: table)
                     .multilineTextAlignment(.center)
                     .listRowBackground(Color.clear)
                     .frame(maxWidth: .infinity)
@@ -27,6 +28,7 @@ struct HoverTextSizeView: View {
 struct HoverTextSizeSlider: View {
     // Variables
     @State private var textSize = 3.0
+    let table = "Accessibility"
     
     var body: some View {
         VStack {
@@ -40,7 +42,7 @@ struct HoverTextSizeSlider: View {
                        step: 1.0,
                        minimumValueLabel: Image(systemName: "textformat.size.smaller"),
                        maximumValueLabel: Image(systemName: "textformat.size.larger"),
-                       label: { Text("Text Size") }
+                       label: { Text("TEXT_SIZE", tableName: table) }
                 )
                 .tint(.gray)
                 .imageScale(.large)
@@ -54,7 +56,7 @@ struct HoverTextSizeSlider: View {
                     RoundedRectangle(cornerRadius: 15.0)
                         .frame(height: 50)
                         .foregroundStyle(Color(UIColor.secondarySystemFill))
-                    Text("Reset Font Size to Default")
+                    Text("RESET_BUTTON_TEXT", tableName: "LargeFontsSettings")
                 }
                 .padding()
             }

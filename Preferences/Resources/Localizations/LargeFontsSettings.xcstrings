@@ -1,0 +1,2095 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "LARGER_DYNAMIC_TYPE": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "מלל גדול יותר"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "글자 더 크게 조절"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ukuran yang Lebih Besar"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suuremmat käyttöapukoot"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Grotere tekstgroottes"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Büyük Erişilebilirlik Puntoları"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nagyobb méretek"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Увеличенные размеры"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dimensioni maggiori"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Μεγαλύτερα μεγέθη"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tamaños más legibles"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mides més grans"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أحجام أكبر لتسهيلات الاستخدام"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "更大的輔助使用字體大小"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "更大的輔助使用字體"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Większe rozmiary"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Större hjälpmedelsstorlekar"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Større skriftstørrelser"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Større tekststørrelser"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Larger Accessibility Sizes"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "बड़े ऐक्सेसिबिलिटी आकार"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tailles de police plus grandes"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "การช่วยการเข้าถึงขนาดใหญ่ขึ้น"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "更大的辅助功能字体"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Didesni prieinamumo dydžiai"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Larger Accessibility Sizes"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saiz Lebih Besar"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Větší velikosti Zpřístupnění"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Väčšie veľkosti prístupnosti"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "По-големи размери на достъпност"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Večje velikosti za dostopnost"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Larger Accessibility Sizes"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Größerer dynamischer Text"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kích cỡ Trợ năng Lớn hơn"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tamaños más grandes"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Більші динамічні шрифти"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Әмбебап қол жеткізудің үлкенірек өлшемдері"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tailles de police plus grandes"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dimensiuni mai mari"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tamanhos Maiores"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "さらに大きな文字"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prilagodi veličine"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tamanhos maiores"
+          }
+        }
+      }
+    },
+    "LARGER_SIZES_HELP_TEXT": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ניתן לבחור גדלים נוספים בהגדרות ״נגישות״."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "손쉬운 사용 설정에서 더 큰 크기를 선택할 수 있습니다."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ukuran yang lebih besar tersedia di Pengaturan Aksesibilitas."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Käyttöapu-asetuksissa on käytettävissä suurempia kokoja."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Grotere tekstgroottes zijn beschikbaar via de instellingen voor toegankelijkheid."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Daha büyük puntolar Erişilebilirlik ayarlarında bulunabilir."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Még nagyobb méretek a Kisegítő lehetőségek beállításaiban érhetők el."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Более крупные размеры шрифтов доступны в настройках универсального доступа."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dimensioni maggiori sono disponibili nelle impostazioni di Accessibilità."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Μεγαλύτερα μεγέθη είναι διαθέσιμα στις Ρυθμίσεις προσβασιμότητας."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hay tamaños más legibles en la configuración de Accesibilidad."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hi ha mides d’accessibilitat més grans disponibles a la configuració d’accessibilitat."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تتوفر أحجام أكبر في إعدادات تسهيلات الاستخدام."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "「輔助使用」中還可設定更大的字體。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "「輔助使用」中還可設定更大的字體。"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Większe rozmiary są dostępne w ustawieniach dostępności."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Det finns större storlekar i inställningarna för Hjälpmedel."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Det finnes flere størrelser i tilgjengelighetsinnstillingene."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Der kan vælges større størrelser i Tilgængelighed."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Larger sizes are available in Accessibility Settings."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ऐक्सेसिबिलिटी सेटिंग्ज़ में बड़े आकार उपलब्ध हैं।"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De plus grandes tailles sont disponibles dans les réglages Accessibilité."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ขนาดใหญ่ขึ้นมีอยู่ในการตั้งค่าการช่วยการเข้าถึง"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“辅助功能”设置中有更大字体可供选择。"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Didesnius dydžius galite pasirinkti „Prieinamumo nustatymuose“."
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Larger sizes are available in Accessibility Settings."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saiz lebih besar tersedia dalam Seting Kebolehcapaian."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Větší velikosti jsou dostupné v nastavení Zpřístupnění."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Väčšie veľkosti sú dostupné v nastaveniach Prístupnosti."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "По-големи размери са налични в Настройки за улеснен достъп."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Večje velikosti so na voljo v nastavitvah pod Dostopnost."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Larger sizes are available in Accessibility Settings."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Größere Textgrößen sind in den Einstellungen für Bedienungshilfen verfügbar."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kích cỡ lớn hơn có sẵn trong Cài đặt Trợ năng."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En los ajustes de accesibilidad puedes seleccionar tamaños más grandes."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Більші розміри можна вибрати в меню Доступності."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Үлкенірек өлшемдер әмбебап қол жеткізу параметрлерінде қолжетімді."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De plus grandes tailles sont disponibles dans les réglages Accessibilité."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "În configurarea Accesibilitate sunt disponibile dimensiuni mai mari."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Há tamanhos maiores disponíveis nos Ajustes de Acessibilidade."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "さらに大きな文字を使用したい場合は、“アクセシビリティ”設定で設定できます。"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dodatne veličine dostupne su u postavkama Pristupačnost."
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estão disponíveis tamanhos maiores nas Definições de Acessibilidade."
+          }
+        }
+      }
+    },
+    "DYNAMIC_TYPE_SLIDER_INDICATOR": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "א"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "А"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أ"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "क"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ก"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "字"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "А"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "あ"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A"
+          }
+        }
+      }
+    },
+    "DYNAMIC_TYPE_DESCRIPTION": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "יישומים התומכים בכתב דינמי יתאימו את עצמם לגודל המלל המועדף שבחרת למעלה."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "יישומים התומכים בכתב דינמי יתאימו את עצמם לגודל המלל המועדף שבחרת למעלה."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "יישומים התומכים בכתב דינמי יתאימו את עצמם לגודל המלל המועדף שבחרת למעלה."
+                }
+              }
+            }
+          }
+        },
+        "ko": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "유동적 글자 크기 조절을 지원하는 앱은 위와 같이 선호하는 글자 크기로 조절됩니다."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "유동적 글자 크기 조절을 지원하는 앱은 아래와 같이 선호하는 글자 크기로 조절됩니다."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "유동적 글자 크기 조절을 지원하는 앱은 위와 같이 선호하는 글자 크기로 조절됩니다."
+                }
+              }
+            }
+          }
+        },
+        "id": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "App yang mendukung Pengetikan Dinamis akan diatur sesuai ukuran bacaan pilihan Anda di atas."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "App yang mendukung Pengetikan Dinamis akan diatur sesuai ukuran bacaan pilihan Anda di bawah ini."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "App yang mendukung Pengetikan Dinamis akan diatur sesuai ukuran bacaan pilihan Anda di atas."
+                }
+              }
+            }
+          }
+        },
+        "fi": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Dynaamista tekstiä tukevat apit käyttävät yllä valitsemaasi kirjainkokoa."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Dynaamista tekstiä tukevat apit käyttävät alla valitsemaasi kirjainkokoa."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Dynaamista tekstiä tukevat apit käyttävät yllä valitsemaasi kirjainkokoa."
+                }
+              }
+            }
+          }
+        },
+        "nl": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Apps die dynamische tekst ondersteunen worden aangepast aan de hierboven ingestelde lettergrootte."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Apps die dynamische tekst ondersteunen worden aangepast aan de hieronder ingestelde lettergrootte."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Apps die dynamische tekst ondersteunen worden aangepast aan de hierboven ingestelde lettergrootte."
+                }
+              }
+            }
+          }
+        },
+        "tr": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Dinamik Font’u destekleyen uygulamalar, tercih ettiğiniz yukarıdaki okuma puntosuna göre ayarlanır."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Dinamik Font’u destekleyen uygulamalar, tercih ettiğiniz aşağıdaki okuma puntosuna göre ayarlanır."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Dinamik Font’u destekleyen uygulamalar, tercih ettiğiniz yukarıdaki okuma puntosuna göre ayarlanır."
+                }
+              }
+            }
+          }
+        },
+        "hu": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "A dinamikus betűtípusokat támogató appok az Ön által fentiekben beállított olvasási mérethez fognak igazodni."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "A dinamikus betűtípusokat támogató appok az Ön által alábbiakban beállított olvasási mérethez fognak igazodni."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "A dinamikus betűtípusokat támogató appok az Ön által fentiekben beállított olvasási mérethez fognak igazodni."
+                }
+              }
+            }
+          }
+        },
+        "ru": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "В приложениях, поддерживающих «Динамический шрифт», шрифт меняется согласно выбранному выше размеру."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "В приложениях, поддерживающих «Динамический шрифт», шрифт меняется согласно выбранному ниже размеру."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "В приложениях, поддерживающих «Динамический шрифт», шрифт меняется согласно выбранному выше размеру."
+                }
+              }
+            }
+          }
+        },
+        "it": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Le app che supportano il font dinamico si adatteranno alle dimensioni del testo indicate sopra."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Le app che supportano il font dinamico si adatteranno alle dimensioni del testo indicate sotto."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Le app che supportano il font dinamico si adatteranno alle dimensioni del testo indicate sopra."
+                }
+              }
+            }
+          }
+        },
+        "el": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Θα εφαρμόζεται αυτό το μέγεθος σε εφαρμογές που υποστηρίζουν Δυναμικό κείμενο."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Θα εφαρμόζεται αυτό το μέγεθος σε εφαρμογές που υποστηρίζουν Δυναμικό κείμενο."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Θα εφαρμόζεται αυτό το μέγεθος σε εφαρμογές που υποστηρίζουν Δυναμικό κείμενο."
+                }
+              }
+            }
+          }
+        },
+        "es_419": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Las apps compatibles con Tamaño de letra dinámico se ajustarán a tu tamaño de lectura preferido arriba."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Las apps compatibles con Tamaño de letra dinámico se ajustarán a tu tamaño de lectura preferido abajo."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Las apps compatibles con Tamaño de letra dinámico se ajustarán a tu tamaño de lectura preferido arriba."
+                }
+              }
+            }
+          }
+        },
+        "ca": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Les apps compatibles amb la mida de lletra dinàmica s’ajustaran a la teva mida de lectura preferida."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Les apps compatibles amb la mida de lletra dinàmica s’ajustaran a la teva mida de lectura preferida."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Les apps compatibles amb la mida de lletra dinàmica s’ajustaran a la teva mida de lectura preferida."
+                }
+              }
+            }
+          }
+        },
+        "ar": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "سيتم ضبط التطبيقات التي تدعم النص الديناميكي بحيث تتلاءم مع حجم القراءة المفضل أعلاه."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "سيتم ضبط التطبيقات التي تدعم النص الديناميكي بحيث تتلاءم مع حجم القراءة المفضل أدناه."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "سيتم ضبط التطبيقات التي تدعم النص الديناميكي بحيث تتلاءم مع حجم القراءة المفضل أعلاه."
+                }
+              }
+            }
+          }
+        },
+        "zh_TW": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "支援「動態字級」的App會把文字調整到上方你偏好的字體大小。"
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "支援「動態字級」的App會把文字調整到下列你偏好的字體大小。"
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "支援「動態字級」的App會把文字調整到上方你偏好的字體大小。"
+                }
+              }
+            }
+          }
+        },
+        "zh_HK": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "支援「動態字體」的App會把文字調整到以上你所偏好的字體大小。"
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "支援「動態字體」的App會把文字調整到以下你偏好的字體大小。"
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "支援「動態字體」的App會把文字調整到以上你所偏好的字體大小。"
+                }
+              }
+            }
+          }
+        },
+        "pl": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Aplikacje używające czcionki dynamicznej dostosują wielkość tekstu powyżej."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Aplikacje używające czcionki dynamicznej dostosują wielkość tekstu poniżej."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Aplikacje używające czcionki dynamicznej dostosują wielkość tekstu powyżej."
+                }
+              }
+            }
+          }
+        },
+        "sv": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Appar med stöd för dynamisk text kommer att justeras till lässtorleken ovan."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Appar med stöd för dynamisk text kommer att justeras till lässtorleken nedan."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Appar med stöd för dynamisk text kommer att justeras till lässtorleken ovan."
+                }
+              }
+            }
+          }
+        },
+        "no": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Apper som støtter dynamisk skrift, justerer seg etter den foretrukne størrelsen din."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Apper som støtter Dynamisk skrift, justerer seg etter den foretrukne skriftstørrelsen din."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Apper som støtter dynamisk skrift, justerer seg etter den foretrukne størrelsen din."
+                }
+              }
+            }
+          }
+        },
+        "da": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Apps, der understøtter dynamisk skrift, justerer tekst til din foretrukne læsestørrelse ovenfor."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Apps, der understøtter dynamisk skrift, justerer tekst til din foretrukne læsestørrelse nedenfor."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Apps, der understøtter dynamisk skrift, justerer tekst til din foretrukne læsestørrelse ovenfor."
+                }
+              }
+            }
+          }
+        },
+        "en": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Apps that support Dynamic Type will adjust to your preferred reading size above."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Apps that support Dynamic Type will adjust to your preferred reading size below."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Apps that support Dynamic Type will adjust to your preferred reading size above."
+                }
+              }
+            }
+          }
+        },
+        "hi": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "ऐसे ऐप्स, जो डाइनैमिक टाइप का समर्थन करते हैं, आपके उपर्युक्त पसंदीदा पठन आकार के अनुसार ऐडजस्ट हो जाएँगे।"
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "ऐसे ऐप्स, जो डाइनैमिक टाइप का समर्थन करते हैं, आपके निम्न पसंदीदा पठन आकार के अनुसार ऐडजस्ट हो जाएँगे।"
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "ऐसे ऐप्स, जो डाइनैमिक टाइप का समर्थन करते हैं, आपके उपर्युक्त पसंदीदा पठन आकार के अनुसार ऐडजस्ट हो जाएँगे।"
+                }
+              }
+            }
+          }
+        },
+        "fr_CA": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Les applications prenant en charge le format dynamique s’adapteront à votre taille de lecture préférée."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Les applications prenant en charge le format dynamique s’adapteront à votre taille de lecture préférée."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Les applications prenant en charge le format dynamique s’adapteront à votre taille de lecture préférée."
+                }
+              }
+            }
+          }
+        },
+        "th": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "แอปที่รองรับการปรับข้อความอย่างยืดหยุ่นจะปรับขนาดข้อความตามที่คุณต้องการด้านบน"
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "แอปที่รองรับการปรับข้อความอย่างยืดหยุ่นจะปรับขนาดข้อความตามที่คุณต้องการด้านล่าง"
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "แอปที่รองรับการปรับข้อความอย่างยืดหยุ่นจะปรับขนาดข้อความตามที่คุณต้องการด้านบน"
+                }
+              }
+            }
+          }
+        },
+        "zh_CN": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "支持动态字体的App将会调整为上方的首选阅读字体大小。"
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "支持动态字体的App将会调整为下方的首选阅读字体大小。"
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "支持动态字体的App将会调整为上方的首选阅读字体大小。"
+                }
+              }
+            }
+          }
+        },
+        "lt": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Programos, palaikančios dinaminį tipą, prisitaikys prie pirmiau esančio pageidaujamo teksto dydžio."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Programos, palaikančios dinaminį tipą, prisitaikys prie toliau esančio pageidaujamo teksto dydžio."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Programos, palaikančios dinaminį tipą, prisitaikys prie pirmiau esančio pageidaujamo teksto dydžio."
+                }
+              }
+            }
+          }
+        },
+        "en_GB": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Apps that support Dynamic Type will adjust to your preferred reading size above."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Apps that support Dynamic Type will adjust to your preferred reading size below."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Apps that support Dynamic Type will adjust to your preferred reading size above."
+                }
+              }
+            }
+          }
+        },
+        "ms": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "App yang menyokong Taip Dinamik akan dilaraskan kepada saiz bacaan pilihan anda di atas."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "App yang menyokong Taip Dinamik akan dilaraskan kepada saiz bacaan pilihan anda di bawah."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "App yang menyokong Taip Dinamik akan dilaraskan kepada saiz bacaan pilihan anda di atas."
+                }
+              }
+            }
+          }
+        },
+        "cs": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Aplikace, jež podporují funkci Dynamické písmo, se nastaví do preferované velikosti písma."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Aplikace, jež podporují funkci Dynamické písmo, se nastaví do preferované velikosti písma."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Aplikace, jež podporují funkci Dynamické písmo, se nastaví do preferované velikosti písma."
+                }
+              }
+            }
+          }
+        },
+        "sk": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Apky podporujúce Dynamické písmo budú používať vyššie špecifikovanú veľkosť písma."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Apky podporujúce Dynamické písmo budú používať nižšie špecifikovanú veľkosť písma."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Apky podporujúce Dynamické písmo budú používať vyššie špecifikovanú veľkosť písma."
+                }
+              }
+            }
+          }
+        },
+        "bg": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Приложенията, които поддържат Динамичен шрифт, ще се настройват спрямо вашия предпочитан размер на четене по-горе."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Приложенията, които поддържат Динамичен шрифт, ще се настройват спрямо вашия предпочитан размер на четене по-долу."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Приложенията, които поддържат Динамичен шрифт, ще се настройват спрямо вашия предпочитан размер на четене по-горе."
+                }
+              }
+            }
+          }
+        },
+        "sl": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Aplikacije, ki podpirajo dinamično vrsto, se prilagodijo zgoraj navedeni prednostni bralni velikosti."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Aplikacije, ki podpirajo dinamično vrsto, se prilagodijo spodaj navedeni prednostni bralni velikosti."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Aplikacije, ki podpirajo dinamično vrsto, se prilagodijo zgoraj navedeni prednostni bralni velikosti."
+                }
+              }
+            }
+          }
+        },
+        "en_AU": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Apps that support Dynamic Type will adjust to your preferred reading size above."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Apps that support Dynamic Type will adjust to your preferred reading size below."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Apps that support Dynamic Type will adjust to your preferred reading size above."
+                }
+              }
+            }
+          }
+        },
+        "de": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Apps, die dynamischen Text unterstützen, passen sich an die oben festgelegte Lesegröße an."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Apps, die dynamischen Text unterstützen, passen sich an die unten festgelegte Lesegröße an."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Apps, die dynamischen Text unterstützen, passen sich an die oben festgelegte Lesegröße an."
+                }
+              }
+            }
+          }
+        },
+        "vi": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Các ứng dụng hỗ trợ Kiểu động sẽ điều chỉnh theo kích cỡ đọc ưa thích của bạn ở trên."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Các ứng dụng hỗ trợ Kiểu Động sẽ điều chỉnh theo kích cỡ đọc ưa thích của bạn bên dưới."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Các ứng dụng hỗ trợ Kiểu động sẽ điều chỉnh theo kích cỡ đọc ưa thích của bạn ở trên."
+                }
+              }
+            }
+          }
+        },
+        "es": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Las apps compatibles con el tamaño de letra dinámico se ajustarán a tu tamaño de lectura preferido."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Las apps compatibles con el tamaño de letra dinámico se ajustarán a tu tamaño de lectura preferido."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Las apps compatibles con el tamaño de letra dinámico se ajustarán a tu tamaño de lectura preferido."
+                }
+              }
+            }
+          }
+        },
+        "uk": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Програми, які підтримують Динамічний шрифт, адаптуватимуться до розміру шрифту, наведеного вище."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Програми, які підтримують Динамічний шрифт, адаптуватимуться до розміру шрифту, наведеного нижче."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Програми, які підтримують Динамічний шрифт, адаптуватимуться до розміру шрифту, наведеного вище."
+                }
+              }
+            }
+          }
+        },
+        "kk": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "«Динамикалық қаріп» функциясына қолдау көрсететін қолданбаларда қаріп жоғарыда таңдалған өлшемге сәйкес реттеледі."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "«Динамикалық қаріп» функциясына қолдау көрсететін қолданбаларда қаріп төменде таңдалған өлшемге сәйкес реттеледі."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "«Динамикалық қаріп» функциясына қолдау көрсететін қолданбаларда қаріп жоғарыда таңдалған өлшемге сәйкес реттеледі."
+                }
+              }
+            }
+          }
+        },
+        "fr": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Les apps qui prennent en charge les polices dynamiques s’adapteront à votre taille de police préférée pour la lecture indiquée ci-dessus."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Les apps qui prennent en charge les polices dynamiques s’adapteront à votre taille de police préférée pour la lecture indiquée ci-dessous."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Les apps qui prennent en charge les polices dynamiques s’adapteront à votre taille de police préférée pour la lecture indiquée ci-dessus."
+                }
+              }
+            }
+          }
+        },
+        "ro": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Aplicațiile compatibile cu funcția “Font dinamic” își vor ajusta dimensiunea textului pe baza configurării dvs. de mai sus."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Aplicațiile compatibile cu funcția “Font dinamic” își vor ajusta dimensiunea textului pe baza configurării dvs. de mai jos."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Aplicațiile compatibile cu funcția “Font dinamic” își vor ajusta dimensiunea textului pe baza configurării dvs. de mai sus."
+                }
+              }
+            }
+          }
+        },
+        "pt_BR": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Os apps compatíveis com a Fonte Dinâmica se ajustarão ao tamanho de leitura preferido acima."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Os apps compatíveis com a Fonte Dinâmica se ajustarão ao tamanho de leitura preferido abaixo."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Os apps compatíveis com a Fonte Dinâmica se ajustarão ao tamanho de leitura preferido acima."
+                }
+              }
+            }
+          }
+        },
+        "ja": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "ダイナミックタイプ機能に対応しているアプリでは、上のスライダで指定したサイズでテキストが表示されます。"
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "ダイナミックタイプ機能に対応しているアプリでは、下のスライダで指定したサイズでテキストが表示されます。"
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "ダイナミックタイプ機能に対応しているアプリでは、上のスライダで指定したサイズでテキストが表示されます。"
+                }
+              }
+            }
+          }
+        },
+        "hr": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Aplikacije koje podržavaju Dinamična slova prilagodit će se vašoj preferiranoj veličini za čitanje, navedenoj iznad."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Aplikacije koje podržavaju Dinamična slova prilagodit će se vašoj preferiranoj veličini za čitanje, navedenoj ispod."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Aplikacije koje podržavaju Dinamična slova prilagodit će se vašoj preferiranoj veličini za čitanje, navedenoj iznad."
+                }
+              }
+            }
+          }
+        },
+        "pt_PT": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "As aplicações que suportam tipo de letra dinâmico ajustarão o tamanho da letra de acordo com o tamanho definido acima."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "As aplicações que suportam tipo de letra dinâmico ajustarão o tamanho da letra de acordo com o tamanho definido abaixo."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "As aplicações que suportam tipo de letra dinâmico ajustarão o tamanho da letra de acordo com o tamanho definido acima."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "RESET_BUTTON_TEXT": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "איפוס גודל המלל לברירת-המחדל"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "서체 크기를 기본으로 재설정"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Atur Ulang Ukuran Font ke Default"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Palauta oletusfonttikoko"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stel lettertype opnieuw in op standaard"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Font Puntosunu Saptanmışa Döndür"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Betűméret alapértelmezettre állítása"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Задать размер шрифта по умолчанию"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ripristina dimensioni font di default"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Επαναφορά του μεγέθους γραμματοσειράς στην προεπιλογή"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restablecer tamaño de letra"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restableix la mida de lletra per omissió"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إعادة تعيين حجم الخط إلى الافتراضي"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "將字級重置為預設值"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "將字體大小重設為「預設」"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Domyślna wielkość czcionki"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Återställ textstorlek till förval"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nullstill til standard fontstørrelse"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nulstil skriftstørrelse til standard"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reset Font Size to Default"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "फ़ॉन्ट का आकार डिफ़ॉल्ट पर रीसेट करें"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rétablir la taille de police par défaut"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "รีเซ็ตขนาดแบบอักษรเป็นค่าเริ่มต้น"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "将字体大小还原至默认"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nustatyti numatytąjį šrifto dydį"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reset Font Size to Default"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reset Saiz Fon kepada Lalai"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Obnovit výchozí velikost písma"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resetovať veľkosť písma na predvolenú"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Нулирай Размер на шрифта на По подразбиране"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ponastavi velikost pisave na privzeto"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reset Font Size to Default"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schriftgröße auf Standard zurücksetzen"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đặt lại cỡ chữ về mặc định"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restablecer el tamaño de letra por omisión"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Скинути розмір шрифту до типового"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Қаріп өлшемін әдепкі қалпына келтіру"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rétablir la taille de police par défaut"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resetați la dimensiunea implicită a fontului"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Redefinir Tamanho da Fonte ao Padrão"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "フォントサイズをデフォルトにリセット"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resetiraj veličinu fonta na standardnu"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Repor tamanho predefinido do tipo de letra"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}
