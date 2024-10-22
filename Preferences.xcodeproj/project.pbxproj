@@ -127,6 +127,9 @@
 		837C03072B7F192F004D6C71 /* AppInstallationsPurchasesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C03062B7F192F004D6C71 /* AppInstallationsPurchasesView.swift */; };
 		837C03092B7F1AE0004D6C71 /* SelectOptionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C03082B7F1AE0004D6C71 /* SelectOptionList.swift */; };
 		837C9DF22CC82C3F00A7080F /* HighlightContentSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 837C9DF12CC82C3F00A7080F /* HighlightContentSettings.xcstrings */; };
+		837C9DF42CC82FDF00A7080F /* FullKeyboardAccess.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 837C9DF32CC82FDF00A7080F /* FullKeyboardAccess.xcstrings */; };
+		837C9DF62CC835EB00A7080F /* FullKeyboardAccessSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 837C9DF52CC835EB00A7080F /* FullKeyboardAccessSettings.xcstrings */; };
+		837C9DF82CC839DD00A7080F /* AXUILocalizedStrings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 837C9DF72CC839DD00A7080F /* AXUILocalizedStrings.xcstrings */; };
 		837CDF1F2C2F257F0099402B /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837CDF1E2C2F257F0099402B /* DisplayView.swift */; };
 		837D1E282B96BF9B00EDA7ED /* SelectSignInOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D1E272B96BF9B00EDA7ED /* SelectSignInOptionView.swift */; };
 		837F00E62C2CA2F500B98374 /* NameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837F00E52C2CA2F500B98374 /* NameView.swift */; };
@@ -417,6 +420,9 @@
 		837C03062B7F192F004D6C71 /* AppInstallationsPurchasesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInstallationsPurchasesView.swift; sourceTree = "<group>"; };
 		837C03082B7F1AE0004D6C71 /* SelectOptionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectOptionList.swift; sourceTree = "<group>"; };
 		837C9DF12CC82C3F00A7080F /* HighlightContentSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = HighlightContentSettings.xcstrings; sourceTree = "<group>"; };
+		837C9DF32CC82FDF00A7080F /* FullKeyboardAccess.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = FullKeyboardAccess.xcstrings; sourceTree = "<group>"; };
+		837C9DF52CC835EB00A7080F /* FullKeyboardAccessSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = FullKeyboardAccessSettings.xcstrings; sourceTree = "<group>"; };
+		837C9DF72CC839DD00A7080F /* AXUILocalizedStrings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AXUILocalizedStrings.xcstrings; sourceTree = "<group>"; };
 		837CDF1E2C2F257F0099402B /* DisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
 		837D1E272B96BF9B00EDA7ED /* SelectSignInOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSignInOptionView.swift; sourceTree = "<group>"; };
 		837F00E52C2CA2F500B98374 /* NameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameView.swift; sourceTree = "<group>"; };
@@ -621,6 +627,7 @@
 				83A3E6902CAB98C3006F4643 /* Accessibility-D93.xcstrings */,
 				832877D82CAD8C7100013B0B /* Accessibility.xcstrings */,
 				83A3E68E2CAB9743006F4643 /* AccessibilityTitles.xcstrings */,
+				837C9DF52CC835EB00A7080F /* FullKeyboardAccessSettings.xcstrings */,
 				837C9DF12CC82C3F00A7080F /* HighlightContentSettings.xcstrings */,
 				834579D22CC7D98F0027A4CD /* VoiceOverSettings.xcstrings */,
 			);
@@ -631,6 +638,7 @@
 			isa = PBXGroup;
 			children = (
 				83A3E6922CAC2832006F4643 /* Accessibility-HapticMusic.xcstrings */,
+				837C9DF72CC839DD00A7080F /* AXUILocalizedStrings.xcstrings */,
 			);
 			path = AccessibilityUIUtilities;
 			sourceTree = "<group>";
@@ -1161,6 +1169,7 @@
 				835BF1342CC1A0EF00F30DA1 /* CarKitSettings.xcstrings */,
 				832877EA2CAEE2CB00013B0B /* ControlCenterSettings.xcstrings */,
 				83A7E1592CBF047B0037F1FB /* FontSettings.xcstrings */,
+				837C9DF32CC82FDF00A7080F /* FullKeyboardAccess.xcstrings */,
 				83C3F33C2CC2BA7800AE2402 /* GameControlleriOSSettings.xcstrings */,
 				83E748B32CC6C0F80081D660 /* HandSettings.xcstrings */,
 				83C3F33E2CC2BEBA00AE2402 /* InternationalSettings.xcstrings */,
@@ -1554,6 +1563,7 @@
 			files = (
 				832877F92CAEE91600013B0B /* SOS.xcstrings in Resources */,
 				83A3E68F2CAB9743006F4643 /* AccessibilityTitles.xcstrings in Resources */,
+				837C9DF62CC835EB00A7080F /* FullKeyboardAccessSettings.xcstrings in Resources */,
 				83F745BC2CC194F900FDB3BA /* AirDropSettings.xcstrings in Resources */,
 				83FF692F2CC6C9CF00D77FBB /* LocalizedStrings-D94.xcstrings in Resources */,
 				832877E12CAD9A2C00013B0B /* BatteryUI.xcstrings in Resources */,
@@ -1570,6 +1580,8 @@
 				83A3E6932CAC2832006F4643 /* Accessibility-HapticMusic.xcstrings in Resources */,
 				83E748B62CC6C3410081D660 /* LargeFontsSettings.xcstrings in Resources */,
 				835BF1332CC19DDF00F30DA1 /* PictureInPictureSettings.xcstrings in Resources */,
+				837C9DF42CC82FDF00A7080F /* FullKeyboardAccess.xcstrings in Resources */,
+				837C9DF82CC839DD00A7080F /* AXUILocalizedStrings.xcstrings in Resources */,
 				83DB888F2CAC97BF008218E6 /* AppleID.xcstrings in Resources */,
 				833F0AD72B744D190036EAD2 /* Preview Assets.xcassets in Resources */,
 				83326C882CBEE8970034C0D8 /* Software Update.xcstrings in Resources */,

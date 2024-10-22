@@ -11,13 +11,14 @@ struct AutoHideView: View {
     // Variables
     @State private var autoHideEnabled = true
     @State private var time = 15
+    let table = "FullKeyboardAccessSettings"
     
     var body: some View {
-        CustomList(title: "Auto-Hide") {
+        CustomList(title: "FOCUS_RING_TIMEOUT".localize(table: table)) {
             Section {
-                Toggle("Auto-Hide", isOn: $autoHideEnabled.animation())
+                Toggle("FOCUS_RING_TIMEOUT".localize(table: table), isOn: $autoHideEnabled.animation())
             } footer: {
-                Text("The time it takes for focus to disappear due to inactivity.")
+                Text("FOCUS_RING_TIMEOUT_FOOTER", tableName: table)
             }
             
             if autoHideEnabled {

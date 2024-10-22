@@ -9,8 +9,9 @@ import SwiftUI
 
 struct KeyboardColorView: View {
     // Variables
-    @State private var selected = "Default"
-    let colors = ["Default", "Gray","White", "Blue", "Red", "Green", "Yellow", "Orange"]
+    @State private var selected = "DEFAULT"
+    let colors = ["DEFAULT", "Gray","White", "BlueColor", "RedColor", "GreenColor", "DISPLAY_FILTER_HUE_YELLOW", "OrangeColor"]
+    let table = "Accessibility"
     
     var body: some View {
         CustomList(title: "Color") {
@@ -28,10 +29,10 @@ struct KeyboardColorView: View {
                                     .frame(height: 12)
                             } else {
                                 Image(systemName: "circle.fill")
-                                    .foregroundStyle(Color[color])
+                                    .foregroundStyle(Color[color.localize(table: table)])
                                     .font(.caption)
                             }
-                            Text(color)
+                            Text(color.localize(table: table))
                                 .foregroundStyle(Color["Label"])
                             Spacer()
                             if selected == color {

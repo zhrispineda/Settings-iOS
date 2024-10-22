@@ -13,44 +13,47 @@ struct FullKeyboardAccessView: View {
     @State private var showingKeyboardAccessOffAlert = false
     @State private var increaseSizeEnabled = false
     @State private var highContrastEnabled = false
+    let table = "FullKeyboardAccessSettings"
+    let accTable = "Accessibility"
+    let axTable = "AXUILocalizedStrings"
     
     var body: some View {
-        CustomList(title: "Full Keyboard Access") {
+        CustomList(title: "FULL_KEYBOARD_ACCESS".localize(table: table)) {
             Section {
-                Toggle("Full Keyboard Access", isOn: $fullKeyboardAccessEnabled)
-                    .alert("Important", isPresented: $showingKeyboardAccessOffAlert) {
-                        Button("Yes") {}
-                        Button("Cancel", role: .cancel) { fullKeyboardAccessEnabled = true }
+                Toggle("FULL_KEYBOARD_ACCESS".localize(table: table), isOn: $fullKeyboardAccessEnabled)
+                    .alert("TURN_OFF_SC_ALERT_TITLE".localize(table: axTable), isPresented: $showingKeyboardAccessOffAlert) {
+                        Button("TURN_OFF_SC_ALERT_CONFIRM".localize(table: axTable)) {}
+                        Button("TURN_OFF_SC_ALERT_CANCEL".localize(table: axTable), role: .cancel) { fullKeyboardAccessEnabled = true }
                     } message: {
-                        Text("Are you sure you want to turn off Full Keyboard Access?")
+                        Text("TURN_OFF_FKA_ALERT_MESSAGE", tableName: axTable)
                     }
                     .onChange(of: fullKeyboardAccessEnabled) {
                         showingKeyboardAccessOffAlert = !fullKeyboardAccessEnabled
                     }
             } footer: {
                 Text("""
-                    **Use an external keyboard to control your \(UIDevice.current.model).**
-                    \u{2022} To show Help: Tab H
-                    \u{2022} To move forward: Tab
-                    \u{2022} To move backward: \u{21E7} Tab
-                    \u{2022} To activate: Space
-                    \u{2022} To go Home: Fn H
-                    \u{2022} To use the Control Center: Fn C
-                    \u{2022} To use the Notification Center: Fn N
+                    **\("FULL_KEYBOARD_ACCESS_FOOTER_IPHONE".localize(table: table))**
+                    \("HELP_INSTRUCTION".localize(table: table, "Tab H"))
+                    \("MOVE_FORWARD_INSTRUCTION".localize(table: table, "Tab"))
+                    \("MOVE_BACKWARD_INSTRUCTION".localize(table: table, "\u{21E7} Tab"))
+                    \("ACTIVATE_ITEM_INSTRUCTION".localize(table: table, "Space"))
+                    \("HOME_INSTRUCTION".localize(table: table, "Fn H"))
+                    \("CONTROL_CENTER_INSTRUCTION".localize(table: table, "Fn C"))
+                    \("NOTIFICATION_CENTER_INSTRUCTION".localize(table: table, "Fn N"))
                     """)
             }
             
             Section {
-                NavigationLink("Commands", destination: FullKeyboardAccessView())
+                NavigationLink("COMMANDS".localize(table: table), destination: FullKeyboardAccessView())
             }
             
             Section {
-                CustomNavigationLink(title: "Auto-Hide", status: "15s", destination: AutoHideView())
-                Toggle("Increase Size", isOn: $increaseSizeEnabled)
-                Toggle("High Contrast", isOn: $highContrastEnabled)
-                CustomNavigationLink(title: "Color", status: "Default", destination: KeyboardColorView())
+                CustomNavigationLink(title: "FOCUS_RING_TIMEOUT".localize(table: table), status: "15s", destination: AutoHideView())
+                Toggle("FOCUS_RING_LARGE_FOCUS_RING".localize(table: table), isOn: $increaseSizeEnabled)
+                Toggle("FOCUS_RING_FOCUS_RING_HIGH_CONTRAST".localize(table: table), isOn: $highContrastEnabled)
+                CustomNavigationLink(title: "FOCUS_RING_COLOR".localize(table: table), status: "DEFAULT".localize(table: accTable), destination: KeyboardColorView())
             } header: {
-                Text("Appearance")
+                Text("APPEARANCE", tableName: table)
             }
         }
     }
