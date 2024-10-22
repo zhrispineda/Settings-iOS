@@ -10,8 +10,9 @@ import SwiftUI
 struct HighlightColorView: View {
     // Variables
     var title = String()
-    @State private var selected = "Default"
-    let colors = ["Default", "Blue", "Yellow", "Green", "Pink", "Purple"]
+    @State private var selected = "DEFAULT"
+    let colors = ["DEFAULT", "BlueColor", "DISPLAY_FILTER_HUE_YELLOW", "GreenColor", "PinkColor", "PurpleColor"]
+    let table = "Accessibility"
     
     var body: some View {
         CustomList(title: title) {
@@ -22,9 +23,9 @@ struct HighlightColorView: View {
                     } label: {
                         HStack {
                             Image(systemName: "circle.fill")
-                                .foregroundStyle(Color[color])
+                                .foregroundStyle(Color[color.localize(table: table)])
                                 .font(.caption)
-                            Text(color)
+                            Text(color.localize(table: table))
                                 .foregroundStyle(Color["Label"])
                             Spacer()
                             if selected == color {

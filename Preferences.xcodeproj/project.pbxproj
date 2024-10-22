@@ -85,6 +85,7 @@
 		834565742CAAE673002BE49D /* CameraEditKit.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834565732CAAE673002BE49D /* CameraEditKit.xcstrings */; };
 		834565762CAAE7B8002BE49D /* CameraSettings-CinematicAudio.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834565752CAAE7B8002BE49D /* CameraSettings-CinematicAudio.xcstrings */; };
 		834565782CAAEB82002BE49D /* Camera.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834565772CAAEB82002BE49D /* Camera.xcstrings */; };
+		834579D32CC7D98F0027A4CD /* VoiceOverSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834579D22CC7D98F0027A4CD /* VoiceOverSettings.xcstrings */; };
 		83470D162C35A1BC00CE8613 /* AppleAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83470D152C35A1BC00CE8613 /* AppleAccountView.swift */; };
 		834765E42C7D49D000DD6244 /* AirPlayContinuityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834765E32C7D49D000DD6244 /* AirPlayContinuityView.swift */; };
 		8349E22C2C7514F6007416C5 /* ApplePencilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8349E22B2C7514F6007416C5 /* ApplePencilView.swift */; };
@@ -373,6 +374,7 @@
 		834565732CAAE673002BE49D /* CameraEditKit.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = CameraEditKit.xcstrings; sourceTree = "<group>"; };
 		834565752CAAE7B8002BE49D /* CameraSettings-CinematicAudio.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "CameraSettings-CinematicAudio.xcstrings"; sourceTree = "<group>"; };
 		834565772CAAEB82002BE49D /* Camera.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Camera.xcstrings; sourceTree = "<group>"; };
+		834579D22CC7D98F0027A4CD /* VoiceOverSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = VoiceOverSettings.xcstrings; sourceTree = "<group>"; };
 		83470D152C35A1BC00CE8613 /* AppleAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAccountView.swift; sourceTree = "<group>"; };
 		834765E32C7D49D000DD6244 /* AirPlayContinuityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPlayContinuityView.swift; sourceTree = "<group>"; };
 		8349E22B2C7514F6007416C5 /* ApplePencilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePencilView.swift; sourceTree = "<group>"; };
@@ -617,6 +619,7 @@
 				83A3E6902CAB98C3006F4643 /* Accessibility-D93.xcstrings */,
 				832877D82CAD8C7100013B0B /* Accessibility.xcstrings */,
 				83A3E68E2CAB9743006F4643 /* AccessibilityTitles.xcstrings */,
+				834579D22CC7D98F0027A4CD /* VoiceOverSettings.xcstrings */,
 			);
 			path = AccessibilitySettings;
 			sourceTree = "<group>";
@@ -1592,6 +1595,7 @@
 				832877FB2CAEEA7E00013B0B /* WiFiKitUILocalizableStrings.xcstrings in Resources */,
 				834565702CAAE202002BE49D /* CameraSettings-CameraButton.xcstrings in Resources */,
 				835BF1372CC1AAB800F30DA1 /* AutomaticContentDownload.xcstrings in Resources */,
+				834579D32CC7D98F0027A4CD /* VoiceOverSettings.xcstrings in Resources */,
 				832877DF2CAD987B00013B0B /* AppleIDSetup.xcstrings in Resources */,
 				832877F42CAEE7A200013B0B /* Localizable.xcstrings in Resources */,
 				83C3F33D2CC2BA7800AE2402 /* GameControlleriOSSettings.xcstrings in Resources */,

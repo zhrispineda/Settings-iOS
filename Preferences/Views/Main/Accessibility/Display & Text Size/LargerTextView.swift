@@ -10,15 +10,17 @@ import SwiftUI
 struct LargerTextView: View {
     // Variables
     @State private var largerAccessibilitySizes = false
+    let table = "Accessibility"
+    let fontTable = "LargeFontsSettings"
     
     var body: some View {
         ZStack {
-            CustomList(title: "Larger Text") {
+            CustomList(title: "LARGER_TEXT".localize(table: table)) {
                 Section {
-                    Toggle("Larger Accessibility Sizes", isOn: $largerAccessibilitySizes)
+                    Toggle("LARGER_DYNAMIC_TYPE".localize(table: table), isOn: $largerAccessibilitySizes)
                 }
                 if UIDevice.iPhone {
-                    Text("Apps that support Dynamic Type will adjust to your preferred reading size below.")
+                    Text("DYNAMIC_TYPE_DESCRIPTION", tableName: fontTable)
                         .multilineTextAlignment(.center)
                         .offset(y: -10)
                         .listRowBackground(Color.clear)
@@ -34,6 +36,8 @@ struct TextSizeView: View {
     // Variables
     @State private var textSize = 3.0
     @Binding var largerAccessibilitySizes: Bool
+    let table = "Accessibility"
+    let fontTable = "LargeFontsSettings"
     
     var body: some View {
         VStack {
@@ -53,7 +57,7 @@ struct TextSizeView: View {
                        step: 1.0,
                        minimumValueLabel: Image(systemName: "textformat.size.smaller"),
                        maximumValueLabel: Image(systemName: "textformat.size.larger"),
-                       label: { Text("Text Size") }
+                       label: { Text("TEXT_SIZE", tableName: table) }
                 )
                 .tint(.gray)
                 .imageScale(.large)
@@ -61,7 +65,7 @@ struct TextSizeView: View {
             }
             .padding(UIDevice.iPhone ? .bottom : .all)
             if UIDevice.iPad {
-                Text("Apps that support Dynamic Type will adjust to your preferred reading size above.")
+                Text("DYNAMIC_TYPE_DESCRIPTION", tableName: fontTable)
                     .multilineTextAlignment(.center)
                     .offset(y: -10)
                     .listRowBackground(Color.clear)

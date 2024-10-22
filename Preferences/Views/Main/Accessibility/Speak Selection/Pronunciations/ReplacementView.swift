@@ -18,17 +18,18 @@ struct ReplacementView: View {
     
     let options = ["Home Screen & App Library", "Calendar", "Contacts", "Files", "Health", "Maps", "Messages", "News", "Photos", "Reminders", "Safari", "Settings", "Shortcuts", "Siri", "Wallet", "Watch"]
     @State private var selected: [String] = []
+    let table = "VoiceOverSettings"
     
     var body: some View {
-        CustomList(title: "Replacement") {
+        CustomList(title: "EDIT_PRONUNCIATION".localize(table: table)) {
             Section {
                 HStack {
-                    Text("Phrase\t\t")
+                    Text("PRONUNCIATION_ORIGINAL_STRING".localize(table: table) + "\t\t")
                     Spacer()
                     TextField("", text: $phraseText)
                 }
                 HStack {
-                    Text("Substitution")
+                    Text("PRONUNCIATION_REPLACEMENT_STRING", tableName: table)
                     TextField("", text: $substitutionText)
                     Spacer()
                     Button {} label: {
@@ -40,14 +41,14 @@ struct ReplacementView: View {
                     .disabled(phraseText.isEmpty)
                 }
             } footer: {
-                Text("Dictate or spell out how you want the phrase to be pronounced.")
+                Text("PRONUNCIATION_DICTATE_HELP", tableName: table)
             }
             
             Section {
-                CustomNavigationLink(title: "Languages", status: "English (US)", destination: PronunciationLanguagesView())
-                CustomNavigationLink(title: "Voices", status: "All", destination: PronunciationVoicesView())
-                Toggle("Ignore case", isOn: $ignoreCaseEnabled)
-                Toggle("Apply to all apps", isOn: $applyAllAppsEnabled.animation())
+                CustomNavigationLink(title: "PRONUNCIATION_LANGUAGE".localize(table: table), status: "English (US)", destination: PronunciationLanguagesView())
+                CustomNavigationLink(title: "SPEECH_VOICES".localize(table: table), status: "VO_MODIFIER_KEY_ALL_OPTIONS".localize(table: table), destination: PronunciationVoicesView())
+                Toggle("PRONUNCIATION_IGNORE_CASE".localize(table: table), isOn: $ignoreCaseEnabled)
+                Toggle("APPLIES_TO".localize(table: table), isOn: $applyAllAppsEnabled.animation())
             }
             
             if !applyAllAppsEnabled {
@@ -69,12 +70,12 @@ struct ReplacementView: View {
                         }
                     }
                 } header: {
-                    Text("Apply To")
+                    Text("PRONUNCIATION_APPS_TITLE", tableName: table)
                 }
             }
         }
         .toolbar {
-            Button("Play", action: speakText)
+            Button("PLAY".localize(table: "Accessibility"), action: speakText)
                 .disabled(substitutionText.isEmpty)
         }
     }
