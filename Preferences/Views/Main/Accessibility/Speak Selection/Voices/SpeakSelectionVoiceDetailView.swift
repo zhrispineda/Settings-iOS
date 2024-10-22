@@ -167,7 +167,7 @@ struct SpeakSelectionVoiceDetailView: View {
     @State private var selectedVoice = "Samantha"
     
     var body: some View {
-        CustomList(title: title) {
+        CustomList(title: title, topPadding: true) {
             switch title {
             case "English":
                 Section {
@@ -184,7 +184,7 @@ struct SpeakSelectionVoiceDetailView: View {
                         }
                     }
                 } header: {
-                    Text("\nEnglish (US)")
+                    Text("English (US)")
                 }
                 
                 Section {

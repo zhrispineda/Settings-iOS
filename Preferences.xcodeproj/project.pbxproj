@@ -126,6 +126,7 @@
 		837B63002BD5FE8E0045B95C /* ControlCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837B62FF2BD5FE8E0045B95C /* ControlCenterView.swift */; };
 		837C03072B7F192F004D6C71 /* AppInstallationsPurchasesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C03062B7F192F004D6C71 /* AppInstallationsPurchasesView.swift */; };
 		837C03092B7F1AE0004D6C71 /* SelectOptionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C03082B7F1AE0004D6C71 /* SelectOptionList.swift */; };
+		837C9DF22CC82C3F00A7080F /* HighlightContentSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 837C9DF12CC82C3F00A7080F /* HighlightContentSettings.xcstrings */; };
 		837CDF1F2C2F257F0099402B /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837CDF1E2C2F257F0099402B /* DisplayView.swift */; };
 		837D1E282B96BF9B00EDA7ED /* SelectSignInOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D1E272B96BF9B00EDA7ED /* SelectSignInOptionView.swift */; };
 		837F00E62C2CA2F500B98374 /* NameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837F00E52C2CA2F500B98374 /* NameView.swift */; };
@@ -415,6 +416,7 @@
 		837B62FF2BD5FE8E0045B95C /* ControlCenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlCenterView.swift; sourceTree = "<group>"; };
 		837C03062B7F192F004D6C71 /* AppInstallationsPurchasesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInstallationsPurchasesView.swift; sourceTree = "<group>"; };
 		837C03082B7F1AE0004D6C71 /* SelectOptionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectOptionList.swift; sourceTree = "<group>"; };
+		837C9DF12CC82C3F00A7080F /* HighlightContentSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = HighlightContentSettings.xcstrings; sourceTree = "<group>"; };
 		837CDF1E2C2F257F0099402B /* DisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
 		837D1E272B96BF9B00EDA7ED /* SelectSignInOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSignInOptionView.swift; sourceTree = "<group>"; };
 		837F00E52C2CA2F500B98374 /* NameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameView.swift; sourceTree = "<group>"; };
@@ -619,6 +621,7 @@
 				83A3E6902CAB98C3006F4643 /* Accessibility-D93.xcstrings */,
 				832877D82CAD8C7100013B0B /* Accessibility.xcstrings */,
 				83A3E68E2CAB9743006F4643 /* AccessibilityTitles.xcstrings */,
+				837C9DF12CC82C3F00A7080F /* HighlightContentSettings.xcstrings */,
 				834579D22CC7D98F0027A4CD /* VoiceOverSettings.xcstrings */,
 			);
 			path = AccessibilitySettings;
@@ -1594,6 +1597,7 @@
 				83C3F33B2CC2B25100AE2402 /* Date & Time.xcstrings in Resources */,
 				832877FB2CAEEA7E00013B0B /* WiFiKitUILocalizableStrings.xcstrings in Resources */,
 				834565702CAAE202002BE49D /* CameraSettings-CameraButton.xcstrings in Resources */,
+				837C9DF22CC82C3F00A7080F /* HighlightContentSettings.xcstrings in Resources */,
 				835BF1372CC1AAB800F30DA1 /* AutomaticContentDownload.xcstrings in Resources */,
 				834579D32CC7D98F0027A4CD /* VoiceOverSettings.xcstrings in Resources */,
 				832877DF2CAD987B00013B0B /* AppleIDSetup.xcstrings in Resources */,
