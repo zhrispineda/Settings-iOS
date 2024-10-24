@@ -11,13 +11,14 @@ struct SlowKeysView: View {
     // Variables
     @State private var slowKeysEnabled = false
     @State private var time = 0.30
+    let table = "KeyboardsSettings"
     
     var body: some View {
-        CustomList(title: "Slow Keys") {
+        CustomList(title: "SLOW_KEYS".localize(table: table)) {
             Section {
-                Toggle("Slow Keys", isOn: $slowKeysEnabled.animation())
+                Toggle("SLOW_KEYS".localize(table: table), isOn: $slowKeysEnabled.animation())
             } footer: {
-                Text("Slow Keys adjusts the amount of time between when a key is pressed and when it is activated.")
+                Text("SLOW_KEYS_FOOTER", tableName: table)
             }
             
             if slowKeysEnabled {
@@ -41,5 +42,7 @@ struct SlowKeysView: View {
 }
 
 #Preview {
-    SlowKeysView()
+    NavigationStack {
+        SlowKeysView()
+    }
 }

@@ -12,13 +12,14 @@ struct KeyRepeatView: View {
     @State private var keyRepeatEnabled = true
     @State private var keyRepeatInterval = 0.10
     @State private var delayUntilRepeat = 0.40
+    let table = "KeyboardsSettings"
     
     var body: some View {
-        CustomList(title: "Key Repeat") {
+        CustomList(title: "KEY_REPEAT".localize(table: table)) {
             Section {
-                Toggle("Key Repeat", isOn: $keyRepeatEnabled.animation())
+                Toggle("KEY_REPEAT".localize(table: table), isOn: $keyRepeatEnabled.animation())
             } footer: {
-                Text("Disable Key Repeat to prevent characters being entered multiple times with a single key press.")
+                Text("KEY_REPEAT_FOOTER", tableName: table)
             }
             
             if keyRepeatEnabled {
@@ -36,7 +37,7 @@ struct KeyRepeatView: View {
                         }
                     }
                 } header: {
-                    Text("Key Repeat Interval")
+                    Text("KEY_REPEAT_INTERVAL", tableName: table)
                 }
                 
                 Section {
@@ -53,7 +54,7 @@ struct KeyRepeatView: View {
                         }
                     }
                 } header: {
-                    Text("Delay Until Repeat")
+                    Text("KEY_REPEAT_DELAY", tableName: table)
                 }
             }
         }

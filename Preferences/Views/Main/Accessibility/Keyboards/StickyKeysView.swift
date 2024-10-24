@@ -12,25 +12,26 @@ struct StickyKeysView: View {
     @State private var stickyKeysEnabled = false
     @State private var toggleWithShiftKey = false
     @State private var soundEnabled = true
+    let table = "KeyboardsSettings"
     
     var body: some View {
-        CustomList(title: "Sticky Keys") {
+        CustomList(title: "STICKY_KEYS".localize(table: table)) {
             Section {
-                Toggle("Sticky Keys", isOn: $stickyKeysEnabled)
+                Toggle("STICKY_KEYS".localize(table: table), isOn: $stickyKeysEnabled)
             } footer: {
-                Text("Sticky Keys allows modifier keys to be set without having to hold the key down.")
+                Text("STICKY_KEYS_FOOTER", tableName: table)
             }
             
             Section {
-                Toggle("Toggle With Shift Key", isOn: $toggleWithShiftKey)
+                Toggle("STICKY_KEYS_SHIFT_TOGGLE".localize(table: table), isOn: $toggleWithShiftKey)
             } footer: {
-                Text("Press the Shift key five times to toggle Sticky Keys.")
+                Text("STICKY_KEYS_SHIFT_TOGGLE_FOOTER", tableName: table)
             }
             
             Section {
-                Toggle("Sound", isOn: $soundEnabled)
+                Toggle("STICKY_KEYS_BEEP".localize(table: table), isOn: $soundEnabled)
             } footer: {
-                Text("Play a sound when a modifier key is set.")
+                Text("STICKY_KEYS_BEEP_FOOTER", tableName: table)
             }
         }
     }

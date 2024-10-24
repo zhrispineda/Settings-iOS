@@ -9,44 +9,46 @@ import SwiftUI
 
 struct StyleView: View {
     // Variables
-    @State private var selected = "Transparent Background"
-    let options = ["Transparent Background", "Large Text", "Classic", "Outline Text"]
+    @State private var selected = "MALocalize-MADefault"
+    let options = ["MALocalize-MADefault", "MALocalize-MALargeText", "MALocalize-MAClassic", "MALocalize-MAOutlineText"]
+    let table = "Captioning"
+    let nameTable = "ProfileNames"
     
     var body: some View {
-        CustomList(title: "Style") {
+        CustomList(title: "CAPTION_THEME".localize(table: table)) {
             ZStack {
                 Image(UIDevice.iPhone ? "clouds1480x350" : "clouds11024x805")
                 VStack {
                     ZStack {
                         switch selected {
-                        case "Outline Text":
-                            Text("Subtitles look like this.")
+                        case "MALocalize-MAOutlineText":
+                            Text("SAMPLE_CAPTION_TEXT", tableName: table)
                                 .foregroundStyle(.white)
                                 .font(.caption)
                                 .shadow(color: Color.black, radius: 1)
                                 .shadow(color: Color.black, radius: 1)
                                 .shadow(color: Color.black, radius: 1)
-                        case "Classic":
+                        case "MALocalize-MAClassic":
                             Rectangle()
                                 .foregroundStyle(Color.black)
-                                .frame(width: 185, height: 15)
-                            Text("Subtitles look like this.")
+                                .frame(width: 190, height: 15)
+                            Text("SAMPLE_CAPTION_TEXT", tableName: table)
                                 .foregroundStyle(.white)
                                 .font(.caption)
                                 .fontDesign(.monospaced)
-                        case "Large Text":
+                        case "MALocalize-MALargeText":
                             Rectangle()
                                 .foregroundStyle(Color.black).opacity(0.5)
-                                .frame(width: 180, height: 23)
+                                .frame(width: 190, height: 23)
                                 .clipShape(RoundedRectangle(cornerRadius: 5.0))
-                            Text("Subtitles look like this.")
+                            Text("SAMPLE_CAPTION_TEXT", tableName: table)
                                 .foregroundStyle(.white)
                         default:
                             Rectangle()
                                 .foregroundStyle(Color.black).opacity(0.5)
                                 .frame(width: 150, height: 20)
                                 .clipShape(RoundedRectangle(cornerRadius: 5.0))
-                            Text("Subtitles look like this.")
+                            Text("SAMPLE_CAPTION_TEXT", tableName: table)
                                 .foregroundStyle(.white)
                                 .font(.caption)
                         }
@@ -59,14 +61,14 @@ struct StyleView: View {
             .frame(height: 200)
             
             Section {
-                Picker("", selection: $selected) {
-                    ForEach(options, id: \.self) {
-                        Text($0)
+                Picker("CAPTION_THEME".localize(table: table), selection: $selected) {
+                    ForEach(options, id: \.self) { option in
+                        Text(option.localize(table: nameTable))
                     }
                 }
                 .pickerStyle(.inline)
                 .labelsHidden()
-                NavigationLink("Create New Style...", destination: StyleView())
+                NavigationLink("create.new.theme".localize(table: table), destination: StyleView())
             }
         }
     }
