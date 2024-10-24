@@ -11,23 +11,24 @@ struct AddFavoritePhraseView: View {
     // Variables
     @Environment(\.dismiss) private var dismiss
     @State private var phraseText = String()
+    let table = "Accessibility"
     
     var body: some View {
-        CustomList(title: "Add Favorite Phrase") {
+        CustomList(title: "LIVE_SPEECH_ADD_FAVORITE_PHRASE".localize(table: table)) {
             Section {
                 HStack {
-                    Text("Phrase\t\t")
+                    Text("LIVE_SPEECH_PHRASE".localize(table: table) + "\t\t")
                     TextField("", text: $phraseText)
                 }
             } footer: {
-                Text("Create phrases that you can quickly speak with Live Speech.")
+                Text("LIVE_SPEECH_PHRASES_FOOTER", tableName: table)
             }
         }
         .toolbar {
             Button {
                 dismiss()
             } label: {
-                Text("Save")
+                Text("SAVE", tableName: table)
                     .disabled(phraseText.isEmpty)
             }
         }

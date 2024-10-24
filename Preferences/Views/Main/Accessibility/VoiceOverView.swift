@@ -14,26 +14,32 @@ struct VoiceOverView: View {
     @State private var voiceOverEnabled = false
     @State private var largeCursor = false
     @State private var captionPanel = false
+    let table = "LocalizedStrings"
+    let voiceTable = "VoiceOverSettings"
+    let servicesTable = "VoiceOverServices"
     
     init() {
         try? Tips.configure()
     }
     
     var body: some View {
-        CustomList(title: "VoiceOver") {
+        CustomList(title: "VOICEOVER_TITLE".localize(table: voiceTable)) {
             Section {
-                Toggle("VoiceOver", isOn: $voiceOverEnabled)
+                Toggle("VOICEOVER_TITLE".localize(table: voiceTable), isOn: $voiceOverEnabled)
             } footer: {
-                VStack(alignment: .leading) {
-                    Text("**VoiceOver speaks items on screen:**")
-                    Text("\u{2022} Tap once to select an item.")
-                    Text("\u{2022} Double-tap to activate the selected item.")
-                    Text("\n[Learn more...](#)\n\n[What‘s new in VoiceOver...](#)")
-                }
+                Text("""
+                            **\("VOICEOVER_INTRO".localize(table: voiceTable))**
+                            \("SELECT_ITEM_INSTRUCTION".localize(table: voiceTable))
+                            \("PRESS_ITEM_INSTRUCTION".localize(table: voiceTable))
+                            
+                            [\("ADDITIONAL_VOICEOVER_COMMANDS".localize(table: voiceTable))](#)
+                            
+                            [\("VoiceOverTouchWhatsNewLabel".localize(table: voiceTable))](#)
+                            """)
             }
             
             Section {
-                Button("VoiceOver Tutorial") {}
+                Button("VOICEOVER_TUTORIAL_BUTTON_TITLE".localize(table: voiceTable)) {}
             }
             
             TipView(UIDevice.iPhone ? PhoneLiveRecognitionTip() : PadLiveRecognitionTip())
@@ -56,44 +62,44 @@ struct VoiceOverView: View {
                            in: 0.0...1.0,
                            minimumValueLabel: Image(systemName: "tortoise.fill"),
                            maximumValueLabel: Image(systemName: "hare.fill"),
-                           label: { Text("Speaking Rate") }
+                           label: { Text("SPEAKING_RATE".localize(table: voiceTable)) }
                     )
                 }
                 .foregroundStyle(.secondary)
             } header: {
-                Text("Speaking Rate")
+                Text("SPEAKING_RATE".localize(table: voiceTable))
             } footer: {
-                Text("Adjusts the speaking rate of the primary voice.")
+                Text("RATE_FOOTER_TEXT".localize(table: voiceTable))
             }
             
             Section {
-                NavigationLink("Speech", destination: EmptyView())
-                NavigationLink("Braille", destination: EmptyView())
-                NavigationLink("VoiceOver Recognition", destination: EmptyView())
-                NavigationLink("Verbosity", destination: EmptyView())
-                NavigationLink("Audio", destination: EmptyView())
+                NavigationLink("SPEECH_OPTIONS".localize(table: voiceTable), destination: EmptyView())
+                NavigationLink("BRAILLE_TITLE".localize(table: voiceTable), destination: EmptyView())
+                NavigationLink("NEURAL_VOICEOVER".localize(table: voiceTable), destination: EmptyView())
+                NavigationLink("VERBOSITY".localize(table: voiceTable), destination: EmptyView())
+                NavigationLink("AUDIO_TITLE".localize(table: voiceTable), destination: EmptyView())
             }
             
             Section {
-                NavigationLink("Commands", destination: EmptyView())
-                NavigationLink("Rotor", destination: EmptyView())
-                NavigationLink("Activities", destination: EmptyView())
-                NavigationLink("Typing", destination: EmptyView())
-                NavigationLink("Quick Settings", destination: EmptyView())
+                NavigationLink("CUSTOMIZE_COMMANDS".localize(table: voiceTable), destination: EmptyView())
+                NavigationLink("ROTOR_GROUP_HEADING".localize(table: voiceTable), destination: EmptyView())
+                NavigationLink("ACTIVITIES".localize(table: voiceTable), destination: EmptyView())
+                NavigationLink("TYPING_OPTIONS".localize(table: voiceTable), destination: EmptyView())
+                NavigationLink("QUICK_SETTINGS_TITLE".localize(table: voiceTable), destination: EmptyView())
             } footer: {
-                Text("Quick settings allows you to access VoiceOver settings at any time. Access quick settings with Two finger quadruple tap.")
+                Text("QUICK_SETTINGS_USAGE_HINT".localize(table: voiceTable, "VOSGesture.TwoFingerQuadrupleTap".localize(table: servicesTable)))
             }
             
             Section {
-                CustomNavigationLink(title: "Navigation Style", status: "Flat", destination: EmptyView())
-                CustomNavigationLink(title: "Navigation Images", status: "Always", destination: EmptyView())
-                Toggle("Large Cursor", isOn: $largeCursor)
-                Toggle("Caption Panel", isOn: $captionPanel)
+                CustomNavigationLink(title: "NavigationStyle".localize(table: voiceTable), status: "NAVIGATION_STYLE_FLAT".localize(table: voiceTable), destination: EmptyView())
+                CustomNavigationLink(title: "NAVIGATE_IMAGES_TITLE".localize(table: voiceTable), status: "NAV_IMG_ALWAYS".localize(table: voiceTable), destination: EmptyView())
+                Toggle("CURSOR_STYLE".localize(table: voiceTable), isOn: $largeCursor)
+                Toggle("CAPTION_PANEL".localize(table: voiceTable), isOn: $captionPanel)
             }
             
             Section {
-                CustomNavigationLink(title: "Delay before Selection", status: "0s", destination: EmptyView())
-                CustomNavigationLink(title: "Double-tap Timeout", status: "0.35s", destination: EmptyView())
+                CustomNavigationLink(title: "DELAY_TO_SPEAK".localize(table: voiceTable), status: "0s", destination: EmptyView())
+                CustomNavigationLink(title: "DOUBLE_TAP_INTERVAL_TITLE".localize(table: voiceTable), status: "0.35s", destination: EmptyView())
             }
         }
     }
@@ -101,11 +107,11 @@ struct VoiceOverView: View {
 
 struct PadLiveRecognitionTip: Tip {
     var title: Text {
-        Text("Live Recognition")
+        Text("VO_REAL_WORLD_DETECTION", tableName: "VoiceOverSettings")
     }
     
     var message: Text? {
-        Text("Using on-device intelligence, your iPad can detect people, doors, scenes, text, and furniture around you. Four finger triple-tap to start Live Recognition or use the Live Recognition Rotor.")
+        Text("NEURAL_INTRO_IPAD", tableName: "VoiceOverSettings")
     }
     
     var image: Image? {
@@ -115,11 +121,11 @@ struct PadLiveRecognitionTip: Tip {
 
 struct PhoneLiveRecognitionTip: Tip {
     var title: Text {
-        Text("Live Recognition")
+        Text("VO_REAL_WORLD_DETECTION", tableName: "VoiceOverSettings")
     }
     
     var message: Text? {
-        Text("Using on-device intelligence, your iPhone can detect people, doors, scenes, text, and furniture around you. Four finger triple-tap to start Live Recognition or use the Live Recognition Rotor.")
+        Text("VO_LIVE_RECOGNITION_CUSTOMIZATION_IPHONE", tableName: "VoiceOverSettings")
     }
     
     var image: Image? {

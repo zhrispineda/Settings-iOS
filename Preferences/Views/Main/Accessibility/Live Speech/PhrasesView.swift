@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct PhrasesView: View {
+    // Variables
+    let table = "Accessibility"
+    
     var body: some View {
-        CustomList(title: "Phrases") {
+        CustomList(title: "LIVE_SPEECH_PHRASES".localize(table: table)) {
             NavigationLink {} label: {
                 Label("Recent", systemImage: "clock")
                     .foregroundStyle(.primary)

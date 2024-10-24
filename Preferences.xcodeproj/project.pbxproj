@@ -193,6 +193,7 @@
 		83AD8C592CCAC38E00A054B5 /* KeyboardsSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83AD8C582CCAC38E00A054B5 /* KeyboardsSettings.xcstrings */; };
 		83AD8C5B2CCAC61700A054B5 /* Captioning.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83AD8C5A2CCAC61700A054B5 /* Captioning.xcstrings */; };
 		83AD8C5D2CCAC85500A054B5 /* ProfileNames.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83AD8C5C2CCAC85500A054B5 /* ProfileNames.xcstrings */; };
+		83AD8C5F2CCAD00200A054B5 /* VoiceOverServices.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83AD8C5E2CCAD00200A054B5 /* VoiceOverServices.xcstrings */; };
 		83AFA1022BC87FC8008D4E57 /* HotspotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AFA1012BC87FC8008D4E57 /* HotspotView.swift */; };
 		83B00FF32C878F6400B18A94 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B00FF22C878F6400B18A94 /* MessagesView.swift */; };
 		83B1CFB72C1D56C900C2263C /* BiometricPasscodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B1CFB62C1D56C900C2263C /* BiometricPasscodeView.swift */; };
@@ -489,6 +490,7 @@
 		83AD8C582CCAC38E00A054B5 /* KeyboardsSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = KeyboardsSettings.xcstrings; sourceTree = "<group>"; };
 		83AD8C5A2CCAC61700A054B5 /* Captioning.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Captioning.xcstrings; sourceTree = "<group>"; };
 		83AD8C5C2CCAC85500A054B5 /* ProfileNames.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = ProfileNames.xcstrings; sourceTree = "<group>"; };
+		83AD8C5E2CCAD00200A054B5 /* VoiceOverServices.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = VoiceOverServices.xcstrings; sourceTree = "<group>"; };
 		83AFA1012BC87FC8008D4E57 /* HotspotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotspotView.swift; sourceTree = "<group>"; };
 		83B00FF22C878F6400B18A94 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 		83B1CFB62C1D56C900C2263C /* BiometricPasscodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricPasscodeView.swift; sourceTree = "<group>"; };
@@ -1194,6 +1196,7 @@
 				836CDF922CB602B300B1C5B2 /* Restrictions.xcstrings */,
 				83326C872CBEE8970034C0D8 /* Software Update.xcstrings */,
 				832877F82CAEE91600013B0B /* SOS.xcstrings */,
+				83AD8C5E2CCAD00200A054B5 /* VoiceOverServices.xcstrings */,
 				832877FA2CAEEA7E00013B0B /* WiFiKitUILocalizableStrings.xcstrings */,
 			);
 			path = Localizations;
@@ -1602,6 +1605,7 @@
 				83E748B82CC6C7A50081D660 /* LocalizedStrings-Staccato.xcstrings in Resources */,
 				833F0AD42B744D190036EAD2 /* Assets.xcassets in Resources */,
 				83A7E15A2CBF047B0037F1FB /* FontSettings.xcstrings in Resources */,
+				83AD8C5F2CCAD00200A054B5 /* VoiceOverServices.xcstrings in Resources */,
 				832877E62CAD9C6000013B0B /* Devices.xcstrings in Resources */,
 				83C3F33F2CC2BEBA00AE2402 /* InternationalSettings.xcstrings in Resources */,
 				832877DD2CAD95C300013B0B /* AppleAccountUI.xcstrings in Resources */,
