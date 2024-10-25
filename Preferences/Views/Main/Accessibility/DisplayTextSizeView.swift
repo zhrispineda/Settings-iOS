@@ -17,44 +17,45 @@ struct DisplayTextSizeView: View {
     @State private var differentiateWithoutColorEnabled = false
     @State private var preferHorizontalTextEnabled = false
     @State private var smartInvertEnabled = false
+    let table = "Accessibility"
     
     var body: some View {
-        CustomList(title: "Display & Text Size") {
+        CustomList(title: "DISPLAY_AND_TEXT".localize(table: table)) {
             Section {
-                Toggle("Bold Text", isOn: $boldTextEnabled)
-                CustomNavigationLink(title: "Larger Text", status: "Off", destination: LargerTextView())
-                Toggle("Button Shapes", isOn: $buttonShapesEnabled)
-                Toggle("On/Off Labels", isOn: $onOffLabelsEnabled)
+                Toggle("ENHANCE_TEXT_LEGIBILITY".localize(table: table), isOn: $boldTextEnabled)
+                CustomNavigationLink(title: "LARGER_TEXT".localize(table: table), status: "OFF".localize(table: table), destination: LargerTextView())
+                Toggle("BUTTON_SHAPES".localize(table: table), isOn: $buttonShapesEnabled)
+                Toggle("ON_OFF_LABELS".localize(table: table), isOn: $onOffLabelsEnabled)
             }
             
             Section {
-                Toggle("Reduce Transparency", isOn: $reduceTransparencyEnabled)
+                Toggle("ENHANCE_BACKGROUND_CONTRAST".localize(table: table), isOn: $reduceTransparencyEnabled)
             } footer: {
-                Text("Improve contrast by reducing transparency and blurs on some backgrounds to increase legibility.")
+                Text("ReduceTransparencyFooterText", tableName: table)
             }
             
             Section {
-                Toggle("Increase Contrast", isOn: $increaseContrastEnabled)
+                Toggle("TEXT_COLORS_DARKEN".localize(table: table), isOn: $increaseContrastEnabled)
             } footer: {
-                Text("Increase color contrast between app foreground and background colors.")
+                Text("TEXT_COLORS_DARKEN_FOOTER", tableName: table)
             }
             
             Section {
-                Toggle("Differentiate Without Color", isOn: $differentiateWithoutColorEnabled)
+                Toggle("DIFFERENTIATE_WITHOUT_COLOR".localize(table: table), isOn: $differentiateWithoutColorEnabled)
             } footer: {
-                Text("Replaces user interface items that rely solely on color to convey information with alternatives.")
+                Text("DIFFERENTIATE_WITHOUT_COLOR_FOOTER", tableName: table)
             }
             
             Section {
-                Toggle("Prefer Horizontal Text", isOn: $preferHorizontalTextEnabled)
+                Toggle("PREFER_HORIZONTAL_TEXT".localize(table: table), isOn: $preferHorizontalTextEnabled)
             } footer: {
-                Text("Prefer horizontal text in languages that support vertical text.")
+                Text("PREFER_HORIZONTAL_TEXT_FOOTER", tableName: table)
             }
             
             Section {
-                Toggle("Smart Invert", isOn: $smartInvertEnabled)
+                Toggle("SMART_INVERT".localize(table: table), isOn: $smartInvertEnabled)
             } footer: {
-                Text("Smart Invert reverses the colors of the display, except for images, media and some apps that use dark color styles.")
+                Text("SmartInvertColorsFooter", tableName: table)
             }
         }
     }

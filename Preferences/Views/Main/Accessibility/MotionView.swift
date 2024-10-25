@@ -17,48 +17,52 @@ struct MotionView: View {
     @State private var autoPlayMessageEffectsEnabled = true
     @State private var preferNonBlinkingCursor = false
     @State private var limitFrameRateEnabled = false
+    let table = "Accessibility"
+    let localTable = "LocalizedStrings"
+    let generalTable = "GeneralAccessibility"
+    let animateTable = "Accessibility-AnimatedImages"
     
     var body: some View {
-        CustomList(title: "Motion") {
+        CustomList(title: "MOTION_TITLE".localize(table: table)) {
             Section {
-                Toggle("Reduce Motion", isOn: $reduceMotionEnabled)
+                Toggle("REDUCE_MOTION".localize(table: table), isOn: $reduceMotionEnabled)
             } footer: {
-                Text("Reduce the motion of the user interface, including the parallax effect of icons.")
+                Text("ReduceMotionFooterText", tableName: table)
             }
             
             if reduceMotionEnabled {
                 Section {
-                    Toggle("Prefer Cross-Fade Transitions", isOn: $preferCrossFadeTransitionsEnabled)
+                    Toggle("REDUCE_MOTION_REDUCE_SLIDE_ANIMATIONS".localize(table: table), isOn: $preferCrossFadeTransitionsEnabled)
                 } footer: {
-                    Text("Reduce the motion for user interface controls that slide in when appearing and disappearing.")
+                    Text("REDUCE_MOTION_REDUCE_SLIDE_ANIMATIONS_FOOTER", tableName: table)
                 }
             }
             
             Section {
-                Toggle("Dim Flashing Lights", isOn: $dimFlashingLightsEnabled)
+                Toggle("DIM_FLASHING_LIGHTS_FULL_WIDTH".localize(table: localTable), isOn: $dimFlashingLightsEnabled)
             } footer: {
-                Text("Video content that depicts repeated flashing or strobing lights will be automatically dimmed.")
+                Text("PSE_FOOTER_TEXT", tableName: generalTable)
             }
             
             Section {
-                Toggle("Auto-Play Animated Images", isOn: $autoPlayAnimatedImagesEnabled)
-                Toggle("Auto-Play Video Previews", isOn: $autoPlayVideoPreviewsEnabled)
-                Toggle("Auto-Play Message Effects", isOn: $autoPlayMessageEffectsEnabled)
+                Toggle("REDUCE_MOTION_AUTOPLAY_ANIMATED_IMAGES".localize(table: animateTable), isOn: $autoPlayAnimatedImagesEnabled)
+                Toggle("REDUCE_MOTION_AUTOPLAY_VIDEO_PREVIEWS".localize(table: table), isOn: $autoPlayVideoPreviewsEnabled)
+                Toggle("REDUCE_MOTION_AUTOPLAY_MESSAGES_EFFECTS".localize(table: table), isOn: $autoPlayMessageEffectsEnabled)
             } footer: {
-                Text("Control if videos, animated imags, and full screen effects in messages play automatically.")
+                Text("ReduceMotionFooterText_Autoplay", tableName: animateTable)
             }
             
             Section {
-                Toggle("Prefer Non-Blinking Cursor", isOn: $preferNonBlinkingCursor)
+                Toggle("PREFER_NONBLINKING_CURSOR".localize(table: table), isOn: $preferNonBlinkingCursor)
             } footer: {
-                Text("Prefer the cursor indicator in text does not blink.")
+                Text("PREFER_NONBLINKING_CURSOR_FOOTER", tableName: table)
             }
             
             if UIDevice.ProDevice {
                 Section {
-                    Toggle("Limit Frame Rate", isOn: $limitFrameRateEnabled)
+                    Toggle("RefreshRateSlider".localize(table: table), isOn: $limitFrameRateEnabled)
                 } footer: {
-                    Text("Sets the maximum frame rate of the display to 60 frames per second.")
+                    Text("RefreshRateFooterText", tableName: table)
                 }
             }
         }

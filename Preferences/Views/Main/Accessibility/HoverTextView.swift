@@ -15,40 +15,41 @@ struct HoverTextView: View {
     @State private var backgroundColor = Color.black
     @State private var borderColor = Color.black
     @State private var activationLockEnabled = false
+    let table = "Accessibility"
     
     var body: some View {
-        CustomList(title: "Hover Text") {
+        CustomList(title: "HOVER_TYPING".localize(table: table)) {
             Section {
-                Toggle("Hover Text", isOn: $hoverTextEnabled)
+                Toggle("HOVER_TYPING".localize(table: table), isOn: $hoverTextEnabled)
             } footer: {
-                Text("Display a large-text view of items under the pointer.")
+                Text("HOVERTEXT_INTRO", tableName: table)
             }
             
             Section {
-                CustomNavigationLink(title: "Display Mode", status: "Top", destination: SelectOptionList(title: "Display Mode", options: ["Inline", "Top", "Bottom"], selected: "Top"))
-                CustomNavigationLink(title: "Scrolling Speed", status: "Default", destination: SelectOptionList(title: "Scrolling Speed", options: ["Slowest", "Slower", "Default", "Faster", "Fastest"], selected: "Default"))
-                CustomNavigationLink(title: "Font", status: "Default", destination: HoverTextFontView())
-                CustomNavigationLink(title: "Size", status: "On", destination: HoverTextSizeView())
+                CustomNavigationLink(title: "AXHoverTextDisplayModeTitle".localize(table: table), status: "AXHoverTextDisplayModeDockedTopTitle".localize(table: table), destination: SelectOptionList(title: "AXHoverTextDisplayModeTitle".localize(table: table), options: ["AXHoverTextDisplayModeInlineHoverTitle".localize(table: table), "AXHoverTextDisplayModeDockedTopTitle".localize(table: table), "AXHoverTextDisplayModeDockedBottomTitle".localize(table: table)], selected: "AXHoverTextDisplayModeDockedTopTitle".localize(table: table)))
+                CustomNavigationLink(title: "AXHoverTextScrollingSpeedTitle".localize(table: table), status: "AXHoverTextScrollingSpeedDefaultTitle".localize(table: table), destination: SelectOptionList(title: "AXHoverTextScrollingSpeedTitle".localize(table: table), options: ["AXHoverTextScrollingSpeedSlowestTitle".localize(table: table), "AXHoverTextScrollingSpeedSlowerTitle".localize(table: table), "AXHoverTextScrollingSpeedDefaultTitle".localize(table: table), "AXHoverTextScrollingSpeedFasterTitle".localize(table: table), "AXHoverTextScrollingSpeedFastestTitle".localize(table: table)], selected: "AXHoverTextScrollingSpeedDefaultTitle".localize(table: table)))
+                CustomNavigationLink(title: "HOVER_TEXT_TEXT_STYLE".localize(table: table), status: "AXHoverTextScrollingSpeedDefaultTitle".localize(table: table), destination: HoverTextFontView())
+                CustomNavigationLink(title: "HOVER_TEXT_TEXT_SIZE".localize(table: table), status: "ON".localize(table: table), destination: HoverTextSizeView())
             } header: {
-                Text("Text")
+                Text("HOVER_TEXT_TEXT_OPTIONS", tableName: table)
             }
             
             Section {
-                ColorPicker("Text Color", selection: $textColor)
-                ColorPicker("Insertion Point Color", selection: $insertionPointColor)
-                ColorPicker("Background Color", selection: $backgroundColor)
-                ColorPicker("Border Color", selection: $borderColor)
+                ColorPicker("HOVER_TEXT_TEXT_COLOR".localize(table: table), selection: $textColor)
+                ColorPicker("HOVER_TEXT_INSERTION_POINT_COLOR".localize(table: table), selection: $insertionPointColor)
+                ColorPicker("HOVER_TEXT_BACKGROUND_COLOR".localize(table: table), selection: $backgroundColor)
+                ColorPicker("HOVER_TEXT_BORDER_COLOR".localize(table: table), selection: $borderColor)
             } header: {
-                Text("Colors")
+                Text("HOVER_TEXT_COLOR_OPTIONS", tableName: table)
             }
             
             Section {
-                CustomNavigationLink(title: "Activation Modifier", status: "⌃ Control", destination: SelectOptionList(title: "Activation Modifier", options: ["⌃ Control", "⌥ Option", "⌘ Command"], selected: "⌃ Control"))
-                Toggle("Activation Lock", isOn: $activationLockEnabled)
+                CustomNavigationLink(title: "HOVER_TEXT_ACTIVATION_MODIFIER".localize(table: table), status: "HOVER_TEXT_ACITVATOR_KEY_CONTROL".localize(table: table), destination: SelectOptionList(title: "HOVER_TEXT_ACTIVATION_MODIFIER".localize(table: table), options: ["HOVER_TEXT_ACITVATOR_KEY_CONTROL".localize(table: table), "HOVER_TEXT_ACITVATOR_KEY_OPTION".localize(table: table), "HOVER_TEXT_ACITVATOR_KEY_COMMAND".localize(table: table)], selected: "HOVER_TEXT_ACITVATOR_KEY_CONTROL".localize(table: table)))
+                Toggle("HOVER_TEXT_ACTIVATION_LOCK".localize(table: table), isOn: $activationLockEnabled)
             } header: {
-                Text("Control")
+                Text("HOVER_TEXT_CONTROL_OPTIONS", tableName: table)
             } footer: {
-                Text("Triple-press the activation modifier to lock.")
+                Text("HOVER_TEXT_CONTROL_OPTIONS_FOOTER", tableName: table)
             }
         }
     }
