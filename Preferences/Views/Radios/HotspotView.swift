@@ -18,7 +18,7 @@ struct HotspotView: View {
     
     var body: some View {
         CustomList {
-            SectionHelp(title: "Personal Hotspot", color: .green, icon: "personalhotspot", description: "Personal Hotspot allows you to share a cellular internet connection from your \(UIDevice.current.model) to other nearby devices. [Learn more...](https://support.apple.com/guide/iphone/share-your-internet-connection-iph45447ca6/ios)")
+            Placard(title: "Personal Hotspot", color: .green, icon: "personalhotspot", description: "Personal Hotspot allows you to share a cellular internet connection from your \(UIDevice.current.model) to other nearby devices. [Learn more...](https://support.apple.com/guide/iphone/share-your-internet-connection-iph45447ca6/ios)")
                 .overlay { // For calculating opacity of the principal toolbar item
                     GeometryReader { geo in
                         Color.clear

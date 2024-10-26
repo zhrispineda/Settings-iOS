@@ -1,13 +1,13 @@
 //
-//  SectionHelp.swift
+//  Placard.swift
 //  Preferences
 //
-//  Section to explain views
+//  Placard notice at the top of views to explain expected functionality of items below
 //
 
 import SwiftUI
 
-struct SectionHelp: View {
+struct Placard: View {
     // Variables
     var title = String()
     var color = Color.blue
@@ -76,7 +76,7 @@ struct SectionHelp: View {
     NavigationStack {
         List {
             Section {
-                SectionHelp(title: "General", color: Color.gray, icon: "gear", description: "PLACARD_SUBTITLE")
+                Placard(title: "General", color: Color.gray, icon: "gear", description: "PLACARD_SUBTITLE")
             }
         }
     }

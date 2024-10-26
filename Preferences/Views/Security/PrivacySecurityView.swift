@@ -15,7 +15,7 @@ struct PrivacySecurityView: View {
     
     var body: some View {
         CustomList(title: "Back") {
-            SectionHelp(title: "PRIVACY".localize(table: table), color: .blue, icon: "hand.raised.fill", description: "Control which apps can access your data, location, camera, and microphone, and manage safety protections. [Learn more...](https://support.apple.com/guide/iphone/use-built-in-privacy-and-security-protections-iph6e7d349d1/ios)")
+            Placard(title: "PRIVACY".localize(table: table), color: .blue, icon: "hand.raised.fill", description: "Control which apps can access your data, location, camera, and microphone, and manage safety protections. [Learn more...](https://support.apple.com/guide/iphone/use-built-in-privacy-and-security-protections-iph6e7d349d1/ios)")
                 .overlay { // For calculating opacity of the principal toolbar item
                     GeometryReader { geo in
                         Color.clear

@@ -15,7 +15,7 @@ struct ContactsView: View {
     var body: some View {
         CustomList(title: "Back") {
             Section {
-                SectionHelp(title: "Contacts", icon: "appleContacts", description: "Add and remove accounts, manage Siri & Search, and customize how contacts appears. [Learn more...](https://support.apple.com/guide/\(UIDevice.current.model))")
+                Placard(title: "Contacts", icon: "appleContacts", description: "Add and remove accounts, manage Siri & Search, and customize how contacts appears. [Learn more...](https://support.apple.com/guide/\(UIDevice.current.model))")
                     .overlay { // For calculating opacity of the principal toolbar item
                         GeometryReader { geo in
                             Color.clear

@@ -25,7 +25,7 @@ struct NetworkView: View {
                 }
             } else {
                 Section {
-                    SectionHelp(title: "kWFLocWiFiPlacardTitle".localize(table: table), color: Color.blue, icon: "wifi", description: "kWFLocWiFiPlacardSubtitle".localize(table: table))
+                    Placard(title: "kWFLocWiFiPlacardTitle".localize(table: table), color: Color.blue, icon: "wifi", description: "kWFLocWiFiPlacardSubtitle".localize(table: table))
                         .overlay { // For calculating opacity of the principal toolbar item
                             GeometryReader { geo in
                                 Color.clear

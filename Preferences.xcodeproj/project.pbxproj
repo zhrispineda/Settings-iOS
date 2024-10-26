@@ -110,7 +110,7 @@
 		835BF1372CC1AAB800F30DA1 /* AutomaticContentDownload.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 835BF1362CC1AAB800F30DA1 /* AutomaticContentDownload.xcstrings */; };
 		836000782BCC7A470034DDF5 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836000772BCC7A470034DDF5 /* NotificationsView.swift */; };
 		836167D82C25FA3A00458CD8 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836167D72C25FA3A00458CD8 /* CalendarView.swift */; };
-		8361A2292C19308600A7D5CC /* SectionHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8361A2282C19308600A7D5CC /* SectionHelp.swift */; };
+		8361A2292C19308600A7D5CC /* Placard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8361A2282C19308600A7D5CC /* Placard.swift */; };
 		8361A22B2C193DBA00A7D5CC /* SettingsSimulator.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8361A22A2C193DBA00A7D5CC /* SettingsSimulator.gif */; };
 		836A7E892B981D8E00FA3223 /* AppleAccountLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836A7E882B981D8E00FA3223 /* AppleAccountLoginView.swift */; };
 		836A7E8B2B995E4000FA3223 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836A7E8A2B995E4000FA3223 /* ForgotPasswordView.swift */; };
@@ -413,7 +413,7 @@
 		835BF1362CC1AAB800F30DA1 /* AutomaticContentDownload.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AutomaticContentDownload.xcstrings; sourceTree = "<group>"; };
 		836000772BCC7A470034DDF5 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		836167D72C25FA3A00458CD8 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
-		8361A2282C19308600A7D5CC /* SectionHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHelp.swift; sourceTree = "<group>"; };
+		8361A2282C19308600A7D5CC /* Placard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placard.swift; sourceTree = "<group>"; };
 		8361A22A2C193DBA00A7D5CC /* SettingsSimulator.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SettingsSimulator.gif; sourceTree = "<group>"; };
 		836A7E882B981D8E00FA3223 /* AppleAccountLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAccountLoginView.swift; sourceTree = "<group>"; };
 		836A7E8A2B995E4000FA3223 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
@@ -1137,7 +1137,7 @@
 				838C232F2B74978C0053D4C5 /* HText.swift */,
 				83B98E2F2B7C087B007F6C94 /* IconToggle.swift */,
 				83A5DA502C2335580012ACB3 /* PermissionsView.swift */,
-				8361A2282C19308600A7D5CC /* SectionHelp.swift */,
+				8361A2282C19308600A7D5CC /* Placard.swift */,
 				837C03082B7F1AE0004D6C71 /* SelectOptionList.swift */,
 				835683932B754623000FB136 /* SettingsLabel.swift */,
 				835683912B753FDD000FB136 /* SettingsLink.swift */,
@@ -1768,7 +1768,7 @@
 				83F3F6A72B7D2BAA003CC310 /* FontsView.swift in Sources */,
 				83F78A1B2B8E8E3900025062 /* KeyboardColorView.swift in Sources */,
 				83D31F7C2B8D67460057CFDB /* PronunciationLanguagesView.swift in Sources */,
-				8361A2292C19308600A7D5CC /* SectionHelp.swift in Sources */,
+				8361A2292C19308600A7D5CC /* Placard.swift in Sources */,
 				83F3F6A52B7D16F6003CC310 /* GameControllerView.swift in Sources */,
 				830DA8022B9BE17B001EE76F /* ParentGuardianSignInView.swift in Sources */,
 				83D2687A2BD7303800A86DA9 /* DisplayBrightnessView.swift in Sources */,

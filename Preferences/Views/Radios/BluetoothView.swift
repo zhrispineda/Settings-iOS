@@ -18,7 +18,7 @@ struct BluetoothView: View {
     var body: some View {
         CustomList {
             Section {
-                SectionHelp(title: "BLUETOOTH".localize(table: table), color: Color.blue, icon: "bluetooth", description: "\("BLUETOOTHPLACARDINFO".localize(table: table)) [\("LEARN_MORE".localize(table: table))](https://support.apple.com/guide/\(UIDevice.iPhone ?  "iphone/bluetooth-accessories-iph3c50f191/ios" : "ipad/bluetooth-accessories-ipad997da4cf/ipados"))")
+                Placard(title: "BLUETOOTH".localize(table: table), color: Color.blue, icon: "bluetooth", description: "\("BLUETOOTHPLACARDINFO".localize(table: table)) [\("LEARN_MORE".localize(table: table))](https://support.apple.com/guide/\(UIDevice.iPhone ?  "iphone/bluetooth-accessories-iph3c50f191/ios" : "ipad/bluetooth-accessories-ipad997da4cf/ipados"))")
                     .overlay { // For calculating opacity of the principal toolbar item
                         GeometryReader { geo in
                             Color.clear

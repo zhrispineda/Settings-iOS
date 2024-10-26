@@ -14,7 +14,7 @@ struct SafetyCheckView: View {
     var body: some View {
         CustomList(title: "Safety Check") {
             Section {
-                SectionHelp(title: "Safety Check", color: .white, iconColor: .blue, icon: "person.badge.shield.checkmark.fill", description: "Reset or manage access to your information across apps, devices, and people you‘re currently sharing with. [Learn More...](https://support.apple.com/guide/personal-safety/how-safety-check-works-ips2aad835e1/web)")
+                Placard(title: "Safety Check", color: .white, iconColor: .blue, icon: "person.badge.shield.checkmark.fill", description: "Reset or manage access to your information across apps, devices, and people you‘re currently sharing with. [Learn More...](https://support.apple.com/guide/personal-safety/how-safety-check-works-ips2aad835e1/web)")
             }
             
             Section {

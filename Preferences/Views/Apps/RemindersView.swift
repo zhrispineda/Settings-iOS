@@ -22,7 +22,7 @@ struct RemindersView: View {
     var body: some View {
         CustomList(title: "Back") {
             Section {
-                SectionHelp(title: "Reminders", icon: "appleReminders", description: "Add and remove accounts, manage Siri & Search, and customize how your reminders work. [Learn more...](https://support.apple.com/guide/\(UIDevice.current.model))")
+                Placard(title: "Reminders", icon: "appleReminders", description: "Add and remove accounts, manage Siri & Search, and customize how your reminders work. [Learn more...](https://support.apple.com/guide/\(UIDevice.current.model))")
                     .overlay { // For calculating opacity of the principal toolbar item
                         GeometryReader { geo in
                             Color.clear

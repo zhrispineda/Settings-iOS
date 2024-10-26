@@ -40,7 +40,7 @@ struct ScreenTimeView: View {
                 }
             } else {
                 Section {
-                    SectionHelp(title: "Screen Time", color: Color.indigo, icon: "hourglass", description: "Get insights about your screen time and set limits as needed. Adults can also set parental controls for a child's device.")
+                    Placard(title: "Screen Time", color: Color.indigo, icon: "hourglass", description: "Get insights about your screen time and set limits as needed. Adults can also set parental controls for a child's device.")
                 }
             }
             
