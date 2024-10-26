@@ -9,8 +9,8 @@ import SwiftUI
 
 struct SiriVoiceView: View {
     // Variables
-    @State private var selectedVariety = "American"
-    let varietyOptions = ["American", "Australian", "British", "Indian"," Irish", "South African"]
+    @State private var selectedVariety = "REGION_en-US"
+    let varietyOptions = ["REGION_en-US", "REGION_en-AU", "REGION_en-GB", "REGION_en-IN","REGION_en-IE", "REGION_en-ZA"]
     
     @State private var selectedAmericanVoice = "Voice 4"
     @State private var selectedBritishVoice = "Voice 3"
@@ -20,24 +20,25 @@ struct SiriVoiceView: View {
     let americanVoiceOptions = ["Voice 1", "Voice 2", "Voice 3", "Voice 4", "Voice 5"]
     let britishVoiceOptions = ["Voice 1", "Voice 2", "Voice 3", "Voice 4"]
     let voiceOptions = ["Voice 1", "Voice 2"]
+    let table = "AssistantSettings"
     
     var body: some View {
-        CustomList(title: "Siri Voice") {
+        CustomList(title: "VOICE".localize(table: table), topPadding: true) {
             Section {
-                Picker("", selection: $selectedVariety) {
+                Picker("VOICE".localize(table: table), selection: $selectedVariety) {
                     ForEach(varietyOptions, id: \.self) {
-                        Text($0)
+                        Text($0.localize(table: table))
                     }
                 }
                 .pickerStyle(.inline)
                 .labelsHidden()
             } header: {
-                Text("Variety")
+                Text("VOICE_LANGUAGE_HEADER", tableName: table)
             }
             
             Section {
                 switch selectedVariety {
-                case "American":
+                case "REGION_en-US":
                     Picker("", selection: $selectedAmericanVoice) {
                         ForEach(americanVoiceOptions, id: \.self) {
                             Text($0)
@@ -45,7 +46,7 @@ struct SiriVoiceView: View {
                     }
                     .pickerStyle(.inline)
                     .labelsHidden()
-                case "British":
+                case "REGION_en-GB":
                     Picker("", selection: $selectedBritishVoice) {
                         ForEach(britishVoiceOptions, id: \.self) {
                             Text($0)
@@ -53,7 +54,7 @@ struct SiriVoiceView: View {
                     }
                     .pickerStyle(.inline)
                     .labelsHidden()
-                case "Indian":
+                case "REGION_en-IN":
                     Picker("", selection: $selectedIndianVoice) {
                         ForEach(voiceOptions, id: \.self) {
                             Text($0)
@@ -71,12 +72,14 @@ struct SiriVoiceView: View {
                     .labelsHidden()
                 }
             } header: {
-                Text("Voice")
+                Text("VOICE", tableName: table)
             }
         }
     }
 }
 
 #Preview {
-    SiriVoiceView()
+    NavigationStack {
+        SiriVoiceView()
+    }
 }

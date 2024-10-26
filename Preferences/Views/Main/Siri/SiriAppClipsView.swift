@@ -12,29 +12,32 @@ struct SiriAppClipsView: View {
     @State private var learnAppClipsEnabled = true
     @State private var showSearchEnabled = true
     @State private var suggestAppClipsEnabled = true
+    let table = "AssistantSettings"
     
     var body: some View {
-        CustomList(title: "App Clips") {
+        CustomList(title: "APP_CLIPS".localize(table: table), topPadding: true) {
             Section {
-                Toggle("Learn from App Clips", isOn: $learnAppClipsEnabled)
+                Toggle("APP_CLIPS_LEARN_FROM_APP_CLIPS".localize(table: table), isOn: $learnAppClipsEnabled)
             } header: {
-                Text("In App Clips")
+                Text("APP_CLIPS_IN_APP_CLIPS_HEADER", tableName: table)
             } footer: {
-                Text("Allow Siri to learn how you use app clips to make suggestions across apps.")
+                Text("APP_CLIPS_IN_APP_CLIPS_FOOTER", tableName: table)
             }
             
             Section {
-                Toggle("Show in Search", isOn: $showSearchEnabled)
-                Toggle("Suggest App Clips", isOn: $suggestAppClipsEnabled)
+                Toggle("APP_CLIPS_SHOW_IN_SEARCH".localize(table: table), isOn: $showSearchEnabled)
+                Toggle("APP_CLIPS_SUGGEST_APP_CLIPS".localize(table: table), isOn: $suggestAppClipsEnabled)
             } header: {
-                Text("On Home Screen")
+                Text("SIRIANDSEARCH_PERAPP_ONHOMESCREEN_HEADER", tableName: table)
             } footer: {
-                Text("Allow Search and Shortcuts to show app clips. App clip suggestions are based on your location.")
+                Text("APP_CLIPS_IN_SEARCH_FOOTER", tableName: table)
             }
         }
     }
 }
 
 #Preview {
-    SiriAppClipsView()
+    NavigationStack {
+        SiriAppClipsView()
+    }
 }

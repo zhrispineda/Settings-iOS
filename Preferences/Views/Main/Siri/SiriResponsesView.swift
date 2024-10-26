@@ -9,40 +9,60 @@ import SwiftUI
 
 struct SiriResponsesView: View {
     // Variables
-    @State private var selected = "Automatic"
+    @State private var selected = "AUTOMATIC"
     @State private var alwaysShowSiriCaptionsEnabled = false
-    @State private var alwaysShowSpeechEnabled = false
-    let options = ["Prefer Silent Responses", "Automatic", "Prefer Spoken Responses"]
+    @State private var alwaysShowRequestEnabled = false
+    let options = ["VOICE_FEEDBACK_TITLE_NEVER", "AUTOMATIC", "VOICE_FEEDBACK_TITLE_PREFER_SPOKEN"]
+    let table = "AssistantSettings"
+    let accTable = "Accessibility"
+    let audTable = "AssistantAudioFeedback"
     
     var body: some View {
-        CustomList(title: "Siri Responses") {
+        CustomList(title: "VOICE_FEEDBACK".localize(table: table), topPadding: true) {
             Section {
-                Picker("", selection: $selected) {
+                Picker("SIRI_SETTINGS_TYPE_TO_SIRI_TTS".localize(table: accTable), selection: $selected) {
                     ForEach(options, id: \.self) {
-                        Text($0)
+                        Text($0.localize(table: accTable))
                     }
                 }
                 .pickerStyle(.inline)
                 .labelsHidden()
             } header: {
-                Text("Spoken Responses")
+                Text("SIRI_SETTINGS_TYPE_TO_SIRI_TTS", tableName: accTable)
+            } footer: {
+                switch selected {
+                case "VOICE_FEEDBACK_TITLE_NEVER":
+                    if UIDevice.iPhone {
+                        Text("VOICE_FEEDBACK_FOOTER_NEVER_IPHONE", tableName: accTable)
+                    } else if UIDevice.iPad {
+                        Text("VOICE_FEEDBACK_FOOTER_NEVER_IPAD", tableName: accTable)
+                    }
+                case "AUTOMATIC":
+                    Text("VOICE_FEEDBACK_FOOTER_TEXT_AUTOMATIC", tableName: accTable)
+                case "VOICE_FEEDBACK_TITLE_PREFER_SPOKEN":
+                    Text("VOICE_FEEDBACK_FOOTER_PREFER_SPOKEN", tableName: accTable)
+                default:
+                    Text(String())
+                }
             }
             
             Section {
-                Toggle("Always Show Siri Captions", isOn: $alwaysShowSiriCaptionsEnabled)
+                Toggle("ALWAYS_PRINT_RESPONSE".localize(table: audTable), isOn: $alwaysShowSiriCaptionsEnabled)
             } footer: {
-                Text("Show what Siri says on screen.")
+                Text("ALWAYS_PRINT_RESPONSE_FOOTER_TEXT", tableName: audTable)
             }
             
             Section {
-                Toggle("Always Show Speech", isOn: $alwaysShowSpeechEnabled)
+                Toggle("ALWAYS_SHOW_RECOGNIZED_SPEECH".localize(table: audTable), isOn: $alwaysShowRequestEnabled)
             } footer: {
-                Text("Show a transcription of your speech on screen.")
+                Text("ALWAYS_SHOW_RECOGNIZED_SPEECH_FOOTER_TEXT", tableName: audTable)
             }
         }
     }
 }
 
 #Preview {
-    SiriResponsesView()
+    NavigationStack {
+        SiriResponsesView()
+    }
 }

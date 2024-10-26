@@ -14,7 +14,7 @@ struct SiriLanguageView: View {
     @State private var selected = "English (United States)"
     
     var body: some View {
-        CustomList(title: "Language") {
+        CustomList(title: "LANGUAGE".localize(table: "AssistantSettings")) {
             ForEach(languages, id: \.self) { lang in
                 if lang == "English (India)" {
                     NavigationLink(destination: EnglishIndiaView()) {

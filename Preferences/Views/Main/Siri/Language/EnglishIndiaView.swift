@@ -8,30 +8,31 @@
 import SwiftUI
 
 struct EnglishIndiaView: View {
-    @State private var selected = "English Only"
-    let options = ["English & Hindi", "English Only"]
+    @State private var selected = "MULTILINGUAL_DETAIL_OPTION_ENGLISH_ONLY"
+    let options = ["MULTILINGUAL_DETAIL_OPTION_MIXED_en-IN", "MULTILINGUAL_DETAIL_OPTION_ENGLISH_ONLY"]
+    let table = "AssistantMultilingualDetail"
     
     var body: some View {
         CustomList(title: "English (India)") {
             Section {} footer: {
-                Text("Siri can recognize multiple languages in India. You can speak to Siri using English mixed with Bangla, Gujarati, Hindi, Kannada, Malayalam, Marathi, Punjabi, Tamil, or Telugu. [Learn more...](https://support.apple.com/en-us/105012)")
+                Text("MULTILINGUAL_DETAIL_HEADER_en-IN", tableName: table)
             }
             
             Section {
-                Picker("", selection: $selected) {
+                Picker("MULTILINGUAL_DETAIL_GROUP_TITLE".localize(table: table), selection: $selected) {
                     ForEach(options, id: \.self) {
-                        Text($0)
+                        Text($0.localize(table: table))
                     }
                 }
                 .pickerStyle(.inline)
                 .labelsHidden()
             } header: {
-                Text("Preferred Response Language")
+                Text("MULTILINGUAL_DETAIL_GROUP_TITLE", tableName: table)
             } footer: {
-                if selected == "English Only" {
-                    Text("Siri will respond in English only.")
+                if selected == "MULTILINGUAL_DETAIL_OPTION_ENGLISH_ONLY" {
+                    Text("MULTILINGUAL_DETAIL_FOOTER_ENGLISH_ONLY", tableName: table)
                 } else {
-                    Text("Siri will respond either in English or in Hindi, based on the primary language you use to interact with Siri. This selection applies to iOS only.")
+                    Text("MULTILINGUAL_DETAIL_FOOTER_MIXED_en-IN", tableName: table)
                 }
             }
         }
@@ -39,5 +40,7 @@ struct EnglishIndiaView: View {
 }
 
 #Preview {
-    EnglishIndiaView()
+    NavigationStack {
+        EnglishIndiaView()
+    }
 }

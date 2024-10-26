@@ -13,37 +13,42 @@ struct SiriDictationHistoryView: View {
     @State private var showingDeleteHistoryAlert = false
     @State private var showingDeleteHistoryDialog = false
     @State private var showingProcessRequestAlert = false
+    let table = "AssistantSettings"
     
     var body: some View {
-        CustomList(title: "Siri & Dictation History") {
+        CustomList(title: "ASSISTANT_HISTORY_LABEL".localize(table: table)) {
             Section {
-                Button("Delete Siri & Dictation History") {
+                Button("DELETE_SIRI_HISTORY_ACTION".localize(table: table)) {
                     UIDevice.iPhone ? showingDeleteHistoryDialog.toggle() : showingDeleteHistoryAlert.toggle()
                 }
                 .foregroundStyle(.red)
-                .alert("Delete Siri & Dictation History", isPresented: $showingDeleteHistoryAlert) {
-                    Button("Delete Siri & Dictation History", role: .destructive) { showingProcessRequestAlert.toggle()
+                .alert("DELETE_SIRI_HISTORY".localize(table: table), isPresented: $showingDeleteHistoryAlert) {
+                    Button("DELETE_SIRI_HISTORY_ACTION".localize(table: table), role: .destructive) { showingProcessRequestAlert.toggle()
                         dismiss()
                     }
-                    Button("Cancel", role: .cancel) {}
+                    Button("DELETE_SIRI_HISTORY_ALERT_SHEET_CANCEL".localize(table: table), role: .cancel) {}
                 } message: {
-                    Text("Siri & Dictation interactions currently associated with this \(UIDevice.current.model) will be deleted from Apple servers.")
+                    Text("DELETE_SIRI_HISTORY_ALERT_SHEET_MESSAGE_IPAD", tableName: table)
                 }
-                .confirmationDialog("Delete Siri & Dictation History", isPresented: $showingDeleteHistoryDialog, titleVisibility: .visible) {
-                    Button("Delete Siri & Dictation History", role: .destructive) { showingProcessRequestAlert.toggle()
+                .confirmationDialog("DELETE_SIRI_HISTORY".localize(table: table), isPresented: $showingDeleteHistoryDialog, titleVisibility: .visible) {
+                    Button("DELETE_SIRI_HISTORY_ACTION".localize(table: table), role: .destructive) { showingProcessRequestAlert.toggle()
                         dismiss()
                     }
-                    Button("Cancel", role: .cancel) {}
+                    Button("DELETE_SIRI_HISTORY_ALERT_SHEET_CANCEL".localize(table: table), role: .cancel) {}
                 } message: {
-                    Text("Siri & Dictation interactions currently associated with this \(UIDevice.current.model) will be deleted from Apple servers.")
+                    Text("DELETE_SIRI_HISTORY_ALERT_SHEET_MESSAGE_IPHONE", tableName: table)
                 }
-                .alert("Your Process Is Being Requested", isPresented: $showingProcessRequestAlert) {
-                    Button("OK") {}
+                .alert("DELETE_SIRI_HISTORY_ALERT_SUCCESS_TITLE".localize(table: table), isPresented: $showingProcessRequestAlert) {
+                    Button("DELETE_SIRI_HISTORY_ALERT_DISMISS".localize(table: table)) {}
                 } message: {
-                    Text("Your Siri and Dictation history will be deleted.")
+                    Text("DELETE_SIRI_HISTORY_ALERT_SUCCESS_MESSAGE", tableName: table)
                 }
             } footer: {
-                Text("Delete Siri & Dictation interactions currently associated with this \(UIDevice.current.model) from Apple servers. [About Improve Siri & Dictation...](#)")
+                if UIDevice.iPhone {
+                    Text("DELETE_SIRI_HISTORY_FOOTER_EXPLANATION_IPHONE_OPTEDOUT", tableName: table) + Text("[\("DELETE_SIRI_HISTORY_FOOTER_LINK".localize(table: table))](#)")
+                } else if UIDevice.iPad {
+                    Text("DELETE_SIRI_HISTORY_FOOTER_EXPLANATION_IPAD_OPTEDOUT", tableName: table) + Text("[\("DELETE_SIRI_HISTORY_FOOTER_LINK".localize(table: table))](#)")
+                }
             }
         }
     }
