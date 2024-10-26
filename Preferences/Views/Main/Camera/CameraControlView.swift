@@ -32,7 +32,7 @@ struct CameraControlView: View {
             }
             
             Section {
-                Picker("Launch Camera", selection: $selectedGesture) {
+                Picker("CAPTURE_BUTTON_LAUNCH_APP_TITLE".localize(table: table), selection: $selectedGesture) {
                     ForEach(options, id: \.self) { option in
                         Text(option.localize(table: table))
                     }
@@ -46,7 +46,7 @@ struct CameraControlView: View {
             }
             
             Section {
-                Picker("Launch Camera", selection: $selectedApp) {
+                Picker("CAPTURE_BUTTON_LAUNCH_APP_TITLE".localize(table: table), selection: $selectedApp) {
                     ForEach(apps) { app in
                         SettingsLabel(color: .white, icon: app.icon, id: app.id.localize(table: table))
                     }

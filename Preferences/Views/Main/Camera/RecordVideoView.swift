@@ -17,6 +17,8 @@ struct RecordVideoView: View {
     var options = ["CAM_RECORD_VIDEO_720p_30", "CAM_RECORD_VIDEO_1080p_30", "CAM_RECORD_VIDEO_1080p_60", "CAM_RECORD_VIDEO_4K_24", "CAM_RECORD_VIDEO_4K_30", "CAM_RECORD_VIDEO_4K_60"]
     var optionsPal = ["CAM_RECORD_VIDEO_720p_30", "CAM_RECORD_VIDEO_1080p_25", "CAM_RECORD_VIDEO_1080p_30", "CAM_RECORD_VIDEO_1080p_60", "CAM_RECORD_VIDEO_4K_24", "CAM_RECORD_VIDEO_4K_25", "CAM_RECORD_VIDEO_4K_30", "CAM_RECORD_VIDEO_4K_60"]
     let table = "CameraSettings"
+    let hiResTable = "CameraSettings-4k120"
+    let trueVideoTable = "CameraSettings-TrueVideo"
     
     init() { // Change options based on device on initialization
         if UIDevice.AdvancedPhotographicStylesCapability && UIDevice.ProDevice { // 16 Pro & 16 Pro Max
@@ -28,9 +30,13 @@ struct RecordVideoView: View {
     var body: some View {
         CustomList(title: "CAM_RECORD_VIDEO_TITLE".localize(table: table)) {
             Section {
-                Picker("Camera Setting", selection: $selected) {
+                Picker("CAM_RECORD_VIDEO_TITLE".localize(table: table), selection: $selected) {
                     ForEach(showPalFormats ? optionsPal : options, id: \.self) { option in
-                        Text(option.localize(table: table))
+                        if option.contains("100") || option.contains("120") {
+                            Text(option.localize(table: hiResTable))
+                        } else {
+                            Text(option.localize(table: table))
+                        }
                     }
                 }
                 .pickerStyle(.inline)
@@ -42,10 +48,10 @@ struct RecordVideoView: View {
                 }
             } footer: {
                 VStack(alignment: .leading) {
-                    if UIDevice.iPhone && !UIDevice.ProDevice{
+                    if UIDevice.iPhone && !UIDevice.ProDevice {
                         Text("CAM_RECORD_VIDEO_FOOTER_QUICKTAKE".localize(table: table))
                     } else {
-                        Text("CAM_RECORD_VIDEO_FOOTER_TRUE_VIDEO".localize(table: table))
+                        Text("CAM_RECORD_VIDEO_FOOTER_TRUE_VIDEO".localize(table: trueVideoTable))
                     }
                     
                     Text("\n" + "CAM_RECORD_VIDEO_FOOTER_HEAD".localize(table: table))
@@ -56,7 +62,7 @@ struct RecordVideoView: View {
                     Text("CAM_RECORD_VIDEO_1080p_30_HEVC\(hdrVideo ? "_DOLBY" : "")_FOOTER".localize(table: table))
                     Text("CAM_RECORD_VIDEO_1080p_60_HEVC\(hdrVideo ? "_DOLBY" : "")_FOOTER".localize(table: table))
                     if UIDevice.AdvancedPhotographicStylesCapability && UIDevice.ProDevice {
-                        Text("CAM_RECORD_VIDEO_1080P_120_HEVC\(hdrVideo ? "_DOLBY" : "")_FOOTER".localize(table: table))
+                        Text("CAM_RECORD_VIDEO_1080P_120_HEVC\(hdrVideo ? "_DOLBY" : "")_FOOTER".localize(table: hiResTable))
                     }
                     Text("CAM_RECORD_VIDEO_4K_24_HEVC\(hdrVideo ? "_DOLBY" : "")_FOOTER".localize(table: table))
                     if showPalFormats {
@@ -66,9 +72,9 @@ struct RecordVideoView: View {
                     Text("CAM_RECORD_VIDEO_4K_60_HEVC\(hdrVideo ? "_DOLBY" : "")_FOOTER".localize(table: table))
                     if UIDevice.AdvancedPhotographicStylesCapability && UIDevice.ProDevice {
                         if showPalFormats {
-                            Text("CAM_RECORD_VIDEO_4K_100_HEVC\(hdrVideo ? "_DOLBY" : "")_FOOTER".localize(table: table))
+                            Text("CAM_RECORD_VIDEO_4K_100_HEVC\(hdrVideo ? "_DOLBY" : "")_FOOTER".localize(table: hiResTable))
                         }
-                        Text("CAM_RECORD_VIDEO_4K_120_HEVC\(hdrVideo ? "_DOLBY" : "")_FOOTER".localize(table: table))
+                        Text("CAM_RECORD_VIDEO_4K_120_HEVC\(hdrVideo ? "_DOLBY" : "")_FOOTER".localize(table: hiResTable))
                     }
                 }
             }
@@ -97,7 +103,7 @@ struct RecordVideoView: View {
                 Section {
                     Toggle("CAM_HDR_VIDEO_TITLE".localize(table: table), isOn: $hdrVideo)
                 } footer: {
-                    Text(UIDevice.AdvancedPhotographicStylesCapability ? "CAM_HDR_VIDEO_FOOTER_4k120".localize(table: table) : "CAM_HDR_VIDEO_FOOTER".localize(table: table))
+                    Text(UIDevice.AdvancedPhotographicStylesCapability ? "CAM_HDR_VIDEO_FOOTER_4k120".localize(table: hiResTable) : "CAM_HDR_VIDEO_FOOTER".localize(table: table))
                 }
             }
             
