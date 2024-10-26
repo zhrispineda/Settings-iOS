@@ -13,37 +13,40 @@ struct SubtitlesCaptioningView: View {
     @State private var showAudioTranscriptionsEnabled = false
     @State private var showWhenMuted = true
     @State private var showOnSkipBack = true
+    let table = "Captioning"
+    let profTable = "ProfileNames"
+    let podTable = "Captioning-dinnerbell"
     
     var body: some View {
-        CustomList(title: "Subtitles & Captioning") {
+        CustomList(title: "CAPTIONING_TITLE".localize(table: table)) {
             Section {
-                Toggle("Closed Captioning + SDH", isOn: $closedCaptionsSDHEnabled)
+                Toggle("PREFER_SDH".localize(table: table), isOn: $closedCaptionsSDHEnabled)
             } footer: {
-                Text("When available, prefer captioning or subtitles for the deaf and hard of hearing.")
+                Text("SDH_FOOTER_TEXT", tableName: table)
             }
             
             Section {
-                CustomNavigationLink(title: "Style", status: "Transparent Background", destination: StyleView())
+                CustomNavigationLink(title: "CAPTION_THEME".localize(table: table), status: "MALocalize-MADefault".localize(table: profTable), destination: StyleView())
             }
             
             Section {
-                Toggle("Show Audio Transcriptions", isOn: $showAudioTranscriptionsEnabled)
+                Toggle("SHOW_AUDIO_TRANSCRIPTIONS".localize(table: podTable), isOn: $showAudioTranscriptionsEnabled)
             } footer: {
-                Text("Show audio transcriptions for announcements from HomePod.")
+                Text("SHOW_AUDIO_TRANSCRIPTIONS_FOOTER", tableName: podTable)
             }
             
             Section {
-                Toggle("Show when Muted", isOn: $showWhenMuted)
+                Toggle("SHOW_WHEN_MUTED".localize(table: table), isOn: $showWhenMuted)
             } header: {
-                Text("Automatic Subtitles")
+                Text("AUTOMATIC_SUBTITLES", tableName: table)
             } footer: {
-                Text("Automatically turn on subtitles when the volume is muted or turned all the way down.")
+                Text("SHOW_WHEN_MUTED_FOOTER", tableName: table)
             }
             
             Section {
-                Toggle("Show on Skip Back", isOn: $showOnSkipBack)
+                Toggle("SHOW_ON_SKIP_BACK".localize(table: table), isOn: $showOnSkipBack)
             } footer: {
-                Text("Temporarily turn on subtitles when you skip back, up to 30 seconds.")
+                Text("SHOW_ON_SKIP_BACK_FOOTER", tableName: table)
             }
         }
     }

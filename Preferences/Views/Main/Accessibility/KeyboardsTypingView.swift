@@ -9,42 +9,49 @@ import SwiftUI
 
 struct KeyboardsTypingView: View {
     // Variables
-    @State private var showLowercaseKeys = true
+    @State private var showLowercaseKeysEnabled = true
+    let table = "KeyboardsSettings"
+    let accTable = "Accessibility"
+    let keyTable = "FullKeyboardAccessSettings"
     
     var body: some View {
-        CustomList(title: "Keyboards & Typing") {
+        CustomList(title: "KEYBOARDS".localize(table: table), topPadding: true) {
             Section {
-                CustomNavigationLink(title: "Hover Typing", status: "Off", destination: EmptyView())
+                CustomNavigationLink(title: "HOVER_TYPING".localize(table: table), status: "OFF".localize(table: accTable), destination: HoverTextView())
             } footer: {
-                Text("Display words in larger text while typing.")
+                Text("HOVER_TYPING_FOOTER", tableName: accTable)
             }
             
             Section {
-                NavigationLink("Typing Feedback") {}
+                NavigationLink("TYPING_FEEDBACK".localize(table: table), destination: EmptyView())
             }
             
             Section {
-                CustomNavigationLink(title: "Full Keyboard Access", status: "Off", destination: EmptyView())
+                CustomNavigationLink(title: "FULL_KEYBOARD_ACCESS".localize(table: keyTable), status: "OFF", destination: FullKeyboardAccessView())
             } header: {
-                Text("Hardware Keyboards")
+                Text("HARDWARE_KEYBOARDS", tableName: table)
             } footer: {
-                Text("Use an external keyboard to control your \(UIDevice.current.model).")
+                if UIDevice.iPhone {
+                    Text("FULL_KEYBOARD_ACCESS_FOOTER_IPHONE", tableName: keyTable)
+                } else if UIDevice.iPad {
+                    Text("FULL_KEYBOARD_ACCESS_FOOTER_IPAD", tableName: keyTable)
+                }
             }
             
             Section {
-                CustomNavigationLink(title: "Key Repeat", status: "On", destination: EmptyView())
-                CustomNavigationLink(title: "Sticky Keys", status: "Off", destination: EmptyView())
-                CustomNavigationLink(title: "Slow Keys", status: "Off", destination: EmptyView())
+                CustomNavigationLink(title: "KEY_REPEAT".localize(table: table), status: "ON".localize(table: accTable), destination: KeyRepeatView())
+                CustomNavigationLink(title: "STICKY_KEYS".localize(table: table), status: "OFF".localize(table: accTable), destination: StickyKeysView())
+                CustomNavigationLink(title: "SLOW_KEYS".localize(table: table), status: "OFF".localize(table: accTable), destination: SlowKeysView())
             } footer: {
-                Text("Customize the typing experience when using an external keyboard.")
+                Text("HARDWARE_KEYBOARDS_FOOTER", tableName: table)
             }
             
             Section {
-                Toggle("Show Lowercase Keys", isOn: $showLowercaseKeys)
+                Toggle("LOWERCASE_KEYBOARD".localize(table: table), isOn: $showLowercaseKeysEnabled)
             } header: {
-                Text("Software Keyboards")
+                Text("SOFTWARE_KEYBOARDS", tableName: table)
             } footer: {
-                Text("This affects keyboards that use the Shift key to switch between uppercase and lowercase letters.")
+                Text("LOWERCASE_KEYBOARD_FOOTER", tableName: table)
             }
         }
     }

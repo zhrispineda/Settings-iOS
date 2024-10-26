@@ -10,33 +10,38 @@ import SwiftUI
 struct LiveSpeechView: View {
     // Variables
     @State private var liveSpeechEnabled = false
+    let table = "Accessibility"
     
     var body: some View {
-        CustomList(title: "Live Speech") {
+        CustomList(title: "LIVE_SPEECH".localize(table: table)) {
             Section {
-                Toggle("Live Speech", isOn: $liveSpeechEnabled)
+                Toggle("LIVE_SPEECH".localize(table: table), isOn: $liveSpeechEnabled)
             } footer: {
-                Text("Live Speech speaks aloud what you type using the speaker, and in calls. Triple-click the \(UIDevice.HomeButtonCapability ? "Home" : "Side") button to show Live Speech.\n[What‘s new in Live Speech...](#)")
+                if UIDevice.HomeButtonCapability {
+                    Text("LIVE_SPEECH_TRIPLE_CLICK_EXPLANATION", tableName: table) + Text("\n[\("LiveSpeechWhatsNewLink".localize(table: table))](#)")
+                } else if !UIDevice.HomeButtonCapability {
+                    Text("LIVE_SPEECH_TRIPLE_CLICK_EXPLANATION_NHB", tableName: table) + Text("\n[\("LiveSpeechWhatsNewLink".localize(table: table))](#)")
+                }
             }
             
             Section {
                 if UIDevice.IsSimulator {
-                    NavigationLink("Phrases") {
-                        CustomList(title: "Phrases") {}
+                    NavigationLink("LIVE_SPEECH_PHRASES".localize(table: table)) {
+                        CustomList(title: "LIVE_SPEECH_PHRASES".localize(table: table)) {}
                     }
                 } else {
-                    NavigationLink("Phrases", destination: PhrasesView())
+                    NavigationLink("LIVE_SPEECH_PHRASES".localize(table: table), destination: PhrasesView())
                 }
             } footer: {
-                Text("Create phrases that you can quickly speak with Live Speech.")
+                Text("LIVE_SPEECH_ADD_FAVORITE_PHRASE_FOOTER", tableName: table)
             }
             
             Section {
                 CustomNavigationLink(title: "English (US)", status: "Siri Voice 4 (United States)", destination: SpeakSelectionVoiceDetailView(title: "English"))
             } header: {
-                Text("Voices")
+                Text("LIVE_SPEECH_VOICES", tableName: table)
             } footer: {
-                Text("Live Speech uses Keyboards to determine available voices.")
+                Text("LIVE_SPEECH_VOICES_FOOTER", tableName: table)
             }
         }
     }
