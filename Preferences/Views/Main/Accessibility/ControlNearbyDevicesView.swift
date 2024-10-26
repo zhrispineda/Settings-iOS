@@ -8,17 +8,22 @@
 import SwiftUI
 
 struct ControlNearbyDevicesView: View {
+    // Variables
+    let table = "Accessibility"
+    
     var body: some View {
-        CustomList(title: "Control Nearby Devices") {
+        CustomList(title: "CONTROL_NEARBY_DEVICES".localize(table: table)) {
             Section {
-                Button("Control Nearby Devices") {}
+                Button("CONTROL_NEARBY_DEVICES_BUTTON".localize(table: table)) {}
             } footer: {
-                Text("Control Nearby Devices allows you to use another device on the same iCloud account from this iPhone. For example, you can start and stop media, activate buttons, or interact with Siri.")
+                Text("CONTROL_NEARBY_DEVICES_FOOTER", tableName: table)
             }
         }
     }
 }
 
 #Preview {
-    ControlNearbyDevicesView()
+    NavigationStack {
+        ControlNearbyDevicesView()
+    }
 }

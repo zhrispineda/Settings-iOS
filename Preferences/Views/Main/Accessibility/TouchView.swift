@@ -10,17 +10,22 @@ import SwiftUI
 struct TouchView: View {
     // Variables
     @State private var shakeUndoEnabled = true
+    let table = "Accessibility"
     
     var body: some View {
-        CustomList(title: "Touch") {
+        CustomList(title: "TOUCH".localize(table: table)) {
             Section {
-                CustomNavigationLink(title: "AssistiveTouch", status: "Off", destination: AssistiveTouchView())
+                CustomNavigationLink(title: "AIR_TOUCH_TITLE".localize(table: table), status: "OFF".localize(table: table), destination: AssistiveTouchView())
             }
             
             Section {
-                Toggle("Shake to Undo", isOn: $shakeUndoEnabled)
+                Toggle("SHAKE_TO_UNDO".localize(table: table), isOn: $shakeUndoEnabled)
             } footer: {
-                Text("If you tend to shake your \(UIDevice.current.model) by accident, you can disable Shake to Undo to prevent the Undo alert from appearing.")
+                if UIDevice.iPhone {
+                    Text("ShakeToUndoFooterTextFormat_IPHONE", tableName: table)
+                } else if UIDevice.iPad {
+                    Text("ShakeToUndoFooterTextFormat_IPAD", tableName: table)
+                }
             }
         }
     }

@@ -56,6 +56,7 @@
 		832F517F2BBF4DC900335E5E /* NetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832F517E2BBF4DC900335E5E /* NetworkView.swift */; };
 		832F57762CCC017A00E0CA19 /* GeneralAccessibility.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 832F57752CCC017A00E0CA19 /* GeneralAccessibility.xcstrings */; };
 		832FD83F2BC22EB000E99DEB /* BluetoothView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832FD83E2BC22EB000E99DEB /* BluetoothView.swift */; };
+		8330B26D2CCC68A90026F1C2 /* SpeechSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8330B26C2CCC68A90026F1C2 /* SpeechSettings.xcstrings */; };
 		83326C882CBEE8970034C0D8 /* Software Update.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83326C872CBEE8970034C0D8 /* Software Update.xcstrings */; };
 		8335A70C2BC358E8001E199D /* CellularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8335A70B2BC358E8001E199D /* CellularView.swift */; };
 		833854F72C1648CD00339C4F /* SoftwareUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833854F62C1648CD00339C4F /* SoftwareUpdateView.swift */; };
@@ -354,6 +355,7 @@
 		832F517E2BBF4DC900335E5E /* NetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkView.swift; sourceTree = "<group>"; };
 		832F57752CCC017A00E0CA19 /* GeneralAccessibility.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = GeneralAccessibility.xcstrings; sourceTree = "<group>"; };
 		832FD83E2BC22EB000E99DEB /* BluetoothView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothView.swift; sourceTree = "<group>"; };
+		8330B26C2CCC68A90026F1C2 /* SpeechSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = SpeechSettings.xcstrings; sourceTree = "<group>"; };
 		83326C872CBEE8970034C0D8 /* Software Update.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "Software Update.xcstrings"; sourceTree = "<group>"; };
 		8335A70B2BC358E8001E199D /* CellularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellularView.swift; sourceTree = "<group>"; };
 		833854F62C1648CD00339C4F /* SoftwareUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftwareUpdateView.swift; sourceTree = "<group>"; };
@@ -644,6 +646,7 @@
 				837C9DF52CC835EB00A7080F /* FullKeyboardAccessSettings.xcstrings */,
 				837C9DF12CC82C3F00A7080F /* HighlightContentSettings.xcstrings */,
 				83AD8C582CCAC38E00A054B5 /* KeyboardsSettings.xcstrings */,
+				8330B26C2CCC68A90026F1C2 /* SpeechSettings.xcstrings */,
 				834579D22CC7D98F0027A4CD /* VoiceOverSettings.xcstrings */,
 			);
 			path = AccessibilitySettings;
@@ -1589,6 +1592,7 @@
 			files = (
 				832877F92CAEE91600013B0B /* SOS.xcstrings in Resources */,
 				83A3E68F2CAB9743006F4643 /* AccessibilityTitles.xcstrings in Resources */,
+				8330B26D2CCC68A90026F1C2 /* SpeechSettings.xcstrings in Resources */,
 				837C9DF62CC835EB00A7080F /* FullKeyboardAccessSettings.xcstrings in Resources */,
 				83F745BC2CC194F900FDB3BA /* AirDropSettings.xcstrings in Resources */,
 				83FF692F2CC6C9CF00D77FBB /* LocalizedStrings-D94.xcstrings in Resources */,

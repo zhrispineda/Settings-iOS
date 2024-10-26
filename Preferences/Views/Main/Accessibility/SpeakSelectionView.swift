@@ -11,28 +11,30 @@ struct SpeakSelectionView: View {
     // Variables
     @State private var speakSelectionEnabled = false
     @State private var speakingRate = 0.5
+    let table = "SpeechSettings"
+    let accTable = "Accessibility"
     
     var body: some View {
-        CustomList(title: "Speak Selection") {
+        CustomList(title: "QUICK_SPEAK_TITLE".localize(table: table)) {
             Section {
-                Toggle("Speak Selection", isOn: $speakSelectionEnabled.animation())
+                Toggle("QUICK_SPEAK_TITLE".localize(table: table), isOn: $speakSelectionEnabled.animation())
             } footer: {
-                Text("A Speak button will appear when you select text.")
+                Text("QuickSpeakGeneralFooterText", tableName: table)
             }
             
             Section {
-                NavigationLink("Pronunciations", destination: PronunciationsView())
+                NavigationLink("PRONUNCIATION_DICTIONARY".localize(table: table), destination: PronunciationsView())
             }
             
             if speakSelectionEnabled {
                 Section {
-                    CustomNavigationLink(title: "Highlight Content", status: "Off", destination: HighlightContentView())
+                    CustomNavigationLink(title: "HIGHLIGHT_WORD".localize(table: table), status: "OFF".localize(table: accTable), destination: HighlightContentView())
                 } footer: {
-                    Text("Highlight content as it is spoken.")
+                    Text("QuickSpeakWordHighlightFooterText", tableName: table)
                 }
                 
                 Section {
-                    NavigationLink("Voices", destination: SpeakSelectionVoicesView())
+                    NavigationLink("QUICKSPEAK_VOICES".localize(table: table), destination: SpeakSelectionVoicesView())
                 }
                 
                 Section {
@@ -41,13 +43,13 @@ struct SpeakSelectionView: View {
                                in: 0.0...1.0,
                                minimumValueLabel: Image(systemName: "tortoise.fill"),
                                maximumValueLabel: Image(systemName: "hare.fill"),
-                               label: { Text("Speaking Rate") }
+                               label: { Text("QUICK_SPEAK_RATE", tableName: table) }
                         )
                     }
                     .imageScale(.large)
                     .foregroundStyle(.secondary)
                 } header: {
-                    Text("Speaking Rate")
+                    Text("QUICK_SPEAK_RATE", tableName: table)
                 }
             }
         }

@@ -12,34 +12,39 @@ struct FaceAttentionView: View {
     @State private var requireAttentionEnabled = true
     @State private var attentionAwareFeaturesEnabled = true
     @State private var hapticAuthentication = false
+    let table = "Accessibility"
     
     var body: some View {
-        CustomList(title: "Face ID & Attention") {
+        CustomList(title: "FACE_ID".localize(table: table)) {
             if !UIDevice.IsSimulator {
                 Section {
-                    Toggle("Require Attention for Face ID", isOn: $requireAttentionEnabled)
+                    Toggle("Pearl_Unlock_Attention_Title".localize(table: table), isOn: $requireAttentionEnabled)
                 } footer: {
-                    Text("TrueDepth camera will provide an additional level of security by verifying that you are looking at \(UIDevice.current.model) before unlocking. Some sunglasses may block attention detection.")
+                    if UIDevice.iPhone {
+                        Text("Pearl_Unlock_Attention_Footer_IPHONE", tableName: table)
+                    } else if UIDevice.iPad {
+                        Text("Pearl_Unlock_Attention_Footer_IPAD", tableName: table)
+                    }
                 }
             }
             
             Section {
-                Toggle("Attention Aware Features", isOn: $attentionAwareFeaturesEnabled)
+                Toggle("Pearl_Attention_Title".localize(table: table), isOn: $attentionAwareFeaturesEnabled)
             } footer: {
                 if UIDevice.iPhone {
-                    Text("iPhone will check for attention before dimming the display, expanding a notification when locked, or lowering the volume of some alerts.")
+                    Text("Pearl_Attention_Footer_IPHONE", tableName: table)
                 } else if UIDevice.iPad {
-                    Text("iPad will check for attention before dimming the display or lowering the volume of some alerts.")
+                    Text("Pearl_Attention_Footer_IPAD", tableName: table)
                 }
             }
             
             if !UIDevice.IsSimulator && UIDevice.iPhone {
                 Section {
-                    Toggle("Haptic on Successful Authentication", isOn: $hapticAuthentication)
+                    Toggle("Pearl_Success_Haptic".localize(table: table), isOn: $hapticAuthentication)
                 } header: {
-                    Text("Haptics")
+                    Text("Pearl_Success_Haptic_Group", tableName: table)
                 } footer: {
-                    Text("Play a haptic when Face ID successfully unlocks iPhone, authorizes Apple Pay, or verifies iTunes and App Store purchases.")
+                    Text("Pearl_Success_Haptic_Footer_IPHONE", tableName: table)
                 }
             }
         }
