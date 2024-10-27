@@ -18,6 +18,9 @@
 		8319CE4D2B86D380007EC822 /* SafetyCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319CE4C2B86D380007EC822 /* SafetyCheckView.swift */; };
 		8319CE4F2B86DB44007EC822 /* SensitiveContentWarningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319CE4E2B86DB44007EC822 /* SensitiveContentWarningView.swift */; };
 		8319CE512B86DF8A007EC822 /* AppleAdvertisingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319CE502B86DF8A007EC822 /* AppleAdvertisingView.swift */; };
+		831C1A4E2CCE9A1300866498 /* Display.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 831C1A4D2CCE9A1300866498 /* Display.xcstrings */; };
+		831C1A502CCE9E3300866498 /* HomeScreenSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 831C1A4F2CCE9E3300866498 /* HomeScreenSettings.xcstrings */; };
+		831C1A522CCE9F9000866498 /* MultitaskingAndGesturesSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 831C1A512CCE9F9000866498 /* MultitaskingAndGesturesSettings.xcstrings */; };
 		831C80412CA4998500306574 /* RecordSlomoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831C80402CA4998500306574 /* RecordSlomoView.swift */; };
 		832326FB2C9E338F00B0483B /* KeyboardsTypingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832326FA2C9E338F00B0483B /* KeyboardsTypingView.swift */; };
 		832877D92CAD8C7100013B0B /* Accessibility.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 832877D82CAD8C7100013B0B /* Accessibility.xcstrings */; };
@@ -320,6 +323,9 @@
 		8319CE4C2B86D380007EC822 /* SafetyCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyCheckView.swift; sourceTree = "<group>"; };
 		8319CE4E2B86DB44007EC822 /* SensitiveContentWarningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensitiveContentWarningView.swift; sourceTree = "<group>"; };
 		8319CE502B86DF8A007EC822 /* AppleAdvertisingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAdvertisingView.swift; sourceTree = "<group>"; };
+		831C1A4D2CCE9A1300866498 /* Display.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Display.xcstrings; sourceTree = "<group>"; };
+		831C1A4F2CCE9E3300866498 /* HomeScreenSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = HomeScreenSettings.xcstrings; sourceTree = "<group>"; };
+		831C1A512CCE9F9000866498 /* MultitaskingAndGesturesSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = MultitaskingAndGesturesSettings.xcstrings; sourceTree = "<group>"; };
 		831C80402CA4998500306574 /* RecordSlomoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSlomoView.swift; sourceTree = "<group>"; };
 		832326FA2C9E338F00B0483B /* KeyboardsTypingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardsTypingView.swift; sourceTree = "<group>"; };
 		832877D82CAD8C7100013B0B /* Accessibility.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Accessibility.xcstrings; sourceTree = "<group>"; };
@@ -1203,15 +1209,18 @@
 				832877E82CAEE14400013B0B /* CameraUI-SmartStyles.xcstrings */,
 				835BF1342CC1A0EF00F30DA1 /* CarKitSettings.xcstrings */,
 				832877EA2CAEE2CB00013B0B /* ControlCenterSettings.xcstrings */,
+				831C1A4D2CCE9A1300866498 /* Display.xcstrings */,
 				83A7E1592CBF047B0037F1FB /* FontSettings.xcstrings */,
 				83C3F33C2CC2BA7800AE2402 /* GameControlleriOSSettings.xcstrings */,
 				83E748B32CC6C0F80081D660 /* HandSettings.xcstrings */,
+				831C1A4F2CCE9E3300866498 /* HomeScreenSettings.xcstrings */,
 				83C3F33E2CC2BEBA00AE2402 /* InternationalSettings.xcstrings */,
 				83E748B52CC6C3410081D660 /* LargeFontsSettings.xcstrings */,
 				83E748B12CC6BDDE0081D660 /* LocalizedStrings.xcstrings */,
 				83FF69302CC6CDDC00D77FBB /* LocalizedStrings-DetectionMode.xcstrings */,
 				83FF692E2CC6C9CE00D77FBB /* LocalizedStrings-D94.xcstrings */,
 				83E748B72CC6C7A50081D660 /* LocalizedStrings-Staccato.xcstrings */,
+				831C1A512CCE9F9000866498 /* MultitaskingAndGesturesSettings.xcstrings */,
 				83F745B92CC18EC700FDB3BA /* NewDeviceOutreachUI.xcstrings */,
 				835BF1322CC19DDF00F30DA1 /* PictureInPictureSettings.xcstrings */,
 				83441A882CAF2B6A0022E193 /* Privacy.xcstrings */,
@@ -1611,6 +1620,7 @@
 				83A3E68F2CAB9743006F4643 /* AccessibilityTitles.xcstrings in Resources */,
 				8330B26D2CCC68A90026F1C2 /* SpeechSettings.xcstrings in Resources */,
 				837C9DF62CC835EB00A7080F /* FullKeyboardAccessSettings.xcstrings in Resources */,
+				831C1A522CCE9F9000866498 /* MultitaskingAndGesturesSettings.xcstrings in Resources */,
 				83F745BC2CC194F900FDB3BA /* AirDropSettings.xcstrings in Resources */,
 				83FF692F2CC6C9CF00D77FBB /* LocalizedStrings-D94.xcstrings in Resources */,
 				832877E12CAD9A2C00013B0B /* BatteryUI.xcstrings in Resources */,
@@ -1619,6 +1629,7 @@
 				834565742CAAE673002BE49D /* CameraEditKit.xcstrings in Resources */,
 				83FF69312CC6CDDC00D77FBB /* LocalizedStrings-DetectionMode.xcstrings in Resources */,
 				83B893C02B8FDBE8005705A3 /* iPhone15_Pro_NaturalTitanium.usdz in Resources */,
+				831C1A4E2CCE9A1300866498 /* Display.xcstrings in Resources */,
 				839657542CCC02EF00D61C8B /* Accessibility-AnimatedImages.xcstrings in Resources */,
 				83E748B42CC6C0F80081D660 /* HandSettings.xcstrings in Resources */,
 				83AD8C592CCAC38E00A054B5 /* KeyboardsSettings.xcstrings in Resources */,
@@ -1631,6 +1642,7 @@
 				83A3E6932CAC2832006F4643 /* Accessibility-HapticMusic.xcstrings in Resources */,
 				83E748B62CC6C3410081D660 /* LargeFontsSettings.xcstrings in Resources */,
 				835BF1332CC19DDF00F30DA1 /* PictureInPictureSettings.xcstrings in Resources */,
+				831C1A502CCE9E3300866498 /* HomeScreenSettings.xcstrings in Resources */,
 				837C9DF42CC82FDF00A7080F /* FullKeyboardAccess.xcstrings in Resources */,
 				837C9DF82CC839DD00A7080F /* AXUILocalizedStrings.xcstrings in Resources */,
 				83DB888F2CAC97BF008218E6 /* AppleID.xcstrings in Resources */,

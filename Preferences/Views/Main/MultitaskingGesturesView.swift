@@ -20,9 +20,10 @@ struct MultitaskingGesturesView: View {
     @State private var bottomLeftCornerGesture = "Quick Note"
     @State private var bottomRightCornerGesture = "Screenshot"
     let gestures = ["Off", "Quick Note", "Screenshot"]
+    let table = "MultitaskingAndGesturesSettings"
     
     var body: some View {
-        CustomList(title: "Multitasking & Gestures") {
+        CustomList(title: "Multitasking & Gestures".localize(table: table)) {
             Section {
                 HStack {
                     Spacer()
@@ -37,7 +38,7 @@ struct MultitaskingGesturesView: View {
                                     .frame(height: 125)
                                     .clipShape(RoundedRectangle(cornerRadius: 10.0))
                                     .padding(.top)
-                                Text("Off")
+                                Text("Off", tableName: table)
                                     .font(.subheadline)
                                 Image(systemName: multitaskingMode == 0 ? "checkmark.circle.fill" : "circle")
                                     .foregroundStyle(multitaskingMode == 0 ? Color(UIColor.systemBackground) : Color(UIColor.tertiaryLabel), .blue)
@@ -59,7 +60,7 @@ struct MultitaskingGesturesView: View {
                                     .frame(height: 125)
                                     .clipShape(RoundedRectangle(cornerRadius: 10.0))
                                     .padding(.top)
-                                Text("Split View & Slide Over")
+                                Text("Split View & Slide Over", tableName: table)
                                     .font(.subheadline)
                                 Image(systemName: multitaskingMode == 1 ? "checkmark.circle.fill" : "circle")
                                     .foregroundStyle(multitaskingMode == 1 ? Color(UIColor.systemBackground) : Color(UIColor.tertiaryLabel), .blue)
@@ -82,7 +83,7 @@ struct MultitaskingGesturesView: View {
                                         .frame(height: 125)
                                         .clipShape(RoundedRectangle(cornerRadius: 10.0))
                                         .padding(.top)
-                                    Text("Stage Manager")
+                                    Text("Stage Manager", tableName: table)
                                         .font(.subheadline)
                                     Image(systemName: multitaskingMode == 2 ? "checkmark.circle.fill" : "circle")
                                         .foregroundStyle(multitaskingMode == 2 ? Color(UIColor.systemBackground) : Color(UIColor.tertiaryLabel), .blue)
@@ -97,63 +98,67 @@ struct MultitaskingGesturesView: View {
                 }
                 .edgesIgnoringSafeArea(.horizontal)
                 if multitaskingMode == 2 {
-                    Toggle("Recent Apps", isOn: $recentAppsEnabled)
-                    Toggle("Dock", isOn: $dockEnabled)
+                    Toggle("Recent Apps".localize(table: table), isOn: $recentAppsEnabled)
+                    Toggle("Dock".localize(table: table), isOn: $dockEnabled)
                 }
             } header: {
-                Text("Multitasking")
+                Text("Multitasking", tableName: table)
             } footer: {
                 switch multitaskingMode {
                 case 1:
-                    Text("In Split View, two apps appear side-by-side, and you can resize apps by dragging the slider that appears between them. In Slide Over, one app appears in a smaller floating window that you can drag to the left or right side of your screen. [Learn more...](https://support.apple.com/en-us/102576)")
+                    Text("In Split View, two apps appear side-by-side, and you can resize apps by dragging the slider that appears between them. In Slide Over, one app appears in a smaller floating window that you can drag to the left or right side of your screen.", tableName: table) + Text(" [\("Learn more...".localize(table: table))](https://support.apple.com/en-us/102576)")
                 case 2:
-                    Text("Use Stage Manager to multitask with ease. You can group, resize, and arrange windows in your ideal layout and tap to switch between apps. If your iPad is connected to an external display, you can use Stage Manager to move windows between iPad and your external display. [Learn more...](https://support.apple.com/guide/ipad/move-resize-and-organize-windows-ipad1240f36f/ipados)")
+                    Text("Use Stage Manager to multitask with ease. You can group, resize, and arrange windows in your ideal layout then tap to switch between apps. If your iPad is connected to an external display, you can use Stage Manager to move windows between iPad and your external display.") + Text(" [\("Learn more...".localize(table: table))](https://support.apple.com/guide/ipad/move-resize-and-organize-windows-ipad1240f36f/ipados)")
                 default:
-                    Text("You can use multitasking to work with more than one app at the same time. Turn on multitasking by choosing Split View & Slide Over\(UIDevice.DeviceSupportsEnhancedMultitasking ? "or Stage Manager" : "").")
+                    if UIDevice.DeviceSupportsEnhancedMultitasking {
+                        Text("You can use multitasking to work with more than one app at the same time. Turn on multitasking by choosing either Split View & Slide Over or Stage Manager.", tableName: table)
+                    } else {
+                        Text("You can use multitasking to work with more than one app at the same time. Turn on multitasking by choosing Split View & Slide Over.", tableName: table)
+                    }
                 }
             }
             
             Section {
-                Toggle("Start PiP Automatically", isOn: $startPipAutomaticallyEnabled)
+                Toggle("Start PiP Automatically".localize(table: table), isOn: $startPipAutomaticallyEnabled)
             } header: {
-                Text("Picture in Picture")
+                Text("Picture in Picture", tableName: table)
             } footer: {
-                Text("When you swipe up to go Home or use other apps, videos and FaceTime calls will automatically continue in Picture in Picture.")
+                Text("When you swipe up to go Home or use other apps, videos and FaceTime calls will automatically continue in Picture in Picture.", tableName: table)
             }
             
             Section {
-                Toggle("Productivity Gestures", isOn: $productivityGesturesEnabled)
+                Toggle("Productivity Gestures".localize(table: table), isOn: $productivityGesturesEnabled)
             } header: {
-                Text("Gestures")
+                Text("Gestures", tableName: table)
             } footer: {
                 Text("""
                      - Double-tap with three fingers to undo.
                      - Pinch and spread with three fingers to copy and paste.
-                     - Swipe left with three fingers to undo and swipe right to undo.
-                     """)
+                     - Swipe left with three fingers to undo and swipe right to redo.
+                     """, tableName: table)
             }
             
             Section {
-                Toggle("Four & Five Finger Gestures", isOn: $fourFiveFingerGesturesEnabled)
+                Toggle("Four & Five Finger Gestures".localize(table: table), isOn: $fourFiveFingerGesturesEnabled)
             } footer: {
                 Text("""
                      - Switch apps by swiping left and right with four or five fingers.
                      - Go home by pinching with four or five fingers.
                      - Open the App Switcher by pinching and pausing with four or five fingers.
-                     """)
+                     """, tableName: table)
             }
             
             Section {
-                Toggle("Shake to Undo", isOn: $shakeUndoEnabled)
+                Toggle("Shake to Undo".localize(table: table), isOn: $shakeUndoEnabled)
             } footer: {
-                Text("Shake iPad to undo an action.")
+                Text("Shake to Undo Footer", tableName: table)
             }
             
             Section {
-                Toggle("Swipe Finger from Corner", isOn: $swipeFingerCornerEnabled)
+                Toggle("Swipe Finger from Corner".localize(table: table), isOn: $swipeFingerCornerEnabled)
                 if swipeFingerCornerEnabled {
                     HStack {
-                        Text("Bottom Left Corner")
+                        Text("Bottom Left Corner", tableName: table)
                         Spacer()
                         Picker("", selection: $bottomLeftCornerGesture) {
                             ForEach(gestures, id: \.self) {
@@ -162,7 +167,7 @@ struct MultitaskingGesturesView: View {
                         }
                     }
                     HStack {
-                        Text("Bottom Right Corner")
+                        Text("Bottom Right Corner", tableName: table)
                         Spacer()
                         Picker("", selection: $bottomRightCornerGesture) {
                             ForEach(gestures, id: \.self) {
@@ -172,7 +177,7 @@ struct MultitaskingGesturesView: View {
                     }
                 }
             } footer: {
-                Text("Select the action that occurs when you swipe diagonally from the bottom corner.")
+                Text("Select the action that occurs when you swipe diagonally from the bottom corner.", tableName: table)
             }
             .listRowSeparator(.hidden)
         }

@@ -22,9 +22,10 @@ struct DisplayBrightnessView: View {
     @State private var brightness = 0.5
     @State private var trueToneEnabled = true
     @State private var raiseToWakeEnabled = true
+    let table = "Display"
     
     var body: some View {
-        CustomList(title: "Display & Brightness") {
+        CustomList(title: "DISPLAY_AND_BRIGHTNESS".localize(table: table), topPadding: true) {
             Section {
                 HStack {
                     Text("") // For listRowSeparator
@@ -45,7 +46,7 @@ struct DisplayBrightnessView: View {
                                     .foregroundStyle(.white)
                                     .padding(.bottom, 70)
                             }
-                            Text("Light")
+                            Text("COMPATIBLE_APPEARANCE_CHOICE_LIGHT", tableName: table)
                                 .font(.subheadline)
                                 .padding(.bottom, -5)
                             Image(systemName: appearance == .light ? "checkmark.circle.fill": "circle")
@@ -71,7 +72,7 @@ struct DisplayBrightnessView: View {
                                     .foregroundStyle(.white)
                                     .padding(.bottom, 70)
                             }
-                            Text("Dark")
+                            Text("COMPATIBLE_APPEARANCE_CHOICE_DARK", tableName: table)
                                 .font(.subheadline)
                                 .padding(.bottom, -5)
                             Image(systemName: appearance == .dark ? "checkmark.circle.fill": "circle")
@@ -86,18 +87,18 @@ struct DisplayBrightnessView: View {
                     appearance = colorScheme == .dark ? .dark : .light
                 }
                 
-                Toggle("Automatic", isOn: $automaticEnabled.animation())
+                Toggle("AUTOMATIC".localize(table: table), isOn: $automaticEnabled.animation())
                 
                 if automaticEnabled {
-                    CustomNavigationLink(title: "Options", status: "Light Until Sunset", destination: EmptyView())
+                    CustomNavigationLink(title: "APPEARANCE_OPTIONS".localize(table: table), status: "LIGHT_UNTIL_SUNSET".localize(table: table), destination: EmptyView())
                 }
             } header: {
-                Text("\nAppearance")
+                Text("APPEARANCE", tableName: table)
             }
             
             Section {
-                NavigationLink("Text Size") {}
-                Toggle("Bold Text", isOn: $boldTextEnabled)
+                NavigationLink("TEXT_SIZE".localize(table: table)) {}
+                Toggle("BOLD_TEXT".localize(table: table), isOn: $boldTextEnabled)
             }
             
             Section {
@@ -106,7 +107,7 @@ struct DisplayBrightnessView: View {
                            in: 0.0...1.0,
                            minimumValueLabel: Image(systemName: "sun.min.fill"),
                            maximumValueLabel: Image(systemName: "sun.max.fill"),
-                           label: { Text("Brightness")  }
+                           label: { Text("BRIGHTNESS", tableName: table)  }
                     )
                 }
                 .foregroundStyle(.secondary)
@@ -115,36 +116,36 @@ struct DisplayBrightnessView: View {
                     UIScreen.main.brightness = brightness
                 }
                 
-                Toggle("True Tone", isOn: $trueToneEnabled)
+                Toggle("WHITE_BALANCE".localize(table: table), isOn: $trueToneEnabled)
             } header: {
-                Text("Brightness")
+                Text("Brightness", tableName: table)
             } footer: {
-                Text("Automatically adapt \(UIDevice.current.model) display based on ambient lighting conditions to make colors appear consistent in different environments.")
+                Text("WHITE_BALANCE_FOOTER", tableName: table)
             }
             
             Section {
-                CustomNavigationLink(title: "Night Shift", status: "Off", destination: EmptyView())
+                CustomNavigationLink(title: "BLUE_LIGHT_REDUCTION".localize(table: table), status: "OFF".localize(table: table), destination: EmptyView())
             }
             
             Section {
-                CustomNavigationLink(title: "Auto-Lock", status: "1 minute", destination: EmptyView())
-                Toggle("Raise to Wake", isOn: $raiseToWakeEnabled)
+                CustomNavigationLink(title: "AUTOLOCK".localize(table: table), status: "1 minute", destination: EmptyView())
+                Toggle("RAISE_TO_WAKE".localize(table: table), isOn: $raiseToWakeEnabled)
             }
             
             if UIDevice.AlwaysOnDisplayCapability {
                 Section {
-                    CustomNavigationLink(title: "Always On Display", status: "On", destination: EmptyView())
+                    CustomNavigationLink(title: "ALWAYS_ON_DISPLAY".localize(table: table), status: "ALWAYS_ON_ENABLED".localize(table: table), destination: EmptyView())
                 } footer: {
-                    Text("Always On Display dims the Lock Screen while keeping information like time, widgets, and notifications visible using minimal power.")
+                    Text("ALWAYS_ON_DESCRIPTION", tableName: table)
                 }
             }
             
             Section {
-                CustomNavigationLink(title: "Display Zoom", status: "Default", destination: EmptyView())
+                CustomNavigationLink(title: "VIEW".localize(table: table), status: "DEFAULT".localize(table: "Accessibility"), destination: EmptyView())
             } header: {
-                Text("Display")
+                Text("DISPLAY_ONLY_TITLE", tableName: "Accessibility")
             } footer: {
-                Text("Choose a view for \(UIDevice.current.model). Larger Text shows larger controls. Default shows more content.")
+                Text("DEFAULT_DISPLAY_ZOOMED_STANDARD_DESCRIPTION", tableName: table)
             }
         }
     }

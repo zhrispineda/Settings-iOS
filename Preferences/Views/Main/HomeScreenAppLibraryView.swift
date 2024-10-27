@@ -13,19 +13,20 @@ struct HomeScreenAppLibraryView: View {
     @State private var selected = "App Library Only"
     @State private var showAppLibraryNotificationsEnabled = true
     @State private var showHomeScreenSearchEnabled = true
+    let table = "HomeScreenSettings"
     
     var body: some View {
-        CustomList(title: "Home Screen & App Library", topPadding: true) {
+        CustomList(title: "Home Screen & App Library".localize(table: table), topPadding: true) {
             Section {
                 ForEach(options, id: \.self) { option in
                     Button {
-                        selected = option
+                        selected = option.localize(table: table)
                     } label: {
                         HStack {
-                            Text(option)
+                            Text(option.localize(table: table))
                                 .foregroundStyle(Color["Label"])
                             Spacer()
-                            if option == selected {
+                            if option.localize(table: table) == selected {
                                 Image(systemName: "checkmark")
                                     .fontWeight(.medium)
                             }
@@ -33,19 +34,19 @@ struct HomeScreenAppLibraryView: View {
                     }
                 }
             } header: {
-                Text("Newly Downloaded Apps")
+                Text("Newly Downloaded Apps", tableName: table)
             }
             
             Section {
-                Toggle("Show in App Library", isOn: $showAppLibraryNotificationsEnabled)
+                Toggle("Show in App Library".localize(table: table), isOn: $showAppLibraryNotificationsEnabled)
             } header: {
-                Text("Notification Badges")
+                Text("Notification Badges", tableName: table)
             }
             
             Section {
-                Toggle("Show on Home Screen", isOn: $showHomeScreenSearchEnabled)
+                Toggle("Show on Home Screen".localize(table: table), isOn: $showHomeScreenSearchEnabled)
             } header: {
-                Text("Search")
+                Text("Search", tableName: table)
             }
         }
     }
