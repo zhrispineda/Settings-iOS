@@ -14,8 +14,8 @@ struct CertificateTrustSettingsView: View {
     var body: some View {
         CustomList(title: "CERT_TRUST_SETTINGS") {
             Section {
-                LabeledContent("TRUST_STORE_VERSION", value: "2024051500")
-                LabeledContent("TRUST_ASSET_VERSION".localize(table: table), value: "1004")
+                LabeledContent("TRUST_STORE_VERSION", value: "2024051501")
+                LabeledContent("TRUST_ASSET_VERSION".localize(table: table), value: "1005")
             } footer: {
                 Text("[\("TRUST_STORE_ABOUT".localize(table: table))](\("TRUST_STORE_URL".localize(table: table)))")
             }

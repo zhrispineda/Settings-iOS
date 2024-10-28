@@ -59,7 +59,7 @@ struct ContentView: View {
 //                            Section {
 //                                SettingsLabel(id: "Finish Setting Up Your \(UIDevice().model)", badgeCount: 1)
 //                            }
-//                            
+//
 //                            Section {
 //                                SettingsLabel(id: "More for Your \(UIDevice().model)", badgeCount: 3)
 //                            }
@@ -307,6 +307,10 @@ struct SettingsLinkSection: View {
         return UIDevice.CellularTelephonyCapability
     case .vpn:
         return true
+    case .siri:
+        return !UIDevice.IntelligenceCapability
+    case .appleIntelligence:
+        return UIDevice.IntelligenceCapability
     }
 }
 

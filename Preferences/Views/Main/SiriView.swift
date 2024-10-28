@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import TipKit
 
 struct SiriView: View {
     // Variables
@@ -31,19 +32,65 @@ struct SiriView: View {
     @State private var frameY: Double = 0
     
     let table = "AssistantSettings"
+    let gmTable = "AssistantSettings-GM"
+    
+    init() {
+        try? Tips.configure()
+    }
     
     var body: some View {
         CustomList {
-            Placard(title: "ASSISTANT".localize(table: table), icon: "appleSiri", description: "PLACARD_DESCRIPTION".localize(table: table))
-                .overlay { // For calculating opacity of the principal toolbar item
-                    GeometryReader { geo in
-                        Color.clear
-                            .onChange(of: geo.frame(in: .scrollView).minY) {
-                                frameY = geo.frame(in: .scrollView).minY
-                                opacity = frameY / -30
+            if UIDevice.IntelligenceCapability { // If RAM is 8 GB or higher
+                Section {
+                    Placard(title: "Apple Intelligence & Siri".localize(table: table), icon: "appleIntelligence", description: UIDevice.iPhone ? "PLACARD_DESCRIPTION_GM".localize(table: gmTable) : "PLACARD_DESCRIPTION_GM_IPAD".localize(table: gmTable))
+                        .overlay { // For calculating opacity of the principal toolbar item
+                            GeometryReader { geo in
+                                Color.clear
+                                    .onChange(of: geo.frame(in: .scrollView).minY) {
+                                        frameY = geo.frame(in: .scrollView).minY
+                                        opacity = frameY / -30
+                                    }
                             }
+                        }
+                    if !UIDevice.IsSimulator {
+                        //Button("GM_WAITLIST_SPECIFIER_TITLE".localize(table: gmTable)) {}
                     }
+                } footer: {
+//                    if !UIDevice.IsSimulator {
+//                        Text("GM_MODEL_NOT_YET_QUEUED", tableName: gmTable)
+//                    }
                 }
+            } else {
+                Placard(title: "ASSISTANT".localize(table: table), icon: "appleSiri", description: "PLACARD_DESCRIPTION".localize(table: table))
+                    .overlay { // For calculating opacity of the principal toolbar item
+                        GeometryReader { geo in
+                            Color.clear
+                                .onChange(of: geo.frame(in: .scrollView).minY) {
+                                    frameY = geo.frame(in: .scrollView).minY
+                                    opacity = frameY / -30
+                                }
+                        }
+                    }
+            }
+            
+//            Section {
+//                TipView(AppleIntelligenceTip())
+//                    .tipBackground(Color.background)
+//                    .task {
+//                        do {
+//                            try Tips.configure([
+//                                .displayFrequency(.immediate),
+//                                .datastoreLocation(.applicationDefault)
+//                            ])
+//                        }
+//                        catch {
+//                            print("Error initializing TipKit \(error.localizedDescription)")
+//                        }
+//                    }
+//                Button("Learn More") {}
+//                    .bold()
+//                    .padding(.leading, 70)
+//            }
             
             Section {
                 CustomNavigationLink(title: "LANGUAGE".localize(table: table), status: "English (United States)", destination: SiriLanguageView())
@@ -158,11 +205,25 @@ struct SiriView: View {
         }
         .toolbar {
             ToolbarItem(placement: .principal) {
-                Text("ASSISTANT", tableName: table)
+                Text(UIDevice.IntelligenceCapability ? "ASSISTANT_AND_GM".localize(table: gmTable) : "ASSISTANT".localize(table: table))
                     .fontWeight(.semibold)
                     .font(.subheadline)
                     .opacity(frameY < 50.0 ? opacity : 0) // Only fade when passing the help section title at the top
             }
+        }
+    }
+    
+    struct AppleIntelligenceTip: Tip {
+        var title: Text {
+            Text("Discover Apple Intelligence")
+        }
+        
+        var message: Text? {
+            Text("Enhance your writing, express your creative side, and simplify your tasks.")
+        }
+        
+        var image: Image? {
+            Image("")
         }
     }
 }

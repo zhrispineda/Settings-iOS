@@ -2,7 +2,7 @@
 A **work-in-progress** SwiftUI recreation of the iOS & iPadOS Settings app.
 
 ## Information
-- This personal project is a recreation of Apple's Settings app for iOS and iPadOS 18.0.1 **Release** (22A3370).
+- This personal project is a recreation of Apple's Settings app for iOS and iPadOS 18.1 **Release** (22B83).
 - All features within the app are only simulations and have no effect on the device outside of the app.
 - Features in the app vary based on the device model and its capabilities to make it as accurate as possible.
 

@@ -53,6 +53,8 @@ enum Capabilities {
     case actionButton
     case cellular
     case vpn
+    case siri
+    case appleIntelligence
 }
 
 struct SettingsItem<Content: View>: Identifiable {
@@ -101,14 +103,14 @@ let internalIcons = ["airdrop", "apple.photos", "apps.iphone.assistive.access", 
     SettingsItem(type: .accessibility, title: "Accessibility", icon: "accessibility", color: .blue, destination: AnyView(AccessibilityView())),
     SettingsItem(type: .actionButton, title: "Action Button", icon: "iphone.action.button.arrow.right", capability: .actionButton, color: .blue, destination: AnyView(ActionButtonView())),
     SettingsItem(type: .applePencil, title: "Apple Pencil", icon: "pencil", color: .gray, destination: AnyView(ApplePencilView())),
-    //SettingsItem(type: .siri, title: "Apple Intelligence & Siri", icon: "appleIntelligence", color: Color(UIColor.systemBackground), destination: AnyView(SiriView())),
+    SettingsItem(type: .siri, title: "Apple Intelligence & Siri", icon: "appleIntelligence", capability: .appleIntelligence, color: Color(UIColor.systemBackground), destination: AnyView(SiriView())),
     SettingsItem(type: .camera, title: "Camera", icon: "camera.fill", color: .gray, destination: AnyView(CameraView())),
     SettingsItem(type: .controlCenter, title: "Control Center", icon: "switch.2", destination: AnyView(ControlCenterView())),
     SettingsItem(type: .displayBrightness, title: "Display & Brightness", icon: "sun.max.fill", color: .blue, destination: AnyView(DisplayBrightnessView())),
     SettingsItem(type: .homeScreenAppLibrary, title: "Home Screen & App Library", icon: UIDevice.iPhone ? "apps.iphone" : "apps.ipad", color: .blue, destination: AnyView(HomeScreenAppLibraryView())),
     SettingsItem(type: .multitaskGestures, title: "Multitasking & Gestures", icon: "squares.leading.rectangle", color: .blue, destination: AnyView(MultitaskingGesturesView())),
     SettingsItem(type: .search, title: "Search", icon: "magnifyingglass", color: .gray, destination: AnyView(SearchView())),
-    SettingsItem(type: .siri, title: "Siri", icon: "appleSiri", color: Color(UIColor.systemBackground), destination: AnyView(SiriView())),
+    SettingsItem(type: .siri, title: "Siri", icon: "appleSiri", capability: .siri, color: Color(UIColor.systemBackground), destination: AnyView(SiriView())),
     SettingsItem(type: .standby, title: "StandBy", icon: "clock.filled.and.widget.filled", color: .black, destination: AnyView(StandByView())),
     SettingsItem(type: .wallpaper, title: "Wallpaper", icon: "apple.photos", color: .cyan, destination: AnyView(WallpaperView())),
 ]
@@ -117,13 +119,13 @@ let internalIcons = ["airdrop", "apple.photos", "apps.iphone.assistive.access", 
 @MainActor let simulatorMainSettings: [SettingsItem] = [
     SettingsItem(type: .general, title: "General", icon: "gear", color: .gray, destination: AnyView(GeneralView())),
     SettingsItem(type: .accessibility, title: "Accessibility", icon: "accessibility", color: .blue, destination: AnyView(AccessibilityView())),
-    //SettingsItem(type: .siri, title: "Apple Intelligence & Siri", icon: "appleIntelligence", color: Color(UIColor.systemBackground), destination: AnyView(SiriView())),
+    SettingsItem(type: .siri, title: "Apple Intelligence & Siri", icon: "appleIntelligence", capability: .appleIntelligence, color: Color(UIColor.systemBackground), destination: AnyView(SiriView())),
     SettingsItem(type: .actionButton, title: "Action Button", icon: "iphone.action.button.arrow.right", capability: .actionButton, color: .blue, destination: AnyView(ActionButtonView())),
     SettingsItem(type: .camera, title: "Camera", icon: "camera.fill", color: .gray, destination: AnyView(CameraView())),
     SettingsItem(type: .homeScreenAppLibrary, title: "Home Screen & App Library", icon: "apps.iphone", color: .blue, destination: AnyView(HomeScreenAppLibraryView())),
     SettingsItem(type: .multitaskGestures, title: "Multitasking & Gestures", icon: "squares.leading.rectangle", color: .blue, destination: AnyView(MultitaskingGesturesView())),
     SettingsItem(type: .search, title: "Search", icon: "magnifyingglass", color: .gray, destination: AnyView(SearchView())),
-    SettingsItem(type: .siri, title: "Siri", icon: "appleSiri", color: Color(UIColor.systemBackground), destination: AnyView(SiriView())),
+    SettingsItem(type: .siri, title: "Siri", icon: "appleSiri", capability: .siri, color: Color(UIColor.systemBackground), destination: AnyView(SiriView())),
     SettingsItem(type: .standby, title: "StandBy", icon: "clock.filled.and.widget.filled", color: .black, destination: AnyView(StandByView())),
 ]
 

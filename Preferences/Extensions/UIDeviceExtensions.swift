@@ -160,6 +160,10 @@ public extension UIDevice {
         return identifier.contains("iPhone")
     }()
     
+    static let IntelligenceCapability: Bool = {
+        return ProcessInfo().physicalMemory > 8000000000
+    }()
+    
     static let HomeButtonCapability: Bool = { // Home Button
         if let answer = MGHelper.read(key: "JwLB44/jEB8aFDpXQ16Tuw") { // 1 = true; 2 = false
             return answer == "1" ? true : false
