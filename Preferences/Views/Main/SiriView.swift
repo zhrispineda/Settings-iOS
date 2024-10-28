@@ -30,9 +30,11 @@ struct SiriView: View {
     @State private var opacity: Double = 0
     @State private var frameY: Double = 0
     
+    let table = "AssistantSettings"
+    
     var body: some View {
         CustomList {
-            Placard(title: "Siri", icon: "appleSiri", description: "Siri is an intelligent assistant that helps you find information and get things done. [Learn more...](#)")
+            Placard(title: "ASSISTANT".localize(table: table), icon: "appleSiri", description: "PLACARD_DESCRIPTION".localize(table: table))
                 .overlay { // For calculating opacity of the principal toolbar item
                     GeometryReader { geo in
                         Color.clear
@@ -44,12 +46,12 @@ struct SiriView: View {
                 }
             
             Section {
-                CustomNavigationLink(title: "Language", status: "English (United States)", destination: SiriLanguageView())
+                CustomNavigationLink(title: "LANGUAGE".localize(table: table), status: "English (United States)", destination: SiriLanguageView())
                 if !siriEnabled {
-                    CustomNavigationLink(title: "Voice", status: "American (Voice 4)", destination: SiriVoiceView())
+                    CustomNavigationLink(title: "VOICE".localize(table: table), status: "\("REGION_en-US".localize(table: table)) (Voice 4)", destination: SiriVoiceView())
                 }
                 if !UIDevice.IsSimulator {
-                    CustomNavigationLink(title: "Talk to Siri", status: "Off", destination: EmptyView())
+                    CustomNavigationLink(title: "ACTIVATION_COMPACT".localize(table: table), status: "ACTIVATION_OFF".localize(table: table), destination: EmptyView())
                 }
 //                Toggle("Press \(Device().isPhone ? "\(Device().hasHomeButton ? "Home" : "Side") Button" : "Top Button") for Siri", isOn: $siriEnabled)
 //                    .alert("Turn Off Siri?", isPresented: $showingDisableSiriAlert) {
@@ -83,66 +85,66 @@ struct SiriView: View {
 //                    }
                 if siriEnabled {
                     if !UIDevice.IsSimulator {
-                        Toggle("Allow Siri When Locked", isOn: $allowSiriWhenLockedEnabled)
+                        Toggle("ASSISTANT_LOCK_SCREEN_ACCESS".localize(table: table), isOn: $allowSiriWhenLockedEnabled)
                     }
-                    CustomNavigationLink(title: "Voice", status: "American (Voice 4)", destination: SiriVoiceView())
-                    NavigationLink("Siri Responses", destination: SiriResponsesView())
+                    CustomNavigationLink(title: "VOICE".localize(table: table), status: "\("REGION_en-US".localize(table: table)) (Voice 4)", destination: SiriVoiceView())
+                    NavigationLink("VOICE_FEEDBACK".localize(table: table), destination: SiriResponsesView())
                     if !UIDevice.IsSimulator {
-                        NavigationLink("Announce Calls", destination: EmptyView())
-                        NavigationLink("Announce Notifications", destination: EmptyView())
+                        NavigationLink("ANNOUNCE_CALLS_TITLE".localize(table: table), destination: EmptyView())
+                        NavigationLink("ANNOUNCE_MESSAGES_TITLE".localize(table: table), destination: EmptyView())
                     }
                     Button {} label: { // TODO: Popover
                         HStack {
-                            Text("My Information")
+                            Text("MyInfo", tableName: table)
                                 .foregroundStyle(Color["Label"])
                             Spacer()
-                            Text("None")
+                            Text("None", tableName: table)
                                 .foregroundStyle(Color(UIColor.secondaryLabel))
                             Image(systemName: "chevron.right")
                                 .foregroundStyle(Color(UIColor.tertiaryLabel))
                         }
                     }
                 }
-                NavigationLink("Siri & Dictation History") {}
-                NavigationLink("Messaging with Siri", destination: {
-                    CustomList(title: "Messaging with Siri") {}
+                NavigationLink("ASSISTANT_HISTORY_LABEL".localize(table: table)) {}
+                NavigationLink("MESSAGE_TITLE".localize(table: table), destination: {
+                    CustomList(title: "MESSAGE_TITLE".localize(table: table)) {}
                 })
             } header: {
-                Text("Siri Requests")
+                Text("SIRI_REQUESTS", tableName: table)
             } footer: {
-                Text(UIDevice.IsSimulator ? "[About Siri & Privacy...](#)" : "Voice input is processed on \(UIDevice.current.model), but transcripts of your requests are sent to Apple. [About Siri & Privacy...](#)")
+                Text(.init(UIDevice.IsSimulator ? "[\("SIRI_REQUESTS_ABOUT_LINK_TEXT".localize(table: table))](#)" : "\("SIRI_REQUESTS_DEVICE_PROCESSING_FOOTER_TEXT_IPHONE".localize(table: table))" + " [\("SIRI_REQUESTS_ABOUT_LINK_TEXT".localize(table: table))](#)"))
 //                Text(siriEnabled ? "Voice input is processed on \(UIDevice.current.model), but transcripts of your requests are sent to Apple. [About Siri & Privacy...](#)" : "Siri can help you get things done just by asking. [About Siri & Privacy...](#)")
             }
             
             Section {
-                Toggle("Suggest Apps Before Searching", isOn: $showSuggestionsEnabled)
-                Button("Reset Hidden Suggestions") { UIDevice.iPhone ? showingResetHiddenSuggestionsAlert.toggle() : showingResetHiddenSuggestionsPopup.toggle() }
-                    .alert("Reset", isPresented: $showingResetHiddenSuggestionsPopup) {
-                        Button("Reset", role: .destructive) {}
-                        Button("Cancel", role: .cancel) {}
+                Toggle("SUGGESTIONS_SHOW_BEFORE_SEARCHING".localize(table: table), isOn: $showSuggestionsEnabled)
+                Button("SUGGESTIONS_RESET_HIDDEN_NAME".localize(table: table)) { UIDevice.iPhone ? showingResetHiddenSuggestionsAlert.toggle() : showingResetHiddenSuggestionsPopup.toggle() }
+                    .alert("SUGGESTIONS_RESET_HIDDEN_TITLE".localize(table: table), isPresented: $showingResetHiddenSuggestionsPopup) {
+                        Button("SUGGESTIONS_RESET_HIDDEN_TITLE".localize(table: table), role: .destructive) {}
+                        Button("SUGGESTIONS_RESET_HIDDEN_CANCEL".localize(table: table), role: .cancel) {}
                     } message: {
-                        Text("Resetting will allow previously hidden suggestions to resume showing up again.")
+                        Text("SUGGESTIONS_RESET_HIDDEN_PROMPT", tableName: table)
                     }
-                    .confirmationDialog("Resetting will allow previously hidden suggestions to resume showing up again.", isPresented: $showingResetHiddenSuggestionsAlert, titleVisibility: .visible) {
-                        Button("Reset", role: .destructive) {}
-                        Button("Cancel", role: .cancel) {}
+                    .confirmationDialog("SUGGESTIONS_RESET_HIDDEN_PROMPT".localize(table: table), isPresented: $showingResetHiddenSuggestionsAlert, titleVisibility: .visible) {
+                        Button("SUGGESTIONS_RESET_HIDDEN_TITLE".localize(table: table), role: .destructive) {}
+                        Button("SUGGESTIONS_RESET_HIDDEN_CANCEL".localize(table: table), role: .cancel) {}
                     }
-                Toggle("Allow Notifications", isOn: $allowNotificationsEnabled)
-                Toggle("Show in App Library", isOn: $showAppLibraryEnabled)
-                Toggle("Show When Sharing", isOn: $showWhenSharingEnabled)
-                Toggle("Show Listening Suggestions", isOn: $showWhenListeningEnabled)
+                Toggle("SUGGESTIONS_ALLOW_NOTIFICATIONS".localize(table: table), isOn: $allowNotificationsEnabled)
+                Toggle("SUGGESTIONS_SHOW_IN_APPLIBRARY".localize(table: table), isOn: $showAppLibraryEnabled)
+                Toggle("SUGGESTIONS_SHOW_WHEN_SHARING".localize(table: table), isOn: $showWhenSharingEnabled)
+                Toggle("SUGGESTIONS_SHOW_WHEN_LISTENING".localize(table: table), isOn: $showWhenListeningEnabled)
             } header: {
-                Text("Suggestions")
+                Text("SUGGESTIONS_GROUP", tableName: table)
             } footer: {
-                Text("Apple can make suggestions in Search, on Home Screen and Lock Screen, when sharing, or when you may want to listen to media.")
+                Text("SUGGESTIONS_FOOTER", tableName: table)
             }
             
             Section {
-                SettingsLink(color: .white, iconColor: .blue, icon: "appclip", id: "App Clips") {
+                SettingsLink(color: .white, iconColor: .blue, icon: "appclip", id: "APP_CLIPS".localize(table: table)) {
                     SiriAppClipsView()
                 }
-                SettingsLink(icon: "appleHome Screen & App Library", id: "Apps") {
-                    CustomList(title: "Apps") {
+                SettingsLink(icon: "appleHome Screen & App Library", id: "APPS_GROUP".localize(table: table)) {
+                    CustomList(title: "APPS") {
                         ForEach(apps, id: \.self) { app in
                             SettingsLink(icon: "apple\(app)", id: app) {
                                 SiriDetailView(appName: app, title: app)
@@ -151,12 +153,12 @@ struct SiriView: View {
                     }
                 }
             } header: {
-                Text("Siri App Access")
+                Text("APP_ACCESS_GROUP", tableName: table)
             }
         }
         .toolbar {
             ToolbarItem(placement: .principal) {
-                Text("Siri")
+                Text("ASSISTANT", tableName: table)
                     .fontWeight(.semibold)
                     .font(.subheadline)
                     .opacity(frameY < 50.0 ? opacity : 0) // Only fade when passing the help section title at the top

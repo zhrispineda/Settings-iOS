@@ -8,14 +8,18 @@
 import SwiftUI
 
 struct WallpaperView: View {
+    // Variables
+    let table = "WallpaperSettings"
+    
     var body: some View {
-        CustomList(title: "Wallpaper") {
+        CustomList(title: "WALLPAPER".localize(table: table)) {
             Section {
-                Text("Current".uppercased())
+                Text("CURRENT_TITLE", tableName: table)
+                    .textCase(.uppercase)
                     .foregroundStyle(.secondary)
                     .font(.subheadline)
                 Button {} label: {
-                    Text(Image(systemName: "plus")) + Text("Add New Wallpaper")
+                    Text(Image(systemName: "plus")) + Text("ADD_NEW_WALLPAPER", tableName: table)
                 }
                     .font(.caption)
                     .controlSize(.small)
@@ -28,10 +32,10 @@ struct WallpaperView: View {
             Section {
                 HStack {
                     VStack(alignment: .leading) {
-                        Text("Change your Wallpaper from the Lock Screen")
+                        Text("ANIMATED_TIP_TITLE", tableName: table)
                             .bold()
                             .font(.footnote)
-                        Text("From your Lock Screen, touch and hold to add, edit, or switch between different wallpapers and widgets.")
+                        Text("ANIMATED_TIP_CAPTION", tableName: table)
                             .foregroundStyle(.secondary)
                             .font(.footnote)
                         Spacer()

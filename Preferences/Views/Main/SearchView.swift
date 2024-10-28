@@ -14,26 +14,28 @@ struct SearchView: View {
     @State private var showRecentSearchesEnabled = true
     @State private var showRelatedContentEnabled = true
     @State private var helpImproveSearchEnabled = false
+    let table = "SpotlightSettings"
+    let assistTable = "AssistantSettings"
     
     var body: some View {
-        CustomList(title: "Search") {
+        CustomList(title: "SEARCH".localize(table: table), topPadding: true) {
             Section {
-                Toggle("Show Recent Searches", isOn: $showRecentSearchesEnabled)
-                Toggle("Show Related Content", isOn: $showRelatedContentEnabled)
+                Toggle("SEARCH_AND_LOOKUP_SHOW_RECENTS".localize(table: table), isOn: $showRecentSearchesEnabled)
+                Toggle("SEARCH_AND_LOOKUP_SHOW_RELATED_CONTENT".localize(table: table), isOn: $showRelatedContentEnabled)
             } header: {
-                Text("\nSearch and Look Up")
+                Text("SEARCH_AND_LOOKUP_GROUP", tableName: table)
             } footer: {
-                Text("Allow content from Apple and other partners to be shown when searching or when looking up text or objects in photos. [About Search & Privacy...](#)")
+                Text("SEARCH_AND_LOOKUP_FOOTER", tableName: table) + Text(" [\("BUTTON_TITLE".localize(table: "SiriSuggestions"))](#)")
             }
             
             Section {
-                Toggle("Help Apple Improve Search", isOn: $helpImproveSearchEnabled)
+                Toggle("SEARCH_ALLOW_ANONYMOUS_RECORDS".localize(table: table), isOn: $helpImproveSearchEnabled)
             } footer: {
-                Text("Help improve Search by allowing Apple to store the searches you enter into Safari, Siri, and Spotlight in a way that is not linked to you.\n\nSearches includes lookups of general knowledge, and requests to do things like play music, and get directions.")
+                Text("SEARCH_ALLOW_ANONYMOUS_RECORDS_FOOTER", tableName: table)
             }
             
             Section {
-                SettingsLink(color: .white, iconColor: .blue, icon: "appclip", id: "App Clips") {
+                SettingsLink(color: .white, iconColor: .blue, icon: "appclip", id: "APP_CLIPS".localize(table: table)) {
                     SiriAppClipsView()
                 }
                 ForEach(apps, id: \.self) { app in

@@ -1,0 +1,5117 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "SEARCH_AND_LOOKUP_SHOW_RECENTS": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "최근 검색 보기"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "הצגת חיפושים אחרונים"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tampilkan Pencarian Terbaru"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Näytä äskeiset haut"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toon recente zoekacties"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Недавние поиски"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Legutóbbi keresések megjelenítése"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Son Aramaları Göster"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostra le ricerche recenti"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar búsquedas recientes"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Εμφάνιση πρόσφατων αναζητήσεων"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostra les cerques recents"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Afficher les recherches récentes"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "顯示最近的搜尋項目"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "顯示最近的搜尋項目"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Visa senaste sökningar"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا توجد عمليات بحث أخيرة"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "हालिया खोज दिखाएँ"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vis seneste søgninger"
+          }
+        },
+        "yue_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show Recent Searches"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show Recent Searches"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pokazuj ostatnie wyszukiwania"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "แสดงการค้นหาล่าสุด"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "显示最近搜索"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vis nylige søk"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show Recent Searches"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rodyti naujausias paieškas"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tunjukkan Carian Terbaharu"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobrazit poslední hledání"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobraziť posledné vyhľadávania"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Покажи скорошни търсения"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show Recent Searches"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prikaži nedavna iskanja"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Letzte Suchanfragen anzeigen"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hiển thị tìm kiếm gần đây"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar búsquedas recientes"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Показати недавні запити"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Afficher les recherches récentes"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Соңғы ізделгендерді көрсету"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Afișare căutări recente"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar Buscas Recentes"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prikaži nedavne pretrage"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar últimas pesquisas"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "検索履歴を表示"
+          }
+        }
+      }
+    },
+    "APP_CLIPS_IN_SEARCH_FOOTER": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "검색 및 단축어가 앱 클립을 표시하도록 허용합니다. 앱 클립 제안은 사용자의 위치를 기반으로 합니다."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ניתן לאפשר הצגה של ״יישומים ברגע״ בתוצאות חיפוש וב״קיצורים״. הצעות של ״יישומים ברגע״ מתבססות על המיקום שלך."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Izinkan Cari dan Pintasan untuk menampilkan cuplikan app. Saran cuplikan app didasarkan pada lokasi Anda."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salli Haun ja Pikakomentojen näyttää appiklippejä. Appiklippien ehdotukset perustuvat sijaintiisi."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sta toe dat 'Zoek' en 'Opdrachten' appclips weergeven. Suggesties voor appclips zijn gebaseerd op je locatie."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Разрешайте функциям «Поиск» и «Быстрые команды» показывать блиц-приложения. Блиц-приложения предлагаются на основе Вашей геопозиции."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Engedélyezheti, hogy a Keresés és a Parancsok apprészleteket jelenítsenek meg. Az apprészlet-javaslatok az Ön helyzetén alapulnak."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ara’nın ve Kestirmeler’in uygulama parçacığı göstermesine izin verir. Uygulama parçacığı önerileri konumunuza göre yapılır."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Consenti alla funzionalità di ricerca e all’app Comandi Rapidi di visualizzare le app clip. I suggerimenti delle app clip si basano sulla tua posizione."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permite que Buscar y Atajos muestren App Clips. Los App Clips sugeridos se basan en tu ubicación."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Επιτρέπεται στην Αναζήτηση και τις Συντομεύσεις να εμφανίζουν κλιπ εφαρμογών. Οι προτάσεις κλιπ εφαρμογών βασίζονται στην τοποθεσία σας."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permet que la cerca i l’app Dreceres mostrin clips d’apps. Els suggeriments de clips d’apps es fan en funció de la teva ubicació."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autorisez Rechercher et Raccourcis à afficher des extraits d’app. Les suggestions d’extraits d’app sont liées à votre position géographique."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "允許「搜尋」和「捷徑」顯示輕巧App。系統會根據你的位置顯示輕巧App建議。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "允許「搜尋」和「捷徑」顯示輕巧版App。輕巧版App建議會根據你的位置而作出。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tillåt att Sök och Genvägar visar appklipp. Appklippsförslag baseras på din plats."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "السماح للبحث والاختصارات بإظهار عينات التطبيقات. تستند اقتراحات عينات التطبيقات إلى موقعك."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "खोजें और शॉर्टकट को ऐप क्लिप दिखाने की अनुमति दें। ऐप क्लिप सुझाव आपके स्थान पर आधारित होते हैं।"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tillad, at Søg og Genveje må vise appklip. Forslag til appklip er baseret på din lokalitet."
+          }
+        },
+        "yue_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allow Search and Shortcuts to show app clips. App clip suggestions are based on your location."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allow Search and Shortcuts to show app clips. App clip suggestions are based on your location."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funkcja Szukaj i aplikacja Skróty będą mogły wyświetlać wycinki aplikacji. Sugestie wycinków aplikacji są tworzone na podstawie Twojego położenia."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "อนุญาตให้การค้นหาและคำสั่งลัดแสดงแอปคลิป คำแนะนำแอปคลิปขึ้นอยู่กับตำแหน่งที่ตั้งของคุณ"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "允许搜索和快捷指令显示轻App。轻App建议基于你的位置。"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tillat at Søk og Snarveier kan vise appklipp. Appklipp-forslag er basert på posisjonen din."
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allow Search and Shortcuts to show app clips. App clip suggestions are based on your location."
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leiskite funkcijoms „Paieška“ ir „Sparčiosios komandos“ rodyti programų iškarpas. Programų iškarpų pasiūlymai teikiami pagal jūsų vietą."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Benarkan Carian dan Pintasan memaparkan klip app. Cadangan klip app adalah berdasarkan lokasi anda."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zde můžete povolit zobrazování klipů aplikací při hledání a ve zkratkách. Návrhy klipů aplikací jsou založeny na vaší poloze."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vo vyhľadávaní a skratkách sa budú môcť zobrazovať app clipy. Návrhy app clipov sú založené na vašej polohe."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Позволете на Търсене и Бързи команди да показват изрезки на приложения. Предложения за изрезки на приложения се базират на вашето местоположение."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allow Search and Shortcuts to show app clips. App clip suggestions are based on your location."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Omogočite, da so v iskanju in bližnjicah prikazani izseki aplikacij. Predlogi izsekov aplikacij temeljijo na vaši lokaciji."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erlaube, dass „Suche“ und „Kurzbefehle“ App Clips anzeigen. Vorschläge für App Clips basieren auf deinem Standort."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cho phép Tìm kiếm và Phím tắt hiển thị ứng dụng thu nhỏ. Các gợi ý ứng dụng thu nhỏ được dựa trên vị trí của bạn."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permite que Buscar y Atajos muestren clips de apps. Las sugerencias de clips de apps se basan en tu ubicación."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Дозволити показувати фрагменти програм у Пошуку та Швидких командах. Пропозиції фрагментів програм робляться на основі вашої геопозиції."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autorisez les fonctionnalités Recherche et Raccourcis à afficher des extraits d’app. Les suggestions d’extraits d’app sont basées sur votre position."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "«Іздеу» және «Пернелер тіркесімдері» функциясына блиц қолданбаларды көрсетуге рұқсат беріңіз. Блиц қолданбалар геолокацияңызға байланысты ұсынылады."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permiteți afișarea de App Clip‑uri în Căutare și Scurtături. Sugestiile de App Clip‑uri se bazează pe localizarea dvs."
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permite que a Busca e Atalhos mostrem clipes de apps. As sugestões de clipes de apps são baseadas na sua localização."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dozvolite značajkama Pretraga i Prečaci prikazivanje isječaka aplikacija. Prijedlozi isječaka aplikacija temeljeni su na vašoj lokaciji."
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permitir mostrar App Clips nos resultados da Pesquisa e em Atalhos. As sugestões de App Clips baseiam‑se na sua localização."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "検索およびショートカットでApp Clipを表示できるようにします。App Clipの提案は現在地の位置情報に基づいています。"
+          }
+        }
+      }
+    },
+    "SEARCH_PERAPP_WHILESEARCHING_HEADER": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "검색하는 동안"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "בעת ביצוע חיפוש"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saat Mencari"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Haettaessa"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tijdens het zoeken"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "При поиске"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keresés közben"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ararken"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Durante la ricerca"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Al buscar"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Κατά την αναζήτηση"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En fer cerques"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lors d’une recherche"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "搜尋時"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "搜尋時"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vid sökning"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أثناء البحث"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "खोजने के दौरान"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ved søgning"
+          }
+        },
+        "yue_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "While Searching"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "While Searching"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Podczas wyszukiwania"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ในระหว่างค้นหา"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "搜索时"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ved søk"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "While Searching"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ieškant"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Semasa Mencari"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Při hledání"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pri vyhľadávaní"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "При търсене"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "While Searching"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Med iskanjem"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beim Suchen"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trong khi tìm kiếm"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Al buscar"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Під час пошуку"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pendant les recherches"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Іздеу кезінде"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "În timpul căutării"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ao Buscar"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tijekom pretraživanja"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ao pesquisar"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "検索時"
+          }
+        }
+      }
+    },
+    "SEARCH": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "검색"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "חיפוש"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cari"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Haku"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zoek"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Поиск"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keresés"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arama"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cerca"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Buscar"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Αναζήτηση"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cerca"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rechercher"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "搜尋"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "搜尋"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sök"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "بحث"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "खोजें"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Søg"
+          }
+        },
+        "yue_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Search"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Search"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Szukaj"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ค้นหา"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "搜索"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Søk"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Search"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paieška"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cari"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hledat"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vyhľadávanie"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Търсене"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Search"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Iskanje"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suchen"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tìm kiếm"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Buscar"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Пошук"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rechercher"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Іздеу"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Caută"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Buscar"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pretraži"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pesquisa"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "検索"
+          }
+        }
+      }
+    },
+    "SEARCH_ALLOW_ANONYMOUS_RECORDS": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "검색 향상"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "שיפור החיפוש"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tingkatkan Pencarian"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paranna hakua"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verbeter de zoekfunctie"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Улучшение Поиска"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A keresés javítása"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aramayı İyileştir"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Migliora la ricerca"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar Buscar"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Βελτίωση της Αναζήτησης"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Millora la cerca"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Améliorer les recherches"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "改進搜尋"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "改進搜尋"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Förbättra sökning"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تحسين البحث"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "खोज बेहतर बनाएँ"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gør Søg bedre"
+          }
+        },
+        "yue_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Search"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Search"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ulepszanie wyszukiwania"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ปรับปรุงการค้นหา"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "改进搜索"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forbedring av søk"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Search"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„Paieškos“ tobulinimas"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tingkatkan Carian"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vylepšovat vyhledávání"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vylepšovať vyhľadávanie"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Подобряване на търсенето"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Search"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Izboljšaj iskanje"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suche verbessern"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cải thiện Tìm kiếm"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar la búsqueda"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Удосконалення пошуку"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Améliorer la recherche"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "«Іздеу» функциясын жақсарту"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Îmbunătățire căutare"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Melhorar a Busca"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poboljšajte pretraživanje"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Melhorar a pesquisa"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "検索の改善"
+          }
+        }
+      }
+    },
+    "SEARCH_ALLOW_ANONYMOUS_RECORDS_FOOTER": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple이 사용자의 Safari, Siri, Spotlight, 찾아보기 및 #이미지 검색 쿼리를 저장하도록 허용하여 검색 기능 향상에 도움을 줄 수 있습니다. 수집되는 정보는 사용자를 식별할 수 없는 방식으로 저장되며 검색 결과를 향상하는 데 사용됩니다.\n\n검색어에는 일반적인 지식에 관한 검색 쿼리나 음악 재생, 경로 찾기와 같은 요청이 포함됩니다."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "באפשרותך לסייע בשיפור החיפוש באמצעות מתן הרשאה ל-Apple לאחסן את שאילתות החיפוש שביצעת באמצעות Safari, ‏Siri, ‏Spotlight, ״חיפוש נרחב״ וחיפושים של #תמונות. המידע שנאסף מאוחסן באופן שאינו מקושר לפרטי הזהות שלך, והוא משמש לשיפור תוצאות החיפוש.\n\nחיפושים כוללים שאילתות בנושאי ידע כללי ובקשות לבצע פעולות כמו הפעלת מוזיקה וקבלת הוראות הגעה."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bantu tingkatkan Cari dengan mengizinkan Apple untuk menyimpan permintaan pencarian Safari, Siri, Spotlight, Cari Tahu, dan #gambar Anda. Informasi yang dikumpulkan disimpan dengan cara yang tidak mengidentifikasi Anda dan digunakan untuk meningkatkan hasil pencarian.\n\nPencarian meliputi permintaan pengetahuan umum dan permintaan untuk melakukan hal seperti memutar musik dan mendapatkan petunjuk arah."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Auta parantamaan hakua sallimalla Applen tallentaa Safariin, Siriin, Spotlightiin, Katso lisää -toimintoon ja #kuvat-hakuun syöttämäsi hakukyselyt. Tiedot kerätään ja tallennetaan tavalla, josta sinua ei voida tunnistaa, ja niitä käytetään hakutulosten parantamiseen.\n\nHakuihin sisältyvät yleistiedon haut sekä pyynnöt esimerkiksi toistaa musiikkia tai hankkia reittiohjeita."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Help bij het verbeteren van de zoekfunctie door toe te staan dat Apple je zoekopdrachten in Safari, Siri, Spotlight, Zoek op en #images opslaat. De verzamelde informatie wordt gebruikt om zoekresultaten te verbeteren en wordt zo opgeslagen dat je identiteit er niet uit kan worden afgeleid.\n\nOnder zoekopdrachten vallen het opzoeken van algemene kennis en verzoeken om dingen te doen, zoals muziek afspelen en routebeschrijvingen opvragen."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Помогайте улучшать Поиск, разрешив Apple хранить Ваши поисковые запросы в Safari, Spotlight, при обращении к Siri, а также при использовании функции «Найти» и функции #изображения. Собранная информация хранится в форме, которая не дает возможности установить Вашу личность, и используется для повышения точности результатов поиска.\n\nК поисковым запросам относятся как поиск информации общего характера, так и запросы на выполнение различных действий, например воспроизвести музыку или построить маршрут."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Segíthet a Keresés továbbfejlesztésében, ha engedélyezi, hogy az Apple eltárolja a Safariban, a Siri segítségével, a Spotlightban és a Definiálásban végzett keresések lekérdezéseit, valamint a #képek típusú keresési lekérdezéseket. A gyűjtött információk olyan módon vannak tárolva, hogy nem alkalmasak az Ön azonosítására, és a keresési eredmények javítására vannak felhasználva.\n\nA keresések közé tartoznak az általános tudással kapcsolatos keresések, valamint a műveletek elvégzésével, például zene lejátszásával vagy útvonaltervek létrehozásával kapcsolatos kérések."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple’ın Safari, Siri, Spotlight, Araştır ve #görüntü arama sorgularınızı saklamasına izin vererek aramanın iyileştirilmesine yardımcı olun. Toplanan bilgiler, kimliğinizin bireysel olarak teşhis edilmesini sağlamayacak bir biçimde saklanır ve arama sonuçlarını iyileştirmek için kullanılır.\n\nAramalar arasında genel bilgi sorguları ile müzik çalma ve yol tarifi alma gibi şeyler yapma istekleri sayılabilir."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aiutaci a migliorare la funzionalità di ricerca consentendo ad Apple di salvare i termini che inserisci in Safari, Siri, Spotlight, “Cerca info” e #immagini con un metodo che non consente di associarli a te e che viene utilizzato per ottimizzare i risultati di ricerca.\n\nSono incluse le ricerche di informazioni generali di dominio pubblico e le richieste di eseguire attività, ad esempio riprodurre brani oppure ottenere indicazioni stradali."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ayuda a mejorar Buscar permitiendo a Apple almacenar tus consultas de búsqueda de Safari, Siri, Spotlight, Consultar e #imágenes. La información recopilada se almacena de forma que no te identifica y se usa para mejorar los resultados de búsqueda.\n\nLas búsquedas incluyen consultas de información general y peticiones para hacer acciones como reproducir música y obtener rutas."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Βοηθήστε στη βελτίωση της Αναζήτησης επιτρέποντας στην Apple να αποθηκεύει τα ερωτήματα αναζητήσεών σας στο Safari, το Siri, το Spotlight, την Εύρεση και τις #εικόνες. Οι συλλεγμένες πληροφορίες αποθηκεύονται με τρόπο που δεν σας ταυτοποιεί και χρησιμοποιούνται για βελτίωση των αποτελεσμάτων αναζήτησης.\n\nΟι αναζητήσεις περιλαμβάνουν ερωτήματα γενικών γνώσεων και αιτήματα εκτέλεσης ενεργειών, όπως αναπαραγωγή μουσικής και λήψη οδηγιών."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Per ajudar a millorar la cerca, permet que Apple desi les consultes i les cerques que fas amb Siri, al Safari i a l’Spotlight, incloses les d’#imatges. La informació recopilada es desa de manera que no se’t pugui identificar i es fa servir per millorar els resultats.\n\nLes cerques inclouen consultes sobre informació general i sol·licituds per fer coses com ara reproduir música i obtenir indicacions."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Contribuez à l’amélioration de la fonctionnalité de recherche en autorisant Apple à stocker les recherches que vous effectuez dans Safari, Siri, Spotlight, Chercher et #images. Les informations recueillies sont stockées d’une façon qui ne permet pas de vous identifier et utilisées pour améliorer les résultats de recherche.\n\nLes recherches incluent des questions de culture générale et des demandes comme celles qui permettent de faire jouer de la musique ou d’obtenir des itinéraires."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "允許Apple儲存Safari、Siri、Spotlight、查詢和 #影像 搜尋要求，以便協助改進「搜尋」。所收集的資訊會以無法識別你身分的方式儲存，並僅用於改進搜尋結果。\n\n搜尋項目包含一般知識的查詢，以及執行播放音樂和取得路線等操作的要求。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "允許Apple儲存Safari、Siri、Spotlight、「查詢」和「＃影像」的搜尋要求來協助改進搜尋。收集到的資料會以無法識別你個人身份的方式儲存，並會用於改進搜尋結果。\n\n搜尋包括一般知識的查詢，以及要求播放音樂和取得路線等。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hjälp till att förbättra sökning genom att tillåta att Apple lagrar dina sökförfrågningar i Safari, Siri, Spotlight, Slå upp och #bilder. Informationen som samlas in lagras på ett sätt som inte identifierar dig och används till att förbättra sökträffar.\n\nSökningar omfattar att slå upp allmänna faktafrågor och förfrågningar om saker som att spela upp musik eller hämta färdbeskrivningar."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ساعد في تحسين البحث عن طريق السماح لـ Apple بتخزين استعلامات البحث في سفاري و Siri والباحث والبحث العام و#الصور. تخزَّن المعلومات المجمَّعة بطريقة لا تدل على هويتك، وتُستخدم لتحسين نتائج البحث.\n\nتتضمن عمليات البحث الاستعلامات عن المعلومات العامة وطلبات تنفيذ أشياء مثل تشغيل الموسيقى والحصول على الاتجاهات."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple को आपकी Safari, Siri, Spotlight, तलाशें और #images सर्च क्वेरी को संग्रहित करने की अनुमति देकर खोज को बेहतर बनाने में मदद करें। एकत्रित जानकारी को इस प्रकार संग्रहित किया जाता है जिससे आपकी पहचान नहीं होती है और इसका इस्तेमाल खोज परिणामों को बेहतर बनाने के लिए किया जाता है।\n\nखोजों में संगीत बजाने और दिशानिर्देश पाने जैसी चीज़ों के लिए सामान्य ज्ञान संबंधी क्वेरी और अनुरोध शामिल होते हैं।"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hjælp med at forbedre Søg ved at tillade, at Apple opbevarer søgningerne i Safari, Siri, Spotlight, Slå op og søgninger på #billeder. De oplysninger, der indsamles, opbevares på en måde, som ikke kan identificere dig, og bruges til at forbedre søgeresultater.\n\nSøgninger inkluderer søgninger af generel viden og anmodninger om at udføre handlinger, f.eks. at afspille musik og få vejvisning."
+          }
+        },
+        "yue_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Help improve Search by allowing Apple to store your Safari, Siri, Spotlight, Lookup, and #images search queries. The information collected is stored in a way that does not identify you and is used to improve search results.\n\nSearches include general knowledge queries and requests to do things like play music and get directions."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Help improve Search by allowing Apple to store your Safari, Siri, Spotlight, Lookup, and #images search queries. The information collected is stored in a way that does not identify you and is used to improve search results.\n\nSearches include general knowledge queries and requests to do things like play music and get directions."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pomóż udoskonalać funkcję wyszukiwania, pozwalając Apple przechowywać frazy wyszukiwane w Safari oraz przy użyciu funkcji Siri, Spotlight, Sprawdź oraz #obrazki. Gromadzone informacje są przechowywane w sposób, który nie pozwala na zidentyfikowanie Ciebie, i są używane do udoskonalania wyników wyszukiwania.\n\nWyszukiwane frazy obejmują zapytania dotyczące wiedzy ogólnej oraz polecenia, na przykład odtwarzania muzyki lub znajdowania tras."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ช่วยปรับปรุงการค้นหาโดยอนุญาตให้ Apple จัดเก็บคำถามการค้นหาใน Safari, Siri, Spotlight, ค้นหา และ #ภาพ ข้อมูลที่เก็บรวบรวมจะถูกจัดเก็บในลักษณะที่ไม่สามารถระบุตัวตนของคุณได้และใช้เพื่อปรับปรุงผลการค้นหา\n\nการค้นหารวมถึงคำถามด้านความรู้ทั่วไป และคำขอให้ทำสิ่งต่างๆ เช่น เล่นเพลง และรับเส้นทาง"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "允许Apple储存你的Safari浏览器、Siri、聚焦、查询和#图像搜索查询，帮助改进搜索。收集的信息以无法识别你身份的方式储存并用于改进搜索结果。\n\n搜索包括通识查询和执行操作的请求，如播放音乐和获取路线。"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bidra til å forbedre søk ved å tillate at Apple kan lagre søkeforespørsler fra Safari, Siri, Spotlight, Slå opp og #bilder. Informasjonen som samles inn, oppbevares på en slik måte at den ikke kan identifisere deg, og kun brukes til å forbedre søkeresultater.\n\nSøkene inkluderer forespørsler om generell kunnskap og forespørsler om å gjøre ting som å spille av musikk og få veibeskrivelser."
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Help improve Search by allowing Apple to store your Safari, Siri, Spotlight, Lookup and #images search queries. The information collected is stored in a way that does not identify you and is used to improve search results.\n\nSearches include general knowledge queries and requests to do things like play music and get directions."
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Padėkite patobulinti paiešką leisdami „Apple“ saugoti „Safari“, „Siri“, „Spotlight“, „Rasti“ ir #images paieškos užklausas. Surinkta informacija yra saugoma tokiu būdu, kad ji nebūtų susieta su jumis; ji naudojama paieškos rezultatams tobulinti.\n\nPaieškos užklausos apima bendrųjų žinių užklausas ir nurodymus atlikti tokius veiksmus kaip leisti muziką arba gauti maršruto nurodymus."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bantu tingkatkan Carian dengan membenarkan Apple menyimpan pertanyaan carian Safari, Siri, Spotlight, Rujuk dan #imej anda. Maklumat yang dikumpulkan disimpan melalui cara yang tidak mengenal pasti anda dan digunakan untuk meningkatkan hasil carian.\n\nCarian termasuk pertanyaan pengetahuan am dan permintaan untuk melakukan perkara seperti memainkan muzik serta mendapatkan arah."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pomozte s vylepšováním vyhledávání tím, že společnosti Apple povolíte uchovávat vyhledávací dotazy ze Safari, Siri, Spotlightu, Hledání definic a hledání tagu #images. Shromážděné informace jsou uchovávány způsobem, který vás nijak neidentifikuje a slouží pouze k vylepšování výsledků hledání.\n\nJejich součástí je vyhledávání všeobecných znalostí a požadavků na přehrávání hudby, načítání tras a další."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pomôžte vylepšovať vyhľadávanie tým, že spoločnosti Apple umožníte uchovávať vyhľadávacie dopyty zadávané v Safari, Siri, Spotlighte, Prehľadávaní a vyhľadávanie tagu #obrázky. Zhromaždené informácie sa uchovávajú spôsobom, ktorý neumožňuje vašu identifikáciu, a používajú sa na vylepšovanie výsledkov vyhľadávania.\n\nIch súčasťou sú vyhľadávania všeobecných znalostí a žiadosti o prehratie hudby, stanovenie trasy a podobné akcie."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Помогнете за подобряването на търсенето, като позволите на Apple да съхранява заявките за търсене, които въвеждате в Safari, Siri, Spotlight, Потърси и #изображения. Събраната информация се съхранява по начин, който не ви идентифицира и се използва за подобряване на резултатите от търсенето.\n\nТърсенията включват заявки за общи знания и заявки за действия като възпроизвеждане на музика и получаване на указания."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Help improve Search by allowing Apple to store your Safari, Siri, Spotlight, Lookup and #images search queries. The information collected is stored in a way that does not identify you and is used to improve search results.\n\nSearches include general knowledge queries and requests to do things like play music and get directions."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pomagajte izboljšati iskanje tako, da družbi Apple dovolite hrambo vaših iskalnih poizvedb v Safariju, Siri, pomočniku Spotlight, funkciji Poišči in pri iskanju #slik. Zbrane informacije se hranijo na način, ki ne omogoča osebne prepoznave, in se uporabljajo za izboljšanje rezultatov iskanja.\n\nPoizvedbe vključujejo poizvedbe na področju splošnega znanja in zahteve za izvedbo dejanj, na primer predvajanje glasbe in pridobivanje navodil za pot."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hilf mit, die Suchfunktion zu verbessern, indem du Apple erlaubst, deine Suchanfragen in Safari, Siri, Spotlight, „Nachschlagen“ und #Bilder zu speichern. Die gesammelten Informationen werden auf eine Weise gespeichert, durch die du nicht identifiziert wirst und die dazu dient, Suchergebnisse zu verbessern.\n\nZu den Suchanfragen zählen das Nachschlagen von allgemeinem Wissen sowie Anfragen zum Erledigen von Dingen, wie Musik wiederzugeben und Routen abzurufen."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Giúp cải thiện Tìm kiếm bằng cách cho phép Apple lưu trữ các truy vấn tìm kiếm trên Safari, Siri, Spotlight, Tra cứu và #hinhanh của bạn. Thông tin được thu thập được lưu trữ theo phương thức không xác định danh tính của bạn và được sử dụng để cải thiện kết quả tìm kiếm.\n\nCác tìm kiếm bao gồm các truy vấn về kiến thức phổ thông, cũng như các yêu cầu thực hiện các tác vụ như phát nhạc và nhận chỉ đường."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ayuda a mejorar la función de búsqueda permitiendo a Apple guardar las búsquedas realizadas en Safari, Siri, Spotlight y Buscar, así como las de #imágenes de un modo que impida asociarlas contigo.\n\nLas búsquedas incluyen consultas sobre información de conocimiento general y peticiones para realizar acciones, como reproducir música u obtener indicaciones."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Допомагайте покращувати пошук, дозволивши Apple зберігати ваші пошукові запити Safari, Siri, Spotlight, Тлумачення, а також запити #зображень. Зібрана інформація зберігається в спосіб, що не ідентифікує вас, і використовується для покращення результатів пошуку.\n\nДо пошукових запитів входять загальні запити інформації та запити на виконання дій, як‑от відтворення музики й прокладання маршрутів."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aidez à améliorer la recherche en autorisant Apple à conserver vos recherches Safari, Siri, Spotlight, Chercher et #images. Les informations recueillies sont stockées sans vous être associées et sont utilisées pour améliorer les résultats de recherche.\n\nLes recherches incluent les recherches d’ordre général, ainsi que les requêtes pour effectuer des actions, comme lire de la musique ou obtenir des itinéraires."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple компаниясына Safari, Siri, Spotlight, Іздеу және #кескіндер бойынша іздеу сұрауларыңызды сақтауға рұқсат беру арқылы «Іздеу» функциясын жақсартуға көмектесіңіз. Ақпарат жеке басыңызды анықтау мүмкін болмайтындай сақталады және іздеу нәтижелерін жақсарту үшін пайдаланылады.\n\nІздеу әрекеттері жалпы ақпаратқа сұрауларды, сондай-ақ музыка ойнату және бағыттарды алу сияқты әрекеттерді орындау бойынша сұрауларды қамтиды."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Contribuiți la îmbunătățirea căutării permițând ca Apple să stocheze căutările pe care le efectuați în Safari, Siri, Spotlight, precum și în referințe și #imagini. Informațiile colectate sunt stocate într-un mod care nu vă identifică personal și sunt utilizate pentru îmbunătățirea rezultatelor căutărilor.\n\nDatele includ căutările referitoare la informații de cultură generală și solicitările de a realiza acțiuni, precum redarea muzicii și obținerea itinerarelor."
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Para ajudar a melhorar a Busca, permita que a Apple armazene as buscas que você faz no Safari, na Siri, no Spotlight, na Pesquisa e as buscas por #imagens. As informações coletadas são armazenadas de modo a não identificar você e são usadas para melhorar os resultados de busca.\n\nAs buscas incluem pesquisas de conhecimento geral e pedidos para realizar coisas como reproduzir música e obter itinerários."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pomozite poboljšati pretraživanje tako da dozvolite tvrtki Apple pohranu vaših Safari, Siri, Spotlight, Lookup i #slike upite za pretraživanje. Prikupljene informacije pohranjuju se na način kojim vas se ne identificira i koristi za poboljšanje rezultata pretraživanja.\n\nPretraživanja uključuju upite vezane uz opće znanje i zahtjeve za obavljanje stvari poput reproduciranja glazbe i učitavanja uputa."
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajude a melhorar a pesquisa permitindo que a Apple armazene as pesquisas feitas no Safari, com Siri, no Spotlight, na procura e com #imagens. A informação é recolhida sem qualquer associação a si e é utilizada para melhorar os resultados de pesquisa.\n\nAs pesquisas incluem consultas de referência geral e pedidos para reproduzir música e obter indicações, entre outros."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Safari、Siri、Spotlight、“調べる”、および“#画像”の検索クエリーをAppleが保存することを許可することで、検索機能の改善にご協力いただけます。Appleが収集する情報は、個人を特定できない方法で保存され、検索結果を向上させるために使用されます。\n\n検索には、一般知識のクエリー、およびミュージックの再生や経路の取得などの動作のリクエストが含まれます。"
+          }
+        }
+      }
+    },
+    "APP_CLIPS_SHOW_IN_SEARCH": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "검색에서 보기"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "הצגה בחיפוש"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tampilkan di Cari"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Näytä Haussa"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toon in 'Zoek'"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Отображение при Поиске"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Megjelenítés a Keresésben"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ara’da Göster"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostra in Cerca"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar en Buscar"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Εμφάνιση στην Αναζήτηση"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostra a la cerca"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Afficher dans Rechercher"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "顯示於「搜尋」"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在「搜尋」顯示"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Visa i Sök"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إظهار في البحث"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "खोज में दिखाएँ"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vis i Søg"
+          }
+        },
+        "yue_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show in Search"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show in Search"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pokazuj w wyszukiwaniu"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "แสดงในการค้นหา"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在搜索中显示"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vis i søk"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show in Search"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rodyti paieškoje"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tunjukkan dalam Carian"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobrazit v hledání"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobraziť vo vyhľadávaní"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Покажи в Търсене"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show in Search"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prikaži v iskanju"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In Suche anzeigen"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hiển thị trong Tìm kiếm"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar en Buscar"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Показувати в Пошуку"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Afficher dans la recherche"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Іздеу кезінде көрсету"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Afișare în căutare"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar na Busca"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prikaži u Pretrazi"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar na Pesquisa"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "検索で表示"
+          }
+        }
+      }
+    },
+    "APP_CLIPS_IN_APP_CLIPS_HEADER": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "앱 클립에서"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ב״יישומים ברגע״"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "DI CUPLIKAN APP"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "APPIKLIPEISSÄ"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "IN APPCLIPS"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "В БЛИЦ-ПРИЛОЖЕНИЯХ"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "APPRÉSZLETEKBEN"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "UYGULAMA PARÇACIKLARI İÇİNDE"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NELLE APP CLIP"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "EN APP CLIPS"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ΣΕ ΚΛΙΠ ΕΦΑΡΜΟΓΩΝ"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A CLIPS D’APPS"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "DANS LES EXTRAITS D’APP"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在輕巧APP中"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在輕巧版App中"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I APPKLIPP"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "في عينات التطبيقات"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ऐप क्लिप में"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I APPKLIP"
+          }
+        },
+        "yue_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "IN APP CLIPS"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "IN APP CLIPS"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "W WYCINKACH APLIKACJI"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ในแอปคลิป"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在轻App中"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I APPKLIPP"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "IN APP CLIPS"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PROGRAMŲ IŠKARPOSE"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "DALAM KLIP APP"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "V KLIPECH APLIKACÍ"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "V APP CLIPOCH"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "В ИЗРЕЗКИ НА ПРИЛОЖЕНИЯ"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "IN APP CLIPS"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "V IZSEKIH APLIKACIJ"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "IN APP CLIPS"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TRONG ỨNG DỤNG THU NHỎ"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "EN LOS CLIPS DE APPS"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "У ФРАГМЕНТАХ ПРОГРАМ"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "DANS LES EXTRAITS D’APP"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "БЛИЦ ҚОЛДАНБАЛАРДА"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ÎN APP CLIP‑URI"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "EM CLIPES DE APPS"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "U ISJEČCIMA APLIKACIJA"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "EM APP CLIPS"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "APP CLIP内"
+          }
+        }
+      }
+    },
+    "APP_CLIPS_IN_APP_CLIPS_FOOTER": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "사용자가 앱 클립 앱을 어떻게 사용하는지를 Siri가 배워서 모든 앱에 걸쳐 제안할 수 있도록 허용합니다."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ניתן לאפשר ל-Siri ללמוד מדפוסי השימוש שלך ב״יישומים ברגע״ כדי להציג הצעות ביישומים שונים."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Izinkan Siri untuk mempelajari bagaimana Anda menggunakan cuplikan app untuk mengajukan saran di berbagai app."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salli Sirin oppia kuinka käytät appiklippejä, jotta se voi tehdä ehdotuksia muissa apeissa."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sta toe dat Siri leert hoe je appclips gebruikt zodat je suggesties krijgt in apps."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Разрешите Siri анализировать, как Вы используете блиц-приложения, чтобы делать предложения во всех приложениях."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Engedélyezheti Sirinek annak megismerését, hogy Ön hogyan használja az apprészleteket, hogy több appban is javaslatokat tehessen."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri’nin uygulamalarda önerilerde bulunabilmesi için Uygulama Parçacıkları kullanımınızı öğrenmesine izin verir."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Consenti a Siri di apprendere dal modo in cui utilizzi le app clip per ricevere suggerimenti tra le diverse app."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permite a Siri aprender cómo usas App Clips para realizar sugerencias en las apps."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Επιτρέπεται στο Siri να μαθαίνει από τον τρόπο που χρησιμοποιείτε κλιπ εφαρμογών, ώστε να εμφανίζει προτάσεις σε εφαρμογές."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permet que Siri aprengui com utilitzes els clips d’apps per fer‑te suggeriments en totes les apps."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autorisez Siri à analyser l’utilisation que vous faites des extraits d’app afin d’obtenir des suggestions dans les apps."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "允許Siri學習你使用輕巧App的方式，以便在多個App中建議。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "允許Siri學習你使用輕巧版App的方式，從而在多個App中作出建議。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tillåt att Siri lär sig hur du använder appklipp och använder den informationen till att ge förslag i olika appar."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "السماح لـ \"Siri\" بتعلم كيفية استخدامك لعينات التطبيقات لإنشاء اقتراحات في كل التطبيقات."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "सभी ऐप्स में सुझाव देने के लिए Siri को ऐप क्लिप के अपने इस्तेमाल के तौर-तरीक़े सीखने की अनुमति दें।"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tillad, at Siri må lære af den måde, du bruger appklip på, for at kunne give forslag på tværs af apps."
+          }
+        },
+        "yue_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allow Siri to learn from how you use app clips to make suggestions across apps."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allow Siri to learn from how you use app clips to make suggestions across apps."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri będzie uczyć się sposobu, w jaki używasz wycinków aplikacji, i tworzyć sugestie w wielu aplikacjach."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "อนุญาตให้ Siri เรียนรู้การใช้งานแอปคลิปของคุณเพื่อเสนอคำแนะนำในทุกแอป"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "允许Siri学习你使用轻App的方式，以跨App提供建议。"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tillat at Siri kan lære hvordan du bruker appklipp og gi forslag på tvers av apper."
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allow Siri to learn from how you use app clips to make suggestions across apps."
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leiskite „Siri“ mokytis iš to, kaip naudojate programų iškarpas, ir jose teikti pasiūlymus."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Benarkan Siri mempelajari cara anda menggunakan klip app untuk membuat cadangan merentas app."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri se může učit z vašeho používání klipů aplikací a poskytovat vám návrhy v dalších aplikacích."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri sa bude môcť učiť z vášho používania app clipov a následne vám poskytovať návrhy v ďalších apkách."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Позволете на Siri да научи как използвате изрезките на приложения, за да прави предложения в приложения."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allow Siri to learn from how you use app clips to make suggestions across apps."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Omogočite, da se Siri uči, kako uporabljate izseke aplikacij, da vam lahko posreduje predloge v aplikacijah."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erlaube, dass Siri anhand deiner Benutzung von App Clips lernt und Vorschläge in anderen Apps macht."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cho phép Siri ghi nhớ cách bạn sử dụng ứng dụng thu nhỏ để đưa ra gợi ý trên các ứng dụng."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permite que Siri aprenda cómo usas los clips de apps para ofrecer sugerencias en las apps."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Дозволити Siri вивчати те, як ви використовуєте фрагменти програм, для пропозицій у різних програмах."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autorisez Siri à apprendre de votre utilisation des extraits d’app pour émettre des suggestions dans toutes les apps."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ұсыныстарды тиімдірек ету үшін Siri көмекшісіне блиц қолданбаларды пайдалану жолын талдауға рұқсат етіңіз."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permiteți ca Siri să învețe din modul în care utilizați App Clip‑uri pentru a face sugestii în aplicații."
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permitir que a Siri aprenda com base na maneira como você usa clipes de apps para fazer sugestões em apps."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dozvolite značajki Siri učenje iz načina na koji koristite isječke aplikacija radi pružanja prijedloga u svim aplikacijama."
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permitir que Siri aprenda com a forma como usa App Clips para fazer sugestões entre aplicações."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SiriがApp Clipの使用状況を学習して、さまざまなアプリで提案できるようにします。"
+          }
+        }
+      }
+    },
+    "APP_CLIPS_SUGGEST_APP_CLIPS": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "앱 클립 제안"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "הכללת ״יישומים ברגע״ בהצעות"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sarankan Cuplikan App"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ehdota appiklippejä"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stel appclips voor"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Блиц-приложения"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apprészletek javasolása"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uygulama Parçacığı Öner"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suggerisci app clip"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sugerir App Clips"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Προτάσεις κλιπ εφαρμογών"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suggereix clips d’apps"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suggérer des extraits d’app"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "建議輕巧App"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "建議輕巧版App"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Föreslå appklipp"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اقتراح عينات التطبيقات"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ऐप क्लिप का सुझाव दें"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Foreslå appklip"
+          }
+        },
+        "yue_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suggest App Clips"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suggest App Clips"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sugeruj wycinki aplikacji"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "แนะนำแอปคลิป"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "建议轻App"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Foreslå appklipp"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suggest App Clips"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siūlyti programų iškarpas"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cadangkan Klip App"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Navrhovat klipy aplikací"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Navrhovať app clipy"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Предлагай изрезки на приложения"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suggest App Clips"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Predlagaj izseke aplikacij"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App Clips vorschlagen"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gợi ý ứng dụng thu nhỏ"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sugerir clips de apps"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Пропонувати фрагменти програм"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suggérer des extraits d’app"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Блиц қолданбалар ұсыныстары"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sugerare App Clip‑uri"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sugerir Clipes de Apps"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Predloži isječke aplikacija"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sugerir App Clips"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App Clipを提案"
+          }
+        }
+      }
+    },
+    "SEARCH_AND_LOOKUP_SHOW_RELATED_CONTENT": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "관련 콘텐츠 보기"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "הצגת תוכן קשור"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tampilkan Konten Terkait"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Näytä liittyvä sisältö"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toon verwant materiaal"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Связанный контент"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kapcsolódó tartalom megjelenítése"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İlgili İçerikleri Göster"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostra i contenuti correlati"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar contenido relacionado"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Εμφάνιση σχετικού περιεχομένου"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostra contingut relacionat"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Afficher le contenu associé"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "顯示相關內容"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "顯示相關內容"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Visa relaterat innehåll"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إظهار المحتوى ذي الصلة"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "संबंधित कॉन्टेंट दिखाएँ"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vis beslægtet indhold"
+          }
+        },
+        "yue_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show Related Content"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show Related Content"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pokazuj powiązaną zawartość"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "แสดงเนื้อหาที่เกี่ยวข้อง"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "显示相关内容"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vis relatert innhold"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show Related Content"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rodyti susijusį turinį"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tunjukkan Kandungan Berkaitan"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobrazit související obsah"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobraziť súvisiaci obsah"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Покажи свързано съдържание"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show Related Content"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prikaži povezano vsebino"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zugehörige Inhalte anzeigen"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hiển thị nội dung liên quan"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar contenido relacionado"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Показати повʼязаний вміст"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Afficher le contenu associé"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Байланысты контентті көрсету"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Afișare conținut asociat"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar Conteúdo Relacionado"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prikaži povezani sadržaj"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar conteúdo relacionado"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "関連コンテンツを表示"
+          }
+        }
+      }
+    },
+    "APP_CLIPS_LEARN_FROM_APP_CLIPS": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "앱 클립에서 배우기"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "למידה מ״יישומים ברגע״"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Belajar dari Cuplikan App"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Opi appiklipeistä"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leer van appclips"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Анализ блиц-приложений"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tanulás az apprészletekből"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uygulama Parçacığından Öğren"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Impara dalle app clip"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aprender de App Clips"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Εκμάθηση βάσει κλιπ εφαρμογών"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aprèn dels clips d’apps"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apprendre des extraits d’app"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "從輕巧App學習"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "從輕巧版App學習"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lär från appklipp"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اعرف أكثر من عينات التطبيقات"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ऐप क्लिप से सीखें"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lær af Appklip"
+          }
+        },
+        "yue_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Learn from App Clips"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Learn from App Clips"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ucz się od wycinków aplikacji"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เรียนรู้จากแอปคลิป"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "从轻App学习"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lær fra appklipp"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Learn from App Clips"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mokytis iš programų iškarpų"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Belajar daripada Klip App"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Učit se z klipů aplikací"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Učiť sa z app clipov"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Учи се от изрезки на приложения"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Learn from App Clips"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Učenje iz izsekov aplikacij"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Von App Clips lernen"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ghi nhớ từ Ứng dụng thu nhỏ"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aprender de los clips de apps"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Збирати дані у фрагментах програм"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apprendre des extraits d’app"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Блиц қолданбаларда талдау"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Învățare din App Clip‑uri"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aprender com Clipes de Apps"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uči iz isječaka aplikacija"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aprender com App Clips"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App Clipから学習"
+          }
+        }
+      }
+    },
+    "SEARCH_PERAPP_ONHOMESCREEN_HEADER": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "홈 화면에서"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "במסך הבית"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "DI LAYAR UTAMA"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "KOTI-VALIKOSSA"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OP BEGINSCHERM"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "НА ЭКРАНЕ «ДОМОЙ»"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A FŐKÉPERNYŐN"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ANA EKRANDA"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SULLA SCHERMATA HOME"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "EN LA PANTALLA DE INICIO"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ΣΤΗΝ ΟΘΟΝΗ ΑΦΕΤΗΡΙΑΣ"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A LA PANTALLA D’INICI"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SUR L’ÉCRAN D’ACCUEIL"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "主畫面"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "主畫面"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PÅ HEMSKÄRMEN"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "على الشاشة الرئسية"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "होम स्क्रीन पर"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PÅ HJEMMESKÆRM"
+          }
+        },
+        "yue_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ON HOME SCREEN"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ON HOME SCREEN"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NA EKRANIE GŁÓWNYM"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "บนหน้าจอโฮม"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "主屏幕上"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PÅ HJEM-SKJERM"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ON HOME SCREEN"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PRADŽIOS EKRANE"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PADA SKRIN UTAMA"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NA PLOŠE"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NA PLOCHE"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "НА НАЧАЛЕН ЕКРАН"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ON HOME SCREEN"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NA DOMAČEM ZASLONU"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "AUF HOME-BILDSCHIRM"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TRÊN MÀN HÌNH CHÍNH"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "EN LA PANTALLA DE INICIO"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "НА ПОЧАТКОВОМУ ЕКРАНІ"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SUR L’ÉCRAN D’ACCUEIL"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "БАСТЫ ЭКРАНДА"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PE ECRANUL PRINCIPAL"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NA TELA DE INÍCIO"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NA POČETNOM ZASLONU"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NO ECRÃ PRINCIPAL"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ホーム画面上"
+          }
+        }
+      }
+    },
+    "SEARCH_AND_LOOKUP_GROUP": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "검색 및 찾아보기"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "חיפוש וחיפוש נרחב"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cari dan Cari Tahu"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Haku ja Katso lisää -toiminto"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zoek en 'Zoek op'"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Поиск и функция «Найти»"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keresés és definiálás"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ara ve Araştır"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ricerca e “Cerca info”"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Buscar y consultar"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Αναζήτηση και διερεύνηση"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cerca i consulta"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rechercher et chercher"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "搜尋和查詢"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "搜尋和查詢"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sök och slå upp"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "البحث و\"البحث العام\""
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "खोजें और तलाशें"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Søg og slå op"
+          }
+        },
+        "yue_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Search and Look Up"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Search and Look Up"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Szukaj i Sprawdź"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ค้นหาและค้นดู"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "搜索和查询"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Søk og Slå opp"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Search and Look Up"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„Paieška“ ir „Rasti“"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cari dan Rujuk"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vyhledávání a hledání definic"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vyhľadávanie a prehľadávanie"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Търсене и „Провери“"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Search and Look Up"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Iskanje in preverjanje"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suchen und Nachschlagen"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tìm kiếm và Tra cứu"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Buscar y consultar"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Пошук і тлумачення"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recherche et Chercher"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Іздеу және табу"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Căutare și Căutare referințe"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Busca e Pesquisa"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pretraživanje i funkcija traženja"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pesquisa e procura"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "検索と“調べる”"
+          }
+        }
+      }
+    },
+    "SEARCH_PERAPP_WHILESEARCHING_SHOWAPP_TOGGLE": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "검색에서 앱 표시"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "הצגת היישום בחיפוש"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tampilkan App di Cari"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Näytä appi Haussa"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toon app in 'Zoek'"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Приложение при поиске"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App a Keresésben"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uygulamayı Ara’da Göster"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostra app in Cerca"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar la app en Buscar"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Εφαρμογή στην Αναζήτηση"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostra l’app a la cerca"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Afficher l’app dans Rechercher"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在「搜尋」中顯示App"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在「搜尋」中顯示App"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Visa app i Sök"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إظهار التطبيق في البحث"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“खोजें” में ऐप दिखाएँ"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vis app i Søg"
+          }
+        },
+        "yue_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show App in Search"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show App in Search"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aplikacja w wyszukiwaniu"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "แสดงแอปในการค้นหา"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在搜索中显示App"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vis appen i Søk"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show App in Search"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rodyti programą paieškoje"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tunjukkan App dalam Carian"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobrazovat aplikaci v hledání"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobraziť apku vo vyhľadávaní"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Покажи приложение в Търсене"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show App in Search"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prikaži aplikacijo v iskanju"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App in „Suche“ anzeigen"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hiển thị ứng dụng trong Tìm kiếm"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar la app en Buscar"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Програма в Пошуку"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Afficher l’app dans Recherche"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Іздеу кезінде қолданбаны көрсету"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Afișare aplicație în căutare"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar App na Busca"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prikaži aplikaciju u pretragama"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar aplicação na Pesquisa"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "検索でアプリを表示"
+          }
+        }
+      }
+    },
+    "SEARCH_PERAPP_WHILESEARCHING_SHOWCONTENT_TOGGLE": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "검색에서 콘텐츠 표시"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "הצגת התוכן בחיפוש"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tampilkan Konten di Cari"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Näytä sisältö Haussa"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toon materiaal in 'Zoek'"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Контент при поиске"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tartalom a Keresésben"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İçeriği Ara’da Göster"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostra contenuto in Cerca"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar contenido en Buscar"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Περιεχόμενο στην Αναζήτηση"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostra el contingut a la cerca"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Afficher du contenu dans Rechercher"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在「搜尋」中顯示內容"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在「搜尋」中顯示內容"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Visa innehåll i Sök"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إظهار المحتوى في البحث"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“खोजें” में कॉन्टेंट दिखाएँ"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vis indhold i Søg"
+          }
+        },
+        "yue_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show Content in Search"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show Content in Search"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Treści w wyszukiwaniu"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "แสดงเนื้อหาในการค้นหา"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在搜索中显示内容"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vis innhold i Søk"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show Content in Search"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rodyti turinį paieškoje"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kandungan dalam Carian"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobrazovat obsah v hledání"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobraziť obsah vo vyhľadávaní"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Покажи съдържание в Търсене"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show Content in Search"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prikaži vsebino v iskanju"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inhalt in „Suche“ anzeigen"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hiển thị nội dung trong Tìm kiếm"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar contenido en Buscar"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вміст у Пошуку"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Afficher le contenu dans Recherche"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Іздеу кезінде контентті көрсету"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Afișare conținut în căutare"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar Conteúdo na Busca"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prikaži sadržaj u pretragama"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar conteúdo na Pesquisa"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "検索でコンテンツを表示"
+          }
+        }
+      }
+    },
+    "SEARCH_AND_LOOKUP_FOOTER": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "사진에서 텍스트 또는 대상을 찾거나 검색할 때 Apple 및 관계사의 콘텐츠를 표시하도록 허용합니다."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ניתן לאפשר הצגה של תוכן מ-Apple ומשותפים אחרים בעת ביצוע חיפוש או חיפוש נרחב של מלל או אובייקטים בתמונות."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Izinkan konten dari Apple dan mitra lainnya untuk ditampilkan saat mencari atau mencari tahu teks atau objek di foto."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salli Applen ja muiden kumppaneiden sisällön näkyä etsittäessä tai katsottaessa lisätietoja kuvissa olevista teksteistä tai esineistä."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sta toe dat materiaal van Apple en andere partners kan worden weergegeven bij het zoeken of bij het opzoeken van tekst of objecten in foto's."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Разрешите контенту от Apple и других партнеров отображаться при поиске, в том числе при поиске текста или объектов на фото."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Engedélyezi, hogy az Apple-től és más partnerektől származó tartalmak megjelenjenek kereséskor, illetve szöveg vagy objektumok fotókban való definiálásakor."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotoğraflarda metin ararken veya fotoğraflardaki metinler veya nesneler araştırılırken Apple’dan ve diğer iş ortaklarından içeriklerin gösterilmesine izin verir."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Consenti che vengano mostrati contenuti di Apple e di altri partner quando esegui ricerche o usi “Cerca info” sul testo o sugli oggetti nelle foto."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permite que se muestre contenido de Apple y otros socios comerciales al realizar una búsqueda o al consultar texto u objetos en fotos."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Να επιτρέπεται η εμφάνιση περιεχομένου από την Apple και άλλους συνεργάτες κατά την αναζήτηση ή τη διερεύνηση κειμένου ή αντικειμένων σε φωτογραφίες."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permet que es mostri contingut d’Apple i d’altres col·laboradors en fer cerques, incloses les de text als objectes o a les fotos."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autorisez l’affichage de contenus provenant d’Apple et d’autres partenaires lorsque vous effectuez une recherche, ou que vous cherchez du texte ou des objets dans des photos."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在你搜尋或查詢照片中文字或物品時允許顯示來自Apple和其他合作夥伴的內容。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "當搜尋或查看相片中的文字或物件時，允許顯示來自Apple和其他合作夥伴的內容。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tillåt att innehåll från Apple och andra partners visas vid sökning och när text eller objekt i bilder slås upp."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "السماح بعرض المحتوى من Apple والشركاء الآخرين عند العثور أو البحث عن نص أو عناصر في الصور."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "खोज करते समय या तस्वीर में टेक्स्ट या ऑब्जेक्ट देखते समय Apple और अन्य पार्टनर के कॉन्टेंट दिखाने की अनुमति दें।"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tillad, at indhold fra Apple og andre partnere vises, når du søger, eller når du slår tekst eller genstande på fotos op."
+          }
+        },
+        "yue_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allow content from Apple and other partners to be shown when searching or when looking up text or objects in photos."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allow content from Apple and other partners to be shown when searching or when looking up text or objects in photos."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pozwalaj na wyświetlanie treści od Apple i innych partnerów podczas wyszukiwania i sprawdzania tekstu lub obiektów na zdjęciach."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "อนุญาตให้เนื้อหาจาก Apple และคู่ค้ารายอื่นแสดงขึ้นมาเมื่อค้นหาหรือเมื่อค้นดูข้อความหรือวัตถุในรูปภาพ"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "搜索或查询照片中的文字或物品时，允许显示来自Apple及其他合作方的内容。"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tillat at innhold fra Apple og andre partnere kan vises når du søker etter eller du slår opp tekst eller objekter i bilder."
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allow content from Apple and other partners to be shown when searching or when looking up text or objects in photos."
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leisti rodyti „Apple“ ir kitų partnerių turinį atliekant paiešką arba ieškant teksto ar objektų nuotraukose."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Benarkan kandungan daripada Apple dan rakan kongsi lain ditunjukkan apabila mencari atau merujuk teks atau objek dalam foto."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Povoluje zobrazování dat od společnosti Apple a dalších partnerů při vyhledávání a hledání definic pro text a předměty na fotkách."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Obsah od spoločnosti Apple a ďalších partnerov sa bude môcť zobrazovať pri vyhľadávaní objektov alebo hľadaní definícií textu na fotkách."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Позволете да се показва съдържание от Apple и други партньори при търсене или когато проверявате текст или обекти в снимки."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allow content from Apple and other partners to be shown when searching or when looking up text or objects in photos."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pri iskalnih poizvedbah ter iskanju besedila ali predmetov na fotografijah dovolite prikaz vsebine družbe Apple in drugih partnerjev."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erlaube, dass Inhalte von Apple und anderen Partnern bei der Suche oder beim Nachschlagen von Text oder Objekten in Fotos angezeigt werden."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cho phép hiển thị nội dung từ Apple và các đối tác khác khi tìm kiếm hoặc khi tra cứu văn bản hay đối tượng trong ảnh."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se mostrará el contenido de Apple y de otras empresas colaboradoras al realizar búsquedas o al buscar texto u objetos en las fotos."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Дозволяти показувати вміст від Apple та партнерів під час пошуку тексту чи обʼєктів на фотографіях."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autorisez l’affichage de contenus provenant d’Apple et d’autres partenaires lorsque vous effectuez une recherche ou que vous recherchez du texte ou des objets dans des photos."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Іздеу кезінде немесе фотоларда мәтінді немесе объектілерді іздегенде Apple мен басқа серіктестер ұсынған контенттің көрсетілуіне мүмкіндік беріңіз."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permiteți afișarea conținutului de la Apple și alți parteneri în timpul căutărilor sau atunci când căutați referințe pentru text sau obiecte în poze."
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permita que conteúdo da Apple e de outros parceiros seja mostrado ao buscar ou ao pesquisar texto ou objetos em fotos."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dozvolite prikazivanje sadržaja od Applea i drugih partnera tijekom pretraživanja ili traženja teksta ili predmeta na fotografijama."
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permitir a apresentação de conteúdos da Apple e de entidades parceiras ao pesquisar ou ao procurar texto ou objetos em fotografias."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "検索したり、写真内でオブジェクトやテキストを調べたりするときに、Appleとその他のパートナーからのコンテンツを表示することを許可します。"
+          }
+        }
+      }
+    },
+    "SEARCH_PERAPP_WHILESEARCHING_FOOTER": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "‘%@’의 앱 및 콘텐츠가 검색에 표시되도록 허용합니다."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ניתן לאפשר ליישום ״⁨%@⁩״ ולתוכן שלו להופיע בחיפוש."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Izinkan “%@” app dan kontennya untuk muncul di Cari."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salli %[tt]@-apin ja sen sisällön esiintyä hauissa."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sta toe dat de app %@ en de inhoud ervan worden weer­gegeven in zoek­resultaten."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Разрешите показывать приложение «%@» и его контент в результатах поиска."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Engedélyezheti, hogy a(z) „%@” app és az appban lévő tartalmak megjelenjenek a Keresésben."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“%@” uygulamanın ve içeriğinin Ara’da görünmesine izin verir."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Consenti la visualizzazione dell’app %@ e dei suoi contenuti in Cerca."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permite que la app %@ y su contenido se muestre en Buscar."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Επιτρέπεται η εμφάνιση «%@», της εφαρμογής και του περιεχομένου της στην Αναζήτηση."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permet que l’app %@ i el seu contingut apareguin a la cerca."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autorisez l’affichage de l’app « %1$@ » et de son contenu dans Rechercher."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "允許「%@」App及其內容在搜尋中顯示。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "允許「%@」App及其內容在「搜尋」中顯示。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tillåt att appen %@ och dess innehåll visas i Sök."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "السماح بظهور تطبيق \"%@\" ومحتوياته في البحث."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“%@” ऐप और उसके कॉन्टेंट खोज में दिखाने की अनुमति दें।"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tillad, at appen “%@” og dens indhold vises i Søg."
+          }
+        },
+        "yue_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allow “%@” the app and its content to appear in Search."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allow “%@” the app and its content to appear in Search."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zawartość aplikacji %@ będzie wyświetlana w wynikach wyszukiwania."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "อนุญาตให้ “%@” แอปและเนื้อหาของแอปแสดงในการค้นหา"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "允许“%@”App及其内容在搜索中显示。"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tillat at appen %@ og dens innhold vises ved søk."
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allow “%@” and its content to appear in Search."
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Leisti programą „%@” ir jos turinį rodyti paieškoje."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Benarkan app “%@” dan kandungannya kelihatan dalam Carian."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Povolí zobrazování aplikace „%@“ a jejího obsahu při hledání."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Povolí zobrazovanie apky „%@“ a jej obsahu vo vyhľadávaní."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Позволете на приложението „%@“ и неговото съдържание да се появяват в Търсене."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Allow “%@” the app and its content to appear in Search."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dovolite, da se aplikacija »%@« in njena vsebina prikažeta v iskanju."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erlaube „%@“, die App und ihre Inhalte beim Suchen anzuzeigen."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cho phép ứng dụng “%@” và nội dung của ứng dụng xuất hiện trong Tìm kiếm."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permite que aparezca la app %@ y su contenido al buscar."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Дозволити програмі «%@» та її вмісту зʼявлятися в Пошуку."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autorisez l’app « %@ » et son contenu à s’afficher dans Recherche."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Іздеу нәтижелерінде «%@» қолданбасы мен оның контентін көрсетуге рұқсат ету."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permiteți “%@”, aplicației și conținutului său să se afișeze în căutare."
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permitir que o app “%@” e seu conteúdo apareçam na Busca."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dozvolite prikazivanje aplikacije “%@” i njezinog sadržaja tijekom pretraživanja."
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permitir que a aplicação %@ e o respetivo conteúdo apareçam nos resultados da Pesquisa."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“%@”にアプリとそのコンテンツを検索に表示できるようにします。"
+          }
+        }
+      }
+    },
+    "APP_CLIPS": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "앱 클립"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "יישומים ברגע"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cuplikan App"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Appiklipit"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Appclips"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Блиц-приложения"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apprészletek"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uygulama Parçacıkları"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App clip"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App Clips"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Κλιπ εφαρμογών"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clips d’apps"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Extraits d’app"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "輕巧App"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "輕巧版App"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Appklipp"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عينات التطبيقات"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ऐप क्लिप"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Appklip"
+          }
+        },
+        "yue_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App Clips"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App Clips"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wycinki aplikacji"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "แอปคลิป"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "轻App"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Appklipp"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App Clips"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Programų iškarpos"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Klip App"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Klipy aplikací"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App clipy"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Изрезки на приложения"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App Clips"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Izseki aplikacij"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App Clips"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ứng dụng thu nhỏ"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clips de apps"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Фрагменти програм"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Extraits d’app"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Блиц қолданбалар"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App Clip‑uri"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Clipes de Apps"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Isječci aplikacija"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App Clips"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App Clip"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

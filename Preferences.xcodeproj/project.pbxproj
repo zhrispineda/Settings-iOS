@@ -21,6 +21,9 @@
 		831C1A4E2CCE9A1300866498 /* Display.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 831C1A4D2CCE9A1300866498 /* Display.xcstrings */; };
 		831C1A502CCE9E3300866498 /* HomeScreenSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 831C1A4F2CCE9E3300866498 /* HomeScreenSettings.xcstrings */; };
 		831C1A522CCE9F9000866498 /* MultitaskingAndGesturesSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 831C1A512CCE9F9000866498 /* MultitaskingAndGesturesSettings.xcstrings */; };
+		831C1A542CCEA2CC00866498 /* SpotlightSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 831C1A532CCEA2CC00866498 /* SpotlightSettings.xcstrings */; };
+		831C1A562CCEA4F100866498 /* SiriSuggestions.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 831C1A552CCEA4F100866498 /* SiriSuggestions.xcstrings */; };
+		831C1A582CCF1D0100866498 /* WallpaperSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 831C1A572CCF1D0100866498 /* WallpaperSettings.xcstrings */; };
 		831C80412CA4998500306574 /* RecordSlomoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831C80402CA4998500306574 /* RecordSlomoView.swift */; };
 		832326FB2C9E338F00B0483B /* KeyboardsTypingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832326FA2C9E338F00B0483B /* KeyboardsTypingView.swift */; };
 		832877D92CAD8C7100013B0B /* Accessibility.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 832877D82CAD8C7100013B0B /* Accessibility.xcstrings */; };
@@ -326,6 +329,9 @@
 		831C1A4D2CCE9A1300866498 /* Display.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Display.xcstrings; sourceTree = "<group>"; };
 		831C1A4F2CCE9E3300866498 /* HomeScreenSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = HomeScreenSettings.xcstrings; sourceTree = "<group>"; };
 		831C1A512CCE9F9000866498 /* MultitaskingAndGesturesSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = MultitaskingAndGesturesSettings.xcstrings; sourceTree = "<group>"; };
+		831C1A532CCEA2CC00866498 /* SpotlightSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = SpotlightSettings.xcstrings; sourceTree = "<group>"; };
+		831C1A552CCEA4F100866498 /* SiriSuggestions.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = SiriSuggestions.xcstrings; sourceTree = "<group>"; };
+		831C1A572CCF1D0100866498 /* WallpaperSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = WallpaperSettings.xcstrings; sourceTree = "<group>"; };
 		831C80402CA4998500306574 /* RecordSlomoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSlomoView.swift; sourceTree = "<group>"; };
 		832326FA2C9E338F00B0483B /* KeyboardsTypingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardsTypingView.swift; sourceTree = "<group>"; };
 		832877D82CAD8C7100013B0B /* Accessibility.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Accessibility.xcstrings; sourceTree = "<group>"; };
@@ -686,6 +692,7 @@
 			isa = PBXGroup;
 			children = (
 				834565772CAAEB82002BE49D /* Camera.xcstrings */,
+				831C1A552CCEA4F100866498 /* SiriSuggestions.xcstrings */,
 			);
 			path = OnBoardingBundles;
 			sourceTree = "<group>";
@@ -1229,7 +1236,9 @@
 				836CDF922CB602B300B1C5B2 /* Restrictions.xcstrings */,
 				83326C872CBEE8970034C0D8 /* Software Update.xcstrings */,
 				832877F82CAEE91600013B0B /* SOS.xcstrings */,
+				831C1A532CCEA2CC00866498 /* SpotlightSettings.xcstrings */,
 				83AD8C5E2CCAD00200A054B5 /* VoiceOverServices.xcstrings */,
+				831C1A572CCF1D0100866498 /* WallpaperSettings.xcstrings */,
 				832877FA2CAEEA7E00013B0B /* WiFiKitUILocalizableStrings.xcstrings */,
 			);
 			path = Localizations;
@@ -1626,6 +1635,7 @@
 				832877E12CAD9A2C00013B0B /* BatteryUI.xcstrings in Resources */,
 				83F516B82C21B7FA0004E87A /* SettingsPhysical.gif in Resources */,
 				83DBCE092CCD9B0800B33277 /* AssistantMultilingualDetail.xcstrings in Resources */,
+				831C1A562CCEA4F100866498 /* SiriSuggestions.xcstrings in Resources */,
 				834565742CAAE673002BE49D /* CameraEditKit.xcstrings in Resources */,
 				83FF69312CC6CDDC00D77FBB /* LocalizedStrings-DetectionMode.xcstrings in Resources */,
 				83B893C02B8FDBE8005705A3 /* iPhone15_Pro_NaturalTitanium.usdz in Resources */,
@@ -1659,6 +1669,7 @@
 				832877E62CAD9C6000013B0B /* Devices.xcstrings in Resources */,
 				83C3F33F2CC2BEBA00AE2402 /* InternationalSettings.xcstrings in Resources */,
 				832F57762CCC017A00E0CA19 /* GeneralAccessibility.xcstrings in Resources */,
+				831C1A542CCEA2CC00866498 /* SpotlightSettings.xcstrings in Resources */,
 				83FB7DEC2CCD49EA007C6336 /* Captioning-dinnerbell.xcstrings in Resources */,
 				832877DD2CAD95C300013B0B /* AppleAccountUI.xcstrings in Resources */,
 				832877F62CAEE7C000013B0B /* Reset.xcstrings in Resources */,
@@ -1669,6 +1680,7 @@
 				8345656E2CAADFD6002BE49D /* CameraSettings.xcstrings in Resources */,
 				832877DB2CAD915400013B0B /* AmbientSettings.xcstrings in Resources */,
 				83441A892CAF2B6A0022E193 /* Privacy.xcstrings in Resources */,
+				831C1A582CCF1D0100866498 /* WallpaperSettings.xcstrings in Resources */,
 				832877E92CAEE14400013B0B /* CameraUI-SmartStyles.xcstrings in Resources */,
 				838FE8CD2CB60A3300FDB1A8 /* AssistantSettings.xcstrings in Resources */,
 				83E748B22CC6BDDE0081D660 /* LocalizedStrings.xcstrings in Resources */,
