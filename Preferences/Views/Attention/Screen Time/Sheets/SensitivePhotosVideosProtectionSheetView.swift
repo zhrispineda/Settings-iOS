@@ -10,6 +10,7 @@ import SwiftUI
 struct SensitivePhotosVideosProtectionSheetView: View {
     // Variables
     @Environment(\.dismiss) private var dismiss
+    let table = "ScreenTimeSettingsUI"
     
     var body: some View {
         ZStack {
@@ -18,33 +19,34 @@ struct SensitivePhotosVideosProtectionSheetView: View {
                     .font(.system(size: 56))
                     .foregroundStyle(.blue)
                     .symbolRenderingMode(.hierarchical)
-                Text("**Sensitive Photos and Videos Protection**")
+                Text("IntroCommunicationSafetyTitle", tableName: table)
+                    .fontWeight(.bold)
                     .font(.largeTitle)
                     .padding(.top, 30)
                     .multilineTextAlignment(.center)
-                Text("Apple products help protect kids from sharing sensitive photos and videos, with resources to guide them.")
+                Text("CommunicationSafetyEDUFeatureDetails", tableName: table)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 20)
-                Text("iOS can detect nude photos and videos before they‘re sent or viewed on your child‘s device, and provide guidance and age-appropriate resources to help them make a safe choice. Apple does not have access to the photos or videos.")
-                    .multilineTextAlignment(.center)
-                Text("[Learn more about Communication Safety...](https://support.apple.com/en-us/HT212850)")
+                Text("[\("IntroCommunicationSafetyLearnMoreButton".localize(table: table))](https://support.apple.com/en-us/HT212850)")
                 Spacer()
             }
             .padding(.top, 75)
             .padding(.horizontal, 30)
             VStack(spacing: 20) {
                 Spacer()
-                Button("**Continue**") {
+                Button("IntroCommunicationSafetyTurnOnButton".localize(table: table)) {
                     dismiss()
                 }
+                .fontWeight(.semibold)
                 .frame(maxWidth: .infinity)
                 .padding()
                 .background(.blue)
                 .foregroundStyle(.white)
                 .clipShape(RoundedRectangle(cornerRadius: 15.0))
-                Button("**Not Now**") {
+                Button("CommunicationSafetyEDUNotNow".localize(table: table)) {
                     dismiss()
                 }
+                .fontWeight(.semibold)
             }
             .padding([.horizontal, .bottom])
         }

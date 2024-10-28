@@ -10,6 +10,7 @@ import SwiftUI
 struct ScreenDistanceSheetView: View {
     // Variables
     @Environment(\.dismiss) private var dismiss
+    let table = "ScreenTimeSettingsUI"
     
     var body: some View {
         ZStack {
@@ -20,31 +21,35 @@ struct ScreenDistanceSheetView: View {
                 Spacer()
             }
             VStack(spacing: 15) {
-                Text("**Screen Distance**")
+                Text("ScreenDistanceViewControllerTitle", tableName: table)
+                    .fontWeight(.bold)
+                    .multilineTextAlignment(.center)
                     .font(.largeTitle)
                     .padding(.top, 30)
-                Text("To reduce eye strain, and the risk of myopia in children, Screen Distance will alert you to hold an iPhone or iPad with Face ID at a recommended distance.")
+                Text("ScreenDistanceEnableFeatureGroupSpecifierFooterText", tableName: table)
                     .multilineTextAlignment(.center)
             }
             .padding(.horizontal, 40)
             .padding(.top, -50)
             VStack(spacing: 20) {
                 Spacer()
-                Text("Screen Distance works by measuring the distance between the screen and your eyes. The camera is not capturing images or video, and the data collected remains on the device and is not shared with Apple.")
+                Text("ScreenDistanceEDUFeatureButtonTrayCaption", tableName: table)
                     .multilineTextAlignment(.center)
                     .font(.caption)
                     .foregroundStyle(.secondary)
-                Button("**Continue**") {
+                Button("ScreenDistanceEDUFeatureHowItWorksEnablementButton".localize(table: table)) {
                     dismiss()
                 }
+                .fontWeight(.semibold)
                 .frame(maxWidth: .infinity)
                 .padding()
                 .background(.blue)
                 .foregroundStyle(.white)
                 .clipShape(RoundedRectangle(cornerRadius: 15.0))
-                Button("**Not Now**") {
+                Button("ScreenDistanceEDUFeatureNotNowButton".localize(table: table)) {
                     dismiss()
                 }
+                .fontWeight(.semibold)
             }
             .padding([.horizontal, .bottom])
         }

@@ -11,6 +11,7 @@ struct AppWebsiteActivitySheetView: View {
     // Variables
     @Environment(\.dismiss) private var dismiss
     @Binding var appWebsiteActivityEnabled: Bool
+    let table = "ScreenTimeSettingsUI"
     
     var body: some View {
         ZStack {
@@ -22,11 +23,11 @@ struct AppWebsiteActivitySheetView: View {
                         .symbolRenderingMode(.hierarchical)
                         .scaledToFit()
                         .frame(height: 70)
-                    Text("App & Website\nActivity")
+                    Text("AppAndWebsiteActivitySpecifierName", tableName: table)
                         .font(.largeTitle)
                         .bold()
                         .multilineTextAlignment(.center)
-                    Text("Get insights about your screen time and set limits for what you want to manage.")
+                    Text("IntroWelcomeDetail", tableName: table)
                 }
                 .padding(40)
                 VStack(alignment: .leading) {
@@ -36,9 +37,10 @@ struct AppWebsiteActivitySheetView: View {
                             .foregroundStyle(.blue)
                             .frame(minWidth: 50)
                         VStack(alignment: .leading) {
-                            Text("**Weekly Reports**")
+                            Text("IntroWelcomeWeeklyReportsTitle", tableName: table)
+                                .fontWeight(.semibold)
                                 .font(.subheadline)
-                            Text("Get a weekly report with insights about your screen time.")
+                            Text("IntroWelcomeWeeklyReportsDetail", tableName: table)
                                 .font(.subheadline)
                                 .foregroundStyle(.secondary)
                         }
@@ -56,9 +58,10 @@ struct AppWebsiteActivitySheetView: View {
                             .frame(width: 34)
                             .frame(minWidth: 50)
                         VStack(alignment: .leading) {
-                            Text("**Downtime**")
+                            Text("DeviceDowntimeSpecifierName", tableName: table)
+                                .fontWeight(.semibold)
                                 .font(.subheadline)
-                            Text("Set a schedule for time away from the screen.")
+                            Text("IntroAppAndWebsiteActivityScheduledDowntimeDetail", tableName: table)
                                 .font(.subheadline)
                                 .foregroundStyle(.secondary)
                         }
@@ -74,9 +77,10 @@ struct AppWebsiteActivitySheetView: View {
                             .foregroundStyle(.blue)
                             .frame(minWidth: 50)
                         VStack(alignment: .leading) {
-                            Text("**App Limits**")
+                            Text("AppLimitsSpecifierName", tableName: table)
+                                .fontWeight(.semibold)
                                 .font(.subheadline)
-                            Text("Set daily time limits for app categories you want to manage.")
+                            Text("AppAndWebsiteActivityEDUAppLimitsDetail", tableName: table)
                                 .font(.subheadline)
                                 .foregroundStyle(.secondary)
                         }
@@ -89,20 +93,22 @@ struct AppWebsiteActivitySheetView: View {
             .padding(.top, -100)
             VStack(spacing: 20) {
                 Spacer()
-                Button("**Turn On App & Website Activity**") {
+                Button("IntroAppAndWebsiteActivityTurnOnButton".localize(table: table)) {
                     withAnimation {
                         appWebsiteActivityEnabled.toggle()
                     }
                     dismiss()
                 }
+                .fontWeight(.semibold)
                 .frame(maxWidth: .infinity)
                 .padding()
                 .background(.blue)
                 .foregroundStyle(.white)
                 .clipShape(RoundedRectangle(cornerRadius: 15.0))
-                Button("**Not Now**") {
+                Button("AppAndWebsiteActivityEDUNotNowButton".localize(table: table)) {
                     dismiss()
                 }
+                .fontWeight(.semibold)
             }
             .padding([.horizontal, .bottom])
         }
