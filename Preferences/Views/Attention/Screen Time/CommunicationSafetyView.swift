@@ -11,30 +11,32 @@ struct CommunicationSafetyView: View {
     // Variables
     @State private var communicationSafetyEnabled = false
     @State private var improveCommunicationSafety = false
+    let table = "ScreenTimeSettingsUI"
+    let onTable = "ImproveSensitiveContentWarning"
     
     var body: some View {
-        CustomList(title: "Communication Safety") {
+        CustomList(title: "CommunicationSafetyTitle".localize(table: table), topPadding: true) {
             Section {
-                Toggle("Sensitive Content Warning", isOn: $communicationSafetyEnabled)
+                Toggle("CommunicationSafetyEnableFeatureSpecifierTitle".localize(table: table), isOn: $communicationSafetyEnabled)
             } header: {
-                Text("Sensitive Photos and Videos")
+                Text("CommunicationSafetyEnableFeatureGroupSpecifierTitle", tableName: table)
             } footer: {
-                Text("Communication Safety can detect nude photos and videos before they‘re sent or viewed on your child‘s device, and provide guidance and age-appropriate resources to help them make a safe choice. Apple does not have access to the photos or videos. [Learn more...](https://support.apple.com/en-us/HT212850)")
+                Text(.init("CommunicationSafetyEnableFeatureGroupSpecifierFooter".localize(table: table, "[\("CommunicationSafetyLearnMoreFooterLink".localize(table: table))](#)")))
             }
             
             Section {
-                Button("View Child Safety Resources") {}
+                Button("CommunicationSafetyViewResourcesSpecifierTitle".localize(table: table)) {}
             } footer: {
-                Text("Resources to help have conversations with your child about digital safety topics like sexting and nudes.")
+                Text("CommunicationSafetyViewResourcesGroupSpecifierFooter", tableName: table)
             }
             
             Section {
-                Toggle("Improve Communication Safety", isOn: $improveCommunicationSafety)
+                Toggle("CommunicationSafetyEnableAnalyticsSpecifierTitle".localize(table: table), isOn: $improveCommunicationSafety)
                     .disabled(!communicationSafetyEnabled)
             } header: {
-                Text("Analytics & Improvements")
+                Text("CommunicationSafetyAnalyticsGroupSpecifierTitle", tableName: table)
             } footer: {
-                Text("Help Apple improve Communication Safety by sharing analytics and usage data. Analytics and data aggregated in a form that is not personally identifiable. No messages or media are shared with Apple. [About Improve Sensitive Content Safety & Privacy...](#)")
+                Text(.init("CommunicationSafetyAnalyticsGroupSpecifierFooter".localize(table: table, "[\("BUTTON_TITLE".localize(table: onTable))](#)")))
             }
         }
     }

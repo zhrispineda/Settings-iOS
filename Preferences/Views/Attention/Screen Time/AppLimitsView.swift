@@ -8,14 +8,17 @@
 import SwiftUI
 
 struct AppLimitsView: View {
+    // Variables
+    let table = "ScreenTimeSettingsUI"
+    
     var body: some View {
-        CustomList(title: "App Limits") {
+        CustomList(title: "AppAndWebsiteActivityEDUAppLimitsTitle".localize(table: table)) {
             Section {} footer: {
-                Text("Set daily time limits for app categories you want to manage. Limits reset every day at midnight.")
+                Text("AppLimitsFooterText", tableName: table)
             }
             
             Section {
-                Button("Add Limit") {}
+                Button("AddLimitSpecifierName".localize(table: table)) {}
             }
         }
     }

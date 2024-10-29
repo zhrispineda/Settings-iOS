@@ -10,13 +10,14 @@ import SwiftUI
 struct ScreenDistanceView: View {
     // Variables
     @State private var screenDistanceEnabled = false
+    let table = "ScreenTimeSettingsUI"
     
     var body: some View {
-        CustomList(title: "Screen Distance") {
+        CustomList(title: "ScreenDistanceEDUFeatureTitle".localize(table: table)) {
             Section {
-                Toggle("Screen Distance", isOn: $screenDistanceEnabled)
+                Toggle("ScreenDistanceEDUFeatureTitle".localize(table: table), isOn: $screenDistanceEnabled)
             } footer: {
-                Text("To reduce eye strain, and the risk of myopia in children, Screen Distance will alert you to hold an iPhone or iPad with Face ID at a recommended distance.")
+                Text("ScreenDistanceEnableFeatureGroupSpecifierFooterText", tableName: table)
             }
         }
     }
