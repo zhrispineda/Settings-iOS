@@ -10,16 +10,19 @@ import SwiftUI
 struct LocationAlertsView: View {
     // Variables
     @State private var showMapLocationAlertsEnabled = true
+    let table = "Location Services"
     
     var body: some View {
-        CustomList(title: "Location Alerts") {
+        CustomList(title: "PRIVACY_ALERTS".localize(table: table)) {
             Section {
-                Toggle("Show Map in Location Alerts", isOn: $showMapLocationAlertsEnabled)
+                Toggle("MAP_DISPLAY".localize(table: table), isOn: $showMapLocationAlertsEnabled)
             }
         }
     }
 }
 
 #Preview {
-    LocationAlertsView()
+    NavigationStack {
+        LocationAlertsView()
+    }
 }

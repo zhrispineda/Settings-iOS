@@ -11,25 +11,27 @@ struct AppClipsView: View {
     // Variables
     @State private var confirmLocationEnabled = false
     var completeView = true
+    let table = "Dim-Sum"
+    let locTable = "Location Services"
     
     var body: some View {
-        CustomList(title: "App Clips") {
+        CustomList(title: "APP_CLIPS".localize(table: table)) {
             Section {
                 if completeView {
-                    Toggle("Confirm Location", isOn: $confirmLocationEnabled)
+                    Toggle("CONFIRM_LOCATION".localize(table: table), isOn: $confirmLocationEnabled)
                 }
             } footer: {
                 VStack(alignment: .leading) {
                     if completeView {
-                        Text("Your location is used to confirm to app clips that scanned tags haven‘t been moved from where they belong.\n\n")
+                        Text("CONFIRM_LOCATION_FOOTER", tableName: table) + Text("\n\n")
                     }
-                    Text("App clips that have requested access to your location will appear here.\n")
+                    Text("GENERAL_EXPLANATION_CLIPS_ITEM", tableName: locTable) + Text("\n")
                     if completeView {
                         HStack(spacing: 15) {
                             Image(systemName: "location.fill")
                                 .foregroundStyle(.purple)
                                 .font(.headline)
-                            Text("A purple arrow indicates that an item has recently used your location.")
+                            Text("ACTIVE_EXPLANATION_ITEM", tableName: locTable)
                         }
                         .padding(.trailing)
                         .padding(.bottom, 5)
@@ -38,7 +40,7 @@ struct AppClipsView: View {
                             Image(systemName: "location.fill")
                                 .foregroundStyle(.gray)
                                 .font(.headline)
-                            Text("A gray arrow indicates that an item has used your location in the last 24 hours.")
+                            Text("RECENT_EXPLANATION_ITEM", tableName: locTable)
                         }
                         .padding(.trailing)
                     }
@@ -49,5 +51,7 @@ struct AppClipsView: View {
 }
 
 #Preview {
-    AppClipsView()
+    NavigationStack {
+        AppClipsView()
+    }
 }

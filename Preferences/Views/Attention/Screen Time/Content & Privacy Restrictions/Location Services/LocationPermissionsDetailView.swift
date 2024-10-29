@@ -10,40 +10,42 @@ import SwiftUI
 struct LocationPermissionsDetailView: View {
     // Variables
     var title = String()
-    @State var selected = "Ask Next Time Or When I Share"
-    let options = ["Never", "Ask Next Time Or When I Share", "Always"]
+    @State var selected = "NOT_DETERMINED_AUTHORIZATION"
+    let options = ["NEVER_AUTHORIZATION", "NOT_DETERMINED_AUTHORIZATION", "ALWAYS_AUTHORIZATION"]
     @State private var preciseLocationEnabled = true
+    let table = "LocationServicesPrivacy"
     
     var body: some View {
-        CustomList(title: title) {
+        CustomList(title: title, topPadding: true) {
             Section {
                 Picker("", selection: $selected) {
                     ForEach(options, id: \.self) {
-                        Text($0)
+                        Text($0.localize(table: table))
                     }
                 }
                 .pickerStyle(.inline)
                 .labelsHidden()
             } header: {
-                Text("Allow Location Access")
+                Text("ALLOW_LOCATION_SERVICES_HEADER", tableName: table)
             } footer: {
                 if title == "Siri & Dictation" {
-                    Text("App explanation: \u{201C}Siri uses your location for things like answering questions and offering suggestions about what‘s nearby.\u{201D}")
+                    Text("PURPOSE_STRING".localize(table: table, "Siri uses your location for things like answering questions and offering suggestions about what‘s nearby."))
                 }
             }
             
-            if selected != "Never" {
+            if selected != "NEVER_AUTHORIZATION" {
                 Section {
-                    Toggle("Precise Location", isOn: $preciseLocationEnabled)
+                    Toggle("PRECISE_LOCATION".localize(table: table), isOn: $preciseLocationEnabled)
                 } footer: {
-                    Text("Allows apps to use your specific location. With this setting off, apps can only determine your approximate location.")
+                    Text("PRECISE_LOCATION_FOOTER", tableName: table)
                 }
             }
         }
-        .padding(.top, 19)
     }
 }
 
 #Preview {
-    LocationPermissionsDetailView()
+    NavigationStack {
+        LocationPermissionsDetailView()
+    }
 }
