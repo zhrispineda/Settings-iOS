@@ -17,14 +17,15 @@ struct SoundsHapticsView: View {
     @State private var lockSoundEnabled = true
     @State private var systemHapticsEnabled = true
     @State private var fixedPositionVolumeControlsEnabled = true
+    let table = "Sounds"
     
     var body: some View {
-        CustomList(title: UIDevice.iPhone ? "Sounds & Haptics" : "Sounds") {
+        CustomList(title: UIDevice.iPhone ? "SOUND_SWITCHES_HEADER".localize(table: table) : "Sounds".localize(table: table), topPadding: true) {
             Section {
                 Toggle(isOn: $silentModeEnabled.animation()) {
                     Label(
                         title: {
-                            Text("Silent Mode")
+                            Text("SILENT_MODE", tableName: table)
                         }, icon: {
                             Image(systemName: silentModeEnabled ? "bell.slash.fill" : "bell.fill")
                                 .foregroundStyle(silentModeEnabled ? .red : .secondary)
@@ -33,14 +34,14 @@ struct SoundsHapticsView: View {
                 }
                 .toggleStyle(SwitchToggleStyle(tint: silentModeEnabled ? .red : .accentColor))
             } header: {
-                Text("\nSilent Mode")
+                Text("SILENT_MODE", tableName: table)
             } footer: {
-                Text(silentModeEnabled ? "\(UIDevice.current.model) will not play ringtones, alerts, and system sounds. \(UIDevice.current.model) will still play alarms, timers, music, and audio from videos." : "\(UIDevice.current.model) will play ringtones, alerts, and system sounds.")
+                Text(silentModeEnabled ? "SILENT_MODE_ON_FOOTER" : "SILENT_MODE_OFF_FOOTER", tableName: table)
                     .transition(.slide)
             }
             
             Section {
-                Toggle("Show in Status Bar", isOn: $showInStatusBarEnabled)
+                Toggle("SHOW_IN_STATUS_BAR".localize(table: table), isOn: $showInStatusBarEnabled)
             }
             
             Section {
@@ -50,63 +51,63 @@ struct SoundsHapticsView: View {
                            minimumValueLabel: Image(systemName: "speaker.fill"),
                            maximumValueLabel: Image(systemName: "speaker.wave.3.fill"),
                            label: {
-                                Text("Volume")
+                                Text("RING_VOLUME_SLIDER", tableName: table)
                            }
                     )
                 }
                 .foregroundStyle(.secondary)
                 
-                Toggle("Change with Buttons", isOn: $changeWithButtonsEnabled)
+                Toggle("CHANGE_WITH_BUTTONS".localize(table: table), isOn: $changeWithButtonsEnabled)
                 if UIDevice.iPhone {
-                    CustomNavigationLink(title: "Haptics", status: "Always Play", destination: EmptyView())
+                    CustomNavigationLink(title: "HAPTICS".localize(table: table), status: "ALWAYS_PLAY".localize(table: table), destination: EmptyView())
                 }
             } header: {
-                Text("Ringtone and Alerts")
+                Text("RINGER_AND_ALERTS", tableName: table)
             } footer: {
-                Text("The volume buttons \(changeWithButtonsEnabled ? "can be used to adjust" : "will not affect") the volume of the ringtone and alerts.")
+                Text(changeWithButtonsEnabled ? "RING_VOL_CAN_BE_ADJUSTED" : "RING_VOL_CANNOT_BE_ADJUSTED", tableName: table)
             }
             
             Section {
-                CustomNavigationLink(title: "Ringtone", status: "Reflection", destination: EmptyView())
-                CustomNavigationLink(title: "Text Tone", status: "Note", destination: EmptyView())
+                CustomNavigationLink(title: "Ringtone".localize(table: table), status: "Reflection", destination: EmptyView())
+                CustomNavigationLink(title: "Text_Messages".localize(table: table), status: "Note", destination: EmptyView())
                 if UIDevice.iPhone {
-                    CustomNavigationLink(title: "New Voicemail", status: "Droplet", destination: EmptyView())
+                    CustomNavigationLink(title: "Voicemail".localize(table: table), status: "Droplet", destination: EmptyView())
                 }
-                CustomNavigationLink(title: "New Mail", status: "None", destination: EmptyView())
-                CustomNavigationLink(title: "Sent Mail", status: "Swoosh", destination: EmptyView())
-                CustomNavigationLink(title: "Calendar Alerts", status: "Chord", destination: EmptyView())
-                CustomNavigationLink(title: "Reminder Alerts", status: "Chord", destination: EmptyView())
-                CustomNavigationLink(title: "Default Alerts", status: "Rebound", destination: EmptyView())
+                CustomNavigationLink(title: "NEW_MAIL".localize(table: table), status: "None", destination: EmptyView())
+                CustomNavigationLink(title: "SENT_MAIL".localize(table: table), status: "Swoosh", destination: EmptyView())
+                CustomNavigationLink(title: "Calendar Alarm".localize(table: table), status: "Chord", destination: EmptyView())
+                CustomNavigationLink(title: "Reminder Alerts".localize(table: table), status: "Chord", destination: EmptyView())
+                CustomNavigationLink(title: "DEFAULT_ALERTS".localize(table: table), status: "Rebound", destination: EmptyView())
             }
             
             Section {
                 if UIDevice.iPhone {
-                    CustomNavigationLink(title: "Keyboard Feedback", status: "Sound", destination: EmptyView())
+                    CustomNavigationLink(title: "KEYBOARD_FEEDBACK".localize(table: table), status: "SOUND".localize(table: table), destination: EmptyView())
                 } else {
-                    Toggle("Keyboard Clicks", isOn: $keyboardClicksEnabled)
+                    Toggle("KEYBOARD_CLICKS".localize(table: table), isOn: $keyboardClicksEnabled)
                 }
-                Toggle("Lock Sound", isOn: $lockSoundEnabled)
+                Toggle("LOCK_SOUND".localize(table: table), isOn: $lockSoundEnabled)
                 if UIDevice.iPhone {
-                    Toggle("System Haptics", isOn: $systemHapticsEnabled)
+                    Toggle("SYSTEM_HAPTICS".localize(table: table), isOn: $systemHapticsEnabled)
                 }
             } header: {
-                Text("System Sounds\(UIDevice.iPhone ? " & Haptics" : "")")
+                Text(UIDevice.iPhone ? "SOUND_SWITCHES_HEADER" : "SOUND_ONLY_SWITCHES_HEADER", tableName: table)
             } footer: {
-                Text("Play \(UIDevice.iPhone ? "haptics" : "sounds") for system controls and interactions.")
+                Text(UIDevice.iPhone ? "SYSTEM_HAPTICS_FOOTER" : "SOUND_ONLY_SWITCHES_FOOTER", tableName: table)
             }
             
             if UIDevice.iPad {
                 Section {
-                    Toggle("Fixed Position Volume Controls", isOn: $fixedPositionVolumeControlsEnabled.animation())
+                    Toggle("FIXED_POSITION_VOLUME".localize(table: table), isOn: $fixedPositionVolumeControlsEnabled.animation())
                 } footer: {
-                    Text(fixedPositionVolumeControlsEnabled ? "The volume up and down buttons will remain in a fixed position." : "The buttons will dynamically change depending on the orientation of your iPad.")
+                    Text(fixedPositionVolumeControlsEnabled ? "FIXED_POSITION_VOLUME_ON_FOOTER" : "FIXED_POSITION_VOLUME_OFF_FOOTER", tableName: table)
                 }
             }
             
             Section {
-                NavigationLink("Headphone Safety") {}
+                NavigationLink("HEADPHONE_HEARING_PROTECTION".localize(table: table)) {}
             } header: {
-                Text("Headphone Audio")
+                Text("HEADPHONE_AUDIO_GROUP", tableName: table)
             }
         }
     }

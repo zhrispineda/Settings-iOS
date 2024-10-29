@@ -15,13 +15,14 @@ struct ScreenTimeView: View {
     @State private var showingScreenDistanceSheet = false
     @State private var showingCommunicationSafetySheet = false
     @State private var showingAppleAccountSheet = false
+    let table = "ScreenTimeSettingsUI"
     
     var body: some View {
-        CustomList(title: "Screen Time") {
+        CustomList(title: "AboutScreenTimeTitle".localize(table: table), topPadding: appWebsiteActivityEnabled) {
             if appWebsiteActivityEnabled {
                 Section {
                     VStack {
-                        Text("As you use your \(UIDevice.current.model), screen time will be reported here.")
+                        Text(UIDevice.iPhone ? "NoDataDetailTextLabel_IPHONE" : "NoDataDetailTextLabel_IPAD", tableName: table)
                             .font(.subheadline)
                             .foregroundStyle(.secondary)
                             .multilineTextAlignment(.center)
@@ -29,7 +30,7 @@ struct ScreenTimeView: View {
                     }
                     .padding(.vertical)
                     .padding(.horizontal, 0)
-                    NavigationLink("See All App & Website Activity", destination: AppWebsiteActivityView())
+                    NavigationLink("SeeAllAppAndWebsiteActivityControlTitle".localize(table: table), destination: AppWebsiteActivityView())
                 } header: {
                     Text(UIDevice.current.model)
                 } footer: {
@@ -40,26 +41,26 @@ struct ScreenTimeView: View {
                 }
             } else {
                 Section {
-                    Placard(title: "Screen Time", color: Color.indigo, icon: "hourglass", description: "Get insights about your screen time and set limits as needed. Adults can also set parental controls for a child's device.")
+                    Placard(title: "ScreenTimeGroupSpecifierName".localize(table: table), color: Color.indigo, icon: "hourglass", description: "AADC_IntroWelcomeDetail".localize(table: table))
                 }
             }
             
             Section {
                 if appWebsiteActivityEnabled {
-                    SettingsLink(icon: "Downtime80x80", id: "Downtime", subtitle: "Schedule time away from the screen") {
+                    SettingsLink(icon: "Downtime80x80", id: "AppAndWebsiteActivityEDUDowntimeTitle".localize(table: table), subtitle: "DeviceDowntimeDetailText".localize(table: table)) {
                         DowntimeView()
                     }
-                    SettingsLink(icon: "App Limits80x80", id: "App Limits", subtitle: "Set time limits for apps") {
+                    SettingsLink(icon: "App Limits80x80", id: "AppAndWebsiteActivityEDUAppLimitsTitle".localize(table: table), subtitle: "AppLimitsDetailText".localize(table: table)) {
                         AppLimitsView()
                     }
-                    SettingsLink(icon: "AlwaysAllow29x29", id: "Always Allowed", subtitle: "Choose apps to allow at all times") {
+                    SettingsLink(icon: "AlwaysAllow29x29", id: "AlwaysAllowedSpecifierName".localize(table: table), subtitle: "AlwaysAllowDetailText".localize(table: table)) {
                         AlwaysAllowedView()
                     }
                 } else {
                     Button {
                         showingAppWebsiteActivitySheet.toggle()
                     } label: {
-                        SettingsLink(color: Color.cyan, icon: "chart.bar.xaxis", id: "App & Website Activity", subtitle: "Reports, Downtime & App Limits") {}
+                        SettingsLink(color: Color.cyan, icon: "chart.bar.xaxis", id: "AppAndWebsiteActivitySpecifierName".localize(table: table), subtitle: "AppAndWebsiteActivitySpecifierSubtitleText".localize(table: table)) {}
                             .foregroundStyle(Color["Label"])
                     }
                     .sheet(isPresented: $showingAppWebsiteActivitySheet) {
@@ -67,7 +68,7 @@ struct ScreenTimeView: View {
                             .frame(width: 400, height: 730)
                     }
                 }
-                SettingsLink(color: Color.white, iconColor: Color.blue, icon: "chevron.3.up.perspective", id: "Screen Distance", subtitle: "Reduce eye strain") {
+                SettingsLink(color: Color.white, iconColor: Color.blue, icon: "chevron.3.up.perspective", id: "ScreenDistanceSpecifierName".localize(table: table), subtitle: "ScreenDistanceSpecifierSubtitleText".localize(table: table)) {
                     ScreenDistanceView()
                         .onAppear {
                             showingScreenDistanceSheet.toggle()
@@ -78,11 +79,11 @@ struct ScreenTimeView: View {
                         .frame(width: 400, height: 730)
                 }
             } header: {
-                Text("Limit Usage")
+                Text("LimitUsageGroupSpecifierName", tableName: table)
             }
             
             Section {
-                SettingsLink(color: Color.blue, icon: "bubble.left.and.exclamationmark.bubble.right.fill", id: "Communication Safety", subtitle: "Protect from sensitive content") {
+                SettingsLink(color: Color.blue, icon: "bubble.left.and.exclamationmark.bubble.right.fill", id: "CommunicationSafetyTitle".localize(table: table), subtitle: "CommunicationSafetyOffSubtitle".localize(table: table)) {
                     CommunicationSafetyView()
                         .onAppear {
                             showingCommunicationSafetySheet.toggle()
@@ -93,23 +94,25 @@ struct ScreenTimeView: View {
                         .frame(width: 400, height: 730)
                 }
             } header: {
-                Text("Communication")
+                Text("CommunicationGroupSpecifierName", tableName: table)
             }
             
             Section {
-                SettingsLink(color: Color.red, icon: "nosign", id: "Content & Privacy Restrictions", subtitle: "Block inappropriate content") { ContentPrivacyRestrictionsView() }
+                SettingsLink(color: Color.red, icon: "nosign", id: "ContentPrivacySpecifierName".localize(table: table), subtitle: "ContentPrivacyDetailText".localize(table: table)) {
+                    ContentPrivacyRestrictionsView()
+                }
             } header: {
-                Text("Restrictions")
+                Text("RestrictionsGroupSpecifierName", tableName: table)
             }
             
             Section {
-                Button("Lock Screen Time Settings") {}
+                Button("LockScreenTimeSettingsButtonName".localize(table: table)) {}
             } footer: {
-                Text("Use a passcode to secure Screen Time settings.")
+                Text("EnableScreenTimePasscodeFooterText", tableName: table)
             }
             
             Section {
-                Button("Use with Other Devices or Family") {
+                Button("SignInToiCloudButtonName".localize(table: table)) {
                     showingAppleAccountSheet.toggle()
                 }
                 .sheet(isPresented: $showingAppleAccountSheet) {
@@ -118,28 +121,27 @@ struct ScreenTimeView: View {
                     }
                 }
             } footer: {
-                Text("Sign in to iCloud to report your screen time on any iPad or iPhone, or set up Family Sharing to use Screen Time with your family‘s devices.")
+                Text("SignInToiCloudFooterText", tableName: table)
             }
             
             if appWebsiteActivityEnabled {
                 Section {
-                    Button("Turn Off App & Website Activity") {
+                    Button("DisableAppAndWebsiteActivityButtonName".localize(table: table)) {
                         showingDisableScreenTimeDialog.toggle()
                     }
                     .foregroundStyle(.red)
-                    .confirmationDialog("Screen time will no longer be reported, and all limits and downtime settings will be turned off.", isPresented: $showingDisableScreenTimeDialog, titleVisibility: .visible) {
-                        Button("Turn Off App & Website Activity", role: .destructive) {
+                    .confirmationDialog("DisableAppAndWebsiteActivityConfirmPrompt".localize(table: table), isPresented: $showingDisableScreenTimeDialog, titleVisibility: .visible) {
+                        Button("DisableAppAndWebsiteActivityButtonName".localize(table: table), role: .destructive) {
                             withAnimation {
                                 appWebsiteActivityEnabled.toggle()
                             }
                         }
                     }
                 } footer: {
-                    Text("Turning off App & Website Activity disables real-time reporting, Downtime, App Limits, and Always Allowed.")
+                    Text("DisableAppAndWebsiteActivityFooterText", tableName: table)
                 }
             }
         }
-        .padding(.top, appWebsiteActivityEnabled ? 19 : 0)
     }
 }
 

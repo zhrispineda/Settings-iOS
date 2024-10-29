@@ -13,6 +13,7 @@ struct NotificationsView: View {
     @State private var amberAlertsEnabled = true
     @State private var publicSafetyAlertsEnabled = true
     @State private var testAlertsEnabled = false
+    let table = "NotificationsSettings"
     
     enum NotificationStyle {
         case count
@@ -21,7 +22,7 @@ struct NotificationsView: View {
     }
     
     var body: some View {
-        CustomList(title: "Notifications", topPadding: true) {
+        CustomList(title: "TITLE".localize(table: table), topPadding: true) {
             Section {
                 HStack {
                     Spacer()
@@ -40,7 +41,7 @@ struct NotificationsView: View {
                                 RoundedRectangle(cornerRadius: 50.0)
                                     .frame(width: 50, height: 20)
                                     .foregroundStyle(notificationStyle == .count ? .blue : .clear)
-                                Text("Count")
+                                Text("NOTIFICATION_LIST_DISPLAY_STYLE_COUNT", tableName: table)
                                     .font(.caption)
                                     .foregroundStyle(notificationStyle == .count ? Color(UIColor.systemBackground) : Color["Label"])
                             }
@@ -64,7 +65,7 @@ struct NotificationsView: View {
                                 RoundedRectangle(cornerRadius: 50.0)
                                     .frame(width: 50, height: 20)
                                     .foregroundStyle(notificationStyle == .stack ? .blue : .clear)
-                                Text("Stack")
+                                Text("NOTIFICATION_LIST_DISPLAY_STYLE_STACK", tableName: table)
                                     .font(.caption)
                                     .foregroundStyle(notificationStyle == .stack ? Color(UIColor.systemBackground) : Color["Label"])
                             }
@@ -88,7 +89,7 @@ struct NotificationsView: View {
                                 RoundedRectangle(cornerRadius: 50.0)
                                     .frame(width: 50, height: 20)
                                     .foregroundStyle(notificationStyle == .list ? .blue : .clear)
-                                Text("List")
+                                Text("NOTIFICATION_LIST_DISPLAY_STYLE_LIST", tableName: table)
                                     .font(.caption)
                                     .foregroundStyle(notificationStyle == .list ? Color(UIColor.systemBackground) : Color["Label"])
                             }
@@ -98,28 +99,28 @@ struct NotificationsView: View {
                     Spacer()
                 }
             } header: {
-                Text("Display As")
+                Text("NOTIFICATION_LIST_DISPLAY_STYLE_TITLE", tableName: table)
             } footer: {
-                Text("Choose the default for how notifications appear.")
+                Text("NOTIFICATION_LIST_DISPLAY_STYLE_FOOTER", tableName: table)
             }
             
             Section {
-                CustomNavigationLink(title: "Scheduled Summary", status: "Off", destination: EmptyView())
-                CustomNavigationLink(title: "Show Previews", status: "Off", destination: EmptyView())
-                CustomNavigationLink(title: "Screen Sharing", status: "Notifications Off", destination: EmptyView())
+                CustomNavigationLink(title: "NOTIFICATION_DELIVERY_SCHEDULED".localize(table: table), status: "OFF".localize(table: table), destination: EmptyView())
+                CustomNavigationLink(title: "SHOW_PREVIEWS".localize(table: table), status: "OFF".localize(table: table), destination: EmptyView())
+                CustomNavigationLink(title: "SCREEN_SHARING".localize(table: table), status: "SCREEN_SHARING_NOTIFICATIONS_OFF".localize(table: table), destination: EmptyView())
             }
             
             Section {
-                CustomNavigationLink(title: "Announce Notifications", status: "Off", destination: EmptyView())
-                NavigationLink("Siri Suggestions") {}
+                CustomNavigationLink(title: "SPOKEN_NOTIFICATIONS".localize(table: table), status: "OFF".localize(table: table), destination: EmptyView())
+                NavigationLink("SIRI_SUGGESTIONS".localize(table: table)) {}
             } header: {
-                Text("Siri")
+                Text("SIRI", tableName: table)
             }
             
             Section {
                 SettingsLink(icon: "applePhotos", id: "Photos", subtitle: "Banners, Sounds, Badges") {}
             } header: {
-                Text("Notification Style")
+                Text("NOTIFICATION_STYLE", tableName: table)
             }
             
             if UIDevice.iPhone {

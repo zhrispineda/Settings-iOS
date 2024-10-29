@@ -270,275 +270,6 @@
         }
       }
     },
-    "ALLOWED_WITHIN_APPS": {
-      "extractionState": "manual",
-      "localizations": {
-        "he": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "גישה מתוך יישומים"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "앱 내 접근"
-          }
-        },
-        "id": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Akses Di Dalam App"
-          }
-        },
-        "fi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Salli pääsy apeista"
-          }
-        },
-        "nl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Toegang vanuit apps"
-          }
-        },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Доступ в приложениях"
-          }
-        },
-        "hu": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Hozzáférés appból"
-          }
-        },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Uygulama İçinden Erişim"
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Accedi dalle app"
-          }
-        },
-        "es_419": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Acceso dentro de apps"
-          }
-        },
-        "el": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Πρόσβαση εντός εφαρμογών"
-          }
-        },
-        "ca": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Accés dins de les apps"
-          }
-        },
-        "fr_CA": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Accès à partir des apps"
-          }
-        },
-        "zh_TW": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "在App中取用"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "الوصول ضمن التطبيقات"
-          }
-        },
-        "sv": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Åtkomst inuti appar"
-          }
-        },
-        "no": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tilgang fra apper"
-          }
-        },
-        "hi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ऐप्स के भीतर ऐक्सेस"
-          }
-        },
-        "da": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Adgang fra apps"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Access Within Apps"
-          }
-        },
-        "pl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dostęp z aplikacji"
-          }
-        },
-        "zh_HK": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "在App中取用"
-          }
-        },
-        "th": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "เข้าถึงจากภายในแอป"
-          }
-        },
-        "zh_CN": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "App内访问"
-          }
-        },
-        "en_GB": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Access Within Apps"
-          }
-        },
-        "lt": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Prieiga programose"
-          }
-        },
-        "es_US": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Acceso dentro de apps"
-          }
-        },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Přístup v aplikacích"
-          }
-        },
-        "sk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Prístup v apkách"
-          }
-        },
-        "ms": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Akses Dalam App"
-          }
-        },
-        "bg": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Достъп в приложенията"
-          }
-        },
-        "en_AU": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Access Within Apps"
-          }
-        },
-        "sl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dostop v aplikacijah"
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Zugriff in Apps erlauben"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Truy cập bên trong ứng dụng"
-          }
-        },
-        "pt_BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Acesso em Apps"
-          }
-        },
-        "uk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Доступ у програмах"
-          }
-        },
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Қолданбаларда қол жеткізу"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Accès à partir des apps"
-          }
-        },
-        "ro": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Acces din aplicații"
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Acceso desde apps"
-          }
-        },
-        "hr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Pristup unutar aplikacija"
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "アプリ使用中のアクセス"
-          }
-        },
-        "pt_PT": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Acesso a partir de aplicações"
-          }
-        }
-      }
-    },
     "ALLOWED_WITHIN_APPS_FOOTER": {
       "extractionState": "manual",
       "localizations": {
@@ -804,6 +535,275 @@
           "stringUnit": {
             "state": "translated",
             "value": "Permitir acesso à central de controlo a partir das aplicações. Se desativar esta opção, pode continuar a aceder a partir do ecrã principal."
+          }
+        }
+      }
+    },
+    "ALLOWED_WITHIN_APPS": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "גישה מתוך יישומים"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "앱 내 접근"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Akses Di Dalam App"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salli pääsy apeista"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toegang vanuit apps"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Доступ в приложениях"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hozzáférés appból"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uygulama İçinden Erişim"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accedi dalle app"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acceso dentro de apps"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Πρόσβαση εντός εφαρμογών"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accés dins de les apps"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accès à partir des apps"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在App中取用"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الوصول ضمن التطبيقات"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Åtkomst inuti appar"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tilgang fra apper"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ऐप्स के भीतर ऐक्सेस"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adgang fra apps"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Access Within Apps"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dostęp z aplikacji"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在App中取用"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เข้าถึงจากภายในแอป"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "App内访问"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Access Within Apps"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prieiga programose"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acceso dentro de apps"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Přístup v aplikacích"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prístup v apkách"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Akses Dalam App"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Достъп в приложенията"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Access Within Apps"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dostop v aplikacijah"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zugriff in Apps erlauben"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Truy cập bên trong ứng dụng"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acesso em Apps"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Доступ у програмах"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Қолданбаларда қол жеткізу"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Accès à partir des apps"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acces din aplicații"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acceso desde apps"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pristup unutar aplikacija"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アプリ使用中のアクセス"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acesso a partir de aplicações"
           }
         }
       }
@@ -1077,271 +1077,271 @@
         }
       }
     },
-    "CONTROL_CENTER_TIP_HEADER": {
+    "CONTROL_CENTER_RESET_TO_DEFAULT_LAYOUT_DESCRIPTION": {
       "extractionState": "manual",
       "localizations": {
         "he": {
           "stringUnit": {
             "state": "translated",
-            "value": "התאמה אישית של ״מרכז הבקרה״"
+            "value": "פעולה זו תחזיר את האייקונים ב״מרכז הבקרה״ למיקומם המקורי."
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "제어 센터 사용자화"
+            "value": "이 작업은 제어 센터 레이아웃을 초기 설정으로 재설정합니다."
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "Sesuaikan Pusat Kontrol"
+            "value": "Ini akan mengatur ulang susunan Pusat Kontrol Anda ke pengaturan awal pabrik."
           }
         },
         "fi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ohjauskeskuksen muokkaaminen"
+            "value": "Tämä nollaa Ohjauskeskuksen asettelun tehdasasetuksiin."
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Pas het bedieningspaneel aan"
+            "value": "Hiermee stel je de indeling van het bedieningspaneel in op de fabrieksinstellingen."
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Настройка Пункта управления"
+            "value": "В результате будут восстановлены заводские настройки Пункта управления."
           }
         },
         "hu": {
           "stringUnit": {
             "state": "translated",
-            "value": "Vezérlőközpont testreszabása"
+            "value": "Ez vissza fogja állítani a Vezérlőközpont elrendezését a gyári alapértékekre."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Denetim Merkezi’ni özelleştirin"
+            "value": "Bu, Denetim Merkezi yerleşiminizi fabrika saptanmışlarına döndürür."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Personalizza Centro di Controllo"
+            "value": "L’azione ripristinerà il layout di Centro di Controllo alle impostazioni di default."
           }
         },
         "es_419": {
           "stringUnit": {
             "state": "translated",
-            "value": "Personalizar el centro de control"
+            "value": "Se restablecerá la disposición original del centro de control."
           }
         },
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Προσαρμογή του Κέντρου ελέγχου"
+            "value": "Αυτή η ενέργεια θα επαναφέρει τη διάταξη του Κέντρου ελέγχου στις εργοστασιακές προεπιλογές."
           }
         },
         "ca": {
           "stringUnit": {
             "state": "translated",
-            "value": "Personalitza el centre de control"
+            "value": "Es restablirà la disposició original del centre de control."
           }
         },
         "fr_CA": {
           "stringUnit": {
             "state": "translated",
-            "value": "Personnalisez le centre de contrôle"
+            "value": "La disposition du centre de contrôle sera rétablie selon les réglages d’origine."
           }
         },
         "zh_TW": {
           "stringUnit": {
             "state": "translated",
-            "value": "自訂「控制中心」"
+            "value": "「控制中心」佈局將重置為出廠預設值。"
           }
         },
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "تخصيص مركز التحكم"
+            "value": "ستتم إعادة تعيين شكل مركز التحكم إلى الوضع الافتراضي."
           }
         },
         "sv": {
           "stringUnit": {
             "state": "translated",
-            "value": "Anpassa Kontrollcenter"
+            "value": "Detta återställer Kontrollcenters layout till den ursprungliga fabriksinställningen."
           }
         },
         "no": {
           "stringUnit": {
             "state": "translated",
-            "value": "Tilpass Kontrollsenter"
+            "value": "Dette nullstiller layouten i Kontrollsenter til originalinnstillingene."
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "कंट्रोल सेंटर कस्टमाइज़ करें"
+            "value": "यह आपके कंट्रोल सेंटर लेआउट को फ़ैक्टरी डिफ़ॉल्ट पर रीसेट कर देगा।"
           }
         },
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Tilpas Kontrolcenter"
+            "value": "Nulstiller layoutet i Kontrolcenter til standardindstillingerne."
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Customize Control Center"
+            "value": "This will reset your Control Center layout to factory defaults."
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Dostosowywanie centrum sterowania"
+            "value": "Spowoduje to przywrócenie fabrycznego wyglądu centrum sterowania."
           }
         },
         "zh_HK": {
           "stringUnit": {
             "state": "translated",
-            "value": "自訂「控制中心」"
+            "value": "這會將「控制中心」圖示排列重設為出廠預設值。"
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "กำหนดศูนย์ควบคุมเอง"
+            "value": "การทำงานนี้จะรีเซ็ตศูนย์ควบคุมกลับเป็นการตั้งค่าเริ่มต้นจากโรงงาน"
           }
         },
         "zh_CN": {
           "stringUnit": {
             "state": "translated",
-            "value": "自定义控制中心"
+            "value": "这会将控制中心还原为厂家默认布局。"
           }
         },
         "en_GB": {
           "stringUnit": {
             "state": "translated",
-            "value": "Customise Control Centre"
+            "value": "This will reset your Control Centre layout to factory defaults."
           }
         },
         "lt": {
           "stringUnit": {
             "state": "translated",
-            "value": "Pritaikykite valdymo centrą"
+            "value": "Atlikus šį veiksmą, jūsų „Valdymo centro“ išdėstymas bus nustatytas iš naujo į numatytuosius gamyklinius nustatymus."
           }
         },
         "es_US": {
           "stringUnit": {
             "state": "translated",
-            "value": "Personalizar el centro de control"
+            "value": "Se restablecerá la disposición original del centro de control."
           }
         },
         "cs": {
           "stringUnit": {
             "state": "translated",
-            "value": "Přizpůsobení Ovládacího centra"
+            "value": "Obnoví se původní uspořádání Ovládacího centra."
           }
         },
         "sk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Prispôsobenie Ovládacieho centra"
+            "value": "Týmto obnovíte pôvodné rozloženie Ovládacieho centra."
           }
         },
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "Sesuaikan Pusat Kawalan"
+            "value": "Ini akan mereset tataletak Pusat Kawalan anda kepada lalai kilang."
           }
         },
         "bg": {
           "stringUnit": {
             "state": "translated",
-            "value": "Персонализиране на Контролен център"
+            "value": "Това ще нулира вашия Контролен център до фабричните настройки по подразбиране."
           }
         },
         "en_AU": {
           "stringUnit": {
             "state": "translated",
-            "value": "Customise Control Centre"
+            "value": "This will reset your Control Centre layout to factory defaults."
           }
         },
         "sl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Prilagodite Nadzorno središče"
+            "value": "S tem boste postavitev Nadzornega središča ponastavili na tovarniške nastavitve."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Kontrollzentrum anpassen"
+            "value": "Hiermit wird die Anordnung der Kontrollzentrumssymbole auf die Werkseinstellung zurückgesetzt."
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Tùy chỉnh Trung tâm điều khiển"
+            "value": "Thao tác này sẽ đặt lại bố cục Trung tâm điều khiển của bạn về mặc định ban đầu."
           }
         },
         "pt_BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Personalize a Central de Controle"
+            "value": "O layout da Central de Controle será redefinido aos padrões de fábrica."
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Налаштування Центру керування"
+            "value": "Схему Центру керування буде скинуто до заводських значень."
           }
         },
         "kk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Басқару орталығын бейімдеу"
+            "value": "Басқару орталығының орналасуы зауыттық параметрлерге қайтарылады."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Personnaliser le centre de contrôle"
+            "value": "La disposition par défaut du centre de contrôle sera rétablie."
           }
         },
         "ro": {
           "stringUnit": {
             "state": "translated",
-            "value": "Personalizați centrul de control"
+            "value": "Aranjamentul centrului de control va fi resetat conform stării originale."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Personaliza el centro de control"
+            "value": "Se restablecerá la disposición original del centro de control."
           }
         },
         "hr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Prilagodite Kontrolni centar"
+            "value": "Time će se vaš raspored Kontrolnog centra resetirati na tvorničke vrijednosti."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "コントロールセンターをカスタマイズ"
+            "value": "コントロールセンターのレイアウトを工場出荷時のデフォルト状態にリセットします。"
           }
         },
         "pt_PT": {
           "stringUnit": {
             "state": "translated",
-            "value": "Personalizar a central de controlo"
+            "value": "A disposição da central de controlo será reposta segundo as definições de fábrica."
           }
         }
       }
@@ -1611,6 +1611,556 @@
           "stringUnit": {
             "state": "translated",
             "value": "Para abrir a central de controlo, passe o dedo para baixo, desde o canto superior direito. Pode adicionar, reorganizar e redimensionar qualquer controlo."
+          }
+        }
+      }
+    },
+    "CONTROL_CENTER_RESET_TO_DEFAULT_LAYOUT": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "איפוס ״מרכז הבקרה״"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "제어 센터 재설정"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Atur Ulang Pusat Kontrol"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nollaa Ohjauskeskus"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stel bedieningspaneel opnieuw in"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сбросить Пункт управления"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vezérlőközpont alaphelyzetbe állítása"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Denetim Merkezi’ni Sıfırla"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ripristina Centro di Controllo"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restablecer el centro de control"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Επαναφορά του Κέντρου ελέγχου"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restableix el centre de control"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Réinitialiser le centre de contrôle"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重置「控制中心」"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إعادة تعيين مركز التحكم"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Återställ Kontrollcenter"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nullstill Kontrollsenter"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "कंट्रोल सेंटर रीसेट करें"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nulstil Kontrolcenter"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reset Control Center"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wyzeruj centrum sterowania"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重設「控制中心」"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "รีเซ็ตศูนย์ควบคุม"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "还原控制中心"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reset Control Centre"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Iš naujo nustatyti „Valdymo centrą“"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restablecer el centro de control"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resetovat Ovládací centrum"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resetovať Ovládacie centrum"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reset Pusat Kawalan"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Нулирай Контролен център"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reset Control Centre"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ponastavi Nadzorno središče"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kontrollzentrum zurücksetzen"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đặt lại Trung tâm điều khiển"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Redefinir Central de Controle"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Скинути Центр керування"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Басқару орталығын бастапқы күйге қайтару"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Réinitialiser le centre de contrôle"
+          }
+        },
+        "ro": {
+          "variations": {
+            "device": {
+              "mac": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Resetează centrul de control"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Resetați centrul de control"
+                }
+              }
+            }
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restablecer el centro de control"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resetiraj Kontrolni centar"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "コントロールセンターをリセット"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Repor central de controlo"
+          }
+        }
+      }
+    },
+    "CONTROL_CENTER_TIP_HEADER": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "התאמה אישית של ״מרכז הבקרה״"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "제어 센터 사용자화"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sesuaikan Pusat Kontrol"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ohjauskeskuksen muokkaaminen"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pas het bedieningspaneel aan"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Настройка Пункта управления"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vezérlőközpont testreszabása"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Denetim Merkezi’ni özelleştirin"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Personalizza Centro di Controllo"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Personalizar el centro de control"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Προσαρμογή του Κέντρου ελέγχου"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Personalitza el centre de control"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Personnalisez le centre de contrôle"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自訂「控制中心」"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تخصيص مركز التحكم"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anpassa Kontrollcenter"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tilpass Kontrollsenter"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "कंट्रोल सेंटर कस्टमाइज़ करें"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tilpas Kontrolcenter"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Customize Control Center"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dostosowywanie centrum sterowania"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自訂「控制中心」"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "กำหนดศูนย์ควบคุมเอง"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自定义控制中心"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Customise Control Centre"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pritaikykite valdymo centrą"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Personalizar el centro de control"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Přizpůsobení Ovládacího centra"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prispôsobenie Ovládacieho centra"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sesuaikan Pusat Kawalan"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Персонализиране на Контролен център"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Customise Control Centre"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prilagodite Nadzorno središče"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kontrollzentrum anpassen"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tùy chỉnh Trung tâm điều khiển"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Personalize a Central de Controle"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Налаштування Центру керування"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Басқару орталығын бейімдеу"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Personnaliser le centre de contrôle"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Personalizați centrul de control"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Personaliza el centro de control"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prilagodite Kontrolni centar"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "コントロールセンターをカスタマイズ"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Personalizar a central de controlo"
           }
         }
       }

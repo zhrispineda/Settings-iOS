@@ -10,6 +10,7 @@ import SwiftUI
 struct FocusView: View {
     // Variables
     @State private var shareAcrossDevicesEnabled = true
+    let table = "FocusSettings"
     
     var body: some View {
         CustomList(title: "Focus") {
@@ -20,7 +21,7 @@ struct FocusView: View {
                         Image(systemName: "moon.fill").imageScale(.large)
                             .frame(width: 30)
                             .foregroundColor(.indigo)
-                        Text("Do Not Disturb")
+                        Text("ONBOARDING_MODE_TITLE_DO_NOT_DISTURB", tableName: table)
                             .padding(.horizontal, 10)
                     }
                 }
@@ -31,10 +32,11 @@ struct FocusView: View {
                         Image(systemName: "person.fill").imageScale(.large)
                             .frame(width: 30)
                             .foregroundColor(.purple)
-                        Text("Personal")
+                        Text("ONBOARDING_MODE_TITLE_PERSONAL", tableName: table)
                             .padding(.horizontal, 10)
                         Spacer()
-                        Text("Set Up").foregroundStyle(.secondary)
+                        Text("SETUP", tableName: table)
+                            .foregroundStyle(.secondary)
                     }
                 }
                 
@@ -44,10 +46,11 @@ struct FocusView: View {
                         Image(systemName: "bed.double.fill").imageScale(.large)
                             .frame(width: 30)
                             .foregroundColor(.cyan)
-                        Text("Sleep")
+                        Text("ONBOARDING_MODE_TITLE_SLEEP", tableName: table)
                             .padding(.horizontal, 10)
                         Spacer()
-                        Text("Set Up").foregroundStyle(.secondary)
+                        Text("SETUP", tableName: table)
+                            .foregroundStyle(.secondary)
                     }
                 }
                 
@@ -57,26 +60,27 @@ struct FocusView: View {
                         Image(systemName: "person.crop.square.fill").imageScale(.large)
                             .frame(width: 30)
                             .foregroundColor(.cyan)
-                        Text("Work")
+                        Text("ONBOARDING_MODE_TITLE_WORK", tableName: table)
                             .padding(.horizontal, 10)
                         Spacer()
-                        Text("Set Up").foregroundStyle(.secondary)
+                        Text("SETUP", tableName: table)
+                            .foregroundStyle(.secondary)
                     }
                 }
             } footer: {
-                Text("Focus lets you customize your device and silence calls and notifications. Turn it on and off in Control Center.")
+                Text("FOCUS_MODES_FOOTER_TEXT", tableName: table)
             }
             
             Section {
-                Toggle("Share Across Devices", isOn: $shareAcrossDevicesEnabled)
+                Toggle("CLOUD_SYNCING".localize(table: table), isOn: $shareAcrossDevicesEnabled)
             } footer: {
-                Text("Focus is shared across your devices, and turning one on for this device will turn it on for all of them.")
+                Text("CLOUD_SYNCING_FOOTER_TEXT", tableName: table)
             }
             
             Section {
-                CustomNavigationLink(title: "Focus Status", status: "Off", destination: EmptyView())
+                CustomNavigationLink(title: "FOCUS_STATUS".localize(table: table), status: "OFF".localize(table: table), destination: EmptyView())
             } footer: {
-                Text("When you give an app permission, it can share that you have notifications silenced when using Focus.")
+                Text("FOCUS_STATUS_DESCRIPTION", tableName: table)
             }
         }
         .toolbar {
