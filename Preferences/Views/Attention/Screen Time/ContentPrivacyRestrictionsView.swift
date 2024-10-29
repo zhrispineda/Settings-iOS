@@ -10,48 +10,49 @@ import SwiftUI
 struct ContentPrivacyRestrictionsView: View {
     // Variables
     @State private var contentPrivacyRestrictionsEnabled = false
+    let table = "Restrictions"
     
     var body: some View {
-        CustomList(title: "Content & Privacy Restrictions") {
+        CustomList(title: "ContentPrivacySpecifierName".localize(table: table)) {
             Section {
-                Toggle("Content & Privacy Restrictions", isOn: $contentPrivacyRestrictionsEnabled)
+                Toggle("ContentPrivacySpecifierName".localize(table: table), isOn: $contentPrivacyRestrictionsEnabled)
             }
             
             Section {
-                NavigationLink("App Installations & Purchases", destination: AppInstallationsPurchasesView())
-                NavigationLink("Allowed Apps", destination: AllowedAppsView())
-                NavigationLink("Content Restrictions", destination: ContentRestrictionsView())
-            }
-            .disabled(!contentPrivacyRestrictionsEnabled)
-            
-            Section {
-                CustomNavigationLink(title: "Location Services", status: "Allow", destination: RestrictionsLocationServicesView())
-                CustomNavigationLink(title: "Contacts", status: "Allow", destination: ContentPrivacyRestrictionsDetailView(title: "Contacts"))
-                CustomNavigationLink(title: "Calendars", status: "Allow", destination: ContentPrivacyRestrictionsDetailView(title: "Calendars"))
-                CustomNavigationLink(title: "Reminders", status: "Allow", destination: ContentPrivacyRestrictionsDetailView(title: "Reminders"))
-                CustomNavigationLink(title: "Photos", status: "Allow", destination: ContentPrivacyRestrictionsDetailView(title: "Photos"))
-                CustomNavigationLink(title: "Share My Location", status: "Allow", destination: SelectOptionList(title: "Share My Location"))
-                CustomNavigationLink(title: "Bluetooth Sharing", status: "Allow", destination: ContentPrivacyRestrictionsDetailView(title: "Bluetooth Sharing"))
-                CustomNavigationLink(title: "Microphone", status: "Allow", destination: ContentPrivacyRestrictionsDetailView(title: "Microphone"))
-                CustomNavigationLink(title: "Speech Recognition", status: "Allow", destination: ContentPrivacyRestrictionsDetailView(title: "Speech Recognition"))
-                CustomNavigationLink(title: "Apple Advertising", status: "Allow", destination: SelectOptionList(title: "Apple Advertising"))
-                CustomNavigationLink(title: "Allow Apps to Request to Track", status: "Allow", destination: ContentPrivacyRestrictionsDetailView(title: "Allow Apps to Request to Track"))
-                CustomNavigationLink(title: "Media & Apple Music", status: "Allow", destination: ContentPrivacyRestrictionsDetailView(title: "Media & Apple Music"))
-            } header: {
-                Text("Privacy")
+                NavigationLink("AppsInstallationsAndPurchasesSpecifierName".localize(table: table), destination: AppInstallationsPurchasesView())
+                NavigationLink("AllowedAppsSpecifierName".localize(table: table), destination: AllowedAppsView())
+                NavigationLink("ContentRestrictionsSpecifierName".localize(table: table), destination: ContentRestrictionsView())
             }
             .disabled(!contentPrivacyRestrictionsEnabled)
             
             Section {
-                CustomNavigationLink(title: "Passcode Changes", status: "Allow", destination: SelectOptionList(title: "Passcode Changes"))
-                CustomNavigationLink(title: "Account Changes", status: "Allow", destination: SelectOptionList(title: "Account Changes"))
-                CustomNavigationLink(title: "Cellular Data Changes", status: "Allow", destination: SelectOptionList(title: "Cellular Data Changes"))
-                CustomNavigationLink(title: "Reduce Loud Sounds", status: "Allow", destination: SelectOptionList(title: "Reduce Loud Sounds"))
-                CustomNavigationLink(title: "Driving Focus", status: "Allow", destination: SelectOptionList(title: "Driving Focus"))
-                CustomNavigationLink(title: "TV Provider", status: "Allow", destination: SelectOptionList(title: "TV Provider"))
-                CustomNavigationLink(title: "Background App Activities", status: "Allow", destination: SelectOptionList(title: "Background App Activities"))
+                CustomNavigationLink(title: "LocationServicesSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: RestrictionsLocationServicesView())
+                CustomNavigationLink(title: "ContactsSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: ContentPrivacyRestrictionsDetailView(title: "ContactsSpecifierName"))
+                CustomNavigationLink(title: "CalendarsSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: ContentPrivacyRestrictionsDetailView(title: "CalendarsSpecifierName"))
+                CustomNavigationLink(title: "RemindersSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: ContentPrivacyRestrictionsDetailView(title: "RemindersSpecifierName"))
+                CustomNavigationLink(title: "PhotosSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: ContentPrivacyRestrictionsDetailView(title: "PhotosSpecifierName"))
+                CustomNavigationLink(title: "ShareLocationSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: SelectOptionList(title: "ShareLocationSpecifierName"))
+                CustomNavigationLink(title: "BluetoothSharingSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: ContentPrivacyRestrictionsDetailView(title: "BluetoothSharingSpecifierName"))
+                CustomNavigationLink(title: "MicrophoneSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: ContentPrivacyRestrictionsDetailView(title: "MicrophoneSpecifierName"))
+                CustomNavigationLink(title: "SpeechRecognitionSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: ContentPrivacyRestrictionsDetailView(title: "SpeechRecognitionSpecifierName"))
+                CustomNavigationLink(title: "AdvertisingSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: SelectOptionList(title: "AdvertisingSpecifierName"))
+                CustomNavigationLink(title: "UserTrackingSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: ContentPrivacyRestrictionsDetailView(title: "UserTrackingSpecifierName"))
+                CustomNavigationLink(title: "MediaAppleMusicSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: ContentPrivacyRestrictionsDetailView(title: "MediaAppleMusicSpecifierName"))
             } header: {
-                Text("Allow Changes:")
+                Text("PrivacySpecifierName", tableName: table)
+            }
+            .disabled(!contentPrivacyRestrictionsEnabled)
+            
+            Section {
+                CustomNavigationLink(title: "PasscodeChangesSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: SelectOptionList(title: "PasscodeChangesSpecifierName".localize(table: table)))
+                CustomNavigationLink(title: "AccountChangesSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: SelectOptionList(title: "AccountChangesSpecifierName"))
+                CustomNavigationLink(title: "CellularChangesSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: SelectOptionList(title: "CellularChangesSpecifierName".localize(table: table)))
+                CustomNavigationLink(title: "ReduceLoudSoundsSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: SelectOptionList(title: "ReduceLoudSoundsSpecifierName".localize(table: table)))
+                CustomNavigationLink(title: "DrivingFocusSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: SelectOptionList(title: "DrivingFocusSpecifierName".localize(table: table)))
+                CustomNavigationLink(title: "TVProviderSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: SelectOptionList(title: "TVProviderSpecifierName".localize(table: table)))
+                CustomNavigationLink(title: "BackgroundAppActivitiesSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: SelectOptionList(title: "BackgroundAppActivitiesSpecifierName".localize(table: table)))
+            } header: {
+                Text("AllowChangesLabel", tableName: table)
             }
             .disabled(!contentPrivacyRestrictionsEnabled)
         }

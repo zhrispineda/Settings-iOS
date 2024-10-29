@@ -27,6 +27,14 @@ struct ContentPrivacyRestrictionsDetailView: View {
                 .labelsHidden()
             } footer: {
                 switch title {
+                case "ContactsSpecifierName":
+                    Text("CONTACTS_EXPLANATION", tableName: table)
+                case "CalendarsSpecifierName":
+                    Text("CALENDARS_EXPLANATION", tableName: table)
+                case "RemindersSpecifierName":
+                    Text("REMINDERS_EXPLANATION", tableName: table)
+                case "PhotosSpecifierName":
+                    Text("PHOTOS_EXPLANATION", tableName: table)
                 case "MediaAppleMusicSpecifierName":
                     Text("MEDIALIBRARY_EXPLANATION", tableName: table)
                 case "UserTrackingSpecifierName":
@@ -58,24 +66,30 @@ struct ContentPrivacyRestrictionsDetailView: View {
             
             Section {
                 if title == "BluetoothSharingSpecifierName" || title == "MicrophoneSpecifierName" {
-                    SettingsLink(color: .white, icon: "appclip", id: "AppClipsSpecifierName".localize(table: table)) {
-                        AppClipsView(completeView: false)
+                    SettingsLink(color: .white, iconColor: .blue, icon: "appclip", id: "AppClipsSpecifierName".localize(table: table)) {
+                        AppClipsView(completeView: false, permission: title)
                     }
                 }
             } footer: {
                 switch title {
+                case "ContactsSpecifierName":
+                    Text("CONTACTS_FOOTER", tableName: privTable)
+                case "CalendarsSpecifierName":
+                    Text("CALENDARS_FOOTER", tableName: privTable)
+                case "RemindersSpecifierName":
+                    Text("REMINDERS_FOOTER", tableName: privTable)
                 case "MediaAppleMusicSpecifierName":
-                    Text("MEDIALIBRARY_EXPLANATION", tableName: table)
+                    Text("MEDIALIBRARY_EXPLANATION", tableName: privTable)
                 case "UserTrackingSpecifierName":
-                    Text("USER_TRACKING_EXPLANATION", tableName: table)
+                    Text("USER_TRACKING_EXPLANATION", tableName: privTable)
                 case "SpeechRecognitionSpecifierName":
-                    Text("SPEECH_RECOGNITION_FOOTER", tableName: table)
+                    Text("SPEECH_RECOGNITION_FOOTER", tableName: privTable)
                 case "MicrophoneSpecifierName":
-                    Text("MICROPHONE_FOOTER", tableName: table)
+                    Text("MICROPHONE_FOOTER", tableName: privTable)
                 case "BluetoothSharingSpecifierName":
-                    Text("BT_PERIPHERAL_FOOTER", tableName: table)
+                    Text("BT_PERIPHERAL_FOOTER", tableName: privTable)
                 case "PhotosSpecifierName":
-                    Text("PHOTOS_NO_APP_FOOTER", tableName: table)
+                    Text("PHOTOS_NO_APP_FOOTER", tableName: privTable)
                 default:
                     Text("Applications that have requested access to your \(title.lowercased()) will appear here.")
                 }
@@ -86,6 +100,6 @@ struct ContentPrivacyRestrictionsDetailView: View {
 
 #Preview {
     NavigationStack {
-        ContentPrivacyRestrictionsDetailView()
+        ContentPrivacyRestrictionsDetailView(title: "Example")
     }
 }

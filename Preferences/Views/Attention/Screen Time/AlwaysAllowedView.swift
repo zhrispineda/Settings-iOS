@@ -10,17 +10,18 @@ import SwiftUI
 struct AlwaysAllowedView: View {
     // Variables
     @State private var showingMessagesAlert = false
-    @State private var includedControls = ["Messages", "Maps"]
+    @State private var includedControls = ["MessagesAppName", "Maps"]
     @State private var moreControls = ["Calendar", "Contacts", "News", "Photos", "Reminders", "Shortcuts"]
-    let allowedAppsOrder = ["Messages", "Maps", "Calendar", "Contacts", "News", "Photos", "Reminders", "Shortcuts"]
-    let chooseAppsOrder = ["Calendar", "Contacts", "Maps", "Messages", "News", "Photos", "Reminders", "Shortcuts"]
+    let allowedAppsOrder = ["MessagesAppName", "Maps", "Calendar", "Contacts", "News", "Photos", "Reminders", "Shortcuts"]
+    let chooseAppsOrder = ["Calendar", "Contacts", "Maps", "MessagesAppName", "News", "Photos", "Reminders", "Shortcuts"]
+    let table = "ScreenTimeSettingsUI"
     
     var body: some View {
-        CustomList(title: "Always Allowed") {
+        CustomList(title: "AlwaysAllowTitle".localize(table: table), topPadding: true) {
             Section {
                 SettingsLabel(icon: "applePhone", id: "Phone")
                 ForEach($includedControls, id: \.self) { $control in
-                    SettingsLabel(icon: "apple\(control)", id: control)
+                    SettingsLabel(icon: "apple\(control.localize(table: table))", id: control.localize(table: table))
                     // TODO: Figure out swipe controls (change from Delete to Remove) and alert for removing Messages
 //                        .swipeActions(edge: .trailing) {
 //                            Button(role: .destructive, action: {
@@ -63,8 +64,8 @@ struct AlwaysAllowedView: View {
                 }
             } header: {
                 VStack(alignment: .leading) {
-                    Text("Allowed Apps")
-                    Text("Always allowed apps are available during downtime, or if you select the “All Apps & Categories“ app limit.")
+                    Text("AllowedAppsGroupSpecifierName", tableName: table)
+                    Text("AllowedAppsGroupSpecifierFooter", tableName: table)
                         .textCase(.none)
                 }
             }
@@ -93,11 +94,11 @@ struct AlwaysAllowedView: View {
                             }
                         }
                         .buttonStyle(.plain)
-                        SettingsLabel(icon: "apple\(control)", id: control)
+                        SettingsLabel(icon: "apple\(control.localize(table: table))", id: control)
                     }
                 }
             } header: {
-                Text("Choose Apps:")
+                Text("ChooseAppsGroupSpecifierName", tableName: table)
             }
         }
         .environment(\.editMode, Binding.constant(EditMode.active))

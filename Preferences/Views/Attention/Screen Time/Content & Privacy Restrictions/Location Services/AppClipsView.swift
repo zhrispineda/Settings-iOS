@@ -11,6 +11,7 @@ struct AppClipsView: View {
     // Variables
     @State private var confirmLocationEnabled = false
     var completeView = true
+    var permission = String()
     let table = "Dim-Sum"
     let locTable = "Location Services"
     
@@ -25,7 +26,13 @@ struct AppClipsView: View {
                     if completeView {
                         Text("CONFIRM_LOCATION_FOOTER", tableName: table) + Text("\n\n")
                     }
-                    Text("GENERAL_EXPLANATION_CLIPS_ITEM", tableName: locTable) + Text("\n")
+                    if permission == "MicrophoneSpecifierName" {
+                        Text("MICROPHONE_CLIPS_FOOTER", tableName: table) + Text("\n")
+                    } else if permission == "BluetoothSharingSpecifierName" {
+                        Text("BT_PERIPHERAL_CLIPS_FOOTER", tableName: table) + Text("\n")
+                    } else {
+                        Text("GENERAL_EXPLANATION_CLIPS_ITEM", tableName: locTable) + Text("\n")
+                    }
                     if completeView {
                         HStack(spacing: 15) {
                             Image(systemName: "location.fill")
