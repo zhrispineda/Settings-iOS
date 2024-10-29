@@ -9,32 +9,33 @@ import SwiftUI
 
 struct WebContentView: View {
     // Variables
-    @State private var selected = "Unrestricted"
-    let options = ["Unrestricted", "Limit Adult Websites", "Allowed Websites"]
+    @State private var selected = "UnrestrictedAccessSpecifierName"
+    let options = ["UnrestrictedAccessSpecifierName", "LimitAdultWebsitesSpecifierName", "AllowedWebsitesSpecifierName"]
     
     @State private var allowedWebsites = ["Apple – Start", "CBeebies (by BBC", "Disney", "HowStuffWorks", "National Geographic - Kids", "PBS Kids", "Scholastic.com", "Smithsonian Institution", "Time for Kids"]
+    let table = "Restrictions"
     
     var body: some View {
-        CustomList(title: "Web Content") {
+        CustomList(title: "WebContentSpecifierName".localize(table: table), topPadding: true) {
             Section {
                 Picker("", selection: $selected) {
                     ForEach(options, id: \.self) {
-                        Text($0)
+                        Text($0.localize(table: table))
                     }
                 }
                 .pickerStyle(.inline)
                 .labelsHidden()
             } header: {
-                Text("Web Content")
+                Text("WebContentSpecifierName", tableName: table)
             } footer: {
-                if selected == "Allowed Websites" {
-                    Text("Allow access only to the websites below.")
-                } else if selected == "Limit Adult Websites" {
-                    Text("Limit access to many adult websites automatically. Specific allowed and restricted websites can be added below.")
+                if selected == "AllowedWebsitesSpecifierName" {
+                    Text("WebContentCustomFilterFooterText", tableName: table)
+                } else if selected == "LimitAdultWebsitesSpecifierName" {
+                    Text("WebContentAutoFilterFooterText", tableName: table)
                 }
             }
             
-            if selected == "Allowed Websites" {
+            if selected == "AllowedWebsitesSpecifierName" {
                 Section {
                     ForEach($allowedWebsites, id: \.self, editActions: .delete) { $option in
                         Text(option)
@@ -42,35 +43,35 @@ struct WebContentView: View {
                     ZStack(alignment: .leading) {
                         NavigationLink("", destination: {})
                             .opacity(0)
-                        Text("Add Website")
+                        Text("AddWebsiteButton", tableName: table)
                             .foregroundStyle(.blue)
                     }
                 } header: {
-                    Text("Only Allow These Websites:")
+                    Text("OnlyAllowLabel", tableName: table)
                 }
             }
             
-            if selected == "Limit Adult Websites" {
+            if selected == "LimitAdultWebsitesSpecifierName" {
                 Section {
                     ZStack(alignment: .leading) {
                         NavigationLink("", destination: {})
                             .opacity(0)
-                        Text("Add Website")
+                        Text("AddWebsiteButton", tableName: table)
                             .foregroundStyle(.blue)
                     }
                 } header: {
-                    Text("Always Allow:")
+                    Text("AlwaysAllowLabel", tableName: table)
                 }
                 
                 Section {
                     ZStack(alignment: .leading) {
                         NavigationLink("", destination: {})
                             .opacity(0)
-                        Text("Add Website")
+                        Text("AddWebsiteButton", tableName: table)
                             .foregroundStyle(.blue)
                     }
                 } header: {
-                    Text("Never Allow:")
+                    Text("NeverAllowLabel", tableName: table)
                 }
             }
         }
@@ -78,5 +79,7 @@ struct WebContentView: View {
 }
 
 #Preview {
-    WebContentView()
+    NavigationStack {
+        WebContentView()
+    }
 }

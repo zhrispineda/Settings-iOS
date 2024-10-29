@@ -24,24 +24,30 @@ struct SystemServicesView: View {
     @State private var routingTrafficEnabled = false
     @State private var improveMapsEnabled = false
     @State private var controlCenterIconEnabled = false
+    let table = "Location Services"
+    let privTable = "LocationServicesPrivacy"
     
     var body: some View {
-        CustomList(title: "System Services") {
+        CustomList(title: "SYSTEM_SERVICES".localize(table: table)) {
             Section {
-                Toggle("Alerts & Shortcuts Automations", isOn: $alertsShortcutsAutomationsEnabled)
-                Toggle("Carbon Analysis", isOn: $carbonAnalysisEnabled)
+                Toggle("LOCATION_BASED_ALERTS".localize(table: privTable), isOn: $alertsShortcutsAutomationsEnabled)
+                if UIDevice.IsSimulator {
+                    Toggle("Carbon Analysis", isOn: $carbonAnalysisEnabled)
+                }
                 if UIDevice.iPhone {
                     Toggle("Cell Network Search", isOn: $cellNetworkSearchEnabled)
                 }
                 Toggle("Device Management", isOn: $deviceManagementEnabled)
-                Toggle("Find My Mac", isOn: $findMyEnabled)
-                Toggle("HomeKit", isOn: $homeKitEnabled)
-                Toggle("Networking & Wireless", isOn: $networkingWirelessEnabled)
-                    .alert("Location for Networking & Wireless", isPresented: $showingNetworkingAlert) {
-                        Button("Turn Off") {}
-                        Button("Cancel", role: .cancel) {}
+                if UIDevice.IsSimulator {
+                    Toggle("Find My Mac", isOn: $findMyEnabled)
+                }
+                Toggle("HOMEKIT".localize(table: privTable), isOn: $homeKitEnabled)
+                Toggle("NETWORKING_WIRELESS".localize(table: privTable), isOn: $networkingWirelessEnabled)
+                    .alert("WIRELESS_DISABLE_TITLE".localize(table: privTable), isPresented: $showingNetworkingAlert) {
+                        Button("WIRELESS_DISABLE_CONFIRM".localize(table: privTable)) {}
+                        Button("WIRELESS_DISABLE_CANCEL".localize(table: privTable), role: .cancel) {}
                     } message: {
-                        Text("Turning off location for networking and wireless may affect Bluetooth and Wi-Fi performance.")
+                        Text("WIRELESS_DISABLE_MESSAGE_WIFI", tableName: privTable)
                     }
                     .onChange(of: networkingWirelessEnabled) {
                         showingNetworkingAlert = !networkingWirelessEnabled
@@ -56,26 +62,26 @@ struct SystemServicesView: View {
                             .font(.title2)
                     }
                 }
-                Toggle("System Customization", isOn: $systemCustomizationEnabled)
+                Toggle("SYSTEM_CUSTOMIZATION".localize(table: privTable), isOn: $systemCustomizationEnabled)
             }
             
             Section {
-                Toggle("\(UIDevice.current.model) Analytics", isOn: $deviceAnalyticsEnabled)
-                Toggle("Routing & Traffic", isOn: $routingTrafficEnabled)
-                Toggle("Improve Maps", isOn: $improveMapsEnabled)
+                Toggle("WIRELESS_DIAGNOSTICS".localize(table: table), isOn: $deviceAnalyticsEnabled)
+                Toggle("ROUTING_AND_TRAFFIC".localize(table: privTable), isOn: $routingTrafficEnabled)
+                Toggle("POLARIS_TITLE".localize(table: table), isOn: $improveMapsEnabled)
             } header: {
-                Text("Product Improvement")
+                Text("PRODUCT_IMPROVEMENT", tableName: table)
             } footer: {
                 VStack(alignment: .leading) {
-                    Text("Allow Apple to use your frequent location information to improve Maps. [About Improve Maps & Privacy...](#)\n\n\n")
+                    Text(.init("POLARIS_FOOTER".localize(table: table, "[\("LEARN_MORE".localize(table: table))](#)"))) + Text("\n")
                     
                     Group {
-                        Text("System services that have requested access to your location will appear here.\n")
+                        Text("GENERAL_EXPLANATION_ITEM", tableName: table) + Text("\n")
                         HStack(spacing: 15) {
                             Image(systemName: "location.fill")
                                 .foregroundStyle(.purple)
                                 .font(.headline)
-                            Text("A purple arrow indicates that an item has recently used your location.")
+                            Text("ACTIVE_EXPLANATION_ITEM", tableName: table)
                         }
                         .padding(.trailing)
                         .padding(.bottom, 5)
@@ -84,7 +90,7 @@ struct SystemServicesView: View {
                             Image(systemName: "location.fill")
                                 .foregroundStyle(.gray)
                                 .font(.headline)
-                            Text("A gray arrow indicates that an item has used your location in the last 24 hours.")
+                            Text("RECENT_EXPLANATION_ITEM", tableName: table)
                         }
                         .padding(.trailing)
                     }
@@ -92,14 +98,16 @@ struct SystemServicesView: View {
             }
             
             Section {
-                Toggle("Status Bar Icon", isOn: $controlCenterIconEnabled)
+                Toggle("STATUS_BAR_ICON".localize(table: table), isOn: $controlCenterIconEnabled)
             } footer: {
-                Text("Show the Location Services icon in the Status Bar when the services above request your location.")
+                Text("SYSTEM_SERVICES_STATUS_BAR_ICON_EXPLANATION", tableName: table)
             }
         }
     }
 }
 
 #Preview {
-    SystemServicesView()
+    NavigationStack {
+        SystemServicesView()
+    }
 }
