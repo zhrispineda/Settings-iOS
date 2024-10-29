@@ -8,45 +8,49 @@
 import SwiftUI
 
 struct ContentRestrictionsView: View {
+    // Variables
+    let table = "Restrictions"
+    let rateTable = "RatingProviders"
+    
     var body: some View {
-        CustomList(title: "Content Restrictions") {
+        CustomList(title: "ContentRestrictionsSpecifierName".localize(table: table), topPadding: true) {
             Section {
-                CustomNavigationLink(title: "Music, Podcasts, News, Fitness", status: "Explicit", destination: SelectOptionList(title: "Music, Podcasts, News, Fitness", options: ["Clean", "Explicit"], selected: "Explicit"))
-                CustomNavigationLink(title: "Music Videos", status: "On", destination: SelectOptionList(title: "Music Videos", options: ["Off", "On"], selected: "On"))
-                CustomNavigationLink(title: "Music Profiles", status: "On", destination: SelectOptionList(title: "Music Videos", options: ["Off", "On"], selected: "On"))
-                CustomNavigationLink(title: "Movies", status: "Allow All", destination: MoviesView())
-                CustomNavigationLink(title: "TV", status: "Allow All", destination: TVView())
-                CustomNavigationLink(title: "Books", status: "Explicit", destination: SelectOptionList(title: "Books", options: ["Clean", "Explicit"], selected: "Explicit"))
-                CustomNavigationLink(title: "Apps", status: "17+", destination: AppRestrictionsView())
-                CustomNavigationLink(title: "App Clips", status: "Allow", destination: SelectOptionList(title: "App Clips"))
+                CustomNavigationLink(title: "MusicPodcastsNewsWorkoutsSpecifierName".localize(table: table), status: "ExplicitLabel".localize(table: table), destination: SelectOptionList(title: "MusicPodcastsNewsWorkoutsSpecifierName".localize(table: table), options: ["CleanLabel".localize(table: table), "ExplicitLabel".localize(table: table)], selected: "ExplicitLabel".localize(table: table)))
+                CustomNavigationLink(title: "MusicVideosSpecifierName".localize(table: table), status: "OnLabel".localize(table: table), destination: SelectOptionList(title: "MusicVideosSpecifierName".localize(table: table), options: ["OffLabel".localize(table: table), "OnLabel".localize(table: table)], selected: "OnLabel".localize(table: table)))
+                CustomNavigationLink(title: "MusicProfilesSpecifierName".localize(table: table), status: "OnLabel".localize(table: table), destination: SelectOptionList(title: "Music Videos".localize(table: table), options: ["OffLabel".localize(table: table), "OnLabel".localize(table: table)], selected: "OnLabel".localize(table: table)))
+                CustomNavigationLink(title: "MoviesSpecifierName".localize(table: table), status: "AllowAll".localize(table: rateTable), destination: MoviesView())
+                CustomNavigationLink(title: "TVSpecifierName".localize(table: table), status: "AllowAll".localize(table: rateTable), destination: TVView())
+                CustomNavigationLink(title: "BooksSpecifierName".localize(table: table), status: "ExplicitLabel".localize(table: table), destination: SelectOptionList(title: "BooksSpecifierName".localize(table: table), options: ["CleanLabel".localize(table: table), "ExplicitLabel".localize(table: table)], selected: "ExplicitLabel".localize(table: table)))
+                CustomNavigationLink(title: "AppsSpecifierName".localize(table: table), status: "17+", destination: AppRestrictionsView())
+                CustomNavigationLink(title: "AppClipsSpecifierName".localize(table: table), status: "Allow".localize(table: table), destination: SelectOptionList(title: "AppClipsSpecifierName".localize(table: table)))
             } header: {
-                Text("Allowed Store Content")
+                Text("AllowedContentLabel", tableName: table)
             }
             
             Section {
-                CustomNavigationLink(title: "Web Content", status: "Unrestricted", destination: WebContentView())
+                CustomNavigationLink(title: "WebContentSpecifierName".localize(table: table), status: "UnrestrictedAccessSpecifierName".localize(table: table), destination: WebContentView())
             } header: {
-                Text("Web Content")
+                Text("WebContentSpecifierName", tableName: table)
             }
             
             Section {
-                CustomNavigationLink(title: "Web Search Content", status: "Allow", destination: SelectOptionList(title: "Web Search Content"))
-                CustomNavigationLink(title: "Explicit Language", status: "Allow", destination: SelectOptionList(title: "Explicit Language"))
+                CustomNavigationLink(title: "WebSearchContentSpecifierName".localize(table: table), status: "Allow".localize(table: table), destination: SelectOptionList(title: "Web Search Content".localize(table: table)))
+                CustomNavigationLink(title: "ExplicitLanguageSpecifierName".localize(table: table), status: "Allow".localize(table: table), destination: SelectOptionList(title: "ExplicitLanguageSpecifierName".localize(table: table)))
             } header: {
-                Text("Siri")
+                Text("SiriLabel", tableName: table)
             }
             
             Section {
-                CustomNavigationLink(title: "Multiplayer Games", status: "Allow with Everyone", destination: SelectOptionList(title: "Multiplayer Games", options: ["Don‘t Allow", "Allow with Friends Only", "Allow with Everyone"], selected: "Allow with Everyone"))
-                CustomNavigationLink(title: "Adding Friends", status: "Allow", destination: SelectOptionList(title: "Adding Friends"))
-                CustomNavigationLink(title: "Connect with Friends", status: "Allow", destination: SelectOptionList(title: "Connect with Friends"))
-                CustomNavigationLink(title: "Screen Recording", status: "Allow", destination: SelectOptionList(title: "Screen Recording"))
-                CustomNavigationLink(title: "Nearby Multiplayer", status: "Allow", destination: SelectOptionList(title: "Nearby Multiplayer"))
-                CustomNavigationLink(title: "Private Messaging", status: "Allow", destination: SelectOptionList(title: "Private Messaging"))
-                CustomNavigationLink(title: "Profile Privacy Changes", status: "Allow", destination: SelectOptionList(title: "Profile Privacy Changes"))
-                CustomNavigationLink(title: "Avatar & Nickname Changes", status: "Allow", destination: SelectOptionList(title: "Avatar & Nickname Changes"))
+                CustomNavigationLink(title: "MultiplayerGamesSpecifierName".localize(table: table), status: "AllowWithEveryoneSpecifierName".localize(table: table), destination: SelectOptionList(title: "MultiplayerGamesSpecifierName".localize(table: table), options: ["DontAllowLabel".localize(table: table), "AllowWithFriendsOnlySpecifierName".localize(table: table), "AllowWithEveryoneSpecifierName".localize(table: table)], selected: "AllowWithEveryoneSpecifierName".localize(table: table)))
+                CustomNavigationLink(title: "AddingFriendsSpecifierName".localize(table: table), status: "Allow".localize(table: table), destination: SelectOptionList(title: "AddingFriendsSpecifierName".localize(table: table)))
+                CustomNavigationLink(title: "ConnectWithFriendsSpecifierName".localize(table: table), status: "Allow".localize(table: table), destination: SelectOptionList(title: "ConnectWithFriendsSpecifierName".localize(table: table)))
+                CustomNavigationLink(title: "ScreenRecordingSpecifierName".localize(table: table), status: "Allow".localize(table: table), destination: SelectOptionList(title: "ScreenRecordingSpecifierName".localize(table: table)))
+                CustomNavigationLink(title: "NearbyMultiplayerSpecifierName".localize(table: table), status: "Allow".localize(table: table), destination: SelectOptionList(title: "NearbyMultiplayerSpecifierName".localize(table: table)))
+                CustomNavigationLink(title: "PrivateMessagingSpecifierName".localize(table: table), status: "Allow".localize(table: table), destination: SelectOptionList(title: "PrivateMessagingSpecifierName".localize(table: table)))
+                CustomNavigationLink(title: "ProfilePrivacyChangesSpecifierName".localize(table: table), status: "Allow".localize(table: table), destination: SelectOptionList(title: "ProfilePrivacyChangesSpecifierName".localize(table: table)))
+                CustomNavigationLink(title: "AvatarNicknameChangesSpecifierName".localize(table: table), status: "Allow".localize(table: table), destination: SelectOptionList(title: "AvatarNicknameChangesSpecifierName".localize(table: table)))
             } header: {
-                Text("Game Center")
+                Text("GameCenterLabel", tableName: table)
             }
             
         }

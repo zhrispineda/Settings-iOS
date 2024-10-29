@@ -63,6 +63,7 @@
 		832F57762CCC017A00E0CA19 /* GeneralAccessibility.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 832F57752CCC017A00E0CA19 /* GeneralAccessibility.xcstrings */; };
 		832FD83F2BC22EB000E99DEB /* BluetoothView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832FD83E2BC22EB000E99DEB /* BluetoothView.swift */; };
 		8330B26D2CCC68A90026F1C2 /* SpeechSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8330B26C2CCC68A90026F1C2 /* SpeechSettings.xcstrings */; };
+		8331016D2CD14BDE00C6C3B3 /* RatingProviders.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8331016C2CD14BDD00C6C3B3 /* RatingProviders.xcstrings */; };
 		83326C882CBEE8970034C0D8 /* Software Update.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83326C872CBEE8970034C0D8 /* Software Update.xcstrings */; };
 		8335A70C2BC358E8001E199D /* CellularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8335A70B2BC358E8001E199D /* CellularView.swift */; };
 		833854F72C1648CD00339C4F /* SoftwareUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833854F62C1648CD00339C4F /* SoftwareUpdateView.swift */; };
@@ -376,6 +377,7 @@
 		832F57752CCC017A00E0CA19 /* GeneralAccessibility.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = GeneralAccessibility.xcstrings; sourceTree = "<group>"; };
 		832FD83E2BC22EB000E99DEB /* BluetoothView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothView.swift; sourceTree = "<group>"; };
 		8330B26C2CCC68A90026F1C2 /* SpeechSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = SpeechSettings.xcstrings; sourceTree = "<group>"; };
+		8331016C2CD14BDD00C6C3B3 /* RatingProviders.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = RatingProviders.xcstrings; sourceTree = "<group>"; };
 		83326C872CBEE8970034C0D8 /* Software Update.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "Software Update.xcstrings"; sourceTree = "<group>"; };
 		8335A70B2BC358E8001E199D /* CellularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellularView.swift; sourceTree = "<group>"; };
 		833854F62C1648CD00339C4F /* SoftwareUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftwareUpdateView.swift; sourceTree = "<group>"; };
@@ -1254,6 +1256,7 @@
 				83441A882CAF2B6A0022E193 /* Privacy.xcstrings */,
 				83AD8C5C2CCAC85500A054B5 /* ProfileNames.xcstrings */,
 				834196262CB89D8F0038183D /* PSSystemPolicy.xcstrings */,
+				8331016C2CD14BDD00C6C3B3 /* RatingProviders.xcstrings */,
 				836CDF922CB602B300B1C5B2 /* Restrictions.xcstrings */,
 				837D24282CD0293C00274D42 /* ScreenTimeSettingsUI.xcstrings */,
 				83326C872CBEE8970034C0D8 /* Software Update.xcstrings */,
@@ -1701,6 +1704,7 @@
 				832877DD2CAD95C300013B0B /* AppleAccountUI.xcstrings in Resources */,
 				832877F62CAEE7C000013B0B /* Reset.xcstrings in Resources */,
 				834196272CB89D8F0038183D /* PSSystemPolicy.xcstrings in Resources */,
+				8331016D2CD14BDE00C6C3B3 /* RatingProviders.xcstrings in Resources */,
 				835BF1352CC1A0F000F30DA1 /* CarKitSettings.xcstrings in Resources */,
 				83F745BA2CC18EC700FDB3BA /* NewDeviceOutreachUI.xcstrings in Resources */,
 				8361A22B2C193DBA00A7D5CC /* SettingsSimulator.gif in Resources */,

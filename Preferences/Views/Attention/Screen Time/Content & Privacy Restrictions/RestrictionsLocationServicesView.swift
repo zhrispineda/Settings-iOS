@@ -9,81 +9,85 @@ import SwiftUI
 
 struct RestrictionsLocationServicesView: View {
     // Variables
-    @State private var selected = "Allow Changes"
+    @State private var selected = "AllowChangesSpecifierName"
     @State private var locationServicesEnabled = true
     @State private var showingDisableLocationServicesAlert = false
     @State private var showingDisableLocationServicesDialog = false
-    let options = ["Allow Changes", "Don't Allow Changes"]
+    let options = ["AllowChangesSpecifierName", "DontAllowChangesSpecifierName"]
+    let table = "Restrictions"
+    let locTable = "Location Services"
+    let privTable = "LocationServicesPrivacy"
     
     var body: some View {
-        CustomList(title: "Location Services") {
+        CustomList(title: "LocationServicesSpecifierName".localize(table: table)) {
             Section {
-                Picker("", selection: $selected) {
+                Picker("AllowChangesLabel".localize(table: table), selection: $selected) {
                     ForEach(options, id: \.self) {
-                        Text($0)
+                        Text($0.localize(table: table))
                     }
                 }
                 .pickerStyle(.inline)
                 .labelsHidden()
             } footer: {
-                Text("Disallowing changes locks the settings shown below and prevents new apps from using location services.")
+                Text("LOCATION_EXPLANATION", tableName: table)
             }
             
             Section {
-                Toggle("Location Services", isOn: $locationServicesEnabled.animation())
-                    .alert("Location Services", isPresented: $showingDisableLocationServicesAlert) {
-                        Button("Turn Off Dictation", role: .none) {}
-                        Button("Cancel", role: .cancel) { locationServicesEnabled.toggle() }
+                Toggle("LocationServicesSpecifierName".localize(table: table), isOn: $locationServicesEnabled.animation())
+                    .alert("LocationServicesSpecifierName".localize(table: table), isPresented: $showingDisableLocationServicesAlert) {
+                        Button("CONFIRM_LOCATION_TURN_OFF".localize(table: locTable), role: .none) {}
+                        Button("CANCEL".localize(table: locTable), role: .cancel) { locationServicesEnabled.toggle() }
                     } message: {
-                        Text("Location Services will be disabled for all apps, but your personalized Location Services settings for apps will be temporarily restored if you use Find My iPad to enable Lost Mode.")
+                        Text("CONFIRM_LOCATION_TITLE", tableName: locTable)
                     }
-                    .confirmationDialog("Location Services will be disabled for all apps, but your personalized Location Services settings for apps will be temporarily restored if you use Find My iPhone to enable Lost Mode.", isPresented: $showingDisableLocationServicesDialog,
+                    .confirmationDialog("CONFIRM_LOCATION_TITLE".localize(table: locTable), isPresented: $showingDisableLocationServicesDialog,
                                         titleVisibility: .visible,
                                         actions: {
-                        Button("Turn Off", role: .destructive) {}
-                        Button("Cancel", role: .cancel) { locationServicesEnabled.toggle() }
+                        Button("CONFIRM_LOCATION_TURN_OFF".localize(table: locTable), role: .destructive) {}
+                        Button("CANCEL".localize(table: locTable), role: .cancel) { locationServicesEnabled.toggle() }
                     })
                     .onChange(of: locationServicesEnabled) {
                         if !locationServicesEnabled {
                             UIDevice.iPhone ? showingDisableLocationServicesDialog.toggle() : showingDisableLocationServicesAlert.toggle()
                         }
                     }
-                NavigationLink("Location Alerts", destination: LocationAlertsView())
+                NavigationLink("PRIVACY_ALERTS".localize(table: locTable), destination: LocationAlertsView())
             } footer: {
-                Text("\(UIDevice.iPad ? "Using Location Services requires turning on Wi-Fi.\n\n" : "")Location Services uses \(UIDevice.iPad ? "Bluetooth and crowd-sourced Wi-Fi hotspot locations" : "GPS, Bluetooth, and crowd-sourced Wi-Fi hotspot and cell tower locations") to determine your approximate location. [About Location Services and Privacy...](#)")
+                Text("\(UIDevice.iPad ? "DISABLED_WARNING_WIFI".localize(table: locTable) + "\n\n" : "")\(UIDevice.iPad ? "DESCRIPTION_NOGPS_WIFI".localize(table: locTable) : "DESCRIPTION_GPS_WIFI".localize(table: locTable)) [\("ABOUT_LOCATION_AND_PRIVACY".localize(table: locTable))](#)")
             }
             
             if locationServicesEnabled {
                 Section {
-                    SettingsLink(color: .white, icon: "appclip", id: "App Clips") { AppClipsView()
+                    SettingsLink(color: .white, iconColor: .blue, icon: "appclip", id: "AppClipsSpecifierName".localize(table: table)) {
+                        AppClipsView()
                     }
-                    CustomNavigationLink(title: "AppGenius.bundle", status: "Never", destination: LocationPermissionsDetailView(title: "AppGenius.bundle", selected: "Never"))
-                    CustomNavigationLink(title: "AssistantServices.framework", status: "When Shared", destination: LocationPermissionsDetailView(title: "AssistantServices.framework"))
-                    CustomNavigationLink(title: "BulletinBoard.framework", status: "When Shared", destination: LocationPermissionsDetailView(title: "BulletinBoard.framework"))
-                    CustomNavigationLink(title: "CompassCalibration.bundle", status: "When Shared", destination: LocationPermissionsDetailView(title: "CompassCalibration.bundle"))
-                    CustomNavigationLink(title: "Emergency SOS.bundle", status: "When Shared", destination: LocationPermissionsDetailView(title: "Emergency SOS.bundle"))
-                    CustomNavigationLink(title: "MobileWiFi.framework", status: "When Shared", destination: LocationPermissionsDetailView(title: "MobileWiFi.framework"))
-                    CustomNavigationLink(title: "MotionCalibration.bundle", status: "When Shared", destination: LocationPermissionsDetailView(title: "MotionCalibration.bundle"))
-                    CustomNavigationLink(title: "PassbookMerchantLookup.bundle", status: "When Shared", destination: LocationPermissionsDetailView(title: "PassbookMerchantLookup.bundle"))
-                    SettingsLink(icon: "Placeholder", id: "Share My Location", status: "When Shared") {
-                        LocationPermissionsDetailView(title: "Share My Location")
+                    CustomNavigationLink(title: "AppGenius.bundle", status: "NEVER_AUTHORIZATION".localize(table: privTable), destination: LocationPermissionsDetailView(title: "AppGenius.bundle", selected: "NEVER_AUTHORIZATION".localize(table: privTable)))
+                    CustomNavigationLink(title: "AssistantServices.framework", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), destination: LocationPermissionsDetailView(title: "AssistantServices.framework"))
+                    CustomNavigationLink(title: "BulletinBoard.framework", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), destination: LocationPermissionsDetailView(title: "BulletinBoard.framework"))
+                    CustomNavigationLink(title: "CompassCalibration.bundle", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), destination: LocationPermissionsDetailView(title: "CompassCalibration.bundle"))
+                    CustomNavigationLink(title: "Emergency SOS.bundle", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), destination: LocationPermissionsDetailView(title: "Emergency SOS.bundle"))
+                    CustomNavigationLink(title: "MobileWiFi.framework", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), destination: LocationPermissionsDetailView(title: "MobileWiFi.framework"))
+                    CustomNavigationLink(title: "MotionCalibration.bundle", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), destination: LocationPermissionsDetailView(title: "MotionCalibration.bundle"))
+                    CustomNavigationLink(title: "PassbookMerchantLookup.bundle", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), destination: LocationPermissionsDetailView(title: "PassbookMerchantLookup.bundle"))
+                    SettingsLink(icon: "Placeholder", id: "LOCATION_SHARING".localize(table: locTable), status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable)) {
+                        LocationPermissionsDetailView(title: "LOCATION_SHARING".localize(table: locTable))
                     }
-                    SettingsLink(icon: "applesiri", id: "Siri & Dictation", status: "When Shared") {
-                        LocationPermissionsDetailView(title: "Siri & Dictation")
+                    SettingsLink(icon: "appleSiri", id: "SiriDictationSpecifierName".localize(table: table), status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable)) {
+                        LocationPermissionsDetailView(title: "SiriDictationSpecifierName".localize(table: table))
                     }
-                    CustomNavigationLink(title: "SystemCustomization.bundle", status: "When Shared", location: true, destination: LocationPermissionsDetailView(title: "SystemCustomization.bundle"))
-                    CustomNavigationLink(title: "Traffic.bundle", status: "When Shared", destination: LocationPermissionsDetailView(title: "Traffic.bundle"))
-                    SettingsLink(color: .gray, icon: "gear", id: "System Services", status: "location.fill") {
+                    CustomNavigationLink(title: "SystemCustomization.bundle", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), location: true, destination: LocationPermissionsDetailView(title: "SystemCustomization.bundle"))
+                    CustomNavigationLink(title: "Traffic.bundle", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), destination: LocationPermissionsDetailView(title: "Traffic.bundle"))
+                    SettingsLink(color: .gray, icon: "gear", id: "SYSTEM_SERVICES".localize(table: locTable), status: "location.fill") {
                         SystemServicesView()
                     }
                 } footer: {
                     VStack(alignment: .leading) {
-                        Text("System services that have requested access to your location will appear here.\n")
+                        Text("GENERAL_EXPLANATION_ITEM".localize(table: locTable) + "\n")
                         HStack(spacing: 15) {
                             Image(systemName: "location.fill")
                                 .foregroundStyle(.purple)
                                 .font(.headline)
-                            Text("A purple arrow indicates that an item has recently used your location.")
+                            Text("ACTIVE_EXPLANATION_ITEM", tableName: locTable)
                         }
                         .padding(.trailing)
                         .padding(.bottom, 5)
@@ -92,7 +96,7 @@ struct RestrictionsLocationServicesView: View {
                             Image(systemName: "location.fill")
                                 .foregroundStyle(.gray)
                                 .font(.headline)
-                            Text("A gray arrow indicates that an item has used your location in the last 24 hours.")
+                            Text("RECENT_EXPLANATION_ITEM", tableName: locTable)
                         }
                         .padding(.trailing)
                     }

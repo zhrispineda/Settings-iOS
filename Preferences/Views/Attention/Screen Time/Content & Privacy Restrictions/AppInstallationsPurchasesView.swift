@@ -8,29 +8,32 @@
 import SwiftUI
 
 struct AppInstallationsPurchasesView: View {
+    // Variables
+    let table = "Restrictions"
+    
     var body: some View {
-        CustomList(title: "App Installations & Purchases") {
+        CustomList(title: "AppsInstallationsAndPurchasesSpecifierName".localize(table: table), topPadding: true) {
             Section {
-                CustomNavigationLink(title: "Installing Apps", status: "Allow", destination: SelectOptionList(title: "Installing Apps"))
-                CustomNavigationLink(title: "App Store", status: "Allow", destination: SelectOptionList(title: "App Store"))
-                CustomNavigationLink(title: "App Marketplaces", status: "Allow", destination: SelectOptionList(title: "App Marketplaces"))
+                CustomNavigationLink(title: "InstallingAppsSpecifierName".localize(table: table), status: "Allow".localize(table: table), destination: SelectOptionList(title: "InstallingAppsSpecifierName".localize(table: table)))
+                CustomNavigationLink(title: "InstallingUIAppsSpecifierName".localize(table: table), status: "Allow".localize(table: table), destination: SelectOptionList(title: "InstallingUIAppsSpecifierName".localize(table: table)))
+                CustomNavigationLink(title: "InstallingMarketplaceAppsSpecifierName".localize(table: table), status: "Allow".localize(table: table), destination: SelectOptionList(title: "InstallingMarketplaceAppsSpecifierName".localize(table: table)))
             } header: {
-                Text("App Installations")
+                Text("AppInstallationsLabel", tableName: table)
             } footer: {
-                Text("Allow app downloads from the App Store, or other app marketplaces.")
+                Text("AppInstallationsDetailText", tableName: table)
             }
             
             Section {
-                CustomNavigationLink(title: "In-app Purchases", status: "Allow", destination: SelectOptionList(title: "In-app Purchases"))
-                CustomNavigationLink(title: "Require Password", status: "Don‘t Require", destination: SelectOptionList(title: "Require Password", options: ["Always Require", "Don‘t Require"], selected: "Don‘t Require"))
+                CustomNavigationLink(title: "IAPSpecifierName".localize(table: table), status: "Allow".localize(table: table), destination: SelectOptionList(title: "IAPSpecifierName".localize(table: table)))
+                CustomNavigationLink(title: "RequirePasswordLabel".localize(table: table), status: "DontRequireSpecifierName".localize(table: table), destination: SelectOptionList(title: "RequirePasswordLabel".localize(table: table), options: ["AlwaysRequireSpecifierName".localize(table: table), "DontRequireSpecifierName".localize(table: table)], selected: "DontRequireSpecifierName".localize(table: table)))
             } header: {
-                Text("iTunes, Book, App Store Purchases")
+                Text("PurchasesLabel", tableName: table)
             }
             
             Section {
-                CustomNavigationLink(title: "Deleting Apps", status: "Allow", destination: SelectOptionList(title: "Deleting Apps"))
+                CustomNavigationLink(title: "DeletingAppsSpecifierName".localize(table: table), status: "Allow".localize(table: table), destination: SelectOptionList(title: "DeletingAppsSpecifierName".localize(table: table)))
             } header: {
-                Text("App Management")
+                Text("AppManagementLabel", tableName: table)
             }
         }
     }
