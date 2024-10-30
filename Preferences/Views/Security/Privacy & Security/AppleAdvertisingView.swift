@@ -8,22 +8,25 @@
 import SwiftUI
 
 struct AppleAdvertisingView: View {
+    // Variables
+    let table = "AppleAdvertising"
+    
     var body: some View {
-        CustomList(title: "Apple Advertising") {
+        CustomList(title: "ADVERTISING".localize(table: "Privacy"), topPadding: true) {
             Section {} header: {
-                Text("Apple-Delivered Advertising")
+                Text("APPLE_DELIVERED_ADVERTISING", tableName: table)
             } footer: {
-                Text("The Apple advertising platform does not track you. It is designed to protect your privacy and does not follow you across apps and websites owned by other companies. You have control over how Apple uses your information. [About Apple Advertising & Privacy...](#)")
+                Text(.init("AD_PRIVACY_FOOTER".localize(table: table, "[\("AD_PRIVACY_FOOTER_LINK".localize(table: table))](#)")))
             }
             
             Section {
-                Button("View Ad Targeting Information") {}
+                Button("VIEW_AD_TARGETING_INFORMATION".localize(table: table)) {}
             } footer: {
-                Text("Ad targeting information is used by Apple to personalize your ad experience.")
+                Text("VIEW_AD_TARGETING_INFORMATION_FOOTER", tableName: table)
             }
             
             Section {} footer: {
-                Text("After the App Store, Apple News, or Stocks asks your permission to receive personalized ads, a setting will appear here reflecting your choice.")
+                Text("PERSONALIZED_ADS_NO_CONSENT", tableName: table)
             }
         }
     }

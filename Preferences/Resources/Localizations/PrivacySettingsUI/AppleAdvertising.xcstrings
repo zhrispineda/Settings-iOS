@@ -1,0 +1,3488 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "PERSONALIZED_ADS_FOOTER": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "כיבוי פרסומות בהתאמה אישית יוביל להגבלת יכולתה של Apple להציג לך פרסומות שרלוונטיות לך. עם זאת, הפעולה הזו לא בהכרח תקטין את מספר הפרסומות שיוצגו לך."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "개인 맞춤형 광고를 끄면 Apple이 사용자에게 제공하는 광고의 관련성은 제한되지만, 사용자가 받는 광고 수는 줄어들지 않습니다."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mematikan iklan yang dipersonalisasi akan membatasi kemampuan Apple untuk menyuguhkan iklan yang relevan bagi Anda, tapi tidak akan mengurangi jumlah iklan yang Anda terima."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Räätälöityjen mainosten laittaminen pois päältä rajoittaa Applen mahdollisuuksia toimittaa sinulle merkityksellisiä mainoksia, mutta se ei vähennä saamiesi mainosten määrää."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kişiselleştirilmiş reklamların kapatılması Apple’ın size ilgili reklamları sunabilmesini sınırlar ama aldığınız reklam sayısını azaltmaz."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Als je gepersonaliseerde reclame uitschakelt, wordt Apple beperkt in het weergeven van relevante reclame. De hoeveelheid reclame die je ontvangt, wordt echter niet verminderd."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A személyre szabott hirdetések kikapcsolása azt korlátozza, hogy az Apple releváns hirdetéseket jelenítsen meg Önnek, de a megjelenő hirdetések száma nem fog csökkenni."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Если параметр «Контекстная реклама» выключен, Apple не сможет подбирать рекламу с учетом Ваших предпочтений. При этом количество рекламы не уменьшится."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Disattivando gli annunci pubblicitari personalizzati, limiterai la capacità di Apple di offrirti pubblicità che potrebbero essere di tuo interesse. Tuttavia, il numero di pubblicità che ricevi non diminuirà."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Αν απενεργοποιήσετε τις εξατομικευμένες διαφημίσεις, θα επηρεαστεί η ικανότητα της Apple να σας παρέχει διαφημίσεις που είναι σχετικές για εσάς, αλλά δεν θα μειωθεί ο αριθμός των διαφημίσεων που λαμβάνετε."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Al desactivar los anuncios personalizados se limitará la capacidad de Apple de ofrecer anuncios relevantes para ti. Esto no reducirá la cantidad de anuncios que recibes."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si desactives els anuncis personalitzats, limitaràs la capacitat d’Apple d’oferir‑te anuncis adequats als teus interessos, però no disminuirà el nombre d’anuncis que reps."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "سيؤدي إيقاف الإعلانات المخصصة إلى الحد من قدرة Apple على تقديم الإعلانات الملائمة لك، لكن ذلك لن يقلل من عدد الإعلانات التي تتلقاها."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "關閉個人化廣告將會限制Apple傳送相關廣告給你的能力，但不會減少你收到的廣告數量。"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le fait de désactiver les annonces personnalisées aura pour effet de limiter la capacité d’Apple à choisir des publicités pertinentes, mais cela ne réduira pas le nombre de publicités reçues."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wyłączenie reklam spersonalizowanych ograniczy możliwość dostarczania Ci bardziej dopasowanych reklam przez Apple, lecz nie ograniczy łącznej liczby dostarczanych reklam."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "När du stänger av personligt anpassade annonser begränsas Apples möjlighet att skicka relevanta annonser till dig. Antalet annonser som du får minskar inte."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hvis du slår av personlig tilpassede annonser, begrenses Apples mulighet til å levere relevante annonser, men du vil ikke motta færre annonser."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hvis du slår personlige reklamer fra, begrænser det Apples muligheder for at vise dig relevante reklamer, men antallet af viste reklamer mindskes ikke."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turning off personalized ads will limit Apple’s ability to deliver relevant ads to you but will not reduce the number of ads you receive."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "वैयक्तिकृत विज्ञापन बंद करने से Apple के द्वारा प्रासंगिक विज्ञापन डिलीवर करने की क्षमता सीमित हो जाएगी लेकिन इससे आपको मिलने वाले विज्ञापनों की संख्या कम नहीं होगी।"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "關閉個人化廣告將會限制Apple向你傳送相關廣告的能力，但不會減少你收到廣告的數量。"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "การปิดใช้โฆษณาสำหรับคุณโดยเฉพาะจะจำกัดความสามารถของ Apple ในการส่งโฆษณาที่ตรงกับความสนใจของคุณให้กับคุณ แต่จะไม่ลดจำนวนโฆษณาที่คุณได้รับ"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "关闭个性化广告将限制Apple向你推送相关广告的能力，但不会减少你收到的广告数量。"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Išjungus individualizuotą reklamą, bus apribotos „Apple“ galimybės teikti aktualius skelbimus, bet nesumažės jūsų gaunamų skelbimų skaičius."
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turning off personalised ads will limit Apple’s ability to deliver relevant ads to you but will not reduce the number of ads you receive."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Menyahaktifkan iklan diperibadikan akan mengehadkan keupayaan Apple untuk menghantar iklan yang berkaitan kepada anda tetapi tidak akan mengurangkan bilangan iklan yang anda terima."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vypnutím osobní reklamy snížíte relevanci reklam, které vám bude Apple nabízet. Počet zobrazovaných reklam se však nesníží."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vypnutím prispôsobenej reklamy znížite relevantnosť reklám, ktoré vám bude spoločnosť Apple zobrazovať. Celkový objem zobrazovaných reklám sa však nezníži."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Al desactivar los anuncios personalizados se limitará la capacidad de Apple de ofrecer anuncios relevantes para ti. Esto no reducirá la cantidad de anuncios que recibes."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Изключването на персонализираните реклами ще ограничи възможността на Apple да ви доставя подходящи реклами, но няма да намали броя на рекламите, които получавате."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Turning off personalised ads will limit Apple’s ability to deliver relevant ads to you but will not reduce the number of ads you receive."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Če izklopite prilagojene oglase, bo sposobnost družbe Apple, da vam predvaja ustrezne oglase, omejena, število prikazanih oglasov pa se ne bo zmanjšalo."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Durch Deaktivieren von personalisierter Werbung wird die Fähigkeit von Apple eingeschränkt, dir relevante Werbung anzuzeigen. Die Menge an Werbung, die du erhältst, wird allerdings nicht reduziert."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Việc tắt các quảng cáo được cá nhân hóa sẽ giới hạn khả năng của Apple trong việc phân phối quảng cáo phù hợp đến bạn nhưng sẽ không làm giảm số lượng quảng cáo mà bạn nhận được."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Al desactivar los anuncios personalizados, se limitará la capacidad de Apple de mostrarte anuncios que pueden interesarte más, pero la cantidad de anuncios que recibas será la misma."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dezactivarea reclamelor personalizate va limita capacitatea Apple de a vă furniza reclame relevante pentru dvs., dar nu va reduce numărul reclamelor pe care le primiți."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Жеке жарнамаларды өшіру Apple компаниясының орынды жарнамаларды ұсыну әрекетін шектейді, бірақ көрсетілетін жарнамалар санын азайтпайды."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La désactivation des annonces personnalisées aura pour effet de limiter la capacité d’Apple à vous proposer des publicités pertinentes. Cela ne réduira cependant pas le nombre de publicités que vous recevrez."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Якщо вимкнути персоналізовану рекламу, Apple не зможе добирати актуальну рекламу для вас, але її кількість не зменшиться."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A desativação de anúncios personalizados limitará a capacidade da Apple em apresentar anúncios relevantes para você, mas não reduzirá o número de anúncios que você recebe."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ako isključite personalizirane oglase, tvrtki Apple ograničit će se mogućnost isporuke oglasa koji bi vam mogli biti relevantni. Time se neće smanjiti broj oglasa koje ćete primiti."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "パーソナライズされた広告をオフにすると、Appleによる関心に基づくターゲティング広告の配信が制限されますが、配信される広告の数は減りません。"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desativar os anúncios personalizados limita a capacidade da Apple de mostrar anúncios que possam ser relevantes para si, mas não reduz o número de anúncios apresentados."
+          }
+        }
+      }
+    },
+    "PERSONALIZED_ADS_UNAVAILABLE_FOOTER": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "חשבון ה-Apple שלך מקושר למדינה או לאזור שבו פרסומות שמוצגות על ידי Apple אינן זמינות. ‏%@"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "사용자의 Apple 계정이 Apple이 제공하는 광고를 사용할 수 없는 국가 또는 지역과 연계되어 있습니다. %@"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Akun Apple Anda terkait dengan negara atau wilayah yang tidak mendukung pengiklanan yang disediakan Apple. %@"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple-tili on yhdistetty maahan tai alueelle, jossa Applen toimittama mainonta ei ole saatavilla. %@"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Hesabı’nız, Apple tarafından sunulan reklamların kullanılamadığı bir ülke veya bölge ile ilişkili. %@"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Je Apple Account is gekoppeld aan een land of regio waar geen Apple reclame beschikbaar is. %@"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Az Apple-fiókja egy olyan országgal vagy régióval van társítva, ahol az Apple által megjelenített hirdetések nem érhetők el. %@"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ваш Аккаунт Apple связан со страной или регионом, где реклама от Apple недоступна. %@"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il tuo Apple Account è associato a un paese o a una zona in cui la pubblicità fornita da Apple non è disponibile. %@"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ο λογαριασμός Apple σας είναι συσχετισμένος με μια χώρα ή περιοχή όπου δεν διατίθενται διαφημίσεις από την Apple. %@"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tu cuenta de Apple está asociada con un país o región donde la publicidad mostrada por Apple no está disponible. %@"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El compte d’Apple està associat a un país o una regió on la publicitat que ofereix Apple no està disponible. %@"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حساب Apple مرتبط ببلد أو منطقة لا تتوفر فيها إعلانات Apple. ‏%@"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你的「Apple帳號」已與無法使用Apple傳送廣告的國家或地區產生關聯。%@"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Votre compte Apple est associé à un pays ou à une région où Apple ne diffuse pas de publicités. %@"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Twoje konto Apple jest powiązane z krajem lub regionem, w którym reklamy dostarczane przez Apple nie są dostępne. %@"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ditt Apple‑konto är kopplat till ett land eller en region där annonser som levereras av Apple inte är tillgängliga. %@"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple‑kontoen din er tilknyttet et land eller område hvor Apple-levert reklame ikke er tilgjengelig. %@"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Din Apple-konto er tilknyttet et land eller område, hvor reklamer leveret af Apple ikke er tilgængelige. %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your Apple Account is associated with a country or region where Apple-delivered advertising is not available. %@"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "आपका Apple खाता ऐसे देश या क्षेत्र से जुड़ा हुआ है जहाँ Apple द्वारा विज्ञापनों की डिलीवरी उपलब्ध नहीं है। %@"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple所投放的廣告在連繫至你Apple帳户的國家或地區不可用。%@"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "บัญชี Apple ของคุณผูกอยู่กับประเทศหรือภูมิภาคที่ไม่มีโฆษณาที่ส่งโดย Apple %@"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple投放的广告在你Apple账户关联的国家或地区不可用。%@"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jūsų „Apple“ paskyra susieta su šalimi arba regionu, kuriame „Apple“ reklama nepasiekiama. %@"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your Apple Account is associated with a country or region where Apple-delivered advertising is not available. %@"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Akaun Apple anda dikaitkan dengan negara atau rantau yang tidak menyediakan pengiklanan dihantar Apple. %@"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Váš účet Apple je přidružený k zemi nebo oblasti, kde nejsou reklamy zprostředkované společností Apple k dispozici. %@"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Váš Apple účet je prepojený s krajinou alebo regiónom, kde nie sú k dispozícii reklamy sprostredkované cez Apple. %@"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tu cuenta de Apple está asociada con un país o región donde la publicidad mostrada por Apple no está disponible. %@"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вашата Apple регистрация е свързана с държава или регион, където функцията за Доставени реклами от Apple не е достъпна. %@"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your Apple Account is associated with a country or region where Apple-delivered advertising is not available. %@"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vaš račun Apple je povezan z državo ali regijo, kjer oglaševanje, ki ga zagotavlja Apple, ni na voljo. %@"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dein Apple Account ist mit einem Land oder einer Region verknüpft, in dem oder der von Apple ausgelieferte Werbung nicht verfügbar ist. %@"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tài khoản Apple của bạn được liên kết với một quốc gia hoặc vùng mà quảng cáo do Apple phân phối không khả dụng. %@"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tu cuenta de Apple está asociada con un país o región donde no se ofrece publicidad presentada por Apple. %@"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Contul dvs. Apple este asociat cu o țară sau regiune unde publicitatea livrată de Apple nu este disponibilă. %@"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple аккаунтыңыз Apple жарнамалары көрсетілмейтін елмен немесе аймақмен байланыстырылған. %@"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Votre compte Apple est associé à un pays ou à une région où les publicités fournies par Apple ne sont pas disponibles. %@"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ваш обліковий запис Apple повʼязано з країною чи регіоном, де оголошення від Apple недоступні. %@"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sua Conta Apple está associada a um país ou região onde a publicidade apresentada pela Apple não está disponível. %@"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vaš Apple račun povezan je s državom ili regijom u kojoj oglašavanje koje pruža Apple nije dostupno. %@"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple AccountはAppleが提供する広告を利用できない国または地域と関連付けられています。%@"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A sua conta Apple está associada a um país ou região onde a publicidade apresentada pela Apple não está disponível. %@"
+          }
+        }
+      }
+    },
+    "VIEW_AD_TARGETING_INFORMATION": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "הצגת מידע לגבי מיקוד פרסומות"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "광고 대상 정보 보기"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lihat Informasi Penargetan Iklan"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Katso mainonnan kohdentamistiedot"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reklam Hedefi Bilgilerini Görüntüle"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bekijk info over gerichte reclame"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hirdetéscélzási infók megtekintése"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "См. информацию о целевой аудитории"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Visualizza informazioni sulla pubblicità mirata"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Πληροφορίες για τη στόχευση διαφημίσεων"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Consultar información de anuncios dirigidos"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostra la informació de segmentació de publicitat"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عرض معلومات استهداف الإعلانات"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "檢視定向廣告資訊"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Afficher les informations de ciblage publicitaire"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pokaż informacje o reklamach kierowanych"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Visa annonsmålinformation"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vis informasjon om målrettede annonser"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vis info om målretning af reklamer"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "View Ad Targeting Information"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "विज्ञापन लक्ष्यीकरण जानकारी देखें"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "檢視廣吿目標資料"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ดูข้อมูลการกำหนดเป้าหมายการโฆษณา"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "查看广告定向信息"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Peržiūrėkite skelbimų pritaikymo informaciją"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "View Ad Targeting Information"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lihat Maklumat Penyasaran Iklan"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobrazit informace o cílení reklamy"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobraziť informácie o cielení reklamy"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Consultar información de anuncios dirigidos"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Преглед на информация за насочена реклама"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "View Ad Targeting Information"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prikaži podatke za ciljano oglaševanje"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Informationen für zielgerichtete Werbung anzeigen"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Xem thông tin nhắm mục tiêu QC"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ver información de segmentación de publicidad"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Afișați informațiile despre direcționarea reclamelor"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Жарнаманы таргеттеу туралы ақпаратты көру"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Afficher les informations de ciblage publicitaire"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Переглянути інформацію про цільову рекламу"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ver Informações de Anúncios Atribuídos"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Informacije o ciljanom oglašavanju"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "広告ターゲティングの情報を表示"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ver informação de segmentação de publicidade"
+          }
+        }
+      }
+    },
+    "VIEW_AD_TARGETING_INFORMATION_FOOTER": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "כל המידע הקשור למיקוד פרסומות משמש את Apple כדי להתאים לך אישית את הפרסומות שיוצגו לך."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "광고 대상 정보는 Apple이 사용자의 광고 경험을 개인 맞춤화하는 데 사용됩니다."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Informasi penargetan iklan digunakan Apple untuk mempersonalisasi pengalaman iklan Anda."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple käyttää mainonnan kohdentamistietoja mainoskokemuksesi räätälöimiseen."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reklam hedefi bilgileri Apple tarafından reklam deneyiminizin kişileştirilmesi için kullanılır."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Info over gerichte reclame wordt door Apple gebruikt om je gepersonaliseerde reclame te bieden."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A hirdetéscélzási információkat arra használja az Apple, hogy személyre szabja az Ön hirdetési élményét."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Информация о целевой рекламе используется компанией Apple для персонализации рекламных объявлений."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le informazioni per la pubblicità mirata vengono utilizzate da Apple per personalizzare la tua esperienza in relazione ai contenuti pubblicitari."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Οι πληροφορίες στόχευσης διαφημίσεων χρησιμοποιούνται από την Apple για εξατομίκευση της εμπειρίας σας ως προς τις διαφημίσεις."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple utiliza la información sobre anuncios dirigidos para personalizar tu experiencia publicitaria."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple utilitza la segmentació publicitària per personalitzar els anuncis que reps."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تستخدم Apple معلومات استهداف الإعلانات لتخصيص تجربتك الإعلانية."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "定向廣告資訊會由Apple用來個人化你的廣告體驗。"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les informations de ciblage publicitaire sont utilisées par Apple pour personnaliser les publicités que vous voyez."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Informacje o reklamach kierowanych są wykorzystywane przez Apple do personalizowania reklam kierowanych do Ciebie."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Annonsmålinformation används av Apple till att personanpassa dina annonser."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Informasjon om målrettede annonser brukes av Apple til å tilpasse hvilke annonser som vises."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oplysninger om målrettede reklamer bruges af Apple til at tilpasse din reklameoplevelse."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ad targeting information is used by Apple to personalize your ad experience."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple द्वारा विज्ञापन लक्ष्यीकरण जानकारी का उपयोग आपके विज्ञापन अनुभव को वैयक्तिकृत करने के लिए किया जाता है।"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple使用廣告目標資料來個人化你的廣告體驗。"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple จะใช้ข้อมูลการกำหนดเป้าหมายการโฆษณาเพื่อปรับประสบการณ์การใช้งานโฆษณาให้เข้ากับคุณ"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple使用广告定向信息为你提供个性化的广告体验。"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„Apple“ naudoja skelbimų pritaikymo informaciją, kad suasmenintų teikiamus skelbimus."
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ad targeting information is used by Apple to personalise your ad experience."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maklumat penyasaran iklan digunakan oleh Apple untuk memperibadikan pengalaman iklan anda."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple využívá informace o cílení reklamy k individuálnímu přizpůsobení reklamy vašim zájmům."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple využíva informácie o cielení reklamy na individuálne prispôsobenie reklamy vašim záujmom."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple utiliza la información sobre anuncios dirigidos para personalizar tu experiencia publicitaria."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Информацията за насочена реклама се използва от Apple, за да персонализира показваните реклами."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ad targeting information is used by Apple to personalise your ad experience."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple uporablja podatke za ciljano oglaševanje, da prilagodi vašo izkušnjo oglasov."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Informationen über zielgerichtete Werbung werden von Apple verwendet, um Werbung für dich zu personalisieren."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Thông tin nhắm mục tiêu quảng cáo mà Apple sử dụng để cá nhân hóa trải nghiệm quảng cáo của bạn."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple usa la información de segmentación de publicidad para personalizar tu experiencia con los anuncios."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Informațiile de direcționare a reclamelor sunt utilizate de Apple pentru a personaliza experiența dvs. publicitară."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple компаниясы жарнаманы жекелендіру үшін жарнаманы таргеттеу туралы ақпаратты пайдаланады."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les informations de ciblage publicitaire sont utilisées par Apple pour personnaliser les publicités proposées."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Компанія Apple використовує інформацію про цільову рекламу, щоб персоналізувати її для вас."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "As informações de anúncios atribuídos são usadas para personalizar a sua experiência com anúncios."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple koristi informacije o ciljanom oglašavanju kako bi personalizirao oglase koji vam se prikazuju."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "広告ターゲティングの情報は、Appleが広告をあなた向けにパーソナライズするために使用されます。"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A informação de segmentação de publicidade é utilizada pela Apple para personalizar a sua experiência com anúncios."
+          }
+        }
+      }
+    },
+    "APPLE_DELIVERED_ADVERTISING": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "פרסומות המוצגות על-ידי Apple"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple 제공 광고"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pengiklanan yang Diberikan Oleh Apple"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Applen toimittama mainonta"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Tarafından Sunulan Reklamlar"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Van Apple afkomstige reclame"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Az Apple által megjelenített hirdetések"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Реклама от Apple"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pubblicità fornita da Apple"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Διαφημίσεις που παρέχονται από την Apple"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Publicidad presentada por Apple"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Publicitat oferta per Apple"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الإعلانات المقدمة من Apple"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple傳送的廣告"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Annonces diffusées par Apple"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reklamy dostarczone przez Apple"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple-levererad reklam"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple-leverte annonser"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reklamer leveret af Apple"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple-Delivered Advertising"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple द्वारा प्रदान किए जाने वाले विज्ञापन"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple提供的廣告"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "การโฆษณาที่ส่งโดย Apple"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple推送的广告"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„Apple“ vykdoma reklama"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple-Delivered Advertising"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pengiklanan Dihantar Apple"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reklama zprostředkovaná společností Apple"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reklama sprostredkovaná cez Apple"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Publicidad presentada por Apple"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Доставени реклами от Apple"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple-Delivered Advertising"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oglaševanje, ki ga zagotavlja Apple"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Von Apple ausgelieferte Werbung"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quảng cáo được phân phối bởi Apple"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Publicidad presentada por Apple"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Publicitatea livrată de Apple"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple жарнамасы"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Publicité fournie par Apple"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Отримана від Apple реклама"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Publicidade Apresentada pela Apple"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oglašavanje koje isporučuje Apple"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Appleから配信される広告"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Publicidade apresentada pela Apple"
+          }
+        }
+      }
+    },
+    "PERSONALIZED_ADS_UNAVAILABLE_LINK": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "מידע נוסף בנושא פרסום של Apple ופרטיות…"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple 광고 및 개인정보 보호에 관하여 더 알⁠아⁠보⁠기…"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pelajari Pengiklanan Apple & Privasi lebih lanjut…"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lisätietoja: Applen mainonta ja tietosuoja…"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple’ın Sunduğu Reklamlar ve Gizlilik hakkında daha fazla bilgi…"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meer info over Apple reclame en privacy…"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bővebben az Apple-hirdetésekről és az adatvédelemről…"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Подробнее о Рекламе от Apple и конфиденциальности…"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scopri di più su pubblicità Apple e privacy…"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Πληροφορίες για τις Διαφημίσεις Apple και το απόρρητο…"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Obtén detalles sobre la publicidad de Apple y la privacidad…"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Més informació sobre la publicitat d’Apple i la privacitat…"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "معرفة المزيد عن إعلانات Apple والخصوصية…"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "進一步瞭解「Apple廣告與隱私權」⋯"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En savoir plus sur la publicité Apple et la confidentialité…"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Więcej informacji o reklamach Apple i prywatności…"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Läs mer om Apple-reklam och integritet…"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finn ut mer om Apple-annonser og personvern…"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Læs mere om Apple-reklamer og anonymitet…"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Learn more about Apple Advertising & Privacy…"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple विज्ञापन और गोपनीयता के बारे में अधिक जानें…"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "進一步了解Apple廣告與私隱⋯"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เรียนรู้เพิ่มเติมเกี่ยวกับการโฆษณาของ Apple และความเป็นส่วนตัว…"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "进一步了解Apple广告与隐私…"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sužinokite daugiau apie „Apple“ reklamą ir privatumą…"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Learn more about Apple Advertising & Privacy…"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ketahui lebih lanjut tentang Pengiklanan Apple & Privasi…"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Další informace o reklamě Apple a soukromí…"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Viac informácií o reklame Apple a súkromí…"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Obtén detalles sobre la publicidad de Apple y la privacidad…"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Научете повече за Реклами от Apple и поверителност…"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Learn more about Apple Advertising & Privacy…"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Več o oglaševanju Apple in zasebnosti …"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weitere Infos über Apple-Werbung & Datenschutz …"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tìm hiểu thêm về Quảng cáo của Apple & Quyền riêng tư…"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Más información sobre la publicidad de Apple y la privacidad…"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aflați mai multe despre publicitatea Apple și intimitate…"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple жарнамасы және құпиялылық туралы толығырақ ақпарат алу…"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En savoir plus sur la publicité Apple et la confidentialité…"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Докладніше про рекламу від Apple і приватність…"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saiba mais sobre a Publicidade da Apple e Privacidade…"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saznajte više o Apple oglašavanju i privatnosti…"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Appleの広告とプライバシーについての詳しい情報…"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saiba mais acerca de publicidade da Apple e privacidade…"
+          }
+        }
+      }
+    },
+    "AD_PRIVACY_FOOTER_LINK": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "מידע בנושא פרסום של Apple ופרטיות…"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple 광고 및 개인정보 보호에 관하여…"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mengenai Pengiklanan Apple & Privasi…"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tietoja: Applen mainonta ja tietosuoja…"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple’ın Sunduğu Reklamlar ve Gizlilik Hakkında…"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Over Apple reclame en privacy…"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Az Apple-hirdetésekről és az adatvédelemről…"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "О Рекламе от Apple и конфиденциальности…"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pubblicità di Apple e privacy…"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Πληροφορίες για τις Διαφημίσεις Apple και το απόρρητο…"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de la publicidad de Apple y la privacidad…"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sobre la publicitat d’Apple i la privacitat…"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حول إعلانات Apple والخصوصية…"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "關於Apple廣告與隱私權⋯"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Publicité Apple et confidentialité…"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reklamy Apple i prywatność…"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om Apple-reklam och integritet…"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om Apple-annonser og personvern…"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om Apple-reklamer og anonymitet…"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About Apple Advertising & Privacy…"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple विज्ञापन और गोपनीयता परिचय…"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "關於Apple廣告與私隱⋯"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เกี่ยวกับการโฆษณาของ Apple และความเป็นส่วนตัว…"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "关于Apple广告与隐私…"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apie „Apple“ reklamą ir privatumą…"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About Apple Advertising & Privacy…"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Perihal Pengiklanan Apple & Privasi…"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O reklamě Apple a soukromí…"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O reklame Apple a súkromí…"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de la publicidad de Apple y la privacidad…"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Относно Реклами от Apple и поверителност…"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About Apple Advertising & Privacy…"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Več o oglaševanju Apple in zasebnosti …"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Über Apple-Werbung & Datenschutz …"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quảng cáo của Apple & Quyền riêng tư…"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de la publicidad de Apple y la privacidad…"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Despre publicitatea Apple și intimitate…"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple жарнамасы және құпиялылық туралы ақпарат…"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "À propos de la publicité Apple et de la confidentialité…"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Про рекламу від Apple і приватність…"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sobre a Publicidade da Apple e Privacidade…"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Više o Apple oglašavanju i privatnosti…"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Appleの広告とプライバシーについて…"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de Publicidade da Apple e Privacidade…"
+          }
+        }
+      }
+    },
+    "AD_PRIVACY_FOOTER": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "פלטפורמת הפרסום של Apple אינה עוקבת אחר הפעילות שלך. היא תוכננה באופן שמגן על הפרטיות שלך ואינה עוקבת אחר פעילותך ביישומים ואתרים שבבעלות חברות אחרות. השליטה על האופן שבו Apple משתמשת במידע שלך נמצאת בידיים שלך. %@"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple의 광고 플랫폼은 사용자를 추적하지 않습니다. Apple의 광고 플랫폼은 사용자의 개인정보를 보호하도록 설계되었으며 다른 회사가 소유한 앱 및 웹사이트에서 사용자를 팔로우하지 않습니다. 사용자는 Apple이 사용자의 정보를 사용하는 방식을 통제할 수 있습니다. %@"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Platform pengiklanan Apple tidak melacak Anda. Platform pengiklanan Apple dirancang untuk melindungi privasi Anda dan tidak mengikuti Anda di semua app serta situs web yang dimiliki perusahaan lain. Anda memiliki kontrol atas bagaimana Apple menggunakan informasi Anda. %@"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Applen mainosalusta ei seuraa sinua. Se on suunniteltu suojaamaan yksityisyyttäsi eikä seuraa sinua muiden yritysten apeissa tai sivustoilla. Sinä hallitset, miten Apple käyttää tietojasi. %@"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple’ın reklam platformu sizi takip etmez. Gizliliğinizi koruyacak şekilde tasarlanmıştır ve başka şirketlere ait uygulamalarda ve web sitelerinde sizi takip etmez. Apple’ın bilgilerinizi nasıl kullanacağını siz denetlersiniz. %@"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Het reclameplatform van Apple trackt je niet. Het is ontworpen om je privacy te beschermen en volgt je niet in apps en op websites die het eigendom zijn van andere bedrijven. Je bepaalt zelf hoe Apple je informatie gebruikt. %@"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Az Apple hirdetési platformja nem követi Önt, és úgy lett megtervezve, hogy védje az Ön személyes adatait, valamint ne kövesse Önt a más vállalatok tulajdonában álló appokon és webhelyeken keresztül. Ön megadhatja, hogyan használhatja fel az Apple az Ön információit. %@"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Рекламная платформа Apple не отслеживает Ваши действия. Она разработана для того, чтобы обеспечить конфиденциальность пользователей и предотвратить перекрестное отслеживание их действий в приложениях и на веб‑сайтах, принадлежащих другим компаниям. Вы можете контролировать то, как компания Apple использует Вашу информацию. %@"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La piattaforma di contenuti pubblicitari di Apple non effettua operazioni di tracciamento. È concepita in modo tale da proteggere la tua privacy e non segue le tue attività in app e siti web di proprietà di altre aziende. Sei tu ad avere il controllo sul modo in cui Apple usa le tue informazioni. %@"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Η διαφημιστική πλατφόρμα της Apple δεν ανιχνεύει τη δραστηριότητά σας. Έχει σχεδιαστεί με τρόπο που προστατεύει το απόρρητό σας και δεν παρακολουθεί τη δραστηριότητά σας σε εφαρμογές και ιστότοπους που ανήκουν σε άλλες εταιρείες. Ο έλεγχος του τρόπου χρήσης των δεδομένων σας από την Apple είναι στα χέρια σας. %@"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La plataforma de publicidad de Apple no te rastrea, sino que está diseñada para proteger tu privacidad y no seguirte en apps y sitios web propiedad de otras empresas. Tú tienes control sobre cómo Apple usa tu información. %@"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La plataforma de publicitat d’Apple no et rastreja. S’ha dissenyat per protegir la teva privacitat i no fa cap seguiment entre apps i llocs web propietat d’altres empreses. Tu controles la manera en què Apple utilitza la teva informació. %@"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لا تتتبع منصة إعلانات Apple نشاطك، وهي مصممة بطريقة تحمي خصوصيتك ولا تتابعك عبر التطبيقات ومواقع الويب المملوكة لشركات أخرى. ويمكنك التحكم في كيفية استخدام Apple لمعلوماتك. %@"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple廣告平台不會追蹤你，其專為保護你的隱私權而設計，不會追蹤你在其他公司擁有的App和網站中的活動。你能掌控Apple使用你資訊的方式。%@"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La plateforme publicitaire d’Apple ne suit pas votre activité. Elle est conçue pour protéger votre confidentialité et ne vous suit pas sur les apps et les sites Web qui appartiennent à d’autres entreprises. Vous avez le contrôle de la façon dont vos données sont utilisées par Apple. %@"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Platforma reklamowa Apple nie śledzi Cię. Została zaprojektowana z myślą o ochronie Twojej prywatności i nie śledzi Cię w aplikacjach ani witrynach, których właścicielami są inne firmy. Masz pełną kontrolę nad tym, jak Apple wykorzystuje informacje o Tobie. %@"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apples annonseringsplattform spårar dig inte. Den är utformad för att skydda din integritet och följer dig inte via appar eller webbplatser som ägs av andra företag. Du har kontroll över hur Apple använder din information. %@"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apples annonseplattform sporer deg ikke. Den beskytter personvernet ditt og følger deg ikke på tvers av apper og nettsteder som eies av andre selskaper. Du har kontroll over hvordan Apple bruker informasjonen din. %@"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apples reklameplatform sporer dig ikke. Den er designet til at beskytte din anonymitet og følger dig ikke på tværs af apps og websteder, der ejes af andre virksomheder. Du har kontrol over, hvordan Apple bruger dine oplysninger. %@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Apple advertising platform does not track you. It is designed to protect your privacy and does not follow you across apps and websites owned by other companies. You have control over how Apple uses your information. %@"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple का विज्ञापन प्लैटफ़ॉर्म आपको ट्रैक नहीं करता है। इसे आपकी गोपनीयता की सुरक्षा के लिए डिज़ाइन किया गया है और यह अन्य कंपनियों के ऐप्स और वेबसाइट पर आपको फ़ॉलो नहीं करता है। आप यह नियंत्रित कर सकते हैं कि Apple आपकी जानकारी का उपयोग कैसे करता है। %@"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple廣告平台不會追蹤你。它是專為保護你的私隱而設計，並且不會追蹤你在其他公司擁有的App和網站中的活動。你可以控制Apple使用你資料的方式。%@"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "แพลตฟอร์มโฆษณาของ Apple จะไม่ติดตามคุณ เนื่องจากออกแบบมาเพื่อปกป้องความเป็นส่วนตัวของคุณและจะไม่ติดตามคุณบนแอปและเว็บไซต์ที่เป็นเจ้าของโดยบริษัทอื่น คุณสามารถควบคุมลักษณะที่ Apple ใช้ข้อมูลของคุณได้ %@"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple广告平台不会跟踪你的活动。它旨在保护你的隐私，并且不会在其他公司拥有的App和网站中跟踪你的活动。你可以控制Apple使用你信息的方式。%@"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„Apple“ reklamos platforma jūsų neseka. Ji skirta jūsų privatumui apsaugoti ir neseka jūsų kitoms įmonėms priklausančiose programose bei svetainėse. Jūs kontroliuojate, kaip „Apple“ naudoja jūsų informaciją. %@"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Apple advertising platform does not track you. It is designed to protect your privacy and does not follow you across apps and websites owned by other companies. You have control over how Apple uses your information. %@"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Platform pengiklanan Apple tidak menjejak anda. Ia direka bentuk untuk melindungi privasi anda dan tidak mengikuti anda merentas app serta tapak web yang dimiliki oleh syarikat lain. Anda mempunyai kawalan pada cara Apple menggunakan maklumat anda. %@"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reklamní platforma Apple vás nesleduje. Chrání vaše soukromí a nesleduje vás napříč aplikacemi ani webovými stránkami vlastněnými jinými společnostmi. Nad tím, jak společnost Apple využívá vaše data, máte plnou kontrolu. %@"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reklamná platforma spoločnosti Apple vás nesleduje. Je navrhnutá tak, aby chránila vaše súkromie, a nesleduje vaše aktivity v apkách a na webových stránkach iných spoločností. Ponecháva vám plnú kontrolu nad tým, ako spoločnosť Apple používa vaše údaje. %@"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La plataforma de publicidad de Apple no te rastrea, sino que está diseñada para proteger tu privacidad y no seguirte en apps y sitios web propiedad de otras empresas. Tú tienes control sobre cómo Apple usa tu información. %@"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Платформата за реклами от Apple не ви проследява. Тя е създадена да защитава поверителността ви и да не ви проследява през програми и уеб сайтове на други компании. Вие имате контрол върху това как Apple да използва вашата информация. %@"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Apple advertising platform does not track you. It is designed to protect your privacy and does not follow you across apps and websites owned by other companies. You have control over how Apple uses your information. %@"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oglaševalska platforma družbe Apple vam ne sledi. Zasnovana je tako, da varuje vašo zasebnost in vam ne sledi v aplikacijah in na spletnih mestih v lasti drugih podjetij. Imate nadzor nad tem, kako Apple uporablja vaše podatke. %@"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Apple-Werbeplattform erfasst deine Aktivitäten nicht. Sie ist dafür konzipiert, deine Privatsphäre zu schützen und deine Aktivitäten nicht über Apps und Websites von Drittanbietern hinweg zu erfassen. Du hast die Kontrolle darüber, wie Apple deine Informationen nutzt. %@"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nền tảng quảng cáo của Apple không theo dõi bạn. Nền tảng này được thiết kế để bảo vệ quyền riêng tư và không theo dõi bạn trên các ứng dụng và trang web do các công ty khác sở hữu. Bạn có quyền kiểm soát cách Apple sử dụng thông tin của bạn. %@"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La plataforma de publicidad de Apple no te rastrea. Está diseñada para proteger tu privacidad y no realiza un seguimiento de tu actividad a través de las apps y los sitios web de otras empresas. Tú tienes el control sobre cómo usa Apple tu información. %@"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Platforma publicitară Apple nu vă urmărește activitatea. Aceasta este concepută pentru a vă proteja intimitatea și nu vă urmărește activitatea în aplicații și pe site‑uri web deținute de alte companii. Dețineți controlul asupra modului în care Apple utilizează informațiile dvs. %@"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple жарнама платформасы әрекеттеріңізді қадағаламайды. Ол пайдаланушы құпиялылығын қамтамасыз ету және олардың әрекеттерін басқа компанияларға тиесілі қолданбалар мен веб-сайттардың айқас бақылауына жол бермеу үшін әзірленген. %@"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La plate-forme publicitaire d’Apple ne suit pas votre activité. Elle est conçue pour protéger votre confidentialité et ne vous suit pas dans les apps et sur les sites web appartenant à d’autres entreprises. Vous contrôlez la façon dont Apple utilise vos données. %@"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Рекламна платформа Apple не відстежує вашу активність. Вона передбачає захист вашої приватності й не відстежує вашу активність у програмах і на сайтах інших компаній. Ви можете контролювати, як Apple використовує вашу інформацію. %@"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A plataforma de publicidade da Apple não rastreia você. Ela é projetada para proteger a sua privacidade e não segue você por apps e sites de propriedade de outras empresas. Você tem controle sobre como a Apple usa as suas informações. %@"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oglašivačka platforma tvrtke Apple vas ne prati. Ona je dizajnirana kako bi zaštitila vašu privatnost i ne prati vas u aplikacijama i na web stranicama u vlasništvu drugih kompanija. Možete upravljati načinom na koji Apple koristi vaše informacije. %@"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Appleの広告プラットフォームは、あなたをトラッキングしません。プライバシーを保護し、他社が所有するアプリやWebサイトを横断してあなたを追跡しないように設計されています。あなたは、Appleによる情報の取り扱い方を制御できます。%@"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A plataforma de publicidade da Apple não segue a sua atividade. Foi concebida de modo a proteger a sua privacidade e não segue a sua atividade entre aplicações e sites de outras empresas. Pode controlar a forma como os seus dados são utilizados. %@"
+          }
+        }
+      }
+    },
+    "PERSONALIZED_ADS": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "פרסומות בהתאמה אישית"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "개인 맞춤형 광고"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Iklan yang Dipersonalisasi"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Räätälöidyt mainokset"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kişiselleştirilmiş Reklamlar"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gepersonaliseerde reclame"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Személyre szabott hirdetések"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Контекстная реклама"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Annunci personalizzati"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Εξατομικευμένες διαφημίσεις"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anuncios personalizados"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anuncis personalitzats"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إعلانات مخصصة"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "個人化廣告"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Annonces personnalisées"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reklamy spersonalizowane"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Personliga annonser"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Personlig tilpassede annonser"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Personlige reklamer"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Personalized Ads"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "वैयक्तिकृत विज्ञापन"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "個人化廣告"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "โฆษณาสำหรับคุณโดยเฉพาะ"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "个性化广告"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Individualizuota reklama"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Personalised Ads"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Iklan Diperibadikan"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Osobní reklama"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Osobná reklama"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anuncios personalizados"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Персонализирани реклами"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Personalised Ads"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prilagojeni oglasi"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Personalisierte Werbung"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quảng cáo được cá nhân hóa"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anuncios personalizados"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reclame personalizate"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Жеке жарнамалар"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Annonces personnalisées"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Персоналізована реклама"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anúncios Personalizados"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Personalizirani oglasi"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "パーソナライズされた広告"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anúncios personalizados"
+          }
+        }
+      }
+    },
+    "PERSONALIZED_ADS_NO_CONSENT": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "לאחר ש-News או ״מניות״ של Apple מבקשים ממך הרשאה להציג לך פרסומות בהתאמה אישית, תופיע כאן הגדרה המשקפת את בחירתך."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "לאחר שה-App Store,‏ News או ״מניות״ של Apple מבקשים ממך הרשאה להציג לך פרסומות בהתאמה אישית, תופיע כאן הגדרה המשקפת את בחירתך."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "לאחר שה-App Store,‏ News או ״מניות״ של Apple מבקשים ממך הרשאה להציג לך פרסומות בהתאמה אישית, תופיע כאן הגדרה המשקפת את בחירתך."
+                }
+              }
+            }
+          }
+        },
+        "ko": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Apple News 또는 주식 앱에서 사용자에게 개인 맞춤형 광고를 수신하도록 승인을 요청한 후에, 사용자가 선택한 내용을 반영한 설정이 여기에 표시됩니다."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "App Store, Apple News 또는 주식 앱에서 사용자에게 개인 맞춤형 광고를 수신하도록 승인을 요청한 후에, 사용자가 선택한 내용을 반영한 설정이 여기에 표시됩니다."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "App Store, Apple News 또는 주식 앱에서 사용자에게 개인 맞춤형 광고를 수신하도록 승인을 요청한 후에, 사용자가 선택한 내용을 반영한 설정이 여기에 표시됩니다."
+                }
+              }
+            }
+          }
+        },
+        "id": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Setelah Apple News atau Saham meminta izin Anda untuk menerima iklan yang dipersonalisasi, pengaturan akan muncul di sini yang mencerminkan pilihan Anda."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Setelah App Store, Apple News, atau Saham meminta izin Anda untuk menerima iklan yang dipersonalisasi, pengaturan akan muncul di sini yang mencerminkan pilihan Anda."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Setelah App Store, Apple News, atau Saham meminta izin Anda untuk menerima iklan yang dipersonalisasi, pengaturan akan muncul di sini yang mencerminkan pilihan Anda."
+                }
+              }
+            }
+          }
+        },
+        "fi": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Kun Apple News tai Pörssi on pyytänyt lupaa vastaanottaa räätälöityjä mainoksia, tässä näkyy valintasi mukainen asetus."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Kun App Store, Apple News tai Pörssi on pyytänyt lupaa vastaanottaa räätälöityjä mainoksia, tässä näkyy valintasi mukainen asetus."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Kun App Store, Apple News tai Pörssi on pyytänyt lupaa vastaanottaa räätälöityjä mainoksia, tässä näkyy valintasi mukainen asetus."
+                }
+              }
+            }
+          }
+        },
+        "tr": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Apple News veya Borsa kişiselleştirilmiş reklamlar almak için izninizi istedikten sonra seçiminizi yansıtan bir ayar burada görünür."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "App Store, Apple News veya Borsa kişiselleştirilmiş reklamlar almak için izninizi istedikten sonra seçiminizi yansıtan bir ayar burada görünür."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "App Store, Apple News veya Borsa kişiselleştirilmiş reklamlar almak için izninizi istedikten sonra seçiminizi yansıtan bir ayar burada görünür."
+                }
+              }
+            }
+          }
+        },
+        "nl": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Nadat Apple News of Aandelen je om toestemming heeft gevraagd voor het ontvangen van gepersonaliseerde reclame, verschijnt hier een instelling die je keuze weergeeft."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Nadat de App Store, Apple News of Aandelen je om toestemming heeft gevraagd voor het ontvangen van gepersonaliseerde reclame, verschijnt hier een instelling die je keuze weergeeft."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Nadat de App Store, Apple News of Aandelen je om toestemming heeft gevraagd voor het ontvangen van gepersonaliseerde reclame, verschijnt hier een instelling die je keuze weergeeft."
+                }
+              }
+            }
+          }
+        },
+        "hu": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Miután az Apple News vagy a Részvények az Ön engedélyét kéri a személyre szabott hirdetések fogadásához, egy beállítás jelenik meg itt, amely tükrözi a választását."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Miután az App Store, az Apple News vagy a Részvények az Ön engedélyét kéri a személyre szabott hirdetések fogadásához, egy beállítás jelenik meg itt, amely tükrözi a választását."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Miután az App Store, az Apple News vagy a Részvények az Ön engedélyét kéri a személyre szabott hirdetések fogadásához, egy beállítás jelenik meg itt, amely tükrözi a választását."
+                }
+              }
+            }
+          }
+        },
+        "ru": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "После того как Apple News или приложение «Акции» запросят разрешение на показ контекстной рекламы, здесь появится настройка, отражающая Ваш выбор."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "После того как App Store, Apple News или приложение «Акции» спросит Вашего разрешения на отправку персонализированной рекламы, здесь появится настройка, учитывающая Ваш выбор."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "После того как App Store, Apple News или приложение «Акции» спросит Вашего разрешения на отправку персонализированной рекламы, здесь появится настройка, учитывающая Ваш выбор."
+                }
+              }
+            }
+          }
+        },
+        "it": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Dopo che Apple News o Borsa ti avranno chiesto l’autorizzazione a ricevere pubblicità personalizzate, qui comparirà un’impostazione che riflette la tua scelta."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Dopo che App Store, Apple News o Borsa ti avranno chiesto l’autorizzazione a ricevere pubblicità personalizzate, qui comparirà un’impostazione che riflette la tua scelta."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Dopo che App Store, Apple News o Borsa ti avranno chiesto l’autorizzazione a ricevere pubblicità personalizzate, qui comparirà un’impostazione che riflette la tua scelta."
+                }
+              }
+            }
+          }
+        },
+        "el": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Εδώ θα εμφανίζεται μια ρύθμιση που θα απεικονίζει την επιλογή σας, μετά το αίτημα εκχώρησης άδειας για λήψη εξατομικευμένων διαφημίσεων από το Apple News ή τις Μετοχές."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Εδώ θα εμφανίζεται μια ρύθμιση που θα δηλώνει την επιλογή σας μετά το αίτημα εκχώρησης άδειας λήψης εξατομικευμένων διαφημίσεων από το App Store, το Apple News ή τις Μετοχές."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Εδώ θα εμφανίζεται μια ρύθμιση που θα δηλώνει την επιλογή σας μετά το αίτημα εκχώρησης άδειας λήψης εξατομικευμένων διαφημίσεων από το App Store, το Apple News ή τις Μετοχές."
+                }
+              }
+            }
+          }
+        },
+        "es_419": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Cuando Apple News o Bolsa soliciten tu autorización para recibir publicidad personalizada, podrás consultar aquí la configuración que refleje tu elección."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Cuando App Store, Apple News o Bolsa soliciten tu autorización para recibir publicidad personalizada, podrás ver aquí la configuración que refleje tu elección."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Cuando App Store, Apple News o Bolsa soliciten tu autorización para recibir publicidad personalizada, podrás ver aquí la configuración que refleje tu elección."
+                }
+              }
+            }
+          }
+        },
+        "ca": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Un cop l’Apple News o l’app Borsa t’hagin demanat permís per enviar‑te anuncis personalitzats, aquí s’hi mostrarà una opció que reflectirà el que hagis triat."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Un cop l’App Store, l’Apple News o l’app Borsa t’hagin demanat permís per enviar‑te anuncis personalitzats, aquí s’hi mostrarà una opció que reflectirà el que hagis triat."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Un cop l’App Store, l’Apple News o l’app Borsa t’hagin demanat permís per enviar‑te anuncis personalitzats, aquí s’hi mostrarà una opció que reflectirà el que hagis triat."
+                }
+              }
+            }
+          }
+        },
+        "ar": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "بعد أن يطلب تطبيق Apple News أو الأسهم الإذن منك لتلقي إعلانات مخصصة، سيظهر هنا إعداد يعكس اختيارك."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "بعد أن يطلب تطبيق App Store أو Apple News أو الأسهم الإذن منك لاستلام الإعلانات المخصصة، سيظهر هنا إعداد يعكس اختيارك."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "بعد أن يطلب تطبيق App Store أو Apple News أو الأسهم الإذن منك لاستلام الإعلانات المخصصة، سيظهر هنا إعداد يعكس اختيارك."
+                }
+              }
+            }
+          }
+        },
+        "zh_TW": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "在Apple News或「股市」要求你的同意以接收個人化廣告後，會在此顯示反映你選擇的設定。"
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "在App Store、Apple News或「股市」要求你的同意以接收個人化廣告後，會在此顯示反映你選擇的設定。"
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "在App Store、Apple News或「股市」要求你的同意以接收個人化廣告後，會在此顯示反映你選擇的設定。"
+                }
+              }
+            }
+          }
+        },
+        "fr_CA": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Après qu’Apple News ou Bourse vous demandent l’autorisation de vous présenter des annonces personnalisées, un réglage s’affichera ici pour signifier votre choix."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Après que l’App Store, Apple News ou Bourse vous demandent l’autorisation de vous présenter des annonces personnalisées, un réglage s’affichera ici pour signifier votre choix."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Après que l’App Store, Apple News ou Bourse vous demandent l’autorisation de vous présenter des annonces personnalisées, un réglage s’affichera ici pour signifier votre choix."
+                }
+              }
+            }
+          }
+        },
+        "pl": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Gdy aplikacja Apple News lub Giełda zapyta Cię o zgodę na otrzymywanie spersonalizowanych reklam, w tym miejscu pojawi się ustawienie odzwierciedlające Twój wybór."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Gdy aplikacje App Store, Apple News lub Giełda zapytają Cię o zgodę na otrzymywanie spersonalizowanych reklam, w tym miejscu pojawi się ustawienie odzwierciedlające Twój wybór."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Gdy aplikacje App Store, Apple News lub Giełda zapytają Cię o zgodę na otrzymywanie spersonalizowanych reklam, w tym miejscu pojawi się ustawienie odzwierciedlające Twój wybór."
+                }
+              }
+            }
+          }
+        },
+        "sv": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Efter att Apple News eller Aktier ber om tillstånd att ta emot personanpassade annonser kommer ditt val att visas i en inställning här."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Efter att App Store, Apple News eller Aktier ber om tillstånd att ta emot personanpassade annonser kommer ditt val att visas i en inställning här."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Efter att App Store, Apple News eller Aktier ber om tillstånd att ta emot personanpassade annonser kommer ditt val att visas i en inställning här."
+                }
+              }
+            }
+          }
+        },
+        "no": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Når Apple News eller Aksjer har spurt om du ønsker tilpassede annonser, vil det komme en innstilling her som reflekterer valget ditt."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Når App Store, News eller Aksjer har spurt om du ønsker tilpassede annonser, vil det komme en innstilling her som reflekterer valget ditt."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Når App Store, News eller Aksjer har spurt om du ønsker tilpassede annonser, vil det komme en innstilling her som reflekterer valget ditt."
+                }
+              }
+            }
+          }
+        },
+        "da": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Når Apple News eller Værdipapirer har spurgt dig om tilladelse til at sende dig tilpassede reklamer, vises en indstilling her, der afspejler dit valg."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Når App Store, Apple News eller Værdipapirer har spurgt dig om tilladelse til at sende dig tilpassede reklamer, vises en indstilling her, der afspejler dit valg."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Når App Store, Apple News eller Værdipapirer har spurgt dig om tilladelse til at sende dig tilpassede reklamer, vises en indstilling her, der afspejler dit valg."
+                }
+              }
+            }
+          }
+        },
+        "en": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "After Apple News or Stocks asks your permission to receive personalized ads, a setting will appear here reflecting your choice."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "After the App Store, Apple News, or Stocks asks your permission to receive personalized ads, a setting will appear here reflecting your choice."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "After the App Store, Apple News, or Stocks asks your permission to receive personalized ads, a setting will appear here reflecting your choice."
+                }
+              }
+            }
+          }
+        },
+        "hi": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Apple News या स्टॉक्स के द्वारा वैयक्तिकृत विज्ञापन प्राप्त करने के लिए पूछे जाने के बाद यहाँ आपकी पसंद को दिखाने वाली सेटिंग प्रदर्शित की जाएगी।"
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "App Store, Apple News या स्टॉक्स के द्वारा वैयक्तिकृत विज्ञापन प्राप्त करने के लिए पूछे जाने के बाद यहाँ आपकी पसंद को दिखाने वाली सेटिंग प्रदर्शित की जाएगी।"
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "App Store, Apple News या स्टॉक्स के द्वारा वैयक्तिकृत विज्ञापन प्राप्त करने के लिए पूछे जाने के बाद यहाँ आपकी पसंद को दिखाने वाली सेटिंग प्रदर्शित की जाएगी।"
+                }
+              }
+            }
+          }
+        },
+        "zh_HK": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Apple News或「股市」詢問你是否同意接收個人化廣告後，設定將會於此處顯示以反映你的選擇。"
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "App Store、Apple News或「股市」詢問你是否同意接收個人化廣告後，設定將會於此處顯示以反映你的選擇。"
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "App Store、Apple News或「股市」詢問你是否同意接收個人化廣告後，設定將會於此處顯示以反映你的選擇。"
+                }
+              }
+            }
+          }
+        },
+        "th": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "หลังจากที่ Apple News หรือหุ้นขออนุญาตจากคุณในการรับโฆษณาสำหรับคุณโดยเฉพาะ การตั้งค่าจะแสดงขึ้นที่นี่ตามที่คุณเลือก"
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "หลังจากที่ App Store, Apple News หรือหุ้นขออนุญาตจากคุณในการรับโฆษณาสำหรับคุณโดยเฉพาะ การตั้งค่าจะแสดงขึ้นที่นี่ตามที่คุณเลือก"
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "หลังจากที่ App Store, Apple News หรือหุ้นขออนุญาตจากคุณในการรับโฆษณาสำหรับคุณโดยเฉพาะ การตั้งค่าจะแสดงขึ้นที่นี่ตามที่คุณเลือก"
+                }
+              }
+            }
+          }
+        },
+        "zh_CN": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Apple News或“股市”请求许可接收个性化广告后，此处将显示设置以反映你的选择。"
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "App Store、Apple News或“股市”请求许可接收个性化广告后，此处将显示设置以反映你的选择。"
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "App Store、Apple News或“股市”请求许可接收个性化广告后，此处将显示设置以反映你的选择。"
+                }
+              }
+            }
+          }
+        },
+        "lt": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Kai „Apple News“ ar „Akcijos“ paprašys jūsų leidimo gauti individualizuotą reklamą, čia bus rodomas nustatymas, atspindintis jūsų pasirinkimą."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Kai „App Store“, „Apple News“ ar „Akcijos“ paprašys jūsų leidimo gauti individualizuotą reklamą, čia bus rodomas nustatymas, atspindintis jūsų pasirinkimą."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Kai „App Store“, „Apple News“ ar „Akcijos“ paprašys jūsų leidimo gauti individualizuotą reklamą, čia bus rodomas nustatymas, atspindintis jūsų pasirinkimą."
+                }
+              }
+            }
+          }
+        },
+        "en_GB": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "After Apple News or Stocks asks your permission to receive personalised ads, a setting will appear here reflecting your choice."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "After the App Store, Apple News or Stocks asks your permission to send you personalised ads, a setting will appear here reflecting your choice."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "After the App Store, Apple News or Stocks asks your permission to send you personalised ads, a setting will appear here reflecting your choice."
+                }
+              }
+            }
+          }
+        },
+        "ms": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Selepas Apple News atau Saham meminta keizinan anda untuk menerima iklan diperibadikan, seting akan kelihatan di sini yang menggambarkan pilihan anda."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Selepas App Store, Apple News atau Saham meminta keizinan anda untuk menerima iklan diperibadikan, seting akan kelihatan di sini yang menggambarkan pilihan anda."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Selepas App Store, Apple News atau Saham meminta keizinan anda untuk menerima iklan diperibadikan, seting akan kelihatan di sini yang menggambarkan pilihan anda."
+                }
+              }
+            }
+          }
+        },
+        "cs": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Poté, co vás aplikace Apple News nebo Akcie požádá o svolení k zobrazování osobní reklamy, objeví se zde nastavení s vaší volbou."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Poté, co vás aplikace App Store, Apple News nebo Akcie požádá o svolení k zobrazování osobní reklamy, objeví se zde nastavení s vaší volbou."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Poté, co vás aplikace App Store, Apple News nebo Akcie požádá o svolení k zobrazování osobní reklamy, objeví se zde nastavení s vaší volbou."
+                }
+              }
+            }
+          }
+        },
+        "sk": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Po tom, ako vás apka Apple News alebo Akcie požiada o povolenie zobrazovania osobnej reklamy, sa na tomto mieste zobrazí nastavenie s vašou voľbou."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Po tom, ako vás apka App Store, Apple News alebo Akcie požiada o povolenie zobrazovania osobnej reklamy, sa na tomto mieste zobrazí nastavenie s vašou voľbou."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Po tom, ako vás apka App Store, Apple News alebo Akcie požiada o povolenie zobrazovania osobnej reklamy, sa na tomto mieste zobrazí nastavenie s vašou voľbou."
+                }
+              }
+            }
+          }
+        },
+        "es_US": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Cuando Apple News o Bolsa soliciten tu autorización para recibir publicidad personalizada, podrás consultar aquí la configuración que refleje tu elección."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Cuando App Store, Apple News o Bolsa soliciten tu autorización para recibir publicidad personalizada, podrás ver aquí la configuración que refleje tu elección."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Cuando App Store, Apple News o Bolsa soliciten tu autorización para recibir publicidad personalizada, podrás ver aquí la configuración que refleje tu elección."
+                }
+              }
+            }
+          }
+        },
+        "bg": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "След като Apple News или Акции поискат вашето разрешение за получаване на персонализирани реклами, тук ще се появи настройка, отразяваща вашия избор."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "След като App Store, Apple News или Акции поискат вашето разрешение за получаване на персонализирани реклами, тук ще се появи настройка, отразяваща вашия избор."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "След като App Store, Apple News или Акции поискат вашето разрешение за получаване на персонализирани реклами, тук ще се появи настройка, отразяваща вашия избор."
+                }
+              }
+            }
+          }
+        },
+        "en_AU": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "After Apple News or Stocks asks your permission to receive personalised ads, a setting will appear here reflecting your choice."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "After the App Store, Apple News or Stocks asks your permission to receive personalised ads, a setting will appear here reflecting your choice."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "After the App Store, Apple News or Stocks asks your permission to receive personalised ads, a setting will appear here reflecting your choice."
+                }
+              }
+            }
+          }
+        },
+        "sl": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Po tem, ko vas aplikacija Apple News ali Borza prosi za dovoljenje za prejemanje prilagojenih oglasov, se tukaj prikaže nastavitev, ki odraža vašo izbiro."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Potem ko vas aplikacije App Store, Apple News ali Borza prosijo za dovoljenje za prejemanje prilagojenih oglasov, se tukaj prikaže nastavitev, ki odraža vašo izbiro."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Potem ko vas aplikacije App Store, Apple News ali Borza prosijo za dovoljenje za prejemanje prilagojenih oglasov, se tukaj prikaže nastavitev, ki odraža vašo izbiro."
+                }
+              }
+            }
+          }
+        },
+        "de": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Nachdem Apple News oder „Aktien“ um deine Erlaubnis zum Empfang personalisierter Werbung angefragt haben, wird eine Einstellung angezeigt, die deine Auswahl reflektiert."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Nachdem der App Store, Apple News oder „Aktien“ um deine Erlaubnis zum Empfang personalisierter Werbung angefragt haben, wird hier eine Einstellung angezeigt, die deine Auswahl reflektiert."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Nachdem der App Store, Apple News oder „Aktien“ um deine Erlaubnis zum Empfang personalisierter Werbung angefragt haben, wird hier eine Einstellung angezeigt, die deine Auswahl reflektiert."
+                }
+              }
+            }
+          }
+        },
+        "vi": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Sau khi Apple News hoặc Chứng khoán xin phép bạn để nhận quảng cáo được cá nhân hóa, một cài đặt sẽ xuất hiện tại đây phản ánh lựa chọn của bạn."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Sau khi App Store, Apple News hoặc Chứng khoán xin phép bạn để nhận quảng cáo được cá nhân hóa, một cài đặt sẽ xuất hiện tại đây phản ánh lựa chọn của bạn."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Sau khi App Store, Apple News hoặc Chứng khoán xin phép bạn để nhận quảng cáo được cá nhân hóa, một cài đặt sẽ xuất hiện tại đây phản ánh lựa chọn của bạn."
+                }
+              }
+            }
+          }
+        },
+        "es": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Después de que la app Apple News o Bolsa te hayan pedido permiso para recibir anuncios personalizados, un ajuste te mostrará aquí la opción que has elegido."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Después de que App Store, Apple News o Bolsa te hayan pedido permiso para recibir anuncios personalizados, un ajuste te mostrará aquí la opción que has elegido."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Después de que App Store, Apple News o Bolsa te hayan pedido permiso para recibir anuncios personalizados, un ajuste te mostrará aquí la opción que has elegido."
+                }
+              }
+            }
+          }
+        },
+        "ro": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "După ce aplicația Apple News sau Bursa vă va solicita permisiunea de vă prezenta reclame personalizate, aici va apărea o configurare care va reflecta opțiunea dvs."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "După ce aplicația App Store, Apple News sau Bursa vă va solicita permisiunea de a vă prezenta reclame personalizate, aici va apărea o configurare care va reflecta opțiunea dvs."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "După ce aplicația App Store, Apple News sau Bursa vă va solicita permisiunea de a vă prezenta reclame personalizate, aici va apărea o configurare care va reflecta opțiunea dvs."
+                }
+              }
+            }
+          }
+        },
+        "kk": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Apple News немесе «Акциялар» жеке жарнамаларды алуға рұқсат сұрағаннан кейін, мұнда таңдауыңызды көрсететін реттеу пайда болады."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "App Store, Apple News немесе «Акциялар» жеке жарнамаларды алуға рұқсат сұрағаннан кейін, мұнда таңдауыңызды көрсететін реттеу пайда болады."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "App Store, Apple News немесе «Акциялар» жеке жарнамаларды алуға рұқсат сұрағаннан кейін, мұнда таңдауыңызды көрсететін реттеу пайда болады."
+                }
+              }
+            }
+          }
+        },
+        "fr": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Une fois qu’Apple News ou Bourse vous aura demandé l’autorisation de vous proposer des annonces personnalisées, un réglage reflétant vos préférences apparaîtra."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Une fois que l’App Store, Apple News ou Bourse vous aura demandé l’autorisation de vous proposer des publicités personnalisées, un réglage reflétant vos préférences apparaîtra."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Une fois que l’App Store, Apple News ou Bourse vous aura demandé l’autorisation de vous proposer des publicités personnalisées, un réglage reflétant vos préférences apparaîtra."
+                }
+              }
+            }
+          }
+        },
+        "uk": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Коли Apple News або програма «Біржі» попросить вас надати згоду на отримання персоналізованої реклами, тут зʼявиться обраний вами параметр."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Коли App Store, Apple News або програма «Біржі» попросить вас надати згоду на отримання персоналізованої реклами, тут зʼявиться обраний вами параметр."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Коли App Store, Apple News або програма «Біржі» попросить вас надати згоду на отримання персоналізованої реклами, тут зʼявиться обраний вами параметр."
+                }
+              }
+            }
+          }
+        },
+        "pt_BR": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Depois que os apps Apple News ou Bolsa pedem a sua permissão para o recebimento de anúncios personalizados, um ajuste com a sua escolha é mostrado aqui."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Depois que os apps App Store, Apple News ou Bolsa pedem a sua permissão para o recebimento de anúncios personalizados, um ajuste com a sua escolha é mostrado aqui."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Depois que os apps App Store, Apple News ou Bolsa pedem a sua permissão para o recebimento de anúncios personalizados, um ajuste com a sua escolha é mostrado aqui."
+                }
+              }
+            }
+          }
+        },
+        "hr": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Nakon što vas Apple News ili Dionice zatraže dopuštenje za primanje personaliziranih oglasa, ovdje će se prikazati postavka koja odražava vaš odabir."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Nakon što vas App Store, Apple News ili Dionice zatraže dopuštenje za primanje personaliziranih oglasa, ovdje će se prikazati postavka koja odražava vaš odabir."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Nakon što vas App Store, Apple News ili Dionice zatraže dopuštenje za primanje personaliziranih oglasa, ovdje će se prikazati postavka koja odražava vaš odabir."
+                }
+              }
+            }
+          }
+        },
+        "ja": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Apple Newsまたは“株価”で、パーソナライズされた広告を受け取るかどうかの許可が求められたあと、選択を反映した設定がここに表示されます。"
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "App Store、Apple News、または株価で、パーソナライズされた広告を受け取るかどうかの許可が求められたあと、選択を反映した設定がここに表示されます。"
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "App Store、Apple News、または株価で、パーソナライズされた広告を受け取るかどうかの許可が求められたあと、選択を反映した設定がここに表示されます。"
+                }
+              }
+            }
+          }
+        },
+        "pt_PT": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Depois de a aplicação Apple News ou Bolsa pedir a sua autorização para receber anúncios personalizados, aparecerá aqui uma definição a indicar a sua escolha."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Depois de a aplicação App Store, Apple News ou Bolsa pedir a sua autorização para receber anúncios personalizados, aparecerá aqui uma definição a indicar a sua escolha."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Depois de a aplicação App Store, Apple News ou Bolsa pedir a sua autorização para receber anúncios personalizados, aparecerá aqui uma definição a indicar a sua escolha."
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

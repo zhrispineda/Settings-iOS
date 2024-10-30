@@ -9,11 +9,11 @@ import SwiftUI
 
 struct JournalingSuggestionsView: View {
     // Variables
-    let table = "Privacy"
+    let table = "MomentsOnboardingAndSettings"
     
     var body: some View {
-        CustomList(title: "JOURNALING_SUGGESTIONS".localize(table: table)) {
-            Button("Turn On Journaling Suggestions") {}
+        CustomList(title: "JOURNALING_SUGGESTIONS".localize(table: "Privacy")) {
+            Button("Turn On Journaling Suggestions".localize(table: table)) {}
         }
     }
 }
