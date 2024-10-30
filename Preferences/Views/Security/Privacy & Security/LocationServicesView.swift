@@ -10,13 +10,16 @@ import SwiftUI
 struct LocationServicesView: View {
     // Variables
     @State private var locationServicesEnabled = true
+    let table = "Location Services"
+    let privTable = "LocationServicesPrivacy"
+    
     var body: some View {
-        CustomList(title: "Location Services") {
+        CustomList(title: "LOCATION_SERVICES".localize(table: table)) {
             Section {
-                Toggle("Location Services", isOn: $locationServicesEnabled)
-                NavigationLink("Location Alerts", destination: LocationAlertsView())
+                Toggle("LOCATION_SERVICES".localize(table: table), isOn: $locationServicesEnabled)
+                NavigationLink("PRIVACY_ALERTS", destination: LocationAlertsView())
             } footer: {
-                Text("Location Services uses GPS, Bluetooth, and crowd-sourced Wi-Fi hotspot and cell tower locations to determine your approximate location. [About Location Services & Privacy...](#)")
+                Text(UIDevice.iPhone ? "DESCRIPTION_GPS_WIFI" : "DESCRIPTION_NOGPS_WIFI", tableName: table) + Text(" [\("ABOUT_LOCATION_AND_PRIVACY".localize(table: table))](#)")
             }
             
 //            Section {
@@ -25,29 +28,29 @@ struct LocationServicesView: View {
             
             if locationServicesEnabled {
                 Section {
-                    SettingsLink(color: .white, iconColor: .blue, icon: "appclip", id: "App Clips") { AppClipsView()
+                    SettingsLink(color: .white, iconColor: .blue, icon: "appclip", id: "APP_CLIPS".localize(table: "Dim-Sum")) { AppClipsView()
                     }
-                    CustomNavigationLink(title: "BulletinBoard.framework", status: "When Shared", destination: LocationPermissionsDetailView(title: "BulletinBoard.framework"))
-                    CustomNavigationLink(title: "MobileWiFi.framework", status: "When Shared", destination: LocationPermissionsDetailView(title: "MobileWiFi.framework"))
-                    SettingsLink(icon: "Placeholder", id: "Share My Location", status: "When Shared") {
-                        LocationPermissionsDetailView(title: "Share My Location")
+                    CustomNavigationLink(title: "BulletinBoard.framework", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), destination: LocationPermissionsDetailView(title: "BulletinBoard.framework"))
+                    CustomNavigationLink(title: "MobileWiFi.framework", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), destination: LocationPermissionsDetailView(title: "MobileWiFi.framework"))
+                    SettingsLink(icon: "Placeholder", id: "LOCATION_SHARING".localize(table: table), status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable)) {
+                        LocationPermissionsDetailView(title: "LOCATION_SHARING")
                     }
-                    SettingsLink(icon: "appleSiri", id: "Siri", status: "When Shared") {
+                    SettingsLink(icon: "appleSiri", id: "Siri", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable)) {
                         LocationPermissionsDetailView(title: "Siri")
                     }
-                    CustomNavigationLink(title: "SystemCustomization.bundle", status: "When Shared", location: true, destination: LocationPermissionsDetailView(title: "SystemCustomization.bundle"))
-                    CustomNavigationLink(title: "Traffic.bundle", status: "When Shared", destination: LocationPermissionsDetailView(title: "Traffic.bundle"))
-                    SettingsLink(color: .gray, icon: "gear", id: "System Services", status: "location.fill") {
+                    CustomNavigationLink(title: "SystemCustomization.bundle", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), location: true, destination: LocationPermissionsDetailView(title: "SystemCustomization.bundle"))
+                    CustomNavigationLink(title: "Traffic.bundle", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), destination: LocationPermissionsDetailView(title: "Traffic.bundle"))
+                    SettingsLink(color: .gray, icon: "gear", id: "SYSTEM_SERVICES".localize(table: table), status: "location.fill") {
                         SystemServicesView()
                     }
                 } footer: {
                     VStack(alignment: .leading) {
-                        Text("System services that have requested access to your location will appear here.\n")
+                        Text("GENERAL_EXPLANATION_ITEM", tableName: table) + Text("\n")
                         HStack(spacing: 15) {
                             Image(systemName: "location.fill")
                                 .foregroundStyle(.purple)
                                 .font(.headline)
-                            Text("A purple arrow indicates that an item has recently used your location.")
+                            Text("ACTIVE_EXPLANATION_ITEM", tableName: table)
                         }
                         .padding(.trailing)
                         .padding(.bottom, 5)
@@ -56,7 +59,7 @@ struct LocationServicesView: View {
                             Image(systemName: "location.fill")
                                 .foregroundStyle(.gray)
                                 .font(.headline)
-                            Text("A gray arrow indicates that an item has used your location in the last 24 hours.")
+                            Text("RECENT_EXPLANATION_ITEM", tableName: table)
                         }
                         .padding(.trailing)
                     }

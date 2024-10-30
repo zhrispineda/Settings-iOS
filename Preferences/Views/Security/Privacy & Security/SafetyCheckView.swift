@@ -10,11 +10,12 @@ import SwiftUI
 struct SafetyCheckView: View {
     // Variables
     @State private var showingAlert = false
+    let table = "DigitalSeparationUI"
     
     var body: some View {
-        CustomList(title: "Safety Check") {
+        CustomList(title: "SAFETY_CHECK".localize(table: table)) {
             Section {
-                Placard(title: "Safety Check", color: .white, iconColor: .blue, icon: "person.badge.shield.checkmark.fill", description: "Reset or manage access to your information across apps, devices, and people you‘re currently sharing with. [Learn More...](https://support.apple.com/guide/personal-safety/how-safety-check-works-ips2aad835e1/web)")
+                Placard(title: "SAFETY_CHECK".localize(table: table), color: .white, iconColor: .blue, icon: "person.badge.shield.checkmark.fill", description: "WELCOME_DETAIL".localize(table: table))
             }
             
             Section {
@@ -29,9 +30,9 @@ struct SafetyCheckView: View {
                             .padding(.leading, -5)
                             .padding(.trailing, 5)
                         VStack(alignment: .leading) {
-                            Text("Emergency Reset")
+                            Text("SAFETY_RESET", tableName: table)
                                 .bold()
-                            Text("Immediately reset access for all people and apps, and review your account security.")
+                            Text("SAFETY_RESET_CELL_DETAIL", tableName: table)
                                 .font(.subheadline)
                                 .foregroundStyle(.secondary)
                         }
@@ -59,9 +60,9 @@ struct SafetyCheckView: View {
                             .padding(.leading, -5)
                             .padding(.trailing, 5)
                         VStack(alignment: .leading) {
-                            Text("Manage Sharing & Access")
+                            Text("RESET_CUSTOMIZE", tableName: table)
                                 .bold()
-                            Text("Customize which people and apps can access your information, and review your account security.")
+                            Text("SHARING_WELCOME_CELL_DETAIL", tableName: table)
                                 .font(.subheadline)
                                 .foregroundStyle(.secondary)
                         }
@@ -77,14 +78,14 @@ struct SafetyCheckView: View {
                 }
             }
         }
-        .alert("iCloud Account with Two-Factor Authentication Required", isPresented: $showingAlert) {
-            Button("OK") {}
+        .alert("HSA2_NOT_REPAIRED_TITLE".localize(table: table), isPresented: $showingAlert) {
+            Button("REMOTEUI_ERROR_CONFIRMATION".localize(table: table)) {}
         } message: {
-            Text("To use Safety Check, you must be signed in to your iCloud account and have two-factor authentication turned on. You can manage this in Settings. ")
+            Text("HSA2_NOT_REPAIRED_DETAIL", tableName: table)
         }
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
-                Button("Quick Exit") {
+                Button("QUICK_EXIT".localize(table: table)) {
                     exit(0)
                 }
             }

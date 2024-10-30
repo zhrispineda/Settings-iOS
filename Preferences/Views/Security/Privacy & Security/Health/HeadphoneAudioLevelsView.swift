@@ -8,28 +8,27 @@
 import SwiftUI
 
 struct HeadphoneAudioLevelsView: View {
-    @State private var selected = "Until I Delete"
-    let options = ["For 8 Days", "Until I Delete"]
+    @State private var selected = "UNTIL_I_DELETE"
+    let options = ["FOR_EIGHT_DAYS", "UNTIL_I_DELETE"]
+    let table = "HealthPrivacySettings"
     
     var body: some View {
-        CustomList(title: "Headphone Audio Levels", topPadding: true) {
+        CustomList(title: "HEADPHONE_AUDIO_LEVELS".localize(table: table), topPadding: true) {
             Section {
                 Picker("", selection: $selected) {
                     ForEach(options, id: \.self) { option in
-                        Text(option)
+                        Text(option.localize(table: table))
                     }
                 }
                 .pickerStyle(.inline)
                 .labelsHidden()
             } header: {
-                Text("Save In Health")
+                Text("SAVE_IN_HEALTH", tableName: table)
             } footer: {
-                Text("Your device does not record or save any sound to measure audio levels.")
-            }
-            
-            if selected == "For 8 Days" {
-                Section {} footer: {
-                    Text("This data must be saved for eight days to provide notifications that may protect your hearing. The data will be deleted after eight days.")
+                if selected == "FOR_EIGHT_DAYS" {
+                    Text("SAVE_IN_HEALTH_FOR_8_DAYS_FOOTER_TEXT", tableName: table)
+                } else if selected == "UNTIL_I_DELETE" {
+                    Text("SAVE_IN_HEALTH_FOOTER_TEXT", tableName: table)
                 }
             }
         }
