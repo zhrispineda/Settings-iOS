@@ -36,10 +36,15 @@ struct BiometricPasscodeView: View {
     
     @State private var opacity: Double = 0
     @State private var frameY: Double = 0
+    let table = "Pearl"
+    let lockTable = "Passcode Lock"
+    let payTable = "Payment_Prefs"
+    let oldTable = "TouchID"
+    let dtoTable = "PasscodeLock-DimpleKey"
     
     var body: some View {
         CustomList {
-            Placard(title: "\(UIDevice.PearlIDCapability ? "Face" : "Touch") ID & Passcode", color: UIDevice.PearlIDCapability ? .green : .white, icon: UIDevice.PearlIDCapability ? "faceid" : "touchid", description: "\(UIDevice.PearlIDCapability ? "Manage apps using Face ID and other \(UIDevice.current.model) access settings, set up alternate appearances, and change your passcode." : "Turn on Touch ID and set a passcode to unlock your \(UIDevice.current.model), authorize purchases, and access sensitive data.") [Learn more...](\(UIDevice.PearlIDCapability ? "https://support.apple.com/guide/iphone/set-up-face-id-iph6d162927a/ios" : "https://support.apple.com/guide/iphone/set-up-touch-id-iph672384a0b/ios"))")
+            Placard(title: UIDevice.PearlIDCapability ? "PEARL_ID_AND_PASSCODE".localize(table: table) : "TOUCHID_PASSCODE".localize(table: oldTable), color: UIDevice.PearlIDCapability ? .green : .white, icon: UIDevice.PearlIDCapability ? "faceid" : "touchid", description: "\(UIDevice.PearlIDCapability ? "PASSCODE_PLACARD_SUBTITLE_FACE_ID".localize(table: lockTable) : "Turn on Touch ID and set a passcode to unlock your \(UIDevice.current.model), authorize purchases, and access sensitive data.") [Learn more...](\(UIDevice.PearlIDCapability ? "https://support.apple.com/guide/iphone/set-up-face-id-iph6d162927a/ios" : "https://support.apple.com/guide/iphone/set-up-touch-id-iph672384a0b/ios"))")
                 .overlay { // For calculating opacity of the principal toolbar item
                     GeometryReader { geo in
                         Color.clear
@@ -51,19 +56,19 @@ struct BiometricPasscodeView: View {
                 }
             
             Section {
-                Toggle("\(UIDevice.current.model) Unlock", isOn: $allowFingerprintForUnlock)
-                Toggle("iTunes & App Store", isOn: $allowFingerprintForStore)
-                Toggle("Contactless & Payments", isOn: $allowFingerprintForContactlessPayment)
-                Toggle("Password AutoFill", isOn: $forceAuthenticationBeforeAutoFill)
+                Toggle("TOUCHID_UNLOCK".localize(table: oldTable), isOn: $allowFingerprintForUnlock)
+                Toggle("TOUCHID_PURCHASES".localize(table: oldTable), isOn: $allowFingerprintForStore)
+                Toggle("TOUCHID_STOCKHOLM".localize(table: payTable), isOn: $allowFingerprintForContactlessPayment)
+                Toggle("SAFARI_AUTOFILL".localize(table: oldTable), isOn: $forceAuthenticationBeforeAutoFill)
             } header: {
-                Text("Use \(UIDevice.PearlIDCapability ? "Face" : "Touch") ID for:")
+                Text(UIDevice.PearlIDCapability ? "PEARL_HEADER".localize(table: table) : "USE_TOUCHID_FOR".localize(table: oldTable))
             } footer: {
-                Text(UIDevice.PearlIDCapability ? "\(UIDevice.current.model) can recognize the unique, three-dimensional features of your face to allow secure access to apps and payments. [About Face ID & Privacy...](#)" : "Touch ID lets you use your fingerprint to unlock your device and make purchases with Apple Pay, App Store, and Apple Books. [About Touch ID & Privacy...](#)")
+                Text(.init(UIDevice.PearlIDCapability ? "PEARL_FOOTER".localize(table: table, "[\("PEARL_FOOTER_LINK".localize(table: table))](#)") : "Touch ID lets you use your fingerprint to unlock your device and make purchases with Apple Pay, App Store, and Apple Books. [About Touch ID & Privacy...](#)"))
             }
             
             if UIDevice.PearlIDCapability {
                 Section {
-                    Button("Set Up Face ID") {}
+                    Button("SET_UP_FACE_ID".localize(table: table)) {}
                 } footer: {
 //                    Text("In addition to continuously learning how you look, Face ID can recognize an alternate appearance.")
                 }
@@ -82,87 +87,87 @@ struct BiometricPasscodeView: View {
 //                }
                 
                 Section {
-                    Toggle("Require Attention for Face ID", isOn: $requireAttentionForUnlock)
+                    Toggle("PEARL_UNLOCK_ATTENTION_TITLE".localize(table: table), isOn: $requireAttentionForUnlock)
                 } header: {
-                    Text("Attention")
+                    Text("ATTENTION_HEADER", tableName: table)
                 } footer: {
-                    Text("TrueDepth camera provides an additional level of security by verifying that you‘re looking at \(UIDevice.current.model) before authenticating. Attention detection may not work with some sunglasses.\(UIDevice.iPhone ? " Face ID will always require attention when you‘re wearing a mask." : "")")
+                    Text("PEARL_ATTENTION_FOOTER".localize(table: table) + "\(UIDevice.iPhone ? " Face ID will always require attention when you‘re wearing a mask." : "")")
                 }
                 
                 Section {
-                    Toggle("Attention Aware Features", isOn: $attentionAwareFeatures)
+                    Toggle("PEARL_ATTENTION_TITLE".localize(table: table), isOn: $attentionAwareFeatures)
                 } footer: {
-                    Text("\(UIDevice.current.model) will check for attention before dimming the display, expanding a notification when locked, or lowering the volume of some alerts.")
+                    Text("PEARL_ATTENTION_FEATURES_FOOTER", tableName: table)
                 }
                 
                 if UIDevice.iPhone {
                     Section {
-                        CustomNavigationLink(title: "Stolen Device Protection", status: "Off", destination: EmptyView())
+                        CustomNavigationLink(title: "DTO_STATUS_LABEL_DESCRIPTION".localize(table: dtoTable), status: "DTO_STATUS_LABEL_DESCRIPTION_STATE_OFF".localize(table: dtoTable), destination: EmptyView())
                             .disabled(true)
                     } footer: {
-                        Text("Stolen Device Protection is only available when Face ID is set up.")
+                        Text(UIDevice.PearlIDCapability ? "DTO_GROUP_DISABLED_REASON_FOOTER_DESCRIPTION_FACE_ID" : "DTO_GROUP_DISABLED_REASON_FOOTER_DESCRIPTION_TOUCH_ID", tableName: dtoTable)
                     }
                 }
             } else {
                 Section {
-                    NavigationLink("Finger 1") {}
-                    Button("Add a Fingerprint...") {}
+                    //NavigationLink("IDENTITY_NAME_FORMAT".localize(table: oldTable, "1")) {}
+                    Button("ADD_FINGERPRINT".localize(table: oldTable)) {}
                 }
             }
             
             Section {
-                Button("Turn Passcode On") {}
-                Button("Change Passcode") {}
+                Button("PASSCODE_ON".localize(table: lockTable)) {}
+                Button("CHANGE_PASSCODE".localize(table: lockTable)) {}
                     .disabled(true)
             } footer: {
 //                Text("Changing your passcode on this \(UIDevice.current.model) will not disconnect it from other devices or reset \(UIDevice.iPhone ? "iPhone Mirroring, Wi-Fi sync," : "Wi-Fi sync") and watch pairing.")
             }
             
             Section {
-                CustomNavigationLink(title: "Require Passcode", status: "Immediately", destination: EmptyView())
+                CustomNavigationLink(title: "PASSCODE_REQ".localize(table: lockTable), status: "ALWAYS".localize(table: lockTable), destination: EmptyView())
                     .disabled(true)
             }
             
             Section {
-                Toggle("Voice Dial", isOn: $voiceDial)
+                Toggle("VOICE_DIAL".localize(table: lockTable), isOn: $voiceDial)
                     .disabled(true)
             } footer: {
-                Text("Music Voice Control is always enabled.")
+                Text("VOICE_DIAL_TEXT", tableName: lockTable)
             }
             
             Section {
-                Toggle("Today View and Search", isOn: $allowLockScreenTodayView)
-                Toggle("Notification Center", isOn: $allowLockScreenNotificationsView)
-                Toggle("Control Center", isOn: $allowLockScreenControlCenter)
-                Toggle("Lock Screen Widgets", isOn: $allowLockScreenWidgets)
-                Toggle("Live Activities", isOn: $allowLockScreenLiveActivities)
+                Toggle("TODAY_VIEW".localize(table: lockTable), isOn: $allowLockScreenTodayView)
+                Toggle("NOTIFICATIONS_VIEW".localize(table: lockTable), isOn: $allowLockScreenNotificationsView)
+                Toggle("CONTROL_CENTER".localize(table: lockTable), isOn: $allowLockScreenControlCenter)
+                Toggle("COMPLICATIONS".localize(table: lockTable), isOn: $allowLockScreenWidgets)
+                Toggle("LIVE_ACTIVITIES".localize(table: lockTable), isOn: $allowLockScreenLiveActivities)
                 Toggle("Siri", isOn: $allowAssistantWhileLocked)
                 if UIDevice.iPhone {
-                    Toggle("Reply with Message", isOn: $allowReplyWhileLocked)
+                    Toggle("REPLY_WITH_MESSAGE".localize(table: lockTable), isOn: $allowReplyWhileLocked)
                 }
-                Toggle("Home Control", isOn: $allowHomeControlWhileLocked)
+                Toggle("HOME_CONTROL".localize(table: lockTable), isOn: $allowHomeControlWhileLocked)
                 if UIDevice.iPhone {
-                    Toggle("Wallet", isOn: $allowPassbookWhileLocked)
+                    Toggle("WALLET".localize(table: lockTable), isOn: $allowPassbookWhileLocked)
                 }
-                Toggle("Return Missed Calls", isOn: $allowReturnCallsWhileLocked)
-                Toggle("Accessories", isOn: $allowUSBRestrictedMode.animation())
+                Toggle("RETURN_MISSED_CALLS".localize(table: lockTable), isOn: $allowReturnCallsWhileLocked)
+                Toggle("ACCESSORIES".localize(table: lockTable), isOn: $allowUSBRestrictedMode.animation())
             } header: {
-                Text("Allow Access when Locked:")
+                Text("ALLOW_ACCESS_WHEN_LOCKED", tableName: lockTable)
             } footer: {
-                Text(allowUSBRestrictedMode ? "Turn off to prevent accessories from connecting when your \(UIDevice.current.model) has been locked for more than an hour." : "Unlock \(UIDevice.current.model) to allow accessories to connect when it has been more than an hour since your \(UIDevice.current.model) was locked.")
+                Text(allowUSBRestrictedMode ? "ACCESSORIES_ON" : "ACCESSORIES_OFF", tableName: lockTable)
             }
             .disabled(true)
             
             Section {
-                Toggle("Erase Data", isOn: $allowEraseAfterFailedAttempts)
+                Toggle("WIPE_DEVICE".localize(table: lockTable), isOn: $allowEraseAfterFailedAttempts)
                     .disabled(true)
                     .confirmationDialog(
-                        "All data on this \(UIDevice.current.model) will be erased after 10 failed passcode attempts.",
+                        "WIPE_DEVICE_ALERT_TITLE".localize(table: lockTable),
                         isPresented: $showingEraseConfirmation,
                         titleVisibility: .visible
                     ) {
-                        Button("Enable", role: .destructive) {}
-                        Button("Cancel", role: .cancel) {
+                        Button("WIPE_DEVICE_ALERT_OK".localize(table: lockTable), role: .destructive) {}
+                        Button("CANCEL".localize(table: lockTable), role: .cancel) {
                             allowEraseAfterFailedAttempts = false
                         }
                     }
@@ -170,12 +175,12 @@ struct BiometricPasscodeView: View {
                         showingEraseConfirmation = allowEraseAfterFailedAttempts
                     }
             } footer: {
-                Text("Erase all data on this \(UIDevice.current.model) after 10 failed passcode attempts.")//\n\nData protection is enabled.")
+                Text("WIPE_DEVICE_TEXT", tableName: lockTable)//\n\nData protection is enabled.")
             }
         }
         .toolbar {
             ToolbarItem(placement: .principal) {
-                Text("\(UIDevice.PearlIDCapability ? "Face" : "Touch") ID & Passcode")
+                Text(UIDevice.PearlIDCapability ? "PEARL_ID_AND_PASSCODE".localize(table: table) : "TOUCHID_PASSCODE".localize(table: oldTable))
                     .fontWeight(.semibold)
                     .font(.subheadline)
                     .opacity(frameY < 50.0 ? opacity : 0) // Only fade when passing the help section title at the top

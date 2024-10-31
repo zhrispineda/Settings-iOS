@@ -139,6 +139,11 @@
 		837B0F642B89B5E700B22455 /* SiriDictationHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837B0F632B89B5E700B22455 /* SiriDictationHistoryView.swift */; };
 		837B62FE2BD457F10045B95C /* FocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837B62FD2BD457F10045B95C /* FocusView.swift */; };
 		837B63002BD5FE8E0045B95C /* ControlCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837B62FF2BD5FE8E0045B95C /* ControlCenterView.swift */; };
+		837BCF332CD2E880009B1E33 /* Pearl.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 837BCF322CD2E880009B1E33 /* Pearl.xcstrings */; };
+		837BCF352CD2EAC8009B1E33 /* TouchID.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 837BCF342CD2EAC8009B1E33 /* TouchID.xcstrings */; };
+		837BCF372CD2ECD0009B1E33 /* Passcode Lock.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 837BCF362CD2ECD0009B1E33 /* Passcode Lock.xcstrings */; };
+		837BCF392CD2F4A7009B1E33 /* Payment_Prefs.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 837BCF382CD2F4A7009B1E33 /* Payment_Prefs.xcstrings */; };
+		837BCF3C2CD30AF2009B1E33 /* PasscodeLock-DimpleKey.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 837BCF3B2CD30AF2009B1E33 /* PasscodeLock-DimpleKey.xcstrings */; };
 		837C03072B7F192F004D6C71 /* AppInstallationsPurchasesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C03062B7F192F004D6C71 /* AppInstallationsPurchasesView.swift */; };
 		837C03092B7F1AE0004D6C71 /* SelectOptionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C03082B7F1AE0004D6C71 /* SelectOptionList.swift */; };
 		837C9DF22CC82C3F00A7080F /* HighlightContentSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 837C9DF12CC82C3F00A7080F /* HighlightContentSettings.xcstrings */; };
@@ -463,6 +468,11 @@
 		837B0F632B89B5E700B22455 /* SiriDictationHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriDictationHistoryView.swift; sourceTree = "<group>"; };
 		837B62FD2BD457F10045B95C /* FocusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusView.swift; sourceTree = "<group>"; };
 		837B62FF2BD5FE8E0045B95C /* ControlCenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlCenterView.swift; sourceTree = "<group>"; };
+		837BCF322CD2E880009B1E33 /* Pearl.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Pearl.xcstrings; sourceTree = "<group>"; };
+		837BCF342CD2EAC8009B1E33 /* TouchID.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = TouchID.xcstrings; sourceTree = "<group>"; };
+		837BCF362CD2ECD0009B1E33 /* Passcode Lock.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "Passcode Lock.xcstrings"; sourceTree = "<group>"; };
+		837BCF382CD2F4A7009B1E33 /* Payment_Prefs.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Payment_Prefs.xcstrings; sourceTree = "<group>"; };
+		837BCF3B2CD30AF2009B1E33 /* PasscodeLock-DimpleKey.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "PasscodeLock-DimpleKey.xcstrings"; sourceTree = "<group>"; };
 		837C03062B7F192F004D6C71 /* AppInstallationsPurchasesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInstallationsPurchasesView.swift; sourceTree = "<group>"; };
 		837C03082B7F1AE0004D6C71 /* SelectOptionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectOptionList.swift; sourceTree = "<group>"; };
 		837C9DF12CC82C3F00A7080F /* HighlightContentSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = HighlightContentSettings.xcstrings; sourceTree = "<group>"; };
@@ -1010,6 +1020,15 @@
 			path = Language;
 			sourceTree = "<group>";
 		};
+		837BCF3A2CD30AC7009B1E33 /* PreferencesUI */ = {
+			isa = PBXGroup;
+			children = (
+				837BCF362CD2ECD0009B1E33 /* Passcode Lock.xcstrings */,
+				837BCF3B2CD30AF2009B1E33 /* PasscodeLock-DimpleKey.xcstrings */,
+			);
+			path = PreferencesUI;
+			sourceTree = "<group>";
+		};
 		837C03052B7F1917004D6C71 /* Content & Privacy Restrictions */ = {
 			isa = PBXGroup;
 			children = (
@@ -1247,6 +1266,7 @@
 				832877F72CAEE80F00013B0B /* CameraSettings */,
 				832877F22CAEE78C00013B0B /* GeneralSettingsUI */,
 				832877E72CADA2CD00013B0B /* OnBoardingBundles */,
+				837BCF3A2CD30AC7009B1E33 /* PreferencesUI */,
 				8388E5352CD072DD00A3066D /* PrivacySettingsUI */,
 				83F745BB2CC194F900FDB3BA /* AirDropSettings.xcstrings */,
 				835BF1302CC19A2300F30DA1 /* AirPlayAndHandoffSettings.xcstrings */,
@@ -1278,6 +1298,8 @@
 				831C1A512CCE9F9000866498 /* MultitaskingAndGesturesSettings.xcstrings */,
 				83F745B92CC18EC700FDB3BA /* NewDeviceOutreachUI.xcstrings */,
 				833101702CD16FDD00C6C3B3 /* NotificationsSettings.xcstrings */,
+				837BCF382CD2F4A7009B1E33 /* Payment_Prefs.xcstrings */,
+				837BCF322CD2E880009B1E33 /* Pearl.xcstrings */,
 				835BF1322CC19DDF00F30DA1 /* PictureInPictureSettings.xcstrings */,
 				83441A882CAF2B6A0022E193 /* Privacy.xcstrings */,
 				83AD8C5C2CCAC85500A054B5 /* ProfileNames.xcstrings */,
@@ -1289,6 +1311,7 @@
 				832877F82CAEE91600013B0B /* SOS.xcstrings */,
 				833101722CD173AC00C6C3B3 /* Sounds.xcstrings */,
 				831C1A532CCEA2CC00866498 /* SpotlightSettings.xcstrings */,
+				837BCF342CD2EAC8009B1E33 /* TouchID.xcstrings */,
 				83AD8C5E2CCAD00200A054B5 /* VoiceOverServices.xcstrings */,
 				831C1A572CCF1D0100866498 /* WallpaperSettings.xcstrings */,
 				832877FA2CAEEA7E00013B0B /* WiFiKitUILocalizableStrings.xcstrings */,
@@ -1700,6 +1723,7 @@
 				839657542CCC02EF00D61C8B /* Accessibility-AnimatedImages.xcstrings in Resources */,
 				83E748B42CC6C0F80081D660 /* HandSettings.xcstrings in Resources */,
 				83AD8C592CCAC38E00A054B5 /* KeyboardsSettings.xcstrings in Resources */,
+				837BCF3C2CD30AF2009B1E33 /* PasscodeLock-DimpleKey.xcstrings in Resources */,
 				834565762CAAE7B8002BE49D /* CameraSettings-CinematicAudio.xcstrings in Resources */,
 				836CDF932CB602B300B1C5B2 /* Restrictions.xcstrings in Resources */,
 				834565782CAAEB82002BE49D /* Camera.xcstrings in Resources */,
@@ -1714,6 +1738,7 @@
 				831C1A502CCE9E3300866498 /* HomeScreenSettings.xcstrings in Resources */,
 				837C9DF42CC82FDF00A7080F /* FullKeyboardAccess.xcstrings in Resources */,
 				837C9DF82CC839DD00A7080F /* AXUILocalizedStrings.xcstrings in Resources */,
+				837BCF352CD2EAC8009B1E33 /* TouchID.xcstrings in Resources */,
 				83DB888F2CAC97BF008218E6 /* AppleID.xcstrings in Resources */,
 				8388E5372CD0733400A3066D /* LocationServicesPrivacy.xcstrings in Resources */,
 				833101752CD1779700C6C3B3 /* ControlCenterSettings.xcstrings in Resources */,
@@ -1740,6 +1765,7 @@
 				835BF1352CC1A0F000F30DA1 /* CarKitSettings.xcstrings in Resources */,
 				83F3611C2CD2E25700041A72 /* AppleAdvertising.xcstrings in Resources */,
 				83F745BA2CC18EC700FDB3BA /* NewDeviceOutreachUI.xcstrings in Resources */,
+				837BCF332CD2E880009B1E33 /* Pearl.xcstrings in Resources */,
 				8361A22B2C193DBA00A7D5CC /* SettingsSimulator.gif in Resources */,
 				8345656E2CAADFD6002BE49D /* CameraSettings.xcstrings in Resources */,
 				832877DB2CAD915400013B0B /* AmbientSettings.xcstrings in Resources */,
@@ -1753,6 +1779,7 @@
 				83C3F33B2CC2B25100AE2402 /* Date & Time.xcstrings in Resources */,
 				832877FB2CAEEA7E00013B0B /* WiFiKitUILocalizableStrings.xcstrings in Resources */,
 				834565702CAAE202002BE49D /* CameraSettings-CameraButton.xcstrings in Resources */,
+				837BCF372CD2ECD0009B1E33 /* Passcode Lock.xcstrings in Resources */,
 				837C9DF22CC82C3F00A7080F /* HighlightContentSettings.xcstrings in Resources */,
 				835BF1372CC1AAB800F30DA1 /* AutomaticContentDownload.xcstrings in Resources */,
 				834579D32CC7D98F0027A4CD /* VoiceOverSettings.xcstrings in Resources */,
@@ -1764,6 +1791,7 @@
 				83AA78922CCDA42400060BC2 /* AssistantAudioFeedback.xcstrings in Resources */,
 				832D84F22CD2B0A90075ECF0 /* DigitalSeparationUI.xcstrings in Resources */,
 				83F3611A2CD2D3E300041A72 /* CommunicationSafetySettingsUI.xcstrings in Resources */,
+				837BCF392CD2F4A7009B1E33 /* Payment_Prefs.xcstrings in Resources */,
 				834565722CAAE313002BE49D /* CameraSettings-SmartStyles.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
