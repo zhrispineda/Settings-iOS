@@ -22,116 +22,125 @@ struct WalletView: View {
     @State private var orderNotificationsEnabled = true
     @State private var otherPayLaterOptionsEnabled = true
     
+    let table = "PassKit"
+    let nfcTable = "ContactlessAndCredentialSettings_Localizable"
+    let offerTable = "PaymentOffers_Localizable"
+    let orderTable = "OrderManagement_Localizable"
+    let payTable = "Payment_Localizable"
+    let peerTable = "PeerPayment_Localizable"
+    let virtualTable = "VirtualCard_Localizable"
+    let walletTable = "WalletSettings_Localizable"
+    
     var body: some View {
-        CustomList(title: "Wallet & Apple Pay", topPadding: true) {
+        CustomList(title: "WALLET_&_APPLE_PAY".localize(table: walletTable), topPadding: true) {
             if UIDevice.iPhone {
                 if UIDevice.IsSimulator {
-                    PermissionsView(appName: "Wallet", cellular: false, location: false, cellularEnabled: $cellularEnabled)
+                    PermissionsView(appName: "PASS_DETAILS_WALLET".localize(table: payTable), cellular: false, location: false, cellularEnabled: $cellularEnabled)
                 } else {
-                    PermissionsView(appName: "Wallet & Apple Pay", liveActivityToggle: true, location: false, cellularEnabled: $cellularEnabled)
+                    PermissionsView(appName: "WALLET_&_APPLE_PAY".localize(table: walletTable), liveActivityToggle: true, location: false, cellularEnabled: $cellularEnabled)
                 }
             }
             
             if !UIDevice.IsSimulator {
                 Section {
-                    Toggle("Apple Cash", isOn: $appleCashEnabled.animation())
+                    Toggle("SE_STORAGE_APPLET_CATEGORY_APLET_TYPE_PTC".localize(table: payTable), isOn: $appleCashEnabled.animation())
                 } footer: {
-                    Text("Enable sending and receiving money on this \(UIDevice.current.model).")
+                    if UIDevice.iPhone {
+                        Text("PEER_PAYMENT_REGISTRATION_FOOTER_TEXT_IPHONE", tableName: peerTable)
+                    } else if UIDevice.iPad {
+                        Text("PEER_PAYMENT_REGISTRATION_FOOTER_TEXT_IPAD", tableName: peerTable)
+                    }
                 }
                 
                 Section {
                     if appleCashEnabled {
                         NavigationLink(destination: EmptyView()) {
-                            HStack {
-                                Image(systemName: "creditcard.fill")
-                                    .font(.system(size: 40))
-                                VStack(alignment: .leading, spacing: 5) {
-                                    Text("Apple Cash")
-                                    Text("Balance: $0")
-                                        .font(.caption)
-                                }
+                            VStack(alignment: .leading, spacing: 5) {
+                                Text("SE_STORAGE_APPLET_CATEGORY_APLET_TYPE_PTC", tableName: payTable)
+                                Text("PEER_PAYMENT_SETTINGS_REGISTRATION_NOT_SET_UP", tableName: peerTable)
+                                    .font(.caption)
                             }
                         }
                         .alignmentGuide(.listRowSeparatorLeading) { ViewDimensions in
                             return -20
                         }
                     }
-                    Button("Add Card") {}
+                    Button("PEER_PAYMENT_ADD_CARD_BUTTON_TITLE".localize(table: peerTable)) {}
                 } header: {
-                    Text("Payment Cards")
+                    Text("SETTINGS_PAYMENT_CARDS_GROUP", tableName: payTable)
                 } footer: {
                     if !appleCashEnabled {
-                        Text("Pay with \(UIDevice.PearlIDCapability ? "Face" : "Touch") ID using Apple Pay. Make purchases in apps and on the web without entering your card and shipping details. [See how your data is managed...](#)")
+                        Text(UIDevice.PearlIDCapability ? "SETTINGS_ABOUT_FOOTER_IPHONE" : "SETTINGS_ABOUT_FOOTER_FACEID_IPAD", tableName: payTable) + Text("[\("APPLE_PAY_PRIVACY".localize(table: walletTable))](#)")
                     }
                 }
                 
                 if UIDevice.iPhone {
                     Section {
-                        Toggle("Double-Click \(UIDevice.HomeButtonCapability ? "Home" : "Side") Button", isOn: $doubleClickButtonEnabled)
+                        Toggle(UIDevice.HomeButtonCapability ? "DOUBLE_CLICK_HOME_BUTTON".localize(table: nfcTable) : "DOUBLE_CLICK_SIDE_BUTTON".localize(table: nfcTable), isOn: $doubleClickButtonEnabled)
                     } footer: {
-                        Text("Get cards and passes ready \(UIDevice.HomeButtonCapability ? "from the lock screen by double-clicking the home" : "at any time by double-clicking the side") button.")
+                        Text(UIDevice.HomeButtonCapability ? "DOUBLE_CLICK_HOME_BUTTON_FOOTER" : "DOUBLE_CLICK_SIDE_BUTTON_FOOTER", tableName: nfcTable)
                     }
                 }
             }
             
             Section {
-                Toggle("Hide Expired Passes", isOn: $hideExpiredPassesEnabled)
+                Toggle("ALLOW_EXPIRED_PASSES_TITLE".localize(table: table), isOn: $hideExpiredPassesEnabled)
             }
             
             if !UIDevice.IsSimulator && UIDevice.iPhone {
                 Section {
-                    CustomNavigationLink(title: "Express Transit Card", status: "None", destination: EmptyView())
+                    CustomNavigationLink(title: "SETTINGS_EXPRESS_TRANSIT_CARDS_SECTION_HEADER".localize(table: payTable), status: "NONE".localize(table: payTable), destination: EmptyView())
                 } header: {
-                    Text("Transit Cards")
+                    Text("SETTINGS_EXPRESS_TRANSIT_CARD_CATEGORY_SECTION_HEADER", tableName: payTable)
                 } footer: {
-                    Text("Your selected Express Transit card works automatically, without requiring \(UIDevice.PearlIDCapability ? "Face" : "Touch") ID or your passcode, and may be available when your iPhone needs to be charged.")
+                    Text(UIDevice.PearlIDCapability ? "SETTINGS_EXPRESS_TRANSIT_SECTION_FOOTER_IPHONE_LPEM_FACEID" : "SETTINGS_EXPRESS_TRANSIT_SECTION_FOOTER_IPHONE_LPEM_TOUCHID", tableName: payTable)
                 }
                 
                 if appleCashEnabled {
                     Section {
-                        NavigationLink("Default Card") {}
+                        NavigationLink("SETTINGS_TRANSACTION_DEFAULTS_PAYMENT_CARD".localize(table: payTable)) {}
                             .disabled(true)
-                        NavigationLink("Shipping Address") {}
-                        NavigationLink("Email") {}
-                        NavigationLink("Phone") {}
+                        NavigationLink("SETTINGS_OPTIONS_SHIPPING_ADDRESS_VC_TITLE".localize(table: payTable)) {}
+                        NavigationLink("SETTINGS_TRANSACTION_DEFAULTS_EMAIL".localize(table: payTable)) {}
+                        NavigationLink("SETTINGS_TRANSACTION_DEFAULTS_PHONE".localize(table: payTable)) {}
                     } header: {
-                        Text("Transaction Defaults")
+                        Text("SETTINGS_TRANSACTION_DEFAULTS_GROUP", tableName: payTable)
                     } footer: {
-                        Text("Addresses and payment options can be changed at the time of transaction. [See how your data is managed...](#)")
+                        Text("SETTINGS_TRANSACTION_DEFAULTS_FOOTER", tableName: payTable) + Text(" [\("APPLE_PAY_PRIVACY".localize(table: walletTable))](#)")
                     }
                 }
             }
             
             Section {
-                Toggle("Pay Later", isOn: $payLaterEnabled)
+                Toggle("PAY_LATER_BADGE_TEXT".localize(table: offerTable), isOn: $payLaterEnabled)
                 Toggle("Rewards", isOn: $rewardsEnabled)
             } header: {
-                Text("Show Card Benefits")
+                Text("CARD_BENEFITS_HEADER", tableName: offerTable)
             } footer: {
-                Text("See available rewards and payment options from your cards in Wallet when you check out with Apple Pay.")
+                Text("CARD_BENEFITS_FOOTER", tableName: offerTable)
             }
             
             Section {
-                Toggle("Compatible Cards", isOn: $compatibleCardsEnabled)
+                Toggle("ALLOW_ONLINE_PAYMENTS_TITLE".localize(table: virtualTable), isOn: $compatibleCardsEnabled)
             } header: {
-                Text("Online Payments")
+                Text("ALLOW_ONLINE_PAYMENTS_HEADER", tableName: virtualTable)
             } footer: {
-                Text("Verifies that your saved cards in Safari AutoFill are compatible with Apple Pay and allows you to use them in Wallet.")
+                Text("ALLOW_ONLINE_PAYMENTS_FOOTER", tableName: virtualTable)
             }
             
             if !UIDevice.IsSimulator {
                 if appleCashEnabled {
                     Section {
-                        Toggle("Add Orders to Wallet", isOn: $addOrdersWalletEnabled)
+                        Toggle("ALLOW_ORDER_MANAGEMENT_TITLE".localize(table: orderTable), isOn: $addOrdersWalletEnabled)
                     } header: {
-                        Text("Order Tracking")
+                        Text("ALLOW_ORDER_MANAGEMENT_HEADER", tableName: orderTable)
                     } footer: {
-                        Text("Orders from participating merchants will be automatically added to Wallet\(UIDevice.iPhone ? "." : "on your iPhone.")")
+                        Text(UIDevice.iPhone ? "ALLOW_ORDER_MANAGEMENT_FOOTER_IPHONE" : "ALLOW_ORDER_MANAGEMENT_FOOTER_IPAD", tableName: orderTable)
                     }
                 }
                 
                 Section {
-                    Toggle("Order Notifications", isOn: $orderNotificationsEnabled)
+                    Toggle("ALLOW_ORDER_MANAGEMENT_NOTIFICATIONS_TITLE".localize(table: orderTable), isOn: $orderNotificationsEnabled)
                 }
             }
             

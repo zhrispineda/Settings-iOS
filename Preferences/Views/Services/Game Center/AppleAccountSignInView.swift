@@ -16,15 +16,18 @@ struct AppleAccountSignInView: View {
     @State private var showingErrorAlert = false
     @State private var showingForgotPasswordSheet = false
     @State private var username = String()
+    let table = "AppleAccountUI"
+    let idTable = "AppleID"
     
     var body: some View {
         List {
             Section {
                 VStack(alignment: .center, spacing: 15) {
-                    Text("Apple Account")
+                    Text("APPLE_ID_REBRAND", tableName: table)
+                        .multilineTextAlignment(.center)
                         .font(.largeTitle)
                         .fontWeight(.bold)
-                    Text("Sign in with an email or phone number to use Game Center.")
+                    Text("SIGN_IN_SUBTITLE_GAMECENTER", tableName: table)
                         .multilineTextAlignment(.center)
                 }
                 .frame(maxWidth: .infinity)
@@ -34,7 +37,7 @@ struct AppleAccountSignInView: View {
             
             Section {
                 VStack(alignment: .center) {
-                    TextField("Email or Phone Number", text: $username)
+                    TextField("SIGN_IN_USERNAME_PLACEHOLDER".localize(table: table), text: $username)
                         .padding(.vertical)
                         .padding(.leading, 5)
                         .frame(height: 48)
@@ -45,7 +48,7 @@ struct AppleAccountSignInView: View {
                     Button {
                         showingForgotPasswordSheet.toggle()
                     } label: {
-                        Text("Forgot password?")
+                        Text("APPLEID_EXPLANATION", tableName: table)
                             .multilineTextAlignment(.center)
                             .foregroundStyle(.accent)
                     }
@@ -60,6 +63,9 @@ struct AppleAccountSignInView: View {
             }
             .listRowBackground(Color.clear)
             
+            Spacer()
+                .listRowBackground(Color.clear)
+            
             Section {
                 VStack {
                     Button {} label: {
@@ -69,7 +75,7 @@ struct AppleAccountSignInView: View {
                                 .foregroundStyle(.blue)
                                 .scaledToFit()
                                 .frame(height: 23)
-                            Text("Your Apple Account information is used to enable Apple services when you sign in, including iCloud Backup, which automatically backs up the data on your device in case you need to replace or restore it. Your device serial number may be used to check eligibility for service offers.\n[See how your data is managed..](_)")
+                            Text(.init("CREATE_ICLOUD_MAIL_ACCOUNT_EXPLANATION_FOOTER".localize(table: idTable) + " [\("CREATE_ICLOUD_MAIL_ACCOUNT_FOOTER_LEARN_MORE_BUTTON".localize(table: idTable))](#)"))
                                 .frame(maxWidth: .infinity, alignment: .center)
                                 .multilineTextAlignment(.center)
                                 .font(.caption2)
@@ -91,7 +97,7 @@ struct AppleAccountSignInView: View {
                                 .foregroundStyle(Color(UIColor.systemGray))
                                 .cornerRadius(15)
                         } else {
-                            Text("Continue")
+                            Text("SIGN_IN_BUTTON_CONTINUE", tableName: table)
                                 .fontWeight(.medium)
                                 .font(.headline)
                                 .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -102,12 +108,12 @@ struct AppleAccountSignInView: View {
                     }
                     .frame(height: 50)
                     .disabled(username.count < 1)
-                    .alert("Verification Failed", isPresented: $showingAlert) {
-                        Button("OK") {
+                    .alert("VERIFICATION_FAILED_TITLE".localize(table: table), isPresented: $showingAlert) {
+                        Button("SIGN_IN_ERROR_BUTTON".localize(table: table)) {
                             signingIn.toggle()
                         }
                     } message: {
-                        Text("There was an error connecting to the Apple Account server.")
+                        Text("BAD_NETWORK_ALERT_MESSAGE_REBRAND", tableName: table)
                     }
                 }
             }

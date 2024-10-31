@@ -10,21 +10,24 @@ import SwiftUI
 struct GameCenterView: View {
     // Variables
     @State private var gameCenterEnabled = false
+    let table = "GameCenterUICore"
     
     var body: some View {
-        CustomList(title: "Game Center") {
+        CustomList(title: "GAME_CENTER".localize(table: table)) {
             Section {
-                Toggle("Game Center", isOn: $gameCenterEnabled)
+                Toggle("GAME_CENTER".localize(table: table), isOn: $gameCenterEnabled)
                     .sheet(isPresented: $gameCenterEnabled) {
                         AppleAccountSignInView()
                     }
             } footer: {
-                Text("A social gaming service that lets you interact with friends, track, and compare scores and achievements, challenge other players, and compete in multiplayer games.\n\n[See how your data is managed...](#)")
+                Text(.init("PLAYER_CARD_GAMECENTER_TOGGLE_OFF_FOOTER".localize(table: table, "[\("See how your data is managed...".localize(table: table))](#)")))
             }
         }
     }
 }
 
 #Preview {
-    GameCenterView()
+    NavigationStack {
+        GameCenterView()
+    }
 }

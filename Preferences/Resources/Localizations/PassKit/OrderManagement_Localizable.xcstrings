@@ -1,0 +1,2206 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "ALLOW_ORDER_MANAGEMENT_HEADER": {
+      "extractionState": "manual",
+      "localizations": {
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Praćenje narudžbe"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "מעקב אחר הזמנות"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "주문 추적"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pelacakan Pesanan"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tilauksen seuranta"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sipariş Takibi"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Отслеживание заказа"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rendelés nyomon követése"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bestellingen bijhouden"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tracciamento ordini"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seguimiento de pedidos"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Παρακολούθηση παραγγελίας"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seguiment de les comandes"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suivi de la commande"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تتبع الطلب"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "訂單追蹤"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beställningsspårning"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ऑर्डर ट्रैकिंग"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Śledzenie zamówień"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sporing af ordrer"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Order Tracking"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bestillingssporing"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "訂單追蹤"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "การติดตามคำสั่งซื้อ"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "订单跟踪"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Order Tracking"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Užsakymo sekimas"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Penjejakan Pesanan"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sledování objednávek"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sledovanie objednávok"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seguimiento de pedidos"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Проследяване на поръчка"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Order Tracking"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sledenje naročilu"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bestellungsverfolgung"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Theo dõi đơn hàng"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seguimiento de pedidos"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rastreamento de Pedidos"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Тапсырысты қадағалау"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Відстеження замовлень"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Suivi des commandes"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Urmărire comandă"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "注文の追跡"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seguimento de encomendas"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Order Tracking"
+          }
+        }
+      }
+    },
+    "ALLOW_ORDER_MANAGEMENT_FOOTER_IPAD": {
+      "extractionState": "manual",
+      "localizations": {
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Narudžbe podržanih prodavatelja automatski će se dodati u Novčanik na iPhoneu."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "הזמנות מבתי עסק משתתפים יתווספו באופן אוטומטי ל״ארנק״ ב-iPhone שלך."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "참여 중인 가맹점에서 주문한 항목이 사용자의 iPhone 지갑 앱에 자동으로 추가됩니다."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pesanan dari penjual yang berpartisipasi akan ditambahkan secara otomatis ke Dompet di iPhone Anda."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Osallistuvien myyjien tilaukset lisätään automaattisesti iPhonen Lompakkoon."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Katılımcı satıcıların siparişleri iPhone’unuzdaki Cüzdan’a otomatik olarak eklenir."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Заказы от участвующих продавцов будут автоматически добавлены в Wallet на Вашем iPhone."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A funkció használatát támogató kereskedőknél leadott rendelései automatikusan hozzá lesznek adva az iPhone-ján lévő Tárcához."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bestellingen van deelnemende verkopers worden automatisch toegevoegd aan Wallet op je iPhone."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gli ordini degli esercenti che aderiscono all’iniziativa verranno automaticamente aggiunti a Wallet su iPhone."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los pedidos de los comercios participantes se agregarán automáticamente a Wallet en tu iPhone."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Οι παραγγελίες από συμμετέχοντες εμπόρους θα προστίθενται αυτόματα στο Πορτοφόλι στο iPhone σας."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les comandes que facis als comerços participants s’afegiran automàticament a l’app Cartera de l’iPhone."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les commandes passées chez les commerçants participants seront automatiquement ajoutées à l’app Portefeuille de votre iPhone."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ستضاف الطلبات من التجار المشاركين إلى المحفظة تلقائيًا على iPhone."
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "會自動將參與商户的訂單加至iPhone上的「銀包」。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beställningar från försäljare som deltar läggs till automatiskt i Plånbok på iPhone."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "सहभागी मर्चेंट के ऑर्डर आपके iPhone पर वॉलेट में ऑटोमैटिकली जोड़ दिए जाएँगे।"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zamówienia złożone u sprzedawców biorących udział w programie będą automatycznie dodawane do Portfela na iPhonie."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ordrer fra deltagende butikker føjes automatisk til Wallet på din iPhone."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Orders from participating merchants will be automatically added to Wallet on your iPhone."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bestillinger fra deltakende forhandlere blir automatisk lagt til i Lommebok på iPhone."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "合作商家的訂單將自動加入你iPhone上的「錢包」。"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "คำสั่งซื้อจากผู้ประกอบการที่เข้าร่วมจะถูกเพิ่มไปยังกระเป๋าสตางค์บน iPhone ของคุณโดยอัตโนมัติ"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "来自参与商家的订单将自动添加至iPhone的“钱包”中。"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Orders from participating merchants will be automatically added to Wallet on your iPhone."
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Užsakymai iš dalyvaujančių prekeivių bus automatiškai įtraukti į „iPhone“ programą „Piniginė“."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pesanan daripada pedagang yang mengambil bahagian akan ditambah secara automatik ke Wallet pada iPhone anda."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Objednávky zadané u zúčastněných prodejců se budou automaticky přidávat do Peněženky v iPhonu."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Objednávky z podporovaných obchodov budú automaticky pridávané do Peňaženky na vašom iPhone."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los pedidos de los comercios participantes se agregarán automáticamente a Wallet en tu iPhone."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Поръчки от участващи търговци автоматично ще се добавят в Портфейл на вашия iPhone."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Orders from participating merchants will be automatically added to Wallet on your iPhone."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Naročila sodelujočih trgovcev bodo samodejno dodana v Denarnico v iPhonu."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bestellungen von teilnehmenden Händlern werden automatisch auf deinem iPhone zu Wallet hinzugefügt."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đơn hàng từ điểm bán hàng tham gia sẽ được thêm tự động vào Ví trên iPhone của bạn."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los pedidos de los comercios participantes se añadirán automáticamente a la app Cartera de tu iPhone."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Os pedidos de comerciantes participantes serão adicionados automaticamente ao app Carteira no seu iPhone."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Қатысатын сатушылардың тапсырыстары автоматты түрде iPhone құрылғыңыздағы Wallet қолданбасына қосылады."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Замовлення від підтримуваних продавців автоматично додаватимуться до Гаманця на iPhone."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les commandes auprès de commerçants participants seront automatiquement ajoutées à Cartes sur votre iPhone."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comenzile de la comercianții participanți vor fi adăugate automat în Portofel pe iPhone."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "加盟店での注文が自動的にiPhoneのウォレットに追加されます。"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "As encomendas de comerciantes participantes serão adicionadas automaticamente à aplicação Carteira no iPhone."
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Orders from participating merchants will be automatically added to Wallet on your iPhone."
+          }
+        }
+      }
+    },
+    "ALLOW_ORDER_MANAGEMENT_FOOTER_VISION": {
+      "extractionState": "manual",
+      "localizations": {
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Narudžbe podržanih prodavatelja automatski će se dodati u Novčanik na iPhoneu."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "הזמנות מבתי עסק משתתפים יתווספו באופן אוטומטי ל״ארנק״ ב-iPhone שלך."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "참여 중인 가맹점에서 주문한 항목이 사용자의 iPhone 지갑 앱에 자동으로 추가됩니다."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pesanan dari penjual yang berpartisipasi akan ditambahkan secara otomatis ke Dompet di iPhone Anda."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Osallistuvien myyjien tilaukset lisätään automaattisesti iPhonen Lompakkoon."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Katılımcı satıcıların siparişleri iPhone’unuzdaki Cüzdan’a otomatik olarak eklenir."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Заказы от участвующих продавцов будут автоматически добавлены в Wallet на Вашем iPhone."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A funkció használatát támogató kereskedőknél leadott rendelései automatikusan hozzá lesznek adva az iPhone-ján lévő Tárcához."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bestellingen van deelnemende verkopers worden automatisch toegevoegd aan Wallet op je iPhone."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gli ordini degli esercenti che aderiscono all’iniziativa verranno automaticamente aggiunti a Wallet su iPhone."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los pedidos de los comercios participantes se agregarán automáticamente a Wallet en tu iPhone."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Οι παραγγελίες από συμμετέχοντες εμπόρους θα προστίθενται αυτόματα στο Πορτοφόλι στο iPhone σας."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les comandes que facis als comerços participants s’afegiran automàticament a l’app Cartera de l’iPhone."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les commandes passées chez les commerçants participants seront automatiquement ajoutées à l’app Portefeuille de votre iPhone."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ستضاف الطلبات من التجار المشاركين إلى المحفظة على iPhone تلقائيًا."
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "會自動將參與商户的訂單加至iPhone上的「銀包」。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beställningar från försäljare som deltar läggs till automatiskt i Plånbok på iPhone."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "सहभागी मर्चेंट के ऑर्डर आपके iPhone पर वॉलेट में ऑटोमैटिकली जोड़ दिए जाएँगे।"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zamówienia złożone u sprzedawców biorących udział w programie będą automatycznie dodawane do Portfela na iPhonie."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ordrer fra deltagende butikker føjes automatisk til Wallet på din iPhone."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Orders from participating merchants will be automatically added to Wallet on your iPhone."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bestillinger fra deltakende forhandlere blir automatisk lagt til i Lommebok på iPhone."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "合作商家的訂單將自動加入你iPhone上的「錢包」。"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "คำสั่งซื้อจากผู้ประกอบการที่เข้าร่วมจะถูกเพิ่มไปยังกระเป๋าสตางค์บน iPhone ของคุณโดยอัตโนมัติ"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "来自参与商家的订单将自动添加至iPhone的“钱包”中。"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Orders from participating merchants will be automatically added to Wallet on your iPhone."
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Užsakymai iš dalyvaujančių prekeivių bus automatiškai įtraukti į „iPhone“ programą „Piniginė“."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pesanan daripada pedagang yang mengambil bahagian akan ditambah secara automatik ke Wallet pada iPhone anda."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Objednávky u spolupracujících prodejců se budou automaticky přidávat do Peněženky v iPhonu."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Objednávky z podporovaných obchodov budú automaticky pridávané do Peňaženky na vašom iPhone."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los pedidos de los comercios participantes se agregarán automáticamente a Wallet en tu iPhone."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Поръчки от участващи търговци автоматично ще се добавят в Портфейл на вашия iPhone."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Orders from participating merchants will be automatically added to Wallet on your iPhone."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Naročila sodelujočih trgovcev bodo samodejno dodana v Denarnico v iPhonu."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bestellungen von teilnehmenden Händlern werden automatisch auf deinem iPhone zu Wallet hinzugefügt."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đơn hàng từ điểm bán hàng tham gia sẽ được thêm tự động vào Ví trên iPhone của bạn."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los pedidos de los comercios participantes se añadirán automáticamente a la app Cartera de tu iPhone."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Os pedidos de comerciantes participantes serão adicionados automaticamente ao app Carteira no iPhone."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Қатысатын сатушылардың тапсырыстары автоматты түрде iPhone құрылғыңыздағы Wallet қолданбасына қосылады."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Замовлення від підтримуваних продавців автоматично додаватимуться до Гаманця на iPhone."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les commandes auprès de commerçants participants seront automatiquement ajoutées à Cartes sur votre iPhone."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comenzile de la comercianții participanți vor fi adăugate automat în Portofel pe iPhone."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "加盟店での注文が自動的にiPhoneのウォレットに追加されます。"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "As encomendas de comerciantes participantes serão adicionadas automaticamente à aplicação Carteira no iPhone."
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Orders from participating merchants will be automatically added to Wallet on your iPhone."
+          }
+        }
+      }
+    },
+    "ALLOW_ORDER_MANAGEMENT_NOTIFICATIONS_TITLE": {
+      "extractionState": "manual",
+      "localizations": {
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Obavijesti o narudžbi"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "עדכונים בנוגע להזמנות"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "주문 알림"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pemberitahuan Pesanan"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tilausta koskevat ilmoitukset"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sipariş Bildirimleri"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Уведомления о заказе"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rendelésértesítések"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bestelmeldingen"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notifiche sugli ordini"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notificaciones de pedidos"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Γνωστοποιήσεις παραγγελίας"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notificacions de comandes"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notifications de commande"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إشعارات الطلب"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "訂單通知"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beställningsnotiser"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ऑर्डर संबंधी सूचनाएँ"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Powiadomienia o zamówieniach"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notifikationer om ordrer"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Order Notifications"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bestillings­varslinger"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "訂單通知"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "การแจ้งเตือนคำสั่งซื้อ"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "订单通知"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Order Notifications"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Užsakymo pranešimai"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pemberitahuan Pesanan"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oznámení o objednávkách"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hlásenia o objednávkach"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notificaciones de pedidos"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Известия за поръчка"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Order Notifications"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Obvestila o naročilu"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mitteilungen zur Bestellung"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Các thông báo đơn hàng"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notificaciones de pedidos"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notificações de Pedido"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Тапсырыс хабарландыруы"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сповіщення про замовлення"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notifications de commande"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notificări comandă"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "注文の通知"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notificações de encomendas"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Order Notifications"
+          }
+        }
+      }
+    },
+    "ALLOW_ORDER_MANAGEMENT_FOOTER_IPHONE": {
+      "extractionState": "manual",
+      "localizations": {
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Narudžbe podržanih prodavatelja automatski će se dodati u Novčanik."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "הזמנות מבתי עסק משתתפים יתווספו באופן אוטומטי ל״ארנק״."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "참여 중인 가맹점에서 주문한 항목이 지갑 앱에 자동으로 추가됩니다."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pesanan dari penjual yang berpartisipasi akan ditambahkan secara otomatis ke Dompet."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Osallistuvien myyjien tilaukset lisätään automaattisesti Lompakkoon."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Katılımcı satıcıların siparişleri Cüzdan’a otomatik olarak eklenir."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Заказы от участвующих продавцов будут автоматически добавлены в Wallet."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A funkció használatát támogató kereskedőknél leadott rendelései automatikusan hozzá lesznek adva a Tárcához."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bestellingen van deelnemende verkopers worden automatisch toegevoegd aan Wallet."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gli ordini degli esercenti che aderiscono all’iniziativa verranno automaticamente aggiunti a Wallet."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los pedidos de los comercios participantes se agregarán automáticamente a Wallet."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Οι παραγγελίες από τους συμμετέχοντες εμπόρους θα προστίθενται αυτόματα στο Πορτοφόλι."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les comandes que facis als comerços participants s’afegiran automàticament a l’app Cartera."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les commandes passées chez les commerçants participants seront automatiquement ajoutées à l’app Portefeuille."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ستضاف الطلبات من التجار المشاركين إلى المحفظة تلقائيًا."
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "會自動將參與商户的訂單加至「銀包」。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beställningar från försäljare som deltar läggs till automatiskt i Plånbok."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "सहभागी मर्चेंट के ऑर्डर वॉलेट में ऑटोमैटिकली जोड़ दिए जाएँगे।"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zamówienia złożone u sprzedawców biorących udział w programie będą automatycznie dodawane do Portfela."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ordrer fra deltagende butikker føjes automatisk til Wallet."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Orders from participating merchants will be automatically added to Wallet."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bestillinger fra deltakende forhandlere blir automatisk lagt til i Lommebok."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "合作商家的訂單將自動加入「錢包」。"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "คำสั่งซื้อจากผู้ประกอบการที่เข้าร่วมจะถูกเพิ่มไปยังกระเป๋าสตางค์โดยอัตโนมัติ"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "来自参与商家的订单将自动添加至“钱包”中。"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Orders from participating merchants will be automatically added to Wallet."
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Užsakymai iš dalyvaujančių prekeivių bus automatiškai įtraukti į programą „Piniginė“."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pesanan daripada pedagang yang mengambil bahagian akan ditambah secara automatik ke Wallet."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Objednávky zadané u zúčastněných prodejců se budou automaticky přidávat do Peněženky."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Objednávky z podporovaných obchodov budú automaticky pridávané do Peňaženky."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los pedidos de los comercios participantes se agregarán automáticamente a Wallet."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Поръчки от участващи търговци автоматично ще се добавят в Портфейл."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Orders from participating merchants will be automatically added to Wallet."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Naročila sodelujočih trgovcev bodo samodejno dodana v Denarnico."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bestellungen von teilnehmenden Händlern werden automatisch zu Wallet hinzugefügt."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đơn hàng từ điểm bán hàng tham gia sẽ được thêm tự động vào Ví."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los pedidos de los comercios participantes se añadirán automáticamente a la app Cartera."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Os pedidos de comerciantes participantes serão adicionados automaticamente ao app Carteira."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Қатысатын сатушылардың тапсырыстары автоматты түрде Wallet қолданбасына қосылады."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Замовлення від підтримуваних продавців автоматично додаватимуться до Гаманця."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les commandes auprès de commerçants participants seront automatiquement ajoutées à Cartes."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comenzile de la comercianții participanți vor fi adăugate automat în Portofel."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "加盟店での注文が自動的にウォレットに追加されます。"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "As encomendas de comerciantes participantes serão adicionadas automaticamente à aplicação Carteira."
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Orders from participating merchants will be automatically added to Wallet."
+          }
+        }
+      }
+    },
+    "ALLOW_ORDER_MANAGEMENT_TITLE": {
+      "extractionState": "manual",
+      "localizations": {
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dodaj narudžbe u Novčanik"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "הוספת הזמנות ל״ארנק״"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "지갑 앱에 주문 추가"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tambahkan Pesanan ke Dompet"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lisää tilaukset Lompakkoon"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siparişleri Cüzdan’a Ekle"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Добавление заказов в Wallet"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rendelések hozzáadása a Tárcához"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voeg bestellingen toe aan Wallet"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aggiungi ordini a Wallet"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Agregar pedidos a Wallet"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Προσθήκη παραγγελιών στο Πορτοφόλι"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Afegeix les comandes a l’app Cartera"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajouter des commandes à Portefeuille"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إضافة طلبات إلى المحفظة"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "將訂單加至「銀包」"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lägg till beställningar i Plånbok"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "वॉलेट में ऑर्डर जोड़ें"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dodaj zamówienia do Portfela"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Føj ordrer til Wallet"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add Orders to Wallet"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Legg til bestillinger i Lommebok"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "將訂單加入「錢包」"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เพิ่มคำสั่งซื้อไปยังกระเป๋าสตางค์"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "添加订单至“钱包”"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add Orders to Wallet"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Įtraukite užsakymus į programą „Piniginė“"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tambah Pesanan ke Wallet"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Přidávat objednávky do Peněženky"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pridávať objednávky do Peňaženky"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Agregar pedidos a Wallet"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Добавяне на поръчки в Портфейл"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add Orders to Wallet"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dodaj naročilo v Denarnico"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bestellungen zu Wallet hinzufügen"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Thêm đơn hàng vào Ví"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Añadir pedidos a la app Cartera"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adicionar Pedidos ao App Carteira"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wallet қолданбасына тапсырыстар қосу"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Додавати замовлення до Гаманця"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ajouter les commandes à Cartes"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adăugare comenzi în Portofel"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "注文をウォレットに追加"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Adicionar encomendas à Carteira"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Add Orders to Wallet"
+          }
+        }
+      }
+    },
+    "ORDERS_TOOLBAR_ACCESSIBILITY_LABEL": {
+      "extractionState": "manual",
+      "localizations": {
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Narudžbe"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "הזמנות"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "주문"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pesanan"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tilaukset"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siparişler"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Заказы"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rendelések"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bestellingen"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ordini"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pedidos"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Παραγγελίες"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comandes"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Commandes"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الطلبات"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "訂單"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beställningar"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ऑर्डर"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zamówienia"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ordrer"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Orders"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bestillinger"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "訂單"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "คำสั่งซื้อ"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "订单"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Orders"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Užsakymai"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pesanan"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Objednávky"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Objednávky"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pedidos"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Поръчки"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Orders"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Naročila"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bestellungen"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đơn hàng"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pedidos"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pedidos"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Тапсырыстар"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Замовлення"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Commandes"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comenzi"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "注文"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Encomendas"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Orders"
+          }
+        }
+      }
+    },
+    "TRANSACTION_ORDERS_TITLE": {
+      "extractionState": "manual",
+      "localizations": {
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Narudžbe"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "הזמנות"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "주문"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pesanan"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tilaukset"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siparişler"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Заказы"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rendelések"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bestellingen"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ordini"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pedidos"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Παραγγελίες"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comandes"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Commandes"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الطلبات"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "訂單"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beställningar"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ऑर्डर"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zamówienia"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ordrer"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Orders"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bestillinger"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "訂單"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "คำสั่งซื้อ"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "订单"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Orders"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Užsakymai"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pesanan"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Objednávky"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Objednávky"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pedidos"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Поръчки"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Orders"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Naročila"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bestellungen"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Đơn hàng"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pedidos"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pedidos"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Тапсырыстар"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Замовлення"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Commandes"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comenzi"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "注文"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Encomendas"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Orders"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

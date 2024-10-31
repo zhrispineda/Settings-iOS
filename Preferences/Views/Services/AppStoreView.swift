@@ -18,61 +18,62 @@ struct AppStoreView: View {
     @State private var automaticDownloadsEnabled = false
     @State private var inAppRatingsReviewEnabled = true
     @State private var offloadUnusedAppsEnabled = false
+    let table = "StoreSettings"
     
     var body: some View {
-        CustomList(title: "App Store", topPadding: true) {
-            PermissionsView(appName: "App Store", cellularEnabled: $cellularEnabled)
+        CustomList(title: "STORE_SETTINGS_TITLE".localize(table: table), topPadding: true) {
+            PermissionsView(appName: "STORE_SETTINGS_TITLE".localize(table: table), cellularEnabled: $cellularEnabled)
             
-            LanguageView()
+            //LanguageView()
             
-            Section("Automatic Downloads") {
+            Section("AUTO_DOWNLOAD_ON_CELL".localize(table: table)) {
                 Toggle(isOn: $appDownloadsEnabled) {
-                    Text("App Downloads")
-                    Text("Automatically install free and paid apps purchased on other devices.")
+                    Text("AUTO_DOWNLOAD_APPS", tableName: table)
+                    Text("AUTO_DOWNLOADS_APPS_EXPLANATION", tableName: table)
                 }
                 Toggle(isOn: $appDownloadsEnabled) {
-                    Text("App Updates")
-                    Text("Automatically install free and paid apps purchased on other devices.")
+                    Text("AUTO_DOWNLOAD_UPDATES", tableName: table)
+                    Text("AUTO_DOWNLOAD_UPDATES_EXPLANATION", tableName: table)
                 }
                 Toggle(isOn: $appDownloadsEnabled) {
-                    Text("In-App Content")
-                    Text("Automatically install free and paid apps purchased on other devices.")
+                    Text("AUTO_DOWNLOAD_BACKGROUND_ASSETS", tableName: table)
+                    Text("AUTO_DOWNLOAD_BACKGROUND_ASSETS_EXPLANATION", tableName: table)
                 }
             }
             
             Section {
-                Toggle("Automatic Downloads", isOn: $automaticDownloadsEnabled)
-                CustomNavigationLink(title: "App Downloads", status: "Always Allow", destination: EmptyView())
+                Toggle("AUTO_DOWNLOAD_ON_CELL".localize(table: table), isOn: $automaticDownloadsEnabled)
+                CustomNavigationLink(title: "AUTO_DOWNLOAD_APPS".localize(table: table), status: "ALWAYS_ALLOW".localize(table: table), destination: EmptyView())
             } header: {
-                Text("Cellular Data")
+                Text("CELLULAR_DATA_HEADER", tableName: table)
             } footer: {
-                Text("Allow all apps to download automatically using cellular data. When roaming, permission to download is always required.")
+                Text("ALWAYS_ALLOW_EXPLANATION", tableName: table)
             }
             .disabled(!cellularEnabled)
             
             Section {
-                CustomNavigationLink(title: "Video Autoplay", status: "On", destination: EmptyView())
+                CustomNavigationLink(title: "AUTO_PLAY_VIDEO_SETTINGS_TITLE".localize(table: table), status: "AUTO_PLAY_VIDEO_MODE_ON".localize(table: table), destination: EmptyView())
             } footer: {
-                Text("Automatically play app preview videos in the App Store.")
+                Text("AUTO_PLAY_VIDEO_SETTINGS_DESCRIPTION", tableName: table)
             }
             
             Section {
-                Toggle("In-App Ratings & Reviews", isOn: $inAppRatingsReviewEnabled)
+                Toggle("IN_APP_REVIEW_ON_CELL".localize(table: table), isOn: $inAppRatingsReviewEnabled)
             } footer: {
-                Text("Help developers and other users know what you think by letting apps ask for product feedback.")
+                Text("IN_APP_REVIEW_ON_CELL_EXPLANATION", tableName: table)
             }
             
             Section {
-                Toggle("Offload Unused Apps", isOn: $offloadUnusedAppsEnabled)
+                Toggle("OFFLOAD_UNUSED_APPS_ON_CELL".localize(table: table), isOn: $offloadUnusedAppsEnabled)
             } footer: {
-                Text("Automatically remove unused apps, but keep all documents and data. Reinstalling the app will place back your data, if the app is still available in the App Store.")
+                Text("OFFLOAD_UNUSED_APPS_ON_CELL_EXPLANATION", tableName: table)
             }
             
             Section {
-                Button("App Store & Arcade Privacy") {}
-                Button("Personalized Recommendations") {}
+                Button("PRIVACY_APP_STORE_ARCADE_CELL".localize(table: table)) {}
+                Button("PRIVACY_PERSONALIZED_RECOMMENDATIONS_CELL".localize(table: table)) {}
             } header: {
-                Text("Privacy")
+                Text("PRIVACY_HEADER", tableName: table)
             }
         }
     }
