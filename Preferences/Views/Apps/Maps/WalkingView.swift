@@ -14,32 +14,33 @@ struct WalkingView: View {
     @State private var avoidStairsEnabled = false
     @State private var raiseToView = true
     @State private var enhancedAccuracy = true
+    let table = "MapsSettings"
     
     var body: some View {
-        CustomList(title: "Walking") {
+        CustomList(title: "Walking Transportation Mode Label [Settings]".localize(table: table), topPadding: true) {
             Section {
-                Toggle("Hills", isOn: $avoidHillsEnabled)
-                Toggle("Busy Roads", isOn: $avoidBusyRoadsEnabled)
-                Toggle("Stairs", isOn: $avoidStairsEnabled)
+                Toggle("Avoid Hills Switch Label [Settings]".localize(table: table), isOn: $avoidHillsEnabled)
+                Toggle("Avoid Busy Roads Switch Label [Settings]".localize(table: table), isOn: $avoidBusyRoadsEnabled)
+                Toggle("Avoid Stairs Switch Label [Settings]".localize(table: table), isOn: $avoidStairsEnabled)
             } header: {
-                Text("Avoid")
+                Text("Avoid Group Label [Settings]", tableName: table)
             }
             
             if UIDevice.iPhone {
                 Section {
-                    Toggle("Raise to View", isOn: $raiseToView)
+                    Toggle("Directions In The Real World Raise to View Switch Label [Settings]".localize(table: table), isOn: $raiseToView)
                 } header: {
-                    Text("Directions in the Real World")
+                    Text("Directions In The Real World Section Title [Settings]", tableName: table)
                 } footer: {
-                    Text("After you tap \(Image(systemName: "cube.transparent")) you can view directions in the real world simply by raising your iPhone.")
+                    Text(NSLocalizedString("Directions In The Real World Section Footer [Settings]", tableName: table, comment: "").replacing("%{ARKIT_ICON}@", with: String()))
                 }
                 
                 Section {
-                    Toggle("Enhanced", isOn: $enhancedAccuracy)
+                    Toggle("Optical Heading Switch Label [Settings]".localize(table: table), isOn: $enhancedAccuracy)
                 } header: {
-                    Text("Navigation Accuracy")
+                    Text("Optical Heading Section Title [Settings]", tableName: table)
                 } footer: {
-                    Text("Use iPhone‘s camera and motion sensors to improve the accuracy of your location and direction when navigating. Camera and sensor data aren‘t stored. Turning this on may use more battery power.")
+                    Text("Optical Heading Section Footer [Settings]", tableName: table)
                 }
             }
         }
@@ -47,5 +48,7 @@ struct WalkingView: View {
 }
 
 #Preview {
-    WalkingView()
+    NavigationStack {
+        WalkingView()
+    }
 }
