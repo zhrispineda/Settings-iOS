@@ -8,8 +8,12 @@
 import SwiftUI
 
 struct HealthDetailsView: View {
+    // Variables
+    let table = "WellnessDashboard-Localizable"
+    let dataTable = "Localizable-DataTypes"
+    
     var body: some View {
-        CustomList(title: "Health Details") {
+        CustomList(title: "HEALTH_PROFILE_TITLE".localize(table: table)) {
             Section {
                 Image(systemName: "person.crop.circle.fill")
                     .font(.system(size: 72))
@@ -19,24 +23,28 @@ struct HealthDetailsView: View {
             }
             
             Section {
-                LabeledContent("First Name", value: "Not Set")
-                LabeledContent("Last Name", value: "Not Set")
-                CustomNavigationLink(title: "Date of Birth", status: "Not Set", destination: HealthDetailsDataView(title: "Date of Birth"))
-                CustomNavigationLink(title: "Sex", status: "Not Set", destination: HealthDetailsDataView(title: "Sex"))
-                CustomNavigationLink(title: "Blood Type", status: "Not Set", destination: HealthDetailsDataView(title: "Blood Type"))
-                CustomNavigationLink(title: "Fitzpatrick Skin Type", status: "Not Set", destination: HealthDetailsDataView(title: "Fitzpatrick Skin Type"))
+                LabeledContent("FIRST_NAME".localize(table: table), value: "FIRST_NAME_NOT_SET".localize(table: table))
+                LabeledContent("LAST_NAME".localize(table: table), value: "LAST_NAME_NOT_SET".localize(table: table))
+                CustomNavigationLink(title: "BIRTHDATE".localize(table: table), status: "BIRTHDATE_NOT_SET".localize(table: table), destination: HealthDetailsDataView(title: "BIRTHDATE".localize(table: table)))
+                CustomNavigationLink(title: "BIOLOGICAL_SEX".localize(table: dataTable), status: "BIOLOGICAL_SEX_NOT_SET".localize(table: table), destination: HealthDetailsDataView(title: "BIOLOGICAL_SEX".localize(table: dataTable)))
+                CustomNavigationLink(title: "BLOOD_TYPE".localize(table: dataTable), status: "BLOOD_TYPE_NOT_SET".localize(table: table), destination: HealthDetailsDataView(title: "BLOOD_TYPE_TITLE_EMBEDDED".localize(table: dataTable)))
+                CustomNavigationLink(title: "FITZPATRICK_SKIN_TYPE".localize(table: dataTable), status: "FITZPATRICK_SKIN_TYPE_NOT_SET".localize(table: table), destination: HealthDetailsDataView(title: "FITZPATRICK_SKIN_TYPE"))
             }
             
             Section {
-                CustomNavigationLink(title: "Wheelchair", status: "Not Set", destination: HealthDetailsDataView(title: "Wheelchair"))
+                CustomNavigationLink(title: "WHEELCHAIR_USE_TITLE_EMBEDDED".localize(table: dataTable), status: "WHEELCHAIR_USE_NOT_SET".localize(table: table), destination: HealthDetailsDataView(title: "WHEELCHAIR_USE_TITLE_EMBEDDED".localize(table: dataTable)))
             } footer: {
-                Text("Track pushes instead of steps on Apple Watch in the Activity app, and in wheelchair workouts in the Workout app, and record them to Health. When this setting is on, your iPhone stops tracking steps.")
+                if UIDevice.iPhone {
+                    Text("WHEELCHAIR_USE_COREMOTION_TEXT_IPHONE", tableName: table)
+                } else if UIDevice.iPad {
+                    Text("WHEELCHAIR_USE_COREMOTION_TEXT_IPAD", tableName: table)
+                }
             }
             
             Section {
-                CustomNavigationLink(title: "Medications That Affect Heart Rate", status: "0", destination: HealthDetailsDataView(title: "Medications That Affect HeartRate"))
+                CustomNavigationLink(title: "CARDIO_FITNESS_RELATED_MEDICATIONS".localize(table: table), status: "0", destination: HealthDetailsDataView(title: "CARDIO_FITNESS_RELATED_MEDICATIONS".localize(table: table)))
             } footer: {
-                Text("Beta blockers or calcium channel blockers can limit your heart rate. Apple Watch can take this into account when estimating your cardio fitness.\n\nChanging this setting does not affect existing data but could change your future cardio fitness predictions.")
+                Text("CARDIO_FITNESS_RELATED_MEDICATIONS_FOOTER_TEXT", tableName: table)
             }
         }
         .toolbar {

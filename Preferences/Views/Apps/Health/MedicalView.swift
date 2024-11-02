@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct MedicalView: View {
+    // Variables
+    let table = "WellnessDashboard-Localizable"
+    
     var body: some View {
-        CustomList(title: "Medical ID") {
+        CustomList(title: "MEDICAL_ID".localize(table: table)) {
             VStack {
-                Text("A Medical ID provides medical information about you that may be important in an emergency, like allergies and medical conditions.")
-                Text("The Medical ID can be accessed from the emergency dialer without unlocking your phone.")
+                Text("MEDICAL_ID_DESCRIPTION", tableName: table)
+                    .multilineTextAlignment(.leading)
                 Button {} label: {
-                    Text("Create Medical ID")
+                    Text("CREATE_MEDICAL_ID", tableName: table)
                         .fontWeight(.medium)
                         .frame(maxWidth: .infinity)
                 }

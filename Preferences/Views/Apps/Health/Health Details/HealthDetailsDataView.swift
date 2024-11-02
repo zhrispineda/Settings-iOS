@@ -10,33 +10,35 @@ import SwiftUI
 struct HealthDetailsDataView: View {
     // Variables
     var title = String()
+    let table = "WellnessDashboard-Localizable"
+    let dataTable = "Localizable-DataTypes"
     
     var body: some View {
-        CustomList(title: title) {
+        CustomList(title: title.localize(table: dataTable), topPadding: true) {
             Section {
-                Text("None")
+                Text("APPS_NONE", tableName: table)
                     .foregroundStyle(.secondary)
             } header: {
-                Text("Apps and Services Allowed to Read Data")
+                Text("APPS_READ_ACCESS_HEADER", tableName: table)
             } footer: {
                 Text("Share \(title.contains("Fitzpatrick") ? "Fitzpatrick skin type" : title.contains("That") ? "this" : title.lowercased()) data with apps and services listed above. As apps and services request access to your Health data, they will be added to the list.")
             }
             
             Section {
-                Text("None")
+                Text("APPS_NONE", tableName: table)
                     .foregroundStyle(.secondary)
             } header: {
-                Text("Research Studies Allowed to Read Data")
+                Text("RESEARCH_STUDIES_READ_ACCESS_HEADER", tableName: table)
             } footer: {
-                Text("Share \(title.contains("Fitzpatrick") ? "Fitzpatrick skin type" : title.contains("That") ? "this" : title.lowercased()) data with the studies in Research listed above. As you authorize studies in the Research app they will be added to the list. You can review and manage all of the studies you are enrolled in by going to the Research app.")
+                Text("Share \(title.contains("FITZPATRICK_SKIN_TYPE") ? "Fitzpatrick skin type" : title.contains("That") ? "this" : title.lowercased()) data with the studies in Research listed above. As you authorize studies in the Research app they will be added to the list. You can review and manage all of the studies you are enrolled in by going to the Research app.")
             }
             
-            if title == "Fitzpatrick Skin Type" {
+            if title == "FITZPATRICK_SKIN_TYPE" {
                 VStack(alignment: .leading, spacing: 5) {
                     Text("**Description**")
                         .foregroundStyle(.secondary)
                         .font(.caption)
-                    Text("The Fitzpatrick scale is a rating of your skin type, based on your skin‘s tendency to burn and your skin‘s ability to tan.\nThe scale ranges from skin type I (always burns, never tans) to skin type VI (never burns, no change in appearance when tan).")
+                    Text("FITZPATRICK_SKIN_TYPE_SUMMARY", tableName: dataTable)
                         .foregroundStyle(.secondary)
                         .font(.caption)
                     Text("[Mayo Clinic](https://www.mayoclinic.org)")
@@ -47,7 +49,6 @@ struct HealthDetailsDataView: View {
             }
         }
         .listStyle(.grouped)
-        .padding(.top, 19)
     }
 }
 
@@ -56,3 +57,4 @@ struct HealthDetailsDataView: View {
         HealthDetailsDataView(title: "Fitzpatrick Skin Type")
     }
 }
+

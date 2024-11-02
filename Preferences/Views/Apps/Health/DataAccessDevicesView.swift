@@ -8,30 +8,33 @@
 import SwiftUI
 
 struct DataAccessDevicesView: View {
+    // Variables
+    let table = "WellnessDashboard-Localizable"
+    
     var body: some View {
-        CustomList(title: "Sources") {
+        CustomList(title: "SOURCES".localize(table: table), topPadding: true) {
             Section {
-                Text("None")
+                Text("APPS_NONE", tableName: table)
                     .foregroundStyle(.secondary)
             } header: {
-                Text("Apps and Services")
+                Text("APPS_LIST_HEADER", tableName: table)
             } footer: {
-                Text("As apps and services request permission to update your Health data, they will be added to the list.")
+                Text("APPS_LIST_EXPLANATION", tableName: table)
             }
             
             Section {
-                Text("None")
+                Text("APPS_NONE", tableName: table)
                     .foregroundStyle(.secondary)
             } header: {
-                Text("Research Study")
+                Text("RESEARCH_STUDIES_LIST_HEADER", tableName: table)
             } footer: {
-                Text("As research studies request permission to read your data, they will be added to the list. You can review and manage all of the studies you are enrolled in by going to the Research app.")
+                Text("RESEARCH_STUDIES_LIST_EXPLANATION", tableName: table)
             }
             
             Section {
                 Label(UIDevice.IsSimulator ? "\(UIDevice().systemName) Simulator" : UIDevice.current.model, systemImage: "\(UIDevice.current.model.lowercased())")
             } header: {
-                Text("Devices")
+                Text("DEVICES_LIST_HEADER", tableName: table)
             }
         }
     }
