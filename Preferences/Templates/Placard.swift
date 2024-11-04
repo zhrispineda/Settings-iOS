@@ -48,6 +48,7 @@ struct Placard: View {
                     ZStack {
                         RoundedRectangle(cornerRadius: 25.0)
                             .frame(width: 40, height: 15)
+                            .foregroundStyle(.black)
                         Text("BETA")
                             .font(.caption)
                             .foregroundStyle(.white)

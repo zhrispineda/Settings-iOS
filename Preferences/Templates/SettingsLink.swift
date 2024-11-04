@@ -83,6 +83,10 @@ struct SettingsLink<Content: View>: View {
                             .clipShape(RoundedRectangle(cornerRadius: 6))
                     }
                 }
+                .overlay(
+                    RoundedRectangle(cornerRadius: 6)
+                        .stroke(colorScheme == .light && color == .white ? Color.black.opacity(0.2) : Color.clear , lineWidth: 0.5)
+                )
                 
                 // Title and status text
                 VStack(alignment: .leading) {

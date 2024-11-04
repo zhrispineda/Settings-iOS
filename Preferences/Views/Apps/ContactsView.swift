@@ -11,11 +11,12 @@ struct ContactsView: View {
     // Variables
     @State private var opacity = Double()
     @State private var frameY = Double()
+    let table = "Contacts"
     
     var body: some View {
         CustomList(title: "Back") {
             Section {
-                Placard(title: "Contacts", icon: "appleContacts", description: "Add and remove accounts, manage Siri & Search, and customize how contacts appears. [Learn more...](https://support.apple.com/guide/\(UIDevice.current.model))")
+                Placard(title: "CONTACTS".localize(table: table), icon: "appleContacts", description: "SETTINGS_SUBTITLE".localize(table: table) + " [\("LEARN_MORE".localize(table: table))](#)")
                     .overlay { // For calculating opacity of the principal toolbar item
                         GeometryReader { geo in
                             Color.clear
@@ -25,41 +26,41 @@ struct ContactsView: View {
                                 }
                         }
                     }
-                CustomNavigationLink(title: "Contacts Accounts", status: "1", destination: EmptyView())
+                CustomNavigationLink(title: "CONTACTS_ACCOUNTS".localize(table: table), status: "1", destination: EmptyView())
             }
             
-            PermissionsView(appName: "Contacts", cellular: false, location: false, notifications: false, cellularEnabled: .constant(false))
+            PermissionsView(appName: "CONTACTS".localize(table: table), cellular: false, location: false, notifications: false, cellularEnabled: .constant(false))
             
             Section {
                 Button {} label: {
-                    CustomNavigationLink(title: "Share Name and Photo", status: "Off", destination: EmptyView())
+                    CustomNavigationLink(title: "Share Name and Photo".localize(table: table), status: "NAME_AND_PHOTO_SHARING_OFF".localize(table: table), destination: EmptyView())
                 }
                 .foregroundStyle(Color["Label"])
             } footer: {
-                Text("To personalize your messages, choose your name and photo, and who can see what you share.")
+                Text("NAME_AND_PHOTO_SHARING_NOT_SHARING_FOOTER", tableName: table)
             }
             
             Section {
-                NavigationLink("Providers") {}
+                NavigationLink("Providers".localize(table: table)) {}
             }
             
             Section {
-                CustomNavigationLink(title: "Sort Order", status: "Last, First", destination: SelectOptionList(title: "Sort Order", options: ["First, Last", "Last, First"], selected: "Last, First"))
-                CustomNavigationLink(title: "Display Order", status: "Last, First", destination: EmptyView())
-                NavigationLink("Short Name") {}
+                CustomNavigationLink(title: "Sort Order".localize(table: table), status: "LAST".localize(table: table), destination: SelectOptionList(title: "Sort Order".localize(table: table), options: ["FIRST".localize(table: table), "LAST".localize(table: table)], selected: "LAST".localize(table: table)))
+                CustomNavigationLink(title: "Display Order".localize(table: table), status: "LAST".localize(table: table), destination: EmptyView())
+                NavigationLink("Short Name".localize(table: table)) {}
                 Button {} label: {
-                    NavigationLink("My Info") {}
+                    NavigationLink("My Info".localize(table: table)) {}
                 }
                 .foregroundStyle(Color["Label"])
             }
             
             Section {
-                Button("Import SIM Contacts") {}
+                Button("Import SIM Contacts".localize(table: table)) {}
             }
         }
         .toolbar {
             ToolbarItem(placement: .principal) {
-                Text("Contacts")
+                Text("CONTACTS", tableName: table)
                     .fontWeight(.semibold)
                     .font(.subheadline)
                     .opacity(frameY < 50.0 ? opacity : 0) // Only fade when passing the help section title at the top

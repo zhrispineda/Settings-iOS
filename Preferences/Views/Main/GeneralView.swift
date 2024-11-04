@@ -44,7 +44,7 @@ struct GeneralView: View {
             
             if !UIDevice.IsSimulator {
                 Section {
-                    SettingsLink(color: Color.clear, icon: "appleCare", id: "COVERAGE".localize(table: table)) {
+                    SettingsLink(color: Color.white, icon: "appleCare", id: "COVERAGE".localize(table: table)) {
                         AppleCareWarrantyView()
                     }
                 }
