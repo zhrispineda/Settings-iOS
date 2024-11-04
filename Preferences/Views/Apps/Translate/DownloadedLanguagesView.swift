@@ -12,11 +12,12 @@ struct DownloadedLanguagesView: View {
     var originalLanguagesOrder = ["Arabic", "Chinese (Mandarin, Simplified)", "Chinese (Mandarin, Traditional)", "Dutch", "English (UK)", "English (US)", "French", "German", "Indonesian", "Italian", "Japanese", "Korean", "Polish", "Portuguese (Brazil)", "Russian", "Spanish (Spain)", "Thai", "Turkish", "Ukrainian", "Vietnamese"]
     @State private var downloaded: [String] = []
     @State private var languages = ["Arabic", "Chinese (Mandarin, Simplified)", "Chinese (Mandarin, Traditional)", "Dutch", "English (UK)", "English (US)", "French", "German", "Indonesian", "Italian", "Japanese", "Korean", "Polish", "Portuguese (Brazil)", "Russian", "Spanish (Spain)", "Thai", "Turkish", "Ukrainian", "Vietnamese"]
+    let table = "TranslateUI"
     
     var body: some View {
-        CustomList(title: "Manage Languages") {
+        CustomList(title: "Manage Languages".localize(table: table)) {
             Section {} footer: {
-                Text("Both input and output languages must be downloaded to enable offline translation.")
+                Text("TRANSLATIONS_DOWNLOAD_LANGUAGE_PAIR_TITLE", tableName: table)
             }
             
             if !downloaded.isEmpty {
@@ -38,7 +39,7 @@ struct DownloadedLanguagesView: View {
                         }
                     }
                 } header: {
-                    Text("Available Offline")
+                    Text("TRANSLATIONS_INSTALLED_TITLE", tableName: table)
                 }
             }
             
@@ -61,7 +62,7 @@ struct DownloadedLanguagesView: View {
                     }
                 }
             } header: {
-                Text("Languages Available for Download")
+                Text("TRANSLATIONS_DOWNLOADABLE_TITLE", tableName: table)
             }
         }
         .toolbar {

@@ -104,6 +104,9 @@
 		83470D162C35A1BC00CE8613 /* AppleAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83470D152C35A1BC00CE8613 /* AppleAccountView.swift */; };
 		834765E42C7D49D000DD6244 /* AirPlayContinuityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834765E32C7D49D000DD6244 /* AirPlayContinuityView.swift */; };
 		8349E22C2C7514F6007416C5 /* ApplePencilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8349E22B2C7514F6007416C5 /* ApplePencilView.swift */; };
+		834A15022CD85538004A0025 /* ShortcutsAdvancedSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834A15012CD85538004A0025 /* ShortcutsAdvancedSettings.xcstrings */; };
+		834A15042CD85705004A0025 /* TranslateUI.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834A15032CD85705004A0025 /* TranslateUI.xcstrings */; };
+		834A15082CD85B10004A0025 /* MobileCalSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834A15072CD85B10004A0025 /* MobileCalSettings.xcstrings */; };
 		834B5A222C4B3C83003A6940 /* CarPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B5A212C4B3C83003A6940 /* CarPlayView.swift */; };
 		834B5A242C4C1836003A6940 /* AirDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B5A232C4C1836003A6940 /* AirDropView.swift */; };
 		835683922B753FDD000FB136 /* SettingsLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835683912B753FDD000FB136 /* SettingsLink.swift */; };
@@ -447,6 +450,9 @@
 		83470D152C35A1BC00CE8613 /* AppleAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAccountView.swift; sourceTree = "<group>"; };
 		834765E32C7D49D000DD6244 /* AirPlayContinuityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPlayContinuityView.swift; sourceTree = "<group>"; };
 		8349E22B2C7514F6007416C5 /* ApplePencilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePencilView.swift; sourceTree = "<group>"; };
+		834A15012CD85538004A0025 /* ShortcutsAdvancedSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = ShortcutsAdvancedSettings.xcstrings; sourceTree = "<group>"; };
+		834A15032CD85705004A0025 /* TranslateUI.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = TranslateUI.xcstrings; sourceTree = "<group>"; };
+		834A15072CD85B10004A0025 /* MobileCalSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = MobileCalSettings.xcstrings; sourceTree = "<group>"; };
 		834B5A212C4B3C83003A6940 /* CarPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlayView.swift; sourceTree = "<group>"; };
 		834B5A232C4C1836003A6940 /* AirDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirDropView.swift; sourceTree = "<group>"; };
 		835683912B753FDD000FB136 /* SettingsLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLink.swift; sourceTree = "<group>"; };
@@ -1327,6 +1333,7 @@
 				83FF692E2CC6C9CE00D77FBB /* LocalizedStrings-D94.xcstrings */,
 				83E748B72CC6C7A50081D660 /* LocalizedStrings-Staccato.xcstrings */,
 				83EF90232CD5C20000379263 /* MapsSettings.xcstrings */,
+				834A15072CD85B10004A0025 /* MobileCalSettings.xcstrings */,
 				83F3611D2CD2E48100041A72 /* MomentsOnboardingAndSettings.xcstrings */,
 				831C1A512CCE9F9000866498 /* MultitaskingAndGesturesSettings.xcstrings */,
 				83F745B92CC18EC700FDB3BA /* NewDeviceOutreachUI.xcstrings */,
@@ -1340,12 +1347,14 @@
 				8331016C2CD14BDD00C6C3B3 /* RatingProviders.xcstrings */,
 				836CDF922CB602B300B1C5B2 /* Restrictions.xcstrings */,
 				837D24282CD0293C00274D42 /* ScreenTimeSettingsUI.xcstrings */,
+				834A15012CD85538004A0025 /* ShortcutsAdvancedSettings.xcstrings */,
 				83326C872CBEE8970034C0D8 /* Software Update.xcstrings */,
 				832877F82CAEE91600013B0B /* SOS.xcstrings */,
 				833101722CD173AC00C6C3B3 /* Sounds.xcstrings */,
 				831C1A532CCEA2CC00866498 /* SpotlightSettings.xcstrings */,
 				83F77D682CD3E51F0026B1AC /* StoreSettings.xcstrings */,
 				837BCF342CD2EAC8009B1E33 /* TouchID.xcstrings */,
+				834A15032CD85705004A0025 /* TranslateUI.xcstrings */,
 				83AD8C5E2CCAD00200A054B5 /* VoiceOverServices.xcstrings */,
 				831C1A572CCF1D0100866498 /* WallpaperSettings.xcstrings */,
 				8388C0B12CD473DB00FA7D4C /* WellnessDashboard-Localizable.xcstrings */,
@@ -1783,6 +1792,7 @@
 				83B893C02B8FDBE8005705A3 /* iPhone15_Pro_NaturalTitanium.usdz in Resources */,
 				83F77D742CD3F6BD0026B1AC /* PassKit.xcstrings in Resources */,
 				831C1A4E2CCE9A1300866498 /* Display.xcstrings in Resources */,
+				834A15082CD85B10004A0025 /* MobileCalSettings.xcstrings in Resources */,
 				839657542CCC02EF00D61C8B /* Accessibility-AnimatedImages.xcstrings in Resources */,
 				83E748B42CC6C0F80081D660 /* HandSettings.xcstrings in Resources */,
 				83AD8C592CCAC38E00A054B5 /* KeyboardsSettings.xcstrings in Resources */,
@@ -1795,9 +1805,11 @@
 				83AD8C5B2CCAC61700A054B5 /* Captioning.xcstrings in Resources */,
 				83F3611E2CD2E48100041A72 /* MomentsOnboardingAndSettings.xcstrings in Resources */,
 				83A3E6912CAB98C3006F4643 /* Accessibility-D93.xcstrings in Resources */,
+				834A15042CD85705004A0025 /* TranslateUI.xcstrings in Resources */,
 				83A3E6932CAC2832006F4643 /* Accessibility-HapticMusic.xcstrings in Resources */,
 				83E748B62CC6C3410081D660 /* LargeFontsSettings.xcstrings in Resources */,
 				833101712CD16FDD00C6C3B3 /* NotificationsSettings.xcstrings in Resources */,
+				834A15022CD85538004A0025 /* ShortcutsAdvancedSettings.xcstrings in Resources */,
 				835BF1332CC19DDF00F30DA1 /* PictureInPictureSettings.xcstrings in Resources */,
 				831C1A502CCE9E3300866498 /* HomeScreenSettings.xcstrings in Resources */,
 				83F77D692CD3E51F0026B1AC /* StoreSettings.xcstrings in Resources */,

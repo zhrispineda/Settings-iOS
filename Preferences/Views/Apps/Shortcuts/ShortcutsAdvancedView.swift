@@ -13,22 +13,23 @@ struct ShortcutsAdvancedView: View {
     @State private var allowSharingLargeAmountsDataEnabled = false
     @State private var allowDeletingWithoutConfirmationEnabled = false
     @State private var allowDeletingLargeAmountsDataEnabled = false
+    let table = "ShortcutsAdvancedSettings"
     
     var body: some View {
-        CustomList(title: "Advanced") {
+        CustomList(title: "Advanced".localize(table: table)) {
             Section {
-                Toggle("Allow Running Scripts", isOn: $allowRunningScriptsEnabled)
+                Toggle("SCRIPTING_SWITCH_LABEL".localize(table: table), isOn: $allowRunningScriptsEnabled)
             } footer: {
-                Text("When enabled, the actions “Run JavaScript on Web Page“ and “Run SSH Script Over SSH“ can be run.")
+                Text("SCRIPTING_GROUP_FOOTER", tableName: table)
             }
             
             Section {
-                Toggle("Allow Sharing Large Amounts of Data", isOn: $allowSharingLargeAmountsDataEnabled)
+                Toggle("ALLOW_SHARING_LARGE_AMOUNT_OF_DATA_SWITCH_LABEL".localize(table: table), isOn: $allowSharingLargeAmountsDataEnabled)
             }
             
             Section {
-                Toggle("Allow Deleting Without Confirmation", isOn: $allowDeletingWithoutConfirmationEnabled)
-                Toggle("Allow Deleting Large Amounts of Data", isOn: $allowDeletingLargeAmountsDataEnabled)
+                Toggle("ALLOW_DELETING_WITHOUT_CONFIRMATION_SWITCH_LABEL".localize(table: table), isOn: $allowDeletingWithoutConfirmationEnabled)
+                Toggle("ALLOW_DELETING_LARGE_AMOUNT_OF_DATA_SWITCH_LABEL".localize(table: table), isOn: $allowDeletingLargeAmountsDataEnabled)
             }
         }
     }
