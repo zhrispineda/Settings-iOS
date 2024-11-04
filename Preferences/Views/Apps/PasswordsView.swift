@@ -13,6 +13,7 @@ struct PasswordsView: View {
     @State private var showAccountsLabel: AccountDisplayMode = .titles
     @State private var suggestStrongPasswords = true
     @State private var autoPasskeyUpgrades = true
+    let table = "PasswordsSettings"
     
     enum AccountDisplayMode {
         case titles
@@ -26,37 +27,41 @@ struct PasswordsView: View {
             } else {
                 PermissionsView(appName: "Passwords", location: false, cellularEnabled: .constant(true))
                 
-                LanguageView()
+                //LanguageView()
             }
             
             Section {
-                Picker("Show Accounts As", selection: $showAccountsLabel) {
-                    Text("Titles").tag(AccountDisplayMode.titles)
-                    Text("Websites").tag(AccountDisplayMode.websites)
+                Picker("Show Accounts As".localize(table: table), selection: $showAccountsLabel) {
+                    Text("Titles", tableName: table).tag(AccountDisplayMode.titles)
+                    Text("Websites", tableName: table).tag(AccountDisplayMode.websites)
                 }
             }
             
             Section {
-                Toggle("Detect Compromised Passwords", isOn: $detectCompromisedPasswordsEnabled)
+                Toggle("Detect Compromised Passwords".localize(table: table), isOn: $detectCompromisedPasswordsEnabled)
             } footer: {
-                Text("\(UIDevice.current.model) can securely monitor your passwords and alert you if they appear in known data leaks. [About Passwords & Privacy...](#)")
+                if UIDevice.iPhone {
+                    Text(.init("iPhone can securely monitor your passwords and alert you if they appear in known data leaks. %passwords-privacy-link%".localize(table: table).replacingOccurrences(of: "0x0asswords-privacy-link", with: "[\("BUTTON_TITLE".localize(table: "Passwords"))](#)")))
+                } else if UIDevice.iPad {
+                    Text(.init("iPad can securely monitor your passwords and alert you if they appear in known data leaks. %passwords-privacy-link%".localize(table: table).replacingOccurrences(of: "0x0asswords-privacy-link", with: "[\("BUTTON_TITLE".localize(table: "Passwords"))](#)")))
+                }
             }
             
             Section {
-                Toggle("Suggest Strong Passwords", isOn: $suggestStrongPasswords)
+                Toggle("Suggest Strong Passwords".localize(table: table), isOn: $suggestStrongPasswords)
             } footer: {
-                Text("Automatically suggest unique, strong passwords when creating accounts or changing passwords in Safari and other apps.")
+                Text("Automatically suggest unique, strong passwords when creating accounts or changing passwords in Safari and other apps.", tableName: table)
             }
             
             Section {
-                Toggle("Allow Automatic Passkey Upgrades", isOn: $autoPasskeyUpgrades)
+                Toggle("Allow Automatic Passkey Upgrades".localize(table: table), isOn: $autoPasskeyUpgrades)
             } footer: {
-                Text("Allow websites and apps to automatically upgrade existing accounts to use passkeys when available. Passwords saved for upgraded accounts will not be affected. [Learn more about passkeys...](#)")
+                Text(.init("Allow websites and apps to automatically upgrade existing accounts to use passkeys when available. Passwords saved for upgraded accounts will not be affected. %learn-more-link%".localize(table: table).replacingOccurrences(of: "0.000000E+00arn-more-link", with: "[\("Learn more about passkeys…".localize(table: table))](#)")))
             }
             
             Section {
-                Button("Open Passwords") {}
-                Button("View AutoFill Settings") {}
+                Button("Open Passwords".localize(table: table)) {}
+                Button("View AutoFill Settings".localize(table: table)) {}
             }
         }
     }

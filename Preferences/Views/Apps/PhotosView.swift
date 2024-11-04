@@ -19,96 +19,101 @@ struct PhotosView: View {
     @State private var showingResetPeoplePetSuggestionsPopup = false
     @State private var showHolidayEventsEnabled = true
     @State private var showFeaturedContentEnabled = true
-    @State private var selected = "Automatic"
-    let options = ["Automatic", "Keep Originals"]
+    @State private var selected = "TRANSFER_SETTING_AUTOMATIC"
+    let options = ["TRANSFER_SETTING_AUTOMATIC", "TRANSFER_SETTING_KEEP_ORIGINALS"]
+    let table = "Photos"
     
     var body: some View {
-        CustomList(title: "Photos", topPadding: true) {
-            PermissionsView(appName: "Photos", cellular: false, location: false, notifications: false, cellularEnabled: .constant(false))
+        CustomList(title: "PHOTOS_SETTINGS_TITLE".localize(table: table), topPadding: true) {
+            PermissionsView(appName: "PHOTOS_SETTINGS_TITLE".localize(table: table), cellular: false, location: false, notifications: false, cellularEnabled: .constant(false))
             
             Section {
-                Toggle("Shared Albums", isOn: $sharedAlbumsEnabled)
+                Toggle("SHAREDSTREAMS_MAIN_SWITCH".localize(table: table), isOn: $sharedAlbumsEnabled)
                     .disabled(true)
             } header: {
-                Text("Albums")
+                Text("ALBUMS_TITLE", tableName: table)
             } footer: {
-                Text("Create albums to share with other people, and subscribe to other people‘s shared albums.")
+                Text("SHAREDSTREAMS_GROUP_FOOTER_DESCRIPTION", tableName: table)
             }
             
             Section {
-                Toggle("Use Passcode", isOn: $usePasscodeEnabled)
+                Toggle("CONTENT_PRIVACY_SWITCH_PASSCODE".localize(table: table), isOn: $usePasscodeEnabled)
             } footer: {
-                Text("Your password is required to view the Hidden and Recently Deleted albums.")
+                Text("CONTENT_PRIVACY_GROUP_FOOTER_DESCRIPTION_PASSCODE", tableName: table)
             }
             
             Section {
-                Toggle("Show Hidden Album", isOn: $showHiddenAlbumEnabled)
+                Toggle("HIDDEN_ALBUM_SWITCH".localize(table: table), isOn: $showHiddenAlbumEnabled)
             } footer: {
-                Text("The Hidden album will appear in the Albums tab, under Utilities.")
+                if UIDevice.iPhone {
+                    Text("HIDDEN_ALBUM_GROUP_FOOTER_DESCRIPTION_IPHONE", tableName: table)
+                } else if UIDevice.iPad {
+                    Text("HIDDEN_ALBUM_GROUP_FOOTER_DESCRIPTION_IPAD", tableName: table)
+                }
             }
             
             Section {
-                Toggle("Auto-Play Videos and Live Photos", isOn: $autoPlayVideosLivePhotosEnabled)
+                Toggle("AUTOPLAY_SWITCH".localize(table: table), isOn: $autoPlayVideosLivePhotosEnabled)
             }
             
             Section {
-                Button("Reset Suggested Memories") {
+                Button("MEMORIES_RESET_BLACKLISTED_MEMORIES_SETTINGS_ROW_TITLE".localize(table: table)) {
                     UIDevice.iPhone ? showingResetMemoriesAlert.toggle() : showingResetMemoriesPopup.toggle()
                 }
-                .confirmationDialog("Resetting will allow previously blocked places, dates, or holidays to once again be included in new Memories.", isPresented: $showingResetMemoriesAlert, titleVisibility: .visible) {
-                    Button("Reset", role: .destructive) {}
-                    Button("Cancel", role: .cancel) {}
+                .confirmationDialog("MEMORIES_BLACKLISTED_MEMORIES_RESET_ACTION_DETAILS".localize(table: table), isPresented: $showingResetMemoriesAlert, titleVisibility: .visible) {
+                    Button("MEMORIES_BLACKLISTED_MEMORIES_RESET_ACTION_TITLE".localize(table: table), role: .destructive) {}
+                    Button("MEMORIES_BLACKLISTED_MEMORIES_CANCEL_ACTION_TITLE".localize(table: table), role: .cancel) {}
                 }
-                .alert("Reset", isPresented: $showingResetMemoriesPopup) {
-                    Button("Reset", role: .destructive) {}
-                    Button("Cancel", role: .cancel) {}
+                .alert("MEMORIES_BLACKLISTED_MEMORIES_RESET_ALERT_TITLE".localize(table: table), isPresented: $showingResetMemoriesPopup) {
+                    Button("MEMORIES_BLACKLISTED_MEMORIES_RESET_ACTION_TITLE".localize(table: table), role: .destructive) {}
+                    Button("MEMORIES_BLACKLISTED_MEMORIES_CANCEL_ACTION_TITLE".localize(table: table), role: .cancel) {}
                 } message: {
-                    Text("Resetting will allow previously blocked places, dates, or holidays to once again be included in new Memories.")
+                    Text("MEMORIES_BLACKLISTED_MEMORIES_RESET_ACTION_DETAILS", tableName: table)
                 }
-                Button("Reset People & Pets Suggestions") {
+                Button("RESET_PEOPLE_FEEDBACK_SETTINGS_ROW_TITLE".localize(table: table)) {
                     UIDevice.iPhone ? showingResetPeoplePetSuggestionsAlert.toggle() : showingResetPeoplePetSuggestionsPopup.toggle()
                 }
-                .confirmationDialog("Resetting will allow people and pets suggested less to once again be fully included in new Memories and Featured Photos.", isPresented: $showingResetPeoplePetSuggestionsAlert, titleVisibility: .visible) {
-                    Button("Reset", role: .destructive) {}
-                    Button("Cancel", role: .cancel) {}
+                .confirmationDialog("RESET_PEOPLE_FEEDBACK_RESET_ACTION_DETAILS".localize(table: table), isPresented: $showingResetPeoplePetSuggestionsAlert, titleVisibility: .visible) {
+                    Button("RESET_PEOPLE_FEEDBACK_RESET_ACTION_TITLE".localize(table: table), role: .destructive) {}
+                    Button("RESET_PEOPLE_FEEDBACK_CANCEL_ACTION_TITLE".localize(table: table), role: .cancel) {}
                 }
-                .alert("Reset", isPresented: $showingResetPeoplePetSuggestionsPopup) {
-                    Button("Reset", role: .destructive) {}
-                    Button("Cancel", role: .cancel) {}
+                .alert("RESET_PEOPLE_FEEDBACK_RESET_ACTION_ALERT_TITLE".localize(table: table), isPresented: $showingResetPeoplePetSuggestionsPopup) {
+                    Button("RESET_PEOPLE_FEEDBACK_RESET_ACTION_TITLE".localize(table: table), role: .destructive) {}
+                    Button("RESET_PEOPLE_FEEDBACK_CANCEL_ACTION_TITLE".localize(table: table), role: .cancel) {}
                 } message: {
-                    Text("Resetting will allow people and pets suggested less to once again be fully included in new Memories and Featured Photos.")
+                    Text("RESET_PEOPLE_FEEDBACK_RESET_ACTION_DETAILS", tableName: table)
                 }
-                Toggle("Show Holiday Events", isOn: $showHolidayEventsEnabled)
+                Toggle("MEMORIES_HOLIDAY_CALENDAR_EVENTS_SWITCH".localize(table: table), isOn: $showHolidayEventsEnabled)
             } header: {
-                Text("Memories")
+                Text("MEMORIES_TITLE", tableName: table)
             } footer: {
-                Text("You can choose to see timely holiday events and those for your home country or region.")
+                Text("MEMORIES_HOLIDAY_CALENDAR_EVENTS_SWITCH_FOOTER", tableName: table)
             }
             
             Section {
-                Toggle("Show Featured Content", isOn: $showFeaturedContentEnabled)
+                Toggle("SHOW_FEATURED_CONTENT_SETTINGS_TITLE".localize(table: table), isOn: $showFeaturedContentEnabled)
             } header: {
-                Text("Memories & Featured Photos")
+                Text("SHOW_FEATURED_CONTENT_SETTINGS_SWITCH", tableName: table)
             } footer: {
-                Text("Allow Featured Photos and Memories to automatically appear on this device in places such as For You and Search in Photos, and in Widgets.")
+                Text("SHOW_FEATURED_CONTENT_SETTINGS_SWITCH_FOOTER", tableName: table)
             }
             
             Section {
                 Picker("", selection: $selected) {
                     ForEach(options, id: \.self) {
-                        Text($0)
+                        Text($0.localize(table: table))
                     }
                 }
                 .pickerStyle(.inline)
                 .labelsHidden()
             } header: {
-                Text("Transfer to Mac or PC")
+                Text("TRANSFER_SETTINGS_TITLE", tableName: table)
             } footer: {
-                Text("Automatically transfer photos and videos in a compatible format, or always transfer the original file without checking for compatability.")
+                Text("TRANSFER_SETTINGS_FOOTER", tableName: table)
             }
             
             Section {} footer: {
-                Text("[About Photos & Privacy...](#)")
+                Text("[\("BUTTON_TITLE".localize(table: "OBPhotos"))](#)")
             }
         }
     }
