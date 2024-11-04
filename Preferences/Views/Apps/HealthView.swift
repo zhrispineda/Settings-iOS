@@ -8,30 +8,35 @@
 import SwiftUI
 
 struct HealthView: View {
+    // Variables
+    let table = "HealthUI-Localizable"
+    let wellTable = "WellnessDashboard-Localizable"
+    let specTable = "HealthSettingsSpecifiers"
+    
     var body: some View {
-        CustomList(title: "Health", topPadding: true) {
-            PermissionsView(appName: "Health", cellular: false, location: false, cellularEnabled: .constant(false))
+        CustomList(title: "HEALTH".localize(table: table), topPadding: true) {
+            PermissionsView(appName: "HEALTH".localize(table: table), cellular: false, location: false, cellularEnabled: .constant(false))
             
             Section {
-                NavigationLink("Health Details", destination: HealthDetailsView())
+                NavigationLink("HEALTH_PROFILE_TITLE".localize(table: wellTable), destination: HealthDetailsView())
                 if UIDevice.iPhone {
-                    NavigationLink("Medical ID", destination: MedicalView())
+                    NavigationLink("MEDICAL_ID".localize(table: wellTable), destination: MedicalView())
                 }
             } header: {
-                Text("Medical Details")
+                Text("DETAILS_GROUP_TITLE", tableName: specTable)
             }
             
             Section {
-                NavigationLink("Data Access & Devices", destination: DataAccessDevicesView())
+                NavigationLink("SOURCES_ITEM".localize(table: specTable), destination: DataAccessDevicesView())
             } header: {
-                Text("Data")
+                Text("DATA_GROUP_TITLE", tableName: specTable)
             }
             
             if UIDevice.iPhone {
                 Section {
-                    Link("Open Health Checklist", destination: URL(string: "x-apple-health://")!)
+                    Link("HEALTH_CHECKLIST_ITEM".localize(table: specTable), destination: URL(string: "x-apple-health://")!)
                 } footer: {
-                    Text("Health Checklist can help set up your iPhone and Apple Watch to keep an eye on things for you.")
+                    Text("HEALTH_CHECKLIST_FOOTER_PHONE_ONLY", tableName: specTable)
                 }
             }
         }

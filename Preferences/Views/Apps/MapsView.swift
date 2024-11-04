@@ -17,70 +17,72 @@ struct MapsView: View {
     @State private var ratingsPhotosEnabled = true
     @State private var showRatingsPhotoSuggestions = true
     @State private var allowPhotoProvidersUse = false
-    let options = ["Driving", "Walking", "Transit", "Cycling"]
+    let options = ["Driving Transportation Mode Label [Settings]", "Walking Label [Settings]", "Transit Label [Settings]", "Cycling Label [Settings]"]
+    let table = "MapsSettings"
+    let axTable = "AXUILocalizedStrings"
     
     var body: some View {
-        CustomList(title: "Maps", topPadding: true) {
+        CustomList(title: "MAPS_CLIENT".localize(table: axTable), topPadding: true) {
             if UIDevice.IsSimulator {
-                PermissionsView(appName: "Maps", background: true, cellular: false, location: false, notifications: false, cellularEnabled: .constant(true))
+                PermissionsView(appName: "MAPS_CLIENT".localize(table: axTable), background: true, cellular: false, location: false, notifications: false, cellularEnabled: .constant(true))
             } else {
-                PermissionsView(appName: "Maps", background: true, cellularEnabled: .constant(true))
+                PermissionsView(appName: "MAPS_CLIENT".localize(table: axTable), background: true, cellularEnabled: .constant(true))
             }
             
             Section {
-                Picker("", selection: $selected) {
+                Picker("Default Transportation Mode Title [Settings]", selection: $selected) {
                     ForEach(options, id: \.self) {
-                        Text($0)
+                        Text($0.localize(table: table))
                     }
                 }
                 .pickerStyle(.inline)
                 .labelsHidden()
             } header: {
-                Text("Preferred Type of Travel")
+                Text("Default Transportation Mode Title [Settings]", tableName: table)
             } footer: {
-                Text("When available, this transportation type will be used to get directions and to estimate your travel time.")
+                Text("Default Transportation Mode Footer [Settings]", tableName: table)
             }
             
-            Section("Directions") {
-                NavigationLink("Driving", destination: DrivingView())
-                NavigationLink("Walking", destination: WalkingView())
-                NavigationLink("Transit", destination: TransitView())
-                NavigationLink("Cycling", destination: CyclingView())
+            Section("Directions Group Label [Settings]".localize(table: table)) {
+                NavigationLink("Driving Group Title [Settings]".localize(table: table), destination: DrivingView())
+                NavigationLink("Walking Label [Settings]".localize(table: table), destination: WalkingView())
+                NavigationLink("Transit Label [Settings]".localize(table: table), destination: TransitView())
+                NavigationLink("Cycling Label [Settings]".localize(table: table), destination: CyclingView())
             }
             
             if !UIDevice.IsSimulator && UIDevice.iPhone {
                 Section {
-                    NavigationLink("Spoken Directions") {}
+                    NavigationLink("Spoken Directions Label [Settings]".localize(table: table)) {}
                 }
             }
             
-            Section("Climate") {
-                Toggle("Air Quality Index", isOn: $airQualityIndexEnabled)
-                Toggle("Weather Conditions", isOn: $weatherConditionsEnabled)
+            Section("Climate Group Label [Settings]".localize(table: table)) {
+                Toggle("Air Quality Index Switch Label [Settings]".localize(table: table), isOn: $airQualityIndexEnabled)
+                Toggle("Weather Conditions Switch Label [Settings]".localize(table: table), isOn: $weatherConditionsEnabled)
             }
             
             Section {
-                Toggle("Always in English", isOn: $alwaysEnglishEnabled)
+                Toggle("Label Language Switch Label [Settings]".localize(table: table), isOn: $alwaysEnglishEnabled)
             } header: {
-                Text("Map Labels")
+                Text("Label Language Group Title [Settings]".localize(table: table))
             }
             
             if !UIDevice.IsSimulator {
                 Section {
-                    Toggle("Ratings and Photos", isOn: $ratingsPhotosEnabled)
-                    Toggle("Show Ratings and Photos Suggestions", isOn: $showRatingsPhotoSuggestions)
+                    Toggle("Ratings and Photos [Laguna Beach][Settings]".localize(table: table), isOn: $ratingsPhotosEnabled)
+                    Toggle("Show Ratings and Photos Suggestions [Laguna Beach][Settings]".localize(table: table), isOn: $showRatingsPhotoSuggestions)
                 } header: {
-                    Text("Contribute to Maps")
+                    Text("Contribute to Maps [Settings]", tableName: table)
                 } footer: {
                     Text("[See how your data is managed...](#)")
                 }
                 
                 Section {
-                    Toggle("Allow Photo Providers to Use Your Photos", isOn: $allowPhotoProvidersUse)
+                    Toggle("Allow Photo Providers to Use Your Photos [Settings]".localize(table: table), isOn: $allowPhotoProvidersUse)
                 } header: {
-                    Text("Photo Use")
+                    Text("Photo Use [Settings]", tableName: table)
                 } footer: {
-                    Text("Allow companies that provide photos to Maps to use the photos that you add to Maps in their own products and services. Photos include their locations but not your identity. If you turn this off, photo providers may no longer use your photos, but this may take a few days to apply.")
+                    Text("Photo Sharing Footer [Settings]", tableName: table)
                 }
             }
         }

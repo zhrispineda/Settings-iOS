@@ -17,70 +17,72 @@ struct MessagesView: View {
     @State private var notifyMe = true
     @State private var filterUnknownSenders = false
     @State private var lowQualityImageMode = false
+    let table = "MessagesSettings"
+    let msgTable = "Messages"
     
     var body: some View {
-        CustomList(title: "Messages", topPadding: true) {
-            PermissionsView(appName: "Messages", cellular: false, focus: true, location: false, cellularEnabled: .constant(false))
+        CustomList(title: "MESSAGES".localize(table: table), topPadding: true) {
+            PermissionsView(appName: "MESSAGES".localize(table: table), cellular: false, focus: true, location: false, cellularEnabled: .constant(false))
             
             Section {
-                Toggle("iMessage", isOn: $messagesEnabled)
+                Toggle("IMESSAGE".localize(table: table), isOn: $messagesEnabled)
             } footer: {
-                Text("iMessage uses wireless data to send messages between Apple devices. [About iMessage and FaceTime & Privacy...](#)")
+                Text("MESSAGES_WIRELESS_DATA_DESCRIPTION", tableName: table) + Text("[\("MESSAGE_FACETIME_PRIVACY_BUTTON".localize(table: table))...](#)")
             }
             
             Section {
-                NavigationLink("iMessage Apps") {}
+                NavigationLink("MESSAGE_APPS".localize(table: table)) {}
             }
             
             Section {
-                CustomNavigationLink(title: "Share Name and Photo", status: "Off", destination: EmptyView())
+                CustomNavigationLink(title: "SHARE_NAME_AND_PHOTO".localize(table: table), status: "OFF".localize(table: table), destination: EmptyView())
             } footer: {
-                Text("To personalize your messages, choose your name and photo, and who can see what you share.")
+                Text("NAME_AND_PHOTO_SHARING_NOT_SHARING_FOOTER", tableName: msgTable)
             }
             
             Section {
-                CustomNavigationLink(title: "Shared with You", status: "On", destination: EmptyView())
+                CustomNavigationLink(title: "SHARED_WITH_YOU".localize(table: table), status: "ON".localize(table: table), destination: EmptyView())
             } footer: {
-                Text("Allow content shared with you in Messages to automatically appear in selected apps.")
+                Text("SHARED_WITH_YOU_GROUP_DESCRIPTION", tableName: msgTable)
             }
             
             Section {
-                Toggle("Show Contact Photos", isOn: $showContactPhoto)
+                Toggle("SHOW_CONTACT_PHOTOS".localize(table: table), isOn: $showContactPhoto)
             } footer: {
-                Text("Show photos of your contacts in Messages.")
+                Text("CONTACT_PHOTO_DESCRIPTION", tableName: msgTable)
             }
             
-            Section("Text Messaging") {
-                Toggle("MMS Messaging", isOn: $mmsMessaging)
-                Toggle("Show Subject Field", isOn: $showSubjectField)
-                Toggle("Character Count", isOn: $characterCountEnabled)
-                NavigationLink("Blocked Contacts") {}
+            Section("MMS_LABEL".localize(table: msgTable)) {
+                Toggle("MMS_MESSAGING".localize(table: table), isOn: $mmsMessaging)
+                Toggle("SHOW_SUBJECT_FIELD".localize(table: table), isOn: $showSubjectField)
+                Toggle("CHARACTER_COUNT".localize(table: table), isOn: $characterCountEnabled)
+                NavigationLink("BLOCKED_CONTACTS".localize(table: table)) {}
             }
             
-            Section("Message History") {
-                CustomNavigationLink(title: "Keep Messages", status: "Forever", destination: EmptyView())
+            Section("MESSAGE_HISTORY".localize(table: msgTable)) {
+                CustomNavigationLink(title: "KEEP_MESSAGES".localize(table: msgTable), status: "FOREVER".localize(table: table), destination: EmptyView())
             }
             
             Section {
-                Toggle("Notify Me", isOn: $notifyMe)
+                Toggle("NOTIFY_ME".localize(table: table), isOn: $notifyMe)
             } header: {
-                Text("Mentions")
+                Text("MENTIONS_TITLE", tableName: msgTable)
             } footer: {
-                Text("When this is on, you will be notified when your name is mentioned even if conversations are muted.")
+                Text("SEND_READ_RECEIPTS_FOOTER", tableName: table)
             }
             
             Section {
-                Toggle("Filter Unknown Senders", isOn: $filterUnknownSenders)
+                Toggle("FILTER_UNKNOWN_SENDERS".localize(table: table), isOn: $filterUnknownSenders)
             } header: {
-                Text("Message Filtering")
+                Text("MESSAGES_FILTERING_LABEL", tableName: msgTable)
             } footer: {
-                Text("Sort messages from people who are not in your contacts into a separate list.")
+                Text("FILTER_UNKNOWN_SENDERS_DESCRIPTION", tableName: table)
             }
             
             Section {
-                Toggle("Low Quality Image Mode", isOn: $lowQualityImageMode)
+                Toggle("PREVIEW_TRANSCODING".localize(table: msgTable), isOn: $lowQualityImageMode)
             } footer: {
-                Text("When this is on, images sent will be lower quality.")
+                Text("PREVIEW_TRANSCODING_DESCRIPTION", tableName: msgTable)
             }
         }
     }
