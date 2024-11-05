@@ -10,28 +10,33 @@ import SwiftUI
 struct TranslateView: View {
     // Variables
     @State private var onDeviceModeEnabled = false
+    let table = "TranslationUI"
     
     var body: some View {
-        CustomList(title: "Translate") {
+        CustomList(title: "TRANSLATE".localize(table: table), topPadding: true) {
+            PermissionsView(appName: "TRANSLATE".localize(table: table), cellular: true, location: false, notifications: false, cellularEnabled: .constant(true))
+            
             Section {
-                NavigationLink("Downloaded Languages", destination: DownloadedLanguagesView())
+                NavigationLink("ON_DEVICE_LANGUAGES_TITLE".localize(table: table), destination: DownloadedLanguagesView())
             } footer: {
-                Text("Download languages to translate when offline or when on-device mode is turned on.")
+                Text("ON_DEVICE_LANGUAGES_DESCRIPTION", tableName: table)
             }
             
             Section {
-                Toggle("On-Device Mode", isOn: $onDeviceModeEnabled)
+                Toggle("ON_DEVICE_PREF_NAME".localize(table: table), isOn: $onDeviceModeEnabled)
             } footer: {
-                Text("Always translate offline using downloaded languages. Offline translations may not be as accurate as online translations. Siri and Safari will always process translations online.")
+                Text("ON_DEVICE_FOOTER", tableName: table)
             }
             
             Section {} footer: {
-                Text("[About Translation & Privacy...](#)")
+                Text("[\("PRIVACY_LINK".localize(table: table))](#)")
             }
         }
     }
 }
 
 #Preview {
-    TranslateView()
+    NavigationStack {
+        TranslateView()
+    }
 }

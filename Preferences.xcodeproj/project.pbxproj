@@ -116,7 +116,7 @@
 		834765E42C7D49D000DD6244 /* AirPlayContinuityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834765E32C7D49D000DD6244 /* AirPlayContinuityView.swift */; };
 		8349E22C2C7514F6007416C5 /* ApplePencilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8349E22B2C7514F6007416C5 /* ApplePencilView.swift */; };
 		834A15022CD85538004A0025 /* ShortcutsAdvancedSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834A15012CD85538004A0025 /* ShortcutsAdvancedSettings.xcstrings */; };
-		834A15042CD85705004A0025 /* TranslateUI.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834A15032CD85705004A0025 /* TranslateUI.xcstrings */; };
+		834A15042CD85705004A0025 /* TranslationUI.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834A15032CD85705004A0025 /* TranslationUI.xcstrings */; };
 		834A15082CD85B10004A0025 /* MobileCalSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834A15072CD85B10004A0025 /* MobileCalSettings.xcstrings */; };
 		834B5A222C4B3C83003A6940 /* CarPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B5A212C4B3C83003A6940 /* CarPlayView.swift */; };
 		834B5A242C4C1836003A6940 /* AirDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B5A232C4C1836003A6940 /* AirDropView.swift */; };
@@ -229,7 +229,6 @@
 		83A5DA532C234DCB0012ACB3 /* LanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5DA522C234DCB0012ACB3 /* LanguageView.swift */; };
 		83A5DA552C2366A60012ACB3 /* TransferResetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5DA542C2366A60012ACB3 /* TransferResetView.swift */; };
 		83A7E15A2CBF047B0037F1FB /* FontSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83A7E1592CBF047B0037F1FB /* FontSettings.xcstrings */; };
-		83AA1BD62C8B951B00A0B830 /* WatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AA1BD52C8B951B00A0B830 /* WatchView.swift */; };
 		83AA78922CCDA42400060BC2 /* AssistantAudioFeedback.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83AA78912CCDA42400060BC2 /* AssistantAudioFeedback.xcstrings */; };
 		83ACE71F2CD5BA200061528C /* Localizable-DataTypes.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83ACE71E2CD5BA200061528C /* Localizable-DataTypes.xcstrings */; };
 		83AD8C592CCAC38E00A054B5 /* KeyboardsSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83AD8C582CCAC38E00A054B5 /* KeyboardsSettings.xcstrings */; };
@@ -303,6 +302,8 @@
 		83DFAB342C3F516F006C9C29 /* StorageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DFAB332C3F516F006C9C29 /* StorageView.swift */; };
 		83E160762CD022170020DC85 /* AssistantSettings-GM.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83E160752CD022170020DC85 /* AssistantSettings-GM.xcstrings */; };
 		83E2ADA72CA1D80A00DFED0C /* RecordVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E2ADA62CA1D80A00DFED0C /* RecordVideoView.swift */; };
+		83E50A0E2CDA7D7900BF4969 /* RemindersSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83E50A0D2CDA7D7900BF4969 /* RemindersSettings.xcstrings */; };
+		83E50A102CDA800000BF4969 /* ShortcutsSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83E50A0F2CDA800000BF4969 /* ShortcutsSettings.xcstrings */; };
 		83E748B22CC6BDDE0081D660 /* LocalizedStrings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83E748B12CC6BDDE0081D660 /* LocalizedStrings.xcstrings */; };
 		83E748B42CC6C0F80081D660 /* HandSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83E748B32CC6C0F80081D660 /* HandSettings.xcstrings */; };
 		83E748B62CC6C3410081D660 /* LargeFontsSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83E748B52CC6C3410081D660 /* LargeFontsSettings.xcstrings */; };
@@ -473,7 +474,7 @@
 		834765E32C7D49D000DD6244 /* AirPlayContinuityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPlayContinuityView.swift; sourceTree = "<group>"; };
 		8349E22B2C7514F6007416C5 /* ApplePencilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePencilView.swift; sourceTree = "<group>"; };
 		834A15012CD85538004A0025 /* ShortcutsAdvancedSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = ShortcutsAdvancedSettings.xcstrings; sourceTree = "<group>"; };
-		834A15032CD85705004A0025 /* TranslateUI.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = TranslateUI.xcstrings; sourceTree = "<group>"; };
+		834A15032CD85705004A0025 /* TranslationUI.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = TranslationUI.xcstrings; sourceTree = "<group>"; };
 		834A15072CD85B10004A0025 /* MobileCalSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = MobileCalSettings.xcstrings; sourceTree = "<group>"; };
 		834B5A212C4B3C83003A6940 /* CarPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlayView.swift; sourceTree = "<group>"; };
 		834B5A232C4C1836003A6940 /* AirDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirDropView.swift; sourceTree = "<group>"; };
@@ -586,7 +587,6 @@
 		83A5DA522C234DCB0012ACB3 /* LanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageView.swift; sourceTree = "<group>"; };
 		83A5DA542C2366A60012ACB3 /* TransferResetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferResetView.swift; sourceTree = "<group>"; };
 		83A7E1592CBF047B0037F1FB /* FontSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = FontSettings.xcstrings; sourceTree = "<group>"; };
-		83AA1BD52C8B951B00A0B830 /* WatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchView.swift; sourceTree = "<group>"; };
 		83AA78912CCDA42400060BC2 /* AssistantAudioFeedback.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AssistantAudioFeedback.xcstrings; sourceTree = "<group>"; };
 		83ACE71E2CD5BA200061528C /* Localizable-DataTypes.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "Localizable-DataTypes.xcstrings"; sourceTree = "<group>"; };
 		83AD8C582CCAC38E00A054B5 /* KeyboardsSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = KeyboardsSettings.xcstrings; sourceTree = "<group>"; };
@@ -662,6 +662,8 @@
 		83DFAB332C3F516F006C9C29 /* StorageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageView.swift; sourceTree = "<group>"; };
 		83E160752CD022170020DC85 /* AssistantSettings-GM.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "AssistantSettings-GM.xcstrings"; sourceTree = "<group>"; };
 		83E2ADA62CA1D80A00DFED0C /* RecordVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordVideoView.swift; sourceTree = "<group>"; };
+		83E50A0D2CDA7D7900BF4969 /* RemindersSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = RemindersSettings.xcstrings; sourceTree = "<group>"; };
+		83E50A0F2CDA800000BF4969 /* ShortcutsSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = ShortcutsSettings.xcstrings; sourceTree = "<group>"; };
 		83E748B12CC6BDDE0081D660 /* LocalizedStrings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = LocalizedStrings.xcstrings; sourceTree = "<group>"; };
 		83E748B32CC6C0F80081D660 /* HandSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = HandSettings.xcstrings; sourceTree = "<group>"; };
 		83E748B52CC6C3410081D660 /* LargeFontsSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = LargeFontsSettings.xcstrings; sourceTree = "<group>"; };
@@ -959,7 +961,6 @@
 				83815CE62B768DF100F53A0F /* SafariView.swift */,
 				83815CEE2B768EF000F53A0F /* ShortcutsView.swift */,
 				83815CEA2B768E4A00F53A0F /* TranslateView.swift */,
-				83AA1BD52C8B951B00A0B830 /* WatchView.swift */,
 			);
 			path = Apps;
 			sourceTree = "<group>";
@@ -1378,16 +1379,18 @@
 				83AD8C5C2CCAC85500A054B5 /* ProfileNames.xcstrings */,
 				834196262CB89D8F0038183D /* PSSystemPolicy.xcstrings */,
 				8331016C2CD14BDD00C6C3B3 /* RatingProviders.xcstrings */,
+				83E50A0D2CDA7D7900BF4969 /* RemindersSettings.xcstrings */,
 				836CDF922CB602B300B1C5B2 /* Restrictions.xcstrings */,
 				837D24282CD0293C00274D42 /* ScreenTimeSettingsUI.xcstrings */,
 				834A15012CD85538004A0025 /* ShortcutsAdvancedSettings.xcstrings */,
+				83E50A0F2CDA800000BF4969 /* ShortcutsSettings.xcstrings */,
 				83326C872CBEE8970034C0D8 /* Software Update.xcstrings */,
 				832877F82CAEE91600013B0B /* SOS.xcstrings */,
 				833101722CD173AC00C6C3B3 /* Sounds.xcstrings */,
 				831C1A532CCEA2CC00866498 /* SpotlightSettings.xcstrings */,
 				83F77D682CD3E51F0026B1AC /* StoreSettings.xcstrings */,
 				837BCF342CD2EAC8009B1E33 /* TouchID.xcstrings */,
-				834A15032CD85705004A0025 /* TranslateUI.xcstrings */,
+				834A15032CD85705004A0025 /* TranslationUI.xcstrings */,
 				83AD8C5E2CCAD00200A054B5 /* VoiceOverServices.xcstrings */,
 				831C1A572CCF1D0100866498 /* WallpaperSettings.xcstrings */,
 				8388C0B12CD473DB00FA7D4C /* WellnessDashboard-Localizable.xcstrings */,
@@ -1835,6 +1838,7 @@
 				837BCF3C2CD30AF2009B1E33 /* PasscodeLock-DimpleKey.xcstrings in Resources */,
 				834565762CAAE7B8002BE49D /* CameraSettings-CinematicAudio.xcstrings in Resources */,
 				836CDF932CB602B300B1C5B2 /* Restrictions.xcstrings in Resources */,
+				83E50A102CDA800000BF4969 /* ShortcutsSettings.xcstrings in Resources */,
 				8388C0B22CD473DB00FA7D4C /* WellnessDashboard-Localizable.xcstrings in Resources */,
 				834565782CAAEB82002BE49D /* Camera.xcstrings in Resources */,
 				830F2B3A2CD98E5D006F7F22 /* Photos.xcstrings in Resources */,
@@ -1843,7 +1847,7 @@
 				830F2B302CD97A05006F7F22 /* MessagesSettings.xcstrings in Resources */,
 				83F3611E2CD2E48100041A72 /* MomentsOnboardingAndSettings.xcstrings in Resources */,
 				83A3E6912CAB98C3006F4643 /* Accessibility-D93.xcstrings in Resources */,
-				834A15042CD85705004A0025 /* TranslateUI.xcstrings in Resources */,
+				834A15042CD85705004A0025 /* TranslationUI.xcstrings in Resources */,
 				83A3E6932CAC2832006F4643 /* Accessibility-HapticMusic.xcstrings in Resources */,
 				83E748B62CC6C3410081D660 /* LargeFontsSettings.xcstrings in Resources */,
 				833101712CD16FDD00C6C3B3 /* NotificationsSettings.xcstrings in Resources */,
@@ -1914,6 +1918,7 @@
 				832877DF2CAD987B00013B0B /* AppleIDSetup.xcstrings in Resources */,
 				83AD8C5D2CCAC85500A054B5 /* ProfileNames.xcstrings in Resources */,
 				832877F42CAEE7A200013B0B /* Localizable.xcstrings in Resources */,
+				83E50A0E2CDA7D7900BF4969 /* RemindersSettings.xcstrings in Resources */,
 				83C3F33D2CC2BA7800AE2402 /* GameControlleriOSSettings.xcstrings in Resources */,
 				83AA78922CCDA42400060BC2 /* AssistantAudioFeedback.xcstrings in Resources */,
 				832D84F22CD2B0A90075ECF0 /* DigitalSeparationUI.xcstrings in Resources */,
@@ -2138,7 +2143,6 @@
 				83EC895F2CA0F8B500389F3B /* CameraControlView.swift in Sources */,
 				833C124F2C99B40100CAEB36 /* VoiceOverView.swift in Sources */,
 				832F517F2BBF4DC900335E5E /* NetworkView.swift in Sources */,
-				83AA1BD62C8B951B00A0B830 /* WatchView.swift in Sources */,
 				83F78A172B8E888600025062 /* KeyboardCommandsView.swift in Sources */,
 				8309893A2C44AA9C00535A8F /* UIDeviceExtensions.swift in Sources */,
 				83815CE12B768CF300F53A0F /* MultitaskingGesturesView.swift in Sources */,

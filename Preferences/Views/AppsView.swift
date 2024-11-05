@@ -10,8 +10,8 @@ import SwiftUI
 struct AppsView: View {
     // Variables
     @State private var searchText = String()
-    let apps = ["Calendar", "Contacts", "Files", "Fitness", "Health", "Maps", "Messages", "News", "Passwords", "Photos", "Reminders", "Safari", "Shortcuts", "Translate", "Watch"]
-    let simulatorApps = ["Calendar", "Contacts", "Files", "Fitness", "Health", "Maps", "Messages", "News", "Passwords", "Photos", "Reminders", "Safari", "Shortcuts", "Watch"]
+    let apps = ["Calendar", "Contacts", "Files", "Fitness", "Health", "Maps", "Messages", "News", "Passwords", "Photos", "Reminders", "Safari", "Shortcuts", "Translate"]
+    let simulatorApps = ["Calendar", "Contacts", "Files", "Fitness", "Health", "Maps", "Messages", "News", "Passwords", "Photos", "Reminders", "Safari", "Shortcuts"]
     let characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ#".map(String.init)
     
     var groupedApps: [String: [String]] {
@@ -54,8 +54,6 @@ struct AppsView: View {
                                     ShortcutsView()
                                 case "Translate":
                                     TranslateView()
-                                case "Watch":
-                                    WatchView()
                                 default:
                                     EmptyView()
                                 }

@@ -12,7 +12,7 @@ struct DownloadedLanguagesView: View {
     var originalLanguagesOrder = ["Arabic", "Chinese (Mandarin, Simplified)", "Chinese (Mandarin, Traditional)", "Dutch", "English (UK)", "English (US)", "French", "German", "Indonesian", "Italian", "Japanese", "Korean", "Polish", "Portuguese (Brazil)", "Russian", "Spanish (Spain)", "Thai", "Turkish", "Ukrainian", "Vietnamese"]
     @State private var downloaded: [String] = []
     @State private var languages = ["Arabic", "Chinese (Mandarin, Simplified)", "Chinese (Mandarin, Traditional)", "Dutch", "English (UK)", "English (US)", "French", "German", "Indonesian", "Italian", "Japanese", "Korean", "Polish", "Portuguese (Brazil)", "Russian", "Spanish (Spain)", "Thai", "Turkish", "Ukrainian", "Vietnamese"]
-    let table = "TranslateUI"
+    let table = "TranslationUI"
     
     var body: some View {
         CustomList(title: "Manage Languages".localize(table: table)) {

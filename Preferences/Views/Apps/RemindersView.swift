@@ -18,11 +18,12 @@ struct RemindersView: View {
     @State private var includeDueToday = false
     @State private var muteAssignedReminders = false
     @State private var showSuggestions = true
+    let table = "RemindersSettings"
     
     var body: some View {
         CustomList(title: "Back") {
             Section {
-                Placard(title: "Reminders", icon: "appleReminders", description: "Add and remove accounts, manage Siri & Search, and customize how your reminders work. [Learn more...](https://support.apple.com/guide/\(UIDevice.current.model))")
+                Placard(title: "Reminders".localize(table: table), icon: "appleReminders", description: "SETTINGS_PLACARD_DESCRIPTION_TEXT".localize(table: table, "#"))
                     .overlay { // For calculating opacity of the principal toolbar item
                         GeometryReader { geo in
                             Color.clear
@@ -32,25 +33,25 @@ struct RemindersView: View {
                                 }
                         }
                     }
-                CustomNavigationLink(title: "Reminders Accounts", status: "1", destination: EmptyView())
+                CustomNavigationLink(title: "Reminders Accounts".localize(table: table), status: "1", destination: EmptyView())
             }
             
-            PermissionsView(appName: "Reminders", cellular: false, location: true, notifications: false, cellularEnabled: .constant(false))
+            PermissionsView(appName: "Reminders".localize(table: table), cellular: false, location: true, notifications: false, cellularEnabled: .constant(false))
             
             Section {
-                CustomNavigationLink(title: "Default List", status: "Reminders", destination: EmptyView())
+                CustomNavigationLink(title: "Default List".localize(table: table), status: "Reminders".localize(table: table), destination: EmptyView())
             } footer: {
-                Text("Reminders created outside of a specific list are placed in this list.")
+                Text("Reminders created outside of a specific list are placed in this list.", tableName: table)
             }
             
             Section {
-                Toggle("Today Notifications", isOn: $todayNotifications.animation())
+                Toggle("Today Notifications".localize(table: table), isOn: $todayNotifications.animation())
                 if todayNotifications {
                     Button {
                         showingTimePicker.toggle()
                     } label: {
                         HStack {
-                            Text("Time")
+                            Text("Time", tableName: table)
                                 .foregroundStyle(Color["Label"])
                             Spacer()
                             Text(selectedTime, style: .time)
@@ -69,7 +70,7 @@ struct RemindersView: View {
                 }
                 if showingTimePicker {
                     DatePicker(
-                        "Selected Time",
+                        "Time".localize(table: table),
                         selection: $selectedTime,
                         displayedComponents: .hourAndMinute
                     )
@@ -78,36 +79,36 @@ struct RemindersView: View {
                     .frame(maxWidth: .infinity)
                 }
             } header: {
-                Text("All-Day Reminders")
+                Text("All-Day Reminders", tableName: table)
             } footer: {
-                Text("Set a time to show a notification when there are all-day reminders (with no specified time).")
+                Text("Set a time to show a notification when there are all-day reminders (with no specified time).", tableName: table)
             }
             
             Section {
-                Toggle("Show as Overdue", isOn: $showOverdue)
+                Toggle("Show as Overdue".localize(table: table), isOn: $showOverdue)
             } footer: {
-                Text("Show all-day reminders as overdue starting on the next day.")
+                Text("Show all-day reminders as overdue starting on the next day.", tableName: table)
             }
             
             Section {
-                Toggle("Include Due Today", isOn: $includeDueToday)
+                Toggle("Include Due Today".localize(table: table), isOn: $includeDueToday)
             } header: {
-                Text("Badge Count")
+                Text("Badge Count", tableName: table)
             } footer: {
-                Text("Include both overdue and due today items in badge count.")
+                Text("Include both overdue and due today items in badge count.", tableName: table)
             }
             
-            Section("Assigned Reminders") {
+            Section("Assigned Reminders".localize(table: table)) {
                 Toggle("Mute Notifications", isOn: $muteAssignedReminders)
             }
             
-            Section("When Adding Reminders") {
-                Toggle("Show Suggestions", isOn: $showSuggestions)
+            Section("When Adding Reminders".localize(table: table)) {
+                Toggle("Show Suggestions".localize(table: table), isOn: $showSuggestions)
             }
         }
         .toolbar {
             ToolbarItem(placement: .principal) {
-                Text("Reminders")
+                Text("Reminders", tableName: table)
                     .fontWeight(.semibold)
                     .font(.subheadline)
                     .opacity(frameY < 50.0 ? opacity : 0) // Only fade when passing the help section title at the top
