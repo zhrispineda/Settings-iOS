@@ -12,36 +12,37 @@ struct DTVProviderView: View {
     @State private var cacheBusterEnabled = false
     @State private var disableTimeoutsEnabled = false
     @State private var simluateExpiredTokenEnabled = false
+    let table = "VideoSubscriberAccount"
     
     var body: some View {
-        CustomList(title: "TV Provider") {
+        CustomList(title: "TV_PROVIDER_TITLE".localize(table: table), topPadding: true) {
             Section {
-                Toggle("Cache Buster", isOn: $cacheBusterEnabled)
+                Toggle("DEVELOPER_IS_CACHEBUSTER_ENABLED_ACTION_TITLE".localize(table: table), isOn: $cacheBusterEnabled)
             } header: {
-                Text("Options")
+                Text("DEVELOPER_OPTIONS_GROUP_TITLE", tableName: table)
             } footer: {
-                Text("When enabled, the query parameter “cachebuster“ will be added to development TV Provider Auth URLs.")
+                Text("DEVELOPER_IS_CACHEBUSTER_ENABLED_ACTION_DESCRIPTION", tableName: table)
             }
             
             Section {
-                Toggle("Disable Timeouts", isOn: $disableTimeoutsEnabled)
+                Toggle("DEVELOPER_REQUEST_TIMEOUTS_TITLE".localize(table: table), isOn: $disableTimeoutsEnabled)
             } footer: {
-                Text("When enabled, the defauzlt callback timeouts will be disabled in development TV Provider authentication contexts.")
+                Text("DEVELOPER_REQUEST_TIMEOUTS_DESCRIPTION", tableName: table)
             }
             
             Section {
-                Toggle("Simulate Expired Token", isOn: $disableTimeoutsEnabled)
+                Toggle("DEVELOPER_SIMULATE_EXPIRED_TOKEN_TITLE".localize(table: table), isOn: $disableTimeoutsEnabled)
             } footer: {
-                Text("When enabled, authentication tokens provided to applications and the JavaScript authentication context will have an expiration date in the past.")
+                Text("DEVELOPER_SIMULATE_EXPIRED_TOKEN_DESCRIPTION", tableName: table)
             }
             
             Section {
                 Button {} label: {
-                    Text("Add TV Provider")
+                    Text("IDENTITY_PROVIDER_PICKER_OTHER_PROVIDERS_ROW_TITLE_DEVELOPER", tableName: table)
                         .frame(maxWidth: .infinity)
                 }
             } header: {
-                Text("Development TV Providers")
+                Text("DEVELOPER_PROVIDERS_TITLE", tableName: table)
             }
         }
     }

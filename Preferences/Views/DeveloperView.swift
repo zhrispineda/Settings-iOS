@@ -11,7 +11,7 @@ struct DeveloperView: View {
     // Variables
     @State private var darkAppearanceEnabled = false
     @State private var showingDisplayZoomSheet = false
-    @State private var uiAutomationEnabled = true
+    @State private var uiAutomationEnabled = false
     @State private var fastAppTerminationEnabled = false
     
     @State private var additionalLoggingEnabled = false
@@ -40,26 +40,27 @@ struct DeveloperView: View {
     @State private var hidLoggingEnabled = false
     @State private var heartRateLogging = false
     @State private var showAudioOutput = false
+    let table = "DTSettings"
     
     var body: some View {
-        CustomList(title: "Developer", topPadding: true) {
+        CustomList(title: "DEVELOPER".localize(table: table), topPadding: true) {
             if UIDevice.IsSimulator {
                 Section {
-                    Toggle("Dark Appearance", isOn: $darkAppearanceEnabled)
+                    Toggle("APPEARANCE_DARK".localize(table: table), isOn: $darkAppearanceEnabled)
                 } header: {
-                    Text("Appearance")
+                    Text("APPEARANCE", tableName: table)
                 }
             }
             
             if UIDevice.IsSimulator && UIDevice.iPhone || (UIDevice.iPad && UIDevice.ProDevice) {
                 Section {
                     if UIDevice.iPhone {
-                        CustomNavigationLink(title: "View", status: "Default", destination: DisplayZoomView())
+                        CustomNavigationLink(title: "VIEW".localize(table: table), status: "Default", destination: DisplayZoomView())
                     } else {
                         Button {
                             showingDisplayZoomSheet.toggle()
                         } label: {
-                            LabeledContent("View", value: "Default")
+                            LabeledContent("VIEW".localize(table: table), value: "Default")
                         }
                         .foregroundStyle(Color["Label"])
                         .sheet(isPresented: $showingDisplayZoomSheet) {
@@ -69,140 +70,139 @@ struct DeveloperView: View {
                         }
                     }
                 } header: {
-                    Text("Display Zoom")
+                    Text("DISPLAY_ZOOM", tableName: table)
                 } footer: {
-                    Text("Choose a view for \(UIDevice.current.model). Zoomed shows larger controls. Standard shows more content.")
+                    Text("DISPLAY_ZOOM_DESCRIPTION")
                 }
             }
             
             Section {
-                Button("Clear Trusted Computer") {}
+                Button("CLEAR_TRUSTED_COMPUTERS".localize(table: table)) {}
             } header: {
-                Text("Paired Devices")
+                Text("PAIRED_DEVICES", tableName: table)
             } footer: {
-                Text("Removing trusted computers will delete all of the records of computers that you have paired with previously.")
+                Text("PAIRED_DEVICES_FOOTER", tableName: table)
             }
             
-            Section("UI Automation") {
-                Toggle("Enable UI Automation", isOn: $uiAutomationEnabled)
+            Section("UI_AUTOMATION".localize(table: table)) {
+                Toggle("ENABLE_UI_AUTOMATION".localize(table: table), isOn: $uiAutomationEnabled)
             }
             
             Section {
-                Toggle("Fast App Termination", isOn: $fastAppTerminationEnabled)
+                Toggle("FAST_APP_TERMINATION".localize(table: table), isOn: $fastAppTerminationEnabled)
             } header: {
-                Text("State Restoration Testing")
+                Text("STATE_RESTORATION_TESTING", tableName: table)
             } footer: {
-                Text("Terminate instead of suspending apps when backgrounded to force apps to be relaunched when they are foregrounded.")
+                Text("STATE_RESTORATION_TESTING_FOOTER", tableName: table)
             }
             
             if UIDevice.iPhone { // MARK: Wallet Testing
-                Section("Wallet Testing") {
-                    Toggle("Additional Logging", isOn: $additionalLoggingEnabled)
-                    Toggle("Allow HTTP Services", isOn: $allowHttpServicesEnabled)
-                    Toggle("Disable Rate Limiting", isOn: $disableRateLimitingEnabled)
-                    Toggle("NFC Pass Key Optional", isOn: $nfcPassKeyOptionalEnabled)
+                Section("WALLET_TESTING".localize(table: table)) {
+                    Toggle("ADDITIONAL_LOGGING".localize(table: table), isOn: $additionalLoggingEnabled)
+                    Toggle("ALLOW_HTTP_SERVICES".localize(table: table), isOn: $allowHttpServicesEnabled)
+                    Toggle("DISABLE_RATE_LIMITING".localize(table: table), isOn: $disableRateLimitingEnabled)
+                    Toggle("NFC_PASS_KEY_OPTIONAL".localize(table: table), isOn: $nfcPassKeyOptionalEnabled)
                 }
             }
             
-            Section("Media Services Testing") {
-                //NavigationLink("AirPlay Suggestions", destination: AirPlaySuggestionsView())
-                Button("Reset Media Services") {}
+            Section("MEDIA_SERVICES_TESTING".localize(table: table)) {
+                Button("RESET_MEDIA_SERVICES".localize(table: table)) {}
             }
             
             Section {
-                Toggle("Reset Local Data on Next Launch", isOn: $resetLocalDataNextLaunch)
+                Toggle("RESET_LOCAL_DATA_ON_NEXT_LAUNCH".localize(table: table), isOn: $resetLocalDataNextLaunch)
             } header: {
-                Text("News Testing")
+                Text("NEWS_TESTING", tableName: table)
             } footer: {
-                Text("Reset layouts, images, and other cached elements. Private data will not be affected.")
+                Text("NEWS_TESTING_FOOTER", tableName: table)
             }
             
-            Section("TV Provider Testing") {
-                NavigationLink("TV Provider", destination: DTVProviderView())
+            Section("TV_PROVIDER_TESTING".localize(table: table)) {
+                NavigationLink("TV_PROVIDERS".localize(table: table), destination: DTVProviderView())
             }
             
             Section {
-                NavigationLink("TV App", destination: TVAppView())
+                NavigationLink("TV_APP".localize(table: table), destination: TVAppView())
             } header: {
-                Text("TV App Testing")
+                Text("TV_APP_TESTING", tableName: table)
             }
             
-            Section("CoreSpotlight Testing") {
-                Button("Reindex All Items") {}
-                Button("Reindex All Items with Identifiers") {}
+            Section("CORESPOTLIGHT_TESTING".localize(table: table)) {
+                Button("REINDEX_ALL_ITEMS".localize(table: table)) {}
+                Button("REINDEX_ALL_ITEMS_WITH_IDENTIFIERS".localize(table: table)) {}
             }
             
             Section {
-                Toggle("WidgetKit Developer Mode", isOn: $widgetKitDeveloperModeEnabled)
+                Toggle("WIDGETKIT_DEVELOPER_MODE_ENABLED".localize(table: table), isOn: $widgetKitDeveloperModeEnabled)
             } header: {
-                Text("WidgetKit Testing")
+                Text("WIDGETKIT_DEVELOPER_MODE_ENABLED", tableName: table)
             } footer: {
-                Text("When turned on, your widgets will not be subject to the standard WidgetKit constraints to allow for debugging.")
+                Text("WIDGET_TESTING_FOOTER", tableName: table)
             }
             
             Section {
-                Toggle("Display Recent Shortcuts", isOn: $displayRecentShortcutsEnabled)
+                Toggle("DISPLAY_DONATIONS_SPOTLIGHT".localize(table: table), isOn: $displayRecentShortcutsEnabled)
             } header: {
-                Text("Shortcuts Testing")
+                Text("SIRI_ACTIONS_TESTING", tableName: table)
             } footer: {
-                Text("When turned on, the Siri Suggestions Widget & Siri Watch Face show the most recently provided shortcuts rather than current predictions.")
+                Text("SIRI_ACTIONS_FOOTER_SPOTLIGHT", tableName: table)
             }
             
             Section {
-                Toggle("Display Upcoming Media", isOn: $displayUpcomingMediaEnabled)
+                Toggle("DISPLAY_UPCOMING_MEDIA".localize(table: table), isOn: $displayUpcomingMediaEnabled)
             } footer: {
-                Text("When turned on, Siri Suggestions in Search will show Upcoming Media Intents donated via INUpcomingMediaManager.")
+                Text("SIRI_ACTIONS_FOOTER_UPCOMING_MEDIA", tableName: table)
             }
             
             Section {
-                Toggle("Display Donations on Lock Screen", isOn: $displayDonationsLockScreenEnabled)
+                Toggle("DISPLAY_DONATIONS_LOCKSCREEN".localize(table: table), isOn: $displayDonationsLockScreenEnabled)
             } footer: {
-                Text("When turned on, the most recently donated shortcuts will be shown on the Lock Screen.")
+                Text("SIRI_ACTIONS_FOOTER_LOCKSCREEN", tableName: table)
             }
             
             Section {
-                Button("Force Sync Shortcuts to Watch") {}
+                Button("SIRI_ACTIONS_SYNC_WATCHOS".localize(table: table)) {}
             } footer: {
-                Text("To force sync shortcuts, make sure Apple Watch is connected to its charger.")
+                Text("SIRI_ACTIONS_FOOTER_SYNC_WATCHOS", tableName: table)
             }
             
             Section {
-                Toggle("Allow Any Domain", isOn: $allowAnyDomainsEnabled)
-                Toggle("Allow Unverified Sources", isOn: $allowUnverifiedSources)
+                Toggle("SIRI_EVENT_SUGGESTIONS_TESTING_ALLOW_ANY_DOMAIN".localize(table: table), isOn: $allowAnyDomainsEnabled)
+                Toggle("SIRI_EVENT_SUGGESTIONS_TESTING_ALLOW_UNVERIFIED_DOCUMENTS".localize(table: table), isOn: $allowUnverifiedSources)
             } header: {
-                Text("Siri Event Suggestions Testing")
+                Text("SIRI_EVENT_SUGGESTIONS_TESTING_HEADER", tableName: table)
             } footer: {
-                Text("These settings affect Siri Event Suggestions from Mail and Safari. Enable Allow Any Domain to allow e-mails or web pages which have not yet been approved for Siri Event Suggestions by Apple. Enable Allow Unverified Sources to bypass DKIM or SSL authenticity verification for Siri Event Suggestions in Mail and Safari.")
+                Text("SIRI_EVENT_SUGGESTIONS_TESTING_FOOTER", tableName: table)
             }
             
-            Section("MIDI-CI Testing") {
-                Toggle("Enable MIDI-CI", isOn: $enableMidiCi)
-            }
-            
-            Section {
-                Toggle("Show Graphics HUD", isOn: $showGraphicsHudEnabled)
-                Toggle("Log Graphics Performance", isOn: $logGraphicsPerformanceEnabled)
-            } header: {
-                Text("Graphics HUD")
-            } footer: {
-                Text("The graphics performance HUD shows framerate, GPU time, memory usage, and can log performance data for later analysis.")
+            Section("MIDI_CI_API_BETA".localize(table: table)) {
+                Toggle("MIDI_CI_API_BETA_ENABLE".localize(table: table), isOn: $enableMidiCi)
             }
             
             Section {
-                Toggle("HID Logging", isOn: $hidLoggingEnabled)
-                Toggle("Heart Rate Logging", isOn: $hidLoggingEnabled)
+                Toggle("SHOW_GRAPHICS_HUD".localize(table: table), isOn: $showGraphicsHudEnabled)
+                Toggle("LOG_GRAPHICS_PERFORMANCE".localize(table: table), isOn: $logGraphicsPerformanceEnabled)
             } header: {
-                Text("Bluetooth Logging")
+                Text("GRAPHICS_HUD", tableName: table)
             } footer: {
-                Text("Allow additional data exchanged over Bluetooth to be saved in packetlogger file.")
+                Text("GRAPHICS_HUD_FOOTER", tableName: table)
             }
             
             Section {
-                Toggle("Show Audio Output in Settings", isOn: $showAudioOutput)
+                Toggle("BLUETOOTH_TESTING_HID_LOGGING_ENABLE".localize(table: table), isOn: $hidLoggingEnabled)
+                Toggle("BLUETOOTH_TESTING_HRM_LOGGING_ENABLE".localize(table: table), isOn: $hidLoggingEnabled)
             } header: {
-                Text("Siri in Bluetooth Car Testing")
+                Text("BLUETOOTH_LOGGING", tableName: table)
             } footer: {
-                Text("Allow Siri to change audio route in a bluetooth vehicle. Go to Settings -> Siri & Search -> Siri Responses -> \"When Connected to Car Bluetooth\" to change the audio route.")
+                Text("BLUETOOTH_LOGGING_FOOTER", tableName: table)
+            }
+            
+            Section {
+                Toggle("PREFERRED_AUDIO_ROUTE_TESTING".localize(table: table), isOn: $showAudioOutput)
+            } header: {
+                Text("PREFERRED_AUDIO_ROUTE_TITLE", tableName: table)
+            } footer: {
+                Text("PREFERRED_AUDIO_ROUTE_FOOTER", tableName: table)
             }
         }
     }

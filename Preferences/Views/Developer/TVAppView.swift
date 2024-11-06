@@ -8,10 +8,14 @@
 import SwiftUI
 
 struct TVAppView: View {
+    // Variables
+    let table = "VideoSubscriberAccount"
+    let devTable = "DTSettings"
+    
     var body: some View {
-        CustomList(title: "TV App") {
+        CustomList(title: "TV_APP".localize(table: devTable)) {
             Section {} footer: {
-                Text("\nNo developer accounts added. User accounts written by developer apps will be listed here.")
+                Text("TV_APP_DEVELOPER_NO_ACCOUNTS_PLACEHOLDER", tableName: table)
                     .frame(maxWidth: .infinity)
                     .multilineTextAlignment(.center)
             }
@@ -20,5 +24,7 @@ struct TVAppView: View {
 }
 
 #Preview {
-    TVAppView()
+    NavigationStack {
+        TVAppView()
+    }
 }

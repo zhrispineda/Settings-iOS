@@ -15,23 +15,23 @@ struct DisplayZoomView: View {
     @State private var selected = "Default"
     @State private var lastSelection = "Default"
     var options = ["Larger Text", "Default"]
+    let table = "DTDisplayZoom"
     
     var body: some View {
-        CustomList(title: "Display Zoom") {
-            Picker("", selection: $selected) {
+        CustomList(title: "DISPLAY_ZOOM".localize(table: table)) {
+            Picker("DISPLAY_ZOOM".localize(table: table), selection: $selected) {
                 ForEach(options, id: \.self) {
                     Text($0)
                 }
             }
             .pickerStyle(.inline)
+            .labelsHidden()
         }
         .toolbar {
             if UIDevice.iPad {
                 ToolbarItem(placement: .topBarLeading) {
-                    Button {
+                    Button("CONFIRMATION_CANCEL".localize(table: table)) {
                         dismiss()
-                    } label: {
-                        Text("Cancel")
                     }
                 }
             }
@@ -39,26 +39,26 @@ struct DisplayZoomView: View {
                 Button {
                     UIDevice.iPhone ? showingChangeDialog.toggle() : showingChangeAlert.toggle()
                 } label: {
-                    Text("Set")
+                    Text("SET", tableName: table)
                 }
                 .disabled(selected == lastSelection)
             }
         }
-        .alert("Use \(selected == "Larger Text" ? "Zoomed" : "More Space")", isPresented: $showingChangeAlert) {
-            Button("Use \(selected == "Larger Text" ? "Zoomed" : "More Space")", role: .none) {
+        .alert(selected == "Larger Text" ? "CONFIRMATION_USE_ZOOMED".localize(table: table) : "CONFIRMATION_USE_DENSE".localize(table: table), isPresented: $showingChangeAlert) {
+            Button(selected == "Larger Text" ? "ZOOMED".localize(table: table) : "CONFIRMATION_USE_DENSE".localize(table: table), role: .none) {
                 lastSelection = selected
             }
-            Button("Cancel", role: .cancel) {}
+            Button("CONFIRMATION_CANCEL".localize(table: table), role: .cancel) {}
         } message: {
-            Text("Changing Display Zoom will restart iPad.")
+            Text("CONFIRMATION_PROMPT", tableName: table)
         }
-        .confirmationDialog("Changing Display Zoom will restart iPhone.", isPresented: $showingChangeDialog,
+        .confirmationDialog("CONFIRMATION_PROMPT", isPresented: $showingChangeDialog,
                             titleVisibility: .visible,
                             actions: {
-            Button("Use \(selected == "Default" ? "Standard" : "Zoomed")", role: .none) {
+            Button(selected == "Default" ? "CONFIRMATION_USE_STANDARD".localize(table: table) : "CONFIRMATION_USE_ZOOMED".localize(table: table), role: .none) {
                 lastSelection = selected
             }
-            Button("Cancel", role: .cancel) {}
+            Button("CONFIRMATION_CANCEL".localize(table: table), role: .cancel) {}
         })
     }
 }
