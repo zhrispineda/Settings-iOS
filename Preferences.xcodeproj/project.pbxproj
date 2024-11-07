@@ -10,6 +10,8 @@
 		83076D022C7E73D000BFFAFE /* PiPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83076D012C7E73D000BFFAFE /* PiPView.swift */; };
 		83076D042C7E754600BFFAFE /* BackgroundAppRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83076D032C7E754600BFFAFE /* BackgroundAppRefreshView.swift */; };
 		83096BD82BA232D50082DB61 /* AppleAccountSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83096BD72BA232D50082DB61 /* AppleAccountSignInView.swift */; };
+		830976CF2CDD19FF0087F1A1 /* FollowUp.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 830976CE2CDD19FF0087F1A1 /* FollowUp.xcstrings */; };
+		830976D12CDD1A0E0087F1A1 /* CoreFollowUp.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 830976D02CDD1A0E0087F1A1 /* CoreFollowUp.xcstrings */; };
 		8309893A2C44AA9C00535A8F /* UIDeviceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830989392C44AA9C00535A8F /* UIDeviceExtensions.swift */; };
 		830CFAC12C990DDA00733411 /* KeyboardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830CFAC02C990DDA00733411 /* KeyboardDetailView.swift */; };
 		830DA8022B9BE17B001EE76F /* ParentGuardianSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830DA8012B9BE17B001EE76F /* ParentGuardianSignInView.swift */; };
@@ -369,6 +371,8 @@
 		83076D012C7E73D000BFFAFE /* PiPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiPView.swift; sourceTree = "<group>"; };
 		83076D032C7E754600BFFAFE /* BackgroundAppRefreshView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundAppRefreshView.swift; sourceTree = "<group>"; };
 		83096BD72BA232D50082DB61 /* AppleAccountSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAccountSignInView.swift; sourceTree = "<group>"; };
+		830976CE2CDD19FF0087F1A1 /* FollowUp.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = FollowUp.xcstrings; sourceTree = "<group>"; };
+		830976D02CDD1A0E0087F1A1 /* CoreFollowUp.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = CoreFollowUp.xcstrings; sourceTree = "<group>"; };
 		830989392C44AA9C00535A8F /* UIDeviceExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtensions.swift; sourceTree = "<group>"; };
 		830CFAC02C990DDA00733411 /* KeyboardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardDetailView.swift; sourceTree = "<group>"; };
 		830DA8012B9BE17B001EE76F /* ParentGuardianSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentGuardianSignInView.swift; sourceTree = "<group>"; };
@@ -1357,10 +1361,12 @@
 				83F77D7B2CD3F9740026B1AC /* ContactlessAndCredentialSettings_Localizable.xcstrings */,
 				831448262CD9498D00FFEE51 /* Contacts.xcstrings */,
 				833101742CD1779700C6C3B3 /* ControlCenterSettings.xcstrings */,
+				830976D02CDD1A0E0087F1A1 /* CoreFollowUp.xcstrings */,
 				832D84F12CD2B0A90075ECF0 /* DigitalSeparationUI.xcstrings */,
 				831C1A4D2CCE9A1300866498 /* Display.xcstrings */,
 				831448282CD95B6200FFEE51 /* FitnessSettings.xcstrings */,
 				833101762CD17A9500C6C3B3 /* FocusSettings.xcstrings */,
+				830976CE2CDD19FF0087F1A1 /* FollowUp.xcstrings */,
 				83A7E1592CBF047B0037F1FB /* FontSettings.xcstrings */,
 				83F77D6A2CD3ED940026B1AC /* GameCenterUICore.xcstrings */,
 				83C3F33C2CC2BA7800AE2402 /* GameControlleriOSSettings.xcstrings */,
@@ -1829,6 +1835,7 @@
 				83F745BC2CC194F900FDB3BA /* AirDropSettings.xcstrings in Resources */,
 				83FF692F2CC6C9CF00D77FBB /* LocalizedStrings-D94.xcstrings in Resources */,
 				832877E12CAD9A2C00013B0B /* BatteryUI.xcstrings in Resources */,
+				830976CF2CDD19FF0087F1A1 /* FollowUp.xcstrings in Resources */,
 				83F516B82C21B7FA0004E87A /* SettingsPhysical.gif in Resources */,
 				830F2B342CD9826E006F7F22 /* NewsSettings.xcstrings in Resources */,
 				83E160762CD022170020DC85 /* AssistantSettings-GM.xcstrings in Resources */,
@@ -1889,6 +1896,7 @@
 				83F77D6D2CD3F2180026B1AC /* PeerPayment_Localizable.xcstrings in Resources */,
 				835BF1312CC19A2300F30DA1 /* AirPlayAndHandoffSettings.xcstrings in Resources */,
 				83DBCE062CCD957C00B33277 /* CameraSettings-TrueVideo.xcstrings in Resources */,
+				830976D12CDD1A0E0087F1A1 /* CoreFollowUp.xcstrings in Resources */,
 				83E748B82CC6C7A50081D660 /* LocalizedStrings-Staccato.xcstrings in Resources */,
 				833F0AD42B744D190036EAD2 /* Assets.xcassets in Resources */,
 				83A7E15A2CBF047B0037F1FB /* FontSettings.xcstrings in Resources */,
