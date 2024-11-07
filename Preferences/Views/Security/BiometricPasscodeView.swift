@@ -69,22 +69,7 @@ struct BiometricPasscodeView: View {
             if UIDevice.PearlIDCapability {
                 Section {
                     Button("SET_UP_FACE_ID".localize(table: table)) {}
-                } footer: {
-//                    Text("In addition to continuously learning how you look, Face ID can recognize an alternate appearance.")
                 }
-                
-//                if UIDevice.iPhone {
-//                    Section {
-//                        Toggle("Face ID with a Mask", isOn: $allowMaskUnlock)
-//                    } footer: {
-//                        Text("Face ID is most accurate when it‘s set up for full-face recognition only. To use Face ID while wearing a mask, iPhone can recognize the unique features around the eye area to authenticate. You must be looking at your iPhone to use Face ID while wearing a mask.")
-//                    }
-//                }
-//                
-//                Section {
-//                    Button("Reset Face ID") {}
-//                        .tint(.red)
-//                }
                 
                 Section {
                     Toggle("PEARL_UNLOCK_ATTENTION_TITLE".localize(table: table), isOn: $requireAttentionForUnlock)
@@ -109,7 +94,7 @@ struct BiometricPasscodeView: View {
                     }
                 }
             } else {
-                Section {
+                Section("FINGERPRINTS".localize(table: oldTable)) {
                     //NavigationLink("IDENTITY_NAME_FORMAT".localize(table: oldTable, "1")) {}
                     Button("ADD_FINGERPRINT".localize(table: oldTable)) {}
                 }
@@ -119,8 +104,6 @@ struct BiometricPasscodeView: View {
                 Button("PASSCODE_ON".localize(table: lockTable)) {}
                 Button("CHANGE_PASSCODE".localize(table: lockTable)) {}
                     .disabled(true)
-            } footer: {
-//                Text("Changing your passcode on this \(UIDevice.current.model) will not disconnect it from other devices or reset \(UIDevice.iPhone ? "iPhone Mirroring, Wi-Fi sync," : "Wi-Fi sync") and watch pairing.")
             }
             
             Section {
@@ -175,7 +158,7 @@ struct BiometricPasscodeView: View {
                         showingEraseConfirmation = allowEraseAfterFailedAttempts
                     }
             } footer: {
-                Text("WIPE_DEVICE_TEXT", tableName: lockTable)//\n\nData protection is enabled.")
+                Text("WIPE_DEVICE_TEXT".localize(table: lockTable, "10"))
             }
         }
         .toolbar {

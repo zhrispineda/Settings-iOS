@@ -13,6 +13,8 @@
 		830976CF2CDD19FF0087F1A1 /* FollowUp.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 830976CE2CDD19FF0087F1A1 /* FollowUp.xcstrings */; };
 		830976D12CDD1A0E0087F1A1 /* CoreFollowUp.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 830976D02CDD1A0E0087F1A1 /* CoreFollowUp.xcstrings */; };
 		830976D32CDD1B2F0087F1A1 /* FollowUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830976D22CDD1B2F0087F1A1 /* FollowUpView.swift */; };
+		830976D82CDD2FB40087F1A1 /* SettingsSimulator.gif in Resources */ = {isa = PBXBuildFile; fileRef = 830976D72CDD2FB40087F1A1 /* SettingsSimulator.gif */; };
+		830976D92CDD2FB40087F1A1 /* SettingsPhysical.gif in Resources */ = {isa = PBXBuildFile; fileRef = 830976D62CDD2FB40087F1A1 /* SettingsPhysical.gif */; };
 		8309893A2C44AA9C00535A8F /* UIDeviceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830989392C44AA9C00535A8F /* UIDeviceExtensions.swift */; };
 		830CFAC12C990DDA00733411 /* KeyboardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830CFAC02C990DDA00733411 /* KeyboardDetailView.swift */; };
 		830DA8022B9BE17B001EE76F /* ParentGuardianSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830DA8012B9BE17B001EE76F /* ParentGuardianSignInView.swift */; };
@@ -141,7 +143,6 @@
 		836000782BCC7A470034DDF5 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836000772BCC7A470034DDF5 /* NotificationsView.swift */; };
 		836167D82C25FA3A00458CD8 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836167D72C25FA3A00458CD8 /* CalendarView.swift */; };
 		8361A2292C19308600A7D5CC /* Placard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8361A2282C19308600A7D5CC /* Placard.swift */; };
-		8361A22B2C193DBA00A7D5CC /* SettingsSimulator.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8361A22A2C193DBA00A7D5CC /* SettingsSimulator.gif */; };
 		836A7E892B981D8E00FA3223 /* AppleAccountLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836A7E882B981D8E00FA3223 /* AppleAccountLoginView.swift */; };
 		836A7E8B2B995E4000FA3223 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836A7E8A2B995E4000FA3223 /* ForgotPasswordView.swift */; };
 		836CDF932CB602B300B1C5B2 /* Restrictions.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 836CDF922CB602B300B1C5B2 /* Restrictions.xcstrings */; };
@@ -325,7 +326,6 @@
 		83F3F6A72B7D2BAA003CC310 /* FontsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3F6A62B7D2BAA003CC310 /* FontsView.swift */; };
 		83F3F6A92B7D2EFE003CC310 /* LanguageRegionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3F6A82B7D2EFE003CC310 /* LanguageRegionView.swift */; };
 		83F455B32C3C8CA5009DB157 /* LocationServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F455B22C3C8CA5009DB157 /* LocationServicesView.swift */; };
-		83F516B82C21B7FA0004E87A /* SettingsPhysical.gif in Resources */ = {isa = PBXBuildFile; fileRef = 83F516B72C21B7FA0004E87A /* SettingsPhysical.gif */; };
 		83F516BA2C21D88B0004E87A /* StandByView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F516B92C21D88B0004E87A /* StandByView.swift */; };
 		83F516BC2C21E8F50004E87A /* WallpaperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F516BB2C21E8F50004E87A /* WallpaperView.swift */; };
 		83F516BE2C21EA100004E87A /* EmergencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F516BD2C21EA100004E87A /* EmergencyView.swift */; };
@@ -375,6 +375,8 @@
 		830976CE2CDD19FF0087F1A1 /* FollowUp.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = FollowUp.xcstrings; sourceTree = "<group>"; };
 		830976D02CDD1A0E0087F1A1 /* CoreFollowUp.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = CoreFollowUp.xcstrings; sourceTree = "<group>"; };
 		830976D22CDD1B2F0087F1A1 /* FollowUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowUpView.swift; sourceTree = "<group>"; };
+		830976D62CDD2FB40087F1A1 /* SettingsPhysical.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SettingsPhysical.gif; sourceTree = "<group>"; };
+		830976D72CDD2FB40087F1A1 /* SettingsSimulator.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SettingsSimulator.gif; sourceTree = "<group>"; };
 		830989392C44AA9C00535A8F /* UIDeviceExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtensions.swift; sourceTree = "<group>"; };
 		830CFAC02C990DDA00733411 /* KeyboardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardDetailView.swift; sourceTree = "<group>"; };
 		830DA8012B9BE17B001EE76F /* ParentGuardianSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentGuardianSignInView.swift; sourceTree = "<group>"; };
@@ -504,7 +506,6 @@
 		836000772BCC7A470034DDF5 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		836167D72C25FA3A00458CD8 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		8361A2282C19308600A7D5CC /* Placard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placard.swift; sourceTree = "<group>"; };
-		8361A22A2C193DBA00A7D5CC /* SettingsSimulator.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SettingsSimulator.gif; sourceTree = "<group>"; };
 		836A7E882B981D8E00FA3223 /* AppleAccountLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAccountLoginView.swift; sourceTree = "<group>"; };
 		836A7E8A2B995E4000FA3223 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		836CDF922CB602B300B1C5B2 /* Restrictions.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Restrictions.xcstrings; sourceTree = "<group>"; };
@@ -690,7 +691,6 @@
 		83F3F6A62B7D2BAA003CC310 /* FontsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsView.swift; sourceTree = "<group>"; };
 		83F3F6A82B7D2EFE003CC310 /* LanguageRegionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageRegionView.swift; sourceTree = "<group>"; };
 		83F455B22C3C8CA5009DB157 /* LocationServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServicesView.swift; sourceTree = "<group>"; };
-		83F516B72C21B7FA0004E87A /* SettingsPhysical.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SettingsPhysical.gif; sourceTree = "<group>"; };
 		83F516B92C21D88B0004E87A /* StandByView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandByView.swift; sourceTree = "<group>"; };
 		83F516BB2C21E8F50004E87A /* WallpaperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperView.swift; sourceTree = "<group>"; };
 		83F516BD2C21EA100004E87A /* EmergencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyView.swift; sourceTree = "<group>"; };
@@ -747,8 +747,8 @@
 		83012BD62BFE516A00BF431C /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				83F516B72C21B7FA0004E87A /* SettingsPhysical.gif */,
-				8361A22A2C193DBA00A7D5CC /* SettingsSimulator.gif */,
+				830976D62CDD2FB40087F1A1 /* SettingsPhysical.gif */,
+				830976D72CDD2FB40087F1A1 /* SettingsSimulator.gif */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -1839,13 +1839,14 @@
 				83FF692F2CC6C9CF00D77FBB /* LocalizedStrings-D94.xcstrings in Resources */,
 				832877E12CAD9A2C00013B0B /* BatteryUI.xcstrings in Resources */,
 				830976CF2CDD19FF0087F1A1 /* FollowUp.xcstrings in Resources */,
-				83F516B82C21B7FA0004E87A /* SettingsPhysical.gif in Resources */,
 				830F2B342CD9826E006F7F22 /* NewsSettings.xcstrings in Resources */,
 				83E160762CD022170020DC85 /* AssistantSettings-GM.xcstrings in Resources */,
 				83DBCE092CCD9B0800B33277 /* AssistantMultilingualDetail.xcstrings in Resources */,
 				837D24292CD0293C00274D42 /* ScreenTimeSettingsUI.xcstrings in Resources */,
 				83F77D7A2CD3F8A70026B1AC /* Pearl_Localizable.xcstrings in Resources */,
 				831C1A562CCEA4F100866498 /* SiriSuggestions.xcstrings in Resources */,
+				830976D82CDD2FB40087F1A1 /* SettingsSimulator.gif in Resources */,
+				830976D92CDD2FB40087F1A1 /* SettingsPhysical.gif in Resources */,
 				83F77D782CD3F7C70026B1AC /* WalletSettings_Localizable.xcstrings in Resources */,
 				834565742CAAE673002BE49D /* CameraEditKit.xcstrings in Resources */,
 				83F77D6B2CD3ED940026B1AC /* GameCenterUICore.xcstrings in Resources */,
@@ -1922,7 +1923,6 @@
 				83F3611C2CD2E25700041A72 /* AppleAdvertising.xcstrings in Resources */,
 				83F745BA2CC18EC700FDB3BA /* NewDeviceOutreachUI.xcstrings in Resources */,
 				837BCF332CD2E880009B1E33 /* Pearl.xcstrings in Resources */,
-				8361A22B2C193DBA00A7D5CC /* SettingsSimulator.gif in Resources */,
 				8345656E2CAADFD6002BE49D /* CameraSettings.xcstrings in Resources */,
 				832877DB2CAD915400013B0B /* AmbientSettings.xcstrings in Resources */,
 				8388E5342CD034EB00A3066D /* Location Services.xcstrings in Resources */,
