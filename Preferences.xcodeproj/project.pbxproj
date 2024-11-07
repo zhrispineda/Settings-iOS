@@ -12,6 +12,7 @@
 		83096BD82BA232D50082DB61 /* AppleAccountSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83096BD72BA232D50082DB61 /* AppleAccountSignInView.swift */; };
 		830976CF2CDD19FF0087F1A1 /* FollowUp.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 830976CE2CDD19FF0087F1A1 /* FollowUp.xcstrings */; };
 		830976D12CDD1A0E0087F1A1 /* CoreFollowUp.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 830976D02CDD1A0E0087F1A1 /* CoreFollowUp.xcstrings */; };
+		830976D32CDD1B2F0087F1A1 /* FollowUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830976D22CDD1B2F0087F1A1 /* FollowUpView.swift */; };
 		8309893A2C44AA9C00535A8F /* UIDeviceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830989392C44AA9C00535A8F /* UIDeviceExtensions.swift */; };
 		830CFAC12C990DDA00733411 /* KeyboardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830CFAC02C990DDA00733411 /* KeyboardDetailView.swift */; };
 		830DA8022B9BE17B001EE76F /* ParentGuardianSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830DA8012B9BE17B001EE76F /* ParentGuardianSignInView.swift */; };
@@ -373,6 +374,7 @@
 		83096BD72BA232D50082DB61 /* AppleAccountSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAccountSignInView.swift; sourceTree = "<group>"; };
 		830976CE2CDD19FF0087F1A1 /* FollowUp.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = FollowUp.xcstrings; sourceTree = "<group>"; };
 		830976D02CDD1A0E0087F1A1 /* CoreFollowUp.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = CoreFollowUp.xcstrings; sourceTree = "<group>"; };
+		830976D22CDD1B2F0087F1A1 /* FollowUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowUpView.swift; sourceTree = "<group>"; };
 		830989392C44AA9C00535A8F /* UIDeviceExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtensions.swift; sourceTree = "<group>"; };
 		830CFAC02C990DDA00733411 /* KeyboardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardDetailView.swift; sourceTree = "<group>"; };
 		830DA8012B9BE17B001EE76F /* ParentGuardianSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentGuardianSignInView.swift; sourceTree = "<group>"; };
@@ -1264,6 +1266,7 @@
 				83F516C72C21ECBD0004E87A /* Services */,
 				833C6EAA2C2087BB00A8D91C /* Apps */,
 				83F626D22B827EEC00ED343F /* Developer */,
+				830976D22CDD1B2F0087F1A1 /* FollowUpView.swift */,
 				83F516C32C21EB550004E87A /* AppsView.swift */,
 				83815CF82B768F5C00F53A0F /* DeveloperView.swift */,
 			);
@@ -1961,6 +1964,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				830976D32CDD1B2F0087F1A1 /* FollowUpView.swift in Sources */,
 				832999532CAF93BA009AD115 /* MGHelper.swift in Sources */,
 				83B98E302B7C087B007F6C94 /* IconToggle.swift in Sources */,
 				838134F72BCDA9380049E197 /* SoundsHapticsView.swift in Sources */,

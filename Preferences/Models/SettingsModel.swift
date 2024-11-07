@@ -12,6 +12,12 @@ struct Configuration {
     let developerMode = true
 }
 
+// MARK: State Manager
+class StateManager: ObservableObject {
+    @Published var selection: SettingsModel? = .general
+    @Published var destination = AnyView(GeneralView())
+}
+
 // MARK: - SettingsModel data
 enum SettingsModel: String, CaseIterable {
     case accessibility = "Accessibility"
@@ -29,6 +35,7 @@ enum SettingsModel: String, CaseIterable {
     case displayBrightness = "Display & Brightness"
     case emergencySOS = "Emergency SOS"
     case focus = "Focus"
+    case followUp = "Follow Up"
     case gameCenter = "Game Center"
     case general = "General"
     case homeScreenAppLibrary = "Home Screen & App Library"
@@ -74,6 +81,12 @@ let hierarchyIcons = ["faceid", "questionmark.app.dashed", "questionmark.square.
 let internalIcons = ["airdrop", "apple.photos", "apps.iphone.assistive.access", "arrow.clockwise.app.stack.fill", "arrowtriangles.up.right.down.left.magnifyingglass", "bluetooth", "carplay", "chevron.3.up.perspective", "clock.filled.and.widget.filled", "eye.tracking", "figure.run.motion", "ipad.top.button.arrow.down", "iphone.action.button.arrow.right", "iphone.badge.dot.radiowaves.up.forward", "iphone.side.button.arrow.left", "keyboard.badge.waveform.fill", "key.dots.fill", "lock.square.dotted", "nearby.interactions", "network.connected.to.line.below", "pencil.and.sparkles", "person.badge.waveform.fill", "satellite.fill", "sensorkit", "speaker.eye.fill", "voice.control", "waveform.arrow.triangle.branch.right", "waveform.bubble.fill"]
 
 // MARK: - Settings Layout
+
+// MARK: Follow Up Settings
+@MainActor let followUpSettings: [SettingsItem] = [
+    SettingsItem(type: .followUp, title: "Follow Up", icon: "None", destination: AnyView(FollowUpView())),
+]
+
 // MARK: Radio Settings
 @MainActor let radioSettings: [SettingsItem] = [
     SettingsItem(type: .wifi, title: "Wi-Fi", icon: "wifi", color: .blue, destination: AnyView(NetworkView())),
@@ -167,4 +180,4 @@ let internalIcons = ["airdrop", "apple.photos", "apps.iphone.assistive.access", 
 ]
 
 // MARK: Combined Settings Array
-@MainActor let combinedSettings = radioSettings + attentionSettings + mainSettings + securitySettings + serviceSettings + appsSettings + developerSettings + simulatorMainSettings + simulatorSecuritySettings
+@MainActor let combinedSettings = followUpSettings + radioSettings + attentionSettings + mainSettings + securitySettings + serviceSettings + appsSettings + developerSettings + simulatorMainSettings + simulatorSecuritySettings

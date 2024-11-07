@@ -1,5 +1,5 @@
 //
-//  SiriSearchView.swift
+//  SiriView.swift
 //  Preferences
 //
 //  Settings > Siri
@@ -12,7 +12,7 @@ struct SiriView: View {
     // Variables
     let apps = ["Calendar", "Contacts", "Files", "Health", "Maps", "Messages", "News", "Photos", "Reminders", "Safari", "Settings", "Wallet", "Watch"]
     
-    @State private var siriEnabled = true
+    @State private var siriEnabled = false
     @State private var showingDisableSiriAlert = false
     @State private var showingDisableSiriPopup = false
     @State private var showingEnableSiriAlert = false
@@ -40,7 +40,7 @@ struct SiriView: View {
     
     var body: some View {
         CustomList {
-            if UIDevice.IntelligenceCapability { // If RAM is 8 GB or higher
+            if UIDevice.IntelligenceCapability {
                 Section {
                     Placard(title: "Apple Intelligence & Siri".localize(table: table), icon: "appleIntelligence", description: UIDevice.iPhone ? "PLACARD_DESCRIPTION_GM".localize(table: gmTable) : "PLACARD_DESCRIPTION_GM_IPAD".localize(table: gmTable))
                         .overlay { // For calculating opacity of the principal toolbar item
@@ -73,63 +73,34 @@ struct SiriView: View {
                     }
             }
             
-//            Section {
-//                TipView(AppleIntelligenceTip())
-//                    .tipBackground(Color.background)
-//                    .task {
-//                        do {
-//                            try Tips.configure([
-//                                .displayFrequency(.immediate),
-//                                .datastoreLocation(.applicationDefault)
-//                            ])
-//                        }
-//                        catch {
-//                            print("Error initializing TipKit \(error.localizedDescription)")
-//                        }
-//                    }
-//                Button("Learn More") {}
-//                    .bold()
-//                    .padding(.leading, 70)
-//            }
+            Section {
+                TipView(AppleIntelligenceTip())
+                    .tipBackground(Color.background)
+                    .task {
+                        do {
+                            try Tips.configure([
+                                .displayFrequency(.immediate),
+                                .datastoreLocation(.applicationDefault)
+                            ])
+                        }
+                        catch {
+                            print("Error initializing TipKit \(error.localizedDescription)")
+                        }
+                    }
+                Button("Learn More") {}
+                    .bold()
+                    .padding(.leading, 70)
+            }
             
             Section {
-                CustomNavigationLink(title: "LANGUAGE".localize(table: table), status: "English (United States)", destination: SiriLanguageView())
-                if !siriEnabled {
-                    CustomNavigationLink(title: "VOICE".localize(table: table), status: "\("REGION_en-US".localize(table: table)) (Voice 4)", destination: SiriVoiceView())
-                }
                 if !UIDevice.IsSimulator {
                     CustomNavigationLink(title: "ACTIVATION_COMPACT".localize(table: table), status: "ACTIVATION_OFF".localize(table: table), destination: EmptyView())
                 }
-//                Toggle("Press \(Device().isPhone ? "\(Device().hasHomeButton ? "Home" : "Side") Button" : "Top Button") for Siri", isOn: $siriEnabled)
-//                    .alert("Turn Off Siri?", isPresented: $showingDisableSiriAlert) {
-//                        Button("Turn Off Siri") {}
-//                        Button("Cancel", role: .cancel) {}
-//                    } message: {
-//                        Text("The information Siri uses to respond to your requests will be removed from Apple servers. If you want to use Siri later, it will take some time to re-send this information.")
-//                    }
-//                    .alert("Enable Siri?", isPresented: $showingEnableSiriAlert) {
-//                        Button("Enable Siri") {}
-//                        Button("Cancel", role: .cancel) {}
-//                    } message: {
-//                        Text("Siri sends information like your voice input, contacts, and location to Apple to process your requests.")
-//                    }
-//                    .confirmationDialog("Turn Off Siri", isPresented: $showingDisableSiriPopup, titleVisibility: .visible) {
-//                        Button("Turn Off Siri") {}
-//                        Button("Cancel", role: .cancel) {
-//                            siriEnabled = true
-//                        }
-//                    } message: {
-//                        Text("The information Siri uses to respond to your requests will be removed from Apple servers. If you want to use Siri later, it will take some time to re-send this information.")
-//                    }
-//                    .confirmationDialog("Enable Siri", isPresented: $showingEnableSiriPopup, titleVisibility: .visible) {
-//                        Button("Enable Siri") {}
-//                        Button("Cancel", role: .cancel) {}
-//                    } message: {
-//                        Text("Siri sends information like your voice input, contacts, and location to Apple to process your requests.")
-//                    }
-//                    .onChange(of: siriEnabled) {
-//                        siriEnabled ? (Device().isPhone ? showingEnableSiriPopup.toggle() : showingEnableSiriAlert.toggle()) : (Device().isPhone ? showingDisableSiriPopup.toggle() : showingDisableSiriAlert.toggle())
-//                    }
+                if !siriEnabled {
+                    CustomNavigationLink(title: "VOICE".localize(table: table), status: "", destination: SiriVoiceView()) // \("REGION_en-US".localize(table: table)) (Voice 4)
+                } else {
+                    CustomNavigationLink(title: "LANGUAGE".localize(table: table), status: "English (United States)", destination: SiriLanguageView())
+                }
                 if siriEnabled {
                     if !UIDevice.IsSimulator {
                         Toggle("ASSISTANT_LOCK_SCREEN_ACCESS".localize(table: table), isOn: $allowSiriWhenLockedEnabled)
@@ -140,7 +111,7 @@ struct SiriView: View {
                         NavigationLink("ANNOUNCE_CALLS_TITLE".localize(table: table), destination: EmptyView())
                         NavigationLink("ANNOUNCE_MESSAGES_TITLE".localize(table: table), destination: EmptyView())
                     }
-                    Button {} label: { // TODO: Popover
+                    Button {} label: {
                         HStack {
                             Text("MyInfo", tableName: table)
                                 .foregroundStyle(Color["Label"])
@@ -153,14 +124,13 @@ struct SiriView: View {
                     }
                 }
                 NavigationLink("ASSISTANT_HISTORY_LABEL".localize(table: table)) {}
-                NavigationLink("MESSAGE_TITLE".localize(table: table), destination: {
-                    CustomList(title: "MESSAGE_TITLE".localize(table: table)) {}
-                })
+//                NavigationLink("MESSAGE_TITLE".localize(table: table), destination: {
+//                    CustomList(title: "MESSAGE_TITLE".localize(table: table)) {}
+//                })
             } header: {
                 Text("SIRI_REQUESTS", tableName: table)
             } footer: {
                 Text(.init(UIDevice.IsSimulator ? "[\("SIRI_REQUESTS_ABOUT_LINK_TEXT".localize(table: table))](#)" : "\("SIRI_REQUESTS_DEVICE_PROCESSING_FOOTER_TEXT_IPHONE".localize(table: table))" + " [\("SIRI_REQUESTS_ABOUT_LINK_TEXT".localize(table: table))](#)"))
-//                Text(siriEnabled ? "Voice input is processed on \(UIDevice.current.model), but transcripts of your requests are sent to Apple. [About Siri & Privacy...](#)" : "Siri can help you get things done just by asking. [About Siri & Privacy...](#)")
             }
             
             Section {
@@ -223,7 +193,9 @@ struct SiriView: View {
         }
         
         var image: Image? {
-            Image("")
+            Image(systemName: "apple.intelligence")
+                .symbolRenderingMode(.multicolor)
+                
         }
     }
 }
