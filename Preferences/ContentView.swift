@@ -13,13 +13,13 @@ let tabletOnly = ["Apple Pencil", "Multitasking & Gestures"]
 
 struct ContentView: View {
     // Variables
+    @EnvironmentObject var stateManager: StateManager
     @State private var searchText = String()
     @State private var showingSignInSheet = false
-    @State private var selection: SettingsModel? = .general
-    @State private var destination = AnyView(GeneralView())
     @State private var isOnLandscapeOrientation: Bool = UIDevice.current.orientation.isLandscape
     @State private var id = UUID()
     @State private var preloadRect = false
+    @AppStorage("FollowUpDismissed") private var followUpDismissed = false
     @AppStorage("AirplaneMode") private var airplaneModeEnabled = false
     @AppStorage("wifi") private var wifiEnabled = true
     @AppStorage("bluetooth") private var bluetoothEnabled = true
@@ -34,7 +34,7 @@ struct ContentView: View {
                 NavigationStack {
                     // MARK: - iPadOS Settings
                     if UIDevice.iPad {
-                        List(selection: $selection) {
+                        List(selection: $stateManager.selection) {
                             if !preloadRect {
                                 Section {
                                     Rectangle()
@@ -56,13 +56,17 @@ struct ContentView: View {
                                 }
                             }
                             
-//                            Section {
-//                                SettingsLabel(id: "Finish Setting Up Your \(UIDevice().model)", badgeCount: 1)
-//                            }
-//
-//                            Section {
-//                                SettingsLabel(id: "More for Your \(UIDevice().model)", badgeCount: 3)
-//                            }
+                            if !followUpDismissed {
+                                Section {
+                                    Button {
+                                        id = UUID() // Reset destination
+                                        stateManager.selection = .followUp
+                                    } label: {
+                                        SettingsLabel(id: "FOLLOWUP_TITLE".localize(table: "FollowUp"), badgeCount: 1)
+                                            .foregroundStyle(Color(UIColor.label))
+                                    }
+                                }
+                            }
                             
                             // MARK: Radio
                             if !UIDevice.IsSimulator {
@@ -72,12 +76,12 @@ struct ContentView: View {
                                         if !phoneOnly.contains(setting.id) && requiredCapabilities(capability: setting.capability) {
                                             Button {
                                                 id = UUID() // Reset destination
-                                                selection = setting.type
+                                                stateManager.selection = setting.type
                                             } label: {
                                                 SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Wi-Fi" ? (wifiEnabled && !airplaneModeEnabled ? "Not Connected" : "Off") : setting.id == "Bluetooth" ? (bluetoothEnabled ? "On" : "Off") : String())
-                                                    .foregroundStyle(selection == setting.type ? (UIDevice.IsSimulator ? Color.white : Color["Label"]) : Color["Label"])
+                                                    .foregroundStyle(stateManager.selection == setting.type ? (UIDevice.IsSimulator ? Color.white : Color["Label"]) : Color["Label"])
                                             }
-                                            .listRowBackground(selection == setting.type ? (UIDevice.IsSimulator ? Color.blue : Color("Selected")) : nil)
+                                            .listRowBackground(stateManager.selection == setting.type ? (UIDevice.IsSimulator ? Color.blue : Color("Selected")) : nil)
                                         }
                                     }
                                     //IconToggle(enabled: $vpnEnabled, color: .blue, icon: "network.connected.to.line.below", title: "VPN")
@@ -85,22 +89,22 @@ struct ContentView: View {
                             }
                             
                             // MARK: Main
-                            SettingsLabelSection(selection: $selection, id: $id, item: UIDevice.IsSimulator ? simulatorMainSettings : mainSettings)
+                            SettingsLabelSection(selection: $stateManager.selection, id: $id, item: UIDevice.IsSimulator ? simulatorMainSettings : mainSettings)
                             
                             // MARK: Attention
-                            SettingsLabelSection(selection: $selection, id: $id, item: UIDevice.IsSimulator ? attentionSimulatorSettings : attentionSettings)
+                            SettingsLabelSection(selection: $stateManager.selection, id: $id, item: UIDevice.IsSimulator ? attentionSimulatorSettings : attentionSettings)
                             
                             // MARK: Security
-                            SettingsLabelSection(selection: $selection, id: $id, item: UIDevice.IsSimulator ? simulatorSecuritySettings : securitySettings)
+                            SettingsLabelSection(selection: $stateManager.selection, id: $id, item: UIDevice.IsSimulator ? simulatorSecuritySettings : securitySettings)
                             
                             // MARK: Services
-                            SettingsLabelSection(selection: $selection, id: $id, item: UIDevice.IsSimulator ? simulatorServiceSettings : serviceSettings)
+                            SettingsLabelSection(selection: $stateManager.selection, id: $id, item: UIDevice.IsSimulator ? simulatorServiceSettings : serviceSettings)
                             
                             // MARK: Apps
-                            SettingsLabelSection(selection: $selection, id: $id, item: appsSettings)
+                            SettingsLabelSection(selection: $stateManager.selection, id: $id, item: appsSettings)
                             
                             // MARK: Developer
-                            SettingsLabelSection(selection: $selection, id: $id, item: developerSettings)
+                            SettingsLabelSection(selection: $stateManager.selection, id: $id, item: developerSettings)
                         }
                         .navigationTitle("Settings")
                         .onAppear {
@@ -121,9 +125,9 @@ struct ContentView: View {
                                 isOnLandscapeOrientation = UIDevice.current.orientation.isLandscape
                             }
                         }
-                        .onChange(of: selection) { // Change views when selecting sidebar navigation links
-                            if let selectedSettingsItem = combinedSettings.first(where: { $0.type == selection }) {
-                                destination = selectedSettingsItem.destination
+                        .onChange(of: stateManager.selection) { // Change views when selecting sidebar navigation links
+                            if let selectedSettingsItem = combinedSettings.first(where: { $0.type == stateManager.selection }) {
+                                stateManager.destination = selectedSettingsItem.destination
                             }
                         }
                     } else {
@@ -142,6 +146,14 @@ struct ContentView: View {
                                     NavigationStack {
                                         SelectSignInOptionView()
                                             .interactiveDismissDisabled()
+                                    }
+                                }
+                            }
+                            
+                            if !followUpDismissed {
+                                Section {
+                                    SettingsLink(icon: "None", id: "FOLLOWUP_TITLE".localize(table: "FollowUp"), badgeCount: 1) {
+                                        FollowUpView()
                                     }
                                 }
                             }
@@ -193,7 +205,7 @@ struct ContentView: View {
                 .frame(maxWidth: UIDevice.iPad ? (isOnLandscapeOrientation ? 415 : 320) : nil)
                 if UIDevice.iPad {
                     NavigationStack {
-                        destination
+                        stateManager.destination
                     }
                     .id(id)
                 }
@@ -316,4 +328,5 @@ struct SettingsLinkSection: View {
 
 #Preview {
     ContentView()
+        .environmentObject(StateManager())
 }

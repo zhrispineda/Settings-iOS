@@ -66,6 +66,7 @@ struct SettingsLabel: View {
             }
             
             if badgeCount > 0 {
+                Spacer()
                 Image(systemName: "\(badgeCount).circle.fill")
                     .foregroundStyle(.white, .red)
                     .imageScale(.large)

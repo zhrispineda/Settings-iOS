@@ -21,6 +21,7 @@ import SwiftUI
 /// - Parameter id: The ``String`` name of the link to display.
 /// - Parameter subtitle: An optional ``String`` below the id displaying a short summary.
 /// - Parameter status: An optional ``String`` on the opposing side displaying its current state.
+/// - Parameter badgeCount: An optional ``Int`` on the opposing side displaying a red badge with a number.
 /// - Parameter content: The destination ``Content`` for the NavigationLink.
 struct SettingsLink<Content: View>: View {
     // Variables
@@ -32,61 +33,64 @@ struct SettingsLink<Content: View>: View {
     var id: String = String()
     var subtitle: String = String()
     var status: String = String()
+    var badgeCount: Int = 0
     @ViewBuilder var content: Content
     
     var body: some View {
         NavigationLink(destination: content) {
             HStack(spacing: 15) {
-                ZStack {
-                    // Background of icon
-                    if icon == "Placeholder" && colorScheme == .dark {
-                        Image(systemName: "app.fill")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 30)
-                            .foregroundStyle(.black.gradient)
-                    } else {
-                        Image(systemName: "app.fill")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 30)
-                            .foregroundStyle(color)
+                if icon != "None" {
+                    ZStack {
+                        // Background of icon
+                        if icon == "Placeholder" && colorScheme == .dark {
+                            Image(systemName: "app.fill")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 30)
+                                .foregroundStyle(.black.gradient)
+                        } else {
+                            Image(systemName: "app.fill")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 30)
+                                .foregroundStyle(color)
+                        }
+                        
+                        // Check if icon is an SF Symbol or an image asset
+                        if UIImage(systemName: icon) != nil {
+                            Image(systemName: icon)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: smallerIcons.contains(icon) ? (icon == "appletvremote.gen4.fill" ? 8 : 13) : 20)
+                                .symbolRenderingMode(hierarchyIcons.contains(icon) ? .hierarchical : .none)
+                                .foregroundStyle(iconColor)
+                        } else if icon.contains("custom") {
+                            Image(icon)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: smallerIcons.contains(icon) ? 13 : 20)
+                                .foregroundStyle(.gray, .white)
+                        } else if internalIcons.contains(icon) {
+                            Image(_internalSystemName: icon)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: smallerIcons.contains(icon) ? 13 : 20)
+                                .symbolRenderingMode(hierarchyIcons.contains(icon) ? .hierarchical : .none)
+                                .foregroundStyle(iconColor)
+                                .scaleEffect(CGSize(width: 1.0, height: id == "Camera Control" ? -1.0 : 1.0))
+                        } else {
+                            Image(icon)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 30)
+                                .clipShape(RoundedRectangle(cornerRadius: 6))
+                        }
                     }
-                    
-                    // Check if icon is an SF Symbol or an image asset
-                    if UIImage(systemName: icon) != nil {
-                        Image(systemName: icon)
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: smallerIcons.contains(icon) ? (icon == "appletvremote.gen4.fill" ? 8 : 13) : 20)
-                            .symbolRenderingMode(hierarchyIcons.contains(icon) ? .hierarchical : .none)
-                            .foregroundStyle(iconColor)
-                    } else if icon.contains("custom") {
-                        Image(icon)
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: smallerIcons.contains(icon) ? 13 : 20)
-                            .foregroundStyle(.gray, .white)
-                    } else if internalIcons.contains(icon) {
-                        Image(_internalSystemName: icon)
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: smallerIcons.contains(icon) ? 13 : 20)
-                            .symbolRenderingMode(hierarchyIcons.contains(icon) ? .hierarchical : .none)
-                            .foregroundStyle(iconColor)
-                            .scaleEffect(CGSize(width: 1.0, height: id == "Camera Control" ? -1.0 : 1.0))
-                    } else {
-                        Image(icon)
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 30)
-                            .clipShape(RoundedRectangle(cornerRadius: 6))
-                    }
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 6)
+                            .stroke(colorScheme == .light && color == .white ? Color.black.opacity(0.2) : Color.clear , lineWidth: 0.5)
+                    )
                 }
-                .overlay(
-                    RoundedRectangle(cornerRadius: 6)
-                        .stroke(colorScheme == .light && color == .white ? Color.black.opacity(0.2) : Color.clear , lineWidth: 0.5)
-                )
                 
                 // Title and status text
                 VStack(alignment: .leading) {
@@ -110,6 +114,13 @@ struct SettingsLink<Content: View>: View {
                             .lineLimit(1)
                             .foregroundStyle(.secondary)
                     }
+                }
+                
+                if badgeCount > 0 {
+                    Spacer()
+                    Image(systemName: "\(badgeCount).circle.fill")
+                        .foregroundStyle(.white, .red)
+                        .imageScale(.large)
                 }
             }
         }
