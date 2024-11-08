@@ -26,8 +26,8 @@ struct HoverTextView: View {
             }
             
             Section {
-                CustomNavigationLink(title: "AXHoverTextDisplayModeTitle".localize(table: table), status: "AXHoverTextDisplayModeDockedTopTitle".localize(table: table), destination: SelectOptionList(title: "AXHoverTextDisplayModeTitle".localize(table: table), options: ["AXHoverTextDisplayModeInlineHoverTitle".localize(table: table), "AXHoverTextDisplayModeDockedTopTitle".localize(table: table), "AXHoverTextDisplayModeDockedBottomTitle".localize(table: table)], selected: "AXHoverTextDisplayModeDockedTopTitle".localize(table: table)))
-                CustomNavigationLink(title: "AXHoverTextScrollingSpeedTitle".localize(table: table), status: "AXHoverTextScrollingSpeedDefaultTitle".localize(table: table), destination: SelectOptionList(title: "AXHoverTextScrollingSpeedTitle".localize(table: table), options: ["AXHoverTextScrollingSpeedSlowestTitle".localize(table: table), "AXHoverTextScrollingSpeedSlowerTitle".localize(table: table), "AXHoverTextScrollingSpeedDefaultTitle".localize(table: table), "AXHoverTextScrollingSpeedFasterTitle".localize(table: table), "AXHoverTextScrollingSpeedFastestTitle".localize(table: table)], selected: "AXHoverTextScrollingSpeedDefaultTitle".localize(table: table)))
+                CustomNavigationLink(title: "AXHoverTextDisplayModeTitle".localize(table: table), status: "AXHoverTextDisplayModeDockedTopTitle".localize(table: table), destination: SelectOptionList(title: "AXHoverTextDisplayModeTitle", options: ["AXHoverTextDisplayModeInlineHoverTitle", "AXHoverTextDisplayModeDockedTopTitle", "AXHoverTextDisplayModeDockedBottomTitle"], selected: "AXHoverTextDisplayModeDockedTopTitle", table: table))
+                CustomNavigationLink(title: "AXHoverTextScrollingSpeedTitle".localize(table: table), status: "AXHoverTextScrollingSpeedDefaultTitle".localize(table: table), destination: SelectOptionList(title: "AXHoverTextScrollingSpeedTitle", options: ["AXHoverTextScrollingSpeedSlowestTitle", "AXHoverTextScrollingSpeedSlowerTitle", "AXHoverTextScrollingSpeedDefaultTitle", "AXHoverTextScrollingSpeedFasterTitle", "AXHoverTextScrollingSpeedFastestTitle"], selected: "AXHoverTextScrollingSpeedDefaultTitle", table: table))
                 CustomNavigationLink(title: "HOVER_TEXT_TEXT_STYLE".localize(table: table), status: "AXHoverTextScrollingSpeedDefaultTitle".localize(table: table), destination: HoverTextFontView())
                 CustomNavigationLink(title: "HOVER_TEXT_TEXT_SIZE".localize(table: table), status: "ON".localize(table: table), destination: HoverTextSizeView())
             } header: {
@@ -44,7 +44,7 @@ struct HoverTextView: View {
             }
             
             Section {
-                CustomNavigationLink(title: "HOVER_TEXT_ACTIVATION_MODIFIER".localize(table: table), status: "HOVER_TEXT_ACITVATOR_KEY_CONTROL".localize(table: table), destination: SelectOptionList(title: "HOVER_TEXT_ACTIVATION_MODIFIER".localize(table: table), options: ["HOVER_TEXT_ACITVATOR_KEY_CONTROL".localize(table: table), "HOVER_TEXT_ACITVATOR_KEY_OPTION".localize(table: table), "HOVER_TEXT_ACITVATOR_KEY_COMMAND".localize(table: table)], selected: "HOVER_TEXT_ACITVATOR_KEY_CONTROL".localize(table: table)))
+                CustomNavigationLink(title: "HOVER_TEXT_ACTIVATION_MODIFIER".localize(table: table), status: "HOVER_TEXT_ACITVATOR_KEY_CONTROL".localize(table: table), destination: SelectOptionList(title: "HOVER_TEXT_ACTIVATION_MODIFIER", options: ["HOVER_TEXT_ACITVATOR_KEY_CONTROL", "HOVER_TEXT_ACITVATOR_KEY_OPTION", "HOVER_TEXT_ACITVATOR_KEY_COMMAND"], selected: "HOVER_TEXT_ACITVATOR_KEY_CONTROL", table: table))
                 Toggle("HOVER_TEXT_ACTIVATION_LOCK".localize(table: table), isOn: $activationLockEnabled)
             } header: {
                 Text("HOVER_TEXT_CONTROL_OPTIONS", tableName: table)
