@@ -45,7 +45,7 @@ struct ContentPrivacyRestrictionsView: View {
             
             Section {
                 CustomNavigationLink(title: "PasscodeChangesSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: SelectOptionList(title: "PasscodeChangesSpecifierName".localize(table: table)))
-                CustomNavigationLink(title: "AccountChangesSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: SelectOptionList(title: "AccountChangesSpecifierName"))
+                CustomNavigationLink(title: "AccountChangesSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: SelectOptionList(title: "AccountChangesSpecifierName", table: "Restrictions"))
                 CustomNavigationLink(title: "CellularChangesSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: SelectOptionList(title: "CellularChangesSpecifierName".localize(table: table)))
                 CustomNavigationLink(title: "ReduceLoudSoundsSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: SelectOptionList(title: "ReduceLoudSoundsSpecifierName".localize(table: table)))
                 CustomNavigationLink(title: "DrivingFocusSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: SelectOptionList(title: "DrivingFocusSpecifierName".localize(table: table)))

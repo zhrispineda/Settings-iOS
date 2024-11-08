@@ -20,10 +20,10 @@ struct SelectOptionList: View {
     var options = ["Allow", "Don‘t Allow"]
     var selectedBinding: Binding<String>? = nil
     @State var selected = "Allow"
-    var table = "Restrictions"
+    var table = String()
     
     var body: some View {
-        CustomList(title: title) {
+        CustomList(title: title.localize(table: table)) {
             Section {
                 if let selectedBinding = selectedBinding {
                     Picker(title, selection: selectedBinding) {
@@ -44,16 +44,25 @@ struct SelectOptionList: View {
                 }
             } footer: {
                 switch title {
-                case "Account Changes":
+                case "AccountChangesSpecifierName":
                     Text("AccountChangesFooterText", tableName: table)
-                case "Ask to Join Networks":
-                    Text("kWFLocAskToJoin\(selected)Footer".localize(table: "WiFiKitUILocalizableStrings"))
-                case "Connect with Friends":
+                case "kWFLocAskToJoinTitle":
+                    switch selected {
+                    case "kWFLocAskToJoinDetailOff":
+                        Text("kWFLocAskToJoinOffFooter", tableName: table)
+                    case "kWFLocAskToJoinDetailNotify":
+                        Text("kWFLocAskToJoinNotifyFooter", tableName: table)
+                    case "kWFLocAskToJoinDetailAsk":
+                        Text("kWFLocAskToJoinAskFooter", tableName: table)
+                    default:
+                        EmptyView()
+                    }
+                case "ConnectWithFriendsSpecifierName":
                     VStack(alignment: .leading) {
                         Text("ConnectWithFriendsExplanatoryFooterText", tableName: table)
-                        Text("\n" + "ConnectWithFriendsContinuedExplanatoryText".localize(table: table))
+                        Text("\n") + Text("ConnectWithFriendsContinuedExplanatoryText", tableName: table)
                     }
-                case "Private Messaging":
+                case "PrivateMessagingSpecifierName":
                     Text("PrivateMessagingFooter", tableName: table)
                 default:
                     EmptyView()
@@ -65,6 +74,6 @@ struct SelectOptionList: View {
 
 #Preview {
     NavigationStack {
-        SelectOptionList(title: "ConnectWithFriendsSpecifierName".localize(table: "Restrictions"))
+        SelectOptionList(title: "kWFLocAskToJoinTitle", options: ["kWFLocAskToJoinDetailOff", "kWFLocAskToJoinDetailNotify", "kWFLocAskToJoinDetailAsk"], selected: "kWFLocAskToJoinDetailOff", table: "WiFiKitUILocalizableStrings")
     }
 }

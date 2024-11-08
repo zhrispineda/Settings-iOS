@@ -10,6 +10,8 @@ import SwiftUI
 struct NetworkView: View {
     // Variables
     @AppStorage("wifi") private var wifiEnabled = true
+    @AppStorage("AskJoinNetworkSelection") private var askJoinNetworkSelection = "kWFLocAskToJoinDetailNotify"
+    @AppStorage("AutoJoinHotspotSelection") private var autoJoinHotspotSelection = "kWFLocAutoInstantHotspotJoinAskTitle"
     @State var editMode: EditMode = .inactive
     @State var isEditing = false
     @State private var frameY = Double()
@@ -21,7 +23,7 @@ struct NetworkView: View {
         CustomList(title: "kWFLocWiFiPowerTitle".localize(table: table)) {
             if isEditing {
                 Section {} header: {
-                    Text("kWFLocAllEditableKnownSectionTitle".localize(table: table))
+                    Text("kWFLocAllEditableKnownSectionTitle", tableName: table)
                 }
             } else {
                 Section {
@@ -40,12 +42,12 @@ struct NetworkView: View {
                         HStack {
                             Image(systemName: "checkmark")
                                 .foregroundStyle(.clear)
-                            Text("kWFLocWiFiPlacardTitle".localize(table: table))
+                            Text("kWFLocWiFiPlacardTitle", tableName: table)
                         }
                     }
                 } footer: {
                     if !wifiEnabled {
-                        Text(UIDevice.iPhone ? "kWFLocLocationServicesCellularWarning".localize(table: table) : "kWFLocLocationServicesWarning".localize(table: table))
+                        Text(UIDevice.iPhone ? "kWFLocLocationServicesCellularWarning" : "kWFLocLocationServicesWarning", tableName: table)
                     }
                 }
                 
@@ -57,7 +59,7 @@ struct NetworkView: View {
                             HStack {
                                 Image(systemName: "checkmark")
                                     .foregroundStyle(.clear)
-                                Text("kWFLocOtherNetworkTitle".localize(table: table))
+                                Text("kWFLocOtherNetworkTitle", tableName: table)
                                     .foregroundStyle(Color["Label"])
                                     .popover(isPresented: $showingOtherNetwork) {
                                         OtherNetworkView()
@@ -66,19 +68,19 @@ struct NetworkView: View {
                             }
                         }
                     } header: {
-                        Text("kWFLocChooseNetworkSectionSingleTitle".localize(table: table))
+                        Text("kWFLocChooseNetworkSectionSingleTitle", tableName: table)
                     }
                     
                     Section {
-                        CustomNavigationLink(title: "kWFLocAskToJoinTitle".localize(table: table), status: "kWFLocAskToJoinDetailNotify".localize(table: table), destination: SelectOptionList(title: "kWFLocAskToJoinTitle".localize(table: table), options: ["kWFLocAskToJoinDetailOff".localize(table: table), "kWFLocAskToJoinDetailNotify".localize(table: table), "kWFLocAskToJoinDetailAsk".localize(table: table)], selected: "kWFLocAskToJoinDetailNotify".localize(table: table)))
+                        CustomNavigationLink(title: "kWFLocAskToJoinTitle".localize(table: table), status: askJoinNetworkSelection.localize(table: table), destination: SelectOptionList(title: "kWFLocAskToJoinTitle", options: ["kWFLocAskToJoinDetailOff", "kWFLocAskToJoinDetailNotify", "kWFLocAskToJoinDetailAsk"], selectedBinding: $askJoinNetworkSelection, table: table))
                     } footer: {
-                        Text("kWFLocAskToJoinNotifyFooter".localize(table: table))
+                        Text("kWFLocAskToJoinNotifyFooter", tableName: table)
                     }
                     
                     Section {
-                        CustomNavigationLink(title: "kWFLocAutoInstantHotspotTitle".localize(table: table), status: "kWFLocAutoInstantHotspotJoinAskTitle".localize(table: table), destination: SelectOptionList(title: "kWFLocAutoInstantHotspotTitle".localize(table: table), options: ["kWFLocAutoInstantHotspotJoinNeverTitle".localize(table: table), "kWFLocAutoInstantHotspotJoinAskTitle".localize(table: table), "kWFLocAutoInstantHotspotJoinAutoTitle".localize(table: table)], selected: "kWFLocAutoInstantHotspotJoinAutoTitle".localize(table: table)))
+                        CustomNavigationLink(title: "kWFLocAutoInstantHotspotTitle".localize(table: table), status: autoJoinHotspotSelection.localize(table: table), destination: SelectOptionList(title: "kWFLocAutoInstantHotspotTitle", options: ["kWFLocAutoInstantHotspotJoinNeverTitle", "kWFLocAutoInstantHotspotJoinAskTitle", "kWFLocAutoInstantHotspotJoinAutoTitle"], selectedBinding: $autoJoinHotspotSelection, table: table))
                     } footer: {
-                        Text("kWFLocAutoInstantHotspotFooter".localize(table: table))
+                        Text("kWFLocAutoInstantHotspotFooter", tableName: table)
                     }
                 }
             }
