@@ -11,7 +11,10 @@ struct OtherNetworkView: View {
     // Variables
     @Environment(\.dismiss) private var dismiss
     @State private var networkName = String()
+    @State private var security = "kWFLocSecurityWPA2WPA3Title"
+    @State private var username = String()
     @State private var password = String()
+    @State var status = "kWFLocOtherNetworksPrompt"
     @FocusState private var isFocused: Bool
     let table = "WiFiKitUILocalizableStrings"
     
@@ -26,42 +29,86 @@ struct OtherNetworkView: View {
                             .padding(.leading, 10)
                     }
                 }
+                .onAppear {
+                    setNavigationPrompt()
+                }
                 
                 Section {
-                    CustomNavigationLink(title: "kWFLocOtherNetworkSecurityTitle".localize(table: table), status: "kWFLocSecurityWPA2WPA3Title".localize(table: table), destination: EmptyView())
-                    HStack {
-                        Text("kWFLocOtherNetworkPasswordTitle", tableName: table)
-                        SecureField("", text: $password)
-                            .padding(.leading, 10)
+                    CustomNavigationLink(title: "kWFLocOtherNetworkSecurityTitle".localize(table: table), status: security.localize(table: table), destination: SecurityView(security: $security))
+                    if security.contains("Enterprise") {
+                        HStack {
+                            Text("kWFLocOtherNetworkUsernameTitle", tableName: table)
+                            TextField("", text: $username)
+                                .padding(.leading, 10)
+                        }
+                    }
+                    if security != "kWFLocSecurityNoneTitle" {
+                        HStack {
+                            Text("kWFLocOtherNetworkPasswordTitle", tableName: table)
+                            SecureField("", text: $password)
+                                .padding(.leading, 10)
+                        }
                     }
                 }
             }
+            .navigationTitle("kWFLocOtherNetworksTitle".localize(table: table))
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                ToolbarItem(placement: .principal) {
-                    Text("kWFLocOtherNetworksTitle", tableName: table)
-                        .fontWeight(.semibold)
-                }
                 ToolbarItem(placement: .topBarLeading) {
                     Button {
                         dismiss()
                     } label: {
                         Text("kWFLocAdhocJoinCancelButton", tableName: table)
-                            .padding(.top, 10)
+                            .foregroundStyle(Color.accentColor)
                     }
                 }
                 ToolbarItem(placement: .topBarTrailing) {
-                    Button {
-                        dismiss()
-                    } label: {
+                    Button {} label: {
                         Text("kWFLocOtherNetworksJoinButton", tableName: table)
                             .fontWeight(.semibold)
-                            .padding(.top, 10)
+                            .foregroundStyle(Color.accentColor)
                     }
-                    .disabled(true)
+                    .disabled(networkName.count < 1 || (password.count < 8 && username.isEmpty) || username.count < 1 && password.count < 1)
                 }
             }
         }
+    }
+    
+    // Workaround for accessing UINavigationItem prompt
+    private func setNavigationPrompt() {
+        guard let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+              let window = scene.windows.first,
+              let rootVC = window.rootViewController else {
+            return
+        }
+        
+        if let presentedVC = getPresentedViewController(from: rootVC) {
+            if let navigationController = getNavigationController(from: presentedVC) {
+                navigationController.topViewController?.navigationItem.prompt = status.localize(table: table)
+            }
+        }
+    }
+    
+    private func getPresentedViewController(from viewController: UIViewController) -> UIViewController? {
+        var currentVC = viewController
+        while let presentedVC = currentVC.presentedViewController {
+            currentVC = presentedVC // Ensures the selected view controller is from OtherNetworkView (top view) when presented as a popover
+        }
+        return currentVC
+    }
+    
+    private func getNavigationController(from viewController: UIViewController) -> UINavigationController? {
+        if let navigationController = viewController as? UINavigationController {
+            return navigationController
+        }
+        
+        for child in viewController.children {
+            if let navigationController = getNavigationController(from: child) {
+                return navigationController
+            }
+        }
+        
+        return nil
     }
 }
 

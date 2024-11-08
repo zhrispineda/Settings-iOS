@@ -9,16 +9,16 @@ import SwiftUI
 
 struct NetworkView: View {
     // Variables
+    @AppStorage("wifi") private var wifiEnabled = true
     @State var editMode: EditMode = .inactive
     @State var isEditing = false
-    @AppStorage("wifi") private var wifiEnabled = true
+    @State private var frameY = Double()
+    @State private var opacity = Double()
     @State private var showingOtherNetwork = false
-    @State private var opacity: Double = 0
-    @State private var frameY: Double = 0
     let table = "WiFiKitUILocalizableStrings"
     
     var body: some View {
-        CustomList {
+        CustomList(title: "kWFLocWiFiPowerTitle".localize(table: table)) {
             if isEditing {
                 Section {} header: {
                     Text("kWFLocAllEditableKnownSectionTitle".localize(table: table))

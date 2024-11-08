@@ -11,24 +11,37 @@ import SwiftUI
 /// ```
 /// - Parameter title: The ``String`` to display as the title of the ``View``.
 /// - Parameter options: The ``String Array``of available options to pick from..
+/// - Parameter selectedBinding: The optional ``<Binding>String`` holding the currently selected value.
 /// - Parameter selected: The ``String`` holding the currently selected value.
+/// - Parameter table: The ``String`` table name to use for localization.
 struct SelectOptionList: View {
     // Variables
     var title = String()
     var options = ["Allow", "Don‘t Allow"]
+    var selectedBinding: Binding<String>? = nil
     @State var selected = "Allow"
-    let table = "Restrictions"
+    var table = "Restrictions"
     
     var body: some View {
         CustomList(title: title) {
             Section {
-                Picker("", selection: $selected) {
-                    ForEach(options, id: \.self) { option in
-                        Text(option)
+                if let selectedBinding = selectedBinding {
+                    Picker(title, selection: selectedBinding) {
+                        ForEach(options, id: \.self) { option in
+                            Text(option.localize(table: table))
+                        }
                     }
+                    .pickerStyle(.inline)
+                    .labelsHidden()
+                } else {
+                    Picker(title, selection: $selected) {
+                        ForEach(options, id: \.self) { option in
+                            Text(option.localize(table: table))
+                        }
+                    }
+                    .pickerStyle(.inline)
+                    .labelsHidden()
                 }
-                .pickerStyle(.inline)
-                .labelsHidden()
             } footer: {
                 switch title {
                 case "Account Changes":
