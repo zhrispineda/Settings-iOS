@@ -61,7 +61,7 @@ struct NetworkView: View {
                                     .foregroundStyle(.clear)
                                 Text("kWFLocOtherNetworkTitle", tableName: table)
                                     .foregroundStyle(Color["Label"])
-                                    .popover(isPresented: $showingOtherNetwork) {
+                                    .sheet(isPresented: $showingOtherNetwork) {
                                         OtherNetworkView()
                                             .foregroundStyle(Color["Label"])
                                     }

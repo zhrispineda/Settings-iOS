@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct NetworkDetailView: View {
-    @State private var privateAddressOption = "Fixed"
+    @State private var privateAddressOption = "kWFLocRandomMACStaticOption"
     let table = "WiFiKitUILocalizableStrings"
     
     var body: some View {
@@ -36,7 +36,7 @@ struct NetworkDetailView: View {
             
             Section {
                 //Toggle("Private Wi-Fi Address", isOn: $privateWifiAddressEnabled)
-                CustomNavigationLink(title: "Private Wi-Fi Address", status: "Fixed", destination: SelectOptionList(title: "Private Wi-Fi Address", options: ["kWFLocRandomMACOffOption".localize(table: table), "kWFLocRandomMACStaticOption".localize(table: table), "kWFLocRandomMACRotatingOption".localize(table: table)], selected: privateAddressOption))
+                CustomNavigationLink(title: "KWFLocSettingRandomMACSwitchTitle".localize(table: table), status: "kWFLocRandomMACStaticOption".localize(table: table), destination: SelectOptionList(title: "KWFLocSettingRandomMACSwitchTitle", options: ["kWFLocRandomMACOffOption", "kWFLocRandomMACStaticOption", "kWFLocRandomMACRotatingOption"], selected: privateAddressOption, table: table))
                 LabeledContent("MACAddress", value: generateRandomAddress())
             } footer: {
                 VStack(alignment: .leading) {

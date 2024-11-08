@@ -17,7 +17,7 @@ struct BackgroundAppRefreshView: View {
         CustomList(title: "AUTO_CONTENT_DOWNLOAD".localize(table: table)) {
             if UIDevice.CellularTelephonyCapability {
                 Section {
-                    CustomNavigationLink(title: "AUTO_CONTENT_DOWNLOAD".localize(table: table), status: backgroundAppRefreshPicker.localize(table: table), destination: SelectOptionList(title: "AUTO_CONTENT_DOWNLOAD".localize(table: table), options: ["NONE".localize(table: table), "WIFI_ONLY".localize(table: table), "WIFI_AND_CELLULAR".localize(table: table)], selected: "Wi-Fi & Cellular Data".localize(table: table)))
+                    CustomNavigationLink(title: "AUTO_CONTENT_DOWNLOAD".localize(table: table), status: backgroundAppRefreshPicker.localize(table: table), destination: SelectOptionList(title: "AUTO_CONTENT_DOWNLOAD", options: ["NONE", "WIFI_ONLY", "WIFI_AND_CELLULAR"], selected: "Wi-Fi & Cellular Data", table: table))
                 } footer: {
                     Text("FOOTER_WIFI_AND_CELLULAR", tableName: table)
                 }
