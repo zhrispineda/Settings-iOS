@@ -29,7 +29,7 @@ struct CameraView: View {
     @State private var prioritizeFasterShootingEnabled = true
     @State private var lensCorrectionEnabled = true
     @State private var macroControlEnabled = true
-    @State private var showingSheet = true
+    @State private var showingSheet = false
     
     let table = "CameraSettings"
     let buttonTable = "CameraSettings-CameraButton"

@@ -120,6 +120,8 @@
 		83470D162C35A1BC00CE8613 /* AppleAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83470D152C35A1BC00CE8613 /* AppleAccountView.swift */; };
 		834718E42CDFD6D1002D9BC9 /* PrivacyDisclosureUI.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834718E32CDFD6D1002D9BC9 /* PrivacyDisclosureUI.xcstrings */; };
 		834718E62CDFD78E002D9BC9 /* AirDrop.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834718E52CDFD78E002D9BC9 /* AirDrop.xcstrings */; };
+		834718E82CDFDB98002D9BC9 /* PrivacyPane.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834718E72CDFDB98002D9BC9 /* PrivacyPane.xcstrings */; };
+		834718EA2CDFEE53002D9BC9 /* OnBoardingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834718E92CDFEE53002D9BC9 /* OnBoardingDetailView.swift */; };
 		834765E42C7D49D000DD6244 /* AirPlayContinuityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834765E32C7D49D000DD6244 /* AirPlayContinuityView.swift */; };
 		8349E22C2C7514F6007416C5 /* ApplePencilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8349E22B2C7514F6007416C5 /* ApplePencilView.swift */; };
 		834A15022CD85538004A0025 /* ShortcutsAdvancedSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834A15012CD85538004A0025 /* ShortcutsAdvancedSettings.xcstrings */; };
@@ -488,6 +490,8 @@
 		83470D152C35A1BC00CE8613 /* AppleAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAccountView.swift; sourceTree = "<group>"; };
 		834718E32CDFD6D1002D9BC9 /* PrivacyDisclosureUI.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = PrivacyDisclosureUI.xcstrings; sourceTree = "<group>"; };
 		834718E52CDFD78E002D9BC9 /* AirDrop.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AirDrop.xcstrings; sourceTree = "<group>"; };
+		834718E72CDFDB98002D9BC9 /* PrivacyPane.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = PrivacyPane.xcstrings; sourceTree = "<group>"; };
+		834718E92CDFEE53002D9BC9 /* OnBoardingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingDetailView.swift; sourceTree = "<group>"; };
 		834765E32C7D49D000DD6244 /* AirPlayContinuityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPlayContinuityView.swift; sourceTree = "<group>"; };
 		8349E22B2C7514F6007416C5 /* ApplePencilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePencilView.swift; sourceTree = "<group>"; };
 		834A15012CD85538004A0025 /* ShortcutsAdvancedSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = ShortcutsAdvancedSettings.xcstrings; sourceTree = "<group>"; };
@@ -1319,6 +1323,7 @@
 				83A5DA522C234DCB0012ACB3 /* LanguageView.swift */,
 				8340A3C42CB0CEDC005ED66A /* MonospacedLabel.swift */,
 				83ED6B7B2CDF35750022D04C /* OnBoardingView.swift */,
+				834718E92CDFEE53002D9BC9 /* OnBoardingDetailView.swift */,
 			);
 			path = Templates;
 			sourceTree = "<group>";
@@ -1420,6 +1425,7 @@
 				830F2B392CD98E5D006F7F22 /* Photos.xcstrings */,
 				835BF1322CC19DDF00F30DA1 /* PictureInPictureSettings.xcstrings */,
 				834718E32CDFD6D1002D9BC9 /* PrivacyDisclosureUI.xcstrings */,
+				834718E72CDFDB98002D9BC9 /* PrivacyPane.xcstrings */,
 				83441A882CAF2B6A0022E193 /* Privacy.xcstrings */,
 				83AD8C5C2CCAC85500A054B5 /* ProfileNames.xcstrings */,
 				834196262CB89D8F0038183D /* PSSystemPolicy.xcstrings */,
@@ -1914,6 +1920,7 @@
 				830F2B382CD98990006F7F22 /* Passwords.xcstrings in Resources */,
 				8388E5372CD0733400A3066D /* LocationServicesPrivacy.xcstrings in Resources */,
 				83EF90242CD5C20000379263 /* MapsSettings.xcstrings in Resources */,
+				834718E82CDFDB98002D9BC9 /* PrivacyPane.xcstrings in Resources */,
 				833101752CD1779700C6C3B3 /* ControlCenterSettings.xcstrings in Resources */,
 				831448272CD9498D00FFEE51 /* Contacts.xcstrings in Resources */,
 				833F0AD72B744D190036EAD2 /* Preview Assets.xcassets in Resources */,
@@ -2095,6 +2102,7 @@
 				835683942B754623000FB136 /* SettingsLabel.swift in Sources */,
 				83F3F6A32B7D1454003CC310 /* VPNDeviceManagementView.swift in Sources */,
 				832EF38F2B814EC80066A1BF /* LocationPermissionsDetailView.swift in Sources */,
+				834718EA2CDFEE53002D9BC9 /* OnBoardingDetailView.swift in Sources */,
 				83F78A192B8E8CFD00025062 /* AutoHideView.swift in Sources */,
 				832326FB2C9E338F00B0483B /* KeyboardsTypingView.swift in Sources */,
 				83D31F712B8D22DD0057CFDB /* MotionView.swift in Sources */,

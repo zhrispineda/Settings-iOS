@@ -13,6 +13,7 @@ struct OnBoardingView: View {
     @State private var frameY = Double()
     @State private var opacity = Double()
     var table = String()
+    var childView = false // If view is from a parent view
     
     var body: some View {
         NavigationStack {
@@ -36,21 +37,25 @@ struct OnBoardingView: View {
                         .padding(.vertical, 10)
                     Text(table == "AirDrop" ? "FOOTER_TEXT_WIFI" : "FOOTER_TEXT", tableName: table)
                         .font(.caption)
-                    NavigationLink("WELCOME_LEARN_MORE".localize(table: "PrivacyDisclosureUI")) {
-                        EmptyView()
-                    }
+                    if !childView {
+                        NavigationLink("WELCOME_LEARN_MORE".localize(table: "PrivacyDisclosureUI")) {
+                            OnBoardingDetailView()
+                        }
                         .padding(.top, 20)
                         .padding(.bottom, 0)
                         .font(.subheadline)
+                    }
                 }
                 .padding(.horizontal, 50)
             }
             .toolbar {
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button("Done") {
-                        dismiss()
+                if !childView {
+                    ToolbarItem(placement: .topBarTrailing) {
+                        Button("Done") {
+                            dismiss()
+                        }
+                        .fontWeight(.semibold)
                     }
-                    .fontWeight(.bold)
                 }
                 ToolbarItem(placement: .principal) {
                     Text("SPLASH_TITLE", tableName: table)

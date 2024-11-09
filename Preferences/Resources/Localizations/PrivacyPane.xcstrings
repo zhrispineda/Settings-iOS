@@ -1,0 +1,1931 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "SPLASH_TITLE": {
+      "extractionState": "manual",
+      "localizations": {
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Podaci i privatnost"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "״נתונים״ ופרטיות"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "데이터 및 개인정보 보호"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Data & Privasi"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tiedot ja tietosuoja"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Veriler ve Gizlilik"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gegevens en privacy"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Az adatok és az adatvédelem"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Данные и конфи­денциальность"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dati e privacy"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Datos y la privacidad"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Δεδομένα και απόρρητο"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "البيانات والخصوصية"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Données et confidentialité"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "資料與隱私權"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "資料與私隱"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Data och integritet"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Data og personvern"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dane i prywatność"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Data og anonymitet"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "डेटा और गोपनीयता"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Data & Privacy"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les dades i la privacitat"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ข้อมูลและความเป็นส่วนตัว"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "数据与隐私"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Data & Privacy"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Duomenys ir privatumas"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Datos y la privacidad"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Data a soukromí"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dáta a súkromie"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Data & Privasi"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Данни и поверителност"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Podatki in zasebnost"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Data & Privacy"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Daten & Datenschutz"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dữ liệu & Quyền riêng tư"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tus datos y la privacidad"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Дані та приватність"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Données et confidentialité"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dados e Privacidade"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Деректер және құпиялылық"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Datele și intimitatea"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "データとプライバシー"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Data & Privacy"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dados e Privacidade"
+          }
+        }
+      }
+    },
+    "FOOTER_TEXT": {
+      "extractionState": "manual",
+      "localizations": {
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ovu ikonu nećete vidjeti uz svaku značajku jer Apple prikuplja ove informacije samo kada su potrebne za omogućavanje značajki, osiguravanje naših usluga ili personaliziranje vašeg iskustva.\n\nApple smatra da je privatnost temeljno ljudsko pravo, stoga je svaki Appleov proizvod dizajniran kako bi minimalno prikupljao i koristio vaše podatke, upotrebljavao obrađivanje na uređaju kad god je moguće i pružao transparentnost i kontrolu nad vašim informacijama."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "אייקון זה לא יופיע בכל מאפיין מאחר ש-Apple אוספת מידע זה רק לשם הפעלת מאפיינים, שיפור אבטחת השירותים או התאמה אישית של חוויית המשתמש שלך.\n\nב-Apple מאמינים שפרטיות היא זכות אנושית בסיסית, לכן כל מוצר של Apple תוכנן באופן שנועד למזער את האיסוף והשימוש בנתונים שלך, לעבד את הנתונים במכשיר כאשר הדבר אפשרי ולספק לך שקיפות ושליטה על המידע שלך."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple은 기능을 활성화하기 위해, 서비스의 보안을 위해, 또는 사용자 경험을 개인 맞춤화하기 위해 필요한 경우에만 이 정보를 수집하므로 모든 기능을 사용할 때마다 이 아이콘이 표시되지는 않습니다.\n\nApple은 개인정보 보호가 기본적 인권이라고 믿습니다. 이에 따라, 모든 Apple 제품은 사용자 데이터의 수집 및 사용을 최소화하고, 가능한 경우 언제나 기기 상에서 처리하며, 사용자의 정보에 대해 투명성을 제공하고, 이를 사용자가 제어할 수 있도록 설계되었습니다."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anda tidak akan melihat ini di setiap fitur karena Apple hanya mengumpulkan informasi ini jika informasi diperlukan untuk mengaktifkan fitur, mengamankan layanan kami, atau menyesuaikan pengalaman Anda.\n\nApple percaya bahwa privasi merupakan hak asasi manusia. Oleh karena itu, setiap produk Apple dirancang untuk meminimalisasi pengumpulan dan penggunaan data Anda, menggunakan pemrosesan di perangkat kapan pun dimungkinkan, dan menyediakan transparansi dan kontrol atas informasi Anda."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Et näe tätä kaikkien ominaisuuksien yhteydessä, koska Apple kerää näitä tietoja vain, kun niitä tarvitaan ominaisuuksien käyttöönottamiseen, Applen palvelujen suojaamiseen tai käyttökokemuksesi räätälöimiseen.\n\nApplen mielestä tietosuoja on perusihmisoikeus, joten jokainen Applen tuote on suunniteltu minimoimaan tietojen keräämistä ja käyttöä, käyttämään laitteen sisäistä käsittelyä aina kun se on mahdollista ja tarjoamaan avoimuutta ja hallittavuutta omien tietojesi suhteen."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple bu bilgileri yalnızca özellikleri etkinleştirmek, servislerimizi güvenli yapmak veya deneyiminizi kişiselleştirmek amacıyla gerekli olduğunda topladığı için bunu her özellikte görmezsiniz.\n\nApple gizliliğin temel bir insan hakkı olduğuna inanmaktadır, bu nedenle her Apple ürünü verilerinizin toplanmasını ve kullanılmasını en aza indirecek, uygun olduğunda verilerinizin aygıt üzerinde işleneceği ve bilgilerinizin şeffaflığını ve kontrolünü sağlayabileceğiniz bir şekilde tasarlanmıştır."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Je ziet dit niet bij elke functie, aangezien Apple deze informatie alleen verzamelt wanneer dit nodig is om functies mogelijk te maken, om onze voorzieningen te beveiligen of om je ervaring te personaliseren.\n\nApple vindt dat privacy een fundamenteel mensenrecht is. Daarom is elk Apple product ontworpen om het verzamelen en gebruik van je gegevens te beperken, om zoveel mogelijk verwerking op apparaten te gebruiken en transparantie en controle over je informatie te bieden."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ezt nem fogja minden funkciónál látni, mert az Apple csak akkor gyűjti össze ezt az információt, amikor szükség van rá a funkciók engedélyezéséhez, a szolgáltatásaink biztosításához vagy a felhasználói élmény személyre szabásához.\n\nAz Apple hisz abban, hogy a személyes adatok védelme alapvető emberi jog, ezért az Apple-termékeket úgy tervezték, hogy minimalizálják az adatgyűjtést és -használatot; eszközön történő feldolgozást használjanak, amikor lehet; valamint biztosítsák az Ön számára az információk átláthatóságát és szabályozhatóságát."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Этот значок не отображается в каждой функции, так как Apple собирает данные только по необходимости при активации функций, обеспечении безопасности наших служб или персонализации.\n\nПо убеждению Apple, конфиденциальность является одним из основополагающих прав человека, поэтому каждый продукт Apple разработан так, чтобы сводить к минимуму сбор и использование Ваших данных, обрабатывать информацию на самом устройстве, если возможно, а также обеспечивать прозрачность и предоставлять Вам возможность управлять Вашей информацией."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple raccoglie dati solo quando è necessario per abilitare determinate funzionalità, rendere sicuri i dispositivi o personalizzare l’esperienza utente. Pertanto, l’icona non sarà visibile con tutte le funzionalità.\n\nPer Apple la privacy è un diritto fondamentale. Ogni prodotto Apple è concepito per limitare al minimo la raccolta e l’utilizzo dei dati, per sfruttare l’elaborazione delle informazioni sul dispositivo stesso, ove possibile, nonché per fornire trasparenza e controllo sulle informazioni."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se mostrará en todas las funciones debido a que Apple recopila esta información sólo para poder activarlas, asegurar nuestros servicios o personalizar tu experiencia.\n\nApple cree que la privacidad es un derecho humano fundamental, así que diseñó cada uno de sus productos para minimizar la recopilación y uso de tus datos, usar procesamiento en el dispositivo cuando sea posible y proporcionar transparencia y control sobre tu información."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Αυτό δεν εμφανίζεται σε κάθε δυνατότητα, διότι η Apple συλλέγει αυτές τις πληροφορίες μόνο όταν χρειάζεται για ενεργοποίηση δυνατοτήτων, ασφάλιση των υπηρεσιών της ή εξατομίκευση της εμπειρίας σας.\n\nΗ Apple πρεσβεύει ότι το απόρρητο είναι θεμελιώδες ανθρώπινο δικαίωμα, συνεπώς κάθε προϊόν Apple έχει σχεδιαστεί με βάση την ελαχιστοποίηση της συλλογής και της χρήσης των δεδομένων σας, τη χρήση επεξεργασίας επί της συσκευής όποτε είναι δυνατό, και την παροχή διαφάνειας και ελέγχου όσον αφορά τις πληροφορίες σας."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لن ترى هذه الأيقونة مع كل ميزة، حيث أن Apple تجمع هذه المعلومات فقط عندما تكون هناك حاجة لها لتمكين الميزات أو لتأمين الخدمات أو لتخصيص تجربتك.\n\nتؤمن Apple بأن الخصوصية أحد حقوق الإنسان الأساسية، لذا فقد تم تصميم كل منتجات Apple لتقليل جمع واستخدام بياناتك إلى الحد الأدنى، ومعالجة البيانات على الأجهزة حيثما كان ذلك متاحًا، وتوفير الشفافية والقدرة على التحكم بمعلوماتك."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cette icône n’accompagne pas toutes les fonctionnalités, car Apple ne recueille ces informations que lorsque c’est nécessaire, et ce, pour activer des fonctionnalités, sécuriser ses services ou personnaliser votre expérience d’utilisation.\n\nApple considère que la confidentialité constitue pour chacun un droit fondamental. C’est pourquoi tous les produits Apple sont conçus pour minimiser la collecte et l’utilisation de vos données, traiter autant que possible les données directement sur l’appareil et permettre le contrôle de vos données en toute transparence."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你將不會在使用每個功能時都看到此圖像，因為Apple只會在需要資訊來啟用功能時，確保服務安全或個人化你的體驗時，才會收集此資訊。\n\nApple堅信隱私是基本人權，因此每項Apple產品的設計都將資料的收集與使用量最少化、儘可能透過裝置端處理，且你對個人資訊保有檢視權和控制權。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你將不會在使用每個功能時都看到此圖像，因為Apple只會在需要資料以啟用功能、確保服務安全或將你的體驗個人化時，才會收集此資料。\n\nApple堅信私隱是基本人權，因此每項Apple產品的設計都將盡可能收集和使用最少的資料及在裝置端處理，並且你對個人資料保有檢視權和控制權。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Detta visas inte för alla funktioner eftersom Apple bara samlar in den här informationen när det är nödvändigt för att aktivera funktioner, säkra våra tjänster eller personanpassa din upplevelse.\n\nFör Apple är integritet en grundläggande mänsklig rättighet. Alla Apple-produkter är därför utvecklade för att samla in och använda en minimal mängd av dina data, behandla data på enheten om det är möjligt samt ge dig insyn och kontroll över din information."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dette vil ikke bli vist i forbindelse med alle funksjoner fordi Apple kun innhenter denne informasjonen når den trengs for å aktivere funksjoner, for å sikre Apples tjenester og for å tilpasse opplevelsen din.\n\nApple mener at personvern er en grunnleggende menneskerettighet, og hvert Apple-produkt er laget med tanke på å minimere innsamling og bruk av data, behandle data på enheten så langt det er mulig, og gi deg åpenhet og kontroll over informasjonen din."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nie dotyczy to każdej funkcji; Apple gromadzi te dane, tylko gdy są wymagane do włączenia funkcji, zabezpieczenia usług lub spersonalizowania działania produktów.\n\nWierzymy, że prywatność należy do podstawowych praw człowieka; każdy produkt Apple: gromadzi i wykorzystuje Twoje dane w możliwie minimalnym zakresie, gdy tylko to możliwe, przetwarza dane bezpośrednio na urządzeniu oraz zapewnia transparentność i daje Ci kontrolę nad Twoimi danymi."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du vil ikke se dette i alle funktioner, fordi Apple kun indsamler disse oplysninger, når det kræves til at slå funktioner til, sikre vores tjenester eller til at tilpasse din oplevelse.\n\nApple mener, at anonymitet er en grundlæggende menneskeret, så alle Apples produkter er designet til at minimere indsamlingen og brugen af dine data, bruge behandling på enheden, når det er muligt, og sikre gennemsigtighed med og kontrol over dine oplysninger."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "आप इसे हर फ़ीचर के साथ नहीं ^[देखेंगे](inflect: true) क्योंकि Apple केवल तभी यह जानकारी संग्रह करता है जब उसे फ़ीचर को सक्षम करने, सेवाओं को सुरक्षित करने और आपके अनुभव को वैयक्तिकृत करने के लिए इसकी आवश्यकता होती है।\n\nApple का मानना है कि गोपनीयता एक मौलिक मानव अधिकार है इसलिए हर Apple उत्पाद को इस प्रकार डिज़ाइन किया गया है कि आपके डेटा का संग्रह और उपयोग कम से कम किया जा सके, जहाँ संभव हो डिवाइस पर ही प्रोसेस करने का काम हो और आपकी जानकारी पर नियंत्रण और पारदर्शिता रहे।"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You won’t see this with every feature since Apple collects this information only when needed to enable features, secure our services, or personalize your experience.\n\nApple believes privacy is a fundamental human right, so every Apple product is designed to minimize the collection and use of your data, use on-device processing whenever possible, and provide transparency and control over your information."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aquesta icona no apareixerà en totes les funcions, ja que Apple recopila aquesta informació només en cas que es necessiti per activar funcions, protegir els nostres serveis o personalitzar la teva experiència.\n\nPer a Apple, la privacitat és un dret humà bàsic. Per això, tots els productes Apple s’han dissenyat per minimitzar la recopilació i l’ús de les teves dades, processar‑les localment al dispositiu sempre que sigui possible i facilitar‑te transparència i control sobre la teva informació."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "คุณจะไม่เห็นสิ่งนี้พร้อมกับคุณสมบัติทั้งหมดเนื่องจาก Apple จะเก็บรวบรวมข้อมูลนี้เมื่อต้องเปิดใช้งานคุณสมบัติต่างๆ รักษาความปลอดภัยในบริการของเรา หรือปรับแต่งให้เข้ากับประสบการณ์การใช้งานของคุณเท่านั้น\n\nApple เชื่อว่าความเป็นส่วนตัวเป็นสิทธิขั้นพื้นฐานของมนุษย์ ดังนั้นผลิตภัณฑ์ของ Apple จึงออกแบบมาเพื่อให้เก็บรวบรวมและใช้ข้อมูลของคุณน้อยลง ใช้การประมวลผลบนอุปกรณ์เมื่อใช้ได้ ให้ความโปร่งใสและการควบคุมข้อมูลของคุณเอง"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "并非所有功能都会出现此图标，因为Apple仅当需要启用功能、保护服务安全或个性化你的使用体验时才会收集此信息。\n\nApple将隐私视作每个人的基本权利，因此所有Apple产品旨在收集和使用最少的用户数据，尽可能地使用设备端处理，以及赋予用户对信息的知情权和控制权。"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You won’t see this with every feature since Apple collects this information only when needed to enable features, secure our services or personalise your experience.\n\nApple believes privacy is a fundamental human right, so every Apple product is designed to minimise the collection and use of your data, use on-device processing whenever possible, and provide transparency and control over your information."
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Šio pranešimo nematysite su kiekviena funkcija, nes „Apple“ renka šią informaciją tik kai reikia įgalinti funkcijas, apsaugoti „Apple“ paslaugas arba suasmeninti jūsų patirtį.\n\n„Apple“ tiki, kad privatumas yra pamatinė žmogaus teisė, todėl kurdami visus „Apple“ produktus siekiame kuo labiau sumažinti galimybę rinkti jūsų duomenis, užtikrinti skaidrumą ir leisti jums valdyti savo informaciją."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No se mostrará en todas las funciones debido a que Apple recopila esta información sólo para poder activarlas, asegurar nuestros servicios o personalizar tu experiencia.\n\nApple cree que la privacidad es un derecho humano fundamental, así que diseñó cada uno de sus productos para minimizar la recopilación y uso de tus datos, usar procesamiento en el dispositivo cuando sea posible y proporcionar transparencia y control sobre tu información."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tuto ikonu neuvidíte u každé funkce, protože údaje sbíráme jen tehdy, když je potřebujeme k aktivaci funkcí, k zabezpečení našich služeb nebo k individuálnímu přizpůsobení vašeho uživatelského prostředí.\n\nApple považuje soukromí za základní lidské právo, proto všechny své produkty vyvíjíme tak, abychom minimalizovali sběr a využívání vašich dat, vždy upřednostňujeme zpracování údajů přímo v zařízení a poskytujeme vám plnou transparentnost a kontrolu nad vašimi informacemi."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Táto ikona sa nezobrazí pri každej funkcii, pretože spoločnosť Apple zhromažďuje tieto informácie, len keď je to potrebné na zapnutie funkcií, zabezpečenie služieb alebo na ich prispôsobenie vašim potrebám.\n\nSpoločnosť Apple považuje súkromie za základné ľudské právo, a preto je každý náš produkt navrhnutý tak, aby sme minimalizovali zber dát, uprednostnili ich spracovanie priamo na zariadení a poskytli vám transparentnosť a kontrolu nad vašimi informáciami."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anda tidak akan melihat ini dengan setiap ciri memandangkan Apple mengumpulkan maklumat ini hanya apabila diperlukan untuk mendayakan ciri, melindungi perkhidmatan kami atau memperibadikan pengalaman anda.\n\nApple percaya bahawa privasi ialah hak asasi manusia, jadi setiap produk Apple direka bentuk untuk meminimumkan pengumpulan dan penggunaan data anda, menggunakan pemprosesan pada peranti pada bila-bila masa yang boleh dan menyediakan ketelusan serta kawalan ke atas maklumat anda."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Няма да я видите при всяка функция, тъй като Apple събира тази информация само когато е необходимо, за да активира функции, да защити услугите ни или с цел персонализация.\n\nApple вярва, че поверителността е основно човешко право, така че всеки продукт на Apple е създаден да минимизира събирането и използването на вашите данни, да използва обработване на устройството при възможност и да предостави прозрачност и контрол върху вашата информация."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tega ne boste videli pri vsaki funkciji, saj Apple te podatke zbira le, kadar so potrebni za omogočanje funkcij, zagotavljanje naših storitev ali prilagajanje vaše izkušnje.\n\nApple meni, da je zasebnost osnovna človekova pravica, zato je vsak izdelek Apple zasnovan tako, da do največje možne mere zmanjša zbiranje in uporabo vaših podatkov, uporablja obdelavo v napravi povsod, kjer je to možno, ter zagotavlja transparentnost in nadzor nad vašimi podatki."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You won’t see this with every feature since Apple collects this information only when needed to enable features, secure our services or personalise your experience.\n\nApple believes privacy is a fundamental human right, so every Apple product is designed to minimise the collection and use of your data, use on-device processing whenever possible and provide transparency and control over your information."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dieses Symbol wird nicht bei jeder Funktion angezeigt, da Apple diese Informationen nur dann sammelt, wenn diese notwendig sind, um Funktionen zu ermöglichen, um für die Sicherheit unserer Dienste zu sorgen oder um deine Benutzererfahrung zu personalisieren.\n\nApple ist der Überzeugung, dass Datenschutz ein grundlegendes Menschenrecht ist. Jedes Apple-Produkt ist daher wie folgt konzipiert: Es werden so wenig Daten wie möglich erfasst und verwendet. Wo möglich, werden Daten direkt auf dem Gerät verarbeitet. Es herrscht höchste Transparenz und du hast die Kontrolle über deine Daten."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bạn sẽ không nhìn thấy biểu tượng này với mọi tính năng vì Apple chỉ thu thập thông tin này khi cần thiết để bật các tính năng, bảo mật dịch vụ hoặc cá nhân hóa trải nghiệm của bạn.\n\nApple tin rằng quyền riêng tư là một quyền con người cơ bản, do đó mọi sản phẩm Apple đều được thiết kế để giảm thiểu việc thu thập và sử dụng dữ liệu của bạn, sử dụng tính năng xử lý trên thiết bị bất kỳ lúc nào có thể, đồng thời cung cấp sự minh bạch và quyền kiểm soát đối với thông tin của bạn."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No lo verás con todas las funciones, ya que Apple solo recopila esta información cuando es necesaria para activar funciones, proteger nuestros servicios o personalizar la experiencia del usuario.\n\nPara Apple, la privacidad es un derecho fundamental, por lo que todos los productos de Apple se han diseñado para reducir al mínimo la recopilación y uso de tus datos, realizar el procesamiento en el dispositivo siempre que sea posible y proporcionarte transparencia y control sobre tu información."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Не в усіх функціях ви бачитимете це, адже Apple збирає таку інформацію, лише коли вона потрібна для ввімкнення функцій, убезпечення або персоналізації наших послуг.\n\nНа переконання Apple, приватність є основним правом людини, тому кожен продукт Apple спроєктовано так, щоб мінімізувати збирання і використання ваших даних, за можливості обробляти дані локально на пристрої та забезпечувати підзвітність і контроль за вашою інформацією."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toutes les fonctionnalités ne sont pas concernées, car Apple ne collecte ces données que si cela est nécessaire pour activer des fonctionnalités, sécuriser ses services ou personnaliser votre expérience.\n\nApple considère que la confidentialité est un droit humain fondamental. Nous avons donc conçu chacun de nos produits de façon à réduire au minimum la collecte et l’utilisation de vos données, à traiter ces dernières sur l’appareil dans la mesure du possible, et à vous permettre de contrôler la façon dont elles sont utilisées, ceci en toute transparence."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Você não verá isso em todos os recursos, pois a Apple coleta essas informações somente quando necessário para ativar recursos, assegurar os nossos serviços ou personalizar a sua experiência.\n\nA Apple acredita que a privacidade é um direito humano fundamental, então todos os produtos da Apple são projetados para minimizar a coleta e uso dos seus dados, usar o processamento no dispositivo sempre que possível e proporcionar transparência e controle sobre as suas informações."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Бұл белгіше әр функцияда көрсетілмейді, себебі Apple деректерді функцияларды қосу, сервистерді қорғау немесе жекелендіру үшін қажет болған жағдайда ғана жинайды.\n\nApple құпиялылықты адамның негізгі құқығы деп санайды, сондықтан әр Apple өнімі деректер жинау және пайдалану әрекетін азайтуға, құрылғыдағы ақпаратты мүмкіндігінше өңдеуге және ақпаратыңыздың ашықтығы мен басқаруды қамтамасыз етуге арналған."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nu o veți vedea pentru fiecare funcționalitate, întrucât Apple colectează aceste informații doar atunci când sunt necesare pentru activarea unor funcționalități, securizarea serviciilor oferite sau personalizarea experienței dvs. de utilizare.\n\nApple consideră că intimitatea este un drept uman fundamental. Din acest motiv, fiecare produs Apple este conceput pentru a minimiza colectarea și utilizarea datelor dvs., pentru a utiliza procesarea pe dispozitiv oricând este posibil și pentru a furniza transparență și control asupra informațiilor dvs."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Appleが個人情報を収集するのは、機能を有効にする必要があるとき、サービスを保護する必要があるとき、またはユーザ体験をパーソナライズする必要があるときだけです。\n\nAppleはプライバシーは基本的人権であると考えているため、Apple製品は個人情報の収集および使用を最小限にする、可能な限りデバイス上で処理をする、個人情報に関して透明性を提供しコントロールできるようにするという考え方に基づいて設計されています。"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You won’t see this with every feature since Apple collects this information only when needed to enable features, secure our services or personalise your experience.\n\nApple believes privacy is a fundamental human right, so every Apple product is designed to minimise the collection and use of your data, use on-device processing whenever possible, and provide transparency and control over your information."
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Não verá sempre este ícone, uma vez que a Apple só recolhe esta informação quando é necessária para ativar funcionalidades, para a segurança dos nossos serviços ou para personalizar a sua experiência.\n\nA Apple acredita que a privacidade seja um direito humano fundamental e, como tal, cada produto Apple é concebido de forma a minimizar a recolha e utilização dos seus dados, fazer uso do processamento nos dispositivos sempre que possível e proporcionar transparência e controlo sobre a sua informação."
+          }
+        }
+      }
+    },
+    "FOOTER_TEXT_APPLEVISION": {
+      "extractionState": "manual",
+      "localizations": {
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple prikuplja ove informacije samo kada su potrebne za omogućavanje određenih značajki, osiguravanje Appleovih usluga ili personaliziranje vašeg iskustva.\n\nApple smatra da je privatnost temeljno ljudsko pravo, stoga je svaki Appleov proizvod dizajniran kako bi minimalno prikupljao i koristio vaše podatke, upotrebljavao obrađivanje na uređaju kad god je moguće i pružao transparentnost i kontrolu nad vašim informacijama. Vaši podaci na ovom uređaju također su kriptirani i trajno će se ukloniti ako ga resetirate na tvorničke postavke."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "‏Apple אוספת מידע זה רק לצורך הפעלת מאפיינים מסוימים, אבטחת השירותים של Apple או התאמה אישית של חוויית השימוש שלך.\n\nב-Apple מאמינים שפרטיות היא זכות אנושית בסיסית, ולכן כל מוצר של Apple מתוכנן באופן שנועד למזער את האיסוף והשימוש בנתונים שלך, לעבד את הנתונים במכשיר עצמו כשניתן לעשות זאת, ולספק לך שקיפות ושליטה על המידע שלך. הנתונים שלך במכשיר זה אף מוצפנים, והם יימחקו לצמיתות בעת שחזור המכשיר להגדרות היצרן."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple은 특정 기능을 활성화하거나, Apple 서비스를 보호하거나, 사용자 경험을 개인 맞춤화하는 데 필요할 때에만 이 정보를 수집합니다.\n\nApple은 개인정보 보호가 기본적 인권이라고 믿습니다. 이에 따라, 모든 Apple 제품은 사용자 데이터의 수집 및 사용을 최소화하고, 가능한 경우 언제나 기기 상에서 처리하며, 사용자의 정보에 대해 투명성을 제공하고, 이를 사용자가 제어할 수 있도록 설계되었습니다. 또한 이 기기의 사용자 데이터는 암호화되고, 초기 설정 값으로 재설정할 경우 영구적으로 제거됩니다."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple hanya mengumpulkan informasi ini jika diperlukan untuk mengaktifkan fitur tertentu, mengamankan layanan Apple, atau menyesuaikan pengalaman Anda.\n\nApple percaya bahwa privasi merupakan hak asasi manusia. Oleh karena itu, setiap produk Apple dirancang untuk meminimalisasi pengumpulan dan penggunaan data Anda, menggunakan pemrosesan di perangkat kapan pun dimungkinkan, dan menyediakan transparansi dan kontrol atas informasi Anda. Data Anda di perangkat ini juga dienkripsi dan akan dihapus secara permanen jika Anda mengatur ulang ke pengaturan pabrik."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple kerää näitä tietoja vain, kun niitä tarvitaan tiettyjen ominaisuuksien käyttöönottamiseen, Applen palvelujen suojaamiseen tai käyttökokemuksesi räätälöimiseen.\n\nApplen mielestä tietosuoja on perusihmisoikeus, joten jokainen Applen tuote on suunniteltu minimoimaan tietojen keräämistä ja käyttöä, käyttämään laitteen sisäistä käsittelyä aina, kun se on mahdollista, ja tarjoamaan avoimuutta ja hallittavuutta omien tietojesi suhteen. Tässä laitteessa olevat tietosi ovat myös salattuja, ja ne poistetaan pysyvästi, jos laite nollataan tehdasasetuksiin."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple bu bilgileri yalnızca belirli özellikleri etkinleştirmek, Apple servislerini güvenli yapmak veya deneyiminizi kişiselleştirmek amacıyla toplar.\n\nApple gizliliğin temel bir insan hakkı olduğuna inanmaktadır, bu nedenle her Apple ürünü verilerinizin toplanmasını ve kullanılmasını en aza indirecek, uygun olduğunda verilerinizin aygıt üzerinde işleneceği ve bilgilerinizin şeffaflığını ve kontrolünü sağlayabileceğiniz bir şekilde tasarlanmıştır. Bu aygıttaki verileriniz de şifrelenir ve fabrika ayarlarına sıfırlarsanız kalıcı olarak silinir."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple verzamelt deze informatie alleen wanneer dit nodig is om specifieke functies mogelijk te maken, om voorzieningen van Apple te beveiligen of om je ervaring te personaliseren.\n\nApple vindt dat privacy een fundamenteel mensenrecht is. Daarom is elk Apple product ontworpen om het verzamelen en gebruik van je gegevens te beperken, om zoveel mogelijk verwerking op apparaten te gebruiken en transparantie en controle over je informatie te bieden. Je gegevens op dit apparaat zijn ook versleuteld en worden definitief verwijderd als je het terugzet op de fabrieksinstellingen."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Az Apple csak akkor gyűjti össze ezt az információt, amikor szükség van rá bizonyos funkciók engedélyezéséhez, az Apple-szolgáltatások védelmének biztosításához vagy a felhasználói élmény személyre szabásához.\n\nAz Apple hisz abban, hogy a személyes adatok védelme alapvető emberi jog, ezért az Apple-termékeket úgy tervezték, hogy minimalizálják az Ön adatainak begyűjtését és felhasználását; eszközön történő feldolgozást használjanak, amikor lehet; valamint biztosítsák az Ön számára az információk átláthatóságát és szabályozhatóságát. Az eszközön lévő adatai titkosítva vannak, és véglegesen törölve lesznek, ha visszaállítja a gyári beállításait."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple собирает эту информацию, только если она необходима для активации определенных функций, обеспечения безопасности сервисов Apple или персонализации.\n\nПо убеждению Apple, конфиденциальность является одним из основополагающих прав человека, поэтому каждый продукт Apple разработан так, чтобы сводить к минимуму сбор и использование Ваших данных, обрабатывать информацию на самом устройстве, если возможно, а также обеспечивать прозрачность и предоставлять Вам возможность управлять Вашей информацией. Ваши данные на этом устройстве также защищены шифрованием и будут безвозвратно удалены, если Вы сбросите устройство до заводских настроек."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple raccoglie dati solo quando è necessario per abilitare specifiche funzionalità, rendere sicuri i propri servizi o personalizzare l’esperienza utente.\n\nPer Apple la privacy è un diritto fondamentale. Ogni prodotto Apple è concepito per limitare al minimo la raccolta e l’utilizzo dei dati, per sfruttare l’elaborazione delle informazioni sul dispositivo stesso, ove possibile, nonché per fornire trasparenza e controllo sulle informazioni. Inoltre, i dati sul dispositivo sono protetti tramite crittografia e verranno rimossi in modo permanente in caso di ripristino alle impostazioni di fabbrica."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple recopila esta información sólo para poder activar funciones específicas, asegurar nuestros servicios o personalizar tu experiencia.\n\nApple cree que la privacidad es un derecho humano fundamental, así que diseñó cada uno de sus productos para minimizar la recopilación y uso de tus datos, usar procesamiento en el dispositivo cuando sea posible y proporcionar transparencia y control sobre tu información. Tus datos en este dispositivo también se encriptan y se eliminarán de manera permanente si restableces la configuración de fábrica."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Η Apple συλλέγει αυτές τις πληροφορίες μόνο όταν χρειάζεται για ενεργοποίηση συγκεκριμένων δυνατοτήτων, ασφάλιση των υπηρεσιών Apple ή εξατομίκευση της εμπειρίας σας.\n\nΗ Apple πρεσβεύει ότι το απόρρητο είναι θεμελιώδες ανθρώπινο δικαίωμα, συνεπώς κάθε προϊόν Apple έχει σχεδιαστεί με βάση την ελαχιστοποίηση της συλλογής και της χρήσης των δεδομένων σας, τη χρήση επεξεργασίας επί της συσκευής όποτε είναι δυνατό, και την παροχή διαφάνειας και ελέγχου όσον αφορά τις πληροφορίες σας. Τα δεδομένα σε αυτήν τη συσκευή είναι επίσης κρυπτογραφημένα και θα αφαιρεθούν οριστικά, αν την επαναφέρετε στις εργοστασιακές ρυθμίσεις."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تجمع Apple هذه المعلومات فقط عندما تكون هناك حاجة لها، وذلك بهدف تمكين ميزات معينة أو تأمين خدمات Apple أو تخصيص تجربتك.\n\nتؤمن Apple بأن الخصوصية أحد حقوق الإنسان الأساسية، لذا فقد تم تصميم كل منتجات Apple لتقليل جمع واستخدام بياناتك إلى الحد الأدنى، ومعالجة البيانات على الأجهزة حيثما كان ذلك متاحًا، وتوفير الشفافية والقدرة على التحكم بمعلوماتك. يتم أيضًا تشفير بياناتك الموجودة على هذا الجهاز وستتم إزالتها نهائيًا إذا قمت بإعادة التعيين إلى إعدادات المصنع."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple recueille ces informations uniquement lorsque c’est nécessaire pour activer des fonctionnalités précises, sécuriser ses services ou personnaliser votre expérience d’utilisation.\n\nApple considère que la confidentialité constitue pour chacun un droit fondamental. C’est pourquoi tous les produits Apple sont conçus pour minimiser la collecte et l’utilisation de vos données, traiter autant que possible les données directement sur l’appareil et permettre le contrôle de vos données en toute transparence. Vos données sur cet appareil sont également chiffrées et seront définitivement supprimées si vous rétablissez les réglages d’origine."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple只會在需要資訊來啟用特定功能時，或者確保服務安全或個人化你的體驗時，才會收集此資訊。\n\nApple堅信隱私是基本人權，因此每項Apple產品的設計都將資料的收集與使用量最少化、儘可能透過裝置端處理，且你對個人資訊保有檢視權和控制權。你在此裝置上的資料也會加密，且若重置為出廠設定則會永久移除。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple只會在需要啟用特定功能、確保Apple服務安全或將你的體驗個人化時，才會收集此資料。\n\nApple堅信私隱是基本人權，因此每項Apple產品的設計都將盡可能收集和使用最少的資料及在裝置端處理，並且你對個人資料保有檢視權和控制權。你在此裝置上的資料也會加密，並會在重設至出廠設定時永久移除。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple samlar bara in den här informationen när det är nödvändigt för att aktivera specifika funktioner, säkra Apple‑tjänster eller personanpassa din upplevelse.\n\nFör Apple är integritet en grundläggande mänsklig rättighet. Alla Apple-produkter är därför utvecklade för att samla in och använda en minimal mängd av dina data, behandla data på enheten om det är möjligt samt ge dig insyn och kontroll över din information. Dina data på den här enheten är också krypterade och raderas permanent om du nollställer till fabriksinställningarna."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple innhenter denne informasjonen kun når den trengs for å aktivere visse funksjoner, sikre Apples tjenester og tilpasse funksjonene for deg.\n\nApple mener at personvern er en grunnleggende menneskerettighet, og hvert Apple-produkt er laget med tanke på å minimere innsamling og bruk av data, behandle data på enheten så langt det er mulig, og gi deg innsyn i og kontroll over informasjonen din. Dataene dine på denne enheten er også krypterte og vil bli fjernet for godt hvis du nullstiller til fabrikkinnstillinger."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple gromadzi te dane, tylko gdy są wymagane do włączania określonych funkcji, zabezpieczania usług Apple lub personalizowania działania produktów.\n\nWierzymy, że prywatność należy do podstawowych praw człowieka; każdy produkt Apple: gromadzi i wykorzystuje Twoje dane w możliwie minimalnym zakresie, gdy tylko to możliwe, przetwarza dane bezpośrednio na urządzeniu oraz zapewnia transparentność i daje Ci kontrolę nad Twoimi danymi. Dane na Twoim urządzeniu są także szyfrowane. Wyzerowanie urządzenia do ustawień fabrycznych powoduje ich trwałe usunięcie."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple indsamler kun disse oplysninger, når det er nødvendigt for at slå specifikke funktioner til, sikre Apples tjenester eller for at tilpasse din oplevelse.\n\nApple mener, at anonymitet er en grundlæggende menneskeret, så alle Apples produkter er designet til at minimere indsamlingen og brugen af dine data, bruge behandling på enheden, når det er muligt, og sikre gennemsigtighed med og kontrol over dine oplysninger. Dine data på denne enhed er også krypterede og bliver fjernet permanent, hvis enheden nulstilles til fabriksindstillingerne."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple इस जानकारी को विशिष्ट फ़ीचर सक्षम करने, Apple सेवाओं को सुरक्षित करने या आपका अनुभव वैयक्तिकृत करने के लिए आवश्यक होने पर ही एकत्रित करता है।\n\nApple का मानना है कि गोपनीयता एक मौलिक मानवाधिकार है इसलिए हर Apple उत्पाद को इस प्रकार डिज़ाइन किया गया है कि आपके डेटा का संग्रह और उपयोग कम से कम किया जा सके, जहाँ संभव हो डिवाइस पर ही प्रोसेस करने का काम हो और आपकी जानकारी पर नियंत्रण और पारदर्शिता रहे। इस डिवाइस पर आपका डेटा भी एंक्रिप्टेड किया जाता है और अगर आप फ़ैक्ट्री सेटिंग्ज़ पर रीसेट ^[करते हैं](inflect: true), तो स्थायी रूप से हटा दिया जाएगा।"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple collects this information only when needed to enable specific features, secure Apple services, or personalize your experience.\n\nApple believes privacy is a fundamental human right, so every Apple product is designed to minimize the collection and use of your data, use on-device processing whenever possible, and provide transparency and control over your information. Your data on this device is also encrypted and will be permanently removed if you reset to factory settings."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple recopila la informació només en cas que es necessiti per activar certes funcions, protegir els serveis d’Apple o personalitzar l’experiència.\n\nPer a Apple, la privacitat és un dret humà bàsic. Per això, tots els productes Apple s’han dissenyat per minimitzar la recopilació i l’ús de les teves dades, processar‑les localment al dispositiu sempre que sigui possible i facilitar‑te transparència i control sobre la teva informació. També s’encripten les dades que hi ha al dispositiu i, si en restableixes la configuració de fàbrica, s’eliminen definitivament."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple จะเก็บรวบรวมข้อมูลนี้เมื่อต้องเปิดใช้งานคุณสมบัติเฉพาะ รักษาความปลอดภัยในบริการต่างๆ ของ Apple หรือปรับแต่งให้เข้ากับประสบการณ์การใช้งานของคุณเท่านั้น\n\nApple เชื่อว่าความเป็นส่วนตัวเป็นสิทธิขั้นพื้นฐานของมนุษย์ ดังนั้นผลิตภัณฑ์ของ Apple จึงออกแบบมาเพื่อให้เก็บรวบรวมและใช้ข้อมูลของคุณน้อยลง ใช้การประมวลผลบนอุปกรณ์เมื่อใช้ได้ ให้ความโปร่งใสและการควบคุมข้อมูลของคุณเอง ข้อมูลของคุณบนอุปกรณ์นี้จะถูกเข้ารหัสและถูกเอาออกอย่างถาวรอีกด้วยหากคุณรีเซ็ตเป็นการตั้งค่าจากโรงงาน"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple仅在需要启用特定功能、保护Apple服务安全或个性化你的使用体验时才会收集此信息。\n\nApple将隐私视作每个人的基本权利，因此所有Apple产品旨在收集和使用最少的用户数据，尽可能地使用设备端处理，以及赋予用户对信息的知情权和控制权。你在此设备上的数据也会加密，并在还原为出厂设置时将永久移除。"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple collects this information only when needed to enable specific features, secure Apple services or personalise your experience.\n\nApple believes privacy is a fundamental human right, so every Apple product is designed to minimise the collection and use of your data, use on-device processing whenever possible, and provide transparency and control over your information. Your data on this device is also encrypted and will be permanently removed if you reset it to factory settings."
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Šią informaciją „Apple“ renka tik kai reikia suaktyvinti konkrečias funkcijas, apsaugoti „Apple“ paslaugas arba pritaikyti platformą jums.\n\n„Apple“ tiki, kad privatumas yra pamatinė žmogaus teisė, todėl kurdami visus „Apple“ produktus siekiame kuo labiau sumažinti galimybę rinkti jūsų duomenis, užtikrinti skaidrumą ir leisti jums valdyti savo informaciją. Be to, jūsų duomenys šiame įrenginyje yra užšifruojami ir bus visam laikui pašalinti, jei iš naujo nustatysite gamyklinius nustatymus."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple recopila esta información sólo para poder activar funciones específicas, asegurar nuestros servicios o personalizar tu experiencia.\n\nApple cree que la privacidad es un derecho humano fundamental, así que diseñó cada uno de sus productos para minimizar la recopilación y uso de tus datos, usar procesamiento en el dispositivo cuando sea posible y proporcionar transparencia y control sobre tu información. Tus datos en este dispositivo también se encriptan y se eliminarán de manera permanente si restableces la configuración de fábrica."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tyto údaje Apple shromažďuje jen tehdy, když je potřebuje k poskytování konkrétních funkcí, k zabezpečení svých služeb nebo k individuálnímu přizpůsobení vašeho uživatelského prostředí.\n\nApple považuje soukromí za základní lidské právo, proto všechny své produkty vyvíjíme tak, abychom minimalizovali sběr a využívání vašich dat, vždy upřednostňujeme zpracování údajů přímo v zařízení a poskytujeme vám plnou transparentnost a kontrolu nad vašimi informacemi. Kromě toho jsou vaše data v tomto zařízení zašifrovaná a při obnovení továrního nastavení se nenávratně odstraní."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spoločnosť Apple zhromažďuje tieto informácie, len keď je to potrebné na zapnutie konkrétnych funkcií, zabezpečenie služieb poskytovaných spoločnosťou Apple alebo na ich prispôsobenie vašim potrebám.\n\nSpoločnosť Apple považuje súkromie za základné ľudské právo, a preto je každý náš produkt navrhnutý tak, aby sme minimalizovali zber dát, uprednostnili ich spracovanie priamo na zariadení a poskytli vám transparentnosť a kontrolu nad vašimi informáciami. Vaše dáta na tomto zariadení sú navyše zašifrované a pri obnove pôvodných továrenských nastavení budú natrvalo vymazané."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple mengumpulkan maklumat ini hanya apabila diperlukan untuk mendayakan ciri tertentu, melindungi perkhidmatan Apple atau memperibadikan pengalaman anda.\n\nApple percaya bahawa privasi ialah hak asasi manusia, jadi setiap produk Apple direka bentuk untuk meminimumkan pengumpulan dan penggunaan data anda, menggunakan pemprosesan pada peranti pada bila-bila masa yang boleh dan menyediakan ketelusan serta kawalan ke atas maklumat anda. Data anda pada peranti ini turut disulitkan dan akan dikeluarkan secara kekal jika anda mereset kepada seting kilang."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple събира тази информация само когато е необходимо, за да активира конкретни функции, да защити услуги на Apple или с цел персонализиране.\n\nApple вярва, че поверителността е основно човешко право, така че всеки продукт на Apple е създаден да минимизира събирането и използването на вашите данни, да използва обработване на устройството при възможност и да предостави прозрачност и контрол върху вашата информация. Вашите данни на това устройство са също така криптирани и ще бъдат окончателно изтрити, ако се върнете към фабричните настройки."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple te podatke zbira le, kadar so potrebni za omogočanje določenih funkcij, zagotavljanje varnosti storitev Apple ali prilagajanje vaše izkušnje.\n\nApple meni, da je zasebnost osnovna človekova pravica, zato je vsak izdelek Apple zasnovan tako, da do največje možne mere zmanjša zbiranje in uporabo vaših podatkov, uporablja obdelavo v napravi povsod, kjer je to možno, ter zagotavlja transparentnost in nadzor nad vašimi podatki. Vaši podatki v tej napravi so tudi šifrirani in bodo trajno odstranjeni, če jo ponastavite na tovarniške nastavitve."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple collects this information only when needed to enable specific features, secure Apple services or personalise your experience.\n\nApple believes privacy is a fundamental human right, so every Apple product is designed to minimise the collection and use of your data, use on-device processing whenever possible and provide transparency and control over your information. Your data on this device is also encrypted and will be permanently removed if you reset to factory settings."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple erfasst diese Informationen nur dann, wenn sie notwendig sind, um bestimmte Funktionen zu ermöglichen, um für die Sicherheit von Apple-Diensten zu sorgen oder um dein Benutzererlebnis zu personalisieren.\n\nApple ist der Überzeugung, dass Datenschutz ein grundlegendes Menschenrecht ist. Jedes Apple-Produkt ist daher wie folgt konzipiert: Es werden so wenig Daten wie möglich erfasst und verwendet. Wo möglich, werden Daten direkt auf dem Gerät verarbeitet. Es herrscht höchste Transparenz und du hast die Kontrolle über deine Daten. Deine Daten auf diesem Gerät sind zudem verschlüsselt und werden dauerhaft entfernt, wenn du das Gerät auf die Werkseinstellungen zurücksetzt."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple chỉ thu thập thông tin này khi cần thiết để bật các tính năng cụ thể, bảo mật các dịch vụ của Apple hoặc cá nhân hóa trải nghiệm của bạn.\n\nApple tin rằng quyền riêng tư là một quyền con người cơ bản, do đó mọi sản phẩm Apple đều được thiết kế để giảm thiểu việc thu thập và sử dụng dữ liệu của bạn, sử dụng tính năng xử lý trên thiết bị bất kỳ lúc nào có thể, đồng thời cung cấp sự minh bạch và quyền kiểm soát đối với thông tin của bạn. Dữ liệu của bạn trên thiết bị này cũng được mã hóa và sẽ bị xóa vĩnh viễn nếu bạn đặt lại về cài đặt gốc."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple solo recopila esta información cuando es necesaria para activar determinadas funciones, proteger sus servicios o personalizar la experiencia de los usuarios.\n\nPara Apple, la privacidad es un derecho fundamental, por lo que todos los productos de Apple se han diseñado para reducir al mínimo la recopilación y uso de tus datos, realizar el procesamiento en el dispositivo siempre que sea posible y proporcionarte transparencia y control sobre tu información. Además, tus datos se encriptan en el dispositivo y se eliminan si decides restablecer los ajustes de fábrica."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple збирає таку інформацію, лише коли вона потрібна для ввімкнення функцій, убезпечення або персоналізації служб Apple.\n\nНа переконання Apple, приватність є основним правом людини, тому кожен продукт Apple спроєктовано так, щоб мінімізувати збирання і використання ваших даних, за можливості обробляти дані локально на пристрої та забезпечувати підзвітність і контроль за вашою інформацією. Ваші дані на цьому пристрої також шифруються і в разі скидання до типових параметрів вилучаються назавжди."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple ne collecte ces données que si cela est nécessaire pour activer des fonctionnalités spécifiques, sécuriser ses services ou personnaliser votre expérience.\n\nApple considère que la confidentialité est un droit humain fondamental. Nous avons donc conçu chacun de nos produits de façon à réduire au minimum la collecte et l’utilisation de vos données, à traiter ces dernières sur l’appareil dans la mesure du possible, et à vous permettre de contrôler la façon dont elles sont utilisées, ceci en toute transparence. Les données stockées sur votre appareil sont également chiffrées et seront définitivement supprimées si vous rétablissez les réglages par défaut."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Apple coleta essas informações somente quando necessário para ativar recursos específicos, assegurar os serviços da Apple ou personalizar a sua experiência.\n\nA Apple acredita que a privacidade é um direito humano fundamental, então todos os produtos da Apple são projetados para minimizar a coleta e uso dos seus dados, usar o processamento no dispositivo sempre que possível e proporcionar transparência e controle sobre as suas informações. Seus dados neste dispositivo também são criptografados e serão removidos permanentemente se você restaurar aos ajustes de fábrica."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple компаниясы мұндай ақпаратты белгілі бір функцияларды қосу, Apple сервистерін қорғау немесе жекелендіру үшін қажет болған жағдайда ғана жинайды.\n\nApple құпиялылықты адамның негізгі құқығы деп санайды, сондықтан әр Apple өнімі деректер жинау және пайдалану әрекетін азайтуға, құрылғыдағы ақпаратты мүмкіндігінше өңдеуге және ақпаратыңыздың ашықтығы мен басқарылуын қамтамасыз етуге арналған. Бұл құрылғыдағы деректеріңіз де шифрланған және құрылғыны зауыттық реттеулерге қайтарсаңыз, олар біржолата жойылады."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple colectează aceste informații doar atunci când sunt necesare pentru activarea unor funcționalități specifice, securizarea serviciilor Apple sau personalizarea experienței dvs. de utilizare.\n\nApple consideră că intimitatea este un drept uman fundamental. Din acest motiv, fiecare produs Apple este conceput pentru a minimiza colectarea și utilizarea datelor dvs., pentru a utiliza procesarea pe dispozitiv oricând este posibil și pentru a furniza transparență și control asupra informațiilor dvs. De asemenea, datele de pe acest dispozitiv sunt criptate și vor fi șterse definitiv dacă resetați la configurările din fabrică."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Appleが個人情報を収集するのは、特定の機能を有効にする必要があるとき、Appleのサービスを保護する必要があるとき、またはユーザ体験をパーソナライズする必要があるときだけです。\n\nAppleはプライバシーは基本的人権であると考えているため、Apple製品は個人情報の収集および使用を最小限にする、可能な限りデバイス上で処理をする、個人情報に関して透明性を提供しコントロールできるようにするという考え方に基づいて設計されています。また、このデバイス上のデータは暗号化され、出荷時の状態にリセットすると完全に削除されます。"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple collects this information only when needed to enable specific features, secure Apple services or personalise your experience.\n\nApple believes privacy is a fundamental human right, so every Apple product is designed to minimise the collection and use of your data, use on-device processing whenever possible, and provide transparency and control over your information. Your data on this device is also encrypted and will be permanently removed if you reset it to factory settings."
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Apple só recolhe esta informação quando é necessária para ativar funcionalidades específicas, para proteger os serviços Apple ou para personalizar a sua experiência de utilização.\n\nA Apple acredita que a privacidade seja um direito humano fundamental e, como tal, cada produto Apple é concebido de forma a minimizar a recolha e utilização dos seus dados, fazer uso do processamento nos dispositivos sempre que possível e proporcionar transparência e controlo sobre a sua informação. Os seus dados neste dispositivo também são cifrados e serão removidos permanentemente se restaurar as definições de fábrica."
+          }
+        }
+      }
+    },
+    "FOOTER_TEXT_IPHONE": {
+      "extractionState": "manual",
+      "localizations": {
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple prikuplja ove informacije samo kada su potrebne za omogućavanje određenih značajki, osiguravanje Appleovih usluga ili personaliziranje vašeg iskustva.\n\nApple smatra da je privatnost temeljno ljudsko pravo, stoga je svaki Appleov proizvod dizajniran kako bi minimalno prikupljao i koristio vaše podatke, upotrebljavao obrađivanje na uređaju kad god je moguće i pružao transparentnost i kontrolu nad vašim informacijama. Vaši podaci na ovom uređaju također su kriptirani i trajno će se ukloniti ako ga resetirate na tvorničke postavke."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "‏Apple אוספת מידע זה רק לצורך הפעלת מאפיינים מסוימים, אבטחת השירותים של Apple או התאמה אישית של חוויית השימוש שלך.\n\nב-Apple מאמינים שפרטיות היא זכות אנושית בסיסית, ולכן כל מוצר של Apple תוכנן באופן שנועד למזער את האיסוף והשימוש בנתונים שלך, לעבד את הנתונים במכשיר עצמו כשניתן לעשות זאת, ולספק לך שקיפות ושליטה על המידע שלך. הנתונים שלך במכשיר זה אף מוצפנים, והם יימחקו לצמיתות בעת שחזור המכשיר להגדרות היצרן."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple은 특정 기능을 활성화하거나, Apple 서비스를 보호하거나, 사용자 경험을 개인 맞춤화하는 데 필요할 때에만 이 정보를 수집합니다.\n\nApple은 개인정보 보호가 기본적 인권이라고 믿습니다. 이에 따라, 모든 Apple 제품은 사용자 데이터의 수집 및 사용을 최소화하고, 가능한 경우 언제나 기기 상에서 처리하며, 사용자의 정보에 대해 투명성을 제공하고, 이를 사용자가 제어할 수 있도록 설계되었습니다. 또한, 이 기기의 사용자 데이터는 암호화되고, 초기 설정 값으로 재설정할 경우 영구적으로 제거됩니다."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple hanya mengumpulkan informasi ini jika informasi diperlukan untuk mengaktifkan fitur tertentu, mengamankan layanan Apple, atau menyesuaikan pengalaman Anda.\n\nApple percaya bahwa privasi merupakan hak asasi manusia. Oleh karena itu, setiap produk Apple dirancang untuk meminimalisasi pengumpulan dan penggunaan data Anda, menggunakan pemrosesan di perangkat kapan pun memungkinkan, dan menyediakan transparansi dan kontrol atas informasi Anda. Data Anda di perangkat ini juga dienkripsi dan akan dihapus secara permanen jika Anda mengatur ulang ke pengaturan pabrik."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple kerää näitä tietoja vain, kun niitä tarvitaan tiettyjen ominaisuuksien käyttöönottamiseen, Applen palvelujen suojaamiseen tai käyttökokemuksesi räätälöimiseen.\n\nApplen mielestä tietosuoja on perusihmisoikeus, joten jokainen Applen tuote on suunniteltu minimoimaan tietojen keräämistä ja käyttöä, käyttämään laitteen sisäistä käsittelyä aina kun se on mahdollista ja tarjoamaan avoimuutta ja hallittavuutta omien tietojesi suhteen. Tässä laitteessa olevat tietosi ovat myös salattuja, ja ne poistetaan pysyvästi, jos laite nollataan tehdasasetuksiin."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple bu bilgileri yalnızca belirli özellikleri etkinleştirmek, Apple servislerini güvenli yapmak veya deneyiminizi kişiselleştirmek amacıyla toplar.\n\nApple gizliliğin temel bir insan hakkı olduğuna inanmaktadır, bu nedenle her Apple ürünü verilerinizin toplanmasını ve kullanılmasını en aza indirecek, uygun olduğunda verilerinizin aygıt üzerinde işleneceği ve bilgilerinizin şeffaflığını ve kontrolünü sağlayabileceğiniz bir şekilde tasarlanmıştır. Bu aygıttaki verileriniz de şifrelenir ve fabrika ayarlarına sıfırlarsanız kalıcı olarak silinir."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple verzamelt deze informatie alleen wanneer dit nodig is om specifieke functies mogelijk te maken, om voorzieningen van Apple te beveiligen of om je ervaring te personaliseren.\n\nApple vindt dat privacy een fundamenteel mensenrecht is. Daarom is elk Apple product ontworpen om het verzamelen en gebruik van je gegevens te beperken, om zoveel mogelijk verwerking op apparaten te gebruiken en transparantie en controle over je informatie te bieden. Je gegevens op dit apparaat zijn ook versleuteld en worden definitief verwijderd als je het terugzet op de fabrieksinstellingen."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Az Apple csak akkor gyűjti össze ezt az információt, amikor szükség van rá bizonyos funkciók engedélyezéséhez, az Apple-szolgáltatások védelmének biztosításához vagy a felhasználói élmény személyre szabásához.\n\nAz Apple hisz abban, hogy a személyes adatok védelme alapvető emberi jog, ezért az Apple-termékeket úgy tervezték, hogy minimalizálják az adatgyűjtést és -használatot; eszközön történő feldolgozást használjanak, amikor lehet; valamint biztosítsák az Ön számára az információk átláthatóságát és szabályozhatóságát. Az eszközön lévő adatai titkosítva vannak, és véglegesen törölve lesznek, ha visszaállítja a gyári beállításait."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple собирает эту информацию, только если она необходима для активации определенных функций, обеспечения безопасности сервисов Apple или персонализации.\n\nПо убеждению Apple, конфиденциальность является одним из основополагающих прав человека, поэтому каждый продукт Apple разработан так, чтобы сводить к минимуму сбор и использование Ваших данных, обрабатывать информацию на самом устройстве, если возможно, а также обеспечивать прозрачность и предоставлять Вам возможность управлять Вашей информацией. Ваши данные на этом устройстве также защищены шифрованием и будут безвозвратно удалены, если Вы сбросите устройство до заводских настроек."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple raccoglie dati solo quando è necessario per abilitare specifiche funzionalità, rendere sicuri i propri servizi o personalizzare l’esperienza utente.\n\nPer Apple la privacy è un diritto fondamentale. Ogni prodotto Apple è concepito per limitare al minimo la raccolta e l’utilizzo dei dati, per sfruttare l’elaborazione delle informazioni sul dispositivo stesso, ove possibile, nonché per fornire trasparenza e controllo sulle informazioni. Inoltre i dati sul dispositivo sono protetti tramite crittografia e verranno rimossi in modo permanente in caso di ripristino alle impostazioni di fabbrica."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple recopila esta información sólo para poder activar funciones específicas, asegurar nuestros servicios o personalizar tu experiencia.\n\nApple cree que la privacidad es un derecho humano fundamental, así que diseñó cada uno de sus productos para minimizar la recopilación y uso de tus datos, usar procesamiento en el dispositivo cuando sea posible y proporcionar transparencia y control sobre tu información. Tus datos en este dispositivo también se encriptan y se eliminarán de manera permanente si restableces la configuración de fábrica."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Η Apple συλλέγει αυτές τις πληροφορίες μόνο όταν χρειάζεται για ενεργοποίηση συγκεκριμένων δυνατοτήτων, ασφάλιση των υπηρεσιών Apple ή εξατομίκευση της εμπειρίας σας.\n\nΗ Apple πρεσβεύει ότι το απόρρητο είναι θεμελιώδες ανθρώπινο δικαίωμα, συνεπώς κάθε προϊόν Apple έχει σχεδιαστεί με βάση την ελαχιστοποίηση της συλλογής και της χρήσης των δεδομένων σας, τη χρήση επεξεργασίας επί της συσκευής όποτε είναι δυνατό, και την παροχή διαφάνειας και ελέγχου όσον αφορά τις πληροφορίες σας. Τα δεδομένα σε αυτήν τη συσκευή είναι επίσης κρυπτογραφημένα και θα αφαιρεθούν οριστικά, αν την επαναφέρετε στις εργοστασιακές ρυθμίσεις."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تجمع Apple هذه المعلومات فقط عندما تكون هناك حاجة لها، وذلك بهدف تمكين ميزات معينة أو تأمين خدمات Apple أو تخصيص تجربتك.\n\nتؤمن Apple بأن الخصوصية أحد حقوق الإنسان الأساسية، لذا فقد تم تصميم كل منتجات Apple لتقليل جمع واستخدام بياناتك إلى الحد الأدنى، ومعالجة البيانات على الأجهزة حيثما كان ذلك متاحًا، وتوفير الشفافية والقدرة على التحكم بمعلوماتك. يتم أيضًا تشفير بياناتك الموجودة على هذا الجهاز وستتم إزالتها نهائيًا إذا قمت بإعادة التعيين إلى إعدادات المصنع."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple recueille ces informations uniquement lorsque c’est nécessaire pour activer des fonctionnalités précises, sécuriser ses services ou personnaliser votre expérience d’utilisation.\n\nApple considère que la confidentialité constitue pour chacun un droit fondamental. C’est pourquoi tous les produits Apple sont conçus pour minimiser la collecte et l’utilisation de vos données, traiter autant que possible les données directement sur l’appareil et permettre le contrôle de vos données en toute transparence. Vos données sur cet appareil sont également chiffrées et seront définitivement supprimées si vous rétablissez les réglages d’origine."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple只會在需要資訊來啟用特定功能時，或者確保服務安全或個人化你的體驗時，才會收集此資訊。\n\nApple堅信隱私是基本人權，因此每項Apple產品的設計都將資料的收集與使用量最少化、儘可能透過裝置端處理，且你對個人資訊保有檢視權和控制權。你在此裝置上的資料也會加密，且若重置為出廠設定則會永久移除。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple只會在需要啟用特定功能、確保Apple服務安全或將你的體驗個人化時，才會收集此資料。\n\nApple堅信私隱是基本人權，因此每項Apple產品的設計都將盡可能收集和使用最少的資料及在裝置端處理，並且你對個人資料保有檢視權和控制權。你在此裝置上的資料也會加密，並會在重設至出廠設定時永久移除。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple samlar bara in den här informationen när det är nödvändigt för att aktivera specifika funktioner, säkra Apple‑tjänster eller personanpassa din upplevelse.\n\nFör Apple är integritet en grundläggande mänsklig rättighet. Alla Apple-produkter är därför utvecklade för att samla in och använda en minimal mängd av dina data, behandla data på enheten om det är möjligt samt ge dig insyn och kontroll över din information. Dina data på den här enheten är också krypterade och raderas permanent om du nollställer till fabriksinställningarna."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple innhenter denne informasjonen kun når den trengs for å aktivere visse funksjoner, sikre Apples tjenester og tilpasse funksjonene for deg.\n\nApple mener at personvern er en grunnleggende menneskerettighet, og hvert Apple-produkt er laget med tanke på å minimere innsamling og bruk av data, behandle data på enheten så langt det er mulig, og gi deg åpenhet og kontroll over informasjonen din. Dataene dine på denne enheten er også krypterte og vil bli fjernet permanent hvis du nullstiller til fabrikkinnstillinger."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple gromadzi te dane, tylko gdy są wymagane do włączania określonych funkcji, zabezpieczania usług Apple lub personalizowania działania produktów.\n\nWierzymy, że prywatność należy do podstawowych praw człowieka; każdy produkt Apple: gromadzi i wykorzystuje Twoje dane w możliwie minimalnym zakresie, gdy tylko to możliwe, przetwarza dane bezpośrednio na urządzeniu oraz zapewnia transparentność i daje Ci kontrolę nad Twoimi danymi. Dane na Twoim urządzeniu są także szyfrowane. Wyzerowanie urządzenia do ustawień fabrycznych powoduje ich trwałe usunięcie."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple indsamler kun disse oplysninger, når det er nødvendigt for at slå specifikke funktioner til, sikre Apples tjenester eller for at tilpasse din oplevelse.\n\nApple mener, at anonymitet er en grundlæggende menneskeret, så alle Apples produkter er designet til at minimere indsamlingen og brugen af dine data, bruge behandling på enheden, når det er muligt, og sikre gennemsigtighed med og kontrol over dine oplysninger. Dine data på denne enhed er også krypterede og bliver fjernet permanent, hvis enheden nulstilles til fabriksindstillingerne."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple इस जानकारी को विशिष्ट फ़ीचर सक्षम करने, Apple सेवाओं को सुरक्षित करने या आपका अनुभव वैयक्तिकृत करने के लिए आवश्यक होने पर ही एकत्रित करता है।\n\nApple का मानना है कि गोपनीयता एक मौलिक मानव अधिकार है इसलिए हर Apple उत्पाद को इस प्रकार डिज़ाइन किया गया है कि आपके डेटा का संग्रह और उपयोग कम से कम किया जा सके, जहाँ संभव हो डिवाइस पर ही प्रोसेस करने का काम हो और आपकी जानकारी पर नियंत्रण और पारदर्शिता रहे। इस डिवाइस पर आपका डेटा भी एंक्रिप्टेड किया जाता है और अगर आप फ़ैक्ट्री सेटिंग्ज़ पर रीसेट ^[करते हैं](inflect: true), तो स्थायी रूप से हटा दिया जाएगा।"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple collects this information only when needed to enable specific features, secure Apple services, or personalize your experience.\n\nApple believes privacy is a fundamental human right, so every Apple product is designed to minimize the collection and use of your data, use on-device processing whenever possible, and provide transparency and control over your information. Your data on this device is also encrypted and will be permanently removed if you reset to factory settings."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple recopila la informació només en cas que es necessiti per activar certes funcions, protegir els serveis d’Apple o personalitzar l’experiència.\n\nPer a Apple, la privacitat és un dret humà bàsic. Per això, tots els productes Apple s’han dissenyat per minimitzar la recopilació i l’ús de les teves dades, processar‑les localment al dispositiu sempre que sigui possible i facilitar‑te transparència i control sobre la teva informació. També s’encripten les dades que hi ha al dispositiu i, si en restableixes la configuració de fàbrica, s’eliminen definitivament."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple จะเก็บรวบรวมข้อมูลนี้เมื่อต้องเปิดใช้งานคุณสมบัติเฉพาะ รักษาความปลอดภัยในบริการต่างๆ ของ Apple หรือปรับแต่งให้เข้ากับประสบการณ์การใช้งานของคุณเท่านั้น\n\nApple เชื่อว่าความเป็นส่วนตัวเป็นสิทธิขั้นพื้นฐานของมนุษย์ ดังนั้นผลิตภัณฑ์ของ Apple จึงออกแบบมาเพื่อให้เก็บรวบรวมและใช้ข้อมูลของคุณน้อยลง ใช้การประมวลผลบนอุปกรณ์เมื่อใช้ได้ ให้ความโปร่งใสและการควบคุมข้อมูลของคุณเอง ข้อมูลของคุณบนอุปกรณ์นี้จะถูกเข้ารหัสและถูกเอาออกอย่างถาวรอีกด้วยหากคุณรีเซ็ตเป็นการตั้งค่าจากโรงงาน"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple仅在需要启用特定功能、保护Apple服务安全或个性化你的使用体验时才会收集此信息。\n\nApple将隐私视作每个人的基本权利，因此所有Apple产品旨在收集和使用最少的用户数据，尽可能地使用设备端处理，以及赋予用户对信息的知情权和控制权。你在此设备上的数据也会加密，并在还原为出厂设置时将永久移除。"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple collects this information only when needed to enable specific features, secure Apple services or personalise your experience.\n\nApple believes privacy is a fundamental human right, so every Apple product is designed to minimise the collection and use of your data, use on-device processing whenever possible, and provide transparency and control over your information. Your data on this device is also encrypted and will be permanently removed if you reset it to factory settings."
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Šią informaciją „Apple“ renka tik kai reikia suaktyvinti konkrečias funkcijas, apsaugoti „Apple“ paslaugas arba pritaikyti platformą jums.\n\n„Apple“ tiki, kad privatumas yra pamatinė žmogaus teisė, todėl kurdami visus „Apple“ produktus siekiame kuo labiau sumažinti galimybę rinkti jūsų duomenis, užtikrinti skaidrumą ir leisti jums valdyti savo informaciją. Be to, jūsų duomenys šiame įrenginyje yra užšifruojami ir bus visam laikui pašalinti, jei iš naujo nustatysite gamyklinius nustatymus."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple recopila esta información sólo para poder activar funciones específicas, asegurar nuestros servicios o personalizar tu experiencia.\n\nApple cree que la privacidad es un derecho humano fundamental, así que diseñó cada uno de sus productos para minimizar la recopilación y uso de tus datos, usar procesamiento en el dispositivo cuando sea posible y proporcionar transparencia y control sobre tu información. Tus datos en este dispositivo también se encriptan y se eliminarán de manera permanente si restableces la configuración de fábrica."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tyto údaje Apple shromažďuje jen tehdy, když je potřebuje k poskytování konkrétních funkcí, k zabezpečení svých služeb nebo k individuálnímu přizpůsobení vašeho uživatelského prostředí.\n\nApple považuje soukromí za základní lidské právo, proto všechny své produkty vyvíjíme tak, abychom minimalizovali sběr a využívání vašich dat, vždy upřednostňujeme zpracování údajů přímo v zařízení a poskytujeme vám plnou transparentnost a kontrolu nad vašimi informacemi. Kromě toho jsou vaše data v tomto zařízení zašifrovaná a při obnovení továrního nastavení se nenávratně odstraní."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spoločnosť Apple zhromažďuje tieto informácie, len keď je to potrebné na zapnutie konkrétnych funkcií, zabezpečenie služieb poskytovaných spoločnosťou Apple alebo na ich prispôsobenie vašim potrebám.\n\nSpoločnosť Apple považuje súkromie za základné ľudské právo, a preto je každý náš produkt navrhnutý tak, aby sme minimalizovali zber dát, uprednostnili ich spracovanie priamo na zariadení a poskytli vám transparentnosť a kontrolu nad vašimi informáciami. Vaše dáta na tomto zariadení sú navyše zašifrované a pri obnove pôvodných továrenských nastavení budú natrvalo vymazané."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple mengumpulkan maklumat ini hanya apabila diperlukan untuk mendayakan ciri tertentu, melindungi perkhidmatan Apple atau memperibadikan pengalaman anda.\n\nApple percaya bahawa privasi ialah hak asasi manusia, jadi setiap produk Apple direka bentuk untuk meminimumkan pengumpulan dan penggunaan data anda, menggunakan pemprosesan pada peranti pada bila-bila masa yang boleh dan menyediakan ketelusan serta kawalan ke atas maklumat anda. Data anda pada peranti ini turut disulitkan dan akan dikeluarkan secara kekal jika anda mereset kepada seting kilang."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple събира тази информация само когато е необходимо, за да активира конкретни функции, да защити Apple услуги или с цел персонализация.\n\nApple вярва, че поверителността е основно човешко право, така че всеки продукт на Apple е създаден да минимизира събирането и използването на вашите данни, да използва обработване на устройството при възможност и да предостави прозрачност и контрол върху вашата информация. Вашите данни на това устройство са също така криптирани и ще бъдат окончателно изтрити, ако се върнете към фабричните настройки."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple te podatke zbira le, kadar so potrebni za omogočanje določenih funkcij, zagotavljanje varnosti storitev Apple ali prilagajanje vaše izkušnje.\n\nApple meni, da je zasebnost osnovna človekova pravica, zato je vsak izdelek Apple zasnovan tako, da do največje možne mere zmanjša zbiranje in uporabo vaših podatkov, uporablja obdelavo v napravi povsod, kjer je to možno, ter zagotavlja transparentnost in nadzor nad vašimi podatki. Vaši podatki v tej napravi so tudi šifrirani in bodo trajno odstranjeni, če jo ponastavite na tovarniške nastavitve."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple collects this information only when needed to enable specific features, secure Apple services or personalise your experience.\n\nApple believes privacy is a fundamental human right, so every Apple product is designed to minimise the collection and use of your data, use on-device processing whenever possible and provide transparency and control over your information. Your data on this device is also encrypted and will be permanently removed if you reset to factory settings."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple erfasst diese Informationen nur dann, wenn sie notwendig sind, um bestimmte Funktionen zu ermöglichen, um für die Sicherheit von Apple-Diensten zu sorgen oder um dein Benutzererlebnis zu personalisieren.\n\nApple ist der Überzeugung, dass Datenschutz ein grundlegendes Menschenrecht ist. Jedes Apple-Produkt ist daher wie folgt konzipiert: Es werden so wenig Daten wie möglich erfasst und verwendet. Wo möglich, werden Daten direkt auf dem Gerät verarbeitet. Es herrscht höchste Transparenz und du hast die Kontrolle über deine Daten. Deine Daten auf diesem Gerät sind zudem verschlüsselt und werden dauerhaft entfernt, wenn du das Gerät auf die Werkseinstellungen zurücksetzt."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple chỉ thu thập thông tin này khi cần thiết để bật các tính năng cụ thể, bảo mật các dịch vụ của Apple hoặc cá nhân hóa trải nghiệm của bạn.\n\nApple tin rằng quyền riêng tư là một quyền con người cơ bản, do đó mọi sản phẩm Apple đều được thiết kế để giảm thiểu việc thu thập và sử dụng dữ liệu của bạn, sử dụng tính năng xử lý trên thiết bị bất kỳ lúc nào có thể, đồng thời cung cấp sự minh bạch và quyền kiểm soát đối với thông tin của bạn. Dữ liệu của bạn trên thiết bị này cũng được mã hóa và sẽ bị xóa vĩnh viễn nếu bạn đặt lại về cài đặt gốc."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple solo recopila esta información cuando es necesaria para activar determinadas funciones, proteger sus servicios o personalizar la experiencia de los usuarios.\n\nPara Apple, la privacidad es un derecho fundamental, por lo que todos los productos de Apple se han diseñado para reducir al mínimo la recopilación y uso de tus datos, realizar el procesamiento en el dispositivo siempre que sea posible y proporcionarte transparencia y control sobre tu información. Además, tus datos se encriptan en el dispositivo y se eliminan si decides restablecer los ajustes de fábrica."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple збирає таку інформацію, лише коли вона потрібна для ввімкнення функцій, убезпечення або персоналізації служб Apple.\n\nНа переконання Apple, приватність є основним правом людини, тому кожен продукт Apple спроєктовано так, щоб мінімізувати збирання і використання ваших даних, за можливості обробляти дані локально на пристрої та забезпечувати підзвітність і контроль за вашою інформацією. Ваші дані на цьому пристрої також шифруються і в разі скидання до типових параметрів вилучаються назавжди."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple ne collecte ces données que si cela est nécessaire pour activer des fonctionnalités spécifiques, sécuriser ses services ou personnaliser votre expérience.\n\nApple considère que la confidentialité est un droit humain fondamental. Nous avons donc conçu chacun de nos produits de façon à réduire au minimum la collecte et l’utilisation de vos données, à traiter ces dernières sur l’appareil dans la mesure du possible, et à vous permettre de contrôler la façon dont elles sont utilisées, ceci en toute transparence. Les données stockées sur votre appareil sont également chiffrées et seront définitivement supprimées si vous rétablissez les réglages par défaut."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Apple coleta essas informações somente quando necessário para ativar recursos específicos, assegurar os serviços da Apple ou personalizar a sua experiência.\n\nA Apple acredita que a privacidade é um direito humano fundamental, então todos os produtos da Apple são projetados para minimizar a coleta e uso dos seus dados, usar o processamento no dispositivo sempre que possível e proporcionar transparência e controle sobre as suas informações. Seus dados neste dispositivo também são criptografados e serão removidos permanentemente se você redefinir aos ajustes de fábrica."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple компаниясы мұндай ақпаратты белгілі бір функцияларды қосу, Apple сервистерін қорғау немесе жекелендіру үшін қажет болған жағдайда ғана жинайды.\n\nApple құпиялылықты адамның негізгі құқығы деп санайды, сондықтан әр Apple өнімі деректер жинау және пайдалану әрекетін азайтуға, құрылғыдағы ақпаратты мүмкіндігінше өңдеуге және ақпаратыңыздың ашықтығы мен басқаруды қамтамасыз етуге арналған. Бұл құрылғыдағы деректеріңіз де шифрланған және құрылғыны зауыттық реттеулерге қайтарсаңыз, олар біржолата жойылады."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple colectează aceste informații doar atunci când sunt necesare pentru activarea unor funcționalități specifice, securizarea serviciilor Apple sau personalizarea experienței dvs. de utilizare.\n\nApple consideră că intimitatea este un drept uman fundamental. Din acest motiv, fiecare produs Apple este conceput pentru a minimiza colectarea și utilizarea datelor dvs., pentru a utiliza procesarea pe dispozitiv oricând este posibil și pentru a furniza transparență și control asupra informațiilor dvs. De asemenea, datele de pe acest dispozitiv sunt criptate și vor fi șterse definitiv dacă resetați la configurările din fabrică."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Appleが個人情報を収集するのは、特定の機能を有効にする必要があるとき、Appleのサービスを保護する必要があるとき、またはユーザ体験をパーソナライズする必要があるときだけです。\n\nAppleはプライバシーは基本的人権であると考えているため、Apple製品は個人情報の収集および使用を最小限にする、可能な限りデバイス上で処理をする、個人情報に関して透明性を提供しコントロールできるようにするという考え方に基づいて設計されています。また、このデバイス上のデータは暗号化され、出荷時の状態にリセットすると完全に削除されます。"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple collects this information only when needed to enable specific features, secure Apple services or personalise your experience.\n\nApple believes privacy is a fundamental human right, so every Apple product is designed to minimise the collection and use of your data, use on-device processing whenever possible, and provide transparency and control over your information. Your data on this device is also encrypted and will be permanently removed if you reset it to factory settings."
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Apple só recolhe esta informação quando é necessária para ativar funcionalidades específicas, para proteger os serviços Apple ou para personalizar a sua experiência de utilização.\n\nA Apple acredita que a privacidade seja um direito humano fundamental e, como tal, cada produto Apple é concebido de forma a minimizar a recolha e utilização dos seus dados, fazer uso do processamento nos dispositivos sempre que possível e proporcionar transparência e controlo sobre a sua informação. Os seus dados neste dispositivo também são cifrados e serão removidos permanentemente se restaurar as definições de fábrica."
+          }
+        }
+      }
+    },
+    "FOOTER_TEXT_IPAD": {
+      "extractionState": "manual",
+      "localizations": {
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple prikuplja ove informacije samo kada su potrebne za omogućavanje određenih značajki, osiguravanje Appleovih usluga ili personaliziranje vašeg iskustva.\n\nApple smatra da je privatnost temeljno ljudsko pravo, stoga je svaki Appleov proizvod dizajniran kako bi minimalno prikupljao i koristio vaše podatke, upotrebljavao obrađivanje na uređaju kad god je moguće i pružao transparentnost i kontrolu nad vašim informacijama. Vaši podaci na ovom uređaju također su kriptirani i trajno će se ukloniti ako ga resetirate na tvorničke postavke."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "‏Apple אוספת מידע זה רק לצורך הפעלת מאפיינים מסוימים, אבטחת השירותים של Apple או התאמה אישית של חוויית השימוש שלך.\n\nב-Apple מאמינים שפרטיות היא זכות אנושית בסיסית, ולכן כל מוצר של Apple תוכנן באופן שנועד למזער את האיסוף והשימוש בנתונים שלך, לעבד את הנתונים במכשיר עצמו כשניתן לעשות זאת, ולספק לך שקיפות ושליטה על המידע שלך. הנתונים שלך במכשיר זה אף מוצפנים, והם יימחקו לצמיתות בעת שחזור המכשיר להגדרות היצרן."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple은 특정 기능을 활성화하거나, Apple 서비스를 보호하거나, 사용자 경험을 개인 맞춤화하는 데 필요할 때에만 이 정보를 수집합니다.\n\nApple은 개인정보 보호가 기본적 인권이라고 믿습니다. 이에 따라, 모든 Apple 제품은 사용자 데이터의 수집 및 사용을 최소화하고, 가능한 경우 언제나 기기 상에서 처리하며, 사용자의 정보에 대해 투명성을 제공하고, 이를 사용자가 제어할 수 있도록 설계되었습니다. 또한, 이 기기의 사용자 데이터는 암호화되고, 초기 설정 값으로 재설정할 경우 영구적으로 제거됩니다."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple hanya mengumpulkan informasi ini jika informasi diperlukan untuk mengaktifkan fitur tertentu, mengamankan layanan Apple, atau menyesuaikan pengalaman Anda.\n\nApple percaya bahwa privasi merupakan hak asasi manusia. Oleh karena itu, setiap produk Apple dirancang untuk meminimalisasi pengumpulan dan penggunaan data Anda, menggunakan pemrosesan di perangkat kapan pun dimungkinkan, dan menyediakan transparansi dan kontrol atas informasi Anda. Data Anda di perangkat ini juga dienkripsi dan akan dihapus secara permanen jika Anda mengatur ulang ke pengaturan pabrik."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple kerää näitä tietoja vain, kun niitä tarvitaan tiettyjen ominaisuuksien käyttöönottamiseen, Applen palvelujen suojaamiseen tai käyttökokemuksesi räätälöimiseen.\n\nApplen mielestä tietosuoja on perusihmisoikeus, joten jokainen Applen tuote on suunniteltu minimoimaan tietojen keräämistä ja käyttöä, käyttämään laitteen sisäistä käsittelyä aina kun se on mahdollista ja tarjoamaan avoimuutta ja hallittavuutta omien tietojesi suhteen. Tässä laitteessa olevat tietosi ovat myös salattuja, ja ne poistetaan pysyvästi, jos laite nollataan tehdasasetuksiin."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple bu bilgileri yalnızca belirli özellikleri etkinleştirmek, Apple servislerini güvenli yapmak veya deneyiminizi kişiselleştirmek amacıyla toplar.\n\nApple gizliliğin temel bir insan hakkı olduğuna inanmaktadır, bu nedenle her Apple ürünü verilerinizin toplanmasını ve kullanılmasını en aza indirecek, uygun olduğunda verilerinizin aygıt üzerinde işleneceği ve bilgilerinizin şeffaflığını ve kontrolünü sağlayabileceğiniz bir şekilde tasarlanmıştır. Bu aygıttaki verileriniz de şifrelenir ve fabrika ayarlarına sıfırlarsanız kalıcı olarak silinir."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple verzamelt deze informatie alleen wanneer dit nodig is om specifieke functies mogelijk te maken, om voorzieningen van Apple te beveiligen of om je ervaring te personaliseren.\n\nApple vindt dat privacy een fundamenteel mensenrecht is. Daarom is elk Apple product ontworpen om het verzamelen en gebruik van je gegevens te beperken, om zoveel mogelijk verwerking op apparaten te gebruiken en transparantie en controle over je informatie te bieden. Je gegevens op dit apparaat zijn ook versleuteld en worden definitief verwijderd als je het terugzet op de fabrieksinstellingen."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Az Apple csak akkor gyűjti össze ezt az információt, amikor szükség van rá bizonyos funkciók engedélyezéséhez, az Apple-szolgáltatások védelmének biztosításához vagy a felhasználói élmény személyre szabásához.\n\nAz Apple hisz abban, hogy a személyes adatok védelme alapvető emberi jog, ezért az Apple-termékeket úgy tervezték, hogy minimalizálják az adatgyűjtést és -használatot; eszközön történő feldolgozást használjanak, amikor lehet; valamint biztosítsák az Ön számára az információk átláthatóságát és szabályozhatóságát. Az eszközön lévő adatai titkosítva vannak, és véglegesen törölve lesznek, ha visszaállítja a gyári beállításait."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple собирает эту информацию, только если она необходима для активации определенных функций, обеспечения безопасности сервисов Apple или персонализации.\n\nПо убеждению Apple, конфиденциальность является одним из основополагающих прав человека, поэтому каждый продукт Apple разработан так, чтобы сводить к минимуму сбор и использование Ваших данных, обрабатывать информацию на самом устройстве, если возможно, а также обеспечивать прозрачность и предоставлять Вам возможность управлять Вашей информацией. Ваши данные на этом устройстве также защищены шифрованием и будут безвозвратно удалены, если Вы сбросите устройство до заводских настроек."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple raccoglie dati solo quando è necessario per abilitare specifiche funzionalità, rendere sicuri i propri servizi o personalizzare l’esperienza utente.\n\nPer Apple la privacy è un diritto fondamentale. Ogni prodotto Apple è concepito per limitare al minimo la raccolta e l’utilizzo dei dati, per sfruttare l’elaborazione delle informazioni sul dispositivo stesso, ove possibile, nonché per fornire trasparenza e controllo sulle informazioni. Inoltre i dati sul dispositivo sono protetti tramite crittografia e verranno rimossi in modo permanente in caso di ripristino alle impostazioni di fabbrica."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple recopila esta información sólo para poder activar funciones específicas, asegurar nuestros servicios o personalizar tu experiencia.\n\nApple cree que la privacidad es un derecho humano fundamental, así que diseñó cada uno de sus productos para minimizar la recopilación y uso de tus datos, usar procesamiento en el dispositivo cuando sea posible y proporcionar transparencia y control sobre tu información. Tus datos en este dispositivo también se encriptan y se eliminarán de manera permanente si restableces la configuración de fábrica."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Η Apple συλλέγει αυτές τις πληροφορίες μόνο όταν χρειάζεται για ενεργοποίηση συγκεκριμένων δυνατοτήτων, ασφάλιση των υπηρεσιών Apple ή εξατομίκευση της εμπειρίας σας.\n\nΗ Apple πρεσβεύει ότι το απόρρητο είναι θεμελιώδες ανθρώπινο δικαίωμα, συνεπώς κάθε προϊόν Apple έχει σχεδιαστεί με βάση την ελαχιστοποίηση της συλλογής και της χρήσης των δεδομένων σας, τη χρήση επεξεργασίας επί της συσκευής όποτε είναι δυνατό, και την παροχή διαφάνειας και ελέγχου όσον αφορά τις πληροφορίες σας. Τα δεδομένα σε αυτήν τη συσκευή είναι επίσης κρυπτογραφημένα και θα αφαιρεθούν οριστικά, αν την επαναφέρετε στις εργοστασιακές ρυθμίσεις."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تجمع Apple هذه المعلومات فقط عندما تكون هناك حاجة لها، وذلك بهدف تمكين ميزات معينة أو تأمين خدمات Apple أو تخصيص تجربتك.\n\nتؤمن Apple بأن الخصوصية أحد حقوق الإنسان الأساسية، لذا فقد تم تصميم كل منتجات Apple لتقليل جمع واستخدام بياناتك إلى الحد الأدنى، ومعالجة البيانات على الأجهزة حيثما كان ذلك متاحًا، وتوفير الشفافية والقدرة على التحكم بمعلوماتك. يتم أيضًا تشفير بياناتك الموجودة على هذا الجهاز وستتم إزالتها نهائيًا إذا قمت بإعادة التعيين إلى إعدادات المصنع."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple recueille ces informations uniquement lorsque c’est nécessaire pour activer des fonctionnalités précises, sécuriser ses services ou personnaliser votre expérience d’utilisation.\n\nApple considère que la confidentialité constitue pour chacun un droit fondamental. C’est pourquoi tous les produits Apple sont conçus pour minimiser la collecte et l’utilisation de vos données, traiter autant que possible les données directement sur l’appareil et permettre le contrôle de vos données en toute transparence. Vos données sur cet appareil sont également chiffrées et seront définitivement supprimées si vous rétablissez les réglages d’origine."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple只會在需要資訊來啟用特定功能時，或者確保服務安全或個人化你的體驗時，才會收集此資訊。\n\nApple堅信隱私是基本人權，因此每項Apple產品的設計都將資料的收集與使用量最少化、儘可能透過裝置端處理，且你對個人資訊保有檢視權和控制權。你在此裝置上的資料也會加密，且若重置為出廠設定則會永久移除。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple只在有需要時才會收集此資料，以啟用特定功能、確保Apple服務安全或將你的體驗個人化。\n\nApple堅信私隱是基本人權，因此每項Apple產品的設計都將盡可能收集和使用最少的資料及在裝置端處理，並且你對個人資料保有檢視權和控制權。你在此裝置上的資料也會加密，並會在重設至出廠設定時永久移除。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple samlar bara in den här informationen när det är nödvändigt för att aktivera specifika funktioner, säkra Apple‑tjänster eller personanpassa din upplevelse.\n\nFör Apple är integritet en grundläggande mänsklig rättighet. Alla Apple-produkter är därför utvecklade för att samla in och använda en minimal mängd av dina data, behandla data på enheten om det är möjligt samt ge dig insyn och kontroll över din information. Dina data på den här enheten är också krypterade och raderas permanent om du nollställer till fabriksinställningarna."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple innhenter denne informasjonen kun når den trengs for å aktivere visse funksjoner, sikre Apples tjenester og tilpasse funksjonene for deg.\n\nApple mener at personvern er en grunnleggende menneskerettighet, og hvert Apple-produkt er laget med tanke på å minimere innsamling og bruk av data, behandle data på enheten så langt det er mulig, og gi deg åpenhet og kontroll over informasjonen din. Dataene dine på denne enheten er også krypterte og vil bli fjernet permanent hvis du nullstiller til fabrikkinnstillinger."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple gromadzi te dane, tylko gdy są wymagane do włączania określonych funkcji, zabezpieczania usług Apple lub personalizowania działania produktów.\n\nWierzymy, że prywatność należy do podstawowych praw człowieka; każdy produkt Apple: gromadzi i wykorzystuje Twoje dane w możliwie minimalnym zakresie, gdy tylko to możliwe, przetwarza dane bezpośrednio na urządzeniu oraz zapewnia transparentność i daje Ci kontrolę nad Twoimi danymi. Dane na Twoim urządzeniu są także szyfrowane. Wyzerowanie urządzenia do ustawień fabrycznych powoduje ich trwałe usunięcie."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple indsamler kun disse oplysninger, når det er nødvendigt for at slå specifikke funktioner til, sikre Apples tjenester eller for at tilpasse din oplevelse.\n\nApple mener, at anonymitet er en grundlæggende menneskeret, så alle Apples produkter er designet til at minimere indsamlingen og brugen af dine data, bruge behandling på enheden, når det er muligt, og sikre gennemsigtighed med og kontrol over dine oplysninger. Dine data på denne enhed er også krypterede og bliver fjernet permanent, hvis enheden nulstilles til fabriksindstillingerne."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple इस जानकारी को विशिष्ट फ़ीचर सक्षम करने, Apple सेवाओं को सुरक्षित करने या आपका अनुभव वैयक्तिकृत करने के लिए आवश्यक होने पर ही एकत्रित करता है।\n\nApple का मानना है कि गोपनीयता एक मौलिक मानव अधिकार है इसलिए हर Apple उत्पाद को इस प्रकार डिज़ाइन किया गया है कि आपके डेटा का संग्रह और उपयोग कम से कम किया जा सके, जहाँ संभव हो डिवाइस पर ही प्रोसेस करने का काम हो और आपकी जानकारी पर नियंत्रण और पारदर्शिता रहे। इस डिवाइस पर आपका डेटा भी एंक्रिप्टेड किया जाता है और अगर आप फ़ैक्ट्री सेटिंग्ज़ पर रीसेट ^[करते हैं](inflect: true), तो स्थायी रूप से हटा दिया जाएगा।"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple collects this information only when needed to enable specific features, secure Apple services, or personalize your experience.\n\nApple believes privacy is a fundamental human right, so every Apple product is designed to minimize the collection and use of your data, use on-device processing whenever possible, and provide transparency and control over your information. Your data on this device is also encrypted and will be permanently removed if you reset to factory settings."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple recopila la informació només en cas que es necessiti per activar certes funcions, protegir els serveis d’Apple o personalitzar l’experiència.\n\nPer a Apple, la privacitat és un dret humà bàsic. Per això, tots els productes Apple s’han dissenyat per minimitzar la recopilació i l’ús de les teves dades, processar‑les localment al dispositiu sempre que sigui possible i facilitar‑te transparència i control sobre la teva informació. També s’encripten les dades que hi ha al dispositiu i, si en restableixes la configuració de fàbrica, s’eliminen definitivament."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple จะเก็บรวบรวมข้อมูลนี้เมื่อต้องเปิดใช้งานคุณสมบัติเฉพาะ รักษาความปลอดภัยในบริการต่างๆ ของ Apple หรือปรับแต่งให้เข้ากับประสบการณ์การใช้งานของคุณเท่านั้น\n\nApple เชื่อว่าความเป็นส่วนตัวเป็นสิทธิขั้นพื้นฐานของมนุษย์ ดังนั้นผลิตภัณฑ์ของ Apple จึงออกแบบมาเพื่อให้เก็บรวบรวมและใช้ข้อมูลของคุณน้อยลง ใช้การประมวลผลบนอุปกรณ์เมื่อใช้ได้ ให้ความโปร่งใสและการควบคุมข้อมูลของคุณเอง ข้อมูลของคุณบนอุปกรณ์นี้จะถูกเข้ารหัสและถูกเอาออกอย่างถาวรอีกด้วยหากคุณรีเซ็ตเป็นการตั้งค่าจากโรงงาน"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple仅在需要启用特定功能、保护Apple服务安全或个性化你的使用体验时才会收集此信息。\n\nApple将隐私视作每个人的基本权利，因此所有Apple产品旨在收集和使用最少的用户数据，尽可能地使用设备端处理，以及赋予用户对信息的知情权和控制权。你在此设备上的数据也会加密，并在还原为出厂设置时将永久移除。"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple collects this information only when needed to enable specific features, secure Apple services or personalise your experience.\n\nApple believes privacy is a fundamental human right, so every Apple product is designed to minimise the collection and use of your data, use on-device processing whenever possible, and provide transparency and control over your information. Your data on this device is also encrypted and will be permanently removed if you reset it to factory settings."
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Šią informaciją „Apple“ renka tik kai reikia suaktyvinti konkrečias funkcijas, apsaugoti „Apple“ paslaugas arba pritaikyti platformą jums.\n\n„Apple“ tiki, kad privatumas yra pamatinė žmogaus teisė, todėl kurdami visus „Apple“ produktus siekiame kuo labiau sumažinti galimybę rinkti jūsų duomenis, užtikrinti skaidrumą ir leisti jums valdyti savo informaciją. Be to, jūsų duomenys šiame įrenginyje yra užšifruojami ir bus visam laikui pašalinti, jei iš naujo nustatysite gamyklinius nustatymus."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple recopila esta información sólo para poder activar funciones específicas, asegurar nuestros servicios o personalizar tu experiencia.\n\nApple cree que la privacidad es un derecho humano fundamental, así que diseñó cada uno de sus productos para minimizar la recopilación y uso de tus datos, usar procesamiento en el dispositivo cuando sea posible y proporcionar transparencia y control sobre tu información. Tus datos en este dispositivo también se encriptan y se eliminarán de manera permanente si restableces la configuración de fábrica."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tyto údaje Apple shromažďuje jen tehdy, když je potřebuje k poskytování konkrétních funkcí, k zabezpečení svých služeb nebo k individuálnímu přizpůsobení vašeho uživatelského prostředí.\n\nApple považuje soukromí za základní lidské právo, proto všechny své produkty vyvíjíme tak, abychom minimalizovali sběr a využívání vašich dat, vždy upřednostňujeme zpracování údajů přímo v zařízení a poskytujeme vám plnou transparentnost a kontrolu nad vašimi informacemi. Kromě toho jsou vaše data v tomto zařízení zašifrovaná a při obnovení továrního nastavení se nevratně odstraní."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spoločnosť Apple zhromažďuje tieto informácie, len keď je to potrebné na zapnutie konkrétnych funkcií, zabezpečenie služieb poskytovaných spoločnosťou Apple alebo na ich prispôsobenie vašim potrebám.\n\nSpoločnosť Apple považuje súkromie za základné ľudské právo, a preto je každý náš produkt navrhnutý tak, aby sme minimalizovali zber dát, uprednostnili ich spracovanie priamo na zariadení a poskytli vám transparentnosť a kontrolu nad vašimi informáciami. Vaše dáta na tomto zariadení sú navyše zašifrované a pri obnove pôvodných továrenských nastavení budú natrvalo vymazané."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple mengumpulkan maklumat ini hanya apabila diperlukan untuk mendayakan ciri tertentu, melindungi perkhidmatan Apple atau memperibadikan pengalaman anda.\n\nApple percaya bahawa privasi ialah hak asasi manusia, jadi setiap produk Apple direka bentuk untuk meminimumkan pengumpulan dan penggunaan data anda, menggunakan pemprosesan pada peranti pada bila-bila masa yang boleh dan menyediakan ketelusan serta kawalan ke atas maklumat anda. Data anda pada peranti ini turut disulitkan dan akan dikeluarkan secara kekal jika anda mereset kepada seting kilang."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple събира тази информация само когато е необходимо, за да активира конкретни функции, да защити Apple услуги или с цел персонализация.\n\nApple вярва, че поверителността е основно човешко право, така че всеки продукт на Apple е създаден да минимизира събирането и използването на вашите данни, да използва обработване на устройството при възможност и да предостави прозрачност и контрол върху вашата информация. Вашите данни на това устройство са също така криптирани и ще бъдат окончателно изтрити, ако се върнете към фабричните настройки."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple te podatke zbira le, kadar so potrebni za omogočanje določenih funkcij, zagotavljanje varnosti storitev Apple ali prilagajanje vaše izkušnje.\n\nApple meni, da je zasebnost osnovna človekova pravica, zato je vsak izdelek Apple zasnovan tako, da do največje možne mere zmanjša zbiranje in uporabo vaših podatkov, uporablja obdelavo v napravi povsod, kjer je to možno, ter zagotavlja transparentnost in nadzor nad vašimi podatki. Vaši podatki v tej napravi so tudi šifrirani in bodo trajno odstranjeni, če jo ponastavite na tovarniške nastavitve."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple collects this information only when needed to enable specific features, secure Apple services or personalise your experience.\n\nApple believes privacy is a fundamental human right, so every Apple product is designed to minimise the collection and use of your data, use on-device processing whenever possible and provide transparency and control over your information. Your data on this device is also encrypted and will be permanently removed if you reset to factory settings."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple erfasst diese Informationen nur dann, wenn sie notwendig sind, um bestimmte Funktionen zu ermöglichen, um für die Sicherheit von Apple-Diensten zu sorgen oder um dein Benutzererlebnis zu personalisieren.\n\nApple ist der Überzeugung, dass Datenschutz ein grundlegendes Menschenrecht ist. Jedes Apple-Produkt ist daher wie folgt konzipiert: Es werden so wenig Daten wie möglich erfasst und verwendet. Wo möglich, werden Daten direkt auf dem Gerät verarbeitet. Es herrscht höchste Transparenz und du hast die Kontrolle über deine Daten. Deine Daten auf diesem Gerät sind zudem verschlüsselt und werden dauerhaft entfernt, wenn du das Gerät auf die Werkseinstellungen zurücksetzt."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple chỉ thu thập thông tin này khi cần thiết để bật các tính năng cụ thể, bảo mật các dịch vụ của Apple hoặc cá nhân hóa trải nghiệm của bạn.\n\nApple tin rằng quyền riêng tư là một quyền con người cơ bản, do đó mọi sản phẩm Apple đều được thiết kế để giảm thiểu việc thu thập và sử dụng dữ liệu của bạn, sử dụng tính năng xử lý trên thiết bị bất kỳ lúc nào có thể, đồng thời cung cấp sự minh bạch và quyền kiểm soát đối với thông tin của bạn. Dữ liệu của bạn trên thiết bị này cũng được mã hóa và sẽ bị xóa vĩnh viễn nếu bạn đặt lại về cài đặt gốc."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple solo recopila esta información cuando es necesaria para activar determinadas funciones, proteger sus servicios o personalizar la experiencia de los usuarios.\n\nPara Apple, la privacidad es un derecho fundamental, por lo que todos los productos de Apple se han diseñado para reducir al mínimo la recopilación y uso de tus datos, realizar el procesamiento en el dispositivo siempre que sea posible y proporcionarte transparencia y control sobre tu información. Además, tus datos se encriptan en el dispositivo y se eliminan si decides restablecer los ajustes de fábrica."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple збирає таку інформацію, лише коли вона потрібна для ввімкнення функцій, убезпечення або персоналізації служб Apple.\n\nНа переконання Apple, приватність є основним правом людини, тому кожен продукт Apple спроєктовано так, щоб мінімізувати збирання і використання ваших даних, за можливості обробляти дані локально на пристрої та забезпечувати підзвітність і контроль за вашою інформацією. Ваші дані на цьому пристрої також шифруються і в разі скидання до заводських параметрів вилучаються назавжди."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple ne collecte ces données que si cela est nécessaire pour activer des fonctionnalités spécifiques, sécuriser ses services ou personnaliser votre expérience.\n\nApple considère que la confidentialité est un droit humain fondamental. Nous avons donc conçu chacun de nos produits de façon à réduire au minimum la collecte et l’utilisation de vos données, à traiter ces dernières sur l’appareil dans la mesure du possible, et à vous permettre de contrôler la façon dont elles sont utilisées, ceci en toute transparence. Les données stockées sur votre appareil sont également chiffrées et seront définitivement supprimées si vous rétablissez les réglages par défaut."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Apple coleta essas informações somente quando necessário para ativar recursos específicos, assegurar os serviços da Apple ou personalizar a sua experiência.\n\nA Apple acredita que a privacidade é um direito humano fundamental, então todos os produtos da Apple são projetados para minimizar a coleta e uso dos seus dados, usar o processamento no dispositivo sempre que possível e proporcionar transparência e controle sobre as suas informações. Seus dados neste dispositivo também são criptografados e serão removidos permanentemente se você restaurar aos ajustes de fábrica."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple компаниясы мұндай ақпаратты белгілі бір функцияларды қосу, Apple сервистерін қорғау немесе жекелендіру үшін қажет болған жағдайда ғана жинайды.\n\nApple құпиялылықты адамның негізгі құқығы деп санайды, сондықтан әр Apple өнімі деректер жинау және пайдалану әрекетін азайтуға, құрылғыдағы ақпаратты мүмкіндігінше өңдеуге және ақпаратыңыздың ашықтығы мен басқаруды қамтамасыз етуге арналған. Бұл құрылғыдағы деректеріңіз де шифрланған және құрылғыны зауыттық реттеулерге қайтарсаңыз, олар біржолата жойылады."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple colectează aceste informații doar atunci când sunt necesare pentru activarea unor funcționalități specifice, securizarea serviciilor Apple sau personalizarea experienței dvs. de utilizare.\n\nApple consideră că intimitatea este un drept uman fundamental. Din acest motiv, fiecare produs Apple este conceput pentru a minimiza colectarea și utilizarea datelor dvs., pentru a utiliza procesarea pe dispozitiv oricând este posibil și pentru a furniza transparență și control asupra informațiilor dvs. De asemenea, datele de pe acest dispozitiv sunt criptate și vor fi șterse definitiv dacă resetați la configurările din fabrică."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Appleが個人情報を収集するのは、特定の機能を有効にする必要があるとき、Appleのサービスを保護する必要があるとき、またはユーザ体験をパーソナライズする必要があるときだけです。\n\nAppleはプライバシーは基本的人権であると考えているため、Apple製品は個人情報の収集および使用を最小限にする、可能な限りデバイス上で処理をする、個人情報に関して透明性を提供しコントロールできるようにするという考え方に基づいて設計されています。また、このデバイス上のデータは暗号化され、出荷時の状態にリセットすると完全に削除されます。"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple collects this information only when needed to enable specific features, secure Apple services or personalise your experience.\n\nApple believes privacy is a fundamental human right, so every Apple product is designed to minimise the collection and use of your data, use on-device processing whenever possible, and provide transparency and control over your information. Your data on this device is also encrypted and will be permanently removed if you reset it to factory settings."
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Apple só recolhe esta informação quando é necessária para ativar funcionalidades específicas, para proteger os serviços Apple ou para personalizar a sua experiência de utilização.\n\nA Apple acredita que a privacidade seja um direito humano fundamental e, como tal, cada produto Apple é concebido de forma a minimizar a recolha e utilização dos seus dados, fazer uso do processamento nos dispositivos sempre que possível e proporcionar transparência e controlo sobre a sua informação. Os seus dados neste dispositivo também são cifrados e serão removidos permanentemente se restaurar as definições de fábrica."
+          }
+        }
+      }
+    },
+    "FOOTER_TEXT_IPOD": {
+      "extractionState": "manual",
+      "localizations": {
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple prikuplja ove informacije samo kada su potrebne za omogućavanje određenih značajki, osiguravanje Appleovih usluga ili personaliziranje vašeg iskustva.\n\nApple smatra da je privatnost temeljno ljudsko pravo, stoga je svaki Appleov proizvod dizajniran kako bi minimalno prikupljao i koristio vaše podatke, upotrebljavao obrađivanje na uređaju kad god je moguće i pružao transparentnost i kontrolu nad vašim informacijama. Vaši podaci na ovom uređaju također su kriptirani i trajno će se ukloniti ako ga resetirate na tvorničke postavke."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "‏Apple אוספת מידע זה רק לצורך הפעלת מאפיינים מסוימים, אבטחת השירותים של Apple או התאמה אישית של חוויית השימוש שלך.\n\nב-Apple מאמינים שפרטיות היא זכות אנושית בסיסית, ולכן כל מוצר של Apple תוכנן באופן שנועד למזער את האיסוף והשימוש בנתונים שלך, לעבד את הנתונים במכשיר עצמו כשניתן לעשות זאת, ולספק לך שקיפות ושליטה על המידע שלך. הנתונים שלך במכשיר זה אף מוצפנים, והם יימחקו לצמיתות בעת שחזור המכשיר להגדרות היצרן."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple은 특정 기능을 활성화하거나, Apple 서비스를 보호하거나, 사용자 경험을 개인 맞춤화하는 데 필요할 때에만 이 정보를 수집합니다.\n\nApple은 개인정보 보호가 기본적 인권이라고 믿습니다. 이에 따라, 모든 Apple 제품은 사용자 데이터의 수집 및 사용을 최소화하고, 가능한 경우 언제나 기기 상에서 처리하며, 사용자의 정보에 대해 투명성을 제공하고, 이를 사용자가 제어할 수 있도록 설계되었습니다. 또한, 이 기기의 사용자 데이터는 암호화되고, 초기 설정 값으로 재설정할 경우 영구적으로 제거됩니다."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple hanya mengumpulkan informasi ini jika informasi diperlukan untuk mengaktifkan fitur tertentu, mengamankan layanan Apple, atau menyesuaikan pengalaman Anda.\n\nApple percaya bahwa privasi merupakan hak asasi manusia. Oleh karena itu, setiap produk Apple dirancang untuk meminimalisasi pengumpulan dan penggunaan data Anda, menggunakan pemrosesan di perangkat kapan pun dimungkinkan, dan menyediakan transparansi dan kontrol atas informasi Anda. Data Anda di perangkat ini juga dienkripsi dan akan dihapus secara permanen jika Anda mengatur ulang ke pengaturan pabrik."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple kerää näitä tietoja vain, kun niitä tarvitaan tiettyjen ominaisuuksien käyttöönottamiseen, Applen palvelujen suojaamiseen tai käyttökokemuksesi räätälöimiseen.\n\nApplen mielestä tietosuoja on perusihmisoikeus, joten jokainen Applen tuote on suunniteltu minimoimaan tietojen keräämistä ja käyttöä, käyttämään laitteen sisäistä käsittelyä aina kun se on mahdollista ja tarjoamaan avoimuutta ja hallittavuutta omien tietojesi suhteen. Tässä laitteessa olevat tietosi ovat myös salattuja, ja ne poistetaan pysyvästi, jos laite nollataan tehdasasetuksiin."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple bu bilgileri yalnızca belirli özellikleri etkinleştirmek, Apple servislerini güvenli yapmak veya deneyiminizi kişiselleştirmek amacıyla toplar.\n\nApple gizliliğin temel bir insan hakkı olduğuna inanmaktadır, bu nedenle her Apple ürünü verilerinizin toplanmasını ve kullanılmasını en aza indirecek, uygun olduğunda verilerinizin aygıt üzerinde işleneceği ve bilgilerinizin şeffaflığını ve kontrolünü sağlayabileceğiniz bir şekilde tasarlanmıştır. Bu aygıttaki verileriniz de şifrelenir ve fabrika ayarlarına sıfırlarsanız kalıcı olarak silinir."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple verzamelt deze informatie alleen wanneer dit nodig is om specifieke functies mogelijk te maken, om voorzieningen van Apple te beveiligen of om je ervaring te personaliseren.\n\nApple vindt dat privacy een fundamenteel mensenrecht is. Daarom is elk Apple product ontworpen om het verzamelen en gebruik van je gegevens te beperken, om zoveel mogelijk verwerking op apparaten te gebruiken en transparantie en controle over je informatie te bieden. Je gegevens op dit apparaat zijn ook versleuteld en worden definitief verwijderd als je het terugzet op de fabrieksinstellingen."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Az Apple csak akkor gyűjti össze ezt az információt, amikor szükség van rá bizonyos funkciók engedélyezéséhez, az Apple-szolgáltatások védelmének biztosításához vagy a felhasználói élmény személyre szabásához.\n\nAz Apple hisz abban, hogy a személyes adatok védelme alapvető emberi jog, ezért az Apple-termékeket úgy tervezték, hogy minimalizálják az adatgyűjtést és -használatot; eszközön történő feldolgozást használjanak, amikor lehet; valamint biztosítsák az Ön számára az információk átláthatóságát és szabályozhatóságát. Az eszközön lévő adatai titkosítva vannak, és véglegesen törölve lesznek, ha visszaállítja a gyári beállításait."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple собирает эту информацию, только если она необходима для активации определенных функций, обеспечения безопасности сервисов Apple или персонализации.\n\nПо убеждению Apple, конфиденциальность является одним из основополагающих прав человека, поэтому каждый продукт Apple разработан так, чтобы сводить к минимуму сбор и использование Ваших данных, обрабатывать информацию на самом устройстве, если возможно, а также обеспечивать прозрачность и предоставлять Вам возможность управлять Вашей информацией. Ваши данные на этом устройстве также защищены шифрованием и будут безвозвратно удалены, если Вы сбросите устройство до заводских настроек."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple raccoglie dati solo quando è necessario per abilitare specifiche funzionalità, rendere sicuri i propri servizi o personalizzare l’esperienza utente.\n\nPer Apple la privacy è un diritto fondamentale. Ogni prodotto Apple è concepito per limitare al minimo la raccolta e l’utilizzo dei dati, per sfruttare l’elaborazione delle informazioni sul dispositivo stesso, ove possibile, nonché per fornire trasparenza e controllo sulle informazioni. Inoltre i dati sul dispositivo sono protetti tramite crittografia e verranno rimossi in modo permanente in caso di ripristino alle impostazioni di fabbrica."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple recopila esta información sólo para poder activar funciones específicas, asegurar nuestros servicios o personalizar tu experiencia.\n\nApple cree que la privacidad es un derecho humano fundamental, así que diseñó cada uno de sus productos para minimizar la recopilación y uso de tus datos, usar procesamiento en el dispositivo cuando sea posible y proporcionar transparencia y control sobre tu información. Tus datos en este dispositivo también se encriptan y se eliminarán de manera permanente si restableces la configuración de fábrica."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Η Apple συλλέγει αυτές τις πληροφορίες μόνο όταν χρειάζεται για ενεργοποίηση συγκεκριμένων δυνατοτήτων, ασφάλιση των υπηρεσιών Apple ή εξατομίκευση της εμπειρίας σας.\n\nΗ Apple πρεσβεύει ότι το απόρρητο είναι θεμελιώδες ανθρώπινο δικαίωμα, συνεπώς κάθε προϊόν Apple έχει σχεδιαστεί με βάση την ελαχιστοποίηση της συλλογής και της χρήσης των δεδομένων σας, τη χρήση επεξεργασίας επί της συσκευής όποτε είναι δυνατό, και την παροχή διαφάνειας και ελέγχου όσον αφορά τις πληροφορίες σας. Τα δεδομένα σε αυτήν τη συσκευή είναι επίσης κρυπτογραφημένα και θα αφαιρεθούν οριστικά, αν την επαναφέρετε στις εργοστασιακές ρυθμίσεις."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تجمع Apple هذه المعلومات فقط عندما تكون هناك حاجة لها، وذلك بهدف تمكين ميزات معينة أو تأمين خدمات Apple أو تخصيص تجربتك.\n\nتؤمن Apple بأن الخصوصية أحد حقوق الإنسان الأساسية، لذا فقد تم تصميم كل منتجات Apple لتقليل جمع واستخدام بياناتك إلى الحد الأدنى، ومعالجة البيانات على الأجهزة حيثما كان ذلك متاحًا، وتوفير الشفافية والقدرة على التحكم بمعلوماتك. يتم أيضًا تشفير بياناتك الموجودة على هذا الجهاز وستتم إزالتها نهائيًا إذا قمت بإعادة التعيين إلى إعدادات المصنع."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple recueille ces informations uniquement lorsque c’est nécessaire pour activer des fonctionnalités précises, sécuriser ses services ou personnaliser votre expérience d’utilisation.\n\nApple considère que la confidentialité constitue pour chacun un droit fondamental. C’est pourquoi tous les produits Apple sont conçus pour minimiser la collecte et l’utilisation de vos données, traiter autant que possible les données directement sur l’appareil et permettre le contrôle de vos données en toute transparence. Vos données sur cet appareil sont également chiffrées et seront définitivement supprimées si vous rétablissez les réglages d’origine."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple只會在需要資訊來啟用特定功能時，或者確保服務安全或個人化你的體驗時，才會收集此資訊。\n\nApple堅信隱私是基本人權，因此每項Apple產品的設計都將資料的收集與使用量最少化、儘可能透過裝置端處理，且你對個人資訊保有檢視權和控制權。你在此裝置上的資料也會加密，且若重置為出廠設定則會永久移除。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple只會在需要啟用特定功能、確保Apple服務安全或將你的體驗個人化時，才會收集此資料。\n\nApple堅信私隱是基本人權，因此每項Apple產品的設計都將盡可能收集和使用最少的資料及在裝置端處理，並且你對個人資料保有檢視權和控制權。你在此裝置上的資料也會加密，並會在重設至出廠設定時永久移除。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple samlar bara in den här informationen när det är nödvändigt för att aktivera specifika funktioner, säkra Apple‑tjänster eller personanpassa din upplevelse.\n\nFör Apple är integritet en grundläggande mänsklig rättighet. Alla Apple-produkter är därför utvecklade för att samla in och använda en minimal mängd av dina data, behandla data på enheten om det är möjligt samt ge dig insyn och kontroll över din information. Dina data på den här enheten är också krypterade och raderas permanent om du nollställer till fabriksinställningarna."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple innhenter denne informasjonen kun når den trengs for å aktivere visse funksjoner, sikre Apples tjenester og tilpasse funksjonene for deg.\n\nApple mener at personvern er en grunnleggende menneskerettighet, og hvert Apple-produkt er laget med tanke på å minimere innsamling og bruk av data, behandle data på enheten så langt det er mulig, og gi deg åpenhet og kontroll over informasjonen din. Dataene dine på denne enheten er også krypterte og vil bli fjernet permanent hvis du nullstiller til fabrikkinnstillinger."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple gromadzi te dane, tylko gdy są wymagane do włączania określonych funkcji, zabezpieczania usług Apple lub personalizowania działania produktów.\n\nWierzymy, że prywatność należy do podstawowych praw człowieka; każdy produkt Apple: gromadzi i wykorzystuje Twoje dane w możliwie minimalnym zakresie, gdy tylko to możliwe, przetwarza dane bezpośrednio na urządzeniu oraz zapewnia transparentność i daje Ci kontrolę nad Twoimi danymi. Dane na Twoim urządzeniu są także szyfrowane. Wyzerowanie urządzenia do ustawień fabrycznych powoduje ich trwałe usunięcie."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple indsamler kun disse oplysninger, når det er nødvendigt for at slå specifikke funktioner til, sikre Apples tjenester eller for at tilpasse din oplevelse.\n\nApple mener, at anonymitet er en grundlæggende menneskeret, så alle Apples produkter er designet til at minimere indsamlingen og brugen af dine data, bruge behandling på enheden, når det er muligt, og sikre gennemsigtighed med og kontrol over dine oplysninger. Dine data på denne enhed er også krypterede og bliver fjernet permanent, hvis enheden nulstilles til fabriksindstillingerne."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple इस जानकारी को विशिष्ट फ़ीचर सक्षम करने, Apple सेवाओं को सुरक्षित करने या आपका अनुभव वैयक्तिकृत करने के लिए आवश्यक होने पर ही एकत्रित करता है।\n\nApple का मानना है कि गोपनीयता एक मौलिक मानव अधिकार है इसलिए हर Apple उत्पाद को इस प्रकार डिज़ाइन किया गया है कि आपके डेटा का संग्रह और उपयोग कम से कम किया जा सके, जहाँ संभव हो डिवाइस पर ही प्रोसेस करने का काम हो और आपकी जानकारी पर नियंत्रण और पारदर्शिता रहे। इस डिवाइस पर आपका डेटा भी एंक्रिप्टेड किया जाता है और अगर आप फ़ैक्ट्री सेटिंग्ज़ पर रीसेट ^[करते हैं](inflect: true), तो स्थायी रूप से हटा दिया जाएगा।"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple collects this information only when needed to enable specific features, secure Apple services, or personalize your experience.\n\nApple believes privacy is a fundamental human right, so every Apple product is designed to minimize the collection and use of your data, use on-device processing whenever possible, and provide transparency and control over your information. Your data on this device is also encrypted and will be permanently removed if you reset to factory settings."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple recopila la informació només en cas que es necessiti per activar certes funcions, protegir els serveis d’Apple o personalitzar l’experiència.\n\nPer a Apple, la privacitat és un dret humà bàsic. Per això, tots els productes Apple s’han dissenyat per minimitzar la recopilació i l’ús de les teves dades, processar‑les localment al dispositiu sempre que sigui possible i facilitar‑te transparència i control sobre la teva informació. També s’encripten les dades que hi ha al dispositiu i, si en restableixes la configuració de fàbrica, s’eliminen definitivament."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple จะเก็บรวบรวมข้อมูลนี้เมื่อต้องเปิดใช้งานคุณสมบัติเฉพาะ รักษาความปลอดภัยในบริการต่างๆ ของ Apple หรือปรับแต่งให้เข้ากับประสบการณ์การใช้งานของคุณเท่านั้น\n\nApple เชื่อว่าความเป็นส่วนตัวเป็นสิทธิขั้นพื้นฐานของมนุษย์ ดังนั้นผลิตภัณฑ์ของ Apple จึงออกแบบมาเพื่อให้เก็บรวบรวมและใช้ข้อมูลของคุณน้อยลง ใช้การประมวลผลบนอุปกรณ์เมื่อใช้ได้ ให้ความโปร่งใสและการควบคุมข้อมูลของคุณเอง ข้อมูลของคุณบนอุปกรณ์นี้จะถูกเข้ารหัสและถูกเอาออกอย่างถาวรอีกด้วยหากคุณรีเซ็ตเป็นการตั้งค่าจากโรงงาน"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple仅在需要启用特定功能、保护Apple服务安全或个性化你的使用体验时才会收集此信息。\n\nApple将隐私视作每个人的基本权利，因此所有Apple产品旨在收集和使用最少的用户数据，尽可能地使用设备端处理，以及赋予用户对信息的知情权和控制权。你在此设备上的数据也会加密，并在还原为出厂设置时将永久移除。"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple collects this information only when needed to enable specific features, secure Apple services or personalise your experience.\n\nApple believes privacy is a fundamental human right, so every Apple product is designed to minimise the collection and use of your data, use on-device processing whenever possible, and provide transparency and control over your information. Your data on this device is also encrypted and will be permanently removed if you reset it to factory settings."
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Šią informaciją „Apple“ renka tik kai reikia suaktyvinti konkrečias funkcijas, apsaugoti „Apple“ paslaugas arba pritaikyti platformą jums.\n\n„Apple“ tiki, kad privatumas yra pamatinė žmogaus teisė, todėl kurdami visus „Apple“ produktus siekiame kuo labiau sumažinti galimybę rinkti jūsų duomenis, užtikrinti skaidrumą ir leisti jums valdyti savo informaciją. Be to, jūsų duomenys šiame įrenginyje yra užšifruojami ir bus visam laikui pašalinti, jei iš naujo nustatysite gamyklinius nustatymus."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple recopila esta información sólo para poder activar funciones específicas, asegurar nuestros servicios o personalizar tu experiencia.\n\nApple cree que la privacidad es un derecho humano fundamental, así que diseñó cada uno de sus productos para minimizar la recopilación y uso de tus datos, usar procesamiento en el dispositivo cuando sea posible y proporcionar transparencia y control sobre tu información. Tus datos en este dispositivo también se encriptan y se eliminarán de manera permanente si restableces la configuración de fábrica."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tyto údaje Apple shromažďuje jen tehdy, když je potřebuje k poskytování konkrétních funkcí, k zabezpečení svých služeb nebo k individuálnímu přizpůsobení vašeho uživatelského prostředí.\n\nApple považuje soukromí za základní lidské právo, proto všechny své produkty vyvíjíme tak, abychom minimalizovali sběr a využívání vašich dat, vždy upřednostňujeme zpracování údajů přímo v zařízení a poskytujeme vám plnou transparentnost a kontrolu nad vašimi informacemi. Kromě toho jsou vaše data v tomto zařízení zašifrovaná a při obnovení továrního nastavení se nenávratně odstraní."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spoločnosť Apple zhromažďuje tieto informácie, len keď je to potrebné na zapnutie konkrétnych funkcií, zabezpečenie služieb poskytovaných spoločnosťou Apple alebo na ich prispôsobenie vašim potrebám.\n\nSpoločnosť Apple považuje súkromie za základné ľudské právo, a preto je každý náš produkt navrhnutý tak, aby sme minimalizovali zber dát, uprednostnili ich spracovanie priamo na zariadení a poskytli vám transparentnosť a kontrolu nad vašimi informáciami. Vaše dáta na tomto zariadení sú navyše zašifrované a pri obnove pôvodných továrenských nastavení budú natrvalo vymazané."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple mengumpulkan maklumat ini hanya apabila diperlukan untuk mendayakan ciri tertentu, melindungi perkhidmatan Apple atau memperibadikan pengalaman anda.\n\nApple percaya bahawa privasi ialah hak asasi manusia, jadi setiap produk Apple direka bentuk untuk meminimumkan pengumpulan dan penggunaan data anda, menggunakan pemprosesan pada peranti pada bila-bila masa yang boleh dan menyediakan ketelusan serta kawalan ke atas maklumat anda. Data anda pada peranti ini turut disulitkan dan akan dikeluarkan secara kekal jika anda mereset kepada seting kilang."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple събира тази информация само когато е необходимо, за да активира конкретни функции, да защити Apple услуги или с цел персонализация.\n\nApple вярва, че поверителността е основно човешко право, така че всеки продукт на Apple е създаден да минимизира събирането и използването на вашите данни, да използва обработване на устройството при възможност и да предостави прозрачност и контрол върху вашата информация. Вашите данни на това устройство са също така криптирани и ще бъдат окончателно изтрити, ако се върнете към фабричните настройки."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple te podatke zbira le, kadar so potrebni za omogočanje določenih funkcij, zagotavljanje varnosti storitev Apple ali prilagajanje vaše izkušnje.\n\nApple meni, da je zasebnost osnovna človekova pravica, zato je vsak izdelek Apple zasnovan tako, da do največje možne mere zmanjša zbiranje in uporabo vaših podatkov, uporablja obdelavo v napravi povsod, kjer je to možno, ter zagotavlja transparentnost in nadzor nad vašimi podatki. Vaši podatki v tej napravi so tudi šifrirani in bodo trajno odstranjeni, če jo ponastavite na tovarniške nastavitve."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple collects this information only when needed to enable specific features, secure Apple services or personalise your experience.\n\nApple believes privacy is a fundamental human right, so every Apple product is designed to minimise the collection and use of your data, use on-device processing whenever possible and provide transparency and control over your information. Your data on this device is also encrypted and will be permanently removed if you reset to factory settings."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple erfasst diese Informationen nur dann, wenn sie notwendig sind, um bestimmte Funktionen zu ermöglichen, um für die Sicherheit von Apple-Diensten zu sorgen oder um dein Benutzererlebnis zu personalisieren.\n\nApple ist der Überzeugung, dass Datenschutz ein grundlegendes Menschenrecht ist. Jedes Apple-Produkt ist daher wie folgt konzipiert: Es werden so wenig Daten wie möglich erfasst und verwendet. Wo möglich, werden Daten direkt auf dem Gerät verarbeitet. Es herrscht höchste Transparenz und du hast die Kontrolle über deine Daten. Deine Daten auf diesem Gerät sind zudem verschlüsselt und werden dauerhaft entfernt, wenn du das Gerät auf die Werkseinstellungen zurücksetzt."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple chỉ thu thập thông tin này khi cần thiết để bật các tính năng cụ thể, bảo mật các dịch vụ của Apple hoặc cá nhân hóa trải nghiệm của bạn.\n\nApple tin rằng quyền riêng tư là một quyền con người cơ bản, do đó mọi sản phẩm Apple đều được thiết kế để giảm thiểu việc thu thập và sử dụng dữ liệu của bạn, sử dụng tính năng xử lý trên thiết bị bất kỳ lúc nào có thể, đồng thời cung cấp sự minh bạch và quyền kiểm soát đối với thông tin của bạn. Dữ liệu của bạn trên thiết bị này cũng được mã hóa và sẽ bị xóa vĩnh viễn nếu bạn đặt lại về cài đặt gốc."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple solo recopila esta información cuando es necesaria para activar determinadas funciones, proteger sus servicios o personalizar la experiencia de los usuarios.\n\nPara Apple, la privacidad es un derecho fundamental, por lo que todos los productos de Apple se han diseñado para reducir al mínimo la recopilación y uso de tus datos, realizar el procesamiento en el dispositivo siempre que sea posible y proporcionarte transparencia y control sobre tu información. Además, tus datos se encriptan en el dispositivo y se eliminan si decides restablecer los ajustes de fábrica."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple збирає таку інформацію, лише коли вона потрібна для ввімкнення функцій, убезпечення або персоналізації служб Apple.\n\nНа переконання Apple, приватність є основним правом людини, тому кожен продукт Apple спроєктовано так, щоб мінімізувати збирання і використання ваших даних, за можливості обробляти дані локально на пристрої та забезпечувати підзвітність і контроль за вашою інформацією. Ваші дані на цьому пристрої також шифруються і в разі скидання до типових параметрів вилучаються назавжди."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple ne collecte ces données que si cela est nécessaire pour activer des fonctionnalités spécifiques, sécuriser ses services ou personnaliser votre expérience.\n\nApple considère que la confidentialité est un droit humain fondamental. Nous avons donc conçu chacun de nos produits de façon à réduire au minimum la collecte et l’utilisation de vos données, à traiter ces dernières sur l’appareil dans la mesure du possible, et à vous permettre de contrôler la façon dont elles sont utilisées, ceci en toute transparence. Les données stockées sur votre appareil sont également chiffrées et seront définitivement supprimées si vous rétablissez les réglages par défaut."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Apple coleta essas informações somente quando necessário para ativar recursos específicos, assegurar os serviços da Apple ou personalizar a sua experiência.\n\nA Apple acredita que a privacidade é um direito humano fundamental, então todos os produtos da Apple são projetados para minimizar a coleta e uso dos seus dados, usar o processamento no dispositivo sempre que possível e proporcionar transparência e controle sobre as suas informações. Seus dados neste dispositivo também são criptografados e serão removidos permanentemente se você redefinir aos ajustes de fábrica."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple компаниясы мұндай ақпаратты белгілі бір функцияларды қосу, Apple сервистерін қорғау немесе жекелендіру үшін қажет болған жағдайда ғана жинайды.\n\nApple құпиялылықты адамның негізгі құқығы деп санайды, сондықтан әр Apple өнімі деректер жинау және пайдалану әрекетін азайтуға, құрылғыдағы ақпаратты мүмкіндігінше өңдеуге және ақпаратыңыздың ашықтығы мен басқаруды қамтамасыз етуге арналған. Бұл құрылғыдағы деректеріңіз де шифрланған және құрылғыны зауыттық реттеулерге қайтарсаңыз, олар біржолата жойылады."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple colectează aceste informații doar atunci când sunt necesare pentru activarea unor funcționalități specifice, securizarea serviciilor Apple sau personalizarea experienței dvs. de utilizare.\n\nApple consideră că intimitatea este un drept uman fundamental. Din acest motiv, fiecare produs Apple este conceput pentru a minimiza colectarea și utilizarea datelor dvs., pentru a utiliza procesarea pe dispozitiv oricând este posibil și pentru a furniza transparență și control asupra informațiilor dvs. De asemenea, datele de pe acest dispozitiv sunt criptate și vor fi șterse definitiv dacă resetați la configurările din fabrică."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Appleが個人情報を収集するのは、特定の機能を有効にする必要があるとき、Appleのサービスを保護する必要があるとき、またはユーザ体験をパーソナライズする必要があるときだけです。\n\nAppleはプライバシーは基本的人権であると考えているため、Apple製品は個人情報の収集および使用を最小限にする、可能な限りデバイス上で処理をする、個人情報に関して透明性を提供しコントロールできるようにするという考え方に基づいて設計されています。また、このデバイス上のデータは暗号化され、出荷時の状態にリセットすると完全に削除されます。"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple collects this information only when needed to enable specific features, secure Apple services or personalise your experience.\n\nApple believes privacy is a fundamental human right, so every Apple product is designed to minimise the collection and use of your data, use on-device processing whenever possible, and provide transparency and control over your information. Your data on this device is also encrypted and will be permanently removed if you reset it to factory settings."
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Apple só recolhe esta informação quando é necessária para ativar funcionalidades específicas, para proteger os serviços Apple ou para personalizar a sua experiência de utilização.\n\nA Apple acredita que a privacidade seja um direito humano fundamental e, como tal, cada produto Apple é concebido de forma a minimizar a recolha e utilização dos seus dados, fazer uso do processamento nos dispositivos sempre que possível e proporcionar transparência e controlo sobre a sua informação. Os seus dados neste dispositivo também são cifrados e serão removidos permanentemente se restaurar as definições de fábrica."
+          }
+        }
+      }
+    },
+    "SPLASH_SUMMARY": {
+      "extractionState": "manual",
+      "localizations": {
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ova ikona prikazuje se kad Appleova značajka zatraži uporabu vaših osobnih informacija."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "אייקון זה מופיע כאשר מאפיין של Apple מבקש להשתמש במידע האישי שלך."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple 기능이 사용자의 개인정보를 사용하도록 요청하는 경우 이 아이콘이 나타납니다."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ikon ini muncul saat fitur Apple meminta untuk menggunakan informasi pribadi Anda."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tämä kuvake näkyy, kun Applen toiminto pyytää saada käyttää henkilökohtaisia tietojasi."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bir Apple özelliği kişisel bilgilerinizi kullanmak istediğinde bu simge görünür."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Je ziet dit symbool wanneer een Apple functie om je persoonlijke gegevens vraagt."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ez az ikon akkor jelenik meg, amikor egy Apple-funkció az Ön személyes adatainak használatát kérelmezi."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Этот значок появляется, когда какая‑либо функция от Apple запрашивает разрешение использовать Ваши личные данные."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’icona Privacy viene visualizzata quando un’app o una funzionalità di Apple richiede l’utilizzo di informazioni personali."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Este ícono se mostrará cuando una función de Apple solicite usar tu información personal."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Αυτό το εικονίδιο εμφανίζεται όταν μια δυνατότητα Apple ζητά άδεια για χρήση των προσωπικών στοιχείων σας."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تظهر هذه الأيقونة عندما تطلب منك ميزة من Apple أن تستخدم معلوماتك الشخصية."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cette icône s’affiche lorsqu’une fonctionnalité Apple requiert l’utilisation de vos informations personnelles."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "此圖像會在有Apple功能詢問是否能使用你的個人資訊時出現。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "此圖像會在有 Apple 功能詢問可否使用你的個人資料時出現。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Den här symbolen visas när en funktion från Apple ber om att få använda din personliga information."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dette symbolet vises når en Apple-funksjon ber om å bruke din personlige informasjon."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ta ikona jest wyświetlana, gdy funkcja Apple prosi o zgodę na użycie Twoich danych osobowych."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dette symbol vises, når en funktion fra Apple beder om lov til at bruge dine personlige oplysninger."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "जब कोई Apple फ़ीचर आपकी निजी जानकारी का उपयोग करना चाहता है, तो यह आइकॉन दिखता है।"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This icon appears when an Apple feature asks to use your personal information."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aquesta icona apareix quan una funció d’Apple vol utilitzar la teva informació personal."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ไอคอนนี้จะแสดงขึ้นเมื่อคุณสมบัติของ Apple ขอใช้ข้อมูลส่วนบุคคลของคุณ"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple功能请求使用你的个人信息时会出现此图标。"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This icon appears when an Apple feature asks to use your personal information."
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ši piktograma atsiranda, kai „Apple“ funkcija prašo naudoti jūsų asmeninę informaciją."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Este ícono se mostrará cuando una función de Apple solicite usar tu información personal."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tato ikona se zobrazuje, když služba společnosti Apple žádá o použití vašich osobních údajů."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Táto ikona sa zobrazí vždy, keď apka alebo funkcia Apple žiada o použitie vašich osobných údajov."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ikon ini kelihatan apabila ciri Apple meminta untuk menggunakan maklumat peribadi anda."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tази иконка ще се появи, когато функция на Apple поиска достъп до вашата лична информация."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ta ikona se prikaže, kadar vas določena funkcija Apple prosi za uporabo vaših osebnih podatkov."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This icon appears when an Apple feature asks to use your personal information."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dieses Symbol wird angezeigt, wenn eine Apple-Funktion deine persönlichen Informationen verwenden möchte."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Biểu tượng này xuất hiện khi một tính năng của Apple yêu cầu sử dụng thông tin cá nhân của bạn."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Este icono aparece cuando una función de Apple solicita utilizar tu información personal."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ця іконка зʼявляється, коли функція Apple питає дозволу використовувати вашу персональну інформацію."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cette icône apparaît lorsqu’une fonctionnalité Apple souhaite utiliser vos données personnelles."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Este ícone aparece quando um recurso da Apple solicita o uso das suas informações pessoais."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Бұл белгіше Apple функциясы жеке ақпаратыңызды пайдалануды сұрағанда пайда болады."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Această pictogramă apare atunci când o funcționalitate Apple solicită utilizarea informațiilor dvs. personale."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Appleの機能であなたの個人情報の使用が求められているときにこのアイコンが表示されます。"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "This icon appears when an Apple feature asks to use your personal information."
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verá este ícone quando uma funcionalidade da Apple pedir para usar a sua informação pessoal."
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}
