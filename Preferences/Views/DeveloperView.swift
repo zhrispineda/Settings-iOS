@@ -72,7 +72,7 @@ struct DeveloperView: View {
                 } header: {
                     Text("DISPLAY_ZOOM", tableName: table)
                 } footer: {
-                    Text("DISPLAY_ZOOM_DESCRIPTION")
+                    Text("DISPLAY_ZOOM_DESCRIPTION", tableName: table)
                 }
             }
             

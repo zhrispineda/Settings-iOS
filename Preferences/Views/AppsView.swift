@@ -10,7 +10,7 @@ import SwiftUI
 struct AppsView: View {
     // Variables
     @State private var searchText = String()
-    let apps = ["Calendar", "Contacts", "Files", "Fitness", "Health", "Maps", "Messages", "News", "Passwords", "Photos", "Reminders", "Safari", "Shortcuts", "Translate"]
+    let apps = ["Books", "Calendar", "Contacts", "Files", "Fitness", "Health", "Maps", "Messages", "News", "Passwords", "Photos", "Reminders", "Safari", "Shortcuts", "Translate"]
     let simulatorApps = ["Calendar", "Contacts", "Files", "Fitness", "Health", "Maps", "Messages", "News", "Passwords", "Photos", "Reminders", "Safari", "Shortcuts"]
     let characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ#".map(String.init)
     
@@ -26,6 +26,8 @@ struct AppsView: View {
                         ForEach(groupedApps[key]!, id: \.self) { app in
                             SettingsLink(icon: "apple\(app)", id: app) {
                                 switch app {
+                                case "Books":
+                                    BooksView()
                                 case "Calendar":
                                     CalendarView()
                                 case "Contacts":

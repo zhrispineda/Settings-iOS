@@ -118,6 +118,8 @@
 		834565782CAAEB82002BE49D /* Camera.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834565772CAAEB82002BE49D /* Camera.xcstrings */; };
 		834579D32CC7D98F0027A4CD /* VoiceOverSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834579D22CC7D98F0027A4CD /* VoiceOverSettings.xcstrings */; };
 		83470D162C35A1BC00CE8613 /* AppleAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83470D152C35A1BC00CE8613 /* AppleAccountView.swift */; };
+		834718E42CDFD6D1002D9BC9 /* PrivacyDisclosureUI.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834718E32CDFD6D1002D9BC9 /* PrivacyDisclosureUI.xcstrings */; };
+		834718E62CDFD78E002D9BC9 /* AirDrop.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834718E52CDFD78E002D9BC9 /* AirDrop.xcstrings */; };
 		834765E42C7D49D000DD6244 /* AirPlayContinuityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834765E32C7D49D000DD6244 /* AirPlayContinuityView.swift */; };
 		8349E22C2C7514F6007416C5 /* ApplePencilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8349E22B2C7514F6007416C5 /* ApplePencilView.swift */; };
 		834A15022CD85538004A0025 /* ShortcutsAdvancedSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834A15012CD85538004A0025 /* ShortcutsAdvancedSettings.xcstrings */; };
@@ -228,6 +230,7 @@
 		839092BB2C0D213200924849 /* OtherNetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839092BA2C0D213200924849 /* OtherNetworkView.swift */; };
 		8393425E2C18CE5B00B48679 /* BatteryHealthChargingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8393425D2C18CE5B00B48679 /* BatteryHealthChargingView.swift */; };
 		839657542CCC02EF00D61C8B /* Accessibility-AnimatedImages.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 839657532CCC02EF00D61C8B /* Accessibility-AnimatedImages.xcstrings */; };
+		8397F9E92CDF20E9004DFE2F /* BooksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397F9E82CDF20E9004DFE2F /* BooksView.swift */; };
 		83A3E68F2CAB9743006F4643 /* AccessibilityTitles.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83A3E68E2CAB9743006F4643 /* AccessibilityTitles.xcstrings */; };
 		83A3E6912CAB98C3006F4643 /* Accessibility-D93.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83A3E6902CAB98C3006F4643 /* Accessibility-D93.xcstrings */; };
 		83A3E6932CAC2832006F4643 /* Accessibility-HapticMusic.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83A3E6922CAC2832006F4643 /* Accessibility-HapticMusic.xcstrings */; };
@@ -317,6 +320,7 @@
 		83E748B62CC6C3410081D660 /* LargeFontsSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83E748B52CC6C3410081D660 /* LargeFontsSettings.xcstrings */; };
 		83E748B82CC6C7A50081D660 /* LocalizedStrings-Staccato.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83E748B72CC6C7A50081D660 /* LocalizedStrings-Staccato.xcstrings */; };
 		83EC895F2CA0F8B500389F3B /* CameraControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EC895E2CA0F8B500389F3B /* CameraControlView.swift */; };
+		83ED6B7C2CDF35750022D04C /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83ED6B7B2CDF35750022D04C /* OnBoardingView.swift */; };
 		83EF90242CD5C20000379263 /* MapsSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83EF90232CD5C20000379263 /* MapsSettings.xcstrings */; };
 		83F3611A2CD2D3E300041A72 /* CommunicationSafetySettingsUI.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83F361192CD2D3E300041A72 /* CommunicationSafetySettingsUI.xcstrings */; };
 		83F3611C2CD2E25700041A72 /* AppleAdvertising.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83F3611B2CD2E25700041A72 /* AppleAdvertising.xcstrings */; };
@@ -482,6 +486,8 @@
 		834565772CAAEB82002BE49D /* Camera.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Camera.xcstrings; sourceTree = "<group>"; };
 		834579D22CC7D98F0027A4CD /* VoiceOverSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = VoiceOverSettings.xcstrings; sourceTree = "<group>"; };
 		83470D152C35A1BC00CE8613 /* AppleAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAccountView.swift; sourceTree = "<group>"; };
+		834718E32CDFD6D1002D9BC9 /* PrivacyDisclosureUI.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = PrivacyDisclosureUI.xcstrings; sourceTree = "<group>"; };
+		834718E52CDFD78E002D9BC9 /* AirDrop.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AirDrop.xcstrings; sourceTree = "<group>"; };
 		834765E32C7D49D000DD6244 /* AirPlayContinuityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirPlayContinuityView.swift; sourceTree = "<group>"; };
 		8349E22B2C7514F6007416C5 /* ApplePencilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePencilView.swift; sourceTree = "<group>"; };
 		834A15012CD85538004A0025 /* ShortcutsAdvancedSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = ShortcutsAdvancedSettings.xcstrings; sourceTree = "<group>"; };
@@ -592,6 +598,7 @@
 		839092BA2C0D213200924849 /* OtherNetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherNetworkView.swift; sourceTree = "<group>"; };
 		8393425D2C18CE5B00B48679 /* BatteryHealthChargingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryHealthChargingView.swift; sourceTree = "<group>"; };
 		839657532CCC02EF00D61C8B /* Accessibility-AnimatedImages.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "Accessibility-AnimatedImages.xcstrings"; sourceTree = "<group>"; };
+		8397F9E82CDF20E9004DFE2F /* BooksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksView.swift; sourceTree = "<group>"; };
 		83A3E68E2CAB9743006F4643 /* AccessibilityTitles.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AccessibilityTitles.xcstrings; sourceTree = "<group>"; };
 		83A3E6902CAB98C3006F4643 /* Accessibility-D93.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "Accessibility-D93.xcstrings"; sourceTree = "<group>"; };
 		83A3E6922CAC2832006F4643 /* Accessibility-HapticMusic.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "Accessibility-HapticMusic.xcstrings"; sourceTree = "<group>"; };
@@ -683,6 +690,7 @@
 		83E748B52CC6C3410081D660 /* LargeFontsSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = LargeFontsSettings.xcstrings; sourceTree = "<group>"; };
 		83E748B72CC6C7A50081D660 /* LocalizedStrings-Staccato.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "LocalizedStrings-Staccato.xcstrings"; sourceTree = "<group>"; };
 		83EC895E2CA0F8B500389F3B /* CameraControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraControlView.swift; sourceTree = "<group>"; };
+		83ED6B7B2CDF35750022D04C /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 		83EF90232CD5C20000379263 /* MapsSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = MapsSettings.xcstrings; sourceTree = "<group>"; };
 		83F361192CD2D3E300041A72 /* CommunicationSafetySettingsUI.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = CommunicationSafetySettingsUI.xcstrings; sourceTree = "<group>"; };
 		83F3611B2CD2E25700041A72 /* AppleAdvertising.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AppleAdvertising.xcstrings; sourceTree = "<group>"; };
@@ -801,6 +809,7 @@
 		832877E72CADA2CD00013B0B /* OnBoardingBundles */ = {
 			isa = PBXGroup;
 			children = (
+				834718E52CDFD78E002D9BC9 /* AirDrop.xcstrings */,
 				834565772CAAEB82002BE49D /* Camera.xcstrings */,
 				8331016E2CD162F700C6C3B3 /* ImproveSensitiveContentWarning.xcstrings */,
 				830F2B3B2CD995A9006F7F22 /* OBPhotos.xcstrings */,
@@ -959,6 +968,7 @@
 				83D3085A2B8AC28B002A9B7F /* Safari */,
 				83898FD22B8AA2240020C7BB /* Shortcuts */,
 				83DF95722B841EFB00AEEB63 /* Translate */,
+				8397F9E82CDF20E9004DFE2F /* BooksView.swift */,
 				836167D72C25FA3A00458CD8 /* CalendarView.swift */,
 				83D3FB222C8102B200268E54 /* ContactsView.swift */,
 				838F37E92C82865B008C9909 /* FilesView.swift */,
@@ -1308,6 +1318,7 @@
 				833C6EB12C20CE7800A8D91C /* SearchDetailView.swift */,
 				83A5DA522C234DCB0012ACB3 /* LanguageView.swift */,
 				8340A3C42CB0CEDC005ED66A /* MonospacedLabel.swift */,
+				83ED6B7B2CDF35750022D04C /* OnBoardingView.swift */,
 			);
 			path = Templates;
 			sourceTree = "<group>";
@@ -1408,6 +1419,7 @@
 				837BCF322CD2E880009B1E33 /* Pearl.xcstrings */,
 				830F2B392CD98E5D006F7F22 /* Photos.xcstrings */,
 				835BF1322CC19DDF00F30DA1 /* PictureInPictureSettings.xcstrings */,
+				834718E32CDFD6D1002D9BC9 /* PrivacyDisclosureUI.xcstrings */,
 				83441A882CAF2B6A0022E193 /* Privacy.xcstrings */,
 				83AD8C5C2CCAC85500A054B5 /* ProfileNames.xcstrings */,
 				834196262CB89D8F0038183D /* PSSystemPolicy.xcstrings */,
@@ -1911,6 +1923,7 @@
 				83F77D6D2CD3F2180026B1AC /* PeerPayment_Localizable.xcstrings in Resources */,
 				835BF1312CC19A2300F30DA1 /* AirPlayAndHandoffSettings.xcstrings in Resources */,
 				83DBCE062CCD957C00B33277 /* CameraSettings-TrueVideo.xcstrings in Resources */,
+				834718E42CDFD6D1002D9BC9 /* PrivacyDisclosureUI.xcstrings in Resources */,
 				830976D12CDD1A0E0087F1A1 /* CoreFollowUp.xcstrings in Resources */,
 				83E748B82CC6C7A50081D660 /* LocalizedStrings-Staccato.xcstrings in Resources */,
 				833F0AD42B744D190036EAD2 /* Assets.xcassets in Resources */,
@@ -1961,6 +1974,7 @@
 				83AA78922CCDA42400060BC2 /* AssistantAudioFeedback.xcstrings in Resources */,
 				837936162CDBE68B0020557B /* VideoSubscriberAccount.xcstrings in Resources */,
 				832D84F22CD2B0A90075ECF0 /* DigitalSeparationUI.xcstrings in Resources */,
+				834718E62CDFD78E002D9BC9 /* AirDrop.xcstrings in Resources */,
 				83F3611A2CD2D3E300041A72 /* CommunicationSafetySettingsUI.xcstrings in Resources */,
 				837BCF392CD2F4A7009B1E33 /* Payment_Prefs.xcstrings in Resources */,
 				83F77D722CD3F48D0026B1AC /* Payment_Localizable.xcstrings in Resources */,
@@ -2102,6 +2116,7 @@
 				8340A3C32CB0C723005ED66A /* SEIDView.swift in Sources */,
 				83F626D82B8289E100ED343F /* DTVProviderView.swift in Sources */,
 				83815CE92B768E3600F53A0F /* NewsView.swift in Sources */,
+				8397F9E92CDF20E9004DFE2F /* BooksView.swift in Sources */,
 				83F626DA2B828E8C00ED343F /* TVAppView.swift in Sources */,
 				83898FCA2B8A8F210020C7BB /* HealthDetailsView.swift in Sources */,
 				8335A70C2BC358E8001E199D /* CellularView.swift in Sources */,
@@ -2127,6 +2142,7 @@
 				83DF95742B841F0900AEEB63 /* DownloadedLanguagesView.swift in Sources */,
 				837F1DD62B8AF31F00665EAB /* QuickWebsiteSearchView.swift in Sources */,
 				832EF38C2B81264E0066A1BF /* LocationAlertsView.swift in Sources */,
+				83ED6B7C2CDF35750022D04C /* OnBoardingView.swift in Sources */,
 				832EF39F2B8197980066A1BF /* TextReplacementView.swift in Sources */,
 				83D7B4512C925B0400C2B81E /* PhotographicStylesView.swift in Sources */,
 				833C124B2C99AA1400CAEB36 /* TVProviderView.swift in Sources */,

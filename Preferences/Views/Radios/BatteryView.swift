@@ -23,7 +23,7 @@ struct BatteryView: View {
                 Toggle("BATTERY_PERCENTAGE".localize(table: table), isOn: $batteryPercentageEnabled)
                 Toggle("BATTERY_SAVER_MODE".localize(table: table), isOn: $lowPowerModeEnabled)
             } footer: {
-                Text(UIDevice.iPhone ? "FOOTNOTE_BATTERYSAVERMODE_IPHONE".localize(table: table) : "FOOTNOTE_BATTERYSAVERMODE_IPAD".localize(table: table))
+                Text(UIDevice.iPhone ? "FOOTNOTE_BATTERYSAVERMODE_IPHONE" : "FOOTNOTE_BATTERYSAVERMODE_IPAD", tableName: table)
             }
             
             Section {

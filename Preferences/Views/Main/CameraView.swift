@@ -29,6 +29,7 @@ struct CameraView: View {
     @State private var prioritizeFasterShootingEnabled = true
     @State private var lensCorrectionEnabled = true
     @State private var macroControlEnabled = true
+    @State private var showingSheet = true
     
     let table = "CameraSettings"
     let buttonTable = "CameraSettings-CameraButton"
@@ -179,7 +180,15 @@ struct CameraView: View {
             }
             
             Section {} footer: {
-                Text(.init("[\("BUTTON_TITLE".localize(table: privacyTable))](#)")) // com.apple.onboarding.camera
+                Text(.init("[\("BUTTON_TITLE".localize(table: privacyTable))](cameraArSettingsOBK://)"))
+                    .onOpenURL { url in
+                        if url.scheme == "cameraArSettingsOBK" {
+                            showingSheet = true
+                        }
+                    }
+                    .sheet(isPresented: $showingSheet) {
+                        OnBoardingView(table: privacyTable)
+                    }
             }
         }
     }

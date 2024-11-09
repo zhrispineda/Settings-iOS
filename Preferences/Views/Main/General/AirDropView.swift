@@ -12,6 +12,7 @@ struct AirDropView: View {
     @AppStorage("AirDropSelection") private var selection = "Receiving Off"
     @State private var nearbySharingEnabled = true
     @State private var cellularUsageEnabled = true
+    @State private var showingSheet = false
     let options = ["Receiving Off", "Contacts Only", "Everyone for 10 Minutes"]
     let table = "AirDropSettings"
     
@@ -27,6 +28,14 @@ struct AirDropView: View {
                 .labelsHidden()
             } footer: {
                 Text("AirDrop Learn More Footer WIFI", tableName: table)
+            }
+            .onOpenURL { url in
+                if url.scheme == "airDropSettingsOBK" {
+                    showingSheet = true
+                }
+            }
+            .sheet(isPresented: $showingSheet) {
+                OnBoardingView(table: "AirDrop")
             }
             
             if UIDevice.iPhone {

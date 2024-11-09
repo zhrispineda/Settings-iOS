@@ -16,7 +16,9 @@ struct NetworkView: View {
     @State var isEditing = false
     @State private var frameY = Double()
     @State private var opacity = Double()
+    @State private var searching = true
     @State private var showingOtherNetwork = false
+    @State private var timer: Timer? = nil
     let table = "WiFiKitUILocalizableStrings"
     
     var body: some View {
@@ -68,7 +70,28 @@ struct NetworkView: View {
                             }
                         }
                     } header: {
-                        Text("kWFLocChooseNetworkSectionSingleTitle", tableName: table)
+                        HStack {
+                            Text("kWFLocChooseNetworkSectionSingleTitle", tableName: table)
+                            if searching {
+                                ProgressView()
+                                    .frame(height: 0) // Prevent changing header frame height
+                            }
+                        }
+                    }
+                    .onAppear {
+                        // Repeat showing ProgressView()
+                        timer = Timer.scheduledTimer(withTimeInterval: 10.0, repeats: true) { _ in
+                            Task {
+                                await beignConstantScan()
+                            }
+                        }
+                        Task {
+                            beignConstantScan()
+                        }
+                    }
+                    .onDisappear {
+                        timer?.invalidate()
+                        timer = nil
                     }
                     
                     Section {
@@ -99,10 +122,10 @@ struct NetworkView: View {
             }
             
             ToolbarItem(placement: .principal) {
-                Text("kWFLocWiFiPlacardTitle".localize(table: table))
+                Text("kWFLocWiFiPlacardTitle", tableName: table)
                     .fontWeight(.semibold)
                     .font(.subheadline)
-                    .opacity(frameY < 50.0 ? opacity : 0) // Only fade when passing the help section title at the top
+                    .opacity(frameY < 50.0 ? opacity : 0) // Only fade when passing the placard title
             }
             
             ToolbarItem(placement: .topBarTrailing) {
@@ -114,6 +137,15 @@ struct NetworkView: View {
                 .fontWeight(isEditing ? .bold : .regular)
                 .disabled(isEditing)
             }
+        }
+    }
+    
+    private func beignConstantScan() {
+        Task { @MainActor in
+            searching = true
+            
+            try? await Task.sleep(for: .seconds(Int.random(in: 1...2)))
+            searching = false
         }
     }
 }
