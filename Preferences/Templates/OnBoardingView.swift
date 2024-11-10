@@ -12,6 +12,8 @@ struct OnBoardingView: View {
     @Environment(\.dismiss) private var dismiss
     @State private var frameY = Double()
     @State private var opacity = Double()
+    @State private var textHeight = Double()
+    @State private var viewHeight = Double()
     var table = String()
     var childView = false // If view is from a parent view
     
@@ -37,6 +39,13 @@ struct OnBoardingView: View {
                         .padding(.vertical, 10)
                     Text(table == "AirDrop" ? "FOOTER_TEXT_WIFI" : "FOOTER_TEXT", tableName: table)
                         .font(.caption)
+                        .overlay {
+                            GeometryReader { geo in
+                                Color.clear.onAppear {
+                                    textHeight = geo.size.height
+                                }
+                            }
+                        }
                     if !childView {
                         NavigationLink("WELCOME_LEARN_MORE".localize(table: "PrivacyDisclosureUI")) {
                             OnBoardingDetailView()
@@ -48,6 +57,7 @@ struct OnBoardingView: View {
                 }
                 .padding(.horizontal, 50)
             }
+            .scrollDisabled(textHeight < viewHeight)
             .toolbar {
                 if !childView {
                     ToolbarItem(placement: .topBarTrailing) {
@@ -60,7 +70,15 @@ struct OnBoardingView: View {
                 ToolbarItem(placement: .principal) {
                     Text("SPLASH_TITLE", tableName: table)
                         .opacity(frameY < -25 ? 1 : 0)
-                        .fontWeight(.bold)
+                        .fontWeight(.semibold)
+                        .lineLimit(1)
+                }
+            }
+        }
+        .overlay {
+            GeometryReader { geo in
+                Color.clear.onAppear {
+                    viewHeight = geo.size.height
                 }
             }
         }

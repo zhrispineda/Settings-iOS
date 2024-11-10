@@ -15,6 +15,7 @@ struct SensitiveContentWarningView: View {
     @State private var messagesEnabled = true
     @State private var videoMessagesEnabled = true
     @State private var improveSensitiveContentWarningEnabled = false
+    @State private var showingSheet = false
     let table = "CommunicationSafetySettingsUI"
     
     var body: some View {
@@ -22,7 +23,7 @@ struct SensitiveContentWarningView: View {
             Section {
                 Toggle("Sensitive Content Warning".localize(table: table), isOn: $sensitiveContentWarningEnabled.animation())
             } footer: {
-                Text(.init("Detect nude photos and videos before they are viewed on your Device, and receive guidance to help make a safe choice. Apple does not have access to the photos or videos. [Learn more…](%@)".localize(table: table, "#")))
+                Text(.init("Detect nude photos and videos before they are viewed on your Device, and receive guidance to help make a safe choice. Apple does not have access to the photos or videos. [Learn more…](%@)".localize(table: table, "https://support.apple.com/en-us/105071")))
             }
             
             Section {
@@ -47,6 +48,14 @@ struct SensitiveContentWarningView: View {
                     Text("Analytics & Improvements", tableName: table)
                 } footer: {
                     Text(.init("Help Apple improve Sensitive Content Warning by sharing analytics and usage data. Analytics and data are aggregated in a form that is not personally identifiable. No messages or media are shared with Apple. [%@](communicationSafetyImprovementSplash://)".localize(table: table, "About Improve Sensitive Content Warning & Privacy…".localize(table: table))))
+                        .onOpenURL { url in
+                            if url.scheme == "communicationSafetyImprovementSplash" {
+                                showingSheet = true
+                            }
+                        }
+                        .sheet(isPresented: $showingSheet) {
+                            OnBoardingView(table: "ImproveSensitiveContentWarning")
+                        }
                 }
             }
         }

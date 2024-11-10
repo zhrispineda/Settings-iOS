@@ -31,7 +31,6 @@ struct OnBoardingDetailView: View {
                             GeometryReader { geo in
                                 Color.clear
                                     .onChange(of: geo.frame(in: .scrollView).minY) {
-                                        print(frameY)
                                         frameY = geo.frame(in: .scrollView).minY
                                     }
                             }
@@ -75,7 +74,8 @@ struct OnBoardingDetailView: View {
                 ToolbarItem(placement: .principal) {
                     Text("SPLASH_TITLE", tableName: table)
                         .opacity(frameY < -10 ? 1 : 0)
-                        .fontWeight(.bold)
+                        .fontWeight(.semibold)
+                        .lineLimit(1)
                 }
             }
         }
