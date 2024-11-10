@@ -34,6 +34,36 @@
 				<string>communicationSafetyImprovementSplash</string>
 			</array>
 		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+			<key>CFBundleURLName</key>
+			<string>com.example.Preferences</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>photosSettingsOBK</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+			<key>CFBundleURLName</key>
+			<string>com.example.Preferences</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>passwordsSettingsOBK</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+			<key>CFBundleURLName</key>
+			<string>com.example.Preferences</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>spotlightSettingsOBK</string>
+			</array>
+		</dict>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

@@ -13,6 +13,7 @@ struct PasswordsView: View {
     @State private var showAccountsLabel: AccountDisplayMode = .titles
     @State private var suggestStrongPasswords = true
     @State private var autoPasskeyUpgrades = true
+    @State private var showingSheet = false
     let table = "PasswordsSettings"
     
     enum AccountDisplayMode {
@@ -41,10 +42,18 @@ struct PasswordsView: View {
                 Toggle("Detect Compromised Passwords".localize(table: table), isOn: $detectCompromisedPasswordsEnabled)
             } footer: {
                 if UIDevice.iPhone {
-                    Text(.init("iPhone can securely monitor your passwords and alert you if they appear in known data leaks. %passwords-privacy-link%".localize(table: table).replacingOccurrences(of: "0x0asswords-privacy-link", with: "[\("BUTTON_TITLE".localize(table: "Passwords"))](#)")))
+                    Text(.init("iPhone can securely monitor your passwords and alert you if they appear in known data leaks. %passwords-privacy-link%".localize(table: table).replacingOccurrences(of: "0x0asswords-privacy-link", with: "[\("BUTTON_TITLE".localize(table: "Passwords"))](passwordsSettingsOBK://)")))
                 } else if UIDevice.iPad {
-                    Text(.init("iPad can securely monitor your passwords and alert you if they appear in known data leaks. %passwords-privacy-link%".localize(table: table).replacingOccurrences(of: "0x0asswords-privacy-link", with: "[\("BUTTON_TITLE".localize(table: "Passwords"))](#)")))
+                    Text(.init("iPad can securely monitor your passwords and alert you if they appear in known data leaks. %passwords-privacy-link%".localize(table: table).replacingOccurrences(of: "0x0asswords-privacy-link", with: "[\("BUTTON_TITLE".localize(table: "Passwords"))](passwordsSettingsOBK://)")))
                 }
+            }
+            .onOpenURL { url in
+                if url.scheme == "passwordsSettingsOBK" {
+                    showingSheet = true
+                }
+            }
+            .sheet(isPresented: $showingSheet) {
+                OnBoardingView(table: "Passwords")
             }
             
             Section {

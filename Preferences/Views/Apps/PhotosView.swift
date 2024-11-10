@@ -20,6 +20,7 @@ struct PhotosView: View {
     @State private var showHolidayEventsEnabled = true
     @State private var showFeaturedContentEnabled = true
     @State private var selected = "TRANSFER_SETTING_AUTOMATIC"
+    @State private var showingSheet = false
     let options = ["TRANSFER_SETTING_AUTOMATIC", "TRANSFER_SETTING_KEEP_ORIGINALS"]
     let table = "Photos"
     
@@ -113,7 +114,15 @@ struct PhotosView: View {
             }
             
             Section {} footer: {
-                Text("[\("BUTTON_TITLE".localize(table: "OBPhotos"))](#)")
+                Text("[\("BUTTON_TITLE".localize(table: "OBPhotos"))](photosSettingsOBK://)")
+                    .onOpenURL { url in
+                        if url.scheme == "photosSettingsOBK" {
+                            showingSheet = true
+                        }
+                    }
+                    .sheet(isPresented: $showingSheet) {
+                        OnBoardingView(table: "OBPhotos")
+                    }
             }
         }
     }
