@@ -7,6 +7,7 @@ import SwiftUI
 
 struct OnBoardingDetailView: View {
     // Variables
+    @Environment(\.colorScheme) private var colorScheme
     @State private var frameY = Double()
     @State private var opacity = Double()
     var table = "PrivacyPane"
@@ -59,15 +60,15 @@ struct OnBoardingDetailView: View {
                         NavigationLink(destination: OnBoardingView(table: item, childView: true)) {
                             Text("SPLASH_SHORT_TITLE", tableName: item)
                                 .fontWeight(.semibold)
-                                .foregroundColor(.black)
+                                .foregroundColor(Color(UIColor.label))
                         }
-                        .listRowBackground(Color(UIColor.systemGroupedBackground))
+                        .listRowBackground(Color(UIColor.tertiarySystemGroupedBackground))
                     }
                 }
             }
             .navigationTitle("PRIVACY".localize(table: "PSSystemPolicy"))
             .navigationBarTitleDisplayMode(.inline)
-            .background(Color.white)
+            .background(colorScheme == .light ? .white : Color(UIColor.secondarySystemBackground))
             .scrollContentBackground(.hidden)
             .contentMargins(.horizontal, 30, for: .scrollContent)
             .toolbar {
