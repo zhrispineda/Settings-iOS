@@ -12,8 +12,10 @@ struct OnBoardingDetailView: View {
     @State private var opacity = Double()
     var table = "PrivacyPane"
     let tables = [ // SPLASH_SHORT_TITLE tables
+        "Activity",
         "AirDrop",
         "Camera",
+        "FitnessPlus",
         "ImproveSensitiveContentWarning",
         "OBPhotos", // Photos
         "Passwords",

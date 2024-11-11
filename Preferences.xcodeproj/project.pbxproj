@@ -156,6 +156,8 @@
 		837936142CDBE03F0020557B /* DTDisplayZoom.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 837936132CDBE03F0020557B /* DTDisplayZoom.xcstrings */; };
 		837936162CDBE68B0020557B /* VideoSubscriberAccount.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 837936152CDBE68B0020557B /* VideoSubscriberAccount.xcstrings */; };
 		837936182CDBED740020557B /* DTSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 837936172CDBED740020557B /* DTSettings.xcstrings */; };
+		837AA8702CE2A4070052D1D0 /* Activity.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 837AA86F2CE2A4070052D1D0 /* Activity.xcstrings */; };
+		837AA8722CE2A8540052D1D0 /* FitnessPlus.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 837AA8712CE2A8540052D1D0 /* FitnessPlus.xcstrings */; };
 		837B0F5B2B8989E000B22455 /* SiriLanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837B0F5A2B8989E000B22455 /* SiriLanguageView.swift */; };
 		837B0F5E2B89986B00B22455 /* EnglishIndiaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837B0F5D2B89986B00B22455 /* EnglishIndiaView.swift */; };
 		837B0F602B89B22900B22455 /* SiriVoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837B0F5F2B89B22900B22455 /* SiriVoiceView.swift */; };
@@ -526,6 +528,8 @@
 		837936132CDBE03F0020557B /* DTDisplayZoom.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = DTDisplayZoom.xcstrings; sourceTree = "<group>"; };
 		837936152CDBE68B0020557B /* VideoSubscriberAccount.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = VideoSubscriberAccount.xcstrings; sourceTree = "<group>"; };
 		837936172CDBED740020557B /* DTSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = DTSettings.xcstrings; sourceTree = "<group>"; };
+		837AA86F2CE2A4070052D1D0 /* Activity.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Activity.xcstrings; sourceTree = "<group>"; };
+		837AA8712CE2A8540052D1D0 /* FitnessPlus.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = FitnessPlus.xcstrings; sourceTree = "<group>"; };
 		837B0F5A2B8989E000B22455 /* SiriLanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriLanguageView.swift; sourceTree = "<group>"; };
 		837B0F5D2B89986B00B22455 /* EnglishIndiaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglishIndiaView.swift; sourceTree = "<group>"; };
 		837B0F5F2B89B22900B22455 /* SiriVoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriVoiceView.swift; sourceTree = "<group>"; };
@@ -813,8 +817,10 @@
 		832877E72CADA2CD00013B0B /* OnBoardingBundles */ = {
 			isa = PBXGroup;
 			children = (
+				837AA86F2CE2A4070052D1D0 /* Activity.xcstrings */,
 				834718E52CDFD78E002D9BC9 /* AirDrop.xcstrings */,
 				834565772CAAEB82002BE49D /* Camera.xcstrings */,
+				837AA8712CE2A8540052D1D0 /* FitnessPlus.xcstrings */,
 				8331016E2CD162F700C6C3B3 /* ImproveSensitiveContentWarning.xcstrings */,
 				830F2B3B2CD995A9006F7F22 /* OBPhotos.xcstrings */,
 				830F2B372CD98990006F7F22 /* Passwords.xcstrings */,
@@ -1900,6 +1906,7 @@
 				837936182CDBED740020557B /* DTSettings.xcstrings in Resources */,
 				837936142CDBE03F0020557B /* DTDisplayZoom.xcstrings in Resources */,
 				833101732CD173AC00C6C3B3 /* Sounds.xcstrings in Resources */,
+				837AA8722CE2A8540052D1D0 /* FitnessPlus.xcstrings in Resources */,
 				83AD8C5B2CCAC61700A054B5 /* Captioning.xcstrings in Resources */,
 				830F2B302CD97A05006F7F22 /* MessagesSettings.xcstrings in Resources */,
 				83F3611E2CD2E48100041A72 /* MomentsOnboardingAndSettings.xcstrings in Resources */,
@@ -1959,6 +1966,7 @@
 				8388E5342CD034EB00A3066D /* Location Services.xcstrings in Resources */,
 				83441A892CAF2B6A0022E193 /* Privacy.xcstrings in Resources */,
 				831C1A582CCF1D0100866498 /* WallpaperSettings.xcstrings in Resources */,
+				837AA8702CE2A4070052D1D0 /* Activity.xcstrings in Resources */,
 				83F77D702CD3F3A30026B1AC /* PaymentOffers_Localizable.xcstrings in Resources */,
 				832877E92CAEE14400013B0B /* CameraUI-SmartStyles.xcstrings in Resources */,
 				8314482D2CD9652A00FFEE51 /* HealthSettingsSpecifiers.xcstrings in Resources */,

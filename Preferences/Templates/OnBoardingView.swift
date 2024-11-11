@@ -16,11 +16,19 @@ struct OnBoardingView: View {
     @State private var viewHeight = Double()
     var table = String()
     var childView = false // If view is from a parent view
+    let services = ["Activity", "FitnessPlus"]
     
     var body: some View {
         NavigationStack {
             ScrollView {
                 Group {
+                    if services.contains(table) {
+                        Image(_internalSystemName: "privacy.handshake")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 80)
+                            .foregroundStyle(.blue)
+                    }
                     Text("SPLASH_TITLE", tableName: table)
                         .font(.title2)
                         .fontWeight(.bold)
@@ -34,19 +42,46 @@ struct OnBoardingView: View {
                             }
                         }
                     Text("SPLASH_SUMMARY", tableName: table)
-                        .font(.caption)
+                        .font(.footnote)
                         .multilineTextAlignment(.center)
                         .padding(.vertical, 10)
+                    if services.contains(table) { // For services that have 3 separate bullet point keys
+                        HStack(alignment: .top, spacing: 15) {
+                            Text("• ")
+                                .fontWeight(.heavy)
+                                .padding(.top, 5)
+                                .foregroundStyle(Color(UIColor.secondaryLabel))
+                            Text("FIRST_BULLET", tableName: table)
+                                .font(.caption)
+                                .multilineTextAlignment(.leading)
+                                .padding(.vertical, 10)
+                            Spacer()
+                        }
+                        HStack(alignment: .top, spacing: 15) {
+                            Text("• ")
+                                .fontWeight(.heavy)
+                                .padding(.top, 5)
+                                .foregroundStyle(Color(UIColor.secondaryLabel))
+                            Text("SECOND_BULLET", tableName: table)
+                                .font(.caption)
+                                .multilineTextAlignment(.leading)
+                            Spacer()
+                        }
+                        HStack(alignment: .top, spacing: 15) {
+                            Text("• ")
+                                .fontWeight(.heavy)
+                                .padding(.top, 5)
+                                .foregroundStyle(Color(UIColor.secondaryLabel))
+                            Text("THIRD_BULLET", tableName: table)
+                                .font(.caption)
+                                .multilineTextAlignment(.leading)
+                                .padding(.vertical, 10)
+                            Spacer()
+                        }
+                    }
                     Text(table == "AirDrop" ? "FOOTER_TEXT_WIFI" : "FOOTER_TEXT", tableName: table)
                         .font(.caption)
-                        .overlay {
-                            GeometryReader { geo in
-                                Color.clear.onAppear {
-                                    textHeight = geo.size.height
-                                }
-                            }
-                        }
-                    if !childView {
+                    if !childView { // Hide Learn More... link if previous view in navigation exists
                         NavigationLink("WELCOME_LEARN_MORE".localize(table: "PrivacyDisclosureUI")) {
                             OnBoardingDetailView()
                         }
@@ -56,6 +91,13 @@ struct OnBoardingView: View {
                     }
                 }
                 .padding(.horizontal, 50)
+                .overlay {
+                    GeometryReader { geo in
+                        Color.clear.onAppear {
+                            textHeight = geo.size.height
+                        }
+                    }
+                }
             }
             .scrollDisabled(textHeight < viewHeight)
             .toolbar {
@@ -79,6 +121,7 @@ struct OnBoardingView: View {
             GeometryReader { geo in
                 Color.clear.onAppear {
                     viewHeight = geo.size.height
+                    
                 }
             }
         }
@@ -86,5 +129,5 @@ struct OnBoardingView: View {
 }
 
 #Preview {
-    OnBoardingView(table: "Camera")
+    OnBoardingView(table: "Activity")
 }

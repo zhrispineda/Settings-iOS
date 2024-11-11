@@ -10,7 +10,9 @@ import SwiftUI
 struct FitnessView: View {
     // Variables
     @State private var cellularEnabled = true
-    @State private var useSessionData = true
+    @AppStorage("UseSessionDataToggle") private var useSessionData = true
+    @State private var showingFitnessPlusSheet = false
+    @State private var showingActivitySheet = false
     let table = "FitnessSettings"
     
     var body: some View {
@@ -26,11 +28,21 @@ struct FitnessView: View {
             }
             
             Section {
-                Button("PRIVACY_PRESENT_BUTTON".localize(table: table)) {}
+                Button("PRIVACY_PRESENT_BUTTON".localize(table: table)) {
+                    showingFitnessPlusSheet = true
+                }
+                .sheet(isPresented: $showingFitnessPlusSheet) {
+                    OnBoardingView(table: "FitnessPlus")
+                }
             }
             
             Section("ACTIVITY_SHARING_PRIVACY_SECTION".localize(table: table)) {
-                Button("PRIVACY_PRESENT_BUTTON".localize(table: table)) {}
+                Button("PRIVACY_PRESENT_BUTTON".localize(table: table)) {
+                    showingActivitySheet = true
+                }
+                .sheet(isPresented: $showingActivitySheet) {
+                    OnBoardingView(table: "Activity")
+                }
             }
         }
     }
