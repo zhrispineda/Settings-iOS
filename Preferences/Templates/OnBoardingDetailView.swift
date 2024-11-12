@@ -14,9 +14,12 @@ struct OnBoardingDetailView: View {
     let tables = [ // SPLASH_SHORT_TITLE tables
         "Activity",
         "ADPAnalytics",
+        "AirDrop",
         "AppStore",
         "OBAppleID", // AppleID
-        "AirDrop",
+        "Advertising",
+        "AppleArcade",
+        "AppleBooks",
         "Camera",
         "FitnessPlus",
         "ImproveSensitiveContentWarning",

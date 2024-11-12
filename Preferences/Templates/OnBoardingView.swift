@@ -19,6 +19,8 @@ struct OnBoardingView: View {
     let services = [
         "Activity",
         "ADPAnalytics",
+        "AppleArcade",
+        "AppleBooks",
         "AppStore",
         "FitnessPlus",
         "OBAppleID" // AppleID
@@ -52,56 +54,29 @@ struct OnBoardingView: View {
                         .multilineTextAlignment(.center)
                         .padding(.vertical, 10)
                     if services.contains(table) { // For services that have 3 separate bullet point keys
-                        HStack(alignment: .top, spacing: 15) {
-                            Text("• ")
-                                .fontWeight(.heavy)
-                                .padding(.top, 5)
-                                .foregroundStyle(Color(UIColor.secondaryLabel))
-                            if table == "OBAppleID" {
-                                Text("FIRST_BULLET_\(UIDevice.current.model.uppercased())".localize(table: table))
-                                    .font(.caption)
-                                    .multilineTextAlignment(.leading)
-                                    .padding(.vertical, 10)
-                            } else {
-                                Text("FIRST_BULLET", tableName: table)
-                                    .font(.caption)
-                                    .multilineTextAlignment(.leading)
-                                    .padding(.vertical, 10)
-                            }
-                            Spacer()
-                        }
-                        HStack(alignment: .top, spacing: 15) {
-                            Text("• ")
-                                .fontWeight(.heavy)
-                                .padding(.top, 5)
-                                .foregroundStyle(Color(UIColor.secondaryLabel))
-                            Text("SECOND_BULLET", tableName: table)
-                                .font(.caption)
-                                .multilineTextAlignment(.leading)
-                            Spacer()
-                        }
-                        HStack(alignment: .top, spacing: 15) {
-                            Text("• ")
-                                .fontWeight(.heavy)
-                                .padding(.top, 5)
-                                .foregroundStyle(Color(UIColor.secondaryLabel))
-                            Text("THIRD_BULLET", tableName: table)
-                                .font(.caption)
-                                .multilineTextAlignment(.leading)
-                                .padding(.vertical, 10)
-                            Spacer()
+                        BulletPoint(key: table == "OBAppleID" ? "FIRST_BULLET_\(UIDevice.current.model.uppercased())" : "FIRST_BULLET", table: table)
+                        BulletPoint(key: "SECOND_BULLET", table: table)
+                        BulletPoint(key: "THIRD_BULLET", table: table)
+                        if table == "AppleBooks" {
+                            BulletPoint(key: "FOURTH_BULLET", table: table)
+                            BulletPoint(key: "FIFTH_BULLET", table: table)
                         }
                     }
                     switch table {
                     case "OBAppleID":
                         Text("FOOTER_TEXT_WIFI_\(UIDevice.current.model.uppercased())".localize(table: table))
                             .font(.caption)
-                    case "AirDrop":
+                            .padding(.top)
+
+                    case "Advertising", "AirDrop", "AppleBooks":
                         Text("FOOTER_TEXT_WIFI", tableName: table)
                             .font(.caption)
+                            .padding(.top)
+
                     default:
                         Text("FOOTER_TEXT", tableName: table)
                             .font(.caption)
+                            .padding(.top)
                     }
                     if !childView { // Hide Learn More... link if previous view in navigation exists
                         NavigationLink("WELCOME_LEARN_MORE".localize(table: "PrivacyDisclosureUI")) {
@@ -150,6 +125,24 @@ struct OnBoardingView: View {
     }
 }
 
+struct BulletPoint: View {
+    let key: String
+    let table: String
+    
+    var body: some View {
+        HStack(alignment: .top, spacing: 15) {
+            Text("• ")
+                .fontWeight(.heavy)
+                .offset(y: -3)
+                .foregroundStyle(Color(UIColor.secondaryLabel))
+            Text(key.localize(table: table))
+                .font(.caption)
+                .multilineTextAlignment(.leading)
+            Spacer()
+        }
+    }
+}
+
 #Preview {
-    OnBoardingView(table: "OBAppleID")
+    OnBoardingView(table: "AppleBooks")
 }
