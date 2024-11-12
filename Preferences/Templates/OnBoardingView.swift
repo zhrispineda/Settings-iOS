@@ -21,6 +21,8 @@ struct OnBoardingView: View {
         "ADPAnalytics",
         "AppleArcade",
         "AppleBooks",
+        "AppleCard",
+        "ApplePayCash",
         "AppStore",
         "FitnessPlus",
         "OBAppleID" // AppleID
@@ -57,8 +59,11 @@ struct OnBoardingView: View {
                         BulletPoint(key: table == "OBAppleID" ? "FIRST_BULLET_\(UIDevice.current.model.uppercased())" : "FIRST_BULLET", table: table)
                         BulletPoint(key: "SECOND_BULLET", table: table)
                         BulletPoint(key: "THIRD_BULLET", table: table)
-                        if table == "AppleBooks" {
+                        // Check if fourth and fifth keys exist by comparing values
+                        if NSLocalizedString("FOURTH_BULLET", tableName: table, comment: "") != "FOURTH_BULLET" {
                             BulletPoint(key: "FOURTH_BULLET", table: table)
+                        }
+                        if NSLocalizedString("FIFTH_BULLET", tableName: table, comment: "") != "FIFTH_BULLET" {
                             BulletPoint(key: "FIFTH_BULLET", table: table)
                         }
                     }
@@ -66,17 +71,16 @@ struct OnBoardingView: View {
                     case "OBAppleID":
                         Text("FOOTER_TEXT_WIFI_\(UIDevice.current.model.uppercased())".localize(table: table))
                             .font(.caption)
-                            .padding(.top)
-
+                            .padding(.top, 1)
                     case "Advertising", "AirDrop", "AppleBooks":
                         Text("FOOTER_TEXT_WIFI", tableName: table)
                             .font(.caption)
-                            .padding(.top)
+                            .padding(.top, 1)
 
                     default:
                         Text("FOOTER_TEXT", tableName: table)
                             .font(.caption)
-                            .padding(.top)
+                            .padding(.top, 1)
                     }
                     if !childView { // Hide Learn More... link if previous view in navigation exists
                         NavigationLink("WELCOME_LEARN_MORE".localize(table: "PrivacyDisclosureUI")) {
@@ -133,7 +137,7 @@ struct BulletPoint: View {
         HStack(alignment: .top, spacing: 15) {
             Text("• ")
                 .fontWeight(.heavy)
-                .offset(y: -3)
+                .offset(y: -3.5)
                 .foregroundStyle(Color(UIColor.secondaryLabel))
             Text(key.localize(table: table))
                 .font(.caption)
@@ -144,5 +148,5 @@ struct BulletPoint: View {
 }
 
 #Preview {
-    OnBoardingView(table: "AppleBooks")
+    OnBoardingView(table: "ApplePayCash")
 }

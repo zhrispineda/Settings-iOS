@@ -20,8 +20,12 @@ struct OnBoardingDetailView: View {
         "Advertising",
         "AppleArcade",
         "AppleBooks",
-        "Camera",
+        "AppleCard",
+        "ApplePayCash",
         "FitnessPlus",
+        "Intelligence",
+        "Maps",
+        "Camera",
         "ImproveSensitiveContentWarning",
         "OBPhotos", // Photos
         "Passwords",
@@ -49,14 +53,14 @@ struct OnBoardingDetailView: View {
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
                     Text("SPLASH_SUMMARY", tableName: table)
-                        .font(.footnote)
+                        .font(.subheadline)
                         .multilineTextAlignment(.center)
                         .padding(.vertical, 10)
                     Text(UIDevice.iPhone ? "FOOTER_TEXT_IPHONE" : "FOOTER_TEXT_IPAD", tableName: table)
-                        .font(.footnote)
-                    Text("[See how your data is managed...](https://www.apple.com/privacy)")
+                        .font(.subheadline)
+                    Text("[\("BUTTON_TITLE".localize(table: "OBAppleID"))](https://www.apple.com/privacy)")
                         .padding(.bottom, 10)
-                        .font(.footnote)
+                        .font(.subheadline)
                 }
                 .scrollContentBackground(.hidden)
                 .listRowSeparator(.hidden)

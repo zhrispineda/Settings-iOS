@@ -1,0 +1,1381 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "FOOTER_TEXT": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligenceは、日常の作業のお手伝いをすることに特化した生成AIモデルのシステムです。Apple Intelligenceは、メールやメモの書き直しや校正、見逃したメッセージの要約、“写真”でのカスタムメモリーの作成、画像の生成などに役立ちます。Apple Intelligenceは、Appleが個人データを収集することなく、パーソナライズされた知能を提供するように設計されています。\n\nカスタマイズされた体験を提供するため、Apple Intelligenceでは、今後のカレンダーの予定やよく使うアプリなど、すべてのアプリで保持されるデバイス上の情報を使用します。Apple Intelligenceは、最も適切にユーザを支援するために、Appleによるデータへのアクセスや保存を必要とすることなく、生成モデルに提供するために必要なデータを識別します。\n\nApple Intelligenceのモデルは、データがデバイスを離れることなくタスクを完了できるように、可能な場合は完全にデバイス上で実行されます。例えば、Apple Intelligenceでメール、メッセージ、および通知のプレビューの要約が提供される場合、それらの要約はデバイス上のモデルによって生成されます。ただし、Apple Intelligenceは、デバイスが自動的に提供できる計算能力を超える能力を必要とするモデルを利用しなければならない場合もあります。そのようなタスクの場合、Apple Intelligenceはプライベートクラウドコンピューティングにリクエストを送信します。プライベートクラウドコンピューティングは、プライバシーを保護しながらより複雑なリクエストを処理するように設計された、サーバベースのインテリジェンスシステムです。例えば、作文ツールを使用してメールの校正や編集を行う場合は、校正や編集を行うために、デバイスがサーバベースのモデルのプライベートクラウドコンピューティングにメールを送信する場合があります。\n\nApple Intelligenceのタスクを開始すると、デバイスで実行中のモデルが、そのタスクをデバイス上で完了できるかどうかを分析します。サーバベースのより大きなモデルが必要な場合、Apple Intelligenceは、プライベートクラウドコンピューティングを使用して、Appleシリコンのサーバで処理されるリクエストに関連するデータのみを送信します。プライベートクラウドコンピューティングとの間で送信されたり返されたりするデータは、保存されたりAppleからアクセス可能にされたりすることはありません。データはリクエストを実現するためにのみ処理され、そのあと結果は安全にデバイスに返され、プライベートクラウドコンピューティングには保持されません。デバイスがプライベートクラウドコンピューティングにリクエストを送信すると、Appleは、リクエストとレスポンスのおおよそのサイズ、リクエストに使用される機能、リクエストが完了するまでの時間など、リクエストに関する限定的な情報のみを収集します。このデータには、リクエストの内容や返される結果に関する情報は含まれません。これは特定することはできず、Apple Accountに関連付けられたり、ほかのAppleサービスの使用を通じてAppleが保有しているその他のデータに関連付けられたりすることもありません。\n\n“設定”＞“プライバシーとセキュリティ”＞“Apple Intelligenceレポート”と選択し、“Apple Intelligenceアクティビティを記録”をオンにすることで、デバイス上のApple Intelligenceの透明性ログをオンにしてデータの処理方法を確認することができます。リクエストが行われたら、ファイルを書き出すことができます。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence는 생성형 AI 모델 시스템으로 일상 업무를 돕도록 특화되었습니다. Apple Intelligence는 이메일이나 메모를 다시 써주거나 교정해 주고, 확인하지 못한 메시지를 요약해 주고, 사진에서 사용자 설정 추억을 만들고, 이미지를 생성하는 등 다양한 작업을 도와줍니다. Apple Intelligence는 Apple이 개인 데이터를 수집하지 않고도 개인 맞춤형 인텔리전스를 제공하도록 설계되었습니다.\n\n사용자화된 경험을 제공하기 위해 Apple Intelligence는 사용자의 앱을 포함하여 기기상의 정보(예: 다가오는 캘린더 이벤트 및 자주 사용하는 앱)를 사용합니다. Apple Intelligence는 사용자를 최대한 돕기 위해 생성형 모델에 제공해야 하는 필요한 데이터를 식별하며, Apple은 데이터 접근이나 저장을 요구하지 않습니다.\n\n가능한 경우 Apple Intelligence 모델은 온전히 온디바이스로 실행되므로 기기 외부로 데이터가 이동하지 않고도 작업을 완료할 수 있습니다. 예를 들어 Apple Intelligence에서 이메일, 메시지 및 알림의 미리보기 요약을 제공할 때 이러한 요약은 온디바이스 모델로 생성됩니다. 하지만 Apple Intelligence가 기기 자체적으로 제공할 수 있는 것보다 더 복잡한 계산 능력을 필요로 하는 모델을 활용해야 하는 경우가 있습니다. 이러한 작업의 경우 Apple Intelligence에서 Private Cloud Compute로 사용자의 요청을 전송합니다. Private Cloud Compute는 개인정보를 보호하면서 더 복잡한 요청을 처리하도록 설계된 서버 기반 인텔리전스 시스템입니다. 예를 들어 글쓰기 도구를 사용하여 이메일을 교정하거나 편집할 때, 서버 기반 모델이 교정 또는 편집을 수행하도록 기기가 Private Cloud Compute에 이메일을 전송할 수 있습니다.\n\nApple Intelligence 작업을 시작하면 기기에서 실행 중인 모델이 해당 작업이 온디바이스 처리를 통해 완료될 수 있는지 여부를 분석합니다. 보다 큰 규모의 서버 기반 모델이 필요한 경우 Apple Intelligence는 Private Cloud Compute를 사용하여 Apple Silicon 서버에서 처리될 수 있도록 요청과 관련된 데이터만 전송합니다. Private Cloud Compute로 주고받은 데이터는 저장되거나 Apple이 접근하도록 처리되지 않습니다. 데이터는 요청을 이행하기 위해서만 처리되며, 그 후 결과가 기기에 안전하게 반환되고 Private Cloud Compute에 유지되지 않습니다. 기기가 Private Cloud Compute에 요청을 전송하면 Apple은 요청 및 응답의 대략적인 크기, 요청에 사용되는 기능 및 요청을 완료하는 데 걸리는 시간 등 요청에 관한 제한된 정보만 수집합니다. 이 데이터는 사용자가 요청한 내용 또는 반환된 결과에 관한 어떠한 정보도 포함하지 않습니다. 이 데이터는 사용자의 Apple 계정 또는 사용자가 이용하는 다른 Apple 서비스에서 Apple이 수집할 수 있는 기타 데이터와 식별되거나 연결되지 않습니다.\n\n기기에서 Apple Intelligence에 관한 투명성 로그 기록을 켜면 데이터가 어떻게 처리되는지 확인할 수 있습니다. 설정 > 개인정보 보호 및 보안 > Apple Intelligence 리포트로 이동하고 Apple Intelligence 사용 정보 기록을 켜십시오. 요청된 후에는 파일을 내보낼 수 있습니다."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "‏Apple Intelligence הוא מערכת מודלים גנרטיביים של בינה מלאכותית שמתמחה בלסייע לך במשימות יום יומיות. ‏Apple Intelligence יכול לעזור לך בשכתוב או הגהה של הודעות הדוא״ל או הפתקים שלך, בסיכום ההודעות שהחמצת, ביצירת זיכרונות מותאמים אישית ב״תמונות״, ביצירת תמונות ועוד. ‏Apple Intelligence תוכנן באופן שמספק בינה מותאמת אישית ואינו כולל איסוף של המידע האישי שלך על ידי Apple.\n\nכדי לספק חוויית שימוש בהתאמה אישית, Apple Intelligence משתמש במידע מהמכשיר ומהיישומים שלך, כגון האירועים הקרובים שלך בלוח השנה והיישומים שנמצאים אצלך בשימוש תדיר. ‏Apple Intelligence מזהה את הנתונים ההכרחיים שיש לספק למודל הגנרטיבי כדי שיוכל לסייע לך בצורה הטובה ביותר, מבלי ש-Apple תצטרך לגשת לנתונים שלך או לאחסן אותם.\n\nכאשר מתאפשר להם, המודלים של Apple Intelligence פועלים במכשיר עצמו בלבד כך שניתן לבצע משימות בלי להוציא נתונים מהמכשיר. לדוגמה, כאשר Apple Intelligence מספק לך סיכומים של ההודעות, הדוא״ל והעדכונים שלך בתצוגה מקדימה, סיכומים אלה נוצרים על ידי מודלים שנמצאים במכשיר עצמו. יחד עם זאת, ישנם מקרים שבהם Apple Intelligence צריך להיעזר במודל שמחייב שימוש ביכולות חישוב שהמכשיר שלך לא מסוגל לספק בעצמו. כדי לבצע משימות אלה, Apple Intelligence שולח את הבקשה שלך לענן חישוב פרטי. ענן חישוב פרטי הוא מערכת בינה מבוססת-שרת שנועדה לטפל במשימות מורכבות יותר תוך הגנה על הפרטיות שלך. לדוגמה, בעת שימוש ב״כלי כתיבה״ כדי לבצע הגהה או עריכה של הודעת דוא״ל, ייתכן שהמכשיר שלך ישלח את ההודעה לענן חישוב פרטי כדי שמודל מבוסס-שרת יבצע את ההגהה או העריכה.\n\nכאשר Apple Intelligence מתבקש לבצע משימה, מודל שפועל במכשיר שלך בודק האם ניתן להשלים אותה במכשיר עצמו. אם נדרש מודל מבוסס-שרת גדול יותר, Apple Intelligence משתמש בענן חישוב פרטי כדי לשלוח רק את הנתונים שרלוונטיים לבקשה שלך לעיבוד בשרתי Apple silicon. הנתונים שנשלחים לענן החישוב הפרטי ומוחזרים על ידו אינם נשמרים על ידי Apple, והיא לא יכולה לגשת אליהם. הנתונים מעובדים כדי לבצע את הבקשה שלך, ולאחר מכן התוצאות מוחזרות באופן מאובטח למכשיר שלך ולא מאוחסנות בענן החישוב הפרטי. כאשר המכשיר שלך שולח בקשה לענן חישוב פרטי, Apple אוספת נתונים מוגבלים בלבד בנוגע לבקשה שלך, כגון הגודל המשוער של נתוני הבקשה והתגובה, באילו מאפיינים יש להשתמש במסגרת הבקשה ומשך הזמן שנדרש להשלמת הבקשה. נתונים אלה לא כוללים מידע על תוכן הבקשה שלך או על התוצאה שמוחזרת. הם לא מאפשרים זיהוי שלך ואינם מקושרים לחשבון ה-Apple שלך או לנתונים אחרים ש-Apple עשויה לקבל מהשימוש שלך בשירותי Apple אחרים.\n\nכדי לראות כיצד הנתונים שלך מעובדים, באפשרותך להפעיל במכשיר שלך הגדרה שמאפשרת שקיפות ביצירת הדו״חות של Apple Intelligence באמצעות מעבר ל״הגדרות״ > ״פרטיות ואבטחה״ > ״הדו״ח של Apple Intelligence״, והפעלת ״תיעוד הפעילות של Apple Intelligence״. לאחר ביצוע בקשות, ניתן לייצא קובץ."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence adalah sistem model AI generatif khusus untuk membantu Anda menyelesaikan tugas sehari-hari. Apple Intelligence dapat membantu Anda menulis ulang atau memeriksa email atau catatan Anda, meringkas pesan yang terlewat, membuat memori khusus di Foto, membuat gambar, dan lainnya. Apple Intelligence didesain untuk memberikan kepintaran personal yang tidak mengumpulkan data pribadi Anda untuk dikirim ke Apple.\n\nUntuk memberikan pengalaman yang disesuaikan, Apple Intelligence menggunakan informasi di perangkat Anda termasuk di semua app, seperti acara kalender mendatang dan app yang sering Anda gunakan. Apple Intelligence mengidentifikasi data yang penting untuk diberikan ke model generatif agar dapat membantu Anda dengan baik, tanpa memerlukan akses ke atau penyimpanan data oleh Apple.\n\nJika memungkinkan, model Apple Intelligence sepenuhnya dijalankan di perangkat agar tugas dapat diselesaikan tanpa ada data yang meninggalkan perangkat Anda. Misalnya, saat Apple Intelligence memberi Anda ringkasan pratinjau email, pesan, dan pemberitahuan, ringkasan ini dibuat oleh model pada perangkat. Namun, ada saatnya Apple Intelligence harus memanfaatkan model yang memerlukan lebih banyak daya komputasi dibandingkan dengan yang dapat disediakan oleh perangkat Anda sendiri. Untuk tugas ini, Apple Intelligence mengirimkan permintaan Anda ke Private Cloud Compute. Private Cloud Compute adalah sistem kecerdasan berbasis server yang didesain untuk menangani permintaan yang lebih rumit selagi melindungi privasi Anda. Misalnya, saat Anda menggunakan Alat Tulis untuk memeriksa atau mengedit email, perangkat Anda mungkin mengirimkan email ke Private Cloud Compute agar model berbasis server dapat melakukan pemeriksaan atau pengeditan tersebut.\n\nSaat Anda memulai tugas Apple Intelligence, model yang dijalankan di perangkat Anda menganalisis apakah tugas dapat diselesaikan pada perangkat. Jika model berbasis server yang lebih besar diperlukan, Apple Intelligence akan menggunakan Private Cloud Compute untuk hanya mengirim data yang relevan dengan permintaan Anda untuk diproses di server Apple silicon. Data yang dikirim ke dan dikembalikan oleh Private Cloud Compute tidak disimpan atau disediakan kepada Apple. Data hanya diproses untuk memenuhi permintaan Anda, dan kemudian hasilnya dikembalikan dengan aman ke perangkat Anda dan tidak disimpan oleh Private Cloud Compute. Saat perangkat Anda mengirimkan permintaan ke Private Cloud Compute, Apple hanya mengumpulkan informasi terbatas tentang permintaan tersebut, seperti perkiraan ukuran permintaan dan respons, fitur mana yang digunakan untuk permintaan, dan waktu yang dibutuhkan untuk menyelesaikan permintaan tersebut. Data ini tidak menyertakan informasi apa pun mengenai konten permintaan Anda atau hasil yang dikembalikan. Data tidak dapat diidentifikasi atau dikaitkan dengan Akun Apple atau data Anda lainnya yang mungkin dimiliki Apple dari penggunaan layanan Apple lainnya oleh Anda.\n\nAnda dapat menyalakan pencatatan transparansi untuk Apple Intelligence di perangkat Anda untuk melihat bagaimana data Anda diproses dengan membuka Pengaturan > Privasi & Keamanan > Laporan Apple Intelligence dan menyalakan Rekam Aktivitas Apple Intelligence. Setelah permintaan dibuat, Anda dapat mengekspor file."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence is een systeem van generatieve AI-modellen die gespecialiseerd zijn om je te helpen met het uitvoeren van alledaagse taken. Apple Intelligence kan je helpen bij het herschrijven of proeflezen van je e‑mails of notities, het samenvatten van je gemiste berichten, het maken van aangepaste terugblikken in Foto's, het genereren van afbeeldingen en nog veel meer. Apple Intelligence is ontworpen om gepersonaliseerde informatie te leveren zonder dat Apple je persoonlijke gegevens verzamelt.\n\nOm een aangepaste ervaring te bieden gebruikt Apple Intelligence informatie op je apparaat, waaronder informatie in je apps, zoals je aankomende agenda-activiteiten en je veelgebruikte apps. Apple Intelligence identificeert de gegevens die nodig zijn om je een generatief model te bieden dat je zo goed mogelijk kan helpen, zonder dat Apple toegang heeft tot de gegevens of de gegevens opslaat.\n\nIndien mogelijk worden de Apple Intelligence-modellen volledig op het apparaat uitgevoerd, zodat een taak kan worden voltooid zonder dat gegevens je apparaat verlaten. Wanneer Apple Intelligence je bijvoorbeeld samenvattingen geeft van je e‑mails, berichten en meldingen, worden deze samenvattingen gegenereerd door modellen op het apparaat. Het kan echter voorkomen dat Apple Intelligence een model moet gebruiken dat meer rekenkracht vereist dan alleen je apparaat kan bieden. Voor dergelijke taken stuurt Apple Intelligence je verzoek naar Private Cloud Compute. Private Cloud Compute is een servergebaseerd intelligentiesysteem dat ontworpen is om complexere verzoeken te verwerken en tegelijkertijd je privacy te beschermen. Wanneer je bijvoorbeeld Schrijfhulp gebruikt om een e‑mail te proeflezen of te bewerken, kan je apparaat de e‑mail naar Private Cloud Compute sturen voor een servergebaseerd model dat het proeflezen of de bewerking uitvoert.\n\nWanneer je een Apple Intelligence-taak start, analyseert een model dat op je apparaat wordt uitgevoerd of de taak op het apparaat kan worden voltooid. Als er een groter, servergebaseerd model is vereist, maakt Apple Intelligence gebruik van Private Cloud Compute en worden alleen de gegevens verstuurd die relevant zijn voor je verzoek voor verwerking op servers met Apple silicon. De gegevens die worden verstuurd naar Private Cloud Compute en door Private Cloud Compute worden teruggestuurd, worden niet bewaard of toegankelijk gemaakt voor Apple. De gegevens worden alleen verwerkt om aan je verzoek te voldoen, waarna de resultaten veilig naar je apparaat worden teruggestuurd en niet door Private Cloud Compute worden bewaard. Wanneer je apparaat een verzoek naar Private Cloud Compute stuurt, verzamelt Apple slechts beperkte informatie over het verzoek, zoals de geschatte grootte van het verzoek en het antwoord, welke functies voor het verzoek worden gebruikt en hoelang het duurt om het verzoek te voltooien. Deze gegevens bevatten geen informatie over de inhoud van je verzoek of het teruggestuurde resultaat. Je identiteit kan niet uit de gegevens worden afgeleid en de gegevens zijn niet gekoppeld aan je Apple Account of andere gegevens waarover Apple mogelijk beschikt door je gebruik van andere voorzieningen van Apple.\n\nJe kunt transparant loggen voor Apple Intelligence inschakelen op je apparaat om te zien hoe je gegevens worden verwerkt. Hiervoor ga je in Instellingen naar 'Privacy en beveiliging' > 'Apple Intelligence-rapport' en schakel je 'Neem Apple Intelligence-activiteit op' in. Nadat er verzoeken zijn gemaakt, kun je een bestand exporteren."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence, günlük işlerinizde size yardımcı olmak özelleştirilmiş üretken yapay zekâ modelleri sistemidir. Apple Intelligence, e-postalarınızı veya notlarınızı yeniden yazmanıza ya da düzeltmenize, yanıt veremediğiniz mesajlarınızı özetlemenize, Fotoğraflar’da özel anılar yaratmanıza, görüntüler oluşturmanıza ve daha birçok şeye yardımcı olabilir. Apple Intelligence, Apple’ın kişisel verilerinizi toplaması gerekmeden kişiselleştirilmiş yapay zekâ özellikleri sunmak için tasarlanmıştır.\n\nApple Intelligence, özelleştirilmiş bir deneyim sunmak için yaklaşan takvim etkinlikleriniz ve sık kullandığınız uygulamalar gibi uygulamalarınızdaki bilgiler de dahil olmak üzere aygıtınızdaki bilgileri kullanır. Apple Intelligence, Apple’ın verilere erişmesi veya saklaması gerekmeden size en iyi şekilde yardımcı olmak için üretken modele sağlanması gereken verileri belirler.\n\nApple Intelligence modelleri, mümkün olduğunda tamamen aygıtta çalışır. Böylece bir görev tamamlanırken verileriniz aygıtta kalır. Örneğin Apple Intelligence size e-postalarınızın, mesajlarınızın ve bildirimlerinizin önizleme özetlerini sunduğunda bu özetler aygıttaki yapay zekâ modelleri tarafından oluşturulur. Ancak Apple Intelligence’ın aygıtınızın tek başına sağlayabileceğinden daha fazla işlem gücü gerektiren bir modelden yararlanması gerektiği zamanlar da olabilir. Apple Intelligence, bu görevler için isteğinizi Private Cloud Compute’e gönderir. Private Cloud Compute, daha karmaşık istekleri gizliliğinizi korumayı sürdürerek işlemek için tasarlanmış sunucu tabanlı bir yapay zekâ sistemidir. Örneğin bir e-postayı düzeltmek veya düzenlemek için Yazma Araçları’nı kullandığınızda aygıtınız, düzeltme veya düzenleme işlemini sunucu tabanlı modelin yapması için e-postayı Private Cloud Compute’e gönderebilir.\n\nBir Apple Intelligence görevi başlattığınızda, aygıtınızda çalışan model görevin aygıtta tamamlanıp tamamlanamayacağını inceler. Apple Intelligence, sunucu tabanlı daha büyük bir modelin gerekli olduğu durumlarda Private Cloud Compute’u kullanarak yalnızca isteğinizle ilgili verileri Apple Silicon çipli sunucularda işlenmek üzere gönderir. Private Cloud Compute’a gönderilen ve oradan döndürülen veriler saklanmaz veya Apple bu verilere erişemez. Veriler, yalnızca isteğinizi yerine getirmek için işlenir; sonrasında da sonuçlar güvenli bir şekilde aygıtınıza döndürülür ve Private Cloud Compute tarafından tutulmaz. Aygıtınız Private Cloud Compute’a bir istek gönderdiğinde Apple istekle ilgili yalnızca isteğin ve yanıtın büyüklüğü, istek için hangi özelliklerin kullanıldığı ve isteğin gerçekleştirilmesinin ne kadar zaman aldığı gibi sınırlı bilgileri toplar. Bu veriler, isteğinizin veya döndürülen sonucun içeriği ile ilgili herhangi bir bilgi içermez. Bu bilgilerle kimlik saptanamaz ya da Apple Hesabı’nız veya Apple’ın diğer Apple servislerini kullanmanız nedeniyle sahip olabileceği başka veriler arasında bağlantı kurulmaz.\n\nVerilerinizin nasıl işlendiğini görmek için Ayarlar > Gizlilik ve Güvenlik > Apple Intelligence Raporu bölümüne gidip Apple Intelligence Etkinliğini Kaydet’i açarak aygıtınızda Apple Intelligence için şeffaf günlük tutmayı açabilirsiniz. İsteklerde bulunulduktan sonra bir dosyayı dışa aktarabilirsiniz."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence on järjestelmä generatiivisia tekoälymalleja, jotka ovat erikoistuneet auttamaan sinua päivittäisissä toimissasi. Apple Intelligence voi mm. auttaa sinua kirjoittamaan uudelleen tai oikolukemaan sähköpostisi tai muistiinpanosi, tehdä yhteenvetoja ohitetuista viesteistä, luoda muokattuja muistoja Kuvissa ja tuottaa kuvia. Apple Intelligence on suunniteltu tarjoamaan räätälöityä älykkyyttä ilman, että Apple kerää henkilökohtaisia tietojasi.\n\nTarjotakseen räätälöidyn käyttökokemuksen Apple Intelligence käyttää laitteessasi olevia tietoja apeista, kuten tulevat kalenteritapahtumat ja usein käyttämäsi apit. Apple Intelligence tunnistaa tarvittavat tiedot, jotka annetaan generatiiviselle mallille, jotta sinua voidaan auttaa parhaiten, ilman, että Applen tarvitsee saada näitä tietoja tai tallentaa niitä.\n\nKun mahdollista, Apple Intelligence -mallit suoritetaan kokonaisuudessaan laitteessa, joten tehtävät voidaan suorittaa ilman, että tiedot poistuvat laitteestasi. Kun Apple Intelligence esimerkiksi tarjoaa sinulle sähköpostien, viestien ja ilmoitusten yhteenvetoja, ne tuotetaan laitteessa toimivilla malleilla. Joissakin tilanteissa Apple Intelligence kuitenkin joutuu käyttämään mallia, joka tarvitsee enemmän laskentatehoa kuin laitteesi voi tarjota. Näitä tehtäviä varten Apple Intelligence lähettää pyyntösi Private Cloud Computeen. Private Cloud Compute on palvelinperustainen älyjärjestelmä, joka on suunniteltu monimutkaisempia pyyntöjä varten ja samalla suojaamaan yksityisyyttäsi. Esimerkiksi, kun käytät Kirjoitustyökaluja sähköpostin oikolukemiseen tai muokkaamiseen, laite voi lähettää sähköpostin Private Cloud Computeen palvelinperustaisen mallin oikoluettavaksi tai muokattavaksi.\n\nKun aloitat Apple Intelligence -tehtävän, laitteessa toimiva malli päättelee, voidaanko tehtävä suorittaa laitteessa. Jos laajempaa, palvelinperustaista mallia tarvitaan, Apple Intelligence käyttää Private Cloud Computea lähettääkseen vain pyyntöösi tarpeelliset tiedot käsiteltäväksi Applen siruun perustuvilla palvelimilla. Apple ei tallenna eikä voi käyttää Private Cloud Computeen lähetettäviä tai sen palauttamia tietoja. Tietoja käsitellään vain pyyntösi toteuttamiseksi, jonka jälkeen tulokset palautetaan suojatusti laiteeseesi, eikä Private Cloud Compute säilytä niitä. Kun laitteesi lähettää pyynnön Private Cloud Computeen, Apple kerää vain rajoitettuja tietoja pyynnöstä, kuten pyynnön ja vastauksen likimääräisen koon, pyyntöön käytettävät ominaisuudet sekä pyynnön suorittamiseen kuluvan ajan. Nämä tiedot eivät sisällä mitään tietoa pyyntösi sisällöstä tai palautetusta vastauksesta. Sitä ei voida tunnistaa tai yhdistetä Apple-tiliisi tai muihin tietoihin, joita Applella voi olla muiden Applen palveluiden käytöstäsi.\n\nVoit laittaa läpinäkyvyyden kirjaamisen päälle Apple Intelligencelle laitteessasi nähdäksesi, miten tietojasi käsitellään, valitsemalla Asetukset > Tietosuoja ja suojaus > Apple Intelligence -raportti ja laittamalla päälle valinnan Tallenna Apple Intelligence -toiminta. Kun pyyntöjä on tehty, voit viedä tiedoston."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Az Apple Intelligence generatív AI-modellek rendszere, amelyet arra terveztek, hogy segítséget nyújtson Önnek a mindennapi teendőiben. Az Apple Intelligence segítségével újraírhatja az e-mailjeit és jegyzeteit, vagy nyelvi ellenőrzést végezhet rajtuk, összegzést kaphat az üzenetekről, amelyekről lemaradt, egyéni emlékeket hozhat létre a Fotókban, képeket generálhat, és további műveleteket végezhet. Az Apple Intelligence‑et arra tervezték, hogy személyre szabott intelligenciát nyújtson anélkül, hogy az Apple személyes adatokat gyűjtene Öntől.\n\nAz Apple Intelligence a testreszabott élmény nyújtása érdekében felhasználja az Ön eszközén, valamint az appjaiban található információkat, például a közeljövőre tervezett naptáreseményeit és a gyakran használt appjait. Az Apple Intelligence beazonosítja a generatív modell számára az Ön támogatásához szükséges adatokat anélkül, hogy hozzáférést kellene kérnie az adatokhoz, vagy szüksége lenne arra, hogy az adatokat az Apple tárolja.\n\nAmikor lehetséges, az Apple Intelligence-modellek teljes mértékben az eszközén futnak, hogy a feladatokat anélkül el lehessen végezni, hogy az adatok elhagynák az Ön eszközét. Például amikor az Apple Intelligence előnézet-összegzést biztosít az Ön e-mailjeiről, üzeneteiről és értesítéseiről, az ilyen összegzéseket az eszközön futó modellek generálják. Azonban előfordulnak olyan alkalmak, amikor az Apple Intelligence-nek olyan modellt kell használnia, amelyhez az eszköz által biztosítottnál nagyobb számítási teljesítményre van szükség. Az ilyen feladatok esetén az Apple Intelligence elküldi az Ön kérését a Privát felhőalapú számítás számára. A Privát felhőalapú számítás egy szerveralapú intelligenciarendszer, amelyet arra terveztek, hogy az adatok védelme mellett képes legyen az összetettebb kérések végrehajtására. Például amikor az Íráseszközök funkcióval ellenőriz vagy szerkeszt egy e-mailt, előfordulhat, hogy az eszköze elküldi az e-mailt a Privát felhőalapú számítás számára, hogy egy szerveralapú modell végezze el a nyelvi ellenőrzést vagy a szerkesztést.\n\nEgy Apple Intelligence-feladat indításakor az eszközén futó modell kielemzi, hogy a feladatot végre lehet-e hajtani az eszközön. Ha nagyobb, szerveralapú modellre van szükség, akkor az Apple Intelligence a Privát felhőalapú számítás segítségével csak a kérése tekintetében releváns adatokat elküldi feldolgozásra az Apple-chippel rendelkező szerverekre. A Privát felhőalapú számítás számára küldött, és általa visszaadott adatokat az Apple nem tárolja, és ezek nem is válnak hozzáférhetővé az Apple számára. Az adatok feldolgozása csak a kérés teljesítése érdekében történik, amelyet követően az eredmények biztonságos módon vissza lesznek küldve az Ön eszközére, és ezeket a Privát felhőalapú számítás nem őrzi meg. Amikor az eszköze kérést küld a Privát felhőalapú számítás számára, az Apple csak információk korlátozott körét gyűjti a kéréssel kapcsolatban, például a kérés és a válasz hozzávetőleges méretét, azt, hogy mely funkciókat kell használni a kéréshez, és mennyi időbe telik a kérés végrehajtása. Ezekben az adatokban nem szerepel információ a kérés vagy a visszaadott válasz tartalmával kapcsolatban. Az adatok személyazonosításra nem alkalmasak, és nincsenek összekapcsolva az Ön Apple-fiókjával vagy más olyan adataival, amellyel az Apple rendelkezhet a más Apple-szolgáltatások Ön általi használata alapján.\n\nAz eszközén bekapcsolhatja az átláthatósági naplózást az Apple Intelligence‑re vonatkozóan, így információkat tekinthet meg az adatai feldolgozásával kapcsolatosan. Ehhez nyissa meg a Beállítások > Adatvédelem és biztonság > Apple Intelligence-jelentés menüpontot, és kapcsolja be az Apple Intelligence-tevékenységek rögzítése funkciót. A kérések elküldése után exportálhat egy fájlt."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence — это система генеративных моделей на основе искусственного интеллекта, предназначенных для того, чтобы помогать Вам выполнять повседневные задачи. Apple Intelligence поможет переписать или проверить на опечатки письма или заметки, кратко изложить содержание пропущенных сообщений, создать пользовательские воспоминания в Фото, сгенерировать изображения и выполнить многие другие задачи. Apple Intelligence — это персонализированный интеллектуальный помощник, не передающий Ваши персональные данные в Apple.\n\nДля обеспечения персонализации Apple Intelligence использует информацию на Вашем устройстве (в том числе из Ваших приложений), например о предстоящих событиях календаря и часто используемых приложениях. Apple Intelligence определяет, какие данные необходимы генеративной модели для максимально эффективного выполнения Вашего запроса. При этом компании Apple не требуется получать доступ к этим данным или сохранять их.\n\nВо всех случаях, когда это возможно, модели Apple Intelligence выполняют задачи исключительно на Вашем устройстве, и данные с него никуда не передаются. Например, Apple Intelligence может создавать конспекты электронных писем, сообщений и уведомлений для предварительного просмотра. Эти конспекты создаются с помощью моделей, работающих исключительно на устройстве. Однако в некоторых случаях Apple Intelligence необходимо задействовать модель, требующую более высокой вычислительной мощности, чем может обеспечить Ваше устройство. Для выполнения таких задач Apple Intelligence передает Ваш запрос системе Частных облачных вычислений. Система Частных облачных вычислений — это интеллектуальная серверная система, которая обрабатывает более сложные запросы без ущерба для конфиденциальности Ваших данных. Например, когда Вы используете Инструменты для письма, чтобы проверить правописание или отредактировать электронное письмо, Ваше устройство может отправить это письмо системе Частных облачных вычислений, чтобы проверку или редактирование выполнила одна из серверных моделей.\n\nКогда Вы инициируете задачу для Apple Intelligence, генеративная модель на Вашем устройстве анализирует эту задачу и определяет, можно ли выполнить ее на устройстве. Если для выполнения задачи требуется более мощная серверная модель, Apple Intelligence задействует систему Частных облачных вычислений, отправляя на серверы, управляемые чипами Apple, только те данные, которые необходимы для обработки Вашего запроса. Данные, передаваемые системе Частных облачных вычислений и получаемые от нее, не сохраняются, и компания Apple не имеет к ним доступа. Эти данные обрабатываются только для выполнения Вашего запроса, после чего результаты обработки возвращаются на Ваше устройство в зашифрованном виде. Результаты не сохраняются в системе Частных облачных вычислений. Когда Ваше устройство передает запрос системе Частных облачных вычислений, Apple собирает только ограниченную информацию об этом запросе, такую как примерный объем данных в запросе и ответе, список задействованных для выполнения запроса функций, а также время, которое потребовалось для выполнения запроса. Эти данные не включают никакую информацию о содержании Вашего запроса или полученного результата. На основе этих данных невозможно установить Вашу личность. Они не связаны с Вашим Аккаунтом Apple или иными данными, которые компания Apple могла получить в процессе использования Вами других сервисов Apple.\n\nВы можете включить ведение журналов для обеспечения прозрачности работы Apple Intelligence на Вашем устройстве, чтобы отслеживать обработку своих данных. Для этого откройте «Настройки» > «Конфиденциальность и безопасность» > «Отчет об Apple Intelligence» и включите «Запись активности Apple Intelligence». После выполнения запросов Вы сможете экспортировать файл."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence è un sistema di modelli di IA generativi, pensati per aiutarti nelle attività di ogni giorno. Apple Intelligence è in grado di offrire supporto per rivedere o riscrivere le email o le note, riassumere i messaggi non letti, creare ricordi personalizzati in Foto, generare immagini e molto altro. Apple Intelligence è progettata per fornire funzionalità intelligenti personalizzate senza che Apple raccolga i tuoi dati personali.\n\nPer offrire un’esperienza personalizzata, Apple Intelligence utilizza le informazioni presenti sul tuo dispositivo, incluse quelle provenienti dalle app, ad esempio gli eventi di calendario in programma e le app che usi spesso. Apple Intelligence identifica i dati necessari da fornire a un modello generativo per assisterti al meglio, senza richiedere l’accesso ai dati o l’archiviazione da parte di Apple.\n\nQuando possibile, i modelli di Apple Intelligence vengono eseguiti interamente sul dispositivo, in modo che sia possibile completare un’attività senza che i dati lascino il dispositivo stesso. Ad esempio, quando Apple Intelligence crea i riepiloghi delle anteprime di email, messaggi e notifiche, questi vengono generati da modelli sul dispositivo. Tuttavia, a volte Apple Intelligence deve utilizzare un modello che richiede una potenza di calcolo superiore a quella che il dispositivo è in grado di fornire. Per queste attività, Apple Intelligence invia la tua richiesta a Private Cloud Compute. Si tratta di un sistema di intelligenza basato su server pensato per gestire richieste più complesse, proteggendo al tempo stesso la tua privacy. Ad esempio, quando usi gli strumenti di scrittura per rivedere o modificare un’email, il dispositivo potrebbe inviarla a Private Cloud Compute in modo che queste attività vengano svolte da un modello basato su server.\n\nQuando inizi un’attività di Apple Intelligence, un modello in esecuzione sul tuo dispositivo analizza se sia possibile completarla localmente o meno. Se è necessario un modello basato su server di dimensioni maggiori, Apple Intelligence utilizza Private Cloud Compute per inviare solo i dati rilevanti per la richiesta affinché vengano elaborati sui server con chip Apple. Apple non ha accesso e non archivia i dati inviati e ricevuti da Private Cloud Compute. I dati vengono elaborati solo per eseguire la tua richiesta, quindi vengono trasferiti nuovamente sul tuo dispositivo in modo sicuro e non vengono conservati da Private Cloud Compute. Quando il dispositivo invia una richiesta a Private Cloud Compute, Apple raccoglie solo informazioni limitate sulla richiesta, ad esempio le dimensioni approssimative della richiesta e della risposta, quali funzionalità vengono usate per la richiesta e il tempo necessario per completarla. Questi dati non includono informazioni sul contenuto della richiesta né il risultato restituito. Non sono identificabili né collegati al tuo Apple Account o ad altre informazioni su di te che Apple potrebbe avere raccolto dal tuo utilizzo di altri servizi Apple.\n\nPer capire come vengono elaborati i tuoi dati, puoi attivare la raccolta dei log di trasparenza per Apple Intelligence sul tuo dispositivo andando in Impostazioni > Privacy e sicurezza > Resoconto Apple Intelligence, e attivando “Registra attività di Apple Intelligence”. Dopo aver effettuato le richieste, puoi esportare un file."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence es un sistema de modelos de IA generativa diseñado especialmente para ayudarte con tus tareas cotidianas. Apple Intelligence puede ayudarte a reescribir o corregir tus correos o notas, resumir los mensajes que no has leído, crear recuerdos personalizados en Fotos, generar imágenes y más. Apple Intelligence se diseñó para brindarte inteligencia personalizada sin necesidad de que Apple recopile tus datos personales.\n\nPara ofrecerte una experiencia personalizada, Apple Intelligence usa la información de todas las apps que se encuentran en tu dispositivo, como los eventos próximos en el calendario o las apps usadas frecuentemente. Apple Intelligence identifica los datos que debe proporcionar al modelo generativo con el fin de ofrecer asistencia más eficiente sin necesidad de que Apple acceda a estos datos ni los almacene.\n\nDe ser posible, los modelos de Apple Intelligence se ejecutan completamente en el dispositivo para realizar tareas sin que los datos salgan del dispositivo. Por ejemplo, los resúmenes de correos electrónicos, mensajes y notificaciones que proporciona Apple Intelligence se generan mediante los modelos de forma local en el dispositivo. Sin embargo, hay ocasiones en las que Apple Intelligence necesita utilizar un modelo que requiere más potencia computacional de la que puede proporcionar tu dispositivo. En estos casos, Apple Intelligence envía tu petición a Private Cloud Compute. Private Cloud Compute es un sistema de inteligencia basado en servidor diseñado para manejar peticiones más complejas y al mismo tiempo proteger tu privacidad. Por ejemplo, cuando usas las herramientas de escritura para corregir o editar un correo electrónico, tu dispositivo puede enviar el correo a Private Cloud Compute para que un modelo basado en servidor realice la corrección o edición.\n\nCuando inicias una tarea de Apple Intelligence, un modelo que se ejecuta en tu dispositivo analiza la tarea y determina si se puede completar en el dispositivo. Si se requiere un modelo basado en servidor de mayor capacidad, Apple Intelligence utilizará Private Cloud Compute para enviar solamente los datos relevantes para tu petición para que se procesen en servidores que funcionan con chips de Apple. Apple no almacena ni puede acceder a los datos que envía y recibe Private Cloud Compute. Estos datos se procesan únicamente con la finalidad de satisfacer tu petición (tras lo cual se devuelve la respuesta de forma segura a tu dispositivo) y no se conservan en Private Cloud Compute. Cuando tu dispositivo envía una petición a Private Cloud Compute, Apple sólo recopila información limitada sobre la petición, como el tamaño aproximado de la petición y de la respuesta, qué funciones se utilizan para la petición y cuánto tiempo tardará en completarse. Estos datos no incluyen ninguna información sobre el contenido de tu petición o el resultado devuelto. Además, no se vinculan a tu cuenta de Apple ni a otros datos que Apple pueda tener sobre el uso que haces de otros servicios de Apple.\n\nPuedes activar el registro de transparencia de Apple Intelligence en tu dispositivo para consultar cómo se procesan tus datos. Para ello, ve a Configuración > Privacidad y seguridad > Reporte de Apple Intelligence, y luego activa Registrar actividad de Apple Intelligence. Después de realizar peticiones, puedes exportar un archivo."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το Apple Intelligence είναι ένα σύστημα μοντέλων γενετικής τεχνητής νοημοσύνης που εξειδικεύονται στη διευκόλυνση των καθημερινών σας εργασιών. Το Apple Intelligence μπορεί να σας βοηθήσει να γράψετε εκ νέου ή να διορθώσετε τα email ή τις σημειώσεις σας, καθώς και να συνοψίσει τα αδιάβαστα μηνύματά σας, να δημιουργήσει προσαρμοσμένες αναμνήσεις στις Φωτογραφίες, να δημιουργήσει εικόνες, και πολλά ακόμη. Το Apple Intelligence έχει σχεδιαστεί με τρόπο που σας παρέχει εξατομικευμένη τεχνολογία νοημοσύνης χωρίς η Apple να συλλέγει τα προσωπικά δεδομένα σας.\n\nΓια να παρέχει μια εξατομικευμένη εμπειρία, το Apple Intelligence χρησιμοποιεί πληροφορίες στη συσκευή σας, μεταξύ άλλων δεδομένα από όλες τις εφαρμογές σας, π.χ. τα επερχόμενα γεγονότα ημερολογίου σας και τις εφαρμογές που χρησιμοποιείτε συχνά. Το Apple Intelligence προσδιορίζει τα δεδομένα που είναι απαραίτητα προς παροχή σε ένα παραγωγικό μοντέλο, προκειμένου να σας βοηθήσει με τον βέλτιστο τρόπο χωρίς να απαιτείται πρόσβαση ή αποθήκευση των δεδομένων από την Apple.\n\nΌταν είναι δυνατόν, τα μοντέλα Apple Intelligence λειτουργούν εξ ολοκλήρου στη συσκευή, ώστε μια εργασία να μπορεί να ολοκληρωθεί χωρίς αποστολή των δεδομένων εκτός της συσκευής σας. Για παράδειγμα, οι συνόψεις προεπισκόπησης των email, μηνυμάτων και γνωστοποιήσεων που σας παρέχει το Apple Intelligence, δημιουργούνται μέσω μοντέλων επί της συσκευής. Ωστόσο, υπάρχουν περιπτώσεις όπου το Apple Intelligence χρειάζεται να αξιοποιήσει ένα μοντέλο που απαιτεί μεγαλύτερη υπολογιστική ισχύ από αυτήν που μπορεί να παράσχει η συσκευή σας. Για αυτές τις εργασίες, το Apple Intelligence στέλνει το αίτημά σας στο Private Cloud Compute. Το Private Cloud Compute είναι ένα σύστημα νοημοσύνης που βασίζεται σε διακομιστές και έχει σχεδιαστεί για να χειρίζεται πιο σύνθετα αιτήματα, προστατεύοντας παράλληλα το απόρρητό σας. Για παράδειγμα, όταν χρησιμοποιείτε τα Εργαλεία συγγραφής για να διορθώσετε ή να επεξεργαστείτε ένα email, η συσκευή σας μπορεί να στείλει το email σας στο Private Cloud Compute ώστε ένα μοντέλο που βασίζεται σε διακομιστές να κάνει τη διόρθωση ή την επιμέλεια.\n\nΌταν ξεκινάτε μια εργασία Apple Intelligence, ένα μοντέλο που εκτελείται στη συσκευή σας αναλύει αν η εργασία μπορεί να ολοκληρωθεί στη συσκευή. Αν απαιτείται ένα μεγαλύτερο μοντέλο που βασίζεται σε διακομιστές, το Apple Intelligence χρησιμοποιεί το Private Cloud Compute για να στείλει μόνο τα δεδομένα που σχετίζονται με το αίτημά σας προς επεξεργασία σε διακομιστές Apple Silicon. Τα δεδομένα που αποστέλλονται και επιστρέφονται από το Private Cloud Compute δεν αποθηκεύονται ούτε είναι προσβάσιμα στην Apple. Τα δεδομένα υποβάλλονται σε επεξεργασία μόνο για εκπλήρωση του αιτήματός σας, και μετά τα αποτελέσματα επιστρέφονται με ασφάλεια στη συσκευή σας και δεν διατηρούνται από το Private Cloud Compute. Όταν η συσκευή σας αποστέλλει ένα αίτημα στο Private Cloud Compute, η Apple συλλέγει μόνο περιορισμένες πληροφορίες σχετικά με το αίτημα, όπως το κατά προσέγγιση μέγεθος του αιτήματος και της απάντησης, τις δυνατότητες που χρησιμοποιούνται για το αίτημα και τον χρόνο ολοκλήρωσης του αιτήματος. Σε αυτά τα δεδομένα δεν περιλαμβάνεται καμία πληροφορία σχετικά με το περιεχόμενο του αιτήματός σας ή το επιστρεφόμενο αποτέλεσμα. Οι πληροφορίες δεν είναι ταυτοποιήσιμες και δεν συσχετίζονται με τον λογαριασμό Apple σας ή άλλα δεδομένα που ενδέχεται να έχει η Apple όσον αφορά την από μέρους σας χρήση άλλων υπηρεσιών Apple.\n\nΑν θέλετε να ενεργοποιήσετε την καταγραφή διαφάνειας για το Apple Intelligence στη συσκευή σας, προκειμένου να δείτε πώς γίνεται η επεξεργασία των δεδομένων σας, μεταβείτε στις «Ρυθμίσεις» > «Απόρρητο και ασφάλεια» > «Αναφορά Apple Intelligence» και ενεργοποιήστε την «Καταγραφή δραστηριότητας Apple Intelligence». Μετά την υποβολή των αιτημάτων, μπορείτε να εξαγάγετε ένα αρχείο."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’Apple Intelligence és un sistema d’intel·ligència artificial generativa especialment dissenyat per ajudar‑te a fer tasques quotidianes. L’Apple Intelligence et pot ajudar a reescriure o revisar els missatges de correu electrònic i les notes, a resumir els missatges que no has vist, a crear records personalitzats a l’app Fotos, a generar imatges i molt més. L’Apple Intelligence s’ha dissenyat per proporcionar‑te intel·ligència personalitzada sense que Apple recopili cap dada personal.\n\nPer proporcionar‑te una experiència personalitzada, l’Apple Intelligence aprofita la informació que troba al dispositiu, com ara els pròxims esdeveniments del calendari i les apps que més utilitzes. L’Apple Intelligence identifica les dades que cal proporcionar al model generatiu perquè s’adapti a les teves necessitats, sense que Apple hi accedeixi ni les desi.\n\nSempre que sigui possible, els models de l’Apple Intelligence s’executen localment perquè es puguin completar les tasques sense haver d’enviar dades fora del dispositiu. Per exemple, els resums de les previsualitzacions dels correus electrònics, dels missatges i de les notificacions els generen els models locals de l’Apple Intelligence. Tanmateix, pot ser que algunes vegades l’Apple Intelligence hagi d’utilitzar una potència de computació superior a la que pot proporcionar el dispositiu. Per fer aquestes tasques, l’Apple Intelligence envia les teves sol·licituds a la tecnologia de computació privada al núvol. La computació privada al núvol es un sistema d’intel·ligència basat en servidor que s’ha dissenyat per gestionar tasques més complexes tot protegint la teva privacitat. Per exemple, si utilitzes les eines d’escriptura per revisar o editar un correu electrònic, el dispositiu enviarà el missatge a la computació privada al núvol perquè el revisi o l’editi un model basat en servidor.\n\nQuan inicies una tasca de l’Apple Intelligence, un model del dispositiu analitza si es pot completar localment. Si cal un model més complex basat en servidor, l’Apple Intelligence utilitza la computació privada al núvol per enviar només les dades necessàries per completar la sol·licitud, que es processaran en servidors amb xips d’Apple. Les dades que s’envien a la computació privada al núvol i els resultats que en retornen no es desen ni s’envien a Apple. Les dades es processen només per completar la sol·licitud i, després, se’n retornen els resultats de manera segura al dispositiu, sense desar-los a la computació privada al núvol. Quan el dispositiu envia una sol·licitud a la computació privada al núvol, Apple només recopila informació limitada sobre la sol·licitud, com ara la mida aproximada de la sol·licitud i la resposta, les funcions amb què s’ha fet la sol·licitud i el temps que ha tardat a completar-se. Aquestes dades no inclouen informació sobre el contingut de la sol·licitud ni el resultat retornat. Tampoc no permeten identificar-te ni es vinculen al compte d’Apple ni a cap altra dada que Apple pugui tenir sobre tu arran de l’ús que fas d’altres serveis d’Apple.\n\nSi vols activar el registre de transparència de l’Apple Intelligence al dispositiu per saber com es processen les dades, ves a l’app Configuració > Privacitat i seguretat > Informe de l’Apple Intelligence i activa l’opció “Registra l’activitat de l’Apple Intelligence”. Després de fer una sol·licitud, pots exportar-ne un arxiu."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence est un système de modèles d’IA génératifs, conçu spécialement pour vous aider à accomplir vos tâches quotidiennes. Apple Intelligence peut notamment vous aider à réécrire ou à corriger vos courriels et vos notes, à résumer vos messages non lus, à créer des souvenirs personnalisés dans Photos et à générer des images. La technologie Apple Intelligence a été conçue pour mettre à votre disposition des capacités d’intelligence personnalisée sans qu’Apple recueille vos données personnelles.\n\nPour proposer une expérience personnalisée, Apple Intelligence utilise certaines informations contenues sur votre appareil, y compris dans vos apps, comme les événements à venir dans votre calendrier et les apps que vous utilisez le plus fréquemment. Apple Intelligence identifie les données à fournir au modèle génératif pour vous assister de façon optimale sans qu’Apple n’ait à conserver vos données ni à y accéder.\n\nLorsque c’est possible, les modèles d’Apple Intelligence s’exécutent entièrement sur l’appareil pour que la tâche puisse s’accomplir sans qu’aucune donnée ne quitte votre appareil. Par exemple, lorsqu’Apple Intelligence vous propose des aperçus de résumés de vos courriels, messages et notifications, ces derniers sont générés par des modèles exécutés sur votre appareil. Toutefois, Apple Intelligence doit parfois faire appel à d’autres modèles qui requièrent plus de puissance de calcul que celle possible sur votre appareil. Pour ces tâches, Apple Intelligence envoie vos demandes à l’infrastructure infonuagique privée. L’infrastructure infonuagique privée est un système d’intelligence sur serveur conçu pour prendre en charge des demandes plus complexes tout en protégeant votre confidentialité. Par exemple, lorsque vous utilisez les outils d’écriture pour corriger ou modifier un courriel, votre appareil peut envoyer ce dernier à l’infrastructure infonuagique privée pour communiquer avec un modèle sur serveur qui effectuera les corrections ou les modifications.\n\nLorsque vous commencez une tâche avec Apple Intelligence, un modèle exécuté sur votre appareil examine si ce dernier peut effectuer cette tâche. Si l’utilisation d’un modèle sur serveur plus important est nécessaire, Apple Intelligence utilise l’infrastructure infonuagique privée pour ne transmettre que les données essentielles au traitement de votre demande à des serveurs équipés d’une puce Apple. Les données transmises à l’infrastructure infonuagique privée et renvoyées par cette dernière ne sont ni conservées ni accessibles par Apple. Les données sont traitées dans le seul but de répondre à votre demande. Les résultats sont ensuite renvoyés sécuritairement vers votre appareil sans être conservés par l’infrastructure infonuagique privée. Lorsque votre appareil envoie une demande à l’infrastructure infonuagique privée, Apple recueille uniquement certaines informations liées à votre demande, comme la taille approximative de la demande et de sa réponse, les fonctionnalités utilisées pour traiter la demande et le délai écoulé pour traiter cette dernière. Ces données n’incluent aucune information liée au contenu de votre demande ou du résultat renvoyé. Elles ne sont ni identifiables ni liées à des données qu’Apple pourrait avoir obtenues par votre utilisation d’autres services Apple.\n\nPour voir comment vos données sont traitées, vous pouvez activer l’historique de transparence pour Apple Intelligence sur votre appareil en accédant à Réglages > Confidentialité et sécurité > Rapport d’Apple Intelligence, puis en activant « Enregistrer l’activité d’Apple Intelligence ». Une fois les demandes effectuées, vous pouvez exporter un fichier."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence是生成式AI模型系統，專門設計來協助你搞定大小事。Apple Intelligence可協助你重寫或校對你的電子郵件或備忘錄、為錯過的訊息生成摘要、在「照片」中製作自訂回憶、生成影像等等。Apple Intelligence的設計讓Apple無需收集你的個人化資料即可提供個人化的智慧技術。\n\n為了提供自訂體驗，Apple Intelligence會使用裝置上的資訊，包含跨App的資訊，例如即將到來的行事曆行程和常用App。無需Apple取用或儲存你的資料，Apple Intelligence即會辨識為了提供你最佳協助，需要提供至生成式模型的資料。\n\nApple Intelligence模型會盡量完全在裝置端執行，讓資料不用離開裝置即可完成作業。例如，當Apple Intelligence提供電子郵件、訊息和通知的摘要預覽時，這些摘要是由裝置端模型生成。但有些時候Apple Intelligence要運用的模型超過你裝置可以自行提供的運算能力。針對這些作業，Apple Intelligence會將你的要求傳送至「私密雲端運算」。「私密雲端運算」是伺服器端的智慧系統，設計來處理更複雜的要求，同時保護你的隱私權。例如當你使用「書寫工具」來校對或編輯電子郵件，你的裝置可能會將電子郵件傳送至「私密雲端運算」，以供伺服器端模型進行校對或編輯。\n\n當你開始一項Apple Intelligence作業時，在裝置上執行的模型會分析作業是否可以在裝置端完成。如需較大型的伺服器端模型，Apple Intelligence會使用「私密雲端運算」來傳送只與要求相關的資料，以便在Apple晶片伺服器上處理。系統不會儲存傳送至「私密雲端運算」及由「私密雲端運算」傳回的資料，Apple也無法取用該資料。系統只會處理該資料來完成你的要求，之後結果會安全地傳回到你的裝置且不會由「私密雲端運算」保留。當你的裝置將要求傳送至「私密雲端運算」，Apple只會收集與要求相關的有限資訊，例如要求和回應的約略大小、要求使用的功能以及要求花了多少時間完成。此資料不會包含任何與你要求內容相關的資訊或傳回的結果。資料無法用來識別身分，也不會與你的「Apple帳號」或Apple可能取自於你使用其他Apple服務的其他資料連結。\n\n你可以在裝置上開啟Apple Intelligence的透明度記錄，以查看你的資料處理方式，請前往「設定」>「隱私權與安全性」>「Apple Intelligence報告」，並開啟「記錄Apple Intelligence活動」。提出要求後，你可以輸出檔案。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence 是一套專門協助你處理日常任務的生成式 AI 模型系統。Apple Intelligence可以協助你重寫或校對電郵或備忘錄，為未讀訊息提供摘要，在「相片」中製作自訂回憶，生成影像等。Apple Intelligence是為提供個人化智能服務而設計，而Apple不會收集你的個人資料。\n\n為了提供自訂體驗，Apple Intelligence會使用裝置上的資料，包括App中的資料，例如即將來臨的日曆行程和常用的App。Apple Intelligence會識別出要向生成模型提供的必要資料，從而以最佳方式協助你，而Apple不會取用或儲存這些資料。\n\n如可以，Apple Intelligence模型會完全在裝置上運行，以便在資料不離開裝置的情況下完成任務。例如，當Apple Intelligence為你提供電郵、訊息和通知的預覽摘要時，這些摘要是由裝置上的模型所生成的。然而，有時Apple Intelligence需要利用比你的裝置自身計算能力更高的模型。對於這些任務，Apple Intelligence會將你的要求傳送至「私密雲端運算」。「私密雲端運算」是一套基於伺服器的智能系統，為處理更複雜的要求而設計，同時保護你的私隱。例如，當你使用「寫作工具」校對或編輯電郵時，你的裝置可能會將電郵傳送至「私密雲端運算」，以便基於伺服器的模型進行校對或編輯。\n\n當你啟動Apple Intelligence任務時，裝置上的模型會分析該任務是否可以在裝置上完成。如果需要更大型基於伺服器的模型，Apple Intelligence會使用「私密雲端運算」來只將與你要求相關的資料傳送至Apple晶片伺服器進行處理。傳送至「私密雲端運算」並返回的資料不會儲存或提供予Apple。這些資料只會用來滿足你的要求，之後結果會安全地返回到你的裝置，並不會由「私密雲端運算」保留。當你的裝置向「私密雲端運算」傳送要求時，Apple只會收集有關要求的有限資料，例如請求和回應的大致大小、要求使用的功能以及要求完成所需的時間。此資料不包括要求內容或返回結果的任何資料。此資料無法被識別或連繫至你的Apple帳户或Apple可能從你使用其他Apple服務時所得到的其他資料。\n\n你可以在裝置上啟用Apple Intelligence的透明度記錄，以查看你的資料處理方式，前往「設定」>「私隱與保安」>「Apple Intelligence報告」並啟用「記錄Apple Intelligence活動」。要求完成後，你可以輸出檔案。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence är ett system med generativa AI-modeller som är specialanpassade för att hjälpa dig med vardagssysslor. Apple Intelligence kan hjälpa dig att skriva om eller korrekturläsa e-post eller anteckningar, sammanfatta missade samtal, skapa anpassade minnen i Bilder, skapa bilder med mera. Apple Intelligence är utformat för att tillhandahålla personanpassad intelligens utan att Apple samlar in dina personuppgifter.\n\nApple Intelligence använder information från enheten, inklusive mellan appar, t.ex. kommande kalenderaktiviteter och appar som du använder ofta, till att ge dig en personanpassad upplevelse. Apple Intelligence identifierar de data som krävs för att tillhandahålla en generativ modell för att hjälpa dig på bästa sätt utan att Apple kräver tillgång till eller lagrar dina data.\n\nI den mån det är möjligt körs Apple Intelligence-modeller helt på enheten så att en uppgift kan slutföras utan att data lämnar din enhet. När Apple Intelligence till exempel tillhandahåller förhandsvisade sammanfattningar av e-post, meddelanden och notiser genereras dessa sammanfattningar av modeller på enheten. Men det finns tillfällen då Apple Intelligence måste använda sig av en modell som kräver mer beräkningskraft än enheten kan tillhandahålla på egen hand. För dessa uppgifter skickar Apple Intelligence dina förfrågningar till Private Cloud Compute. Private Cloud Compute är ett serverbaserat intelligenssystem som utformats till att hantera komplicerade förfrågningar medan din integritet skyddas. När du t.ex. använder Skrivverktyg till att korrekturläsa eller redigera ett mejl kan din enhet skicka mejlet till Private Cloud Compute så att en server-baserad modell får sköta korrekturläsningen eller redigeringen.\n\nNär du startar en uppgift med Apple Intelligence analyserar en modell som körs på enheten om uppgiften kan utföras enbart på enheten. Om en större, serverbaserad modell krävs, använder Apple Intelligence Private Cloud Compute till att skicka data som enbart är relevant för dina förfrågningar så att de bearbetas på servrar med Apple Silicon. De data som skickas till och från Private Cloud Compute kommer inte att lagras eller göras tillgängliga för Apple. Data bearbetas endast för att uppfylla dina förfrågningar, därefter skickas resultaten tillbaka till enheten på ett säkert sätt och behålls inte av Private Cloud Compute. När enheten skickar en förfrågan till Private Cloud Compute samlar Apple endast in begränsad information om förfrågningen, till exempel den ungefärliga storleken på förfrågningen och dess svar, vilka funktioner som används för förfrågningen och hur lång det tar att slutföra förfrågningen. Dessa data inkluderar inte någon information om innehållet i din förfrågan eller det resultat den gav. Den är inte identifierbar eller inte länkad till ditt Apple‑konto eller andra data som Apple kan ha fått från din användning av andra Apple-tjänster.\n\nDu kan slå på transparensloggar för Apple Intelligence på enheten och se hur dina data bearbetas genom att öppna Inställningar > Integritet och säkerhet > Apple Intelligence-rapport och slå på Registrera Apple Intelligence-aktivitet. Du kan exportera en fil när förfrågningar har gjorts."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence er et system av generative KI-modeller som er spesialisert for å hjelpe deg med rutinemessige oppgaver. Apple Intelligence kan hjelpe deg med å skrive og korrekturlese e‑poster eller notater, oppsummere uleste meldinger, tilpasse minner i Bilder-appen, generere nye bilder og mer. Apple Intelligence er utviklet for å gi personlig tilpasset smart funksjonalitet uten at Apple samler inn personlige data.\n\nApple Intelligence bruker informasjon på enheten din, som kommende hendelser i kalenderen eller ofte brukte apper, for å gi personlig tilpasset funksjonalitet. Apple Intelligence identifiserer hvilke data en generativ modell trenger for å gi best mulig hjelp, uten at Apple får tilgang til eller lagrer disse dataene.\n\nNår det er mulig, vil Apple Intelligence-modellene kun kjøre lokalt slik at oppgaven utføres uten at data forlater enheten. Når Apple Intelligence for eksempel leverer en oppsummert forhåndsvisning av e‑poster, meldinger og varslinger, blir disse oppsummeringene generert av modeller lokalt på enheten. Noen ganger trenger Apple Intelligence imidlertid å bruke en modell som krever mer utregningskraft enn det enheten klarer å levere selv. For slike oppgaver vil Apple Intelligence sende forespørselen til Private Cloud Compute. Private Cloud Compute er et tjenerbasert intelligent system utviklet for å behandle mer komplekse forespørsler samtidig som det ivaretar personvernet ditt. Når du for eksempel bruker Skriveverktøy til å korrekturlese eller redigere en e‑post, vil enheten din kanskje sende e‑posten til Private Cloud Compute slik at en tjenerbasert modell kan utføre jobben.\n\nNår du setter i gang en oppgave for Apple Intelligence, vil en modell på enheten analysere om oppgaven kan utføres lokalt. Hvis det trengs en større, tjenerbasert modell, vil Apple Intelligence bruke Private Cloud Compute til å kun sende relevante data til behandling på tjenere med en Apple-chip. Dataene som sendes til og returneres av Private Cloud Compute, blir ikke lagret hos eller gjort tilgjengelig for Apple. Dataene behandles kun for å utføre forespørselen, og resultatet returneres deretter trygt tilbake til enheten din og oppbevares ikke av Private Cloud Compute. Når enheten sender en forespørsel til Private Cloud Compute, vil Apple kun samle inn begrenset informasjon om forespørselen, som omtrentlig størrelse og svar på forespørselen, hvilke funksjoner som blir benyttet, og hvor lang tid det tar å fullføre forespørselen. Dataene vil ikke inkludere informasjon om innholdet i forespørselen eller resultatet. Informasjonen kan ikke identifisere deg eller knyttes til Apple‑kontoen din eller andre data som Apple besitter fra din bruk av andre Apple-tjenester.\n\nDu kan slå på synlighetslogger for Apple Intelligence på enheten din for å se hvordan dataene dine behandles, ved å gå til Innstillinger > Personvern og sikkerhet > Apple Intelligence-rapport og slå på Registrer Apple Intelligence-aktivitet. Du kan eksportere en fil etter at forespørsler er utført."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence ऐसे जनरेटिव AI मॉडल की एक प्रणाली है जो आपके रोज़मर्रा के कामों में आपकी मदद करने में विशेष रूप से सक्षम होते हैं। Apple Intelligence अपने ईमेल या नोट्स फिर से लिखने या उनका प्रूफ़रीड करने, छूट गए संदेशों का सारांश तैयार करने, तस्वीर ऐप में कस्टम यादें बनाने, इमेज जनरेट करने आदि में आपकी मदद कर सकता है। Apple Intelligence को ऐसे बनाया गया है कि वह आपको वैयक्तिकृत इंटेलिजेंस प्रदान करता है और इसके लिए Apple आपका डेटा एकत्रित नहीं करता है।\n\nकस्टम अनुभव प्रदान करने के लिए Apple Intelligence आपके आगामी कैलेंडर इवेंट और अकसर इस्तेमाल किए जाने वाले ऐप्स जैसी आपके डिवाइस पर मौजूद सभी ऐप्स की जानकारी का इस्तेमाल करता है। आपकी सबसे अच्छी तरह मदद करने के लिए Apple Intelligence उस डेटा की पहचान करता है जो जनरेटिव मॉडल के लिए ज़रूरी होता है लेकिन वह डेटा संग्रहित नहीं किया जाता है और न ही Apple उसे ऐक्सेस कर सकता है।\n\nअगर संभव हो, तो Apple Intelligence मॉडल पूरी तरह डिवाइस पर चलाए जाते हैं ताकि डेटा को आपके डिवाइस से बाहर भेजे बिना ही काम पूरा किया जा सके। उदाहरण के लिए, जब Apple Intelligence आपको आपके ईमेल. संदेशों और सूचनाओं के प्रीव्यू सारांश प्रदान करता है, तो ये सारांश ऑन-डिवाइस मॉडल द्वारा जनरेट किए जाते हैं। हालाँकि, कभी-कभी Apple Intelligence को ऐसे मॉडल की मदद लेनी पड़ सकती है जिसके लिए ज़रूरी कंप्यूटेशनल पावर आपका डिवाइस ख़ुद प्रदान नहीं कर सकता है। इन कामों के लिए Apple Intelligence आपके अनुरोध प्राइवेट क्लाउड कंप्यूट को भेजता है। प्राइवेट क्लाउड कंप्यूट एक सर्वर आधारित इंटेलिजेंस प्रणाली है जो आपकी गोपनीयता की सुरक्षा करते हुए ज़्यादा जटिल अनुरोधों पर काम करती है। उदाहरण के लिए, जब आप कोई ईमेल प्रूफ़रीड करने या संपादित करने के लिए लेखन टूल का इस्तेमाल ^[करते हैं](inflect: true), तो हो सकता है कि सर्वर आधारित मॉडल पर प्रूफ़रीडिंग या संपादन करने के लिए आपका डिवाइस वह ईमेल प्राइवेट क्लाउड कंप्यूट को भेजे।\n\nजब आप कोई Apple Intelligence कार्य शुरू ^[करते हैं](inflect: true), तो आपके डिवाइस पर चलने वाला एक मॉडल या विश्लेषण करता है कि वह कार्य डिवाइस पर संपन्न किया जा सकता है या नहीं। अगर ज़्यादा बड़े, सर्वर आधारित मॉडल की ज़रूरत हो, तो Apple Intelligence द्वारा प्राइवेट क्लाउड कंप्यूट का इस्तेमाल करके Apple Silicon सर्वर पर प्रोसेस करने के लिए केवल वही डेटा भेजा जाता है जो आपके अनुरोध के लिए प्रासंगिक होता है। प्राइवेट क्लाउड कंप्यूट को भेजा जाने वाला या उससे प्राप्त किया जाने वाला डेटा संग्रहित नहीं किया जाता है न ही Apple उसे ऐक्सेस कर सकता है। डेटा की प्रोसेसिंग केवल आपके अनुरोधों पर काम करने के लिए की जाती है, जिसके बाद परिणाम सुरक्षित रूप से आपके डिवाइस पर वापस भेज दिए जाते हैं और प्राइवेट क्लाउड कंप्यूट उन्हें अपने पास नहीं रखता है। जब आपका डिवाइस प्राइवेट क्लाउड कंप्यूट पर कोई जानकारी भेजता है, तो Apple अनुरोध और उत्तर के अनुमानित आकार, अनुरोध के लिए किन-किन फ़ीचर का इस्तेमाल किया गया और अनुरोध पूरा करने में कितना समय लगा जैसी उस अनुरोध से जुड़ी कुछ सीमित जानकारी एकत्रित करता है। इस डेटा में आपके अनुरोध या वापस भेजे गए परिणाम के कॉन्टेंट संबंधी जानकारी शामिल नहीं होती है। इसकी पहचान नहीं की जा सकती है या आपके Apple खाते या Apple की अन्य सेवाओं के आपके द्वारा इस्तेमाल के परिणामस्वरूप Apple को मिले अन्य डेटा से लिंक नहीं किया जाता है।\n\nसेटिंग्ज़ > गोपनीयता और सुरक्षा > Apple Intelligence रिपोर्ट में जाकर और Apple Intelligence ऐक्टिविटी रिकॉर्ड करें को चालू करके आप अपने डिवाइस पर Apple Intelligence के लिए ट्रांसपरेंसी लॉगिंग चालू कर ^[सकते हैं](inflect: true) और देख ^[सकते हैं](inflect: true) कि आपका डेटा कैसे प्रोसेस किया जाता है। अनुरोध करने के बाद आप फ़ाइल एक्सपोर्ट कर ^[सकते हैं](inflect: true)।"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence er et system af generative AI-modeller, der er specielt tilpasset til at hjælpe dig med dagligdagens opgaver. Apple Intelligence kan hjælpe dig med at omskrive eller korrekturlæse e-mails og noter, opsummere oversete beskeder, oprette brugerdefinerede minder i Fotos, generere billeder m.m. Apple Intelligence er designet til at levere personlig intelligens, uden at Apple indsamler dine personlige data.\n\nApple Intelligence bruger oplysninger fra enheden, herunder på tværs af apps, f.eks kommende kalenderbegivenheder og apps, du ofte bruger, for at give dig en personlig oplevelse. Apple Intelligence identificerer de data, der kræves for at frembringe en generativ model, der bedst muligt kan hjælpe dig, uden at Apple har adgang til eller opbevarer dine data.\n\nNår det er muligt, afvikles Apple Intelligence-modeller udelukkende på enheden, så en opgave kan udføres, uden at data forlader din enhed. Når Apple Intelligence f.eks. laver resumeer over dine e-mails, beskeder og notifikationer, genereres disse resumeer af modeller lokalt på enheden. Der er dog tidspunkter, hvor Apple Intelligence er nødt til at bruge en model, der kræver mere computerkraft, end enheden kan klare alene. For at løse denne slags opgaver sender Apple Intelligence din anmodning til Private Cloud Compute. Private Cloud Compute er et serverbaseret intelligenssystem udviklet til at håndtere mere komplekse anmodninger, samtidig med at din anonymitet beskyttes. Når du f.eks. bruger Skriveværktøjer til at læse korrektur på eller redigere en e-mail, kan din enhed sende e-mailen til Private Cloud Compute, hvor en serverbaseret model håndterer korrekturlæsningen eller redigeringen.\n\nNår du starter en opgave med Apple Intelligence, analyserer en model, der afvikles på enheden, om opgaven kan udføres kun på enheden. Hvis en større, serverbaseret model kræves, bruger Apple Intelligence Private Cloud Compute til at sende de nødvendige data, der er relevante for din anmodning, til behandling på Apple Silicon-servere. Data, der sendes til og returneres af Private Cloud Compute, opbevares ikke, og Apple har ikke adgang til dem. Dataene behandles kun for at imødekomme din anmodning, hvorefter resultaterne returneres på sikker vis til din enhed, og de opbevares ikke af Private Cloud Compute. Når din enhed sender en anmodning til Private Cloud Compute, indsamler Apple kun begrænsede oplysninger om anmodningen, f.eks. den omtrentlige størrelse af anmodningen og svaret, hvilke funktioner der bruges til anmodningen, og hvor lang tid det tager at fuldføre anmodningen. Disse data omfatter ingen oplysninger om indholdet i din anmodning eller det sendte resultat. Disse data kan ikke identificere dig og er ikke knyttet til din Apple‑konto eller andre data, Apple kan have fra din brug af andre Apple-tjenester.\n\nDu kan slå gennemskuelig logning for Apple Intelligence til på din enhed, for at se hvordan dine data behandles, ved at gå til Indstillinger > Anonymitet & sikkerhed > Rapport over Apple Intelligence og slå Registrer aktivitet for Apple Intelligence til. Når du har foretaget en anmodning, kan du eksportere et arkiv."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence is a system of generative AI models that are specialized to help you with your everyday tasks. Apple Intelligence can help you rewrite or proofread your emails or notes, summarize your missed messages, create custom memories in Photos, generate images, and more. Apple Intelligence is designed to deliver personalized intelligence without Apple collecting your personal data.\n\nTo provide a customized experience, Apple Intelligence uses information on your device including across your apps, like your upcoming calendar events and your frequently used apps. Apple Intelligence identifies the data necessary to provide to a generative model in order to best assist you, without requiring access to or storage of the data by Apple.\n\nWhen possible, Apple Intelligence models run entirely on-device so that a task can be completed without data leaving your device. For example, when Apple Intelligence provides you with preview summaries of your emails, messages, and notifications, these summaries are generated by on-device models. There are times, however, when Apple Intelligence needs to leverage a model that requires more computational power than your device can provide on its own. For these tasks, Apple Intelligence sends your request to Private Cloud Compute. Private Cloud Compute is a server-based intelligence system designed to handle more complex requests while protecting your privacy. For example, when you use Writing Tools to proofread or edit an email, your device may send the email to Private Cloud Compute for a server-based model to do the proofreading or editing.\n\nWhen you initiate an Apple Intelligence task, a model running on your device analyzes whether the task can be completed on-device. If a larger, server-based model is required, Apple Intelligence uses Private Cloud Compute to send only data relevant to your request to be processed on Apple silicon servers. The data sent to and returned by Private Cloud Compute is not stored or made accessible to Apple. The data is processed only to fulfill your request, after which point the results are returned securely to your device and are not retained by Private Cloud Compute. When your device sends a request to Private Cloud Compute, Apple only collects limited information about the request, such as the approximate size of the request and response, which features are used for the request, and how long the request takes to complete. This data does not include any information about the content of your request or the returned result. It is not identifiable or linked to your Apple Account or other data Apple may have from your use of other Apple services.\n\nYou can turn on transparency logging for Apple Intelligence on your device to see how your data is processed by going to Settings > Privacy & Security > Apple Intelligence Report and turning on Record Apple Intelligence Activity. After requests are made, you can export a file."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ذكاء Apple هو نظام من نماذج الذكاء الاصطناعي التوليدية المتخصصة في مساعدتك في مهامك اليومية. بإمكان ذكاء Apple مساعدتك في إعادة كتابة أو تصحيح رسائل البريد الإلكتروني أو الملاحظات، وتلخيص الرسائل التي فاتتك، وإنشاء ذكريات مخصصة في الصور، وتوليد الصور، والمزيد. صُمِّم ذكاء Apple لتقديم ذكاء شخصي دون أن تقوم Apple بجمع بياناتك الشخصية.\n\nلتوفير تجربة مخصصة، يستخدم ذكاء Apple المعلومات الموجودة على جهازك بما في ذلك المعلومات الموجودة في تطبيقاتك، مثل أحداث التقويم القادمة والتطبيقات التي تستخدمها بشكل متكرر. يحدد ذكاء Apple البيانات اللازمة لتقديمها إلى نموذج توليدي من أجل مساعدتك بأفضل شكل ممكن، دون الحاجة إلى وصول Apple إلى البيانات أو تخزينها.\n\nعندما يكون ذلك ممكنًا، يتم تشغيل نماذج ذكاء Apple بالكامل على الجهاز للتمكن من إكمال المهمة دون أن تغادر البيانات جهازك. على سبيل المثال، عندما يوفر لك ذكاء Apple ملخصات معاينة لرسائلك الإلكترونية ورسائلك وإشعاراتك، يتم توليد هذه الملخصات بواسطة نماذج على الجهاز. ومع ذلك، هناك أوقات يحتاج فيها ذكاء Apple إلى الاستفادة من نموذج يتطلب قوة حوسبة أكبر مما يستطيع جهازك توفيره بمفرده. لأداء هذه المهام، يرسل ذكاء Apple طلبك إلى \"الحوسبة السحابية الخاصة\". \"الحوسبة السحابية الخاصة\" هي عبارة عن نظام ذكاء اصطناعي يعتمد على خوادم، وهو مصمم للتعامل مع الطلبات الأكثر تعقيدًا مع حماية خصوصيتك. على سبيل المثال، عندما تستخدم أدوات الكتابة لتصحيح أو تعديل رسالة بريد إلكتروني، قد يرسل جهازُك البريدَ الإلكتروني إلى \"الحوسبة السحابية الخاصة\" للمراجعة أو التعديل باستخدام نموذج يعتمد على خوادم.\n\nعند بدء مهمة باستخدام ذكاء Apple، يحلل النموذج الذي يعمل على جهازك ما إذا كان من الممكن إكمال المهمة على الجهاز أم لا. إذا كان من الضروري استخدام نموذج أكبر يعتمد على الخادم، يستخدم ذكاء Apple \"الحوسبة السحابية الخاصة\" لإرسال البيانات ذات الصلة بطلبك فقط ليتم معالجتها على خوادم مزودة برقاقات Apple. لا يتم تخزين البيانات المرسلة إلى نظام الحوسبة السحابية الخاصة والواردة منه أو إتاحتها لشركة Apple. تتم معالجة البيانات فقط لتلبية طلبك، وبعد ذلك يتم إرجاع النتائج بشكل آمن إلى جهازك ولا يتم الاحتفاظ بها على نظام الحوسبة السحابية الخاصة. عندما يرسل جهازك طلبًا إلى نظام الحوسبة السحابية الخاصة، تجمع Apple معلومات محدودة فقط حول الطلب، مثل الحجم التقريبي للطلب والاستجابة، والميزات المستخدمة في الطلب، ومدة اكتمال الطلب. لا تتضمن هذه البيانات أي معلومات حول محتوى طلبك أو النتيجة العائدة. ولا يمكن التعرف على هذه المعلومات أو ربطها بحساب Apple أو البيانات الأخرى التي قد تكون لدى Apple من خلال استخدامك لخدمات Apple الأخرى.\n\nيمكنك تشغيل تسجيل الشفافية لذكاء Apple على جهازك لمعرفة كيفية معالجة بياناتك بالانتقال إلى الإعدادات > الخصوصية والأمن > تقرير ذكاء Apple، وتشغيل تسجيل نشاط ذكاء Apple. بعد تقديم الطلبات، يمكنك تصدير الملف."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence to system modeli generatywnych AI wyspecjalizowanych w pomaganiu Ci w codziennych zadaniach. Apple Intelligence może pomagać Ci przepisywać lub sprawdzać Twoje wiadomości email i notatki, streszczać nieodebrane wiadomości, tworzyć własne wspomnienia w Zdjęciach, generować obrazki i nie tylko. Apple Intelligence zaprojektowano z myślą o spersonalizowanym działaniu niewymagającym gromadzenia przez Apple Twoich danych.\n\nW celu zapewnienia spersonalizowanego działania Apple Intelligence używa informacji na Twoim urządzeniu obejmujących różne aplikacje, takich jak nadchodzące wydarzenia kalendarza lub lista najczęściej używanych aplikacji. Apple Intelligence identyfikuje dane, które muszą zostać przekazane do modelu generatywnego, aby w najlepszy sposób udzielić Ci pomocy bez konieczności udostępniania tych danych lub przechowywania ich przez Apple.\n\nGdy tylko jest to możliwe, modele Apple Intelligence działają w pełni na urządzeniu, dzięki czemu podczas wykonywania zadań dane nie opuszczają Twojego urządzenia. Na przykład, gdy Apple Intelligence tworzy streszczenia wiadomości email, wiadomości tekstowych i powiadomień, streszczenia te są generowane przez modele działające na urządzeniu. W niektórych sytuacjach Apple Intelligence musi jednak użyć modelu wymagającego większej mocy obliczeniowej, niż może zapewnić Twoje urządzenie. Na potrzeby tych zadań Apple Intelligence wysyła Twoje żądanie do prywatnej chmury obliczeniowej. Prywatna chmura obliczeniowa to system inteligentny działający na serwerach, przeznaczony do obsługi bardziej złożonych żądań przy jednoczesnej ochronie Twojej prywatności. Na przykład, gdy używasz funkcji Narzędzia pisania do sprawdzenia lub edycji wiadomości email, Twoje urządzenie może wysłać tę wiadomość email do prywatnej chmury obliczeniowej, aby sprawdzenie lub edycja zostało przeprowadzone przez model działający na serwerze.\n\nGdy rozpoczynasz zadanie Apple Intelligence, model działający na Twoim urządzeniu analizuje, czy może ono zostać ukończone na urządzeniu. Jeśli niezbędne jest użycie większego modelu działającego na serwerze, Apple Intelligence używa prywatnej chmury obliczeniowej i wysyła tylko dane dotyczące Twojego polecenia w celu przetworzenia ich na serwerach zbudowanych w oparciu o układy scalone Apple. Dane wysyłane do prywatnej chmury obliczeniowej i zwracane z niej nie są przechowywane przez Apple ani udostępniane Apple. Dane te są przetwarzane wyłącznie w celu wykonania Twojego żądania. Wyniki są zwracane w bezpieczny sposób na Twoje urządzenie i nie są następnie przechowywane w prywatnej chmurze obliczeniowej. Gdy Twoje urządzenie wysyła żądanie do prywatnej chmury obliczeniowej, Apple gromadzi tylko ograniczone dane dotyczące tego żądania, takie jak przybliżona wielkość żądania i odpowiedzi, funkcje używane przez żądanie oraz czas przetworzenia żądania. Dane te nie obejmują żadnych informacji o zawartości żądania ani zawartości zwracanego wyniku. Nie pozwalają one na zidentyfikowanie Ciebie oraz nie są połączone z Twoim kontem Apple ani innymi danymi, które Apple może posiadać z tytułu korzystania przez Ciebie z innych usług Apple.\n\nMożesz włączyć dzienniki transparencji Apple Intelligence na swoim urządzeniu, aby sprawdzić, jak Twoje dane są przetwarzane. W tym celu przejdź do Ustawień, stuknij w Prywatność i ochrona > Raport Apple Intelligence i włącz Rejestruj aktywność Apple Intelligence. Po użyciu żądań możesz wyeksportować plik."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence คือระบบของโมเดลเจเนอเรทีฟ AI ที่ออกแบบมาเพื่อช่วยคุณในการทำงานประจำวันโดยเฉพาะ Apple Intelligence ช่วยให้คุณสามารถเขียนโน้ตใหม่หรือตรวจทานอีเมลหรือโน้ตของคุณ สรุปข้อความที่ไม่ได้รับ สร้างความทรงจำแบบกำหนดเองในแอปรูปภาพ สร้างภาพ และอื่นๆ ได้ Apple Intelligence ได้รับการออกแบบมาให้มอบความฉลาดสำหรับคุณโดยเฉพาะโดยที่ Apple จะไม่เก็บรวบรวมข้อมูลส่วนบุคคลของคุณ\n\nในการมอบประสบการณ์ที่ปรับแต่งให้เข้ากับตัวคุณ Apple Intelligence จะใช้ข้อมูลบนอุปกรณ์ของคุณ รวมถึงในแอปต่างๆ ของคุณ เช่น กิจกรรมปฏิทินที่ใกล้จะมีขึ้นและแอปที่คุณใช้บ่อย Apple Intelligence ระบุข้อมูลที่จำเป็นต้องใช้สำหรับโมเดลเจเนอเรทีฟเพื่อให้ช่วยเหลือคุณได้ดีที่สุดโดยที่ Apple ไม่ต้องเข้าถึงหรือจัดเก็บข้อมูล\n\nหากเป็นไปได้ โมเดล Apple Intelligence จะทำงานบนอุปกรณ์ทั้งหมด เพื่อให้สามารถทำงานให้สำเร็จได้โดยที่ข้อมูลไม่หลุดออกจากอุปกรณ์ของคุณ ตัวอย่างเช่น เมื่อ Apple Intelligence ให้สรุปตัวอย่างของอีเมล ข้อความ และการแจ้งเตือนแก่คุณ สรุปเหล่านี้จะสร้างขึ้นโดยโมเดลบนอุปกรณ์ อย่างไรก็ตาม บางครั้ง Apple Intelligence จำเป็นต้องใช้ประโยชน์จากโมเดลที่ต้องการพลังการประมวลผลมากกว่าที่อุปกรณ์ของคุณสามารถให้ได้ด้วยตัวเอง สำหรับงานเหล่านี้ Apple Intelligence จะส่งคำขอของคุณไปยัง Private Cloud Compute โดย Private Cloud Compute เป็นระบบอัจฉริยะบนเซิร์ฟเวอร์ที่ออกแบบมาเพื่อจัดการคำขอที่ซับซ้อนมากขึ้นในขณะที่ปกป้องความเป็นส่วนตัวของคุณด้วย ตัวอย่างเช่น เมื่อคุณใช้เครื่องมือการเขียนเพื่อตรวจทานหรือแก้ไขอีเมล อุปกรณ์ของคุณอาจส่งอีเมลไปยัง Private Cloud Compute สำหรับโมเดลบนเซิร์ฟเวอร์เพื่อทำการตรวจทานหรือแก้ไข\n\nเมื่อคุณเริ่มต้นงาน Apple Intelligence โมเดลที่ทำงานบนอุปกรณ์ของคุณจะวิเคราะห์ว่าสามารถทำงานบนอุปกรณ์ได้หรือไม่ ถ้าต้องใช้โมเดลบนเซิร์ฟเวอร์ที่ใหญ่กว่า Apple Intelligence จะใช้ Private Cloud Compute เพื่อส่งเฉพาะข้อมูลที่เกี่ยวข้องกับคำขอของคุณเพื่อนำไปประมวลผลบนเซิร์ฟเวอร์ Apple Silicon ข้อมูลที่ส่งไปและส่งคืนโดย Private Cloud Compute จะไม่ถูกจัดเก็บหรือ Apple จะไม่มีสิทธิ์เข้าถึงข้อมูลนั้นได้ ข้อมูลจะได้รับการประมวลผลเพื่อตอบสนองคำขอของคุณเท่านั้น หลังจากนั้น ผลลัพธ์จะถูกส่งกลับไปยังอุปกรณ์ของคุณอย่างปลอดภัยและจะไม่ถูกเก็บรักษาไว้โดย Private Cloud Compute เมื่ออุปกรณ์ของคุณส่งคำขอไปยัง Private Cloud Compute แล้ว Apple จะเก็บรวบรวมข้อมูลเกี่ยวกับคำขอแบบจำกัดเท่านั้น เช่น ขนาดโดยประมาณของคำขอและการตอบกลับ คุณสมบัติที่ใช้สำหรับคำขอ และระยะเวลาที่ใช้ในการดำเนินการตามคำขอ ข้อมูลนี้ไม่รวมถึงข้อมูลเกี่ยวกับเนื้อหาของคำขอของคุณหรือผลลัพธ์ที่ส่งคืน ข้อมูลดังกล่าวไม่สามารถระบุตัวตนได้หรือไม่เชื่อมโยงกับบัญชี Apple ของคุณหรือข้อมูลอื่นที่ Apple อาจมีจากการใช้บริการอื่นๆ ของ Apple ของคุณได้\n\nคุณสามารถเปิดใช้การเก็บบันทึกการใช้งานความโปร่งใสสำหรับ Apple Intelligence บนอุปกรณ์ของคุณเพื่อดูว่าข้อมูลของคุณถูกประมวลผลอย่างไรได้โดยไปที่การตั้งค่า > ความเป็นส่วนตัวและความปลอดภัย > รายงาน Apple Intelligence และเปิดใช้บันทึกกิจกรรม Apple Intelligence หลังจากส่งคำขอแล้ว คุณจะสามารถส่งออกไฟล์ได้"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple智能是生成式AI模型系统，专门用于协助你完成日常事务。Apple智能可助你重写或校对电子邮件或备忘录，为错过的信息生成摘要，在“照片”中创建自定义回忆和生成图像等。Apple智能的设计可提供个性化智能，而Apple不会收集你的个人数据。\n\n为提供自定义体验，Apple智能会使用设备端信息，包括不同App中的信息，如临近日历日程和常用App。Apple智能会识别提供生成式模型的必要数据，以便为你带来最佳协助。Apple不会请求访问或储存该数据。\n\n如可能，Apple智能模型会完全在设备端运行，以便可在数据不离开设备的情况下完成任务。例如，当Apple智能为你提供电子邮件、信息和通知预览摘要时，这些摘要会通过设备端模型生成。但是，有时Apple智能需要利用比设备自身可提供算力更高的模型。对于这些任务，Apple智能会将请求发送至专用云计算。专用云计算是基于服务器的智能系统，设计用于处理较为复杂的请求，同时保护隐私。例如，使用写作工具校对或编辑电子邮件时，设备可能会将电子邮件发送至专用云计算，以便基于服务器的模型完成校对或编辑。\n\n发起Apple智能任务时，在设备上运行的模型会分析该任务是否可在设备端完成。如需更大的、基于服务器的模型，Apple智能会使用专用云计算，仅将与请求相关的数据发送至Apple芯片服务器进行处理。Apple不会储存也无法访问发送至专用云计算和由其返回的数据。数据处理仅为实现请求。完成后，结果会安全返回你的设备，不会由专用云计算保存。设备将请求发送至专用云计算时，Apple仅会收集请求相关有限信息，如请求和回应的大致大小，请求所用功能，及完成请求用时。此数据不包括任何与请求或返回结果内容相关信息。此数据无法识别个人身份，也不会与Apple账户或其他Apple可能通过你使用其他Apple服务获得的数据关联。\n\n你可以在设备上为Apple智能打开透明度记录，前往“设置”>“隐私与安全性”>“Apple智能报告”并打开“记录Apple智能活动”，即可查看你数据的处理方式。提出请求后，你可以导出文件。"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence is a system of generative AI models that are specialised to help you with your everyday tasks. Apple Intelligence can help you rewrite or proofread your emails or notes, summarise your missed messages, create custom memories in Photos, generate images and more. Apple Intelligence is designed to deliver personalised intelligence without Apple collecting your personal data.\n\nTo provide a customised experience, Apple Intelligence uses information on your device including across your apps, like your upcoming calendar events and your frequently used apps. Apple Intelligence identifies the data necessary to provide to a generative model in order to best assist you, without requiring access to or storage of the data by Apple.\n\nWhen possible, Apple Intelligence models run entirely on your device so a task can be completed without data leaving the device. For example, when Apple Intelligence provides you with preview summaries of your emails, messages and notifications, these summaries are generated by on-device models. There are times, however, when Apple Intelligence needs to leverage a model that requires more computational power than your device can provide on its own. For these tasks, Apple Intelligence sends your request to Private Cloud Compute. Private Cloud Compute is a server-based intelligence system designed to handle more complex requests while protecting your privacy. For example, when you use Writing Tools to proofread or edit an email, your device may send the email to Private Cloud Compute for a server-based model to do the proofreading or editing.\n\nWhen you initiate an Apple Intelligence task, a model running on your device analyses whether the task can be completed on your device. If a larger, server-based model is required, Apple Intelligence uses Private Cloud Compute to send only data relevant to your request to be processed on Apple silicon servers. The data sent to and returned by Private Cloud Compute is not stored or made accessible to Apple. The data is processed only to fulfil your request, after which point the results are returned securely to your device and are not retained by Private Cloud Compute. When your device sends a request to Private Cloud Compute, Apple only collects limited information about the request, such as the approximate size of the request and response, which features are used for the request and how long the request takes to complete. This data does not include any information about the content of your request or the returned result. It is not identifiable or linked to your Apple Account or other data Apple may have from your use of other Apple services.\n\nYou can turn on transparency logging for Apple Intelligence on your device to see how your data is processed by going to Settings > Privacy & Security > Apple Intelligence Report and turning on Record Apple Intelligence Activity. After requests are made, you can export a file."
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„Apple Intelligence“ – tai generatyvinių dirbtinio intelekto modelių sistema, kurios tikslas padėti jums atlikti kasdienes užduotis. „Apple Intelligence“ gali padėti perrašyti ar suredaguoti el. laiškus ar užrašus, apibendrinti neperskaitytas žinutes, „Nuotraukose“ sukurti suasmenintus prisiminimus, generuoti vaizdus ir kt. „Apple Intelligence“ sukurta taip, kad „Apple“ nerinktų jūsų asmeninių duomenų, o teiktų suasmenintą dirbtinio intelekto paslaugą.\n\nSiekiant užtikrinti pritaikytą patirtį, „Apple Intelligence“ naudoja jūsų įrenginyje esančią informaciją, įskaitant informaciją apie jūsų programas, pvz., būsimus įvykius kalendoriuje ir dažnai naudojamas programas. Siekiant jums suteikti geriausią pagalbą, „Apple Intelligence“ nustato generatyviam modeliui teiktinus duomenis, nereikalaujant „Apple“ prieigos prie duomenų ir jų saugojimo.\n\nKai įmanoma, „Apple Intelligence“ modeliai veikia tik įrenginyje, kad užduotį būtų galima atlikti išlaikant duomenis jūsų įrenginyje. Pavyzdžiui, kai „Apple Intelligence“ jums pateikia el. laiškų, žinučių ir pranešimų santraukas, šios santraukos sukuriamos naudojant įrenginyje esančius modelius. Tačiau būna atvejų, kai „Apple Intelligence“ turi panaudoti modelį, kuriam reikia daugiau galios, nei jūsų įrenginys gali suteikti. Dėl šių užduočių „Apple Intelligence“ siunčia jūsų užklausą į „Privačią debesijos kompiuteriją“. „Privati debesijos kompiuterija“ – tai serveriu pagrįsta dirbtinio intelekto sistema, skirta sudėtingesnėms užklausoms spręsti, kartu apsaugant jūsų privatumą. Pavyzdžiui, naudojant „Rašymo įrankius“ el. laiškui koreguoti ar redaguoti, jūsų įrenginys gali išsiųsti el. laišką į „Privačią debesijos kompiuteriją“, kad serveriu grįstas modelis atliktų korektūrą ar redagavimą.\n\nInicijavus „Apple Intelligence“ užduotį, jūsų įrenginyje veikiantis modelis analizuoja, ar užduotį galima atlikti įrenginyje. Prireikus didesnio serveriu grįsto modelio, „Apple Intelligence“ naudoja „Privačią debesijos kompiuteriją“, siekiant į „Apple silicon“ serverius siųsti tik jūsų užklausai aktualius duomenis apdorojimui. Į „Privačią debesijos kompiuteriją“ siunčiami ir grąžinami duomenys nėra saugomi ar prieinami bendrovei „Apple“. Duomenys tvarkomi tik jūsų užklausai įvykdyti, po to rezultatai saugiai grąžinami į jūsų įrenginį, o „Privati debesijos kompiuterija“ jų nesaugo. Kai jūsų įrenginys siunčia užklausą į „Privačią debesijos kompiuteriją“, „Apple“ renka tik ribotą informaciją apie užklausą, pvz., apytikslį užklausos ir atsakymo dydį, kokios funkcijos naudojamos užklausai ir kiek laiko užtrunka užklausos vykdymas. Šiuose duomenyse nėra jokios informacijos apie jūsų užklausos turinį ar rezultatą. Jos negalima identifikuoti ar susieti su jūsų „Apple“ paskyra ar kitais duomenimis, kuriuos gali turėti bendrovė „Apple“ jums naudojantis kitomis „Apple“ paslaugomis.\n\nNorėdami matyti, kaip apdorojami jūsų duomenys, galite įjungti „Apple Intelligence“ skaidrumo registravimą savo įrenginyje, eidami į sritį „Nustatymai“ > „Privatumas ir sauga“ > „Apple Intelligence“ ataskaita“ ir įjungdami „Įrašyti „Apple Intelligence“ veiklą“. Pateikus užklausas, galite eksportuoti failą."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence es un sistema de modelos de IA generativa diseñado especialmente para ayudarte con tus tareas cotidianas. Apple Intelligence puede ayudarte a reescribir o corregir tus correos o notas, resumir los mensajes que no has leído, crear recuerdos personalizados en Fotos, generar imágenes y más. Apple Intelligence se diseñó para brindarte inteligencia personalizada sin necesidad de que Apple recopile tus datos personales.\n\nPara ofrecerte una experiencia personalizada, Apple Intelligence usa la información de todas las apps que se encuentran en tu dispositivo, como los eventos próximos en el calendario o las apps usadas frecuentemente. Apple Intelligence identifica los datos que debe proporcionar al modelo generativo con el fin de ofrecer asistencia más eficiente sin necesidad de que Apple acceda a estos datos ni los almacene.\n\nDe ser posible, los modelos de Apple Intelligence se ejecutan completamente en el dispositivo para realizar tareas sin que los datos salgan del dispositivo. Por ejemplo, los resúmenes de correos electrónicos, mensajes y notificaciones que proporciona Apple Intelligence se generan mediante los modelos de forma local en el dispositivo. Sin embargo, hay ocasiones en las que Apple Intelligence necesita utilizar un modelo que requiere más potencia computacional de la que puede proporcionar tu dispositivo. En estos casos, Apple Intelligence envía tu petición a Private Cloud Compute. Private Cloud Compute es un sistema de inteligencia basado en servidor diseñado para manejar peticiones más complejas y al mismo tiempo proteger tu privacidad. Por ejemplo, cuando usas las herramientas de escritura para corregir o editar un correo electrónico, tu dispositivo puede enviar el correo a Private Cloud Compute para que un modelo basado en servidor realice la corrección o edición.\n\nCuando inicias una tarea de Apple Intelligence, un modelo que se ejecuta en tu dispositivo analiza la tarea y determina si se puede completar en el dispositivo. Si se requiere un modelo basado en servidor de mayor capacidad, Apple Intelligence utilizará Private Cloud Compute para enviar solamente los datos relevantes para tu petición para que se procesen en servidores que funcionan con chips de Apple. Apple no almacena ni puede acceder a los datos que envía y recibe Private Cloud Compute. Estos datos se procesan únicamente con la finalidad de satisfacer tu petición (tras lo cual se devuelve la respuesta de forma segura a tu dispositivo) y no se conservan en Private Cloud Compute. Cuando tu dispositivo envía una petición a Private Cloud Compute, Apple sólo recopila información limitada sobre la petición, como el tamaño aproximado de la petición y de la respuesta, qué funciones se utilizan para la petición y cuánto tiempo tardará en completarse. Estos datos no incluyen ninguna información sobre el contenido de tu petición o el resultado devuelto. Además, no se vinculan a tu cuenta de Apple ni a otros datos que Apple pueda tener sobre el uso que haces de otros servicios de Apple.\n\nPuedes activar el registro de transparencia de Apple Intelligence en tu dispositivo para consultar cómo se procesan tus datos. Para ello, ve a Configuración > Privacidad y seguridad > Reporte de Apple Intelligence, y luego activa Registrar actividad de Apple Intelligence. Después de realizar peticiones, puedes exportar un archivo."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence ialah sistem model AI generatif yang disesuaikan untuk membantu anda dengan tugas seharian anda. Apple Intelligence boleh membantu anda menulis semula atau membaca pruf e‑mel atau nota anda, meringkaskan mesej belum dibaca anda, mencipta memori tersuai dalam Foto, menjana imej dan banyak lagi. Apple Intelligence direka bentuk untuk memberikan kecerdasan diperibadikan tanpa Apple mengumpulkan data peribadi anda.\n\nUntuk memberikan pengalaman tersuai, Apple Intelligence menggunakan maklumat pada peranti anda termasuk merentas app anda, seperti peristiwa kalendar akan datang anda dan app kerap digunakan anda. Apple Intelligence mengenal pasti data yang perlu diberikan kepada model generatif untuk membantu anda dengan terbaik, tanpa memerlukan akses kepada atau storan data tersebut oleh Apple.\n\nApabila boleh, model Apple Intelligence berjalan sepenuhnya pada peranti supaya tugas boleh dilengkapkan tanpa data meninggalkan peranti anda. Contohnya, apabila Apple Intelligence memberi anda ringkasan pratonton e‑mel, mesej dan pemberitahuan anda, ringkasan ini dijana oleh model pada peranti. Walau bagaimanapun, kadangkala Apple Intelligence perlu memanfaatkan model yang memerlukan lebih kuasa komputasi berbanding yang boleh diberikan sendiri peranti anda. Untuk tugas ini, Apple Intelligence menghantar permintaan anda ke Komputasi Awan Peribadi. Komputasi Awan Peribadi ialah sistem kecerdasan berdasarkan pelayan yang direka bentuk untuk mengendalikan permintaan yang lebih kompleks sambil melindungi privasi anda. Contohnya, apabila anda menggunakan Alat Menulis untuk membaca pruf atau mengedit e‑mel, peranti anda mungkin menghantar e‑mel ke Komputasi Awan Peribadi untuk membolehkan model berdasarkan pelayan membaca pruf atau mengedit.\n\nApabila anda memulakan tugas Apple Intelligence, model yang dijalankan pada peranti anda menganalisis sama ada tugas boleh dilengkapkan pada peranti. Jika model berdasarkan pelayan yang lebih besar diperlukan, Apple Intelligence menggunakan Komputasi Awan Peribadi untuk menghantar data yang berkaitan dengan permintaan anda sahaja untuk diproses pada pelayan Apple Silicon. Data yang dihantar kepada dan dikembalikan oleh Komputasi Awan Peribadi tidak disimpan atau dijadikan boleh diakses oleh Apple. Data diproses hanya untuk memenuhi permintaan anda, yang selepas itu keputusan dikembalikan dengan selamat ke peranti anda dan tidak dikekalkan oleh Komputasi Awan Peribadi. Apabila peranti anda menghantar permintaan kepada Komputasi Awan Peribadi, Apple hanya akan mengumpulkan maklumat terhad tentang permintaan, seperti anggaran saiz permintaan dan respons, ciri yang digunakan untuk permintaan dan tempoh masa yang permintaan dilengkapkan. Data ini tidak menyertakan sebarang maklumat tentang kandungan permintaan anda atau keputusan yang dikembalikan. Ia tidak boleh dikenal pasti atau dikaitkan dengan Akaun Apple anda atau sebarang data lain yang Apple mungkin terima daripada penggunaan perkhidmatan Apple lain oleh anda.\n\nAnda boleh mengaktifkan pengelogan ketelusan untuk Apple Intelligence pada peranti anda untuk melihat cara data anda diproses dengan pergi ke Seting > Privasi & Keselamatan > Laporan Apple Intelligence dan mengaktifkan Rakam Aktiviti Apple Intelligence. Selepas permintaan dibuat, anda boleh mengeksport fail."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence je systém generatívnych modelov umelej inteligencie špecializovaných na pomoc s každodennými činnosťami. Apple Intelligence vám môže pomáhať prepisovať či opravovať emaily alebo poznámky, zostavovať súhrny neprečítaných správ, vytvárať vlastné spomienky v apke Fotky, generovať obrázky a ešte omnoho viac. Funkcie Apple Intelligence boli navrhnuté na poskytovanie osobných inteligentných služieb bez toho, aby spoločnosť Apple zhromažďovala vaše osobné údaje.\n\nNa prispôsobenie prostredia pre vás využíva Apple Intelligence informácie na vašom zariadení vrátane dát z rôznych apiek, napríklad o nadchádzajúcich udalostiach v kalendári alebo o tom, ktoré apky často používate. Apple Intelligence identifikuje dáta, ktoré je potrebné poskytnúť generatívnemu modelu, aby vám vedel čo najlepšie pomáhať, pričom spoločnosť Apple nepotrebuje k týmto dátam pristupovať ani ich ukladať.\n\nVždy, keď je to možné, modely Apple Intelligence bežia výlučne na zariadení, takže úlohy sú vykonávané tak, že dáta vaše zariadenie neopustia. Keď vám Apple Intelligence poskytne napríklad súhrny emailov, správ a hlásení, tieto súhrny sú generované pomocou modelov priamo na zariadení. V niektorých prípadoch však Apple Intelligence potrebuje využiť model vyžadujúci väčší výpočtový výkon, než aký je schopné poskytnúť vaše zariadenie. Pri riešení takýchto úloh Apple Intelligence posiela vaše žiadosti do privátneho cloudového computingu. Je to serverový inteligentný systém navrhnutý na spracovanie komplexnejších žiadostí, ktorý zároveň chráni vaše súkromie. Napríklad keď použijete nástroje na písanie na kontrolu alebo úpravu emailu, vaše zariadenie môže poslať email do privátneho cloudového computingu, kde bude skontrolovaný a upravený pomocou serverového modelu.\n\nKeď zadáte úlohu pre Apple Intelligence, model bežiaci na vašom zariadení úlohu zanalyzuje s cieľom stanoviť, či je možné dokončiť ju na vašom zariadení. Ak dokončenie úlohy vyžaduje výkonnejší serverový model, Apple Intelligence prostredníctvom privátneho cloudového computingu pošle na spracovanie na serveroch s čipmi Apple len dáta relevantné pre vašu žiadosť. Dáta odosielané a prijímané v rámci privátneho cloudového computingu spoločnosť Apple neukladá ani k nim nemá prístup. Spracované sú len s cieľom vybavenia vašej žiadosti – výsledky sú potom bezpečne prenesené späť na vaše zariadenie a privátny cloudový computing ich neuchováva. Keď vaše zariadenie pošle žiadosť na privátny cloudový computing, spoločnosť Apple zhromaždí len obmedzené množstvo informácií o tejto žiadosti, napríklad približnú veľkosť žiadosti a odpovede na ňu, funkcie, ktoré bolo potrebné použiť na spracovanie žiadosti a ako dlho jej spracovanie trvalo. Tieto dáta neobsahujú žiadne informácie o obsahu vašej žiadosti ani vráteného výsledku. Neumožňujú vašu identifikáciu a nie sú prepojené s vaším Apple účtom ani inými dátami, ktoré mohli byť zhromaždené spoločnosťou Apple pri používaní iných služieb.\n\nAk chcete vedieť, akým spôsobom sú vaše dáta spracované, môžete zapnúť transparentné zaznamenávanie pre Apple Intelligence v Nastavenia > Súkromie a bezpečnosť > Hlásenie o funkciách Apple Intelligence, kde zapnete zaznamenávanie aktivít Apple Intelligence. Po zadaní žiadosti potom môžete exportovať súbor."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence je systém generativních AI modelů specializovaných na pomoc s vašimi každodenními činnostmi. Může vám pomáhat s přepisováním či opravováním e‑mailů a poznámek, sestavovat souhrny zpráv, které jste si nepřečetli, vytvářet vlastní vzpomínky v aplikaci Fotky, generovat obrázky a mnoho dalšího. Funkce Apple Intelligence byly vyvinuty tak, aby vám poskytovaly osobní inteligentní služby, aniž by přitom společnost Apple shromažďovala vaše osobní údaje.\n\nK přizpůsobení prostředí na míru využívá Apple Intelligence informace z vašeho zařízení včetně údajů z různých aplikací, například o nadcházejících událostech v kalendáři nebo o tom, které aplikace používáte nejčastěji. Apple Intelligence identifikuje data, která je třeba poskytnout generativnímu modelu, aby vám mohl asistovat co nejlépe. Společnost Apple nepotřebuje k těmto datům přistupovat ani je ukládat.\n\nKdykoli je to možné, pracují modely Apple Intelligence výhradně na zařízení, takže lze aktuální úlohu provést, aniž by data vaše zařízení opustila. Když vám například Apple Intelligence poskytuje souhrnné náhledy e‑mailů, zpráv a oznámení, generují se tyto souhrny pomocí modelů přímo na zařízení. Příležitostně však Apple Intelligence potřebuje využít model vyžadující větší výpočetní výkon, než je vaše zařízení schopné poskytnout samo o sobě. V těchto případech je váš požadavek odeslán ke zpracování pomocí privátního cloudového computingu. Jedná se o serverový inteligentní systém vyvinutý pro vyřizování složitějších požadavků za současné ochrany vašeho soukromí. Použijete‑li například psací nástroje ke kontrole nebo úpravě e‑mailu, zařízení může váš e‑mail odeslat do systému privátního cloudového computingu, kde se o jeho kontrolu nebo úpravu postará serverový model.\n\nKdyž zahájíte zpracování úlohy pomocí Apple Intelligence, proběhne nejprve analýza proveditelnosti úlohy na zařízení. Tuto analýzu zpracovává model běžící na zařízení. Jestliže je nutné použít výkonnější serverový model, Apple Intelligence odešle prostřednictvím privátního cloudového computingu ke zpracování na serverech s čipy Apple pouze data relevantní pro váš požadavek. Data odesílaná a přijímaná v rámci privátního cloudového computingu se u společnosti Apple neukládají ani pro ni nejsou přístupná. Zpracovávají se jen za účelem vyřízení vašeho požadavku a výsledky jsou poté bezpečně přeneseny zpět do vašeho zařízení; privátní cloudový computing je neuchovává. Když vaše zařízení odešle požadavek na privátní cloudový computing, Apple o tomto požadavku shromažďuje jen omezené množství informací, například přibližný datový objem požadavku a odezvy na něj, funkce, které byly ke zpracování požadavku využity, a jak dlouho zpracování trvalo. Tyto informace neobsahují žádné údaje o obsahu požadavku ani vráceného výsledku. Nelze vás podle nich identifikovat a nejsou propojeny s vaším účtem Apple ani žádnými jinými daty, která mohla společnost Apple získat, když jste používali její další služby.\n\nChcete‑li vidět, jak jsou vaše data zpracovávána, můžete na svém zařízení pro funkce Apple Intelligence zapnout transparentní protokolování: Otevřete Nastavení > Soukromí a zabezpečení > Zpráva o funkcích Apple Intelligence a zapněte záznam aktivity funkcí Apple Intelligence. Po zadání požadavků můžete exportovat soubor s protokolem."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence е система с генеративни модели на изкуствен интелект, които са специализирани да ви помагат с вашите ежедневни задачи. Apple Intelligence може да ви помогне да пренапишете или коригирате вашите имейли или бележки, да обобщите вашите пропуснати съобщения, да създавате персонализирани спомени в приложението Снимки, да генерирате изображения и други. Apple Intelligence е проектирано да предоставя персонализирана интелигентност без събиране на вашите лични данни от страна на Apple.\n\nЗа да предостави персонализирано изживяване, Apple Intelligence използва информацията на вашето устройство, включително всички ваши приложения, като вашите предстоящи събития в календара и често използваните приложения. Apple Intelligence идентифицира данните, необходими за предоставянето на генеративен модел, за да ви помага, без да се изисква достъп или данните да се съхраняват от Apple.\n\nКогато е възможно, моделите на Apple Intelligence работят изцяло на устройството, така че дадена задача може да бъде изпълнена, без данните да напускат вашето устройство. Например, когато Apple Intelligence ви предоставя преглед с обобщение на вашите имейли, съобщения и известия, тези обобщения са генерирани от моделите на устройството. Въпреки това има случаи, когато Apple Intelligence трябва да използва модел, който изисква повече изчислителна мощност от тази, която може да предостави вашето устройство. За тези задачи Apple Intelligence изпраща вашата заявка към Обработка на данните на поверителен облак. Обработка на данните на поверителен облак представлява интелигентна система, базирана на сървър, проектирана да обработва по-сложни заявки, докато защитава вашата поверителност. Например, когато използвате Инструменти за писане за коректура или редакция на имейл, устройството ви може да изпрати имейла до Обработка на данните на поверителен облак на модел, базиран на сървър, който да извърши коректурата или редакцията.\n\nКогато започнете задача с Apple Intelligence, моделът, работещ на вашето устройство, анализира дали задачата може да бъде изпълнена на вашето устройство. Ако се изисква по-голям модел, базиран на сървър, Apple Intelligence използва Обработка на данните на поверителен облак, за да изпрати само данните, свързани с вашата заявка за обработка на сървърите с Apple Silicon. Данните, изпратени на и върнати от Обработка на данните на поверителен облак, не се съхраняват и не са достъпни от Apple. Данните се обработват само за изпълнението на вашата заявка, след което резултатите се връщат сигурно на вашето устройство и не се запазват от Обработка на данните на поверителен облак. Когато устройството ви изпрати заявка към Обработка на данните на поверителен облак, Apple събира само ограничена информация за заявката, например като приблизителния размер на заявката и отговора, кои функции са използвани за заявката и за колко време е изпълнена заявката. Тези данни не включват информация за съдържанието на вашата заявка или за върнатите резултати. Тази информация не се идентифицира или свързва с вашата Apple регистрация или друга информация, която Apple може да има за вас, ако сте използвали други услуги на Apple.\n\nМожете да включите прозрачност при записване за Apple Intelligence на вашето устройство, за да видите как се обработват вашите данни, като отидете в Настройки > Поверителност и сигурност > Доклад на Apple Intelligence и включите Запиши активността на Apple Intelligence. След като заявките са направени, можете да експортирате файла."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence je sistem generativnih modelov umetne inteligence, ki so specializirani, da bi vam bili v pomoč pri vsakodnevnih opravilih. Apple Intelligence vam lahko pomaga pri predelavi ali lektoriranju vaših e-poštnih sporočil ali zapiskov, povzemanju zgrešenih sporočil, ustvarjanju prilagojenih spominov v Fotografijah, ustvarjanju slik in drugem. Funkcija Apple Intelligence je zasnovana za omogočanje prilagojene inteligence, pri čemer Apple ne zbira vaših osebnih podatkov.\n\nFunkcija Apple Intelligence za omogočanje prilagojene izkušnje uporablja podatke, ki so na voljo v vaši napravi, vključno s podatki vseh aplikacij, na primer vašimi prihodnjimi dogodki v koledarju in podatki o pogosto uporabljenih aplikacijah. Funkcija Apple Intelligence prepozna podatke, ki jih je treba zagotoviti generativnemu modelu, da bi vam bila v pomoč v najboljši meri, ne da bi družba Apple morala zahtevati dostop do podatkov ali podatke shranjevati.\n\nČe je mogoče, se modeli Apple Intelligence v celoti izvajajo v napravi, tako da lahko opravilo dokončate, ne da bi podatki zapustili napravo. Ko vam na primer funkcija Apple Intelligence pripravi povzetke predogleda vaše e-pošte, sporočil in obvestil, te povzetke ustvarijo modeli v napravi. Včasih pa mora funkcija Apple Intelligence uporabiti model, ki zahteva več računske moči, kot jo lahko vaša naprava omogoči sama. Pri teh opravilih funkcija Apple Intelligence vašo zahtevo pošlje v sistem Private Cloud Compute. Private Cloud Compute je strežniški sistem inteligence, zasnovan za obravnavo bolj zapletenih zahtev, pri čemer ščiti vašo zasebnost. Ko na primer uporabljate Orodja za pisanje za lektoriranje ali urejanje e‑poštnega sporočila, lahko vaša naprava pošlje e‑poštno sporočilo v sistem Private Cloud Compute, da strežniški model opravi lektoriranje ali urejanje.\n\nKo začnete opravilo s funkcijo Apple Intelligence, model, ki se izvaja v vaši napravi, analizira, ali je mogoče opravilo dokončati v napravi. Če je potreben večji, strežniški model, funkcija Apple Intelligence uporabi Private Cloud Compute, da pošlje le podatke, ki so relevantni za obdelavo vaše zahteve v strežnikih s čipi Apple. Družba Apple ne hrani podatkov, poslanih v sistem Private Cloud Compute in prejetih iz njega, niti nima dostopa do njih. Podatki se obdelajo le za izpolnitev vaše zahteve, nato se rezultati varno vrnejo v vašo napravo in se ne shranijo v sistemu Private Cloud Compute. Ko vaša naprava pošlje zahtevo v sistem Private Cloud Compute, družba Apple zbira le omejene informacije o zahtevi, na primer približno velikost zahteve in odziva, katere funkcije se uporabljajo pri zahtevi in kako dolgo traja dokončanje zahteve. Ti podatki ne vključujejo nobenih informacij o vsebini vaše zahteve ali vrnjenem rezultatu. Podatki ne omogočajo prepoznave in niso povezani z vašim računom Apple ali drugimi podatki, ki jih Apple morda hrani in izhajajo iz vaše uporabe drugih storitev Apple.\n\nV napravi lahko vklopite beleženje transparentnosti za funkcijo Apple Intelligence, da vidite, kako se vaši podatki obdelujejo, in sicer tako, da odprete Nastavitve > Zasebnost in varnost > Poročilo o funkciji Apple Intelligence ter vklopite možnost Beleži aktivnost funkcije Apple Intelligence. Ko so zahteve vložene, lahko izvozite datoteko."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence is a system of generative AI models that are specialised to help you with your everyday tasks. Apple Intelligence can help you rewrite or proofread your emails or notes, summarise your missed messages, create custom memories in Photos, generate images and more. Apple Intelligence is designed to deliver personalised intelligence without Apple collecting your personal data.\n\nTo provide a customised experience, Apple Intelligence uses information on your device including across your apps, like your upcoming calendar events and your frequently used apps. Apple Intelligence identifies the data necessary to provide to a generative model in order to best assist you, without requiring access to or storage of the data by Apple.\n\nWhen possible, Apple Intelligence models run entirely on-device so that a task can be completed without data leaving your device. For example, when Apple Intelligence provides you with preview summaries of your emails, messages and notifications, these summaries are generated by on-device models. There are times, however, when Apple Intelligence needs to leverage a model that requires more computational power than your device can provide on its own. For these tasks, Apple Intelligence sends your request to Private Cloud Compute. Private Cloud Compute is a server-based intelligence system designed to handle more complex requests while protecting your privacy. For example, when you use Writing Tools to proofread or edit an email, your device may send the email to Private Cloud Compute for a server-based model to do the proofreading or editing.\n\nWhen you initiate an Apple Intelligence task, a model running on your device analyses whether the task can be completed on-device. If a larger, server-based model is required, Apple Intelligence uses Private Cloud Compute to send only data relevant to your request to be processed on Apple silicon servers. The data sent to and returned by Private Cloud Compute is not stored or made accessible to Apple. The data is processed only to fulfil your request, after which point the results are returned securely to your device and are not retained by Private Cloud Compute. When your device sends a request to Private Cloud Compute, Apple only collects limited information about the request, such as the approximate size of the request and response, which features are used for the request and how long the request takes to complete. This data does not include any information about the content of your request or the returned result. It is not identifiable or linked to your Apple Account or other data Apple may have from your use of other Apple services.\n\nYou can turn on transparency logging for Apple Intelligence on your device to see how your data is processed by going to Settings > Privacy & Security > Apple Intelligence Report and turning on Record Apple Intelligence Activity. After requests are made, you can export a file."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence ist ein System generativer KI-Modelle, die dich speziell beim Erledigen von alltäglichen Aufgaben unterstützen. Mithilfe von Apple Intelligence kannst du deine E‑Mails oder Notizen umschreiben oder Korrektur lesen lassen, deine verpassten E‑Mails zusammenfassen, eigene Rückblicke in „Fotos“ erstellen, Bilder generieren und mehr. Apple Intelligence wurde entwickelt, um dir eine personalisierte Intelligenz zur Verfügung zu stellen, ohne dass Apple deine persönlichen Daten erfasst.\n\nUm dir ein individuelles Erlebnis bereitzustellen, nutzt Apple Intelligence Daten auf deinem Gerät, einschließlich appübergreifender Daten wie deine nächsten Kalenderereignisse und häufig verwendete Apps. Apple Intelligence identifiziert die Daten, die einem generativen Modell bereitgestellt werden müssen, um dich bestmöglich zu unterstützen, ohne dass dabei Zugriff oder Speicherung der Daten von Apple erforderlich ist.\n\nFalls möglich werden Apple Intelligence-Modelle vollständig auf dem Gerät ausgeführt, damit eine Aufgabe abgeschlossen werden kann und die Daten dabei stets auf dem Gerät bleiben. Wenn beispielsweise Apple Intelligence Zusammenfassungen deiner E‑Mails, Nachrichten und Mitteilungen als Vorschau zur Verfügung stellt, werden diese Zusammenfassungen von Modellen auf dem Gerät generiert. Gelegentlich jedoch muss Apple Intelligence ein Modell nutzen, das eine höhere Rechenleistung erfordert, als dein Gerät bieten kann. Für diese Aufgaben sendet Apple Intelligence deine Anfrage an Private Cloud Compute. Private Cloud Compute ist ein serverbasiertes Intelligenzsystem, das entwickelt wurde, um komplexere Anfragen abzuwickeln und gleichzeitig deine Privatsphäre zu schützen. Wenn du zum Beispiel die Funktion „Schreibwerkzeuge“ verwendest, um eine E‑Mail Korrektur zu lesen oder zu bearbeiten, sendet dein Gerät die E‑Mail an Private Cloud Compute für ein serverbasiertes Modell, um den Text Korrektur zu lesen bzw. zu bearbeiten.\n\nWenn du eine Aufgabe via Apple Intelligence initiierst, analysiert ein auf dem Gerät integriertes Modell, ob die Aufgabe auf dem Gerät abgeschlossen werden kann. Sollte ein größeres serverbasiertes Modell erforderlich sein, verwendet Apple Intelligence Private Cloud Compute, um nur die für deine Anfrage relevanten Daten zur Verarbeitung an Server mit Apple Chips zu senden. Die an Private Cloud Compute gesendeten sowie die zurückgegebenen Daten werden nicht gespeichert oder Apple zugänglich gemacht. Die Daten werden ausschließlich zur Abwicklung deiner Anfrage verarbeitet. Danach werden die Ergebnisse auf sichere Weise zurück an dein Gerät gesendet und werden von Private Cloud Compute nicht weiter aufbewahrt. Wenn dein Gerät eine Anfrage an Private Cloud Compute sendet, erfasst Apple nur bestimmte Informationen zu der Anfrage, z. B. die ungefähre Größe der Anfrage und Antwort, welche Funktionen für die Anfrage verwendet werden und wie lange es dauert, bis die Anfrage abgeschlossen ist. In diesen Daten sind keine Informationen zum Inhalt deiner Anfrage oder dem zurückgegebenen Ergebnis enthalten. Die Daten lassen weder Rückschlüsse auf deine Person zu noch sind sie mit deinem Apple Account oder anderen Daten verknüpft, die Apple möglicherweise über deine Nutzung anderer Apple-Dienste erfasst hat.\n\nDu kannst ein Transparenzprotokoll für Apple Intelligence auf deinem Gerät aktivieren, um zu sehen, wie deine Daten verarbeitet werden. Öffne dazu „Einstellungen“ > „Datenschutz & Sicherheit“ > „Apple Intelligence-Bericht“ und aktiviere „Apple Intelligence-Aktivität aufzeichnen“. Nachdem Anfragen erstellt wurden, kannst du eine Datei exportieren."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence là hệ thống gồm các mô hình AI tạo sinh chuyên biệt nhằm giúp bạn thực hiện công việc hàng ngày. Apple Intelligence có thể giúp bạn viết lại hoặc hiệu đính email hay ghi chú, tóm tắt tin nhắn bị bỏ lỡ, tạo các kỷ niệm tùy chỉnh trong ứng dụng Ảnh, tạo hình ảnh, v.v. Apple Intelligence được thiết kế để cung cấp công nghệ thông minh được cá nhân hóa mà không cần Apple thu thập dữ liệu cá nhân của bạn.\n\nĐể cá nhân hóa trải nghiệm, Apple Intelligence sử dụng thông tin trên thiết bị của bạn, bao gồm thông tin trong các ứng dụng, ví dụ như sự kiện lịch sắp tới và ứng dụng bạn thường sử dụng. Apple Intelligence xác định dữ liệu cần thiết để cung cấp cho mô hình tạo sinh nhằm hỗ trợ bạn tốt nhất mà không cần Apple truy cập hay lưu trữ dữ liệu.\n\nKhi có thể, các mô hình Apple Intelligence sẽ chạy hoàn toàn trên thiết bị để hoàn thành tác vụ mà không cần gửi dữ liệu ra khỏi thiết bị. Ví dụ: khi Apple Intelligence cung cấp cho bạn các bản tóm tắt để xem trước email, tin nhắn và thông báo thì những bản tóm tắt này được tạo bởi các mô hình trên thiết bị. Tuy nhiên, sẽ có những lúc Apple Intelligence cần tận dụng một mô hình yêu cầu nhiều năng lực tính toán hơn mức thiết bị của bạn có thể tự cung cấp. Đối với các tác vụ này, Apple Intelligence sẽ gửi yêu cầu của bạn lên hệ thống Điện toán đám mây riêng. Điện toán đám mây riêng là một hệ thống thông minh dựa trên máy chủ, được thiết kế để xử lý các yêu cầu phức tạp hơn, đồng thời bảo vệ quyền riêng tư của bạn. Ví dụ: khi bạn sử dụng Công cụ viết để hiệu đính hoặc sửa email, thiết bị của bạn có thể gửi email lên hệ thống Điện toán đám mây riêng để một mô hình dựa trên máy chủ thực hiện việc hiệu đính hoặc chỉnh sửa.\n\nKhi bạn khởi tạo một tác vụ Apple Intelligence, một mô hình chạy trên thiết bị của bạn sẽ phân tích xem có thể hoàn thành tác vụ đó trên thiết bị hay không. Nếu cần một mô hình lớn hơn và dựa trên máy chủ, Apple Intelligence sẽ sử dụng Điện toán đám mây riêng nhằm chỉ gửi dữ liệu liên quan đến yêu cầu của bạn để xử lý trên máy chủ Apple silicon. Dữ liệu mà Điện toán đám mây riêng gửi đi và trả về sẽ không được lưu trữ hay truy cập bởi Apple. Dữ liệu chỉ được xử lý để đáp ứng yêu cầu của bạn, sau đó kết quả sẽ được trả về thiết bị của bạn một cách bảo mật và không được hệ thống Điện toán đám mây riêng lưu giữ. Khi thiết bị của bạn gửi yêu cầu lên hệ thống Điện toán đám mây riêng, Apple chỉ thu thập thông tin giới hạn về yêu cầu - ví dụ như kích cỡ gần đúng của yêu cầu và phản hồi, tính năng được sử dụng cho yêu cầu và thời gian cần thiết để hoàn tất yêu cầu. Dữ liệu này không bao gồm bất kỳ thông tin nào về nội dung yêu cầu của bạn hoặc kết quả trả về. Dữ liệu này không thể được nhận dạng hay liên kết với Tài khoản Apple của bạn hoặc dữ liệu khác mà Apple có thể có từ việc bạn sử dụng các dịch vụ khác của Apple.\n\nBạn có thể bật tính năng theo dõi tính minh bạch cho Apple Intelligence trên thiết bị của mình để xem cách dữ liệu được xử lý bằng cách đi tới Cài đặt > Quyền riêng tư & Bảo mật > Báo cáo Apple Intelligence và bật Ghi lại hoạt động của Apple Intelligence. Bạn có thể xuất tệp sau khi đưa ra yêu cầu."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence este un sistem de modele de inteligență artificială generativă, care sunt specializate să vă ajute la realizarea sarcinilor zilnice. Apple Intelligence vă poate ajuta cu rescrierea sau corectarea e‑mailurilor sau notițelor, rezumarea mesajele pe care le‑ați ratat, crearea de amintiri personalizate în aplicația Poze, generarea de imagini și multe altele. Sistemul Apple Intelligence este conceput pentru a vă pune la dispoziție inteligență personalizată fără ca Apple să colecteze datele dvs. personale.\n\nPentru a oferi o experiență personalizată, Apple Intelligence utilizează informații de pe dispozitivul dvs., inclusiv din aplicații, precum evenimentele următoare din calendar și aplicațiile frecvent utilizate. Apple Intelligence identifică datele necesare pentru a fi furnizate unui model generativ pentru a vă asista în mod optim, fără a necesita accesarea sau stocarea datelor de către Apple.\n\nCând este posibil, modelele Apple Intelligence rulează exclusiv pe dispozitiv, pentru ca o sarcină să poată fi efectuată fără ca datele să vă părăsească dispozitivul. De exemplu, atunci când Apple Intelligence vă oferă rezumate de previzualizare ale e‑mailurilor, mesajelor și notificărilor dvs., aceste rezumate sunt generate de modele pe dispozitiv. Cu toate acestea, există situații în care Apple Intelligence trebuie să se folosească de un model care necesită o putere de calcul superioară celei de care este capabil în mod independent dispozitivul dvs. Pentru aceste sarcini, Apple Intelligence trimite solicitarea dvs. către Private Cloud Compute. Private Cloud Compute este un sistem de inteligență bazat pe server, conceput pentru a gestiona solicitările mai complexe, protejându‑vă totodată intimitatea. De exemplu, când utilizați funcționalitatea “Instrumente de scris” pentru a corecta sau edita un e‑mail, dispozitivul poate trimite e‑mailul la Private Cloud Compute pentru ca un model bazat pe server să realizeze corectura sau editarea.\n\nCând inițiați o sarcină Apple Intelligence, un model care rulează pe dispozitivul dvs. analizează sarcina respectivă pentru a stabili dacă poate fi finalizată pe dispozitiv. Dacă este necesar un model mai mare, bazat pe server, Apple Intelligence utilizează Private Cloud Compute pentru a trimite doar datele relevante pentru solicitarea dvs. care să fie procesate pe serverele echipate cu cipuri Apple. Datele trimise către și, respectiv, returnate de Private Cloud Compute nu sunt stocate și nu pot fi accesate de Apple. Datele sunt procesate doar pentru a vă îndeplini solicitarea, după care rezultatele sunt returnate în mod securizat pe dispozitivul dvs. și nu sunt reținute de Private Cloud Compute. Când dispozitivul dvs. trimite o solicitare către Private Cloud Compute, Apple colectează doar informații limitate despre solicitare, cum ar fi dimensiunea aproximativă a solicitării și a răspunsului, ce funcționalități sunt utilizate pentru solicitare și cât durează finalizarea solicitării. Aceste date nu includ nicio informație despre conținutul solicitării sau rezultatul returnat. Aceste informații nu sunt identificabile sau asociate cu contul dvs. Apple sau cu alte date pe care este posibil ca Apple să le aibă ca urmare a utilizării altor servicii Apple de către dvs.\n\nPuteți să activați pe dispozitiv jurnalul de transparență pentru Apple Intelligence pentru a afla modul în care sunt procesate datele dvs. accesând Configurări > Intimitate și securitate > Raport Apple Intelligence și activând opțiunea “Înregistrare activitate Apple Intelligence”. După ce solicitările sunt realizate, puteți exporta un fișier."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence es un sistema de modelos de IA generativa diseñados especialmente para ayudarte con tus tareas cotidianas. Entre otras cosas, Apple Intelligence puede ayudarte a reescribir o revisar el estilo de tus correos o notas, resumir los mensajes que no has leído, crear recuerdos personalizados en Fotos y generar imágenes. Apple Intelligence se ha diseñado para poner a tu disposición una inteligencia adaptada a tus necesidades con la certeza de que Apple no guarda un registro de tus datos personales.\n\nPara ofrecerte una experiencia personalizada, Apple Intelligence utiliza información presente en el dispositivo, como los datos de tus apps (por ejemplo, los próximos eventos en tu calendario y las apps que usas más a menudo). Apple Intelligence identifica los datos necesarios para proporcionar el modelo generativo que te resulte más útil, sin necesidad de que Apple almacene esta información o acceda a ella.\n\nSiempre que sea posible, los modelos de Apple Intelligence se ejecutarán íntegramente en el dispositivo, de manera que las tareas puedan completarse sin que los datos salgan del dispositivo. Por ejemplo, Apple Intelligence utiliza modelos integrados en el dispositivo para generar los resúmenes de tus correos, mensajes y notificaciones. Sin embargo, en ocasiones Apple Intelligence necesita utilizar un modelo que requiera más capacidad de procesamiento de la que el dispositivo puede proporcionar. Para estas tareas, Apple Intelligence envía tu petición a la computación privada en la nube. La computación privada en la nube es un sistema de inteligencia basado en servidor y diseñado para gestionar tareas más complejas sin dejar de proteger tu privacidad. Por ejemplo, al usar las herramientas de escritura para editar o revisar el estilo de un correo, es posible que el dispositivo envíe el texto a la computación privada en la nube para que un modelo basado en servidor realice la tarea.\n\nAl iniciar una tarea de Apple Intelligence, un modelo que se ejecuta en el dispositivo analiza si la petición puede completarse internamente. Si se necesita un modelo de mayor capacidad basado en servidor, Apple Intelligence envía a la computación privada en la nube los datos estrictamente necesarios para el procesamiento de la petición en los servidores con chip de Apple. Apple no almacena y no puede acceder ni a los datos que se envían a la computación privada en la nube ni a la información que se recibe. Los datos se procesan únicamente para cumplir tu petición, tras lo que se devuelven los resultados de forma segura a tu dispositivo y no se conservan en la computación privada en la nube. Cuando el dispositivo envía una petición a la computación privada en la nube, Apple solo recopila los datos estrictamente necesarios, como el tamaño aproximado de la petición y de la respuesta, las funciones usadas en la tarea y el tiempo que tarda en completarse. Estos datos no incluyen información del contenido de tu petición ni el resultado devuelto. Además, no están vinculados a tu cuenta de Apple ni a otros datos que Apple pueda tener sobre ti derivados del uso que haces de otros servicios de Apple.\n\nPuedes activar el registro de transparencia de Apple Intelligence en tu dispositivo para ver cómo se procesan tus datos. Para ello, ve a Ajustes > Privacidad y seguridad > Informe de Apple Intelligence, y activa “Registrar la actividad de Apple Intelligence”. Después de realizar las peticiones, puedes exportar un archivo."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Apple Intelligence é um sistema de modelos de IA generativa especializados para ajudar você nas tarefas do dia a dia. A Apple Intelligence pode resumir mensagens que você tenha perdido, criar memórias personalizadas no app Fotos, gerar imagens, ajudar você a reescrever ou revisar e‑mails ou notas e muito mais. A Apple Intelligence foi projetada para oferecer inteligência personalizada sem que a Apple colete seus dados pessoais.\n\nPara proporcionar uma experiência personalizada a você, a Apple Intelligence usa as informações do seu dispositivo e de apps, por exemplo, os próximos eventos do calendário e os apps que você mais usa. Para auxiliar você da melhor maneira, a Apple Intelligence identifica os dados necessários para oferecer a um modelo generativo, sem que a Apple precise acessar ou armazenar seus dados.\n\nQuando possível, os modelos da Apple Intelligence são totalmente executados no dispositivo, para que as tarefas sejam concluídas sem que os dados saiam dele. Por exemplo, quando a Apple Intelligence apresenta a você uma pré‑visualização com os resumos de seus e‑mails, mensagens e notificações, esses resumos são gerados por modelos no dispositivo. Em alguns momentos, entretanto, a Apple Intelligence precisa recorrer a um modelo que requer uma potência de computação maior do que o seu dispositivo pode oferecer. Para estas tarefas, a Apple Intelligence envia sua solicitação para o sistema Private Cloud Compute. O Private Cloud Compute é um sistema de inteligência baseado em servidor projetado para lidar com solicitações mais complexas e, ao mesmo tempo, proteger sua privacidade. Por exemplo, quando você usa as Ferramentas de Escrita para revisar ou editar um e‑mail, o dispositivo pode enviar o e‑mail para o Private Cloud Compute, para que um modelo baseado em servidor faça a revisão ou edição.\n\nQuando você inicia uma tarefa com a Apple Intelligence, um modelo que é executado no dispositivo analisa se a tarefa pode ser completada localmente. Caso seja necessário um modelo baseado em servidor, a Apple Intelligence usa o Private Cloud Compute para enviar aos servidores Apple Silicon apenas os dados pertinentes da solicitação, para fins de processamento. Os dados enviados e devolvidos pelo Private Cloud Compute não são armazenados nem ficam acessíveis para a Apple. Os dados são processados apenas para atender a sua solicitação. Depois disso, eles são devolvidos em segurança para o dispositivo e não são retidos pelo Private Cloud Compute. Quando seu dispositivo envia uma solicitação ao Private Cloud Compute, a Apple coleta apenas as informações limitadas a tal solicitação, como o tamanho aproximado dela e da respectiva resposta, quais recursos são usados para atendê‑la e quanto tempo é necessário para sua conclusão. Esses dados não incluem nenhuma informação sobre o conteúdo da sua solicitação ou do resultado retornado. Eles não são identificáveis nem vinculados à sua Conta Apple nem a outros dados que a Apple possa ter devido ao seu uso de outros serviços da Apple.\n\nPara ver como os dados são processados, você pode ativar o registro com transparência da Apple Intelligence no dispositivo. Basta acessar Ajustes > Privacidade e Segurança > Relatório da Apple Intelligence e ativar a opção Registrar Atividade da Apple Intelligence. Depois que as solicitações são realizadas, é possível exportar um arquivo."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence est un système de modèles d’intelligence artificielle génératifs, conçu spécialement pour vous aider dans vos tâches quotidiennes. Apple Intelligence peut vous aider à réécrire ou corriger vos e-mails et vos notes, résumer vos messages manqués, créer des souvenirs personnalisés dans Photos, générer des images, et bien plus encore. Apple Intelligence vise à vous fournir une technologie personnalisée, sans qu’Apple ne collecte vos données personnelles.\n\nAfin de vous offrir une expérience personnalisée, Apple Intelligence utilise certaines informations contenues sur votre appareil, y compris dans vos apps, comme les évènements à venir dans votre calendrier et vos apps utilisées le plus fréquemment. Apple Intelligence identifie les données nécessaires pour produire un modèle génératif capable de vous assister de manière optimale, sans qu’Apple n’ait à conserver ou à accéder à vos données.\n\nLorsque cela est possible, les modèles d’Apple Intelligence sont exécutés en intégralité sur votre appareil afin que les tâches puissent être effectuées sans qu’aucune donnée ne soit transférée depuis votre appareil. Par exemple, lorsque Apple Intelligence vous propose des aperçus de résumés de vos e-mails, de vos messages et de vos notifications, ces derniers sont générés par des modèles exécutés sur votre appareil. Toutefois, dans certains cas, Apple Intelligence doit faire appel à d’autres modèles nécessitant une puissance de calcul supérieure à celle que votre appareil peut produire. Pour ces tâches, Apple Intelligence envoie vos requêtes à « Private Cloud Compute ». « Private Cloud Compute » est un système d’intelligence sur serveur conçu pour prendre en charge des requêtes plus complexes tout en protégeant votre confidentialité. Par exemple, lorsque vous utilisez « Outils d’écriture » pour corriger ou modifier un e-mail, votre appareil peut envoyer cet e-mail à « Private Cloud Compute » pour faire appel à un modèle sur serveur qui effectuera les corrections ou les modifications.\n\nLorsque vous initiez une tâche avec Apple Intelligence, un modèle exécuté sur votre appareil examine si cette tâche peut être effectuée sur ce dernier. Si un modèle sur serveur plus important s’avère nécessaire, Apple Intelligence utilise « Private Cloud Compute » pour envoyer uniquement les données essentielles au traitement de votre requête sur les serveurs équipés d’une puce Apple. Les données envoyées et retournées par « Private Cloud Compute » ne sont pas conservées et ne sont pas mises à la disposition d’Apple. Les données sont traitées dans le but unique de répondre à votre requête. Une fois ce traitement terminé, les résultats sont renvoyés de façon sécurisé vers votre appareil sans être conservés par « Private Cloud Compute ». Lorsque votre appareil envoie une requête à « Private Cloud Compute », Apple collecte uniquement certaines informations liées à votre requête, comme la taille approximative de la requête et de sa réponse, les fonctionnalités utilisées pour traiter la requête et le délai écoulé pour traiter cette dernière. Ces données n’incluent aucune information liée au contenu de votre requête ou du résultat renvoyé. Elles ne permettent pas de vous identifier et ne sont pas associées à votre compte Apple, ni à d’autres données qu’Apple pourrait obtenir dans le cadre de votre utilisation d’autres services Apple.\n\nVous pouvez activer l’historique de transparence pour Apple Intelligence sur votre appareil pour voir comment sont traitées vos données en accédant à Réglages > Confidentialité et sécurité > Rapport Apple Intelligence, et en activant « Enregistrer l’activité d’Apple Intelligence ». Une fois les requêtes effectuées, vous pouvez exporter un fichier."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence — це система генеративних моделей штучного інтелекту, що призначена допомагати користувачам із щоденними справами й завданнями. Apple Intelligence може допомагати писати чи перевіряти листи та нотатки, надавати підсумок пропущених повідомлень, створювати персоналізовані спогади у Фотографіях, генерувати зображення тощо. Apple Intelligence спроєктовано так, щоб надавати персоналізовані інтелектуальні функції без збирання ваших персональних даних компанією Apple.\n\nДля надання актуальних для вас результатів Apple Intelligence використовує інформацію на вашому пристрої та з ваших програм, як‑от наступні календарні події та найчастіше використовувані програми. Apple Intelligence визначає, які дані необхідно надати генеративній моделі для отримання найкращих результатів за вашим запитом, при цьому Apple не отримує доступ до цих даних і не зберігає їх.\n\nКоли це можливо, моделі Apple Intelligence працюють тільки на пристрої, щоб завдання можна було виконати без надсилання даних із пристрою. Наприклад, коли Apple Intelligence надає підсумки попереднього перегляду ваших е‑листів, повідомлень і сповіщень, ці підсумки створюються за допомогою моделей на самому пристрої. Проте іноді Apple Intelligence має звертатися до моделей, що потребують більше обчислювальних потужностей, ніж доступно на вашому пристрої. Для цих завдань Apple Intelligence надсилає ваш запит до системи приватних хмарних обчислень. Система приватних хмарних обчислень — це серверна система штучного інтелекту, створена для опрацювання складніших запитів в умовах захисту вашої приватності. Наприклад, у разі використання функції «Засоби письма» для перевірки чи редагування е‑листів ваш пристрій може надіслати лист до системи приватних хмарних обчислень, щоб серверна модель виконала це завдання.\n\nПісля запиту до Apple Intelligence модель на пристрої аналізує, чи завдання можна виконати на самому пристрої. Якщо потрібна більша, серверна модель, Apple Intelligence використовує систему приватних хмарних обчислень, щоб надсилати для опрацювання на серверах Apple silicon лише дані, що є релевантними для вашого запиту. Дані, надіслані до системи приватних хмарних обчислень й отримані від неї, не зберігаються, і Apple не отримує до них доступу. Дані обробляються лише для того, щоб виконати ваш запит, після чого результати безпечно повертаються на ваш пристрій і не зберігаються в системі приватних хмарних обчислень. Коли ваш пристрій надсилає запит до системи приватних хмарних обчислень, Apple збирає тільки обмежену інформацію про цей запис, як‑от приблизний розмір запиту, які функції використовувалися для запиту та скільки тривало виконання запиту. Ці дані не містять жодної інформації про вміст вашого запиту або отриманий результат. Ця інформація не ідентифікує вас особисто й не повʼязується з вашим обліковим записом Apple чи іншими даними, які Apple може мати внаслідок вашого користування іншими сервісами Apple.\n\nМожна ввімкнути журналювання для відстеження прозорості роботи Apple Intelligence на своєму пристрої, щоб бачити, як саме обробляються ваші дані. Для цього в меню Параметри > Приватність і безпека > Звіт Apple Intelligence увімкніть параметр «Записувати дії Apple Intelligence». Після виконання запитів можна експортувати файл журналу."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence — күнделікті тапсырмаларды орындауға көмектесетін генеративті ЖИ модельдерінің жүйесі. Apple Intelligence эл. хаттарды немесе жазбаларды қайта жазуға немесе түзетуге, өткізіп алған хабарларды жинақтауға, «Фотолар» қолданбасында арнаулы естеліктер жасауға, кескіндер құруға және т.б. әрекеттерді орындауға көмектеседі. Apple Intelligence функциясы Apple компаниясы жеке деректеріңізді жинамай-ақ жекелендірілген ЖИ мүмкіндігін беруге арналған.\n\nАрнаулы тәжірибені қамтамасыз ету үшін Apple Intelligence құрылғыңыздағы ақпаратты, соның ішінде алдағы күнтізбе оқиғалары және жиі қолданылатын қолданбалар сияқты қолданбалардағы ақпаратты пайдаланады. Apple Intelligence сізге Apple компаниясының деректерге қол жеткізуін немесе сақтауын сұрамай-ақ, сізге ең үздік көмек көрсету үшін генеративті модельді қамтамасыз етуге қажетті деректерді анықтайды.\n\nМүмкін болса, Apple Intelligence модельдері толықтай құрылғыда жұмыс істейді, осылайша тапсырманы құрылғыңыздан деректерді шығармай-ақ орындауға болады. Мысалы, Apple Intelligence сізге эл. хаттардың, хабарлардың және хабарландырулардың алдын ала көру жинақтамаларын бергенде, бұл жинақтамалар құрылғы модельдері арқылы жасалады. Дегенмен Apple Intelligence құрылғыңыздың өзі қамтамасыз ете алатыннан көбірек өңдеу қуатын қажет ететін үлгіні қолдануы қажет болатын жағдайлар болады. Осы тапсырмалар үшін Apple Intelligence функциясы сұрауыңызды жеке бұлттық есептеулерге жібереді. Жеке бұлттық есептеу — құпиялылығыңызды қорғай отырып, күрделірек сұрауларды өңдеуге арналған серверге негізделген интеллектуалды жүйе. Мысалы, эл. хатты түзету немесе өңдеу үшін «Жазу құралдары» функциясын пайдаланған кезде, құрылғы түзетуді немесе өңдеуді орындау үшін серверлік модельге арналған жеке бұлттық есептеулерге эл. хат жіберуі мүмкін.\n\nApple Intelligence тапсырмасын бастаған кезде, құрылғыңызда жұмыс істейтін модель тапсырманы құрылғыда орындау мүмкіндігін талдайды. Үлкенірек серверлік модель қажет болса, Apple Intelligence функциясы Apple чипі серверлерінде өңдеу сұрауыңызға қатысты деректерді ғана жіберу үшін жеке бұлттық есептеуді пайдаланады. Жеке бұлттық есептеу арқылы жіберілген және қайтарылған деректер сақталмайды немесе Apple үшін қолжетімді емес. Деректер сұрауыңызды орындау үшін ғана өңделеді, содан кейін нәтижелер құрылғыңызға қауіпсіз түрде қайтарылады және жеке бұлттық есептеу арқылы сақталмайды. Құрылғы жеке бұлттық есептеуге сұрау жібергенде, Apple сұраудың шамаланған өлшемі мен жауап, сұрау үшін қандай функциялар пайдаланылатыны және сұрауды аяқтауға қажетті уақыт сияқты сұрау туралы шектеулі ақпаратты ғана жинайды. Бұл деректер сұрауыңыздың контентін немесе қайтарылған нәтиже туралы ақпаратты қамтымайды. Оны анықтау мүмкін емес немесе ол Apple аккаунтыңызбен немесе Apple компаниясына басқа Apple сервистерін пайдалану нәтижесінде берілетін басқа да деректермен байланысты емес.\n\n«Реттеулер» > «Құпиялылық және қауіпсіздік» > «Apple Intelligence есебі» тармағына өтіп, «Apple Intelligence әрекетін жазу» опциясын қосу арқылы деректеріңіздің қалай өңделетінін көру үшін құрылғыңызда Apple Intelligence үшін мөлдірлік журналын қосуыңызға болады. Сұраулар жасалғаннан кейін, файлды экспорттауға болады."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence je sustav generativnih modela AI-ja koji su specijalizirani za pomaganje u svakodnevnim zadacima. Apple Intelligence može vam pomoći u ponovnom pisanju ili uređivanju vaših e-mailova ili bilješki, sažimanju poruka koje ste propustili, izradi prilagođenih uspomena u aplikaciji Foto, generiranju slika i ostalom. Apple Intelligence dizajniran je za isporuku personalizirane inteligencije bez da Apple prikuplja vaše osobne podatke.\n\nKako bi pružila prilagođeno iskustvo, značajka Apple Intelligence koristi informacije na vašem uređaju, uključujući informacije iz aplikacija, primjerice, vaši nadolazeći kalendarski događaji i vaše često korištene aplikacije. Značajka Apple Intelligence identificira podatke koje je potrebno pružiti generativnom modelu kako bi vam mogla na najbolji način pomoći, bez traženja pristupa ili pohrane podataka kod tvrtke Apple.\n\nKad je moguće, modeli značajke Apple Intelligence rade u potpunosti na uređaju tako da se zadaci mogu dovršiti a da podaci ne napuštaju vaš uređaj. Primjerice, kad vam Apple Intelligence pruži pregled sažetaka vaših e-mailova, poruka i obavijesti, te sažetke generiraju modeli na uređaju. Ipak, postoje situacije kada značajka Apple Intelligence treba iskoristiti model koji zahtijeva više računalne snage nego što vaš uređaj može samostalno pružiti. Za takve zadatke, Apple Intelligence poslat će vam zahtjev za Privatno računanje u oblaku. Privatno računanje u oblaku sustav je inteligencije temeljen na serveru, koji je dizajniran za obradu kompleksnijih zahtjeva uz zaštitu vaše privatnosti. Primjerice, kad koristite alate za pisanje za provjeru ili uređivanje e-maila, vaš uređaj može poslati e-mail u Privatno računanje u oblaku kako bi model temeljen na serveru obavio provjeru ili uređivanje.\n\nKad pokrenete zadatak putem značajke Apple Intelligence, model koji radi na vašem uređaju analizira može li se zadatak dovršiti na uređaju. Ako je potreban veći model temeljen na serveru, značajka Apple Intelligence koristi Privatno računanje u oblaku za slanje samo onih podataka koji su nužni za obradu vašeg zahtjeva na Apple Silicon serverima. Podaci koji se šalju i vraćaju putem Privatnog računanja u oblaku ne pohranjuju se niti su dostupni Appleu. Podaci se obrađuju samo kako bi se vaš zahtjev ispunio, nakon čega se rezultati na siguran način vraćaju na vaš uređaj i Privatno računanje u oblaku ih ne zadržava. Kad vaš uređaj pošalje zahtjev u Privatno računanje u oblaku, Apple prikuplja samo ograničene informacije o zahtjevu, primjerice, približnu veličinu zahtjeva i odgovora, koje značajke se koriste za zahtjev i koliko dugo je potrebno za dovršavanje zahtjeva. Ti podaci ne uključuju nikakve informacije o sadržaju vašeg zahtjeva ili vraćenom rezultatu. Te informacije ne mogu vas identificirati i nisu povezane s vašim Apple računom ili drugim podacima koje Apple može imati iz vaše uporabe drugih Apple usluga.\n\nMožete uključiti bilježenje transparentnosti za Apple Intelligence na svom uređaju kako biste vidjeli na koji način se vaši podaci obrađuju tako da idete u Postavke > Privatnost i sigurnost > Izvještaj o Apple Intelligence i uključite opciju Snimi aktivnost značajke Apple Intelligence. Nakon što se zahtjevi ispune, možete eksportirati datoteku."
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence é um sistema de modelos de IA generativa especializados em ajudar nas tarefas quotidianas. Apple Intelligence pode ajudar a reescrever ou rever e‑mails ou notas, resumir mensagens perdidas, criar recordações personalizadas na aplicação Fotografias, gerar imagens, etc. Apple Intelligence foi concebida para proporcionar tecnologia de inteligência personalizada sem que a Apple recolha os seus dados pessoais.\n\nPara oferecer uma experiência personalizada, Apple Intelligence usa informação no seu dispositivo, incluindo nas aplicações, como os eventos do calendário e as aplicações que utiliza com frequência. Apple Intelligence identifica os dados necessários para fornecer um modelo generativo que se adapte às suas necessidades, sem que a Apple tenha de aceder ou armazenar dados.\n\nSempre que possível, os modelos de Apple Intelligence são executados integralmente no dispositivo, para que as tarefas sejam concluídas sem que os dados saiam do dispositivo. Por exemplo, quando Apple Intelligence fornece resumos de pré‑visualizações de e‑mails, mensagens e notificações, estes resumos são gerados por modelos no dispositivo. Contudo, em algumas ocasiões, Apple Intelligence necessita de usar um modelo que requer uma capacidade de processamento superior à fornecida pelo dispositivo. Para estas tarefas, Apple Intelligence envia o seu pedido para Private Cloud Compute. Private Cloud Compute é um sistema de inteligência de servidor concebido para processar pedidos mais complexos, sem comprometer a sua privacidade. Por exemplo, quando usa as ferramentas de escrita para rever ou editar um e‑mail, o seu dispositivo envia‑o para Private Cloud Compute para que um modelo baseado em servidor realize a revisão ou edição.\n\nAo iniciar uma tarefa com Apple Intelligence, um modelo executado no dispositivo analisa se a tarefa pode ser realizada no dispositivo. Se for necessário um modelo de maior capacidade, baseado em servidor, Apple Intelligence usa Private Cloud Compute para enviar dados relevantes apenas para o pedido, para fins de processamento nos servidores com Apple Silicon. Os dados trocados com o sistema Private Cloud Compute não são armazenados nem acedidos pela Apple. Os dados são processados unicamente para concluir o pedido, após o qual os resultados são devolvidos de forma segura ao seu dispositivo e não permanecem no sistema Private Cloud Compute. Quando o seu dispositivo envia um pedido a Private Cloud Compute, a Apple recolhe apenas as informações necessárias do pedido, tais como o tamanho aproximado do pedido e da resposta, as funcionalidades usadas para o pedido e o tempo necessário para o concluir. Estes dados não incluem qualquer informação sobre o conteúdo do pedido ou do resultado obtido. Não permitem a sua identificação nem são associados à sua conta Apple nem a outros dados que a Apple tenha acerca da sua utilização de outros serviços da Apple.\n\nPode ativar o registo de transparência de Apple Intelligence no dispositivo para saber como os seus dados são processados ativando a opção “Registar atividade de Apple Intelligence” em Definições > Privacidade e segurança > Relatório de Apple Intelligence. Depois de realizados os pedidos, pode exportar um ficheiro."
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence is a system of generative AI models that are specialised to help you with your everyday tasks. Apple Intelligence can help you rewrite or proofread your emails or notes, summarise your missed messages, create custom memories in Photos, generate images and more. Apple Intelligence is designed to deliver personalised intelligence without Apple collecting your personal data.\n\nTo provide a customised experience, Apple Intelligence uses information on your device including across your apps, like your upcoming calendar events and your frequently used apps. Apple Intelligence identifies the data necessary to provide to a generative model in order to best assist you, without requiring access to or storage of the data by Apple.\n\nWhen possible, Apple Intelligence models run entirely on your device so a task can be completed without data leaving the device. For example, when Apple Intelligence provides you with preview summaries of your emails, messages and notifications, these summaries are generated by on-device models. There are times, however, when Apple Intelligence needs to leverage a model that requires more computational power than your device can provide on its own. For these tasks, Apple Intelligence sends your request to Private Cloud Compute. Private Cloud Compute is a server-based intelligence system designed to handle more complex requests while protecting your privacy. For example, when you use Writing Tools to proofread or edit an email, your device may send the email to Private Cloud Compute for a server-based model to do the proofreading or editing.\n\nWhen you initiate an Apple Intelligence task, a model running on your device analyses whether the task can be completed on your device. If a larger, server-based model is required, Apple Intelligence uses Private Cloud Compute to send only data relevant to your request to be processed on Apple silicon servers. The data sent to and returned by Private Cloud Compute is not stored or made accessible to Apple. The data is processed only to fulfil your request, after which point the results are returned securely to your device and are not retained by Private Cloud Compute. When your device sends a request to Private Cloud Compute, Apple only collects limited information about the request, such as the approximate size of the request and response, which features are used for the request and how long the request takes to complete. This data does not include any information about the content of your request or the returned result. It is not identifiable or linked to your Apple Account or other data Apple may have from your use of other Apple services.\n\nYou can turn on transparency logging for Apple Intelligence on your device to see how your data is processed by going to Settings > Privacy & Security > Apple Intelligence Report and turning on Record Apple Intelligence Activity. After requests are made, you can export a file."
+          }
+        }
+      }
+    },
+    "SPLASH_SHORT_TITLE": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "‏Apple Intelligence"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ذكاء Apple"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple智能"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence"
+          }
+        }
+      }
+    },
+    "SPLASH_SUMMARY": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligenceはあなたの個人情報を保護するように設計されています。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence는 사용자의 정보를 보호하도록 설계되었습니다."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "‏Apple Intelligence תוכנן באופן שמגן על המידע שלך."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence dirancang untuk melindungi informasi Anda."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bij het ontwerp van Apple Intelligence is rekening gehouden met de bescherming van je gegevens."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence, bilgilerinizi koruyacak şekilde tasarlanmıştır."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence on suunniteltu niin, että tietosi ovat turvassa."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Az Apple Intelligence‑t úgy tervezték, hogy megvédje az Ön információit."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ваши данные, используемые системой Apple Intelligence, надежно защищены."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence è pensata per proteggere le tue informazioni."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence se diseñó para proteger tu información."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το Apple Intelligence έχει σχεδιαστεί με τρόπο που προστατεύει τις πληροφορίες σας."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’Apple Intelligence s’ha dissenyat per protegir la teva informació."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La technologie Apple Intelligence est conçue pour protéger vos informations."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence的設計可保護你的資訊。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence是為保護你的資料而設計。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence har utformats för att skydda din information."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence er utviklet for å beskytte informasjonen din."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence को आपकी जानकारी की सुरक्षा करने के लिए बनाया गया है।"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence er designet til at beskytte dine oplysninger."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence is designed to protect your information."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "صُمِّم ذكاء Apple لحماية معلوماتك."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funkcja Apple Intelligence została zaprojektowana z myślą o ochronie Twoich danych."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence ได้รับการออกแบบมาเพื่อปกป้องข้อมูลของคุณ"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple智能旨在保护你的信息。"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence is designed to protect your information."
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„Apple Intelligence“ sukurta jūsų informacijai apsaugoti."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence se diseñó para proteger tu información."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence direka bentuk untuk melindungi maklumat anda."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funkcie Apple Intelligence boli navrhnuté s ohľadom na vaše súkromie."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence chrání vaše osobní údaje."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Функцията Apple Intelligence е проектирана да защитава вашата информация."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funkcija Apple Intelligence je zasnovana tako, da varuje vaše podatke."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence is designed to protect your information."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence ist dafür konzipiert, deine Daten zu schützen."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence được thiết kế để bảo vệ thông tin của bạn."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sistemul Apple Intelligence este conceput pentru a vă proteja informațiile."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence se ha diseñado para mantener protegida tu información."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Apple Intelligence foi projetada para proteger suas informações."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence est conçu pour protéger vos données."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence спроєктовано так, щоб захищати вашу інформацію."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence ақпаратыңызды қорғау мақсатында жасалған."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Značajka Apple Intelligence dizajnirana je kako bi zaštitila vaše informacije."
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence foi concebida para proteger a sua informação."
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence is designed to protect your information."
+          }
+        }
+      }
+    },
+    "SPLASH_TITLE": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligenceとプライバシー"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence 및 개인정보 보호"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "‏Apple Intelligence ופרטיות…"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence & Privasi"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence en privacy"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence ve Gizlilik"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence ja tietosuoja"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Az Apple Intelligence és az adatvédelem"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence и конфиденциальность"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence e privacy"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence y la privacidad"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence και απόρρητο"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence i la privacitat"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence et confidentialité"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence與隱私權"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence與私隱"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence och integritet"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence og personvern"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence और गोपनीयता"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence og anonymitet"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence & Privacy"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ذكاء Apple والخصوصية…"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence i prywatność"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence และความเป็นส่วนตัว"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple智能与隐私"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence & Privacy"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„Apple Intelligence“ ir privatumas"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence y la privacidad"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence & Privasi"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence a súkromie"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence a soukromí"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence и поверителност"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence in zasebnost"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence & Privacy"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence & Datenschutz"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence & Quyền riêng tư"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence și intimitatea"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence y la privacidad"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence e Privacidade"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence et confidentialité"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence і приватність"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence және құпиялылық"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence i privatnost"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence e Privacidade"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence & Privacy"
+          }
+        }
+      }
+    },
+    "BUTTON_TITLE": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligenceとプライバシーについて…"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence 및 개인정보 보호에 관하여…"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "מידע בנושא Apple Intelligence ופרטיות…"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mengenai Apple Intelligence & Privasi…"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Over Apple Intelligence en privacy…"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence ve Gizlilik Hakkında…"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tietoja: Apple Intelligence ja tietosuoja…"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Az Apple Intelligence-ről és az adatvédelemről…"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Об Apple Intelligence и конфиденциальности…"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence e privacy…"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de Apple Intelligence y la privacidad…"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Πληροφορίες για το Apple Intelligence και το απόρρητο…"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sobre l’Apple Intelligence i la privacitat…"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence et confidentialité…"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "關於Apple Intelligence與隱私權⋯"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "關於Apple Intelligence與私隱⋯"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om Apple Intelligence och integritet…"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om Apple Intelligence og personvern…"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence और गोपनीयता परिचय…"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om Apple Intelligence og anonymitet…"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About Apple Intelligence & Privacy…"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حول ذكاء Apple والخصوصية…"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence i prywatność…"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เกี่ยวกับ Apple Intelligence และความเป็นส่วนตัว…"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "关于Apple智能与隐私…"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About Apple Intelligence & Privacy…"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apie „Apple Intelligence“ ir privatumą…"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de Apple Intelligence y la privacidad…"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Perihal Apple Intelligence & Privasi…"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O funkciách Apple Intelligence a súkromí…"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O funkcích Apple Intelligence a soukromí…"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Относно Apple Intelligence и поверителност…"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Več o Apple Intelligence in zasebnosti …"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About Apple Intelligence & Privacy…"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Über Apple Intelligence & Datenschutz …"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence & Quyền riêng tư…"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Despre Apple Intelligence și intimitate…"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de Apple Intelligence y la privacidad…"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sobre a Apple Intelligence e Privacidade…"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence et confidentialité…"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Про Apple Intelligence і приватність…"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Intelligence және құпиялылық туралы ақпарат…"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Više o značajki Apple Intelligence i privatnosti…"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de Apple Intelligence e Privacidade…"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About Apple Intelligence & Privacy…"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}
