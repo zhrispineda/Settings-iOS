@@ -3,6 +3,8 @@
 //  Preferences
 //
 //  Based off of OnBoardingKit, relies to CFBundleURLTypes to fire onOpenURL.
+//  URLs do not open in Preview, use Simulator or a physical device, or
+//  manually set the variable for displaying the sheet to true.
 //
 
 import SwiftUI
@@ -16,30 +18,19 @@ struct OnBoardingView: View {
     @State private var viewHeight = Double()
     var table = String()
     var childView = false // If view is from a parent view
-    let services = [
-        "Activity",
-        "ADPAnalytics",
-        "AppleArcade",
-        "AppleBooks",
-        "AppleCard",
-        "ApplePayCash",
-        "AppStore",
-        "FitnessPlus",
-        "OBAppleID" // AppleID
-    ]
     
     var body: some View {
         NavigationStack {
             ScrollView {
                 Group {
-                    if services.contains(table) {
+                    if isService(table: table) {
                         Image(_internalSystemName: "privacy.handshake")
                             .resizable()
                             .scaledToFit()
                             .frame(width: 80)
                             .foregroundStyle(.blue)
                     }
-                    Text("SPLASH_TITLE", tableName: table)
+                    Text(splashString(table: table))
                         .font(.title2)
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
@@ -51,14 +42,14 @@ struct OnBoardingView: View {
                                     }
                             }
                         }
-                    Text("SPLASH_SUMMARY", tableName: table)
+                    Text(summaryString(table: table))
                         .font(.footnote)
                         .multilineTextAlignment(.center)
                         .padding(.vertical, 10)
-                    if services.contains(table) { // For services that have 3 separate bullet point keys
-                        BulletPoint(key: table == "OBAppleID" ? "FIRST_BULLET_\(UIDevice.current.model.uppercased())" : "FIRST_BULLET", table: table)
-                        BulletPoint(key: "SECOND_BULLET", table: table)
-                        BulletPoint(key: "THIRD_BULLET", table: table)
+                    if isService(table: table) {
+                        BulletPoint(key: bulletString(text: "FIRST_BULLET"), table: table)
+                        BulletPoint(key: bulletString(text: "SECOND_BULLET"), table: table)
+                        BulletPoint(key: bulletString(text: "THIRD_BULLET"), table: table)
                         // Check if fourth and fifth keys exist by comparing values
                         if NSLocalizedString("FOURTH_BULLET", tableName: table, comment: "") != "FOURTH_BULLET" {
                             BulletPoint(key: "FOURTH_BULLET", table: table)
@@ -72,11 +63,10 @@ struct OnBoardingView: View {
                         Text("FOOTER_TEXT_WIFI_\(UIDevice.current.model.uppercased())".localize(table: table))
                             .font(.caption)
                             .padding(.top, 1)
-                    case "Advertising", "AirDrop", "AppleBooks":
+                    case "Advertising", "AirDrop", "AppleBooks", "TVApp":
                         Text("FOOTER_TEXT_WIFI", tableName: table)
                             .font(.caption)
                             .padding(.top, 1)
-
                     default:
                         Text("FOOTER_TEXT", tableName: table)
                             .font(.caption)
@@ -111,7 +101,7 @@ struct OnBoardingView: View {
                     }
                 }
                 ToolbarItem(placement: .principal) {
-                    Text("SPLASH_TITLE", tableName: table)
+                    Text(splashString(table: table))
                         .opacity(frameY < -25 ? 1 : 0)
                         .fontWeight(.semibold)
                         .lineLimit(1)
@@ -125,6 +115,53 @@ struct OnBoardingView: View {
                     
                 }
             }
+        }
+    }
+    
+    // MARK: Functions
+    private func isService(table: String) -> Bool {
+        // Check if key is localized
+        if NSLocalizedString("FIRST_BULLET", tableName: table, comment: "") != "FIRST_BULLET" {
+            return true
+        }
+        
+        // Otherwise, check table name
+        switch table {
+        case "OBAppleID", "TVApp":
+            return true
+        default:
+            return false
+        }
+    }
+    
+    private func splashString(table: String) -> String {
+        switch table {
+        case "TVApp":
+            return NSLocalizedString("SPLASH_TITLE_WIFI", tableName: table, comment: "")
+        default:
+            return NSLocalizedString("SPLASH_TITLE", tableName: table, comment: "")
+        }
+    }
+    
+    private func summaryString(table: String) -> String {
+        switch table {
+        case "TVApp":
+            return NSLocalizedString("SPLASH_SUMMARY_WIFI", tableName: table, comment: "")
+        default:
+            return NSLocalizedString("SPLASH_SUMMARY", tableName: table, comment: "")
+        }
+    }
+    
+    private func bulletString(text: String) -> String {
+        let completeString = text
+        
+        switch table {
+        case "OBAppleID":
+            return completeString + "_" + UIDevice.current.model.uppercased()
+        case "TVApp":
+            return completeString + "_WIFI"
+        default:
+            return completeString
         }
     }
 }
@@ -148,5 +185,5 @@ struct BulletPoint: View {
 }
 
 #Preview {
-    OnBoardingView(table: "ApplePayCash")
+    OnBoardingView(table: "TVApp")
 }

@@ -25,6 +25,16 @@ struct OnBoardingDetailView: View {
         "FitnessPlus",
         "Intelligence",
         "Maps",
+        "BusinessChat",
+        "AppleMusic",
+        "AppleMusicFriends",
+        "News",
+        "NewsletterIssues",
+        "ApplePay",
+        "ApplePayLater",
+        "Podcasts",
+        "ResearchApp",
+        "TVApp",
         "Camera",
         "ImproveSensitiveContentWarning",
         "OBPhotos", // Photos
@@ -70,7 +80,7 @@ struct OnBoardingDetailView: View {
                 Section {
                     ForEach(tables, id: \.self) { item in
                         NavigationLink(destination: OnBoardingView(table: item, childView: true)) {
-                            Text("SPLASH_SHORT_TITLE", tableName: item)
+                            Text(item == "TVApp" ? "SPLASH_SHORT_TITLE_WIFI" : "SPLASH_SHORT_TITLE", tableName: item)
                                 .fontWeight(.semibold)
                                 .foregroundColor(Color(UIColor.label))
                         }
