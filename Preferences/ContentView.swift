@@ -260,7 +260,7 @@ struct SettingsLabelSection: View {
                                 .interactiveDismissDisabled()
                         }
                     }
-                } else if !phoneOnly.contains(setting.id) {
+                } else if !phoneOnly.contains(setting.id) && requiredCapabilities(capability: setting.capability) {
                     Button {
                         id = UUID() // Reset destination
                         selection = setting.type

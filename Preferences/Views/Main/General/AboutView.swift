@@ -20,6 +20,7 @@ struct AboutView: View {
     @State private var eidValue = String()
     @AppStorage("DeviceName") private var deviceName = UIDevice.current.model
     let table = "General"
+    let uiTable = "GeneralSettingsUI"
     
     var body: some View {
         CustomList(title: "About".localize(table: table)) {
@@ -30,17 +31,17 @@ struct AboutView: View {
                     CustomNavigationLink(title: "Device_Name".localize(table: table), status: deviceName, destination: NameView())
                 }
                 
-                CustomNavigationLink(title: "OS Version".localize(table: "Localizable"), status: UIDevice().systemVersion, destination: VersionView())
+                CustomNavigationLink(title: "OS Version".localize(table: uiTable), status: UIDevice().systemVersion, destination: VersionView())
                     .textSelection(.enabled)
                 
-                LabeledContent("ProductModelName", value: UIDevice.fullModel)
+                LabeledContent("ProductModelName".localize(table: uiTable), value: UIDevice.fullModel)
                     .textSelection(.enabled)
-                MonospacedLabel("ProductModel".localize(table: "Localizable"), value: showingModelNumber ? regulatoryModelNumber : "\(modelNumber)\(getRegionInfo())")
+                MonospacedLabel("ProductModel".localize(table: uiTable), value: showingModelNumber ? regulatoryModelNumber : "\(modelNumber)\(getRegionInfo())")
                     .contentShape(Rectangle())
                     .onTapGesture {
                         showingModelNumber.toggle()
                     }
-                LabeledContent("SerialNumber", value: serialNumber)
+                LabeledContent("SerialNumber".localize(table: uiTable), value: serialNumber)
             }
             .task {
                 if serialNumber.isEmpty {
@@ -63,27 +64,27 @@ struct AboutView: View {
             //            }
             
             Section {
-                LabeledContent("SONGS", value: "0")
-                LabeledContent("VIDEOS", value: "0")
-                LabeledContent("PHOTOS", value: "6")
+                LabeledContent("SONGS".localize(table: uiTable), value: "0")
+                LabeledContent("VIDEOS".localize(table: uiTable), value: "0")
+                LabeledContent("PHOTOS".localize(table: uiTable), value: "6")
                 if !UIDevice.IsSimulator {
-                    LabeledContent("APPLICATIONS", value: "1")
+                    LabeledContent("APPLICATIONS".localize(table: uiTable), value: "1")
                 }
-                LabeledContent("User Data Capacity", value: capacityStorage)
-                LabeledContent("User Data Available", value: availableStorage)
+                LabeledContent("User Data Capacity".localize(table: uiTable), value: capacityStorage)
+                LabeledContent("User Data Available".localize(table: uiTable), value: availableStorage)
             }
             
             if !UIDevice.IsSimulator {
-                MonospacedLabel("MACAddress".localize(table: "Localizable"), value: wifiAddress)
-                MonospacedLabel("BTMACAddress".localize(table: "Localizable"), value: bluetoothAddress)
+                MonospacedLabel("MACAddress".localize(table: uiTable), value: wifiAddress)
+                MonospacedLabel("BTMACAddress".localize(table: uiTable), value: bluetoothAddress)
                 if UIDevice.CellularTelephonyCapability {
-                    MonospacedLabel("ModemVersion".localize(table: "Localizable"), value: "1.00.00")
+                    MonospacedLabel("ModemVersion".localize(table: uiTable), value: "1.00.00")
                 }
                 NavigationLink("SEID", destination: SEIDView())
                 
                 if UIDevice.CellularTelephonyCapability {
                     VStack {
-                        Text("EID")
+                        Text("EID", tableName: table)
                             .frame(maxWidth: .infinity, alignment: .leading)
                         HStack(spacing: 0) {
                             ForEach(eidValue.map { String($0) }, id: \.self) { character in
@@ -112,7 +113,7 @@ struct AboutView: View {
                     //                }
                     
                     Section {
-                        MonospacedLabel("ModemIMEI".localize(table: "Localizable"), value: "00 000000 000000 0")
+                        MonospacedLabel("ModemIMEI".localize(table: uiTable), value: "00 000000 000000 0")
                         MonospacedLabel("ModemIMEI2".localize(table: table), value: "00 000000 000000 0")
                     } header: {
                         Text("AVAILABLE_SIMS".localize(table: table))
@@ -121,7 +122,7 @@ struct AboutView: View {
             }
             
             Section {
-                NavigationLink("CERT_TRUST_SETTINGS", destination: CertificateTrustSettingsView())
+                NavigationLink("CERT_TRUST_SETTINGS".localize(table: uiTable), destination: CertificateTrustSettingsView())
             }
         }
     }
