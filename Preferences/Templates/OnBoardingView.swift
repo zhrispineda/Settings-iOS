@@ -16,7 +16,13 @@ struct OnBoardingView: View {
     @State private var viewHeight = Double()
     var table = String()
     var childView = false // If view is from a parent view
-    let services = ["Activity", "FitnessPlus"]
+    let services = [
+        "Activity",
+        "ADPAnalytics",
+        "AppStore",
+        "FitnessPlus",
+        "OBAppleID" // AppleID
+    ]
     
     var body: some View {
         NavigationStack {
@@ -51,10 +57,17 @@ struct OnBoardingView: View {
                                 .fontWeight(.heavy)
                                 .padding(.top, 5)
                                 .foregroundStyle(Color(UIColor.secondaryLabel))
-                            Text("FIRST_BULLET", tableName: table)
-                                .font(.caption)
-                                .multilineTextAlignment(.leading)
-                                .padding(.vertical, 10)
+                            if table == "OBAppleID" {
+                                Text("FIRST_BULLET_\(UIDevice.current.model.uppercased())".localize(table: table))
+                                    .font(.caption)
+                                    .multilineTextAlignment(.leading)
+                                    .padding(.vertical, 10)
+                            } else {
+                                Text("FIRST_BULLET", tableName: table)
+                                    .font(.caption)
+                                    .multilineTextAlignment(.leading)
+                                    .padding(.vertical, 10)
+                            }
                             Spacer()
                         }
                         HStack(alignment: .top, spacing: 15) {
@@ -79,8 +92,17 @@ struct OnBoardingView: View {
                             Spacer()
                         }
                     }
-                    Text(table == "AirDrop" ? "FOOTER_TEXT_WIFI" : "FOOTER_TEXT", tableName: table)
-                        .font(.caption)
+                    switch table {
+                    case "OBAppleID":
+                        Text("FOOTER_TEXT_WIFI_\(UIDevice.current.model.uppercased())".localize(table: table))
+                            .font(.caption)
+                    case "AirDrop":
+                        Text("FOOTER_TEXT_WIFI", tableName: table)
+                            .font(.caption)
+                    default:
+                        Text("FOOTER_TEXT", tableName: table)
+                            .font(.caption)
+                    }
                     if !childView { // Hide Learn More... link if previous view in navigation exists
                         NavigationLink("WELCOME_LEARN_MORE".localize(table: "PrivacyDisclosureUI")) {
                             OnBoardingDetailView()
@@ -129,5 +151,5 @@ struct OnBoardingView: View {
 }
 
 #Preview {
-    OnBoardingView(table: "Activity")
+    OnBoardingView(table: "OBAppleID")
 }

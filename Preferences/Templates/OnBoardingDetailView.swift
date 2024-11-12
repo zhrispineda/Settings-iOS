@@ -13,6 +13,9 @@ struct OnBoardingDetailView: View {
     var table = "PrivacyPane"
     let tables = [ // SPLASH_SHORT_TITLE tables
         "Activity",
+        "ADPAnalytics",
+        "AppStore",
+        "OBAppleID", // AppleID
         "AirDrop",
         "Camera",
         "FitnessPlus",
