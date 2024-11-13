@@ -60,20 +60,9 @@ struct OnBoardingView: View {
                             BulletPoint(key: "FIFTH_BULLET", table: table)
                         }
                     }
-                    switch table {
-                    case "OBAppleID":
-                        Text("FOOTER_TEXT_WIFI_\(UIDevice.current.model.uppercased())".localize(table: table))
-                            .font(.caption)
-                            .padding(.top, 1)
-                    case "Advertising", "AirDrop", "AppleBooks", "TVApp":
-                        Text("FOOTER_TEXT_WIFI", tableName: table)
-                            .font(.caption)
-                            .padding(.top, 1)
-                    default:
-                        Text("FOOTER_TEXT", tableName: table)
-                            .font(.caption)
-                            .padding(.top, 1)
-                    }
+                    Text(footerString())
+                        .font(.caption)
+                        .padding(.top, 1)
                     if !childView { // Hide Learn More... link if previous view in navigation exists
                         NavigationLink("WELCOME_LEARN_MORE".localize(table: "PrivacyDisclosureUI")) {
                             OnBoardingDetailView()
@@ -166,6 +155,16 @@ struct OnBoardingView: View {
             return completeString
         }
     }
+    
+    private func footerString() -> String {
+        if NSLocalizedString("FOOTER_TEXT_WIFI_\(UIDevice.current.model.uppercased())", tableName: table, comment: "") != "FOOTER_TEXT_WIFI_\(UIDevice.current.model.uppercased())" {
+            return "FOOTER_TEXT_WIFI_\(UIDevice.current.model.uppercased())".localize(table: table)
+        } else if NSLocalizedString("FOOTER_TEXT_WIFI", tableName: table, comment: "") != "FOOTER_TEXT_WIFI" {
+            return "FOOTER_TEXT_WIFI".localize(table: table)
+        } else {
+            return "FOOTER_TEXT".localize(table: table)
+        }
+    }
 }
 
 struct BulletPoint: View {
@@ -187,5 +186,5 @@ struct BulletPoint: View {
 }
 
 #Preview {
-    OnBoardingView(table: "TVApp")
+    OnBoardingView(table: "PrivateRelay")
 }

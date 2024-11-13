@@ -125,6 +125,15 @@
 		834A15082CD85B10004A0025 /* MobileCalSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834A15072CD85B10004A0025 /* MobileCalSettings.xcstrings */; };
 		834B5A222C4B3C83003A6940 /* CarPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B5A212C4B3C83003A6940 /* CarPlayView.swift */; };
 		834B5A242C4C1836003A6940 /* AirDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B5A232C4C1836003A6940 /* AirDropView.swift */; };
+		8355C8002CE523970067D675 /* GameCenter.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8355C7FF2CE523970067D675 /* GameCenter.xcstrings */; };
+		8355C8022CE5258C0067D675 /* GymKit.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8355C8012CE5258C0067D675 /* GymKit.xcstrings */; };
+		8355C8042CE529A40067D675 /* HealthApp.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8355C8032CE529A40067D675 /* HealthApp.xcstrings */; };
+		8355C8062CE52A790067D675 /* HealthRecords.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8355C8052CE52A780067D675 /* HealthRecords.xcstrings */; };
+		8355C8082CE52E950067D675 /* HomeElectricity.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8355C8072CE52E950067D675 /* HomeElectricity.xcstrings */; };
+		8355C80A2CE52F510067D675 /* AnalyticsiCloud.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8355C8092CE52F510067D675 /* AnalyticsiCloud.xcstrings */; };
+		8355C80C2CE532900067D675 /* iCloudKeychain.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8355C80B2CE532900067D675 /* iCloudKeychain.xcstrings */; };
+		8355C80E2CE5337C0067D675 /* PrivateRelay.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8355C80D2CE5337C0067D675 /* PrivateRelay.xcstrings */; };
+		8355C8102CE536E80067D675 /* Identity.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8355C80F2CE536E80067D675 /* Identity.xcstrings */; };
 		835683922B753FDD000FB136 /* SettingsLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835683912B753FDD000FB136 /* SettingsLink.swift */; };
 		835683942B754623000FB136 /* SettingsLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835683932B754623000FB136 /* SettingsLabel.swift */; };
 		835683972B754EE4000FB136 /* VersionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835683962B754EE4000FB136 /* VersionView.swift */; };
@@ -528,6 +537,15 @@
 		834A15072CD85B10004A0025 /* MobileCalSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = MobileCalSettings.xcstrings; sourceTree = "<group>"; };
 		834B5A212C4B3C83003A6940 /* CarPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlayView.swift; sourceTree = "<group>"; };
 		834B5A232C4C1836003A6940 /* AirDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirDropView.swift; sourceTree = "<group>"; };
+		8355C7FF2CE523970067D675 /* GameCenter.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = GameCenter.xcstrings; sourceTree = "<group>"; };
+		8355C8012CE5258C0067D675 /* GymKit.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = GymKit.xcstrings; sourceTree = "<group>"; };
+		8355C8032CE529A40067D675 /* HealthApp.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = HealthApp.xcstrings; sourceTree = "<group>"; };
+		8355C8052CE52A780067D675 /* HealthRecords.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = HealthRecords.xcstrings; sourceTree = "<group>"; };
+		8355C8072CE52E950067D675 /* HomeElectricity.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = HomeElectricity.xcstrings; sourceTree = "<group>"; };
+		8355C8092CE52F510067D675 /* AnalyticsiCloud.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AnalyticsiCloud.xcstrings; sourceTree = "<group>"; };
+		8355C80B2CE532900067D675 /* iCloudKeychain.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = iCloudKeychain.xcstrings; sourceTree = "<group>"; };
+		8355C80D2CE5337C0067D675 /* PrivateRelay.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = PrivateRelay.xcstrings; sourceTree = "<group>"; };
+		8355C80F2CE536E80067D675 /* Identity.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Identity.xcstrings; sourceTree = "<group>"; };
 		835683912B753FDD000FB136 /* SettingsLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLink.swift; sourceTree = "<group>"; };
 		835683932B754623000FB136 /* SettingsLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLabel.swift; sourceTree = "<group>"; };
 		835683962B754EE4000FB136 /* VersionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionView.swift; sourceTree = "<group>"; };
@@ -883,6 +901,7 @@
 				83D0B1412CE2F33A00DDEC69 /* ADPAnalytics.xcstrings */,
 				83D0B1482CE2FA6900DDEC69 /* Advertising.xcstrings */,
 				834718E52CDFD78E002D9BC9 /* AirDrop.xcstrings */,
+				8355C8092CE52F510067D675 /* AnalyticsiCloud.xcstrings */,
 				83D0B14A2CE2FB9D00DDEC69 /* AppleArcade.xcstrings */,
 				83D0B14C2CE2FC7100DDEC69 /* AppleBooks.xcstrings */,
 				83C79B942CE3C3A300F49B4F /* AppleCard.xcstrings */,
@@ -905,6 +924,13 @@
 				8383BE092CE4502700B8C68E /* FamilySharing.xcstrings */,
 				8383BE0B2CE4510B00B8C68E /* FindMy.xcstrings */,
 				837AA8712CE2A8540052D1D0 /* FitnessPlus.xcstrings */,
+				8355C7FF2CE523970067D675 /* GameCenter.xcstrings */,
+				8355C8012CE5258C0067D675 /* GymKit.xcstrings */,
+				8355C8032CE529A40067D675 /* HealthApp.xcstrings */,
+				8355C8052CE52A780067D675 /* HealthRecords.xcstrings */,
+				8355C8072CE52E950067D675 /* HomeElectricity.xcstrings */,
+				8355C80B2CE532900067D675 /* iCloudKeychain.xcstrings */,
+				8355C80F2CE536E80067D675 /* Identity.xcstrings */,
 				8331016E2CD162F700C6C3B3 /* ImproveSensitiveContentWarning.xcstrings */,
 				83C79B9A2CE3C7EE00F49B4F /* Intelligence.xcstrings */,
 				83C79B9C2CE3CA0A00F49B4F /* Maps.xcstrings */,
@@ -914,6 +940,7 @@
 				830F2B3B2CD995A9006F7F22 /* OBPhotos.xcstrings */,
 				830F2B372CD98990006F7F22 /* Passwords.xcstrings */,
 				83C79BAE2CE3EF0400F49B4F /* Podcasts.xcstrings */,
+				8355C80D2CE5337C0067D675 /* PrivateRelay.xcstrings */,
 				83C79BB02CE3EF3000F49B4F /* ResearchApp.xcstrings */,
 				83A915432CE1258000F718AA /* SiriSuggestions.xcstrings */,
 				83C79BB22CE3EF5800F49B4F /* TVApp.xcstrings */,
@@ -1994,6 +2021,7 @@
 				83B893C02B8FDBE8005705A3 /* iPhone15_Pro_NaturalTitanium.usdz in Resources */,
 				83F77D742CD3F6BD0026B1AC /* PassKit.xcstrings in Resources */,
 				831C1A4E2CCE9A1300866498 /* Display.xcstrings in Resources */,
+				8355C80C2CE532900067D675 /* iCloudKeychain.xcstrings in Resources */,
 				834A15082CD85B10004A0025 /* MobileCalSettings.xcstrings in Resources */,
 				839657542CCC02EF00D61C8B /* Accessibility-AnimatedImages.xcstrings in Resources */,
 				83D0B1462CE2F50B00DDEC69 /* OBAppleID.xcstrings in Resources */,
@@ -2014,6 +2042,7 @@
 				830F2B3A2CD98E5D006F7F22 /* Photos.xcstrings in Resources */,
 				837936182CDBED740020557B /* DTSettings.xcstrings in Resources */,
 				837936142CDBE03F0020557B /* DTDisplayZoom.xcstrings in Resources */,
+				8355C8022CE5258C0067D675 /* GymKit.xcstrings in Resources */,
 				833101732CD173AC00C6C3B3 /* Sounds.xcstrings in Resources */,
 				837AA8722CE2A8540052D1D0 /* FitnessPlus.xcstrings in Resources */,
 				83AD8C5B2CCAC61700A054B5 /* Captioning.xcstrings in Resources */,
@@ -2024,15 +2053,18 @@
 				83C79B9F2CE3CEC800F49B4F /* BusinessChat.xcstrings in Resources */,
 				83A3E6912CAB98C3006F4643 /* Accessibility-D93.xcstrings in Resources */,
 				834A15042CD85705004A0025 /* TranslationUI.xcstrings in Resources */,
+				8355C8082CE52E950067D675 /* HomeElectricity.xcstrings in Resources */,
 				83A3E6932CAC2832006F4643 /* Accessibility-HapticMusic.xcstrings in Resources */,
 				83C79B952CE3C3A300F49B4F /* AppleCard.xcstrings in Resources */,
 				83E748B62CC6C3410081D660 /* LargeFontsSettings.xcstrings in Resources */,
 				833101712CD16FDD00C6C3B3 /* NotificationsSettings.xcstrings in Resources */,
 				834A15022CD85538004A0025 /* ShortcutsAdvancedSettings.xcstrings in Resources */,
+				8355C8062CE52A790067D675 /* HealthRecords.xcstrings in Resources */,
 				835BF1332CC19DDF00F30DA1 /* PictureInPictureSettings.xcstrings in Resources */,
 				830F2B322CD97C0A006F7F22 /* Messages.xcstrings in Resources */,
 				831C1A502CCE9E3300866498 /* HomeScreenSettings.xcstrings in Resources */,
 				83F77D692CD3E51F0026B1AC /* StoreSettings.xcstrings in Resources */,
+				8355C80E2CE5337C0067D675 /* PrivateRelay.xcstrings in Resources */,
 				830F2B3C2CD995A9006F7F22 /* OBPhotos.xcstrings in Resources */,
 				837C9DF42CC82FDF00A7080F /* FullKeyboardAccess.xcstrings in Resources */,
 				837C9DF82CC839DD00A7080F /* AXUILocalizedStrings.xcstrings in Resources */,
@@ -2040,6 +2072,7 @@
 				83C79BB92CE4078C00F49B4F /* ConnectedCards.xcstrings in Resources */,
 				83DB888F2CAC97BF008218E6 /* AppleID.xcstrings in Resources */,
 				830F2B382CD98990006F7F22 /* Passwords.xcstrings in Resources */,
+				8355C80A2CE52F510067D675 /* AnalyticsiCloud.xcstrings in Resources */,
 				8388E5372CD0733400A3066D /* LocationServicesPrivacy.xcstrings in Resources */,
 				83EF90242CD5C20000379263 /* MapsSettings.xcstrings in Resources */,
 				834718E82CDFDB98002D9BC9 /* PrivacyPane.xcstrings in Resources */,
@@ -2057,11 +2090,14 @@
 				834718E42CDFD6D1002D9BC9 /* PrivacyDisclosureUI.xcstrings in Resources */,
 				83C79BA12CE3D11900F49B4F /* AppleMusic.xcstrings in Resources */,
 				830976D12CDD1A0E0087F1A1 /* CoreFollowUp.xcstrings in Resources */,
+				8355C8002CE523970067D675 /* GameCenter.xcstrings in Resources */,
 				83E748B82CC6C7A50081D660 /* LocalizedStrings-Staccato.xcstrings in Resources */,
 				833F0AD42B744D190036EAD2 /* Assets.xcassets in Resources */,
 				83A7E15A2CBF047B0037F1FB /* FontSettings.xcstrings in Resources */,
+				8355C8042CE529A40067D675 /* HealthApp.xcstrings in Resources */,
 				83AD8C5F2CCAD00200A054B5 /* VoiceOverServices.xcstrings in Resources */,
 				832877E62CAD9C6000013B0B /* Devices.xcstrings in Resources */,
+				8355C8102CE536E80067D675 /* Identity.xcstrings in Resources */,
 				83ACE71F2CD5BA200061528C /* Localizable-DataTypes.xcstrings in Resources */,
 				83C3F33F2CC2BEBA00AE2402 /* InternationalSettings.xcstrings in Resources */,
 				832F57762CCC017A00E0CA19 /* GeneralAccessibility.xcstrings in Resources */,
