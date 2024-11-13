@@ -82,7 +82,22 @@ struct OnBoardingDetailView: View {
         "RatingsAndPhotos",
         "Safari",
         "SafetyFeatures",
-        "Savings"
+        "Savings",
+        "SiriSuggestions",
+        "SensorUsage",
+        "ShortcutsSharing",
+        "SignInWithApple",
+        "SignInWithAppleAtWorkAndSchool",
+        "AskSiri",
+        "SMSFiltering",
+        "Stocks",
+        "OBTouchID", // TouchID
+        "Translate",
+        "TVProvider",
+        "VPNs",
+        "Wallet",
+        "Weather",
+        "CloudCalling"
     ]
     
     var body: some View {
@@ -124,7 +139,7 @@ struct OnBoardingDetailView: View {
                 Section {
                     ForEach(tables, id: \.self) { item in
                         NavigationLink(destination: OnBoardingView(table: item, childView: true)) {
-                            Text(item == "TVApp" ? "SPLASH_SHORT_TITLE_WIFI" : "SPLASH_SHORT_TITLE", tableName: item)
+                            Text(splashTitle(textTable: item))
                                 .fontWeight(.semibold)
                                 .foregroundColor(Color(UIColor.label))
                         }
@@ -146,6 +161,13 @@ struct OnBoardingDetailView: View {
                 }
             }
         }
+    }
+    
+    private func splashTitle(textTable: String) -> String {
+        if NSLocalizedString("SPLASH_SHORT_TITLE_WIFI", tableName: textTable, comment: "") != "SPLASH_SHORT_TITLE_WIFI" {
+            return "SPLASH_SHORT_TITLE_WIFI".localize(table: textTable)
+        }
+        return "SPLASH_SHORT_TITLE".localize(table: textTable)
     }
 }
 

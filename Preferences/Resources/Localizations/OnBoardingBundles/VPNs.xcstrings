@@ -1,0 +1,1656 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "FOOTER_TEXT": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A virtual private network (VPN) is a service that can encrypt and route certain network traffic from your device in a way that may hide your IP address from the websites and services you visit and interact with. Even when a VPN is active, some traffic necessary for essential system services will take place outside the VPN so your device can function properly.\n\nYou can download your preferred VPN configuration from the App Store and install it on your device. Institutions, such as your employer or school, can also set up VPN configurations on devices they manage, including Apple Watch or Apple TV. You can also manually add a VPN on iOS, iPadOS or visionOS devices by going to Settings > General > VPN & Device Management > VPN, then tapping Add VPN Configuration and entering relevant information. On Mac, go to System Settings > Network, click the More button, then select Add VPN Configuration and enter the relevant information.\n\nIt is important that you only use a VPN service you trust. When a VPN configuration is installed and active, your VPN provider may be able to see, intercept and modify your online activity. You should review your VPN provider’s privacy practices to learn more about their service and how they handle your data. When you are using a third-party app or browsing websites not operated by Apple, Apple does not collect information about your use of a VPN service on your device in a way that identifies you.\n\nVPN providers control how your VPN configuration operates, including how traffic is routed when it leaves your device, whether it is encrypted, and what data is available to websites you are connected to.\n\nIf a VPN configuration is installed and active on a device where iCloud Private Relay is enabled, the VPN configuration will determine the routing of internet connections that would otherwise be protected by Private Relay.\n\nNot all your device’s network traffic will be routed through an active VPN. If an app developer specifies a required type of connection for their app, such as mobile data only, network traffic from that app is excluded in active VPN configurations. On iOS, iPadOS and visionOS devices, your VPN provider can choose to override this choice and prevent most apps, services and system functions from routing network traffic outside of an active VPN configuration.\n\nSome traffic necessary for essential system services will not be routed through an active VPN configuration, such as direct connections with your local network’s routers (which are necessary to establish and maintain a network connection), and certain mobile services that only work on mobile networks (which may include Visual Voicemail, where available)."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN(가상 개인 네트워크)은 사용자가 방문하고 상호 작용하는 웹사이트 및 서비스에서 사용자의 IP 주소를 가리는 방식으로 기기의 특정 네트워크 트래픽을 암호화하고 라우팅할 수 있는 서비스입니다. VPN이 활성화된 경우에도 사용자의 기기가 제대로 작동할 수 있도록 필수 시스템 서비스에 필요한 일부 트래픽이 VPN 외부에서 처리됩니다.\n\nApp Store에서 선호하는 VPN 구성을 다운로드하여 기기에 설치할 수 있습니다. 사용자가 소속된 기업 또는 학교와 같은 기관에서도 Apple Watch 또는 Apple TV를 포함하여 해당 기관이 관리하는 기기에 VPN 구성을 설정할 수 있습니다. iOS, iPadOS 또는 visionOS 기기에서 수동으로 VPN을 추가할 수도 있습니다. 설정 > 일반 > VPN 및 기기 관리 > VPN으로 이동한 다음 ‘VPN 구성 추가’를 탭하고 관련 정보를 입력하십시오. Mac에서는 시스템 설정 > 네트워크로 이동하고 더 보기 버튼을 클릭한 다음 ‘VPN 구성 추가’를 선택하고 관련 정보를 입력하십시오.\n\n신뢰하는 VPN 서비스만 사용하는 것이 중요합니다. VPN 구성이 설치되고 활성화되면 VPN 제공자가 사용자의 온라인 활동을 보고, 차단하고, 수정할 수 있습니다. VPN 제공자의 개인정보 처리방침을 검토하여 VPN 제공자의 서비스와 사용자의 데이터가 어떻게 처리되는지 숙지하십시오. 타사 앱을 사용하거나 Apple에서 운영하지 않는 웹사이트를 브라우징하는 경우 Apple은 사용자를 식별할 수 있는 방식으로 사용자 기기의 VPN 서비스 사용 정보를 수집하지 않습니다.\n\nVPN 제공자는 트래픽이 기기에서 나갈 때 라우팅되는 방식, 암호화 여부, 연결된 웹사이트에서 사용할 수 있는 데이터 등 VPN 구성이 작동하는 방식을 제어합니다.\n\niCloud 비공개 릴레이가 활성화되어 있는 기기에 VPN 구성이 설치되어 있고 사용 가능한 경우, 인터넷 연결은 비공개 릴레이로 보호되는 대신 VPN 구성에 따라 라우팅이 결정됩니다.\n\n사용자 기기의 모든 네트워크 트래픽이 활성 VPN을 통해 라우팅되지는 않습니다. 앱 개발자가 자신의 앱에 필요한 연결 유형(예: 셀룰러 전용)을 지정하면 해당 앱의 네트워크 트래픽이 활성 VPN 구성에서 제외됩니다. iOS, iPadOS 및 visionOS 기기에서는 사용자의 VPN 제공자가 이 지정 내용을 오버라이드하도록 선택하여 대부분의 앱, 서비스 및 시스템 기능이 활성 VPN 구성 외부에서는 네트워크 트래픽을 라우팅하지 못하게 할 수 있습니다.\n\n필수 시스템 서비스에 필요한 일부 트래픽은 활성 VPN 구성을 통해 라우팅되지 않습니다. 여기에는 네트워크 연결을 설정하고 관리하는 데 필요한 로컬 네트워크 라우터로의 직접적인 연결, 셀룰러 네트워크에서만 작동하는 특정 셀룰러 서비스(사용 가능한 경우 Visual Voicemail 포함) 등이 있습니다."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "‏VPN (רשת פרטית וירטואלית) הוא שירות שמסוגל להצפין ולנתב תעבורת רשת מהמכשיר שלך באופן שעשוי להסתיר את כתובת ה-IP שלך מהאתרים והשירותים שבחרת לבקר ולהשתמש בהם. כאשר רשת VPN פעילה, תעבורת רשת מסוימת שהכרחית עבור שירותי מערכת חיוניים תתבצע מחוץ ל-VPN, כך שהמכשיר שלך יוכל לתפקד באופן תקין.\n\nבאפשרותך לבחור תצורת VPN מועדפת ב-App Store, להוריד אותה ולהתקין אותה במכשיר שלך. מוסדות כגון מקום העבודה שלך או בית הספר יכולים גם הם להגדיר תצורות VPN במכשירים שמנוהלים על ידם, כולל ב-Apple Watch וב-Apple TV. ניתן גם להוסיף VPN באופן ידני במכשירי iOS, ‏iPadOS או visionOS באמצעות מעבר אל ״הגדרות״ > ״כללי״ > ״ניהול מכשירים ו-VPN״ > ״VPN״, ואז הקשה על ״הוספת תצורת VPN״ והזנת הפרטים הרלוונטיים. ב-Mac, יש לעבור אל ״הגדרות המערכת״ > ״רשת״, ללחוץ על הכפתור ״עוד״ ואז לבחור ב״הוספת הגדרות תצורה של VPN״ ולהזין את הפרטים הרלוונטיים.\n\nחשוב להשתמש רק בשירות VPN שיש לך אמון בו. כאשר תצורת VPN מותקנת ומופעלת, ייתכן שספק ה-VPN שלך יוכל לראות, לשנות ולהשבית את הפעילות שלך ברשת. כדאי לבדוק את נוהלי הפרטיות של ספק ה-VPN שלך כדי ללמוד עוד על השירות שלו ועל אופן הטיפול בנתונים שלך. בעת שימוש ביישומים של גורמים חיצוניים או באתרי גלישה שלא מופעלים על-ידי Apple, ‏Apple לא אוספת מידע שיכול להוביל לזיהוי שלך בכל הנוגע לשימוש שלך בשירות VPN במכשיר.\n\nספקי VPN שולטים באופן הפעולה של תצורת ה-VPN שלך, כולל בדרך שבה תעבורת הרשת מנותבת לאחר שהיא יוצאת מהמכשיר שלך, באפשרות ההצפנה שלה ובסוג המידע שזמין לאתרי אינטרנט שהתחברת אליהם.\n\nאם תצורת VPN מותקנת ומופעלת במכשיר שבו ״ממסר פרטי של iCloud״ פעיל, תצורת ה-VPN תקבע את ניתוב החיבורים לאינטרנט, שאחרת היו מוגנים על-ידי ״ממסר פרטי״.\n\nלא כל תעבורת הרשת של המכשיר שלך תנותב דרך רשת VPN פעילה. אם מפתחי יישומים מציינים סוג של חיבור שנדרש עבור היישומים שלהם, כגון חיבור סלולרי בלבד, תעבורת רשת מיישומים אלו לא תישלט על-ידי תצורות VPN פעילות. במכשירי iOS, ‏iPadOS ו-visionOS, ספק ה-VPN שלך יכול לעקוף את הבחירה הזו ולמנוע מרוב היישומים, השירותים והמאפיינים התפקודיים של המערכת מלנתב את תעבורת הרשת מחוץ לתצורת VPN פעילה.\n\nתעבורת רשת מסוימת שהכרחית עבור שירותי מערכת חיוניים לא תנותב דרך תצורת VPN פעילה, כגון חיבורים ישירים לנתבים ברשת המקומית שלך (שהכרחיים ליצירה ותחזוקה של חיבור לרשת), ושירותים סלולריים מסוימים אשר פועלים רק ברשתות סלולריות (כגון תא קולי ויזואלי, בהתאם לזמינות)."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jaringan pribadi virtual (VPN) adalah layanan yang dapat mengenkripsi dan merutekan lalu lintas jaringan tertentu dari perangkat Anda dengan cara yang dapat menyembunyikan alamat IP Anda dari situs web dan layanan yang Anda kunjungi serta yang berinteraksi dengan Anda. Bahkan saat VPN aktif, sebagian lalu lintas yang diperlukan untuk layanan sistem penting akan berlangsung di luar VPN sehingga perangkat Anda dapat berfungsi dengan benar.\n\nAnda dapat mengunduh konfigurasi VPN pilihan Anda dari App Store dan menginstalnya di perangkat Anda. Institusi, seperti perusahaan atau sekolah Anda, juga dapat mengatur konfigurasi VPN di perangkat yang mereka kelola, termasuk Apple Watch atau Apple TV. Anda juga dapat menambahkan VPN secara manual di perangkat iOS, iPadOS, atau visionOS dengan membuka Pengaturan > Umum > Manajemen VPN & Perangkat > VPN, lalu mengetuk Konfigurasi VPN dan memasukkan informasi yang relevan. Di Mac, buka Pengaturan Sistem > Jaringan, klik tombol Lainnya, lalu pilih Tambah Konfigurasi VPN dan masukkan informasi yang relevan.\n\nPenting bagi Anda untuk menggunakan layanan VPN yang Anda percayai. Jika konfigurasi VPN terinstal dan aktif, penyedia VPN Anda mungkin akan dapat melihat, mencegat, dan memodifikasi aktivitas online Anda. Anda harus meninjau praktik privasi penyedia VPN Anda untuk mempelajari lebih lanjut mengenai layanan mereka dan bagaimana mereka menangani data Anda. Saat Anda menggunakan app pihak ketiga atau menelusuri situs web yang tidak dioperasikan oleh Apple, Apple tidak mengumpulkan informasi mengenai penggunaan layanan VPN di perangkat Anda dengan cara yang mengidentifikasi Anda.\n\nPenyedia VPN mengontrol bagaimana konfigurasi VPN Anda beroperasi, termasuk bagaimana lalu lintas dirutekan saat meninggalkan perangkat Anda, apakah lalu lintas dienkripsi, dan data apa yang tersedia bagi situs web yang terhubung.\n\nJika konfigurasi VPN terinstal dan aktif di perangkat yang mengaktifkan Relai Pribadi iCloud, konfigurasi VPN akan menentukan perutean koneksi internet yang akan dilindungi oleh Relai Pribadi.\n\nTidak semua lalu lintas jaringan perangkat Anda akan dirutekan melalui VPN yang aktif. Jika pengembang app menentukan jenis koneksi yang diperlukan untuk app mereka, seperti hanya seluler, lalu lintas jaringan dari app tersebut dikecualikan di konfigurasi VPN yang aktif. Di perangkat iOS, iPadOS, dan visionOS, penyedia VPN Anda dapat memilih untuk mengabaikan pilihan ini dan mencegah sebagian besar app, layanan, dan fungsi sistem merutekan lalu lintas jaringan di luar konfigurasi VPN yang aktif.\n\nSebagian lalu lintas yang diperlukan untuk layanan sistem penting tidak akan dirutekan melalui konfigurasi VPN aktif, seperti koneksi langsung dengan ruter jaringan lokal Anda (yang diperlukan untuk membuat dan memelihara koneksi jaringan), dan layanan seluler tertentu yang hanya berfungsi di jaringan seluler (yang mungkin meliputi Pesan Suara Visual jika tersedia)."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN on palvelu, joka salaa ja reitittää tietyn verkkoliikenteen laitteestasi tavalla, joka voi kätkeä IP-osoitteesi sivustoilta ja palveluilta, joissa käyt ja joita käytät. Silloinkin, kun VPN on käytössä, välttämättömien järjestelmien tarvitsemaa verkkoliikennettä tapahtuu VPN:n ulkopuolella, jotta laitteesi toimisi oikein.\n\nVoit ladata haluamasi VPN-määrityksen App Storesta ja asentaa sen laitteeseesi. Instituutiot, kuten työnantaja tai oppilaitos, voivat myös ottaa käyttöön VPN-määrityksiä hallitsemissaan laitteissaan, mukaan lukien Apple Watch tai Apple TV. Voit myös lisätä VPN:n käsin iOS-, iPadOS- tai visionOS-laitteissa valitsemalla Asetukset > Yleiset > VPN ja laitehallinta > VPN, napauttamalla Lisää VPN-määritys ja syöttämällä tarvittavat tiedot. Avaa Macissa Järjestelmäasetukset > Verkko, klikkaa Verkko, klikkaa Muut-painiketta, valitse Lisää VPN-määritys ja syötä tarvittavat tiedot.\n\nOn tärkeää käyttää vain VPN-palvelua, johon luotat. Kun VPN-määritys on asennettu ja käytössä, VPN-tarjoajasi saattaa voida nähdä, siepata ja muokata toimintaasi verkossa. Perehdy VPN-palveluntarjoajasi palveluun ja siihen, miten se käsittelee tietojasi, tarkistamalla sen tietosuojakäytännöt. Kun käytät muun valmistajan appia tai selaat muita kuin Applen sivustoja, Apple ei kerää tietoja VPN:n käytöstä laitteestasi tavalla, jolla sinut voitaisiin tunnistaa.\n\nVPN-palveluntarjoajat hallitsevat sitä, miten VPN-määritys toimii, mm. miten verkkoliikenne reititetään, kun se lähtee laitteestasi, salataanko se ja mitä tietoja on saataville sivustoille, joihin olet yhteydessä.\n\nJos VPN-määritys on asennettu ja käytössä laitteessa, jossa suojattu iCloud-lähetys on käytössä, VPN-määritys määrittää internet-yhteyksien reitityksen, jotka olisivat muutoin suojatun lähetyksen suojaamia.\n\nKaikkea laitteesi verkkoliikennettä ei reititetä käytössä olevan VPN:n kautta. Jos apin kehittäjä vaatii apilleen tietyntyyppisen yhteyden, esimerkiksi vain mobiiliverkon, kyseisen apin verkkoliikennettä ei sisällytetä käytössä oleviin VPN-määrityksiin. iOS-, iPadOS- ja visionOS-laitteissa VPN-palveluntarjoajasi voi halutessaan ohittaa tämän valinnan ja estää useimpia appeja, palveluja ja järjestelmätoimintoja reitittämästä verkkoliikennettä käytössä olevan VPN-määrityksen ulkopuolelle.\n\nKaikkea välttämättömien järjestelmien tarvitsemaa verkkoliikennettä ei reititetä käytössä olevan VPN-määrityksen kautta. Tällaista liikennettä on mm. suorat yhteydet paikallisen verkkosi reitittimiin (joita tarvitaan verkkoyhteyden muodostamiseen ja ylläpitoon) sekä tietyt mobiilipalvelut, jotka toimivat vain mobiiliverkossa (kuten Visual Voicemail, jos saatavilla)."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sanal özel ağ (VPN), IP adresinizi gittiğiniz ve etkileşim kurduğunuz web sitelerinden ve servislerden gizleyecek şekilde, aygıtınızdaki belirli bir ağ trafiğini şifreleyebilen ve yönlendirebilen bir servistir. VPN etkinken bile, zorunlu sistem servisleri için gerekli olan trafiğin bir kısmı VPN dışında gerçekleşir, böylece aygıtınız düzgün bir şekilde çalışabilir.\n\nTercih ettiğiniz VPN konfigürasyonunu App Store’dan indirip aygıtınıza yükleyebilirsiniz. İş vereniniz ya da okulunuz gibi kurumlar da yönettikleri aygıtlarda (Apple Watch veya Apple TV de dahil) VPN konfigürasyonu ayarlayabilir. iOS, iPadOS ya da visionOS aygıtlarına elle VPN eklemek için Ayarlar > Genel > VPN ve Aygıt Yönetimi > VPN’e gidin, sonra VPN Konfigürasyonu Ekle’ye dokunun ve ilgili bilgileri girin. Mac’te Sistem Ayarları > Ağ’a gidin, Daha Fazla düğmesine tıklayın, sonra VPN Konfigürasyonu Ekle’yi seçin ve ilgili bilgiyi girin.\n\nYalnızca güvendiğiniz bir VPN servisini kullanmanız önemlidir. VPN konfigürasyonu yüklenmiş ve etkinken VPN sağlayıcınız çevrimiçi aktivitenizi görebilir, engelleyebilir ve değiştirebilir. VPN sağlayıcınızın servisi ve verilerinizi nasıl yönettiği hakkında bilgi almak için sağlayıcınızın gizlilik uygulamalarını gözden geçirmelisiniz. Apple, siz üçüncü parti bir uygulama kullanırken veya Apple tarafından yönetilmeyen web sitelerinde dolaşırken aygıtınızdaki VPN servisini kullanımınız hakkında sizi kişisel olarak belirleyecek bir biçimde bilgi toplamaz.\n\nVPN sağlayıcılar, trafiğin aygıtınızdan çıktıktan sonra nasıl yönlendirildiği, şifrelenip şifrelenmediği ve bağlı olduğunuz web sitelerinin hangi verileri kullanabileceği gibi bilgiler de dahil olmak üzere VPN konfigürasyonunuzun nasıl çalıştığını denetler.\n\nVPN konfigürasyonu, iCloud Özel Geçişi’nin açık olduğu bir aygıta yüklenip etkin olduğunda normalde Özel Geçiş tarafından korunacak olan internet bağlantılarının yönlendirilmesini VPN konfigürasyonu belirler.\n\nAygıtınızın ağ trafiğinin hepsi etkin bir VPN yoluyla yönlendirilmez. Bir uygulama sağlayıcı, kendi uygulaması için yalnızca hücresel gibi gerekli bir bağlantı türü belirtirse bu uygulamadan gelen ağ trafiği etkin VPN konfigürasyonlarına dahil edilmez. iOS, iPadOS ve visionOS aygıtlarında, VPN sağlayıcınız bu seçimi geçersiz kılıp birçok uygulamada, serviste ve sistem işlevinde ağ trafiğinin etkin VPN konfigürasyonunun dışına yönlendirilmesini engelleyebilir.\n\nBir ağ bağlantısı kurmak ve sürdürmek için gerekli olan yerel ağ yönelticiniz ile doğrudan bağlantı ve yalnızca hücresel ağlarda çalışan bazı hücresel servisler gibi (kullanılabildiğinde Visual Voicemail de dahil), zorunlu sistem servisleri için gerekli olan trafiğin bir kısmı, etkin bir VPN konfigürasyonu yoluyla yönlendirilmez."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Een VPN (Virtueel Particulier Netwerk) is een dienst die bepaald netwerkverkeer van je apparaat op een zodanige manier kan versleutelen en routeren dat je IP-adres mogelijk verborgen wordt voor de websites en diensten die je bezoekt en gebruikt. Zelfs als een VPN actief is, vindt bepaald verkeer dat noodzakelijk is voor essentiële systeemvoorzieningen buiten het VPN plaats, zodat je apparaat goed kan werken.\n\nJe kunt de VPN-configuratie van je voorkeur downloaden uit de App Store en deze installeren op je apparaat. Instellingen, zoals je werkgever of school, kunnen ook VPN-configuraties instellen op apparaten die ze beheren, waaronder de Apple Watch en de Apple TV. Je kunt ook handmatig een VPN toevoegen op iOS-, iPadOS- of visionOS-apparaten door in Instellingen naar 'Algemeen' > 'VPN- en apparaatbeheer' > 'VPN' te gaan, vervolgens te tikken op 'Voeg VPN-configuratie toe' en relevante informatie toe te voegen. Ga op je Mac in Systeeminstellingen naar 'Netwerk', klik op de knop 'Meer', selecteer vervolgens 'Voeg VPN-configuratie toe' en voer relevante informatie in.\n\nHet is belangrijk dat je alleen een VPN-dienst gebruikt die je vertrouwt. Als een VPN-configuratie is geïnstalleerd en actief is, kan je VPN-aanbieder mogelijk je online activiteit zien, tegenhouden en wijzigen. Lees de toepassing van het privacybeleid van de VPN-aanbieder aandachtig door voor meer informatie over de dienst en hoe je gegevens wordt gebruikt. Wanneer je een app van derden gebruikt of op websites browset die niet door Apple worden beheerd, verzamelt Apple geen informatie over je gebruik van een VPN-dienst op je apparaat op een manier waarop je identiteit kan worden afgeleid.\n\nVPN-aanbieders bepalen hoe je VPN-configuratie werkt, inclusief hoe verkeer wordt gerouteerd wanneer het je apparaat verlaat, of het is versleuteld en welke gegevens beschikbaar zijn voor websites waarmee je verbonden bent.\n\nAls een VPN-configuratie is geïnstalleerd en actief is op een apparaat waarop 'Privé­doorgifte in iCloud' is ingeschakeld, bepaalt de VPN-configuratie de routing van internetverbindingen die anders zouden zijn beschermd door 'Privé­doorgifte'.\n\nNiet alle netwerkverkeer van je apparaat wordt via een actieve VPN gerouteerd. Als appontwikkelaars een vereist type verbinding opgeven voor hun app, bijvoorbeeld alleen een mobiele verbinding, wordt netwerkverkeer van die app uitgesloten in actieve VPN-configuraties. Op iOS-, iPadOS- en visionOS-apparaten kan je VPN-aanbieder er echter voor kiezen om deze keuze op te heffen en te voorkomen dat de meeste apps, diensten en systeemfuncties netwerkverkeer buiten een actieve VPN-configuratie om routeren.\n\nBepaald verkeer dat noodzakelijk is voor essentiële systeemvoorzieningen wordt niet via een actieve VPN-configuratie gerouteerd, zoals directe verbindingen met routers van je lokale netwerk (die noodzakelijk zijn om een netwerkverbinding tot stand te brengen en te behouden), en bepaalde mobiele voorzieningen die alleen werken op mobiele netwerken (waaronder mogelijk Visual Voicemail, indien beschikbaar)."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A virtuális magánhálózat (VPN) olyan szolgáltatás, amely az eszközéről származó hálózati forgalom egy részét oly módon titkosítja és irányítja át, hogy az Ön IP-címe elrejthető az olyan webhelyek és szolgáltatások elől, amelyeket Ön felkeres, vagy amelyekkel interakcióba lép. Még aktív VPN szolgáltatás mellett is bizonyos mennyiségű, az alapvető rendszerszolgáltatások számára szükséges forgalmat a VPN-hálózaton kívül kell lebonyolítani, hogy az eszköze megfelelően működjön.\n\nAz Ön által előnyben részesített VPN-konfigurációt letöltheti az App Store-ból, és telepítheti az eszközén. Az intézmények – például az Ön munkáltatója vagy iskolája – szintén beállíthatnak VPN-konfigurációkat az általuk felügyelt eszközökön, többek között Apple Watchon vagy Apple TV‑n. Manuálisan is hozzáadhat VPN-hálózatot. iOS-, iPadOS- vagy visionOS-eszközön nyissa meg a Beállítások > Általános > VPN- és eszközfelügyelet > VPN (visionOS‑en: Settings > General > VPN & Device Management > VPN) menüpontot, koppintson a VPN-konfiguráció hozzáadása (visionOS‑en: Add VPN Configuration) lehetőségre, majd adja meg a kért adatokat. Macen válassza a Rendszerbeállítások > Hálózat menüpontot, kattintson a Továbbiak gombra, válassza a VPN-konfiguráció hozzáadása lehetőséget, majd adja meg a kért adatokat.\n\nFontos, hogy csak megbízható VPN-szolgáltatást használjon. Amikor a VPN-konfiguráció telepítve van és aktív, előfordulhat, hogy a VPN-szolgáltató képes megtekinteni, elolvasni és módosítani az Ön online tevékenységét. Azt javasoljuk, hogy tekintse át a VPN-szolgáltató adatvédelmi eljárásait, amelyekből többet tudhat meg a szolgáltatásról és az adatok kezeléséről. Harmadik féltől származó app használata vagy nem az Apple által üzemeltetett webhelyek megtekintése során az Apple nem gyűjt adatokat az Ön azonosítására alkalmas módon a VPN-szolgáltatás Ön által az eszközén végzett használatáról.\n\nA VPN-szolgáltató szabályozza, hogy hogyan működik az Ön VPN-konfigurációja, többek között azt, hogy az eszköze elhagyása után hogyan történik a forgalom átirányítása, hogy a forgalom titkosítva van-e, illetve hogy milyen adatok érhetők el az olyan webhelyek számára, amelyekkel Ön kapcsolatba lép.\n\nHa egy VPN-konfiguráció telepítve van és aktív egy olyan eszközön, ahol az iCloud privát átjátszó engedélyezve van, a VPN-konfiguráció határozza meg az olyan internetes kapcsolatok átirányítását, amelyek egyéb esetben a Privát átjátszó védelme alá tartoznának.\n\nAz eszközéről származó hálózati forgalom nem teljes egészében lesz az aktív VPN-en keresztül továbbítva. Ha egy appfejlesztő az appjához egy adott kapcsolattípust ír elő (például csak mobiladat-hálózaton keresztül), akkor az abból az appból származó hálózati forgalom ki lesz zárva az aktív VPN-konfigurációból. iOS-, iPadOS- és visionOS-eszközökön a VPN-szolgáltató dönthet úgy, hogy felülbírálja ezt az előírást, és megakadályozhatja a legtöbb app, szolgáltató és rendszerfunkció esetén, hogy a hálózati forgalom az aktív VPN-konfiguráción kívül legyen továbbítva.\n\nAz alapvető rendszerszolgáltatások számára szükséges forgalom egy része nem az aktív VPN-konfiguráción keresztül lesz továbbítva. Ebbe beletartoznak az Ön helyi hálózatán lévő routerekkel való közvetlen kapcsolatok (amelyek a hálózati kapcsolat létrehozásához és fenntartásához szükségesek), valamint bizonyos mobiladat-szolgáltatások, amelyek csak mobiladat-hálózatokon működnek (ezek közé tartozhat például a Vizuális hangposta, ahol a funkció rendelkezésre áll)."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Виртуальная частная сеть (VPN) — это сервис, который может шифровать и перенаправлять определенный сетевой трафик с устройства таким образом, чтобы Ваш IP‑адрес был скрыт от сайтов и сервисов, которые Вы просматриваете и с которыми взаимодействуете. Даже когда VPN включен, часть трафика, необходимая для основных системных служб, проходит вне VPN, чтобы устройство работало корректно.\n\nВы можете загрузить любую конфигурацию VPN из App Store и установить ее на устройстве. Организации, например работодатели или учебные заведения, также могут настраивать конфигурации VPN на устройствах, которыми они управляют, в том числе на Apple Watch и Apple TV. VPN также можно добавить вручную. Для этого на устройствах iOS, iPadOS или visionOS откройте «Настройки» > «Основные» > «VPN и управление устройством» > «VPN», затем коснитесь «Добавить конфигурацию VPN…» и введите необходимую информацию. На Mac откройте «Системные настройки» > «Сеть», нажмите кнопку с тремя точками, затем выберите «Добавить конфигурацию VPN» и введите необходимую информацию.\n\nВсегда пользуйтесь только теми VPN‑сервисами, которым Вы доверяете. Когда Вы установите и включите конфигурацию VPN, Ваш VPN‑провайдер сможет просматривать, перехватывать и изменять информацию о Ваших действиях в интернете. Рекомендуем изучить политику конфиденциальности и практики работы с данными Вашего VPN‑провайдера, чтобы узнать, как этот сервис собирает и использует Ваши данные. Когда Вы пользуетесь сторонними приложениями или просматриваете сайты, не управляемые Apple, компания Apple не собирает данные об использовании VPN‑сервиса на Вашем устройстве, на основе которых можно было бы установить Вашу личность.\n\nVPN-провайдеры контролируют работу Вашей конфигурации VPN, в том числе могут перенаправлять трафик, покидающий Ваше устройство, а также принимать решения о шифровании этого трафика и предоставлении данных сайтам, на которые Вы переходите.\n\nЕсли конфигурация VPN установлена и активирована на устройстве, где включен Частный узел iCloud, определять маршрутизацию интернет-соединений будет конфигурация VPN. В противном случае они были бы под защитой Частного узла.\n\nЧерез включенный VPN направляется не весь сетевой трафик устройства. Если разработчик приложения указывает необходимый тип подключения для своего приложения (например, только по сотовой сети), сетевой трафик от этого приложения исключается из активных конфигураций VPN. На устройствах iOS, iPadOS и visionOS провайдер VPN может отменить эту настройку и запретить большинству приложений, сервисов и системных функций перенаправлять сетевой трафик вне активной конфигурации VPN.\n\nНекоторый трафик, необходимый для работы основных системных служб, не направляется через включенную конфигурацию VPN. К такому трафику относятся прямые подключения к маршрутизаторам локальной сети (они необходимы для установления и поддержания сетевого подключения) и определенные сотовые службы, работающие только внутри сотовых сетей (к ним может относиться Визуальный автоответчик, если он доступен)."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una VPN (Virtual Private Network, rete privata virtuale) è un servizio che può eseguire la crittografia di determinati elementi del traffico di rete e instradarli dal dispositivo in modo tale da poter nascondere il tuo indirizzo IP ai servizi e ai siti web che visiti e con i quali interagisci. Anche quando è attiva una VPN, una parte del traffico necessario per i servizi di sistema essenziali avverrà al di fuori della VPN affinché il dispositivo possa funzionare correttamente.\n\nPuoi scaricare la tua configurazione VPN preferita da App Store e installarla sul dispositivo. Anche le istituzioni, come i datori di lavoro o le scuole, possono impostare configurazioni VPN sui dispositivi che gestiscono, inclusi Apple Watch o Apple TV. Puoi inoltre aggiungere una VPN manualmente sui dispositivi iOS, iPadOS o visionOS selezionando Impostazioni > Generali > VPN e gestione dispositivo > VPN, quindi toccando “Aggiungi configurazione VPN” e inserendo le informazioni necessarie. Sul Mac, vai in Impostazioni di Sistema > Rete, fai clic sul pulsante Altro, quindi seleziona “Aggiungi configurazione VPN” e inserisci le informazioni necessarie.\n\nÈ importante che utilizzi esclusivamente un servizio VPN che ritieni affidabile. Quando una configurazione VPN è installata e attiva, il provider del servizio potrebbe essere in grado di visualizzare, intercettare e modificare le tue attività online. Per ulteriori informazioni sul servizio e sulla modalità di gestione dei dati, consulta l’informativa sulla privacy del provider della VPN. Quando utilizzi app di terze parti o visiti siti web non gestiti da Apple, Apple non raccoglie informazioni sull’utilizzo di un servizio VPN sul tuo dispositivo con una modalità che consenta di identificarti.\n\nI provider di VPN controllano come funziona la configurazione VPN, incluso come viene instradato il traffico quando lascia il tuo dispositivo, se è crittografato e quali dati sono disponibili ai siti web ai quali ti connetti.\n\nSe una configurazione VPN è installata e attiva su un dispositivo con il relay privato iCloud abilitato, sarà la configurazione VPN a determinare l’instradamento delle connessioni internet che sarebbero altrimenti protette dal relay privato.\n\nNon tutto il traffico di rete del dispositivo verrà instradato tramite la VPN attiva. Se uno sviluppatore di app specifica un tipo di connessione necessaria per la propria app, ad esempio solo cellulare, il traffico di rete per tale app verrà escluso dalle configurazioni VPN attive. Sui dispositivi iOS, iPadOS e visionOS, il provider della VPN può scegliere di ignorare questa decisione e impedire alla maggior parte delle app, dei servizi e delle funzioni di sistema di instradare il traffico di rete al di fuori della configurazione VPN attiva.\n\nUna parte del traffico necessario per i servizi di sistema essenziali non verrà instradato attraverso la configurazione VPN attiva, ad esempio le connessioni dirette con i router della rete locale (che sono necessarie per stabilire e mantenere una connessione di rete) e alcuni servizi cellulare che funzionano solo sulle reti cellulare (che potrebbero includere la segreteria visiva, dove disponibile)."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ένα εικονικό ιδιωτικό δίκτυο (VPN) αποτελεί μια υπηρεσία που μπορεί να κρυπτογραφήσει και να δρομολογήσει συγκεκριμένη δικτυακή κίνηση από τη συσκευή σας με τρόπο που ίσως να μην εμφανίζει τη διεύθυνση IP σας σε ιστότοπους και υπηρεσίες που επισκέπτεστε και με τα οποία αλληλεπιδράτε. Ακόμη και όταν ένα δίκτυο VPN είναι ενεργό, η κίνηση που είναι απαραίτητη για ουσιαστικές υπηρεσίες συστήματος θα πραγματοποιηθεί εκτός του δικτύου VPN ώστε η συσκευή σας να μπορεί να λειτουργεί σωστά.\n\nΜπορείτε να πραγματοποιήσετε λήψη της προτιμώμενης διαμόρφωσης VPN από το App Store και να την εγκαταστήσετε στη συσκευή σας. Οργανισμοί, όπως ο εργοδότης ή το σχολείο σας, μπορούν επίσης να ρυθμίσουν διαμορφώσεις VPN στις συσκευές που διαχειρίζονται, συμπεριλαμβανομένων Apple Watch και Apple TV. Μπορείτε επίσης να προσθέσετε χειροκίνητα ένα δίκτυο VPN σε συσκευές iOS, iPadOS ή visionOS μεταβαίνοντας στις «Ρυθμίσεις» > «Γενικά» > «VPN και διαχείριση συσκευών» > «VPN» και στη συνέχεια πατώντας στην Προσθήκη διαμόρφωσης VPN και εισαγάγοντας σχετικές πληροφορίες. Σε Mac, μεταβείτε στις «Ρυθμίσεις συστήματος» > «Δίκτυο», κάντε κλικ στο κουμπί «Περισσότερα» και έπειτα επιλέξτε την «Προσθήκη διαμόρφωσης VPN» και εισαγάγετε τις σχετικές πληροφορίες.\n\nΕίναι σημαντικό να χρησιμοποιείτε μόνο μια υπηρεσία δικτύου VPN που εμπιστεύεστε. Όταν μια διαμόρφωση VPN είναι εγκατεστημένη και ενεργή, ο πάροχος δικτύου VPN σας μπορεί να έχει τη δυνατότητα προβολής, υποκλοπής και τροποποίησης της διαδικτυακής δραστηριότητάς σας. Θα πρέπει να εξετάσετε τις πρακτικές απορρήτου του παρόχου VPN σας για να μάθετε περισσότερα σχετικά με την υπηρεσία του και τον τρόπο που χειρίζεται τα δεδομένα σας. Όταν χρησιμοποιείτε μια εφαρμογή τρίτων ή κάνετε περιήγηση σε ιστότοπους που δεν διαχειρίζεται η Apple, η Apple δεν συλλέγει πληροφορίες για την εκ μέρους σας χρήση μιας υπηρεσίας δικτύου VPN στη συσκευή σας με τρόπο που σας ταυτοποιεί.\n\nΟι πάροχοι δικτύου VPN ελέγχουν τον τρόπο λειτουργίας της διαμόρφωσης VPN σας, συμπεριλαμβανομένου του τρόπου δρομολόγησης της κίνησης όταν φεύγει από τη συσκευή σας, αν είναι κρυπτογραφημένη και ποια δεδομένα διατίθενται σε ιστότοπους στους οποίους συνδέεστε.\n\nΑν μια διαμόρφωση VPN είναι εγκατεστημένη και ενεργή σε μια συσκευή όπου είναι ενεργοποιημένη η Ιδιωτική μεταγωγή iCloud, η διαμόρφωση VPN θα καθορίσει τη δρομολόγηση των συνδέσεων στο Διαδίκτυο που αλλιώς θα προστατεύονταν από την Ιδιωτική μεταγωγή.\n\nΔεν θα δρομολογείται όλη η δικτυακή κίνηση της συσκευής σας μέσω ενός ενεργού δικτύου VPN. Αν ένας δημιουργός εφαρμογής διευκρινίζει ότι απαιτείται ένας τύπος σύνδεσης για την εφαρμογή του, όπως μόνο κινητό δίκτυο, η κίνηση δικτύου από αυτήν την εφαρμογή αποκλείεται σε ενεργές διαμορφώσεις VPN. Σε συσκευές iOS, iPadOS και visionOS, ο πάροχος δικτύου VPN σας μπορεί να επιλέξει να παραβλέψει αυτήν την επιλογή και να εμποδίσει τις περισσότερες εφαρμογές, υπηρεσίες και λειτουργίες συστήματος να δρομολογήσουν την κίνηση δικτύου εκτός μιας ενεργής διαμόρφωσης VPN.\n\nΗ κίνηση που είναι απαραίτητη για ουσιαστικές υπηρεσίες συστήματος δεν θα δρομολογείται μέσω μιας ενεργής διαμόρφωσης VPN, όπως άμεσες συνδέσεις με τους δρομολογητές του τοπικού δικτύου σας (που είναι απαραίτητες για τη δημιουργία και τη διατήρηση μιας σύνδεσης δικτύου) και συγκεκριμένων υπηρεσιών κινητού δικτύου, οι οποίες λειτουργούν μόνο σε κινητά δίκτυα (που ενδέχεται να περιλαμβάνουν Οπτικό τηλεφωνητή, όπου διατίθεται)."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una red privada virtual (VPN) es un servicio que puede encriptar y direccionar cierto tráfico de red desde tu dispositivo de manera que oculte tu dirección IP de sitios y servicios que visites y con los que interactúes. Incluso cuando una red VPN está activa, parte del tráfico que no sea necesario para los servicios esenciales del sistema quedará fuera de dicha red de manera que tu dispositivo funcione adecuadamente.\n\nPuedes descargar la configuración de tu VPN preferida desde App Store e instalarla en tu dispositivo. Algunas instituciones, como tu empresa empleadora o centro educativo, también pueden establecer configuraciones de VPN en los dispositivos que administran, incluyendo el Apple Watch o el Apple TV. También puedes agregar manualmente una VPN en dispositivos iOS, iPadOS o visionOS en Configuración > General > Admón. de dispositivos y VPN > VPN, toca Agregar configuración de VPN e ingresa la información relevante. En una Mac, ve a Configuración del Sistema > Red, haz clic en el botón de más, selecciona Agregar configuración de VPN e ingresa la información relevante.\n\nEs importante que solamente utilices un servicio de red VPN en el que confíes. Cuando una configuración VPN está instalada y activa, tu proveedor de red VPN podría interceptar y modificar tu actividad en línea. Es recomendable revisar las prácticas de privacidad de tu proveedor de VPN para obtener detalles sobre cómo manejan tus datos. Cuando usas una app de terceros o exploras sitios que no son operados por Apple, no se recopila información acerca de cómo usas un servicio de VPN en tu dispositivo de manera que pudiera identificarte.\n\nLos proveedores de redes VPN controlan cómo opera tu configuración de VPN incluyendo cómo se direcciona el tráfico al salir de tu dispositivo —incluso si está encriptado— y qué datos están disponibles para sitios con los que te conectaste.\n\nSi se instaló y activó una configuración de VPN en un dispositivo con la retransmisión privada de iCloud activada, la configuración de la VPN determinará el direccionamiento de las conexiones a Internet que bajo otra circunstancia estarían protegidas por la retransmisión privada.\n\nNo todo el tráfico de red de tu dispositivo se direcciona mediante una VPN activa. Si un desarrollador especifica un tipo requerido de conexión para su app —como únicamente la red celular—, el tráfico de red de dicha app estará excluido en la configuración activa de redes VPN. Sin embargo, en dispositivos iOS, iPadOS y visionOS, tu proveedor de VPN puede anular esta selección e impedir que la mayoría de apps, servicios y funciones del sistema direccionen el tráfico de red fuera de una configuración de VPN activa.\n\nCierto tráfico que es necesario para los servicios esenciales del sistema no se direccionará mediante una configuración de red VPN activa, tal como conexiones directas con los routers de tu red local (los cuales son necesarios para establecer y mantener una conexión de red), y ciertos servicios de red celular que únicamente funcionan en dicho tipo de redes (los cuales pueden incluir buzón de voz visual, según su disponibilidad)."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una xarxa privada virtual (VPN) és un servei que permet encriptar i encaminar determinat trànsit de xarxa del dispositiu per tal d’ocultar‑ne l’adreça IP als llocs webs i als serveis que visitis i amb què interaccionis. Tanmateix, una part del trànsit que és indispensable per als serveis bàsics del sistema s’encaminarà fora de la VPN, encara que l’hagis activat, perquè el dispositiu funcioni correctament.\n\nPots descarregar la configuració de VPN que prefereixis de l’App Store i instal·lar‑la al dispositiu. Així mateix, hi ha organitzacions, com ara les empreses i les escoles, que també poden instal·lar configuracions de VPN als dispositius que gestionen, inclosos l’Apple Watch i l’Apple TV. Per afegir una VPN en un dispositiu iOS, iPadOS o visionOS manualment, ves a l’app Configuració > General > VPN i gestió de dispositius > VPN, toca “Afegeix una configuració de VPN…” i introdueix la informació pertinent. En un Mac, ves a l’app Configuració del Sistema > Xarxa, fes clic als punts suspensius, selecciona “Afegeix una configuració de VPN” i introdueix la informació pertinent.\n\nÉs important que només utilitzis serveis de VPN que siguin de confiança. En instal·lar i activar la configuració d’una VPN, és possible que el proveïdor pugui consultar, interceptar i modificar l’activitat en línia. Et recomanem que consultis les pràctiques de privacitat del proveïdor de la VPN per obtenir més informació sobre el servei i la gestió de les dades. Quan facis servir una app de tercers o naveguis per llocs web que Apple no controli, Apple no recopilarà informació sobre l’ús que facis del servei de VPN al dispositiu de cap manera que permeti identificar‑te.\n\nEls proveïdors de les VPN en controlen el funcionament, cosa que inclou com s’encamina el trànsit quan surt del dispositiu, si s’encripta o no, i les dades a què poden accedir els llocs web que visites.\n\nSi instal·les i actives una VPN en un dispositiu en què s’utilitzi la tramesa privada de l’iCloud, la configuració de la VPN determinarà l’encaminament de les connexions a internet, que normalment s’haurien protegit mitjançant la tramesa privada.\n\nNo tot el trànsit de xarxa del dispositiu s’encaminarà a través de la VPN que hagis activat. Si l’equip de desenvolupament d’una app indica que, per utilitzar‑la, cal un tipus de connexió concret, com ara una connexió de xarxa mòbil, el trànsit de xarxa de l’app s’exclourà de la configuració de la VPN. Als dispositius iOS, iPadOS i visionOS, el proveïdor de la VPN podrà ometre aquest requisit i impedir que la majoria d’apps, serveis i funcions del sistema encaminin el trànsit de xarxa fora de la VPN que hagis activat.\n\nUna part del trànsit que és indispensable per als serveis bàsics del sistema no s’encaminarà a través de la VPN que hagis activat. És el cas de les connexions directes amb els encaminadors de la xarxa local, que es necessiten per establir i mantenir la connexió de xarxa, i determinats serveis que només funcionen en xarxes mòbils, com ara la bústia de veu visual, a les ubicacions on estigui disponible."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الشبكة الافتراضية الخاصة (VPN) هي خدمة يمكنها تشفير حركة مرور الشبكة وتوجيهها من جهازك بطريقة يمكنها إخفاء عنوان IP عن المواقع الإلكترونية والخدمات التي تزورها وتتفاعل معها. حتى عندما تكون VPN نشطة، بعض حركة مرور الشبكة الضرورية لخدمات النظام الأساسية ستتم خارج VPN حتى يعمل جهازك على أكمل وجه.\n\nيمكنك تنزيل تكوين VPN المفضل لديك من App Store وتثبيته على جهازك. يمكن أيضًا للمؤسسات - مثل عملك أو مدرستك - إعداد تكوينات VPN على الأجهزة التي تديرها، بما في ذلك Apple Watch أو Apple TV. يمكنك أيضًا إضافة VPN يدويًا على أجهزة iOS أو iPadOS أو visionOS بالانتقال إلى الإعدادات > عام > ‏VPN وإدارة الأجهزة > ‏VPN ثم الضغط على تكوين VPN وإدخال المعلومات ذات الصلة. على Mac، انتقل إلى إعدادات النظام > الشبكة ثم اضغط على زر \"المزيد\" ثم اضغط على إضافة تكوين VPN وأدخل المعلومات ذات الصلة.\n\nمن الضروري ألا تستخدم سوى خدمة VPN تثق بها. عند تثبيت وتنشيط تكوين VPN، بإمكان مزود خدمة VPN أن يرى نشاطك على الإنترنت، ويعترضه ويعدله. عليك مراجعة سياسة مزود خدمة VPN وممارساته المتعلقة بالخصوصية لفهم خدمته أكثر ولمعرفة كيفية تعامله مع بياناتك. عند استخدامك لتطبيق جهة خارجية أو تصفحك لمواقع إلكترونية لا تشغِّلها Apple، فإن Apple لا تجمع معلومات عن استخدامك لخدمة VPN على جهازك بطريقة تكشف عن هويتك.\n\nيتحكم مزودو خدمة VPN بكيفية عمل تكوين VPN؛ بما في ذلك توجيه حركة مرور الشبكة عند مغادرتها لجهازك، وما إذا كانت مشفرة أم لا، ونوعية البيانات المتوفرة للمواقع الإلكترونية التي تتصل بها.\n\nإذا تم تثبيت وتنشيط تكوين VPN على جهاز ما أثناء تمكين \"إخفاء العنوان باستخدام iCloud\"، فسيحدد تكوين VPN توجيه اتصالات الإنترنت التي تحميها عادة ميزة \"إخفاء العنوان\".\n\nبعض حركة مرور شبكة جهازك سيتم توجيهها خارج خدمة VPN النشطة. إذا حدد مطور تطبيق نوع شبكة محدد لتطبيقه، كأن يحدد الشبكة الخلوية فقط، فسيتم استثناء حركة مرور الشبكة لذلك التطبيق من تكوينات VPN. على أجهزة iOS و iPadOS و visionOS، يمكن لمزود خدمة VPN أن يتجاوز هذا الخيار ويمنع معظم التطبيقات والخدمات ومهام النظام من توجيه حركة مرور الشبكة خارج تكوين VPN النشط.\n\nبعض حركة مرور الشبكة الضرورية لخدمات النظام الأساسية ستتم خارج تكوين VPN النشط، مثل الاتصالات المباشرة مع أجهزة توجيه الشبكة المحلية (الضرورية لإنشاء اتصال الشبكة والحفاظ على هذا الاتصال)، وبعض الخدمات الخلوية التي تعمل فقط على شبكات خلوية (والتي قد تتضمن البريد الصوتي المرئي عندما تكون الميزة متاحة)."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "虛擬私人網路（VPN）可以加密並引導來自你裝置的特定網路流量，以便對你參訪並互動的網站和服務隱藏你的IP位址。即使VPN已啟用，部分基本系統服務的流量仍須在VPN外進行，裝置才能正常運作。\n\n你可以從App Store下載偏好的VPN設定並安裝到你的裝置上。你的雇主或學校等機構也可以在他們管理的裝置上設定VPN，包含Apple Watch或Apple TV。你也可以在iOS、iPadOS或visionOS裝置上手動加入VPN，請前往「設定」>「一般」>「VPN與裝置管理」> VPN，然後點一下「加入VPN設定」並輸入相關資訊。在Mac上，請前往「系統設定」>「網路」，按一下「更多」按鈕，然後選取「加入VPN設定」並輸入相關資訊。\n\n請務必只使用你信任的VPN服務。VPN設定安裝好並啟用時，你的VPN供應商可能可以查看、攔截並修改你的線上活動。請檢視你VPN供應商的隱私權實務，來進一步瞭解他們的服務以及他們如何處理你的資料。當你使用第三方App或瀏覽不是由Apple經營的網站時，Apple不會以可識別個人身分的方式收集與你在裝置上使用VPN服務相關的資訊。\n\nVPN供應商會控制你VPN設定的運作方式，包含網路流量離開裝置的路徑、流量是否有加密，以及哪些資料可用於你連接的網站。\n\n若在啟用「iCloud私密轉送」的裝置上安裝並啟用VPN設定，VPN設定會決定本來應該由「私密轉送」保護的網際網路連線路徑。\n\n不是所有裝置的網路流量都是由啟用中的VPN所引導。若App開發者指定他們App所需的連線類型，例如僅限行動網路，來自該App的網路流量就會從啟用中的VPN設定排除。在iOS、iPadOS和visionOS裝置上，你的VPN供應商可以選擇略過這項指定，並防止大部分的App、服務和系統功能在啟用中的VPN設定之外引導網路流量。\n\n部分基本系統服務需要的流量無法透過啟用中的VPN設定引導，例如與區域網路路由器的直接連線（建立和維持網路連線所需），以及只能在行動網路上運作的特定行動服務（可能包含Visual Voicemail）。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "虛擬私人網絡（VPN）是一種服務，可以加密和路由來自你裝置的某些網絡流量，有關方式可能會向你到訪、以及你與其互動的網站和服務隱藏你的IP位址。即使VPN已啟用，部份基本系統服務所需的流量也會在VPN之外進行，以便你的裝置可以正常運作。\n\n你可以從App Store下載喜歡的VPN設定，並安裝到裝置上。你的僱主或學校等機構也可以在他們管理的裝置（包括Apple Watch或Apple TV）設定VPN設定。你亦可以在iOS、iPadOS或visionOS裝置上手動加入VPN，前往「設定」>「一般」>「VPN與裝置管理」> VPN，然後點一下「新增VPN設定」並輸入相關資料。在Mac上，前往「系統設定」>「網絡」，按一下「更多」按鈕，然後選擇「新增VPN設定」並輸入相關資料。\n\n僅使用你信任的VPN服務是很重要的。安裝並啟用VPN設定後，你的VPN供應商可能可以查看、攔截和修改你的網上活動。你應該查看你的VPN供應商的私隱慣例，以便進一步了解其服務，以及供應商如何處理你的資料。當你使用第三方App或瀏覽非Apple營運的網站時，Apple不會以識別你身份的方式收集有關你在裝置上使用VPN服務的資料。\n\nVPN供應商控制你VPN設定的運行方式，包括流量離開裝置時的路由方式、流量是否加密以及你所連接的網站可以使用哪些數據。\n\n如果在「iCloud私密轉送」啟用時已安裝並啟用VPN設定，VPN設定將會決定互聯網連線的路由，否則這些連線將受「私密轉送」保護。\n\n並非裝置的所有網絡流量都會通過已啟用的VPN路由。如果App開發者為App指定了所需的連接類型，例如只限流動網絡，來自該App的網絡流量將會在已啟用VPN設定中被排除。在iOS、iPadOS和visionOS裝置上，你的VPN供應商可以選擇覆蓋此選擇，並阻止大部份App、服務和系統功能在已啟用的VPN設定之外路由網絡流量。\n\n基本系統服務所需的部份流量將不會透過已啟用的VPN設定路由，例如與本地網絡路由器的直接連線（對於建立和保持網絡連線是必需的），以及某些只可以在流動網絡上使用的流動網絡服務（可能包括Visual Voicemail，如適用）。"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wirtualna sieć prywatna (VPN) to usługa, która potrafi szyfrować określony ruch sieciowy z urządzenia i kierować nim w sposób, który może ukrywać Twój adres IP przed witrynami i usługami, które odwiedzasz i których używasz. Nawet gdy sieć VPN jest aktywna, część ruchu niezbędna dla kluczowych usług systemowych musi odbywać się poza nią, aby urządzenie mogło prawidłowo działać.\n\nMożesz pobrać preferowaną konfigurację VPN z App Store i zainstalować ją na swoim urządzeniu. Instytucje, takie jak Twój pracodawca lub szkoła, również mogą tworzyć konfiguracje VPN na urządzeniach, którymi zarządzają, w tym na Apple Watch i Apple TV. Konfigurację VPN możesz również dodać ręcznie. W tym celu przejdź do Ustawień, stuknij w Ogólne > VPN i urządzenia zarządzane > VPN, a następnie stuknij w Dodaj konfigurację VPN i podaj odpowiednie informacje (na urządzeniu iOS lub iPadOS) albo przejdź do aplikacji Settings, stuknij w General > VPN & Device Management > VPN, a następnie stuknij w Add VPN Configuration i podaj odpowiednie informacje (na urządzeniu visionOS). Na Macu otwórz Ustawienia systemowe, kliknij w Sieć, kliknij w przycisk Więcej, a następnie wybierz Dodaj konfigurację VPN i podaj odpowiednie informacje.\n\nWażne jest, aby korzystać tylko z usług VPN, którym ufasz. Gdy konfiguracja VPN jest zainstalowana i aktywna, Twój dostawca VPN może widzieć, przechwytywać i modyfikować Twoją aktywność w sieci. Przejrzyj praktyki w zakresie ochrony prywatności stosowane przez Twojego dostawcę VPN, aby dowiedzieć się więcej o jego usłudze i tym, jak traktuje Twoje dane. Gdy korzystasz z aplikacji innych firm lub przeglądasz witryny nieprowadzone przez Apple, Apple nie gromadzi informacji o użyciu usługi VPN na urządzeniu w sposób, który pozwala Cię zidentyfikować.\n\nDostawcy VPN kontrolują działanie Twojej konfiguracji VPN, w tym to, jak kierowany jest ruch sieciowy opuszczający Twoje urządzenie, czy ruch ten jest szyfrowany oraz jakie dane są dostępne dla witryn, z którymi się łączysz.\n\nJeśli konfiguracja VPN jest zainstalowana i aktywna na urządzeniu podczas korzystania z Przekazywania prywatnego iCloud, to konfiguracja VPN kieruje ruchem połączeń internetowych, który w innym przypadku byłby chroniony przez Przekazywanie prywatne iCloud.\n\nNie cały ruch sieciowy Twojego urządzenia jest przesyłany przez aktywną sieć VPN. Jeśli deweloper aplikacji określi wymagany typ połączenia dla swojej aplikacji (na przykład „tylko sieć komórkowa”), ruch sieciowy z tej aplikacji jest wykluczany w aktywnych konfiguracjach VPN. W przypadku urządzeń iOS, iPadOS lub visionOS dostawca VPN może jednak zdecydować się ignorować tę opcję i blokować kierowanie ruchu sieciowego większości aplikacji, usług i funkcji systemu poza aktywną konfiguracją VPN.\n\nRuch sieciowy niezbędny dla podstawowych usług systemowych nie jest przesyłany przez aktywną sieć VPN. Dotyczy to na przykład bezpośrednich połączeń z routerami sieci lokalnej (które są niezbędne do ustanowienia i utrzymania połączenia sieciowego) oraz pewnych usług komórkowych działających tylko w sieciach komórkowych (w tym na przykład Visual Voicemail, jeśli usługa ta jest dostępna)."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ett virtuellt privat nätverk (VPN) är en tjänst som kan kryptera och dirigera viss nätverkstrafik från din enhet på ett sätt som kan gömma din IP-adress från webbplatser och tjänster du besöker och interagerar med. Även om ett VPN är aktivt sker viss trafik som krävs för nödvändiga systemtjänster utanför detta VPN så att enheten kan fungera korrekt.\n\nDu kan hämta din önskade VPN-konfiguration från App Store och installera den på enheten. Institutioner, till exempel din arbetsgivare eller skola, kan också ställa in VPN-konfigurationer på enheter som de hanterar, inklusive Apple Watch och Apple TV. Du kan även lägga till VPN manuellt på iOS-, iPadOS- eller visionOS-enheter genom att öppna Inställningar > Allmänt > VPN och enhetshantering > VPN och sedan trycka på Lägg till VPN-konfiguration och ange relevant information. På en Mac öppnar du Systeminställningar > Nätverk och klickar på knappen Mer. Välj sedan Lägg till VPN-konfiguration och ange relevant information.\n\nDet är viktigt att du bara använder VPN-tjänster du litar på. När en VPN-konfiguration är installerad och aktiv kan VPN-leverantören se, avlyssna och ändra på dina onlineaktiviteter. Du bör granska VPN-leverantörens integritetspolicy om du vill få mer information om tjänsten och hur de hanterar dina data. När du använder en app från tredje part eller besöker webbplatser som inte drivs av Apple samlar Apple inte in någon information om hur du använder en VPN-tjänst på enheten på ett sätt som kan identifiera dig.\n\nVPN-leverantörer kontrollerar hur din VPN-konfiguration fungerar, inklusive hur trafik dirigeras när den lämnar enheten, om den krypteras och vilka data som är tillgängliga för webbplatser som du är ansluten till.\n\nOm en VPN-konfiguration är installerad och aktiv på en enhet där Privat reläservice på iCloud har aktiverats avgör VPN-konfigurationen dirigeringen av internetanslutningar som annars skulle skyddas av Privat reläservice.\n\nAll nätverkstrafik på enheten dirigeras inte genom ett aktivt VPN. Om en apputvecklare anger en obligatorisk typ av anslutning för sin app, till exempel endast mobildata, undantas nätverkstrafik från den appen i aktiva VPN-konfigurationer. På enheter med iOS, iPadOS och visionOS kan din VPN-leverantör dock välja att åsidosätta det här valet och förhindra de flesta apparna, tjänsterna och systemfunktionerna från att dirigera nätverkstrafik utanför en aktiv VPN-konfiguration.\n\nViss trafik som krävs för nödvändiga systemtjänster dirigeras inte genom en aktiv VPN-konfiguration, till exempel direkta anslutningar med routrar i det lokala nätverket (som krävs för att upprätta och bibehålla en nätverksanslutning) och vissa mobiltjänster som endast fungerar i mobilnätverk (detta kan inkludera en visuell röstbrevlåda där det är tillgängligt)."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "एक वर्चुअल प्राइवेट नेटवर्क (VPN) एक ऐसी सेवा है जो आपके डिवाइस से कुछ नेटवर्क ट्रैफ़िक को एंक्रिप्ट और रूट कर सकती है और आपके IP पते को उन वेबसाइटों और सेवाओं से छिपा सकती है जिन पर आप जाते हैं और इंटरऐक्ट करते हैं। VPN के ऐक्टिव होने पर भी, ज़रूरी सिस्टम सेवाओं के लिए आवश्यक कुछ ट्रैफ़िक VPN के बाहर होगा ताकि आपका डिवाइस ठीक से काम कर सके।\n\nआप App Store से अपना पसंदीदा VPN कॉन्फ़िगरेशन डाउनलोड कर सकते हैं और इसे अपने डिवाइस पर इंस्टॉल कर सकते हैं। आपके नियोक्ता या स्कूल जैसे संस्थान Apple Watch या Apple TV सहित अपने द्वारा प्रबंधित डिवाइस पर VPN कॉन्फ़िगरेशन भी सेट कर सकते हैं। आप सेटिंग्ज़ > सामान्य > VPN और डिवाइस प्रबंधन > VPN पर जाकर, फिर VPN कॉन्फ़िगरेशन जोड़ें पर टैप करके और प्रासंगिक जानकारी दर्ज करके iOS, iPadOS या visionOS डिवाइस पर मैनुअल रूप से भी VPN जोड़ सकते हैं। Mac पर, सिस्टम सेटिंग्ज़ > नेटवर्क पर जाएँ, अधिक बटन पर क्लिक करें, फिर VPN कॉन्फ़िगरेशन जोड़ें चुनें और प्रासंगिक जानकारी दर्ज करें।\n\nयह ज़रूरी है कि आप सिर्फ़ उसी VPN सेवा का इस्तेमाल करें जिस पर आप विश्वास करते हैं। जब कोई VPN कॉन्फ़िगरेशन इंस्टॉल और ऐक्टिव किया जाता है, तो आपका VPN प्रोवाइडर आपकी ऑनलाइन ऐक्टिविटी को देखने, इंटरसेप्ट करने और संशोधित करने में समर्थ हो सकता है। अपने VPN कॉन्टेंट प्रोवाइडर की सेवाओं और आपके डेटा को इकट्ठा करने के तरीक़े के बारे में ज़्यादा जानने के लिए आपको उनके गोपनीयता व्यवहारों की समीक्षा करनी चाहिए। जब आप किसी तृतीय-पक्ष ऐप का इस्तेमाल कर रहे हों या ऐसी वेबसाइट ब्राउज़ कर रहे हों जो Apple द्वारा ऑपरेट नहीं की जाती है, तो Apple आपके डिवाइस पर VPN सेवा के आपके उपयोग के बारे में इस तरह से जानकारी एकत्रित नहीं करता है जिससे कि आपकी पहचान हो सके।\n\nVPN प्रोवाइडर नियंत्रित करते हैं कि आपका VPN कॉन्फ़िगरेशन कैसे ऑपरेट होता है, जिसमें यह भी शामिल है कि आपके डिवाइस से बाहर छोड़ने पर ट्रैफ़िक कैसे रूट किया जाता है, यह एंक्रिप्ट किया गया है या नहीं और आप जिन वेबसाइटों से जुड़े हैं, उनके लिए कौन-सा डेटा उपलब्ध है।\n\nअगर VPN कॉन्फ़िगरेशन किसी ऐसे डिवाइस पर इंस्टॉल और ऐक्टिव किया जाता है जहाँ iCloud प्राइवेट रिले को सक्षम किया गया है, तो VPN कॉन्फ़िगरेशन उन इंटरनेट कनेक्शन की रूटिंग निर्धारित करेगा जो किसी अन्य तरह से प्राइवेट रिले द्वारा संरक्षित हैं।\n\nआपके डिवाइस के सभी नेटवर्क ट्रैफ़िक को सक्रिय VPN के ज़रिए रूट नहीं किया जाएगा। अगर कोई ऐप डेवलपर अपने ऐप के लिए आवश्यक प्रकार के कनेक्शन को निर्दिष्ट करता है, जैसे कि केवल मोबाइल डेटा, तो उस ऐप से नेटवर्क ट्रैफ़िक को ऐक्टिव VPN कॉन्फ़िगरेशन में शामिल नहीं किया जाता है। iOS, iPadOS और visionOS डिवाइस पर, आपका VPN प्रोवाइडर इस विकल्प को ओवरराइड कर सकता है और ऐक्टिव VPN कॉन्फ़िगरेशन के बाहर ज़्यादातर ऐप्स, सेवाओं और सिस्टम फ़ंक्शन को नेटवर्क ट्रैफ़िक को रूट करने से रोक सकता है।\n\nज़रूरी सिस्टम सेवाओं के लिए आवश्यक कुछ ट्रैफ़िक को किसी ऐक्टिव VPN कॉन्फ़िगरेशन के ज़रिए रूट नहीं किया जाएगा, जैसे कि आपके स्थानीय नेटवर्क के राउटर के साथ सीधा कनेक्शन (जो नेटवर्क कनेक्शन स्थापित करने और बनाए रखने के लिए आवश्यक हैं) और कुछ मोबाइल सेवाएँ जो केवल मोबाइल नेटवर्क पर काम करती हैं (जिसमें विज़ुअल वॉइसमेल शामिल हो सकता है, जहाँ भी उपलब्ध हो)।"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Et virtuelt privat netværk (VPN) er en tjeneste, der kan kryptere og sende udvalgt netværkstrafik fra din enhed på en måde, der muligvis skjuler din IP-adresse fra websteder og tjenester, du besøger og interagerer med. Når et VPN er aktivt, vil der stadig være trafik, der er nødvendig for vigtige systemtjenester, som finder sted uden om VPN-forbindelsen, så din enhed kan fungere korrekt.\n\nDu kan hente din foretrukne VPN-konfiguration fra App Store og installere den på din enhed. Institutioner, f.eks. din arbejdsgiver eller skole, kan også indstille VPN-konfigurationer på enheder, de administrerer, herunder Apple Watch eller Apple TV. Du kan også tilføje et VPN manuelt på iOS-, iPadOS eller visionOS-enheder ved at gå til Indstillinger > Generelt > VPN og Administration af enhed > VPN, trykke på Tilføj VPN-konfiguration og indtaste de relevante oplysninger. På Mac skal du gå til Systemindstillinger > Netværk, klikke på knappen Mere, vælge Tilføj VPN-konfiguration og indtaste de relevante oplysninger.\n\nDet er vigtigt, at du kun bruger en VPN-tjeneste, du stoler på. Når en VPN-konfiguration er installeret og aktiv, kan din VPN-udbyder muligvis se, opfange og ændre dine onlineaktiviteter. Du bør gennemgå din VPN-udbyders anonymitetspolitik for at få flere oplysninger om tjenesten, og hvordan udbyderen håndterer dine data. Når du bruger en tredjepartsapp eller surfer på websteder, der ikke administreres af Apple, indsamler Apple ikke oplysninger om brugen af en VPN-tjeneste på din enhed på en måde, der kan identificere dig.\n\nVPN-udbydere styrer, hvordan din VPN-konfiguration fungerer, f.eks. hvordan trafik sendes, når den forlader din enhed, om den er krypteret, og hvilke data der er tilgængelige for websteder, du er knyttet til.\n\nHvis en VPN-konfiguration er installeret og aktiv på en enhed, hvor Privat datatrafik med iCloud er slået til, bestemmer VPN-konfigurationen, hvordan internetforbindelser, der normalt beskyttes af Privat datatrafik, sendes.\n\nNogle af dine enheders netværkstrafik sendes ikke gennem et aktivt VPN. Hvis en appudvikler angiver en krævet forbindelsestype til appen, f.eks. kun mobildata, bliver netværkstrafik fra den pågældende app udelukket i aktive VPN-konfigurationer. På iOS-, iPadOS og visionOS-enheder kan din VPN-udbyder vælge at tilsidesætte dette valg og forhindre de fleste apps, tjenester og systemfunktioner i at sende netværkstrafik uden om en aktiv VPN-konfiguration.\n\nTrafik, der er nødvendig for vigtige systemtjenester, sendes ikke gennem en aktiv VPN-konfiguration, f.eks. direkte forbindelser med dit lokale netværks routere (som er nødvendige for at etablere og opretholde en netværksforbindelse) og visse mobiltjenester, der kun fungerer på mobilnetværk (hvilket muligvis inkluderer Visuel telefonsvarer, hvor den er tilgængelig)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A virtual private network (VPN) is a service that can encrypt and route certain network traffic from your device in a way that may hide your IP address from the websites and services you visit and interact with. Even when a VPN is active, some traffic that is necessary for essential system services will take place outside the VPN so that your device can function properly.\n\nYou can download your preferred VPN configuration from the App Store and install it on your device. Institutions, such as your employer or school, can also set up VPN configurations on devices they manage, including Apple Watch or Apple TV. You can also manually add a VPN on iOS, iPadOS, or visionOS devices by going to Settings > General > VPN & Device Management > VPN, then tapping Add VPN Configuration and entering relevant information. On Mac, go to System Settings > Network, click the More button, then select Add VPN Configuration and enter relevant information.\n\nIt is important that you only use a VPN service you trust. When a VPN configuration is installed and active, your VPN provider may be able to see, intercept, and modify your online activity. You should review your VPN provider’s privacy practices to learn more about their service and how they handle your data. When you are using a third-party app or browsing websites not operated by Apple, Apple does not collect information about your use of a VPN service on your device in a way that identifies you.\n\nVPN providers control how your VPN configuration operates, including how traffic is routed when it leaves your device, whether it is encrypted, and what data is available to websites you are connected to.\n\nIf a VPN configuration is installed and active on a device where iCloud Private Relay is enabled, the VPN configuration will determine the routing of internet connections that would otherwise be protected by Private Relay.\n\nNot all of your device’s network traffic will be routed through an active VPN. If an app developer specifies a required type of connection for their app, such as cellular only, network traffic from that app is excluded in active VPN configurations. On iOS, iPadOS, and visionOS devices, your VPN provider can choose to override this choice and prevent most apps, services, and system functions from routing network traffic outside of an active VPN configuration.\n\nSome traffic that is necessary for essential system services will not be routed through an active VPN configuration, such as direct connections with your local network’s routers (which are necessary to establish and maintain a network connection), and certain cellular services that work only on cellular networks (which may include Visual Voicemail, where available)."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN (Virtuelt privat nettverk) er en tjeneste som kan kryptere og dirigere nettverkstrafikk fra enheten din på en måte som skjuler IP-adressen fra nettsteder og tjenester du besøker og samhandler med. Noe av trafikken som er nødvendig for å utføre kritiske systemtjenester, vil foregå utenfor VPN-tjenesten selv når VPN-funksjonen er på, slik at enheten din kan fungere som normalt.\n\nDu kan laste ned en VPN-konfigurasjon fra App Store og installere den på enheten din. Institusjoner som arbeidsgiveren eller skolen din, kan også konfigurere VPN på enheter som administreres av dem, inkludert Apple Watch eller Apple TV. Du kan også legge til VPN manuelt på iOS-, iPadOS- eller visionOS-enheter ved å gå til Innstillinger > Generelt > VPN og enhetsadministrering > VPN, trykke på Legg til VPN-konfigurasjon og oppgi relevant informasjon. På Mac går du til Systeminnstillinger > Nettverk, klikker på Mer-knappen, velger Legg til VPN-konfigurasjon og oppgir relevant informasjon.\n\nDet er viktig at du kun bruker VPN-tjenester du stoler på. Når en VPN-konfigurasjon er installert og aktiv, kan VPN-leverandøren kanskje se, fange opp eller endre nettaktiviteten din. Du bør lese gjennom personvern­praksisen til VPN-leverandøren for å lære mer om tjenesten og hvordan dataene dine vil bli behandlet. Når du bruker en tredjepartsapp eller besøker nettsteder som ikke drives av Apple, vil ikke Apple samle inn informasjon om bruken din av VPN-tjenester på enheten på en måte som identifiserer deg.\n\nVPN-leverandører kontrollerer hvordan VPN-konfigurasjonen din fungerer, inkludert hvordan trafikk dirigeres ut fra enheten, om den krypteres eller ikke, og hvilke data som er tilgjengelige for nettsteder du kobler til.\n\nHvis en VPN-konfigurasjon er installert og aktiv på en enhet der Privat trafikk med iCloud er på, er det VPN-konfigurasjonen som styrer hvordan internett­forbindelsene dirigeres i tilfeller som ellers ville vært beskyttet av Privat trafikk.\n\nIkke all nettverkstrafikk på enheten vil bli dirigert via en aktiv VPN-tjeneste. Hvis utvikleren av en app krever at den bruker en bestemt type forbindelse, som kun over mobilnett, vil nettverkstrafikk fra den appen bli ekskludert fra aktive VPN-konfigurasjoner. På iOS-, iPadOS- og visionOS-enheter kan VPN-leverandøren velge å overstyre dette valget og hindre de fleste apper, tjenester og systemfunksjoner i å sende nettverkstrafikk utenfor den aktive VPN-konfigurasjonen.\n\nNoe trafikk som er nødvendig for viktige systemtjenester, vil ikke bli sendt via en aktiv VPN-konfigurasjon, for eksempel direkte forbindelse til ruteren på det lokale nettverket ditt (som er nødvendig for å etablere og opprettholde en nettverksforbindelse), og enkelte mobiltjenester som kun fungerer med mobilnettverk (dette kan inkludere Visual Voicemail der tilgjengelig)."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un réseau privé virtuel (VPN) est un service en mesure de chiffrer et de rediriger une partie du trafic réseau de votre appareil d’une façon qui pourrait empêcher les sites Web que vous visitez et les services que vous utilisez de voir votre adresse IP. Même lorsqu’un VPN est actif, une partie du trafic nécessaire aux services système essentiels ne passera pas par le VPN afin de permettre à votre appareil de fonctionner correctement.\n\nVous pouvez télécharger votre configuration VPN préférée à partir de l’App Store et l’installer sur votre appareil. Les établissements tels que votre employeur ou votre école peuvent également ajouter des configurations VPN aux appareils qu’ils gèrent, y compris des Apple Watch ou Apple TV. Vous pouvez également ajouter manuellement un VPN aux appareils iOS, iPadOS ou visionOS en accédant à Réglages > Général > VPN et gestion de l’appareil > VPN, puis en touchant Ajouter une configuration VPN et en entrant les informations nécessaires. Sur Mac, accédez à Réglages système > Réseau, cliquez sur le bouton Plus, puis sélectionnez Ajouter une configuration VPN et entrez les informations nécessaires.\n\nVeillez à utiliser uniquement des services VPN de confiance. Lorsqu’une configuration VPN est installée et active, le fournisseur du VPN pourrait être en mesure de voir, intercepter et modifier votre activité en ligne. Veillez à examiner les pratiques du fournisseur du VPN en matière de confidentialité pour en savoir plus sur son service et la façon dont il traite vos données. Lorsque vous utilisez une app tierce ou que vous visitez des sites Web non gérés par Apple, Apple ne recueille aucune information sur l’utilisation éventuelle d’un service de VPN sur votre appareil d’une façon qui permettrait de vous identifier.\n\nLes fournisseurs de VPN contrôlent le fonctionnement de votre VPN, y compris l’acheminement du trafic sortant, son chiffrement éventuel et les données accessibles par les sites Web auxquels vous vous connectez.\n\nSi une configuration VPN est installée et active sur un appareil avec le relais privé iCloud activé, la configuration VPN déterminera l’acheminement des connexions Internet qui auraient autrement été protégées par le relais privé.\n\nTout le trafic réseau de votre appareil ne sera pas acheminé par un VPN actif. Si un développeur requiert un type de connexion pour son app, comme une connexion cellulaire uniquement, le trafic réseau de cette app sera exclu des configurations VPN. Sur les appareils iOS, iPadOS et visionOS, votre fournisseur de VPN peut choisir d’ignorer ce choix et d’empêcher la plupart des apps, services et fonctions système d’acheminer le trafic réseau en dehors d’une configuration VPN active.\n\nUne partie du trafic nécessaire aux services système essentiels ne sera pas acheminée par une configuration VPN active, comme les connexions directes avec les routeurs de votre réseau local (qui sont nécessaires à l’établissement et au maintien de la connexion réseau) et certains services cellulaires qui ne fonctionnent que sur des réseaux cellulaires (comme la messagerie vocale visuelle là où elle est offerte)."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เครือข่ายส่วนตัวเสมือน (VPN) คือบริการที่สามารถเข้ารหัสและกำหนดเส้นทางการรับส่งข้อมูลเครือข่ายบางอย่างจากอุปกรณ์ของคุณในลักษณะที่อาจซ่อนที่อยู่ IP ของคุณจากเว็บไซต์และบริการที่คุณเยี่ยมชมและโต้ตอบด้วยได้ แม้ว่า VPN จะใช้งานอยู่ การรับส่งข้อมูลบางอย่างที่จำเป็นสำหรับบริการระบบที่สำคัญจะเกิดขึ้นนอก VPN เพื่อให้อุปกรณ์ของคุณสามารถทำงานได้อย่างถูกต้อง\n\nคุณสามารถดาวน์โหลดการกำหนดค่า VPN ที่ต้องการจาก App Store แล้วติดตั้งบนอุปกรณ์ของคุณได้ สถาบัน เช่น นายจ้างหรือโรงเรียนของคุณ ยังสามารถตั้งค่าการกำหนดค่า VPN บนอุปกรณ์ที่เขาจัดการได้อีกด้วย รวมถึง Apple Watch หรือ Apple TV คุณยังสามารถเพิ่ม VPN บนอุปกรณ์ iOS, iPadOS หรือ visionOS ด้วยตัวเองได้อีกด้วยโดยไปที่การตั้งค่า > ทั่วไป > การจัดการ VPN และอุปกรณ์ > VPN จากนั้นแตะเพิ่มการกำหนดค่า VPN แล้วป้อนข้อมูลที่เกี่ยวข้อง บน Mac ให้ไปที่การตั้งค่าระบบ > เครือข่าย แล้วคลิกปุ่มเพิ่มเติม จากนั้นเลือกเพิ่มการกำหนดค่า VPN แล้วป้อนข้อมูลที่เกี่ยวข้อง\n\nสิ่งสำคัญคือคุณควรใช้บริการ VPN ที่คุณเชื่อถือเท่านั้น เมื่อการกำหนดค่า VPN ถูกติดตั้งและใช้งานอยู่ ผู้ให้บริการ VPN ของคุณอาจสามารถดู ดักข้อมูล และแก้ไขกิจกรรมทางออนไลน์ของคุณได้ คุณควรตรวจสอบแนวปฏิบัติด้านความเป็นส่วนตัวของผู้ให้บริการ VPN ของคุณเพื่อเรียนรู้เพิ่มเติมเกี่ยวกับบริการและวิธีที่พวกเขาจัดการข้อมูลของคุณ เมื่อคุณกำลังใช้แอปของบริษัทอื่นหรือกำลังท่องเว็บไซต์ที่ไม่ได้ดำเนินการโดย Apple อยู่ Apple จะไม่เก็บรวบรวมข้อมูลเกี่ยวกับการใช้บริการ VPN ของคุณบนอุปกรณ์ในลักษณะที่สามารถระบุตัวคุณได้\n\nผู้ให้บริการ VPN ควบคุมวิธีที่การกำหนดค่า VPN ของคุณดำเนินการ ซึ่งรวมถึงวิธีกำหนดเส้นทางการรับส่งข้อมูลเมื่อไม่มีข้อมูลอยู่ในอุปกรณ์ของคุณแล้ว ข้อมูลมีการเข้ารหัสหรือไม่ และข้อมูลที่มีสำหรับเว็บไซต์ที่คุณเชื่อมต่ออยู่\n\nถ้าการกำหนดค่า VPN ถูกติดตั้งและใช้งานอยู่บนอุปกรณ์ในขณะที่เปิดใช้งาน iCloud Private Relay การกำหนดค่า VPN จะกำหนดเส้นทางของการเชื่อมต่อกับอินเทอร์เน็ตที่จะได้รับการปกป้องโดย Private Relay\n\nการรับส่งข้อมูลเครือข่ายของอุปกรณ์ของคุณบางส่วนจะถูกกำหนดเส้นทางผ่าน VPN ที่ใช้งานอยู่ ถ้านักพัฒนาแอประบุประเภทของการเชื่อมต่อที่ต้องใช้สำหรับแอป เช่น เฉพาะเซลลูลาร์ การรับส่งข้อมูลเครือข่ายจากแอปนั้นจะไม่รวมอยู่ในการกำหนดค่า VPN ที่ใช้งานอยู่ บนอุปกรณ์ iOS, iPadOS หรือ visionOS ผู้ให้บริการ VPN ของคุณสามารถเลือกที่จะเขียนทับตัวเลือกนี้และป้องกันไม่ให้แอป บริการ และฟังก์ชั่นระบบส่วนใหญ่กำหนดเส้นทางการรับส่งข้อมูลเครือข่ายนอกเหนือจากการกำหนดค่า VPN ที่ใช้งานอยู่ได้\n\nการรับส่งข้อมูลบางอย่างที่จำเป็นสำหรับบริการระบบที่สำคัญจะไม่ถูกกำหนดเส้นทางผ่านการกำหนดค่า VPN ที่ใช้งานอยู่ เช่น การเชื่อมต่อกับเราท์เตอร์ของเครือข่ายในพื้นที่ของคุณโดยตรง (ซึ่งจำเป็นในการสร้างและรักษาการเชื่อมต่อกับเครือข่าย) และบริการเซลลูลาร์บางอย่างที่ทำงานเฉพาะบนเครือข่ายเซลลูลาร์ (ซึ่งอาจรวมถึง Visual Voicemail หากมี)"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "虚拟专用网络(VPN)服务可能对你访问和交互的网站和服务隐藏IP地址，通过这种方式来加密并路由设备的某些网络流量。即使已启用VPN，基本系统服务所需的部分流量也不会经过VPN，以确保设备正常运行。\n\n你可以从App Store下载喜爱的VPN配置并在设备上安装。雇佣单位或学校等机构还可在其管理的设备上（包括Apple Watch或Apple TV）设置VPN配置。你还可以在iOS、iPadOS或visionOS设备上前往“设置”>“通用”>“VPN与设备管理”> VPN，然后轻点“添加VPN配置”并输入相关信息来手动添加VPN。在Mac上，前往“系统设置”>“网络”，点按“更多”按钮，然后选择“添加VPN配置”并输入相关信息。\n\n仅使用信任的VPN服务十分重要。安装并启用VPN配置后，VPN提供商可能可以查看、截获和修改你的在线活动。你应查阅VPN提供商的隐私惯例来进一步了解其服务和处理你数据的方式。使用第三方App或浏览非Apple运营的网站时，Apple不会以识别你个人身份的形式收集设备上有关VPN服务使用相关的信息。\n\nVPN提供商控制VPN配置的运行方式，包括流量离开设备时如何路由、流量是否加密以及哪些数据对连接的网站可用。\n\n如果在已启用iCloud专用代理的设备上安装并启用了VPN配置，VPN配置将确定本应受专用代理保护的互联网连接的路由。\n\n并非设备的所有网络流量都会通过已启用的VPN进行路由。如果App开发者指定了App的必要连接类型，例如仅限蜂窝网络，则该App的网络流量会在已启用的VPN配置中被排除。在运行iOS、iPadOS和visionOS的设备上，VPN提供商可以选择覆盖此类选项，并阻止大多数App、服务和系统功能不经已启用的VPN配置路由网络流量。\n\n基本系统服务所需的部分流量将不会通过已启用的VPN配置路由，例如与本地网络路由器的直接连接（对于建立和保持网络连接而言必需）和仅在蜂窝网络下才能使用的某些蜂窝网络服务（可能包括可视化语音信箱，如果提供）。"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Virtualus privatus tinklas (VPN) yra paslauga, kuri gali užšifruoti ir nukreipti tam tikrą tinklo duomenų srautą iš jūsų įrenginio taip, kad jūsų IP adresas būtų paslėptas nuo svetainių ir paslaugų, kuriose lankotės ir su kuriomis sąveikaujate. Net kai VPN yra aktyvus, tam tikras duomenų srautas, reikalingas pagrindinėms sistemos paslaugoms, vyks už VPN ribų, kad jūsų įrenginys galėtų tinkamai veikti.\n\nGalite atsisiųsti pageidaujamą VPN konfigūraciją iš „App Store“ ir įdiegti ją savo įrenginyje. Įstaigos, pvz., jūsų darbdavys ar mokykla, taip pat gali nustatyti VPN konfigūracijas savo valdomuose įrenginiuose, įskaitant „Apple Watch“ arba „Apple TV“. Taip pat galite neautomatiniu būdu įtraukti VPN „iOS“, „iPadOS“ arba „visionOS“ įrenginiuose, pasirinkdami „Nustatymai“ > „Bendrieji“ > „VPN ir įrenginių valdymas“ > „VPN“, tada bakstelėdami „Pridėti VPN konfigūraciją“ ir įvesdami atitinkamą informaciją. „Mac“ įrenginyje pasirinkite „Sistemos nustatymai“ > „Tinklas“, spustelėkite mygtuką „Daugiau“, tada pasirinkite „Pridėti VPN konfigūraciją“ ir įveskite atitinkamą informaciją.\n\nSvarbu, kad naudotumėte tik tą VPN paslaugą, kuria pasitikite. Kai VPN konfigūracija yra įdiegta ir aktyvi, jūsų VPN teikėjas gali matyti, perimti ir keisti jūsų veiklą internete. Turėtumėte peržiūrėti savo VPN teikėjo privatumo praktiką, kad sužinotumėte daugiau apie jo paslaugą ir kaip jis tvarko jūsų duomenis. Kai naudojatės trečiosios šalies programa arba naršote ne „Apple“ valdomose svetainėse, „Apple“ nerenka informacijos apie jūsų naudojimąsi VPN paslauga jūsų įrenginyje tokiu būdu, kad būtų galima jus identifikuoti.\n\nVPN teikėjai kontroliuoja, kaip veikia jūsų VPN konfigūracija, įskaitant tai, kaip duomenų srautas nukreipiamas, kai jis palieka jūsų įrenginį, ar jis užšifruotas ir kokie duomenys pasiekiami svetainėms, prie kurių esate prisijungę.\n\nJei VPN konfigūracija yra įdiegta ir aktyvi įrenginyje, kuriame įjungta „iCloud“ privatusis perdavimas, VPN konfigūracija nustatys interneto ryšių, kurie kitu atveju būtų apsaugoti su privačiuoju perdavimu, maršrutą.\n\nNe visas jūsų įrenginio tinklo duomenų srautas bus nukreiptas per aktyvų VPN. Jei programos kūrėjas nurodo reikalingą programos ryšio tipą, pvz., tik mobilųjį ryšį, tinklo duomenų srautas iš tos programos neįtraukiamas į aktyvias VPN konfigūracijas. „iOS“, „iPadOS“ ir „visionOS“ įrenginiuose VPN teikėjas gali nepaisyti šio pasirinkimo ir neleisti daugeliui programų, paslaugų ir sistemos funkcijų nukreipti tinklo duomenų srauto už aktyvios VPN konfigūracijos ribų.\n\nTam tikras duomenų srautas, reikalingas pagrindinėms sistemos paslaugoms, nebus nukreipiamas per aktyvią VPN konfigūraciją, pvz., tiesioginiai ryšiai su vietinio tinklo maršruto parinktuvais (kurie būtini norint užmegzti ir palaikyti tinklo ryšį) ir tam tikros mobiliojo ryšio paslaugos, veikiančios tik mobiliuosiuose tinkluose (kurios gali apimti „Visual Voicemail“, kai pasiekiama)."
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A virtual private network (VPN) is a service that can encrypt and route certain network traffic from your device in a way that may hide your IP address from the websites and services you visit and interact with. Even when a VPN is active, some traffic necessary for essential system services will take place outside the VPN so your device can function properly.\n\nYou can download your preferred VPN configuration from the App Store and install it on your device. Institutions, such as your employer or school, can also set up VPN configurations on devices they manage, including Apple Watch or Apple TV. You can also manually add a VPN on iOS, iPadOS or visionOS devices by going to Settings > General > VPN & Device Management > VPN, then tapping Add VPN Configuration and entering relevant information. On Mac, go to System Settings > Network, click the More button, then select Add VPN Configuration and enter the relevant information.\n\nIt is important that you only use a VPN service you trust. When a VPN configuration is installed and active, your VPN provider may be able to see, intercept and modify your online activity. You should review your VPN provider’s privacy practices to learn more about their service and how they handle your data. When you are using a third-party app or browsing websites not operated by Apple, Apple does not collect information about your use of a VPN service on your device in a way that identifies you.\n\nVPN providers control how your VPN configuration operates, including how traffic is routed when it leaves your device, whether it is encrypted, and what data is available to websites you are connected to.\n\nIf a VPN configuration is installed and active on a device where iCloud Private Relay is enabled, the VPN configuration will determine the routing of internet connections that would otherwise be protected by Private Relay.\n\nNot all your device’s network traffic will be routed through an active VPN. If an app developer specifies a required type of connection for their app, such as mobile data only, network traffic from that app is excluded in active VPN configurations. On iOS, iPadOS and visionOS devices, your VPN provider can choose to override this choice and prevent most apps, services and system functions from routing network traffic outside of an active VPN configuration.\n\nSome traffic necessary for essential system services will not be routed through an active VPN configuration, such as direct connections with your local network’s routers (which are necessary to establish and maintain a network connection), and certain mobile services that only work on mobile networks (which may include Visual Voicemail, where available)."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una red privada virtual (VPN) es un servicio que puede encriptar y direccionar cierto tráfico de red desde tu dispositivo de manera que oculte tu dirección IP de sitios y servicios que visites y con los que interactúes. Incluso cuando una red VPN está activa, parte del tráfico que no sea necesario para los servicios esenciales del sistema quedará fuera de dicha red de manera que tu dispositivo funcione adecuadamente.\n\nPuedes descargar la configuración de tu VPN preferida desde App Store e instalarla en tu dispositivo. Algunas instituciones, como tu empresa empleadora o centro educativo, también pueden establecer configuraciones de VPN en los dispositivos que administran, incluyendo el Apple Watch o el Apple TV. También puedes agregar manualmente una VPN en dispositivos iOS, iPadOS o visionOS en Configuración > General > Admón. de dispositivos y VPN > VPN, toca Agregar configuración de VPN e ingresa la información relevante. En una Mac, ve a Configuración del Sistema > Red, haz clic en el botón de más, selecciona Agregar configuración de VPN e ingresa la información relevante.\n\nEs importante que solamente utilices un servicio de red VPN en el que confíes. Cuando una configuración VPN está instalada y activa, tu proveedor de red VPN podría interceptar y modificar tu actividad en línea. Es recomendable revisar las prácticas de privacidad de tu proveedor de VPN para obtener detalles sobre cómo manejan tus datos. Cuando usas una app de terceros o exploras sitios que no son operados por Apple, no se recopila información acerca de cómo usas un servicio de VPN en tu dispositivo de manera que pudiera identificarte.\n\nLos proveedores de redes VPN controlan cómo opera tu configuración de VPN incluyendo cómo se direcciona el tráfico al salir de tu dispositivo —incluso si está encriptado— y qué datos están disponibles para sitios con los que te conectaste.\n\nSi se instaló y activó una configuración de VPN en un dispositivo con la retransmisión privada de iCloud activada, la configuración de la VPN determinará el direccionamiento de las conexiones a Internet que bajo otra circunstancia estarían protegidas por la retransmisión privada.\n\nNo todo el tráfico de red de tu dispositivo se direcciona mediante una VPN activa. Si un desarrollador especifica un tipo requerido de conexión para su app —como únicamente la red celular—, el tráfico de red de dicha app estará excluido en la configuración activa de redes VPN. Sin embargo, en dispositivos iOS, iPadOS y visionOS, tu proveedor de VPN puede anular esta selección e impedir que la mayoría de apps, servicios y funciones del sistema direccionen el tráfico de red fuera de una configuración de VPN activa.\n\nCierto tráfico que es necesario para los servicios esenciales del sistema no se direccionará mediante una configuración de red VPN activa, tal como conexiones directas con los routers de tu red local (los cuales son necesarios para establecer y mantener una conexión de red), y ciertos servicios de red celular que únicamente funcionan en dicho tipo de redes (los cuales pueden incluir buzón de voz visual, según su disponibilidad)."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Virtuální privátní síť (VPN) je služba umožňující zašifrovat a přesměrovat určité typy dat, které vaše zařízení přenáší po síti, tak, aby vaše IP adresa zůstala skrytá před webovými stránkami a službami, jež navštěvujete a komunikujete s nimi. I když je VPN aktivní, některé základní systémové služby potřebují přenášet data mimo VPN, aby mohlo zařízení správně fungovat.\n\nKonfiguraci vámi zvolené VPN si můžete stáhnout z App Storu a nainstalovat do svého zařízení. Instituce, například váš zaměstnavatel nebo škola, můžou také nastavit konfigurace VPN na zařízeních, která spravují, včetně Apple Watch a Apple TV. Na iOS, iPadOS a visionOS zařízeních můžete VPN přidat i ručně, když v Nastavení > Obecné > VPN a správa zařízení > VPN klepnete na volbu Přidat konfiguraci VPN a zadáte potřebné údaje. Na Macu přejděte do Nastavení systému > Síť, klikněte na tlačítko Více, vyberte volbu Přidat konfiguraci VPN a zadejte potřebné informace.\n\nJe důležité používat výhradně VPN služby, kterým důvěřujete. Po nainstalování a aktivaci konfigurace VPN získává její poskytovatel možnost sledovat, blokovat a měnit data vašich online aktivit. Doporučujeme vám seznámit se s praktickými postupy ochrany soukromí, které váš poskytovatel VPN uplatňuje, abyste měli víc informací o jeho službách a o tom, jak s vašimi daty nakládá. Když používáte aplikace od nezávislých vývojářů nebo navštěvujete webové stránky provozované jinými společnostmi než Apple, společnost Apple neshromažďuje informace o tom, jak službu VPN na svém zařízení využíváte, způsobem, který by umožňoval vaši osobní identifikaci.\n\nProvozní charakteristiky vaší konfigurace VPN, mimo jiné kudy jsou data směrována poté, co opustí vaše zařízení, zda jsou zašifrovaná a jaká část z nich bude k dispozici webům, k nimž se připojíte, určuje váš poskytovatel VPN.\n\nMáte‑li na zařízení současně s nainstalovanou a aktivovanou konfigurací VPN zapnutý také soukromý přenos přes iCloud, bude konfigurace VPN rozhodovat o směrování internetových připojení, která by bez ní byla chráněna soukromým přenosem.\n\nPřes aktivní VPN neprocházejí všechna data, která vaše zařízení po síti přenáší. Pokud vývojář stanoví pro svou aplikaci požadovaný typ připojení, například pouze přes mobilní síť, data přenášená po síti touto aplikací budou z aktivních konfigurací VPN vyloučena. Na iOS, iPadOS a visionOS zařízeních však může poskytovatel VPN z vlastního rozhodnutí tuto volbu potlačit a zabránit většině aplikací, služeb a systémových funkcí ve směrování datového provozu mimo aktivní konfiguraci VPN.\n\nČást přenášených dat, nezbytná pro základní systémové služby, nebude přes aktivní konfiguraci VPN směrována. Jedná se například o přímá propojení se směrovači místní sítě (bez nichž nelze připojení k síti navázat ani udržovat) a o některé mobilní služby fungující jen v mobilních sítích (mimo jiné služba Grafický záznamník, je‑li v dané oblasti k dispozici)."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rangkaian peribadi maya (VPN) ialah perkhidmatan yang boleh menyulitkan dan menghalakan trafik rangkaian tertentu daripada peranti anda melalui cara yang boleh menyembunyikan alamat IP anda daripada tapak web dan perkhidmatan yang anda lawati serta berinteraksi. Walaupun VPN aktif, sesetengah trafik yang diperlukan untuk perkhidmatan sistem penting akan berlaku di luar VPN supaya peranti anda boleh berfungsi dengan betul.\n\nAnda boleh memuat turun konfigurasi VPN pilihan anda daripada App Store dan memasangnya pada peranti anda. Institusi, seperti majikan atau sekolah anda, boleh juga menyediakan konfigurasi VPN pada peranti yang mereka urus, termasuk Apple Watch atau Apple TV. Anda juga boleh menambahkan VPN secara manual pada peranti iOS, iPadOS atau visionOS dengan pergi ke Seting > Umum > VPN & Pengurusan Peranti > VPN, kemudian mengetik Tambah Konfigurasi VPN dan memasukkan maklumat yang berkaitan. Pada Mac, pergi ke Seting Sistem > Rangkaian, klik butang Lagi, kemudian pilih Tambah Konfigurasi VPN dan masukkan maklumat yang berkaitan.\n\nAnda mesti hanya menggunakan perkhidmatan VPN yang anda percayai. Apabila konfigurasi VPN dipasang dan aktif, penyedia VPN anda mungkin dapat melihat, memintas dan mengubah suai aktiviti dalam talian anda. Anda patut menyemak amalan privasi penyedia VPN anda untuk mengetahui lebih lanjut tentang perkhidmatan mereka dan cara mereka mengendalikan data anda. Apabila anda menggunakan app pihak ketiga atau melayari tapak web yang tidak dikendalikan Apple, Apple tidak mengumpulkan maklumat tentang penggunaan perkhidmatan VPN oleh anda pada peranti anda melalui cara yang mengenal pasti anda.\n\nPenyedia VPN mengawal cara konfigurasi VPN anda beroperasi, termasuk cara trafik dihalakan apabila ia meninggalkan peranti anda, sama ada ia disulitkan dan data yang tersedia kepada tapak web yang anda bersambung.\n\nJika konfigurasi VPN anda dipasang dan aktif pada peranti yang Geganti Peribadi iCloud didayakan, konfigurasi VPN akan menentukan penghalaan sambungan internet yang sebaliknya akan dilindungi oleh Geganti Peribadi.\n\nBukan semua trafik rangkaian peranti anda akan dihalakan menerusi VPN aktif. Jika pembangun app menentukan jenis sambungan yang diperlukan untuk app mereka, seperti selular sahaja, trafik rangkaian daripada app tersebut dikecualikan dalam konfigurasi VPN yang aktif. Pada peranti iOS, iPadOS dan visionOS, penyedia VPN anda boleh memilih untuk menggantikan pilihan ini dan menghalang kebanyakan app, perkhidmatan serta fungsi sistem daripada menghalakan trafik rangkaian di luar konfigurasi VPN yang aktif.\n\nSesetengah trafik yang diperlukan untuk perkhidmatan sistem penting tidak akan dihalakan menerusi konfigurasi VPN aktif, seperti sambungan terus dengan penghala rangkaian setempat anda (yang diperlukan untuk mewujudkan dan mengekalkan sambungan rangkaian) serta perkhidmatan selular tertentu yang hanya berfungsi pada rangkaian selular (yang mungkin termasuk Mel Suara Visual, jika tersedia)."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Virtuálna privátna sieť (VPN) je služba, ktorá dokáže zašifrovať a presmerovať určité prenosy dát z vášho zariadenia cez sieť tak, aby bola vaša IP adresa skrytá pred webovými stránkami a službami, ktoré navštevujete a s ktorými komunikujete. Aj keď je VPN aktívna, niektoré základné systémové služby budú prenášať dáta mimo VPN, aby vaše zariadenie mohlo správne fungovať.\n\nPreferovanú konfiguráciu VPN si môžete stiahnuť z App Storu a nainštalovať na svoje zariadenie. Na zariadeniach spravovaných inštitúciami (vrátane Apple Watch alebo Apple TV), ako je napríklad vaša škola alebo zamestnávateľ, môže konfiguráciu VPN nastaviť aj daná inštitúcia. VPN si okrem toho môžete pridať aj manuálne. Na iOS, iPadOS alebo visionOS zariadení prejdite do Nastavenia > Všeobecné > VPN a správa zariadenia > VPN, kde klepnite na možnosť Pridať konfiguráciu VPN a zadajte príslušné informácie. Na Macu prejdite do Systémové nastavenia > Sieť, kliknite na tlačidlo Viac, vyberte možnosť Pridať konfiguráciu VPN a zadajte príslušné informácie.\n\nJe dôležité používať výhradne VPN služby, ktorým dôverujete. Keď je VPN nainštalovaná a aktivovaná, jej poskytovateľ si môže prezerať, blokovať a upravovať dáta súvisiace s vašimi online aktivitami. Odporúčame vám prečítať si postupy ochrany osobných údajov vášho poskytovateľa VPN, aby ste sa dozvedeli viac o poskytovaných službách a o tom, ako zaobchádza s vašimi osobnými údajmi. Keď používate apku tretej strany alebo si prezeráte stránky, ktorých prevádzkovateľom nie je spoločnosť Apple, spoločnosť Apple nezhromažďuje informácie o používaní VPN služby na vašom zariadení spôsobom, ktorý by umožňoval vašu identifikáciu.\n\nCharakteristiky prevádzky konfigurácie VPN vrátane toho, kadiaľ sú smerované dáta, ktoré opustia vaše zariadenie, či sú zašifrované a ktoré dáta budú k dispozícii pre webové stránky, ku ktorým ste pripojení, určuje poskytovateľ VPN.\n\nAk máte nainštalovanú a aktivovanú konfiguráciu VPN na zariadení so zapnutou službou Súkromný prenos cez iCloud, o smerovaní internetových pripojení, ktoré by inak boli chránené službou Súkromný prenos, bude rozhodovať konfigurácia VPN.\n\nCez aktívnu VPN nebudú smerované všetky dáta prenášané cez sieť z vášho zariadenia. Keď vývojár apky špecifikuje pre svoju apku vyžadovaný typ pripojenia, napríklad len mobilné pripojenie, dáta z danej apky prenášané cez sieť budú vylúčené z aktívnych konfigurácií VPN. Poskytovateľ VPN však napriek tomu môže na iOS, iPadOS alebo visionOS zariadeniach tieto požiadavky obísť a zabrániť väčšine apiek, služieb a systémových funkcií v smerovaní prenosov dát cez sieť mimo aktívnej konfigurácie VPN.\n\nNiektoré prenosy dát, ktoré sú nevyhnutné pre fungovanie základných systémových služieb, nebudú smerované cez aktívnu konfiguráciu VPN. Sú to napríklad priame pripojenia k routerom v lokálnej sieti (bez ktorých nadviazanie ani udržanie sieťového pripojenia nie je možné) a niektoré mobilné služby, ktoré fungujú len cez mobilné siete (napríklad služba Visual Voicemail, ak je dostupná)."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Виртуална частна мрежа (VPN) е услуга, която може да криптира и маршрутизира определен мрежов трафик от вашето устройство по начин, който може да скрие вашия IP адрес от уеб сайтове и услуги, които посещавате и с които взаимодействате. Дори когато VPN е активна, част от трафика, необходим за основните системни услуги, ще се проведе извън VPN мрежата, така че устройството ви да може да функционира правилно.\n\nМожете да изтеглите предпочитаната от вас VPN конфигурация от App Store и да я инсталирате на устройството си. Институции като работодател или училище също могат да настроят VPN конфигурации на устройствата, които управляват, включително Apple Watch или Apple TV. Също така можете ръчно да добавите VPN на iOS, iPadOS или visionOS устройства, като отидете в Настройки > Основни > VPN и Управление на устройства > VPN и след това докоснете Добави VPN конфигурация и въведете съответната информация. На Mac отидете в Системни настройки > Мрежа, щракнете бутона Още и след това изберете Добави VPN конфигурация и въведете съответната информация.\n\nВажно е да използвате само VPN услуга, на която се доверявате. Когато VPN конфигурацията е инсталирана и активна, VPN доставчикът ви може да вижда, прихваща и променя вашата онлайн активност. Трябва да прегледате практиките за поверителност на VPN доставчика, за да научите повече за тяхната услуга и как обработват вашите данни. Когато използвате приложение на други фирми или преглеждате уеб сайтове, които не се управляват от Apple, Apple не събира информация за използването на VPN услугата на вашето устройство по начин, който ви идентифицира.\n\nДоставчиците на VPN управляват как работи вашата VPN конфигурация, включително как трафикът се насочва, когато напуска вашето устройство, дали е криптиран и какви данни са достъпни за уеб сайтовете, към които се свързвате.\n\nАко VPN конфигурация е инсталирана и активна на устройство, на което е активирана функцията iCloud поверително пренасочване, VPN конфигурацията ще определи маршрута на интернет връзките, които иначе биха били защитени от поверителното пренасочване.\n\nНе целият мрежови трафик на устройството ви ще бъде насочен през активната VPN. Ако разработчик на приложения определи задължителен тип връзка за тяхното приложение, например само мобилна мрежа, мрежовият трафик от това приложение е изключен в активните VPN конфигурации. На устройства с iOS, iPadOS и visionOS, вашият VPN доставчик може да избере да отмени този избор и да попречи на повечето приложения, услуги и системни функции да пренасочват мрежовия трафик извън активната VPN конфигурация.\n\nЧаст от трафика, необходим за основните системни услуги, няма да бъде маршрутизиран през активната VPN конфигурация, например директните връзки с рутерите на локалната ви мрежа (които са необходими за установяване и поддържане на връзка с мрежата) и определени мобилни услуги, които работят само в мобилни мрежи (които може да включват визуална гласова поща, където е налична)."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A virtual private network (VPN) is a service that can encrypt and route certain network traffic from your device in a way that may hide your IP address from the websites and services you visit and interact with. Even when a VPN is active, some traffic that is necessary for essential system services will take place outside the VPN so that your device can function properly.\n\nYou can download your preferred VPN configuration from the App Store and install it on your device. Institutions, such as your employer or school, can also set up VPN configurations on devices they manage, including Apple Watch or Apple TV. You can also manually add a VPN on iOS, iPadOS or visionOS devices by going to Settings > General > VPN & Device Management > VPN, then tapping Add VPN Configuration and entering relevant information. On Mac, go to System Settings > Network, click the More button, then select Add VPN Configuration and enter relevant information.\n\nIt is important that you only use a VPN service you trust. When a VPN configuration is installed and active, your VPN provider may be able to see, intercept and modify your online activity. You should review your VPN provider’s privacy practices to learn more about their service and how they handle your data. When you are using a third-party app or browsing websites not operated by Apple, Apple does not collect information about your use of a VPN service on your device in a way that identifies you.\n\nVPN providers control how your VPN configuration operates, including how traffic is routed when it leaves your device, whether it is encrypted and what data is available to websites you are connected to.\n\nIf a VPN configuration is installed and active on a device where iCloud Private Relay is enabled, the VPN configuration will determine the routing of internet connections that would otherwise be protected by Private Relay.\n\nNot all of your device’s network traffic will be routed through an active VPN. If an app developer specifies a required type of connection for their app, such as mobile only, network traffic from that app is excluded in active VPN configurations. On iOS, iPadOS and visionOS devices, your VPN provider can choose to override this choice and prevent most apps, services and system functions from routing network traffic outside of an active VPN configuration.\n\nSome traffic that is necessary for essential system services will not be routed through an active VPN configuration, such as direct connections with your local network’s routers (which are necessary to establish and maintain a network connection), and certain mobile services that work only on mobile networks (which may include Visual Voicemail, where available)."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Navidezno zasebno omrežje (VPN) je storitev, ki lahko šifrira in usmerja določen omrežni promet iz vaše naprave tako, da skrije naslov IP pred spletnimi mesti in storitvami, ki jih obiščete oziroma uporabljate. Tudi kadar je omrežje VPN aktivno, se del prometa, ki je potreben za osnovne sistemske storitve, izvaja zunaj tega omrežja, da lahko vaša naprava pravilno deluje.\n\nŽeleno konfiguracijo VPN lahko prenesete iz trgovine App Store in jo namestite v napravo. Institucije, kot je delodajalec ali šola, lahko prav tako vzpostavijo konfiguracije VPN v napravah, ki jih upravljajo, vključno z uro Apple Watch ali televizorjem Apple TV. Omrežje VPN lahko v napravo s sistemom iOS, iPadOS ali visionOS dodate tudi ročno tako, da odprete Nastavitve > Splošno > VPN in upravljanje naprav > VPN ter tapnete Dodaj konfiguracijo VPN in vnesete ustrezne informacije. V Macu odprite Nastavitve sistema > Omrežje, kliknite gumb Več ter nato izberite Dodaj konfiguracijo VPN in vnesite ustrezne informacije.\n\nPomembno je, da uporabljate samo storitev VPN, ki ji zaupate. Ko je konfiguracija VPN nameščena in aktivna, si lahko ponudnik storitve VPN ogleda, prestreže in spreminja vašo dejavnost v spletu. Seznanite se s praksami ponudnika storitve VPN v zvezi z zasebnostjo, da boste izvedeli več o storitvi in razumeli, kako upravlja vaše podatke. Ko uporabljate aplikacijo drugega ponudnika ali brskate po spletnem mestu, ki ga Apple ne upravlja, Apple ne zbira informacij o vaši uporabi storitve VPN v napravi tako, da vas je mogoče identificirati.\n\nPonudniki storitve VPN nadzorujejo delovanje konfiguracije VPN, vključno s tem, na kakšen način se promet usmerja, ko izstopi iz naprave (ali je šifriran in kateri podatki so na voljo spletnim mestom, s katerimi imate vzpostavljeno povezavo).\n\nČe je konfiguracija VPN nameščena in aktivna v napravi, v kateri je omogočena funkcija iCloud Private Relay, bo konfiguracija VPN določila usmerjanje internetnih povezav, ki bi bile sicer zaščitene s funkcijo Private Relay.\n\nVes omrežni promet vaše naprave ne bo potekal prek aktivnega omrežja VPN. Če razvijalec aplikacije določi zahtevano vrsto povezave za svojo aplikacijo (npr. samo mobilna povezava), je omrežni promet iz te naprave izvzet iz aktivnih konfiguracij VPN. V napravah s sistemom iOS, iPadOS in visionOS lahko ponudnik storitve VPN preglasi to izbiro ter večini aplikacij, storitev in sistemskih funkcij prepreči usmerjanje omrežnega prometa zunaj aktivne konfiguracije VPN.\n\nDel prometa, ki je potreben za osnovne sistemske storitve, ne bo usmerjen prek aktivne konfiguracije VPN, kot so neposredne povezave z usmerjevalniki lokalnega omrežja (ki so potrebni za vzpostavitev in ohranjanje omrežne povezave) in določene mobilne storitve, ki delujejo samo v mobilnih omrežjih (to lahko vključuje vizualno glasovno pošto, če je na voljo)."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein Virtual Private Network (VPN) ist ein Dienst, der bestimmten Netzwerkverkehr von deinem Gerät verschlüsseln und weiterleiten kann, sodass deine IP-Adresse vor den Websites und Diensten, die du besuchst und mit denen du interagierst, eventuell verborgen wird. Selbst wenn ein VPN aktiv ist, wird der für die essenziellen Systemdienste erforderliche Verkehr außerhalb des VPN stattfinden, damit dein Gerät ordnungsgemäß funktionieren kann.\n\nDu kannst die VPN-Konfiguration deiner Wahl aus dem App Store laden und auf deinem Gerät installieren. Organisationen, wie dein Arbeitgeber oder deine Schule, haben ebenfalls die Möglichkeit, VPN-Konfigurationen auf von ihnen verwalteten Geräten einzurichten, einschließlich Apple Watch oder Apple TV. Außerdem kannst du ein VPN manuell auf iOS-, iPadOS- oder visionOS-Geräten hinzufügen. Öffne dafür „Einstellungen“ > „Allgemein“ > „VPN und Geräteverwaltung“ > „VPN“, tippe auf „VPN-Konfiguration hinzufügen“ und gib die entsprechenden Informationen ein. Auf dem Mac öffnest du „Systemeinstellungen“ > „Netzwerk“, klickst auf die Taste für weitere Optionen, wählst anschließend „VPN-Konfiguration hinzufügen“ aus und gibst die entsprechenden Informationen ein.\n\nEs ist wichtig, dass du nur VPN-Dienste verwendest, denen du vertraust. Wenn eine VPN-Konfiguration installiert und aktiv ist, kann dein VPN-Anbieter möglicherweise deine Onlineaktivitäten einsehen, mitverfolgen und modifizieren. Lies dir die Datenschutzbestimmungen deines VPN-Anbieters durch, um mehr über die Dienste des Anbieters und die Behandlung deiner Daten zu erfahren. Wenn du eine Drittanbieter-App verwendest oder Websites aufrufst, die nicht von Apple betrieben werden, erfasst Apple keine Informationen über die Nutzung eines VPN-Dienstes auf deinem Gerät, die Rückschlüsse auf deine Person zulassen.\n\nVPN-Anbieter steuern die Funktionsweise deiner VPN-Konfiguration, einschließlich der Art und Weise, wie Netzwerkverkehr weitergeleitet wird, wenn er dein Gerät verlässt, ob dieser Verkehr verschlüsselt ist und welche Daten für die Websites verfügbar sind, mit denen du eine Verbindung hergestellt hast.\n\nWenn eine VPN-Konfiguration auf einem Gerät installiert und aktiv ist, auf dem das iCloud-Privat-Relay eingeschaltet ist, bestimmt die VPN-Konfiguration die Weiterleitung von Internetverbindungen, die das Privat-Relay anderenfalls schützen würde.\n\nEs wird nicht der gesamte Netzwerkverkehr deines Geräts über ein aktives VPN weitergeleitet. Sollte ein App-Entwicklungsteam für die Nutzung einer App eine bestimmte Verbindungsart angeben, z. B. ausschließlich Mobilfunk, wird der Netzwerkverkehr von dieser App in aktiven VPN-Konfigurationen ausgeschlossen. Auf iOS-, iPadOS- und visionOS-Geräten steht es deinem VPN-Anbieter jedoch frei, diese Wahl zu ignorieren und die meisten Apps, Dienste und Systemfunktionen an der Weiterleitung von Netzwerkverkehr außerhalb einer aktiven VPN-Konfiguration zu hindern.\n\nDer für die essenziellen Systemdienste erforderliche Verkehr wird nicht über eine aktive VPN-Konfiguration weitergeleitet. Dazu zählen unter anderem direkte Verbindungen mit den lokalen Routern des Netzwerks (die für die Herstellung und Aufrechterhaltung einer Netzwerkverbindung erforderlich sind) sowie bestimmte Mobilfunkdienste, die ausschließlich auf Mobilfunknetzen funktionieren (und Visual Voicemail umfassen können, falls verfügbar)."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mạng riêng ảo (VPN) là một dịch vụ có thể mã hóa và định tuyến lưu lượng truy cập mạng nhất định từ thiết bị của bạn theo cách thức có thể ẩn địa chỉ IP của bạn khỏi các trang web và dịch vụ mà bạn truy cập và tương tác. Ngay cả khi VPN đang hoạt động, một số lưu lượng truy cập cần thiết đối với các dịch vụ hệ thống thiết yếu sẽ diễn ra bên ngoài VPN để thiết bị của bạn có thể hoạt động đúng cách.\n\nBạn có thể tải về cấu hình VPN ưa thích từ App Store và cài đặt cấu hình đó trên thiết bị của mình. Các tổ chức, ví dụ như người sử dụng lao động hoặc trường học của bạn, cũng có thể thiết lập cấu hình VPN trên các thiết bị mà họ quản lý, bao gồm Apple Watch hoặc Apple TV. Bạn cũng có thể thêm VPN trên thiết bị iOS, iPadOS hoặc visionOS theo cách thủ công bằng cách đi tới Cài đặt > Cài đặt chung > Quản lý VPN & Thiết bị > VPN, sau đó chạm vào Thêm cấu hình VPN và nhập thông tin liên quan. Trên máy Mac, hãy đi tới Cài đặt hệ thống > Mạng, bấm vào nút Thêm, sau đó chọn Thêm cấu hình VPN và nhập thông tin liên quan.\n\nĐiều quan trọng là bạn chỉ sử dụng dịch vụ VPN mà bạn tin cậy. Khi cấu hình VPN được cài đặt và đang hoạt động, nhà cung cấp VPN của bạn có thể nhìn thấy, chặn và sửa đổi hoạt động trực tuyến của bạn. Bạn nên xem lại biện pháp thực hành quyền riêng tư của nhà cung cấp VPN để tìm hiểu thêm về dịch vụ của họ và cách họ xử lý dữ liệu của bạn. Khi bạn đang sử dụng ứng dụng của bên thứ ba hoặc duyệt các trang web mà Apple không điều hành thì Apple không thu thập thông tin về việc sử dụng dịch vụ VPN trên thiết bị của bạn theo cách nhận dạng bạn.\n\nNhà cung cấp VPN kiểm soát cách cấu hình VPN của bạn hoạt động, bao gồm cách định tuyến lưu lượng truy cập khi rời khỏi thiết bị của bạn, dù có được mã hóa hay không, cũng như dữ liệu nào khả dụng đối với các trang web mà bạn kết nối vào.\n\nNếu cấu hình VPN được cài đặt và đang hoạt động trên thiết bị được bật Chuyển tiếp bảo mật iCloud thì cấu hình VPN sẽ xác định việc định tuyến của các kết nối internet lẽ ra được bảo vệ bởi Chuyển tiếp bảo mật.\n\nKhông phải tất cả lưu lượng truy cập mạng của thiết bị đều sẽ được định tuyến qua VPN đang hoạt động. Nếu nhà phát triển ứng dụng chỉ định một loại kết nối bắt buộc cho ứng dụng của họ, ví dụ như chỉ kết nối di động, thì lưu lượng truy cập mạng từ ứng dụng đó được loại trừ trong cấu hình VPN đang hoạt động. Trên các thiết bị iOS, iPadOS và visionOS, nhà cung cấp VPN của bạn có thể chọn ghi đè lựa chọn này và ngăn không cho hầu hết các ứng dụng, dịch vụ và chức năng hệ thống định tuyến lưu lượng truy cập mạng bên ngoài cấu hình VPN đang hoạt động.\n\nMột số lưu lượng truy cập cần thiết cho các dịch vụ hệ thống thiết yếu sẽ không được định tuyến thông qua cấu hình VPN đang hoạt động, ví dụ như các kết nối trực tiếp với bộ định tuyến của mạng cục bộ (cần thiết để thiết lập và duy trì kết nối mạng) và các dịch vụ di động nhất định chỉ hoạt động trên mạng di động (có thể bao gồm Thư thoại hình ảnh, khi khả dụng)."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O rețea privată virtuală (VPN) este un serviciu care poate cripta și direcționa un anumit trafic în rețea de pe dispozitivul dvs. într‑un mod care poate ascunde adresa dvs. IP față de site‑urile web și serviciile pe care le vizitați și cu care interacționați. Chiar dacă un VPN este activ, o parte din trafic care este necesară pentru serviciile de sistem esențiale se va desfășura în afara VPN‑ului, pentru ca dispozitivul dvs. să funcționeze corespunzător.\n\nPuteți să descărcați configurația de VPN preferată din App Store și să o instalați pe dispozitivul dvs. De asemenea, instituțiile (cum ar fi angajatorul sau școala dvs.) pot implementa configurații VPN pe dispozitivele pe care le gestionează, inclusiv pe Apple Watch sau Apple TV. Puteți adăuga manual un VPN pe dispozitive iOS, iPadOS și visionOS accesând Configurări > General > VPN și gestionare dispozitive > VPN, apoi apăsând pe Adăugați o configurație VPN și introducând informațiile relevante. Pe Mac, accesați Configurări sistem > Rețea, faceți clic pe butonul Mai multe, apoi selectați Adaugă o configurație VPN și introduceți informațiile relevante.\n\nEste important să utilizați doar servicii VPN de încredere. Când o configurație VPN este instalată și activă, furnizorul dvs. VPN poate să vadă, să intercepteze și să modifice activitatea dvs. online. Ar trebui să consultați practicile de confidențialitate ale furnizorului dvs. VPN pentru a afla mai multe despre serviciul său și despre modul în care gestionează datele dvs. Când utilizați o aplicație terță sau navigați pe site‑uri web care nu sunt operate de Apple, Apple nu colectează informații despre utilizarea unui serviciu VPN pe dispozitivul dvs. într‑un mod care să vă identifice.\n\nFurnizorii VPN controlează modul în care funcționează configurația dvs. VPN, inclusiv cum este dirijat traficul atunci când părăsește dispozitivul, dacă traficul este criptat și ce date sunt disponibile site‑urilor web la care vă conectați.\n\nDacă o configurație VPN este instalată și activă pe un dispozitiv care are activată transmisia privată iCloud, configurația VPN va determina dirijarea conexiunilor de internet, care ar fi protejate altminteri de transmisia privată.\n\nTraficul de rețea al dispozitivului dvs. nu va fi dirijat în totalitate printr‑un VPN activ. Dacă dezvoltatorul unei aplicații specifică un anumit tip de conexiune pentru aplicația sa, de exemplu doar celular, traficul de rețea de la aplicația respectivă este exclus în configurațiile VPN active. Pe dispozitivele iOS, iPadOS și visionOS, furnizorul dvs. VPN poate opta să suprascrie această opțiune și poate împiedica majoritatea aplicațiilor, serviciilor și funcțiilor de sistem să dirijeze traficul de rețea în afara unei configurații VPN active.\n\nTraficul care este necesar pentru serviciile de sistem esențiale nu va fi dirijat printr‑o configurație VPN activă, cum ar fi conexiunile directe la ruterele rețelei dvs. locale (necesare pentru stabilirea și menținerea unei conexiuni de rețea) și anumite servicii celulare care funcționează doar în rețele celulare (acestea pot include Visual Voicemail, în funcție de disponibilitate)."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uma rede privada virtual (VPN) é um serviço que pode criptografar e rotear determinado tráfego de rede do seu dispositivo de forma a ocultar seu endereço IP dos sites e serviços que você visita e com os quais interage. Mesmo quando uma VPN está ativa, parte do tráfego necessário para serviços essenciais do sistema ocorre fora da VPN para que seu dispositivo funcione corretamente.\n\nVocê pode baixar sua configuração de VPN preferida na App Store e instalá‑la no seu dispositivo. Instituições, como seu empregador ou escola, também podem definir configurações de VPN nos dispositivos que gerenciam, incluindo o Apple Watch ou a Apple TV. Você também pode adicionar manualmente uma VPN em dispositivos iOS, iPadOS ou visionOS. Para fazer isso, acesse Ajustes > Geral > Gestão de VPN e Gerenciamento de Dispositivo > VPN, toque em Adicionar Configuração de VPN e insira as informações relevantes. No Mac, acesse Ajustes do Sistema > Rede, clique no botão Mais, selecione Adicionar Configuração de VPN e insira as informações relevantes.\n\nÉ importante que você use apenas um serviço VPN em que confie. Quando uma configuração de VPN está instalada e ativa, seu provedor de VPN pode ver, interceptar e modificar sua atividade on‑line. Você deve revisar as práticas de privacidade do seu provedor de VPN para saber mais sobre os serviços e como ele lida com seus dados. Quando você usa um app de terceiros ou navega em sites não operados pela Apple, a Apple não coleta informações sobre o uso de um serviço de VPN no seu dispositivo de forma que identifique você.\n\nOs provedores de VPN controlam como sua configuração de VPN opera, incluindo como o tráfego é roteado quando sai do seu dispositivo, se é criptografado e quais dados são disponibilizados aos sites aos quais você se conecta.\n\nSe uma configuração de VPN estiver instalada e ativa em um dispositivo onde a Retransmissão Privada do iCloud estiver ativada, a configuração de VPN determinará o roteamento de conexões de internet que, de outra forma, seriam protegidas pela Retransmissão Privada.\n\nNem todo o tráfego de rede do seu dispositivo será roteado por uma VPN ativa. Se o desenvolvedor de um app especificar um tipo de conexão necessária para seu app, como somente celular, o tráfego de rede desse app será excluído das configurações de VPN ativas. Em dispositivos iOS, iPadOS e visionOS, seu provedor de VPN pode optar por desconsiderar essa opção e impedir que a maioria dos apps, serviços e funções do sistema roteie o tráfego de rede fora de uma configuração de VPN ativa.\n\nO tráfego necessário para serviços essenciais do sistema não será roteado por meio de uma configuração de VPN ativa, como conexões diretas com os roteadores da sua rede local (necessários para estabelecer e manter uma conexão de rede) e determinados serviços celulares que funcionam apenas em redes celulares (que podem incluir o Visual Voicemail, quando disponível)."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Виртуалды жеке желі (VPN) — IP мекенжайыңызды сіз кіретін және өзара әрекеттесетін веб-сайттар мен сервистерден жасыратын жолмен құрылғыңыздан белгілі бір желі трафигін шифрлай және бағыттай алатын қызмет. VPN белсенді болса да, құрылғы дұрыс жұмыс істеуі үшін, маңызды жүйелік сервистер үшін қажетті кейбір трафик VPN желісінен тыс орын алады.\n\nҚалаған VPN конфигурациясын App Store дүкенінен жүктеп алып, оны құрылғыңызға орнатуға болады. Жұмыс беруші немесе мектеп сияқты мекемелер, сондай-ақ өздері басқаратын құрылғыларда (Apple Watch немесе Apple TV) VPN конфигурацияларын баптай алады. Сондай-ақ iOS, iPadOS немесе visionOS құрылғыларында VPN желісін қолмен қосуға болады, ол үшін «Реттеулер» > «Жалпы» > «VPN және құрылғыны басқару» > «VPN» тармағына өтіп, содан кейін «VPN конфигурациясын қосу» опциясын түртіңіз және тиісті ақпаратты енгізіңіз. Mac компьютерінде System Settings (Жүйе реттеулері) > Network (Желі) тармағына өтіп, More (Қосымша) түймесін басыңыз, содан кейін VPN Configuration (VPN конфигурациясын қосу) опциясын таңдап, тиісті ақпаратты енгізіңіз.\n\nТек сенім артатын VPN сервисін пайдалану маңызды. VPN конфигурациясы орнатылған және белсенді болғанда, VPN провайдері сіздің желідегі әрекетіңізді көруі, ұстап қалуы және өзгертуі мүмкін. VPN провайдерінің сервисі және деректеріңізді өңдеу жолы туралы толығырақ білу үшін оның құпиялылық тәжірибелерін қарап шығуыңыз керек. Үшінші тарап қолданбасын пайдаланғанда немесе Apple басқармайтын веб-сайттарға кіргенде, Apple компаниясы құрылғыңызда VPN сервисін пайдалануыңыз туралы ақпаратты сізді анықтау үшін жинамайды.\n\nVPN провайдерлері VPN конфигурациясының жұмыс істеу жолын, соның ішінде трафик құрылғыдан шыққан кезде қалай бағытталатынын, оның шифрланған-шифрланбағанын және сіз қосылған веб-сайттарда қандай деректер қолжетімді екенін бақылайды.\n\n«iCloud жеке торабы» қосылған кезде VPN конфигурациясы орнатылған және белсенді болса, VPN конфигурациясы басқа жағдайда «Жеке торап» арқылы қорғалатын интернет қосылымдарының бағытын анықтайды.\n\nҚұрылғыңыздың барлық желі трафигі белсенді VPN арқылы бағытталмайды. Қолданба әзірлеушісі өз қолданбасы үшін тек ұялы байланыс сияқты қажетті қосылым түрін көрсетсе белсенді VPN конфигурацияларында сол қолданбадан келетін желі трафигі алынып тасталады. Дегенмен iOS, iPadOS және visionOS құрылғыларыңызда VPN провайдеріңіз бұл таңдауды қайта анықтауды таңдай алады және көптеген қолданбалардың, сервистер мен жүйе функцияларының желі трафигін белсенді VPN конфигурациясынан тыс бағыттауын болдырмайды.\n\nМаңызды жүйелік сервистер үшін қажетті кейбір трафик белсенді VPN конфигурациясы арқылы бағытталмайды, мысалы, жергілікті желінің маршрутизаторларымен тікелей қосылымдар (желі қосылымын орнату және қолдау үшін қажет) және тек ұялы байланыс желілерінде жұмыс істейтін кейбір ұялы байланыс сервистері (қолжетімді болса, көрнекі дауыстық поштаны қамтуы мүмкін)."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Віртуальна приватна мережа (VPN) — сервіс, який може шифрувати й спрямовувати певний мережевий трафік із вашого пристрою так, щоб приховувати вашу IP‑адресу від відвідуваних вебсайтів і сервісів, з якими ви взаємодієте. Навіть якщо VPN увімкнено, певний трафік, необхідний для функціонування важливих системних сервісів, спрямовуватиметься поза VPN, забезпечуючи належну роботу пристрою.\n\nПотрібну VPN-конфігурацію можна викачати в App Store та інсталювати на своєму пристрої. Установи, як‑от роботодавець чи навчальний заклад, також можуть налаштовувати VPN-конфігурації на керованих пристроях, зокрема Apple Watch чи Apple TV. Ви також можете додавати VPN вручну. На пристрої iOS, iPadOS чи visionOS перейдіть у меню Параметри > Загальні > VPN і керування пристроєм > VPN, торкніть «Додати VPN-конфігурацію» та введіть потрібну інформацію. На Mac перейдіть у Системні параметри > Мережа, натисніть кнопку «Ще», виберіть «Додати VPN-конфігурацію» і введіть потрібну інформацію.\n\nВикористовуйте сервіс VPN, якому довіряєте. Якщо VPN-конфігурацію інстальовано й увімкнено, ваш VPN-провайдер може бачити, перехоплювати й змінювати ваші дії в інтернеті. Слід ознайомитися з методами захисту конфіденційності, які використовує ваш VPN-провайдер, і дізнатися більше про сервіс і те, як провайдер обробляє ваші дані. Коли ви використовуєте програми сторонніх розробників і відвідуєте вебсайти, якими Apple не керує, Apple не збирає інформацію, яка може ідентифікувати вас, про використання вами сервісу VPN на пристрої.\n\nVPN-провайдери керують роботою VPN-конфігурації, зокрема як спрямовується трафік від пристрою, чи шифрується він і які дані доступні вебсайтам, до яких ви підʼєднуєтеся.\n\nЯкщо ви інсталюєте й активуєте VPN-конфігурацію на пристрої, де ввімкнено Приват-реле iCloud, VPN-конфігурація визначатиме маршрут інтернет-зʼєднань, який натомість був би захищений Приват-реле.\n\nНе весь мережевий трафік пристрою спрямовуватиметься через увімкнений VPN. Якщо розробник програми задав обовʼязковий тип звʼязку для своєї програми, як‑от лише стільниковий, увімкнена VPN-конфігурація ігноруватиме мережевий трафік із програми. На пристроях iOS, iPadOS та visionOS ваш VPN-провайдер може нехтувати цими налаштуваннями й забороняти більшості програм, сервісів і системних функцій спрямовувати мережевий трафік поза ввімкненою VPN-конфігурацією.\n\nПевний трафік, необхідний для роботи важливих системних сервісів, не спрямовуватиметься через увімкнену VPN-конфігурацію, як‑от пряме зʼєднання з маршрутизаторами в локальній мережі (що необхідно для встановлення і забезпечення мережевого зʼєднання) і трафік певних стільникових сервісів, що працюють лише через стільникові мережі (зокрема голосова пошта з відео, якщо вона доступна)."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un VPN (réseau privé virtuel) est un service capable de chiffrer et de rediriger une partie du trafic réseau de votre appareil de façon à masquer votre adresse IP pour les sites web et les services que vous consultez ou avec lesquels vous interagissez. Même lorsqu’un VPN est actif, le trafic nécessaire à l’exécution des services essentiels du système sera opéré en dehors du VPN afin d’assurer le bon fonctionnement de votre appareil.\n\nVous pouvez télécharger votre configuration VPN favorite depuis l’App Store et l’installer sur votre appareil. Les organisations, telles que votre entreprise ou votre établissement scolaire, peuvent également configurer des VPN sur les appareils gérés, y compris les Apple Watch et les Apple TV. Vous pouvez également ajouter un VPN manuellement sur les appareils iOS, iPadOS et visionOS en accédant à Réglages > Général > VPN et gestion de l’appareil > VPN, en touchant « Ajouter une configuration VPN… » et en saisissant les informations nécessaires. Sur Mac, accédez à Réglages Système > Réseau, cliquez sur le bouton Plus, puis sélectionnez « Ajouter une configuration VPN » et saisissez les informations nécessaires.\n\nIl est important que vous utilisiez un service VPN auquel vous faites confiance. Lorsqu’une configuration VPN est installée et active, votre fournisseur de VPN peut consulter, intercepter et modifier votre activité en ligne. Il vous est recommandé de consulter la politique de confidentialité de votre fournisseur de VPN pour en savoir plus sur ses services et sa manière de gérer vos données. Lorsque vous utilisez une app de tierce partie ou lorsque vous naviguez sur des sites web non exploités par Apple, Apple ne collecte pas d’informations relatives à l’utilisation d’un service VPN sur votre appareil d’une manière permettant de vous identifier personnellement.\n\nLes fournisseurs de VPN contrôlent les opérations de votre configuration VPN, y compris la manière dont le trafic est redirigé lorsqu’il quitte votre appareil, l’éventuel chiffrement de ce trafic et les données accessibles aux sites web auxquels vous vous connectez.\n\nSi une configuration VPN est installée et active sur un appareil sur lequel le relais privé iCloud est activé, la configuration VPN déterminera le routage de vos connexions Internet qui, autrement, seraient protégées par le relais privé.\n\nLe trafic réseau de votre appareil ne sera pas redirigé via un VPN actif en intégralité. En effet, si le développeur d’une app indique que l’utilisation de celle-ci nécessite un type de connexion spécifique, telle qu’une connexion cellulaire, le trafic réseau provenant de cette app sera exclu des configurations VPN actives. Sur les appareils iOS, iPadOS et visionOS, votre fournisseur de VPN peut choisir d’ignorer ce choix et d’empêcher la plupart des apps, des services et des fonctionnalités du système de rediriger le trafic réseau en dehors d’une configuration VPN active.\n\nLe trafic nécessaire aux services essentiels du système ne sera pas redirigé via une configuration VPN active, notamment les connexions directes aux routeurs de votre réseau local (nécessaires à l’établissement et au maintien d’une connexion réseau) et à certains services cellulaires uniquement disponibles sur les réseaux cellulaires (comme la messagerie vocale visuelle dans les régions où celle-ci est disponible)."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una red privada virtual (VPN) es un servicio que permite encriptar y direccionar una parte del tráfico de red de tu dispositivo de forma que se pueda ocultar tu dirección IP a los sitios web y servicios que visites y con los que interactúes. Aunque haya una VPN activa, parte del tráfico de red necesario para los servicios esenciales del sistema se lleva a cabo fuera de la VPN para que tu dispositivo pueda funcionar correctamente.\n\nPuedes descargar tu configuración de VPN preferida de App Store e instalarla en tu dispositivo. Asimismo, las empresas, centros educativos y otras instituciones pueden configurar redes VPN en los dispositivos que gestionen, incluidos el Apple Watch y el Apple TV. También tienes la posibilidad de añadir una VPN manualmente. En un dispositivo iOS, iPadOS o visionOS, ve a Ajustes > General > VPN y gestión de dispositivos > VPN, toca “Añadir configuración VPN…” e introduce la información necesaria. En un Mac, ve a Ajustes del Sistema > Red, haz clic en el botón Más, selecciona “Añadir configuración de VPN” e introduce los datos necesarios.\n\nEs importante que uses únicamente servicios de VPN de confianza. Cuando tienes una configuración de VPN instalada y activa, el proveedor de VPN correspondiente puede ver, interceptar y modificar tu actividad en la red. Conviene que revises las prácticas de privacidad del proveedor de VPN para obtener más información sobre su servicio y sobre cómo trata los datos. Cuando usas apps de terceros o navegas por sitios web no gestionados por Apple, Apple no recopila información que te identifique sobre cómo usas el servicio de VPN en tu dispositivo.\n\nLos proveedores de VPN controlan cómo funciona la configuración de VPN, lo que incluye cómo se direcciona el tráfico de red que sale de tu dispositivo, si está encriptado o no, y a qué datos tienen acceso los sitios web a los que te conectas.\n\nSi tienes una configuración de VPN instalada y activa en un dispositivo que tenga el relay privado de iCloud habilitado, esta determinará el direccionamiento de las conexiones a internet que, de no tenerla, estarían protegidas por el relay privado.\n\nNo todo el tráfico de red del dispositivo se direccionará a través de una VPN activa. Si el desarrollador de una app especifica que su app requiere un tipo de conexión concreto (por ejemplo, solo datos móviles), el tráfico de red de esa app se excluirá de las configuraciones de VPN activas. En dispositivos iOS, iPadOS y visionOS, el proveedor de la VPN puede optar por anular esta opción e impedir que la mayoría de las apps, servicios y funciones del sistema direccionen el tráfico de red fuera de la configuración de VPN activa.\n\nParte del tráfico de red necesario para los servicios esenciales del sistema no se direccionará a través de la configuración de VPN activa, como las conexiones directas con los routers de la red local (que son necesarias para establecer y mantener una conexión de red) y determinados servicios móviles que solo funcionan en redes móviles (por ejemplo, el buzón de voz visual, si está disponible)."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Virtualna privatna mreža (VPN) je usluga koja može kriptirati i usmjeriti određeni mrežni promet s vašeg uređaja na način kojim se može sakriti vaša IP adresa od web stranica i usluga koje posjećujete i s kojima stupate u interakciju. Čak i kad je VPN aktivan, određeni promet koji je potreban za esencijalne usluge sustava odvijat će se izvan VPN-a kako bi vaš uređaj mogao ispravno raditi.\n\nŽeljenu VPN konfiguraciju možete preuzeti iz trgovine App Store te je instalirati na svoj uređaj. Institucije poput vašeg poslodavca ili škole također mogu podesiti VPN konfiguracije na uređajima kojima upravljaju, uključujući Apple Watch ili Apple TV. VPN također možete ručno dodati na iOS, iPadOS ili visionOS uređaje tako da otvorite Postavke > Općenito > VPN i upravljanje uređajem > VPN, zatim dodirnete “Dodaj VPN konfiguraciju” i unesete relevantne informacije. Na Macu idite u Postavke sustava > Mreža, kliknite tipku Više, zatim odaberite “Dodaj VPN konfiguraciju” i unesite relevantne informacije.\n\nVažno je da koristite samo VPN uslugu kojoj vjerujete. Kad je VPN konfiguracija instalirana i aktivna, pružatelj vašeg VPN-a možda će moći vidjeti, presretati i mijenjati vašu mrežnu aktivnost. Trebali biste pregledati pravila privatnosti pružatelja VPN-a kako biste saznali više o pruženoj usluzi i načinu na koji se koriste vaši podaci. Kad koristite aplikaciju drugog proizvođača ili pretražujete web stranice kojima ne upravlja Apple, Apple ne prikuplja informacije o vašoj uporabi VPN usluge na vašem uređaju na način koji omogućuje vaše identificiranje.\n\nPružatelji VPN-a upravljaju načinom rada vaše VPN konfiguracije, uključujući način usmjeravanja prometa kad on napusti vaš uređaj, je li kriptiran i koji podaci će biti dostupni web stranicama na koje se spajate.\n\nAko je VPN konfiguracija instalirana i aktivna na uređaju na kojem je omogućen iCloudov privatni relej, VPN konfiguracija će odrediti usmjeravanje internetskih veza koje bi inače bile zaštićene uporabom Privatnog releja.\n\nOdređeni mrežni promet vašeg uređaja neće biti usmjeren putem aktivnog VPN-a. Ako developer aplikacije odredi potrebnu vrstu spajanja za svoju aplikaciju, primjerice, samo putem mobilne veze, mrežni promet iz te aplikacije bit će isključen u aktivnim VPN konfiguracijama. Na iOS, iPadOS i visionOS uređajima, vaš pružatelj VPN-a može odlučiti nadjačati taj odabir i zabraniti većini aplikacija, usluga i funkcija sustava usmjeravanje mrežnog prometa izvan aktivne VPN konfiguracije.\n\nOdređeni promet koji je potreban za esencijalne usluge sustava neće biti usmjeren putem aktivne VPN konfiguracije, kao što su izravna spajanja na routere vaše lokalne mreže (što je potrebno za uspostavljanje i održavanje mrežne veze) i određene mobilne usluge koje rade samo na mobilnim mrežama (što može uključivati vizualnu govornu poštu, gdje je ta usluga dostupna)."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN（仮想プライベートネットワーク）とは、デバイスからの特定のネットワークトラフィックを暗号化してルーティングできるサービスです。アクセスして操作するWebサイトやサービスに対してIPアドレスを非公開にすることができます。VPNの動作中も、重要なシステムサービスに必要な一部のトラフィックは、デバイスが適切に機能するようにVPNの外部で転送されます。\n\n目的に合ったVPN構成をApp Storeからダウンロードしてデバイスにインストールできます。VPN構成は企業や学校などの機関が管理しているデバイス（Apple WatchやApple TVを含む）にも設定できます。iOS、iPadOS、またはvisionOSデバイスに手動でVPNを追加するには、“設定”＞“一般”＞“VPNとデバイス管理”＞“VPN”に移動し、“VPN構成を追加”をタップして適切な情報を入力します。Macでは、“システム設定”＞“ネットワーク”に移動し、“詳細”ボタンをクリックしてから、“VPN構成を追加”を選択して適切な情報を入力します。\n\nVPNサービスは信頼できるものだけを使用してください。VPN構成をインストールして有効にすると、そのVPNプロバイダはあなたのオンラインアクティビティを表示、傍受、および変更できる場合があります。VPNプロバイダのプライバシー慣行を確認して、サービスの詳細とデータがどのように扱われるかをよく理解してください。他社製のアプリを使用している場合や、Appleが運営していないWebサイトを閲覧している場合、Appleは、個人を特定するような方法で、デバイス上のVPNサービスの使用に関する情報を収集しません。\n\nVPNプロバイダは、VPN構成での動作を管理します。これには、トラフィックがデバイスを離れたときのルーティング方法、トラフィックが暗号化されるかどうか、接続先のWebサイトでどのようなデータを利用できるかの設定が含まれます。\n\niCloudプライベートリレーが有効になっているデバイスでVPN構成をインストールして有効にすると、VPN構成によってインターネット接続のルーティングが決定され、そのほかの接続がiCloudプライベートリレーによって保護されます。\n\nデバイスのすべてのネットワークトラフィックが動作中のVPN経由でルーティングされるわけではありません。アプリ開発者がアプリに必要な接続タイプ（モバイルデータ通信のみなど）を指定した場合、そのアプリからのネットワークトラフィックは動作中のVPN構成から除外されます。VPNプロバイダは、iOS、iPadOS、およびvisionOSデバイスでこの選択を上書きして、ほとんどのアプリ、サービス、およびシステム機能が、動作中のVPN構成の外部にネットワークトラフィックをルーティングしないようにすることもできます。\n\nローカルネットワークのルーターとの直接接続（ネットワーク接続の確立と維持に必要）や、モバイルデータ通信ネットワークでのみ動作する特定のモバイルデータ通信サービス（利用可能な場合はVisual Voicemailを含む）など、重要なシステムサービスに必要な一部のトラフィックは、動作中のVPN構成を介してルーティングされません。"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uma rede privada virtual (VPN) é um serviço que pode cifrar e direcionar determinar tráfego de rede do seu dispositivo de uma forma que pode ocultar o seu endereço IP dos sites e serviços que visita e com os quais interage. Mesmo quando uma rede VPN está ativa, parte do tráfego que é necessário para serviços essenciais do sistema ocorre fora da VPN para que o dispositivo funcione corretamente.\n\nPode descarregar a sua configuração de VPN preferida na App Store e instalá‑la no dispositivo. Algumas instituições, como a sua entidade patronal ou instituição de ensino, podem também definir configurações de VPN nos dispositivos que gerem, incluindo o Apple Watch ou a Apple TV. Pode ainda adicionar manualmente uma rede VPN; num dispositivo iOS, iPadOS ou visionOS, vá a Definições > Geral > Gestão de dispositivos e VPN > VPN, toque em “Adicionar configuração VPN” e introduza a informação relevante. No Mac, vá a Definições do Sistema > Rede, clique no botão “Mais”, selecione “Adicionar configuração VPN” e introduza a informação relevante.\n\nÉ importante utilizar apenas um serviço VPN fidedigno. Quando uma configuração de VPN está instalada e ativa, é possível ao fornecedor do serviço VPN ver, intercetar e modificar a sua atividade online. Recomenda‑se a leitura das práticas de privacidade do fornecedor de VPN para saber mais acerca do serviço e sobre como os seus dados são processados. Quando utiliza uma aplicação de terceiros ou navega em sites não operados pela Apple, a Apple recolhe informação acerca da sua utilização de um serviço VPN no dispositivo sem incluir dados de teor pessoal.\n\nOs fornecedores de VPN controlam o modo de funcionamento da sua configuração de VPN, incluindo a forma de direcionamento do tráfego quando sai do seu dispositivo, se é cifrado e que dados são disponibilizados aos sites aos quais estabelece ligação.\n\nSe uma configuração de VPN estiver instalada e ativa num dispositivo em que o Reencaminhamento privado iCloud está ativado, a configuração de VPN irá determinar o direcionamento das ligações de internet que seriam protegidas pelo Reencaminhamento privado.\n\nNem todo o tráfego de rede do dispositivo será direcionado através de uma rede VPN ativa. Se algum programador especificar um tipo de ligação necessário para a respetiva aplicação, tal como ligação exclusiva à rede móvel, o tráfego de rede dessa aplicação é excluído nas configurações de VPN ativas. Nos dispositivos iOS, iPadOS e visionOS, o fornecedor do serviço VPN pode decidir ignorar esta opção e impedir que a maioria das aplicações, serviços e funções do sistema direcionem tráfego de rede para fora de uma configuração de VPN ativa.\n\nParte do tráfego que é necessário para serviços do sistema essenciais não será direcionada através de uma configuração de VPN ativa, tais como ligações diretas aos routers da rede local (necessários para estabelecer e manter uma ligação à rede) e determinados serviços móveis que funcionam apenas com redes móveis (incluindo, por exemplo, o voicemail visual, se disponível)."
+          }
+        }
+      }
+    },
+    "BUTTON_TITLE_APPLETV": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About VPNs & Privacy"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN 및 개인정보 보호에 관하여"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "מידע על רשתות VPN ופרטיות"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mengenai VPN & Privasi"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tietoja: VPN:t ja tietosuoja"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN’ler ve Gizlilik Hakkında"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Over VPN's en privacy"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A VPN-hálózatokról és az adatvédelemről"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "О VPN и конфиденциальности"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN e privacy"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Πληροφορίες για τα Δίκτυα VPN και το απόρρητο"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de las redes VPN y la privacidad"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sobre les VPN i la privacitat"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حول VPN والخصوصية"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "關於VPN與隱私權"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "關於VPN與私隱"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sieci VPN i prywatność"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om VPN och integritet"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN और गोपनीयता परिचय"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om VPN og anonymitet"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About VPNs & Privacy"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om VPN og personvern"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN et confidentialité"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เกี่ยวกับ VPN และความเป็นส่วนตัว"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "关于VPN与隐私"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apie VPN ir privatumą"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About VPNs & Privacy"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de las redes VPN y la privacidad"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O VPN sítích a soukromí"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Perihal VPN & Privasi"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O VPN sieťach a súkromí"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "За VPN мрежи и поверителност"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About VPNs & Privacy"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Več o omrežjih VPN in zasebnosti"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Über VPN & Datenschutz"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN & Quyền riêng tư"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Despre VPN‑uri și intimitate"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sobre as VPNs e Privacidade"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN және құпиялылық туралы ақпарат"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Про VPN і приватність"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN et confidentialité"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de las redes VPN y la privacidad"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Više o VPN-ovima i privatnosti"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPNとプライバシーについて"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de VPN e Privacidade"
+          }
+        }
+      }
+    },
+    "SPLASH_SUMMARY": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPNs can be set up to control the routing of certain network traffic."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "특정 네트워크 트래픽의 라우팅을 제어하도록 VPN을 설정할 수 있습니다."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ניתן להגדיר רשתות VPN כדי לשלוט בניתוב של תעבורת רשת מסוימת."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN dapat diatur untuk mengontrol perutean lalu lintas jaringan tertentu."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tietyn verkkoliikenteen ohjaamista varten voidaan ottaa käyttöön VPN:iä."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN’ler belirli bir ağ trafiğinin yönlendirilmesini denetleyecek şekilde ayarlanabilir."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN's kunnen worden geconfigureerd om de routing van bepaald netwerkverkeer te beheren."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN-hálózat beállításával szabályozható a hálózati forgalom egy részének átirányítása."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Для управления маршрутизацией определенного сетевого трафика можно настроить VPN."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "È possibile configurare le VPN per controllare l’instradamento di determinati elementi del traffico di rete."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Τα δίκτυα VPN μπορούν να διαμορφωθούν για έλεγχο της δρομολόγησης συγκεκριμένης δικτυακής κίνησης."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se puede configurar redes VPN para controlar el direccionamiento de cierto tráfico de red."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Per controlar com s’encamina determinat trànsit de xarxa, pots configurar una VPN."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يمكن إعداد تكوينات VPN للتحكم بحركة مرور شبكة معينة."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN可以設定來控制特定網路流量的路由。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "可以設定VPN以控制某些網絡流量的路由。"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sieci VPN można konfigurować tak, aby zapewniały kontrolę nad kierowaniem ruchem sieciowym."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN-anslutningar kan konfigureras för dirigering av viss nätverkstrafik."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "कुछ नेटवर्क ट्रैफ़िक के राउटिंग को नियंत्रित करने के लिए VPN सेटअप किए जा सकते हैं।"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN-forbindelser kan indstilles til at styre, hvordan bestemt netværkstrafik sendes."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPNs can be set up to control the routing of certain network traffic."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN-forbindelser kan konfigureres for å dirigere enkelte typer nettverkstrafikk."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les VPN peuvent être configurés pour contrôler l’acheminement d’une partie du trafic réseau."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN สามารถถูกตั้งค่าเพื่อให้ควบคุมการกำหนดเส้นทางของการรับส่งข้อมูลเครือข่ายบางอย่างได้"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN可设置用于控制某些网络流量的路由。"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siekiant valdyti tam tikro tinklo duomenų srauto nukreipimą, galima nustatyti VPN."
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPNs can be set up to control the routing of certain network traffic."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se puede configurar redes VPN para controlar el direccionamiento de cierto tráfico de red."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pomocí nastavených VPN je možné řídit směrování určitých typů datového provozu v síti."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN boleh disediakan untuk mengawal penghalaan trafik rangkaian tertentu."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nastavené VPN siete slúžia na ovládanie smerovania určitých dát prenášaných cez sieť."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN мрежите могат да бъдат настроени да управляват пренасочването на определен мрежови трафик."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPNs can be set up to control the routing of certain network traffic."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Omrežja VPN lahko nastavite za upravljanje usmerjanja določenega omrežnega prometa."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN können konfiguriert werden, um die Weiterleitung von bestimmtem Netzwerkverkehr zu steuern."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN có thể được thiết lập để điều khiển việc định tuyến của lưu lượng truy cập mạng nhất định."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN‑urile pot fi configurate pentru a controla dirijarea unei părți din traficul de rețea."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "As redes VPN podem ser configuradas para controlar o roteamento de determinado tráfego de rede."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Белгілі бір желілік трафиктің бағытталуын бақылау үшін VPN желілерін баптауға болады."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Мережі VPN можна налаштовувати для спрямування певного мережевого трафіку."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Des VPN peuvent être configurés pour contrôler le routage d’une partie de votre trafic réseau."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se pueden configurar redes VPN para controlar el direccionamiento de una parte del tráfico de red."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Možete podesiti VPN-ove za upravljanje usmjeravanjem određenog mrežnog prometa."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPNを設定して、特定のネットワークトラフィックのルーティングを制御することができます。"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "As redes VPN podem ser configuradas para controlar o direcionamento de determinado tráfego de rede."
+          }
+        }
+      }
+    },
+    "BUTTON_TITLE": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About VPNs & Privacy…"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN 및 개인정보 보호에 관하여…"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "מידע על רשתות VPN ופרטיות…"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mengenai VPN & Privasi…"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tietoja: VPN:t ja tietosuoja…"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN’ler ve Gizlilik Hakkında…"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Over VPN's en privacy…"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A VPN-hálózatokról és az adatvédelemről…"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "О VPN и конфиденциальности…"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN e privacy…"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Πληροφορίες για τα Δίκτυα VPN και το απόρρητο…"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de las redes VPN y la privacidad…"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sobre les VPN i la privacitat…"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حول VPN والخصوصية…"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "關於VPN與隱私權⋯"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "關於VPN與私隱⋯"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sieci VPN i prywatność…"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om VPN och integritet…"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN और गोपनीयता परिचय…"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om VPN og anonymitet…"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About VPNs & Privacy…"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om VPN og personvern…"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN et confidentialité…"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เกี่ยวกับ VPN และความเป็นส่วนตัว…"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "关于VPN与隐私…"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apie VPN ir privatumą…"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About VPNs & Privacy…"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de las redes VPN y la privacidad…"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O VPN sítích a soukromí…"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Perihal VPN & Privasi…"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O VPN sieťach a súkromí…"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "За VPN мрежи и поверителност…"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About VPNs & Privacy…"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Več o omrežjih VPN in zasebnosti …"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Über VPN & Datenschutz …"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN & Quyền riêng tư…"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Despre VPN‑uri și intimitate…"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sobre as VPNs e Privacidade…"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN және құпиялылық туралы ақпарат…"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Про VPN і приватність…"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN et confidentialité…"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de las redes VPN y la privacidad…"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Više o VPN-ovima i privatnosti…"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPNとプライバシーについて…"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de VPN e Privacidade…"
+          }
+        }
+      }
+    },
+    "SPLASH_TITLE": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPNs & Privacy"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN 및 개인정보 보호"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "רשתות VPN ופרטיות"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN & Privasi"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN:t ja tietosuoja"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN’ler ve Gizlilik"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN's en privacy"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A VPN-hálózatok és az adatvédelem"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN и конфи­денциальность"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN e privacy"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Δίκτυα VPN και απόρρητο"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Redes VPN y la privacidad"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN i la privacitat"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "شبكات VPN والخصوصية"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN與隱私權"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN與私隱"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sieci VPN i prywatność"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN och integritet"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN और गोपनीयता"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN og anonymitet"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPNs & Privacy"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN og personvern"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN et confidentialité"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN และความเป็นส่วนตัว"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN与隐私"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN ir privatumas"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPNs & Privacy"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Redes VPN y la privacidad"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN sítě a soukromí"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN & Privasi"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN siete a súkromie"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN мрежи и поверителност"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPNs & Privacy"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Omrežja VPN in zasebnost"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN & Datenschutz"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN & Quyền riêng tư"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN‑urile și intimitatea"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPNs e Privacidade"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN және құпиялылық"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN і приватність"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN et confidentialité"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Redes VPN y la privacidad"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN-ovi i privatnost"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPNとプライバシー"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN e Privacidade"
+          }
+        }
+      }
+    },
+    "SPLASH_SHORT_TITLE": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPNs"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "רשתות VPN"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN:t"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN’ler"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN's"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN-hálózatok"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Δίκτυα VPN"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Redes VPN"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN تكوينات"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sieci VPN"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPNs"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPNs"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Redes VPN"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN sítě"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN siete"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN мрежи"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPNs"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Omrežja VPN"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN‑uri"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPNs"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Мережі VPN"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Redes VPN"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN-ovi"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "VPN"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

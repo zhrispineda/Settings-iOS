@@ -1,0 +1,1381 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "FOOTER_TEXT": {
+      "extractionState": "manual",
+      "localizations": {
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Možete instalirati i koristiti SMS filtre drugih proizvođača. Ako to učinite, pružatelj filtra može pristupiti svim tekstovima i sadržajima uključenim u dolazne SMS i MMS poruke koje primite od nepoznatih pošiljatelja. Te poruke mogu uključivati kontrolne kodove od banaka ili drugih institucija, kao i druge osobne ili osjetljive podatke koji mogu biti u SMS i MMS porukama. Kada koristite filtar neželjenih SMS poruka koji je proizvod treće strane, na vas se primjenjuju odredbe, pravila o privatnosti i prakse pružatelja filtra. Potičemo vas da se informirate o uvjetima, pravilima o privatnosti i praksi tih trećih strana. Da biste uklonili filtar neželjene SMS poruke, idite na Postavke > Poruke > Nepoznato i neželjeno pa uklonite filtar s popisa.\n\nNakon što odgovorite na SMS ili MMS poruku tri puta ili dodate pošiljatelja u svoje Kontakte, SMS i MMS poruke tog pošiljatelja neće se filtrirati kao nepoznati pošiljatelj.\n\nZa korisnike poruka u Brazilu i Indiji\n\nFiltriranje SMS-a omogućeno je prema standardnim postavkama kako bi se korisnicima moglo pomoći da organiziraju svoje poruke. Pomoću strojnog učenja na uređaju, poruke od nepoznatih pošiljatelja mogu biti razvrstane u dvije potkategorije: Transakcije ili Promocije. Filtriranje SMS-a ne šalje nikakav sadržaj ili podatke iz Poruka Appleu. Filtriranje SMS-a možete bilo kada onemogućiti tako da otvorite Postavke > Poruke > Nepoznato i neželjeno i na popisu odaberete Nijedno."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ניתן להתקין ולהשתמש במסנני הודעות חיצוניים. בעת שימוש כזה, ספק המסנן יכול לגשת אל כל המלל והתוכן הכלול בהודעות ה-SMS וה-MMS הנכנסות המתקבלות משולחים לא ידועים. הודעות אלה עשויות לכלול קודי אימות מבנקים או מגופים אחרים, וכן פרטים אישיים או רגישים אחרים, העשויים להימצא בהודעות SMS ו-MMS. בעת השימוש במסנן הודעות ספאם של ספק חיצוני, הינך כפוף/ה לתנאים ולמדיניות הפרטיות של ספק המסנן. אנו ממליצים לך ללמוד את התנאים ומדיניות הפרטיות של ספקים חיצוניים אלה. כדי להסיר מסנן הודעות ספאם של ספק חיצוני, יש לעבור אל ״הגדרות״ > ״הודעות״ > ״לא ידוע וספאם״ ולהסיר את המסנן מהרשימה.\n\nלאחר שהגבת להודעת SMS או MMS שלוש פעמים, או הוספת את השולח לאנשי הקשר, הודעות SMS או MMS מאותו שולח לא יסוננו כהודעות משולחים לא ידועים.\n\nעבור משתמשי ״הודעות״ בברזיל ובהודו\n\nמסנן הודעות SMS מופעל כברירת-מחדל כדי לעזור למשתמשים לסדר את ההודעות שלהם. באמצעות שימוש בלמידת מכונה במכשיר, הודעות משולחים לא ידועים עשויות להיות ממוינות לשתי תת-קטגוריות: עסקאות או פרסומות. מסנן הודעות ה-SMS אינו שולח תכנים או נתונים מ״הודעות״ אל Apple. ניתן לכבות את מסנן הודעות ה-SMS בכל עת על-ידי מעבר אל ״הגדרות״ > ״הודעות״ > ״לא ידוע וספאם״ ובחירה ב״ללא״ מהרשימה."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "타사의 SMS 필터를 설치하고 사용할 수 있습니다. 그렇게 하는 경우 필터 제공업체는 알 수 없는 발신자가 보낸 SMS 및 MMS 메시지를 포함한 모든 텍스트와 콘텐츠에 접근할 수 있습니다. 이러한 메시지에는 은행이나 기타 기관에서 보내는 확인 코드를 비롯하여 기타 개인적이고 민감한 정보가 포함될 수 있습니다. 타사가 제공하는 SMS 스팸 필터 프로그램을 사용하는 경우 해당 필터 제공업체의 이용 약관, 개인정보 처리방침 및 이용 사례의 적용을 받습니다. 해당 업체의 이용 약관, 개인정보 처리방침 및 이용 사례를 충분히 숙지하십시오. 타사의 SMS 스팸 필터를 제거하려면 설정 > 메시지 > 알 수 없는 연락처 및 스팸으로 이동하여 해당 필터를 목록에서 제거하십시오.\n\nSMS 또는 MMS 메시지에 답장을 세 번 하거나, 발신자를 연락처에 추가한 다음에는 해당 발신자가 보낸 SMS 및 MMS 메시지가 더 이상 알 수 없는 발신자로 필터링되지 않습니다.\n\n브라질 및 인도의 메시지 사용자의 경우\n\n사용자가 메시지를 정리할 수 있도록 SMS 필터가 기본적으로 활성화되어 있습니다. 알 수 없는 발신자가 보낸 메시지는 기기상의 기계 학습 기능을 사용하여 거래 또는 광고라는 두 개의 카테고리로 분류될 수 있습니다. SMS 필터는 메시지의 콘텐츠나 데이터를 Apple에 전송하지 않습니다. 설정 > 메시지 > 알 수 없는 연락처 및 스팸으로 이동하고 목록에서 없음을 선택하여 언제든지 SMS 필터를 비활성화할 수 있습니다."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anda dapat menginstal dan menggunakan filter SMS pihak ketiga. Jika Anda melakukannya, penyedia filter dapat mengakses semua teks dan konten yang disertakan di pesan SMS dan MMS masuk yang Anda terima dari pengirim tak dikenal. Pesan ini dapat menyertakan kode verifikasi dari bank atau lembaga lainnya, serta informasi pribadi atau sensitif lainnya yang mungkin terdapat di pesan SMS dan MMS. Saat menggunakan filter spam SMS penyedia pihak ketiga, Anda tunduk pada syarat, kebijakan privasi, dan praktik penyedia filter tersebut. Anda dianjurkan untuk mempelajari syarat, kebijakan privasi, dan praktik pihak ketiga tersebut. Untuk menghapus filter spam SMS pihak ketiga, buka Pengaturan > Pesan > Tak Dikenal & Spam, dan hapus filter dari daftar.\n\nSetelah merespons pesan SMS atau MMS tiga kali, atau menambahkan pengirim ke Kontak, pesan SMS dan MMS dari pengirim tersebut tidak akan lagi difilter sebagai pengirim tak dikenal.\n\nUntuk Pengguna Pesan di Brasil dan India\n\nFilter SMS diaktifkan secara default untuk membantu pengguna mengelola pesan mereka. Dengan menggunakan pembelajaran mesin pada perangkat, pesan dari pengirim tak dikenal dapat diurutkan ke dua subkategori: Transaksi atau Promosi. Filter SMS tidak mengirimkan konten atau data mana pun dari Pesan ke Apple. Anda dapat menonaktifkan Filter SMS kapan pun dengan membuka Pengaturan > Pesan > Tak Dikenal & Spam, dan memilih Tidak Ada dari daftar."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voit asentaa ja käyttää kolmansien osapuolien tekstiviestisuodattimia. Jos teet niin, suodattimen tarjoaja voi käyttää kaikkea tekstiä ja sisältöä tuntemattomilta lähettäjiltä saapuvissa teksti- ja multimediaviesteissä. Viestit voivat sisältää pankkien ja muiden organisaatioiden varmistuskoodeja sekä muuta henkilökohtaista tai arkaluontoista tietoa, mitä teksti- tai multimediaviesteissä voi olla. Kun käytät kolmannen osapuolen tekstiviestiroskapostisuodatinta, olet suodattimen tarjoajan käyttöehtojen, tietosuojakäytännön ja toimintatapojen alainen. Apple suosittelee, että tutustut kyseisten osapuolien käyttöehtoihin, tietosuojakäytäntöön ja toimintatapoihin. Voit poistaa kolmannen osapuolen tekstiviestiroskapostisuodattimen valitsemalla Asetukset > Viestit > Vieraat ja roskapostit ja poistamalla suodattimen luettelosta.\n\nKun olet vastannut teksti- tai multimediaviestiin kolmeen kertaan tai lisännyt lähettäjän Yhteystietoihin, kyseisen lähettäjän teksti- ja multimediaviestejä ei enää suodateta kuin ne olisivat vieraalta lähettäjältä.\n\nViestit-käyttäjille Brasiliassa ja Intiassa\n\nTekstiviestisuodatus on oletusarvoisesti päällä, jotta käyttäjien on helpompi järjestellä viestejään. Käyttäen laitteessa toimivaa koneoppimista, viestit tuntemattomilta lähettäjiltä voidaan jakaa kahteen alakategoriaan: Tapahtumat ja mainokset. Tekstiviestisuodatus ei lähetä mitään sisältöä tai tietoja Viesteistä Applelle. Voit poistaa tekstiviestisuodattimen käytöstä valitsemalla Asetukset > Viestit > Vieraat ja roskapostit ja valitsemalla luettelosta Ei mitään."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Üçüncü parti SMS filtreleri yükleyip kullanabilirsiniz. Bu durumda filtre sağlayıcı, bilinmeyen gönderenlerden aldığınız SMS ve MMS mesajları da dahil olmak üzere tüm mesajlara ve içeriklere erişebilir. Bu mesajlar; bankalardan veya diğer kurumlardan gelen doğrulama kodlarının yanı sıra SMS ve MMS mesajlarında bulunabilecek başka kişisel veya hassas bilgileri içerebilir. Üçüncü parti sağlayıcının istenmeyen SMS filtresini kullanıyorsanız o filtre sağlayıcının hükümlerine, gizlilik politikasına ve uygulamalarına tabi olursunuz. Bu üçüncü partilerin hükümleri, gizlilik politikaları ve uygulamaları hakkında bilgi edinmenizi öneririz. Üçüncü parti bir istenmeyen SMS filtresini silmek için Ayarlar > Mesajlar > Bilinmeyen ve İstenmeyen bölümüne gidin ve filtreyi listeden silin.\n\nBir SMS veya MMS mesajına üç kereden fazla yanıt verdiyseniz veya göndereni Kişiler’e eklediyseniz bu gönderenden gelen SMS ve MMS mesajları bilinmeyen gönderen olarak filtrelenmez.\n\nBrezilya’daki ve Hindistan’daki Mesajlar Kullanıcıları İçin\n\nKullanıcıların mesajlarını düzenlemesine yardımcı olmak için SMS Filtresi saptanmış olarak etkinleştirilir. Bilinmeyen gönderenlerden gelen mesajlar, aygıttaki makine öğrenimi kullanılarak iki alt kategoriye ayrılabilir: İşlemler veya Promosyon. SMS Filtresi, Mesajlar’daki herhangi bir içeriği veya veriyi Apple’a göndermez. Ayarlar > Mesajlar > Bilinmeyen ve İstenmeyen bölümüne gidip listede Yok’u seçerek istediğiniz zaman SMS Filtresi’ni etkisizleştirebilirsiniz."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вы можете устанавливать и использовать фильтры SMS сторонних разработчиков. В этом случае у разработчика, предоставляющего фильтр, будет доступ к полному тексту и всему контенту входящих сообщений SMS и MMS, которые Вы получаете от неизвестных отправителей. Эти сообщения могут содержать коды проверки от банков или других учреждений, а также другую личную, конфиденциальную или важную информацию, которая может передаваться в сообщениях SMS и MMS. При использовании предоставляемого сторонним разработчиком фильтра SMS-спама к Вам применяются условия, политика конфиденциальности и практики этого разработчика. Рекомендуем узнавать об условиях, политиках конфиденциальности и практиках таких сторонних разработчиков. Чтобы удалить предоставленный сторонним разработчиком фильтр SMS-спама, перейдите в «Настройки» > «Сообщения» > «Неизвестные и спам» и удалите фильтр из списка.\n\nПосле того как Вы ответите на сообщение SMS или MMS три раза либо добавите отправителя в Контакты, сообщения SMS и MMS от этого отправителя больше не будут отфильтровываться как полученные от неизвестного отправителя.\n\nИнформация для пользователей Сообщений в Бразилии и Индии\n\nФильтр SMS включен по умолчанию, чтобы пользователям было проще упорядочивать свои сообщения. С помощью выполняемого на устройстве машинного обучения сообщения от неизвестных отправителей могут разделяться на две категории: Транзакции и Реклама. Фильтр SMS не отправляет в Apple какой-либо контент или данные из Сообщений. Фильтр SMS можно отключить в любой момент. Для этого перейдите в «Настройки» > «Сообщения» > «Неизвестные и спам» и выберите в списке «Не выбрано»."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Telepíthet és használhat harmadik féltől származó SMS-szűrőket. Ha így tesz, a szűrő készítője hozzáférhet az ismeretlen küldőktől kapott bejövő SMS- és MMS-üzenetek szövegéhez és tartalmához. Ezek az üzenetek tartalmazhatnak bankoktól vagy egyéb intézményektől származó ellenőrzőkódokat, valamint egyéb személyes vagy bizalmas információkat, amelyek előfordulhatnak az SMS- és MMS-üzenetekben. Ha egy harmadik félnek tekinthető szolgáltató SMS-levélszemétszűrőjét használja, akkor arra a szűrőszolgáltató használati feltételei, adatvédelmi szabályzata és eljárásai vonatkoznak. Azt javasoljuk, hogy ismerje meg az adott harmadik fél használati feltételeit, adatvédelmi szabályzatát és eljárásait. Harmadik fél SMS-levélszemétszűrőjének eltávolításához válassza a Beállítások > Üzenetek > Ismeretlen és kéretlen lehetőséget, és távolítsa el a szűrőt a listából.\n\nMiután háromszor válaszolt egy SMS- vagy MMS-üzenetre, vagy hozzáadta a küldőt a Kontaktokhoz, az adott küldőtől származó SMS- és MMS-üzenetek nem lesznek kiszűrve ismeretlen küldőként.\n\nA Brazíliában és Indiában élő Üzenetek-felhasználók számára\n\nAlapértelmezésben az SMS-szűrő engedélyezve van, hogy segítsen a felhasználóknak az üzenetek rendszerezésében. Az eszközön történő gépi tanulással az ismeretlen küldőktől származó üzenetek két alkategóriába rendezhetők: Tranzakciók és promóciók. Az SMS-szűrő nem küld semmilyen tartalmat vagy adatot az Üzenetekből az Apple-nek. Az SMS-szűrőt bármikor letilthatja. Ehhez válassza a Beállítások > Üzenetek > Ismeretlen és kéretlen lehetőséget, és válassza a Nincs lehetőséget a listából."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Je kunt sms-filters van derden installeren en gebruiken. Als je dit doet, heeft de filteraanbieder toegang tot alle tekst en inhoud in inkomende sms- en mms-berichten die je van onbekende afzenders ontvangt. Deze berichten kunnen verificatiecodes bevatten van banken of andere instellingen, evenals andere persoonlijke of gevoelige informatie die in sms- en mms-berichten kan staan. Als je een sms-spamfilter van derden gebruikt, valt dat onder de voorwaarden, het privacybeleid en de handelspraktijken van de aanbieder van het filter. Het is raadzaam de voorwaarden, het privacybeleid en de handelspraktijken van dergelijke derde partijen zorgvuldig door te lezen. Je kunt een sms-spamfilter van derden op elk moment uitschakelen. Ga hiervoor in Instellingen naar 'Berichten' > 'Onbekend en spam' en verwijder het filter uit de lijst.\n\nNadat je drie keer op een sms- of mms-bericht hebt gereageerd, of als je de afzender hebt toegevoegd aan je contacten, worden sms- en mms-berichten van die afzender niet meer weggefilterd als afkomstig van een onbekende afzender.\n\nVoor Berichten-gebruikers in Brazilië en India\n\nHet sms-filter is standaard ingeschakeld om gebruikers te helpen hun berichten te ordenen. Met behulp van machinelearning op het apparaat kunnen berichten van onbekende afzenders in twee subcategorieën worden gesorteerd: 'Transacties' of 'Reclame'. Het sms-filter verzendt geen inhoud of gegevens van Berichten naar Apple. Je kunt het sms-filter op elk gewenst moment uitschakelen door in Instellingen naar 'Berichten' > 'Onbekend en spam' te gaan en 'Geen' in de lijst te selecteren."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Puoi installare e utilizzare filtri SMS di terze parti. Se scegli di farlo, il fornitore del filtro può accedere a tutto il testo e a tutti i contenuti inclusi nei messaggi SMS e MMS in arrivo ricevuti da mittenti sconosciuti. Questi messaggi possono includere codici di verifica di banche o altre istituzioni, nonché altre informazioni personali o sensibili che possono essere presenti nei messaggi SMS e MMS. L’utilizzo di un filtro antispam per SMS di un fornitore di terze parti è soggetto ai termini, all’informativa sulla privacy e alle condizioni del fornitore del filtro. Ti invitiamo a consultare i termini, le norme sulla privacy e le condizioni di tali terze parti. Per rimuovere un filtro antispam SMS di terze parti, vai in Impostazioni > Messaggi > Sconosciuti e spam e rimuovi il filtro dall’elenco.\n\nDopo aver risposto a un messaggio SMS o MMS tre volte o dopo aver aggiunto il mittente ai contatti, i messaggi SMS e MMS da quel mittente non verranno filtrati come mittente sconosciuto.\n\nPer gli utenti di Messaggi in Brasile e in India\n\nIl filtro SMS è abilitato di default per aiutare gli utenti a organizzare i propri messaggi. Utilizzando l’apprendimento automatico elaborato sul dispositivo, i messaggi provenienti da mittenti sconosciuti possono essere suddivisi in due sottocategorie: Transazioni o Promozioni. Il filtro SMS non invia alcun contenuto o dato da Messaggi ad Apple. Puoi disabilitare il filtro SMS in qualsiasi momento andando in Impostazioni > Messaggi > Sconosciuti e spam, e selezionando Nessuno dall’elenco."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Puedes instalar y utilizar filtros de SMS de terceros. Si lo haces, el proveedor del filtro puede acceder a todo el texto y contenido incluido en los mensajes SMS y MMS entrantes que recibas de remitentes desconocidos. Estos mensajes pueden incluir códigos de verificación de bancos u otras instituciones, así como demás información personal o sensible que pueda estar en los mensajes SMS y MMS. Cuando utilizas el filtro de mensajes SMS no deseados de un proveedor externo, aceptas los términos, la política de privacidad y las prácticas del proveedor del filtro. Te recomendamos que te informes sobre los términos, políticas de privacidad y prácticas de terceros. Para eliminar un filtro de mensajes SMS no deseados de terceros, ve a Configuración > Mensajes > Desconocidos y no deseados y elimina el filtro de la lista.\n\nDespués de haber respondido a un mensaje SMS o MMS tres veces, o de haber agregado el remitente a tus Contactos, los mensajes SMS y MMS de ese remitente no se filtrarán como remitente desconocido.\n\nPara los usuarios de Mensajes en India y Brasil\n\nEl filtro de SMS está activado de forma predeterminada para ayudar a los usuarios a organizar sus mensajes. Utilizando el aprendizaje automático del dispositivo, los mensajes de remitentes desconocidos podrían clasificarse en dos subcategorías: transacciones o promociones. El filtro de SMS no envía ningún contenido o datos de los mensajes a Apple. Puedes desactivar el filtro de SMS en cualquier momento; para ello, selecciona la opción Ninguno en la lista ubicada en Configuración > Mensajes > Desconocidos y no deseados."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Μπορείτε να εγκαταστήσετε και να χρησιμοποιήσετε φίλτρα SMS τρίτων παρόχων. Αν το κάνετε αυτό, ο πάροχος του φίλτρου θα μπορεί να προσπελάζει όλο το κείμενο και το περιεχόμενο που περιλαμβάνεται στα εισερχόμενα μηνύματα SMS και MMS τα οποία λαμβάνετε από άγνωστους αποστολείς. Αυτά τα μηνύματα ενδέχεται να περιλαμβάνουν κωδικούς επαλήθευσης από τράπεζες ή άλλους οργανισμούς, καθώς και άλλες προσωπικές ή ευαίσθητες πληροφορίες που μπορεί να υπάρχουν σε μηνύματα SMS και MMS. Αν χρησιμοποιήσετε ένα φίλτρο ανεπιθύμητων SMS τρίτου παρόχου, υπόκειστε στους όρους, την πολιτική απορρήτου και τις πρακτικές του παρόχου του φίλτρου. Σας παροτρύνουμε να μάθετε τους όρους, τις πολιτικές απορρήτου και τις πρακτικές αυτών των τρίτων παρόχων. Αν θέλετε να αφαιρέσετε ένα φίλτρο ανεπιθύμητων SMS τρίτου παρόχου, μεταβείτε στις «Ρυθμίσεις» > «Μηνύματα» > «Άγνωστοι και ανεπιθύμητα» και αφαιρέστε το φίλτρο από τη λίστα.\n\nΑφού απαντήσετε σε ένα μήνυμα SMS ή MMS τρεις φορές ή προσθέσετε τον αποστολέα στις Επαφές σας, τα μηνύματα SMS και MMS από αυτόν τον αποστολέα δεν θα φιλτράρονται ως απεσταλμένα από άγνωστο αποστολέα.\n\nΓια χρήστες των Μηνυμάτων στη Βραζιλία και την Ινδία\n\nΤο Φίλτρο SMS είναι ενεργοποιημένο από προεπιλογή για να βοηθά τους χρήστες να οργανώνουν τα μηνύματά τους. Χάρη στη μηχανική μάθηση επί της συσκευής, τα μηνύματα από άγνωστους αποστολείς ενδέχεται να ταξινομούνται σε δύο υποκατηγορίες: Συναλλαγές ή Προωθητικά. Το Φίλτρο SMS δεν στέλνει περιεχόμενο ούτε δεδομένα από τα Μηνύματα στην Apple. Αν θέλετε να απενεργοποιήσετε το Φίλτρο SMS ανά πάσα στιγμή, μεταβείτε στις «Ρυθμίσεις» > «Μηνύματα» > «Άγνωστοι και ανεπιθύμητα» και επιλέξτε «Κανένα» στη λίστα."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vous pouvez installer et utiliser des filtres SMS tiers. Le cas échéant, le fournisseur de filtres peut accéder à la totalité du texte et du contenu inclus dans les messages SMS et MMS entrants qui proviennent d’expéditeurs inconnus. Ces messages peuvent inclure des codes de validation envoyés par des banques ou d’autres établissements, ainsi que d’autres informations personnelles ou sensibles d’être contenues dans des messages SMS et MMS. Lorsque vous utilisez le filtre de SMS indésirables d’un fournisseur tiers, vous vous soumettez aux modalités, à la politique de confidentialité et aux pratiques dudit fournisseur de filtres. Nous vous recommandons d’examiner les modalités, les politiques de confidentialité et les pratiques de ces tiers. Pour supprimer un filtre tiers de SMS indésirables, accédez à Réglages > Messages > Expéditeurs inconnus et SMS indésirables, puis supprimez le filtre de la liste.\n\nAprès avoir répondu trois fois aux messages SMS ou MMS d’un expéditeur ou après avoir ajouté ce dernier à vos contacts, ses messages SMS ou MMS ne seront plus considérés comme provenant d’un expéditeur inconnu.\n\nPour les utilisateurs de Messages au Brésil et en Inde\n\nLe filtre de SMS est activé par défaut pour permettre aux utilisateurs d’organiser leurs messages. Grâce aux méthodes d’apprentissage automatique exécutées sur l’appareil, les messages qui proviennent d’expéditeurs inconnus peuvent être classés dans deux sous-catégories : les transactions et les promotions. Le filtre de SMS n’envoie aucun contenu ni aucune donnée de Messages à Apple. Vous pouvez désactiver le filtre de SMS à tout moment en accédant à Réglages > Messages > Expéditeurs inconnus et SMS indésirables, puis en sélectionnant Aucun dans la liste."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يمكنك تثبيت برنامج تصفية رسائل SMS من جهة خارجية واستخدامه. إذا قمت بذلك، يمكن لمزود التصفية الوصول إلى كل النصوص والمحتوى في رسائل SMS و MMS الواردة التي تتلقاها من مرسلين غير معروفين. قد تتضمن هذه الرسائل رموز التحقق من البنوك أو المؤسسات الأخرى، بالإضافة إلى معلومات شخصية أو حساسة أخرى قد تكون في رسائل SMS و MMS. عند استخدام تصفية رسائل SMS المزعجة خاصة بجهة خارجية، فأنت تخضع لشروط وأحكام مزود التصفية وسياسة الخصوصية الخاصة به. نحن نشجعك على معرفة شروط وسياسات الخصوصية وممارسات تلك الجهات الخارجية. لإزالة تصفية رسائل SMS المزعجة الخاصة بجهة خارجية، انتقل إلى الإعدادات > الرسائل > غير معروف ومزعج، وقم بإزالة التصفية من القائمة.\n\nبعد الرد على رسالة SMS أو MMS ثلاث مرات، أو إضافة المرسل إلى جهات الاتصال، لن تتم تصفية رسائل SMS و MMS الواردة من هذا المرسل كمرسل غير معروف.\n\nلمستخدمي الرسائل في البرازيل والهند\n\nتكون تصفية رسائل SMS ممكّنة بشكل افتراضي لمساعدة المستخدمين على تنظيم رسائلهم. وباستخدام التعلم الآلي على الجهاز، قد يتم تصنيف الرسائل الواردة من مرسلين غير معروفين إلى فئتين فرعيتين: المعاملات أو العروض الترويجية. لا ترسل تصفية رسائل SMS أي محتوى أو بيانات من الرسائل إلى Apple. يمكنك تعطيل تصفية SMS في أي وقت بالانتقال إلى الإعدادات > الرسائل > غير معروف ومزعج، وتحديد \"لا شيء\" من القائمة."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pots instal·lar i utilitzar filtres de missatges SMS de tercers. Si ho fas, el proveïdor dels filtres podrà accedir a tot el text i el contingut que incloguin els missatges SMS i MMS entrants enviats per remitents desconeguts. Aquests missatges poden incloure codis de verificació de bancs o altres institucions, així com altra informació personal o confidencial que aparegui als missatges SMS i MMS. Si utilitzes els filtres de missatges SMS brossa dʼun proveïdor tercer, passaràs a regir‑te per les condicions, la política de privacitat i les pràctiques del proveïdor de filtres. Et recomanem que et llegeixis les condicions, les polítiques de privacitat i les pràctiques dʼaquests tercers. Per eliminar un filtre de correu brossa dʼun tercer, ves a lʼapp Configuració > Missatges > “Desconeguts i brossa” i elimina el filtre de la llista.\n\nQuan hagis respost un missatge SMS o MMS tres vegades, o hagis afegit el remitent a la teva llista de contactes, els missatges dʼaquest remitent no es filtraran com a provinents dʼun remitent desconegut.\n\nPer als usuaris de l’app Missatges que estiguin a l’Índia i al Brasil\n\nEl filtre de missatges SMS està activat per omissió per ajudar els usuaris a organitzar els seus missatges. Mitjançant lʼaprenentatge automàtic, els missatges de remitents desconeguts es poden classificar en dues subcategories: transaccions o promocions. El filtre de missatges SMS no envia contingut ni dades de lʼapp Missatges a Apple. Pots desactivar el filtre de missatges SMS en qualsevol moment anant a lʼapp Configuració > Missatges > “Desconeguts i brossa” i seleccionant “Cap” a la llista."
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你可以選擇在裝置上安裝並使用第三方SMS過濾器。如安裝，過濾器的供應商可以取用所有非聯絡人傳送來的SMS和MMS訊息中所包含的全部文字和內容。這些訊息可能會含有銀行或其他機構傳送的驗證碼，以及SMS和MMS訊息中包含的其他個人或敏感資料。當你使用第三方供應商的SMS垃圾訊息過濾器，必須遵守其條款和私隱政策與慣例。我們鼓勵你了解這些第三方的條款和私隱政策與慣例。如要移除第三方SMS垃圾訊息過濾器，請前往「設定」>「訊息」>「未知與垃圾訊息」，並從列表中移除過濾器。\n\n在你回覆SMS或MMS訊息三次，或將該寄件人加至「通訊錄」後，該寄件人傳送的SMS和MMS訊息將不會被過濾為來自未知寄件人。\n\n針對巴西和印度的「訊息」用户\n\n「SMS過濾器」預設為啟用，以協助用户整理訊息。使用裝置端的機器學習功能，來自未知寄件人的訊息可能會分到兩個子分類：「交易」或「推廣」。「SMS過濾器」不會將任何來自「訊息」的內容或資料傳送予Apple。你可以隨時前往「設定」>「訊息」>「未知與垃圾訊息」，並從列表中選擇「無」來停用「SMS過濾器」。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du kan installera och använda SMS-filter från tredje part. Om du gör det kan filterleverantören komma åt all text och allt innehåll i inkommande SMS och MMS som du får från okända avsändare. Dessa meddelanden kan innehålla verifieringskoder från banker eller andra institutioner liksom annan personlig eller känslig information som kan finnas i SMS och MMS. När du använder ett SMS-skräpfilter från tredje part omfattas du av filterleverantörens villkor, integritetspolicy och praxis. Vi uppmuntrar dig att ta reda på mer om villkor, integritetspolicyer och praxis hos dessa tredje parter. Om du vill ta bort ett SMS-skräpfilter från tredje part öppnar du Inställningar > Meddelanden > Okända och skräppost och tar bort filtret från listan.\n\nNär du har besvarat ett SMS eller MMS tre gånger, eller har lagt till avsändaren i Kontakter, blir SMS och MMS från den avsändaren inte längre filtrerade som en okänd avsändare.\n\nFör Meddelanden-användare i Brasilien och Indien\n\nSMS-filter är aktiverat som förval som hjälp för användare att ordna sina meddelanden. Med hjälp av maskininlärning på enheten kan meddelanden från okända avsändare sorteras i två delkategorier: Transaktioner eller Reklam. SMS-filter skickar varken innehåll eller data från Meddelanden till Apple. Du kan när som helst avaktivera SMS-filter genom att öppna Inställningar > Meddelanden > Okända och skräppost och välja Inget från listan."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du kan installere og bruke SMS-filtre fra tredjeparter. Hvis du gjør dette, får filterleverandøren tilgang til all tekst og alt innhold i mottatte SMS- og MMS-meldinger som du mottar fra ukjente avsendere. Disse meldingene kan være verifikasjonskoder fra banker eller andre institusjoner samt annen personlig og sensitiv informasjon i SMS- og MMS-meldinger. Når du bruker et SMS-spamfilter fra en tredjepartsleverandør, er du underlagt filterleverandørens vilkår og retningslinjer for personvern. Vi oppfordrer deg til å lese gjennom tredjepartenes vilkår og retningslinjer for personvern. Hvis du vil fjerne et SMS-spamfilter fra en tredjepart, går du til Innstillinger > Meldinger > Ukjent eller uønsket og fjerner filteret fra listen.\n\nHvis du har svart på en SMS- eller MMS-melding tre ganger eller har lagt til avsenderen i Kontakter, vil ikke lenger SMS- og MMS-meldinger fra denne avsenderen filtreres som en ukjent avsender.\n\nFor Meldinger-brukere i Brasil og India\n\nSMS-filtrering er aktivert som standard for å hjelpe brukere med å organisere meldingene sine. Ved hjelp av lokal maskinlæring kan meldinger på engelsk fra ukjente avsendere bli sortert i to underkategorier: Transaksjoner eller reklame. SMS-filter sender ikke innhold eller data fra Meldinger til Apple. Du kan deaktivere SMS-filter når som helst ved å gå til Innstillinger > Meldinger > Ukjent eller uønsket og velge Ingen fra listen."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "आप तृतीय पक्ष के SMS फ़िल्टर को इंस्टॉल और उपयोग कर सकते हैं। यदि आप ऐसा करते हैं, तो फ़िल्टर प्रोवाइडर आने वाले SMS और MMS संदेशों में सभी टेक्स्ट और कॉन्टेंट ऐक्सेस कर सकता है जो आपको भेजने वाले अज्ञात लोगों से प्राप्त होते हैं। इन संदेशों में बैंक या अन्य संस्थाओं के सत्यापन कोड के साथ-साथ अन्य व्यक्तिगत या संवेदनशील जानकारी भी हो सकती है जो SMS और MMS संदेशों में होती है। जब आप तृतीय पक्ष प्रोवाइडर का SMS स्पैम फ़िल्टर उपयोग करते हैं, तो आप फ़िल्टर प्रोवाइडर की शर्तों, गोपनीयता नीति और व्यवहारों के अधीन होते हैं। हम आपको तृतीय पक्षों की इन शर्तों, गोपनीयता नीतियों और व्यवहारों को जानने के लिए प्रोत्साहित करते हैं। तृतीय पक्ष का SMS स्पैम फ़िल्टर हटाने के लिए, सेटिंग्ज़ > संदेश > अज्ञात और स्पैम पर जाएँ और सूची में से फ़िल्टर निकाल दें।\n\nआपके द्वारा SMS या MMS संदेशों पर तीन बार प्रतिक्रिया देने के बाद, या प्रेषक को अपने संपर्कों में जोड़ने के बाद, उस प्रेषक के SMS और MMS संदेशों को अज्ञात प्रेषक के तौर पर फ़िल्टर नहीं किया जाएगा।\n\nब्राज़ील और भारत में संदेश ऐप के यूज़र के लिए\n\nSMS फ़िल्टर को डिफ़ॉल्ट रूप से सक्षम किया जाता है ताकि यूज़र को अपने संदेश व्यवस्थित करने में मदद मिले। ऑन-डिवाइस मशीन लर्निंग का उपयोग करके अज्ञात प्रेषकों के संदेशों को दो उपश्रेणियों में सॉर्ट किया जा सकता है : लेनदेन या प्रचार। SMS फ़िल्टर, संदेश का कोई कॉन्टेंट या डेटा Apple को नहीं भेजता है। आप सेटिंग्ज़ > संदेश > अज्ञात और स्पैम पर जाकर और सूची में से “कोई नहीं” चुनकर, किसी भी समय SMS फ़िल्टर अक्षम कर सकते हैं।"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du kan installere og bruge sms-filtre fra tredjeparter. Hvis du gør det, kan filterudbyderen få adgang til alt det tekst og indhold, der er inkluderet i indgående sms- og mms-beskeder, du modtager fra ukendte afsendere. Disse beskeder kan omfatte bekræftelseskoder fra banker eller andre institutioner samt andre personlige eller følsomme oplysninger, sms- og mms-beskeder kan indeholde. Når du bruger et filter til Uønsket sms fra en tredjepartsudbyder, er du underlagt filterudbyderens vilkår, anonymitetspolitik og praksisser. Vi opfordrer dig til at finde ud af disse tredjeparters vilkår, anonymitetspolitikker og praksisser. Hvis du vil fjerne et filter til Uønsket sms fra en tredjepart, skal du gå til Indstillinger > Beskeder > Ukendt eller uønsket og fjerne filteret fra listen.\n\nNår du har besvaret en sms- eller mms-besked tre gange, eller har føjet afsenderen til dine kontakter, filtreres sms- og mms-beskeder fra denne afsender ikke som en ukendt afsender.\n\nFor brugere af Beskeder i Brasilien og Indien\n\nSms-filter er som standard slået til for at hjælpe brugere med at organisere deres beskeder. Ved hjælp af maskinlæring på enheden sorteres beskeder fra ukendte afsendere muligvis i to underkategorier: Transaktioner eller reklamekampagner. Sms-filter sender ikke noget indhold eller nogen data fra Beskeder til Apple. Du kan altid slå Sms-filter fra ved at gå til Indstillinger > Beskeder > Ukendt eller uønsket og vælge Ingen fra listen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can install and use third-party SMS filters. If you do, the filter provider can access all of the text and content included in incoming SMS and MMS messages that you receive from unknown senders. These messages may include verification codes from banks or other institutions, as well as other personal or sensitive information that may be in SMS and MMS messages. When you use a third-party provider’s SMS spam filter, you are subject to the filter provider’s terms, privacy policy, and practices. We encourage you to learn about the terms, privacy policies, and practices of those third parties. To remove a third-party SMS spam filter, go to Settings > Messages > Unknown & Spam, and remove the filter from the list.\n\nAfter you have responded to a SMS or MMS message three times, or have added the sender to your Contacts, SMS and MMS messages from that sender will not be filtered as an unknown sender.\n\nFor Messages Users in Brazil and India\n\nSMS Filter is enabled by default to help users organize their messages. Using on-device machine learning, messages from unknown senders may be sorted into two subcategories: Transactions or Promotions. SMS Filter does not send any content or data from Messages to Apple. You can disable SMS Filter at any time by going to Settings > Messages > Unknown & Spam, and selecting None from the list."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你可以安裝和使用第三方SMS過濾器。若此，則過濾器的供應商可以取用未知寄件人傳送的SMS和MMS訊息中的所有文字和內容。這些訊息可能包含來自銀行或其他機構的驗證碼，以及SMS和MMS訊息中可能出現的其他個人或敏感性資訊。當你使用第三方供應商的SMS垃圾訊息過濾器時，必須遵守其條款、隱私權政策與慣例。我們建議你瞭解這些第三方的條款、隱私權政策與慣例。若要移除第三方SMS垃圾訊息過濾器，請前往「設定」>「訊息」>「未知與垃圾訊息」，然後從列表中移除過濾器。\n\n在你回覆SMS或MMS訊息三次或將寄件人加入「聯絡人」之後，來自該寄件人的SMS和MMS訊息將不會被過濾為未知的寄件人。\n\n針對巴西和印度的「訊息」使用者\n\n系統預設啟用「SMS過濾條件」以協助使用者整理訊息。透過裝置端機器學習功能，來自未知寄件人的訊息可能會分類為兩種子類別：「交易訊息」或「促銷內容」。「SMS過濾條件」不會從「訊息」傳送任何內容或資料給Apple。你可以隨時前往「設定」>「訊息」>「未知與垃圾訊息」，並從列表中選取「無」來停用「SMS過濾條件」。"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Możesz instalować i używać filtry wiadomości firm trzecich. Jeśli to zrobisz, dostawca filtru będzie miał dostęp do całego tekstu i treści zawartych w przychodzących wiadomościach SMS i MMS, które otrzymujesz od nieznanych nadawców. Wiadomości te mogą zawierać kody weryfikacyjne z banków lub innych instytucji, a także inne informacje prywatne lub poufne, które mogą znajdować się w wiadomościach SMS i MMS. Korzystając z filtra spamu w wiadomościach firm trzecich, podlegasz warunkom, zasadom ochrony prywatności i praktykom dostawcy tego filtra. Zachęcamy do zapoznania się z warunkami, zasadami ochrony prywatności i praktykami tych podmiotów trzecich. Aby usunąć filtr spamu w wiadomościach, przejdź do Ustawień, stuknij w Wiadomości > Nieznane i spam, a następnie usuń filtr z listy.\n\nGdy trzykrotnie odpowiesz na wiadomość SMS lub MMS od określonego nadawcy albo dodasz go do Kontaktów, jego wiadomości SMS i MMS nie będą już filtrowane jako pochodzące od nieznanego nadawcy.\n\nDla użytkowników Wiadomości w Brazylii i Indiach\n\nFiltr wiadomości jest włączony domyślnie, aby pomóc użytkownikom porządkować swoje wiadomości. Dzięki uczeniu maszynowemu na urządzeniu, wiadomości od nieznanych nadawców są sortowane na dwie podkategorie: Transakcje i Promocje. Filtr wiadomości nie wysyła z aplikacji Wiadomości do Apple żadnej zawartości ani danych. Filtr wiadomości możesz wyłączyć w dowolnym momencie, przechodząc do Ustawień, stukając w Wiadomości > Nieznane i spam i wybierając na liście Brak."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "คุณสามารถติดตั้งและใช้งานฟิลเตอร์ SMS ของบริษัทอื่นได้ ถ้าคุณทำเช่นนั้น ผู้ให้บริการฟิลเตอร์สามารถเข้าถึงข้อความและเนื้อหาทั้งหมดที่อยู่ในข้อความ SMS และ MMS ที่เข้ามาและคุณได้รับจากผู้ส่งที่คุณไม่รู้จัก ข้อความเหล่านี้อาจมีรหัสตรวจสอบยืนยันจากธนาคารหรือสถาบันอื่น รวมถึงข้อมูลข้อมูลส่วนบุคคลและข้อมูลที่ละเอียดอ่อนอื่นๆ ที่อาจอยู่ในข้อความ SMS และ MMS เมื่อคุณใช้ฟิลเตอร์สแปม SMS ของผู้ให้บริการจากบริษัทอื่น คุณจะอยู่ภายใต้ข้อกำหนด นโยบายความเป็นส่วนตัว และแนวปฏิบัติของผู้ให้บริการฟิลเตอร์ เราขอแนะนำให้คุณเข้าใจเกี่ยวกับข้อกำหนด นโยบายความเป็นส่วนตัว และการปฏิบัติของผู้ให้บริการจากบริษัทอื่น ในการเอาฟิลเตอร์สแปม SMS ของบริษัทอื่นออก ให้ไปที่การตั้งค่า > ข้อความ > ไม่รู้จักและสแปม แล้วเอาฟิลเตอร์ออกจากรายการ\n\nหลังจากที่คุณตอบข้อความ SMS หรือ MMS สามครั้ง หรือเพิ่มผู้ส่งไปยังรายชื่อ ข้อความ SMS และ MMS จากผู้ส่งรายนั้นจะไม่ถูกฟิลเตอร์เป็นผู้ส่งที่ไม่รู้จัก\n\nสำหรับผู้ใช้แอปข้อความในบราซิลและอินเดีย\n\nระบบจะเปิดใช้งานฟิลเตอร์ SMS ตามค่าเริ่มต้นเพื่อช่วยผู้ใช้จัดระเบียบข้อความ โดยใช้การเรียนรู้ด้วยเครื่องบนอุปกรณ์ ข้อความจากผู้ส่งที่ไม่รู้จักอาจถูกจัดเป็นสองหมวดหมู่ย่อย: รายการธุรกรรมหรือโปรโมชั่น ฟิลเตอร์ SMS จะไม่ส่งเนื้อหาหรือข้อมูลจากแอปข้อความให้กับ Apple คุณสามารถปิดใช้งานฟิลเตอร์ SMS ได้ตลอดเวลาโดยไปที่การตั้งค่า > ข้อความ > ไม่รู้จักและสแปม แล้วเลือก “ไม่มี” จากรายการ"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你可以安装和使用第三方短信过滤器。如果这么做，过滤器提供商可以访问未知发件人发送给你的短信和彩信中的所有文本和内容。这些信息可能包括银行或其他机构的验证码，以及短信和彩信中可能包含的其他个人信息或敏感信息。使用第三方提供的垃圾短信过滤器时，将受过滤器提供者的条款、隐私政策和惯例的约束。我们建议你仔细阅读这些第三方的条款、隐私政策和惯例。若要移除第三方垃圾短信过滤器，请前往“设置”>“信息”>“未知与过滤信息”，然后从列表中移除过滤器。\n\n你回复短信或彩信三次，或已将发件人添加到“通讯录”之后，来自该发件人的短信和彩信将不会过滤为未知发件人。\n\n对于巴西和印度的信息用户\n\n“短信过滤”默认启用以帮助用户整理信息。通过设备端机器学习技术，来自未知发件人的信息可能会分为两个子类：“交易信息”或“推广信息”。“短信过滤”不会将“信息”中的任何内容或数据发送给Apple。你可以随时停用“短信过滤”，方法是前往“设置”>“信息”>“未知与过滤信息”，然后从列表中选择“无”。"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can install and use third-party SMS filters. If you do, the filter provider can access all the text and content included in incoming SMS and MMS messages that you receive from unknown senders. These messages may include verification codes from banks or other institutions, as well as other personal or sensitive information that may be in SMS and MMS messages. When you use a third-party provider’s SMS spam filter, you are subject to the filter provider’s terms, privacy policy and practices. We encourage you to learn about the terms, privacy policies and practices of those third parties. To remove a third-party SMS spam filter, go to Settings > Messages > Unknown & Spam and remove the filter from the list.\n\nAfter you have responded to an SMS or MMS message three times, or have added the sender to your Contacts, SMS and MMS messages from that sender will not be filtered as an unknown sender.\n\nFor Messages Users in Brazil and India\n\nSMS Filter is enabled by default to help users organise their messages. Using on-device machine learning, messages from unknown senders may be sorted into two subcategories: Transactions or Promotions. SMS Filter does not send any content or data from Messages to Apple. You can disable SMS Filter at any time by going to Settings > Messages > Unknown & Spam, and selecting None from the list."
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Galite įdiegti ir naudoti trečiosios šalies SMS filtrus. Jei tai padarysite, filtro teikėjas galės pasiekti visas jūsų žinutes ir turinį, įskaitant SMS ir MMS žinutes, kurias gaunate iš nežinomų siuntėjų. Šios žinutės gali apimti patvirtinimo kodus iš bankų ar kitų institucijų, taip pat kitą asmeninę ir slaptą informaciją, kuri gali būti SMS ir MMS žinutėse. Kai naudojate trečiosios šalies teikėjo SMS žinučių brukalų filtrą, jums taikomos filtro teikėjo sąlygos ir privatumo politika bei praktika. Rekomenduojame susipažinti su tokių trečiųjų šalių sąlygomis, privatumo politika ir praktika. Norėdami pašalinti trečiosios šalies SMS žinučių brukalų filtrą, eikite į sritį „Nustatymai“ > „Žinutės“ > „Nežinomos ir brukalas“ ir pašalinkite filtrą iš sąrašo.\n\nAtsakius į SMS arba MMS žinutę tris kartus arba įtraukus siuntėją į adresatus, šio siuntėjo SMS ir MMS žinutės nebus filtruojamos kaip nežinomo siuntėjo žinutės.\n\nProgramos „Žinutės“ naudotojams Brazilijoje ir Indijoje\n\nSMS filtras yra įjungtas pagal numatytuosius nustatymus, kad naudotojai galėtų lengviau tvarkti žinutes. Naudojant įrenginio mašininio mokymosi technologiją, nežinomų siuntėjų žinutės bus rūšiuojamos į dvi toliau nurodytas antrines kategorijas. Operacijos arba reklama. SMS filtras bendrovei „Apple“ nesiunčia jokio turinio ar duomenų iš programos „Žinutės“. SMS filtrą galite bet kuriuo metu išjungti eidami į sritį „Nustatymai“ > „Žinutės“ > „Nežinomos ir brukalas“ ir sąraše pasirinkdami „Nėra“."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anda boleh memasang dan menggunakan penapis SMS pihak ketiga. Jika anda berbuat demikian, penyedia penapis boleh mengakses semua teks dan kandungan disertakan dalam mesej SMS dan MMS masuk yang anda terima daripada pengirim yang tidak dikenali. Mesej ini mungkin termasuk kod pengesahan daripada bank atau institusi lain, serta maklumat peribadi atau sensitif lain yang mungkin terdapat dalam mesej SMS dan MMS. Apabila anda menggunakan penapis spam SMS penyedia pihak ketiga, anda tertakluk pada syarat, dasar privasi dan amalan penyedia penapis. Kami menggalakkan anda mengetahui tentang syarat, dasar privasi dan amalan pihak ketiga tersebut. Untuk mengeluarkan penapis spam SMS pihak ketiga, pergi ke Seting > Mesej > Tidak Dikenali & Spam dan keluarkan penapis daripada senarai.\n\nSelepas anda membalas mesej SMS atau MMS tiga kali atau telah menambah pengirim ke Kenalan anda, mesej SMS dan MMS daripada pengirim tersebut tidak akan ditapis sebagai pengirim tidak dikenali.\n\nUntuk Pengguna Mesej di Brazil dan India\n\nPenapis SMS didayakan secara lalai untuk membantu pengguna menyusun mesej mereka. Menggunakan pembelajaran mesin pada peranti, mesej daripada pengirim tidak dikenali boleh diisih kepada dua subkategori: Transaksi atau Promosi. Penapis SMS tidak menghantar sebarang kandungan atau data daripada Mesej kepada Apple. Anda boleh menyahdayakan Penapis SMS pada bila-bila masa dengan pergi ke Seting > Mesej > Tidak Dikenali & Spam serta memilih Tiada daripada senarai."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Na zařízení můžete nainstalovat a používat na něm SMS filtry od nezávislých vývojářů. V takovém případě může dodavatel filtru získat přístup ke kompletnímu textu i obsahu příchozích SMS a MMS zpráv, které dostáváte od neznámých odesílatelů. V těchto zprávách mohou být zasílány například i ověřovací kódy od bank nebo jiných institucí a stejně tak mohou SMS a MMS zprávy obsahovat také osobní nebo citlivé informace. Pokud používáte SMS filtr proti nevyžádaným zprávám od nezávislého vývojáře, toto používání se řídí ujednáním a zásadami pro ochranu soukromí a další postupy vyhlášenými tímto dodavatelem. Proto doporučujeme se s ujednáním a zásadami pro ochranu soukromí a další postupy u každého nezávislého vývojáře dobře seznámit. Chcete-li SMS filtr proti nevyžádaným zprávám od nezávislého vývojáře odstranit, otevřete Nastavení > Zprávy > Neznámé a spam a odstraňte filtr ze seznamu.\n\nJakmile na některou SMS nebo MMS zprávu odpovíte třikrát nebo si jejího odesílatele uložíte do Kontaktů, nebudou už SMS a MMS zprávy od tohoto odesílatele nadále filtrovány jako od neznámého odesílatele.\n\nPro uživatele aplikace Zprávy v Brazílii a Indii\n\nFiltrování SMS je standardně zapnuté, aby se uživatelům ve zprávách snáz udržoval pořádek. Za pomoci strojového učení probíhajícího přímo v zařízení jsou zprávy od neznámých odesilatelů řazeny do dvou podkategorií: Transakce a Promoakce. Při použití funkce Filtrování SMS se společnosti Apple neposílá žádný obsah ani data ze zpráv. Filtrování SMS lze kdykoli vypnout tak, že otevřete Nastavení > Zprávy > Neznámé a spam a v seznamu vyberete volbu Žádný."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Môžete si nainštalovať a používať SMS filtre tretích strán. Poskytovatelia takýchto filtrov majú počas ich používania prístup k celému textu a obsahu SMS a MMS správ prijatých od neznámych odosielateľov. Tieto správy môžu obsahovať overovacie kódy z bánk alebo iných inštitúcií, ako aj ďalšie osobné alebo citlivé informácie. Počas používania spamových SMS filtrov tretích strán sa na vás vzťahujú podmienky používania, zásady ochrany súkromia a postupy stanovené poskytovateľom filtra. Odporúčame vám oboznámiť sa s podmienkami používania, zásadami ochrany súkromia a postupmi vášho poskytovateľa. Ak chcete odstrániť spamový SMS filter tretej strany, otvorte Nastavenia > Správy > Neznáme a spam a odstráňte filter zo zoznamu.\n\nKeď trikrát odpoviete na SMS či MMS správu alebo pridáte odosielateľa medzi svoje kontakty, SMS a MMS správy od daného odosielateľa už nebudú filtrované ako správy od neznámeho odosielateľa.\n\nPre užívateľov apky Správy v Brazílii a Indii\n\nFiltrovanie SMS je štandardne zapnuté, aby užívateľom zjednodušilo triedenie správ. Správy od neznámych odosielateľov môžu byť pomocou strojového učenia na zariadení triedené do dvoch podkategórií: Transakcie alebo Promo akcie. Filtrovanie SMS neodosiela spoločnosti Apple žiadny obsah ani dáta z apky Správy. Filtrovanie SMS môžete kedykoľvek vypnúť. Otvorte Nastavenia > Správy > Neznáme a spam a v zozname vyberte možnosť Žiadne."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Puedes instalar y utilizar filtros de SMS de terceros. Si lo haces, el proveedor del filtro puede acceder a todo el texto y contenido incluido en los mensajes SMS y MMS entrantes que recibas de remitentes desconocidos. Estos mensajes pueden incluir códigos de verificación de bancos u otras instituciones, así como demás información personal o sensible que pueda estar en los mensajes SMS y MMS. Cuando utilizas el filtro de mensajes SMS no deseados de un proveedor externo, aceptas los términos, la política de privacidad y las prácticas del proveedor del filtro. Te recomendamos que te informes sobre los términos, políticas de privacidad y prácticas de terceros. Para eliminar un filtro de mensajes SMS no deseados de terceros, ve a Configuración > Mensajes > Desconocidos y no deseados y elimina el filtro de la lista.\n\nDespués de haber respondido a un mensaje SMS o MMS tres veces, o de haber agregado el remitente a tus Contactos, los mensajes SMS y MMS de ese remitente no se filtrarán como remitente desconocido.\n\nPara los usuarios de Mensajes en India y Brasil\n\nEl filtro de SMS está activado de forma predeterminada para ayudar a los usuarios a organizar sus mensajes. Utilizando el aprendizaje automático del dispositivo, los mensajes de remitentes desconocidos podrían clasificarse en dos subcategorías: transacciones o promociones. El filtro de SMS no envía ningún contenido o datos de los mensajes a Apple. Puedes desactivar el filtro de SMS en cualquier momento; para ello, selecciona la opción Ninguno en la lista ubicada en Configuración > Mensajes > Desconocidos y no deseados."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Можете да инсталирате и използвате SMS филтри на трети страни. Ако го направите, този, който предоставя филтъра, ще има достъп до целия текст и съдържанието, включени във входящите SMS и MMS съобщения, които получавате от непознати податели. Тези съобщения може да включват кодове за верификация от банки и други институции, както и друга лична или чувствителна информация, която може да е в SMS и MMS съобщенията. Когато използвате SMS филтър за спам, доставен от друг производител, вие сте обект на условията, политиките и практиките за поверителност на доставчика на филтъра. Препоръчваме ви да прегледате условията и политиките за поверителност на тези трети страни. За да премахнете SMS филтъра за спам на друг производител, отидете в Настройки > Съобщения > Неизвестни и Спам и премахнете филъра от списъка.\n\nСлед като сте отговорили на SMS или MMS съобщение три пъти или сте добавили подателя към вашите Контакти, SMS и MMS съобщенията от този подател няма да бъдат филтрирани като неизвестен подател.\n\nЗа потребители в Бразилия и Индия\n\nSMS филтрирането е активирано по подразбиране, за да помогне на потребителите да организират техните съобщения. Използвайки обучението на устройството, съобщенията от неизвестни податели могат да бъдат сортирани в две подкатегории: Транзакции или Промоции. SMS филтърът не изпраща съдържание или данни от Съобщения на Apple. Можете по всяко време да деактивирате SMS филтъра, като отидете в Настройки > Съобщения > Неизвестни и Спам и изберете Без от списъка."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can install and use third-party SMS filters. If you do, the filter provider can access all the text and content included in incoming SMS and MMS messages that you receive from unknown senders. These messages may include verification codes from banks or other institutions, as well as other personal or sensitive information that may be in SMS and MMS messages. When you use a third-party provider’s SMS spam filter, you are subject to the filter provider’s terms, privacy policy and practices. We encourage you to learn about the terms, privacy policies and practices of those third parties. To remove a third-party SMS spam filter, go to Settings > Messages > Unknown & Spam and remove the filter from the list.\n\nAfter you have responded to an SMS or MMS message three times or have added the sender to your Contacts, SMS and MMS messages from that sender will not be filtered as an unknown sender.\n\nFor Messages Users in Brazil and India\n\nSMS Filter is enabled by default to help users organise their messages. Using on-device machine learning, messages from unknown senders may be sorted into two subcategories: Transactions or Promotions. SMS Filter does not send any content or data from Messages to Apple. You can disable SMS Filter anytime by going to Settings > Messages > Unknown & Spam, and selecting None from the list."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Namestite in uporabljate lahko filtre za sporočila SMS drugih ponudnikov. V tem primeru lahko ponudnik filtra dostopa do vseh podatkov in vsebine v dohodnih sporočilih SMS in MMS, ki jih prejmete od neznanih pošiljateljev. Ta sporočila lahko vključujejo tudi potrditvene kode bančnih ali drugih ustanov ter druge osebne in občutljive informacije, vključene v sporočila SMS in MMS. Ko uporabite filter za neželena sporočila SMS drugega ponudnika, za vas veljajo pogoji, pravilnik o zasebnosti in prakse tega ponudnika. Priporočamo vam, da se seznanite s pogoji, pravilniki o zasebnosti in praksami zadevnih ponudnikov. Če želite odstraniti filter za neželena sporočila SMS drugega ponudnika, odprite Nastavitve > Sporočila > Neznano in neželeno ter odstranite filter s seznama.\n\nKo trikrat odgovorite na sporočilo SMS ali MMS oziroma dodate pošiljatelja v Stike, sporočila SMS in MMS tega pošiljatelja ne bodo več filtrirana kot neznani pošiljatelj.\n\nZa uporabnike aplikacije Sporočila v Braziliji in Indiji\n\nFiltriranje SMS je privzeto omogočeno, da lahko uporabniki lažje organizirajo sporočila. S strojnim učenjem v napravi je mogoče sporočila neznanih pošiljateljev razvrstiti v dve podkategoriji: Transakcije ali Promocije. Filtriranje sporočil SMS družbi Apple ne pošilja nobene vsebine ali podatkov iz aplikacije Sporočila. Filtriranje sporočil SMS lahko kadarkoli onemogočite tako, da odprete Nastavitve > Sporočila > Neznano in neželeno ter na seznamu izberete Brez."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du kannst SMS-Filter anderer Anbieter installieren und verwenden. Wenn du dies tust, hat der Anbieter des jeweiligen Filters Zugriff auf den gesamten Text und Inhalt empfangener SMS- und MMS-Nachrichten, die du von unbekannten Absendern erhältst. Dies können Prüfcodes von Banken und anderen Instituten und andere persönliche, personenbezogene oder sensible Daten sein, die möglicherweise in SMS- und MMS-Nachrichten enthalten sind. Wenn du für SMS-Nachrichten den Spam-Filter eines anderen Anbieters verwendest, unterliegst du den AGB und sonstigen Bestimmungen des jeweiligen Filteranbieters. Wir raten dir daher, dass du dir die AGB und sonstigen Bestimmungen, die Datenschutzrichtlinien und Verfahrensweisen dieser anderen Anbieter genau ansiehst. Du kannst den für SMS-Nachrichten verwendeten Spam-Filter eines anderen Anbieters jederzeit entfernen. Wähle dazu „Einstellungen“ > „Nachrichten“ > „Unbekannt & Spam“ und entferne den Filter aus der Liste.\n\nWenn du dreimal auf eine SMS- oder MMS-Nachricht geantwortet hast oder wenn du den Absender einer Nachricht zu deinen Kontakten hinzufügst, werden SMS- und MMS-Nachrichten des betreffenden Absenders nicht mehr als „Unbekannter Absender“ gefiltert.\n\nFür Benutzer:innen der App „Nachrichten“ in Brasilien und Indien\n\nDer SMS-Filter ist standardmäßig aktiviert, um Benutzer:innen bei der Organisation ihrer Nachrichten zu unterstützen. Wird die Lernfunktion des Geräts verwendet, werden Nachrichten in englischer Sprache, die von einem unbekannten Absender stammen, unter Umständen in zwei Unterkategorien sortiert: Transaktionen oder Werbung. Der SMS-Filter übermittelt keinerlei Inhalte oder Daten aus der App „Nachrichten“ an Apple. Du kannst den SMS-Filter jederzeit deaktivieren, indem du „Einstellungen“ > „Nachrichten“ > „Unbekannt & Spam“ und danach „Ohne“ in der Liste auswählst."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bạn có thể cài đặt và sử dụng các bộ lọc SMS của bên thứ ba. Nếu bạn thực hiện, nhà cung cấp bộ lọc có thể truy cập tất cả văn bản và nội dung có trong các tin nhắn SMS và MMS đến mà bạn nhận được từ người gửi không xác định. Những tin nhắn này có thể bao gồm mã xác minh từ ngân hàng hoặc các tổ chức khác, cũng như thông tin cá nhân hoặc nhạy cảm khác có thể có trong các tin nhắn SMS và MMS. Khi sử dụng bộ lọc SMS rác của nhà cung cấp bên thứ ba, bạn tuân theo các điều khoản, chính sách quyền riêng tư và biện pháp thực hành của nhà cung cấp bộ lọc. Chúng tôi khuyến khích bạn tìm hiểu các điều khoản, chính sách quyền riêng tư và biện pháp thực hành của các bên thứ ba đó. Để xóa bộ lọc SMS rác của bên thứ ba, hãy đi tới Cài đặt > Tin nhắn > Không xác định & rác và xóa bộ lọc khỏi danh sách.\n\nSau khi bạn trả lời một tin nhắn SMS hoặc MMS ba lần hoặc đã thêm người gửi vào Danh bạ, các tin nhắn SMS và MMS từ người gửi đó sẽ không bị lọc là người gửi không xác định.\n\nĐối với người dùng Tin nhắn tại Brazil và Ấn Độ\n\nBộ lọc SMS được bật theo mặc định để giúp người dùng sắp xếp các tin nhắn. Sử dụng tính năng học máy trên thiết bị, các tin nhắn từ người gửi không xác định có thể được phân loại thành hai danh mục con: Giao dịch hoặc Quảng cáo. Bộ lọc SMS không gửi bất kỳ nội dung hoặc dữ liệu nào từ Tin nhắn đến Apple. Bạn có thể tắt Bộ lọc SMS bất kỳ lúc nào bằng cách đi tới Cài đặt > Tin nhắn > Không xác định & rác và chọn Không có từ danh sách."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Puedes instalar y utilizar filtros de SMS de terceros. Si lo haces, el proveedor de los filtros podrá acceder a todo el texto y al contenido incluido en los mensajes SMS y MMS entrantes que recibas de remitentes desconocidos. Estos mensajes pueden incluir códigos de verificación de bancos y otras instituciones, así como otra información personal o sensible. Si utilizas un filtro de mensajes SMS no deseados producido por un tercero, estás aceptando las condiciones, la política de privacidad y las prácticas del proveedor del filtro. Te animamos a que te informes de las condiciones, políticas de privacidad y prácticas de ese tercero. Para eliminar un filtro de mensajes SMS no deseados producido por un tercero, ve a Ajustes > Mensajes > “Desconocido y no deseado” y elimina el filtro de la lista.\n\nCuando hayas respondido a un mensaje SMS o MMS tres veces, o hayas añadido al remitente a Contactos, los mensajes SMS y MMS de ese remitente dejarán de filtrarse como de un remitente desconocido.\n\nPara los usuarios de la app Mensajes en Brasil e India\n\nPara ayudar a los usuarios a organizar sus mensajes, el filtro de SMS está activado por omisión. Utilizando el sistema de aprendizaje automático del dispositivo, los mensajes procedentes de remitentes desconocidos pueden clasificarse en dos subcategorías: transacciones o promociones. El filtro de SMS no envía a Apple ningún tipo de contenido o datos desde Mensajes. Puedes desactivar el filtro de SMS en cualquier momento entrando en Ajustes > Mensajes > “Desconocido y no deseado” y seleccionando “Ninguno” en la lista."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Você pode instalar e usar filtros de SMS de terceiros. Se o fizer, o provedor do filtro poderá acessar todo o texto e conteúdo incluído nas mensagens SMS e MMS que você receber de remetentes desconhecidos. Tais mensagens podem incluir códigos de verificação de bancos ou outras instituições, bem como outras informações pessoais ou sigilosas que possam estar nas mensagens SMS e MMS. Quando você usa um filtro de spam para SMS de terceiros, você está sujeito aos termos, política de privacidade e práticas do provedor do filtro. Recomendamos que você conheça os termos, políticas de privacidade e práticas desses terceiros. Para remover um filtro de spam para SMS de terceiros, abra Ajustes > Mensagens > Desconhecidas e Indesejadas e remova o filtro da lista.\n\nDepois que você responder uma mensagem SMS ou MMS três vezes ou adicionar o remetente aos seus Contatos, as mensagens SMS ou MMS desse remetente deixarão de ser filtradas como de um remetente desconhecido.\n\nPara Usuários do App Mensagens no Brasil e na Índia\n\nO Filtro de SMS está ativado por padrão para ajudar usuários a organizarem suas mensagens. Com o aprendizado de máquina no dispositivo, as mensagens de remetentes desconhecidos podem ser organizadas em duas categorias: Transações ou Promoções. O Filtro de SMS não envia nenhum conteúdo ou dado do app Mensagens para a Apple. Você pode desativar o Filtro de SMS a qualquer momento. Para fazer isso, abra Ajustes > Mensagens > Desconhecidas e Indesejadas e selecione “Nenhum” na lista."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Үшінші тараптың SMS сүзгілерін орнатуға және пайдалануға болады. Бұл жағдайда сүзгіні ұсынатын әзірлеуші белгісіз жіберушілерден алынған SMS пен MMS кіріс хабарлардың толық мәтініне және мазмұнына қол жеткізе алады. Бұл хабарлар банктер мен басқа мекемелердің тексеру кодтарын, сондай-ақ SMS пен MMS хабарларында болуы мүмкін басқа жеке және құпия ақпаратты қамтуы мүмкін. Үшінші тарап әзірлеушісі ұсынған SMS спам сүзгісін пайдаланған кезде, сізге осы сүзгі әзірлеушісінің шарттары, құпиялылық саясаты және тәжірибелері қолданылады. Осындай үшінші тараптардың шарттарымен, құпиялылық саясаттарымен және жұмыс істеу әдістерімен танысуға кеңес береміз. Үшінші тарап әзірлеушісі ұсынған SMS спам сүзгісін жою үшін «Реттеулер» > «Хабарлар» > «Белгісіз және спам» тармағына өтіп, сүзгіні тізімнен жойыңыз.\n\nSMS немесе MMS хабарына үш рет жауап бергеннен кейін немесе жіберушіні контактілерге қосқаннан кейін, осы жіберушіден келген SMS және MMS хабарлары енді белгісіз жіберушіден алынғандай сүзгіден өтпейді.\n\nБразилия мен Үндістандағы «Хабарлар» пайдаланушыларына арналған ақпарат\n\nПайдаланушыларға хабарларын ұйымдастыруға көмектесу үшін SMS сүзгісі әдепкі бойынша қосылған. Құрылғыдағы машиналық оқыту құралын қолдана отырып, белгісіз жіберушілердің хабарларын екі ішкі санат бойынша сұрыптауға болады: Транзакциялар немесе жарнама. SMS сүзгісі Apple компаниясына «Хабарлар» қолданбасы ішіндегі қандай да бір мазмұнды немесе деректі жібермейді. SMS сүзгісін «Реттеулер» > «Хабарлар» > «Белгісіз және спам» тармағына өтіп, тізімнен «Жоқ» опциясын таңдау арқылы кез келген уақытта өшіруге болады."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vous pouvez installer et utiliser des filtres de tierce partie pour les SMS. Si vous le faites, le fournisseur de ce filtre peut accéder à l’ensemble du contenu des SMS et MMS entrants qui proviennent d’expéditeurs inconnus. Ces messages peuvent comporter des codes de validation envoyés par des banques ou d’autres établissements, ainsi que d’autres données personnelles ou confidentielles. Si vous utilisez un filtre de tierce partie pour les SMS indésirables, vous vous conformez aux conditions, à l’engagement de confidentialité et aux pratiques de son fournisseur. Nous vous recommandons de prendre connaissance des conditions, engagements de confidentialité et pratiques des tierces parties. Pour supprimer un filtre de tierce partie pour les SMS indésirables, accédez à Réglages, touchez Messages > Inconnus et indésirables, puis supprimez le filtre de la liste.\n\nUne fois que vous aurez répondu trois fois à un SMS ou un MMS, ou que vous aurez ajouté l’émetteur à vos contacts, les SMS et les MMS provenant de cet émetteur ne seront pas filtrés comme venant d’un émetteur inconnu.\n\nPour les utilisateurs de Messages au Brésil et en Inde\n\n« Filtrage des SMS » est activé par défaut pour aider les utilisateurs à organiser leurs messages. À l’aide de l’apprentissage automatique sur l’appareil, les messages provenant d’émetteurs inconnus peuvent être triés dans deux sous-catégories : Transactions ou Promotions. « Filtrage des SMS » n’envoie aucun contenu ni aucune donnée de Messages à Apple. Vous pouvez désactiver « Filtrage des SMS » à tout moment en accédant à Réglages > Messages > Inconnus et indésirables et en sélectionnant « Aucun » dans la liste."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ви можете інсталювати сторонні SMS-фільтри. У цьому випадку постачальник послуги фільтрації матиме доступ до повного тексту й вмісту вхідних повідомлень SMS і MMS, які ви отримуєте від невідомих відправників. Ці повідомлення можуть містити коди перевірки від банків та інших установ, а також іншу персональну та конфіденційну інформацію, що може міститися в повідомленнях SMS і MMS. Використовуючи послуги стороннього постачальника фільтрів SMS-спаму, ви покладаєтеся на умови, політику конфіденційності та підходи до обробки даних постачальника послуги фільтрації. Рекомендуємо вам ознайомитися з умовами, політикою конфіденційності та підходами до обробки даних таких третіх сторін. Щоб вилучити сторонній фільтр SMS-спаму, перейдіть у Параметри > Повідомлення > Невідомі та спам і видаліть фільтр зі списку.\n\nЯкщо ви тричі відповісте на повідомлення SMS або MMS або додасте відправника до своїх контактів, повідомлення SMS і MMS від цього відправника більше не відфільтровуватимуться як повідомлення від невідомого відправника.\n\nКористувачам Повідомлень у Бразилії та Індії\n\nТипово SMS-фільтр увімкнений, щоб полегшити користувачам упорядкування їхніх повідомлень. З використанням інтегрованих засобів машинного навчання на пристрої повідомлення від невідомих відправників можуть сортуватися за двома підкатегоріями: трансакції або реклама. SMS-фільтр не надсилає до Apple ніякого вмісту чи даних із Повідомлень. Вимкнути SMS-фільтр можна будь-якої миті. Для цього перейдіть у меню Параметри > Повідомлення > Невідомі і спам, а потім виберіть «Немає» зі списку."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Puteți instala și utiliza filtre SMS terțe. În acest caz, furnizorul filtrului poate să acceseze tot textul și conținutul inclus în mesajele SMS și MMS primite de la expeditori necunoscuți. Aceste mesaje pot include coduri de verificare de la bănci sau alte instituții, precum și alte informații personale sau confidențiale care se pot afla în mesajele SMS și MMS. Dacă utilizați un filtru spam SMS de la un furnizor terț, vă supuneți clauzelor, politicii de confidențialitate și practicilor furnizorului filtrului. Este recomandat să vă informați despre clauzele, politicile de confidențialitate și practicile acelor terțe părți. Pentru a elimina un filtru de spam SMS terț, accesați Configurări > Mesaje > Necunoscuți și spam și eliminați filtrul din listă.\n\nDupă ce răspundeți unui mesaj SMS sau MMS de trei ori sau după ce adăugați expeditorul în contactele dvs., mesajele SMS și MMS de la expeditorul respectiv nu vor mai fi filtrate ca provenind de la un expeditor necunoscut.\n\nPentru utilizatorii aplicației Mesaje din Brazilia și India\n\nFiltrul SMS este activat implicit pentru a‑i ajuta pe utilizatori să își organizeze mesajele. Utilizând tehnici de învățare automată pe dispozitiv, mesajele de la expeditorii necunoscuți pot fi sortate în două subcategorii: Tranzacții sau Promoții. Filtrul SMS nu trimite conținut sau date din Mesaje la Apple. Puteți dezactiva oricând filtrul SMS accesând Configurări > Mesaje > Necunoscuți și spam și selectând Nimic din listă."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "他社製のSMSフィルタをインストールして使用できます。その場合、フィルタの開発元は、不明な送信者から受け取ったSMS/MMSメッセージに含まれるすべてのテキストとコンテンツにアクセスできるようになります。これらのメッセージには、銀行やその他の機関からの確認コードや、SMS/MMSメッセージに書かれているかもしれない個人情報や機密情報が含まれている場合があります。他社製の迷惑メッセージフィルタを使用する場合、その提供元の利用規約、プライバシーポリシー、および慣行に従うものとされます。それらの会社の規約、プライバシーポリシー、慣行についてよく調べておくことをおすすめします。他社製の迷惑メッセージフィルタを削除するには、“設定”＞“メッセージ”＞“不明な送信者および迷惑メッセージ”に移動し、リストからフィルタを削除します。\n\nSMS/MMSメッセージに3回以上返信した場合、またはその送信者を“連絡先”に追加すると、その送信者からのSMS/MMSメッセージは不明な送信者として除外されなくなります。\n\nブラジルおよびインドの“メッセージ”ユーザ向けの情報\n\nユーザがメッセージを整理できるように、デフォルトでSMSフィルタが有効になっています。デバイス上の機械学習を使用して、不明な送信者からのメッセージは “取引”と“プロモーション”の2つのサブカテゴリに振り分けられます。SMSフィルタでは、“メッセージ”のコンテンツまたはデータはAppleに送信されません。SMSフィルタは、“設定”＞“メッセージ”＞“不明な送信者および迷惑メッセージ”に移動し、リストから“なし”を選択することで、いつでも無効にできます。"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You can install and use third-party SMS filters. If you do, the filter provider can access all the text and content included in incoming SMS and MMS messages that you receive from unknown senders. These messages may include verification codes from banks or other institutions, as well as other personal or sensitive information that may be in SMS and MMS messages. When you use a third-party provider’s SMS spam filter, you are subject to the filter provider’s terms, privacy policy and practices. We encourage you to learn about the terms, privacy policies and practices of those third parties. To remove a third-party SMS spam filter, go to Settings > Messages > Unknown & Spam and remove the filter from the list.\n\nAfter you have responded to an SMS or MMS message three times, or have added the sender to your Contacts, SMS and MMS messages from that sender will not be filtered as an unknown sender.\n\nFor Messages Users in Brazil and India\n\nSMS Filter is enabled by default to help users organise their messages. Using on-device machine learning, messages from unknown senders may be sorted into two subcategories: Transactions or Promotions. SMS Filter does not send any content or data from Messages to Apple. You can disable SMS Filter at any time by going to Settings > Messages > Unknown & Spam, and selecting None from the list."
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pode instalar e utilizar filtros SMS de terceiros. Nesse caso, o fornecedor do filtro pode aceder a todos os textos e conteúdos incluídos nas mensagens SMS e MMS que receber de remetentes desconhecidos. Estas mensagens poderão incluir códigos de verificação de bancos ou outras instituições, assim como outras informações pessoais e sensíveis que possam estar nas mensagens SMS e MMS. A utilização de um filtro de spam de SMS de terceiros está sujeita aos termos, política de privacidade e práticas do fornecedor do filtro. Os utilizadores são encorajados a informar‑se acerca dos termos, políticas de privacidade e práticas desses terceiros. Para remover um filtro de spam de SMS de terceiros, em Definições > Mensagens > Desconhecido e spam, remova o filtro da lista.\n\nDepois de ter respondido a uma mensagem SMS ou MMS três vezes ou adicionado o remetente aos seus contactos, as mensagens SMS e MMS desse remetente não serão filtradas como provenientes de um remetente desconhecido.\n\nPara utilizadores da aplicação Mensagens no Brasil e na Índia\n\nA filtragem de SMS está ativada por predefinição para ajudar os utilizadores a organizarem as mensagens. Através de aprendizagem automática no dispositivo, as mensagens de remetentes desconhecidos podem ser ordenadas em duas subcategorias: Transações ou Promoções. A filtragem de SMS não envia quaisquer conteúdos ou dados de Mensagens à Apple. Pode desativar a filtragem de SMS em Definições > Mensagens > Desconhecida e indesejada, selecionando “Nenhum” na lista."
+          }
+        }
+      }
+    },
+    "SPLASH_SHORT_TITLE": {
+      "extractionState": "manual",
+      "localizations": {
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filtriranje SMS-a"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "סינון הודעות SMS"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS 필터링"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pemfilteran SMS"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tekstiviestisuodatus"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS Filtreleme"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Фильтрация SMS"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS-szűrés"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sms-filters"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filtri SMS"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filtrar SMS"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Φιλτράρισμα SMS"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filtres SMS"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تصفية رسائل SMS"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filtratge de missatges SMS"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "過濾SMS"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS-filtrering"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS-filtrering"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS फ़िल्टरिंग"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sms-filtrering"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS Filtering"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS過濾"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filtrowanie wiadomości"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "การฟิลเตอร์ SMS"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "短信过滤"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS Filtering"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS filtravimas"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Penapisan SMS"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filtrování SMS"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filtrovanie SMS"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filtrar SMS"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS филтриране"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS Filtering"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filtriranje sporočil SMS"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS-Filterung"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lọc SMS"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filtrado de SMS"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filtragem de SMS"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS сүзгілері"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filtrage des SMS"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS-фільтр"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filtrare SMS"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMSフィルタリング"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS Filtering"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filtragem de SMS"
+          }
+        }
+      }
+    },
+    "SPLASH_SUMMARY": {
+      "extractionState": "manual",
+      "localizations": {
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filtri za SMS omogućavaju vam otkrivanje i filtriranje nepoznatih SMS i MMS poruka."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "מסנני הודעות טקסט מאפשרים לאתר ולסנן הודעות SMS והודעות MMS ממקור לא ידוע."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS 필터는 알 수 없는 SMS 및 MMS 메시지를 감지하고 필터링하는 방법을 제공합니다."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filter SMS menyediakan cara bagi Anda untuk mendeteksi dan memfilter pesan SMS dan MMS yang tidak dikenal."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tekstiviestisuodatus tarjoaa mahdollisuuden havaita ja suodattaa tuntemattomia teksti- ja multimediaviestejä."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS filtreleri, bilinmeyen SMS ve MMS mesajlarını saptayıp filtrelemeniz için bir yol sunar."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Фильтрация SMS определяет сообщения SMS и MMS с неизвестных номеров и отфильтровывает их."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Az SMS-szűrés lehetővé teszi, hogy észlelje és szűrje az ismeretlen SMS- és MMS-üzeneteket."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sms-filters bieden een manier om onbekende sms- en mms-berichten te detecteren en te filteren."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "I filtri SMS sono uno strumento per consentirti di individuare e filtrare i messaggi SMS e MMS sconosciuti."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los filtros de SMS te permiten detectar y filtrar los mensajes SMS y MMS de números desconocidos."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Τα φίλτρα SMS παρέχουν έναν τρόπο εντοπισμού και φιλτραρίσματος άγνωστων μηνυμάτων SMS και MMS."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les filtres SMS vous donnent les moyens de détecter et de filtrer les SMS et MMS d’expéditeurs inconnus."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "توفر تصفية رسائل SMS طريقة لك لاكتشاف رسائل SMS و MMS غير المعروفة وتصفيتها."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Els filtres dels missatges SMS són una manera de detectar i filtrar els missatges SMS i MMS desconeguts."
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS過濾器為你偵測和過濾未知SMS和MMS訊息。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS-filter ger dig ett sätt att upptäcka och filtrera okända SMS och MMS."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS-filtre oppdager og filtrerer SMS- og MMS-meldinger fra ukjente avsendere."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS फ़िल्टर आपको अज्ञात SMS और MMS संदेशों का पता लगाने और फ़िल्टर करने का तरीक़ा उपलब्ध कराता है।"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sms-filtre gør det muligt for dig at registrere og filtrere ukendte sms- og mms-beskeder."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS filters provide a way for you to detect and filter unknown SMS and MMS messages."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS過濾為你提供了偵測和過濾未知SMS與MMS訊息的方式。"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filtry wiadomości umożliwiają wykrywanie i filtrowanie nieznanych wiadomości SMS i MMS."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ฟิลเตอร์ SMS มอบวิธีให้คุณตรวจหาและฟิลเตอร์ข้อความ SMS และ MMS ที่ไม่รู้จัก"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "短信过滤可让你检测和过滤未知的短信和彩信。"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS filters provide a way for you to detect and filter unknown SMS and MMS messages."
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS filtras suteikia jums būdą atpažinti ir filtruoti nežinomas SMS ir MMS žinutes."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Penapisan SMS memberikan cara untuk anda mengesan dan menapis SMS serta MMS yang tidak diketahui."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filtrování SMS slouží k detekci a odfiltrování neznámých SMS a MMS zpráv."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filtre SMS správ vám poskytujú mechanizmus detekcie a filtrovania neznámych SMS a MMS správ."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los filtros de SMS te permiten detectar y filtrar los mensajes SMS y MMS de números desconocidos."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS филтрите ви предоставят начин да засичате и филтрирате непознати SMS и MMS съобщения."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS filters provide a way for you to detect and filter unknown SMS and MMS messages."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filtri za sporočila SMS vam omogočajo odkrivanje in filtriranje neznanih sporočil SMS in MMS."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS-Filter bieten die Möglichkeit, unbekannte SMS- und MMS-Nachrichten zu erkennen und zu filtern."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bộ lọc SMS cung cấp cho bạn một cách phát hiện và lọc các tin nhắn SMS và MMS không xác định."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los filtros de SMS son una forma de detectar y filtrar los mensajes SMS y MMS desconocidos."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filtros de SMS oferecem a você uma maneira de detectar e filtrar mensagens SMS e MMS desconhecidas."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS сүзгілері белгісіз SMS және MMS хабарларын анықтауға және сүзгілеуге мүмкіндік береді."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les filtres de SMS vous permettent de détecter et filtrer des SMS et des MMS inconnus."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Завдяки SMS-фільтр ви можете виявляти та відфільтровувати невідомі повідомлення SMS і MMS."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filtrele SMS furnizează o modalitate de a detecta și filtra mesajele SMS și MMS de la necunoscuți."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMSフィルタは、不明なSMS/MMSメッセージを見つけて除外する機能を提供します。"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS filters provide a way for you to detect and filter unknown SMS and MMS messages."
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Os filtros SMS permitem‑lhe detetar e filtrar mensagens SMS e MMS desconhecidas."
+          }
+        }
+      }
+    },
+    "SPLASH_TITLE": {
+      "extractionState": "manual",
+      "localizations": {
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filtriranje SMS-a i privatnost"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "״סינון הודעות SMS״ ופרטיות…"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS 필터링 및 개인정보 보호"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pemfilteran SMS & Privasi"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Roskapostisuodatin ja tietosuoja"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS Filtreleme ve Gizlilik"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Фильтрация SMS и конфи­денциальность"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Az SMS-szűrés és az adatvédelem"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sms-filters en privacy"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filtri SMS e Privacy"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filtrar SMS y la privacidad"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Φιλτράρισμα SMS και απόρρητο"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filtres SMS et confidentialité"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تصفية رسائل SMS والخصوصية"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filtratge de missatges SMS i la privacitat"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "過濾SMS與私隱"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS-filtrering och integritet"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS-filtrering og personvern"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS फ़िल्टरिंग और गोपनीयता"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sms-filtrering og anonymitet"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS Filtering & Privacy"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS過濾與隱私權"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filtrowanie wiadomości i prywatność"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "การฟิลเตอร์ SMS และความเป็นส่วนตัว"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "短信过滤与隐私"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS Filtering & Privacy"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS filtravimas ir privatumas"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Penapisan SMS & Privasi"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filtrování SMS a soukromí"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filtrovanie SMS a súkromie"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filtrar SMS y la privacidad"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS филтриране и поверителност"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS Filtering & Privacy"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filtriranje sporočil SMS in zasebnost"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS-Filterung & Datenschutz"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lọc SMS & Quyền riêng tư"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“Filtrado de SMS” y la privacidad"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filtragem de SMS e Privacidade"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS сүзгілері және құпиялылық"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filtrage des SMS et confidentialité"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS-фільтр і приватність"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filtrarea SMS și intimitatea"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMSフィルタリングとプライバシー"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS Filtering & Privacy"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filtragem de SMS e Privacidade"
+          }
+        }
+      }
+    },
+    "BUTTON_TITLE": {
+      "extractionState": "manual",
+      "localizations": {
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O aplikaciji Filtriranje SMS-a i privatnosti…"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "מידע בנושא ״סינון הודעות טקסט״ ופרטיות…"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS 필터링 및 개인정보 보호에 관하여…"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mengenai Pemfilteran SMS & Privasi…"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tietoja: Tekstiviestisuodatus ja tietosuoja…"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS Filtreleme ve Gizlilik Hakkında…"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "О фильтрации SMS и конфиденциальности…"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Az SMS-szűrésről és az adatvédelemről…"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Over sms-filters en privacy…"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filtri SMS e Privacy…"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de filtrar SMS y la privacidad…"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Πληροφορίες για το Φιλτράρισμα SMS και το απόρρητο…"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filtres SMS et confidentialité…"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حول تصفية رسائل SMS والخصوصية…"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sobre el filtratge de missatges SMS i la privacitat…"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "關於過濾SMS與私隱⋯"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om SMS-filtrering och integritet…"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om SMS-filtrering og personvern…"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS फ़िल्टरिंग और गोपनीयता परिचय…"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om Sms-filtrering og anonymitet…"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About SMS Filtering & Privacy…"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "關於SMS過濾與隱私權⋯"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filtrowanie wiadomości i prywatność…"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เกี่ยวกับการฟิลเตอร์ SMS และความเป็นส่วนตัว…"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "关于短信过滤与隐私…"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About SMS Filtering & Privacy…"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apie „SMS filtravimą“ ir privatumą…"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Perihal Penapisan SMS & Privasi…"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O Filtrování SMS a soukromí…"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O filtrovaní SMS a súkromí…"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de filtrar SMS y la privacidad…"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "За SMS филтриране и поверителност…"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About SMS Filtering & Privacy…"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Več o filtriranju sporočil SMS in zasebnosti …"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Über SMS-Filterung & Datenschutz …"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lọc SMS & Quyền riêng tư…"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de “Filtrado de SMS” y la privacidad…"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sobre Filtragem de SMS e Privacidade…"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMS сүзгілері және құпиялылық туралы ақпарат…"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Filtrage des SMS et confidentialité…"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Про SMS-фільтр і приватність…"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Despre filtrarea SMS și intimitate…"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SMSフィルタリングとプライバシーについて…"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About SMS Filtering & Privacy…"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de Filtragem de SMS e Privacidade…"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}
