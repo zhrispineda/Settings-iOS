@@ -1,0 +1,1381 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "FOOTER_TEXT": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Handwashing sends limited information that is captured by your Apple Watch as part of your use of the Handwashing feature. The information collected will include limited motion data, feedback you provide and certain processed audio data. If you choose to share this information, it will be reviewed only by Apple employees and used to develop, improve and understand the effectiveness of the Handwashing feature; it will not be used for any other purpose. This information is not linked to your Apple Account or other data Apple may have from your use of other Apple services.\n\nThe information collected from you as part of Improve Handwashing will include certain raw motion data (such as accelerometer data), your engagement with the feature (such as your response to handwashing notifications), and certain processed audio that is captured by your Apple Watch only when this feature is enabled and processed on device to remove most instances of recognisable speech.\n\nThe collected audio files will not exceed 60 seconds from when handwashing motion is detected by your Apple Watch. Any audio that is identified by Apple to include recognisable speech will be promptly deleted.\n\nAll information provided as part of Improve Handwashing will be encrypted in transit and on your device.\n\nBy enabling Improve Handwashing, you agree and consent to Apple’s and its subsidiaries’ and agents’ transmission, collection, maintenance, processing and use of this information as described above. Apple may store this information with trusted third-party service providers. You may choose to stop sharing your data with Apple at any time. To do so, go to Settings > Privacy & Security > Analytics & Improvements and tap to turn off Improve Handwashing.\n\nAt all times, information collected by Apple will be treated in accordance with Apple’s Privacy Policy, which can be found at www.apple.com/in/privacy"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "״שיפור שטיפת ידיים״ שולח מידע מוגבל שנלכד על ידי ה-Apple Watch כחלק מהשימוש שלך במאפיין ״שטיפת ידיים״. המידע שנאסף כולל נתוני תנועה מוגבלים, משוב שסיפקת ונתוני שמע מעובדים מסוימים. אם בחרת לשתף מידע זה, רק עובדי Apple יעיינו בו במטרה לפתח ולשפר את המאפיין ״שטיפת ידיים״ ולהבין את מידת היעילות שלו; המידע לא ישמש לאף מטרה אחרת. מידע זה אינו מקושר לחשבון ה-Apple שלך או לנתונים אחרים ש-Apple עשויה לקבל מהשימוש שלך בשירותי Apple אחרים.\n\nהמידע הנאסף ממך כחלק מ״שיפור שטיפת ידיים״ כולל נתוני תנועה לא מעובדים מסוימים (כגון נתוני מד תאוצה), מידע על האינטראקציה שלך עם המאפיין (כגון התגובה שלך לעדכוני שטיפת ידיים) ושמע מעובד מסוים שנלכד על ידי ה-Apple Watch רק כשמאפיין זה מופעל ומעובד במכשיר כדי להסיר את רוב המופעים של דיבור הניתן לזיהוי.\n\nקובצי השמע שנאספים לא יחרגו מ-60 שניות מהרגע שבו תנועת שטיפת ידיים זוהתה על-ידי ה-Apple Watch. כל שמע המזוהה על-ידי Apple כדי לכלול דיבור הניתן לזיהוי יימחק מיד.\n\nכל המידע שסופק כחלק מ״שיפור שטיפת ידיים״ יוצפן בעת המעבר ובמכשיר.\n\nהפעלת ״שיפור שטיפת ידיים״ מהווה את הסכמתך לכך ש-Apple וחברות הבת והסוכנים שלה ישדרו, יאספו, ישמרו, יעבדו וישתמשו במידע זה כמתואר לעיל. ייתכן ש-Apple תאחסן מידע זה באמצעות ספקי שירות חיצוניים מהימנים. ניתן להפסיק לשתף את הנתונים עם Apple בכל שלב. כדי לעשות זאת, יש לעבור אל ״הגדרות״ > ״פרטיות ואבטחה״ > ״נתונים ושיפורים״ ולהקיש לכיבוי ״שיפור שטיפת ידיים״.\n\nבכל עת, מידע הנאסף על-ידי Apple יטופל בהתאם למדיניות הפרטיות של Apple הזמינה בכתובת: www.apple.com/privacy"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "‘손씻기 향상’은 손씻기 기능 사용의 일부로 Apple Watch에서 캡처한 제한된 정보를 전송합니다. 수집된 정보는 제한된 모션 데이터, 사용자가 제공한 피드백 및 특정 처리된 오디오 데이터를 포함합니다. 이 정보를 공유하기로 선택하는 경우, Apple 직원만 해당 정보를 검토하고 손씻기 기능의 효율성을 발전, 향상 및 이해하는 데 사용할 수 있으며 다른 목적으로는 사용되지 않습니다. 이 정보는 사용자의 Apple 계정 또는 사용자가 이용하는 다른 Apple 서비스에서 Apple이 수집할 수 있는 기타 데이터와 연결되지 않습니다.\n\n‘손씻기 향상’의 일부로 수집되는 정보는 특정 원본 모션 데이터(가속도계 데이터 등), 기능에 대한 사용자의 참여(예: 손씻기 알림에 대한 사용자의 응답) 및 Apple Watch로 캡처한 처리된 오디오(이 기능이 기기 상에서 활성화되고 처리되어 대부분의 인식 가능한 음성을 제거하는 경우에만)를 포함합니다.\n\n수집된 오디오 파일은 Apple Watch가 손씻기 동작을 감지하는 시간으로부터 60초를 초과하지 않습니다. Apple이 인식 가능한 음성을 포함하는 것으로 확인한 모든 오디오는 즉시 삭제됩니다.\n\n‘손씻기 향상’의 일부로 제공되는 모든 정보는 전송되는 동안 기기에서 암호화됩니다.\n\n‘손씻기 향상’ 기능을 활성화함으로써 Apple과 그 자회사 및 에이전트가 앞서 말한 모든 정보를 전송, 수집, 보존, 처리 및 사용하는 것에 대해 사용자가 동의하고 허용하는 것입니다. Apple은 이 정보를 신뢰하는 타사 서비스 제공업체에 저장할 수 있습니다. 사용자는 Apple과 데이터를 공유하는 것을 언제든지 중단할 수 있습니다. 공유를 중단하려면 설정 > 개인정보 보호 및 보안 > 분석 및 향상으로 이동한 후 ‘손씻기 향상’을 탭하여 끄십시오.\n\nApple에서 수집한 정보는 항상 Apple의 개인정보 처리방침에 따라 취급되며, 자세한 내용은 www.apple.com/kr/privacy 사이트에서 확인할 수 있습니다."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tingkatkan Cuci Tangan mengirimkan informasi terbatas yang direkam oleh Apple Watch Anda sebagai bagian dari penggunaan fitur Cuci Tangan oleh Anda. Informasi yang dikumpulkan akan menyertakan data terbatas terkait gerakan, umpan balik yang Anda berikan, dan data audio terproses tertentu. Jika Anda memilih untuk membagikannya, informasi ini hanya akan ditinjau oleh karyawan Apple dan digunakan mengembangkan, meningkatkan, dan memahami keefektifan fitur Cuci Tangan; informasi ini tidak akan digunakan untuk tujuan lain. Informasi ini tidak dikaitkan dengan Akun Apple atau data Anda lainnya yang mungkin dimiliki Apple dari penggunaan layanan Apple lainnya oleh Anda.\n\nInformasi yang dikumpulkan dari Anda sebagai bagian dari Tingkatkan Cuci Tangan akan menyertakan data gerakan mentah (seperti data akselerometer), interaksi Anda dengan fitur tersebut (seperti respons Anda terhadap pemberitahuan cuci tangan), dan audio terproses tertentu yang hanya direkam mikrofon Apple Watch saat fitur ini diaktifkan dan diproses pada perangkat untuk menghapus sebagian besar kemunculan ucapan yang dapat dikenali.\n\nFile audio yang dikumpulkan tidak akan melampaui 60 detik sejak gerakan mencuci tangan terdeteksi oleh Apple Watch Anda. Semua audio yang menurut Apple memiliki ucapan yang dapat dikenali akan segera dihapus.\n\nSemua informasi yang disediakan sebagai bagian dari Tingkatkan Cuci Tangan akan dienkripsi saat transit dan saat berada di perangkat Anda.\n\nDengan mengaktifkan Tingkatkan Cuci Tangan, Anda menyetujui dan menyepakati pentransmisian, pengumpulan, pemeliharaan, pemrosesan, dan penggunaan informasi ini oleh Apple, anak perusahaan, serta agennya sebagaimana dijelaskan di atas. Apple dapat menyimpan informasi ini dengan penyedia layanan pihak ketiga yang tepercaya. Anda dapat memilih untuk berhenti membagikan data Anda dengan Apple kapan pun. Untuk melakukannya, buka Pengaturan > Privasi & Keamanan > Analisis & Peningkatan, lalu ketuk untuk mematikan Tingkatkan Cuci Tangan.\n\nInformasi yang dikumpulkan oleh Apple akan selalu diperlakukan sesuai dengan Kebijakan Privasi Apple, yang dapat ditemukan di www.apple.com/id/privacy"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paranna Käsienpesua lähettää rajoitettuja tietoja, jotka Apple Watch tallentaa, kun käytät Käsienpesu-ominaisuutta. Kerätyt tiedot sisältävät rajoitettuja liiketietoja, antamasi palautteen ja tiettyjä käsiteltyjä äänitietoja. Jos jaat nämä tiedot, niitä tarkastelevat vain Applen työntekijät, ja niitä käytetään vain Käsienpesu-ominaisuuden kehittämiseen ja parantamiseen sekä ominaisuuden tehokkuuden ymmärtämiseen. Tietoja ei käytetä mihinkään muuhun tarkoitukseen. Näitä tietoja ei yhdistetä Apple-tiliisi tai muihin tietoihin, joita Applella voi olla muiden Applen palveluiden käytöstäsi.\n\nParanna Käsienpesua -toiminnon keräämät tiedot sisältävät tiettyjä käsittelemättömiä liiketietoja (kuten kiihtyvyysmittarin tietoja), tietoja ominaisuuden käytöstäsi (esimerkiksi vastauksesi käsienpesuilmoituksiin) ja tiettyä käsiteltyä Apple Watchin tallentamaa ääntä, jos kyseinen ominaisuus on käytössä. Suurin osa ymmärrettävästä puheesta poistetaan laitteessa tapahtuvalla käsittelyllä.\n\nÄänitiedostoja kerätään korkeintaan 60 sekunnin ajan siitä, kun Apple Watch on havainnut käsienpesuliikettä. Kaikki ääni, mihin Apple havaitsee sisältyvän ymmärrettävää puhetta, poistetaan pikaisesti.\n\nKaikki Paranna Käsienpesua -toiminnon tiedot salataan sekä lähetyksen aikana että laitteessasi.\n\nOttamalla Paranna Käsienpesua -toiminnon käyttöön hyväksyt ja suostut siihen, että Apple ja sen tytäryhtiöt ja edustajat voivat lähettää, kerätä, säilyttää, käsitellä ja käyttää näitä tietoja edellä mainitulla tavalla. Apple voi säilyttää näitä tietoja luotetuilla ulkopuolisilla palveluntarjoajilla. Voit lopettaa tietojesi jakamisen Applelle koska tahansa. Tee näin valitsemalla Asetukset > Tietosuoja ja suojaus > ”Analyysi ja parannukset” ja napauttamalla ”Paranna Käsienpesua” pois päältä.\n\nApplen keräämiä tietoja käsitellään aina Applen tietosuojakäytännön mukaisesti. Tämä käytäntö löytyy osoitteesta www.apple.com/legal/privacy/fi/."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El Yıkama’yı İyileştir, Apple Watch’unuz tarafından El Yıkama özelliğini kullanmanız kapsamında toplanan sınırlı bilgileri gönderir. Toplanan bilgiler; sınırlı hareket verilerini, verdiğiniz geri bildirimleri ve bazı işlenmiş ses verilerini içerir. Paylaşmayı seçmeniz durumunda bu bilgiler yalnızca Apple çalışanları tarafından incelenir ve El Yıkama özelliğini geliştirmek, iyileştirmek ve etkinliğini anlamak için kullanılır, başka bir amaç için kullanılmaz. Bu bilgilerle Apple Hesabı’nız veya Apple’ın diğer Apple servislerini kullanmanız nedeniyle sahip olabileceği başka veriler arasında bağlantı kurulmaz.\n\nEl Yıkama’yı İyileştir kapsamında sizden toplanan bilgiler; bazı ham hareket verilerini (akselerometre verileri gibi), özelliğe katılım durumunuzu (el yıkama bildirimlerine yanıtınız gibi) ve yalnızca bu özellik etkinleştirildiğinde Apple Watch’unuzun mikrofonu tarafından kaydedilen ve tanınabilir konuşmaların çoğunu silmek için aygıtta işlemden geçirilen bazı işlenmiş sesleri içerir.\n\nToplanan ses dosyaları, Apple Watch’unuz bir el yıkama hareketi algıladığı andan itibaren 60 saniyeyi geçmez. Apple tarafından tanınabilir konuşma içerdiği belirlenen sesler derhal silinir.\n\nEl Yıkama’yı İyileştir kapsamında verilen tüm bilgiler aktarım sırasında ve aygıtınızda şifrelenir.\n\nEl Yıkama’yı İyileştir’i etkinleştirdiğinizde Apple’ın, bağlı kuruluşlarının ve temsilcilerinin bu bilgileri yukarıda açıklanan şekilde iletmesini, toplamasını, saklamasını, işlemesini ve kullanmasını kabul etmiş ve onaylamış olursunuz. Apple bu bilgileri güvenilir üçüncü parti servis sağlayıcıları ile saklayabilir. Verilerinizin Apple ile paylaşılmasını istediğiniz zaman durdurmayı seçebilirsiniz. Bunu yapmak için Ayarlar > Gizlilik ve Güvenlik > Analizler ve İyileştirmeler bölümüne gidin ve El Yıkama’yı İyileştir’i kapatmak için dokunun.\n\nApple tarafından toplanan bilgiler her zaman www.apple.com/tr/privacy adresinde bulunan Apple’ın Gizlilik Politikası’na uygun şekilde işlenir."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "'Verbeter Handen wassen' verstuurt beperkte informatie die door je Apple Watch wordt vastgelegd als onderdeel van je gebruik van de functie 'Handen wassen'. De verzamelde informatie omvat beperkte bewegingsgegevens, feedback die je geeft en bepaalde verwerkte audiogegevens. Als je ervoor kiest om deze informatie te delen, zal deze alleen worden beoordeeld door werknemers van Apple en worden gebruikt om de effectiviteit van de functie 'Handen wassen' te ontwikkelen, te verbeteren en te begrijpen; de functie zal niet voor andere doeleinden worden gebruikt. Deze informatie is niet gekoppeld aan je Apple Account of andere gegevens waarover Apple mogelijk beschikt door je gebruik van andere voorzieningen van Apple.\n\nDe informatie die van je wordt verzameld als onderdeel van 'Verbeter Handen wassen' omvat bepaalde onbewerkte bewegingsgegevens (zoals versnellingsmetergegevens), je gebruik van de functie (zoals je reactie op meldingen voor het wassen van je handen) en bepaalde verwerkte audiogegevens die alleen door je Apple Watch worden vastgelegd wanneer deze functie is ingeschakeld. Deze audiogegevens worden op het apparaat verwerkt om de meeste gevallen van herkenbare spraak te verwijderen.\n\nDe verzamelde audiobestanden duren niet langer dan 60 seconden vanaf het moment dat je Apple Watch handwasbewegingen detecteert. Alle audio die volgens Apple herkenbare spraak bevat, wordt onmiddellijk verwijderd.\n\nAlle informatie die als onderdeel van de functie 'Verbeter Handen wassen' wordt verstuurd, wordt tijdens de verzending en op je apparaat versleuteld.\n\nDoor 'Verbeter Handen wassen' in te schakelen, stem je ermee in dat Apple en zijn dochterondernemingen en tussenpersonen de hierboven genoemde informatie mogen versturen, verzamelen, onderhouden, verwerken en gebruiken. Apple kan deze informatie bewaren bij erkende externe serviceproviders. Je kunt het delen van je gegevens met Apple op elk moment stopzetten. Hiervoor ga je in Instellingen naar 'Privacy en beveiliging' > 'Analyse en verbeteringen' en tik je om 'Verbeter Handen wassen' uit te schakelen.\n\nDe door Apple verzamelde gegevens worden te allen tijde behandeld conform het privacybeleid van Apple, dat je kunt vinden op www.apple.com/nl/privacy"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Kézmosás továbbfejlesztése korlátozott információkat küld, amelyeket az Apple Watch rögzít a Kézmosás funkció használatának részeként. A gyűjtött információk tartalmazni fognak korlátozott mozgásadatokat, az Ön által megadott visszajelzést és bizonyos feldolgozott hangadatokat. Ha úgy dönt, hogy megosztja ezeket az információkat, akkor azokat csak az Apple-alkalmazottak fogják áttekinteni, és a Kézmosás funkció továbbfejlesztéséhez és hatékonyságának megértéséhez lesznek felhasználva. Az információk nem lesznek más célból felhasználva. Ezek az információk nem kapcsolódnak az Apple-fiókjához vagy bármely más olyan adathoz, amely a többi Apple-szolgáltatás használatából származik.\n\nA Kézmosás továbbfejlesztésének részeként Öntől gyűjtött információk tartalmazni fogják a nyers mozgásadatokat (például a gyorsulásmérő adatait), a funkció Ön által történő használatát (például a kézmosási értesítésekre adott válaszait) és bizonyos feldolgozott adatokat, amelyeket az Apple Watcha csak akkor rögzített, amikor ez a funkció engedélyezve volt, és amelyek az eszközön vannak feldolgozva a felismerhető beszéd nagy részének eltávolításához.\n\nA gyűjtött hangfájlok időtartama nem lépi túl a kézmosás mozgásának Apple Watch által történő észlelésétől számított 60 másodpercet. Minden olyan hang, amelyben az Apple felismerhető beszédhangot észlel, azonnal törölve lesz.\n\nA Kézmosás továbbfejlesztésének részeként biztosított információk titkosítva lesznek az átvitel és az eszközén való tárolás során.\n\nA Kézmosás továbbfejlesztése funkció engedélyezésével Ön elfogadja és beleegyezik abba, hogy az Apple és annak leányvállalatai és ügynökei a fent említett módon ezeket az információkat átadják, gyűjtsék, karbantartsák, feldolgozzák és használják. Előfordulhat, hogy az Apple ezeket az információkat megbízható harmadik félnek számító szolgáltatóknál tárolja. Az adatok Apple-lel való megosztását bármikor leállíthatja. Ehhez válassza a Beállítások > Adatvédelem és biztonság > Elemzések és fejlesztések menüpontot, és koppintson a Kézmosás fejlesztése funkció kikapcsolásához.\n\nAz Apple által gyűjtött információk mindig az Apple adatvédelmi szabályzata szerint lesznek felhasználva, amely megtalálható a www.apple.com/hu/privacy weboldalon."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Часы Apple Watch собирают информацию во время работы функции «Мытье рук». Часть собранной информации передается для улучшения функции «Мытье рук». Собранная информация включает ограниченные данные о движении, Ваших действиях в этом приложении, а также определенные обработанные звуковые записи. Если Вы решите делиться этой информацией, ее будут изучать только сотрудники Apple для разработки, совершенствования и оценки эффективности функции «Мытье рук»; эта информация не будет использована в иных целях. Эта информация не будет связана с Вашим Аккаунтом Apple или другими данными, которые компания Apple могла получить за то время, пока Вы использовали другие сервисы Apple.\n\nИнформация, собранная для улучшения функции «Мытье рук», включает определенные исходные данные о движении (такие как данные акселерометра), сведения о том, как Вы используете эту функцию (например, как Вы реагируете на уведомления о мытье рук), а также определенные обработанные звуковые записи, которые записаны с помощью часов Apple Watch (только когда была включена эта функция) и которые были обработаны на устройстве, чтобы удалить те фрагменты, на которых есть разборчивая речь.\n\nВремя, в течение которого ведется запись аудио, не превышает 60 секунд с того момента, когда часы Apple Watch зарегистрировали мытье рук. Любые записи, в которых компанией Apple найдена распознаваемая речь, будут удалены в кратчайшие сроки.\n\nВся информация, предоставляемая для улучшения функции «Мытье рук», будет зашифрована при передаче и на устройстве.\n\nВключив улучшение функции «Мытье рук», Вы даете компании Apple, ее дочерним предприятиям и агентам согласие на передачу, сбор, хранение, обработку и использование всей этой информации на указанных выше условиях. Компания Apple может хранить эти данные у доверенных сторонних партнеров. Вы можете прекратить делиться данными с Apple в любое время. Для этого откройте «Настройки» > «Конфиденциальность и безопасность» > «Аналитика и улучшения» и касанием выключите параметр «Улучшение Мытья рук».\n\nИнформация, которую собирает Apple, всегда обрабатывается в соответствии с Политикой конфиденциальности Apple, доступной по адресу: www.apple.com/ru/privacy."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’opzione “Migliora ‘Igiene mani’” invia informazioni limitate che vengono acquisite da Apple Watch come parte del tuo utilizzo della funzionalità “Igiene mani”. Le informazioni raccolte includeranno dati limitati sul movimento, sul feedback fornito e su alcuni dati audio elaborati. Se scegli di condividere queste informazioni, esse verranno esaminate solo dai dipendenti Apple e utilizzate per sviluppare, migliorare e comprendere l’efficacia della funzionalità “Igiene mani”; le informazioni non saranno utilizzate per altri scopi. I dati acquisiti non sono collegati al tuo Apple Account o ad altre informazioni su di te che Apple potrebbe avere raccolto dall’utilizzo di altri servizi Apple.\n\nLe informazioni raccolte come parte del tuo utilizzo di “Migliora ‘Igiene mani’” includeranno alcuni dati di movimento non elaborati (come i dati dell’accelerometro), il tuo coinvolgimento con la funzionalità (come la tua risposta alle notifiche di lavaggio delle mani) e alcuni dati audio elaborati che vengono acquisiti da Apple Watch solo quando la funzionalità è attiva, dopo essere stati processati sul dispositivo per rimuovere la maggior parte del parlato riconoscibile.\n\nI file audio raccolti non supereranno i 60 secondi dal momento in cui Apple Watch rileva il movimento del lavaggio delle mani. Qualsiasi audio in cui Apple identifica del parlato riconoscibile verrà immediatamente eliminato.\n\nTutte le informazioni fornite come parte del tuo utilizzo di “Migliora Igiene mani” verranno crittografate durante il trasferimento e durante l’archiviazione sul dispositivo.\n\nAbilitando “Migliora Igiene mani”, accetti e consenti la trasmissione, la raccolta, la conservazione, l’elaborazione e l’utilizzo di tali informazioni da parte di Apple, dei suoi partner e dei suoi licenziatari così come indicato sopra. Apple potrebbe affidare a provider di servizi di terze parti il compito di conservare le informazioni raccolte. Puoi scegliere di interrompere la condivisione dei tuoi dati con Apple in qualsiasi momento. Per farlo, vai in Impostazioni > Privacy e sicurezza > Analisi e miglioramenti, quindi disattiva “Migliora Igiene mani”.\n\nIn qualsiasi momento, le informazioni raccolte da Apple verranno trattate in conformità all’informativa sulla privacy di Apple consultabile all’indirizzo www.apple.com/it/privacy."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Η Βελτίωση του Πλυσίματος χεριών αποστέλλει περιορισμένες πληροφορίες που καταγράφονται από το Apple Watch σας και αφορούν την από μέρους σας χρήση της δυνατότητας «Πλύσιμο χεριών». Οι πληροφορίες που συλλέγονται θα περιλαμβάνουν περιορισμένα δεδομένα κίνησης, τα σχόλια που εισαγάγετε και ορισμένα επεξεργασμένα δεδομένα ήχου. Αν επιλέξετε την κοινοποίηση αυτών των πληροφοριών, αυτές θα ελεγχθούν μόνο από υπαλλήλους της Apple και θα χρησιμοποιηθούν για την ανάπτυξη, τη βελτίωση και την κατανόηση της αποτελεσματικότητας της δυνατότητας «Πλύσιμο χεριών». Τα δεδομένα σας δεν θα χρησιμοποιηθούν για κανέναν άλλο σκοπό. Αυτές οι πληροφορίες δεν συσχετίζονται με τον λογαριασμό Apple σας ή άλλα δεδομένα που ενδέχεται να έχει η Apple όσον αφορά την από μέρους σας χρήση άλλων υπηρεσιών Apple.\n\nΟι πληροφορίες που συλλέγονται από εσάς ως μέρος της δυνατότητας «Βελτίωση του Πλυσίματος χεριών» θα περιλαμβάνουν ορισμένα ανεπεξέργαστα δεδομένα κίνησης (π.χ. δεδομένα επιταχυνσιόμετρου), την ενασχόλησή σας με τη δυνατότητα (π.χ. την απόκρισή σας σε γνωστοποιήσεις πλυσίματος χεριών) και ορισμένα επεξεργασμένα δεδομένα ήχου που συλλέγονται από το Apple Watch μόνο όταν είναι ενεργοποιημένη η συγκεκριμένη δυνατότητα και υποβάλλονται σε επεξεργασία επί της συσκευής ώστε να αφαιρούνται οι περισσότερες παρουσίες αναγνωρίσιμης ομιλίας.\n\nΤα συλλεγμένα αρχεία ήχου θα έχουν μέγιστη διάρκεια 60 δευτερόλεπτα από τη στιγμή που το Apple Watch ανιχνεύσει μια κίνηση πλυσίματος χεριών. Όλα τα αρχεία ήχου που τυχόν εντοπίσει η Apple ότι περιέχουν αναγνωρίσιμη ομιλία θα διαγράφονται αμέσως.\n\nΌλες οι πληροφορίες που παρέχονται ως μέρος της Βελτίωσης του Πλυσίματος χεριών θα κρυπτογραφούνται κατά τη μετάδοση και ενόσω βρίσκονται στη συσκευή σας.\n\nΑν ενεργοποιήσετε τη Βελτίωση του Πλυσίματος χεριών, συμφωνείτε και συναινείτε ως προς τη μετάδοση, τη συλλογή, τη διατήρηση, την επεξεργασία και τη χρήση των εν λόγω πληροφοριών, όπως περιγράφεται παραπάνω, από την Apple, τις θυγατρικές και τους αντιπροσώπους της. Η Apple μπορεί να αποθηκεύσει αυτές τις πληροφορίες σε αξιόπιστους τρίτους παρόχους υπηρεσιών. Μπορείτε να επιλέξετε τη διακοπή της κοινοποίησης των δεδομένων σας στην Apple ανά πάσα στιγμή. Για να το κάνετε αυτό, μεταβείτε στις «Ρυθμίσεις» > «Απόρρητο και ασφάλεια» > «Ανάλυση και βελτιώσεις» και αγγίξτε για απενεργοποίηση της δυνατότητας «Βελτίωση του Πλυσίματος χεριών».\n\nΟ χειρισμός των πληροφοριών που συλλέγονται από την Apple πραγματοποιείται σύμφωνα με την Πολιτική απορρήτου της, την οποία μπορείτε να βρείτε στη διεύθυνση www.apple.com/gr/privacy."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar lavado de manos envía información limitada que tu Apple Watch registra como parte del uso que haces de la función de lavado de manos. La información recopilada incluirá datos limitados sobre el movimiento, los comentarios que proporciones y ciertos datos de audio procesado. Si eliges compartir esta información, los empleados de Apple podrán revisarla y utilizarla para desarrollar, mejorar y comprender la efectividad de la función de lavado de manos; y no se utilizará con ningún otro propósito. Esta información no se vincula a tu cuenta de Apple ni a otros datos que Apple pueda tener del uso que haces de otros servicios de Apple.\n\nLa información recopilada sobre ti como parte de Mejorar lavado de manos incluirá ciertos datos sin procesar sobre movimientos (por ejemplo, los datos del acelerómetro), tu compromiso con la función (por ejemplo, tu respuesta a las notificaciones de lavado de manos) y cierto audio procesado que se captura mediante el micrófono de tu Apple Watch sólo cuando esta función está activada y que se procesa en el dispositivo para eliminar fragmentos con voz reconocible.\n\nLos archivos de audio recopilados no superan los 60 segundos a partir del momento en el que tu Apple Watch detecta un movimiento de lavado de manos. Cualquier audio que Apple identifique como voz reconocible se eliminará de inmediato.\n\nToda la información proporcionada como parte de Mejorar lavado de manos se encripta al transferirse y en tu dispositivo.\n\nAl activar Mejorar lavado de manos, aceptas y das consentimiento para la transmisión, recopilación, mantenimiento, procesamiento y uso de esta información por parte de Apple y sus filiales y agentes de la forma que se describe anteriormente. Apple podría almacenar esta información usando proveedores de servicio de terceros. Puedes elegir dejar de compartir tus datos con Apple en cualquier momento. Para hacerlo, ve a Configuración > Privacidad y seguridad > Análisis y mejoras y desactiva Mejorar lavado de manos.\n\nLa información que Apple recopile se tratará en todo momento de conformidad con la Política de privacidad de Apple, la cual puedes consultar en www.apple.com/la/privacy."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La millora del rentat de mans envia informació limitada que lʼApple Watch captura quan utilitzes la funció. Aquesta informació inclou dades de moviment limitades, els comentaris que proporciones i algunes dades dʼàudio processades. Si comparteixes aquesta informació, només la revisaran els empleats dʼApple, i la faran servir per desenvolupar, millorar i valorar lʼefectivitat de la funció del rentat de mans; no sʼutilitzarà amb cap altra finalitat. Aquesta informació no es vincula al compte dʼApple ni a altres dades que Apple pugui tenir de tu d’altres serveis d’Apple.\n\nLa informació que es recopila quan utilitzes la funció del rentat de mans inclou certes dades sense processar sobre el moviment (com ara les dades de lʼacceleròmetre), com interacciones amb la funció (per exemple, la resposta a les notificacions del rentat de mans) i una part de lʼàudio processat que captura lʼApple Watch només quan la funció està activada i després de processar‑la al dispositiu per eliminar la majoria de veus identificables.\n\nEls arxius d’àudio que es recopilin no superaran els 60 segons des del moment en què l’Apple Watch detecti que fas el moviment de rentar‑te les mans. Si Apple detecta veus identificables en qualsevol àudio, les eliminarà immediatament.\n\nTota la informació relacionada amb lʼopció per millorar el rentat de mans sʼenvia de manera encriptada mentre es transfereix i quan és al dispositiu.\n\nEn activar la millora del rentat de mans, acceptes i consents que Apple, els seus agents i les seves filials transmetin, recopilin, conservin, processin i utilitzin aquesta informació tal com s’ha descrit anteriorment. Apple pot desar aquesta informació amb altres proveïdors de serveis de confiança. Pots deixar de compartir les dades amb Apple en qualsevol moment. Per fer‑ho, ves a l’app Configuració > Privacitat i seguretat > Anàlisi i millores, i desactiva la millora del rentat de mans.\n\nLa informació recopilada per Apple es tractarà en tot moment dʼacord amb la política de privacitat dʼApple, que es pot consultar a www.apple.com/es/privacy."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يرسل تحسين غسل اليدين معلومات محدودة سجلتها Apple Watch كجزء من استخدامك لميزة غسل اليدين. ستتضمن المعلومات التي تم جمعها بيانات محدودة عن الحركة والاستجابات التي تقدمها وبعض بيانات الصوت المعالج. إذا اخترت مشاركة هذه المعلومات، فلن يراجعها إلا موظفي Apple وستُستخدم لتطوير وتحسين وفهم فعالية ميزة غسل اليدين؛ ولن يتم استخدامها لأي أغراض أخرى. ولا ترتبط هذه المعلومات بحساب Apple أو البيانات الأخرى التي قد تكون لدى Apple من خلال استخدامك لخدمات Apple الأخرى.\n\nستتضمن المعلومات المجموعة منك كجزء من تحسين غسل اليدين بعض بيانات الحركة الأولية (مثل بيانات مقياس التسارع)، وتفاعلك مع الميزة (مثل استجابتك لإشعارات غسل اليدين)، وبعض الصوت المعالَج الذي تلتقطه Apple Watch عند تمكين هذه الميزة فقط ويعالَج على الجهاز لإزالة معظم الكلام الذي يمكن التعرف عليه.\n\nلن تتجاوز الملفات الصوتية المجمعة ^[60](formatNumber: true) ثانية من وقت اكتشاف Apple Watch لحركة غسل اليدين. أي صوت تحدد Apple أنه قد يحتوي على كلام يمكن التعرف عليه سيُحذَف على الفور.\n\nستُشفَّر جميع المعلومات المرسلة كجزء من تحسين غسل اليدين أثناء النقل وعلى جهازك.\n\nيُعد تمكين تحسين غسل اليدين بمثابة موافقة منك على أن تقوم Apple وشركاتها الفرعية ووكلاؤها بنقل هذه المعلومات وجمعها والاحتفاظ بها ومعالجتها واستخدامها على النحو المبين أعلاه. يجوز لشركة Apple تخزين هذه المعلومات مع مزودي خدمة موثوقين تابعين لجهات خارجية. يمكنك اختيار إيقاف مشاركة بياناتك مع Apple في أي وقت. لتنفيذ ذلك، انتقل إلى الإعدادات > الخصوصية والأمن > التحليلات والتحسينات، وأوقف \"تحسين غسل اليدين\".\n\nسيتم - في جميع الأوقات - التعامل مع المعلومات التي تجمعها Apple وفقًا لسياسة خصوصية Apple، والتي يمكن العثور عليها على الرابط:\nwww.apple.com/ae-ar/privacy"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "「改進洗手」會傳送由Apple Watch擷取之有限的資訊作為使用「洗手」功能的一部分。收集的資訊會包含有限的動作資料、你提供的回饋，以及經過處理的特定音訊資料。若你選擇分享此資訊，則將僅限Apple員工檢視並用來開發、改進和瞭解「洗手」功能的成效；不會用於任何其他目的。此資訊不會與你的「Apple帳號」或Apple可能取自於你使用其他Apple服務的其他資料連結。\n\n作為「改進洗手」之一部分而向你收集的資訊會包含特定原始動作資料（例如加速度計資料）、與該功能的互動（例如回應洗手通知），以及僅在此功能已啟用並在裝置上處理以移除多數可辨識出語音的實例時，由Apple Watch所擷取之經過處理的特定音訊。\n\n從Apple Watch偵測到洗手動作所收集的音訊檔案不會超過60秒。任何由Apple辨識的音訊若包含可辨識出語音的音訊將會立即刪除。\n\n作為「改進洗手」之一部分而提供的所有資訊會在傳輸時和在你的裝置上加密。\n\n啟用「改進洗手」，即表示同意並接受Apple及其子公司和代理人以如上所示的方式傳送、收集、維護、處理、使用和揭露此資訊。Apple可能會將此資訊儲存在信任的第三方服務供應商中。你可以隨時選擇停止與Apple分享資料。若要停止，請前往「設定」>「隱私權與安全性」>「分析與改進功能」，然後點一下來關閉「改進洗手」。\n\n在任何時間，Apple都會依照「Apple隱私權政策」的規定來處理收集的資訊，請參訪www.apple.com/tw/privacy"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Améliorer « Se laver les mains » envoie des informations limitées qui sont capturées par votre Apple Watch dans le cadre de votre utilisation de la fonctionnalité « Se laver les mains ». Les informations recueillies comprendront des données limitées sur le mouvement, vos commentaires et certaines données audio traitées. Si vous choisissez de partager ces informations, elles seront examinées par des employés d’Apple et utilisées pour développer, améliorer et comprendre l’efficacité de la fonctionnalité « Se laver les mains ». Elles ne seront utilisées à aucune autre fin. Ces informations ne sont pas liées à votre compte Apple ou à toute autre donnée qu’Apple pourrait avoir obtenue par votre utilisation d’autres services Apple.\n\nLes informations recueillies auprès de vous dans le cadre de la fonction Améliorer « Se laver les mains » comprendront certaines données brutes sur le mouvement (telles que les données de l’accéléromètre), vos interactions avec la fonctionnalité (comme votre réaction aux notifications « Se laver les mains ») et certaines données audio traitées qui sont capturées par votre Apple Watch uniquement lorsque cette fonctionnalité est activée et traitée sur l’appareil pour supprimer la plupart des occurrences de paroles reconnaissables.\n\nLa durée des fichiers audio recueillis ne dépassera pas 60 secondes à partir de la détection du mouvement de lavage des mains par votre Apple Watch. Tout contenu audio dans lequel Apple détecte des paroles reconnaissables sera immédiatement supprimé.\n\nToutes les informations fournies dans le cadre de la fonction Améliorer « Se laver les mains » seront chiffrées lors de leur envoi et sur votre appareil.\n\nEn activant Améliorer « Se laver les mains », vous acceptez qu’Apple, ses filiales et ses représentants transmettent, recueillent, conservent, traitent et utilisent ces données comme décrit ci-dessus. Il se peut qu’Apple stocke ces informations en utilisant les services de fournisseurs tiers de confiance. Vous pouvez à tout moment choisir de ne plus partager vos données avec Apple. Pour ce faire, accédez à Réglages > Confidentialité et sécurité > Analyse et améliorations, puis désactivez Améliorer « Se laver les mains ».\n\nLes informations recueillies par Apple sont systématiquement traitées conformément à la politique de confidentialité d’Apple, disponible sur www.apple.com/ca/fr/privacy."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Förbättra handtvätt skickar begränsad information som samlas in av Apple Watch som en del av din användning av Handtvätt. Informationen som samlas in omfattar begränsade rörelsedata, feedback från dig och vissa bearbetade ljuddata. Om du väljer att dela den här informationen blir den endast granskad av Apple-medarbetare och används till att utveckla, förbättra samt förstå effektiviteten hos funktionen Handtvätt och används inte i något annat syfte. Den här informationen är inte länkad till ditt Apple‑konto eller andra data som Apple kan ha fått från din användning av andra Apple-tjänster.\n\nInformationen som samlas in från dig som en del av Förbättra Handtvätt omfattar vissa råa rörelsedata (som accelerometerdata), din interaktion med funktionen (som din respons på notiser om handtvätt) och visst bearbetat ljud som registreras av Apple Watch endast när den här funktionen är aktiverad och bearbetas på enheten för att ta bort de flesta förekomsterna av igenkänningsbart tal.\n\nDe samlade ljudfilerna kommer inte att överskrida 60 sekunder från det ögonblick handtvättsrörelser upptäcktes av din Apple Watch. Eventuellt ljud som Apple identifierar som innehållande igenkänningsbart tal kommer att raderas utan dröjsmål.\n\nAll information som tillhandahålls som en del av Förbättra Handtvätt krypteras vid överföring och på din enhet.\n\nGenom att aktivera Förbättra Handtvätt godkänner du och samtycker till att Apple och dess dotterbolag och agenter överför, samlar in, underhåller, behandlar och använder den här informationen enligt vad som beskrivs ovan. Apple kan lagra den här informationen hos betrodda tredjepartsleverantörer. Du kan när som helst välja att sluta dela dina data med Apple. Du gör detta genom att öppna Inställningar > Integritet och säkerhet > Analys och förbättringar och trycka för att stänga av Förbättra Handtvätt.\n\nInformation som samlas in av Apple kommer under alla förhållanden att behandlas i enlighet med Apples integritetspolicy, som finns på www.apple.com/se/privacy."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forbedre håndvasken sender begrenset informasjon som registreres av Apple Watch når du bruker håndvaskfunksjonen. Informasjonen som samles inn, inkluderer begrenset informasjon om bevegelser, tilbakemeldinger fra deg og behandlede lyddata. Hvis du velger å dele denne informasjonen, vil den kun bli tilgjengelig for Apple-ansatte, og den brukes til å utvikle, forbedre og forstå hvor effektiv håndvaskfunksjonen er. Den brukes ikke til andre formål. Denne informasjonen knyttes ikke til Apple‑kontoen din eller andre data som Apple besitter fra din bruk av andre Apple-tjenester.\n\nInformasjonen som samles inn fra deg i forbindelse med Forbedre håndvasken, inkluderer enkelte rådata om bevegelser (som data fra akselerometer), dine tilbakemeldinger (for eksempel reaksjonen din på håndvaskvarslinger) og behandlet lyd som registreres av Apple Watch når funksjonen er aktivert og den behandles på enheten for å fjerne de fleste tilfeller av gjenkjennbar tale.\n\nDe innsamlede lydfilene vil ikke overskride 60 sekunder fra det tidspunktet håndvaskbevegelsene ble registrert av Apple Watch. Lyd som Apple identifiserer som gjenkjennbar tale, slettes umiddelbart.\n\nAll informasjon som du gir Apple tilgang til i forbindelse med Forbedre håndvasken, krypteres både når den overføres og på enheten din.\n\nVed å aktivere Forbedre håndvasken godtar du at Apple, samt våre underleverandører og samarbeidspartnere, kan samle inn, overføre, vedlikeholde, behandle og bruke informasjonen som beskrevet ovenfor. Apple kan dele denne informasjonen med pålitelige tredjeparter som leverer tjenester til selskapet. Du kan når som helst slutte å dele dataene dine med Apple. Det gjør du ved å gå til Innstillinger > Personvern og sikkerhet > Analyse og forbedringer og trykke for å slå av Forbedre håndvask.\n\nAll informasjon Apple samler inn, blir behandlet i samsvar med Apples retningslinjer for personvern, som du kan lese på www.apple.com/no/privacy."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "हाथ धोना बेहतर बनाएँ सीमित जानकारी भेजता है जो आपके द्वारा हाथ धोने के फ़ीचर के इस्तेमाल के एक भाग के रूप में आपकी Apple Watch द्वारा कैप्चर की जाती है। इकट्ठा की गई जानकारी में सीमित मोशन डेटा, आपके द्वारा प्रदान किया गया फ़ीडबैक और प्रोसेस किया गया कुछ ऑडियो डेटा शामिल होगा। यदि आप यह जानकारी शेयर करने का विकल्प चुनते हैं, तो केवल Apple कर्मचारियों द्वारा ही इसकी समीक्षा की जाएगी और इसका इस्तेमाल “हाथ धोने” के फ़ीचर को विकसित करने, उसमें सुधार करने और उसकी प्रभाविता को समझने के लिए किया जाता है। इसका इस्तेमाल किसी और उद्देश्य के लिए नहीं किया जाएगा। यह जानकारी आपके Apple खाते या उस अन्य डेटा से लिंक नहीं है, जो आपके द्वारा अन्य Apple सेवाओं के उपयोग से Apple के पास हो सकता है।\n\nहाथ धोना बेहतर बनाएँ के भाग के रूप में आपसे इकट्ठा की गई जानकारी में कुछ रॉ मोशन डेटा (जैसे ऐक्सेलरोमीटर डेटा), फ़ीचर से आपका जुड़ाव (जैसे हाथ धोने की सूचनाओं के प्रति आपकी प्रतिक्रिया) और कुछ प्रोसेस किया गया ऑडियो शामिल होगा जो आपकी Apple Watch द्वारा केवल तभी कैप्चर किया जाता है जब यह फ़ीचर सक्षम होता है और ऑन-डिवाइस प्रोसेस किया जाता है ताकि पहचानने योग्य बोली के अधिकतर नमूने हटा दिए जाएँ।\n\nजब हाथ धोने के मोशन को Apple Watch डिटेक्ट करती है, तो उसके बाद से संग्रहित ऑडियो फ़ाइलें 60 सेकंड से ज़्यादा की नहीं होंगी। पहचान योग्य बोली को शामिल करने के लिए वह कोई भी ऑडियो जो Apple द्वारा पहचाना जाता है तुरंत डिलीट किया जाएगा।\n\n“हाथ धोना” बेहतर बनाएँ के भाग के रूप में प्रदान की गई पूरी जानकारी ट्रैंज़िट में और आपके डिवाइस पर एंक्रिप्टेड की जाएगी।\n\nहाथ धोना बेहतर बनाएँ सक्षम करके आप Apple व उसके सहयोगियों और अभिकर्ताओं द्वारा ऊपर किए गए वर्णनानुसार इस जानकारी को संचारित, संग्रहित, अनुरक्षित और प्रोसेस करने के लिए सहमत होते हैं और अनुमति देते हैं। Apple इस जानकारी को भरोसेमंद तृतीय पक्ष सर्विस प्रोवाइडर के पास संग्रहित कर सकती है। आप अपना डेटा Apple के साथ शेयर करना किसी भी समय बंद कर सकते हैं। ऐसा करने के लिए सेटिंग्ज़ > गोपनीयता और सुरक्षा > ऐनालिटिक्स और सुधार पर जाएँ और हाथ धोना बेहतर बनाएँ बंद करने के लिए टैप करें।\n\nApple द्वारा एकत्रित जानकारी को हमेशा Apple की गोपनीयता नीति के अनुसार व्यवहार में लाया जाएगा जिसे www.apple.com/in/privacy पर देखा जा सकता है।"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gør Håndvask bedre sender begrænsede oplysninger, der registreres af dit Apple Watch, som et led i din brug af funktionen Håndvask. De indsamlede oplysninger omfatter begrænsede bevægelsesdata, feedback, som du giver, og visse behandlede lyddata. Hvis du vælger at dele disse oplysninger, bliver de kun gennemgået af Apple-medarbejdere og brugt til at udvikle, forbedre og forstå effektiviteten af funktionen Håndvask. De bliver ikke brugt til andre formål. Disse oplysninger er ikke knyttet til din Apple‑konto eller andre data, Apple kan have fra din brug af andre Apple-tjenester.\n\nDe oplysninger, der indsamles fra dig som en del af Gør Håndvask bedre, omfatter visse ubehandlede bevægelsesdata (f.eks. accelerometerdata), din interaktion med funktionen (f.eks. hvordan du reagerer på notifikationer om håndvask) og visse behandlede lyddata, som kun optages af mikrofonen i dit Apple Watch, når denne funktion er slået til, og som behandles på enheden for at fjerne de fleste tilfælde af genkendelig tale.\n\nVarigheden af de indsamlede lydarkiver overstiger ikke 60 sekunder fra det øjeblik, hvor Apple Watch registrerer en håndvaskbevægelse. Hvis Apple identificerer genkendelig tale i lyddata, bliver disse data straks slettet.\n\nAlle oplysninger, der leveres som en del af Gør Håndvask bedre, bliver krypteret ved overførslen og på din enhed.\n\nVed at slå Gør Håndvask bedre til erklærer du dig indforstået med, at Apple, dets datterselskaber og agenter sender, indsamler, vedligeholder, behandler og benytter alle ovennævnte oplysninger. Apple vil muligvis opbevare disse oplysninger hos tredjepartsudbydere af tjenester. Du kan altid vælge at stoppe deling af dine data med Apple. Det gør du ved at gå til Indstillinger > Anonymitet & sikkerhed > Analyse og forbedringer og slå Gør Håndvask bedre fra.\n\nOplysninger indsamlet af Apple vil altid blive behandlet i overensstemmelse med Apples anonymitetspolitik, som kan læses på www.apple.com/dk/privacy"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Handwashing sends limited information that is captured by your Apple Watch as part of your use of the Handwashing feature. The information collected will include limited motion data, feedback you provide, and certain processed audio data. If you choose to share this information it will be reviewed only by Apple employees and used to develop, improve, and understand the effectiveness of the Handwashing feature; it will not be used for any other purpose. This information is not linked to your Apple Account or other data Apple may have from your use of other Apple services.\n\nThe information collected from you as part of Improve Handwashing will include certain raw motion data (such as accelerometer data), your engagement with the feature (such as your response to handwashing notifications), and certain processed audio that is captured by your Apple Watch only when this feature is enabled and processed on-device to remove most instances of recognizable speech.\n\nThe collected audio files will not exceed 60 seconds from when handwashing motion is detected by your Apple Watch. Any audio that is identified by Apple to include recognizable speech will be promptly deleted.\n\nAll information provided as part of Improve Handwashing will be encrypted in transit and on your device.\n\nBy enabling Improve Handwashing, you agree and consent to Apple’s and its subsidiaries’ and agents’ transmission, collection, maintenance, processing, and use of this information as described above. Apple may store this information with trusted third-party service providers. You may choose to stop sharing your data with Apple at any time. To do so, go to Settings > Privacy & Security > Analytics & Improvements and tap to turn off Improve Handwashing.\n\nAt all times, information collected by Apple will be treated in accordance with Apple’s Privacy Policy, which can be found at www.apple.com/privacy"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funkcja Ulepszanie (Mycie rąk) wysyła pewne ograniczone dane, które są przechwytywane przez Twój Apple Watch w ramach korzystania z funkcji Mycie rąk. Gromadzone informacje będą zawierały ograniczone dane o ruchu, wysłanych przez Ciebie opiniach oraz pewne przetworzone dane audio. Jeśli zdecydujesz się udostępniać te dane, będą one przeglądane wyłącznie przez pracowników Apple i będą wykorzystywane do rozwijania, ulepszania i zrozumienia skuteczności funkcji Mycie rąk. Nie będą one używane do żadnych innych celów. Te informacje nie są połączone z Twoim kontem Apple, ani innymi danymi, które Apple może posiadać z tytułu korzystania przez Ciebie z innych usług Apple.\n\nGromadzone informacje pochodzące od Ciebie w ramach Ulepszania funkcji Mycie rąk będą zawierały pewne surowe dane o ruchu (na przykład dane z akcelerometru), Twoim zaangażowaniu w korzystanie z tej funkcji (na przykład, Twoje reakcje na powiadomienia dotyczące mycia rąk), oraz pewne przetworzone dane audio, które są przechwytywane przez Apple Watch tylko wtedy, gdy ta funkcja jest włączona i przetwarzane na urządzeniu, aby usunąć większość instancji rozpoznawalnej mowy.\n\nGromadzone pliki audio nie będą przekraczały 60 sekund od chwili wykrycia przez Apple Watch ruchu mycia rąk. Każdy dźwięk, który zostanie przez Apple zidentyfikowany jako zawierający rozpoznawalną mowę, zostanie niezwłocznie usunięty.\n\nWszystkie dane dostarczane w ramach udziału w ulepszaniu funkcji Mycie rąk będą szyfrowane w trakcie przesyłania oraz w Twoim urządzeniu.\n\nWłączenie funkcji Ulepszanie (Mycie rąk) oznacza wyrażenie zgody na przesyłanie, gromadzenie, konserwację, przetwarzanie i używanie tych informacji przez Apple, jego podmioty zależne i agentów w sposób opisany powyżej. Apple może przechowywać te informacje na serwerach swoich zaufanych usługodawców. Udostępnianie danych firmie Apple możesz wyłączyć w dowolnym momencie. W tym celu przejdź do Ustawień, stuknij w Prywatność i ochrona > Analizy i udoskonalenia, a następnie wyłącz stuknięciem opcję Ulepszanie (Mycie rąk).\n\nInformacje gromadzone przez Apple są zawsze traktowane zgodnie z zasadami ochrony prywatności Apple, dostępnymi na stronie www.apple.com/pl/privacy."
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "「改進洗手」會傳送Apple Watch收集的有限資料，作為你使用「洗手」功能的一部份。所收集的資料包括有限的動作資料、你提供的意見以及某些經過處理的音訊資料。如你選擇分享此資料，則只有Apple員工會檢視資料，並會用於開發、改進和了解「洗手」功能的有效性；其不會用於任何其他目的。此資料不會連繫至你的Apple帳户或Apple可能從你使用其他Apple服務時所得到的其他資料。\n\n作為「改進洗手」的一部份，從你收集的資料會包括某些原始動作資料（例如加速度計資料），你對該功能的參與程度（例如你對洗手通知的回應）以及某些經過處理的音訊（只在此功能啟用時由Apple Watch收集，並會在裝置端進行處理以移除大部份可識別的語音。）\n\n從Apple Watch偵測到洗手動作開始計算，收集的音訊檔案不會超過60秒。Apple識別為包含可識別語音的任何音訊會被立即刪除。\n\n所有提供的資料（作為「改進洗手」的一部份）會在傳輸過程中以及在你的裝置上加密。\n\n啟用「改進洗手」，即表示同意並接受Apple及其子公司和代理以如上所示的方式傳播、收集、維護、處理和使用此資料。Apple可能會將這些資料儲存於信任的第三方服務供應商。你可隨時停止分享你的資料予Apple。如要這樣做，請前往「設定」>「私隱與保安」>「分析與改進」，然後點一下以關閉「改進洗手」。\n\n無論何時，Apple都會根據「Apple私隱政策」的規定處理所收集的資料，請瀏覽：www.apple.com/hk/privacy"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "การปรับปรุงการล้างมือจะส่งข้อมูลที่จำกัดซึ่งบันทึกโดย Apple Watch ของคุณเพื่อเป็นส่วนหนึ่งของการใช้คุณสมบัติการล้างมือของคุณ ข้อมูลที่เก็บรวบรวมจะรวมถึงข้อมูลที่จำกัดด้านการเคลื่อนไหว คำติชมที่คุณให้ และข้อมูลเสียงที่ประมวลผลบางอย่าง ถ้าคุณเลือกที่จะแชร์ข้อมูลนี้ ข้อมูลจะถูกตรวจสอบโดยพนักงานของ Apple เท่านั้นและใช้ในการพัฒนา ปรับปรุง และทำความเข้าใจประสิทธิภาพของคุณสมบัติการล้างมือ โดยจะไม่มีการนำมาใช้เพื่อวัตถุประสงค์อื่นใด ข้อมูลนี้จะไม่ผูกกับบัญชี Apple ของคุณหรือข้อมูลอื่นที่ Apple อาจได้จากการใช้บริการอื่นๆ ของ Apple\n\nข้อมูลที่เก็บรวบรวมจากคุณเพื่อเป็นส่วนหนึ่งของการปรับปรุงการล้างมือจะรวมถึงข้อมูลดิบบางอย่างด้านการเคลื่อนไหว (เช่น ข้อมูลอุปกรณ์ตรวจจับการเคลื่อนไหว) การมีส่วนร่วมของคุณกับคุณสมบัติ (เช่น การตอบสนองต่อการแจ้งเตือนการล้างมือ) และเสียงที่ประมวลผลบางอย่างที่ Apple Watch ของคุณบันทึกเฉพาะเมื่อคุณสมบัตินี้ถูกเปิดใช้งานและประมวลผลบนอุปกรณ์เพื่อเอารายการส่วนใหญ่ของเสียงพูดที่จำได้ออก\n\nไฟล์เสียงที่เก็บรวบรวมจะไม่เกิน 60 วินาทีนับจากเวลาที่ Apple Watch ของคุณตรวจพบการเคลื่อนไหวของการล้างมือ เสียงที่ Apple ระบุว่ามีเสียงพูดที่สามารถจำได้จะถูกลบทันที\n\nข้อมูลทั้งหมดที่ให้ไว้เป็นส่วนหนึ่งของการปรับปรุงการล้างมือจะถูกเข้ารหัสในระหว่างการส่งและบนอุปกรณ์ของคุณ\n\nโดยการใช้การปรับปรุงการล้างมือ ถือว่าคุณยอมรับและยินยอมให้ Apple บริษัทในเครือ และตัวแทน ส่งผ่าน เก็บรวบรวม บำรุงรักษา ประมวลผล และใช้ข้อมูลนี้ตามที่อธิบายไว้ด้านบน Apple อาจจะจัดเก็บข้อมูลนี้พร้อมกับผู้ให้บริการของบริษัทหรือบุคคลอื่นที่เชื่อถือแล้ว คุณสามารถเลือกที่จะหยุดแชร์ข้อมูลของคุณกับ Apple ได้ตลอดเวลา ในการทำเช่นนั้น ให้ไปที่การตั้งค่า > ความเป็นส่วนตัวและความปลอดภัย > การวิเคราะห์และการปรับปรุง แล้วแตะเพื่อปิดใช้การปรับปรุงการล้างมือ\n\nข้อมูลที่เก็บรวบรวมโดย Apple จะได้รับการปฏิบัติตามนโยบายความเป็นส่วนตัวของ Apple เสมอ ซึ่งสามารถดูได้ที่ www.apple.com/th/privacy"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“改进洗手”会在你使用“洗手”功能的过程中发送由Apple Watch捕捉到的有限信息。收集的信息将包括有限的动作数据、你提供的反馈和某些经过处理的音频数据。如果选择共享此信息，则只有Apple员工能够对其进行核查以用于开发、改进和了解“洗手”功能的有效性，不会用于任何其他用途。此信息不会与你的Apple账户或其他Apple可能从你使用其他Apple服务时获取的数据关联。\n\n作为“改进洗手”的一部分向你收集的信息将包括某些原始动作数据（如加速计数据）、你对该功能的使用程度（如你对洗手通知的响应度），以及某些处理后的音频（仅为此功能启用时Apple Watch捕捉到的音频且音频已在设备端处理以移除绝大部分可识别对话的实例）。\n\n收集到的音频文件的长度从你的Apple Watch检测到洗手动作开始不会超过60秒钟。由Apple识别到内含可识别对话的任何音频将会被立即删除。\n\n作为“改进洗手”的一部分提供的所有信息在传输和储存在设备上时都会加密。\n\n启用“改进洗手”即表示你同意和允许Apple及其下属公司及代理机构传输、收集、维护、处理和使用上述信息。Apple可能会通过信任的第三方服务提供商储存此信息。你可以随时选择停止与Apple共享数据。若要停止共享，请前往“设置”>“隐私与安全性”>“分析与改进”并轻点以关闭“改进洗手”。\n\nApple收集的信息始终会遵照Apple的“隐私政策”处理，其内容可参阅www.apple.com/cn/privacy"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funkcija „Rankų plovimo“ tobulinimas“ siunčia ribotą informaciją, kurią užfiksavo „Apple Watch“ naudojantis funkcija „Rankų plovimas“. Renkama informacija apims ribotus judėjimo duomenis, pateiktą grįžtamąjį ryšį ir tam tikrus apdorotus garso duomenis. Jei pasirinksite bendrinti šią informaciją, ją peržiūrės tik bendrovės „Apple“ darbuotojai ir ji bus naudojama, kad būtų galima plėtoti, patobulinti ir suprasti funkcijos „Rankų plovimas“ efektyvumą; ji nebus naudojama jokiam kitam tikslui. Ši informacija nesusieta su jūsų „Apple“ paskyra ar kitais duomenimis, kuriuos gali turėti bendrovė „Apple“ jums naudojantis kitomis „Apple“ paslaugomis.\n\nInformacija, kuri iš jūsų renkama naudojant funkciją „Rankų plovimo“ tobulinimas“, apims tam tikrus neapdorotus judėjimo duomenis (pvz., akcelerometro duomenis), jūsų sąveiką su funkcija (pvz., atsaką į rankų plovimo pranešimus) ir tam tikrą apdorotą garsą, kurį užfiksavo „Apple Watch“, tik tuomet, kai ši funkcija įjungta, ir bus apdorojama įrenginyje, kad būtų galima pašalinti daugelį atpažįstamos šnekos atvejų.\n\nSurinkti garso failai neviršys 60 sekundžių nuo to laiko, kai „Apple Watch“ aptiko judesį plaunant rankas. Bet koks garso įrašas, kuriame, kaip nustatė bendrovė „Apple“, yra atpažįstama šneka, bus nedelsiant ištrintas.\n\nVisa informacija, pateikiama naudojant funkciją „Rankų plovimo“ tobulinimas“, ją perduodant ir jai esant įrenginyje bus užšifruota.\n\nĮjungdami funkciją „Rankų plovimo“ tobulinimas“ sutinkate, kad bendrovė „Apple“ ir jos patronuojamosios įmonės bei agentai perduotų, rinktų, prižiūrėtų, apdorotų ir naudotų šią informaciją, kaip apibūdinta pirmiau. Bendrovė „Apple“ gali saugoti šią informaciją pas patikimus trečiosios šalies paslaugų teikėjus. Bet kuriuo metu galite pasirinkti nustoti bendrinti duomenis su bendrove „Apple“. Norėdami tai padaryti, eikite į sritį „Nustatymai“ > „Privatumas ir sauga“ > „Analizė ir patobulinimai“ ir bakstelėkite, kad išjungtumėte funkciją „Rankų plovimo“ tobulinimas“.\n\nBendrovės „Apple“ renkama informacija visada bus tvarkoma pagal „Apple“ privatumo politiką, kurią galite rasti svetainėje www.apple.com/privacy"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Handwashing sends limited information that is captured by your Apple Watch as part of your use of the Handwashing feature. The information collected will include limited motion data, feedback you provide and certain processed audio data. If you choose to share this information, it will be reviewed only by Apple employees and used to develop, improve and understand the effectiveness of the Handwashing feature; it will not be used for any other purpose. This information is not linked to your Apple Account or other data Apple may have from your use of other Apple services.\n\nThe information collected from you as part of Improve Handwashing will include certain raw motion data (such as accelerometer data), your engagement with the feature (such as your response to handwashing notifications), and certain processed audio that is captured by your Apple Watch only when this feature is enabled and processed on device to remove most instances of recognisable speech.\n\nThe collected audio files will not exceed 60 seconds from when handwashing motion is detected by your Apple Watch. Any audio that is identified by Apple to include recognisable speech will be promptly deleted.\n\nAll information provided as part of Improve Handwashing will be encrypted in transit and on your device.\n\nBy enabling Improve Handwashing, you agree and consent to Apple’s and its subsidiaries’ and agents’ transmission, collection, maintenance, processing and use of this information as described above. Apple may store this information with trusted third-party service providers. You may choose to stop sharing your data with Apple at any time. To do so, go to Settings > Privacy & Security > Analytics & Improvements and tap to turn off Improve Handwashing.\n\nAt all times, information collected by Apple will be treated in accordance with Apple’s Privacy Policy, which can be found at apple.com/uk/privacy"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tingkatkan Mencuci Tangan menghantar maklumat terhad yang ditangkap oleh Apple Watch anda sebagai sebahagian daripada penggunaan ciri Mencuci Tangan oleh anda. Maklumat yang dikumpulkan akan termasuk data pergerakan terhad, maklum balas yang anda berikan dan data audio diproses tertentu. Jika anda memilih untuk berkongsi maklumat ini, ia akan disemak hanya oleh pekerja Apple dan digunakan untuk membangunkan, meningkatkan dan memahami keberkesanan ciri Mencuci Tangan; Maklumat tidak akan digunakan untuk sebarang tujuan lain. Maklumat ini tidak dikaitkan dengan Akaun Apple anda atau sebarang data lain yang Apple mungkin terima daripada penggunaan perkhidmatan Apple lain oleh anda.\n\nMaklumat yang dikumpulkan daripada anda sebagai sebahagian daripada Tingkatkan Mencuci Tangan akan menyertakan data pergerakan mentah tertentu (seperti data akselerometer), penglibatan anda dengan ciri (seperti respons anda terhadap pemberitahuan mencuci tangan) dan audio diproses tertentu yang ditangkap oleh Apple Watch anda hanya apabila ciri ini didayakan dan diproses pada peranti untuk mengeluarkan kebanyakan tika pertuturan yang boleh dikenali.\n\nFail audio yang dikumpulkan tidak melebihi 60 saat daripada masa apabila pergerakan mencuci tangan dikesan oleh Apple Watch anda. Sebarang audio yang dikenal pasti oleh Apple sebagai menyertakan pertuturan yang boleh dikenali akan dipadamkan dengan segera.\n\nSemua maklumat yang diberikan sebagai sebahagian daripada Tingkatkan Mencuci Tangan akan disulitkan semasa dihantar dan pada peranti anda.\n\nDengan mendayakan Tingkatkan Mencuci Tangan, anda bersetuju dan mengizinkan penghantaran, pengumpulan, penyenggaraan, pemprosesan dan penggunaan maklumat ini oleh Apple dan subsidiari serta ejennya seperti yang diterangkan di atas. Apple mungkin menyimpan maklumat ini dengan penyedia khidmat pihak ketiga yang dipercayai. Anda boleh memilih untuk berhenti berkongsi data anda dengan Apple pada bila-bila masa. Untuk berbuat demikian, pergi ke Seting > Privasi & Keselamatan > Analitis & Peningkatan dan ketik untuk menyahaktifkan Tingkatkan Mencuci Tangan.\n\nPada setiap masa, maklumat yang dikumpulkan oleh Apple akan dikendalikan berpandukan Dasar Privasi Apple, yang boleh didapati di www.apple.com/my/privacy"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "V rámci vylepšování funkce Mytí rukou se odesílá limitovaná část dat, která vaše Apple Watch zaznamenávají, když funkci Mytí rukou využíváte. Shromažďované údaje zahrnují omezená pohybová data, vámi poskytnutou odezvu a určitá zpracovaná zvuková data. Pokud se tato data rozhodnete sdílet, budou vyhodnocena výhradně zaměstnanci společnosti Apple a použita k vývoji a zlepšování funkce Mytí rukou a prohlubování jejímu porozumění. Nebudou použita k žádnému jinému účelu. Tato data nejsou propojena s vaším účtem Apple ani žádnými jinými daty, která mohla společnost Apple získat z vašeho používání jejích dalších služeb.\n\nInformace shromážděné v rámci vylepšování funkce Mytí rukou budou obsahovat určitá nezpracovaná pohybová data (například data z akcelerometru), informace o vašich interakcích s funkcí (například vaše reakce na oznámení o mytí rukou) a určitá zpracovaná zvuková data, která Apple Watch nahrávají, jen když je tato funkce aktivní. Ze zvukových dat se přímo na zařízení odstraňuje téměř veškerá rozpoznatelná řeč.\n\nDélka zvukových souborů nepřesáhne 60 sekund od okamžiku, kdy Apple Watch detekovaly pohyb rukou charakteristický pro mytí. Jakákoli data, ve kterých společnost Apple detekuje rozpoznatelnou řeč, budou ihned smazána.\n\nVeškerá data poskytovaná v rámci vylepšování funkce Mytí rukou jsou při přenosu i uchovávání na vašem zařízení zašifrovaná.\n\nZapnutím vylepšování funkce Mytí rukou vyjadřujete svůj výslovný souhlas s tím, že společnost Apple a její pobočky a zástupci mohou přenášet, shromažďovat, spravovat, zpracovávat a využívat veškeré výše uvedené údaje. Společnost Apple může tato data ukládat u důvěryhodných nezávislých poskytovatelů služeb. Sdílení dat se společností Apple můžete kdykoli vypnout. Chcete‑li to udělat, otevřete Nastavení > Soukromí a zabezpečení > Analýza a vylepšování a vypněte volbu „Vylepšovat Mytí rukou“.\n\nSpolečnost Apple bude se shromážděnými informacemi za všech okolností nakládat v souladu se svými zásadami ochrany osobních údajů, jejichž znění najdete na adrese www.apple.com/cz/privacy."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funkcia Vylepšovať Umývanie rúk odosiela obmedzené informácie, ktoré sú zaznamenávané vašimi Apple Watch počas používania funkcie Umývanie rúk. Zhromažďované sú obmedzené dáta o pohybe, vaša odozva a vybrané spracované zvukové dáta. Ak sa rozhodnete zdieľať tieto informácie, budú vyhodnotené len zamestnancami spoločnosti Apple a použité na vývoj, vylepšovanie a lepšie pochopenie efektívnosti funkcie Umývanie rúk a nebudú použité na žiadne iné účely. Tieto informácie nie sú prepojené s vaším Apple účtom ani inými dátami, ktoré mohli byť zhromaždené spoločnosťou Apple pri používaní iných služieb.\n\nMedzi informácie, ktoré sú od vás zhromažďované v rámci funkcie Vylepšovať Umývanie rúk, patria určité nespracované dáta o pohybe (napríklad dáta z akcelerometra), informácie o používaní tejto funkcie (napríklad vaše reakcie na hlásenia o umývaní rúk) a vybrané spracované zvuky, ktoré Apple Watch zachytávajú, len keď je táto funkcia zapnutá, a ktoré sú s cieľom odstrániť zreteľnú reč spracované na vašom zariadení.\n\nDĺžka zhromažďovaných audiosúborov neprekročí 60 sekúnd od okamihu, kedy Apple Watch detegovali pohyby charakteristické pre umývanie rúk. Všetky zvuky, v ktorých spoločnosť Apple identifikuje zreteľnú reč, budú okamžite vymazané.\n\nVšetky informácie poskytované ako súčasť funkcie Vylepšovať Umývanie rúk budú na vašom zariadení aj počas prenosu zašifrované.\n\nPovolením funkcie Vylepšovať Umývanie rúk súhlasíte s tým, že spoločnosť Apple a jej dcérske spoločnosti a agenti môžu prenášať, zhromažďovať, spravovať, spracovávať a používať tieto informácie tak, ako je to popísané vyššie. Spoločnosť Apple môže uchovať tieto informácie u dôveryhodných poskytovateľov služieb tretích strán. Zdieľanie dát so spoločnosťou Apple môžete kedykoľvek zastaviť. Otvorte Nastavenia > Súkromie a bezpečnosť > Analytika a vylepšovanie a klepnutím vypnite možnosť Vylepšovať Umývanie rúk.\n\nS informáciami zhromaždenými spoločnosťou Apple sa po celý čas bude zaobchádzať v súlade so zásadami ochrany osobných údajov spoločnosti Apple, ktoré nájdete na stránke www.apple.com/sk/privacy."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar lavado de manos envía información limitada que tu Apple Watch registra como parte del uso que haces de la función de lavado de manos. La información recopilada incluirá datos limitados sobre el movimiento, los comentarios que proporciones y ciertos datos de audio procesado. Si eliges compartir esta información, los empleados de Apple podrán revisarla y utilizarla para desarrollar, mejorar y comprender la efectividad de la función de lavado de manos; y no se utilizará con ningún otro propósito. Esta información no se vincula a tu cuenta de Apple ni a otros datos que Apple pueda tener del uso que haces de otros servicios de Apple.\n\nLa información recopilada sobre ti como parte de Mejorar lavado de manos incluirá ciertos datos sin procesar sobre movimientos (por ejemplo, los datos del acelerómetro), tu compromiso con la función (por ejemplo, tu respuesta a las notificaciones de lavado de manos) y cierto audio procesado que se captura mediante el micrófono de tu Apple Watch sólo cuando esta función está activada y que se procesa en el dispositivo para eliminar fragmentos con voz reconocible.\n\nLos archivos de audio recopilados no superan los 60 segundos a partir del momento en el que tu Apple Watch detecta un movimiento de lavado de manos. Cualquier audio que Apple identifique como voz reconocible se eliminará de inmediato.\n\nToda la información proporcionada como parte de Mejorar lavado de manos se encripta al transferirse y en tu dispositivo.\n\nAl activar Mejorar lavado de manos, aceptas y das consentimiento para la transmisión, recopilación, mantenimiento, procesamiento y uso de esta información por parte de Apple y sus filiales y agentes de la forma que se describe anteriormente. Apple podría almacenar esta información usando proveedores de servicio de terceros. Puedes elegir dejar de compartir tus datos con Apple en cualquier momento. Para hacerlo, ve a Configuración > Privacidad y seguridad > Análisis y mejoras y desactiva Mejorar lavado de manos.\n\nLa información que Apple recopile se tratará en todo momento de conformidad con la Política de privacidad de Apple, la cual puedes consultar en www.apple.com/la/privacy."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Подобряването на Миене на ръце изпраща ограничена информация от вашия Apple Watch като част от използването на функцията за миене на ръце. Събраната информация ще включва ограничени данни за движение, обратна връзка, която предоставяте, и определени обработени аудио данни. Ако изберете да споделите тази информация, тя ще бъде прегледана от служители на Apple и ще се използва за разработване, подобряване и оценяване на ефективността на функцията за миене на ръце, без да бъде използвана с друга цел. Тази информация не е свързана с вашата Apple регистрация или друга информация, която Apple може да има за вас, ако сте използвали други услуги на Apple.\n\nСъбраната информация като част от програмата Подобряване на Миене на ръце ще включва определени необработени данни (като данни от акселерометър), вашата ангажираност с функцията (реакция на известията за миене на ръце) и определени обработени аудио данни от вашия Apple Watch само когато тази функция е активирана и данните са обработени на устройството, за да се премахнат повечето случаи на разпознаваем говор.\n\nСъбраните аудиофайлове няма да надвишават 60 секунди от момента, в който се засече движението при миене на ръце от вашия Apple Watch. Всички аудио данни, идентифицирани от Apple, които включват разпознаваем говор, ще бъдат незабавно изтрити.\n\nЦялата информация, предоставена като част от Подобряване на Миене на ръце, ще бъде криптирана по време на транспортирането и на вашето устройство.\n\nКато активирате Подобряване на миене на ръце, вие се съгласявате Apple и нейните дъщерни дружества и агенти да предават, събират, поддържат, обработват и използват тази информация, както е описано по-горе. Apple може да съхранява тази информация с доверени други компании, които предоставят услуги. Можете да изберете да спрете споделянето на вашите данни с Apple по всяко време. За да направите това, отидете в Настройки > Поверителност и сигурност > Аналитични данни и подобрения и докоснете, за да изключите Подобряване на миене на ръце.\n\nСъбраната от Apple информация винаги ще се третира в съответствие с Политиката за поверителност на Apple, която може да се намери на адрес www.apple.com/privacy."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Izboljšanje funkcije Umivanje rok pošilja nekatere informacije, ki jih zajema vaša ura Apple Watch kot del vaše uporabe funkcije Umivanje rok. Zbrane informacije bodo vključevale omejene podatke o dejavnosti, povratne informacije, ki jih posredujete, in določene obdelane zvočne podatke. Če se odločite deliti te informacije, jih bodo pregledali izključno zaposleni družbe Apple in bodo uporabljeni za razvijanje in izboljšanje funkcije Umivanje rok ter spoznavanje informacij o njeni učinkovitosti; uporabljene ne bodo za noben drug namen. Te informacije niso povezane z vašim računom Apple ali drugimi podatki, ki jih Apple morda hrani in izhajajo iz vaše uporabe drugih storitev Apple.\n\nInformacije, zbrane kot del izboljšanja funkcije Umivanje rok, bodo vključevale določene neobdelane podatke o gibanju (kot so podatki merilnika pospeška), vašo interakcijo s funkcijo (kot je vaš odziv na obvestila o umivanju rok) in določen obdelan zvok, ki ga zajame vaša ura Apple Watch samo, kadar je ta funkcija omogočena, in ga obdela v napravi z namenom, da se odstrani večino primerov prepoznavnega govora.\n\nZbrane zvočne datoteke bodo obsegale največ 60 sekund od trenutka, ko vaša ura Apple Watch zazna gibanje pri umivanju rok. Ves zvok, za katerega Apple identificira, da vključuje prepoznaven govor, bo takoj izbrisan.\n\nVse informacije, zagotovljene kot del izboljšanja funkcije Umivanje rok, bodo šifrirane, ko se prenašajo in ko so v vaši napravi.\n\nČe omogočite izboljšanje funkcije Umivanje rok, pomeni, da se strinjate in dovolite, da Apple, njegove podružnice in zastopniki prenašajo, zbirajo, ohranjajo, obdelujejo in uporabljajo te informacije, kot je opisano zgoraj. Apple lahko te informacije hrani pri drugih zaupanja vrednih ponudnikih storitev. Deljenje svojih podatkov z družbo Apple lahko kadarkoli ustavite. To naredite tako, da odprete Nastavitve > Zasebnost in varnost > Analitika in izboljšave ter tapnete, da izklopite možnost Izboljšaj Umivanje rok.\n\nPodatki, ki jih zbira Apple, bodo vedno obravnavani v skladu s pravilnikom o zasebnosti družbe Apple, ki je na voljo na naslovu www.apple.com/si/privacy"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Handwashing sends limited information that is captured by your Apple Watch as part of your use of the Handwashing feature. The information collected will include limited motion data, feedback you provide and certain processed audio data. If you choose to share this information it will be reviewed only by Apple employees and used to develop, improve and understand the effectiveness of the Handwashing feature; it will not be used for any other purpose. This information is not linked to your Apple Account or other data Apple may have from your use of other Apple services.\n\nThe information collected from you as part of Improve Handwashing will include certain raw motion data (such as accelerometer data), your engagement with the feature (such as your response to handwashing notifications), and certain processed audio that is captured by your Apple Watch only when this feature is enabled and processed on device to remove most instances of recognisable speech.\n\nThe collected audio files will not exceed 60 seconds from when handwashing motion is detected by your Apple Watch. Any audio that is identified by Apple to include recognisable speech will be promptly deleted.\n\nAll information provided as part of Improve Handwashing will be encrypted in transit and on your device.\n\nBy enabling Improve Handwashing, you agree and consent to Apple’s and its subsidiaries’ and agents’ transmission, collection, maintenance, processing and use of this information as described above. Apple may store this information with trusted third-party service providers. You may choose to stop sharing your data with Apple at any time. To do so, go to Settings > Privacy & Security > Analytics & Improvements and tap to turn off Improve Handwashing.\n\nAt all times, information collected by Apple will be treated in accordance with Apple’s Privacy Policy, which can be found at apple.com/au/privacy."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„Händewaschen verbessern“ versendet eingeschränkte Informationen, die von deiner Apple Watch im Rahmen deiner Nutzung der Händewaschen-Funktion erfasst werden. Zu den erfassten Informationen gehören eingeschränkte Bewegungsdaten, von dir bereitgestelltes Feedback sowie bestimmte verarbeitete Audiodaten. Wenn du dich für die Freigabe dieser Informationen entscheidest, werden diese nur von Apple-Mitarbeiter:innen geprüft und verwendet, um die Effektivität der Händewaschen-Funktion weiterzuentwickeln, zu verbessern und zu verstehen; diese Informationen werden für keinerlei andere Zwecke genutzt. Diese Informationen werden nicht mit deinem Apple Account oder anderen Daten verknüpft, die Apple möglicherweise über deine Nutzung anderer Apple-Dienste erfasst hat.\n\nDie im Rahmen von „Händewaschen verbessern“ über dich erfassten Informationen enthalten reine Bewegungsdaten bestimmter Art (etwa Daten des Beschleunigungsmessers), deinen Umgang mit der Funktion (etwa deine Reaktion auf die Mitteilungen zum Händewaschen) sowie bestimmte verarbeitete Audioinformationen, die von deiner Apple Watch erfasst und auf dem Gerät verarbeitet wurden, um die meisten Bestandteile identifizierbarer Sprache zu entfernen (sofern wenn diese Funktion aktiviert ist).\n\nDie gesammelten Audiodateien beinhalten maximal 60 Sekunden ab dem Zeitpunkt, an dem deine Apple Watch eine Handwaschbewegung erkennt. Jegliche Audioinhalte, bei denen von Apple festgestellt wird, dass sie gesprochene Sprache umfassen, werden umgehend gelöscht.\n\nSämtliche im Rahmen von „Händewaschen verbessern“ bereitgestellten Informationen werden sowohl bei der Übertragung als auch auf deinem Gerät verschlüsselt.\n\nDurch die Verwendung von „Händewaschen verbessern“ erklärst du dein Einverständnis damit, dass Apple, seine Tochtergesellschaften und Vertreter diese Informationen wie oben beschrieben übertragen, sammeln, verwalten, verarbeiten und verwenden. Apple ist berechtigt, vertrauenswürdige Drittanbieter derartiger Dienste mit dem Speichern dieser Daten zu beauftragen. Du kannst die Freigabe deiner Daten für Apple jederzeit beenden. Wähle dazu „Einstellungen“ > „Datenschutz & Sicherheit“ > „Analyse & Verbesserungen“ und deaktiviere „Händewaschen verbessern“ durch Tippen.\n\nDie von Apple erfassten Informationen werden jederzeit gemäß der Apple-Datenschutzrichtlinie behandelt, die unter www.apple.com/de/privacy zu finden ist."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cải tiến Rửa tay gửi các thông tin giới hạn được Apple Watch ghi lại trong quá trình bạn sử dụng tính năng Rửa tay. Thông tin được thu thập sẽ bao gồm dữ liệu chuyển động giới hạn, phản hồi mà bạn cung cấp và dữ liệu âm thanh nhất định đã xử lý. Nếu bạn lựa chọn chia sẻ thông tin này, thông tin sẽ chỉ được các nhân viên của Apple xem xét và được sử dụng để phát triển, cải tiến và tìm hiểu về hiệu quả của tính năng Rửa tay; thông tin sẽ không được sử dụng cho bất kỳ mục đích nào khác. Thông tin này không được liên kết với Tài khoản Apple của bạn hoặc các dữ liệu khác mà Apple có thể có từ việc bạn sử dụng các dịch vụ khác của Apple.\n\nThông tin được thu thập từ bạn trong Cải tiến Rửa tay sẽ bao gồm dữ liệu chuyển động thô nhất định (ví dụ như dữ liệu gia tốc kế), tương tác của bạn với tính năng (ví dụ như phản hồi của bạn với thông báo rửa tay) và âm thanh nhất định đã xử lý do Apple Watch ghi lại chỉ khi tính năng này được bật và xử lý trên thiết bị để xóa hầu hết các trường hợp lời nói có thể nhận dạng.\n\nCác tệp âm thanh được thu thập sẽ không vượt quá 60 giây từ khi chuyển động rửa tay được Apple Watch phát hiện. Mọi âm thanh được Apple xác định là bao gồm lời nói có thể nhận dạng đều sẽ bị xóa ngay lập tức.\n\nTất cả thông tin được cung cấp trong Cải tiến Rửa tay sẽ được mã hóa trong khi di chuyển và khi ở trên thiết bị của bạn.\n\nBằng việc bật Cải tiến Rửa tay, bạn đồng ý và cho phép Apple, các công ty con và đại lý của hãng chuyển giao, thu thập, duy trì, xử lý và sử dụng thông tin này như mô tả ở trên. Apple có thể lưu trữ thông tin này với các nhà cung cấp dịch vụ bên thứ ba được tin cậy. Bạn có thể lựa chọn dừng chia sẻ dữ liệu với Apple bất kỳ lúc nào. Để thực hiện, hãy đi tới Cài đặt > Quyền riêng tư & Bảo mật > Phân tích & Cải tiến và chạm để tắt Cải tiến Rửa tay.\n\nThông tin do Apple thu thập sẽ luôn được xử lý theo Chính sách quyền riêng tư của Apple, có thể tìm thấy tại địa chỉ www.apple.com/vn/privacy"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Îmbunătățire Spălat pe mâini trimite informații limitate înregistrate de Apple Watch ca parte a utilizării funcționalității “Spălat pe mâini” de către dvs. Informațiile colectate vor include date limitate despre mișcare, feedbackul pe care îl furnizați și anumite date audio procesate. Dacă optați să partajați aceste informații, acestea vor fi analizate doar de angajații Apple și vor fi utilizate pentru a dezvolta, îmbunătăți și evalua eficiența funcționalității “Spălat pe mâini”, fără a fi utilizate în niciun alt scop. Aceste informații nu sunt asociate cu contul dvs. Apple sau cu alte date pe care este posibil ca Apple să le aibă ca urmare a utilizării altor servicii Apple de către dvs.\n\nInformațiile colectate de la dvs. în urma activării opțiunii “Îmbunătățire Spălat pe mâini” vor include anumite date de mișcare neprelucrate (precum datele accelerometrului), interacțiunea dvs. cu funcționalitatea (cum ar fi răspunsul dvs. la notificările pentru spălat pe mâini) și anumite date audio procesate, care sunt înregistrate de Apple Watch doar atunci când această funcționalitate este activată și sunt procesate pe dispozitiv pentru a elimina majoritatea cazurilor de vorbire recognoscibilă.\n\nFișierele audio colectate nu vor depăși 60 de secunde din momentul în care Apple Watch‑ul detectează o mișcare asociată spălatului pe mâini. Orice date audio identificate de Apple drept incluzând vorbire recognoscibilă vor fi șterse imediat.\n\nToate informațiile furnizate în urma activării opțiunii “Îmbunătățire Spălat pe mâini” vor fi criptate în timpul transmiterii și pe dispozitivul dvs.\n\nPrin activarea opțiunii “Îmbunătățire Spălat pe mâini”, sunteți de acord și consimțiți ca Apple și filialele și agenții Apple să transmită, colecteze, întrețină, proceseze și utilizeze aceste informații în condițiile descrise mai sus. Apple poate stoca aceste informații prin terți furnizori de servicii. Puteți opta oricând să opriți partajarea datelor dvs. cu Apple. În acest scop, accesați Configurări > Intimitate și securitate > Analiză și îmbunătățiri și apăsați pentru a dezactiva opțiunea “Îmbunătățire Spălat pe mâini”.\n\nInformațiile colectate de Apple vor fi tratate în permanență în conformitate cu Politica de confidențialitate Apple, care se află la www.apple.com/ro/privacy."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La función “Mejorar el lavado de manos” envía información limitada que capta el Apple Watch como parte de tu uso de la función “Lavado de manos”. La información recopilada incluirá datos limitados de movimiento, las respuestas que ofreces y determinados datos de audio procesado. Si optas por compartir esta información, solo será revisada por la plantilla de Apple para desarrollar, mejorar y comprender la eficacia de la función “Lavado de manos”; no se usará para ningún otro propósito. Esta información no está vinculada a tu cuenta de Apple ni a otros datos que Apple pueda tener de tu uso de otros servicios de Apple.\n\nLa información recopilada de ti como parte de la función “Mejorar el lavado de manos” incluirá determinados datos de movimiento sin procesar (por ejemplo, del acelerómetro), tu interacción con la función (como tu respuesta a las notificaciones) y determinados datos de audio procesados que capta el Apple Watch solo cuando se activa esta función, y se procesan localmente en el propio dispositivo para eliminar la mayor parte de instancias de habla reconocible.\n\nLos archivos de audio recopilados no superarán los 60 segundos desde el momento en que el Apple Watch detecta el movimiento de lavado de manos. Cualquier audio que Apple identifica que incluye habla reconocible se eliminará con la mayor brevedad posible.\n\nToda la información proporcionada como parte de la función “Mejorar el lavado de manos” se encriptará durante la transferencia y en tu dispositivo.\n\nAl activar la función “Mejorar el lavado de manos”, aceptas y consientes la transmisión, obtención, mantenimiento, procesamiento y uso de esta información por parte de Apple, sus filiales y agentes tal como se ha descrito anteriormente. Apple puede almacenar esta información con proveedores de servicios de terceros de confianza. Puedes dejar de compartir tus datos con Apple cuando quieras. Para ello, ve a Ajustes > Privacidad y seguridad > “Análisis y mejoras” y desactiva “Mejorar el lavado de manos”.\n\nToda esta información se recopila y se trata de acuerdo en todo momento con la política de privacidad de Apple, que puedes consultar en www.apple.com/es/privacy."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apple Watch сағаты «Қол жуу» функциясының жұмысы барысында ақпаратты жинайды. Бұл ақпараттың бір бөлігі «Қол жуу» функциясын жақсарту мақсатында жіберіледі. Жиналған ақпарат қозғалыс туралы шектеулі деректерді, пікірлеріңізді және белгілі бір өңделген аудио деректерді қамтиды. Егер бұл ақпаратты бөлісуді таңдасаңыз, оны тек Apple қызметкерлері зерттейді және тек «Қол жуу» функциясының әзірлеу, жақсарту және тиімділігін бағалау үшін пайдаланады. Бұл ақпарат өзге мақсатта пайдаланылмайды. Бұл ақпарат Apple аккаунтыңызбен немесе Apple компаниясына басқа Apple сервистерін пайдалану нәтижесінде берілетін басқа да деректермен байланысты емес.\n\n«Қол жуу» функциясын жақсарту үшін жиналған ақпарат қозғалыс туралы белгілі бір бастапқы деректерді (мысалы, акселерометр деректерін), функцияны қалай пайдаланатыныңыз (мысалы, қол жуу туралы хабарландыруларға қалай жауап беретініңіз) туралы деректерді, сондай-ақ Apple Watch сағатының көмегімен жазып алынған және сөздері анық естілетін бөліктерін алып тастау үшін құрылғыда өңделген белгілі бір аудио деректерді (осы функция қосулы болғанда ғана) қамтиды.\n\nАудиофайлдар Apple Watch сағаты қол жуу әрекетін анықтаған сәттен бастап ең көбі 60 секунд бойы жазылады. Apple компаниясы анық естілетін сөздері бар аудиожазбаларды анықтаған жағдайда оларды дереу жояды.\n\n«Қол жуу» функциясын жақсарту үшін берілген ақпараттың барлығы тасымалдау кезінде және құрылғыда шифрланады.\n\n«Қол жуу» функциясын қоса отырып, осы ақпаратты жоғарыда сипатталғандай Apple компаниясына, оның еншілес кәсіпорындары мен агенттеріне беруге, жинауға, сақтауға, өңдеуге және пайдалануға келісім бересіз. Apple компаниясы бұл ақпаратты сенімді үшінші тараптық сервис провайдерлерінде сақтауы мүмкін. Деректерді Apple компаниясымен бөлісу әрекетін кез келген уақытта тоқтатуға болады. Ол үшін «Реттеулер» > «Құпиялылық және қауіпсіздік» > «Аналитика және жақсартулар» тармағына өтіп, «Қол жуу функциясын жақсарту» параметрін өшіріңіз.\n\nApple компаниясы жинаған ақпарат әрқашан Apple компаниясының құпиялылық саясатына (www.apple.com/privacy сайтында берілген) сәйкес өңделеді"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "« Améliorer Lavage des mains » envoie certaines informations capturées par votre Apple Watch dans le cadre de votre utilisation de la fonctionnalité « Lavage des mains ». Les informations collectées incluent certaines données de mouvement, vos commentaires, ainsi que certaines données audio traitées. Si vous choisissez de partager ces informations, elles ne seront examinées que par des employés d’Apple et utilisées que pour développer, améliorer et comprendre l’efficacité de la fonctionnalité « Lavage des mains » ; elles ne seront pas exploitées à d’autres fins. Ces informations ne sont pas associées à votre compte Apple ni à d’autres données qu’Apple pourrait obtenir dans le cadre de votre utilisation d’autres services Apple.\n\nLes informations collectées dans le cadre de « Améliorer Lavage des mains » incluent certaines données de mouvement brutes (comme les données de l’accéléromètre), vos interactions avec la fonctionnalité (comme vos réponses aux notifications de lavage des mains) et certains extraits audio capturés par votre Apple Watch uniquement lorsque cette fonctionnalité est activée et traités sur l’appareil en vue de supprimer la plupart des paroles reconnaissables.\n\nLes fichiers audio collectés ne dépassent pas 60 secondes à partir du moment où votre Apple Watch détecte un mouvement de lavage des mains. Tout extrait audio dans lequel Apple identifiera des paroles reconnaissables sera aussitôt supprimé.\n\nToutes les informations fournies dans le cadre de « Améliorer Lavage des mains » sont chiffrées lors de leur transmission et sur votre appareil.\n\nEn activant « Améliorer Lavage des mains », vous acceptez qu’Apple ainsi que ses filiales et ses représentants transmettent, recueillent, conservent, traitent et utilisent ces informations comme décrit ci-dessus. Apple peut faire appel à des fournisseurs de service tiers de confiance pour le stockage de ces données. Vous pouvez cesser de partager vos données avec Apple à tout moment. Pour ce faire, accédez à Réglages > Confidentialité et sécurité > Analyse et améliorations, puis touchez « Améliorer Lavage des mains » pour désactiver la fonctionnalité.\n\nLes données recueillies par Apple seront en tout temps traitées conformément à l’Engagement de confidentialité d’Apple, que vous pouvez consulter à l’adresse suivante : www.apple.com/fr/privacy"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Функція «Покращення Миття рук» надсилає обмежену інформацію, яку збирає ваш Apple Watch, коли ви використовуєте функцію «Миття рук». Зібрана інформація містить обмежені дані про рух, надані вами відгуки та певні оброблені аудіодані. Якщо ви вирішите поширити цю інформацію, її зможуть переглянути лише співробітники Apple із метою розробки, покращення та розуміння ефективності функції «Миття рук». Вона не використовуватиметься для інших цілей. Ця інформація не повʼязується з вашим обліковим записом Apple чи іншими даними, які Apple може мати через ваше використання інших служб Apple.\n\nІнформація про вас, яку збирає функція «Покращення Миття рук», містить певні необроблені дані про рух (наприклад, дані акселерометра), вашу взаємодію з функцією (наприклад, ваша реакція на сповіщення про миття рук), а також певні оброблені аудіозаписи, які записуються винятково на вашому Apple Watch, лише коли цю функцію ввімкнено, і обробляються на пристрої для вилучення більшості фрагментів розбірливого мовлення.\n\nТривалість зібраних аудіофайлів не перевищуватиме 60 секунд із моменту, коли ваш Apple Watch виявить рух миття рук. Будь-яке аудіо, у якому на боці Apple визначено розбірливе мовлення, буде негайно видалено.\n\nУся інформація, яка надається в рамках Покращення Миття рук, буде зашифрована під час передавання та на вашому пристрої.\n\nВмикаючи функцію «Покращення Миття рук», ви погоджуєтеся на передавання, збір, зберігання, опрацювання та використання всієї вищезгаданої інформації з боку Apple, її дочірніми компаніями та агентами. Apple може зберігати цю інформацію у довірених сторонніх постачальників послуг. Ви можете припинити надавати свої дані до Apple будь‑якої миті. Для цього перейдіть у меню Параметри > Приватність і безпека > Аналітика і покращення й вимкніть параметр «Покращення Миття рук».\n\nІнформація, яку збирає Apple, завжди оброблятиметься відповідно до Політики конфіденційності Apple, наведеної на вебсторінці www.apple.com/ua/privacy"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A função Melhorar Lavar as Mãos envia informações limitadas que são registradas pelo seu Apple Watch como parte do uso do recurso Lavar as Mãos. As informações coletadas incluem dados limitados de movimento, feedback fornecido por você e certos dados de áudio processados. Se você decidir compartilhar essas informações, elas serão analisadas apenas por funcionários da Apple e serão usadas para desenvolver, melhorar e entender a eficácia do recurso Lavar as Mãos. Elas não serão usadas para qualquer outra finalidade. Essas informações não são vinculadas à sua Conta Apple nem a outros dados que a Apple possa ter devido ao seu uso de outros serviços da Apple.\n\nAs suas informações coletadas como parte do recurso Melhorar Lavar as Mãos incluem certos dados brutos de movimento (como dados do acelerômetro), seu envolvimento com o recurso (como sua resposta às notificações de lavagem das mãos) e certos áudios processados que são capturados pelo Apple Watch apenas quando este recurso está ativado e que são processados no dispositivo para remover a maioria das ocorrências de fala reconhecível.\n\nOs arquivos de áudio coletados não excedem 60 segundos a partir do momento em que o movimento de lavagem das mãos é detectado pelo Apple Watch. Qualquer áudio no qual a Apple identificar para incluir fala reconhecível será imediatamente excluído.\n\nTodas as informações fornecidas como parte do Melhorar Lavar as Mãos são criptografadas durante o trânsito e no dispositivo.\n\nAo ativar Melhorar Lavar as Mãos, você concorda e consente que a Apple, e suas subsidiárias e agentes possam transmitir, coletar, manter, processar e usar essas informações conforme descrito acima. A Apple pode armazenar essas informações em provedores de serviço terceirizados de confiança. Você pode optar por parar de compartilhar seus dados com a Apple a qualquer momento. Para fazer isso, acesse Ajustes > Privacidade e Segurança > Análise e Melhorias e desative Melhorar Lavar as Mãos.\n\nAs informações coletadas pela Apple sempre serão tratadas de acordo com a Política de Privacidade da Apple, que pode ser encontrada em www.apple.com/br/privacy"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“手洗いの改善”では、手洗い機能を使用する中でApple Watchによって取り込まれる一部の情報が送信されます。収集される情報には、一部のモーションデータ、あなたからのフィードバック、および特定の処理済みオーディオデータが含まれます。この情報を共有することを選択した場合、この情報はApple社員によってのみレビューされ、手洗い機能の開発、改善、および効果の検証に使用されます。その他の目的には使用されません。また、この情報がApple Accountに関連付けられたり、ほかのAppleサービスの使用を通じてAppleが保有しているその他のデータに関連付けられたりすることもありません。\n\n“手洗いの改善”の一環としてあなたから収集される情報には、特定のモーションに関するRawデータ（加速度計のデータなど）、この機能を使った実施状況（手洗いの通知への応答など）、およびApple Watchによって取り込まれる特定の処理済みオーディオ（この機能を有効にしている場合のみ）が含まれます。なお、認識可能な音声はほぼ取り除くようにデバイス上で処理されます。\n\nオーディオの収集時間は、Apple Watchで手洗いの動きが検知されてから60秒を超えることはありません。認識可能な音声が含まれたオーディオが見つかった場合は、即座に削除されます。\n\n“手洗いの改善”の一環として送信される情報はすべて、転送時にデバイス上で暗号化されます。\n\n“手洗いの改善”を有効にすることで、Appleおよびその子会社と代理業者が、上記で説明した方法で当該情報を送信、収集、保持、処理、および使用することに同意し、承諾することになります。Appleはこの情報を信頼できる第三者のサービス提供者と共に保管する場合があります。Appleとのデータの共有はいつでも停止することができます。その場合は、“設定”＞“プライバシーとセキュリティ”＞“解析と改善”に移動し、“手洗いの改善”をタップしてオフにしてください。\n\nAppleが収集する情報は、いかなる場合においても、Appleのプライバシーポリシー（www.apple.com/jp/privacy を参照）に従って取り扱われます。"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A funcionalidade Melhorar Lavar as mãos envia à Apple informação limitada que é capturada pelo Apple Watch no âmbito da utilização da funcionalidade Lavar as mãos. A informação recolhida inclui dados limitados sobre movimento, os comentários fornecidos pelo utilizador e alguns dados de áudio processados. Caso opte por partilhar esta informação, ela será analisada apenas por funcionários da Apple e usada para desenvolver, melhorar e compreender a eficácia da funcionalidade Lavar as mãos; os seus dados não serão usados para nenhum outro fim. Esta informação não é associada à sua conta Apple nem a outros dados que a Apple tenha acerca da sua utilização de outros serviços da Apple.\n\nA informação recolhida no âmbito de Melhorar Lavar as mãos inclui determinados dados de movimento não processados (tais como dados do acelerómetro), a interação com a funcionalidade (tal como a resposta às notificações para lavar as mãos) e algum áudio processado, que é capturado pelo microfone do Apple Watch apenas quando esta funcionalidade está ativada e processado no dispositivo para remover a maior parte do discurso reconhecível.\n\nOs ficheiros de áudio recolhidos não excederão 60 segundos a partir do momento em que o Apple Watch deteta o movimento de lavagem das mãos. Qualquer áudio identificado pela Apple que inclua discurso reconhecível será apagado de imediato.\n\nToda a informação fornecida no âmbito de Melhorar Lavar as mãos é cifrada durante a transmissão e no dispositivo.\n\nAo ativar Melhorar Lavar as mãos, aceita e consente que a Apple e respetivas empresas subsidiárias e agentes transmitam, recolham, mantenham, processem e usem esta informação nos termos acima descritos. A Apple reserva o direito de partilhar esta informação com fornecedores de serviços que considera fidedignos. Pode optar por interromper a partilha dos dados com a Apple a qualquer momento. Para tal, em Definições > Privacidade e segurança > Análise e melhorias, desative a opção “Melhorar Lavar as mãos”.\n\nToda e qualquer informação recolhida pela Apple será tratada de acordo com a Política de Privacidade da Apple, cujo texto pode ser consultado em www.apple.com/privacy"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Značajka poboljšanja Pranja ruku šalje ograničene informacije koje vaš Apple Watch snima kao dio vaše uporabe značajke Pranje ruku. Prikupljene informacije uključivat će ograničene podatke o kretanju, povratne informacije koje date i određene obrađene audio zapise. Ako odlučite dijeliti ove informacije, pregledavat će ih samo zaposlenici tvrtke Apple koji će ih koristiti za razvoj, poboljšanje i razumijevanje učinkovitosti značajke Pranje ruku. Neće se koristiti u nikakve druge svrhe. Ove informacije nisu povezane s vašim Apple računom ili drugim podacima koje Apple može imati iz vaše uporabe drugih Apple usluga.\n\nInformacije koje se od vas prikupljaju kao dio poboljšanja Pranja ruku uključivat će određene neobrađene podatke o kretanju (kao što su podaci akcelerometra), vašu angažiranost oko značajke (primjerice, označavate li da niste prali ruke) i određene obrađene audio zapise koje Apple Watch snima mikrofonom samo kad je ova značajka omogućena i koji se obrađuju na uređaju kako bi se uklonila većina prepoznatljivog govora.\n\nPrikupljene audio datoteke nisu dulje od 60 sekundi od trenutka kad Apple Watch zabilježi pokret pranja ruku. Svaki audio zapis za koji Apple identificira da uključuje prepoznatljiv govor, odmah će se obrisati.\n\nSve poslane informacije koje su dio poboljšanja pranja ruku kriptirat će se tijekom prijenosa i na vašem uređaju.\n\nOmogućavanjem značajke poboljšanja Pranja ruku, slažete se i pristajete da tvrtka Apple, kao i njezine podružnice i agenti, smiju odašiljati, prikupljati, održavati, obrađivati i koristiti ove informacije kako je opisano iznad. Apple može pohraniti ove informacije kod drugih pouzdanih pružatelja usluga. U bilo kojem trenutku možete prestati dijeliti svoje podatke s tvrtkom Apple. Ako to želite učiniti, otvorite Postavke > Privatnost i sigurnost > Analiza i poboljšanja i dodirnite za isključivanje poboljšanja Pranja ruku.\n\nInformacije koje Apple prikupi u svakom će se trenutku tretirati u skladu s pravilima privatnosti tvrtke Apple, koja se mogu pronaći na www.apple.com/legal/privacy/hr"
+          }
+        }
+      }
+    },
+    "SPLASH_SHORT_TITLE": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Handwashing"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "שיפור ״שטיפת ידיים״"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "손씻기 향상"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tingkatkan Cuci Tangan"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paranna Käsienpesua"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El Yıkama’yı İyileştir"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verbeter Handen wassen"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Kézmosás továbbfejlesztése"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Улучшение функции «Мытье рук»"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Migliora “Igiene mani”"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Βελτίωση του Πλυσίματος χεριών"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar lavado de manos"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Millora del rentat de mans"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تحسين غسل اليدين"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "改進洗手"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Améliorer « Se laver les mains »"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Förbättra Handtvätt"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forbedre håndvasken"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "हाथ धोना बेहतर बनाएँ"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gør Håndvask bedre"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Handwashing"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ulepszanie (Mycie rąk)"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "改進洗手"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "การปรับปรุงการล้างมือ"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "改进洗手"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„Rankų plovimo“ tobulinimas"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Handwashing"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tingkatkan Mencuci Tangan"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vylepšování funkce Mytí rukou"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vylepšovanie Umývania rúk"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar lavado de manos"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Подобряване на Миене на ръце"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Izboljšanje funkcije Umivanje rok"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Handwashing"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Händewaschen verbessern"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cải tiến Rửa tay"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Îmbunătățire Spălat pe mâini"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar el lavado de manos"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Қол жуу әрекетін жақсарту"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Améliorer Lavage des mains"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Покращення Миття рук"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Melhorar Lavar as Mãos"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "手洗いの改善"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Melhorar Lavar as mãos"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poboljšanje Pranja ruku"
+          }
+        }
+      }
+    },
+    "SPLASH_SUMMARY": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Handwashing is designed to protect your privacy and enable you to choose what to share."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "״שיפור שטיפת ידיים״ נועד להגן על הפרטיות שלך ומאפשר לך לבחור מה לשתף."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "‘손씻기 향상’은 사용자의 개인정보를 보호하도록 설계되었으며 공유할 대상을 사용자가 선택할 수 있습니다."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tingkatkan Cuci Tangan dirancang untuk melindungi privasi Anda dan memungkinkan Anda untuk memilih apa yang akan bagikan."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Käsienpesu on suunniteltu niin, että yksityisyytesi on suojattu. Voit itse valita, mitä haluat jakaa."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El Yıkama’yı İyileştir, gizliliğinizi koruyacak ve nelerin paylaşılacağını seçmenizi sağlayacak şekilde tasarlanmıştır."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "‘Verbeter Handen wassen’ is ontwikkeld om je privacy te beschermen en om je te laten bepalen wat je deelt."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Kézmosás továbbfejlesztését úgy tervezték, hogy megvédje az Ön személyes adatait, és lehetővé tegye, hogy Ön kiválassza, mit oszt meg."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ваши данные, используемые для улучшения функции «Мытье рук», надежно защищены, и только Вы решаете, чем поделиться."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La funzionalità “Migliora Igiene mani” è concepita in modo da proteggere la tua privacy e consentirti di scegliere i contenuti da condividere."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Η Βελτίωση του Πλυσίματος χεριών έχει σχεδιαστεί με τρόπο που προστατεύει το απόρρητό σας και σας δίνει τη δυνατότητα να επιλέγετε τα δεδομένα προς κοινοποίηση."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar lavado de manos se diseñó para proteger tu privacidad y permitirte elegir lo que compartes."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’opció per millorar el rentat de mans s’ha dissenyat per protegir la teva privacitat i perquè puguis decidir què vols compartir."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "صُمِّمَ تحسين غسل اليدين لحماية خصوصيتك وتمكينك من اختيار ما تود مشاركته."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "「改進洗手」的設計可保護你的隱私權並讓你選擇分享的內容。"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La fonction Améliorer « Se laver les mains » est conçue pour protéger votre confidentialité et vous permettre de choisir ce que vous souhaitez partager."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Förbättra Handtvätt har utformats för att skydda din integritet och låta dig välja vad du vill dela."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forbedre håndvasken beskytter informasjonen din og lar deg velge hva du vil dele."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "हाथ धोना बेहतर बनाएँ को आपकी गोपनीयता की सुरक्षा के लिए डिज़ाइन किया गया है और यह आपको विकल्प चुनने देता है कि आप क्या शेयर करते हैं।"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gør Håndvask bedre er udviklet til at beskytte din anonymitet og give dig mulighed for at vælge, hvad du vil dele."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Handwashing is designed to protect your privacy and enable you to choose what to share."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funkcja Ulepszanie (Mycie rąk) została zaprojektowana z myślą o ochronie Twojej prywatności i pozwala Ci decydować o informacjach, które udostępniasz."
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "「改進洗手」的設計可保護你的私隱並讓你選擇分享內容。"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "การปรับปรุงการล้างมือได้รับการออกแบบมาเพื่อปกป้องความเป็นส่วนตัวของคุณและทำให้คุณสามารถเลือกสิ่งที่แชร์ได้"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "改进洗手旨在保护你的隐私并可让你选择要共享的内容。"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funkcija „Rankų plovimo“ tobulinimas“ sukurta taip, kad apsaugotų jūsų privatumą ir leistų patiems pasirinkti, kokią informaciją norite bendrinti."
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Handwashing is designed to protect your privacy and enable you to choose what to share."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tingkatkan Mencuci Tangan direka bentuk untuk melindungi privasi anda dan membolehkan anda memilih perkara yang dikongsi."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vylepšování funkce Mytí rukou chrání vaše soukromí a ponechává vám kontrolu nad tím, co sdílíte."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funkcia Vylepšovať Umývanie rúk chráni vaše súkromie a ponecháva vám plnú kontrolu nad tým, čo zdieľate."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar lavado de manos se diseñó para proteger tu privacidad y permitirte elegir lo que compartes."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Подобряването на Миене на ръце е създадено да защитава вашата поверителност и да ви позволи да избирате какво да споделяте."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Izboljšanje funkcije Umivanje rok je zasnovano tako, da varuje vašo zasebnost in vam omogoči, da izberete, kaj boste delili."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Handwashing is designed to protect your privacy and enable you to choose what to share."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„Händewaschen verbessern“ wurde auf eine Art und Weise entwickelt, die deine Informationen schützt und es dir ermöglicht, auszuwählen, was du teilst."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cải tiến Rửa tay được thiết kế để bảo vệ quyền riêng tư của bạn và cho phép bạn chọn nội dung sẽ chia sẻ."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Opțiunea “Îmbunătățire Spălat pe mâini” este concepută pentru a vă proteja intimitatea și pentru a vă permite să alegeți ce partajați."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La función “Mejorar el lavado de manos” se ha diseñado para mantener protegida tu privacidad y para que puedas escoger lo que quieres compartir."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "«Қол жуу» функциясын жақсарту үшін пайдаланылатын деректер құпиялылықты қорғайтындай және бөлісу қажет объектілерді таңдауға мүмкіндік беретіндей етіп жасалған."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La fonctionnalité « Améliorer Lavage des mains » est conçue pour protéger votre confidentialité et vous permettre de choisir ce que vous souhaitez partager."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Функцію «Покращення Миття рук» спроєктовано так, щоб захищати вашу інформацію і давати вам змогу обирати, що поширювати."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O recurso Melhorar Lavar as Mãos é projetado para proteger a sua privacidade e permitir que você escolha os dados que compartilha."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“手洗いの改善”はあなたのプライバシーを保護するように設計され、どの情報を共有するかを選択できるようになっています。"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A funcionalidade Melhorar Lavar as mãos foi concebida de modo a proteger a privacidade e permitir a cada utilizador escolher o que pretende partilhar."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Značajka poboljšanja Pranja ruku dizajnirana je kako bi zaštitila vašu privatnost i omogućila odabir sadržaja koje želite dijeliti."
+          }
+        }
+      }
+    },
+    "SPLASH_TITLE": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Handwashing & Privacy"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "מידע בנושא ״שטיפת ידיים״ ופרטיות…"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "손씻기 향상 및 개인정보 보호"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tingkatkan Cuci Tangan & Privasi"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paranna Käsienpesua ja tietosuoja"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El Yıkama’yı İyileştir ve Gizlilik"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "'Verbeter Handen wassen' en privacy"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Kézmosás továbbfejlesztése és az adatvédelem"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Улучшение функции «Мытье рук» и конфиденциальность"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Migliora “Igiene mani” e privacy"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Βελτίωση του Πλυσίματος χεριών και απόρρητο"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar lavado de manos y la privacidad"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La millora del rentat de mans i la privacitat"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تحسين غسل اليدين والخصوصية"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "改進洗手與隱私權"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Améliorer « Se laver les mains » et confidentialité"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Förbättra Handtvätt och integritet"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forbedre håndvasken og personvern"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "हाथ धोना बेहतर बनाएँ और गोपनीयता"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gør Håndvask bedre og anonymitet"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Handwashing & Privacy"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ulepszanie (Mycie rąk) i prywatność"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "改進洗手與私隱"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "การปรับปรุงการล้างมือและความเป็นส่วนตัว"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "改进洗手与隐私"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„Rankų plovimo“ tobulinimas“ ir privatumas"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Handwashing & Privacy"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tingkatkan Mencuci Tangan & Privasi"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vylepšování funkce Mytí rukou a soukromí"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vylepšovanie Umývania rúk a súkromie"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar lavado de manos y la privacidad"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Подобряване на миене на ръце и поверителност"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Izboljšanje funkcije Umivanje rok in zasebnost"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Handwashing & Privacy"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„Händewaschen verbessern“ & Datenschutz"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cải tiến Rửa tay & Quyền riêng tư"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Îmbunătățire Spălat pe mâini și intimitatea"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“Mejorar el lavado de manos” y la privacidad"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "«Қол жуу» функциясын жақсарту және құпиялылық"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Améliorer Lavage des mains et confidentialité"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Покращення Миття рук і приватність"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Melhorar Lavar as Mãos e Privacidade"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“手洗いの改善”とプライバシー"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Melhorar Lavar as mãos e Privacidade"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poboljšanje Pranja ruku i privatnosti"
+          }
+        }
+      }
+    },
+    "BUTTON_TITLE": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About Improve Handwashing & Privacy…"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "מידע בנושא ״שטיפת ידיים״ ופרטיות…"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "손씻기 향상 및 개인정보 보호에 관하여…"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mengenai Tingkatkan Cuci Tangan & Privasi…"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tietoja: Paranna Käsienpesua ja tietosuoja…"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El Yıkama’yı İyileştir ve Gizlilik Hakkında…"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Over 'Verbeter Handen wassen' en privacy…"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Kézmosás továbbfejlesztéséről és az adatvédelemről…"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Об улучшении функции «Мытье рук» и конфиденциальности…"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“Migliora ‘Igiene mani’” e privacy…"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Πληροφορίες για τη Βελτίωση του Πλυσίματος χεριών και το απόρρητο…"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de Mejorar lavado de manos y la privacidad…"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sobre la millora del rentat de mans i la privacitat…"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حول تحسين غسل اليدين والخصوصية…"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "關於改進洗手與隱私權⋯"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Améliorer « Se laver les mains » et confidentialité…"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om Förbättra Handtvätt och integritet…"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om Forbedre håndvask og personvern…"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "हाथ धोना बेहतर बनाएँ और गोपनीयता परिचय…"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om Gør Håndvask bedre og anonymitet…"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About Improve Handwashing & Privacy…"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ulepszanie (Mycie rąk) i prywatność…"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "關於改進洗手與私隱⋯"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เกี่ยวกับการปรับปรุงการล้างมือและความเป็นส่วนตัว…"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "关于改进洗手与隐私…"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apie „Rankų plovimo“ tobulinimą“ ir privatumą…"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About Improve Handwashing & Privacy…"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Perihal Tingkatkan Mencuci Tangan & Privasi…"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O vylepšování funkce Mytí rukou a soukromí…"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O vylepšovaní Umývania rúk a súkromí…"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de Mejorar lavado de manos y la privacidad…"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "За подобряване на Миене на ръце и поверителност…"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Več o izboljšanju funkcije Umivanje rok in zasebnosti …"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About Improve Handwashing & Privacy…"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Über „Händewaschen verbessern“ & Datenschutz…"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cải tiến Rửa tay & Quyền riêng tư…"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Despre Îmbunătățire Spălat pe mâini și intimitate…"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de “Mejorar el lavado de manos” y la privacidad…"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Қол жуу және құпиялылықты жақсарту туралы ақпарат…"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Améliorer Lavage des mains et confidentialité…"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Про Покращення Миття рук і приватність…"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sobre Melhorar Lavar as Mãos e Privacidade…"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“手洗いの改善”とプライバシーについて…"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de Melhorar Lavar as mãos e Privacidade…"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Više o poboljšanju Pranja ruku i privatnosti…"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

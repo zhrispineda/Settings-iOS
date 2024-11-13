@@ -1,0 +1,1381 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "FOOTER_TEXT": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "If you opt in to Improve Assistive Voice Features, Apple will collect the audio and transcripts of your interactions with assistive voice features such as Vocal Shortcuts and Voice Control. Apple will collect additional information, such as whether you are using an iPhone or AirPods for audio input, the features you are using, and device and operating system specifications.\n\nThe data collected is associated with random, rotating device-generated identifiers and is not tied to your Apple Account. A subset of your interactions may be reviewed by graders to analyse and improve the accuracy and performance of assistive voice features. Only Apple employees, subject to strict confidentiality obligations, are able to access audio interactions.\n\nApple will use the information collected to develop and improve Vocal Shortcuts, Voice Control and similar accessibility features, as well as to improve accessibility across other Apple features, such as Siri. Your interactions may be retained and used for up to two years. A subset of interaction data that has been graded may be kept beyond two years for ongoing improvement of these products and features.\n\nYou can change your setting for Improve Assistive Voice Features at any time. To do so on your iOS, iPadOS or visionOS device, go to Settings > Privacy & Security > Analytics & Improvements, and tap to turn off Improve Assistive Voice Features. On Mac, go to System Settings > Privacy & Security > Analytics & Improvements, and click to turn off Improve Assistive Voice Features."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "אם בחרת להפעיל את ״שיפור מאפייני ׳קול מסייע׳״, Apple תאסוף את השמע ואת התמלולים של האינטראקציות שלך עם מאפייני הקול המסייע כגון ״קיצורים קוליים״ ו״שליטה קולית״. ‏Apple תאסוף מידע נוסף, כגון מידע שקובע אם קלט השמע שלך מועבר באמצעות iPhone או AirPods, מידע על המאפיינים שמשמשים אותך, ואת פרטי המכשיר ומערכת ההפעלה שלך.\n\nהמידע שנאסף מקושר למזהים אקראיים ומשתנים שנוצרים במכשיר, ואינו משויך לחשבון ה-Apple שלך. ייתכן שקבוצת משנה של האינטראקציות שלך תיבדק על ידי מדרגים כדי לנתח ולשפר את הדיוק והביצועים של מאפייני הקול המסייע. האנשים היחידים שניתנת להם גישה למידע על האינטראקציות הקוליות הם עובדי Apple הכפופים להגבלות מחמירות של שמירה על סודיות.\n\n‏Apple תשתמש במידע שנאסף כדי לפתח ולשפר את ״קיצורים קוליים״, ״קליטה קולית״ ומאפייני נגישות דומים, וגם כדי לשפר את הגדרות הנגישות במאפיינים אחרים של Apple, כגון Siri. מידע על האינטראקציות הקוליות עשוי להישמר ולשמש למשך תקופה של עד שנתיים. קבוצת משנה של נתוני האינטראקציות שדורגו עשויה להישמר מעבר לשנתיים לצורך שיפור מתמשך של מוצרים ומאפיינים אלה.\n\nניתן לשנות את ההגדרות של ״שיפור מאפייני ׳קול מסייע׳״ בכל עת. כדי לעשות זאת במכשיר ה-iOS, ‏iPadOS, או visionOS, יש לעבור אל ״הגדרות״ > ״פרטיות ואבטחה״ > ״נתונים ושיפורים״ ולהקיש לכיבוי ״שיפור מאפייני ׳קול מסייע׳״. ב-Mac יש לעבור ל״הגדרות המערכת״ > ״פרטיות ואבטחה״ > ״נתונים ושיפורים״ וללחוץ לכיבוי ״שיפור מאפייני ׳קול מסייע׳״."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "보조 음성 기능 향상을 선택한 경우, Apple은 음성 단축어 및 음성 명령과 같은 보조 음성 기능과 사용자가 상호 작용한 오디오 및 전사문을 수집합니다. Apple은 사용자가 오디오 입력에 iPhone 또는 AirPods을 사용하고 있는지 여부, 사용자가 사용 중인 기능, 기기 및 운영 체제 사양과 같은 추가 정보를 수집합니다.\n\n수집된 데이터는 기기에서 생성된 무작위 순환 식별자와 연계되며, 사용자의 Apple 계정과는 연계되지 않습니다. 보조 음성 기능의 정확성 및 성능을 분석하고 향상시키기 위해 평가자가 상호 작용의 일부를 검토할 수 있습니다. 강력한 보안 규율을 따라야 하는 Apple 직원만이 사용자가 상호 작용한 오디오에 접근할 수 있습니다.\n\nApple은 수집된 정보를 음성 단축어, 음성 명령 및 이와 유사한 손쉬운 사용 기능을 개발하고 향상하는 데 사용하고, Siri와 같은 기타 Apple 기능의 손쉬운 사용을 향상하는 목적으로 사용합니다. 사용자의 상호 작용 데이터는 최대 2년 동안 보관되어 사용될 수 있습니다. 등급이 매겨진 상호 작용 데이터의 일부는 이러한 제품 및 기능의 지속적인 향상을 위해 2년 이상 보관될 수 있습니다.\n\n보조 음성 기능 향상에 관한 설정은 언제든지 변경할 수 있습니다. iOS, iPadOS 또는 visionOS에서 이렇게 하려면 설정 > 개인정보 보호 및 보안 > 분석 및 향상으로 이동한 다음 보조 음성 기능 향상을 탭하여 끄십시오. Mac에서는 시스템 설정 > 개인정보 보호 및 보안 > 분석 및 향상으로 이동한 다음, 보조 음성 기능 향상을 클릭하여 끄십시오."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jika Anda memilih Tingkatkan Fitur Suara Bantuan, Apple akan mengumpulkan audio dan transkrip interaksi Anda dengan fitur suara bantuan seperti Pintasan Suara dan Kontrol Suara. Apple akan mengumpulkan informasi tambahan, seperti apakah Anda menggunakan iPhone atau AirPods untuk input audio, fitur yang Anda gunakan, dan spesifikasi perangkat serta sistem operasi.\n\nData yang dikumpulkan dikaitkan dengan pengenal buatan perangkat yang acak serta dirotasi dan tidak dikaitkan dengan Akun Apple Anda. Subset interaksi Anda dapat ditinjau oleh penilai untuk menganalisis dan meningkatkan akurasi serta kinerja fitur suara bantuan. Hanya karyawan Apple, yang tunduk pada kewajiban kerahasiaan ketat, yang dapat mengakses interaksi audio.\n\nApple akan menggunakan informasi yang dikumpulkan untuk mengembangkan dan meningkatkan Pintasan Suara, Kontrol Suara, dan fitur aksesibilitas serupa, serta untuk meningkatkan aksesibilitas di semua fitur Apple lainnya, seperti Siri. Interaksi Anda dapat disimpan dan digunakan selama maksimum dua tahun. Subset data interaksi yang telah dinilai dapat disimpan selama lebih dari dua tahun untuk proses peningkatan produk dan fitur ini.\n\nAnda dapat mengubah pengaturan untuk Tingkatkan Fitur Suara Bantuan kapan pun. Untuk melakukannya di perangkat iOS, iPadOS, atau visionOS, buka Pengaturan > Privasi & Keamanan > Analisis & Peningkatan, dan ketuk untuk mematikan Tingkatkan Fitur Suara Bantuan. Di Mac, buka Pengaturan Sistem > Privasi & Keamanan > Analisis & Peningkatan, dan klik untuk mematikan Tingkatkan Fitur Suara Bantuan."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jos suostut auttamaan ääniapuominaisuuksien parantamisessa, Apple kerää ääniapuominaisuuksien, kuten Äänioikoteiden ja Ääniohjauksen, käyttötapahtumien äänen ja tekstin. Apple kerää lisätietoja, kuten käytätkö äänen syöttöön iPhonea vai AirPods-kuulokkeita, mitä ominaisuuksia käytät sekä laitteen ja käyttöjärjestelmän tekniset tiedot.\n\nKerätyt tiedot yhdistetään laitteen satunnaisesti luomiin, kierrätettyihin tunnisteisiin, eikä niitä yhdistetä Apple-tiliisi. Arvioijat voivat tutkia joitakin käyttötapahtumatietoja ääniaputoimintojen tarkkuuden ja suorituskyvyn analysoimiseksi ja parantamiseksi. Vain tarkkojen vaitiolosääntöjen alaiset Applen työntekijät voivat käyttää äänikäyttötapahtumia.\n\nApple käyttää kerättyjä tietoja Äänioikoteiden, Ääniohjauksen ja muiden vastaavien käyttöapuominaisuuksien kehittämiseen ja parantamiseen sekä muiden Apple-toimintojen, kuten Sirin, saavutettavuuden parantamiseen. Käyttötapahtumia voidaan säilyttää ja käyttää enintään kahden vuoden ajan. Niitä käyttötapahtumatietoja, jotka on arvioitu, voidaan säilyttää yli kaksi vuotta näiden tuotteiden ja ominaisuuksien jatkuvaan parantamiseen.\n\nVoit muuttaa Paranna ääniapuominaisuuksia -toiminnon asetuksia milloin tahansa. Tee näin iOS-, iPadOS- tai visionOS-laitteessa valitsemalla Asetukset > Tietosuoja ja suojaus > ”Analyysi ja parannukset” ja napauttamalla ”Paranna ääniapuominaisuuksia” pois päältä. Valitse Macissa Järjestelmäasetukset > Tietosuoja ja suojaus > ”Analyysi ja parannukset” ja klikkaa ”Paranna ääniapuominaisuuksia” pois päältä."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yardımcı Ses Özelliklerini İyileştir’i seçerseniz Apple, Vokal Kestirmeleri ve Sesle Denetim gibi yardımcı ses özellikleriyle etkileşimlerinizin seslerini ve dökümlerini toplar. Apple, ses girişi için iPhone veya AirPods kullanıp kullanmadığınız, kullandığınız özellikler, aygıt ve işletim sistemi özellikleri gibi ek bilgileri toplar.\n\nToplanan veriler; aygıt tarafından oluşturulan ve dönüşümlü kullanılan rasgele tanıtıcılarla ilişkilendirilir ve Apple Hesabı’nıza bağlanmaz. Yardımcı ses özelliklerinin doğruluğunu ve performansını incelemek ve artırmak için etkileşimlerinizin bir alt kümesi değerlendirenler tarafından gözden geçirilebilir. Yalnızca sıkı gizlilik yükümlülüklerine tabi Apple çalışanları sesli etkileşimlere erişebilir.\n\nApple, toplanan bu bilgileri Vokal Kestirmeleri, Sesle Denetim ve benzer erişilebilirlik özelliklerini geliştirmenin ve iyileştirmenin yanı sıra Siri gibi diğer Apple özelliklerinde erişilebilirliği iyileştirmek için de kullanır. Etkileşimleriniz en fazla iki yıla kadar tutulabilir ve kullanılabilir. Değerlendirilmiş etkileşim verilerinin bir alt kümesi, bu ürünlerin ve özelliklerin sürekli iyileştirilmesi için iki yıldan fazla tutulabilir.\n\nİstediğiniz zaman Yardımcı Ses Özelliklerini İyileştir ayarınızı değiştirebilirsiniz. iOS, iPadOS veya visionOS aygıtınızda bunu yapmak için Ayarlar > Gizlilik ve Güvenlik > Analizler ve İyileştirmeler bölümüne gidin ve Yardımcı Ses Özelliklerini İyileştir’i kapatmak için dokunun. Mac’te Sistem Ayarları > Gizlilik ve Güvenlik > Analizler ve İyileştirmeler bölümüne gidin ve Yardımcı Ses Özelliklerini İyileştir’i kapatmak için tıklayın."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Als je instemt met 'Verbeter Assistive Voice-functies', verzamelt Apple de audio en transcripten van je interacties met Assistive Voice-functies, zoals spraakopdrachten en stembediening. Apple verzamelt aanvullende informatie, bijvoorbeeld of je een iPhone of AirPods gebruikt voor audio-invoer, de functies die je gebruikt en de specificaties van je apparaat en besturingssysteem.\n\nDe verzamelde gegevens zijn gekoppeld aan willekeurige, roterende door het apparaat gegenereerde ID's, maar ze zijn niet gekoppeld aan je Apple Account. Een subset van je interacties kan worden beoordeeld om de nauwkeurigheid en prestaties van Assistive Voice-functies te analyseren en te verbeteren. Alleen werknemers van Apple, voor wie strikte vertrouwelijkheidsvoorschriften gelden, hebben toegang tot je audio-interacties.\n\nApple gebruikt de verzamelde informatie om spraakopdrachten, stembediening en soortgelijke toegankelijkheidsfuncties te ontwikkelen en te verbeteren en om toegankelijkheid in andere Apple functies, zoals Siri te verbeteren. Je interacties kunnen nog maximaal twee jaar worden bewaard en gebruikt. Een subset van beoordeelde interactiegegevens kan langer dan twee jaar worden bewaard voor de voortdurende verbetering van deze producten en functies.\n\nJe kunt je instelling voor 'Verbeter Assistive Voice-functies' op elk moment wijzigen. Hiervoor ga je op je iOS-, iPadOS- of visionOS-apparaat in Instellingen naar 'Privacy en beveiliging' > 'Analyse en verbeteringen' en tik je om 'Verbeter Assistive Voice-functies' uit te schakelen. Ga op je Mac in Systeeminstellingen naar 'Privacy en beveiliging' > 'Analyse en verbeteringen' en klik om 'Verbeter Assistive Voice-functies' uit te schakelen."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Amennyiben úgy dönt, hogy részt vesz a Kisegítő hangfunkciók továbbfejlesztésében, az Apple összegyűjti a kisegítő hangfunkciókkal – többek között a Hangparancsokkal és a Hangvezérléssel – végzett interakciói hanganyagát és átiratait. Az Apple további adatokat is gyűjt, például hogy Ön iPhone‑t vagy AirPodsot használ‑e a hangbevitelhez, milyen funkciókat használ, valamint mik az eszköz és az operációs rendszer specifikációi.\n\nAz összegyűjtött adatokhoz véletlenszerű és váltakozó eszköz által létrehozott azonosítók vannak rendelve, és ezek az adatok nincsenek az Ön Apple-fiókjához rendelve. Előfordulhat, hogy az interakciók egy részét értékelők áttekintik a kisegítő hangfunkciók pontosságának és teljesítményének elemzése és továbbfejlesztése céljából. Csak olyan Apple-munkavállalók férhetnek hozzá a hangműveletekhez, akikre szigorú titoktartási előírások vonatkoznak.\n\nAz Apple az összegyűjtött adatokat a Hangparancsok, a Hangvezérlés és a hasonló kisegítő funkciók fejlesztésére és továbbfejlesztésére, valamint más Apple-funkciók, például Siri akadálymentes használatának javítására fogja felhasználni. Előfordulhat, hogy az Ön interakciói legfeljebb két éven keresztül meg lesznek őrizve és fel lesznek használva. Elképzelhető, hogy az interakcióadatok értékelt része két éven túl is meg lesz tartva az ilyen termékek és funkciók folyamatos továbbfejlesztése céljából.\n\nA Kisegítő hangfunkciók továbbfejlesztésére vonatkozó beállításait bármikor módosíthatja. Ehhez iOS-, iPadOS- vagy visionOS-eszközén válassza a Beállítások > Adatvédelem és biztonság > Elemzések és fejlesztések (visionOS‑en: Settings > Privacy & Security > Analytics & Improvements) menüpontot, és koppintással kapcsolja ki a Kisegítő hangfunkciók továbbfejlesztése (visionOS‑en: Improve Assistive Voice Features) beállítást. Macen válassza a Rendszerbeállítások > Adatvédelem és biztonság > Elemzés és továbbfejlesztések menüpontot, majd kattintással kapcsolja ki a Kisegítő hangfunkciók továbbfejlesztése beállítást."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Если Вы согласитесь участвовать в улучшении ассистивных голосовых функций, Apple будет собирать аудио и расшифровки Ваших взаимодействий с ассистивными голосовыми функциями, такими как голосовые команды и голосовое управление. Apple также будет собирать другую информацию, например о том, используете ли Вы iPhone или AirPods для аудиовхода, какими функциями Вы пользуетесь и каковы характеристики Вашего устройства и операционной системы.\n\nСобираемые данные связываются со случайными меняющимися идентификаторами, сгенерированными на устройстве и не привязанными к Вашему Аккаунту Apple. Выборки из данных о Ваших взаимодействиях могут изучаться калибровщиками в целях анализа и повышения точности и эффективности ассистивных голосовых функций. Доступ к аудиозаписям Ваших взаимодействий есть только у сотрудников Apple, которые обязаны строго соблюдать конфиденциальность обрабатываемых ими данных.\n\nApple будет использовать собранную информацию для разработки и улучшения голосовых команд, голосового управления и схожих функций универсального доступа, а также для улучшения универсального доступа ко всем прочим функциям Apple, таким как Siri. Данные о Ваших взаимодействиях могут храниться и использоваться до двух лет. Выборки данных о Ваших взаимодействиях, которые оценивались специалистами, могут храниться дольше двух лет в целях дальнейшего улучшения соответствующих продуктов и функций.\n\nВы можете в любое время изменить настройку, выбранную Вами для улучшения ассистивных голосовых функций. Для этого на устройстве iOS, iPadOS или visionOS откройте «Настройки» > «Конфиденциальность и безопасность» > «Аналитика и улучшения» и касанием выключите параметр «Улучшение ассистивных голосовых функций». На Mac откройте «Системные настройки» > «Конфиденциальность и безопасность» > «Аналитика и улучшения» и снимите флажок «Улучшение ассистивных голосовых функций»."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se accetti di migliorare le funzionalità di assistenza vocale, Apple raccoglierà l’audio e le trascrizioni delle tue interazioni con queste funzionalità, ad esempio “Abbreviazioni vocali” e “Controllo vocale”. Apple raccoglierà ulteriori informazioni, ad esempio se usi un iPhone o gli AirPods per l’input audio, le funzionalità che stai utilizzando e le specifiche relative ai dispositivi e ai sistemi operativi.\n\nI dati raccolti sono associati a identificativi casuali a rotazione generati dal dispositivo che non sono collegati al tuo Apple Account. Un sottoinsieme delle tue interazioni potrebbe essere rivisto dagli analisti per valutare e migliorare la precisione e le prestazioni delle funzionalità di assistenza vocale. Solamente i dipendenti Apple, nel rispetto di severi obblighi di riservatezza, sono in grado di accedere alle interazioni audio.\n\nLe informazioni raccolte verranno utilizzate per sviluppare e migliorare “Abbreviazioni vocali”, “Controllo vocale” e altre funzionalità simili di accessibilità, anche relative ad altre funzioni di Apple, ad esempio Siri. Le interazioni possono essere conservate e utilizzate per un massimo di due anni. Un sottoinsieme di dati sulle interazioni che sono stati analizzati potrebbe essere conservato per più di due anni al fine di consentire il miglioramento continuo di questi prodotti e funzionalità.\n\nPuoi modificare l’impostazione per “Migliora le funzionalità di assistenza vocale” in qualsiasi momento. Per farlo, sui dispositivi iOS, iPadOS o visionOS, vai in Impostazioni > Privacy e sicurezza > Analisi e miglioramenti, quindi disattiva “Migliora le funzionalità di assistenza vocale”. Sul Mac, vai in Impostazioni di Sistema > Privacy e sicurezza > Analisi e miglioramenti, quindi disattiva “Migliora le funzionalità di assistenza vocale”."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si participas en Mejorar las funciones de asistencia con voz, Apple recopilará el audio y las transacciones de tus interacciones con ellas, como las funciones rápidas de voz y el control por voz. Apple recopilará información adicional —como si estás usando iPhone o AirPods como entrada de audio—, las funciones que usas y las especificaciones del dispositivo y del sistema operativo.\n\nLos datos recopilados están asociados con identificadores dinámicos generados de forma aleatoria que no están vinculados con tu cuenta de Apple. Se podría revisar un subconjunto de tus interacciones para analizar y mejorar la precisión y el rendimiento de las funciones de asistencia con voz. Solamente empleados de Apple, sujetos a obligaciones de estricta confidencialidad, pueden acceder a las interacciones con audio.\n\nApple utilizará la información recopilada para desarrollar y mejorar funciones rápidas de voz, control con voz y otras funciones similares de accesibilidad; así como para mejorar la accesibilidad en otros servicios de Apple como Siri. Tus interacciones podrían retenerse y conservarse hasta por dos años. Un subconjunto de datos de interacción examinado podría conservarse por más de dos años, sin el identificador aleatorio, para la mejora continua de estos productos y funciones.\n\nPuedes cambiar la configuración de Mejorar asistencia con voz cuando quieras. Para ello, desactiva Mejorar las funciones de asistencia con voz en Configuración > Privacidad y seguridad > Análisis y mejoras en tu dispositivo iOS, iPadOS o visionOS. En una Mac, desactiva Mejorar las funciones de asistencia con voz en Configuración del Sistema > Privacidad y seguridad > Análisis y mejoras."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Αν επιλέξετε να συμμετάσχετε στη Βελτίωση του Φωνητικού βοηθού, η Apple θα συλλέξει τον ήχο και τις απομαγνητοφωνήσεις των αλληλεπιδράσεών σας με τις δυνατότητες Φωνητικού βοηθού, όπως οι Φωνητικές συντομεύσεις και ο Φωνητικός έλεγχος. Η Apple θα συλλέγει πρόσθετες πληροφορίες, όπως αν χρησιμοποιείτε iPhone ή AirPods για είσοδο ήχου, τις δυνατότητες που χρησιμοποιείτε και τις προδιαγραφές της συσκευής και του λειτουργικού συστήματος.\n\nΤα δεδομένα που συλλέγονται συσχετίζονται με τυχαία, εναλλασσόμενα αναγνωριστικά που δημιουργούνται στη συσκευή σας και δεν συσχετίζονται με τον λογαριασμό Apple σας. Ένα υποσύνολο των αλληλεπιδράσεών σας ενδέχεται να ελεγχθεί από τους βαθμολογητές για να αναλύσουν και να βελτιώσουν την ακρίβεια και την απόδοση των δυνατοτήτων Φωνητικού βοηθού. Μόνο οι υπάλληλοι της Apple, που υπόκεινται σε αυστηρές δεσμεύσεις εμπιστευτικότητας, μπορούν να προσπελάσουν τις ηχητικές αλληλεπιδράσεις σας.\n\nΗ Apple θα χρησιμοποιήσει τις συλλεγμένες πληροφορίες για ανάπτυξη και βελτίωση των Φωνητικών συντομεύσεων, του Φωνητικού ελέγχου και παρόμοιων δυνατοτήτων προσβασιμότητας, καθώς και για βελτίωση της προσβασιμότητας σε άλλες δυνατότητες της Apple, όπως το Siri. Οι αλληλεπιδράσεις σας ενδέχεται να διατηρηθούν και να χρησιμοποιηθούν για έως δύο έτη. Ένα υποσύνολο των βαθμολογημένων δεδομένων αλληλεπιδράσεων ενδέχεται να διατηρηθεί πέρα από δύο έτη με σκοπό τη συνεχή βελτίωση των εν λόγω προϊόντων και δυνατοτήτων.\n\nΜπορείτε να αλλάξετε τη ρύθμιση για τη Βελτίωση του Φωνητικού βοηθού ανά πάσα στιγμή. Για να το κάνετε αυτό σε συσκευή iOS, iPadOS ή visionOS, μεταβείτε στις «Ρυθμίσεις» > «Απόρρητο και ασφάλεια» > «Ανάλυση και βελτιώσεις», και αγγίξτε για απενεργοποίηση της δυνατότητας «Βελτίωση του Φωνητικού βοηθού». Σε Mac, μεταβείτε στις «Ρυθμίσεις» > «Απόρρητο και ασφάλεια» > «Ανάλυση και βελτιώσεις», και κάντε κλικ για απενεργοποίηση της δυνατότητας «Βελτίωση του Φωνητικού βοηθού»."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si vous acceptez d’améliorer les fonctionnalités d’assistance de la voix, Apple recueillera le contenu audio et les transcriptions de vos interactions avec les fonctionnalités d’assistance de la voix, comme les raccourcis vocaux et la commande vocale. Apple recueillera des informations supplémentaires, notamment celles qui permettent de déterminer si vous utilisez un iPhone ou des AirPod Pro pour l’entrée audio, les fonctionnalités que vous utilisez ainsi que les caractéristiques de l’appareil et du système d’exploitation.\n\nLes données recueillies sont associées à des identifiants aléatoires, dynamiques et générés par l’appareil. Ces identifiants ne sont pas associés à votre compte Apple. Un sous-ensemble de vos interactions pourrait être révisé pour analyser et améliorer la précision et les performances des fonctionnalités d’assistance de la voix. Seuls les employés d’Apple soumis à des obligations strictes de confidentialité ont accès aux interactions audio.\n\nApple utilisera les informations recueillies pour développer et améliorer les raccourcis vocaux, la commande vocale et les fonctionnalités d’accessibilité similaires, ainsi que pour améliorer l’accessibilité des fonctionnalités Apple, comme Siri. Vos interactions peuvent être conservées et utilisées pendant deux ans au maximum. Les sous-ensembles de données d’interaction qui ont été analysés peuvent être conservés pendant plus de deux ans aux fins de l’amélioration continue des produits et fonctionnalités concernés.\n\nVous pouvez modifier le réglage « Améliorer les fonctionnalités d’assistance de la voix » à tout moment. Pour ce faire sur votre appareil iOS, iPadOS ou visionOS, accédez à Réglages > Confidentialité et sécurité > Analyse et améliorations, puis désactivez « Améliorer les fonctionnalités d’assistance de la voix ». Sur Mac, accédez à Réglages système > Confidentialité et sécurité > Analyse et améliorations, puis désactivez « Améliorer les fonctionnalités d’assistance de la voix »."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si actives la millora de les funcions de suport per a la veu, Apple recopilarà l’àudio i les transcripcions de les interaccions amb les funcions d’aquest tipus, com ara les dreceres de veu i el control per veu. Apple també recopilarà altres dades, per exemple, si fas servir un iPhone o uns AirPods per a la sortida d’àudio, les funcions que utilitzes, i les especificacions del dispositiu i del sistema operatiu.\n\nLes dades recopilades s’associen a identificadors aleatoris que es generen al dispositiu i que canvien cada cert temps, però no es vinculen al compte d’Apple. Pot ser que el personal d’anàlisi revisi algunes de les interaccions per examinar i millorar la precisió i el rendiment de les funcions de suport per a la veu. Només els treballadors d’Apple, que estan subjectes a obligacions de confidencialitat molt estrictes, poden accedir a les interaccions d’àudio.\n\nApple farà servir la informació recopilada per desenvolupar i millorar les dreceres de veu, el control de veu i altres funcions similars relacionades amb l’accessibilitat, però també per millorar l’accessibilitat general de la resta de funcions d’Apple, com és el cas de Siri. Les interaccions es poden conservar i utilitzar durant un màxim de dos anys. És possible que una part de les dades de les interaccions que s’hagin analitzat es conservin durant més de dos anys per continuar millorant els productes i les funcions pertinents.\n\nPots canviar la configuració de la millora de les funcions de suport per a la veu en qualsevol moment. Per fer‑ho, en un dispositiu iOS, iPadOS o visionOS, ves a l’app Configuració > Privacitat i seguretat > Anàlisi i millores i, tot seguit, desactiva la millora de les funcions de suport per a la veu. En un Mac, ves a l’app Configuració del Sistema > Privacitat i seguretat > Anàlisi i millores i, tot seguit, fes clic per desactivar la millora de les funcions de suport per a la veu."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "如果你選擇參與改進「輔助語音功能」，Apple會收集你與輔助語音功能（如「語音捷徑」和「語音控制」）互動的音訊和逐字稿。Apple會收集額外的資訊，例如你是否使用iPhone或AirPods進行音訊輸入、你使用的功能以及裝置和作業系統規格。\n\n收集的資料會與裝置產生的隨機循環識別碼相關聯，不會與你的「Apple帳號」綁定。部分互動可能會由評分員審查，以分析和改進輔助語音功能的準確性和執行效能。只有受嚴格保密義務約束的Apple員工才能取用音訊互動。\n\nApple會使用收集的資料來開發和改進「語音捷徑」、「語音控制」和類似的輔助使用功能，以及改進其他Apple功能（例如Siri）的輔助使用功能。你的互動資料可能會被保留並使用長達兩年。一部分經過評分的互動資料可能會保留超過兩年，以持續改進這些產品和功能。\n\n你可以隨時更改「改進輔助語音功能」的設定。要在iOS、iPadOS或visionOS裝置上執行此操作，請前往「設定」>「隱私權與安全性」>「分析與改進功能」，然後點一下來關閉「改進輔助語音功能」。在Mac上，請前往「系統設定」>「隱私權與安全性」>「分析與改進功能」，然後按一下來關閉「改進輔助語音功能」。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "如果你選擇參與改進輔助語音功能，Apple將會收集你與輔助語音功能（例如「語音捷徑」和「語音控制」）的互動的音訊和轉寫。Apple將會收集其他資料，例如你是否使用iPhone或AirPods進行語音輸入、你正在使用的功能以及裝置和操作系統規格。\n\n所收集的資料與隨機生成的輪流裝置識別碼相關聯，並且不與連繫至你的Apple帳户。評分員可能會審查互動子集，以分析和改進輔助語音功能的準確性和性能。只有遵守嚴格保密義務的Apple員工，才能取用音訊互動。\n\nApple將會使用收集的資料以開發和改進「語音捷徑」、「語音控制」和類似的輔助功能，以及改進其他Apple功能（例如Siri）的輔助功能。你的互動可能會被保留並使用最多兩年。已經進行評分的互動資料子集可能會被保留超過兩年，用於持續改進這些產品和功能。\n\n你可以隨時更改「改進輔助語音功能」的設定。如要iOS、iPadOS或visionOS裝置上這樣做，請前往「設定」>「私隱與保安」>「分析與改進」，然後點一下來關閉「改進輔助語音功能」。在Mac上，請前往「系統設定」>「私隱與保安」>「分析與改進」，然後按一下來關閉「改進輔助語音功能」。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om du väljer att delta i Förbättra assisterande röstfunktioner kommer Apple att samla in ljudet och transkriberingar av dina interaktioner med assisterande röstfunktioner som röstgenvägar och röststyrning. Apple samlar in ytterligare information, bland annat om huruvida du använder en iPhone eller AirPods för ljudinmatning, funktionerna du använder samt specifikationer för enheten och operativsystemet.\n\nDe data som samlas in associeras med slumpmässiga, roterande ID:n som genereras på enheten och är inte kopplade till ditt Apple‑konto. En delmängd av dina interaktioner kan granskas av utvärderare i syfte att analysera och förbättra korrekthet och prestanda för assisterande röstfunktioner. Endast Apple-anställda, som arbetar under strikta konfidentialitetskrav, har tillgång till ljudinteraktioner.\n\nApple använder informationen som samlas in till att utveckla och förbättra röstgenvägar, röststyrning och liknande hjälpmedelsfunktioner samt förbättra tillgängligheten i andra Apple-funktioner, bland annat Siri. Dina interaktioner kan lagras och användas i upp till två år. En delmängd av interaktionsdata som har utvärderats kan behållas längre tid än två år för pågående förbättringar av dessa produkter och funktioner.\n\nDu kan när som helst ändra inställning för Förbättra assisterande röstfunktioner. Du gör detta på en iOS-, iPadOS- eller visionOS-enhet genom att öppna Inställningar > Integritet och säkerhet > Analys och förbättringar och trycka för att stänga av Förbättra assisterande röstfunktioner. På en Mac öppnar du Systeminställningar > Integritet och säkerhet > Analys och förbättringar och klickar för att stänga av Förbättra assisterande röstfunktioner."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hvis du velger å bidra til Forbedre funksjoner for assistert tale, vil Apple samle inn lydopptak og avskrifter av interaksjonene dine med funksjoner for assistert tale, som Stemmesnarveier eller Talekontroll. Apple vil samle inn ytterligere informasjon, som hvorvidt lyden spilles av fra iPhone eller via AirPods, funksjonene du bruker og spesifikasjonene til enheten og operativsystemet.\n\nDe innsamlede dataene knyttes til tilfeldig genererte identifikatorer på enheten og kan ikke spores tilbake til Apple-kontoen din. Et utvalg av interaksjonene dine kan bli gjennomgått av graderere for å analysere og forbedre nøyaktigheten av og ytelsen til funksjonene for assistert tale. Kun Apple-ansatte som er underlagt strenge konfidensialitets­forpliktelser, har tilgang til opptak av interaksjonene.\n\nApple vil bruke den innsamlede informasjonen til å utvikle og forbedre Stemmesnarveier, Talekontroll og lignende tilgjengelighetsfunksjoner, i tillegg til å forbedre tilgjengeligheten for andre Apple-funksjoner, for eksempel Siri. Interaksjonene dine kan beholdes og brukes i opptil to år. Et utvalg av de graderte interaksjonsdataene kan bli beholdt i mer enn to år for kontinuerlige forbedringer av disse produktene og funksjonene.\n\nDu kan når som helst endre innstillingene for Forbedre funksjoner for assistert tale. På en iOS-, iPadOS- eller visionOS-enhet gjør du det ved å gå til Innstillinger > Personvern og sikkerhet > Analyse og forbedringer og trykker for å slå av Forbedre funksjoner for assistert tale. På Mac gjør du det ved å gå til Systeminnstillinger > Personvern og sikkerhet > Analyse og forbedringer og klikker for å slå av Forbedre funksjoner for assistert tale."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "यदि आप असिस्टिव वॉइस फ़ीचर को बेहतर बनाने का विकल्प चुनते हैं, तो Apple वोकल शॉर्टकट और वॉइस कंट्रोल जैसे असिस्टिव वॉइस फ़ीचर के साथ आपके इंटरऐक्शन के ऑडियो और ट्रांसक्रिप्ट एकत्र करेगा। Apple अतिरिक्त जानकारी एकत्र करेगा, जैसे कि आप ऑडियो इनपुट के लिए iPhone या AirPods का उपयोग कर रहे हैं या नहीं, आप किन फ़ीचर का उपयोग कर रहे हैं और डिवाइस और ऑपरेटिंग सिस्टम विशिष्टताओं की जानकारी।\n\nएकत्र किया गया डेटा रैंडम, रोटेट होने वाले डिवाइस जनरेट किए गए आइडेंटिफ़ायर से संबद्ध होता है और आपके Apple खाते से जुड़ा नहीं होता है। असिस्टिव वॉइस फ़ीचर की सटीकता और प्रदर्शन का विश्लेषण और सुधार करने के लिए ग्रेडर द्वारा आपकी बातचीत के एक सबसेट की समीक्षा की जा सकती है। केवल Apple कर्मचारी ही कठोर गोपनीयता बाध्यताओं के अधीन आपके ऑडियो इंटरएक्शन को ऐक्सेस कर सकते हैं।\n\nApple द्वारा एकत्रित की गई जानकारी का उपयोग वोकल शॉर्टकट, वॉइस कंट्रोल और इसी तरह के ऐक्सेसिबिलिटी फ़ीचर को डेवलप करने और बेहतर बनाने के लिए करेगा, साथ ही Siri जैसे अन्य Apple फ़ीचर में ऐक्सेसिबिलिटी में सुधार करने के लिए भी करेगा। आपकी बातचीत को दो वर्षों तक बनाए रखा और उपयोग किया जा सकता है। इन उत्पादों और फ़ीचर के निरंतर सुधार के लिए इंटरऐक्शन डेटा का एक उपसमूह जिसे ग्रेड में बाँटा गया है, दो साल से अधिक समय तक रखा जा सकता है।\n\nआप “असिस्टिव वॉइस फ़ीचर बेहतर बनाएँ” के लिए कभी भी अपनी सेटिंग्ज़ बदल सकते हैं। ऐसा करने के लिए अपने iOS, iPadOS या visionOS डिवाइस पर सेटिंग्ज़ > गोपनीयता और सुरक्षा > ऐनालिटिक्स और सुधार पर जाएँ और “असिस्टिव वॉइस फ़ीचर बेहतर बनाएँ” को बंद करने के लिए टैप करें। Mac पर, सिस्टम सेटिंग्ज़ > गोपनीयता और सुरक्षा > ऐनालिटिक्स और सुधार पर जाएँ और “असिस्टिव वॉइस फ़ीचर बेहतर बनाएँ” को बंद करने के लिए क्लिक करें।"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hvis du vælger at dele oplysninger med Forbedring af stemmefunktioner i Tilgængelighed, indsamler Apple lyd og transskriptioner fra dine interaktioner med stemmefunktioner, f.eks. Stemmegenveje og Stemmekontrol. Apple indsamler yderligere oplysninger, f.eks. om du bruger en iPhone eller AirPods til indgående lyd, funktionerne, du bruger, og specifikationer for enhed og operativsystem.\n\nDe indsamlede data knyttes til tilfældige, skiftende id’er, der genereres på enheden, og ikke til din Apple‑konto. Et udvalg af dine interaktioner gennemgås muligvis af evaluatorer for at analysere og forbedre nøjagtigheden og ydeevnen af stemmefunktioner i Tilgængelighed. Det er kun Apple-medarbejdere, som er underlagt tavshedspligt, der kan få adgang til lydinteraktioner.\n\nApple bruger de indsamlede oplysninger til at udvikle og forbedre Stemmegenveje, Stemmekontrol og lignende tilgængelighedsfunktioner samt til at forbedre tilgængeligheden i andre Apple-funktioner, f.eks. Siri. Dine interaktioner opbevares og bruges muligvis i op til to år. Et udvalg af interaktionsdata, der er blevet evalueret, opbevares muligvis længere end to år med henblik på løbende forbedring af disse produkter og funktioner.\n\nDu kan altid ændre din indstilling til Forbedring af stemmefunktioner i Tilgængelighed. Det gør du ved at gå til Indstillinger > Anonymitet & sikkerhed > Analyse og forbedringer på din iOS-, iPadOS- eller visionOS-enhed og trykke for at slå Forbedring af stemmefunktioner i Tilgængelighed fra. På Mac skal du gå til Systemindstillinger > Anonymitet & sikkerhed > Analyse og forbedringer og klikke for at slå Forbedring af stemmefunktioner i Tilgængelighed fra."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "If you opt in to Improve Assistive Voice Features, Apple will collect the audio and transcripts of your interactions with assistive voice features such as Vocal Shortcuts and Voice Control. Apple will collect additional information, such as whether you are using an iPhone or AirPods for audio input, the features you are using, and device and operating system specifications.\n\nThe data collected is associated with random, rotating device-generated identifiers and is not tied to your Apple Account. A subset of your interactions may be reviewed by graders to analyze and improve the accuracy and performance of assistive voice features. Only Apple employees, subject to strict confidentiality obligations, are able to access audio interactions.\n\nApple will use the information collected to develop and improve Vocal Shortcuts, Voice Control, and similar accessibility features, as well as to improve accessibility across other Apple features, such as Siri. Your interactions may be retained and used for up to two years. A subset of interaction data that has been graded may be kept beyond two years for ongoing improvement of these products and features.\n\nYou can change your setting for Improve Assistive Voice Features at any time. To do so on your iOS, iPadOS, or visionOS device, go to Settings > Privacy & Security > Analytics & Improvements, and tap to turn off Improve Assistive Voice Features. On Mac, go to System Settings > Privacy & Security > Analytics & Improvements, and click to turn off Improve Assistive Voice Features."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jeśli zdecydujesz się pomagać w ulepszaniu funkcji wspomagających dotyczących głosu, Apple będzie gromadzić nagrania audio i transkrypcje Twoich interakcji z tymi funkcjami (np. Skróty głosowe i Sterowanie głosowe). Apple będzie gromadzić dodatkowe informacje, na przykład o użyciu iPhone’a lub AirPods jako wejścia dźwięku, wykorzystywanych funkcjach oraz specyfikacjach urządzeń i systemów operacyjnych.\n\nGromadzone dane są wiązane z losowymi, regularnie rotowanymi, generowanymi na urządzeniach identyfikatorami. Nie są w żaden sposób wiązane z Twoim kontem Apple. Podzbiór Twoich interakcji może zostać sprawdzony przez klasyfikatorów w celu zanalizowania i poprawienia dokładności i wydajności funkcji wspomagających dotyczących głosu. Tylko pracownicy Apple, ściśle zobowiązani do zachowania poufności, będą mieli dostęp do Twoich interakcji głosowych.\n\nApple będzie wykorzystywać zgromadzone informacje do opracowywania i udoskonalania funkcji Skróty głosowe, Sterowanie głosowe i podobnych, a także udoskonalania obsługi dostępności w innych produktach Apple, na przykład Siri. Zapisy Twoich interakcji mogą być przechowywane i wykorzystywane przez maksymalnie dwa lata. Podzbiór danych interakcji, który został sklasyfikowany, może być przechowywany przez dłuższy czas na potrzeby ciągłego udoskonalania tych produktów i funkcji.\n\nMożesz zmienić swoje ustawienia funkcji Ulepszanie (Funkcje wspomagające dotyczące głosu) w dowolnym momencie. W tym celu na urządzeniu iOS, iPadOS lub visionOS przejdź do Ustawień, stuknij w Prywatność i ochrona > Analizy i udoskonalenia, a następnie wyłącz stuknięciem opcję Ulepszanie (Funkcje wspomagające dotyczące głosu). Na Macu przejdź do Ustawień systemowych, kliknij w Prywatność i ochrona > Analizy i udoskonalenia, a następnie wyłącz kliknięciem opcję Ulepszanie (Funkcje wspomagające dotyczące głosu)."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إذا اشتركت في تحسين ميزات الصوت المساعدة، فستقوم Apple بجمع إدخال الصوت والنصوص من تفاعلاتك مع ميزات الصوت المساعد مثل الاختصارات الصوتية والتحكم بالصوت. ستجمع Apple معلومات إضافية، مثل ما إذا كنت تستخدم iPhone أو AirPods لإدخال الصوت، والميزات التي تستخدمها، ومواصفات الجهاز ونظام التشغيل.\n\nترتبط البيانات التي تم جمعها بمعرفات عشوائية متجددة يتم إنشاؤها بواسطة الجهاز ولا ترتبط بحساب Apple. قد تقوم أدوات التصنيف بمراجعة مجموعة فرعية من تفاعلاتك لتحليل دقة وأداء ميزات الصوت المساعدة وتحسينها. موظفو Apple هم فقط الذين يمكنهم الوصول إلى التفاعلات الصوتية، ويتم ذلك بموجب التزامات صارمة فيما يتعلق بالسرية.\n\nستستخدم Apple المعلومات التي تم جمعها لتطوير وتحسين الاختصارات الصوتية والتحكم بالصوت وميزات تسهيلات الاستخدام المشابهة، بالإضافة إلى تحسين تسهيلات الاستخدام في ميزات Apple الأخرى مثل Siri. قد يتم الاحتفاظ بتفاعلاتك واستخدامها لمدة تصل إلى عامين. ويمكن الاحتفاظ بالمجموعة الفرعية من بيانات التفاعل التي تم تصنيفها لما يزيد عن عامين بهدف التحسين المستمر للمنتجات والميزات.\n\nيمكنك تغيير إعداد \"تحسين ميزات الصوت المساعد\" في أي وقت. لتنفيذ ذلك على جهاز iOS، ‏iPadOS، أو visionOS، انتقل إلى الإعدادات > الخصوصية والأمن > التحليلات والتحسينات، واضغط لإيقاف تحسين الصوت المساعد. على Mac، انتقل إلى إعدادات النظام > الخصوصية والأمن > التحليلات والتحسينات، وانقر لإيقاف تحسين ميزات الصوت المساعد."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ถ้าคุณเลือกที่จะเข้าร่วมในการปรับปรุงคุณสมบัติเสียงช่วยเหลือ Apple จะเก็บรวบรวมเสียงและข้อความถอดเสียงของการโต้ตอบของคุณกับคุณสมบัติเสียงช่วยเหลือ เช่น คำสั่งลัดเสียงพูดและการสั่งการด้วยเสียง Apple จะเก็บรวบรวมข้อมูลเพิ่มเติม เช่น คุณใช้ iPhone หรือ AirPods สำหรับสัญญาณเสียงเข้าอยู่หรือไม่ คุณสมบัติที่คุณใช้อยู่ และข้อมูลจำเพาะของอุปกรณ์และระบบปฏิบัติการ\n\nข้อมูลที่เก็บรวบรวมจะถูกผูกกับข้อมูลจำเพาะที่อุปกรณ์สร้างขึ้นแบบสุ่มและใช้ซ้ำ แต่ไม่ผูกกับบัญชี Apple ของคุณ ชุดย่อยของการโต้ตอบของคุณอาจได้รับการตรวจสอบโดยผู้ให้คะแนนเพื่อวิเคราะห์และปรับปรุงความแม่นยำและประสิทธิภาพการทำงานของคุณสมบัติเสียงช่วยเหลือ พนักงานของ Apple เท่านั้นที่จะสามารถเข้าถึงการโต้ตอบด้วยเสียงได้ โดยจะมีพันธะในการรักษาความลับอย่างเข้มงวด\n\nApple จะใช้ข้อมูลที่เก็บรวบรวมเพื่อพัฒนาและปรับปรุงคำสั่งลัดเสียงพูด การสั่งการด้วยเสียง และคุณสมบัติการช่วยการเข้าถึงที่คล้ายกัน รวมถึงเพื่อปรับปรุงการช่วยการเข้าถึงสำหรับคุณสมบัติอื่นๆ ของ Apple เช่น Siri การโต้ตอบของคุณอาจถูกเก็บไว้และใช้งานได้นานสูงสุดสองปี ชุดย่อยของข้อมูลการโต้ตอบที่ได้รับการให้คะแนนอาจถูกเก็บไว้มากกว่าสองปีเพื่อปรับปรุงผลิตภัณฑ์และคุณสมบัติเหล่านี้อย่างต่อเนื่อง\n\nคุณสามารถเปลี่ยนการตั้งค่าของคุณสำหรับปรับปรุงคุณสมบัติเสียงช่วยเหลือได้ตลอดเวลา ในการทำเช่นนั้นบนอุปกรณ์ iOS, iPadOS หรือ visionOS ของคุณ ให้ไปที่การตั้งค่า > ความเป็นส่วนตัวและความปลอดภัย > การวิเคราะห์และการปรับปรุง แล้วแตะเพื่อปิดใช้ปรับปรุงคุณสมบัติเสียงช่วยเหลือ บน Mac ให้ไปที่การตั้งค่าระบบ > ความเป็นส่วนตัวและความปลอดภัย > การวิเคราะห์และการปรับปรุง แล้วคลิกเพื่อปิดใช้ปรับปรุงคุณสมบัติเสียงช่วยเหลือ"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "如果你选择参与“改进辅助语音功能”，Apple会收集你与“人声快捷指令”和“语音控制”等辅助语音功能交互的音频和转录文本。Apple会收集额外信息，例如你是使用iPhone还是AirPods作为音频输入，正在使用的功能以及设备和操作系统规格。\n\n收集的数据会关联设备端生成的随机轮替标识符，不会关联你的Apple账户。评分者可能会检查一部分交互数据以分析和提高辅助语音功能的准确性和性能。仅Apple员工在严格遵守保密义务的前提下才能访问音频交互数据。\n\nApple会将收集的信息用于开发和改进“人声快捷指令”、“语音控制”及类似辅助功能，以及改进Siri等其他Apple功能的可访问性。你的交互数据可能会被保留并使用最多两年时间。已评分的一部分交互数据可能会保留超过两年，以用于这些产品和功能的后续改进。\n\n你可以随时更改“改进辅助语音功能”设置。若要在iOS、iPadOS或visionOS设备上执行此操作，请前往“设置”>“隐私与安全性”>“分析与改进”，然后轻点以关闭“改进辅助语音功能”。在Mac上，前往“系统设置”>“隐私与安全性”>“分析与改进”，然后点按关闭“改进辅助语音功能”。"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jei sutiksite tobulinti pagalbio balso funkcijas, „Apple“ rinks sąveikos su pagalbinio balso funkcijomis, pavyzdžiui, „Balso sparčiosios komandos“ ir „Valdymas balsu“, garso įrašus ir transkripcijas. „Apple“ rinks papildomą informaciją, pavyzdžiui, ar garso įvestims naudojate „iPhone“ ar „AirPods“, kokias funkcijas naudojate, taip pat įrenginio ir operacinės sistemos specifikacijas.\n\nSurinkti duomenys yra susieti su atsitiktiniais rotuojamais ir įrenginio sugeneruojamais identifikatoriais ir nėra susieti su jūsų „Apple“ paskyra. Vertintojai gali peržiūrėti jūsų sąveikų poaibį, kad galėtų išanalizuoti ir patobulinti pagalbinio balso funkcijų tikslumą ir veikimą. Garso sąveikas gali pasiekti tik „Apple“ darbuotojai, kuriems taikomi griežti konfidencialumo reikalavimai.\n\nBendrovė „Apple“ naudos surinktą informaciją, kad galėtų vystyti ir tobulinti „Balso sparčiąsias komandas“, „Valdymą balsu“ ir panašias prieinamumo funkcijas, tiap pat gerinti kitų „Apple“ funkcijų, pavyzdžiui, „Siri“, prieinamumą. Jūsų sąveikos duomenys gali būti saugomi ir naudojami iki dvejų metų. Įvertintos sąveikos informacijos poaibis gali būti saugomas ilgiau nei dvejus metus, siekiant nuolat tobulinti šiuo produktus ir funkcijas.\n\nGalite pakeisti nustatymą „Pagalbinio balso funkcijų tobulinimas“ bet kuriuo metu. Norėdami tai padaryti, „iOS“, „iPadOS“ ar „visionOS“ įrenginyje eikite į programą „Nustatymai“ > „Privatumas ir sauga“ > „Analizė ir patobulinimai“ ir bakstelėkite, kad išjungtumėte funkciją „Pagalbinio balso funkcijų tobulinimas“. „Mac“ įrenginyje eikite į programą „Sistemos nustatymai“ > „Privatumas ir sauga“ > „Analizė ir patobulinimai“ ir spustelėdami išjunkite funkciją „Pagalbinio balso funkcijų tobulinimas“."
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "If you opt in to Improve Assistive Voice Features, Apple will collect the audio and transcripts of your interactions with assistive voice features such as Vocal Shortcuts and Voice Control. Apple will collect additional information, such as whether you are using an iPhone or AirPods for audio input, the features you are using, and device and operating system specifications.\n\nThe data collected is associated with random, rotating device-generated identifiers and is not tied to your Apple Account. A subset of your interactions may be reviewed by graders to analyse and improve the accuracy and performance of assistive voice features. Only Apple employees, subject to strict confidentiality obligations, are able to access audio interactions.\n\nApple will use the information collected to develop and improve Vocal Shortcuts, Voice Control and similar accessibility features, as well as to improve accessibility across other Apple features, such as Siri. Your interactions may be retained and used for up to two years. A subset of interaction data that has been graded may be kept beyond two years for ongoing improvement of these products and features.\n\nYou can change your setting for Improve Assistive Voice Features at any time. To do so on your iOS, iPadOS or visionOS device, go to Settings > Privacy & Security > Analytics & Improvements, and tap to turn off Improve Assistive Voice Features. On Mac, go to System Settings > Privacy & Security > Analytics & Improvements, and click to turn off Improve Assistive Voice Features."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si participas en Mejorar las funciones de asistencia con voz, Apple recopilará el audio y las transacciones de tus interacciones con ellas, como las funciones rápidas de voz y el control por voz. Apple recopilará información adicional —como si estás usando iPhone o AirPods como entrada de audio—, las funciones que usas y las especificaciones del dispositivo y del sistema operativo.\n\nLos datos recopilados están asociados con identificadores dinámicos generados de forma aleatoria que no están vinculados con tu cuenta de Apple. Se podría revisar un subconjunto de tus interacciones para analizar y mejorar la precisión y el rendimiento de las funciones de asistencia con voz. Solamente empleados de Apple, sujetos a obligaciones de estricta confidencialidad, pueden acceder a las interacciones con audio.\n\nApple utilizará la información recopilada para desarrollar y mejorar funciones rápidas de voz, control con voz y otras funciones similares de accesibilidad; así como para mejorar la accesibilidad en otros servicios de Apple como Siri. Tus interacciones podrían retenerse y conservarse hasta por dos años. Un subconjunto de datos de interacción examinado podría conservarse por más de dos años, sin el identificador aleatorio, para la mejora continua de estos productos y funciones.\n\nPuedes cambiar la configuración de Mejorar asistencia con voz cuando quieras. Para ello, desactiva Mejorar las funciones de asistencia con voz en Configuración > Privacidad y seguridad > Análisis y mejoras en tu dispositivo iOS, iPadOS o visionOS. En una Mac, desactiva Mejorar las funciones de asistencia con voz en Configuración del Sistema > Privacidad y seguridad > Análisis y mejoras."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pokud se přihlásíte do programu Vylepšování asistenčních hlasových funkcí, bude společnost Apple shromažďovat zvukové záznamy a přepisy vašich interakcí s asistenčními hlasovými funkcemi, jako jsou hlasové zkratky a hlasové ovládání. Apple bude shromažďovat i další informace, například o tom, zda jako vstupní zvukové zařízení používáte iPhone nebo AirPody, které funkce používáte a jaké jsou specifikace vašeho zařízení a operačního systému.\n\nShromážděná data jsou propojena s náhodnými, pravidelně obměňovanými identifikátory vygenerovanými na zařízení a nejsou spojena s vaším účtem Apple. Část vašich interakcí může být přezkoumána pracovníky pověřenými vyhodnocováním za účelem analýzy a zlepšení přesnosti a výkonu asistenčních hlasových funkcí. K vašim hlasovým interakcím mají přístup pouze zaměstnanci společnosti Apple vázaní striktní povinností mlčenlivosti.\n\nApple shromážděné informace použije k vývoji a vylepšování hlasových zkratek, hlasového ovládání a podobných funkcí zpřístupnění a také ke zlepšování přístupnosti dalších funkcí, například Siri. Vaše interakce mohou být uchovávány a používány po dobu až dvou let. Část údajů o interakcích, která prošla procesem vyhodnocení, může být za účelem průběžného zlepšování těchto produktů a funkcí uchovávána déle než dva roky.\n\nNastavení asistenčních hlasových funkcí můžete kdykoli změnit. Chcete‑li to udělat na zařízení s iOS, iPadOS nebo visionOS, přejděte do Nastavení > Soukromí a zabezpečení > Analýza a vylepšování a klepnutím vypněte volbu Vylepšování asistenčních hlasových funkcí. Na Macu přejděte do Nastavení systému > Soukromí a zabezpečení > Analýza a vylepšování a kliknutím vypněte volbu Vylepšování asistenčních hlasových funkcí."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jika anda mengikut serta untuk Tingkatkan Ciri Suara Bantu, Apple akan mengumpulkan audio dan transkrip interaksi anda dengan ciri suara bantu seperti Pintasan Suara dan Kawalan Suara. Apple akan mengumpulkan maklumat tambahan, seperti sama ada anda menggunakan iPhone atau AirPods untuk input audio, ciri yang anda gunakan dan spesifikasi peranti serta sistem pengendalian.\n\nData yang dikumpulkan dikaitkan dengan pengecam dijana peranti bergilir rawak dan tidak dikaitkan dengan Akaun Apple anda. Subset interaksi anda mungkin disemak oleh penggred untuk menganalisis dan meningkatkan ketepatan serta prestasi ciri suara bantu. Hanya pekerja Apple, tertakluk pada kewajipan kerahsiaan yang ketat, boleh mengakses interaksi audio.\n\nApple akan menggunakan maklumat yang dikumpulkan untuk membangunkan dan meningkatkan Pintasan Suara, Kawalan Suara dan ciri kebolehcapaian serupa, serta untuk meningkatkan kebolehcapaian merentas ciri Apple lain, seperti Siri. Interaksi anda mungkin dikekalkan dan digunakan hingga dua tahun. Subset data interaksi yang telah digred mungkin disimpan melebihi dua tahun untuk peningkatan berterusan produk serta ciri ini.\n\nAnda boleh menukar seting anda untuk Tingkatkan Ciri Suara Bantu pada bila-bila masa. Untuk berbuat demikian pada peranti iOS, iPadOS atau visionOS anda, pergi ke Seting > Privasi & Keselamatan > Analitis & Peningkatan dan ketik untuk menyahaktifkan Tingkatkan Ciri Suara Bantu. Pada Mac, pergi ke Seting Sistem > Privasi & Keselamatan > Analitis & Peningkatan dan klik untuk menyahaktifkan Tingkatkan Ciri Suara Bantu."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ak sa zapojíte do programu Vylepšovanie asistenčných hlasových funkcií, spoločnosť Apple bude zhromažďovať audionahrávky a prepisy vašich interakcií s asistenčnými hlasovými funkciami, ako sú hlasové skratky a ovládanie hlasom. Spoločnosť Apple bude zhromažďovať aj ďalšie informácie, napríklad či ako zariadenie pre zvukový vstup používate iPhone alebo AirPody, ktoré funkcie používate a aké sú špecifikácie vášho zariadenia a operačného systému.\n\nZhromaždené dáta sú priradené k náhodným identifikátorom, ktoré sa pravidelne menia a sú generované na zariadení, a nie sú prepojené s vaším Apple účtom. S cieľom analýzy a vylepšenia presnosti a výkonu asistenčných hlasových funkcií môže byť časť vašich interakcií prehodnotená pracovníkmi poverenými vyhodnocovaním. K vašim hlasovým interakciám budú mať prístup výlučne zamestnanci spoločnosti Apple viazaní prísnymi nariadeniami týkajúcimi sa mlčanlivosti.\n\nSpoločnosť Apple použije zhromaždené informácie na vývoj a vylepšovanie hlasových skratiek, ovládania hlasom a podobných funkcií prístupnosti, ako aj na vylepšenie prístupnosti naprieč inými funkciami, napríklad Siri. Vaše interakcie môžu byť uchované a používané po dobu až dvoch rokov. Časť dát týkajúcich sa interakcií, ktorá prešla procesom vyhodnocovania, môže byť na priebežné vylepšovanie týchto produktov a služieb uchovaná aj dlhšie ako dva roky.\n\nNastavenie vylepšovania asistenčných hlasových funkcií môžete kedykoľvek zmeniť. Ak ho chcete zmeniť, na iOS, iPadOS alebo visionOS zariadení otvorte Nastavenia > Súkromie a bezpečnosť > Analytika a vylepšovanie a klepnutím vypnite možnosť Vylepšovať asistenčné hlasové funkcie. Na Macu otvorte Systémové nastavenia > Súkromie a bezpečnosť > Analytika a vylepšovanie a kliknutím vypnite možnosť Vylepšovať asistenčné hlasové funkcie."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ако включите Подобряване на помощните гласови функции, Apple ще събира аудиото и транскрипциите на вашите взаимодействия с помощните гласови функции, например като Гласови бързи команди и Управление с глас. Apple ще събира допълнителна информация, например като за това дали използвате iPhone или слушалки AirPods за аудио записи, функциите, които използвате, и устройството и характеристиките на операционната система.\n\nСъбраните данни са свързани със случайни, променливи, генерирани от устройството идентификатори и не са обвързани с вашата Apple регистрация. Част от вашите взаимодействия могат да се преглеждат от оценители с цел анализ и подобряване на точността и производителността на помощните гласови функции. Само служителите на Apple, които са обект на строги задължения за поверителност, имат достъп до аудио взаимодействията.\n\nApple ще използва събраната информация за разработване и подобряване на функциите Гласови бързи команди, Управление с глас и подобни функции за улеснен достъп, както и за подобряване на улеснения достъп до други функции на Apple, например като Siri. Взаимодействията ви може да се запазят и използват за до две години. Част от данните за взаимодействията, които са оценени, могат да бъдат запазени за период, по-дълъг от две години, с цел непрекъснато подобряване на тези продукти и функции.\n\nПо всяко време можете да промените вашата настройка за Подобряване на помощните гласови функции. За да направите това, на вашето iOS, iPadOS или visionOS устройство отидете в Настройки > Поверителност и сигурност > Аналитични данни и подобрения и докоснете, за да изключите Подобряване на помощните гласови функции. На Mac отидете в Системни настройки > Поверителност и сигурност > Аналитични данни и подобрения и щракнете, за да изключите Подобряване на помощните гласови функции."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "If you opt in to Improve Assistive Voice Features, Apple will collect the audio and transcripts of your interactions with assistive voice features such as Vocal Shortcuts and Voice Control. Apple will collect additional information, such as whether you are using an iPhone or AirPods for audio input, the features you are using, and device and operating system specifications.\n\nThe data collected is associated with random, rotating device-generated identifiers and is not tied to your Apple Account. A subset of your interactions may be reviewed by graders to analyse and improve the accuracy and performance of assistive voice features. Only Apple employees, subject to strict confidentiality obligations, are able to access audio interactions.\n\nApple will use the information collected to develop and improve Vocal Shortcuts, Voice Control and similar accessibility features, as well as to improve accessibility across other Apple features, such as Siri. Your interactions may be retained and used for up to two years. A subset of interaction data that has been graded may be kept beyond two years for ongoing improvement of these products and features.\n\nYou can change your setting for Improve Assistive Voice Features at any time. To do so on your iOS, iPadOS or visionOS device, go to Settings > Privacy & Security > Analytics & Improvements, and tap to turn off Improve Assistive Voice Features. On Mac, go to System Settings > Privacy & Security > Analytics & Improvements, and click to turn off Improve Assistive Voice Features."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Če sodelujete pri izboljšanju prilagojenih glasovnih funkcij, bo Apple zbiral zvok in transkripcije vaših interakcij s prilagojenimi glasovnimi funkcijami, kot sta Glasovne bližnjice in Glasovno upravljanje. Apple bo zbiral dodatne informacije, na primer o tem, ali kot zvočni vhod uporabljate iPhone ali slušalke AirPods, o funkcijah, ki jih uporabljate, ter o specifikacijah naprave in operacijskega sistema.\n\nZbrani podatki so povezani z naključnimi, ciklično spreminjajočimi se identifikatorji, ki jih ustvari naprava, in niso povezani z vašim računom Apple. Podnabor vaših interakcij lahko pregledajo ocenjevalci, da bi analizirali in izboljšali natančnost in zmogljivost prilagojenih glasovnih funkcij. Do zvočnih interakcij lahko dostopajo le zaposleni družbe Apple, ki so zavezani strogi zaupnosti.\n\nApple bo zbrane informacije uporabil za razvijanje in izboljšanje funkcij Glasovne bližnjice, Glasovno upravljanje in podobnih funkcij za dostopnost ter za izboljšanje dostopnosti v drugih funkcijah Apple, kot je Siri. Vaše interakcije se lahko hranijo in uporabljajo do dve leti. Podnabor podatkov o interakciji, ki je bil ocenjen, bo morda hranjen dlje kot dve leti z namenom nadaljnjih izboljšav teh izdelkov in funkcij.\n\nNastavitev možnosti Izboljšaj glasovne funkcije lahko spremenite kadarkoli. V napravi s sistemom iOS, iPadOS ali visionOS to naredite tako, da odprete Nastavitve > Zasebnost in varnost > Analitika in izboljšave ter tapnete, da izklopite možnost Izboljšaj glasovne funkcije. V Macu odprite Nastavitve sistema > Zasebnost in varnost > Analitika in izboljšave ter kliknite, da izklopite možnost Izboljšaj glasovne funkcije."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wenn du in „Unterstützende Sprachfunktionen verbessern“ einwilligst, sammelt Apple Audioaufnahmen und Transkripte deiner Interaktionen mit unterstützenden Sprachfunktionen wie Stimmkurzbefehlen und Sprachsteuerung. Apple sammelt zusätzliche Informationen, wie zum Beispiel, ob du ein iPhone oder AirPods für den Audioeingang verwendest, die verwendeten Funktionen sowie Gerät- und Betriebssystemspezifikationen.\n\nDen gesammelten Daten werden zufällige, turnusmäßig wechselnde IDs zugeordnet, die vom Gerät erstellt und nicht mit deinem Apple Account verknüpft werden. Ein Teil deiner Interaktionen kann durch Prüfpersonal überprüft werden, um die Genauigkeit und Leistung von unterstützenden Sprachfunktionen zu analysieren und zu verbessern. Der Zugriff auf die Spracheingaben ist nur Apple-Mitarbeiter:innen gestattet, die strengen Geheimhaltungspflichten unterliegen.\n\nApple verwendet die gesammelten Informationen, um Stimmkurzbefehle, die Sprachsteuerung und ähnliche Funktionen der Bedienungshilfen zu entwickeln und zu verbessern, sowie um Bedienungshilfen in anderen Apple Funktionen wie Siri zu verbessern. Deine Interaktionen können erhalten bleiben und für bis zu zwei Jahre verwendet werden. Ein Teil der Interaktionsdaten, die geprüft wurden, können mehr als zwei Jahre lang gespeichert werden, um andauernde Verbesserungen dieser Produkte und Funktionen zu ermöglichen.\n\nDu kannst deine Einstellung für „Unterstützende Sprachfunktionen verbessern“ jederzeit ändern. Wähle dazu in deinem iOS-, iPadOS- oder visionOS-Gerät „Einstellungen“ > „Datenschutz & Sicherheit“ > „Analyse & Verbesserungen“ und deaktiviere„Unterstützende Sprachfunktionen verbessern“. Gehe auf dem Mac zu „Systemeinstellungen“ > „Datenschutz & Sicherheit“ > „Analyse & Verbesserungen“ und deaktiviere „Unterstützende Sprachfunktionen verbessern“."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nếu bạn lựa chọn tham gia Cải thiện các tính năng trợ giúp bằng giọng nói thì Apple sẽ thu thập âm thanh và bản chép lại các tương tác của bạn với các tính năng trợ giúp bằng giọng như Phím tắt giọng nói và Khẩu lệnh. Apple sẽ thu thập thông tin bổ sung, ví dụ như việc bạn đang sử dụng iPhone hay AirPods cho đầu vào âm thanh, các tính năng bạn đang sử dụng, cũng như thông số kỹ thuật của thiết bị và hệ điều hành.\n\nDữ liệu được thu thập sẽ được liên kết với các mã định danh ngẫu nhiên, luân phiên do thiết bị tạo ra và không được liên kết với Tài khoản Apple của bạn. Một phần trong những tương tác của bạn có thể được người phân loại xem lại để phân tích và cải thiện độ chính xác cũng như hiệu năng của các tính năng trợ giúp bằng giọng nói. Chỉ các nhân viên của Apple, tuân thủ các nghĩa vụ bảo mật nghiêm ngặt, mới có thể truy cập vào các tương tác âm thanh.\n\nApple sẽ sử dụng thông tin được thu thập để phát triển và cải thiện Phím tắt giọng nói, Khẩu lệnh và các tính năng trợ năng tương tự, cũng như cải thiện trợ năng trên các tính năng khác của Apple, ví dụ như Siri. Các tương tác của bạn có thể được lưu giữ và sử dụng trong tối đa hai năm. Một phần của dữ liệu tương tác đã được phân loại có thể được lưu giữ trong hơn hai năm để liên tục cải thiện các sản phẩm và tính năng này.\n\nBạn có thể thay đổi cài đặt cho Cải thiện các tính năng trợ giúp bằng giọng nói bất kỳ lúc nào. Để thực hiện trên thiết bị iOS, iPadOS hoặc visionOS, hãy đi tới Cài đặt > Quyền riêng tư & Bảo mật > Phân tích & Cải tiến và chạm để tắt Cải thiện các tính năng trợ giúp bằng giọng nói. Trên máy Mac, hãy đi tới Cài đặt hệ thống > Quyền riêng tư & Bảo mật > Phân tích & Cải tiến và bấm để tắt Cải thiện các tính năng trợ giúp bằng giọng nói."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si aceptas mejorar las funciones de voz asistida, como los atajos de voz y el control por voz, Apple recopilará el audio y las transcripciones de tus interacciones con ellas. También recopilará otra información, como si usas un iPhone o unos AirPods como entrada de audio, las funciones que usas y las especificaciones del dispositivo y del sistema operativo.\n\nLos datos recopilados se asocian con identificadores rotativos generados aleatoriamente por el dispositivo y no se relacionan con tu cuenta de Apple. Para analizar y mejorar la precisión y el rendimiento de las funciones de voz asistida, cabe la posibilidad de que se revise un subconjunto de tus interacciones. Solo los empleados de Apple, sujetos a estrictas obligaciones de confidencialidad, tienen acceso a las interacciones de audio.\n\nApple usará la información recopilada para desarrollar y mejorar los atajos de voz, el control por voz y funciones relacionadas, así como para aumentar la accesibilidad en otros servicios de Apple, como Siri. Tus interacciones pueden conservarse y usarse durante un periodo de hasta dos años. Cabe la posibilidad de que un subconjunto de los datos de interacción que se han examinado se conserven durante más tiempo con el objeto de seguir mejorando estos productos y funciones.\n\nPuedes cambiar el ajuste de “Mejorar funciones de voz asistida” en cualquier momento. Para ello, en tu dispositivo iOS, iPadOS o visionOS, ve a Ajustes > Privacidad y seguridad > Análisis y mejoras, y toca para desactivar esta función. En un Mac, ve a Ajustes del Sistema > Privacidad y seguridad > Análisis y mejoras, y haz clic para desactivar esta función."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se você optar por Melhorar os Recursos de Auxílio por Voz, a Apple coletará o áudio e as transcrições das suas interações com os recursos de auxílio por voz, como Atalhos Vocais e Controle por Voz. A Apple coletará informações adicionais, como se você está usando um iPhone ou AirPods para a entrada de áudio, os recursos que você está usando e as especificações do dispositivo e do sistema operacional.\n\nOs dados coletados são associados a identificadores aleatórios e rotativos gerados pelo dispositivo e não são vinculados à sua Conta Apple. Um subconjunto das suas interações pode ser revisado por equipes de avaliação para análise e melhoria da precisão e desempenho dos recursos de auxílio por voz. Apenas pessoas que trabalham para a Apple, sujeitas a rígidas obrigações de confidencialidade, podem acessar as interações de áudio.\n\nA Apple usará as informações coletadas para desenvolver e melhorar os Atalhos Vocais, o Controle por Voz e recursos de acessibilidade similares, assim como para melhorar a acessibilidade em outros recursos da Apple, como a Siri. Suas interações pedem ser retidas e usadas por até dois anos. Um subconjunto de dados de interação já avaliados pode ser mantido além de dois anos para o melhoramento contínuo desses produtos e recursos.\n\nVocê pode alterar o ajuste para Melhorar os Recursos de Auxílio por Voz a qualquer momento. Para fazer isso, em um dispositivo iOS, iPadOS ou visionOS, acesse Ajustes > Privacidade e Segurança > Análise e Melhorias e toque para desativar Melhorar Recursos de Auxílio por Voz. No Mac, acesse Ajustes do Sistema > Privacidade e Segurança > Análise e Melhorias e clique para desativar Melhorar Recursos de Auxílio por Voz."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Якщо ви долучитеся до програми «Покращення допоміжних голосових функцій», Apple збиратиме аудіозаписи та стенограми вашої взаємодії з допоміжними голосовими функціями, як‑от «Голосові швидкі команди» та «Керування голосом». Apple збирає додаткову інформацію, наприклад відомості про те, чи використовуєте ви iPhone або AirPods для введення звуку, функції, які ви використовуєте, а також технічні характеристики пристрою та операційної системи.\n\nДані, що збираються, повʼязуються з випадковими згенерованими на пристрої ідентифікаторами, які постійно змінюються та не повʼязані з вашим обліковим записом Apple. Частину даних про ваші взаємодії можуть переглядати оцінювачі для аналізу й покращення точності та продуктивності допоміжних голосових функцій. Лише співробітники Apple, на яких поширюються суворі зобовʼязання щодо приватності, можуть отримати доступ до аудіовзаємодій.\n\nApple використовуватиме зібрану інформацію для розроблення та покращення функцій «Голосові швидкі команди», «Керування голосом» та інших функцій доступності, а також для покращення доступності в інших функціях Apple, як‑от Siri. Ваші взаємодії можуть зберігатися й використовуватися протягом двох років. Певні дані взаємодії, які було оцінено, можуть зберігатися понад два роки для вдосконалення цих продуктів і функцій.\n\nМожна будь-коли змінити налаштування функції «Покращення допоміжних голосових функцій». Для цього на пристрої iOS, iPadOS або visionOS перейдіть у меню Параметри > Приватність і безпека > Аналітика і покращення та вимкніть параметр «Покращення допоміжних голосових функцій». На Mac перейдіть у меню Системні параметри > Приватність і безпека > Аналітика і покращення та вимкніть параметр «Покращення допоміжних голосових функцій»."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si vous choisissez de participer à « Améliorer les fonctionnalités de voix d’assistance », Apple collectera le contenu audio et les transcriptions de vos interactions avec les fonctionnalités de voix d’assistance, telles que les raccourcis vocaux et le contrôle vocal. Apple collectera des informations supplémentaires, comme votre utilisation éventuelle d’un iPhone ou d’AirPods comme sortie audio, les fonctionnalités que vous utilisez, ainsi que les caractéristiques de votre appareil et de votre système d’exploitation.\n\nLes données recueillies sont associées à des identifiants aléatoires et tournants générés sur l’appareil, qui ne sont pas associés à votre compte Apple. Un sous-ensemble de vos interactions peut être examiné par une équipe d’évaluateurs afin d’analyser et d’améliorer la précision et les performances des fonctionnalités de voix d’assistance. Seuls les employés d’Apple, soumis à de strictes obligations de confidentialité, sont en mesure d’accéder à vos interactions audio.\n\nApple utilisera les informations collectées pour développer et améliorer les raccourcis vocaux, le contrôle vocal et d’autres fonctionnalités d’accessibilité similaires, ainsi que pour renforcer l’accessibilité de toutes les fonctionnalités Apple, telles que Siri. Les données liées à vos interactions avec ces fonctionnalités peuvent être conservées et utilisées pour une durée maximale de deux ans. Un sous-ensemble de données liées à vos interactions ayant été évalué pourra être conservé pour une durée supérieure à deux ans en vue de continuer à améliorer ces produits et ces fonctionnalités.\n\nVous pouvez modifier votre réglage de « Améliorer les fonctionnalités de voix d’assistance » à tout moment. Pour modifier ce réglage sur un appareil iOS, iPadOS ou visionOS, accédez à Réglages > Confidentialité et sécurité > Analyse et améliorations, et touchez « Améliorer les fonctionnalités de voix d’assistance » pour désactiver cette option. Sur Mac, accédez à Réglages Système > Confidentialité et sécurité > Analyse et améliorations, puis cliquez sur « Améliorer les fonctionnalités de voix d’assistance » pour désactiver cette option."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "«Дауыспен басқару функцияларын жақсарту» реттеуіне рұқсат берсеңіз, Apple компаниясы өзара әрекеттестіктеріңіздің аудио немесе транскрипцияларын «Дауыстық пәрмендер» және «Дауыспен басқару» сияқты көмекші дауыс функциялары арқылы жинайды. Apple компаниясы iPhone немесе AirPods құрылғысын дыбысты енгізу үшін пайдаланатыныңыз, сіз пайдаланатын функциялар және құрылғы мен операциялық жүйе спецификациялары сияқты қосымша ақпаратты жинайды.\n\nЖиналған деректер құрылғы жасаған кездейсоқ, айналмалы идентификаторлармен байланысты, ал Apple аккаунтыңызбен байланысты емес. Көмекші дауыс функцияларының дәлдігі мен өнімділігін талдау және жақсарту үшін өзара әрекеттестіктеріңіздің ішкі жиынтығын бағалаушылар тексеруі мүмкін. Өзара аудио әрекеттестіктерге тек құпиялылықты сақтау бойынша міндеттемелер жүктелген Apple қызметкерлері қол жеткізе алады.\n\nApple компаниясы жиналған ақпаратты «Дауыстық пәрмендер», «Дауыспен басқару» және басқа да әмбебап қол жеткізу функцияларын әзірлеу және жақсарту, сондай-ақ Siri сияқты басқа Apple функциялары бойынша әмбебап қол жеткізуді жақсарту мақсатында пайдаланады. Өзара әрекеттесулеріңіз екі жылға дейін сақталуы және пайдаланылуы мүмкін. Бағаланған өзара әрекеттестік деректерінің ішкі жиынтығы осы өнімдер мен функцияларды жақсарту үшін екі жылдан көп уақыт сақталуы мүмкін.\n\n«Дауыспен басқару функцияларын жақсарту» реттеуін кез келген уақытта өзгертуге болады. Ол үшін iOS, iPadOS немесе visionOS құрылғысында «Реттеулер» > «Құпиялылық және қауіпсіздік» > «Аналитика және жақсартулар» тармағына өтіп, «Дауыспен басқару функцияларын жақсарту» параметрін өшіріңіз. Mac компьютерінде System Settings (Жүйе реттеулері) > Privacy & Security (Құпиялылық және қауіпсіздік) > Analytics & Improvements (Аналитика және жақсартулар) тармағына өтіп, Assistive Voice Features (Көмекші дауыс функцияларын жақсарту) параметрін өшіріңіз."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dacă optați pentru “Îmbunătățire funcționalități vocale asistive”, Apple va colecta conținutul audio și transcrierile interacțiunilor dvs. cu funcționalitățile vocale asistive, cum ar fi “Scurtături vocale” și “Comenzi vocale”. Apple va colecta informații suplimentare, cum ar fi dacă utilizați un iPhone sau AirPods pentru intrarea audio, funcționalitățile pe care le utilizați și specificațiile dispozitivului și ale sistemului de operare.\n\nDatele colectate sunt asociate cu identificatori aleatorii, alternanți, generați pe dispozitiv și nu sunt asociate cu contul dvs. Apple. Este posibil ca evaluatorii să verifice un subset al interacțiunilor dvs., pentru a analiza și îmbunătăți acuratețea și performanțele funcționalităților vocale asistive. Doar angajații Apple, supuși unor obligații stricte de confidențialitate, pot accesa interacțiunile audio.\n\nApple va utiliza informațiile colectate pentru a dezvolta și îmbunătăți “Scurtături vocale”, “Comenzi vocale” și alte funcționalități de accesibilitate similare, cât și pentru a îmbunătăți accesibilitatea altor funcționalități Apple, cum ar fi Siri. Interacțiunile dvs. pot fi păstrate și utilizate timp de până la doi ani. Un subset de date referitoare la interacțiune care au fost evaluate poate fi păstrat mai mult de doi ani pentru îmbunătățirea continuă a acestor produse și funcționalități.\n\nVă puteți schimba oricând configurarea pentru “Îmbunătățire funcționalități vocale asistive”. În acest scop, pe dispozitivul iOS, iPadOS sau visionOS, accesați Configurări > Intimitate și securitate > Analiză și îmbunătățiri și apăsați pentru a dezactiva opțiunea “Îmbunătățire funcționalități vocale asistive”. Pe Mac, accesați Configurări sistem > Intimitate și securitate > Analiză și îmbunătățiri și faceți clic pentru a dezactiva opțiunea “Îmbunătățire funcționalități vocale asistive”."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ako se odlučite uključiti u poboljšanje pomoćnih glasovnih značajki, Apple će prikupiti audio zapise i transkripte vaših interakcija s pomoćnim glasovnim značajkama poput Vokalnih prečaca i Upravljanja glasom. Apple će prikupljati dodatne informacije, primjerice, koristite li iPhone ili AirPods za audio unos, značajke koje koristite te specifikacije uređaja i operativnog sustava.\n\nPrikupljeni podaci povezani su nasumičnim rotirajućim identifikatorima koji se generiraju na uređaju i nisu povezani s vašim Apple računom. Ocjenjivači mogu pregledati podniz vaših interakcija radi analiziranja i poboljšanja točnosti i performansi pomoćnih glasovnih značajki. Samo zaposlenici Applea, podložni strogim obvezama povjerljivosti, mogu pristupiti audio interakcijama.\n\nApple će koristiti prikupljene informacije za razvoj i poboljšanje Vokalnih prečaca, Upravljanja glasom i sličnih usluga pristupačnosti te za poboljšanje pristupačnosti diljem drugih Appleovih značajki, kao što je Siri. Vaše interakcije mogu se zadržati i koristiti do dvije godine. Podniz podataka o interakciji koji je ocijenjen može se zadržati izvan dvije godine radi daljnjih poboljšanja tih proizvoda i značajki.\n\nU svakom trenutku možete promijeniti postavku za opciju Poboljšanje pomoćnih glasovnih značajki. Ako to želite učiniti na iOS, iPadOS ili visionOS uređaju, otvorite Postavke > Privatnost i sigurnost > Analiza i poboljšanja pa dodirom isključite opciju Poboljšanje pomoćnih glasovnih značajki. Na Macu idite u Postavke sustava > Privatnost i sigurnost > Analiza i poboljšanja pa klikanjem isključite opciju Poboljšanje pomoćnih glasovnih značajki."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“アシスティブボイス機能の改善”を選択した場合、Appleは、ボーカルショートカットや音声コントロールなどのアシスティブボイス機能の操作から得た音声および文字起こしを収集します。Appleは、オーディオ入力にiPhoneまたはAirPodsを使用しているかどうか、使用している機能、およびデバイスとオペレーティングシステムの仕様などの追加情報を収集します。\n\n収集されたデータは、デバイスで生成されるランダムなローテーション方式の識別子に関連付けられ、Apple Accountには関連付けられません。操作の一部は、アシスティブボイス機能の正確性とパフォーマンスの解析および改善を目的として、評価者によって確認される場合があります。厳格な守秘義務に従うApple社員のみが、操作の音声にアクセスできます。\n\nAppleは、ボーカルショートカット、音声コントロール、および同様のアクセシビリティ機能を開発および改善するため、またSiriなどのほかのApple機能全般におけるアクセシビリティを改善するために、収集された情報を使用します。操作は、最長2年間保持および使用される場合があります。評価された一部の操作データは、これらの製品および機能の今後の改善のために2年以上保持される場合があります。\n\n“アシスティブボイス機能の改善”の設定はいつでも変更することができます。その場合、iOS、iPadOS、またはvisionOSデバイスでは、“設定”＞“プライバシーとセキュリティ”＞“解析と改善”に移動して、“アシスティブボイス機能の改善”をタップしてオフにします。Macでは、“システム設定”＞“プライバシーとセキュリティ”＞“解析と改善”に移動して、“アシスティブボイス機能の改善”をクリックしてオフにします。"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se optar por ativar Melhorar funcionalidades de assistência por voz, a Apple irá recolher o áudio e as transcrições das suas interações com as funcionalidades de assistência por voz, como os atalhos de voz e o controlo por voz. Também serão recolhidas informações adicionais, como, por exemplo, se utiliza um iPhone ou os AirPods como entrada de áudio, as funcionalidades que utiliza e as especificações do dispositivo e do sistema operativo.\n\nOs dados recolhidos são associados a identificadores gerados aleatoriamente pelo dispositivo, mas não são associados à sua conta Apple. É possível que um subconjunto das suas interações possa ser revisto para fins de análise e melhoria da precisão e do desempenho das funcionalidades de assistência por voz. Apenas os funcionários da Apple, sujeitos a rigorosas obrigações de confidencialidade, têm acesso às interações de áudio.\n\nA Apple usa a informação recolhida para desenvolver e melhorar os atalhos de voz, o controlo por voz e funcionalidades de acessibilidade semelhantes, assim como para melhorar a acessibilidade noutras funcionalidades da Apple, como Siri. As interações podem ser conservadas e usadas por um período máximo de dois anos. Um subconjunto classificado de dados de interações poderá ser mantido durante mais de dois anos para continuar a melhorar estes produtos e funcionalidades.\n\nPode alterar em qualquer altura a definição configurada para Melhorar funcionalidades de assistência por voz. Num dispositivo iOS, iPadOS ou visionOS, em Definições > Privacidade e segurança > Análise e melhorias, desative a opção “Melhorar funcionalidades de assistência por voz”. Num Mac, em Definições do Sistema > Privacidade e segurança > Análise e melhorias, desative a opção “Melhorar funcionalidades de assistência por voz”."
+          }
+        }
+      }
+    },
+    "SPLASH_SHORT_TITLE": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Assistive Voice Features"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "שיפור מאפייני ״קול מסייע״"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "보조 음성 기능 향상"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tingkatkan Fitur Suara Bantuan"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paranna ääniapuominaisuuksia"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yardımcı Ses Özelliklerini İyileştir"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verbeter Assistive Voice-functies"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kisegítő hangfunkciók továbbfejlesztése"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Улучшение ассистивных голосовых функций"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Migliora le funzionalità di assistenza vocale"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar las funciones de asistencia con voz"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Βελτίωση του Φωνητικού βοηθού"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Améliorer les fonctionnalités d’assistance de la voix"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Millora de les funcions de suport per a la veu"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "改進輔助語音功能"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "改進輔助語音功能"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Förbättra assisterande röstfunktioner"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forbedre funksjoner for assistert tale"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "असिस्टिव वॉइस फ़ीचर बेहतर बनाएँ"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forbedring af stemmefunktioner i Tilgængelighed"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Assistive Voice Features"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ulepszanie (Funkcje wspomagające dotyczące głosu)"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تحسين ميزات الصوت المساعد"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ปรับปรุงคุณสมบัติเสียงช่วยเหลือ"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "改进辅助语音功能"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„Pagalbinio balso“ funkcijų tobulinimas"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Assistive Voice Features"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar las funciones de asistencia con voz"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vylepšování asistenčních hlasových funkcí"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tingkatkan Ciri Suara Bantu"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vylepšovanie asistenčných hlasových funkcií"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Подобряване на помощните гласови функции"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Assistive Voice Features"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Izboljšanje prilagojenih glasovnih funkcij"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unterstützende Sprachfunktionen verbessern"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cải thiện các tính năng trợ giúp bằng giọng nói"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar funciones de voz asistida"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Melhorar Recursos de Auxílio por Voz"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Покращення допоміжних голосових функцій"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Améliorer les fonctionnalités de voix d’assistance"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Көмекші дауыс функцияларын жақсарту"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Îmbunătățire funcționalități vocale asistive"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poboljšanje pomoćnih glasovnih značajki"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "アシスティブボイス機能の改善"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Melhorar funcionalidades de assistência por voz"
+          }
+        }
+      }
+    },
+    "SPLASH_SUMMARY": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Assistive Voice Features allows Apple to store and review audio input and transcripts from interactions with assistive voice features like Vocal Shortcuts and Voice Control in order to develop and improve accessibility features across Apple products."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "״שיפור מאפייני ׳קול מסייע׳״ מאפשר ל-Apple לאחסן ולבדוק קלט שמע ותמלולים של אינטראקציות עם מאפייני קול מסייע כמו ״קיצורים קוליים״ ו״שליטה קולית״, כדי לפתח ולשפר מאפייני נגישות במוצרים אחרים של Apple."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "보조 음성 기능 향상을 통해 Apple은 음성 단축어 및 음성 명령과 같은 보조 음성 기능과 상호 작용한 오디오 입력 및 전사문을 저장하고 검토하여 Apple 제품의 손쉬운 사용 기능을 개발하고 향상할 수 있습니다."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tingkatkan Fitur Suara Bantuan memungkinkan Apple untuk menyimpan dan meninjau input audio serta transkrip dari interaksi dengan fitur suara bantuan seperti Pintasan Suara dan Kontrol Suara, untuk mengembangkan serta meningkatkan fitur aksesibilitas di semua perangkat Apple."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kun Paranna ääniapuominaisuuksia on käytössä, Apple voi tallentaa ja tarkastella ääniapuominaisuuksien, kuten Äänioikoteiden ja Ääniohjauksen, käyttötapahtumien ääntä ja tekstiä, Apple-tuotteiden käyttöapuominaisuuksien kehittämistä ja parantamista varten."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yardımcı Ses Özelliklerini İyileştir, Apple’ın Apple ürünlerindeki erişilebilirlik özelliklerini geliştirmek ve iyileştirmek amacıyla Vokal Kestirmeleri ve Sesle Denetim gibi yardımcı ses özellikleriyle etkileşimlerdeki ses girişlerini ve dökümlerini saklayıp incelemesine izin verir."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Met 'Verbeter Assistive Voice-functies' kan Apple audio-invoer en transcripten van interacties met Assistive Voice-functies, zoals spraakopdrachten en stembediening, opslaan en beoordelen om toegankelijkheidsfuncties in alle Apple producten te verbeteren."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Kisegítő hangfunkciók továbbfejlesztése segítségével az Apple eltárolhatja és áttekinteni az olyan kisegítő hangfunkciókkal végzett interakciók bevitt hanganyagát és átiratait, mint a Hangparancsok vagy a Hangvezérlés, az Apple-termékek kisegítő funkcióinak fejlesztése és továbbfejlesztése érdekében."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Если Вы включите улучшение ассистивных голосовых функций, Apple сможет собирать и изучать аудиозаписи и расшифровки Ваших взаимодействий с ассистивными голосовыми функциями, такими как голосовые команды и голосовое управление, в целях развития и улучшения функций универсального доступа во всех продуктах Apple."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’opzione “Migliora le funzionalità di assistenza vocale” consente ad Apple di archiviare e analizzare l’input audio e le trascrizioni delle interazioni con funzionalità di assistenza vocale come “Abbreviazioni vocali” e “Controllo vocale” per sviluppare e migliorare le funzioni di accessibilità dei prodotti Apple."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar las funciones de asistencia mediante voz le permite a Apple almacenar y revisar transcripciones y entradas de audio con funciones de asistencia con voz como funciones rápidas de voz y control por voz, para desarrollar y mejorar funciones de accesibilidad en los productos Apple."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Η Βελτίωση του Φωνητικού βοηθού επιτρέπει στην Apple να αποθηκεύει και να εξετάζει τις εισόδους ήχου και τις απομαγνητοφωνήσεις από αλληλεπιδράσεις με δυνατότητες Φωνητικού βοηθού, όπως οι Φωνητικές συντομεύσεις και ο Φωνητικός έλεγχος, προκειμένου να αναπτύξει και να βελτιώσει τις δυνατότητες προσβασιμότητας σε όλα τα προϊόντα Apple."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’option « Améliorer les fonctionnalités d’assistance de la voix » permet à Apple de stocker et de réviser l’entrée audio et les transcriptions d’interactions avec les fonctionnalités d’assistance de la voix, notamment les raccourcis vocaux et la commande vocale, pour développer et améliorer les fonctionnalités d’accessibilité des produits Apple."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La millora de les funcions de suport per a la veu permet que Apple desi i revisi l’àudio i les transcripcions de les interaccions amb les dreceres de veu i el control de veu, entre d’altres, per desenvolupar i millorar les funcions d’accessibilitat dels productes d’Apple."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "改進「輔助語音功能」可讓Apple儲存和審查與輔助語音功能（如「語音捷徑」和「語音控制」）互動的音訊輸入和逐字稿，以開發和改進Apple產品中的輔助使用功能。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "「改進輔助語音功能」允許Apple存儲和審查從輔助語音功能（例如「語音捷徑」和「語音控制」）互動中的語音輸入和轉寫，以開發和改進Apple產品的輔助使用功能。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Förbättra assisterande röstfunktioner tillåter att Apple lagrar och granskar ljudinmatningar och transkriberingar av dina interaktioner med assisterande röstfunktioner som röstgenvägar och röststyrning i syfte att utveckla och förbättra hjälpmedelsfunktioner i Apple-produkter."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forbedre funksjoner for assistert tale gjør det mulig for Apple å lagre og gjennomgå lydopptak og avskrifter fra interaksjoner med funksjoner for assistert tale, som Stemmesnarveier og Talekontroll, for å utvikle og forbedre tilgjengelighets­funksjoner på tvers av Apple-produkter."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "असिस्टिव वॉइस फ़ीचर में सुधार Apple को Apple उत्पादों में ऐक्सेसिबिलिटी को डेवलप करने और बेहतर बनाने के लिए वोकल शॉर्टकट और वॉइस कंट्रोल जैसे असिस्टिव वॉइस फ़ीचर के साथ इंटरऐक्शन से ऑडियो इनपुट और ट्रांसक्रिप्ट को संग्रहित और समीक्षा करने की अनुमति देता है।"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forbedring af stemmefunktioner i Tilgængelighed gør det muligt for Apple at opbevare og gennemgå lydinput og transskriptioner fra interaktioner med stemmefunktioner i Tilgængelighed, f.eks. Stemmegenveje og Stemmekontrol, med henblik på at forbedre tilgængelighedsfunktioner på Apples produkter."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Assistive Voice Features allows Apple to store and review audio input and transcripts from interactions with assistive voice features like Vocal Shortcuts and Voice Control, in order to develop and improve accessibility features across Apple products."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funkcja Ulepszanie (Funkcje wspomagające dotyczące głosu) pozwala Apple przechowywać i przeglądać Twoje zapisy audio i transkrypcje interakcji z funkcjami wspomagającymi dotyczącymi głosu, na przykład Skróty głosowe i Sterowanie głosowe, na potrzeby opracowywania i udoskonalania funkcji dostępności w różnych produktach Apple."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "يسمح تحسين ميزات الصوت المساعد لشركة Apple بتخزين ومراجعة إدخال الصوت والنصوص من التفاعلات مع ميزات الصوت المساعد مثل الاختصارات الصوتية والتحكم بالصوت، وذلك بهدف تطوير وتحسين ميزات تسهيلات الاستخدام في منتجات Apple."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "การปรับปรุงคุณสมบัติเสียงช่วยเหลือช่วยให้ Apple สามารถจัดเก็บและตรวจสอบสัญญาณเสียงเข้าและข้อความถอดเสียงจากการโต้ตอบกับคุณสมบัติเสียงช่วยเหลือ เช่น คำสั่งลัดเสียงพูดและการสั่งการด้วยเสียง เพื่อพัฒนาและปรับปรุงคุณสมบัติการช่วยการเข้าถึงในผลิตภัณฑ์ของ Apple ได้"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“改进辅助语音功能”允许Apple储存及核查与“人声快捷指令”和“语音控制”等辅助语音功能交互的音频输入和转录文本，以开发和改进Apple产品的辅助功能。"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„Pagalbinio balso funkcijų tobulinimas“ skirta tam, kad „Apple“ galėtų saugoti ir peržiūrėti sąveikos su pagalbinio balso funkcijomis, pavyzdžiui, „Balso sparčiosios komandos“ ir „Valdymas balsu“, garso įrašus ir transkripcijas, siekdama pagerinti „Apple“ produktų prieinamumo funkcijas."
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Assistive Voice Features allows Apple to store and review audio input and transcripts from interactions with assistive voice features like Vocal Shortcuts and Voice Control in order to develop and improve accessibility features across Apple products."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar las funciones de asistencia mediante voz le permite a Apple almacenar y revisar transcripciones y entradas de audio con funciones de asistencia con voz como funciones rápidas de voz y control por voz, para desarrollar y mejorar funciones de accesibilidad en los productos Apple."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vylepšování asistenčních hlasových funkcí umožňuje společnosti Apple ukládat a procházet zvukové vstupy a přepisy z interakcí s asistenčními hlasovými funkcemi, jako jsou hlasové zkratky a hlasové ovládání, s cílem vyvíjet a zlepšovat funkce zpřístupnění všech produktů Apple."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tingkatkan Ciri Suara Bantu membolehkan Apple menyimpan dan menyemak input audio serta transkrip daripada interaksi dengan ciri suara bantu seperti Pintasan Suara dan Kawalan Suara, untuk membangunkan dan meningkatkan ciri kebolehcapaian merentas produk Apple."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vylepšovanie asistenčných hlasových funkcií umožňuje spoločnosti Apple uchovávať a vyhodnocovať audionahrávky a prepisy z interakcií s asistenčnými hlasovými funkciami, ako sú hlasové skratky a ovládanie hlasom, s cieľom vyvíjať a vylepšovať funkcie prístupnosti na všetkých produktoch spoločnosti Apple."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Подобряването на помощните гласови функции позволява на Apple да съхранява и преглежда аудио входни данни и транскрипции от взаимодействията с помощните гласови функции като Гласови бързи команди и Управление с глас с цел разработване и подобряване на функциите за улеснен достъп на всички Apple продукти."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Assistive Voice Features allows Apple to store and review audio input and transcripts from interactions with assistive voice features like Vocal Shortcuts and Voice Control, in order to develop and improve accessibility features across Apple products."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Izboljšanje prilagojenih glasovnih funkcij družbi Apple omogoča shranjevanje in pregledovanje zvočnega vhoda in transkripcij iz interakcij s prilagojenimi glasovnimi funkcijami, kot sta Glasovne bližnjice in Glasovno upravljanje, da bi lahko razvijala in izboljšala funkcije dostopnosti v izdelkih Apple."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„Unterstützende Sprachfunktionen verbessern“ ermöglicht Apple das Speichern und Überprüfen von Audioeingaben und Transkripten aus Interaktionen mit unterstützenden Sprachfunktionen wie Stimmkurzbefehle und Sprachsteuerung, um Funktionen der Bedienungshilfen bei allen Apple Produkten zu entwickeln und zu verbessern."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cải thiện các tính năng trợ giúp bằng giọng nói cho phép Apple lưu trữ và xem lại đầu vào và bản chép lại âm thanh từ các tương tác với tính năng trợ giúp bằng giọng nói như Phím tắt giọng nói và Khẩu lệnh, để phát triển và cải thiện các tính năng trợ năng trên các sản phẩm của Apple."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Esta función permite a Apple almacenar y revisar la entrada de audio y las transcripciones de las interacciones con las funciones de voz asistida, como los atajos de voz y el control por voz, con el fin de desarrollar y mejorar las funciones de accesibilidad en los productos de Apple."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A opção Melhorar Recursos de Auxílio por Voz permite que a Apple armazene e revise o áudio e as transcrições de interações com recursos de auxílio por voz, como Atalhos Vocais e Controle por Voz, para desenvolver e melhorar os recursos de acessibilidade em produtos da Apple."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Якщо ввімкнути Покращення допоміжних голосових функцій, Apple зможе зберігати й переглядати аудіозаписи та стенограми вашої взаємодії з допоміжними голосовими функціями, як‑от «Голосові швидкі команди» та «Керування голосом», щоб розробляти й покращувати функції доступності в продуктах Apple."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "« Améliorer les fonctionnalités de voix d’assistance » autorise Apple à conserver et examiner le contenu audio et les transcriptions de vos interactions avec les fonctionnalités de voix d’assistance, telles que les raccourcis vocaux et le contrôle vocal, dans le but de développer et d’améliorer les fonctionnalités d’accessibilité pour l’ensemble des produits Apple."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "«Дауыспен басқару функцияларын жақсарту» реттеуі Apple өнімдерінде әмбебап қол жеткізу функцияларын дамыту және жақсарту үшін Apple компаниясына «Дауыстық пәрмендер» және «Дауыспен басқару» сияқты көмекші дауыс функцияларымен өзара әрекеттесулерден алынған аудио кіріс пен транскрипцияларды сақтауға және қарап шығуға мүмкіндік береді."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“Îmbunătățire funcționalități vocale asistive” permite stocarea și analizarea de către Apple a intrărilor audio și transcrierilor interacțiunilor cu funcționalitățile vocale asistive precum “Scurtături vocale” și “Comenzi vocale”, pentru dezvoltarea și îmbunătățirea funcționalităților de accesibilitate la produsele Apple."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Značajka poboljšanja pomoćnih glasovnih značajki omogućuje Appleu pohranjivanje i pregledavanje audio unosa i transkripata interakcija s pomoćnim glasovnim značajkama, kao što su Vokalni prečaci i Upravljanje glasom, kako bi se razvile i poboljšale značajke pristupačnosti na Appleovim proizvodima."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“アシスティブボイス機能の改善”では、AppleがApple製品全般におけるアクセシビリティ機能を開発および改善するために、ボーカルショートカットや音声コントロールなどのアシスティブボイス機能の操作から得た音声入力および文字起こしを保存し、レビューすることが許可されます。"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Esta funcionalidade permite à Apple armazenar e rever a entrada de áudio e as transcrições das interações com funcionalidades de assistência por voz como os atalhos de voz e o controlo por voz, para desenvolver e melhorar as funcionalidades de acessibilidade nos produtos da Apple."
+          }
+        }
+      }
+    },
+    "SPLASH_TITLE": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Assistive Voice Features & Privacy"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "״שיפור מאפייני ׳קול מסייע׳״ ופרטיות"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "보조 음성 기능 향상 및 개인정보 보호"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tingkatkan Fitur Suara Bantuan & Privasi"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paranna ääniapuominaisuuksia ja tietosuoja"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yardımcı Ses Özelliklerini İyileştir ve Gizlilik"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "'Verbeter Assistive Voice-functies' en privacy"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Kisegítő hangfunkciók továbbfejlesztéséről és az adatvédelemről…"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Об улучшении ассистивных голосовых функций и конфиденциальности"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“Migliora le funzionalità di assistenza vocale” e privacy"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de Mejorar las funciones de asistencia con voz y la privacidad"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Βελτίωση του Φωνητικού βοηθού και απόρρητο"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "« Améliorer les fonctionnalités d’assistance de la voix » et confidentialité"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Millora de les funcions de suport per a la veu i privacitat"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "改進輔助語音功能與隱私權"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "改進輔助語音功能與私隱"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Förbättra assisterande röstfunktioner och integritet"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forbedre funksjoner for assistert tale og personvern"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "असिस्टिव वॉइस फ़ीचर बेहतर बनाएँ और गोपनीयता"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forbedring af stemmefunktioner i Tilgængelighed og anonymitet"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Assistive Voice Features & Privacy"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ulepszanie (Funkcje wspomagające dotyczące głosu) i prywatność"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تحسين ميزات الصوت المساعد والخصوصية"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ปรับปรุงคุณสมบัติเสียงช่วยเหลือและความเป็นส่วนตัว"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "改进辅助语音功能与隐私"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„Pagalbinio balso“ funkcijų tobulinimas ir privatumas"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Assistive Voice Features & Privacy"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de Mejorar las funciones de asistencia con voz y la privacidad"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vylepšování asistenčních hlasových funkcí a soukromí"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tingkatkan Ciri Suara Bantu & Privasi"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vylepšovanie asistenčných hlasových funkcií a súkromie"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Подобряване на помощните гласови функции и поверителност"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Assistive Voice Features & Privacy"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Izboljšanje prilagojenih glasovnih funkcij in zasebnost"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„Unterstützende Sprachfunktionen verbessern“ & Datenschutz …"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cải thiện các tính năng trợ giúp bằng giọng nói & Quyền riêng tư"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“Mejorar funciones de voz asistida” y la privacidad"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Melhorar os Recursos de Auxílio por Voz e Privacidade"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Покращення допоміжних голосових функцій і приватність"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "« Améliorer les fonctionnalités de voix d’assistance » et confidentialité"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Көмекші дауыс функцияларын жақсарту және құпиялылық"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Îmbunătățire funcționalități vocale asistive și intimitate"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poboljšanje pomoćnih glasovnih značajki i privatnost"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“アシスティブボイス機能の改善”とプライバシー"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Melhorar funcionalidades de assistência por voz e Privacidade"
+          }
+        }
+      }
+    },
+    "BUTTON_TITLE": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About Improve Assistive Voice Features & Privacy…"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "מידע בנושא ״שיפור מאפייני ׳קול מסייע׳״ ופרטיות…"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "보조 음성 기능 향상 및 개인정보 보호에 관하여…"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mengenai Tingkatkan Fitur Suara Bantuan & Privasi…"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tietoja: Paranna ääniapuominaisuuksia ja tietosuoja…"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yardımcı Ses Özelliklerini İyileştir ve Gizlilik Hakkında…"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Over 'Verbeter Assistive Voice-functies' en privacy…"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Kisegítő hangfunkciók továbbfejlesztéséről és az adatvédelemről…"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Об улучшении ассистивных голосовых функций и конфиденциальности…"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“Migliora le funzionalità di assistenza vocale” e privacy…"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de Mejorar las funciones de asistencia con voz y la privacidad…"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Πληροφορίες για τη Βελτίωση του Φωνητικού βοηθού και το απόρρητο…"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "« Améliorer les fonctionnalités d’assistance de la voix » et confidentialité…"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sobre la millora de les funcions de suport per a la veu i la privacitat…"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "關於改進輔助語音功能與隱私權⋯"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "關於改進輔助語音功能與私隱⋯"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om Förbättra assisterande röstfunktioner och integritet…"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om Forbedre funksjoner for assistert tale og personvern…"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "असिस्टिव वॉइस फ़ीचर बेहतर बनाएँ और गोपनीयता का परिचय…"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om Forbedring af stemmefunktioner i Tilgængelighed og anonymitet…"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About Improve Assistive Voice Features & Privacy…"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ulepszanie (Funkcje wspomagające dotyczące głosu) i prywatność…"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حول \"تحسين ميزات الصوت المساعد\" والخصوصية…"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เกี่ยวกับการปรับปรุงคุณสมบัติเสียงช่วยเหลือและความเป็นส่วนตัว…"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "关于改进辅助语音功能与隐私…"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apie „Pagalbinio balso“ funkcijų tobulinimą ir privatumą…"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About Improve Assistive Voice Features & Privacy…"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de Mejorar las funciones de asistencia con voz y la privacidad…"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O vylepšování asistenčních hlasových funkcí a soukromí…"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Perihal Tingkatkan Ciri Suara Bantu & Privasi…"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O vylepšovaní asistenčných hlasových funkcií a súkromí…"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Относно Подобряване на помощните гласови функции и поверителност…"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About Improve Assistive Voice Features & Privacy…"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Več o izboljšanju prilagojenih glasovnih funkcij in zasebnosti …"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Über „Unterstützende Sprachfunktionen verbessern“ & Datenschutz …"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cải thiện các tính năng trợ giúp bằng giọng nói & Quyền riêng tư…"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de “Mejorar funciones de voz asistida” y la privacidad…"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sobre Melhorar os Recursos de Auxílio por Voz e Privacidade…"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Про Покращення допоміжних голосових функцій і приватність…"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Améliorer les fonctionnalités de voix d’assistance et confidentialité…"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Көмекші дауыс функцияларын жақсарту және құпиялылық туралы ақпарат…"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Despre Îmbunătățire funcționalități vocale asistive și intimitate…"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Više o poboljšanju pomoćnih glasovnih značajki i privatnosti…"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“アシスティブボイス機能の改善”とプライバシーについて…"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de Melhorar funcionalidades de assistência por voz e Privacidade…"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

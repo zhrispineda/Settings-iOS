@@ -1,0 +1,1656 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "FOOTER_TEXT": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Fitness+ sends additional information about your workouts to Apple, including workout titles and trainers, in order to develop, improve and understand the effectiveness of Apple Fitness+ features and workouts. Your data will not be used for any other purpose. Workout details, like the title or trainer, may reveal sensitive information about your workout, such as whether it is a prenatal workout. This information does not include data from health- and activity-related sensors (such as your heart rate, calories or kilojoules). Your Improve Fitness+ data is stored with your other Fitness+ data against a random identifier that is specific to Apple Fitness+ and not associated with your Apple Account.\n\nYou can choose to disable Improve Fitness+ at any time. To do so, go to Settings > Privacy & Security > Analytics & Improvements and tap to turn off Improve Fitness+.\n\nBy enabling Improve Fitness+, you agree and consent to Apple’s and its subsidiaries’ and agents’ transmission, collection, maintenance, processing, use and disclosure of this information as described above. Apple may store this information with trusted service providers.\n\nAt all times, information collected by Apple will be treated in accordance with Apple’s Privacy Policy, which can be found at apple.com/in/privacy"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "״שיפור Fitness+‎״ שולח מידע נוסף על האימונים שלך אל Apple, כולל שמות אימונים ומאמנים, כדי לפתח, לשפר ולהבין את היעילות של המאפיינים והאימונים של Apple Fitness+‎. הנתונים שלך לא ישמשו לאף מטרה אחרת. פרטי אימון כמו שם האימון או שם המאמן עשויים לחשוף מידע רגיש על האימון שלך, למשל אם זהו אימון לנשים בהיריון. מידע זה לא כולל נתונים מחיישנים הקשורים לבריאות ולפעילות (כגון קצב הלב שלך, קלוריות או קילוג׳ולים). נתוני ״שיפור Fitness+‎״ מאוחסנים עם יתר נתוני Fitness+‎ שלך, כנגד מזהה אקראי הייחודי לשירות Apple Fitness+‎ שאינו מקושר לחשבון ה-Apple שלך.\n\nניתן לבחור לכבות את ״שיפור Fitness+‎״ בכל שלב. כדי לעשות זאת, יש לעבור אל ״הגדרות״ > ״פרטיות ואבטחה״ > ״נתונים ושיפורים״ ולהקיש לכיבוי ״שיפור ⁨Fitness+⁩״.\n\nהפעלת ״שיפור ⁨Fitness+⁩״ מהווה את הסכמתך לכך ש-Apple וחברות הבת והסוכנים שלה ישדרו, יאספו, ישמרו, יעבדו, יחשפו וישתמשו במידע זה כמתואר לעיל. ייתכן ש-Apple תאחסן מידע זה באמצעות ספקי שירות מהימנים.\n\nבכל עת, מידע הנאסף על-ידי Apple יטופל בהתאם למדיניות הפרטיות של Apple, הזמינה בכתובת: www.apple.com/privacy"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fitness+ 향상은 Apple Fitness+ 기능 및 운동을 개발 및 향상하고, 효과를 이해할 수 있도록 운동 이름 및 트레이너 등 사용자의 운동에 관한 추가 정보를 Apple로 전송합니다. 사용자의 데이터는 이 외의 다른 목적으로 사용되지 않습니다. 운동 이름 및 트레이너와 같은 운동 세부사항에는 산전 운동 등과 같이 사용자의 운동에 대한 일부 민감한 정보가 포함될 수 있습니다. 이 정보에는 심박수, 칼로리 또는 킬로줄과 같은 건강 및 활동 관련 센서의 데이터가 포함되지 않습니다. 사용자의 Fitness+ 향상 데이터는 Apple Fitness+에 특정하여 사용자의 Apple 계정에 연계되지 않는 임의의 식별자로 다른 Fitness+ 데이터와 함께 저장됩니다.\n\nFitness+ 향상은 언제든지 비활성화할 수 있습니다. Fitness+ 향상을 비활성화하려면 설정 > 개인정보 보호 및 보안 > 분석 및 향상으로 이동하여 Fitness+ 향상을 탭하여 끄십시오.\n\nFitness+ 향상을 활성화함으로써 사용자는 Apple과 그 자회사 및 에이전트가 상기 언급된 정보를 전송, 수집, 관리, 처리, 사용 및 공개하는 것에 대해 동의하고 허용하는 것입니다. Apple은 이 정보를 신뢰하는 서비스 제공업체에 저장할 수 있습니다.\n\nApple에서 수집한 정보는 항상 Apple의 개인정보 처리방침에 따라 취급되며, 자세한 내용은 www.apple.com/kr/privacy 사이트에서 확인할 수 있습니다."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tingkatkan Fitness+ mengirimkan informasi tambahan mengenai olahraga Anda ke Apple, termasuk judul dan pelatih olahraga, agar dapat mengembangkan, meningkatkan, dan memahami keefektifan fitur dan olahraga Apple Fitness+. Data Anda tidak akan digunakan untuk tujuan lainnya. Detail olahraga, seperti judul atau pelatih, dapat memperlihatkan informasi sensitif mengenai olahraga Anda, seperti apakah itu merupakan olahraga sebelum melahirkan. Informasi ini tidak menyertakan data dari sensor kesehatan dan sensor terkait aktivitas (seperti detak jantung, kalori, atau kilojoule Anda). Data Tingkatkan Fitness+ Anda disimpan bersama data Fitness+ Anda lainnya, dengan menggunakan pengenal acak khusus untuk Apple Fitness+ dan tidak dikaitkan dengan Akun Apple Anda.\n\nAnda dapat memilih untuk menonaktifkan Tingkatkan Fitness+ kapan pun. Untuk melakukannya, buka Pengaturan > Privasi & Keamanan > Analisis & Peningkatan dan ketuk untuk mematikan Tingkatkan Fitness+.\n\nDengan mengaktifkan Tingkatkan Fitness+, Anda menyetujui dan menyepakati pentransmisian, pengumpulan, pemeliharaan, pemrosesan, penggunaan, dan pengungkapan informasi ini oleh Apple dan anak perusahaan serta agennya sebagaimana yang dijelaskan di atas. Apple dapat menyimpan informasi ini dengan penyedia layanan tepercaya.\n\nInformasi yang dikumpulkan oleh Apple akan selalu diperlakukan sesuai dengan Kebijakan Privasi Apple, yang dapat ditemukan di www.apple.com/id/privacy"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Auta parantamaan Fitness+:aa lähettää Applelle lisätietoja treeneistäsi, mukaan lukien treenien nimet ja ohjaajat, Apple Fitness+:n ominaisuuksien ja treenien tehokkuuden kehittämiseksi, parantamiseksi ja ymmärtämiseksi. Tietojasi ei käytetä mihinkään muuhun tarkoitukseen. Treenin tiedot, kuten sen ja ohjaajien nimet, voivat paljastaa treenistäsi arkaluontoista tietoa, esimerkiksi että se on raskausaikaan sopiva treeni. Nämä tiedot eivät sisällä tietoja terveyteen tai aktiivisuuteen liittyvistä tunnistimista (esim. syke, kalorit tai kilojoulet). Auta parantamaan Fitness+:aa ‑tiedot tallennetaan muiden Fitness+-tietojen kanssa yhdistettynä satunnaiseen tunnisteeseen, joka on Apple Fitness+ ‑kohtainen, eikä tietoja yhdistetä Apple-tiliisi.\n\nVoit laittaa Auta parantamaan Fitness+:aa ‑toiminnon pois päältä milloin tahansa. Tee näin valitsemalla Asetukset > Tietosuoja ja suojaus > ”Analyysi ja parannukset” ja napauttamalla ”Auta parantamaan Fitness+:aa” pois päältä.\n\nOttamalla Auta parantamaan Fitness+:aa ‑toiminnon käyttöön hyväksyt ja suostut siihen, että Apple ja sen tytäryhtiöt ja edustajat voivat lähettää, kerätä, säilyttää, käsitellä, käyttää ja ilmaista näitä tietoja edellä mainitulla tavalla. Apple voi säilyttää näitä tietoja luotetuilla palveluntarjoajilla.\n\nApplen keräämiä tietoja käsitellään aina Applen tietosuojakäytännön mukaisesti. Tämä käytäntö löytyy osoitteesta www.apple.com/legal/privacy/fi/."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fitness+’ı İyileştir, antrenman başlıkları ve antrenörler de dahil olmak üzere antrenmanlarınızla ilgili ek bilgileri Apple Fitness+ özelliklerinin ve antrenmanlarının etkililiğini geliştirmek, iyileştirmek ve anlamak amacıyla Apple’a gönderir. Verileriniz başka bir şey için kullanılmaz. Antrenman adları ve antrenörler gibi antrenman ayrıntıları, antrenmanın doğum öncesi antrenman olup olmadığı gibi hassas bilgileri ortaya çıkarabilir. Bu bilgiler, sağlık ve aktivite ile ilgili sensörlerden toplanan verileri (kalp atış hızı, kalori veya kilojul gibi) içermez. Fitness+’ı İyileştir verileriniz diğer Fitness+ verilerinizle birlikte, Apple Fitness+’a özgü rasgele bir tanıtıcıyla saklanır ve Apple Hesabı’nızla ilişkilendirilmez.\n\nFitness+’ı İyileştir’i istediğiniz zaman etkisizleştirmeyi seçebilirsiniz. Bunu yapmak için Ayarlar > Gizlilik ve Güvenlik > Analizler ve İyileştirmeler’e gidin ve Fitness+’ı İyileştir’i kapatmak için dokunun.\n\nFitness+’ı İyileştir’i etkinleştirerek Apple’ın, bağlı kuruluşlarının ve temsilcilerinin bu bilgileri yukarıda açıklanan şekilde aktarmasını, toplamasını, bulundurmasını, işlemesini, kullanmasını ve açıklamasını kabul etmiş ve onaylamış olursunuz. Apple bu bilgileri güvenilir servis sağlayıcılar ile saklayabilir.\n\nApple tarafından toplanan bilgiler her zaman www.apple.com/tr/privacy adresinde bulunan Apple’ın Gizlilik Politikası’na uygun şekilde işlenir."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Функция «Улучшение Fitness+» отправляет в Apple дополнительную информацию о Ваших тренировках, в том числе названия тренировок и имена тренеров. Это позволяет разрабатывать и улучшать функции и тренировки Apple Fitness+, а также оценивать их эффективность. Ваши данные не будут использованы в иных целях. Данные о тренировках, в том числе названия тренировок и имена тренеров, могут содержать конфиденциальную информацию о Ваших тренировках, например о том, предназначена ли тренировка для беременных. Эта информация не включает данные, которые получены от датчиков, связанных со здоровьем и активностью (такие данные, как пульс, калории или килоджоули). Данные, которые используются функцией «Улучшение Fitness+» и хранятся с другими Вашими данными Fitness+, связаны со случайным идентификатором, который используется только в Apple Fitness+ и не связан с Вашим Аккаунтом Apple.\n\nФункцию «Улучшение Fitness+» можно выключить в любое время. Для этого откройте «Настройки» > «Конфиденциальность и безопасность» > «Аналитика и улучшения» и касанием выключите улучшение Fitness+.\n\nВключив функцию «Улучшение Fitness+», Вы даете компании Apple, ее дочерним предприятиям и агентам согласие на передачу, сбор, хранение, обработку, использование и раскрытие всей этой информации, как указано выше. Компания Apple может хранить эту информацию у доверенных партнеров.\n\nИнформация, которую собирает Apple, всегда обрабатывается в соответствии с Политикой конфиденциальности Apple, доступной по адресу: www.apple.com/ru/privacy."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Fitness+ továbbfejlesztése további információkat küld az Ön edzéséről az Apple-nek, beleértve az edzések és edzők neveit, hogy az Apple továbbfejleszthesse és jobban felmérje az Apple Fitness+ funkcióinak és edzéseinek hatékonyságát. Adatai semmilyen más célból nem lesznek felhasználva. Az edzésekkel kapcsolatos részletek, például az edzések vagy az edzők nevei bizalmas információkat fedhetnek fel az edzéseiről, például ha Ön kismamatornára jár. Ezek az információk nem tartalmazzák az egészséggel és tevékenységekkel kapcsolatos érzékelőkből származó adatokat (például az Ön pulzusszámát, a kalóriákat és a kilojoule-okat). A Fitness+ továbbfejlesztése funkcióhoz kapcsolódó adatai az egyéb Fitness+-adataival egy véletlenszerű Fitness+-specifikus azonosítóhoz rendelve lesznek tárolva, amely nincs társítva az Ön Apple-fiókjához.\n\nA Fitness+ továbbfejlesztését bármikor letilthatja. Ehhez válassza a Beállítások > Adatvédelem és biztonság > Elemzések és fejlesztések menüpontot, és koppintással kapcsolja ki a Fitness+ továbbfejlesztése lehetőséget.\n\nA Fitness+ továbbfejlesztése funkció engedélyezésével Ön elfogadja, és hozzájárul ahhoz, hogy az Apple, valamint annak leányvállalatai és ügynökei a fent említett módon ezeket az információkat átadják, gyűjtsék, karbantartsák, feldolgozzák, felhasználják és közzétegyék. Előfordulhat, hogy az Apple ezeket az információkat megbízható szolgáltatóknál tárolja.\n\nAz Apple által gyűjtött információk mindig az Apple adatvédelmi szabályzata szerint lesznek felhasználva, amely megtalálható a www.apple.com/hu/privacy weboldalon."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "'Verbeter Fitness+' stuurt aanvullende informatie over je work-outs naar Apple, waaronder work-outnamen en trainers, om de effectiviteit van functies en work-outs van Apple Fitness+ verder te ontwikkelen, te verbeteren en te begrijpen. Je gegevens worden voor geen enkel ander doel gebruikt. Work-outgegevens, zoals titels of de naam van de trainer, kunnen gevoelige informatie weergeven over je work-out, bijvoorbeeld of het een prenatale work-out is. Deze informatie bevat geen gegevens van gezondheids- en activiteits­gerelateerde sensoren (zoals je hartslag, calorieën of kilojoules). Je gegevens van 'Verbeter Fitness+' worden samen met je andere gegevens in Fitness+ bewaard met een willekeurige ID die specifiek bestemd is voor Apple Fitness+ en niet is gekoppeld aan je Apple Account.\n\nJe kunt 'Verbeter Fitness+' uitschakelen wanneer je wilt. Hiervoor ga je in Instellingen naar 'Privacy en beveiliging' > 'Analyse en verbeteringen' en tik je om 'Verbeter Fitness+' uit te schakelen.\n\nDoor 'Verbeter Fitness+' in te schakelen, stem je ermee in dat Apple en zijn dochterondernemingen en tussenpersonen de hierboven genoemde informatie mogen versturen, verzamelen, onderhouden, verwerken en openbaar maken. Apple kan deze informatie bewaren bij erkende serviceproviders.\n\nDe door Apple verzamelde gegevens worden te allen tijde behandeld conform het privacybeleid van Apple, dat je kunt vinden op www.apple.com/nl/privacy."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“Migliora Fitness+” invia ad Apple informazioni aggiuntive sui tuoi allenamenti, inclusi i relativi titoli e trainer, in modo tale da sviluppare, migliorare e comprendere l’efficacia degli allenamenti e delle funzionalità di Apple Fitness+. I tuoi dati non verranno utilizzati per altri scopi. I dettagli degli allenamenti, come il titolo o il nome del trainer, potrebbero rivelare informazioni sensibili sulla tua attività fisica, ad esempio se si tratta di un allenamento per il periodo prenatale. Tali informazioni non includono dati provenienti da sensori per la salute e per l’attività (come frequenza cardiaca, calorie o chilojoule). I dati di “Migliora Fitness+” vengono archiviati insieme agli altri dati di Fitness+, con un identificativo casuale specifico per Apple Fitness+ e non associato al tuo Apple Account.\n\nPuoi scegliere di disabilitare “Migliora Fitness+” in qualsiasi momento. Per farlo, vai in Impostazioni > Privacy e sicurezza > Analisi e miglioramenti, quindi disattiva “Migliora Fitness+”.\n\nAbilitando “Migliora Fitness+”, accetti e consenti la trasmissione, la raccolta, la conservazione, l’elaborazione, l’utilizzo e la divulgazione di tali informazioni da parte di Apple e dei suoi partner e licenziatari come descritto sopra. Apple potrebbe affidare a provider di servizi di terze parti attendibili il compito di conservare le informazioni raccolte.\n\nIn qualsiasi momento, le informazioni raccolte da Apple verranno trattate in conformità all’informativa sulla privacy di Apple consultabile all’indirizzo www.apple.com/it/privacy."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar Fitness+ envía a Apple información adicional sobre tus entrenamientos, incluyendo los nombres de los entrenamientos y los coaches, con el objetivo de desarrollar, mejorar y entender la eficacia de las funciones y entrenamientos de Apple Fitness+. Tus datos no se utilizan con ningún otro propósito. Los detalles de los entrenamientos, como el título o coach, podrían revelar información confidencial sobre tu entrenamiento como, por ejemplo, si es un entrenamiento prenatal. La información que se envía no incluye datos obtenidos con los sensores de actividad y salud (como tu ritmo cardiaco, calorías o kilojoules). Tus datos de Mejorar Fitness+ se almacenan con tus demás datos de Apple Fitness+ mediante un identificador aleatorio y específico para Apple Fitness+, y no se asocian con tu cuenta de Apple.\n\nPuedes desactivar Mejorar Fitness+ en cualquier momento, lo cual puedes hacer en Configuración > Privacidad > Análisis y mejoras.\n\nAl activar Mejorar Fitness+, aceptas y das consentimiento para la transmisión, recopilación, mantenimiento, procesamiento, uso y divulgación de esta información según se describe anteriormente por parte de Apple y sus subsidiarios. Apple podría almacenar esta información con proveedores de servicios de confianza.\n\nLa información que Apple recopile se tratará en todo momento de conformidad con la Política de privacidad de Apple, la cual puedes consultar en www.apple.com/la/privacy"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Η Βελτίωση του Fitness+ στέλνει στην Apple πρόσθετες πληροφορίες σχετικά με τις προπονήσεις σας, συμπεριλαμβανομένων των τίτλων προπονήσεων και των προπονητών, για ανάπτυξη, βελτίωση και κατανόηση της αποτελεσματικότητας των δυνατοτήτων και των προπονήσεων Apple Fitness+. Τα δεδομένα σας δεν θα χρησιμοποιηθούν για κανέναν άλλο σκοπό. Οι λεπτομέρειες προπόνησης, π.χ. ο τίτλος ή ο προπονητής, ενδέχεται να αποκαλύπτουν ευαίσθητες πληροφορίες σχετικά με την προπόνησή σας, π.χ. αν πρόκειται για προγεννητική προπόνηση. Αυτές οι πληροφορίες δεν περιλαμβάνουν δεδομένα από αισθητήρες υγείας και δραστηριότητας (όπως καρδιακοί παλμοί, θερμίδες ή κιλοτζάουλ). Τα δεδομένα της Βελτίωσης του Fitness+ αποθηκεύονται με τα άλλα δεδομένα Fitness+ σας μαζί με ένα τυχαίο αναγνωριστικό συγκεκριμένο για το Apple Fitness+ και δεν συσχετίζονται με τον λογαριασμό Apple σας.\n\nΜπορείτε να επιλέξετε την απενεργοποίηση της Βελτίωσης του Fitness+ οποιαδήποτε στιγμή. Για να το κάνετε αυτό, μεταβείτε στις «Ρυθμίσεις» > «Απόρρητο και ασφάλεια» > «Ανάλυση και βελτιώσεις» και απενεργοποιήστε τη «Βελτίωση του Fitness+».\n\nΑν ενεργοποιήσετε τη Βελτίωση του Fitness+, συμφωνείτε και συναινείτε ως προς τη μετάδοση, τη συλλογή, τη διατήρηση, την επεξεργασία, τη χρήση και την κοινοποίηση των εν λόγω πληροφοριών, όπως αυτές περιγράφονται παραπάνω, από την Apple, τις θυγατρικές και τους αντιπροσώπους της. Η Apple ενδέχεται να αποθηκεύσει αυτές τις πληροφορίες σε αξιόπιστους παρόχους υπηρεσιών.\n\nΟ χειρισμός των πληροφοριών που συλλέγονται από την Apple πραγματοποιείται σύμφωνα με την Πολιτική απορρήτου της, την οποία μπορείτε να βρείτε στη διεύθυνση www.apple.com/gr/privacy."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La millora del Fitness+ envia informació addicional sobre els teus entrenaments a Apple, inclosos els noms dels entrenaments i dels entrenadors, per desenvolupar, millorar i valorar lʼeficàcia de les funcions i dels entrenaments de lʼApple Fitness+. Les teves dades no sʼutilitzaran amb cap altra finalitat. Els detalls de lʼentrenament, com ara el títol o el nom de lʼentrenador, poden revelar informació confidencial sobre lʼentrenament, per exemple, si es tracta dʼun entrenament prenatal. Aquesta informació no inclou les dades dels sensors relacionades amb la salut i l’activitat, com ara la freqüència cardíaca, les calories o els quilojoules. Les dades de la funció de millora del Fitness+ s’emmagatzemen amb la resta de dades del Fitness+, amb un identificador aleatori que és específic de l’Apple Fitness+ i que no s’associa al compte d’Apple.\n\nPots desactivar la millora del Fitness+ en qualsevol moment. Per fer‑ho, ves a l’app Configuració > Privacitat i seguretat > Anàlisi i millores, i desactiva la millora del Fitness+.\n\nEn activar la millora del Fitness+, acceptes que Apple i les seves filials i agents transmetin, recopilin, mantinguin, processin, utilitzin i revelin aquesta informació tal com es descriu més amunt. Apple pot desar aquesta informació amb proveïdors de serveis de confiança.\n\nLa informació recopilada per Apple es tractarà en tot moment d’acord amb la política de privacitat d’Apple, que es pot consultar a www.apple.com/es/privacy."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "« Améliorer Fitness+ » envoie à Apple des informations supplémentaires au sujet de vos entraînements, dont les titres et les coachs, pour permettre de développer, d’améliorer et d’évaluer l’efficacité des fonctionnalités d’Apple Fitness+ et de ses entraînements. Vos données ne seront en aucun cas utilisées à d’autres fins. Les détails de vos entraînements, comme le titre ou le coach, pourraient révéler des informations sensibles à leur sujet, par exemple s’il s’agit d’un entraînement prénatal. Ces informations n’incluent pas de données provenant des capteurs de santé et d’activité (comme votre fréquence cardiaque, les calories et les kilojoules). Les données de la fonction « Améliorer Fitness+ » sont stockées avec vos autres données Fitness+, à l’aide d’un identifiant aléatoire propre à Apple Fitness+, qui n’est pas associé à votre compte Apple.\n\nVous pouvez choisir de désactiver « Améliorer Fitness+ » à tout moment. Pour ce faire, accédez à Réglages > Confidentialité et sécurité > Analyse et améliorations, puis désactivez « Améliorer Fitness+ ».\n\nEn activant « Améliorer Fitness+ », vous acceptez qu’Apple, ses filiales et ses représentants transmettent, recueillent, conservent, traitent, utilisent et divulguent ces données comme décrit ci-dessus. Il se peut qu’Apple stocke ces informations en utilisant les services de fournisseurs de confiance.\n\nLes informations recueillies par Apple sont systématiquement traitées conformément à la politique de confidentialité d’Apple, disponible sur www.apple.com/ca/fr/privacy."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "「改進Fitness+」會傳送與你的體能訓練相關的其他資訊給Apple，包含體能訓練的名稱和教練，以開發、改進和瞭解Apple Fitness+功能和體能訓練是否有效。你的資料不會用在其他用途。體能訓練的詳細資訊（如名稱或教練）可能會透露關於體能訓練的敏感資訊（例如，是否為產前訓練）。此資訊不包含來自健康和活動記錄相關感測器的資料（例如你的心率、卡路里或千焦耳）。你的「改進Fitness+」資料會透過一個Apple Fitness+專屬的隨機識別碼與其他Fitness+資料一起儲存，此識別碼不會和你的「Apple帳號」產生關聯。\n\n你可以隨時選擇停用「改進Fitness+」。若要停止，請前往「設定」>「隱私權與安全性」>「分析與改進功能」，然後點一下來關閉「改進Fitness+」。\n\n啟用「改進Fitness+」，即表示同意並接受Apple及其子公司和代理人以如上所示的方式傳送、收集、維護、處理、使用和揭露此資訊。Apple可能會將此資訊儲存在信任的服務供應商中。\n\n在任何時間，Apple都會依照「Apple隱私權政策」的規定來處理收集的資訊，請參訪www.apple.com/tw/privacy"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "「改進Fitness+」將更多體能訓練相關資料傳送到Apple，包括體能訓練標題和教練，以開發、改進和了解Apple Fitness+ 功能和體能訓練的有效性。你的資料不會用於其他用途。體能訓練的詳細資料（如名稱和教練）可能會透露關於你體能訓練的敏感資料，例如該訓練是否產前體能訓練。此資料不包括來自健康和健身記錄相關感應器的資料（例如你的心率、卡路里或千焦）。你的「改進Fitness+」資料與你其他Fitness+ 資料一起儲存，其使用Apple Fitness+ 特定的隨機識別碼，且不會連繫至你的Apple帳户。\n\n你隨時都可以選擇停用「改進Fitness+」。如要這樣做，請前往「設定」>「私隱與保安」>「分析與改進」，然後點一下以關閉「改進Fitness+」。\n\n啟用「改進Fitness+」，即表示同意並接受Apple及其子公司和代理以如上所示的方式傳送、收集、維護、處理、使用和披露有關資料。Apple可能會將這些資料儲存於信任的服務供應商。\n\n無論何時，Apple都會根據「Apple私隱政策」的規定處理所收集的資料，請瀏覽：www.apple.com/hk/privacy"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Förbättra Fitness+ skickar ytterligare information om dina träningar till Apple, inklusive träningstitlar och tränare, för att kunna utveckla, förbättra och utvärdera effektiviteten hos funktioner och träningar i Apple Fitness+. Dina data kommer inte att användas för något annat ändamål. Träningsuppgifter, som titlar eller namn på tränare, kan avslöja känslig information om din träning, exempelvis om det är en gravidträning. Informationen innehåller inga data från hälso- och aktivitetsrelaterade sensorer (exempelvis puls eller kalorier). Dina Förbättra Fitness+-data lagras tillsammans med dina andra Fitness+-data och kopplas till ett slumpmässigt ID som är specifikt för Fitness+ och inte är kopplat till ditt Apple‑konto.\n\nDu kan när som helst välja att avaktivera Förbättra Fitness+. Du gör detta genom att öppna Inställningar > Integritet och säkerhet > Analys och förbättringar och trycka för att stänga av Förbättra Fitness+.\n\nGenom att aktivera Förbättra Fitness+ godkänner du och samtycker till att Apple och dess dotterbolag och agenter överför, samlar in, underhåller, behandlar och delar den här informationen enligt vad som beskrivs ovan. Apple kan lagra den här informationen hos betrodda tjänsteleverantörer.\n\nInformation som samlas in av Apple kommer under alla förhållanden att behandlas i enlighet med Apples integritetspolicy, som finns på www.apple.com/se/privacy"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“Fitness+ को बेहतर बनाएँ” द्वारा वर्कआउट टाइटल और ट्रेनर सहित आपके वर्कआउट की अतिरिक्त जानकारी Apple को भेजी जाती है, ताकि Apple Fitness+ के फ़ीचर और वर्कआउट की प्रभाविता को विकसित, बेहतर किया जाए और समझा जाए। आपके डेटा का उपयोग किसी अन्य उद्देश्य के लिए नहीं किया जाएगा। शीर्षक या ट्रेनर जैसे वर्कआउट विवरण आपके वर्कआउट के बारे में संवेदनशील जानकारी प्रकट कर सकते हैं, जैसे कि यह प्रसव पूर्व किया जाने वाला एक्सरसाइज़ है या नहीं। इस जानकारी में सेहत और ऐक्टिविटी संबंधी सेंसर (जैसे कि आपकी हृदय दर, कैलोरी या किलोज़ूल) का डेटा शामिल नहीं होता है। “Fitness+ को बेहतर बनाएँ” का आपका डेटा आपके अन्य Fitness+ डेटा के साथ एक रैंडम विशिष्ट आइडेंटिफ़ायर के साथ संग्रहित किया जाता है जो Apple Fitness+ विशिष्ट होता है और यह आपके Apple खाते से संबद्ध नहीं होता है।\n\nआप “Fitness+ को बेहतर बनाएँ” को किसी भी समय अक्षम करना चुन सकते हैं। ऐसा करने के लिए, सेटिंग्ज़ > गोपनीयता और सुरक्षा > ऐनालिटिक्स और सुधार पर जाएँ और “Fitness+ को बेहतर बनाएँ” को बंद करने के लिए टैप करें।\n\n“Fitness+ को बेहतर बनाएँ” को सक्षम करके आप Apple व उसके सहयोगियों और अभिकर्ताओं द्वारा ऊपर किए गए वर्णनानुसार इस जानकारी का संचार, संग्रह, रखरखाव, प्रोसेस और उपयोग करने के लिए सहमत होते हैं और अनुमति देते हैं। Apple इस जानकारी को भरोसेमंद सर्विस प्रोवाइडर के पास संग्रहित कर सकता है।\n\nApple द्वारा एकत्रित जानकारी को हमेशा Apple की गोपनीयता नीति के अनुसार व्यवहार में लाया जाएगा, जिसे www.apple.com/in/privacy पर देखा जा सकता है।"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funkcja Ulepszanie (Fitness+) wysyła do Apple dodatkowe informacje dotyczące Twoich treningów, w tym nazwy treningów oraz instruktorów, w celu rozwijania, ulepszania oraz zrozumienia skuteczności funkcji Apple Fitness+ oraz treningów. Twoje dane nie będą wykorzystywane do żadnych innych celów. Szczegóły dotyczące treningów, takie jak ich tytuły oraz dane instruktorów, mogą ujawnić poufne informacje dotyczące Twoich treningów — na przykład, czy dany trening przeznaczony jest dla kobiet w ciąży. Te informacje nie zawierają danych pochodzących z czujników związanych ze zdrowiem i aktywnością (na przykład tętna, kalorii lub kilodżuli). Twoje dane związane z funkcją Ulepszanie (Fitness+) są zapisywane z innymi danymi usługi Fitness+ powiązanymi z losowym identyfikatorem właściwym dla usługi Apple Fitness+, który nie jest powiązany z Twoim kontem Apple.\n\nW dowolnym momencie możesz wyłączyć funkcję Ulepszanie (Fitness+). W tym celu przejdź do Ustawień, stuknij w Prywatność i ochrona > Analizy i udoskonalenia, a następnie wyłącz stuknięciem opcję Ulepszanie (Fitness+).\n\nWłączając funkcję Ulepszanie (Fitness+), wyrażasz zgodę na przesyłanie, gromadzenie, konserwację, przetwarzanie, używanie oraz ujawnianie tych danych przez firmę Apple oraz jej podmioty zależne i agentów w sposób opisany powyżej. Apple może przechowywać te informacje na serwerach swoich zaufanych usługodawców.\n\nInformacje gromadzone przez Apple są zawsze traktowane zgodnie z zasadami ochrony prywatności Apple, dostępnymi na stronie www.apple.com/pl/privacy."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gør Fitness+ bedre sender yderligere oplysninger om dine træninger til Apple, herunder titler på træninger og navne på trænere, med henblik på at udvikle, forbedre og forstå effektiviteten af funktioner og træninger i Apple Fitness+. Dine data vil ikke blive brugt til nogen andre formål. Oplysninger om træninger (titel, trænerens navn m.m.) kan muligvis afsløre følsomme oplysninger om din træning, f.eks. om det er træning for gravide. Disse oplysninger inkluderer ikke data fra sundheds- og aktivitetsrelaterede sensorer (f.eks. om puls og kalorier eller kilojoule). Dine data til Gør Fitness+ bedre opbevares ligesom dine øvrige Fitness+-data sammen med et tilfældigt id, som er specifikt for Apple Fitness+, og som ikke er forbundet med din Apple‑konto.\n\nDu kan altid vælge at slå Gør Fitness+ bedre fra. Det gør du ved at gå til Indstillinger > Anonymitet & sikkerhed > Analyse og forbedringer og slå Gør Fitness+ bedre fra.\n\nVed at slå Gør Fitness+ bedre til erklærer du dig indforstået med, at Apple, dets datterselskaber og agenter sender, indsamler, vedligeholder, behandler, benytter og videregiver disse oplysninger som beskrevet ovenfor. Apple vil muligvis opbevare disse oplysninger hos godkendte tjenesteudbydere.\n\nOplysninger indsamlet af Apple vil altid blive behandlet i overensstemmelse med Apples anonymitetspolitik, som kan læses på www.apple.com/dk/privacy."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Fitness+ sends additional information about your workouts to Apple, including workout titles and trainers, in order to develop, improve, and understand the effectiveness of Apple Fitness+ features and workouts. Your data will not be used for any other purpose. Workout details, like the title or trainer, may reveal sensitive information about your workout, such as whether it is a prenatal workout. This information does not include data from health and activity-related sensors (such as your heart rate, calories, or kilojoules). Your Improve Fitness+ data is stored with your other Fitness+ data, against a random identifier that is specific to Apple Fitness+ and not associated with your Apple Account.\n\nYou can choose to disable Improve Fitness+ at any time. To do so, go to Settings > Privacy & Security > Analytics & Improvements and tap to turn off Improve Fitness+.\n\nBy enabling Improve Fitness+, you agree and consent to Apple’s and its subsidiaries’ and agents’ transmission, collection, maintenance, processing, use, and disclosure of this information as described above. Apple may store this information with trusted service providers.\n\nAt all times, information collected by Apple will be treated in accordance with Apple’s Privacy Policy, which can be found at www.apple.com/privacy"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forbedre Fitness+ sender ytterligere informasjon om treningsøktene dine til Apple, inkludert navn på treningsøkter og trenere, for å kunne utvikle, forbedre og forstå hvor godt funksjonene og treningsøktene i Apple Fitness+ fungerer. Dataene dine vil ikke bli brukt til andre formål. Informasjon om treningsøkter, som navn på treningsøkter eller trenere, kan inneholde sensitiv informasjon, for eksempel om det er en treningsøkt for gravide. Denne informasjonen inkluderer ikke data fra helse- og aktivitetsrelaterte sensorer (for eksempel puls, kalorier eller kilojoule). Dataene du bidrar med i Forbedre Fitness+ lagres sammen med de andre dataene dine fra Fitness+ og har en tilfeldig identifikator som kun gjelder for Apple Fitness+ og ikke er knyttet til Apple‑kontoen din.\n\nDu kan når som helst velge å deaktivere Forbedre Fitness+. Det gjør du ved å gå til Innstillinger > Personvern og sikkerhet > Analyse og forbedringer og trykke for å slå av Forbedre Fitness+.\n\nVed å aktivere Forbedre Fitness+ godtar du at Apple, samt våre underleverandører og samarbeidspartnere, kan samle inn, overføre, vedlikeholde, behandle, bruke og utlevere informasjonen som beskrevet ovenfor. Apple kan oppbevare denne informasjonen hos pålitelige tjenesteleverandører.\n\nAll informasjon Apple samler inn, blir behandlet i samsvar med Apples retningslinjer for personvern, som du kan lese på www.apple.com/no/privacy."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عند اختيار تحسين Fitness+‎، يتم إرسال معلومات إضافية حول تمارينك إلى Apple، بما في ذلك عناوين التمارين والمدربين، وذلك بهدف تطوير وتحسين وإدراك مدى فعّالية ميزات وتمارين Apple Fitness+‎. لن تُستخدم بياناتك لأي غرض آخر. قد تكشف تفاصيل التمارين، مثل العنوان أو المدرب، معلومات حساسة بخصوص تمرينك، مثل كونه من التمارين السابقة للولادة. لا تتضمن هذه المعلومات بيانات من مستشعرات الصحة والنشاط (مثل معدل نبض القلب أو السعرات الحرارية أو الكيلوجول). تُخزَّن بيانات تحسين Fitness+‎ مع بيانات Fitness+‎ الأخرى، ويتم ربطها بمعرِّف عشوائي خاص بـ Apple Fitness+‎ وليس بحساب Apple.\n\nيمكنك اختيار تعطيل تحسين Fitness+‎ في أي وقت. لتنفيذ ذلك، انتقل إلى الإعدادات > الخصوصية والأمن > التحليلات والتحسينات، واضغط لإيقاف \"تحسين Fitness+‎\".\n\nيُعد تمكين تحسين Apple Fitness+‎ بمثابة موافقة منك على أن تقوم Apple وشركاتها الفرعية ووكلاؤها بنقل هذه المعلومات وجمعها والاحتفاظ بها ومعالجتها واستخدامها على النحو المبين أعلاه. قد تخزن شركة Apple هذه المعلومات لدى مزودي خدمة موثوق بهم.\n\nسيتم - في جميع الأوقات - التعامل مع المعلومات التي تجمعها Apple وفقًا لسياسة خصوصية Apple، والتي يمكن العثور عليها على الرابط:\nwww.apple.com/ae-ar/privacy"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "การปรับปรุง Fitness+ จะส่งข้อมูลเพิ่มเติมเกี่ยวกับการออกกำลังกายของคุณไปที่ Apple รวมถึงชื่อการออกกำลังกายและเทรนเนอร์ เพื่อพัฒนา ปรับปรุง และทำความเข้าใจกับประสิทธิภาพของคุณสมบัติและการออกกำลังกายของ Apple Fitness+ ข้อมูลของคุณจะไม่ถูกนำไปใช้เพื่อจุดประสงค์อื่นใด รายละเอียดการออกกำลังกาย เช่น ชื่อการออกกำลังกายหรือเทรนเนอร์ อาจแสดงข้อมูลที่ไม่ต้องการเปิดเผยเกี่ยวกับการออกกำลังกายของคุณ ตัวอย่างเช่น เป็นการออกกำลังกายก่อนคลอดหรือไม่ ข้อมูลนี้ไม่รวมถึงข้อมูลจากเซ็นเซอร์ที่เกี่ยวข้องกับสุขภาพและกิจกรรม (เช่น อัตราการเต้นของหัวใจ แคลอรี หรือกิโลจูล) ข้อมูลการปรับปรุง Fitness+ ของคุณจะถูกจัดเก็บอยู่กับข้อมูล Fitness+ อื่นของคุณเทียบกับข้อมูลจำเพาะแบบสุ่มเฉพาะสำหรับ Apple Fitness+ และไม่ผูกกับบัญชี Apple ของคุณ\n\nคุณสามารถเลือกที่จะปิดใช้งานการปรับปรุง Fitness+ ได้ตลอดเวลา ในการทำเช่นนั้น ให้ไปที่การตั้งค่า > ความเป็นส่วนตัวและความปลอดภัย > การวิเคราะห์และการปรับปรุง แล้วแตะเพื่อปิดใช้การปรับปรุง Fitness+\n\nโดยการเปิดใช้งานการปรับปรุง Fitness+ จะถือว่า คุณยอมรับและยินยอมกับการส่งข้อมูล การเก็บรวบรวมข้อมูล การบำรุงรักษาข้อมูล การประมวลผลข้อมูล การใช้ข้อมูล และการเปิดเผยข้อมูลนี้ที่อธิบายข้างต้นของ Apple, บริษัทในเครือ และตัวแทน Apple อาจจัดเก็บข้อมูลนี้กับผู้ให้บริการที่เชื่อถือได้\n\nข้อมูลที่เก็บรวบรวมโดย Apple จะได้รับการปฏิบัติตามนโยบายความเป็นส่วนตัวของ Apple เสมอ ซึ่งสามารถดูได้ที่ www.apple.com/th/privacy"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“改进Fitness+”会将体能训练的其他信息（包括体能训练名称和教练）发送给Apple，以开发、改进Apple Fitness+功能和体能训练以及了解其有效性。你的数据不会用于任何其他目的。名称或教练等体能训练详细信息可能会透露出有关你体能训练的敏感信息，如是否为产前体能训练。此信息不包括来自健康和健身记录相关传感器的数据（如心率、卡路里或千焦）。“改进Fitness+”数据会依据特定于Apple Fitness+且不关联Apple ID的随机标识符与其他Fitness+数据一起储存。\n\n你可以随时选择停用“改进Fitness+”。若要停用，请前往“设置”>“隐私与安全性”>“分析与改进”，然后轻点以关闭“改进Fitness+”。\n\n启用“改进Fitness+”即表示你同意和允许Apple及其下属公司和代理机构传输、收集、维护、处理、使用和披露上述信息。Apple可能通过受信任的服务提供商储存此信息。\n\nApple收集的信息始终会遵照Apple的“隐私政策”处理，其内容可参阅www.apple.com/cn/privacy"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Fitness+ sends additional information about your workouts to Apple, including workout titles and trainers, in order to develop, improve and understand the effectiveness of Apple Fitness+ features and workouts. Your data will not be used for any other purpose. Workout details, like the title or trainer, may reveal sensitive information about your workout, such as whether it is a prenatal workout. This information does not include data from health- and activity-related sensors (such as your heart rate, calories or kilojoules). Your Improve Fitness+ data is stored with your other Fitness+ data against a random identifier that is specific to Apple Fitness+ and not associated with your Apple Account.\n\nYou can choose to disable Improve Fitness+ at any time. To do so, go to Settings > Privacy & Security > Analytics & Improvements and tap to turn off Improve Fitness+.\n\nBy enabling Improve Fitness+, you agree and consent to Apple’s and its subsidiaries’ and agents’ transmission, collection, maintenance, processing, use and disclosure of this information as described above. Apple may store this information with trusted service providers.\n\nAt all times, information collected by Apple will be treated in accordance with Apple’s Privacy Policy, which can be found at apple.com/uk/privacy"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Programos „Fitness+“ pagerinimo funkcija siunčia bendrovei „Apple“ papildomą informaciją apie treniruotes, įskaitant treniruočių pavadinimus ir trenerius, kad būtų galima plėtoti, patobulinti ir suprasti „Apple Fitness+“ funkcijų ir treniruočių efektyvumą. Jūsų duomenys nebus naudojami jokiam kitam tikslui. Išsami informacija apie treniruotę, pvz., pavadinimas ar treneris, gali atskleisti neskelbtiną informaciją apie jūsų treniruotę, pvz., ar tai treniruotė nėščiosioms. Ši informacija neapima duomenų iš su sveikata ir aktyvumu susijusių jutiklių (pvz., širdies ritmo, kalorijų ar kilodžaulių). Funkcijos „Patobulinti „Fitness+“ duomenys saugomi kartu su kitais „Fitness+“ duomenimis, naudojant atsitiktinį identifikatorių, kuris skirtas būtent paslaugai „Apple Fitness+“ ir nėra susietas su jūsų „Apple“ paskyra.\n\nBet kuriuo metu galite pasirinkti išjungti funkciją „Patobulinti „Fitness+“. Norėdami tai padaryti, eikite į sritį „Nustatymai“ > „Privatumas ir sauga“ > „Analizė ir patobulinimai“ ir bakstelėkite, kad išjungtumėte funkciją „Patobulinti „Fitness+“.\n\nĮjungdami funkciją „Patobulinti „Fitness+“ sutinkate, kad bendrovė „Apple“ ir jos patronuojamosios įmonės bei agentai perduotų, rinktų, prižiūrėtų, apdorotų, naudotų ir atskleistų šią informaciją, kaip apibūdinta pirmiau. Bendrovė „Apple“ gali saugoti šią informaciją pas patikimus paslaugų teikėjus.\n\nBendrovės „Apple“ renkama informacija visada bus tvarkoma pagal „Apple“ privatumo politiką, kurią galite rasti svetainėje www.apple.com/privacy"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar Fitness+ envía a Apple información adicional sobre tus entrenamientos, incluyendo los nombres de los entrenamientos y los coaches, con el objetivo de desarrollar, mejorar y entender la eficacia de las funciones y entrenamientos de Apple Fitness+. Tus datos no se utilizan con ningún otro propósito. Los detalles de los entrenamientos, como el título o coach, podrían revelar información confidencial sobre tu entrenamiento como, por ejemplo, si es un entrenamiento prenatal. La información que se envía no incluye datos obtenidos con los sensores de actividad y salud (como tu ritmo cardiaco, calorías o kilojoules). Tus datos de Mejorar Fitness+ se almacenan con tus demás datos de Apple Fitness+ mediante un identificador aleatorio y específico para Apple Fitness+, y no se asocian con tu cuenta de Apple.\n\nPuedes desactivar Mejorar Fitness+ en cualquier momento, lo cual puedes hacer en Configuración > Privacidad > Análisis y mejoras.\n\nAl activar Mejorar Fitness+, aceptas y das consentimiento para la transmisión, recopilación, mantenimiento, procesamiento, uso y divulgación de esta información según se describe anteriormente por parte de Apple y sus subsidiarios. Apple podría almacenar esta información con proveedores de servicios de confianza.\n\nLa información que Apple recopile se tratará en todo momento de conformidad con la Política de privacidad de Apple, la cual puedes consultar en www.apple.com/la/privacy"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funkce Vylepšování služby Fitness+ zasílá společnosti Apple doplňující informace o vašich cvičeních, mimo jiné jejich názvy a jména trenérů. Pomáhá tak s vývojem, vylepšováním a analýzou efektivity funkcí služby Apple Fitness+ a cvičení. Vaše údaje nebudou použity k žádnému jinému účelu. Podrobné údaje o cvičeních, například jejich názvy a informace o trenérech, mohou obsahovat citlivé údaje související s vaším cvičením, například zda se nejedná o těhotenské cvičení. Tyto údaje neobsahují data z čidel souvisejících se zdravím a aktivitou (jako je tepová frekvence nebo spálené kalorie či kilojouly). Data funkce Vylepšování služby Fitness+ jsou uchovávána společně s vašimi dalšími daty ze služby Fitness+ pod náhodným identifikátorem, který je specifický pro službu Apple Fitness+ a není sdružený s vaším účtem Apple.\n\nFunkci Vylepšování služby Fitness+ můžete kdykoli vypnout. Chcete‑li to udělat, přejděte do Nastavení > Soukromí a zabezpečení > Analýza a vylepšování a klepnutím vypněte volbu Vylepšování služby Fitness+.\n\nZapnutím funkce Vylepšování služby Fitness+ udělujete společnosti Apple a jejím dceřiným společnostem a zástupcům souhlas s přenášením, shromažďováním, údržbou, zpracováním, využíváním a poskytováním těchto informací výše popsaným způsobem. Společnost Apple může tato data ukládat u důvěryhodných poskytovatelů služeb.\n\nSpolečnost Apple bude se shromážděnými informacemi za všech okolností nakládat v souladu se svými zásadami ochrany osobních údajů, jejichž znění najdete na adrese www.apple.com/cz/privacy."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tingkatkan Fitness+ menghantar maklumat tambahan tentang latihan anda kepada Apple, termasuk tajuk latihan dan jurulatih, untuk membangunkan, meningkatkan dan memahami keberkesanan ciri dan latihan Apple Fitness+. Data anda tidak akan digunakan untuk sebarang tujuan lain. Butiran latihan, seperti tajuk atau jurulatih, mungkin mendedahkan maklumat sensitif tentang latihan anda, seperti sama ada ini latihan pranatal. Maklumat ini tidak termasuk data daripada sensor berkaitan kesihatan dan aktiviti (seperti kadar jantung, kalori atau kilojoule anda). Data Tingkatkan Fitness+ anda disimpan dengan data Fitness+ anda yang lain, terhadap pengecam rawak yang khusus untuk Apple Fitness+ dan tidak dikaitkan dengan Akaun Apple anda.\n\nAnda boleh memilih untuk menyahdayakan Tingkatkan Fitness+ pada bila-bila masa. Untuk berbuat demikian, pergi ke Seting > Privasi & Keselamatan > Analitis & Peningkatan dan ketik untuk menyahaktifkan Tingkatkan Fitness+.\n\nDengan mendayakan Tingkatkan Fitness+, anda bersetuju dan mengizinkan penghantaran, pengumpulan, penyenggaraan, pemprosesan, penggunaan dan pendedahan maklumat ini oleh Apple dan subsidiari serta ejennya seperti yang diterangkan di atas. Apple mungkin menyimpan maklumat ini dengan penyedia khidmat yang dipercayai.\n\nPada setiap masa, maklumat yang dikumpulkan oleh Apple akan dikendalikan berpandukan Dasar Privasi Apple, yang boleh didapati di www.apple.com/my/privacy"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funkcia Vylepšovať službu Fitness+ odosiela spoločnosti Apple ďalšie informácie o vašich tréningoch vrátane ich názvov a trénerov. Pomáha tak s vývojom, vylepšovaním a analýzou efektivity funkcií a tréningov služby Apple Fitness+. Vaše dáta nebudú použité na žiadne iné účely. Podrobnosti o tréningoch, napríklad názov a tréner, môžu prezrádzať povahu vašej pohybovej aktivity. Môžu napríklad odhaliť, že ide o prenatálny tréning. Tieto informácie nezahŕňajú dáta zo senzorov súvisiacich so zdravím a aktivitou, ako sú napríklad srdcová frekvencia, kalórie alebo kilojouly. Dáta z funkcie Vylepšovať službu Fitness+ sú uchovávané spolu s vašimi ďalšími dátami zo služby Fitness+ pod náhodným identifikátorom, ktorý je špecifický pre službu Apple Fitness+ a nie je prepojený s vaším Apple účtom.\n\nFunkciu Vylepšovať službu Fitness+ môžete kedykoľvek vypnúť. Prejdite do Nastavenia > Súkromie a bezpečnosť > Analytika a vylepšovanie a vypnite možnosť Vylepšovať službu Fitness+.\n\nZapnutím funkcie Vylepšovať službu Fitness+ súhlasíte s tým, že spoločnosť Apple a jej dcérske spoločnosti a agenti môžu prenášať, zhromažďovať, spravovať, spracovávať a používať tieto informácie tak, ako je to popísané vyššie. Spoločnosť Apple môže tieto informácie uchovať u dôveryhodných poskytovateľov služieb.\n\nS informáciami zhromaždenými spoločnosťou Apple sa po celý čas bude zaobchádzať v súlade so zásadami ochrany súkromia spoločnosti Apple, ktoré nájdete na adrese www.apple.com/sk/privacy."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Подобряване на Fitness+ изпраща допълнителна информация за вашите тренировки на Apple, включително името и треньорите на тренировките, за да разработва, подобрява и оценява ефективността на функциите и тренировките в Apple Fitness+. Данните ви няма да бъдат използвани за други цели. Детайлите за тренировката, като заглавие или треньор, могат да разкрият поверителна информация за вашата тренировка, например дали това е пренатална тренировка. Тази информация не включва данните от сензорите, свързани със здраве и активност (като сърдечна честота, калории или килоджаули). Вашите данни от Подобряване на Fitness+ се съхраняват с другите ви данни от Fitness+ към случаен идентификатор, който е специфичен за услугата Apple Fitness+ и не е свързан с вашата Apple регистрация.\n\nМожете да изберете да изключите Подобряване на Fitness+ по всяко време. За да направите това, отидете в Настройки > Поверителност и сигурност > Аналитични данни и подобрения и докоснете, за да изключите Подобряване на Fitness+.\n\nКато активирате Подобряване на Fitness+, вие се съгласявате и разрешавате Apple и нейните дъщерни дружества и агенти да предават, събират, поддържат, обработват, използват и разкриват тази информация, както е описано по-горе. Apple може да съхранява тази информация с доверени компании, които предоставят услуги.\n\nСъбраната от Apple информация винаги ще се третира в съответствие с Политиката за поверителност на Apple, която може да се намери на адрес www.apple.com/privacy."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Fitness+ sends additional information about your workouts to Apple, including workout titles and instructors, in order to develop, improve and understand the effectiveness of Apple Fitness+ features and workouts. Your data will not be used for any other purpose. Workout details, like the title or instructor, may reveal sensitive information about your workout, such as whether it is a prenatal workout. This information does not include data from health and activity–related sensors (such as your heart rate, calories or kilojoules). Your Improve Fitness+ data is stored with your other Fitness+ data, against a random identifier that is specific to Apple Fitness+ and not associated with your Apple Account.\n\nYou can choose to disable Improve Fitness+ anytime. To do so, go to Settings > Privacy & Security > Analytics & Improvements and tap to turn off Improve Fitness+.\n\nBy enabling Improve Fitness+, you agree and consent to Apple’s and its subsidiaries’ and agents’ transmission, collection, maintenance, processing, use and disclosure of this information as described above. Apple may store this information with trusted service providers.\n\nAt all times, information collected by Apple will be treated in accordance with Apple’s Privacy Policy, which can be found at www.apple.com/au/privacy"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Za namen izboljšanja storitve Fitness+ se družbi Apple pošiljajo dodatni podatki o vaših vadbah, vključno z naslovi vadb in trenerji, za namen razvijanja in izboljšanja funkcij storitve Apple Fitness+ in vadb ter spoznavanja njihove učinkovitosti. Vaši podatki ne bodo uporabljeni za noben drug namen. Podrobnosti o vadbi, na primer naziv ali trener, lahko razkrijejo občutljive podatke o vaši vadbi, na primer to, ali gre za vadbo pred rojstvom otroka. Te informacije ne vključujejo podatkov iz senzorjev, povezanih z zdravjem in aktivnostjo (kot so vaš srčni utrip, kalorije ali kilodžuli). Vaši podatki, zbrani v okviru izboljšanja storitve Fitness+, se hranijo z vašimi drugimi podatki storitve Fitness+ na podlagi naključnega identifikatorja, ki je značilen za storitev Apple Fitness+ in ni povezan z vašim računom Apple.\n\nIzboljšanje storitve Fitness+ lahko onemogočite kadarkoli. To naredite tako, da odprete Nastavitve > Zasebnost in varnost > Analitika in izboljšave ter tapnete, da izklopite možnost Izboljšanje storitve Fitness+.\n\nČe vklopite možnost Izboljšanje storitve Fitness+, se strinjate in dovolite, da Apple, njegove podružnice in zastopniki prenašajo, zbirajo, ohranjajo, obdelujejo, uporabljajo in razkrivajo te informacije, kot je opisano zgoraj. Apple lahko te informacije hrani pri zaupanja vrednih ponudnikih storitev.\n\nPodatki, ki jih zbira Apple, bodo vedno obravnavani v skladu s pravilnikom o zasebnosti družbe Apple, ki je na voljo na naslovu www.apple.com/si/privacy"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„Fitness+ verbessern“ sendet zusätzliche Informationen über deine Trainings an Apple, darunter Trainingstitel und Trainer, um die Effektivität von „Apple Fitness+“-Funktionen und -Trainings weiterzuentwickeln, zu verbessern und zu verstehen. Deine Daten werden für keine anderen Zwecke verwendet. Trainingsdetails wie Titel oder Trainer:in können sensible Informationen über dein Training preisgeben, z. B. wenn es sich dabei um ein Geburtsvorbereitungstraining handelt. Diese Informationen umfassen keine Daten von gesundheits- und aktivitätsbezogenen Sensoren (etwa deine Herzfrequenz, Kalorien oder Kilojoules). Deine „Fitness+ verbessern“-Daten werden mit deinen anderen „Fitness+“-Daten mit einer zufälligen ID gespeichert, die für Apple Fitness+ spezifisch ist und nicht mit deinem Apple Account verknüpft ist.\n\nDu kannst „Fitness+ verbessern“ jederzeit deaktivieren. Wähle dazu „Einstellungen“ > „Datenschutz & Sicherheit“ > „Analyse & Verbesserungen“ und deaktiviere „Fitness+ verbessern“ durch Tippen.\n\nMit dem Aktivieren der Funktion „Fitness+ verbessern“ erklärst du dein Einverständnis damit, dass Apple und seine Tochtergesellschaften und Vertreter diese Informationen wie vorstehend aufgeführt übertragen, sammeln, verwalten, verarbeiten, verwenden und offenlegen dürfen. Apple ist berechtigt, vertrauenswürdige Anbieter derartiger Dienste mit dem Speichern dieser Daten zu beauftragen.\n\nDie von Apple erfassten Informationen werden jederzeit gemäß der Apple-Datenschutzrichtlinie behandelt, die unter www.apple.com/de/privacy zu finden ist."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cải thiện Fitness+ gửi thông tin bổ sung về các bài tập của bạn đến Apple, bao gồm tiêu đề bài tập và huấn luyện viên, để phát triển, cải thiện và hiểu hiệu quả của các tính năng và bài tập Apple Fitness+. Dữ liệu của bạn sẽ không được sử dụng cho bất kỳ mục đích nào khác. Các chi tiết của bài tập, như tiêu đề hoặc huấn luyện viên, có thể tiết lộ thông tin nhạy cảm về bài tập của bạn, ví dụ như đó có phải là một bài tập trước khi sinh không. Thông tin này không bao gồm dữ liệu từ các cảm biến liên quan đến hoạt động và sức khỏe (ví dụ như nhịp tim của bạn, lượng calo hoặc kilôjun). Dữ liệu Cải thiện Fitness+ của bạn được lưu trữ cùng với dữ liệu Fitness+ khác, dựa vào một mã định danh ngẫu nhiên dành riêng cho Apple Fitness+ và không được liên kết với Tài khoản Apple của bạn.\n\nBạn có thể lựa chọn tắt Cải thiện Fitness+ bất kỳ lúc nào. Để thực hiện, hãy đi tới Cài đặt > Quyền riêng tư & Bảo mật > Phân tích & Cải tiến và chạm để tắt Cải thiện Fitness+.\n\nBằng việc bật Cải thiện Fitness+, bạn đồng ý và cho phép Apple, các công ty con và đại lý của hãng chuyển giao, thu thập, duy trì, xử lý, sử dụng và tiết lộ thông tin này như được mô tả ở trên. Apple có thể lưu trữ thông tin này với các nhà cung cấp dịch vụ được tin cậy.\n\nThông tin do Apple thu thập sẽ luôn được xử lý theo Chính sách quyền riêng tư của Apple, có thể tìm thấy tại địa chỉ www.apple.com/vn/privacy"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O Melhorar o Fitness+ envia informações adicionais sobre seus treinos à Apple, incluindo títulos de treinos e treinadores, a fim de desenvolver, melhorar e entender a efetividade dos recursos e exercícios do Apple Fitness+. Seus dados não serão usados para nenhum outro propósito. Detalhes dos treinos (como título ou nome do treinador) podem revelar informações sensíveis, por exemplo, se esse treino é pré-natal. Tais informações não incluem dados de sensores relacionados à saúde e atividade (como seus batimentos cardíacos, calorias ou quilojoules). Seus dados da função Melhorar o Fitness+ são armazenados com os outros dados do Fitness+, com um identificador aleatório específico do Apple Fitness+, e não são associados à sua Conta Apple.\n\nVocê pode optar por desativar o Melhorar o Fitness+ a qualquer momento. Para fazer isso, abra Ajustes > Privacidade e Segurança > Análise e Melhorias e desative a opção Melhorar o Fitness+.\n\nAo ativar a opção Melhorar o Fitness+, você consente e concorda que a Apple e suas subsidiárias e agentes possam transmitir, coletar, manter, processar, usar e divulgar essas informações conforme descrito acima. A Apple pode armazenar essas informações com provedores de serviço de confiança.\n\nAs informações coletadas pela Apple serão sempre tratadas de acordo com a Política de Privacidade da Apple, que pode ser encontrada em www.apple.com/br/privacy"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funcționalitatea “Îmbunătățire Fitness+” trimite la Apple informații suplimentare despre exercițiile dvs., inclusiv titlurile și instructorii acestora, pentru a dezvolta, îmbunătăți și înțelege eficiența funcționalităților și exercițiilor Apple Fitness+. Datele dvs. nu vor fi utilizate în niciun alt scop. Detaliile despre exerciții, cum ar fi titlul sau instructorul, pot dezvălui informații sensibile despre exercițiile dvs., de exemplu, dacă este vorba de un exercițiu prenatal. Aceste informații nu includ date de la senzorii asociați cu sănătatea și activitatea (cum ar fi ritmul cardiac, caloriile sau kilojoulii). Datele Îmbunătățire Fitness+ sunt stocate alături de celelalte date Fitness+ ale dvs., utilizând un identificator aleatoriu, care este specific pentru Apple Fitness+ și nu este asociat cu contul dvs. Apple.\n\nPuteți opta oricând să dezactivați Îmbunătățire Fitness+. Pentru aceasta, accesați Configurări > Intimitate și securitate > Analiză și îmbunătățiri și apăsați pentru a dezactiva “Îmbunătățire Fitness+”.\n\nPrin activarea opțiunii “Îmbunătățire Fitness+”, sunteți de acord și consimțiți ca Apple și filialele și agenții Apple să transmită, colecteze, întrețină, proceseze, utilizeze și să dezvăluie aceste informații în condițiile descrise mai sus. Apple poate stoca aceste informații împreună cu furnizori autorizați de servicii.\n\nInformațiile colectate de Apple vor fi în permanență tratate în conformitate cu Politica de confidențialitate Apple, care se află la www.apple.com/ro/privacy."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Жаттығулар туралы қосымша ақпарат, оның ішінде жаттығу атаулары мен жаттықтырушылар туралы ақпарат Apple компаниясына Fitness+ сервисін жақсарту мақсатында жіберіледі. Бұл ақпарат Apple Fitness+ функциялары мен жаттығуларын әзірлеу, жақсарту және тиімділігін бағалау үшін пайдаланылады. Деректеріңіз өзге мақсатта пайдаланылмайды. Жаттығу атауы немесе жаттықтырушының аты сияқты жаттығу туралы мәліметтерде жаттығуыңыз жөніндегі құпия ақпарат (мысалы, аяғы ауырларға арналған жаттығу) болуы мүмкін. Бұл ақпарат денсаулық және белсенділік датчиктерінен алынған деректерді (мысалы, жүрек соғу жиілігі, калориялар немесе килоджоульдер саны) қамтымайды. Fitness+ сервисін жақсарту үшін пайдаланылатын деректер басқа Fitness+ деректерімен бірге сақталады. Бұл деректерге тек Apple Fitness+ сервисінде пайдаланылатын және Apple аккаунтымен байланыстырылмаған кездейсоқ идентификатор тағайындалады.\n\n«Fitness+ сервисін жақсарту» функциясын кез келген уақытта өшіруге болады. Ол үшін «Реттеулер» > «Құпиялылық және қауіпсіздік» > «Аналитика және жақсартулар» тармағына өтіп, «Fitness+ сервисін жақсарту» параметрін өшіріңіз.\n\n«Fitness+ сервисін жақсарту» функциясын қоса отырып, осы ақпаратты жоғарыда сипатталғандай Apple компаниясына, оның еншілес кәсіпорындары мен агенттеріне беруге, жинауға, сақтауға, өңдеуге, пайдалануға және жариялауға келісім бересіз. Apple компаниясы бұл ақпаратты сенімді сервис провайдерлерінде сақтауы мүмкін.\n\nApple компаниясы жинаған ақпарат әрқашан Apple компаниясының құпиялылық саясатына (www.apple.com/privacy сайтында берілген) сәйкес өңделеді"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "« Améliorer Fitness+ » envoie à Apple des informations supplémentaires concernant vos exercices, notamment leur nom et les coachs qui les animent, pour permettre de développer, d’améliorer et d’évaluer l’efficacité des fonctionnalités et exercices Apple Fitness+. Vos données ne seront pas utilisées à d’autres fins. Les détails des exercices, comme leur nom ou leur coach, peuvent révéler des informations sensibles concernant votre entraînement, par exemple s’il s’agit d’un exercice prénatal. Ces informations n’incluent pas les données issues des capteurs de santé et d’activité (comme votre fréquence cardiaque, les calories ou les kilojoules). Vos données « Améliorer Fitness+ » sont stockées avec vos autres données Fitness+ en utilisant un identifiant aléatoire propre à Apple Fitness+ et non associé à votre compte Apple.\n\nVous pouvez choisir de désactiver « Améliorer Fitness+ » à tout moment. Pour ce faire, accédez à Réglages > Confidentialité et sécurité > Analyse et améliorations et touchez le réglage « Améliorer Fitness+ » pour le désactiver.\n\nEn activant « Améliorer Fitness+ », vous acceptez qu’Apple ainsi que ses filiales et ses représentants transmettent, recueillent, conservent, traitent, utilisent et dévoilent ces informations comme décrit ci-dessus. Apple peut faire appel à des fournisseurs de service de confiance pour le stockage de ces informations.\n\nLes informations recueillies par Apple seront en tout temps traitées conformément à l’Engagement de confidentialité d’Apple, que vous pouvez consulter à l’adresse suivante : www.apple.com/fr/privacy"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La función “Mejorar Fitness+” envía a Apple información adicional acerca de tus entrenos, como los títulos de los entrenos y los entrenadores, para desarrollar, mejorar y entender la efectividad de las funciones y los entrenos de Apple Fitness+. Tus datos no se usarán para ningún otro propósito. Los datos de los entrenos, como los títulos o los nombres de los entrenadores, pueden revelar información sensible sobre los entrenos que realizas (por ejemplo, si se trata de una sesión para embarazadas). Esta información no incluye datos procedentes de sensores de actividad y salud (como tu frecuencia cardiaca o las calorías o kilojulios). Tus datos de “Mejorar Fitness+” se guardan con el resto de la información de Fitness+ usando un identificador aleatorio que es específico para Apple Fitness+ y que no se asocia a tu cuenta de Apple.\n\nPuedes desactivar la función “Mejorar Fitness+” cuando quieras desde Ajustes > Privacidad y seguridad > Análisis y mejoras.\n\nAl activar “Mejorar Fitness+”, aceptas y consientes la transmisión, obtención, mantenimiento, procesamiento, uso y divulgación de esta información por parte de Apple, sus filiales y agentes tal como se ha descrito anteriormente. Apple puede almacenar esta información con proveedores de servicios de confianza.\n\nToda esta información se recopila y se trata de acuerdo en todo momento con la política de privacidad de Apple, que puedes consultar en www.apple.com/es/privacy."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Функція «Покращення Fitness+» надсилає Apple додаткову інформацію про ваші тренування, зокрема назви тренувань та імена тренерів, щоб розвивати, покращувати й розуміти ефективність функцій і тренувань Apple Fitness+. Ваші дані не використовуватимуться для жодних інших цілей. Дані про тренування, як‑от його назва чи імʼя тренера, можуть розкрити конфіденційну інформацію, наприклад чи є тренування допологовим тренуванням. До цих даних не входять дані з датчиків, які вимірюють стан здоровʼя та активність (наприклад, серцевий ритм, калорії або кілоджоулі). Ваші дані функції «Покращення Fitness+» зберігатимуться разом з іншими вашими даними Fitness+ із випадковим ідентифікатором, який використовується лише в Apple Fitness+, і не повʼязуватимуться з вашим обліковим записом Apple.\n\nМожна будь‑коли вимкнути Покращення Fitness+. Для цього перейдіть у меню Параметри > Приватність і безпека > Аналітика і покращення й вимкніть параметр «Покращення Fitness+».\n\nУвімкнувши функцію «Покращення Fitness+», ви погоджуєтеся на передання, збирання, обслуговування, обробку, використання та розголошення цієї інформації компанією Apple, її філіями й представниками, як це описано вище. Apple може зберігати цю інформацію у довірених постачальників послуг.\n\nІнформація, яку збирає Apple, завжди оброблятиметься відповідно до Політики конфіденційності Apple, наведеної на вебсайті www.apple.com/ua/privacy"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Značajka Poboljšanje Fitnessa+ šalje tvrtki Apple dodatne informacije o vašim treninzima, uključujući naslove treninga i trenere radi razvoja, poboljšanja i razumijevanja učinkovitosti značajki usluge Apple Fitness+ i treninga. Vaši podaci neće se koristiti ni u koje druge svrhe. Detalji treninga, poput naslova ili trenera, mogu otkriti osjetljive informacije o vašem treningu, primjerice radi li se o treningu za trudnice. Ove informacije ne uključuju podatke iz senzora vezanih uz zdravlje i aktivnost (kao što su puls, kalorije ili kilodžuli). Vaši se podaci značajke Poboljšanje Fitnessa+ pohranjuju s drugim podacima usluge Fitness+ uz nasumični identifikator koji je specifičan za Apple Fitness+ i nije povezan s vašim Apple računom.\n\nU svakom trenutku možete onemogućiti značajku Poboljšanje Fitnessa+. Ako to želite učiniti, idite u Postavke > Privatnost i sigurnost > Analiza i poboljšanja te dodirom isključite Poboljšanje Fitnessa+.\n\nOmogućivanjem značajke Poboljšanje Fitnessa+ suglasni ste i pristajete na prijenos, prikupljanje, održavanje, obradu, korištenje i otkrivanje od strane tvrtke Apple i njezinih podružnica i agenata ovih informacija kako je gore navedeno. Apple može pohraniti ove informacije kod pouzdanih pružatelja usluga.\n\nApple će u svakom trenutku prikupljene informacije tretirati u skladu s pravilima privatnosti tvrtke Apple, koja možete pronaći na www.apple.com/legal/privacy/hr"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“Fitness+の改善”からは、Apple Fitness+の機能やワークアウトを開発および改善したり、それらの効果を把握したりするために、あなたのワークアウトに関する追加情報（ワークアウトのタイトルやトレーナーなど）がAppleに送信されます。このデータはその他の目的に使用されることはありません。タイトルやトレーナーなどのワークアウトの詳細により、あなたのワークアウトに関する機密情報（出産前のワークアウトかどうかなど）が分かる場合があります。これらの情報にはヘルスケアおよびアクティビティ関連センサー（心拍数、カロリー、キロジュールなど）のデータは含まれません。“Fitness+の改善”データは、ほかのFitness+データと一緒に、Apple Fitness+固有のランダム識別子に基づいて保存され、Apple Accountには関連付けられません。\n\n“Fitness+の改善”はいつでも無効にできます。その場合は、“設定”＞“プライバシーとセキュリティ”＞“解析と改善”に移動して、“Fitness+の改善”をタップしてオフにします。\n\n“Fitness+の改善”を有効にすることで、Appleおよびその子会社と代理業者が、上記で説明した方法で当該情報を送信、収集、保持、処理、使用、および公開することに同意し、承諾することになります。これらの情報は、信頼できるサービス提供者に保管される場合があります。\n\nAppleが収集する情報は、いかなる場合においても、Appleのプライバシーポリシー（www.apple.com/jp/privacy を参照）に従って取り扱われます。"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Melhorar Fitness+ envia informação adicional à Apple acerca dos seus treinos, incluindo os títulos dos treinos e instrutores, de forma a desenvolver, melhorar e compreender a eficácia das funcionalidades e dos treinos de Apple Fitness+. Os seus dados não serão usados para nenhum outro fim. Certos detalhes do treino, como o título ou o instrutor, podem revelar informação confidencial sobre o treino; por exemplo, se é um treino pré‑natal. Esta informação não inclui dados de sensores relacionados com a saúde e atividade (por exemplo, frequência cardíaca, calorias ou quilojoules). Os seus dados de Melhorar Fitness+ são armazenados com outros dados do serviço Fitness+ com referência a um identificador aleatório específico ao Apple Fitness+ e que não está associado à sua conta Apple.\n\nPode optar por desativar Melhorar Fitness+ a qualquer momento. Para tal, em Definições > Privacidade e segurança > Análise e melhorias, desative a opção “Melhorar Fitness+”.\n\nAo ativar Melhorar Fitness+, aceita e consente que a Apple e respetivas empresas subsidiárias e agentes transmitam, recolham, mantenham, processem, usem e divulguem esta informação nos termos acima descritos. A Apple pode armazenar esta informação junto de fornecedores de serviços fidedignos.\n\nToda e qualquer informação recolhida pela Apple será tratada de acordo com a Política de Privacidade da Apple, cujo texto pode ser consultado em www.apple.com/privacy"
+          }
+        }
+      }
+    },
+    "BUTTON_TITLE_APPLETV": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About Improve Fitness+ & Privacy"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "מידע בנושא ״שיפור ⁨Fitness+⁩״ ופרטיות"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fitness+ 향상 및 개인정보 보호에 관하여"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mengenai Tingkatkan Fitness+ & Privasi"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tietoja: Paranna Fitness+:aa ja tietosuoja"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fitness+’ı İyileştir ve Gizlilik Hakkında"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Об Улучшении Fitness+ и конфиденциальности"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Fitness+ továbbfejlesztéséről és az adatvédelemről"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Over 'Verbeter Fitness+' en privacy"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“Migliora Fitness+” e privacy"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de Mejorar Fitness+ y la privacidad"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Πληροφορίες για τη Βελτίωση του Fitness+ και το απόρρητο"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sobre la millora del Fitness+ i la privacitat"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Amélioration de Fitness+ et confidentialité…"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "關於改進Fitness+與隱私權"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "關於改進Fitness+ 與私隱"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om Förbättra Fitness+ och integritet"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fitness+ को बेहतर बनाएँ और गोपनीयता परिचय"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ulepszanie (Fitness+) i prywatność…"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om Gør Fitness+ bedre og anonymitet"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About Improve Fitness+ & Privacy"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om Forbedre Fitness+ og personvern"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حول تحسين Fitness+‎ والخصوصية"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เกี่ยวกับการปรับปรุง Fitness+ และความเป็นส่วนตัว"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "关于改进Fitness+与隐私"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About Improve Fitness+ & Privacy"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apie „Fitness+“ tobulinimą“ ir privatumą"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de Mejorar Fitness+ y la privacidad"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O vylepšování služby Fitness+ a soukromí"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Perihal Tingkatkan Fitness+ & Privasi"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O vylepšovaní služby Fitness+ a súkromí"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "За Подобряване на Fitness+ и поверителност"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About Improve Fitness+ & Privacy"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O izboljšanju storitve Fitness+ in zasebnosti"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Über „Fitness+ verbessern“ & Datenschutz"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cải thiện Fitness+ & Quyền riêng tư"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sobre Melhorar o Fitness+ e Privacidade"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Despre Îmbunătățire Fitness+ și intimitate"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fitness+ сервисін жақсарту және құпиялылық туралы ақпарат"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Améliorer Fitness+ et confidentialité"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de “Mejorar Fitness+” y la privacidad"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Про Покращення Fitness+ і приватність"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Više o poboljšanju usluge Fitness+ i privatnosti"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“Fitness+の改善”とプライバシーについて"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de Melhorar Fitness+ e Privacidade"
+          }
+        }
+      }
+    },
+    "SPLASH_SUMMARY": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Fitness+ is designed to protect your information and enable you to choose what you share."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "״שיפור ⁨Fitness+⁩״ תוכנן באופן שמגן על המידע שלך ומאפשר לך לבחור מה לשתף ומה לא לשתף."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fitness+ 향상은 사용자의 정보를 보호하도록 설계되었으며 공유할 내용을 사용자가 선택할 수 있습니다."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tingkatkan Fitness+ dirancang untuk melindungi informasi Anda dan memungkinkan Anda untuk memilih apa yang Anda bagikan."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Auta parantamaan Fitness+:aa on suunniteltu niin, että tietosi ovat turvassa. Voit itse valita, mitä haluat jakaa."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fitness+’ı İyileştir, bilgilerinizi koruyacak ve neleri paylaşacağınızı seçmenizi sağlayacak şekilde tasarlanmıştır."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ваши данные, используемые функцией «Улучшение Fitness+», надежно защищены, и только Вы решаете, чем поделиться."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Fitness+ továbbfejlesztését úgy tervezték, hogy megvédje az Ön információit, és lehetővé tegye, hogy Ön kiválassza, mit oszt meg."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verbeter Fitness+ is ontwikkeld om je gegevens te beschermen en om je te laten bepalen wat je deelt."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il servizio “Migliora Fitness+” è concepito in modo da proteggere le tue informazioni e consentirti di scegliere i contenuti da condividere."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar Fitness+ se diseñó para proteger tu información y permitirte elegir lo que compartes."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Η Βελτίωση του Fitness+ έχει σχεδιαστεί με τρόπο που προστατεύει τις πληροφορίες σας και σας δίνει τη δυνατότητα να επιλέγετε τα δεδομένα προς κοινοποίηση."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La millora del Fitness+ s’ha dissenyat per protegir la teva informació i perquè puguis triar què vols compartir."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La fonction « Améliorer Fitness+ » est conçue pour protéger vos informations et vous permettre de choisir ce que vous souhaitez partager."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "「改進Fitness+」的設計可保護你的資訊並讓你選擇分享的內容。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "「改進Fitness+」的設計可保護你的資料並讓你選擇分享內容。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Förbättra Fitness+ har utformats för att skydda din information och låta dig välja vad du vill dela."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“Fitness+ को बेहतर बनाएँ” को आपकी जानकारी की सुरक्षा के लिए डिज़ाइन किया गया है और आप क्या शेयर करते हैं यह चुनने में आपको सक्षम करता है।"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funkcja Ulepszanie (Fitness+) została zaprojektowana z myślą o ochronie Twoich danych i pozwala Ci decydować o ich udostępnianiu."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gør Fitness+ bedre er designet til at beskytte dine oplysninger og give dig mulighed for at vælge, hvad du vil dele."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Fitness+ is designed to protect your information and enable you to choose what you share."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forbedre Fitness+ beskytter informasjonen din og gir deg muligheten til å velge hva du vil dele."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "صُمِّم تحسين Apple Fitness+‎ لحماية معلوماتك وتمكينك من اختيار ما تود مشاركته."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "การปรับปรุง Fitness+ ได้รับการออกแบบมาเพื่อปกป้องข้อมูลของคุณและทำให้คุณสามารถเลือกสิ่งที่คุณต้องการแชร์ได้"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "改进Fitness+旨在保护你的信息并可让你选择要共享的内容。"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Fitness+ is designed to protect your information and enable you to choose what you share."
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funkcija „Patobulinti „Fitness+“ sukurta taip, kad apsaugotų jūsų informaciją ir leistų jums patiems pasirinkti, kokią informaciją norite bendrinti."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar Fitness+ se diseñó para proteger tu información y permitirte elegir lo que compartes."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funkce Vylepšování služby Fitness+ chrání vaše osobní údaje a ponechává vám kontrolu nad tím, co sdílíte."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tingkatkan Fitness+ direka bentuk untuk melindungi maklumat anda dan membolehkan anda memilih perkara yang anda kongsi."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Služba Fitness+ chráni vaše osobné údaje a ponecháva vám plnú kontrolu nad tým, čo zdieľate."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Подобряване на Fitness+ е създадено да защитава вашата информация и да ви позволи да избирате какво да споделяте."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Fitness+ is designed to protect your information and enable you to choose what you share."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Izboljšanje storitve Fitness+ je zasnovano tako, da varuje vaše podatke in vam omogoča, da izberete, kaj boste delili."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„Fitness+ verbessern“ ist dafür konzipiert, deine Daten zu schützen, und du kannst auswählen, was du teilst."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cải thiện Fitness+ được thiết kế để bảo vệ thông tin của bạn và cho phép bạn chọn nội dung chia sẻ."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O recurso Melhorar o Fitness+ é projetado para proteger as suas informações e permitir que você escolha os dados que compartilha."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funcționalitatea “Îmbunătățire Fitness+” este concepută pentru a vă proteja informațiile și pentru a vă permite să alegeți ceea ce partajați."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "«Fitness+ сервисін жақсарту» функциясы жеке ақпаратыңызды қорғайтындай және бөлісу қажет объектілерді таңдауға мүмкіндік беретіндей етіп жасалған."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La fonctionnalité « Améliorer Fitness+ » est conçue pour protéger vos données et vous permettre de choisir ce que vous souhaitez partager."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La función “Mejorar Fitness+” se ha diseñado para mantener protegida tu información y para que puedas escoger lo que quieres compartir."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Функцію «Покращення Fitness+» спроєктовано так, щоб захищати вашу інформацію і давати вам змогу обирати, що поширювати."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Značajka Poboljšanje Fitnessa+ dizajnirana je kako bi zaštitila vaše informacije i omogućila odabir sadržaja koje želite podijeliti."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“Fitness+の改善”はあなたの個人情報を保護するように設計され、どの情報を共有するかを選択できるようになっています。"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A funcionalidade Melhorar Fitness+ foi concebida de modo a proteger a informação pessoal e permitir a cada utilizador escolher o que pretende partilhar."
+          }
+        }
+      }
+    },
+    "BUTTON_TITLE": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About Improve Fitness+ & Privacy…"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "מידע בנושא ״שיפור ⁨Fitness+⁩״ ופרטיות…"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fitness+ 향상 및 개인정보 보호에 관하여…"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mengenai Tingkatkan Fitness+ & Privasi…"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tietoja: Paranna Fitness+:aa ja tietosuoja…"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fitness+’ı İyileştir ve Gizlilik Hakkında…"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Об Улучшении Fitness+ и конфиденциальности…"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Fitness+ továbbfejlesztéséről és az adatvédelemről…"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Over 'Verbeter Fitness+' en privacy…"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“Migliora Fitness+” e privacy…"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de Mejorar Fitness+ y la privacidad…"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Πληροφορίες για τη Βελτίωση του Fitness+ και το απόρρητο…"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sobre la millora del Fitness+ i la privacitat…"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Amélioration de Fitness+ et confidentialité…"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "關於改進Fitness+與隱私權⋯"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "關於改進Fitness+ 與私隱⋯"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om Förbättra Fitness+ och integritet…"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fitness+ को बेहतर बनाएँ और गोपनीयता परिचय…"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ulepszanie (Fitness+) i prywatność…"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om Gør Fitness+ bedre og anonymitet…"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About Improve Fitness+ & Privacy…"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om Forbedre Fitness+ og personvern…"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حول تحسين Fitness+‎ والخصوصية…"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เกี่ยวกับการปรับปรุง Fitness+ และความเป็นส่วนตัว…"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "关于改进Fitness+与隐私…"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About Improve Fitness+ & Privacy…"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apie „Fitness+“ tobulinimą“ ir privatumą…"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de Mejorar Fitness+ y la privacidad…"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O vylepšování služby Fitness+ a soukromí…"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Perihal Tingkatkan Fitness+ & Privasi…"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O vylepšovaní služby Fitness+ a súkromí…"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "За Подобряване на Fitness+ и поверителност…"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About Improve Fitness+ & Privacy…"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Več o izboljšanju storitve Fitness+ in zasebnosti …"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Über „Fitness+ verbessern“ & Datenschutz …"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cải thiện Fitness+ & Quyền riêng tư…"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sobre Melhorar o Fitness+ e Privacidade…"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Despre Îmbunătățire Fitness+ și intimitate…"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fitness+ сервисін жақсарту және құпиялылық туралы ақпарат…"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Améliorer Fitness+ et confidentialité…"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de “Mejorar Fitness+” y la privacidad…"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Про Покращення Fitness+ і приватність…"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Više o poboljšanju usluge Fitness+ i privatnosti…"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“Fitness+の改善”とプライバシーについて…"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de Melhorar Fitness+ e Privacidade…"
+          }
+        }
+      }
+    },
+    "SPLASH_TITLE": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Fitness+ & Privacy"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "שיפור Fitness+‎ ופרטיות"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fitness+ 향상 및 개인정보 보호"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tingkatkan Fitness+ & Privasi"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paranna Fitness+:aa ja tietosuoja"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fitness+’ı İyileştir ve Gizlilik"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "«Улучшение Fitness+» и конфиденциальность"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Fitness+ továbbfejlesztése és az adatvédelem"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verbeter Fitness+ en privacy"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“Migliora Fitness+” e privacy"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar Fitness+ y la privacidad"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Βελτίωση του Fitness+ και απόρρητο"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La millora del Fitness+ i la privacitat"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Améliorer Fitness+ et confidentialité"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "改進Fitness+與隱私權"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "改進Fitness+ 與私隱"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Förbättra Fitness+ och integritet"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“Fitness+ को बेहतर बनाएँ” और गोपनीयता"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ulepszanie (Fitness+) i prywatność"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gør Fitness+ og anonymitet bedre"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Fitness+ & Privacy"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forbedre Fitness+ og personvern"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تحسين Fitness+‎ والخصوصية"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ปรับปรุง Fitness+ และความเป็นส่วนตัว"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "改进Fitness+与隐私"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Fitness+ & Privacy"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funkcija „Patobulinti „Fitness+“ ir privatumas"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar Fitness+ y la privacidad"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vylepšování služby Fitness+ a soukromí"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tingkatkan Fitness+ & Privasi"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vylepšovanie služby Fitness+ a súkromie"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Подобряване на Fitness+ и поверителност"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Fitness+ & Privacy"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Izboljšanje storitve Fitness+ in zasebnost"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„Fitness+ verbessern“ & Datenschutz"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cải thiện Fitness+ & Quyền riêng tư"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Melhorar o Fitness+ e Privacidade"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Îmbunătățire Fitness+ și intimitatea"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fitness+ сервисін жақсарту және құпиялылық"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Améliorer Fitness+ et confidentialité"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“Mejorar Fitness+” y la privacidad"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Покращення Fitness+ і приватність"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poboljašnje Fitnessa+ i privatnost"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“Fitness+の改善”とプライバシー"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Melhorar Fitness+ e Privacidade"
+          }
+        }
+      }
+    },
+    "SPLASH_SHORT_TITLE": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Fitness+"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "שיפור ⁨Fitness+⁩"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fitness+ 향상"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tingkatkan Fitness+"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paranna Fitness+:aa"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fitness+’ı İyileştir"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Улучшение Fitness+"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Fitness+ továbbfejlesztése"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verbeter Fitness+"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Migliora Fitness+"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar Fitness+"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Βελτίωση του Fitness+"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Millora del Fitness+"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Améliorer Fitness+"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "改進Fitness+"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "改進Fitness+"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Förbättra Fitness+"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fitness+ को बेहतर बनाएँ"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ulepszanie (Fitness+)"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gør Fitness+ bedre"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Fitness+"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forbedre Fitness+"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تحسين Fitness+‎"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ปรับปรุง Fitness+"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "改进Fitness+"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Fitness+"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Patobulinti „Fitness+“"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar Fitness+"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vylepšování služby Fitness+"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tingkatkan Fitness+"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vylepšovanie služby Fitness+"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Подобряване на Fitness+"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Fitness+"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Izboljšanje storitve Fitness+"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fitness+ verbessern"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cải thiện Fitness+"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Melhorar o Fitness+"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Îmbunătățire Fitness+"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fitness+ сервисін жақсарту"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Améliorer Fitness+"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar Fitness+"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Покращення Fitness+"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poboljšanje Fitnessa+"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fitness+の改善"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Melhorar Fitness+"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

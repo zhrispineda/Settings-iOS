@@ -1,0 +1,1381 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "FOOTER_TEXT": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The information collected as part of Improve Health Records includes certain information in your health records (such as your conditions, medications, vitals, immunisations, lab results, procedures, and other health records data imported and stored under the Health Records section in the Health app such as verifiable health records data), and information about your enablement of and engagement with the Health Records feature (such as analytics data related to the transfer of your health records, which may include the source of such data). Before your information is sent to Apple for analysis, it is processed to remove data that may personally identify you, such as your name or phone number. While the process is intended to remove all information that may personally identify you, it is possible that Apple may receive identifiable data. If any personally identifiable data is found, it will be promptly deleted.\n\nAll information sent to Apple is encrypted while in transit and at rest.\n\nBy enabling Improve Health Records, you agree and consent to Apple’s and its subsidiaries’ and agents’ transmission, collection, maintenance, processing and use of this information as described above. Apple may store this information with trusted third-party service providers. You may choose to stop sharing your health records at any time. To do so, go to Settings > Privacy & Security > Analytics & Improvements and tap to turn off Improve Health Records.\n\nAt all times, information collected by Apple will be treated in accordance with Apple’s Privacy Policy, which can be found at www.apple.com/in/privacy"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "‘건강 기록 향상’의 일부로 수집된 해당 정보에는 사용자의 건강 기록에 있는 특정 정보(예: 사용자의 질환, 투여약, 활력 징후, 예방 접종, 검사 결과, 조치, 그리고 확인 가능한 건강 기록 데이터와 같은 건강 앱의 건강 기록 섹션 아래에서 가져오고 저장한 기타 건강 기록 데이터) 및 건강 기록 기능의 활성화 및 참여에 대한 정보(예: 해당 데이터의 출처를 포함하는 건강 기록 전송과 관련된 분석 데이터)가 포함됩니다. 사용자의 정보가 분석을 위해 Apple에 전송되기 전에 사용자의 이름 또는 전화번호와 같이 사용자를 식별할 수 있는 데이터가 제거되도록 처리됩니다. 이 처리 과정은 사용자 개인을 식별할 수 있는 정보를 모두 제거하도록 설계되었지만 Apple이 개인 식별 데이터를 전송받는 경우도 있습니다. 이러한 개인 식별 데이터가 발견되면 이 정보는 즉시 삭제됩니다.\n\nApple에 전송되는 모든 정보는 암호화되어 전송되고 보관됩니다.\n\n‘건강 기록 향상’ 기능을 활성화함으로써 Apple과 그 자회사 및 에이전트가 앞서 말한 모든 정보를 전송, 수집, 보존, 처리 및 사용하는 것에 대해 사용자가 동의하고 허용하는 것입니다. Apple은 이 정보를 신뢰하는 타사 서비스 제공업체에 저장할 수 있습니다. 사용자는 건강 기록 공유를 언제든지 중단할 수 있습니다. 공유를 중단하려면 설정 > 개인정보 보호 및 보안 > 분석 및 향상으로 이동한 다음 건강 기록 향상을 탭하여 끄십시오.\n\nApple에서 수집한 정보는 항상 Apple의 개인정보 처리방침에 따라 취급되며, 자세한 내용은 www.apple.com/kr/privacy 사이트에서 확인할 수 있습니다."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "המידע שנאסף כחלק מ״שיפור ׳רשומות רפואיות׳״ כולל מידע שנמצא ברשומות הרפואיות שלך (כגון מצבך הרפואי, תרופות, מדדים, חיסונים, תוצאות בדיקות מעבדה, הליכים רפואיים וגם נתוני בריאות אחרים שיובאו ואוחסנו תחת ״רשומות רפואיות״ ביישום ״בריאות״, כמו למשל נתונים מרשומות רפואיות שניתנים לאימות), מידע על הפעלת המאפיין ״רשומות רפואיות״ והשימוש בו (כגון נתוני אבחון הקשורים להעברת הרשומות הרפואיות שלך העשויים לכלול את המקור של נתונים כאלה). לפני שהמידע נשלח ל-Apple לניתוח, הוא עובר תהליך עיבוד שמסיר נתונים שיכולים להוביל לזיהוי אישי שלך, כמו שם ומספר טלפון. למרות שהתהליך נועד להסיר כל מידע שמאפשר זיהוי אישי שלך, ייתכן ש-Apple תקבל נתונים מזהים. אם יימצאו נתונים שמאפשרים זיהוי אישי שלך, הם יימחקו מיד.\n\nכל המידע שנשלח ל-Apple מוצפן בעת ההעברה ובעת האחסון.\n\nהפעלת ״שיפור ׳רשומות רפואיות׳״ מהווה את הסכמתך לכך ש-Apple וחברות הבת והסוכנים שלה ישדרו, יאספו, ישמרו, יעבדו וישתמשו במידע זה כמתואר לעיל. ייתכן ש-Apple תאחסן מידע זה באמצעות ספקי שירות חיצוניים מהימנים. ניתן להפסיק לשתף את הרשומות הרפואיות בכל שלב. כדי לעשות זאת, יש לעבור אל ״הגדרות״ > ״פרטיות ואבטחה״ > ״נתונים ושיפורים״ ולהקיש לכיבוי ״שיפור ׳רשומות רפואיות׳״.\n\nבכל עת, מידע הנאסף על-ידי Apple יטופל בהתאם למדיניות הפרטיות של Apple, הזמינה בכתובת: www.apple.com/privacy"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Informasi yang dikumpulkan sebagai bagian dari Tingkatkan Catatan Kesehatan meliputi informasi tertentu di catatan kesehatan Anda (seperti kondisi, pengobatan, tanda vital, imunisasi, hasil lab, prosedur, dan data catatan kesehatan Anda lainnya yang diimpor dan disimpan di bagian Catatan Kesehatan di app Kesehatan seperti data catatan kesehatan terverifikasi), dan informasi mengenai pengaktifan dan interaksi Anda dengan fitur Catatan Kesehatan (seperti data analisis terkait dengan transfer catatan kesehatan Anda, yang dapat menyertakan sumber data tersebut). Sebelum informasi Anda dikirimkan ke Apple untuk dianalisis, informasi tersebut diproses untuk menghapus data yang dapat mengidentifikasi Anda secara pribadi, seperti nama dan nomor telepon Anda. Meskipun proses tersebut ditujukan untuk menghapus semua informasi yang dapat mengidentifikasi Anda, mungkin bagi Apple untuk menerima data yang dapat diidentifikasi. Jika data yang dapat diidentifikasi secara pribadi ditemukan, informasi tersebut akan segera dihapus.\n\nSemua informasi yang dikirimkan ke Apple dienkripsi saat dalam transit dan saat disimpan.\n\nDengan mengaktifkan Tingkatkan Catatan Kesehatan, Anda menyetujui dan menyepakati pentransmisian, pengumpulan, pemeliharaan, pemrosesan, dan penggunaan informasi ini oleh Apple dan anak perusahaan serta agennya sebagaimana yang dijelaskan di atas. Apple dapat menyimpan informasi ini dengan penyedia layanan pihak ketiga yang tepercaya. Anda dapat memilih untuk berhenti membagikan catatan kesehatan Anda kapan pun. Untuk melakukannya, buka Pengaturan > Privasi & Keamanan > Analisis & Peningkatan dan ketuk untuk mematikan Tingkatkan Catatan Kesehatan.\n\nInformasi yang dikumpulkan oleh Apple akan selalu diperlakukan sesuai dengan Kebijakan Privasi Apple, yang dapat ditemukan di www.apple.com/id/privacy"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kerättäviin Paranna potilaskertomusta -tietoihin sisältyy tietoja potilaskertomuksestasi (esim. sairaudet, lääkkeet, elintoiminnot, rokotukset, laboratoriotulokset, tehdyt toimenpiteet ja muut potilaskertomustiedot, jotka on tuotu ja tallennettu Terveys-apin Potilaskertomus-osioon, kuten varmennettavissa olevat potilaskertomustiedot) ja tietoja siitä, onko Potilaskertomus käytössä ja miten sitä käytetään (kuten analyysitietoja potilaskertomuksesi siirtämisestä, jotka saattavat sisältää kyseisten tietojen lähteen). Ennen kuin tietosi lähetetään Applelle analysoitaviksi, niistä poistetaan tiedot, joista sinut voidaan tunnistaa. Tällaisia tietoja ovat nimesi ja puhelinnumerosi. Vaikka prosessin tarkoituksena on poistaa kaikki tiedot, joista sinut voidaan tunnistaa, on kuitenkin mahdollista, että Apple saa tietoja, joista sinut voidaan tunnistaa. Jos tietoja, joista sinut voidaan tunnistaa, löydetään, ne poistetaan viipymättä.\n\nKaikki Applelle lähetetyt tiedot salataan lähetys- ja vastaanottovaiheessa. Kaikki tiedot ovat salattuja myös silloin, kun ne ovat Applen palvelimilla.\n\nOttamalla Paranna potilaskertomusta -toiminnon käyttöön hyväksyt ja suostut siihen, että Apple ja sen tytäryhtiöt ja edustajat voivat lähettää, kerätä, säilyttää, käsitellä ja käyttää näitä tietoja edellä mainitulla tavalla. Apple voi säilyttää näitä tietoja luotetuilla ulkopuolisilla palveluntarjoajilla. Voit lopettaa potilaskertomuksen jakamisen koska tahansa. Tee näin valitsemalla Asetukset > Tietosuoja ja suojaus > ”Analyysi ja parannukset” ja napauttamalla ”Paranna potilaskertomusta” pois päältä.\n\nApplen keräämiä tietoja käsitellään aina Applen tietosuojakäytännön mukaisesti. Tämä käytäntö löytyy osoitteesta www.apple.com/legal/privacy/fi/."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sağlık Kayıtlarını İyileştir’in bir parçası olarak toplanan bilgiler, sağlık kayıtlarınızdaki bilgiler (rahatsızlıklarınız, ilaçlarınız, hayati bulgularınız, aşılarınız, laboratuvar sonuçlarınız, prosedürleriniz ve doğrulanabilir sağlık kayıtları verileri gibi Sağlık uygulamasının Sağlık Kayıtları bölümüne aktarılıp burada saklanan diğer sağlık kayıtları verileri gibi) ve Sağlık Kayıtları özelliği ile ilgili verdiğiniz yetki ve katılımınız hakkında bilgiler (sağlık kayıtlarınızın aktarımına ilişkin, bu tür verilerin kaynağını da içerebilecek analiz verileri gibi) içerebilir. Bilgileriniz, Apple’a analiz edilmeye gönderilmeden önce adınız veya telefon numaranız gibi sizin bireysel olarak teşhis edilmenize neden olabilecek bilgilerin silinmesi için işlenir. Söz konusu işleme sizin bireysel olarak teşhis edilmenize neden olabilecek tüm bilgilerin silinmesi için olmakla birlikte kimliğin teşhis edilmesini sağlayan verilerin Apple’a ulaşması da olasıdır. Kimliğin teşhis edilmesini sağlayan verilerin bulunması durumunda bu bilgiler hemen silinecektir.\n\nApple’a gönderilen tüm bilgiler, iletilirken ve saklanırken şifrelidir.\n\nSağlık Kayıtlarını İyileştir’i etkinleştirdiğinizde Apple’ın, bağlı kuruluşlarının ve temsilcilerinin bu bilgileri yukarıda açıklanan şekilde iletmesi, toplaması, saklaması, işlemesi ve kullanmasını kabul etmiş ve onaylamış oluyorsunuz. Apple bu bilgileri güvenilir üçüncü parti servis sağlayıcıları ile saklayabilir. Sağlık kayıtlarınızın paylaşılmasını istediğiniz zaman durdurmayı seçebilirsiniz. Bunu yapmak için Ayarlar > Gizlilik ve Güvenlik > Analizler ve İyileştirmeler bölümüne gidin ve Sağlık Kayıtlarını İyileştir’i kapatmak için dokunun.\n\nApple tarafından toplanan bilgiler her zaman www.apple.com/tr/privacy adresinde bulunan Apple’ın Gizlilik Politikası’na uygun şekilde işlenir."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Информация, собранная в целях улучшения функции «Состояние здоровья», включает сведения из Ваших записей о состоянии здоровья (например, заболевания, лекарства, показатели жизненно важных функций, вакцинации, результаты анализов, процедуры, а также другие медданные, импортированные и сохраненные в разделе «Состояние здоровья» в приложении «Здоровье», такие как проверяемые медданные); информацию о том, что Вы включили функцию «Состояние здоровья», и о том, как Вы ее используете (например, аналитические данные, которые относятся к передаче записей о состоянии Вашего здоровья и которые могут включать указание на источник таких данных). Данные, отправляемые в Apple для анализа, обрабатываются перед отправкой, чтобы удалить те сведения, на основании которых можно установить Вашу личность. К таким сведениям относятся, например, Ваше имя или номер телефона. Несмотря на то, что процесс обработки предназначен для удаления всех сведений, на основании которых можно установить Вашу личность, Apple все же может получить персональные данные. Любые обнаруженные персональные данные будут незамедлительно удалены.\n\nВся информация, передаваемая в Apple, защищена шифрованием во время передачи и хранения.\n\nВключив Улучшение Состояния здоровья, Вы даете компании Apple, ее дочерним предприятиям и агентам согласие на передачу, сбор, хранение, обработку и использование всей этой информации, как указано выше. Компания Apple может хранить эти данные у доверенных сторонних партнеров. Вы можете прекратить делиться записями о состоянии здоровья в любое время. Для этого откройте «Настройки» > «Конфиденциальность и безопасность» > «Аналитика и улучшения» и касанием выключите параметр «Улучшение Состояния здоровья».\n\nИнформация, которую собирает Apple, всегда обрабатывается в соответствии с Политикой конфиденциальности Apple, доступной по адресу: www.apple.com/ru/privacy."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De informatie die wordt verzameld als onderdeel van 'Verbeter medisch dossier' bevat bepaalde gegevens, informatie uit je medisch dossier (zoals informatie over je aandoeningen, medicijnen, vitale functies, vaccinaties, lab­uitslagen, ingrepen en andere gegevens uit het medisch dossier die worden geïmporteerd en bewaard onder 'Medisch dossier' in de Gezondheid-app, zoals verifieer­bare gegevens), en informatie over je inschakeling van en betrokken­heid bij de functie 'Medisch dossier' (zoals analytische gegevens met betrekking tot de over­dracht van medische dossiers, waar­onder mogelijk de bron van dergelijke gegevens). Voordat je informatie ter analyse naar Apple wordt verstuurd, wordt deze verwerkt, zodat gegevens worden verwijderd waaruit je identiteit zou kunnen worden afgeleid, zoals je naam en telefoon­nummer. Hoewel de procedure bedoeld is om alle informatie te verwijderen waaruit je identiteit zou kunnen worden afgeleid, is het mogelijk dat Apple gegevens ontvangt waaruit je identiteit kan worden afgeleid. Als dergelijke gegevens worden ontvangen, worden ze onmiddellijk verwijderd.\n\nAlle informatie wordt versleuteld naar Apple verstuurd en bewaard.\n\nDoor 'Verbeter medisch dossier' in te schakelen, stem je ermee in dat Apple en zijn dochterondernemingen en tussenpersonen de hierboven genoemde informatie mogen versturen, verzamelen, onderhouden, verwerken en gebruiken. Apple kan deze informatie bewaren bij erkende externe serviceproviders. Je kunt het delen van je medisch dossier op elk moment stopzetten. Hiervoor ga je in Instellingen naar 'Privacy en beveiliging' > 'Analyse en verbeteringen' en tik je om 'Verbeter medisch dossier' uit te schakelen.\n\nDe door Apple verzamelde gegevens worden te allen tijde behandeld conform het privacy­beleid van Apple, dat je kunt vinden op www.apple.com/nl/privacy"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Az Egészségügyi dokumentumok továbbfejlesztése törekvés részeként gyűjtött információk tartalmazhatják az egészségügyi dokumentumaiban lévő információkat (pl. az Ön egészségügyi állapotát, a szedett gyógyszereket, a vitális jeleket, az immunizálásokat, a laboreredményeket, az orvosi beavatkozásokat, illetve az egészségügyi dokumentumokban lévő olyan adatokat, amelyek az Egészség app Egészségügyi dokumentumok szakaszába lettek importálva és ott vannak tárolva, például ellenőrizhető egészségügyi dokumentumokban lévő adatokat), továbbá az Egészségügyi dokumentumok funkció engedélyezéséről és használatáról szóló információkat (pl. az egészségügyi dokumentumok továbbításához kapcsolódó elemzési adatokat, amelyek tartalmazhatják az ilyen típusú adatok forrásait). Mielőtt az adatai el lennének küldve az Apple-nek elemzés céljából, azokból az eszközök eltávolítják az olyan adatokat, amelyek személyesen azonosíthatnák Önt, például a nevét és a telefonszámát. Bár a cél az összes olyan információ eltávolítása, amelyek személyesen azonosíthatnák Önt, ennek ellenére előfordulhat, hogy az Apple személyes azonosításra alkalmas adatokat kap. Személyes azonosításra alkalmas adatok esetén azok azonnal törölve lesznek.\n\nAz Apple-nek küldött minden információ titkosítva van átvitel és tárolás közben.\n\nAz Egészségügyi dokumentumok továbbfejlesztése funkció engedélyezésével Ön elfogadja és beleegyezik abba, hogy az Apple és annak leányvállalatai és ügynökei a fent említett módon ezeket az információkat átadják, gyűjtsék, karbantartsák, feldolgozzák és használják. Előfordulhat, hogy az Apple ezeket az információkat harmadik félnek minősülő, megbízható szolgáltatóknál tárolja. Az egészségügyi dokumentumok megosztását bármikor kikapcsolhatja. Ehhez válassza a Beállítások > Adatvédelem és biztonság > Elemzések és fejlesztések menüpontot, és koppintson az Egészségügyi dokumentumok javítása funkció kikapcsolásához.\n\nAz Apple által gyűjtött információk mindig az Apple adatvédelmi szabályzata szerint lesznek felhasználva, amely megtalálható a www.apple.com/hu/privacy weboldalon."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le informazioni raccolte nell’ambito della funzionalità “Migliora dati sanitari” ne includono alcune presenti nei tuoi dati sanitari (ad esempio, le patologie, i farmaci, i segni vitali, le immunizzazioni, i risultati di laboratorio, le procedure mediche e altri dati importati e salvati nella sezione “Dati sanitari” dell’app Salute, come i dati sanitari verificabili), nonché informazioni sull’attivazione di “Dati sanitari” e sull’interazione con la funzionalità (ad esempio, dati di analisi relativi al trasferimento dei dati sanitari, che potrebbero includere la fonte di tali dati). Prima di essere inviate ad Apple, tali informazioni vengono rielaborate tramite strumenti specifici affinché i dati che consentono di identificarti univocamente, come il nome o il numero di telefono, vengano eliminati. Tuttavia, sebbene l’obiettivo sia la completa eliminazione di tale tipo di informazioni, Apple potrebbe ricevere dati che consentono di risalire alla tua identità. In tal caso, tutte le informazioni di questo tipo verranno prontamente eliminate.\n\nTutti i dati vengono crittografati sia durante la trasmissione, sia quando vengono salvati sul dispositivo.\n\nAbilitando la funzionalità “Migliora dati sanitari”, accetti e autorizzi la trasmissione, la raccolta, la conservazione, l’elaborazione e l’utilizzo di tali informazioni da parte di Apple e dei suoi partner e licenziatari agli scopi descritti sopra. Apple potrebbe affidare a provider di servizi di terze parti il compito di conservare le informazioni raccolte. Puoi interrompere la condivisione dei dati sanitari in qualsiasi momento. Per farlo, vai in Impostazioni > Privacy e sicurezza > Analisi e miglioramenti, quindi disattiva “Migliora dati sanitari”.\n\nIn qualsiasi momento, le informazioni raccolte da Apple verranno trattate in conformità all’informativa sulla privacy di Apple consultabile all’indirizzo www.apple.com/it/privacy."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La información que se recolecta como parte del proceso de Mejorar expediente médico incluye información sobre tu salud (como tus condiciones, medicamentos, signos vitales, vacunas, resultados de laboratorio, cirugías y cualquier otra información sobre tu salud guardada en la sección Expediente médico de la app Salud, como pueden ser los expedientes verificables de salud), así como la información sobre tu activación de la función Expediente médico y tu interacción con ella (como los datos de análisis relacionados con la transferencia de tus registros de salud, que pueden incluir la fuente de dichos datos). Antes de enviar tu información a Apple, esta se procesa para eliminar cualquier dato que te pueda identificar personalmente, como tu nombre o número de teléfono. Aunque el proceso tiene la intención de eliminar cualquier información que pueda identificarte personalmente, es posible que Apple reciba datos que puedan identificarte. Si se encontraran tales datos, se eliminarán cuanto antes.\n\nToda la información que se envía a Apple se encripta al momento de transmitirse y al residir en nuestros servidores.\n\nAl activar Mejorar expediente médico, aceptas y autorizas que Apple y sus socios y agentes transmitan, recopilen, mantengan, procesen y usen la información descrita anteriormente. Apple podría almacenar esta información usando proveedores de servicio de terceros. Puedes optar por dejar de compartir tu información de expediente médico en cualquier momento. Para ello, ve a Configuración > Privacidad y seguridad > Análisis y mejoras y desactiva Mejorar expediente médico.\n\nLa información que Apple recopile se tratará en todo momento de conformidad con la Política de privacidad de Apple, la cual puedes consultar en www.apple.com/la/privacy."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Τα δεδομένα που συλλέγονται ως μέρος της Βελτίωσης των Ιατρικών εγγραφών περιλαμβάνουν συγκεκριμένες πληροφορίες που βρίσκονται στις ιατρικές εγγραφές σας (π.χ. παθήσεις, φάρμακα, ζωτικές ενδείξεις, εμβόλια, αποτελέσματα εξετάσεων, επεμβάσεις και άλλα δεδομένα ιατρικών εγγραφών που έχουν εισαχθεί και είναι αποθηκευμένα στην ενότητα «Ιατρικές εγγραφές» της εφαρμογής «Υγεία», π.χ. επαληθεύσιμα δεδομένα ιατρικών εγγραφών), καθώς και πληροφορίες σχετικά με την από μέρους σας ενεργοποίηση και την αλληλεπίδραση με τη δυνατότητα «Ιατρικές εγγραφές» (π.χ. δεδομένα ανάλυσης που σχετίζονται με τη μεταφορά των ιατρικών εγγραφών σας, που μπορεί να περιλαμβάνουν την πηγή των εν λόγω δεδομένων). Προτού σταλούν οι πληροφορίες σας στην Apple για ανάλυση, υποβάλλονται σε επεξεργασία για αφαίρεση των δεδομένων που σας ταυτοποιούν, π.χ. το όνομα ή ο αριθμός τηλεφώνου σας. Παρόλο που σκοπός της επεξεργασίας είναι η αφαίρεση όλων των δυνητικά ταυτοποιήσιμων πληροφοριών, είναι πιθανό η Apple να λάβει ταυτοποιήσιμα δεδομένα. Αν βρεθούν ταυτοποιήσιμα δεδομένα, διαγράφονται πάραυτα.\n\nΌλα τα δεδομένα που αποστέλλονται στην Apple κρυπτογραφούνται κατά τη μετάδοση και τη φύλαξή τους.\n\nΑν ενεργοποιήσετε τη Βελτίωση των Ιατρικών εγγραφών, συμφωνείτε και συναινείτε ως προς τη μετάδοση, τη συλλογή, τη διατήρηση, την επεξεργασία και τη χρήση των εν λόγω πληροφοριών, όπως περιγράφεται παραπάνω, από την Apple, τις θυγατρικές και τους αντιπροσώπους της. Η Apple μπορεί να αποθηκεύσει αυτές τις πληροφορίες σε αξιόπιστους τρίτους παρόχους υπηρεσιών. Μπορείτε να επιλέξετε τη διακοπή της κοινοποίησης των ιατρικών εγγραφών σας ανά πάσα στιγμή. Για να το κάνετε αυτό, μεταβείτε στις «Ρυθμίσεις» > «Απόρρητο και ασφάλεια» > «Ανάλυση και βελτιώσεις» και αγγίξτε για απενεργοποίηση της ρύθμισης «Βελτίωση των Ιατρικών εγγραφών».\n\nΟ χειρισμός των πληροφοριών που συλλέγονται από την Apple πραγματοποιείται σύμφωνα με την Πολιτική απορρήτου της, την οποία μπορείτε να βρείτε στη διεύθυνση www.apple.com/gr/privacy."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les informations recueillies avec la fonctionnalité « Améliorer Dossiers médicaux » comprennent certaines informations de vos dossiers médicaux (qu’il s’agisse de troubles médicaux, de traitements, de signes vitaux, d’immunisations, de résultats de laboratoire, de procédures ou d’autres données de dossiers médicaux importées et stockées dans la section « Dossiers médicaux » de l’app Santé, comme les données de dossiers médicaux vérifiables) et des informations sur l’activation des dossiers médicaux et vos interactions avec les fonctionnalités de ces dossiers (comme les données d’analyse liées au transfert de vos dossiers médicaux, qui sont susceptibles d’inclure la source de telles données). Avant que vos informations ne soient envoyées à Apple pour être analysées, celles-ci sont traitées pour supprimer les données susceptibles de vous identifier personnellement, telles que votre nom ou votre numéro de téléphone. Bien que ce processus ait été conçu pour supprimer toutes les informations susceptibles de vous identifier personnellement, il se peut qu’Apple reçoive des données identifiables. Si de telles données sont détectées, elles seront immédiatement supprimées.\n\nToutes les informations envoyées à Apple sont chiffrées lors de leur envoi et de leur réception.\n\nEn activant Améliorer Dossiers médicaux, vous acceptez qu’Apple, ses filiales et ses représentants transmettent, recueillent, conservent, traitent et utilisent ces données comme décrit ci-dessus. Il se peut qu’Apple stocke ces informations en utilisant les services de fournisseurs tiers de confiance. Vous pouvez à tout moment choisir de ne plus partager vos dossiers médicaux. Pour ce faire, accédez à Réglages > Confidentialité et sécurité > Analyse et améliorations, puis désactivez « Améliorer Dossiers médicaux ».\n\nLes informations recueillies par Apple sont systématiquement traitées conformément à la politique de confidentialité d’Apple, disponible sur www.apple.com/ca/fr/privacy."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "قد تتضمن المعلومات التي يتم جمعها ضمن \"تحسين السجلات الصحية\" معلومات معينة في سجلاتك الصحية (مثل معلومات الحالات والأدوية والعلامات الحيوية والتطعيمات والنتائج المخبرية والعمليات وغير ذلك من بيانات السجلات الصحية التي يتم استيرادها وتخزينها ضمن قسم السجلات الصحية في تطبيق صحتي، مثل بيانات السجلات الصحية القابلة للتحقق)، إلى جانب معلومات حول تمكينك لميزة السجلات الصحية وتفاعلك معها (مثل بيانات التحليلات المتعلقة بنقل سجلاتك الصحية، والتي قد تتضمن مصدر هذه البيانات). وقبل أن يتم إرسال معلوماتك إلى Apple للتحليل، تتم معالجتها لإزالة البيانات التي قد تكشف هويتك مثل الاسم أو رقم الهاتف. وبالرغم من أن هذه العملية مصممة لإزالة جميع المعلومات التي قد تكشف هويتك، إلا أنه من المحتمل أن تتلقى Apple بعض البيانات التعريفية. إذا عثِر على أية بيانات شخصية تعريفية، فستُحذف على الفور.\n\nجميع المعلومات المرسلة إلى Apple يتم تشفيرها أثناء النقل وعند استلامها.\n\nيُعد تمكين تحسين السجلات الصحية بمثابة موافقة منك على أن تقوم Apple وشركاتها الفرعية ووكلاؤها بنقل هذه المعلومات وجمعها والاحتفاظ بها ومعالجتها واستخدامها على النحو المبين أعلاه. يجوز لشركة Apple تخزين هذه المعلومات مع مزودي خدمة موثوقين تابعين لجهات خارجية. يمكنك اختيار إيقاف مشاركة سجلاتك الصحية في أي وقت. لتنفيذ ذلك، انتقل إلى الإعدادات > الخصوصية والأمن > التحليلات والتحسينات، وأوقف \"تحسين السجلات الصحية\".\n\nسيتم - في جميع الأوقات - التعامل مع المعلومات التي تجمعها Apple وفقًا لسياسة خصوصية Apple، والتي يمكن العثور عليها على الرابط:\nwww.apple.com/ae-ar/privacy"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "作為「改進健康記錄」的一部分而收集的資訊包含你健康記錄中的部分資訊（例如你的症狀、藥物、生命徵象、疫苗施打、檢驗結果、醫療程序和在「健康」App的「健康記錄」部分中輸入和儲存的其他健康記錄資料，如可驗證的健康記錄資料），以及有關你啟用和使用「健康記錄」功能的相關資訊（例如與傳送健康記錄有關的分析資料，可能包含此類資料的來源）。你的資訊傳送給Apple分析前，會先移除可能會識別你個人身分的資料，例如你的姓名或電話號碼。雖然此流程的目標是要移除所有可能會識別你個人身分的資訊，Apple仍有可能接收到可識別個人身分的資料。若找到任何可識別個人身分的資料，會立即刪除。\n\n所有傳送給Apple的資訊也會在傳輸和儲存時加密。\n\n啟用「改進健康記錄」，即表示同意並接受Apple其子公司和代理人以如上所示的方式傳播、收集、維護、處理和使用此資訊。Apple可能會將此資訊儲存在信任的第三方服務供應商中。你隨時都可以選擇停止分享健康記錄。若要停止使用此功能，請前往「設定」>「隱私權與安全性」>「分析與改進功能」，然後點一下來關閉「改進健康記錄」。\n\n在任何時間，Apple都會依照「Apple隱私權政策」的規定來處理收集的資訊，請參訪www.apple.com/tw/privacy"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "作為改進「健康記錄」的一部份所收集的資料包括你健康記錄中的部份資料（例如你的症狀、藥物、維生指數、疫苗接種、檢驗結果、醫療程序和其他輸入並儲存在「健康」App的「健康記錄」部份下的健康記錄資料，例如可驗證的健康記錄資料），以及啟用和使用「健康記錄」功能的相關資料（例如與傳輸你的健康記錄相關的分析數據，其中可能包括此類數據的來源）。在將你的資料傳送予Apple分析前，會先處理以移除任何可能會識別你個人身份的資料，例如你的姓名或電話號碼。雖然這些處理操作的目標是要移除所有可能會識別你個人身份的資料，Apple仍有可能接收到可識別身份的資料。如找到任何可識別個人身份的資料會立即刪除。\n\n所有傳送予Apple的資料均會在傳輸和儲存時加密。\n\n啟用「改進健康記錄」，即表示同意並接受Apple及其子公司和代理以如上所示的方式傳播、收集、維護、處理和使用此資料。Apple可能會將這些資料儲存於信任的第三方服務供應商。你隨時都可以停止分享健康記錄。如要這樣做，請前往「設定」>「私隱與保安」>「分析與改進」，然後點一下以關閉「改進健康記錄」。\n\n無論何時，Apple都會根據「Apple私隱政策」的規定處理所收集的資料，請瀏覽：www.apple.com/hk/privacy"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Informationen som samlas in som en del av Förbättra medicinska journaler inkluderar viss information som finns i dina medicinska journaler (till exempel ditt hälsotillstånd, mediciner, vitalparametrar, vaccinationer, provresultat och ingrepp samt andra data om medicinska journaler som har importerats och lagrats under avsnittet Medicinska journaler i appen Hälsa, till exempel verifierbara journaldata) liksom information om hur du har aktiverat och använt funktionen Medicinska journaler (exempelvis analysdata gällande överföringen av dina medicinska journaler, vilket kan inkludera källan till sådana data). Innan informationen skickas till Apple för analys behandlas den så att alla data som kan identifiera dig personligen, till exempel ditt namn eller ditt telefonnummer, tas bort. Den här processen är avsedd att ta bort all information som kan identifiera dig personligen, men trots detta är det möjligt att Apple kan ta emot data som kan identifiera dig. Om några sådana data upptäcks kommer de omedelbart att raderas.\n\nAll information som skickas till Apple överförs och lagras i krypterad form.\n\nGenom att använda Förbättra medicinska journaler godkänner du och samtycker till att Apple och dess dotterbolag och agenter överför, samlar in, underhåller, behandlar och använder den här informationen enligt vad som beskrivs ovan. Apple kan lagra den här informationen hos betrodda tredjepartsleverantörer. Du kan när som helst välja att sluta dela dina medicinska journaler. Du gör detta genom att öppna Inställningar > Integritet och säkerhet > Analys och förbättringar och trycka för att stänga av Förbättra Medicinska journaler.\n\nInformation som samlas in av Apple kommer under alla förhållanden att behandlas i enlighet med Apples integritetspolicy, som finns på www.apple.com/se/privacy."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Informacje zgromadzone na potrzeby ulepszania obsługi rekordów zdrowotnych mogą obejmować informacje znajdujące się w rekordach zdrowotnych (takie jak stan zdrowia, leki, parametry życiowe, szczepienia, wyniki badań i zabiegi oraz inne dane zaimportowane i przechowywane w sekcji Rekordy zdrowotne aplikacji Zdrowie, na przykład możliwe do zweryfikowania dane rekordów zdrowotnych), a także informacje o pełnomocnictwach oraz aktywności związanej z funkcją obsługi rekordów zdrowotnych (np. dane analityczne związane z przekazaniem rekordów zdrowotnych, które mogą obejmować źródło tych rekordów). Przed przesłaniem do analizy w Apple dane są przetwarzane w celu usunięcia wszelkich informacji, które mogłyby pozwolić na zidentyfikowanie Cię, na przykład imienia, nazwiska lub numeru telefonu. Ten proces ma za zadanie usunąć wszelkie dane osobowe, jest jednak możliwe, że Apple otrzyma informacje pozwalające na zidentyfikowanie Ciebie. W takiej sytuacji informacje te zostaną natychmiast usunięte.\n\nWszystkie informacje wysyłane do Apple są szyfrowane podczas przesyłu i przechowywania.\n\nWłączenie funkcji Ulepszanie (Rekordy zdrowotne) oznacza wyrażenie zgody na przesyłanie, gromadzenie, konserwację, przetwarzanie i używanie tych informacji przez Apple, jego podmioty zależne i agentów w sposób opisany powyżej. Apple może przechowywać te informacje na serwerach swoich zaufanych usługodawców. Możesz w dowolnym momencie zrezygnować z udostępniania swoich rekordów zdrowotnych. W tym celu przejdź do ekranu Ustawienia > Prywatność i ochrona > Analizy i udoskonalenia, a następnie wyłącz stuknięciem opcję Ulepszanie (Rekordy zdrowotne).\n\nInformacje gromadzone przez Apple są zawsze traktowane zgodnie z zasadami ochrony prywatności Apple, dostępnymi na stronie www.apple.com/pl/privacy."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“सेहत रिकॉर्ड बेहतर बनाएँ” के हिस्से के तौर पर इकट्ठा की गई जानकारी में आपके सेहत रिकॉर्ड की कुछ जानकारी (जैसे कि आपकी दशाएँ, दवाइयाँ, वाइटल, टीके, लैब परिणाम, प्रक्रियाएँ और सत्यापन योग्य सेहत रिकॉर्ड डेटा जैसे सेहत ऐप में सेहत रिकॉर्ड सेक्शन के तहत इंपोर्ट और संग्रहित किए गए अन्य सेहत रिकॉर्ड डेटा) और सेहत रिकॉर्ड फ़ीचर के आपके द्वारा सक्षम किए जाने और उसके साथ आपके जुड़ाव संबंधी जानकारी (जैसे कि आपके सेहत रिकॉर्ड ट्रांसफ़र किए जाने से संबंधित ऐनालिटिक्स डेटा जिसमें ऐसे डेटा का स्रोत शामिल हो सकता है)। विश्लेषण के लिए आपकी जानकारी Apple को भेजे जाने के पहले उसे प्रोसेस किया जाता है ताकि वैसे डेटा को हटाया जा सके जिससे व्यक्तिगत तौर पर आपकी पहचान हो, जैसे कि आपका नाम या फ़ोन नंबर। हालाँकि प्रक्रिया से आशा की जाती है कि वैसी सारी जानकारी को हटा दे जिससे व्यक्तिगत रूप से पहचान हो लेकिन फिर भी संभव है कि Apple को पहचान योग्य डेटा मिले। यदि कोई व्यक्तिगत तौर पर पहचान योग्य डेटा मिलता है, तो इसे तत्काल डिलीट किया जाएगा।\n\nट्रैंज़िट और विश्राम के दौरान Apple को भेजी गई सभी जानकारी एंक्रिप्टेड होती है।\n\n“सेहत रिकॉर्ड बेहतर बनाएँ” सक्षम करके आप Apple व उसके सहयोगियों और अभिकर्ताओं द्वारा ऊपर किए गए वर्णनानुसार इस जानकारी को संचारित, संग्रहित, अनुरक्षित और प्रोसेस करने के लिए सहमत होते और अनुमति देते हैं। Apple इस जानकारी को भरोसेमंद तृतीय पक्ष सर्विस प्रोवाइडर के पास संग्रहित कर सकती है। आप सेहत रिकॉर्ड को शेयर करना किसी भी समय बंद कर सकते हैं। ऐसा करने के लिए सेटिंग्ज़ > गोपनीयता और सुरक्षा > ऐनालिटिक्स और सुधार पर जाएँ और “सेहत रिकॉर्ड बेहतर बनाएँ” बंद करने के लिए टैप करें।\n\nApple द्वारा एकत्रित जानकारी को हमेशा Apple की गोपनीयता नीति के अनुसार व्यवहार में लाया जाएगा जिसे www.apple.com/in/privacy पर देखा जा सकता है।"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De oplysninger, der indsamles som en del af Gør Helbredsjournaler bedre, indeholder visse oplysninger i dine helbredsjournaler (f.eks. oplysninger om sygdomme, medicin, vitalparametre, vaccinationer, prøveresultater, operationer og andre data fra helbredsjournaler, der importeres og opbevares i sektionen Helbredsjournaler i appen Sundhed, såsom verificerbare data fra helbredsjournaler) og oplysninger om, hvorvidt du har slået funktionen Helbredsjournaler til og din interaktion med denne (f.eks. analysedata relateret til overførslen af dine helbredsjournaler, som kan indeholde kilden til sådanne data). Før dine oplysninger sendes til Apple til analyse, behandles de for at fjerne data, der kan identificere dig, f.eks. dit navn eller dit telefonnummer. Selvom behandlingen er beregnet til at fjerne alle oplysninger, der kan identificere dig, er det muligt, at Apple modtager data, der kan identificere dig. Hvis der findes sådanne data, som kan identificere dig, vil de blive fjernet med det samme.\n\nAlle oplysninger, der sendes til Apple, er krypteret under forsendelsen og mens de opbevares.\n\nVed at slå Gør Helbredsjournaler bedre til erklærer du dig indforstået med, at Apple, dets datterselskaber og agenter sender, indsamler, vedligeholder, behandler og benytter alle ovennævnte oplysninger. Apple vil muligvis opbevare disse oplysninger hos tredjepartsudbydere af tjenester. Du kan altid vælge at stoppe deling af dine helbredsjournaler. Det gør du ved at gå til Indstillinger > Anonymitet & sikkerhed > Analyse og forbedringer og trykke for at slå Gør Helbredsjournaler bedre fra.\n\nOplysninger indsamlet af Apple vil altid blive behandlet i overensstemmelse med Apples anonymitetspolitik, som kan læses på www.apple.com/dk/privacy"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The information collected as part of Improve Health Records includes certain information in your health records (such as your conditions, medications, vitals, immunizations, lab results, procedures, and other health records data imported and stored under the Health Records section in the Health app such as verifiable health records data), and information about your enablement of and engagement with the Health Records feature (such as analytics data related to the transfer of your health records, which may include the source of such data). Before your information is sent to Apple for analysis, it is processed to remove data that may personally identify you, such as your name or phone number. While the process is intended to remove all information that may personally identify you, it is possible that Apple may receive identifiable data. If any personally identifiable data is found, it will be promptly deleted.\n\nAll information sent to Apple is encrypted while in transit and at rest.\n\nBy enabling Improve Health Records, you agree and consent to Apple’s and its subsidiaries’ and agents’ transmission, collection, maintenance, processing and use of this information as described above. Apple may store this information with trusted third-party service providers. You may choose to stop sharing your health records at any time. To do so, go to Settings > Privacy & Security > Analytics & Improvements and tap to turn off Improve Health Records.\n\nAt all times, information collected by Apple will be treated in accordance with Apple’s Privacy Policy, which can be found at www.apple.com/privacy"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La informació recopilada per millorar els informes clínics pot incloure dades que apareguin als teus informes clínics (com ara les malalties, medicacions, constants vitals, vacunes, resultats de laboratori, procediments i altres dades importades i desades a la secció dʼinformes clínics de lʼapp Salut com ara dades dʼinformes clínics verificables) i informació sobre si has activat o utilitzes els informes clínics (com ara les dades dʼanàlisi relacionades amb la transferència dels teus informes clínics, que poden incloure la font dʼaquestes dades). Abans dʼenviar la informació a Apple perquè lʼanalitzi, es processa per eliminar‑ne les dades que tʼidentifiquen personalment, per exemple, el nom o el número de telèfon. Malgrat que el procés té la finalitat dʼeliminar tota la informació que tʼidentifiqui personalment, és possible que Apple rebi dades que permetin identificar‑te. Si es detecten dades que tʼidentifiquin personalment, sʼeliminaran immediatament.\n\nTota la informació que s’envia a Apple sʼencripta, tant en enviar‑la com en emmagatzemar‑la.\n\nEn activar la millora dels informes clínics, acceptes i permets que Apple, els seus agents i les seves filials transmetin, recopilin, mantinguin, processin i utilitzin aquesta informació tal com es descriu més amunt. Apple pot desar aquesta informació amb altres proveïdors de serveis de confiança. Pots deixar de compartir els informes clínics en qualsevol moment. Per fer‑ho, ves a l’app Configuració > Privacitat i seguretat > Anàlisi i millores, i desactiva la millora dels informes clínics.\n\nLa informació recopilada per Apple es tractarà en tot moment d’acord amb la política de privacitat d’Apple, que es pot consultar a www.apple.com/es/privacy."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Informasjonen som samles inn i forbindelse med Forbedre helsejournaler, omfatter informasjon fra helsejournalene dine (f.eks. sykdommer, medisiner, vitale tegn, vaksiner, prøveresultater, kirurgiske inngrep og andre helsejournaloppføringer importert og lagret under Helsejournaler-delen i Helse-appen, som f.eks. verifiserbare helsejournaloppføringer), samt informasjon om aktivering og bruk av Helsejournaler-funksjonen (f.eks. analysedata relatert til overføring av helsejournaler, som kan inkludere kilden til slike data). Informasjonen din blir først behandlet for å fjerne personlig identifiserbare data, som navn og telefonnummer, før den sendes til Apple for analyse. Selv om prosessen skal fjerne all informasjon som kan identifisere deg personlig, er det fortsatt mulig at Apple mottar data som kan identifisere deg. Hvis slike data blir funnet, blir de øyeblikkelig slettet.\n\nAll informasjon som sendes til Apple, er kryptert mens den overføres og oppbevares.\n\nVed å aktivere Forbedre Helsejournaler godtar du at Apple, samt våre underleverandører og samarbeidspartnere, kan samle inn, overføre, vedlikeholde, behandle og bruke informasjonen som beskrevet ovenfor. Apple kan dele denne informasjonen med pålitelige tredjeparter som leverer tjenester til selskapet. Du kan når som helst slutte å dele helsejournalene dine. Det gjør du ved å gå til Innstillinger > Personvern og sikkerhet > Analyse og forbedringer og trykke for å slå av Forbedre Helsejournaler.\n\nAll informasjon Apple samler inn, blir behandlet i samsvar med Apples retningslinjer for personvern, som du kan lese på www.apple.com/no/privacy."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ข้อมูลที่เก็บรวบรวมเป็นส่วนหนึ่งของการปรับปรุงบันทึกสุขภาพประกอบด้วยข้อมูลบางส่วนในบันทึกสุขภาพของคุณ (เช่น อาการของคุณ การทานยา สัญญาณชีพ การก่อภูมิคุ้มกัน ผลแล็บ กระบวนการ และข้อมูลบันทึกสุขภาพอื่นที่นำเข้าและจัดเก็บอยู่ในส่วนบันทึกสุขภาพในแอปสุขภาพ เช่น ข้อมูลบันทึกสุขภาพที่ตรวจสอบยืนยันได้) และข้อมูลเกี่ยวกับการเปิดใช้งานและการมีส่วนร่วมกับคุณสมบัติบันทึกสุขภาพ (เช่น ข้อมูลการวิเคราะห์ที่เกี่ยวข้องกับการถ่ายโอนบันทึกสุขภาพของคุณ ซึ่งอาจรวมถึงแหล่งที่มาของข้อมูลดังกล่าวด้วย) ก่อนที่ข้อมูลของคุณจะถูกส่งไปที่ Apple เพื่อวิเคราะห์ ข้อมูลนั้นจะได้รับการประมวลผลเพื่อเอาข้อมูลที่อาจระบุตัวตนของคุณได้ออก เช่น ชื่อหรือเบอร์โทรศัพท์ของคุณ แม้ว่าจะตั้งใจใช้กระบวนการดังกล่าวเพื่อเอาข้อมูลทั้งหมดที่อาจระบุตัวตนของคุณได้ออก แต่ยังมีความเป็นไปได้ที่ Apple อาจได้รับข้อมูลที่ระบุตัวตนได้ ถ้าพบข้อมูลที่ระบุตัวตนได้ใดๆ ข้อมูลนั้นจะถูกลบทันที\n\nข้อมูลทั้งหมดที่ส่งไปที่ Apple จะถูกเข้ารหัสในระหว่างที่ส่งผ่านและพักเก็บ\n\nเมื่อเปิดใช้งานการปรับปรุงบันทึกสุขภาพ ถือว่าคุณยอมรับและยินยอมให้ Apple บริษัทในเครือ และตัวแทน ส่งผ่าน เก็บรวบรวม บำรุงรักษา ประมวลผล และใช้ข้อมูลนี้ตามที่อธิบายไว้ด้านบน Apple อาจจะจัดเก็บข้อมูลนี้พร้อมกับผู้ให้บริการของบริษัทหรือบุคคลอื่นที่เชื่อถือแล้ว คุณสามารถเลือกที่จะหยุดแชร์บันทึกสุขภาพของคุณได้ตลอดเวลา ในการทำเช่นนั้น ให้ไปที่การตั้งค่า > ความเป็นส่วนตัวและความปลอดภัย > การวิเคราะห์และการปรับปรุง แล้วแตะเพื่อปิดใช้การปรับปรุงบันทึกสุขภาพ\n\nข้อมูลที่เก็บรวบรวมโดย Apple จะได้รับการปฏิบัติตามนโยบายความเป็นส่วนตัวของ Apple เสมอ ซึ่งสามารถดูได้ที่ www.apple.com/th/privacy"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "作为“改进健康记录”的一部分而收集的信息包括你健康记录中的某些信息（如健康状况、用药、生命体征、免疫接种、检测结果、医疗程序和“健康”App中“健康记录”部分下导入和储存的其他健康记录数据，例如可验证的健康记录数据），以及你对“健康记录”功能的启用情况和参与度信息（如与传输健康记录相关的分析数据，其中可能包括此类数据源）。你的信息在发送给Apple进行分析前，会经过处理以移除可能识别你个人身份的数据，如你的姓名或电话号码。虽然这些处理的目的是移除可能识别你个人身份的所有信息，但Apple仍有可能会收到可识别个人身份的数据。任何可识别个人身份的数据一经发现便会立即删除。\n\n发送给Apple的所有信息在传输及保留时会进行加密。\n\n启用“改进健康记录”即表示你同意和允许Apple及其下属公司及代理机构按上述条件传输、收集、维护、处理和使用这些信息。Apple可能会通过信任的第三方服务提供商储存此信息。你可以随时选择停止共享健康记录。若要停止共享，请前往“设置”>“隐私与安全性”>“分析与改进”，然后轻点以关闭“改进健康记录”。\n\nApple收集的信息始终会遵照Apple的“隐私政策”处理，其内容可参阅www.apple.com/cn/privacy"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The information collected as part of Improve Health Records includes certain information in your health records (such as your conditions, medications, vitals, immunisations, lab results, procedures, and other health records data imported and stored under the Health Records section in the Health app such as verifiable health records data), and information about your enablement of and engagement with the Health Records feature (such as analytics data related to the transfer of your health records, which may include the source of such data). Before your information is sent to Apple for analysis, it is processed to remove data that may personally identify you, such as your name or phone number. While the process is intended to remove all information that may personally identify you, it is possible that Apple may receive identifiable data. If any personally identifiable data is found, it will be promptly deleted.\n\nAll information sent to Apple is encrypted while in transit and at rest.\n\nBy enabling Improve Health Records, you agree and consent to Apple’s and its subsidiaries’ and agents’ transmission, collection, maintenance, processing and use of this information as described above. Apple may store this information with trusted third-party service providers. You may choose to stop sharing your health records at any time. To do so, go to Settings > Privacy & Security > Analytics & Improvements and tap to turn off Improve Health Records.\n\nAt all times, information collected by Apple will be treated in accordance with Apple’s Privacy Policy, which can be found at apple.com/uk/privacy"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Informacija, renkama kaip funkcijos „Sveikatos įrašų tobulinimas“ dalis, apima tam tikrą sveikatos įrašuose esančią informaciją (pvz., sutrikimus, vaistus, gyvybinius rodiklius, imunizacijas, laboratorinių tyrimų rezultatus, procedūras ir kitus sveikatos įrašų duomenis, kurie importuoti ir saugomi programos „Sveikata“ srityje „Sveikatos įrašai“, pvz., patvirtinamų sveikatos įrašų duomenis) ir informaciją apie tai, ar įjungėte ir sąveikaujate su funkcija „Sveikatos įrašai“ (pvz., analizės duomenis, susijusius su sveikatos įrašų, tarp kurių gali būti tokių duomenų šaltinis, perdavimu). Prieš siunčiant jūsų informaciją bendrovei „Apple“ analizuoti, ji apdorojama pašalinant duomenis, kurie leistų nustatyti tapatybę, pvz., vardą ir pavardę arba telefono numerį. Nors procesas skirtas pašalinti visą informaciją, pagal kurią galima nustatyti jūsų tapatybę, tačiau gali būti, kad bendrovė „Apple“ gaus tapatybę leidžiančius nustatyti duomenis. Radus asmens tapatybę leidžiančius nustatyti duomenis, jie bus nedelsiant ištrinti.\n\nVisa bendrovei „Apple“ siunčiama informacija siunčiant ir kitu metu yra užšifruota.\n\nĮjungdami funkciją „Sveikatos įrašų tobulinimas“ sutinkate, kad bendrovė „Apple“ ir jos patronuojamosios įmonės bei agentai perduotų, rinktų, prižiūrėtų, apdorotų ir naudotų šią informaciją, kaip apibūdinta pirmiau. Bendrovė „Apple“ gali saugoti šią informaciją pas patikimus trečiosios šalies paslaugų teikėjus. Bet kuriuo metu galite sustabdyti sveikatos įrašų bendrinimą. Norėdami tai padaryti, eikite į sritį „Nustatymai“ > „Privatumas ir sauga“ > „Analizė ir patobulinimai“ ir bakstelėkite, kad išjungtumėte funkciją „Sveikatos įrašų tobulinimas“.\n\nBendrovės „Apple“ renkama informacija visada bus tvarkoma pagal „Apple“ privatumo politiką, kurią galite rasti svetainėje www.apple.com/privacy"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La información que se recolecta como parte del proceso de Mejorar expediente médico incluye información sobre tu salud (como tus condiciones, medicamentos, signos vitales, vacunas, resultados de laboratorio, cirugías y cualquier otra información sobre tu salud guardada en la sección Expediente médico de la app Salud, como pueden ser los expedientes verificables de salud), así como la información sobre tu activación de la función Expediente médico y tu interacción con ella (como los datos de análisis relacionados con la transferencia de tus registros de salud, que pueden incluir la fuente de dichos datos). Antes de enviar tu información a Apple, esta se procesa para eliminar cualquier dato que te pueda identificar personalmente, como tu nombre o número de teléfono. Aunque el proceso tiene la intención de eliminar cualquier información que pueda identificarte personalmente, es posible que Apple reciba datos que puedan identificarte. Si se encontraran tales datos, se eliminarán cuanto antes.\n\nToda la información que se envía a Apple se encripta al momento de transmitirse y al residir en nuestros servidores.\n\nAl activar Mejorar expediente médico, aceptas y autorizas que Apple y sus socios y agentes transmitan, recopilen, mantengan, procesen y usen la información descrita anteriormente. Apple podría almacenar esta información usando proveedores de servicio de terceros. Puedes optar por dejar de compartir tu información de expediente médico en cualquier momento. Para ello, ve a Configuración > Privacidad y seguridad > Análisis y mejoras y desactiva Mejorar expediente médico.\n\nLa información que Apple recopile se tratará en todo momento de conformidad con la Política de privacidad de Apple, la cual puedes consultar en www.apple.com/la/privacy."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "K informacím shromažďovaným za účelem vylepšování funkce Zdravotní záznamy patří některé údaje uvedené ve vašich zdravotních záznamech (například informace o vašem zdravotním stavu, lécích, životních funkcích, očkování, výsledcích laboratorních vyšetření, léčbě a další záznamy se zdravotními daty, importované a uložené v oddílu Zdravotní záznamy v aplikaci Zdraví, jako jsou údaje z ověřitelných zdravotních záznamů) a informace o tom, zda jste funkci Zdravotní záznamy zapnuli a jak ji využíváte (například analytická data související s přenosem vašich zdravotních záznamů, jejichž součástí může být zdroj těchto dat). Před odesláním společnosti Apple budou z dat odstraněny údaje umožňující vaši identifikaci, například jméno a telefonní číslo. Přestože by tento proces měl odstranit veškeré údaje umožňující osobní identifikaci, za určitých okolností může Apple taková data obdržet. Pokud k tomu dojde, veškerá nalezená osobně identifikovatelná data budou okamžitě smazána.\n\nVšechna data poslaná společnosti Apple jsou během přenosu a mezi přenosy zašifrovaná.\n\nZapnutím funkce vylepšování zdravotních záznamů vyjadřujete výslovný souhlas s tím, že společnost Apple a její pobočky a zástupci mohou přenášet, shromažďovat, spravovat, zpracovávat a využívat veškeré výše uvedené údaje. Společnost Apple může tato data ukládat u důvěryhodných nezávislých poskytovatelů služeb. Sdílení zdravotních záznamů můžete kdykoli vypnout. Chcete‑li to udělat, otevřete Nastavení > Soukromí a zabezpečení > Analýza a vylepšování a klepnutím vypněte volbu Vylepšovat zdravotní záznamy.\n\nSpolečnost Apple bude se shromážděnými informacemi za všech okolností nakládat v souladu se svými zásadami ochrany osobních údajů, jejichž znění najdete na adrese www.apple.com/cz/privacy."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Maklumat dikumpul sebagai sebahagian daripada Tingkatkan Rekod Kesihatan termasuk maklumat tertentu dalam rekod kesihatan anda (seperti maklumat keadaan, ubat, tanda vital, imunisasi, keputusan makmal, prosedur dan data rekod kesihatan lain yang diimport dan disimpan di bawah bahagian Rekod Kesihatan dalam app Kesihatan seperti data rekod kesihatan yang boleh disahkan), serta maklumat tentang pendayaan dan interaksi anda dengan ciri Rekod Kesihatan (seperti data analitis yang berkaitan dengan pemindahan rekod kesihatan anda, yang mungkin termasuk sumber data sedemikian). Sebelum maklumat anda dihantar kepada Apple untuk dianalisis, ia diproses untuk mengeluarkan data yang mungkin mengenal pasti anda secara peribadi, seperti nama atau nombor telefon anda. Walaupun proses bertujuan mengeluarkan semua maklumat yang mungkin mengenal pasti anda secara peribadi, terdapat kemungkinan Apple menerima data pengenalpastian peribadi. Jika sebarang data pengenalpastian peribadi ditemui, ia akan dipadamkan dengan segera.\n\nSemua maklumat yang dihantar kepada Apple disulitkan semasa dihantar dan disimpan.\n\nDengan mendayakan Tingkatkan Rekod Kesihatan, anda bersetuju dan mengizinkan penghantaran, pengumpulan, penyenggaraan, pemprosesan dan penggunaan maklumat ini oleh Apple dan subsidiari serta ejennya seperti yang diterangkan di atas. Apple mungkin menyimpan maklumat ini dengan penyedia khidmat pihak ketiga yang dipercayai. Anda boleh memilih untuk berhenti berkongsi rekod kesihatan anda pada bila-bila masa. Untuk berbuat demikian, pergi ke Seting > Privasi & Keselamatan > Analitis & Peningkatan dan ketik untuk menyahaktifkan Tingkatkan Rekod Kesihatan.\n\nPada setiap masa, maklumat yang dikumpulkan oleh Apple akan dikendalikan berpandukan Dasar Privasi Apple, yang boleh didapati di www.apple.com/my/privacy"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Medzi informácie zhromažďované funkciou Vylepšovanie zdravotných záznamov patria vybrané informácie z vašich zdravotných záznamov (napríklad informácie o vašom zdravotnom stave, užívaných liekoch, vitálnych funkciách, očkovaniach, výsledkoch laboratórnych testov, procedúrach a ďalšie dáta zdravotných záznamov naimportované a uchované v časti Zdravotné záznamy v apke Zdravie, napríklad dáta overiteľných zdravotných záznamov) a informácie o tom, či ste zapli funkciu Zdravotné záznamy a akým spôsobom ju používate (napríklad analytické dáta súvisiace s presunom zdravotných záznamov, súčasťou ktorých môžu byť aj zdroje takýchto dát). Informácie sú pred odoslaním na analýzu do spoločnosti Apple spracované tak, aby z nich boli odstránené údaje umožňujúce vašu osobnú identifikáciu, ako je vaše meno alebo telefónne číslo. Aj keď bol tento proces navrhnutý na odstraňovanie všetkých informácií umožňujúcich osobnú identifikáciu, je možné, že spoločnosť Apple napriek tomu takéto údaje získa. Ak sa tak stane, tieto citlivé údaje budú okamžite odstránené.\n\nVšetky informácie odoslané spoločnosti Apple sú počas prenosu a uchovania šifrované.\n\nPovolením funkcie Vylepšovať zdravotné záznamy súhlasíte s tým, že spoločnosť Apple a jej dcérske spoločnosti a agenti môžu prenášať, zhromažďovať, spravovať, spracovávať a používať tieto informácie tak, ako je to popísané vyššie. Spoločnosť Apple môže uchovať tieto informácie u dôveryhodných poskytovateľov služieb tretích strán. Zdieľanie zdravotných záznamov môžete kedykoľvek zastaviť. Otvorte Nastavenia > Súkromie a bezpečnosť > Analytika a vylepšovanie a klepnutím vypnite možnosť Vylepšovať zdravotné záznamy.\n\nS informáciami zhromaždenými spoločnosťou Apple sa bude po celý čas zaobchádzať v súlade so zásadami ochrany osobných údajov spoločnosti Apple, ktoré nájdete na stránke www.apple.com/sk/privacy."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Информацията, събрана като част от Подобряване на Здравно досие, включва определена информация във вашето здравно досие (като състояния, медикаменти, жизненоважни показатели, имунизации, лабораторни резултати, процедури и други данни от здравното досие, импортирани и съхранени под секцията Здравно досие в приложението Здраве, като потвърдени данни от здравно досие) и информация за активиране и ангажиране с функцията Здравно досие (като аналитични данни, свързани с прехвърлянето на вашето здравно досие, което може да включва източника на такива данни). Преди вашата информация да се изпрати на Apple за анализи, тя се обработва за премахване на данни, които могат да ви идентифицират лично, като вашето име или телефонен номер. Въпреки че процесът има за цел да премахне цялата информация, която може да ви идентифицира лично, е възможно Apple да получи данни за идентифициране. Ако бъдат открити някакви лични данни за идентифициране, те ще бъдат незабавно изтрити.\n\nЦялата информация, изпратена на Apple, е криптирана по време на транспортирането и съхранението.\n\nКато активирате Подобряване на здравно досие, вие се съгласявате и разрешавате Apple и нейните дъщерни дружества и агенти да предават, събират, поддържат, обработват и използват тази информация, както е описано по-горе. Apple може да съхранява тази информация с доверени други компании, които предоставят услуги. Можете да изберете да спрете споделянето на вашето здравно досие по всяко време. За да направите това, отидете в Настройки > Поверителност и сигурност > Аналитични данни и подобрения и докоснете, за да изключите Подобряване на здравно досие.\n\nСъбраната от Apple информация винаги ще се третира в съответствие с Политиката за поверителност на Apple, която може да се намери на адрес www.apple.com/privacy"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The information collected as part of Improve Health Records includes certain information in your health records (such as your conditions, medications, vital signs, immunisations, lab results, procedures, and other health records data imported and stored under the Health Records section in the Health app such as verifiable health records data), and information about your enablement of and engagement with the Health Records feature (such as analytics data related to the transfer of your health records, which may include the source of such data). Before your information is sent to Apple for analysis, it is processed to remove data that may personally identify you, such as your name or phone number. While the process is intended to remove all information that may personally identify you, it is possible that Apple may receive identifiable data. If any personally identifiable data is found, it will be promptly deleted.\n\nAll information sent to Apple is encrypted while in transit and at rest.\n\nBy enabling Improve Health Records, you agree and consent to Apple’s and its subsidiaries’ and agents’ transmission, collection, maintenance, processing and use of this information as described above. Apple may store this information with trusted third-party service providers. You may choose to stop sharing your health records at any time. To do so, go to Settings > Privacy & Security > Analytics & Improvements and tap to turn off Improve Health Records.\n\nAt all times, information collected by Apple will be treated in accordance with Apple’s Privacy Policy, which can be found at apple.com/au/privacy."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Informacije, zbrane kot del izboljšanja Zdravstvenega kartona, vključujejo določene informacije iz vašega zdravstvenega kartona (na primer stanja, zdravila, vitalne funkcije, cepljenja, laboratorijske izvide, posege ter druge podatke zdravstvenega kartona, uvožene in shranjene v razdelku Zdravstveni karton v aplikaciji Zdravje, na primer preverljive podatke iz zdravstvenega kartona), ter informacije o vašem omogočanju funkcije Zdravstveni karton in interakciji z njo (na primer analitični podatki, povezani s prenosom vašega zdravstvenega kartona, kar lahko vključuje vir takšnih podatkov). Preden se vaše informacije pošljejo družbi Apple v analizo, se obdelajo, da bi se odstranili podatki, na podlagi katerih bi vas bilo mogoče osebno prepoznati, na primer vaše ime ali telefonska številka. Čeprav naj bi postopek odstranil vse podatke, na podlagi katerih bi bilo mogoče ugotoviti vašo identiteto, se lahko zgodi, da Apple prejme tudi osebno določljive podatke. Če so najdeni katerikoli osebno določljivi podatki, bodo takoj izbrisani.\n\nVse informacije, ki so poslane družbi Apple, so šifrirane, ko se prenašajo in ko mirujejo.\n\nČe vklopite možnost Izboljšaj Zdravstveni karton, se strinjate in dovolite, da Apple, njegove podružnice in zastopniki prenašajo, zbirajo, ohranjajo, obdelujejo in uporabljajo te informacije, kot je opisano zgoraj. Apple lahko te informacije hrani pri drugih zaupanja vrednih ponudnikih storitev. Deljenje zdravstvenega kartona lahko kadarkoli ustavite. To naredite tako, da odprete Nastavitve > Zasebnost in varnost > Analitika in izboljšave ter tapnete, da izklopite možnost Izboljšaj Zdravstveni karton.\n\nPodatki, ki jih zbira Apple, bodo vedno obravnavani v skladu s pravilnikom o zasebnosti družbe Apple, ki je na voljo na naslovu www.apple.com/si/privacy"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die mit „Gesundheitsakte verbessern“ gesammelten Informationen enthalten bestimmte Daten in deiner Gesundheitsakte (etwa Erkrankungen, Medikationen, Vitalwerte, Impfungen, Laborergebnisse, Eingriffe und andere Daten deiner Gesundheitsakte, die in den Bereich „Gesundheitsakte“ der Health-App importiert und dort gespeichert wurden, z. B. überprüfbare Gesundheitsaktendaten) sowie Informationen über deine Aktivierung von und Interaktion mit der Funktion „Gesundheitsakte“ (etwa für die Übertragung deiner Gesundheitsakte relevante Analysedaten, die die Quelle solcher Daten umfassen können). Bevor Informationen zur Analyse an Apple gesendet werden, werden sie bearbeitet, um Daten zu entfernen, die möglicherweise Rückschlüsse auf deine Person zulassen, etwa dein Name oder deine Telefonnummer. Obwohl der Zweck dieser Bearbeitung darin besteht, alle Informationen zu löschen, die möglicherweise Rückschlüsse auf deine Person zulassen, kann es vorkommen, dass Apple identifizierbare Daten erhält. Falls identifizierbare Daten gefunden werden sollten, werden sie umgehend gelöscht.\n\nAlle an Apple gesendeten Informationen sind während der Übertragung und Aufbewahrung verschlüsselt.\n\nDurch Aktivieren von „Gesundheitsakte verbessern“ erklärst du dein Einverständnis, dass Apple und seine Tochtergesellschaften und Vertreter diese Informationen wie vorstehend aufgeführt übertragen, sammeln, verwalten, verarbeiten und verwenden dürfen. Apple ist berechtigt, vertrauenswürdige Drittanbieter derartiger Dienste mit dem Speichern dieser Daten zu beauftragen. Du hast jederzeit die Option, das Teilen der Gesundheitsakte zu beenden. Gehe hierfür zu „Einstellungen“ > „Datenschutz & Sicherheit“ > „Analyse & Verbesserungen“ und tippe, um „Gesundheitsakte verbessern“ zu deaktivieren.\n\nDie von Apple erfassten Informationen werden jederzeit gemäß der Apple-Datenschutzrichtlinie behandelt, die unter www.apple.com/de/privacy zu finden ist."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Thông tin được thu thập như một phần của Cải thiện hồ sơ sức khỏe có thể bao gồm thông tin nhất định trong hồ sơ sức khỏe của bạn (ví dụ như tình trạng bệnh lý, thuốc, sinh hiệu, tiêm chủng, kết quả xét nghiệm, quy trình và các dữ liệu hồ sơ sức khỏe khác được nhập và lưu trữ trong phần Hồ sơ sức khỏe trong ứng dụng Sức khỏe, chẳng hạn như dữ liệu hồ sơ sức khỏe có thể xác minh), cũng như thông tin về việc bạn bật và tương tác tính năng Hồ sơ sức khỏe (ví dụ như dữ liệu phân tích liên quan đến việc chuyển hồ sơ sức khỏe của bạn, có thể bao gồm nguồn của dữ liệu đó). Trước khi được gửi đến Apple để phân tích, thông tin được xử lý để loại bỏ dữ liệu có thể xác định danh tính của bạn, ví dụ như tên hoặc số điện thoại. Mặc dù quá trình này nhằm mục đích loại bỏ tất cả thông tin có thể xác định danh tính của bạn, nhưng Apple vẫn có khả năng nhận được dữ liệu có thể nhận dạng. Nếu phát hiện thấy bất kỳ dữ liệu có thể xác định danh tính nào thì dữ liệu đó sẽ bị xóa ngay lập tức.\n\nTất cả thông tin được gửi đến Apple đều được mã hóa trong khi chuyển và khi đã đến nơi.\n\nBằng việc bật Cải thiện Hồ sơ sức khỏe, bạn đồng ý và cho phép Apple, các công ty con và đại lý của hãng chuyển giao, thu thập, duy trì, xử lý và sử dụng thông tin này như mô tả ở trên. Apple có thể lưu trữ thông tin này với các nhà cung cấp dịch vụ bên thứ ba được tin cậy. Bạn có thể lựa chọn dừng chia sẻ hồ sơ sức khỏe bất kỳ lúc nào. Để thực hiện, hãy đi tới Cài đặt > Quyền riêng tư & Bảo mật > Phân tích & Cải tiến và chạm để tắt Cải thiện Hồ sơ sức khỏe.\n\nThông tin do Apple thu thập sẽ luôn được xử lý theo Chính sách quyền riêng tư của Apple, có thể tìm thấy tại địa chỉ www.apple.com/vn/privacy"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "As informações fornecidas coletadas como parte da Melhoria dos Registros de Saúde incluem certas informações dos registros de saúde (como suas condições de saúde, medicamentos, sinais vitais, vacinações, resultados de laboratórios, procedimentos e outros dados de registros de saúde importados e armazenados na seção Registros de Saúde do app Saúde, como dados de registros de saúde verificáveis), bem como informações sobre sua ativação e participação com os Registros Médicos (tais como dados de análise relacionados aos seus registros médicos, que podem incluir a origem de tais dados). Antes de suas informações serem enviadas à Apple para análise, elas são processadas para a remoção de dados que possam identificar você pessoalmente, como o seu nome ou número de telefone. Embora o processo tenha a intenção de remover todas as informações que possam identificar você pessoalmente, é possível que a Apple receba dados identificáveis. Se qualquer dado identificável for encontrado, ele será apagado imediatamente.\n\nTodas as informações enviadas à Apple são criptografadas durante o trânsito e o armazenamento.\n\nAo ativar Melhorar Registros Médicos, você concorda e consente que a Apple, e suas subsidiárias e agentes possam transmitir, coletar, manter, processar e usar essas informações conforme descrito acima. A Apple pode armazenar essas informações em provedores de serviço terceirizados de confiança. Você pode optar por parar de compartilhar seus registros médicos a qualquer momento. Para fazer isso, acesse Ajustes > Privacidade e Segurança > Análise e Melhorias e desative Melhorar Registros Médicos.\n\nAs informações coletadas pela Apple sempre serão tratadas de acordo com a Política de Privacidade da Apple, que pode ser encontrada em www.apple.com/br/privacy"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Інформація, зібрана в межах програми «Покращення Медзаписів», містить певну інформацію з ваших медзаписів (наприклад, про захворювання, ліки, життєві показники, щеплення, результати аналізів, процедури та інші меддані, імпортовані та збережені в розділі «Медзаписи» програми «Здоровʼя», як‑от меддані, які можна перевірити), а також інформацію про те, чи ви ввімкнули та чи використовуєте функцію «Медзаписи» (наприклад, аналітичні дані, повʼязані з передаванням ваших медзаписів, що можуть містити джерело таких даних). Перш ніж надсилати вашу інформацію на аналіз до Apple, вона обробляється з метою вилучення даних, що можуть вас ідентифікувати, як‑от ваше імʼя чи номер телефону. Хоча цей процес передбачає вилучення всієї інформації, що може ідентифікувати вашу особу, цілком можливо, що Apple може отримати дані, що ідентифікують вас. Якщо буде знайдено будь-які дані, що ідентифікують чи можуть ідентифікувати особу, їх буде негайно видалено.\n\nУся інформація, що надсилається до Apple, шифрується під час пересилання та зберігання.\n\nУвімкнувши параметр «Покращення Медзаписів», ви погоджуєтесь на передання, збирання, обслуговування, оброблення і використання цієї інформації Apple та її філіями й представниками, як це описано вище. Apple може зберігати цю інформацію у довірених сторонніх постачальників послуг. Ви можете будь‑коли припинити надавати свої медзаписи. Для цього перейдіть у меню Параметри > Приватність і безпека > Аналітика і покращення й вимкніть параметр «Покращення Медзаписів».\n\nІнформація, яку збирає Apple, завжди оброблятиметься відповідно до Політики конфіденційності Apple, наведеної на вебсторінці www.apple.com/ua/privacy"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les informations collectées dans le cadre de « Améliorer Dossiers médicaux » comprennent certaines informations contenues dans vos dossiers médicaux (telles que vos problèmes médicaux, vos médicaments, vos signes vitaux, vos vaccinations, vos résultats d’analyse, les interventions que vous avez subies et d’autres données issues de vos dossiers médicaux importées et conservées dans la section Dossiers médicaux de l’app Santé, notamment les données vérifiables de vos dossiers médicaux), ainsi que des informations relatives à votre activation et engagement avec la fonctionnalité Dossiers médicaux (comme des données d’analyse relatives au transfert de vos dossiers médicaux, qui peuvent contenir la source de ces données). Avant leur envoi à Apple pour analyse, les données sont traitées en vue de supprimer toute information susceptible de vous identifier personnellement, comme votre nom ou votre numéro de téléphone. Bien que ce processus soit destiné à supprimer toutes les informations susceptibles de vous identifier personnellement, il est possible qu’Apple reçoive des données identifiables. Si tel est le cas, les données en question sont immédiatement supprimées.\n\nToutes les données envoyées à Apple sont chiffrées lors de leur transmission et de leur stockage.\n\nEn activant la fonctionnalité « Améliorer Dossiers médicaux », vous acceptez qu’Apple ainsi que ses filiales et ses représentants transmettent, recueillent, conservent, traitent et utilisent ces données comme décrit ci-dessus. Apple peut faire appel à des fournisseurs de service tiers de confiance pour le stockage de ces données. Vous pouvez cesser à tout moment de partager vos dossiers médicaux. Pour ce faire, accédez à Réglages > Confidentialité et sécurité > Analyse et améliorations, et touchez pour désactiver « Améliorer Dossiers médicaux ».\n\nLes données recueillies par Apple seront en tout temps traitées conformément à l’Engagement de confidentialité d’Apple, que vous pouvez consulter à l’adresse suivante : www.apple.com/fr/privacy"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La información recopilada como parte de “Mejorar el historial clínico” incluye cierta información que figura en tu historial clínico (como tus afecciones, medicaciones, constantes vitales, vacunas, resultados de laboratorio, operaciones y otros datos de tu historial clínico importados y almacenados en la sección “Historial clínico” de la app Salud como datos verificables de tu historial clínico) e información sobre la activación de la función “Historial clínico” y tu interacción con ella (como los datos de análisis relacionados con la transferencia de tu historial clínico, que pueden incluir el origen de esa información). Antes de enviar la información a Apple para analizarla, se procesa mediante herramientas que eliminan aquellos datos que puedan identificarte personalmente, como tu nombre o número de teléfono. Aunque las herramientas están diseñadas para eliminar todos los datos de este tipo, es posible que Apple reciba alguna información que sí pueda identificarte. De detectarse datos que puedan identificarte personalmente, se eliminarán con la mayor brevedad posible.\n\nToda la información enviada a Apple también estará encriptada mientras se traslada y se guarda en nuestros servidores.\n\nAl activar “Mejorar el historial clínico”, aceptas y consientes la transmisión, recopilación, mantenimiento, procesamiento y uso de esta información por parte de Apple, sus filiales y agentes tal como se ha descrito anteriormente. Apple puede almacenar esta información con proveedores de servicios de terceros de confianza. Puedes dejar de compartir tu historial clínico cuando quieras. Para ello, desactiva “Mejorar el historial clínico” en Ajustes > Privacidad y seguridad > Análisis y mejoras.\n\nToda esta información se recopila y se trata de acuerdo en todo momento con la política de privacidad de Apple, que puedes consultar en www.apple.com/es/privacy."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "«Денсаулық жағдайы» функциясын жақсарту мақсатында жиналатын ақпаратқа денсаулық жағдайы туралы жазбалардағы белгілі бір ақпарат (мысалы, аурулар, дәрі-дәрмектер, негізгі көрсеткіштер, екпелер, талдау нәтижелері, процедуралар, сондай-ақ денсаулық жағдайы туралы тексерілетін деректермен қоса «Денсаулық» қолданбасының «Денсаулық жағдайы» бөлімінде импортталған және сақталған денсаулық жағдайы туралы басқа да деректер) және «Денсаулық жағдайы» функциясын қосқаныңыз және оны қалай пайдаланатыңыз туралы ақпарат (мысалы, денсаулық жағдайы туралы жазбаларды тасымалдауға қатысты және дереккөзді қамтуы мүмкін аналитикалық деректер) жатады. Apple компаниясына талдауға жіберілетін ақпарат алдымен өңдеуден өтеді. Атап айтқанда, одан жеке басыңызды анықтауы мүмкін деректер (мысалы, атыңыз немесе телефон нөміріңіз) жойылады. Өңдеу кезінде жеке басыңызды анықтауы мүмкін деректердің барлығы жойылуы қажет болғанымен, Apple компаниясына кейбір жеке ақпарат кетіп қалуы мүмкін. Жеке басыңызды анықтайтын қандай да бір деректер анықталған жағдайда дереу жойылады.\n\nApple компаниясына жіберілетін бүкіл ақпарат тасымалдау және сақтау кезінде шифрланады.\n\n«Денсаулық жағдайы» функциясын қоса отырып, осы ақпаратты жоғарыда сипатталғандай Apple компаниясына, оның еншілес кәсіпорындары мен агенттеріне беруге, жинауға, сақтауға, өңдеуге және пайдалануға келісім бересіз. Apple компаниясы бұл ақпаратты сенімді үшінші тараптық сервис провайдерлерінде сақтауы мүмкін. Денсаулық жағдайы туралы жазбаларды бөлісу әрекетін кез келген уақытта тоқтатуға болады. Ол үшін «Реттеулер» > «Құпиялылық және қауіпсіздік» > «Аналитика және жақсартулар» тармағына өтіп, «Денсаулық жағдайын жақсарту» параметрін өшіріңіз.\n\nApple компаниясы жинаған ақпарат әрқашан Apple компаниясының құпиялылық саясатына (www.apple.com/privacy сайтында берілген) сәйкес өңделеді"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Informațiile colectate ca parte din “Îmbunătățire înregistrări medicale” includ anumite informații din înregistrările dvs. medicale (precum afecțiuni, medicații, semne vitale, imunizări, rezultate ale analizelor de laborator, proceduri și alte date ale înregistrărilor medicale importate și stocate în secțiunea “Înregistrări medicale” din aplicația Sănătate, precum date verificabile ale înregistrărilor medicale) și informații despre activarea funcționalității “Înregistrări medicale” și interacțiunea dvs. cu aceasta (precum date analitice referitoare la transferarea înregistrărilor medicale, care pot include sursa unor asemenea date). Înainte ca informațiile să fie trimise la Apple pentru analiză, acestea sunt procesate pentru eliminarea datelor care vă pot identifica personal, precum numele sau numărul dvs. de telefon. Chiar dacă intenția este ca procesul să elimine toate informațiile care vă pot identifica personal, este posibil ca Apple să primească date de identificare. Dacă sunt găsite orice date de identificare personală, acestea vor fi șterse cu promptitudine.\n\nToate informațiile trimise la Apple sunt criptate în timpul transmiterii și în repaus.\n\nPrin activarea funcționalității “Îmbunătățire înregistrări medicale”, sunteți de acord și consimțiți ca Apple și filialele și agenții Apple să transmită, colecteze, întrețină, proceseze și utilizeze aceste informații în condițiile descrise mai sus. Apple poate stoca aceste informații prin terți furnizori de servicii. Puteți opta oricând să opriți partajarea înregistrărilor medicale. În acest scop, accesați Configurări > Intimitate și securitate > Analiză și îmbunătățiri și apăsați pentru a dezactiva opțiunea “Îmbunătățire înregistrări medicale”.\n\nInformațiile colectate de Apple vor fi tratate în permanență în conformitate cu Politica de confidențialitate Apple, care se află la www.apple.com/ro/privacy."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“ヘルスケアレコードの改善”の一環として収集される情報には、ヘルスケアレコード内の特定の情報（体調、薬歴、生体情報、予防接種、検査結果、手術歴、およびヘルスケアアプリの“ヘルスケアレコード”セクションに読み込まれて保存されているその他のヘルスケアレコード（検証可能なヘルスケアレコードのデータなど））、およびヘルスケアレコード機能の有効化とエンゲージメントに関する情報（ヘルスケアレコードの転送に関連する分析データなど（該当するデータのソースを含む場合があります））が含まれます。解析のためにAppleに送信される前に、個人を特定できるようなデータ（氏名や電話番号など）が取り除かれます。このプロセスは個人を特定できるような情報をすべて取り除くように設計されていますが、それでも個人を特定できるようなデータがAppleに送られる可能性はゼロではありません。万一個人を特定できるようなデータがAppleで見つかった場合、その情報は即座に削除されます。\n\nAppleに送信された情報はすべて、転送中かどうかにかかわらず暗号化されます。\n\n“ヘルスケアレコードの改善”を有効にすることで、Appleおよびその子会社と代理業者が、上記で説明した方法で当該情報を送信、収集、保守、処理、および使用することに同意し、承諾することになります。Appleはこの情報を信頼できる第三者のサービス提供者と共に保管する場合があります。ヘルスケアレコードの共有はいつでも停止することができます。その場合は、“設定”＞“プライバシーとセキュリティ”＞“解析と改善”に移動し、“ヘルスケアレコードの改善”をタップしてオフにしてください。\n\nAppleが収集する情報は、いかなる場合においても、Appleのプライバシーポリシー（www.apple.com/jp/privacy を参照）に従って取り扱われます。"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Informacije koje su prikupljene kao dio značajke poboljšanja zdravstvenih podataka sadrže određene informacije iz vaših zdravstvenih podataka (kao što su informacije o zdravstvenom stanju, lijekovima, rezultatima pregleda, imunizacijama, laboratorijskim rezultatima, postupcima i drugim zdravstvenim podacima koji su importirani i pohranjeni u odjeljku Zdravstveni podaci unutar aplikacije Zdravlje, primjerice, zdravstveni podaci koji se mogu provjeriti) i informacije o vašem omogućavanju i sudjelovanju u značajci Zdravstveni podaci (poput analitičkih podataka povezanih s prijenosom vaših zdravstvenih podataka, koji mogu uključivati i izvor takvih podataka). Prije slanja vaših informacija tvrtki Apple radi analize, one se obrađuju radi uklanjanja podataka koji vas mogu identificirati, primjerice vašeg imena ili telefonskog broja. Proces je dizajniran za uklanjanje svih informacija koje vas mogu identificirati, ali je moguće da Apple ipak primi identificirajuće podatke. Ako pronađemo identificirajuće podatke, oni će odmah biti obrisani.\n\nSve informacije koje se šalju tvrtki Apple kriptirane su tijekom slanja i čuvanja.\n\nOmogućavanjem značajke poboljšanja zdravstvenih podataka, slažete se i pristajete da tvrtka Apple, kao i njezine podružnice i agenti, smiju odašiljati, prikupljati, održavati, obrađivati i koristiti ove informacije kako je opisano iznad. Apple može pohraniti ove informacije kod drugih pouzdanih pružatelja usluga. U bilo kojem trenutku možete prestati dijeliti zdravstvene podatke. Ako to želite učiniti, otvorite Postavke > Privatnost i sigurnost > Analiza i poboljšanja pa dodirom isključite opciju Poboljšanje zdravstvenih podataka.\n\nApple će u svakom trenutku prikupljene informacije tretirati u skladu s pravilima privatnosti tvrtke Apple, koja možete pronaći na www.apple.com/legal/privacy/hr"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A informação recolhida no âmbito de Melhorar Registos de saúde inclui determinada informação presente nos seus registos de saúde (como problemas médicos, medicação, imunizações, resultados laboratoriais, exames médicos efetuados e outros dados de registos de saúde importados e armazenados na secção Registos de saúde, na aplicação Saúde, tais como dados de registos de saúde comprováveis), e informação sobre a ativação e a sua interação com a funcionalidade Registos de saúde (como dados de análise relacionados com a transferência dos seus registos de saúde, o que poderá incluir a fonte desses dados). Antes de ser enviada à Apple para ser analisada, a informação é processada e toda a informação pessoal, como nome e número de telefone, é removida. O processo usado visa remover toda a informação pessoal que possa identificar os utilizadores; contudo, pode acontecer que alguma desta informação seja, ainda assim, enviada à Apple. Neste caso, a Apple compromete‑se a apagá‑la imediatamente.\n\nToda a informação enviada à Apple é cifrada durante a transmissão e quando armazenada.\n\nAo ativar Melhorar Registos de saúde, aceita e consente que a Apple e respetivas empresas subsidiárias e agentes transmitam, recolham, mantenham, processem e usem esta informação nos termos acima descritos. A Apple reserva o direito de partilhar esta informação com fornecedores de serviços que considera fidedignos. Pode optar por desativar esta funcionalidade a qualquer momento. Para tal, em Definições > Privacidade e segurança > Análise e melhorias, desative a opção “Melhorar Registos de saúde”.\n\nToda e qualquer informação recolhida pela Apple será tratada de acordo com a Política de Privacidade da Apple, cujo texto pode ser consultado em www.apple.com/privacy"
+          }
+        }
+      }
+    },
+    "SPLASH_SHORT_TITLE": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Health Records"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "건강 기록 향상"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "שיפור ״רשומות רפואיות״"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tingkatkan Catatan Kesehatan"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paranna potilaskertomusta"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sağlık Kayıtlarını İyileştir"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Улучшение функции «Состояние здоровья»"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verbeter medisch dossier"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Egészségügyi dokumentumok továbbfejlesztése"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Migliora dati sanitari"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar expediente médico"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Βελτίωση των Ιατρικών εγγραφών"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Améliorer Dossiers médicaux"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تحسين السجلات الصحية"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "改進健康記錄"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "改進健康記錄"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Förbättra medicinska journaler"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ulepszanie (Rekordy zdrowotne)"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "सेहत रिकॉर्ड बेहतर बनाएँ"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gør Helbredsjournaler bedre"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Health Records"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Millora dels informes clínics"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forbedre Helsejournaler"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ปรับปรุงบันทึกสุขภาพ"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "改进健康记录"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Health Records"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sveikatos įrašų tobulinimas"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar expediente médico"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vylepšování zdravotních dat"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tingkatkan Rekod Kesihatan"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vylepšovanie zdravotných záznamov"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Подобряване на Здравно досие"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Health Records"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Izboljšanje Zdravstvenega kartona"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gesundheitsakte verbessern"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cải thiện Hồ sơ sức khỏe"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Melhorar Registros Médicos"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Покращення Медзаписів"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Améliorer Dossiers médicaux"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar el historial clínico"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "«Денсаулық жағдайы» функциясын жақсарту"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Îmbunătățire înregistrări medicale"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ヘルスケアレコードの改善"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poboljšanje zdravstvenih podataka"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Melhorar Registos de saúde"
+          }
+        }
+      }
+    },
+    "SPLASH_SUMMARY": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Health Records automatically sends certain information from your iPhone and iPad about your use of and engagement with Health Records and related features to Apple in order to help Apple develop, improve and understand Health Records and related features. Your data will not be used for any other purpose."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "‘건강 기록 향상’을 사용하면 Apple이 ‘건강 기록’ 및 관련 기능을 개발하고, 향상하고, 이해하는 것을 돕기 위해, 사용자의 iPhone 및 iPad의 ‘건강 기록’ 및 관련 기능 사용과 참여에 관한 특정 정보를 자동으로 Apple에 전송합니다. 사용자의 데이터는 이 외의 다른 목적으로 사용되지 않습니다."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "״שיפור ׳רשומות רפואיות׳״ שולח ל-Apple באופן אוטומטי מידע מסוים מה‑iPhone ומה-iPad שלך בנוגע לשימוש ולפעילות שלך ב״רשומות רפואיות״ ובמאפיינים קשורים כדי לעזור ל-Apple לפתח, לשפר ולהבין את המאפיין ״רשומות רפואיות״ ומאפיינים הקשורים אליו. הנתונים שלך לא ישמשו לאף מטרה אחרת."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tingkatkan Catatan Kesehatan mengirimkan informasi tertentu dari iPhone dan iPad Anda mengenai penggunaan dan interaksi Anda dengan Catatan Kesehatan serta fitur terkait secara otomatis ke Apple agar dapat membantu Apple untuk mengembangkan, meningkatkan, dan memahami fitur Catatan Kesehatan serta fitur terkait. Data Anda tidak akan digunakan untuk tujuan lainnya."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paranna potilaskertomusta lähettää Applelle automaattisesti tiettyjä tietoja iPhonestasi ja iPadistasi Potilaskertomuksen ja siihen liittyvien ominaisuuksien käytöstäsi ja käyttötavoistasi, jotta Apple voi kehittää, parantaa ja ymmärtää Potilaskertomusta ja siihen liittyviä ominaisuuksia. Tietojasi ei käytetä mihinkään muuhun tarkoitukseen."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sağlık Kayıtlarını İyileştir, Apple’ın Sağlık Kayıtları ve ilgili özellikleri geliştirmesine, iyileştirmesine ve anlamasına yardımcı olmak için Sağlık Kayıtlarını ve ilgili özelliklerini kullanımınız ve etkileşiminiz ile ilgili iPhone’unuzdaki ve iPad’inizdeki bazı bilgileri Apple’a gönderir. Verileriniz başka bir şey için kullanılmaz."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Для улучшения функции «Состояние здоровья» часть информации о том, как Вы используете эту и связанные с ней функции и как взаимодействуете с ними, автоматически передается с Вашего iPhone и iPad в Apple, чтобы помочь компании в разработке, улучшении и анализе функции «Состояние здоровья» и связанных с ней функций. Ваши данные не будут использоваться в иных целях."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Via de functie 'Verbeter medisch dossier' wordt bepaalde informatie van je iPhone en iPad over je gebruik van en je ervaring met 'Medisch dossier' en verwante functies naar Apple verstuurd, zodat Apple deze functie en verwante functies kan ontwikkelen, verbeteren en begrijpen. Je gegevens worden voor geen enkel ander doel gebruikt."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Az Egészségügyi dokumentumok továbbfejlesztése funkció automatikusan elküld bizonyos információkat az Ön iPhone-járól és iPadjéről az egészségügyi dokumentumok és a kapcsolódó funkciók használatáról az Apple-nek, hogy azok az Apple segítségére legyenek az Egészségügyi dokumentumok és a kapcsolódó funkciók fejlesztésében, javításában és megértésében. Adatai semmilyen más célból nem lesznek felhasználva."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’opzione di miglioramento dei dati sanitari invia automaticamente ad Apple alcune informazioni da iPhone e da iPad relative a come utilizzi i dati sanitari e le funzionalità correlate al fine di aiutare Apple stessa a svilupparli, migliorarli e approfondirli. I tuoi dati non verranno utilizzati in nessun altro modo."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar expediente médico envía a Apple de forma automática parte de la información de tu iPhone y iPad sobre tu uso y compromiso con el expediente y funciones relacionadas para ayudar a Apple a desarrollar, mejorar y comprender el expediente y las funciones relacionadas. Tus datos no se utilizan con ningún otro propósito."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Η Βελτίωση των Ιατρικών εγγραφών στέλνει αυτόματα στην Apple ορισμένες πληροφορίες από το iPhone και το iPad σας σχετικά με την από μέρους σας χρήση και αλληλεπίδραση με τις Ιατρικές εγγραφές και σχετιζόμενες δυνατότητες, προκειμένου να βοηθήσει την Apple στην ανάπτυξη, τη βελτίωση και την κατανόηση των Ιατρικών εγγραφών και των σχετιζόμενων δυνατοτήτων. Τα δεδομένα σας δεν θα χρησιμοποιηθούν για κανέναν άλλο σκοπό."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La fonctionnalité « Améliorer Dossiers médicaux » envoie automatiquement à Apple certaines informations de votre iPhone ou iPad sur l’utilisation que vous faites des dossiers médicaux et des fonctionnalités connexes ainsi que sur la façon dont vous interagissez avec ceux-ci afin de lui permettre de développer, d’améliorer et de comprendre la fonctionnalité « Dossiers médicaux » et les fonctionnalités connexes. Vos données ne seront en aucun cas utilisées à d’autres fins."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ترسل ميزة \"تحسين السجلات الصحية\" تلقائيًا إلى Apple معلومات معينة من iPhone و iPad عن استخدامك للسجلات الصحية والميزات ذات الصلة وتفاعلك معها، وذلك لمساعدة Apple في تطوير وتحسين وفهم السجلات الصحية والميزات ذات الصلة. لن تُستخدم بياناتك لأي غرض آخر."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "「改進健康記錄」會從你的iPhone和iPad自動傳送你使用「健康記錄」和相關功能的特定資訊給Apple，以協助Apple開發、改進並瞭解「健康記錄」和相關功能。你的資料不會用在其他用途。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "改進「健康記錄」會將你在iPhone和iPad上使用和參與健康記錄和其相關功能的部份資料自動傳送至Apple，以協助Apple開發、改進及了解「健康記錄」和相關功能。你的資料不會用於其他用途。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Förbättra medicinska journaler skickar automatiskt viss information från din iPhone och iPad om hur du använder och interagerar med medicinska journaler och relaterade funktioner till Apple så att Apple kan utveckla, förbättra och förstå funktionen för medicinska journaler och relaterade funktioner. Dina data kommer inte att användas för något annat ändamål."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funkcja Ulepszanie (Rekordy zdrowotne) automatycznie wysyła do Apple określone informacje z Twojego iPhone’a i iPada dotyczące sposobów i celów, w jakich używasz rekordów zdrowotnych oraz powiązanych z nimi funkcji. Informacje te mogą pomóc Apple opracowywać, udoskonalać i lepiej zrozumieć funkcję obsługi rekordów zdrowotnych oraz funkcje z nią powiązane. Twoje dane nie będą wykorzystywane do żadnych innych celów."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“सेहत रिकॉर्ड बेहतर बनाएँ” आपके सेहत रिकॉर्ड और उससे संबंधित फ़ीचर के उपयोग और उससे जुड़ाव के बारे में आपके iPhone और iPad से कुछ जानकारी Apple को ऑटोमैटिकली भेजता है, ताकि Apple को सेहत रिकॉर्ड और उससे संबंधित फ़ीचर डेवलप करने, बेहतर बनाने और समझने में मदद मिल सके। आपके डेटा का उपयोग किसी अन्य उद्देश्य के लिए नहीं किया जाएगा।"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funktionen Gør Helbredsjournaler bedre sender automatisk visse oplysninger fra din iPhone og iPad om din brug af Helbredsjournaler og relaterede funktioner og din interaktion med disse til Apple for at hjælpe Apple med at udvikle, forbedre og forstå Helbredsjournaler og relaterede funktioner. Dine data vil ikke blive brugt til nogen andre formål."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Health Records automatically sends certain information from your iPhone and iPad about your use of and engagement with Health Records and related features to Apple in order to help Apple develop, improve, and understand Health Records and related features. Your data will not be used for any other purpose."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La millora dels informes clínics envia automàticament determinada informació de l’iPhone i de l’iPad sobre lʼús i les interaccions amb els informes clínics i les funcions relacionades a Apple per ajudar a desenvolupar, millorar i entendre aquestes funcions. Les teves dades no sʼutilitzaran amb cap altra finalitat."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forbedre Helsejournaler sender automatisk utvalgt informasjon fra iPhone eller iPad om bruk av Helsejournaler og relaterte funksjoner til Apple for å hjelpe Apple med å utvikle, forbedre og bedre forstå Helsejournaler og relaterte funksjoner. Dataene dine vil ikke bli brukt til andre formål."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "การปรับปรุงบันทึกสุขภาพจะส่งข้อมูลบางอย่างจาก iPhone และ iPad ของคุณเกี่ยวกับการใช้และการมีส่วนร่วมของคุณกับบันทึกสุขภาพและคุณสมบัติที่เกี่ยวข้องไปที่ Apple โดยอัตโนมัติเพื่อที่จะช่วย Apple พัฒนา ปรับปรุง และทำความเข้าใจบันทึกสุขภาพและคุณสมบัติที่เกี่ยวข้อง ข้อมูลของคุณจะไม่ถูกนำไปใช้เพื่อจุดประสงค์อื่นใด"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“改进健康记录”会自动将你使用和参与健康记录及相关功能的特定信息从你的iPhone和iPad发送给Apple，以帮助Apple开发、改进和了解健康记录及相关功能。你的数据不会用作任何其他用途。"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Health Records automatically sends certain information from your iPhone and iPad about your use of and engagement with Health Records and related features to Apple in order to help Apple develop, improve and understand Health Records and related features. Your data will not be used for any other purpose."
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funkcija „Sveikatos įrašų tobulinimas“ bendrovei „Apple“ automatiškai siunčia tam tikrą informaciją apie naudojimąsi ir sąveiką su sveikatos įrašais ir susijusiomis funkcijomis iš jūsų „iPhone“ ir „iPad“, kad padėtų „Apple“ plėtoti, patobulinti ir suprasti sveikatos įrašus bei susijusias funkcijas. Jūsų duomenys nebus naudojami jokiam kitam tikslui."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar expediente médico envía a Apple de forma automática parte de la información de tu iPhone y iPad sobre tu uso y compromiso con el expediente y funciones relacionadas para ayudar a Apple a desarrollar, mejorar y comprender el expediente y las funciones relacionadas. Tus datos no se utilizan con ningún otro propósito."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nástroj Vylepšování zdravotních záznamů automaticky z vašeho iPhonu a iPadu posílá společnosti Apple některé informace o tom, jak funkci Zdravotní záznamy a související funkce využíváte. Tyto informace společnosti Apple pomáhají s vývojem vylepšováním a analýzou funkce Zdravotní záznamy a souvisejících funkcí. Vaše údaje nebudou použity k žádnému jinému účelu."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tingkatkan Rekod Kesihatan menghantar maklumat tertentu daripada iPhone dan iPad anda tentang penggunaan dan penglibatan anda dengan Rekod Kesihatan serta ciri berkaitan kepada Apple secara automatik untuk membantu Apple membangunkan, meningkatkan dan memahami Rekod Kesihatan dan ciri berkaitan. Data anda tidak akan digunakan untuk sebarang tujuan lain."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funkcia Vylepšovať zdravotné záznamy z vášho iPhonu a iPadu automaticky odosiela spoločnosti Apple vybrané informácie týkajúce sa vášho používania a interakcií s funkciou Zdravotné záznamy a súvisiacimi funkciami. Spoločnosť Apple tieto informácie využíva pri vývoji, vylepšovaní a analýze týchto funkcií. Vaše dáta nebudú použité na žiadne iné účely."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Подобряване на Здравно досие автоматично изпраща на Apple определена информация от вашия iPhone и iPad за използването и връзката със Здравно досие и свързаните функции, за да помогне на Apple в разработването, подобряването и оценяването им. Данните ви няма да бъдат използвани за други цели."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Health Records automatically sends certain information from your iPhone and iPad about your use of and engagement with Health Records and related features to Apple in order to help Apple develop, improve and understand Health Records and related features. Your data will not be used for any other purpose."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Za namene izboljšanja Zdravstvenega kartona se družbi Apple iz iPhona in iPada samodejno pošiljajo določeni podatki o vaši uporabi ter interakciji z Zdravstvenim kartonom in povezanimi funkcijami, kar je družbi Apple v pomoč pri razvoju, izboljšanju ter razumevanju Zdravstvenega kartona in povezanih funkcij. Vaši podatki ne bodo uporabljeni za noben drug namen."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Funktion „Gesundheitsakte verbessern“ sendet automatisch bestimmte Informationen von deinem iPhone und iPad über die Verwendung und Interaktion mit der Gesundheitsakte und den zugehörigen Funktionen an Apple, damit Apple die Gesundheitsakte und zugehörige Funktionen entwickeln, verbessern und analysieren kann. Deine Daten werden für keine anderen Zwecke verwendet."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cải thiện hồ sơ sức khỏe tự động gửi một số thông tin từ iPhone và iPad về việc sử dụng và liên kết của bạn với Hồ sơ sức khỏe và các tính năng liên quan đến Apple để giúp Apple phát triển, cải thiện và hiểu Hồ sơ sức khỏe và các tính năng liên quan. Dữ liệu của bạn sẽ không được sử dụng cho bất kỳ mục đích nào khác."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O recurso Melhorar Registros Médicos envia à Apple determinadas informações do iPhone ou iPad sobre seu uso e engajamento com os Registros de Saúde e recursos relacionados para ajudar a Apple a desenvolver, melhorar e compreender os Registros Médicos e recursos relacionados. Seus dados não serão usados para nenhum outro propósito."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Функція «Покращення Медзаписів» автоматично надсилає до Apple деяку інформацію з ваших iPhone й iPad про використання медзаписів і повʼязаних функцій та взаємодію з ними, щоб допомагати Apple розробляти, удосконалювати та розуміти функцію «Медзаписи» та повʼязані функції. Ваші дані не використовуватимуться для інших цілей."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "« Améliorer Dossiers médicaux » envoie automatiquement depuis votre iPhone et votre iPad certaines informations relatives à votre utilisation de la fonction « Dossiers médicaux » et des fonctionnalités connexes ainsi qu’à vos interactions avec ces dernières afin d’aider Apple à développer, améliorer et comprendre « Dossiers médicaux » et les fonctionnalités connexes. Vos données ne seront pas utilisées à d’autres fins."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La función “Mejorar el historial clínico” envía automáticamente a Apple cierta información del iPhone y del iPad sobre el uso y la activación en tu dispositivo de la función “Historial clínico” y otras funciones relacionadas, para ayudarnos a desarrollar, mejorar y comprender estas funciones. Tus datos no se usarán para ningún otro propósito."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "iPhone және iPad құрылғыларынан «Денсаулық жағдайы» функциясын және оған қатысты функцияларды қалай пайдаланатыныңыз туралы ақпараттың бір бөлігі осы функцияны жақсарту мақсатында Apple компаниясына автоматты түрде жіберіледі. Apple компаниясы бұл ақпаратты «Денсаулық жағдайы» функциясын және оған қатысты функцияларды әзірлеу, жақсарту және талдау үшін пайдаланады. Деректеріңіз өзге мақсатта пайдаланылмайды."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funcționalitatea “Îmbunătățire înregistrări medicale” trimite automat la Apple anumite informații de pe iPhone‑ul și iPad‑ul dvs. despre modul în care utilizați și interacționați cu înregistrările medicale și funcționalitățile asociate, pentru a ajuta Apple să dezvolte, să îmbunătățească și să înțeleagă “Înregistrări medicale” și funcționalitățile asociate. Datele dvs. nu vor fi utilizate în niciun alt scop."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Appleによるヘルスケアレコード機能および関連機能の開発、改善、理解に役立てる目的で、“ヘルスケアレコードの改善”では、ヘルスケアレコード機能および関連機能の使用とエンゲージメントに関する特定の情報がiPhoneおよびiPadからAppleに自動的に送信されます。このデータはほかの目的に使用されることはありません。"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Značajka Poboljšanje zdravstvenih podataka automatski šalje određene informacije s vašeg iPhonea i iPada o vašoj uporabi i angažmanu vezanom za Zdravstvene podatke i povezane značajke tvrtki Apple kako bi se tvrtki Apple pomoglo u razvoju, poboljšanju i razumijevanju Zdravstvenih podataka i povezanih značajki. Vaši podaci neće se koristiti ni u koje druge svrhe."
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A funcionalidade Melhorar Registos de saúde envia automaticamente à Apple determinada informação do iPhone e do iPad acerca da sua utilização e interação com Registos de saúde e funcionalidades relacionadas, no intuito de ajudar a Apple a criar, melhorar e compreender estas funcionalidades. Os seus dados não serão usados para nenhum outro fim."
+          }
+        }
+      }
+    },
+    "SPLASH_TITLE": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Health Records & Privacy"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "건강 기록 향상 및 개인정보 보호"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "״שיפור ׳רשומות רפואיות׳״ ופרטיות"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tingkatkan Catatan Kesehatan & Privasi"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paranna potilaskertomusta ja tietosuoja"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sağlık Kayıtlarını İyileştir ve Gizlilik"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Улучшение функции «Состояние здоровья» и конфи­денциальность"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "'Verbeter medisch dossier' en privacy"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Az Egészségügyi dokumentumok továbbfejlesztése és az adatvédelem"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Migliora dati sanitari e privacy"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar expediente médico y privacidad"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Βελτίωση των Ιατρικών εγγραφών και απόρρητο"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Améliorer Dossiers médicaux et confidentialité"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تحسين نمط السجلات الصحية والخصوصية"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "改進健康記錄與隱私權"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "改進健康記錄與私隱"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Förbättra medicinska journaler och integritet"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funkcja Ulepszanie (Rekordy zdrowotne) i prywatność"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“सेहत रिकॉर्ड बेहतर बनाएँ” और गोपनीयता"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gør Helbredsjournaler bedre og anonymitet"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Health Records & Privacy"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La millora dels informes clínics i la privacitat"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forbedre Helsejournaler og personvern"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ปรับปรุงบันทึกสุขภาพและความเป็นส่วนตัว"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "改进健康记录与隐私"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Health Records & Privacy"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funkcija „Sveikatos įrašų tobulinimas“ ir privatumas"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar expediente médico y privacidad"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vylepšování zdravotních záznamů a soukromí"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tingkatkan Rekod Kesihatan & Privasi"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vylepšovanie zdravotných záznamov a súkromie"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Подобряване на Здравно досие и поверителност"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Health Records & Privacy"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Izboljšanje Zdravstvenega kartona in zasebnost"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gesundheitsakte verbessern & Datenschutz"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cải thiện Hồ sơ sức khỏe & Quyền riêng tư"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Melhorar Registros Médicos e Privacidade"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Покращення Медзаписів і приватність"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Améliorer Dossiers médicaux et confidentialité"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“Mejorar el historial clínico” y la privacidad"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "«Денсаулық жағдайы» функциясын жақсарту және құпиялылық"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Îmbunătățirea înregistrărilor medicale și intimitatea"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“ヘルスケアレコードの改善”とプライバシー"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poboljšanje zdravstvenih podataka i privatnost"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Melhorar Registos de saúde e Privacidade"
+          }
+        }
+      }
+    },
+    "BUTTON_TITLE": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About Improve Health Records & Privacy…"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "건강 기록 향상 및 개인정보 보호에 관하여…"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "מידע בנושא ״שיפור ׳רשומות רפואיות׳״ ופרטיות…"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mengenai Tingkatkan Catatan Kesehatan & Privasi…"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tietoja: Paranna potilaskertomusta ja tietosuoja…"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sağlık Kayıtlarını İyileştir ve Gizlilik Hakkında…"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Об «Улучшении Состояния здоровья» и конфиденциальности…"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Over 'Verbeter medisch dossier' en privacy…"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Az Egészségügyi dokumentumok továbbfejlesztéséről és az adatvédelemről…"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“Migliora dati sanitari” e privacy…"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de Mejorar expediente médico y privacidad…"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Πληροφορίες για τη Βελτίωση των Ιατρικών εγγραφών και το απόρρητο…"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Améliorer les DM et confidentialité…"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حول تحسين السجلات الصحية والخصوصية…"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "關於改進健康記錄與隱私權⋯"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "關於改進健康記錄與私隱⋯"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om Förbättra medicinska journaler och integritet…"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funkcja Ulepszanie (Rekordy zdrowotne) i prywatność…"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“सेहत रिकॉर्ड बेहतर बनाएँ” और गोपनीयता परिचय…"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om Gør Helbredsjournaler bedre og anonymitet…"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About Improve Health Records & Privacy…"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sobre la millora dels informes clínics i la privacitat…"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om Forbedre Helsejournaler og personvern…"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เกี่ยวกับการปรับปรุงบันทึกสุขภาพและความเป็นส่วนตัว…"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "关于改进健康记录与隐私…"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About Improve Health Records & Privacy…"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apie „Sveikatos įrašų tobulinimą“ ir privatumą…"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de Mejorar expediente médico y privacidad…"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O vylepšování zdravotních záznamů a soukromí…"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Perihal Tingkatkan Rekod Kesihatan & Privasi…"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O vylepšovaní zdravotných záznamov a súkromí…"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "За подобряване на Здравно досие и поверителност…"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About Improve Health Records & Privacy…"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Več o izboljšanju Zdravstvenega kartona in zasebnosti …"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Über „Gesundheitsakte verbessern“ & Datenschutz …"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cải thiện Hồ sơ sức khỏe & Quyền riêng tư…"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sobre Melhorar Registros Médicos e Privacidade…"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Про Покращення Медзаписів і приватність…"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Améliorer Dossiers médicaux et confidentialité…"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de “Mejorar el historial clínico” y la privacidad…"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "«Денсаулық жағдайын жақсарту» және құпиялылық туралы ақпарат…"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Despre Îmbunătățire înregistrări medicale și intimitate…"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“ヘルスケアレコードの改善”とプライバシーについて…"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Više o poboljšanju Zdravstvenih podataka i privatnosti…"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de Melhorar Registos de saúde e Privacidade…"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

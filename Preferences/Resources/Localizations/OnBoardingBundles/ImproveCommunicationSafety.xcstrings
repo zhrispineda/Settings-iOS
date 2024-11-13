@@ -1,0 +1,1381 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "FOOTER_TEXT": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "If you opt in to Improve Communication Safety, Apple collects data about how Communication Safety is used in order to improve and understand the effectiveness of the feature. This information is aggregated and subject to privacy preserving techniques such as differential privacy, and is not linked to an Apple Account or other data Apple may have from your use of other Apple services.\n\nExamples of the aggregated data that will be collected include:\n\n• The percentage of total images or videos sent and received that have been identified as being explicit\n• The number of taps or clicks on “Ways to get help”\n• The percentage of taps or clicks on Communication Safety options\n\nYou can turn off Improve Communication Safety at any time on your iOS, iPadOS or visionOS device by going to Settings > Screen Time > Communication Safety, or on Mac by going to System Settings > Screen Time > Communication Safety.\n\nAt all times, information collected by Apple will be treated in accordance with Apple’s Privacy Policy, which can be found at apple.com/in/privacy"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "הסכמתך להשתתף ב״שיפור הבטיחות בתקשורת״ תאפשר ל-Apple לאסוף נתונים לגבי אופן השימוש במאפיין ״בטיחות בתקשורת״ במטרה לשפר אותו ולהבין את יעילותו. מידע זה הוא מידע נצבר וכפוף לשיטות שמירה על פרטיות כגון פרטיות דיפרנציאלית, והוא אינו מקושר לחשבון ה-Apple או לנתונים אחרים ש-Apple עשויה לקבל מהשימוש שלך בשירותי Apple אחרים.\n\nבין הדוגמאות למידע הצבור שייאסף:\n\n• אחוז כל התמונות או הסרטונים שנשלחו והתקבלו, וזוהו כתכנים שמכילים תוכן בוטה\n• מספר ההקשות או הלחיצות על ״דרכים לקבלת עזרה״\n• אחוז ההקשות או הלחיצות על האפשרויות של ״בטיחות בתקשורת״\n\nניתן לכבות את המאפיין ״שיפור הבטיחות בתקשורת״ בכל עת במכשיר ה-iOS, ה-iPadOS או ה-visionOS באמצעות מעבר אל ״הגדרות״ > ״זמן מסך״ > ״בטיחות בתקשורת״, או במחשבי Mac באמצעות מעבר אל ״הגדרות המערכת״ > ״זמן מסך״ > ״בטיחות בתקשורת״.\n\nבכל עת, מידע הנאסף על-ידי Apple יטופל בהתאם למדיניות הפרטיות של Apple, הזמינה בכתובת: www.apple.com/privacy"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "‘커뮤니케이션 안전 향상’을 선택하는 경우, Apple은 이 기능의 효과를 향상하고 파악할 수 있도록 ‘커뮤니케이션 안전’이 사용되는 방법에 대한 데이터를 수집합니다. 이 정보는 집계된 형식으로 수집되고, 차등 개인정보 보호와 같은 개인정보를 보호하는 기술의 적용을 받으며, 사용자의 Apple 계정 또는 사용자가 이용하는 다른 Apple 서비스에서 Apple이 수집할 수 있는 기타 데이터와 연결되지 않습니다.\n\n집계된 형식으로 수집된 데이터의 예시는 다음과 같습니다.\n\n• 선정적인 것으로 식별된 이미지 또는 영상의 총 송수신 비율\n• ‘도움을 요청하는 방법’ 탭 또는 클릭 수\n• ‘커뮤니케이션 안전’ 옵션 탭 또는 클릭 백분율\n\niOS, iPadOS 또는 visionOS 기기에서 설정 > 스크린 타임 > 커뮤니케이션 안전으로 이동하거나 Mac에서 시스템 설정 > 스크린 타임 > 커뮤니케이션 안전으로 이동하여 언제든지 ‘커뮤니케이션 안전 향상’을 끌 수 있습니다.\n\nApple에서 수집한 정보는 항상 Apple의 개인정보 처리방침에 따라 취급되며, 자세한 내용은 www.apple.com/kr/privacy 사이트에서 확인할 수 있습니다."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jika Anda mengaktifkan Tingkatkan Keamanan Komunikasi, Apple akan mengumpulkan data mengenai bagaimana Keamanan Komunikasi digunakan agar dapat meningkatkan dan memahami keefektifan fitur. Informasi ini diagregatkan, tunduk pada teknik yang mempertahankan privasi seperti privasi diferensial, dan tidak dikaitkan dengan Akun Apple atau data lainnya yang mungkin dimiliki Apple dari penggunaan layanan Apple lainnya oleh Anda.\n\nContoh data yang diagregatkan yang akan dikumpulkan meliputi:\n\n• Persentase total gambar atau video yang dikirim dan diterima yang telah diidentifikasi sebagai eksplisit\n• Jumlah ketuk dan klik pada “Cara mendapatkan bantuan”\n• Persentase ketuk atau klik pada pilihan Keamanan Komunikasi\n\nAnda dapat mematikan Tingkatkan Keamanan Komunikasi kapan pun di perangkat iOS atau iPadOS dengan membuka Pengaturan > Durasi Layar > Keamanan Komunikasi atau di Mac dengan membuka Pengaturan Sistem > Durasi Layar > Keamanan Komunikasi.\n\nInformasi yang dikumpulkan oleh Apple akan selalu diperlakukan sesuai dengan Kebijakan Privasi Apple, yang dapat ditemukan di www.apple.com/id/privacy"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jos suostut osallistumaan Viestinnän turvallisuus -ominaisuuden parantamiseen, Apple kerää tietoja siitä, kuinka Viestinnän turvallisuus -ominaisuutta käytetään, ominaisuuden tehokkuuden parantamista ja ymmärtämistä varten. Nämä tiedot ovat koostettuja ja niihin sovelletaan yksityisyyden säilyttäviä tekniikoita, kuten differentiaalinen tietosuoja, eikä niitä yhdistetä Apple-tiliin tai muuhun tietoon, jota Applella voi olla muiden Applen palveluiden käytöstäsi.\n\nEsimerkkejä kerättävistä koostetuista tiedoista ovat mm. seuraavat:\n\n• Kuinka monta prosenttia kaikista lähetetyistä ja vastaanotetuista kuvista tai videoista on tunnistettu lapsille sopimattomiksi\n• Kuinka monta kertaa Miten voit saada apua -painiketta on napautettu tai klikattu\n• Viestinnän turvallisuus -valintojen napautusten tai klikkausten prosenttiosuudet\n\nVoit laittaa Paranna viestinnän turvallisuutta -toiminnon pois päältä koska tahansa iOS-, iPadOS- tai visionOS-laitteessa avaamalla Asetukset > Ruutuaika > Viestinnän turvallisuus tai Macissa kohdassa Järjestelmäasetukset > Ruutuaika > Viestinnän turvallisuus.\n\nApplen keräämiä tietoja käsitellään aina Applen tietosuojakäytännön mukaisesti. Tämä käytäntö löytyy osoitteesta www.apple.com/legal/privacy/fi/."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Als je ervoor kiest om bij te dragen aan de verbetering van de functie 'Verbeter communicatie­veiligheid', verzamelt Apple gegevens over de manier waarop communicatie­veiligheid wordt gebruikt om de effectiviteit van de functie te verbeteren en te begrijpen. Deze informatie is samengevoegd en wordt behandeld volgens tech­nieken (zoals diffe­rentiële privacy) om de privacy te waarborgen en is niet gekoppeld aan een Apple Account of andere gegevens waarover Apple mogelijk beschikt doordat je andere voorzieningen van Apple gebruikt.\n\nVoorbeelden van de verzamelde samengevoegde gegevens zijn:\n\n• Het percentage van het totale aantal verzonden en ontvangen afbeeldingen of video's dat als expliciet is gekenmerkt\n• Het aantal tikken of klikken op 'Hoe je hulp kunt krijgen'\n• Het percentage tikken of klikken op opties van de functie 'Communicatie­veiligheid'\n\nJe kunt 'Verbeter communicatie­veiligheid' op elk gewenst moment uitschakelen op je iOS-, iPadOS- of visionOS-apparaat door in Instellingen naar 'Schermtijd' > 'Communicatie­veiligheid' te gaan of door op een Mac in Systeeminstellingen naar 'Schermtijd' > 'Communicatieveiligheid' te gaan.\n\nDe door Apple verzamelde gegevens worden te allen tijde behandeld conform het privacy­beleid van Apple, dat je kunt vinden op www.apple.com/nl/privacy"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İletişim Güvenliği’ni İyileştir’i seçerseniz Apple, özelliğin etkinliğini anlamak ve iyileştirmek için İletişim Güvenliği’nin nasıl kullanıldığı hakkında veri toplar. Bu bilgiler birleştirilir ve diferansiyel gizlilik gibi gizliliği koruyan tekniklere tabi olur; bu bilgilerle bir Apple Hesabı veya Apple’ın diğer Apple servislerini kullanmanız nedeniyle sahip olabileceği başka veriler arasında bağlantı kurulmaz.\n\nToplanacak birleştirilmiş verilere örnekler:\n\n• Uygunsuz olarak belirlenen gönderilmiş ve alınmış toplam görüntü yüzdesi\n• “Yardım Alma Yolları”nı tıklama veya ona dokunma sayısı\n• İletişim Güvenliği seçeneklerini tıklama veya seçeneklere dokunma yüzdesi\n\nİletişim Güvenliği’ni İyileştir’i iOS, iPadOS veya visionOS aygıtınızda Ayarlar > Ekran Süresi > İletişim Güvenliği veya Mac’te Sistem Ayarları > Ekran Süresi > İletişim Güvenliği bölümüne giderek istediğiniz zaman kapatabilirsiniz.\n\nApple tarafından toplanan bilgiler her zaman www.apple.com/tr/privacy adresinde bulunan Apple’ın Gizlilik Politikası’na uygun şekilde işlenir."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ha úgy dönt, hogy hozzájárul a Kommunikációbiztonság javításához, az Apple adatokat fog gyűjteni a Kommunikációbiztonság használatáról a funkció hatékonyságának továbbfejlesztése és megértése érdekében. Ezek az információk összesítve vannak, és adatvédelmet megőrző technikákkal, például differenciális adatvédelemmel vannak ellátva, továbbá nincsenek összekapcsolva egy Apple-fiókkal vagy bármilyen más olyan adattal, amely abból származik, hogy Ön hogyan használja a többi Apple-szolgáltatást.\n\nAz összegyűjtött adatok között szerepelhetnek például a következők:\n\n• Az összes elküldött és fogadott kép vagy videó azon százaléka, amely szexuális tartalmúként lett azonosítva,\n• A „Segítségkérés” opcióra való koppintások vagy kattintások száma,\n• A Kommunikációbiztonsághoz elérhető opciókra való koppintások vagy kattintások százaléka.\n\nBármikor kikapcsolhatja a Kommunikációbiztonság továbbfejlesztése funkciót. Ehhez iOS-, iPadOS- vagy visionOS-eszközön válassza a Beállítások > Képernyőidő > Kommunikációbiztonság menüpontot (visionOS‑en: Settings > Screen Time > Communication Safety), vagy Mac használata esetén válassza a Rendszerbeállítások > Képernyőidő > Kommunikációbiztonság menüpontot.\n\nAz Apple által gyűjtött információk mindig az Apple adatvédelmi szabályzata szerint lesznek kezelve, amely megtalálható a www.apple.com/hu/privacy weboldalon."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Если Вы согласитесь участвовать в улучшении функции «Безопасность общения», компания Apple будет собирать данные о том, как используется эта функция, чтобы анализировать и повышать ее эффективность. Эта информация собирается в обобщенном виде, защищена технологиями обеспечения конфиденциальности, такими как дифференцированная конфиденциальность, и не связана с Аккаунтом Apple или другими данными, которые компания Apple могла получить за то время, пока Вы использовали другие сервисы Apple.\n\nПримеры собираемых обобщенных данных:\n\n• Какой процент от общего количества отправленных и полученных изображений и видео идентифицирован как контент сексуального характера.\n• Количество касаний или нажатий на кнопку «Как получить помощь».\n• Процент касаний или нажатий для просмотра параметров функции «Безопасность общения».\n\nФункцию «Улучшение Безопасности общения» можно выключить в любое время. Для этого на устройстве iOS, iPadOS или visionOS откройте «Настройки» > «Экранное время» > «Безопасность общения». На Mac откройте «Системные настройки» > «Экранное время» > «Безопасность общения».\n\nИнформация, которую собирает Apple, всегда обрабатывается в соответствии с Политикой конфиденциальности Apple: www.apple.com/ru/privacy."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se scegli di abilitare “Migliora la sicurezza delle comunicazioni”, Apple raccoglie i dati relativi alla sicurezza delle comunicazioni per migliorare e capire l’efficacia di tale funzionalità. I dati sono raccolti in forma aggregata, vengono trattati conformemente alle politiche di tutela della privacy di tipo differenziale e non sono associati a un Apple Account o ad altre informazioni che Apple potrebbe avere raccolto dal tuo utilizzo di altri servizi Apple.\n\nI dati aggregati raccolti possono includere, ad esempio:\n\n• La percentuale totale di immagini o video inviati e ricevuti identificati come espliciti.\n• Il numero di volte in cui hai selezionato l’opzione di aiuto.\n• La percentuale di volte in cui hai selezionato le opzioni dedicate alla sicurezza delle comunicazioni.\n\nPuoi disattivare “Migliora la sicurezza delle comunicazioni” in qualsiasi momento su un dispositivo iOS, iPadOS o visionOS in Impostazioni > Tempo di utilizzo > Sicurezza delle comunicazioni. Sul Mac, vai in Impostazioni di Sistema > Tempo di utilizzo > Sicurezza delle comunicazioni.\n\nIn qualsiasi momento, le informazioni raccolte da Apple verranno trattate in conformità all’informativa sulla privacy di Apple consultabile all’indirizzo www.apple.com/it/privacy."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Αν επιλέξετε να συμμετάσχετε στη βελτίωση της Ασφάλειας επικοινωνίας, η Apple θα συλλέγει δεδομένα σχετικά με τον τρόπο χρήσης της Ασφάλειας επικοινωνίας, προκειμένου να βελτιώσει και να κατανοήσει την αποτελεσματικότητα της δυνατότητας. Αυτές οι πληροφορίες συλλέγονται σε συγκεντρωτική μορφή και υπόκεινται σε τεχνικές διατήρησης του απορρήτου, όπως το διαφορικό απόρρητο, και δεν συσχετίζονται με τον λογαριασμό Apple σας ή άλλα δεδομένα που ενδέχεται να έχει η Apple όσον αφορά την εκ μέρους σας χρήση άλλων υπηρεσιών Apple.\n\nΠαραδείγματα των συγκεντρωτικών δεδομένων που θα συλλεχθούν περιλαμβάνουν τα εξής:\n\n• Το ποσοστό των συνολικών σταλμένων και ληφθεισών εικόνων ή βίντεο που έχουν αναγνωριστεί ως ακατάλληλες\n• Ο αριθμός αγγιγμάτων ή κλικ στη ρύθμιση «Τρόποι λήψης βοήθειας»\n• Το ποσοστό αγγιγμάτων ή κλικ στις επιλογές Ασφάλειας επικοινωνίας\n\nΓια να απενεργοποιήσετε τη Βελτίωση της Ασφάλειας επικοινωνίας ανά πάσα στιγμή στη συσκευή iOS, iPadOS ή visionOS, μεταβείτε στις «Ρυθμίσεις» > «Χρόνος επί οθόνης» > «Ασφάλεια επικοινωνίας». Σε Mac, μεταβείτε στις «Ρυθμίσεις συστήματος» > «Χρόνος επί οθόνης» > «Ασφάλεια επικοινωνίας».\n\nΟ χειρισμός των πληροφοριών που συλλέγονται από την Apple πραγματοποιείται σύμφωνα με την Πολιτική απορρήτου της, την οποία μπορείτε να βρείτε στη διεύθυνση www.apple.com/gr/privacy."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si eliges participar en Mejorar la seguridad en la comunicación, Apple recopilará datos sobre cómo se utiliza esta función para mejorar y entender su efectividad. Esta información está agregada y sujeta a técnicas para mantener la privacidad, tal como la privacidad diferencial, y no se vincula a una cuenta de Apple ni a otros datos que Apple pueda tener sobre tu uso de otros servicios de Apple.\n\nLos ejemplos de los datos agregados que pueden recopilarse incluyen:\n\n• El porcentaje del total de las imágenes o videos enviados y recibidos que se identificaron como explícitos\n• El número de toques o clics en Formas de obtener ayuda\n• El porcentaje de toques o clics en las opciones de Seguridad en la comunicación\n\nPuedes desactivar Mejorar la seguridad en la comunicación en cualquier momento en tu dispositivo iOS, iPadOS o visionOS en Configuración > Tiempo en pantalla > Seguridad en la comunicación; o en una Mac en Configuración del Sistema > Tiempo en pantalla > Seguridad en la comunicación.\n\nLa información que Apple recopile se tratará en todo momento de conformidad con la Política de privacidad de Apple, la cual puedes consultar en www.apple.com/la/privacy"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si vous choisissez de contribuer à l’amélioration de la sécurité des communications, vous autorisez Apple à recueillir des données sur la façon dont la sécurité des communications est utilisée dans le but de comprendre et d’améliorer son efficacité. Ces informations sont consolidées et traitées au moyen de techniques de protection de la confidentialité, comme la confidentialité différentielle, et ne sont pas associées à un compte Apple ou à toute autre donnée qu’Apple pourrait avoir obtenue à partir de l’utilisation que vous faites d’autres services Apple.\n\nVoici des exemples de données consolidées qui sont recueillies :\n\n• Le pourcentage du total des images ou des vidéos envoyées et reçues qui ont été signalées comme explicites\n• Le nombre de touchers ou de clics sur « Façons d’obtenir de l’aide »\n• Le pourcentage de touchers ou de clics sur les options de « Sécurité des communications »\n\nVous pouvez désactiver l’amélioration de la sécurité des communications à tout moment sur votre appareil iOS, iPadOS ou visionOS en accédant à Réglages > Temps d’écran > Sécurité des communications, ou sur Mac en accédant à Réglages système > Temps d’écran > Sécurité des communications.\n\nLes informations recueillies par Apple sont systématiquement traitées conformément à la politique de confidentialité d’Apple, disponible sur www.apple.com/ca/fr/privacy."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si actives la millora de la comunicació segura, Apple recopilarà dades sobre l’ús que en facis per millorar i entendre l’eficàcia de la funció. La informació es presenta agregada, se sotmet a tècniques de conservació de la privacitat, com ara la privacitat diferencial, i no es vincula al compte d’Apple ni a altres dades que Apple pugui tenir d’altres serveis d’Apple que utilitzis.\n\nEntre les dades agregades que es recopilaran hi ha les següents:\n\n• percentatge del total d’imatges o de vídeos enviats i rebuts que s’hagin identificat com a explícits;\n• nombre de tocs o clics fets a l’opció de les formes de rebre ajuda;\n• percentatge de tocs o clics fets a les opcions de la comunicació segura.\n\nPots desactivar la millora de la comunicació segura en qualsevol moment. En un dispositiu iOS, iPadOS o visionOS, ves a l’app Configuració > Temps d’ús > Comunicació segura; en un Mac, ves a l’app Configuració del Sistema > Temps d’ús > Comunicació segura.\n\nLa informació recopilada per Apple es tractarà en tot moment d’acord amb la política de privacitat d’Apple, que es pot consultar a www.apple.com/es/privacy."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "如果你選擇參與「改進通訊安全」，Apple會收集「通訊安全」使用方式的相關資料，以改進和瞭解該功能的有效性。此為彙集資訊且受到隱私權保護技術（如差分隱私）的規範，不會與「Apple帳號」或Apple可能取自於你使用其他Apple服務的其他資料連結。\n\n將收集的彙集資料包含以下範例：\n\n• 識別為兒少不宜的收發影像或影片總數所佔的百分比\n• 點一下或按一下「求助方式」的次數\n• 點一下或按一下「通訊安全」選項的百分比\n\n你可以隨時在iOS、iPadOS和visionOS裝置上關閉「改進通訊安全」，請前往「設定」>「螢幕使用時間」>「通訊安全」，或者在Mac上前往「系統設定」>「螢幕使用時間」>「通訊安全」。\n\n在任何時間，Apple都會依照「Apple隱私權政策」的規定來處理收集的資訊，請參訪www.apple.com/tw/privacy"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "如果你選擇加入「改進通訊安全」，Apple會收集有關如何使用「通訊安全」的資料，以改進和了解該功能的有效性。此彙集的資料受私隱保護技術（如微分私隱）的規範，不會連繫至Apple帳户或Apple可能從你使用其他Apple服務時所得到的其他資料。\n\n會收集的彙集資料例子包括：\n\n• 已識別為兒童不宜的影像佔已發送和接收的影像或影片總數百分比\n• 點按「求助方式」的次數\n• 點按「通訊安全」選項的百分比\n\n你可以隨時在iOS、iPadOS或visionOS裝置上關閉「改進通訊安全」，請前往「設定」>「螢幕使用時間」>「通訊安全」，或在Mac上前往「系統設定」>「螢幕使用時間」>「通訊安全」。\n\n無論何時，Apple都會根據「Apple私隱政策」的規定處理所收集的資料，請瀏覽：www.apple.com/hk/privacy"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om du samtycker till Förbättra kommunikationssäkerhet samlar Apple in data om hur Kommunikationssäkerhet används i syfte att förbättra funktionen och utvärdera hur effektiv den är. Den här informationen är sammanslagen och behandlas med integritetsbevarande tekniker som differentiell integritet, och den är inte länkad till ett Apple‑konto eller andra data som Apple kan ha fått från din användning av andra Apple-tjänster.\n\nExempel på de sammanslagna data som samlas in inkluderar:\n\n• Procentandelen av det totala antalet bilder eller videor som har skickats och tagits emot och som har identifierats som explicit innehåll.\n• Antalet tryckningar eller klick på ”Sätt att få hjälp”.\n• Procentandelen tryckningar eller klick på alternativ för kommunikationssäkerhet.\n\nDu kan när som helst stänga av Förbättra kommunikationssäkerhet på en enhet med iOS, iPadOS eller visionOS genom att öppna Inställningar > Skärmtid > Kommunikationssäkerhet. På en Mac öppnar du Systeminställningar > Skärmtid > Kommunikationssäkerhet.\n\nInformation som samlas in av Apple kommer under alla förhållanden att behandlas i enlighet med Apples integritetspolicy, som finns på www.apple.com/se/privacy."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hvis du velger å bidra til å forbedre Trygg kommunikasjon, vil Apple samle inn data om hvordan du bruker Trygg kommunikasjon, slik at vi kan forbedre funksjonen og se hvor effektiv den er. Denne informasjonen slås sammen og underlegges teknikker som differensielt personvern (differential privacy), og knyttes ikke til en Apple‑konto eller andre data som Apple eventuelt har fra bruken din av andre Apple-tjenester.\n\nEksempler på sammenslått informasjon som blir samlet inn:\n\n• Prosentvis antall sendte og mottatte bilder eller videoer som er identifisert som eksplisitte.\n• Antall trykk eller klikk på lenken «Slik kan du få hjelp».\n• Prosentvis antall trykk eller klikk på Trygg kommunikasjon-valg.\n\nDu kan når som helst slå av Forbedre trygg kommunikasjon på en iOS-, iPadOS- eller visionOS-enhet ved å gå til Innstillinger > Skjermtid > Trygg kommunikasjon, eller på Mac ved å gå til Systeminnstillinger > Skjermtid > Trygg kommunikasjon.\n\nAll informasjon Apple samler inn, blir behandlet i samsvar med Apples retningslinjer for personvern, som du kan lese på www.apple.com/no/privacy."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jeśli zdecydujesz się pomagać ulepszać funkcję Bezpieczeństwo komunikacji, Apple będzie gromadzić informacje na temat sposobu, w jaki z niej korzystasz, aby ją udoskonalać i analizować jej skuteczność. Te informacje są agregowane oraz przetwarzane przy użyciu technik zapewniających zachowanie prywatności (na przykład różnicowych) i nie są połączone z kontem Apple ani innymi danymi, które Apple może posiadać z tytułu korzystania przez Ciebie z innych usług Apple.\n\nPrzykładowe zagregowane dane, które będą gromadzone:\n\n• Procentowy udział obrazków lub wideo zidentyfikowanych jako przeznaczone tylko dla dorosłych w łącznej liczbie wysłanych i odebranych obrazków.\n• Liczba stuknięć lub kliknięć w „Jak uzyskać pomoc”.\n• Rozkład procentowy stuknięć lub kliknięć w opcje funkcji Bezpieczeństwo komunikacji.\n\nFunkcję Ulepszanie (Bezpieczeństwo komunikacji) na urządzeniu iOS, iPadOS lub visionOS możesz wyłączyć w dowolnym momencie, przechodząc do Ustawień, stukając w Czas przed ekranem > Bezpieczeństwo komunikacji. Na Macu otwórz Ustawienia systemowe i kliknij w Czas przed ekranem > Bezpieczeństwo komunikacji.\n\nInformacje gromadzone przez Apple są zawsze traktowane zgodnie z zasadami ochrony prywatności Apple, dostępnymi na stronie www.apple.com/pl/privacy."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hvis du tilmelder dig Gør sikker kommunikation bedre, vil Apple indsamle data om, hvordan du bruger Sikker kommunikation med henblik på at forbedre funktionen og undersøge, hvor effektiv den er. Disse oplysninger indsamles i et samlet format og er underlagt teknikker til sikring af anonymitet, f.eks. anonymisering af data, og de er ikke knyttet til en Apple‑konto eller andre data, Apple kan have fra din brug af andre Apple-tjenester.\n\nEksempler på data, som indsamles i et samlet format:\n\n• Procentdelen af sendte og modtagne billeder eller videoer identificeret som værende anstødelige\n• Antallet af tryk eller klik på “Måder at få hjælp på”\n• Procentdelen af tryk eller klik på indstillingerne til Sikker kommunikation\n\nDu kan altid slå Gør sikker kommunikation bedre fra på din iOS-, iPadOS- eller visionOS-enhed ved at gå til Indstillinger > Skærmtid > Sikker kommunikation eller på Mac ved at gå til Systemindstillinger > Skærmtid > Sikker kommunikation.\n\nOplysninger indsamlet af Apple vil altid blive behandlet i overensstemmelse med Apples anonymitetspolitik, som kan læses på www.apple.com/dk/privacy"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "If you opt in to Improve Communication Safety, Apple collects data about how Communication Safety is used in order to improve and understand the effectiveness of the feature. This information is aggregated and subject to privacy-preserving techniques such as differential privacy, and is not linked to an Apple Account or other data Apple may have from your use of other Apple services.\n\nExamples of the aggregated data that will be collected include:\n\n• The percentage of total images or videos sent and received that have been identified as being explicit\n• The number of taps or clicks on “Ways to get help”\n• The percentage of taps or clicks on Communication Safety options\n\nYou can turn off Improve Communication Safety at any time on your iOS, iPadOS, or visionOS device by going to Settings > Screen Time > Communication Safety, or on Mac by going to System Settings > Screen Time > Communication Safety.\n\nAt all times, information collected by Apple will be treated in accordance with Apple’s Privacy Policy, which can be found at www.apple.com/privacy"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "अगर आप “संचार सुरक्षा बेहतर बनाएँ” में शामिल होने का फ़ैसला करते हैं, तो संचार सुरक्षा का कैसे इस्तेमाल किया जाता है इसके बारे में Apple डेटा इकट्ठा कर सकता है ताकि फ़ीचर को बेहतर बनाया जा सके और उसकी प्रभावशीलता को समझा जा सके। यह जानकारी एग्रीगेट की जाती है और इस पर विभेदीकृत गोपनीयता जैसी गोपनीयता संरक्षण तकनीक लागू की जाती है। साथ ही, यह किसी Apple खाते या उस अन्य डेटा से लिंक नहीं की जाती है, जो आपके द्वारा अन्य Apple सेवाओं के उपयोग से Apple के पास हो सकता है।\n\nइकट्ठा किए जाने वाले एग्रीगेट डेटा के उदाहरणों में निम्नलिखित शामिल होते हैं :\n\n• भेजी और पाई जाने वाली सभी इमेज या वीडियो का वह प्रतिशत जिसे अश्लील के रूप में चिह्नित किया गया है\n•“सहायता पाने के तरीक़े” पर टैप या क्लिक की संख्या\n• संचार सुरक्षा विकल्पों पर टैप या क्लिक का प्रतिशत\n\nअपने iOS, iPadOS या visionOS डिवाइस पर सेटिंग्ज़ > स्क्रीन टाइम > संचार सुरक्षा पर जाकर या Mac पर सिस्टम सेटिंग्ज़ > स्क्रीन टाइम > संचार सुरक्षा पर जाकर आप “संचार सुरक्षा बेहतर बनाएँ” किसी भी समय बंद कर सकते हैं।\n\nApple द्वारा एकत्रित जानकारी को हमेशा Apple की गोपनीयता नीति के अनुसार व्यवहार में लाया जाएगा, जिसे www.apple.com/in/privacy पर देखा जा सकता है।"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إذا اخترت التسجيل في تحسين أمان التواصل، فستجمع Apple بيانات عن كيفية استخدام ميزة أمان التواصل بهدف تحسينها وفهم مدى فاعليتها. هذه المعلومات مجمعة وتخضع لتقنيات الحفاظ على الخصوصية، مثل الخصوصية التفاضلية، ولا ترتبط بحساب Apple أو البيانات الأخرى التي قد تكون لدى Apple من خلال استخدامك لخدمات Apple الأخرى.\n\nتتضمن أمثلة البيانات المجمعة ما يلي:\n\n• النسبة المئوية لإجمالي الصور أو الفيديوهات المرسلة والمستلمة التي تم التعرف عليها كغير لائقة\n• عدد الضغطات أو النقرات على \"طرق الحصول على مساعدة\"\n• النسبة المئوية للضغطات أو النقرات على خيارات أمان التواصل\n\nيمكنك إيقاف \"تحسين أمان التواصل\" في أي وقت على جهاز iOS أو iPadOS أو visionOS بالانتقال إلى الإعدادات > مدة استخدام الجهاز > أمان التواصل، أو على Mac بالانتقال إلى إعدادات النظام > مدة استخدام الجهاز > أمان التواصل.\n\nسيتم - في جميع الأوقات - التعامل مع المعلومات التي تجمعها Apple وفقًا لسياسة خصوصية Apple، والتي يمكن العثور عليها على الرابط:\nwww.apple.com/ae-ar/privacy"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ถ้าคุณเลือกเข้าร่วมการปรับปรุงความปลอดภัยในการสื่อสาร Apple จะเก็บรวบรวมข้อมูลเกี่ยวกับวิธีการใช้ความปลอดภัยในการสื่อสารเพื่อปรับปรุงและทำความเข้าใจประสิทธิภาพของคุณสมบัติ ข้อมูลนี้จะถูกรวมและเป็นไปตามเทคนิคการเก็บข้อมูลที่ยังสามารถปกป้องความเป็นส่วนตัวของผู้ใช้ เช่น Differential Privacy และไม่ผูกกับบัญชี Apple หรือข้อมูลอื่นที่ Apple อาจได้จากการใช้บริการอื่นๆ ของ Apple ของคุณ\n\nตัวอย่างข้อมูลรวมที่จะเก็บรวบรวมรวมถึง:\n\n• เปอร์เซ็นต์ของภาพหรือวิดีโอทั้งหมดที่ส่งและได้รับซึ่งได้รับการระบุว่าไม่เหมาะสม\n• จำนวนการแตะหรือการคลิกบน “วิธีขอความช่วยเหลือ”\n• เปอร์เซ็นต์ของการแตะหรือการคลิกบนตัวเลือกความปลอดภัยในการสื่อสาร\n\nคุณสามารถปิดใช้การปรับปรุงความปลอดภัยในการสื่อสารได้ตลอดเวลาบนอุปกรณ์ iOS, iPadOS หรือ visionOS ของคุณโดยไปที่การตั้งค่า > เวลาหน้าจอ > ความปลอดภัยในการสื่อสาร หรือบน Mac โดยไปที่การตั้งค่าระบบ > เวลาหน้าจอ > ความปลอดภัยในการสื่อสาร\n\nข้อมูลที่เก็บรวบรวมโดย Apple จะได้รับการปฏิบัติตามนโยบายความเป็นส่วนตัวของ Apple เสมอ ซึ่งสามารถดูได้ที่ www.apple.com/th/privacy"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "如果你选择参与“改进通信安全”，Apple会收集“通信安全”使用方式的相关数据，以改进和了解该功能的有效性。此信息为聚合收集并受差分隐私等隐私保护技术的约束，且不会与Apple账户或其他Apple可能从你使用其他Apple服务时获取的数据关联。\n\n收集的聚合数据示例包括：\n\n• 识别为少儿不宜的收发图像和视频总数所占的百分比\n• 轻点或点按“获取帮助的途径”的次数\n• 轻点或点按“通信安全”选项的百分比\n\n通过在iOS、iPadOS或visionOS设备上前往“设置”>“屏幕使用时间”>“通信安全”，或在Mac上前往“系统设置”>“屏幕使用时间”>“通信安全”，你可随时关闭“改进通信安全”。\n\nApple收集的信息始终会遵照Apple的“隐私政策”处理，其内容可参阅www.apple.com/cn/privacy"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "If you opt in to Improve Communication Safety, Apple collects data about how Communication Safety is used in order to improve and understand the effectiveness of the feature. This information is aggregated and subject to privacy preserving techniques such as differential privacy, and is not linked to an Apple Account or other data Apple may have from your use of other Apple services.\n\nExamples of the aggregated data that will be collected include:\n\n• The percentage of total images or videos sent and received that have been identified as being explicit\n• The number of taps or clicks on “Ways to get help”\n• The percentage of taps or clicks on Communication Safety options\n\nYou can turn off Improve Communication Safety at any time on your iOS, iPadOS or visionOS device by going to Settings > Screen Time > Communication Safety, or on Mac by going to System Settings > Screen Time > Communication Safety.\n\nAt all times, information collected by Apple will be treated in accordance with Apple’s Privacy Policy, which can be found at apple.com/uk/privacy"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jei sutiksite padėti tobulinti „Saugų bendravimą“, „Apple“ rinks duomenis apie tai, kaip naudojama ši funkcija, kad galėtų ją tobulinti ir įvertinti jos efektyvumą. Ši informacija apjungiama ir tvarkoma naudojant privatumą užtikrinančius būdus, pvz., diferencinį privatumą, ir ji nėra susiejama su jokia „Apple“ paskyra ar kitais duomenimis, kuriuos gali turėti bendrovė „Apple“ jums naudojantis kitomis „Apple“ paslaugomis.\n\nRenkamų apjungtų duomenų pavyzdžiai:\n\n• Bendra išsiųstų ir gautų vaizdų ar vaizdo įrašų, kurie nustatyti kaip skirti suaugusiesiems, procentinė dalis\n• „Būdų gauti pagalbos“ bakstelėjimų ar spustelėjimų skaičius\n• „Saugaus bendravimo“ parinkčių bakstelėjimų ar spustelėjimų procentinė dalis\n\nFunkciją „Saugaus bendravimo“ tobulinimas“ galite bet kada išjungti „iOS“, „iPadOS“ arba „visionOS“ įrenginiuose nueidami į „Nustatymai“ > „Ekrano laikas“  > „Saugus bendravimas“ arba „Mac“ įrenginyje nueidami į „Sistemos nustatymai“ > (System Settings)  „Ekrano laikas“ (Screen Time) > „Saugus bendravimas“ (Communication Safety).\n\nBendrovės „Apple“ renkama informacija visada bus tvarkoma pagal „Apple“ privatumo politiką, kurią galite rasti svetainėje www.apple.com/privacy"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si eliges participar en Mejorar la seguridad en la comunicación, Apple recopilará datos sobre cómo se utiliza esta función para mejorar y entender su efectividad. Esta información está agregada y sujeta a técnicas para mantener la privacidad, tal como la privacidad diferencial, y no se vincula a una cuenta de Apple ni a otros datos que Apple pueda tener sobre tu uso de otros servicios de Apple.\n\nLos ejemplos de los datos agregados que pueden recopilarse incluyen:\n\n• El porcentaje del total de las imágenes o videos enviados y recibidos que se identificaron como explícitos\n• El número de toques o clics en Formas de obtener ayuda\n• El porcentaje de toques o clics en las opciones de Seguridad en la comunicación\n\nPuedes desactivar Mejorar la seguridad en la comunicación en cualquier momento en tu dispositivo iOS, iPadOS o visionOS en Configuración > Tiempo en pantalla > Seguridad en la comunicación; o en una Mac en Configuración del Sistema > Tiempo en pantalla > Seguridad en la comunicación.\n\nLa información que Apple recopile se tratará en todo momento de conformidad con la Política de privacidad de Apple, la cual puedes consultar en www.apple.com/la/privacy"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pokud se rozhodnete zapojit do vylepšování bezpečné komunikace, Apple bude shromažďovat údaje o tom, jak bezpečnou komunikaci využíváte, za účelem vylepšování a analýzy účinnosti této funkce. Tyto údaje se zpracovávají v agregované formě s použitím postupů chránících soukromí (například metodou diferenciálního soukromí) a nejsou propojeny s účtem Apple ani žádnými jinými daty, která může společnost Apple získat, když používáte její další služby.\n\nK agregovaným datům, která se budou shromažďovat, patří například:\n\n• Celkové procento odeslaných a přijatých snímků a videí identifikovaných jako explicitní\n• Počty klepnutí nebo kliknutí na volbu „Pomozte mi“\n• Procenta klepnutí nebo kliknutí na volby bezpečné komunikace\n\nVylepšování bezpečné komunikace můžete kdykoli vypnout. Na iOS, iPadOS nebo visionOS zařízení přejděte do Nastavení > Čas u obrazovky > Bezpečná komunikace. Na Macu přejděte do Nastavení systému > Čas u obrazovky > Bezpečná komunikace.\n\nSpolečnost Apple bude se shromážděnými informacemi za všech okolností nakládat v souladu se svými zásadami ochrany osobních údajů, jejichž znění najdete na adrese www.apple.com/cz/privacy."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ak sa zapojíte do programu na vylepšovanie bezpečnosti komunikácie, spoločnosť Apple bude na účely vylepšovania a vyhodnocovania efektívnosti tejto funkcie zhromažďovať dáta o jej používaní. Tieto informácie sú agregované, spracované technikami na ochranu súkromia, ako je diferenčná ochrana súkromia, a nie sú prepojené s Apple účtom ani inými dátami, ktoré mohli byť zhromaždené spoločnosťou Apple pri používaní iných služieb.\n\nZhromažďované budú napríklad nasledovné agregované dáta:\n\n• Percento obrázkov alebo videí, ktoré boli identifikované ako nevhodné, z celkového počtu odoslaných a prijatých obrázkov.\n• Počet klepnutí alebo kliknutí na „Potrebujem pomoc“.\n• Percento klepnutí alebo kliknutí na možnosti bezpečnosti komunikácie.\n\nFunkciu Vylepšovať bezpečnosť komunikácie môžete kedykoľvek vypnúť. Na iOS, iPadOS alebo visionOS zariadení otvorte Nastavenia > Čas pred obrazovkou > Bezpečnosť komunikácie. Na Macu otvorte Systémové nastavenia > Bezpečnosť komunikácie.\n\nS informáciami zhromaždenými spoločnosťou Apple sa po celý čas bude zaobchádzať v súlade so zásadami ochrany osobných údajov spoločnosti Apple, ktoré nájdete na stránke www.apple.com/sk/privacy."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jika anda mengikut serta untuk Meningkatkan Keselamatan Komunikasi, Apple mengumpulkan data tentang cara Keselamatan Komunikasi digunakan untuk meningkatkan dan memahami keberkesanan ciri. Maklumat ini diagregatkan dan tertakluk pada teknik pengekalan privasi seperti privasi kebezaan dan tidak dikaitkan dengan Akaun Apple anda atau sebarang data lain yang Apple mungkin terima daripada penggunaan perkhidmatan Apple lain oleh anda.\n\nContoh data diagregatkan yang akan dikumpulkan, termasuk:\n\n• Peratusan daripada jumlah imej atau video yang dihantar dan diterima yang telah dikenal pasti sebagai eksplisit\n• Bilangan ketikan atau klik pada “Cara mendapatkan bantuan”\n• Peratusan ketikan atau klik pada pilihan Keselamatan Komunikasi\n\nAnda boleh menyahaktifkan Tingkatkan Keselamatan Komunikasi pada bila-bila masa pada peranti iOS, iPadOS atau visionOS anda dengan pergi ke Seting > Masa Skrin > Keselamatan Komunikasi, atau pada Mac dengan pergi ke Seting Sistem > Masa Skrin > Keselamatan Komunikasi.\n\nPada setiap masa, maklumat yang dikumpulkan oleh Apple akan dikendalikan berpandukan Dasar Privasi Apple, yang boleh didapati di www.apple.com/my/privacy"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ако заявите Подобряване на Сигурност на комуникацията, Apple ще събере данни за това как се използва сигурността на комуникацията, за да се подобри и оцени ефективността на функцията. Тази информация е обобщена и предмет на техники за запазване на поверителността като диференциална поверителност и не е свързана с вашата Apple регистрация или друга информация, която Apple може да има от вашето използване на други услуги на Apple.\n\nПримери за обобщените данни, които ще бъдат събрани, включват:\n\n• Процентът от всички изпратени и получени изображения или видеа, които са идентифицирани като нецензурни\n• Брой докосвания или щраквания на „Начини да получите помощ“\n• Процент докосвания или щраквания на опциите за Сигурност на комуникацията\n\nПо всяко време можете да изключите Подобряване на сигурността на комуникацията на вашето iOS, iPadOS или visionOS устройство, като отидете в Настройки > Екранно време > Сигурност на комуникацията, или на Mac отидете в Системни настройки > Екранно време > Сигурност на комуникацията.\n\nПолучената от Apple информация винаги ще се третира в съответствие с Политиката за поверителност на Apple, която може да се намери на адрес www.apple.com/privacy"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "If you opt in to Improve Communication Safety, Apple collects data about how Communication Safety is used in order to improve and understand the effectiveness of the feature. This information is aggregated and subject to privacy-preserving techniques such as differential privacy, and is not linked to an Apple Account or other data Apple may have from your use of other Apple services.\n\nExamples of the aggregated data that will be collected include:\n\n• The percentage of total images or videos sent and received that have been identified as being explicit\n• The number of taps or clicks on “Ways to get help”\n• The percentage of taps or clicks on Communication Safety options\n\nYou can turn off Improve Communication Safety at any time on your iOS, iPadOS or visionOS device by going to Settings > Screen Time > Communication Safety, or on Mac by going to System Settings > Screen Time > Communication Safety.\n\nAt all times, information collected by Apple will be treated in accordance with Apple’s Privacy Policy, which can be found at www.apple.com/au/privacy"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Če sodelujete pri izboljšanju varnosti komunikacije, družba Apple zbira podatke o tem, kako se uporablja varnost komunikacije, da bi lahko izboljšala in imela vpogled v učinkovitost te funkcije. Te informacije so združene in zanje veljajo tehnike ohranjanja zasebnosti, na primer razlikovalna zasebnost, in niso povezane z računom Apple ali drugimi podatki, ki jih Apple morda hrani in izhajajo iz vaše uporabe drugih storitev Apple.\n\nPrimeri združenih podatkov, ki bodo zbrani, vključujejo:\n\n• odstotek skupnega števila poslanih in prejetih slik ali videov, ki so bili prepoznani kot nazorni,\n• število tapov in klikov možnosti »Kako do pomoči«,\n• odstotek tapov in klikov možnosti varnosti komunikacije.\n\nIzboljšanje varnosti komunikacije lahko kadarkoli izklopite v napravi s sistemom iOS, iPadOS ali visionOS tako, da odprete Nastavitve > Čas pred zaslonom > Varnost komunikacije, ali v Macu tako, da odprete Nastavitve sistema > Čas pred zaslonom > Varnost komunikacije.\n\nPodatki, ki jih zbira Apple, bodo vedno obravnavani v skladu s pravilnikom o zasebnosti družbe Apple, ki je na voljo na naslovu www.apple.com/si/privacy"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wenn du in „Kommunikationssicherheit verbessern“ einwilligst, erfasst Apple Daten darüber, wie „Kommunikationssicherheit“ verwendet wird, um die Funktion zu verbessern und mehr über deren Leistungsfähigkeit zu erfahren. Diese Daten werden aggregiert, unterliegen Technologien wie Differential Privacy, die zum Schutz der Privatsphäre entwickelt wurden, und werden weder mit einem Apple Account noch mit anderen Daten verknüpft, die Apple möglicherweise über die Nutzung von Apple-Diensten besitzt.\n\nBeispiele der erfassten aggregierten Daten umfassen:\n\n• Den Prozentsatz der gesamten gesendeten und empfangenen Bilder oder Videos, auf oder in denen anstößige Inhalte erkannt wurden\n• Wie häufig auf „So erhältst du Hilfe“ getippt oder geklickt wurde\n• Wie häufig auf Kommunikations­sicherheits­optionen getippt oder geklickt wurde in Prozent\n\nDu kannst „Kommunikationssicherheit verbessern“ jederzeit deaktivieren. Öffne dazu auf deinem iOS-, iPadOS- oder visionOS-Gerät „Einstellungen“ > „Bildschirmzeit“ > „Kommunikationssicherheit“. Auf dem Mac wählst du „Systemeinstellungen“ > „Bildschirmzeit“ > „Kommunikationssicherheit“.\n\nDie von Apple erfassten Informationen werden jederzeit gemäß der Apple-Datenschutzrichtlinie behandelt, die unter www.apple.com/de/privacy zu finden ist."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nếu bạn lựa chọn tham gia Cải thiện Liên lạc an toàn thì Apple sẽ thu thập dữ liệu về cách sử dụng Liên lạc an toàn để cải thiện và tìm hiểu tính hiệu quả của tính năng. Thông tin này được tổng hợp và tuân theo các kỹ thuật bảo vệ quyền riêng tư (ví dụ như quyền riêng tư khác biệt) và không được liên kết với Tài khoản Apple hoặc các dữ liệu khác mà Apple có thể có từ việc bạn sử dụng các dịch vụ khác của Apple.\n\nCác ví dụ về dữ liệu tổng hợp sẽ được thu thập bao gồm:\n\n• Tỷ lệ phần trăm trong tổng số hình ảnh hoặc video được gửi và nhận đã được xác định là thô tục\n• Số lần chạm hoặc bấm vào “Tìm sự trợ giúp”\n• Tỷ lệ phần trăm của các lần chạm hoặc bấm vào tùy chọn Liên lạc an toàn\n\nBạn có thể tắt Cải thiện Liên lạc an toàn bất kỳ lúc nào trên thiết bị iOS, iPadOS hoặc visionOS của mình bằng cách đi tới Cài đặt > Thời gian sử dụng > Liên lạc an toàn hoặc trên máy Mac bằng cách đi tới Cài đặt hệ thống > Thời gian sử dụng > Liên lạc an toàn.\n\nThông tin do Apple thu thập sẽ luôn được xử lý theo Chính sách quyền riêng tư của Apple, có thể tìm thấy tại địa chỉ www.apple.com/vn/privacy"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si activas “Mejorar la seguridad en las comunicaciones”, Apple recopila datos sobre cómo se usa la función “Seguridad en las comunicaciones” para mejorarla y entender su efectividad. Esta información, que está agregada y se somete a técnicas de protección de la privacidad (como la privacidad diferencial), no está vinculada a ninguna cuenta de Apple ni a otros datos que Apple pueda tener del uso que haces de otros servicios de Apple.\n\nEntre los ejemplos de los datos agregados que se recopilarán se incluyen:\n\n• El porcentaje del total de imágenes y vídeos enviados y recibidos que se han identificado como explícitos.\n• El número de toques o clics en “Ver formas de recibir ayuda”.\n• El porcentaje de toques o clics en las opciones de “Seguridad en las comunicaciones”.\n\nPuedes desactivar la función “Mejorar la seguridad en las comunicaciones” en cualquier momento. Para ello, en un dispositivo iOS, iPadOS o visionOS, ve a Ajustes > Tiempo de uso > Seguridad en las comunicaciones, o en un Mac, ve a Ajustes del Sistema > Tiempo de uso > Seguridad en las comunicaciones.\n\nToda esta información se recopila y se trata de acuerdo en todo momento con la política de privacidad de Apple, que puedes consultar en www.apple.com/es/privacy."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se você optar por Melhorar a Segurança de Comunicação, a Apple coletará dados sobre como a Segurança de Comunicação é usada, para melhorar e entender a eficácia do recurso. Essas informações são agregadas e sujeitas a técnicas de preservação de privacidade, como privacidade diferencial, e não são vinculadas a uma Conta Apple nem a outros dados que a Apple possa ter em decorrência do seu uso de outros serviços da Apple.\n\nExemplos dos dados agregados que serão coletados incluem:\n\n• A porcentagem do total de imagens ou vídeos enviados e recebidos que foram identificados como explícitos\n• O número de toques ou cliques em “Maneiras de obter ajuda”\n• A porcentagem de toques ou cliques nas opções de Segurança de Comunicação\n\nÉ possível desativar a opção Melhorar a Segurança de Comunicação a qualquer momento. Em um dispositivo iOS, iPadOS ou visionOS, acesse Ajustes > Tempo de Uso > Segurança de Comunicação. No Mac, acesse Ajustes do Sistema > Tempo de Uso > Segurança de Comunicação.\n\nAs informações coletadas pela Apple serão sempre tratadas de acordo com a Política de Privacidade da Apple, que pode ser encontrada em www.apple.com/br/privacy"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Егер сіз «Байланыс қауіпсіздігі» функциясын жақсартуға атсалысқыңыз келсе, Apple компаниясы осы функцияның тиімділігін жақсарту және түсіну үшін оның қалай қолданылатыны туралы деректерді жинайды. Бұл ақпарат біріктірілген және дифференциалды құпиялылық сияқты құпиялылықты қорғау технологияларына бағынады және Apple аккаунтымен немесе басқа Apple сервистерін пайдалану нәтижесінде Apple компаниясына берілетін басқа да деректермен байланысты емес.\n\nЖиналатын жиынтық деректердің мысалдары:\n\n• Әдепсіз деп танылған жіберілген және алынған кескіндердің немесе видеолардың жалпы санының пайызы\n• «Көмек алу жолдары» функциясын түрту немесе басу әрекеттерінің саны\n• «Байланыс қауіпсіздігі» опцияларын түрту немесе басу әрекеттерінің пайызы\n\n«Байланыс қауіпсіздігін жақсарту» функциясын кез келген уақытта өшіруге болады. Ол үшін iOS, iPadOS немесе visionOS құрылғысында «Реттеулер» > «Экран уақыты» > «Байланыс қауіпсіздігі» тармағына, ал Mac компьютерінде System Settings (Жүйе реттеулері) > Screen Time (Экран уақыты) > Communication Safety (Байланыс қауіпсіздігі) тармағына өтіңіз.\n\nApple жинаған ақпарат әрқашан Apple құпиялылық саясатына (www.apple.com/privacy сайтында берілген) сәйкес өңделеді"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si vous choisissez de participer à « Améliorer la sécurité des communications », Apple collectera des données relatives à l’utilisation de « Sécurité des communications » pour améliorer et comprendre son efficacité. Ces informations sont agrégées et soumises à différentes techniques de protection de la vie privée telles que la confidentialité différentielle, et ne sont pas associées à un compte Apple ni à d’autres données qu’Apple pourrait obtenir dans le cadre de votre utilisation d’autres services Apple.\n\nParmi les exemples de données agrégées qui seront collectées figurent :\n\n• Le pourcentage que représente le nombre total d’images et de vidéos envoyées et reçues dont le contenu a été identifié comme explicite.\n• Le nombre de touchers ou de clics sur « Obtenir de l’aide ».\n• Le pourcentage de touchers ou de clics sur les options de « Sécurité des communications ».\n\nVous pouvez désactiver « Améliorer la sécurité des communications » à tout moment sur un appareil iOS, iPadOS ou visionOS en accédant à Réglages > Temps d’écran > Sécurité des communications, ou sur Mac en accédant à Réglages Système > Temps d’écran > Sécurité des communications.\n\nLes données recueillies par Apple seront en tout temps traitées conformément à l’Engagement de confidentialité d’Apple, que vous pouvez consulter à l’adresse suivante : www.apple.com/fr/privacy"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Якщо ви долучитеся до програми покращення безпеки спілкування, Apple збиратиме дані про те, як використовується функція «Безпека спілкування», щоб зрозуміти й підвищити її ефективність. Ця інформація зводиться та проходить процедури збереження приватності, як‑от диференційна приватність, а також не привʼязується до облікового запису Apple чи інших даних, які Apple може отримувати внаслідок вашого використання інших сервісів Apple.\n\nНижче наведено приклади зведених даних, які збиратимуться.\n\n• Відсоток загальної кількості надісланих і отриманих зображень або відео, які було визначено як відверті\n• Кількість натискань посилання «Як отримати допомогу»\n• Відсоток натискань на опції Безпеки спілкування\n\nМожна будь-коли вимкнути функцію «Покращення безпеки спілкування». Для цього на пристрої iOS, iPadOS або visionOS перейдіть у меню Параметри > Екранний час > Безпека спілкування. На Mac перейдіть у меню Системні параметри > Екранний час > Безпека спілкування.\n\nІнформація, яку збирає Apple, завжди оброблятиметься відповідно до Політики конфіденційності Apple, наведеної на вебсайті www.apple.com/ua/privacy"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dacă optați pentru activarea opțiunii “Îmbunătățire Siguranța comunicării”, Apple va colecta date despre modul în care Siguranța comunicării este utilizată pentru a îmbunătăți și pentru a evalua eficiența funcționalității. Aceste informații sunt agregate, fac obiectul unor tehnici de protejare a confidențialității, precum confidențialitatea diferențială, și nu sunt asociate cu un cont Apple sau alte date pe care este posibil ca Apple să le aibă ca urmare a utilizării altor servicii Apple.\n\nDatele agregate care vor fi colectate includ, de exemplu:\n\n• Procentul din numărul total de imagini și clipuri video trimise și primite care au fost identificate ca fiind explicite\n• Numărul de apăsări sau clicuri efectuate pe “Modalități de a primi ajutor”\n• Procentul apăsărilor sau clicurilor efectuate pe opțiunile funcționalității Siguranța comunicării\n\nPuteți dezactiva oricând opțiunea “Îmbunătățire Siguranța comunicării” pe un dispozitiv iOS, iPadOS sau visionOS accesând Configurări > Timp de utilizare > Siguranța comunicării sau pe Mac accesând Configurări sistem > Timp de utilizare > Siguranța comunicării.\n\nInformațiile colectate de Apple vor fi în permanență tratate în conformitate cu Politica de confidențialitate Apple, care se află la www.apple.com/ro/privacy."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ako odlučite pomoći u poboljšanju sigurnosti komuniciranja, Apple će prikupljati podatke o načinu uporabe sigurnosti komuniciranja radi poboljšanja i razumijevanja učinkovitosti značajke. Ove su informacije agregirane i podložne tehnikama očuvanja privatnosti, kao što je diferencirana privatnost, te nisu povezane s Apple računom ili drugim podacima koje je Apple možda prikupio uslijed vaše uporabe drugih Apple usluga.\n\nPrimjeri agregiranih podataka koji se prikupljaju uključuju:\n\n• Postotak ukupnih poslanih i primljenih slika ili videozapisa koji su prepoznati kao eksplicitni\n• Broj dodira ili klikanja na “Načini za dobivanje pomoći”\n• Postotak dodira ili klikanja na opcije sigurnosti komuniciranja\n\nOpciju Poboljšanje sigurnosti komuniciranja možete isključiti u bilo kojem trenutku na svom iOS, iPadOS ili visionOS uređaju tako da idete u Postavke > Vrijeme uporabe zaslona > Sigurnost komuniciranja ili na Macu tako da idete u Postavke sustava > Vrijeme uporabe zaslona > Sigurnost komuniciranja.\n\nApple će u svakom trenutku prikupljene informacije tretirati u skladu s pravilima privatnosti tvrtke Apple, koja možete pronaći na www.apple.com/legal/privacy/hr"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“コミュニケーションの安全性”を選択した場合、Appleは、機能の効果改善と理解の目的でどのように“コミュニケーションの安全性”が使用されているかに関するデータを収集します。この情報は集約され、ディファレンシャルプライバシーのようなプライバシー保護技術の対象になり、Apple Accountに関連付けられたり、ほかのAppleサービスの使用を通じてAppleが保有しているその他のデータに関連付けられたりすることはありません。\n\n収集される集約データの例:\n\n• 送受信された画像またはビデオで不適切と認識されたものの割合（パーセント）。\n• “助けを求める方法”をタップまたはクリックした回数\n• “コミュニケーションの安全性”のオプションをタップまたはクリックした割合（パーセント）\n\n“コミュニケーションの安全性を改善”は、iOSデバイス、iPadOSデバイス、またはvisionOSデバイスでは“設定”＞“スクリーンタイム”＞“コミュニケーションの安全性”、Macでは“システム設定”＞“スクリーンタイム”＞“コミュニケーションの安全性”に移動して、いつでもオフにすることができます。\n\nAppleが収集する情報は、いかなる場合においても、Appleのプライバシーポリシー（www.apple.com/jp/privacy を参照）に従って取り扱われます。"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se optar por ativar Melhorar segurança na comunicação, a Apple recolherá dados acerca da utilização de segurança na comunicação, para melhorar e compreender a eficácia da funcionalidade. Esta informação é agregada e sujeita a técnicas de preservação de privacidade, como privacidade diferencial, e não é associada a uma conta Apple nem a outros dados que a Apple tenha acerca da sua utilização de outros serviços da Apple.\n\nExemplos de dados agregados que serão recolhidos:\n\n• A percentagem do número total de imagens ou vídeos enviados e recebidos que foram identificados como explícitos.\n• O número de toques ou cliques em “Formas de obter ajuda”.\n• A percentagem de toques ou cliques em opções de segurança na comunicação.\n\nPode desativar Melhorar segurança na comunicação em qualquer altura; num dispositivo iOS, iPadOS ou visionOS, em Definições > Tempo de ecrã > Segurança na comunicação, ou num Mac em Definições do Sistema > Tempo de ecrã > Segurança na comunicação.\n\nToda e qualquer informação recolhida pela Apple será tratada de acordo com a Política de Privacidade da Apple, cujo texto pode ser consultado em www.apple.com/privacy"
+          }
+        }
+      }
+    },
+    "SPLASH_SHORT_TITLE": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Communication Safety"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "שיפור הבטיחות בתקשורת"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "커뮤니케이션 안전 향상"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tingkatkan Keamanan Komunikasi"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paranna viestinnän turvallisuutta"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verbeter communicatie­veiligheid"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İletişim Güvenliği’ni İyileştir"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kommunikációbiztonság továbbfejlesztése"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Улучшение Безопасности общения"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Migliora la sicurezza delle comunicazioni"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Βελτίωση της Ασφάλειας επικοινωνίας"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar la seguridad en la comunicación"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Améliorer « Sécurité des communications »"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Millora de la comunicació segura"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "改進通訊安全"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "改進通訊安全"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Förbättra kommunikationssäkerhet"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forbedre trygg kommunikasjon"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ulepszanie (bezpieczeństwo komunikacji)"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gør sikker kommunikation bedre"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Communication Safety"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "संचार सुरक्षा बेहतर बनाएँ"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تحسين أمان التواصل"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ปรับปรุงความปลอดภัยในการสื่อสาร"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "改进通信安全"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Communication Safety"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„Saugaus bendravimo“ tobulinimas"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar la seguridad en la comunicación"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vylepšování bezpečné komunikace"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vylepšovanie bezpečnosti komunikácie"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tingkatkan Keselamatan Komunikasi"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Подобряване на сигурност на комуникацията"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Communication Safety"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Izboljšanje varnosti komunikacije"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kommunikationssicherheit verbessern"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cải thiện Liên lạc an toàn"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar la seguridad en las comunicaciones"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Melhorar a Segurança de Comunicação"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Байланыс қауіпсіздігін жақсарту"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Améliorer la sécurité des communications"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Покращення безпеки спілкування"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Îmbunătățire Siguranța comunicării"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poboljšanje sigurnosti komuniciranja"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "コミュニケーションの安全性を改善"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Melhorar segurança na comunicação"
+          }
+        }
+      }
+    },
+    "SPLASH_SUMMARY": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Communication Safety is designed to protect your information and enable you to choose what you share."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "״שיפור הבטיחות בתקשורת״ תוכנן באופן שמגן על המידע שלך ומאפשר לך לבחור מה לשתף ומה לא לשתף."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "커뮤니케이션 안전 향상은 사용자의 정보를 보호하도록 설계되었으며 공유할 내용을 사용자가 선택할 수 있습니다."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tingkatkan Keamanan Komunikasi dirancang untuk melindungi informasi Anda dan memungkinkan Anda untuk memilih apa yang Anda bagikan."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paranna viestinnän turvallisuutta on suunniteltu niin, että tietosi ovat turvassa. Voit itse valita, mitä haluat jakaa."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "'Verbeter communicatie­veiligheid' is ontwikkeld om je gegevens te beschermen en om je te laten bepalen wat je deelt."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İletişim Güvenliği’ni İyileştir, bilgilerinizi koruyacak ve neleri paylaşacağınızı seçmenizi sağlayacak şekilde tasarlanmıştır."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Kommunikációbiztonság továbbfejlesztése funkciót úgy tervezték, hogy megvédje az Ön információit, és lehetővé tegye, hogy Ön kiválassza, mit oszt meg."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ваши данные, используемые функцией «Улучшение Безопасности общения», надежно защищены, и только Вы решаете, чем поделиться."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La funzionalità “Migliora la sicurezza delle comunicazioni” è concepita in modo da proteggere le tue informazioni e consentirti di scegliere i contenuti da condividere."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Η Βελτίωση της Ασφάλειας επικοινωνίας έχει σχεδιαστεί με τρόπο που προστατεύει τις πληροφορίες σας και σας δίνει τη δυνατότητα να επιλέγετε τα δεδομένα προς κοινοποίηση."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar la seguridad en la comunicación se diseñó para proteger tu información y permitirte elegir lo que compartes."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La fonction d’amélioration de la sécurité des communications est conçue pour protéger vos informations et vous permettre de choisir ce que vous souhaitez partager."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La millora de la comunicació segura s’ha dissenyat per protegir la teva informació i perquè puguis triar què vols compartir."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "「改進通訊安全」的設計可保護你的資訊並讓你選擇分享的內容。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "「改進通訊安全」的設計可保護你的資料並讓你選擇分享內容。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Förbättra kommunikationssäkerhet har utformats för att skydda din information och låta dig välja vad du vill dela."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forbedre trygg kommunikasjon beskytter informasjonen din og gir deg muligheten til å velge hva du vil dele."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funkcja Ulepszanie (bezpieczeństwo komunikacji) została zaprojektowana z myślą o ochronie Twoich danych i pozwala Ci decydować o ich udostępnianiu."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gør sikker kommunikation bedre er designet til at beskytte dine oplysninger og give dig mulighed for at vælge, hvad du vil dele."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Communication Safety is designed to protect your information and enable you to choose what you share."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“संचार सुरक्षा बेहतर बनाएँ” को आपकी जानकारी की सुरक्षा के लिए डिज़ाइन किया गया है और आप क्या शेयर करते हैं यह चुनने में आपको सक्षम करता है।"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "صُمِّمت ميزة تحسين أمان التواصل لحماية معلوماتك وتمكينك من اختيار ما تود مشاركته."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "การปรับปรุงความปลอดภัยในการสื่อสารได้รับการออกแบบมาเพื่อปกป้องข้อมูลของคุณและทำให้คุณสามารถเลือกสิ่งที่คุณต้องการแชร์ได้"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "改进通信安全旨在保护你的信息并可让你选择要共享的内容。"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Communication Safety is designed to protect your information and enable you to choose what you share."
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funkcija „Saugaus bendravimo“ tobulinimas“ sukurta taip, kad apsaugotų jūsų informaciją ir suteiktų jums galimybę pasirinkti, ką bendrinti."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar la seguridad en la comunicación se diseñó para proteger tu información y permitirte elegir lo que compartes."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funkce Vylepšování bezpečné komunikace chrání vaše osobní údaje a ponechává vám kontrolu nad tím, co sdílíte."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Služba Vylepšovanie bezpečnosti komunikácie chráni vaše osobné údaje a ponecháva vám plnú kontrolu nad tým, čo zdieľate."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tingkatkan Keselamatan Komunikasi direka bentuk untuk melindungi maklumat anda dan membolehkan anda memilih perkara yang anda kongsi."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Подобряването на Сигурност на комуникацията е създадено да защитава вашата информация и да ви позволи да избирате какво да споделяте."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Communication Safety is designed to protect your information and enable you to choose what you share."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Izboljšanje varnosti komunikacije je zasnovano tako, da varuje vaše podatke in vam omogoča, da izberete, kaj boste delili."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„Kommunikationssicherheit verbessern“ ist dafür konzipiert, deine Daten zu schützen, und du kannst auswählen, was du teilst."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cải thiện Liên lạc an toàn được thiết kế để bảo vệ thông tin của bạn và cho phép bạn chọn nội dung chia sẻ."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“Mejorar la seguridad en las comunicaciones” se ha diseñado para mantener protegida tu información y para que puedas escoger lo que quieres compartir."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O recurso Melhorar a Segurança de Comunicação é projetado para proteger as suas informações e permitir que você escolha os dados que compartilha."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "«Байланыс қауіпсіздігін жақсарту режимі» функциясы жеке ақпаратыңызды қорғайтындай және бөлісу қажет объектілерді таңдауға мүмкіндік беретіндей етіп жасалған."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La fonctionnalité « Améliorer la sécurité des communications » est conçue pour protéger vos données et vous permettre de choisir ce que vous souhaitez partager."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Функцію «Покращення безпеки спілкування» спроєктовано так, щоб захищати вашу інформацію та давати вам змогу вибирати, що поширювати."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funcționalitatea “Îmbunătățire Siguranța comunicării” este concepută pentru a vă proteja informațiile și pentru a vă permite să alegeți ceea ce partajați."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Značajka Poboljšanje sigurnosti komuniciranja dizajnirana je kako bi zaštitila vaše informacije i omogućila odabir sadržaja koje želite podijeliti."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“コミュニケーションの安全性を改善”はあなたの個人情報を保護するように設計され、どの情報を共有するかを選択できるようになっています。"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A funcionalidade Melhorar segurança na comunicação foi concebida de modo a proteger a informação pessoal e permitir a cada utilizador escolher o que pretende partilhar."
+          }
+        }
+      }
+    },
+    "SPLASH_TITLE": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Communication Safety & Privacy"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "״שיפור הבטיחות בתקשורת״ ופרטיות"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "커뮤니케이션 안전 향상 및 개인정보 보호"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tingkatkan Keamanan Komunikasi & Privasi"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paranna viestinnän turvallisuutta ja tietosuoja"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "'Verbeter communicatie­veiligheid' en privacy"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İletişim Güvenliği’ni İyileştir ve Gizlilik"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Kommunikációbiztonság továbbfejlesztése és az adatvédelem"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Улучшение Безопасности общения и конфиденциальность"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“Migliora la sicurezza delle comunicazioni” e privacy"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Βελτίωση της Ασφάλειας επικοινωνίας και απόρρητο"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar la seguridad en la comunicación y la privacidad"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Améliorer « Sécurité des communications » et confidentialité"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Millora de la comunicació segura i la privacitat"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "改進通訊安全與隱私權"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "改進通訊安全與私隱"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Förbättra kommunikationssäkerhet och integritet"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forbedre trygg kommunikasjon og personvern"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ulepszanie (Bezpieczeństwo komunikacji) i prywatność"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gør sikker kommunikation bedre og anonymitet"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Communication Safety & Privacy"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“संचार सुरक्षा बेहतर बनाएँ” और गोपनीयता"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حول تحسين أمان التواصل والخصوصية"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ปรับปรุงความปลอดภัยในการสื่อสารและความเป็นส่วนตัว"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "改进通信安全与隐私"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Communication Safety & Privacy"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„Saugaus bendravimo“ tobulinimas“ ir privatumas"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar la seguridad en la comunicación y la privacidad"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vylepšování bezpečné komunikace a soukromí"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vylepšovanie bezpečnosti komunikácie a súkromie"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tingkatkan Keselamatan Komunikasi & Privasi"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Подобряване на Сигурност на комуникацията и поверителност"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve Communication Safety & Privacy"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Izboljšanje varnosti komunikacije in zasebnost"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„Kommunikationssicherheit verbessern“ & Datenschutz"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cải thiện Liên lạc an toàn & Quyền riêng tư"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“Mejorar la seguridad en las comunicaciones” y la privacidad"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Melhorar a Segurança de Comunicação e Privacidade"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Байланыс қауіпсіздігін жақсарту және құпиялылық"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Améliorer la sécurité des communications et confidentialité"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Покращення безпеки спілкування і приватність"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“Îmbunătățire Siguranța comunicării” și intimitatea"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poboljšanje sigurnosti komuniciranja i privatnost"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“コミュニケーションの安全性を改善”とプライバシー"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Melhorar segurança na comunicação e Privacidade"
+          }
+        }
+      }
+    },
+    "BUTTON_TITLE": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About Improve Communication Safety & Privacy…"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "מידע בנושא ״שיפור הבטיחות בתקשורת״ ופרטיות…"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "커뮤니케이션 안전 향상 및 개인정보 보호에 관하여…"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mengenai Tingkatkan Keamanan Komunikasi & Privasi…"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tietoja: Paranna viestinnän turvallisuutta ja tietosuoja…"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Over 'Verbeter communicatie­veiligheid' en privacy…"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İletişim Güvenliği’ni İyileştir ve Gizlilik Hakkında…"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Kommunikációbiztonság továbbfejlesztéséről és az adatvédelemről…"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Об Улучшении Безопасности общения и конфиденциальности…"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“Migliora la sicurezza delle comunicazioni” e privacy…"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Βελτίωση της Ασφάλειας επικοινωνίας και απόρρητο…"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de Mejorar la seguridad en la comunicación y la privacidad…"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Améliorer « Sécurité des communications » et confidentialité…"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sobre la millora de la comunicació segura i la privacitat…"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "關於改進通訊安全與隱私權⋯"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "關於改進通訊安全與私隱⋯"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om Förbättra kommunikationssäkerhet och integritet…"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om Forbedre trygg kommunikasjon og personvern…"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ulepszanie (Bezpieczeństwo komunikacji) i prywatność…"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om Gør sikker kommunikation bedre og anonymitet…"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About Improve Communication Safety & Privacy…"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“संचार सुरक्षा बेहतर बनाएँ” और गोपनीयता परिचय…"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حول تحسين أمان التواصل والخصوصية…"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เกี่ยวกับการปรับปรุงความปลอดภัยในการสื่อสารและความเป็นส่วนตัว…"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "关于改进通信安全与隐私…"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About Improve Communication Safety & Privacy…"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apie „Saugaus bendravimo“ tobulinimą“ ir privatumą…"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de Mejorar la seguridad en la comunicación y la privacidad…"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O vylepšování bezpečné komunikace a soukromí…"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O vylepšovaní bezpečnosti komunikácie a súkromí…"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Perihal Tingkatkan Keselamatan Komunikasi & Privasi…"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "За подобряване на Сигурност на комуникацията и поверителност…"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About Improve Communication Safety & Privacy…"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Več o izboljšanju varnosti komunikacije in zasebnosti …"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Über „Kommunikationssicherheit verbessern“ & Datenschutz …"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cải thiện Liên lạc an toàn & Quyền riêng tư…"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de “Mejorar la seguridad en las comunicaciones” y la privacidad…"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sobre Melhorar a Segurança de Comunicação e Privacidade…"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Байланыс қауіпсіздігін жақсарту және құпиялылық туралы ақпарат…"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Améliorer la sécurité des communications et confidentialité…"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Про Покращення безпеки спілкування і приватність…"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Despre “Îmbunătățire Siguranța comunicării” și intimitate…"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Više o poboljšanju sigurnosti komuniciranja i privatnosti…"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“‘コミュニケーションの安全性を改善’とプライバシー”について…"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de Melhorar segurança na comunicação e Privacidade…"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

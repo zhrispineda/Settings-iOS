@@ -1,0 +1,1381 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "FOOTER_TEXT": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“電気自動車経路を改善”をオンにすると、Appleは次の情報を収集する場合があります:\n\n• 電気自動車充電スタンドが経路に追加されたかどうか\n• 経路の途中でバッテリーが切れたかどうか\n• バッテリー残量の割合\n• 電気自動車の現在のバッテリー容量と最大バッテリー容量\n• 経路上の指定された充電スタンドで電気自動車が充電完了するまでにかかる時間\n• 電気自動車の残り走行範囲と最大範囲\n• 電気自動車の消費エネルギーに関するデータ\n• 目的地までの予想移動時間を含む経路に関する情報\n\nAppleはこれにより、Appleによるバッテリー充電の推定精度をよりよく評価することができます。このデータは匿名化されて保存され、“電気自動車経路”やその他のAppleの位置情報に基づく製品およびサービスを改善する目的にのみ使用されます。“電気自動車経路の改善”は、“設定”＞“アプリ”＞“マップ”＞“位置情報サービス”＞“電気自動車経路の改善”からいつでもオフにできます。"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "אם בחרת להפעיל את ״שיפור המסלול עם רכב חשמלי״, Apple עשויה לאסוף את המידע הבא:\n\n• אם תחנת טעינת סוללות נוספה למסלול\n\n• אם הסוללה נגמרה במהלך חלק כלשהו במסלול\n\n• אחוז הסוללה שנותר\n• קיבולת הסוללה הנוכחית וקיבולת הסוללה המקסימלית של הרכב שלך\n• משך הזמן הנדרש לטעינת הרכב בתחנת טעינה מסוימת במסלול\n• טווח הנסיעה הנותר וטווח הנסיעה המקסימלי של הרכב שלך\n• נתונים על צריכת האנרגיה של הרכב\n• מידע בנוגע למסלול שלך, כולל זמן הנסיעה הצפוי אל היעד שלך\n\nנתונים אלו יאפשרו ל-Apple לאמוד בצורה טובה יותר את הדיוק של הערכות טעינת הסוללה שלנו. ‏Apple תשמור נתונים אלו בצורה אנונימית בלבד כדי לשפר את מסלול הרכב החשמלי ומוצרים ושירותים מבוססי-מיקום אחרים של Apple. ניתן לכבות את ״שיפור המסלול עם רכב חשמלי״ בכל עת באמצעות מעבר אל ״הגדרות״ > ״יישומים״ > ״מפות״ > ״שיפור המסלול עם רכב חשמלי״."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "전기차 경로 향상하기 활성화를 선택한 경우 Apple은 다음 정보를 수집할 수 있습니다.\n\n• 경로에 배터리 충전소 경유가 추가된 경우\n• 경로 중 일부에서 배터리가 방전된 경우\n• 배터리 잔량(백분율로 표시)\n• 차량의 현재 배터리 성능 및 최대 배터리 성능\n• 경로에 지정된 배터리 충전소 경유에서 차량을 충전하는 데 걸리는 시간\n• 차량의 남은 주행 거리 및 최대 주행 거리\n• 차량의 에너지 소비에 관한 데이터\n• 목적지까지 예상 주행 시간 등의 경로 정보\n\n이를 통해 Apple은 배터리 충전 추정치의 정확성을 더 잘 평가할 수 있습니다. Apple은 전기차 경로 및 기타 Apple의 위치 기반 제품과 서비스를 향상하기 위해 이 데이터를 익명의 형식으로만 보관합니다. 설정 > 앱 > 지도 > 전기차 경로 향상하기로 이동하여 언제든지 전기차 경로 향상하기를 끌 수 있습니다."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jika Anda memilih untuk mengaktifkan Tingkatkan Perutean EV, Apple dapat mengumpulkan informasi berikut:\n\n• Jika pemberhentian pengisian daya baterai ditambahkan ke rute Anda\n• Jika baterai Anda kehabisan daya di sepanjang rute Anda\n• Persentase daya baterai yang tersisa\n• Kapasitas baterai saat ini dan kapasitas baterai maksimum kendaraan Anda\n• Waktu yang diperlukan kendaraan untuk mengisi daya di pemberhentian pengisian daya baterai tertentu di rute Anda\n• Sisa jangkauan perjalanan dan jangkauan maksimum kendaraan Anda\n• Data mengenai konsumsi energi kendaraan Anda\n• Informasi mengenai rute Anda, termasuk waktu perjalanan yang diharapkan ke tujuan Anda\n\nIni akan memungkinkan Apple untuk mengevaluasi akurasi perkiraan daya baterai kami dengan lebih baik. Apple hanya akan menyimpan data ini dalam bentuk anonim untuk meningkatkan Perutean EV dan produk serta layanan berbasis lokasi Apple lainnya. Anda dapat mematikan Tingkatkan Perutean EV kapan pun dengan membuka Pengaturan > App > Peta > Tingkatkan Perutean EV."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jos otat Paranna sähköajoneuvoreittejä -toiminnon käyttöön, Apple voi kerätä seuraavia tietoja:\n\n• Lisättiinkö reittiin latauspysähdys\n• Loppuiko akku jollakin reitin osalla\n• Akun jäljelläoleva varausprosentti\n• Ajoneuvon akun tämänhetkinen kapasiteetti ja akun enimmäiskapasiteetti\n• Kuinka kauan ajoneuvon lataaminen kestää kullakin reitin latauspysähdyksellä\n• Ajoneuvon jäljellä oleva ajomatka ja enimmäisajomatka\n• Tietoja ajoneuvon energiankulutuksesta\n• Tietoja reitistäsi, mukaan lukien odotettu matka-aika määränpäähän\n\nTämä auttaa Applea arvioimaan akun latausarvioidensa tarkkuutta. Apple säilyttää nämä tiedot anonyymissa muodossa ja käyttää niitä Paranna sähköajoneuvoreittejä -toiminnon ja muiden Applen sijaintiin perustuvien tuotteiden ja palveluiden parantamiseen. Voit laittaa Paranna sähköajoneuvoreittejä -toiminnon pois päältä milloin tahansa valitsemalla Asetukset > Apit > Kartat > Paranna sähköajoneuvoreittejä."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "EV Navigasyonunu İyileştir’i etkinleştirmeyi seçerseniz Apple aşağıdaki bilgileri toplayabilir:\n\n• Güzergâhınıza bir batarya şarj istasyonunun eklenip eklenmediği\n• Güzergâhınızın herhangi bir bölümünde bataryanızın bitip bitmediği\n• Bataryanızın kalan yüzdesi\n• Taşıtınızın şu anki batarya kapasitesi ve maksimum batarya kapasitesi\n• Güzergâhınızdaki belirli bir batarya şarj istasyonunda taşıtınızı şarj etmenin ne kadar süreceği\n• Taşıtınızın kalan seyahat mesafesi ve maksimum mesafesi\n• Taşıtınızın enerji tüketimiyle ilgili veriler\n• Hedefinize tahmini seyahat süresi de dahil olmak üzere güzergâhınız hakkında bilgi\n\nBunlar, Apple’ın batarya şarj tahminlerinin doğruluğunu daha iyi değerlendirmesini sağlar. Apple, bu verileri EV Navigasyonunu ve Apple’ın diğer konum tabanlı ürünlerini ve servislerini iyileştirmek amacıyla yalnızca anonim bir biçimde tutar. Ayarlar > Uygulamalar > Harita > EV Navigasyonunu İyileştir bölümüne giderek istediğiniz zaman EV Navigasyonunu İyileştir’i kapatabilirsiniz."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Als je ervoor kiest om 'Verbeter EV-routes' in te schakelen, kan Apple de volgende informatie verzamelen:\n\n• Als er een stop aan je route is toegevoegd om de accu op te laden\n• Als je accu op enig moment tijdens de route is leeggeraakt\n• Het resterende percentage van je batterij\n• De huidige en de maximale batterij­capaciteit van je voertuig\n• Hoelang het opladen van je voertuig zal duren bij een bepaalde oplaadstop op je route\n• Het resterende en maximale bereik van je voertuig\n• Gegevens over het energieverbruik van je voertuig\n• Informatie over je route, waaronder de verwachte reistijd naar je bestemming\n\nHierdoor is Apple beter in staat om de nauw­keurigheid van de schattingen over de batterij­lading beter te evalueren. Apple bewaart deze gegevens uitsluitend in anonieme vorm om EV-routes en andere locatiegebonden producten en voorzieningen van Apple te verbeteren. Je kunt 'Verbeter EV-routes' op elk gewenst moment uitschakelen door in Instellingen naar 'Apps' > 'Kaarten' > 'Verbeter EV-routes' te gaan."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Если Вы включите функцию «Улучшение электромаршрутов», Apple сможет собирать приведенную ниже информацию.\n\n• Была ли добавлена в маршрут остановка для подзарядки аккумулятора.\n• Был ли аккумулятор разряжен в какой‑либо части маршрута.\n• Уровень оставшегося заряда аккумулятора.\n• Текущая емкость аккумулятора электромобиля и максимальная емкость аккумулятора.\n• Ожидаемая длительность полной зарядки аккумулятора на конкретной остановке для подзарядки на маршруте.\n• Расстояние, которое электромобиль способен проехать при оставшемся уровне заряда и при максимальном заряде.\n• Сведения об энергопотреблении электромобиля.\n• Информация о Вашем маршруте, включая ожидаемое время в пути до места назначения.\n\nЭти данные помогут Apple определять точность своих оценок уровня заряда. Apple будет хранить эти данные только в анонимной форме в целях улучшения функции «Маршруты для электромобилей», а также других продуктов и сервисов Apple, использующих геоданные. Параметр «Улучшение электромаршрутов» можно выключить в любой момент. Для этого откройте «Настройки» > «Приложения» > «Карты» > «Улучшение электромаршрутов»."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ha engedélyezi az Elektromosautó-útvonaltervezés továbbfejlesztését, az Apple a következő információkat gyűjtheti:\n\n• ha akkumulátortöltési megálló volt hozzáadva az útvonalhoz;\n• ha az akkumulátor lemerült az útvonal valamelyik része alatt;\n• az akkumulátor fennmaradó töltöttsége;\n• a járműve aktuális akkumulátor-kapacitása és maximális akkumulátor-kapacitása;\n• meddig tart feltölteni a járművét az útvonal egy adott akkumulátortöltő megállójánál;\n• a járművének fennmaradó utazási hatótávja és maximális hatótávja;\n• a járműve energiafogyasztási adatai;\n• az útvonalával kapcsolatos adatok, többek között a várható utazási idő a cél eléréséig.\n\nEz lehetővé teszi, hogy az Apple jobban ki tudja értékelni az akkumulátortöltési becsléseinek pontosságát. Az Apple csak név nélküli formában őrzi meg ezeket az adatokat az Elektromosautó-útvonaltervezés funkció és az Apple egyéb helymeghatározást használó termékei és szolgáltatásai továbbfejlesztéséhez. Bármikor kikapcsolhatja az Elektromosautó-útvonaltervezés továbbfejlesztését a Beállítások > Appok > Térképek > Elektromosautó-útvonaltervezés fejlesztése menüpontban."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se scegli di abilitare “Migliora itinerari VE”, Apple potrebbe raccogliere le seguenti informazioni:\n\n• Se una sosta di ricarica della batteria è stata aggiunta all’itinerario.\n• Se la carica della batteria si è esaurita completamente durante una qualsiasi parte dell’itinerario.\n• La percentuale di carica rimanente nella batteria.\n• La capacità della batteria attuale e quella massima del veicolo.\n• Quanto impiegherà il tuo veicolo a ricaricarsi in una determinata sosta di ricarica lungo l’itinerario.\n• La distanza di viaggio rimanente e quella massima per il veicolo.\n• Dati sul consumo energetico del veicolo.\n• Informazioni sull’itinerario, incluso il tempo di viaggio previsto per raggiungere la destinazione.\n\nTali informazioni consentiranno ad Apple di valutare meglio la precisione delle stime sulla carica della batteria. Apple conserverà questi dati in forma anonima solo per migliorare gli itinerari VE e altri prodotti e servizi di Apple basati sulla posizione. Puoi disattivare “Migliora itinerari VE” in qualsiasi momento andando in Impostazioni > App > Mappe > Migliora itinerari VE."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si optas por activar Mejorar las rutas para vehículos eléctricos, Apple puede recopilar la siguiente información:\n\n• Si agregaste una parada para cargar la batería a tu ruta.\n• Si la batería se agotó durante cualquier parte de tu ruta.\n• El porcentaje de batería restante\n• La capacidad máxima de la batería de tu vehículo y su estado actual\n• El tiempo de carga en una parada para cargar la batería en tu ruta\n• El rango máximo de tu vehículo y el rango de viaje restante\n• Datos sobre el consumo de energía de tu vehículo\n• Información sobre tu ruta, que puede incluir el cálculo de la duración del viaje hasta tu destino\n\nLa recopilación de esta información permitirá a Apple evaluar mejor la exactitud de nuestras estimaciones de carga de la batería. Apple conservará estos datos sólo de tal manera que sean anónimos para mejorar Rutas para vehículos eléctricos y otros productos y servicios de Apple basados en la ubicación. Puedes desactivar Mejorar las rutas para vehículos eléctricos en cualquier momento desde Configuración > Apps > Mapas > Mejorar las rutas para vehículos eléctricos."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Αν επιλέξετε να ενεργοποιήσετε τη Βελτίωση δρομολόγησης ηλεκτρικών οχημάτων, η Apple μπορεί να συλλέγει τις ακόλουθες πληροφορίες:\n\n• Αν μια στάση φόρτισης μπαταρίας προστέθηκε στη διαδρομή σας\n• Αν εξαντλήθηκε η μπαταρία σε κάποιο τμήμα της διαδρομής σας\n• Το υπολειπόμενο ποσοστό φόρτισης της μπαταρίας\n• Την τρέχουσα χωρητικότητα μπαταρίας και τη μέγιστη χωρητικότητα μπαταρίας του οχήματός σας\n• Τη διάρκεια φόρτισης της μπαταρίας του αυτοκινήτου σε μια στάση φόρτισης μπαταρίας στη διαδρομή σας\n• Την υπολειπόμενη εμβέλεια μετακίνησης και τη μέγιστη εμβέλεια του οχήματός σας\n• Δεδομένα για την κατανάλωση ενέργειας του οχήματός σας\n• Πληροφορίες για τη διαδρομή σας, συμπεριλαμβανομένου του αναμενόμενου χρόνου μετάβασης στον προορισμό σας\n\nΑυτές οι πληροφορίες θα επιτρέψουν στην Apple να αξιολογήσει καλύτερα την ακρίβεια των εκτιμήσεων φόρτισης μπαταρίας. Η Apple θα διατηρεί αυτά τα δεδομένα μόνο σε ανώνυμη μορφή με σκοπό τη βελτίωση της Δρομολόγησης ηλεκτρικών οχημάτων και άλλων προϊόντων και υπηρεσιών της που βασίζονται σε τοποθεσία. Αν θέλετε να απενεργοποιήσετε τη Βελτίωση δρομολόγησης ηλεκτρικών οχημάτων ανά πάσα στιγμή, μεταβείτε στις «Ρυθμίσεις» > «Εφαρμογές» > «Χάρτες» > «Βελτίωση δρομολόγησης ηλεκτρικών οχημάτων»."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si vous choisissez d’activer « Améliorer les itinéraires pour VE », Apple pourra recueillir les informations suivantes :\n\n• tout ajout à votre itinéraire d’un arrêt de recharge de batterie;\n• toute panne de batterie pendant n’importe quelle étape de votre itinéraire;\n• le pourcentage restant de votre batterie;\n• la capacité actuelle et la capacité maximale de la batterie de votre véhicule;\n• la durée de recharge de votre véhicule à une borne de recharge donnée sur votre itinéraire;\n• la distance maximale que votre véhicule peut parcourir ainsi que celle qu’il peut parcourir en fonction de la charge restante;\n• les données sur la consommation d’énergie de votre véhicule;\n• les informations sur votre itinéraire, y compris la durée estimée du trajet jusqu’à votre destination.\n\nCela permettra à Apple de mieux évaluer la précision de nos estimations de la charge de la batterie. Apple conservera ces données d’une façon exclusivement anonyme pour améliorer les itinéraires pour VE ainsi que d’autres produits et services qui utilisent la localisation. Vous pouvez à tout moment désactiver « Améliorer les itinéraires pour VE » en accédant à Réglages > Apps > Plans > Améliorer les itinéraires pour VE."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إذا اخترت تمكين تحسين تحديد طريق السيارة الكهربائية، فقد تجمع Apple المعلومات التالية:\n\n• إذا أُضيف التوقف في محطة لشحن البطارية إلى مسارك\n• إذا نفدت بطاريتك أثناء أي جزء من مسارك\n• نسبة الشحن المتبقية في بطاريتك\n• القدرة الحالية لبطارية السيارة والقدرة القصوى للبطارية\n• المدة التي ستستغرقها سيارتك للشحن عند التوقف في محطة معينة لشحن البطارية على مسارك\n• مدى مسافة التنقل المتبقية وأقصى مدى لسيارتك\n• بيانات حول استهلاك سيارتك للطاقة\n• معلومات عن مسارك، بما في ذلك الوقت المتوقع للتنقل إلى وجهتك\n\nسيتيح هذا لـ Apple تقييم دقة تقديرات شحن البطارية بشكل أفضل. ستحتفظ Apple بهذه البيانات فقط دون ربطها بهويتك لتحسين تحديد طريق السيارة الكهربائية ومنتجات وخدمات Apple الأخرى المستندة إلى الموقع. يمكنك إيقاف تحسين تحديد طريق السيارة الكهربائية في أي وقت من خلال الانتقال إلى الإعدادات > التطبيقات > الخرائط > تحسين تحديد طريق السيارة الكهربائية."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "若你選擇啟用「改進電動車路線」，Apple可能會收集以下資訊：\n\n• 是否將電池充電站加入了你的路線\n• 你的電池是否在路線的任一部分中耗盡\n• 電池剩餘的電量百分比\n• 你車輛目前的電池電量和最大電池電量\n• 在路線上指定的充電站中，你的車輛將花費多少時間來充電\n• 車輛剩餘的行駛距離和最遠距離\n• 車輛能源消耗的相關資料\n• 路線的相關資訊，包含抵達目的地的預期路程時間\n\n這能讓Apple更好地評估我們對於電池電量估算的準確性。Apple將僅以匿名的形式保留此項資料，以改進「電動車路線」和其他Apple基於位置的產品與服務。你可以隨時前往「設定」> App >「地圖」>「改進電動車路線」來關閉「改進電動車路線」。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "如你選擇啟用「改進電動車路線」，Apple可能會收集以下資料：\n\n• 是否在路線中加入了電池充電站\n• 你的電池是否在路線的任何部份中沒電\n• 電池剩餘電量百分比\n• 你車輛目前的電池電量以及最大電池電量\n• 在路線中提供的電池充電站中，你的車輛將花費多長時間充電\n• 車輛的剩餘行駛距離和最高行駛距離\n• 有關車輛能源消耗的資料\n• 有關路線（包括前往目的地的預計路程時間）的資料\n\n這將讓Apple能夠更好地評估我們電池電量估計的準確度。Apple將只會以匿名方式保留此資料，從而改進電動車路線和其他Apple基於位置的產品和服務。你可以隨時透過前往「設定」> App >「地圖」>「改進電動車路線」來關閉「改進電動車路線」。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om du väljer att aktivera Förbättra EV-navigering kan Apple samla in följande information:\n\n• Om ett batteriladdningsstopp lades till i rutten.\n• Om batteriet tog slut under någon del av rutten.\n• Batteriets återstående laddning i procent.\n• Ditt fordons aktuella batterikapacitet och dess maximala batterikapacitet.\n• Hur lång tid batteriet tar att ladda vid ett givet batteriladdningsstopp längs rutten.\n• Fordonets återstående resräckvidd och maximala räckvidd.\n• Data om fordonets energiförbrukning.\n• Information om din rutt, inklusive den förväntade restiden till målplatsen.\n\nDetta gör det möjligt för Apple att bättre utvärdera noggrannheten hos våra uppskattade behov av batteriladdning. Apple sparar dessa data endast i anonym form för att förbättra EV-navigering och andra platsbaserade produkter och tjänster från Apple. Du kan när som helst stänga av Förbättra EV-navigering genom att öppna Inställningar > Appar > Kartor > Förbättra EV-navigering."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hvis du velger å aktivere Forbedre navigering for elbil, kan Apple velge å samle inn følgende informasjon:\n\n• eventuelle ladestopp som legges inn i ruten\n• om batteriet går tomt i løpet av turen\n• gjenværende batteritid\n• kjøretøyets nåværende og maksimale batterikapasitet\n• hvor lang tid det vil ta å lade opp bilen på et ladestopp langs ruten\n• gjenværende og maksimal rekkevidde for kjøretøyet\n• data om bilens strømbruk\n• informasjon om ruten, inkludert forventet reisetid til målet\n\nDette gjør det mulig for Apple å bli bedre på å beregne batterilading. Apple oppbevarer dataene anonymt for å forbedre navigering for elbil og andre posisjonsbaserte Apple-produkter og -tjenester. Du kan slå av Forbedre navigering for elbil når som helst ved å gå til Innstillinger > Apper > Kart > Forbedre navigering for elbil."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "यदि आप “EV रूटिंग बेहतर करें” को सक्षम करना चाहते हैं, तो Apple द्वारा निम्नलिखित जानकारी एकत्र की जा सकती है :\n\n• क्या आपके रूट में बैटरी चार्ज स्टॉप जोड़ा गया था\n• क्या आपके रूट के किसी भी हिस्से के दौरान आपकी बैटरी समाप्त हो गई थी\n• आपकी बैटरी का बचा हुआ प्रतिशत\n• आपके वाहन की वर्तमान बैटरी क्षमता और अधिकतम बैटरी क्षमता\n• आपके रूट पर किसी विशेष बैटरी चार्ज स्टॉप पर आपके वाहन को चार्ज होने में कितना समय लगेगा\n• बाक़ी बची यात्रा रेंज और आपके वाहन की अधिकतम रेंज\n• आपके वाहन के ऊर्जा उपभोग के बारे में डेटा\n• आपके रूट के बारे में जानकारी, आपकी मंज़िल तक के अनुमानित यात्रा समय सहित\n\nइससे Apple हमारे बैटरी चार्ज के अनुमानों की सटीकता का बेहतर मूल्यांकन कर पाएगा। Apple इस डेटा को अनाम रूप में केवल EV रूटिंग और अन्य Apple स्थान आधारित उत्पाद और सेवा को बेहतर करने के लिए रखेगा। आप किसी भी समय सेटिंग्ज़ > ऐप्स > नक़्शा > EV रूटिंग बेहतर करें पर जाकर EV रूटिंग बेहतर करें को बंद कर सकते हैं।"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jeśli zdecydujesz się włączyć opcję Ulepszanie (Trasy dla pojazdów elektrycznych), Apple może gromadzić następujące dane:\n\n• jeśli do trasy dodany został przystanek ze stacją ładowania akumulatorów,\n• jeśli Twój akumulator wyczerpał się podczas dowolnej części trasy,\n• pozostały procent naładowania akumulatora,\n• bieżąca i maksymalna pojemność akumulatora,\n• czas ładowania pojazdu na danym przystanku ze stacją ładowania akumulatorów na trasie,\n• pozostały i maksymalny zasięg pojazdu,\n• dane dotyczące zużycia energii przez Twój pojazd,\n• Informacje o trasie, w tym oczekiwany czas podróży do celu.\n\nUmożliwi to firmie Apple lepszą ocenę dokładności naszych szacunków poziomu naładowania akumulatora. Apple zachowa te dane wyłącznie w formie anonimowej na potrzeby ulepszania funkcji Trasy dla pojazdów elektrycznych oraz innych produktów i usług Apple opartych na położeniu. Funkcję Ulepszanie (Trasy dla pojazdów elektrycznych) możesz wyłączyć w dowolnym momencie, przechodząc do Ustawień i stukając w Aplikacje > Mapy > Ulepszanie (Trasy dla pojazdów elektrycznych)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "If you choose to enable Improve EV Routing, Apple may collect the following information:\n\n• If a battery charge stop was added to your route\n• If your battery died during any portion of your route\n• The remaining percentage of your battery\n• Your vehicle’s current battery capacity and maximum battery capacity\n• How long your vehicle will take to charge at a given battery charge stop on your route\n• The remaining travel range and maximum range of your vehicle\n• Data about your vehicle’s energy consumption\n• Information about your route, including the expected travel time to your destination\n\nThis will enable Apple to better evaluate the accuracy of our battery charge estimations. Apple will retain this data only in anonymous form to improve EV Routing and other Apple location-based products and services. You can turn off Improve EV Routing at any time by going to Settings > Apps > Maps > Improve EV Routing."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hvis du vælger at aktivere Gør Vejvisning med elkøretøj bedre, kan Apple indsamle følgende oplysninger:\n\n• Om der blev føjet en batteriladestation til din rute\n• Om dit batteri løb tør under en del af din rute\n• Den resterende procentdel af dit batteri\n• Køretøjets aktuelle batterikapacitet og maksimale batterikapacitet\n• Hvor lang tid det tager for dit køretøj at oplade ved en given batteriladestation på din rute\n• Køretøjets resterende rækkevidde og maksimale rækkevidde\n• Oplysninger om køretøjets energiforbrug\n• Oplysninger om ruten, herunder den forventede rejsetid til din destination\n\nDette giver Apple bedre mulighed for at vurdere, hvor nøjagtige vores estimater om batteriopladning er. Apple opbevarer kun disse data i et anonymt format med henblik på at forbedre Vejvisning med elkøretøj og andre af Apples lokalitetsbaserede produkter og tjenester. Du kan altid slå Vejvisning med elkøretøj fra ved at gå til Indstillinger > Apps > Kort > Gør Vejvisning med elkøretøj bedre."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si actives lʼopció per millorar la navegació per a vehicles elèctrics, Apple podrà recopilar la informació següent:\n\n• Si sʼha inclòs una estació de recàrrega a la ruta.\n• Si sʼha acabat la bateria en un tram de la ruta.\n• El percentatge de bateria restant.\n• La capacitat actual de la bateria del vehicle i la capacitat màxima de la bateria.\n• El temps que el vehicle trigarà a recarregar‑se en una estació de recàrrega determinada de la ruta.\n• Lʼautonomia màxima del vehicle i la que li queda actualment.\n• Dades sobre lʼenergia que consumeix el vehicle.\n• Informació sobre la teva ruta, incloent‑hi el temps de viatge estimat per arribar a la teva destinació.\n\nDʼaquesta manera, Apple podrà avaluar millor si les estimacions sobre la càrrega de la bateria són correctes. Apple conservarà aquestes dades només de manera anònima per millorar la navegació per a vehicles elèctrics i altres productes dʼApple basats en la ubicació. Pots desactivar la millora de la navegació per a vehicles elèctrics en qualsevol moment a lʼapp Configuració > Apps > Mapes > Millora la navegació per a vehicles elèctrics."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ถ้าคุณเลือกเปิดใช้งานปรับปรุงเส้นทาง EV Apple อาจเก็บรวบรวมข้อมูลต่อไปนี้:\n\n• มีการเพิ่มจุดแวะชาร์จแบตเตอรี่ไปยังเส้นทางของคุณหรือไม่\n• แบตเตอรี่ของคุณหมดที่ส่วนใดส่วนหนึ่งของเส้นทางหรือไม่\n• แบตเตอรี่ที่เหลืออยู่กี่เปอร์เซ็นต์\n• ความจุปัจจุบันและความจุสูงสุดของแบตเตอรี่ของยานพาหนะของคุณ\n• ยานพาหนะใช้เวลานานเท่าใดในการชาร์จที่จุดแวะชาร์จแบตเตอรี่ที่กำหนดบนเส้นทางของคุณ\n• ระยะการเดินทางที่เหลือและระยะการเดินทางสูงสุดของยานพาหนะของคุณ\n• ข้อมูลเกี่ยวกับการใช้พลังงานของยานพาหนะของคุณ\n• ข้อมูลเกี่ยวกับเส้นทางของคุณรวมทั้งระยะเวลาที่คาดว่าจะถึงปลายทางของคุณ\n\nการเก็บข้อมูลเหล่านี้จะช่วยให้ Apple สามารถประเมินความแม่นยำของระยะเวลาการชาร์จแบตเตอรี่โดยประมาณได้ดีขึ้น Apple จะเก็บข้อมูลนี้แบบไม่ระบุชื่อเท่านั้นเพื่อปรับปรุงเส้นทาง EV รวมถึงผลิตภัณฑ์และบริการตามตำแหน่งที่ตั้งอื่นๆ ของ Apple คุณสามารถปิดใช้การปรับปรุงเส้นทาง EV ได้ตลอดเวลาโดยไปที่การตั้งค่า > แอป > แผนที่ > ปรับปรุงเส้นทาง EV"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "如果你选择启用“改进电动汽车路线”，Apple可能会收集以下信息：\n\n• 是否在路线中添加了电池充电站\n• 电池电量是否在路线中的任何地方耗尽\n• 电池的剩余电量百分比\n• 车辆的当前电池容量和最大电池容量\n• 在路线中指定的充电站，车辆需要多长时间进行充电\n• 车辆的剩余续航里程和最大里程\n• 有关车辆能耗的数据\n• 路线的相关信息，包括前往目的地的预计行程时间\n\n这些信息将允许Apple更好地评估电池预计充电时间的准确性。Apple仅以匿名方式保留此数据以改进电动汽车路线和其他基于位置的Apple产品和服务。你可以前往“设置”> App >“地图”>“改进电动汽车路线”来随时关闭“改进电动汽车路线”。"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "If you choose to enable Improve EV Routing, Apple may collect the following information:\n\n• If a battery charge stop was added to your route\n• If your battery died during any portion of your route\n• The remaining percentage of your battery\n• Your vehicle’s current battery capacity and maximum battery capacity\n• How long your vehicle will take to charge at a given battery charge stop on your route\n• The remaining travel range and maximum range of your vehicle\n• Data about your vehicle’s energy consumption\n• Information about your route, including the expected travel time to your destination\n\nThis will enable Apple to better evaluate the accuracy of our battery charge estimations. Apple will retain this data only in anonymous form to improve EV Routing and other Apple location-based products and services. You can turn off Improve EV Routing at any time by going to Settings > Apps > Maps > Improve EV Routing."
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jei įjungsite funkciją „Elektromobilių maršruto parinkimo tobulinimas“, „Apple“ gali rinkti šią informaciją:\n\n• Jei į maršrutą buvo įtraukta akumuliatoriaus įkrovimo stotelė\n• Jei kurioje nors maršruto dalyje išsikrovė akumuliatorius\n• Akumuliatoriaus įkrovos lygis procentais\n• Transporto priemonės dabartinė akumuliatoriaus talpa ir didžiausia akumuliatoriaus talpa\n• Kiek laiko reikės transporto priemonei įkrauti maršrute nurodytoje akumuliatorių įkrovimo stotelėje\n• Likęs nuvažiuoti atstumas ir didžiausias galimas transporto priemone nuvažiuoti atstumas\n• Duomenys apie transporto priemonės energijos suvartojimą\n• Informacija apie jūsų maršrutą, įskaitant numatomą kelionės į paskirties vietą trukmę\n\nTai leis bendrovei „Apple“ geriau įvertinti akumuliatoriaus įkrovos įverčių tikslumą. „Apple“ saugos šiuos duomenis tik anonimine forma, kad galėtų patobulinti „Elektromobilių maršruto parinkimą“ bei kitus vietos duomenis naudojančius „Apple“ produktus ir paslaugas. Funkciją „Elektromobilių maršruto parinkimo tobulinimas“ galite bet kada išjungti pasirinkę „Nustatymai“ > „Programos“ > „Žemėlapiai“ > „Elektromobilių maršruto parinkimo tobulinimas“."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si optas por activar Mejorar las rutas para vehículos eléctricos, Apple puede recopilar la siguiente información:\n\n• Si agregaste una parada para cargar la batería a tu ruta.\n• Si la batería se agotó durante cualquier parte de tu ruta.\n• El porcentaje de batería restante\n• La capacidad máxima de la batería de tu vehículo y su estado actual\n• El tiempo de carga en una parada para cargar la batería en tu ruta\n• El rango máximo de tu vehículo y el rango de viaje restante\n• Datos sobre el consumo de energía de tu vehículo\n• Información sobre tu ruta, que puede incluir el cálculo de la duración del viaje hasta tu destino\n\nLa recopilación de esta información permitirá a Apple evaluar mejor la exactitud de nuestras estimaciones de carga de la batería. Apple conservará estos datos sólo de tal manera que sean anónimos para mejorar Rutas para vehículos eléctricos y otros productos y servicios de Apple basados en la ubicación. Puedes desactivar Mejorar las rutas para vehículos eléctricos en cualquier momento desde Configuración > Apps > Mapas > Mejorar las rutas para vehículos eléctricos."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pokud se rozhodnete zapnout Vylepšování tras elektromobilem, Apple bude moct shromažďovat následující informace:\n\n• Zda byla k vaší trase přidána zastávka na dobití\n• Zda se baterie vašeho auta někde na trase úplně vybila\n• Zbývající procenta energie v baterii\n• Aktuální a maximální kapacita baterie vašeho vozidla\n• Čas potřebný na dobití vozidla na dané zastávce na trase\n• Zbývající a maximální dojezdová vzdálenost vašeho vozidla\n• Data spotřeby energie vašeho vozidla\n• Údaje o vaší trase včetně předpokládané doby, za kterou dorazíte do cíle\n\nTyto informace umožní společnosti Apple lépe vyhodnocovat přesnost odhadů nabíjení baterie. Apple tato data uchová v anonymní podobě pro účely vytváření tras elektromobilem a další produkty a služby založené na určování polohy. Vylepšování tras pro elektromobily můžete kdykoli vypnout. Stačí otevřít Nastavení > Aplikace >Mapy > Vylepšování tras elektromobilem."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jika anda memilih untuk mendayakan Tingkatkan Penghalaan EV, Apple mungkin mengumpulkan maklumat berikut:\n\n• Jika perhentian mengecas bateri ditambah kepada laluan anda\n• Jika bateri anda mati semasa dalam perjalanan pada laluan anda\n• Baki peratusan bateri anda\n• Kapasiti bateri semasa dan kapasiti bateri maksimum kenderaan anda\n• Tempoh masa yang diperlukan untuk kenderaan anda mengecas di perhentian pengecasan bateri tertentu pada laluan anda\n• Baki jarak perjalanan dan jarak maksimum kenderaan anda\n• Data tentang penggunaan tenaga kenderaan anda\n• Maklumat tentang laluan anda, termasuk masa perjalanan yang dijangka ke destinasi anda\n\nIni membolehkan Apple untuk menilai ketepatan anggaran cas bateri kami dengan lebih baik. Apple mengekalkan data ini hanya dalam bentuk tanpa nama untuk meningkatkan Penghalaan EV dan produk serta perkhidmatan berdasarkan lokasi Apple yang lain. Anda boleh menyahaktifkan Tingkatkan Penghalaan EV pada bila-bila masa dengan pergi ke Seting > App > Peta > Tingkatkan Penghalaan EV."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ak sa rozhodnete zapnúť funkciu Vylepšovať trasy elektromobilom, spoločnosť Apple bude môcť zhromažďovať nasledovné informácie:\n\n• Či bola na trasu pridaná zastávka na dobitie batérie.\n• Či kdekoľvek na trase došlo k úplnému vybitiu batérie.\n• Zostávajúcu úroveň nabitia batérie v percentách.\n• Aktuálna a maximálna kapacita batérie vášho vozidla.\n• Ako dlho bude trvať nabíjanie vozidla na vybranej nabíjacej stanici na trase.\n• Aktuálny a maximálny dojazd vášho vozidla.\n• Dáta týkajúce sa spotreby energie vozidla.\n• Informácie o vašej trase vrátane očakávaného času cesty do cieľa.\n\nTieto informácie pomôžu spoločnosti Apple lepšie vyhodnocovať presnosť odhadov týkajúcich sa úrovne nabitia batérie. Spoločnosť Apple tieto informácie uchová v anonymnej podobe na vylepšovanie trás elektromobilom a ďalších polohovo orientovaných služieb a produktov spoločnosti Apple. Funkciu Vylepšovať trasy elektromobilom môžete kedykoľvek vypnúť v Nastavenia > Apky > Mapy > Vylepšovať trasy elektromobilom."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ако изберете да активирате Подобряването на маршрути за електромобили, Apple може да събира следната информация:\n\n• Ако спирка за зареждане на батерията е добавена към вашия маршрут\n• Ако батерията ви се изтощи по време на някой участък от вашия маршрут\n• Оставащите проценти заряд на батерията\n• Настоящият капацитет на батерията на вашия автомобил и максималният капацитет на батерията\n• Колко време ще отнеме да се зареди вашият атомобил на дадена спирка за зареждане на батерията от вашия маршрут\n• Оставащият обсег на пътуване и максималният обсег на вашето превозно средство\n• Данни за консумацията на енергия на превозното средство\n• Информация за вашия маршрут, включително очакваното време за пътуване до вашата дестинация\n\nТака Apple ще изчислява по-добре точността на измерванията ни за зареждане на батерията. Apple ще задържи тези данни анонимно, за да подобри маршрутите за електромобили и други продукти и услуги на Apple, основаващи се на местоположението. По всяко време можете да изключите Подобряването на маршрути за електромобили, като отидете в Настройки > Приложения > Карти > Подобряване на маршрути за електромобили."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Če vklopite možnost Izboljšanje usmerjanja za električna vozila, lahko Apple zbira naslednje informacije:\n\n• če je bil vaši poti dodan postanek za polnjenje baterije\n• če se je na kateremkoli delu vaše poti baterija izpraznila\n• preostali odstotek vaše baterije\n• trenutna zmogljivost baterije vašega vozil in največja zmogljivost baterije\n• kako dolgo bo trajalo, da se vaše vozilo napolni na določenem postanku za polnjenje baterije na vaši poti\n• preostali potovalni doseg in največji doseg vašega vozila\n• podatki o porabi energije vašega vozila\n• informacije o vaši poti, vključno s pričakovanim časom potovanja do cilja\n\nTo bo družbi Apple omogočilo, da bolje oceni točnost ocen polnosti vaše baterije. Apple bo ohranil te podatke le v anonimni obliki za izboljšanje usmerjanja za električna vozila in drugih izdelkov in storitev, ki temeljijo na lokaciji. Izboljšanje usmerjanja za električna vozila lahko kadarkoli onemogočite tako, da odprete Nastavitve > Aplikacije > Zemljevidi > Izboljšanje usmerjanja za električna vozila."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "If you choose to enable Improve EV Routing, Apple may collect the following information:\n\n• If a battery charge stop was added to your route\n• If your battery died during any portion of your route\n• The remaining percentage of your battery\n• Your vehicle’s current battery capacity and maximum battery capacity\n• How long your vehicle will take to charge at a given battery charge stop on your route\n• The remaining travel range and maximum range of your vehicle\n• Data about your vehicle’s energy consumption\n• Information about your route, including the expected travel time to your destination\n\nThis will enable Apple to better evaluate the accuracy of our battery charge estimations. Apple will retain this data only in anonymous form to improve EV Routing and other Apple location-based products and services. You can turn off Improve EV Routing at any time by going to Settings > Apps > Maps > Improve EV Routing."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wenn du „Routen für E-Fahrzeuge verbessern“ aktivierst, kann Apple die folgenden Informationen erfassen:\n\n• Ob ein Stopp zum Aufladen der Batterie zu deiner Route hinzugefügt wurde\n• Ob sich deine Batterie während eines Teils deiner Route entleert hat\n• Den verbleibenden Prozentsatz deiner Batterie\n• Die aktuelle Batteriekapazität und die maximale Batteriekapazität des Fahrzeugs\n• Wie lange es dauert, bis die Batterie deines Fahrzeugs bei einem bestimmten Ladestopp aufgeladen ist\n• Die verbleibende Reichweite und die maximale Reichweite des Fahrzeugs\n• Daten über den Energieverbrauch deines Fahrzeugs\n• Informationen zur Route, einschließlich der erwarteten Wegzeit zum Zielort\n\nAnhand dieser Informationen kann Apple die Genauigkeit der geschätzten Batterieladung besser auswerten. Apple wird diese Daten nur in anonymisierter Form behalten, um Routen für E-Fahrzeuge und andere ortsbasierte Produkte und Dienste zu verbessern. Du kannst „Routen für E-Fahrzeuge verbessern“ jederzeit deaktivieren, indem du „Einstellungen“ > „Apps“ > „Karten“ > „Routen für E-Fahrzeuge verbessern“ auswählst."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nếu bạn lựa chọn bật Cải thiện Tạo lộ trình EV, Apple có thể thu thập thông tin sau:\n\n• Nếu trạm sạc pin được thêm vào lộ trình của bạn\n• Nếu pin bị hết trong bất kỳ phần nào của lộ trình\n• Phần trăm còn lại của pin\n• Dung lượng pin hiện tại và dung lượng pin tối đa của xe\n• Xe của bạn sẽ mất bao nhiêu thời gian để sạc tại một trạm sạc pin cho trước trên lộ trình\n• Quãng đường di chuyển còn lại và quãng đường tối đa của xe\n• Dữ liệu về mức tiêu thụ năng lượng của xe\n• Thông tin về lộ trình của bạn, bao gồm thời gian di chuyển dự kiến tới điểm đến của bạn\n\nViệc này sẽ cho phép Apple đánh giá tốt hơn tính chính xác của các ước tính về điện tích pin. Apple sẽ chỉ lưu giữ dữ liệu này ở dạng ẩn danh để cải thiện Tạo lộ trình EV cũng như các sản phẩm và dịch vụ khác dựa trên vị trí của Apple. Bạn có thể tắt Cải thiện Tạo lộ trình EV bất kỳ lúc nào bằng cách đi tới Cài đặt > Ứng dụng > Bản đồ > Cải thiện Tạo lộ trình EV."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si activas “Mejorar la navegación para vehículos eléctricos”, Apple puede recopilar la información siguiente:\n\n• si se ha añadido a la ruta alguna parada de carga de la batería;\n• si se ha agotado la batería en algún punto de la ruta;\n• el porcentaje de carga que queda en la batería;\n• la capacidad de carga máxima de tu vehículo y la actual;\n• cuánto tiempo tardará el vehículo en recargarse en una determinada parada para cargar la batería en la ruta;\n• la autonomía de viaje máxima de tu vehículo y la que le queda actualmente;\n• información sobre el consumo de energía del vehículo.\n• información sobre tu ruta, incluido el tiempo de trayecto estimado para llegar a tu destino.\n\nEsto permitirá a Apple realizar una evaluación más precisa sobre las estimaciones de carga de la batería. Apple solo conservará esta información de manera anónima, con el fin de mejorar las rutas en coche eléctrico y otros productos y servicios de Apple basados en la localización. Si quieres desactivar la función “Mejorar la navegación para vehículos eléctricos”, puedes hacerlo en cualquier momento en Ajustes > Apps > Mapas > Mejorar la navegación para vehículos eléctricos."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Якщо ви ввімкнете «Покращення маршрутів для електромобілів», Apple може збирати таку інформацію:\n\n• Чи додано до вашого маршруту зупинку для заряджання акумулятора\n• Чи розрядився акумулятор на будь-якій ділянці вашого маршруту\n• Залишок заряду акумулятора\n• Дані про поточну ємність акумулятора й максимальну ємність акумулятора вашого автомобіля\n• Скільки часу автомобіль заряджатиметься на певній зупинці для заряджання акумулятора на вашому маршруті\n• Залишок запасу ходу та максимальний запас ходу вашого автомобіля\n• Дані про енергоспоживання вашого автомобіля\n• Дані про ваш маршрут, зокрема про очікуваний час подорожі до місця призначення\n\nЗавдяки цьому Apple зможе точніше оцінювати, на скільки вистачить заряду акумулятора. Apple зберігатиме ці дані лише в анонімній формі для покращення маршрутів для електромобілів та інших продуктів і послуг Apple, заснованих на геолокації. Можна будь-коли вимкнути функцію «Покращення маршрутів для електромобілів», перейшовши в Параметри > Програми > Карти > Покращення маршрутів для електромобілів."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "«Электрмобиль бағдарларын жақсарту» функциясын қоссаңыз, Apple компаниясы келесі ақпаратты жинауы мүмкін:\n\n• Бағдарға аккумуляторды зарядтауға арналған аялдаманың қосылғаны не қосылмағаны\n• Бағдардың бір бөлігінде аккумулятор зарядының таусылғаны не таусылмағаны\n• Аккумулятордың қалған зарядының пайызы\n• Көлік аккумуляторының ағымдағы сыйымдылығы және аккумулятордың максималды сыйымдылығы\n• Бағдарда аккумуляторды зарядтау үшін тоқтаған кезде толық зарядтау үшін кететін болжалды уақыт\n• Көлік қалған зарядпен және максималды зарядпен жүріп өтетін қашықтық\n• Көліктің энергия тұтынуы туралы деректер\n• Бағдар туралы ақпарат, оның ішінде тағайындалған жерге дейін болжалды жету уақыты\n\nБұл деректер Apple компаниясына аккумулятор зарядына қатысты болжамдардың дәлдігін анықтауға мүмкіндік береді. Apple компаниясы бұл деректерді «Электрмобиль бағдарлары» функциясын және геолокацияны пайдаланатын басқа да Apple өнімдері мен сервистерін жақсарту мақсатында тек анонимді түрде сақтайды. «Электрмобиль бағдарларын жақсарту» функциясын кез келген уақытта өшіруге болады. Ол үшін «Реттеулер» > «Қолданбалар» > «Карталар» > «Электрмобиль бағдарларын жақсарту» тармағына өтіңіз."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si vous choisissez d’activer « Améliorer les itinéraires en véhicule électrique », Apple peut recueillir les informations suivantes :\n\n• Si un arrêt pour recharger la batterie a été ajouté à votre itinéraire\n• Si votre batterie a cessé de fonctionner pendant n’importe quel tronçon de votre itinéraire\n• Le pourcentage restant de votre batterie\n• La capacité actuelle de la batterie de votre véhicule et sa capacité maximale\n• La durée de chargement nécessaire pour votre véhicule à un arrêt de recharge de batterie spécifique sur votre itinéraire\n• L’autonomie restante de votre véhicule et son autonomie maximale\n• Les données relatives à la consommation d’énergie de votre véhicule\n• Les informations liées à votre itinéraire, y compris le temps de trajet prévu jusqu’à votre destination\n\nCeci permettra à Apple de mieux évaluer la précision de nos estimations concernant la recharge de batterie. Apple conservera ces données sous forme anonyme afin d’améliorer les itinéraires en voiture électrique et d’autres produits et services d’Apple utilisant la position géographique. Vous pouvez désactiver « Améliorer les itinéraires en véhicule électrique » à tout moment en accédant à Réglages > Apps > Plans > Améliorer les itinéraires en véhicule électrique."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dacă optați să activați “Îmbunătățire Rute vehicule electrice”, Apple poate colecta următoarele informații:\n\n• Dacă la rută a fost adăugată o oprire pentru încărcarea bateriei\n• Dacă bateria s‑a consumat pe parcursul oricărei etape din rută\n• Procentul de încărcare rămasă a bateriei\n• Capacitatea curentă a bateriei și capacitatea maximă a bateriei vehiculului\n• Cât durează încărcarea vehiculului la o anumită oprire de încărcare a bateriei din cadrul rutei\n• Autonomia de drum rămasă și autonomia maximă a vehiculului\n• Date despre consumul energetic al vehiculului\n• Informații despre rută, inclusiv durata așteptată de călătorie către destinație\n\nAceste informații vor permite ca Apple să evalueze mai bine acuratețea estimărilor proprii asupra încărcării bateriei. Apple va reține aceste date doar într‑o formă anonimă, pentru a îmbunătăți funcționalitatea “Rute vehicule electrice” și alte produse și servicii Apple bazate pe localizare. Puteți dezactiva oricând “Îmbunătățire Rute vehicule electrice” accesând Configurări > Aplicații > Hărți > Îmbunătățire Rute vehicule electrice."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se você optar por ativar o Melhorar itinerários de VE, a Apple poderá coletar as seguintes informações:\n\n• Se uma parada de recarga de bateria foi adicionada à sua rota\n• Se a carga da bateria acabou durante qualquer porção da sua rota\n• A porcentagem de carga restante da bateria\n• A capacidade atual da bateria e a capacidade máxima da bateria do veículo\n• Quanto tempo o seu veículo levará para recarregar em uma parada de recarga determinada em sua rota\n• A autonomia de viagem restante e a autonomia máxima do veículo\n• Dados sobre o consumo de energia do veículo\n• Informações sobre a rota, incluindo o tempo de viagem esperado até o destino\n\nIsso permitirá que a Apple avalie melhor a precisão das estimativas de recarga da bateria. A Apple reterá tais dados somente de forma anônima a fim de melhorar os Itinerários de VE e outros produtos e serviços da Apple que se baseiam em localização. Você pode desativar o recurso Melhorar Itinerários de VE a qualquer momento em Ajustes > Apps > Mapas > Melhorar Itinerários de VE."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ako omogućite značajku Poboljšanje ruta EV-a, Apple može prikupiti sljedeće podatke:\n\n• Je li na vašoj ruti dodano zaustavljanje za punjenje baterije\n• Je li vam se baterija ispraznila na bilo kojem dijelu rute\n• Preostali postotak vaše baterije\n• Trenutačni kapacitet baterije vašeg vozila i maksimalni kapacitet baterije\n• Koliko će vozilu trebati da se napuni pri određenom zaustavljanju radi punjenja baterije na vašoj ruti\n• Preostali domet putovanja i maksimalni domet vašeg vozila\n• Podaci o potrošnji energije vašeg vozila\n• Informacije o ruti, uključujući očekivano trajanje putovanja do odredišta\n\nTo će tvrtki Apple omogućiti bolju točnost procjena napunjenosti baterije. Apple će zadržati ove podatke samo u anonimnom obliku radi poboljšanja rute EV-a i ostalih Appleovih proizvoda i usluga temeljenih na lokaciji. Značajku Poboljšanje ruta EV-a možete u bilo kojem trenutku isključiti tako da otvorite Postavke > Aplikacije > Karte > Poboljšanje ruta EV-a."
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "If you choose to enable Improve EV Routing, Apple may collect the following information:\n\n• If a battery charge stop was added to your route\n• If your battery died during any portion of your route\n• The remaining percentage of your battery\n• Your vehicle’s current battery capacity and maximum battery capacity\n• How long your vehicle will take to charge at a given battery charge stop on your route\n• The remaining travel range and maximum range of your vehicle\n• Data about your vehicle’s energy consumption\n• Information about your route, including the expected travel time to your destination\n\nThis will enable Apple to better evaluate the accuracy of our battery charge estimations. Apple will retain this data only in anonymous form to improve EV Routing and other Apple location-based products and services. You can turn off Improve EV Routing at any time by going to Settings > Apps > Maps > Improve EV Routing."
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se optar por ativar Melhorar itinerários para VE, a Apple poderá recolher as seguintes informações:\n\n• se uma paragem para carregamento da bateria foi adicionada ao itinerário;\n• se a bateria ficou sem carga durante qualquer parte do itinerário;\n• a percentagem restante de bateria;\n• a capacidade atual e a capacidade máxima da bateria do veículo;\n• quanto tempo o veículo demorará a carregar numa determinada paragem no itinerário para carregamento da bateria;\n• a autonomia restante e a autonomia máxima do veículo;\n• dados sobre o consumo energético do veículo;\n• informação sobre o seu itinerário, incluindo o tempo de viagem previsto até chegar ao destino.\n\nDesta forma, a Apple poderá avaliar melhor a exatidão das estimativas de carga de bateria. A Apple manterá estes dados apenas em formato anónimo para melhorar a funcionalidade Itinerários para VE e outros produtos e serviços baseados na localização. Pode desativar Melhorar itinerários para VE em qualquer altura, em Definições > Aplicações > Mapas > Melhorar itinerários para VE."
+          }
+        }
+      }
+    },
+    "SPLASH_SHORT_TITLE": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "電気自動車経路を改善"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "שיפור המסלול עם רכב חשמלי"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "전기차 경로 향상하기"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tingkatkan Perutean EV"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paranna sähkö­ajoneuvo­reittejä"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "EV Navigasyonunu İyileştir"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verbeter EV-routes"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Маршруты для электромобилей"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elektromosautó-útvonaltervezés továbbfejlesztése"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Migliora itinerari VE"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar las rutas para vehículos eléctricos"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Βελτίωση δρομολόγησης ηλεκτρικών οχημάτων"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Améliorer les itinéraires pour VE"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تحسين تحديد طريق السيارة الكهربائية"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "改進電動車路線"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "改善電動車路線"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Förbättra EV-navigering"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forbedre navigering for elbil"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "EV रूटिंग बेहतर बनाएँ"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ulepszanie (Trasy dla pojazdów elektrycznych)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve EV Routing"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gør Vejvisning med elkøretøj bedre"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Millora de la navegació per a vehicles elèctrics"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ปรับปรุงเส้นทาง EV"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "改进电动汽车路线"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve EV Routing"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elektromobilių maršruto parinkimo tobulinimas"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar las rutas para vehículos eléctricos"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vylepšování tras elektromobilem"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tingkatkan Penghalaan EV"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vylepšovanie trás elektromobilom"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Подобряване на маршрути за електромобили"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Izboljšanje usmerjanja za električna vozila"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve EV Routing"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Routen für E-Fahrzeuge verbessern"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cải thiện Tạo lộ trình EV"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar la navegación para vehículos eléctricos"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Покращення маршрутів для електромобілів"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Электрмобиль бағдарларын жақсарту"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Améliorer les itinéraires en véhicule électrique"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Îmbunătățire Rute vehicule electrice"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Melhorar Itinerários de VE"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poboljšanje ruta EV-a"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve EV Routing"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Melhorar itinerários para VE"
+          }
+        }
+      }
+    },
+    "SPLASH_SUMMARY": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“電気自動車経路を改善”はあなたの個人情報を保護するように設計され、どの情報を共有するかを選択できるようになっています。"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "״שיפור המסלול עם רכב חשמלי״ תוכנן באופן שמגן על המידע שלך ומאפשר לך לבחור מה לשתף ומה לא לשתף."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "전기차 경로 향상하기는 사용자의 정보를 보호하도록 설계되었으며 공유할 내용을 사용자가 선택할 수 있습니다."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tingkatkan Perutean EV dirancang untuk melindungi informasi Anda dan memungkinkan Anda untuk memilih apa yang Anda bagikan."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paranna sähköajoneuvoreittejä on suunniteltu niin, että tietosi ovat turvassa. Voit itse valita, mitä haluat jakaa."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "EV Navigasyonunu İyileştir, bilgilerinizi koruyacak ve neleri paylaşacağınızı seçmenizi sağlayacak şekilde tasarlanmıştır."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verbeter EV-routes is ontwikkeld om je gegevens te beschermen en om je te laten bepalen wat je deelt."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ваши данные, используемые для улучшения электромаршрутов, надежно защищены, и только Вы решаете, чем поделиться."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Az Elektromosautó-útvonaltervezés továbbfejlesztését úgy tervezték, hogy megvédje az Ön információit, és lehetővé tegye, hogy Ön kiválassza, mit oszt meg."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La funzionalità “Migliora itinerari VE” è concepita in modo da proteggere le tue informazioni e consentirti di scegliere i contenuti da condividere."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar las rutas para vehículos eléctricos se diseñó para proteger tu información y permitirte elegir lo que compartes."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Η Βελτίωση δρομολόγησης ηλεκτρικών οχημάτων έχει σχεδιαστεί με τρόπο που προστατεύει τις πληροφορίες σας και σας δίνει τη δυνατότητα να επιλέγετε τα δεδομένα προς κοινοποίηση."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La fonction « Améliorer les itinéraires pour VE » est conçue pour protéger vos informations et vous permettre de choisir ce que vous souhaitez partager."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "صُمِّم تحسين تحديد طريق السيارة الكهربائية لحماية معلوماتك وتمكينك من اختيار ما تريد مشاركته."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "「改進電動車路線」的設計可保護你的資訊並讓你選擇分享的內容。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "「改善電動車路線」的設計可保護你的資料並讓你選擇分享內容。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Förbättra EV-navigering har utformats för att skydda din information och låta dig välja vad du vill dela."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forbedre navigering for elbil beskytter informasjonen din og lar deg velge hva du vil dele."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "EV रूटिंग बेहतर बनाएँ को आपकी जानकारी की सुरक्षा के लिए डिज़ाइन किया गया है और आप क्या शेयर करते हैं यह चुनने में आपको सक्षम करता है।"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funkcja Ulepszanie (Trasy dla pojazdów elektrycznych) została zaprojektowana z myślą o ochronie Twoich danych i pozwala Ci decydować o ich udostępnianiu."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve EV Routing is designed to protect your information and enable you to choose what you share."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gør Vejvisning med elkøretøj bedre er udviklet til at beskytte dine oplysninger og give dig mulighed for at vælge, hvad du vil dele."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La funció de millora de navegació per a vehicles elèctrics s’ha dissenyat per protegir la teva informació i perquè puguis decidir què vols compartir."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ปรับปรุงเส้นทาง EV ได้รับการออกแบบมาเพื่อปกป้องข้อมูลของคุณและทำให้คุณสามารถเลือกสิ่งที่คุณจะแชร์ได้"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "改进电动汽车路线旨在保护你的信息并可让你选择要共享的内容。"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve EV Routing is designed to protect your information and enable you to choose what you share."
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funkcija „Elektromobilių maršruto parinkimo tobulinimas“ sukurta taip, kad apsaugotų jūsų informaciją ir leistų jums patiems pasirinkti, kokią informaciją norite bendrinti."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar las rutas para vehículos eléctricos se diseñó para proteger tu información y permitirte elegir lo que compartes."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vylepšování tras elektromobilem chrání vaše osobní údaje a ponechává vám kontrolu nad tím, co sdílíte."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tingkatkan Penghalaan EV direka bentuk untuk melindungi maklumat anda dan membolehkan anda memilih perkara yang anda kongsi."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funkcia Vylepšovať trasy elektromobilom chráni vaše osobné údaje a ponecháva vám plnú kontrolu nad tým, čo zdieľate."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Подобряването на маршрути за електромобили е създадено да защитава вашата информация и да ви позволи да избирате какво да споделяте."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Izboljšanje usmerjanja za električna vozila je zasnovano tako, da varuje vaše podatke in vam omogoča, da izberete, kaj boste delili."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve EV Routing is designed to protect your information and enable you to choose what you share"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„Routen für E-Fahrzeuge verbessern“ ist dafür konzipiert, deine Daten zu schützen, und du kannst auswählen, was du teilst."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cải thiện Tạo lộ trình EV được thiết kế để bảo vệ thông tin của bạn và cho phép bạn chọn nội dung chia sẻ."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La función “Mejorar la navegación para vehículos eléctricos” se ha diseñado para mantener protegida tu información y para que puedas escoger lo que quieres compartir."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Функцію «Покращення маршрутів для електромобілів» спроєктовано так, щоб захищати вашу інформацію і давати вам змогу обирати, що поширювати."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "«Электрмобиль бағдарларын жақсарту» функциясы жеке ақпаратыңызды қорғайтындай және бөлісу қажет объектілерді таңдауға мүмкіндік беретіндей етіп жасалған."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Améliorer les itinéraires en véhicule électrique est conçu pour protéger vos données et vous permettre de choisir ce que vous souhaitez partager."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Opțiunea “Îmbunătățire Rute vehicule electrice” este concepută pentru a vă proteja informațiile și pentru a vă permite să alegeți ceea ce partajați."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O recurso Melhorar itinerários de VE é projetado para proteger as suas informações e permitir que você escolha os dados que compartilha."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Značajka poboljšanja ruta EV-a dizajnirana je kako bi zaštitila vaše informacije i omogućila odabir sadržaja koje želite podijeliti."
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve EV Routing is designed to protect your information and enable you to choose what you share."
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A funcionalidade Melhorar itinerários para VE foi concebida de modo a proteger a informação pessoal e permitir a cada utilizador escolher o que pretende partilhar."
+          }
+        }
+      }
+    },
+    "SPLASH_TITLE": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“電気自動車経路を改善”とプライバシー"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "״שיפור המסלול עם רכב חשמלי״ ופרטיות"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "전기차 경로 향상 및 개인정보 보호"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tingkatkan Perutean EV & Privasi"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paranna sähköajoneuvoreittejä ja tietosuoja"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "EV Navigasyonunu İyileştir ve Gizlilik"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "'Verbeter EV-routes' en privacy"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Об улучшении электромаршрутов и конфи­денциальности"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Az Elektromosautó-útvonaltervezés továbbfejlesztése és az adatvédelem"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Migliora itinerari VE e privacy"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar las rutas para vehículos eléctricos y la privacidad"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Βελτίωση δρομολόγησης ηλεκτρικών οχημάτων και απόρρητο"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Améliorer les itinéraires pour VE et confidentialité"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تحسين تحديد طريق السيارة الكهربائية والخصوصية"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "改進電動車路線與隱私權"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "改善電動車路線與私隱"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Förbättra EV-navigering och integritet"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forbedre navigering for elbil og personvern"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "EV रूटिंग को बेहतर बनाएँ और गोपनीयता"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ulepszanie (Trasy dla pojazdów elektrycznych) i prywatność"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve EV Routing & Privacy"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gør Vejvisning med elkøretøj bedre og anonymitet"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La millora de la navegació per a vehicles elèctrics i la privacitat"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ปรับปรุงเส้นทาง EV และความเป็นส่วนตัว"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "改进电动汽车路线与隐私"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve EV Routing & Privacy"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funkcija „Elektromobilių maršruto parinkimo tobulinimas“ ir privatumas"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mejorar las rutas para vehículos eléctricos y la privacidad"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vylepšování tras elektromobilem a soukromí"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tingkatkan Penghalaan EV & Privasi"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funkcia Vylepšovať trasy elektromobilom a súkromie"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Подобряване на маршрути за електромобили и поверителност"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Izboljšanje usmerjanja za električna vozila in zasebnost"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve EV Routing & Privacy"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„Routen für E-Fahrzeuge verbessern“ & Datenschutz"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cải thiện Tạo lộ trình EV & Quyền riêng tư"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“Mejorar la navegación para vehículos eléctricos” y la privacidad"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Покращення маршрутів для електромобілів і приватність"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Электрмобиль бағдарларын жақсарту және құпиялылық"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Améliorer les itinéraires en véhicule électrique et confidentialité"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“Îmbunătățire Rute vehicule electrice” și intimitatea"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Melhorar Itinerários de VE e Privacidade"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poboljšanje ruta EV-a i privatnost"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Improve EV Routing & Privacy"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Melhorar itinerários para VE e Privacidade"
+          }
+        }
+      }
+    },
+    "BUTTON_TITLE": {
+      "extractionState": "manual",
+      "localizations": {
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“電気自動車経路を改善”とプライバシーについて…"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "מידע בנושא ״שיפור המסלול עם רכב חשמלי״ ופרטיות…"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "전기차 경로 향상 및 개인정보 보호에 관하여…"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mengenai Tingkatkan Perutean EV & Privasi…"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tietoja: Paranna sähköajoneuvoreittejä ja tietosuoja…"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "EV Navigasyonunu İyileştir ve Gizlilik Hakkında…"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Over 'Verbeter EV-routes' en privacy…"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Об улучшении функции «Маршруты для электромобилей» и конфиденциальности…"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Az Elektromosautó-útvonaltervezés továbbfejlesztéséről és az adatvédelemről…"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“Migliora itinerari VE” e privacy…"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de Mejorar las rutas para vehículos eléctricos y la privacidad…"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Πληροφορίες για τη Βελτίωση δρομολόγησης ηλεκτρικών οχημάτων και το απόρρητο…"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Améliorer les itinéraires pour VE et confidentialité…"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حول تحسين تحديد طريق السيارة الكهربائية والخصوصية…"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "關於改進電動車路線與隱私權⋯"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "關於改善電動車路線與私隱⋯"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om Förbättra elbilsnavigering och integritet…"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om Forbedre navigering for elbil og personvern…"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“EV रूटिंग बेहतर बनाएँ” और गोपनीयता परिचय…"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ulepszanie (Trasy dla pojazdów elektrycznych) i prywatność…"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About Improve EV Routing & Privacy…"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om Gør Vejvisning med elkøretøj bedre og anonymitet…"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sobre la millora de la navegació per a vehicles elèctrics i la privacitat…"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เกี่ยวกับการปรับปรุงเส้นทาง EV และความเป็นส่วนตัว…"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "关于改进电动汽车路线与隐私…"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About Improve EV Routing & Privacy…"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apie „Elektromobilių maršruto parinkimo tobulinimą“ ir privatumą…"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de Mejorar las rutas para vehículos eléctricos y la privacidad…"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O vylepšování tras elektromobilem a soukromí…"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Perihal Tingkatkan Penghalaan EV & Privasi…"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O vylepšovaní trás elektromobilom a súkromí…"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "За Подобряването на маршрути за електромобили и поверителност…"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Več o izboljšanju usmerjanja za električna vozila in zasebnosti …"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About Improve EV Routing & Privacy…"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Über „Routen für E-Fahrzeuge verbessern“ & Datenschutz …"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cải thiện Tạo lộ trình EV & Quyền riêng tư…"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de “Mejorar la navegación para vehículos eléctricos” y la privacidad…"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Про Покращення маршрутів для електромобілів і приватність…"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Электрмобиль бағдарларын жақсарту және құпиялылық туралы ақпарат…"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Améliorer les itinéraires en véhicule électrique et confidentialité…"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Despre Îmbunătățire Rute vehicule electrice și intimitate…"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sobre Melhorar Itinerários de VE e Privacidade…"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Više o poboljšanju ruta EV-a i privatnosti…"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About Improve EV Routing & Privacy…"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de Melhorar itinerários para VE e Privacidade…"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}
