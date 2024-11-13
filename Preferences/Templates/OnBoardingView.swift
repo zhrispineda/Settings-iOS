@@ -49,8 +49,10 @@ struct OnBoardingView: View {
                     if isService(table: table) {
                         BulletPoint(key: bulletString(text: "FIRST_BULLET"), table: table)
                         BulletPoint(key: bulletString(text: "SECOND_BULLET"), table: table)
-                        BulletPoint(key: bulletString(text: "THIRD_BULLET"), table: table)
-                        // Check if fourth and fifth keys exist by comparing values
+                        // Check keys exist by comparing values
+                        if NSLocalizedString("THIRD_BULLET", tableName: table, comment: "") != "THIRD_BULLET" {
+                            BulletPoint(key: "THIRD_BULLET", table: table)
+                        }
                         if NSLocalizedString("FOURTH_BULLET", tableName: table, comment: "") != "FOURTH_BULLET" {
                             BulletPoint(key: "FOURTH_BULLET", table: table)
                         }

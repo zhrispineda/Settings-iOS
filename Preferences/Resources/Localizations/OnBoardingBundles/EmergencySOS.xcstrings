@@ -1,0 +1,2206 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "SPLASH_TITLE": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Emergency SOS & Privacy"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "״חירום SOS״ ופרטיות"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "긴급 구조 요청 및 개인정보 보호"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Darurat SOS & Privasi"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hätätila SOS ja tietosuoja"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acil SOS ve Gizlilik"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SOS-nood­melding en privacy"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Vészhelyzet – SOS és az adatvédelem"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Экстренный вызов — SOS и конфи­денциальность"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SOS emergenze e privacy"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Emergencia SOS y la privacidad"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Επείγον SOS και απόρρητο"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Emergència SOS i la privacitat"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Urgence SOS et confidentialité"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SOS緊急服務與隱私權"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "緊急求助SOS與私隱"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nödanrop SOS och integritet"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "आपातकालीन SOS और गोपनीयता"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alarmowe SOS i prywatność"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nød‑SOS og anonymitet"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Emergency SOS & Privacy"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "طوارئ SOS والخصوصية"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nødanrop (SOS) og personvern"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“SOS ฉุกเฉิน” และความเป็นส่วนตัว"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SOS紧急联络与隐私"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SOS signalas ir privatumas"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Emergency SOS & Privacy"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Emergencia SOS y la privacidad"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tíseň SOS a soukromí"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SOS a súkromie"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SOS Kecemasan & Privasi"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SOS обаждане и поверителност"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nujni poziv SOS in zasebnost"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Emergency SOS & Privacy"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notruf SOS & Datenschutz"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SOS khẩn cấp & Quyền riêng tư"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“Emergencia SOS” y la privacidad"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SOS de Emergência e Privacidade"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Төтенше қоңырау — SOS және құпиялылық"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Appel d’urgence et confidentialité"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сигнал SOS і приватність"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "S.O.S. urgențe și intimitatea"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hitan poziv i privatnost"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SOS emergência e Privacidade"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "緊急SOSとプライバシー"
+          }
+        }
+      }
+    },
+    "FOOTER_TEXT": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "With Emergency SOS, you can quickly and easily call for help and alert your emergency contacts. When you make a call with Emergency SOS, your device automatically calls the local emergency number. In some countries and regions, you might need to choose the service you want designated as your emergency service. To allow the call handler to assist you, this call may include your location, regardless of whether you enable Location Services. Once the call ends, you can choose to notify your emergency contacts with a message that says you have called emergency services. This message also includes your current location. You can manage your emergency contacts by editing your Medical ID in the Health app on iPhone.\n\nFor a limited period of time, your device will send updates to your emergency contacts as your location changes. You’ll receive a notification when this happens. When you use Emergency SOS on your Apple Watch, you can stop these updates by tapping Stop Sharing in the notification on your Apple Watch. When you use Emergency SOS on your iPhone, you can stop these updates by tapping the status bar on your iPhone and selecting Stop Sharing Emergency Location.\n\nIf Location Services is disabled, it will be temporarily enabled in order to notify your emergency contacts with your location. When your location is being shared, you’ll get a reminder to stop every four hours for 24 hours. If you don’t want to send your location to your emergency contacts, on your iPhone go to Settings > Privacy & Security > Location Services > System Services, and tap to turn off Emergency Calls & SOS."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "באמצעות ״חירום SOS״, באפשרותך להזעיק עזרה במהירות ובקלות ולשלוח הודעה לאנשי הקשר שלך לשעת חירום. בעת ביצוע שיחה דרך ״חירום SOS״, המכשיר מתקשר באופן אוטומטי למוקד החירום המקומי. במדינות ובאזורים מסוימים, יתכן שיהיה צורך לבחור את השירות שברצונך לייעד כשירות החירום שלך. כדי לאפשר למוקדן לסייע לך, שיחה זו עשויה לכלול את מיקומך, גם אם לא הפעלת את ״שירותי מיקום״. ברגע שהשיחה תסתיים, תוכל/י לבחור ליידע את אנשי הקשר שלך לשעת חירום על-ידי שליחת הודעה המציינת שהתקשרת לשירותי החירום. בהודעה זו יופיעו גם פרטי המיקום הנוכחי שלך. ניתן לנהל את אנשי הקשר לשעת חירום על-ידי עריכת הכרטיס הרפואי שלך ביישום ״בריאות״ ב-iPhone.\n\nלמשך פרק זמן מוגבל, מכשירך ישלח עדכונים לאנשי הקשר לשעת חירום כשמיקומך ישתנה. כשזה יקרה, יתקבל אצלך עדכון. בעת שימוש ב״חירום SOS״ ב-Apple Watch, באפשרותך להפסיק את שליחת העדכונים באמצעות הקשה על האפשרות ״הפסקת השיתוף״ בעדכון שיתקבל ב-Apple Watch. בעת שימוש ב״חירום SOS״ ב-iPhone, באפשרותך להפסיק את שליחת העדכונים באמצעות הקשה על שורת המצב ב-iPhone ובחירה באפשרות ״הפסקת שיתוף מיקום מקרה החירום״.\n\nאם ביטלת את המאפיין ״שירותי מיקום״, הוא יופעל באופן זמני כדי לאפשר את שליחת פרטי המיקום שלך לאנשי הקשר שלך לשעת חירום. כאשר המיקום שלך משותף, תישלח אליך תזכורת שבאפשרותך להפסיק זאת כל ארבע שעות במשך 24 שעות. אם אינך רוצה לשלוח את מיקומך לאנשי הקשר לשעת חירום, באפשרותך לעבור ב-iPhone אל ״הגדרות״ > ״פרטיות ואבטחה״ > ״שירותי מיקום״ > ״שירותי מערכת״, ולהקיש כדי לכבות את ״שיחות חירום ו-SOS״."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "‘긴급 구조 요청’으로 빠르고 쉽게 전화를 걸어 도움을 요청하고 사용자의 긴급 연락처에 통지할 수 있습니다. ‘긴급 구조 요청’을 사용하여 전화를 걸면 사용자의 기기가 자동으로 지역 긴급 전화번호로 전화합니다. 일부 국가 및 지역에서는 사용자가 원하는 지정된 서비스를 긴급 서비스로 선택해야 합니다. 구조 차량의 배차를 위해 위치 서비스 기능의 활성화 여부와 상관없이 사용자의 위치가 통화에 포함될 수 있습니다. 통화가 종료되면 긴급 연락처에 메시지로 통지할지 선택할 수 있습니다. 메시지에는 긴급 서비스에 전화를 걸었다는 것과 사용자의 현재 위치가 포함됩니다. 긴급 연락처는 iPhone의 건강 앱에 있는 의료 정보에서 편집하고 관리할 수 있습니다.\n\n일정 시간 동안, 사용자의 위치 변동에 따라 기기에서 위치 변경을 긴급 연락처에 통지합니다. 전송이 완료되면 사용자는 알림을 받게 됩니다. Apple Watch에서 긴급 구조 요청을 사용하는 경우 업데이트 통지 전송을 중단하려면 Apple Watch의 알림에서 ‘공유 중단’을 탭하십시오. iPhone에서 긴급 구조 요청을 사용하는 경우 업데이트 통지 전송을 중단하려면 iPhone에서 상태 막대를 탭하고 ‘긴급 구조 요청 위치 공유 중단’을 선택하십시오.\n\n위치 서비스가 비활성화되어 있는 경우에는 이 기능을 일시적으로 활성화하여 사용자의 위치를 긴급 연락처에 통지합니다. 사용자의 위치가 공유 중인 경우 24시간 동안 4시간마다 위치 공유를 중단할 수 있도록 미리 알림을 받게 됩니다. 사용자의 위치를 긴급 연락처에 알리지 않으려면 iPhone에서 설정 > 개인정보 보호 및 보안 > 위치 서비스 > 시스템 서비스로 이동한 다음 ‘긴급통화 및 구조 요청’을 탭하여 끄십시오."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dengan Darurat SOS, Anda dapat memanggil bantuan serta memperingatkan kontak darurat Anda dengan cepat dan mudah. Saat Anda melakukan panggilan dengan Darurat SOS, perangkat Anda akan memanggil nomor darurat lokal secara otomatis. Di beberapa negara atau wilayah, Anda mungkin harus memilih layanan yang ingin Anda atur sebagai layanan darurat Anda. Agar dapat mengizinkan operator untuk membantu Anda, panggilan ini dapat disertai dengan lokasi Anda, terlepas dari apakah Anda mengaktifkan Layanan Lokasi atau tidak. Setelah panggilan berakhir, Anda dapat memilih untuk memberi tahu kontak darurat Anda dengan pesan yang berbunyi bahwa Anda telah memanggil layanan darurat. Pesan ini juga disertai dengan lokasi Anda saat ini. Anda dapat mengelola kontak darurat dengan mengedit ID Medis Anda di app Kesehatan di iPhone.\n\nSelama jangka waktu yang terbatas, perangkat Anda akan mengirimkan pembaruan ke kontak darurat saat lokasi Anda berubah. Anda akan menerima pemberitahuan saat ini terjadi. Saat Anda menggunakan Darurat SOS di Apple Watch, Anda dapat menghentikan pembaruan ini dengan mengetuk Berhenti Berbagi di pemberitahuan di Apple Watch Anda. Saat Anda menggunakan Darurat SOS di iPhone, Anda dapat menghentikan pembaruan ini dengan mengetuk bar status di iPhone dan memilih Berhenti Bagikan Lokasi Darurat.\n\nJika dinonaktifkan, Layanan Lokasi akan diaktifkan untuk sementara agar dapat memberi tahu kontak darurat mengenai lokasi Anda. Jika lokasi Anda sedang dibagikan, Anda akan mendapatkan pengingat untuk berhenti setiap empat jam selama 24 jam. Jika Anda tidak ingin mengirimkan lokasi ke kontak darurat, di iPhone Anda buka Pengaturan > Privasi & Keamanan > Layanan Lokasi > Layanan Sistem, dan ketuk untuk mematikan Panggilan Darurat & SOS."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hätätila SOS -toiminnon avulla voit kutsua apua ja ilmoittaa ICE-yhteyshenkilöillesi helposti ja nopeasti. Kun soitat puhelun Hätätila SOS ‑toiminnolla, laitteesi soittaa automaattisesti paikalliseen hätänumeroon. Joissakin maissa ja joillakin alueilla sinun on ehkä valittava palvelu, jonka haluat määrittää hätäpalveluksi. Hätäkeskuksen avustamiseksi puhelu saattaa sisältää sijaintitietosi, riippumatta siitä, ovatko Sijaintipalvelut päällä vai ei. Puhelun päätyttyä voit halutessasi lähettää ICE-yhteyshenkilöillesi viestin, joka kertoo heille, että olet soittanut hätäpuhelun. Viesti sisältää myös nykyisen sijaintisi. Voit hallita ICE-yhteyshenkilöitäsi iPhonen Terveys-apin SOS-tiedoissa.\n\nLaitteesi lähettää rajoitetun ajan päivityksiä ICE-yhteyshenkilöillesi sijaintisi vaihtuessa. Kun näin tapahtuu, saat ilmoituksen. Kun käytät Hätätila SOS -toimintoa Apple Watchillasi, voit lopettaa nämä päivitykset Apple Watchissa napauttamalla ilmoituksessa Lopeta jako. Kun käytät Hätätila SOS -toimintoa iPhonellasi, voit lopettaa nämä päivitykset napauttamalla iPhonen tilapalkkia ja valitsemalla Lopeta hätäsijainnin jako.\n\nJos Sijaintipalvelut eivät ole päällä, ne laitetaan väliaikaisesti päälle, jotta ICE-yhteyshenkilöt saavat tiedon sijainnistasi. Kun sijaintisi jaetaan, saat muistutuksen lopettaa 4 tunnin välein 24 tunnin ajan. Jos et halua lähettää sijaintiasi ICE-yhteyshenkilöille, valitse iPhonessa Asetukset > Tietosuoja ja suojaus > Sijaintipalvelut > Järjestelmäpalvelut ja napauta Hätäpuhelut ja SOS pois päältä."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acil durum kişilerinizi Acil SOS sayesinde hızlıca ve kolayca arayıp yardım isteyebilir ve uyarabilirsiniz. Acil SOS ile arama yaptığınızda aygıtınız otomatik olarak yerel acil servisi arar. Bazı ülkelerde ve bölgelerde acil servis olarak atamak istediğiniz servisi seçmeniz gerekebilir. Bu arama, yardım alabilmeniz için Konum Servisleri’nin etkin olup olmadığına bakmaksızın konumunuzu içerebilir. Acil servis araması sona erdiğinde, acil arama yaptığınızı belirten bir mesajı acil durum kişilerinize göndermeyi seçebilirsiniz. Bu mesaj, bulunduğunuz konumu da içerir. Acil durum kişilerinizi iPhone’daki Sağlık uygulamasının Tıbbi Kimlik bölümünde düzenleyebilirsiniz.\n\nAygıtınız, sınırlı bir süre boyunca, konumunuz değiştikçe SOS kişilerinize güncelleme gönderir. Bu gerçekleştiğinde bir bildirim alırsınız. Apple Watch’unuzda Acil SOS’i kullanırken Apple Watch’unuzun bildirimlerinde Paylaşmayı Durdur’a dokunarak bu güncellemeleri durdurabilirsiniz. iPhone’unuzda Acil SOS’i kullanırken iPhone’unuzun durum çubuğuna dokunup Acil Durum Konumumu Paylaşmayı Durdur’u seçerek bu güncellemeleri durdurabilirsiniz.\n\nKonum Servisleri etkin değilse acil durum kişilerinize konumunuzla ilgili uyarı gönderebilmek için geçici olarak etkinleştirilir. Konumunuz paylaşıldığında 24 saat boyunca her dört saatte bir paylaşmayı durdurmanız için bir anımsatıcı alırsınız. Konumunuzun acil durum kişilerinize gönderilmesini istemiyorsanız iPhone’unuzda Ayarlar > Gizlilik ve Güvenlik > Konum Servisleri > Sistem Servisleri’ne gidin ve Acil Aramalar ve SOS’i kapatmak için dokunun."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Met SOS-nood­melding kun je snel en gemakkelijk om hulp bellen en je SOS-contact­personen waarschuwen. Wanneer je SOS-nood­melding belt, belt je apparaat auto­matisch het nummer van de lokale hulp­dienst. In sommige landen en regio's moet je mogelijk de dienst kiezen die je als je hulp­dienst wilt instellen. Om ervoor te zorgen dat de centrale je kan helpen, kan je locatie worden door­gegeven, ongeacht of 'Locatie­voorzieningen' wel of niet is ingeschakeld. Na het gesprek kun je kiezen of je je SOS-contactpersonen een bericht wilt sturen dat je het alarmnummer hebt gebeld. Dit bericht bevat ook je huidige locatie. Je kunt je SOS-contactpersonen beheren via de medische ID in de app Gezondheid op je iPhone.\n\nGedurende een beperkte periode stuurt je apparaat updates aan je SOS-contactpersonen wanneer je locatie verandert. Je krijgt een melding wanneer dit gebeurt. Wanneer je SOS-noodmelding gebruikt op je Apple Watch, kun je deze updates stoppen door te tikken op 'Stop delen' in de melding op je Apple Watch. Wanneer je SOS-nood­melding gebruikt op je iPhone, kun je deze updates stoppen door op de status­balk op je iPhone te tikken en 'Stop delen van SOS-locatie' te selecteren.\n\nAls 'Locatie­voorzieningen' is uitgeschakeld, wordt dit tijde­lijk ingeschakeld om je SOS-contact­personen een melding te sturen met je locatie. Wanneer je locatie wordt gedeeld, krijg je 24 uur lang om de vier uur een herinnering om te stoppen. Als je je locatie niet naar je SOS-contactpersonen wilt sturen, ga je op je iPhone in Instellingen naar 'Privacy en beveiliging' > 'Locatievoorzieningen' > 'Systeem' en tik je om 'Noodoproepen en SOS-noodmelding' uit te schakelen."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Vészhelyzet – SOS funkcióval egyszerűen és gyorsan segítséget kérhet, és értesítést küldhet a vészhelyzetben értesítendő kontaktoknak. Ha hívást kezdeményez a Vészhelyzet – SOS funkción keresztül, az eszköze automatikusan felhívja a helyi segélyszolgálatok telefonszámát. Elképzelhető, hogy egyes országokban és régiókban ki kell választania a segélyszolgálatként megjelölni kívánt szolgáltatót. Annak érdekében, hogy a diszpécser segíthessen Önnek, a hívás tartalmazhatja az Ön helyzetét, függetlenül attól, hogy Ön engedélyezi-e a Helymeghatározást. Miután a hívás befejeződött, választhatja azt, hogy a vészhelyzetben értesítendő kontaktoknak üzenetet küld arról, hogy Ön felhívta a sürgősségi segélyszolgálatokat. Ez az üzenet tartalmazza az Ön aktuális helyzetét is. A vészhelyzetben értesítendő kontaktok az iPhone Egészség appjában található Egészségügyi azonosítóban kezelhetők.\n\nEgy korlátozott ideig az eszköze frissítéseket fog küldeni a vészhelyzetben értesítendő kontaktjainak, amikor az Ön helyzete változik. Amikor ez megtörténik, Ön értesítést fog kapni. Amikor a Vészhelyzet – SOS funkciót az Apple Watchán használja, és le szeretné tiltani ezeket a frissítéseket, akkor az Apple Watchán koppintson az értesítésben található Megosztás leállítása lehetőségre. Amikor a Vészhelyzet – SOS funkciót az iPhone-ján használja, és le szeretné tiltani ezeket a frissítéseket, akkor koppintson az iPhone-jának állapotsávjára, és válassza a Vészhelyzeti helyzet megoszt. leáll. lehetőséget.\n\nHa a Helymeghatározás ki van kapcsolva, akkor ideiglenesen engedélyezve lesz, hogy a vészhelyzetben értesítendő kontaktok értesüljenek az Ön helyzetéről. A helyzetének megosztásakor emlékeztetőt fog kapni 4 óránként 24 órán keresztül, hogy állítsa le a megosztást. Ha nem szeretné elküldeni a helyzetét a vészhelyzetben értesítendő kontaktoknak, akkor válassza az iPhone-ján a Beállítások > Adatvédelem és biztonság > Helymeghatározás > Rendszerszolgáltatások menüpontot, és koppintson a Segélyhívások és SOS funkció kikapcsolásához."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "С помощью функции «Экстренный вызов — SOS» можно быстро и легко вызвать экстренные службы и оповестить контакты на случай ЧП. Если воспользоваться функцией «Экстренный вызов — SOS», Ваше устройство автоматически направит вызов в экстренные службы. В некоторых странах и регионах может потребоваться выбрать службу, которая будет назначена экстренной. Чтобы диспетчеру было проще Вам помочь, во время звонка в экстренные службы может быть передана Ваша геопозиция независимо от того, включены ли у Вас Службы геолокации. После звонка Вы сможете отправить своим контактам на случай ЧП сообщение о том, что Вы позвонили в экстренные службы. Это сообщение будет также содержать Вашу текущую геопозицию. Вы можете указать контакты на случай ЧП в Медкарте, которая доступна в приложении «Здоровье» на iPhone.\n\nВ течение ограниченного времени Ваше устройство будет оповещать Ваши контакты на случай ЧП по мере изменения Вашей геопозиции. В этом случае Вы получите уведомление. Когда Вы используете функцию «Экстренный вызов — SOS» на Apple Watch, Вы можете остановить отправку этих обновлений, коснувшись параметра «Закрыть доступ» в уведомлении на часах Apple Watch. Когда Вы используете функцию «Экстренный вызов — SOS» на iPhone, Вы можете остановить отправку этих обновлений, коснувшись меню статуса на iPhone и выбрав параметр «Не делиться SOS‑геопозицией».\n\nЕсли Службы геолокации выключены, они будут временно включены, чтобы уведомлять Ваши контакты на случай ЧП о Вашей геопозиции. Пока Вы делитесь геопозицией, каждые 4 часа в течение суток Вы будете получать напоминания о прекращении доступа. Если Вы не хотите отправлять Вашу геопозицию контактам на случай ЧП, откройте Настройки на iPhone, с которым создана пара, коснитесь «Конфиденциальность и безопасность» > «Службы геолокации» > «Системные службы» и касанием выключите параметр «Экстренные вызовы и SOS»."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’opzione “SOS emergenze” ti consente di chiamare i soccorsi e di avvisare i tuoi contatti di emergenza in modo rapido e semplice. Quando effettui una chiamata con “SOS emergenze”, il dispositivo contatta automaticamente il servizio di emergenza locale. In alcuni paesi e zone, potresti dover scegliere quale servizio di emergenza vuoi utilizzare. Al fine di consentire ai soccorsi di assisterti, la chiamata includerà la tua posizione anche se la localizzazione non è stata attivata. Al termine della chiamata, potrai inviare un SMS di notifica ai contatti di emergenza che hai indicato per informarli di aver effettuato una telefonata ai servizi di soccorso. Il messaggio includerà anche la posizione in cui ti trovi. Puoi gestire i contatti di emergenza modificando la cartella clinica disponibile nell’app Salute su iPhone.\n\nQuando la tua posizione cambia, il tuo dispositivo invierà, per un certo lasso di tempo, informazioni di localizzazione aggiornate ai contatti di emergenza. Quando ciò si verifica, riceverai una notifica. Quando utilizzi “SOS emergenze” su Apple Watch puoi interrompere tali aggiornamenti toccando “Interrompi condivisione” nella notifica su Apple Watch. Quando utilizzi “SOS emergenze” su iPhone, puoi interrompere tali aggiornamenti toccando la barra di stato su iPhone e selezionando “Interrompi condivisione posizione”.\n\nSe la localizzazione non è abilitata, verrà abilitata temporaneamente per poter informare i tuoi contatti di emergenza riguardo al luogo in cui ti trovi. Quando la tua posizione viene condivisa, riceverai un promemoria per l’interruzione ogni 4 ore per 24 ore. Se non vuoi inviare la tua posizione ai contatti di emergenza, su iPhone vai in Impostazioni > Privacy e sicurezza > Localizzazione > Servizi di sistema e disattiva “Emergenze e SOS”."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Con Emergencia SOS, puedes pedir ayuda y alertar rápidamente a tus contactos de emergencia. Cuando haces una llamada con Emergencia SOS, tu dispositivo contacta automáticamente a los números locales de emergencia. En algunos países y regiones, podrás tener que elegir qué servicio de emergencias prefieres que se contacte. Para que quien atienda tu llamada pueda ayudarte, esta podría incluir tu ubicación sin importar si activaste Localización. Cuando la llamada termine, puedes elegir avisar a tus contactos de emergencia con un mensaje que diga que llamaste a servicios de emergencia. Dicho mensaje también incluirá tu ubicación actual. Puedes administrar tus contactos de emergencia al editar tu ficha médica en la app Salud de tu iPhone.\n\nDurante un tiempo limitado, tu dispositivo enviará actualizaciones a tus contactos de emergencia conforme cambie tu ubicación. Recibirás una notificación cuando esto suceda. Para desactivar las actualizaciones de Emergencia SOS en tu Apple Watch toca Dejar de compartir en la notificación de tu Apple Watch. Para desactivar las actualizaciones de Emergencia SOS en tu iPhone, toca la barra de estado del iPhone y selecciona Dejar de compartir la ubicación.\n\nSi Localización está desactivada, se reactivará temporalmente para compartir tu ubicación con tus contactos de emergencia. Cuando se comparte tu ubicación, recibirás un recordatorio para dejar de hacerlo cada cuatro horas en un periodo de 24 horas. Para impedir que se envíe tu ubicación a tus contactos de emergencia, desactiva Llamadas de emergencia y SOS en tu iPhone enlazado en Configuración > Privacidad y seguridad > Localización > Servicios del sistema."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Χάρη στο Επείγον SOS, μπορείτε να καλέσετε γρήγορα και εύκολα για βοήθεια και να ειδοποιήσετε τις επαφές έκτακτης ανάγκης σας. Όταν κάνετε μια κλήση με το Επείγον SOS, η συσκευή σας καλεί αυτόματα τις τοπικές Υπηρεσίες έκτακτης ανάγκης. Σε κάποιες χώρες και περιοχές, ίσως χρειαστεί να επιλέξετε την υπηρεσία που θέλετε να οριστεί ως η τοπική Υπηρεσία έκτακτης ανάγκης. Για να μπορέσει να σας βοηθήσει ο διεκπεραιωτής του κέντρου Υπηρεσιών έκτακτης ανάγκης, η κλήση μπορεί να περιέχει την τοποθεσία σας, ανεξάρτητα από το αν έχετε ενεργοποιήσει τις Υπηρεσίες τοποθεσίας. Στο τέλος της κλήσης, μπορείτε να επιλέξετε να ειδοποιηθούν οι επαφές έκτακτης ανάγκης σας με ένα μήνυμα που θα αναφέρει ότι καλέσατε τις Υπηρεσίες έκτακτης ανάγκης. Το εν λόγω μήνυμα θα περιλαμβάνει επίσης την τρέχουσα τοποθεσία σας. Μπορείτε να διαχειριστείτε τις επαφές έκτακτης ανάγκης στο Ιατρικό ID σας στην εφαρμογή «Υγεία» στο iPhone.\n\nΓια περιορισμένο χρονικό διάστημα, η συσκευή σας θα στέλνει ενημερώσεις στις επαφές έκτακτης ανάγκης σας όταν αλλάζει η τοποθεσία σας. Θα λαμβάνετε μια γνωστοποίηση κάθε φορά που συμβαίνει αυτό. Όταν χρησιμοποιείτε το Επείγον SOS στο Apple Watch, μπορείτε να διακόψετε αυτές τις ενημερώσεις αγγίζοντας «Διακοπή κοινοποίησης» στη γνωστοποίηση στο Apple Watch. Όταν χρησιμοποιείτε το Επείγον SOS στο iPhone, μπορείτε να διακόψετε αυτές τις ενημερώσεις αγγίζοντας τη γραμμή κατάστασης στο iPhone σας και επιλέγοντας «Διακοπή κοινοποίησης τοποθεσίας».\n\nΑν οι Υπηρεσίες τοποθεσίας είναι απενεργοποιημένες, θα ενεργοποιηθούν προσωρινά για κοινοποίηση της τοποθεσίας σας στις επαφές έκτακτης ανάγκης. Όταν κοινοποιείται η τοποθεσία σας, θα λαμβάνετε υπενθύμιση διακοπής κάθε τέσσερις ώρες για 24 ώρες. Αν δεν επιθυμείτε να σταλεί η τοποθεσία σας στις επαφές έκτακτης ανάγκης σας, στο iPhone, μεταβείτε στις «Ρυθμίσεις» > «Απόρρητο και ασφάλεια» > «Υπηρεσίες τοποθεσίας» > «Υπηρεσίες συστήματος» και αγγίξτε για απενεργοποίηση της ρύθμισης «Επείγουσες κλήσεις και SOS»."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Amb lʼavís dʼemergència SOS, pots demanar ajuda i avisar els teus contactes dʼemergència de forma ràpida i fàcil. Si fas una trucada amb lʼavís dʼemergència SOS, el dispositiu trucarà automàticament al número dʼemergències local. En alguns països i regions, és possible que hagis de seleccionar a quin servei d’emergències vols trucar. Perquè et puguin localitzar, és possible que la trucada inclogui la teva ubicació, tant si tens la localització activada com si no. Quan finalitzi la trucada, pots avisar els contactes dʼemergència a través dʼun missatge per dir‑los que has trucat als serveis dʼemergències. Aquest missatge també inclou la teva ubicació actual. Pots editar els contactes dʼemergència a les dades mèdiques de lʼapp Salut de lʼiPhone.\n\nDurant un període de temps limitat, el teu dispositiu enviarà actualitzacions als contactes dʼemergència a mesura que canvia la teva ubicació. Quan això passi, rebràs un avís. En utilitzar l’avís d’emergència SOS a l’Apple Watch, pots tocar “Deixa de compartir” a la notificació de l’Apple Watch per desactivar les actualitzacions. En utilitzar lʼavís dʼemergència SOS a lʼiPhone, pots tocar la barra dʼestat de lʼiPhone i seleccionar “No comparteixis la ubicació dʼemergència” per desactivar les actualitzacions.\n\nSi la localització està desactivada, sʼactivarà temporalment per comunicar la teva ubicació als contactes dʼemergència. Quan comparteixis la ubicació, rebràs un recordatori cada 4 hores durant 24 hores perquè no tʼoblidis de deixar de compartir‑la. Si no vols enviar la ubicació als contactes d’emergència, a l’iPhone, ves a l’app Configuració > Privacitat i seguretat > Localització > Serveis del sistema i, a continuació, desactiva les trucades d’emergència i SOS."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avec Urgence SOS, vous pouvez appeler rapidement et facilement les secours et avertir vos contacts d’urgence. Lorsque vous passez un appel avec Urgence SOS, votre appareil appelle automatiquement au numéro d’urgence local. Dans certains pays et régions, il se pourrait que vous deviez choisir le service à désigner comme service d’urgence. Pour aider le répartiteur à vous porter assistance, cet appel pourrait inclure votre position, que vous ayez activé le service de localisation ou non. Au terme de cet appel, vous aurez la possibilité de prévenir vos contacts d’urgence au moyen d’un message qui indique que vous avez appelé les services d’urgence. Ce message contient également votre position actuelle. Vous pouvez gérer vos contacts d’urgence en modifiant votre fiche médicale dans l’app Santé de l’iPhone.\n\nVotre appareil enverra des notifications à vos contacts d’urgence pendant une période limitée à mesure que votre position change. Vous recevrez une notification lorsque cela se produit. Lorsque vous utilisez Urgence SOS sur votre Apple Watch, vous pouvez désactiver ces mises à jour en touchant « Arrêter le partage » dans la notification qui s’affiche sur votre Apple Watch. Lorsque vous utilisez Urgence SOS sur votre iPhone, vous pouvez les désactiver en touchant la barre d’état de votre iPhone et en sélectionnant « Ne plus partager le lieu de l’urgence ».\n\nSi le service de localisation est désactivé, il sera alors temporairement activé pour permettre à vos contacts d’urgence de recevoir votre position. Lorsque votre position est partagée, vous recevrez un rappel de mettre fin au partage toutes les quatre heures pendant 24 heures. Si vous ne voulez pas envoyer votre position à vos contacts d’urgence, accédez à Réglages > Confidentialité et sécurité > Service de localisation > Services système sur votre iPhone, puis touchez pour désactiver Appels d’urgence et SOS."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "透過「SOS緊急服務」，你可以快速且輕易地撥打電話尋求協助，並通知你的緊急聯絡人。當你使用「SOS緊急服務」撥打電話時，你的裝置會自動撥打本地的緊急服務號碼。在部分國家和地區，你可能需要選擇想要的服務，將其指定為緊急服務。為了方便派遣員協助你，不論你是否已啟用「定位服務」，此通話都有可能包含你的位置。一旦通話結束，你可選擇傳送訊息給你的緊急聯絡人，通知他們你已撥打緊急服務電話。此訊息會包含你的目前位置。可透過編輯iPhone「健康」App中的「醫療卡」來管理你的緊急聯絡人。\n\n隨著位置改變，你的裝置會在一段時間內定期傳送你的位置更新給緊急聯絡人。你會收到相關通知。 在Apple Watch上使用「SOS緊急服務」時，可以在Apple Watch上點一下通知中的「停止分享」來停止這些更新內容。在iPhone上使用「SOS緊急服務」時，可以在iPhone上點一下狀態列，然後選取「停止分享緊急位置」來停止位置更新。\n\n若「定位服務」已被停用則會暫時啟用「定位服務」，以便你的緊急聯絡人能夠收到你的位置。當你分享位置時，你會收到在24小時內，每4小時發送一次的停止分享提示。若不想將你的位置傳送給緊急聯絡人，請在iPhone上前往「設定」>「隱私權與安全性」>「定位服務」>「系統服務」，然後點一下來關閉「緊急服務電話與SOS」。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "「緊急求助SOS」可以讓你方便快捷地尋求協助，並且提示你的緊急聯絡人。當你使用「緊急求助SOS」打電話時，你的裝置會自動致電本地緊急號碼。在部份國家和地區，你可能需要選擇指定某些服務為你的緊急服務。為了方便派遣員協助你，不論你是否已啟用「定位服務」，此通話都有可能包含你的位置。通話一結束，你就可以選擇傳送訊息給你的緊急聯絡人，通知他們你已經致電緊急服務。有關訊息亦會包括你的目前位置。你可以在iPhone上的「健康」App中編輯「醫療檔案」，以管理緊急聯絡人。\n\n如你的位置有變，你的裝置會在一段有限的時間內傳送你的位置更新予緊急聯絡人。你亦會同時收到有關通知。 在Apple Watch上使用「緊急求助SOS」時，你可以在Apple Watch上的通知中，點一下「停止分享」以停止這些更新。在iPhone上使用「緊急求助SOS」時，你可以在iPhone上點一下狀態列，然後選擇「停止分享緊急位置」以停止這些更新。\n\n如「定位服務」已停用，將會暫時啟用「定位服務」，以便你的緊急聯絡人能夠接收到你的位置。當你的位置被共享時，你將會在未來24小時內每四小時收到讓你停止共享的提醒。如果你不想將位置傳送給緊急聯絡人，請在iPhone上前往「設定」>「私隱與保安」>「定位服務」>「系統服務」，然後點一下以關閉「緊急電話與SOS」。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Med Nödanrop SOS kan du snabbt och enkelt ringa efter hjälp och meddela dina nödkontakter. När du ringer ett samtal via Nödanrop SOS ringer enheten automatiskt det lokala numret till räddningstjänsten. I vissa länder och regioner kanske du måste välja vilken tjänst du vill ange som din räddningstjänst. I syfte att underlätta för larmcentralens personal att hjälpa dig kan detta samtal inkludera din plats, oavsett om du har aktiverat Platstjänster. När samtalet avslutas kan du välja att skicka ett meddelande till dina nödkontakter om att du har ringt ett nödsamtal. Detta meddelande innehåller även din aktuella plats. Du kan hantera dina nödkontakter genom att redigera ditt medicinska ID i appen Hälsa på iPhone.\n\nUnder en begränsad tidsperiod skickar din enhet uppdateringar till dina nödsamtalskontakter så fort din position ändras. Du får ett meddelande när detta händer. När du använder Nödanrop SOS på Apple Watch kan du stoppa uppdateringarna genom att trycka på Sluta dela i notisen på Apple Watch. Om platstjänster är avaktiverade kommer de tillfälligt att aktiveras så att dina nödkontakter kan få din platsinformation när du använder Nödanrop SOS på iPhone.\n\nOm Platstjänster är avaktiverade blir de tillfälligt aktiverade så att din platsinformation kan skickas till dina nödkontakter. När din platsinformation delas får du en påminnelse om att sluta var fjärde timme under ett dygn. Om du inte vill skicka din platsinformation till dina nödkontakter öppnar du Inställningar på iPhone, väljer Integritet och säkerhet > Platstjänster > Systemtjänster och avaktiverar Nödsamtal och SOS."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "आपातकालीन SOS से, आप सहायता के लिए तेज़ी से और आसानी से कॉल कर सकते हैं और अपने आपातकालीन संपर्कों को अलर्ट कर सकते हैं। जब आप आपातकालीन SOS से कॉल करते हैं, तो आपके डिवाइस द्वारा ऑटोमैटिकली स्थानीय आपातकालीन नंबर पर कॉल की जाएगी। कुछ देशों और क्षेत्रों में, आपको वह सेवा चुननी पड़ सकती है जिसे आप अपनी आपातकालीन सेवा के रूप में नामित करना चाहते हैं। डिस्पैचर को सहायता की अनुमति देने के लिए इस कॉल में आपका स्थान शामिल हो सकता है, चाहे आप स्थान सेवा को सक्षम करें या नहीं। कॉल के समाप्त होने पर आप अपने आपातकालीन संपर्कों को संदेश के माध्यम से सूचित करने का विकल्प चुन सकते हैं जिसमें बताया गया हो कि आपने आपातकालीन सेवाओं को कॉल किया है। इस संदेश में आपका वर्तमान स्थान भी शामिल किया जाता है। आप iPhone पर सेहत ऐप में अपने मेडिकल ID को संपादित करके अपने आपातकालीन संपर्कों को प्रबंधित कर सकते हैं।\n\nसीमित अवधि के लिए आपका स्थान बदलने पर आपके डिवाइस द्वारा आपके आपातकालीन संपर्कों को अपडेट भेजे जाएँगे। ऐसा होने पर आपको सूचना प्राप्त होगी। जब आप आपातकालीन SOS का उपयोग Apple Watch पर करते हैं, तो आप अपनी Apple Watch पर सूचना में जाकर “शेयरिंग रोकें” पर टैप करके इन अपडेट को रोक सकते हैं। जब आप आपातकालीन SOS का उपयोग iPhone पर करते हैं, तो अपने iPhone पर स्टेटस बार पर टैप करके और “आपातकालीन स्थान शेयरिंग बंद करें” चुनकर आप इन अपडेट को रोक सकते हैं।\n\nयदि स्थान सेवा अक्षम है, तो आपातकालीन संपर्कों को आपके वर्तमान स्थान के बारे में सूचित करने के लिए उन्हें अस्थायी रूप से सक्षम कर दिया जाएगा। जब आपका स्थान शेयर किया जा रहा होता है, तो आपको 24 घंटे में प्रत्येक चार घंटे पर इसे रोकने का रिमाइंडर मिलेगा। यदि आप अपने आपातकालीन संपर्कों को अपना स्थान नहीं भेजना चाहते हैं, तो अपने iPhone पर सेटिंग्ज़ > गोपनीयता और सुरक्षा > स्थान सेवा > सिस्टम सेवाएँ पर जाएँ और आपातकालीन कॉल और SOS को बंद करने के लिए टैप करें।"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funkcja Alarmowe SOS pozwala szybko i łatwo wzywać pomoc i powiadamiać swoje kontakty alarmowe. Gdy łączysz się ze służbami ratowniczymi przy użyciu funkcji Alarmowe SOS, urządzenie automatycznie łączy się z lokalnym numerem służb ratowniczych. W niektórych krajach i regionach konieczne może być wybranie usługi, która ma być używana dla połączeń alarmowych. Aby dyspozytor mógł Ci pomóc, połączenie to może zawierać Twoje położenie, niezależnie od tego, czy usługi lokalizacji są włączone. Po zakończeniu tego połączenia możesz wybrać, czy chcesz wysłać do kontaktów alarmowych wiadomość informującą o połączeniu ze służbami ratowniczymi. Wiadomość ta zawiera także Twoje bieżące położenie. Kontaktami alarmowymi możesz zarządzać, edytując kartę medyczną w aplikacji Zdrowie na iPhonie.\n\nNastępnie urządzenie będzie przez pewien czas wysyłać do kontaktów alarmowych uaktualnienia dotyczące zmian Twojego położenia. O każdym z nich urządzenie będzie informowało Cię odpowiednim powiadomieniem. Jeśli używasz funkcji Alarmowe SOS na Apple Watch, uaktualnienia te możesz wyłączyć, stukając w Przestań udostępniać w powiadomieniu na Apple Watch. Jeśli używasz funkcji Alarmowe SOS na iPhonie, możesz to zrobić, stukając w pasek statusu na iPhonie i wybierając Przestań udostępniać położenie.\n\nJeśli usługi lokalizacji są wyłączone, zostaną włączone na krótką chwilę, aby umożliwić wysłanie Twojego położenia do kontaktów alarmowych. Po udostępnieniu swojego położenia będziesz otrzymywać wiadomości przypominające o jego wyłączeniu (co 4 godziny przez 24 godziny). Jeśli nie chcesz wysyłać swojego położenia do kontaktów alarmowych, przejdź na iPhonie do Ustawień, stuknij w Prywatność i ochrona > Usługi lokalizacji > Usługi systemowe i wyłącz stuknięciem opcję Połączenia alarmowe i SOS."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Med Nød‑SOS kan du hurtigt og nemt ringe efter hjælp og advare dine nødkontakter. Når du foretager et opkald med Nød‑SOS, ringer din enhed automatisk til det lokale alarmtelefonnummer. I nogle lande og områder skal du muligvis vælge den tjeneste, som du vil registrere som din lokale alarmcentral. For at give alarmcentraloperatøren mulighed for at hjælpe dig, kan opkaldet inkludere din lokalitet, hvad enten du har slået Lokalitetstjenester til eller ej. Når opkaldet afsluttes, kan du vælge at underrette dine nødkontakter om, at du har ringet til alarmcentralen. Denne besked indeholder også din aktuelle lokalitet. Du kan administrere nødkontakter i Nødinfo i appen Sundhed på din iPhone.\n\nDin enhed vil i en begrænset periode sende opdateringer til dine nødkontakter, når din lokalitet ændres. Du modtager en notifikation, når det sker. Når du bruger Nød‑SOS på dit Apple Watch, kan du standse disse opdateringer ved at trykke på Stop deling i notifikationen på dit Apple Watch. Når du bruger Nød‑SOS på din iPhone, kan du standse disse opdateringer ved at trykke på statuslinjen på din iPhone og vælge Stop deling af lokalitet for nødopkald.\n\nHvis Lokalitetstjenester er slået fra, vil de blive slået til midlertidigt, så dine nødkontakter kan blive underrettet om din lokalitet. Når din lokalitet deles, får du en påmindelse om at holde op med at dele hver fjerde time i 24 timer. Hvis du ikke ønsker at sende din lokalitet til dine nødkontakter, skal du på din iPhone gå til Indstillinger > Anonymitet & sikkerhed > Lokalitetstjenester > Systemtjenester og trykke for at slå Nødopkald og SOS fra."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "With Emergency SOS, you can quickly and easily call for help and alert your emergency contacts. When you make a call with Emergency SOS, your device automatically calls the local emergency number. In some countries and regions, you might need to choose the service that you want to be designated as your emergency service. To allow the dispatcher to assist you, this call may include your location, regardless of whether you enable Location Services. Once the call ends, you can choose to notify your emergency contacts with a message that says you have called emergency services. This message also includes your current location. You can manage your emergency contacts by editing your Medical ID in the Health app on iPhone.\n\nFor a limited period of time, your device will send updates to your emergency contacts as your location changes. You’ll receive a notification when this happens. When you use Emergency SOS on your Apple Watch, you can stop these updates by tapping Stop Sharing in the notification on your Apple Watch. When you use Emergency SOS on your iPhone, you can stop these updates by tapping the status bar on your iPhone and selecting Stop Sharing Emergency Location.\n\nIf Location Services is disabled, it will be temporarily enabled in order to notify your emergency contacts with your location. When your location is being shared, you’ll get a reminder to stop every four hours for 24 hours. If you don’t want to send your location to your emergency contacts, on your iPhone go to Settings > Privacy & Security > Location Services > System Services, and tap to turn off Emergency Calls & SOS."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "باستخدام طوارئ SOS، يمكنك الاتصال لطلب المساعدة بسرعة وسهولة وتنبيه جهات اتصال الطوارئ لديك. عند إجراء مكالمة باستخدام طوارئ SOS، يتصل جهازك تلقائيًا برقم الطوارئ المحلي. وفي بعض البلدان والمناطق، قد يتعين عليك اختيار الخدمة المطلوب تخصيصها كخدمة طوارئ لك. للسماح لموزع فِرق الطوارئ بمساعدتك، قد تتضمن هذه المكالمة موقعك، سواء كانت خدمات الموقع قيد التشغيل أم لا. عند انتهاء المكالمة، يمكنك اختيار ما إذا كنت تود إعلام جهات اتصال الطوارئ لديك برسالة تخبرهم بأنك اتصلت بخدمات الطوارئ أم لا. ستتضمن هذه الرسالة أيضًا موقعك الحالي. ويمكنك إدارة جهات اتصال الطوارئ عن طريق تعديل الهوية الطبية في تطبيق صحتي على iPhone.\n\nلمدة محدودة من الوقت، سيرسل جهازك تحديثات إلى جهات اتصال الطوارئ الخاصة بك عندما يتغير موقعك. وسيصلك إشعار عندما يحدث ذلك. وعند استخدام طوارئ SOS على Apple Watch، يمكنك إيقاف هذه التحديثات بالضغط على \"إيقاف المشاركة\" في الإشعار الذي يظهر على Apple Watch. عند استخدام طوارئ SOS على iPhone، يمكنك إيقاف هذه التحديثات بالضغط على شريط الحالة في iPhone وتحديد \"إيقاف مشاركة موقع الطوارئ\".\n\nفي حالة تعطيل خدمات الموقع، سيتم تمكينها مؤقتًا حتى يتم إعلام جهات اتصال الطوارئ بموقعك. وعندما يكون موقعك قيد المشاركة، ستتلقى تذكيرًا بإيقاف المشاركة كل أربع ساعات على مدار ٢٤ ساعة. وإذا كنت لا ترغب في إرسال موقعك إلى جهات اتصال الطوارئ لديك، فانتقل إلى iPhone وافتح الإعدادات > الخصوصية والأمن > خدمات الموقع > خدمات النظام، واضغط لإيقاف \"مكالمات الطوارئ و SOS\"."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Med Nødanrop (SOS) kan du raskt og enkelt ringe etter hjelp og varsle nødkontaktene dine. Når du bruker Nødanrop (SOS), vil enheten automatisk prøve å ringe det lokale nødnummeret. I enkelte land og områder kan det hende du må velge hvilken nødetat som skal kontaktes ved nødanrop. For å gjøre det enklere for nødetatene å hjelpe deg kan anropet inkludere posisjonen din, uavhengig av om du har aktivert Stedstjenester eller ikke. Når samtalen avsluttes, kan du velge å varsle nødkontaktene dine med en tekstmelding der det står at du har ringt nødnummeret. Meldingen vil også inneholde din nåværende posisjon. Du kan legge til eller endre nødkontaktene dine under Nødinfo i Helse-appen på iPhone.\n\nEnheten vil sende oppdateringer til nødkontaktene dine i en begrenset periode hvis posisjonen din endres. Du vil bli varslet når dette skjer. Når du bruker Nødanrop (SOS) på Apple Watch, kan du stoppe disse oppdateringene ved å trykke på Avslutt deling i varslingen på Apple Watch. Når du bruker Nødanrop (SOS) på iPhone, kan du avslutte oppdateringene ved å trykke på statuslinjen på iPhone og velge Slutt å dele nødposisjon.\n\nHvis Stedstjenester er deaktivert, slås innstillingen på midlertidig slik at nødkontaktene kan bli varslet om hvor du befinner deg. Når posisjonen din deles, får du en påminnelse om å avslutte delingen hver fjerde time i ett døgn. Hvis du ikke vil sende posisjonen din til nødkontakter, går du til Innstillinger > Personvern og sikkerhet > Stedstjenester > Systemtjenester på iPhonen og slår av Nødanrop og SOS."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เมื่อใช้ SOS ฉุกเฉิน คุณสามารถโทรขอความช่วยเหลือและเตือนให้รายชื่อติดต่อฉุกเฉินของคุณทราบได้อย่างรวดเร็วและง่ายดาย เมื่อคุณโทรออกด้วย SOS ฉุกเฉิน อุปกรณ์ของคุณจะโทรไปยังเบอร์โทรฉุกเฉินในท้องถิ่นโดยอัตโนมัติ ในบางประเทศหรือภูมิภาค คุณอาจต้องเลือกบริการที่คุณต้องการกำหนดเป็นบริการฉุกเฉินของคุณ ในการให้ผู้ช่วยเหลือสามารถมาช่วยคุณได้ การโทรนี้อาจรวมตำแหน่งที่ตั้งของคุณด้วยไม่ว่าคุณจะเปิดใช้งานบริการหาตำแหน่งที่ตั้งหรือไม่ก็ตาม เมื่อการโทรหาบริการฉุกเฉินสิ้นสุด คุณสามารถเลือกที่จะแจ้งกับรายชื่อติดต่อฉุกเฉินของคุณด้วยข้อความที่ระบุว่า คุณได้โทรหาบริการฉุกเฉิน ข้อความนี้จะรวมตำแหน่งที่ตั้งปัจจุบันของคุณด้วย คุณสามารถจัดการรายชื่อติดต่อฉุกเฉินได้โดยการแก้ไขข้อมูลทางการแพทย์ในแอปสุขภาพที่อยู่บน iPhone ของคุณ\n\nอุปกรณ์จะอัปเดตตำแหน่งที่ตั้งที่เปลี่ยนไปของคุณให้กับรายชื่อติดต่อฉุกเฉินทราบในช่วงระยะเวลาจำกัด คุณจะได้รับการแจ้งเตือนทุกครั้งเมื่อตำแหน่งที่ตั้งเปลี่ยนไป เมื่อคุณใช้ SOS ฉุกเฉินบน Apple Watch คุณสามารถหยุดอัปเดตตำแหน่งที่ตั้งได้โดยการแตะหยุดแชร์ในการแจ้งเตือนบน Apple Watch ของคุณ เมื่อคุณใช้ SOS ฉุกเฉินบน iPhone คุณสามารถหยุดอัปเดตตำแหน่งที่ตั้งได้โดยการแตะแถบสถานะบน iPhone ของคุณแล้วเลือกหยุดแชร์ตำแหน่งที่ตั้งฉุกเฉิน\n\nถ้าบริการหาตำแหน่งที่ตั้งปิดใช้งานอยู่ บริการหาตำแหน่งที่ตั้งจะถูกเปิดใช้งานชั่วคราวเพื่อแจ้งกับรายชื่อติดต่อฉุกเฉินพร้อมกับตำแหน่งที่ตั้งของคุณ เมื่อตำแหน่งที่ตั้งของคุณถูกแชร์อยู่ คุณจะได้รับการแจ้งเตือนให้หยุดแชร์ทุกๆ สี่ชั่วโมงเป็นเวลา 24 ชั่วโมง ถ้าคุณไม่ต้องการส่งตำแหน่งที่ตั้งให้กับรายชื่อติดต่อฉุกเฉินของคุณ ให้ไปที่การตั้งค่าบน iPhone ของคุณ > ความเป็นส่วนตัวและความปลอดภัย > บริการหาตำแหน่งที่ตั้ง > บริการระบบ แล้วแตะเพื่อปิดใช้สายโทรฉุกเฉินและ SOS"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“SOS紧急联络”可使你方便快捷地寻求帮助，并提醒你的紧急联系人。当你使用“SOS紧急联络”拨打电话时，你的设备会自动拨打本地紧急号码。在部分国家和地区，你可能需要选择将某个服务指定为你的紧急服务。为允许调度员向你提供帮助，通话可能会包含你的位置，无论你是否已启用“定位服务”。呼叫结束后，你可以选择以信息方式告知紧急联系人你进行了紧急呼叫。此信息会同时包含你的当前位置。你可以在iPhone的“健康”App中编辑“医疗急救卡”来管理你的紧急联系人。\n\n在有限的时间内，设备将在你位置发生改变时给紧急联系人发送更新信息。届时你将收到通知。 在Apple Watch上使用“SOS紧急联络”时，你可以在Apple Watch的通知中轻点“停止共享”，以停止这些更新。在iPhone上使用“SOS紧急联络”时，你可以轻点iPhone的状态栏并选择“停止共享紧急联络位置”，以停止这些更新。\n\n如果“定位服务”为停用状态，那么在通知你的紧急联系人时将暂时启用，以在信息中包含你的位置。当你的位置信息处于共享状态时，你将在24小时内每4小时收到一次停止共享的提醒。如果你不想将位置信息发送给紧急联系人，请在iPhone上前往“设置”>“隐私与安全性”>“定位服务”>“系统服务”，然后轻点以关闭“紧急呼叫与SOS”。"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Naudodami SOS signalo funkciją, galite greitai ir lengvai iškviesti pagalbą ir įspėti savo adresatus nelaimės atveju. Kai skambinate naudodami SOS signalo funkciją, jūsų įrenginys automatiškai skambina vietiniu pagalbos tarnybų numeriu. Gali būti, kad kai kuriose šalyse ir regionuose turėsite pasirinkti tarnybą, kurią norite priskirti pagalbos tarnybai. Kad dispečeris galėtų jums padėti, į šį skambutį gali būti įtraukiama jūsų vieta, neatsižvelgiant į tai, ar esate įjungę vietos nustatymą. Kai skambutis pasibaigs, galite pasirinkti, ar norite informuoti adresatus nelaimės atveju žinute, kurioje nurodoma, kad skambinote pagalbos tarnyboms. Į šią žinutę taip pat įtraukiama jūsų dabartinė vieta. Galite tvarkyti adresatus nelaimės atveju „iPhone“ įrenginyje redaguodami medicininę kortelę programoje „Sveikata“.\n\nTam tikrą laikotarpį jūsų įrenginys siųs atnaujinimus adresatams nelaimės atveju pasikeitus jūsų vietai. Kai tai nutiks, gausite pranešimą. Kai naudojate SOS signalo funkciją „Apple Watch“ įrenginyje, galite sustabdyti šiuos atnaujinimus „Apple Watch“ įrenginyje rodomame pranešime bakstelėdami „Stabdyti bendrinimą“. Kai naudojate SOS signalo funkciją „iPhone“ įrenginyje, galite sustabdyti šiuos atnaujinimus „iPhone“ įrenginyje bakstelėdami būsenos juostą ir pasirinkdami „Stabdyti nelaimės vietos bendrinimą“.\n\nJei „Vietos nustatymo paslaugos“ išjungtos, jos bus laikinai įjungtos, kad būtų galima informuoti adresatus nelaimės atveju pranešant jūsų vietą. Kai jūsų vieta bendrinama, gausite priminimą sustabdyti bendrinimą kas keturias valandas (iš viso 24 valandas). Jei nenorite siųsti savo vietos adresatams nelaimės atveju, „iPhone“ įrenginyje eikite į sritį „Nustatymai“ > „Privatumas ir sauga“ > „Vietos nustatymo paslaugos“ > „Sistemos paslaugos“ ir bakstelėkite, kad išjungtumėte parinktį „Pagalbos skambučiai ir SOS“."
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "With Emergency SOS, you can quickly and easily call for help and alert your emergency contacts. When you make a call with Emergency SOS, your device automatically calls the local emergency number. In some countries and regions, you might need to choose the service you want designated as your emergency service. To allow the call handler to assist you, this call may include your location, regardless of whether you enable Location Services. Once the call ends, you can choose to notify your emergency contacts with a message that says you have called emergency services. This message also includes your current location. You can manage your emergency contacts by editing your Medical ID in the Health app on iPhone.\n\nFor a limited period of time, your device will send updates to your emergency contacts as your location changes. You’ll receive a notification when this happens. When you use Emergency SOS on your Apple Watch, you can stop these updates by tapping Stop Sharing in the notification on your Apple Watch. When you use Emergency SOS on your iPhone, you can stop these updates by tapping the status bar on your iPhone and selecting Stop Sharing Emergency Location.\n\nIf Location Services is disabled, it will be temporarily enabled in order to notify your emergency contacts with your location. When your location is being shared, you’ll get a reminder to stop every four hours for 24 hours. If you don’t want to send your location to your emergency contacts, on your iPhone go to Settings > Privacy & Security > Location Services > System Services, and tap to turn off Emergency Calls & SOS."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Con Emergencia SOS, puedes pedir ayuda y alertar rápidamente a tus contactos de emergencia. Cuando haces una llamada con Emergencia SOS, tu dispositivo contacta automáticamente a los números locales de emergencia. En algunos países y regiones, podrás tener que elegir qué servicio de emergencias prefieres que se contacte. Para que quien atienda tu llamada pueda ayudarte, esta podría incluir tu ubicación sin importar si activaste Localización. Cuando la llamada termine, puedes elegir avisar a tus contactos de emergencia con un mensaje que diga que llamaste a servicios de emergencia. Dicho mensaje también incluirá tu ubicación actual. Puedes administrar tus contactos de emergencia al editar tu ficha médica en la app Salud de tu iPhone.\n\nDurante un tiempo limitado, tu dispositivo enviará actualizaciones a tus contactos de emergencia conforme cambie tu ubicación. Recibirás una notificación cuando esto suceda. Para desactivar las actualizaciones de Emergencia SOS en tu Apple Watch toca Dejar de compartir en la notificación de tu Apple Watch. Para desactivar las actualizaciones de Emergencia SOS en tu iPhone, toca la barra de estado del iPhone y selecciona Dejar de compartir la ubicación.\n\nSi Localización está desactivada, se reactivará temporalmente para compartir tu ubicación con tus contactos de emergencia. Cuando se comparte tu ubicación, recibirás un recordatorio para dejar de hacerlo cada cuatro horas en un periodo de 24 horas. Para impedir que se envíe tu ubicación a tus contactos de emergencia, desactiva Llamadas de emergencia y SOS en tu iPhone enlazado en Configuración > Privacidad y seguridad > Localización > Servicios del sistema."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "S funkcí Tíseň SOS můžete rychle a snadno zavolat o pomoc a upozornit své nouzové kontakty. Když přes Tíseň SOS zavoláte, vaše zařízení automaticky zavolá na místní tísňovou linku. V některých zemích a oblastech si budete muset zvolit, která služba bude nastavena jako tísňová. Aby vám dispečeři mohli pomoct, může tento hovor obsahovat údaj o vaší poloze bez ohledu na to, zda máte nebo nemáte zapnuté polohové služby. Po ukončení hovoru můžete svým nouzovým kontaktům poslat zprávu, že jste tísňovým službám zavolali. I tato zpráva bude obsahovat vaši aktuální polohu. Nouzové kontakty můžete upravit ve svém zdravotním ID v aplikaci Zdraví na iPhonu.\n\nPo omezenou dobu bude vaše zařízení zasílat nouzovým kontaktům aktualizace vaší polohy. Jakmile k tomu dojde, obdržíte oznámení. Když použijete funkci Tíseň SOS na Apple Watch, můžete tyto aktualizace kdykoli vypnout tak, že v obdrženém oznámení klepnete na volbu Zastavit sdílení. Pokud použijete funkci Tíseň SOS na iPhonu, můžete aktualizace zastavit tak, že klepnete na stavový řádek a vyberete volbu Zastavit tísňové sdílení polohy.\n\nV případě, že jsou polohové služby vypnuté, na přechodnou dobu se zapnou, aby bylo možné nouzovým kontaktům vaši polohu odeslat. Když je vaše poloha sdílena, po dobu 24 hodin budete každé čtyři hodiny dostávat připomínku, abyste sdílení vypnuli. Pokud svoji polohu nouzovým kontaktům posílat nechcete, přejděte na iPhonu do Nastavení > Soukromí a zabezpečení > Polohové služby > Systémové služby a klepnutím vypněte volbu Tísňová volání a SOS."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pomocou funkcie SOS môžete rýchlo a jednoducho privolať pomoc a upozorniť vaše tiesňové kontakty. Keď uskutočníte hovor prostredníctvom funkcie SOS, vaše zariadenie automaticky zavolá na miestnu tiesňovú linku. V niektorých krajinách a regiónoch si možno budete musieť vybrať službu, ktorá bude nastavená ako tiesňová. Aby vám dispečer vedel pomôcť, môže byť súčasťou tohto hovoru vaša poloha bez ohľadu na to, či máte zapnuté lokalizačné služby. Po skončení hovoru môžete upozorniť tiesňové kontakty odoslaním správy s informáciami o kontaktovaní záchranných služieb. Táto správa bude obsahovať vašu aktuálnu polohu. Tiesňové kontakty môžete spravovať v Zdravotnom ID v apke Zdravie na iPhone.\n\nVaše zariadenie bude tiesňovým kontaktom po obmedzený čas odosielať aktualizácie vašej polohy. Po aktualizácii polohy vám bude doručené hlásenie. Ak SOS používate na svojich Apple Watch, môžete tieto aktualizácie kedykoľvek zastaviť tak, že v hlásení na Apple Watch klepnete na Zastaviť zdieľanie. Ak SOS používate na svojom iPhone, môžete tieto aktualizácie zastaviť tak, že klepnete na stavový riadok na svojom iPhone a vyberiete príkaz Zastaviť zdieľanie tiesňovej polohy.\n\nAk máte vypnuté lokalizačné služby, budú kvôli odoslaniu vašej polohy tiesňovým kontaktom dočasne zapnuté. Keď je vaša poloha zdieľaná, 24 hodín sa vám bude každú hodinu zobrazovať pripomienka na vypnutie zdieľania. Ak nechcete odosielať svoju polohu tiesňovým kontaktom, na iPhone prejdite do Nastavenia > Súkromie a bezpečnosť > Lokalizačné služby > Systémové služby a klepnutím vypnite Tiesňové volania a SOS."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dengan SOS Kecemasan, anda boleh membuat panggilan dengan cepat dan mudah untuk mendapatkan bantuan serta mengisyaratkan kenalan kecemasan anda. Apabila anda membuat panggilan dengan SOS Kecemasan, peranti anda menghubungi nombor kecemasan tempatan secara automatik. Di sesetengah negara dan rantau, anda mungkin perlu memilih perkhidmatan yang anda mahu ditetapkan sebagai perkhidmatan kecemasan anda. Untuk membolehkan pembantu kecemasan membantu anda, panggilan ini mungkin menyertakan lokasi anda, tidak kira sama ada anda mendayakan Perkhidmatan Lokasi. Setelah panggilan tamat, anda boleh memilih untuk memaklumkan kenalan kecemasan anda dengan mesej yang menyatakan bahawa anda telah memanggil perkhidmatan kecemasan. Mesej ini turut menyertakan lokasi semasa anda. Anda boleh mengurus kenalan kecemasan anda dengan mengedit ID Perubatan anda dalam app Kesihatan pada iPhone.\n\nUntuk tempoh masa terhad, peranti anda akan menghantar kemas kini kepada kenalan kecemasan anda apabila lokasi anda berubah. Anda akan menerima pemberitahuan apabila ini berlaku. Apabila anda menggunakan SOS Kecemasan pada Apple Watch, anda boleh menghentikan kemas kini ini dengan mengetik Henti Berkongsi dalam pemberitahuan pada Apple Watch anda. Apabila anda menggunakan SOS Kecemasan pada iPhone, anda boleh menghentikan kemas kini ini dengan mengetik bar status pada iPhone anda dan memilih Henti Berkongsi Lokasi Kecemasan.\n\nJika Perkhidmatan Lokasi dinyahdayakan, ia akan didayakan buat sementara untuk memaklumkan kenalan kecemasan anda tentang lokasi anda. Apabila lokasi anda dikongsi, anda akan menerima peringatan untuk berhenti setiap empat jam selama 24 jam. Jika anda tidak mahu menghantar lokasi anda kepada kenalan kecemasan anda, pada iPhone anda pergi ke Seting > Privasi & Keselamatan > Perkhidmatan Lokasi > Perkhidmatan Sistem dan ketik untuk menyahaktifkan Panggilan & SOS Kecemasan."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Със SOS обаждане можете бързо и лесно да се обадите за помощ и да предупредите вашите контакти при спешни случаи. Когато направите обаждане със SOS обаждане, вашето устройство автоматично се обажда на местния номер за спешна помощ. В някои страни и региони може да е необходимо да изберете услугата, която да бъде определена като служба за спешна помощ. За да позволите на диспечера да ви помогне, това обаждане може да включва вашето местоположение, независимо дали сте активирали функцията Услуги за местоположение. Щом обаждането приключи, можете да изберете да информирате вашите контакти при спешни случаи чрез съобщение, че сте се обадили на службите за спешна помощ. Това съобщение също така включва вашето настоящо местоположение. Можете да управлявате вашите контакти при спешни случаи, като редактирате медицинския ви идентификатор в приложението Здраве на iPhone.\n\nЗа определен период от време устройството ви ще изпраща обновявания на вашите контакти при спешни случаи, докато местоположението ви се променя. Ще получите известие, когато това се случи. Когато използвате SOS обаждане на вашия Apple Watch, можете да спрете тези обновявания, като докоснете Спри споделяне в известието на вашия Apple Watch. Когато използвате SOS обаждане на вашия iPhone, можете да спрете тези обновявания, като докоснете лентата със състояния на вашия iPhone и изберете Спри споделяне на местоположение при спешни случаи.\n\nАко Услугите за местоположение са деактивирани, временно ще се активират, за да извести вашите контакти при спешни случаи за вашето местоположение. Когато вашето местоположение се споделя, ще получавате напомняне да го спрете на всеки четири часа за 24 часа. Ако не искате да изпращате вашето местоположение на вашите контакти при спешни случаи, на iPhone отидете в Настройки > Поверителност и сигурност > Услуги за местоположение > Системни услуги и докоснете, за да изключите Спешни обаждания и SOS."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Z nujnim pozivom SOS lahko hitro in enostavno pridete do potrebne pomoči ter obvestite stike za nujne primere. Če vzpostavite klic z nujnim pozivom SOS, vaša naprava samodejno pokliče lokalno številko za nujne primere. V nekaterih državah in regijah boste morda morali izbrati službo, ki jo želite določiti kot svojo službo za nujno pomoč. Da vam dispečer lažje pomaga, ta klic lahko vsebuje vašo lokacijo ne glede na to, ali ste omogočili lokacijske storitve. Po koncu klica lahko izberete, da vaši stiki za nujne primere prejmejo sporočilo z obvestilom, da ste poklicali službo za nujno pomoč. To sporočillo vključuje tudi vašo trenutno lokacijo. Svoje stike za nujne primere lahko upravljate tako, da v aplikaciji Zdravje v iPhonu uredite svojo zdravstveno kartico.\n\nMed omejenim časovnim obdobjem bo vaša naprava pošiljala posodobitve stikom za nujne primere, ko se vaša lokacija spremeni. Ko se to zgodi, boste prejeli obvestilo. Ko uporabljate nujni poziv SOS v svoji uri Apple Watch, lahko ustavite te posodobitve tako, da tapnete Ustavi deljenje v obvestilu v uri Apple Watch. Ko uporabljate nujni poziv SOS v svojem iPhonu, lahko te posodobitve izklopite tako, da tapnete vrstico stanja v iPhonu in izberete možnost Ustavi deljenje lokacije nujnega primera.\n\nČe so lokacijske storitve onemogočene, bodo začasno omogočene, da bodo vaši stiki za nujne primere obveščeni o vaši lokaciji. Ko se vaša lokacija deli, boste 24 ur vsake štiri ure prejeli opomnik za zaustavitev. Če stikom za nujne primere ne želite poslati svoje lokacije, v iPhonu odprite Nastavitve > Zasebnost in varnost > Lokacijske storitve > Sistemske storitve in tapnite, da izklopite možnost Klici v sili in SOS."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "With Emergency SOS, you can quickly and easily call for help and alert your emergency contacts. When you make a call with Emergency SOS, your device automatically calls the local emergency number. In some countries and regions, you might need to choose the service that you want to be designated as your emergency service. To allow the operator to assist you, this call may include your location, regardless of whether you enable Location Services. Once the call ends, you can choose to notify your emergency contacts with a message that says you have called emergency services. This message also includes your current location. You can manage your emergency contacts by editing your Medical ID in the Health app on iPhone.\n\nFor a limited period of time, your device will send updates to your emergency contacts as your location changes. You’ll receive a notification when this happens. When you use Emergency SOS on your Apple Watch, you can stop these updates by tapping Stop Sharing in the notification on your Apple Watch. When you use Emergency SOS on your iPhone, you can stop these updates by tapping the status bar on your iPhone and selecting Stop Sharing Emergency Location.\n\nIf Location Services is disabled, it will be temporarily enabled in order to notify your emergency contacts with your location. When your location is being shared, you’ll get a reminder to stop every four hours for 24 hours. If you don’t want to send your location to your emergency contacts, on your iPhone go to Settings > Privacy & Security > Location Services > System Services, and tap to turn off Emergency Calls & SOS."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mit Notruf SOS kannst du schnell und einfach einen Notruf absetzen und deine Notfallkontakte benachrichtigen. Beim Absetzen eines Notrufs mit Notruf SOS ruft dein Gerät automatisch die Nummer des lokalen Rettungsdienstes an. In einigen Ländern und Regionen muss möglicherweise der Rettungsdienst ausgewählt werden, der im Notfall verwendet werden soll. Damit die Leitstelle Hilfe vermitteln kann, enthält dieser Anruf möglicherweise deinen Standort, unabhängig davon, ob die Ortungsdienste aktiviert sind oder nicht. Im Anschluss an den Anruf hast du die Option, deine Notfallkontakte per Nachricht über deinen Notruf zu informieren. Auch diese Nachricht enthält deinen aktuellen Standort. Du kannst die Notfallkontakte in deinem Notfallpass in der Health-App auf dem iPhone verwalten.\n\nAnschließend sendet das Gerät deinen Notfallkontakten für eine begrenzte Dauer Aktualisierungen zu deinem Standort, sobald sich dieser ändert. Du erhältst dann eine entsprechende Benachrichtigung. Beim Verwenden von Notruf SOS auf der Apple Watch können diese Aktualisierungen gestoppt werden, indem du in der Mitteilung auf der Apple Watch auf „Nicht mehr teilen“ tippst. Beim Verwenden von Notruf SOS auf deinem iPhone können diese Aktualisierungen gestoppt werden, indem du auf die Statusleiste des iPhone tippst und „SOS-Standort nicht mehr teilen“ wählst.\n\nSollten die Ortungsdienste deaktiviert sein, werden sie kurzzeitig aktiviert, damit deine Notfallkontakte über deinen Standort informiert werden können. Wenn dein Standort geteilt wird, erhältst du für 24 Stunden alle vier Stunden eine Erinnerung zu stoppen. Wenn dein Standort nicht an deine Notfallkontakte gesendet werden soll, öffne die Einstellungen auf deinem iPhone, wähle „Datenschutz & Sicherheit“ > „Ortungsdienste“ > „Systemdienste“ und deaktiviere dort „Notruf & SOS“."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Với SOS khẩn cấp, bạn có thể gọi trợ giúp nhanh chóng và dễ dàng, đồng thời cảnh báo các liên hệ khẩn cấp. Khi bạn thực hiện cuộc gọi với SOS khẩn cấp, thiết bị của bạn tự động gọi đến số điện thoại khẩn cấp tại địa phương. Tại một số quốc gia và vùng, có thể bạn cần lựa chọn dịch vụ mà bạn muốn được chỉ định là dịch vụ khẩn cấp. Để cho phép điều phối viên trợ giúp bạn, cuộc gọi này có thể bao gồm vị trí của bạn, bất kể bạn có bật Dịch vụ định vị hay không. Khi cuộc gọi kết thúc, bạn có thể lựa chọn thông báo cho các liên hệ khẩn cấp bằng tin nhắn với nội dung thông báo rằng bạn đã gọi dịch vụ khẩn cấp. Tin nhắn này cũng bao gồm vị trí hiện tại của bạn. Bạn có thể quản lý các liên hệ khẩn cấp bằng cách sửa ID y tế trong ứng dụng Sức khỏe trên iPhone.\n\nTrong một khoảng thời gian giới hạn, thiết bị của bạn sẽ gửi các cập nhật đến các liên hệ khẩn cấp khi vị trí của bạn thay đổi. Bạn sẽ nhận được thông báo khi việc này xảy ra. Khi bạn sử dụng SOS khẩn cấp trên Apple Watch, bạn có thể dừng các cập nhật này bằng cách chạm vào Dừng chia sẻ trong thông báo trên Apple Watch. Khi bạn sử dụng SOS khẩn cấp trên iPhone, bạn có thể dừng các bản cập nhật này bằng cách chạm vào thanh trạng thái trên iPhone và chọn Dừng chia sẻ vị trí khẩn cấp.\n\nNếu Dịch vụ định vị bị tắt, dịch vụ sẽ được bật tạm thời để thông báo cho các liên hệ khẩn cấp về vị trí của bạn. Khi vị trí của bạn đang được chia sẻ, bạn sẽ nhận được lời nhắc dừng chia sẻ mỗi bốn giờ trong vòng 24 giờ. Nếu bạn không muốn gửi thông tin vị trí của mình đến các liên hệ khẩn cấp, trên iPhone, hãy đi tới Cài đặt > Quyền riêng tư & Bảo mật > Dịch vụ định vị > Dịch vụ hệ thống và chạm để tắt Cuộc gọi khẩn cấp & SOS."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Con “Emergencia SOS”, podrás pedir ayuda y avisar a tus contactos de emergencia rápida y fácilmente. Cuando realizas una llamada con la función “Emergencia SOS”, tu dispositivo llama automáticamente al número de emergencia local. En algunos países y regiones, es posible que tengas que seleccionar el servicio que quieras designar como servicio de emergencia. Con el fin de facilitar las labores de asistencia, esta llamada puede incluir tu ubicación, independientemente de si tienes o no activada la función de localización. Cuando la llamada termina, puedes enviar a tus contactos de emergencia un mensaje que les avise de que has llamado a los servicios de emergencia. El mensaje incluirá tu ubicación actual. Puedes gestionar tus contactos de emergencia desde la pestaña “Datos médicos” de la app Salud del iPhone.\n\nDurante un periodo de tiempo limitado, tu dispositivo enviará actualizaciones a tus contactos de emergencia cuando tu ubicación cambie. Si esto sucede, recibirás una notificación. Si usas “Emergencia SOS” en el Apple Watch, puedes desactivar el envío de actualizaciones tocando “Dejar de compartir” en la notificación del Apple Watch. Si usas “Emergencia SOS” en el iPhone, puedes desactivar el envío de actualizaciones tocando la barra de estado del iPhone y seleccionando la opción “Dejar de compartir ubicación”.\n\nSi la localización está desactivada, se activará temporalmente para enviar tu ubicación a tus contactos de emergencia. En el caso de que se esté compartiendo tu ubicación, durante las siguientes 24 horas te aparecerá un recordatorio cada cuatro horas para que puedas dejar de compartirla. Si no quieres que se envíe tu ubicación a tus contactos de emergencia, en el iPhone ve a Ajustes > Privacidad y seguridad > Localización > Servicios del sistema, y desactiva la opción “Llamadas de emergencia y SOS”."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Com o SOS de Emergência, você pode ligar com rapidez e facilidade para pedir ajuda e alertar seus contatos de emergência. Quando você faz uma ligação com o SOS de Emergência, seu dispositivo liga automaticamente para o número de emergência local. Em alguns países ou regiões, pode ser necessário designar o serviço de emergência de sua escolha. Para permitir que o atendente ajude, essa ligação pode incluir sua localização, mesmo que os Serviços de Localização não estejam ativados. Ao final da ligação, você pode optar por notificar seus contatos de emergência com uma mensagem dizendo que você fez uma ligação para serviços de emergência. Essa mensagem também inclui sua localização atual. Para gerenciar seus contatos de emergência, edite sua Ficha Médica no app Saúde no iPhone.\n\nPor um tempo limitado, o dispositivo enviará atualizações para os seus contatos de emergência conforme sua localização mudar. Você receberá uma notificação quando isso ocorrer. Você pode interromper essas notificações ao usar o SOS de Emergência no Apple Watch. Para isso, toque em Parar Compartilhamento na notificação no Apple Watch. Para interromper essas atualizações ao usar o SOS de Emergência no iPhone, toque na barra de status do iPhone e selecione Parar de Compartilhar Localização.\n\nSe os Serviços de Localização estiverem desativados, eles serão ativados temporariamente a fim de informar sua localização para seus contatos de emergência. Quando sua localização está sendo compartilhada, você recebe um lembrete para parar a cada 4 horas, durante 24 horas. Se você não quiser enviar sua localização aos seus contatos de emergência, no iPhone, acesse Ajustes > Privacidade e Segurança > Serviços de Localização > Serviços do Sistema e toque para desativar Emergência e SOS."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "«Төтенше қоңырау — SOS» функциясының көмегімен төтенше қызметтерге оңай қоңырау шалуға және төтенше контактілерге төтенше жағдай туралы ескертуге болады. «Төтенше қоңырау — SOS» функциясының көмегімен қоңырау шалған кезде, құрылғыңыздан жергілікті төтенше қызмет нөміріне автоматты түрде қоңырау шалынады. Кейбір елдер мен аймақтарда төтенше қызмет болып тағайындалатын сервисті таңдау қажеттігі болуы мүмкін. Геолокация сервистерінің қосулы болу-болмауына қарамастан, диспетчерден көмек алу үшін, қоңырау шалған кезде, геолокацияңыз көрсетілуі мүмкін. Қоңырау аяқталғаннан кейін, төтенше контактілерге төтенше жағдай қызметтеріне қоңырау шалынғаны туралы хабар жіберуге болады. Бұл хабарда геолокацияңыз да көрсетілген. Төтенше контактілерді iPhone құрылғысындағы «Денсаулық» қолданбасында медициналық картаны өңдеу арқылы басқаруға болады.\n\nШектеулі уақыт ішінде құрылғыңыз геолокацияңыз өзгерген сайын төтенше контактілеріңізге жаңартулар жібереді. Бұл жағдайда хабарландыру аласыз. «Төтенше қоңырау — SOS» функциясын Apple Watch сағатында пайдаланғанда, бұл жаңарту әрекеттерін Apple Watch сағатының хабарландыру бөлімінде «Жаңарту әрекетін тоқтату» опциясын түртіп тоқтатуға болады. «Төтенше қоңырау — SOS» функциясын iPhone құрылғысында пайдаланғанда, бұл жаңарту әрекеттерін iPhone құрылғысындағы күй жолағын түртіп, «Төтенше қоңырау геолокациясын бөлісу әрекетін тоқтату» опциясын таңдау арқылы тоқтатуға болады.\n\nГеолокация сервистері өшірулі болған жағдайда, олар төтенше контактілеріңізді геолокацияңыз туралы хабарлау мақсатында уақытша қосылады. Геолокацияңызды бөліскенде 24 сағат ішінде төрт сағат сайын бөлісу әрекетін тоқтату туралы еске салу аласыз. Геолокацияңызды төтенше контактілерге жібергіңіз келмесе, iPhone құрылғыңызда «Реттеулер» > «Құпиялылық және қауіпсіздік» > «Геолокация сервистері» > «Жүйелік сервистер» тармағы арқылы өтіп, «Төтенше қоңыраулар және SOS» функциясын өшіріңіз."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "« Appel d’urgence » vous permet d’appeler les secours et de prévenir vos contacts d’urgence, rapidement et facilement. Lorsque vous passez un appel avec « Appel d’urgence », votre appareil appelle automatiquement le numéro des secours locaux. Dans certains pays et certaines régions, vous devrez peut-être choisir le service que vous voulez utiliser comme service de secours. Pour aider les secours, votre position peut être transmise, que vous ayez ou non activé le service de localisation. Au terme de cet appel, vous pouvez prévenir vos contacts d’urgence par le biais d’un message qui indique que vous avez appelé les secours. Ce message comprend aussi votre position actuelle. Vous pouvez gérer vos contacts d’urgence en modifiant votre fiche médicale dans l’app Santé de l’iPhone.\n\nPendant une période limitée, votre appareil envoie des mises à jour à vos contacts d’urgence pour indiquer votre nouvelle position. Vous recevez une notification quand cela se produit. Si vous utilisez « Appel d’urgence » sur votre Apple Watch, vous pouvez désactiver ces mises à jour en touchant « Ne plus partager » dans la notification reçue sur votre Apple Watch. Si vous utilisez « Appel d’urgence » sur votre iPhone, vous pouvez les désactiver en touchant la barre d’état sur votre iPhone et en sélectionnant « Ne plus partager le lieu de l’urgence ».\n\nSi le service de localisation est désactivé, il est temporairement activé pour permettre à vos contacts d’urgence de recevoir votre position. Lorsque votre position est partagée, vous recevez toutes les quatre heures pendant 24 heures une notification vous rappelant de désactiver le partage. Si vous ne souhaitez pas partager votre position avec vos contacts d’urgence, sur votre iPhone, accédez à Réglages > Confidentialité et sécurité > Service de localisation > Services système, puis touchez le réglage « Appels d’urgence » pour le désactiver."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "З функцією «Сигнал SOS» можна легко й швидко викликати допомогу та оповіщати екстрені контакти. Під час виклику з функцією «Сигнал SOS» ваш пристрій автоматично телефонує на місцевий номер служби екстреної допомоги. У деяких країнах і регіонах може знадобитися вибрати службу, яку ви хочете призначити своєю екстреною службою. Щоб диспетчер зміг надати вам допомогу, цей виклик може містити дані про вашу геопозицію незалежно від того, чи ви ввімкнули Служби локації. Після завершення виклику ви можете сповістити свої екстрені контакти, надіславши їм повідомлення про те, що ви викликали екстрені служби. Це повідомлення також міститиме ваші координати. Ви можете налаштувати свої екстрені контакти у своєму Медичному ID в програмі «Здоровʼя» на iPhone.\n\nПротягом обмеженого часу ваш пристрій надсилатиме нові повідомлення вашим екстреним контактам, поки ваше розташування змінюється. Коли це відбувається, ви отримуєте сповіщення. Під час використання Сигналу SOS на своєму Apple Watch можна зупинити надсилання таких повідомлень, натиснувши «Не поширювати» у сповіщенні на своєму Apple Watch. Під час використання Сигналу SOS на своєму iPhone можна зупинити надсилання таких повідомлень, натиснувши смугу стану на iPhone і вибравши «Сховати місце екстреного виклику».\n\nЯкщо Служби локації вимкнено, вони тимчасово ввімкнуться, щоб сповістити ваші екстрені контакти про вашу геопозицію. Коли поширюється ваша геопозиція, ви отримуватимете нагадування про зупинку кожні чотири години протягом 24 годин. Якщо ви не хочете повідомляти екстреним контактам свою геопозицію, на iPhone відкрийте меню Параметри > Приватність і безпека > Служби локації > Системні сервіси та вимкніть параметр «Екстрені виклики і SOS»."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cu S.O.S. urgențe, puteți apela pentru a cere ajutor și vă puteți alerta contactele pentru urgențe într‑un mod rapid și ușor. Când efectuați un apel cu S.O.S. urgențe, dispozitivul apelează automat numărul local de urgență. În unele țări și regiuni, ar putea fi necesar să alegeți serviciul care doriți să fie desemnat drept serviciul dvs. de urgență. Pentru a‑i permite dispecerului să vă asiste, acest apel poate include localizarea dvs., indiferent dacă serviciile de localizare sunt activate sau nu. După încheierea apelului, puteți opta să vă notificați contactele pentru urgențe cu un mesaj care informează că ați apelat serviciile de urgență. Acest mesaj include și localizarea dvs. curentă. Vă puteți gestiona contactele pentru urgențe prin editarea ID‑ului dvs. medical din aplicația Sănătate de pe iPhone.\n\nPentru o perioadă limitată de timp, dispozitivul le va trimite contactelor pentru urgențe actualizări pe măsură ce localizarea dvs. se modifică. Veți primi o notificare atunci când se întâmplă acest lucru. Dacă utilizați S.O.S. urgențe pe Apple Watch, puteți opri aceste actualizări apăsând pe “Opriți partajarea” în notificarea de pe Apple Watch. Dacă utilizați S.O.S. urgențe pe iPhone, le puteți opri apăsând bara de stare de pe iPhone și selectând “Opriți partajarea localizării”.\n\nDacă serviciile de localizare sunt dezactivate, acestea vor fi activate temporar pentru a permite notificarea contactelor pentru urgențe în legătură cu localizarea dvs. Când partajarea localizării dvs. este activă, veți primi câte un memento de oprire la fiecare patru ore, timp de 24 de ore. Dacă nu doriți să le trimiteți contactelor pentru urgențe localizarea dvs., pe iPhone‑ul dvs. accesați Configurări > Intimitate și securitate > Servicii de localizare > Servicii de sistem și apăsați pentru a dezactiva opțiunea Apeluri de urgență și S.O.S."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Značajkom Hitan poziv možete brzo i jednostavno nazvati pomoć i upozoriti svoje hitne kontakte. Kada uputite poziv značajkom Hitan poziv, vaš uređaj automatski poziva broj lokalne hitne službe. U nekim zemljama i regijama možda ćete trebati odabrati službu koju želite odrediti kao svoju hitnu službu. Taj poziv može sadržavati vašu lokaciju kako bi vam dispečer lakše mogao pomoći, bez obzira jeste li uključili Lokacijske usluge. Nakon što poziv završi, možete odabrati želite li obavijestiti vaše hitne kontakte porukom u kojoj je navedeno da ste nazvali hitne službe. Ta poruka također sadrži vašu trenutačnu lokaciju. Možete upravljati vašim hitnim kontaktima tako da uredite svoju Zdravstvenu kartu u aplikaciji Zdravlje na iPhoneu.\n\nVaš će uređaj tijekom ograničenog vremenskog perioda slati ažuriranja vašim hitnim kontaktima kad se vaša lokacija promijeni. Primit ćete obavijest kad se to desi. Kad upotrebljavate Hitan poziv na svom Apple Watchu, možete isključiti ta ažuriranja tako da dodirnete Prekini dijeljenje u obavijesti na Apple Watchu. Kad Hitan poziv upotrebljavate na iPhoneu, ta ažuriranja možete isključiti dodirom statusne trake na iPhoneu i odabirom Prestani dijeliti hitnu lokaciju.\n\nAko su Lokacijske usluge isključene, privremeno će se uključiti kako bi vaši hitni kontakti mogli biti obaviješteni o vašoj lokaciji. Kada se vaša lokacija dijeli, dobit ćete podsjetnik za zaustavljanje svaka četiri sata tijekom 24 sata. Ako ne želite poslati svoju lokaciju hitnim kontaktima, na svom iPhoneu idite na Postavke > Privatnost i sigurnost > Lokacijske usluge > Usluge sustava i dodirom isključite Hitni slučajevi i hitni pozivi."
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Com SOS emergência, pode contactar rapidamente os serviços de urgência e avisar os seus contactos de emergência. Quando efetua uma chamada através de SOS emergência, o dispositivo liga automaticamente para o número de emergência local. Em alguns países e regiões, poderá ter de escolher o serviço que pretende especificar para emergências. Para facilitar o processamento da sua chamada, esta pode incluir a sua localização, mesmo que os serviços de localização não estejam ativados. Assim que a chamada terminar, pode optar por notificar os seus contactos de emergência com uma mensagem a avisar que contactou os serviços de urgência. Nessa mensagem é incluída a sua localização atual. Pode gerir os contactos de emergência na ficha médica da aplicação Saúde, no iPhone.\n\nDurante um período de tempo limitado, o dispositivo enviará atualizações aos contactos de emergência à medida que a sua localização for mudando. Receberá igualmente uma notificação por cada atualização enviada. Quando usa SOS emergência no Apple Watch, pode deixar de enviar estas atualizações tocando em “Deixar de partilhar” na notificação recebida no Apple Watch. Quando usa esta funcionalidade no iPhone, pode deixar de enviar as atualizações tocando na barra de estado e selecionando a opção “Deixar de partilhar localização”.\n\nSe os serviços de localização estiverem desativados, serão ativados temporariamente para notificar os contactos de emergência da sua localização. Enquanto a sua localização estiver a ser partilhada, receberá um lembrete para interromper a partilha de quatro em quatro horas durante 24 horas. Se preferir que essa informação não lhes seja enviada, no seu iPhone desative “Chamadas de emergência” em Definições > Privacidade e segurança > Serviços de localização > Serviços do sistema."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "緊急SOSを使用すれば、素早く簡単に助けを求める電話をかけたり、緊急連絡先に通知したりすることができます。緊急SOSを使用して電話をかけると、デバイスから自動的に地域の緊急電話番号に通話が発信されます。国や地域によっては、緊急通報サービスとして指定されるサービスを選択する必要がある場合があります。緊急通報指令係があなたを助けるのを可能にするため、位置情報サービスを有効にしているかどうかに関係なく、あなたの現在地の情報が通知されます。通話が終わると、あなたから緊急通報サービスへ通知がなされたというメッセージを、あなたの設定した緊急連絡先に送信することを選択できます。このメッセージにはあなたの現在地の情報も含まれます。緊急連絡先は、iPhoneのヘルスケアアプリのメディカルIDで追加、編集、削除ができます。\n\n限られた期間、あなたの現在地が変わるに従いデバイスはあなたの緊急連絡先に最新情報を送信します。送信が行われると通知があなたに送信されます。 Apple Watchで緊急SOSを使用している場合、最新情報の送信を停止したいときは、Apple Watchの通知で“共有を停止”をタップします。iPhoneで緊急SOSを使用している場合、最新情報の送信を停止したいときは、iPhoneのステータスバーをタップして“緊急時の位置情報の共有を停止”を選択します。\n\n位置情報サービスが無効になっている場合、緊急連絡先にあなたの現在地の情報を知らせるために一時的にサービスが有効になります。あなたの現在地が共有されると、24時間の間、4時間おきに停止のためのリマインダーが送信されます。もし、現在地の情報を緊急連絡先に送信したくない場合は、iPhoneで“設定”＞“プライバシーとセキュリティ”＞“位置情報サービス”＞“システムサービス”に移動して、“緊急電話とSOS”をタップしてオフにします。"
+          }
+        }
+      }
+    },
+    "BUTTON_TITLE": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "See how your data is managed…"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "\nכיצד מנוהלים הנתונים שלך…"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "사용자의 데이터가 어떻게 관리되는지 보기…"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lihat bagaimana data Anda dikelola…"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Katso, miten tietojasi hallitaan…"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verilerinizin nasıl yönetildiğini görün…"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bekijk hoe je gegevens worden beheerd…"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Az adatok kezelésének áttekintése…"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Как осуществляется управление данными…"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scopri come vengono gestiti i tuoi dati…"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Consulta cómo se utiliza tu información…"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Τρόπος διαχείρισης των δεδομένων σας…"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostra com es gestionen les dades…"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Découvrez comment vos données sont gérées…"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "查看你資料的管理方式⋯"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "查看資料管理方式⋯"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se hur dina data hanteras…"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "देखें कि आपका डेटा कैसे प्रबंधित किया जाता है…"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jak zarządzamy Twoimi danymi…"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se, hvordan dine data administreres…"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "See how your data is managed…"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "\nيمكنك التعرُّف على كيفية إدارة بياناتك…"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se hvordan dataene administreres…"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ดูการจัดการข้อมูลของคุณ…"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "了解数据的管理方式…"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kaip tvarkomi jūsų duomenys…"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "See how your data is managed…"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Consulta cómo se utiliza tu información…"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Informace o správě vašich dat…"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Informácie o správe vašich dát…"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lihat cara data anda diurus…"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вижте как се управляват вашите данни…"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kako so upravljani vaši podatki …"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "See how your data is managed…"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "So werden deine Daten verwaltet …"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Xem cách chúng tôi quản lý dữ liệu của bạn…"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Consulta cómo se gestionan tus datos…"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Veja como os seus dados são gerenciados…"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Деректеріңіз қалай басқарылады…"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Découvrez comment sont gérées vos données…"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Як керують вашими даними…"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aflați cum sunt gestionate datele dvs…"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pogledajte kako se upravlja vašim podacima⁠…"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Veja como são geridos os seus dados…"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "個人データの管理方法について確認…"
+          }
+        }
+      }
+    },
+    "SECOND_BULLET": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When the call ends, you can choose to message your emergency contacts with your location and a notification that you have called emergency services."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "כאשר השיחה מסתיימת, באפשרותך לבחור לשלוח הודעה לאנשי הקשר שלך לשעת חירום, המכילה את המיקום שלך ועדכון על כך שהתקשרת לשירותי החירום."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "통화가 종료되면 긴급 연락처에 메시지를 보낼지 선택할 수 있으며, 메시지에는 사용자의 위치와 긴급 서비스에 전화를 걸었다는 것이 포함됩니다."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Setelah panggilan berakhir, Anda dapat memilih untuk mengirimkan pesan ke kontak darurat yang disertai lokasi dan pemberitahuan bahwa Anda telah memanggil layanan darurat."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Puhelun päätyttyä voit halutessasi lähettää ICE-yhteyshenkilöillesi viestin, joka ilmoittaa heille sijaintisi sekä sen, että olet soittanut hätäpuhelun."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Arama sona erdiğinde acil durum kişilerinize konumunuzu ve acil servisi aradığınızı belirten bir bildirim içeren bir mesaj göndermeyi seçebilirsiniz."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wanneer het gesprek is beëindigd, kun je ervoor kiezen of je je SOS-contact­personen een bericht wilt sturen met je locatie en een melding dat je het alarm­nummer hebt gebeld."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Amikor a hívás befejeződött, választhatja azt, hogy a vészhelyzetben értesítendő kontaktoknak elküldi a helyzetét, ezenkívül egy értesítést is arról, hogy Ön felhívta a sürgősségi segélyszolgálatokat."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "После звонка Вы сможете отправить своим контактам на случай ЧП сообщение со своей геопозицией и уведомлением о том, что Вы позвонили в экстренные службы."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Al termine della chiamata, puoi scegliere di inviare un messaggio con la tua posizione ai contatti di emergenza e una notifica per informarli di aver effettuato una telefonata ai servizi di soccorso."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cuando termine tu llamada, puedes elegir avisar a tus contactos de emergencia con tu ubicación y un mensaje que diga que llamaste a los servicios de emergencia."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Στο τέλος της κλήσης, μπορείτε να επιλέξετε να σταλούν ένα μήνυμα στις επαφές έκτακτης ανάγκης σας με την τοποθεσία σας και μια γνωστοποίηση που θα αναφέρει ότι καλέσατε τις Υπηρεσίες έκτακτης ανάγκης."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quan finalitzi la trucada, pots enviar un missatge als contactes d’emergència amb la teva ubicació i avisar‑los que has trucat als serveis d’emergències."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Au terme de cet appel, vous aurez la possibilité d’envoyer un message à vos contacts d’urgence pour partager votre position et leur indiquer que vous avez appelé les services d’urgence."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "當通話結束時，你可選擇傳送位置訊息給你的緊急聯絡人，通知他們你已撥打緊急服務電話。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "通話結束後，你可以選擇透過訊息將你的位置傳送給緊急聯絡人，並通知對方你已致電緊急服務。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "När samtalet avslutas kan du välja att skicka ett meddelande till dina nödkontakter med din platsinformation och en notis om att du har ringt ett nödsamtal."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "कॉल के समाप्त होने पर आप अपने आपातकालीन संपर्कों को अपने स्थान और सूचना के साथ संदेश भेज सकते हैं। सूचना में बताया जाता है कि आपने आपातकालीन सेवाओं को कॉल किया है।"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Po zakończeniu tego połączenia możesz wybrać, czy chcesz wysłać do kontaktów alarmowych wiadomość z Twoim położeniem oraz informacją o wykonanym połączeniu ze służbami ratowniczymi."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Når opkaldet afsluttes, kan du vælge at sende en besked til dine nødkontakter med din lokalitet og en notifikation om, at du har ringet til alarmcentralen."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When the call ends, you can choose to message your emergency contacts with your location and a notification that you have called emergency services."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عند انتهاء المكالمة، يمكنك اختيار أن ترسل إلى جهات اتصال الطوارئ لديك رسالة تتضمن موقعك وإشعارًا بأنك اتصلت بخدمات الطوارئ."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Når samtalen avsluttes, kan du velge å sende nødkontaktene dine en melding med posisjonen din og beskjed om at du allerede har ringt nødnummeret."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เมื่อการโทรหาบริการฉุกเฉินสิ้นสุด คุณสามารถเลือกที่จะส่งข้อความถึงรายชื่อติดต่อฉุกเฉินของคุณพร้อมตำแหน่งที่ตั้งและการแจ้งเตือนของคุณที่ระบุว่า คุณได้โทรหาบริการฉุกเฉิน"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "呼叫结束后，你可以选择通过信息将你的位置发送给紧急联系人，并通知对方你已呼叫紧急服务。"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kai skambutis pasibaigs, galite pasirinkti, ar norite siųsti žinutę adresatams nelaimės atveju, kurioje nurodoma jūsų vieta, ir pranešimą, kad skambinote pagalbos tarnyboms."
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When the call ends, you can choose to message your emergency contacts with your location and a notification that you have called emergency services."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cuando termine tu llamada, puedes elegir avisar a tus contactos de emergencia con tu ubicación y un mensaje que diga que llamaste a los servicios de emergencia."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Po ukončení hovoru můžete svým nouzovým kontaktům poslat zprávu s údajem o vaší poloze a s oznámením, že jste zavolali tísňovým službám."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Po skončení hovoru môžete tiesňovým kontaktom poslať správu s vašou polohou a hlásením o tom, že ste kontaktovali tiesňové služby."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apabila panggilan tamat, anda boleh memilih untuk menghantar mesej kepada kenalan kecemasan anda dengan lokasi anda dan pemberitahuan bahawa anda telah memanggil perkhidmatan kecemasan."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Когато обаждането приключи, можете да изберете да изпратите съобщение до вашите контакти при спешни случаи с вашето местоположение и известие, че сте се обадили на службите за спешна помощ."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Po koncu klica lahko svojim stikom za nujne primere pošljete sporočilo z lokacijo in obvestilom, da ste poklicali službo za nujno pomoč."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When the call ends, you can choose to message your emergency contacts with your location and a notification that you have called emergency services."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Im Anschluss an den Anruf hast du die Option, deine Notfallkontakte per Nachricht über deinen Standort zu informieren und ihnen mitzuteilen, dass du einen Notruf abgesetzt hast."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Khi cuộc gọi kết thúc, bạn có thể lựa chọn nhắn tin cho các liên hệ khẩn cấp với thông tin vị trí của bạn và một thông báo rằng bạn đã gọi dịch vụ khẩn cấp."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cuando termine la llamada, podrás elegir enviar un mensaje a tus contactos de emergencia con tu ubicación avisándoles de que has llamado a los servicios de emergencia."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ao final da ligação, você pode optar por enviar uma mensagem aos seus contatos de emergência com a sua localização e uma notificação informando que você fez uma ligação para os serviços de emergência."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Қоңырау аяқталғанда, төтенше контактілеріңізге геолокация көрсетілген және төтенше жағдай қызметтеріне қоңырау шалғаныңыз туралы хабарландыру бар хабар жіберуге болады."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Au terme de l’appel, vous pouvez choisir d’envoyer à vos contacts d’urgence un message comportant votre position, ainsi qu’une notification indiquant que vous avez appelé les secours."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Після завершення виклику ви можете надіслати повідомлення екстреним контактам зі своєю геопозицією та сповіщенням про те, що ви викликали екстрені служби."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "După încheierea apelului, puteți opta să trimiteți contactelor pentru urgențe un mesaj cu localizarea dvs. și notificarea că ați apelat serviciile de urgență."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kad poziv završi, možete odabrati želite li poslati svojim hitnim kontaktima poruku u kojoj je navedena vaša lokacija i obavijest da ste nazvali hitne službe."
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quando a chamada terminar, pode optar por enviar uma mensagem aos seus contactos de emergência com a sua localização e uma notificação a avisar que contactou os serviços de urgência."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "通話の終了時に、あなたの現在地とあなたが緊急通報サービスに電話したという通知を含むメッセージを、あなたの設定した緊急連絡先に送信することを選択できます。"
+          }
+        }
+      }
+    },
+    "BUTTON_CAPTION": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Emergency SOS will share your location when your device calls emergency services. Your emergency contacts will also be notified with your location. Location will be shared even if you have not enabled Location Services."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "״חירום SOS״ ישתף את המיקום שלך כאשר מכשירך יחייג לשירותי חירום. המיקום שלך יישלח גם לאנשי הקשר שלך לשעת חירום. שיתוף המיקום יתבצע גם אם לא הפעלת את ״שירותי מיקום״."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "사용자의 기기에서 긴급 서비스에 전화를 걸면 ‘긴급 구조 요청’이 사용자의 위치를 공유합니다. 또한, 사용자의 위치와 함께 긴급 연락처에 통지합니다. 위치 서비스를 활성화하지 않아도 위치가 공유됩니다."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Darurat SOS akan membagikan lokasi Anda saat perangkat Anda memanggil layanan darurat. Kontak darurat Anda juga akan diberi tahu mengenai lokasi Anda. Lokasi akan dibagikan meskipun Anda belum mengaktifkan Layanan Lokasi."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hätätila SOS jakaa sijaintisi, kun laitteellasi soitetaan hätäpuhelu. Myös ICE-yhteyshenkilöille ilmoitetaan sijaintisi. Sijaintisi jaetaan, vaikka Sijaintipalvelut eivät ole päällä."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aygıtınız, acil servisi aradığında Acil SOS konumunuzu paylaşır. Konumunuz acil durum kişilerinize de bildirilir. Konum, Konum Servisleri etkinleştirilmemiş olsa bile paylaşılır."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SOS-noodmelding deelt je locatie wanneer je apparaat het alarm­nummer belt. Je locatie wordt ook door­gegeven aan SOS-contact­personen, zelfs als je locatievoorzieningen niet hebt ingeschakeld."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Vészhelyzet – SOS funkció meg fogja osztani az Ön helyzetét, amikor az eszköze a sürgősségi segélyszolgálatokat hívja. A vészhelyzetben értesítendő kontaktjai is értesítést fognak kapni, amely tartalmazza az Ön helyzetét. A helyzete akkor is meg lesz osztva, ha nem engedélyezte a Helymeghatározást."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Функция «Экстренный вызов — SOS» передает Вашу геопозицию, когда с Вашего устройства совершается вызов в экстренные службы. Ваши контакты на случай ЧП также будут оповещены и получат Вашу геопозицию. Ваша геопозиция будет отправлена, даже если Службы геолокации выключены."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quando viene effettuata una chiamata ai servizi di soccorso, la funzionalità “SOS emergenze” condividerà la tua posizione. La tua posizione viene condivisa sia con i soccorritori, sia con i tuoi contatti di emergenza. Questo avviene anche se non hai attivato la localizzazione."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Emergencia SOS compartirá tu ubicación cuando tu dispositivo llame a los servicios de emergencia. Tus contactos de emergencia también recibirán una notificación con tu ubicación. La ubicación se compartirá incluso si no tienes activado Localización."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το Επείγον SOS θα κοινοποιεί την τοποθεσία σας όταν η συσκευή σας καλεί τις Υπηρεσίες έκτακτης ανάγκης. Η τοποθεσία σας κοινοποιείται επίσης στις επαφές έκτακτης ανάγκης σας. Η τοποθεσία θα κοινοποιείται ακόμη κι αν δεν έχετε ενεργοποιήσει τις Υπηρεσίες τοποθεσίας."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’avís d’emergència SOS compartirà la teva ubicació quan el dispositiu truqui als serveis d’emergències. A més, s’enviarà una notificació amb la teva ubicació als contactes d’emergència. Es compartirà la ubicació encara que no tinguis la localització activada."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Urgence SOS partage votre position lorsque votre appareil appelle les services d’urgence. Vos contacts d’urgence seront notifiés et recevront aussi votre position. Votre position sera partagée même si vous n’avez pas activé le service de localisation."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "「SOS緊急服務」會在你的裝置聯絡緊急服務單位時分享你的位置。你的緊急聯絡人也會收到你所在位置的通知。即使你未啟用「定位服務」，仍會分享位置。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "當你的裝置致電緊急服務時，「緊急求助SOS」會分享你的位置。同時會通知你的緊急聯絡人你的位置。即使你沒有開啟定位服務，有關功能仍然會分享你的位置。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nödanrop SOS delar din platsinformation när enheten kontaktar räddningstjänsten. Dina nödkontakter får också ett meddelande med din platsinformation. Platsinformationen delas oavsett om du har aktiverat Platstjänster."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "जब आपका डिवाइस आपातकालीन सेवा को कॉल करता है तब आपातकालीन SOS आपका स्थान शेयर करेगा। आपके आपातकालीन संपर्कों को भी आपके स्थान के साथ सूचित किया जाएगा। चाहे आपने स्थान सेवा को सक्षम नहीं किया हो, तब भी स्थान शेयर किया जाएगा।"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gdy Twoje urządzenie nawiązuje połączenie ze służbami ratowniczymi, funkcja Alarmowe SOS udostępnia Twoje położenie. Twoje kontakty alarmowe również są powiadamiane o Twoim położeniu. Położenie jest udostępniane nawet wtedy, gdy usługi lokalizacji są wyłączone."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nød‑SOS deler din lokalitet, når din enhed ringer til alarmcentralen. Dine nødkontakter bliver desuden underrettet og får tilsendt din lokalitet. Lokaliteten bliver delt, uanset om du har slået Lokalitetstjenester til eller ej."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Emergency SOS will share your location when your device calls emergency services. Your emergency contacts will also be notified with your location. Location will be shared even if you have not enabled Location Services."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ستشارك طوارئ SOS موقعك عندما يتصل جهازك بخدمات الطوارئ. سيتم إعلام جهات اتصال الطوارئ لديك أيضًا بموقعك. ستتم مشاركة الموقع حتى في حال عدم تمكين خدمات الموقع."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nødanrop (SOS) deler posisjonen din når enheten din ringer nødetatene. Nødkontaktene dine vil også bli varslet med posisjonen din. Posisjonen vil deles selv om du ikke har aktivert Stedstjenester."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SOS ฉุกเฉินจะแชร์ตำแหน่งที่ตั้งของคุณเมื่ออุปกรณ์ของคุณเรียกใช้บริการฉุกเฉิน รายชื่อติดต่อฉุกเฉินของคุณจะได้รับการแจ้งเตือนเกี่ยวกับตำแหน่งที่ตั้งของคุณด้วยเช่นกัน ตำแหน่งที่ตั้งจะถูกแชร์แม้ว่าคุณไม่ได้เปิดใช้งานบริการหาตำแหน่งที่ตั้ง"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“SOS紧急联络”会在设备呼叫紧急服务时共享你的位置。你的紧急联系人还会收到包含你位置的通知。即使未启用“定位服务”，位置也会共享。"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SOS signalas bendrins jūsų vietą, kai įrenginys paskambins pagalbos tarnyboms. Jūsų adresatai nelaimės atveju taip pat bus informuojami apie jūsų vietą. Vieta bus bendrinama net tuomet, jei nebūsite įjungę vietos nustatymo paslaugų."
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Emergency SOS will share your location when your device calls emergency services. Your emergency contacts will also be notified with your location. Location will be shared even if you have not enabled Location Services."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Emergencia SOS compartirá tu ubicación cuando tu dispositivo llame a los servicios de emergencia. Tus contactos de emergencia también recibirán una notificación con tu ubicación. La ubicación se compartirá incluso si no tienes activado Localización."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funkce Tíseň SOS při volání tísňovým službám z vašeho zařízení nasdílí vaši polohu. Informace o vaší poloze bude předána také vašim tísňovým kontaktům. Sdílení polohy bude v tomto případě fungovat, i když máte vypnuté polohové služby."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pri kontaktovaní záchranných služieb z vášho zariadenia zdieľa funkcia SOS vašu polohu. Informácia o vašej polohe sa poskytne aj vašim tiesňovým kontaktom. Poloha sa bude zdieľať, aj keď máte vypnuté lokalizačné služby."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SOS Kecemasan akan berkongsi lokasi anda apabila peranti anda menghubungi perkhidmatan kecemasan. Kenalan kecemasan anda turut akan dimaklumkan dengan lokasi anda. Lokasi akan dikongsi walaupun anda tidak mendayakan Perkhidmatan Lokasi."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SOS обаждане ще сподели вашето местоположение, когато вашето устройство се обади на службите за спешна помощ. Вашите спешни контакти също ще бъдат известени за вашето местоположение. Местоположението ще бъде споделено дори ако не сте активирали Услугите за местоположение."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ko vaša naprava pokliče službo za nujno pomoč, bo z nujnim pozivom SOS deljena vaša lokacija. Vaši stiki za nujne primere bodo prav tako obveščeni o vaši lokaciji. Lokacija bo deljena, tudi če niste omogočili lokacijskih storitev."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Emergency SOS will share your location when your device calls emergency services. Your emergency contacts will also be notified with your location. Location will be shared even if you have not enabled Location Services."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beim Verwenden von Notruf SOS wird dein aktueller Standort geteilt, wenn über dein Gerät die Rettungsdienste angerufen werden. Deine Notfallkontakte werden ebenfalls über deinen aktuellen Standort benachrichtigt. Dein Standort wird auch dann geteilt, wenn die Ortungsdienste nicht aktiviert wurden."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SOS khẩn cấp sẽ chia sẻ thông tin vị trí của bạn khi thiết bị của bạn gọi các dịch vụ khẩn cấp. Các liên hệ khẩn cấp của bạn cũng sẽ nhận được thông báo về vị trí của bạn. Vị trí sẽ được chia sẻ ngay cả khi bạn không bật Dịch vụ định vị."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La función “Emergencia SOS” compartirá tu ubicación cuando tu dispositivo llame a los servicios de emergencia. También se enviará una notificación a tus contactos de emergencia informándoles de tu ubicación. Aunque no tengas activada la localización, se compartirá tu ubicación."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O SOS de Emergência compartilhará a sua localização quando o seu dispositivo ligar para serviços de emergência. Seus contatos de emergência também serão notificados a respeito da sua localização. A localização será compartilhada mesmo se você não tiver ativado os Serviços de Localização."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Құрылғыңыздан төтенше қызметтерге қоңырау шалынғанда, «Төтенше қоңырау — SOS» функциясы геолокацияңызды бөліседі. Төтенше контактілеріңізге де геолокацияңыз туралы хабарланады. Геолокация сервистері қосулы болмаса да, геолокация ортақ пайдаланылады."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "« Appel d’urgence » transmet votre position géographique lorsque votre appareil appelle les secours. Vos contacts d’urgence reçoivent également votre position. Celle-ci est communiquée même si vous n’avez pas activé le service de localisation."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сигнал SOS поширюватиме вашу геопозицію, коли ваш пристрій телефонує до екстрених служб. Ваша геопозиція також повідомлятиметься вашим екстреним контактам. Геопозицію буде поширено, навіть якщо ви не ввімкнули служби локації."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funcționalitatea S.O.S. urgențe va partaja localizarea dvs. atunci când dispozitivul apelează serviciile de urgență. Contactele pentru urgențe vor fi notificate, de asemenea, în legătură cu localizarea dvs. Aceasta va fi partajată chiar dacă nu ați activat serviciile de localizare."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Značajka Hitan poziv dijelit će vašu lokaciju kad vaš uređaj pozove hitne službe. Vaši hitni kontakti također će biti obaviješteni o vašoj lokaciji. Lokacija će se podijeliti čak i ako nemate omogućene Lokacijske usluge."
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SOS emergência partilhará a sua localização sempre que o seu dispositivo contacte os serviços de urgência. Os seus contactos de emergência serão igualmente notificados com a sua localização. A sua localização será partilhada mesmo que não tenha ativado os serviços de localização."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "緊急SOSでは、デバイスから緊急通報サービスに連絡する際に、あなたの位置情報が共有されます。また、緊急連絡先にも、あなたの位置情報が通知されます。位置情報は、位置情報サービスを有効にしていない場合でも共有されます。"
+          }
+        }
+      }
+    },
+    "SPLASH_SUMMARY": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Emergency SOS is designed to protect your information and enable you to choose what you share."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "״חירום SOS״ תוכנן באופן שמגן על המידע שלך ומאפשר לך לבחור מה לשתף ומה לא לשתף."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "긴급 구조 요청은 사용자의 정보를 보호하도록 설계되었으며 공유할 내용을 사용자가 선택할 수 있습니다."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Darurat SOS dirancang untuk melindungi informasi Anda dan memungkinkan Anda untuk memilih apa yang Anda bagikan."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hätätila SOS on suunniteltu niin, että tietosi ovat turvassa. Voit itse valita, mitä haluat jakaa."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acil SOS, bilgilerinizi koruyacak ve neyi paylaşacağınızı seçmenizi sağlayacak şekilde tasarlanmıştır."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SOS-nood­melding is ont­worpen om je gegevens te beschermen en om je te laten bepalen wat je deelt."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Vészhelyzet – SOS funkciót úgy tervezték, hogy megvédje az Ön információit, és lehetővé tegye, hogy Ön kiválassza, mit oszt meg."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ваши данные, используемые функцией «Экстренный вызов — SOS», надежно защищены, и только Вы решаете, чем поделиться."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La funzionalità “SOS emergenze” è concepita in modo da proteggere le tue informazioni e consentirti di scegliere i contenuti da condividere."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Emergencia SOS se diseñó para proteger tu información y permitirte elegir lo que compartes."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το Επείγον SOS έχει σχεδιαστεί με τρόπο που προστατεύει τις πληροφορίες σας και σας δίνει τη δυνατότητα να επιλέγετε τα δεδομένα προς κοινοποίηση."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’avís d’emergència SOS s’ha dissenyat per protegir la teva informació i perquè puguis decidir què vols compartir."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le service Urgence SOS est conçu pour protéger vos informations et vous permettre de choisir ce que vous souhaitez partager."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "「SOS緊急服務」的設計可保護你的資訊並讓你選擇分享的內容。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "「緊急求助SOS」的設計可保護你的資料並讓你選擇分享內容。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nödanrop SOS har utformats för att skydda din information och låta dig välja vad du vill dela."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "आपातकालीन SOS आपकी जानकारी की सुरक्षा के लिए डिज़ाइन किया गया है और आप क्या शेयर करते हैं यह चुनने में आपको सक्षम करता है।"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funkcja Alarmowe SOS została zaprojektowana z myślą o ochronie Twoich danych i pozwala Ci decydować o ich udostępnianiu."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nød‑SOS er designet til at beskytte dine oplysninger og give dig mulighed for at vælge, hvad du deler."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Emergency SOS is designed to protect your information and enable you to choose what you share."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "صُمِّمَت طوارئ SOS بطريقة تحمي معلوماتك وتمكّنك من اختيار ما تود مشاركته."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nødanrop (SOS) beskytter informasjonen din og lar deg velge hva du vil dele."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“SOS ฉุกเฉิน” ได้รับการออกแบบมาเพื่อปกป้องข้อมูลของคุณและทำให้คุณสามารถเลือกสิ่งที่คุณต้องการแชร์ได้"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SOS紧急联络旨在保护你的信息并可让你选择要共享的内容。"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SOS signalo funkcija sukurta jūsų informacijai apsaugoti ir leisti jums patiems pasirinkti, kokią informaciją norite bendrinti."
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Emergency SOS is designed to protect your information and enable you to choose what you share."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Emergencia SOS se diseñó para proteger tu información y permitirte elegir lo que compartes."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tíseň SOS chrání vaše osobní údaje a ponechává vám kontrolu nad tím, co sdílíte."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funkcia SOS chráni vaše osobné údaje a ponecháva vám plnú kontrolu nad tým, čo zdieľate."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SOS Kecemasan direka bentuk untuk melindungi maklumat anda dan membolehkan anda memilih perkara yang anda kongsi."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SOS обаждане е създадено да защитава вашата информация и да ви позволи да избирате какво да споделяте."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nujni poziv SOS je zasnovan tako, da varuje vaše podatke in vam omogoča, da izberete, kaj boste delili."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Emergency SOS is designed to protect your information and enable you to choose what you share."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„Notruf SOS“ ist dafür konzipiert, deine Daten zu schützen, und du kannst auswählen, was du teilst."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SOS khẩn cấp được thiết kế để bảo vệ thông tin của bạn và cho phép bạn chọn nội dung chia sẻ."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La función “Emergencia SOS” se ha diseñado para mantener protegida tu información y para que puedas escoger lo que quieres compartir."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O SOS de Emergência é projetado para proteger as suas informações e permitir que você escolha os dados que compartilha."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "«Төтенше қоңырау — SOS» функциясы ақпаратыңызды қорғау және сізге бөлісу қажет объектілерді таңдауға мүмкіндік беру мақсатында жасалған."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La fonctionnalité « Appel d’urgence » est conçue pour protéger vos données et vous permettre de choisir ce que vous souhaitez partager."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Функцію «Сигнал SOS» спроєктовано так, щоб захищати вашу інформацію і давати вам змогу обирати, що поширювати."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funcționalitatea S.O.S. urgențe este concepută pentru a vă proteja informațiile și pentru a vă permite să alegeți ceea ce partajați."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hitan poziv dizajniran je kako bi zaštitio vaše informacije i omogućio odabir sadržaja koje želite podijeliti."
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A funcionalidade SOS emergência foi concebida de modo a proteger a informação pessoal e permitir a cada utilizador escolher o que pretende partilhar."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "緊急SOSはあなたの個人情報を保護するように設計され、どの情報を共有するかを選択できるようになっています。"
+          }
+        }
+      }
+    },
+    "SPLASH_SHORT_TITLE": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Emergency SOS"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "חירום SOS"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "긴급 구조 요청"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Darurat SOS"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hätätila SOS"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acil SOS"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SOS-nood­melding"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vészhelyzet – SOS"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Экстренный вызов — SOS"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SOS emergenze"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Emergencia SOS"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Επείγον SOS"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Emergència SOS"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Urgence SOS"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SOS緊急服務"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "緊急求助SOS"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nödanrop SOS"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "आपातकालीन SOS"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alarmowe SOS"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nød‑SOS"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Emergency SOS"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "طوارئ SOS"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nødanrop (SOS)"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SOS ฉุกเฉิน"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SOS紧急联络"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SOS signalas"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Emergency SOS"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Emergencia SOS"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tíseň SOS"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SOS"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SOS Kecemasan"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SOS обаждане"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nujni poziv SOS"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Emergency SOS"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notruf SOS"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SOS khẩn cấp"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Emergencia SOS"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SOS de Emergência"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Төтенше қоңырау — SOS"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Appel d’urgence"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сигнал SOS"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "S.O.S. urgențe"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hitan poziv"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "SOS emergência"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "緊急SOS"
+          }
+        }
+      }
+    },
+    "FIRST_BULLET": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When using Emergency SOS to call emergency services, the call may include your location, regardless of whether you enable Location Services, to allow the call handler to assist you."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "במהלך שימוש ב״חירום SOS״ כדי להתקשר לשירותי חירום, השיחה עשויה לכלול את מיקומך גם אם לא הפעלת את ״שירותי מיקום״, כדי לאפשר למוקדנים לסייע לך."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "‘긴급 구조 요청’을 사용하여 긴급 서비스에 전화하면 구조 차량의 배차를 위해 위치 서비스 기능의 활성화 여부와 상관없이 사용자의 위치가 통화에 포함될 수 있습니다."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saat menggunakan Darurat SOS untuk memanggil layanan darurat, panggilan tersebut dapat disertai dengan lokasi Anda, terlepas dari apakah Anda mengaktifkan Layanan Lokasi atau tidak, agar petugas operator dapat membantu Anda."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kun soitat hätäkeskukseen Hätätila SOS ‑toiminnolla, puhelu saattaa sisältää sijaintitietosi, riippumatta siitä, ovatko Sijaintipalvelut päällä vai ei, jotta hätäkeskus voi auttaa sinua."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acil servisi aramak için Acil SOS’i kullandığınızda bu arama, görevlinin size yardım edebilmesi için Konum Servisleri’nin etkin olup olmadığına bakmaksızın konumunuzu içerebilir."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wanneer je 'SOS-nood­melding' gebruikt om de hulp­diensten te bellen, kan de oproep je locatie bevatten, ongeacht of je locatie­voorzieningen hebt ingeschakeld, zodat de centrale je kan helpen."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ha a Vészhelyzet – SOS funkció használatával hívja fel a sürgősségi segélyszolgálatokat, a hívás tartalmazhatja az Ön helyzetét, függetlenül attól, hogy Ön engedélyezi-e a Helymeghatározást, mivel ez lehetővé teszi, hogy a diszpécser segítsen Önnek."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Когда Вы используете функцию «Экстренный вызов — SOS» для вызова экстренных служб, при вызове могут передаваться данные о Вашей геопозиции независимо от того, включены ли Службы геолокации, чтобы диспетчер смог Вам помочь."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quando viene effettuata una chiamata ai servizi di soccorso tramite la funzionalità “SOS Emergenze”, la chiamata potrebbe includere la tua posizione, anche se la localizzazione non è stata attivata, al fine di consentire ai soccorsi di assisterti."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cuando usas Emergencia SOS para llamar a los servicios de emergencia, se puede incluir tu ubicación para que quien atienda tu llamada pueda ayudarte, sin importar si activaste Localización."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Αν χρησιμοποιήσετε το Επείγον SOS για κλήση στις Υπηρεσίες έκτακτης ανάγκης, η κλήση ενδέχεται να περιλαμβάνει την τοποθεσία σας, ανεξάρτητα από το αν έχετε ενεργοποιήσει τις Υπηρεσίες τοποθεσίας, ώστε να μπορέσει να σας βοηθήσει ο διεκπεραιωτής του κέντρου Υπηρεσιών έκτακτης ανάγκης."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si utilitzes l’avís d’emergència SOS per trucar als serveis d’emergències, és possible que la trucada inclogui la teva ubicació, tant si tens la localització activada com si no, perquè et puguin localitzar."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lorsque vous utilisez Urgence SOS pour appeler les services d’urgence, l’appel pourrait inclure votre position, que vous ayez activé le service de localisation ou non, afin d’aider le répartiteur à vous porter assistance."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "使用「SOS緊急服務」來撥打緊急服務時，不論你是否已啟用「定位服務」，此通話都有可能包含你的位置，以方便派遣員協助你。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "使用「緊急求助SOS」致電緊急服務時，不論你是否已啟用「定位服務」，通話都可能會包括你的位置以讓派遣員向你提供幫助。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "När du använder Nödanrop SOS till att kontakta räddningstjänsten kan detta samtal inkludera din plats, oavsett om du har aktiverat Platstjänster, så att utryckningspersonal kan hjälpa dig."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "आपातकालीन सेवाओं को कॉल करने के लिए आपातकालीन SOS का उपयोग करते हुए, डिस्पैचर को सहायता की अनुमति देने के लिए इस कॉल में आपका स्थान शामिल हो सकता है, चाहे आप स्थान सेवा को सक्षम करें या नहीं।"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aby dyspozytor mógł Ci pomóc, gdy połączysz się ze służbami ratowniczymi przy użyciu funkcji Alarmowe SOS, Twoje położenie może zostać mu przekazane niezależnie od tego, czy usługi lokalizacji są włączone."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Når du bruger Nød‑SOS til at ringe til alarmcentralen, kan opkaldet inkludere din lokalitet, hvad enten du har slået Lokalitetstjenester til eller ej, så alarmcentraloperatøren har mulighed for at hjælpe dig."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When using Emergency SOS to call emergency services, the call may include your location, regardless of whether you enable Location Services, to allow the dispatcher to assist you."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "عند استخدام طوارئ SOS للاتصال بخدمات الطوارئ، قد تتضمن المكالمة موقعك - سواء كانت خدمات الموقع قيد التشغيل أم لا - للسماح لمرسل فِرق الطوارئ بمساعدتك."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Når du bruker Nødanrop (SOS) til å kontakte nødetatene, kan anropet inkludere posisjonen din, uavhengig av om du har aktivert Stedstjenester eller ikke, for å gjøre det lettere for nødetatene å hjelpe deg."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เมื่อใช้ SOS ฉุกเฉินเพื่อโทรหาบริการฉุกเฉิน การโทรนี้อาจรวมตำแหน่งที่ตั้งของคุณด้วยไม่ว่าคุณจะเปิดใช้งานบริการหาตำแหน่งที่ตั้งหรือไม่ก็ตาม ทั้งนี้เพื่อให้ผู้ช่วยเหลือสามารถมาช่วยคุณได้"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "使用“SOS紧急联络”呼叫紧急服务时，通话可能会包含你的位置以允许调度员向你提供帮助，无论你是否已启用“定位服务”。"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kai naudojate SOS signalo funkciją, kad paskambintumėte pagalbos tarnyboms, į skambutį gali būti įtraukiama jūsų vieta, neatsižvelgiant į tai, ar esate įjungę vietos nustatymo paslaugas, kad dispečeris galėtų jums padėti."
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When using Emergency SOS to call emergency services, the call may include your location, regardless of whether you enable Location Services, to allow the call handler to assist you."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cuando usas Emergencia SOS para llamar a los servicios de emergencia, se puede incluir tu ubicación para que quien atienda tu llamada pueda ayudarte, sin importar si activaste Localización."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Když pomocí funkce Tíseň SOS zavoláte tísňovým službám, hovor může obsahovat údaj o vaší poloze bez ohledu na to, zda máte nebo nemáte zapnuté polohové služby, aby vám mohl dispečer pomoct."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keď prostredníctvom funkcie SOS zavoláte tiesňovým službám, súčasťou hovoru môže byť vaša poloha bez ohľadu na to, či máte alebo nemáte zapnuté lokalizačné služby, aby vám dispečer vedel pomôcť."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apabila menggunakan SOS Kecemasan untuk menghubungi perkhidmatan kecemasan, panggilan mungkin menyertakan lokasi anda, tidak kira sama ada anda mendayakan Perkhidmatan Lokasi, untuk membolehkan pembantu kecemasan membantu anda."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Когато използвате SOS обаждане, за да се обадите на службите за спешна помощ, обаждането може да включва вашето местоположение, независимо дали сте активирали функцията Услуги за местоположение, за да позволите на диспечера да ви помогне."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ko uporabljate nujni poziv SOS za klicanje služb za nujno pomoč, lahko klic vsebuje vašo lokacijo, da vam dispečer lažje pomaga, ne glede na to, ali ste omogočili lokacijske storitve."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "When using Emergency SOS to call emergency services, the call may include your location, regardless of whether you enable Location Services, to allow the operator to assist you."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wenn Notruf SOS für einen Notruf verwendet wird, enthält dieser Anruf möglicherweise deinen Standort, unabhängig davon, ob die Ortungsdienste aktiviert sind oder nicht, damit die Leitstelle dir besser helfen kann."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Khi sử dụng SOS khẩn cấp để gọi các dịch vụ khẩn cấp, cuộc gọi có thể bao gồm vị trí của bạn, bất kể bạn có bật Dịch vụ định vị hay không, để cho phép điều phối viên trợ giúp bạn."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cuando usas la función “Emergencia SOS” para llamar a los servicios de emergencia, la llamada puede incluir tu ubicación, independientemente de si tienes o no activada la función de localización, con el fin de facilitar las labores de asistencia."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quando você usar o SOS de Emergência, a ligação poderá incluir sua localização, independentemente de você ter ativado ou não os Serviços de Localização. Isso ocorre para que o atendente possa auxiliar você."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "«Төтенше қоңырау — SOS» функциясын төтенше қызметтерге қоңырау шалу үшін пайдаланған кезде, геолокация сервистерінің қосулы болу-болмауына қарамастан, диспетчердің сізге көмектесуіне мүмкіндік беру үшін қоңырау шалғанда геолокацияңыз көрсетілуі мүмкін."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quand vous utilisez « Appel d’urgence » pour appeler les secours, votre position peut être transmise pour aider ces derniers, que vous ayez ou non activé le service de localisation."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Під час використання функції «Сигнал SOS» для виклику екстрених служб виклик може містити дані про вашу геопозицію, незалежно від того, чи ввімкнули ви Служби локації. Так диспетчер зможе допомогти вам."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Când utilizați S.O.S. urgențe pentru a apela serviciile de urgență, apelul poate include localizarea dvs., indiferent dacă serviciile de localizare sunt activate sau nu, pentru a‑i permite dispecerului să vă asiste."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kad koristite značajku Hitan poziv, poziv može sadržavati vašu lokaciju kako bi vam dispečer lakše mogao pomoći, bez obzira jeste li uključili Lokacijske usluge."
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ao usar SOS emergência para ligar para os serviços de urgência, a chamada pode incluir a sua localização, mesmo que os serviços de localização não estejam ativados, para facilitar o processamento da chamada."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "緊急SOSを使用して緊急通報サービスに連絡すると、緊急通報指令係があなたを救助できるようにするため、位置情報サービスを有効にしているかどうかに関係なく、あなたの現在地の情報が通知されます。"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

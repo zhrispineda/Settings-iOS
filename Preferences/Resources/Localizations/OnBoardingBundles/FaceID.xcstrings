@@ -1,0 +1,1381 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "FOOTER_TEXT": {
+      "extractionState": "manual",
+      "localizations": {
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A autenticação com Face ID é efetuada através da câmara TrueDepth\n\nFace ID permite‑lhe desbloquear o iPhone ou iPad. Face ID recorre à câmara TrueDepth para determinar se a pessoa que está a olhar para o iPhone ou iPad é o utilizador registado. Face ID pode igualmente ser usado para fazer pagamentos com o Apple Pay, efetuar compras na App Store e autenticar nas aplicações.\n\nOs dados de Face ID, incluindo representações matemáticas do seu rosto, são cifrados e protegidos por uma chave que está disponível apenas no Secure Enclave. Estes dados são continuamente aperfeiçoados e atualizados sempre que utiliza Face ID, inclusive quando efetua a autenticação com sucesso, de modo a melhorar a sua experiência. Os dados são igualmente atualizados quando uma correspondência facial próxima é seguida da introdução do código para desbloquear o dispositivo.\n\nOs dados de Face ID permanecem sempre no seu dispositivo e nunca é feita nenhuma cópia de segurança dos mesmos, nem em iCloud nem noutro local.\n\nTem todo o controlo sobre Face ID\n\nSe optar por utilizar Face ID, pode controlar o modo como esta funcionalidade é usada e desativá‑la a qualquer momento. Por exemplo, caso não pretenda usar Face ID para desbloquear o iPhone ou iPad, nas Definições, em “Face ID e código”, digite o código e, depois, desative a opção “Desbloquear o iPhone” ou “Desbloquear o iPad”. Para desativar Face ID, abra as Definições e, em “Face ID e código”, digite o código e, depois, toque em “Repor Face ID”. A desativação apagará integralmente os dados de Face ID, incluindo as representações matemáticas do seu rosto. Se optar por apagar ou repor o dispositivo através da aplicação Encontrar ou da opção para apagar todo o conteúdo e definições, apagará igualmente todos os dados relacionados com Face ID.\n\nFace ID e aplicações\n\nPode ativar a autenticação com Face ID nas aplicações compatíveis. As aplicações recebem apenas a informação de que a autenticação foi bem‑sucedida. As aplicações não podem aceder aos dados de Face ID associados ao rosto registado.\n\nOutras finalidades da câmara TrueDepth\n\nMesmo que não utilize Face ID, a câmara TrueDepth é ativada de forma inteligente para as funcionalidades com deteção de atenção, que permitem, por exemplo, escurecer o ecrã quando não está a olhar para o iPhone ou iPad ou baixar o volume dos avisos quando está a olhar para o dispositivo. Do mesmo modo, durante a utilização do Safari, o dispositivo pode verificar se está a olhar para o ecrã e desligá‑lo se não estiver.\n\nSe preferir não usar estas funcionalidades, vá a Definições > Face ID e código, digite o seu código e, depois, desative a opção “Funcionalidades de deteção de atenção”."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID는 TrueDepth 카메라를 이용하여 사용자를 인증합니다.\n\nFace ID를 사용하여 iPhone 또는 iPad를 잠금 해제할 수 있습니다. Face ID가 TrueDepth 카메라를 이용하여 iPhone 또는 iPad를 주시하는 사람이 등록된 사용자인지를 확인합니다. 또한, Apple Pay를 이용한 결제, App Store에서의 구입 또는 앱 내에서의 인증을 위해 Face ID를 사용할 수 있습니다.\n\nFace ID 데이터(사용자의 얼굴을 수학적으로 표시한 데이터 포함)는 암호화되며 Secure Enclave에만 사용할 수 있는 키로 보호됩니다. 사용자 경험을 더욱 향상하기 위해 Face ID로 사용자를 인증하는 등 Face ID를 사용함에 따라 이 데이터가 더욱 정교해지고 업데이트됩니다. Face ID가 높은 일치율을 감지했는데 그 후에 암호를 입력하여 기기를 잠금 해제하는 경우에도 이 데이터가 업데이트됩니다.\n\nFace ID 데이터는 항상 사용자의 기기 내에만 보관되며 iCloud 또는 다른 곳에 백업되지 않습니다.\n\nFace ID에 대한 통제는 사용자에게 있습니다.\n\nFace ID를 등록하기로 선택하면 이 기능을 어떻게 사용할지에 대한 통제는 사용자에게 있으며, 이 기능을 언제든지 비활성화할 수 있습니다. 예를 들어 iPhone 또는 iPad를 잠금 해제하는 데 Face ID를 사용하지 않으려면 설정 > Face ID 및 암호로 이동하여 암호를 입력한 다음 iPhone 잠금 해제 또는 iPad 잠금 해제를 탭하여 끄면 됩니다. Face ID를 비활성화하려면 설정 > Face ID 및 암호로 이동하여 암호를 입력한 다음 Face ID 재설정을 탭하십시오. 재설정하면 사용자의 얼굴을 수학적으로 표시한 데이터를 포함하여 Face ID 데이터가 기기에서 삭제됩니다. 나의 찾기를 사용하여 기기를 지우거나 재설정하는 경우, 또는 모든 콘텐츠 및 설정을 지우는 경우 Face ID 데이터가 모두 삭제됩니다.\n\nFace ID 및 앱\n\n지원되는 앱 내에서 Face ID를 인증에 사용하도록 활성화할 수 있습니다. 앱에는 인증이 성공적인지에 대한 여부만 통지됩니다. 앱이 등록된 얼굴과 연관된 Face ID 데이터에는 접근할 수 없습니다.\n\nTrueDepth 카메라의 다른 용도\n\nFace ID를 등록하지 않아도 TrueDepth 카메라가 지능적으로 주시 지각 기능을 지원하도록 활성화되어 사용자가 iPhone 또는 iPad를 주시하고 있지 않으면 화면을 어둡게 하고, 사용자가 기기를 주시하고 있으면 알림의 음량을 줄이는 등의 기능을 수행합니다. 예를 들어, Safari를 이용할 때 사용자가 기기를 주시하는지 확인하여 주시하고 있지 않으면 화면을 끕니다.\n\n이 기능을 사용하지 않으려면 설정 > Face ID 및 암호로 이동한 다음 암호를 입력하고 주시 지각 기능을 탭하여 끄면 됩니다."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "‏Face ID מאמת את זהותך על-ידי שימוש במצלמת ה-TrueDepth\n\nניתן להשתמש ב-Face ID לביטול נעילת ה-iPhone או ה-iPad. באמצעות מצלמת ה-TrueDepth, ‏Face ID יכול לבדוק אם האדם המביט ב-iPhone או ב-iPad הינו המשתמש הרשום. שימושים נוספים ב-Face ID כוללים ביצוע תשלומי Apple Pay, רכישות ב-App Store ואימות בתוך יישומים.\n\nנתוני Face ID – כולל ייצוגים מתמטיים של הפנים שלך – מוצפנים ומוגנים על ידי מפתח הזמין רק ל-Secure Enclave. נתונים אלו ימשיכו להתעדכן עם שימושך ב-Face ID כדי לשפר את החוויה שלך, גם בפעמים שבהן האימות עובר בהצלחה. Face ID גם יעדכן נתונים אלו כאשר מזוהה התאמה קרובה אך לא מושלמת, וכתוצאה מכך יש צורך להזין קוד גישה כדי לבטל את נעילת המכשיר.\n\nנתוני Face ID נשארים במכשיר ואינם מגובים ב-iCloud או בכל מקום אחר.\n\nהשליטה ב-Face ID בידיים שלך\n\nאם בחרת להירשם ל-Face ID, באפשרותך לבחור כיצד להשתמש בו, או לבטלו בכל עת. למשל, אם אינך רוצה להשתמש ב-Face ID כדי לנעול את ה-iPhone או ה-iPad, באפשרותך לעבור אל ״הגדרות״ > ‏״Face ID וקוד גישה״, להזין את קוד הגישה ואז להקיש לביטול האפשרות ״ביטול נעילת ה-iPhone״ או ״ביטול נעילת ה-iPad״. כדי לבטל את Face ID, יש לעבור אל ״הגדרות״ > ״Face ID וקוד גישה״, להזין את קוד הגישה ואז להקיש על ״איפוס Face ID״. פעולה זו תוביל למחיקת נתוני Face ID מהמכשיר, כולל הייצוגים המתמטיים של הפנים שלך. מחיקה או איפוס של המכשיר באמצעות ״איתור״ או על ידי מחיקת כל התוכן וההגדרות שבו יובילו לכך שכל נתוני Face ID יימחקו.\n\n‏Face ID ויישומים\n\nבאפשרותך להפעיל את Face ID לצורך אימות ביישומים נתמכים. היישומים רק יקבלו אישור על כך שהאימות עבר בהצלחה, ואין באפשרותם לגשת לנתוני Face ID המקושרים לרישום הפנים שנשמר.\n\nשימושים נוספים במצלמת ה-TrueDepth\n\nגם אם לא הפעלת את Face ID, מצלמת ה-TrueDepth תופעל באופן חכם כדי לתמוך במאפיינים שמזהים קשב, כמו החשכת התצוגה כאשר המבט שלך אינו מופנה ל-iPhone או ל-iPad, או הנמכת עוצמת השמע של התראות כאשר המבט שלך מופנה למכשיר. לדוגמה, בעת השימוש ב-Safari, המכשיר יבדוק אם המבט שלך מופנה כלפי המכשיר, ויכבה את המסך במידה שלא.\n\nאם אינך רוצה להשתמש במאפיינים אלו, באפשרותך לעבור אל ״הגדרות״ > ״Face ID וקוד גישה״, להזין את קוד הגישה ולבטל את ״מאפיינים שמזהים קשב״."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID Mengesahkan Anda Menggunakan Kamera TrueDepth\n\nFace ID dapat digunakan untuk membuka iPhone atau iPad Anda. Dengan menggunakan kamera TrueDepth, Face ID menentukan apakah orang yang sedang melihat ke arah iPhone atau iPad adalah pengguna terdaftar atau bukan. Penggunaan Face ID lainnya meliputi pembayaran dengan Apple Pay, pembelian di App Store, dan pengesahan dalam app.\n\nData Face ID — termasuk representasi matematis wajah Anda — dienkripsi dan dilindungi dengan kunci yang hanya tersedia bagi Secure Enclave. Data ini akan disaring dan diperbarui seiring Anda menggunakan Face ID untuk meningkatkan pengalaman Anda, termasuk saat Anda berhasil mengesahkan. Face ID juga akan memperbarui data ini saat mendeteksi kecocokan yang mendekati, tapi kode sandi harus dimasukkan setelahnya untuk membuka perangkat.\n\nData Face ID tidak dikirimkan ke luar perangkat, dan tidak akan pernah dicadangkan ke iCloud atau tempat lain.\n\nAnda Memiliki Kontrol Atas Face ID\n\nJika Anda memilih untuk mendaftar di Face ID, Anda dapat mengontrol bagaimana fitur ini digunakan atau menonaktifkannya kapan pun. Misalnya, jika Anda tidak ingin menggunakan Face ID untuk membuka iPhone atau iPad, buka Pengaturan > Face ID & Kode Sandi, masukkan kode sandi, lalu ketuk untuk mematikan Buka iPhone atau Buka iPad. Untuk menonaktifkan Face ID, buka Pengaturan > Face ID & Kode Sandi, masukkan kode sandi, lalu ketuk Atur Ulang Face ID. Jika Anda melakukannya, data Face ID akan dihapus, termasuk representasi matematis wajah Anda, dari perangkat. Jika Anda memilih untuk menghapus atau mengatur ulang perangkat Anda menggunakan Lacak atau dengan menghapus semua konten dan pengaturan, semua data Face ID akan dihapus.\n\nFace ID dan App\n\nDi dalam app yang didukung, Anda dapat mengaktifkan Face ID untuk pengesahan. App hanya diberi tahu apakah pengesahan berhasil atau tidak. App tidak dapat mengakses data Face ID terkait dengan wajah yang terdaftar.\n\nPenggunaan Kamera TrueDepth Lainnya\n\nMeskipun Anda tidak mendaftar di Face ID, kamera TrueDepth akan diaktifkan dengan pintar untuk mendukung fitur sadar perhatian, seperti meredupkan layar jika Anda tidak sedang melihat ke arah iPhone atau iPad, atau menurunkan volume peringatan jika Anda sedang melihat ke perangkat. Misalnya, saat Anda menggunakan Safari, perangkat Anda akan memeriksa untuk menentukan apakah Anda sedang melihat ke arah perangkat dan mematikan layar jika tidak.\n\nJika Anda tidak ingin menggunakan fitur ini, Anda dapat membuka Pengaturan > Face ID & Kode Sandi, masukkan kode sandi, lalu ketuk untuk mematikan Fitur Sadar Perhatian."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID todentaa sinut TrueDepth-kameran avulla\n\nFace ID:tä voidaan käyttää iPhonen tai iPadin lukituksen avaamiseen. Face ID määrittää TrueDepth-kameran avulla, onko iPhonea katsova henkilö sama kuin kyseisen Face ID:n rekisteröinyt käyttäjä. Face ID:llä voit myös maksaa Apple Payssa, ostaa App Storesta ja todentautua apeissa.\n\nFace ID -tiedot, mukaan lukien kasvojesi matemaattinen mallinnus, salataan ja suojataan avaimella, joka on vain Secure Enclaven käytettävissä. Jokainen Face ID:n käyttökerta, mukaan lukien jokainen onnistunut Face ID -todennus, tarkentaa ja päivittää näitä tietoja ja parantaa käyttökokemustasi. Face ID päivittää näitä tietoja myös silloin, kun se havaitsee vastaavuudeltaan lähes samankaltaiset kasvot, jolloin laitteen lukituksen avaamiseen pitää syöttää pääsykoodi.\n\nFace ID ‑tietojasi ei lähetetä laitteestasi minnekään. Tietoja ei koskaan varmuuskopioida iCloudiin tai muualle.\n\nSinä hallitset Face ID:tä\n\nJos päätät rekisteröidä Face ID:n, voit hallita sen käyttöä ja voit laittaa sen pois päältä milloin tahansa. Jos et esimerkiksi halua käyttää Face ID:tä iPhonen tai iPadin lukituksen avaamiseen, valitse Asetukset > Face ID ja pääsykoodi, syötä pääsykoodisi ja poista iPhonen lukituksen poisto tai iPadin lukituksen poisto käytöstä napauttamalla. Poista Face ID käytöstä valitsemalla Asetukset > Face ID ja pääsykoodi, syöttämällä pääsykoodisi ja napauttamalla Nollaa Face ID. Tämä poistaa laitteestasi Face ID ‑tiedot, mukaan lukien kasvojesi matemaattisen mallinnuksen. Kaikki Face ID ‑tiedot poistetaan, jos tyhjennät tai nollaat laitteesi Etsi‑toiminnon avulla tai jos tyhjennät laitteen kaiken sisällön ja kaikki asetukset.\n\nFace ID ja apit\n\nVoit ottaa käyttöön Face ID ‑todentautumisen sitä tukevissa apeissa. Apeille ilmoitetaan ainoastaan, onnistuiko todentautuminen. Apit eivät voi käyttää rekisteröityihin kasvoihin liittyviä Face ID ‑tietoja.\n\nTrueDepth-kameran muut käyttötavat\n\nVaikka et rekisteröisi Face ID:tä, TrueDepth-kamera aktivoituu tukemaan katsekontaktitoimintoja. Tällaisia toimintoja ovat esimerkiksi näytön himmentäminen, kun et katso iPhoneasi tai iPadiasi, tai ilmoitusäänten hiljentäminen, kun katsot laitettasi. Kun esimerkiksi käytät Safaria, laitteesi tarkistaa, katsotko laitettasi, ja sammuttaa näytön, jos et katso sitä.\n\nJos et halua käyttää näitä toimintoja, valitse Asetukset > Face ID ja pääsykoodi, syötä pääsykoodisi ja napauta Katsekontaktitoiminnot pois päältä."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID authenticeert je met behulp van de TrueDepth-camera\n\nFace ID kan worden gebruikt om je iPhone of iPad te ontgrendelen. Met behulp van de TrueDepth-camera bepaalt Face ID of de persoon die naar een iPhone of iPad kijkt de ingeschreven gebruiker is. Verder kun je met Face ID betalen via Apple Pay, aankopen doen in de App Store en je authenticeren binnen apps.\n\nFace ID-gegevens, waaronder wiskundige voorstellingen van je gezicht, worden versleuteld en beveiligd met een sleutel die alleen voor de Secure Enclave beschikbaar is. Deze gegevens worden aangepast en bijgewerkt naarmate je Face ID gebruikt, zodat je gebruikerservaring wordt verbeterd, bijvoorbeeld wanneer je je zonder problemen authenticeert. Face ID werkt deze gegevens ook bij wanneer er een goede gelijkenis wordt gevonden maar er vervolgens een toegangscode wordt ingevoerd om het apparaat te ontgrendelen.\n\nFace ID-gegevens blijven op je apparaat staan en er wordt nooit een back-up van gemaakt op iCloud of elders.\n\nJij bepaalt hoe je Face ID gebruikt\n\nAls je ervoor kiest om je in te schrijven voor Face ID, kun je zelf bepalen hoe je deze functie gebruikt en kun je deze op elk gewenst moment uitschakelen. Als je je iPhone of iPad bijvoorbeeld niet via Face ID wilt ontgrendelen, ga je in Instellingen naar 'Face ID en toegangscode', voer je je toegangscode in en schakel je 'iPhone-ontgrendeling' of 'iPad-ontgrendeling' uit. Als je Face ID wilt uitschakelen, ga je in Instellingen naar 'Face ID en toegangscode', voer je je toegangscode in en tik je op 'Stel Face ID opnieuw in'. Hiermee worden Face ID-gegevens, waaronder wiskundige voorstellingen van je gezicht, van je apparaat verwijderd. Alle Face ID-gegevens worden verwijderd als je je apparaat via Zoek mijn wist of opnieuw instelt of als je alle inhoud en instellingen wist.\n\nFace ID en apps\n\nBinnen ondersteunde apps kun je Face ID inschakelen voor authenticatie. Apps ontvangen alleen een melding wanneer de authenticatie al dan niet is uitgevoerd. Apps hebben geen toegang tot Face ID-gegevens die bij het ingeschreven gezicht horen.\n\nAndere functies van de TrueDepth-camera\n\nZelfs als je je niet inschrijft voor Face ID, wordt de TrueDepth-camera geactiveerd ter ondersteuning van functies voor aandachtsdetectie. Zo wordt het scherm gedimd weergegeven als je niet naar je iPhone of iPad kijkt of het volume van meldingen verlaagd als je naar je apparaat kijkt. Wanneer je bijvoorbeeld Safari gebruikt, controleert je apparaat of je naar het apparaat kijkt en wordt het scherm uitgeschakeld als je er niet naar kijkt.\n\nAls je deze functies niet wilt gebruiken, ga je in Instellingen naar 'Face ID en toegangscode', voer je je toegangscode in en schakel je de functies voor aandachtsdetectie uit."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID аутентифицирует Вас с помощью камеры TrueDepth\n\nФункция Face ID может использоваться для разблокировки Вашего iPhone или iPad. Face ID использует камеру TrueDepth, чтобы определить, является ли смотрящий на iPhone или iPad человек зарегистрированным пользователем. Face ID можно также использовать для осуществления платежей с Apple Pay, совершения покупок в App Store и аутентификации в приложениях.\n\nДанные Face ID, включая математические представления Вашего лица, зашифрованы и защищены ключом, доступным только Secure Enclave. Эти данные будут уточняться и обновляться в процессе использования Вами Face ID, чтобы улучшить Ваш опыт работы с функцией, включая успешную аутентификацию. Face ID также обновляет эти данные при обнаружении точного соответствия, даже если для разблокировки устройства после этого вводится код‑пароль.\n\nДанные Face ID не передаются с Вашего устройства, а их копии никогда не создаются в iCloud или еще где‑то.\n\nКонтроль Face ID — в Ваших руках\n\nЗарегистрировавшись в Face ID, Вы сможете управлять использованием функции или выключить ее в любое время. Например, если Вы не хотите использовать Face ID для разблокировки iPhone или iPad, перейдите в «Настройки» > «Face ID и код‑пароль», введите код‑пароль, выключите функцию «Разблокировка iPhone» или «Разблокировка iPad». Чтобы выключить Face ID, перейдите в «Настройки» > «Face ID и код-пароль», введите код-пароль и коснитесь параметра «Сбросить Face ID». При этом с Вашего устройства будут удалены данные Face ID, включая математические модели Вашего лица. Если Вы стираете или сбрасываете свое устройство с помощью службы «Локатор» или удаляете контент и настройки, все данные Face ID будут удалены.\n\nFace ID и приложения\n\nВы можете включить Face ID для аутентификации в поддерживаемых приложениях. Приложения получают данные только о том, была ли аутентификация успешной. Приложения не имеют доступа к данным Face ID, связанным с распознаванием черт лица.\n\nДругие способы использования камеры TrueDepth\n\nДаже если Вы не зарегистрированы в Face ID, камера TrueDepth интеллектуально активирует поддержку функций распознавания внимания, таких как затемнение экрана, если Вы не смотрите на свой iPhone или iPad, или понижение громкости предупреждений, когда Вы смотрите на свое устройство. Например, при использовании Safari Ваше устройство попытается определить, смотрите ли Вы на него, и выключит экран, если нет.\n\nЕсли Вы не хотите использовать эти функции, Вы можете перейти в «Настройки» > «Face ID и код‑пароль», ввести пароль и выключить параметр «Распознавание внимания»."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Face ID a TrueDepth-kamera segítségével hitelesíti Önt\n\nA Face ID segítségével feloldhatja az iPhone vagy iPad zárolását. A TrueDepth-kamerával a Face ID meghatározza, hogy az iPhone-ra vagy iPadre néző személy megegyezik-e a regisztrált felhasználóval. A Face ID ezenkívül az Apple Payjel történő fizetésekhez, az App Store-beli vásárlásokhoz és az appokon belüli hitelesítéshez használható.\n\nA Face ID-adatokat - többek között az Ön arcának matematikai ábrázolásait - egy olyan kulcs titkosítja és védi, amely kizárólag a Secure Enclave számára érhető el. Ezek az adatok a Face ID használata során, többek között a sikeres hitelesítések alkalmával folyamatosan pontosítva lesznek és frissülnek, hogy jobb felhasználói élményt biztosítsunk Önnek. A Face ID akkor is frissíti ezeket az adatokat, ha egy nem teljesen egyező arcot észlel, viszont ezután a felhasználó megadja a jelkódot az eszköz feloldásához.\n\nA Face ID-adatok az eszközön maradnak, és soha nem készül róluk biztonsági másolat az iCloudba vagy máshová.\n\nÖn dönti el, hogyan használja a Face ID-t\n\nHa úgy dönt, hogy regisztrálja magát a Face ID-hoz, meghatározhatja, hogyan szeretné használni, vagy bármikor igény szerint letilthatja a használatát. Ha például nem szeretné a Face ID-val feloldani az iPhone-ját vagy iPadjét, nyissa meg a Beállítások > Face ID és jelkód menüpontot, adja meg a jelkódját, majd koppintson Az iPhone feloldása, illetve iPad feloldása funkció kikapcsolásához. A Face ID letiltásához nyissa meg a Beállítások > Face ID és jelkód menüpontot, adja meg a jelkódját, majd koppintson a Face ID alaphelyzetbe állítása lehetőségre. Ebben az esetben a rendszer törli az eszközről a Face ID-adatokat, többek között az arca matematikai ábrázolását. Ha úgy dönt, hogy törli az eszköz tartalmát vagy alaphelyzetbe állítja az eszközt a Lokátorral, vagy az összes tartalmat és beállítást törli, akkor az összes Face ID-adat is törölve lesz.\n\nA Face ID és az appok\n\nA támogatott appokban engedélyezheti a Face ID-t a hitelesítéshez. Az appok csak arról értesülnek, hogy a hitelesítés sikeres volt-e. Az appok nem tudnak hozzáférni a regisztrált archoz kapcsolódó Face ID-adatokhoz.\n\nA TrueDepth-kamera használata más célokra\n\nA TrueDepth-kamera intelligens módon aktiválódik, és támogatja a figyelemérzékelő funkciókat – még akkor is, ha nem regisztrálja magát a Face ID használatához –, például elhalványítja a kijelzőt, ha Ön éppen nem az iPhone-jára vagy iPadjére néz, vagy csökkenti a jelzések hangerejét, ha a kijelzőt nézi. A Safari használatakor például az eszköz ellenőrzi, hogy Ön a kijelzőt nézi-e, és ha nem, akkor kikapcsolja a kijelzőt.\n\nHa nem szeretné használni ezeket a funkciókat, nyissa meg a Beállítások > Face ID és jelkód menüpontot, adja meg a jelkódját, majd koppintson a Figyelemérzékelő funkciók kikapcsolásához."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID, TrueDepth Kamerayı Kullanarak Kimliğinizi Doğrular\n\nFace ID, iPhone’unuzun veya iPad’inizin kilidini açmak için kullanılabilir. TrueDepth kamerayı kullanırken Face ID iPhone’unuza veya iPad’inize bakan kişinin kayıtlı bir kullanıcı olup olmadığını belirler. Apple Pay ile ödeme yapma, App Store’da alışveriş yapma ve uygulama içinde kimlik doğrulama Face ID’nin diğer kullanımları arasındadır.\n\nFace ID verileri -yüzünüzün matematiksel gösterilişi gibi- şifrelenir ve yalnızca Secure Enclave ile kullanılabilir olan bir anahtarla korunur. Bu veriler, kimlik doğrulama için siz Face ID’yi kullandıkça deneyiminizi iyileştirmek amacıyla arıtılır ve güncellenir. Face ID, benzer bir eşleme saptadığında da bu verileri günceller ama ardından aygıtın kilidini açmak için bir parola girilir.\n\nFace ID verileri aygıtınızda kalır ve asla iCloud’a veya herhangi bir yere yedeklenmez.\n\nFace ID’yi Denetlemek Sizin Elinizde\n\nFace ID’ye kaydolmayı seçerseniz nasıl kullanıldığını denetleyebilir veya istediğiniz zaman etkisizleştirebilirsiniz. Örneğin, iPhone’unuzun veya iPad’inizin kilidini açmak için Face ID’yi kullanmak istemiyorsanız Ayarlar > Face ID ve Parola bölümüne gidin, parolanızı girin, sonra iPhone’un Kilidini Açma’yı veya iPad’in Kilidini Açma’yı kapatmak için dokunun. Face ID’yi etkisizleştirmek için Ayarlar > Face ID ve Parola bölümüne gidin, parolanızı girin, sonra ve Face ID’yi Sıfırla’ya dokunun. Bu, yüzünüzün matematiksel gösterilişi de dahil olmak üzere Face ID verilerini aygıtınızdan siler. Bul ile ya da tüm içerikleri ve ayarları silerek aygıtınızı silmeyi veya sıfırlamayı seçerseniz tüm Face ID verileri de silinir.\n\nFace ID ve Uygulamalar\n\nDesteklenen uygulamalar içinde Face ID’yi kimlik doğrulama için etkinleştirebilirsiniz. Uygulamalara yalnızca kimlik doğrulamanın başarılı olup olmadığı bildirilir. Uygulamalar, kaydedilen yüz ile ilişkili Face ID verilerine erişemez.\n\nTrueDepth Kameranın Diğer Kullanımları\n\nFace ID’ye kaydolmadıysanız bile TrueDepth kamera iPhone’unuza veya iPad’inize bakmıyorsanız ekranı soluklaştırmak veya aygıta bakıyorsanız uyarıların sesini kısmak gibi dikkat gerektiren özellikleri desteklemek için akıllı bir şekilde etkinleşir. Örneğin siz Safari’yi kullanırken aygıtınıza bakıp bakmadığınızı denetler ve bakmıyorsanız ekranı kapatır.\n\nBu özellikleri kullanmak istemiyorsanız Ayarlar > Face ID ve Parola bölümüne gidin, parolanızı girin, sonra Dikkat Gerektiren Özellikler’i kapatmak için dokunun."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autenticazione del volto con Face ID mediante la fotocamera TrueDepth\n\nPuoi usare Face ID per sbloccare iPhone o iPad. Grazie alla fotocamera TrueDepth, la funzionalità Face ID è in grado di determinare se la persona che rivolge lo sguardo verso iPhone o iPad è l’utente il cui volto è stato registrato. Inoltre, puoi usare Face ID per effettuare pagamenti tramite Apple Pay, fare acquisti su App Store e autenticarti quando usi le app.\n\nI dati di Face ID, che includono rappresentazioni matematiche del tuo volto, sono crittografati e protetti tramite una chiave disponibile soltanto su Secure Enclave. Questi vengono perfezionati e aggiornati man mano che utilizzi Face ID per migliorare l’esperienza utente, soprattutto per eseguire l’autenticazione correttamente. Inoltre, i dati verranno aggiornati da Face ID anche quando viene rilevata una corrispondenza molto elevata ma viene comunque richiesta l’immissione di un codice per sbloccare il dispositivo.\n\nI dati di Face ID non vengono mai esportati dal dispositivo, non viene mai eseguito il backup su iCloud, né in altri supporti di archiviazione.\n\nHai il pieno controllo su Face ID\n\nSe decidi di registrarti con Face ID, puoi controllare come viene usato e disabilitarlo in qualsiasi momento. Ad esempio, se non desideri utilizzarlo per sbloccare iPhone o iPad, vai in Impostazioni > Face ID e codice, inserisci il codice, quindi disattiva l’opzione “Sbloccare iPhone” o “Sbloccare iPad”. Per disabilitare Face ID, vai in Impostazioni > Face ID e codice, inserisci il codice, quindi tocca “Inizializza Face ID”. In questo modo i dati di Face ID, incluse le rappresentazioni matematiche del tuo volto, verranno eliminate dal tuo dispositivo. Se decidi di inizializzare il dispositivo con Dov’è oppure di inizializzare i contenuti e le impostazioni, tutti i dati di Face ID verrano eliminati.\n\nFace ID e le app\n\nCon le app supportate, puoi abilitare la funzionalità per eseguire l’autenticazione tramite Face ID. Le app riceveranno soltanto una notifica dell’avvenuta autenticazione, ma non hanno accesso ai dati di Face ID associati al volto registrato.\n\nTutte le applicazioni della fotocamera TrueDepth\n\nAnche se decidi di non registrare il volto con Face ID, la fotocamera TrueDepth attiva in modo intelligente le funzionalità per il rilevamento dello sguardo, per ridurre la luminosità del display se non stai guardando verso iPhone o iPad o abbassare il volume degli avvisi, se invece lo stai guardando. Ad esempio, quando usi Safari, il dispositivo esegue una verifica per determinare se lo stai guardando e, se il tuo sguardo è rivolto altrove, disattiva lo schermo.\n\nSe non vuoi utilizzare queste funzionalità, vai in Impostazioni > Face ID e codice, inserisci il codice e disattiva l’opzione “Rilevamento sguardo”."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID te autentica mediante la cámara TrueDepth\n\nFace ID se puede usar para desbloquear tu iPhone o iPad. Por medio de la cámara TrueDepth y el uso de Face ID se puede determinar si la persona que está viendo el iPhone o iPad es el usuario registrado. Otros usos incluyen realizar pagos con Apple Pay, comprar en App Store y autenticarse dentro de apps.\n\nLos datos de Face ID —incluyendo las representaciones matemáticas de tu cara— se encriptan y protegen mediante una clave disponible en exclusiva para el Secure Enclave. Estos datos se refinarán y actualizarán conforme uses Face ID para así mejorar tu experiencia, incluyendo cuando logres autenticarte. Face ID también actualizará tales datos al detectar una cara muy parecida a la registrada y pedirte ingresar el código para desbloquear el dispositivo.\n\nLos datos de Face ID no abandonan tu dispositivo ni tampoco se respaldan en iCloud ni en ningún otro lado.\n\nTienes control sobre Face ID\n\nSi eliges registrarte con Face ID, puedes controlar cómo se usa o desactivarlo en cualquier momento. Por ejemplo, si no quieres usar Face ID para desbloquear tu iPhone o iPad, ve a Configuración > Face ID y código e ingresa tu código para desactivar Desbloquear iPhone o Desbloquear iPad. Para desactivar Face ID, ve a Configuración > Face ID y código y toca Restablecer Face ID. Esto último borrará los datos de Face ID del dispositivo, incluyendo cualquier representación matemática de tu cara. Se borrarán todos los datos de Face ID si eliges borrar o restablecer tu dispositivo utilizando Encontrar o borrando todo el contenido y la configuración.\n\nFace ID y apps\n\nPuedes permitir la autenticación con Face ID en las apps compatibles. Las apps sólo te notificarán de cada autenticación exitosa. Tales apps no pueden acceder a los datos de Face ID asociados con la cara registrada.\n\nOtros usos de la cámara TrueDepth\n\nAunque no haya caras registradas con Face ID, la cámara TrueDepth se activa de manera inteligente para permitir funciones que detectan atención, como obscurecer la pantalla si no estás viendo tu iPhone o iPad o bajar el volumen de las alertas en caso contrario. Por ejemplo, tu dispositivo verificará si estás viendo a tu dispositivo al usar Safari y apagará la pantalla si no es así.\n\nSi no quieres usar ninguna de estas funciones, ve a Configuración > Face ID y código, ingresa tu código y desactiva Funciones que detectan atención."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το Face ID πραγματοποιεί έλεγχο ταυτότητας με την κάμερα TrueDepth\n\nΜπορείτε να χρησιμοποιείτε το Face ID για να ξεκλειδώνετε το iPhone ή iPad. Χρησιμοποιώντας την κάμερα TrueDepth, το Face ID προσδιορίζει αν το άτομο που κοιτάζει το iPhone ή iPad είναι ο εγγεγραμμένος χρήστης. Άλλες χρήσεις του Face ID περιλαμβάνουν την πραγματοποίηση πληρωμών με το Apple Pay, την πραγματοποίηση αγορών στο App Store, καθώς και τον έλεγχο ταυτότητας μέσα από εφαρμογές.\n\nΤα δεδομένα Face ID –συμπεριλαμβανομένων μαθηματικών αναπαραστάσεων του προσώπου σας– κρυπτογραφούνται και προστατεύονται με ένα κλειδί που διατίθεται μόνο στο Secure Enclave. Για βελτίωση της εμπειρίας σας, αυτά τα δεδομένα θα βελτιστοποιούνται και θα ενημερώνονται καθώς χρησιμοποιείτε το Face ID, όπως όταν πραγματοποιείτε με επιτυχία έλεγχο ταυτότητας. Επίσης, το Face ID θα ενημερώνει αυτά τα δεδομένα όταν εντοπίζει μια καλή ταύτιση, και στη συνέχεια εισαγάγεται ένας κωδικός για το ξεκλείδωμα της συσκευής.\n\nΤα δεδομένα Face ID παραμένουν στη συσκευή σας και δεν δημιουργείται ποτέ εφεδρικό αντίγραφό τους στο iCloud ή οπουδήποτε αλλού.\n\nΟ έλεγχος του Face ID είναι στα χέρια σας\n\nΑν επιλέξετε να πραγματοποιήσετε εγγραφή με το Face ID, μπορείτε να καθορίσετε πώς θα χρησιμοποιείται ή να το απενεργοποιήσετε οποιαδήποτε στιγμή. Για παράδειγμα, αν δεν επιθυμείτε να χρησιμοποιείτε το Face ID για το ξεκλείδωμα του iPhone ή iPad σας, μεταβείτε στις «Ρυθμίσεις» > «Face ID και κωδικός», εισαγάγετε τον κωδικό σας και μετά αγγίξτε για απενεργοποίηση της ρύθμισης «Ξεκλείδωμα iPhone» ή «Ξεκλείδωμα iPad». Για να απενεργοποιήσετε το Face ID, μεταβείτε στις «Ρυθμίσεις» > «Face ID και κωδικός», εισαγάγετε τον κωδικό σας και μετά αγγίξτε «Επαναφορά Face ID». Με την ενέργεια αυτή, θα διαγραφούν από τη συσκευή σας τα δεδομένα Face ID, συμπεριλαμβανομένων μαθηματικών αναπαραστάσεων του προσώπου σας. Αν επιλέξετε να σβήσετε ή να επαναφέρετε τη συσκευή σας χρησιμοποιώντας την Εύρεση ή σβήνοντας το περιεχόμενο και τις ρυθμίσεις, θα διαγραφούν όλα τα δεδομένα Face ID.\n\nFace ID και εφαρμογές\n\nΈχετε τη δυνατότητα να ενεργοποιήσετε το Face ID για έλεγχο ταυτότητας μέσα από υποστηριζόμενες εφαρμογές. Οι εφαρμογές λαμβάνουν γνωστοποίηση μόνο για το αν ήταν επιτυχής ο έλεγχος ταυτότητας. Οι εφαρμογές δεν είναι δυνατό να προσπελάζουν δεδομένα Face ID που συσχετίζονται με το πρόσωπο του εγγεγραμμένου χρήστη.\n\nΆλλες χρήσεις της κάμερας TrueDepth\n\nΑκόμα και αν δεν πραγματοποιήσετε εγγραφή με το Face ID, η κάμερα TrueDepth ενεργοποιείται με έξυπνο τρόπο για υποστήριξη δυνατοτήτων προσοχής, όπως π.χ. η μείωση της φωτεινότητας της οθόνης όταν δεν κοιτάζετε το iPhone ή iPad σας ή η μείωση της έντασης ήχου των ειδοποιήσεων όταν κοιτάζετε τη συσκευή σας. Για παράδειγμα, όταν χρησιμοποιείτε το Safari, η συσκευή σας θα ελέγχει αν κοιτάζετε τη συσκευή σας και θα απενεργοποιεί την οθόνη όταν δεν την κοιτάζετε.\n\nΑν δεν επιθυμείτε να χρησιμοποιείτε αυτές τις δυνατότητες, μεταβείτε στις «Ρυθμίσεις» > «Face ID και κωδικός», εισαγάγετε τον κωδικό σας και μετά αγγίξτε απενεργοποίηση της ρύθμισης «Δυνατότητες προσοχής»."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El Face ID t’autentica a través de la càmera TrueDepth\n\nPots utilitzar el Face ID per desbloquejar l’iPhone o l’iPad. A través de la càmera TrueDepth, el Face ID determina si la persona que està mirant l’iPhone o iPad és l’usuari registrat. També pots fer servir el Face ID per pagar amb l’Apple Pay, comprar a l’App Store i autenticar‑te a les apps.\n\nLes dades del Face ID, incloses les representacions matemàtiques de la teva cara, s’encripten i es protegeixen mitjançant una clau que només es troba disponible per a Secure Enclave. Per millorar l’experiència, les dades es perfeccionen i s’actualitzen a mesura que utilitzes el Face ID, també quan t’autentiques correctament. El Face ID també actualitza aquestes dades quan detecta una semblança important però a continuació s’introdueix un codi per desbloquejar el dispositiu.\n\nLes dades del Face ID no surten del dispositiu i no es copien mai a l’iCloud ni a cap altre lloc.\n\nControl total del Face ID\n\nSi configures el Face ID, pots controlar com s’utilitza o desactivar‑lo en qualsevol moment. Per exemple, si no vols fer servir el Face ID per desbloquejar l’iPhone o l’iPad, ves a l’app Configuració > Face ID i codi, introdueix el codi i desactiva el desbloqueig de l’iPhone o de l’iPad. Per desactivar el Face ID, ves a l’app Configuració > Face ID i codi, introdueix el codi i toca “Restableix el Face ID”. Així, s’eliminaran del teu dispositiu les dades del Face ID, incloses les representacions matemàtiques de la teva cara. Si esborres o restableixes el dispositiu a través de l’app Cerca o n’esborres tots els continguts i configuracions, s’eliminaran les dades del Face ID.\n\nEl Face ID i les apps\n\nA les apps compatibles, pots activar el Face ID per autenticar‑t’hi. Les apps només reben informació sobre si s’ha completat l’autenticació o no, i no poden accedir a les dades del Face ID associades a la cara registrada.\n\nAltres usos de la càmera TrueDepth\n\nEncara que no configuris el Face ID, la càmera TrueDepth s’activarà de manera intel·ligent per accionar les funcions relacionades amb la detecció de l’atenció, com ara enfosquir la pantalla si no estàs mirant l’iPhone o l’iPad o abaixar el volum dels avisos si estàs mirant el dispositiu. Per exemple, quan utilitzis el Safari, el dispositiu comprovarà si estàs mirant la pantalla i l’apagarà quan no l’estiguis mirant.\n\nSi no vols fer servir aquestes funcions, ves a l’app Configuració > Face ID i codi, introdueix el codi i desactiva la detecció de l’atenció."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID vous authentifie au moyen de la caméra TrueDepth\n\nFace ID peut être utilisé pour déverrouiller votre iPhone ou votre iPad. Au moyen de la caméra TrueDepth, Face ID détermine si la personne qui regarde l’iPhone ou l’iPad est un utilisateur autorisé. Les autres utilités de Face ID comprennent effectuer des paiements au moyen d’Apple Pay, effectuer des achats dans l’App Store et l’authentification dans les apps.\n\nLes données de Face ID, y compris les représentations mathématiques de votre visage, sont chiffrées et protégées par une clé uniquement accessible par l’enclave sécurisée Secure Enclave. Afin d’améliorer votre expérience, ces données sont affinées et mises à jour à mesure que vous utilisez Face ID, même lorsque vous vous authentifiez avec succès. Face ID met aussi à jour ces données lorsqu’il détecte une forte correspondance, mais qu’un code est ensuite entré pour déverrouiller l’appareil.\n\nLes données de Face ID ne quittent pas votre appareil et ne sont jamais sauvegardées sur iCloud ni nulle part ailleurs.\n\nVous avez le contrôle de Face ID\n\nSi vous choisissez d’utiliser Face ID, vous pouvez contrôler son utilisation ou le désactiver à tout moment. Par exemple, si vous ne souhaitez pas utiliser Face ID pour déverrouiller votre iPhone ou iPad, accédez à Réglages > Face ID et code, entrez votre code, puis désactivez « Déverrouiller l’iPhone » ou « Déverrouiller l’iPad ». Pour désactiver Face ID, accédez à Réglages > Face ID et code, entrez votre code, puis touchez « Réinitialiser Face ID ». Cette opération supprimera de votre appareil les données de Face ID, y compris les représentations mathématiques de votre visage. Si vous choisissez d’effacer ou de réinitialiser votre appareil à l’aide de Localiser ou en effaçant contenu et réglages, toutes les données de Face ID seront supprimées.\n\nFace ID et apps\n\nVous pouvez activer l’authentification avec Face ID à l’intérieur des apps prises en charge. Les apps reçoivent des informations ne concernant que la réussite ou non de l’authentification. Elles ne peuvent pas accéder aux données de Face ID associées au visage enregistré.\n\nAutres utilités de la caméra TrueDepth\n\nMême si vous ne configurez pas Face ID, la caméra TrueDepth s’active de manière intelligente pour prendre en charge des fonctionnalités basées sur l’attention, telles que la diminution de la luminosité de l’écran si vous n’êtes pas en train de regarder votre iPhone ou iPad ou la diminution du volume des alertes si vous regardez votre appareil. Par exemple, lorsque vous utilisez Safari, votre appareil vérifiera pour déterminer si vous regardez votre appareil et mettre l’écran en veille si ce n’est pas le cas.\n\nSi vous ne souhaitez utiliser ces fonctionnalités, vous pouvez aller dans Réglages > Face ID et code, entrez votre code, puis saisir désactiver la fonctionnalité Alerte d’attention."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID會使用原深感測相機認證你的身分\n\nFace ID可以用來解鎖你的iPhone或iPad。透過原深感測相機，Face ID可以確認看著iPhone或iPad螢幕的人是否為註冊的使用者。其他Face ID的用途包含透過Apple Pay付款、在App Store中購物和在App中認證。\n\n包含臉部數學表徵的Face ID資料會進行加密，並由一組只有「安全隔離區」才能存取的金鑰加以保護。此資料會隨著你使用Face ID（包含成功認證時）而優化和更新，以便改進你的體驗。Face ID也會在偵測到近似資料，但仍需要你輸入密碼以解鎖裝置時更新此資料。\n\nFace ID資料會保存在你的裝置中，永遠不會備份到iCloud或其他位置。\n\n你有控制Face ID的權利\n\n若選擇登記Face ID，你可以控制Face ID的使用方式或隨時將其停用。例如，若不想要使用Face ID解鎖你的iPhone或iPad，請前往「設定」>「Face ID與密碼」，輸入你的密碼，然後點一下來關閉「解鎖iPhone」或「解鎖iPad」。若要停用Face ID，請前往「設定」>「Face ID與密碼」，輸入你的密碼，然後點一下「重置Face ID」。停用將會從裝置刪除Face ID資料，包含臉部的數學表徵。若選擇使用「尋找」或透過清除所有內容與設定來清除或重置裝置，這樣將會刪除所有Face ID資料。\n\nFace ID和App\n\n在支援的App中，你可以啟用Face ID認證。App只會收到認證是否成功的通知。App無法取用與登記臉部產生關聯的Face ID資料。\n\n其他原深感測相機用途\n\n即使你未登記Face ID，系統仍會智慧啟用原深感測相機以支援螢幕注視感知功能，例如在你未看著iPhone或iPad時讓螢幕變暗，或在你看著裝置時降低提示聲音量。例如，在你使用Safari時，你的裝置會確定你是否注視裝置，並在你未注視時關閉螢幕。\n\n若不想要使用這些功能，你可以前往「設定」>「Face ID與密碼」，輸入你的密碼，然後點一下關閉「螢幕注視感知功能」。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID使用「原深感測鏡頭」認證身份\n\nFace ID可用作解鎖iPhone或iPad。使用「原深感測鏡頭」，Face ID可確定看着iPhone或iPad螢幕的人是否為已註冊的用户。Face ID的其他用途包括：Apple Pay付款、在App Store中購物及App中認證。\n\nFace ID資料，包括你面部的數學表徵，均由一組只有「安全隔離區」才能存取的金鑰加密保護。此資料會隨着你使用Face ID，包括成功認證時，調整和更新以為你帶來更好的體驗。Face ID在偵測近似資料、但仍然需要你輸入密碼解鎖裝置時，也會更新有關資料。\n\nFace ID資料只會保存在你的裝置上，而永遠不會備份至iCloud或其他地方。\n\n你擁有Face ID的控制權\n\n如選擇註冊Face ID，你可以控制Face ID的使用方式或隨時將其停用。例如，如不想使用Face ID解鎖iPhone或解鎖iPad，請前往「設定」>「Face ID與密碼」，輸入你的密碼，然後點一下以關閉「解鎖iPhone」或「解鎖iPad」。如要停用Face ID，請前往「設定」>「Face ID與密碼」，輸入你的密碼，然後點一下「重設Face ID」。此舉會從裝置刪除包括你面部數學表徵的Face ID資料。如選擇使用「尋找」清除或還原裝置，或清除所有內容和設定，所有Face ID資料將一併被刪除。\n\nFace ID與App\n\n在支援的App，你可以啟用Face ID認證。App只會收到認證是否成功的通知。App無法取用有關已註冊面部的Face ID資料。\n\n「原深感測鏡頭」的其他用途\n\n即使不註冊Face ID，「原深感測鏡頭」也可智能啟用以支援螢幕注視感知功能，例如在你沒有看着iPhone或iPad時將螢幕調暗，或是在你看着裝置時調低提示聲音量。例如，在你使用Safari時，你的裝置會確定你是否在注視着裝置，並在你沒有注視裝置時關閉屏幕。\n\n如果不希望使用這些功能，你可以開啟「設定」>「Face ID與密碼」，輸入你的密碼，然後點一下以關閉「螢幕注視感知功能」。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تصادق بصمة الوجه هويتك باستخدام كاميرا العمق الحقيقي\n\nيمكن استخدام بصمة الوجه لفتح قفل iPhone أو iPad. تحدد بصمة الوجه باستخدام كاميرا العمق الحقيقي ما إذا كان الشخص الذي ينظر إلى iPhone أو iPad مخّولاً أم لا. وتتضمن استخدامات بصمة الوجه إجراء عمليات الدفع عبر Apple Pay وإجراء عمليات الشراء في App Store ومصادقة الهوية داخل التطبيقات.\n\nستكون بيانات بصمة الوجه - ومن ضمنها التمثيلات الحسابية لوجهك - مشفرة ومحمية بمفتاح متوفر فقط على Secure Enclave. ستتم تصفية هذه البيانات وتحديثها أثناء استخدامك لبصمة الوجه لتحسين تجربتك، بما في ذلك وقت إتمام مصادقة هويتك بنجاح. وإضافة إلى ذلك، ستحدّث بصمة الوجه هذه البيانات عندما تكتشف مطابقة قريبة للوجه يعقبها إدخال رمز الدخول لفتح القفل.\n\nلا تغادر بيانات بصمة الوجه جهازك، ولا يتم تخزين نسخة احتياطية منها على iCloud أو أي مكان آخر.\n\nأنت المتحكم في بصمة الوجه\n\nإذا اخترت أن تستخدم بصمة الوجه، يمكنك أن تتحكم بكيفية استخدامها أو أن توقف استخدامها في أي وقت. مثلًا، إذا كنت لا تود أن تستخدم بصمة الوجه لفتح قفلiPhone أو iPad، فانتقل إلى الإعدادات > بصمة الوجه ورمز الدخول، أدخل رمز الدخول، ثم اضغط لتعطيل فتح قفل iPhone أو فتح قفل iPad. لتعطيل بصمة الوجه، انتقل إلى الإعدادات > بصمة الوجه ورمز الدخول، واضغط على \"إعادة تعيين بصمة الوجه\". عند القيام بذلك، تتم إزالة بيانات بصمة الوجه من جهازك، ويتضمن ذلك التمثيلات الحسابية لوجهك. إذا اخترت مسح أو إعادة تعيين جهازك باستخدام تطبيق تحديد الموقع أو من خلال مسح جميع المحتويات والإعدادات، فسيتم حذف بيانات بصمة الوجه.\n\nبصمة الوجه والتطبيقات\n\nيمكنك تمكين مصادقة بصمة الوجه داخل التطبيقات المدعومة للمصادقة. حيث سيتم إعلام التطبيق فقط ما إذا نجحت المصادقة أم فشلت. ولن تتمكن التطبيقات من الوصول إلى بيانات بصمة الوجه المرتبطة بالوجه.\n\nاستخدامات أخرى لكاميرا العمق الحقيقي\n\nحتى إذا لم تستخدم بصمة الوجه، سيتم تنشيط كاميرا العمق الحقيقي لتعمل بشكل ذكي لدعم الميزات المتتبعة للانتباه مثل تعتيم الشاشة إذا لم تكن تنظر إلى iPhone أو iPad أو خفض مستوى صوت التنبيهات عندما تنظر إلى جهازك. على سبيل المثال، عند استخدام سفاري سيتحقق جهازك مما إذا كنت تنظر إلى الجهاز أم لا ويعتم الشاشة إذا لم تكن تنظر.\n\nإذا كنت لا تود أن تستخدم هذه الميزات، فانتقل إلى الإعدادات > بصمة الوجه ورمز الدخول، أدخل رمز الدخول، ثم اضغط لتعطيل الميزات المتتبعة للانتباه."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID bruker TrueDepth-kameraet for å autentisere identiteten din\n\nFace ID kan brukes til å låse opp iPhone eller iPad. Ved hjelp av TrueDepth-kameraet avgjør Face ID om det er den registrerte brukeren som ser på iPhonen eller iPaden. Face ID kan også brukes til å betale med Apple Pay, utføre kjøp i App Store og for å autentisere brukeren i apper.\n\nFace ID-data, inkludert matematiske utregninger av vinklene i ansiktet ditt, krypteres og beskyttes av en nøkkel som kun er tilgjengelig for Secure Enclave. Disse dataene blir oppdatert og forbedret etter som du bruker Face ID, inkludert hver gang autentiseringen lykkes, for å forbedre brukeropplevelsen. Face ID oppdaterer også dataene når funksjonen registrerer et nært treff, hvis koden oppgis for å låse opp enheten rett etterpå.\n\nFace ID-data forlater aldri enheten din, og de blir ikke sikkerhetskopiert til iCloud eller andre steder.\n\nDu har full kontroll over Face ID\n\nHvis du velger å registrere en Face ID, kan du selv bestemme hvor den brukes, og du kan deaktivere den når som helst. Hvis du for eksempel ikke vil bruke Face ID til å låse opp iPhonen eller iPaden din, velger du Innstillinger > Face ID og kode, skriver inn koden din og trykker for slå av Lås opp iPhone eller Lås opp iPad. Du kan deaktivere Face ID ved å velge Innstillinger > Face ID og kode, skrive inn koden din og trykke på Nullstill Face ID. Dette vil slette alle Face ID-data, inkludert matematiske utregninger av vinklene i ansiktet ditt, fra enheten. Hvis du sletter eller nullstiller enheten din via Hvor er eller sletter alt innhold og alle innstillinger, blir alle Face ID-data også slettet.\n\nFace ID og apper\n\nI støttede apper kan du aktivere bruk av Face ID for autentisering. Apper blir kun varslet om autentiseringen var vellykket eller ikke. De får ikke tilgang til Face ID-data som er knyttet til det registrerte ansiktet.\n\nAnnen bruk av TrueDepth-kameraet\n\nSelv om du ikke registrerer en Face ID, vil TrueDepth-kameraet støtte smarte oppmerksomhetsfunksjoner som å redusere lysstyrken på skjermen når du ikke ser på den, eller dempe varslingslyder hvis du allerede ser på iPhonen eller iPaden. Når du for eksempel bruker Safari, vil enheten sjekke om du ser på skjermen, og slå den av hvis oppmerksomheten din er et annet sted.\n\nHvis du ikke vil bruke disse funksjonene, kan du velge Innstillinger > Face ID og kode, skrive inn koden din og trykke for å slå av Reager på øyekontakt."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID आपको TrueDepth कैमरा के उपयोग से प्रमाणित करता है\n\nFace ID का उपयोग आपके iPhone या iPad को अनलॉक करने के लिए किया जा सकता है। TrueDepth कैमरा के उपयोग से Face ID निर्धारित करता है कि क्या iPhone या iPad की ओर देखने वाला व्यक्ति नामांकित यूज़र है। Face ID के अन्य उपयोग में शामिल हैं — Apple Pay से भुगतान करना, App Store में ख़रीदारी करना और ऐप्स में प्रमाणन।\n\nआपके चेहरे के गणितीय निरूपण सहित Face ID डेटा एंक्रिप्टेड है और यह ऐसी “की” से सुरक्षित है जो केवल Secure Enclave में उपलब्ध है। Face ID के आपके उपयोग के दौरान और इससे सफलतापूर्वक प्रमाणित किए जाने से आपके अनुभव को बेहतर बनाने के लिए यह डेटा परिष्कृत और अपडेट किया जाएगा। Face ID इस डेटा को तब अपडेट भी करेगा जब इसे क़रीबी साम्य का पता चलता है लेकिन इसके बाद डिवाइस को अनलॉक करने के लिए पासकोड दर्ज किया जाता है।\n\nFace ID डेटा आपके डिवाइस के साथ ही रहता है और iCloud या कहीं और इसका बैकअप कभी भी नहीं लिया जाता है।\n\nFace ID पर आपका नियंत्रण है\n\nयदि आप Face ID में नामांकन करते हैं, तो आप इसे नियंत्रित कर सकते हैं कि कैसे इसका उपयोग किया जाए या आप इसे किसी भी समय अक्षम कर सकते हैं। उदाहरण के लिए, यदि आप Face ID का उपयोग अपने iPhone या iPad को अनलॉक करने के लिए नहीं करना चाहते हैं, तो सेटिंग्ज़ > “Face ID और पासकोड” पर जाएँ, अपना पासकोड दर्ज करें, फिर iPhone अनलॉक या iPad अनलॉक बंद करने के लिए टैप करें। Face ID अक्षम करने के लिए सेटिंग्ज़ > “Face ID और पासकोड” पर जाएँ, अपना पासकोड दर्ज करें, फिर “Face ID रीसेट करें” पर टैप करें। ऐसा करने से आपके डिवाइस से आपके चेहरे के गणितीय निरूपण सहित Face ID डेटा डिलीट हो जाएगा। यदि आप Find My के उपयोग से या सभी कॉन्टेंट और सेटिंग्ज़ मिटा कर अपने डिवाइस का डेटा मिटाना या रीसेट करना चाहते हैं, तो सारा Face ID डेटा डिलीट हो जाएगा।\n\nFace ID और ऐप्स\n\nसमर्थित ऐप्स में आप Face ID को प्रमाणन के लिए सक्षम कर सकते हैं। ऐप्स को केवल प्रमाणन सफल होने की स्थिति में सूचित किया जाता है। ऐप्स नामांकित चेहरे से संबद्ध Face ID डेटा ऐक्सेस नहीं कर सकते हैं।\n\nTrueDepth कैमरा के अन्य उपयोग\n\nFace ID में नामांकित नहीं रहने के बावजूद TrueDepth कैमरा अटेंशन अवेयर फ़ीचर के लिए समर्थन को बुद्धिमत्तापूर्ण तरीक़े से सक्रिय करता है, जैसे जब आप अपने iPhone या iPad की ओर नहीं देख रहे हैं, तो डिस्प्ले डिम करना या जब आप डिवाइस की ओर देख रहे होते हैं, तो अलर्ट के वॉल्यूम कम करना। उदाहरण के लिए, जब आप Safari का उपयोग करते हैं, आपका डिवाइस यह निर्धारित करने के लिए जाँचेगा कि आप डिवाइस की ओर देख रहे हैं या नहीं और यदि आप डिवाइस की ओर नहीं देख रहे हैं, तो स्क्रीन को बंद कर देगा।\n\nयदि आप इन फ़ीचर का उपयोग नहीं करना चाहते हैं, तो आप सेटिंग्ज़ > “Face ID और पासकोड” पर जाएँ, अपना पासकोड दर्ज करें, फिर अटेंशन अवेयर फ़ीचर बंद करने के लिए टैप करें।"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID kontrollerer, at det er dig, vha. TrueDepth-kameraet\n\nFace ID kan bruges til at låse din iPhone eller iPad op. Med TrueDepth-kameraet fastslår Face ID, om den person, der ser på en iPhone eller iPad, er en registreret bruger. Face ID kan blandt andet bruges til betaling med Apple Pay, ved køb i App Store og til at godkende i apps.\n\nFace ID-data – inklusive matematiske gengivelser af dit ansigt – er krypteret og beskyttet af en nøgle, som kun er tilgængelig for Secure Enclave. Disse data bliver forbedrede og opdaterede med din brug af Face ID for at gøre din oplevelse bedre, dette gælder også, når din godkendelse er vellykket. Face ID opdaterer også disse data, når der registreres et tæt match, men der efterfølgende indtastes en kode til at låse enheden op.\n\nFace ID-data bliver på din enhed, og bliver aldrig sikkerhedskopieret til iCloud eller nogen andre steder.\n\nDu har kontrollen med Face ID\n\nHvis du vælger at bruge Face ID, kan du styre, hvordan det bruges, og du kan til enhver tid slå det fra. Hvis du for eksempel ikke ønsker at bruge Face ID til at låse din iPhone eller iPad op, kan du gå til Indstillinger > Face ID & kode, indtaste din kode og derefter trykke for at slå Lås iPhone op eller Lås iPad op fra. Du kan slå Face ID fra ved at gå til Indstillinger > Face ID & kode, indtaste din kode og derefter trykke på Nulstil Face ID. Det vil slette Face ID-data, inklusive matematiske gengivelser af dit ansigt, fra din enhed. Hvis du vælger at slette eller nulstille din enhed vha. Find eller ved at slette alt indhold og alle indstillinger, bliver alle Face ID-data slettet.\n\nFace ID og apps\n\nI apps, der understøtter det, kan du slå Face ID til for godkendelse. Apps får kun meddelelse om, hvorvidt godkendelsen var vellykket eller ej. Apps har ikke adgang til Face ID-data, der er tilknyttet det registrerede ansigt.\n\nAnden brug af TrueDepth-kameraet\n\nSelv hvis du vælger ikke at bruge Face ID, kan TrueDepth-kameraet på intelligent vis aktiveres til at understøtte opmærksomhedsfunktioner, f.eks. at dæmpe lyset på skærmen, hvis du ikke ser på din iPhone eller iPad, eller sænke lyden på advarsler, hvis du kigger på din enhed. Hvis du for eksempel bruger Safari, vil din enhed undersøge, om du kigger på din enhed og slå skærmen fra, hvis du ikke gør det.\n\nHvis du ikke vil bruge disse funktioner, kan du gå til Indstillinger > Face ID & kode, indtaste din kode og derefter trykke for at slå Opmærksomhedsfunktioner fra."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID Authenticates You Using the TrueDepth Camera\n\nFace ID can be used to unlock your iPhone or iPad. Using the TrueDepth camera, Face ID determines whether the person looking at an iPhone or iPad is the enrolled user. Other uses of Face ID include making payments with Apple Pay, making purchases within the App Store, and authenticating within apps.\n\nFace ID data — including mathematical representations of your face — is encrypted and protected with a key available only to the Secure Enclave. This data will be refined and updated as you use Face ID to improve your experience, including when you successfully authenticate. Face ID will also update this data when it detects a close match but a passcode is subsequently entered to unlock the device.\n\nFace ID data does not leave your device, and is never backed up to iCloud or anywhere else.\n\nYou Have Control Over Face ID\n\nIf you choose to enroll in Face ID, you can control how it is used or disable it at any time. For example, if you don’t want to use Face ID to unlock your iPhone or iPad, go to Settings > Face ID & Passcode, enter your passcode, then tap to turn off iPhone Unlock or iPad Unlock. To disable Face ID, go to Settings > Face ID & Passcode, enter your passcode, then tap Reset Face ID. Doing so will delete Face ID data, including mathematical representations of your face, from your device. If you choose to erase or reset your device using Find My or by erasing all content and settings, all Face ID data will be deleted.\n\nFace ID and Apps\n\nWithin supported apps, you can enable Face ID for authentication. Apps are notified only as to whether the authentication is successful. Apps can’t access Face ID data associated with the enrolled face.\n\nOther Uses of the TrueDepth Camera\n\nEven if you don’t enroll in Face ID, the TrueDepth camera intelligently activates to support attention aware features, like dimming the display if you are not looking at your iPhone or iPad or lowering the volume of alerts if you are looking at your device. For example, when you are using Safari, your device will check to determine if you are looking at your device and turn the screen off if you aren’t.\n\nIf you don’t want to use these features, you can go to Settings > Face ID & Passcode, enter your passcode, then tap to turn off Attention Aware Features."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funkcja Face ID uwierzytelnia Cię przy użyciu aparatu TrueDepth\n\nFace ID może służyć do odblokowywania iPhone’a lub iPada. Aparat TrueDepth pozwala funkcji Face ID sprawdzić, czy osoba patrząca na iPhone’a lub iPada to zarejestrowany użytkownik. Face ID może także służyć do dokonywania płatności Apple Pay, robienia zakupów w App Store czy uwierzytelniania wewnątrz aplikacji.\n\nDane Face ID, w tym matematyczny obraz Twojej twarzy, są zaszyfrowane i chronione, a klucz jest dostępny tylko dla Secure Enclave. Gdy używasz Face ID, w tym przy pomyślnym uwierzytelnieniu, dane te są dopracowywane i uaktualniane w celu poprawienia funkcjonalności. Dane te są również uaktualniane, gdy Face ID wykrywa zbliżone dopasowanie, ale w celu odblokowania urządzenia zostaje następnie wprowadzony kod.\n\nDane Face ID nigdy nie są wysyłane poza Twoje urządzenie, a ich backup nigdy nie jest tworzony w iCloud ani w żadnym innym miejscu.\n\nTy kontrolujesz funkcję Face ID\n\nJeśli zarejestrujesz się w funkcji Face ID, masz kontrolę nad jej wykorzystaniem i możesz ją wyłączyć w dowolnym momencie. Jeśli na przykład nie chcesz używać Face ID do odblokowywania iPhone’a lub iPada, przejdź do Ustawień, stuknij w Face ID i kod, podaj swój kod, a następnie wyłącz stuknięciem opcję Odblokowywanie iPhone’a lub Odblokowywanie iPada. Aby wyłączyć Face ID, przejdź do Ustawień, stuknij w Face ID i kod, podaj swój kod, a następnie stuknij w opcję Wyzeruj Face ID. Spowoduje to usunięcie z urządzenia wszystkich danych Face ID, w tym matematycznego obrazu twarzy. Jeśli wymażesz lub wyzerujesz urządzenie przy użyciu usługi Znajdź albo wymazując całą zawartość i ustawienia, wszystkie dane Face ID zostaną usunięte.\n\nFace ID i aplikacje\n\nFunkcja Face ID może być używana do uwierzytelniania w aplikacjach, które ją obsługują. Aplikacje otrzymują tylko powiadomienie o tym, czy uwierzytelnianie się powiodło. Aplikacje nie mają dostępu do danych Face ID powiązanych z zarejestrowaną twarzą.\n\nInne sposoby użycia aparatu TrueDepth\n\nNawet jeśli nie zarejestrujesz się w funkcji Face ID, aparat TrueDepth jest inteligentnie uaktywniany do obsługi funkcji rozpoznających uwagę, np. wygaszania wyświetlacza, gdy nie patrzysz na iPhone’a lub iPada, czy obniżania poziomu głośności alertów, gdy patrzysz na urządzenie. Na przykład, gdy korzystasz z Safari, urządzenie sprawdzi, czy na nie patrzysz — jeśli nie patrzysz, ekran zostanie wyłączony.\n\nJeśli nie chcesz używać tych funkcji, możesz otworzyć Ustawienia > Face ID i kod, podaj swój kod, a następnie wyłącz stuknięciem opcję Funkcje rozpoznające uwagę."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID autentiserar dig med TrueDepth-kameran\n\nFace ID kan användas till att låsa upp din iPhone eller iPad. Face ID använder TrueDepth-kameran till att avgöra om personen som tittar på en iPhone eller iPad är den registrerade användaren. Du kan även använda Face ID till att betala med Apple Pay, göra inköp i App Store och autentisera inuti appar.\n\nFace ID-data – inklusive matematiska representationer av ditt ansikte – krypteras och skyddas med en nyckel som bara Secure Enclave har tillgång till. Dessa data förfinas och uppdateras när du använder Face ID så att din användarupplevelse förbättras, till exempel när du autentiserar dig. Face ID uppdaterar även den här informationen när funktionen upptäcker en nära matchning och enheten därefter låses upp med en lösenkod.\n\nAlla Face ID-data lagras på enheten och de säkerhetskopieras aldrig till iCloud eller någon annanstans.\n\nDu styr Face ID\n\nOm du väljer att registrera dig med Face ID kan du styra hur funktionen används och när som helst avaktivera den. Om du till exempel inte vill använda Face ID till att låsa upp iPhone eller iPad öppnar du Inställningar > Face ID och lösenkod, anger din lösenkod och trycker för att avaktivera iPhone-upplåsning eller iPad-upplåsning. Avaktivera Face ID genom att öppna Inställningar > Face ID och lösenkod, ange din lösenkod och sedan trycka på Återställ Face ID. När du gör detta raderas all Face ID-information, inklusive matematiska representationer av ditt ansikte, från enheten. Om du väljer att radera eller återställa enheten med hjälp av Hitta eller genom att radera allt innehåll och alla inställningar, kommer all Face ID-information att raderas.\n\nFace ID och appar\n\nInom appar som stöds kan du aktivera Face ID för autentisering. Apparna meddelas endast om autentiseringen lyckades eller inte. Appar kan inte komma åt Face ID-data som är associerade med det registrerade ansiktet.\n\nAndra sätt att använda TrueDepth-kameran\n\nÄven om du inte registrerar dig med Face ID aktiveras TrueDepth-kameran på ett intelligent sätt och ger stöd för funktioner som identifierar användarens uppmärksamhet. Till exempel kan skärmen tonas ned när du inte tittar på iPhone eller iPad eller så kan volymen på meddelanden sänkas om du tittar på enheten. När du exempelvis använder Safari kontrollerar enheten om du tittar på den och skärmen stängs av om du inte gör det.\n\nOm du inte vill använda dessa funktioner kan du öppna Inställningar > Face ID och lösenkod, ange din lösenkod och sedan trycka för att stänga av uppmärksamhetsfunktioner."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID จะตรวจสอบสิทธิ์ของคุณเมื่อคุณใช้กล้อง TrueDepth\n\nคุณสามารถใช้ Face ID เพื่อปลดล็อค iPhone หรือ iPad ของคุณได้ Face ID จะใช้กล้อง TrueDepth เพื่อตรวจสอบว่าคนที่กำลังมองที่ iPhone หรือ iPad เป็นผู้ใช้ที่ลงทะเบียนไว้หรือไม่ Face ID สามารถใช้กับงานอื่นได้ด้วยรวมทั้งการชำระเงินด้วย Apple Pay การซื้อสินค้าภายใน App Store และการตรวจสอบสิทธิ์ภายในแอป\n\nข้อมูล Face ID ซึ่งเป็นการแทนค่าทางคณิตศาสตร์แทนใบหน้าของคุณ จะถูกเข้ารหัสและปกป้องด้วยกุญแจจาก Secure Enclave เท่านั้น ข้อมูลนี้จะถูกปรับและอัปเดตตามการใช้ Face ID ของคุณเพื่อปรับปรุงประสบการณ์การใช้งานรวมทั้งเมื่อคุณถูกตรวจสอบสิทธิ์ได้สำเร็จ Face ID จะอัปเดตข้อมูลนี้ด้วยเมื่อการตรวจสอบใบหน้ามีผลที่ใกล้เคียงและใช้ประกอบกับการป้อนรหัสเพื่อปลดล็อคอุปกรณ์ด้วย\n\nข้อมูล Face ID จะอยู่ในอุปกรณ์ของคุณตลอดเวลา และจะไม่ถูกสำรองข้อมูลไปบน iCloud หรือที่อื่น\n\nคุณสามารถควบคุม Face ID ได้\n\nถ้าคุณเลือกที่จะลงทะเบียนใน Face ID คุณสามารถควบคุมการใช้งานหรือปิดใช้งานได้ตลอดเวลา ตัวอย่างเช่น ถ้าคุณไม่ต้องการใช้ Face ID เพื่อปลดล็อค iPhone หรือ iPad ของคุณ ให้ไปที่การตั้งค่า > Face ID และรหัส ป้อนรหัสของคุณ แล้วแตะเพื่อปิดใช้การปลดล็อค iPhone หรือการปลดล็อค iPad ในการปิดใช้งาน Face ID ให้ไปที่การตั้งค่า > Face ID และรหัส แล้วป้อนรหัสของคุณ จากนั้นแตะรีเซ็ต Face ID การรีเซ็ตนี้จะลบข้อมูล Face ID ซึ่งเป็นการแทนค่าทางคณิตศาสตร์แทนใบหน้าของคุณออกจากอุปกรณ์ของคุณ ถ้าคุณเลือกที่จะลบข้อมูลหรือรีเซ็ตอุปกรณ์ของคุณโดยใช้ค้นหาของฉัน หรือลบข้อมูลและการตั้งค่าทั้งหมด ข้อมูล Face ID ทั้งหมดจะถูกลบ\n\nFace ID และแอป\n\nในแอปที่รองรับ คุณสามารถเปิดใช้งาน Face ID เพื่อการตรวจสอบสิทธิ์ได้ แอปจะได้รับเฉพาะการแจ้งว่าการตรวจสอบสิทธิ์สำเร็จหรือไม่ แอปจะไม่สามารถเข้าถึงข้อมูล Face ID ที่ผูกกับใบหน้าที่ลงทะเบียนไว้\n\nการใช้งานอื่นของกล้อง TrueDepth\n\nถึงแม้ว่าคุณจะไม่ได้ลงทะเบียนไว้ใน Face ID แต่กล้อง TrueDepth ก็จะเปิดใช้งานอย่างชาญฉลาดเพื่อรองรับคุณสมบัติการตั้งใจมอง อย่างเช่นการหรี่แสงของจอภาพถ้าคุณไม่ได้มองที่ iPhone หรือ iPad ของคุณ หรือการลดความดังของเสียงเตือนถ้าคุณมองอยู่ที่อุปกรณ์ของคุณ ตัวอย่างเช่น ในระหว่างที่คุณใช้ Safari อุปกรณ์ของคุณจะตรวจสอบว่าคุณมองอยู่ที่อุปกรณ์ของคุณหรือไม่ และจะปิดหน้าจอถ้าคุณไม่ได้มอง\n\nถ้าคุณไม่ต้องการใช้คุณสมบัติเหล่านี้ คุณก็สามารถไปที่การตั้งค่า > Face ID และรหัส ป้อนรหัสของคุณ แล้วแตะเพื่อปิดใช้งานคุณสมบัติการตั้งใจมองได้"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "面容ID使用原深感摄像头对你进行身份认证\n\n面容ID可用于解锁iPhone或iPad。使用原深感摄像头，面容ID可确定注视iPhone或iPad的人是否为已注册的用户。面容ID的其他用途包括：Apple Pay支付、在App Store中购买以及App内身份认证。\n\n面容ID数据，包括你面部的数学表征，均由安全隔区的专用密钥进行加密保护。此数据将随着你对面容ID的使用（包括成功认证身份）而愈发准确并不断更新，以改进你的体验。当检测到高度匹配的面部，但随后用户输入密码解锁设备时，面容ID也将更新其数据。\n\n面容ID数据不会离开你的设备，且永不在iCloud或他处备份。\n\n你拥有面容ID的控制权\n\n如选择注册面容ID，你可以随时控制如何使用它或停用此功能。例如，如不想使用面容ID解锁iPhone或iPad，请前往“设置”>“面容ID与密码”，输入你的密码，然后轻点以关闭“iPhone解锁”或“iPad解锁”。若要停用面容ID，请前往“设置”>“面容ID与密码”，输入你的密码，然后轻点“重设面容ID”。此操作将从设备上删除包括面部数学表征在内的面容ID数据。如选择使用“查找”或通过抹掉所有内容和设置来抹掉或还原设备，那么所有面容ID数据将被删除。\n\n面容ID和App\n\n在受支持的App内，你可以启用面容ID进行身份认证。App仅会收到身份认证是否成功的通知。App无法访问与已注册面部关联的面容ID数据。\n\n原深感摄像头的其他用途\n\n即使不注册面容ID，原深感摄像头也可智能激活以支持注视感知功能，如在你未注视iPhone或iPad时将屏幕调暗，或在你注视设备时调低提醒音量。例如，使用Safari浏览器时，你的设备将检查以确认你是否在注视设备并在你未注视设备时关闭屏幕。\n\n如果不希望使用这些功能，你可以前往“设置”>“面容ID与密码”，输入你的密码，然后轻点以关闭“注视感知功能”。"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID Authenticates You Using the TrueDepth Camera\n\nFace ID can be used to unlock your iPhone or iPad. Using the TrueDepth camera, Face ID determines whether the person looking at an iPhone or iPad is the enrolled user. Other uses of Face ID include making payments with Apple Pay, making purchases within the App Store and authenticating within apps.\n\nFace ID data — including mathematical representations of your face — is encrypted and protected with a key available only to the Secure Enclave. This data will be refined and updated as you use Face ID to improve your experience, including when you successfully authenticate. Face ID will also update this data when it detects a close match but a passcode is subsequently entered to unlock the device.\n\nFace ID data does not leave your device, and is never backed up to iCloud or anywhere else.\n\nYou Have Control Over Face ID\n\nIf you choose to enrol in Face ID, you can control how it is used or disable it at any time. For example, if you don’t want to use Face ID to unlock your iPhone or iPad, go to Settings > Face ID & Passcode, enter your passcode, then tap to turn off iPhone Unlock or iPad Unlock. To disable Face ID, go to Settings > Face ID & Passcode, enter your passcode, then tap Reset Face ID. Doing so will delete Face ID data, including mathematical representations of your face, from your device. If you choose to erase or reset your device using Find My or by erasing all content and settings, all Face ID data will be deleted.\n\nFace ID and Apps\n\nWithin supported apps, you can enable Face ID for authentication. Apps are notified only as to whether the authentication is successful. Apps can’t access Face ID data associated with the enrolled face.\n\nOther Uses of the TrueDepth Camera\n\nEven if you don’t enrol in Face ID, the TrueDepth camera intelligently activates to support attention-aware features, like dimming the display if you are not looking at your iPhone or iPad or lowering the volume of alerts if you are looking at your device. For example, when you are using Safari, your device will check to determine if you are looking at your device and turn the screen off if you aren’t.\n\nIf you don’t want to use these features, you can go to Settings > Face ID & Passcode, enter your passcode, then tap to turn off Attention-Aware Features."
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„Face ID“ nustato jūsų tapatybę, kai naudojate „TrueDepth“ vaizdo kamerą\n\n„Face ID“ gali būti naudojama „iPhone“ arba „iPad“ atrakinti. Naudojant „TrueDepth“ vaizdo kamerą, „Face ID“ nustato, ar asmuo, žvelgiantis į „iPhone“ arba „iPad“, yra užregistruotas naudotojas. Kiti „Face ID“ naudojimo būdai yra pvz., mokėjimų atlikimas naudojant „Apple Pay“, pirkimas programoje „App Store“ ir autentifikavimas programose.\n\n„Face ID“ duomenys, įskaitant matematinius jūsų veido atvaizdus, yra užšifruoti ir apsaugoti raktu, kuris prieinamas tik architektūrai „Secure Enclave“. Šie duomenys bus tobulinami ir naujinami, kai naudosite „Face ID“, kad būtų gerinami jūsų įspūdžiai, įskaitant sėkmingo autentifikavimo atvejus. „Face ID“ taip pat atnaujins šiuos duomenis, kai aptiks tikslų atitikmenį, bet tik kai vėliau įrenginiui atrakinti bus įvestas prieigos kodas.\n\n„Face ID“ duomenys lieka jūsų įrenginyje ir jų atsarginės kopijos niekada nėra kuriamos platformoje „iCloud“ ar kur nors kitur.\n\nGalite valdyti „Face ID“\n\nJei pasirinksite užsiregistruoti sistemoje „Face ID“, galėsite valdyti, kaip ji naudojama arba bet kada ją išjungti. Pvz., jei nebenorėsite naudoti „Face ID“, kad atrakintumėte „iPhone“ arba „iPad“, eikite į sritį „Nustatymai“ > „Face ID“ ir prieigos kodas“, įveskite prieigos kodą, tada bakstelėkite, kad išjungtumėte parinktį „iPhone“ atrakinimas“ arba „iPad“ atrakinimas“. Norėdami išjungti „Face ID“, eikite į sritį „Nustatymai“ > „Face ID“ ir prieigos kodas“, įveskite prieigos kodą, tada bakstelėkite parinktį „Nustatyti „Face ID“ iš naujo“. Atlikus šį veiksmą, iš jūsų įrenginio bus ištrinti „Face ID“ duomenys, įskaitant matematinius jūsų veido atvaizdus. Jei pasirinksite ištrinti arba iš naujo nustatyti įrenginį naudodami programą „Lokatorius“ arba ištrynus visą turinį ir nustatymus, tuomet visi „Face ID“ duomenys bus ištrinti.\n\n„Face ID“ ir programos\n\nPalaikomose programose galite įjungti „Face ID“ autentifikuojant. Programoms pranešama tik apie tai, ar autentifikavimas buvo sėkmingas. Programos negali pasiekti „Face ID“ duomenų, susietų su užregistruotu veidu.\n\nKiti „TrueDepth“ vaizdo kameros naudojimo būdai\n\nNet jei neužsiregistruosite sistemoje „Face ID“, „TrueDepth“ vaizdo kamera bus išmaniai suaktyvinta, kad palaikytų dėmesingumo funkcijas, pvz., ekrano pritemdymą, jei nežiūrite į „iPhone“ arba „iPad“ arba įspėjimų garso sumažinimą, jei žiūrite į įrenginį. Pavyzdžiui, kai naudosite „Safari“, įrenginys tikrins ir nustatys, ar žiūrite į įrenginį, o jei ne – išjungs ekraną.\n\nJei nenorite naudoti šių funkcijų, eikite į sritį „Nustatymai“ > „Face ID“ ir prieigos kodas“, įveskite prieigos kodą, tada bakstelėkite, kad išjungtumėte parinktį „Dėmesingumo funkcijos“."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID Mengesahkan Anda Menggunakan Kamera TrueDepth\n\nFace ID boleh digunakan untuk membuka kunci iPhone atau iPad anda. Dengan menggunakan kamera TrueDepth, Face ID menentukan sama ada orang yang sedang melihat ke arah iPhone atau iPad ialah pengguna berdaftar. Penggunaan lain Face ID termasuk membuat bayaran menggunakan Apple Pay, membuat pembelian dalam App Store dan mengesahkan dalam app.\n\nData Face ID — termasuk perwakilan matematik wajah anda — disulitkan dan dilindungi dengan kunci yang hanya tersedia kepada Secure Enclave. Data ini akan diperincikan dan dikemas kini sambil anda menggunakan Face ID untuk meningkatkan pengalaman anda, termasuk apabila pengesahan anda berjaya. Face ID juga akan mengemas kini data ini apabila ia mengesan padanan hampir namun kod laluan dimasukkan seterusnya untuk membuka kunci peranti.\n\nData Face ID tidak meninggalkan peranti anda dan langsung tidak disandarkan ke iCloud atau tempat lain.\n\nAnda Mempunyai Kawalan ke Atas Face ID\n\nJika anda memilih untuk mendaftar dalam Face ID, anda boleh mengawal cara ia digunakan atau menyahdayakannya pada bila-bila masa. Contohnya, jika anda tidak mahu menggunakan Face ID untuk membuka kunci iPhone atau iPad anda, pergi ke Seting > Face ID & Kod Laluan, masukkan kod laluan anda, kemudian ketik untuk menyahaktifkan Buka Kunci iPhone atau Buka Kunci iPad. Untuk menyahdayakan Face ID, pergi ke Seting > Face ID & Kod Laluan, masukkan kod laluan anda, kemudian ketik Reset Face ID. Melakukan sedemikian akan memadamkan data Face ID, termasuk perwakilan matematik wajah anda, daripada peranti anda. Jika anda memilih untuk memadamkan atau mereset peranti anda menggunakan Cari atau dengan memadamkan semua kandungan dan seting, semua data Face ID akan dipadamkan.\n\nFace ID dan App\n\nDalam app yang disokong, anda boleh mendayakan Face ID untuk pengesahan. App hanya dimaklumkan sama ada pengesahan berjaya. App tidak boleh mengakses data Face ID yang dikaitkan dengan wajah yang didaftarkan.\n\nPenggunaan Lain Kamera TrueDepth\n\nWalaupun anda tidak mendaftar dalam Face ID, kamera TrueDepth diaktifkan secara pintar untuk menyokong ciri kesedaran perhatian, seperti memalapkan paparan jika anda tidak melihat ke arah iPhone atau iPad anda atau menurunkan kelantangan isyarat jika anda melihat ke arah peranti anda. Contohnya, apabila anda menggunakan Safari, peranti anda akan memeriksa untuk menentukan sama ada anda melihat ke arah peranti anda dan mematikan skrin jika anda tidak melihat ke arah peranti.\n\nJika anda tidak mahu menggunakan ciri-ciri ini, anda boleh pergi ke Seting > Face ID & Kod Laluan, masukkan kod laluan anda, kemudian ketik untuk menyahaktifkan Ciri Kesedaran Perhatian."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID ověřuje vaši totožnost pomocí TrueDepth kamery\n\nFace ID můžete používat k odemykání iPhonu nebo iPadu. Pomocí TrueDepth kamery Face ID určí, zda je člověk, který se na iPhone nebo iPad dívá, oprávněným uživatelem. Face ID taky můžete použít k nákupům s Apple Pay, nákupům v App Storu a ověřování své totožnosti v aplikacích.\n\nData Face ID – včetně matematického popisu vaší tváře – jsou zašifrovaná a chráněná klíčem, ke kterému má přístup jen Secure Enclave. Při používání Face ID se tato data budou zpřesňovat a aktualizovat. Díky tomu pro vás bude používání Face ID snazší a ověřování totožnosti bude úspěšnější. Face ID taky tato data aktualizuje, když detekuje přibližnou podobu a k odemknutí zařízení bude následně použit kód.\n\nData Face ID neopustí vaše zařízení. Nebudou zálohována na iCloud ani nikam jinam.\n\nNad Face ID máte plnou kontrolu\n\nKdyž se rozhodnete Face ID, můžete si vybrat způsoby jeho využití a taky ho můžete kdykoli vypnout. Pokud například nechcete Face ID používat k odemykání iPhonu nebo iPadu, otevřete Nastavení > Face ID a kód, zadejte svůj kód a klepnutím vypněte Odemknutí iPhonu nebo Odemknutí iPadu. Chcete‑li Face ID vypnout, otevřete Nastavení > Face ID a kód, zadejte svůj kód a potom klepněte na Resetovat Face ID. Ze zařízení se smažou data Face ID včetně matematických popisů vaší tváře. Ke smazání všech dat Face ID dojde i v případě, že k vymazání nebo resetu zařízení použijete službu Najít nebo vymažete veškerý obsah a nastavení.\n\nFace ID a aplikace\n\nV podporovaných aplikacích můžete Face ID používat k ověřování totožnosti. Aplikace dostanou jen oznámení, že ověření totožnosti úspěšně proběhlo. Nebudou mít přístup k datům Face ID sdruženým se zaregistrovanou tváří.\n\nDalší využití TrueDepth kamery\n\nI když si Face ID nevytvoříte, TrueDepth kamera se inteligentně aktivuje na podporu funkcí souvisejících s detekcí pozornosti, například dojde ke ztlumení displeje, když se nebudete na iPhone nebo iPad dívat, nebo ke snížení hlasitosti upozornění, když se na něj dívat budete. Při používání Safari zařízení zjistí, zda se na něj díváte, a v případě, že bude váš pohled obrácený jiným směrem, vypne se displej.\n\nPokud tyto funkce používat nechcete, otevřete Nastavení > Face ID a kód, zadejte svůj kód a klepnutím vypněte Funkce pro detekci pozornosti."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID overuje vašu totožnosť pomocou TrueDepth kamery\n\nPomocou Face ID môžete odomykať svoj iPhone alebo iPad. Face ID použitím TrueDepth kamery zistí, či osoba, ktorá sa pozerá na iPhone alebo iPad, je oprávnený užívateľ. Face ID môžete používať aj na uskutočňovanie platieb cez Apple Pay, nakupovanie v App Store a overovanie totožnosti v apkách.\n\nDáta Face ID vrátane matematického popisu vašej tváre sú zašifrované a chránené kľúčom dostupným len pre Secure Enclave. Tieto dáta sú počas používania Face ID vylepšované a aktualizované. Face ID aktualizuje dáta pri úspešnej autentifikácii a aj pri zaregistrovaní blízkej zhody, po ktorej nasleduje odomknutie zariadenia zadaním kódu.\n\nDáta Face ID zostávajú na vašom zariadení a nie sú zálohované v iCloude ani nikde inde.\n\nNad Face ID máte plnú kontrolu\n\nAk sa rozhodnete používať Face ID, môžete si vybrať spôsoby jeho využitia a taktiež ho môžete kedykoľvek vypnúť. Ak napríklad nechcete odomykať svoj iPhone alebo iPad pomocou Face ID, otvorte Nastavenia > Face ID a kód, zadajte svoj kód a klepnutím vypnite možnosť Odomykanie iPhonu alebo Odomykanie iPadu. Ak chcete vypnúť Face ID, otvorte Nastavenia > Face ID a kód, zadajte svoj kód a klepnite na Resetovať Face ID. Resetovaním Face ID vymažete zo svojho zariadenia dáta Face ID vrátane matematického popisu vašej tváre. Ak sa rozhodnete vymazať alebo resetovať zariadenie použitím služby Nájsť alebo vymazať všetok obsah a nastavenia, budú vymazané aj všetky dáta Face ID.\n\nFace ID a apky\n\nV podporovaných apkách môžete zapnúť overovanie totožnosti pomocou Face ID. Apky budú informované len o tom, či bolo overenie úspešné. Apky nemôžu pristupovať k dátam Face ID priradeným k registrovanej tvári.\n\nĎalšie využitie TrueDepth kamery\n\nAj keď sa rozhodnete nevyužívať Face ID, TrueDepth kamera sa inteligentne aktivuje na podporu funkcií, ktoré zisťujú pozornosť. Tieto funkcie dokážu stlmiť displej, keď sa nepozeráte na svoj iPhone alebo iPad, prípadne stíšiť hlasitosť upozornení, keď sa pozeráte na svoje zariadenie. Napríklad pri používaní apky Safari bude vaše zariadenie sledovať, či sa naň pozeráte, a vypne obrazovku, keď mu prestanete venovať pozornosť.\n\nAk nechcete používať tieto funkcie, otvorte Nastavenia > Face ID a kód, zadajte svoj kód a klepnutím vypnite Funkcie na detekciu pozornosti."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID te autentica mediante la cámara TrueDepth\n\nFace ID se puede usar para desbloquear tu iPhone o iPad. Por medio de la cámara TrueDepth y el uso de Face ID se puede determinar si la persona que está viendo el iPhone o iPad es el usuario registrado. Otros usos incluyen realizar pagos con Apple Pay, comprar en App Store y autenticarse dentro de apps.\n\nLos datos de Face ID —incluyendo las representaciones matemáticas de tu cara— se encriptan y protegen mediante una clave disponible en exclusiva para el Secure Enclave. Estos datos se refinarán y actualizarán conforme uses Face ID para así mejorar tu experiencia, incluyendo cuando logres autenticarte. Face ID también actualizará tales datos al detectar una cara muy parecida a la registrada y pedirte ingresar el código para desbloquear el dispositivo.\n\nLos datos de Face ID no abandonan tu dispositivo ni tampoco se respaldan en iCloud ni en ningún otro lado.\n\nTienes control sobre Face ID\n\nSi eliges registrarte con Face ID, puedes controlar cómo se usa o desactivarlo en cualquier momento. Por ejemplo, si no quieres usar Face ID para desbloquear tu iPhone o iPad, ve a Configuración > Face ID y código e ingresa tu código para desactivar Desbloquear iPhone o Desbloquear iPad. Para desactivar Face ID, ve a Configuración > Face ID y código y toca Restablecer Face ID. Esto último borrará los datos de Face ID del dispositivo, incluyendo cualquier representación matemática de tu cara. Se borrarán todos los datos de Face ID si eliges borrar o restablecer tu dispositivo utilizando Encontrar o borrando todo el contenido y la configuración.\n\nFace ID y apps\n\nPuedes permitir la autenticación con Face ID en las apps compatibles. Las apps sólo te notificarán de cada autenticación exitosa. Tales apps no pueden acceder a los datos de Face ID asociados con la cara registrada.\n\nOtros usos de la cámara TrueDepth\n\nAunque no haya caras registradas con Face ID, la cámara TrueDepth se activa de manera inteligente para permitir funciones que detectan atención, como obscurecer la pantalla si no estás viendo tu iPhone o iPad o bajar el volumen de las alertas en caso contrario. Por ejemplo, tu dispositivo verificará si estás viendo a tu dispositivo al usar Safari y apagará la pantalla si no es así.\n\nSi no quieres usar ninguna de estas funciones, ve a Configuración > Face ID y código, ingresa tu código y desactiva Funciones que detectan atención."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID ви идентифицира с камерата TrueDepth\n\nМожете да използвате Face ID за отключване на вашия iPhone или iPad. Чрез камерата TrueDepth Face ID определя дали човекът, който гледа към iPhone или iPad, е записаният потребител. Face ID се използва и за други функции, включително за извършване на плащания с Apple Pay, извършване на плащания в App Store, както и за идентифициране в приложенията.\n\nДанни за Face ID — включително математическата интерпретация на лицето ви — са криптирани и защитени с ключ, достъпен само за Secure Enclave. Тези данни ще бъдат усъвършенствани и обновявани, докато използвате Face ID, за да подобри аспектите на вашето изживяване, включително когато успешно се идентифицирате. Face ID също ще обнови тези данни, когато открие близко съвпадение, но след това е въведен код отключване на устройството.\n\nДанните за Face ID не напускат вашето устройство и не се синхронизират с iCloud или някъде другаде.\n\nКонтролът над Face ID е ваш\n\nАко изберете да използвате Face ID, можете да контролирате как да се използва, както и да го деактивирате по всяко време. Например, ако не искате да използвате Face ID за отключване на вашия iPhone или iPad, отидете в Настройки > Face ID и Код, въведете вашия Код, след което докоснете, за да изключите Отключване на iPhone или Отключване на iPad. За да деактивирате Face ID, отидете в Настройки > Face ID и код, въведете вашия код и след това докоснете Нулирай Face ID. Така ще изтриете от вашето устройство данните за Face ID, включително математическата интерпретация на лицето ви. Ако изберете да изтриете или нулирате вашето устройство, като използвате функцията Намери или изтриете цялото съдържаниe и настройки, всички данни за Face ID ще се изтрият.\n\nFace ID и приложения\n\nВ поддържаните приложения, можете да активирате Face ID за идентификация. Приложенията се уведомяват само за това дали идентификацията е успешна. Приложенията нямат достъп до данните за Face ID, свързани с регистрираното лице.\n\nДруги възможности за използване на камерата TrueDepth\n\nДори ако не се регистрирате във Face ID, камерата TrueDepth се активира интелигентно, за да поддържа функции, отчитащи вниманието, като затъмняване на екрана, ако не гледате към вашия iPhone или iPad, или намаляване на силата на звука на предупрежденията, ако гледате към вашето устройство. Например, когато използвате Safari, вашето устройство ще проверява дали гледате към устройството и ще изключи екрана, ако не гледате.\n\nАко не искате да използвате тези функции, можете да отидете в Настройки > Face ID и код, въведете вашия код и след това докоснете, за да изключите Функции, отчитащи вниманието."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID Authenticates You Using the TrueDepth Camera\n\nFace ID can be used to unlock your iPhone or iPad. Using the TrueDepth camera, Face ID determines whether the person looking at an iPhone or iPad is the enrolled user. Other uses of Face ID include making payments with Apple Pay, making purchases within the App Store and authenticating within apps.\n\nFace ID data — including mathematical representations of your face — is encrypted and protected with a key available only to the Secure Enclave. This data will be refined and updated as you use Face ID to improve your experience, including when you successfully authenticate. Face ID will also update this data when it detects a close match but a passcode is subsequently entered to unlock the device.\n\nFace ID data does not leave your device, and is never backed up to iCloud or anywhere else.\n\nYou Have Control Over Face ID\n\nIf you choose to enrol in Face ID, you can control how it is used or disable it anytime. For example, if you don’t want to use Face ID to unlock your iPhone or iPad, go to Settings > Face ID & Passcode, enter your passcode, then tap to turn off iPhone Unlock or iPad Unlock. To disable Face ID, go to Settings > Face ID & Passcode, enter your passcode, then tap Reset Face ID. Doing so will delete Face ID data, including mathematical representations of your face, from your device. If you choose to erase or reset your device using Find My or by erasing all content and settings, all Face ID data will be deleted.\n\nFace ID and Apps\n\nWithin supported apps, you can enable Face ID for authentication. Apps are notified only as to whether the authentication is successful. Apps can’t access Face ID data associated with the registered face.\n\nOther Uses of the TrueDepth Camera\n\nEven if you don’t enrol in Face ID, the TrueDepth camera intelligently activates to support attention aware features, like dimming the display if you are not looking at your iPhone or iPad or lowering the volume of alerts if you are looking at your device. For example, when you are using Safari, your device will check to determine if you are looking at your device and turn the screen off if you aren’t.\n\nIf you don’t want to use these features, you can go to Settings > Face ID & Passcode, enter your passcode, then tap to turn off Attention Aware Features."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID izvede preverjanje pristnosti s kamero TrueDepth\n\nFace ID se lahko uporabi za odklepanje vašega iPhona ali iPada. S kamero TrueDepth Face ID preveri, ali je oseba, ki gleda v iPhone ali iPad, včlanjen uporabnik. Face ID lahko uporabljate tudi za plačevanje s storitvijo Apple Pay, nakupovanje v trgovini App Store in preverjanje pristnosti v aplikacijah.\n\nPodatki Face ID – vključno z matematičnimi predstavitvami vašega obraza – so šifrirani in zaščiteni s ključem, ki je na voljo samo funkciji Secure Enclave. Ob uporabi funkcije Face ID, vključno s primeri, ko preverjanje pristnosti uspešno izvedete, se bodo ti podatki izboljševali in posodabljali, da bi vam zagotovili boljšo izkušnjo. Funkcija Face ID bo te podatke posodobila tudi, ko zazna približno ujemanje, a je bila naknadno vnesena koda za dostop za odklepanje naprave.\n\nPodatki Face ID ne zapustijo vaše naprave in se nikoli varnostno ne kopirajo v storitev iCloud ali kamorkoli drugam.\n\nVi imate nadzor nad funkcijo Face ID\n\nČe se odločite uporabiti funkcijo Face ID, lahko nadzorujete njeno uporabo ali jo kadarkoli onemogočite. Če na primer ne želite uporabiti funkcije Face ID za odklepanje iPhona ali iPada, odprite Nastavitve > Face ID in koda za dostop, vnesite svojo kodo za dostop in nato tapnite za izklop odklepanja iPhona ali iPada. Če želite onemogočiti funkcijo Face ID, odprite Nastavitve > Face ID in koda za dostop, vnesite svojo kodo za dostop in nato tapnite Ponastavi Face ID. S tem se bodo iz vaše naprave izbrisali podatki Face ID, vključno z matematičnimi predstavitvami vašega obraza. Če se odločite izbrisati ali ponastaviti svojo napravo s funkcijo Najdi ali z brisanjem vseh vsebin in nastavitev, bodo vsi podatki Face ID izbrisani.\n\nFace ID in aplikacije\n\nZnotraj podprtih aplikacij lahko za preverjanje pristnosti omogočite Face ID. Aplikacije bodo prejele obvestilo le o uspešnosti preverjanja pristnosti. Aplikacije ne morejo dostopati do podatkov Face ID, ki so povezani z registriranim obrazom.\n\nDrugi načini uporabe kamere TrueDepth\n\nTudi če se odločite, da ne boste uporabljali funkcije Face ID, se kamera TrueDepth inteligentno aktivira, da podpre funkcije zaznavanja pozornosti, kot so zatemnitev zaslona, ko ne gledate v iPhone ali iPad, ali zmanjšanje glasnosti opozoril, ko gledate v napravo. Ko na primer uporabljate Safari, bo vaša naprava preverila, ali gledate v napravo, in v nasprotnem primeru izklopila zaslon.\n\nČe ne želite uporabljati teh funkcij, odprite Nastavitve > Face ID in koda za dostop, vnesite svojo kodo za dostop in nato tapnite za izklop funkcij zaznavanja pozornosti."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID authentifiziert dich mithilfe der TrueDepth-Kamera\n\nFace ID kann zum Entsperren des iPhone oder iPad verwendet werden. Mithilfe der TrueDepth-Kamera kann Face ID bestimmen, ob die Person, die auf das iPhone oder iPad blickt, der:die registrierte Benutzer:in ist. Außerdem kann Face ID zum Bezahlen mit Apple Pay, für Käufe im App Store und zum Authentifizieren in Apps verwendet werden.\n\nFace ID-Daten – einschließlich mathematischer Darstellungen deines Gesichts – werden mit einem Schlüssel verschlüsselt und geschützt, der nur der Secure Enclave bekannt ist. Diese Daten werden mit der Benutzung von Face ID angepasst und aktualisiert, um die Funktionalität für dich zu verbessern, wie z. B. beim erfolgreichen Authentifizieren. Diese Daten werden von Face ID auch aktualisiert, wenn eine enge Übereinstimmung festgestellt wird, aber anschließend ein Code zum Entsperren des Geräts eingegeben wird.\n\nDie Face ID-Daten verbleiben ausschließlich auf deinem Gerät und es werden auch keine Backups in iCloud oder anderen Orten angelegt.\n\nDu hast die Kontrolle über Face ID\n\nWenn du dich bei Face ID registrierst, hast du die Kontrolle darüber, wie die Funktion verwendet wird, und kannst sie auch jederzeit deaktivieren. Wenn du z. B. Face ID nicht zum Entsperren deines iPhone oder iPad verwenden möchtest, wähle „Einstellungen“ > „Face ID & Code“, gib deinen Code ein und tippe, um „iPhone entsperren“ oder „iPad entsperren“ zu deaktivieren. Zum Deaktivieren von Face ID wähle „Einstellungen“ > „Face ID & Code“, gib deinen Code ein und tippe auf „Face ID zurücksetzen“. Dadurch werden Face ID-Daten, einschließlich mathematischer Darstellungen deines Gesichts, von deinem Gerät gelöscht. Falls du dein Gerät mit „Wo ist?“ löschst oder zurücksetzt bzw. alle Inhalte und Daten löschst, werden auch sämtliche Face ID-Daten gelöscht.\n\nFace ID und Apps\n\nIn unterstützten Apps kann Face ID zur Authentifizierung aktiviert werden. Apps werden lediglich darüber informiert, ob die Authentifizierung erfolgreich war. Apps haben keinen Zugriff auf Face ID-Daten, die mit dem registrierten Gesicht verknüpft sind.\n\nSonstige Verwendung der TrueDepth-Kamera\n\nAuch ohne deine Registrierung bei Face ID wird die TrueDepth-Kamera intelligent aktiviert, um aufmerksamkeitssensible Funktionen zu unterstützen, etwa das Dimmen des Displays, wenn du nicht auf das iPhone oder iPad blickst, oder das Reduzieren der Lautstärke für Hinweise, wenn du das Gerät ansiehst. Bei der Verwendung von Safari wird dein Gerät beispielsweise prüfen, ob du auf das Gerät blickst, und das Display ausschalten, wenn dies nicht der Fall ist.\n\nSolltest du diese Funktionen nicht verwenden wollen, wähle „Einstellungen“ > „Face ID & Code“, gib deinen Code ein und tippe, um „Aufmerksamkeitssensible Funktionen“ zu deaktivieren."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID xác thực bạn bằng camera TrueDepth\n\nBạn có thể sử dụng Face ID để mở khóa iPhone hoặc iPad của mình. Bằng camera TrueDepth, Face ID xác định được người đang nhìn vào iPhone hoặc iPad có phải là người dùng đã đăng ký hay không. Face ID còn có những công dụng khác, bao gồm thực hiện thanh toán với Apple Pay, thực hiện các giao dịch mua trong App Store và xác thực trong các ứng dụng.\n\nDữ liệu Face ID – bao gồm các phép mô tả toán học về khuôn mặt bạn – được mã hóa và bảo vệ bằng khóa dành riêng cho Secure Enclave. Dữ liệu này sẽ được sàng lọc và cập nhật khi bạn sử dụng Face ID để cải thiện trải nghiệm, kể cả khi bạn xác thực thành công. Face ID cũng sẽ cập nhật dữ liệu này khi phát hiện thấy thông tin nhận dạng gần khớp nhưng sau đó mật mã lại được nhập để mở khóa thiết bị.\n\nDữ liệu Face ID luôn được lưu trữ trên thiết bị của bạn và không bao giờ được sao lưu vào iCloud hay bất cứ nơi nào khác.\n\nBạn có quyền kiểm soát Face ID\n\nNếu bạn lựa chọn đăng ký Face ID, bạn có thể kiểm soát cách sử dụng hoặc tắt tính năng này bất cứ lúc nào. Ví dụ như nếu bạn không muốn sử dụng Face ID để mở khóa iPhone hoặc iPad, hãy đi tới Cài đặt > Face ID & Mật mã, nhập mật mã của bạn, sau đó chạm để tắt Mở khóa iPhone hoặc Mở khóa iPad. Để tắt Face ID, hãy đi tới Cài đặt > Face ID & Mật mã, nhập mật mã của bạn, sau đó chạm vào Đặt lại Face ID. Thao tác này sẽ xóa dữ liệu Face ID, kể cả các phép mô tả toán học về khuôn mặt bạn, khỏi thiết bị của bạn. Nếu bạn lựa chọn xóa hoặc đặt lại thiết bị của mình bằng tính năng Tìm hoặc bằng cách xóa tất cả nội dung và cài đặt thì tất cả dữ liệu Face ID sẽ bị xóa.\n\nFace ID và các ứng dụng\n\nTrong các ứng dụng được hỗ trợ, bạn có thể bật Face ID để xác thực. Các ứng dụng chỉ được thông báo về việc có xác thực thành công hay không. Các ứng dụng không thể truy cập vào dữ liệu Face ID được liên kết với khuôn mặt đã đăng ký.\n\nCông dụng khác của camera TrueDepth\n\nNgay cả khi bạn không đăng ký Face ID, camera TrueDepth cũng kích hoạt một cách thông minh để hỗ trợ các tính năng nhận biết sự chú ý, như làm tối màn hình nếu bạn đang không nhìn vào iPhone hoặc iPad hoặc giảm âm lượng của các cảnh báo nếu bạn đang nhìn vào thiết bị của mình. Ví dụ như khi bạn đang sử dụng Safari, thiết bị của bạn sẽ kiểm tra để xác định xem bạn có đang nhìn vào thiết bị hay không và tắt màn hình nếu bạn đang không nhìn vào.\n\nNếu bạn không muốn sử dụng những tính năng này, bạn có thể đi tới Cài đặt > Face ID & Mật mã, nhập mật mã của bạn, sau đó chạm để tắt Tính năng nhận biết sự chú ý."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O Face ID Usa a Câmera TrueDepth para Autenticar Você\n\nO Face ID pode ser usado para desbloquear o iPhone ou iPad. Usando a câmera TrueDepth, o Face ID determina se a pessoa que está olhando para o iPhone ou iPad é o usuário registrado. O Face ID também pode ser usado para fazer pagamentos com o Apple Pay, fazer compras na App Store e autenticar dentro de apps.\n\nOs dados do Face ID (incluindo representações matemáticas do seu rosto) são criptografados e protegidos com uma chave disponibilizada apenas para o Secure Enclave. Esses dados serão refinados e atualizados à medida que você usa o Face ID para melhorar a sua experiência, incluindo quando você autenticar com sucesso. O Face ID também atualizará esses dados quando detectar uma correspondência próxima, mas um código for digitado subsequentemente para desbloquear o dispositivo.\n\nOs dados do Face ID não saem do seu dispositivo e nunca são armazenados no iCloud ou em qualquer outro lugar.\n\nVocê Tem Controle sobre o Face ID\n\nSe você optar por se registrar no Face ID, é possível controlar como ele é usado ou desativá-lo a qualquer momento. Por exemplo, se você não quiser usar o Face ID para desbloquear o iPhone ou iPad, acesse Ajustes > Face ID e Código, digite seu código e desative Desbloquear iPhone ou Desbloquear iPad. Para desativar o Face ID, acesse Ajustes > Face ID e Código, digite seu código e toque em Redefinir Face ID. Isso removerá os dados do Face ID do seu dispositivo, incluindo representações matemáticas do seu rosto. Se você optar por apagar ou redefinir o dispositivo usando o Buscar, ou apagar todo o conteúdo e todos os ajustes, os dados do Face ID também serão apagados.\n\nFace ID e Apps\n\nVocê pode ativar a autenticação por Face ID dentro dos apps compatíveis. Os apps são notificados apenas se a autenticação foi bem sucedida ou não. Os apps não podem acessar os dados do Face ID associados ao rosto registrado.\n\nOutros Usos da Câmera TrueDepth\n\nMesmo se você não se registrar no Face ID, a câmera TrueDepth é ativada de maneira inteligente para usar recursos com detecção de atenção, como reduzir o brilho da tela se você não estiver olhando para o iPhone ou iPad ou reduzir o volume dos alertas se você estiver olhando para o dispositivo. Por exemplo, quando você usar o Safari, o dispositivo determinará se você está olhando para ele e apagará a tela caso não esteja.\n\nSe não quiser usar esses recursos, acesse Ajustes > Face ID e Código, digite seu código e toque para desativar Recursos com Detecção de Atenção."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID автентифікує вас через TrueDepth-камеру\n\nFace ID можна застосовувати для відмикання свого iPhone або iPad. Face ID за допомогою TrueDepth-камери визначає, чи є людина, що дивиться на iPhone або iPad, зареєстрованим користувачем. З‑поміж іншого Face ID можна застосовувати для здійснення оплати через Apple Pay, здійснення покупок в App Store та автентифікації в програмах.\n\nДані Face ID разом із математичними моделями вашого обличчя шифруються і захищаються ключем, до якого доступ має лише Secure Enclave. Ці дані вдосконалюються й оновлюються, коли ви користуєтесь Face ID, для покращення вашого досвіду взаємодії. Враховуються і ваші успішні сеанси автентифікації. Face ID також оновлює ці дані, коли виявлено близький збіг із подальшим введенням коду допуску для відмикання цього пристрою.\n\nДані Face ID ніколи не залишають вашого пристрою і не архівуються в iCloud чи деінде.\n\nВи маєте засоби контролю над Face ID\n\nЯкщо ви вирішили зареєструватися у Face ID, то можете керувати, як ним користуватися, або вимкнути його будь-коли. Наприклад, якщо ви не хочете використовувати Face ID для відімкнення свого iPhone або iPad, перейдіть у Параметри > Face ID і Код допуску, введіть свій код допуску, потім торкніть для вимкнення параметра «Відмикання iPhone» або «Відмикання iPad». Щоб вимкнути Face ID, перейдіть у Параметри > Face ID і Код допуску, введіть свій код допуску, потім торкніть «Скинути Face ID». Ця дія видалить дані Face ID з вашого пристрою, зокрема математичні моделі вашого обличчя. Якщо ви оберете стирання чи скидання свого пристрою через Локатор або стирання всього вмісту і параметрів, усі дані Face ID буде видалено.\n\nFace ID і програми\n\nУ підтримуваних програмах ви можете вмикати Face ID для автентифікації. Програми сповіщаються лише щодо того, чи успішною є автентифікація. Програми не мають доступу до даних Face ID, повʼязаних із зареєстрованим обличчям.\n\nІнші типи застосування камери TrueDepth\n\nНавіть якщо ви не зареєструвалися у Face ID, камера TrueDepth своєчасно активується для підтримки функцій, пильних до уваги, як‑от затемнювання дисплею, коли ви не дивитесь на свій iPhone або iPad, або зменшування гучності оповісток, коли ви дивитесь на свій пристрій. Наприклад, коли ви користуєтесь Safari, ваш пристрій перевірятиме, чи дивитесь ви на свій пристрій, і вимикатиме екран, якщо ні.\n\nЯкщо ви не хочете використовувати ці функції, перейдіть у Параметри > Face ID і Код допуску, введіть свій код допуску, потім торкніть для вимкнення параметра «Функції, пильні до уваги»."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID сізді TrueDepth камерасының көмегімен анықтайды\n\nFace ID функциясын iPhone немесе iPad құрылғысының құлпын ашу үшін пайдалануға болады. TrueDepth камерасының көмегімен Face ID функциясы iPhone немесе iPad құрылғысының камерасына қарап тұрған адамның тіркелген пайдаланушы екенін анықтайды. Сондай-ақ Face ID функциясы Apple Pay сервисі арқылы төлемдер жасау, App Store дүкенінде сатып алу және қолданбаларда аутентификациядан өту мақсатында пайдаланылады.\n\nFace ID деректері, оның ішінде бетіңіздің математикалық модельдері шифрланған және Secure Enclave қосалқы жүйесіне ғана қолжетімді кілтпен қорғалған. Функцияны пайдаланудағы тәжірибеңізді жақсарту, оның ішінде аутентификациядан сәтті өту үшін Face ID функциясын пайдаланғанда, бұл деректер нақтыланады және жаңартылады. Face ID бұл деректерді нақты сәйкестік анықталып, құрылғының құлпын ашу үшін құпиякод енгізілген кезде де жаңартады.\n\nFace ID деректері құрылғыңыздан жіберілмейді және iCloud сервисіне немесе басқа жерге сақтық көшірмелері ешқашан жасалмайды.\n\nFace ID функциясын сіз басқарасыз\n\nFace ID қолданбасында тіркелген жағдайда, оның пайдаланылуын басқаруға немесе кез келген уақытта өшіруге болады. Мысалы, iPhone немесе iPad құрылғыңыздың құлпын ашу үшін Face ID функциясын пайдаланғыңыз келмесе, «Реттеулер» > «Face ID және құпиякод» тармағы арқылы өтіп, құпиякодыңызды енгізіңіз, содан кейін «iPhone құрылғысының құлпын ашу» немесе «iPad құрылғысының құлпын ашу» функциясын өшіріңіз. Face ID функциясын өшіру үшін «Реттеулер» > «Face ID және құпиякод» тармағы арқылы өтіп, құпиякодыңызды енгізіңіз, содан кейін «Face ID бастапқы күйге қайтару» опциясын түртіңіз. Бұл әрекет нәтижесінде құрылғыңыздан Face ID деректері, оның ішінде бетіңіздің математикалық модельдері өшіріледі. «Локатор» функциясының көмегімен немесе барлық контент пен реттеуді өшіру арқылы құрылғыдағы деректерді өшірген немесе құрылғыны бастапқы күйге қайтарған жағдайда, барлық Face ID деректері жойылады.\n\nFace ID және қолданбалар\n\nҚолдау көрсетілетін қолданбаларда Face ID функциясын аутентификация үшін қосуға болады. Қолданбаларға аутентификацияның сәтті не сәтсіз аяқталғаны туралы ғана хабарландыру жіберіледі. Қолданбалар тіркелген бетпен байланысты Face ID деректеріне қол жеткізе алмайды.\n\nTrueDepth камерасын пайдаланудың басқа жолдары\n\nFace ID функциясын пайдалану үшін тіркелмеген болсаңыз да, TrueDepth камерасы сіз iPhone не iPad құрылғысына қарап тұрмағанда, дисплейді қараңғылату немесе құрылғыға қарап тұрғанда, ескертулердің дыбыс деңгейін төмендету сияқты назарды тану функцияларына қолдау көрсету үшін оларды интеллектуалды түрде іске қосады. Мысалы, Safari браузерін пайдаланғанда, құрылғыңыз сіздің оған қарап тұрғаныңызды және қарап тұрмаған жағдайда, экранның өшірулі екенін анықтауға тырысады.\n\nОсы функцияларды пайдаланғыңыз келмесе, «Реттеулер» > «Face ID және құпиякод» тармағы арқылы өтіп, құпиякодты енгізуге және «Назарды тану» функцияларын өшіруге болады."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID efectuează autentificarea dvs. utilizând camera TrueDepth\n\nFace ID poate fi utilizat pentru deblocarea iPhone‑ului sau iPad‑ului. Cu ajutorul camerei TrueDepth, Face ID determină dacă persoana care se uită la un iPhone sau iPad este utilizatorul înregistrat. Face ID poate fi utilizat și în alte scopuri, printre care efectuarea plăților cu Apple Pay, cumpărarea din App Store și autentificarea în alte aplicații.\n\nDatele Face ID, inclusiv reprezentările matematice ale chipului dvs., sunt criptate și protejate cu o cheie disponibilă doar pe Secure Enclave. Aceste date vor fi rafinate și actualizate pe măsură ce utilizați Face ID, pentru a vă îmbunătăți experiența de utilizare, inclusiv atunci când vă autentificați cu succes. De asemenea, Face ID va actualiza aceste date când detectează o corespondență apropiată, dar ulterior se introduce un cod de acces pentru deblocarea dispozitivului.\n\nDatele Face ID nu vor părăsi dispozitivul dvs. și nu se va efectua niciodată backup pentru acestea pe iCloud sau în altă parte.\n\nDvs. aveți control asupra Face ID\n\nDacă optați să vă înscrieți în Face ID, puteți să controlați modul în care este utilizat sau îl puteți dezactiva oricând. De exemplu, dacă nu doriți să utilizați Face ID pentru a vă debloca iPhone‑ul sau iPad-ul, accesați Configurări > Face ID și cod de acces, introduceți codul de acces, apoi apăsați pentru a dezactiva Deblocare iPhone sau Deblocare iPad. Pentru a dezactiva Face ID, accesați Configurări > Face ID și cod de acces, introduceți codul de acces, apoi apăsați pe Resetați Face ID. Această acțiune va șterge de pe dispozitivul dvs. datele Face ID, inclusiv reprezentările matematice ale chipului dvs. Dacă optați să ștergeți sau să resetați dispozitivul utilizând aplicația Găsire sau ștergând tot conținutul și toate configurările, vor fi șterse toate datele Face ID.\n\nFace ID și aplicațiile\n\nÎn aplicațiile compatibile, puteți activa Face ID pentru autentificare. Aplicațiile sunt notificate doar dacă autentificarea s-a realizat sau nu cu succes. Aplicațiile nu pot accesa datele Face ID asociate chipului înregistrat.\n\nAlte utilizări ale camerei TrueDepth\n\nDacă nu doriți să vă înscrieți în Face ID, camera TrueDepth se activează inteligent pentru a fi compatibilă cu funcționalitățile bazate pe detectarea atenției privirii, cum ar fi estomparea ecranului dacă nu vă uitați la iPhone‑ul sau iPad-ul dvs. sau reducerea volumului alertelor dacă vă uitați la dispozitiv. De exemplu, atunci când utilizați Safari, dispozitivul dvs. va verifica dacă vă uitați spre ecran și îl va opri dacă nu vă uitați.\n\nDacă nu doriți să utilizați aceste funcționalități, puteți să accesați Configurări > Face ID și cod de acces, introduceți codul de acces, apoi apăsați pentru a dezactiva “Detectarea atenției privirii”."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID te autentica mediante la cámara TrueDepth\n\nFace ID se puede usar para desbloquear el iPhone o el iPad. Mediante la cámara TrueDepth, Face ID determina si la persona que está mirando al iPhone o al iPad es el usuario registrado. Face ID también se puede usar para pagar con Apple Pay, realizar compras en App Store y autenticarse en apps.\n\nLos datos de Face ID (incluidas las representaciones matemáticas de tu cara) se encriptan y se protegen mediante una clave que solo se encuentra disponible para Secure Enclave. Estos datos se refinan y actualizan cada vez que usas Face ID, incluso cuando la autenticación es correcta, con el fin de mejorar tu experiencia. Face ID también actualizará los datos cuando detecte facciones similares y a continuación se introduzca el código para desbloquear el dispositivo.\n\nLos datos de Face ID permanecen en tu dispositivo y nunca se guardan en copias de seguridad de iCloud u otras ubicaciones.\n\nPuedes controlar Face ID\n\nSi eliges configurar Face ID, puedes controlar cómo se usa o desactivarlo en cualquier momento. Por ejemplo, si no quieres usar Face ID para desbloquear el iPhone o el iPad, ve a Ajustes > Face ID y código, introduce tu código y desactiva “Desbloquear el iPhone/iPad”. Para desactivar Face ID, ve a Ajustes > Face ID y código, introduce tu código y toca “Restablecer Face ID”. Al hacer eso, los datos de Face ID, incluidas las representaciones matemáticas de tu cara, se eliminarán del dispositivo. Si borras o restableces el dispositivo mediante Buscar, o si borras todos los contenidos y ajustes, todos los datos de Face ID se eliminarán.\n\nFace ID y apps\n\nEn las apps compatibles, puedes usar Face ID para la autenticación. La única información que reciben las apps es que la autenticación ha sido correcta. Las apps no pueden acceder a los datos de Face ID asociados a la cara registrada.\n\nOtros usos de la cámara TrueDepth\n\nAunque no configures Face ID, la cámara TrueDepth se activa de manera inteligente para las funciones con detección de atención, como la atenuación de la pantalla si no estás mirando al iPhone o al iPad o la reducción del volumen de los avisos si estás mirando al dispositivo. Por ejemplo, mientras usas Safari, el dispositivo comprobará si estás mirando al dispositivo y desactivará la pantalla si no es así.\n\nSi no quieres usar estas funciones, ve a Ajustes > Face ID y código, introduce el código y desactiva “Detección de atención”."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID vous authentifie à l’aide de la caméra TrueDepth\n\nFace ID peut être utilisé pour déverrouiller votre iPhone ou iPad. À l’aide de la caméra dotée de la technologie TrueDepth, Face ID détermine si la personne qui regarde l’iPhone ou l’iPad est bien l’utilisateur enregistré. Face ID vous permet aussi, par exemple, d’effectuer des paiements avec Apple Pay, d’effectuer des achats dans l’App Store et de vous authentifier dans des apps.\n\nLes données de Face ID, y compris les représentations mathématiques de votre visage, sont chiffrées et protégées par une clé uniquement accessible via l’enclave sécurisée Secure Enclave. Afin d’améliorer votre expérience, ces données sont affinées et mises à jour à mesure que vous utilisez Face ID, même lorsque vous vous authentifiez avec succès. Face ID met aussi à jour ces données lorsqu’il détecte une forte correspondance, mais qu’un code est ensuite saisi pour déverrouiller l’appareil.\n\nLes données de Face ID ne quittent pas votre appareil et ne sont jamais sauvegardées sur iCloud ni nulle part ailleurs.\n\nVous contrôlez Face ID\n\nSi vous choisissez d’utiliser Face ID, vous pouvez contrôler son utilisation ou le désactiver à tout moment. Par exemple, si vous ne souhaitez pas utiliser Face ID pour déverrouiller votre iPhone ou iPad, accédez à Réglages > Face ID et code, saisissez votre code, puis touchez l’option « Déverrouiller l’iPhone » ou « Déverrouiller l’iPad » pour la désactiver. Pour désactiver Face ID, accédez à Réglages > Face ID et code, saisissez votre code, puis touchez « Réinitialiser Face ID ». Cette opération supprime de votre appareil les données de Face ID, y compris les représentations mathématiques de votre visage. Si vous choisissez d’effacer ou de réinitialiser votre appareil à l’aide de Localiser ou bien d’effacer contenu et réglages, toutes les données de Face ID sont supprimées.\n\nFace ID et les apps\n\nVous pouvez activer l’authentification avec Face ID à l’intérieur des apps prises en charge. Ces dernières ne reçoivent que des informations indiquant la réussite ou non de l’authentification. Elles ne peuvent pas accéder aux données de Face ID associées au visage enregistré.\n\nAutres utilisations de la caméra TrueDepth\n\nMême si vous ne configurez pas Face ID, la caméra TrueDepth s’active de manière intelligente pour prendre en charge des fonctions fondées sur l’attention, telles que la diminution de la luminosité de l’écran si vous n’êtes pas en train de regarder votre iPhone ou votre iPad ou la diminution du volume des alertes si vous regardez votre appareil. Par exemple, lorsque vous utilisez Safari, votre appareil vérifie si vous êtes en train de regarder votre appareil et désactive l’écran si ce n’est pas le cas.\n\nSi vous ne souhaitez pas utiliser ces fonctionnalités, vous pouvez accéder à Réglages > Face ID et code, saisir votre code, puis toucher l’option « Fonctions fondées sur l’attention » pour la désactiver."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face IDは、TrueDepthカメラを使用して認証を行います\n\nFace IDを使用してiPhoneまたはiPadのロックを解除することができます。TrueDepthカメラを使用して、Face IDはiPhoneまたはiPadを注視している人が登録されているユーザかどうかを判断します。そのほかに、Face IDはApple Payでの支払い、App Storeでの購入、アプリ内での認証などにも使用できます。\n\nFace IDデータ（あなたの顔を数学的に表現したものを含む）は、暗号化され、Secure Enclaveだけが利用可能なキーで保護されています。使用感を改善するため、正しく認証された場合も含め、このデータはFace IDを使用する毎に精錬および更新されます。また、Face IDが類似に適合するものを見つけても、そのあとにパスコードを入力してデバイスのロックを解除した場合にもこのデータは更新されます。\n\nFace IDデータはデバイスにのみ保管され、iCloudやその他の場所には決してバックアップされません。\n\nFace IDを制御することができます\n\nFace IDに登録する場合、それをどのように使用するか、もしくは使用しないようにするかをいつでも制御することができます。例えば、iPhoneまたはiPadのロックの解除にFace IDを使用したくない場合は、“設定”＞“Face IDとパスコード”に移動して、パスコードを入力し、“iPhoneのロックを解除”または“iPadのロックを解除”をタップしてオフにします。Face IDを無効にするには、“設定”＞“Face IDとパスコード”を開いて、パスコードを入力し、“Face IDをリセット”をタップにします。これを行うことにより、Face IDデータ（あなたの顔を数学的に表現したものを含む）はデバイスから削除されます。“探す”でデバイスを消去またはリセットした場合、またはすべてのコンテンツと設定を消去した場合には、Face IDデータは削除されます。\n\nFace IDとアプリ\n\n対応しているアプリ内において、Face IDを認証に使用することができます。アプリには、認証に成功したかどうかだけが通知されます。アプリは、登録されている顔に関連付けられたFace IDデータにはアクセスできません。\n\nTrueDepthカメラのその他の用途\n\nFace IDに登録をしていなくても、TrueDepthカメラは、デバイスを見ていないときは画面を暗くしたり、見ているときは通知音のボリュームを下げたりするなどの画面注視認識機能に賢く対応します。例えば、Safariを使用しているとき、あなたがデバイスを見ているかどうかを判断し見ていなければ画面を暗くします。\n\nこれらの機能を使用したくない場合は、“設定”＞“Face IDとパスコード”を開き、パスコードを入力し、“画面注視認識機能”をタップしてオフにします。"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID Authenticates You Using the TrueDepth Camera\n\nFace ID can be used to unlock your iPhone or iPad. Using the TrueDepth camera, Face ID determines whether the person looking at an iPhone or iPad is the enrolled user. Other uses of Face ID include making payments with Apple Pay, making purchases within the App Store and authenticating within apps.\n\nFace ID data — including mathematical representations of your face — is encrypted and protected with a key available only to the Secure Enclave. This data will be refined and updated as you use Face ID to improve your experience, including when you successfully authenticate. Face ID will also update this data when it detects a close match but a passcode is subsequently entered to unlock the device.\n\nFace ID data does not leave your device, and is never backed up to iCloud or anywhere else.\n\nYou Have Control Over Face ID\n\nIf you choose to enrol in Face ID, you can control how it is used or disable it at any time. For example, if you don’t want to use Face ID to unlock your iPhone or iPad, go to Settings > Face ID & Passcode, enter your passcode, then tap to turn off iPhone Unlock or iPad Unlock. To disable Face ID, go to Settings > Face ID & Passcode, enter your passcode, then tap Reset Face ID. Doing so will delete Face ID data, including mathematical representations of your face, from your device. If you choose to erase or reset your device using Find My or by erasing all content and settings, all Face ID data will be deleted.\n\nFace ID and Apps\n\nWithin supported apps, you can enable Face ID for authentication. Apps are notified only as to whether the authentication is successful. Apps can’t access Face ID data associated with the enrolled face.\n\nOther Uses of the TrueDepth Camera\n\nEven if you don’t enrol in Face ID, the TrueDepth camera intelligently activates to support attention-aware features, like dimming the display if you are not looking at your iPhone or iPad or lowering the volume of alerts if you are looking at your device. For example, when you are using Safari, your device will check to determine if you are looking at your device and turn the screen off if you aren’t.\n\nIf you don’t want to use these features, you can go to Settings > Face ID & Passcode, enter your passcode, then tap to turn off Attention-Aware Features."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID vas autorizira pomoću TrueDepth kamere\n\nMožete upotrebljavati Face ID za otključavanje iPhonea ili iPada. Zahvaljujući TrueDepth kameri, Face ID može odrediti je li osoba koja gleda u iPhone ili iPad prijavljeni korisnik. Osim toga, možete koristiti Face ID za plaćanje pomoću Apple Paya, kupnju u App Storeu i autorizaciju unutar aplikacija.\n\nPodaci značajke Face ID, uključujući matematičke prikaze vašeg lica, kriptirani su i zaštićeni ključem koji je dostupan samo odjeljku Secure Enclave. Ti podaci ispravljat će se i ažurirati tijekom vaše uporabe Face ID-ja radi poboljšanja vašeg iskustva, uključujući slučajeve uspješne autorizacije. Face ID će ažurirati ove podatke i kada detektira blisko podudaranje, ali je naknadno unesena šifra za otključavanje uređaja.\n\nPodaci značajke Face ID nikad ne napuštaju vaš uređaj i nikad se sigurnosno ne kopiraju na iCloud ili bilo koje drugo mjesto.\n\nVi upravljate Face ID-jem\n\nAko se odlučite prijaviti za Face ID, možete odabrati način na koji će se koristiti ili ga isključiti u bilo kojem trenutku. Primjerice, ako ne želite koristiti Face ID za otključavanje iPhonea ili iPada, otvorite Postavke > Face ID i šifra, unesite šifru pa dodirom isključite Otključavanje iPhonea ili Otključavanje iPada. Za isključenje Face ID-ja otvorite Postavke > Face ID i šifra, unesite šifru pa dodirnite Resetiraj Face ID. Time ćete s uređaja obrisati podatke značajke Face ID, uključujući matematičke prikaze vašeg lica. Ako odlučite obrisati ili resetirati uređaj pomoću značajke Nađi moj ili brisanjem cijelog sadržaja i postavki, obrisat će se svi podaci značajke Face ID.\n\nFace ID i aplikacije\n\nMožete omogućiti Face ID za autorizaciju unutar podržanih aplikacija. Aplikacije će primiti obavijest samo o uspješnosti autorizacije. Aplikacije ne mogu pristupiti podacima značajke Face ID koji su povezani s prijavljenim licem.\n\nOstale funkcije TrueDepth kamere\n\nČak i ako se ne prijavite za Face ID, TrueDepth kamera inteligentno se aktivira kao podrška značajkama svjesnima pažnje, kao što su zatamnjenje zaslona ako ne gledate u iPhone ili iPad ili stišavanje glasnoće obavijesti ako gledate u uređaj. Primjerice, kad koristite Safari uređaj će provjeravati gledate li u zaslon te ga isključiti ako detektira da ne gledate.\n\nAko ne želite koristiti ove značajke, možete otvoriti Postavke > Face ID i šifra, unijeti šifru pa dodirom isključiti Značajke svjesne pažnje."
+          }
+        }
+      }
+    },
+    "SPLASH_SHORT_TITLE": {
+      "extractionState": "manual",
+      "localizations": {
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "‏Face ID"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "بصمة الوجه"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "面容ID"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID"
+          }
+        }
+      }
+    },
+    "SPLASH_SUMMARY": {
+      "extractionState": "manual",
+      "localizations": {
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A funcionalidade Face ID foi concebida de modo a proteger a sua informação."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID는 사용자의 정보를 보호하도록 설계되었습니다."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "‏Face ID תוכנן באופן שמגן על המידע שלך."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID dirancang untuk melindungi informasi Anda."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID on suunniteltu niin, että tietosi ovat turvassa."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID is ontworpen om je gegevens te beschermen."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ваши данные, используемые функцией Face ID, надежно защищены."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Face ID-t úgy tervezték, hogy megvédje az Ön információit."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID, bilgilerinizi korumak için tasarlanmıştır."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID è concepito in modo da proteggere i tuoi dati sensibili."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID se diseñó para proteger tu información."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το Face ID έχει σχεδιαστεί με τρόπο που προστατεύει τις πληροφορίες σας."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El Face ID s’ha dissenyat per protegir la teva informació."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID a été conçu pour protéger vos informations."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID的設計可保護你的資訊。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID 的設計可保護你的資料。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "صُمِّمَت بصمة الوجه لحماية معلوماتك."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID er utviklet for å beskytte informasjonen din."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID आपकी जानकारी की सुरक्षा के लिए डिज़ाइन किया गया है।"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID er designet til at beskytte dine oplysninger."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID is designed to protect your information."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funkcja Face ID została zaprojektowana z myślą o ochronie Twoich danych."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID har utformats för att skydda din information."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID ได้รับการออกแบบมาเพื่อปกป้องข้อมูลของคุณ"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "面容ID旨在保护你的信息。"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID is designed to protect your information."
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„Face ID“ sukurta jūsų informacijai apsaugoti."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID direka bentuk untuk melindungi maklumat anda."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID chrání vaše osobní údaje."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID chráni vaše osobné údaje."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID se diseñó para proteger tu información."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID е проектиран да защитава вашата информация."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID is designed to protect your information."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID je zasnovan tako, da varuje vaše podatke."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID ist dafür konzipiert, deine Daten zu schützen."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID được thiết kế để bảo vệ thông tin của bạn."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O Face ID é projetado para proteger as suas informações."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID спроєктовано, щоб захищати вашу інформацію."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID функциясы ақпаратыңызды қорғау мақсатында жасалған."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funcționalitatea Face ID este concepută pentru a vă proteja informațiile."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID se ha diseñado para mantener protegida tu información."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID est conçu pour protéger vos données."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face IDはあなたの個人情報を保護するように設計されています。"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID is designed to protect your information."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID dizajniran je kako bi štitio vaše informacije."
+          }
+        }
+      }
+    },
+    "SPLASH_TITLE": {
+      "extractionState": "manual",
+      "localizations": {
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID e Privacidade"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID 및 개인정보 보호"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "‏Face ID ופרטיות"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID & Privasi"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID ja tietosuoja"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID en privacy"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID и конфи­денциальность"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Face ID és az adatvédelem"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID ve Gizlilik"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID e privacy"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID y la privacidad"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID και απόρρητο"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El Face ID i la privacitat"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID et confidentialité"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID與隱私權"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID與私隱"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "بصمة الوجه والخصوصية"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID og personvern"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID और गोपनीयता"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID og anonymitet"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID & Privacy"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID i prywatność"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID och integritet"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID และความเป็นส่วนตัว"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "面容ID与隐私"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID & Privacy"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„Face ID“ ir privatumas"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID & Privasi"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID a soukromí"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID a súkromie"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID y la privacidad"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID и поверителност"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID & Privacy"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID in zasebnost"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID & Datenschutz"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID & Quyền riêng tư"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID e Privacidade"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID і приватність"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID және құпиялылық"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID și intimitatea"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID y la privacidad"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID et confidentialité"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face IDとプライバシー"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID & Privacy"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID i privatnost"
+          }
+        }
+      }
+    },
+    "BUTTON_TITLE": {
+      "extractionState": "manual",
+      "localizations": {
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de Face ID e Privacidade…"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID 및 개인정보 보호에 관하여…"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "מידע בנושא Face ID ופרטיות…"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mengenai Face ID & Privasi…"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tietoja: Face ID ja tietosuoja…"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Over Face ID en privacy…"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "О Face ID и конфиденциальности…"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Face ID-ról és az adatvédelemről…"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID ve Gizlilik Hakkında…"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID e privacy…"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de Face ID y la privacidad…"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Πληροφορίες για το Face ID και το απόρρητο…"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sobre el Face ID i la privacitat…"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID et confidentialité…"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "關於Face ID與隱私權⋯"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "關於Face ID與私隱⋯"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "حول بصمة الوجه والخصوصية…"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om Face ID og personvern…"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID और गोपनीयता परिचय…"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om Face ID og anonymitet…"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About Face ID & Privacy…"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID i prywatność…"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om Face ID och integritet…"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เกี่ยวกับ Face ID และความเป็นส่วนตัว…"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "关于面容ID与隐私…"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About Face ID & Privacy…"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apie „Face ID“ ir privatumą…"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Perihal Face ID & Privasi…"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O Face ID a soukromí…"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O Face ID a súkromí…"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de Face ID y la privacidad…"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "За Face ID и поверителност…"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About Face ID & Privacy…"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Več o funkciji Face ID in zasebnosti …"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Über Face ID & Datenschutz …"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID & Quyền riêng tư…"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sobre o Face ID e Privacidade…"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Про Face ID і приватність…"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID және құпиялылық туралы ақпарат…"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Despre Face ID și intimitate…"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Acerca de Face ID y la privacidad…"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face ID et confidentialité…"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Face IDとプライバシーについて…"
+          }
+        },
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "About Face ID & Privacy…"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Više o Face ID-ju i privatnosti…"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}
