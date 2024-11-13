@@ -68,8 +68,21 @@ struct OnBoardingDetailView: View {
         "ImproveSensitiveContentWarning",
         "ImproveSiriDictation",
         "WheelchairMode",
-        "OBPhotos", // Photos
+        "iTunesStore",
+        "Journal",
+        "LocationServices",
+        "MailPrivacyProtection",
+        "MapsRAP",
+        "OBMessages", // Messages
+        "MySports",
+        "NFCAndSEPlatform",
         "Passwords",
+        "SpatialAudioProfiles",
+        "OBPhotos", // Photos
+        "RatingsAndPhotos",
+        "Safari",
+        "SafetyFeatures",
+        "Savings"
     ]
     
     var body: some View {
