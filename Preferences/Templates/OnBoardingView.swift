@@ -148,7 +148,10 @@ struct OnBoardingView: View {
         
         switch table {
         case "OBAppleID":
-            return completeString + "_" + UIDevice.current.model.uppercased()
+            if text == "FIRST_BULLET" {
+                return completeString + "_" + UIDevice.current.model.uppercased()
+            }
+            return completeString
         case "TVApp":
             return completeString + "_WIFI"
         default:
@@ -186,5 +189,5 @@ struct BulletPoint: View {
 }
 
 #Preview {
-    OnBoardingView(table: "PrivateRelay")
+    OnBoardingView(table: "OBAppleID")
 }

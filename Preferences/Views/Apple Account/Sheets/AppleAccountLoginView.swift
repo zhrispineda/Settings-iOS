@@ -17,6 +17,7 @@ struct AppleAccountLoginView: View {
     @State private var showingErrorAlert = false
     @State private var showingForgotPasswordSheet = false
     @State private var username = String()
+    @State private var showingSheet = false
     let setupTable = "AppleIDSetup"
     let table = "AppleID"
     let uiTable = "AppleAccountUI"
@@ -100,18 +101,28 @@ struct AppleAccountLoginView: View {
             
             Section {
                 VStack {
-                    Button {} label: {
+                    Button {
+                        showingSheet = true
+                    } label: {
                         VStack {
                             Image(_internalSystemName: "privacy.handshake")
                                 .resizable()
                                 .foregroundStyle(.blue)
                                 .scaledToFit()
                                 .frame(height: 23)
-                            Text(.init("CREATE_ICLOUD_MAIL_ACCOUNT_EXPLANATION_FOOTER_REBRAND".localize(table: table) + "\n[\("CREATE_ICLOUD_MAIL_ACCOUNT_FOOTER_LEARN_MORE_BUTTON".localize(table: table))](\("CREATE_ICLOUD_MAIL_ACCOUNT_FOOTER_LEARN_MORE_KB_LINK".localize(table: table)))\n"))
+                            Text(.init("CREATE_ICLOUD_MAIL_ACCOUNT_EXPLANATION_FOOTER_REBRAND".localize(table: table) + "\n[\("CREATE_ICLOUD_MAIL_ACCOUNT_FOOTER_LEARN_MORE_BUTTON".localize(table: table))](\("appleAccountSettingsOBK://"))\n"))
                                 .frame(maxWidth: .infinity, alignment: .center)
                                 .multilineTextAlignment(.center)
                                 .font(.caption2)
                                 .foregroundStyle(.gray)
+                                .onOpenURL { url in
+                                    if url.scheme == "appleAccountSettingsOBK" {
+                                        showingSheet = true
+                                    }
+                                }
+                                .sheet(isPresented: $showingSheet) {
+                                    OnBoardingView(table: "OBAppleID")
+                                }
                         }
                     }
                     .buttonStyle(.plain)
