@@ -18,16 +18,7 @@ struct BluetoothView: View {
     var body: some View {
         CustomList {
             Section {
-                Placard(title: "BLUETOOTH".localize(table: table), color: Color.blue, icon: "bluetooth", description: "\("BLUETOOTHPLACARDINFO".localize(table: table)) [\("LEARN_MORE".localize(table: table))](https://support.apple.com/guide/\(UIDevice.iPhone ?  "iphone/bluetooth-accessories-iph3c50f191/ios" : "ipad/bluetooth-accessories-ipad997da4cf/ipados"))")
-                    .overlay { // For calculating opacity of the principal toolbar item
-                        GeometryReader { geo in
-                            Color.clear
-                                .onChange(of: geo.frame(in: .scrollView).minY) {
-                                    frameY = geo.frame(in: .scrollView).minY
-                                    opacity = frameY / -30
-                                }
-                        }
-                    }
+                Placard(title: "BLUETOOTH".localize(table: table), color: Color.blue, icon: "bluetooth", description: "\("BLUETOOTHPLACARDINFO".localize(table: table)) [\("LEARN_MORE".localize(table: table))](https://support.apple.com/guide/\(UIDevice.iPhone ?  "iphone/bluetooth-accessories-iph3c50f191/ios" : "ipad/bluetooth-accessories-ipad997da4cf/ipados"))", frameY: $frameY, opacity: $opacity)
                 Toggle("BLUETOOTH".localize(table: table), isOn: $bluetoothEnabled.animation())
             } footer: {
                 if bluetoothEnabled {

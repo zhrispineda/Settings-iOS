@@ -20,16 +20,7 @@ struct CalendarView: View {
     var body: some View {
         CustomList(title: "CalendarSettingsPlacard_Calendar".localize(table: table)) {
             Section {
-                Placard(title: "CalendarSettingsPlacard_Calendar".localize(table: table), icon: "appleCalendar", description: "Add or remove accounts, manage Siri & Search, and customize how your calendar appears. [Learn more…](%@)".localize(table: table, UIDevice.iPhone ? "iphone/set-up-mail-contacts-and-calendar-accounts-ipha0d932e96/ios" : "ipad/set-up-mail-contacts-and-calendar-accounts-ipadee835d39/ipados"))
-                    .overlay { // For calculating opacity of the principal toolbar item
-                        GeometryReader { geo in
-                            Color.clear
-                                .onChange(of: geo.frame(in: .scrollView).minY) {
-                                    frameY = geo.frame(in: .scrollView).minY
-                                    opacity = frameY / -30
-                                }
-                        }
-                    }
+                Placard(title: "CalendarSettingsPlacard_Calendar".localize(table: table), icon: "appleCalendar", description: "Add or remove accounts, manage Siri & Search, and customize how your calendar appears. [Learn more…](%@)".localize(table: table, UIDevice.iPhone ? "iphone/set-up-mail-contacts-and-calendar-accounts-ipha0d932e96/ios" : "ipad/set-up-mail-contacts-and-calendar-accounts-ipadee835d39/ipados"), frameY: $frameY, opacity: $opacity)
                 CustomNavigationLink(title: "Calendar Accounts".localize(table: table), status: "1", destination: EmptyView())
             }
             

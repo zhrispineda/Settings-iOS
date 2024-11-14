@@ -23,16 +23,7 @@ struct RemindersView: View {
     var body: some View {
         CustomList(title: "Back") {
             Section {
-                Placard(title: "Reminders".localize(table: table), icon: "appleReminders", description: "SETTINGS_PLACARD_DESCRIPTION_TEXT".localize(table: table, "#"))
-                    .overlay { // For calculating opacity of the principal toolbar item
-                        GeometryReader { geo in
-                            Color.clear
-                                .onChange(of: geo.frame(in: .scrollView).minY) {
-                                    frameY = geo.frame(in: .scrollView).minY
-                                    opacity = frameY / -30
-                                }
-                        }
-                    }
+                Placard(title: "Reminders".localize(table: table), icon: "appleReminders", description: "SETTINGS_PLACARD_DESCRIPTION_TEXT".localize(table: table, "#"), frameY: $frameY, opacity: $opacity)
                 CustomNavigationLink(title: "Reminders Accounts".localize(table: table), status: "1", destination: EmptyView())
             }
             

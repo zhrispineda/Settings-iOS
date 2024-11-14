@@ -19,16 +19,7 @@ struct AccessibilityView: View {
     var body: some View {
         CustomList(title: "Back") {
             Section {
-                Placard(title: "PLACARD_TITLE".localize(table: table), color: .blue, icon: "accessibility", description: UIDevice.iPhone ? "\("PLACARD_SUBTITLE_IPHONE".localize(table: table)) [\("PLACARD_LEARN_MORE".localize(table: "Accessibility"))](https://support.apple.com/guide/iphone/get-started-with-accessibility-features-iph3e2e4367/ios)" : "\("PLACARD_SUBTITLE_IPAD".localize(table: table)) [\("PLACARD_LEARN_MORE".localize(table: table))](https://support.apple.com/guide/ipad/get-started-with-accessibility-features-ipad9a2465f9/ipados)")
-                    .overlay { // For calculating opacity of the principal toolbar item
-                        GeometryReader { geo in
-                            Color.clear
-                                .onChange(of: geo.frame(in: .scrollView).minY) {
-                                    frameY = geo.frame(in: .scrollView).minY
-                                    opacity = frameY / -30
-                                }
-                        }
-                    }
+                Placard(title: "PLACARD_TITLE".localize(table: table), color: .blue, icon: "accessibility", description: UIDevice.iPhone ? "\("PLACARD_SUBTITLE_IPHONE".localize(table: table)) [\("PLACARD_LEARN_MORE".localize(table: "Accessibility"))](https://support.apple.com/guide/iphone/get-started-with-accessibility-features-iph3e2e4367/ios)" : "\("PLACARD_SUBTITLE_IPAD".localize(table: table)) [\("PLACARD_LEARN_MORE".localize(table: table))](https://support.apple.com/guide/ipad/get-started-with-accessibility-features-ipad9a2465f9/ipados)", frameY: $frameY, opacity: $opacity)
             }
             
             Section {

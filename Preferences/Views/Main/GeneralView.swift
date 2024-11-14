@@ -16,16 +16,7 @@ struct GeneralView: View {
     var body: some View {
         CustomList(title: "Back") {
             Section {
-                Placard(title: "General".localize(table: table), color: Color.gray, icon: "gear", description: "PLACARD_SUBTITLE".localize(table: "GeneralSettingsUI"))
-                    .overlay { // For calculating opacity of the principal toolbar item
-                        GeometryReader { geo in
-                            Color.clear
-                                .onChange(of: geo.frame(in: .scrollView).minY) {
-                                    frameY = geo.frame(in: .scrollView).minY
-                                    opacity = frameY / -30
-                                }
-                        }
-                    }
+                Placard(title: "General".localize(table: table), color: Color.gray, icon: "gear", description: "PLACARD_SUBTITLE".localize(table: "GeneralSettingsUI"), frameY: $frameY, opacity: $opacity)
             }
         
             Section {

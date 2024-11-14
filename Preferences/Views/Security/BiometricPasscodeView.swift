@@ -44,16 +44,7 @@ struct BiometricPasscodeView: View {
     
     var body: some View {
         CustomList {
-            Placard(title: UIDevice.PearlIDCapability ? "PEARL_ID_AND_PASSCODE".localize(table: table) : "TOUCHID_PASSCODE".localize(table: oldTable), color: UIDevice.PearlIDCapability ? .green : .white, icon: UIDevice.PearlIDCapability ? "faceid" : "touchid", description: "\(UIDevice.PearlIDCapability ? "PASSCODE_PLACARD_SUBTITLE_FACE_ID".localize(table: lockTable) : "Turn on Touch ID and set a passcode to unlock your \(UIDevice.current.model), authorize purchases, and access sensitive data.") [Learn more...](\(UIDevice.PearlIDCapability ? "https://support.apple.com/guide/iphone/set-up-face-id-iph6d162927a/ios" : "https://support.apple.com/guide/iphone/set-up-touch-id-iph672384a0b/ios"))")
-                .overlay { // For calculating opacity of the principal toolbar item
-                    GeometryReader { geo in
-                        Color.clear
-                            .onChange(of: geo.frame(in: .scrollView).minY) {
-                                frameY = geo.frame(in: .scrollView).minY
-                                opacity = frameY / -30
-                            }
-                    }
-                }
+            Placard(title: UIDevice.PearlIDCapability ? "PEARL_ID_AND_PASSCODE".localize(table: table) : "TOUCHID_PASSCODE".localize(table: oldTable), color: UIDevice.PearlIDCapability ? .green : .white, icon: UIDevice.PearlIDCapability ? "faceid" : "touchid", description: "\(UIDevice.PearlIDCapability ? "PASSCODE_PLACARD_SUBTITLE_FACE_ID".localize(table: lockTable) : "Turn on Touch ID and set a passcode to unlock your \(UIDevice.current.model), authorize purchases, and access sensitive data.") [Learn more...](\(UIDevice.PearlIDCapability ? "https://support.apple.com/guide/iphone/set-up-face-id-iph6d162927a/ios" : "https://support.apple.com/guide/iphone/set-up-touch-id-iph672384a0b/ios"))", frameY: $frameY, opacity: $opacity)
             
             Section {
                 Toggle("TOUCHID_UNLOCK".localize(table: oldTable), isOn: $allowFingerprintForUnlock)

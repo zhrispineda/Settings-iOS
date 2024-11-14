@@ -15,7 +15,7 @@ struct SafetyCheckView: View {
     var body: some View {
         CustomList(title: "SAFETY_CHECK".localize(table: table)) {
             Section {
-                Placard(title: "SAFETY_CHECK".localize(table: table), color: .white, iconColor: .blue, icon: "person.badge.shield.checkmark.fill", description: "WELCOME_DETAIL".localize(table: table))
+                Placard(title: "SAFETY_CHECK".localize(table: table), color: .white, iconColor: .blue, icon: "person.badge.shield.checkmark.fill", description: "WELCOME_DETAIL".localize(table: table), frameY: .constant(0.0), opacity: .constant(1.0))
             }
             
             Section {

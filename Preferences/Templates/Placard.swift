@@ -14,6 +14,8 @@ struct Placard: View {
     var iconColor = Color.white
     var icon = String()
     var description = String()
+    @Binding var frameY: Double
+    @Binding var opacity: Double
     
     var body: some View {
         VStack(spacing: 10) {
@@ -70,14 +72,23 @@ struct Placard: View {
         .multilineTextAlignment(.center)
         .frame(maxWidth: .infinity)
         .fixedSize(horizontal: false, vertical: true)
+        .overlay { // For calculating opacity of the principal toolbar item
+            GeometryReader { geo in
+                Color.clear
+                    .onChange(of: geo.frame(in: .scrollView).minY) {
+                        frameY = geo.frame(in: .scrollView).minY
+                        opacity = frameY / -30
+                    }
+            }
+        }
     }
 }
 
 #Preview {
     NavigationStack {
-        List {
+        CustomList(title: "General") {
             Section {
-                Placard(title: "General", color: Color.gray, icon: "gear", description: "PLACARD_SUBTITLE")
+                Placard(title: "General", color: Color.gray, icon: "gear", description: "PLACARD_SUBTITLE", frameY: .constant(0.0), opacity: .constant(0.0))
             }
         }
     }

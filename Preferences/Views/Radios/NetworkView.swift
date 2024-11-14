@@ -29,16 +29,7 @@ struct NetworkView: View {
                 }
             } else {
                 Section {
-                    Placard(title: "kWFLocWiFiPlacardTitle".localize(table: table), color: Color.blue, icon: "wifi", description: "kWFLocWiFiPlacardSubtitle".localize(table: table))
-                        .overlay { // For calculating opacity of the principal toolbar item
-                            GeometryReader { geo in
-                                Color.clear
-                                    .onChange(of: geo.frame(in: .scrollView).minY) {
-                                        frameY = geo.frame(in: .scrollView).minY
-                                        opacity = frameY / -30
-                                    }
-                            }
-                        }
+                    Placard(title: "kWFLocWiFiPlacardTitle".localize(table: table), color: Color.blue, icon: "wifi", description: "kWFLocWiFiPlacardSubtitle".localize(table: table), frameY: $frameY, opacity: $opacity)
                     
                     Toggle(isOn: $wifiEnabled) {
                         HStack {

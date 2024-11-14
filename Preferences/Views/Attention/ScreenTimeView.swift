@@ -41,7 +41,7 @@ struct ScreenTimeView: View {
                 }
             } else {
                 Section {
-                    Placard(title: "ScreenTimeGroupSpecifierName".localize(table: table), color: Color.indigo, icon: "hourglass", description: "AADC_IntroWelcomeDetail".localize(table: table))
+                    Placard(title: "ScreenTimeGroupSpecifierName".localize(table: table), color: Color.indigo, icon: "hourglass", description: "AADC_IntroWelcomeDetail".localize(table: table), frameY: .constant(0.0), opacity: .constant(1.0))
                 }
             }
             

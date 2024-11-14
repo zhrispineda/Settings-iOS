@@ -16,16 +16,7 @@ struct ContactsView: View {
     var body: some View {
         CustomList(title: "Back") {
             Section {
-                Placard(title: "CONTACTS".localize(table: table), icon: "appleContacts", description: "SETTINGS_SUBTITLE".localize(table: table) + " [\("LEARN_MORE".localize(table: table))](#)")
-                    .overlay { // For calculating opacity of the principal toolbar item
-                        GeometryReader { geo in
-                            Color.clear
-                                .onChange(of: geo.frame(in: .scrollView).minY) {
-                                    frameY = geo.frame(in: .scrollView).minY
-                                    opacity = frameY / -30
-                                }
-                        }
-                    }
+                Placard(title: "CONTACTS".localize(table: table), icon: "appleContacts", description: "SETTINGS_SUBTITLE".localize(table: table) + " [\("LEARN_MORE".localize(table: table))](#)", frameY: $frameY, opacity: $opacity)
                 CustomNavigationLink(title: "CONTACTS_ACCOUNTS".localize(table: table), status: "1", destination: EmptyView())
             }
             

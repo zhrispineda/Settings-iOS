@@ -18,16 +18,7 @@ struct CellularView: View {
     
     var body: some View {
         CustomList {
-            Placard(title: "Cellular", color: .green, icon: "antenna.radiowaves.left.and.right", description: "Find out how much data you‘re using, set data restrictions, and manage carrier settings such as eSIM and Wi-Fi calling. [Learn more...](https://support.apple.com/guide/iphone/view-or-change-cellular-data-settings-iph3dd5f213/ios)")
-                .overlay { // For calculating opacity of the principal toolbar item
-                    GeometryReader { geo in
-                        Color.clear
-                            .onChange(of: geo.frame(in: .scrollView).minY) {
-                                frameY = geo.frame(in: .scrollView).minY
-                                opacity = frameY / -30
-                            }
-                    }
-                }
+            Placard(title: "Cellular", color: .green, icon: "antenna.radiowaves.left.and.right", description: "Find out how much data you‘re using, set data restrictions, and manage carrier settings such as eSIM and Wi-Fi calling. [Learn more...](https://support.apple.com/guide/iphone/view-or-change-cellular-data-settings-iph3dd5f213/ios)", frameY: $frameY, opacity: $opacity)
             
             Section {
                 Button("Set Up Cellular") {}

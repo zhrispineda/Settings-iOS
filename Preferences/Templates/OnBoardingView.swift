@@ -127,7 +127,7 @@ struct OnBoardingView: View {
     
     private func splashString(table: String) -> String {
         switch table {
-        case "TVApp":
+        case "TVApp", "CloudCalling":
             return NSLocalizedString("SPLASH_TITLE_WIFI", tableName: table, comment: "")
         default:
             return NSLocalizedString("SPLASH_TITLE", tableName: table, comment: "")
@@ -136,7 +136,7 @@ struct OnBoardingView: View {
     
     private func summaryString(table: String) -> String {
         switch table {
-        case "TVApp":
+        case "TVApp", "CloudCalling":
             return NSLocalizedString("SPLASH_SUMMARY_WIFI", tableName: table, comment: "")
         default:
             return NSLocalizedString("SPLASH_SUMMARY", tableName: table, comment: "")
@@ -189,5 +189,5 @@ struct BulletPoint: View {
 }
 
 #Preview {
-    OnBoardingView(table: "OBAppleID")
+    OnBoardingView(table: "CloudCalling")
 }
