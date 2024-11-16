@@ -32,10 +32,8 @@ struct BatteryView: View {
                     if UIDevice.iPhone {
                         NavigationLink("CHARGING_TITLE_CHARGING".localize(table: table), destination: ChargingOptimizationView())
                     }
-                } else {
-                    if UIDevice.iPhone {
-                        NavigationLink("BATTERY_HEALTH".localize(table: table), destination: BatteryHealthChargingView())
-                    }
+                } else if UIDevice.iPhone {
+                    NavigationLink("BATTERY_HEALTH".localize(table: table), destination: BatteryHealthChargingView())
                 }
             }
             

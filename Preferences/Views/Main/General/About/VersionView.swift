@@ -11,7 +11,7 @@ import os
 struct VersionView: View {
     var body: some View {
         CustomList(title: "\(UIDevice().systemName) Version", topPadding: true) {
-            Section {
+            Section("OS Version") {
                 VStack(alignment: .leading) {
                     Text("**\(UIDevice().systemName) \(UIDevice().systemVersion) (\(getVersionBuild()))**")
                     if getReleaseType() == "Beta" {
@@ -30,13 +30,12 @@ struct VersionView: View {
                             .font(.callout)
                     }
                 }
-            } header: {
-                Text("OS Version")
             }
         }
     }
     
-    func getReleaseType() -> String {
+    // Functions
+    private func getReleaseType() -> String {
         guard let mobileGestalt = UIDevice.checkDevice(),
               let cacheExtra = mobileGestalt["CacheExtra"] as? [String: AnyObject],
               let releaseType = cacheExtra["9UCjT7Qfi4xLVvPAKIzTCQ"] as? String else { // ReleaseType key
@@ -45,7 +44,7 @@ struct VersionView: View {
         return releaseType
     }
     
-    func getVersionBuild() -> String {
+    private func getVersionBuild() -> String {
         guard let mobileGestalt = UIDevice.checkDevice(),
               let cacheExtra = mobileGestalt["CacheExtra"] as? [String: AnyObject],
               let buildVersion = cacheExtra["mZfUC7qo4pURNhyMHZ62RQ"] as? String else { // BuildVersion key

@@ -17,7 +17,8 @@ struct SEIDView: View {
         }
     }
 
-    func getRandomSEID(from input: String) -> String {
+    // Functions
+    private func getRandomSEID(from input: String) -> String {
         guard !input.isEmpty else { return "" }
         
         let allCharacters = "0123456789ABCDEF"

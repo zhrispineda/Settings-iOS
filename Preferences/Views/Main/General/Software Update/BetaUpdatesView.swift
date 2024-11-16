@@ -25,7 +25,7 @@ struct BetaUpdatesView: View {
                 .pickerStyle(.inline)
                 .labelsHidden()
             } footer: {
-                Text(.init("BETA_UPDATES_FOOTER_IPHONE".localize(table: table, "[Learn more...](https://beta.apple.com)")))
+                Text(.init("BETA_UPDATES_FOOTER_IPHONE".localize(table: table, "[\("LEARN_MORE_LINK".localize(table: table))](https://beta.apple.com)")))
             }
             
             Section {

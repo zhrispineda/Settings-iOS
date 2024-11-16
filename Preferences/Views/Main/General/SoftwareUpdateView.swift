@@ -62,7 +62,8 @@ struct SoftwareUpdateView: View {
         .refreshable {}
     }
     
-    func checkUpdate(withDelay delay: Double) {
+    // Functions
+    private func checkUpdate(withDelay delay: Double) {
         checkingForUpdates = true
         DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
             withAnimation {

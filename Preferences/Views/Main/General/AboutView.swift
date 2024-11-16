@@ -127,7 +127,8 @@ struct AboutView: View {
         }
     }
     
-    func getRegionInfo() -> String {
+    // Functions
+    private func getRegionInfo() -> String {
         if let mobileGestalt = UIDevice.checkDevice() {
             let cacheExtra = mobileGestalt["CacheExtra"] as! [String : AnyObject]
             return cacheExtra["zHeENZu+wbg7PUprwNwBWg"] as! String // RegionInfo check
@@ -136,7 +137,7 @@ struct AboutView: View {
     }
     
     // Display corresponding model number
-    func getRegulatoryModelNumber() -> String {
+    private func getRegulatoryModelNumber() -> String {
         // Check MobileGestalt CacheExtra first
         if let answer = MGHelper.read(key: "97JDvERpVwO+GHtthIh7hA") { // RegulatoryModelNumber
             return answer
@@ -152,7 +153,7 @@ struct AboutView: View {
     }
     
     // Generate random characters as a serial number
-    func getRandomSerialNumber() -> String {
+    private func getRandomSerialNumber() -> String {
         let letters = "BCDFGHJKLMNPQRTVWXYZ0123456789"
         var random = SystemRandomNumberGenerator()
         var randomString = String()
@@ -165,7 +166,7 @@ struct AboutView: View {
     }
     
     // Generate random characters as EID string
-    func getRandomEID() -> String {
+    private func getRandomEID() -> String {
         let lowerBound = "10000000000000000000000000000000"
         let upperBound = "99999999999999999999999999999999"
         var randomNumber = String()
@@ -182,7 +183,7 @@ struct AboutView: View {
     }
     
     // Generate random characters as EID string
-    func getRandomICCID() -> String {
+    private func getRandomICCID() -> String {
         let lowerBound = "1000000000000000000"
         let upperBound = "9999999999999999999"
         var randomNumber = String()
