@@ -12,12 +12,12 @@ struct ChargingOptimizationView: View {
     @State private var selected = "Optimized Battery Charging"
     @State private var showingNoneWarning = false
     @State private var showingOptimizeWarning = false
-    @State private var temporaryOptimizePauseEnabled = false
-    @State private var optimizedBatteryChargingEnabled = true
-    @State private var temporaryCleanPauseEnabled = false
-    @State private var cleanEnergyChargingEnabled = true
+    @AppStorage("OptimizePauseToggle") private var temporaryOptimizePauseEnabled = false
+    @AppStorage("OptimizedBatteryChargingToggle") private var optimizedBatteryChargingEnabled = true
+    @AppStorage("CleanPauseEnabled") private var temporaryCleanPauseEnabled = false
+    @AppStorage("CleanEnergyChargingToggle") private var cleanEnergyChargingEnabled = true
     @State private var showingCleanEnergyWarning = false
-    @State private var chargeLimit = 100.0
+    @AppStorage("ChargeLimitValue") private var chargeLimit = 100.0
     let options = ["Optimized Battery Charging", "80% Limit", "None"]
     let table = "BatteryUI"
     
@@ -38,8 +38,9 @@ struct ChargingOptimizationView: View {
                         optimizedBatteryChargingEnabled = false
                     }
                 }
+                .tint(.gray)
             } header: {
-                Text("CHARGING_LIMIT_HEADER".localize(table: table))
+                Text("CHARGING_LIMIT_HEADER", tableName: table)
             }
             
             Section {
@@ -71,16 +72,16 @@ struct ChargingOptimizationView: View {
                         temporaryCleanPauseEnabled = false
                     }
             } footer: {
-                Text(.init("CLEAN_ENERGY_FOOTER".localize(table: table) + " \(temporaryCleanPauseEnabled ? "CEC_FOOTER_TEXT_TEMP_DISABLE_ADDITION".localize(table: table, "6:00 AM") : String())" + "[\("CEC_LINK".localize(table: table))](https://support.apple.com/en-us/108068)"))
+                Text(.init("CLEAN_ENERGY_FOOTER".localize(table: table) + " \(temporaryCleanPauseEnabled ? "CEC_FOOTER_TEXT_TEMP_DISABLE_ADDITION".localize(table: table, "6:00 AM") : String())" + " [\("CEC_LINK".localize(table: table))](https://support.apple.com/en-us/108068)"))
             }
-            .alert("CEC_ALERT_TITLE", isPresented: $showingCleanEnergyWarning) {
-                Button("CEC_ALERT_TEMP_DISABLE", role: .none) {
+            .alert("CEC_ALERT_TITLE".localize(table: table), isPresented: $showingCleanEnergyWarning) {
+                Button("CEC_ALERT_TEMP_DISABLE".localize(table: table), role: .none) {
                     temporaryCleanPauseEnabled = true
                 }
-                Button("CEC_ALERT_DISABLE", role: .none) {
+                Button("CEC_ALERT_DISABLE".localize(table: table), role: .none) {
                     cleanEnergyChargingEnabled = false
                 }
-                Button("CEC_ALERT_LEAVE_ON", role: .none) {
+                Button("CEC_ALERT_LEAVE_ON".localize(table: table), role: .none) {
                     cleanEnergyChargingEnabled = true
                 }
             }

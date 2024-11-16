@@ -9,7 +9,8 @@ import SwiftUI
 
 struct BatteryHealthView: View {
     @State private var maximumCapacity = "100%"
-    @State private var eightyPercentLimitEnabled = false
+    @AppStorage("ChargeLimitToggle") private var eightyPercentLimitEnabled = false
+    @State private var showingSheet = false
     let table = "BatteryUI"
     
     var body: some View {
@@ -17,7 +18,15 @@ struct BatteryHealthView: View {
             Section {
                 LabeledContent("BATTERY_HEALTH_TITLE".localize(table: table), value: "NORMAL_STATE".localize(table: table))
             } footer: {
-                Text(.init(UIDevice.iPhone ? "BATTERY_HEALTH_STATE_FOOTER_NORMAL_IPHONE".localize(table: table, "[\("ABOUT_BATTERY_LINK".localize(table: table))](#)") : "BATTERY_HEALTH_STATE_FOOTER_NORMAL_IPAD".localize(table: table, "[\("ABOUT_BATTERY_LINK".localize(table: table))](#)")))
+                Text(.init(UIDevice.iPhone ? "BATTERY_HEALTH_STATE_FOOTER_NORMAL_IPHONE".localize(table: table, "[\("ABOUT_BATTERY_LINK".localize(table: table))](batterySettingsOBK://)") : "BATTERY_HEALTH_STATE_FOOTER_NORMAL_IPAD".localize(table: table, "[\("ABOUT_BATTERY_LINK".localize(table: table))](batterySettingsOBK://)")))
+            }
+            .onOpenURL { url in
+                if url.scheme == "batterySettingsOBK" {
+                    showingSheet = true
+                }
+            }
+            .sheet(isPresented: $showingSheet) {
+                OnBoardingView(table: "BatteryUI")
             }
             
             Section {
@@ -32,7 +41,7 @@ struct BatteryHealthView: View {
                         }
                     }
             } footer: {
-                Text("MAXIMUM_CAPACITY_FOOTER_TEXT".localize(table: table))
+                Text("MAXIMUM_CAPACITY_FOOTER_TEXT", tableName: table)
             }
             
             Section {

@@ -60,10 +60,10 @@ struct OnBoardingView: View {
                             BulletPoint(key: "FIFTH_BULLET", table: table)
                         }
                     }
-                    Text(footerString())
+                    Text(.init(footerString()))
                         .font(.caption)
                         .padding(.top, 1)
-                    if !childView { // Hide Learn More... link if previous view in navigation exists
+                    if !childView && table != "BatteryUI" { // Hide Learn More... link if previous view in navigation exists or BatteryUI table
                         NavigationLink("WELCOME_LEARN_MORE".localize(table: "PrivacyDisclosureUI")) {
                             OnBoardingDetailView()
                         }
@@ -127,6 +127,8 @@ struct OnBoardingView: View {
     
     private func splashString(table: String) -> String {
         switch table {
+        case "BatteryUI":
+            return NSLocalizedString("BATTERY_WARRANTY_TITLE", tableName: table, comment: "")
         case "TVApp", "CloudCalling":
             return NSLocalizedString("SPLASH_TITLE_WIFI", tableName: table, comment: "")
         default:
@@ -136,6 +138,8 @@ struct OnBoardingView: View {
     
     private func summaryString(table: String) -> String {
         switch table {
+        case "BatteryUI":
+            return NSLocalizedString(UIDevice.iPhone ? "BATTERY_WARRANTY_P1_IPHONE" : "BATTERY_WARRANTY_P1_IPAD", tableName: table, comment: "")
         case "TVApp", "CloudCalling":
             return NSLocalizedString("SPLASH_SUMMARY_WIFI", tableName: table, comment: "")
         default:
@@ -160,6 +164,16 @@ struct OnBoardingView: View {
     }
     
     private func footerString() -> String {
+        if table == "BatteryUI" {
+            var formattedString = String()
+            if UIDevice.iPhone {
+                formattedString = "BATTERY_WARRANTY_P2_IPHONE".localize(table: table, "80%", "1000", "[\("LM_TEXT".localize(table: table))](\("BW_LM_URL_2_IPHONE".localize(table: table)))")
+                formattedString += "\n\n" + "BATTERY_WARRANTY_P3".localize(table: table, "[\("LM_TEXT".localize(table: table))](BW_LM_URL_3)")
+            } else {
+                formattedString = "BATTERY_WARRANTY_P2_IPAD".localize(table: table, "80%", "1000", "[\("LM_TEXT".localize(table: table))](\("BW_LM_URL_2_IPHONE".localize(table: table)))")
+            }
+            return formattedString
+        }
         if NSLocalizedString("FOOTER_TEXT_WIFI_\(UIDevice.current.model.uppercased())", tableName: table, comment: "") != "FOOTER_TEXT_WIFI_\(UIDevice.current.model.uppercased())" {
             return "FOOTER_TEXT_WIFI_\(UIDevice.current.model.uppercased())".localize(table: table)
         } else if NSLocalizedString("FOOTER_TEXT_WIFI", tableName: table, comment: "") != "FOOTER_TEXT_WIFI" {
@@ -189,5 +203,5 @@ struct BulletPoint: View {
 }
 
 #Preview {
-    OnBoardingView(table: "CloudCalling")
+    OnBoardingView(table: "BatteryUI")
 }

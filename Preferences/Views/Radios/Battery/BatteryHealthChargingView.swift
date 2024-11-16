@@ -11,13 +11,13 @@ struct BatteryHealthChargingView: View {
     // Variables
     @State private var maximumCapacity = 100
     
-    @State private var optimizedBatteryChargingEnabled = true
+    @AppStorage("OptimizedBatteryChargingToggle") private var optimizedBatteryChargingEnabled = true
     @State private var showingOptimizeWarning = false
-    @State private var temporaryOptimizePauseEnabled = false
+    @AppStorage("OptimizedChargingPaused") private var temporaryOptimizePauseEnabled = false
     
-    @State private var cleanEnergyChargingEnabled = true
+    @AppStorage("CleanEnergyChargingToggle") private var cleanEnergyChargingEnabled = true
     @State private var showingCleanEnergyWarning = false
-    @State private var temporaryCleanPauseEnabled = false
+    @AppStorage("CleanChargingPaused") private var temporaryCleanPauseEnabled = false
     
     let table = "BatteryUI"
     
@@ -29,9 +29,9 @@ struct BatteryHealthChargingView: View {
                 }
             } else {
                 VStack(alignment: .leading) {
-                    Text("RECALIBRATION_TITLE".localize(table: table))
+                    Text("RECALIBRATION_TITLE", tableName: table)
                         .fontWeight(.semibold)
-                    Text("SERVICE_RECOMMENDED_IPHONE".localize(table: table))
+                    Text("SERVICE_RECOMMENDED_IPHONE", tableName: table)
                         .font(.subheadline)
                 }
                 Button("SERVICE_RECOMMENDED_LINK".localize(table: table)) {}
@@ -49,13 +49,13 @@ struct BatteryHealthChargingView: View {
                         }
                     }
             } footer: {
-                Text("MAXIMUM_CAPACITY_FOOTER_TEXT".localize(table: table))
+                Text("MAXIMUM_CAPACITY_FOOTER_TEXT", tableName: table)
             }
             
             Section {
-                Text("PPC_NAME".localize(table: table))
+                Text("PPC_NAME", tableName: table)
             } footer: {
-                Text("PPC_PERFMGMT_DYNAMIC".localize(table: table))
+                Text("PPC_PERFMGMT_DYNAMIC", tableName: table)
             }
             
             Section {
