@@ -47,7 +47,7 @@ struct AboutView: View {
                 if serialNumber.isEmpty {
                     modelNumber = MGHelper.read(key: "D0cJ8r7U5zve6uA6QbOiLA") ?? getRegulatoryModelNumber() // ModelNumber
                     regulatoryModelNumber = getRegulatoryModelNumber()
-                    serialNumber = MGHelper.read(key: "VasUgeSzVyHdB27g2XpN0g") ?? getRandomSerialNumber()
+                    serialNumber = MGHelper.read(key: "VasUgeSzVyHdB27g2XpN0g") ?? getRandomSerialNumber() // SerialNumber
                     wifiAddress = generateRandomAddress()
                     bluetoothAddress = generateRandomAddress()
                     eidValue = getRandomEID()

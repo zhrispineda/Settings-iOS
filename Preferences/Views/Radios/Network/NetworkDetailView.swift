@@ -10,9 +10,10 @@ import SwiftUI
 struct NetworkDetailView: View {
     @State private var privateAddressOption = "kWFLocRandomMACStaticOption"
     let table = "WiFiKitUILocalizableStrings"
+    var name = String()
     
     var body: some View {
-        CustomList(title: "NETWORK") {
+        CustomList(title: name) {
 //            Section {
 //                Text("**Unsecured Network**")
 //                Text("Open networks provide no security and expose all network traffic.")
@@ -31,13 +32,17 @@ struct NetworkDetailView: View {
 //            }
             
             Section {
-                Button("kWFLocSettingJoinNetworkTitle".localize(table: table)) {}
+                if name.isEmpty {
+                    Button("kWFLocSettingJoinNetworkTitle".localize(table: table)) {}
+                } else {
+                    Button("kWFLocSettingForgetNetworkTitle".localize(table: table)) {}
+                }
             }
             
             Section {
                 //Toggle("Private Wi-Fi Address", isOn: $privateWifiAddressEnabled)
                 CustomNavigationLink(title: "KWFLocSettingRandomMACSwitchTitle".localize(table: table), status: "kWFLocRandomMACStaticOption".localize(table: table), destination: SelectOptionList(title: "KWFLocSettingRandomMACSwitchTitle", options: ["kWFLocRandomMACOffOption", "kWFLocRandomMACStaticOption", "kWFLocRandomMACRotatingOption"], selected: privateAddressOption, table: table))
-                LabeledContent("MACAddress", value: generateRandomAddress())
+                LabeledContent("MACAddress".localize(table: "GeneralSettingsUI"), value: generateRandomAddress())
             } footer: {
                 VStack(alignment: .leading) {
                     Text("kWFLocPirvateAddressFooterMainTitle", tableName: table)

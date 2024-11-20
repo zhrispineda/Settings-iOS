@@ -12,17 +12,16 @@ struct AppsView: View {
     @State private var searchText = String()
     let apps = ["Books", "Calendar", "Contacts", "Files", "Fitness", "Health", "Maps", "Messages", "News", "Passwords", "Photos", "Reminders", "Safari", "Shortcuts", "Translate"]
     let simulatorApps = ["Calendar", "Contacts", "Files", "Fitness", "Health", "Maps", "Messages", "News", "Passwords", "Photos", "Reminders", "Safari", "Shortcuts"]
-    let characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ#".map(String.init)
-    
     var groupedApps: [String: [String]] {
         Dictionary(grouping: UIDevice.IsSimulator ? simulatorApps : apps, by: { String($0.prefix(1)) })
     }
-
+    let letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ#"
+    
     var body: some View {
-        ZStack {
+        ScrollViewReader { proxy in
             CustomList(title: "Apps") {
                 ForEach(groupedApps.keys.sorted(), id: \.self) { key in
-                    Section(header: Text(key)) {
+                    Section(key) {
                         ForEach(groupedApps[key]!, id: \.self) { app in
                             SettingsLink(icon: "apple\(app)", id: app) {
                                 switch app {
@@ -62,7 +61,6 @@ struct AppsView: View {
                             }
                         }
                     }
-                    .id(key)
                 }
                 SettingsLink(color: .gray, icon: "square.dashed", id: "Hidden Apps") {
                     ContentUnavailableView(
@@ -81,21 +79,29 @@ struct AppsView: View {
                     }
                 }
             }
-            
-            VStack {
-                ForEach(characters, id: \.self) { char in
-                    Text(char)
-                        .foregroundStyle(.accent)
-                        .fontWeight(.semibold)
-                        .font(.system(size: 13))
-                        .frame(maxWidth: .infinity, alignment: .trailing)
-                        .padding(.trailing, 3)
+            .overlay {
+                HStack {
+                    Spacer()
+                    VStack(spacing: 0) {
+                        ForEach(Array(letters), id: \.self) { letter in
+                            Text(String(letter))
+                                .font(.caption)
+                                .fontWeight(.medium)
+                                .foregroundColor(.blue)
+                                .frame(width: 20, height: 15)
+                                .contentShape(Rectangle())
+                                .onTapGesture {
+                                    if groupedApps[String(letter)] != nil {
+                                        proxy.scrollTo(String(letter), anchor: .top)
+                                    }
+                                }
+                        }
+                    }
                 }
             }
         }
     }
 }
-
 
 #Preview {
     NavigationStack {

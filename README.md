@@ -2,7 +2,7 @@
 A **work-in-progress** SwiftUI recreation of the iOS & iPadOS Settings app.
 
 ## Information
-- This personal project is a recreation of Apple's Settings app for iOS and iPadOS 18.1 **Release** (22B83).
+- This personal project is a recreation of Apple's Settings app for iOS and iPadOS 18.1.1 **Release** (22B91).
 - All features within the app are only simulations and have no effect on the device outside of the app.
 - Features in the app vary based on the device model and its capabilities to make it as accurate as possible.
 
@@ -16,7 +16,7 @@ Simulator instance mode:
 ![A GIF displaying the project‘s Settings app on different devices including a Dynamic Island iPhone, iPhone with Touch ID, and an 11-inch iPad.](Assets/SettingsSimulator.gif)
 
 ## Usage
-Open the project in Xcode 16 and run with either a Simulator instance or a physical device running iOS 18 with Developer Mode enabled as a destination.
+Open the project in Xcode and run with either a Simulator instance or a physical device running iOS with Developer Mode enabled as a destination.
 
 To switch between the simulator or physical-like view of Settings in Simulator or Preview, modify the `forcePhysical` variable on line 11 of `SettingsModel.swift` under Preferences/Models.
 

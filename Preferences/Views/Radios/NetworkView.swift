@@ -38,6 +38,25 @@ struct NetworkView: View {
                             Text("kWFLocWiFiPlacardTitle", tableName: table)
                         }
                     }
+//                    ZStack {
+//                        HStack {
+//                            Image(systemName: "checkmark")
+//                                .foregroundStyle(.blue)
+//                                .fontWeight(.semibold)
+//                            Text("Network")
+//                            Spacer()
+//                            Image(systemName: "lock.fill")
+//                                .imageScale(.small)
+//                            Image(systemName: "wifi")
+//                                .imageScale(.small)
+//                            Button {} label: {
+//                                Image(systemName: "info.circle")
+//                                    .foregroundStyle(.blue)
+//                            }
+//                        }
+//                        NavigationLink(destination: NetworkDetailView(name: "Network")) {}
+//                            .opacity(0)
+//                    }
                 } footer: {
                     if !wifiEnabled {
                         Text(UIDevice.iPhone ? "kWFLocLocationServicesCellularWarning" : "kWFLocLocationServicesWarning", tableName: table)
