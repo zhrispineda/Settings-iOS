@@ -27,6 +27,7 @@
 		831448292CD95B6200FFEE51 /* FitnessSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 831448282CD95B6200FFEE51 /* FitnessSettings.xcstrings */; };
 		8314482B2CD95F6500FFEE51 /* HealthUI-Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8314482A2CD95F6500FFEE51 /* HealthUI-Localizable.xcstrings */; };
 		8314482D2CD9652A00FFEE51 /* HealthSettingsSpecifiers.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8314482C2CD9652A00FFEE51 /* HealthSettingsSpecifiers.xcstrings */; };
+		8317AB212CEE736C00989F15 /* iBooksSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8317AB202CEE736B00989F15 /* iBooksSettings.xcstrings */; };
 		8319CE492B86D198007EC822 /* PasswordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319CE482B86D198007EC822 /* PasswordsView.swift */; };
 		8319CE4B2B86D22E007EC822 /* AutoFillPasswordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319CE4A2B86D22E007EC822 /* AutoFillPasswordsView.swift */; };
 		8319CE4D2B86D380007EC822 /* SafetyCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319CE4C2B86D380007EC822 /* SafetyCheckView.swift */; };
@@ -477,6 +478,7 @@
 		831448282CD95B6200FFEE51 /* FitnessSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = FitnessSettings.xcstrings; sourceTree = "<group>"; };
 		8314482A2CD95F6500FFEE51 /* HealthUI-Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "HealthUI-Localizable.xcstrings"; sourceTree = "<group>"; };
 		8314482C2CD9652A00FFEE51 /* HealthSettingsSpecifiers.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = HealthSettingsSpecifiers.xcstrings; sourceTree = "<group>"; };
+		8317AB202CEE736B00989F15 /* iBooksSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = iBooksSettings.xcstrings; sourceTree = "<group>"; };
 		8319CE482B86D198007EC822 /* PasswordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordsView.swift; sourceTree = "<group>"; };
 		8319CE4A2B86D22E007EC822 /* AutoFillPasswordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoFillPasswordsView.swift; sourceTree = "<group>"; };
 		8319CE4C2B86D380007EC822 /* SafetyCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyCheckView.swift; sourceTree = "<group>"; };
@@ -1743,6 +1745,7 @@
 				831C1A572CCF1D0100866498 /* WallpaperSettings.xcstrings */,
 				8388C0B12CD473DB00FA7D4C /* WellnessDashboard-Localizable.xcstrings */,
 				832877FA2CAEEA7E00013B0B /* WiFiKitUILocalizableStrings.xcstrings */,
+				8317AB202CEE736B00989F15 /* iBooksSettings.xcstrings */,
 			);
 			path = Ungrouped;
 			sourceTree = "<group>";
@@ -2166,6 +2169,7 @@
 				8355C8382CE53F1D0067D675 /* NFCAndSEPlatform.xcstrings in Resources */,
 				8388C0B22CD473DB00FA7D4C /* WellnessDashboard-Localizable.xcstrings in Resources */,
 				8355C82A2CE53D460067D675 /* iTunesStore.xcstrings in Resources */,
+				8317AB212CEE736C00989F15 /* iBooksSettings.xcstrings in Resources */,
 				8355C8362CE53EC50067D675 /* MySports.xcstrings in Resources */,
 				834565782CAAEB82002BE49D /* Camera.xcstrings in Resources */,
 				830F2B3A2CD98E5D006F7F22 /* Photos.xcstrings in Resources */,

@@ -84,6 +84,16 @@
 				<string>batterySettingsOBK</string>
 			</array>
 		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.example.Preferences</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>booksSettingsOBK</string>
+			</array>
+		</dict>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

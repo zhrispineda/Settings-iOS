@@ -9,18 +9,18 @@ import SwiftUI
 
 struct WalletView: View {
     // Variables
-    @State private var cellularEnabled: Bool = true
+    @State private var cellularEnabled = true
     
-    @State private var appleCashEnabled = true
+    @AppStorage("AppleCashEnabled") private var appleCashEnabled = false
     @State private var doubleClickButtonEnabled = true
     @State private var hideExpiredPassesEnabled = true
     
-    @State private var payLaterEnabled = true
-    @State private var rewardsEnabled = true
-    @State private var compatibleCardsEnabled = false
+    @AppStorage("PayLaterEnabled") private var payLaterEnabled = true
+    @AppStorage("RewardsEnabled") private var rewardsEnabled = true
+    @AppStorage("CompatibleCardsEnabled") private var compatibleCardsEnabled = false
     @State private var addOrdersWalletEnabled = true
     @State private var orderNotificationsEnabled = true
-    @State private var otherPayLaterOptionsEnabled = true
+    @AppStorage("OtherPayLaterEnabled") private var otherPayLaterOptionsEnabled = true
     
     let table = "PassKit"
     let nfcTable = "ContactlessAndCredentialSettings_Localizable"
@@ -33,12 +33,10 @@ struct WalletView: View {
     
     var body: some View {
         CustomList(title: "WALLET_&_APPLE_PAY".localize(table: walletTable), topPadding: true) {
-            if UIDevice.iPhone {
-                if UIDevice.IsSimulator {
-                    PermissionsView(appName: "PASS_DETAILS_WALLET".localize(table: payTable), cellular: false, location: false, cellularEnabled: $cellularEnabled)
-                } else {
-                    PermissionsView(appName: "WALLET_&_APPLE_PAY".localize(table: walletTable), liveActivityToggle: true, location: false, cellularEnabled: $cellularEnabled)
-                }
+            if UIDevice.IsSimulator {
+                PermissionsView(appName: "PASS_DETAILS_WALLET".localize(table: payTable), cellular: false, location: false, cellularEnabled: $cellularEnabled)
+            } else {
+                PermissionsView(appName: "WALLET_&_APPLE_PAY".localize(table: walletTable), cellular: false, location: false, siri: false, cellularEnabled: $cellularEnabled)
             }
             
             if !UIDevice.IsSimulator {
@@ -53,24 +51,24 @@ struct WalletView: View {
                 }
                 
                 Section {
-                    if appleCashEnabled {
-                        NavigationLink(destination: EmptyView()) {
-                            VStack(alignment: .leading, spacing: 5) {
-                                Text("SE_STORAGE_APPLET_CATEGORY_APLET_TYPE_PTC", tableName: payTable)
-                                Text("PEER_PAYMENT_SETTINGS_REGISTRATION_NOT_SET_UP", tableName: peerTable)
-                                    .font(.caption)
-                            }
-                        }
-                        .alignmentGuide(.listRowSeparatorLeading) { ViewDimensions in
-                            return -20
-                        }
-                    }
+//                    if appleCashEnabled {
+//                        NavigationLink(destination: EmptyView()) {
+//                            VStack(alignment: .leading, spacing: 5) {
+//                                Text("SE_STORAGE_APPLET_CATEGORY_APLET_TYPE_PTC", tableName: payTable)
+//                                Text("PEER_PAYMENT_SETTINGS_REGISTRATION_NOT_SET_UP", tableName: peerTable)
+//                                    .font(.caption)
+//                            }
+//                        }
+//                        .alignmentGuide(.listRowSeparatorLeading) { ViewDimensions in
+//                            return -20
+//                        }
+//                    }
                     Button("PEER_PAYMENT_ADD_CARD_BUTTON_TITLE".localize(table: peerTable)) {}
                 } header: {
                     Text("SETTINGS_PAYMENT_CARDS_GROUP", tableName: payTable)
                 } footer: {
                     if !appleCashEnabled {
-                        Text(UIDevice.PearlIDCapability ? "SETTINGS_ABOUT_FOOTER_IPHONE" : "SETTINGS_ABOUT_FOOTER_FACEID_IPAD", tableName: payTable) + Text("[\("APPLE_PAY_PRIVACY".localize(table: walletTable))](#)")
+                        Text(UIDevice.PearlIDCapability ? UIDevice.iPhone ? "SETTINGS_ABOUT_FOOTER_FACEID_IPHONE" : "SETTINGS_ABOUT_FOOTER_FACEID_IPAD" : UIDevice.iPad ? "SETTINGS_ABOUT_FOOTER_IPAD" : "SETTINGS_ABOUT_FOOTER_IPHONE", tableName: payTable) + Text(" [\("APPLE_PAY_PRIVACY".localize(table: walletTable))](#)")
                     }
                 }
                 
@@ -83,9 +81,9 @@ struct WalletView: View {
                 }
             }
             
-            Section {
-                Toggle("ALLOW_EXPIRED_PASSES_TITLE".localize(table: table), isOn: $hideExpiredPassesEnabled)
-            }
+//            Section {
+//                Toggle("ALLOW_EXPIRED_PASSES_TITLE".localize(table: table), isOn: $hideExpiredPassesEnabled)
+//            }
             
             if !UIDevice.IsSimulator && UIDevice.iPhone {
                 Section {
@@ -121,6 +119,12 @@ struct WalletView: View {
             }
             
             Section {
+                Toggle("Other Pay Later Options", isOn: $otherPayLaterOptionsEnabled)
+            } footer: {
+                Text("See additional pay later services not associated with your cards in Wallet when you check out with Apple Pay.")
+            }
+            
+            Section {
                 Toggle("ALLOW_ONLINE_PAYMENTS_TITLE".localize(table: virtualTable), isOn: $compatibleCardsEnabled)
             } header: {
                 Text("ALLOW_ONLINE_PAYMENTS_HEADER", tableName: virtualTable)
@@ -139,15 +143,9 @@ struct WalletView: View {
                     }
                 }
                 
-                Section {
-                    Toggle("ALLOW_ORDER_MANAGEMENT_NOTIFICATIONS_TITLE".localize(table: orderTable), isOn: $orderNotificationsEnabled)
-                }
-            }
-            
-            Section {
-                Toggle("Other Pay Later Options", isOn: $otherPayLaterOptionsEnabled)
-            } footer: {
-                Text("See additional pay later services not associated with your cards in Wallet when you check out with Apple Pay.")
+//                Section {
+//                    Toggle("ALLOW_ORDER_MANAGEMENT_NOTIFICATIONS_TITLE".localize(table: orderTable), isOn: $orderNotificationsEnabled)
+//                }
             }
         }
     }
