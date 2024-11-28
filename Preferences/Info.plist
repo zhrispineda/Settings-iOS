@@ -86,12 +86,32 @@
 		</dict>
 		<dict>
 			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
+			<string>Viewer</string>
 			<key>CFBundleURLName</key>
 			<string>com.example.Preferences</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>booksSettingsOBK</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+			<key>CFBundleURLName</key>
+			<string>com.example.Preferences</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>locationSettingsOBK</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+			<key>CFBundleURLName</key>
+			<string>com.example.Preferences</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>mapsSettingsOBK</string>
 			</array>
 		</dict>
 	</array>

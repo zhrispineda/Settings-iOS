@@ -10,6 +10,7 @@ import SwiftUI
 struct LocationServicesView: View {
     // Variables
     @State private var locationServicesEnabled = true
+    @State private var showingSheet = false
     let table = "Location Services"
     let privTable = "LocationServicesPrivacy"
     
@@ -17,9 +18,17 @@ struct LocationServicesView: View {
         CustomList(title: "LOCATION_SERVICES".localize(table: table)) {
             Section {
                 Toggle("LOCATION_SERVICES".localize(table: table), isOn: $locationServicesEnabled)
-                NavigationLink("PRIVACY_ALERTS", destination: LocationAlertsView())
+                NavigationLink("PRIVACY_ALERTS".localize(table: table), destination: LocationAlertsView())
             } footer: {
-                Text(UIDevice.iPhone ? "DESCRIPTION_GPS_WIFI" : "DESCRIPTION_NOGPS_WIFI", tableName: table) + Text(" [\("ABOUT_LOCATION_AND_PRIVACY".localize(table: table))](#)")
+                Text(UIDevice.iPhone ? "DESCRIPTION_GPS_WIFI" : "DESCRIPTION_NOGPS_WIFI", tableName: table) + Text(" [\("ABOUT_LOCATION_AND_PRIVACY".localize(table: table))](locationSettingsOBK://)")
+            }
+            .onOpenURL { url in
+                if url.scheme == "locationSettingsOBK" {
+                    showingSheet = true
+                }
+            }
+            .sheet(isPresented: $showingSheet) {
+                OnBoardingView(table: "LocationServices")
             }
             
 //            Section {
@@ -28,18 +37,14 @@ struct LocationServicesView: View {
             
             if locationServicesEnabled {
                 Section {
-                    SettingsLink(color: .white, iconColor: .blue, icon: "appclip", id: "APP_CLIPS".localize(table: "Dim-Sum")) { AppClipsView()
+                    SettingsLink(color: .white, iconColor: .blue, icon: "appclip", id: "APP_CLIPS".localize(table: "Dim-Sum"), status: "0") { AppClipsView()
                     }
-                    CustomNavigationLink(title: "BulletinBoard.framework", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), destination: LocationPermissionsDetailView(title: "BulletinBoard.framework"))
-                    CustomNavigationLink(title: "MobileWiFi.framework", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), destination: LocationPermissionsDetailView(title: "MobileWiFi.framework"))
                     SettingsLink(icon: "Placeholder", id: "LOCATION_SHARING".localize(table: table), status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable)) {
                         LocationPermissionsDetailView(title: "LOCATION_SHARING")
                     }
                     SettingsLink(icon: "appleSiri", id: "Siri", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable)) {
                         LocationPermissionsDetailView(title: "Siri")
                     }
-                    CustomNavigationLink(title: "SystemCustomization.bundle", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), location: true, destination: LocationPermissionsDetailView(title: "SystemCustomization.bundle"))
-                    CustomNavigationLink(title: "Traffic.bundle", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), destination: LocationPermissionsDetailView(title: "Traffic.bundle"))
                     SettingsLink(color: .gray, icon: "gear", id: "SYSTEM_SERVICES".localize(table: table), status: "location.fill") {
                         SystemServicesView()
                     }

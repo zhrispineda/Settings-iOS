@@ -72,7 +72,7 @@ struct OnBoardingView: View {
                         .font(.subheadline)
                     }
                 }
-                .padding(.horizontal, 50)
+                .padding(.horizontal, 40)
                 .overlay {
                     GeometryReader { geo in
                         Color.clear.onAppear {

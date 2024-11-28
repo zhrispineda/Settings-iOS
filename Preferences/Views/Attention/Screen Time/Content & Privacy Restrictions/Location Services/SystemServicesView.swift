@@ -9,13 +9,13 @@ import SwiftUI
 
 struct SystemServicesView: View {
     // Variables
-    @State private var alertsShortcutsAutomationsEnabled = false
+    @State private var alertsShortcutsAutomationsEnabled = true
     @State private var carbonAnalysisEnabled = true
     @State private var cellNetworkSearchEnabled = true
     @State private var deviceManagementEnabled = true
     @State private var findMyEnabled = true
     @State private var homeKitEnabled = true
-    @State private var networkingWirelessEnabled = false
+    @State private var networkingWirelessEnabled = true
     @State private var showingNetworkingAlert = false
     @State private var settingTimeZoneEnabled = true
     @State private var suggestionsSearchEnabled = true
@@ -24,6 +24,7 @@ struct SystemServicesView: View {
     @State private var routingTrafficEnabled = false
     @State private var improveMapsEnabled = false
     @State private var controlCenterIconEnabled = false
+    @State private var showingSheet = false
     let table = "Location Services"
     let privTable = "LocationServicesPrivacy"
     
@@ -43,7 +44,7 @@ struct SystemServicesView: View {
                 }
                 Toggle("HOMEKIT".localize(table: privTable), isOn: $homeKitEnabled)
                 Toggle("NETWORKING_WIRELESS".localize(table: privTable), isOn: $networkingWirelessEnabled)
-                    .alert("WIRELESS_DISABLE_TITLE".localize(table: privTable), isPresented: $showingNetworkingAlert) {
+                    .confirmationDialog("WIRELESS_DISABLE_TITLE".localize(table: privTable), isPresented: $showingNetworkingAlert) {
                         Button("WIRELESS_DISABLE_CONFIRM".localize(table: privTable)) {}
                         Button("WIRELESS_DISABLE_CANCEL".localize(table: privTable), role: .cancel) {}
                     } message: {
@@ -67,13 +68,15 @@ struct SystemServicesView: View {
             
             Section {
                 Toggle("WIRELESS_DIAGNOSTICS".localize(table: table), isOn: $deviceAnalyticsEnabled)
-                Toggle("ROUTING_AND_TRAFFIC".localize(table: privTable), isOn: $routingTrafficEnabled)
+                if !UIDevice.IsSimulator {
+                    Toggle("ROUTING_AND_TRAFFIC".localize(table: privTable), isOn: $routingTrafficEnabled)
+                }
                 Toggle("POLARIS_TITLE".localize(table: table), isOn: $improveMapsEnabled)
             } header: {
                 Text("PRODUCT_IMPROVEMENT", tableName: table)
             } footer: {
                 VStack(alignment: .leading) {
-                    Text(.init("POLARIS_FOOTER".localize(table: table, "[\("LEARN_MORE".localize(table: table))](#)"))) + Text("\n")
+                    Text(.init("POLARIS_FOOTER".localize(table: table, "[\("LEARN_MORE".localize(table: table))](mapsSettingsOBK://)"))) + Text("\n")
                     
                     Group {
                         Text("GENERAL_EXPLANATION_ITEM", tableName: table) + Text("\n")
@@ -94,6 +97,14 @@ struct SystemServicesView: View {
                         }
                         .padding(.trailing)
                     }
+                }
+                .onOpenURL { url in
+                    if url.scheme == "mapsSettingsOBK" {
+                        showingSheet = true
+                    }
+                }
+                .sheet(isPresented: $showingSheet) {
+                    OnBoardingView(table: "Maps")
                 }
             }
             
