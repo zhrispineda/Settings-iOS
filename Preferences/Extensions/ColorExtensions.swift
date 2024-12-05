@@ -1,8 +1,12 @@
-//
-//  ColorExtensions.swift
-//  Preferences
-//  An extension on Colors to add custom colors.
-//
+/*
+Abstract:
+An extension of Color to use String values for colors.
+ 
+Example:
+Text("My Color").foregroundColor(Color["Red"])
+Text("My Color").foregroundColor(Color["Green"])
+Text("My Color").foregroundColor(Color["Blue"])
+*/
 
 import SwiftUI
 

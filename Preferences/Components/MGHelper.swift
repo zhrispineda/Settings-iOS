@@ -2,39 +2,45 @@
 //  MGHelper.swift
 //  Preferences
 //
-//  Class with functionality for reading MobileGestalt keys.
-//
 
 import Foundation
 import os
 
+/// A helper class that accesses MobileGestalt, an internal system library, to read key values for device information.
 class MGHelper {
+    /// Returns the value of the given key with MobileGestalt.
+    /// - Parameter key: The key as a String
+    /// - Returns: The value of the key; will return the value as a String otherwise returns nil
     static func read(key: String) -> String? {
         typealias MGKey = (@convention(c) (CFString) -> CFTypeRef?)
-        let logger = Logger()
         var mgKey: MGKey?
         
-        logger.info("Attempting to find key \(key) answer")
+        logger.info("Attempting to get value for key: \(key)")
         
+        // Initialize libMobileGestalt.dylib
         guard let gestalt = dlopen("/usr/lib/libMobileGestalt.dylib", RTLD_LAZY) else {
             logger.error("Could not load libMobileGestalt.dylib")
             return nil
         }
         
+        // Encode the key
         guard let key = CFStringCreateWithCString(nil, key, CFStringBuiltInEncodings.ASCII.rawValue) else {
-            logger.error("Unable to encode question key \(key)")
+            logger.error("Unable to encode key: \(key)")
             return nil
         }
         
         mgKey = unsafeBitCast(dlsym(gestalt, "MGCopyAnswer"), to: MGKey.self)
         
+        // Attempt to get key's value
         guard let value = mgKey?(key) else {
-            logger.error("Failed to get answer for key \(key)")
+            logger.error("Could not get value for key: \(key)")
             return nil
         }
         
+        // Obtain type returned
         let typeId = CFGetTypeID(value)
         
+        // Based on data type, return as a casted String
         switch typeId {
         case CFBooleanGetTypeID():
             return CFBooleanGetValue((value as! CFBoolean)) ? "true" : "false"
@@ -55,6 +61,11 @@ class MGHelper {
             return nil
         }
         
+        // If typeId is still nil, return nil
+        logger.error("Could not get type ID for key: \(key)")
         return nil
     }
 }
+
+// Global logger variable
+let logger = Logger()

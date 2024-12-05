@@ -1,5 +1,5 @@
-#  Settings-iOS
-A **work-in-progress** SwiftUI recreation of the iOS & iPadOS Settings app.
+# Settings-iOS
+A **work-in-progress** SwiftUI recreation of the iOS & iPadOS Settings app (Preferences.app).
 
 ## Information
 - This personal project is a recreation of Apple's Settings app for iOS and iPadOS 18.1.1 **Release** (22B91).
@@ -9,11 +9,11 @@ A **work-in-progress** SwiftUI recreation of the iOS & iPadOS Settings app.
 ## Examples
 Physical device mode:
 
-![A GIF displaying the project‘s Settings app on different devices including a Dynamic Island iPhone, iPhone with Touch ID, and an 11-inch iPad.](Assets/SettingsPhysical.gif)
+![A GIF displaying the project‘s Settings app on different devices including a Dynamic Island iPhone, iPhone with Touch ID, and an 11-inch iPad. It is similar to the Settings layout of a physical device.](Assets/SettingsPhysical.gif)
 
 Simulator instance mode:
 
-![A GIF displaying the project‘s Settings app on different devices including a Dynamic Island iPhone, iPhone with Touch ID, and an 11-inch iPad.](Assets/SettingsSimulator.gif)
+![A GIF displaying the project‘s Settings app on different devices including a Dynamic Island iPhone, iPhone with Touch ID, and an 11-inch iPad. It is similar to the Settings layout of a Simulator instance.](Assets/SettingsSimulator.gif)
 
 ## Usage
 Open the project in Xcode and run with either a Simulator instance or a physical device running iOS with Developer Mode enabled as a destination.
