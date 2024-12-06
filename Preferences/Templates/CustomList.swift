@@ -5,7 +5,7 @@ A List container that already includes commonly used modifiers.
 
 import SwiftUI
 
-/// A List container that already includes commonly used properties and adjustments.
+/// A `List` container that already includes commonly used properties and adjustments.
 /// ```swift
 /// var body: some View {
 ///     CustomList(title: "My Title") {
@@ -13,8 +13,9 @@ import SwiftUI
 ///     }
 /// }
 /// ```
-/// - Parameter title: The String of the inline navigation title.
-/// - Parameter content: The Content to display within.
+/// - Parameter title: The String to use as the navigation title.
+/// - Parameter topPadding: The optional Bool on whether to use default or reduced top padding.
+/// - Parameter content: The Content to display in the container.
 struct CustomList<Content: View>: View {
     // Variables
     var title = String()
@@ -35,6 +36,7 @@ struct CustomList<Content: View>: View {
             .padding(.top, topPadding ? 0 : -19)
         }
         .onReceive(NotificationCenter.default.publisher(for: UIDevice.orientationDidChangeNotification)) { _ in
+            // Update orientation variable if device is an iPad
             if UIDevice.iPad && UIDevice.current.orientation.rawValue <= 4 {
                 isLandscape = UIDevice.current.orientation.isLandscape
             }

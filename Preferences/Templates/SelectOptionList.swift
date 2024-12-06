@@ -1,25 +1,25 @@
-//
-//  SelectOptionList.swift
-//  Preferences
-//
+/*
+Abstract:
+A CustomList container template for having options that can be selected and can also be customized.
+*/
 
 import SwiftUI
 
-/// A ``CustomList`` ``View`` template for having options that can be selected and can also be customized.
+/// A `CustomList` container template for having options that can be selected and can also be customized.
 /// ```swift
 /// SelectOptionList(title: "Receive Updates", options: ["Yes", "No"], selected: "Yes")
 /// ```
-/// - Parameter title: The ``String`` to display as the title of the ``View``.
-/// - Parameter options: The ``String Array``of available options to pick from..
-/// - Parameter selectedBinding: The optional ``<Binding>String`` holding the currently selected value.
-/// - Parameter selected: The ``String`` holding the currently selected value.
-/// - Parameter table: The ``String`` table name to use for localization.
+/// - Parameter title: The `String` to display as the navigation title of the `View`.
+/// - Parameter options: The `String Array` of available options to pick from.
+/// - Parameter selectedBinding: The optional `String Binding` holding the currently selected value.
+/// - Parameter selected: The `String` holding the currently selected value.
+/// - Parameter table: The `String` table name to use for localization.
 struct SelectOptionList: View {
     // Variables
-    var title = String()
-    var options = ["Allow", "Don‘t Allow"]
+    var title: String
+    var options: [String] = []
     var selectedBinding: Binding<String>? = nil
-    @State var selected = "Allow"
+    @State var selected = String()
     var table = String()
     
     var body: some View {
@@ -74,6 +74,6 @@ struct SelectOptionList: View {
 
 #Preview {
     NavigationStack {
-        SelectOptionList(title: "kWFLocAskToJoinTitle", options: ["kWFLocAskToJoinDetailOff", "kWFLocAskToJoinDetailNotify", "kWFLocAskToJoinDetailAsk"], selected: "kWFLocAskToJoinDetailOff", table: "WiFiKitUILocalizableStrings")
+        SelectOptionList(title: "Receive Updates", options: ["Yes", "No"], selected: "Yes")
     }
 }

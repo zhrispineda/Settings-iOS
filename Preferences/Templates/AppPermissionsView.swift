@@ -5,14 +5,14 @@ A view for displaying options regarding Privacy & Security based on the given pe
 
 import SwiftUI
 
-/// A CustomList container for displaying options regarding Privacy & Security based on the given permissionName String.
+/// A `CustomList` container for displaying options regarding Privacy & Security based on the given `permissionName` String.
 /// ```swift
 /// AppPermissionsView(permissionName: "Contacts")
 /// ```
 /// ```swift
 /// AppPermissionsView(permissionName: "Camera", appClipPermission: "Camera")
 /// ```
-/// - Parameter permissionName: The String to display as the permission for the View.
+/// - Parameter permissionName: The String to display as the navigation title.
 /// - Parameter appClipsPermission: The  optional String to use when relating to App Clips.
 struct AppPermissionsView: View {
     @AppStorage("PrivacyFitnessTrackingToggle") private var fitnessTracking = true

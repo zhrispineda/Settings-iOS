@@ -1,14 +1,34 @@
-//
-//  PermissionsView.swift
-//  Preferences
-//
+/*
+Abstract:
+A Section container for displaying controls to manage what permission an app has.
+*/
 
 import SwiftUI
 
+/// A Section container for displaying controls to manage what permission an app has.
+/// ```swift
+/// var body: some View {
+///     List {
+///         PermissionsView(appName: "Example", cellularEnabled: .constant(true))
+///     }
+/// }
+/// ```
+/// - Parameter appName: The String name of the app to manage permissions for.
+/// - Parameter background:A Bool for if the Background App Refresh option is available.
+/// - Parameter camera:A Bool for if the Camera option is available.
+/// - Parameter cellular:A Bool for if the Cellular option is available.
+/// - Parameter faceID:A Bool for if the Face ID option is available.
+/// - Parameter focus:A Bool for if the Focus option is available.
+/// - Parameter liveActivity:A Bool for if the Live Activity option is available.
+/// - Parameter liveActivityToggle:A Bool for if the Background App Refresh toggle is available.
+/// - Parameter location:A Bool for if the Location option is available.
+/// - Parameter notifications:A Bool for if the Notifications option is available.
+/// - Parameter phone:A Bool for if the Phone option is available.
+/// - Parameter photos:A Bool for if the Photos option is available.
+/// - Parameter siri:A Bool for if the Siri option is available.
 struct PermissionsView: View {
     // Variables
     var appName: String
-    
     var background: Bool = false
     var camera: Bool = false
     var cellular: Bool = true

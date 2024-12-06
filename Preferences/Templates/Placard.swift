@@ -1,12 +1,19 @@
-//
-//  Placard.swift
-//  Preferences
-//
-//  Placard notice at the top of views to explain expected functionality of items below
-//
+/*
+Abstract:
+A VStack container that is displayed at the top of lists to summarize common controls to be expected within.
+*/
 
 import SwiftUI
 
+/// A `VStack` container that is displayed at the top of lists to summarize common controls to be expected within.
+/// ```swift
+/// Placard(title: "General", color: Color.gray, icon: "gear", description: "Change common settings including checking for new updates.", frameY: .constant(0.0), opacity: .constant(0.0))
+/// ```
+/// - Parameter title: The `String` to display as the navigation title of the `View`.
+/// - Parameter color: The `Color` of the icon background.
+/// - Parameter iconColor: The `Color` of the icon.
+/// - Parameter icon: The `String` name of the icon symbol.
+/// - Parameter description: The `String` to display as the description below the title.
 struct Placard: View {
     // Variables
     var title = String()
@@ -46,6 +53,7 @@ struct Placard: View {
                                 .foregroundStyle(.black)
                         }
                 }
+                
                 if title == "Apple Intelligence & Siri" {
                     ZStack {
                         RoundedRectangle(cornerRadius: 25.0)
@@ -88,7 +96,7 @@ struct Placard: View {
     NavigationStack {
         CustomList(title: "General") {
             Section {
-                Placard(title: "General", color: Color.gray, icon: "gear", description: "PLACARD_SUBTITLE", frameY: .constant(0.0), opacity: .constant(0.0))
+                Placard(title: "General", color: Color.gray, icon: "gear", description: "Change common settings including checking for new updates.", frameY: .constant(0.0), opacity: .constant(0.0))
             }
         }
     }

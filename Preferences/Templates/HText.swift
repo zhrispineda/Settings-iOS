@@ -1,11 +1,11 @@
-//
-//  HText.swift
-//  Preferences
-//
+/*
+Abstract:
+An HStack container with title and status text on opposite sides for displaying information.
+*/
 
 import SwiftUI
 
-/// An HStack container with title and status text on opposing sides.
+/// An HStack container with title and status text on opposite sides for displaying information.
 /// ```swift
 /// var body: some View {
 ///     List {
@@ -13,9 +13,9 @@ import SwiftUI
 ///     }
 /// }
 /// ```
-/// - Parameter title: The ``String`` main text describing the label.
-/// - Parameter status: The ``String`` description of a state of a destination's controls.
-/// - Parameter monospaced: The ``Bool`` of whether the `status` text is monospaced.
+/// - Parameter title: The String text identifying the label.
+/// - Parameter status: The String description of the title's state or information.
+/// - Parameter monospaced: The Bool for whether the `status` text is monospaced.
 struct HText: View {
     var title = String()
     var status = String()

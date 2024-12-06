@@ -1,11 +1,11 @@
-//
-//  IconToggle.swift
-//  Preferences
-//
+/*
+Abstract:
+A Toggle container with a rounded icon next to its label.
+*/
 
 import SwiftUI
 
-/// Toggle container with a rounded icon next to its label.
+/// A Toggle container with a rounded icon next to its label.
 /// ```swift
 /// var body: some View {
 ///     List {
@@ -13,14 +13,14 @@ import SwiftUI
 ///     }
 /// }
 /// ```
-/// - Parameter color: The ``Color`` to use as the icon background.
-/// - Parameter icon: The ``String`` name of the image asset or symbol.
-/// - Parameter title: The ``String`` name of the label to display.
-/// - Parameter subtitle: The ``String`` text of the subtitle to display.
+/// - Parameter color: The Color to use as the icon background.
+/// - Parameter icon: The String name of the image asset or symbol.
+/// - Parameter title: The String name of the label to display.
+/// - Parameter subtitle: The String text of the subtitle to display.
 struct IconToggle: View {
     // Variables
     @Binding var enabled: Bool
-    var color = Color(.blue)
+    var color = Color.blue
     var icon = String()
     var title = String()
     var subtitle = String()
@@ -34,6 +34,7 @@ struct IconToggle: View {
                         .scaledToFit()
                         .frame(width: 30)
                         .foregroundStyle(color)
+                    
                     if UIImage(systemName: icon) != nil {
                         Image(systemName: icon)
                             .resizable()
@@ -57,6 +58,7 @@ struct IconToggle: View {
                 
                 VStack(alignment: .leading, spacing: 0) {
                     Text(LocalizedStringKey(title))
+                    
                     if !subtitle.isEmpty {
                         Text(subtitle)
                             .font(.footnote)
@@ -70,8 +72,8 @@ struct IconToggle: View {
 
 #Preview {
     NavigationStack {
-        CustomList(title: "IconToggle") {
-            IconToggle(enabled: .constant(true), color: .blue, icon: "wifi", title: "Wi-Fi", subtitle: "Home")
+        CustomList(title: "Networking") {
+            IconToggle(enabled: .constant(true), color: .blue, icon: "wifi", title: "Wi-Fi", subtitle: "Office")
         }
     }
 }
