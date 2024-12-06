@@ -15,11 +15,12 @@ struct SelectSignInOptionView: View {
     
     var body: some View {
         List {
-            VStack(spacing: 15) {
+            // Animated Apple logo, title, and description
+            VStack(spacing: 10) {
                 animatedHeader()
                     .frame(height: 100)
                 Text("LOGIN_FORM_TITLE", tableName: table)
-                    .font(.title)
+                    .font(.largeTitle)
                     .bold()
                 Text("SIGN_IN_OPTIONS_DESCRIPTION", tableName: table)
                     .multilineTextAlignment(.center)
@@ -27,7 +28,9 @@ struct SelectSignInOptionView: View {
             }
             .listRowBackground(Color.clear)
             .frame(maxWidth: .infinity, alignment: .center)
+            .padding(.bottom, 0)
             
+            // Use Another Apple Device button
             Section {
                 VStack {
                     Button {
@@ -57,6 +60,7 @@ struct SelectSignInOptionView: View {
                 }
             }
             
+            // Sign in Manually button
             Section {
                 VStack {
                     NavigationLink {
@@ -80,6 +84,7 @@ struct SelectSignInOptionView: View {
                 }
             }
         }
+        .padding(.top, -25)
         .contentMargins(.horizontal, UIDevice.iPad ? 50 : 15, for: .scrollContent)
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
