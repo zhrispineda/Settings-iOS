@@ -1,7 +1,7 @@
-//
-//  SettingsLabel.swift
-//  Preferences
-//
+/*
+Abstract:
+An HStack container for displaying a label with a rounded icon and text.
+*/
 
 import SwiftUI
 
@@ -13,16 +13,17 @@ import SwiftUI
 ///     }
 /// }
 /// ```
-/// - Parameter color: The ``Color`` to use as the icon background.
-/// - Parameter icon: The ``String`` name of the image asset or symbol.
-/// - Parameter id: The ``String`` name of the label to display.
-/// - Parameter status: The ``String`` name of the status to display.
+/// - Parameter color: The `Color` to use as the icon background.
+/// - Parameter icon: The `String` name of the image asset or symbol.
+/// - Parameter id: The `String` name of the label to display.
+/// - Parameter status: The `String` text of the status to display.
+/// - Parameter badgeCount: The `Int` count to display as a badge.
 struct SettingsLabel: View {
-    var color: Color = Color.gray
-    var icon: String = String()
-    var id: String = String()
-    var status: String = String()
-    var badgeCount: Int = 0
+    var color = Color.gray
+    var icon = String()
+    var id = String()
+    var status = String()
+    var badgeCount = Int()
     
     var body: some View {
         HStack(spacing: 15) {

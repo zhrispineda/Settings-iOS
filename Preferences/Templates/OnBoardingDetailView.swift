@@ -1,10 +1,16 @@
-//
-//  OnBoardingDetailView.swift
-//  Preferences
-//
+/*
+Abstract:
+Based off of OnBoardingKit, shows the collection of Privacy tables.
+*/
 
 import SwiftUI
 
+/// A `NavigationStack` container for displaying a list of Privacy tables.
+/// ```swift
+/// var body: some View {
+///     OnBoardingDetailView()
+/// }
+/// ```
 struct OnBoardingDetailView: View {
     // Variables
     @Environment(\.colorScheme) private var colorScheme
@@ -117,16 +123,20 @@ struct OnBoardingDetailView: View {
                                     }
                             }
                         }
+                    
                     Text("SPLASH_TITLE", tableName: table)
                         .font(.title)
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
+                    
                     Text("SPLASH_SUMMARY", tableName: table)
                         .font(.subheadline)
                         .multilineTextAlignment(.center)
                         .padding(.vertical, 10)
+                    
                     Text(UIDevice.iPhone ? "FOOTER_TEXT_IPHONE" : "FOOTER_TEXT_IPAD", tableName: table)
                         .font(.subheadline)
+                    
                     Text("[\("BUTTON_TITLE".localize(table: "OBAppleID"))](https://www.apple.com/privacy)")
                         .padding(.bottom, 10)
                         .font(.subheadline)
@@ -163,6 +173,9 @@ struct OnBoardingDetailView: View {
         }
     }
     
+    /// A function that returns the value of a splash title based on the given table name.
+    /// - Parameter textTable: The `String` name of the table to use for localization.
+    /// - Returns: The `String` value of the shortened splash title from the given table variable `textTable`.
     private func splashTitle(textTable: String) -> String {
         if NSLocalizedString("SPLASH_SHORT_TITLE_WIFI", tableName: textTable, comment: "") != "SPLASH_SHORT_TITLE_WIFI" {
             return "SPLASH_SHORT_TITLE_WIFI".localize(table: textTable)

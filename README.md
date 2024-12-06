@@ -18,7 +18,7 @@ Simulator instance mode:
 ## Usage
 Open the project in Xcode and run with either a Simulator instance or a physical device running iOS with Developer Mode enabled as a destination.
 
-To switch between the simulator or physical-like view of Settings in Simulator or Preview, modify the `forcePhysical` variable on line 11 of `SettingsModel.swift` under Preferences/Models.
+To switch between the simulator or physical-like view of Settings in Simulator or Preview, modify the `forcePhysical` variable on line 12 of `SettingsModel.swift` under Preferences/Models.
 
 As this is a personal project for learning Swift and SwiftUI, feel free to download and modify the project for your own personal purposes.
 

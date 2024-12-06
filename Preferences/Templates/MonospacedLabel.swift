@@ -1,23 +1,21 @@
-//
-//  MonospacedLabel.swift
-//  Preferences
-//
+/*
+Abstract:
+An HStack container for displaying a label and information with a monospace-like format.
+*/
 
-/// An HStack container for displaying a label and information with a monospace-like format.
+import SwiftUI
+
+/// An `HStack` container for displaying a label and information with a monospace-like format.
 /// ```swift
 /// var body: some View {
 ///     List {
 ///         MonospacedLabel(title: "Address", status: "01:AB:23:4C:56:78")
 ///         MonospacedLabel(title: "Version", status: "1.0")
-///
 ///     }
 /// }
 /// ```
-/// - Parameter label: The ``String`` label text describing the label.
-/// - Parameter value: The ``String`` value to display on the opposing side of the label.
-
-import SwiftUI
-
+/// - Parameter label: The `String` label text describing the label.
+/// - Parameter value: The `String` value to display on the opposing side of the label.
 struct MonospacedLabel: View {
     var label = String()
     var value = String()

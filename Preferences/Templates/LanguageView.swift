@@ -1,12 +1,14 @@
-//
-//  LanguageView.swift
-//  Preferences
-//
-//  Settings > Apps > [App]
-//
+/*
+Abstract:
+A Section container for displaying a Language settings link.
+*/
 
 import SwiftUI
 
+/// A `Section` container for displaying a `SettingsLink` for Language settings.
+/// ```swift
+/// LanguageView()
+/// ```
 struct LanguageView: View {
     // Variables
     let table = "PSSystemPolicy"

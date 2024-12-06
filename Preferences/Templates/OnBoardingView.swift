@@ -1,14 +1,20 @@
-//
-//  OnBoardingView.swift
-//  Preferences
-//
-//  Based off of OnBoardingKit, relies to CFBundleURLTypes to fire onOpenURL.
-//  URLs do not open in Preview, use Simulator or a physical device, or
-//  manually set the variable for displaying the sheet to true.
-//
+/*
+Abstract:
+Based off of OnBoardingKit, relies on CFBundleURLTypes to fire onOpenURL.
+URLs do not open in Preview, use Simulator or a physical device, or
+manually set the variable for displaying the sheet to true.
+*/
 
 import SwiftUI
 
+/// A `ScrollView` container for displaying OnBoardingKit-like views for providing privacy information.
+/// ```swift
+/// var body: some View {
+///     OnBoardingView(table: "BatteryUI")
+/// }
+/// ```
+/// - Parameter table: The `String` table name to use for localization.
+/// - Parameter childView: The `Bool` value for whether the view is a child view.
 struct OnBoardingView: View {
     // Variables
     @Environment(\.dismiss) private var dismiss
@@ -30,6 +36,7 @@ struct OnBoardingView: View {
                             .frame(width: 80)
                             .foregroundStyle(.blue)
                     }
+                    
                     Text(splashString(table: table))
                         .font(.title2)
                         .fontWeight(.bold)
@@ -42,10 +49,12 @@ struct OnBoardingView: View {
                                     }
                             }
                         }
+                    
                     Text(summaryString(table: table))
                         .font(.footnote)
                         .multilineTextAlignment(.center)
                         .padding(.vertical, 10)
+                    
                     if isService(table: table) {
                         BulletPoint(key: bulletString(text: "FIRST_BULLET"), table: table)
                         BulletPoint(key: bulletString(text: "SECOND_BULLET"), table: table)
@@ -60,9 +69,11 @@ struct OnBoardingView: View {
                             BulletPoint(key: "FIFTH_BULLET", table: table)
                         }
                     }
+                    
                     Text(.init(footerString()))
                         .font(.caption)
                         .padding(.top, 1)
+                    
                     if !childView && table != "BatteryUI" { // Hide Learn More... link if previous view in navigation exists or BatteryUI table
                         NavigationLink("WELCOME_LEARN_MORE".localize(table: "PrivacyDisclosureUI")) {
                             OnBoardingDetailView()
@@ -110,6 +121,11 @@ struct OnBoardingView: View {
     }
     
     // MARK: Functions
+    
+    
+    /// Returns a `Bool` on whether the table has characteristics of a service.
+    /// - Parameter table: The `String` name of the table to use for localization.
+    /// - Returns: A `Bool` on whether the table is a service or not.
     private func isService(table: String) -> Bool {
         // Check if key is localized
         if NSLocalizedString("FIRST_BULLET", tableName: table, comment: "") != "FIRST_BULLET" {
@@ -125,6 +141,9 @@ struct OnBoardingView: View {
         }
     }
     
+    /// Returns the `String` value of the title based on the given table variable.
+    /// - Parameter table: The `String` name of the table to use for localization.
+    /// - Returns: The `String` value of the title.
     private func splashString(table: String) -> String {
         switch table {
         case "BatteryUI":
@@ -136,6 +155,9 @@ struct OnBoardingView: View {
         }
     }
     
+    /// Returns the `String` value of a table's summary given the table name.
+    /// - Parameter table: The `String` name of the table to use for localization.
+    /// - Returns: The `String` value of the summary.
     private func summaryString(table: String) -> String {
         switch table {
         case "BatteryUI":
@@ -147,6 +169,9 @@ struct OnBoardingView: View {
         }
     }
     
+    /// Returns the `String` value of the bullet point.
+    /// - Parameter text: The `String` value to use for holding the bullet point string.
+    /// - Returns: The `String` value of the bullet point.
     private func bulletString(text: String) -> String {
         let completeString = text
         
@@ -163,6 +188,8 @@ struct OnBoardingView: View {
         }
     }
     
+    /// Returns the `String` value of the footer text.
+    /// - Returns: The `String` value of the footer text.
     private func footerString() -> String {
         if table == "BatteryUI" {
             var formattedString = String()
@@ -184,6 +211,16 @@ struct OnBoardingView: View {
     }
 }
 
+/// An `HStack` container for displaying a bullet point from an onboarding table.
+/// ```swift
+/// var body: some View {
+///     List {
+///         BulletPoint(key: bulletString(text: "FIRST_BULLET"), table: table)
+///     }
+/// }
+/// ```
+/// - Parameter key: The `String` key to localize.
+/// - Parameter table: The `String` name of the table to use for localization.
 struct BulletPoint: View {
     let key: String
     let table: String

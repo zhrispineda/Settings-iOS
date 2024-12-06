@@ -1,17 +1,16 @@
-//
-//  SearchDetailView.swift
-//  Preferences
-//
-//  Settings > Search > [App]
-//
+/*
+Abstract:
+A View container for displaying options regarding Search with apps.
+*/
 
 import SwiftUI
 
-/// A ``View`` container for displaying options regarding Siri Suggestions and apps.
+/// A `View` container for displaying options regarding Search with apps.
 /// ```swift
 /// SearchDetailView(appName: "News")
 /// ```
-/// - Parameter appName: The ``String`` to display as the app name for the ``View``.
+/// - Parameter appName: The `String` to display as navigation title and for use in the Section footer.
+/// - Parameter appTitle: The `Bool` for whether to show the app name as the navigation title.
 struct SearchDetailView: View {
     // Variables
     @State private var showAppInSearchEnabled = true

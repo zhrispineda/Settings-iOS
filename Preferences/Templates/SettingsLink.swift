@@ -1,11 +1,11 @@
-//
-//  SettingsLink.swift
-//  Preferences
-//
+/*
+Abstract:
+A NavigationLink template for displaying a NavigationLink with a rounded icon and quick information.
+*/
 
 import SwiftUI
 
-/// A template for displaying a NavigationLink with a rounded icon and quick information.
+/// A NavigationLink template for displaying a NavigationLink with a rounded icon and quick information.
 /// ```swift
 /// var body: some View {
 ///     List {
@@ -15,25 +15,25 @@ import SwiftUI
 ///     }
 /// }
 /// ```
-/// - Parameter color: The ``Color`` of the icon's background.
-/// - Parameter iconColor: The ``Color`` of the icon.
-/// - Parameter icon: The ``String`` name of the image asset or symbol.
-/// - Parameter id: The ``String`` name of the link to display.
-/// - Parameter subtitle: An optional ``String`` below the id displaying a short summary.
-/// - Parameter status: An optional ``String`` on the opposing side displaying its current state.
-/// - Parameter badgeCount: An optional ``Int`` on the opposing side displaying a red badge with a number.
-/// - Parameter content: The destination ``Content`` for the NavigationLink.
+/// - Parameter color: The `Color` of the icon's background.
+/// - Parameter iconColor: The `Color` of the icon.
+/// - Parameter icon: The `String` name of the image asset or symbol.
+/// - Parameter id: The `String` name of the link to display.
+/// - Parameter subtitle: An optional `String` below the id displaying a short summary.
+/// - Parameter status: An optional `String` on the opposing side displaying its current state.
+/// - Parameter badgeCount: An optional `Int` on the opposing side displaying a red badge with a number.
+/// - Parameter content: The destination `Content` for the `NavigationLink`.
 struct SettingsLink<Content: View>: View {
     // Variables
     @Environment(\.colorScheme) var colorScheme
     
-    var color: Color = Color.black
-    var iconColor: Color = Color.white
-    var icon: String = String()
-    var id: String = String()
-    var subtitle: String = String()
-    var status: String = String()
-    var badgeCount: Int = 0
+    var color = Color.black
+    var iconColor = Color.white
+    var icon = String()
+    var id = String()
+    var subtitle = String()
+    var status = String()
+    var badgeCount = Int()
     @ViewBuilder var content: Content
     
     var body: some View {
