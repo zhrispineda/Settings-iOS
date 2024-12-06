@@ -139,7 +139,7 @@ struct PrivacySecurityView: View {
             
             if !UIDevice.IsSimulator {
                 Section {
-                    if Configuration().developerMode {
+                    if configuration.developerMode {
                         SettingsLink(color: .gray, icon: "hammer.fill", id: "DEVELOPER_MODE".localize(table: table), status: "Off") {
                             EmptyView()
                         }

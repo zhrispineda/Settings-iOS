@@ -194,7 +194,7 @@ struct ContentView: View {
                             SettingsLinkSection(item: appsSettings)
                             
                             // MARK: Developer
-                            if UIDevice.IsSimulator || Configuration().developerMode {
+                            if UIDevice.IsSimulator || configuration.developerMode {
                                 SettingsLinkSection(item: developerSettings)
                             }
                         }

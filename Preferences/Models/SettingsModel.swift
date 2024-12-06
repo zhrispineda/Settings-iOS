@@ -1,24 +1,29 @@
-//
-//  SettingsModel.swift
-//  Preferences
-//
+/*
+Abstract:
+A combination of structs, enums, and classes to define the structure of the app.
+*/
 
 import SwiftUI
 
 // MARK: Global variables
+/// Global variables for easy access across many views. (forceCellular, forcePhysical, developerMode)
 struct Configuration {
     let forceCellular = false
     let forcePhysical = true
     let developerMode = true
 }
 
+let configuration = Configuration()
+
 // MARK: State Manager
+/// Class for managing the state of the app's NavigationStack selection variable and destination view.
 class StateManager: ObservableObject {
     @Published var selection: SettingsModel? = .general
     @Published var destination = AnyView(GeneralView())
 }
 
-// MARK: - SettingsModel data
+// MARK: SettingsModel data
+/// Stores the title of each enum variable for use in navigation.
 enum SettingsModel: String, CaseIterable {
     case accessibility = "Accessibility"
     case actionButton = "Action Button"
@@ -55,6 +60,7 @@ enum SettingsModel: String, CaseIterable {
     case wifi = "Wi-Fi"
 }
 
+/// Common device capabilities that are checked based on the current device.
 enum Capabilities {
     case none
     case actionButton
@@ -64,6 +70,7 @@ enum Capabilities {
     case appleIntelligence
 }
 
+/// A struct for defining custom navigation links for use with sections of the app.
 struct SettingsItem<Content: View>: Identifiable {
     var id: String { title }
     let type: SettingsModel

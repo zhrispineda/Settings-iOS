@@ -1,11 +1,11 @@
-//
-//  CustomNavigationLink.swift
-//  Preferences
-//
+/*
+Abstract:
+A NavigationLink container that displays an HStack with title, subtitle, and status text.
+*/
 
 import SwiftUI
 
-/// A NavigationLink container with subtitle and status text.
+/// A NavigationLink container that displays an HStack with title, subtitle, and status text.
 /// ```swift
 /// var body: some View {
 ///     List {
@@ -16,10 +16,10 @@ import SwiftUI
 ///     }
 /// }
 /// ```
-/// - Parameter title: The ``String`` to display as the description of the ``NavigationLink``.
-/// - Parameter subtitle: The ``String`` text to display below the title.
-/// - Parameter status: The ``String`` displaying the state of the view within.
-/// - Parameter destination: A ``Content`` view destination.
+/// - Parameter title: The String to display as the description of the NavigationLink.
+/// - Parameter subtitle: The String text to display below the title.
+/// - Parameter status: The String displaying the state of the view within.
+/// - Parameter destination: The Content view destination.
 struct CustomNavigationLink<Content: View>: View {
     // Variables
     var title = String()

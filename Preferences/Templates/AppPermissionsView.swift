@@ -1,19 +1,19 @@
-//
-//  AppPermissionsView.swift
-//  Preferences
-//
+/*
+Abstract:
+A view for displaying options regarding Privacy & Security based on the given permissionName String.
+*/
 
 import SwiftUI
 
-/// A ``CustomList`` container for displaying options regarding Privacy & Security based on the given ``permissionName``.
+/// A CustomList container for displaying options regarding Privacy & Security based on the given permissionName String.
 /// ```swift
 /// AppPermissionsView(permissionName: "Contacts")
 /// ```
 /// ```swift
 /// AppPermissionsView(permissionName: "Camera", appClipPermission: "Camera")
 /// ```
-/// - Parameter permissionName: The ``String`` to display as the permission for the ``View``.
-/// - Parameter appClipsPermission: The  optional ``String`` to use when relating to App Clips.
+/// - Parameter permissionName: The String to display as the permission for the View.
+/// - Parameter appClipsPermission: The  optional String to use when relating to App Clips.
 struct AppPermissionsView: View {
     @AppStorage("PrivacyFitnessTrackingToggle") private var fitnessTracking = true
     var permissionName = String()
@@ -36,18 +36,18 @@ struct AppPermissionsView: View {
                     VStack(alignment: .leading) {
                         ZStack {
                             RoundedRectangle(cornerSize: CGSize(width: 10, height: 10))
-                                .foregroundStyle(Color(UIColor.systemGray6))
-                                .shadow(radius: 0.3)
+                                .foregroundStyle(Color(UIColor.systemGray5))
+                                .shadow(radius: 1)
                                 .frame(width: 280, height: 75)
                                 .padding(.top, 40)
                             RoundedRectangle(cornerSize: CGSize(width: 10, height: 10))
-                                .foregroundStyle(Color(UIColor.systemGray6))
-                                .shadow(radius: 0.3)
+                                .foregroundStyle(Color(UIColor.systemGray5))
+                                .shadow(radius: 1)
                                 .frame(width: 300, height: 75)
                                 .padding(.top, 20)
                             RoundedRectangle(cornerSize: CGSize(width: 10, height: 10))
-                                .foregroundStyle(Color(UIColor.systemGray6))
-                                .shadow(radius: 0.3)
+                                .foregroundStyle(Color(UIColor.systemGray5))
+                                .shadow(radius: 1)
                                 .frame(width: 320, height: 75)
                             HStack {
                                 VStack(alignment: .leading) {
@@ -203,7 +203,13 @@ struct AppPermissionsView: View {
     }
 }
 
-#Preview {
+#Preview("App Clips") {
+    NavigationStack {
+        AppPermissionsView(permissionName: "App Clips", appClipPermission: "CAMERA")
+    }
+}
+
+#Preview("Calendars") {
     NavigationStack {
         AppPermissionsView(permissionName: "CALENDARS")
     }

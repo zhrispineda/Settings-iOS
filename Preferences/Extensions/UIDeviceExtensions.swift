@@ -6,12 +6,12 @@ An extension of UIDevice to add custom functions for getting device information.
 import SwiftUI
 
 public extension UIDevice {
-    /// Returns the device storage capacity as an optional String. (e.g. "32 GB", "512 GB", "2 TB") Based off of DiskUsage key.
+    /// Returns the device storage capacity as an optional String. (e.g. "32 GB", "512 GB", "2 TB")
     static let storageCapacity: String? = {
         var diskCapacity = String()
         var formatted = String()
         
-        guard let answer = MGHelper.read(key: "uyejyEdaxNWSRQQwHmXz1A") else {
+        guard let answer = MGHelper.read(key: "uyejyEdaxNWSRQQwHmXz1A") else { // DiskUsage key
             logger.error("Could not get storage capacity information")
             return "Error"
         }
@@ -84,7 +84,7 @@ public extension UIDevice {
         
         // Fallback
         let capableDevices: Set<String> = ["iPad7,12", "iPad8,3", "iPad8,4", "iPad8,7", "iPad8,8", "iPad8,10", "iPad8,12", "iPad11,2", "iPad11,4", "iPad11,7", "iPad12,2", "iPad13,5", "iPad13,6", "iPad13,7", "iPad13,9", "iPad 13,10", "iPad13,11", "iPad13,2", "iPad13,17", "iPad13,19", "iPad14,2", "iPad14,4", "iPad14,6", "iPad14,9", "iPad14,11", "iPad16,4", "iPad16,6"]
-        return capableDevices.contains(identifier) || UIDevice.iPhone || Configuration().forceCellular
+        return capableDevices.contains(identifier) || UIDevice.iPhone || configuration.forceCellular
     }()
     
     /// Returns a Bool on whether the device is capable of Cinematic Mode.
@@ -209,11 +209,11 @@ public extension UIDevice {
     /// Returns a Bool on whether the host is a Simulator instance.
     static let IsSimulator: Bool = {
         if let answer = MGHelper.read(key: "ulMliLomP737aAOJ/w/evA") { // IsSimulator key
-            return Bool(answer)! && !Configuration().forcePhysical
+            return Bool(answer)! && !configuration.forcePhysical
         }
         
         // Fallback
-        return ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] != nil && !Configuration().forcePhysical
+        return ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] != nil && !configuration.forcePhysical
     }()
     
     /// Returns a Bool on whether the device is capable of Always On Display.
