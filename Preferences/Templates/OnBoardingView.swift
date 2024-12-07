@@ -30,6 +30,7 @@ struct OnBoardingView: View {
             ScrollView {
                 Group {
                     if isService(table: table) {
+                        // Handshake icon
                         Image(_internalSystemName: "privacy.handshake")
                             .resizable()
                             .scaledToFit()
@@ -37,8 +38,9 @@ struct OnBoardingView: View {
                             .foregroundStyle(.blue)
                     }
                     
+                    // App or service splash title
                     Text(splashString(table: table))
-                        .font(.title2)
+                        .font(.title)
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
                         .overlay { // For calculating opacity of the principal toolbar item
@@ -50,8 +52,9 @@ struct OnBoardingView: View {
                             }
                         }
                     
+                    // Summary text
                     Text(summaryString(table: table))
-                        .font(.footnote)
+                        .font(.subheadline)
                         .multilineTextAlignment(.center)
                         .padding(.vertical, 10)
                     
@@ -70,17 +73,19 @@ struct OnBoardingView: View {
                         }
                     }
                     
+                    // Footer text
                     Text(.init(footerString()))
-                        .font(.caption)
+                        .font(.footnote)
                         .padding(.top, 1)
                     
+                    // Learn more link
                     if !childView && table != "BatteryUI" { // Hide Learn More... link if previous view in navigation exists or BatteryUI table
                         NavigationLink("WELCOME_LEARN_MORE".localize(table: "PrivacyDisclosureUI")) {
                             OnBoardingDetailView()
                         }
                         .padding(.top, 20)
                         .padding(.bottom, 0)
-                        .font(.subheadline)
+                        .font(.callout)
                     }
                 }
                 .padding(.horizontal, 40)
@@ -92,6 +97,8 @@ struct OnBoardingView: View {
                     }
                 }
             }
+            .navigationTitle(splashString(table: table))
+            .navigationBarTitleDisplayMode(.inline)
             .scrollDisabled(textHeight < viewHeight)
             .toolbar {
                 if !childView {
@@ -232,13 +239,14 @@ struct BulletPoint: View {
                 .offset(y: -3.5)
                 .foregroundStyle(Color(UIColor.secondaryLabel))
             Text(key.localize(table: table))
-                .font(.caption)
+                .font(.subheadline)
                 .multilineTextAlignment(.leading)
             Spacer()
         }
+        .padding(.bottom, 3)
     }
 }
 
 #Preview {
-    OnBoardingView(table: "BatteryUI")
+    OnBoardingView(table: "OBAppleID")
 }

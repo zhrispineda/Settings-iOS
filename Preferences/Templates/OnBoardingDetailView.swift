@@ -110,6 +110,7 @@ struct OnBoardingDetailView: View {
         NavigationStack {
             List {
                 Group {
+                    // Handshake icon
                     Image(_internalSystemName: "privacy.handshake")
                         .resizable()
                         .scaledToFit()
@@ -124,16 +125,19 @@ struct OnBoardingDetailView: View {
                             }
                         }
                     
+                    // Title text
                     Text("SPLASH_TITLE", tableName: table)
                         .font(.title)
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
                     
+                    // Summary text
                     Text("SPLASH_SUMMARY", tableName: table)
                         .font(.subheadline)
                         .multilineTextAlignment(.center)
                         .padding(.vertical, 10)
                     
+                    // Device footer text
                     Text(UIDevice.iPhone ? "FOOTER_TEXT_IPHONE" : "FOOTER_TEXT_IPAD", tableName: table)
                         .font(.subheadline)
                     
@@ -141,11 +145,13 @@ struct OnBoardingDetailView: View {
                         .padding(.bottom, 10)
                         .font(.subheadline)
                 }
-                .scrollContentBackground(.hidden)
+                .frame(maxWidth: .infinity, alignment: .center)
+                .listRowBackground(Color.clear)
                 .listRowSeparator(.hidden)
                 .multilineTextAlignment(.center)
-                .frame(maxWidth: .infinity, alignment: .center)
+                .scrollContentBackground(.hidden)
                 
+                // List of apps and services with privacy tables
                 Section {
                     ForEach(tables, id: \.self) { item in
                         NavigationLink(destination: OnBoardingView(table: item, childView: true)) {
@@ -153,13 +159,13 @@ struct OnBoardingDetailView: View {
                                 .fontWeight(.semibold)
                                 .foregroundColor(Color(UIColor.label))
                         }
-                        .listRowBackground(Color(UIColor.tertiarySystemGroupedBackground))
+                        .listRowBackground(Color(UIColor.secondarySystemGroupedBackground))
                     }
                 }
             }
             .navigationTitle("PRIVACY".localize(table: "PSSystemPolicy"))
             .navigationBarTitleDisplayMode(.inline)
-            .background(colorScheme == .light ? .white : Color(UIColor.secondarySystemBackground))
+            .background(colorScheme == .light ? .white : Color(UIColor.systemBackground))
             .scrollContentBackground(.hidden)
             .contentMargins(.horizontal, 20, for: .scrollContent)
             .toolbar {
