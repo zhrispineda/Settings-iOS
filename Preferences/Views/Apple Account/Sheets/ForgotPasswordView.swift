@@ -84,10 +84,7 @@ struct ForgotPasswordView: View {
                         
                         Section {
                             TextField("SIGN_IN_USERNAME_PLACEHOLDER".localize(table: table), text: $username)
-                                .padding(.leading, guardianMode ? 15 : 20)
-                                .frame(height: 42)
-                                .background(Color(UIColor.systemGray5))
-                                .cornerRadius(10)
+                                .usernameTextStyle()
                                 .listRowBackground(Color.clear)
                                 .onAppear {
                                     if !username.isEmpty {

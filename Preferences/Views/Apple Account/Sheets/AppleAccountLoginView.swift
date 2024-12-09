@@ -26,52 +26,53 @@ struct AppleAccountLoginView: View {
         List {
             Section {
                 VStack(alignment: .center, spacing: 15) {
-                    Image("appleAccount")
+                    Image("appleAccount") // Apple Account Logo
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 100)
-                    Text("LOGIN_FORM_TITLE".localize(table: setupTable))
+                        .frame(width: 90)
+                    Text("LOGIN_FORM_TITLE".localize(table: setupTable)) // Apple Account Title
                         .font(.largeTitle)
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
-                    Text("SIGN_IN_SUBTITLE".localize(table: uiTable))
+                    Text("SIGN_IN_SUBTITLE".localize(table: uiTable)) // Apple Account Subtitle
                         .multilineTextAlignment(.center)
                 }
                 .frame(maxWidth: .infinity)
-                .padding(.horizontal, 15)
+                .padding(.horizontal, 18)
             }
             .listRowBackground(Color.clear)
-            .padding(.top, -10)
             
             Section {
                 VStack(alignment: .center) {
+                    // Email or Phone Number Text Field
                     TextField("LOGIN_FORM_TEXTFIELD_NAME".localize(table: setupTable), text: $username)
-                        .padding(.vertical)
-                        .padding(.leading, 5)
-                        .frame(height: 48)
-                        .padding(EdgeInsets(top: 0, leading: 6, bottom: 0, trailing: 6))
-                        .background(Color(UIColor.systemGray5))
-                        .cornerRadius(10)
+                        .usernameTextStyle()
+                    
                     Spacer()
+                    
+                    // Forgot password? Button
                     Button {
                         showingForgotPasswordSheet.toggle()
                     } label: {
                         Text("SIGN_IN_HELP_BUTTON_FORGOT".localize(table: uiTable))
-                            .multilineTextAlignment(.center)
                             .foregroundStyle(.accent)
+                            .frame(maxWidth: .infinity)
+                            .contentShape(Rectangle())
                     }
                     .buttonStyle(.plain)
                     .disabled(showingOptionsAlert)
+                    
                     Spacer()
+                    
+                    // Sign in a child in my Family Button
                     if !isMainSheet {
                         ZStack {
                             NavigationLink(destination: ParentGuardianSignInView()) {}
                             .opacity(0)
-                            .contentShape(Rectangle())
-                            .buttonStyle(.plain)
                             Text("SIGN_IN_FOR_CHILD_BUTTON_TITLE".localize(table: uiTable))
                                 .foregroundStyle(.accent)
                         }
+                        .disabled(showingOptionsAlert)
                     }
                 }
                 .alert("SIGN_IN_HELP_ALERT_TITLE_FORGOT_OR_CREATE".localize(table: uiTable), isPresented: $showingOptionsAlert) {
@@ -101,6 +102,7 @@ struct AppleAccountLoginView: View {
             
             Section {
                 VStack {
+                    // Privacy footer Button
                     Button {
                         showingSheet = true
                     } label: {
@@ -127,6 +129,7 @@ struct AppleAccountLoginView: View {
                     }
                     .buttonStyle(.plain)
                     
+                    // Continue Button
                     Button {
                         signingIn.toggle()
                         showingAlert.toggle()
@@ -161,7 +164,9 @@ struct AppleAccountLoginView: View {
                 }
             }
             .listRowBackground(Color.clear)
+            .padding(.top, 40)
         }
+        .padding(.top, -40)
         .navigationBarBackButtonHidden()
         .toolbar {
             if isMainSheet {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8306AE6C2D0665A400D1AE5D /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8306AE6B2D0665A400D1AE5D /* ViewExtensions.swift */; };
 		83076D022C7E73D000BFFAFE /* PiPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83076D012C7E73D000BFFAFE /* PiPView.swift */; };
 		83076D042C7E754600BFFAFE /* BackgroundAppRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83076D032C7E754600BFFAFE /* BackgroundAppRefreshView.swift */; };
 		83096BD82BA232D50082DB61 /* AppleAccountSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83096BD72BA232D50082DB61 /* AppleAccountSignInView.swift */; };
@@ -458,6 +459,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8306AE6B2D0665A400D1AE5D /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		83076D012C7E73D000BFFAFE /* PiPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiPView.swift; sourceTree = "<group>"; };
 		83076D032C7E754600BFFAFE /* BackgroundAppRefreshView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundAppRefreshView.swift; sourceTree = "<group>"; };
 		83096BD72BA232D50082DB61 /* AppleAccountSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAccountSignInView.swift; sourceTree = "<group>"; };
@@ -1315,6 +1317,7 @@
 				83585FC72C435A7B00B11C91 /* ColorExtensions.swift */,
 				83585FC92C435B6700B11C91 /* StringExtensions.swift */,
 				830989392C44AA9C00535A8F /* UIDeviceExtensions.swift */,
+				8306AE6B2D0665A400D1AE5D /* ViewExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -2474,6 +2477,7 @@
 				835683972B754EE4000FB136 /* VersionView.swift in Sources */,
 				83F516C42C21EB550004E87A /* AppsView.swift in Sources */,
 				83F78A2B2B8EA38300025062 /* PhrasesView.swift in Sources */,
+				8306AE6C2D0665A400D1AE5D /* ViewExtensions.swift in Sources */,
 				83D31F8D2B8E41110057CFDB /* TouchView.swift in Sources */,
 				83F78A282B8EA1FF00025062 /* LiveSpeechView.swift in Sources */,
 				83B893BD2B8FD82D005705A3 /* FaceAttentionView.swift in Sources */,
