@@ -9,24 +9,26 @@ import SwiftUI
 
 struct ForgotPasswordView: View {
     // Variables
+    @Environment(\.colorScheme) private var colorScheme
     @Environment(\.dismiss) private var dismiss
     @State private var username = String()
     @State private var showingFailedAlert = false
-    @State private var showingEmailSentAlert = false
-    @State var showingUnlockOptions = false
     @State var guardianMode = false
     let table = "AppleAccountUI"
     
     var body: some View {
         NavigationStack {
-            if showingUnlockOptions {
+            ZStack {
                 List {
                     VStack {
-                        Text("**Unlock Options**")
+                        Text("SIGN_IN_HELP_ALERT_TITLE_FORGOT_PASSWORD", tableName: table)
+                            .fontWeight(.bold)
                             .font(.largeTitle)
+                            .padding(.top, -20)
                             .padding(.bottom, 5)
-                        Text("Choose how you would like\nto unlock your account.")
-                            .font(.subheadline)
+                        Text("Enter your email address or phone number that you use with your account to continue.")
+                            .padding(.horizontal, -5)
+                            .padding(.bottom, -10)
                     }
                     .frame(maxWidth: .infinity)
                     .multilineTextAlignment(.center)
@@ -34,99 +36,53 @@ struct ForgotPasswordView: View {
                     .listRowSeparator(.hidden)
                     
                     Section {
+                        TextField("SIGN_IN_USERNAME_PLACEHOLDER".localize(table: table), text: $username)
+                            .usernameTextStyle()
+                            .listRowBackground(Color.clear)
+                            .onAppear {
+                                if !username.isEmpty {
+                                    dismiss()
+                                }
+                            }
+                    } footer: {
+                        if guardianMode {
+                            Text("Your privacy is important. If you‘re resetting your password on someone else‘s device, your personal information will not be saved on their device.")
+                                .padding(.top, -10)
+                                .padding(.horizontal)
+                        }
+                    }
+                    .padding(.horizontal, guardianMode ? -20 : -20)
+                    .offset(y: -10)
+                }
+                .background(colorScheme == .light ? .white : Color(UIColor.systemBackground))
+                .scrollContentBackground(.hidden)
+                .padding(.top, -15)
+                
+                VStack {
+                    Spacer()
+                    ZStack {
                         Button {
-                            showingEmailSentAlert.toggle()
+                            showingFailedAlert.toggle()
                         } label: {
-                            HStack {
-                                Text("Unlock By Email")
-                                    .foregroundStyle(Color["Label"])
-                                Spacer()
-                                if showingEmailSentAlert {
-                                    ProgressView()
-                                } else {
-                                    Image(systemName: "chevron.right")
-                                        .foregroundStyle(.secondary)
-                                }
-                            }
+                            Text("SIGN_IN_BUTTON_CONTINUE".localize(table: table))
+                                .fontWeight(.medium)
+                                .font(.headline)
+                                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                                .background(username.count < 1 ? Color(UIColor.systemGray5) : Color.blue)
+                                .clipShape(RoundedRectangle(cornerRadius: 15))
+                                .padding(.horizontal, 40)
+                                .frame(height: 50)
+                                .foregroundStyle(username.count < 1 ? Color(UIColor.systemGray) : Color.white)
+                                .disabled(username.count < 1)
                         }
-                        .alert("Unlock Email Sent",
-                               isPresented: $showingEmailSentAlert
-                        ) {
-                            Button {
-                                showingEmailSentAlert.toggle()
-                                dismiss()
-                            } label: {
-                                Text("OK".localize(table: table))
-                            }
+                        .alert("Cannot Reset Password", isPresented: $showingFailedAlert) {
+                            Button("OK", role: .cancel) {}
                         } message: {
-                            Text("Follow the directions in the email to unlock your account.")
+                            Text("This Apple Account is not valid or not supported.")
                         }
                     }
                 }
-                .navigationBarBackButtonHidden()
-            } else {
-                ZStack {
-                    List {
-                        VStack {
-                            Text("SIGN_IN_HELP_ALERT_TITLE_FORGOT_PASSWORD".localize(table: table))
-                                .fontWeight(.bold)
-                                .font(.largeTitle)
-                                .padding(.top, -20)
-                                .padding(.bottom, 5)
-                            Text("Enter your email address or phone number that you use with your account to continue.")
-                                .padding(.horizontal, -5)
-                                .padding(.bottom, -10)
-                        }
-                        .frame(maxWidth: .infinity)
-                        .multilineTextAlignment(.center)
-                        .listRowBackground(Color.clear)
-                        .listRowSeparator(.hidden)
-                        
-                        Section {
-                            TextField("SIGN_IN_USERNAME_PLACEHOLDER".localize(table: table), text: $username)
-                                .usernameTextStyle()
-                                .listRowBackground(Color.clear)
-                                .onAppear {
-                                    if !username.isEmpty {
-                                        dismiss()
-                                    }
-                                }
-                        } footer: {
-                            if guardianMode {
-                                Text("Your privacy is important. If you‘re resetting your password on someone else‘s device, your personal information will not be saved on their device.")
-                                    .padding(.top, -10)
-                                    .padding(.horizontal)
-                            }
-                        }
-                        .padding(.horizontal, guardianMode ? -20 : -20)
-                        .offset(y: -10)
-                    }
-                    
-                    VStack {
-                        Spacer()
-                        ZStack {
-                            Button {
-                                showingFailedAlert.toggle()
-                                //ForgotPasswordView(showingUnlockOptions: true)
-                            } label: {
-                                Text("SIGN_IN_BUTTON_CONTINUE".localize(table: table))
-                                    .fontWeight(.medium)
-                                    .font(.headline)
-                                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-                                    .background(username.count < 1 ? Color(UIColor.systemGray5) : Color.blue)
-                                    .foregroundStyle(username.count < 1 ? Color(UIColor.systemGray) : Color.white)
-                                    .cornerRadius(15)
-                                    .padding(.horizontal, 40)
-                                    .disabled(username.count < 1)
-                                    .frame(height: 50)
-                            }
-                            .alert("Cannot Reset Password", isPresented: $showingFailedAlert) {} message: {
-                                Text("This Apple Account is not valid or not supported.")
-                            }
-                        }
-                    }
-                    .padding(.bottom, 50)
-                }
+                .padding(.bottom, 50)
             }
         }
         .toolbar {
