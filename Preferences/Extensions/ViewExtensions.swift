@@ -18,7 +18,7 @@ struct UsernameTextStyle: ViewModifier {
             .autocorrectionDisabled()
             .frame(height: 45)
             .padding(.leading, 20)
-            .background(Color(UIColor.systemGray5))
+            .background(Color(UIColor.systemGray6))
             .clipShape(RoundedRectangle(cornerRadius: 10))
     }
 }

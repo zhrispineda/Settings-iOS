@@ -159,7 +159,7 @@ struct OnBoardingDetailView: View {
                                 .fontWeight(.semibold)
                                 .foregroundColor(Color(UIColor.label))
                         }
-                        .listRowBackground(Color(UIColor.secondarySystemGroupedBackground))
+                        .listRowBackground(Color(colorScheme == .light ? UIColor.systemGray6 : UIColor.secondarySystemGroupedBackground))
                     }
                 }
             }

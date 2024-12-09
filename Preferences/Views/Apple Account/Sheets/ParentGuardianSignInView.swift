@@ -9,8 +9,10 @@ import SwiftUI
 
 struct ParentGuardianSignInView: View {
     // Variables
+    @Environment(\.colorScheme) private var colorScheme
     @State private var signingIn = false
     @State private var showingAlert = false
+    @State private var showingSheet = false
     @State private var showingOptionsAlert = false
     @State private var username = String()
     let setupTable = "AppleIDSetup"
@@ -39,12 +41,7 @@ struct ParentGuardianSignInView: View {
             Section {
                 VStack(alignment: .center) {
                     TextField("LOGIN_FORM_TEXTFIELD_NAME".localize(table: setupTable), text: $username)
-                        .padding(.vertical)
-                        .padding(.leading, 5)
-                        .frame(height: 48)
-                        .padding(EdgeInsets(top: 0, leading: 6, bottom: 0, trailing: 6))
-                        .background(Color(UIColor.systemGray5))
-                        .cornerRadius(10)
+                        .usernameTextStyle()
                     Spacer()
                 }
                 Spacer()
@@ -56,7 +53,7 @@ struct ParentGuardianSignInView: View {
             Section {
                 VStack {
                     Button {
-                        // Empty
+                        showingSheet = true
                     } label: {
                         VStack {
                             Image(_internalSystemName: "privacy.handshake")
@@ -69,6 +66,9 @@ struct ParentGuardianSignInView: View {
                                 .multilineTextAlignment(.center)
                                 .font(.caption2)
                                 .foregroundStyle(.gray)
+                                .sheet(isPresented: $showingSheet) {
+                                    OnBoardingView(table: "OBAppleID")
+                                }
                         }
                     }
                     .buttonStyle(.plain)
@@ -108,6 +108,8 @@ struct ParentGuardianSignInView: View {
             }
             .listRowBackground(Color.clear)
         }
+        .background(colorScheme == .light ? .white : Color(UIColor.systemBackground))
+        .scrollContentBackground(.hidden)
     }
 }
 

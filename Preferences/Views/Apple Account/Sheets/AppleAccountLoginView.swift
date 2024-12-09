@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AppleAccountLoginView: View {
     // Variables
+    @Environment(\.colorScheme) private var colorScheme
     @Environment(\.dismiss) private var dismiss
     @State var isMainSheet = false
     @State private var signingIn = false
@@ -117,11 +118,6 @@ struct AppleAccountLoginView: View {
                                 .multilineTextAlignment(.center)
                                 .font(.caption2)
                                 .foregroundStyle(.gray)
-                                .onOpenURL { url in
-                                    if url.scheme == "appleAccountSettingsOBK" {
-                                        showingSheet = true
-                                    }
-                                }
                                 .sheet(isPresented: $showingSheet) {
                                     OnBoardingView(table: "OBAppleID")
                                 }
@@ -167,6 +163,8 @@ struct AppleAccountLoginView: View {
             .padding(.top, 40)
         }
         .padding(.top, -40)
+        .background(colorScheme == .light ? .white : Color(UIColor.systemBackground))
+        .scrollContentBackground(.hidden)
         .navigationBarBackButtonHidden()
         .toolbar {
             if isMainSheet {

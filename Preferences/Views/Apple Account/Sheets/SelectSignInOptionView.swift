@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SelectSignInOptionView: View {
     // Variables
+    @Environment(\.colorScheme) private var colorScheme
     @Environment(\.dismiss) private var dismiss
     @State private var showingAlert = false
     let table = "AppleIDSetup"
@@ -30,61 +31,29 @@ struct SelectSignInOptionView: View {
             .frame(maxWidth: .infinity, alignment: .center)
             .padding(.bottom, 0)
             
-            // Use Another Apple Device button
+            // Use Another Apple Device Button
             Section {
-                VStack {
-                    Button {
-                        dismiss()
-                    } label: {
-                        HStack {
-                            Image("ProximitySymbol-iPhone-iPad")
-                                .resizable()
-                                .scaledToFit()
-                                .foregroundStyle(.blue)
-                                .frame(width: 64)
-                            VStack(alignment: .leading) {
-                                Text("SIGN_IN_OPTION_ANOTHER_DEVICE_TITLE", tableName: table)
-                                    .bold()
-                                Text("SIGN_IN_OPTION_ANOTHER_DEVICE_SUBTITLE", tableName: table)
-                                    .font(.subheadline)
-                                    .foregroundStyle(.secondary)
-                            }
-                            .padding(5)
-                            Spacer()
-                            Image(systemName: "chevron.right")
-                                .imageScale(.small)
-                                .foregroundStyle(.tertiary)
-                        }
-                        .foregroundStyle(Color["Label"])
-                    }
+                Button {
+                    dismiss()
+                } label: {
+                    SignInMethodButton(image: "ProximitySymbol-iPhone-iPad", title: "SIGN_IN_OPTION_ANOTHER_DEVICE_TITLE", subtitle: "SIGN_IN_OPTION_ANOTHER_DEVICE_SUBTITLE", table: table)
                 }
+                .listRowBackground(Color(colorScheme == .light ? UIColor.systemGray6 : UIColor.secondarySystemGroupedBackground))
             }
             
             // Sign in Manually button
             Section {
-                VStack {
-                    NavigationLink {
-                        AppleAccountLoginView()
-                    } label: {
-                        HStack {
-                            Image(systemName: "ellipsis.rectangle")
-                                .foregroundStyle(.blue)
-                                .font(.system(size: 40))
-                                .frame(width: 70)
-                            VStack(alignment: .leading) {
-                                Text("DISCOVERING_VIEW_BUTTON_SIGN_IN_MANUAL", tableName: table)
-                                    .bold()
-                                Text("SIGN_IN_OPTION_ENTER_PASSWORD_SUBTITLE", tableName: table)
-                                    .font(.subheadline)
-                                    .foregroundStyle(.secondary)
-                            }
-                            .padding(5)
-                        }
-                    }
+                NavigationLink {
+                    AppleAccountLoginView()
+                } label: {
+                    SignInMethodButton(image: "ellipsis.rectangle", title: "DISCOVERING_VIEW_BUTTON_SIGN_IN_MANUAL", subtitle: "SIGN_IN_OPTION_ENTER_PASSWORD_SUBTITLE", table: table)
                 }
+                .listRowBackground(Color(colorScheme == .light ? UIColor.systemGray6 : UIColor.secondarySystemGroupedBackground))
             }
         }
         .padding(.top, -25)
+        .background(colorScheme == .light ? .white : Color(UIColor.systemBackground))
+        .scrollContentBackground(.hidden)
         .contentMargins(.horizontal, UIDevice.iPad ? 50 : 15, for: .scrollContent)
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
@@ -118,6 +87,7 @@ struct SelectSignInOptionView: View {
     }
 }
 
+// Apple Account Dotted Ring Header
 struct animatedHeader: View {
     var body: some View {
         ZStack {
@@ -146,6 +116,7 @@ struct animatedHeader: View {
     }
 }
 
+// Animated Apple Account Dots
 struct animatedDots: View {
     let delay: Double
     @State private var animating = false
@@ -179,6 +150,48 @@ struct animatedDots: View {
             }
         }
         .frame(width: 360, height: 360)
+    }
+}
+
+struct SignInMethodButton: View {
+    let image: String
+    let title: String
+    let subtitle: String
+    let table: String
+    
+    var body: some View {
+        HStack {
+            // Check if icon is an SF Symbol or an image asset
+            if UIImage(systemName: image) != nil {
+                Image(systemName: image)
+                    .foregroundStyle(.blue)
+                    .font(.system(size: 40))
+                    .frame(width: 65)
+            } else {
+                Image(image)
+                    .resizable()
+                    .scaledToFit()
+                    .foregroundStyle(.blue)
+                    .frame(width: 64)
+            }
+            
+            VStack(alignment: .leading) {
+                Text(title.localize(table: table))
+                    .bold()
+                Text(subtitle.localize(table: table))
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
+            }
+            .padding(5)
+            
+            if UIImage(systemName: image) == nil {
+                Spacer()
+                Image(systemName: "chevron.right")
+                    .imageScale(.small)
+                    .foregroundStyle(.tertiary)
+            }
+        }
+        .foregroundStyle(Color["Label"])
     }
 }
 
