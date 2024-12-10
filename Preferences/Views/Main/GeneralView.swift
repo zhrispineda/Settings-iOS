@@ -14,7 +14,7 @@ struct GeneralView: View {
     let table = "General"
     
     var body: some View {
-        CustomList(title: "Back") {
+        CustomList(title: "back".localize(table: "AXUILocalizedStrings")) {
             Section {
                 Placard(title: "General".localize(table: table), color: Color.gray, icon: "gear", description: "PLACARD_SUBTITLE".localize(table: "GeneralSettingsUI"), frameY: $frameY, opacity: $opacity)
             }

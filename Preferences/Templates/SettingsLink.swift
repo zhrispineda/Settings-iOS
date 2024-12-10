@@ -110,7 +110,7 @@ struct SettingsLink<Content: View>: View {
                         Image(systemName: "location.fill")
                             .foregroundStyle(.gray)
                     } else {
-                        Text(status)
+                        Text(.init(status))
                             .lineLimit(1)
                             .foregroundStyle(.secondary)
                     }

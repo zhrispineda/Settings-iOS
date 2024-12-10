@@ -15,12 +15,12 @@ struct VPNDeviceManagementView: View {
         if UIDevice.IsSimulator {
             Color(UIColor.systemGroupedBackground)
                 .ignoresSafeArea()
-                .navigationTitle("VPN & Device Management")
+                .navigationTitle("VPN_DEVICE_MANAGEMENT".localize(table: "General"))
                 .onAppear {
                     dismiss()
                 }
         } else {
-            CustomList(title: "VPN & Device Management") {
+            CustomList(title: "VPN_DEVICE_MANAGEMENT".localize(table: "General")) {
                 Section {
                     SettingsLabel(color: .blue, icon: "network.connected.to.line.below", id: "VPN", status: "Not Connected")
                 }

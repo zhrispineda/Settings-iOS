@@ -62,7 +62,7 @@ struct SettingsLabel: View {
             
             if !status.isEmpty {
                 Spacer()
-                Text(status)
+                Text(.init(status))
                     .foregroundStyle(.secondary)
             }
             

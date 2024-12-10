@@ -15,10 +15,10 @@ struct PrivacySecurityView: View {
     
     var body: some View {
         CustomList(title: "Back") {
-            Placard(title: "PRIVACY".localize(table: table), color: .blue, icon: "hand.raised.fill", description: "Control which apps can access your data, location, camera, and microphone, and manage safety protections. [Learn more...](https://support.apple.com/guide/iphone/use-built-in-privacy-and-security-protections-iph6e7d349d1/ios)", frameY: $frameY, opacity: $opacity)
+            Placard(title: "PRIVACY".localize(table: table), color: .blue, icon: "hand.raised.fill", description: "Control which apps can access your data, location, camera, and microphone, and manage safety protections. [\("LEARN_MORE_ELLIPSIS".localize(table: "AppleAccountUI"))](https://support.apple.com/guide/iphone/use-built-in-privacy-and-security-protections-iph6e7d349d1/ios)", frameY: $frameY, opacity: $opacity)
             
             Section {
-                SettingsLink(color: .blue, icon: "location.fill", id: "LOCATION_SERVICES".localize(table: table), subtitle: "None") {
+                SettingsLink(color: .blue, icon: "location.fill", id: "LOCATION_SERVICES".localize(table: table), subtitle: "CONTACTS_NO_ACCESS_AUTHORIZATION".localize(table: table)) {
                     LocationServicesView()
                 }
                 SettingsLink(color: .orange, icon: "app.connected.to.app.below.fill", id: "TRACKERS".localize(table: table), status: "0") {
@@ -33,32 +33,32 @@ struct PrivacySecurityView: View {
                 SettingsLink(icon: "appleContacts", id: "CONTACTS".localize(table: table), subtitle: "CONTACTS_NO_ACCESS_AUTHORIZATION".localize(table: table)) {
                     AppPermissionsView(permissionName: "CONTACTS")
                 }
-                SettingsLink(icon: "appleFiles", id: "FILEACCESS".localize(table: table), subtitle: "None") {
+                SettingsLink(icon: "appleFiles", id: "FILEACCESS".localize(table: table), subtitle: "CONTACTS_NO_ACCESS_AUTHORIZATION".localize(table: table)) {
                     AppPermissionsView(permissionName: "FILEACCESS")
                 }
-                SettingsLink(color: .indigo, icon: "moon.fill", id: "FOCUS".localize(table: table), subtitle: "None") {
+                SettingsLink(color: .indigo, icon: "moon.fill", id: "FOCUS".localize(table: table), subtitle: "CONTACTS_NO_ACCESS_AUTHORIZATION".localize(table: table)) {
                     AppPermissionsView(permissionName: "FOCUS")
                 }
-                SettingsLink(icon: "appleHealth", id: "HEALTH".localize(table: table), subtitle: "None") {
+                SettingsLink(icon: "appleHealth", id: "HEALTH".localize(table: table), subtitle: "CONTACTS_NO_ACCESS_AUTHORIZATION".localize(table: table)) {
                     AppPermissionsView(permissionName: "HEALTH")
                 }
-                SettingsLink(icon: "appleHome", id: "WILLOW".localize(table: table), subtitle: "None") {
+                SettingsLink(icon: "appleHome", id: "WILLOW".localize(table: table), subtitle: "CONTACTS_NO_ACCESS_AUTHORIZATION".localize(table: table)) {
                     AppPermissionsView(permissionName: "WILLOW")
                 }
-                SettingsLink(icon: "appleMusic", id: "MEDIALIBRARY".localize(table: table), subtitle: "None") {
+                SettingsLink(icon: "appleMusic", id: "MEDIALIBRARY".localize(table: table), subtitle: "CONTACTS_NO_ACCESS_AUTHORIZATION".localize(table: table)) {
                     AppPermissionsView(permissionName: "MEDIALIBRARY")
                 }
-                SettingsLink(color: .gray, icon: "person.badge.key.fill", id: "PASSKEYS".localize(table: table), subtitle: "None") {
+                SettingsLink(color: .gray, icon: "person.badge.key.fill", id: "PASSKEYS".localize(table: table), subtitle: "CONTACTS_NO_ACCESS_AUTHORIZATION".localize(table: table)) {
                     AppPermissionsView(permissionName: "PASSKEYS")
                 }
                 SettingsLink(icon: "applePhotos", id: "PHOTOS".localize(table: table), subtitle: "PHOTOS_NO_ACCESS_AUTHORIZATION".localize(table: table)) {
                     AppPermissionsView(permissionName: "PHOTOS")
                 }
-                SettingsLink(icon: "appleReminders", id: "REMINDERS".localize(table: table), subtitle: "None") {
+                SettingsLink(icon: "appleReminders", id: "REMINDERS".localize(table: table), subtitle: "CONTACTS_NO_ACCESS_AUTHORIZATION".localize(table: table)) {
                     AppPermissionsView(permissionName: "REMINDERS")
                 }
                 if UIDevice.iPhone {
-                    SettingsLink(icon: "appleWallet", id: "WALLET".localize(table: table), subtitle: "None") {
+                    SettingsLink(icon: "appleWallet", id: "WALLET".localize(table: table), subtitle: "CONTACTS_NO_ACCESS_AUTHORIZATION".localize(table: table)) {
                         AppPermissionsView(permissionName: "WALLET")
                     }
                 }
@@ -108,7 +108,7 @@ struct PrivacySecurityView: View {
             
             if UIDevice.iPhone {
                 Section {
-                    SettingsLink(color: .white, iconColor: .blue, icon: "person.badge.shield.checkmark.fill", id: "Safety Check") {
+                    SettingsLink(color: .white, iconColor: .blue, icon: "person.badge.shield.checkmark.fill", id: "SAFETY_CHECK".localize(table: "DigitalSeparationUI")) {
                         SafetyCheckView()
                     }
                 } footer: {
@@ -121,7 +121,7 @@ struct PrivacySecurityView: View {
                     SensitiveContentWarningView()
                 }
             } footer: {
-                Text("Detect nude photos and videos before they are viewed on your \(UIDevice.current.model), and receive guidance to help make a safe choice. Apple does not have access to the photos or videos. [Learn more...](https://support.apple.com/en-us/105071)")
+                Text(.init("Detect nude photos and videos before they are viewed on your Device, and receive guidance to help make a safe choice. Apple does not have access to the photos or videos. [Learn more…](%@)".localize(table: "CommunicationSafetySettingsUI", "https://support.apple.com/en-us/105071")))
             }
             
             Section {
@@ -140,7 +140,7 @@ struct PrivacySecurityView: View {
             if !UIDevice.IsSimulator {
                 Section {
                     if configuration.developerMode {
-                        SettingsLink(color: .gray, icon: "hammer.fill", id: "DEVELOPER_MODE".localize(table: table), status: "Off") {
+                        SettingsLink(color: .gray, icon: "hammer.fill", id: "DEVELOPER_MODE".localize(table: table), status: "Off".localize(table: table)) {
                             EmptyView()
                         }
                     }

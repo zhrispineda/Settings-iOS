@@ -58,7 +58,7 @@ struct KeyboardView: View {
                 }
                 Toggle("Show Math Results", isOn: $showMathResults)
                 Toggle("Check Spelling", isOn: $checkSpellingEnabled)
-                Toggle("Enable Caps Lock", isOn: $capsLockEnabled)
+                Toggle("Enable Caps Lock".localize(table: "General"), isOn: $capsLockEnabled)
                 if UIDevice.iPad {
                     Toggle("Shortcuts", isOn: $shortcutsEnabled)
                 }

@@ -11,6 +11,7 @@ import Charts
 struct StorageView: View {
     // Variables
     @State private var searchText = String()
+    let table = "General"
     
     // Data
     struct StorageData {
@@ -28,12 +29,12 @@ struct StorageView: View {
     }
     
     var body: some View {
-        CustomList(title: "\(UIDevice.current.model) Storage") {
+        CustomList(title: "DEVICE_STORAGE".localize(table: table)) {
             // Graph Section
             Section {
                 VStack {
                     HStack {
-                        Text("\(UIDevice.current.model)")
+                        Text("THIS_DEVICE", tableName: table)
                         Spacer()
                         Text("65.62 GB of \(UIDevice.storageCapacity ?? getTotalStorage()!) used")
                             .font(.subheadline)

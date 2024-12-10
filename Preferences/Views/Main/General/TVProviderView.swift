@@ -12,26 +12,27 @@ struct TVProviderView: View {
     @State private var searchable = String()
     let providers = ["AT&T U-verse", "CenturyLink Prism", "Cox", "DIRECTV", "DIRECTV STREAM", "DISH", "Frontier", "Hulu", "Mediacom", "Optimum", "Optimum TV", "Sling TV", "Spectrum", "Verizon Fios", "Xfinity"]
     let characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ#".map(String.init)
+    let table = "VideoSubscriberAccount"
     
     var body: some View {
         ZStack {
-            CustomList(title: "TV Provider", topPadding: true) {
+            CustomList(title: "TV_PROVIDER_TITLE".localize(table: table), topPadding: true) {
                 Section {
                     ForEach(providers, id: \.self) { provider in
                         Button(provider) {}
                             .foregroundStyle(.primary)
                     }
                 } header: {
-                    Text("Watch TV shows and movies from apps included in your TV subscription. Select your TV provider to get started.").textCase(nil)
+                    Text("IDENTITY_PROVIDER_PICKER_HEADER", tableName: table).textCase(nil)
                 }
                 
                 // TODO: Remaining TV Providers
                 
                 Section {
-                    Button("Other TV Provider Regions...") {}
+                    Button("REGIONS_PICKER_OTHER_REGIONS_ROW_TITLE".localize(table: table)) {}
                         .foregroundStyle(.primary)
                 } footer: {
-                    Text("If you don‘t see your TV provider, sign in directly from the app you want to use.\n\n[About TV Provider & Privacy...](#)")
+                    Text("IDENTITY_PROVIDER_PICKER_SETTINGS_FOOTER", tableName: table) + Text("\n\n[\("BUTTON_TITLE".localize(table: "TVProvider"))](#)")
                 }
             }
             .searchable(text: $searchable, placement: .toolbar)
@@ -45,9 +46,9 @@ struct TVProviderView: View {
             }
             .foregroundStyle(.accent)
             .fontWeight(.semibold)
-            .font(.system(size: 13))
+            .font(.system(size: 11))
             .frame(maxWidth: .infinity, alignment: .trailing)
-            .padding(.trailing, 10)
+            .padding(.trailing, 1)
         }
     }
 }
