@@ -1,0 +1,2535 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "EXTERNAL_AI_MODEL_FOOTER_MDM_RESTRICTED_IPAD": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your parent or guardian has turned off ChatGPT integration features on this iPad."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "부모 또는 보호자가 이 iPad의 ChatGPT 통합 기능을 껐습니다."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ההורה או האפוטרופוס שלך כיבה את מאפייני השילוב של ChatGPT ב-iPad זה."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Orang tua atau wali Anda telah mematikan fitur integrasi ChatGPT di iPad ini."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vanhempasi tai huoltajasi on laittanut ChatGPT-integroinnin pois päältä tässä iPadissa."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ebeveyniniz veya vasiniz, bu iPad’de ChatGPT entegrasyonu özelliklerini kapatmış."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Je ouder of voogd heeft de ChatGPT-integratiefuncties op deze iPad uitgeschakeld."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ваш родитель или опекун выключил функции интеграции ChatGPT на этом iPad."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A szülője vagy gondviselője kikapcsolta a ChatGPT-integráció funkcióit ezen az iPaden."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un genitore o un tutore ha disattivato le funzionalità di integrazione di ChatGPT su questo iPad."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ο γονέας ή κηδεμόνας σας έχει απενεργοποιήσει τις δυνατότητες ενσωμάτωσης ChatGPT σε αυτό το iPad."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alguno de tus padres o tutores desactivó las funciones de la integración de ChatGPT en este iPad."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un pare, una mare o una persona responsable de la tutela ha desactivat les funcions del ChatGPT a l’iPad."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أوقف أحد الوالدين أو ولي الأمر ميزات تكامل ChatGPT على هذا الـ iPad."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Votre parent ou tuteur a désactivé les fonctionnalités d’intégration de ChatGPT sur cet iPad."
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你的家長或監護人已在此iPad上關閉ChatGPT整合功能。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Din förälder eller vårdnadshavare har stängt av funktioner för ChatGPT-integrering på denna iPad."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forelderen eller vergen din har slått av ChatGPT-integrerings­funksjonene på denne iPaden."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "आपके माता-पिता या अभिभावक ने इस iPad पर ChatGPT इंटिग्रेशन फ़ीचर को बंद कर रखा है।"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Din forælder eller værge har slået funktioner til integration af ChatGPT fra på denne iPad."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your parent or guardian has turned off ChatGPT integration features on this iPad."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rodzic lub opiekun wyłączył integrację z ChatGPT na tym iPadzie."
+          }
+        },
+        "yue_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "父母或监护人已关闭此iPad上的ChatGPT集成功能。"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ผู้ปกครองหรือผู้ดูแลของคุณได้ปิดใช้คุณสมบัติการผสานรวมกับ ChatGPT บน iPad เครื่องนี้"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "父母或监护人已关闭此iPad上的ChatGPT集成功能。"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你的家長或監護人已關閉此iPad上的ChatGPT整合功能。"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your parent or guardian has turned off ChatGPT integration features on this iPad."
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Šiame „iPad“ įrenginyje vienas iš tėvų arba globėjas išjungė „ChatGPT“ integravimą."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alguno de tus padres o tutores desactivó las funciones de la integración de ChatGPT en este iPad."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funkce využívající integraci ChatGPT na tomto iPadu vypnul rodič nebo opatrovník."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rodič alebo zákonný zástupca vypol funkcie integrácie modelu ChatGPT na tomto iPade."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ibu bapa atau penjaga anda telah menyahaktifkan ciri integrasi ChatGPT pada iPad ini."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вашият родител или настойник изключи интеграцията на ChatGPT на този iPad."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your parent or guardian has turned off ChatGPT integration features on this iPad."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eden od staršev ali skrbnik je izklopil možnosti integracije mehanizma ChatGPT v tem iPadu."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die erziehungsberechtigte Person hat die Funktionen zur ChatGPT-Integration auf diesem iPad deaktiviert."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cha mẹ hoặc người giám hộ của bạn đã tắt các tính năng tích hợp ChatGPT trên iPad này."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Părintele sau tutorele dvs. a dezactivat funcționalitățile de integrare ChatGPT pe acest iPad."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tu padre, madre o tutor ha desactivado las funciones de integración de ChatGPT en este iPad."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ата-анаңыз немесе қамқоршыңыз осы iPad құрылғысында ChatGPT интеграциясының функцияларын өшірді."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un parent ou un tuteur a désactivé les fonctionnalités d’intégration de ChatGPT sur cet iPad."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ваші батьки чи опікуни вимкнули функції інтеграції ChatGPT на цьому iPad."
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A pessoa responsável por você desativou as funcionalidades de integração do ChatGPT neste iPad."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vaš roditelj ili skrbnik isključio je značajke integracije ChatGPT-ja na ovom iPadu."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "親/保護者によってこのiPadでは“ChatGPT統合”がオフになりました。"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Um dos pais ou tutor desativou as funcionalidades de integração do ChatGPT neste iPad."
+          }
+        }
+      }
+    },
+    "EXTERNAL_AI_MODEL_FOOTER_IPHONE": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri and other features can use ChatGPT to help answer your requests."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "사용자의 요청에 응답하기 위해 Siri 및 기타 기능이 ChatGPT를 사용할 수 있습니다."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ל-Siri ולמאפיינים נוספים יש אפשרות להשתמש ב-ChatGPT כדי לסייע במענה לבקשות שלך."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri dan fitur lainnya dapat menggunakan ChatGPT untuk membantu menjawab permintaan Anda."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri ja muut ominaisuudet voivat käyttää ChatGPT:tä apuna vastatessaan pyyntöihisi."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri ve diğer özellikler, isteklerinizi yanıtlamaya yardımcı olmak için ChatGPT’yi kullanabilir."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri en andere functies kunnen ChatGPT gebruiken om je vragen te beantwoorden."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri и другие функции могут использовать ChatGPT для поиска ответов на Ваши запросы."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri és más funkciók használhatják a ChatGPT‑t az Ön kéréseinek megválaszolására."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri e altre funzionalità possono utilizzare ChatGPT come aiuto per rispondere alle tue richieste."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το Siri και άλλες δυνατότητες μπορούν να χρησιμοποιούν το ChatGPT για να απαντούν στα αιτήματά σας."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri y otras funciones pueden usar ChatGPT para ayudar a procesar tus peticiones."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri i altres funcions poden fer servir el ChatGPT per respondre les teves peticions."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "بإمكان Siri وميزات أخرى استخدام ChatGPT للمساعدة في الاستجابة لطلباتك."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri et d’autres fonctionnalités peuvent utiliser ChatGPT pour répondre à vos demandes."
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri和其他功能可以使用ChatGPT來幫助回答你的要求。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri och andra funktioner kan använda ChatGPT till att svara på dina förfrågningar."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri og andre funksjoner kan bruke ChatGPT til å svare på spørsmålene dine."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "आपके अनुरोधों का जवाब देने में मदद के लिए Siri और अन्य फ़ीचर द्वारा ChatGPT का इस्तेमाल किया जा सकता है।"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri og andre funktioner kan bruge ChatGPT til at hjælpe med at besvare dine anmodninger."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri and other features can use ChatGPT to help answer your requests."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT może pomagać Siri i innym funkcjom w udzielaniu odpowiedzi na Twoje pytania."
+          }
+        },
+        "yue_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri和其他功能可借助ChatGPT回答你的请求。"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri และคุณสมบัติอื่นๆ สามารถใช้ ChatGPT เพื่อช่วยตอบคำขอของคุณได้"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri和其他功能可借助ChatGPT回答你的请求。"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri和其他功能可以使用ChatGPT來協助回答你的要求。"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri and other features can use ChatGPT to help answer your requests."
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„Siri“ ir kitos funkcijos gali naudoti „ChatGPT“ jūsų užklausoms vykdyti."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri y otras funciones pueden usar ChatGPT para ayudar a procesar tus peticiones."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri a další funkce můžou při přípravě odpovědí na vaše požadavky využívat ChatGPT."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri a ďalšie funkcie môžu pri odpovediach na vaše žiadosti používať ChatGPT."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri dan ciri lain boleh menggunakan ChatGPT untuk membantu menjawab permintaan anda."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri и други функции могат да използват ChatGPT, за да отговарят на заявките ви."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri and other features can use ChatGPT to help answer your requests."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri in druge funkcije lahko za pomoč pri odgovarjanju na vaše zahteve uporabljajo ChatGPT."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri und andere Funktionen können ChatGPT verwenden, um deine Anfragen zu beantworten."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri và các tính năng khác có thể sử dụng ChatGPT để giúp trả lời yêu cầu của bạn."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri și alte funcționalități pot apela la ChatGPT pentru a răspunde solicitărilor dvs."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri y otras funciones pueden usar ChatGPT para responder a tus peticiones."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri көмекшісі мен басқа функциялар сұрауларыңызға жауап беру үшін ChatGPT сервисін пайдалана алады."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri et d’autres fonctionnalités peuvent utiliser ChatGPT pour répondre à vos requêtes."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri та інші функції можуть використовувати ChatGPT для відповідей на ваші запити."
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Siri e outros recursos podem usar o ChatGPT para ajudar a responder aos seus pedidos."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri i Siri druge značajke mogu koristiti ChatGPT kao pomoć u odgovaranju na vaše zahtjeve."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siriやその他の機能でChatGPTを使用して、あなたのリクエストに答えることができます。"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri e outras funcionalidades podem usar o ChatGPT para responder aos seus pedidos."
+          }
+        }
+      }
+    },
+    "EXTERNAL_AI_MODEL_FOOTER_CHILD_RESTRICTED": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT is only available if you are 13 or older."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT는 13세 이상의 사용자만 사용할 수 있습니다."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "‏ChatGPT זמין רק למשתמשים מגיל 13 ומעלה."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT hanya tersedia jika Anda berumur 13 tahun ke atas."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT on saatavilla vain, jos olet vähintään 13-vuotias."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT’yi yalnızca 13 yaşında veya daha büyükseniz kullanabilirsiniz."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT is alleen beschikbaar als je 13 jaar of ouder bent."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT доступен только тем, кому уже исполнилось 13 лет."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A ChatGPT csak 13 életévüket betöltött felhasználók számára elérhető."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT è disponibile solo a partire dai 13 anni."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το ChatGPT είναι διαθέσιμο μόνο για άτομα 13 ετών ή άνω."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT solamente está disponible si tienes más de 13 años."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El ChatGPT només està disponible a partir dels 13 anys."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "‏ChatGPT متاح لمن أعمارهم ١٣ سنة فما فوق فقط."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT n’est disponible que si vous avez au moins 13 ans."
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT只適用於13歲或以上人士。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT är endast tillgängligt om du är 13 år eller äldre."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT er tilgjengelig hvis du er 13 år eller eldre."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT केवल ^[13](formatNumber: true) साल से अधिक उम्र के लोगों के लिए उपलब्ध है।"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT er kun tilgængelig, hvis du er 13 år eller ældre."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT is only available if you are 13 or older."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT jest dostępny dla osób, które ukończyły 13 lat."
+          }
+        },
+        "yue_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT仅适用于年满13岁的用户。"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT มีเฉพาะเมื่อคุณอายุ 13 ปีขึ้นไป"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT仅适用于年满13岁的用户。"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT僅適用於年滿13歲的使用者。"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT is only available if you are 13 or older."
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„ChatGPT“ prieinamas tik 13 metų ar vyresniems naudotojams."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT solamente está disponible si tienes más de 13 años."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT je k dispozici od 13 let."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT je k dispozícii len pre užívateľov starších ako 13 rokov."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT hanya tersedia jika anda berusia 13 tahun atau lebih tua."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT е достъпен само ако сте на или над 13 години."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT is only available if you are aged 13 years or older."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT je na voljo samo za uporabnike, stare 13 let ali več."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT ist nur für Personen ab 13 Jahren verfügbar."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT chỉ khả dụng nếu bạn đủ 13 tuổi trở lên."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Serviciul ChatGPT este disponibil doar pentru persoanele cu vârsta de cel puțin 13 ani."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT solo está disponible si tienes más de 13 años."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT тек 13 жасқа толған пайдаланушылар үшін қолжетімді."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT n’est disponible que pour les personnes de plus de 13 ans."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT доступний для користувачів віком від 13 років."
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O ChatGPT está disponível apenas para pessoas com 13 anos ou mais."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT dostupan je samo ako imate 13 ili više godina."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPTは13歳以上の方のみが対象です。"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O ChatGPT está disponível apenas para maiores de 13 anos."
+          }
+        }
+      }
+    },
+    "EXTERNAL_AI_MODEL_GROUP": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Extensions"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "확장 프로그램"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "הרחבות"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ekstensi"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Laajennukset"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Genişletmeler"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Extensies"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Расширения"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bővítmények"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Estensioni"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Επεκτάσεις"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Extensiones"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Extensions"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الملحقات"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Extensions"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "延伸功能"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tillägg"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Utvidelser"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "एक्सटेंशन"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Udvidelser"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Extensions"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rozszerzenia"
+          }
+        },
+        "yue_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "扩展"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ส่วนขยาย"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "扩展"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "延伸功能"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Extensions"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Plėtiniai"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Extensiones"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rozšíření"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rozšírenia"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sambungan"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Разширения"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Extensions"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Razširitve"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Erweiterungen"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Phần mở rộng"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Extensii"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Extensiones"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Кеңейтімдер"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Extensions"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Розширення"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Extensões"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ekstenzije"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "拡張"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Extensões"
+          }
+        }
+      }
+    },
+    "EXTERNAL_AI_MODEL_NAME": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "‏ChatGPT"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT"
+          }
+        },
+        "yue_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT"
+          }
+        }
+      }
+    },
+    "EXTERNAL_AI_MODEL_FOOTER_MDM_RESTRICTED_IPHONE": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your parent or guardian has turned off ChatGPT integration features on this iPhone."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "부모 또는 보호자가 이 iPhone의 ChatGPT 통합 기능을 껐습니다."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ההורה או האפוטרופוס שלך כיבה את מאפייני השילוב של ChatGPT ב-iPhone זה."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Orang tua atau wali Anda telah mematikan fitur integrasi ChatGPT di iPhone ini."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vanhempasi tai huoltajasi on laittanut ChatGPT-integroinnin pois päältä tässä iPhonessa."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ebeveyniniz veya vasiniz, bu iPhone’da ChatGPT entegrasyonu özelliklerini kapatmış."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Je ouder of voogd heeft de ChatGPT-integratiefuncties op deze iPhone uitgeschakeld."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ваш родитель или опекун выключил функции интеграции ChatGPT на этом iPhone."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A szülője vagy gondviselője kikapcsolta a ChatGPT-integráció funkcióit ezen az iPhone‑on."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un genitore o un tutore ha disattivato le funzionalità di integrazione di ChatGPT su questo iPhone."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ο γονέας ή κηδεμόνας σας έχει απενεργοποιήσει τις δυνατότητες ενσωμάτωσης ChatGPT σε αυτό το iPhone."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alguno de tus padres o tutores desactivó las funciones de la integración de ChatGPT en este iPhone."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un pare, una mare o una persona responsable de la tutela ha desactivat les funcions del ChatGPT a l’iPhone."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أوقف أحد الوالدين أو ولي الأمر ميزات تكامل ChatGPT على هذا الـ iPhone."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Votre parent ou tuteur a désactivé les fonctionnalités d’intégration de ChatGPT sur cet iPhone."
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你的家長或監護人已在此iPhone上關閉ChatGPT整合功能。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Din förälder eller vårdnadshavare har stängt av funktioner för ChatGPT-integrering på denna iPhone."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Forelderen eller vergen din har slått av ChatGPT-integrerings­funksjonene på denne iPhonen."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "आपके माता-पिता या अभिभावक ने इस iPhone पर ChatGPT इंटिग्रेशन फ़ीचर को बंद कर रखा है।"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Din forælder eller værge har slået funktioner til integration af ChatGPT fra på denne iPhone."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your parent or guardian has turned off ChatGPT integration features on this iPhone."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rodzic lub opiekun wyłączył integrację z ChatGPT na tym iPhonie."
+          }
+        },
+        "yue_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "父母或监护人已关闭此iPhone上的ChatGPT集成功能。"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ผู้ปกครองหรือผู้ดูแลของคุณได้ปิดใช้คุณสมบัติการผสานรวมกับ ChatGPT บน iPhone เครื่องนี้"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "父母或监护人已关闭此iPhone上的ChatGPT集成功能。"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你的家長或監護人已關閉此iPhone上的ChatGPT整合功能。"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your parent or guardian has turned off ChatGPT integration features on this iPhone."
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Šiame „iPhone“ įrenginyje vienas iš tėvų arba globėjas išjungė „ChatGPT“ integravimą."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alguno de tus padres o tutores desactivó las funciones de la integración de ChatGPT en este iPhone."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funkce využívající integraci ChatGPT na tomto iPhonu vypnul rodič nebo opatrovník."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rodič alebo zákonný zástupca vypol funkcie integrácie modelu ChatGPT na tomto iPhone."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ibu bapa atau penjaga anda telah menyahaktifkan ciri integrasi ChatGPT pada iPhone ini."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вашият родител или настойник изключи интеграцията на ChatGPT на този iPhone."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your parent or guardian has turned off ChatGPT integration features on this iPhone."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eden od staršev ali skrbnik je izklopil možnosti integracije mehanizma ChatGPT v tem iPhonu."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die erziehungsberechtigte Person hat die Funktionen zur ChatGPT-Integration auf diesem iPhone deaktiviert."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cha mẹ hoặc người giám hộ của bạn đã tắt các tính năng tích hợp ChatGPT trên iPhone này."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Părintele sau tutorele dvs. a dezactivat funcționalitățile de integrare ChatGPT pe acest iPhone."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tu padre, madre o tutor ha desactivado las funciones de integración de ChatGPT en este iPhone."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ата-анаңыз немесе қамқоршыңыз осы iPhone құрылғысында ChatGPT интеграциясының функцияларын өшірді."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un parent ou un tuteur a désactivé les fonctionnalités d’intégration de ChatGPT sur cet iPhone."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ваші батьки чи опікуни вимкнули функції інтеграції ChatGPT на цьому iPhone."
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A pessoa responsável por você desativou as funcionalidades de integração com o ChatGPT neste iPhone."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vaš roditelj ili skrbnik isključio je značajke integracije ChatGPT-ja na ovom iPhoneu."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "親/保護者によってこのiPhoneでは“ChatGPT統合”がオフになりました。"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Um dos pais ou tutor desativou as funcionalidades de integração do ChatGPT neste iPhone."
+          }
+        }
+      }
+    },
+    "EXTERNAL_AI_OFF_LABEL": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Off"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "끔"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "כבוי"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mati"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pois"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kapalı"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uit"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Выключено"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ki"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Όχι"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desactivado"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desactivat"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "متوقف"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Non"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "關閉"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Av"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Av"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "बंद"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fra"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Off"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wył."
+          }
+        },
+        "yue_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "关闭"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ปิด"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "关闭"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "關閉"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Off"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Išjungta"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desactivado"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vypnuto"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vypnuté"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tak Aktif"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Изкл."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Off"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Izklopljeno"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aus"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tắt"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dezactivat"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desactivado"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Өшірулі"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Non"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вимкнено"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desativado"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Isključeno"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "オフ"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desativado"
+          }
+        }
+      }
+    },
+    "EXTERNAL_AI_MODEL_FOOTER_IPAD": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri and other features can use ChatGPT to help answer your requests."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "사용자의 요청에 응답하기 위해 Siri 및 기타 기능이 ChatGPT를 사용할 수 있습니다."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ל-Siri ולמאפיינים נוספים יש אפשרות להשתמש ב-ChatGPT כדי לסייע במענה לבקשות שלך."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri dan fitur lainnya dapat menggunakan ChatGPT untuk membantu menjawab permintaan Anda."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri ja muut ominaisuudet voivat käyttää ChatGPT:tä apuna vastatessaan pyyntöihisi."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri ve diğer özellikler, isteklerinizi yanıtlamaya yardımcı olmak için ChatGPT’yi kullanabilir."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri en andere functies kunnen ChatGPT gebruiken om je vragen te beantwoorden."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri и другие функции могут использовать ChatGPT для поиска ответов на Ваши запросы."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri és más funkciók használhatják a ChatGPT‑t az Ön kéréseinek megválaszolására."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri e altre funzionalità possono utilizzare ChatGPT come aiuto per rispondere alle tue richieste."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Το Siri και άλλες δυνατότητες μπορούν να χρησιμοποιούν το ChatGPT για να απαντούν στα αιτήματά σας."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri y otras funciones pueden usar ChatGPT para ayudar a procesar tus peticiones."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri i altres funcions poden fer servir el ChatGPT per respondre les teves peticions."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "بإمكان Siri وميزات أخرى استخدام ChatGPT للمساعدة في الاستجابة لطلباتك."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri et d’autres fonctionnalités peuvent utiliser ChatGPT pour répondre à vos demandes."
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri和其他功能可以使用ChatGPT來幫助回答你的要求。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri och andra funktioner kan använda ChatGPT till att svara på dina förfrågningar."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri og andre funksjoner kan bruke ChatGPT til å svare på spørsmålene dine."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "आपके अनुरोधों का जवाब देने में मदद के लिए Siri और अन्य फ़ीचर द्वारा ChatGPT का इस्तेमाल किया जा सकता है।"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri og andre funktioner kan bruge ChatGPT til at hjælpe med at besvare dine anmodninger."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri and other features can use ChatGPT to help answer your requests."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ChatGPT może pomagać Siri i innym funkcjom w udzielaniu odpowiedzi na Twoje pytania."
+          }
+        },
+        "yue_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri和其他功能可借助ChatGPT回答你的请求。"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri และคุณสมบัติอื่นๆ สามารถใช้ ChatGPT เพื่อช่วยตอบคำขอของคุณได้"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri和其他功能可借助ChatGPT回答你的请求。"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri和其他功能可以使用ChatGPT來協助回答你的要求。"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri and other features can use ChatGPT to help answer your requests."
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "„Siri“ ir kitos funkcijos gali naudoti „ChatGPT“ jūsų užklausoms vykdyti."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri y otras funciones pueden usar ChatGPT para ayudar a procesar tus peticiones."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri a další funkce můžou při přípravě odpovědí na vaše požadavky využívat ChatGPT."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri a ďalšie funkcie môžu pri odpovediach na vaše žiadosti používať ChatGPT."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri dan ciri lain boleh menggunakan ChatGPT untuk membantu menjawab permintaan anda."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri и други функции могат да използват ChatGPT, за да отговарят на заявките ви."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri and other features can use ChatGPT to help answer your requests."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri in druge funkcije lahko za pomoč pri odgovarjanju na vaše zahteve uporabljajo ChatGPT."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri und andere Funktionen können ChatGPT verwenden, um deine Anfragen zu beantworten."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri và các tính năng khác có thể sử dụng ChatGPT để giúp trả lời yêu cầu của bạn."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri și alte funcționalități pot apela la ChatGPT pentru a răspunde solicitărilor dvs."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri y otras funciones pueden usar ChatGPT para responder a tus peticiones."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri көмекшісі мен басқа функциялар сұрауларыңызға жауап беру үшін ChatGPT сервисін пайдалана алады."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri et d’autres fonctionnalités peuvent utiliser ChatGPT pour répondre à vos requêtes."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri та інші функції можуть використовувати ChatGPT для відповідей на ваші запити."
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Siri e outros recursos podem usar o ChatGPT para ajudar a responder aos seus pedidos."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri i Siri druge značajke mogu koristiti ChatGPT kao pomoć u odgovaranju na vaše zahtjeve."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siriやその他の機能でChatGPTを使用して、あなたのリクエストに答えることができます。"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Siri e outras funcionalidades podem usar o ChatGPT para responder aos seus pedidos."
+          }
+        }
+      }
+    },
+    "EXTERNAL_AI_UNAVAILABLE_LABEL": {
+      "extractionState": "manual",
+      "localizations": {
+        "en_IN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unavailable"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "사용할 수 없음"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "לא זמין"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tidak Tersedia"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ei käytettävissä"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kullanılamıyor"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Niet beschikbaar"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Недоступно"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nem érhető el"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Non disponibile"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Δεν διατίθεται"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No disponible"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No disponible"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "غير متاح"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Non disponible"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "無法使用"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inte tillgängligt"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ikke tilgjengelig"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "अनुपलब्ध"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ikke tilgængelig"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unavailable"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Niedostępne"
+          }
+        },
+        "yue_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "不可用"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ไม่มี"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "不可用"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "無法使用"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unavailable"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Neprieinama"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No disponible"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Není k dispozici"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nedostupné"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tidak Tersedia"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Недостъпно"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unavailable"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ni na voljo"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nicht verfügbar"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Không khả dụng"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Indisponibil"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No disponible"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Қолжетімсіз"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Non disponible"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Недоступно"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Indisponível"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nije dostupno"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "使用できません"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Indisponível"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

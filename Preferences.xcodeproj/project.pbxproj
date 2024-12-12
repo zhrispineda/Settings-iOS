@@ -200,6 +200,7 @@
 		8373E7342B9162BD004285EA /* ScreenDistanceSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8373E7332B9162BD004285EA /* ScreenDistanceSheetView.swift */; };
 		8373E7362B91660F004285EA /* SensitivePhotosVideosProtectionSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8373E7352B91660F004285EA /* SensitivePhotosVideosProtectionSheetView.swift */; };
 		8373E7382B9168C9004285EA /* CommunicationSafetyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8373E7372B9168C9004285EA /* CommunicationSafetyView.swift */; };
+		8374886F2D0A6EB400865CA8 /* AssistantSettings-ExternalAIModel.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8374886E2D0A6EB400865CA8 /* AssistantSettings-ExternalAIModel.xcstrings */; };
 		837659742CDD7C5000616457 /* SecurityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837659732CDD7C5000616457 /* SecurityView.swift */; };
 		837936142CDBE03F0020557B /* DTDisplayZoom.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 837936132CDBE03F0020557B /* DTDisplayZoom.xcstrings */; };
 		837936162CDBE68B0020557B /* VideoSubscriberAccount.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 837936152CDBE68B0020557B /* VideoSubscriberAccount.xcstrings */; };
@@ -653,6 +654,7 @@
 		8373E7332B9162BD004285EA /* ScreenDistanceSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenDistanceSheetView.swift; sourceTree = "<group>"; };
 		8373E7352B91660F004285EA /* SensitivePhotosVideosProtectionSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensitivePhotosVideosProtectionSheetView.swift; sourceTree = "<group>"; };
 		8373E7372B9168C9004285EA /* CommunicationSafetyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicationSafetyView.swift; sourceTree = "<group>"; };
+		8374886E2D0A6EB400865CA8 /* AssistantSettings-ExternalAIModel.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "AssistantSettings-ExternalAIModel.xcstrings"; sourceTree = "<group>"; };
 		837659732CDD7C5000616457 /* SecurityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityView.swift; sourceTree = "<group>"; };
 		837936132CDBE03F0020557B /* DTDisplayZoom.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = DTDisplayZoom.xcstrings; sourceTree = "<group>"; };
 		837936152CDBE68B0020557B /* VideoSubscriberAccount.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = VideoSubscriberAccount.xcstrings; sourceTree = "<group>"; };
@@ -1900,6 +1902,7 @@
 				83DBCE082CCD9B0800B33277 /* AssistantMultilingualDetail.xcstrings */,
 				83E160752CD022170020DC85 /* AssistantSettings-GM.xcstrings */,
 				838FE8CC2CB60A3300FDB1A8 /* AssistantSettings.xcstrings */,
+				8374886E2D0A6EB400865CA8 /* AssistantSettings-ExternalAIModel.xcstrings */,
 			);
 			path = AssistantSettingsSupport;
 			sourceTree = "<group>";
@@ -2126,6 +2129,7 @@
 				837C9DF62CC835EB00A7080F /* FullKeyboardAccessSettings.xcstrings in Resources */,
 				831C1A522CCE9F9000866498 /* MultitaskingAndGesturesSettings.xcstrings in Resources */,
 				8355C8222CE53B710067D675 /* ImproveMaps.xcstrings in Resources */,
+				8374886F2D0A6EB400865CA8 /* AssistantSettings-ExternalAIModel.xcstrings in Resources */,
 				83F745BC2CC194F900FDB3BA /* AirDropSettings.xcstrings in Resources */,
 				83FF692F2CC6C9CF00D77FBB /* LocalizedStrings-D94.xcstrings in Resources */,
 				832877E12CAD9A2C00013B0B /* BatteryUI.xcstrings in Resources */,

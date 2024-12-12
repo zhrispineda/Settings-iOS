@@ -52,7 +52,7 @@ struct VersionView: View {
         guard let mobileGestalt = UIDevice.checkDevice(),
               let cacheExtra = mobileGestalt["CacheExtra"] as? [String: AnyObject],
               let buildVersion = cacheExtra["mZfUC7qo4pURNhyMHZ62RQ"] as? String else { // BuildVersion key
-            return "22B91" // Fallback
+            return "22C152" // Fallback
         }
         return buildVersion
     }

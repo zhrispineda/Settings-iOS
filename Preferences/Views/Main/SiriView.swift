@@ -33,6 +33,7 @@ struct SiriView: View {
     
     let table = "AssistantSettings"
     let gmTable = "AssistantSettings-GM"
+    let exTable = "AssistantSettings-ExternalAIModel"
     
     init() {
         try? Tips.configure()
@@ -40,21 +41,23 @@ struct SiriView: View {
     
     var body: some View {
         CustomList {
+            // MARK: Placard Section
             if UIDevice.IntelligenceCapability {
                 Section {
                     Placard(title: "Apple Intelligence & Siri".localize(table: table), icon: "appleIntelligence", description: UIDevice.iPhone ? "PLACARD_DESCRIPTION_GM".localize(table: gmTable) : "PLACARD_DESCRIPTION_GM_IPAD".localize(table: gmTable), frameY: $frameY, opacity: $opacity)
                     if !UIDevice.IsSimulator {
-                        //Button("GM_WAITLIST_SPECIFIER_TITLE".localize(table: gmTable)) {}
+                        Button("GM_WAITLIST_SPECIFIER_TITLE".localize(table: gmTable)) {}
                     }
                 } footer: {
-//                    if !UIDevice.IsSimulator {
-//                        Text("GM_MODEL_NOT_YET_QUEUED", tableName: gmTable)
-//                    }
+                    if !UIDevice.IsSimulator {
+                        Text("GM_MODEL_NOT_YET_QUEUED", tableName: gmTable)
+                    }
                 }
             } else {
                 Placard(title: "ASSISTANT".localize(table: table), icon: "appleSiri", description: "PLACARD_DESCRIPTION".localize(table: table), frameY: $frameY, opacity: $opacity)
             }
             
+            // MARK: TipKit Section
             Section {
                 TipView(AppleIntelligenceTip())
                     .tipBackground(Color.background)
@@ -74,6 +77,7 @@ struct SiriView: View {
                     .padding(.leading, 70)
             }
             
+            // MARK: Siri Requests Section
             Section {
                 if !UIDevice.IsSimulator {
                     CustomNavigationLink(title: "ACTIVATION_COMPACT".localize(table: table), status: "ACTIVATION_OFF".localize(table: table), destination: EmptyView())
@@ -115,6 +119,18 @@ struct SiriView: View {
                 Text(.init(UIDevice.IsSimulator ? "[\("SIRI_REQUESTS_ABOUT_LINK_TEXT".localize(table: table))](#)" : "\("SIRI_REQUESTS_DEVICE_PROCESSING_FOOTER_TEXT_IPHONE".localize(table: table))" + " [\("SIRI_REQUESTS_ABOUT_LINK_TEXT".localize(table: table))](#)"))
             }
             
+            // MARK: Extensions Section
+            if UIDevice.IntelligenceCapability {
+                Section {
+                    NavigationLink("EXTERNAL_AI_MODEL_NAME".localize(table: exTable)) {}
+                } header: {
+                    Text("EXTERNAL_AI_MODEL_GROUP", tableName: exTable)
+                } footer: {
+                    Text(UIDevice.iPhone ? "EXTERNAL_AI_MODEL_FOOTER_IPHONE" : "EXTERNAL_AI_MODEL_FOOTER_IPAD", tableName: exTable)
+                }
+            }
+            
+            // MARK: Suggestions Section
             Section {
                 Toggle("SUGGESTIONS_SHOW_BEFORE_SEARCHING".localize(table: table), isOn: $showSuggestionsEnabled)
                 Button("SUGGESTIONS_RESET_HIDDEN_NAME".localize(table: table)) { UIDevice.iPhone ? showingResetHiddenSuggestionsAlert.toggle() : showingResetHiddenSuggestionsPopup.toggle() }
@@ -138,12 +154,13 @@ struct SiriView: View {
                 Text("SUGGESTIONS_FOOTER", tableName: table)
             }
             
+            // MARK: Apple Intelligence and Siri App Access Section
             Section {
                 SettingsLink(color: .white, iconColor: .blue, icon: "appclip", id: "APP_CLIPS".localize(table: table)) {
                     SiriAppClipsView()
                 }
                 SettingsLink(icon: "appleHome Screen & App Library", id: "APPS_GROUP".localize(table: table)) {
-                    CustomList(title: "APPS") {
+                    CustomList(title: "APPS".localize(table: table)) {
                         ForEach(apps, id: \.self) { app in
                             SettingsLink(icon: "apple\(app)", id: app) {
                                 SiriDetailView(appName: app, title: app)
@@ -165,6 +182,7 @@ struct SiriView: View {
         }
     }
     
+    // Discover Apple Intelligence Tip Struct
     struct AppleIntelligenceTip: Tip {
         var title: Text {
             Text("Discover Apple Intelligence")
