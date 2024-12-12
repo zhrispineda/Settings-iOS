@@ -411,6 +411,8 @@
 		83F3611A2CD2D3E300041A72 /* CommunicationSafetySettingsUI.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83F361192CD2D3E300041A72 /* CommunicationSafetySettingsUI.xcstrings */; };
 		83F3611C2CD2E25700041A72 /* AppleAdvertising.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83F3611B2CD2E25700041A72 /* AppleAdvertising.xcstrings */; };
 		83F3611E2CD2E48100041A72 /* MomentsOnboardingAndSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83F3611D2CD2E48100041A72 /* MomentsOnboardingAndSettings.xcstrings */; };
+		83F388632D0B6E8500085103 /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F388622D0B6E8500085103 /* IconView.swift */; };
+		83F388652D0B777000085103 /* InstalledApps.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83F388642D0B777000085103 /* InstalledApps.xcstrings */; };
 		83F3F6A12B7D12B6003CC310 /* DictionaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3F6A02B7D12B6003CC310 /* DictionaryView.swift */; };
 		83F3F6A32B7D1454003CC310 /* VPNDeviceManagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3F6A22B7D1454003CC310 /* VPNDeviceManagementView.swift */; };
 		83F3F6A52B7D16F6003CC310 /* GameControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3F6A42B7D16F6003CC310 /* GameControllerView.swift */; };
@@ -867,6 +869,8 @@
 		83F361192CD2D3E300041A72 /* CommunicationSafetySettingsUI.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = CommunicationSafetySettingsUI.xcstrings; sourceTree = "<group>"; };
 		83F3611B2CD2E25700041A72 /* AppleAdvertising.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AppleAdvertising.xcstrings; sourceTree = "<group>"; };
 		83F3611D2CD2E48100041A72 /* MomentsOnboardingAndSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = MomentsOnboardingAndSettings.xcstrings; sourceTree = "<group>"; };
+		83F388622D0B6E8500085103 /* IconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
+		83F388642D0B777000085103 /* InstalledApps.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InstalledApps.xcstrings; sourceTree = "<group>"; };
 		83F3F6A02B7D12B6003CC310 /* DictionaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryView.swift; sourceTree = "<group>"; };
 		83F3F6A22B7D1454003CC310 /* VPNDeviceManagementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNDeviceManagementView.swift; sourceTree = "<group>"; };
 		83F3F6A42B7D16F6003CC310 /* GameControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControllerView.swift; sourceTree = "<group>"; };
@@ -1573,6 +1577,7 @@
 				8340A3C42CB0CEDC005ED66A /* MonospacedLabel.swift */,
 				83ED6B7B2CDF35750022D04C /* OnBoardingView.swift */,
 				834718E92CDFEE53002D9BC9 /* OnBoardingDetailView.swift */,
+				83F388622D0B6E8500085103 /* IconView.swift */,
 			);
 			path = Templates;
 			sourceTree = "<group>";
@@ -1751,6 +1756,7 @@
 				8388C0B12CD473DB00FA7D4C /* WellnessDashboard-Localizable.xcstrings */,
 				832877FA2CAEEA7E00013B0B /* WiFiKitUILocalizableStrings.xcstrings */,
 				8317AB202CEE736B00989F15 /* iBooksSettings.xcstrings */,
+				83F388642D0B777000085103 /* InstalledApps.xcstrings */,
 			);
 			path = Ungrouped;
 			sourceTree = "<group>";
@@ -2298,6 +2304,7 @@
 				83E748B22CC6BDDE0081D660 /* LocalizedStrings.xcstrings in Resources */,
 				83C79BA32CE3D54700F49B4F /* AppleMusicFriends.xcstrings in Resources */,
 				8383BE062CE44EFA00B8C68E /* FaceTime.xcstrings in Resources */,
+				83F388652D0B777000085103 /* InstalledApps.xcstrings in Resources */,
 				83A422342CAC60B100EED538 /* CameraSettings-4k120.xcstrings in Resources */,
 				83C3F33B2CC2B25100AE2402 /* Date & Time.xcstrings in Resources */,
 				832877FB2CAEEA7E00013B0B /* WiFiKitUILocalizableStrings.xcstrings in Resources */,
@@ -2368,6 +2375,7 @@
 				83F3F6A12B7D12B6003CC310 /* DictionaryView.swift in Sources */,
 				83D3FB232C8102B200268E54 /* ContactsView.swift in Sources */,
 				83B5504E2C165A85002DA622 /* BatteryView.swift in Sources */,
+				83F388632D0B6E8500085103 /* IconView.swift in Sources */,
 				8356839B2B755AB3000FB136 /* KeyboardView.swift in Sources */,
 				838C232E2B7497530053D4C5 /* AboutView.swift in Sources */,
 				837F1DCB2B8AEF1A00665EAB /* DownloadsView.swift in Sources */,

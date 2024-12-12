@@ -27,32 +27,9 @@ struct Placard: View {
     var body: some View {
         VStack(spacing: 10) {
             ZStack {
-                Image(systemName: "app.fill")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 64)
-                    .foregroundStyle(UIImage(systemName: icon) != nil || icon == "bluetooth" ? color : .black)
-                if UIImage(systemName: icon) != nil {
-                    Image(systemName: icon)
-                        .font(.system(size: icon == "personalhotspot" ? 30 : 42))
-                        .foregroundStyle(icon == "touchid" ? .pink : iconColor)
-                } else if icon == "bluetooth" {
-                    Image(_internalSystemName: icon)
-                        .foregroundStyle(.white)
-                        .font(.system(size: 36))
-                } else {
-                    Image(icon)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 64)
-                        .mask {
-                            Image(systemName: "app.fill")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 64)
-                                .foregroundStyle(.black)
-                        }
-                }
+                IconView(icon: icon, color: color, iconColor: iconColor)
+                    .scaleEffect(2.1)
+                    .frame(width: 64, height: 64)
                 
                 if title == "Apple Intelligence & Siri" {
                     ZStack {

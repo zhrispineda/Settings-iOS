@@ -9,6 +9,7 @@ import SwiftUI
 
 struct GeneralView: View {
     // Variables
+    @Environment(\.colorScheme) var colorScheme
     @State private var opacity: Double = 0
     @State private var frameY: Double = 0
     let table = "General"
@@ -35,7 +36,7 @@ struct GeneralView: View {
             
             if !UIDevice.IsSimulator {
                 Section {
-                    SettingsLink(color: Color.white, icon: "appleCare", id: "COVERAGE".localize(table: table)) {
+                    SettingsLink(color: Color(red: 208/255, green: 30/255, blue: 42/255), icon: "apple.logo", id: "COVERAGE".localize(table: table)) {
                         AppleCareWarrantyView()
                     }
                 }
@@ -43,7 +44,7 @@ struct GeneralView: View {
             
             if !UIDevice.IsSimulator {
                 Section {
-                    SettingsLink(color: .white, iconColor: .blue, icon: "airdrop", id: "AIRDROP".localize(table: table)) {
+                    SettingsLink(color: colorScheme == .dark ? .blue : .white, iconColor: .blue, icon: "airdrop", id: "AIRDROP".localize(table: table)) {
                         AirDropView()
                     }
                     SettingsLink(color: .blue, icon: "airplay.video", id: "CONTINUITY".localize(table: table)) {

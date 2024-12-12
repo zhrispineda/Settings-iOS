@@ -10,21 +10,25 @@ import SwiftUI
 struct AppsView: View {
     // Variables
     @State private var searchText = String()
-    let apps = ["Books", "Calendar", "Contacts", "Files", "Fitness", "Health", "Maps", "Messages", "News", "Passwords", "Photos", "Reminders", "Safari", "Shortcuts", "Translate"]
+    let apps = ["App Store", "Books", "Calendar", "Contacts", "Files", "Fitness", "Health", "Maps", "Messages", "News", "Passwords", "Photos", "Reminders", "Safari", "Shortcuts", "Translate"]
     let simulatorApps = ["Calendar", "Contacts", "Files", "Fitness", "Health", "Maps", "Messages", "News", "Passwords", "Photos", "Reminders", "Safari", "Shortcuts"]
     var groupedApps: [String: [String]] {
         Dictionary(grouping: UIDevice.IsSimulator ? simulatorApps : apps, by: { String($0.prefix(1)) })
     }
     let letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ#"
+    let table = "InstalledApps"
     
     var body: some View {
         ScrollViewReader { proxy in
-            CustomList(title: "Apps") {
+            CustomList(title: "Apps".localize(table: table)) {
+                SettingsLink(color: .gray, icon: "checkmark.rectangle.stack.fill", id: "Default Apps".localize(table: table), subtitle: "Manage default apps on device".localize(table: table)) {}
                 ForEach(groupedApps.keys.sorted(), id: \.self) { key in
                     Section(key) {
                         ForEach(groupedApps[key]!, id: \.self) { app in
                             SettingsLink(icon: "apple\(app)", id: app) {
                                 switch app {
+                                case "App Store":
+                                    AppStoreView()
                                 case "Books":
                                     BooksView()
                                 case "Calendar":
@@ -62,23 +66,16 @@ struct AppsView: View {
                         }
                     }
                 }
-                SettingsLink(color: .gray, icon: "square.dashed", id: "Hidden Apps") {
+                SettingsLink(color: .gray, icon: "square.dashed", id: "Hidden Apps".localize(table: table)) {
                     ContentUnavailableView(
-                        "No Hidden Apps",
+                        "No Hidden Apps".localize(table: table),
                         systemImage: "square.stack.3d.up.slash.fill",
-                        description: Text("No hidden apps found.")
+                        description: Text("No hidden apps found.", tableName: table)
                     )
                 }
             }
-            .searchable(text: $searchText, placement: .toolbar)
+            .searchable(text: $searchText, placement: UIDevice.iPhone ? .navigationBarDrawer(displayMode: .always) : .toolbar)
             .scrollIndicators(.hidden)
-            .toolbar {
-                if UIDevice.iPad {
-                    ToolbarItem(placement: .principal) {
-                        Text(String()) // Keep navigation title for subviews but hide on iPadOS
-                    }
-                }
-            }
             .overlay {
                 HStack {
                     Spacer()

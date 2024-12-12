@@ -25,8 +25,6 @@ import SwiftUI
 /// - Parameter content: The destination `Content` for the `NavigationLink`.
 struct SettingsLink<Content: View>: View {
     // Variables
-    @Environment(\.colorScheme) var colorScheme
-    
     var color = Color.black
     var iconColor = Color.white
     var icon = String()
@@ -39,60 +37,12 @@ struct SettingsLink<Content: View>: View {
     var body: some View {
         NavigationLink(destination: content) {
             HStack(spacing: 15) {
+                // Icon
                 if icon != "None" {
-                    ZStack {
-                        // Background of icon
-                        if icon == "Placeholder" && colorScheme == .dark {
-                            Image(systemName: "app.fill")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 30)
-                                .foregroundStyle(.black.gradient)
-                        } else {
-                            Image(systemName: "app.fill")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 30)
-                                .foregroundStyle(color)
-                        }
-                        
-                        // Check if icon is an SF Symbol or an image asset
-                        if UIImage(systemName: icon) != nil {
-                            Image(systemName: icon)
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: smallerIcons.contains(icon) ? (icon == "appletvremote.gen4.fill" ? 8 : 13) : 20)
-                                .symbolRenderingMode(hierarchyIcons.contains(icon) ? .hierarchical : .none)
-                                .foregroundStyle(iconColor)
-                        } else if icon.contains("custom") {
-                            Image(icon)
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: smallerIcons.contains(icon) ? 13 : 20)
-                                .foregroundStyle(.gray, .white)
-                        } else if internalIcons.contains(icon) {
-                            Image(_internalSystemName: icon)
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: smallerIcons.contains(icon) ? 13 : 20)
-                                .symbolRenderingMode(hierarchyIcons.contains(icon) ? .hierarchical : .none)
-                                .foregroundStyle(iconColor)
-                                .scaleEffect(CGSize(width: 1.0, height: id == "Camera Control" ? -1.0 : 1.0))
-                        } else {
-                            Image(icon)
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 30)
-                                .clipShape(RoundedRectangle(cornerRadius: 6))
-                        }
-                    }
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 6)
-                            .stroke(colorScheme == .light && color == .white ? Color.black.opacity(0.2) : Color.clear , lineWidth: 0.5)
-                    )
+                    IconView(icon: icon, color: color, iconColor: iconColor)
                 }
                 
-                // Title and status text
+                // Title and subtitle text
                 VStack(alignment: .leading) {
                     Text(.init(id))
                         .lineLimit(1)
@@ -116,6 +66,7 @@ struct SettingsLink<Content: View>: View {
                     }
                 }
                 
+                // Badge count
                 if badgeCount > 0 {
                     Spacer()
                     Image(systemName: "\(badgeCount).circle.fill")
@@ -129,4 +80,5 @@ struct SettingsLink<Content: View>: View {
 
 #Preview {
     ContentView()
+        .environmentObject(StateManager())
 }

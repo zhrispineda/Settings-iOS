@@ -29,7 +29,6 @@ enum SettingsModel: String, CaseIterable {
     case actionButton = "Action Button"
     case applePencil = "Apple Pencil"
     case apps = "Apps"
-    case appStore = "App Store"
     case battery = "Battery"
     case biometricPasscode = "Biometric & Passcode"
     case bluetooth = "Bluetooth"
@@ -82,7 +81,7 @@ struct SettingsItem<Content: View>: Identifiable {
 }
 
 // MARK: Icons information
-let smallerIcons = ["appletvremote.gen4.fill", "apps.iphone", "apps.iphone.assistive.access", "apps.ipad", "arrow.counterclockwise", "bluetooth", "checkmark.seal.text.page.fill", "ear", "hand.raised.fill", "hourglass", "ipad.gen2", "iphone", "iphone.badge.dot.radiowaves.up.forward", "iphone.gen1", "iphone.gen3", "lock.fill", "mic.fill", "shield.fill", "text.book.closed.fill"]
+let smallerIcons = ["apple.logo", "appletvremote.gen4.fill", "apps.iphone", "apps.iphone.assistive.access", "apps.ipad", "arrow.counterclockwise", "bluetooth", "checkmark.seal.text.page.fill", "ear", "hand.raised.fill", "hourglass", "ipad.gen2", "iphone", "iphone.badge.dot.radiowaves.up.forward", "iphone.gen1", "iphone.gen3", "lock.fill", "mic.fill", "shield.fill", "text.book.closed.fill"]
 let largerIcons = ["waveform.and.magnifyingglass"]
 let hierarchyIcons = ["faceid", "questionmark.app.dashed", "questionmark.square.dashed", "waveform.and.magnifyingglass"]
 let internalIcons = ["airdrop", "apple.photos", "apps.iphone.assistive.access", "arrow.clockwise.app.stack.fill", "arrowtriangles.up.right.down.left.magnifyingglass", "bluetooth", "carplay", "chevron.3.up.perspective", "clock.filled.and.widget.filled", "eye.tracking", "figure.run.motion", "ipad.top.button.arrow.down", "iphone.action.button.arrow.right", "iphone.badge.dot.radiowaves.up.forward", "iphone.side.button.arrow.left", "keyboard.badge.waveform.fill", "key.dots.fill", "lock.square.dotted", "nearby.interactions", "network.connected.to.line.below", "pencil.and.sparkles", "person.badge.waveform.fill", "satellite.fill", "sensorkit", "speaker.eye.fill", "voice.control", "waveform.arrow.triangle.branch.right", "waveform.bubble.fill"]
@@ -163,7 +162,6 @@ let internalIcons = ["airdrop", "apple.photos", "apps.iphone.assistive.access", 
 
 // MARK: Services Settings
 @MainActor let serviceSettings: [SettingsItem] = [
-    SettingsItem(type: .appStore, title: "App Store", icon: "appleAppStore", destination: UIDevice.IsSimulator ? AnyView(EmptyView()) : AnyView(AppStoreView())),
     SettingsItem(type: .gameCenter, title: "Game Center", icon: "appleGameCenter", destination: AnyView(GameCenterView())),
     SettingsItem(type: .icloud, title: "iCloud", icon: "iCloud", destination: AnyView(EmptyView())),
     SettingsItem(type: .wallet, title: "Wallet & Apple Pay", icon: "appleWallet", destination: AnyView(WalletView()))

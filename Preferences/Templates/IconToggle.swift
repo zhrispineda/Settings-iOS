@@ -28,33 +28,7 @@ struct IconToggle: View {
     var body: some View {
         Toggle(isOn: $enabled) {
             HStack(spacing: 15) {
-                ZStack {
-                    Image(systemName: "app.fill")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 30)
-                        .foregroundStyle(color)
-                    
-                    if UIImage(systemName: icon) != nil {
-                        Image(systemName: icon)
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 20)
-                            .foregroundStyle(.white)
-                            .symbolRenderingMode(hierarchyIcons.contains(icon) ? .hierarchical : .none)
-                    } else if internalIcons.contains(icon) {
-                        Image(_internalSystemName: icon)
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 17)
-                            .foregroundStyle(icon == "airdrop" ? .blue : .white)
-                    } else {
-                        Image(icon)
-                            .resizable()
-                            .clipShape(RoundedRectangle(cornerRadius: 6))
-                            .frame(width: 30, height: 30)
-                    }
-                }
+                IconView(icon: icon, color: color, iconColor: .white)
                 
                 VStack(alignment: .leading, spacing: 0) {
                     Text(LocalizedStringKey(title))

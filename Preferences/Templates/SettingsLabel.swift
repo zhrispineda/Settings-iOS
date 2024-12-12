@@ -28,34 +28,7 @@ struct SettingsLabel: View {
     var body: some View {
         HStack(spacing: 15) {
             if badgeCount == 0 {
-                ZStack {
-                    Image(systemName: "app.fill")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 30)
-                        .foregroundStyle(color)
-                    if UIImage(systemName: icon) != nil {
-                        Image(systemName: icon)
-                            .resizable()
-                            .scaledToFit()
-                            .symbolRenderingMode(hierarchyIcons.contains(icon) ? .hierarchical : .none)
-                            .foregroundStyle(color == .white ? .black : .white)
-                            .frame(width: smallerIcons.contains(icon) ? 15 : 20)
-                    } else if internalIcons.contains(icon) {
-                        Image(_internalSystemName: icon)
-                            .resizable()
-                            .foregroundStyle(.white)
-                            .scaledToFit()
-                            .frame(width: smallerIcons.contains(icon) ? 11 : 20)
-                    } else {
-                        Image(icon)
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 30)
-                            .clipShape(RoundedRectangle(cornerRadius: 6))
-                            .foregroundStyle(.white)
-                    }
-                }
+                IconView(icon: icon, color: color, iconColor: .white)
             }
             
             Text(id)
@@ -78,4 +51,5 @@ struct SettingsLabel: View {
 
 #Preview {
     ContentView()
+        .environmentObject(StateManager())
 }
