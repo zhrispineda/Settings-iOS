@@ -58,6 +58,7 @@
 		832999532CAF93BA009AD115 /* MGHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832999522CAF93BA009AD115 /* MGHelper.swift */; };
 		832D84F02CD2A9DD0075ECF0 /* HealthPrivacySettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 832D84EF2CD2A9DD0075ECF0 /* HealthPrivacySettings.xcstrings */; };
 		832D84F22CD2B0A90075ECF0 /* DigitalSeparationUI.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 832D84F12CD2B0A90075ECF0 /* DigitalSeparationUI.xcstrings */; };
+		832E30A92D0CD51300C6E224 /* SettingsPhysical.gif in Resources */ = {isa = PBXBuildFile; fileRef = 832E30A82D0CD51300C6E224 /* SettingsPhysical.gif */; };
 		832EF38A2B8071C00066A1BF /* RestrictionsLocationServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832EF3892B8071C00066A1BF /* RestrictionsLocationServicesView.swift */; };
 		832EF38C2B81264E0066A1BF /* LocationAlertsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832EF38B2B81264E0066A1BF /* LocationAlertsView.swift */; };
 		832EF38F2B814EC80066A1BF /* LocationPermissionsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832EF38E2B814EC80066A1BF /* LocationPermissionsDetailView.swift */; };
@@ -327,7 +328,6 @@
 		83C3F33B2CC2B25100AE2402 /* Date & Time.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83C3F33A2CC2B25100AE2402 /* Date & Time.xcstrings */; };
 		83C3F33D2CC2BA7800AE2402 /* GameControlleriOSSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83C3F33C2CC2BA7800AE2402 /* GameControlleriOSSettings.xcstrings */; };
 		83C3F33F2CC2BEBA00AE2402 /* InternationalSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83C3F33E2CC2BEBA00AE2402 /* InternationalSettings.xcstrings */; };
-		83C79B902CE32FA600F49B4F /* SettingsPhysical.gif in Resources */ = {isa = PBXBuildFile; fileRef = 83C79B8E2CE32FA600F49B4F /* SettingsPhysical.gif */; };
 		83C79B912CE32FA600F49B4F /* SettingsSimulator.gif in Resources */ = {isa = PBXBuildFile; fileRef = 83C79B8F2CE32FA600F49B4F /* SettingsSimulator.gif */; };
 		83C79B932CE331A500F49B4F /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83C79B922CE331A500F49B4F /* Localizable.xcstrings */; };
 		83C79B952CE3C3A300F49B4F /* AppleCard.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83C79B942CE3C3A300F49B4F /* AppleCard.xcstrings */; };
@@ -513,6 +513,7 @@
 		832999522CAF93BA009AD115 /* MGHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGHelper.swift; sourceTree = "<group>"; };
 		832D84EF2CD2A9DD0075ECF0 /* HealthPrivacySettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = HealthPrivacySettings.xcstrings; sourceTree = "<group>"; };
 		832D84F12CD2B0A90075ECF0 /* DigitalSeparationUI.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = DigitalSeparationUI.xcstrings; sourceTree = "<group>"; };
+		832E30A82D0CD51300C6E224 /* SettingsPhysical.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SettingsPhysical.gif; sourceTree = "<group>"; };
 		832EF3892B8071C00066A1BF /* RestrictionsLocationServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestrictionsLocationServicesView.swift; sourceTree = "<group>"; };
 		832EF38B2B81264E0066A1BF /* LocationAlertsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAlertsView.swift; sourceTree = "<group>"; };
 		832EF38E2B814EC80066A1BF /* LocationPermissionsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionsDetailView.swift; sourceTree = "<group>"; };
@@ -784,7 +785,6 @@
 		83C3F33A2CC2B25100AE2402 /* Date & Time.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "Date & Time.xcstrings"; sourceTree = "<group>"; };
 		83C3F33C2CC2BA7800AE2402 /* GameControlleriOSSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = GameControlleriOSSettings.xcstrings; sourceTree = "<group>"; };
 		83C3F33E2CC2BEBA00AE2402 /* InternationalSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InternationalSettings.xcstrings; sourceTree = "<group>"; };
-		83C79B8E2CE32FA600F49B4F /* SettingsPhysical.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SettingsPhysical.gif; sourceTree = "<group>"; };
 		83C79B8F2CE32FA600F49B4F /* SettingsSimulator.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SettingsSimulator.gif; sourceTree = "<group>"; };
 		83C79B922CE331A500F49B4F /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		83C79B942CE3C3A300F49B4F /* AppleCard.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AppleCard.xcstrings; sourceTree = "<group>"; };
@@ -933,7 +933,7 @@
 		83012BD62BFE516A00BF431C /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				83C79B8E2CE32FA600F49B4F /* SettingsPhysical.gif */,
+				832E30A82D0CD51300C6E224 /* SettingsPhysical.gif */,
 				83C79B8F2CE32FA600F49B4F /* SettingsSimulator.gif */,
 			);
 			path = Assets;
@@ -2173,7 +2173,6 @@
 				83AD8C592CCAC38E00A054B5 /* KeyboardsSettings.xcstrings in Resources */,
 				83A915462CE1280D00F718AA /* SpotlightSettings.xcstrings in Resources */,
 				837BCF3C2CD30AF2009B1E33 /* PasscodeLock-DimpleKey.xcstrings in Resources */,
-				83C79B902CE32FA600F49B4F /* SettingsPhysical.gif in Resources */,
 				83C79B912CE32FA600F49B4F /* SettingsSimulator.gif in Resources */,
 				834565762CAAE7B8002BE49D /* CameraSettings-CinematicAudio.xcstrings in Resources */,
 				836CDF932CB602B300B1C5B2 /* Restrictions.xcstrings in Resources */,
@@ -2297,6 +2296,7 @@
 				83F77D702CD3F3A30026B1AC /* PaymentOffers_Localizable.xcstrings in Resources */,
 				83C79BB12CE3EF3000F49B4F /* ResearchApp.xcstrings in Resources */,
 				83C79B9B2CE3C7EE00F49B4F /* Intelligence.xcstrings in Resources */,
+				832E30A92D0CD51300C6E224 /* SettingsPhysical.gif in Resources */,
 				832877E92CAEE14400013B0B /* CameraUI-SmartStyles.xcstrings in Resources */,
 				8314482D2CD9652A00FFEE51 /* HealthSettingsSpecifiers.xcstrings in Resources */,
 				838FE8CD2CB60A3300FDB1A8 /* AssistantSettings.xcstrings in Resources */,

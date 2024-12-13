@@ -229,7 +229,7 @@ struct AppleAccountSection: View {
                     .foregroundStyle(Color["Label"])
                 Text("Sign in to access your iCloud data, the App Store, Apple services, and more.")
                     .foregroundStyle(.secondary)
-                    .font(.system(size: 13))
+                    .font(.subheadline)
             }
             .padding(.leading, 0)
         }

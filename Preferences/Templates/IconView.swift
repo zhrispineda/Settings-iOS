@@ -21,7 +21,7 @@ struct IconView: View {
     var body: some View {
         ZStack {
             // Icon Background
-            if icon == "Placeholder" || colorScheme == .dark {
+            if icon == "Placeholder" || colorScheme == .dark && !UIDevice.IsSimulator {
                 Image(systemName: "app.fill")
                     .resizable()
                     .scaledToFit()
@@ -41,7 +41,7 @@ struct IconView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: smallerIcons.contains(icon) ? (icon == "appletvremote.gen4.fill" ? 8 : 13) : 20)
-                    .symbolRenderingMode(hierarchyIcons.contains(icon) ? .hierarchical : .none)
+                    .symbolRenderingMode(hierarchyIcons.contains(icon) ? .hierarchical : icon == "app.grid.3x3" ? .multicolor : .none)
                     .foregroundStyle(colorScheme == .dark ? color == .black ? .white : color : iconColor)
                 //.scaleEffect(CGSize(width: 1.0, height: id == "Camera Control" ? -1.0 : 1.0))
             } else if icon.contains("custom") {

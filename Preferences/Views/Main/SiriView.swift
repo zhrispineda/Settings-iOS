@@ -10,6 +10,7 @@ import TipKit
 
 struct SiriView: View {
     // Variables
+    @Environment(\.colorScheme) private var colorScheme
     let apps = ["Calendar", "Contacts", "Files", "Health", "Maps", "Messages", "News", "Photos", "Reminders", "Safari", "Settings", "Wallet", "Watch"]
     
     @State private var siriEnabled = false
@@ -156,10 +157,10 @@ struct SiriView: View {
             
             // MARK: Apple Intelligence and Siri App Access Section
             Section {
-                SettingsLink(color: .white, iconColor: .blue, icon: "appclip", id: "APP_CLIPS".localize(table: table)) {
+                SettingsLink(color: colorScheme == .dark ? .blue : .white, iconColor: .blue, icon: "appclip", id: "APP_CLIPS".localize(table: table)) {
                     SiriAppClipsView()
                 }
-                SettingsLink(icon: "appleHome Screen & App Library", id: "APPS_GROUP".localize(table: table)) {
+                SettingsLink(color: .indigo, icon: "app.grid.3x3", id: "APPS_GROUP".localize(table: table)) {
                     CustomList(title: "APPS".localize(table: table)) {
                         ForEach(apps, id: \.self) { app in
                             SettingsLink(icon: "apple\(app)", id: app) {

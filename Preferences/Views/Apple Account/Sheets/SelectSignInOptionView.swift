@@ -73,7 +73,7 @@ struct SelectSignInOptionView: View {
                     Text("ACCOUNT_SETUP_CREATE_ACCOUNT_REBRAND", tableName: table)
                         .fontWeight(.semibold)
                 }
-                .padding(.bottom, 60)
+                .padding(.bottom, UIDevice.iPhone && UIDevice.HomeButtonCapability ? 5 : 60)
                 .alert("Could Not Create Apple Account", isPresented: $showingAlert) {
                     Link("Learn More", destination: URL(string: "https://support.apple.com/en-us/101661")!)
                     Button("OK".localize(table: table)) {

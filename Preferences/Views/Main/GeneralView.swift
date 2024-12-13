@@ -36,7 +36,7 @@ struct GeneralView: View {
             
             if !UIDevice.IsSimulator {
                 Section {
-                    SettingsLink(color: Color(red: 208/255, green: 30/255, blue: 42/255), icon: "apple.logo", id: "COVERAGE".localize(table: table)) {
+                    SettingsLink(color: colorScheme == .dark ? Color(red: 208/255, green: 30/255, blue: 42/255) : .white, iconColor: Color(red: 208/255, green: 30/255, blue: 42/255), icon: "apple.logo", id: "COVERAGE".localize(table: table)) {
                         AppleCareWarrantyView()
                     }
                 }

@@ -45,7 +45,6 @@ struct SettingsLink<Content: View>: View {
                 // Title and subtitle text
                 VStack(alignment: .leading) {
                     Text(.init(id))
-                        .lineLimit(1)
                     if !subtitle.isEmpty {
                         Text(subtitle)
                             .font(.footnote)
@@ -61,7 +60,6 @@ struct SettingsLink<Content: View>: View {
                             .foregroundStyle(.gray)
                     } else {
                         Text(.init(status))
-                            .lineLimit(1)
                             .foregroundStyle(.secondary)
                     }
                 }
