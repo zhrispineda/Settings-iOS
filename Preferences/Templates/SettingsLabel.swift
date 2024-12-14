@@ -28,7 +28,7 @@ struct SettingsLabel: View {
     var body: some View {
         HStack(spacing: 15) {
             if badgeCount == 0 {
-                IconView(icon: icon, color: color, iconColor: .white)
+                IconView(id: id, icon: icon, color: color, iconColor: .white)
             }
             
             Text(id)

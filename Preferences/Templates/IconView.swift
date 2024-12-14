@@ -14,6 +14,7 @@ import SwiftUI
 /// - Parameter iconColor: The `Color` of the icon itself.
 struct IconView: View {
     @Environment(\.colorScheme) private var colorScheme
+    let id: String
     let icon: String
     let color: Color
     let iconColor: Color
@@ -41,9 +42,9 @@ struct IconView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: smallerIcons.contains(icon) ? (icon == "appletvremote.gen4.fill" ? 8 : 13) : 20)
-                    .symbolRenderingMode(hierarchyIcons.contains(icon) ? .hierarchical : icon == "app.grid.3x3" ? .multicolor : .none)
+                    .symbolRenderingMode(hierarchyIcons.contains(icon) ? .hierarchical : multicolorIcons.contains(icon) ? .multicolor : .none)
                     .foregroundStyle(colorScheme == .dark ? color == .black ? .white : color : iconColor)
-                //.scaleEffect(CGSize(width: 1.0, height: id == "Camera Control" ? -1.0 : 1.0))
+                    .scaleEffect(CGSize(width: 1.0, height: id == "CAMERA_BUTTON_TITLE".localize(table: "Accessibility-D93") ? -1.0 : 1.0))
             } else if icon.contains("custom") {
                 Image(icon)
                     .resizable()

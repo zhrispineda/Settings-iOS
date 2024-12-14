@@ -12,10 +12,11 @@ struct PrivacySecurityView: View {
     @State private var opacity: Double = 0
     @State private var frameY: Double = 0
     let table = "Privacy"
+    let psTable = "PrivacyAndSecuritySettings"
     
     var body: some View {
-        CustomList(title: "Back") {
-            Placard(title: "PRIVACY".localize(table: table), color: .blue, icon: "hand.raised.fill", description: "Control which apps can access your data, location, camera, and microphone, and manage safety protections. [\("LEARN_MORE_ELLIPSIS".localize(table: "AppleAccountUI"))](https://support.apple.com/guide/iphone/use-built-in-privacy-and-security-protections-iph6e7d349d1/ios)", frameY: $frameY, opacity: $opacity)
+        CustomList(title: "back".localize(table: "AXUILocalizedStrings")) {
+            Placard(title: "PRIVACY".localize(table: table), color: .blue, icon: "hand.raised.fill", description: "Placard Subtitle".localize(table: psTable), frameY: $frameY, opacity: $opacity)
             
             Section {
                 SettingsLink(color: .blue, icon: "location.fill", id: "LOCATION_SERVICES".localize(table: table), subtitle: "CONTACTS_NO_ACCESS_AUTHORIZATION".localize(table: table)) {
@@ -33,22 +34,22 @@ struct PrivacySecurityView: View {
                 SettingsLink(icon: "appleContacts", id: "CONTACTS".localize(table: table), subtitle: "CONTACTS_NO_ACCESS_AUTHORIZATION".localize(table: table)) {
                     AppPermissionsView(permissionName: "CONTACTS")
                 }
-                SettingsLink(icon: "appleFiles", id: "FILEACCESS".localize(table: table), subtitle: "CONTACTS_NO_ACCESS_AUTHORIZATION".localize(table: table)) {
+                SettingsLink(icon: "appleFiles", id: "FILEACCESS".localize(table: table), subtitle: "None".localize(table: psTable)) {
                     AppPermissionsView(permissionName: "FILEACCESS")
                 }
-                SettingsLink(color: .indigo, icon: "moon.fill", id: "FOCUS".localize(table: table), subtitle: "CONTACTS_NO_ACCESS_AUTHORIZATION".localize(table: table)) {
+                SettingsLink(color: .indigo, icon: "moon.fill", id: "FOCUS".localize(table: table), subtitle: "None".localize(table: psTable)) {
                     AppPermissionsView(permissionName: "FOCUS")
                 }
-                SettingsLink(icon: "appleHealth", id: "HEALTH".localize(table: table), subtitle: "CONTACTS_NO_ACCESS_AUTHORIZATION".localize(table: table)) {
+                SettingsLink(icon: "appleHealth", id: "HEALTH".localize(table: table), subtitle: "None".localize(table: psTable)) {
                     AppPermissionsView(permissionName: "HEALTH")
                 }
-                SettingsLink(icon: "appleHome", id: "WILLOW".localize(table: table), subtitle: "CONTACTS_NO_ACCESS_AUTHORIZATION".localize(table: table)) {
+                SettingsLink(icon: "appleHome", id: "WILLOW".localize(table: table), subtitle: "None".localize(table: psTable)) {
                     AppPermissionsView(permissionName: "WILLOW")
                 }
-                SettingsLink(icon: "appleMusic", id: "MEDIALIBRARY".localize(table: table), subtitle: "CONTACTS_NO_ACCESS_AUTHORIZATION".localize(table: table)) {
+                SettingsLink(icon: "appleMusic", id: "MEDIALIBRARY".localize(table: table), subtitle: "None".localize(table: psTable)) {
                     AppPermissionsView(permissionName: "MEDIALIBRARY")
                 }
-                SettingsLink(color: .gray, icon: "person.badge.key.fill", id: "PASSKEYS".localize(table: table), subtitle: "CONTACTS_NO_ACCESS_AUTHORIZATION".localize(table: table)) {
+                SettingsLink(color: .gray, icon: "person.badge.key.fill", id: "PASSKEYS".localize(table: table), subtitle: "None".localize(table: psTable)) {
                     AppPermissionsView(permissionName: "PASSKEYS")
                 }
                 SettingsLink(icon: "applePhotos", id: "PHOTOS".localize(table: table), subtitle: "PHOTOS_NO_ACCESS_AUTHORIZATION".localize(table: table)) {
@@ -66,7 +67,7 @@ struct PrivacySecurityView: View {
             
             Section {
                 if !UIDevice.IsSimulator {
-                    SettingsLink(color: .blue, icon: "Accessory", id: "ACCESSORY_SETUP".localize(table: table), status: "0") {
+                    SettingsLink(color: .blue, icon: "ring.radiowaves.right", id: "ACCESSORY_SETUP".localize(table: table), status: "0") {
                         AppPermissionsView(permissionName: "ACCESSORY_SETUP")
                     }
                 }
@@ -89,7 +90,7 @@ struct PrivacySecurityView: View {
                     AppPermissionsView(permissionName: "NEARBY_INTERACTIONS")
                 }
                 if UIDevice.iPhone {
-                    SettingsLink(color: .blue, icon: "sensorkit", id: "Research Sensor & Usage Data", status: "0") {
+                    SettingsLink(color: .blue, icon: "sensorkit", id: "Research Sensor & Usage Data".localize(table: psTable), status: "0") {
                         AppPermissionsView(permissionName: "Research Sensor & Usage Data")
                     }
                     SettingsLink(color: .gray, icon: "waveform", id: "SPEECH_RECOGNITION".localize(table: table), status: "0") {
@@ -112,12 +113,12 @@ struct PrivacySecurityView: View {
                         SafetyCheckView()
                     }
                 } footer: {
-                    Text("Protect your personal safety by staying aware of which people, apps, and devices have access to your information.")
+                    Text("Protect your personal safety by staying aware of which people, apps, and devices have access to your information.", tableName: psTable)
                 }
             }
             
             Section {
-                SettingsLink(color: .blue, icon: "eye.trianglebadge.exclamationmark.fill", id: "Sensitive Content Warning", status: "Off") {
+                SettingsLink(color: .blue, icon: "eye.trianglebadge.exclamationmark.fill", id: "Sensitive Content Warning", status: "Off".localize(table: table)) {
                     SensitiveContentWarningView()
                 }
             } footer: {
@@ -131,24 +132,27 @@ struct PrivacySecurityView: View {
                 }
             }
             
-            Section {
-                if !UIDevice.IsSimulator {
-                    SettingsLink(color: .green, icon: "shield.lefthalf.filled", id: "APP_PRIVACY_REPORT".localize(table: table)) {}
-                }
-            }
-            
             if !UIDevice.IsSimulator {
+                Section {
+                    SettingsLink(color: .green, icon: "shield.lefthalf.filled", id: "APP_PRIVACY_REPORT".localize(table: table), status: "Off".localize(table: table)) {}
+                    if UIDevice.IntelligenceCapability {
+                        SettingsLink(icon: "siri", id: "Apple Intelligence Report".localize(table: psTable), status: "Off".localize(table: psTable).localize(table: psTable)) {}
+                    }
+                } header: {
+                    Text("Transparency Logs", tableName: psTable)
+                }
+                
                 Section {
                     if configuration.developerMode {
                         SettingsLink(color: .gray, icon: "hammer.fill", id: "DEVELOPER_MODE".localize(table: table), status: "Off".localize(table: table)) {
                             EmptyView()
                         }
                     }
-                    SettingsLink(color: .blue, icon: "hand.raised.fill", id: "Lockdown Mode", status: "Off".localize(table: table)) {
+                    SettingsLink(color: .blue, icon: "hand.raised.fill", id: "Lockdown Mode".localize(table: psTable), status: "Off".localize(table: table)) {
                         EmptyView()
                     }
                 } header: {
-                    Text("Security")
+                    Text("Security", tableName: psTable)
                 }
             }
         }

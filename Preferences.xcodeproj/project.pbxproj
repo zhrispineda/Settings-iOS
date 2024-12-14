@@ -105,6 +105,7 @@
 		833F20AE2CA4C93C00115E8F /* RecordCinematicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833F20AD2CA4C93C00115E8F /* RecordCinematicView.swift */; };
 		8340A3C32CB0C723005ED66A /* SEIDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8340A3C22CB0C723005ED66A /* SEIDView.swift */; };
 		8340A3C52CB0CEDC005ED66A /* MonospacedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8340A3C42CB0CEDC005ED66A /* MonospacedLabel.swift */; };
+		8340F0C22D0D4D00009E71C0 /* PrivacyAndSecuritySettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8340F0C12D0D4D00009E71C0 /* PrivacyAndSecuritySettings.xcstrings */; };
 		834196272CB89D8F0038183D /* PSSystemPolicy.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834196262CB89D8F0038183D /* PSSystemPolicy.xcstrings */; };
 		83441A892CAF2B6A0022E193 /* Privacy.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83441A882CAF2B6A0022E193 /* Privacy.xcstrings */; };
 		83441A8B2CAF73740022E193 /* JournalingSuggestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83441A8A2CAF73740022E193 /* JournalingSuggestionsView.swift */; };
@@ -561,6 +562,7 @@
 		833F20AD2CA4C93C00115E8F /* RecordCinematicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordCinematicView.swift; sourceTree = "<group>"; };
 		8340A3C22CB0C723005ED66A /* SEIDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SEIDView.swift; sourceTree = "<group>"; };
 		8340A3C42CB0CEDC005ED66A /* MonospacedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonospacedLabel.swift; sourceTree = "<group>"; };
+		8340F0C12D0D4D00009E71C0 /* PrivacyAndSecuritySettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = PrivacyAndSecuritySettings.xcstrings; sourceTree = "<group>"; };
 		834196262CB89D8F0038183D /* PSSystemPolicy.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = PSSystemPolicy.xcstrings; sourceTree = "<group>"; };
 		83441A882CAF2B6A0022E193 /* Privacy.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Privacy.xcstrings; sourceTree = "<group>"; };
 		83441A8A2CAF73740022E193 /* JournalingSuggestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalingSuggestionsView.swift; sourceTree = "<group>"; };
@@ -1287,6 +1289,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		8340F0C02D0D4CEC009E71C0 /* PreferenceBundles */ = {
+			isa = PBXGroup;
+			children = (
+				8340F0C12D0D4D00009E71C0 /* PrivacyAndSecuritySettings.xcstrings */,
+			);
+			path = PreferenceBundles;
+			sourceTree = "<group>";
+		};
 		834540C32C9CE2CF00091E79 /* Language */ = {
 			isa = PBXGroup;
 			children = (
@@ -1628,6 +1638,7 @@
 				83ACE7202CD5BA270061528C /* HealthKit */,
 				832877E72CADA2CD00013B0B /* OnBoardingBundles */,
 				83F77D6E2CD3F3920026B1AC /* PassKit */,
+				8340F0C02D0D4CEC009E71C0 /* PreferenceBundles */,
 				837BCF3A2CD30AC7009B1E33 /* PreferencesUI */,
 				8388E5352CD072DD00A3066D /* PrivacySettingsUI */,
 				83D0B1472CE2F9BA00DDEC69 /* Ungrouped */,
@@ -2193,6 +2204,7 @@
 				8355C83C2CE541680067D675 /* RatingsAndPhotos.xcstrings in Resources */,
 				837AA8722CE2A8540052D1D0 /* FitnessPlus.xcstrings in Resources */,
 				8355C8402CE541BB0067D675 /* SafetyFeatures.xcstrings in Resources */,
+				8340F0C22D0D4D00009E71C0 /* PrivacyAndSecuritySettings.xcstrings in Resources */,
 				83AD8C5B2CCAC61700A054B5 /* Captioning.xcstrings in Resources */,
 				830F2B302CD97A05006F7F22 /* MessagesSettings.xcstrings in Resources */,
 				83F3611E2CD2E48100041A72 /* MomentsOnboardingAndSettings.xcstrings in Resources */,

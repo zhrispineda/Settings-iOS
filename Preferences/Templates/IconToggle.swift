@@ -28,7 +28,7 @@ struct IconToggle: View {
     var body: some View {
         Toggle(isOn: $enabled) {
             HStack(spacing: 15) {
-                IconView(icon: icon, color: color, iconColor: .white)
+                IconView(id: title, icon: icon, color: color, iconColor: .white)
                 
                 VStack(alignment: .leading, spacing: 0) {
                     Text(LocalizedStringKey(title))

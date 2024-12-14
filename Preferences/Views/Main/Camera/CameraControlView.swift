@@ -26,9 +26,9 @@ struct CameraControlView: View {
             Section {
                 Toggle("HIDE_CAMERA_CONTROLS".localize(table: table), isOn: $cleanPreview)
             } header: {
-                Text("CAPTURE_BUTTON_LIGHT_PRESS_TITLE".localize(table: table))
+                Text("CAPTURE_BUTTON_LIGHT_PRESS_TITLE", tableName: table)
             } footer: {
-                Text("CAPTURE_BUTTON_CAPTURE_FOOTER".localize(table: table))
+                Text("CAPTURE_BUTTON_CAPTURE_FOOTER", tableName: table)
             }
             
             Section {
@@ -40,9 +40,9 @@ struct CameraControlView: View {
                 .pickerStyle(.inline)
                 .labelsHidden()
             } header: {
-                Text("CAPTURE_BUTTON_LAUNCH_APP_TITLE".localize(table: table))
+                Text("CAPTURE_BUTTON_LAUNCH_APP_TITLE", tableName: table)
             } footer: {
-                Text("CAPTURE_BUTTON_APP_LAUNCH_FOOTER".localize(table: table))
+                Text("CAPTURE_BUTTON_APP_LAUNCH_FOOTER", tableName: table)
             }
             
             Section {
@@ -54,7 +54,7 @@ struct CameraControlView: View {
                 .pickerStyle(.inline)
                 .labelsHidden()
             } footer: {
-                Text("CAMERA_BUTTON_APP_LIST_FOOTER".localize(table: table))
+                Text("CAMERA_BUTTON_APP_LIST_FOOTER", tableName: table)
             }
         }
     }

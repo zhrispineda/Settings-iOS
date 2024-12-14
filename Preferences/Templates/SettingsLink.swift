@@ -39,7 +39,7 @@ struct SettingsLink<Content: View>: View {
             HStack(spacing: 15) {
                 // Icon
                 if icon != "None" {
-                    IconView(icon: icon, color: color, iconColor: iconColor)
+                    IconView(id: id, icon: icon, color: color, iconColor: iconColor)
                 }
                 
                 // Title and subtitle text

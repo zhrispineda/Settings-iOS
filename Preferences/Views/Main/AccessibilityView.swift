@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AccessibilityView: View {
     // Variables
+    @Environment(\.colorScheme) private var colorScheme
     @State private var opacity: Double = 0
     @State private var frameY: Double = 0
     let table = "Accessibility"
@@ -49,7 +50,7 @@ struct AccessibilityView: View {
                     }
                 }
             } header: {
-                Text("VISION".localize(table: titleTable))
+                Text("VISION", tableName: titleTable)
             }
             
             Section {
@@ -84,7 +85,7 @@ struct AccessibilityView: View {
                     }
                 }
             } header: {
-                Text("MOBILITY_HEADING".localize(table: titleTable))
+                Text("MOBILITY_HEADING", tableName: titleTable)
             }
             
             Section {
@@ -105,7 +106,7 @@ struct AccessibilityView: View {
                     }
                 }
             } header: {
-                Text("HEARING".localize(table: titleTable))
+                Text("HEARING", tableName: titleTable)
             }
             
             Section {
@@ -126,7 +127,7 @@ struct AccessibilityView: View {
                     SettingsLink(icon: "waveform.arrow.triangle.branch.right", id: "ADAPTIVE_VOICE_SHORTCUTS_TITLE".localize(table: titleTable), status: "OFF".localize(table: table)) {}
                 }
             } header: {
-                Text("SPEECH_HEADING".localize(table: titleTable))
+                Text("SPEECH_HEADING", tableName: titleTable)
             }
             
             Section {
@@ -137,24 +138,24 @@ struct AccessibilityView: View {
                     SettingsLink(color: .gray, icon: "appletvremote.gen4.fill", id: "APPLE_TV_REMOTE".localize(table: titleTable)) {}
                 }
             } header: {
-                Text("ACCESSORIES_HEADING".localize(table: titleTable))
+                Text("ACCESSORIES_HEADING", tableName: titleTable)
             }
             
             Section {
                 if !UIDevice.IsSimulator {
                     SettingsLink(icon: "lock.square.dotted", id: "GUIDED_ACCESS_TITLE".localize(table: titleTable), status: "OFF".localize(table: table)) {}
                     SettingsLink(color: .gray, icon: "apps.iphone.assistive.access", id: "CLARITY_UI_TITLE".localize(table: titleTable)) {}
-                    SettingsLink(color: .clear, icon: "appleSiri", id: "SIRI_SETTINGS_TITLE".localize(table: titleTable)) {}
+                    SettingsLink(color: .clear, icon: UIDevice.IntelligenceCapability ? colorScheme == .dark ? "siri" : "siriSymbolLight" : "appleSiri", id: "SIRI_SETTINGS_TITLE".localize(table: titleTable)) {}
                     SettingsLink(color: .blue, icon: "accessibility", id: "TRIPLE_CLICK_TITLE".localize(table: titleTable), status: "OFF".localize(table: table)) {}
                     SettingsLink(color: .blue, icon: "app.badge.checkmark", id: "APP_AX_SETTINGS_TITLE".localize(table: titleTable)) {}
                 }
             } header: {
-                Text("GENERAL_HEADING".localize(table: titleTable))
+                Text("GENERAL_HEADING", tableName: titleTable)
             }
         }
         .toolbar {
             ToolbarItem(placement: .principal) {
-                Text("ROOT_LEVEL_TITLE".localize(table: table))
+                Text("ROOT_LEVEL_TITLE", tableName: table)
                     .fontWeight(.semibold)
                     .font(.subheadline)
                     .opacity(frameY < 50.0 ? opacity : 0) // Only fade when passing the help section title at the top
