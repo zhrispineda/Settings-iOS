@@ -43,7 +43,7 @@ struct SettingsLink<Content: View>: View {
                 }
                 
                 // Title and subtitle text
-                VStack(alignment: .leading) {
+                VStack(alignment: .leading, spacing: 0) {
                     Text(.init(id))
                     if !subtitle.isEmpty {
                         Text(subtitle)

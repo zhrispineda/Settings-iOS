@@ -9,6 +9,7 @@ import SwiftUI
 
 struct PrivacySecurityView: View {
     // Variables
+    @Environment(\.colorScheme) private var colorScheme
     @State private var opacity: Double = 0
     @State private var frameY: Double = 0
     let table = "Privacy"
@@ -16,8 +17,10 @@ struct PrivacySecurityView: View {
     
     var body: some View {
         CustomList(title: "back".localize(table: "AXUILocalizedStrings")) {
+            // MARK: Placard
             Placard(title: "PRIVACY".localize(table: table), color: .blue, icon: "hand.raised.fill", description: "Placard Subtitle".localize(table: psTable), frameY: $frameY, opacity: $opacity)
             
+            // MARK: Location Services, Tracking Section
             Section {
                 SettingsLink(color: .blue, icon: "location.fill", id: "LOCATION_SERVICES".localize(table: table), subtitle: "CONTACTS_NO_ACCESS_AUTHORIZATION".localize(table: table)) {
                     LocationServicesView()
@@ -27,6 +30,7 @@ struct PrivacySecurityView: View {
                 }
             }
             
+            // MARK: App Permissions
             Section {
                 SettingsLink(icon: "appleCalendar", id: "CALENDARS".localize(table: table), subtitle: "CALENDARS_NO_ACCESS_AUTHORIZATION".localize(table: table)) {
                     AppPermissionsView(permissionName: "CALENDARS")
@@ -65,6 +69,7 @@ struct PrivacySecurityView: View {
                 }
             }
             
+            // MARK: Sensor Permissions
             Section {
                 if !UIDevice.IsSimulator {
                     SettingsLink(color: .blue, icon: "ring.radiowaves.right", id: "ACCESSORY_SETUP".localize(table: table), status: "0") {
@@ -75,6 +80,9 @@ struct PrivacySecurityView: View {
                     AppPermissionsView(permissionName: "BT_PERIPHERAL")
                 }
                 SettingsLink(color: .gray, icon: "camera.fill", id: "CAMERA".localize(table: table), status: "0") {
+                    AppPermissionsView(permissionName: "CAMERA")
+                }
+                SettingsLink(color: .green, icon: "exclamationmark.message.fill", id: "Critical Messages".localize(table: psTable), status: "0") {
                     AppPermissionsView(permissionName: "CAMERA")
                 }
                 SettingsLink(color: .blue, icon: "network", id: "LOCAL_NETWORK".localize(table: table), status: "0") {
@@ -99,6 +107,7 @@ struct PrivacySecurityView: View {
                 }
             }
             
+            // MARK: Journaling Suggestions
             if UIDevice.iPhone && !UIDevice.IsSimulator {
                 Section {
                     SettingsLink(color: .indigo, icon: "pencil.and.sparkles", id: "JOURNALING_SUGGESTIONS".localize(table: table)) {
@@ -107,9 +116,10 @@ struct PrivacySecurityView: View {
                 }
             }
             
+            // MARK: Safety Check
             if UIDevice.iPhone {
                 Section {
-                    SettingsLink(color: .white, iconColor: .blue, icon: "person.badge.shield.checkmark.fill", id: "SAFETY_CHECK".localize(table: "DigitalSeparationUI")) {
+                    SettingsLink(color: colorScheme == .dark ? .blue : .white, iconColor: .blue, icon: "person.badge.shield.checkmark.fill", id: "SAFETY_CHECK".localize(table: "DigitalSeparationUI")) {
                         SafetyCheckView()
                     }
                 } footer: {
@@ -117,6 +127,7 @@ struct PrivacySecurityView: View {
                 }
             }
             
+            // MARK: Sensitive Content Warning
             Section {
                 SettingsLink(color: .blue, icon: "eye.trianglebadge.exclamationmark.fill", id: "Sensitive Content Warning", status: "Off".localize(table: table)) {
                     SensitiveContentWarningView()
@@ -125,6 +136,7 @@ struct PrivacySecurityView: View {
                 Text(.init("Detect nude photos and videos before they are viewed on your Device, and receive guidance to help make a safe choice. Apple does not have access to the photos or videos. [Learn more…](%@)".localize(table: "CommunicationSafetySettingsUI", "https://support.apple.com/en-us/105071")))
             }
             
+            // MARK: Analytics & Improvements, Advertising
             Section {
                 SettingsLink(color: .blue, icon: "chart.bar.xaxis", id: "PROBLEM_REPORTING".localize(table: table)) {}
                 SettingsLink(color: .blue, icon: "megaphone.fill", id: "ADVERTISING".localize(table: table)) {
@@ -133,6 +145,7 @@ struct PrivacySecurityView: View {
             }
             
             if !UIDevice.IsSimulator {
+                // MARK: Transparency Logs
                 Section {
                     SettingsLink(color: .green, icon: "shield.lefthalf.filled", id: "APP_PRIVACY_REPORT".localize(table: table), status: "Off".localize(table: table)) {}
                     if UIDevice.IntelligenceCapability {
@@ -142,9 +155,15 @@ struct PrivacySecurityView: View {
                     Text("Transparency Logs", tableName: psTable)
                 }
                 
+                // MARK: Security
                 Section {
                     if configuration.developerMode {
                         SettingsLink(color: .gray, icon: "hammer.fill", id: "DEVELOPER_MODE".localize(table: table), status: "Off".localize(table: table)) {
+                            EmptyView()
+                        }
+                    }
+                    if UIDevice.iPhone {
+                        SettingsLink(color: .blue, icon: "lock.and.ring.2", id: "Stolen Device Protection".localize(table: psTable), status: "Off".localize(table: table)) {
                             EmptyView()
                         }
                     }

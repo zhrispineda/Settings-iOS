@@ -15,13 +15,14 @@ struct CellularView: View {
     @State private var cellularUsageStatisticsEnabled = true
     @State private var opacity: Double = 0
     @State private var frameY: Double = 0
+    let table = UIDevice.iPhone ? "CellulariPhone" : "CellulariPad"
     
     var body: some View {
         CustomList {
-            Placard(title: "Cellular", color: .green, icon: "antenna.radiowaves.left.and.right", description: "Find out how much data you‘re using, set data restrictions, and manage carrier settings such as eSIM and Wi-Fi calling. [Learn more...](https://support.apple.com/guide/iphone/view-or-change-cellular-data-settings-iph3dd5f213/ios)", frameY: $frameY, opacity: $opacity)
+            Placard(title: "Cellular", color: .green, icon: "antenna.radiowaves.left.and.right", description: "CELLULAR_SETTINGS_SUBTITLE".localize(table: table), frameY: $frameY, opacity: $opacity)
             
             Section {
-                Button("Set Up Cellular") {}
+                Button("SETUP_CELLULAR".localize(table: table)) {}
             }
             
 //            Section {
