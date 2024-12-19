@@ -20,14 +20,14 @@ struct SiriView: View {
     @State private var showingEnableSiriPopup = false
     @State private var allowSiriWhenLockedEnabled = true
     
-    @State private var showSuggestionsEnabled = true
+    @AppStorage("SuggestAppsBeforeSearching") private var showSuggestionsEnabled = true
     @State private var showingResetHiddenSuggestionsAlert = false
     @State private var showingResetHiddenSuggestionsPopup = false
     
-    @State private var allowNotificationsEnabled = true
-    @State private var showAppLibraryEnabled = true
-    @State private var showWhenSharingEnabled = true
-    @State private var showWhenListeningEnabled = true
+    @AppStorage("SuggestionsAllowNotifications") private var allowNotificationsEnabled = true
+    @AppStorage("SuggestionsShowAppLibrary") private var showAppLibraryEnabled = true
+    @AppStorage("SuggestionsShowWhenSharing") private var showWhenSharingEnabled = true
+    @AppStorage("SuggestionsShowWhenListening") private var showWhenListeningEnabled = true
     
     @State private var opacity: Double = 0
     @State private var frameY: Double = 0
@@ -80,13 +80,13 @@ struct SiriView: View {
             
             // MARK: Siri Requests Section
             Section {
-                if !UIDevice.IsSimulator {
-                    CustomNavigationLink(title: "ACTIVATION_COMPACT".localize(table: table), status: "ACTIVATION_OFF".localize(table: table), destination: EmptyView())
-                }
-                if !siriEnabled {
+                if siriEnabled {
                     CustomNavigationLink(title: "VOICE".localize(table: table), status: "", destination: SiriVoiceView()) // \("REGION_en-US".localize(table: table)) (Voice 4)
                 } else {
                     CustomNavigationLink(title: "LANGUAGE".localize(table: table), status: "English (United States)", destination: SiriLanguageView())
+                }
+                if !UIDevice.IsSimulator {
+                    CustomNavigationLink(title: "ACTIVATION_COMPACT".localize(table: table), status: "ACTIVATION_OFF".localize(table: table), destination: EmptyView())
                 }
                 if siriEnabled {
                     if !UIDevice.IsSimulator {
@@ -121,15 +121,15 @@ struct SiriView: View {
             }
             
             // MARK: Extensions Section
-            if UIDevice.IntelligenceCapability {
-                Section {
-                    NavigationLink("EXTERNAL_AI_MODEL_NAME".localize(table: exTable)) {}
-                } header: {
-                    Text("EXTERNAL_AI_MODEL_GROUP", tableName: exTable)
-                } footer: {
-                    Text(UIDevice.iPhone ? "EXTERNAL_AI_MODEL_FOOTER_IPHONE" : "EXTERNAL_AI_MODEL_FOOTER_IPAD", tableName: exTable)
-                }
-            }
+//            if UIDevice.IntelligenceCapability {
+//                Section {
+//                    NavigationLink("EXTERNAL_AI_MODEL_NAME".localize(table: exTable)) {}
+//                } header: {
+//                    Text("EXTERNAL_AI_MODEL_GROUP", tableName: exTable)
+//                } footer: {
+//                    Text(UIDevice.iPhone ? "EXTERNAL_AI_MODEL_FOOTER_IPHONE" : "EXTERNAL_AI_MODEL_FOOTER_IPAD", tableName: exTable)
+//                }
+//            }
             
             // MARK: Suggestions Section
             Section {
@@ -170,7 +170,14 @@ struct SiriView: View {
                     }
                 }
             } header: {
-                Text("APP_ACCESS_GROUP", tableName: table)
+                Text(UIDevice.IntelligenceCapability ? "GM_APP_ACCESS_GROUP" : "APP_ACCESS_GROUP", tableName: UIDevice.IntelligenceCapability ? gmTable : table)
+            }
+            
+            // MARK: Apple Intelligence Privacy Footer
+            Section {} footer: {
+                if UIDevice.IntelligenceCapability {
+                    Text("GM_PRIVACY_FOOTER_TEXT", tableName: gmTable) + Text(" [\("GM_PRIVACY_FOOTER_LINK_TEXT".localize(table: gmTable))](#)")
+                }
             }
         }
         .toolbar {

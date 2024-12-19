@@ -24,6 +24,10 @@ struct DisplayBrightnessView: View {
     @State private var raiseToWakeEnabled = true
     let table = "Display"
     
+    init() {
+        brightness = UIScreen.main.brightness
+    }
+    
     var body: some View {
         CustomList(title: "DISPLAY_AND_BRIGHTNESS".localize(table: table), topPadding: true) {
             Section {

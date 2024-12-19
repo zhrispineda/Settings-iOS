@@ -9,21 +9,27 @@ import SwiftUI
 
 struct MotionView: View {
     // Variables
-    @State private var reduceMotionEnabled = false
-    @State private var preferCrossFadeTransitionsEnabled = false
-    @State private var dimFlashingLightsEnabled = false
-    @State private var autoPlayAnimatedImagesEnabled = true
-    @State private var autoPlayVideoPreviewsEnabled = true
-    @State private var autoPlayMessageEffectsEnabled = true
-    @State private var preferNonBlinkingCursor = false
-    @State private var limitFrameRateEnabled = false
+    @AppStorage("ReduceMotionEnabled") private var reduceMotionEnabled = false
+    @AppStorage("PreferCrossFadeTransitionsEnabled") private var preferCrossFadeTransitionsEnabled = false
+    @AppStorage("DimFlashingLightsEnabled") private var dimFlashingLightsEnabled = false
+    @AppStorage("AutoPlayAnimatedImagesEnabled") private var autoPlayAnimatedImagesEnabled = true
+    @AppStorage("AutoPlayVideoPreviewsEnabled") private var autoPlayVideoPreviewsEnabled = true
+    @AppStorage("AutoPlayMessageEffectsEnabled") private var autoPlayMessageEffectsEnabled = true
+    @AppStorage("PreferNonBlinkingCursorEnabled") private var preferNonBlinkingCursor = false
+    @AppStorage("LimitFrameRateEnabled") private var limitFrameRateEnabled = false
     let table = "Accessibility"
     let localTable = "LocalizedStrings"
     let generalTable = "GeneralAccessibility"
     let animateTable = "Accessibility-AnimatedImages"
     
+    init() {
+        autoPlayAnimatedImagesEnabled = AccessibilitySettings.animatedImagesEnabled
+        autoPlayVideoPreviewsEnabled = UIAccessibility.isVideoAutoplayEnabled
+    }
+    
     var body: some View {
         CustomList(title: "MOTION_TITLE".localize(table: table)) {
+            // Reduce Motion Section
             Section {
                 Toggle("REDUCE_MOTION".localize(table: table), isOn: $reduceMotionEnabled)
             } footer: {
@@ -38,12 +44,14 @@ struct MotionView: View {
                 }
             }
             
+            // Photosensitivity (Flashing Lights) Section
             Section {
                 Toggle("DIM_FLASHING_LIGHTS_FULL_WIDTH".localize(table: localTable), isOn: $dimFlashingLightsEnabled)
             } footer: {
                 Text("PSE_FOOTER_TEXT", tableName: generalTable)
             }
             
+            // Reduce Motion Section
             Section {
                 Toggle("REDUCE_MOTION_AUTOPLAY_ANIMATED_IMAGES".localize(table: animateTable), isOn: $autoPlayAnimatedImagesEnabled)
                 Toggle("REDUCE_MOTION_AUTOPLAY_VIDEO_PREVIEWS".localize(table: table), isOn: $autoPlayVideoPreviewsEnabled)
@@ -52,12 +60,14 @@ struct MotionView: View {
                 Text("ReduceMotionFooterText_Autoplay", tableName: animateTable)
             }
             
+            // Non-Blinking Cursor Section
             Section {
                 Toggle("PREFER_NONBLINKING_CURSOR".localize(table: table), isOn: $preferNonBlinkingCursor)
             } footer: {
                 Text("PREFER_NONBLINKING_CURSOR_FOOTER", tableName: table)
             }
             
+            // Limit Frame Rate Section
             if UIDevice.ProDevice {
                 Section {
                     Toggle("RefreshRateSlider".localize(table: table), isOn: $limitFrameRateEnabled)

@@ -198,12 +198,12 @@ public extension UIDevice {
     
     /// Returns a Bool on whether the device is a Pro model.
     static let ProDevice: Bool = {
-        return identifier.contains("Pro")
+        return fullModel.contains("Pro")
     }()
     
     /// Returns a Bool on whether the device has an Action Button.
     static let RingerButtonCapability: Bool = {
-        return identifier.contains("15 Pro") || identifier.contains("16")
+        return fullModel.contains("15 Pro") || fullModel.contains("16")
     }()
     
     /// Returns a Bool on whether the host is a Simulator instance.
