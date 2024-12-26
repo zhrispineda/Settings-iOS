@@ -128,6 +128,7 @@
 		834A15082CD85B10004A0025 /* MobileCalSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834A15072CD85B10004A0025 /* MobileCalSettings.xcstrings */; };
 		834B5A222C4B3C83003A6940 /* CarPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B5A212C4B3C83003A6940 /* CarPlayView.swift */; };
 		834B5A242C4C1836003A6940 /* AirDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B5A232C4C1836003A6940 /* AirDropView.swift */; };
+		834CAE482D1DE94000F2E069 /* AirDropSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834CAE472D1DE94000F2E069 /* AirDropSettings.xcstrings */; };
 		8355C8002CE523970067D675 /* GameCenter.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8355C7FF2CE523970067D675 /* GameCenter.xcstrings */; };
 		8355C8022CE5258C0067D675 /* GymKit.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8355C8012CE5258C0067D675 /* GymKit.xcstrings */; };
 		8355C8042CE529A40067D675 /* HealthApp.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8355C8032CE529A40067D675 /* HealthApp.xcstrings */; };
@@ -433,7 +434,6 @@
 		83F626DA2B828E8C00ED343F /* TVAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F626D92B828E8C00ED343F /* TVAppView.swift */; };
 		83F6E26C2C8A2E300060187F /* RemindersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F6E26B2C8A2E300060187F /* RemindersView.swift */; };
 		83F745BA2CC18EC700FDB3BA /* NewDeviceOutreachUI.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83F745B92CC18EC700FDB3BA /* NewDeviceOutreachUI.xcstrings */; };
-		83F745BC2CC194F900FDB3BA /* AirDropSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83F745BB2CC194F900FDB3BA /* AirDropSettings.xcstrings */; };
 		83F77D692CD3E51F0026B1AC /* StoreSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83F77D682CD3E51F0026B1AC /* StoreSettings.xcstrings */; };
 		83F77D6B2CD3ED940026B1AC /* GameCenterUICore.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83F77D6A2CD3ED940026B1AC /* GameCenterUICore.xcstrings */; };
 		83F77D6D2CD3F2180026B1AC /* PeerPayment_Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83F77D6C2CD3F2180026B1AC /* PeerPayment_Localizable.xcstrings */; };
@@ -587,6 +587,7 @@
 		834A15072CD85B10004A0025 /* MobileCalSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = MobileCalSettings.xcstrings; sourceTree = "<group>"; };
 		834B5A212C4B3C83003A6940 /* CarPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlayView.swift; sourceTree = "<group>"; };
 		834B5A232C4C1836003A6940 /* AirDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirDropView.swift; sourceTree = "<group>"; };
+		834CAE472D1DE94000F2E069 /* AirDropSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AirDropSettings.xcstrings; sourceTree = "<group>"; };
 		8355C7FF2CE523970067D675 /* GameCenter.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = GameCenter.xcstrings; sourceTree = "<group>"; };
 		8355C8012CE5258C0067D675 /* GymKit.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = GymKit.xcstrings; sourceTree = "<group>"; };
 		8355C8032CE529A40067D675 /* HealthApp.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = HealthApp.xcstrings; sourceTree = "<group>"; };
@@ -894,7 +895,6 @@
 		83F626D92B828E8C00ED343F /* TVAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVAppView.swift; sourceTree = "<group>"; };
 		83F6E26B2C8A2E300060187F /* RemindersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersView.swift; sourceTree = "<group>"; };
 		83F745B92CC18EC700FDB3BA /* NewDeviceOutreachUI.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = NewDeviceOutreachUI.xcstrings; sourceTree = "<group>"; };
-		83F745BB2CC194F900FDB3BA /* AirDropSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AirDropSettings.xcstrings; sourceTree = "<group>"; };
 		83F77D682CD3E51F0026B1AC /* StoreSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = StoreSettings.xcstrings; sourceTree = "<group>"; };
 		83F77D6A2CD3ED940026B1AC /* GameCenterUICore.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = GameCenterUICore.xcstrings; sourceTree = "<group>"; };
 		83F77D6C2CD3F2180026B1AC /* PeerPayment_Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = PeerPayment_Localizable.xcstrings; sourceTree = "<group>"; };
@@ -1699,7 +1699,7 @@
 		83D0B1472CE2F9BA00DDEC69 /* Ungrouped */ = {
 			isa = PBXGroup;
 			children = (
-				83F745BB2CC194F900FDB3BA /* AirDropSettings.xcstrings */,
+				834CAE472D1DE94000F2E069 /* AirDropSettings.xcstrings */,
 				835BF1302CC19A2300F30DA1 /* AirPlayAndHandoffSettings.xcstrings */,
 				832877DA2CAD915400013B0B /* AmbientSettings.xcstrings */,
 				832877DC2CAD95C300013B0B /* AppleAccountUI.xcstrings */,
@@ -1727,6 +1727,8 @@
 				8314482C2CD9652A00FFEE51 /* HealthSettingsSpecifiers.xcstrings */,
 				8314482A2CD95F6500FFEE51 /* HealthUI-Localizable.xcstrings */,
 				831C1A4F2CCE9E3300866498 /* HomeScreenSettings.xcstrings */,
+				8317AB202CEE736B00989F15 /* iBooksSettings.xcstrings */,
+				83F388642D0B777000085103 /* InstalledApps.xcstrings */,
 				83C3F33E2CC2BEBA00AE2402 /* InternationalSettings.xcstrings */,
 				83E748B52CC6C3410081D660 /* LargeFontsSettings.xcstrings */,
 				83C79B922CE331A500F49B4F /* Localizable.xcstrings */,
@@ -1771,8 +1773,6 @@
 				831C1A572CCF1D0100866498 /* WallpaperSettings.xcstrings */,
 				8388C0B12CD473DB00FA7D4C /* WellnessDashboard-Localizable.xcstrings */,
 				832877FA2CAEEA7E00013B0B /* WiFiKitUILocalizableStrings.xcstrings */,
-				8317AB202CEE736B00989F15 /* iBooksSettings.xcstrings */,
-				83F388642D0B777000085103 /* InstalledApps.xcstrings */,
 			);
 			path = Ungrouped;
 			sourceTree = "<group>";
@@ -2161,7 +2161,6 @@
 				831C1A522CCE9F9000866498 /* MultitaskingAndGesturesSettings.xcstrings in Resources */,
 				8355C8222CE53B710067D675 /* ImproveMaps.xcstrings in Resources */,
 				8374886F2D0A6EB400865CA8 /* AssistantSettings-ExternalAIModel.xcstrings in Resources */,
-				83F745BC2CC194F900FDB3BA /* AirDropSettings.xcstrings in Resources */,
 				83FF692F2CC6C9CF00D77FBB /* LocalizedStrings-D94.xcstrings in Resources */,
 				832877E12CAD9A2C00013B0B /* BatteryUI.xcstrings in Resources */,
 				830976CF2CDD19FF0087F1A1 /* FollowUp.xcstrings in Resources */,
@@ -2198,6 +2197,7 @@
 				83AD8C592CCAC38E00A054B5 /* KeyboardsSettings.xcstrings in Resources */,
 				83A915462CE1280D00F718AA /* SpotlightSettings.xcstrings in Resources */,
 				837BCF3C2CD30AF2009B1E33 /* PasscodeLock-DimpleKey.xcstrings in Resources */,
+				834CAE482D1DE94000F2E069 /* AirDropSettings.xcstrings in Resources */,
 				83C79B912CE32FA600F49B4F /* SettingsSimulator.gif in Resources */,
 				834565762CAAE7B8002BE49D /* CameraSettings-CinematicAudio.xcstrings in Resources */,
 				836CDF932CB602B300B1C5B2 /* Restrictions.xcstrings in Resources */,
@@ -2752,7 +2752,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1307;
+				CURRENT_PROJECT_VERSION = 1308.2.10;
 				DEVELOPMENT_ASSET_PATHS = "\"Preferences/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
@@ -2766,7 +2766,7 @@
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2794,7 +2794,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1307;
+				CURRENT_PROJECT_VERSION = 1308.2.10;
 				DEVELOPMENT_ASSET_PATHS = "\"Preferences/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
@@ -2808,7 +2808,7 @@
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

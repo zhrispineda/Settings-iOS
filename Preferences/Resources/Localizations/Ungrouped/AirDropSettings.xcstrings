@@ -276,265 +276,265 @@
         "he": {
           "stringUnit": {
             "state": "translated",
-            "value": "‏AirDrop מאפשר לך לשתף פריטים באופן מיידי עם אנשים שנמצאים בסביבה. באפשרותך להפוך את המכשיר שלך לגלוי ב-AirDrop כדי לאפשר קבלת פריטים מכולם או רק מאנשי הקשר שלך. הפיכת המכשיר שלך לגלוי תפעיל את Bluetooth ואת תקשורת ה-WLAN. [פרטים נוספים…](⁨airDropSettingsOBK://⁩)"
+            "value": "‏AirDrop מאפשר לך לשתף פריטים באופן מיידי עם אנשים שנמצאים בסביבה. באפשרותך להפוך את המכשיר שלך לגלוי ב-AirDrop כדי לאפשר קבלת פריטים מכולם או רק מאנשי הקשר שלך. הפיכת המכשיר שלך לגלוי תפעיל את Bluetooth ואת תקשורת ה-WLAN. [מידע בנושא AirDrop ופרטיות…](airDropSettingsOBK://)"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop을 사용하여 근처에 있는 사람들과 즉시 공유할 수 있습니다. AirDrop에서 사용자를 발견할 수 있는 대상을 모든 사람으로 하거나 연락처에 있는 사람만으로 설정할 수 있습니다. 사용자를 찾을 수 있도록 하면 Bluetooth 및 WLAN이 켜집니다. [더 알⁠아⁠보⁠기…](airDropSettingsOBK://)"
+            "value": "AirDrop을 사용하여 근처에 있는 사람들과 즉시 공유할 수 있습니다. AirDrop에서 사용자를 발견할 수 있는 대상을 모든 사람으로 하거나 연락처에 있는 사람만으로 설정할 수 있습니다. 사용자를 찾을 수 있도록 하면 Bluetooth 및 WLAN이 켜집니다. [AirDrop 및 개인정보 보호에 관하여…](airDropSettingsOBK://)"
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop memungkinkan Anda berbagi langsung dengan orang di sekitar. Anda dapat ditemukan di AirDrop untuk menerima dari semua orang atau hanya orang di kontak Anda. Membuat diri Anda dapat ditemukan akan menyalakan Bluetooth dan WLAN. [Lebih Lanjut…](airDropSettingsOBK://)"
+            "value": "AirDrop memungkinkan Anda berbagi langsung dengan orang di sekitar. Anda dapat ditemukan di AirDrop untuk menerima dari semua orang atau hanya orang di kontak Anda. Membuat diri Anda dapat ditemukan akan menyalakan Bluetooth dan WLAN. [Mengenai AirDrop & Privasi…](airDropSettingsOBK://)"
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Via AirDrop kun je bestanden delen met anderen bij jou in de buurt. Je kunt jezelf in AirDrop detecteerbaar maken voor iedereen of alleen voor personen in Contacten. Als je jezelf detecteerbaar maakt, worden Bluetooth en WLAN ingeschakeld. [Meer informatie…](airDropSettingsOBK://)"
+            "value": "Via AirDrop kun je bestanden delen met anderen bij jou in de buurt. Je kunt jezelf in AirDrop detecteerbaar maken voor iedereen of alleen voor personen in Contacten. Als je jezelf detecteerbaar maakt, worden Bluetooth en WLAN ingeschakeld. [Over AirDrop en privacy…](airDropSettingsOBK://)"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop, yakınınızdaki kişilerle anında paylaşmanızı sağlar. Herkesten veya yalnızca Kişiler’inizdeki kişilerden alabilmek için AirDrop’ta bulunabilir olabilirsiniz. Kendinizi bulunabilir yaptığınızda Bluetooth ve WLAN açılacaktır. [Daha Fazla Bilgi…](airDropSettingsOBK://)"
+            "value": "AirDrop, yakınınızdaki kişilerle anında paylaşmanızı sağlar. Herkesten veya yalnızca Kişiler’inizdeki kişilerden alabilmek için AirDrop’ta bulunabilir olabilirsiniz. Kendinizi bulunabilir yaptığınızda Bluetooth ve WLAN açılır. [AirDrop ve Gizlilik Hakkında…](airDropSettingsOBK://)"
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop позволяет мгновенно делиться контентом с пользователями, находящимися рядом. Вы можете разрешить свое обнаружение в AirDrop и получать контент от любых пользователей или только от своих контактов. При включении обнаружения также будут включены Bluetooth и WLAN. [Подробнее…](airDropSettingsOBK://)"
+            "value": "Через AirDrop можно мгновенно делиться контентом с пользователями, находящимися рядом. Вы можете разрешить свое обнаружение в AirDrop и получать контент от любых пользователей или только от своих контактов. При включении обнаружения также будут включены Bluetooth и WLAN. [Об AirDrop и конфиденциальности…](airDropSettingsOBK://)"
           }
         },
         "fi": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDropin avulla jaat välittömästi lähellä olevien kanssa. Voit olla löydettävissä AirDropissa siten, että voit vastaanottaa kaikilta tai vain yhteystiedoiltasi. Jos asetat itsesi löydettäväksi, Bluetooth ja WLAN laitetaan päälle. [Lisätietoja…](airDropSettingsOBK://)"
+            "value": "AirDropin avulla jaat välittömästi lähellä olevien kanssa. Voit olla löydettävissä AirDropissa siten, että voit vastaanottaa kaikilta tai vain yhteystiedoiltasi. Jos asetat itsesi löydettäväksi, Bluetooth ja WLAN laitetaan päälle. [Tietoja: AirDrop ja tietosuoja…](airDropSettingsOBK://)"
           }
         },
         "hu": {
           "stringUnit": {
             "state": "translated",
-            "value": "Az AirDroppal egyszerűen megoszthat fájlokat a közelben lévőkkel. Felfedezhetővé teheti önmagát az AirDropban, és eldöntheti, hogy mindenkitől szeretne-e fogadni fájlokat, vagy csak a Kontaktokban szereplő személyekről. Ha felfedezhetővé teszi önmagát, azzal bekapcsolja a Bluetootht és a WLAN‑t. [Bővebben…](airDropSettingsOBK://)"
+            "value": "Az AirDroppal egyszerűen megoszthat fájlokat a közelben lévőkkel. Felfedezhetővé teheti önmagát az AirDropban, és eldöntheti, hogy mindenkitől szeretne-e fogadni fájlokat, vagy csak a Kontaktokban szereplő személyekről. Ha felfedezhetővé teszi önmagát, azzal bekapcsolja a Bluetootht és a WLAN‑t. [Az AirDropról és az adatvédelemről…](airDropSettingsOBK://)"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop ti consente di condividere contenuti all’istante con altre persone nelle vicinanze. Puoi renderti visibile con AirDrop e ricevere file da tutti o solo dai tuoi contatti. Rendendoti visibile, attiverai sia il Bluetooth, sia la rete WLAN. [Scopri di più…](airDropSettingsOBK://)"
+            "value": "AirDrop ti consente di condividere contenuti all’istante con altre persone nelle vicinanze. Puoi renderti visibile con AirDrop e ricevere file da tutti o solo dai tuoi contatti. Rendendoti visibile, attiverai sia il Bluetooth, sia la rete WLAN. [AirDrop e privacy…](airDropSettingsOBK://)"
           }
         },
         "es_419": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop te permite compartir contenido al instante con personas que están cerca. Puedes hacerte visible para recibir elementos de cualquier persona o sólo de tus contactos. Al hacerlo, se activarán las conexiones Bluetooth y WLAN. [Obtén detalles…](airDropSettingsOBK://)"
+            "value": "AirDrop te permite compartir contenido al instante con personas que están cerca. Puedes hacerte visible para recibir elementos de cualquier persona o sólo de tus contactos. Al hacerlo, se activarán las conexiones Bluetooth y WLAN. [Acerca de AirDrop y la privacidad…](airDropSettingsOBK://)"
           }
         },
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Το AirDrop σάς επιτρέπει να μοιράζεστε στοιχεία άμεσα με άτομα που βρίσκονται κοντά σας. Μπορείτε να κάνετε τη συσκευή σας ανακαλύψιμη στο AirDrop για να λαμβάνετε στοιχεία από όλα τα άτομα ή μόνο από άτομα που περιλαμβάνονται στις επαφές σας. Αν επιλέξετε να γίνει ανακαλύψιμη η συσκευή σας, θα ενεργοποιηθεί το Bluetooth και το WLAN. [Μάθετε περισσότερα…](airDropSettingsOBK://)"
+            "value": "Το AirDrop σάς επιτρέπει να μοιράζεστε στοιχεία άμεσα με άτομα που βρίσκονται κοντά σας. Μπορείτε να κάνετε τη συσκευή σας ανακαλύψιμη στο AirDrop για να λαμβάνετε στοιχεία από όλα τα άτομα ή μόνο από άτομα που περιλαμβάνονται στις επαφές σας. Αν επιλέξετε να γίνει ανακαλύψιμη η συσκευή σας, θα ενεργοποιηθεί το Bluetooth και το WLAN. [Πληροφορίες για το AirDrop και απόρρητο…](airDropSettingsOBK://)"
           }
         },
         "ca": {
           "stringUnit": {
             "state": "translated",
-            "value": "L’AirDrop et permet compartir continguts de manera instantània amb les persones que tinguis a prop. Pots fer que tothom pugui detectar‑te a l’AirDrop i enviar‑te ítems, o bé només qui tinguis als contactes. Si permets que se’t pugui detectar, s’activaran el Bluetooth i la WLAN. [Més informació…](airDropSettingsOBK://)"
+            "value": "L’AirDrop et permet compartir continguts de manera instantània amb les persones que tinguis a prop. Pots definir que tothom pugui descobrir‑t’hi i enviar‑te ítems, o bé només qui tinguis als contactes. Si permets que se t’hi pugui descobrir, s’activaran el Bluetooth i la WLAN. [Sobre l’AirDrop i la privacitat…](airDropSettingsOBK://)"
           }
         },
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "يتيح لك الإرسال السريع المشاركة الفورية مع الأشخاص القريبين منك. يمكنك جعل جهازك قابلًا للاكتشاف في الإرسال السريع للاستلام من الجميع، أو فقط من الأشخاص الموجودين في جهات الاتصال لديك. عندما تجعل نفسك قابلًا للاكتشاف، سيؤدي ذلك إلى تشغيل Bluetooth و WLAN. [معرفة المزيد…](airDropSettingsOBK://)"
+            "value": "يتيح لك الإرسال السريع المشاركة الفورية مع الأشخاص القريبين منك. يمكنك جعل جهازك قابلًا للاكتشاف في الإرسال السريع للاستلام من الجميع، أو فقط من الأشخاص الموجودين في جهات الاتصال لديك. عندما تجعل نفسك قابلًا للاكتشاف، سيؤدي ذلك إلى تشغيل Bluetooth و WLAN. [حول الإرسال السريع والخصوصية…](airDropSettingsOBK://)"
           }
         },
         "zh_TW": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop能讓你快速與附近的人共享內容。你可以在AirDrop中接收所有人或只有聯絡人傳來的檔案。將你自己設為可被偵測的狀態，將會開啟藍牙和WLAN。[更多內容⋯](airDropSettingsOBK://)"
+            "value": "AirDrop能讓你快速與附近的人共享內容。你可以在AirDrop中接收所有人或只有聯絡人傳來的檔案。將你自己設為可被偵測的狀態，將會開啟藍牙和WLAN。[關於AirDrop與隱私權⋯](airDropSettingsOBK://)"
           }
         },
         "zh_HK": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop讓你可以與附近的人即時共享。你可以在AirDrop中接收所有人或只有聯絡人傳來的檔案。開啟藍牙及WLAN會令自己處於可被偵測的狀態。[進一步了解⋯](airDropSettingsOBK://)"
+            "value": "AirDrop讓你可以與附近的人即時共享。你可以在AirDrop中被偵測以接收所有人或只有聯絡人傳來的內容。開啟藍牙及WLAN會令自己處於可被偵測的狀態。[關於AirDrop與私隱⋯](airDropSettingsOBK://)"
           }
         },
         "sv": {
           "stringUnit": {
             "state": "translated",
-            "value": "Med AirDrop kan du dela ögonblickligen med andra i närheten. Du kan vara upptäckbar i AirDrop så att du kan ta emot från alla eller bara från dina kontakter. Om du gör dig upptäckbar aktiveras Bluetooth och WLAN. [Läs mer…](airDropSettingsOBK://)"
+            "value": "Med AirDrop kan du dela ögonblickligen med andra i närheten. Du kan vara upptäckbar i AirDrop så att du kan ta emot från alla eller bara från dina kontakter. Om du gör dig upptäckbar aktiveras Bluetooth och WLAN. [Om AirDrop och integritet…](airDropSettingsOBK://)"
           }
         },
         "no": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bruk AirDrop til å dele filer direkte med personer i nærheten. Du kan velge å være synlig for alle i AirDrop eller kun for personer i kontaktlisten din Hvis du gjør deg selv synlig, slås Bluetooth og WLAN på. [Finn ut mer…](airDropSettingsOBK://)"
+            "value": "Bruk AirDrop til å dele filer direkte med personer i nærheten. Du kan velge å være synlig for alle i AirDrop eller kun for personer i kontaktlisten din. Hvis du gjør deg selv synlig, slås Bluetooth og WLAN på. [Om AirDrop og personvern…](airDropSettingsOBK://)"
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop की मदद से आप आस-पास के लोगों के साथ तुरंत शेयर कर सकते हैं। आप AirDrop द्वारा प्राप्त करने के लिए हर किसी के द्वारा या केवल अपनी संपर्क सूची में शामिल लोगों के द्वारा ही खोजे जा सकते हैं। अपने आपको खोजे जाने का विकल्प चुनने पर Bluetooth और WLAN चालू हो जाएगा। [अधिक जानें…](airDropSettingsOBK://)"
+            "value": "AirDrop की मदद से आप आस-पास के लोगों के साथ तत्काल शेयरिंग शुरू कर ^[सकते हैं](inflect: true)। AirDrop के ज़रिए आपके साथ शेयर करने के लिए सभी लोग या सिर्फ़ आपके संपर्कों में मौजूद लोग आपको खोज सकेंगे। ख़ुद को खोजे जाने योग्य बनाने पर Bluetooth और WLAN को चालू कर दिया जाएगा। [AirDrop और गोपनीयता परिचय…](airDropSettingsOBK://)"
           }
         },
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Med AirDrop kan du hurtigt dele med andre i nærheden. Du kan være synlig i AirDrop for at modtage fra alle eller kun fra personer i dine kontakter. Bluetooth og WLAN bliver slået til, når du er synlig. [Læs mere…](airDropSettingsOBK://)"
+            "value": "Med AirDrop kan du hurtigt dele med andre i nærheden. Du kan være synlig i AirDrop for at modtage fra alle eller kun fra personer i dine kontakter. Bluetooth og WLAN bliver slået til, når du er synlig. [Om AirDrop og anonymitet…](airDropSettingsOBK://)"
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop lets you share instantly with people nearby. You can be discoverable in AirDrop to receive from everyone or only people in your contacts. Making yourself discoverable will turn on Bluetooth and WLAN. [Learn More…](airDropSettingsOBK://)"
+            "value": "AirDrop lets you share instantly with people nearby. You can be discoverable in AirDrop to receive from everyone or only people in your contacts. Making yourself discoverable will turn on Bluetooth and WLAN. [About AirDrop & Privacy…](airDropSettingsOBK://)"
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop umożliwia natychmiastowe udostępnianie rzeczy osobom znajdującym się w pobliżu. Twoje urządzenie może być wykrywalne przez AirDrop, co pozwoli odbierać pliki od wszystkich lub tylko od Twoich kontaktów. Włączenie wykrywalności spowoduje włączenie Bluetooth i WLAN. [Więcej informacji…](airDropSettingsOBK://)"
+            "value": "AirDrop umożliwia natychmiastowe udostępnianie rzeczy osobom znajdującym się w pobliżu. Twoje urządzenie może być wykrywalne przez AirDrop, co pozwoli odbierać pliki od wszystkich lub tylko od Twoich kontaktów. Włączenie wykrywalności spowoduje włączenie Bluetooth i WLAN. [AirDrop i prywatność…](airDropSettingsOBK://)"
           }
         },
         "fr_CA": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop vous permet de partager des données instantanément avec des personnes à proximité. Vous pouvez autoriser tout le monde ou seulement vos contacts à vous détecter dans AirDrop. Le fait d’autoriser d’autres personnes à vous détecter activera Bluetooth et le réseau WLAN. [En savoir plus…](airDropSettingsOBK://)"
+            "value": "AirDrop vous permet de partager des données instantanément avec des personnes à proximité. Vous pouvez autoriser tout le monde ou seulement vos contacts à vous détecter dans AirDrop. Le fait d’autoriser d’autres personnes à vous détecter activera Bluetooth et le réseau WLAN. [À propos d’AirDrop et de la confidentialité…](airDropSettingsOBK://)"
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop ช่วยให้คุณแชร์กับผู้คนที่อยู่ใกล้เคียงได้ทันที คุณสามารถกำหนดให้ทุกคนมองเห็นคุณและคุณสามารถรับข้อมูลได้ใน AirDrop หรือเฉพาะผู้คนในรายชื่อของคุณเท่านั้น การกำหนดให้มองเห็นคุณได้จะเปิดบลูทูธและ WLAN [เรียนรู้เพิ่มเติม…](airDropSettingsOBK://)"
+            "value": "AirDrop ช่วยให้คุณแชร์กับผู้คนที่อยู่ใกล้เคียงได้ทันที คุณสามารถรับข้อมูลผ่าน AirDrop โดยเลือกให้ทุกคนมองเห็นคุณได้หรือเฉพาะผู้คนในรายชื่อของคุณเท่านั้น การกำหนดให้มองเห็นคุณได้จะเปิดบลูทูธและ WLAN [เกี่ยวกับ AirDrop และความเป็นส่วนตัว…](airDropSettingsOBK://)"
           }
         },
         "zh_CN": {
           "stringUnit": {
             "state": "translated",
-            "value": "隔空投送可让你与附近的用户立即共享。你可以设置在隔空投送中可被发现，以接收所有人或通讯录联系人发来的文件。使自己可被发现将会打开蓝牙和无线局域网。[进一步了解…](airDropSettingsOBK://)"
+            "value": "隔空投送可让你与附近用户立即共享。你可以设置在隔空投送中可被发现，以接收所有人或仅接收通讯录联系人发来的文件。使自己可被发现将会打开蓝牙和无线局域网。[关于隔空投送与隐私…](airDropSettingsOBK://)"
           }
         },
         "en_GB": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop lets you share instantly with people nearby. You can be discoverable in AirDrop to receive from everyone or only people in your contacts. Making yourself discoverable will turn on Bluetooth and WLAN. [Learn more…](airDropSettingsOBK://)"
+            "value": "AirDrop lets you share instantly with people nearby. You can be discoverable in AirDrop to receive from everyone or only people in your contacts. Making yourself discoverable will turn on Bluetooth and WLAN. [About AirDrop & Privacy…](airDropSettingsOBK://)"
           }
         },
         "lt": {
           "stringUnit": {
             "state": "translated",
-            "value": "„AirDrop“ leidžia akimirksniu bendrinti turinį su netoliese esančiais žmonėmis. Galite leisti „AirDrop“ paslaugai jus aptikti, kad gautumėte duomenis iš visų asmenų arba tik iš adresatų. [Sužinokite daugiau…](airDropSettingsOBK://)"
+            "value": "„AirDrop“ leidžia akimirksniu bendrinti turinį su netoliese esančiais asmenimis. Galite leisti „AirDrop“ paslaugai jus aptikti ir gauti duomenis iš visų asmenų arba tik iš adresatų. Jei leisite jus aptikti, bus įjungtas „Bluetooth“ ir WLAN [Apie „AirDrop“ ir privatumą…](airDropSettingsOBK://)"
           }
         },
         "es_US": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop te permite compartir contenido al instante con personas que están cerca. Puedes hacerte visible para recibir elementos de cualquier persona o sólo de tus contactos. Al hacerlo, se activarán las conexiones Bluetooth y WLAN. [Obtén detalles…](airDropSettingsOBK://)"
+            "value": "AirDrop te permite compartir contenido al instante con personas que están cerca. Puedes hacerte visible para recibir elementos de cualquier persona o sólo de tus contactos. Al hacerlo, se activarán las conexiones Bluetooth y WLAN. [Acerca de AirDrop y la privacidad…](airDropSettingsOBK://)"
           }
         },
         "cs": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop vám umožňuje okamžitě sdílet data s lidmi ve vašem okolí. Chcete‑li přijímat data ode všech lidí nebo jen od svých kontaktů, můžete se nastavit jako viditelní přes AirDrop. Pokud to uděláte, zapne se Bluetooth a WLAN. [Další informace…](airDropSettingsOBK://)"
+            "value": "AirDrop vám umožňuje okamžitě sdílet data s lidmi ve vašem okolí. Chcete‑li přijímat data ode všech lidí nebo jen od svých kontaktů, můžete se nastavit jako viditelní přes AirDrop. Pokud to uděláte, zapne se Bluetooth a WLAN. [O AirDropu a soukromí…](airDropSettingsOBK://)"
           }
         },
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop membolehkan anda berkongsi serta-merta dengan orang berdekatan. Anda boleh ditemui dalam AirDrop untuk menerima daripada semua orang atau hanya orang dalam kenalan anda. Menjadikan diri anda boleh ditemui akan mengaktifkan Bluetooth dan WLAN. [Ketahui Lebih Lanjut…](airDropSettingsOBK://)"
+            "value": "AirDrop membolehkan anda berkongsi serta-merta dengan orang berdekatan. Anda boleh ditemui dalam AirDrop untuk menerima daripada semua orang atau hanya orang dalam kenalan anda. Menjadikan diri anda boleh ditemui akan mengaktifkan Bluetooth dan WLAN. [Perihal AirDrop & Privasi…](airDropSettingsOBK://)"
           }
         },
         "sk": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop vám umožňuje okamžité zdieľanie s osobami vo vašej blízkosti. Ak chcete prijímať dáta od všetkých alebo len od ľudí to svojich kontaktov, môžete sa nastaviť ako viditeľní pre AirDrop. Ak sa nastavíte ako viditeľní, zapne sa Bluetooth a WLAN. [Viac informácií…](airDropSettingsOBK://)"
+            "value": "AirDrop vám umožňuje okamžité zdieľanie s osobami vo vašej blízkosti. Ak chcete prijímať dáta od všetkých alebo len od ľudí zo svojich kontaktov, môžete sa nastaviť ako viditeľní pre AirDrop. Ak sa nastavíte ako viditeľní, zapne sa Bluetooth a WLAN. [O AirDrope a súkromí…](airDropSettingsOBK://)"
           }
         },
         "bg": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop ви позволява да споделяте незабавно с хората около вас. Можете да бъдете открити и да получавате чрез AirDrop от всички или само от хора от вашите контакти. Ако разрешите откриването, Bluetooth и WLAN ще се включат. [Научете повече…](airDropSettingsOBK://)"
+            "value": "AirDrop ви позволява да споделяте незабавно с хората около вас. Можете да бъдете открити и да получавате чрез AirDrop от всички или само от хора от вашите контакти. Ако разрешите откриването, Bluetooth и WLAN ще се включат. [Относно AirDrop и поверителност…](airDropSettingsOBK://)"
           }
         },
         "sl": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop vam omogoča takojšnje deljenje z osebami v bližini. V funkciji AirDrop ste lahko vidni za prejem od kogarkoli ali samo od svojih stikov. Če omogočite vidnost, se bo vklopila povezava Bluetooth ali povezava z omrežjem WLAN. [Več o tem …](airDropSettingsOBK://)"
+            "value": "AirDrop vam omogoča takojšnje deljenje z osebami v bližini. V funkciji AirDrop ste lahko vidni za prejem od kogarkoli ali samo od svojih stikov. Če omogočite vidnost, se bo vklopila povezava Bluetooth in povezava z omrežjem WLAN. [Več o funkciji AirDrop in zasebnosti …](airDropSettingsOBK://)"
           }
         },
         "en_AU": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop lets you share instantly with people nearby. You can be discoverable in AirDrop to receive from everyone or only people in your contacts. Making yourself discoverable will turn on Bluetooth and WLAN. [Learn more…](airDropSettingsOBK://)"
+            "value": "AirDrop lets you share instantly with people nearby. You can be discoverable in AirDrop to receive from everyone or only people in your contacts. Making yourself discoverable will turn on Bluetooth and WLAN. [About AirDrop & Privacy…](airDropSettingsOBK://)"
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Mit AirDrop kannst du Daten sofort mit anderen in der Nähe teilen. Du kannst für den Empfang von Daten in AirDrop für alle oder nur für deine Kontakte sichtbar sein. Wenn du dich sichtbar machst, werden Bluetooth und WLAN aktiviert. [Weitere Infos …](airDropSettingsOBK://)"
+            "value": "Mit AirDrop kannst du Daten sofort mit anderen in der Nähe teilen. Du kannst für den Empfang von Daten in AirDrop für alle oder nur für deine Kontakte sichtbar sein. Wenn du dich sichtbar machst, werden Bluetooth und WLAN aktiviert. [Über AirDrop & Datenschutz …](airDropSettingsOBK://)"
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop cho phép bạn chia sẻ tức thời với những người ở gần. Bạn có thể đặt trạng thái có thể tìm thấy trong AirDrop để nhận dữ liệu từ mọi người hoặc chỉ những người trong danh bạ của bạn. Đặt thiết bị của bạn thành có thể tìm thấy sẽ bật Bluetooth và WLAN. [Tìm hiểu thêm…](airDropSettingsOBK://)"
+            "value": "AirDrop cho phép bạn chia sẻ tức thời với những người ở gần. Bạn có thể đặt trạng thái có thể tìm thấy trong AirDrop để nhận dữ liệu từ mọi người hoặc chỉ những người trong danh bạ của bạn. Đặt thiết bị của bạn thành có thể tìm thấy sẽ bật Bluetooth và WLAN. [AirDrop & Quyền riêng tư…](airDropSettingsOBK://)"
           }
         },
         "ro": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop vă permite să partajați instantaneu cu persoanele din apropiere. Vă puteți face dispozitivul detectabil prin AirDrop pentru a primi fișiere de la oricine sau doar de la contactele dvs. Dacă faceți dispozitivul detectabil, vor fi activate conexiunile Bluetooth și WLAN. [Mai multe…](airDropSettingsOBK://)"
+            "value": "AirDrop vă permite să partajați instantaneu cu persoanele din apropiere. Vă puteți face dispozitivul detectabil prin AirDrop pentru a primi fișiere de la oricine sau doar de la contactele dvs. Dacă faceți dispozitivul detectabil, vor fi activate conexiunile Bluetooth și WLAN. [Despre AirDrop și intimitate…](airDropSettingsOBK://)"
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop дає змогу миттєво надсилати різноманітний вміст користувачам поблизу. Можна зробити себе виявним в AirDrop, щоб отримувати матеріали від усіх чи лише від людей зі свого списку контактів. Перехід у виявний стан увімкне Bluetooth і WLAN. [Докладніше…](airDropSettingsOBK://)"
+            "value": "AirDrop дає змогу миттєво надсилати різноманітний вміст людям поблизу. Можна ввімкнути виявлення в AirDrop, щоб отримувати вміст від усіх або лише від контактів. Це ввімкне Bluetooth і WLAN. [Про AirDrop і приватність…](airDropSettingsOBK://)"
           }
         },
         "kk": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop функциясы қасыңыздағы адамдармен файлдарды жылдам бөлісуге мүмкіндік береді. AirDrop ішінде өзіңізді анықтау мүмкіндігін қосып, әркімнен немесе контактілеріңіздегі адамдардан ғана файлдар алуыңызға болады. Анықтау мүмкіндігін қоссаңыз, Bluetooth және WLAN функциялары да қосылады. [Толығырақ…](airDropSettingsOBK://)"
+            "value": "AirDrop функциясы жаныңыздағы адамдармен файлдарды жылдам бөлісуге мүмкіндік береді. AirDrop ішінде өзіңізді анықтау мүмкіндігін қосып, әркімнен немесе контактілеріңіздегі адамдардан ғана файлдар алуыңызға болады. Анықтау мүмкіндігін қоссаңыз, Bluetooth және WLAN функциялары да қосылады. [AirDrop және құпиялылық туралы ақпарат…](airDropSettingsOBK://)"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop vous permet de partager instantanément des éléments avec des utilisateurs à proximité. Vous pouvez vous rendre détectable dans AirDrop pour recevoir des éléments de tous les utilisateurs ou de vos contacts uniquement. Si vous vous rendez détectable, le Bluetooth et le WLAN seront activés. [En savoir plus…](airDropSettingsOBK://)"
+            "value": "AirDrop vous permet de partager instantanément des éléments avec des utilisateurs à proximité. Vous pouvez vous rendre détectable dans AirDrop pour recevoir des éléments de tous les utilisateurs ou de vos contacts uniquement. Si vous vous rendez détectable, le Bluetooth et le WLAN seront activés. [AirDrop et confidentialité…](airDropSettingsOBK://)"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop te permite compartir contenido al instante con personas que estén cerca. Para recibir archivos, puedes elegir ser visible para todo el mundo o solo para tus contactos. En ambos casos, se activará la función Bluetooth y la red WLAN. [Más información…](airDropSettingsOBK://)"
+            "value": "AirDrop te permite compartir contenido al instante con personas que estén cerca. Puedes elegir ser visible para todo el mundo para que cualquier persona pueda enviarte contenido o bien limitar la visibilidad a tus contactos. En ambos casos, se activará la función Bluetooth y la red WLAN. [Acerca de AirDrop y la privacidad…](airDropSettingsOBK://)"
           }
         },
         "pt": {
           "stringUnit": {
             "state": "translated",
-            "value": "O AirDrop permite compartilhar itens instantaneamente com pessoas por perto. Você pode ficar visível no AirDrop para receber itens de qualquer pessoa ou somente dos seus contatos. Para isso, o Bluetooth e a rede WLAN serão ativados. [Saiba Mais…](airDropSettingsOBK://)"
+            "value": "O AirDrop permite compartilhar itens instantaneamente com pessoas por perto. Você pode ficar visível no AirDrop para receber itens de qualquer pessoa ou somente dos seus contatos. Para isso, o Bluetooth e a rede WLAN serão ativados. [Sobre o AirDrop e Privacidade…](airDropSettingsOBK://)"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDropで近くの人とすぐにデータを共有できます。AirDropで検出可能にして、すべての人から、または“連絡先”に登録済みの人のみから受信可能にできます。このデバイスを検出可能にすると、BluetoothとWLANがオンになります。[詳しい情報…](airDropSettingsOBK://)"
+            "value": "AirDropで近くの人とすぐにデータを共有できます。AirDropで検出可能にして、すべての人から、または“連絡先”に登録済みの人のみから受信可能にできます。このデバイスを検出可能にすると、BluetoothとWLANがオンになります。[AirDropとプライバシーについて…](airDropSettingsOBK://)"
           }
         },
         "pt_PT": {
           "stringUnit": {
             "state": "translated",
-            "value": "O AirDrop permite‑lhe partilhar de imediato com quem se encontra à sua volta. Pode optar por estar visível no AirDrop para poder receber ficheiros de qualquer pessoa ou só dos seus contactos. Se optar por estar visível, Bluetooth e WLAN serão ativados. [Saiba mais…](airDropSettingsOBK://)"
+            "value": "O AirDrop permite‑lhe partilhar de imediato com quem se encontra à sua volta. Pode optar por estar visível no AirDrop para poder receber ficheiros de qualquer pessoa ou só dos seus contactos. Se optar por estar visível, Bluetooth e WLAN serão ativados. [Acerca de AirDrop e Privacidade…](airDropSettingsOBK://)"
           }
         },
         "hr": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop vam omogućava neposredno dijeljenje s osobama u blizini. Možete podesiti da vas mogu pronaći u AirDropu kako biste primali sadržaje od svih ili samo od osoba u vašim kontaktima. Ako podesite da vas se može pronaći, uključit će se Bluetooth i WLAN. [Saznajte više…](airDropSettingsOBK://)"
+            "value": "AirDrop vam omogućava neposredno dijeljenje s osobama u blizini. Možete podesiti da vas mogu pronaći u AirDropu kako biste primali sadržaje od svih ili samo od osoba u vašim kontaktima. Ako podesite da vas se može pronaći, uključit će se Bluetooth i WLAN. [Više o AirDropu i privatnosti…](airDropSettingsOBK://)"
           }
         }
       }
@@ -545,265 +545,265 @@
         "he": {
           "stringUnit": {
             "state": "translated",
-            "value": "‏AirDrop מאפשר לך לשתף פריטים באופן מיידי עם אנשים שנמצאים בסביבה. באפשרותך להפוך את המכשיר שלך לגלוי ב-AirDrop כדי לאפשר קבלת פריטים מכולם או רק מאנשי קשר שלך. [פרטים נוספים…](⁨airDropSettingsOBK://⁩)"
+            "value": "‏AirDrop מאפשר לך לשתף פריטים באופן מיידי עם אנשים שנמצאים בסביבה. באפשרותך להפוך את המכשיר שלך לגלוי ב-AirDrop כדי לאפשר קבלת פריטים מכולם או רק מאנשי קשר שלך. [מידע בנושא AirDrop ופרטיות…](airDropSettingsOBK://)"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop을 사용하여 근처에 있는 사람들과 즉시 공유할 수 있습니다. AirDrop에서 사용자를 발견할 수 있는 대상을 모든 사람으로 하거나 연락처에 있는 사람만으로 설정할 수 있습니다. [더 알⁠아⁠보⁠기…](airDropSettingsOBK://)"
+            "value": "AirDrop을 사용하여 근처에 있는 사람들과 즉시 공유할 수 있습니다. AirDrop에서 사용자를 발견할 수 있는 대상을 모든 사람으로 하거나 연락처에 있는 사람만으로 설정할 수 있습니다. [AirDrop 및 개인정보 보호에 관하여…](airDropSettingsOBK://)"
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop memungkinkan Anda berbagi langsung dengan orang di sekitar. Anda dapat ditemukan di AirDrop untuk menerima dari semua orang atau hanya orang di kontak Anda. [Lebih Lanjut…](airDropSettingsOBK://)"
+            "value": "AirDrop memungkinkan Anda berbagi langsung dengan orang di sekitar. Anda dapat ditemukan di AirDrop untuk menerima dari semua orang atau hanya orang di kontak Anda. [Mengenai AirDrop & Privasi…](airDropSettingsOBK://)"
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Via AirDrop kun je bestanden delen met anderen bij jou in de buurt. Je kunt jezelf in AirDrop detecteerbaar maken voor iedereen of alleen voor personen in Contacten. [Meer informatie…](airDropSettingsOBK://)"
+            "value": "Via AirDrop kun je bestanden delen met anderen bij jou in de buurt. Je kunt jezelf in AirDrop detecteerbaar maken voor iedereen of alleen voor personen in Contacten. [Over AirDrop en privacy…](airDropSettingsOBK://)"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop, yakınınızdaki kişilerle anında paylaşmanızı sağlar. Herkesten veya yalnızca Kişiler’inizdeki kişilerden alabilmek için AirDrop’ta bulunabilir olabilirsiniz. [Daha Fazla Bilgi…](airDropSettingsOBK://)"
+            "value": "AirDrop, yakınınızdaki kişilerle anında paylaşmanızı sağlar. Herkesten veya yalnızca Kişiler’inizdeki kişilerden alabilmek için AirDrop’ta bulunabilir olabilirsiniz. [AirDrop ve Gizlilik Hakkında…](airDropSettingsOBK://)"
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop позволяет мгновенно делиться контентом с пользователями, находящимися рядом. Вы можете разрешить свое обнаружение в AirDrop и получать контент от любых пользователей или только от своих контактов. [Подробнее…](airDropSettingsOBK://)"
+            "value": "Через AirDrop можно мгновенно делиться контентом с пользователями, находящимися рядом. Вы можете разрешить свое обнаружение в AirDrop и получать контент от любых пользователей или только от своих контактов. [Об AirDrop и конфиденциальности…](airDropSettingsOBK://)"
           }
         },
         "fi": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDropin avulla jaat välittömästi lähellä olevien kanssa. Voit olla löydettävissä AirDropissa siten, että voit vastaanottaa kaikilta tai vain yhteystiedoiltasi. [Lisätietoja…](airDropSettingsOBK://)"
+            "value": "AirDropin avulla voit jakaa nopeasti lähellä olevien kanssa. Voit olla löydettävissä AirDropissa siten, että voit vastaanottaa kaikilta tai vain yhteystiedoiltasi. [Tietoja: AirDrop ja tietosuoja…](airDropSettingsOBK://)"
           }
         },
         "hu": {
           "stringUnit": {
             "state": "translated",
-            "value": "Az AirDroppal egyszerűen megoszthat fájlokat a közelben lévőkkel. Felfedezhetővé teheti önmagát az AirDropban, és eldöntheti, hogy mindenkitől szeretne-e fogadni fájlokat, vagy csak a Kontaktokban szereplő személyekről. [Bővebben…](airDropSettingsOBK://)"
+            "value": "Az AirDroppal egyszerűen megoszthat fájlokat a közelben lévőkkel. Felfedezhetővé teheti önmagát az AirDropban, és eldöntheti, hogy mindenkitől szeretne-e fogadni fájlokat, vagy csak a Kontaktokban szereplő személyektől. [Az AirDropról és az adatvédelemről…](airDropSettingsOBK://)"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop ti consente di condividere contenuti all’istante con altre persone nelle vicinanze. Puoi renderti visibile con AirDrop e ricevere file da tutti o solo dai tuoi contatti. [Scopri di più…](airDropSettingsOBK://)"
+            "value": "AirDrop ti consente di condividere contenuti all’istante con altre persone nelle vicinanze. Puoi renderti visibile con AirDrop e ricevere file da tutti o solo dai tuoi contatti. [AirDrop e privacy…](airDropSettingsOBK://)"
           }
         },
         "es_419": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop te permite compartir contenido al instante con personas que están cerca. Puedes hacerte visible para recibir elementos de cualquier persona o sólo de tus contactos. [Obtén detalles…](airDropSettingsOBK://)"
+            "value": "AirDrop te permite compartir contenido al instante con personas que están cerca. Puedes hacerte visible para recibir elementos de cualquier persona o sólo de tus contactos. [Acerca de AirDrop y la privacidad…](airDropSettingsOBK://)"
           }
         },
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Το AirDrop σάς επιτρέπει να μοιράζεστε στοιχεία άμεσα με άτομα που βρίσκονται κοντά σας. Μπορείτε να κάνετε τη συσκευή σας ανακαλύψιμη στο AirDrop για να λαμβάνετε στοιχεία από όλα τα άτομα ή μόνο από άτομα που περιλαμβάνονται στις επαφές σας. [Μάθετε περισσότερα…](airDropSettingsOBK://)"
+            "value": "Το AirDrop σάς επιτρέπει να μοιράζεστε στοιχεία άμεσα με άτομα που βρίσκονται κοντά σας. Μπορείτε να κάνετε τη συσκευή σας ανακαλύψιμη στο AirDrop για να λαμβάνετε στοιχεία από όλα τα άτομα ή μόνο από άτομα που περιλαμβάνονται στις επαφές σας. [Πληροφορίες για το AirDrop και απόρρητο…](airDropSettingsOBK://)"
           }
         },
         "ca": {
           "stringUnit": {
             "state": "translated",
-            "value": "L’AirDrop et permet compartir continguts de manera instantània amb les persones que tinguis a prop. Pots fer que tothom pugui detectar‑te a l’AirDrop i enviar‑te ítems, o bé només qui tinguis als contactes. [Més informació…](airDropSettingsOBK://)"
+            "value": "L’AirDrop et permet compartir continguts de manera instantània amb les persones que tinguis a prop. Pots definir que tothom pugui descobrir‑t’hi i enviar‑te ítems, o bé només qui tinguis als contactes. [Sobre l’AirDrop i la privacitat…](airDropSettingsOBK://)"
           }
         },
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "يتيح لك الإرسال السريع المشاركة الفورية مع الأشخاص القريبين منك. يمكنك جعل جهازك قابلًا للاكتشاف في الإرسال السريع للاستلام من الجميع، أو فقط من الأشخاص الموجودين في جهات الاتصال لديك. [معرفة المزيد…](airDropSettingsOBK://)"
+            "value": "يتيح لك الإرسال السريع المشاركة الفورية مع الأشخاص القريبين منك. يمكنك جعل جهازك قابلًا للاكتشاف في الإرسال السريع للاستلام من الجميع، أو فقط من الأشخاص الموجودين في جهات الاتصال لديك. [حول الإرسال السريع والخصوصية…](airDropSettingsOBK://)"
           }
         },
         "zh_TW": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop能讓你快速與附近的人共享內容。你可以在AirDrop中接收所有人或只有聯絡人傳來的檔案。[更多內容⋯](airDropSettingsOBK://)"
+            "value": "AirDrop能讓你快速與附近的人共享內容。你可以在AirDrop中接收所有人或只有聯絡人傳來的檔案。[關於AirDrop與隱私權⋯](airDropSettingsOBK://)"
           }
         },
         "zh_HK": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop讓你可以與附近的人即時共享。你可以在AirDrop中接收所有人或只有聯絡人傳來的檔案。[進一步了解⋯](airDropSettingsOBK://)"
+            "value": "AirDrop讓你可以與附近的人即時共享。你可以在AirDrop中被偵測以接收所有人或只有聯絡人傳來的內容。[關於AirDrop與私隱⋯](airDropSettingsOBK://)"
           }
         },
         "sv": {
           "stringUnit": {
             "state": "translated",
-            "value": "Med AirDrop kan du dela ögonblickligen med andra i närheten. Du kan vara upptäckbar i AirDrop så att du kan ta emot från alla eller bara från dina kontakter. [Läs mer…](airDropSettingsOBK://)"
+            "value": "Med AirDrop kan du dela ögonblickligen med andra i närheten. Du kan vara upptäckbar i AirDrop så att du kan ta emot från alla eller bara från dina kontakter. [Om AirDrop och integritet…](airDropSettingsOBK://)"
           }
         },
         "no": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bruk AirDrop til å dele filer direkte med personer i nærheten. Du kan velge å være synlig for alle i AirDrop eller kun for personer i kontaktlisten din. [Finn ut mer…](airDropSettingsOBK://)"
+            "value": "Bruk AirDrop til å dele filer direkte med personer i nærheten. Du kan velge å være synlig for alle i AirDrop eller kun for personer i kontaktlisten din. [Om AirDrop og personvern…](airDropSettingsOBK://)"
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop की मदद से आप आस-पास के लोगों के साथ तुरंत शेयर कर सकते हैं। आप AirDrop द्वारा प्राप्त करने के लिए हर किसी के द्वारा या केवल अपनी संपर्क सूची में शामिल लोगों के द्वारा ही खोजे जा सकते हैं। [अधिक जानें…](airDropSettingsOBK://)"
+            "value": "AirDrop की मदद से आप आस-पास के लोगों के साथ तत्काल शेयरिंग शुरू कर ^[सकते हैं](inflect: true)। AirDrop के ज़रिए आपके साथ शेयर करने के लिए सभी लोग या सिर्फ़ आपके संपर्कों में मौजूद लोग आपको खोज सकेंगे। [AirDrop और गोपनीयता परिचय…](airDropSettingsOBK://)"
           }
         },
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Med AirDrop kan du hurtigt dele med andre i nærheden. Du kan være synlig i AirDrop for at modtage fra alle eller kun fra personer i dine kontakter. [Læs mere…](airDropSettingsOBK://)"
+            "value": "Med AirDrop kan du hurtigt dele med andre i nærheden. Du kan være synlig i AirDrop for at modtage fra alle eller kun fra personer i dine kontakter. [Om AirDrop og anonymitet…](airDropSettingsOBK://)"
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop lets you share instantly with people nearby. You can be discoverable in AirDrop to receive from everyone or only people in your contacts. [Learn More…](airDropSettingsOBK://)"
+            "value": "AirDrop lets you share instantly with people nearby. You can be discoverable in AirDrop to receive from everyone or only people in your contacts. [About AirDrop & Privacy…](airDropSettingsOBK://)"
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop umożliwia natychmiastowe udostępnianie rzeczy osobom znajdującym się w pobliżu. Twoje urządzenie może być wykrywalne przez AirDrop, co pozwoli odbierać pliki od wszystkich lub tylko od Twoich kontaktów. [Więcej informacji…](airDropSettingsOBK://)"
+            "value": "AirDrop umożliwia natychmiastowe udostępnianie rzeczy osobom znajdującym się w pobliżu. Twoje urządzenie może być wykrywalne przez AirDrop, co pozwoli odbierać pliki od wszystkich lub tylko od Twoich kontaktów. [AirDrop i prywatność…](airDropSettingsOBK://)"
           }
         },
         "fr_CA": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop vous permet de partager des données instantanément avec des personnes à proximité. Vous pouvez autoriser tout le monde ou seulement vos contacts à vous détecter dans AirDrop. [En savoir plus…](airDropSettingsOBK://)"
+            "value": "AirDrop vous permet de partager des données instantanément avec des personnes à proximité. Vous pouvez autoriser tout le monde ou seulement vos contacts à vous détecter dans AirDrop. [À propos d’AirDrop et de la confidentialité…](airDropSettingsOBK://)"
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop ช่วยให้คุณแชร์กับผู้คนที่อยู่ใกล้เคียงได้ทันที คุณสามารถกำหนดให้ทุกคนมองเห็นคุณและคุณสามารถรับข้อมูลได้ใน AirDrop หรือเฉพาะผู้คนในรายชื่อของคุณเท่านั้น [เรียนรู้เพิ่มเติม…](airDropSettingsOBK://)"
+            "value": "AirDrop ช่วยให้คุณแชร์กับผู้คนที่อยู่ใกล้เคียงได้ทันที คุณสามารถรับข้อมูลผ่าน AirDrop โดยเลือกให้ทุกคนมองเห็นคุณได้หรือเฉพาะผู้คนในรายชื่อของคุณเท่านั้น [เกี่ยวกับ AirDrop และความเป็นส่วนตัว…](airDropSettingsOBK://)"
           }
         },
         "zh_CN": {
           "stringUnit": {
             "state": "translated",
-            "value": "隔空投送可让你与附近的用户立即共享。你可以设置在隔空投送中可被发现，以接收所有人或通讯录联系人发来的文件。[进一步了解…](airDropSettingsOBK://)"
+            "value": "隔空投送可让你与附近用户立即共享。你可以设置在隔空投送中可被发现，以接收所有人或仅接收通讯录联系人发来的文件。[关于隔空投送与隐私…](airDropSettingsOBK://)"
           }
         },
         "en_GB": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop lets you share instantly with people nearby. You can be discoverable in AirDrop to receive from everyone or only people in your contacts. [Learn more…](airDropSettingsOBK://)"
+            "value": "AirDrop lets you share instantly with people nearby. You can be discoverable in AirDrop to receive from everyone or only people in your contacts. [About AirDrop & Privacy…](airDropSettingsOBK://)"
           }
         },
         "lt": {
           "stringUnit": {
             "state": "translated",
-            "value": "„AirDrop“ leidžia akimirksniu bendrinti turinį su netoliese esančiais žmonėmis. Galite leisti „AirDrop“ paslaugai jus aptikti, kad gautumėte duomenis iš visų asmenų arba tik iš adresatų. [Sužinokite daugiau…](airDropSettingsOBK://)"
+            "value": "„AirDrop“ leidžia akimirksniu bendrinti turinį su netoliese esančiais asmenimis. Galite leisti „AirDrop“ paslaugai jus aptikti ir gauti duomenis iš visų asmenų arba tik iš adresatų. [Apie „AirDrop“ ir privatumą…](airDropSettingsOBK://)"
           }
         },
         "es_US": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop te permite compartir contenido al instante con personas que están cerca. Puedes hacerte visible para recibir elementos de cualquier persona o sólo de tus contactos. [Obtén detalles…](airDropSettingsOBK://)"
+            "value": "AirDrop te permite compartir contenido al instante con personas que están cerca. Puedes hacerte visible para recibir elementos de cualquier persona o sólo de tus contactos. [Acerca de AirDrop y la privacidad…](airDropSettingsOBK://)"
           }
         },
         "cs": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop vám umožňuje okamžitě sdílet data s lidmi ve vašem okolí. Chcete‑li přijímat data ode všech lidí nebo jen od svých kontaktů, můžete se nastavit jako viditelní přes AirDrop. [Další informace…](airDropSettingsOBK://)"
+            "value": "AirDrop vám umožňuje okamžitě sdílet data s lidmi ve vašem okolí. Chcete‑li přijímat data ode všech lidí nebo jen od svých kontaktů, můžete se nastavit jako viditelní přes AirDrop. [O AirDropu a soukromí…](airDropSettingsOBK://)"
           }
         },
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop membolehkan anda berkongsi serta-merta dengan orang berdekatan. Anda boleh ditemui dalam AirDrop untuk menerima daripada semua orang atau hanya orang dalam kenalan anda. [Ketahui Lebih Lanjut…](airDropSettingsOBK://)"
+            "value": "AirDrop membolehkan anda berkongsi serta-merta dengan orang berdekatan. Anda boleh ditemui dalam AirDrop untuk menerima daripada semua orang atau hanya orang dalam kenalan anda. [Perihal AirDrop & Privasi…](airDropSettingsOBK://)"
           }
         },
         "sk": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop vám umožňuje okamžité zdieľanie s osobami vo vašej blízkosti. Ak chcete prijímať dáta od všetkých alebo len od ľudí zo svojich kontaktov, môžete sa nastaviť ako viditeľní pre AirDrop. [Viac informácií…](airDropSettingsOBK://)"
+            "value": "AirDrop vám umožňuje okamžité zdieľanie s osobami vo vašej blízkosti. Ak chcete prijímať dáta od všetkých alebo len od ľudí zo svojich kontaktov, môžete sa nastaviť ako viditeľní pre AirDrop. [O AirDrope a súkromí…](airDropSettingsOBK://)"
           }
         },
         "bg": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop ви позволява да споделяте незабавно с хората около вас. Можете да бъдете открити и да получавате чрез AirDrop от всички или само от хора от вашите контакти. [Научете повече…](airDropSettingsOBK://)"
+            "value": "AirDrop ви позволява да споделяте незабавно с хората около вас. Можете да бъдете открити и да получавате чрез AirDrop от всички или само от хора от вашите контакти. [Относно AirDrop и поверителност…](airDropSettingsOBK://)"
           }
         },
         "sl": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop vam omogoča takojšnje deljenje z osebami v bližini. V funkciji AirDrop ste lahko vidni za prejemanje od kogarkoli ali samo od svojih stikov. [Več o tem …](airDropSettingsOBK://)"
+            "value": "AirDrop vam omogoča takojšnje deljenje z osebami v bližini. V funkciji AirDrop ste lahko vidni za prejemanje od kogarkoli ali samo od svojih stikov. [Več o funkciji AirDrop in zasebnosti …](airDropSettingsOBK://)"
           }
         },
         "en_AU": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop lets you share instantly with people nearby. You can be discoverable in AirDrop to receive from everyone or only people in your contacts. [Learn more…](airDropSettingsOBK://)"
+            "value": "AirDrop lets you share instantly with people nearby. You can be discoverable in AirDrop to receive from everyone or only people in your contacts. [About AirDrop & Privacy…](airDropSettingsOBK://)"
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Mit AirDrop kannst du Daten sofort mit anderen in der Nähe teilen. Du kannst für den Empfang von Daten in AirDrop für alle oder nur für deine Kontakte sichtbar sein. [Weitere Infos …](airDropSettingsOBK://)"
+            "value": "Mit AirDrop kannst du Daten sofort mit anderen in der Nähe teilen. Du kannst für den Empfang von Daten in AirDrop für alle oder nur für deine Kontakte sichtbar sein. [Über AirDrop & Datenschutz …](airDropSettingsOBK://)"
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop cho phép bạn chia sẻ tức thời với những người ở gần. Bạn có thể đặt trạng thái có thể tìm thấy trong AirDrop để nhận dữ liệu từ mọi người hoặc chỉ những người trong danh bạ của bạn. [Tìm hiểu thêm…](airDropSettingsOBK://)"
+            "value": "AirDrop cho phép bạn chia sẻ tức thời với những người ở gần. Bạn có thể đặt trạng thái có thể tìm thấy trong AirDrop để nhận dữ liệu từ mọi người hoặc chỉ những người trong danh bạ của bạn. [AirDrop & Quyền riêng tư…](airDropSettingsOBK://)"
           }
         },
         "ro": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop vă permite să partajați instantaneu cu persoanele din apropiere. Vă puteți face dispozitivul detectabil prin AirDrop pentru a primi fișiere de la oricine sau doar de la contactele dvs. [Mai multe…](airDropSettingsOBK://)"
+            "value": "AirDrop vă permite să partajați instantaneu cu persoanele din apropiere. Vă puteți face dispozitivul detectabil prin AirDrop pentru a primi fișiere de la oricine sau doar de la contactele dvs. [Despre AirDrop și intimitate…](airDropSettingsOBK://)"
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop дає змогу миттєво надсилати різноманітний вміст користувачам поблизу. Можна зробити себе виявним в AirDrop, щоб отримувати матеріали від усіх чи лише від людей зі свого списку контактів. [Докладніше…](airDropSettingsOBK://)"
+            "value": "AirDrop дає змогу миттєво надсилати різноманітний вміст людям поблизу. Можна ввімкнути виявлення в AirDrop, щоб отримувати вміст від усіх або лише від контактів. [Про AirDrop і приватність…](airDropSettingsOBK://)"
           }
         },
         "kk": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop функциясы қасыңыздағы адамдармен файлдарды жылдам бөлісуге мүмкіндік береді. AirDrop ішінде өзіңізді анықтау мүмкіндігін қосып, әркімнен немесе контактілеріңіздегі адамдардан ғана файлдар алуыңызға болады. [Толығырақ…](airDropSettingsOBK://)"
+            "value": "AirDrop функциясы жаныңыздағы адамдармен файлдарды жылдам бөлісуге мүмкіндік береді. AirDrop ішінде өзіңізді анықтау мүмкіндігін қосып, әркімнен немесе контактілеріңіздегі адамдардан ғана файлдар алуыңызға болады. [AirDrop және құпиялылық туралы ақпарат…](airDropSettingsOBK://)"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop vous permet de partager instantanément des éléments avec des utilisateurs à proximité. Vous pouvez vous rendre détectable dans AirDrop pour recevoir des éléments de tous les utilisateurs ou de vos contacts uniquement. [En savoir plus…](airDropSettingsOBK://)"
+            "value": "AirDrop vous permet de partager instantanément des éléments avec des utilisateurs à proximité. Vous pouvez vous rendre détectable dans AirDrop pour recevoir des éléments de tous les utilisateurs ou de vos contacts uniquement. [AirDrop et confidentialité…](airDropSettingsOBK://)"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop te permite compartir contenido al instante con personas que estén cerca. Para recibir archivos, puedes elegir ser visible para todo el mundo o solo para tus contactos. [Más información…](airDropSettingsOBK://)"
+            "value": "AirDrop te permite compartir contenido al instante con personas que estén cerca. Puedes elegir ser visible para todo el mundo para que cualquier persona pueda enviarte contenido o bien limitar la visibilidad a tus contactos. [Acerca de AirDrop y la privacidad…](airDropSettingsOBK://)"
           }
         },
         "pt": {
           "stringUnit": {
             "state": "translated",
-            "value": "O AirDrop permite compartilhar itens instantaneamente com pessoas por perto. Você pode ficar visível no AirDrop para receber itens de qualquer pessoa ou apenas dos seus contatos. [Saiba Mais…](airDropSettingsOBK://)"
+            "value": "O AirDrop permite compartilhar itens instantaneamente com pessoas por perto. Você pode ficar visível no AirDrop para receber itens de qualquer pessoa ou apenas dos seus contatos. [Sobre o AirDrop e Privacidade…](airDropSettingsOBK://)"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDropで近くの人とすぐにデータを共有できます。AirDropで検出可能にして、すべての人から、または“連絡先”に登録済みの人のみから受信可能にできます。[詳しい情報…](airDropSettingsOBK://)"
+            "value": "AirDropで近くの人とすぐにデータを共有できます。AirDropで検出可能にして、すべての人から、または“連絡先”に登録済みの人のみから受信可能にできます。[AirDropとプライバシーについて…](airDropSettingsOBK://)"
           }
         },
         "pt_PT": {
           "stringUnit": {
             "state": "translated",
-            "value": "O AirDrop permite‑lhe partilhar de imediato com quem se encontra à sua volta. Pode optar por estar visível no AirDrop para poder receber ficheiros de qualquer pessoa ou só dos seus contactos. [Saiba mais…](airDropSettingsOBK://)"
+            "value": "O AirDrop permite‑lhe partilhar de imediato com quem se encontra à sua volta. Pode optar por estar visível no AirDrop para poder receber ficheiros de qualquer pessoa ou só dos seus contactos. [Acerca de AirDrop e Privacidade…](airDropSettingsOBK://)"
           }
         },
         "hr": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop vam omogućava neposredno dijeljenje s osobama u blizini. Možete podesiti da vas mogu pronaći u AirDropu kako biste primali sadržaje od svih ili samo od osoba u vašim kontaktima. [Saznajte više…](airDropSettingsOBK://)"
+            "value": "AirDrop vam omogućava neposredno dijeljenje s osobama u blizini. Možete podesiti da vas mogu pronaći u AirDropu kako biste primali sadržaje od svih ili samo od osoba u vašim kontaktima. [Više o AirDropu i privatnosti…](airDropSettingsOBK://)"
           }
         }
       }
@@ -1352,265 +1352,265 @@
         "he": {
           "stringUnit": {
             "state": "translated",
-            "value": "‏AirDrop מאפשר לך לשתף פריטים באופן מיידי עם אנשים שנמצאים בסביבה. באפשרותך להפוך את המכשיר שלך לגלוי ב-AirDrop כדי לאפשר קבלת פריטים מכולם. [פרטים נוספים…](airDropSettingsOBK://)"
+            "value": "‏AirDrop מאפשר לך לשתף פריטים באופן מיידי עם אנשים שנמצאים בסביבה. באפשרותך להפוך את המכשיר שלך לגלוי ב-AirDrop כדי לאפשר קבלת פריטים מכולם. [מידע בנושא AirDrop ופרטיות…](airDropSettingsOBK://)"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop을 사용하여 근처에 있는 사람들과 즉시 공유할 수 있습니다. AirDrop에서 사용자를 발견할 수 있는 대상을 모든 사람으로 설정할 수 있습니다. [더 알⁠아⁠보⁠기…](airDropSettingsOBK://)"
+            "value": "AirDrop을 사용하여 근처에 있는 사람들과 즉시 공유할 수 있습니다. AirDrop에서 사용자를 발견할 수 있는 대상을 모든 사람으로 설정할 수 있습니다. [AirDrop 및 개인정보 보호에 관하여…](airDropSettingsOBK://)"
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop memungkinkan Anda berbagi langsung dengan orang di sekitar. Anda dapat ditemukan di AirDrop untuk menerima dari semua orang. [Lebih Lanjut…](airDropSettingsOBK://)"
+            "value": "AirDrop memungkinkan Anda berbagi langsung dengan orang di sekitar. Anda dapat ditemukan di AirDrop untuk menerima dari semua orang. [Mengenai AirDrop & Privasi…](airDropSettingsOBK://)"
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Via AirDrop kun je bestanden delen met anderen bij jou in de buurt. Je kunt jezelf in AirDrop detecteerbaar maken voor iedereen. [Meer informatie…](airDropSettingsOBK://)"
+            "value": "Via AirDrop kun je bestanden delen met anderen bij jou in de buurt. Je kunt jezelf in AirDrop detecteerbaar maken voor iedereen. [Over AirDrop en privacy…](airDropSettingsOBK://)"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop, yakınınızdaki kişilerle anında paylaşmanızı sağlar. Herkesten alabilmek için AirDrop’ta bulunabilir olabilirsiniz. [Daha Fazla Bilgi…](airDropSettingsOBK://)"
+            "value": "AirDrop, yakınınızdaki kişilerle anında paylaşmanızı sağlar. Herkesten alabilmek için AirDrop’ta bulunabilir olabilirsiniz. [AirDrop ve Gizlilik Hakkında…](airDropSettingsOBK://)"
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop позволяет мгновенно делиться контентом с пользователями, находящимися рядом. Вы можете разрешить свое обнаружение в AirDrop и получать контент от любых пользователей. [Подробнее…](airDropSettingsOBK://)"
+            "value": "Через AirDrop можно мгновенно делиться контентом с пользователями, находящимися рядом. Вы можете разрешить свое обнаружение в AirDrop и получать контент от любых пользователей. [Об AirDrop и конфиденциальности…](airDropSettingsOBK://)"
           }
         },
         "fi": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDropin avulla jaat välittömästi lähellä olevien kanssa. Voit olla löydettävissä AirDropissa siten, että voit vastaanottaa kaikilta. [Lisätietoja…](airDropSettingsOBK://)"
+            "value": "AirDropin avulla jaat välittömästi lähellä olevien kanssa. Voit olla löydettävissä AirDropissa siten, että voit vastaanottaa kaikilta. [Tietoja: AirDrop ja tietosuoja…](airDropSettingsOBK://)"
           }
         },
         "hu": {
           "stringUnit": {
             "state": "translated",
-            "value": "Az AirDroppal egyszerűen megoszthat fájlokat a közelben lévőkkel. Felfedezhetővé teheti önmagát az AirDropban, hogy bárkitől fogadhasson fájlokat. [Bővebben…](airDropSettingsOBK://)"
+            "value": "Az AirDroppal egyszerűen megoszthat fájlokat a közelben lévőkkel. Felfedezhetővé teheti önmagát az AirDropban, hogy bárkitől fogadhasson fájlokat. [Az AirDropról és az adatvédelemről…](airDropSettingsOBK://)"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop ti consente di condividere contenuti all’istante con altre persone nelle vicinanze. Puoi renderti visibile con AirDrop e ricevere file da tutti. [Scopri di più…](airDropSettingsOBK://)"
+            "value": "AirDrop ti consente di condividere contenuti all’istante con altre persone nelle vicinanze. Puoi renderti visibile con AirDrop e ricevere file da tutti. [AirDrop e privacy…](airDropSettingsOBK://)"
           }
         },
         "es_419": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop te permite compartir contenido al instante con personas que están cerca. Puedes hacerte visible para recibir elementos de cualquier persona. [Obtén detalles…](airDropSettingsOBK://)"
+            "value": "AirDrop te permite compartir contenido al instante con personas que están cerca. Puedes hacerte visible para recibir elementos de cualquier persona. [Acerca de AirDrop y la privacidad…](airDropSettingsOBK://)"
           }
         },
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Το AirDrop σάς επιτρέπει να μοιράζεστε στοιχεία άμεσα με άτομα που βρίσκονται κοντά σας. Μπορείτε να κάνετε τη συσκευή σας ανακαλύψιμη στο AirDrop για να λαμβάνετε στοιχεία από όλα τα άτομα. [Μάθετε περισσότερα…](airDropSettingsOBK://)"
+            "value": "Το AirDrop σάς επιτρέπει να μοιράζεστε στοιχεία άμεσα με άτομα που βρίσκονται κοντά σας. Μπορείτε να κάνετε τη συσκευή σας ανακαλύψιμη στο AirDrop για να λαμβάνετε στοιχεία από όλα τα άτομα. [Πληροφορίες για το AirDrop και απόρρητο…](airDropSettingsOBK://)"
           }
         },
         "ca": {
           "stringUnit": {
             "state": "translated",
-            "value": "L’AirDrop et permet compartir continguts de manera instantània amb les persones que tinguis a prop. Pots fer que tothom pugui detectar‑te a l’AirDrop i enviar‑te ítems. [Més informació…](airDropSettingsOBK://)"
+            "value": "L’AirDrop et permet compartir continguts de manera instantània amb les persones que tinguis a prop. Pots definir que tothom pugui descobrir‑t’hi i enviar‑te ítems. [Sobre l’AirDrop i la privacitat…](airDropSettingsOBK://)"
           }
         },
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "يتيح لك الإرسال السريع المشاركة الفورية مع الأشخاص القريبين منك. يمكنك جعل جهازك قابلًا للاكتشاف في الإرسال السريع للاستلام من الجميع. [معرفة المزيد…](airDropSettingsOBK://)"
+            "value": "يتيح لك الإرسال السريع المشاركة الفورية مع الأشخاص القريبين منك. يمكنك جعل جهازك قابلًا للاكتشاف في الإرسال السريع للاستلام من الجميع. [حول الإرسال السريع والخصوصية…](airDropSettingsOBK://)"
           }
         },
         "zh_TW": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop能讓你快速與附近的人共享內容。你可以在AirDrop中接收所有人傳來的檔案。[更多內容⋯](airDropSettingsOBK://)"
+            "value": "AirDrop能讓你快速與附近的人共享內容。你可以在AirDrop中接收所有人傳來的檔案。[關於AirDrop與隱私權⋯](airDropSettingsOBK://)"
           }
         },
         "zh_HK": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop讓你可以與附近的人即時共享。你可以在AirDrop中接收所有人傳來的檔案。[進一步了解⋯](airDropSettingsOBK://)"
+            "value": "AirDrop讓你可以與附近的人即時共享。你可以在AirDrop中被偵測以接收所有人傳來的內容。[關於AirDrop與私隱⋯](airDropSettingsOBK://)"
           }
         },
         "sv": {
           "stringUnit": {
             "state": "translated",
-            "value": "Med AirDrop kan du dela ögonblickligen med andra i närheten. Du kan vara upptäckbar i AirDrop så att du kan ta emot från alla. [Läs mer…](airDropSettingsOBK://)"
+            "value": "Med AirDrop kan du dela ögonblickligen med andra i närheten. Du kan vara upptäckbar i AirDrop så att du kan ta emot från alla. [Om AirDrop och integritet…](airDropSettingsOBK://)"
           }
         },
         "no": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bruk AirDrop til å dele filer direkte med personer i nærheten. Du kan velge å være synlig for alle i AirDrop. [Finn ut mer…](airDropSettingsOBK://)"
+            "value": "Bruk AirDrop til å dele filer direkte med personer i nærheten. Du kan velge å være synlig for alle i AirDrop. [Om AirDrop og personvern…](airDropSettingsOBK://)"
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop की मदद से आप आस-पास के लोगों के साथ तुरंत शेयर कर सकते हैं। आप AirDrop द्वारा प्राप्त करने के लिए हर किसी के द्वारा खोजे जा सकते हैं। [अधिक जानें…](airDropSettingsOBK://)"
+            "value": "AirDrop की मदद से आप आस-पास के लोगों के साथ तत्काल शेयरिंग शुरू कर ^[सकते हैं](inflect: true)। AirDrop के ज़रिए आपके साथ शेयर करने के लिए सभी लोग आपको खोज सकेंगे। [AirDrop और गोपनीयता परिचय…](airDropSettingsOBK://)"
           }
         },
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Med AirDrop kan du hurtigt dele med andre i nærheden. Du kan være synlig i AirDrop for at modtage fra alle. [Læs mere…](airDropSettingsOBK://)"
+            "value": "Med AirDrop kan du hurtigt dele med andre i nærheden. Du kan være synlig i AirDrop for at modtage fra alle. [Om AirDrop og anonymitet…](airDropSettingsOBK://)"
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop lets you share instantly with people nearby. You can be discoverable in AirDrop to receive from everyone. [Learn More…](airDropSettingsOBK://)"
+            "value": "AirDrop lets you share instantly with people nearby. You can be discoverable in AirDrop to receive from everyone. [About AirDrop & Privacy…](airDropSettingsOBK://)"
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop umożliwia natychmiastowe udostępnianie rzeczy osobom znajdującym się w pobliżu. Twoje urządzenie może być wykrywalne przez AirDrop, co pozwoli odbierać pliki od wszystkich. [Więcej informacji…](airDropSettingsOBK://)"
+            "value": "AirDrop umożliwia natychmiastowe udostępnianie rzeczy osobom znajdującym się w pobliżu. Twoje urządzenie może być wykrywalne przez AirDrop, co pozwoli odbierać pliki od wszystkich. [AirDrop i prywatność…](airDropSettingsOBK://)"
           }
         },
         "fr_CA": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop vous permet de partager des données instantanément avec des personnes à proximité. Vous pouvez autoriser tout le monde à vous détecter dans AirDrop. [En savoir plus…](airDropSettingsOBK://)"
+            "value": "AirDrop vous permet de partager des données instantanément avec des personnes à proximité. Vous pouvez autoriser tout le monde à vous détecter dans AirDrop. [À propos d’AirDrop et de la confidentialité…](airDropSettingsOBK://)"
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop ช่วยให้คุณแชร์กับผู้คนที่อยู่ใกล้เคียงได้ทันที คุณสามารถกำหนดให้ทุกคนมองเห็นคุณและคุณสามารถรับข้อมูลได้ใน AirDrop [เรียนรู้เพิ่มเติม…](airDropSettingsOBK://)"
+            "value": "AirDrop ช่วยให้คุณแชร์กับผู้คนที่อยู่ใกล้เคียงได้ทันที คุณสามารถรับข้อมูลผ่าน AirDrop โดยเลือกให้ทุกคนมองเห็นคุณได้ [เกี่ยวกับ AirDrop และความเป็นส่วนตัว…](airDropSettingsOBK://)"
           }
         },
         "zh_CN": {
           "stringUnit": {
             "state": "translated",
-            "value": "隔空投送可让你与附近的用户立即共享。你可以设置在隔空投送中可被发现，以接收所有人发来的文件。[进一步了解…](airDropSettingsOBK://)"
+            "value": "隔空投送可让你与附近用户立即共享。你可以设置在隔空投送中可被发现，以接收所有人发来的文件。[关于隔空投送与隐私…](airDropSettingsOBK://)"
           }
         },
         "en_GB": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop lets you share instantly with people nearby. You can be discoverable in AirDrop to receive from everyone. [Learn more…](airDropSettingsOBK://)"
+            "value": "AirDrop lets you share instantly with people nearby. You can be discoverable in AirDrop to receive from everyone. [About AirDrop & Privacy…](airDropSettingsOBK://)"
           }
         },
         "lt": {
           "stringUnit": {
             "state": "translated",
-            "value": "„AirDrop“ leidžia akimirksniu bendrinti turinį su netoliese esančiais žmonėmis. Galite leisti „AirDrop“ paslaugai jus aptikti, kad gautumėte duomenis iš visų asmenų. [Sužinokite daugiau…](airDropSettingsOBK://)"
+            "value": "„AirDrop“ leidžia akimirksniu bendrinti turinį su netoliese esančiais asmenimis. Galite leisti „AirDrop“ paslaugai jus aptikti ir gauti duomenis iš visų asmenų. [Apie „AirDrop“ ir privatumą…](airDropSettingsOBK://)"
           }
         },
         "es_US": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop te permite compartir contenido al instante con personas que están cerca. Puedes hacerte visible para recibir elementos de cualquier persona. [Obtén detalles…](airDropSettingsOBK://)"
+            "value": "AirDrop te permite compartir contenido al instante con personas que están cerca. Puedes hacerte visible para recibir elementos de cualquier persona. [Acerca de AirDrop y la privacidad…](airDropSettingsOBK://)"
           }
         },
         "cs": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop vám umožňuje okamžitě sdílet data s lidmi ve vašem okolí. Chcete‑li přijímat data ode všech lidí, můžete se nastavit jako viditelní přes AirDrop. [Další informace…](airDropSettingsOBK://)"
+            "value": "AirDrop vám umožňuje okamžitě sdílet data s lidmi ve vašem okolí. Chcete‑li přijímat data ode všech lidí, můžete se nastavit jako viditelní přes AirDrop. [O AirDropu a soukromí…](airDropSettingsOBK://)"
           }
         },
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop membolehkan anda berkongsi serta-merta dengan orang berdekatan. Anda boleh ditemui dalam AirDrop untuk menerima daripada semua orang. [Ketahui Lebih Lanjut…](airDropSettingsOBK://)"
+            "value": "AirDrop membolehkan anda berkongsi serta-merta dengan orang berdekatan. Anda boleh ditemui dalam AirDrop untuk menerima daripada semua orang. [Perihal AirDrop & Privasi…](airDropSettingsOBK://)"
           }
         },
         "sk": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop vám umožňuje okamžité zdieľanie s osobami vo vašej blízkosti. Ak chcete prijímať dáta od všetkých, môžete sa nastaviť ako viditeľní pre AirDrop. [Viac informácií…](airDropSettingsOBK://)"
+            "value": "AirDrop vám umožňuje okamžité zdieľanie s osobami vo vašej blízkosti. Ak chcete prijímať dáta od všetkých, môžete sa nastaviť ako viditeľní pre AirDrop. [O AirDrope a súkromí…](airDropSettingsOBK://)"
           }
         },
         "bg": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop ви позволява да споделяте незабавно с хората около вас. Можете да бъдете открити и да получавате чрез AirDrop от всички. [Научете повече…](airDropSettingsOBK://)"
+            "value": "AirDrop ви позволява да споделяте незабавно с хората около вас. Можете да бъдете открити и да получавате чрез AirDrop от всички. [Относно AirDrop и поверителност…](airDropSettingsOBK://)"
           }
         },
         "sl": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop vam omogoča takojšnje deljenje z osebami v bližini. V funkciji AirDrop ste lahko vidni za prejemanje od kogarkoli. [Več o tem …](airDropSettingsOBK://)"
+            "value": "AirDrop vam omogoča takojšnje deljenje z osebami v bližini. V funkciji AirDrop ste lahko vidni za prejemanje od kogarkoli. [Več o funkciji AirDrop in zasebnosti …](airDropSettingsOBK://)"
           }
         },
         "en_AU": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop lets you share instantly with people nearby. You can be discoverable in AirDrop to receive from everyone. [Learn more…](airDropSettingsOBK://)"
+            "value": "AirDrop lets you share instantly with people nearby. You can be discoverable in AirDrop to receive from everyone. [About AirDrop & Privacy…](airDropSettingsOBK://)"
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Mit AirDrop kannst du Daten sofort mit anderen in der Nähe teilen. Du kannst für den Empfang von Daten in AirDrop für alle sichtbar sein. [Weitere Infos …](airDropSettingsOBK://)"
+            "value": "Mit AirDrop kannst du Daten sofort mit anderen in der Nähe teilen. Du kannst für den Empfang von Daten in AirDrop für alle sichtbar sein. [Über AirDrop & Datenschutz …](airDropSettingsOBK://)"
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop cho phép bạn chia sẻ tức thời với những người ở gần. Bạn có thể đặt trạng thái có thể tìm thấy trong AirDrop để nhận dữ liệu từ mọi người. [Tìm hiểu thêm…](airDropSettingsOBK://)"
+            "value": "AirDrop cho phép bạn chia sẻ tức thời với những người ở gần. Bạn có thể đặt trạng thái có thể tìm thấy trong AirDrop để nhận dữ liệu từ mọi người. [AirDrop & Quyền riêng tư…](airDropSettingsOBK://)"
           }
         },
         "ro": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop vă permite să partajați instantaneu cu persoanele din apropiere. Vă puteți face dispozitivul detectabil prin AirDrop pentru a primi fișiere de la oricine. [Mai multe…](airDropSettingsOBK://)"
+            "value": "AirDrop vă permite să partajați instantaneu cu persoanele din apropiere. Vă puteți face dispozitivul detectabil prin AirDrop pentru a primi fișiere de la oricine. [Despre AirDrop și intimitate…](airDropSettingsOBK://)"
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop дає змогу миттєво надсилати різноманітний вміст користувачам поблизу. Можна зробити себе виявним в AirDrop, щоб отримувати матеріали від усіх. [Докладніше…](airDropSettingsOBK://)"
+            "value": "AirDrop дає змогу миттєво надсилати різноманітний вміст людям поблизу. Можна ввімкнути виявлення в AirDrop, щоб отримувати вміст від усіх. [Про AirDrop і приватність…](airDropSettingsOBK://)"
           }
         },
         "kk": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop функциясы қасыңыздағы адамдармен файлдарды жылдам бөлісуге мүмкіндік береді. AirDrop ішінде өзіңізді анықтау мүмкіндігін қосып, әркімнен файлдар алуыңызға болады. [Толығырақ…](airDropSettingsOBK://)"
+            "value": "AirDrop функциясы жаныңыздағы адамдармен файлдарды жылдам бөлісуге мүмкіндік береді. AirDrop ішінде өзіңізді анықтау мүмкіндігін қосып, әркімнен файлдар алуыңызға болады. [AirDrop және құпиялылық туралы ақпарат…](airDropSettingsOBK://)"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop vous permet de partager instantanément des éléments avec des utilisateurs à proximité. Vous pouvez vous rendre détectable dans AirDrop pour recevoir des éléments de la part de tous les utilisateurs. [En savoir plus…](airDropSettingsOBK://)"
+            "value": "AirDrop vous permet de partager instantanément des éléments avec des utilisateurs à proximité. Vous pouvez vous rendre détectable dans AirDrop pour recevoir des éléments de la part de tous les utilisateurs. [AirDrop et confidentialité…](airDropSettingsOBK://)"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop te permite compartir contenido al instante con personas que estén cerca. Para recibir archivos, puedes elegir ser visible para todo el mundo. [Más información…](airDropSettingsOBK://)"
+            "value": "AirDrop te permite compartir contenido al instante con personas que estén cerca. Para que cualquier persona pueda enviarte contenido, puedes elegir ser visible para todo el mundo. [Acerca de AirDrop y la privacidad…](airDropSettingsOBK://)"
           }
         },
         "pt": {
           "stringUnit": {
             "state": "translated",
-            "value": "O AirDrop permite compartilhar itens instantaneamente com pessoas por perto. Você pode ficar visível no AirDrop para receber itens de qualquer pessoa. [Saiba Mais…](airDropSettingsOBK://)"
+            "value": "O AirDrop permite compartilhar itens instantaneamente com pessoas por perto. Você pode ficar visível no AirDrop para receber itens de qualquer pessoa. [Sobre o AirDrop e Privacidade…](airDropSettingsOBK://)"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDropで近くの人とすぐにデータを共有できます。AirDropで検出可能にして、すべての人から受信可能にできます。[詳しい情報…](airDropSettingsOBK://)"
+            "value": "AirDropで近くの人とすぐにデータを共有できます。AirDropで検出可能にして、すべての人から受信可能にできます。[AirDropとプライバシーについて…](airDropSettingsOBK://)"
           }
         },
         "pt_PT": {
           "stringUnit": {
             "state": "translated",
-            "value": "O AirDrop permite‑lhe partilhar de imediato com quem se encontra à sua volta. Pode optar por estar visível no AirDrop para poder receber ficheiros de qualquer pessoa. [Saiba mais…](airDropSettingsOBK://)"
+            "value": "O AirDrop permite‑lhe partilhar de imediato com quem se encontra à sua volta. Pode optar por estar visível no AirDrop para poder receber ficheiros de qualquer pessoa. [Acerca de AirDrop e Privacidade…](airDropSettingsOBK://)"
           }
         },
         "hr": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop vam omogućava neposredno dijeljenje s osobama u blizini. Možete podesiti da vas mogu pronaći u AirDropu kako biste primali sadržaje od svih. [Saznajte više…](airDropSettingsOBK://)"
+            "value": "AirDrop vam omogućava neposredno dijeljenje s osobama u blizini. Možete podesiti da vas mogu pronaći u AirDropu kako biste primali sadržaje od svih. [Više o AirDropu i privatnosti…](airDropSettingsOBK://)"
           }
         }
       }
@@ -1621,265 +1621,265 @@
         "he": {
           "stringUnit": {
             "state": "translated",
-            "value": "‏AirDrop מאפשר לך לשתף פריטים באופן מיידי עם אנשים שנמצאים בסביבה. באפשרותך להפוך את המכשיר שלך לגלוי ב-AirDrop כדי לאפשר קבלת פריטים מכולם. הפיכת המכשיר שלך לגלוי תפעיל את Bluetooth ואת תקשורת ה-WLAN. [פרטים נוספים…](⁨airDropSettingsOBK://⁩)"
+            "value": "‏AirDrop מאפשר לך לשתף פריטים באופן מיידי עם אנשים שנמצאים בסביבה. באפשרותך להפוך את המכשיר שלך לגלוי ב-AirDrop כדי לאפשר קבלת פריטים מכולם. הפיכת המכשיר שלך לגלוי תפעיל את Bluetooth ואת תקשורת ה-WLAN. [מידע בנושא AirDrop ופרטיות…](airDropSettingsOBK://)"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop을 사용하여 근처에 있는 사람들과 즉시 공유할 수 있습니다. AirDrop에서 사용자를 발견할 수 있는 대상을 모든 사람으로 설정할 수 있습니다. 사용자를 찾을 수 있도록 하면 Bluetooth 및 WLAN이 켜집니다. [더 알⁠아⁠보⁠기…](airDropSettingsOBK://)"
+            "value": "AirDrop을 사용하여 근처에 있는 사람들과 즉시 공유할 수 있습니다. AirDrop에서 사용자를 발견할 수 있는 대상을 모든 사람으로 설정할 수 있습니다. 사용자를 찾을 수 있도록 하면 Bluetooth 및 WLAN이 켜집니다. [AirDrop 및 개인정보 보호에 관하여…](airDropSettingsOBK://)"
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop memungkinkan Anda berbagi langsung dengan orang di sekitar. Anda dapat ditemukan di AirDrop untuk menerima dari semua orang. Membuat diri Anda dapat ditemukan akan menyalakan Bluetooth dan WLAN. [Lebih Lanjut…](airDropSettingsOBK://)"
+            "value": "AirDrop memungkinkan Anda berbagi langsung dengan orang di sekitar. Anda dapat ditemukan di AirDrop untuk menerima dari semua orang. Membuat diri Anda dapat ditemukan akan menyalakan Bluetooth dan WLAN. [Mengenai AirDrop & Privasi…](airDropSettingsOBK://)"
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Via AirDrop kun je bestanden delen met anderen bij jou in de buurt. Je kunt jezelf in AirDrop detecteerbaar maken voor iedereen. Als je jezelf detecteerbaar maakt, worden Bluetooth en WLAN ingeschakeld. [Meer informatie…](airDropSettingsOBK://)"
+            "value": "Via AirDrop kun je bestanden delen met anderen bij jou in de buurt. Je kunt jezelf in AirDrop detecteerbaar maken voor iedereen. Als je jezelf detecteerbaar maakt, worden Bluetooth en WLAN ingeschakeld. [Over AirDrop en privacy…](airDropSettingsOBK://)"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop, yakınınızdaki kişilerle anında paylaşmanızı sağlar. Herkesten alabilmek için AirDrop’ta bulunabilir olabilirsiniz. Kendinizi bulunabilir yaptığınızda Bluetooth ve WLAN açılacaktır. [Daha Fazla Bilgi…](airDropSettingsOBK://)"
+            "value": "AirDrop, yakınınızdaki kişilerle anında paylaşmanızı sağlar. Herkesten alabilmek için AirDrop’ta bulunabilir olabilirsiniz. Kendinizi bulunabilir yaptığınızda Bluetooth ve WLAN açılır. [AirDrop ve Gizlilik Hakkında…](airDropSettingsOBK://)"
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop позволяет мгновенно делиться контентом с пользователями, находящимися рядом. Вы можете разрешить свое обнаружение в AirDrop и получать контент от любых пользователей. При включении обнаружения также будут включены Bluetooth и WLAN. [Подробнее…](airDropSettingsOBK://)"
+            "value": "Через AirDrop можно мгновенно делиться контентом с пользователями, находящимися рядом. Вы можете разрешить свое обнаружение в AirDrop и получать контент от любых пользователей. При включении обнаружения также будут включены Bluetooth и WLAN. [Об AirDrop и конфиденциальности…](airDropSettingsOBK://)"
           }
         },
         "fi": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDropin avulla jaat välittömästi lähellä olevien kanssa. Voit olla löydettävissä AirDropissa siten, että voit vastaanottaa kaikilta. Jos asetat itsesi löydettäväksi, Bluetooth ja WLAN laitetaan päälle. [Lisätietoja…](airDropSettingsOBK://)"
+            "value": "AirDropin avulla jaat välittömästi lähellä olevien kanssa. Voit olla löydettävissä AirDropissa siten, että voit vastaanottaa kaikilta. Jos asetat itsesi löydettäväksi, Bluetooth ja WLAN laitetaan päälle. [Tietoja: AirDrop ja tietosuoja…](airDropSettingsOBK://)"
           }
         },
         "hu": {
           "stringUnit": {
             "state": "translated",
-            "value": "Az AirDroppal egyszerűen megoszthat fájlokat a közelben lévőkkel. Felfedezhetővé teheti önmagát az AirDropban, hogy bárkitől fogadhasson fájlokat. Ha felfedezhetővé teszi önmagát, azzal bekapcsolja a Bluetootht és a WLAN‑t. [Bővebben…](airDropSettingsOBK://)"
+            "value": "Az AirDroppal egyszerűen megoszthat fájlokat a közelben lévőkkel. Felfedezhetővé teheti önmagát az AirDropban, hogy bárkitől fogadhasson fájlokat. Ha felfedezhetővé teszi önmagát, azzal bekapcsolja a Bluetootht és a WLAN‑t. [Az AirDropról és az adatvédelemről…](airDropSettingsOBK://)"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop ti consente di condividere contenuti all’istante con altre persone nelle vicinanze. Puoi renderti visibile con AirDrop e ricevere file da tutti. Rendendoti visibile, attiverai sia il Bluetooth, sia la rete WLAN. [Scopri di più…](airDropSettingsOBK://)"
+            "value": "AirDrop ti consente di condividere contenuti all’istante con altre persone nelle vicinanze. Puoi renderti visibile con AirDrop e ricevere file da tutti. Rendendoti visibile, attiverai sia il Bluetooth, sia la rete WLAN. [AirDrop e privacy…](airDropSettingsOBK://)"
           }
         },
         "es_419": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop te permite compartir contenido al instante con personas que están cerca. Puedes hacerte visible para recibir elementos de cualquier persona. Al hacerlo, se activarán las conexiones Bluetooth y WLAN. [Obtén detalles…](airDropSettingsOBK://)"
+            "value": "AirDrop te permite compartir contenido al instante con personas que están cerca. Puedes hacerte visible para recibir elementos de cualquier persona. Al hacerlo, se activarán las conexiones Bluetooth y WLAN. [Acerca de AirDrop y la privacidad…](airDropSettingsOBK://)"
           }
         },
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Το AirDrop σάς επιτρέπει να μοιράζεστε στοιχεία άμεσα με άτομα που βρίσκονται κοντά σας. Μπορείτε να κάνετε τη συσκευή σας ανακαλύψιμη στο AirDrop για να λαμβάνετε στοιχεία από όλα τα άτομα. Αν επιλέξετε να γίνει ανακαλύψιμη η συσκευή σας, θα ενεργοποιηθεί το Bluetooth και το WLAN. [Μάθετε περισσότερα…](airDropSettingsOBK://)"
+            "value": "Το AirDrop σάς επιτρέπει να μοιράζεστε στοιχεία άμεσα με άτομα που βρίσκονται κοντά σας. Μπορείτε να κάνετε τη συσκευή σας ανακαλύψιμη στο AirDrop για να λαμβάνετε στοιχεία από όλα τα άτομα. Αν επιλέξετε να γίνει ανακαλύψιμη η συσκευή σας, θα ενεργοποιηθεί το Bluetooth και το WLAN. [Πληροφορίες για το AirDrop και απόρρητο…](airDropSettingsOBK://)"
           }
         },
         "ca": {
           "stringUnit": {
             "state": "translated",
-            "value": "L’AirDrop et permet compartir continguts de manera instantània amb les persones que tinguis a prop. Pots fer que tothom pugui detectar‑te a l’AirDrop i enviar‑te ítems. Si permets que se’t pugui detectar, s’activaran el Bluetooth i la WLAN. [Més informació…](airDropSettingsOBK://)"
+            "value": "L’AirDrop et permet compartir continguts de manera instantània amb les persones que tinguis a prop. Pots definir que tothom pugui descobrir‑t’hi i enviar‑te ítems. Si permets que se t’hi pugui descobrir, s’activaran el Bluetooth i la WLAN. [Sobre l’AirDrop i la privacitat…](airDropSettingsOBK://)"
           }
         },
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "يتيح لك الإرسال السريع المشاركة الفورية مع الأشخاص القريبين منك. يمكنك جعل جهازك قابلًا للاكتشاف في الإرسال السريع للاستلام من الجميع. عندما تجعل نفسك قابلًا للاكتشاف، سيؤدي ذلك إلى تشغيل Bluetooth و WLAN. [معرفة المزيد…](airDropSettingsOBK://)"
+            "value": "يتيح لك الإرسال السريع المشاركة الفورية مع الأشخاص القريبين منك. يمكنك جعل جهازك قابلًا للاكتشاف في الإرسال السريع للاستلام من الجميع. عندما تجعل نفسك قابلًا للاكتشاف، سيؤدي ذلك إلى تشغيل Bluetooth و WLAN. [حول الإرسال السريع والخصوصية…](airDropSettingsOBK://)"
           }
         },
         "zh_TW": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop能讓你快速與附近的人共享內容。你可以在AirDrop中接收所有人傳來的檔案。將你自己設為可被偵測的狀態，將會開啟藍牙和WLAN。[更多內容⋯](airDropSettingsOBK://)"
+            "value": "AirDrop能讓你快速與附近的人共享內容。你可以在AirDrop中接收所有人傳來的檔案。將你自己設為可被偵測的狀態，將會開啟藍牙和WLAN。[關於AirDrop與隱私權⋯](airDropSettingsOBK://)"
           }
         },
         "zh_HK": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop讓你可以與附近的人即時共享。你可以在AirDrop中接收所有人傳來的檔案。開啟藍牙及WLAN會令自己處於可被偵測的狀態。[進一步了解⋯](airDropSettingsOBK://)"
+            "value": "AirDrop讓你可以與附近的人即時共享。你可以在AirDrop中被偵測以接收所有人傳來的內容。開啟藍牙及WLAN會令自己處於可被偵測的狀態。[關於AirDrop與私隱⋯](airDropSettingsOBK://)"
           }
         },
         "sv": {
           "stringUnit": {
             "state": "translated",
-            "value": "Med AirDrop kan du dela ögonblickligen med andra i närheten. Du kan vara upptäckbar i AirDrop så att du kan ta emot från alla. Om du gör dig upptäckbar aktiveras Bluetooth och WLAN. [Läs mer…](airDropSettingsOBK://)"
+            "value": "Med AirDrop kan du dela ögonblickligen med andra i närheten. Du kan vara upptäckbar i AirDrop så att du kan ta emot från alla. Om du gör dig upptäckbar aktiveras Bluetooth och WLAN. [Om AirDrop och integritet…](airDropSettingsOBK://)"
           }
         },
         "no": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bruk AirDrop til å dele filer direkte med personer i nærheten. Du kan velge å være synlig for alle i AirDrop. Hvis du gjør deg selv synlig, slås Bluetooth og WLAN på. [Finn ut mer…](airDropSettingsOBK://)"
+            "value": "Bruk AirDrop til å dele filer direkte med personer i nærheten. Du kan velge å være synlig for alle i AirDrop. Hvis du gjør deg selv synlig, slås Bluetooth og WLAN på. [Om AirDrop og personvern…](airDropSettingsOBK://)"
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop की मदद से आप आस-पास के लोगों के साथ तुरंत शेयर कर सकते हैं। आप AirDrop द्वारा प्राप्त करने के लिए हर किसी के द्वारा खोजे जा सकते हैं। अपने आपको खोजे जाने का विकल्प चुनने पर Bluetooth और WLAN चालू हो जाएगा। [अधिक जानें…](airDropSettingsOBK://)"
+            "value": "AirDrop की मदद से आप आस-पास के लोगों के साथ तत्काल शेयरिंग शुरू कर ^[सकते हैं](inflect: true)। AirDrop के ज़रिए आपके साथ शेयर करने के लिए सभी लोग आपको खोज सकेंगे। ख़ुद को खोजे जाने योग्य बनाने पर Bluetooth और WLAN को चालू कर दिया जाएगा। [AirDrop और गोपनीयता परिचय…](airDropSettingsOBK://)"
           }
         },
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Med AirDrop kan du hurtigt dele med andre i nærheden. Du kan være synlig i AirDrop for at modtage fra alle. Bluetooth og WLAN bliver slået til, når du er synlig. [Læs mere…](airDropSettingsOBK://)"
+            "value": "Med AirDrop kan du hurtigt dele med andre i nærheden. Du kan være synlig i AirDrop for at modtage fra alle. Bluetooth og WLAN bliver slået til, når du er synlig. [Om AirDrop og anonymitet…](airDropSettingsOBK://)"
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop lets you share instantly with people nearby. You can be discoverable in AirDrop to receive from everyone. Making yourself discoverable will turn on Bluetooth and WLAN. [Learn More…](airDropSettingsOBK://)"
+            "value": "AirDrop lets you share instantly with people nearby. You can be discoverable in AirDrop to receive from everyone. Making yourself discoverable will turn on Bluetooth and WLAN. [About AirDrop & Privacy…](airDropSettingsOBK://)"
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop umożliwia natychmiastowe udostępnianie rzeczy osobom znajdującym się w pobliżu. Twoje urządzenie może być wykrywalne przez AirDrop, co pozwoli odbierać pliki od wszystkich. Włączenie wykrywalności spowoduje włączenie Bluetooth i WLAN. [Więcej informacji…](airDropSettingsOBK://)"
+            "value": "AirDrop umożliwia natychmiastowe udostępnianie rzeczy osobom znajdującym się w pobliżu. Twoje urządzenie może być wykrywalne przez AirDrop, co pozwoli odbierać pliki od wszystkich. Włączenie wykrywalności spowoduje włączenie Bluetooth i WLAN. [AirDrop i prywatność…](airDropSettingsOBK://)"
           }
         },
         "fr_CA": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop vous permet de partager des données instantanément avec des personnes à proximité. Vous pouvez autoriser tout le monde à vous détecter dans AirDrop. Le fait d’autoriser d’autres personnes à vous détecter activera Bluetooth et le réseau WLAN. [En savoir plus…](airDropSettingsOBK://)"
+            "value": "AirDrop vous permet de partager des données instantanément avec des personnes à proximité. Vous pouvez autoriser tout le monde à vous détecter dans AirDrop. Le fait d’autoriser d’autres personnes à vous détecter activera Bluetooth et le réseau WLAN. [À propos d’AirDrop et de la confidentialité…](airDropSettingsOBK://)"
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop ช่วยให้คุณแชร์กับผู้คนที่อยู่ใกล้เคียงได้ทันที คุณสามารถกำหนดให้ทุกคนมองเห็นคุณและคุณสามารถรับข้อมูลได้ใน AirDrop การกำหนดให้มองเห็นคุณได้จะเปิดบลูทูธและ WLAN [เรียนรู้เพิ่มเติม…](airDropSettingsOBK://)"
+            "value": "AirDrop ช่วยให้คุณแชร์กับผู้คนที่อยู่ใกล้เคียงได้ทันที คุณสามารถรับข้อมูลผ่าน AirDrop โดยเลือกให้ทุกคนมองเห็นคุณได้ การกำหนดให้มองเห็นคุณได้จะเปิดบลูทูธและ WLAN [เกี่ยวกับ AirDrop และความเป็นส่วนตัว…](airDropSettingsOBK://)"
           }
         },
         "zh_CN": {
           "stringUnit": {
             "state": "translated",
-            "value": "隔空投送可让你与附近的用户立即共享。你可以设置在隔空投送中可被发现，以接收所有人发来的文件。使自己可被发现将会打开蓝牙和无线局域网。[进一步了解…](airDropSettingsOBK://)"
+            "value": "隔空投送可让你与附近用户立即共享。你可以设置在隔空投送中可被发现，以接收所有人发来的文件。使自己可被发现将会打开蓝牙和无线局域网。[关于隔空投送与隐私…](airDropSettingsOBK://)"
           }
         },
         "en_GB": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop lets you share instantly with people nearby. You can be discoverable in AirDrop to receive from everyone. Making yourself discoverable will turn on Bluetooth and WLAN. [Learn more…](airDropSettingsOBK://)"
+            "value": "AirDrop lets you share instantly with people nearby. You can be discoverable in AirDrop to receive from everyone. Making yourself discoverable will turn on Bluetooth and WLAN. [About AirDrop & Privacy…](airDropSettingsOBK://)"
           }
         },
         "lt": {
           "stringUnit": {
             "state": "translated",
-            "value": "„AirDrop“ leidžia akimirksniu bendrinti turinį su netoliese esančiais žmonėmis. Galite leisti „AirDrop“ paslaugai jus aptikti, kad gautumėte duomenis iš visų asmenų. Jei leisite jus aptikti, bus įjungtas „Bluetooth“ ir WLAN. [Sužinokite daugiau…](airDropSettingsOBK://)"
+            "value": "„AirDrop“ leidžia akimirksniu bendrinti turinį su netoliese esančiais asmenimis. Galite leisti „AirDrop“ paslaugai jus aptikti ir gauti duomenis iš visų asmenų. Jei leisite jus aptikti, bus įjungtas „Bluetooth“ ir WLAN. [Apie „AirDrop“ ir privatumą…](airDropSettingsOBK://)"
           }
         },
         "es_US": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop te permite compartir contenido al instante con personas que están cerca. Puedes hacerte visible para recibir elementos de cualquier persona. Al hacerlo, se activarán las conexiones Bluetooth y WLAN. [Obtén detalles…](airDropSettingsOBK://)"
+            "value": "AirDrop te permite compartir contenido al instante con personas que están cerca. Puedes hacerte visible para recibir elementos de cualquier persona. Al hacerlo, se activarán las conexiones Bluetooth y WLAN. [Acerca de AirDrop y la privacidad…](airDropSettingsOBK://)"
           }
         },
         "cs": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop vám umožňuje okamžitě sdílet data s lidmi ve vašem okolí. Chcete‑li přijímat data ode všech lidí, můžete se nastavit jako viditelní přes AirDrop. Pokud to uděláte, zapne se Bluetooth a WLAN. [Další informace…](airDropSettingsOBK://)"
+            "value": "AirDrop vám umožňuje okamžitě sdílet data s lidmi ve vašem okolí. Chcete‑li přijímat data ode všech lidí, můžete se nastavit jako viditelní přes AirDrop. Pokud to uděláte, zapne se Bluetooth a WLAN. [O AirDropu a soukromí…](airDropSettingsOBK://)"
           }
         },
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop membolehkan anda berkongsi serta-merta dengan orang berdekatan. Anda boleh ditemui dalam AirDrop untuk menerima daripada semua orang. Menjadikan diri anda boleh ditemui akan mengaktifkan Bluetooth dan WLAN. [Ketahui Lebih Lanjut…](airDropSettingsOBK://)"
+            "value": "AirDrop membolehkan anda berkongsi serta-merta dengan orang berdekatan. Anda boleh ditemui dalam AirDrop untuk menerima daripada semua orang. Menjadikan diri anda boleh ditemui akan mengaktifkan Bluetooth dan WLAN. [Perihal AirDrop & Privasi…](airDropSettingsOBK://)"
           }
         },
         "sk": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop vám umožňuje okamžité zdieľanie s osobami vo vašej blízkosti. Ak chcete prijímať dáta od všetkých, môžete sa nastaviť ako viditeľní pre AirDrop. Ak sa nastavíte ako viditeľní, zapne sa Bluetooth a WLAN. [Viac informácií…](airDropSettingsOBK://)"
+            "value": "AirDrop vám umožňuje okamžité zdieľanie s osobami vo vašej blízkosti. Ak chcete prijímať dáta od všetkých, môžete sa nastaviť ako viditeľní pre AirDrop. Ak sa nastavíte ako viditeľní, zapne sa Bluetooth a WLAN. [O AirDrope a súkromí…](airDropSettingsOBK://)"
           }
         },
         "bg": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop ви позволява да споделяте незабавно с хората около вас. Можете да бъдете открити и да получавате чрез AirDrop от всички. Ако разрешите откриването, Bluetooth и WLAN ще се включат. [Научете повече…](airDropSettingsOBK://)"
+            "value": "AirDrop ви позволява да споделяте незабавно с хората около вас. Можете да бъдете открити и да получавате чрез AirDrop от всички. Ако разрешите откриването, Bluetooth и WLAN ще се включат. [Относно AirDrop и поверителност…](airDropSettingsOBK://)"
           }
         },
         "sl": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop vam omogoča takojšnje deljenje z osebami v bližini. V funkciji AirDrop ste lahko vidni za prejem od kogarkoli. Če omogočite vidnost, se bo vklopila povezava Bluetooth ali povezava z omrežjem WLAN. [Več o tem …](airDropSettingsOBK://)"
+            "value": "AirDrop vam omogoča takojšnje deljenje z osebami v bližini. V funkciji AirDrop ste lahko vidni za prejem od kogarkoli. Če omogočite vidnost, se bo vklopila povezava Bluetooth in povezava z omrežjem WLAN. [Več o funkciji AirDrop in zasebnosti …](airDropSettingsOBK://)"
           }
         },
         "en_AU": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop lets you share instantly with people nearby. You can be discoverable in AirDrop to receive from everyone. Making yourself discoverable will turn on Bluetooth and WLAN. [Learn more…](airDropSettingsOBK://)"
+            "value": "AirDrop lets you share instantly with people nearby. You can be discoverable in AirDrop to receive from everyone. Making yourself discoverable will turn on Bluetooth and WLAN. [About AirDrop & Privacy…](airDropSettingsOBK://)"
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Mit AirDrop kannst du Daten sofort mit anderen in der Nähe teilen. Du kannst für den Empfang von Daten in AirDrop für alle sichtbar sein. Wenn du dich sichtbar machst, werden Bluetooth und WLAN aktiviert. [Weitere Infos …](airDropSettingsOBK://)"
+            "value": "Mit AirDrop kannst du Daten sofort mit anderen in der Nähe teilen. Du kannst für den Empfang von Daten in AirDrop für alle sichtbar sein. Wenn du dich sichtbar machst, werden Bluetooth und WLAN aktiviert. [Über AirDrop & Datenschutz …](airDropSettingsOBK://)"
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop cho phép bạn chia sẻ tức thời với những người ở gần. Bạn có thể đặt trạng thái có thể tìm thấy trong AirDrop để nhận dữ liệu từ mọi người. Đặt thiết bị của bạn thành có thể tìm thấy sẽ bật Bluetooth và WLAN. [Tìm hiểu thêm…](airDropSettingsOBK://)"
+            "value": "AirDrop cho phép bạn chia sẻ tức thời với những người ở gần. Bạn có thể đặt trạng thái có thể tìm thấy trong AirDrop để nhận dữ liệu từ mọi người. Đặt thiết bị của bạn thành có thể tìm thấy sẽ bật Bluetooth và WLAN. [AirDrop & Quyền riêng tư…](airDropSettingsOBK://)"
           }
         },
         "ro": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop vă permite să partajați instantaneu cu persoanele din apropiere. Vă puteți face dispozitivul detectabil prin AirDrop pentru a primi fișiere de la oricine. Dacă faceți dispozitivul detectabil, vor fi activate conexiunile Bluetooth și WLAN. [Mai multe…](airDropSettingsOBK://)"
+            "value": "AirDrop vă permite să partajați instantaneu cu persoanele din apropiere. Vă puteți face dispozitivul detectabil prin AirDrop pentru a primi fișiere de la oricine. Dacă faceți dispozitivul detectabil, vor fi activate conexiunile Bluetooth și WLAN. [Despre AirDrop și intimitate…](airDropSettingsOBK://)"
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop дає змогу миттєво надсилати різноманітний вміст користувачам поблизу. Можна зробити себе виявним в AirDrop, щоб отримувати матеріали від усіх. Перехід у виявний стан увімкне Bluetooth і WLAN. [Докладніше…](airDropSettingsOBK://)"
+            "value": "AirDrop дає змогу миттєво надсилати різноманітний вміст людям поблизу. Можна ввімкнути виявлення в AirDrop, щоб отримувати вміст від усіх. Це ввімкне Bluetooth і WLAN. [Про AirDrop і приватність…](airDropSettingsOBK://)"
           }
         },
         "kk": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop функциясы қасыңыздағы адамдармен файлдарды жылдам бөлісуге мүмкіндік береді. AirDrop ішінде өзіңізді анықтау мүмкіндігін қосып, әркімнен файлдар алуыңызға болады. Анықтау мүмкіндігін қоссаңыз, Bluetooth және WLAN функциялары да қосылады. [Толығырақ…](airDropSettingsOBK://)"
+            "value": "AirDrop функциясы жаныңыздағы адамдармен файлдарды жылдам бөлісуге мүмкіндік береді. AirDrop ішінде өзіңізді анықтау мүмкіндігін қосып, әркімнен файлдар алуыңызға болады. Анықтау мүмкіндігін қоссаңыз, Bluetooth және WLAN функциялары да қосылады. [AirDrop және құпиялылық туралы ақпарат…](airDropSettingsOBK://)"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop vous permet de partager instantanément des éléments avec des utilisateurs à proximité. Vous pouvez vous rendre détectable dans AirDrop pour recevoir des éléments de tous les utilisateurs. Si vous vous rendez détectable, le Bluetooth et le WLAN seront activés. [En savoir plus…](airDropSettingsOBK://)"
+            "value": "AirDrop vous permet de partager instantanément des éléments avec des utilisateurs à proximité. Vous pouvez vous rendre détectable dans AirDrop pour recevoir des éléments de tous les utilisateurs. Si vous vous rendez détectable, le Bluetooth et le WLAN seront activés. [AirDrop et confidentialité…](airDropSettingsOBK://)"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop te permite compartir contenido al instante con personas que estén cerca. Para recibir archivos, puedes elegir ser visible para todo el mundo. Al hacerlo, se activará la función Bluetooth y la red WLAN. [Más información…](airDropSettingsOBK://)"
+            "value": "AirDrop te permite compartir contenido al instante con personas que estén cerca. Para que cualquier persona pueda enviarte contenido, puedes elegir ser visible para todo el mundo. Al hacerlo, se activará la función Bluetooth y la red WLAN. [Acerca de AirDrop y la privacidad…](airDropSettingsOBK://)"
           }
         },
         "pt": {
           "stringUnit": {
             "state": "translated",
-            "value": "O AirDrop permite compartilhar itens instantaneamente com pessoas por perto. Você pode ficar visível no AirDrop para receber itens de qualquer pessoa. Para isso, o Bluetooth e a rede WLAN serão ativados. [Saiba Mais…](airDropSettingsOBK://)"
+            "value": "O AirDrop permite compartilhar itens instantaneamente com pessoas por perto. Você pode ficar visível no AirDrop para receber itens de qualquer pessoa. Para isso, o Bluetooth e a rede WLAN serão ativados. [Sobre o AirDrop e Privacidade…](airDropSettingsOBK://)"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDropで近くの人とすぐにデータを共有できます。AirDropで検出可能にして、すべての人から受信可能にできます。このデバイスを検出可能にすると、BluetoothとWLANがオンになります。[詳しい情報…](airDropSettingsOBK://)"
+            "value": "AirDropで近くの人とすぐにデータを共有できます。AirDropで検出可能にして、すべての人から受信可能にできます。このデバイスを検出可能にすると、BluetoothとWLANがオンになります。[AirDropとプライバシーについて…](airDropSettingsOBK://)"
           }
         },
         "pt_PT": {
           "stringUnit": {
             "state": "translated",
-            "value": "O AirDrop permite‑lhe partilhar de imediato com quem se encontra à sua volta. Pode optar por estar visível no AirDrop para poder receber ficheiros de qualquer pessoa. Se optar por estar visível, Bluetooth e WLAN serão ativados. [Saiba mais…](airDropSettingsOBK://)"
+            "value": "O AirDrop permite‑lhe partilhar de imediato com quem se encontra à sua volta. Pode optar por estar visível no AirDrop para poder receber ficheiros de qualquer pessoa. Se optar por estar visível, Bluetooth e WLAN serão ativados. [Acerca de AirDrop e Privacidade…](airDropSettingsOBK://)"
           }
         },
         "hr": {
           "stringUnit": {
             "state": "translated",
-            "value": "AirDrop vam omogućava neposredno dijeljenje s osobama u blizini. Možete podesiti da vas mogu pronaći u AirDropu kako biste primali sadržaje od svih. Ako podesite da vas se može pronaći, uključit će se Bluetooth i WLAN. [Saznajte više…](airDropSettingsOBK://)"
+            "value": "AirDrop vam omogućava neposredno dijeljenje s osobama u blizini. Možete podesiti da vas mogu pronaći u AirDropu kako biste primali sadržaje od svih. Ako podesite da vas se može pronaći, uključit će se Bluetooth i WLAN. [Više o AirDropu i privatnosti…](airDropSettingsOBK://)"
           }
         }
       }
@@ -2112,7 +2112,7 @@
         "kk": {
           "stringUnit": {
             "state": "translated",
-            "value": "«Қабылдау» функциясы өшірулі"
+            "value": "Қабылдау өшірулі"
           }
         },
         "fr": {
@@ -2345,7 +2345,7 @@
         "sl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Nadaljujte pošiljanje in prejemanje vsebine, kadar Wi-Fi med storitvijo AirDrop ni na voljo."
+            "value": "Nadaljujte pošiljanje in prejemanje vsebine, kadar Wi‑Fi med storitvijo AirDrop ni na voljo."
           }
         },
         "en_AU": {
@@ -3833,7 +3833,7 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Τοποθέτηση συσκευών κοντά…"
+            "value": "Τοποθέτηση συσκευών κοντά"
           }
         },
         "ca": {
