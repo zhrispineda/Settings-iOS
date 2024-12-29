@@ -193,15 +193,7 @@ struct BooksView: View {
                     Text("Reset Identifier", tableName: table)
                 }
             } footer: {
-                Text("Reset the identifier used to report aggregate app usage statistics to Apple.", tableName: table) + Text(" [\("BUTTON_TITLE".localize(table: "AppleBooks"))](booksSettingsOBK://)")
-            }
-            .onOpenURL { url in
-                if url.scheme == "booksSettingsOBK" {
-                    showingSheet = true
-                }
-            }
-            .sheet(isPresented: $showingSheet) {
-                OnBoardingView(table: "AppleBooks")
+                Text("Reset the identifier used to report aggregate app usage statistics to Apple.", tableName: table) + Text(" [\("BUTTON_TITLE".localize(table: "AppleBooks"))](pref://)")
             }
             
             NavigationLink("Acknowledgements".localize(table: table)) {
@@ -209,6 +201,14 @@ struct BooksView: View {
                     .navigationTitle("Acknowledgements".localize(table: table))
                     .navigationBarTitleDisplayMode(.inline)
             }
+        }
+        .onOpenURL { url in
+            if url.scheme == "pref" {
+                showingSheet = true
+            }
+        }
+        .sheet(isPresented: $showingSheet) {
+            OnBoardingView(table: "AppleBooks")
         }
     }
 }

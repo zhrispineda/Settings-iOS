@@ -49,12 +49,6 @@ struct ContentView: View {
                             } label: {
                                 AppleAccountSection()
                             }
-                            .sheet(isPresented: $showingSignInSheet) {
-                                NavigationStack {
-                                    SelectSignInOptionView()
-                                        .interactiveDismissDisabled()
-                                }
-                            }
                             
                             if !followUpDismissed {
                                 Section {
@@ -111,6 +105,12 @@ struct ContentView: View {
                             Task {
                                 try await Task.sleep(nanoseconds: 500_000_000)
                                 withAnimation { preloadRect = true }
+                            }
+                        }
+                        .sheet(isPresented: $showingSignInSheet) {
+                            NavigationStack {
+                                SelectSignInOptionView()
+                                    .interactiveDismissDisabled()
                             }
                         }
                         .searchable(text: $searchText, placement: .navigationBarDrawer)

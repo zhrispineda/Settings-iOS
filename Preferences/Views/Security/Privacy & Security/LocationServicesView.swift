@@ -20,15 +20,7 @@ struct LocationServicesView: View {
                 Toggle("LOCATION_SERVICES".localize(table: table), isOn: $locationServicesEnabled)
                 NavigationLink("PRIVACY_ALERTS".localize(table: table), destination: LocationAlertsView())
             } footer: {
-                Text(UIDevice.iPhone ? "DESCRIPTION_GPS_WIFI" : "DESCRIPTION_NOGPS_WIFI", tableName: table) + Text(" [\("ABOUT_LOCATION_AND_PRIVACY".localize(table: table))](locationSettingsOBK://)")
-            }
-            .onOpenURL { url in
-                if url.scheme == "locationSettingsOBK" {
-                    showingSheet = true
-                }
-            }
-            .sheet(isPresented: $showingSheet) {
-                OnBoardingView(table: "LocationServices")
+                Text(UIDevice.iPhone ? "DESCRIPTION_GPS_WIFI" : "DESCRIPTION_NOGPS_WIFI", tableName: table) + Text(" [\("ABOUT_LOCATION_AND_PRIVACY".localize(table: table))](pref://)")
             }
             
 //            Section {
@@ -70,6 +62,14 @@ struct LocationServicesView: View {
                     }
                 }
             }
+        }
+        .onOpenURL { url in
+            if url.scheme == "locationSettingsOBK" {
+                showingSheet = true
+            }
+        }
+        .sheet(isPresented: $showingSheet) {
+            OnBoardingView(table: "LocationServices")
         }
     }
 }

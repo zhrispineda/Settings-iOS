@@ -17,6 +17,7 @@ import SwiftUI
 /// - Parameter icon: The String name of the image asset or symbol.
 /// - Parameter title: The String name of the label to display.
 /// - Parameter subtitle: The String text of the subtitle to display.
+/// - Parameter iconColor: The Color to use for the icon.
 struct IconToggle: View {
     // Variables
     @Binding var enabled: Bool
@@ -24,11 +25,12 @@ struct IconToggle: View {
     var icon = String()
     var title = String()
     var subtitle = String()
+    var iconColor = Color.white
     
     var body: some View {
         Toggle(isOn: $enabled) {
             HStack(spacing: 15) {
-                IconView(id: title, icon: icon, color: color, iconColor: .white)
+                IconView(id: title, icon: icon, color: color, iconColor: iconColor)
                 
                 VStack(alignment: .leading, spacing: 0) {
                     Text(LocalizedStringKey(title))

@@ -54,6 +54,7 @@ struct CameraView: View {
     
     var body: some View {
         CustomList(title: "CAMERA_SETTINGS_TITLE".localize(table: table), topPadding: true) {
+            // MARK: System Settings Section
             if !UIDevice.IsSimulator && UIDevice.AdvancedPhotographicStylesCapability {
                 Section {
                     CustomNavigationLink(title: "CAMERA_BUTTON_TITLE".localize(table: buttonTable), status: selectedApp.localize(table: buttonTable), destination: CameraControlView())
@@ -64,6 +65,7 @@ struct CameraView: View {
                 }
             }
             
+            // MARK: App Settings Section
             if UIDevice.AdvancedPhotographicStylesCapability {
                 Section {
                     Button {
@@ -86,6 +88,7 @@ struct CameraView: View {
                 }
             }
             
+            // MARK: Camera Options Section
             Section {
                 CustomNavigationLink(title: "CAM_RECORD_VIDEO_TITLE".localize(table: table), status: "\(selectedVideoSetting)_SHORT".localize(table: table), destination: RecordVideoView())
                 CustomNavigationLink(title: "CAM_RECORD_SLOMO_TITLE".localize(table: table), status: "\(selectedSlomoSetting)_SHORT".localize(table: table), destination: RecordSlomoView())
@@ -106,6 +109,7 @@ struct CameraView: View {
                 Toggle("TEXT_ANALYSIS".localize(table: table), isOn: $showDetectedTextEnabled)
             }
             
+            // MARK: Composition Section
             Section {
                 Toggle("Grid".localize(table: table), isOn: $gridEnabled)
                 Toggle("HORIZON_LEVEL".localize(table: table), isOn: $levelEnabled)
@@ -117,6 +121,7 @@ struct CameraView: View {
                 Text("COMPOSITION_GROUP_TITLE", tableName: table)
             }
             
+            // MARK: Photo Capture Section
             if UIDevice.PhotographicStylesCapability {
                 Section {
                     Button("SEMANTIC_STYLES_ROW_TITLE".localize(table: table)) {}
@@ -163,6 +168,7 @@ struct CameraView: View {
                 }
             }
             
+            // MARK: Lens Correction Section
             if UIDevice.LensCorrectionCapability {
                 Section {
                     Toggle("IDC_SWITCH".localize(table: table), isOn: $lensCorrectionEnabled)
@@ -171,6 +177,7 @@ struct CameraView: View {
                 }
             }
             
+            // MARK: Macro Control Section
             if UIDevice.MacroLensCapability {
                 Section {
                     Toggle("AUTO_MACRO_SWITCH".localize(table: table), isOn: $macroControlEnabled)
@@ -179,17 +186,18 @@ struct CameraView: View {
                 }
             }
             
+            // MARK: Privacy Footer
             Section {} footer: {
-                Text(.init("[\("BUTTON_TITLE".localize(table: privacyTable))](cameraArSettingsOBK://)"))
-                    .onOpenURL { url in
-                        if url.scheme == "cameraArSettingsOBK" {
-                            showingSheet = true
-                        }
-                    }
-                    .sheet(isPresented: $showingSheet) {
-                        OnBoardingView(table: privacyTable)
-                    }
+                Text(.init("[\("BUTTON_TITLE".localize(table: privacyTable))](pref://)"))
             }
+        }
+        .onOpenURL { url in
+            if url.scheme == "pref" {
+                showingSheet = true
+            }
+        }
+        .sheet(isPresented: $showingSheet) {
+            OnBoardingView(table: privacyTable)
         }
     }
 }

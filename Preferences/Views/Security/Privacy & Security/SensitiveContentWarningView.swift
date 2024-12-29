@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SensitiveContentWarningView: View {
     // Variables
+    @Environment(\.colorScheme) private var colorScheme
     @State private var sensitiveContentWarningEnabled = false
     @State private var airDropEnabled = true
     @State private var contactsEnabled = true
@@ -34,7 +35,7 @@ struct SensitiveContentWarningView: View {
             
             if sensitiveContentWarningEnabled {
                 Section {
-                    IconToggle(enabled: $airDropEnabled, color: .white, icon: "airdrop", title: "AirDrop")
+                    IconToggle(enabled: $airDropEnabled, color: colorScheme == .dark ? .blue : .white, icon: "airdrop", title: "AirDrop", iconColor: .blue)
                     IconToggle(enabled: $contactsEnabled, icon: "appleContacts", title: "Contacts".localize(table: table))
                     IconToggle(enabled: $messagesEnabled, icon: "appleMessages", title: "Messages".localize(table: table))
                     IconToggle(enabled: $videoMessagesEnabled, color: .green, icon: "video.bubble.fill", title: "Video Messages".localize(table: table))
@@ -47,17 +48,17 @@ struct SensitiveContentWarningView: View {
                 } header: {
                     Text("Analytics & Improvements", tableName: table)
                 } footer: {
-                    Text(.init("Help Apple improve Sensitive Content Warning by sharing analytics and usage data. Analytics and data are aggregated in a form that is not personally identifiable. No messages or media are shared with Apple. [%@](communicationSafetyImprovementSplash://)".localize(table: table, "About Improve Sensitive Content Warning & Privacy…".localize(table: table))))
-                        .onOpenURL { url in
-                            if url.scheme == "communicationSafetyImprovementSplash" {
-                                showingSheet = true
-                            }
-                        }
-                        .sheet(isPresented: $showingSheet) {
-                            OnBoardingView(table: "ImproveSensitiveContentWarning")
-                        }
+                    Text(.init("Help Apple improve Sensitive Content Warning by sharing analytics and usage data. Analytics and data are aggregated in a form that is not personally identifiable. No messages or media are shared with Apple. [%@](pref://)".localize(table: table, "About Improve Sensitive Content Warning & Privacy…".localize(table: table))))
                 }
             }
+        }
+        .onOpenURL { url in
+            if url.scheme == "pref" {
+                showingSheet = true
+            }
+        }
+        .sheet(isPresented: $showingSheet) {
+            OnBoardingView(table: "ImproveSensitiveContentWarning")
         }
     }
 }

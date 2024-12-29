@@ -113,17 +113,18 @@ struct PhotosView: View {
                 Text("TRANSFER_SETTINGS_FOOTER", tableName: table)
             }
             
+            // MARK: Privacy Footer
             Section {} footer: {
-                Text("[\("BUTTON_TITLE".localize(table: "OBPhotos"))](photosSettingsOBK://)")
-                    .onOpenURL { url in
-                        if url.scheme == "photosSettingsOBK" {
-                            showingSheet = true
-                        }
-                    }
-                    .sheet(isPresented: $showingSheet) {
-                        OnBoardingView(table: "OBPhotos")
-                    }
+                Text("[\("BUTTON_TITLE".localize(table: "OBPhotos"))](pref://)")
             }
+        }
+        .onOpenURL { url in
+            if url.scheme == "pref" {
+                showingSheet = true
+            }
+        }
+        .sheet(isPresented: $showingSheet) {
+            OnBoardingView(table: "OBPhotos")
         }
     }
 }

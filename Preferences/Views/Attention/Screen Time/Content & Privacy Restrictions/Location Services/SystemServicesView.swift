@@ -76,7 +76,7 @@ struct SystemServicesView: View {
                 Text("PRODUCT_IMPROVEMENT", tableName: table)
             } footer: {
                 VStack(alignment: .leading) {
-                    Text(.init("POLARIS_FOOTER".localize(table: table, "[\("LEARN_MORE".localize(table: table))](mapsSettingsOBK://)"))) + Text("\n")
+                    Text(.init("POLARIS_FOOTER".localize(table: table, "[\("LEARN_MORE".localize(table: table))](pref://)"))) + Text("\n")
                     
                     Group {
                         Text("GENERAL_EXPLANATION_ITEM", tableName: table) + Text("\n")
@@ -98,14 +98,6 @@ struct SystemServicesView: View {
                         .padding(.trailing)
                     }
                 }
-                .onOpenURL { url in
-                    if url.scheme == "mapsSettingsOBK" {
-                        showingSheet = true
-                    }
-                }
-                .sheet(isPresented: $showingSheet) {
-                    OnBoardingView(table: "Maps")
-                }
             }
             
             Section {
@@ -113,6 +105,14 @@ struct SystemServicesView: View {
             } footer: {
                 Text("SYSTEM_SERVICES_STATUS_BAR_ICON_EXPLANATION", tableName: table)
             }
+        }
+        .onOpenURL { url in
+            if url.scheme == "pref" {
+                showingSheet = true
+            }
+        }
+        .sheet(isPresented: $showingSheet) {
+            OnBoardingView(table: "Maps")
         }
     }
 }

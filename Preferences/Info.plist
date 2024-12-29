@@ -16,12 +16,12 @@
 		</dict>
 		<dict>
 			<key>CFBundleTypeRole</key>
-			<string>Viewer</string>
+			<string>None</string>
 			<key>CFBundleURLName</key>
 			<string>com.example.Preferences</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>cameraArSettingsOBK</string>
+				<string>pref</string>
 			</array>
 		</dict>
 		<dict>
@@ -32,86 +32,6 @@
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>communicationSafetyImprovementSplash</string>
-			</array>
-		</dict>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Viewer</string>
-			<key>CFBundleURLName</key>
-			<string>com.example.Preferences</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>photosSettingsOBK</string>
-			</array>
-		</dict>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Viewer</string>
-			<key>CFBundleURLName</key>
-			<string>com.example.Preferences</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>passwordsSettingsOBK</string>
-			</array>
-		</dict>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Viewer</string>
-			<key>CFBundleURLName</key>
-			<string>com.example.Preferences</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>spotlightSettingsOBK</string>
-			</array>
-		</dict>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Viewer</string>
-			<key>CFBundleURLName</key>
-			<string>com.example.Preferences</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>appleAccountSettingsOBK</string>
-			</array>
-		</dict>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Viewer</string>
-			<key>CFBundleURLName</key>
-			<string>com.example.Preferences</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>batterySettingsOBK</string>
-			</array>
-		</dict>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Viewer</string>
-			<key>CFBundleURLName</key>
-			<string>com.example.Preferences</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>booksSettingsOBK</string>
-			</array>
-		</dict>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Viewer</string>
-			<key>CFBundleURLName</key>
-			<string>com.example.Preferences</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>locationSettingsOBK</string>
-			</array>
-		</dict>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Viewer</string>
-			<key>CFBundleURLName</key>
-			<string>com.example.Preferences</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>mapsSettingsOBK</string>
 			</array>
 		</dict>
 	</array>

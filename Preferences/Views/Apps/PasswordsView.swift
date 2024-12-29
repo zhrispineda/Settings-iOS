@@ -42,18 +42,10 @@ struct PasswordsView: View {
                 Toggle("Detect Compromised Passwords".localize(table: table), isOn: $detectCompromisedPasswordsEnabled)
             } footer: {
                 if UIDevice.iPhone {
-                    Text(.init("iPhone can securely monitor your passwords and alert you if they appear in known data leaks. %passwords-privacy-link%".localize(table: table).replacingOccurrences(of: "0x0asswords-privacy-link", with: "[\("BUTTON_TITLE".localize(table: "Passwords"))](passwordsSettingsOBK://)")))
+                    Text(.init("iPhone can securely monitor your passwords and alert you if they appear in known data leaks. %passwords-privacy-link%".localize(table: table).replacingOccurrences(of: "0x0asswords-privacy-link", with: "[\("BUTTON_TITLE".localize(table: "Passwords"))](pref://)")))
                 } else if UIDevice.iPad {
-                    Text(.init("iPad can securely monitor your passwords and alert you if they appear in known data leaks. %passwords-privacy-link%".localize(table: table).replacingOccurrences(of: "0x0asswords-privacy-link", with: "[\("BUTTON_TITLE".localize(table: "Passwords"))](passwordsSettingsOBK://)")))
+                    Text(.init("iPad can securely monitor your passwords and alert you if they appear in known data leaks. %passwords-privacy-link%".localize(table: table).replacingOccurrences(of: "0x0asswords-privacy-link", with: "[\("BUTTON_TITLE".localize(table: "Passwords"))](pref://)")))
                 }
-            }
-            .onOpenURL { url in
-                if url.scheme == "passwordsSettingsOBK" {
-                    showingSheet = true
-                }
-            }
-            .sheet(isPresented: $showingSheet) {
-                OnBoardingView(table: "Passwords")
             }
             
             Section {
@@ -72,6 +64,14 @@ struct PasswordsView: View {
                 Button("Open Passwords".localize(table: table)) {}
                 Button("View AutoFill Settings".localize(table: table)) {}
             }
+        }
+        .onOpenURL { url in
+            if url.scheme == "pref" {
+                showingSheet = true
+            }
+        }
+        .sheet(isPresented: $showingSheet) {
+            OnBoardingView(table: "Passwords")
         }
     }
 }

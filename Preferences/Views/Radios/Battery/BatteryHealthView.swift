@@ -18,15 +18,7 @@ struct BatteryHealthView: View {
             Section {
                 LabeledContent("BATTERY_HEALTH_TITLE".localize(table: table), value: "NORMAL_STATE".localize(table: table))
             } footer: {
-                Text(.init(UIDevice.iPhone ? "BATTERY_HEALTH_STATE_FOOTER_NORMAL_IPHONE".localize(table: table, "[\("ABOUT_BATTERY_LINK".localize(table: table))](batterySettingsOBK://)") : "BATTERY_HEALTH_STATE_FOOTER_NORMAL_IPAD".localize(table: table, "[\("ABOUT_BATTERY_LINK".localize(table: table))](batterySettingsOBK://)")))
-            }
-            .onOpenURL { url in
-                if url.scheme == "batterySettingsOBK" {
-                    showingSheet = true
-                }
-            }
-            .sheet(isPresented: $showingSheet) {
-                OnBoardingView(table: "BatteryUI")
+                Text(.init(UIDevice.iPhone ? "BATTERY_HEALTH_STATE_FOOTER_NORMAL_IPHONE".localize(table: table, "[\("ABOUT_BATTERY_LINK".localize(table: table))](pref://)") : "BATTERY_HEALTH_STATE_FOOTER_NORMAL_IPAD".localize(table: table, "[\("ABOUT_BATTERY_LINK".localize(table: table))](pref://)")))
             }
             
             Section {
@@ -62,6 +54,14 @@ struct BatteryHealthView: View {
                 LabeledContent("MANUFACTURE_DATE_TITLE".localize(table: table), value: UIDevice.iPhone ? "August 202\(UIDevice.AlwaysCaptureDepthCapability ? "4" : "3")" : "February 2024")
                 LabeledContent("FIRST_USE_TITLE".localize(table: table), value: UIDevice.iPhone ? "September 202\(UIDevice.AlwaysCaptureDepthCapability ? "4" : "3")" : "May 2024")
             }
+        }
+        .onOpenURL { url in
+            if url.scheme == "pref" {
+                showingSheet = true
+            }
+        }
+        .sheet(isPresented: $showingSheet) {
+            OnBoardingView(table: "BatteryUI")
         }
     }
 }
