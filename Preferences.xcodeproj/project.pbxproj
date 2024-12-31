@@ -110,7 +110,6 @@
 		83441A8B2CAF73740022E193 /* JournalingSuggestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83441A8A2CAF73740022E193 /* JournalingSuggestionsView.swift */; };
 		834540C52C9CE2E100091E79 /* AddLanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834540C42C9CE2E100091E79 /* AddLanguageView.swift */; };
 		8345656E2CAADFD6002BE49D /* CameraSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8345656D2CAADFD6002BE49D /* CameraSettings.xcstrings */; };
-		834565702CAAE202002BE49D /* CameraSettings-CameraButton.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8345656F2CAAE202002BE49D /* CameraSettings-CameraButton.xcstrings */; };
 		834565722CAAE313002BE49D /* CameraSettings-SmartStyles.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834565712CAAE313002BE49D /* CameraSettings-SmartStyles.xcstrings */; };
 		834565742CAAE673002BE49D /* CameraEditKit.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834565732CAAE673002BE49D /* CameraEditKit.xcstrings */; };
 		834565762CAAE7B8002BE49D /* CameraSettings-CinematicAudio.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834565752CAAE7B8002BE49D /* CameraSettings-CinematicAudio.xcstrings */; };
@@ -292,7 +291,6 @@
 		839657542CCC02EF00D61C8B /* Accessibility-AnimatedImages.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 839657532CCC02EF00D61C8B /* Accessibility-AnimatedImages.xcstrings */; };
 		8397F9E92CDF20E9004DFE2F /* BooksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397F9E82CDF20E9004DFE2F /* BooksView.swift */; };
 		83A3E68F2CAB9743006F4643 /* AccessibilityTitles.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83A3E68E2CAB9743006F4643 /* AccessibilityTitles.xcstrings */; };
-		83A3E6912CAB98C3006F4643 /* Accessibility-D93.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83A3E6902CAB98C3006F4643 /* Accessibility-D93.xcstrings */; };
 		83A3E6932CAC2832006F4643 /* Accessibility-HapticMusic.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83A3E6922CAC2832006F4643 /* Accessibility-HapticMusic.xcstrings */; };
 		83A3E6952CAC3091006F4643 /* FocalLengthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A3E6942CAC3091006F4643 /* FocalLengthView.swift */; };
 		83A422342CAC60B100EED538 /* CameraSettings-4k120.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83A422332CAC60B100EED538 /* CameraSettings-4k120.xcstrings */; };
@@ -460,6 +458,9 @@
 		83F78A2D2B8EA3C900025062 /* AddFavoritePhraseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F78A2C2B8EA3C900025062 /* AddFavoritePhraseView.swift */; };
 		83FB7DEC2CCD49EA007C6336 /* Captioning-dinnerbell.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83FB7DEB2CCD49EA007C6336 /* Captioning-dinnerbell.xcstrings */; };
 		83FCEFEA2C07F0DE008BE814 /* NetworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FCEFE92C07F0DE008BE814 /* NetworkDetailView.swift */; };
+		83FE7FFE2D235DB300F065EF /* CameraSettings-CameraButton.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83FE7FFD2D235DB300F065EF /* CameraSettings-CameraButton.xcstrings */; };
+		83FE80012D2362BE00F065EF /* CameraControlAccessibilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FE80002D2362BE00F065EF /* CameraControlAccessibilityView.swift */; };
+		83FE80032D2363B900F065EF /* Accessibility-D93.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83FE80022D2363B900F065EF /* Accessibility-D93.xcstrings */; };
 		83FF692F2CC6C9CF00D77FBB /* LocalizedStrings-D94.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83FF692E2CC6C9CE00D77FBB /* LocalizedStrings-D94.xcstrings */; };
 		83FF69312CC6CDDC00D77FBB /* LocalizedStrings-DetectionMode.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83FF69302CC6CDDC00D77FBB /* LocalizedStrings-DetectionMode.xcstrings */; };
 /* End PBXBuildFile section */
@@ -569,7 +570,6 @@
 		83441A8A2CAF73740022E193 /* JournalingSuggestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalingSuggestionsView.swift; sourceTree = "<group>"; };
 		834540C42C9CE2E100091E79 /* AddLanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLanguageView.swift; sourceTree = "<group>"; };
 		8345656D2CAADFD6002BE49D /* CameraSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = CameraSettings.xcstrings; sourceTree = "<group>"; };
-		8345656F2CAAE202002BE49D /* CameraSettings-CameraButton.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "CameraSettings-CameraButton.xcstrings"; sourceTree = "<group>"; };
 		834565712CAAE313002BE49D /* CameraSettings-SmartStyles.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "CameraSettings-SmartStyles.xcstrings"; sourceTree = "<group>"; };
 		834565732CAAE673002BE49D /* CameraEditKit.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = CameraEditKit.xcstrings; sourceTree = "<group>"; };
 		834565752CAAE7B8002BE49D /* CameraSettings-CinematicAudio.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "CameraSettings-CinematicAudio.xcstrings"; sourceTree = "<group>"; };
@@ -751,7 +751,6 @@
 		839657532CCC02EF00D61C8B /* Accessibility-AnimatedImages.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "Accessibility-AnimatedImages.xcstrings"; sourceTree = "<group>"; };
 		8397F9E82CDF20E9004DFE2F /* BooksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksView.swift; sourceTree = "<group>"; };
 		83A3E68E2CAB9743006F4643 /* AccessibilityTitles.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AccessibilityTitles.xcstrings; sourceTree = "<group>"; };
-		83A3E6902CAB98C3006F4643 /* Accessibility-D93.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "Accessibility-D93.xcstrings"; sourceTree = "<group>"; };
 		83A3E6922CAC2832006F4643 /* Accessibility-HapticMusic.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "Accessibility-HapticMusic.xcstrings"; sourceTree = "<group>"; };
 		83A3E6942CAC3091006F4643 /* FocalLengthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocalLengthView.swift; sourceTree = "<group>"; };
 		83A422332CAC60B100EED538 /* CameraSettings-4k120.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "CameraSettings-4k120.xcstrings"; sourceTree = "<group>"; };
@@ -921,6 +920,9 @@
 		83F78A2C2B8EA3C900025062 /* AddFavoritePhraseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFavoritePhraseView.swift; sourceTree = "<group>"; };
 		83FB7DEB2CCD49EA007C6336 /* Captioning-dinnerbell.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "Captioning-dinnerbell.xcstrings"; sourceTree = "<group>"; };
 		83FCEFE92C07F0DE008BE814 /* NetworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDetailView.swift; sourceTree = "<group>"; };
+		83FE7FFD2D235DB300F065EF /* CameraSettings-CameraButton.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "CameraSettings-CameraButton.xcstrings"; sourceTree = "<group>"; };
+		83FE80002D2362BE00F065EF /* CameraControlAccessibilityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraControlAccessibilityView.swift; sourceTree = "<group>"; };
+		83FE80022D2363B900F065EF /* Accessibility-D93.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "Accessibility-D93.xcstrings"; sourceTree = "<group>"; };
 		83FF692E2CC6C9CE00D77FBB /* LocalizedStrings-D94.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "LocalizedStrings-D94.xcstrings"; sourceTree = "<group>"; };
 		83FF69302CC6CDDC00D77FBB /* LocalizedStrings-DetectionMode.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "LocalizedStrings-DetectionMode.xcstrings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -957,7 +959,7 @@
 			isa = PBXGroup;
 			children = (
 				839657532CCC02EF00D61C8B /* Accessibility-AnimatedImages.xcstrings */,
-				83A3E6902CAB98C3006F4643 /* Accessibility-D93.xcstrings */,
+				83FE80022D2363B900F065EF /* Accessibility-D93.xcstrings */,
 				832877D82CAD8C7100013B0B /* Accessibility.xcstrings */,
 				83A3E68E2CAB9743006F4643 /* AccessibilityTitles.xcstrings */,
 				83FB7DEB2CCD49EA007C6336 /* Captioning-dinnerbell.xcstrings */,
@@ -1097,8 +1099,8 @@
 			isa = PBXGroup;
 			children = (
 				83A422332CAC60B100EED538 /* CameraSettings-4k120.xcstrings */,
+				83FE7FFD2D235DB300F065EF /* CameraSettings-CameraButton.xcstrings */,
 				834565752CAAE7B8002BE49D /* CameraSettings-CinematicAudio.xcstrings */,
-				8345656F2CAAE202002BE49D /* CameraSettings-CameraButton.xcstrings */,
 				834565712CAAE313002BE49D /* CameraSettings-SmartStyles.xcstrings */,
 				83DBCE052CCD957C00B33277 /* CameraSettings-TrueVideo.xcstrings */,
 				8345656D2CAADFD6002BE49D /* CameraSettings.xcstrings */,
@@ -1904,6 +1906,7 @@
 		83D7B44F2C925AEA00C2B81E /* Camera */ = {
 			isa = PBXGroup;
 			children = (
+				83FE7FFF2D2362AF00F065EF /* Camera Control */,
 				83D7B4502C925B0400C2B81E /* PhotographicStylesView.swift */,
 				83EC895E2CA0F8B500389F3B /* CameraControlView.swift */,
 				83E2ADA62CA1D80A00DFED0C /* RecordVideoView.swift */,
@@ -2088,6 +2091,14 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		83FE7FFF2D2362AF00F065EF /* Camera Control */ = {
+			isa = PBXGroup;
+			children = (
+				83FE80002D2362BE00F065EF /* CameraControlAccessibilityView.swift */,
+			);
+			path = "Camera Control";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2183,6 +2194,7 @@
 				83F77D7C2CD3F9740026B1AC /* ContactlessAndCredentialSettings_Localizable.xcstrings in Resources */,
 				83B893C02B8FDBE8005705A3 /* iPhone15_Pro_NaturalTitanium.usdz in Resources */,
 				83F77D742CD3F6BD0026B1AC /* PassKit.xcstrings in Resources */,
+				83FE80032D2363B900F065EF /* Accessibility-D93.xcstrings in Resources */,
 				831C1A4E2CCE9A1300866498 /* Display.xcstrings in Resources */,
 				8355C80C2CE532900067D675 /* iCloudKeychain.xcstrings in Resources */,
 				834A15082CD85B10004A0025 /* MobileCalSettings.xcstrings in Resources */,
@@ -2225,7 +2237,6 @@
 				8383BE022CE43E9F00B8C68E /* ExposureNotifications.xcstrings in Resources */,
 				83C79BBB2CE4235300F49B4F /* EmergencySOS.xcstrings in Resources */,
 				83C79B9F2CE3CEC800F49B4F /* BusinessChat.xcstrings in Resources */,
-				83A3E6912CAB98C3006F4643 /* Accessibility-D93.xcstrings in Resources */,
 				834A15042CD85705004A0025 /* TranslationUI.xcstrings in Resources */,
 				8355C8082CE52E950067D675 /* HomeElectricity.xcstrings in Resources */,
 				83A3E6932CAC2832006F4643 /* Accessibility-HapticMusic.xcstrings in Resources */,
@@ -2273,6 +2284,7 @@
 				8360825D2D13B04E00902254 /* SettingsPhysical.gif in Resources */,
 				83C79BAB2CE3EDF300F49B4F /* ApplePay.xcstrings in Resources */,
 				8355C8182CE53A990067D675 /* ImproveEVRouting.xcstrings in Resources */,
+				83FE7FFE2D235DB300F065EF /* CameraSettings-CameraButton.xcstrings in Resources */,
 				83DBCE062CCD957C00B33277 /* CameraSettings-TrueVideo.xcstrings in Resources */,
 				834718E42CDFD6D1002D9BC9 /* PrivacyDisclosureUI.xcstrings in Resources */,
 				83C79BA12CE3D11900F49B4F /* AppleMusic.xcstrings in Resources */,
@@ -2336,7 +2348,6 @@
 				83A422342CAC60B100EED538 /* CameraSettings-4k120.xcstrings in Resources */,
 				83C3F33B2CC2B25100AE2402 /* Date & Time.xcstrings in Resources */,
 				832877FB2CAEEA7E00013B0B /* WiFiKitUILocalizableStrings.xcstrings in Resources */,
-				834565702CAAE202002BE49D /* CameraSettings-CameraButton.xcstrings in Resources */,
 				837BCF372CD2ECD0009B1E33 /* Passcode Lock.xcstrings in Resources */,
 				83C79BB32CE3EF5800F49B4F /* TVApp.xcstrings in Resources */,
 				837C9DF22CC82C3F00A7080F /* HighlightContentSettings.xcstrings in Resources */,
@@ -2605,6 +2616,7 @@
 				83D31F882B8E3DA90057CFDB /* SpeakSelectionVoiceDetailView.swift in Sources */,
 				83A5DA512C2335580012ACB3 /* PermissionsView.swift in Sources */,
 				83B893BB2B8FD381005705A3 /* HoverTextSizeView.swift in Sources */,
+				83FE80012D2362BE00F065EF /* CameraControlAccessibilityView.swift in Sources */,
 				837F1DCF2B8AF13600665EAB /* FavoritesView.swift in Sources */,
 				832EF3A42B8199FA0066A1BF /* HardwareKeyboardView.swift in Sources */,
 				837B0F622B89B49B00B22455 /* SiriResponsesView.swift in Sources */,

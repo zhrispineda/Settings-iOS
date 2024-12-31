@@ -50,7 +50,7 @@ struct ContentView: View {
                                 AppleAccountSection()
                             }
                             
-                            if !followUpDismissed {
+                            if !followUpDismissed && !UIDevice.IsSimulator {
                                 Section {
                                     Button {
                                         id = UUID() // Reset destination
@@ -150,7 +150,7 @@ struct ContentView: View {
                                 }
                             }
                             
-                            if !followUpDismissed {
+                            if !followUpDismissed && !UIDevice.IsSimulator {
                                 Section {
                                     SettingsLink(icon: "None", id: "FOLLOWUP_TITLE".localize(table: "FollowUp"), badgeCount: 1) {
                                         FollowUpView()

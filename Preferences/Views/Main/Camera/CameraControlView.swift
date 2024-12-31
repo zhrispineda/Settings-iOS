@@ -10,6 +10,7 @@ import SwiftUI
 struct CameraControlView: View {
     // Variables
     @AppStorage("CameraControlCleanPreview") private var cleanPreview = true
+    @AppStorage("CameraControlLockFocus") private var lockFocus = false
     @AppStorage("CameraControlGesture") private var selectedGesture = "CAPTURE_BUTTON_LAUNCH_SINGLE_CLICK"
     @AppStorage("CameraControlApp") private var selectedApp = "Camera"
     let table = "CameraSettings-CameraButton"
@@ -23,14 +24,17 @@ struct CameraControlView: View {
     
     var body: some View {
         CustomList(title: "CAMERA_BUTTON_TITLE".localize(table: table), topPadding: true) {
+            // MARK: Light Press Section
             Section {
                 Toggle("HIDE_CAMERA_CONTROLS".localize(table: table), isOn: $cleanPreview)
+                Toggle("LOCK_TO_FOCUS".localize(table: table), isOn: $lockFocus)
             } header: {
                 Text("CAPTURE_BUTTON_LIGHT_PRESS_TITLE", tableName: table)
             } footer: {
                 Text("CAPTURE_BUTTON_CAPTURE_FOOTER", tableName: table)
             }
             
+            // MARK: Launch Camera Section
             Section {
                 Picker("CAPTURE_BUTTON_LAUNCH_APP_TITLE".localize(table: table), selection: $selectedGesture) {
                     ForEach(options, id: \.self) { option in
@@ -45,6 +49,7 @@ struct CameraControlView: View {
                 Text("CAPTURE_BUTTON_APP_LAUNCH_FOOTER", tableName: table)
             }
             
+            // MARK: App Selection Section
             Section {
                 Picker("CAPTURE_BUTTON_LAUNCH_APP_TITLE".localize(table: table), selection: $selectedApp) {
                     ForEach(apps) { app in
@@ -55,6 +60,11 @@ struct CameraControlView: View {
                 .labelsHidden()
             } footer: {
                 Text("CAMERA_BUTTON_APP_LIST_FOOTER", tableName: table)
+            }
+            
+            // MARK: Accessibility Section
+            Section {
+                NavigationLink("CAMERA_BUTTON_ACCESSIBILITY".localize(table: table), destination: CameraControlAccessibilityView())
             }
         }
     }
