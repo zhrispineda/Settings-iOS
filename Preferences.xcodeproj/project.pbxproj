@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		830293B72D28853500222762 /* AnalyticsImprovementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830293B62D28853500222762 /* AnalyticsImprovementsView.swift */; };
+		830293B92D28889600222762 /* ProblemReporting.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 830293B82D28889600222762 /* ProblemReporting.xcstrings */; };
 		8306AE6C2D0665A400D1AE5D /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8306AE6B2D0665A400D1AE5D /* ViewExtensions.swift */; };
 		83076D022C7E73D000BFFAFE /* PiPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83076D012C7E73D000BFFAFE /* PiPView.swift */; };
 		83076D042C7E754600BFFAFE /* BackgroundAppRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83076D032C7E754600BFFAFE /* BackgroundAppRefreshView.swift */; };
@@ -466,6 +468,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		830293B62D28853500222762 /* AnalyticsImprovementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsImprovementsView.swift; sourceTree = "<group>"; };
+		830293B82D28889600222762 /* ProblemReporting.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = ProblemReporting.xcstrings; sourceTree = "<group>"; };
 		8306AE6B2D0665A400D1AE5D /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		83076D012C7E73D000BFFAFE /* PiPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiPView.swift; sourceTree = "<group>"; };
 		83076D032C7E754600BFFAFE /* BackgroundAppRefreshView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundAppRefreshView.swift; sourceTree = "<group>"; };
@@ -1116,6 +1120,7 @@
 				832928482B85779D006611CF /* TrackingView.swift */,
 				8319CE4C2B86D380007EC822 /* SafetyCheckView.swift */,
 				8319CE4E2B86DB44007EC822 /* SensitiveContentWarningView.swift */,
+				830293B62D28853500222762 /* AnalyticsImprovementsView.swift */,
 				8319CE502B86DF8A007EC822 /* AppleAdvertisingView.swift */,
 				83441A8A2CAF73740022E193 /* JournalingSuggestionsView.swift */,
 			);
@@ -1501,6 +1506,7 @@
 				8388E5382CD0785800A3066D /* Dim-Sum.xcstrings */,
 				8388E5332CD034EB00A3066D /* Location Services.xcstrings */,
 				8388E5362CD0733400A3066D /* LocationServicesPrivacy.xcstrings */,
+				830293B82D28889600222762 /* ProblemReporting.xcstrings */,
 			);
 			path = PrivacySettingsUI;
 			sourceTree = "<group>";
@@ -2220,6 +2226,7 @@
 				8355C82A2CE53D460067D675 /* iTunesStore.xcstrings in Resources */,
 				8317AB212CEE736C00989F15 /* iBooksSettings.xcstrings in Resources */,
 				8355C8362CE53EC50067D675 /* MySports.xcstrings in Resources */,
+				830293B92D28889600222762 /* ProblemReporting.xcstrings in Resources */,
 				834565782CAAEB82002BE49D /* Camera.xcstrings in Resources */,
 				830F2B3A2CD98E5D006F7F22 /* Photos.xcstrings in Resources */,
 				8355C8122CE539310067D675 /* ImproveApplePay.xcstrings in Resources */,
@@ -2599,6 +2606,7 @@
 				833C124F2C99B40100CAEB36 /* VoiceOverView.swift in Sources */,
 				832F517F2BBF4DC900335E5E /* NetworkView.swift in Sources */,
 				83F78A172B8E888600025062 /* KeyboardCommandsView.swift in Sources */,
+				830293B72D28853500222762 /* AnalyticsImprovementsView.swift in Sources */,
 				8309893A2C44AA9C00535A8F /* UIDeviceExtensions.swift in Sources */,
 				83815CE12B768CF300F53A0F /* MultitaskingGesturesView.swift in Sources */,
 				8349E22C2C7514F6007416C5 /* ApplePencilView.swift in Sources */,

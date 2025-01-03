@@ -138,7 +138,9 @@ struct PrivacySecurityView: View {
             
             // MARK: Analytics & Improvements, Advertising
             Section {
-                SettingsLink(color: .blue, icon: "chart.bar.xaxis", id: "PROBLEM_REPORTING".localize(table: table)) {}
+                SettingsLink(color: .blue, icon: "chart.bar.xaxis", id: "PROBLEM_REPORTING".localize(table: table)) {
+                    AnalyticsImprovementsView()
+                }
                 SettingsLink(color: .blue, icon: "megaphone.fill", id: "ADVERTISING".localize(table: table)) {
                     AppleAdvertisingView()
                 }

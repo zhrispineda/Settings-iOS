@@ -61,7 +61,7 @@ struct CameraView: View {
                 } header: {
                     Text("SYSTEM_SETTINGS_HEADER", tableName: stylesTable)
                 } footer: {
-                    Text(.init("CAMERA_BUTTON_%@_FOOTER".localize(table: buttonTable).replacingOccurrences(of: "Learn more.", with: "[Learn more.](#)")))
+                    Text(.init("CAMERA_BUTTON_%@_FOOTER".localize(table: buttonTable, "[\("CAMERA_BUTTON_LEARN_MORE_TITLE".localize(table: buttonTable))](#)")))
                 }
             }
             
