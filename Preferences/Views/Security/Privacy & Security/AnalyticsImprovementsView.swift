@@ -23,7 +23,7 @@ struct AnalyticsImprovementsView: View {
                 Toggle("SHARE_ANALYTICS".localize(table: table), isOn: $problemReportingEnabled.animation())
                 NavigationLink("DIAGNOSTIC_USAGE_DATA".localize(table: table)) {}
             } footer: {
-                Text(.init("PROBLEM_REPORTING_EXPLANATION".localize(table: table, "[\("ABOUT_DIAGNOSTICS_LINK".localize(table: table))](#)")))
+                LocalizedLink("PROBLEM_REPORTING_EXPLANATION", table: table, link: "ABOUT_DIAGNOSTICS_LINK")
             }
             
             if problemReportingEnabled {
@@ -31,14 +31,14 @@ struct AnalyticsImprovementsView: View {
                 Section {
                     Toggle("SHARE_WITH_APP_DEVELOPERS".localize(table: table), isOn: $thirdPartyAnalytics)
                 } footer: {
-                    Text(.init("APP_ANALYTICS_EXPLANATION".localize(table: table, "[\("ABOUT_APP_ANALYTICS_LINK".localize(table: table))](#)")))
+                    LocalizedLink("APP_ANALYTICS_EXPLANATION", table: table, link: "ABOUT_APP_ANALYTICS_LINK")
                 }
                 
                 // Health Section
                 Section {
                     Toggle("ABOUT_HEALTH_DATA".localize(table: table), isOn: $healthAnalytics)
                 } footer: {
-                    Text(.init("HEALTH_DATA_EXPLANATION".localize(table: table, "[\("HEALTH_DATA_LINK".localize(table: table))](#)")))
+                    LocalizedLink("HEALTH_DATA_EXPLANATION", table: table, link: "HEALTH_DATA_LINK")
                 }
             }
             
@@ -46,13 +46,13 @@ struct AnalyticsImprovementsView: View {
             Section {
                 Toggle("IMPROVE_SIRI".localize(table: table), isOn: $improveSiri)
             } footer: {
-                Text(.init("IMPROVE_SIRI_EXPLANATION".localize(table: table, "[\("ABOUT_IMPROVE_SIRI".localize(table: table))](#)")))
+                LocalizedLink("IMPROVE_SIRI_EXPLANATION", table: table, link: "ABOUT_IMPROVE_SIRI")
             }
             
             Section {
                 Toggle("IMPROVE_ASSISTIVE_VOICE".localize(table: table), isOn: $assistiveVoice)
             } footer: {
-                Text(.init("IMPROVE_ASSISTIVE_VOICE_EXPLANATION".localize(table: table, "[\("ABOUT_IMPROVE_ASSISTIVE_VOICE".localize(table: table))](#)")))
+                LocalizedLink("IMPROVE_ASSISTIVE_VOICE_EXPLANATION", table: table, link: "ABOUT_IMPROVE_ASSISTIVE_VOICE")
             }
         }
     }

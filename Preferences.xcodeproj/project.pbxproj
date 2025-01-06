@@ -292,6 +292,7 @@
 		8393425E2C18CE5B00B48679 /* BatteryHealthChargingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8393425D2C18CE5B00B48679 /* BatteryHealthChargingView.swift */; };
 		839657542CCC02EF00D61C8B /* Accessibility-AnimatedImages.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 839657532CCC02EF00D61C8B /* Accessibility-AnimatedImages.xcstrings */; };
 		8397F9E92CDF20E9004DFE2F /* BooksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397F9E82CDF20E9004DFE2F /* BooksView.swift */; };
+		839C4CDD2D2B8E50007068BF /* LocalizedLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839C4CDC2D2B8E50007068BF /* LocalizedLink.swift */; };
 		83A3E68F2CAB9743006F4643 /* AccessibilityTitles.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83A3E68E2CAB9743006F4643 /* AccessibilityTitles.xcstrings */; };
 		83A3E6932CAC2832006F4643 /* Accessibility-HapticMusic.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83A3E6922CAC2832006F4643 /* Accessibility-HapticMusic.xcstrings */; };
 		83A3E6952CAC3091006F4643 /* FocalLengthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A3E6942CAC3091006F4643 /* FocalLengthView.swift */; };
@@ -754,6 +755,7 @@
 		8393425D2C18CE5B00B48679 /* BatteryHealthChargingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryHealthChargingView.swift; sourceTree = "<group>"; };
 		839657532CCC02EF00D61C8B /* Accessibility-AnimatedImages.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "Accessibility-AnimatedImages.xcstrings"; sourceTree = "<group>"; };
 		8397F9E82CDF20E9004DFE2F /* BooksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksView.swift; sourceTree = "<group>"; };
+		839C4CDC2D2B8E50007068BF /* LocalizedLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedLink.swift; sourceTree = "<group>"; };
 		83A3E68E2CAB9743006F4643 /* AccessibilityTitles.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AccessibilityTitles.xcstrings; sourceTree = "<group>"; };
 		83A3E6922CAC2832006F4643 /* Accessibility-HapticMusic.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "Accessibility-HapticMusic.xcstrings"; sourceTree = "<group>"; };
 		83A3E6942CAC3091006F4643 /* FocalLengthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocalLengthView.swift; sourceTree = "<group>"; };
@@ -1600,6 +1602,7 @@
 				83ED6B7B2CDF35750022D04C /* OnBoardingView.swift */,
 				834718E92CDFEE53002D9BC9 /* OnBoardingDetailView.swift */,
 				83F388622D0B6E8500085103 /* IconView.swift */,
+				839C4CDC2D2B8E50007068BF /* LocalizedLink.swift */,
 			);
 			path = Templates;
 			sourceTree = "<group>";
@@ -2502,6 +2505,7 @@
 				834718EA2CDFEE53002D9BC9 /* OnBoardingDetailView.swift in Sources */,
 				83F78A192B8E8CFD00025062 /* AutoHideView.swift in Sources */,
 				832326FB2C9E338F00B0483B /* KeyboardsTypingView.swift in Sources */,
+				839C4CDD2D2B8E50007068BF /* LocalizedLink.swift in Sources */,
 				83D31F712B8D22DD0057CFDB /* MotionView.swift in Sources */,
 				83C94CA52C1E0192005EBBC5 /* AppleCareWarrantyView.swift in Sources */,
 				83DF95762B84266E00AEEB63 /* SiriDetailView.swift in Sources */,
