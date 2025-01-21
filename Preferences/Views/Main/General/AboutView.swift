@@ -55,13 +55,19 @@ struct AboutView: View {
                 }
             }
             
-            //            if !UIDevice.isSimulator {
-            //                Section {
-            //                    NavigationLink(destination: AppleCareWarrantyView()) {
-            //                        LabeledContent("AppleCare+", value: "Expires: 9/21/25")
-            //                    }
-            //                }
-            //            }
+//            if !UIDevice.IsSimulator {
+//                Section {
+//                    NavigationLink(destination: AppleCareWarrantyView()) {
+//                        LabeledContent("AppleCare+", value: "Expires: 9/21/25")
+//                    }
+//                }
+//                
+//                Section {
+//                    NavigationLink("PARTS_AND_SERVICE_HISTORY".localize(table: "CoreRepairKit")) {
+//                        
+//                    }
+//                }
+//            }
             
             Section {
                 LabeledContent("SONGS".localize(table: uiTable), value: "0")

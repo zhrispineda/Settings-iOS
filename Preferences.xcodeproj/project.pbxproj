@@ -87,6 +87,8 @@
 		833101752CD1779700C6C3B3 /* ControlCenterSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 833101742CD1779700C6C3B3 /* ControlCenterSettings.xcstrings */; };
 		833101772CD17A9500C6C3B3 /* FocusSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 833101762CD17A9500C6C3B3 /* FocusSettings.xcstrings */; };
 		83326C882CBEE8970034C0D8 /* Software Update.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83326C872CBEE8970034C0D8 /* Software Update.xcstrings */; };
+		8334192E2D40274A006FB9F1 /* CoreRepairKit.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8334192D2D40274A006FB9F1 /* CoreRepairKit.xcstrings */; };
+		833419302D40291A006FB9F1 /* PartsServiceHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8334192F2D40291A006FB9F1 /* PartsServiceHistoryView.swift */; };
 		8335A70C2BC358E8001E199D /* CellularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8335A70B2BC358E8001E199D /* CellularView.swift */; };
 		833854F72C1648CD00339C4F /* SoftwareUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833854F62C1648CD00339C4F /* SoftwareUpdateView.swift */; };
 		833A44EF2C6E75BF003076F5 /* SystemFontsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833A44EE2C6E75BF003076F5 /* SystemFontsView.swift */; };
@@ -549,6 +551,8 @@
 		833101742CD1779700C6C3B3 /* ControlCenterSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = ControlCenterSettings.xcstrings; sourceTree = "<group>"; };
 		833101762CD17A9500C6C3B3 /* FocusSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = FocusSettings.xcstrings; sourceTree = "<group>"; };
 		83326C872CBEE8970034C0D8 /* Software Update.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "Software Update.xcstrings"; sourceTree = "<group>"; };
+		8334192D2D40274A006FB9F1 /* CoreRepairKit.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = CoreRepairKit.xcstrings; sourceTree = "<group>"; };
+		8334192F2D40291A006FB9F1 /* PartsServiceHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartsServiceHistoryView.swift; sourceTree = "<group>"; };
 		8335A70B2BC358E8001E199D /* CellularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellularView.swift; sourceTree = "<group>"; };
 		833854F62C1648CD00339C4F /* SoftwareUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftwareUpdateView.swift; sourceTree = "<group>"; };
 		833A44EE2C6E75BF003076F5 /* SystemFontsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemFontsView.swift; sourceTree = "<group>"; };
@@ -1325,6 +1329,7 @@
 				835683962B754EE4000FB136 /* VersionView.swift */,
 				835683982B7551D3000FB136 /* CertificateTrustSettingsView.swift */,
 				8340A3C22CB0C723005ED66A /* SEIDView.swift */,
+				8334192F2D40291A006FB9F1 /* PartsServiceHistoryView.swift */,
 			);
 			path = About;
 			sourceTree = "<group>";
@@ -1725,6 +1730,7 @@
 				831448262CD9498D00FFEE51 /* Contacts.xcstrings */,
 				833101742CD1779700C6C3B3 /* ControlCenterSettings.xcstrings */,
 				830976D02CDD1A0E0087F1A1 /* CoreFollowUp.xcstrings */,
+				8334192D2D40274A006FB9F1 /* CoreRepairKit.xcstrings */,
 				832D84F12CD2B0A90075ECF0 /* DigitalSeparationUI.xcstrings */,
 				831C1A4D2CCE9A1300866498 /* Display.xcstrings */,
 				831448282CD95B6200FFEE51 /* FitnessSettings.xcstrings */,
@@ -2175,6 +2181,7 @@
 				8355C8342CE53E530067D675 /* OBMessages.xcstrings in Resources */,
 				83C79B9D2CE3CA0A00F49B4F /* Maps.xcstrings in Resources */,
 				8330B26D2CCC68A90026F1C2 /* SpeechSettings.xcstrings in Resources */,
+				8334192E2D40274A006FB9F1 /* CoreRepairKit.xcstrings in Resources */,
 				8355C85C2CE5458F0067D675 /* Weather.xcstrings in Resources */,
 				8314482B2CD95F6500FFEE51 /* HealthUI-Localizable.xcstrings in Resources */,
 				837C9DF62CC835EB00A7080F /* FullKeyboardAccessSettings.xcstrings in Resources */,
@@ -2403,6 +2410,7 @@
 				838A9EC22B7E81EC00ED261C /* ContentPrivacyRestrictionsView.swift in Sources */,
 				832EF3A72B819B2E0066A1BF /* ModifierKeysView.swift in Sources */,
 				83F78A0F2B8E7D5000025062 /* ControlNearbyDevicesView.swift in Sources */,
+				833419302D40291A006FB9F1 /* PartsServiceHistoryView.swift in Sources */,
 				83076D042C7E754600BFFAFE /* BackgroundAppRefreshView.swift in Sources */,
 				838C23262B746D290053D4C5 /* SettingsModel.swift in Sources */,
 				8373E7322B910AF8004285EA /* AppWebsiteActivitySheetView.swift in Sources */,

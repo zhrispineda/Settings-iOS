@@ -18,7 +18,7 @@ struct BatteryHealthView: View {
             Section {
                 LabeledContent("BATTERY_HEALTH_TITLE".localize(table: table), value: "NORMAL_STATE".localize(table: table))
             } footer: {
-                Text(.init(UIDevice.iPhone ? "BATTERY_HEALTH_STATE_FOOTER_NORMAL_IPHONE".localize(table: table, "[\("ABOUT_BATTERY_LINK".localize(table: table))](pref://)") : "BATTERY_HEALTH_STATE_FOOTER_NORMAL_IPAD".localize(table: table, "[\("ABOUT_BATTERY_LINK".localize(table: table))](pref://)")))
+                LocalizedLink(UIDevice.iPhone ? "BATTERY_HEALTH_STATE_FOOTER_NORMAL_IPHONE" : "BATTERY_HEALTH_STATE_FOOTER_NORMAL_IPAD", table: table, link: "ABOUT_BATTERY_LINK", url: "pref://")
             }
             
             Section {
