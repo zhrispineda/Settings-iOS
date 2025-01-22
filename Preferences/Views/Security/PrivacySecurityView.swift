@@ -151,7 +151,7 @@ struct PrivacySecurityView: View {
                 Section {
                     SettingsLink(color: .green, icon: "shield.lefthalf.filled", id: "APP_PRIVACY_REPORT".localize(table: table), status: "Off".localize(table: table)) {}
                     if UIDevice.IntelligenceCapability {
-                        SettingsLink(icon: "siri", id: "Apple Intelligence Report".localize(table: psTable), status: "Off".localize(table: psTable).localize(table: psTable)) {}
+                        SettingsLink(icon: "appleIntelligence", id: "Apple Intelligence Report".localize(table: psTable), status: "Off".localize(table: psTable).localize(table: psTable)) {}
                     }
                 } header: {
                     Text("Transparency Logs", tableName: psTable)

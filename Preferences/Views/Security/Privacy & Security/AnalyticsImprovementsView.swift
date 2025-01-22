@@ -21,7 +21,7 @@ struct AnalyticsImprovementsView: View {
             // Analytics Section
             Section {
                 Toggle("SHARE_ANALYTICS".localize(table: table), isOn: $problemReportingEnabled.animation())
-                NavigationLink("DIAGNOSTIC_USAGE_DATA".localize(table: table)) {}
+                NavigationLink("DIAGNOSTIC_USAGE_DATA".localize(table: table), destination: AnalyticsDataView())
             } footer: {
                 LocalizedLink("PROBLEM_REPORTING_EXPLANATION", table: table, link: "ABOUT_DIAGNOSTICS_LINK")
             }
