@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import os
 
 struct VersionView: View {
     // Variables
@@ -14,10 +13,11 @@ struct VersionView: View {
     
     var body: some View {
         CustomList(title: "\(UIDevice().systemName) Version", topPadding: true) {
+            // OS Version Section
             Section("OS Version".localize(table: table)) {
                 VStack(alignment: .leading) {
                     Text("\(UIDevice().systemName) \(UIDevice().systemVersion) (\(getVersionBuild()))")
-                        .fontWeight(.bold)
+                        .fontWeight(.semibold)
                     if getReleaseType() == "Beta" {
                         Text("\(UIDevice().systemName) beta gives you an early preview of upcoming apps, features, and technologies. Please back up your \(UIDevice.current.model) before you install the beta.\n")
                             .font(.callout)
@@ -30,10 +30,11 @@ struct VersionView: View {
                     } else {
                         Text("SW_DETAIL_OS".localize(table: "General", UIDevice.current.model))
                             .textSelection(.enabled)
-                            .foregroundStyle(.secondary)
                             .font(.callout)
                     }
                 }
+                .frame(minHeight: 200, alignment: .top)
+                Button("Learn More") {}
             }
         }
     }
@@ -52,7 +53,7 @@ struct VersionView: View {
         guard let mobileGestalt = UIDevice.checkDevice(),
               let cacheExtra = mobileGestalt["CacheExtra"] as? [String: AnyObject],
               let buildVersion = cacheExtra["mZfUC7qo4pURNhyMHZ62RQ"] as? String else { // BuildVersion key
-            return "22C161" // Fallback
+            return "22D63" // Fallback
         }
         return buildVersion
     }
