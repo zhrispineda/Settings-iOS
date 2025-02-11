@@ -34,7 +34,7 @@ struct VersionView: View {
                     }
                 }
                 .frame(minHeight: 200, alignment: .top)
-                Button("Learn More") {}
+                //Button("Learn More") {}
             }
         }
     }
@@ -53,7 +53,7 @@ struct VersionView: View {
         guard let mobileGestalt = UIDevice.checkDevice(),
               let cacheExtra = mobileGestalt["CacheExtra"] as? [String: AnyObject],
               let buildVersion = cacheExtra["mZfUC7qo4pURNhyMHZ62RQ"] as? String else { // BuildVersion key
-            return "22D63" // Fallback
+            return "22D72" // Fallback
         }
         return buildVersion
     }
