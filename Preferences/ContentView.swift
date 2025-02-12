@@ -167,11 +167,13 @@ struct ContentView: View {
                                             SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Wi-Fi" ? (wifiEnabled && !airplaneModeEnabled ? "Not Connected" : "Off") : setting.id == "Bluetooth" ? (bluetoothEnabled ? "On" : "Off") : String()) {
                                                 setting.destination
                                             }
+                                            .accessibilityLabel(setting.id)
                                         } else if setting.capability != .none {
                                             SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Cellular" && airplaneModeEnabled ? "Airplane Mode" : setting.id == "Personal Hotspot" ? "Off" : String()) {
                                                 setting.destination
                                             }
                                             .disabled(setting.id == "Personal Hotspot" && airplaneModeEnabled)
+                                            .accessibilityLabel(setting.id)
                                         }
                                     }
                                     //IconToggle(enabled: $vpnEnabled, color: .blue, icon: "network.connected.to.line.below", title: "VPN")
@@ -302,6 +304,7 @@ struct SettingsLinkSection: View {
                     SettingsLink(color: setting.color, icon: setting.icon, id: setting.id) {
                         setting.destination
                     }
+                    .accessibilityLabel(setting.id)
                 }
             }
         }
