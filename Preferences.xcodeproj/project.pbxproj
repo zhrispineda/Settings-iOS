@@ -82,7 +82,6 @@
 		8330B26D2CCC68A90026F1C2 /* SpeechSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8330B26C2CCC68A90026F1C2 /* SpeechSettings.xcstrings */; };
 		8331016D2CD14BDE00C6C3B3 /* RatingProviders.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8331016C2CD14BDD00C6C3B3 /* RatingProviders.xcstrings */; };
 		8331016F2CD162F800C6C3B3 /* ImproveSensitiveContentWarning.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8331016E2CD162F700C6C3B3 /* ImproveSensitiveContentWarning.xcstrings */; };
-		833101712CD16FDD00C6C3B3 /* NotificationsSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 833101702CD16FDD00C6C3B3 /* NotificationsSettings.xcstrings */; };
 		833101732CD173AC00C6C3B3 /* Sounds.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 833101722CD173AC00C6C3B3 /* Sounds.xcstrings */; };
 		833101752CD1779700C6C3B3 /* ControlCenterSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 833101742CD1779700C6C3B3 /* ControlCenterSettings.xcstrings */; };
 		833101772CD17A9500C6C3B3 /* FocusSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 833101762CD17A9500C6C3B3 /* FocusSettings.xcstrings */; };
@@ -363,6 +362,7 @@
 		83D0B1492CE2FA6900DDEC69 /* Advertising.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83D0B1482CE2FA6900DDEC69 /* Advertising.xcstrings */; };
 		83D0B14B2CE2FB9D00DDEC69 /* AppleArcade.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83D0B14A2CE2FB9D00DDEC69 /* AppleArcade.xcstrings */; };
 		83D0B14D2CE2FC7100DDEC69 /* AppleBooks.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83D0B14C2CE2FC7100DDEC69 /* AppleBooks.xcstrings */; };
+		83D241AD2D5CEC87002061F4 /* NotificationsSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83D241AC2D5CEC87002061F4 /* NotificationsSettings.xcstrings */; };
 		83D2687A2BD7303800A86DA9 /* DisplayBrightnessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D268792BD7303800A86DA9 /* DisplayBrightnessView.swift */; };
 		83D3085C2B8AC2FA002A9B7F /* SafariAdvancedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D3085B2B8AC2FA002A9B7F /* SafariAdvancedView.swift */; };
 		83D3085F2B8AC3D3002A9B7F /* FeatureFlagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D3085E2B8AC3D3002A9B7F /* FeatureFlagsView.swift */; };
@@ -547,7 +547,6 @@
 		8330B26C2CCC68A90026F1C2 /* SpeechSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = SpeechSettings.xcstrings; sourceTree = "<group>"; };
 		8331016C2CD14BDD00C6C3B3 /* RatingProviders.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = RatingProviders.xcstrings; sourceTree = "<group>"; };
 		8331016E2CD162F700C6C3B3 /* ImproveSensitiveContentWarning.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = ImproveSensitiveContentWarning.xcstrings; sourceTree = "<group>"; };
-		833101702CD16FDD00C6C3B3 /* NotificationsSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = NotificationsSettings.xcstrings; sourceTree = "<group>"; };
 		833101722CD173AC00C6C3B3 /* Sounds.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Sounds.xcstrings; sourceTree = "<group>"; };
 		833101742CD1779700C6C3B3 /* ControlCenterSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = ControlCenterSettings.xcstrings; sourceTree = "<group>"; };
 		833101762CD17A9500C6C3B3 /* FocusSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = FocusSettings.xcstrings; sourceTree = "<group>"; };
@@ -831,6 +830,7 @@
 		83D0B1482CE2FA6900DDEC69 /* Advertising.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Advertising.xcstrings; sourceTree = "<group>"; };
 		83D0B14A2CE2FB9D00DDEC69 /* AppleArcade.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AppleArcade.xcstrings; sourceTree = "<group>"; };
 		83D0B14C2CE2FC7100DDEC69 /* AppleBooks.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AppleBooks.xcstrings; sourceTree = "<group>"; };
+		83D241AC2D5CEC87002061F4 /* NotificationsSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = NotificationsSettings.xcstrings; sourceTree = "<group>"; };
 		83D268792BD7303800A86DA9 /* DisplayBrightnessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayBrightnessView.swift; sourceTree = "<group>"; };
 		83D3085B2B8AC2FA002A9B7F /* SafariAdvancedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariAdvancedView.swift; sourceTree = "<group>"; };
 		83D3085E2B8AC3D3002A9B7F /* FeatureFlagsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureFlagsView.swift; sourceTree = "<group>"; };
@@ -1370,6 +1370,7 @@
 		836000762BCC7A3A0034DDF5 /* Attention */ = {
 			isa = PBXGroup;
 			children = (
+				83D241AB2D5CE70E002061F4 /* Notifications */,
 				838A9EC02B7E81D900ED261C /* Screen Time */,
 				836000772BCC7A470034DDF5 /* NotificationsView.swift */,
 				838134F62BCDA9380049E197 /* SoundsHapticsView.swift */,
@@ -1772,7 +1773,7 @@
 				831C1A512CCE9F9000866498 /* MultitaskingAndGesturesSettings.xcstrings */,
 				83F745B92CC18EC700FDB3BA /* NewDeviceOutreachUI.xcstrings */,
 				830F2B332CD9826E006F7F22 /* NewsSettings.xcstrings */,
-				833101702CD16FDD00C6C3B3 /* NotificationsSettings.xcstrings */,
+				83D241AC2D5CEC87002061F4 /* NotificationsSettings.xcstrings */,
 				830F2B352CD984C0006F7F22 /* PasswordsSettings.xcstrings */,
 				837BCF382CD2F4A7009B1E33 /* Payment_Prefs.xcstrings */,
 				837BCF322CD2E880009B1E33 /* Pearl.xcstrings */,
@@ -1803,6 +1804,13 @@
 				832877FA2CAEEA7E00013B0B /* WiFiKitUILocalizableStrings.xcstrings */,
 			);
 			path = Ungrouped;
+			sourceTree = "<group>";
+		};
+		83D241AB2D5CE70E002061F4 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Notifications;
 			sourceTree = "<group>";
 		};
 		83D3085A2B8AC28B002A9B7F /* Safari */ = {
@@ -2265,12 +2273,12 @@
 				8383BE022CE43E9F00B8C68E /* ExposureNotifications.xcstrings in Resources */,
 				83C79BBB2CE4235300F49B4F /* EmergencySOS.xcstrings in Resources */,
 				83C79B9F2CE3CEC800F49B4F /* BusinessChat.xcstrings in Resources */,
+				83D241AD2D5CEC87002061F4 /* NotificationsSettings.xcstrings in Resources */,
 				834A15042CD85705004A0025 /* TranslationUI.xcstrings in Resources */,
 				8355C8082CE52E950067D675 /* HomeElectricity.xcstrings in Resources */,
 				83A3E6932CAC2832006F4643 /* Accessibility-HapticMusic.xcstrings in Resources */,
 				83C79B952CE3C3A300F49B4F /* AppleCard.xcstrings in Resources */,
 				83E748B62CC6C3410081D660 /* LargeFontsSettings.xcstrings in Resources */,
-				833101712CD16FDD00C6C3B3 /* NotificationsSettings.xcstrings in Resources */,
 				834A15022CD85538004A0025 /* ShortcutsAdvancedSettings.xcstrings in Resources */,
 				8355C8062CE52A790067D675 /* HealthRecords.xcstrings in Resources */,
 				83E542092D0E2A3E00741DFE /* CellulariPhone.xcstrings in Resources */,

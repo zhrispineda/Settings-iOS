@@ -2470,7 +2470,7 @@
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Вы можете получать «Избранные ящики» и «Уведомления о темах», даже если другие уведомления Почты выключены."
+            "value": "Вы можете получать уведомления о новых письмах в избранных ящиках и темах писем, даже если все прочие уведомления Почты выключены."
           }
         },
         "it": {
@@ -9237,7 +9237,7 @@
         "zh_HK": {
           "stringUnit": {
             "state": "translated",
-            "value": "以智能方式優先顯示你在鎖定畫面收到的最重要通知，讓你可以查看在離開iPad時可能錯過的內容。"
+            "value": "以智能方式在鎖定畫面優先顯示收到的最重要通知，讓你可以查看未使用iPad期間可能錯過的內容。"
           }
         },
         "pl": {
@@ -9733,7 +9733,7 @@
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Вы можете получать уведомления VIP и «Избранные ящики», даже если другие уведомления Почты выключены."
+            "value": "Вы можете получать уведомления о новых письмах от VIP и в избранных ящиках, даже если все прочие уведомления Почты выключены."
           }
         },
         "it": {
@@ -12692,7 +12692,7 @@
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Вы можете получать уведомления о новых письмах в избранных ящиках, основном ящике для входящей почты и темах писем, даже если все прочие уведомления Почты выключены."
+            "value": "Вы можете получать уведомления о новых письмах в избранных ящиках и основном ящике для входящей почты, а также в темах писем, даже если все прочие уведомления Почты выключены."
           }
         },
         "it": {
@@ -15962,7 +15962,7 @@
         "zh_HK": {
           "stringUnit": {
             "state": "translated",
-            "value": "以智能方式優先顯示你在鎖定畫面收到的最重要通知，讓你可以在離開iPhone時查看你可能錯過的內容。"
+            "value": "以智能方式在鎖定畫面優先顯示收到的最重要通知，讓你可以查看未使用iPhone期間可能錯過的內容。"
           }
         },
         "pl": {
@@ -16406,6 +16406,275 @@
           "stringUnit": {
             "state": "translated",
             "value": "%@ i %@"
+          }
+        }
+      }
+    },
+    "EXPIRY_IN_HOURS": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@EXPIRY@"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@EXPIRY@"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@EXPIRY@"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@EXPIRY@"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@EXPIRY@"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@EXPIRY@"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@EXPIRY@"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@EXPIRY@"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@EXPIRY@"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@EXPIRY@"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@EXPIRY@"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@EXPIRY@"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@EXPIRY@"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@EXPIRY@"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@EXPIRY@"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@EXPIRY@"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@EXPIRY@"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@EXPIRY@"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@EXPIRY@"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@EXPIRY@"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@EXPIRY@"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@EXPIRY@"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@EXPIRY@"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@EXPIRY@"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@EXPIRY@"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@EXPIRY@"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@EXPIRY@"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@EXPIRY@"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@EXPIRY@"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@EXPIRY@"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@EXPIRY@"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@EXPIRY@"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@EXPIRY@"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@EXPIRY@"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@EXPIRY@"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@EXPIRY@"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@EXPIRY@"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@EXPIRY@"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@EXPIRY@"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@EXPIRY@"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@EXPIRY@"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@EXPIRY@"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@EXPIRY@"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%#@EXPIRY@"
           }
         }
       }
@@ -16954,265 +17223,265 @@
         "he": {
           "stringUnit": {
             "state": "translated",
-            "value": "ניתן לסכם תכנים של הודעות ישירות ושל קבוצות עדכונים כדי להפוך אותם לתמציתיים וקלים יותר לקריאה. דיוק הסיכום עשוי להשתנות לפי התוכן."
+            "value": "ניתן לסכם תכנים של הודעות ישירות ושל קבוצות עדכונים כדי להפוך אותם לתמציתיים וקלים יותר לקריאה.\n\nהסיכומים עלולים להכיל שגיאות."
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "다이렉트 메시지 및 알림 그룹의 콘텐츠를 요약하여 간략하고 읽기 쉽게 제공합니다. 요약의 정확도는 콘텐츠에 따라 다를 수 있습니다."
+            "value": "다이렉트 메시지 및 알림 그룹의 콘텐츠를 요약하여 간략하고 읽기 쉽게 제공합니다.\n\n요약에 오류가 있을 수 있습니다."
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ringkas konten di pesan langsung dan grup pemberitahuan agar lebih singkat dan mudah dibaca. Akurasi ringkasan dapat bervariasi berdasarkan konten."
+            "value": "Ringkas konten di pesan langsung dan grup pemberitahuan agar lebih singkat dan mudah dibaca.\n\nRingkasan mungkin berisi kesalahan."
           }
         },
         "fi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Tee yhteenveto suorien viestien ja ilmoitusryhmien sisällöstä, jotta ne ovat ytimekkäämpiä ja helpompia lukea. Yhteenvedon tarkkuus voi vaihdella sisällön mukaan."
+            "value": "Tee yhteenveto suorien viestien ja ilmoitusryhmien sisällöstä, jotta ne ovat ytimekkäämpiä ja helpompia lukea.\n\nYhteenvedot saattavat sisältää virheitä."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Doğrudan mesajlarda ve bildirim gruplarında içeriği özetleyerek onları daha kısa, öz ve kolay okunur hâle getirin. Özet doğruluğu, içeriğe göre değişebilir."
+            "value": "Doğrudan mesajlarda ve bildirim gruplarında içeriği özetleyerek onları daha kısa, öz ve kolay okunur hâle getirin.\n\nÖzetlerde hata olabilir."
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Vat de inhoud van directe berichten en groepen meldingen samen om ze beknopter en makkelijker leesbaar te maken. De nauwkeurigheid van de samenvatting kan variëren en is afhankelijk van de inhoud."
+            "value": "Vat de inhoud van berichten in directe berichten en groepen meldingen samen om ze beknopter en makkelijker leesbaar te maken.\n\nSamenvattingen kunnen fouten bevatten."
           }
         },
         "hu": {
           "stringUnit": {
             "state": "translated",
-            "value": "Összegzi a közvetlen üzenetekben és értesítési csoportokban található tartalmat, hogy tömörebb és könnyebben olvasható legyen. Az összegzés pontossága a tartalomtól függően eltérő lehet."
+            "value": "Összegzi a közvetlen üzenetekben és értesítési csoportokban található tartalmat, hogy tömörebb és könnyebben olvasható legyen.\n\nAz összegzések hibákat tartalmazhatnak."
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Конспектировать контент в личных сообщениях и группах уведомлений, делая их более компактными и удобными для чтения. Качество результата может зависеть от вида контента."
+            "value": "Возможность конспектировать контент в личных сообщениях и группах уведомлений, делая их более компактными и удобными для чтения.\n\nКонспекты могут содержать ошибки."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Riassumi il contenuto dei messaggi diretti e dei gruppi di notifiche, rendendoli più sintetici e facili da leggere. L’accuratezza dei riepiloghi potrebbe variare in base al contenuto."
+            "value": "Riassumi il contenuto dei messaggi diretti e dei gruppi di notifiche, rendendoli più sintetici e facili da leggere. \n\nI riepiloghi potrebbero contenere errori."
           }
         },
         "es_419": {
           "stringUnit": {
             "state": "translated",
-            "value": "Resume el contenido de los mensajes directos y los grupos de notificaciones para que sean más concisos y fáciles de leer. La precisión del resumen puede variar dependiendo del contenido."
+            "value": "Resume el contenido de los mensajes directos y los grupos de notificaciones para que sean más concisos y fáciles de leer.\n\nLos resúmenes podrían contener errores."
           }
         },
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Σύνοψη του περιεχομένου σε άμεσα μηνύματα και ομάδες γνωστοποιήσεων, ώστε να είναι πιο συνοπτικά και ευανάγνωστα. Η ακρίβεια της σύνοψης ενδέχεται να διαφέρει ανάλογα με το περιεχόμενο."
+            "value": "Σύνοψη του περιεχομένου σε προσωπικά μηνύματα και ομάδες γνωστοποιήσεων, ώστε να είναι πιο περιεκτικά και ευανάγνωστα.\n\nΟι συνόψεις ενδέχεται να περιέχουν σφάλματα."
           }
         },
         "fr_CA": {
           "stringUnit": {
             "state": "translated",
-            "value": "Résument le contenu des messages directs et des groupes de notifications en les rendant encore plus succincts et faciles à lire. La précision des résumés peut varier selon leur contenu."
+            "value": "Résume le contenu des messages directs et des groupes de notifications en les rendant encore plus succincts et faciles à lire.\n\nLes résumés peuvent comporter des erreurs."
           }
         },
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "تلخيص المحتوى الموجود في الرسائل المباشرة ومجموعات الإشعارات، مما يجعلها أكثر إيجازًا وأسهل في القراءة. قد تختلف دقة الملخص حسب المحتوى."
+            "value": "تلخيص المحتوى في الرسائل المباشرة ومجموعات الإشعارات بحيث تصبح أكثر إيجازًا وسهولة في القراءة.\n\nقد تحتوي الملخصات على أخطاء."
           }
         },
         "zh_TW": {
           "stringUnit": {
             "state": "translated",
-            "value": "對私人訊息和通知群組中的內容生成摘要，讓內容更簡潔易懂。摘要準確性可能視內容而有所不同。"
+            "value": "對私人訊息和通知群組中的內容生成摘要，讓內容更簡潔易懂。\n\n摘要可能包含錯誤。"
           }
         },
         "zh_HK": {
           "stringUnit": {
             "state": "translated",
-            "value": "將直接郵件和通知群組中的內容摘要，令內容更簡潔易讀。摘要準確性可能會因內容而異。"
+            "value": "為私人訊息和通知群組中的內容產生摘要，令內容更簡潔易讀。\n\n摘要可能會包含錯誤項目。"
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Streszczanie wiadomościach bezpośrednich i grup powiadomień ułatwia ich odczytywanie. Dokładność streszczania zależy od streszczanej treści."
+            "value": "Streszczanie wiadomości bezpośrednich i grup powiadomień ułatwia ich odczytywanie.\n\nStreszczenia mogą zawierać błędy."
           }
         },
         "sv": {
           "stringUnit": {
             "state": "translated",
-            "value": "Sammanfatta innehåll i direktmeddelanden och grupperade notiser så att de blir kortare och mer lättlästa. Hur exakt sammanfattningen är kan variera beroende på innehållet."
+            "value": "Sammanfatta innehållet i direktmeddelanden och notisgrupper så att de blir mer kortfattade och lättlästa.\n\nSammanfattningar kan innehålla fel."
           }
         },
         "ca": {
           "stringUnit": {
             "state": "translated",
-            "value": "Resumeix el contingut dels missatges directes i dels grups de notificacions per facilitar‑ne la lectura. La precisió del resum pot variar en funció del contingut."
+            "value": "Resumeix el contingut dels missatges directes i dels grups de notificacions per facilitar‑ne la lectura.\n\nEls resums poden tenir errors."
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "डायरेक्ट संदेशों और सूचनाओं के समूहों में कॉन्टेंट का सारांश तैयार करें जो संक्षिप्त हो और पढ़ने में सुगम हो। सारांश की सटीकता कॉन्टेंट के प्रकार पर निर्भर करती है।"
+            "value": "डाइरेक्ट संदेशों और सूचनाओं के समूहों के कॉन्टेंट का सारांश तैयार करें ताकि वे अधिक सारगर्भित और पढ़ने में सुगम हो जाएँ।\n\nसारांश में त्रुटियाँ हो सकती हैं।"
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Summarize content in direct messages and groups of notifications making them more succinct and easier to read. Summary accuracy may vary based on content."
+            "value": "Summarize content in direct messages and groups of notifications making them more succinct and easier to read.\n\nSummaries may contain errors."
           }
         },
         "no": {
           "stringUnit": {
             "state": "translated",
-            "value": "Oppsummer innhold i direktemeldinger og grupperte varslinger så de blir kortere og enklere å lese. Nøyaktigheten av oppsummeringen kan variere etter innholdet."
+            "value": "Oppsummer innhold i direktemeldinger og grupperte varslinger så de blir kortere og enklere å lese.\n\nOppsummeringer kan inneholde feil."
           }
         },
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Opsummer indholdet af direkte beskeder og grupperede notifikationer for at gøre dem mere kortfattede og nemmere at læse. Nøjagtigheden af resumeet kan variere afhængigt af indholdet."
+            "value": "Opsummer indholdet af direkte beskeder og grupperede notifikationer for at gøre dem mere kortfattede og nemmere at læse.\n\nResumeer indeholder muligvis fejl."
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "สรุปเนื้อหาในข้อความและกลุ่มของการแจ้งเตือนโดยตรงเพื่อให้สั้นกระชับและอ่านง่ายยิ่งขึ้น ความถูกต้องของสรุปอาจแตกต่างกันตามเนื้อหา"
+            "value": "สรุปเนื้อหาในข้อความและกลุ่มของการแจ้งเตือนโดยตรงเพื่อให้สั้นกระชับและอ่านง่ายยิ่งขึ้น\n\nสรุปอาจมีข้อผิดพลาด"
           }
         },
         "zh_CN": {
           "stringUnit": {
             "state": "translated",
-            "value": "生成私信和通知群组的内容摘要，使其简洁易读。摘要准确性可能因具体内容而异。"
+            "value": "生成私信和通知群组的内容摘要，使其简洁易读。\n\n摘要可能包含错误。"
           }
         },
         "en_GB": {
           "stringUnit": {
             "state": "translated",
-            "value": "Summarise content in direct messages and groups of notifications, making them more succinct and easier to read. Summary accuracy may vary based on content."
+            "value": "Summarise content in direct messages and groups of notifications, making them more succinct and easier to read.\n\nSummaries may contain errors."
           }
         },
         "lt": {
           "stringUnit": {
             "state": "translated",
-            "value": "Sukurkite glaustą ir lengviau skaitomą tiesioginių žinučių ir pranešimų grupių turinio santrauką. Santraukos tikslumas gali kisti priklausomai nuo turinio."
+            "value": "Sukurkite glaustą ir lengviau skaitomą tiesioginių žinučių ir pranešimų grupių turinio santrauką.\nSantraukose gali būti klaidų."
           }
         },
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ringkaskan kandungan dalam mesej langsung dan kumpulan pemberitahuan yang menjadikannya lebih padat serta lebih mudah dibaca. Ketepatan ringkasan mungkin berbeza-beza berdasarkan kandungan."
+            "value": "Ringkaskan kandungan dalam mesej terus dan kumpulan pemberitahuan yang menjadikannya lebih padat serta lebih mudah dibaca.\n\nRingkasan mungkin mengandungi ralat."
           }
         },
         "cs": {
           "stringUnit": {
             "state": "translated",
-            "value": "Souhrny obsahu soukromých zpráv a skupin oznámení jsou stručnější a snáz se čtou. Přesnost souhrnů se může různit v závislosti na obsahu."
+            "value": "Souhrny obsahu soukromých zpráv a skupin oznámení jsou stručnější a snáz se čtou.\n\nMůžou obsahovat chyby."
           }
         },
         "sk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Zhrnutia obsahu zo súkromných správ a skupín hlásení sú stručnejšie a ľahšie sa čítajú. Presnosť zhrnutí môže kolísať v závislosti od obsahu."
+            "value": "Zhrnutia obsahu zo súkromných správ a skupín hlásení sú stručnejšie a ľahšie sa čítajú.\n\nZhrnutia môžu obsahovať chyby."
           }
         },
         "es_US": {
           "stringUnit": {
             "state": "translated",
-            "value": "Resume el contenido de los mensajes directos y los grupos de notificaciones para que sean más concisos y fáciles de leer. La precisión del resumen puede variar dependiendo del contenido."
+            "value": "Resume el contenido de los mensajes directos y los grupos de notificaciones para que sean más concisos y fáciles de leer.\n\nLos resúmenes podrían contener errores."
           }
         },
         "bg": {
           "stringUnit": {
             "state": "translated",
-            "value": "Съдържанието се обобщава в директни съобщения и групи с известия, като ги прави кратки и лесни за четене. Точността на обобщението може да е различна в зависимост от съдържанието."
+            "value": "Съдържанието се обобщава в директни съобщения и групи с известия, като ги прави кратки и лесни за четене.\n\nОбобщенията могат да съдържат грешки."
           }
         },
         "sl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Povzemite vsebino v neposrednih sporočilih in skupinah obvestil, da bodo bolj strnjena in jih boste lažje prebrali. Točnost povzetka je odvisna od vsebine."
+            "value": "Povzemite vsebino v neposrednih sporočilih in skupinah obvestil, da bodo bolj strnjena in jih boste lažje prebrali.\n\nPovzetki lahko vključujejo napake."
           }
         },
         "en_AU": {
           "stringUnit": {
             "state": "translated",
-            "value": "Summarise content in direct messages and groups of notifications, making them more succinct and easier to read. Summary accuracy may vary based on content."
+            "value": "Summarise content in direct messages and groups of notifications to make them more succinct and easier to read.\n\nSummaries may contain errors."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Inhalte in Direktnachrichten und Gruppenmitteilungen zusammenzufassen macht sie übersichtlicher und sie sind leichter zu verstehen. Die Genauigkeit der Zusammenfassung kann je nach Inhalt abweichen."
+            "value": "Inhalte in Direktnachrichten und gruppierten Mitteilungen zusammenzufassen macht sie übersichtlicher und sie sind leichter zu verstehen.\n\nZusammenfassungen können Fehler enthalten."
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Tóm tắt nội dung trong các tin nhắn trực tiếp và các nhóm thông báo để làm chúng trở nên ngắn gọn hơn và dễ đọc hơn. Độ chính xác của tóm tắt có thể thay đổi dựa trên nội dung."
+            "value": "Tóm tắt nội dung trong tin nhắn trực tiếp và nhóm thông báo cho ngắn gọn và dễ đọc hơn.\n\nBản tóm tắt có thể chứa lỗi."
           }
         },
         "pt_BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Resume o conteúdo de mensagens diretas e grupos de notificações para que fique mais sucinto e fácil de ler. A precisão do resumo pode variar com base no conteúdo."
+            "value": "Resuma o conteúdo de mensagens diretas e grupos de notificações para deixá‑los mais sucintos e fáceis de ler. \n\nOs resumos podem conter erros."
           }
         },
         "ro": {
           "stringUnit": {
             "state": "translated",
-            "value": "Conținutul din mesajele directe și din grupurile de notificări va fi rezumat, pentru a fi mai succint și mai ușor de citit. Exactitatea rezumatelor poate varia în funcție de conținut."
+            "value": "Conținutul din mesajele directe și din grupurile de notificări va fi rezumat, pentru a fi mai succint și mai ușor de citit.\n\nRezumatele pot conține erori."
           }
         },
         "kk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Тікелей хабарлардағы және хабарландырулар топтарындағы контентті айтарлықтай қысқарту және оқуды жеңілдету үшін жинақтаңыз. Жинақтама дәлдігі контентке қарай әртүрлі болуы мүмкін."
+            "value": "Жеке хабарлардағы және хабарландырулар топтарындағы контентті айтарлықтай қысқарту және оқуды жеңілдету үшін жинақтаңыз.\n\nЖинақтамаларда қателер болуы мүмкін."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Résumez le contenu des messages directs et des groupes de notifications en les rendant encore plus succincts et faciles à lire. La précision des résumés peut varier selon leur contenu."
+            "value": "Résumez le contenu des messages directs et des groupes de notifications en les rendant encore plus succincts et faciles à lire.\n\nLes résumés peuvent comporter des erreurs."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Resume el contenido de los mensajes directos y los grupos de notificaciones para hacerlos más concisos y fáciles de leer. La precisión del resumen puede variar en función del contenido."
+            "value": "Resume el contenido de los mensajes directos y los grupos de notificaciones para hacerlos más concisos y fáciles de leer.\n\nLos resúmenes pueden contener errores."
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Підсумовувати вміст прямих повідомлень і груп сповіщень, щоб їх можна було швидко й легко прочитати. Точність підсумку може різнитися залежно від вмісту."
+            "value": "Підсумовувати вміст прямих повідомлень і груп сповіщень, щоб їх можна було швидко й легко прочитати.\n\nПідсумки можуть містити помилки."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "ダイレクトメッセージや通知グループの内容を要約し、より簡潔で読みやすくします。要約の精度は内容によって異なります。"
+            "value": "ダイレクトメッセージや通知グループの内容を要約し、より簡潔で読みやすくします。\n\n要約にはエラーが含まれる場合があります。"
           }
         },
         "pt_PT": {
           "stringUnit": {
             "state": "translated",
-            "value": "Resumir o conteúdo de mensagens diretas e grupos de notificações para torná‑las mais concisas e fáceis de ler. A precisão dos resumos varia em função do conteúdo."
+            "value": "Resumir o conteúdo de mensagens diretas e grupos de notificações para torná‑las mais concisas e fáceis de ler.\n\nOs resumos podem conter erros."
           }
         },
         "hr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Sažmite sadržaj izravnih poruka i grupa obavijesti kako bi bile jezgrovitije i lakše za čitanje. Točnost sažetka može varirati na temelju sadržaja."
+            "value": "Sažmite sadržaj izravnih poruka i grupa obavijesti kako bi bile jezgrovitije i lakše za čitanje.\n\nSažeci mogu sadržavati greške."
           }
         }
       }
@@ -18558,6 +18827,275 @@
           "stringUnit": {
             "state": "translated",
             "value": "10. sažetak"
+          }
+        }
+      }
+    },
+    "BADGES_GROUP_HEADER": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ניתן להציג רק את מספר ההודעות שלא נקראו מהקטגוריה ״תיבה ראשית״ או את כל ההודעות שלא נקראו מכל תיבות הדואר."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "우선 순위 카테고리로 분류된 읽지 않은 메시지 수만 표시할지 또는 모든 받은 편지함의 읽지 않은 메시지를 모두 표시할지 선택하십시오."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pilih untuk hanya melihat jumlah pesan yang belum dibaca yang dikategorikan sebagai Utama atau semua pesan yang belum dibaca untuk semua inbox."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valitse, haluatko nähdä vain Tärkeät-kategorian vai kaikkien Saapuneet-postilaatikoiden lukemattomat viestit."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yalnızca Birincil olarak sınıflandırılmış okunmamış iletilerin ya da her gelen kutusu için tüm okunmamış iletilerin sayısını görmeyi seçin."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kies ervoor om voor elke inkomende postbus alleen het aantal ongelezen berichten in de categorie 'Primair' of alle ongelezen berichten te zien."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beállíthatja, hogy csak az Elsődlegesként kategorizált olvasatlan üzenetek számát szeretné látni, vagy minden postafiók összes olvasatlan üzenetéét."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Вы можете выбрать, количество каких непрочитанных писем будет отображаться на значке: только из категории «Основные» или из всех ящиков сразу."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scegli se vuoi visualizzare solo il numero di messaggi non letti nella categoria Principale o tutti i messaggi non letti per ogni casella di posta in entrata."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elige si quieres ver sólo el número de mensajes sin leer categorizados como Principal o bien todos los mensajes no leídos de cualquier bandeja."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Επιλέξτε αν θέλετε να εμφανίζεται μόνο ο αριθμός των μη αναγνωσμένων μηνυμάτων που έχουν κατηγοριοποιηθεί ως «Κύρια» ή ο αριθμός όλων των μη αναγνωσμένων μηνυμάτων σε όλες τις θυρίδες εισερχόμενων."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choisissez d’afficher le nombre de messages non lus de la boîte Principale uniquement ou de toutes les boîtes de réception."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اختيار عرض عدد الرسائل غير المقروءة المصنفة كأساسية فقط أو كل الرسائل غير المقروءة لكل صندوق بريد."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "選擇僅檢視「主要」分類中未讀郵件的數量或每個收件匣中的所有未讀郵件。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "選擇要只看到分類為「主要」的未讀郵件數量，或每個收件箱中所有未讀郵件的數量。"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wybierz, czy wyświetlana ma być liczba nieprzeczytanych wiadomości skategoryzowanych jako Główne czy wszystkich nieprzeczytanych wiadomości w każdej skrzynce."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Välj om du bara vill se antalet olästa mejl som kategoriserats som primära eller alla olästa mejl för varenda inkorg."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tria si vols que a la icona del Mail només s’inclogui el nombre de missatges no llegits de la categoria “Principal” o el de totes les bústies."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "मुख्य के रूप में वर्गीकृत केवल अपठित संदेशों की संख्या देखना या प्रत्येक इनबॉक्स के सभी अपठित संदेश देखना चुनें।"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choose to see only the number of unread messages categorized as Primary or all unread messages for every inbox."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Velg å bare se antall uleste meldinger kategorisert som Primært eller alle uleste meldinger, for hver innboks."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vælg kun at se antallet af ulæste beskeder, der er kategoriseret som Primær, eller alle ulæste beskeder i hver indbakke."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เลือกเพื่อดูเฉพาะจำนวนของข้อความที่ไม่ได้อ่านซึ่งถูกจัดหมวดหมู่เป็นกลุ่มหลักเท่านั้นหรือข้อความที่ไม่ได้อ่านทั้งหมดสำหรับกล่องเข้าทั้งหมด"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "选择仅查看“主要”分类中的未读邮件，还是各个收件箱中的所有未读邮件。"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choose to see only the number of unread messages categorised as Primary or all unread messages for every inbox."
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pasirinkite, kad būtų rodomas tik neskaitytų kategorijos „Pagrindiniai“ laiškų skaičius arba visų neskaitytų kiekvienos pašto dėžutės laiškų skaičius."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pilih untuk melihat hanya bilangan mesej belum dibaca yang dikategorikan sebagai Utama atau semua mesej belum dibaca bagi setiap peti masuk."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vyberte, zda chcete u jednotlivých schránek příchozí pošty zobrazovat jen počet nepřečtených zpráv zařazených do kategorie Primární, nebo počet všech nepřečtených zpráv."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vyberte, či sa má zobrazovať len počet neprečítaných správ v kategórii Primárne alebo všetkých neprečítaných správ v každej schránke."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elige si quieres ver sólo el número de mensajes sin leer categorizados como Principal o bien todos los mensajes no leídos de cualquier bandeja."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Изберете да виждате само броя непрочетени съобщения, категоризирани като Основни, или всички непрочетени съобщения от всяка входяща пощенска кутия."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Izberete lahko prikazovanje števila neprebranih sporočil, kategoriziranih kot Primarna, ali vseh neprebranih sporočil za vsako mapo Prejeto."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choose to see only the number of unread messages categorised as Primary or all unread messages for every inbox."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wähle aus, ob du die Anzahl der ungelesenen E‑Mails in „Wichtiges“ oder alle ungelesenen E‑Mails aller Postfächer sehen möchtest."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chọn để chỉ xem số lượng thư chưa đọc được phân loại là danh mục Chính hoặc tất cả thư chưa đọc cho mỗi hộp thư đến."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Escolha ver apenas o número de mensagens não lidas da categoria Principal ou todas as mensagens não lidas de cada caixa de entrada."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alegeți dacă doriți să vedeți doar numărul mesajelor necitite categorisite drept Principale sau numărul tuturor mesajelor necitite pentru fiecare cutie poștală de primire."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Әрбір кіріс жәшігі бойынша «Негізгі» немесе барлық оқылмаған эл. хат ретінде санатқа жіктелген оқылмаған эл. хаттардың ғана санын көру үшін таңдаңыз."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Indiquez si vous souhaitez afficher le nombre de messages non lus de la boîte Principale uniquement ou de toutes les boîtes de réception."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elige si el número de mensajes no leídos que se muestra corresponde solo a la categoría Principal o bien a todos los buzones."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Показувати кількість непрочитаних листів лише в категорії «Важливі» чи в усіх скриньках вхідної пошти."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "“主要”として分類された未開封メッセージの件数だけを表示するか、すべての未開封メッセージの件数を表示するかを選択できます。"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Escolha se pretende ver apenas as mensagens por ler categorizadas como Principal ou todas as mensagens por ler de todas as caixas de correio recebido."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odaberite za prikazivanje samo broja nepročitanih poruka kategoriziranih kao Primarno ili svih nepročitanih poruka za svaki dolazni sandučić."
           }
         }
       }
@@ -30446,7 +30984,7 @@
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Вы можете получать VIP, «Избранные ящики» и «Уведомления о темах», даже если другие уведомления Почты выключены."
+            "value": "Вы можете получать уведомления о новых письмах от VIP, в избранных ящиках и в темах писем, даже если все прочие уведомления Почты выключены."
           }
         },
         "it": {
@@ -36047,6 +36585,275 @@
         }
       }
     },
+    "BADGE_COUNT": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "תווית הספירה"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "배지 개수"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jumlah Tanda"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lukema merkissä"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İşaret Sayısı"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aantal badges"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jelvények száma"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Число на значке"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conteggio badge"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Contadores"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Πλήθος ενδείξεων"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pastille avec total"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "العدد على الشارة"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "標記數量"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "標記數量"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Liczba na plakietce"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Antal brickor"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Número del globus"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "बैज गणना"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Badge Count"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Merkeantall"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Antal etiketter"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "จำนวนป้ายกำกับ"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "标记数量"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Badge Count"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ženklelių skaičius"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kiraan Lencana"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Číslo na odznaku"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Počet odznakov"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Contadores"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Брой на известия"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Število značk"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Badge Count"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Badge-Anzahl"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Số lượng biểu tượng"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Número no Ícone"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Contor de insigne"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Белгі саны"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nombre dans la pastille"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Número en el globo"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Кількість значків"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "バッジ数"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Contagem de emblemas"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Broj bedževa"
+          }
+        }
+      }
+    },
     "BANNER_STYLE": {
       "extractionState": "manual",
       "localizations": {
@@ -36312,275 +37119,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Stil banera"
-          }
-        }
-      }
-    },
-    "SHOW_IN_LOCK_SCREEN_FOOTER": {
-      "extractionState": "manual",
-      "localizations": {
-        "he": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ניתן להציג התראות במסך הנעילה."
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "잠금 화면에서 알림 보기"
-          }
-        },
-        "id": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tampilkan peringatan pada layar terkunci."
-          }
-        },
-        "fi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Näytä ilmoitusviestit lukitulla näytöllä."
-          }
-        },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Kilitli ekranda uyarıları göster."
-          }
-        },
-        "nl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Toon meldingen op het toegangsscherm."
-          }
-        },
-        "hu": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Jelzések megjelenítése a zárolási képernyőn."
-          }
-        },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Показывать предупреждения на заблокированном экране."
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mostra avvisi nella schermata di blocco."
-          }
-        },
-        "es_419": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mostrar alertas en la pantalla bloqueada."
-          }
-        },
-        "el": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Εμφάνιση ειδοποιήσεων στην οθόνη κλειδώματος."
-          }
-        },
-        "fr_CA": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Afficher les alertes sur l’écran verrouillé."
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "إظهار التنبيهات في شاشة القفل."
-          }
-        },
-        "zh_TW": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "在鎖定畫面中顯示提示。"
-          }
-        },
-        "zh_HK": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "在鎖定畫面中顯示提示。"
-          }
-        },
-        "pl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Pokazuj alerty na ekranie blokady."
-          }
-        },
-        "sv": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Visa notiser på den låsta skärmen."
-          }
-        },
-        "ca": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mostra els avisos a la pantalla bloquejada."
-          }
-        },
-        "hi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "लॉक स्क्रीन में अलर्ट दिखाएँ।"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Show alerts in the lock screen."
-          }
-        },
-        "no": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Vis varsler på låst skjerm."
-          }
-        },
-        "da": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Vis advarsler på låst skærm."
-          }
-        },
-        "th": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "แสดงการเตือนในหน้าจอล็อค"
-          }
-        },
-        "zh_CN": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "在锁定屏幕显示提醒。"
-          }
-        },
-        "en_GB": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Show alerts in the Lock screen."
-          }
-        },
-        "lt": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Rodyti įspėjimus užrakintame ekrane."
-          }
-        },
-        "ms": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tunjukkan isyarat dalam skrin kunci."
-          }
-        },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Zobrazovat upozornění na uzamčené obrazovce."
-          }
-        },
-        "sk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Zobraziť upozornenia na zamknutej obrazovke."
-          }
-        },
-        "es_US": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mostrar alertas en la pantalla bloqueada."
-          }
-        },
-        "bg": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Показване на предупреждения на заключен екран."
-          }
-        },
-        "sl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Prikaži opozorila na zaklenjenem zaslonu."
-          }
-        },
-        "en_AU": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Show alerts in the lock screen."
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Hinweise im Sperrbildschirm anzeigen."
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Hiển thị cảnh báo trên màn hình khóa."
-          }
-        },
-        "pt_BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mostra alertas na tela bloqueada."
-          }
-        },
-        "ro": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Afișați alertele în ecranul de blocare."
-          }
-        },
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ескертулерді құлыптау экранында көрсету."
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Affichez les alertes sur l’écran verrouillé."
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Se muestran avisos en la pantalla de bloqueo."
-          }
-        },
-        "uk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Показувати оповістки на замкненому екрані."
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ロック画面に通知を表示します。"
-          }
-        },
-        "pt_PT": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mostrar avisos no ecrã bloqueado."
-          }
-        },
-        "hr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Prikazivanje alarma na zaključanom zaslonu."
           }
         }
       }
@@ -36854,271 +37392,271 @@
         }
       }
     },
-    "SHOW_PREVIEWS_DEFAULT": {
+    "SHOW_IN_LOCK_SCREEN_FOOTER": {
       "extractionState": "manual",
       "localizations": {
         "he": {
           "stringUnit": {
             "state": "translated",
-            "value": " (ברירת המחדל)"
+            "value": "ניתן להציג התראות במסך הנעילה."
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "(기본)"
+            "value": "잠금 화면에서 알림 보기"
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": " (Default)"
+            "value": "Tampilkan peringatan pada layar terkunci."
           }
         },
         "fi": {
           "stringUnit": {
             "state": "translated",
-            "value": " (oletus)"
+            "value": "Näytä ilmoitusviestit lukitulla näytöllä."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": " (Saptanmış)"
+            "value": "Kilitli ekranda uyarıları göster."
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": " (Standaard)"
+            "value": "Toon meldingen op het toegangsscherm."
           }
         },
         "hu": {
           "stringUnit": {
             "state": "translated",
-            "value": " (Alapértelmezés)"
+            "value": "Jelzések megjelenítése a zárolási képernyőn."
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": " (по умолчанию)"
+            "value": "Показывать предупреждения на заблокированном экране."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": " (default)"
+            "value": "Mostra avvisi nella schermata di blocco."
           }
         },
         "es_419": {
           "stringUnit": {
             "state": "translated",
-            "value": " (predeterminado)"
+            "value": "Mostrar alertas en la pantalla bloqueada."
           }
         },
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": " (προεπιλογή)"
+            "value": "Εμφάνιση ειδοποιήσεων στην οθόνη κλειδώματος."
           }
         },
         "fr_CA": {
           "stringUnit": {
             "state": "translated",
-            "value": " (par défaut)"
+            "value": "Afficher les alertes sur l’écran verrouillé."
           }
         },
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": " (افتراضي)"
+            "value": "إظهار التنبيهات في شاشة القفل."
           }
         },
         "zh_TW": {
           "stringUnit": {
             "state": "translated",
-            "value": "（預設值）"
+            "value": "在鎖定畫面中顯示提示。"
           }
         },
         "zh_HK": {
           "stringUnit": {
             "state": "translated",
-            "value": "（預設值）"
+            "value": "在鎖定畫面中顯示提示。"
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": " (domyślnie)"
+            "value": "Pokazuj alerty na ekranie blokady."
           }
         },
         "sv": {
           "stringUnit": {
             "state": "translated",
-            "value": " (förval)"
+            "value": "Visa notiser på den låsta skärmen."
           }
         },
         "ca": {
           "stringUnit": {
             "state": "translated",
-            "value": " (Per omissió)"
+            "value": "Mostra els avisos a la pantalla bloquejada."
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": " (डिफ़ॉल्ट)"
+            "value": "लॉक स्क्रीन में अलर्ट दिखाएँ।"
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": " (Default)"
+            "value": "Show alerts in the lock screen."
           }
         },
         "no": {
           "stringUnit": {
             "state": "translated",
-            "value": " (standard)"
+            "value": "Vis varsler på låst skjerm."
           }
         },
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": " (Standard)"
+            "value": "Vis advarsler på låst skærm."
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": " (ค่าเริ่มต้น)"
+            "value": "แสดงการเตือนในหน้าจอล็อค"
           }
         },
         "zh_CN": {
           "stringUnit": {
             "state": "translated",
-            "value": "（默认）"
+            "value": "在锁定屏幕显示提醒。"
           }
         },
         "en_GB": {
           "stringUnit": {
             "state": "translated",
-            "value": " (Default)"
+            "value": "Show alerts in the Lock screen."
           }
         },
         "lt": {
           "stringUnit": {
             "state": "translated",
-            "value": " (Numatytasis)"
+            "value": "Rodyti įspėjimus užrakintame ekrane."
           }
         },
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": " (Lalai)"
+            "value": "Tunjukkan isyarat dalam skrin kunci."
           }
         },
         "cs": {
           "stringUnit": {
             "state": "translated",
-            "value": " (výchozí)"
+            "value": "Zobrazovat upozornění na uzamčené obrazovce."
           }
         },
         "sk": {
           "stringUnit": {
             "state": "translated",
-            "value": " (predvolené)"
+            "value": "Zobraziť upozornenia na zamknutej obrazovke."
           }
         },
         "es_US": {
           "stringUnit": {
             "state": "translated",
-            "value": " (predeterminado)"
+            "value": "Mostrar alertas en la pantalla bloqueada."
           }
         },
         "bg": {
           "stringUnit": {
             "state": "translated",
-            "value": " (По подразбиране)"
+            "value": "Показване на предупреждения на заключен екран."
           }
         },
         "sl": {
           "stringUnit": {
             "state": "translated",
-            "value": " (privzeto)"
+            "value": "Prikaži opozorila na zaklenjenem zaslonu."
           }
         },
         "en_AU": {
           "stringUnit": {
             "state": "translated",
-            "value": " (Default)"
+            "value": "Show alerts in the lock screen."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": " (Standard)"
+            "value": "Hinweise im Sperrbildschirm anzeigen."
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": " (Mặc định)"
+            "value": "Hiển thị cảnh báo trên màn hình khóa."
           }
         },
         "pt_BR": {
           "stringUnit": {
             "state": "translated",
-            "value": " (Padrão)"
+            "value": "Mostra alertas na tela bloqueada."
           }
         },
         "ro": {
           "stringUnit": {
             "state": "translated",
-            "value": " (implicit)"
+            "value": "Afișați alertele în ecranul de blocare."
           }
         },
         "kk": {
           "stringUnit": {
             "state": "translated",
-            "value": " (Әдепкі)"
+            "value": "Ескертулерді құлыптау экранында көрсету."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": " (Par défaut)"
+            "value": "Affichez les alertes sur l’écran verrouillé."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": " (por omisión)"
+            "value": "Se muestran avisos en la pantalla de bloqueo."
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": " (типово)"
+            "value": "Показувати оповістки на замкненому екрані."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "（デフォルト）"
+            "value": "ロック画面に通知を表示します。"
           }
         },
         "pt_PT": {
           "stringUnit": {
             "state": "translated",
-            "value": " (predefinição)"
+            "value": "Mostrar avisos no ecrã bloqueado."
           }
         },
         "hr": {
           "stringUnit": {
             "state": "translated",
-            "value": " (Standardno)"
+            "value": "Prikazivanje alarma na zaključanom zaslonu."
           }
         }
       }
@@ -38199,271 +38737,271 @@
         }
       }
     },
-    "SPOKEN_NOTIFICATIONS_CARPLAY_ANNOUNCE_MESSAGES_FOOTER_SILENCE_NEW_MESSAGES": {
+    "SHOW_PREVIEWS_DEFAULT": {
       "extractionState": "manual",
       "localizations": {
         "he": {
           "stringUnit": {
             "state": "translated",
-            "value": "הכרזות על הודעות מושתקות כרגע."
+            "value": " (ברירת המחדל)"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "메시지 읽어주기의 소리가 현재 꺼져 있습니다."
+            "value": "(기본)"
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "Pengumuman pesan diheningkan saat ini."
+            "value": " (Default)"
           }
         },
         "fi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Viestien ilmoitukset on tällä hetkellä hiljennetty."
+            "value": " (oletus)"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Mesaj duyuruları şu an sessize alınmış."
+            "value": " (Saptanmış)"
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Aankondigingen van berichten worden momenteel stilgehouden."
+            "value": " (Standaard)"
           }
         },
         "hu": {
           "stringUnit": {
             "state": "translated",
-            "value": "Az üzenetbejelentések jelenleg el vannak némítva."
+            "value": " (Alapértelmezés)"
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Объявление сообщений заглушено."
+            "value": " (по умолчанию)"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "La lettura dei messaggi attualmente è disattivata."
+            "value": " (default)"
           }
         },
         "es_419": {
           "stringUnit": {
             "state": "translated",
-            "value": "El anuncio de mensajes está silenciado."
+            "value": " (predeterminado)"
           }
         },
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Οι ανακοινώσεις μηνυμάτων είναι σε σίγαση."
+            "value": " (προεπιλογή)"
           }
         },
         "fr_CA": {
           "stringUnit": {
             "state": "translated",
-            "value": "Les annonces de messages sont actuellement désactivées."
+            "value": " (par défaut)"
           }
         },
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "الإعلان عن الرسائل متوقف حاليًا."
+            "value": " (افتراضي)"
           }
         },
         "zh_TW": {
           "stringUnit": {
             "state": "translated",
-            "value": "目前已將「播報訊息」設為靜音。"
+            "value": "（預設值）"
           }
         },
         "zh_HK": {
           "stringUnit": {
             "state": "translated",
-            "value": "讀出訊息目前已靜音。"
+            "value": "（預設值）"
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ogłaszanie wiadomości jest obecnie wyciszone."
+            "value": " (domyślnie)"
           }
         },
         "sv": {
           "stringUnit": {
             "state": "translated",
-            "value": "Tillkännagivanden av meddelanden har för närvarande stängts av."
+            "value": " (förval)"
           }
         },
         "ca": {
           "stringUnit": {
             "state": "translated",
-            "value": "Els anuncis dels missatges estan silenciats."
+            "value": " (Per omissió)"
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "संदेशों की घोषणाएँ अभी मौन हैं।"
+            "value": " (डिफ़ॉल्ट)"
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Message announcements are currently silenced."
+            "value": " (Default)"
           }
         },
         "no": {
           "stringUnit": {
             "state": "translated",
-            "value": "Kunngjøring av meldinger er dempet for øyeblikket."
+            "value": " (standard)"
           }
         },
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Meddelelser om beskeder ignoreres i øjeblikket."
+            "value": " (Standard)"
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "ปิดเสียงการอ่านแจ้งเตือนข้อความอยู่ในตอนนี้"
+            "value": " (ค่าเริ่มต้น)"
           }
         },
         "zh_CN": {
           "stringUnit": {
             "state": "translated",
-            "value": "信息播报当前已静音。"
+            "value": "（默认）"
           }
         },
         "en_GB": {
           "stringUnit": {
             "state": "translated",
-            "value": "Message announcements are currently silenced."
+            "value": " (Default)"
           }
         },
         "lt": {
           "stringUnit": {
             "state": "translated",
-            "value": "Pranešimai apie žinutes šiuo metu yra nutildyti."
+            "value": " (Numatytasis)"
           }
         },
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "Pengumuman mesej disenyapkan pada masa ini."
+            "value": " (Lalai)"
           }
         },
         "cs": {
           "stringUnit": {
             "state": "translated",
-            "value": "Oznamování zpráv je momentálně vypnuté."
+            "value": " (výchozí)"
           }
         },
         "sk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Oznamovanie správ je momentálne stíšené."
+            "value": " (predvolené)"
           }
         },
         "es_US": {
           "stringUnit": {
             "state": "translated",
-            "value": "El anuncio de mensajes está silenciado."
+            "value": " (predeterminado)"
           }
         },
         "bg": {
           "stringUnit": {
             "state": "translated",
-            "value": "В момента оповестяването на съобщенията е заглушено."
+            "value": " (По подразбиране)"
           }
         },
         "sl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Najavljanje sporočil je trenutno utišano."
+            "value": " (privzeto)"
           }
         },
         "en_AU": {
           "stringUnit": {
             "state": "translated",
-            "value": "Message announcements are currently silenced."
+            "value": " (Default)"
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Nachrichten­ankündigungen sind zurzeit stummgeschaltet."
+            "value": " (Standard)"
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Tính năng thông báo tin nhắn hiện bị tắt tiếng."
+            "value": " (Mặc định)"
           }
         },
         "pt_BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Os anúncios de mensagens estão silenciados."
+            "value": " (Padrão)"
           }
         },
         "ro": {
           "stringUnit": {
             "state": "translated",
-            "value": "Anunțarea mesajelor nu este activă în prezent."
+            "value": " (implicit)"
           }
         },
         "kk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Хабарларды оқу функциясының дыбысы өшірілген."
+            "value": " (Әдепкі)"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "L’annonce des messages est actuellement désactivée."
+            "value": " (Par défaut)"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "El anuncio de mensajes está silenciado."
+            "value": " (por omisión)"
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Оголошення повідомлень зараз приглушено."
+            "value": " (типово)"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "メッセージの読み上げは現在行われないようになっています。"
+            "value": "（デフォルト）"
           }
         },
         "pt_PT": {
           "stringUnit": {
             "state": "translated",
-            "value": "Os anúncios de mensagens estão silenciados."
+            "value": " (predefinição)"
           }
         },
         "hr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Najave poruka trenutačno su utišane."
+            "value": " (Standardno)"
           }
         }
       }
@@ -39521,7 +40059,7 @@
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Стиль сповіщення"
+            "value": "Стиль сповіщень"
           }
         },
         "ja": {
@@ -39540,6 +40078,275 @@
           "stringUnit": {
             "state": "translated",
             "value": "Stil obavijesti"
+          }
+        }
+      }
+    },
+    "SPOKEN_NOTIFICATIONS_CARPLAY_ANNOUNCE_MESSAGES_FOOTER_SILENCE_NEW_MESSAGES": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "הכרזות על הודעות מושתקות כרגע."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "메시지 읽어주기의 소리가 현재 꺼져 있습니다."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pengumuman pesan diheningkan saat ini."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Viestien ilmoitukset on tällä hetkellä hiljennetty."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mesaj duyuruları şu an sessize alınmış."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aankondigingen van berichten worden momenteel stilgehouden."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Az üzenetbejelentések jelenleg el vannak némítva."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Объявление сообщений заглушено."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La lettura dei messaggi attualmente è disattivata."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El anuncio de mensajes está silenciado."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Οι ανακοινώσεις μηνυμάτων είναι σε σίγαση."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les annonces de messages sont actuellement désactivées."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الإعلان عن الرسائل متوقف حاليًا."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "目前已將「播報訊息」設為靜音。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "讀出訊息目前已靜音。"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ogłaszanie wiadomości jest obecnie wyciszone."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tillkännagivanden av meddelanden har för närvarande stängts av."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Els anuncis dels missatges estan silenciats."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "संदेशों की घोषणाएँ अभी मौन हैं।"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Message announcements are currently silenced."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kunngjøring av meldinger er dempet for øyeblikket."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meddelelser om beskeder ignoreres i øjeblikket."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ปิดเสียงการอ่านแจ้งเตือนข้อความอยู่ในตอนนี้"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "信息播报当前已静音。"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Message announcements are currently silenced."
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pranešimai apie žinutes šiuo metu yra nutildyti."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pengumuman mesej disenyapkan pada masa ini."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oznamování zpráv je momentálně vypnuté."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oznamovanie správ je momentálne stíšené."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El anuncio de mensajes está silenciado."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "В момента оповестяването на съобщенията е заглушено."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Najavljanje sporočil je trenutno utišano."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Message announcements are currently silenced."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nachrichten­ankündigungen sind zurzeit stummgeschaltet."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tính năng thông báo tin nhắn hiện bị tắt tiếng."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Os anúncios de mensagens estão silenciados."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Anunțarea mesajelor nu este activă în prezent."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Хабарларды оқу функциясының дыбысы өшірілген."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "L’annonce des messages est actuellement désactivée."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "El anuncio de mensajes está silenciado."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Оголошення повідомлень зараз приглушено."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "メッセージの読み上げは現在行われないようになっています。"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Os anúncios de mensagens estão silenciados."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Najave poruka trenutačno su utišane."
           }
         }
       }
@@ -41692,275 +42499,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "%@ i %@"
-          }
-        }
-      }
-    },
-    "SUMMARIZE_PREVIEWS": {
-      "extractionState": "manual",
-      "localizations": {
-        "he": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "סיכום תצוגות מקדימות"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "미리보기 요약"
-          }
-        },
-        "id": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ringkas Pratinjau"
-          }
-        },
-        "fi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tee esikatseluista yhteenveto"
-          }
-        },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Önizlemeleri Özetle"
-          }
-        },
-        "nl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Vat voorvertoningen samen"
-          }
-        },
-        "hu": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Előnézetek összegzése"
-          }
-        },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Конспекты в предпросмотре"
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Riepilogo anteprime"
-          }
-        },
-        "es_419": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Resumir vistas previas"
-          }
-        },
-        "el": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Σύνοψη προεπισκοπήσεων"
-          }
-        },
-        "fr_CA": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Résumer les aperçus"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "تلخيص المعاينات"
-          }
-        },
-        "zh_TW": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "生成預覽摘要"
-          }
-        },
-        "zh_HK": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "摘要預覽"
-          }
-        },
-        "pl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Podglądy streszczeń"
-          }
-        },
-        "sv": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sammanfatta förhandsvisningar"
-          }
-        },
-        "ca": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Previsualitzacions resumides"
-          }
-        },
-        "hi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "प्रीव्यू का सारांश बनाएँ"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Summarize Previews"
-          }
-        },
-        "no": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Oppsummer forhåndsvisninger"
-          }
-        },
-        "da": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Opsummer eksempler"
-          }
-        },
-        "th": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "สรุปตัวอย่าง"
-          }
-        },
-        "zh_CN": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "生成预览摘要"
-          }
-        },
-        "en_GB": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Summarise Previews"
-          }
-        },
-        "lt": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Apibendrinti peržiūras"
-          }
-        },
-        "ms": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ringkaskan Pratonton"
-          }
-        },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Souhrnné náhledy"
-          }
-        },
-        "sk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Súhrnné náhľady"
-          }
-        },
-        "es_US": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Resumir vistas previas"
-          }
-        },
-        "bg": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Обобщи прегледи"
-          }
-        },
-        "sl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Povzemi predoglede"
-          }
-        },
-        "en_AU": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Summarise Previews"
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Vorschauen zusammenfassen"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tóm tắt bản xem trước"
-          }
-        },
-        "pt_BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Resumir Pré‑visualizações"
-          }
-        },
-        "ro": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Rezumare previzualizări"
-          }
-        },
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Алдын ала көріністерді жинақтау"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Résumer les aperçus"
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Resumir previsualizaciones"
-          }
-        },
-        "uk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Підсумовувати передогляди"
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "プレビューの要約"
-          }
-        },
-        "pt_PT": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Resumir pré‑visualizações"
-          }
-        },
-        "hr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sažmi preglede"
           }
         }
       }
@@ -46006,127 +46544,127 @@
         "he": {
           "stringUnit": {
             "state": "translated",
-            "value": "אפשרויות סיכום תצוגות מקדימות של עדכונים"
+            "value": "אפשרויות סיכום עדכונים"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "다음 앱의 알림 미리보기 요약"
+            "value": "다음 앱의 알림 요약"
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ringkas Pratinjau Pemberitahuan Dari"
+            "value": "Ringkas Pemberitahuan Dari"
           }
         },
         "fi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Tee yhteenveto ilmoituksista:"
+            "value": "Tee ilmoitusten yhteenveto kohteesta"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Şuradaki Bildirim Önizlemelerini Özetle:"
+            "value": "Şuradaki Bildirimleri Özetle:"
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Vat voorvertoningen van meldingen samen van"
+            "value": "Vat meldingen samen van"
           }
         },
         "hu": {
           "stringUnit": {
             "state": "translated",
-            "value": "Értesítés-előnézetek összegzése a következőkből:"
+            "value": "Értesítések összegzése a következőkből:"
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Показывать в предпросмотре конспекты уведомлений от"
+            "value": "Обобщение уведомлений от приложений"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Riassumi le anteprime delle notifiche di"
+            "value": "Riassumi le notifiche di"
           }
         },
         "es_419": {
           "stringUnit": {
             "state": "translated",
-            "value": "Resumir vistas previas de las notificaciones de"
+            "value": "Resumir notificaciones de"
           }
         },
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Σύνοψη προεπισκοπήσεων γνωστοποιήσεων από"
+            "value": "Σύνοψη γνωστοποιήσεων από"
           }
         },
         "fr_CA": {
           "stringUnit": {
             "state": "translated",
-            "value": "Résumer les aperçus des notifications de :"
+            "value": "Résumer les notifications de"
           }
         },
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "تلخيص معاينات الإشعارات من"
+            "value": "تلخيص الإشعارات من"
           }
         },
         "zh_TW": {
           "stringUnit": {
             "state": "translated",
-            "value": "對以下通知預覽生成摘要"
+            "value": "生成通知摘要來源"
           }
         },
         "zh_HK": {
           "stringUnit": {
             "state": "translated",
-            "value": "生成以下通知預覽摘要"
+            "value": "生成以下通知摘要"
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Streszczaj podglądy powiadomień"
+            "value": "Streszczaj powiadomienia"
           }
         },
         "sv": {
           "stringUnit": {
             "state": "translated",
-            "value": "Sammanfatta notisförhandsvisningar från"
+            "value": "Sammanfatta notiser från"
           }
         },
         "ca": {
           "stringUnit": {
             "state": "translated",
-            "value": "Resumeix les previsualitzacions de:"
+            "value": "Apps de què es resumeixen les notificacions"
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "सूचना प्रीव्यू का सारांश इससे तैयार करें"
+            "value": "इससे सूचनाओं का सारांश तैयार करें"
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Summarize Notification Previews From"
+            "value": "Summarize Notifications From"
           }
         },
         "no": {
           "stringUnit": {
             "state": "translated",
-            "value": "Oppsummer forhåndsvisning av varslinger fra"
+            "value": "Oppsummer varslinger fra"
           }
         },
         "da": {
@@ -46138,49 +46676,49 @@
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "สรุปตัวอย่างการแจ้งเตือนจาก"
+            "value": "สรุปการแจ้งเตือนจาก"
           }
         },
         "zh_CN": {
           "stringUnit": {
             "state": "translated",
-            "value": "生成下列通知预览摘要"
+            "value": "生成下列通知摘要"
           }
         },
         "en_GB": {
           "stringUnit": {
             "state": "translated",
-            "value": "Summarise Notification Previews From"
+            "value": "Summarise Notifications From"
           }
         },
         "lt": {
           "stringUnit": {
             "state": "translated",
-            "value": "Apibendrinti pranešimų peržiūras iš"
+            "value": "Apibendrinti pranešimus iš"
           }
         },
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ringkaskan Pratonton Pemberitahuan Daripada"
+            "value": "Ringkaskan Pemberitahuan Daripada"
           }
         },
         "cs": {
           "stringUnit": {
             "state": "translated",
-            "value": "Shrnovat náhledy oznámení z aplikací"
+            "value": "Vytvářet souhrny oznámení z aplikací"
           }
         },
         "sk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Zhrňovať náhľady hlásení z apiek"
+            "value": "Vytvárať zhrnutia hlásení z apiek"
           }
         },
         "es_US": {
           "stringUnit": {
             "state": "translated",
-            "value": "Resumir vistas previas de las notificaciones de"
+            "value": "Resumir notificaciones de"
           }
         },
         "bg": {
@@ -46192,79 +46730,79 @@
         "sl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Povzetek predogledov obvestil iz"
+            "value": "Povzemanje obvestil iz"
           }
         },
         "en_AU": {
           "stringUnit": {
             "state": "translated",
-            "value": "Summarise Notification Previews From"
+            "value": "Summarise Notifications From"
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Mitteilungsvorschauen zusammenfassen von"
+            "value": "Mitteilungen zusammenfassen von"
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Tóm tắt bản xem trước thông báo từ"
+            "value": "Tóm tắt thông báo từ"
           }
         },
         "pt_BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Resumir Pré‑visualizações de Notificações dos Apps"
+            "value": "Resumir Notificações de"
           }
         },
         "ro": {
           "stringUnit": {
             "state": "translated",
-            "value": "Se rezumă previzualizările notificărilor de la"
+            "value": "Se rezumă notificările de la"
           }
         },
         "kk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Хабарландырудың алдын ала көріністерінен жинақтау"
+            "value": "Келесілерден хабарландыруларды жинақтау"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Résumer les aperçus des notifications de :"
+            "value": "Résumer les notifications de"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Resumir la previsualización de las notificaciones de:"
+            "value": "Resumir notificaciones de"
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Підсумовувати передогляди сповіщень від"
+            "value": "Підсумки зі сповіщень від програм"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "通知プレビューの要約を行う対象"
+            "value": "通知の要約を行う対象"
           }
         },
         "pt_PT": {
           "stringUnit": {
             "state": "translated",
-            "value": "Resumir pré‑visualizações de notificações de"
+            "value": "Resumir notificações de"
           }
         },
         "hr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Sažmi preglede obavijesti od"
+            "value": "Sažmi obavijesti iz"
           }
         }
       }
@@ -46335,7 +46873,7 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Απάντηση χωρίς επιβεβ/ση"
+            "value": "Απάντηση χωρίς επιβεβαίωση"
           }
         },
         "fr_CA": {
@@ -46365,7 +46903,7 @@
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Odp. bez potwierdzania"
+            "value": "Odpowiadaj bez potwierdzania"
           }
         },
         "sv": {
@@ -49766,6 +50304,275 @@
         }
       }
     },
+    "SUMMARIZE_NOTIFICATIONS": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "סיכום העדכונים"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "알림 요약"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ringkas Pemberitahuan"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tee ilmoitusten yhteenveto"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bildirimleri Özetle"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vat meldingen samen"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Értesítések összegzése"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Обобщение уведомлений"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Riepilogo notifiche"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resumen de notificaciones"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Σύνοψη γνωστοποιήσεων"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Résumer les notifications"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تلخيص الإشعارات"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "通知摘要"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "將通知摘要"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Streszczaj powiadomienia"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sammanfatta notiser"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notificacions resumides"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "सूचनाओं का सारांश तैयार करें"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Summarize Notifications"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oppsummer varslinger"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Opsummering af notifikationer"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "สรุปการแจ้งเตือน"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "生成通知摘要"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Summarise Notifications"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pranešimų santraukos"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ringkaskan Pemberitahuan"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Souhrny oznámení"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zhrnúť hlásenia"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resumen de notificaciones"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Обобщение на известията"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Povzetek obvestil"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Summarise Notifications"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mitteilungen zusammenfassen"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tóm tắt thông báo"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resumir Notificações"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Rezumare notificări"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Хабарландыруларды жинақтау"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Résumer les notifications"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resumir notificaciones"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Підсумки зі сповіщень"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "通知を要約"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resumir notificações"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sažmi obavijesti"
+          }
+        }
+      }
+    },
     "SPOKEN_NOTIFICATIONS_ANNOUNCE_DESTINATION_CARPLAY": {
       "extractionState": "manual",
       "localizations": {
@@ -51117,265 +51924,265 @@
         "he": {
           "stringUnit": {
             "state": "translated",
-            "value": "ניתן לסכם תכנים של הודעות ישירות ושל קבוצות עדכונים כדי להפוך אותם לתמציתיים וקלים יותר לקריאה."
+            "value": "ניתן לסכם תכנים של הודעות ישירות ושל קבוצות עדכונים כדי להפוך אותם לתמציתיים וקלים יותר לקריאה.\n\nהסיכומים עלולים להכיל שגיאות."
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "다이렉트 메시지 및 알림 그룹의 콘텐츠를 요약하여 간략하고 읽기 쉽게 제공합니다."
+            "value": "다이렉트 메시지 및 알림 그룹의 콘텐츠를 요약하여 간략하고 읽기 쉽게 제공합니다.\n\n요약에 오류가 있을 수 있습니다."
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ringkas konten di pesan langsung dan grup pemberitahuan agar lebih singkat dan mudah dibaca."
+            "value": "Ringkas konten di pesan langsung dan grup pemberitahuan agar lebih singkat dan mudah dibaca.\n\nRingkasan mungkin berisi kesalahan."
           }
         },
         "fi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Tee yhteenveto suorien viestien ja ilmoitusryhmien sisällöstä, jotta ne ovat ytimekkäämpiä ja helpompia lukea."
+            "value": "Tee yhteenveto suorien viestien ja ilmoitusryhmien sisällöstä, jotta ne ovat ytimekkäämpiä ja helpompia lukea.\n\nYhteenvedot saattavat sisältää virheitä."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Doğrudan mesajlarda ve bildirim gruplarında içeriği özetleyerek onları daha kısa, öz ve kolay okunur hâle getirin."
+            "value": "Doğrudan mesajlarda ve bildirim gruplarında içeriği özetleyerek onları daha kısa, öz ve kolay okunur hâle getirin.\n\nÖzetlerde hata olabilir."
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Vat de inhoud van directe berichten en groepen meldingen samen om ze beknopter en makkelijker leesbaar te maken."
+            "value": "Vat de inhoud van berichten in directe berichten en groepen meldingen samen om ze beknopter en makkelijker leesbaar te maken.\n\nSamenvattingen kunnen fouten bevatten."
           }
         },
         "hu": {
           "stringUnit": {
             "state": "translated",
-            "value": "Összegzi a közvetlen üzenetekben és értesítési csoportokban található tartalmat, hogy tömörebb és könnyebben olvasható legyen."
+            "value": "Összegzi a közvetlen üzenetekben és értesítési csoportokban található tartalmat, hogy tömörebb és könnyebben olvasható legyen.\n\nAz összegzések hibákat tartalmazhatnak."
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Возможность конспектировать контент в личных сообщениях и группах уведомлений, делая их более компактными и удобными для чтения."
+            "value": "Возможность конспектировать контент в личных сообщениях и группах уведомлений, делая их более компактными и удобными для чтения.\n\nКонспекты могут содержать ошибки."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Riassumi il contenuto dei messaggi diretti e dei gruppi di notifiche, rendendoli più sintetici e facili da leggere."
+            "value": "Riassumi il contenuto dei messaggi diretti e dei gruppi di notifiche, rendendoli più sintetici e facili da leggere. \n\nI riepiloghi potrebbero contenere errori."
           }
         },
         "es_419": {
           "stringUnit": {
             "state": "translated",
-            "value": "Resume el contenido de los mensajes directos y los grupos de notificaciones para que sean más concisos y fáciles de leer."
+            "value": "Resume el contenido de los mensajes directos y los grupos de notificaciones para que sean más concisos y fáciles de leer.\n\nLos resúmenes podrían contener errores."
           }
         },
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Σύνοψη του περιεχομένου σε προσωπικά μηνύματα και ομάδες γνωστοποιήσεων, ώστε να είναι πιο συνοπτικά και ευανάγνωστα."
+            "value": "Σύνοψη του περιεχομένου σε προσωπικά μηνύματα και ομάδες γνωστοποιήσεων, ώστε να είναι πιο περιεκτικά και ευανάγνωστα.\n\nΟι συνόψεις ενδέχεται να περιέχουν σφάλματα."
           }
         },
         "fr_CA": {
           "stringUnit": {
             "state": "translated",
-            "value": "Résument le contenu des messages directs et des groupes de notifications en les rendant encore plus succincts et faciles à lire."
+            "value": "Résume le contenu des messages directs et des groupes de notifications en les rendant encore plus succincts et faciles à lire.\n\nLes résumés peuvent comporter des erreurs."
           }
         },
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "تلخيص المحتوى الموجود في الرسائل المباشرة ومجموعات الإشعارات، مما يجعلها أكثر إيجازًا وأسهل في القراءة."
+            "value": "تلخيص المحتوى في الرسائل المباشرة ومجموعات الإشعارات بحيث تصبح أكثر إيجازًا وسهولة في القراءة.\n\nقد تحتوي الملخصات على أخطاء."
           }
         },
         "zh_TW": {
           "stringUnit": {
             "state": "translated",
-            "value": "對私人訊息和通知群組中的內容生成摘要，讓內容更簡潔易懂。"
+            "value": "對私人訊息和通知群組中的內容生成摘要，讓內容更簡潔易懂。\n\n摘要可能包含錯誤。"
           }
         },
         "zh_HK": {
           "stringUnit": {
             "state": "translated",
-            "value": "將直接郵件和通知群組中的內容摘要，令內容更簡潔易讀。"
+            "value": "為私人訊息和通知群組中的內容產生摘要，令內容更簡潔易讀。\n\n摘要可能會包含錯誤項目。"
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Streszczanie wiadomościach bezpośrednich i grup powiadomień ułatwia ich odczytywanie."
+            "value": "Streszczanie wiadomości bezpośrednich i grup powiadomień ułatwia ich odczytywanie.\n\nStreszczenia mogą zawierać błędy."
           }
         },
         "sv": {
           "stringUnit": {
             "state": "translated",
-            "value": "Sammanfatta innehåll i direktmeddelanden och grupperade notiser så att de blir kortare och mer lättlästa."
+            "value": "Sammanfatta innehållet i direktmeddelanden och notisgrupper så att de blir mer kortfattade och lättlästa.\n\nSammanfattningar kan innehålla fel."
           }
         },
         "ca": {
           "stringUnit": {
             "state": "translated",
-            "value": "Resumeix el contingut dels missatges directes i dels grups de notificacions per facilitar‑ne la lectura."
+            "value": "Resumeix el contingut dels missatges directes i dels grups de notificacions per facilitar‑ne la lectura.\n\nEls resums poden tenir errors."
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "डाइरेक्ट मैसेज और सूचना समूहों के कॉन्टेंट का सारांश तैयार करें जो संक्षिप्त और पढ़ने में सुगम हों।"
+            "value": "डाइरेक्ट संदेशों और सूचनाओं के समूहों के कॉन्टेंट का सारांश तैयार करें ताकि वे अधिक सारगर्भित और पढ़ने में सुगम हो जाएँ।\n\nसारांश में त्रुटियाँ हो सकती हैं।"
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Summarize content in direct messages and groups of notifications making them more succinct and easier to read."
+            "value": "Summarize content in direct messages and groups of notifications making them more succinct and easier to read.\n\nSummaries may contain errors."
           }
         },
         "no": {
           "stringUnit": {
             "state": "translated",
-            "value": "Oppsummer innhold i direktemeldinger og grupperte varslinger så de blir kortere og enklere å lese."
+            "value": "Oppsummer innhold i direktemeldinger og grupperte varslinger så de blir kortere og enklere å lese.\n\nOppsummeringer kan inneholde feil."
           }
         },
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Opsummer indholdet af direkte beskeder og grupperede notifikationer for at gøre dem mere kortfattede og nemmere at læse."
+            "value": "Opsummer indholdet af direkte beskeder og grupperede notifikationer for at gøre dem mere kortfattede og nemmere at læse.\n\nResumeer indeholder muligvis fejl."
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "สรุปเนื้อหาในข้อความและกลุ่มของการแจ้งเตือนโดยตรงเพื่อให้สั้นกระชับและอ่านง่ายยิ่งขึ้น"
+            "value": "สรุปเนื้อหาในข้อความและกลุ่มของการแจ้งเตือนโดยตรงเพื่อให้สั้นกระชับและอ่านง่ายยิ่งขึ้น\n\nสรุปอาจมีข้อผิดพลาด"
           }
         },
         "zh_CN": {
           "stringUnit": {
             "state": "translated",
-            "value": "生成私信和通知群组的内容摘要，使其简洁易读。"
+            "value": "生成私信和通知群组的内容摘要，使其简洁易读。\n\n摘要可能包含错误。"
           }
         },
         "en_GB": {
           "stringUnit": {
             "state": "translated",
-            "value": "Summarise content in direct messages and groups of notifications, making them more succinct and easier to read."
+            "value": "Summarise content in direct messages and groups of notifications, making them more succinct and easier to read.\n\nSummaries may contain errors."
           }
         },
         "lt": {
           "stringUnit": {
             "state": "translated",
-            "value": "Sukurkite glaustą ir lengviau skaitomą tiesioginių žinučių ir pranešimų grupių turinio santrauką."
+            "value": "Sukurkite glaustą ir lengviau skaitomą tiesioginių žinučių ir pranešimų grupių turinio santrauką.\nSantraukose gali būti klaidų."
           }
         },
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ringkaskan kandungan dalam mesej langsung dan kumpulan pemberitahuan yang menjadikannya lebih padat serta lebih mudah dibaca."
+            "value": "Ringkaskan kandungan dalam mesej terus dan kumpulan pemberitahuan yang menjadikannya lebih padat serta lebih mudah dibaca.\n\nRingkasan mungkin mengandungi ralat."
           }
         },
         "cs": {
           "stringUnit": {
             "state": "translated",
-            "value": "Souhrny obsahu soukromých zpráv a skupin oznámení jsou stručnější a snáz se čtou."
+            "value": "Souhrny obsahu soukromých zpráv a skupin oznámení jsou stručnější a snáz se čtou.\n\nMůžou obsahovat chyby."
           }
         },
         "sk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Zhrnutia obsahu zo súkromných správ a skupín hlásení sú stručnejšie a ľahšie sa čítajú."
+            "value": "Zhrnutia obsahu zo súkromných správ a skupín hlásení sú stručnejšie a ľahšie sa čítajú.\n\nZhrnutia môžu obsahovať chyby."
           }
         },
         "es_US": {
           "stringUnit": {
             "state": "translated",
-            "value": "Resume el contenido de los mensajes directos y los grupos de notificaciones para que sean más concisos y fáciles de leer."
+            "value": "Resume el contenido de los mensajes directos y los grupos de notificaciones para que sean más concisos y fáciles de leer.\n\nLos resúmenes podrían contener errores."
           }
         },
         "bg": {
           "stringUnit": {
             "state": "translated",
-            "value": "Съдържанието се обобщава в директни съобщения и групи с известия, като ги прави кратки и лесни за четене."
+            "value": "Съдържанието се обобщава в директни съобщения и групи с известия, като ги прави кратки и лесни за четене.\n\nОбобщенията могат да съдържат грешки."
           }
         },
         "sl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Povzemite vsebino v neposrednih sporočilih in skupinah obvestil, da bodo bolj strnjena in jih boste lažje prebrali."
+            "value": "Povzemite vsebino v neposrednih sporočilih in skupinah obvestil, da bodo bolj strnjena in jih boste lažje prebrali.\n\nPovzetki lahko vključujejo napake."
           }
         },
         "en_AU": {
           "stringUnit": {
             "state": "translated",
-            "value": "Summarise content in direct messages and groups of notifications making them more succinct and easier to read."
+            "value": "Summarise content in direct messages and groups of notifications to make them more succinct and easier to read.\n\nSummaries may contain errors."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Inhalte in Direktnachrichten und Gruppenmitteilungen zusammenzufassen macht sie übersichtlicher und sie sind leichter zu verstehen."
+            "value": "Inhalte in Direktnachrichten und gruppierten Mitteilungen zusammenzufassen macht sie übersichtlicher und sie sind leichter zu verstehen.\n\nZusammenfassungen können Fehler enthalten."
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Tóm tắt nội dung trong các tin nhắn trực tiếp và các nhóm thông báo để làm chúng trở nên ngắn gọn hơn và dễ đọc hơn."
+            "value": "Tóm tắt nội dung trong tin nhắn trực tiếp và nhóm thông báo cho ngắn gọn và dễ đọc hơn.\n\nBản tóm tắt có thể chứa lỗi."
           }
         },
         "pt_BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Resume o conteúdo de mensagens diretas e grupos de notificações para que fique mais sucinto e fácil de ler."
+            "value": "Resuma o conteúdo de mensagens diretas e grupos de notificações para deixá‑los mais sucintos e fáceis de ler. \n\nOs resumos podem conter erros."
           }
         },
         "ro": {
           "stringUnit": {
             "state": "translated",
-            "value": "Conținutul din mesajele directe și din grupurile de notificări va fi rezumat, pentru a fi mai succint și mai ușor de citit."
+            "value": "Conținutul din mesajele directe și din grupurile de notificări va fi rezumat, pentru a fi mai succint și mai ușor de citit.\n\nRezumatele pot conține erori."
           }
         },
         "kk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Тікелей хабарлардағы және хабарландырулар топтарындағы контентті айтарлықтай қысқарту және оқуды жеңілдету үшін жинақтаңыз."
+            "value": "Жеке хабарлардағы және хабарландырулар топтарындағы контентті айтарлықтай қысқарту және оқуды жеңілдету үшін жинақтаңыз.\n\nЖинақтамаларда қателер болуы мүмкін."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Résumez le contenu des messages directs et des groupes de notifications en les rendant encore plus succincts et faciles à lire."
+            "value": "Résumez le contenu des messages directs et des groupes de notifications en les rendant encore plus succincts et faciles à lire.\n\nLes résumés peuvent comporter des erreurs."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Resume el contenido de los mensajes directos y los grupos de notificaciones para hacerlos más concisos y fáciles de leer."
+            "value": "Resume el contenido de los mensajes directos y los grupos de notificaciones para hacerlos más concisos y fáciles de leer.\n\nLos resúmenes pueden contener errores."
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Підсумовувати вміст прямих повідомлень і груп сповіщень, щоб їх можна було швидко й легко прочитати."
+            "value": "Підсумовувати вміст прямих повідомлень і груп сповіщень, щоб їх можна було швидко й легко прочитати.\n\nПідсумки можуть містити помилки."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "ダイレクトメッセージや通知グループの内容を要約し、より簡潔で読みやすくします。"
+            "value": "ダイレクトメッセージや通知グループの内容を要約し、より簡潔で読みやすくします。\n\n要約にはエラーが含まれる場合があります。"
           }
         },
         "pt_PT": {
           "stringUnit": {
             "state": "translated",
-            "value": "Resumir o conteúdo de mensagens diretas e grupos de notificações para torná‑las mais concisas e fáceis de ler."
+            "value": "Resumir o conteúdo de mensagens diretas e grupos de notificações para torná‑las mais concisas e fáceis de ler.\n\nOs resumos podem conter erros."
           }
         },
         "hr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Sažmite sadržaj izravnih poruka i grupa obavijesti kako bi bile jezgrovitije i lakše za čitanje."
+            "value": "Sažmite sadržaj izravnih poruka i grupa obavijesti kako bi bile jezgrovitije i lakše za čitanje.\n\nSažeci mogu sadržavati greške."
           }
         }
       }
@@ -53042,7 +53849,7 @@
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Заблокирован­ный экран"
+            "value": "Заблокированный экран"
           }
         },
         "it": {
@@ -56318,7 +57125,7 @@
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Wiadomości bezpośr."
+            "value": "Wiadomości bezpośrednie"
           }
         },
         "sv": {
@@ -56756,6 +57563,275 @@
           "stringUnit": {
             "state": "translated",
             "value": "Prilagodite obavijesti"
+          }
+        }
+      }
+    },
+    "SUMMARIZATION_APP_LIST_DISABLED_APP_DISCLOSURE": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "לא זמין כרגע"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "일시적으로 사용할 수 없음"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tidak Tersedia untuk Sementara"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tilapäisesti ei saatavilla"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geçici Olarak Kullanılamıyor"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tijdelijk niet beschikbaar"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Átmenetileg nem érhető el"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Временно недоступно"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Temporaneamente non disponibile"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Temporalmente no disponible"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Δεν διατίθεται προσωρινά"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Temporairement indisponible"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "غير متوفرة مؤقتًا"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "暫時無法使用"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "暫時無法使用"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Czasowo niedostępne"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Inte tillgänglig för tillfället"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Temporalment no disponibles"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "अस्थायी रूप से अनुपलब्ध"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Temporarily Unavailable"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Midlertidig utilgjengelig"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Midlertidigt ikke tilgængelig"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ไม่มีชั่วคราว"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "暂时不可用"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Temporarily Unavailable"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Laikinai nepasiekiama"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tidak Tersedia Buat Sementara"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dočasně nedostupné"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dočasne nedostupné"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Temporalmente no disponible"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Временно недостъпно"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Začasno ni na voljo"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Temporarily Unavailable"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vorübergehend nicht verfügbar"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tạm thời không khả dụng"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Temporariamente Indisponível"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Temporar indisponibilă"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Уақытша қолжетімсіз"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Temporairement indisponible"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No disponible temporalmente"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Тимчасово недоступно"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "一時的に使用できません"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Temporariamente indisponível"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Privremeno nedostupno"
           }
         }
       }
@@ -57807,7 +58883,7 @@
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Visualización compartida"
+            "value": "Vista compartida"
           }
         },
         "uk": {
@@ -58691,7 +59767,7 @@
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Вы можете получать Уведомления о темах и VIP, даже если другие уведомления Почты выключены."
+            "value": "Вы можете получать уведомления о новых письмах от VIP и в темах писем, даже если все прочие уведомления Почты выключены."
           }
         },
         "it": {
