@@ -10,6 +10,7 @@ import SwiftUI
 struct NotificationsView: View {
     // Variables
     @AppStorage("NotificationPreviewOption") private var previewSelection: String = "SHOW_PREVIEW_OPTION_UNLOCKED"
+    @AppStorage("AllowNotificationsScreenSharing") private var allowNotifications = false
     @State private var notificationStyle: NotificationStyle = .stack
     @State private var amberAlertsEnabled = true
     @State private var publicSafetyAlertsEnabled = true
@@ -115,7 +116,7 @@ struct NotificationsView: View {
             Section {
                 CustomNavigationLink(title: "NOTIFICATION_DELIVERY_SCHEDULED".localize(table: table), status: "OFF".localize(table: table), destination: ScheduledSummaryView())
                 CustomNavigationLink(title: "SHOW_PREVIEWS".localize(table: table), status: previewSelection.localize(table: table), destination: SelectOptionList(title: "SHOW_PREVIEWS", options: ["SHOW_PREVIEW_OPTION_ALWAYS", "SHOW_PREVIEW_OPTION_UNLOCKED", "SHOW_PREVIEW_OPTION_NEVER"], selectedBinding: $previewSelection, selected: "SHOW_PREVIEW_OPTION_UNLOCKED", table: table))
-                CustomNavigationLink(title: "SCREEN_SHARING".localize(table: table), status: "SCREEN_SHARING_NOTIFICATIONS_OFF".localize(table: table), destination: EmptyView())
+                CustomNavigationLink(title: "SCREEN_SHARING".localize(table: table), status: (allowNotifications ? "SCREEN_SHARING_NOTIFICATIONS_ON" : "SCREEN_SHARING_NOTIFICATIONS_OFF").localize(table: table), destination: ScreenSharingView(allowNotifications: $allowNotifications))
                 CustomNavigationLink(title: "SUMMARIZE_NOTIFICATIONS".localize(table: table), status: "OFF".localize(table: table), destination: EmptyView())
             }
             
