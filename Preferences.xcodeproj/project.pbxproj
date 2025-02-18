@@ -130,6 +130,8 @@
 		834A15082CD85B10004A0025 /* MobileCalSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834A15072CD85B10004A0025 /* MobileCalSettings.xcstrings */; };
 		834B5A222C4B3C83003A6940 /* CarPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B5A212C4B3C83003A6940 /* CarPlayView.swift */; };
 		834B5A242C4C1836003A6940 /* AirDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B5A232C4C1836003A6940 /* AirDropView.swift */; };
+		834CA6E82D62AB47006792AE /* SummarizeNotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834CA6E72D62AB47006792AE /* SummarizeNotificationsView.swift */; };
+		834CA6EA2D62AE93006792AE /* UserNotificationsKit.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834CA6E92D62AE93006792AE /* UserNotificationsKit.xcstrings */; };
 		834CAE482D1DE94000F2E069 /* AirDropSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834CAE472D1DE94000F2E069 /* AirDropSettings.xcstrings */; };
 		83558CE12D416CB200D23945 /* AnalyticsDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83558CE02D416CB200D23945 /* AnalyticsDataView.swift */; };
 		8355C8002CE523970067D675 /* GameCenter.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8355C7FF2CE523970067D675 /* GameCenter.xcstrings */; };
@@ -317,6 +319,8 @@
 		83AD8C5F2CCAD00200A054B5 /* VoiceOverServices.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83AD8C5E2CCAD00200A054B5 /* VoiceOverServices.xcstrings */; };
 		83AFA1022BC87FC8008D4E57 /* HotspotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AFA1012BC87FC8008D4E57 /* HotspotView.swift */; };
 		83B00FF32C878F6400B18A94 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B00FF22C878F6400B18A94 /* MessagesView.swift */; };
+		83B12C122D65242800DF6EF6 /* AnnounceNotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B12C112D65242800DF6EF6 /* AnnounceNotificationsView.swift */; };
+		83B12C142D6525A100DF6EF6 /* SiriSuggestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B12C132D6525A100DF6EF6 /* SiriSuggestionsView.swift */; };
 		83B1CFB72C1D56C900C2263C /* BiometricPasscodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B1CFB62C1D56C900C2263C /* BiometricPasscodeView.swift */; };
 		83B5504E2C165A85002DA622 /* BatteryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B5504D2C165A85002DA622 /* BatteryView.swift */; };
 		83B550512C166AD2002DA622 /* BatteryHealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B550502C166AD2002DA622 /* BatteryHealthView.swift */; };
@@ -610,6 +614,8 @@
 		834A15072CD85B10004A0025 /* MobileCalSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = MobileCalSettings.xcstrings; sourceTree = "<group>"; };
 		834B5A212C4B3C83003A6940 /* CarPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlayView.swift; sourceTree = "<group>"; };
 		834B5A232C4C1836003A6940 /* AirDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirDropView.swift; sourceTree = "<group>"; };
+		834CA6E72D62AB47006792AE /* SummarizeNotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummarizeNotificationsView.swift; sourceTree = "<group>"; };
+		834CA6E92D62AE93006792AE /* UserNotificationsKit.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = UserNotificationsKit.xcstrings; sourceTree = "<group>"; };
 		834CAE472D1DE94000F2E069 /* AirDropSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AirDropSettings.xcstrings; sourceTree = "<group>"; };
 		83558CE02D416CB200D23945 /* AnalyticsDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsDataView.swift; sourceTree = "<group>"; };
 		8355C7FF2CE523970067D675 /* GameCenter.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = GameCenter.xcstrings; sourceTree = "<group>"; };
@@ -797,6 +803,8 @@
 		83AD8C5E2CCAD00200A054B5 /* VoiceOverServices.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = VoiceOverServices.xcstrings; sourceTree = "<group>"; };
 		83AFA1012BC87FC8008D4E57 /* HotspotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotspotView.swift; sourceTree = "<group>"; };
 		83B00FF22C878F6400B18A94 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
+		83B12C112D65242800DF6EF6 /* AnnounceNotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnounceNotificationsView.swift; sourceTree = "<group>"; };
+		83B12C132D6525A100DF6EF6 /* SiriSuggestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriSuggestionsView.swift; sourceTree = "<group>"; };
 		83B1CFB62C1D56C900C2263C /* BiometricPasscodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricPasscodeView.swift; sourceTree = "<group>"; };
 		83B5504D2C165A85002DA622 /* BatteryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryView.swift; sourceTree = "<group>"; };
 		83B550502C166AD2002DA622 /* BatteryHealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryHealthView.swift; sourceTree = "<group>"; };
@@ -1828,6 +1836,7 @@
 				83F77D682CD3E51F0026B1AC /* StoreSettings.xcstrings */,
 				837BCF342CD2EAC8009B1E33 /* TouchID.xcstrings */,
 				834A15032CD85705004A0025 /* TranslationUI.xcstrings */,
+				834CA6E92D62AE93006792AE /* UserNotificationsKit.xcstrings */,
 				83AB1D602D5E7656005F0B63 /* UserNotificationsUIKit.xcstrings */,
 				837936152CDBE68B0020557B /* VideoSubscriberAccount.xcstrings */,
 				83AD8C5E2CCAD00200A054B5 /* VoiceOverServices.xcstrings */,
@@ -1843,6 +1852,9 @@
 			children = (
 				83AB1D5E2D5E687B005F0B63 /* ScheduledSummaryView.swift */,
 				838AF99B2D629138008FFA8B /* ScreenSharingView.swift */,
+				834CA6E72D62AB47006792AE /* SummarizeNotificationsView.swift */,
+				83B12C112D65242800DF6EF6 /* AnnounceNotificationsView.swift */,
+				83B12C132D6525A100DF6EF6 /* SiriSuggestionsView.swift */,
 			);
 			path = Notifications;
 			sourceTree = "<group>";
@@ -2270,6 +2282,7 @@
 				8355C8222CE53B710067D675 /* ImproveMaps.xcstrings in Resources */,
 				8374886F2D0A6EB400865CA8 /* AssistantSettings-ExternalAIModel.xcstrings in Resources */,
 				83FF692F2CC6C9CF00D77FBB /* LocalizedStrings-D94.xcstrings in Resources */,
+				834CA6EA2D62AE93006792AE /* UserNotificationsKit.xcstrings in Resources */,
 				83AB1D612D5E7656005F0B63 /* UserNotificationsUIKit.xcstrings in Resources */,
 				832877E12CAD9A2C00013B0B /* BatteryUI.xcstrings in Resources */,
 				830976CF2CDD19FF0087F1A1 /* FollowUp.xcstrings in Resources */,
@@ -2635,6 +2648,7 @@
 				835683922B753FDD000FB136 /* SettingsLink.swift in Sources */,
 				83B550512C166AD2002DA622 /* BatteryHealthView.swift in Sources */,
 				83CB06972CA6283A00D7533A /* FormatsView.swift in Sources */,
+				83B12C122D65242800DF6EF6 /* AnnounceNotificationsView.swift in Sources */,
 				835683972B754EE4000FB136 /* VersionView.swift in Sources */,
 				83F516C42C21EB550004E87A /* AppsView.swift in Sources */,
 				83F78A2B2B8EA38300025062 /* PhrasesView.swift in Sources */,
@@ -2659,6 +2673,7 @@
 				83F516C22C21EB1C0004E87A /* WalletView.swift in Sources */,
 				8340A3C52CB0CEDC005ED66A /* MonospacedLabel.swift in Sources */,
 				83D31F792B8D49820057CFDB /* ReplacementView.swift in Sources */,
+				83B12C142D6525A100DF6EF6 /* SiriSuggestionsView.swift in Sources */,
 				83D308692B8AD145002A9B7F /* SafariCameraView.swift in Sources */,
 				83815CF12B768F0500F53A0F /* HealthView.swift in Sources */,
 				83815CE72B768DF100F53A0F /* SafariView.swift in Sources */,
@@ -2707,6 +2722,7 @@
 				83D3085C2B8AC2FA002A9B7F /* SafariAdvancedView.swift in Sources */,
 				838273A12B7F28D6000F4228 /* MoviesView.swift in Sources */,
 				83EC895F2CA0F8B500389F3B /* CameraControlView.swift in Sources */,
+				834CA6E82D62AB47006792AE /* SummarizeNotificationsView.swift in Sources */,
 				833C124F2C99B40100CAEB36 /* VoiceOverView.swift in Sources */,
 				832F517F2BBF4DC900335E5E /* NetworkView.swift in Sources */,
 				83F78A172B8E888600025062 /* KeyboardCommandsView.swift in Sources */,
