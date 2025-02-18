@@ -14,6 +14,7 @@ let tabletOnly = ["Apple Pencil", "Multitasking & Gestures"]
 struct ContentView: View {
     // Variables
     @EnvironmentObject var stateManager: StateManager
+    @State private var searchFocused = false
     @State private var searchText = String()
     @State private var showingSignInSheet = false
     @State private var isOnLandscapeOrientation: Bool = UIDevice.current.orientation.isLandscape
@@ -113,7 +114,13 @@ struct ContentView: View {
                                     .interactiveDismissDisabled()
                             }
                         }
-                        .searchable(text: $searchText, placement: .navigationBarDrawer)
+                        .searchable(text: $searchText, isPresented: $searchFocused, placement: .navigationBarDrawer)
+                        .overlay {
+                            if searchFocused {
+                                Color(UIColor.systemGroupedBackground)
+                                    .ignoresSafeArea(edges: .bottom)
+                            }
+                        }
                         .onReceive(NotificationCenter.default.publisher(for: UIDevice.orientationDidChangeNotification)) { _ in
                             if UIDevice.current.orientation.rawValue <= 4 {
                                 // Changes frame sizes when changing orientation on iPadOS
@@ -201,7 +208,13 @@ struct ContentView: View {
                             }
                         }
                         .navigationTitle("Settings")
-                        .searchable(text: $searchText)
+                        .searchable(text: $searchText, isPresented: $searchFocused)
+                        .overlay {
+                            if searchFocused {
+                                Color(UIColor.systemGroupedBackground)
+                                    .ignoresSafeArea(edges: .bottom)
+                            }
+                        }
                     }
                 }
                 .frame(maxWidth: UIDevice.iPad ? (isOnLandscapeOrientation ? 415 : 320) : nil)
