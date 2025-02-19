@@ -117,8 +117,10 @@ struct ContentView: View {
                         .searchable(text: $searchText, isPresented: $searchFocused, placement: .navigationBarDrawer)
                         .overlay {
                             if searchFocused {
-                                Color(UIColor.systemGroupedBackground)
-                                    .ignoresSafeArea(edges: .bottom)
+                                List {
+                                    Section("Suggestions") {}
+                                }
+                                .listStyle(.inset)
                             }
                         }
                         .onReceive(NotificationCenter.default.publisher(for: UIDevice.orientationDidChangeNotification)) { _ in
@@ -211,8 +213,10 @@ struct ContentView: View {
                         .searchable(text: $searchText, isPresented: $searchFocused)
                         .overlay {
                             if searchFocused {
-                                Color(UIColor.systemGroupedBackground)
-                                    .ignoresSafeArea(edges: .bottom)
+                                List {
+                                    Section("Suggestions") {}
+                                }
+                                .listStyle(.inset)
                             }
                         }
                     }

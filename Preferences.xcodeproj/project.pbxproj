@@ -1623,9 +1623,9 @@
 				83F516C72C21ECBD0004E87A /* Services */,
 				833C6EAA2C2087BB00A8D91C /* Apps */,
 				83F626D22B827EEC00ED343F /* Developer */,
-				830976D22CDD1B2F0087F1A1 /* FollowUpView.swift */,
 				83F516C32C21EB550004E87A /* AppsView.swift */,
 				83815CF82B768F5C00F53A0F /* DeveloperView.swift */,
+				830976D22CDD1B2F0087F1A1 /* FollowUpView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
