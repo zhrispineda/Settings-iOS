@@ -317,6 +317,9 @@
 		83AD8C5B2CCAC61700A054B5 /* Captioning.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83AD8C5A2CCAC61700A054B5 /* Captioning.xcstrings */; };
 		83AD8C5D2CCAC85500A054B5 /* ProfileNames.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83AD8C5C2CCAC85500A054B5 /* ProfileNames.xcstrings */; };
 		83AD8C5F2CCAD00200A054B5 /* VoiceOverServices.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83AD8C5E2CCAD00200A054B5 /* VoiceOverServices.xcstrings */; };
+		83AE01D92D655F6500724A34 /* SettingsLinkSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AE01D82D655F6500724A34 /* SettingsLinkSection.swift */; };
+		83AE01DB2D65628700724A34 /* SettingsLabelSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AE01DA2D65628700724A34 /* SettingsLabelSection.swift */; };
+		83AE01DD2D65637C00724A34 /* AppleAccountSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AE01DC2D65637C00724A34 /* AppleAccountSection.swift */; };
 		83AFA1022BC87FC8008D4E57 /* HotspotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AFA1012BC87FC8008D4E57 /* HotspotView.swift */; };
 		83B00FF32C878F6400B18A94 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B00FF22C878F6400B18A94 /* MessagesView.swift */; };
 		83B12C122D65242800DF6EF6 /* AnnounceNotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B12C112D65242800DF6EF6 /* AnnounceNotificationsView.swift */; };
@@ -801,6 +804,9 @@
 		83AD8C5A2CCAC61700A054B5 /* Captioning.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Captioning.xcstrings; sourceTree = "<group>"; };
 		83AD8C5C2CCAC85500A054B5 /* ProfileNames.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = ProfileNames.xcstrings; sourceTree = "<group>"; };
 		83AD8C5E2CCAD00200A054B5 /* VoiceOverServices.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = VoiceOverServices.xcstrings; sourceTree = "<group>"; };
+		83AE01D82D655F6500724A34 /* SettingsLinkSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLinkSection.swift; sourceTree = "<group>"; };
+		83AE01DA2D65628700724A34 /* SettingsLabelSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLabelSection.swift; sourceTree = "<group>"; };
+		83AE01DC2D65637C00724A34 /* AppleAccountSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAccountSection.swift; sourceTree = "<group>"; };
 		83AFA1012BC87FC8008D4E57 /* HotspotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotspotView.swift; sourceTree = "<group>"; };
 		83B00FF22C878F6400B18A94 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 		83B12C112D65242800DF6EF6 /* AnnounceNotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnounceNotificationsView.swift; sourceTree = "<group>"; };
@@ -1615,6 +1621,7 @@
 		838C23212B7468870053D4C5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				83AE01D72D655F5800724A34 /* Layout */,
 				837D1E252B96BF4500EDA7ED /* Apple Account */,
 				832FD8402BC230D500E99DEB /* Radios */,
 				83F516C52C21EC570004E87A /* Main */,
@@ -1623,9 +1630,9 @@
 				83F516C72C21ECBD0004E87A /* Services */,
 				833C6EAA2C2087BB00A8D91C /* Apps */,
 				83F626D22B827EEC00ED343F /* Developer */,
+				830976D22CDD1B2F0087F1A1 /* FollowUpView.swift */,
 				83F516C32C21EB550004E87A /* AppsView.swift */,
 				83815CF82B768F5C00F53A0F /* DeveloperView.swift */,
-				830976D22CDD1B2F0087F1A1 /* FollowUpView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1724,6 +1731,16 @@
 				83ACE71E2CD5BA200061528C /* Localizable-DataTypes.xcstrings */,
 			);
 			path = HealthKit;
+			sourceTree = "<group>";
+		};
+		83AE01D72D655F5800724A34 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				83AE01DC2D65637C00724A34 /* AppleAccountSection.swift */,
+				83AE01DA2D65628700724A34 /* SettingsLabelSection.swift */,
+				83AE01D82D655F6500724A34 /* SettingsLinkSection.swift */,
+			);
+			path = Layout;
 			sourceTree = "<group>";
 		};
 		83B5504F2C166AC5002DA622 /* Battery */ = {
@@ -2547,11 +2564,13 @@
 				83F455B32C3C8CA5009DB157 /* LocationServicesView.swift in Sources */,
 				83FCEFEA2C07F0DE008BE814 /* NetworkDetailView.swift in Sources */,
 				83D31F732B8D458E0057CFDB /* SpeakSelectionView.swift in Sources */,
+				83AE01D92D655F6500724A34 /* SettingsLinkSection.swift in Sources */,
 				83815CF72B768F4800F53A0F /* GameCenterView.swift in Sources */,
 				83F516BA2C21D88B0004E87A /* StandByView.swift in Sources */,
 				83D31F952B8E64550057CFDB /* MovementToleranceView.swift in Sources */,
 				83815CF52B768F3600F53A0F /* PhotosView.swift in Sources */,
 				839092BB2C0D213200924849 /* OtherNetworkView.swift in Sources */,
+				83AE01DB2D65628700724A34 /* SettingsLabelSection.swift in Sources */,
 				83F78A2D2B8EA3C900025062 /* AddFavoritePhraseView.swift in Sources */,
 				837B63002BD5FE8E0045B95C /* ControlCenterView.swift in Sources */,
 				83D3085F2B8AC3D3002A9B7F /* FeatureFlagsView.swift in Sources */,
@@ -2690,6 +2709,7 @@
 				83F78A1F2B8E92AD00025062 /* StickyKeysView.swift in Sources */,
 				832EF3A22B8198570066A1BF /* AddTextReplacementView.swift in Sources */,
 				83A5DA532C234DCB0012ACB3 /* LanguageView.swift in Sources */,
+				83AE01DD2D65637C00724A34 /* AppleAccountSection.swift in Sources */,
 				833A44EF2C6E75BF003076F5 /* SystemFontsView.swift in Sources */,
 				832F08752CAB13460075570C /* PreserveSettingsView.swift in Sources */,
 				835683992B7551D3000FB136 /* CertificateTrustSettingsView.swift in Sources */,
