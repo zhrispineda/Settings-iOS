@@ -89,19 +89,19 @@ public extension UIDevice {
     
     /// Returns a Bool on whether the device is capable of Cinematic Mode.
     static let CinematicModeCapability: Bool = {
-        let capableDevices: Set<String> = ["iPhone14,2", "iPhone14,3", "iPhone14,4", "iPhone14,5", "iPhone14,7", "iPhone14,8", "iPhone15,2", "iPhone15,3", "iPhone15,4", "iPhone15,5", "iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4"]
+        let capableDevices: Set<String> = ["iPhone14,2", "iPhone14,3", "iPhone14,4", "iPhone14,5", "iPhone14,7", "iPhone14,8", "iPhone15,2", "iPhone15,3", "iPhone15,4", "iPhone15,5", "iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4", "iPhone17,5"]
         return capableDevices.contains(identifier)
     }()
     
     /// Returns a Bool on whether the device is capable of 4K Cinematic Mode.
     static let HigherResolutionCinematicModeCapability: Bool = {
-        let capableDevices: Set<String> = ["iPhone14,7", "iPhone14,8", "iPhone15,2", "iPhone15,3", "iPhone15,4", "iPhone15,5", "iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4"]
+        let capableDevices: Set<String> = ["iPhone14,7", "iPhone14,8", "iPhone15,2", "iPhone15,3", "iPhone15,4", "iPhone15,5", "iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4", "iPhone17,5"]
         return capableDevices.contains(identifier)
     }()
     
     /// Returns a Bool on whether the device is capable of advanced charge cycles information.
     static let DeviceSupportsBatteryInformation: Bool = {
-        let capableDevices: Set<String> = ["iPhone15,4", "iPhone15,5", "iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4", "iPad14,8", "iPad14,9", "iPad14,10", "iPad14,11", "iPad16,3", "iPad16,5", "iPad16,6"]
+        let capableDevices: Set<String> = ["iPhone15,4", "iPhone15,5", "iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4", "iPhone17,5", "iPad14,8", "iPad14,9", "iPad14,10", "iPad14,11", "iPad16,3", "iPad16,5", "iPad16,6"]
         return capableDevices.contains(identifier)
     }()
     
@@ -128,7 +128,7 @@ public extension UIDevice {
     
     /// Returns a Bool on whether the device is capable of Apple Intelligence.
     static let IntelligenceCapability: Bool = {
-        let capableDevices: Set<String> = ["iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4", "iPad13,4", "iPad13,5", "iPad13,6", "iPad13,7", "iPad13,8", "iPad13,9", "iPad13,10", "iPad13,11", "iPad13,16", "iPad13,17", "iPad14,3", "iPad14,4", "iPad14,5", "iPad14,6", "iPad14,8", "iPad14,9", "iPad14,10", "iPad14,11", "iPad16,1", "iPad16,2", "iPad16,3", "iPad16,4", "iPad16,5", "iPad16,6"]
+        let capableDevices: Set<String> = ["iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4", "iPhone17,5", "iPad13,4", "iPad13,5", "iPad13,6", "iPad13,7", "iPad13,8", "iPad13,9", "iPad13,10", "iPad13,11", "iPad13,16", "iPad13,17", "iPad14,3", "iPad14,4", "iPad14,5", "iPad14,6", "iPad14,8", "iPad14,9", "iPad14,10", "iPad14,11", "iPad16,1", "iPad16,2", "iPad16,3", "iPad16,4", "iPad16,5", "iPad16,6"]
         return capableDevices.contains(identifier)
     }()
     
@@ -161,9 +161,9 @@ public extension UIDevice {
         return capableDevices.contains(identifier)
     }()
     
-    /// Returns a Bool on whether the device has a narrow notch. (iPhone 13, 13 mini, 13 Pro, 13 Pro Max, 14, 14 Plus)
+    /// Returns a Bool on whether the device has a narrow notch. (iPhone 13, 13 mini, 13 Pro, 13 Pro Max, 14, 14 Plus, 16e)
     static let NarrowNotch = {
-        let capableDevices: Set<String> = ["iPhone14,2", "iPhone14,3", "iPhone14,4", "iPhone14,5", "iPhone14,7", "iPhone14,8"]
+        let capableDevices: Set<String> = ["iPhone14,2", "iPhone14,3", "iPhone14,4", "iPhone14,5", "iPhone14,7", "iPhone14,8", "iPhone17,5"]
         return capableDevices.contains(identifier)
     }()
     
@@ -175,7 +175,7 @@ public extension UIDevice {
         
         // Fallback
         let capableDevices: Set<String> = ["iPhone12,8", "iPhone14,6", "iPad7,11", "iPad7,12", "iPad11,1", "iPad11,2", "iPad11,3", "iPad11,4", "iPad11,6", "iPad11,7", "iPad12,1", "iPad12,2", "iPad13,1", "iPad13,2", "iPad13,16", "iPad13,17", "iPad14,8", "iPad14,9", "iPad14,10", "iPad14,11"]
-        return capableDevices.contains(identifier)
+        return !capableDevices.contains(identifier)
     }()
     
     /// Returns a Bool on whether the device is capable of Action Mode.
