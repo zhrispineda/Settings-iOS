@@ -139,7 +139,7 @@ let multicolorIcons = ["app.grid.3x3", "siri"]
 @MainActor let simulatorMainSettings: [SettingsItem] = [
     SettingsItem(type: .general, title: "General", icon: "gear", color: .gray, destination: AnyView(GeneralView())),
     SettingsItem(type: .accessibility, title: "Accessibility", icon: "accessibility", color: .blue, destination: AnyView(AccessibilityView())),
-    SettingsItem(type: .siri, title: "Apple Intelligence & Siri", icon: "appleIntelligence", capability: .appleIntelligence, color: Color(UIColor.systemBackground), destination: AnyView(SiriView())),
+    SettingsItem(type: .siri, title: "Apple Intelligence & Siri", icon: "appleIntelligenceSimulator", capability: .appleIntelligence, color: Color(UIColor.systemBackground), destination: AnyView(SiriView())),
     SettingsItem(type: .actionButton, title: "Action Button", icon: "iphone.action.button.arrow.right", capability: .actionButton, color: .blue, destination: AnyView(ActionButtonView())),
     SettingsItem(type: .camera, title: "Camera", icon: "camera.fill", color: .gray, destination: AnyView(CameraView())),
     SettingsItem(type: .homeScreenAppLibrary, title: "Home Screen & App Library", icon: "apps.iphone", color: .blue, destination: AnyView(HomeScreenAppLibraryView())),
@@ -170,8 +170,8 @@ let multicolorIcons = ["app.grid.3x3", "siri"]
 
 // MARK: Simulator Service Settings
 @MainActor let simulatorServiceSettings: [SettingsItem] = [
-    SettingsItem(type: .gameCenter, title: "Game Center", icon: "Placeholder", color: .black, destination: AnyView(GameCenterView())),
-    SettingsItem(type: .icloud, title: "iCloud", icon: "iCloud", destination: AnyView(EmptyView())),
+    SettingsItem(type: .gameCenter, title: "Game Center", icon: "Placeholder", color: .white, destination: AnyView(GameCenterView())),
+    SettingsItem(type: .icloud, title: "iCloud", icon: "iCloudSimulator", destination: AnyView(EmptyView())),
     SettingsItem(type: .wallet, title: "Wallet & Apple Pay", icon: "appleWallet", destination: AnyView(WalletView()))
 ]
 
