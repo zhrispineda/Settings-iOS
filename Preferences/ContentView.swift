@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import TipKit
 
 // Variables
 let phoneOnly = ["Action Button", "Emergency SOS", "Health", "Personal Hotspot", "StandBy"]
@@ -13,6 +14,7 @@ let tabletOnly = ["Apple Pencil", "Multitasking & Gestures"]
 
 struct ContentView: View {
     // Variables
+    @AppStorage("SiriEnabled") private var siriEnabled = false
     @EnvironmentObject var stateManager: StateManager
     @State private var searchFocused = false
     @State private var searchText = String()
@@ -25,6 +27,10 @@ struct ContentView: View {
     @AppStorage("wifi") private var wifiEnabled = true
     @AppStorage("bluetooth") private var bluetoothEnabled = true
     @AppStorage("vpn") private var vpnEnabled = false
+    
+    init() {
+        try? Tips.configure()
+    }
     
     var body: some View {
         ZStack {
@@ -60,6 +66,29 @@ struct ContentView: View {
                                         SettingsLabel(id: "FOLLOWUP_TITLE".localize(table: "FollowUp"), badgeCount: 1)
                                             .foregroundStyle(Color(UIColor.label))
                                     }
+                                }
+                            }
+                            
+                            if siriEnabled && UIDevice.IntelligenceCapability {
+                                // MARK: TipKit Section
+                                Section {
+                                    TipView(AppleIntelligenceTip())
+                                        .padding(-15)
+                                        .tipBackground(Color.background)
+                                        .task {
+                                            do {
+                                                try Tips.configure([
+                                                    .displayFrequency(.immediate),
+                                                    .datastoreLocation(.applicationDefault)
+                                                ])
+                                            }
+                                            catch {
+                                                print("Error initializing TipKit \(error.localizedDescription)")
+                                            }
+                                        }
+                                    Button("GM_ADM_CFU_ACTION_TEXT".localize(table: "CloudSubscriptionFeatures")) {}
+                                        .bold()
+                                        .padding(.leading, 55)
                                 }
                             }
                             
@@ -167,6 +196,29 @@ struct ContentView: View {
                                 }
                             }
                             
+                            if siriEnabled && UIDevice.IntelligenceCapability {
+                                // MARK: TipKit Section
+                                Section {
+                                    TipView(AppleIntelligenceTip())
+                                        .padding(-15)
+                                        .tipBackground(Color.background)
+                                        .task {
+                                            do {
+                                                try Tips.configure([
+                                                    .displayFrequency(.immediate),
+                                                    .datastoreLocation(.applicationDefault)
+                                                ])
+                                            }
+                                            catch {
+                                                print("Error initializing TipKit \(error.localizedDescription)")
+                                            }
+                                        }
+                                    Button("GM_ADM_CFU_ACTION_TEXT".localize(table: "CloudSubscriptionFeatures")) {}
+                                        .bold()
+                                        .padding(.leading, 55)
+                                }
+                            }
+                            
                             if !UIDevice.IsSimulator {
                                 // MARK: Radio Settings
                                 Section {
@@ -229,6 +281,22 @@ struct ContentView: View {
                     .id(id)
                 }
             }
+        }
+    }
+    
+    // Discover Apple Intelligence Tip Struct
+    struct AppleIntelligenceTip: Tip {
+        var title: Text {
+            Text("GM_ADM_CFU_TITLE", tableName: "CloudSubscriptionFeatures")
+        }
+        
+        var message: Text? {
+            Text("GM_ADM_CFU_DESCRIPTION", tableName: "CloudSubscriptionFeatures")
+        }
+        
+        var image: Image? {
+            Image("GM_ADM_CFU_IMAGE")
+                
         }
     }
 }

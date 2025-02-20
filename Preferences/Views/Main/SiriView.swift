@@ -13,7 +13,7 @@ struct SiriView: View {
     @Environment(\.colorScheme) private var colorScheme
     let apps = ["Calendar", "Contacts", "Files", "Health", "Maps", "Messages", "News", "Photos", "Reminders", "Safari", "Settings", "Wallet", "Watch"]
     
-    @State private var siriEnabled = false
+    @AppStorage("SiriEnabled") private var siriEnabled = false
     @State private var showingDisableSiriAlert = false
     @State private var showingDisableSiriPopup = false
     @State private var showingEnableSiriAlert = false
