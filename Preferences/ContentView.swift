@@ -57,18 +57,6 @@ struct ContentView: View {
                                 AppleAccountSection()
                             }
                             
-                            if !followUpDismissed && !UIDevice.IsSimulator {
-                                Section {
-                                    Button {
-                                        id = UUID() // Reset destination
-                                        stateManager.selection = .followUp
-                                    } label: {
-                                        SettingsLabel(id: "FOLLOWUP_TITLE".localize(table: "FollowUp"), badgeCount: 1)
-                                            .foregroundStyle(Color(UIColor.label))
-                                    }
-                                }
-                            }
-                            
                             if siriEnabled && UIDevice.IntelligenceCapability {
                                 // MARK: TipKit Section
                                 Section {
@@ -89,6 +77,18 @@ struct ContentView: View {
                                     Button("GM_ADM_CFU_ACTION_TEXT".localize(table: "CloudSubscriptionFeatures")) {}
                                         .bold()
                                         .padding(.leading, 55)
+                                }
+                            }
+                            
+                            if !followUpDismissed && !UIDevice.IsSimulator {
+                                Section {
+                                    Button {
+                                        id = UUID() // Reset destination
+                                        stateManager.selection = .followUp
+                                    } label: {
+                                        SettingsLabel(id: "FOLLOWUP_TITLE".localize(table: "FollowUp"), badgeCount: 1)
+                                            .foregroundStyle(Color(UIColor.label))
+                                    }
                                 }
                             }
                             
@@ -188,14 +188,6 @@ struct ContentView: View {
                                 }
                             }
                             
-                            if !followUpDismissed && !UIDevice.IsSimulator {
-                                Section {
-                                    SettingsLink(icon: "None", id: "FOLLOWUP_TITLE".localize(table: "FollowUp"), badgeCount: 1) {
-                                        FollowUpView()
-                                    }
-                                }
-                            }
-                            
                             if siriEnabled && UIDevice.IntelligenceCapability {
                                 // MARK: TipKit Section
                                 Section {
@@ -216,6 +208,14 @@ struct ContentView: View {
                                     Button("GM_ADM_CFU_ACTION_TEXT".localize(table: "CloudSubscriptionFeatures")) {}
                                         .bold()
                                         .padding(.leading, 55)
+                                }
+                            }
+                            
+                            if !followUpDismissed && !UIDevice.IsSimulator {
+                                Section {
+                                    SettingsLink(icon: "None", id: "FOLLOWUP_TITLE".localize(table: "FollowUp"), badgeCount: 1) {
+                                        FollowUpView()
+                                    }
                                 }
                             }
                             
