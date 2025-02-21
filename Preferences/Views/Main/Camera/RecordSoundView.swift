@@ -17,7 +17,7 @@ struct RecordSoundView: View {
     let cineTable = "CameraSettings-CinematicAudio"
     
     init() {
-        if UIDevice.AdvancedPhotographicStylesCapability {
+        if UIDevice.AdvancedPhotographicStylesCapability || UIDevice.identifier == "iPhone17,5" {
             options.insert("CAM_AUDIO_CONFIGURATION_CINEMATIC", at: 0)
         }
     }
@@ -46,7 +46,7 @@ struct RecordSoundView: View {
                 }
             }
             
-            if UIDevice.AdvancedPhotographicStylesCapability && selected != "CAM_AUDIO_CONFIGURATION_MONO" {
+            if UIDevice.identifier == "iPhone17,5" || UIDevice.AdvancedPhotographicStylesCapability && selected != "CAM_AUDIO_CONFIGURATION_MONO" {
                 Section {
                     Toggle("CAM_AUDIO_WIND_REMOVAL_TITLE".localize(table: cineTable), isOn: $windNoiseReduction)
                 } footer: {

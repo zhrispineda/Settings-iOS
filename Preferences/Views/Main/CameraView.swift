@@ -45,7 +45,7 @@ struct CameraView: View {
             selectedSlomoSetting = "CAM_RECORD_SLOMO_1080p_120"
         }
         
-        if selectedSoundSetting.isEmpty && UIDevice.AdvancedPhotographicStylesCapability {
+        if selectedSoundSetting.isEmpty && UIDevice.AdvancedPhotographicStylesCapability || UIDevice.identifier == "iPhone17,5" {
             selectedSoundSetting = "CAM_AUDIO_CONFIGURATION_CINEMATIC"
         } else if selectedSoundSetting.isEmpty {
             selectedSoundSetting = "CAM_AUDIO_CONFIGURATION_STEREO"
@@ -160,7 +160,8 @@ struct CameraView: View {
                 }
             }
             
-            if UIDevice.iPhone {
+            // MARK: Prioritize Faster Shooting
+            if UIDevice.iPhone && !UIDevice.IsSimulator {
                 Section {
                     Toggle("CAM_CAPTURE_DYNAMIC_SHUTTER_SWITCH".localize(table: table), isOn: $prioritizeFasterShootingEnabled)
                 } footer: {
@@ -173,7 +174,8 @@ struct CameraView: View {
                 Section {
                     Toggle("IDC_SWITCH".localize(table: table), isOn: $lensCorrectionEnabled)
                 } footer: {
-                    Text("IDC_FOOTER", tableName: table)
+                    Text(UIDevice.LimitedLensCorrectionCapability ? "IDC_FOOTER_FRONT_ONLY" : "IDC_FOOTER", tableName: table)
+                    
                 }
             }
             
@@ -186,9 +188,11 @@ struct CameraView: View {
                 }
             }
             
-            // MARK: Privacy Footer
-            Section {} footer: {
-                Text(.init("[\("BUTTON_TITLE".localize(table: privacyTable))](pref://)"))
+            // MARK: Camera & ARKit Privacy Footer
+            if UIDevice.LiDARCapability {
+                Section {} footer: {
+                    Text(.init("[\("BUTTON_TITLE".localize(table: privacyTable))](pref://)"))
+                }
             }
         }
         .onOpenURL { url in
