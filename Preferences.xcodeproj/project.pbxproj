@@ -327,6 +327,8 @@
 		83B12C122D65242800DF6EF6 /* AnnounceNotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B12C112D65242800DF6EF6 /* AnnounceNotificationsView.swift */; };
 		83B12C142D6525A100DF6EF6 /* SiriSuggestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B12C132D6525A100DF6EF6 /* SiriSuggestionsView.swift */; };
 		83B1CFB72C1D56C900C2263C /* BiometricPasscodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B1CFB62C1D56C900C2263C /* BiometricPasscodeView.swift */; };
+		83B1D5342D6BC3C800C26010 /* DefaultAppsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B1D5332D6BC3C800C26010 /* DefaultAppsView.swift */; };
+		83B1D5362D6BC66700C26010 /* DefaultAppsSettingsUI.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83B1D5352D6BC66700C26010 /* DefaultAppsSettingsUI.xcstrings */; };
 		83B5504E2C165A85002DA622 /* BatteryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B5504D2C165A85002DA622 /* BatteryView.swift */; };
 		83B550512C166AD2002DA622 /* BatteryHealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B550502C166AD2002DA622 /* BatteryHealthView.swift */; };
 		83B550532C169BE3002DA622 /* ChargingOptimizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B550522C169BE3002DA622 /* ChargingOptimizationView.swift */; };
@@ -815,6 +817,8 @@
 		83B12C112D65242800DF6EF6 /* AnnounceNotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnounceNotificationsView.swift; sourceTree = "<group>"; };
 		83B12C132D6525A100DF6EF6 /* SiriSuggestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriSuggestionsView.swift; sourceTree = "<group>"; };
 		83B1CFB62C1D56C900C2263C /* BiometricPasscodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricPasscodeView.swift; sourceTree = "<group>"; };
+		83B1D5332D6BC3C800C26010 /* DefaultAppsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAppsView.swift; sourceTree = "<group>"; };
+		83B1D5352D6BC66700C26010 /* DefaultAppsSettingsUI.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = DefaultAppsSettingsUI.xcstrings; sourceTree = "<group>"; };
 		83B5504D2C165A85002DA622 /* BatteryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryView.swift; sourceTree = "<group>"; };
 		83B550502C166AD2002DA622 /* BatteryHealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryHealthView.swift; sourceTree = "<group>"; };
 		83B550522C169BE3002DA622 /* ChargingOptimizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingOptimizationView.swift; sourceTree = "<group>"; };
@@ -1291,6 +1295,7 @@
 				83D3085A2B8AC28B002A9B7F /* Safari */,
 				83898FD22B8AA2240020C7BB /* Shortcuts */,
 				83DF95722B841EFB00AEEB63 /* Translate */,
+				83B1D5332D6BC3C800C26010 /* DefaultAppsView.swift */,
 				8397F9E82CDF20E9004DFE2F /* BooksView.swift */,
 				836167D72C25FA3A00458CD8 /* CalendarView.swift */,
 				83D3FB222C8102B200268E54 /* ContactsView.swift */,
@@ -1802,6 +1807,7 @@
 				833101742CD1779700C6C3B3 /* ControlCenterSettings.xcstrings */,
 				830976D02CDD1A0E0087F1A1 /* CoreFollowUp.xcstrings */,
 				8334192D2D40274A006FB9F1 /* CoreRepairKit.xcstrings */,
+				83B1D5352D6BC66700C26010 /* DefaultAppsSettingsUI.xcstrings */,
 				832D84F12CD2B0A90075ECF0 /* DigitalSeparationUI.xcstrings */,
 				831C1A4D2CCE9A1300866498 /* Display.xcstrings */,
 				831448282CD95B6200FFEE51 /* FitnessSettings.xcstrings */,
@@ -2401,6 +2407,7 @@
 				834718E82CDFDB98002D9BC9 /* PrivacyPane.xcstrings in Resources */,
 				833101752CD1779700C6C3B3 /* ControlCenterSettings.xcstrings in Resources */,
 				8355C8462CE5439D0067D675 /* ShortcutsSharing.xcstrings in Resources */,
+				83B1D5362D6BC66700C26010 /* DefaultAppsSettingsUI.xcstrings in Resources */,
 				8355C8562CE5452E0067D675 /* TVProvider.xcstrings in Resources */,
 				831448272CD9498D00FFEE51 /* Contacts.xcstrings in Resources */,
 				8355C83A2CE53F650067D675 /* SpatialAudioProfiles.xcstrings in Resources */,
@@ -2661,6 +2668,7 @@
 				83815CE92B768E3600F53A0F /* NewsView.swift in Sources */,
 				8397F9E92CDF20E9004DFE2F /* BooksView.swift in Sources */,
 				83F626DA2B828E8C00ED343F /* TVAppView.swift in Sources */,
+				83B1D5342D6BC3C800C26010 /* DefaultAppsView.swift in Sources */,
 				83898FCA2B8A8F210020C7BB /* HealthDetailsView.swift in Sources */,
 				8335A70C2BC358E8001E199D /* CellularView.swift in Sources */,
 				832EF3952B8182550066A1BF /* ContentPrivacyRestrictionsDetailView.swift in Sources */,

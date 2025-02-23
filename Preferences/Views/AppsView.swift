@@ -21,7 +21,12 @@ struct AppsView: View {
     var body: some View {
         ScrollViewReader { proxy in
             CustomList(title: "Apps".localize(table: table)) {
-                SettingsLink(color: .gray, icon: "checkmark.rectangle.stack.fill", id: "Default Apps".localize(table: table), subtitle: "Manage default apps on device".localize(table: table)) {}
+                // MARK: Default Apps
+                SettingsLink(color: .gray, icon: "checkmark.rectangle.stack.fill", id: "Default Apps".localize(table: table), subtitle: "Manage default apps on device".localize(table: table)) {
+                    DefaultAppsView()
+                }
+                
+                // MARK: Apps
                 ForEach(groupedApps.keys.sorted(), id: \.self) { key in
                     Section(key) {
                         ForEach(groupedApps[key]!, id: \.self) { app in
@@ -66,6 +71,8 @@ struct AppsView: View {
                         }
                     }
                 }
+                
+                // MARK: Hidden Apps
                 SettingsLink(color: .gray, icon: "square.dashed", id: "Hidden Apps".localize(table: table)) {
                     ContentUnavailableView(
                         "No Hidden Apps".localize(table: table),
