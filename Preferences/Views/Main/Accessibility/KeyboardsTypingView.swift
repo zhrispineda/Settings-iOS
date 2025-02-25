@@ -27,7 +27,7 @@ struct KeyboardsTypingView: View {
             }
             
             Section {
-                CustomNavigationLink(title: "FULL_KEYBOARD_ACCESS".localize(table: keyTable), status: "OFF", destination: FullKeyboardAccessView())
+                CustomNavigationLink(title: "FULL_KEYBOARD_ACCESS".localize(table: keyTable), status: "OFF".localize(table: accTable), destination: FullKeyboardAccessView())
             } header: {
                 Text("HARDWARE_KEYBOARDS", tableName: table)
             } footer: {
