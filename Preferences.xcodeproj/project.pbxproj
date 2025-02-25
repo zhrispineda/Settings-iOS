@@ -370,6 +370,8 @@
 		83C94CA52C1E0192005EBBC5 /* AppleCareWarrantyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C94CA42C1E0192005EBBC5 /* AppleCareWarrantyView.swift */; };
 		83CB06972CA6283A00D7533A /* FormatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CB06962CA6283A00D7533A /* FormatsView.swift */; };
 		83CCB7282C7FAD96003F51ED /* DateTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CCB7272C7FAD96003F51ED /* DateTimeView.swift */; };
+		83CED5A82D6E5AAF00253D9C /* ZoomSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83CED5A72D6E5AAF00253D9C /* ZoomSettings.xcstrings */; };
+		83CED5AA2D6E5ACD00253D9C /* ZoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CED5A92D6E5ACD00253D9C /* ZoomView.swift */; };
 		83D0B1422CE2F33A00DDEC69 /* ADPAnalytics.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83D0B1412CE2F33A00DDEC69 /* ADPAnalytics.xcstrings */; };
 		83D0B1442CE2F41C00DDEC69 /* AppStore.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83D0B1432CE2F41C00DDEC69 /* AppStore.xcstrings */; };
 		83D0B1462CE2F50B00DDEC69 /* OBAppleID.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83D0B1452CE2F50B00DDEC69 /* OBAppleID.xcstrings */; };
@@ -862,6 +864,8 @@
 		83CB06962CA6283A00D7533A /* FormatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatsView.swift; sourceTree = "<group>"; };
 		83CC61982B7952B800DAF0C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83CCB7272C7FAD96003F51ED /* DateTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeView.swift; sourceTree = "<group>"; };
+		83CED5A72D6E5AAF00253D9C /* ZoomSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = ZoomSettings.xcstrings; sourceTree = "<group>"; };
+		83CED5A92D6E5ACD00253D9C /* ZoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomView.swift; sourceTree = "<group>"; };
 		83D0B1412CE2F33A00DDEC69 /* ADPAnalytics.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = ADPAnalytics.xcstrings; sourceTree = "<group>"; };
 		83D0B1432CE2F41C00DDEC69 /* AppStore.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AppStore.xcstrings; sourceTree = "<group>"; };
 		83D0B1452CE2F50B00DDEC69 /* OBAppleID.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = OBAppleID.xcstrings; sourceTree = "<group>"; };
@@ -1030,6 +1034,7 @@
 				83AD8C582CCAC38E00A054B5 /* KeyboardsSettings.xcstrings */,
 				8330B26C2CCC68A90026F1C2 /* SpeechSettings.xcstrings */,
 				834579D22CC7D98F0027A4CD /* VoiceOverSettings.xcstrings */,
+				83CED5A72D6E5AAF00253D9C /* ZoomSettings.xcstrings */,
 			);
 			path = AccessibilitySettings;
 			sourceTree = "<group>";
@@ -1537,6 +1542,7 @@
 				83F78A242B8E9AA500025062 /* Subtitles & Captioning */,
 				83F78A292B8EA37600025062 /* Live Speech */,
 				833C124E2C99B40100CAEB36 /* VoiceOverView.swift */,
+				83CED5A92D6E5ACD00253D9C /* ZoomView.swift */,
 				83B893B52B8FC844005705A3 /* HoverTextView.swift */,
 				833F190A2B8BE05A00067C37 /* DisplayTextSizeView.swift */,
 				83D31F702B8D22DD0057CFDB /* MotionView.swift */,
@@ -2355,6 +2361,7 @@
 				8355C8382CE53F1D0067D675 /* NFCAndSEPlatform.xcstrings in Resources */,
 				8388C0B22CD473DB00FA7D4C /* WellnessDashboard-Localizable.xcstrings in Resources */,
 				8355C82A2CE53D460067D675 /* iTunesStore.xcstrings in Resources */,
+				83CED5A82D6E5AAF00253D9C /* ZoomSettings.xcstrings in Resources */,
 				8317AB212CEE736C00989F15 /* iBooksSettings.xcstrings in Resources */,
 				8355C8362CE53EC50067D675 /* MySports.xcstrings in Resources */,
 				830293B92D28889600222762 /* ProblemReporting.xcstrings in Resources */,
@@ -2609,6 +2616,7 @@
 				83F626D42B827F0C00ED343F /* DisplayZoomView.swift in Sources */,
 				833F20AE2CA4C93C00115E8F /* RecordCinematicView.swift in Sources */,
 				838A9EC42B7E823300ED261C /* CustomNavigationLink.swift in Sources */,
+				83CED5AA2D6E5ACD00253D9C /* ZoomView.swift in Sources */,
 				830CFAC12C990DDA00733411 /* KeyboardDetailView.swift in Sources */,
 				832EF39B2B8192A90066A1BF /* DictationShortcutView.swift in Sources */,
 				83898FCF2B8A9A1F0020C7BB /* MedicalView.swift in Sources */,

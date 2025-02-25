@@ -32,7 +32,9 @@ struct AccessibilityView: View {
                         VoiceOverView()
                     }
                     // Zoom
-                    SettingsLink(icon: "arrowtriangles.up.right.down.left.magnifyingglass", id: "ZOOM_TITLE".localize(table: titleTable), status: "OFF".localize(table: table)) {}
+                    SettingsLink(icon: "arrowtriangles.up.right.down.left.magnifyingglass", id: "ZOOM_TITLE".localize(table: titleTable), status: "OFF".localize(table: table)) {
+                        ZoomView()
+                    }
                 }
                 if UIDevice.iPad {
                     // Hover Text
