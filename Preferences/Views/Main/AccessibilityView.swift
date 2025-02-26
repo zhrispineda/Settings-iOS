@@ -210,6 +210,12 @@ struct AccessibilityView: View {
     }
 }
 
+struct AccessibilityRoute: Routable {
+    func destination() -> some View {
+        AccessibilityView()
+    }
+}
+
 #Preview {
     NavigationStack {
         AccessibilityView()

@@ -18,8 +18,36 @@ let configuration = Configuration()
 // MARK: State Manager
 /// Class for managing the state of the app's NavigationStack selection variable and destination view.
 class StateManager: ObservableObject {
-    @Published var selection: SettingsModel? = .general
     @Published var destination = AnyView(GeneralView())
+    @Published var selection: SettingsModel? = .general
+    @Published var path: [AnyRoute] = []
+}
+
+protocol Routable: Hashable {
+    associatedtype DestinationView: View
+    @ViewBuilder func destination() -> DestinationView
+}
+
+struct AnyRoute: Hashable {
+    private let _destination: () -> AnyView
+    private let identifier: String
+    
+    init<R: Routable>(_ route: R) {
+        self._destination = { AnyView(route.destination()) }
+        self.identifier = String(describing: R.self) + UUID().uuidString
+    }
+    
+    func destination() -> AnyView {
+        _destination()
+    }
+    
+    static func == (lhs: AnyRoute, rhs: AnyRoute) -> Bool {
+        return lhs.identifier == rhs.identifier
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(identifier)
+    }
 }
 
 // MARK: SettingsModel data
