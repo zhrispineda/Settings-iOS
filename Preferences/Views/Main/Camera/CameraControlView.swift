@@ -25,13 +25,24 @@ struct CameraControlView: View {
     var body: some View {
         CustomList(title: "CAMERA_BUTTON_TITLE".localize(table: table), topPadding: true) {
             // MARK: Light Press Section
-            Section {
-                Toggle("HIDE_CAMERA_CONTROLS".localize(table: table), isOn: $cleanPreview)
-                Toggle("LOCK_TO_FOCUS".localize(table: table), isOn: $lockFocus)
-            } header: {
+            Section {} header: {
                 Text("CAPTURE_BUTTON_LIGHT_PRESS_TITLE", tableName: table)
             } footer: {
                 Text("CAPTURE_BUTTON_CAPTURE_FOOTER", tableName: table)
+            }
+            
+            // MARK: Clean Preview Section
+            Section {
+                Toggle("HIDE_CAMERA_CONTROLS".localize(table: table), isOn: $cleanPreview)
+            } footer: {
+                Text("CAPTURE_BUTTON_HIDE_CONTROLS_FOOTER", tableName: table)
+            }
+            
+            // MARK: Lock Focus and Exposure Section
+            Section {
+                Toggle("LOCK_TO_FOCUS".localize(table: table), isOn: $lockFocus)
+            } footer: {
+                Text("CAPTURE_BUTTON_LOCK_FOCUS_FOOTER", tableName: table)
             }
             
             // MARK: Launch Camera Section

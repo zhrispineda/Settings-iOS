@@ -545,265 +545,265 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "자동 노출/자동 초점 고정"
+            "value": "초점 및 노출 고정"
           }
         },
         "he": {
           "stringUnit": {
             "state": "translated",
-            "value": "נעילת חשיפה/התמקדות"
+            "value": "נעילת המיקוד והחשיפה"
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "Kunci AE/AF"
+            "value": "Kunci Fokus dan Pencahayaan"
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "AE/AF-vergrendeling"
+            "value": "Vergrendel scherpstelling en belichting"
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "AE/AF Kilidi"
+            "value": "Odağı ve Pozlamayı Kilitle"
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Фиксация экспозиции/фокуса"
+            "value": "Фиксация фокуса и экспозиции"
           }
         },
         "hu": {
           "stringUnit": {
             "state": "translated",
-            "value": "AE/AF-zárolás"
+            "value": "Fókusz és expozíció rögzítése"
           }
         },
         "fi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Automaattinen valotus/tarkennus lukittu"
+            "value": "Lukitse tarkennus ja valotus"
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Blocco AE/AF"
+            "value": "Blocca messa a fuoco ed esposizione"
           }
         },
         "es_419": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bloqueo de AE/AF"
+            "value": "Bloquear enfoque y exposición"
           }
         },
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Κλείδωμα AE/AF"
+            "value": "Κλείδωμα εστίασης και έκθεσης"
           }
         },
         "ca": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bloqueig AE/AF"
+            "value": "Fixa l’exposició i l’enfocament"
           }
         },
         "fr_CA": {
           "stringUnit": {
             "state": "translated",
-            "value": "Verrouillage AE/AF"
+            "value": "Verrouiller la mise au point et l’exposition"
           }
         },
         "zh_TW": {
           "stringUnit": {
             "state": "translated",
-            "value": "AE/AF 鎖定"
+            "value": "鎖定焦點和曝光"
           }
         },
         "zh_HK": {
           "stringUnit": {
             "state": "translated",
-            "value": "AE/AF 鎖定"
+            "value": "鎖定焦點和曝光度"
           }
         },
         "sv": {
           "stringUnit": {
             "state": "translated",
-            "value": "Exponering/fokus låst"
+            "value": "Lås fokus och exponering"
           }
         },
         "no": {
           "stringUnit": {
             "state": "translated",
-            "value": "AE/AF-lås"
+            "value": "Lås fokus og eksponering"
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "AE/AF लॉक"
+            "value": "फ़ोकस और एक्सपोज़र लॉक करें"
           }
         },
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "AE-/AF-lås"
+            "value": "Lås fokus og eksponering"
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Blokada AE/AF"
+            "value": "Zablokuj ostrość i ekspozycję"
           }
         },
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "قفل AE/AF"
+            "value": "قفل التركيز والتعرض للضوء"
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "AE/AF Lock"
+            "value": "Lock Focus and Exposure"
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "ล็อค AE หรือ AF"
+            "value": "ล็อคโฟกัสและการเปิดรับแสง"
           }
         },
         "zh_CN": {
           "stringUnit": {
             "state": "translated",
-            "value": "AE/AF 锁定"
+            "value": "锁定对焦和曝光"
           }
         },
         "en_GB": {
           "stringUnit": {
             "state": "translated",
-            "value": "AE/AF Lock"
+            "value": "Lock Focus and Exposure"
           }
         },
         "lt": {
           "stringUnit": {
             "state": "translated",
-            "value": "AE / AF FIKSAVIMAS"
+            "value": "Fokusavimo ir ekspozicijos fiksavimas"
           }
         },
         "es_US": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bloqueo de AE/AF"
+            "value": "Bloquear enfoque y exposición"
           }
         },
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "Kunci AE/AF"
+            "value": "Kunci Fokus dan Pendedahan"
           }
         },
         "sk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Zámok AE/AF"
+            "value": "Zamknúť zaostrenie a expozíciu"
           }
         },
         "cs": {
           "stringUnit": {
             "state": "translated",
-            "value": "Zámek AE/AF"
+            "value": "Zamknout zaostření a expozici"
           }
         },
         "bg": {
           "stringUnit": {
             "state": "translated",
-            "value": "Заключване на AE/AF"
+            "value": "Заключи фокус и експониране"
           }
         },
         "sl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Zaklepanje AE/AF"
+            "value": "Zaklepanje ostrenja in osvetlitve"
           }
         },
         "en_AU": {
           "stringUnit": {
             "state": "translated",
-            "value": "AE/AF Lock"
+            "value": "Lock Focus and Exposure"
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "AE/AF-Sperre"
+            "value": "Fokus und Belichtung beibehalten"
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Khóa AE/AF"
+            "value": "Khóa lấy nét và phơi sáng"
           }
         },
         "ro": {
           "stringUnit": {
             "state": "translated",
-            "value": "EA/FA blocate"
+            "value": "Blocare focalizare și expunere"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bloqueo de AE/AF"
+            "value": "Bloquear enfoque y exposición"
           }
         },
         "kk": {
           "stringUnit": {
             "state": "translated",
-            "value": "АЭ/АФ бекіту"
+            "value": "Фокус пен экспозицияны құлыптау"
           }
         },
         "pt_BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bloqueio AE/AF"
+            "value": "Bloquear Foco e Exposição"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Verrouillage AE/AF"
+            "value": "Verrouiller la mise au point et l’exposition"
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "AE/AF зафіксовано"
+            "value": "Замкнути фокус і експозицію"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "AE/AFロック"
+            "value": "フォーカスと露出をロック"
           }
         },
         "pt_PT": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bloqueio AE/AF"
+            "value": "Bloquear focagem e exposição"
           }
         },
         "hr": {
           "stringUnit": {
             "state": "translated",
-            "value": "AE/AF zaključavanje"
+            "value": "Zaključaj fokus i ekspoziciju"
           }
         }
       }
@@ -1466,7 +1466,7 @@
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Naciśnij lekko przycisk Sterowanie aparatem, aby szybko skorygować ustawienia. Naciśnij go dwukrotnie lekko, aby wybrać narzędzie."
+            "value": "Naciśnij lekko narzędzie sterowania aparatem, aby szybko skorygować ustawienia. Naciśnij je dwukrotnie lekko, aby wybrać narzędzie."
           }
         },
         "ar": {
@@ -3941,7 +3941,7 @@
         "sk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Stlačením ovládania kamery otvoríte apku pre kameru a ďalším stlačením ho použijete ako spúšť. Ľahkým stlačením môžete vykonať úpravy. Viac informácií. %@."
+            "value": "Stlačením ovládania kamery otvoríte apku pre kameru a ďalším stlačením ho použijete ako spúšť. Ľahkým stlačením môžete vykonať úpravy. %@."
           }
         },
         "cs": {
@@ -3953,7 +3953,7 @@
         "bg": {
           "stringUnit": {
             "state": "translated",
-            "value": "Щракнете Управление на камерата, за да отворите приложение за камера, след това щракнете отново, за да използвате Управление на камерата като бутон за снимане. Натиснете леко, за да направите настройки. %@."
+            "value": "Щракнете Управление на камерата, за да отворите приложение за камера, след това щракнете отново, за да използвате Управление на камерата като бутон за снимане. Натиснете леко, за да направите промени. %@."
           }
         },
         "sl": {
@@ -4574,271 +4574,271 @@
         }
       }
     },
-    "CAM_PRO_RAW_48MP_FOOTER_24MP_CAMERA_BUTTON": {
+    "CAPTURE_BUTTON_HIDE_CONTROLS_FOOTER": {
       "extractionState": "manual",
       "localizations": {
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "ProRAW 및 최대 해상도(최대 48MP)를 위한 카메라 제어 항목을 표시합니다.\n\n1× Fusion 카메라는 48MP로 사진을 캡처할 수 있습니다. 야간 모드, 플래시 및 접사 촬영을 사용한 사진은 항상 12MP로 저장됩니다. Live Photo는 12MP 또는 24MP로 저장할 수 있습니다.\n\nProRAW는 선형 DNG 포맷을 사용하여 파일에서 더 많은 정보 및 다이내믹 레인지를 유지하는 10비트 파일로, 노출 및 화이트 밸런스를 편집할 때 추가적인 유연성을 제공합니다."
+            "value": "카메라 컨트롤을 살짝 눌러서 앱 제어기를 가리도록 허용합니다."
           }
         },
         "he": {
           "stringUnit": {
             "state": "translated",
-            "value": "ניתן להציג פקד מצלמה עבור פורמט ProRAW ורזולוציה מקסימלית של עד 48 מ״פ.\n\nניתן לצלם תמונות ברזולוציית 48 מ״פ במצלמת ה-Fusion בהגדלה של ⁨1x⁩. תמונות שצולמו ב״מצב לילה״, תמונות שצולמו עם פלאש ותמונות מאקרו יישמרו תמיד ברזולוציית 12 מ״פ. תמונות Live Photo יכולות להישמר ברזולוציה של 12 מ״פ או 24 מ״פ.\n\n‏ProRAW הוא קובץ בקידוד 10 סיביות המשתמש בפורמט Linear DNG כדי לשמור יותר מידע וטווח דינמי בקובץ, וכדי לספק גמישות נוספת בעת עריכת החשיפה ואיזון הלבן."
+            "value": "ניתן לאפשר ל״שליטה במצלמה״ להסתיר פקדי יישומים בלחיצה קלה."
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "Tampilkan kontrol Kamera untuk ProRAW dan resolusi maksimum, hingga 48 MP.\n\n48 MP dapat diambil di kamera Fusion pada 1×. Foto mode Malam, kilat, dan makro akan selalu disimpan pada 12 MP. Live Photos dapat disimpan pada 12 atau 24 MP.\n\nProRAW adalah file 10 bit yang menggunakan format DNG Linear untuk menyimpan lebih banyak informasi dan rentang dinamis pada file, sehingga menyediakan fleksibilitas tambahan saat mengedit pencahayaan dan imbang putih."
+            "value": "Izinkan Kontrol Kamera menyembunyikan kontrol app saat ditekan dengan lembut."
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Toon cameraregelaar voor ProRAW en maximale resolutie, tot 48 MP.\n\nMet de Fusion-camera kunnen foto's met zoomniveau 1x worden gemaakt en met 48 MP worden bewaard. Foto's die met de nachtmodus of flits worden gemaakt, evenals macrofoto's, worden altijd bewaard met 12 MP. Live Photos kunnen worden bewaard met 12 of 24 MP.\n\nProRAW is een 10-bits bestand dat gebruikmaakt van de structuur 'Linear DNG' om meer informatie en een hoger dynamisch bereik in het bestand te bewaren, wat extra flexibiliteit biedt bij het bewerken van de belichting en de witbalans."
+            "value": "Sta toe dat de cameraregelaar appregelaars verbergt wanneer er zachtjes op wordt gedrukt."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "ProRAW ve 48 MP’ye kadar maksimum çözünürlükte çekim için Kamera denetimini gösterir.\n\nFusion kamerada 1× hızında 48 MP çekim yapılabilir. Gece modu, flaş kullanılmış ve makro fotoğraflar her zaman 12 MP olarak kaydedilir. Live Photo’lar 12 veya 24 MP olarak kaydedilebilir.\n\nProRAW, pozlamayı ve beyaz dengesini düzenlerken daha fazla esneklik sağlamak amacıyla dosyada daha fazla bilgi ve dinamik aralık bulundurmak için Linear DNG biçimini kullanan bir 10 bit dosyadır."
+            "value": "Kamera Denetimi’nin, hafifçe basıldığında uygulama denetimlerini gizlemesine izin verin."
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Показывать Контроллер камеры для работы с ProRAW и съемки в максимальном разрешении — до 48 Мпикс.\n\nФото с разрешением 48 Мпикс можно снимать на камеру Fusion без увеличения или уменьшения масштаба. Снимки в ночном режиме, со вспышкой или в режиме макросъемки всегда будут сохраняться с разрешением 12 Мпикс. Фото Live Photo можно сохранять с разрешением 12 или 24 Мпикс.\n\nProRAW — это 10‑битный файл, который использует формат линейных файлов DNG, чтобы передавать больше информации и динамический диапазон в файле. В этом формате проще скорректировать экспозицию и баланс белого."
+            "value": "Разрешить Контроллеру камеры скрывать элементы управления приложением при легком нажатии."
           }
         },
         "hu": {
           "stringUnit": {
             "state": "translated",
-            "value": "Megjeleníti a ProRAW és a maximális felbontás (akár 48 MP) kameravezérlőjét.\n\nA Fusion-kamerával 1× nagyítás mellett 48 MP-es fotók készíthetők. Az éjszakai módban, vakuval vagy makróval készített fotók mindig 12 MP-es felbontással lesznek mentve. A Live Photók 12 vagy 24 MP-es felbontással menthetők.\n\nA ProRAW egy 10 bites fájl, amely a Lineáris DNG formátum segítségével több információt és nagyobb dinamikatartományt képes megőrizni a fájlban, így fokozott rugalmasságot tesz lehetővé az expozíció és a fehéregyensúly szerkesztésekor."
+            "value": "Appvezérlők elrejtésének engedélyezése a Kameravezérlő számára enyhe megnyomás esetén."
           }
         },
         "fi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Näytä Kamerasäädin ProRAW:lle ja enimmäistarkkuudelle, enintään 48 MP.\n\n48 MP:n tarkkuudella voidaan kuvata Fusion-kameran 1×-tilassa. Yötila-, salama- ja makrokuvat tallennetaan aina 12 MP:nä. Live Photo -kuvat voidaan tallentaa 12 MP:nä tai 24 MP:nä.\n\nProRAW on 10-bittinen tiedosto, joka käyttää Linear DNG -muotoa säilyttääkseen tiedostossa enemmän tietoa ja dynaamista aluetta. Tämä lisää joustavuutta muokattaessa valotusta ja valkotasapainoa."
+            "value": "Salli Kamerasäätimen kätkeä appisäätimet, kun sitä painetaan kevyesti."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Mostra il controllo della fotocamera per scattare foto in ProRAW e con la massima risoluzione, fino a 48 MP.\n\nLe foto a 48 MP possono essere scattate con la fotocamera Fusion e lo zoom 1×. Le foto scattate in modalità notte, con il flash e in macro verranno sempre salvate a 12 MP. Le Live Photo possono essere salvate a 12 o 24 MP.\n\nProRAW è un file a 10 bit che utilizza il formato Linear DNG per conservare più informazioni e un intervallo dinamico superiore, offrendo maggiore flessibilità quando si modificano l’esposizione e il bilanciamento del bianco."
+            "value": "Consenti al controllo fotocamera di nascondere i controlli dell’app quando viene premuto leggermente."
           }
         },
         "es_419": {
           "stringUnit": {
             "state": "translated",
-            "value": "Muestra el control de Cámara para ProRAW y resolución máxima, hasta de 48 MP.\n\nEs posible hacer capturas de 48 MP con la cámara Fusion a 1×. El modo Noche, flash y las macrofotos siempre se guardarán en 12 MP. Las Live Photos se pueden guardar en 12 o 24 MP.\n\nProRAW es un archivo de 10 bits que usa el formato lineal DNG para guardar más información y un rango dinámico en el archivo, lo que brinda flexibilidad adicional al editar la exposición y el balance de blancos."
+            "value": "Permite que el control de la cámara oculte los controles de la app al presionarlo ligeramente."
           }
         },
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Εμφάνιση του Στοιχείου ελέγχου Κάμερας για το ProRAW και τη μέγιστη ανάλυση, έως 48 MP.\n\nΟι φωτογραφίες σε 48 MP μπορούν να τραβηχτούν με την κάμερα Fusion στο ζουμ 1×. Οι φωτογραφίες Νυχτερινής λειτουργίας, με φλας και οι μακροφωτογραφίες αποθηκεύονται πάντα σε 12 MP. Τα Live Photo αποθηκεύονται σε 12 ή 24 MP.\n\nΤο ProRAW είναι ένα αρχείο 10 bit που χρησιμοποιεί τη μορφή «Γραμμικό DNG» για διατήρηση περισσότερων πληροφοριών και του δυναμικού εύρους στο αρχείο, και παρέχει πρόσθετη ευελιξία κατά την επεξεργασία της έκθεσης και της ισορροπίας λευκού."
+            "value": "Να επιτρέπεται στο Στοιχείο ελέγχου Κάμερας η απόκρυψη στοιχείων ελέγχου εφαρμογών όταν το πατάτε ελαφρώς."
           }
         },
         "ca": {
           "stringUnit": {
             "state": "translated",
-            "value": "Mostra el control ProRAW i de resolució màxima de la càmera, que és de fins a 48 Mpx.\n\nLa càmera Fusion a 1× pot fer fotos en 48 Mpx. Les fotos amb el flaix o el mode de nit i les fotos macro sempre es desen en 12 Mpx. Les Live Photos es poden desar en 12 o 24 Mpx.\n\nEl ProRAW és un arxiu de 10 bits amb un format DNG lineal, que permet conservar més informació i el rang dinàmic de l’arxiu per proporcionar més flexibilitat a l’hora d’editar l’exposició i el balanç de blancs."
+            "value": "Prem el control de càmera suaument per ocultar els controls de l’app."
           }
         },
         "fr_CA": {
           "stringUnit": {
             "state": "translated",
-            "value": "Affiche la commande de la caméra pour la prise de photos au format ProRAW et en résolution maximale (jusqu’à 48 Mpx).\n\nLa caméra Fusion à 1× peut enregistrer des photos de 48 Mpx. Les photos prises en mode Nuit, avec flash ou en mode macro seront toujours enregistrées à une résolution de 12 Mpx. Les Live Photos peuvent être enregistrées à une résolution de 12 ou 24 Mpx.\n\nProRAW est un fichier 10 bits qui utilise le format DNG linéaire pour retenir encore plus de détails et une gamme dynamique plus étendue, ce qui vous permet davantage de flexibilité lorsque vous modifiez l’exposition et l’équilibrage des blancs."
+            "value": "Appuyez légèrement sur la commande de l’appareil photo pour masquer les commandes de l’app."
           }
         },
         "zh_TW": {
           "stringUnit": {
             "state": "translated",
-            "value": "顯示ProRAW和最高解析度（高達48 MP）的「相機」控制項目。\n\n48 MP可用「1×」融合相機拍攝。「夜間」模式、閃光燈和微距照片將一律用12 MP儲存。「原況照片」可用12或24 MP儲存。\n\nProRAW是使用線性DNG格式的10位元檔案，用以保留檔案中的更多資訊和動態範圍，並在編輯曝光和白平衡時提供更多彈性。"
+            "value": "允許「相機控制」在輕按時隱藏App控制項目。"
           }
         },
         "zh_HK": {
           "stringUnit": {
             "state": "translated",
-            "value": "顯示用於ProRAW與最高解像度（高達48 MP）的「相機」控制項目。\n\n48 MP相片可以使用1倍「融合相機」拍攝。夜間模式、閃光燈和微距相片將會總是儲存為12 MP。「原況相片」可以儲存為12或24 MP。\n\nProRAW是一個使用線性DNG格式的10位元檔案，可在檔案中保留更多資訊和動態範圍，編輯曝光和白平衡時有更大靈活性。"
+            "value": "允許「相機控制」在輕按時隱藏App控制項目。"
           }
         },
         "sv": {
           "stringUnit": {
             "state": "translated",
-            "value": "Visa kamerareglage för ProRAW och maximal upplösning, upp till 48 MP.\n\nFusion-kameran med 1× kan ta bilder med 48 MP. Bilder som tagits i nattläget, med blixt eller som makrobild sparas alltid med 12 MP. Live Photo-bilder kan sparas med 12 eller 24 MP.\n\nProRAW är en 10-bitars fil som använder formatet Linear DNG till att behålla mer information och dynamiskt omfång i filen. Detta ger ytterligare flexibilitet vid redigering av exponering och vitbalans."
+            "value": "Tillåt att Kamerareglage gömmer appreglage vid lätt tryck."
           }
         },
         "no": {
           "stringUnit": {
             "state": "translated",
-            "value": "Vis kamerakontrollen for ProRAW og maks oppløsning, opptil 48 megapiksler.\n\nFusion-kameraet på 1 × kan ta bilder med 48 megapiksler. Nattmodus-, Live Photo-, blits- eller makro­bilder arkiveres alltid med 12 megapiksler. Live Photo-bilder kan arkiveres med 12 eller 24 megapiksler.\n\nProRAW er en 10-bit fil som bruker lineært DNG-format for å beholde mer informasjon og dynamisk område i filen. Dette gir mer fleksibilitet ved redigering av eksponering og hvitbalanse."
+            "value": "Tillat at Kamerakontroll skjuler appkontroller ved et lett trykk."
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "ProRAW और 48M MP तक अधिकतम रिज़ोल्यूशन के लिए कैमरा कंट्रोल दिखाएँ।\n\nFusion कैमरे पर 1× पर 48 MP कैप्चर किया जा सकता है। नाइट मोड, फ़्लैश और मैक्रो तस्वीरों को हमेशा 12 MP पर सहेजा जाएगा। Live Photos 12 या 24 MP पर सहेजी जा सकती हैं।\n\nProRAW एक 10-बिट फाइल होती है जो Linear DNG फ़ॉर्मैट का उपयोग करके फ़ाइल में अधिक जानकारी और डाइनैमिक रेंज बनाए रखती है, जो एक्सपोज़र और ह्वाइट बैलेंस के संपादन के समय अधिक सुविधाजनक होता है।"
+            "value": "हल्के-से दबाने पर कैमरा कंट्रोल को ऐप कंट्रोल छिपाने की अनुमति दें।"
           }
         },
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Vis kamerabetjening til ProRAW og maksimal opløsning op til 48 MP.\n\nFusionskameraet med 1× zoom kan tage fotos med 48 MP. Fotos taget med Nattilstand, blitz eller makro gemmes altid som 12 MP. Live Photos kan gemmes som 12 eller 24 MP.\n\nProRAW er et 10-bit arkiv, der bruger det lineære DNG-format til at bevare mere information og dynamisk omfang i arkivet. Dette giver yderligere fleksibilitet, når du redigerer eksponering og hvidbalance."
+            "value": "Tillad, at Kamerabetjening kan skjule betjeningsmuligheder i appen, når der trykkes let."
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Wyświetla w aplikacji Aparat narzędzia ProRAW oraz rejestrowania z maksymalną rozdzielczością 48 MP.\n\nAparat Fusion może rejestrować zdjęcia z rozdzielczością 48 MP przy ustawieniu 1×. Zdjęcia w trybie nocnym, robione z lampą błyskową oraz makro są zawsze zachowywane w rozdzielczości 12 MP. Zdjęcia Live Photo mogą być zachowywane w rozdzielczości 12 MP lub 24 MP.\n\n10‑bitowe pliki ProRAW przechowują więcej informacji i szerszy zakres tonalny, używając formatu Linear DNG. Zapewnia to więcej możliwości edycji ekspozycji i wyrównania bieli."
+            "value": "Lekkie naciśnięcie narzędzia sterowania aparatem ukrywa narzędzia ekranowe."
           }
         },
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "إظهار عنصر تحكم الكاميرا لالتقاط ProRAW والتقاط أقصى دقة، لحد ^[48](formatNumber: true) ميغابكسل.\n\nيمكن الالتقاط بدقة ^[48](formatNumber: true) ميغابكسل بكاميرا Fusion بمعدل ⁨1×⁩. لكن الصور في النمط الليلي وصور الفلاش وصور الماكرو ستُحفظ دائمًا بدقة ^[12](formatNumber: true) ميغابكسل. أما الصور الحية، فيمكن حفظها بدقة ^[12](formatNumber: true) أو ^[24](formatNumber: true) ميغابكسل.\n\n‏ProRAW هو ملف ^[10](formatNumber: true)‑بت يستخدم تنسيق DNG الخطي للاحتفاظ بمعلومات أكثر ونطاق ديناميكي في الملف، مما يتيح مزيدًا من المرونة عند تعديل التعرض للضوء وتوازن اللون الأبيض."
+            "value": "السماح لوحدة التحكم في الكاميرا بإخفاء عناصر تحكم التطبيق عند الضغط الخفيف."
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Show Camera control for ProRAW and maximum resolution, up to 48 MP.\n\n48 MP can be captured on the Fusion camera at 1×. Night mode, flash, and macro photos will always be saved at 12 MP. Live Photos can be saved at 12 or 24 MP.\n\nProRAW is a 10-bit file that uses the Linear DNG format to retain more information and dynamic range in the file, providing additional flexibility when editing exposure and white balance."
+            "value": "Allow Camera Control to hide app controls when lightly pressed."
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "แสดงตัวควบคุมกล้องสำหรับ ProRAW และความละเอียดสูงสุดถึง 48 MP\n\nสามารถจับภาพความละเอียด 48 MP ได้บนกล้อง Fusion ที่ 1× รูปภาพแบบโหมดกลางคืน, แฟลช และมาโครจะถูกบันทึกที่ความละเอียด 12 MP เสมอ Live Photo สามารถบันทึกได้ที่ความละเอียด 12 หรือ 24 MP\n\nProRAW เป็นไฟล์แบบ 10 บิตที่ใช้รูปแบบ DNG เชิงเส้นที่เก็บข้อมูลได้มากขึ้นและเก็บข้อมูลช่วงแสงกว้างในไฟล์ ซึ่งทำให้แก้ไขการเปิดรับแสงและการปรับสมดุลแสงสีขาวได้ง่ายยิ่งขึ้น"
+            "value": "อนุญาตให้ตัวควบคุมกล้องซ่อนตัวควบคุมแอปเมื่อกดเบาๆ"
           }
         },
         "zh_CN": {
           "stringUnit": {
             "state": "translated",
-            "value": "显示用于ProRAW和最大分辨率的相机控制，最高可达48 MP。\n\n48 MP照片可使用融合式相机“1×”拍摄。夜间模式、闪光灯模式和微距照片将始终存储为12 MP。实况照片可存储为12或24 MP。\n\nProRAW是使用线性DNG格式的10位文件，可在文件中保留更多信息和动态范围，从而为曝光和白平衡编辑提供更多灵活性。"
+            "value": "允许相机控制在轻按时隐藏App控制。"
           }
         },
         "en_GB": {
           "stringUnit": {
             "state": "translated",
-            "value": "Show Camera control for ProRAW and maximum resolution, up to 48 MP.\n\n48 MP can be captured on the Fusion camera at 1×. Night mode, flash and macro photos will always be saved at 12 MP. Live Photos can be saved at 12 or 24 MP.\n\nProRAW is a 10-bit file that uses the Linear DNG format to retain more information and dynamic range in the file, providing additional flexibility when editing exposure and white balance."
+            "value": "Allow Camera Control to hide app controls when lightly pressed."
           }
         },
         "lt": {
           "stringUnit": {
             "state": "translated",
-            "value": "Matykite kameros valdiklį, skirtą „ProRAW“ formatui ir didžiausiai raiškai (iki 48 MP).\n\n48 MP raiškos nuotraukas galima užfiksuoti „Fusion“ kamera, pasirinkus × 1 priartinimą. Fotografuojant naktiniu režimu, naudojant blykstę arba makrorežimą, nuotraukos visada bus išsaugotos 12 MP raiška. Pasirinkus „Live Photos“, nuotraukas galima išsaugoti 12 arba 24 MP raiška.\n\n„ProRAW“ yra 10 bitų failas, kuriame naudojamas linijinis DNG formatas siekiant faile išsaugoti daugiau informacijos ir dinaminio diapazono – tai suteikia papildomo lankstumo redaguojant ekspoziciją ir baltos spalvos balansą."
+            "value": "Leiskite slėpti programų valdiklius, kai kameros valdiklis nestipriai paspaudžiamas."
           }
         },
         "es_US": {
           "stringUnit": {
             "state": "translated",
-            "value": "Muestra el control de Cámara para ProRAW y resolución máxima, hasta de 48 MP.\n\nEs posible hacer capturas de 48 MP con la cámara Fusion a 1×. El modo Noche, flash y las macrofotos siempre se guardarán en 12 MP. Las Live Photos se pueden guardar en 12 o 24 MP.\n\nProRAW es un archivo de 10 bits que usa el formato lineal DNG para guardar más información y un rango dinámico en el archivo, lo que brinda flexibilidad adicional al editar la exposición y el balance de blancos."
+            "value": "Permite que el control de la cámara oculte los controles de la app al presionarlo ligeramente."
           }
         },
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "Tunjukkan kawalan Kamera untuk ProRAW dan resolusi maksimum, sehingga 48 MP.\n\n48 MP boleh ditangkap dengan kamera Fusion pada 1×. Foto mod Malam, denyar dan makro akan sentiasa disimpan pada 12 MP. Live Photos boleh disimpan pada 12 atau 24 MP.\n\nProRAW ialah fail 10 bit yang menggunakan format Linear DNG untuk mengekalkan lebih banyak maklumat dan julat dinamik dalam fail, yang menyediakan fleksibiliti tambahan semasa mengedit pendedahan serta imbangan putih."
+            "value": "Benarkan Kawalan Kamera menyembunyikan kawalan app apabila ditekan dengan lembut."
           }
         },
         "sk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Zobrazí v Kamere ovládacie prvky pre ProRAW a maximálne rozlíšenie až do 48 Mpx.\n\nFotky v rozlíšení 48 Mpx je možné fotiť kamerou Fusion pri priblížení 1×. Fotky nasnímané v nočnom režime, fotky s bleskom a v režime makro sa vždy budú ukladať v rozlíšení 12 Mpx. Fotky Live Photo je možné ukladať v rozlíšení 12 alebo 24 Mpx.\n\nProRAW je 10-bitový súbor, ktorý využíva formát Linear DNG na zachovanie väčšieho množstva informácií a dynamického rozsahu a poskytuje väčšiu flexibilitu pri upravovaní expozície a vyváženia bielej."
+            "value": "Povolí Ovládaniu kamery skryť ovládacie prvky apky pri ľahkom stlačení."
           }
         },
         "cs": {
           "stringUnit": {
             "state": "translated",
-            "value": "Zobrazuje ovládací prvky fotoaparátu pro ProRAW a pro maximální rozlišení – až do 48 Mpx.\n\nFotky v rozlišení 48 Mpx je možné pořizovat fotoaparátem Fusion při přiblížení 1×. Fotky pořízené v nočním režimu, fotky s bleskem a fotky v režimu makro se budou vždy ukládat v rozlišení 12 Mpx. Snímky Live Photo lze ukládat v rozlišení 12 nebo 24 Mpx.\n\nProRAW jsou 10bitové soubory využívající lineární DNG formát, který zachovává více dat a větší dynamický rozsah a poskytuje víc volnosti při úpravách expozice a vyvážení bílé."
+            "value": "Chcete‑li lehkým stisknutím skrýt ovládací prvky aplikace, povolte ovladač fotoaparátu."
           }
         },
         "bg": {
           "stringUnit": {
             "state": "translated",
-            "value": "Показва се бутонът Камера за ProRAW и максимална разделителна способност, до 48 MP.\n\nСнимки в 48 MP могат да бъдат заснети с Fusion камерата с приближаване 1×. Снимките в Нощен режим, снимките със светкавица и макро снимките винаги ще се запазват в 12 MP. Снимките Live Photo могат да се запазват в 12 или 24 MP.\n\nProRAW е 10-битов файл, който използва линейния DNG формат, за да запази повече информация и динамичен обхват във файла, осигурявайки допълнителна гъвкавост за редактиране на експозицията и баланса на бялото."
+            "value": "Позволете на Управление на камерата да скрива бутоните за управление на камерата при леко натискане."
           }
         },
         "sl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Prikaže Krmilno funkcijo kamere za ProRAW in največjo ločljivost, največ 48 MP.\n\n48 MP je mogoče zajeti s kamero Fusion pri povečavi 1×. Fotografije, posnete v nočnem načinu, z bliskavico in makro fotografije se bodo vedno shranile z ločljivostjo 12 MP. Fotografije Live Photo je mogoče shraniti z ločljivostjo 12 ali 24 MP.\n\nProRAW je 10-bitna datoteka, ki uporablja obliko zapisa Linear DNG za hranjenje več podatkov in dinamičnega razpona v datoteki, kar zagotavlja dodatno prilagodljivost pri urejanju osvetlitve in nastavitve beline."
+            "value": "Dovolite, da Krmilna funkcija kamere ob rahlem pritisku skrije krmilne funkcije za aplikacije."
           }
         },
         "en_AU": {
           "stringUnit": {
             "state": "translated",
-            "value": "Show Camera control for ProRAW and maximum resolution, up to 48 MP.\n\n48 MP can be captured on the Fusion camera at 1×. Night mode, flash and macro photos will always be saved at 12 MP. Live Photos can be saved at 12 or 24 MP.\n\nProRAW is a 10-bit file that uses the Linear DNG format to retain more information and dynamic range in the file, providing additional flexibility when editing exposure and white balance."
+            "value": "Allow Camera Control to hide app controls when lightly pressed."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Kamerasteuerung für Aufnahmen in ProRaw und mit maximaler Auflösung von bis zu 48 MP einblenden.\n\n48 MP kann mit der Fusion-Kamera in der Stufe 1× aufgenommen werden. Fotos im Nachtmodus oder mit Blitz sowie Makrofotos werden immer mit 12 MP gesichert. Live Photo-Fotos können mit 12 oder 24 MP gesichert werden.\n\nProRAW ist ein 10-Bit-Dateiformat, das mithilfe des Standards „Linear DNG“ mehr Informationen und einen größeren Dynamikbereich speichern kann. Es bietet dadurch mehr Möglichkeiten bei der Bearbeitung der Belichtung und des Weißabgleichs."
+            "value": "Wenn du leicht auf die Kamerasteuerung drückst, werden App-Steuerelemente ausgeblendet."
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Hiển thị điều khiển Camera cho ProRAW và độ phân giải tối đa, lên đến 48 MP.\n\n48 MP có thể được chụp trên camera Fusion ở 1×. Ảnh chụp bằng chế độ Ban đêm, flash và macro sẽ luôn được lưu ở 12 MP. Live Photos có thể được lưu tại 12 MP hoặc 24 MP.\n\nProRAW là một tệp 10-bit sử dụng định dạng DNG tuyến tính để lưu giữ nhiều thông tin hơn và dải tần nhạy sáng trong tệp, cung cấp sự linh hoạt bổ sung khi chỉnh sửa độ phơi sáng và độ cân bằng trắng."
+            "value": "Cho phép Điều khiển camera ẩn điều khiển ứng dụng khi nhấn nhẹ."
           }
         },
         "ro": {
           "stringUnit": {
             "state": "translated",
-            "value": "Afișați comenzile aplicației Cameră pentru înregistrarea ProRAW și la rezoluție maximă, de până la 48 MP.\n\nPozele la 48 MP pot fi realizate cu camera Fusion la 1×. Pozele realizate cu modul Noapte, cu blițul sau macro vor fi salvate întotdeauna la 12 MP. Pozele Live Photo pot fi salvate la 12 sau 24 MP.\n\nProRAW este un fișier pe 10 biți care utilizează formatul Linear DNG pentru a reține mai multe informații și o gamă dinamică superioară în fișier, oferind flexibilitate suplimentară la editarea expunerii și balansului de alb."
+            "value": "Permiteți ascunderea comenzilor aplicației la apăsarea ușoară pe „Comenzi cameră”."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Muestra el control de la cámara para hacer fotos con formato ProRAW y en máxima resolución (hasta 48 Mpx).\n\nSe pueden tomar fotos con una resolución de 48 Mpx usando la cámara Fusion con la distancia focal por omisión (x1). Las fotos realizadas en el modo Noche, con flash o en formato macro siempre se guardarán en 12 Mpx. Las Live Photo se pueden guardar en 12 o en 24 Mpx.\n\nProRAW es un archivo de 10 bits que utiliza el formato DNG lineal para conservar más información y el rango dinámico del archivo, lo que ofrece más flexibilidad a la hora de editar la exposición y el balance de blancos."
+            "value": "Permite que el control de la cámara oculte los controles de la app al pulsarlo suavemente."
           }
         },
         "kk": {
           "stringUnit": {
             "state": "translated",
-            "value": "ProRAW және 48 Mпикс дейінгі максималды ажыратымдылық үшін камераны басқару элементін көрсету.\n\n48 Мпикс фотоларды Fusion камерасында 1× режимінде түсіруге болады. Түнгі режимдегі, жарқыл арқылы түсірілген және макро фотолар әрқашан 12 Мпикс ажыратымдылығында сақталады. Live Photo фотоларын 12 немесе 24 Мпикс ажыратымдылығында сақтауға болады.\n\nProRAW — файлда толығырақ ақпарат пен динамикалық ауқымды сақтау үшін сызықтық DNG файлдарының форматын пайдаланатын 10 биттік файл. Бұл форматта экспозиция мен ақ түс балансын реттеу жеңілірек."
+            "value": "Қолданбаның басқару элементтерін жай басқан кезде жасыру үшін камераны басқару элементіне рұқсат беріңіз."
           }
         },
         "pt_BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Mostre o controle da Câmera para ProRAW e resolução máxima de 48 MP.\n\nA câmera Fusion a 1× pode capturar fotos em 48 MP. As fotos feitas no modo Noite, com flash ou macro são sempre salvas em 12 MP. As Live Photos podem ser salvas em 12 ou 24 MP.\n\nProRAW é um arquivo de 10 bits que usa o formato Linear DNG para reter mais informações e alcance dinâmico, fornecendo flexibilidade adicional na edição da exposição e do balanço de branco."
+            "value": "Pressione levemente o Controle da Câmera para que ele oculte os controles do app."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Affichez la commande de capture au format Apple ProRAW et en résolution maximale (jusqu’à 48 MP) de la caméra.\n\nLa caméra Fusion à 1× peut capturer des photos à une résolution de 48 MP. Les photos prises en mode Nuit, en mode Macro et avec flash seront toujours enregistrées à une résolution de 12 MP. Les Live Photos peuvent être enregistrées à une résolution de 12 ou 24 MP.\n\nLe format Apple ProRAW est un fichier 10 bits qui utilise le format DNG linéaire pour conserver plus d’informations et étendre la plage dynamique au sein du fichier, vous offrant ainsi plus de flexibilité lors de la modification de l’exposition et de la balance des blancs."
+            "value": "Appuyez légèrement sur la commande de l’appareil photo pour masquer les commandes de l’app."
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Показувати елемент керування камерою для зйомки у форматі ProRAW із максимальною роздільністю (до 48 Мпкс).\n\nФотографії з роздільністю 48 Мпкс можна зробити камерою Fusion із масштабом 1×. Знімки, зроблені в нічному чи макрорежимі або зі спалахом, завжди зберігатимуться з роздільністю 12 Мпкс. Фотографії Live Photo можна зберігати з роздільністю 12 Мпкс або 24 Мпкс.\n\nProRAW — це 10‑бітний файл, що використовує формат Linear DNG для збереження більшої кількості даних і динамічного діапазону у файлі, забезпечуючи додаткову гнучкість під час змінювання експозиції та балансу білого."
+            "value": "Контролер камери приховуватиме елементи керування програмою в разі легкого натиснення."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "ProRawと最大解像度（48 MPまで）のカメラコントロールを表示します。\n\n48 MPの解像度はFusionカメラの1倍を使用して撮影できます。ナイトモード、フラッシュ、およびマクロで撮影した写真は常に12 MPで保存されます。Live Photosは12 MPまたは24 MPで保存できます。\n\nProRAWとは、より多くの情報とダイナミックレンジをファイルに保持するためにリニアDNGフォーマットを使用した10ビットファイルです。露出やホワイトバランスを編集する際の柔軟性が高められています。"
+            "value": "カメラコントロールを軽く押したときにアプリのコントロールを非表示にします。"
           }
         },
         "pt_PT": {
           "stringUnit": {
             "state": "translated",
-            "value": "Mostrar o controlo da aplicação Câmara para ProRAW e resolução máxima, até 48 MP.\n\nÉ possível capturar a 48 MP na câmara Fusion a 1×. As fotografias com modo Noite, flash e macro são sempre guardadas a 12 MP. As Live Photos podem ser guardadas a 12 ou 24 MP.\n\nProRAW é um ficheiro de 10 bits que usa o formato Linear DNG para preservar mais informação e gama dinâmica no ficheiro, o que permite uma maior flexibilidade ao editar a exposição e o equilíbrio de brancos."
+            "value": "Permitir que o controlo da câmara oculte os controlos da aplicação ao ser premido suavemente."
           }
         },
         "hr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Prikazivanje kontrole kamere za ProRAW i maksimalnu razlučivost, do 48 MP.\n\n48 MP može se snimiti Fusion kamerom pri 1X. Fotografije snimljene Noćnim modom ili s bljeskalicom kao i makro fotografije uvijek će se spremiti kao 12 MP. Live Photos mogu se spremiti kao 12 ili 24 MP.\n\nProRAW je 10-bitna datoteka koja koristi format Linear DNG za zadržavanje više informacija i dinamičkog raspona u datoteci, čime se pruža dodatna fleksibilnost prilikom uređivanja ekspozicije i ravnoteže bjeline."
+            "value": "Dozvolite Kontroli kamere skrivanje kontrola aplikacije kad se lagano pritisne."
           }
         }
       }
@@ -5381,271 +5381,540 @@
         }
       }
     },
-    "ENHANCED_RESOLUTION_FOOTER_CAMERA_BUTTON": {
+    "CAPTURE_BUTTON_LOCK_FOCUS_FOOTER": {
       "extractionState": "manual",
       "localizations": {
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "1× Fusion 카메라로 촬영한 사진은 12MP 또는 24MP로 저장할 수 있습니다. 야간 모드, 접사 촬영, 플래시 또는 인물 사진 조명을 사용한 사진은 12MP로 저장됩니다."
+            "value": "카메라 컨트롤을 살짝 누른 채로 유지하여 초점과 노출을 유지합니다."
           }
         },
         "he": {
           "stringUnit": {
             "state": "translated",
-            "value": "תמונות שצולמו במצלמת ה-Fusion בהגדלה של ⁨1×⁩ יכולות להישמר ברזולוציה של 12 מ״פ או 24 מ״פ. תמונות שצולמו ב״מצב לילה״, תמונות שצולמו עם פלאש, תמונות מאקרו או תמונות עם ״תאורת פורטרט״ יישמרו ברזולוציה של 12 מ״פ."
+            "value": "יש ללחוץ קלות ולהחזיק, ואז להמשיך לגעת ב״שליטה במצלמה״ כדי לשמר את המיקוד והחשיפה."
           }
         },
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "Foto dengan kamera Fusion pada 1× dapat disimpan pada 12 atau 24 MP. Foto yang diambil dengan mode Malam, makro, kilat, atau Pencahayaan Potret akan disimpan pada 12 MP."
+            "value": "Tekan dan tahan dengan lembut, lalu lanjut sentuh Kontrol Kamera untuk mempertahankan fokus dan pencahayaan."
           }
         },
         "nl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Foto's die met de Fusion-camera met zoomniveau 1× worden genomen, kunnen worden bewaard met 12 of 24 MP. Foto's die met de nachtmodus, flits of portretbelichting worden gemaakt, evenals macrofoto's, worden bewaard met 12 MP."
+            "value": "Druk zachtjes op de cameraregelaar en blijf deze aanraken om de scherpstelling en belichting te behouden."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Fusion kamerada 1× kullanan fotoğraflar 12 veya 24 MP olarak kaydedilebilir. Gece modu, makro, flaş ya da Portre Işığı kullanılmış fotoğraflar 12 MP olarak kaydedilir."
+            "value": "Hafifçe basıp parmağınızı basılı tutun, sonra odağı ve pozlamayı korumak için Kamera Denetimi’ne dokunmayı sürdürün."
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Фото, снятые на камеру Fusion без увеличения или уменьшения масштаба, можно сохранять в разрешении 12 Мпикс или 24 Мпикс. Снимки в ночном режиме, со вспышкой, в режиме макросъемки и с портретным освещением будут сохраняться с разрешением 12 Мпикс."
+            "value": "Слегка нажмите и удерживайте, затем продолжайте прикасаться к Контроллеру камеры, чтобы поддерживать фокус и экспозицию."
           }
         },
         "hu": {
           "stringUnit": {
             "state": "translated",
-            "value": "A Fusion-kamerával 1× nagyítás mellett készült fotók 12 vagy 24 MP-es felbontással menthetők. Az éjszakai módban, makróval, vakuval vagy Portrémegvilágítással készített fotók 12 MP-es felbontással lesznek mentve."
+            "value": "Nyomja meg enyhén, és tartsa nyomva, majd tartsa megérintve a Kameravezérlőt a fókusz és az expozíció fenntartásához."
           }
         },
         "fi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Fusion-kameralla 1×-suurennoksella otetut kuvat voidaan tallentaa 12 MP:n tai 24 MP:n tarkkuudella. Yötila-, makro-, salama- ja muotokuvavalokuvat tallennetaan 12 MP:n tarkkuudella."
+            "value": "Pidä kevyesti painettuna ja ylläpidä tarkennusta ja valotusta jatkamalla Kamerasäätimen painamista."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Le foto scattate con la fotocamera Fusion e lo zoom 1× possono essere salvate a 12 o 24 MP. Le foto scattate in modalità Notte, con il flash, in macro o con effetti di illuminazione della modalità Ritratto verranno salvate a 12 MP."
+            "value": "Tieni premuto leggermente, quindi continua a toccare il controllo fotocamera per mantenere la messa a fuoco e l’esposizione."
           }
         },
         "es_419": {
           "stringUnit": {
             "state": "translated",
-            "value": "Las fotos tomadas con la cámara Fusion a 1x pueden guardarse en 12 MP o 24 MP, y las que se tomen con el flash, alguna iluminación de retrato o los modos Noche o Macro se guardarán en 12 MP."
+            "value": "Mantén presionado ligeramente el control de la cámara para fijar el enfoque y la exposición."
           }
         },
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Οι φωτογραφίες που έχουν ληφθεί με την κάμερα Fusion και ζουμ 1× μπορούν να αποθηκευτούν σε 12 ή 24 MP. Οι φωτογραφίες που έχουν ληφθεί με Νυχτερινή λειτουργία, φλας, Φωτισμό πορτρέτου και οι μακροφωτογραφίες θα αποθηκεύονται σε 12 MP."
+            "value": "Πατήστε ελαφρώς και παρατεταμένα το Στοιχείο ελέγχου Κάμερας, και συνεχίστε να το κρατάτε πατημένο για διατήρηση της εστίασης και της έκθεσης."
           }
         },
         "ca": {
           "stringUnit": {
             "state": "translated",
-            "value": "Les fotos fetes amb la càmera Fusion a 1× es poden desar en 12 o 24 Mpx. Les fotos amb el flaix o el mode de nit i les fotos macro o amb il·luminació de retrat sempre es desen en 12 Mpx."
+            "value": "Mantén premut el control de càmera suaument per fixar l’enfocament i l’exposició."
           }
         },
         "fr_CA": {
           "stringUnit": {
             "state": "translated",
-            "value": "Les photos prises avec la caméra Fusion à 1× peuvent être enregistrées à une résolution de 12 ou 24 Mpx. Les photos prises en mode Nuit, en mode macro, avec flash ou avec l’éclairage de portrait seront enregistrées à une résolution de 12 Mpx."
+            "value": "Appuyez légèrement de façon prolongée sur la commande de l’appareil photo pour conserver la mise au point et l’exposition."
           }
         },
         "zh_TW": {
           "stringUnit": {
             "state": "translated",
-            "value": "以「1×」融合相機拍攝的照片可用12或24 MP儲存。「夜間」模式、微距照片、閃光燈或「人像光線」的照片將一律用12 MP儲存。"
+            "value": "輕輕按住，然後繼續觸碰「相機控制」來維持焦點和曝光。"
           }
         },
         "zh_HK": {
           "stringUnit": {
             "state": "translated",
-            "value": "以1倍「融合相機」拍攝的相片可以儲存為12或24 MP。使用「夜間」模式、微距相片、閃光燈或「人像燈光」的相片將一律儲存為12 MP。"
+            "value": "輕輕按住，然後繼續按下「相機控制」以維持焦點和曝光度。"
           }
         },
         "sv": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bilder från Fusion-kameran med 1× kan sparas med 12 eller 24 MP. Bilder som har tagits i nattläget, som makrobild, med blixt eller med porträttljus sparas alltid med 12 MP."
+            "value": "Behåll fokus och exponering genom att trycka lätt på kamerareglaget och hålla ned."
           }
         },
         "no": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bilder tatt med Fusion-kameraet på 1 × kan arkiveres som 12 eller 24 megapiksler. Bilder tatt med nattmodus, blits, Portrettlyssetting eller makrobilder vil bli arkivert med 12 megapiksler."
+            "value": "Trykk lett og hold og fortsett å berøre Kamerakontroll for å beholde fokus og eksponering."
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Fusion कैमरे के ज़रिए 1× पर ली गई तस्वीरों को 12 या 24 MP पर सहेजा जा सकता है। नाइट मोड, मैक्रो और फ़्लैश या पोर्ट्रेट लाइटिंग में ली गई तस्वीरें 12 MP पर सहेजी जाएँगी।"
+            "value": "हल्के से दबाएँ रखें, फिर फ़ोकस और एक्सपोज़र बनाए रखने के लिए कैमरा कंट्रोल को टच किए रखें।"
           }
         },
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Fotos taget med fusionskameraet ved 1x zoom kan gemmes som 12 eller 24 MP. Fotos taget med Nattilstand, makro, blitz eller portrætlys gemmes som 12 MP."
+            "value": "Tryk let og hold nede, og hold fingeren på Kamerabetjening for at bevare fokus og eksponering."
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Zdjęcie robione aparatem Fusion przy ustawieniu 1× można zachowywać w rozdzielczości 12 MP lub 24 MP. Zdjęcia w trybie nocnym, makro, robione z lampą błyskową lub z oświetleniem portretowym są zawsze zachowywane w rozdzielczości 12 MP."
+            "value": "Naciśnij lekko i przytrzymaj narzędzie sterowania aparatem. Nie unoś palca, aby utrzymać ustawienie ostrości i ekspozycji."
           }
         },
         "ar": {
           "stringUnit": {
             "state": "translated",
-            "value": "الصور الملتقطة بكاميرا Fusion بمعدل ⁨1×⁩ يمكن حفظها بدقة ^[12](formatNumber: true) أو ^[24](formatNumber: true) ميغابكسل. وستُحفظ الصور الملتقطة باستخدام النمط الليلي أو الماكرو أو الفلاش أو إضاءة بورتريه بدقة ^[12](formatNumber: true) ميغابكسل."
+            "value": "اضغط بخفة مطولًا، ثم استمر في لمس وحدة تحكم الكاميرا للحفاظ على التركيز والتعرض للضوء."
           }
         },
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Photos on the Fusion camera at 1× can be saved at 12 or 24 MP. Photos taken with Night mode, macro, flash, or Portrait Lighting will be saved at 12 MP."
+            "value": "Lightly press and hold, then continue touching Camera Control to maintain focus and exposure."
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "รูปภาพบนกล้อง Fusion ที่ 1× สามารถบันทึกได้ที่ความละเอียด 12 หรือ 24 MP รูปภาพที่ถ่ายแบบโหมดกลางคืน มาโคร แฟลช หรือการจัดแสงภาพถ่ายบุคคลจะถูกบันทึกที่ความละเอียด 12 MP"
+            "value": "กดเบาๆ ค้างไว้ แล้วแตะตัวควบคุมกล้องต่อไปเพื่อคงการโฟกัสและการเปิดรับแสง"
           }
         },
         "zh_CN": {
           "stringUnit": {
             "state": "translated",
-            "value": "融合式相机“1×”拍摄的照片可存储为12或24 MP。夜间模式、微距模式、闪光灯模式或人像光效下拍摄的照片将存储为12 MP。"
+            "value": "轻按保持，然后继续触碰相机控制以保持对焦和曝光。"
           }
         },
         "en_GB": {
           "stringUnit": {
             "state": "translated",
-            "value": "Photos on the Fusion camera at 1× can be saved at 12 or 24 MP. Photos taken with Night mode, macro, flash or Portrait lighting will be saved at 12 MP."
+            "value": "Lightly press and hold, then continue touching Camera Control to maintain focus and exposure."
           }
         },
         "lt": {
           "stringUnit": {
             "state": "translated",
-            "value": "Nuotraukas, padarytas „Fusion“ kamera, pasirinkus x 1 priartinimą, galima išsaugoti 12 arba 24 MP raiška. Fotografuojant naktiniu režimu, naudojant makrorežimą, blykstę arba portreto apšvietimą, nuotraukos bus išsaugotos 12 MP raiška."
+            "value": "Nestipriai paspauskite ir palaikykite kameros valdiklį, norėdami išlaikyti fokusavimą ir ekspoziciją."
           }
         },
         "es_US": {
           "stringUnit": {
             "state": "translated",
-            "value": "Las fotos tomadas con la cámara Fusion a 1x pueden guardarse en 12 MP o 24 MP, y las que se tomen con el flash, alguna iluminación de retrato o los modos Noche o Macro se guardarán en 12 MP."
+            "value": "Mantén presionado ligeramente el control de la cámara para fijar el enfoque y la exposición."
           }
         },
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "Foto dengan kamera Fusion pada 1× boleh disimpan pada 12 atau 24 MP. Foto yang diambil dengan mod Malam, makro, denyar atau Pencahayaan Potret akan disimpan pada 12 MP."
+            "value": "Tekan dengan lembut dan tahan, kemudian teruskan menyentuh Kawalan Kamera untuk mengekalkan fokus dan pendedahan."
           }
         },
         "sk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Fotky snímané kamerou Fusion so zväčšením 1× je možné ukladať v rozlíšení 12 alebo 24 Mpx. Fotky nasnímané v nočnom režime, fotky s bleskom a v režime makro alebo s portrétovým osvetlením sa vždy ukladajú v rozlíšení 12 Mpx."
+            "value": "Ak chcete zachovať aktuálne zaostrenie a expozíciu, zľahka stlačte a podržte Ovládanie kamery a potom na ňom ďalej držte prst."
           }
         },
         "cs": {
           "stringUnit": {
             "state": "translated",
-            "value": "Fotky pořízené fotoaparátem Fusion s přiblížením 1× lze uložit v rozlišení 12 nebo 24 Mpx. Fotky pořízené v nočním režimu, v režimu makro, s bleskem a s efektem Nasvícení portrétu se budou ukládat v rozlišení 12 Mpx."
+            "value": "Chcete‑li zamknout zaostření a expozici, zlehka stiskněte a podržte ovladač fotoaparátu a pak na něm podržte prst."
           }
         },
         "bg": {
           "stringUnit": {
             "state": "translated",
-            "value": "Снимките, направени с Fusion камерата с приближаване 1×, могат да бъдат запазени в 12 или 24 MP. Снимките, заснети в Нощен режим, макро, със светкавица или с Портретно осветление, винаги ще се запазвани в 12 MP."
+            "value": "Натиснете леко и задръжте, след това продължете да докосвате Управление на камерата, за да поддържате фокуса и експонирането."
           }
         },
         "sl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Fotografije kamere Fusion je pri povečavi 1× mogoče shraniti z ločljivostjo 12 ali 24 MP. Fotografije, posnete v nočnem načinu, z bliskavico, z osvetlitvijo portreta ali makro fotografije se bodo shranile z ločljivostjo 12 MP."
+            "value": "Rahlo pritisnite in pridržite, nato se še naprej dotikajte Krmilne funkcije kamere, da ohranite ostrenje in osvetlitev."
           }
         },
         "en_AU": {
           "stringUnit": {
             "state": "translated",
-            "value": "Photos on the Fusion camera at 1× can be saved at 12 or 24 MP. Photos taken with Night mode, macro, flash or Portrait lighting will be saved at 12 MP."
+            "value": "Lightly press and hold, then continue touching Camera Control to maintain focus and exposure."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Fotos der Fusion-Kamera in der Stufe 1× können mit 12 oder 24 MP gesichert werden. Fotos, die im Nachtmodus, als Makro, mit Blitz oder Porträtbeleuchtung aufgenommen wurden, werden mit 12 MP gesichert."
+            "value": "Drücke leicht auf die Kamerasteuerung und halte sie gedrückt. Berühre anschließend weiterhin die Kamerasteuerung, um Fokus und Belichtung beizubehalten."
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ảnh được chụp bằng camera Fusion tại 1× có thể được lưu ở 12 hoặc 24 MP. Ảnh được chụp bằng chế độ Ban đêm, macro, flash hoặc Chiếu sáng chân dung sẽ được lưu ở 12 MP."
+            "value": "Nhấn nhẹ và giữ, sau đó tiếp tục chạm vào Điều khiển camera để duy trì lấy nét và phơi sáng."
           }
         },
         "ro": {
           "stringUnit": {
             "state": "translated",
-            "value": "Pozele realizate cu camera Fusion la 1× pot fi salvate la 12 sau 24 MP. Pozele realizate cu modul Noapte, macro, cu blițul sau cu efecte de iluminare vor fi salvate la 12 MP."
+            "value": "Apăsați ușor pe „Comenzi cameră” și mențineți, apoi continuați să atingeți pentru a menține focalizarea și expunerea."
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Las fotos que hagas con la cámara Fusion usando el zoom x1 se pueden guardar en una resolución de 12 Mpx o de 24 Mpx. Las que hagas en el modo Noche, en formato macro, con flash o con iluminación de retrato se guardarán en 12 Mpx."
+            "value": "Para bloquear estos parámetros, mantén pulsado suavemente el control de la cámara."
           }
         },
         "kk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Fusion камерасында 1× режимінде түсірілген фотоларды 12 немесе 24 Мпикс ажыратымдылығында сақтауға болады. Түнгі режимде, макро, жарқыл арқылы немесе «Портреттік жарықтандыру» режимінде түсірілген фотолар 12 Мпикс ажыратымдылығында сақталады."
+            "value": "Жай басып тұрыңыз, содан кейін фокус пен экспозицияны сақтау үшін камераны басқару элементінен саусағыңызды алмаңыз."
           }
         },
         "pt_BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "As fotos feitas com a câmera Fusion a 1× podem ser salvas em 12 ou 24 MP. As fotos feitas no modo Noite, com macro, flash ou Iluminação de Retrato são salvas em 12 MP."
+            "value": "Para manter o foco e a exposição, mantenha o Controle da Câmera levemente pressionado."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Les photos prises avec la caméra Fusion à 1× peuvent être enregistrées à une résolution de 12 ou 24 MP. Les photos prises en mode Nuit, en mode Macro, avec flash ou en mode « Éclairage de portrait » seront enregistrées à une résolution de 12 MP."
+            "value": "Appuyez légèrement sur la commande de l’appareil photo et maintenez le doigt dessus pour verrouiller la mise au point et l’exposition."
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Фотографії, зроблені камерою Fusion із масштабом 1×, можна зберігати з роздільністю 12 або 24 Мпкс. Фотографії, зроблені в нічному чи макрорежимі або з використанням спалаху чи портретного освітлення, завжди зберігатимуться з роздільністю 12 Мпкс."
+            "value": "Легко натисніть і утримуйте контролер камери. Не відпускайте його, щоб не втратити налаштування фокусу й експозиції."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "Fusionカメラの1倍で撮影した写真は12 MPまたは24 MPで保存できます。ナイトモード、マクロ、フラッシュ、またはポートレート照明で撮影した写真は12 MPで保存されます。"
+            "value": "軽く押した状態でカメラコントロールをタッチすると、フォーカスと露出を調整できます。"
           }
         },
         "pt_PT": {
           "stringUnit": {
             "state": "translated",
-            "value": "As fotografias da câmara Fusion a 1× podem ser guardadas a 12 ou 24 MP. As fotografias tiradas com modo Noite, macro, flash ou efeitos de iluminação são guardadas a 12 MP."
+            "value": "Prima suavemente e mantenha premido e, depois, continue a tocar no controlo da câmara para manter a focagem e a exposição."
           }
         },
         "hr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Fotografije snimljene Fusion kamerom u 1× mogu se spremiti u veličini 12 ili 24 MP. Fotografije snimljene Noćnim modom, makro fotografije, fotografije s bljeskalicom ili Osvjetljavanjem portreta spremit će se kao 12 MP."
+            "value": "Lagano pritisnite i zadržite, zatim nastavite dodirivati Kontrolu kamere za zadržavanje fokusa i ekspozicije."
+          }
+        }
+      }
+    },
+    "CAM_PRO_RAW_48MP_FOOTER_24MP_CAMERA_BUTTON": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ProRAW 및 최대 해상도(최대 48MP)를 위한 카메라 제어 항목을 표시합니다.\n\n1× Fusion 카메라는 48MP로 사진을 캡처할 수 있습니다. 야간 모드, 플래시 및 접사 촬영을 사용한 사진은 항상 12MP로 저장됩니다. Live Photo는 12MP 또는 24MP로 저장할 수 있습니다.\n\nProRAW는 선형 DNG 포맷을 사용하여 파일에서 더 많은 정보 및 다이내믹 레인지를 유지하는 10비트 파일로, 노출 및 화이트 밸런스를 편집할 때 추가적인 유연성을 제공합니다."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ניתן להציג פקד מצלמה עבור פורמט ProRAW ורזולוציה מקסימלית של עד 48 מ״פ.\n\nניתן לצלם תמונות ברזולוציית 48 מ״פ במצלמת ה-Fusion בהגדלה של ⁨1x⁩. תמונות שצולמו ב״מצב לילה״, תמונות שצולמו עם פלאש ותמונות מאקרו יישמרו תמיד ברזולוציית 12 מ״פ. תמונות Live Photo יכולות להישמר ברזולוציה של 12 מ״פ או 24 מ״פ.\n\n‏ProRAW הוא קובץ בקידוד 10 סיביות המשתמש בפורמט Linear DNG כדי לשמור יותר מידע וטווח דינמי בקובץ, וכדי לספק גמישות נוספת בעת עריכת החשיפה ואיזון הלבן."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tampilkan kontrol Kamera untuk ProRAW dan resolusi maksimum, hingga 48 MP.\n\n48 MP dapat diambil di kamera Fusion pada 1×. Foto mode Malam, kilat, dan makro akan selalu disimpan pada 12 MP. Live Photos dapat disimpan pada 12 atau 24 MP.\n\nProRAW adalah file 10 bit yang menggunakan format DNG Linear untuk menyimpan lebih banyak informasi dan rentang dinamis pada file, sehingga menyediakan fleksibilitas tambahan saat mengedit pencahayaan dan imbang putih."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toon cameraregelaar voor ProRAW en maximale resolutie, tot 48 MP.\n\nMet de Fusion-camera kunnen foto's met zoomniveau 1x worden gemaakt en met 48 MP worden bewaard. Foto's die met de nachtmodus of flits worden gemaakt, evenals macrofoto's, worden altijd bewaard met 12 MP. Live Photos kunnen worden bewaard met 12 of 24 MP.\n\nProRAW is een 10-bits bestand dat gebruikmaakt van de structuur 'Linear DNG' om meer informatie en een hoger dynamisch bereik in het bestand te bewaren, wat extra flexibiliteit biedt bij het bewerken van de belichting en de witbalans."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ProRAW ve 48 MP’ye kadar maksimum çözünürlükte çekim için Kamera denetimini gösterir.\n\nFusion kamerada 1× hızında 48 MP çekim yapılabilir. Gece modu, flaş kullanılmış ve makro fotoğraflar her zaman 12 MP olarak kaydedilir. Live Photo’lar 12 veya 24 MP olarak kaydedilebilir.\n\nProRAW, pozlamayı ve beyaz dengesini düzenlerken daha fazla esneklik sağlamak amacıyla dosyada daha fazla bilgi ve dinamik aralık bulundurmak için Linear DNG biçimini kullanan bir 10 bit dosyadır."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Показывать Контроллер камеры для работы с ProRAW и съемки в максимальном разрешении — до 48 Мпикс.\n\nФото с разрешением 48 Мпикс можно снимать на камеру Fusion без увеличения или уменьшения масштаба. Снимки в ночном режиме, со вспышкой или в режиме макросъемки всегда будут сохраняться с разрешением 12 Мпикс. Фото Live Photo можно сохранять с разрешением 12 или 24 Мпикс.\n\nProRAW — это 10‑битный файл, который использует формат линейных файлов DNG, чтобы передавать больше информации и динамический диапазон в файле. В этом формате проще скорректировать экспозицию и баланс белого."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Megjeleníti a ProRAW és a maximális felbontás (akár 48 MP) kameravezérlőjét.\n\nA Fusion-kamerával 1× nagyítás mellett 48 MP-es fotók készíthetők. Az éjszakai módban, vakuval vagy makróval készített fotók mindig 12 MP-es felbontással lesznek mentve. A Live Photók 12 vagy 24 MP-es felbontással menthetők.\n\nA ProRAW egy 10 bites fájl, amely a Lineáris DNG formátum segítségével több információt és nagyobb dinamikatartományt képes megőrizni a fájlban, így fokozott rugalmasságot tesz lehetővé az expozíció és a fehéregyensúly szerkesztésekor."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Näytä Kamerasäädin ProRAW:lle ja enimmäistarkkuudelle, enintään 48 MP.\n\n48 MP:n tarkkuudella voidaan kuvata Fusion-kameran 1×-tilassa. Yötila-, salama- ja makrokuvat tallennetaan aina 12 MP:nä. Live Photo -kuvat voidaan tallentaa 12 MP:nä tai 24 MP:nä.\n\nProRAW on 10-bittinen tiedosto, joka käyttää Linear DNG -muotoa säilyttääkseen tiedostossa enemmän tietoa ja dynaamista aluetta. Tämä lisää joustavuutta muokattaessa valotusta ja valkotasapainoa."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostra il controllo della fotocamera per scattare foto in ProRAW e con la massima risoluzione, fino a 48 MP.\n\nLe foto a 48 MP possono essere scattate con la fotocamera Fusion e lo zoom 1×. Le foto scattate in modalità notte, con il flash e in macro verranno sempre salvate a 12 MP. Le Live Photo possono essere salvate a 12 o 24 MP.\n\nProRAW è un file a 10 bit che utilizza il formato Linear DNG per conservare più informazioni e un intervallo dinamico superiore, offrendo maggiore flessibilità quando si modificano l’esposizione e il bilanciamento del bianco."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Muestra el control de Cámara para ProRAW y resolución máxima, hasta de 48 MP.\n\nEs posible hacer capturas de 48 MP con la cámara Fusion a 1×. El modo Noche, flash y las macrofotos siempre se guardarán en 12 MP. Las Live Photos se pueden guardar en 12 o 24 MP.\n\nProRAW es un archivo de 10 bits que usa el formato lineal DNG para guardar más información y un rango dinámico en el archivo, lo que brinda flexibilidad adicional al editar la exposición y el balance de blancos."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Εμφάνιση του Στοιχείου ελέγχου Κάμερας για το ProRAW και τη μέγιστη ανάλυση, έως 48 MP.\n\nΟι φωτογραφίες σε 48 MP μπορούν να τραβηχτούν με την κάμερα Fusion στο ζουμ 1×. Οι φωτογραφίες Νυχτερινής λειτουργίας, με φλας και οι μακροφωτογραφίες αποθηκεύονται πάντα σε 12 MP. Τα Live Photo αποθηκεύονται σε 12 ή 24 MP.\n\nΤο ProRAW είναι ένα αρχείο 10 bit που χρησιμοποιεί τη μορφή «Γραμμικό DNG» για διατήρηση περισσότερων πληροφοριών και του δυναμικού εύρους στο αρχείο, και παρέχει πρόσθετη ευελιξία κατά την επεξεργασία της έκθεσης και της ισορροπίας λευκού."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostra el control ProRAW i de resolució màxima de la càmera, que és de fins a 48 Mpx.\n\nLa càmera Fusion a 1× pot fer fotos en 48 Mpx. Les fotos amb el flaix o el mode de nit i les fotos macro sempre es desen en 12 Mpx. Les Live Photos es poden desar en 12 o 24 Mpx.\n\nEl ProRAW és un arxiu de 10 bits amb un format DNG lineal, que permet conservar més informació i el rang dinàmic de l’arxiu per proporcionar més flexibilitat a l’hora d’editar l’exposició i el balanç de blancs."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Affiche la commande de la caméra pour la prise de photos au format ProRAW et en résolution maximale (jusqu’à 48 Mpx).\n\nLa caméra Fusion à 1× peut enregistrer des photos de 48 Mpx. Les photos prises en mode Nuit, avec flash ou en mode macro seront toujours enregistrées à une résolution de 12 Mpx. Les Live Photos peuvent être enregistrées à une résolution de 12 ou 24 Mpx.\n\nProRAW est un fichier 10 bits qui utilise le format DNG linéaire pour retenir encore plus de détails et une gamme dynamique plus étendue, ce qui vous permet davantage de flexibilité lorsque vous modifiez l’exposition et l’équilibrage des blancs."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "顯示ProRAW和最高解析度（高達48 MP）的「相機」控制項目。\n\n48 MP可用「1×」融合相機拍攝。「夜間」模式、閃光燈和微距照片將一律用12 MP儲存。「原況照片」可用12或24 MP儲存。\n\nProRAW是使用線性DNG格式的10位元檔案，用以保留檔案中的更多資訊和動態範圍，並在編輯曝光和白平衡時提供更多彈性。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "顯示用於ProRAW與最高解像度（高達48 MP）的「相機」控制項目。\n\n48 MP相片可以使用1倍「融合相機」拍攝。夜間模式、閃光燈和微距相片將會總是儲存為12 MP。「原況相片」可以儲存為12或24 MP。\n\nProRAW是一個使用線性DNG格式的10位元檔案，可在檔案中保留更多資訊和動態範圍，編輯曝光和白平衡時有更大靈活性。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Visa kamerareglage för ProRAW och maximal upplösning, upp till 48 MP.\n\nFusion-kameran med 1× kan ta bilder med 48 MP. Bilder som tagits i nattläget, med blixt eller som makrobild sparas alltid med 12 MP. Live Photo-bilder kan sparas med 12 eller 24 MP.\n\nProRAW är en 10-bitars fil som använder formatet Linear DNG till att behålla mer information och dynamiskt omfång i filen. Detta ger ytterligare flexibilitet vid redigering av exponering och vitbalans."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vis kamerakontrollen for ProRAW og maks oppløsning, opptil 48 megapiksler.\n\nFusion-kameraet på 1 × kan ta bilder med 48 megapiksler. Nattmodus-, Live Photo-, blits- eller makro­bilder arkiveres alltid med 12 megapiksler. Live Photo-bilder kan arkiveres med 12 eller 24 megapiksler.\n\nProRAW er en 10-bit fil som bruker lineært DNG-format for å beholde mer informasjon og dynamisk område i filen. Dette gir mer fleksibilitet ved redigering av eksponering og hvitbalanse."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ProRAW और 48M MP तक अधिकतम रिज़ोल्यूशन के लिए कैमरा कंट्रोल दिखाएँ।\n\nFusion कैमरे पर 1× पर 48 MP कैप्चर किया जा सकता है। नाइट मोड, फ़्लैश और मैक्रो तस्वीरों को हमेशा 12 MP पर सहेजा जाएगा। Live Photos 12 या 24 MP पर सहेजी जा सकती हैं।\n\nProRAW एक 10-बिट फाइल होती है जो Linear DNG फ़ॉर्मैट का उपयोग करके फ़ाइल में अधिक जानकारी और डाइनैमिक रेंज बनाए रखती है, जो एक्सपोज़र और ह्वाइट बैलेंस के संपादन के समय अधिक सुविधाजनक होता है।"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vis kamerabetjening til ProRAW og maksimal opløsning op til 48 MP.\n\nFusionskameraet med 1× zoom kan tage fotos med 48 MP. Fotos taget med Nattilstand, blitz eller makro gemmes altid som 12 MP. Live Photos kan gemmes som 12 eller 24 MP.\n\nProRAW er et 10-bit arkiv, der bruger det lineære DNG-format til at bevare mere information og dynamisk omfang i arkivet. Dette giver yderligere fleksibilitet, når du redigerer eksponering og hvidbalance."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wyświetla w aplikacji Aparat narzędzia ProRAW oraz rejestrowania z maksymalną rozdzielczością 48 MP.\n\nAparat Fusion może rejestrować zdjęcia z rozdzielczością 48 MP przy ustawieniu 1×. Zdjęcia w trybie nocnym, robione z lampą błyskową oraz makro są zawsze zachowywane w rozdzielczości 12 MP. Zdjęcia Live Photo mogą być zachowywane w rozdzielczości 12 MP lub 24 MP.\n\n10‑bitowe pliki ProRAW przechowują więcej informacji i szerszy zakres tonalny, używając formatu Linear DNG. Zapewnia to więcej możliwości edycji ekspozycji i wyrównania bieli."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "إظهار عنصر تحكم الكاميرا لالتقاط ProRAW والتقاط أقصى دقة، لحد ^[48](formatNumber: true) ميغابكسل.\n\nيمكن الالتقاط بدقة ^[48](formatNumber: true) ميغابكسل بكاميرا Fusion بمعدل ⁨1×⁩. لكن الصور في النمط الليلي وصور الفلاش وصور الماكرو ستُحفظ دائمًا بدقة ^[12](formatNumber: true) ميغابكسل. أما الصور الحية، فيمكن حفظها بدقة ^[12](formatNumber: true) أو ^[24](formatNumber: true) ميغابكسل.\n\n‏ProRAW هو ملف ^[10](formatNumber: true)‑بت يستخدم تنسيق DNG الخطي للاحتفاظ بمعلومات أكثر ونطاق ديناميكي في الملف، مما يتيح مزيدًا من المرونة عند تعديل التعرض للضوء وتوازن اللون الأبيض."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show Camera control for ProRAW and maximum resolution, up to 48 MP.\n\n48 MP can be captured on the Fusion camera at 1×. Night mode, flash, and macro photos will always be saved at 12 MP. Live Photos can be saved at 12 or 24 MP.\n\nProRAW is a 10-bit file that uses the Linear DNG format to retain more information and dynamic range in the file, providing additional flexibility when editing exposure and white balance."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "แสดงตัวควบคุมกล้องสำหรับ ProRAW และความละเอียดสูงสุดถึง 48 MP\n\nสามารถจับภาพความละเอียด 48 MP ได้บนกล้อง Fusion ที่ 1× รูปภาพแบบโหมดกลางคืน, แฟลช และมาโครจะถูกบันทึกที่ความละเอียด 12 MP เสมอ Live Photo สามารถบันทึกได้ที่ความละเอียด 12 หรือ 24 MP\n\nProRAW เป็นไฟล์แบบ 10 บิตที่ใช้รูปแบบ DNG เชิงเส้นที่เก็บข้อมูลได้มากขึ้นและเก็บข้อมูลช่วงแสงกว้างในไฟล์ ซึ่งทำให้แก้ไขการเปิดรับแสงและการปรับสมดุลแสงสีขาวได้ง่ายยิ่งขึ้น"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "显示用于ProRAW和最大分辨率的相机控制，最高可达48 MP。\n\n48 MP照片可使用融合式相机“1×”拍摄。夜间模式、闪光灯模式和微距照片将始终存储为12 MP。实况照片可存储为12或24 MP。\n\nProRAW是使用线性DNG格式的10位文件，可在文件中保留更多信息和动态范围，从而为曝光和白平衡编辑提供更多灵活性。"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show Camera control for ProRAW and maximum resolution, up to 48 MP.\n\n48 MP can be captured on the Fusion camera at 1×. Night mode, flash and macro photos will always be saved at 12 MP. Live Photos can be saved at 12 or 24 MP.\n\nProRAW is a 10-bit file that uses the Linear DNG format to retain more information and dynamic range in the file, providing additional flexibility when editing exposure and white balance."
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Matykite kameros valdiklį, skirtą „ProRAW“ formatui ir didžiausiai raiškai (iki 48 MP).\n\n48 MP raiškos nuotraukas galima užfiksuoti „Fusion“ kamera, pasirinkus × 1 priartinimą. Fotografuojant naktiniu režimu, naudojant blykstę arba makrorežimą, nuotraukos visada bus išsaugotos 12 MP raiška. Pasirinkus „Live Photos“, nuotraukas galima išsaugoti 12 arba 24 MP raiška.\n\n„ProRAW“ yra 10 bitų failas, kuriame naudojamas linijinis DNG formatas siekiant faile išsaugoti daugiau informacijos ir dinaminio diapazono – tai suteikia papildomo lankstumo redaguojant ekspoziciją ir baltos spalvos balansą."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Muestra el control de Cámara para ProRAW y resolución máxima, hasta de 48 MP.\n\nEs posible hacer capturas de 48 MP con la cámara Fusion a 1×. El modo Noche, flash y las macrofotos siempre se guardarán en 12 MP. Las Live Photos se pueden guardar en 12 o 24 MP.\n\nProRAW es un archivo de 10 bits que usa el formato lineal DNG para guardar más información y un rango dinámico en el archivo, lo que brinda flexibilidad adicional al editar la exposición y el balance de blancos."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tunjukkan kawalan Kamera untuk ProRAW dan resolusi maksimum, sehingga 48 MP.\n\n48 MP boleh ditangkap dengan kamera Fusion pada 1×. Foto mod Malam, denyar dan makro akan sentiasa disimpan pada 12 MP. Live Photos boleh disimpan pada 12 atau 24 MP.\n\nProRAW ialah fail 10 bit yang menggunakan format Linear DNG untuk mengekalkan lebih banyak maklumat dan julat dinamik dalam fail, yang menyediakan fleksibiliti tambahan semasa mengedit pendedahan serta imbangan putih."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobrazí v Kamere ovládacie prvky pre ProRAW a maximálne rozlíšenie až do 48 Mpx.\n\nFotky v rozlíšení 48 Mpx je možné fotiť kamerou Fusion pri priblížení 1×. Fotky nasnímané v nočnom režime, fotky s bleskom a v režime makro sa vždy budú ukladať v rozlíšení 12 Mpx. Fotky Live Photo je možné ukladať v rozlíšení 12 alebo 24 Mpx.\n\nProRAW je 10-bitový súbor, ktorý využíva formát Linear DNG na zachovanie väčšieho množstva informácií a dynamického rozsahu a poskytuje väčšiu flexibilitu pri upravovaní expozície a vyváženia bielej."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobrazuje ovládací prvky fotoaparátu pro ProRAW a pro maximální rozlišení – až do 48 Mpx.\n\nFotky v rozlišení 48 Mpx je možné pořizovat fotoaparátem Fusion při přiblížení 1×. Fotky pořízené v nočním režimu, fotky s bleskem a fotky v režimu makro se budou vždy ukládat v rozlišení 12 Mpx. Snímky Live Photo lze ukládat v rozlišení 12 nebo 24 Mpx.\n\nProRAW jsou 10bitové soubory využívající lineární DNG formát, který zachovává více dat a větší dynamický rozsah a poskytuje víc volnosti při úpravách expozice a vyvážení bílé."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Показва се бутонът Камера за ProRAW и максимална разделителна способност, до 48 MP.\n\nСнимки в 48 MP могат да бъдат заснети с Fusion камерата с приближаване 1×. Снимките в Нощен режим, снимките със светкавица и макро снимките винаги ще се запазват в 12 MP. Снимките Live Photo могат да се запазват в 12 или 24 MP.\n\nProRAW е 10-битов файл, който използва линейния DNG формат, за да запази повече информация и динамичен обхват във файла, осигурявайки допълнителна гъвкавост за редактиране на експозицията и баланса на бялото."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prikaže Krmilno funkcijo kamere za ProRAW in največjo ločljivost, največ 48 MP.\n\n48 MP je mogoče zajeti s kamero Fusion pri povečavi 1×. Fotografije, posnete v nočnem načinu, z bliskavico in makro fotografije se bodo vedno shranile z ločljivostjo 12 MP. Fotografije Live Photo je mogoče shraniti z ločljivostjo 12 ali 24 MP.\n\nProRAW je 10-bitna datoteka, ki uporablja obliko zapisa Linear DNG za hranjenje več podatkov in dinamičnega razpona v datoteki, kar zagotavlja dodatno prilagodljivost pri urejanju osvetlitve in nastavitve beline."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show Camera control for ProRAW and maximum resolution, up to 48 MP.\n\n48 MP can be captured on the Fusion camera at 1×. Night mode, flash and macro photos will always be saved at 12 MP. Live Photos can be saved at 12 or 24 MP.\n\nProRAW is a 10-bit file that uses the Linear DNG format to retain more information and dynamic range in the file, providing additional flexibility when editing exposure and white balance."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kamerasteuerung für Aufnahmen in ProRaw und mit maximaler Auflösung von bis zu 48 MP einblenden.\n\n48 MP kann mit der Fusion-Kamera in der Stufe 1× aufgenommen werden. Fotos im Nachtmodus oder mit Blitz sowie Makrofotos werden immer mit 12 MP gesichert. Live Photo-Fotos können mit 12 oder 24 MP gesichert werden.\n\nProRAW ist ein 10-Bit-Dateiformat, das mithilfe des Standards „Linear DNG“ mehr Informationen und einen größeren Dynamikbereich speichern kann. Es bietet dadurch mehr Möglichkeiten bei der Bearbeitung der Belichtung und des Weißabgleichs."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hiển thị điều khiển Camera cho ProRAW và độ phân giải tối đa, lên đến 48 MP.\n\n48 MP có thể được chụp trên camera Fusion ở 1×. Ảnh chụp bằng chế độ Ban đêm, flash và macro sẽ luôn được lưu ở 12 MP. Live Photos có thể được lưu tại 12 MP hoặc 24 MP.\n\nProRAW là một tệp 10-bit sử dụng định dạng DNG tuyến tính để lưu giữ nhiều thông tin hơn và dải tần nhạy sáng trong tệp, cung cấp sự linh hoạt bổ sung khi chỉnh sửa độ phơi sáng và độ cân bằng trắng."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Afișați comenzile aplicației Cameră pentru înregistrarea ProRAW și la rezoluție maximă, de până la 48 MP.\n\nPozele la 48 MP pot fi realizate cu camera Fusion la 1×. Pozele realizate cu modul Noapte, cu blițul sau macro vor fi salvate întotdeauna la 12 MP. Pozele Live Photo pot fi salvate la 12 sau 24 MP.\n\nProRAW este un fișier pe 10 biți care utilizează formatul Linear DNG pentru a reține mai multe informații și o gamă dinamică superioară în fișier, oferind flexibilitate suplimentară la editarea expunerii și balansului de alb."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Muestra el control de la cámara para hacer fotos con formato ProRAW y en máxima resolución (hasta 48 Mpx).\n\nSe pueden tomar fotos con una resolución de 48 Mpx usando la cámara Fusion con la distancia focal por omisión (x1). Las fotos realizadas en el modo Noche, con flash o en formato macro siempre se guardarán en 12 Mpx. Las Live Photo se pueden guardar en 12 o en 24 Mpx.\n\nProRAW es un archivo de 10 bits que utiliza el formato DNG lineal para conservar más información y el rango dinámico del archivo, lo que ofrece más flexibilidad a la hora de editar la exposición y el balance de blancos."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ProRAW және 48 Mпикс дейінгі максималды ажыратымдылық үшін камераны басқару элементін көрсету.\n\n48 Мпикс фотоларды Fusion камерасында 1× режимінде түсіруге болады. Түнгі режимдегі, жарқыл арқылы түсірілген және макро фотолар әрқашан 12 Мпикс ажыратымдылығында сақталады. Live Photo фотоларын 12 немесе 24 Мпикс ажыратымдылығында сақтауға болады.\n\nProRAW — файлда толығырақ ақпарат пен динамикалық ауқымды сақтау үшін сызықтық DNG файлдарының форматын пайдаланатын 10 биттік файл. Бұл форматта экспозиция мен ақ түс балансын реттеу жеңілірек."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostre o controle da Câmera para ProRAW e resolução máxima de 48 MP.\n\nA câmera Fusion a 1× pode capturar fotos em 48 MP. As fotos feitas no modo Noite, com flash ou macro são sempre salvas em 12 MP. As Live Photos podem ser salvas em 12 ou 24 MP.\n\nProRAW é um arquivo de 10 bits que usa o formato Linear DNG para reter mais informações e alcance dinâmico, fornecendo flexibilidade adicional na edição da exposição e do balanço de branco."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Affichez la commande de capture au format Apple ProRAW et en résolution maximale (jusqu’à 48 MP) de la caméra.\n\nLa caméra Fusion à 1× peut capturer des photos à une résolution de 48 MP. Les photos prises en mode Nuit, en mode Macro et avec flash seront toujours enregistrées à une résolution de 12 MP. Les Live Photos peuvent être enregistrées à une résolution de 12 ou 24 MP.\n\nLe format Apple ProRAW est un fichier 10 bits qui utilise le format DNG linéaire pour conserver plus d’informations et étendre la plage dynamique au sein du fichier, vous offrant ainsi plus de flexibilité lors de la modification de l’exposition et de la balance des blancs."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Показувати елемент керування камерою для зйомки у форматі ProRAW із максимальною роздільністю (до 48 Мпкс).\n\nФотографії з роздільністю 48 Мпкс можна зробити камерою Fusion із масштабом 1×. Знімки, зроблені в нічному чи макрорежимі або зі спалахом, завжди зберігатимуться з роздільністю 12 Мпкс. Фотографії Live Photo можна зберігати з роздільністю 12 Мпкс або 24 Мпкс.\n\nProRAW — це 10‑бітний файл, що використовує формат Linear DNG для збереження більшої кількості даних і динамічного діапазону у файлі, забезпечуючи додаткову гнучкість під час змінювання експозиції та балансу білого."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ProRawと最大解像度（48 MPまで）のカメラコントロールを表示します。\n\n48 MPの解像度はFusionカメラの1倍を使用して撮影できます。ナイトモード、フラッシュ、およびマクロで撮影した写真は常に12 MPで保存されます。Live Photosは12 MPまたは24 MPで保存できます。\n\nProRAWとは、より多くの情報とダイナミックレンジをファイルに保持するためにリニアDNGフォーマットを使用した10ビットファイルです。露出やホワイトバランスを編集する際の柔軟性が高められています。"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar o controlo da aplicação Câmara para ProRAW e resolução máxima, até 48 MP.\n\nÉ possível capturar a 48 MP na câmara Fusion a 1×. As fotografias com modo Noite, flash e macro são sempre guardadas a 12 MP. As Live Photos podem ser guardadas a 12 ou 24 MP.\n\nProRAW é um ficheiro de 10 bits que usa o formato Linear DNG para preservar mais informação e gama dinâmica no ficheiro, o que permite uma maior flexibilidade ao editar a exposição e o equilíbrio de brancos."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prikazivanje kontrole kamere za ProRAW i maksimalnu razlučivost, do 48 MP.\n\n48 MP može se snimiti Fusion kamerom pri 1X. Fotografije snimljene Noćnim modom ili s bljeskalicom kao i makro fotografije uvijek će se spremiti kao 12 MP. Live Photos mogu se spremiti kao 12 ili 24 MP.\n\nProRAW je 10-bitna datoteka koja koristi format Linear DNG za zadržavanje više informacija i dinamičkog raspona u datoteci, čime se pruža dodatna fleksibilnost prilikom uređivanja ekspozicije i ravnoteže bjeline."
           }
         }
       }
@@ -5915,6 +6184,275 @@
           "stringUnit": {
             "state": "translated",
             "value": "Kontrola kamere"
+          }
+        }
+      }
+    },
+    "ENHANCED_RESOLUTION_FOOTER_CAMERA_BUTTON": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1× Fusion 카메라로 촬영한 사진은 12MP 또는 24MP로 저장할 수 있습니다. 야간 모드, 접사 촬영, 플래시 또는 인물 사진 조명을 사용한 사진은 12MP로 저장됩니다."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "תמונות שצולמו במצלמת ה-Fusion בהגדלה של ⁨1×⁩ יכולות להישמר ברזולוציה של 12 מ״פ או 24 מ״פ. תמונות שצולמו ב״מצב לילה״, תמונות שצולמו עם פלאש, תמונות מאקרו או תמונות עם ״תאורת פורטרט״ יישמרו ברזולוציה של 12 מ״פ."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Foto dengan kamera Fusion pada 1× dapat disimpan pada 12 atau 24 MP. Foto yang diambil dengan mode Malam, makro, kilat, atau Pencahayaan Potret akan disimpan pada 12 MP."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Foto's die met de Fusion-camera met zoomniveau 1× worden genomen, kunnen worden bewaard met 12 of 24 MP. Foto's die met de nachtmodus, flits of portretbelichting worden gemaakt, evenals macrofoto's, worden bewaard met 12 MP."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fusion kamerada 1× kullanan fotoğraflar 12 veya 24 MP olarak kaydedilebilir. Gece modu, makro, flaş ya da Portre Işığı kullanılmış fotoğraflar 12 MP olarak kaydedilir."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Фото, снятые на камеру Fusion без увеличения или уменьшения масштаба, можно сохранять в разрешении 12 Мпикс или 24 Мпикс. Снимки в ночном режиме, со вспышкой, в режиме макросъемки и с портретным освещением будут сохраняться с разрешением 12 Мпикс."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Fusion-kamerával 1× nagyítás mellett készült fotók 12 vagy 24 MP-es felbontással menthetők. Az éjszakai módban, makróval, vakuval vagy Portrémegvilágítással készített fotók 12 MP-es felbontással lesznek mentve."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fusion-kameralla 1×-suurennoksella otetut kuvat voidaan tallentaa 12 MP:n tai 24 MP:n tarkkuudella. Yötila-, makro-, salama- ja muotokuvavalokuvat tallennetaan 12 MP:n tarkkuudella."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le foto scattate con la fotocamera Fusion e lo zoom 1× possono essere salvate a 12 o 24 MP. Le foto scattate in modalità Notte, con il flash, in macro o con effetti di illuminazione della modalità Ritratto verranno salvate a 12 MP."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las fotos tomadas con la cámara Fusion a 1x pueden guardarse en 12 MP o 24 MP, y las que se tomen con el flash, alguna iluminación de retrato o los modos Noche o Macro se guardarán en 12 MP."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Οι φωτογραφίες που έχουν ληφθεί με την κάμερα Fusion και ζουμ 1× μπορούν να αποθηκευτούν σε 12 ή 24 MP. Οι φωτογραφίες που έχουν ληφθεί με Νυχτερινή λειτουργία, φλας, Φωτισμό πορτρέτου και οι μακροφωτογραφίες θα αποθηκεύονται σε 12 MP."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les fotos fetes amb la càmera Fusion a 1× es poden desar en 12 o 24 Mpx. Les fotos amb el flaix o el mode de nit i les fotos macro o amb il·luminació de retrat sempre es desen en 12 Mpx."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les photos prises avec la caméra Fusion à 1× peuvent être enregistrées à une résolution de 12 ou 24 Mpx. Les photos prises en mode Nuit, en mode macro, avec flash ou avec l’éclairage de portrait seront enregistrées à une résolution de 12 Mpx."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "以「1×」融合相機拍攝的照片可用12或24 MP儲存。「夜間」模式、微距照片、閃光燈或「人像光線」的照片將一律用12 MP儲存。"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "以1倍「融合相機」拍攝的相片可以儲存為12或24 MP。使用「夜間」模式、微距相片、閃光燈或「人像燈光」的相片將一律儲存為12 MP。"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bilder från Fusion-kameran med 1× kan sparas med 12 eller 24 MP. Bilder som har tagits i nattläget, som makrobild, med blixt eller med porträttljus sparas alltid med 12 MP."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bilder tatt med Fusion-kameraet på 1 × kan arkiveres som 12 eller 24 megapiksler. Bilder tatt med nattmodus, blits, Portrettlyssetting eller makrobilder vil bli arkivert med 12 megapiksler."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fusion कैमरे के ज़रिए 1× पर ली गई तस्वीरों को 12 या 24 MP पर सहेजा जा सकता है। नाइट मोड, मैक्रो और फ़्लैश या पोर्ट्रेट लाइटिंग में ली गई तस्वीरें 12 MP पर सहेजी जाएँगी।"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotos taget med fusionskameraet ved 1x zoom kan gemmes som 12 eller 24 MP. Fotos taget med Nattilstand, makro, blitz eller portrætlys gemmes som 12 MP."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zdjęcie robione aparatem Fusion przy ustawieniu 1× można zachowywać w rozdzielczości 12 MP lub 24 MP. Zdjęcia w trybie nocnym, makro, robione z lampą błyskową lub z oświetleniem portretowym są zawsze zachowywane w rozdzielczości 12 MP."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "الصور الملتقطة بكاميرا Fusion بمعدل ⁨1×⁩ يمكن حفظها بدقة ^[12](formatNumber: true) أو ^[24](formatNumber: true) ميغابكسل. وستُحفظ الصور الملتقطة باستخدام النمط الليلي أو الماكرو أو الفلاش أو إضاءة بورتريه بدقة ^[12](formatNumber: true) ميغابكسل."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Photos on the Fusion camera at 1× can be saved at 12 or 24 MP. Photos taken with Night mode, macro, flash, or Portrait Lighting will be saved at 12 MP."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "รูปภาพบนกล้อง Fusion ที่ 1× สามารถบันทึกได้ที่ความละเอียด 12 หรือ 24 MP รูปภาพที่ถ่ายแบบโหมดกลางคืน มาโคร แฟลช หรือการจัดแสงภาพถ่ายบุคคลจะถูกบันทึกที่ความละเอียด 12 MP"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "融合式相机“1×”拍摄的照片可存储为12或24 MP。夜间模式、微距模式、闪光灯模式或人像光效下拍摄的照片将存储为12 MP。"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Photos on the Fusion camera at 1× can be saved at 12 or 24 MP. Photos taken with Night mode, macro, flash or Portrait lighting will be saved at 12 MP."
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nuotraukas, padarytas „Fusion“ kamera, pasirinkus x 1 priartinimą, galima išsaugoti 12 arba 24 MP raiška. Fotografuojant naktiniu režimu, naudojant makrorežimą, blykstę arba portreto apšvietimą, nuotraukos bus išsaugotos 12 MP raiška."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las fotos tomadas con la cámara Fusion a 1x pueden guardarse en 12 MP o 24 MP, y las que se tomen con el flash, alguna iluminación de retrato o los modos Noche o Macro se guardarán en 12 MP."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Foto dengan kamera Fusion pada 1× boleh disimpan pada 12 atau 24 MP. Foto yang diambil dengan mod Malam, makro, denyar atau Pencahayaan Potret akan disimpan pada 12 MP."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotky snímané kamerou Fusion so zväčšením 1× je možné ukladať v rozlíšení 12 alebo 24 Mpx. Fotky nasnímané v nočnom režime, fotky s bleskom a v režime makro alebo s portrétovým osvetlením sa vždy ukladajú v rozlíšení 12 Mpx."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotky pořízené fotoaparátem Fusion s přiblížením 1× lze uložit v rozlišení 12 nebo 24 Mpx. Fotky pořízené v nočním režimu, v režimu makro, s bleskem a s efektem Nasvícení portrétu se budou ukládat v rozlišení 12 Mpx."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Снимките, направени с Fusion камерата с приближаване 1×, могат да бъдат запазени в 12 или 24 MP. Снимките, заснети в Нощен режим, макро, със светкавица или с Портретно осветление, винаги ще се запазвани в 12 MP."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotografije kamere Fusion je pri povečavi 1× mogoče shraniti z ločljivostjo 12 ali 24 MP. Fotografije, posnete v nočnem načinu, z bliskavico, z osvetlitvijo portreta ali makro fotografije se bodo shranile z ločljivostjo 12 MP."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Photos on the Fusion camera at 1× can be saved at 12 or 24 MP. Photos taken with Night mode, macro, flash or Portrait lighting will be saved at 12 MP."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotos der Fusion-Kamera in der Stufe 1× können mit 12 oder 24 MP gesichert werden. Fotos, die im Nachtmodus, als Makro, mit Blitz oder Porträtbeleuchtung aufgenommen wurden, werden mit 12 MP gesichert."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ảnh được chụp bằng camera Fusion tại 1× có thể được lưu ở 12 hoặc 24 MP. Ảnh được chụp bằng chế độ Ban đêm, macro, flash hoặc Chiếu sáng chân dung sẽ được lưu ở 12 MP."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pozele realizate cu camera Fusion la 1× pot fi salvate la 12 sau 24 MP. Pozele realizate cu modul Noapte, macro, cu blițul sau cu efecte de iluminare vor fi salvate la 12 MP."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Las fotos que hagas con la cámara Fusion usando el zoom x1 se pueden guardar en una resolución de 12 Mpx o de 24 Mpx. Las que hagas en el modo Noche, en formato macro, con flash o con iluminación de retrato se guardarán en 12 Mpx."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fusion камерасында 1× режимінде түсірілген фотоларды 12 немесе 24 Мпикс ажыратымдылығында сақтауға болады. Түнгі режимде, макро, жарқыл арқылы немесе «Портреттік жарықтандыру» режимінде түсірілген фотолар 12 Мпикс ажыратымдылығында сақталады."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "As fotos feitas com a câmera Fusion a 1× podem ser salvas em 12 ou 24 MP. As fotos feitas no modo Noite, com macro, flash ou Iluminação de Retrato são salvas em 12 MP."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les photos prises avec la caméra Fusion à 1× peuvent être enregistrées à une résolution de 12 ou 24 MP. Les photos prises en mode Nuit, en mode Macro, avec flash ou en mode « Éclairage de portrait » seront enregistrées à une résolution de 12 MP."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Фотографії, зроблені камерою Fusion із масштабом 1×, можна зберігати з роздільністю 12 або 24 Мпкс. Фотографії, зроблені в нічному чи макрорежимі або з використанням спалаху чи портретного освітлення, завжди зберігатимуться з роздільністю 12 Мпкс."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fusionカメラの1倍で撮影した写真は12 MPまたは24 MPで保存できます。ナイトモード、マクロ、フラッシュ、またはポートレート照明で撮影した写真は12 MPで保存されます。"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "As fotografias da câmara Fusion a 1× podem ser guardadas a 12 ou 24 MP. As fotografias tiradas com modo Noite, macro, flash ou efeitos de iluminação são guardadas a 12 MP."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotografije snimljene Fusion kamerom u 1× mogu se spremiti u veličini 12 ili 24 MP. Fotografije snimljene Noćnim modom, makro fotografije, fotografije s bljeskalicom ili Osvjetljavanjem portreta spremit će se kao 12 MP."
           }
         }
       }
