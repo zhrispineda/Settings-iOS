@@ -136,6 +136,7 @@
 		834CAE482D1DE94000F2E069 /* AirDropSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834CAE472D1DE94000F2E069 /* AirDropSettings.xcstrings */; };
 		834F2BF32D6570FC00AD85CF /* SettingsSimulator.gif in Resources */ = {isa = PBXBuildFile; fileRef = 834F2BF22D6570FC00AD85CF /* SettingsSimulator.gif */; };
 		8352C10A2D66C0140072B651 /* CloudSubscriptionFeatures.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8352C1092D66C0140072B651 /* CloudSubscriptionFeatures.xcstrings */; };
+		8352DEA22D70F716004B2575 /* SettingsSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8352DEA12D70F716004B2575 /* SettingsSearchView.swift */; };
 		83558CE12D416CB200D23945 /* AnalyticsDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83558CE02D416CB200D23945 /* AnalyticsDataView.swift */; };
 		8355C8002CE523970067D675 /* GameCenter.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8355C7FF2CE523970067D675 /* GameCenter.xcstrings */; };
 		8355C8022CE5258C0067D675 /* GymKit.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8355C8012CE5258C0067D675 /* GymKit.xcstrings */; };
@@ -628,6 +629,7 @@
 		834CAE472D1DE94000F2E069 /* AirDropSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AirDropSettings.xcstrings; sourceTree = "<group>"; };
 		834F2BF22D6570FC00AD85CF /* SettingsSimulator.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SettingsSimulator.gif; sourceTree = "<group>"; };
 		8352C1092D66C0140072B651 /* CloudSubscriptionFeatures.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = CloudSubscriptionFeatures.xcstrings; sourceTree = "<group>"; };
+		8352DEA12D70F716004B2575 /* SettingsSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSearchView.swift; sourceTree = "<group>"; };
 		83558CE02D416CB200D23945 /* AnalyticsDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsDataView.swift; sourceTree = "<group>"; };
 		8355C7FF2CE523970067D675 /* GameCenter.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = GameCenter.xcstrings; sourceTree = "<group>"; };
 		8355C8012CE5258C0067D675 /* GymKit.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = GymKit.xcstrings; sourceTree = "<group>"; };
@@ -1643,6 +1645,7 @@
 				83F516C72C21ECBD0004E87A /* Services */,
 				833C6EAA2C2087BB00A8D91C /* Apps */,
 				83F626D22B827EEC00ED343F /* Developer */,
+				8352DEA12D70F716004B2575 /* SettingsSearchView.swift */,
 				830976D22CDD1B2F0087F1A1 /* FollowUpView.swift */,
 				83F516C32C21EB550004E87A /* AppsView.swift */,
 				83815CF82B768F5C00F53A0F /* DeveloperView.swift */,
@@ -2545,6 +2548,7 @@
 				838134F72BCDA9380049E197 /* SoundsHapticsView.swift in Sources */,
 				83B893B62B8FC844005705A3 /* HoverTextView.swift in Sources */,
 				838A9EC22B7E81EC00ED261C /* ContentPrivacyRestrictionsView.swift in Sources */,
+				8352DEA22D70F716004B2575 /* SettingsSearchView.swift in Sources */,
 				832EF3A72B819B2E0066A1BF /* ModifierKeysView.swift in Sources */,
 				83F78A0F2B8E7D5000025062 /* ControlNearbyDevicesView.swift in Sources */,
 				833419302D40291A006FB9F1 /* PartsServiceHistoryView.swift in Sources */,
