@@ -60,23 +60,7 @@ struct ContentView: View {
                             if siriEnabled && UIDevice.IntelligenceCapability {
                                 // MARK: TipKit Section
                                 Section {
-                                    TipView(AppleIntelligenceTip())
-                                        .padding(-15)
-                                        .tipBackground(Color.background)
-                                        .task {
-                                            do {
-                                                try Tips.configure([
-                                                    .displayFrequency(.immediate),
-                                                    .datastoreLocation(.applicationDefault)
-                                                ])
-                                            }
-                                            catch {
-                                                print("Error initializing TipKit \(error.localizedDescription)")
-                                            }
-                                        }
-                                    Button("GM_ADM_CFU_ACTION_TEXT".localize(table: "CloudSubscriptionFeatures")) {}
-                                        .bold()
-                                        .padding(.leading, 55)
+                                    ImageCreationTipView()
                                 }
                             }
                             
@@ -147,7 +131,9 @@ struct ContentView: View {
                         .overlay {
                             if searchFocused {
                                 List {
-                                    Section("Suggestions") {}
+                                    if searchText.isEmpty {
+                                        Section("Suggestions") {}
+                                    }
                                 }
                                 .listStyle(.inset)
                             }
@@ -191,23 +177,7 @@ struct ContentView: View {
                             if siriEnabled && UIDevice.IntelligenceCapability {
                                 // MARK: TipKit Section
                                 Section {
-                                    TipView(AppleIntelligenceTip())
-                                        .padding(-15)
-                                        .tipBackground(Color.background)
-                                        .task {
-                                            do {
-                                                try Tips.configure([
-                                                    .displayFrequency(.immediate),
-                                                    .datastoreLocation(.applicationDefault)
-                                                ])
-                                            }
-                                            catch {
-                                                print("Error initializing TipKit \(error.localizedDescription)")
-                                            }
-                                        }
-                                    Button("GM_ADM_CFU_ACTION_TEXT".localize(table: "CloudSubscriptionFeatures")) {}
-                                        .bold()
-                                        .padding(.leading, 55)
+                                    ImageCreationTipView()
                                 }
                             }
                             
@@ -269,7 +239,9 @@ struct ContentView: View {
                         .overlay {
                             if searchFocused {
                                 List {
-                                    SettingsSearchView()
+                                    if searchText.isEmpty {
+                                        SettingsSearchView()
+                                    }
                                 }
                                 .listStyle(.inset)
                             }
@@ -287,22 +259,6 @@ struct ContentView: View {
                     .id(id)
                 }
             }
-        }
-    }
-    
-    // Discover Apple Intelligence Tip Struct
-    struct AppleIntelligenceTip: Tip {
-        var title: Text {
-            Text("GM_ADM_CFU_TITLE", tableName: "CloudSubscriptionFeatures")
-        }
-        
-        var message: Text? {
-            Text("GM_ADM_CFU_DESCRIPTION", tableName: "CloudSubscriptionFeatures")
-        }
-        
-        var image: Image? {
-            Image("GM_ADM_CFU_IMAGE")
-            
         }
     }
 }

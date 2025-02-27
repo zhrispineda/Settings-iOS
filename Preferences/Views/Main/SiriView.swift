@@ -60,22 +60,7 @@ struct SiriView: View {
             
             // MARK: TipKit Section
             Section {
-                TipView(AppleIntelligenceTip())
-                    .tipBackground(Color.background)
-                    .task {
-                        do {
-                            try Tips.configure([
-                                .displayFrequency(.immediate),
-                                .datastoreLocation(.applicationDefault)
-                            ])
-                        }
-                        catch {
-                            print("Error initializing TipKit \(error.localizedDescription)")
-                        }
-                    }
-                Button("Learn More") {}
-                    .bold()
-                    .padding(.leading, 70)
+                AppleIntelligenceTipView()
             }
             
             // MARK: Siri Requests Section
@@ -187,23 +172,6 @@ struct SiriView: View {
                     .font(.subheadline)
                     .opacity(frameY < 50.0 ? opacity : 0) // Only fade when passing the help section title at the top
             }
-        }
-    }
-    
-    // Discover Apple Intelligence Tip Struct
-    struct AppleIntelligenceTip: Tip {
-        var title: Text {
-            Text("Discover Apple Intelligence")
-        }
-        
-        var message: Text? {
-            Text("Enhance your writing, express your creative side, and simplify your tasks.")
-        }
-        
-        var image: Image? {
-            Image(systemName: "apple.intelligence")
-                .symbolRenderingMode(.multicolor)
-                
         }
     }
 }

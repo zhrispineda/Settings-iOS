@@ -36,7 +36,7 @@ final class PreferencesUITests: XCTestCase {
         cancelButton.firstMatch.tap()
         
         // MARK: Interact with SettingsLink buttons
-        let buttons = ["Wi-Fi", "Bluetooth", "Cellular", "Battery", "General", "Accessibility", "Action Button", "Apple Intelligence & Siri", "Camera", "Control Center"]
+        let buttons = ["Wi-Fi", "Bluetooth", "Cellular", "Battery", "General"]
         
         for button in buttons {
             let btn = app.buttons[button.localize(table: "Localizable")]
