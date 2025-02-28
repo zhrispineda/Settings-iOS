@@ -17,16 +17,7 @@ struct SettingsSearchView: View {
                 Button {
                     stateManager.path.append(AnyRoute(AppsRoute()))
                 } label: {
-                    VStack {
-                        IconView(id: "Apps", icon: "app.grid.3x3", color: Color.indigo, iconColor: Color.white)
-                            .scaleEffect(2.1)
-                            .frame(width: 64, height: 64)
-                        Text("Apps")
-                            .font(.footnote)
-                            .foregroundStyle(.secondary)
-                            .bold()
-                            .multilineTextAlignment(.center)
-                    }
+                    SuggestedIconView(id: "Apps", icon: "app.grid.3x3", iconColor: Color.indigo)
                 }
                 .buttonStyle(PlainButtonStyle())
                 
@@ -35,16 +26,7 @@ struct SettingsSearchView: View {
                 Button {
                     stateManager.path.append(AnyRoute(GeneralRoute()))
                 } label: {
-                    VStack {
-                        IconView(id: "General", icon: "gear", color: Color.gray, iconColor: Color.white)
-                            .scaleEffect(2.1)
-                            .frame(width: 64, height: 64)
-                        Text("General")
-                            .font(.footnote)
-                            .foregroundStyle(.secondary)
-                            .bold()
-                            .multilineTextAlignment(.center)
-                    }
+                    SuggestedIconView(id: "General", icon: "gear", iconColor: Color.gray)
                 }
                 .buttonStyle(PlainButtonStyle())
                 
@@ -53,16 +35,7 @@ struct SettingsSearchView: View {
                 Button {
                     stateManager.path.append(AnyRoute(AccessibilityRoute()))
                 } label: {
-                    VStack {
-                        IconView(id: "Accessibility", icon: "accessibility", color: Color.blue, iconColor: Color.white)
-                            .scaleEffect(2.1)
-                            .frame(width: 64, height: 64)
-                        Text("Accessibility")
-                            .font(.footnote)
-                            .foregroundStyle(.secondary)
-                            .bold()
-                            .multilineTextAlignment(.center)
-                    }
+                    SuggestedIconView(id: "Accessibility", icon: "accessibility", iconColor: Color.blue)
                 }
                 .buttonStyle(PlainButtonStyle())
                 
@@ -71,20 +44,31 @@ struct SettingsSearchView: View {
                 Button {
                     stateManager.path.append(AnyRoute(PrivacySecurityRoute()))
                 } label: {
-                    VStack {
-                        IconView(id: "Privacy & Security", icon: "hand.raised.fill", color: Color.blue, iconColor: Color.white)
-                            .scaleEffect(2.1)
-                            .frame(width: 64, height: 64)
-                        Text("Privacy & Security")
-                            .font(.footnote)
-                            .foregroundStyle(.secondary)
-                            .bold()
-                            .multilineTextAlignment(.center)
-                    }
+                    SuggestedIconView(id: "Privacy & Security", icon: "hand.raised.fill", iconColor: Color.blue)
                 }
                 .buttonStyle(PlainButtonStyle())
             }
             .padding(.horizontal)
+        }
+    }
+}
+
+struct SuggestedIconView: View {
+    var id: String
+    var icon: String
+    var iconColor: Color
+    
+    var body: some View {
+        VStack {
+            IconView(id: id, icon: icon, color: iconColor, iconColor: Color.white)
+                .scaleEffect(2.1)
+                .frame(width: 64, height: 64)
+            Text(id)
+                .font(.footnote)
+                .foregroundStyle(.secondary)
+                .bold()
+                .multilineTextAlignment(.center)
+                .frame(maxWidth: 100)
         }
     }
 }
