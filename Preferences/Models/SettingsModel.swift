@@ -61,6 +61,7 @@ enum SettingsModel: String, CaseIterable {
     case biometricPasscode = "Biometric & Passcode"
     case bluetooth = "Bluetooth"
     case camera = "Camera"
+    case carrierSettings = "Carrier Settings"
     case cellular = "Cellular"
     case controlCenter = "Control Center"
     case developer = "Developer"
@@ -72,6 +73,7 @@ enum SettingsModel: String, CaseIterable {
     case general = "General"
     case homeScreenAppLibrary = "Home Screen & App Library"
     case icloud = "iCloud"
+    case internalSettings = "Internal Settings"
     case multitaskGestures = "Multitasking & Gestures"
     case notifications = "Notifications"
     case personalHotspot = "Personal Hotspot"
@@ -95,6 +97,7 @@ enum Capabilities {
     case vpn
     case siri
     case appleIntelligence
+    case isInternal
 }
 
 /// A struct for defining custom navigation links for use with sections of the app.
@@ -210,7 +213,9 @@ let multicolorIcons = ["app.grid.3x3", "siri"]
 
 // MARK: Developer Settings
 @MainActor let developerSettings: [SettingsItem] = [
-    SettingsItem(type: .developer, title: "Developer", icon: "hammer.fill", color: .gray, destination: AnyView(DeveloperView()))
+    SettingsItem(type: .developer, title: "Developer", icon: "hammer.fill", color: .gray, destination: AnyView(DeveloperView())),
+    SettingsItem(type: .carrierSettings, title: "Carrier Settings", icon: "phone.fill", capability: .isInternal, color: .blue, destination: AnyView(EmptyView())),
+    SettingsItem(type: .internalSettings, title: "Internal Settings", icon: "gear", capability: .isInternal, color: .blue, destination: AnyView(EmptyView()))
 ]
 
 // MARK: Combined Settings Array

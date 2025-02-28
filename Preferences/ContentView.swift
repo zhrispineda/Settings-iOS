@@ -278,6 +278,8 @@ struct ContentView: View {
         return !UIDevice.IntelligenceCapability
     case .appleIntelligence:
         return UIDevice.IntelligenceCapability
+    case .isInternal:
+        return false
     }
 }
 

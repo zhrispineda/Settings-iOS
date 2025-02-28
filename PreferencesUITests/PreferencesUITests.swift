@@ -93,6 +93,48 @@ final class PreferencesUITests: XCTestCase {
         element = elementsQuery.element(boundBy: 10)
         element.swipeUp()
     }
+    
+    // MARK: Check Accessibility Settings
+    @MainActor
+    func testSettingsAccessibilitySettingsExistence() throws {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let accessibilityButton = app.buttons["Accessibility"].firstMatch
+        XCTAssertTrue(accessibilityButton.exists, "Accessibility link not found")
+        accessibilityButton.tap()
+        let accessibilityTitle = app.staticTexts["Accessibility"]
+        XCTAssertTrue(accessibilityTitle.exists, "Accessibility pane not found")
+    }
+    
+    // MARK: Check Accessibility Link
+    @MainActor
+    func testSettingsAccessibilityShortcutSettingsExistence() throws {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let accessibilityButton = app.buttons["Accessibility"].firstMatch
+        XCTAssertTrue(accessibilityButton.exists, "Accessibility link not found")
+    }
+    
+    // MARK: Check Auto-Lock Settings
+    @MainActor
+    func testSettingsAutoLockSettingsExistence() throws {
+        let app = XCUIApplication()
+        app.launch()
+        
+        app.buttons.containing(.image, identifier: "accessibility").firstMatch.swipeUp()
+        let displayBrightnessButton = app.buttons["Display & Brightness"].staticTexts.firstMatch
+        XCTAssertTrue(displayBrightnessButton.exists, "Display & Brightness link not found")
+        displayBrightnessButton.tap()
+        
+        let brightnessHeader = app.staticTexts["BRIGHTNESS"]
+        brightnessHeader.swipeUp()
+        
+        let autoLockButton = app.buttons.containing(.staticText, identifier: "Auto-Lock").firstMatch
+        XCTAssertTrue(autoLockButton.exists, "Auto-Lock link not found")
+        autoLockButton.tap()
+    }
 
     @MainActor
     func testLaunchPerformance() throws {
