@@ -27,16 +27,8 @@ final class PreferencesUITests: XCTestCase {
         app.launch()
 
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // MARK: Interact with Search text field
-        let searchField = app.navigationBars.searchFields["Search"]
-        XCTAssertTrue(searchField.exists, "Search field does not exist")
-        searchField.tap()
-        searchField.typeText("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789")
-        let cancelButton = app.buttons["Cancel"]
-        cancelButton.firstMatch.tap()
-        
-        // MARK: Interact with SettingsLink buttons
-        let buttons = ["Wi-Fi", "Bluetooth", "Cellular", "Battery", "General"]
+        // MARK: Interact with SettingsLink buttons (Radio section)
+        let buttons = ["Wi-Fi", "Bluetooth", "Cellular", "Battery"]
         
         for button in buttons {
             let btn = app.buttons[button.localize(table: "Localizable")]
@@ -46,6 +38,60 @@ final class PreferencesUITests: XCTestCase {
             btn.tap()
             app.navigationBars.buttons.element(boundBy: 0).tap()
         }
+    }
+    
+    // MARK: Search TextField
+    @MainActor
+    func testSearchField() throws {
+        let app = XCUIApplication()
+        app.launch()
+
+        let searchField = app.navigationBars.searchFields["Search"]
+        XCTAssertTrue(searchField.exists, "Search field does not exist")
+        
+        searchField.tap()
+        searchField.typeText("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789")
+        let cancelButton = app.buttons["Cancel"]
+        cancelButton.firstMatch.tap()
+    }
+    
+    // MARK: Search Suggestions Buttons
+    @MainActor
+    func testSearchSuggestions() throws {
+        let app = XCUIApplication()
+        app.launch()
+        
+        app.searchFields["Search"].tap()
+        let cancelButton = app.buttons["Cancel"]
+        // Apps [by symbol image]
+        app.buttons.images["app.grid.3x3"].tap()
+        let settingsButton = app.buttons["Settings"]
+        settingsButton.tap()
+        // General [by symbol image]
+        app.images.matching(identifier: "gear").element(boundBy: 1).tap()
+        settingsButton.tap()
+        // Accessibility [by text]
+        app.staticTexts.matching(identifier: "Accessibility").element(boundBy: 1).tap()
+        settingsButton.tap()
+        // Privacy & Security [by text]
+        app.staticTexts["Privacy & Security"].tap()
+        settingsButton.tap()
+        cancelButton.tap()
+    }
+    
+    // MARK: Settings > General [Scrolling]
+    @MainActor
+    func testGeneral() throws {
+        let app = XCUIApplication()
+        app.launch()
+        let elementsQuery = app.otherElements
+        var element = elementsQuery.element(boundBy: 20)
+        element.swipeUp()
+        let generalButton = app.buttons["General"]
+        XCTAssertTrue(generalButton.exists, "General link not found")
+        generalButton.tap()
+        element = elementsQuery.element(boundBy: 10)
+        element.swipeUp()
     }
 
     @MainActor
