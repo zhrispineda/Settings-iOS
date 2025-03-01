@@ -41,6 +41,17 @@
                ReferencedContainer = "container:Preferences.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "83FAC0F92D728DFD001C4D74"
+               BuildableName = "PreferencesTests.xctest"
+               BlueprintName = "PreferencesTests"
+               ReferencedContainer = "container:Preferences.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
