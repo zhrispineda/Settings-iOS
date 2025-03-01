@@ -10,41 +10,45 @@ import SwiftUI
 struct DisplayBrightnessView: View {
     // Variables
     @Environment(\.colorScheme) var colorScheme
+    @AppStorage("AutomaticAppearanceToggle") private var automaticEnabled = false
+    @AppStorage("BoldTextToggle") private var boldTextEnabled = false
+    @AppStorage("TrueToneToggle") private var trueToneEnabled = true
+    @AppStorage("RaiseWakeToggle") private var raiseToWakeEnabled = true
+    @AppStorage("RequireScreenOnCameraControlToggle") private var requireScreenOnCameraControl = true
     @State private var appearance: Theme = .dark
+    @State private var brightness = UIScreen.main.brightness
+    let table = "Display"
     
     enum Theme {
         case dark
         case light
     }
     
-    @State private var automaticEnabled = false
-    @State private var boldTextEnabled = false
-    @State private var brightness = UIScreen.main.brightness
-    @State private var trueToneEnabled = true
-    @State private var raiseToWakeEnabled = true
-    let table = "Display"
-    
     var body: some View {
         CustomList(title: "DISPLAY_AND_BRIGHTNESS".localize(table: table), topPadding: true) {
+            // MARK: Appearance
             Section {
                 HStack {
                     Text("") // For listRowSeparator
+                    
                     Spacer()
+                    
+                    // Light
                     Button {
                         appearance = .light
                     } label: {
                         VStack(spacing: 15) {
                             ZStack {
-                                Image("\(UIDevice.current.model.lowercased())-appearance-light")
+                                Image(.appearanceLight)
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(width: 60)
+                                    .frame(width: UIDevice.iPhone ? 60 : 90)
                                     .padding(.top, 5)
                                 Text("9:41")
                                     .font(.footnote)
                                     .fontWeight(.semibold)
                                     .foregroundStyle(.white)
-                                    .padding(.bottom, 70)
+                                    .padding(.bottom, UIDevice.iPhone ? 70 : 80)
                             }
                             Text("COMPATIBLE_APPEARANCE_CHOICE_LIGHT", tableName: table)
                                 .font(.subheadline)
@@ -55,22 +59,25 @@ struct DisplayBrightnessView: View {
                         }
                     }
                     .buttonStyle(.plain)
+                    
                     Spacer()
+                    
+                    // Dark
                     Button {
                         appearance = .dark
                     } label: {
                         VStack(spacing: 15) {
                             ZStack {
-                                Image("\(UIDevice.current.model.lowercased())-appearance-dark")
+                                Image(.appearanceDark)
                                     .resizable()
                                     .scaledToFit()
-                                    .frame(width: 60)
+                                    .frame(width: UIDevice.iPhone ? 60 : 90)
                                     .padding(.top, 5)
                                 Text("9:41")
                                     .font(.footnote)
                                     .fontWeight(.semibold)
                                     .foregroundStyle(.white)
-                                    .padding(.bottom, 70)
+                                    .padding(.bottom, UIDevice.iPhone ? 70 : 80)
                             }
                             Text("COMPATIBLE_APPEARANCE_CHOICE_DARK", tableName: table)
                                 .font(.subheadline)
@@ -96,11 +103,13 @@ struct DisplayBrightnessView: View {
                 Text("APPEARANCE", tableName: table)
             }
             
+            // MARK: Text
             Section {
                 NavigationLink("TEXT_SIZE".localize(table: table)) {}
                 Toggle("BOLD_TEXT".localize(table: table), isOn: $boldTextEnabled)
             }
             
+            // MARK: Brightness
             Section {
                 Group {
                     Slider(value: $brightness,
@@ -123,16 +132,19 @@ struct DisplayBrightnessView: View {
                 Text("WHITE_BALANCE_FOOTER", tableName: table)
             }
             
+            // MARK: Night Shift
             Section {
                 CustomNavigationLink(title: "BLUE_LIGHT_REDUCTION".localize(table: table), status: "OFF".localize(table: table), destination: EmptyView())
             }
             
+            // MARK: Auto-Lock
             Section {
                 CustomNavigationLink(title: "AUTOLOCK".localize(table: table), status: "1 minute", destination: EmptyView())
                 Toggle("RAISE_TO_WAKE".localize(table: table), isOn: $raiseToWakeEnabled)
             }
             
             if UIDevice.AlwaysOnDisplayCapability {
+                // MARK: Always-On
                 Section {
                     CustomNavigationLink(title: "ALWAYS_ON_DISPLAY".localize(table: table), status: "ALWAYS_ON_ENABLED".localize(table: table), destination: EmptyView())
                 } footer: {
@@ -140,12 +152,24 @@ struct DisplayBrightnessView: View {
                 }
             }
             
+            // MARK: Display
             Section {
                 CustomNavigationLink(title: "VIEW".localize(table: table), status: "DEFAULT".localize(table: "Accessibility"), destination: EmptyView())
             } header: {
                 Text("DISPLAY_ONLY_TITLE", tableName: "Accessibility")
             } footer: {
                 Text("DEFAULT_DISPLAY_ZOOMED_STANDARD_DESCRIPTION", tableName: table)
+            }
+            
+            if UIDevice.AdvancedPhotographicStylesCapability {
+                // MARK: Camera Control
+                Section {
+                    Toggle("REQUIRE_SCREEN_ON".localize(table: table), isOn: $requireScreenOnCameraControl)
+                } header: {
+                    Text("CAMERA_CONTROL", tableName: table)
+                } footer: {
+                    Text("LAUNCHING_CAMERA_REQUIRES_SCREEN_ON_FOOTER", tableName: table)
+                }
             }
         }
     }

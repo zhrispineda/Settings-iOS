@@ -1,0 +1,16 @@
+{
+  "images" : [
+    {
+      "filename" : "appearance-light@3x.png",
+      "idiom" : "iphone"
+    },
+    {
+      "filename" : "appearance-light@2x.png",
+      "idiom" : "ipad"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

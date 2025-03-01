@@ -160,22 +160,28 @@
             "value": "Teksto dydis"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tamaño del texto"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Saiz Teks"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Velikost textu"
-          }
-        },
         "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Veľkosť textu"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Velikost textu"
           }
         },
         "bg": {
@@ -423,22 +429,28 @@
             "value": "Išjungta"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desactivado"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Tak Aktif"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Deaktivováno"
-          }
-        },
         "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Vyp."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deaktivováno"
           }
         },
         "bg": {
@@ -523,6 +535,275 @@
           "stringUnit": {
             "state": "translated",
             "value": "Isključeno"
+          }
+        }
+      }
+    },
+    "CAMERA_CONTROL": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "שליטה במצלמה"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "카메라 컨트롤"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kontrol Kamera"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kamerasäädin"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kamera Denetimi"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Контроллер камеры"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kameravezérlő"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cameraregelaar"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Controllo fotocamera"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Στοιχείο ελέγχου Κάμερας"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Control de la cámara"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Control de càmera"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Commande de la caméra"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "相機控制"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "وحدة التحكم في الكاميرا"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "कैमरा कंट्रोल"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sterowanie aparatem"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kamerareglage"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kamerabetjening"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Camera Control"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kamerakontroll"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "相機控制"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ตัวควบคุมกล้อง"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "相机控制"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Camera Control"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kameros valdiklis"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Control de la cámara"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kawalan Kamera"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ovládanie kamery"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ovladač fotoaparátu"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Управление на камерата"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Camera Control"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Krmilna funkcija kamere"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kamerasteuerung"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Điều khiển camera"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Control de la cámara"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Controle da Câmera"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Камераны басқару"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Commande de l’appareil photo"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Контролер камери"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Comenzi cameră"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "カメラコントロール"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Controlo da câmara"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kontrola kamere"
           }
         }
       }
@@ -686,22 +967,28 @@
             "value": "Šviesu"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Claro"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Cerah"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Světlý"
-          }
-        },
         "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Svetlý"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Světlý"
           }
         },
         "bg": {
@@ -949,22 +1236,28 @@
             "value": "Atšaukti"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancelar"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Batal"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Zrušit"
-          }
-        },
         "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Zrušiť"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zrušit"
           }
         },
         "bg": {
@@ -1212,22 +1505,28 @@
             "value": "Rodyti foną"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar fondo de pantalla"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Tunjukkan Hias Latar"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Zobrazovat tapetu"
-          }
-        },
         "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Zobrazovať pozadie"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobrazovat tapetu"
           }
         },
         "bg": {
@@ -1787,6 +2086,24 @@
             }
           }
         },
+        "es_US": {
+          "variations": {
+            "device": {
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Elige cómo ver el iPhone."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Elige cómo ver el iPad."
+                }
+              }
+            }
+          }
+        },
         "ms": {
           "variations": {
             "device": {
@@ -1805,24 +2122,6 @@
             }
           }
         },
-        "cs": {
-          "variations": {
-            "device": {
-              "iphone": {
-                "stringUnit": {
-                  "state": "translated",
-                  "value": "Vyberte zobrazení na iPhonu."
-                }
-              },
-              "ipad": {
-                "stringUnit": {
-                  "state": "translated",
-                  "value": "Vyberte zobrazení na iPadu."
-                }
-              }
-            }
-          }
-        },
         "sk": {
           "variations": {
             "device": {
@@ -1836,6 +2135,24 @@
                 "stringUnit": {
                   "state": "translated",
                   "value": "Vyberte zobrazenie pre iPad."
+                }
+              }
+            }
+          }
+        },
+        "cs": {
+          "variations": {
+            "device": {
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Vyberte zobrazení na iPhonu."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Vyberte zobrazení na iPadu."
                 }
               }
             }
@@ -2254,22 +2571,28 @@
             "value": "Ekrano mastelis"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tamaño de pantalla"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Zum Paparan"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Nastavení displeje"
-          }
-        },
         "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Zväčšenie displeja"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nastavení displeje"
           }
         },
         "bg": {
@@ -2985,6 +3308,30 @@
             }
           }
         },
+        "es_US": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Adapta automáticamente la pantalla del Apple Vision Pro según las condiciones de luz ambiental para que los colores se muestren consistentes en entornos diferentes."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Adapta automáticamente la pantalla del iPhone según las condiciones de luz ambiental para que los colores se muestren consistentes en entornos diferentes."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Adapta automáticamente la pantalla del iPad según las condiciones de luz ambiental para que los colores se muestren consistentes en entornos diferentes."
+                }
+              }
+            }
+          }
+        },
         "ms": {
           "variations": {
             "device": {
@@ -3009,30 +3356,6 @@
             }
           }
         },
-        "cs": {
-          "variations": {
-            "device": {
-              "applevision": {
-                "stringUnit": {
-                  "state": "translated",
-                  "value": "Displej Apple Vision Pro můžete nastavit na automatické přizpůsobování okolním světelným podmínkám. Dosáhnete tak konzistentního podání barev v každém prostředí."
-                }
-              },
-              "iphone": {
-                "stringUnit": {
-                  "state": "translated",
-                  "value": "Displej iPhonu můžete nastavit na automatické přizpůsobování podle světelných podmínek v okolí. Dosáhnete tak konzistentního podání barev bez ohledu na prostředí."
-                }
-              },
-              "ipad": {
-                "stringUnit": {
-                  "state": "translated",
-                  "value": "Displej iPadu můžete nastavit na automatické přizpůsobování podle světelných podmínek v okolí. Dosáhnete tak konzistentního podání barev bez ohledu na prostředí."
-                }
-              }
-            }
-          }
-        },
         "sk": {
           "variations": {
             "device": {
@@ -3052,6 +3375,30 @@
                 "stringUnit": {
                   "state": "translated",
                   "value": "Automaticky prispôsobí displej iPadu svetelným podmienkam okolia, takže sa farby budú zobrazovať rovnako bez ohľadu na prostredie."
+                }
+              }
+            }
+          }
+        },
+        "cs": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Displej Apple Vision Pro můžete nastavit na automatické přizpůsobování okolním světelným podmínkám. Dosáhnete tak konzistentního podání barev v každém prostředí."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Displej iPhonu můžete nastavit na automatické přizpůsobování podle světelných podmínek v okolí. Dosáhnete tak konzistentního podání barev bez ohledu na prostředí."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Displej iPadu můžete nastavit na automatické přizpůsobování podle světelných podmínek v okolí. Dosáhnete tak konzistentního podání barev bez ohledu na prostředí."
                 }
               }
             }
@@ -3554,22 +3901,28 @@
             "value": "Parinktys"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Opciones"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Pilihan"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Volby"
-          }
-        },
         "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Možnosti"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Volby"
           }
         },
         "bg": {
@@ -3817,22 +4170,28 @@
             "value": "Pakelkite norėdami pažadinti"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Levantar para reactivar"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Angkat untuk Bangun"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Probudit zvednutím"
-          }
-        },
         "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Zdvihnutím zobudiť"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Probudit zvednutím"
           }
         },
         "bg": {
@@ -4080,22 +4439,28 @@
             "value": "Įjungta"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Activado"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Aktif"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Zapnuto"
-          }
-        },
         "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Zap."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zapnuto"
           }
         },
         "bg": {
@@ -4499,6 +4864,18 @@
             }
           }
         },
+        "es_US": {
+          "variations": {
+            "device": {
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "La pantalla del iPad se atenuará y bloqueará después de %@ al detectar que no estás viéndola."
+                }
+              }
+            }
+          }
+        },
         "ms": {
           "variations": {
             "device": {
@@ -4511,18 +4888,6 @@
             }
           }
         },
-        "cs": {
-          "variations": {
-            "device": {
-              "ipad": {
-                "stringUnit": {
-                  "state": "translated",
-                  "value": "Pokud iPad zjistí, že jste se na něj %@ nepodívali, displej se ztlumí a zamkne."
-                }
-              }
-            }
-          }
-        },
         "sk": {
           "variations": {
             "device": {
@@ -4530,6 +4895,18 @@
                 "stringUnit": {
                   "state": "translated",
                   "value": "Ak iPad zistí, že ste sa naň %@ nepozreli, jeho displej sa stlmí a zamkne."
+                }
+              }
+            }
+          }
+        },
+        "cs": {
+          "variations": {
+            "device": {
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Pokud iPad zjistí, že jste se na něj %@ nepodívali, displej se ztlumí a zamkne."
                 }
               }
             }
@@ -5020,6 +5397,18 @@
             }
           }
         },
+        "es_US": {
+          "variations": {
+            "device": {
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Elige cómo ver el %@."
+                }
+              }
+            }
+          }
+        },
         "ms": {
           "variations": {
             "device": {
@@ -5032,18 +5421,6 @@
             }
           }
         },
-        "cs": {
-          "variations": {
-            "device": {
-              "ipad": {
-                "stringUnit": {
-                  "state": "translated",
-                  "value": "Vyberte zobrazení na %@u."
-                }
-              }
-            }
-          }
-        },
         "sk": {
           "variations": {
             "device": {
@@ -5051,6 +5428,18 @@
                 "stringUnit": {
                   "state": "translated",
                   "value": "Vyberte zobrazenie pre %@."
+                }
+              }
+            }
+          }
+        },
+        "cs": {
+          "variations": {
+            "device": {
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Vyberte zobrazení na %@u."
                 }
               }
             }
@@ -5385,22 +5774,28 @@
             "value": "Nuo saulėlydžio iki saulėtekio"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Del atardecer al amanecer"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Terbenam hingga Terbit"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Od soumraku do úsvitu"
-          }
-        },
         "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Od západu do východu slnka"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Od soumraku do úsvitu"
           }
         },
         "bg": {
@@ -5648,22 +6043,28 @@
             "value": "Išplėstinai"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avanzado"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Lanjutan"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Pokročilé"
-          }
-        },
         "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Rozšírené"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pokročilé"
           }
         },
         "bg": {
@@ -5911,22 +6312,28 @@
             "value": "Atskaitos režimas"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modo de referencia"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Mod Rujukan"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Referenční režim"
-          }
-        },
         "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Referenčný režim"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Referenční režim"
           }
         },
         "bg": {
@@ -6174,22 +6581,28 @@
             "value": "Atšaukti"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cancelar"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Batal"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Zrušit"
-          }
-        },
         "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Zrušiť"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zrušit"
           }
         },
         "bg": {
@@ -6593,6 +7006,18 @@
             }
           }
         },
+        "es_US": {
+          "variations": {
+            "device": {
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "La pantalla del iPad permanecerá encendida hasta que se apague manualmente. \n\nLas funciones que detectan atención atenuarán la pantalla automáticamente cuando el iPad no esté en uso para ayudar a prolongar la vida útil de la pantalla y mantener la calidad de la imagen."
+                }
+              }
+            }
+          }
+        },
         "ms": {
           "variations": {
             "device": {
@@ -6605,18 +7030,6 @@
             }
           }
         },
-        "cs": {
-          "variations": {
-            "device": {
-              "ipad": {
-                "stringUnit": {
-                  "state": "translated",
-                  "value": "Displej iPadu bude zůstávat zapnutý, dokud ho nevypnete ručně. \n\nChcete‑li prodloužit životnost displeje a zachovat kvalitu zobrazení, zapněte volbu Detekce pozornosti, která displej automaticky ztlumí, když iPad nebudete používat."
-                }
-              }
-            }
-          }
-        },
         "sk": {
           "variations": {
             "device": {
@@ -6624,6 +7037,18 @@
                 "stringUnit": {
                   "state": "translated",
                   "value": "Displej iPadu zostane zapnutý, až kým ho manuálne nevypnete. \n\nAk chcete predĺžiť životnosť displeja pri zachovaní kvality obrazu, zapnite funkcie na detekciu pozornosti, ktoré automaticky stlmia displej, keď iPad nepoužívate."
+                }
+              }
+            }
+          }
+        },
+        "cs": {
+          "variations": {
+            "device": {
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Displej iPadu bude zůstávat zapnutý, dokud ho nevypnete ručně. \n\nChcete‑li prodloužit životnost displeje a zachovat kvalitu zobrazení, zapněte volbu Detekce pozornosti, která displej automaticky ztlumí, když iPad nebudete používat."
                 }
               }
             }
@@ -6799,6 +7224,275 @@
         }
       }
     },
+    "REQUIRE_SCREEN_ON": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "דרישת מסך פעיל"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "화면을 켜야 함"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Perlukan Layar Nyala"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vaadi näyttö päällä"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ekran Açık Olsun"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Только при включенном экране"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bekapcsolt képernyő szükséges"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scherm moet aan zijn"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Richiede lo schermo acceso"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Απαίτηση ενεργής οθόνης"
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Requerir pantalla encendida"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pantalla encesa necessària"
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Écran allumé requis"
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "需要開啟螢幕"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مطلوب تشغيل الشاشة"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "स्क्रीन का चालू होना आवश्यक"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wymagaj włączonego ekranu"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kräv att skärmen är på"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skærm skal være tændt"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Require Screen On"
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Krev at skjermen er på"
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "需要開啟螢幕"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "หน้าจอต้องเปิดอยู่"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "需要打开屏幕"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Require Screen On"
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reikalauti, kad būtų įjungtas ekranas"
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Requerir pantalla encendida"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Perlukan Skrin Aktif"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vyžadovať zapnutú obrazovku"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vyžadovat zapnutý displej"
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Изисква се включен екран"
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Require Screen On"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zahtevaj vklopljen zaslon"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bildschirmaktivierung anfordern"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yêu cầu bật màn hình"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Requerir pantalla encendida"
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exigir Tela Ligada"
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Экран қосулы болуға тиіс"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Exiger que l’écran soit allumé"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Потрібно ввімкнути екран"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Necesită ecran activat"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "画面オンを必要にする"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Requer ecrã ligado"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zahtijeva uključeni zaslon"
+          }
+        }
+      }
+    },
     "COMPATIBLE_APPEARANCE_DESCRIPTION": {
       "extractionState": "manual",
       "localizations": {
@@ -6958,22 +7652,28 @@
             "value": "Pasirinkite numatytąją suderinamų programų išvaizdą"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Selecciona un aspecto predeterminado para las apps compatibles"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Pilih penampilan lalai untuk app serasi"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Vyberte výchozí vzhled kompatibilních aplikací"
-          }
-        },
         "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Umožňuje vybrať predvolený vzhľad pre kompatibilné apky."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vyberte výchozí vzhled kompatibilních aplikací"
           }
         },
         "bg": {
@@ -7221,19 +7921,25 @@
             "value": "Tamsu iki: %@"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oscuro hasta la(s) %@"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Gelap sehingga %@"
           }
         },
-        "cs": {
+        "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Tmavý do %@"
           }
         },
-        "sk": {
+        "cs": {
           "stringUnit": {
             "state": "translated",
             "value": "Tmavý do %@"
@@ -7484,22 +8190,28 @@
             "value": "Naudokite šį režimą, kai kontroliuojamoje aplinkoje atliekate į spalvas orientuotas užduotis. Atskaitos režimo įjungimas gali turėti įtakos akumuliatoriaus veikimo trukmei."
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usa este modo para flujos de trabajo que requieren colores precisos en un entorno de visualización controlado. Activar este modo podría afectar la duración de la batería."
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Gunakan mod ini untuk aliran kerja kritikal warna dalam persekitaran tontonan terkawal. Mengaktifkan Mod Rujukan mungkin mempengaruhi hayat bateri."
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tento režim je určený pro úlohy zaměřené na barvy, které je nutné provádět v kontrolovaném zobrazovacím prostředí. Zapnutí referenčního režimu může zkrátit výdrž baterie."
-          }
-        },
         "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Tento režim je určený na prácu s farbami v kontrolovanom zobrazovacom prostredí. Zapnutie referenčného režimu môže skrátiť výdrž batérie."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tento režim je určený pro úlohy zaměřené na barvy, které je nutné provádět v kontrolovaném zobrazovacím prostředí. Zapnutí referenčního režimu může zkrátit výdrž baterie."
           }
         },
         "bg": {
@@ -7747,22 +8459,28 @@
             "value": "Tamsu iki saulėtekio"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oscuro hasta el amanecer"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Gelap sehingga Terbit"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tmavý do úsvitu"
-          }
-        },
         "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Tmavý do východu slnka"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tmavý do úsvitu"
           }
         },
         "bg": {
@@ -8010,22 +8728,28 @@
             "value": "Pritaikyti"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Personalizar"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Sesuaikan"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Přizpůsobit"
-          }
-        },
         "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Prispôsobiť"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Přizpůsobit"
           }
         },
         "bg": {
@@ -8120,7 +8844,7 @@
         "he": {
           "stringUnit": {
             "state": "translated",
-            "value": "הפעל True Tone"
+            "value": "הפעלת True Tone"
           }
         },
         "ko": {
@@ -8273,22 +8997,28 @@
             "value": "„True Tone“ įjungimas"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Activar True Tone"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Dayakan True Tone"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Zapnout True Tone"
-          }
-        },
         "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Zapnúť True Tone"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zapnout True Tone"
           }
         },
         "bg": {
@@ -8536,19 +9266,25 @@
             "value": "Niekada"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nunca"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Jangan"
           }
         },
-        "cs": {
+        "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Nikdy"
           }
         },
-        "sk": {
+        "cs": {
           "stringUnit": {
             "state": "translated",
             "value": "Nikdy"
@@ -8799,22 +9535,28 @@
             "value": "Automatinis režimas"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automático"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Automatik"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Automaticky"
-          }
-        },
         "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Automatický"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automaticky"
           }
         },
         "bg": {
@@ -9062,19 +9804,25 @@
             "value": "Šviesumas"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Brillo"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Kecerahan"
           }
         },
-        "cs": {
+        "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Jas"
           }
         },
-        "sk": {
+        "cs": {
           "stringUnit": {
             "state": "translated",
             "value": "Jas"
@@ -9415,7 +10163,7 @@
               "applevision": {
                 "stringUnit": {
                   "state": "translated",
-                  "value": "Bloquea y desbloquea automáticamente tu Apple Vision Pro al cerrar y abrir el estuche."
+                  "value": "Bloquea y desbloquea automáticamente tu Apple Vision Pro al abrir y cerrar la tapa."
                 }
               },
               "iphone": {
@@ -9793,6 +10541,30 @@
             }
           }
         },
+        "es_US": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Bloquea y desbloquea automáticamente tu Apple Vision Pro al abrir y cerrar la tapa."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Bloquea y desbloquea automáticamente tu iPhone al cerrar y abrir la cubierta."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Bloquea y desbloquea automáticamente tu iPad al cerrar y abrir la cubierta."
+                }
+              }
+            }
+          }
+        },
         "ms": {
           "variations": {
             "device": {
@@ -9817,30 +10589,6 @@
             }
           }
         },
-        "cs": {
-          "variations": {
-            "device": {
-              "applevision": {
-                "stringUnit": {
-                  "state": "translated",
-                  "value": "Automaticky Apple Vision Pro odemykat a zamykat při otevření a zavření pouzdra."
-                }
-              },
-              "iphone": {
-                "stringUnit": {
-                  "state": "translated",
-                  "value": "Automaticky odemykat a zamykat iPhone při otvírání a zavírání pouzdra."
-                }
-              },
-              "ipad": {
-                "stringUnit": {
-                  "state": "translated",
-                  "value": "Automaticky odemykat a zamykat iPad při otvírání a zavírání pouzdra."
-                }
-              }
-            }
-          }
-        },
         "sk": {
           "variations": {
             "device": {
@@ -9860,6 +10608,30 @@
                 "stringUnit": {
                   "state": "translated",
                   "value": "Automaticky zamknúť a odomknúť iPad pri zatvorení alebo otvorení krytu iPadu."
+                }
+              }
+            }
+          }
+        },
+        "cs": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Automaticky Apple Vision Pro odemykat a zamykat při otevření a zavření pouzdra."
+                }
+              },
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Automaticky odemykat a zamykat iPhone při otvírání a zavírání pouzdra."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Automaticky odemykat a zamykat iPad při otvírání a zavírání pouzdra."
                 }
               }
             }
@@ -10362,22 +11134,28 @@
             "value": "Nuo %@ iki %@"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De %@ a %@"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "%@ hingga %@"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "%@ až %@"
-          }
-        },
         "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "od %@ do %@"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ až %@"
           }
         },
         "bg": {
@@ -10625,22 +11403,28 @@
             "value": "Jei funkcija „Visada rodyti“ išjungta, ekranas išsijungs, kai „iPhone“ bus užrakintas."
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si esta opción está desactivada, la pantalla se apagará cuando tu iPhone se bloquee."
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Apabila Paparan Sentiasa Aktif tidak aktif, skrin anda akan dimatikan apabila iPhone dikunci."
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Když je funkce Trvale zapnutý displej vypnutá, displej při zamknutí iPhonu zhasne."
-          }
-        },
         "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Keď je funkcia Trvalo zapnutý displej vypnutá, obrazovka sa po zamknutí iPhonu vypne."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Když je funkce Trvale zapnutý displej vypnutá, displej při zamknutí iPhonu zhasne."
           }
         },
         "bg": {
@@ -10888,22 +11672,28 @@
             "value": "Šviesu iki saulėlydžio"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Claro hasta el atardecer"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Cerah sehingga Terbenam"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Světlý do soumraku"
-          }
-        },
         "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Svetlý do západu slnka"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Světlý do soumraku"
           }
         },
         "bg": {
@@ -11151,22 +11941,28 @@
             "value": "Šviesumas apribotas dėl aukštos aplinkos temperatūros."
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Brillo limitado debido a la temperatura ambiente alta."
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Kecerahan terhad disebabkan suhu ambien tinggi."
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Jas je omezený kvůli vysoké teplotě prostředí."
-          }
-        },
         "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Jas je pre zvýšenú teplotu okolitého prostredia obmedzený."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jas je omezený kvůli vysoké teplotě prostředí."
           }
         },
         "bg": {
@@ -11414,22 +12210,28 @@
             "value": "Šviesu"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Claro"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Cerah"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Světlý"
-          }
-        },
         "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Svetlý"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Světlý"
           }
         },
         "bg": {
@@ -11677,22 +12479,28 @@
             "value": "Funkcija „Night Shift“ išjungiama veikiant energijos taupymo režimui."
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Activar Ahorrar batería desactiva Night Shift."
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Night Shift dinyahdayakan dalam mod kuasa rendah."
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "V režimu nízké spotřeby je funkce Night Shift vypnutá."
-          }
-        },
         "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Night Shift je v režime nízkej spotreby vypnutý."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "V režimu nízké spotřeby je funkce Night Shift vypnutá."
           }
         },
         "bg": {
@@ -11940,22 +12748,28 @@
             "value": "Įjungta"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Activado"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Aktif"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Aktivováno"
-          }
-        },
         "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Zap."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aktivováno"
           }
         },
         "bg": {
@@ -12515,6 +13329,24 @@
             }
           }
         },
+        "es_US": {
+          "variations": {
+            "device": {
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Elige cómo ver el iPhone: Aumentado muestra controles Aumentados, Predeterminado muestra más del contenido en pantalla y Más espacio permite ver aún más elementos en pantalla."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Elige cómo ver el iPad: Aumentado muestra controles Aumentados, Predeterminado muestra más del contenido en pantalla y Más espacio permite ver aún más elementos en pantalla."
+                }
+              }
+            }
+          }
+        },
         "ms": {
           "variations": {
             "device": {
@@ -12533,24 +13365,6 @@
             }
           }
         },
-        "cs": {
-          "variations": {
-            "device": {
-              "iphone": {
-                "stringUnit": {
-                  "state": "translated",
-                  "value": "Nastavte si zobrazení na iPhonu. Výběrem volby Větší text zobrazíte větší ovládací prvky. Ve výchozím nastavení uvidíte více obsahu. Výběrem volby Více místa zobrazíte ještě více obsahu."
-                }
-              },
-              "ipad": {
-                "stringUnit": {
-                  "state": "translated",
-                  "value": "Nastavte si zobrazení na iPadu. Výběrem volby Větší text zobrazíte větší ovládací prvky. Ve výchozím nastavení uvidíte více obsahu. Výběrem volby Více místa zobrazíte ještě více obsahu."
-                }
-              }
-            }
-          }
-        },
         "sk": {
           "variations": {
             "device": {
@@ -12564,6 +13378,24 @@
                 "stringUnit": {
                   "state": "translated",
                   "value": "Vyberte zobrazenie pre iPad. Väčší text zobrazuje väčšie ovládacie prvky. Predvolené pojme viac obsahu. Viac miesta toho zobrazí ešte viac."
+                }
+              }
+            }
+          }
+        },
+        "cs": {
+          "variations": {
+            "device": {
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Nastavte si zobrazení na iPhonu. Výběrem volby Větší text zobrazíte větší ovládací prvky. Ve výchozím nastavení uvidíte více obsahu. Výběrem volby Více místa zobrazíte ještě více obsahu."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Nastavte si zobrazení na iPadu. Výběrem volby Větší text zobrazíte větší ovládací prvky. Ve výchozím nastavení uvidíte více obsahu. Výběrem volby Více místa zobrazíte ještě více obsahu."
                 }
               }
             }
@@ -12982,22 +13814,28 @@
             "value": "Atskaitos režimas įjungtas"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Modo de referencia activado"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Mod Rujukan Aktif"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Je zapnutý referenční režim"
-          }
-        },
         "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Referenčný režim je zapnutý"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Je zapnutý referenční režim"
           }
         },
         "bg": {
@@ -13245,19 +14083,25 @@
             "value": "True Tone"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "True Tone"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "True Tone"
           }
         },
-        "cs": {
+        "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "True Tone"
           }
         },
-        "sk": {
+        "cs": {
           "stringUnit": {
             "state": "translated",
             "value": "True Tone"
@@ -13508,22 +14352,28 @@
             "value": "Šviesu iki: %@"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Claro hasta la(s) %@"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Cerah sehingga %@"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Světlý do %@"
-          }
-        },
         "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Svetlý do %@"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Světlý do %@"
           }
         },
         "bg": {
@@ -13771,19 +14621,25 @@
             "value": "Tamsu"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oscuro"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Gelap"
           }
         },
-        "cs": {
+        "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Tmavý"
           }
         },
-        "sk": {
+        "cs": {
           "stringUnit": {
             "state": "translated",
             "value": "Tmavý"
@@ -14190,6 +15046,18 @@
             }
           }
         },
+        "es_US": {
+          "variations": {
+            "device": {
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Elige cómo ver el %@: Aumentado muestra controles aumentados y Predeterminado permite ver más elementos en pantalla."
+                }
+              }
+            }
+          }
+        },
         "ms": {
           "variations": {
             "device": {
@@ -14202,18 +15070,6 @@
             }
           }
         },
-        "cs": {
-          "variations": {
-            "device": {
-              "ipad": {
-                "stringUnit": {
-                  "state": "translated",
-                  "value": "Nastavte si zobrazení na %@u. Výběrem volby Větší text zobrazíte větší ovládací prvky. Standardně uvidíte víc obsahu."
-                }
-              }
-            }
-          }
-        },
         "sk": {
           "variations": {
             "device": {
@@ -14221,6 +15077,18 @@
                 "stringUnit": {
                   "state": "translated",
                   "value": "Vyberte zobrazenie pre %@. Väčší text zobrazuje väčšie ovládacie prvky. Predvolené pojme viac obsahu."
+                }
+              }
+            }
+          }
+        },
+        "cs": {
+          "variations": {
+            "device": {
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Nastavte si zobrazení na %@u. Výběrem volby Větší text zobrazíte větší ovládací prvky. Standardně uvidíte víc obsahu."
                 }
               }
             }
@@ -14867,6 +15735,24 @@
             }
           }
         },
+        "es_US": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Aspecto"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Pantalla y brillo"
+                }
+              }
+            }
+          }
+        },
         "ms": {
           "variations": {
             "device": {
@@ -14885,24 +15771,6 @@
             }
           }
         },
-        "cs": {
-          "variations": {
-            "device": {
-              "applevision": {
-                "stringUnit": {
-                  "state": "translated",
-                  "value": "Vzhled"
-                }
-              },
-              "other": {
-                "stringUnit": {
-                  "state": "translated",
-                  "value": "Zobrazení a jas"
-                }
-              }
-            }
-          }
-        },
         "sk": {
           "variations": {
             "device": {
@@ -14916,6 +15784,24 @@
                 "stringUnit": {
                   "state": "translated",
                   "value": "Displej a jas"
+                }
+              }
+            }
+          }
+        },
+        "cs": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Vzhled"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Zobrazení a jas"
                 }
               }
             }
@@ -15646,6 +16532,24 @@
             }
           }
         },
+        "es_US": {
+          "variations": {
+            "device": {
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Elige cómo ver el iPhone: Predeterminado muestra controles más grandes y Más espacio permite ver más elementos en pantalla."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Elige cómo ver el iPad: Predeterminado muestra controles más grandes y Más espacio permite ver más elementos en pantalla."
+                }
+              }
+            }
+          }
+        },
         "ms": {
           "variations": {
             "device": {
@@ -15664,24 +16568,6 @@
             }
           }
         },
-        "cs": {
-          "variations": {
-            "device": {
-              "iphone": {
-                "stringUnit": {
-                  "state": "translated",
-                  "value": "Nastavte si zobrazení na iPhonu. Ve výchozím nastavení budete mít větší ovládací prvky. Výběrem volby Více místa zobrazíte více obsahu."
-                }
-              },
-              "ipad": {
-                "stringUnit": {
-                  "state": "translated",
-                  "value": "Nastavte si zobrazení na iPadu. Ve výchozím nastavení budete mít větší ovládací prvky. Výběrem volby Více místa zobrazíte více obsahu."
-                }
-              }
-            }
-          }
-        },
         "sk": {
           "variations": {
             "device": {
@@ -15695,6 +16581,24 @@
                 "stringUnit": {
                   "state": "translated",
                   "value": "Vyberte zobrazenie pre iPad. Predvolené zobrazuje väčšie ovládanie. Viac miesta pojme viac obsahu."
+                }
+              }
+            }
+          }
+        },
+        "cs": {
+          "variations": {
+            "device": {
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Nastavte si zobrazení na iPhonu. Ve výchozím nastavení budete mít větší ovládací prvky. Výběrem volby Více místa zobrazíte více obsahu."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Nastavte si zobrazení na iPadu. Ve výchozím nastavení budete mít větší ovládací prvky. Výběrem volby Více místa zobrazíte více obsahu."
                 }
               }
             }
@@ -16113,22 +17017,28 @@
             "value": "Rodinys"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Visualización"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Paparan"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Zobrazení"
-          }
-        },
         "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Zobrazenie"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobrazení"
           }
         },
         "bg": {
@@ -16376,19 +17286,25 @@
             "value": "Ekranas"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pantalla"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Paparan"
           }
         },
-        "cs": {
+        "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Displej"
           }
         },
-        "sk": {
+        "cs": {
           "stringUnit": {
             "state": "translated",
             "value": "Displej"
@@ -16795,6 +17711,18 @@
             }
           }
         },
+        "es_US": {
+          "variations": {
+            "device": {
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "La pantalla del iPad permanecerá encendida hasta que se apague manualmente. La pantalla se atenuará si detecta que no estás viéndola."
+                }
+              }
+            }
+          }
+        },
         "ms": {
           "variations": {
             "device": {
@@ -16807,18 +17735,6 @@
             }
           }
         },
-        "cs": {
-          "variations": {
-            "device": {
-              "ipad": {
-                "stringUnit": {
-                  "state": "translated",
-                  "value": "Displej iPadu bude zůstávat zapnutý, dokud ho nevypnete ručně. Když se na něj určitou dobu nepodíváte, může se ztlumit. "
-                }
-              }
-            }
-          }
-        },
         "sk": {
           "variations": {
             "device": {
@@ -16826,6 +17742,18 @@
                 "stringUnit": {
                   "state": "translated",
                   "value": "Displej iPadu zostane zapnutý, až kým ho manuálne nevypnete. Ak sa naň chvíľu nebudete pozerať, môže sa stlmiť. "
+                }
+              }
+            }
+          }
+        },
+        "cs": {
+          "variations": {
+            "device": {
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Displej iPadu bude zůstávat zapnutý, dokud ho nevypnete ručně. Když se na něj určitou dobu nepodíváte, může se ztlumit. "
                 }
               }
             }
@@ -17160,22 +18088,28 @@
             "value": "Ekranas automatiškai išsijungs, kad būtų taupomas akumuliatorius, kai jis nenaudojamas."
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La pantalla se desactivará automáticamente para ahorrar energía cuando no esté en uso."
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Paparan akan dimatikan secara automatik untuk menjimatkan hayat bateri apabila tidak digunakan."
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Pokud nebudete displej používat, automaticky se vypne, aby se ušetřila energie baterie."
-          }
-        },
         "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Keď displej nepoužívate, automaticky sa vypne, aby sa šetrila výdrž batérie."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pokud nebudete displej používat, automaticky se vypne, aby se ušetřila energie baterie."
           }
         },
         "bg": {
@@ -17735,6 +18669,24 @@
             }
           }
         },
+        "es_US": {
+          "variations": {
+            "device": {
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Elige cómo ver el iPhone: Aumentado muestra controles más grandes y Predeterminado permite ver más elementos en pantalla."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Elige cómo ver el iPad: Aumentado muestra controles más grandes y Predeterminado permite ver más elementos en pantalla."
+                }
+              }
+            }
+          }
+        },
         "ms": {
           "variations": {
             "device": {
@@ -17753,24 +18705,6 @@
             }
           }
         },
-        "cs": {
-          "variations": {
-            "device": {
-              "iphone": {
-                "stringUnit": {
-                  "state": "translated",
-                  "value": "Nastavte si zobrazení na iPhonu. Výběrem volby Větší text zobrazíte větší ovládací prvky. Ve výchozím nastavení uvidíte více obsahu."
-                }
-              },
-              "ipad": {
-                "stringUnit": {
-                  "state": "translated",
-                  "value": "Nastavte si zobrazení na iPadu. Výběrem volby Větší text zobrazíte větší ovládací prvky. Ve výchozím nastavení uvidíte více obsahu."
-                }
-              }
-            }
-          }
-        },
         "sk": {
           "variations": {
             "device": {
@@ -17784,6 +18718,24 @@
                 "stringUnit": {
                   "state": "translated",
                   "value": "Vyberte zobrazenie pre iPad. Väčší text zobrazuje väčšie ovládacie prvky. Predvolené pojme viac obsahu."
+                }
+              }
+            }
+          }
+        },
+        "cs": {
+          "variations": {
+            "device": {
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Nastavte si zobrazení na iPhonu. Výběrem volby Větší text zobrazíte větší ovládací prvky. Ve výchozím nastavení uvidíte více obsahu."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Nastavte si zobrazení na iPadu. Výběrem volby Větší text zobrazíte větší ovládací prvky. Ve výchozím nastavení uvidíte více obsahu."
                 }
               }
             }
@@ -18043,6 +18995,275 @@
         }
       }
     },
+    "LAUNCHING_CAMERA_REQUIRES_SCREEN_ON_FOOTER": {
+      "extractionState": "manual",
+      "localizations": {
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "כאשר הגדרה זו פעילה, ניתן יהיה להפעיל יישום מצלמה באמצעות ״שליטה במצלמה״ רק כאשר המסך פעיל."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "카메라 컨트롤로 카메라 앱을 실행하려면 화면을 켜야 합니다."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Meluncurkan app kamera dengan Kontrol Kamera memerlukan layar menyala."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kamera-apin avaaminen Kamerasäätimellä edellyttää, että näyttö on päällä."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kamera Denetimi ile bir kamera uygulamasını başlatmak için ekranın açık olması gerekir."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Для запуска приложения камеры с помощью Контроллера камеры необходимо включить экран."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ahhoz, hogy egy kameraappot a Kameravezérlővel el lehessen indítani, a képernyőnek bekapcsolva kell lennie."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Voor het starten van een camera-app met de cameraregelaar, moet het scherm zijn ingeschakeld."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Per avviare un’app di fotografia con “Controllo fotocamera” lo schermo deve essere acceso."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Για εκκίνηση μιας εφαρμογής κάμερας με το Στοιχείο ελέγχου Κάμερας, η οθόνη πρέπει να είναι ενεργή."
+          }
+        },
+        "es_419": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Para poder abrir una app de cámara con el control de la cámara, la pantalla deberá estar encendida."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Per obrir una app de fotografia amb el control de càmera, cal que la pantalla estigui encesa."
+          }
+        },
+        "fr_CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pour lancer une app d’appareil photo avec la commande de la caméra, l’écran doit être allumé."
+          }
+        },
+        "zh_TW": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "需要開啟螢幕才能透過「相機控制」來啟動相機App。"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "لبدء تشغيل أحد تطبيقات الكاميرا باستخدام وحدة التحكم في الكاميرا، يجب أن تكون الشاشة مشغلة."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "कैमरा कंट्रोल से कैमरा ऐप लॉन्च करने के लिए स्क्रीन का चालू होना आवश्यक है।"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uruchomienie aplikacji aparatu przy użyciu narzędzia sterowania aparatem wymaga, aby ekran był włączony."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Om du vill öppna en kameraapp med kamerareglaget måste skärmen vara på."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Skærmen skal være tændt for at starte en kameraapp vha. Kamerabetjening."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Launching a camera app with Camera Control requires the screen to be on."
+          }
+        },
+        "no": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oppstart av en kameraapp med Kamerakontroll krever at skjermen er på."
+          }
+        },
+        "zh_HK": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "需要開啟螢幕才能透過「相機控制」來啟動相機App。"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "การเปิดใช้แอปกล้องด้วยตัวควบคุมกล้องจะต้องให้หน้าจอเปิดอยู่"
+          }
+        },
+        "zh_CN": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "需要打开屏幕才能通过相机控制启动相机App。"
+          }
+        },
+        "en_GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Launching a camera app with Camera Control requires the screen to be on."
+          }
+        },
+        "lt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Norint kameros programą paleisti kameros valdikliu, ekranas turi būti įjungtas."
+          }
+        },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Para poder abrir una app de cámara con el control de la cámara, la pantalla deberá estar encendida."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Melancarkan app kamera dengan Kawalan Kamera memerlukan skrin aktif."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kameru bude pomocou Ovládania kamery možné spúšťať len pri zapnutej obrazovke."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Fotoaplikaci lze ovladačem fotoaparátu spustit jen při zapnutém displeji."
+          }
+        },
+        "bg": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Отварянето на приложение за камера с Управление на камерата изисква екранът да бъде включен."
+          }
+        },
+        "en_AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Launching a camera app with Camera Control requires the screen to be on."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Za zagon aplikacije Kamera s Krmilno funkcijo kamere mora biti zaslon vklopljen."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Um eine App mit der Kamerasteuerung starten zu können, muss der Bildschirm aktiviert sein."
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Việc khởi chạy một ứng dụng camera bằng Điều khiển camera yêu cầu màn hình phải được bật."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Para abrir la app configurada con el control de la cámara, la pantalla debe estar encendida."
+          }
+        },
+        "pt_BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Usar o Controle da Câmera para abrir um app de câmera requer que a tela esteja ligada."
+          }
+        },
+        "kk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "«Камера» қолданбасын камераны басқару элементі арқылы іске қосу үшін экран қосулы болуға тиіс."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Le lancement d’une app d’appareil photo avec la commande de l’appareil photo n’est possible que si l’écran est allumé."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Щоб запустити програму камери за допомогою контролера камери, екран має бути ввімкненим."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pentru a lansa o aplicație pentru cameră utilizând Comenzi cameră, ecranul trebuie să fie activat."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "カメラコントロールでカメラ用アプリを起動するには、画面をオンにする必要があります。"
+          }
+        },
+        "pt_PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Para iniciar a aplicação de câmara com o controlo da câmara, o ecrã tem de estar ligado."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pokretanje aplikacije za kameru s Kontrolom kamere zahtijeva uključeni zaslon."
+          }
+        }
+      }
+    },
     "FINE_TUNE": {
       "extractionState": "manual",
       "localizations": {
@@ -18202,22 +19423,28 @@
             "value": "Tikslus kalibravimas"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Afinar calibración"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Tala Halus Kalibrasi"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Doladit kalibraci"
-          }
-        },
         "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Doladiť kalibráciu"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Doladit kalibraci"
           }
         },
         "bg": {
@@ -18465,22 +19692,28 @@
             "value": "Funkcija „Visada rodyti“ pritemdo užrakinimo ekraną ir rodo tokią informaciją kaip laikas, valdikliai bei pranešimai, naudodama labai mažai energijos."
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pantalla siempre activa reduce el brillo de la pantalla bloqueada sin dejar de mostrar información como widgets, notificaciones y la hora usando la menor cantidad de energía posible."
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Paparan Sentiasa Aktif memalapkan Skrin Kunci sambil memastikan maklumat seperti masa, widget dan pemberitahuan kelihatan menggunakan kuasa minimum."
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Funkce Trvale zapnutý displej ztlumí jas zamknutého displeje, ale nechá zobrazené některé informace, například čas, widgety a oznámení."
-          }
-        },
         "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Funkcia Trvalo zapnutý displej stlmí jas displeja a s minimálnou spotrebou energie ponechá zobrazené niektoré informácie, napríklad čas, widgety a hlásenia."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Funkce Trvale zapnutý displej ztlumí jas zamknutého displeje, ale nechá zobrazené některé informace, například čas, widgety a oznámení."
           }
         },
         "bg": {
@@ -18728,22 +19961,28 @@
             "value": "Visada rodyti"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pantalla siempre activa"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Paparan Sentiasa Aktif"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Trvale zapnutý displej"
-          }
-        },
         "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Trvalo zapnutý displej"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trvale zapnutý displej"
           }
         },
         "bg": {
@@ -18991,22 +20230,28 @@
             "value": "Išvaizda"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aspecto"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Penampilan"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Vzhled"
-          }
-        },
         "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Vzhľad"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vzhled"
           }
         },
         "bg": {
@@ -19254,22 +20499,28 @@
             "value": "Automatinis užrakinimas"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bloqueo automático"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Kunci Auto"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Uzamčení"
-          }
-        },
         "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Uzamykanie"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uzamčení"
           }
         },
         "bg": {
@@ -19517,22 +20768,28 @@
             "value": "Tęsti"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Continuar"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Teruskan"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Pokračovat"
-          }
-        },
         "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Pokračovať"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pokračovat"
           }
         },
         "bg": {
@@ -19780,22 +21037,28 @@
             "value": "Taikomas paryškintas tekstas…"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aplicando negritas…"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Menggunakan Teks Tebal…"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Převod textu na tučný…"
-          }
-        },
         "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Aplikujem tučný text…"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Převod textu na tučný…"
           }
         },
         "bg": {
@@ -20043,22 +21306,28 @@
             "value": "Užrakinti / atrakinti"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bloquear o desbloquear"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Kunci / Buka Kunci"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Zamknout/Odemknout"
-          }
-        },
         "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Zamknúť/Odomknúť"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zamknout/Odemknout"
           }
         },
         "bg": {
@@ -20306,22 +21575,28 @@
             "value": "Suderinamų programų išvaizda"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aspecto de las apps compatibles"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Penampilan App Serasi"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Vzhled kompatibilních aplikací"
-          }
-        },
         "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Vzhľad kompatibilných apiek"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vzhled kompatibilních aplikací"
           }
         },
         "bg": {
@@ -20725,6 +22000,18 @@
             }
           }
         },
+        "es_US": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Elige cómo ver el Apple Vision Pro: Aumentado muestra controles más grandes, y Estándar permite ver más elementos en pantalla."
+                }
+              }
+            }
+          }
+        },
         "ms": {
           "variations": {
             "device": {
@@ -20737,18 +22024,6 @@
             }
           }
         },
-        "cs": {
-          "variations": {
-            "device": {
-              "applevision": {
-                "stringUnit": {
-                  "state": "translated",
-                  "value": "Vyberte zobrazení na Apple Vision Pro. Volbou Zvětšené zvětšíte ovládací prvky. Standardní zobrazení pojme víc obsahu."
-                }
-              }
-            }
-          }
-        },
         "sk": {
           "variations": {
             "device": {
@@ -20756,6 +22031,18 @@
                 "stringUnit": {
                   "state": "translated",
                   "value": "Vyberte zobrazenie pre Apple Vision Pro. Zväčšené zobrazuje väčšie ovládanie. Štandardné pojme viac obsahu."
+                }
+              }
+            }
+          }
+        },
+        "cs": {
+          "variations": {
+            "device": {
+              "applevision": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Vyberte zobrazení na Apple Vision Pro. Volbou Zvětšené zvětšíte ovládací prvky. Standardní zobrazení pojme víc obsahu."
                 }
               }
             }
@@ -21246,6 +22533,18 @@
             }
           }
         },
+        "es_US": {
+          "variations": {
+            "device": {
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Elige cómo ver el %@: Aumentado muestra controles aumentados, Predeterminado muestra más del contenido en pantalla y Más espacio permite ver aún más elementos en pantalla."
+                }
+              }
+            }
+          }
+        },
         "ms": {
           "variations": {
             "device": {
@@ -21258,18 +22557,6 @@
             }
           }
         },
-        "cs": {
-          "variations": {
-            "device": {
-              "ipad": {
-                "stringUnit": {
-                  "state": "translated",
-                  "value": "Nastavte si zobrazení na %@u. Výběrem volby Větší text nastavíte větší ovládací prvky. Standardně uvidíte víc obsahu. Výběrem volby Více místa zobrazíte ještě víc obsahu."
-                }
-              }
-            }
-          }
-        },
         "sk": {
           "variations": {
             "device": {
@@ -21277,6 +22564,18 @@
                 "stringUnit": {
                   "state": "translated",
                   "value": "Vyberte zobrazenie pre %@. Väčší text zobrazuje väčšie ovládacie prvky. Predvolené pojme viac obsahu. Viac miesta toho zobrazí ešte viac."
+                }
+              }
+            }
+          }
+        },
+        "cs": {
+          "variations": {
+            "device": {
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Nastavte si zobrazení na %@u. Výběrem volby Větší text nastavíte větší ovládací prvky. Standardně uvidíte víc obsahu. Výběrem volby Více místa zobrazíte ještě víc obsahu."
                 }
               }
             }
@@ -21767,6 +23066,18 @@
             }
           }
         },
+        "es_US": {
+          "variations": {
+            "device": {
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "La pantalla del iPad se atenuará y bloqueará después de %@. \n\nLas funciones que detectan atención atenuarán la pantalla automáticamente cuando el iPad no esté en uso para ayudar a prolongar la vida útil de la pantalla y mantener la calidad de la imagen."
+                }
+              }
+            }
+          }
+        },
         "ms": {
           "variations": {
             "device": {
@@ -21779,18 +23090,6 @@
             }
           }
         },
-        "cs": {
-          "variations": {
-            "device": {
-              "ipad": {
-                "stringUnit": {
-                  "state": "translated",
-                  "value": "Pokud iPad %@ nepoužijete, displej se ztlumí a zamkne. \n\nChcete‑li prodloužit životnost displeje a zachovat kvalitu zobrazení, zapněte volbu Detekce pozornosti, která displej automaticky ztlumí, když iPad nebudete používat."
-                }
-              }
-            }
-          }
-        },
         "sk": {
           "variations": {
             "device": {
@@ -21798,6 +23097,18 @@
                 "stringUnit": {
                   "state": "translated",
                   "value": "Ak iPad nebudete používať %@, jeho displej sa stlmí a zamkne. \n\nAk chcete predĺžiť životnosť displeja pri zachovaní kvality obrazu, zapnite funkcie na detekciu pozornosti, ktoré automaticky stlmia displej, keď iPad nepoužívate."
+                }
+              }
+            }
+          }
+        },
+        "cs": {
+          "variations": {
+            "device": {
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Pokud iPad %@ nepoužijete, displej se ztlumí a zamkne. \n\nChcete‑li prodloužit životnost displeje a zachovat kvalitu zobrazení, zapněte volbu Detekce pozornosti, která displej automaticky ztlumí, když iPad nebudete používat."
                 }
               }
             }
@@ -22132,19 +23443,25 @@
             "value": "Tamsu"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oscuro"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Gelap"
           }
         },
-        "cs": {
+        "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Tmavý"
           }
         },
-        "sk": {
+        "cs": {
           "stringUnit": {
             "state": "translated",
             "value": "Tmavý"
@@ -22395,22 +23712,28 @@
             "value": "Pasirinkite „%@“ rodinį. Rodinys „Numatytasis“ rodo didesnius valdiklius. „Daugiau erdvės“ rodo daugiau turinio."
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elige cómo ver el %@: Predeterminado muestra controles más grandes y Más espacio permite ver más elementos en pantalla."
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Pilih paparan untuk %@. Lalai menunjukkan kawalan lebih besar. Lebih Ruang menunjukkan lebih banyak kandungan."
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Nastavte si zobrazení na %@u. Standardně jsou nastavené větší ovládací prvky. Výběrem volby Více místa zobrazíte víc obsahu."
-          }
-        },
         "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Vyberte zobrazenie pre %@. Predvolené zobrazuje väčšie ovládanie. Viac miesta pojme viac obsahu."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nastavte si zobrazení na %@u. Standardně jsou nastavené větší ovládací prvky. Výběrem volby Více místa zobrazíte víc obsahu."
           }
         },
         "bg": {
@@ -22658,22 +23981,28 @@
             "value": "Veikiant energijos taupymo režimui, automatinis užrakinimas apribojimas iki 30 sekundžių."
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ahorrar batería restringe el bloqueo automático a 30 segundos."
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Apabila dalam Mod Kuasa Rendah, kunci auto dihadkan kepada 30 saat."
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "V režimu nízké spotřeby je automatické uzamknutí omezeno na 30 sekund."
-          }
-        },
         "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "V režime nízkej spotreby je uzamykanie obmedzené na 30 s."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "V režimu nízké spotřeby je automatické uzamknutí omezeno na 30 sekund."
           }
         },
         "bg": {
@@ -23233,6 +24562,24 @@
             }
           }
         },
+        "es_US": {
+          "variations": {
+            "device": {
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Es posible que tu iPhone consuma más energía con esta configuración."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Es posible que tu iPad consuma más energía con esta configuración."
+                }
+              }
+            }
+          }
+        },
         "ms": {
           "variations": {
             "device": {
@@ -23251,24 +24598,6 @@
             }
           }
         },
-        "cs": {
-          "variations": {
-            "device": {
-              "iphone": {
-                "stringUnit": {
-                  "state": "translated",
-                  "value": "iPhone může s tímto nastavením spotřebovávat víc energie."
-                }
-              },
-              "ipad": {
-                "stringUnit": {
-                  "state": "translated",
-                  "value": "iPad může s tímto nastavením spotřebovávat víc energie."
-                }
-              }
-            }
-          }
-        },
         "sk": {
           "variations": {
             "device": {
@@ -23282,6 +24611,24 @@
                 "stringUnit": {
                   "state": "translated",
                   "value": "iPad môže mať s týmto nastavením vyššiu spotrebu energie."
+                }
+              }
+            }
+          }
+        },
+        "cs": {
+          "variations": {
+            "device": {
+              "iphone": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "iPhone může s tímto nastavením spotřebovávat víc energie."
+                }
+              },
+              "ipad": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "iPad může s tímto nastavením spotřebovávat víc energie."
                 }
               }
             }
@@ -23700,22 +25047,28 @@
             "value": "Ekrano mastelis"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tamaño de pantalla"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Zum Paparan"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Nastavení displeje"
-          }
-        },
         "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Zväčšenie displeja"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nastavení displeje"
           }
         },
         "bg": {
@@ -23963,19 +25316,25 @@
             "value": "Night Shift"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Night Shift"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Night Shift"
           }
         },
-        "cs": {
+        "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Night Shift"
           }
         },
-        "sk": {
+        "cs": {
           "stringUnit": {
             "state": "translated",
             "value": "Night Shift"
@@ -24226,22 +25585,28 @@
             "value": "Įjungti"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Activar"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Dayakan"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Zapnout"
-          }
-        },
         "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Zapnúť"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zapnout"
           }
         },
         "bg": {
@@ -24489,22 +25854,28 @@
             "value": "Išjungta"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Desactivado"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Tak Aktif"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Vypnuto"
-          }
-        },
         "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Vyp."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vypnuto"
           }
         },
         "bg": {
@@ -24752,22 +26123,28 @@
             "value": "Įjungus funkciją „True Tone“, bus išjungtas spalvų invertavimas. Ar norite įjungti „True Tone“?"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Al activar True Tone se desactivará Invertir colores. ¿Quieres activarlo?"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Mendayakan True Tone akan menyahdayakan Terbalikkan Warna. Adakah anda mahu mendayakan True Tone?"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Zapnutím funkce True Tone vypnete inverzní barvy. Chcete True Tone zapnout?"
-          }
-        },
         "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Zapnutím funkcie True Tone vypnete prevrátenie farieb. Chcete zapnúť True Tone?"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zapnutím funkce True Tone vypnete inverzní barvy. Chcete True Tone zapnout?"
           }
         },
         "bg": {
@@ -25015,19 +26392,25 @@
             "value": "Paryškintas tekstas"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Negritas"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Teks Tebal"
           }
         },
-        "cs": {
+        "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Tučný text"
           }
         },
-        "sk": {
+        "cs": {
           "stringUnit": {
             "state": "translated",
             "value": "Tučný text"
@@ -25278,22 +26661,28 @@
             "value": "Rodyti pranešimus"
           }
         },
+        "es_US": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mostrar notificaciones"
+          }
+        },
         "ms": {
           "stringUnit": {
             "state": "translated",
             "value": "Tunjukkan Pemberitahuan"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Zobrazovat oznámení"
-          }
-        },
         "sk": {
           "stringUnit": {
             "state": "translated",
             "value": "Zobrazovať hlásenia"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zobrazovat oznámení"
           }
         },
         "bg": {
