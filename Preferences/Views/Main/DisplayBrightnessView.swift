@@ -13,10 +13,12 @@ struct DisplayBrightnessView: View {
     @AppStorage("AutomaticAppearanceToggle") private var automaticEnabled = false
     @AppStorage("BoldTextToggle") private var boldTextEnabled = false
     @AppStorage("TrueToneToggle") private var trueToneEnabled = true
+    @AppStorage("AutoLockDuration") private var autoLockDuration: String = "30 seconds"
     @AppStorage("RaiseWakeToggle") private var raiseToWakeEnabled = true
     @AppStorage("RequireScreenOnCameraControlToggle") private var requireScreenOnCameraControl = true
     @State private var appearance: Theme = .dark
     @State private var brightness = UIScreen.main.brightness
+    @State private var lowPowerMode = false
     let table = "Display"
     
     enum Theme {
@@ -92,6 +94,7 @@ struct DisplayBrightnessView: View {
                 }
                 .onAppear {
                     appearance = colorScheme == .dark ? .dark : .light
+                    lowPowerMode = ProcessInfo.processInfo.isLowPowerModeEnabled
                 }
                 
                 Toggle("AUTOMATIC".localize(table: table), isOn: $automaticEnabled.animation())
@@ -139,8 +142,13 @@ struct DisplayBrightnessView: View {
             
             // MARK: Auto-Lock
             Section {
-                CustomNavigationLink(title: "AUTOLOCK".localize(table: table), status: "1 minute", destination: EmptyView())
+                CustomNavigationLink(title: "AUTOLOCK".localize(table: table), status: autoLockDuration.localize(table: table), destination: SelectOptionList(title: "AUTOLOCK", options: ["30 seconds", "1 minute", "2 minutes", "3 minutes", "4 minutes", "5 minutes", "NEVER"], selectedBinding: $autoLockDuration, table: "Display"))
+                    .disabled(lowPowerMode)
                 Toggle("RAISE_TO_WAKE".localize(table: table), isOn: $raiseToWakeEnabled)
+            } footer: {
+                if lowPowerMode {
+                    Text("AUTOLOCK_LPM_FOOTER", tableName: table)
+                }
             }
             
             if UIDevice.AlwaysOnDisplayCapability {
@@ -173,6 +181,9 @@ struct DisplayBrightnessView: View {
             }
         }
         .animation(.default, value: automaticEnabled)
+        .onChange(of: ProcessInfo.processInfo.isLowPowerModeEnabled) {
+            lowPowerMode = ProcessInfo.processInfo.isLowPowerModeEnabled
+        }
     }
 }
 

@@ -101,6 +101,11 @@ final class PreferencesUITests: XCTestCase {
         app.launch()
         
         let accessibilityButton = app.buttons["Accessibility"].firstMatch
+        if !accessibilityButton.exists {
+            let elementsQuery = app.otherElements
+            let element = elementsQuery.element(boundBy: 20)
+            element.swipeUp()
+        }
         XCTAssertTrue(accessibilityButton.exists, "Accessibility link not found")
         accessibilityButton.tap()
         let accessibilityTitle = app.staticTexts["Accessibility"]
@@ -114,6 +119,11 @@ final class PreferencesUITests: XCTestCase {
         app.launch()
         
         let accessibilityButton = app.buttons["Accessibility"].firstMatch
+        if !accessibilityButton.exists {
+            let elementsQuery = app.otherElements
+            let element = elementsQuery.element(boundBy: 20)
+            element.swipeUp()
+        }
         XCTAssertTrue(accessibilityButton.exists, "Accessibility link not found")
     }
     
@@ -123,7 +133,14 @@ final class PreferencesUITests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
         
-        app.buttons.containing(.image, identifier: "accessibility").firstMatch.swipeUp()
+        let accessibilityButton = app.buttons.containing(.image, identifier: "accessibility").firstMatch
+        if !accessibilityButton.exists {
+            let elementsQuery = app.otherElements
+            let element = elementsQuery.element(boundBy: 20)
+            element.swipeUp()
+        } else {
+            accessibilityButton.swipeUp()
+        }
         let displayBrightnessButton = app.buttons["Display & Brightness"].staticTexts.firstMatch
         XCTAssertTrue(displayBrightnessButton.exists, "Display & Brightness link not found")
         displayBrightnessButton.tap()

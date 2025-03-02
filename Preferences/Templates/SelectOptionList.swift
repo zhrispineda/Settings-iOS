@@ -64,6 +64,10 @@ struct SelectOptionList: View {
                     }
                 case "PrivateMessagingSpecifierName":
                     Text("PrivateMessagingFooter", tableName: table)
+                case "AUTOLOCK":
+                    if selectedBinding?.wrappedValue == "NEVER" {
+                        Text("DNB_AUTOLOCK_NEVER_WARNING_DESCRIPTION", tableName: table)
+                    }
                 default:
                     EmptyView()
                 }
