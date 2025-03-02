@@ -28,12 +28,15 @@ struct ControlCenterView: View {
                     }
                     .padding(.leading, -5)
                     .padding(.top, 5)
-                    Spacer()
-                        .frame(width: 60)
+                    Image(UIDevice.iPhone && UIDevice.HomeButtonCapability ? .controlCenterSettingsTipPhoneHomeButton : .controlCenterSettingsTip)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: UIDevice.iPhone ? 50 : 75)
+                        .padding(.horizontal)
                 }
                 .frame(minHeight: 100)
             }
-            .listRowBackground(Color(UIColor.systemGray4))
+            .listRowBackground(Color(UIColor.systemGray5))
             
             Section {
                 Toggle("ALLOWED_WITHIN_APPS".localize(table: table), isOn: $allowControlCenterInApps)

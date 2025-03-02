@@ -172,6 +172,7 @@ struct DisplayBrightnessView: View {
                 }
             }
         }
+        .animation(.default, value: automaticEnabled)
     }
 }
 

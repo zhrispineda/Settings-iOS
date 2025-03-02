@@ -1,0 +1,75 @@
+{
+  "images" : [
+    {
+      "filename" : "ControlCenterSettingsTip-Phone-Light-LTR.png",
+      "idiom" : "iphone",
+      "language-direction" : "left-to-right"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "ControlCenterSettingsTip-Phone-Dark-LTR.png",
+      "idiom" : "iphone",
+      "language-direction" : "left-to-right"
+    },
+    {
+      "filename" : "ControlCenterSettingsTip-Phone-Light-RTL.png",
+      "idiom" : "iphone",
+      "language-direction" : "right-to-left"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "ControlCenterSettingsTip-Phone-Dark-RTL.png",
+      "idiom" : "iphone",
+      "language-direction" : "right-to-left"
+    },
+    {
+      "filename" : "ControlCenterSettingsTip-Pad-Light-LTR.png",
+      "idiom" : "ipad",
+      "language-direction" : "left-to-right"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "ControlCenterSettingsTip-Pad-Dark-LTR.png",
+      "idiom" : "ipad",
+      "language-direction" : "left-to-right"
+    },
+    {
+      "filename" : "ControlCenterSettingsTip-Pad-Light-RTL.png",
+      "idiom" : "ipad",
+      "language-direction" : "right-to-left"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "ControlCenterSettingsTip-Pad-Dark-RTL.png",
+      "idiom" : "ipad",
+      "language-direction" : "right-to-left"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "localizable" : true
+  }
+}
