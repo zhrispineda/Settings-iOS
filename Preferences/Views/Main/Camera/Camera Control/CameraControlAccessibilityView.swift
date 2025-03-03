@@ -55,16 +55,14 @@ struct CameraControlAccessibilityView: View {
                 
                 // MARK: Camera Control Preview Section
                 Section {
-                    Rectangle()
-                        .edgesIgnoringSafeArea(.all)
-                        .foregroundStyle(colorScheme == .dark ? Color.white.opacity(0.1) : Color.black.opacity(0.8))
-                        .frame(height: 200)
-                        .clipShape(RoundedRectangle(cornerRadius: 20))
-                        .padding([.bottom, .horizontal], -10)
+                    Image(.simulatorD94)
+                        .resizable()
+                        .scaledToFit()
+                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                        .listRowInsets(EdgeInsets())
                 } footer: {
                     Text("SENSITIVITY_TESTER_FOOTER", tableName: accTable)
                 }
-                .listRowBackground(Color.clear)
                 
                 // MARK: Double Light-Press Speed Section
                 Section {
