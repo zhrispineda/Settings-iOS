@@ -13,13 +13,15 @@ struct DisplayBrightnessView: View {
     @AppStorage("AutomaticAppearanceToggle") private var automaticEnabled = false
     @AppStorage("BoldTextToggle") private var boldTextEnabled = false
     @AppStorage("TrueToneToggle") private var trueToneEnabled = true
-    @AppStorage("AutoLockDuration") private var autoLockDuration: String = "30 seconds"
+    @AppStorage("AutoLockDuration") private var autoLockDuration = UIDevice.iPhone ? "30 seconds" : "2 minutes"
     @AppStorage("RaiseWakeToggle") private var raiseToWakeEnabled = true
     @AppStorage("RequireScreenOnCameraControlToggle") private var requireScreenOnCameraControl = true
     @State private var appearance: Theme = .dark
     @State private var brightness = UIScreen.main.brightness
     @State private var lowPowerMode = false
     let table = "Display"
+    let phoneOptions = ["30 seconds", "1 minute", "2 minutes", "3 minutes", "4 minutes", "5 minutes", "NEVER"]
+    let tabletOptions = ["2 minutes", "5 minutes", "10 minutes", "15 minutes", "NEVER"]
     
     enum Theme {
         case dark
@@ -142,7 +144,7 @@ struct DisplayBrightnessView: View {
             
             // MARK: Auto-Lock
             Section {
-                CustomNavigationLink(title: "AUTOLOCK".localize(table: table), status: autoLockDuration.localize(table: table), destination: SelectOptionList(title: "AUTOLOCK", options: ["30 seconds", "1 minute", "2 minutes", "3 minutes", "4 minutes", "5 minutes", "NEVER"], selectedBinding: $autoLockDuration, table: "Display"))
+                CustomNavigationLink(title: "AUTOLOCK".localize(table: table), status: autoLockDuration.localize(table: table), destination: SelectOptionList(title: "AUTOLOCK", options: UIDevice.iPhone ? phoneOptions : tabletOptions, selectedBinding: $autoLockDuration, table: "Display"))
                     .disabled(lowPowerMode)
                 Toggle("RAISE_TO_WAKE".localize(table: table), isOn: $raiseToWakeEnabled)
             } footer: {
@@ -178,6 +180,11 @@ struct DisplayBrightnessView: View {
                 } footer: {
                     Text("LAUNCHING_CAMERA_REQUIRES_SCREEN_ON_FOOTER", tableName: table)
                 }
+            }
+            
+            if UIDevice.ReferenceModeCapability {
+                // MARK: Reference Mode
+                NavigationLink("Advanced") {}
             }
         }
         .animation(.default, value: automaticEnabled)

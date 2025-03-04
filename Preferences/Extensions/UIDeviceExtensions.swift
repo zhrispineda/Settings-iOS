@@ -213,6 +213,12 @@ public extension UIDevice {
         return fullModel.contains("Pro")
     }()
     
+    /// Returns a Bool on whether the device is capable of Reference Mode.
+    static let ReferenceModeCapability: Bool = {
+        let capableDevices: Set<String> = ["iPad13,8", "iPad13,9", "iPad13,10", "iPad13,11", "iPad14,5", "iPad14,6", "iPad16,3", "iPad16,4", "iPad16,5", "iPad16,6"]
+        return capableDevices.contains(identifier)
+    }()
+    
     /// Returns a Bool on whether the device has an Action Button.
     static let RingerButtonCapability: Bool = {
         return fullModel.contains("15 Pro") || fullModel.contains("16")
