@@ -15,6 +15,7 @@ struct DisplayBrightnessView: View {
     @AppStorage("TrueToneToggle") private var trueToneEnabled = true
     @AppStorage("AutoLockDuration") private var autoLockDuration = UIDevice.iPhone ? "30 seconds" : "2 minutes"
     @AppStorage("RaiseWakeToggle") private var raiseToWakeEnabled = true
+    @AppStorage("SmartCoverToggle") private var smartCoverEnabled = true
     @AppStorage("RequireScreenOnCameraControlToggle") private var requireScreenOnCameraControl = true
     @State private var appearance: Theme = .dark
     @State private var brightness = UIScreen.main.brightness
@@ -146,10 +147,22 @@ struct DisplayBrightnessView: View {
             Section {
                 CustomNavigationLink(title: "AUTOLOCK".localize(table: table), status: autoLockDuration.localize(table: table), destination: SelectOptionList(title: "AUTOLOCK", options: UIDevice.iPhone ? phoneOptions : tabletOptions, selectedBinding: $autoLockDuration, table: "Display"))
                     .disabled(lowPowerMode)
-                Toggle("RAISE_TO_WAKE".localize(table: table), isOn: $raiseToWakeEnabled)
+                // Raise to Wake
+                if UIDevice.iPhone {
+                    Toggle("RAISE_TO_WAKE".localize(table: table), isOn: $raiseToWakeEnabled)
+                }
+                // Lock / Unlock
+                if UIDevice.HallEffectCapability {
+                    Toggle("SMART_CASE_LOCK".localize(table: table), isOn: $smartCoverEnabled)
+                }
             } footer: {
-                if lowPowerMode {
-                    Text("AUTOLOCK_LPM_FOOTER", tableName: table)
+                VStack(alignment: .leading) {
+                    if UIDevice.HallEffectCapability {
+                        Text(lowPowerMode ? "SMART_CASE_LOCK_FOOTER".localize(table: table) + "\n" : "SMART_CASE_LOCK_FOOTER".localize(table: table))
+                    }
+                    if lowPowerMode {
+                        Text("AUTOLOCK_LPM_FOOTER", tableName: table)
+                    }
                 }
             }
             
@@ -184,7 +197,7 @@ struct DisplayBrightnessView: View {
             
             if UIDevice.ReferenceModeCapability {
                 // MARK: Reference Mode
-                NavigationLink("Advanced") {}
+                NavigationLink("ADVANCED".localize(table: table)) {}
             }
         }
         .animation(.default, value: automaticEnabled)

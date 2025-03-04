@@ -132,6 +132,16 @@ public extension UIDevice {
         return capableDevices.contains(identifier)
     }()
     
+    /// Returns a Bool on whether the device has a hall effect sensor.
+    static let HallEffectCapability: Bool = {
+        if let answer = MGHelper.read(key: "Pop5T2XQdDA60MRyxQJdQ") { // hall-effect-sensor key
+            return Bool(answer)!
+        }
+        
+        // Fallback
+        return false
+    }()
+    
     /// Returns a Bool on whether the device has a Home Button.
     static let HomeButtonCapability: Bool = {
         if let answer = MGHelper.read(key: "JwLB44/jEB8aFDpXQ16Tuw") { // HomeButtonType key
