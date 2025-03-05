@@ -43,9 +43,9 @@ struct HighlightContentView: View {
                 
                 Section {
                     if selectedHighlightOption == "WORDS_AND_SENTENCES" {
-                        CustomNavigationLink(title: "WORD_COLOR".localize(table: table), status: "DEFAULT".localize(table: accTable), destination: HighlightColorView(title: "WORD_COLOR"))
+                        CustomNavigationLink("WORD_COLOR".localize(table: table), status: "DEFAULT".localize(table: accTable), destination: HighlightColorView(title: "WORD_COLOR"))
                     }
-                    CustomNavigationLink(title: "SENTENCE_COLOR".localize(table: table), status: "DEFAULT".localize(table: accTable), destination: HighlightColorView(title: "SENTENCE_COLOR"))
+                    CustomNavigationLink("SENTENCE_COLOR".localize(table: table), status: "DEFAULT".localize(table: accTable), destination: HighlightColorView(title: "SENTENCE_COLOR"))
                 } header: {
                     Text("COLOR_CHOICE", tableName: table)
                 }

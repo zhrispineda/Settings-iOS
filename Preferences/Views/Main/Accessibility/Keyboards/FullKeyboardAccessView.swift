@@ -48,10 +48,10 @@ struct FullKeyboardAccessView: View {
             }
             
             Section {
-                CustomNavigationLink(title: "FOCUS_RING_TIMEOUT".localize(table: table), status: "15s", destination: AutoHideView())
+                CustomNavigationLink("FOCUS_RING_TIMEOUT".localize(table: table), status: "15s", destination: AutoHideView())
                 Toggle("FOCUS_RING_LARGE_FOCUS_RING".localize(table: table), isOn: $increaseSizeEnabled)
                 Toggle("FOCUS_RING_FOCUS_RING_HIGH_CONTRAST".localize(table: table), isOn: $highContrastEnabled)
-                CustomNavigationLink(title: "FOCUS_RING_COLOR".localize(table: table), status: "DEFAULT".localize(table: accTable), destination: KeyboardColorView())
+                CustomNavigationLink("FOCUS_RING_COLOR".localize(table: table), status: "DEFAULT".localize(table: accTable), destination: KeyboardColorView())
             } header: {
                 Text("APPEARANCE", tableName: table)
             }

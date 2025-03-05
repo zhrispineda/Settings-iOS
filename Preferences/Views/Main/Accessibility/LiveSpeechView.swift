@@ -37,7 +37,7 @@ struct LiveSpeechView: View {
             }
             
             Section {
-                CustomNavigationLink(title: "English (US)", status: "Siri Voice 4 (United States)", destination: SpeakSelectionVoiceDetailView(title: "English"))
+                CustomNavigationLink("English (US)", status: "Siri Voice 4 (United States)", destination: SpeakSelectionVoiceDetailView(title: "English"))
             } header: {
                 Text("LIVE_SPEECH_VOICES", tableName: table)
             } footer: {

@@ -45,13 +45,13 @@ struct ZoomView: View {
             
             Section {
                 // Keyboard Shortcuts
-                CustomNavigationLink(title: "ZOOM_KEYBOARD_SHORTCUTS_SETTINGS".localize(table: table), status: "ON".localize(table: accTable), destination: EmptyView())
+                CustomNavigationLink("ZOOM_KEYBOARD_SHORTCUTS_SETTINGS".localize(table: table), status: "ON".localize(table: accTable), destination: EmptyView())
                 // Zoom Controller
-                CustomNavigationLink(title: "ZOOM_SLUG_SETTINGS".localize(table: table), status: "OFF".localize(table: accTable), destination: EmptyView())
+                CustomNavigationLink("ZOOM_SLUG_SETTINGS".localize(table: table), status: "OFF".localize(table: accTable), destination: EmptyView())
                 // Zoom Region
-                CustomNavigationLink(title: "ZOOM_LENS_MODE_TITLE".localize(table: table), status: "ZOOM_LENS_MODE_FULLSCREEN".localize(table: table), destination: EmptyView())
+                CustomNavigationLink("ZOOM_LENS_MODE_TITLE".localize(table: table), status: "ZOOM_LENS_MODE_FULLSCREEN".localize(table: table), destination: EmptyView())
                 // Zoom Filter
-                CustomNavigationLink(title: "ZOOM_FILTER_TITLE".localize(table: table), status: "NONE", destination: EmptyView())
+                CustomNavigationLink("ZOOM_FILTER_TITLE".localize(table: table), status: "NONE", destination: EmptyView())
             }
             
             Section {

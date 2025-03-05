@@ -16,7 +16,7 @@ struct SpeakSelectionVoicesView: View {
     var body: some View {
         CustomList(title: "SPEECH_VOICES".localize(table: table)) {
             ForEach(Array(languages.enumerated()), id: \.offset) { index, language in
-                CustomNavigationLink(title: language, status: voices[index], destination: SpeakSelectionVoiceDetailView(title: language))
+                CustomNavigationLink(language, status: voices[index], destination: SpeakSelectionVoiceDetailView(title: language))
             }
         }
     }

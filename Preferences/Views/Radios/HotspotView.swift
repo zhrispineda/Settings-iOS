@@ -22,7 +22,7 @@ struct HotspotView: View {
             
             Section {
                 Toggle("Allow Others to Join", isOn: $allowOthersJoinEnabled)
-                CustomNavigationLink(title: "Wi-Fi Password", status: password, destination: EmptyView())
+                CustomNavigationLink("Wi-Fi Password", status: password, destination: EmptyView())
                     .onAppear {
                         password = randomPassword()
                     }

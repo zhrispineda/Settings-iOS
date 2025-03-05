@@ -1,32 +1,50 @@
 /*
 Abstract:
-A NavigationLink container that displays an HStack with title, subtitle, and status text.
+A NavigationLink container that displays an HStack with title, subtitle, and status Text.
 */
 
 import SwiftUI
 
-/// A `NavigationLink` container that displays an `HStack` with title, subtitle, and status text.
+/// A `NavigationLink` container that displays an `HStack` with title, subtitle, and status Text.
 /// ```swift
 /// var body: some View {
 ///     List {
-///         CustomNavigationLink(title: "Title", destination: EmptyView())
-///         CustomNavigationLink(title: "Title", subtitle: "Subtitle", destination: EmptyView())
-///         CustomNavigationLink(title: "Title", status: "Status", destination: EmptyView())
-///         CustomNavigationLink(title: "Title", subtitle: "Subtitle", status: "Status", destination: EmptyView())
+///         CustomNavigationLink("Title") {}
+///         CustomNavigationLink("Title", destination: EmptyView())
+///         CustomNavigationLink("Title", subtitle: "Subtitle", destination: EmptyView())
+///         CustomNavigationLink("Title", status: "Status", destination: EmptyView())
+///         CustomNavigationLink("Title", subtitle: "Subtitle", status: "Status", destination: EmptyView())
 ///     }
 /// }
 /// ```
-/// - Parameter title: The String to display as the description of the `NavigationLink`.
+/// - Parameter titleKey: The String to display as the description of the `NavigationLink`.
 /// - Parameter subtitle: The String text to display below the title.
 /// - Parameter status: The String displaying the state of the view within.
+/// - Parameter location: The Bool for whether to display a location symbol.
 /// - Parameter destination: The Content destination view.
 struct CustomNavigationLink<Content: View>: View {
     // Variables
-    var title = String()
-    var subtitle = String()
-    var status = String()
-    var location = false
+    var titleKey: String
+    var subtitle: String
+    var status: String
+    var location: Bool
     var destination: Content
+    
+    init(_ titleKey: String, subtitle: String = "", status: String = "", location: Bool = false, @ViewBuilder destination: @escaping () -> Content) {
+        self.titleKey = titleKey
+        self.subtitle = subtitle
+        self.status = status
+        self.location = location
+        self.destination = destination()
+    }
+    
+    init(_ titleKey: String, subtitle: String = "", status: String = "", location: Bool = false, destination: Content) {
+        self.titleKey = titleKey
+        self.subtitle = subtitle
+        self.status = status
+        self.location = location
+        self.destination = destination
+    }
     
     var body: some View {
         NavigationLink {
@@ -34,7 +52,7 @@ struct CustomNavigationLink<Content: View>: View {
         } label: {
             HStack {
                 VStack(alignment: .leading) {
-                    Text(title)
+                    Text(titleKey)
                         .lineLimit(2)
                     
                     if !subtitle.isEmpty {
@@ -62,10 +80,10 @@ struct CustomNavigationLink<Content: View>: View {
 #Preview {
     NavigationStack {
         List {
-            CustomNavigationLink(title: "Title", destination: EmptyView())
-            CustomNavigationLink(title: "Title", subtitle: "Subtitle", destination: EmptyView())
-            CustomNavigationLink(title: "Title", status: "Status", destination: EmptyView())
-            CustomNavigationLink(title: "Title", subtitle: "Subtitle", status: "Status", destination: EmptyView())
+            CustomNavigationLink("Title") {}
+            CustomNavigationLink("Title", subtitle: "Subtitle", destination: EmptyView())
+            CustomNavigationLink("Title", status: "Status", destination: EmptyView())
+            CustomNavigationLink("Title", subtitle: "Subtitle", status: "Status", destination: EmptyView())
         }
     }
 }

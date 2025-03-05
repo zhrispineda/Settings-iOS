@@ -41,7 +41,7 @@ struct NetworkDetailView: View {
             
             Section {
                 //Toggle("Private Wi-Fi Address", isOn: $privateWifiAddressEnabled)
-                CustomNavigationLink(title: "KWFLocSettingRandomMACSwitchTitle".localize(table: table), status: "kWFLocRandomMACStaticOption".localize(table: table), destination: SelectOptionList(title: "KWFLocSettingRandomMACSwitchTitle", options: ["kWFLocRandomMACOffOption", "kWFLocRandomMACStaticOption", "kWFLocRandomMACRotatingOption"], selected: privateAddressOption, table: table))
+                CustomNavigationLink("KWFLocSettingRandomMACSwitchTitle".localize(table: table), status: "kWFLocRandomMACStaticOption".localize(table: table), destination: SelectOptionList(title: "KWFLocSettingRandomMACSwitchTitle", options: ["kWFLocRandomMACOffOption", "kWFLocRandomMACStaticOption", "kWFLocRandomMACRotatingOption"], selected: privateAddressOption, table: table))
                 LabeledContent("MACAddress".localize(table: "GeneralSettingsUI"), value: generateRandomAddress())
             } footer: {
                 VStack(alignment: .leading) {
@@ -60,19 +60,19 @@ struct NetworkDetailView: View {
             }
             
             Section {
-                CustomNavigationLink(title: "kWFLocSettingsIPConfigureTitle".localize(table: table), status: "kWFLocSettingsIPV4ConfigureAutomatic".localize(table: table), destination: EmptyView())
+                CustomNavigationLink("kWFLocSettingsIPConfigureTitle".localize(table: table), status: "kWFLocSettingsIPV4ConfigureAutomatic".localize(table: table), destination: EmptyView())
             } header: {
                 Text("kWFLocSettingsIPSectionTitle", tableName: table)
             }
             
             Section {
-                CustomNavigationLink(title: "kWFLocSettingsDNSConfigureButton".localize(table: table), status: "kWFLocSettingsDNSConfigureAutomatic".localize(table: table), destination: EmptyView())
+                CustomNavigationLink("kWFLocSettingsDNSConfigureButton".localize(table: table), status: "kWFLocSettingsDNSConfigureAutomatic".localize(table: table), destination: EmptyView())
             } header: {
                 Text("kWFLocSettingsDNSSectionTitle", tableName: table)
             }
             
             Section {
-                CustomNavigationLink(title: "kWFLocSettingsProxyConfigureButton".localize(table: table), status: "kWFLocSettingsProxyConfigOffTitle".localize(table: table), destination: EmptyView())
+                CustomNavigationLink("kWFLocSettingsProxyConfigureButton".localize(table: table), status: "kWFLocSettingsProxyConfigOffTitle".localize(table: table), destination: EmptyView())
             } header: {
                 Text("kWFLocSettingsProxySectionTitle", tableName: table)
             }

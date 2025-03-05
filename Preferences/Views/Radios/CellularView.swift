@@ -27,7 +27,7 @@ struct CellularView: View {
             
 //            Section {
 //                Toggle("Cellular Data", isOn: $cellularDataEnabled)
-//                CustomNavigationLink(title: "Cellular Data Options", status: "Roaming Off", destination: EmptyView())
+//                CustomNavigationLink("Cellular Data Options", status: "Roaming Off", destination: EmptyView())
 //                Button("Set Up Personal Hotspot") {}
 //            } footer: {
 //                Text("Turn off cellular data to restrict all data to Wi-Fi, including email, web browsing, and push notifications.")
@@ -35,11 +35,11 @@ struct CellularView: View {
 //            
 //            Section {
 //                Toggle("Turn On This Line", isOn: .constant(true))
-//                CustomNavigationLink(title: "Cellular Plans", status: "Plan", destination: EmptyView())
-//                CustomNavigationLink(title: "Network Selection", status: "Network", destination: EmptyView())
-//                CustomNavigationLink(title: "Wi-Fi Calling", status: "On", destination: EmptyView())
-//                CustomNavigationLink(title: "Calls on Other Devices", status: "On", destination: EmptyView())
-//                CustomNavigationLink(title: "Usage", status: "Used 0 KB - Unlimited", destination: EmptyView())
+//                CustomNavigationLink("Cellular Plans", status: "Plan", destination: EmptyView())
+//                CustomNavigationLink("Network Selection", status: "Network", destination: EmptyView())
+//                CustomNavigationLink("Wi-Fi Calling", status: "On", destination: EmptyView())
+//                CustomNavigationLink("Calls on Other Devices", status: "On", destination: EmptyView())
+//                CustomNavigationLink("Usage", status: "Used 0 KB - Unlimited", destination: EmptyView())
 //                NavigationLink("Carrier Services") {}
 //                NavigationLink("SIM PIN") {}
 //                Button("Delete eSIM", role: .destructive) {}

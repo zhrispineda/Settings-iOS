@@ -87,7 +87,7 @@ struct WalletView: View {
             
             if !UIDevice.IsSimulator && UIDevice.iPhone {
                 Section {
-                    CustomNavigationLink(title: "SETTINGS_EXPRESS_TRANSIT_CARDS_SECTION_HEADER".localize(table: payTable), status: "NONE".localize(table: payTable), destination: EmptyView())
+                    CustomNavigationLink("SETTINGS_EXPRESS_TRANSIT_CARDS_SECTION_HEADER".localize(table: payTable), status: "NONE".localize(table: payTable), destination: EmptyView())
                 } header: {
                     Text("SETTINGS_EXPRESS_TRANSIT_CARD_CATEGORY_SECTION_HEADER", tableName: payTable)
                 } footer: {

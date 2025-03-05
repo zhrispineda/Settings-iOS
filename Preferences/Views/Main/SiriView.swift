@@ -66,18 +66,18 @@ struct SiriView: View {
             // MARK: Siri Requests Section
             Section {
                 if siriEnabled {
-                    CustomNavigationLink(title: "VOICE".localize(table: table), status: "", destination: SiriVoiceView()) // \("REGION_en-US".localize(table: table)) (Voice 4)
+                    CustomNavigationLink("VOICE".localize(table: table), status: "", destination: SiriVoiceView()) // \("REGION_en-US".localize(table: table)) (Voice 4)
                 } else {
-                    CustomNavigationLink(title: "LANGUAGE".localize(table: table), status: "English (United States)", destination: SiriLanguageView())
+                    CustomNavigationLink("LANGUAGE".localize(table: table), status: "English (United States)", destination: SiriLanguageView())
                 }
                 if !UIDevice.IsSimulator {
-                    CustomNavigationLink(title: "ACTIVATION_COMPACT".localize(table: table), status: "ACTIVATION_OFF".localize(table: table), destination: EmptyView())
+                    CustomNavigationLink("ACTIVATION_COMPACT".localize(table: table), status: "ACTIVATION_OFF".localize(table: table), destination: EmptyView())
                 }
                 if siriEnabled {
                     if !UIDevice.IsSimulator {
                         Toggle("ASSISTANT_LOCK_SCREEN_ACCESS".localize(table: table), isOn: $allowSiriWhenLockedEnabled)
                     }
-                    CustomNavigationLink(title: "VOICE".localize(table: table), status: "\("REGION_en-US".localize(table: table)) (Voice 4)", destination: SiriVoiceView())
+                    CustomNavigationLink("VOICE".localize(table: table), status: "\("REGION_en-US".localize(table: table)) (Voice 4)", destination: SiriVoiceView())
                     NavigationLink("VOICE_FEEDBACK".localize(table: table), destination: SiriResponsesView())
                     if !UIDevice.IsSimulator {
                         NavigationLink("ANNOUNCE_CALLS_TITLE".localize(table: table), destination: EmptyView())

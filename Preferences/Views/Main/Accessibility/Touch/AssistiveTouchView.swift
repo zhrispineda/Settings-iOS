@@ -18,7 +18,7 @@ struct AssistiveTouchView: View {
         CustomList {
             Section {
                 Toggle("MOUSE_POINTER_DWELL_CONTROL".localize(table: table), isOn: $mousePointerDwellControlEnabled)
-                CustomNavigationLink(title: "MOUSE_POINTER_DWELL_AUTOREVERT".localize(table: table), status: "TAP".localize(table: strTable), destination: FallbackActionView())
+                CustomNavigationLink("MOUSE_POINTER_DWELL_AUTOREVERT".localize(table: table), status: "TAP".localize(table: strTable), destination: FallbackActionView())
                 NavigationLink("MOUSE_POINTER_DWELL_TOLERANCE".localize(table: table), destination: MovementToleranceView())
                 NavigationLink("MOUSE_POINTER_DWELL_HOT_CORNERS".localize(table: table), destination: HotCornersView())
                 Stepper(

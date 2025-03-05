@@ -78,7 +78,7 @@ struct BiometricPasscodeView: View {
                 
                 if UIDevice.iPhone {
                     Section {
-                        CustomNavigationLink(title: "DTO_STATUS_LABEL_DESCRIPTION".localize(table: dtoTable), status: "DTO_STATUS_LABEL_DESCRIPTION_STATE_OFF".localize(table: dtoTable), destination: EmptyView())
+                        CustomNavigationLink("DTO_STATUS_LABEL_DESCRIPTION".localize(table: dtoTable), status: "DTO_STATUS_LABEL_DESCRIPTION_STATE_OFF".localize(table: dtoTable), destination: EmptyView())
                             .disabled(true)
                     } footer: {
                         Text(UIDevice.PearlIDCapability ? "DTO_GROUP_DISABLED_REASON_FOOTER_DESCRIPTION_FACE_ID" : "DTO_GROUP_DISABLED_REASON_FOOTER_DESCRIPTION_TOUCH_ID", tableName: dtoTable)
@@ -98,7 +98,7 @@ struct BiometricPasscodeView: View {
             }
             
             Section {
-                CustomNavigationLink(title: "PASSCODE_REQ".localize(table: lockTable), status: "ALWAYS".localize(table: lockTable), destination: EmptyView())
+                CustomNavigationLink("PASSCODE_REQ".localize(table: lockTable), status: "ALWAYS".localize(table: lockTable), destination: EmptyView())
                     .disabled(true)
             }
             

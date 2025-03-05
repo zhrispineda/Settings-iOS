@@ -17,7 +17,7 @@ struct KeyboardsTypingView: View {
     var body: some View {
         CustomList(title: "KEYBOARDS".localize(table: table), topPadding: true) {
             Section {
-                CustomNavigationLink(title: "HOVER_TYPING".localize(table: table), status: "OFF".localize(table: accTable), destination: HoverTextView())
+                CustomNavigationLink("HOVER_TYPING".localize(table: table), status: "OFF".localize(table: accTable), destination: HoverTextView())
             } footer: {
                 Text("HOVER_TYPING_FOOTER", tableName: accTable)
             }
@@ -27,7 +27,7 @@ struct KeyboardsTypingView: View {
             }
             
             Section {
-                CustomNavigationLink(title: "FULL_KEYBOARD_ACCESS".localize(table: keyTable), status: "OFF".localize(table: accTable), destination: FullKeyboardAccessView())
+                CustomNavigationLink("FULL_KEYBOARD_ACCESS".localize(table: keyTable), status: "OFF".localize(table: accTable), destination: FullKeyboardAccessView())
             } header: {
                 Text("HARDWARE_KEYBOARDS", tableName: table)
             } footer: {
@@ -39,9 +39,9 @@ struct KeyboardsTypingView: View {
             }
             
             Section {
-                CustomNavigationLink(title: "KEY_REPEAT".localize(table: table), status: "ON".localize(table: accTable), destination: KeyRepeatView())
-                CustomNavigationLink(title: "STICKY_KEYS".localize(table: table), status: "OFF".localize(table: accTable), destination: StickyKeysView())
-                CustomNavigationLink(title: "SLOW_KEYS".localize(table: table), status: "OFF".localize(table: accTable), destination: SlowKeysView())
+                CustomNavigationLink("KEY_REPEAT".localize(table: table), status: "ON".localize(table: accTable), destination: KeyRepeatView())
+                CustomNavigationLink("STICKY_KEYS".localize(table: table), status: "OFF".localize(table: accTable), destination: StickyKeysView())
+                CustomNavigationLink("SLOW_KEYS".localize(table: table), status: "OFF".localize(table: accTable), destination: SlowKeysView())
             } footer: {
                 Text("HARDWARE_KEYBOARDS_FOOTER", tableName: table)
             }

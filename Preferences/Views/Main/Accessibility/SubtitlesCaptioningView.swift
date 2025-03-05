@@ -26,7 +26,7 @@ struct SubtitlesCaptioningView: View {
             }
             
             Section {
-                CustomNavigationLink(title: "CAPTION_THEME".localize(table: table), status: "MALocalize-MADefault".localize(table: profTable), destination: StyleView())
+                CustomNavigationLink("CAPTION_THEME".localize(table: table), status: "MALocalize-MADefault".localize(table: profTable), destination: StyleView())
             }
             
             Section {

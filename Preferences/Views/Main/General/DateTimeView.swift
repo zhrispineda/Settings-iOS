@@ -36,7 +36,7 @@ struct DateTimeView: View {
                 if automaticTime {
                     LabeledContent("TIME_ZONE".localize(table: table), value: "Cupertino")
                 } else {
-                    CustomNavigationLink(title: "TIME_ZONE".localize(table: table), status: "Cupertino", destination: EmptyView())
+                    CustomNavigationLink("TIME_ZONE".localize(table: table), status: "Cupertino", destination: EmptyView())
                     HStack {
                         Spacer()
                         Text(selectedDay.formatted(date: .abbreviated, time: .omitted))

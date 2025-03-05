@@ -78,7 +78,7 @@ struct FocusView: View {
             }
             
             Section {
-                CustomNavigationLink(title: "FOCUS_STATUS".localize(table: table), status: "OFF".localize(table: table), destination: EmptyView())
+                CustomNavigationLink("FOCUS_STATUS".localize(table: table), status: "OFF".localize(table: table), destination: EmptyView())
             } footer: {
                 Text("FOCUS_STATUS_DESCRIPTION", tableName: table)
             }

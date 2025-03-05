@@ -15,7 +15,7 @@ struct TouchView: View {
     var body: some View {
         CustomList(title: "TOUCH".localize(table: table)) {
             Section {
-                CustomNavigationLink(title: "AIR_TOUCH_TITLE".localize(table: table), status: "OFF".localize(table: table), destination: AssistiveTouchView())
+                CustomNavigationLink("AIR_TOUCH_TITLE".localize(table: table), status: "OFF".localize(table: table), destination: AssistiveTouchView())
             }
             
             Section {

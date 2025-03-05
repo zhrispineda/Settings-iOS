@@ -57,12 +57,12 @@ struct LanguageRegionView: View {
                     }
                     .foregroundStyle(Color["Label"])
                 }
-                CustomNavigationLink(title: "CALENDAR".localize(table: table), status: "Gregorian", destination: CalendarTypeView())
-                CustomNavigationLink(title: "TEMPERATURE_UNIT".localize(table: table), status: "°F".localize(table: table), destination: SelectOptionList(title: "TEMPERATURE_UNIT", options: ["Celsius (°C)", "Fahrenheit (°F)"], selected: "Fahrenheit (°F)", table: table))
-                CustomNavigationLink(title: "MEASUREMENT_SYSTEM".localize(table: table), status: "MEASUREMENT_US".localize(table: table), destination: SelectOptionList(title: "MEASUREMENT_SYSTEM", options: ["MEASUREMENT_METRIC", "MEASUREMENT_US", "MEASUREMENT_UK"], selected: "MEASUREMENT_US", table: table))
-                CustomNavigationLink(title: "FIRST_WEEKDAY".localize(table: table), status: "Sunday", destination: SelectOptionList(title: "FIRST_WEEKDAY", options: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], selected: "Sunday", table: table))
-                CustomNavigationLink(title: "DATE_FORMAT".localize(table: table), status: "8/19/24", destination: DateFormatView())
-                CustomNavigationLink(title: "NUMBER_FORMAT".localize(table: table), status: "1,234,567.89", destination: SelectOptionList(title: "NUMBER_FORMAT", options: ["1,234,567.89", "1.234.567,89", "1234567.89", "1 234 567,89"], selected: "1,234,567.89", table: table))
+                CustomNavigationLink("CALENDAR".localize(table: table), status: "Gregorian", destination: CalendarTypeView())
+                CustomNavigationLink("TEMPERATURE_UNIT".localize(table: table), status: "°F".localize(table: table), destination: SelectOptionList(title: "TEMPERATURE_UNIT", options: ["Celsius (°C)", "Fahrenheit (°F)"], selected: "Fahrenheit (°F)", table: table))
+                CustomNavigationLink("MEASUREMENT_SYSTEM".localize(table: table), status: "MEASUREMENT_US".localize(table: table), destination: SelectOptionList(title: "MEASUREMENT_SYSTEM", options: ["MEASUREMENT_METRIC", "MEASUREMENT_US", "MEASUREMENT_UK"], selected: "MEASUREMENT_US", table: table))
+                CustomNavigationLink("FIRST_WEEKDAY".localize(table: table), status: "Sunday", destination: SelectOptionList(title: "FIRST_WEEKDAY", options: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], selected: "Sunday", table: table))
+                CustomNavigationLink("DATE_FORMAT".localize(table: table), status: "8/19/24", destination: DateFormatView())
+                CustomNavigationLink("NUMBER_FORMAT".localize(table: table), status: "1,234,567.89", destination: SelectOptionList(title: "NUMBER_FORMAT", options: ["1,234,567.89", "1.234.567,89", "1234567.89", "1 234 567,89"], selected: "1,234,567.89", table: table))
             }
             
             Section {

@@ -17,14 +17,14 @@ struct ContactsView: View {
         CustomList(title: "Back") {
             Section {
                 Placard(title: "CONTACTS".localize(table: table), icon: "appleContacts", description: "SETTINGS_SUBTITLE".localize(table: table) + " [\("LEARN_MORE".localize(table: table))](#)", frameY: $frameY, opacity: $opacity)
-                CustomNavigationLink(title: "CONTACTS_ACCOUNTS".localize(table: table), status: "1", destination: EmptyView())
+                CustomNavigationLink("CONTACTS_ACCOUNTS".localize(table: table), status: "1", destination: EmptyView())
             }
             
             PermissionsView(appName: "CONTACTS".localize(table: table), cellular: false, location: false, notifications: false, cellularEnabled: .constant(false))
             
             Section {
                 Button {} label: {
-                    CustomNavigationLink(title: "Share Name and Photo".localize(table: table), status: "NAME_AND_PHOTO_SHARING_OFF".localize(table: table), destination: EmptyView())
+                    CustomNavigationLink("Share Name and Photo".localize(table: table), status: "NAME_AND_PHOTO_SHARING_OFF".localize(table: table), destination: EmptyView())
                 }
                 .foregroundStyle(Color["Label"])
             } footer: {
@@ -36,8 +36,8 @@ struct ContactsView: View {
             }
             
             Section {
-                CustomNavigationLink(title: "Sort Order".localize(table: table), status: "LAST".localize(table: table), destination: SelectOptionList(title: "Sort Order", options: ["FIRST", "LAST"], selected: "LAST", table: table))
-                CustomNavigationLink(title: "Display Order".localize(table: table), status: "LAST".localize(table: table), destination: EmptyView())
+                CustomNavigationLink("Sort Order".localize(table: table), status: "LAST".localize(table: table), destination: SelectOptionList(title: "Sort Order", options: ["FIRST", "LAST"], selected: "LAST", table: table))
+                CustomNavigationLink("Display Order".localize(table: table), status: "LAST".localize(table: table), destination: EmptyView())
                 NavigationLink("Short Name".localize(table: table)) {}
                 Button {} label: {
                     NavigationLink("My Info".localize(table: table)) {}

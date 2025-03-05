@@ -61,22 +61,22 @@ struct RestrictionsLocationServicesView: View {
                     SettingsLink(color: .white, iconColor: .blue, icon: "appclip", id: "AppClipsSpecifierName".localize(table: table)) {
                         AppClipsView()
                     }
-                    CustomNavigationLink(title: "AppGenius.bundle", status: "NEVER_AUTHORIZATION".localize(table: privTable), destination: LocationPermissionsDetailView(title: "AppGenius.bundle", selected: "NEVER_AUTHORIZATION".localize(table: privTable)))
-                    CustomNavigationLink(title: "AssistantServices.framework", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), destination: LocationPermissionsDetailView(title: "AssistantServices.framework"))
-                    CustomNavigationLink(title: "BulletinBoard.framework", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), destination: LocationPermissionsDetailView(title: "BulletinBoard.framework"))
-                    CustomNavigationLink(title: "CompassCalibration.bundle", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), destination: LocationPermissionsDetailView(title: "CompassCalibration.bundle"))
-                    CustomNavigationLink(title: "Emergency SOS.bundle", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), destination: LocationPermissionsDetailView(title: "Emergency SOS.bundle"))
-                    CustomNavigationLink(title: "MobileWiFi.framework", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), destination: LocationPermissionsDetailView(title: "MobileWiFi.framework"))
-                    CustomNavigationLink(title: "MotionCalibration.bundle", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), destination: LocationPermissionsDetailView(title: "MotionCalibration.bundle"))
-                    CustomNavigationLink(title: "PassbookMerchantLookup.bundle", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), destination: LocationPermissionsDetailView(title: "PassbookMerchantLookup.bundle"))
+                    CustomNavigationLink("AppGenius.bundle", status: "NEVER_AUTHORIZATION".localize(table: privTable), destination: LocationPermissionsDetailView(title: "AppGenius.bundle", selected: "NEVER_AUTHORIZATION".localize(table: privTable)))
+                    CustomNavigationLink("AssistantServices.framework", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), destination: LocationPermissionsDetailView(title: "AssistantServices.framework"))
+                    CustomNavigationLink("BulletinBoard.framework", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), destination: LocationPermissionsDetailView(title: "BulletinBoard.framework"))
+                    CustomNavigationLink("CompassCalibration.bundle", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), destination: LocationPermissionsDetailView(title: "CompassCalibration.bundle"))
+                    CustomNavigationLink("Emergency SOS.bundle", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), destination: LocationPermissionsDetailView(title: "Emergency SOS.bundle"))
+                    CustomNavigationLink("MobileWiFi.framework", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), destination: LocationPermissionsDetailView(title: "MobileWiFi.framework"))
+                    CustomNavigationLink("MotionCalibration.bundle", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), destination: LocationPermissionsDetailView(title: "MotionCalibration.bundle"))
+                    CustomNavigationLink("PassbookMerchantLookup.bundle", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), destination: LocationPermissionsDetailView(title: "PassbookMerchantLookup.bundle"))
                     SettingsLink(icon: "Placeholder", id: "LOCATION_SHARING".localize(table: locTable), status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable)) {
                         LocationPermissionsDetailView(title: "LOCATION_SHARING".localize(table: locTable))
                     }
                     SettingsLink(icon: "appleSiri", id: "SiriDictationSpecifierName".localize(table: table), status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable)) {
                         LocationPermissionsDetailView(title: "SiriDictationSpecifierName".localize(table: table))
                     }
-                    CustomNavigationLink(title: "SystemCustomization.bundle", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), location: true, destination: LocationPermissionsDetailView(title: "SystemCustomization.bundle"))
-                    CustomNavigationLink(title: "Traffic.bundle", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), destination: LocationPermissionsDetailView(title: "Traffic.bundle"))
+                    CustomNavigationLink("SystemCustomization.bundle", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), location: true, destination: LocationPermissionsDetailView(title: "SystemCustomization.bundle"))
+                    CustomNavigationLink("Traffic.bundle", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), destination: LocationPermissionsDetailView(title: "Traffic.bundle"))
                     SettingsLink(color: .gray, icon: "gear", id: "SYSTEM_SERVICES".localize(table: locTable), status: "location.fill") {
                         SystemServicesView()
                     }

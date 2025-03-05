@@ -23,7 +23,7 @@ struct DisplayTextSizeView: View {
         CustomList(title: "DISPLAY_AND_TEXT".localize(table: table)) {
             Section {
                 Toggle("ENHANCE_TEXT_LEGIBILITY".localize(table: table), isOn: $boldTextEnabled)
-                CustomNavigationLink(title: "LARGER_TEXT".localize(table: table), status: "OFF".localize(table: table), destination: LargerTextView())
+                CustomNavigationLink("LARGER_TEXT".localize(table: table), status: "OFF".localize(table: table), destination: LargerTextView())
                 Toggle("BUTTON_SHAPES".localize(table: table), isOn: $buttonShapesEnabled)
                 Toggle("ON_OFF_LABELS".localize(table: table), isOn: $onOffLabelsEnabled)
             }

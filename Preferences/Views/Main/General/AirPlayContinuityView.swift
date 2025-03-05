@@ -20,7 +20,7 @@ struct AirPlayContinuityView: View {
     var body: some View {
         CustomList(title: "AirPlay & Continuity".localize(table: table)) {
             Section {
-                CustomNavigationLink(title: "Automatically AirPlay".localize(table: table), status: "Automatic".localize(table: table), destination: EmptyView())
+                CustomNavigationLink("Automatically AirPlay".localize(table: table), status: "Automatic".localize(table: table), destination: EmptyView())
             }
             
             if UIDevice.iPhone {
@@ -54,7 +54,7 @@ struct AirPlayContinuityView: View {
             Section {
                 Toggle("AirPlay Receiver".localize(table: table), isOn: $airPlayReceiverEnabled)
                 if airPlayReceiverEnabled {
-                    CustomNavigationLink(title: "Allow AirPlay For".localize(table: table), status: "Current User".localize(table: table), destination: EmptyView())
+                    CustomNavigationLink("Allow AirPlay For".localize(table: table), status: "Current User".localize(table: table), destination: EmptyView())
                 }
             } header: {
                 Text("AirPlay Receiver", tableName: table)

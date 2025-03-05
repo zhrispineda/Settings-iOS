@@ -24,13 +24,13 @@ struct RemindersView: View {
         CustomList(title: "Back") {
             Section {
                 Placard(title: "Reminders".localize(table: table), icon: "appleReminders", description: "SETTINGS_PLACARD_DESCRIPTION_TEXT".localize(table: table, "#"), frameY: $frameY, opacity: $opacity)
-                CustomNavigationLink(title: "Reminders Accounts".localize(table: table), status: "1", destination: EmptyView())
+                CustomNavigationLink("Reminders Accounts".localize(table: table), status: "1", destination: EmptyView())
             }
             
             PermissionsView(appName: "Reminders".localize(table: table), cellular: false, location: true, notifications: false, cellularEnabled: .constant(false))
             
             Section {
-                CustomNavigationLink(title: "Default List".localize(table: table), status: "Reminders".localize(table: table), destination: EmptyView())
+                CustomNavigationLink("Default List".localize(table: table), status: "Reminders".localize(table: table), destination: EmptyView())
             } footer: {
                 Text("Reminders created outside of a specific list are placed in this list.", tableName: table)
             }

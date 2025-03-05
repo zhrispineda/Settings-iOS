@@ -28,7 +28,7 @@ struct SpeakSelectionView: View {
             
             if speakSelectionEnabled {
                 Section {
-                    CustomNavigationLink(title: "HIGHLIGHT_WORD".localize(table: table), status: "OFF".localize(table: accTable), destination: HighlightContentView())
+                    CustomNavigationLink("HIGHLIGHT_WORD".localize(table: table), status: "OFF".localize(table: accTable), destination: HighlightContentView())
                 } footer: {
                     Text("QuickSpeakWordHighlightFooterText", tableName: table)
                 }

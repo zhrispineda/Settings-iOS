@@ -28,7 +28,7 @@ struct BatteryView: View {
             
             Section {
                 if UIDevice.DeviceSupportsBatteryInformation {
-                    CustomNavigationLink(title: "BATTERY_HEALTH_TITLE".localize(table: table), status: "NORMAL_STATE".localize(table: table), destination: BatteryHealthView())
+                    CustomNavigationLink("BATTERY_HEALTH_TITLE".localize(table: table), status: "NORMAL_STATE".localize(table: table), destination: BatteryHealthView())
                     if UIDevice.iPhone {
                         NavigationLink("CHARGING_TITLE_CHARGING".localize(table: table), destination: ChargingOptimizationView())
                     }

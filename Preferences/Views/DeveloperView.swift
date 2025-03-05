@@ -45,6 +45,7 @@ struct DeveloperView: View {
     var body: some View {
         CustomList(title: "DEVELOPER".localize(table: table), topPadding: true) {
             if UIDevice.IsSimulator {
+                // Appearance
                 Section {
                     Toggle("APPEARANCE_DARK".localize(table: table), isOn: $darkAppearanceEnabled)
                 } header: {
@@ -53,9 +54,10 @@ struct DeveloperView: View {
             }
             
             if UIDevice.IsSimulator && UIDevice.iPhone || (UIDevice.iPad && UIDevice.ProDevice) {
+                // Display Zoom
                 Section {
                     if UIDevice.iPhone {
-                        CustomNavigationLink(title: "VIEW".localize(table: table), status: "Default", destination: DisplayZoomView())
+                        CustomNavigationLink("VIEW".localize(table: table), status: "Default", destination: DisplayZoomView())
                     } else {
                         Button {
                             showingDisplayZoomSheet.toggle()
@@ -76,6 +78,7 @@ struct DeveloperView: View {
                 }
             }
             
+            // Paired Devices
             Section {
                 Button("CLEAR_TRUSTED_COMPUTERS".localize(table: table)) {}
             } header: {
@@ -84,8 +87,19 @@ struct DeveloperView: View {
                 Text("PAIRED_DEVICES_FOOTER", tableName: table)
             }
             
+            // UI Automation
             Section("UI_AUTOMATION".localize(table: table)) {
                 Toggle("ENABLE_UI_AUTOMATION".localize(table: table), isOn: $uiAutomationEnabled)
+            }
+            
+            if !UIDevice.IsSimulator {
+                // Performance
+                Section {
+                    //CustomNavigationLink("Hang Detection", status: "Off") {}
+                    //CustomNavigationLink("Hang Detection", status: "Off") {}
+                } header: {
+                    Text("PERFORMANCE_GROUP", tableName: table)
+                }
             }
             
             Section {

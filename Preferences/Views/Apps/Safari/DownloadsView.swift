@@ -45,7 +45,7 @@ struct DownloadsView: View {
             }
             
             Section {
-                CustomNavigationLink(title: "Remove Download List Items", status: "After one day", destination: SelectOptionList(title: "Remove Download List Items", options: ["After one day", "Upon successful download", "Manually"], selected: "After one day"))
+                CustomNavigationLink("Remove Download List Items", status: "After one day", destination: SelectOptionList(title: "Remove Download List Items", options: ["After one day", "Upon successful download", "Manually"], selected: "After one day"))
             }
         }
     }

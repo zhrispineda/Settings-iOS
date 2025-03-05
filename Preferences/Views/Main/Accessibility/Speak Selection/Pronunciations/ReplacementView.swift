@@ -45,8 +45,8 @@ struct ReplacementView: View {
             }
             
             Section {
-                CustomNavigationLink(title: "PRONUNCIATION_LANGUAGE".localize(table: table), status: "English (US)", destination: PronunciationLanguagesView())
-                CustomNavigationLink(title: "SPEECH_VOICES".localize(table: table), status: "VO_MODIFIER_KEY_ALL_OPTIONS".localize(table: table), destination: PronunciationVoicesView())
+                CustomNavigationLink("PRONUNCIATION_LANGUAGE".localize(table: table), status: "English (US)", destination: PronunciationLanguagesView())
+                CustomNavigationLink("SPEECH_VOICES".localize(table: table), status: "VO_MODIFIER_KEY_ALL_OPTIONS".localize(table: table), destination: PronunciationVoicesView())
                 Toggle("PRONUNCIATION_IGNORE_CASE".localize(table: table), isOn: $ignoreCaseEnabled)
                 Toggle("APPLIES_TO".localize(table: table), isOn: $applyAllAppsEnabled.animation())
             }

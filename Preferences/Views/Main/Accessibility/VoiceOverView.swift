@@ -91,15 +91,15 @@ struct VoiceOverView: View {
             }
             
             Section {
-                CustomNavigationLink(title: "NavigationStyle".localize(table: voiceTable), status: "NAVIGATION_STYLE_FLAT".localize(table: voiceTable), destination: EmptyView())
-                CustomNavigationLink(title: "NAVIGATE_IMAGES_TITLE".localize(table: voiceTable), status: "NAV_IMG_ALWAYS".localize(table: voiceTable), destination: EmptyView())
+                CustomNavigationLink("NavigationStyle".localize(table: voiceTable), status: "NAVIGATION_STYLE_FLAT".localize(table: voiceTable), destination: EmptyView())
+                CustomNavigationLink("NAVIGATE_IMAGES_TITLE".localize(table: voiceTable), status: "NAV_IMG_ALWAYS".localize(table: voiceTable), destination: EmptyView())
                 Toggle("CURSOR_STYLE".localize(table: voiceTable), isOn: $largeCursor)
                 Toggle("CAPTION_PANEL".localize(table: voiceTable), isOn: $captionPanel)
             }
             
             Section {
-                CustomNavigationLink(title: "DELAY_TO_SPEAK".localize(table: voiceTable), status: "0s", destination: EmptyView())
-                CustomNavigationLink(title: "DOUBLE_TAP_INTERVAL_TITLE".localize(table: voiceTable), status: "0.35s", destination: EmptyView())
+                CustomNavigationLink("DELAY_TO_SPEAK".localize(table: voiceTable), status: "0s", destination: EmptyView())
+                CustomNavigationLink("DOUBLE_TAP_INTERVAL_TITLE".localize(table: voiceTable), status: "0.35s", destination: EmptyView())
             }
         }
     }

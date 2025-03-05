@@ -28,10 +28,10 @@ struct AboutView: View {
                 if UIDevice.IsSimulator {
                     LabeledContent("Device_Name".localize(table: table), value: UIDevice.current.model)
                 } else {
-                    CustomNavigationLink(title: "Device_Name".localize(table: table), status: deviceName, destination: NameView())
+                    CustomNavigationLink("Device_Name".localize(table: table), status: deviceName, destination: NameView())
                 }
                 
-                CustomNavigationLink(title: "OS Version".localize(table: uiTable), status: UIDevice().systemVersion, destination: VersionView())
+                CustomNavigationLink("OS Version".localize(table: uiTable), status: UIDevice().systemVersion, destination: VersionView())
                     .textSelection(.enabled)
                 
                 LabeledContent("ProductModelName".localize(table: uiTable), value: UIDevice.fullModel)

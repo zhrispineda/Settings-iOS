@@ -155,7 +155,7 @@ struct AccessibilityView: View {
                                 exit(0)
                             }
                     } label: {
-                        CustomNavigationLink(title: "ADAPTIVE_VOICE_SHORTCUTS_TITLE".localize(table: titleTable), status: "OFF".localize(table: table), destination: EmptyView())
+                        CustomNavigationLink("ADAPTIVE_VOICE_SHORTCUTS_TITLE".localize(table: titleTable), status: "OFF".localize(table: table), destination: EmptyView())
                     }
                 } else {
                     // Personal Voice

@@ -45,7 +45,7 @@ struct FormatsView: View {
             if UIDevice.iPhone {
                 if UIDevice.RingerButtonCapability && UIDevice.ProDevice || UIDevice.fullModel.contains("iPhone 16") {
                     Section {
-                        CustomNavigationLink(title: "ENHANCED_RESOLUTION_TITLE".localize(table: table), status: "CAM_PHOTO_RESOLUTION_24MP".localize(table: table), destination: EmptyView())
+                        CustomNavigationLink("ENHANCED_RESOLUTION_TITLE".localize(table: table), status: "CAM_PHOTO_RESOLUTION_24MP".localize(table: table), destination: EmptyView())
                     } header: {
                         Text("CAM_PHOTO_CAPTURE_HEADER".localize(table: table))
                     } footer: {
@@ -67,7 +67,7 @@ struct FormatsView: View {
                             Toggle("CAM_LINEAR_DNG_TITLE".localize(table: table), isOn: $proRawEnabled)
                         }
                         if proRawResolutionControl {
-                            CustomNavigationLink(title: "CAM_SECONDARY_PHOTO_FORMAT_TITLE".localize(table: table), status: "CAM_SECONDARY_PHOTO_FORMAT_RAW48_SHORT".localize(table: table), destination: EmptyView())
+                            CustomNavigationLink("CAM_SECONDARY_PHOTO_FORMAT_TITLE".localize(table: table), status: "CAM_SECONDARY_PHOTO_FORMAT_RAW48_SHORT".localize(table: table), destination: EmptyView())
                         }
                     } footer: {
                         Text("\(UIDevice.AlwaysCaptureDepthCapability ? "48MP_CONTROL_FOOTER" : "CAM_PRO_RAW_48MP_FOOTER")".localize(table: table))
@@ -79,7 +79,7 @@ struct FormatsView: View {
                     Section {
                         Toggle("CAM_PRESERVE_PRO_RES_SWITCH".localize(table: table), isOn: $proResCapture)
                         if proResCapture && UIDevice.RingerButtonCapability && UIDevice.ProDevice {
-                            CustomNavigationLink(title: "PRO_RES_COLOR_SPACE_TITLE".localize(table: table), status: "PRO_RES_COLOR_SPACE_HDR".localize(table: table), destination: EmptyView())
+                            CustomNavigationLink("PRO_RES_COLOR_SPACE_TITLE".localize(table: table), status: "PRO_RES_COLOR_SPACE_HDR".localize(table: table), destination: EmptyView())
                         }
                     } header: {
                         Text("CAM_FORMATS_VIDEO_CAPTURE_GROUP_TITLE".localize(table: table))

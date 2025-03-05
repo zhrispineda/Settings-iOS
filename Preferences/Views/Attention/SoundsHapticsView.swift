@@ -59,7 +59,7 @@ struct SoundsHapticsView: View {
                 
                 Toggle("CHANGE_WITH_BUTTONS".localize(table: table), isOn: $changeWithButtonsEnabled)
                 if UIDevice.iPhone {
-                    CustomNavigationLink(title: "HAPTICS".localize(table: table), status: "ALWAYS_PLAY".localize(table: table), destination: EmptyView())
+                    CustomNavigationLink("HAPTICS".localize(table: table), status: "ALWAYS_PLAY".localize(table: table), destination: EmptyView())
                 }
             } header: {
                 Text("RINGER_AND_ALERTS", tableName: table)
@@ -68,21 +68,21 @@ struct SoundsHapticsView: View {
             }
             
             Section {
-                CustomNavigationLink(title: "Ringtone".localize(table: table), status: "Reflection", destination: EmptyView())
-                CustomNavigationLink(title: "Text_Messages".localize(table: table), status: "Note", destination: EmptyView())
+                CustomNavigationLink("Ringtone".localize(table: table), status: "Reflection", destination: EmptyView())
+                CustomNavigationLink("Text_Messages".localize(table: table), status: "Note", destination: EmptyView())
                 if UIDevice.iPhone {
-                    CustomNavigationLink(title: "Voicemail".localize(table: table), status: "Droplet", destination: EmptyView())
+                    CustomNavigationLink("Voicemail".localize(table: table), status: "Droplet", destination: EmptyView())
                 }
-                CustomNavigationLink(title: "NEW_MAIL".localize(table: table), status: "None", destination: EmptyView())
-                CustomNavigationLink(title: "SENT_MAIL".localize(table: table), status: "Swoosh", destination: EmptyView())
-                CustomNavigationLink(title: "Calendar Alarm".localize(table: table), status: "Chord", destination: EmptyView())
-                CustomNavigationLink(title: "Reminder Alerts".localize(table: table), status: "Chord", destination: EmptyView())
-                CustomNavigationLink(title: "DEFAULT_ALERTS".localize(table: table), status: "Rebound", destination: EmptyView())
+                CustomNavigationLink("NEW_MAIL".localize(table: table), status: "None", destination: EmptyView())
+                CustomNavigationLink("SENT_MAIL".localize(table: table), status: "Swoosh", destination: EmptyView())
+                CustomNavigationLink("Calendar Alarm".localize(table: table), status: "Chord", destination: EmptyView())
+                CustomNavigationLink("Reminder Alerts".localize(table: table), status: "Chord", destination: EmptyView())
+                CustomNavigationLink("DEFAULT_ALERTS".localize(table: table), status: "Rebound", destination: EmptyView())
             }
             
             Section {
                 if UIDevice.iPhone {
-                    CustomNavigationLink(title: "KEYBOARD_FEEDBACK".localize(table: table), status: "SOUND".localize(table: table), destination: EmptyView())
+                    CustomNavigationLink("KEYBOARD_FEEDBACK".localize(table: table), status: "SOUND".localize(table: table), destination: EmptyView())
                 } else {
                     Toggle("KEYBOARD_CLICKS".localize(table: table), isOn: $keyboardClicksEnabled)
                 }

@@ -57,7 +57,7 @@ struct CameraView: View {
             // MARK: System Settings Section
             if !UIDevice.IsSimulator && UIDevice.AdvancedPhotographicStylesCapability {
                 Section {
-                    CustomNavigationLink(title: "CAMERA_BUTTON_TITLE".localize(table: buttonTable), status: selectedApp.localize(table: buttonTable), destination: CameraControlView())
+                    CustomNavigationLink("CAMERA_BUTTON_TITLE".localize(table: buttonTable), status: selectedApp.localize(table: buttonTable), destination: CameraControlView())
                 } header: {
                     Text("SYSTEM_SETTINGS_HEADER", tableName: stylesTable)
                 } footer: {
@@ -71,7 +71,7 @@ struct CameraView: View {
                     Button {
                         showingPhotographicStylesView.toggle()
                     } label: {
-                        CustomNavigationLink(title: "SYSTEM_STYLES_TITLE".localize(table: stylesTable), status: "SEMANTIC_STYLES_LABEL_STANDARD".localize(table: kitTable), destination: EmptyView())
+                        CustomNavigationLink("SYSTEM_STYLES_TITLE".localize(table: stylesTable), status: "SEMANTIC_STYLES_LABEL_STANDARD".localize(table: kitTable), destination: EmptyView())
                     }
                     .foregroundStyle(Color["Label"])
                     .fullScreenCover(isPresented: $showingPhotographicStylesView) {
@@ -90,12 +90,12 @@ struct CameraView: View {
             
             // MARK: Camera Options Section
             Section {
-                CustomNavigationLink(title: "CAM_RECORD_VIDEO_TITLE".localize(table: table), status: "\(selectedVideoSetting)_SHORT".localize(table: table), destination: RecordVideoView())
-                CustomNavigationLink(title: "CAM_RECORD_SLOMO_TITLE".localize(table: table), status: "\(selectedSlomoSetting)_SHORT".localize(table: table), destination: RecordSlomoView())
+                CustomNavigationLink("CAM_RECORD_VIDEO_TITLE".localize(table: table), status: "\(selectedVideoSetting)_SHORT".localize(table: table), destination: RecordVideoView())
+                CustomNavigationLink("CAM_RECORD_SLOMO_TITLE".localize(table: table), status: "\(selectedSlomoSetting)_SHORT".localize(table: table), destination: RecordSlomoView())
                 if UIDevice.HigherResolutionCinematicModeCapability {
-                    CustomNavigationLink(title: "CAM_RECORD_CINEMATIC_TITLE".localize(table: table), status: "\(selectedCinematicSetting)_SHORT".localize(table: table), destination: RecordCinematicView())
+                    CustomNavigationLink("CAM_RECORD_CINEMATIC_TITLE".localize(table: table), status: "\(selectedCinematicSetting)_SHORT".localize(table: table), destination: RecordCinematicView())
                 }
-                CustomNavigationLink(title: "CAM_AUDIO_CONFIGURATION_TITLE".localize(table: table), status: selectedSoundSetting.localize(table: selectedSoundSetting.contains("CINEMATIC") ? cineTable : table), destination: RecordSoundView())
+                CustomNavigationLink("CAM_AUDIO_CONFIGURATION_TITLE".localize(table: table), status: selectedSoundSetting.localize(table: selectedSoundSetting.contains("CINEMATIC") ? cineTable : table), destination: RecordSoundView())
                 NavigationLink("CAM_FORMATS_TITLE".localize(table: table)) {
                     FormatsView()
                 }
@@ -142,7 +142,7 @@ struct CameraView: View {
             
             if UIDevice.ProDevice && UIDevice.iPhone {
                 Section {
-                    CustomNavigationLink(title: UIDevice.AdvancedPhotographicStylesCapability && !UIDevice.IsSimulator ? "FOCAL_LENGTH_ROW_TITLE_CAMERA_BUTTON".localize(table: buttonTable) : "FOCAL_LENGTH_ROW_TITLE".localize(table: table), status: "FOCAL_LENGTH_GROUP_%@_AND_%@_AND_%@_MM".localize(table: table, "24", "28", "35"), destination: FocalLengthView())
+                    CustomNavigationLink(UIDevice.AdvancedPhotographicStylesCapability && !UIDevice.IsSimulator ? "FOCAL_LENGTH_ROW_TITLE_CAMERA_BUTTON".localize(table: buttonTable) : "FOCAL_LENGTH_ROW_TITLE".localize(table: table), status: "FOCAL_LENGTH_GROUP_%@_AND_%@_AND_%@_MM".localize(table: table, "24", "28", "35"), destination: FocalLengthView())
                 } header: {
                     if UIDevice.AdvancedPhotographicStylesCapability {
                         Text("CAM_PHOTO_CAPTURE_HEADER", tableName: table)

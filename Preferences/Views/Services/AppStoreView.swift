@@ -43,7 +43,7 @@ struct AppStoreView: View {
             
             Section {
                 Toggle("AUTO_DOWNLOAD_ON_CELL".localize(table: table), isOn: $automaticDownloadsEnabled)
-                CustomNavigationLink(title: "AUTO_DOWNLOAD_APPS".localize(table: table), status: "ALWAYS_ALLOW".localize(table: table), destination: EmptyView())
+                CustomNavigationLink("AUTO_DOWNLOAD_APPS".localize(table: table), status: "ALWAYS_ALLOW".localize(table: table), destination: EmptyView())
             } header: {
                 Text("CELLULAR_DATA_HEADER", tableName: table)
             } footer: {
@@ -52,7 +52,7 @@ struct AppStoreView: View {
             .disabled(!cellularEnabled)
             
             Section {
-                CustomNavigationLink(title: "AUTO_PLAY_VIDEO_SETTINGS_TITLE".localize(table: table), status: "AUTO_PLAY_VIDEO_MODE_ON".localize(table: table), destination: EmptyView())
+                CustomNavigationLink("AUTO_PLAY_VIDEO_SETTINGS_TITLE".localize(table: table), status: "AUTO_PLAY_VIDEO_MODE_ON".localize(table: table), destination: EmptyView())
             } footer: {
                 Text("AUTO_PLAY_VIDEO_SETTINGS_DESCRIPTION", tableName: table)
             }
