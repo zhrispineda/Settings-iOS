@@ -39,15 +39,15 @@ struct AboutView: View {
                 MonospacedLabel("ProductModel".localize(table: uiTable), value: showingModelNumber ? regulatoryModelNumber : "\(modelNumber)\(getRegionInfo())")
                     .contentShape(Rectangle())
                     .onTapGesture {
-                        showingModelNumber.toggle()
+                      showingModelNumber.toggle()
                     }
                 LabeledContent("SerialNumber".localize(table: uiTable), value: serialNumber)
             }
             .task {
                 if serialNumber.isEmpty {
+                    serialNumber = MGHelper.read(key: "VasUgeSzVyHdB27g2XpN0g") ?? getRandomSerialNumber() // SerialNumber
                     modelNumber = MGHelper.read(key: "D0cJ8r7U5zve6uA6QbOiLA") ?? getRegulatoryModelNumber() // ModelNumber
                     regulatoryModelNumber = getRegulatoryModelNumber()
-                    serialNumber = MGHelper.read(key: "VasUgeSzVyHdB27g2XpN0g") ?? getRandomSerialNumber() // SerialNumber
                     wifiAddress = generateRandomAddress()
                     bluetoothAddress = generateRandomAddress()
                     eidValue = getRandomEID()
@@ -93,11 +93,12 @@ struct AboutView: View {
                         Text("EID", tableName: table)
                             .frame(maxWidth: .infinity, alignment: .leading)
                         HStack(spacing: 0) {
-                            ForEach(eidValue.map { String($0) }, id: \.self) { character in
+                            ForEach(Array(eidValue.enumerated()), id: \.offset) { _, character in
+                                let char = String(character)
                                 if character == "1" {
-                                    Text(character)
+                                    Text(char)
                                 } else {
-                                    Text(character)
+                                    Text(char)
                                         .fontDesign(.monospaced)
                                         .kerning(-1)
                                 }

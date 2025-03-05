@@ -1,7 +1,7 @@
 /*
-Abstract:
-An HStack container for displaying a label and information with a monospace-like format.
-*/
+ Abstract:
+ An HStack container for displaying a label and information with a monospace-like format.
+ */
 
 import SwiftUI
 
@@ -31,11 +31,12 @@ struct MonospacedLabel: View {
             Text(label)
             Spacer()
             HStack(spacing: 0) {
-                ForEach(value.map { String($0) }, id: \.self) { character in
-                    if ignoreChars.contains(character) {
-                        Text(character)
+                ForEach(Array(value.enumerated()), id: \.offset) { _, character in
+                    let char = String(character)
+                    if ignoreChars.contains(char) {
+                        Text(char)
                     } else {
-                        Text(character)
+                        Text(char)
                             .fontDesign(.monospaced)
                             .kerning(-0.5)
                     }

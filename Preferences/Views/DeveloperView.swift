@@ -95,8 +95,7 @@ struct DeveloperView: View {
             if !UIDevice.IsSimulator {
                 // Performance
                 Section {
-                    //CustomNavigationLink("Hang Detection", status: "Off") {}
-                    //CustomNavigationLink("Hang Detection", status: "Off") {}
+                    CustomNavigationLink("HANGTRACER_EXTERNAL_CONFIGURE".localize(table: table), status: "OFF".localize(table: table)) {}
                 } header: {
                     Text("PERFORMANCE_GROUP", tableName: table)
                 }
