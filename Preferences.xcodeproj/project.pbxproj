@@ -276,6 +276,7 @@
 		8383BE0A2CE4502700B8C68E /* FamilySharing.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8383BE092CE4502700B8C68E /* FamilySharing.xcstrings */; };
 		8383BE0C2CE4510B00B8C68E /* FindMy.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8383BE0B2CE4510B00B8C68E /* FindMy.xcstrings */; };
 		8383CD082C9C842A00BA06A0 /* SystemFontsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8383CD072C9C842A00BA06A0 /* SystemFontsDetailView.swift */; };
+		8384C06D2D7A078200914D77 /* SwiftUI.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8384C06C2D7A078200914D77 /* SwiftUI.xcstrings */; };
 		8385E8FA2C9E0E93008A3758 /* CalendarTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8385E8F92C9E0E93008A3758 /* CalendarTypeView.swift */; };
 		8388C0B22CD473DB00FA7D4C /* WellnessDashboard-Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8388C0B12CD473DB00FA7D4C /* WellnessDashboard-Localizable.xcstrings */; };
 		8388E5342CD034EB00A3066D /* Location Services.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8388E5332CD034EB00A3066D /* Location Services.xcstrings */; };
@@ -777,6 +778,7 @@
 		8383BE092CE4502700B8C68E /* FamilySharing.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = FamilySharing.xcstrings; sourceTree = "<group>"; };
 		8383BE0B2CE4510B00B8C68E /* FindMy.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = FindMy.xcstrings; sourceTree = "<group>"; };
 		8383CD072C9C842A00BA06A0 /* SystemFontsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemFontsDetailView.swift; sourceTree = "<group>"; };
+		8384C06C2D7A078200914D77 /* SwiftUI.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = SwiftUI.xcstrings; sourceTree = "<group>"; };
 		8385E8F92C9E0E93008A3758 /* CalendarTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTypeView.swift; sourceTree = "<group>"; };
 		8388C0B12CD473DB00FA7D4C /* WellnessDashboard-Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "WellnessDashboard-Localizable.xcstrings"; sourceTree = "<group>"; };
 		8388E5332CD034EB00A3066D /* Location Services.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "Location Services.xcstrings"; sourceTree = "<group>"; };
@@ -1897,6 +1899,7 @@
 				833101722CD173AC00C6C3B3 /* Sounds.xcstrings */,
 				83A915452CE1280D00F718AA /* SpotlightSettings.xcstrings */,
 				83F77D682CD3E51F0026B1AC /* StoreSettings.xcstrings */,
+				8384C06C2D7A078200914D77 /* SwiftUI.xcstrings */,
 				837BCF342CD2EAC8009B1E33 /* TouchID.xcstrings */,
 				834A15032CD85705004A0025 /* TranslationUI.xcstrings */,
 				834CA6E92D62AE93006792AE /* UserNotificationsKit.xcstrings */,
@@ -2455,6 +2458,7 @@
 				8355C82C2CE53DAC0067D675 /* Journal.xcstrings in Resources */,
 				831C1A502CCE9E3300866498 /* HomeScreenSettings.xcstrings in Resources */,
 				83F77D692CD3E51F0026B1AC /* StoreSettings.xcstrings in Resources */,
+				8384C06D2D7A078200914D77 /* SwiftUI.xcstrings in Resources */,
 				8355C80E2CE5337C0067D675 /* PrivateRelay.xcstrings in Resources */,
 				830F2B3C2CD995A9006F7F22 /* OBPhotos.xcstrings in Resources */,
 				837C9DF42CC82FDF00A7080F /* FullKeyboardAccess.xcstrings in Resources */,

@@ -130,12 +130,20 @@ struct ContentView: View {
                         .searchable(text: $searchText, isPresented: $searchFocused, placement: .navigationBarDrawer)
                         .overlay {
                             if searchFocused {
-                                List {
-                                    if searchText.isEmpty {
-                                        Section("Suggestions") {}
+                                GeometryReader { geo in
+                                    List {
+                                        if searchText.isEmpty {
+                                            Section("Suggestions") {}
+                                        } else {
+                                            ContentUnavailableView("ContentUnavailableView_Search_Text %@".localize(table: "SwiftUI", searchText), systemImage: "magnifyingglass", description: Text("ContentUnavailableView_Search_Secondary_Text", tableName: "SwiftUI"))
+                                                .frame(minHeight: 0, idealHeight: geo.size.height, maxHeight: .infinity)
+                                                .edgesIgnoringSafeArea(.all)
+                                                .listRowSeparator(.hidden)
+                                        }
                                     }
+                                    .scrollDisabled(!searchText.isEmpty)
+                                    .listStyle(.inset)
                                 }
-                                .listStyle(.inset)
                             }
                         }
                         .onReceive(NotificationCenter.default.publisher(for: UIDevice.orientationDidChangeNotification)) { _ in
@@ -238,12 +246,20 @@ struct ContentView: View {
                         .searchable(text: $searchText, isPresented: $searchFocused)
                         .overlay {
                             if searchFocused {
-                                List {
-                                    if searchText.isEmpty {
-                                        SettingsSearchView()
+                                GeometryReader { geo in
+                                    List {
+                                        if searchText.isEmpty {
+                                            SettingsSearchView()
+                                        } else {
+                                            ContentUnavailableView("ContentUnavailableView_Search_Text %@".localize(table: "SwiftUI", searchText), systemImage: "magnifyingglass", description: Text("ContentUnavailableView_Search_Secondary_Text", tableName: "SwiftUI"))
+                                                .frame(minHeight: 0, idealHeight: geo.size.height, maxHeight: .infinity)
+                                                .edgesIgnoringSafeArea(.all)
+                                                .listRowSeparator(.hidden)
+                                        }
                                     }
+                                    .scrollDisabled(!searchText.isEmpty)
+                                    .listStyle(.inset)
                                 }
-                                .listStyle(.inset)
                             }
                         }
                     }
