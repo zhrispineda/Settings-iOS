@@ -15,6 +15,11 @@ let tabletOnly = ["Apple Pencil", "Multitasking & Gestures"]
 struct ContentView: View {
     // Variables
     @AppStorage("SiriEnabled") private var siriEnabled = false
+    @AppStorage("FollowUpDismissed") private var followUpDismissed = false
+    @AppStorage("AirplaneMode") private var airplaneModeEnabled = false
+    @AppStorage("wifi") private var wifiEnabled = true
+    @AppStorage("bluetooth") private var bluetoothEnabled = true
+    @AppStorage("vpn") private var vpnEnabled = false
     @EnvironmentObject var stateManager: StateManager
     @State private var searchFocused = false
     @State private var searchText = String()
@@ -22,11 +27,6 @@ struct ContentView: View {
     @State private var isOnLandscapeOrientation: Bool = UIDevice.current.orientation.isLandscape
     @State private var id = UUID()
     @State private var preloadRect = false
-    @AppStorage("FollowUpDismissed") private var followUpDismissed = false
-    @AppStorage("AirplaneMode") private var airplaneModeEnabled = false
-    @AppStorage("wifi") private var wifiEnabled = true
-    @AppStorage("bluetooth") private var bluetoothEnabled = true
-    @AppStorage("vpn") private var vpnEnabled = false
     
     init() {
         try? Tips.configure()
