@@ -152,6 +152,76 @@ final class PreferencesUITests: XCTestCase {
         XCTAssertTrue(autoLockButton.exists, "Auto-Lock link not found")
         autoLockButton.tap()
     }
+    
+    // MARK: Check Control Center Settings
+    @MainActor
+    func testSettingsControlCenterExistence() throws {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let accessibilityButton = app.buttons.containing(.image, identifier: "accessibility").firstMatch
+        if !accessibilityButton.exists {
+            let elementsQuery = app.otherElements
+            let element = elementsQuery.element(boundBy: 20)
+            element.swipeUp()
+        } else {
+            accessibilityButton.swipeUp()
+        }
+        
+        let controlCenterButton = app.buttons["Control Center"].staticTexts.firstMatch
+        XCTAssertTrue(controlCenterButton.exists, "Control Center link not found")
+        controlCenterButton.tap()
+        
+        let navTitle = app.staticTexts["Control Center"]
+        XCTAssertTrue(navTitle.exists, "Control Center title not found")
+    }
+    
+    // MARK: Check Display & Brightness Settings
+    @MainActor
+    func testSettingsDisplaySettingsExistence() throws {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let accessibilityButton = app.buttons.containing(.image, identifier: "accessibility").firstMatch
+        if !accessibilityButton.exists {
+            let elementsQuery = app.otherElements
+            let element = elementsQuery.element(boundBy: 20)
+            element.swipeUp()
+        } else {
+            accessibilityButton.swipeUp()
+        }
+        
+        let displayBrightnessButton = app.buttons["Display & Brightness"].staticTexts.firstMatch
+        XCTAssertTrue(displayBrightnessButton.exists, "Display & Brightness link not found")
+        displayBrightnessButton.tap()
+        
+        let brightnessHeader = app.staticTexts["Display & Brightness"]
+        XCTAssertTrue(brightnessHeader.exists, "Display & Brightness title not found")
+    }
+    
+    // MARK: Check Display Text Size Settings
+    @MainActor
+    func testSettingsDisplayTextSizeSettingsExistence() throws {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let accessibilityButton = app.buttons.containing(.image, identifier: "accessibility").firstMatch
+        if !accessibilityButton.exists {
+            let elementsQuery = app.otherElements
+            let element = elementsQuery.element(boundBy: 20)
+            element.swipeUp()
+        } else {
+            accessibilityButton.swipeUp()
+        }
+        
+        let displayBrightnessButton = app.buttons["Display & Brightness"].staticTexts.firstMatch
+        XCTAssertTrue(displayBrightnessButton.exists, "Display & Brightness link not found")
+        displayBrightnessButton.tap()
+        
+        let textSizeButton = app.buttons["Text Size"].staticTexts.firstMatch
+        XCTAssertTrue(textSizeButton.exists, "Text Size link not found")
+        textSizeButton.tap()
+    }
 
     @MainActor
     func testLaunchPerformance() throws {

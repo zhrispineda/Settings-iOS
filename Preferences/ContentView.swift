@@ -207,7 +207,7 @@ struct ContentView: View {
                                                 setting.destination
                                             }
                                             .accessibilityLabel(setting.id)
-                                        } else if setting.capability != .none {
+                                        } else {
                                             SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Cellular" && airplaneModeEnabled ? "Airplane Mode" : setting.id == "Personal Hotspot" ? "Off" : String()) {
                                                 setting.destination
                                             }
