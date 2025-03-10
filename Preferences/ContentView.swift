@@ -17,9 +17,9 @@ struct ContentView: View {
     @AppStorage("SiriEnabled") private var siriEnabled = false
     @AppStorage("FollowUpDismissed") private var followUpDismissed = false
     @AppStorage("AirplaneMode") private var airplaneModeEnabled = false
-    @AppStorage("wifi") private var wifiEnabled = true
-    @AppStorage("bluetooth") private var bluetoothEnabled = true
-    @AppStorage("vpn") private var vpnEnabled = false
+    @AppStorage("WiFi") private var wifiEnabled = true
+    @AppStorage("Bluetooth") private var bluetoothEnabled = true
+    @AppStorage("VPNToggle") private var VPNEnabled = true
     @EnvironmentObject var stateManager: StateManager
     @State private var searchFocused = false
     @State private var searchText = String()
@@ -76,7 +76,7 @@ struct ContentView: View {
                                 }
                             }
                             
-                            // MARK: Radio
+                            // MARK: Radio Settings
                             if !UIDevice.IsSimulator {
                                 Section {
                                     IconToggle(enabled: $airplaneModeEnabled, color: Color.orange, icon: "airplane", title: "Airplane Mode")
@@ -86,13 +86,15 @@ struct ContentView: View {
                                                 id = UUID() // Reset destination
                                                 stateManager.selection = setting.type
                                             } label: {
-                                                SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Wi-Fi" ? (wifiEnabled && !airplaneModeEnabled ? "Not Connected" : "Off") : setting.id == "Bluetooth" ? (bluetoothEnabled ? "On" : "Off") : String())
+                                                SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Wi-Fi" ? (wifiEnabled && !airplaneModeEnabled ? "Not Connected" : "Off") : setting.id == "Bluetooth" ? (bluetoothEnabled ? "On" : "Off") : "")
                                                     .foregroundStyle(stateManager.selection == setting.type ? (UIDevice.IsSimulator ? Color.white : Color["Label"]) : Color["Label"])
                                             }
                                             .listRowBackground(stateManager.selection == setting.type ? (UIDevice.IsSimulator ? Color.blue : Color("Selected")) : nil)
                                         }
                                     }
-                                    //IconToggle(enabled: $vpnEnabled, color: .blue, icon: "network.connected.to.line.below", title: "VPN")
+                                    if requiredCapabilities(capability: .vpn) {
+                                        IconToggle(enabled: $VPNEnabled, color: .blue, icon: "network.connected.to.line.below", title: "VPN")
+                                    }
                                 }
                             }
                             
@@ -203,19 +205,21 @@ struct ContentView: View {
                                     IconToggle(enabled: $airplaneModeEnabled, color: Color.orange, icon: "airplane", title: "Airplane Mode")
                                     ForEach(radioSettings) { setting in
                                         if setting.capability == .none {
-                                            SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Wi-Fi" ? (wifiEnabled && !airplaneModeEnabled ? "Not Connected" : "Off") : setting.id == "Bluetooth" ? (bluetoothEnabled ? "On" : "Off") : String()) {
+                                            SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Wi-Fi" ? (wifiEnabled && !airplaneModeEnabled ? "Not Connected" : "Off") : setting.id == "Bluetooth" ? (bluetoothEnabled ? "On" : "Off") : "") {
                                                 setting.destination
                                             }
                                             .accessibilityLabel(setting.id)
-                                        } else {
-                                            SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Cellular" && airplaneModeEnabled ? "Airplane Mode" : setting.id == "Personal Hotspot" ? "Off" : String()) {
+                                        } else if requiredCapabilities(capability: setting.capability) {
+                                            SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Cellular" && airplaneModeEnabled ? "Airplane Mode" : setting.id == "Personal Hotspot" ? "Off" : "") {
                                                 setting.destination
                                             }
                                             .disabled(setting.id == "Personal Hotspot" && airplaneModeEnabled)
                                             .accessibilityLabel(setting.id)
                                         }
                                     }
-                                    //IconToggle(enabled: $vpnEnabled, color: .blue, icon: "network.connected.to.line.below", title: "VPN")
+                                    if requiredCapabilities(capability: .vpn) {
+                                        IconToggle(enabled: $VPNEnabled, color: .blue, icon: "network.connected.to.line.below", title: "VPN")
+                                    }
                                 }
                             }
                             
@@ -280,21 +284,24 @@ struct ContentView: View {
 }
 
 // MARK: - Required Capabilities Check
-@MainActor func requiredCapabilities(capability: Capabilities) -> Bool {
+@MainActor
+func requiredCapabilities(capability: Capabilities) -> Bool {
     switch capability {
-    case .none:
-        return true
     case .actionButton:
         return UIDevice.RingerButtonCapability
+    case .appleIntelligence:
+        return UIDevice.IntelligenceCapability
     case .cellular:
         return UIDevice.CellularTelephonyCapability
-    case .vpn:
+    case .ethernet:
+        return false
+    case .isInternal:
+        return false
+    case .none:
         return true
     case .siri:
         return !UIDevice.IntelligenceCapability
-    case .appleIntelligence:
-        return UIDevice.IntelligenceCapability
-    case .isInternal:
+    case .vpn:
         return false
     }
 }

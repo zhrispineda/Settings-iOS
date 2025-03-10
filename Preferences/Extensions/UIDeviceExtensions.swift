@@ -22,24 +22,8 @@ public extension UIDevice {
             if value.contains("TotalDiskCapacity") {
                 diskCapacity = value.replacingOccurrences(of: " ", with: "")
                 formatted = diskCapacity.components(separatedBy: [":"])[1]
-                switch Int(formatted) {
-                case 32000000000:
-                    return "32 GB"
-                case 64000000000:
-                    return "64 GB"
-                case 128000000000:
-                    return "128 GB"
-                case 256000000000:
-                    return "256 GB"
-                case 512000000000:
-                    return "512 GB"
-                case 1024000000000:
-                    return "1 TB"
-                case 2048000000000:
-                    return "2 TB"
-                default:
-                    return nil
-                }
+                guard let byteCount = Int64(formatted) else { return nil }
+                return byteCount.formatted(.byteCount(style: .file))
             }
         }
         
@@ -73,7 +57,6 @@ public extension UIDevice {
         let capableDevices: Set<String> = ["iPhone15,4", "iPhone15,5", "iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4"]
         return capableDevices.contains(identifier)
     }()
-
     
     /// Returns a Bool on whether the device is capable of cellular connectivity.
     static let CellularTelephonyCapability: Bool = {

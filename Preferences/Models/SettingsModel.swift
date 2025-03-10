@@ -67,6 +67,7 @@ enum SettingsModel: String, CaseIterable {
     case developer = "Developer"
     case displayBrightness = "Display & Brightness"
     case emergencySOS = "Emergency SOS"
+    case ethernet = "Ethernet"
     case focus = "Focus"
     case followUp = "Follow Up"
     case gameCenter = "Game Center"
@@ -94,6 +95,7 @@ enum Capabilities {
     case none
     case actionButton
     case cellular
+    case ethernet
     case vpn
     case siri
     case appleIntelligence
@@ -112,10 +114,10 @@ struct SettingsItem<Content: View>: Identifiable {
 }
 
 // MARK: Icons information
-let smallerIcons = ["apple.logo", "appletvremote.gen4.fill", "apps.iphone", "apps.iphone.assistive.access", "apps.ipad", "arrow.counterclockwise", "bluetooth", "checkmark.seal.text.page.fill", "ear", "hand.raised.fill", "hourglass", "ipad.gen2", "iphone", "iphone.badge.dot.radiowaves.up.forward", "iphone.gen1", "iphone.gen3", "lock.fill", "mic.fill", "shield.fill", "text.book.closed.fill"]
+let smallerIcons = ["apple.logo", "appletvremote.gen4.fill", "apps.iphone", "apps.iphone.assistive.access", "apps.ipad", "arrow.counterclockwise", "bluetooth", "checkmark.seal.text.page.fill", "ear", "hand.raised.fill", "hourglass", "ipad.gen2", "iphone", "iphone.badge.dot.radiowaves.up.forward", "iphone.gen1", "iphone.gen3", "lock.fill", "mic.fill", "network.connected.to.line.below", "shield.fill", "text.book.closed.fill"]
 let largerIcons = ["waveform.and.magnifyingglass"]
 let hierarchyIcons = ["faceid", "questionmark.app.dashed", "questionmark.square.dashed", "waveform.and.magnifyingglass"]
-let internalIcons = ["airdrop", "app.grid.3x3", "apple.photos", "apps.iphone.assistive.access", "arrow.clockwise.app.stack.fill", "arrowtriangles.up.right.down.left.magnifyingglass", "bluetooth", "carplay", "chevron.3.up.perspective", "clock.filled.and.widget.filled", "eye.tracking", "figure.run.motion", "ipad.top.button.arrow.down", "iphone.action.button.arrow.right", "iphone.badge.dot.radiowaves.up.forward", "iphone.side.button.arrow.left", "keyboard.badge.waveform.fill", "key.dots.fill", "lock.and.ring.2", "lock.square.dotted", "nearby.interactions", "network.connected.to.line.below", "pencil.and.sparkles", "person.badge.waveform.fill", "ring.radiowaves.right", "satellite.fill", "sensorkit", "siri", "speaker.eye.fill", "voice.control", "waveform.arrow.triangle.branch.right", "waveform.bubble.fill"]
+let internalIcons = ["airdrop", "app.grid.3x3", "apple.photos", "apps.iphone.assistive.access", "arrow.clockwise.app.stack.fill", "arrowtriangles.up.right.down.left.magnifyingglass", "bluetooth", "carplay", "chevron.3.up.perspective", "clock.filled.and.widget.filled", "ethernet", "eye.tracking", "figure.run.motion", "ipad.top.button.arrow.down", "iphone.action.button.arrow.right", "iphone.badge.dot.radiowaves.up.forward", "iphone.side.button.arrow.left", "keyboard.badge.waveform.fill", "key.dots.fill", "lock.and.ring.2", "lock.square.dotted", "nearby.interactions", "network.connected.to.line.below", "pencil.and.sparkles", "person.badge.waveform.fill", "ring.radiowaves.right", "satellite.fill", "sensorkit", "siri", "speaker.eye.fill", "voice.control", "waveform.arrow.triangle.branch.right", "waveform.bubble.fill"]
 let multicolorIcons = ["app.grid.3x3", "siri"]
 
 // MARK: - Settings Layout
@@ -128,6 +130,7 @@ let multicolorIcons = ["app.grid.3x3", "siri"]
 // MARK: Radio Settings
 @MainActor let radioSettings: [SettingsItem] = [
     SettingsItem(type: .wifi, title: "Wi-Fi", icon: "wifi", color: .blue, destination: AnyView(NetworkView())),
+    SettingsItem(type: .ethernet, title: "Ethernet", icon: "ethernet", capability: .ethernet, color: .gray, destination: AnyView(EmptyView())),
     SettingsItem(type: .bluetooth, title: "Bluetooth", icon: "bluetooth", color: .blue, destination: AnyView(BluetoothView())),
     SettingsItem(type: .cellular, title: "Cellular", icon: "antenna.radiowaves.left.and.right", capability: .cellular, color: .green, destination: AnyView(CellularView())),
     //SettingsItem(type: .personalHotspot, title: "Personal Hotspot", icon: "personalhotspot", capability: .cellular, color: .green, destination: AnyView(HotspotView())),

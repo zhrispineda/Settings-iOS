@@ -194,5 +194,4 @@ struct MultitaskingOption: View {
     NavigationStack {
         MultitaskingGesturesView()
     }
-    .environment(\.locale, Locale(identifier: "ja"))
 }
