@@ -18,11 +18,12 @@ struct IconView: View {
     let icon: String
     let color: Color
     let iconColor: Color
+    var lightOnly: Bool = false
     
     var body: some View {
         ZStack {
             // Icon Background
-            if (icon == "Placeholder" || colorScheme == .dark) && !UIDevice.IsSimulator {
+            if (icon == "Placeholder" || colorScheme == .dark) && !UIDevice.IsSimulator && !lightOnly {
                 Image(systemName: "app.fill")
                     .resizable()
                     .scaledToFit()
@@ -43,7 +44,7 @@ struct IconView: View {
                     .scaledToFit()
                     .frame(width: smallerIcons.contains(icon) ? (icon == "appletvremote.gen4.fill" ? 8 : 13) : 20)
                     .symbolRenderingMode(hierarchyIcons.contains(icon) ? .hierarchical : multicolorIcons.contains(icon) ? .multicolor : .none)
-                    .foregroundStyle(colorScheme == .dark && !UIDevice.IsSimulator ? color == .black ? .white : color : iconColor)
+                    .foregroundStyle(colorScheme == .dark && !UIDevice.IsSimulator && !lightOnly ? color == .black ? .white : color : iconColor)
                     .scaleEffect(CGSize(width: 1.0, height: id == "CAMERA_BUTTON_TITLE".localize(table: "Accessibility-D93") ? -1.0 : 1.0))
             } else if icon.contains("custom") {
                 Image(icon)
@@ -62,7 +63,7 @@ struct IconView: View {
         .overlay(
             // Add outline around icon background
             RoundedRectangle(cornerRadius: 7)
-                .stroke(colorScheme == .light && color == .white ? Color.black.opacity(0.2) : colorScheme == .dark ? Color.white.opacity(0.2) : Color.clear, lineWidth: 0.5)
+                .stroke(colorScheme == .light && color == .white ? Color.black.opacity(0.2) : colorScheme == .dark ? Color.white.opacity(0.2) : Color.black.opacity(0.2), lineWidth: 0.5)
         )
     }
 }

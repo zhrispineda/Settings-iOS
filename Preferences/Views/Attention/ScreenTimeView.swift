@@ -41,7 +41,7 @@ struct ScreenTimeView: View {
                 }
             } else {
                 Section {
-                    Placard(title: "ScreenTimeGroupSpecifierName".localize(table: table), color: Color.indigo, icon: "hourglass", description: "AADC_IntroWelcomeDetail".localize(table: table), frameY: .constant(0.0), opacity: .constant(1.0))
+                    Placard(title: "ScreenTimeGroupSpecifierName".localize(table: table), color: Color.indigo, icon: "hourglass", description: "AboutScreenTimeDetailText".localize(table: table), frameY: .constant(0.0), opacity: .constant(1.0))
                 }
             }
             
@@ -60,7 +60,7 @@ struct ScreenTimeView: View {
                     Button {
                         showingAppWebsiteActivitySheet.toggle()
                     } label: {
-                        SettingsLink(color: Color.cyan, icon: "chart.bar.xaxis", id: "AppAndWebsiteActivitySpecifierName".localize(table: table), subtitle: "AppAndWebsiteActivitySpecifierSubtitleText".localize(table: table)) {}
+                        SettingsLink(color: Color.cyan, icon: "chart.bar.xaxis", lightOnly: true, id: "AppAndWebsiteActivitySpecifierName".localize(table: table), subtitle: "AppAndWebsiteActivitySpecifierSubtitleText".localize(table: table)) {}
                             .foregroundStyle(Color["Label"])
                     }
                     .sheet(isPresented: $showingAppWebsiteActivitySheet) {
@@ -68,7 +68,7 @@ struct ScreenTimeView: View {
                             .frame(width: 400, height: 730)
                     }
                 }
-                SettingsLink(color: Color.white, iconColor: Color.blue, icon: "chevron.3.up.perspective", id: "ScreenDistanceSpecifierName".localize(table: table), subtitle: "ScreenDistanceSpecifierSubtitleText".localize(table: table)) {
+                SettingsLink(color: Color.white, iconColor: Color.blue, icon: "chevron.3.up.perspective", lightOnly: true, id: "ScreenDistanceSpecifierName".localize(table: table), subtitle: "ScreenDistanceSpecifierSubtitleText".localize(table: table)) {
                     ScreenDistanceView()
                         .onAppear {
                             showingScreenDistanceSheet.toggle()
@@ -83,7 +83,11 @@ struct ScreenTimeView: View {
             }
             
             Section {
-                SettingsLink(color: Color.blue, icon: "bubble.left.and.exclamationmark.bubble.right.fill", id: "CommunicationSafetyTitle".localize(table: table), subtitle: "CommunicationSafetyOffSubtitle".localize(table: table)) {
+                //CommunicationLimitsSpecifierName
+                SettingsLink(color: Color.green, icon: "person.crop.circle", lightOnly: true, id: "CommunicationLimitsSpecifierName".localize(table: table), subtitle: "AADC_CommunicationLimitsDetailText".localize(table: table)) {
+                    EmptyView()
+                }
+                SettingsLink(color: Color.blue, icon: "bubble.left.and.exclamationmark.bubble.right.fill", lightOnly: true, id: "CommunicationSafetyTitle".localize(table: table), subtitle: "CommunicationSafetyOffSubtitle".localize(table: table)) {
                     CommunicationSafetyView()
                         .onAppear {
                             showingCommunicationSafetySheet.toggle()
@@ -98,7 +102,7 @@ struct ScreenTimeView: View {
             }
             
             Section {
-                SettingsLink(color: Color.red, icon: "nosign", id: "ContentPrivacySpecifierName".localize(table: table), subtitle: "ContentPrivacyDetailText".localize(table: table)) {
+                SettingsLink(color: Color.red, icon: "nosign", lightOnly: true, id: "ContentPrivacySpecifierName".localize(table: table), subtitle: "ContentPrivacyDetailText".localize(table: table)) {
                     ContentPrivacyRestrictionsView()
                 }
             } header: {

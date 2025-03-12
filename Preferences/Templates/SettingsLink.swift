@@ -28,6 +28,7 @@ struct SettingsLink<Content: View>: View {
     var color = Color.black
     var iconColor = Color.white
     var icon = String()
+    var lightOnly = false
     var id = String()
     var subtitle = String()
     var status = String()
@@ -39,7 +40,7 @@ struct SettingsLink<Content: View>: View {
             HStack(spacing: 15) {
                 // Icon
                 if icon != "None" {
-                    IconView(id: id, icon: icon, color: color, iconColor: iconColor)
+                    IconView(id: id, icon: icon, color: color, iconColor: iconColor, lightOnly: lightOnly)
                 }
                 
                 // Title and subtitle text

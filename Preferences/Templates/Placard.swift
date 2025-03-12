@@ -27,7 +27,7 @@ struct Placard: View {
     var body: some View {
         VStack(spacing: 10) {
             ZStack {
-                IconView(id: title, icon: icon, color: color, iconColor: iconColor)
+                IconView(id: title, icon: icon, color: color, iconColor: iconColor, lightOnly: true)
                     .scaleEffect(2.1)
                     .frame(width: 64, height: 64)
                 
