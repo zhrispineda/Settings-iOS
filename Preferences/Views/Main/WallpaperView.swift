@@ -11,6 +11,11 @@ struct WallpaperView: View {
     // Variables
     let table = "WallpaperSettings"
     
+    init() {
+        UIPageControl.appearance().currentPageIndicatorTintColor = UIColor.label
+        UIPageControl.appearance().pageIndicatorTintColor = UIColor.secondaryLabel
+    }
+    
     var body: some View {
         CustomList(title: "WALLPAPER".localize(table: table)) {
             Section {
@@ -18,13 +23,27 @@ struct WallpaperView: View {
                     .textCase(.uppercase)
                     .foregroundStyle(.secondary)
                     .font(.subheadline)
+                TabView {
+                    HStack(spacing: 15) {
+                        Rectangle()
+                            .clipShape(RoundedRectangle(cornerRadius: 15))
+                            .frame(width: 130, height: UIDevice.iPhone ? 290 : 200)
+                        Rectangle()
+                            .clipShape(RoundedRectangle(cornerRadius: 15))
+                            .frame(width: 130, height: UIDevice.iPhone ? 290 : 200)
+                    }
+                    .foregroundStyle(.gray)
+                }
+                .tabViewStyle(.page)
+                .aspectRatio(1, contentMode: .fit)
+                .frame(maxWidth: .infinity)
                 Button {} label: {
                     Text(Image(systemName: "plus")) + Text("ADD_NEW_WALLPAPER", tableName: table)
                 }
-                    .font(.caption)
-                    .controlSize(.small)
-                    .buttonStyle(.borderedProminent)
-                    .buttonBorderShape(.capsule)
+                .font(.caption)
+                .controlSize(.small)
+                .buttonStyle(.borderedProminent)
+                .buttonBorderShape(.capsule)
             }
             .listRowSeparator(.hidden)
             .frame(maxWidth: .infinity)
@@ -42,8 +61,14 @@ struct WallpaperView: View {
                     }
                     .padding(.leading, -5)
                     .padding(.top, 5)
+                    
                     Spacer()
-                        .frame(width: 60)
+                    
+                    Image(UIDevice.iPhone && UIDevice.HomeButtonCapability ? .controlCenterSettingsTipPhoneHomeButton : .controlCenterSettingsTip)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: UIDevice.iPhone ? 50 : 75)
+                        .padding(.horizontal)
                 }
                 .frame(minHeight: 100)
             }
