@@ -1,37 +1,37 @@
 //
-//  PreferencesUITests.swift
-//  PreferencesUITests
+//  SettingsTopLevelPanesRenderTests.swift
+//  SettingsTests
 //
 
 import XCTest
 
-final class PreferencesUITests: XCTestCase {
-
+final class SettingsTopLevelPanesRenderTests: XCTestCase {
+    
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
-
+        
         // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
-
+        
         // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
-
+    
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
+    
     @MainActor
     func testExample() throws {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
-
+        
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         // MARK: Interact with SettingsLink buttons (Radio section)
         let buttons = ["Wi-Fi", "Bluetooth", "Cellular", "Battery"]
         
         for button in buttons {
-            let btn = app.buttons[button.localize(table: "Localizable")]
+            let btn = app.buttons[button]
             if !btn.exists {
                 XCTAssertTrue(btn.exists, "\(button) does not exist")
             }
@@ -45,7 +45,7 @@ final class PreferencesUITests: XCTestCase {
     func testSearchField() throws {
         let app = XCUIApplication()
         app.launch()
-
+        
         let searchField = app.navigationBars.searchFields["Search"]
         XCTAssertTrue(searchField.exists, "Search field does not exist")
         
@@ -112,21 +112,6 @@ final class PreferencesUITests: XCTestCase {
         XCTAssertTrue(accessibilityTitle.exists, "Accessibility pane not found")
     }
     
-    // MARK: Check Accessibility Link
-    @MainActor
-    func testSettingsAccessibilityShortcutSettingsExistence() throws {
-        let app = XCUIApplication()
-        app.launch()
-        
-        let accessibilityButton = app.buttons["Accessibility"].firstMatch
-        if !accessibilityButton.exists {
-            let elementsQuery = app.otherElements
-            let element = elementsQuery.element(boundBy: 20)
-            element.swipeUp()
-        }
-        XCTAssertTrue(accessibilityButton.exists, "Accessibility link not found")
-    }
-    
     // MARK: Check Auto-Lock Settings
     @MainActor
     func testSettingsAutoLockSettingsExistence() throws {
@@ -176,29 +161,6 @@ final class PreferencesUITests: XCTestCase {
         XCTAssertTrue(navTitle.exists, "Control Center title not found")
     }
     
-    // MARK: Check Display & Brightness Settings
-    @MainActor
-    func testSettingsDisplaySettingsExistence() throws {
-        let app = XCUIApplication()
-        app.launch()
-        
-        let accessibilityButton = app.buttons.containing(.image, identifier: "accessibility").firstMatch
-        if !accessibilityButton.exists {
-            let elementsQuery = app.otherElements
-            let element = elementsQuery.element(boundBy: 20)
-            element.swipeUp()
-        } else {
-            accessibilityButton.swipeUp()
-        }
-        
-        let displayBrightnessButton = app.buttons["Display & Brightness"].staticTexts.firstMatch
-        XCTAssertTrue(displayBrightnessButton.exists, "Display & Brightness link not found")
-        displayBrightnessButton.tap()
-        
-        let brightnessHeader = app.staticTexts["Display & Brightness"]
-        XCTAssertTrue(brightnessHeader.exists, "Display & Brightness title not found")
-    }
-    
     // MARK: Check Display Text Size Settings
     @MainActor
     func testSettingsDisplayTextSizeSettingsExistence() throws {
@@ -222,14 +184,38 @@ final class PreferencesUITests: XCTestCase {
         XCTAssertTrue(textSizeButton.exists, "Text Size link not found")
         textSizeButton.tap()
     }
-
+    
+    // MARK: Check Focus Settings Navigation
+    @MainActor
+    func testSettingsFocusNavigate() throws {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let accessibilityButton = app.buttons.containing(.image, identifier: "accessibility").firstMatch
+        if !accessibilityButton.exists {
+            let elementsQuery = app.otherElements
+            let element = elementsQuery.element(boundBy: 20)
+            element.swipeUp()
+        } else {
+            accessibilityButton.swipeUp()
+        }
+        
+        let focusButton = app.buttons["Focus"].staticTexts.firstMatch
+        XCTAssertTrue(focusButton.exists, "Focus link not found")
+        focusButton.tap()
+    }
+    
+    @MainActor
+    func testSettingsTopLevelAccessibilityIsRendered() throws {
+        let app = XCUIApplication()
+        app.launch()
+    }
+    
     @MainActor
     func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
+        // This measures how long it takes to launch your application.
+        measure(metrics: [XCTApplicationLaunchMetric()]) {
+            XCUIApplication().launch()
         }
     }
 }

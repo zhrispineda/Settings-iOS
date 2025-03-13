@@ -30,11 +30,8 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:Preferences.xctestplan"
+            reference = "container:SettingsTests.xctestplan"
             default = "YES">
-         </TestPlanReference>
-         <TestPlanReference
-            reference = "container:../SCALAR-iOS-Settings-TopLevel.xctestplan">
          </TestPlanReference>
       </TestPlans>
       <Testables>
@@ -57,6 +54,28 @@
                BlueprintIdentifier = "83FAC0F92D728DFD001C4D74"
                BuildableName = "PreferencesTests.xctest"
                BlueprintName = "PreferencesTests"
+               ReferencedContainer = "container:Preferences.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "83937B7D2D8230A20049AB0E"
+               BuildableName = "SettingsTopLevelPanesRenderTests.xctest"
+               BlueprintName = "SettingsTopLevelPanesRenderTests"
+               ReferencedContainer = "container:Preferences.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "83937B902D8235310049AB0E"
+               BuildableName = "SettingsTests.xctest"
+               BlueprintName = "SettingsTests"
                ReferencedContainer = "container:Preferences.xcodeproj">
             </BuildableReference>
          </TestableReference>

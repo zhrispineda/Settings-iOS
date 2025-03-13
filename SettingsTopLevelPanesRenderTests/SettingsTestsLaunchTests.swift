@@ -1,11 +1,12 @@
 //
-//  PreferencesUITestsLaunchTests.swift
-//  PreferencesUITests
+//  SettingsTestsLaunchTests.swift
+//  SettingsTests
 //
 
 import XCTest
+@testable import Preferences
 
-final class PreferencesUITestsLaunchTests: XCTestCase {
+final class SettingsTopLevelPanesRenderLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
