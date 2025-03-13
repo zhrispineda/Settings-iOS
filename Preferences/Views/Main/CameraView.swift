@@ -99,14 +99,22 @@ struct CameraView: View {
                 NavigationLink("CAM_FORMATS_TITLE".localize(table: table)) {
                     FormatsView()
                 }
-                NavigationLink("CAM_PRESERVE_SETTINGS_TITLE".localize(table: table)) {
-                    PreserveSettingsView()
-                }
+                
                 if UIDevice.iPhone {
+                    NavigationLink("CAM_PRESERVE_SETTINGS_TITLE".localize(table: table)) {
+                        PreserveSettingsView()
+                    }
                     Toggle("VOLUME_UP_BURST".localize(table: table), isOn: $useVolumeUpBurstEnabled)
                 }
+                
                 Toggle("QR_CODES".localize(table: table), isOn: $scanQrCodesEnabled)
                 Toggle("TEXT_ANALYSIS".localize(table: table), isOn: $showDetectedTextEnabled)
+                
+                if UIDevice.iPad {
+                    NavigationLink("CAM_PRESERVE_SETTINGS_TITLE".localize(table: table)) {
+                        PreserveSettingsView()
+                    }
+                }
             }
             
             // MARK: Composition Section
