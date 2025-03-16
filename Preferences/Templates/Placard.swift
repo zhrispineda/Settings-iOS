@@ -21,13 +21,14 @@ struct Placard: View {
     var iconColor = Color.white
     var icon = String()
     var description = String()
+    var lightOnly = false
     @Binding var frameY: Double
     @Binding var opacity: Double
     
     var body: some View {
         VStack(spacing: 10) {
             ZStack {
-                IconView(id: title, icon: icon, color: color, iconColor: iconColor, lightOnly: true)
+                IconView(id: title, icon: icon, color: color, iconColor: iconColor, lightOnly: lightOnly)
                     .scaleEffect(2.1)
                     .frame(width: 64, height: 64)
                 

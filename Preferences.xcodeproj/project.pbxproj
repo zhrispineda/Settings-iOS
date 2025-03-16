@@ -382,6 +382,7 @@
 		83D0B1492CE2FA6900DDEC69 /* Advertising.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83D0B1482CE2FA6900DDEC69 /* Advertising.xcstrings */; };
 		83D0B14B2CE2FB9D00DDEC69 /* AppleArcade.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83D0B14A2CE2FB9D00DDEC69 /* AppleArcade.xcstrings */; };
 		83D0B14D2CE2FC7100DDEC69 /* AppleBooks.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83D0B14C2CE2FC7100DDEC69 /* AppleBooks.xcstrings */; };
+		83D20AD12D875F6B000B26E6 /* DebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D20AD02D875F6B000B26E6 /* DebugView.swift */; };
 		83D241AD2D5CEC87002061F4 /* NotificationsSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83D241AC2D5CEC87002061F4 /* NotificationsSettings.xcstrings */; };
 		83D2687A2BD7303800A86DA9 /* DisplayBrightnessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D268792BD7303800A86DA9 /* DisplayBrightnessView.swift */; };
 		83D3085C2B8AC2FA002A9B7F /* SafariAdvancedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D3085B2B8AC2FA002A9B7F /* SafariAdvancedView.swift */; };
@@ -888,6 +889,7 @@
 		83D0B1482CE2FA6900DDEC69 /* Advertising.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Advertising.xcstrings; sourceTree = "<group>"; };
 		83D0B14A2CE2FB9D00DDEC69 /* AppleArcade.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AppleArcade.xcstrings; sourceTree = "<group>"; };
 		83D0B14C2CE2FC7100DDEC69 /* AppleBooks.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AppleBooks.xcstrings; sourceTree = "<group>"; };
+		83D20AD02D875F6B000B26E6 /* DebugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugView.swift; sourceTree = "<group>"; };
 		83D241AC2D5CEC87002061F4 /* NotificationsSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = NotificationsSettings.xcstrings; sourceTree = "<group>"; };
 		83D268792BD7303800A86DA9 /* DisplayBrightnessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayBrightnessView.swift; sourceTree = "<group>"; };
 		83D3085B2B8AC2FA002A9B7F /* SafariAdvancedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariAdvancedView.swift; sourceTree = "<group>"; };
@@ -2164,6 +2166,7 @@
 				83F626D32B827F0C00ED343F /* DisplayZoomView.swift */,
 				83F626D72B8289E100ED343F /* DTVProviderView.swift */,
 				83F626D92B828E8C00ED343F /* TVAppView.swift */,
+				83D20AD02D875F6B000B26E6 /* DebugView.swift */,
 			);
 			path = Developer;
 			sourceTree = "<group>";
@@ -2849,6 +2852,7 @@
 				837F1DCD2B8AF0D400665EAB /* ExtensionsView.swift in Sources */,
 				833C6EAE2C20C88000A8D91C /* HomeScreenAppLibraryView.swift in Sources */,
 				83D5957B2CA5BF19003EF0CD /* RecordSoundView.swift in Sources */,
+				83D20AD12D875F6B000B26E6 /* DebugView.swift in Sources */,
 				83CCB7282C7FAD96003F51ED /* DateTimeView.swift in Sources */,
 				83D31F802B8D74A10057CFDB /* HighlightContentView.swift in Sources */,
 				83F516BC2C21E8F50004E87A /* WallpaperView.swift in Sources */,

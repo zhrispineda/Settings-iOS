@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AccessibilityView: View {
     // Variables
+    @AppStorage("SiriEnabled") private var siriEnabled = false
     @Environment(\.colorScheme) private var colorScheme
     @State private var opacity: Double = 0
     @State private var frameY: Double = 0
@@ -189,7 +190,9 @@ struct AccessibilityView: View {
                     // Assistive Access
                     SettingsLink(color: .gray, icon: "apps.iphone.assistive.access", id: "CLARITY_UI_TITLE".localize(table: titleTable)) {}
                     // Siri
-                    SettingsLink(color: .clear, icon: UIDevice.IntelligenceCapability ? colorScheme == .dark ? "siri" : "siriSymbolLight" : "appleSiri", id: "SIRI_SETTINGS_TITLE".localize(table: titleTable)) {}
+                    if siriEnabled {
+                        SettingsLink(color: .clear, icon: UIDevice.IntelligenceCapability ? colorScheme == .dark ? "siri" : "siriSymbolLight" : "appleSiri", id: "SIRI_SETTINGS_TITLE".localize(table: titleTable)) {}
+                    }
                     // Accessibility Shortcut
                     SettingsLink(color: .blue, icon: "accessibility", id: "TRIPLE_CLICK_TITLE".localize(table: titleTable), status: "OFF".localize(table: table)) {}
                     // Per-App Settings
