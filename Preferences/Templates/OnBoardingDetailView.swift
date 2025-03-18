@@ -17,7 +17,7 @@ struct OnBoardingDetailView: View {
     @State private var frameY = Double()
     @State private var opacity = Double()
     var table = "PrivacyPane"
-    let tables = [ // SPLASH_SHORT_TITLE tables
+    var tables = [ // SPLASH_SHORT_TITLE tables
         "Activity",
         "ADPAnalytics",
         "AirDrop",
@@ -126,24 +126,40 @@ struct OnBoardingDetailView: View {
                         }
                     
                     // Title text
-                    Text("SPLASH_TITLE", tableName: table)
-                        .font(.title)
-                        .fontWeight(.bold)
-                        .multilineTextAlignment(.center)
+                    if tables == ["AppStore", "AppleArcade"] {
+                        Text("COMBINED_SPLASH_TITLE", tableName: table)
+                            .font(.title)
+                            .fontWeight(.bold)
+                            .multilineTextAlignment(.center)
+                    } else {
+                        Text("SPLASH_TITLE", tableName: table)
+                            .font(.title)
+                            .fontWeight(.bold)
+                            .multilineTextAlignment(.center)
+                    }
                     
                     // Summary text
-                    Text("SPLASH_SUMMARY", tableName: table)
-                        .font(.subheadline)
-                        .multilineTextAlignment(.center)
-                        .padding(.vertical, 10)
+                    if tables == ["AppStore", "AppleArcade"] {
+                        Text("COMBINED_SPLASH_DETAIL", tableName: table)
+                            .font(.subheadline)
+                            .multilineTextAlignment(.center)
+                            .padding(.vertical, 10)
+                    } else {
+                        Text("SPLASH_SUMMARY", tableName: table)
+                            .font(.subheadline)
+                            .multilineTextAlignment(.center)
+                            .padding(.vertical, 10)
+                    }
                     
                     // Device footer text
-                    Text(UIDevice.iPhone ? "FOOTER_TEXT_IPHONE" : "FOOTER_TEXT_IPAD", tableName: table)
-                        .font(.subheadline)
-                    
-                    Text("[\("BUTTON_TITLE".localize(table: "OBAppleID"))](https://www.apple.com/privacy)")
-                        .padding(.bottom, 10)
-                        .font(.subheadline)
+                    if tables != ["AppStore", "AppleArcade"] {
+                        Text(UIDevice.iPhone ? "FOOTER_TEXT_IPHONE" : "FOOTER_TEXT_IPAD", tableName: table)
+                            .font(.subheadline)
+                        
+                        Text("[\("BUTTON_TITLE".localize(table: "OBAppleID"))](https://www.apple.com/privacy)")
+                            .padding(.bottom, 10)
+                            .font(.subheadline)
+                    }
                 }
                 .frame(maxWidth: .infinity, alignment: .center)
                 .listRowBackground(Color.clear)
@@ -191,5 +207,5 @@ struct OnBoardingDetailView: View {
 }
 
 #Preview {
-    OnBoardingDetailView()
+    OnBoardingDetailView(table: "Privacy")
 }

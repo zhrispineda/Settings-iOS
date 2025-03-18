@@ -351,6 +351,7 @@
 		83C3F33B2CC2B25100AE2402 /* Date & Time.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83C3F33A2CC2B25100AE2402 /* Date & Time.xcstrings */; };
 		83C3F33D2CC2BA7800AE2402 /* GameControlleriOSSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83C3F33C2CC2BA7800AE2402 /* GameControlleriOSSettings.xcstrings */; };
 		83C3F33F2CC2BEBA00AE2402 /* InternationalSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83C3F33E2CC2BEBA00AE2402 /* InternationalSettings.xcstrings */; };
+		83C5AAF92D8A2504001FE82C /* OnBoardingKit.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83C5AAF82D8A2504001FE82C /* OnBoardingKit.xcstrings */; };
 		83C79B932CE331A500F49B4F /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83C79B922CE331A500F49B4F /* Localizable.xcstrings */; };
 		83C79B952CE3C3A300F49B4F /* AppleCard.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83C79B942CE3C3A300F49B4F /* AppleCard.xcstrings */; };
 		83C79B972CE3C5DC00F49B4F /* ApplePayCash.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83C79B962CE3C5DC00F49B4F /* ApplePayCash.xcstrings */; };
@@ -857,6 +858,7 @@
 		83C3F33A2CC2B25100AE2402 /* Date & Time.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "Date & Time.xcstrings"; sourceTree = "<group>"; };
 		83C3F33C2CC2BA7800AE2402 /* GameControlleriOSSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = GameControlleriOSSettings.xcstrings; sourceTree = "<group>"; };
 		83C3F33E2CC2BEBA00AE2402 /* InternationalSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InternationalSettings.xcstrings; sourceTree = "<group>"; };
+		83C5AAF82D8A2504001FE82C /* OnBoardingKit.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = OnBoardingKit.xcstrings; sourceTree = "<group>"; };
 		83C79B922CE331A500F49B4F /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		83C79B942CE3C3A300F49B4F /* AppleCard.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AppleCard.xcstrings; sourceTree = "<group>"; };
 		83C79B962CE3C5DC00F49B4F /* ApplePayCash.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = ApplePayCash.xcstrings; sourceTree = "<group>"; };
@@ -1147,6 +1149,7 @@
 				8355C8332CE53E530067D675 /* OBMessages.xcstrings */,
 				830F2B3B2CD995A9006F7F22 /* OBPhotos.xcstrings */,
 				8355C8512CE544F50067D675 /* OBTouchID.xcstrings */,
+				83C5AAF82D8A2504001FE82C /* OnBoardingKit.xcstrings */,
 				830F2B372CD98990006F7F22 /* Passwords.xcstrings */,
 				83C79BAE2CE3EF0400F49B4F /* Podcasts.xcstrings */,
 				8355C80D2CE5337C0067D675 /* PrivateRelay.xcstrings */,
@@ -2491,6 +2494,7 @@
 				833F0AD72B744D190036EAD2 /* Preview Assets.xcassets in Resources */,
 				83326C882CBEE8970034C0D8 /* Software Update.xcstrings in Resources */,
 				832877D92CAD8C7100013B0B /* Accessibility.xcstrings in Resources */,
+				83C5AAF92D8A2504001FE82C /* OnBoardingKit.xcstrings in Resources */,
 				832877ED2CAEE55B00013B0B /* General.xcstrings in Resources */,
 				8355C8422CE542690067D675 /* Savings.xcstrings in Resources */,
 				83F77D6D2CD3F2180026B1AC /* PeerPayment_Localizable.xcstrings in Resources */,

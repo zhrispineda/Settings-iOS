@@ -47,7 +47,9 @@ struct OnBoardingView: View {
                             GeometryReader { geo in
                                 Color.clear
                                     .onChange(of: geo.frame(in: .scrollView).minY) {
-                                        frameY = geo.frame(in: .scrollView).minY
+                                        withAnimation {
+                                            frameY = geo.frame(in: .scrollView).minY
+                                        }
                                     }
                             }
                         }
