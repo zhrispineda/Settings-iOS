@@ -18,6 +18,7 @@ import SwiftUI
 /// - Parameter title: The String name of the label to display.
 /// - Parameter subtitle: The String text of the subtitle to display.
 /// - Parameter iconColor: The Color to use for the icon.
+/// - Parameter table: The localization table to use for text.
 struct IconToggle: View {
     // Variables
     @Binding var enabled: Bool
@@ -26,17 +27,19 @@ struct IconToggle: View {
     var title = String()
     var subtitle = String()
     var iconColor = Color.white
+    var table = "Localizable"
+    let lightOnlyIcons = ["airdrop", "shareplay"]
     
     var body: some View {
         Toggle(isOn: $enabled) {
             HStack(spacing: 15) {
-                IconView(id: title, icon: icon, color: color, iconColor: iconColor)
+                IconView(id: title, icon: icon, color: color, iconColor: icon == "airdrop" ? Color.blue : iconColor, lightOnly: lightOnlyIcons.contains(icon))
                 
                 VStack(alignment: .leading, spacing: 0) {
-                    Text(LocalizedStringKey(title))
+                    Text(LocalizedStringKey(title.localize(table: table)))
                     
                     if !subtitle.isEmpty {
-                        Text(subtitle)
+                        Text(subtitle.localize(table: table))
                             .font(.footnote)
                             .foregroundStyle(.secondary)
                     }
@@ -49,7 +52,7 @@ struct IconToggle: View {
 #Preview {
     NavigationStack {
         CustomList(title: "Networking") {
-            IconToggle(enabled: .constant(true), color: .blue, icon: "wifi", title: "Wi-Fi", subtitle: "Office")
+            IconToggle(enabled: .constant(true), color: .blue, icon: "questionmark.circle", title: "LIVE_ACTIVITIES", subtitle: "Example", table: "PSSystemPolicy")
         }
     }
 }
