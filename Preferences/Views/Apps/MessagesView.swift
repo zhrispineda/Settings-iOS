@@ -17,6 +17,7 @@ struct MessagesView: View {
     @State private var notifyMe = true
     @State private var filterUnknownSenders = false
     @State private var lowQualityImageMode = false
+    @State private var showingSheet = false
     let table = "MessagesSettings"
     let msgTable = "Messages"
     
@@ -27,7 +28,7 @@ struct MessagesView: View {
             Section {
                 Toggle("IMESSAGE".localize(table: table), isOn: $messagesEnabled)
             } footer: {
-                Text("MESSAGES_WIRELESS_DATA_DESCRIPTION", tableName: table) + Text("[\("MESSAGE_FACETIME_PRIVACY_BUTTON".localize(table: table))...](#)")
+                Text("MESSAGES_WIRELESS_DATA_DESCRIPTION", tableName: table) + Text("[\("MESSAGE_FACETIME_PRIVACY_BUTTON".localize(table: table))...](pref://)")
             }
             
             Section {
@@ -84,6 +85,14 @@ struct MessagesView: View {
             } footer: {
                 Text("PREVIEW_TRANSCODING_DESCRIPTION", tableName: msgTable)
             }
+        }
+        .onOpenURL { url in
+            if url.scheme == "pref" {
+                showingSheet = true
+            }
+        }
+        .sheet(isPresented: $showingSheet) {
+            OnBoardingDetailView(table: "OnBoardingKit", tables: ["OBMessages", "FaceTime"])
         }
     }
 }

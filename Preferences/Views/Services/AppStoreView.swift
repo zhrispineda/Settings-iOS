@@ -18,7 +18,6 @@ struct AppStoreView: View {
     @State private var offloadUnusedAppsEnabled = false
     @State private var showingSheet = false
     let table = "StoreSettings"
-    let privacyTable = "OnBoardingKit"
     
     var body: some View {
         CustomList(title: "STORE_SETTINGS_TITLE".localize(table: table), topPadding: true) {
@@ -89,8 +88,7 @@ struct AppStoreView: View {
             }
         }
         .sheet(isPresented: $showingSheet) {
-            OnBoardingDetailView(table: privacyTable, tables: ["AppStore", "AppleArcade"])
-            //OnBoardingView(table: privacyTable)
+            OnBoardingDetailView(table: "OnBoardingKit", tables: ["AppStore", "AppleArcade"])
         }
     }
 }

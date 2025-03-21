@@ -10,7 +10,7 @@ import SwiftUI
 struct MapsView: View {
     // Variables
     @State private var backgroundAppRefreshEnabled = true
-    @State private var selected = "Driving"
+    @State private var selected = "Driving Transportation Mode Label [Settings]"
     @State private var airQualityIndexEnabled = true
     @State private var weatherConditionsEnabled = true
     @State private var alwaysEnglishEnabled = true

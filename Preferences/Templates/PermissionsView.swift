@@ -48,6 +48,7 @@ struct PermissionsView: View {
     @State private var focusEnabled = false
     @State private var faceIdEnabled = true
     @State private var liveActivityEnabled = true
+    @State private var showingSheet = false
     
     let table = "PSSystemPolicy"
     
@@ -105,18 +106,26 @@ struct PermissionsView: View {
             Text("ALLOW_ACCESS_FORMAT".localize(table: table, appName))
         } footer: {
             if appName == "Maps" {
-                Text("[About Apple Maps & Privacy...](POPOVER)")
+                Text("[About Apple Maps & Privacy...](mapsOBK://)")
             } else if appName == "Music" {
                 Text("Use cellular data for downloads, streaming, updating your library, and loading artwork.")
             }
+        }
+        .onOpenURL { url in
+            if url.scheme == "mapsOBK" {
+                showingSheet = true
+            }
+        }
+        .sheet(isPresented: $showingSheet) {
+            OnBoardingView(table: "Maps")
         }
     }
 }
 
 #Preview {
     NavigationStack {
-        CustomList(title: "Example", topPadding: true) {
-            PermissionsView(appName: "Example", cellularEnabled: .constant(true))
+        CustomList(title: "Maps", topPadding: true) {
+            PermissionsView(appName: "Maps", cellularEnabled: .constant(true))
         }
     }
 }

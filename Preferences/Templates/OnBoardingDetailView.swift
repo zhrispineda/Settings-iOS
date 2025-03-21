@@ -126,7 +126,7 @@ struct OnBoardingDetailView: View {
                         }
                     
                     // Title text
-                    if tables == ["AppStore", "AppleArcade"] {
+                    if tables.count == 2 {
                         Text("COMBINED_SPLASH_TITLE", tableName: table)
                             .font(.title)
                             .fontWeight(.bold)
@@ -139,7 +139,7 @@ struct OnBoardingDetailView: View {
                     }
                     
                     // Summary text
-                    if tables == ["AppStore", "AppleArcade"] {
+                    if tables.count == 2 {
                         Text("COMBINED_SPLASH_DETAIL", tableName: table)
                             .font(.subheadline)
                             .multilineTextAlignment(.center)
@@ -152,7 +152,7 @@ struct OnBoardingDetailView: View {
                     }
                     
                     // Device footer text
-                    if tables != ["AppStore", "AppleArcade"] {
+                    if tables.count > 2 {
                         Text(UIDevice.iPhone ? "FOOTER_TEXT_IPHONE" : "FOOTER_TEXT_IPAD", tableName: table)
                             .font(.subheadline)
                         

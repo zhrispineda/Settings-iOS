@@ -43,6 +43,7 @@ struct OnBoardingView: View {
                         .font(.title)
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
+                        .opacity(frameY < -25 ? 0 : 1)
                         .overlay { // For calculating opacity of the principal toolbar item
                             GeometryReader { geo in
                                 Color.clear
