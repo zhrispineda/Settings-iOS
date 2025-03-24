@@ -21,7 +21,9 @@ struct PartsServiceHistoryView: View {
             }
             
             // MARK: Service History Section
-            Section("SERVICE_HISTORY".localize(table: table)) {}
+            Section("SERVICE_HISTORY".localize(table: table)) {
+                //CustomNavigationLink("Face ID", status: "Issue") {}
+            }
         }
         .toolbar {
             ToolbarItem(placement: .principal) {

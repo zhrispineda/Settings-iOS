@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ContactsUI
 import TipKit
 
 struct SiriView: View {
@@ -14,11 +15,13 @@ struct SiriView: View {
     let apps = ["Calendar", "Contacts", "Files", "Health", "Maps", "Messages", "News", "Photos", "Reminders", "Safari", "Settings", "Wallet", "Watch"]
     
     @AppStorage("SiriEnabled") private var siriEnabled = false
+    @AppStorage("SiriTipDismissed") private var learnMoreTapped = false
     @State private var showingDisableSiriAlert = false
     @State private var showingDisableSiriPopup = false
     @State private var showingEnableSiriAlert = false
     @State private var showingEnableSiriPopup = false
     @State private var allowSiriWhenLockedEnabled = true
+    @AppStorage("SiriMyInfoContact") private var myInfoContact = String()
     
     @AppStorage("SuggestAppsBeforeSearching") private var showSuggestionsEnabled = true
     @State private var showingResetHiddenSuggestionsAlert = false
@@ -35,6 +38,7 @@ struct SiriView: View {
     let table = "AssistantSettings"
     let gmTable = "AssistantSettings-GM"
     let exTable = "AssistantSettings-ExternalAIModel"
+    let contactPickerDelegate = ContactPickerDelegate()
     
     init() {
         try? Tips.configure()
@@ -59,8 +63,13 @@ struct SiriView: View {
             }
             
             // MARK: TipKit Section
-            Section {
-                AppleIntelligenceTipView()
+            if !learnMoreTapped {
+                Section {
+                    AppleIntelligenceTipView()
+                        .onTapGesture {
+                            learnMoreTapped = true
+                        }
+                }
             }
             
             // MARK: Siri Requests Section
@@ -83,12 +92,15 @@ struct SiriView: View {
                         NavigationLink("ANNOUNCE_CALLS_TITLE".localize(table: table), destination: EmptyView())
                         NavigationLink("ANNOUNCE_MESSAGES_TITLE".localize(table: table), destination: EmptyView())
                     }
-                    Button {} label: {
+                    // My Information
+                    Button {
+                        openContactPicker()
+                    } label: {
                         HStack {
                             Text("MyInfo", tableName: table)
                                 .foregroundStyle(Color["Label"])
                             Spacer()
-                            Text("None", tableName: table)
+                            Text(myInfoContact.isEmpty ? "None".localize(table: table) : myInfoContact)
                                 .foregroundStyle(Color(UIColor.secondaryLabel))
                             Image(systemName: "chevron.right")
                                 .foregroundStyle(Color(UIColor.tertiaryLabel))
@@ -170,9 +182,28 @@ struct SiriView: View {
                 Text(UIDevice.IntelligenceCapability ? "ASSISTANT_AND_GM".localize(table: gmTable) : "ASSISTANT".localize(table: table))
                     .fontWeight(.semibold)
                     .font(.subheadline)
-                    .opacity(frameY < 50.0 ? opacity : 0) // Only fade when passing the help section title at the top
+                    .opacity(frameY < 50.0 ? opacity : 0)
             }
         }
+    }
+    
+    func openContactPicker() {
+        let controller = CNContactPickerViewController()
+        
+        controller.delegate = contactPickerDelegate
+        contactPickerDelegate.onSelectContact = { contact in
+            myInfoContact = "\(contact.givenName) \(contact.familyName)"
+        }
+        
+        UIWindow.controller.present(controller, animated: true)
+    }
+}
+
+class ContactPickerDelegate: NSObject, CNContactPickerDelegate {
+    var onSelectContact: ((CNContact) -> Void) = { _ in }
+    
+    func contactPicker(_ picker: CNContactPickerViewController, didSelect contact: CNContact) {
+        onSelectContact(contact)
     }
 }
 

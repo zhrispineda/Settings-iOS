@@ -208,6 +208,7 @@
 		836A7E892B981D8E00FA3223 /* AppleAccountLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836A7E882B981D8E00FA3223 /* AppleAccountLoginView.swift */; };
 		836A7E8B2B995E4000FA3223 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836A7E8A2B995E4000FA3223 /* ForgotPasswordView.swift */; };
 		836CDF932CB602B300B1C5B2 /* Restrictions.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 836CDF922CB602B300B1C5B2 /* Restrictions.xcstrings */; };
+		8372142D2D91C5E30027C51D /* UIWindowExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8372142C2D91C5E30027C51D /* UIWindowExtensions.swift */; };
 		8373E7322B910AF8004285EA /* AppWebsiteActivitySheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8373E7312B910AF8004285EA /* AppWebsiteActivitySheetView.swift */; };
 		8373E7342B9162BD004285EA /* ScreenDistanceSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8373E7332B9162BD004285EA /* ScreenDistanceSheetView.swift */; };
 		8373E7362B91660F004285EA /* SensitivePhotosVideosProtectionSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8373E7352B91660F004285EA /* SensitivePhotosVideosProtectionSheetView.swift */; };
@@ -712,6 +713,7 @@
 		836A7E882B981D8E00FA3223 /* AppleAccountLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAccountLoginView.swift; sourceTree = "<group>"; };
 		836A7E8A2B995E4000FA3223 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		836CDF922CB602B300B1C5B2 /* Restrictions.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Restrictions.xcstrings; sourceTree = "<group>"; };
+		8372142C2D91C5E30027C51D /* UIWindowExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindowExtensions.swift; sourceTree = "<group>"; };
 		8373E7312B910AF8004285EA /* AppWebsiteActivitySheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWebsiteActivitySheetView.swift; sourceTree = "<group>"; };
 		8373E7332B9162BD004285EA /* ScreenDistanceSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenDistanceSheetView.swift; sourceTree = "<group>"; };
 		8373E7352B91660F004285EA /* SensitivePhotosVideosProtectionSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensitivePhotosVideosProtectionSheetView.swift; sourceTree = "<group>"; };
@@ -1450,6 +1452,7 @@
 				83585FC72C435A7B00B11C91 /* ColorExtensions.swift */,
 				83585FC92C435B6700B11C91 /* StringExtensions.swift */,
 				830989392C44AA9C00535A8F /* UIDeviceExtensions.swift */,
+				8372142C2D91C5E30027C51D /* UIWindowExtensions.swift */,
 				8306AE6B2D0665A400D1AE5D /* ViewExtensions.swift */,
 			);
 			path = Extensions;
@@ -2811,6 +2814,7 @@
 				83D31F8B2B8E3DF60057CFDB /* VoiceDetailView.swift in Sources */,
 				83F78A1F2B8E92AD00025062 /* StickyKeysView.swift in Sources */,
 				832EF3A22B8198570066A1BF /* AddTextReplacementView.swift in Sources */,
+				8372142D2D91C5E30027C51D /* UIWindowExtensions.swift in Sources */,
 				83A5DA532C234DCB0012ACB3 /* LanguageView.swift in Sources */,
 				83AE01DD2D65637C00724A34 /* AppleAccountSection.swift in Sources */,
 				833A44EF2C6E75BF003076F5 /* SystemFontsView.swift in Sources */,

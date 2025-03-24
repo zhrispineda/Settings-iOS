@@ -57,7 +57,11 @@ struct AppsView: View {
                                 case "Photos":
                                     PhotosView()
                                 case "Reminders":
-                                    RemindersView()
+                                    if UIDevice.IsSimulator {
+                                        EmptyView()
+                                    } else {
+                                        RemindersView()
+                                    }
                                 case "Safari":
                                     SafariView()
                                 case "Shortcuts":
@@ -73,12 +77,19 @@ struct AppsView: View {
                 }
                 
                 // MARK: Hidden Apps
-                SettingsLink(color: .gray, icon: "square.dashed", id: "Hidden Apps".localize(table: table)) {
-                    ContentUnavailableView(
-                        "No Hidden Apps".localize(table: table),
-                        systemImage: "square.stack.3d.up.slash.fill",
-                        description: Text("No hidden apps found.", tableName: table)
-                    )
+                if UIDevice.IsSimulator {
+                    Button {} label: {
+                        SettingsLink(color: .gray, icon: "square.dashed", id: "Hidden Apps".localize(table: table)) {}
+                    }
+                    .foregroundStyle(.primary)
+                } else {
+                    SettingsLink(color: .gray, icon: "square.dashed", id: "Hidden Apps".localize(table: table)) {
+                        ContentUnavailableView(
+                            "No Hidden Apps".localize(table: table),
+                            systemImage: "square.stack.3d.up.slash.fill",
+                            description: Text("No hidden apps found.", tableName: table)
+                        )
+                    }
                 }
             }
             .searchable(text: $searchText, placement: UIDevice.iPhone ? .navigationBarDrawer(displayMode: .always) : .toolbar)

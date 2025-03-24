@@ -19,7 +19,7 @@ struct GeneralView: View {
             Section {
                 Placard(title: "General".localize(table: table), color: Color.gray, icon: "gear", description: "PLACARD_SUBTITLE".localize(table: "GeneralSettingsUI"), frameY: $frameY, opacity: $opacity)
             }
-        
+            
             Section {
                 SettingsLink(color: .gray, icon: UIDevice.IsSimulator ? "questionmark.app.dashed" : UIDevice.iPhone ? "iphone.gen3" : "ipad.gen2", id: "About".localize(table: table)) {
                     AboutView()
