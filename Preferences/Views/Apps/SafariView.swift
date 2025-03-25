@@ -27,16 +27,12 @@ struct SafariView: View {
     
     @State private var showColorCompactTabBarEnabled = true
     @State private var automaticallySaveOfflineEnabled = false
+    @State private var showingSearchSheet = false
+    @State private var showingSafariSheet = false
     
     var body: some View {
         CustomList(title: "Safari", topPadding: true) {
-            Section {
-                SettingsLink(icon: "appleSiri", id: "Siri & Search") {
-                    SiriDetailView(appName: "Safari")
-                }
-            } header: {
-                Text("Allow Safari to Access")
-            }
+            PermissionsView(appName: "Safari", cellular: false, location: false, notifications: false, siri: true, cellularEnabled: .constant(false))
             
             CustomNavigationLink("Default Browser App", status: "Safari", destination: EmptyView())
             
@@ -50,7 +46,7 @@ struct SafariView: View {
             } header: {
                 Text("Search")
             } footer: {
-                Text("\(UIDevice.iPad ? "Private Browsing uses on-device information to provide search suggestions. No data is shared with the service provider. " : "")[About Siri Suggestions, Search & Privacy...](#)")
+                Text("Private Browsing uses on-device information to provide search suggestions. No data is shared with the service provider. [About Search & Privacy...](pref://search)")
             }
             
             Section {
@@ -151,29 +147,27 @@ struct SafariView: View {
             } header: {
                 Text("Privacy & Security")
             } footer: {
-                Text("[About Safari & Privacy...](#)")
+                Text("[About Safari & Privacy...](pref://safari)")
             }
             
-            Section {
+            Section("History and Website Data") {
+                Button("Import") {}
+                Button("Export") {}
                 Button("Clear History and Website Data") {}
             }
             
-            Section {
+            Section("Settings for Websites") {
                 NavigationLink("Page Zoom", destination: PageZoomView())
                 NavigationLink("Request Desktop Website", destination: RequestDesktopWebsiteView())
                 NavigationLink("Reader", destination: SafariReaderView())
                 NavigationLink("Camera", destination: SafariCameraView())
                 NavigationLink("Microphone", destination: SafariMicrophoneView())
                 NavigationLink("Location", destination: SafariLocationView())
-            } header: {
-                Text("Settings for Websites")
             }
             
             if UIDevice.iPad {
-                Section {
+                Section("Accessibility") {
                     Toggle("Show Color in Compact Tab Bar", isOn: $showColorCompactTabBarEnabled)
-                } header: {
-                    Text("Accessibility")
                 }
             }
             
@@ -188,6 +182,22 @@ struct SafariView: View {
             Section {
                 NavigationLink("Advanced", destination: SafariAdvancedView())
             }
+        }
+        .onOpenURL { url in
+            if url.absoluteString == "pref://search" {
+                showingSearchSheet = true
+            }
+        }
+        .onOpenURL { url in
+            if url.absoluteString == "pref://safari" {
+                showingSafariSheet = true
+            }
+        }
+        .sheet(isPresented: $showingSearchSheet) {
+            OnBoardingView(table: "SiriSuggestions")
+        }
+        .sheet(isPresented: $showingSafariSheet) {
+            OnBoardingView(table: "Safari")
         }
     }
 }

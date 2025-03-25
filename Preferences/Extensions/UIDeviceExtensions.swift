@@ -158,8 +158,19 @@ public extension UIDevice {
     /// iPhone: https://support.apple.com/guide/iphone/aside/iph4ecb9a67f/18.0/ios/18.0
     /// iPad: https://support.apple.com/guide/ipad/aside/ipad71aac361/18.0/ipados/18.0
     static let LensCorrectionCapability: Bool = {
-        let capableDevices: Set<String> = ["iPhone12,8", "iPhone14,6", "iPhone17,5", "iPad7,11", "iPad7,12", "iPad8,1", "iPad8,2", "iPad8,3", "iPad8,4", "iPad8,5", "iPad8,6", "iPad8,7", "iPad8,8", "iPad8,9", "iPad8,10", "iPad8,11", "iPad8,12", "iPad11,1", "iPad11,2", "iPad11,3", "iPad11,4", "iPad11,6", "iPad11,7", "iPad13,4", "iPad13,5", "iPad13,6", "iPad13,7", "iPad13,8", "iPad13,9", "iPad13,10", "iPad13,11", "iPad14,3", "iPad14,4", "iPad14,5", "iPad14,6", "iPad15,3", "iPad15,4", "iPad15,5", "iPad15,6", "iPad16,3", "iPad16,4", "iPad16,5", "iPad16,6"]
+        let capableDevices: Set<String> = ["iPhone12,8", "iPhone14,6", "iPhone17,5", "iPad8,1", "iPad8,2", "iPad8,3", "iPad8,4", "iPad8,5", "iPad8,6", "iPad8,7", "iPad8,8", "iPad8,9", "iPad8,10", "iPad8,11", "iPad8,12", "iPad11,1", "iPad11,2", "iPad11,3", "iPad11,4", "iPad11,6", "iPad11,7", "iPad13,4", "iPad13,5", "iPad13,6", "iPad13,7", "iPad13,8", "iPad13,9", "iPad13,10", "iPad13,11", "iPad14,3", "iPad14,4", "iPad14,5", "iPad14,6", "iPad15,3", "iPad15,4", "iPad15,5", "iPad15,6", "iPad16,3", "iPad16,4", "iPad16,5", "iPad16,6"]
         return capableDevices.contains(identifier)
+    }()
+    
+    /// Returns a Bool on whether the device is capable of manual HDR.
+    /// https://support.apple.com/guide/ipad/aside/ipad36363b86/18.0/ipados/18.0
+    static let manualHDRCapability: Bool = {
+        if let answer = MGHelper.read(key: "+97cHA72jHlHqQnIkgGBYg") { // CameraHDRVersion key
+            return answer == "1" // Version 1 supports manual HDR
+        }
+        
+        // Fallback
+        return false
     }()
     
     /// Returns a Bool on whether the device has Macro Lens capability.

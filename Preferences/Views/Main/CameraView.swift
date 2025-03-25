@@ -15,20 +15,21 @@ struct CameraView: View {
     @AppStorage("CameraCinematicSetting") private var selectedCinematicSetting = "CAM_RECORD_VIDEO_1080p_30"
     @AppStorage("CameraSoundSetting") private var selectedSoundSetting = String()
     @State private var showingPhotographicStylesView = false
-    @State private var useVolumeUpBurstEnabled = false
-    @State private var scanQrCodesEnabled = true
-    @State private var showDetectedTextEnabled = true
+    @AppStorage("CameraBurstToggle") private var useVolumeUpBurstEnabled = false
+    @AppStorage("CameraQRCodesToggle") private var scanQRCodesEnabled = true
+    @AppStorage("CameraDetectTextToggle") private var showDetectedTextEnabled = true
     
-    @State private var gridEnabled = false
-    @State private var levelEnabled = false
-    @State private var mirrorFrontCameraEnabled = false
-    @State private var viewOutsideFrameEnabled = true
+    @AppStorage("CameraGridToggle") private var gridEnabled = false
+    @AppStorage("CameraLevelToggle") private var levelEnabled = false
+    @AppStorage("MirrorFrontCameraToggle") private var mirrorFrontCameraEnabled = false
+    @AppStorage("CameraViewOutsideFrameToggle") private var viewOutsideFrameEnabled = true
     
-    @State private var sceneDetectionEnabled = true
-    @State private var portraitsPhotoModeEnabled = true
-    @State private var prioritizeFasterShootingEnabled = true
-    @State private var lensCorrectionEnabled = true
-    @State private var macroControlEnabled = true
+    @AppStorage("CameraSceneDetectionToggle") private var sceneDetectionEnabled = true
+    @AppStorage("CameraPortraitsToggle") private var portraitsPhotoModeEnabled = true
+    @AppStorage("CameraFasterShootingToggle") private var prioritizeFasterShootingEnabled = true
+    @AppStorage("CameraLensCorrectionToggle") private var lensCorrectionEnabled = true
+    @AppStorage("CameraKeepNormalPhotoToggle") private var keepNormalPhoto = true
+    @AppStorage("CameraMacroControlToggle") private var macroControlEnabled = true
     @State private var showingSheet = false
     
     let table = "CameraSettings"
@@ -107,7 +108,7 @@ struct CameraView: View {
                     Toggle("VOLUME_UP_BURST".localize(table: table), isOn: $useVolumeUpBurstEnabled)
                 }
                 
-                Toggle("QR_CODES".localize(table: table), isOn: $scanQrCodesEnabled)
+                Toggle("QR_CODES".localize(table: table), isOn: $scanQRCodesEnabled)
                 Toggle("TEXT_ANALYSIS".localize(table: table), isOn: $showDetectedTextEnabled)
                 
                 if UIDevice.iPad {
@@ -184,6 +185,17 @@ struct CameraView: View {
                 } footer: {
                     Text(UIDevice.LimitedLensCorrectionCapability ? "IDC_FOOTER_FRONT_ONLY" : "IDC_FOOTER", tableName: table)
                     
+                }
+            }
+            
+            // MARK: HDR (High Dynamic Range)
+            if UIDevice.manualHDRCapability {
+                Section {
+                    Toggle("HDR_KEEP_ORIGINAL_PHOTO".localize(table: table), isOn: $keepNormalPhoto)
+                } header: {
+                    Text("HDR_TITLE", tableName: table)
+                } footer: {
+                    Text("HDR_TITLE_FOOTER_TEXT", tableName: table)
                 }
             }
             
