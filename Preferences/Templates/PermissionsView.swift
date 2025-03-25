@@ -93,7 +93,7 @@ struct PermissionsView: View {
                 IconToggle(enabled: $liveActivityEnabled, color: .blue, icon: "clock.badge.fill", title: "LIVE_ACTIVITIES", table: table)
             }
             if background {
-                IconToggle(enabled: $backgroundAppRefreshEnabled, color: .gray, icon: "gear", title: "BACKGROUND_APP_REFRESH", table: table)
+                IconToggle(enabled: $backgroundAppRefreshEnabled, color: .gray, icon: "arrow.clockwise.app.stack.fill", title: "BACKGROUND_APP_REFRESH", table: table)
             }
             if cellular && UIDevice.CellularTelephonyCapability {
                 IconToggle(enabled: $cellularEnabled, color: .green, icon: "antenna.radiowaves.left.and.right", title: "CELLULAR_DATA", table: table)

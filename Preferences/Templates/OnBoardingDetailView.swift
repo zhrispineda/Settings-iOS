@@ -14,6 +14,7 @@ import SwiftUI
 struct OnBoardingDetailView: View {
     // Variables
     @Environment(\.colorScheme) private var colorScheme
+    @Environment(\.dismiss) private var dismiss
     @State private var frameY = Double()
     @State private var opacity = Double()
     var table = "PrivacyPane"
@@ -190,6 +191,15 @@ struct OnBoardingDetailView: View {
                         .opacity(frameY < -10 ? 1 : 0)
                         .fontWeight(.semibold)
                         .lineLimit(1)
+                }
+                
+                if tables.count == 2 {
+                    ToolbarItem(placement: .topBarTrailing) {
+                        Button("Done") {
+                            dismiss()
+                        }
+                        .bold()
+                    }
                 }
             }
         }

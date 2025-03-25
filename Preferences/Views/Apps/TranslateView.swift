@@ -10,11 +10,12 @@ import SwiftUI
 struct TranslateView: View {
     // Variables
     @State private var onDeviceModeEnabled = false
+    @State private var showingSheet = false
     let table = "TranslationUI"
     
     var body: some View {
         CustomList(title: "TRANSLATE".localize(table: table), topPadding: true) {
-            PermissionsView(appName: "TRANSLATE".localize(table: table), cellular: true, location: false, notifications: false, cellularEnabled: .constant(true))
+            PermissionsView(appName: "TRANSLATE".localize(table: table), background: true, cellular: true, location: false, notifications: false, cellularEnabled: .constant(true))
             
             Section {
                 NavigationLink("ON_DEVICE_LANGUAGES_TITLE".localize(table: table), destination: DownloadedLanguagesView())
@@ -29,8 +30,16 @@ struct TranslateView: View {
             }
             
             Section {} footer: {
-                Text("[\("PRIVACY_LINK".localize(table: table))](#)")
+                Text("[\("PRIVACY_LINK".localize(table: table))](pref://)")
             }
+        }
+        .onOpenURL { url in
+            if url.scheme == "pref" {
+                showingSheet = true
+            }
+        }
+        .sheet(isPresented: $showingSheet) {
+            OnBoardingView(table: "Translate")
         }
     }
 }
