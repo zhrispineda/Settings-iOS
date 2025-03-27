@@ -9,9 +9,10 @@ import SwiftUI
 
 struct GeneralView: View {
     // Variables
-    @Environment(\.colorScheme) var colorScheme
+    @Environment(\.colorScheme) private var colorScheme
     @State private var opacity: Double = 0
     @State private var frameY: Double = 0
+    @State private var showingHomeButtonSheet: Bool = false
     let table = "General"
     
     var body: some View {
@@ -61,8 +62,13 @@ struct GeneralView: View {
                 }
             }
             
-            if !UIDevice.IsSimulator && UIDevice.HomeButtonCapability {
-                SettingsLink(color: .gray, icon: "iphone.gen1", id: "HOME_BUTTON".localize(table: table)) {}
+            if !UIDevice.IsSimulator && UIDevice.HomeButtonCapability && UIDevice.iPhone {
+                Button {
+                    showingHomeButtonSheet = true
+                } label: {
+                    SettingsLink(color: .gray, icon: "iphone.gen1", id: "HOME_BUTTON".localize(table: table)) {}
+                }
+                .foregroundStyle(.primary)
             }
             
             Section {
@@ -137,6 +143,19 @@ struct GeneralView: View {
                 }
             }
         }
+        .fullScreenCover(isPresented: $showingHomeButtonSheet) {
+            NavigationStack {
+                HomeButtonViewController()
+                    .toolbar {
+                        ToolbarItem(placement: .topBarTrailing) {
+                            Button("Done") {
+                                showingHomeButtonSheet = false
+                            }
+                            .bold()
+                        }
+                    }
+            }
+        }
         .toolbar {
             ToolbarItem(placement: .principal) {
                 Text("General".localize(table: table))
@@ -146,6 +165,23 @@ struct GeneralView: View {
             }
         }
     }
+}
+
+// View for customizing the haptic feedback for the home button.
+// Missing permission/entitlement to disable backgrounding by home button.
+struct HomeButtonViewController: UIViewControllerRepresentable {
+    func makeUIViewController(context: Context) -> UIViewController {
+        let path = "/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework/GeneralSettingsUI"
+        let handle = dlopen(path, RTLD_NOW)
+        defer { dlclose(handle) }
+        
+        let controller = NSClassFromString("PSGHomeButtonCustomizeController") as! UIViewControllerType.Type
+        let instance = controller.init()
+        
+        return instance
+    }
+    
+    func updateUIViewController(_ uiViewController: UIViewController, context: Context) {}
 }
 
 struct GeneralRoute: Routable {
