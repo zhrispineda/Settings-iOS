@@ -13,12 +13,13 @@ struct BluetoothView: View {
     @AppStorage("DeviceName") private var deviceName = UIDevice.current.model
     @State private var opacity: Double = 0
     @State private var frameY: Double = 0
+    @State private var showingHelpSheet: Bool = false
     let table = "Devices"
     
     var body: some View {
         CustomList {
             Section {
-                Placard(title: "BLUETOOTH".localize(table: table), color: Color.blue, icon: "bluetooth", description: "\("BLUETOOTHPLACARDINFO".localize(table: table)) [\("LEARN_MORE".localize(table: table))](https://support.apple.com/guide/\(UIDevice.iPhone ?  "iphone/bluetooth-accessories-iph3c50f191/ios" : "ipad/bluetooth-accessories-ipad997da4cf/ipados"))", frameY: $frameY, opacity: $opacity)
+                Placard(title: "BLUETOOTH".localize(table: table), color: Color.blue, icon: "bluetooth", description: "\("BLUETOOTHPLACARDINFO".localize(table: table)) [\("LEARN_MORE".localize(table: table))](pref://helpkit)", frameY: $frameY, opacity: $opacity)
                 Toggle("BLUETOOTH".localize(table: table), isOn: $bluetoothEnabled.animation())
             } footer: {
                 if bluetoothEnabled {
@@ -44,9 +45,19 @@ struct BluetoothView: View {
                 }
             }
         }
+        .onOpenURL { url in
+            if url.absoluteString == "pref://helpkit" {
+                showingHelpSheet = true
+            }
+        }
+        .sheet(isPresented: $showingHelpSheet) {
+            HelpKitView(topicID: UIDevice.iPhone ? "iph3c50f191" : "ipad997da4cf")
+                .ignoresSafeArea(edges: .bottom)
+                .interactiveDismissDisabled()
+        }
         .toolbar {
             ToolbarItem(placement: .principal) {
-                Text("\("BLUETOOTH".localize(table: table))")
+                Text("BLUETOOTH", tableName: table)
                     .fontWeight(.semibold)
                     .font(.subheadline)
                     .opacity(frameY < 50.0 ? opacity : 0) // Only fade when passing the help section title at the top

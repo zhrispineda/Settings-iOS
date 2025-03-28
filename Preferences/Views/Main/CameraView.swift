@@ -248,7 +248,7 @@ struct HelpKitView: UIViewControllerRepresentable {
         let handle = dlopen(path, RTLD_NOW)
         defer { dlclose(handle) }
 
-        guard let HelpViewController = NSClassFromString("HLPHelpViewControllers") as? UIViewController.Type else {
+        guard let HelpViewController = NSClassFromString("HLPHelpViewController") as? UIViewController.Type else {
             fatalError("Failed to load class: HLPHelpViewController")
         }
 
