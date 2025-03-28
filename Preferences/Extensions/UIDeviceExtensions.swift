@@ -109,6 +109,16 @@ public extension UIDevice {
         return identifier.contains("iPhone")
     }()
     
+    /// Returns a Bool on whether the device has the cameraRestriction capability.
+    static let cameraRestrictionCapability: Bool = {
+        if let answer = MGHelper.read(key: "2pxKjejpRGpWvUE+3yp5mQ") { // cameraRestriction key
+            return Bool(answer)!
+        }
+        
+        // Fallback
+        return false
+    }()
+    
     /// Returns a Bool on whether the device is capable of Apple Intelligence.
     static let IntelligenceCapability: Bool = {
         let capableDevices: Set<String> = ["iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4", "iPhone17,5", "iPad13,4", "iPad13,5", "iPad13,6", "iPad13,7", "iPad13,8", "iPad13,9", "iPad13,10", "iPad13,11", "iPad13,16", "iPad13,17", "iPad14,3", "iPad14,4", "iPad14,5", "iPad14,6", "iPad14,8", "iPad14,9", "iPad14,10", "iPad14,11", "iPad15,3", "iPad15,4", "iPad15,5", "iPad15,6", "iPad16,1", "iPad16,2", "iPad16,3", "iPad16,4", "iPad16,5", "iPad16,6"]
@@ -159,14 +169,13 @@ public extension UIDevice {
     /// iPad: https://support.apple.com/guide/ipad/aside/ipad71aac361/18.0/ipados/18.0
     static let LensCorrectionCapability: Bool = {
         let capableDevices: Set<String> = ["iPhone12,8", "iPhone14,6", "iPhone17,5", "iPad8,1", "iPad8,2", "iPad8,3", "iPad8,4", "iPad8,5", "iPad8,6", "iPad8,7", "iPad8,8", "iPad8,9", "iPad8,10", "iPad8,11", "iPad8,12", "iPad11,1", "iPad11,2", "iPad11,3", "iPad11,4", "iPad11,6", "iPad11,7", "iPad13,4", "iPad13,5", "iPad13,6", "iPad13,7", "iPad13,8", "iPad13,9", "iPad13,10", "iPad13,11", "iPad14,3", "iPad14,4", "iPad14,5", "iPad14,6", "iPad15,3", "iPad15,4", "iPad15,5", "iPad15,6", "iPad16,3", "iPad16,4", "iPad16,5", "iPad16,6"]
-        return capableDevices.contains(identifier)
+        return !capableDevices.contains(identifier)
     }()
     
-    /// Returns a Bool on whether the device is capable of manual HDR.
-    /// https://support.apple.com/guide/ipad/aside/ipad36363b86/18.0/ipados/18.0
-    static let manualHDRCapability: Bool = {
-        if let answer = MGHelper.read(key: "+97cHA72jHlHqQnIkgGBYg") { // CameraHDRVersion key
-            return answer == "1" // Version 1 supports manual HDR
+    /// Returns a Bool on whether the device has the hdr-image-capture capability.
+    static let HDRImageCaptureCapability: Bool = {
+        if let answer = MGHelper.read(key: "fh6DnnDGDVZ5kZ9nYn/GrQ") { // hdr-image-capture key
+            return Bool(answer)!
         }
         
         // Fallback
@@ -272,7 +281,7 @@ public extension UIDevice {
     /// Returns a Bool on whether the device is capable of displaying the camera view outside of the frame in the Camera app.
     static let ViewOutsideFrameCapability: Bool = {
         let capableDevices: Set<String> = ["iPhone11,8", "iPhone11,2", "iPhone11,6"]
-        return capableDevices.contains(identifier)
+        return !capableDevices.contains(identifier)
     }()
     
     /// Returns a Bool on whether the device has a wide notch. (iPhone XR, XS, XS Max, 11, 11 Pro, 11 Pro Max, 12, 12 mini, 12 Pro, 12 Pro Max)

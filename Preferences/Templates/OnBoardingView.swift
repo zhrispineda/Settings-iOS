@@ -102,7 +102,7 @@ struct OnBoardingView: View {
             }
             .navigationTitle(splashString(table: table))
             .navigationBarTitleDisplayMode(.inline)
-            .scrollDisabled(textHeight < viewHeight)
+            .scrollDisabled(textHeight < viewHeight && UIDevice.iPhone)
             .toolbar {
                 if !childView {
                     ToolbarItem(placement: .topBarTrailing) {

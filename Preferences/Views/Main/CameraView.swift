@@ -30,7 +30,8 @@ struct CameraView: View {
     @AppStorage("CameraLensCorrectionToggle") private var lensCorrectionEnabled = true
     @AppStorage("CameraKeepNormalPhotoToggle") private var keepNormalPhoto = true
     @AppStorage("CameraMacroControlToggle") private var macroControlEnabled = true
-    @State private var showingSheet = false
+    @State private var showingHelpSheet = false
+    @State private var showingPrivacySheet = false
     
     let table = "CameraSettings"
     let buttonTable = "CameraSettings-CameraButton"
@@ -62,7 +63,7 @@ struct CameraView: View {
                 } header: {
                     Text("SYSTEM_SETTINGS_HEADER", tableName: stylesTable)
                 } footer: {
-                    Text(.init("CAMERA_BUTTON_%@_FOOTER".localize(table: buttonTable, "[\("CAMERA_BUTTON_LEARN_MORE_TITLE".localize(table: buttonTable))](#)")))
+                    Text(.init("CAMERA_BUTTON_%@_FOOTER".localize(table: buttonTable, "[\("CAMERA_BUTTON_LEARN_MORE_TITLE".localize(table: buttonTable))](pref://helpkit)")))
                 }
             }
             
@@ -182,14 +183,19 @@ struct CameraView: View {
             if UIDevice.LensCorrectionCapability {
                 Section {
                     Toggle("IDC_SWITCH".localize(table: table), isOn: $lensCorrectionEnabled)
+                } header: {
+                    Text("CAM_PHOTO_CAPTURE_GROUP_TITLE", tableName: table)
                 } footer: {
                     Text(UIDevice.LimitedLensCorrectionCapability ? "IDC_FOOTER_FRONT_ONLY" : "IDC_FOOTER", tableName: table)
                     
                 }
             }
             
-            // MARK: HDR (High Dynamic Range)
-            if UIDevice.manualHDRCapability {
+            // MARK: - HDR (High Dynamic Range)
+            // MARK: REQUIRED CAPABILITIES:
+            // - cameraRestriction: false
+            // - hdr-image-capture: true
+            if !UIDevice.cameraRestrictionCapability && UIDevice.HDRImageCaptureCapability {
                 Section {
                     Toggle("HDR_KEEP_ORIGINAL_PHOTO".localize(table: table), isOn: $keepNormalPhoto)
                 } header: {
@@ -211,19 +217,49 @@ struct CameraView: View {
             // MARK: Camera & ARKit Privacy Footer
             if UIDevice.LiDARCapability {
                 Section {} footer: {
-                    Text(.init("[\("BUTTON_TITLE".localize(table: privacyTable))](pref://)"))
+                    Text(.init("[\("BUTTON_TITLE".localize(table: privacyTable))](pref://privacy)"))
                 }
             }
         }
         .onOpenURL { url in
-            if url.scheme == "pref" {
-                showingSheet = true
+            if url.absoluteString == "pref://helpkit" {
+                showingHelpSheet = true
+            } else if url.absoluteString == "pref://privacy" {
+                showingPrivacySheet = true
             }
         }
-        .sheet(isPresented: $showingSheet) {
+        .sheet(isPresented: $showingHelpSheet) {
+            HelpKitView(topicID: "iph0c397b154")
+                .ignoresSafeArea(edges: .bottom)
+                .interactiveDismissDisabled()
+        }
+        .sheet(isPresented: $showingPrivacySheet) {
             OnBoardingView(table: privacyTable)
         }
     }
+}
+
+// HelpKit UIViewControllerRepresentable View
+struct HelpKitView: UIViewControllerRepresentable {
+    let topicID: String
+
+    func makeUIViewController(context: Context) -> UIViewController {
+        let path = "/System/Library/PrivateFrameworks/HelpKit.framework/HelpKit"
+        let handle = dlopen(path, RTLD_NOW)
+        defer { dlclose(handle) }
+
+        guard let HelpViewController = NSClassFromString("HLPHelpViewControllers") as? UIViewController.Type else {
+            fatalError("Failed to load class: HLPHelpViewController")
+        }
+
+        let instance = HelpViewController.init()
+        instance.setValue(topicID, forKey: "selectedHelpTopicID")
+
+        let controller = UINavigationController(rootViewController: instance)
+        return controller
+    }
+
+    func updateUIViewController(_ uiViewController: UIViewController, context: Context) {}
 }
 
 #Preview {
