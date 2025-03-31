@@ -239,29 +239,6 @@ struct CameraView: View {
     }
 }
 
-// HelpKit UIViewControllerRepresentable View
-struct HelpKitView: UIViewControllerRepresentable {
-    let topicID: String
-
-    func makeUIViewController(context: Context) -> UIViewController {
-        let path = "/System/Library/PrivateFrameworks/HelpKit.framework/HelpKit"
-        let handle = dlopen(path, RTLD_NOW)
-        defer { dlclose(handle) }
-
-        guard let HelpViewController = NSClassFromString("HLPHelpViewController") as? UIViewController.Type else {
-            fatalError("Failed to load class: HLPHelpViewController")
-        }
-
-        let instance = HelpViewController.init()
-        instance.setValue(topicID, forKey: "selectedHelpTopicID")
-
-        let controller = UINavigationController(rootViewController: instance)
-        return controller
-    }
-
-    func updateUIViewController(_ uiViewController: UIViewController, context: Context) {}
-}
-
 #Preview {
     NavigationStack {
         CameraView()

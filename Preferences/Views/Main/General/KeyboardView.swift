@@ -32,6 +32,7 @@ struct KeyboardView: View {
     @State private var autoPunctuationEnabled = true
     
     @State private var stickersEnabled = true
+    @State private var showingSheet = true
     
     var body: some View {
         CustomList(title: "Keyboards") {
@@ -122,9 +123,9 @@ struct KeyboardView: View {
 //                    }
                 }
             }
-            .onChange(of: dictationEnabled, {
+            .onChange(of: dictationEnabled) {
                 dictationEnabled ? (UIDevice.iPhone ? showingDictationEnablePopup.toggle() : showingDictationEnableAlert.toggle()) : (UIDevice.iPhone ? showingDictationDisablePopup.toggle() : showingDictationDisableAlert.toggle())
-            })
+            }
             
             Section {
                 Toggle("Stickers", isOn: $stickersEnabled)
@@ -133,6 +134,14 @@ struct KeyboardView: View {
             } footer: {
                 Text("Send stickers from the Emoji keyboard.")
             }
+        }
+        .onOpenURL { url in
+            if url.absoluteString == "pref://privacy" {
+                showingSheet = true
+            }
+        }
+        .sheet(isPresented: $showingSheet) {
+            OnBoardingView(table: "AskSiri")
         }
     }
 }

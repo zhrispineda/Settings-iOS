@@ -50,6 +50,29 @@ struct AnyRoute: Hashable {
     }
 }
 
+// MARK: HelpKit UIViewControllerRepresentable View
+struct HelpKitView: UIViewControllerRepresentable {
+    let topicID: String
+
+    func makeUIViewController(context: Context) -> UIViewController {
+        let path = "/System/Library/PrivateFrameworks/HelpKit.framework/HelpKit"
+        let handle = dlopen(path, RTLD_NOW)
+        defer { dlclose(handle) }
+
+        guard let HelpViewController = NSClassFromString("HLPHelpViewController") as? UIViewController.Type else {
+            fatalError("Failed to load class: HLPHelpViewController")
+        }
+
+        let instance = HelpViewController.init()
+        instance.setValue(topicID, forKey: "selectedHelpTopicID")
+
+        let controller = UINavigationController(rootViewController: instance)
+        return controller
+    }
+
+    func updateUIViewController(_ uiViewController: UIViewController, context: Context) {}
+}
+
 // MARK: SettingsModel data
 /// Stores the title of each enum variable for use in navigation.
 enum SettingsModel: String, CaseIterable {
@@ -109,7 +132,7 @@ struct SettingsItem<Content: View>: Identifiable {
     let title: String
     let icon: String
     var capability: Capabilities = .none
-    var color: Color = Color.gray
+    var color: Color = Color.white
     let destination: Content
 }
 
@@ -159,7 +182,7 @@ let multicolorIcons = ["app.grid.3x3", "siri"]
     SettingsItem(type: .applePencil, title: "Apple Pencil", icon: "pencil", color: .gray, destination: AnyView(ApplePencilView())),
     SettingsItem(type: .siri, title: "Apple Intelligence & Siri", icon: "appleIntelligence", capability: .appleIntelligence, color: Color(UIColor.systemBackground), destination: AnyView(SiriView())),
     SettingsItem(type: .camera, title: "Camera", icon: "camera.fill", color: .gray, destination: AnyView(CameraView())),
-    SettingsItem(type: .controlCenter, title: "Control Center", icon: "switch.2", destination: AnyView(ControlCenterView())),
+    SettingsItem(type: .controlCenter, title: "Control Center", icon: "switch.2", color: .gray, destination: AnyView(ControlCenterView())),
     SettingsItem(type: .displayBrightness, title: "Display & Brightness", icon: "sun.max.fill", color: .blue, destination: AnyView(DisplayBrightnessView())),
     SettingsItem(type: .homeScreenAppLibrary, title: "Home Screen & App Library", icon: UIDevice.iPhone ? "apps.iphone" : "apps.ipad", color: .blue, destination: AnyView(HomeScreenAppLibraryView())),
     SettingsItem(type: .multitaskGestures, title: "Multitasking & Gestures", icon: "squares.leading.rectangle", color: .blue, destination: AnyView(MultitaskingGesturesView())),

@@ -280,7 +280,7 @@ public extension UIDevice {
     
     /// Returns a Bool on whether the device is capable of displaying the camera view outside of the frame in the Camera app.
     static let ViewOutsideFrameCapability: Bool = {
-        let capableDevices: Set<String> = ["iPhone11,8", "iPhone11,2", "iPhone11,6"]
+        let capableDevices: Set<String> = ["iPhone11,2", "iPhone11,8", "iPhone11,4", "iPhone11,6", "iPhone12,8", "iPhone14,6"]
         return !capableDevices.contains(identifier)
     }()
     

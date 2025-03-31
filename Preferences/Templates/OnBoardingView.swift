@@ -210,6 +210,8 @@ struct OnBoardingView: View {
                 formattedString = "BATTERY_WARRANTY_P2_IPAD".localize(table: table, "80%", "1000", "[\("LM_TEXT".localize(table: table))](\("BW_LM_URL_2_IPHONE".localize(table: table)))")
             }
             return formattedString
+        } else if table == "AskSiri" {
+            return UIDevice.iPhone ? "FOOTER_TEXT_IPHONE".localize(table: table) : "FOOTER_TEXT_IPAD".localize(table: table)
         }
         if NSLocalizedString("FOOTER_TEXT_WIFI_\(UIDevice.current.model.uppercased())", tableName: table, comment: "") != "FOOTER_TEXT_WIFI_\(UIDevice.current.model.uppercased())" {
             return "FOOTER_TEXT_WIFI_\(UIDevice.current.model.uppercased())".localize(table: table)

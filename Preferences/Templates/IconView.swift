@@ -6,12 +6,15 @@ A ZStack structure for creating an icon view; building the background, icon, and
 import SwiftUI
 
 /// A ZStack structure for creating an icon view; building the background, icon, and overlay.
+///
 /// ```swift
 /// IconView(icon: "wifi", color: Color.blue, iconColor: Color.white)
 /// ```
+///
 /// - Parameter icon: The `String` name of the image asset or symbol.
 /// - Parameter color: The `Color` of the background.
 /// - Parameter iconColor: The `Color` of the icon itself.
+/// - Parameter lightonly: The `Bool` for whether the icon should always be a light mode icon.
 struct IconView: View {
     @Environment(\.colorScheme) private var colorScheme
     let id: String
@@ -60,11 +63,13 @@ struct IconView: View {
                     .clipShape(RoundedRectangle(cornerRadius: 6))
             }
         }
-        .overlay(
+        .overlay {
             // Add outline around icon background
-            RoundedRectangle(cornerRadius: 7)
-                .stroke(colorScheme == .light && color == .white ? Color.black.opacity(0.2) : colorScheme == .dark ? Color.white.opacity(0.2) : Color.black.opacity(0.2), lineWidth: 0.5)
-        )
+            if color == .white || color == .black || colorScheme == .dark {
+                RoundedRectangle(cornerRadius: 7)
+                    .stroke(colorScheme == .light && color == .white ? Color.black.opacity(0.5) : colorScheme == .dark ? Color.white.opacity(0.5) : Color.black.opacity(0.5), lineWidth: 0.25)
+            }
+        }
     }
 }
 
