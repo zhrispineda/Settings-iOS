@@ -34,7 +34,7 @@ struct VersionView: View {
                     }
                 }
                 .frame(minHeight: 200, alignment: .top)
-                //Button("Learn More") {}
+                Button("Learn More") {}
             }
         }
     }
@@ -53,12 +53,9 @@ struct VersionView: View {
         guard let mobileGestalt = UIDevice.checkDevice(),
               let cacheExtra = mobileGestalt["CacheExtra"] as? [String: AnyObject],
               let buildVersion = cacheExtra["mZfUC7qo4pURNhyMHZ62RQ"] as? String else { // BuildVersion key
-            let otherIdentifiers: Set<String> = ["iPhone17,5", "iPad15,3", "iPad15,4", "iPad15,5", "iPad15,6", "iPad15,7", "iPad15,8"]
-            if UIDevice.iPad && otherIdentifiers.contains(UIDevice.identifier) {
-                return "22D2082"
-            }
-            return otherIdentifiers.contains(UIDevice.identifier) ? "22D8082" : "22D82" // Fallback
+            return "22E240" // Fallback
         }
+        
         return buildVersion
     }
 }
