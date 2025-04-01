@@ -10,6 +10,8 @@ import SwiftUI
 struct VersionView: View {
     // Variables
     let table = "GeneralSettingsUI"
+    let suTable = "Software Update"
+    @State private var showingReleaseNotes = false
     
     var body: some View {
         CustomList(title: "\(UIDevice().systemName) Version", topPadding: true) {
@@ -33,8 +35,24 @@ struct VersionView: View {
                             .font(.callout)
                     }
                 }
-                .frame(minHeight: 200, alignment: .top)
-                Button("Learn More") {}
+                .frame(minHeight: 150, alignment: .top)
+                Button("Learn More") {
+                    showingReleaseNotes = true
+                }
+            }
+        }
+        .sheet(isPresented: $showingReleaseNotes) {
+            NavigationStack {
+                ReleaseNotesViewController(readMeName: UIDevice.iPhone ? "iOSReadMe" : "iPadOSReadMe")
+                    .background(Color(UIColor.systemGroupedBackground))
+                    .navigationTitle(UIDevice.iPhone ? "ABOUT_THIS_UPDATE_IPHONE".localize(table: suTable) : "ABOUT_THIS_UPDATE_IPAD".localize(table: suTable))
+                    .navigationBarTitleDisplayMode(.inline)
+                    .toolbar {
+                        Button("Done") {
+                            showingReleaseNotes = false
+                        }
+                        .bold()
+                    }
             }
         }
     }

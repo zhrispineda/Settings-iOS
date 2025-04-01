@@ -90,23 +90,6 @@ struct TextSizeView: View {
     }
 }
 
-/// ViewController responsible for adjusting text size, directly from the DisplayAndBrightnessSettings framework.
-/// Missing permissions for (CFPrefsManagedSource/kCFPreferencesCurrentUser) user-preference-read/file-read-data sandbox access
-struct TextSliderViewController: UIViewControllerRepresentable {
-    func makeUIViewController(context: Context) -> UIViewController {
-        let path = "/System/Library/PrivateFrameworks/Settings/DisplayAndBrightnessSettings.framework/DisplayAndBrightnessSettings"
-        let handle = dlopen(path, RTLD_NOW)
-        defer { dlclose(handle) }
-        
-        let controller = NSClassFromString("DBSLargeTextSliderListController") as! UIViewControllerType.Type
-        let instance = controller.init()
-        
-        return instance
-    }
-    
-    func updateUIViewController(_ uiViewController: UIViewController, context: Context) {}
-}
-
 #Preview {
     NavigationStack {
         LargerTextView()

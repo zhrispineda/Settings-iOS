@@ -167,23 +167,6 @@ struct GeneralView: View {
     }
 }
 
-// View for customizing the haptic feedback for the home button.
-// Missing permission/entitlement to disable backgrounding by home button.
-struct HomeButtonViewController: UIViewControllerRepresentable {
-    func makeUIViewController(context: Context) -> UIViewController {
-        let path = "/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework/GeneralSettingsUI"
-        let handle = dlopen(path, RTLD_NOW)
-        defer { dlclose(handle) }
-        
-        let controller = NSClassFromString("PSGHomeButtonCustomizeController") as! UIViewControllerType.Type
-        let instance = controller.init()
-        
-        return instance
-    }
-    
-    func updateUIViewController(_ uiViewController: UIViewController, context: Context) {}
-}
-
 struct GeneralRoute: Routable {
     func destination() -> some View {
         GeneralView()
