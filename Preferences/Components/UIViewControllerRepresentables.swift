@@ -5,6 +5,34 @@
 
 import SwiftUI
 
+// MARK: ActionButtonSettings to display the 3D-rendered Action Button settings
+struct ActionButtonViewController: UIViewControllerRepresentable {
+    func makeUIViewController(context: Context) -> UIViewController {
+        let path = "/System/Library/PreferenceBundles/ActionButtonSettings.bundle/ActionButtonSettings"
+        guard let handle = dlopen(path, RTLD_LAZY) else {
+            return UIViewController()
+        }
+        defer { dlclose(handle) }
+        
+        guard let settingsClass = NSClassFromString("ActionButtonSettings") as? UIViewController.Type else {
+            return UIViewController()
+        }
+        
+        let instance = settingsClass.init()
+        
+        let selector = Selector(("pe_emitNavigationEventForSystemSettingsWithGraphicIconIdentifier:title:localizedNavigationComponents:deepLink:"))
+        if !(instance as AnyObject).responds(to: selector) {
+            let methodImp: @convention(block) (AnyObject, Any?, Any?, Any?, Any?) -> Void = { _, _, _, _, _ in }
+            let imp = imp_implementationWithBlock(methodImp)
+            _ = class_addMethod(settingsClass, selector, imp, "v@:@@@@")
+        }
+        
+        return instance
+    }
+    
+    func updateUIViewController(_ uiViewController: UIViewController, context: Context) {}
+}
+
 // MARK: HelpKit HLPHelpViewController for displaying user guide information
 struct HelpKitView: UIViewControllerRepresentable {
     let topicID: String
