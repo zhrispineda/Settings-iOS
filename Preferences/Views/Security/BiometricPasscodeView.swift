@@ -9,6 +9,7 @@ import SwiftUI
 
 struct BiometricPasscodeView: View {
     // Variables
+    @AppStorage("SiriEnabled") private var siriEnabled = false
     @State private var allowFingerprintForUnlock = false
     @State private var allowFingerprintForStore = false
     @State private var allowFingerprintForContactlessPayment = false
@@ -36,6 +37,9 @@ struct BiometricPasscodeView: View {
     
     @State private var opacity: Double = 0
     @State private var frameY: Double = 0
+    @State private var showingHelpSheet = false
+    @State private var showingPrivacySheet = false
+    
     let table = "Pearl"
     let lockTable = "Passcode Lock"
     let payTable = "Payment_Prefs"
@@ -44,7 +48,7 @@ struct BiometricPasscodeView: View {
     
     var body: some View {
         CustomList {
-            Placard(title: UIDevice.PearlIDCapability ? "PEARL_ID_AND_PASSCODE".localize(table: table) : "TOUCHID_PASSCODE".localize(table: oldTable), color: UIDevice.PearlIDCapability ? .green : .white, icon: UIDevice.PearlIDCapability ? "faceid" : "touchid", description: "\(UIDevice.PearlIDCapability ? "PASSCODE_PLACARD_SUBTITLE_FACE_ID".localize(table: lockTable) : "Turn on Touch ID and set a passcode to unlock your \(UIDevice.current.model), authorize purchases, and access sensitive data.") [Learn more...](\(UIDevice.PearlIDCapability ? "https://support.apple.com/guide/iphone/set-up-face-id-iph6d162927a/ios" : "https://support.apple.com/guide/iphone/set-up-touch-id-iph672384a0b/ios"))", frameY: $frameY, opacity: $opacity)
+            Placard(title: UIDevice.PearlIDCapability ? "PEARL_ID_AND_PASSCODE".localize(table: table) : "TOUCHID_PASSCODE".localize(table: oldTable), color: UIDevice.PearlIDCapability ? .green : .white, icon: UIDevice.PearlIDCapability ? "faceid" : "touchid", description: "\(UIDevice.PearlIDCapability ? "PASSCODE_PLACARD_SUBTITLE_FACE_ID".localize(table: lockTable) : "PASSCODE_PLACARD_SUBTITLE_TOUCH_ID".localize(table: lockTable)) [\("PASSCODE_RECOVERY_LEARN_MORE_TEXT".localize(table: lockTable))](pref://helpkit)", frameY: $frameY, opacity: $opacity)
             
             Section {
                 Toggle("TOUCHID_UNLOCK".localize(table: oldTable), isOn: $allowFingerprintForUnlock)
@@ -54,7 +58,7 @@ struct BiometricPasscodeView: View {
             } header: {
                 Text(UIDevice.PearlIDCapability ? "PEARL_HEADER".localize(table: table) : "USE_TOUCHID_FOR".localize(table: oldTable))
             } footer: {
-                Text(.init(UIDevice.PearlIDCapability ? "PEARL_FOOTER".localize(table: table, "[\("PEARL_FOOTER_LINK".localize(table: table))](#)") : "Touch ID lets you use your fingerprint to unlock your device and make purchases with Apple Pay, App Store, and Apple Books. [About Touch ID & Privacy...](#)"))
+                Text(.init(UIDevice.PearlIDCapability ? "PEARL_FOOTER".localize(table: table, "[\("PEARL_FOOTER_LINK".localize(table: table))](pref://privacy)") : "Touch ID lets you use your fingerprint to unlock your device and make purchases with Apple Pay, App Store, and Apple Books. [About Touch ID & Privacy…](pref://privacy)"))
             }
             
             if UIDevice.PearlIDCapability {
@@ -115,7 +119,9 @@ struct BiometricPasscodeView: View {
                 Toggle("CONTROL_CENTER".localize(table: lockTable), isOn: $allowLockScreenControlCenter)
                 Toggle("COMPLICATIONS".localize(table: lockTable), isOn: $allowLockScreenWidgets)
                 Toggle("LIVE_ACTIVITIES".localize(table: lockTable), isOn: $allowLockScreenLiveActivities)
-                Toggle("Siri", isOn: $allowAssistantWhileLocked)
+                if siriEnabled {
+                    Toggle("Siri", isOn: $allowAssistantWhileLocked)
+                }
                 if UIDevice.iPhone {
                     Toggle("REPLY_WITH_MESSAGE".localize(table: lockTable), isOn: $allowReplyWhileLocked)
                 }
@@ -159,6 +165,21 @@ struct BiometricPasscodeView: View {
                     .font(.subheadline)
                     .opacity(frameY < 50.0 ? opacity : 0) // Only fade when passing the help section title at the top
             }
+        }
+        .onOpenURL { url in
+            if url.absoluteString == "pref://helpkit" {
+                showingHelpSheet = true
+            } else if url.absoluteString == "pref://privacy" {
+                showingPrivacySheet = true
+            }
+        }
+        .sheet(isPresented: $showingHelpSheet) {
+            HelpKitView(topicID: UIDevice.iPhone ? UIDevice.PearlIDCapability ? "iph6d162927a" : "iph672384a0b" : UIDevice.PearlIDCapability ? "ipad66441e44" : "ipadcb11e17d")
+                .ignoresSafeArea(edges: .bottom)
+                .interactiveDismissDisabled()
+        }
+        .sheet(isPresented: $showingPrivacySheet) {
+            OnBoardingView(table: UIDevice.PearlIDCapability ? "FaceID" : "OBTouchID")
         }
     }
 }

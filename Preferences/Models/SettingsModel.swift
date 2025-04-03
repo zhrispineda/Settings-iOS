@@ -118,7 +118,7 @@ let smallerIcons = ["apple.logo", "appletvremote.gen4.fill", "apps.iphone", "app
 let largerIcons = ["waveform.and.magnifyingglass"]
 let hierarchyIcons = ["faceid", "questionmark.app.dashed", "questionmark.square.dashed", "waveform.and.magnifyingglass"]
 let internalIcons = ["airdrop", "app.grid.3x3", "apple.photos", "apps.iphone.assistive.access", "arrow.clockwise.app.stack.fill", "arrowtriangles.up.right.down.left.magnifyingglass", "bluetooth", "carplay", "chevron.3.up.perspective", "clock.filled.and.widget.filled", "ethernet", "eye.tracking", "figure.run.motion", "ipad.top.button.arrow.down", "iphone.action.button.arrow.right", "iphone.badge.dot.radiowaves.up.forward", "iphone.side.button.arrow.left", "keyboard.badge.waveform.fill", "key.dots.fill", "lock.and.ring.2", "lock.square.dotted", "nearby.interactions", "network.connected.to.line.below", "pencil.and.sparkles", "person.badge.waveform.fill", "ring.radiowaves.right", "satellite.fill", "sensorkit", "siri", "speaker.eye.fill", "voice.control", "waveform.arrow.triangle.branch.right", "waveform.bubble.fill"]
-let multicolorIcons = ["app.grid.3x3", "siri"]
+let multicolorIcons = ["app.grid.3x3", "faceid", "siri", "touchid"]
 
 // MARK: - Settings Layout
 
@@ -185,7 +185,7 @@ let multicolorIcons = ["app.grid.3x3", "siri"]
 
 // MARK: Security Settings
 @MainActor let securitySettings: [SettingsItem] = [
-    SettingsItem(type: .biometricPasscode, title: "\(UIDevice.PearlIDCapability ? "Face" : "Touch") ID & Passcode", icon: UIDevice.PearlIDCapability ? "faceid" : "lock.fill", color: UIDevice.PearlIDCapability ? .green : .red, destination: AnyView(BiometricPasscodeView())),
+    SettingsItem(type: .biometricPasscode, title: "\(UIDevice.PearlIDCapability ? "Face" : "Touch") ID & Passcode", icon: UIDevice.PearlIDCapability ? "faceid" : "touchid", color: UIDevice.PearlIDCapability ? .green : .white, destination: AnyView(BiometricPasscodeView())),
     SettingsItem(type: .emergencySOS, title: "Emergency SOS", icon: "sos", color: .red, destination: AnyView(EmergencyView())),
     SettingsItem(type: .privacySecurity, title: "Privacy & Security", icon: "hand.raised.fill", color: .blue, destination: AnyView(PrivacySecurityView()))
 ]
