@@ -9,18 +9,10 @@ import SwiftUI
 
 struct LegalRegulatoryView: View {
     var body: some View {
-        CustomList(title: "Legal & Regulatory", topPadding: true) {
-            Section(UIDevice().model) {
-                NavigationLink("Legal Notices") {}
-                NavigationLink("License") {}
-                NavigationLink("Warranty") {}
-                NavigationLink("RF Exposure") {}
-            }
-            
-            Section("Regulatory Certification") {
-                Text(String())
-            }
-        }
+        CustomViewController(path: "/System/Library/PreferenceBundles/LegalAndRegulatorySettings.bundle/LegalAndRegulatorySettings", controller: "_TtC26LegalAndRegulatorySettings30LegalAndRegulatorySettingsRoot")
+            .ignoresSafeArea()
+            .navigationTitle("LEGAL_AND_REGULATORY_TITLE".localize(table: "General"))
+            .navigationBarTitleDisplayMode(.inline)
     }
 }
 

@@ -115,15 +115,19 @@ struct ReleaseNotesViewController: UIViewControllerRepresentable {
     }
 }
 
-// MARK: DisplayAndBrightnessSettings DBSLargeTextSliderListController for text size slider
-/// Missing permissions for (CFPrefsManagedSource/kCFPreferencesCurrentUser) user-preference-read/file-read-data sandbox access
-struct TextSliderViewController: UIViewControllerRepresentable {
+/// A UIViewControllerRepresentable method to load view controllers directly.
+///
+/// - Parameter path: The path of the framework.
+/// - Parameter controller: The string name of the class.
+struct CustomViewController: UIViewControllerRepresentable {
+    let path: String
+    let controller: String
+    
     func makeUIViewController(context: Context) -> UIViewController {
-        let path = "/System/Library/PrivateFrameworks/Settings/DisplayAndBrightnessSettings.framework/DisplayAndBrightnessSettings"
         let handle = dlopen(path, RTLD_LAZY)
         defer { dlclose(handle) }
         
-        let controller = NSClassFromString("DBSLargeTextSliderListController") as! UIViewControllerType.Type
+        let controller = NSClassFromString(controller) as! UIViewControllerType.Type
         let instance = controller.init()
         
         return instance
