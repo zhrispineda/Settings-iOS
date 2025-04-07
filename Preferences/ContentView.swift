@@ -129,7 +129,7 @@ struct ContentView: View {
                                     .interactiveDismissDisabled()
                             }
                         }
-                        .searchable(text: $searchText, isPresented: $searchFocused, placement: .navigationBarDrawer)
+                        .searchable(text: $searchText, isPresented: $searchFocused, placement: .navigationBarDrawer(displayMode: .automatic))
                         .overlay {
                             if searchFocused {
                                 GeometryReader { geo in
@@ -247,7 +247,7 @@ struct ContentView: View {
                             route.destination()
                         }
                         .navigationTitle("Settings")
-                        .searchable(text: $searchText, isPresented: $searchFocused)
+                        .searchable(text: $searchText, isPresented: $searchFocused, placement: .navigationBarDrawer(displayMode: .automatic))
                         .overlay {
                             if searchFocused {
                                 GeometryReader { geo in

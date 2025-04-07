@@ -111,7 +111,7 @@ struct DisplayBrightnessView: View {
             
             // MARK: Text
             Section {
-                NavigationLink("TEXT_SIZE".localize(table: table), destination: LargerTextView(textOnly: true))
+                NavigationLink("TEXT_SIZE".localize(table: table), destination: TextSizeView())
                 Toggle("BOLD_TEXT".localize(table: table), isOn: $boldTextEnabled)
             }
             
