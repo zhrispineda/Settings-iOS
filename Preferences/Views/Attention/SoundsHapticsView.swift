@@ -20,7 +20,7 @@ struct SoundsHapticsView: View {
     let table = "Sounds"
     
     var body: some View {
-        CustomList(title: UIDevice.iPhone ? "SOUND_SWITCHES_HEADER".localize(table: table) : "Sounds".localize(table: table), topPadding: true) {
+        CustomList(title: UIDevice.iPhone ? "SOUNDS_AND_HAPTICS".localize(table: table) : "Sounds".localize(table: table), topPadding: true) {
             Section {
                 Toggle(isOn: $silentModeEnabled.animation()) {
                     Label(
