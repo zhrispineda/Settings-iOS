@@ -45,7 +45,7 @@ struct AccessibilityView: View {
                 }
                 // Display & Text Size
                 SettingsLink(color: .blue, icon: "textformat.size", id: "DISPLAY_AND_TEXT".localize(table: titleTable)) {
-                    DisplayTextSizeView()
+                    BundleControllerView("AccessibilitySettings", controller: "AXDisplayController", title: "DISPLAY_AND_TEXT", table: "Accessibility")
                 }
                 // Motion
                 SettingsLink(color: .green, icon: "circle.dotted.and.circle", id: "MOTION_TITLE".localize(table: titleTable)) {

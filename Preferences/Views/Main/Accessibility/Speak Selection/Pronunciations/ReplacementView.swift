@@ -38,6 +38,7 @@ struct ReplacementView: View {
                             .fontWeight(.ultraLight)
                     }
                     .buttonStyle(.plain)
+                    .foregroundStyle(.accent)
                     .disabled(phraseText.isEmpty)
                 }
             } footer: {

@@ -119,7 +119,7 @@ struct GeneralView: View {
             if !UIDevice.IsSimulator {
                 Section {
                     SettingsLink(color: .gray, icon: "checkmark.seal.text.page.fill", id: "LEGAL_AND_REGULATORY_TITLE".localize(table: table)) {
-                        LegalRegulatoryView()
+                        BundleControllerView("LegalAndRegulatorySettings", controller: "_TtC26LegalAndRegulatorySettings30LegalAndRegulatorySettingsRoot", title: "LEGAL_AND_REGULATORY_TITLE", table: "General")
                     }
                 }
             }
