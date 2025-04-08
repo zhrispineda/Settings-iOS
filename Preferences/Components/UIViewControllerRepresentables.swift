@@ -123,6 +123,11 @@ struct CustomViewController: UIViewControllerRepresentable {
     let path: String
     let controller: String
     
+    init(_ path: String, controller: String) {
+        self.path = path
+        self.controller = controller
+    }
+    
     func makeUIViewController(context: Context) -> UIViewController {
         let handle = dlopen(path, RTLD_LAZY)
         defer { dlclose(handle) }

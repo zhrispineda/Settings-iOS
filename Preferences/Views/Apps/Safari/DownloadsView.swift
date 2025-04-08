@@ -2,7 +2,7 @@
 //  DownloadsView.swift
 //  Preferences
 //
-//  Settings > Safari > Downloads
+//  Settings > Apps > Safari > Downloads
 //
 
 import SwiftUI
@@ -22,7 +22,7 @@ struct DownloadsView: View {
                                 .foregroundStyle(.secondary)
                                 .font(.footnote)
                         }
-                        .tint(Color["Label"])
+                        .foregroundStyle(.text)
                         Spacer()
                         Image(systemName: "checkmark")
                     }
@@ -37,7 +37,7 @@ struct DownloadsView: View {
                         Text("Other...")
                     }
                 }
-                .tint(Color["Label"])
+                .foregroundStyle(.primary)
             } header: {
                 Text("Store Downloaded Files On:")
             } footer: {

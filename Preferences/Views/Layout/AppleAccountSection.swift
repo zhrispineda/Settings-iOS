@@ -19,17 +19,19 @@ struct AppleAccountSection: View {
                 Text("Apple Account")
                     .bold()
                     .font(.title3)
-                    .foregroundStyle(Color["Label"])
                 Text("Sign in to access your iCloud data, the App Store, Apple services, and more.")
                     .foregroundStyle(.secondary)
                     .font(.footnote)
             }
             .padding(.leading, 0)
         }
-        .foregroundStyle(Color["Label"])
     }
 }
 
 #Preview {
-    AppleAccountSection()
+    NavigationStack {
+        List {
+            AppleAccountSection()
+        }
+    }
 }

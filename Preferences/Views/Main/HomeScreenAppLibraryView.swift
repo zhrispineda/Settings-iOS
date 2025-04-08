@@ -24,7 +24,6 @@ struct HomeScreenAppLibraryView: View {
                     } label: {
                         HStack {
                             Text(option.localize(table: table))
-                                .foregroundStyle(Color["Label"])
                             Spacer()
                             if option.localize(table: table) == selected {
                                 Image(systemName: "checkmark")
@@ -32,6 +31,7 @@ struct HomeScreenAppLibraryView: View {
                             }
                         }
                     }
+                    .foregroundStyle(.primary)
                 }
             } header: {
                 Text("Newly Downloaded Apps", tableName: table)

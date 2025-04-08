@@ -26,7 +26,7 @@ struct ContactsView: View {
                 Button {} label: {
                     CustomNavigationLink("Share Name and Photo".localize(table: table), status: "NAME_AND_PHOTO_SHARING_OFF".localize(table: table), destination: EmptyView())
                 }
-                .foregroundStyle(Color["Label"])
+                .foregroundStyle(.primary)
             } footer: {
                 Text("NAME_AND_PHOTO_SHARING_NOT_SHARING_FOOTER", tableName: table)
             }
@@ -42,7 +42,7 @@ struct ContactsView: View {
                 Button {} label: {
                     NavigationLink("My Info".localize(table: table)) {}
                 }
-                .foregroundStyle(Color["Label"])
+                .foregroundStyle(.primary)
             }
             
             Section {

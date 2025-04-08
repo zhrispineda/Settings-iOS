@@ -61,8 +61,8 @@ struct ScreenTimeView: View {
                         showingAppWebsiteActivitySheet.toggle()
                     } label: {
                         SettingsLink(color: Color.cyan, icon: "chart.bar.xaxis", lightOnly: true, id: "AppAndWebsiteActivitySpecifierName".localize(table: table), subtitle: "AppAndWebsiteActivitySpecifierSubtitleText".localize(table: table)) {}
-                            .foregroundStyle(Color["Label"])
                     }
+                    .foregroundStyle(.primary)
                     .sheet(isPresented: $showingAppWebsiteActivitySheet) {
                         AppWebsiteActivitySheetView(appWebsiteActivityEnabled: $appWebsiteActivityEnabled)
                             .frame(width: 400, height: 730)

@@ -55,8 +55,8 @@ struct LanguageRegionView: View {
                             .imageScale(.small)
                             .fontWeight(.medium)
                     }
-                    .foregroundStyle(Color["Label"])
                 }
+                .foregroundStyle(.primary)
                 CustomNavigationLink("CALENDAR".localize(table: table), status: "Gregorian", destination: CalendarTypeView())
                 CustomNavigationLink("TEMPERATURE_UNIT".localize(table: table), status: "°F".localize(table: table), destination: SelectOptionList(title: "TEMPERATURE_UNIT", options: ["Celsius (°C)", "Fahrenheit (°F)"], selected: "Fahrenheit (°F)", table: table))
                 CustomNavigationLink("MEASUREMENT_SYSTEM".localize(table: table), status: "MEASUREMENT_US".localize(table: table), destination: SelectOptionList(title: "MEASUREMENT_SYSTEM", options: ["MEASUREMENT_METRIC", "MEASUREMENT_US", "MEASUREMENT_UK"], selected: "MEASUREMENT_US", table: table))

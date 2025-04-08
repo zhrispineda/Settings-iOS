@@ -22,8 +22,9 @@ struct SettingsLinkSection: View {
                         SettingsLink(color: setting.color, icon: setting.icon, id: setting.id) {
                             setting.destination
                         }
-                        .foregroundStyle(Color["Label"])
                     }
+                    .accessibilityLabel(setting.id)
+                    .foregroundStyle(.primary)
                     .sheet(isPresented: $showingSignInSheet) {
                         NavigationStack {
                             SelectSignInOptionView()

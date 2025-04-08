@@ -9,8 +9,9 @@ import os
 /// A helper class that accesses MobileGestalt, an internal system library, to read key values for device information.
 class MGHelper {
     /// Returns the value of the given key with MobileGestalt.
+    /// 
     /// - Parameter key: The key as a String
-    /// - Returns: The value of the key; will return the value as a String otherwise returns nil
+    /// - Returns: The value of the key as either a String value or nil
     static func read(key: String) -> String? {
         typealias MGKey = (@convention(c) (CFString) -> CFTypeRef?)
         var mgKey: MGKey?
@@ -19,7 +20,6 @@ class MGHelper {
         
         // Initialize libMobileGestalt.dylib
         guard let gestalt = dlopen("/usr/lib/libMobileGestalt.dylib", RTLD_LAZY) else {
-            logger.error("Could not load libMobileGestalt.dylib")
             return nil
         }
         

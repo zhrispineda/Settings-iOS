@@ -19,7 +19,7 @@ struct BundleControllerView: View {
     }
     
     var body: some View {
-        CustomViewController(path: "/System/Library/PreferenceBundles/\(bundle).bundle/\(bundle)", controller: controller)
+        CustomViewController("/System/Library/PreferenceBundles/\(bundle).bundle/\(bundle)", controller: controller)
             .ignoresSafeArea()
             .navigationTitle(title.localize(table: table))
             .navigationBarTitleDisplayMode(.inline)

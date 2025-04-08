@@ -64,7 +64,7 @@ struct ReplacementView: View {
                         } label: {
                             HStack {
                                 SettingsLabel(icon: "apple\(option)", id: option)
-                                    .foregroundStyle(Color["Label"])
+                                    .foregroundStyle(.primary)
                                 Spacer()
                                 Image(systemName: "\(selected.contains(option) ? "checkmark" : "")")
                             }

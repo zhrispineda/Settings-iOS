@@ -199,7 +199,6 @@
 		83585B732B8847A70046A0C3 /* WalkingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83585B722B8847A70046A0C3 /* WalkingView.swift */; };
 		83585B752B8848110046A0C3 /* TransitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83585B742B8848110046A0C3 /* TransitView.swift */; };
 		83585B772B8848430046A0C3 /* CyclingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83585B762B8848430046A0C3 /* CyclingView.swift */; };
-		83585FC82C435A7B00B11C91 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83585FC72C435A7B00B11C91 /* ColorExtensions.swift */; };
 		83585FCA2C435B6700B11C91 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83585FC92C435B6700B11C91 /* StringExtensions.swift */; };
 		835BF1312CC19A2300F30DA1 /* AirPlayAndHandoffSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 835BF1302CC19A2300F30DA1 /* AirPlayAndHandoffSettings.xcstrings */; };
 		835BF1332CC19DDF00F30DA1 /* PictureInPictureSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 835BF1322CC19DDF00F30DA1 /* PictureInPictureSettings.xcstrings */; };
@@ -707,7 +706,6 @@
 		83585B722B8847A70046A0C3 /* WalkingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkingView.swift; sourceTree = "<group>"; };
 		83585B742B8848110046A0C3 /* TransitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitView.swift; sourceTree = "<group>"; };
 		83585B762B8848430046A0C3 /* CyclingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyclingView.swift; sourceTree = "<group>"; };
-		83585FC72C435A7B00B11C91 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		83585FC92C435B6700B11C91 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		835BF1302CC19A2300F30DA1 /* AirPlayAndHandoffSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AirPlayAndHandoffSettings.xcstrings; sourceTree = "<group>"; };
 		835BF1322CC19DDF00F30DA1 /* PictureInPictureSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = PictureInPictureSettings.xcstrings; sourceTree = "<group>"; };
@@ -1456,7 +1454,6 @@
 		83585FC62C435A4600B11C91 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				83585FC72C435A7B00B11C91 /* ColorExtensions.swift */,
 				83585FC92C435B6700B11C91 /* StringExtensions.swift */,
 				830989392C44AA9C00535A8F /* UIDeviceExtensions.swift */,
 				8372142C2D91C5E30027C51D /* UIWindowExtensions.swift */,
@@ -2725,7 +2722,6 @@
 				83F3F6A52B7D16F6003CC310 /* GameControllerView.swift in Sources */,
 				830DA8022B9BE17B001EE76F /* ParentGuardianSignInView.swift in Sources */,
 				83D2687A2BD7303800A86DA9 /* DisplayBrightnessView.swift in Sources */,
-				83585FC82C435A7B00B11C91 /* ColorExtensions.swift in Sources */,
 				837D1E282B96BF9B00EDA7ED /* SelectSignInOptionView.swift in Sources */,
 				83898FD12B8A9F680020C7BB /* DataAccessDevicesView.swift in Sources */,
 				8393425E2C18CE5B00B48679 /* BatteryHealthChargingView.swift in Sources */,

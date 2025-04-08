@@ -47,7 +47,7 @@ struct NotificationsView: View {
                                     .foregroundStyle(notificationStyle == .count ? .blue : .clear)
                                 Text("NOTIFICATION_LIST_DISPLAY_STYLE_COUNT", tableName: table)
                                     .font(.caption)
-                                    .foregroundStyle(notificationStyle == .count ? Color(UIColor.systemBackground) : Color["Label"])
+                                    .foregroundStyle(notificationStyle == .count ? Color(UIColor.systemBackground) : .primary)
                             }
                         }
                     }
@@ -73,7 +73,7 @@ struct NotificationsView: View {
                                     .foregroundStyle(notificationStyle == .stack ? .blue : .clear)
                                 Text("NOTIFICATION_LIST_DISPLAY_STYLE_STACK", tableName: table)
                                     .font(.caption)
-                                    .foregroundStyle(notificationStyle == .stack ? Color(UIColor.systemBackground) : Color["Label"])
+                                    .foregroundStyle(notificationStyle == .stack ? Color(UIColor.systemBackground) : .primary)
                             }
                         }
                     }
@@ -99,7 +99,7 @@ struct NotificationsView: View {
                                     .foregroundStyle(notificationStyle == .list ? .blue : .clear)
                                 Text("NOTIFICATION_LIST_DISPLAY_STYLE_LIST", tableName: table)
                                     .font(.caption)
-                                    .foregroundStyle(notificationStyle == .list ? Color(UIColor.systemBackground) : Color["Label"])
+                                    .foregroundStyle(notificationStyle == .list ? Color(UIColor.systemBackground) : .primary)
                             }
                         }
                     }

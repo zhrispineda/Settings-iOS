@@ -56,6 +56,7 @@ struct ContentView: View {
                             } label: {
                                 AppleAccountSection()
                             }
+                            .foregroundStyle(.primary)
                             
                             if siriEnabled && UIDevice.IntelligenceCapability {
                                 // MARK: TipKit Section
@@ -87,8 +88,8 @@ struct ContentView: View {
                                                 stateManager.selection = setting.type
                                             } label: {
                                                 SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Wi-Fi" ? (wifiEnabled && !airplaneModeEnabled ? "Not Connected" : "Off") : setting.id == "Bluetooth" ? (bluetoothEnabled ? "On" : "Off") : "")
-                                                    .foregroundStyle(stateManager.selection == setting.type ? (UIDevice.IsSimulator ? Color.white : Color["Label"]) : Color["Label"])
                                             }
+                                            .foregroundColor(.primary)
                                             .listRowBackground(stateManager.selection == setting.type ? (UIDevice.IsSimulator ? Color.blue : Color("Selected")) : nil)
                                         }
                                     }
@@ -174,8 +175,8 @@ struct ContentView: View {
                                     NavigationLink{} label: {
                                         AppleAccountSection()
                                     }
-                                    .foregroundStyle(Color["Label"])
                                 }
+                                .foregroundStyle(.primary)
                                 .sheet(isPresented: $showingSignInSheet) {
                                     NavigationStack {
                                         SelectSignInOptionView()

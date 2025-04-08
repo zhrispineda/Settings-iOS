@@ -2,7 +2,7 @@
 //  DownloadedLanguagesView.swift
 //  Preferences
 //
-//  Settings > Translate > Downloaded Languages
+//  Settings > Apps > Translate > Downloaded Languages
 //
 
 import SwiftUI
@@ -53,7 +53,7 @@ struct DownloadedLanguagesView: View {
                     } label: {
                         HStack {
                             Text(language)
-                                .foregroundStyle(Color["Label"])
+                                .foregroundStyle(.text)
                             Spacer()
                             Image(systemName: "arrow.down.circle")
                                 .imageScale(.large)

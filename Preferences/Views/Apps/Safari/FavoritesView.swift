@@ -2,7 +2,7 @@
 //  FavoritesView.swift
 //  Preferences
 //
-//  Settings > Safari > Favorites
+//  Settings > Apps > Safari > Favorites
 //
 
 import SwiftUI
@@ -22,7 +22,7 @@ struct FavoritesView: View {
                             .fontWeight(.light)
                             .foregroundStyle(.blue)
                         Text("Favorites")
-                            .tint(Color["Label"])
+                            .foregroundStyle(.text)
                         Spacer()
                         Image(systemName: "checkmark")
                     }

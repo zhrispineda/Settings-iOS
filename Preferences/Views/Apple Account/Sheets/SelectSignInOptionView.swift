@@ -38,6 +38,7 @@ struct SelectSignInOptionView: View {
                 } label: {
                     SignInMethodButton(image: "ProximitySymbol-iPhone-iPad", title: "SIGN_IN_OPTION_ANOTHER_DEVICE_TITLE", subtitle: "SIGN_IN_OPTION_ANOTHER_DEVICE_SUBTITLE", table: table)
                 }
+                .foregroundStyle(.primary)
                 .listRowBackground(Color(colorScheme == .light ? UIColor.systemGray6 : UIColor.secondarySystemGroupedBackground))
             }
             
@@ -191,7 +192,6 @@ struct SignInMethodButton: View {
                     .foregroundStyle(.tertiary)
             }
         }
-        .foregroundStyle(Color["Label"])
     }
 }
 

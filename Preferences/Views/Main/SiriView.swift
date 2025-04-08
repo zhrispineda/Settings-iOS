@@ -82,13 +82,13 @@ struct SiriView: View {
                 if !UIDevice.IsSimulator {
                     CustomNavigationLink("ACTIVATION_COMPACT".localize(table: table), status: "ACTIVATION_OFF".localize(table: table), destination: EmptyView())
                 }
-                if siriEnabled {
+                if !siriEnabled {
                     if !UIDevice.IsSimulator {
                         Toggle("ASSISTANT_LOCK_SCREEN_ACCESS".localize(table: table), isOn: $allowSiriWhenLockedEnabled)
                     }
                     CustomNavigationLink("VOICE".localize(table: table), status: "\("REGION_en-US".localize(table: table)) (Voice 4)", destination: SiriVoiceView())
                     NavigationLink("VOICE_FEEDBACK".localize(table: table), destination: SiriResponsesView())
-                    if !UIDevice.IsSimulator {
+                    if UIDevice.IsSimulator {
                         NavigationLink("ANNOUNCE_CALLS_TITLE".localize(table: table), destination: EmptyView())
                         NavigationLink("ANNOUNCE_MESSAGES_TITLE".localize(table: table), destination: EmptyView())
                     }
@@ -98,7 +98,6 @@ struct SiriView: View {
                     } label: {
                         HStack {
                             Text("MyInfo", tableName: table)
-                                .foregroundStyle(Color["Label"])
                             Spacer()
                             Text(myInfoContact.isEmpty ? "None".localize(table: table) : myInfoContact)
                                 .foregroundStyle(Color(UIColor.secondaryLabel))
@@ -106,6 +105,7 @@ struct SiriView: View {
                                 .foregroundStyle(Color(UIColor.tertiaryLabel))
                         }
                     }
+                    .foregroundStyle(.primary)
                 }
                 NavigationLink("ASSISTANT_HISTORY_LABEL".localize(table: table)) {}
 //                NavigationLink("MESSAGE_TITLE".localize(table: table), destination: {

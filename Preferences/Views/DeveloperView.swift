@@ -64,7 +64,7 @@ struct DeveloperView: View {
                         } label: {
                             LabeledContent("VIEW".localize(table: table), value: "Default")
                         }
-                        .foregroundStyle(Color["Label"])
+                        .foregroundStyle(.primary)
                         .sheet(isPresented: $showingDisplayZoomSheet) {
                             NavigationStack {
                                 DisplayZoomView(options: UIDevice.LargerSize ? ["Larger Text", "Default", "More Space"] : ["Default", "More Space"])

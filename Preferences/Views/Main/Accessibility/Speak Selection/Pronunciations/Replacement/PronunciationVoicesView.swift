@@ -21,13 +21,13 @@ struct PronunciationVoicesView: View {
                 } label: {
                     HStack {
                         Text("ALL_LANGUAGES", tableName: table)
-                            .foregroundStyle(Color["Label"])
                         Spacer()
                         if selected.contains("ALL_LANGUAGES") {
                             Image(systemName: "checkmark")
                         }
                     }
                 }
+                .foregroundStyle(.primary)
             }
             
             Section {
@@ -47,13 +47,13 @@ struct PronunciationVoicesView: View {
                     } label: {
                         HStack {
                             Text(option)
-                                .foregroundStyle(Color["Label"])
                             Spacer()
                             if selected.contains(option) {
                                 Image(systemName: "checkmark")
                             }
                         }
                     }
+                    .foregroundStyle(.primary)
                 }
             }
         }

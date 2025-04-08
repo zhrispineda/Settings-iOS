@@ -49,14 +49,14 @@ struct DowntimeView: View {
                     if selected == "DeviceDowntimeEveryDaySpecifierName" {
                         Button {} label: {
                             CustomNavigationLink("AllowanceTimeSpecifierName".localize(table: table), status: "10:00 PM–7:00 AM", destination: EmptyView())
-                                .foregroundStyle(Color["Label"])
                         }
+                        .foregroundStyle(.primary)
                     } else {
                         ForEach(days, id: \.self) { day in
                             Button {} label: {
                                 CustomNavigationLink(day, status: "10:00 PM–7:00 AM", destination: EmptyView())
-                                    .foregroundStyle(Color["Label"])
                             }
+                            .foregroundStyle(.primary)
                         }
                     }
                 } footer: {

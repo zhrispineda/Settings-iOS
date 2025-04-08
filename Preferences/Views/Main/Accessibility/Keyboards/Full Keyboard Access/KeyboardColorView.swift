@@ -24,22 +24,21 @@ struct KeyboardColorView: View {
                             if color == "White" {
                                 Circle()
                                     .fill(.white)
-                                    .stroke(Color["Label"])
+                                    .stroke(.text)
                                     .scaledToFit()
                                     .frame(height: 12)
                             } else {
                                 Image(systemName: "circle.fill")
-                                    .foregroundStyle(Color[color.localize(table: table)])
                                     .font(.caption)
                             }
                             Text(color.localize(table: table))
-                                .foregroundStyle(Color["Label"])
                             Spacer()
                             if selected == color {
                                 Image(systemName: "checkmark")
                             }
                         }
                     }
+                    .foregroundStyle(.primary)
                 }
             }
         }

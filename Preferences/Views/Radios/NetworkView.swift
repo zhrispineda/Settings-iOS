@@ -72,13 +72,12 @@ struct NetworkView: View {
                                 Image(systemName: "checkmark")
                                     .foregroundStyle(.clear)
                                 Text("kWFLocOtherNetworkTitle", tableName: table)
-                                    .foregroundStyle(Color["Label"])
                                     .sheet(isPresented: $showingOtherNetwork) {
                                         OtherNetworkView()
-                                            .foregroundStyle(Color["Label"])
                                     }
                             }
                         }
+                        .foregroundStyle(.primary)
                     } header: {
                         HStack {
                             Text("kWFLocChooseNetworkSectionSingleTitle", tableName: table)

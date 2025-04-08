@@ -51,7 +51,7 @@ struct StorageView: View {
                             Color(UIColor.systemGroupedBackground)
                             Text(getAvailableStorage() ?? String())
                                 .font(.subheadline)
-                                .foregroundStyle(Color["Label"])
+                                .foregroundStyle(.text)
                                 .padding(.leading, 70)
                             plotArea
                         }

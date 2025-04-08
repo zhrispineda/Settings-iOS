@@ -44,8 +44,8 @@ struct SafetyCheckView: View {
                                 .bold()
                         }
                     }
-                    .foregroundStyle(Color["Label"])
                 }
+                .foregroundStyle(.primary)
             }
             
             Section {
@@ -74,8 +74,8 @@ struct SafetyCheckView: View {
                                 .bold()
                         }
                     }
-                    .foregroundStyle(Color["Label"])
                 }
+                .foregroundStyle(.primary)
             }
         }
         .alert("HSA2_NOT_REPAIRED_TITLE".localize(table: table), isPresented: $showingAlert) {

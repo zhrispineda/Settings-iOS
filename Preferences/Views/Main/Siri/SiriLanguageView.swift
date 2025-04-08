@@ -19,14 +19,14 @@ struct SiriLanguageView: View {
                 if lang == "English (India)" {
                     NavigationLink(destination: EnglishIndiaView()) {
                         Label(lang, systemImage: selected == lang ? "checkmark" : "")
-                            .tint(Color["Label"])
+                            .tint(.primary)
                     }
                 } else {
                     Button {
                         selected = lang
                     } label: {
                         Label(lang, systemImage: selected == lang ? "checkmark" : "")
-                            .tint(Color["Label"])
+                            .tint(.primary)
                             .lineLimit(1)
                     }
                 }

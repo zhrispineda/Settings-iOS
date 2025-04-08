@@ -23,16 +23,16 @@ struct HighlightColorView: View {
                     } label: {
                         HStack {
                             Image(systemName: "circle.fill")
-                                .foregroundStyle(Color[color.localize(table: table)])
+                                .foregroundStyle(.primary)
                                 .font(.caption)
                             Text(color.localize(table: table))
-                                .foregroundStyle(Color["Label"])
                             Spacer()
                             if selected == color {
                                 Image(systemName: "checkmark")
                             }
                         }
                     }
+                    .foregroundStyle(.primary)
                 }
             }
         }

@@ -2,7 +2,7 @@
 //  AutoFillView.swift
 //  Preferences
 //
-//  Settings > Safari > AutoFill
+//  Settings > Apps > Safari > AutoFill
 //
 
 import SwiftUI
@@ -30,8 +30,8 @@ struct AutoFillView: View {
                         Image(systemName: "chevron.right")
                             .foregroundStyle(.secondary)
                     }
-                    .tint(Color["Label"])
                 }
+                .foregroundStyle(.primary)
             }
             
             Section {

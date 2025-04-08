@@ -43,7 +43,6 @@ struct RemindersView: View {
                     } label: {
                         HStack {
                             Text("Time", tableName: table)
-                                .foregroundStyle(Color["Label"])
                             Spacer()
                             Text(selectedTime, style: .time)
                                 .onAppear {
@@ -58,6 +57,7 @@ struct RemindersView: View {
                         }
                     }
                     .containerShape(Rectangle())
+                    .foregroundStyle(.primary)
                 }
                 if showingTimePicker {
                     DatePicker(

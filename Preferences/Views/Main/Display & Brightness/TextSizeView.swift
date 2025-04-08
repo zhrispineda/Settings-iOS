@@ -26,7 +26,7 @@ struct TextSizeView: View {
                 .overlay {
                     VStack {
                         Spacer(minLength: UIDevice.iPhone ? geometry.size.height/1.2 : geometry.size.height/2.5)
-                        CustomViewController(path: "/System/Library/PrivateFrameworks/Settings/DisplayAndBrightnessSettings.framework/DisplayAndBrightnessSettings", controller: "DBSLargeTextSliderListController")
+                        CustomViewController("/System/Library/PrivateFrameworks/Settings/DisplayAndBrightnessSettings.framework/DisplayAndBrightnessSettings", controller: "DBSLargeTextSliderListController")
                     }
                 }
             }

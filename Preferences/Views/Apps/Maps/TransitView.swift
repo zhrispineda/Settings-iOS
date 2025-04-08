@@ -26,7 +26,7 @@ struct TransitView: View {
                     } label: {
                         HStack {
                             Text(option.localize(table: table))
-                                .foregroundStyle(Color["Label"])
+                                .foregroundStyle(.text)
                             Spacer()
                             if selectedOptions.contains(option) {
                                 Image(systemName: "checkmark").fontWeight(.semibold)

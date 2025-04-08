@@ -23,7 +23,7 @@ struct MovementToleranceView: View {
             Section {
                 Circle()
                     .fill(.tertiary)
-                    .stroke(Color["Label"], lineWidth: 1)
+                    .stroke(.primary, lineWidth: 1)
                     .scaledToFit()
                     .frame(maxWidth: .infinity, maxHeight: tolerance)
             }

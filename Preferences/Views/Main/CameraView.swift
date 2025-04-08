@@ -75,7 +75,7 @@ struct CameraView: View {
                     } label: {
                         CustomNavigationLink("SYSTEM_STYLES_TITLE".localize(table: stylesTable), status: "SEMANTIC_STYLES_LABEL_STANDARD".localize(table: kitTable), destination: EmptyView())
                     }
-                    .foregroundStyle(Color["Label"])
+                    .foregroundStyle(.primary)
                     .fullScreenCover(isPresented: $showingPhotographicStylesView) {
                         NavigationStack {
                             PhotographicStylesView()

@@ -91,8 +91,8 @@ struct KeyboardCommandsView: View {
                         showingKeyboardShortcutAlert.toggle()
                     } label: {
                         HText(shortcut.name.localize(table: table), status: shortcut.shortcut)
-                            .foregroundStyle(Color["Label"])
                     }
+                    .foregroundStyle(.primary)
                     .alert("KEYBOARD_SHORTCUT".localize(table: accTable), isPresented: $showingKeyboardShortcutAlert) {
                         Button("DONE".localize(table: table)) {}.disabled(true)
                         Button("CANCEL".localize(table: table), role: .cancel) {}
@@ -110,8 +110,8 @@ struct KeyboardCommandsView: View {
                         showingKeyboardShortcutAlert.toggle()
                     } label: {
                         HText(shortcut.name.localize(table: table), status: shortcut.shortcut)
-                            .foregroundStyle(Color["Label"])
                     }
+                    .foregroundStyle(.primary)
                     .alert("KEYBOARD_SHORTCUT".localize(table: accTable), isPresented: $showingKeyboardShortcutAlert) {
                         Button("DONE".localize(table: table)) {}.disabled(true)
                         Button("CANCEL".localize(table: table), role: .cancel) {}
@@ -129,8 +129,8 @@ struct KeyboardCommandsView: View {
                         showingKeyboardShortcutAlert.toggle()
                     } label: {
                         HText(shortcut.name.localize(table: table), status: shortcut.shortcut)
-                            .foregroundStyle(Color["Label"])
                     }
+                    .foregroundStyle(.primary)
                     .alert("KEYBOARD_SHORTCUT".localize(table: accTable), isPresented: $showingKeyboardShortcutAlert) {
                         Button("DONE".localize(table: table)) {}.disabled(true)
                         Button("CANCEL".localize(table: table), role: .cancel) {}
@@ -148,8 +148,8 @@ struct KeyboardCommandsView: View {
                         showingKeyboardShortcutAlert.toggle()
                     } label: {
                         HText(shortcut.name.localize(table: table), status: shortcut.shortcut)
-                            .foregroundStyle(Color["Label"])
                     }
+                    .foregroundStyle(.primary)
                     .alert("KEYBOARD_SHORTCUT".localize(table: accTable), isPresented: $showingKeyboardShortcutAlert) {
                         Button("DONE".localize(table: table)) {}.disabled(true)
                         Button("CANCEL".localize(table: table), role: .cancel) {}
@@ -167,8 +167,8 @@ struct KeyboardCommandsView: View {
                         showingKeyboardShortcutAlert.toggle()
                     } label: {
                         HText(shortcut.name.localize(table: table), status: shortcut.shortcut)
-                            .foregroundStyle(Color["Label"])
                     }
+                    .foregroundStyle(.primary)
                     .alert("KEYBOARD_SHORTCUT".localize(table: accTable), isPresented: $showingKeyboardShortcutAlert) {
                         Button("DONE".localize(table: table)) {}.disabled(true)
                         Button("CANCEL".localize(table: table), role: .cancel) {}

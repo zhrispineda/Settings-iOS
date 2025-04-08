@@ -32,7 +32,7 @@ struct AppleAccountView: View {
             Section {
                 Button {} label: {
                     SettingsLink(icon: "iCloud", id: "ICLOUD_SERVICE_STORAGE_TITLE".localize(table: table), status: "Set Up") {}
-                        .foregroundStyle(Color["Label"])
+                        .foregroundStyle(Color(.label))
                 }
             }
             

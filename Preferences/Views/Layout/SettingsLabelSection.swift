@@ -22,8 +22,8 @@ struct SettingsLabelSection: View {
                         showingSignInSheet.toggle()
                     } label: {
                         SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id)
-                            .foregroundStyle(selection == setting.type ? (UIDevice.IsSimulator ? Color.white : Color["Label"]) : Color["Label"])
                     }
+                    .foregroundStyle(.primary)
                     .sheet(isPresented: $showingSignInSheet) {
                         NavigationStack {
                             SelectSignInOptionView()
@@ -36,9 +36,9 @@ struct SettingsLabelSection: View {
                         selection = setting.type
                     } label: {
                         SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id)
-                            .foregroundStyle(selection == setting.type ? (UIDevice.IsSimulator ? Color.white : Color["Label"]) : Color["Label"])
                     }
-                    .listRowBackground(selection == setting.type ? (UIDevice.IsSimulator ? Color.blue : Color("Selected")) : nil)
+                    .foregroundStyle(.primary)
+                    .listRowBackground(selection == setting.type ? (UIDevice.IsSimulator ? Color.blue : .selected) : nil)
                 }
             }
         }
