@@ -2,7 +2,7 @@
 //  SafariAdvancedView.swift
 //  Preferences
 //
-//  Settings > Safari > Advanced
+//  Settings > Apps > Safari > Advanced
 //
 
 import SwiftUI

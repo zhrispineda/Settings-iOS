@@ -111,7 +111,7 @@ struct DisplayBrightnessView: View {
             
             // MARK: Text
             Section {
-                NavigationLink("TEXT_SIZE".localize(table: table), destination: TextSizeView())
+                NavigationLink("TEXT_SIZE".localize(table: table), destination: BundleControllerView("/System/Library/PrivateFrameworks/Settings/DisplayAndBrightnessSettings.framework/DisplayAndBrightnessSettings", controller: "DBSLargeTextController", title: "TEXT_SIZE", table: table))
                 Toggle("BOLD_TEXT".localize(table: table), isOn: $boldTextEnabled)
             }
             
