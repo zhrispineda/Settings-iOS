@@ -1,0 +1,22 @@
+{
+  "images" : [
+    {
+      "filename" : "SeparateTabBarRectangular_Light_Normal@2x.png",
+      "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "SeparateTabBarRectangular_Dark_Normal@2x.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

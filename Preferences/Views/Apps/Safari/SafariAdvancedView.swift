@@ -46,7 +46,7 @@ struct SafariAdvancedView: View {
             }
             
             Section {
-                NavigationLink("Feature Flags", destination: FeatureFlagsView())
+                NavigationLink("Feature Flags", destination: BundleControllerView("MobileSafariSettings", controller: "SafariWebKitExperimentalFeaturesSettingsController", title: "WebKit Feature Flags"))
             }
         }
     }

@@ -90,7 +90,7 @@ struct ContentView: View {
                                                 SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Wi-Fi" ? (wifiEnabled && !airplaneModeEnabled ? "Not Connected" : "Off") : setting.id == "Bluetooth" ? (bluetoothEnabled ? "On" : "Off") : "")
                                             }
                                             .foregroundColor(.primary)
-                                            .listRowBackground(stateManager.selection == setting.type ? (UIDevice.IsSimulator ? Color.blue : Color("Selected")) : nil)
+                                            .listRowBackground(stateManager.selection == setting.type ? (UIDevice.IsSimulator ? Color.blue : .selected) : nil)
                                         }
                                     }
                                     if requiredCapabilities(capability: .vpn) {

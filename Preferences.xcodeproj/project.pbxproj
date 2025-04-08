@@ -391,7 +391,6 @@
 		83D241AD2D5CEC87002061F4 /* NotificationsSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83D241AC2D5CEC87002061F4 /* NotificationsSettings.xcstrings */; };
 		83D2687A2BD7303800A86DA9 /* DisplayBrightnessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D268792BD7303800A86DA9 /* DisplayBrightnessView.swift */; };
 		83D3085C2B8AC2FA002A9B7F /* SafariAdvancedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D3085B2B8AC2FA002A9B7F /* SafariAdvancedView.swift */; };
-		83D3085F2B8AC3D3002A9B7F /* FeatureFlagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D3085E2B8AC3D3002A9B7F /* FeatureFlagsView.swift */; };
 		83D308612B8ACC8C002A9B7F /* AdvancedTrackingFingerprintingProtectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D308602B8ACC8C002A9B7F /* AdvancedTrackingFingerprintingProtectionView.swift */; };
 		83D308632B8ACD22002A9B7F /* WebsiteDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D308622B8ACD22002A9B7F /* WebsiteDataView.swift */; };
 		83D308652B8ACF48002A9B7F /* SafariLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D308642B8ACF48002A9B7F /* SafariLocationView.swift */; };
@@ -902,7 +901,6 @@
 		83D241AC2D5CEC87002061F4 /* NotificationsSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = NotificationsSettings.xcstrings; sourceTree = "<group>"; };
 		83D268792BD7303800A86DA9 /* DisplayBrightnessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayBrightnessView.swift; sourceTree = "<group>"; };
 		83D3085B2B8AC2FA002A9B7F /* SafariAdvancedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariAdvancedView.swift; sourceTree = "<group>"; };
-		83D3085E2B8AC3D3002A9B7F /* FeatureFlagsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureFlagsView.swift; sourceTree = "<group>"; };
 		83D308602B8ACC8C002A9B7F /* AdvancedTrackingFingerprintingProtectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedTrackingFingerprintingProtectionView.swift; sourceTree = "<group>"; };
 		83D308622B8ACD22002A9B7F /* WebsiteDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsiteDataView.swift; sourceTree = "<group>"; };
 		83D308642B8ACF48002A9B7F /* SafariLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariLocationView.swift; sourceTree = "<group>"; };
@@ -1968,7 +1966,6 @@
 			children = (
 				83D308622B8ACD22002A9B7F /* WebsiteDataView.swift */,
 				83D308602B8ACC8C002A9B7F /* AdvancedTrackingFingerprintingProtectionView.swift */,
-				83D3085E2B8AC3D3002A9B7F /* FeatureFlagsView.swift */,
 			);
 			path = Advanced;
 			sourceTree = "<group>";
@@ -2676,7 +2673,6 @@
 				83AE01DB2D65628700724A34 /* SettingsLabelSection.swift in Sources */,
 				83F78A2D2B8EA3C900025062 /* AddFavoritePhraseView.swift in Sources */,
 				837B63002BD5FE8E0045B95C /* ControlCenterView.swift in Sources */,
-				83D3085F2B8AC3D3002A9B7F /* FeatureFlagsView.swift in Sources */,
 				832EF3982B8190430066A1BF /* DateFormatView.swift in Sources */,
 				837F1DC52B8AEC1E00665EAB /* HideAddressView.swift in Sources */,
 				8382739C2B7F21E4000F4228 /* AllowedAppsView.swift in Sources */,

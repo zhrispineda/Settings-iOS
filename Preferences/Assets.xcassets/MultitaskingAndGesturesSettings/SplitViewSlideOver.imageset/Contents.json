@@ -1,0 +1,18 @@
+{
+  "images" : [
+    {
+      "filename" : "SplitViewSlideOver160x120~ipad.png",
+      "idiom" : "ipad",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "SplitViewSlideOver160x120@2x~ipad.png",
+      "idiom" : "ipad",
+      "scale" : "2x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

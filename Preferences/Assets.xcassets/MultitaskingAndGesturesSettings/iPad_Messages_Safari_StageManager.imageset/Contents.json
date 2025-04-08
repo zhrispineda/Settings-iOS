@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "iPad_Messages_Safari_StageManager_Normal@2x.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
