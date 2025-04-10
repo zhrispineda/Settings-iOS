@@ -145,7 +145,7 @@ struct GeneralView: View {
         }
         .fullScreenCover(isPresented: $showingHomeButtonSheet) {
             NavigationStack {
-                HomeButtonViewController()
+                CustomViewController("/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework/GeneralSettingsUI", controller: "PSGHomeButtonCustomizeController")
                     .toolbar {
                         ToolbarItem(placement: .topBarTrailing) {
                             Button("Done") {

@@ -6,9 +6,8 @@
 import Foundation
 import os
 
-/// A helper class that accesses MobileGestalt, an internal system library, to read key values for device information.
 class MGHelper {
-    /// Returns the value of the given key with MobileGestalt.
+    /// Returns the value of the given key.
     /// 
     /// - Parameter key: The key as a String
     /// - Returns: The value of the key as either a String value or nil
@@ -38,10 +37,10 @@ class MGHelper {
         }
         
         // Obtain type returned
-        let typeId = CFGetTypeID(value)
+        let typeID = CFGetTypeID(value)
         
         // Based on data type, return as a casted String
-        switch typeId {
+        switch typeID {
         case CFBooleanGetTypeID():
             return CFBooleanGetValue((value as! CFBoolean)) ? "true" : "false"
         case CFNumberGetTypeID():
@@ -61,8 +60,7 @@ class MGHelper {
             return nil
         }
         
-        // If typeId is still nil, return nil
-        logger.error("Could not get type ID for key: \(key)")
+        logger.error("Could not get typeID for key: \(key)")
         return nil
     }
 }
