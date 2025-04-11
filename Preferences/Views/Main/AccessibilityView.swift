@@ -11,8 +11,9 @@ struct AccessibilityView: View {
     // Variables
     @AppStorage("SiriEnabled") private var siriEnabled = false
     @Environment(\.colorScheme) private var colorScheme
-    @State private var opacity: Double = 0
-    @State private var frameY: Double = 0
+    @State private var opacity: Double = 0.0
+    @State private var frameY: Double = 0.0
+    @State private var showingHelpSheet = false
     let table = "Accessibility"
     let titleTable = "AccessibilityTitles"
     let cameraTable = "Accessibility-D93"
@@ -22,7 +23,7 @@ struct AccessibilityView: View {
         CustomList(title: "Accessibility".localize(table: table)) {
             // MARK: Placard
             Section {
-                Placard(title: "PLACARD_TITLE".localize(table: table), color: .blue, icon: "accessibility", description: UIDevice.iPhone ? "\("PLACARD_SUBTITLE_IPHONE".localize(table: table)) [\("PLACARD_LEARN_MORE".localize(table: "Accessibility"))](https://support.apple.com/guide/iphone/get-started-with-accessibility-features-iph3e2e4367/ios)" : "\("PLACARD_SUBTITLE_IPAD".localize(table: table)) [\("PLACARD_LEARN_MORE".localize(table: table))](https://support.apple.com/guide/ipad/get-started-with-accessibility-features-ipad9a2465f9/ipados)", frameY: $frameY, opacity: $opacity)
+                Placard(title: "PLACARD_TITLE".localize(table: table), color: .blue, icon: "accessibility", description: "\(UIDevice.iPhone ? "PLACARD_SUBTITLE_IPHONE".localize(table: table) : "PLACARD_SUBTITLE_IPAD".localize(table: table)) [\("PLACARD_LEARN_MORE".localize(table: table))](pref://helpkit)", frameY: $frameY, opacity: $opacity)
             }
             
             // MARK: Vision
@@ -30,7 +31,7 @@ struct AccessibilityView: View {
                 if !UIDevice.IsSimulator {
                     // VoiceOver
                     SettingsLink(icon: "voiceover", id: "VOICEOVER_TITLE".localize(table: titleTable), status: "OFF".localize(table: table)) {
-                        VoiceOverView()
+                        BundleControllerView("AccessibilitySettings", controller: "VoiceOverController", title: "VOICEOVER_TITLE", table: table)
                     }
                     // Zoom
                     SettingsLink(icon: "arrowtriangles.up.right.down.left.magnifyingglass", id: "ZOOM_TITLE".localize(table: titleTable), status: "OFF".localize(table: table)) {
@@ -49,17 +50,15 @@ struct AccessibilityView: View {
                 }
                 // Motion
                 SettingsLink(color: .green, icon: "circle.dotted.and.circle", id: "MOTION_TITLE".localize(table: titleTable)) {
-                    MotionView()
+                    BundleControllerView("AccessibilitySettings", controller: "AXMotionController", title: "MOTION_TITLE", table: titleTable)
                 }
                 // Spoken Content
                 SettingsLink(color: .black, icon: "rectangle.3.group.bubble.fill", id: "SPEECH_TITLE".localize(table: titleTable)) {
-                    SpeakSelectionView()
+                    BundleControllerView("AccessibilitySettings", controller: "SpeechController", title: "SPEECH_TITLE", table: titleTable)
                 }
                 if !UIDevice.IsSimulator {
                     // Audio Descriptions
-                    SettingsLink(color: .blue, icon: "quote.bubble.fill", id: "DESCRIPTIVE_VIDEO_SETTING".localize(table: titleTable), status: "OFF".localize(table: table)) {
-                        SpeakSelectionView()
-                    }
+                    SettingsLink(color: .blue, icon: "quote.bubble.fill", id: "DESCRIPTIVE_VIDEO_SETTING".localize(table: titleTable), status: "OFF".localize(table: table)) {}
                 }
             } header: {
                 Text("VISION", tableName: titleTable)
@@ -128,7 +127,7 @@ struct AccessibilityView: View {
                 }
                 // Subtitles & Captioning
                 SettingsLink(color: .blue, icon: "captions.bubble.fill", id: "SUBTITLES_CAPTIONING".localize(table: titleTable)) {
-                    SubtitlesCaptioningView()
+                    BundleControllerView("AccessibilitySettings", controller: "AXCaptioningController", title: "SUBTITLES_CAPTIONING", table: titleTable)
                 }
                 if !UIDevice.IsSimulator {
                     // Live Captions
@@ -146,7 +145,7 @@ struct AccessibilityView: View {
             Section {
                 // Live Speech
                 SettingsLink(color: .black, icon: "keyboard.badge.waveform.fill", id: "LIVE_SPEECH_TITLE".localize(table: titleTable), status: "OFF".localize(table: table)) {
-                    LiveSpeechView()
+                    BundleControllerView("AccessibilitySettings", controller: "LiveSpeechController", title: "LIVE_SPEECH_TITLE", table: titleTable)
                 }
                 if UIDevice.IsSimulator {
                     // Vocal Shortcuts
@@ -172,7 +171,7 @@ struct AccessibilityView: View {
             Section {
                 // Keyboards & Typing
                 SettingsLink(color: .gray, icon: "keyboard.fill", id: "KEYBOARDS".localize(table: titleTable)) {
-                    KeyboardsTypingView()
+                    BundleControllerView("AccessibilitySettings", controller: "AXKeyboardsController", title: "KEYBOARDS", table: titleTable)
                 }
                 if !UIDevice.IsSimulator {
                     // Apple TV Remote
@@ -201,6 +200,16 @@ struct AccessibilityView: View {
             } header: {
                 Text("GENERAL_HEADING", tableName: titleTable)
             }
+        }
+        .onOpenURL { url in
+            if url.absoluteString == "pref://helpkit" {
+                showingHelpSheet = true
+            }
+        }
+        .sheet(isPresented: $showingHelpSheet) {
+            HelpKitView(topicID: UIDevice.iPhone ? "iph3e2e4367" : "ipad9a2465f9")
+                .ignoresSafeArea(edges: .bottom)
+                .interactiveDismissDisabled()
         }
         .toolbar {
             ToolbarItem(placement: .principal) {
