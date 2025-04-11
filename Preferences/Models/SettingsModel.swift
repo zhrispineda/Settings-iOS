@@ -159,7 +159,7 @@ let multicolorIcons = ["app.grid.3x3", "faceid", "siri", "touchid"]
     SettingsItem(type: .applePencil, title: "Apple Pencil", icon: "pencil", color: .gray, destination: AnyView(ApplePencilView())),
     SettingsItem(type: .siri, title: "Apple Intelligence & Siri", icon: "appleIntelligence", capability: .appleIntelligence, color: Color(UIColor.systemBackground), destination: AnyView(SiriView())),
     SettingsItem(type: .camera, title: "Camera", icon: "camera.fill", color: .gray, destination: AnyView(CameraView())),
-    SettingsItem(type: .controlCenter, title: "Control Center", icon: "switch.2", color: .gray, destination: AnyView(ControlCenterView())),
+    SettingsItem(type: .controlCenter, title: "Control Center", icon: "switch.2", color: .gray, destination: AnyView(BundleControllerView("ControlCenterSettings", controller: "ControlCenterSettingsViewController", title: "Control Center"))),
     SettingsItem(type: .displayBrightness, title: "Display & Brightness", icon: "sun.max.fill", color: .blue, destination: AnyView(DisplayBrightnessView())),
     SettingsItem(type: .homeScreenAppLibrary, title: "Home Screen & App Library", icon: UIDevice.iPhone ? "apps.iphone" : "apps.ipad", color: .blue, destination: AnyView(HomeScreenAppLibraryView())),
     SettingsItem(type: .multitaskGestures, title: "Multitasking & Gestures", icon: "squares.leading.rectangle", color: .blue, destination: AnyView(MultitaskingGesturesView())),
@@ -216,7 +216,7 @@ let multicolorIcons = ["app.grid.3x3", "faceid", "siri", "touchid"]
 
 // MARK: Developer Settings
 @MainActor let developerSettings: [SettingsItem] = [
-    SettingsItem(type: .developer, title: "Developer", icon: "hammer.fill", color: .gray, destination: AnyView(DeveloperView())),
+    SettingsItem(type: .developer, title: "Developer", icon: "hammer.fill", color: .gray, destination: AnyView(BundleControllerView("DeveloperSettings", controller: "DTSettings", title: "Developer"))),
     SettingsItem(type: .carrierSettings, title: "Carrier Settings", icon: "phone.fill", capability: .isInternal, color: .blue, destination: AnyView(EmptyView())),
     SettingsItem(type: .internalSettings, title: "Internal Settings", icon: "gear", capability: .isInternal, color: .blue, destination: AnyView(EmptyView()))
 ]

@@ -129,7 +129,7 @@ struct AboutView: View {
             }
             
             Section {
-                NavigationLink("CERT_TRUST_SETTINGS".localize(table: uiTable), destination: CertificateTrustSettingsView())
+                NavigationLink("CERT_TRUST_SETTINGS".localize(table: uiTable), destination: BundleControllerView("/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework/GeneralSettingsUI", controller: "PSGCertTrustSettings", title: "CERT_TRUST_SETTINGS", table: uiTable))
             }
         }
     }

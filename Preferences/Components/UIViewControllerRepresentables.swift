@@ -52,6 +52,27 @@ struct HelpKitView: UIViewControllerRepresentable {
     func updateUIViewController(_ uiViewController: UIViewController, context: Context) {}
 }
 
+// MARK: OnBoardingKit for displaying privacy information
+struct OBPrivacyLinkView: UIViewControllerRepresentable {
+    func makeUIViewController(context: Context) -> UIViewController {
+        guard let handle = dlopen("/System/Library/PrivateFrameworks/OnBoardingKit.framework/OnBoardingKit", RTLD_LAZY) else {
+            return UIViewController()
+        }
+        defer { dlclose(handle) }
+        
+        guard let controller = NSClassFromString("OBPrivacyLinkController") as? NSObject.Type else {
+            return UIViewController()
+        }
+        
+        let selector = NSSelectorFromString("linkWithBundleIdentifier:")
+        let bundleIdentifiers = "com.apple.onboarding.appleid"
+        let result = (controller.perform(selector, with: bundleIdentifiers)?.takeUnretainedValue() as? UIViewController)!
+        return result
+    }
+    
+    func updateUIViewController(_ uiViewController: UIViewController, context: Context) {}
+}
+
 // MARK: SoftwareUpdateSettings SUSSoftwareUpdateReleaseNotesDetail for displaying release notes
 struct ReleaseNotesViewController: UIViewControllerRepresentable {
     let readMeName: String

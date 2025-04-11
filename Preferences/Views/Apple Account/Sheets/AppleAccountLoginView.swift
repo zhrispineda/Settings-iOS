@@ -18,7 +18,6 @@ struct AppleAccountLoginView: View {
     @State private var showingErrorAlert = false
     @State private var showingForgotPasswordSheet = false
     @State private var username = String()
-    @State private var showingSheet = false
     let setupTable = "AppleIDSetup"
     let table = "AppleID"
     let uiTable = "AppleAccountUI"
@@ -103,27 +102,10 @@ struct AppleAccountLoginView: View {
             
             Section {
                 VStack {
-                    // Privacy footer Button
-                    Button {
-                        showingSheet = true
-                    } label: {
-                        VStack {
-                            Image(_internalSystemName: "privacy.handshake")
-                                .resizable()
-                                .foregroundStyle(.blue)
-                                .scaledToFit()
-                                .frame(height: 23)
-                            Text(.init("CREATE_ICLOUD_MAIL_ACCOUNT_EXPLANATION_FOOTER_REBRAND".localize(table: table) + "\n[\("CREATE_ICLOUD_MAIL_ACCOUNT_FOOTER_LEARN_MORE_BUTTON".localize(table: table))](\("appleAccountSettingsOBK://"))\n"))
-                                .frame(maxWidth: .infinity, alignment: .center)
-                                .multilineTextAlignment(.center)
-                                .font(.caption2)
-                                .foregroundStyle(.gray)
-                                .sheet(isPresented: $showingSheet) {
-                                    OnBoardingView(table: "OBAppleID")
-                                }
-                        }
-                    }
-                    .buttonStyle(.plain)
+                    Spacer()
+                    // Privacy Button
+                    OBPrivacyLinkView()
+                        .frame(minHeight: 100)
                     
                     // Continue Button
                     Button {
@@ -160,7 +142,6 @@ struct AppleAccountLoginView: View {
                 }
             }
             .listRowBackground(Color.clear)
-            .padding(.top, 40)
         }
         .padding(.top, -40)
         .background(colorScheme == .light ? .white : Color(UIColor.systemBackground))
