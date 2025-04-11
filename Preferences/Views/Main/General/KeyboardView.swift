@@ -32,7 +32,7 @@ struct KeyboardView: View {
     @State private var autoPunctuationEnabled = true
     
     @State private var stickersEnabled = true
-    @State private var showingSheet = true
+    @State private var showingSheet = false
     
     var body: some View {
         CustomList(title: "Keyboards") {
@@ -117,7 +117,7 @@ struct KeyboardView: View {
                 Text("Dictation")
             } footer: {
                 VStack(alignment: .leading) {
-                    Text("\(dictationEnabled ? "Dictation sends information to Apple when necessary for processing your requests. " : "")[About Dictation & Privacy...](#)")
+                    Text("\(dictationEnabled ? "Dictation sends information to Apple when necessary for processing your requests. " : "")[About Dictation & Privacy...](pref://privacy)")
 //                    if dictationEnabled {
 //                        Text("\nSupport for processing voice input on \(UIDevice.current.model) is downloading...")
 //                    }

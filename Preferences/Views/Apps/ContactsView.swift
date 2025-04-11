@@ -17,7 +17,7 @@ struct ContactsView: View {
         CustomList(title: "Back") {
             Section {
                 Placard(title: "CONTACTS".localize(table: table), icon: "appleContacts", description: "SETTINGS_SUBTITLE".localize(table: table) + " [\("LEARN_MORE".localize(table: table))](#)", frameY: $frameY, opacity: $opacity)
-                CustomNavigationLink("CONTACTS_ACCOUNTS".localize(table: table), status: "1", destination: EmptyView())
+                Button("ADD_ACCOUNT".localize(table: "PSSystemPolicy")) {}
             }
             
             PermissionsView(appName: "CONTACTS".localize(table: table), cellular: false, location: false, notifications: false, cellularEnabled: .constant(false))

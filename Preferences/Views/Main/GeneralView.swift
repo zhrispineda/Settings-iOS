@@ -49,14 +49,14 @@ struct GeneralView: View {
                         AirDropView()
                     }
                     SettingsLink(color: .blue, icon: "airplay.video", id: "CONTINUITY".localize(table: table)) {
-                        AirPlayContinuityView()
+                        BundleControllerView("AirPlayAndHandoffSettings", controller: "AirPlayAndHandoffSettings.AirPlayAndHandoffSettingsRoot", title: "CONTINUITY", table: table)
                     }
                     if UIDevice.iPhone {
                         SettingsLink(icon: "pip", id: "PiP".localize(table: table)) {
                             PiPView()
                         }
                         SettingsLink(color: .green, icon: "carplay", id: "CARPLAY".localize(table: table)) {
-                            CarPlayView()
+                            BundleControllerView("CarKitSettings", controller: "CRSettingsController", title: "CARPLAY", table: table)
                         }
                     }
                 }
@@ -119,7 +119,7 @@ struct GeneralView: View {
             if !UIDevice.IsSimulator {
                 Section {
                     SettingsLink(color: .gray, icon: "checkmark.seal.text.page.fill", id: "LEGAL_AND_REGULATORY_TITLE".localize(table: table)) {
-                        BundleControllerView("LegalAndRegulatorySettings", controller: "_TtC26LegalAndRegulatorySettings30LegalAndRegulatorySettingsRoot", title: "LEGAL_AND_REGULATORY_TITLE", table: "General")
+                        BundleControllerView("LegalAndRegulatorySettings", controller: "LegalAndRegulatorySettings.LegalAndRegulatorySettingsRoot", title: "LEGAL_AND_REGULATORY_TITLE", table: "General")
                     }
                 }
             }

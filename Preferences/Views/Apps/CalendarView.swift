@@ -21,7 +21,7 @@ struct CalendarView: View {
         CustomList(title: "CalendarSettingsPlacard_Calendar".localize(table: table)) {
             Section {
                 Placard(title: "CalendarSettingsPlacard_Calendar".localize(table: table), icon: "appleCalendar", description: "Add or remove accounts, manage Siri & Search, and customize how your calendar appears. [Learn more…](%@)".localize(table: table, UIDevice.iPhone ? "iphone/set-up-mail-contacts-and-calendar-accounts-ipha0d932e96/ios" : "ipad/set-up-mail-contacts-and-calendar-accounts-ipadee835d39/ipados"), frameY: $frameY, opacity: $opacity)
-                CustomNavigationLink("Calendar Accounts".localize(table: table), status: "1", destination: EmptyView())
+                Button("ADD_ACCOUNT".localize(table: "PSSystemPolicy")) {}
             }
             
             PermissionsView(appName: "CalendarSettingsPlacard_Calendar".localize(table: table), cellular: false, location: false, notifications: false, cellularEnabled: .constant(false))
