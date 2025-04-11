@@ -141,7 +141,7 @@ let multicolorIcons = ["app.grid.3x3", "faceid", "siri", "touchid"]
 // MARK: Attention Settings
 @MainActor let attentionSettings: [SettingsItem] = [
     SettingsItem(type: .notifications, title: "Notifications", icon: "bell.badge.fill", color: .red, destination: AnyView(NotificationsView())),
-    SettingsItem(type: .soundHaptics, title: UIDevice.iPhone ? "Sounds & Haptics" : "Sounds", icon: "speaker.3.fill", color: .pink, destination: AnyView(BundleControllerView("/System/Library/PrivateFrameworks/Settings/SoundsAndHapticsSettings.framework/SoundsAndHapticsSettings", controller: "SHSSoundsPrefController", title: UIDevice.iPhone ? "SOUNDS_AND_HAPTICS" : "Sounds", table: "Sounds"))),
+    SettingsItem(type: .soundHaptics, title: UIDevice.iPhone ? "Sounds & Haptics" : "Sounds", icon: "speaker.3.fill", color: .pink, destination: AnyView(BundleControllerView("/System/Library/PrivateFrameworks/Settings/SoundsAndHapticsSettings.framework/SoundsAndHapticsSettings", controller: "SHSSoundsPrefController", title: UIDevice.iPhone ? "Sounds & Haptics" : "Sounds"))),
     SettingsItem(type: .focus, title: "Focus", icon: "moon.fill", color: .indigo, destination: AnyView(FocusView())),
     SettingsItem(type: .screenTime, title: "Screen Time", icon: "hourglass", color: .indigo, destination: AnyView(ScreenTimeView())),
 ]

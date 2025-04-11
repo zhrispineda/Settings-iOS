@@ -41,7 +41,7 @@ struct AccessibilityView: View {
                 if UIDevice.iPad {
                     // Hover Text
                     SettingsLink(color: .blue, icon: "character.magnify", id: "HOVERTEXT_TITLE".localize(table: titleTable), status: "OFF".localize(table: table)) {
-                        HoverTextView()
+                        BundleControllerView("AccessibilitySettings", controller: "HoverTextController", title: "HOVERTEXT_TITLE", table: titleTable)
                     }
                 }
                 // Display & Text Size
@@ -69,7 +69,7 @@ struct AccessibilityView: View {
                 if !UIDevice.IsSimulator {
                     // Touch
                     SettingsLink(color: .blue, icon: "hand.point.up.left.fill", id: "TOUCH".localize(table: titleTable)) {
-                        TouchView()
+                        BundleControllerView("AccessibilitySettings", controller: "AXTouchAndReachability", title: "TOUCH", table: titleTable)
                     }
                 }
                 if UIDevice.PearlIDCapability {

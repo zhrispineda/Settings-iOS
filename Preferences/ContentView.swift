@@ -138,7 +138,7 @@ struct ContentView: View {
                                         if searchText.isEmpty {
                                             Section("Suggestions") {}
                                         } else {
-                                            ContentUnavailableView("ContentUnavailableView_Search_Text %@".localize(table: "SwiftUI", searchText), systemImage: "magnifyingglass", description: Text("ContentUnavailableView_Search_Secondary_Text", tableName: "SwiftUI"))
+                                            ContentUnavailableView.search(text: searchText)
                                                 .frame(minHeight: 0, idealHeight: geo.size.height, maxHeight: .infinity)
                                                 .edgesIgnoringSafeArea(.all)
                                                 .listRowSeparator(.hidden)
@@ -256,7 +256,7 @@ struct ContentView: View {
                                         if searchText.isEmpty {
                                             SettingsSearchView()
                                         } else {
-                                            ContentUnavailableView("ContentUnavailableView_Search_Text %@".localize(table: "SwiftUI", searchText), systemImage: "magnifyingglass", description: Text("ContentUnavailableView_Search_Secondary_Text", tableName: "SwiftUI"))
+                                            ContentUnavailableView.search(text: searchText)
                                                 .frame(minHeight: 0, idealHeight: geo.size.height, maxHeight: .infinity)
                                                 .edgesIgnoringSafeArea(.all)
                                                 .listRowSeparator(.hidden)

@@ -129,8 +129,8 @@ struct PrivacySecurityView: View {
             
             // MARK: Sensitive Content Warning
             Section {
-                SettingsLink(color: .blue, icon: "eye.trianglebadge.exclamationmark.fill", id: "Sensitive Content Warning", status: "Off".localize(table: table)) {
-                    SensitiveContentWarningView()
+                SettingsLink(color: .blue, icon: "eye.trianglebadge.exclamationmark.fill", id: "Sensitive Content Warning".localize(table: "PrivacyAndSecuritySettings"), status: "Off".localize(table: table)) {
+                    BundleControllerView("CommunicationSafetySettings", controller: "CommunicationSafetySettings", title: "Sensitive Content Warning", table: "PrivacyAndSecuritySettings")
                 }
             } footer: {
                 Text(.init("Detect nude photos and videos before they are viewed on your Device, and receive guidance to help make a safe choice. Apple does not have access to the photos or videos. [Learn more…](%@)".localize(table: "CommunicationSafetySettingsUI", "https://support.apple.com/en-us/105071")))
