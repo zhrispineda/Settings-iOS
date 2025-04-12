@@ -124,7 +124,8 @@ struct PhotosView: View {
             }
         }
         .sheet(isPresented: $showingSheet) {
-            OnBoardingView(table: "OBPhotos")
+            OnBoardingKitView(bundleID: "com.apple.onboarding.photos")
+                .ignoresSafeArea()
         }
     }
 }

@@ -208,7 +208,8 @@ struct BooksView: View {
             }
         }
         .sheet(isPresented: $showingSheet) {
-            OnBoardingView(table: "AppleBooks")
+            OnBoardingKitView(bundleID: "com.apple.onboarding.ibooks")
+                .ignoresSafeArea()
         }
     }
 }

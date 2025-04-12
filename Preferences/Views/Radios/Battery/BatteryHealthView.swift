@@ -60,9 +60,6 @@ struct BatteryHealthView: View {
                 showingSheet = true
             }
         }
-        .sheet(isPresented: $showingSheet) {
-            OnBoardingView(table: "BatteryUI")
-        }
     }
 }
 

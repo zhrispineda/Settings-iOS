@@ -46,7 +46,8 @@ struct ShortcutsView: View {
             }
         }
         .sheet(isPresented: $showingSheet) {
-            OnBoardingView(table: "ShortcutsSharing")
+            OnBoardingKitView(bundleID: "com.apple.onboarding.shortcutssharing")
+                .ignoresSafeArea()
         }
     }
 }

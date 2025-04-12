@@ -71,7 +71,8 @@ struct PasswordsView: View {
             }
         }
         .sheet(isPresented: $showingSheet) {
-            OnBoardingView(table: "Passwords")
+            OnBoardingKitView(bundleID: "com.apple.onboarding.passwords")
+                .ignoresSafeArea()
         }
     }
 }

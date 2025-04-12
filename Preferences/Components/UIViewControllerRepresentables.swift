@@ -54,6 +54,8 @@ struct HelpKitView: UIViewControllerRepresentable {
 
 // MARK: OnBoardingKit for displaying privacy information
 struct OBPrivacyLinkView: UIViewControllerRepresentable {
+    let bundleIdentifiers: [String]
+    
     func makeUIViewController(context: Context) -> UIViewController {
         guard let handle = dlopen("/System/Library/PrivateFrameworks/OnBoardingKit.framework/OnBoardingKit", RTLD_LAZY) else {
             return UIViewController()
@@ -64,10 +66,134 @@ struct OBPrivacyLinkView: UIViewControllerRepresentable {
             return UIViewController()
         }
         
-        let selector = NSSelectorFromString("linkWithBundleIdentifier:")
-        let bundleIdentifiers = "com.apple.onboarding.appleid"
-        let result = (controller.perform(selector, with: bundleIdentifiers)?.takeUnretainedValue() as? UIViewController)!
-        return result
+        if bundleIdentifiers.count > 1 {
+            let selector = NSSelectorFromString("linkWithBundleIdentifiers:")
+            let result = (controller.perform(selector, with: bundleIdentifiers)?.takeUnretainedValue() as? UIViewController)!
+            return result
+        } else {
+            let selector = NSSelectorFromString("linkWithBundleIdentifier:")
+            let result = (controller.perform(selector, with: bundleIdentifiers[0])?.takeUnretainedValue() as? UIViewController)!
+            return result
+        }
+    }
+    
+    func updateUIViewController(_ uiViewController: UIViewController, context: Context) {}
+}
+
+struct OBCombinedSplashView: UIViewControllerRepresentable {
+    let bundleIdentifiers: [String]
+    @Binding var showingSheet: Bool
+    
+    init(_ bundleIdentifiers: [String], showingSheet: Binding<Bool>) {
+        self.bundleIdentifiers = bundleIdentifiers
+        self._showingSheet = showingSheet
+    }
+    
+    func makeCoordinator() -> Coordinator {
+        Coordinator()
+    }
+    
+    func makeUIViewController(context: Context) -> UIViewController {
+        let controller = OBCombinedSplashController(bundleIdentifiers: bundleIdentifiers)
+        context.coordinator.controller = controller
+        return controller
+    }
+    
+    func updateUIViewController(_ uiViewController: UIViewController, context: Context) {
+        if showingSheet {
+            context.coordinator.trigger()
+            DispatchQueue.main.async {
+                self.showingSheet = false
+            }
+        }
+    }
+    
+    class Coordinator {
+        weak var controller: OBCombinedSplashController?
+        
+        @MainActor func trigger() {
+            controller?.triggerPrivacyPresentation()
+        }
+    }
+    
+    class OBCombinedSplashController: UIViewController {
+        private var privacyVC: UIViewController?
+        private let bundleIdentifiers: [String]
+        
+        init(bundleIdentifiers: [String]) {
+            self.bundleIdentifiers = bundleIdentifiers
+            super.init(nibName: nil, bundle: nil)
+        }
+        
+        required init?(coder: NSCoder) {
+            fatalError("init(coder:) has not been implemented")
+        }
+        
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            view.backgroundColor = .clear
+            
+            guard let handle = dlopen("/System/Library/PrivateFrameworks/OnBoardingKit.framework/OnBoardingKit", RTLD_LAZY) else {
+                return
+            }
+            defer { dlclose(handle) }
+            
+            guard let controller = NSClassFromString("OBPrivacyLinkController") as? NSObject.Type else {
+                return
+            }
+            
+            let selector = NSSelectorFromString("linkWithBundleIdentifiers:")
+            
+            guard let result = controller.perform(selector, with: bundleIdentifiers)?.takeUnretainedValue() as? UIViewController else {
+                return
+            }
+            
+            self.privacyVC = result
+            addChild(result)
+        }
+        
+        func triggerPrivacyPresentation() {
+            privacyVC?.perform(NSSelectorFromString("linkPressed"))
+        }
+    }
+}
+
+struct OnBoardingKitView: UIViewControllerRepresentable {
+    let bundleID: String
+    let showLinkToPrivacyGateway: Bool
+    let showsLinkToUnifiedAbout: Bool
+    
+    init(bundleID: String, showLinkToPrivacyGateway: Bool = false, showsLinkToUnifiedAbout: Bool = true) {
+        self.bundleID = bundleID
+        self.showLinkToPrivacyGateway = showLinkToPrivacyGateway
+        self.showsLinkToUnifiedAbout = showsLinkToUnifiedAbout
+    }
+    
+    func makeUIViewController(context: Context) -> UIViewController {
+        let handle = dlopen("/System/Library/PrivateFrameworks/OnBoardingKit.framework/OnBoardingKit", RTLD_LAZY)
+        defer { dlclose(handle) }
+        
+        guard let controller = NSClassFromString("OBPrivacySplashController") as? NSObject.Type else {
+            return NSObject() as! UIViewController
+        }
+        
+        let selector = Selector(("splashPageWithBundleIdentifier:"))
+        let method = controller.method(for: selector)
+        typealias FunctionType = @convention(c) (AnyObject, Selector, Any) -> AnyObject?
+        let function = unsafeBitCast(method, to: FunctionType.self)
+        
+        if let splashController = function(controller, selector, bundleID) as? UIViewController {
+            splashController.setValue(showLinkToPrivacyGateway, forKey: "showLinkToPrivacyGateway")
+            splashController.setValue(showsLinkToUnifiedAbout, forKey: "showsLinkToUnifiedAbout")
+            
+            let dismissButton = UIBarButtonItem(title: "Done", style: .done, target: splashController, action: #selector(UIViewController.dismissView))
+            splashController.navigationItem.rightBarButtonItem = dismissButton
+            
+            let navController = UINavigationController(rootViewController: splashController)
+            return navController
+        }
+        
+        return UIViewController()
     }
     
     func updateUIViewController(_ uiViewController: UIViewController, context: Context) {}

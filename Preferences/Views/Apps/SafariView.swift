@@ -194,10 +194,12 @@ struct SafariView: View {
             }
         }
         .sheet(isPresented: $showingSearchSheet) {
-            OnBoardingView(table: "SiriSuggestions")
+            OnBoardingKitView(bundleID: "com.apple.onboarding.sirisuggestions")
+                .ignoresSafeArea()
         }
         .sheet(isPresented: $showingSafariSheet) {
-            OnBoardingView(table: "Safari")
+            OnBoardingKitView(bundleID: "com.apple.onboarding.safari")
+                .ignoresSafeArea()
         }
     }
 }

@@ -39,7 +39,8 @@ struct TranslateView: View {
             }
         }
         .sheet(isPresented: $showingSheet) {
-            OnBoardingView(table: "Translate")
+            OnBoardingKitView(bundleID: "com.apple.onboarding.translate")
+                .ignoresSafeArea()
         }
     }
 }

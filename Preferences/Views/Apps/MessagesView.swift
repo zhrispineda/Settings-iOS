@@ -91,8 +91,8 @@ struct MessagesView: View {
                 showingSheet = true
             }
         }
-        .sheet(isPresented: $showingSheet) {
-            OnBoardingDetailView(table: "OnBoardingKit", tables: ["OBMessages", "FaceTime"])
+        .background {
+            OBCombinedSplashView(["com.apple.onboarding.appstore", "com.apple.onboarding.applearcade"], showingSheet: $showingSheet)
         }
     }
 }

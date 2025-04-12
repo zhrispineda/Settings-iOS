@@ -179,7 +179,8 @@ struct BiometricPasscodeView: View {
                 .interactiveDismissDisabled()
         }
         .sheet(isPresented: $showingPrivacySheet) {
-            OnBoardingView(table: UIDevice.PearlIDCapability ? "FaceID" : "OBTouchID")
+            OnBoardingKitView(bundleID: UIDevice.PearlIDCapability ? "com.apple.onboarding.faceid" : "com.apple.onboarding.touchid")
+                .ignoresSafeArea()
         }
     }
 }

@@ -31,19 +31,22 @@ struct FitnessView: View {
                 Button("PRIVACY_PRESENT_BUTTON".localize(table: table)) {
                     showingFitnessPlusSheet = true
                 }
-                .sheet(isPresented: $showingFitnessPlusSheet) {
-                    OnBoardingView(table: "FitnessPlus")
-                }
+                
             }
             
             Section("ACTIVITY_SHARING_PRIVACY_SECTION".localize(table: table)) {
                 Button("PRIVACY_PRESENT_BUTTON".localize(table: table)) {
                     showingActivitySheet = true
                 }
-                .sheet(isPresented: $showingActivitySheet) {
-                    OnBoardingView(table: "Activity")
-                }
             }
+        }
+        .sheet(isPresented: $showingFitnessPlusSheet) {
+            OnBoardingKitView(bundleID: "com.apple.onboarding.fitnessplus")
+                .ignoresSafeArea()
+        }
+        .sheet(isPresented: $showingActivitySheet) {
+            OnBoardingKitView(bundleID: "com.apple.onboarding.activity")
+                .ignoresSafeArea()
         }
     }
 }

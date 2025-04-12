@@ -69,7 +69,8 @@ struct LocationServicesView: View {
             }
         }
         .sheet(isPresented: $showingSheet) {
-            OnBoardingView(table: "LocationServices")
+            OnBoardingKitView(bundleID: "com.apple.onboarding.locationservices")
+                .ignoresSafeArea()
         }
     }
 }

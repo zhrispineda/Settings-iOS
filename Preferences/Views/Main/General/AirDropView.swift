@@ -28,7 +28,7 @@ struct AirDropView: View {
                 .pickerStyle(.inline)
                 .labelsHidden()
             } footer: {
-                Text("AirDrop Learn More Footer WIFI", tableName: table)
+                Text(.init(NSLocalizedString("AirDrop Learn More Footer WIFI", tableName: table, comment: "").replacingOccurrences(of: "airDropSettingsOBK://", with: "pref://")))
             }
             
             if UIDevice.iPhone {
@@ -52,12 +52,13 @@ struct AirDropView: View {
             }
         }
         .onOpenURL { url in
-            if url.scheme == "airDropSettingsOBK" {
+            if url.absoluteString == "pref://" {
                 showingSheet = true
             }
         }
         .sheet(isPresented: $showingSheet) {
-            OnBoardingView(table: "AirDrop")
+            OnBoardingKitView(bundleID: "com.apple.onboarding.airdrop")
+                .ignoresSafeArea()
         }
     }
 }

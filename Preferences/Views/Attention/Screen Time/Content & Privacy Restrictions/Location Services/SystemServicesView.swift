@@ -112,7 +112,8 @@ struct SystemServicesView: View {
             }
         }
         .sheet(isPresented: $showingSheet) {
-            OnBoardingView(table: "Maps")
+            OnBoardingKitView(bundleID: "com.apple.onboarding.maps")
+                .ignoresSafeArea()
         }
     }
 }

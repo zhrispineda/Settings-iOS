@@ -141,7 +141,8 @@ struct KeyboardView: View {
             }
         }
         .sheet(isPresented: $showingSheet) {
-            OnBoardingView(table: "AskSiri")
+            OnBoardingKitView(bundleID: "com.apple.onboarding.siri")
+                .ignoresSafeArea()
         }
     }
 }

@@ -104,7 +104,7 @@ struct AppleAccountLoginView: View {
                 VStack {
                     Spacer()
                     // Privacy Button
-                    OBPrivacyLinkView()
+                    OBPrivacyLinkView(bundleIdentifiers: ["com.apple.onboarding.appleid"])
                         .frame(minHeight: 100)
                     
                     // Continue Button

@@ -55,7 +55,8 @@ struct SearchView: View {
             }
         }
         .sheet(isPresented: $showingSheet) {
-            OnBoardingView(table: "SiriSuggestions")
+            OnBoardingKitView(bundleID: "com.apple.onboarding.sirisuggestions")
+                .ignoresSafeArea()
         }
     }
 }

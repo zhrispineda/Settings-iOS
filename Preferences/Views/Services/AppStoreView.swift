@@ -87,8 +87,8 @@ struct AppStoreView: View {
                 Text("PRIVACY_HEADER", tableName: table)
             }
         }
-        .sheet(isPresented: $showingSheet) {
-            OnBoardingDetailView(table: "OnBoardingKit", tables: ["AppStore", "AppleArcade"])
+        .background {
+            OBCombinedSplashView(["com.apple.onboarding.appstore", "com.apple.onboarding.applearcade"], showingSheet: $showingSheet)
         }
     }
 }
