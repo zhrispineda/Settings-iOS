@@ -46,7 +46,7 @@ struct SafariView: View {
             } header: {
                 Text("Search")
             } footer: {
-                Text("Private Browsing uses on-device information to provide search suggestions. No data is shared with the service provider. [About Search & Privacy...](pref://search)")
+                Text("Private Browsing uses on-device information to provide search suggestions. No data is shared with the service provider. [About Search & Privacy…](pref://search)")
             }
             
             Section {

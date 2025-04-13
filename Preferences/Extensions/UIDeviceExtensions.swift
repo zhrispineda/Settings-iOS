@@ -12,7 +12,7 @@ public extension UIDevice {
         var formatted = String()
         
         guard let answer = MGHelper.read(key: "uyejyEdaxNWSRQQwHmXz1A") else { // DiskUsage key
-            logger.error("Could not get storage capacity information")
+            SettingsLogger.error("Could not get storage capacity information")
             return "Error"
         }
         
@@ -41,12 +41,12 @@ public extension UIDevice {
             let cacheExtra = mobileGestalt["CacheExtra"] as! [String : AnyObject]
             return cacheExtra["oPeik/9e8lQWMszEjbPzng"]?["ArtworkDeviceProductDescription"] as! String // ArtworkTraits key
         } else {
-            logger.error("Could not get marketing-name and ArtworkTraits key")
+            SettingsLogger.error("Could not get marketing-name and ArtworkTraits key")
             return "Error"
         }
     }()
 
-    /// Returns the ProductType value if the device is not a Simulator instance. Otherwise returns SIMULATOR_MODEL_IDENTIFIER value.
+    /// Returns the ProductType value if the device is not a Simulator instance. Otherwise returns `SIMULATOR_MODEL_IDENTIFIER` value.
     static let identifier: String = {
         guard let answer = MGHelper.read(key: "h9jDsbgj7xIVeIQ8S3/X3Q") else { return "Unknown" } // ProductType key
         return ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] != nil ? ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"]! : answer

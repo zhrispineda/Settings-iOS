@@ -4,7 +4,6 @@
 //
 
 import Foundation
-import os
 
 class MGHelper {
     /// Returns the value of the given key.
@@ -15,7 +14,7 @@ class MGHelper {
         typealias MGKey = (@convention(c) (CFString) -> CFTypeRef?)
         var mgKey: MGKey?
         
-        logger.info("Attempting to get value for key: \(key)")
+        SettingsLogger.info("Attempting to get value for key: \(key)")
         
         // Initialize libMobileGestalt.dylib
         guard let gestalt = dlopen("/usr/lib/libMobileGestalt.dylib", RTLD_LAZY) else {
@@ -24,46 +23,47 @@ class MGHelper {
         
         // Encode the key
         guard let key = CFStringCreateWithCString(nil, key, CFStringBuiltInEncodings.ASCII.rawValue) else {
-            logger.error("Unable to encode key: \(key)")
+            SettingsLogger.error("Unable to encode key: \(key)")
             return nil
         }
         
         mgKey = unsafeBitCast(dlsym(gestalt, "MGCopyAnswer"), to: MGKey.self)
         
-        // Attempt to get key's value
+        // Attempt to get value from key
         guard let value = mgKey?(key) else {
-            logger.error("Could not get value for key: \(key)")
+            SettingsLogger.error("Could not get value for key: \(key)")
             return nil
         }
         
-        // Obtain type returned
         let typeID = CFGetTypeID(value)
         
         // Based on data type, return as a casted String
         switch typeID {
         case CFBooleanGetTypeID():
+            SettingsLogger.log("Found value for \(key): \(value)")
             return CFBooleanGetValue((value as! CFBoolean)) ? "true" : "false"
         case CFNumberGetTypeID():
             if let number = value as? NSNumber {
+                SettingsLogger.info("Found value for \(key): \(value)")
                 return number.stringValue
             }
         case CFStringGetTypeID():
+            SettingsLogger.log("Found value for \(key): \(value)")
             return String(describing: value)
         case CFDictionaryGetTypeID():
             if let dict = value as? [String: Any] {
+                SettingsLogger.log("Found value for \(key): \(value)")
                 return "\(dict)"
             }
         case CFDataGetTypeID():
             let data = value as! Data
+            SettingsLogger.log("Found value for \(key): \(value)")
             return data.map { String($0) }.joined(separator: " ")
         default:
             return nil
         }
         
-        logger.error("Could not get typeID for key: \(key)")
+        SettingsLogger.error("Could not get typeID for key: \(key)")
         return nil
     }
 }
-
-// Global logger variable
-let logger = Logger()

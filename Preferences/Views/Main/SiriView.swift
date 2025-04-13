@@ -107,7 +107,9 @@ struct SiriView: View {
                     }
                     .foregroundStyle(.primary)
                 }
-                NavigationLink("ASSISTANT_HISTORY_LABEL".localize(table: table)) {}
+                NavigationLink("ASSISTANT_HISTORY_LABEL".localize(table: table)) {
+                    BundleControllerView("/System/Library/PrivateFrameworks/AssistantSettingsSupport.framework/AssistantSettingsSupport", controller: "AssistantHistoryViewController", title: "ASSISTANT_HISTORY_LABEL", table: table)
+                }
 //                NavigationLink("MESSAGE_TITLE".localize(table: table), destination: {
 //                    CustomList(title: "MESSAGE_TITLE".localize(table: table)) {}
 //                })
@@ -155,7 +157,7 @@ struct SiriView: View {
             // MARK: Apple Intelligence and Siri App Access Section
             Section {
                 SettingsLink(color: colorScheme == .dark ? .blue : .white, iconColor: .blue, icon: "appclip", id: "APP_CLIPS".localize(table: table)) {
-                    SiriAppClipsView()
+                    BundleControllerView("/System/Library/PrivateFrameworks/AssistantSettingsSupport.framework/AssistantSettingsSupport", controller: "AssistantAppClipSettingsController", title: "APP_CLIPS", table: table)
                 }
                 SettingsLink(color: .indigo, icon: "app.grid.3x3", id: "APPS_GROUP".localize(table: table)) {
                     CustomList(title: "APPS".localize(table: table)) {

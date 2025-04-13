@@ -27,20 +27,20 @@ struct SearchView: View {
             } header: {
                 Text("SEARCH_AND_LOOKUP_GROUP", tableName: table)
             } footer: {
-                Text("SEARCH_AND_LOOKUP_FOOTER", tableName: table) + Text(" [\("BUTTON_TITLE".localize(table: "SiriSuggestions"))](pref://)")
+                Text("\("SEARCH_AND_LOOKUP_FOOTER".localize(table: table)) [\("About Search & Privacy…".localize(table: "SiriSuggestions"))](pref://)")
             }
             
             // MARK: Help Apple Improve Search Section
             Section {
                 Toggle("SEARCH_ALLOW_ANONYMOUS_RECORDS".localize(table: table), isOn: $helpImproveSearch)
             } footer: {
-                Text("SEARCH_ALLOW_ANONYMOUS_RECORDS_FOOTER", tableName: table) + Text(" [\("BUTTON_TITLE".localize(table: "SiriSuggestions"))](pref://)")
+                Text("\("SEARCH_ALLOW_ANONYMOUS_RECORDS_FOOTER".localize(table: table)) [\("About Search & Privacy…".localize(table: "SiriSuggestions"))](pref://)")
             }
             
             // MARK: App List Section
             Section {
                 SettingsLink(color: .white, iconColor: .blue, icon: "appclip", id: "APP_CLIPS".localize(table: table)) {
-                    SiriAppClipsView()
+                    BundleControllerView("/System/Library/PrivateFrameworks/AssistantSettingsSupport.framework/AssistantSettingsSupport", controller: "AssistantAppClipSettingsController", title: "APP_CLIPS", table: table)
                 }
                 ForEach(apps, id: \.self) { app in
                     SettingsLink(icon: "apple\(app)", id: app) {

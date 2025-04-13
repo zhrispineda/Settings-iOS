@@ -5,31 +5,8 @@
 
 import SwiftUI
 
-// MARK: ActionButtonSettings to display the 3D-rendered Action Button settings
-struct ActionButtonViewController: UIViewControllerRepresentable {
-    func makeUIViewController(context: Context) -> UIViewController {
-        let handle = dlopen("/System/Library/PreferenceBundles/ActionButtonSettings.bundle/ActionButtonSettings", RTLD_LAZY)
-        defer { dlclose(handle) }
-        
-        guard let settingsClass = NSClassFromString("ActionButtonSettings") as? UIViewController.Type else {
-            logger.error("Could not load ActionButtonSettings")
-            return UIViewController()
-        }
-        
-        let instance = settingsClass.init()
-        
-        let selector = Selector(("pe_emitNavigationEventForSystemSettingsWithGraphicIconIdentifier:title:localizedNavigationComponents:deepLink:"))
-        let methodImp: @convention(block) (AnyObject, Any?, Any?, Any?, Any?) -> Void = { _, _, _, _, _ in }
-        let imp = imp_implementationWithBlock(methodImp)
-        _ = class_addMethod(settingsClass, selector, imp, "v@:@@@@")
-        
-        return instance
-    }
-    
-    func updateUIViewController(_ uiViewController: UIViewController, context: Context) {}
-}
-
-// MARK: HelpKit HLPHelpViewController for displaying user guide information
+// MARK: - HelpKit
+// HLPHelpViewController for displaying user guide information.
 struct HelpKitView: UIViewControllerRepresentable {
     let topicID: String
 
@@ -38,7 +15,7 @@ struct HelpKitView: UIViewControllerRepresentable {
         defer { dlclose(handle) }
 
         guard let helpViewController = NSClassFromString("HLPHelpViewController") as? UIViewController.Type else {
-            logger.error("Could not load HLPHelpViewController")
+            SettingsLogger.error("Could not load HLPHelpViewController")
             return UIViewController()
         }
 
@@ -52,7 +29,8 @@ struct HelpKitView: UIViewControllerRepresentable {
     func updateUIViewController(_ uiViewController: UIViewController, context: Context) {}
 }
 
-// MARK: OnBoardingKit for displaying privacy information
+// MARK: - OnBoardingKit
+// OBPrivacyLinkController for displaying a privacy splash link.
 struct OBPrivacyLinkView: UIViewControllerRepresentable {
     let bundleIdentifiers: [String]
     
@@ -80,6 +58,7 @@ struct OBPrivacyLinkView: UIViewControllerRepresentable {
     func updateUIViewController(_ uiViewController: UIViewController, context: Context) {}
 }
 
+// OBPrivacyLinkController for displaying several bundles in one view.
 struct OBCombinedSplashView: UIViewControllerRepresentable {
     let bundleIdentifiers: [String]
     @Binding var showingSheet: Bool
@@ -158,6 +137,7 @@ struct OBCombinedSplashView: UIViewControllerRepresentable {
     }
 }
 
+// OBPrivacySplashController for displaying privacy information.
 struct OnBoardingKitView: UIViewControllerRepresentable {
     let bundleID: String
     let showLinkToPrivacyGateway: Bool
@@ -199,7 +179,8 @@ struct OnBoardingKitView: UIViewControllerRepresentable {
     func updateUIViewController(_ uiViewController: UIViewController, context: Context) {}
 }
 
-// MARK: SoftwareUpdateSettings SUSSoftwareUpdateReleaseNotesDetail for displaying release notes
+// MARK: - SoftwareUpdateSettings
+// SUSSoftwareUpdateReleaseNotesDetail for displaying release notes
 struct ReleaseNotesViewController: UIViewControllerRepresentable {
     let readMeName: String
     
@@ -208,7 +189,7 @@ struct ReleaseNotesViewController: UIViewControllerRepresentable {
         defer { dlclose(handle) }
         
         guard let controllerClass = NSClassFromString("SUSSoftwareUpdateReleaseNotesDetail") as? UIViewController.Type else {
-            logger.error("Could not load SUSSoftwareUpdateReleaseNotesDetail")
+            SettingsLogger.error("Could not load SUSSoftwareUpdateReleaseNotesDetail")
             return UIViewController()
         }
         
@@ -225,18 +206,20 @@ struct ReleaseNotesViewController: UIViewControllerRepresentable {
 
     private func loadReadMe(named fileName: String) -> String? {
         guard let filePath = Bundle.main.path(forResource: fileName, ofType: "html") else {
-            logger.error("Could not load SUSSoftwareUpdateReleaseNotesDetail file: \(fileName)")
+            SettingsLogger.error("Could not load SUSSoftwareUpdateReleaseNotesDetail file: \(fileName)")
             return nil
         }
         
         do {
             return try String(contentsOfFile: filePath, encoding: .utf8)
         } catch {
-            logger.error("Could not load SUSSoftwareUpdateReleaseNotesDetail ReadMe: \(error)")
+            SettingsLogger.error("Could not load SUSSoftwareUpdateReleaseNotesDetail ReadMe: \(error)")
             return nil
         }
     }
 }
+
+// MARK: - Other
 
 /// A UIViewControllerRepresentable method to load view controllers directly.
 ///
@@ -252,17 +235,36 @@ struct CustomViewController: UIViewControllerRepresentable {
     }
     
     func makeUIViewController(context: Context) -> UIViewController {
+        SettingsLogger.info("Retrieving preferences plugin with name '\(controller)' at location 'PreferencesPluginLocation: { directoryURL: 'file://\(path)'}'.")
+        
         guard let handle = dlopen(path, RTLD_LAZY) else {
-            logger.error("Could not load framework: \(path)")
+            SettingsLogger.error("Could not load framework: \(path)")
             return UIViewController()
         }
         defer { dlclose(handle) }
         
         guard let controller = NSClassFromString(controller) as? UIViewControllerType.Type else {
-            logger.error("Could not load controller: \(controller)")
+            SettingsLogger.error("Could not load controller: \(controller)")
             return UIViewController()
         }
+        
+        let bundleSelector = Selector(("pe_emitNavigationEventForApplicationSettingsWithApplicationBundleIdentifier:title:localizedNavigationComponents:deepLink:"))
+        if !(controller as AnyObject).responds(to: bundleSelector) {
+            let methodImp: @convention(block) (AnyObject, Any?, Any?, Any?, Any?) -> Void = { _, _, _, _, _ in }
+            let imp = imp_implementationWithBlock(methodImp)
+            _ = class_addMethod(controller, bundleSelector, imp, "v@:@@@@")
+        }
+        
+        let iconSelector = Selector(("pe_emitNavigationEventForSystemSettingsWithGraphicIconIdentifier:title:localizedNavigationComponents:deepLink:"))
+        if !(controller as AnyObject).responds(to: iconSelector) {
+            let methodImp: @convention(block) (AnyObject, Any?, Any?, Any?, Any?) -> Void = { _, _, _, _, _ in }
+            let imp = imp_implementationWithBlock(methodImp)
+            _ = class_addMethod(controller, iconSelector, imp, "v@:@@@@")
+        }
+        
         let instance = controller.init()
+        
+        SettingsLogger.info("Loading plugin with name '\(controller)' at location '{ directoryURL: 'file://\(path)'}'.")
         
         return instance
     }

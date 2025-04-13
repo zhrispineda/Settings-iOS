@@ -38,7 +38,6 @@ struct CameraView: View {
     let stylesTable = "CameraSettings-SmartStyles"
     let kitTable = "CameraEditKit"
     let cineTable = "CameraSettings-CinematicAudio"
-    let privacyTable = "Camera"
     
     init() {
         if selectedSlomoSetting.isEmpty && !UIDevice.ProDevice || UIDevice.iPad {
@@ -217,7 +216,7 @@ struct CameraView: View {
             // MARK: Camera & ARKit Privacy Footer
             if UIDevice.LiDARCapability {
                 Section {} footer: {
-                    Text(.init("[\("BUTTON_TITLE".localize(table: privacyTable))](pref://privacy)"))
+                    Text(.init("[\("About Camera and ARKit & Privacy…")](pref://privacy)"))
                 }
             }
         }
