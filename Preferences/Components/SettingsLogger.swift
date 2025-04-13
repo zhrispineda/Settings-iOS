@@ -16,6 +16,7 @@ struct SettingsLogger {
     }
     
     /// Writes a default-type message to the log.
+    /// 
     /// - Parameters:
     ///   - message: The string that the logger uses to write to the log.
     ///   - level: The scope level to use for the log.
@@ -28,12 +29,14 @@ struct SettingsLogger {
     }
     
     /// Writes an informative message to the log.
+    ///
     /// - Parameter message: The string that the logger uses to write to the log.
     static func info(_ message: String) {
         log(message, level: .info)
     }
     
     /// Writes an error message to the log.
+    ///
     /// - Parameter message: The string that the logger uses to write to the log.
     static func error(_ message: String) {
         log(message, level: .error)

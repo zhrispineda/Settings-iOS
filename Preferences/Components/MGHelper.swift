@@ -64,6 +64,7 @@ class MGHelper {
         }
         
         SettingsLogger.error("Could not get typeID for key: \(key)")
+        
         return nil
     }
 }

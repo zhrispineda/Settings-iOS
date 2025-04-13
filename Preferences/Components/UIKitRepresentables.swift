@@ -1,12 +1,12 @@
 //
-//  UIViewControllerRepresentables.swift
+//  UIKitRepresentables.swift
 //  Preferences
 //
 
 import SwiftUI
 
 // MARK: - HelpKit
-// HLPHelpViewController for displaying user guide information.
+/// HLPHelpViewController for displaying user guide information.
 struct HelpKitView: UIViewControllerRepresentable {
     let topicID: String
 
@@ -30,7 +30,7 @@ struct HelpKitView: UIViewControllerRepresentable {
 }
 
 // MARK: - OnBoardingKit
-// OBPrivacyLinkController for displaying a privacy splash link.
+/// OBPrivacyLinkController for displaying a privacy splash link.
 struct OBPrivacyLinkView: UIViewControllerRepresentable {
     let bundleIdentifiers: [String]
     
@@ -58,7 +58,7 @@ struct OBPrivacyLinkView: UIViewControllerRepresentable {
     func updateUIViewController(_ uiViewController: UIViewController, context: Context) {}
 }
 
-// OBPrivacyLinkController for displaying several bundles in one view.
+/// OBPrivacyLinkController for displaying several bundles in one view.
 struct OBCombinedSplashView: UIViewControllerRepresentable {
     let bundleIdentifiers: [String]
     @Binding var showingSheet: Bool
@@ -137,7 +137,7 @@ struct OBCombinedSplashView: UIViewControllerRepresentable {
     }
 }
 
-// OBPrivacySplashController for displaying privacy information.
+/// OBPrivacySplashController for displaying privacy information.
 struct OnBoardingKitView: UIViewControllerRepresentable {
     let bundleID: String
     let showLinkToPrivacyGateway: Bool
@@ -180,7 +180,7 @@ struct OnBoardingKitView: UIViewControllerRepresentable {
 }
 
 // MARK: - SoftwareUpdateSettings
-// SUSSoftwareUpdateReleaseNotesDetail for displaying release notes
+/// SUSSoftwareUpdateReleaseNotesDetail for displaying release notes.
 struct ReleaseNotesViewController: UIViewControllerRepresentable {
     let readMeName: String
     
@@ -221,7 +221,7 @@ struct ReleaseNotesViewController: UIViewControllerRepresentable {
 
 // MARK: - Other
 
-/// A UIViewControllerRepresentable method to load view controllers directly.
+/// A view controller bridge based on a given path and class name.
 ///
 /// - Parameter path: The path of the framework.
 /// - Parameter controller: The string name of the class.
