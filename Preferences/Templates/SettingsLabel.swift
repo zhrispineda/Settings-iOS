@@ -32,9 +32,9 @@ struct SettingsLabel: View {
             }
             
             Text(id)
+            Spacer()
             
             if !status.isEmpty {
-                Spacer()
                 Text(.init(status))
                     .foregroundStyle(.secondary)
             }
@@ -43,7 +43,6 @@ struct SettingsLabel: View {
                 Image(systemName: "\(badgeCount).circle.fill")
                     .foregroundStyle(.white, .red)
                     .imageScale(.large)
-                    .offset(x: 10)
             }
         }
     }

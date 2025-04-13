@@ -166,7 +166,7 @@ let multicolorIcons = ["app.grid.3x3", "faceid", "siri", "touchid"]
     SettingsItem(type: .search, title: "Search", icon: "magnifyingglass", color: .gray, destination: AnyView(SearchView())),
     SettingsItem(type: .siri, title: "Siri", icon: "appleSiri", capability: .siri, color: Color(UIColor.systemBackground), destination: AnyView(SiriView())),
     SettingsItem(type: .standby, title: "StandBy", icon: "clock.filled.and.widget.filled", color: .black, destination: AnyView(StandByView())),
-    SettingsItem(type: .wallpaper, title: "Wallpaper", icon: "apple.photos", color: .cyan, destination: AnyView(WallpaperView())),
+    SettingsItem(type: .wallpaper, title: "Wallpaper", icon: "apple.photos", color: .cyan, destination: AnyView(BundleControllerView("WallpaperSettings", controller: "WallpaperSettingsRootViewController"))),
 ]
 
 // MARK: Simulator Main Settings
@@ -186,7 +186,7 @@ let multicolorIcons = ["app.grid.3x3", "faceid", "siri", "touchid"]
 // MARK: Security Settings
 @MainActor let securitySettings: [SettingsItem] = [
     SettingsItem(type: .biometricPasscode, title: "\(UIDevice.PearlIDCapability ? "Face" : "Touch") ID & Passcode", icon: UIDevice.PearlIDCapability ? "faceid" : "touchid", color: UIDevice.PearlIDCapability ? .green : .white, destination: AnyView(BiometricPasscodeView())),
-    SettingsItem(type: .emergencySOS, title: "Emergency SOS", icon: "sos", color: .red, destination: AnyView(EmergencyView())),
+    SettingsItem(type: .emergencySOS, title: "Emergency SOS", icon: "sos", color: .red, destination: AnyView(BundleControllerView("SOSSettings", controller: "SOSSettingsController", title: "Emergency SOS"))),
     SettingsItem(type: .privacySecurity, title: "Privacy & Security", icon: "hand.raised.fill", color: .blue, destination: AnyView(PrivacySecurityView()))
 ]
 

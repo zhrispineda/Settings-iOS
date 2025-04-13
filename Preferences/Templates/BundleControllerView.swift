@@ -11,7 +11,7 @@ struct BundleControllerView: View {
     var title: String = ""
     var table: String = ""
     
-    init(_ bundle: String, controller: String, title: String, table: String = "") {
+    init(_ bundle: String, controller: String, title: String = "", table: String = "") {
         self.bundle = bundle
         self.controller = controller
         self.title = title

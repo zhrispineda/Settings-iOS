@@ -30,7 +30,7 @@ struct GeneralView: View {
                         SoftwareUpdateView()
                     }
                     SettingsLink(color: .gray, icon: "externaldrive.fill", id: "DEVICE_STORAGE".localize(table: table)) {
-                        StorageView()
+                        BundleControllerView("StorageSettingsUI", controller: "StorageSettingsUIWrapper", title: "DEVICE_STORAGE", table: table)
                     }
                 }
             }
@@ -53,7 +53,7 @@ struct GeneralView: View {
                     }
                     if UIDevice.iPhone {
                         SettingsLink(icon: "pip", id: "PiP".localize(table: table)) {
-                            PiPView()
+                            BundleControllerView("PictureInPictureSettings", controller: "PictureInPictureSettings", title: "PiP", table: table)
                         }
                         SettingsLink(color: .green, icon: "carplay", id: "CARPLAY".localize(table: table)) {
                             BundleControllerView("CarKitSettings", controller: "CRSettingsController", title: "CARPLAY", table: table)

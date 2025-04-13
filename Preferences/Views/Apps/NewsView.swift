@@ -14,6 +14,7 @@ struct NewsView: View {
     @State private var showingRestrictDialog = false
     @State private var showingRestrictAlert = false
     @State private var resetIdentifierEnabled = false
+    @State private var showingSheet = false
     let table = "NewsSettings"
     
     var body: some View {
@@ -70,13 +71,18 @@ struct NewsView: View {
             }
             
             Section {
-                Button("PRIVACY_TITLE".localize(table: table)) {}
+                Button("PRIVACY_TITLE".localize(table: table)) {
+                    showingSheet = true
+                }
                 Toggle("RESET_IDENTIFIER_TITLE".localize(table: table), isOn: $resetIdentifierEnabled)
             } header: {
                 Text("PRIVACY_GROUP_TITLE", tableName: table)
             } footer: {
                 Text("RESET_IDENTIFIER_DESCRIPTION", tableName: table)
             }
+        }
+        .background {
+            OBCombinedSplashView(["com.apple.onboarding.news", "com.apple.onboarding.newsletter", "com.apple.onboarding.mysports", "com.apple.onboarding.gamecenter"], showingSheet: $showingSheet)
         }
     }
 }

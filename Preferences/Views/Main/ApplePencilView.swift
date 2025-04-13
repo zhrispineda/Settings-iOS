@@ -9,8 +9,9 @@ import SwiftUI
 
 struct ApplePencilView: View {
     // Variables
-    @State private var onlyDrawPencil = false
-    @State private var scribbleEnabled = true
+    @AppStorage("OnlyDrawApplePencilToggle") private var onlyDrawPencil = false
+    @AppStorage("ScribbleToggle") private var scribbleEnabled = true
+    @State private var showingSheet: Bool = false
     
     var body: some View {
         CustomList(title: "Apple Pencil") {
@@ -30,7 +31,9 @@ struct ApplePencilView: View {
             
             if scribbleEnabled {
                 Section {
-                    Button("Try Scribble") {}
+                    Button("Try Scribble") {
+                        showingSheet = true
+                    }
                 }
             }
             
@@ -41,6 +44,22 @@ struct ApplePencilView: View {
                 Text("Pencil Gestures")
             } footer: {
                 Text("Actions when Apple Pencil is used to diagonally swipe from the corners of the screen.")
+            }
+        }
+        .sheet(isPresented: $showingSheet) {
+            NavigationStack {
+                VStack {
+                    Text("Try Scribble")
+                        .font(.largeTitle)
+                        .bold()
+                    BundleControllerView("PencilSettings", controller: "PencilEducationViewController")
+                }
+                .toolbar {
+                    Button("Done") {
+                        showingSheet = false
+                    }
+                    .bold()
+                }
             }
         }
     }
