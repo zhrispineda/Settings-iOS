@@ -2,7 +2,7 @@
 //  AppStoreView.swift
 //  Preferences
 //
-//  Settings > App Store
+//  Settings > Apps > App Store
 //
 
 import SwiftUI

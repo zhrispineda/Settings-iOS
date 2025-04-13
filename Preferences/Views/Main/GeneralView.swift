@@ -98,7 +98,7 @@ struct GeneralView: View {
                     KeyboardView()
                 }
                 SettingsLink(color: .blue, icon: "globe", id: "INTERNATIONAL".localize(table: table)) {
-                    LanguageRegionView()
+                    BundleControllerView("InternationalSettings", controller: "InternationalSettingsController", title: "INTERNATIONAL", table: table)
                 }
             }
             
