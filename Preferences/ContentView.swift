@@ -296,12 +296,20 @@ func requiredCapabilities(capability: Capabilities) -> Bool {
         return UIDevice.CellularTelephonyCapability
     case .ethernet:
         return false
+    case .faceID:
+        return UIDevice.PearlIDCapability
     case .isInternal:
         return false
     case .none:
         return true
     case .siri:
         return !UIDevice.IntelligenceCapability
+    case .sounds:
+        return UIDevice.iPad
+    case .soundsHaptics:
+        return UIDevice.iPhone
+    case .touchID:
+        return !UIDevice.PearlIDCapability
     case .vpn:
         return false
     }

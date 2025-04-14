@@ -11,19 +11,16 @@ struct HelpKitView: UIViewControllerRepresentable {
     let topicID: String
 
     func makeUIViewController(context: Context) -> UIViewController {
-        let handle = dlopen("/System/Library/PrivateFrameworks/HelpKit.framework/HelpKit", RTLD_LAZY)
-        defer { dlclose(handle) }
-
         guard let helpViewController = NSClassFromString("HLPHelpViewController") as? UIViewController.Type else {
             SettingsLogger.error("Could not load HLPHelpViewController")
             return UIViewController()
         }
 
         let instance = helpViewController.init()
+        
         instance.setValue(topicID, forKey: "selectedHelpTopicID")
 
-        let controller = UINavigationController(rootViewController: instance)
-        return controller
+        return UINavigationController(rootViewController: instance)
     }
 
     func updateUIViewController(_ uiViewController: UIViewController, context: Context) {}
@@ -35,11 +32,6 @@ struct OBPrivacyLinkView: UIViewControllerRepresentable {
     let bundleIdentifiers: [String]
     
     func makeUIViewController(context: Context) -> UIViewController {
-        guard let handle = dlopen("/System/Library/PrivateFrameworks/OnBoardingKit.framework/OnBoardingKit", RTLD_LAZY) else {
-            return UIViewController()
-        }
-        defer { dlclose(handle) }
-        
         guard let controller = NSClassFromString("OBPrivacyLinkController") as? NSObject.Type else {
             return UIViewController()
         }
@@ -90,7 +82,8 @@ struct OBCombinedSplashView: UIViewControllerRepresentable {
     class Coordinator {
         weak var controller: OBCombinedSplashController?
         
-        @MainActor func trigger() {
+        @MainActor
+        func trigger() {
             controller?.triggerPrivacyPresentation()
         }
     }
@@ -110,12 +103,6 @@ struct OBCombinedSplashView: UIViewControllerRepresentable {
         
         override func viewDidLoad() {
             super.viewDidLoad()
-            view.backgroundColor = .clear
-            
-            guard let handle = dlopen("/System/Library/PrivateFrameworks/OnBoardingKit.framework/OnBoardingKit", RTLD_LAZY) else {
-                return
-            }
-            defer { dlclose(handle) }
             
             guard let controller = NSClassFromString("OBPrivacyLinkController") as? NSObject.Type else {
                 return
@@ -150,9 +137,6 @@ struct OnBoardingKitView: UIViewControllerRepresentable {
     }
     
     func makeUIViewController(context: Context) -> UIViewController {
-        let handle = dlopen("/System/Library/PrivateFrameworks/OnBoardingKit.framework/OnBoardingKit", RTLD_LAZY)
-        defer { dlclose(handle) }
-        
         guard let controller = NSClassFromString("OBPrivacySplashController") as? NSObject.Type else {
             return NSObject() as! UIViewController
         }
@@ -185,8 +169,7 @@ struct ReleaseNotesViewController: UIViewControllerRepresentable {
     let readMeName: String
     
     func makeUIViewController(context: Context) -> UIViewController {
-        let handle = dlopen("/System/Library/PrivateFrameworks/SoftwareUpdateSettings.framework/SoftwareUpdateSettings", RTLD_LAZY)
-        defer { dlclose(handle) }
+        dlopen("/System/Library/PrivateFrameworks/SoftwareUpdateSettings.framework/SoftwareUpdateSettings", RTLD_NOW)
         
         guard let controllerClass = NSClassFromString("SUSSoftwareUpdateReleaseNotesDetail") as? UIViewController.Type else {
             SettingsLogger.error("Could not load SUSSoftwareUpdateReleaseNotesDetail")
@@ -206,14 +189,14 @@ struct ReleaseNotesViewController: UIViewControllerRepresentable {
 
     private func loadReadMe(named fileName: String) -> String? {
         guard let filePath = Bundle.main.path(forResource: fileName, ofType: "html") else {
-            SettingsLogger.error("Could not load SUSSoftwareUpdateReleaseNotesDetail file: \(fileName)")
+            SettingsLogger.error("Could not find ReadMe: \(fileName)")
             return nil
         }
         
         do {
             return try String(contentsOfFile: filePath, encoding: .utf8)
         } catch {
-            SettingsLogger.error("Could not load SUSSoftwareUpdateReleaseNotesDetail ReadMe: \(error)")
+            SettingsLogger.error("Could not load ReadMe: \(error)")
             return nil
         }
     }
@@ -237,11 +220,10 @@ struct CustomViewController: UIViewControllerRepresentable {
     func makeUIViewController(context: Context) -> UIViewController {
         SettingsLogger.info("Retrieving preferences plugin with name '\(controller)' at location 'PreferencesPluginLocation: { directoryURL: 'file://\(path)'}'.")
         
-        guard let handle = dlopen(path, RTLD_LAZY) else {
+        guard dlopen(path, RTLD_NOW) != nil else {
             SettingsLogger.error("Could not load framework: \(path)")
             return UIViewController()
         }
-        defer { dlclose(handle) }
         
         guard let controller = NSClassFromString(controller) as? UIViewControllerType.Type else {
             SettingsLogger.error("Could not load controller: \(controller)")
