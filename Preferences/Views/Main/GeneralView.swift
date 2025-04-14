@@ -168,8 +168,8 @@ struct GeneralView: View {
 }
 
 struct GeneralRoute: Routable {
-    func destination() -> some View {
-        GeneralView()
+    func destination() -> AnyView {
+        AnyView(GeneralView())
     }
 }
 

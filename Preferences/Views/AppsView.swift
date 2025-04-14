@@ -119,8 +119,8 @@ struct AppsView: View {
 }
 
 struct AppsRoute: Routable {
-    func destination() -> some View {
-        AppsView()
+    func destination() -> AnyView {
+        AnyView(AppsView())
     }
 }
 

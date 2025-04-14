@@ -22,10 +22,8 @@ struct WalletView: View {
     @State private var orderNotificationsEnabled = true
     @AppStorage("OtherPayLaterEnabled") private var otherPayLaterOptionsEnabled = true
     
-    let table = "PassKit"
     let nfcTable = "ContactlessAndCredentialSettings_Localizable"
     let offerTable = "PaymentOffers_Localizable"
-    let orderTable = "OrderManagement_Localizable"
     let payTable = "Payment_Localizable"
     let peerTable = "PeerPayment_Localizable"
     let virtualTable = "VirtualCard_Localizable"
@@ -81,10 +79,6 @@ struct WalletView: View {
                 }
             }
             
-//            Section {
-//                Toggle("ALLOW_EXPIRED_PASSES_TITLE".localize(table: table), isOn: $hideExpiredPassesEnabled)
-//            }
-            
             if !UIDevice.IsSimulator && UIDevice.iPhone {
                 Section {
                     CustomNavigationLink("SETTINGS_EXPRESS_TRANSIT_CARDS_SECTION_HEADER".localize(table: payTable), status: "NONE".localize(table: payTable), destination: EmptyView())
@@ -130,22 +124,6 @@ struct WalletView: View {
                 Text("ALLOW_ONLINE_PAYMENTS_HEADER", tableName: virtualTable)
             } footer: {
                 Text("ALLOW_ONLINE_PAYMENTS_FOOTER", tableName: virtualTable)
-            }
-            
-            if !UIDevice.IsSimulator {
-                if appleCashEnabled {
-                    Section {
-                        Toggle("ALLOW_ORDER_MANAGEMENT_TITLE".localize(table: orderTable), isOn: $addOrdersWalletEnabled)
-                    } header: {
-                        Text("ALLOW_ORDER_MANAGEMENT_HEADER", tableName: orderTable)
-                    } footer: {
-                        Text(UIDevice.iPhone ? "ALLOW_ORDER_MANAGEMENT_FOOTER_IPHONE" : "ALLOW_ORDER_MANAGEMENT_FOOTER_IPAD", tableName: orderTable)
-                    }
-                }
-                
-//                Section {
-//                    Toggle("ALLOW_ORDER_MANAGEMENT_NOTIFICATIONS_TITLE".localize(table: orderTable), isOn: $orderNotificationsEnabled)
-//                }
             }
         }
     }

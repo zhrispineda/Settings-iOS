@@ -189,8 +189,8 @@ struct PrivacySecurityView: View {
 }
 
 struct PrivacySecurityRoute: Routable {
-    func destination() -> some View {
-        PrivacySecurityView()
+    func destination() -> AnyView {
+        AnyView(PrivacySecurityView())
     }
 }
 

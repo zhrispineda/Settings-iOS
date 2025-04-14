@@ -20,21 +20,20 @@ let configuration = Configuration()
 class StateManager: ObservableObject {
     @Published var destination = AnyView(GeneralView())
     @Published var selection: SettingsModel? = .general
-    @Published var path: [AnyRoute] = []
+    @Published var path: NavigationPath = NavigationPath()
 }
 
 protocol Routable: Hashable {
-    associatedtype DestinationView: View
-    @ViewBuilder func destination() -> DestinationView
+    func destination() -> AnyView
 }
 
 struct AnyRoute: Hashable {
     private let _destination: () -> AnyView
-    private let identifier: String
+    private let base: AnyHashable
     
     init<R: Routable>(_ route: R) {
         self._destination = { AnyView(route.destination()) }
-        self.identifier = String(describing: R.self) + UUID().uuidString
+        self.base = AnyHashable(route)
     }
     
     func destination() -> AnyView {
@@ -42,11 +41,11 @@ struct AnyRoute: Hashable {
     }
     
     static func == (lhs: AnyRoute, rhs: AnyRoute) -> Bool {
-        return lhs.identifier == rhs.identifier
+        return lhs.base == rhs.base
     }
-    
+
     func hash(into hasher: inout Hasher) {
-        hasher.combine(identifier)
+        hasher.combine(base)
     }
 }
 
@@ -55,7 +54,7 @@ struct AnyRoute: Hashable {
 enum SettingsModel: String, CaseIterable {
     case accessibility = "Accessibility"
     case actionButton = "Action Button"
-    case appleIntelligence = "Apple Intelligence"
+    case appleIntelligence = "Apple Intelligence & Siri"
     case applePencil = "Apple Pencil"
     case apps = "Apps"
     case battery = "Battery"
