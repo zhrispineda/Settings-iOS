@@ -45,7 +45,7 @@ struct PrivacySecurityView: View {
                     AppPermissionsView(permissionName: "FOCUS")
                 }
                 SettingsLink(icon: "appleHealth", id: "HEALTH".localize(table: table), subtitle: "None".localize(table: psTable)) {
-                    AppPermissionsView(permissionName: "HEALTH")
+                    AppPermissionsView(permissionName: "HEALTH", bundle: "healthapp")
                 }
                 SettingsLink(icon: "appleHome", id: "WILLOW".localize(table: table), subtitle: "None".localize(table: psTable)) {
                     AppPermissionsView(permissionName: "WILLOW")
@@ -73,7 +73,7 @@ struct PrivacySecurityView: View {
             Section {
                 if !UIDevice.IsSimulator {
                     SettingsLink(color: .blue, icon: "ring.radiowaves.right", id: "ACCESSORY_SETUP".localize(table: table), status: "0") {
-                        AppPermissionsView(permissionName: "ACCESSORY_SETUP")
+                        BundleControllerView("/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework/PrivacySettingsUI", controller: "PUIAccessoriesController", title: "ACCESSORY_SETUP", table: table)
                     }
                 }
                 SettingsLink(color: .blue, icon: "bluetooth", id: "BT_PERIPHERAL".localize(table: table), status: "0") {
@@ -83,10 +83,11 @@ struct PrivacySecurityView: View {
                     AppPermissionsView(permissionName: "CAMERA")
                 }
                 SettingsLink(color: .green, icon: "exclamationmark.message.fill", id: "Critical Messages".localize(table: psTable), status: "0") {
-                    AppPermissionsView(permissionName: "CAMERA")
+                    //AppPermissionsView(permissionName: "Critical Messages")
+                    BundleControllerView("/System/Library/PrivateFrameworks/MessagesSettingsUI.framework/MessagesSettingsUI", controller: "CKSettingsCriticalMessagesViewController", title: "Critical Messages", table: psTable)
                 }
                 SettingsLink(color: .blue, icon: "network", id: "LOCAL_NETWORK".localize(table: table), status: "0") {
-                    AppPermissionsView(permissionName: "LOCAL_NETWORK")
+                    BundleControllerView("/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework/PrivacySettingsUI", controller: "PUINetworkController", title: "LOCAL_NETWORK", table: table)
                 }
                 SettingsLink(color: .orange, icon: "mic.fill", id: "MICROPHONE".localize(table: table), status: "0") {
                     AppPermissionsView(permissionName: "MICROPHONE")
@@ -99,7 +100,7 @@ struct PrivacySecurityView: View {
                 }
                 if UIDevice.iPhone {
                     SettingsLink(color: .blue, icon: "sensorkit", id: "Research Sensor & Usage Data".localize(table: psTable), status: "0") {
-                        AppPermissionsView(permissionName: "Research Sensor & Usage Data")
+                        AppPermissionsView(permissionName: "Research Sensor & Usage Data", bundle: "sensorusage")
                     }
                     SettingsLink(color: .gray, icon: "waveform", id: "SPEECH_RECOGNITION".localize(table: table), status: "0") {
                         AppPermissionsView(permissionName: "SPEECH_RECOGNITION")

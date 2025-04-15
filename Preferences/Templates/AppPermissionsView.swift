@@ -19,10 +19,17 @@ import SwiftUI
 /// - Parameter appClipsPermission: The  optional String to use when relating to App Clips.
 struct AppPermissionsView: View {
     @AppStorage("PrivacyFitnessTrackingToggle") private var fitnessTracking = true
-    var permissionName = String()
-    var appClipPermission = String()
+    @State private var showingSheet = false
+    var permissionName = ""
+    var appClipPermission = ""
     let appClipsEligible = ["BT_PERIPHERAL", "CAMERA", "MICROPHONE"]
+    var bundle = ""
     let table = "Privacy"
+    let dsTable = "Dim-Sum"
+    let focusTable = "FocusSettings"
+    let healthTable = "HealthPrivacySettings"
+    let sensorTable = "SensorKitPrivacySettings"
+    let wellTable = "WellnessDashboard-Localizable"
     
     var body: some View {
         CustomList(title: permissionName.localize(table: table)) {
@@ -30,7 +37,7 @@ struct AppPermissionsView: View {
             switch permissionName {
             case "App Clips":
                 Section {} footer: {
-                    if appClipPermission == "CAMERA" {
+                    if appClipPermission == "CAMERA" || permissionName == "CAMERA" {
                         Text("CAMERA_HEADER", tableName: table)
                     }
                 }
@@ -40,34 +47,33 @@ struct AppPermissionsView: View {
                 }
             case "FOCUS":
                 Section {} footer: {
-                    Text("Your Focus status tells apps and people that you have notifications silenced.")
+                    Text("AVAILABILITY_STATUS_EXPLANATION", tableName: focusTable)
                 }
             case "HEALTH":
                 Section {} footer: {
-                    Text("Your data is encrypted on your device and can only be shared with your permission. \n[Learn more about Health & Privacy...](#)")
-                }
-                .padding(-15)
-                
-                Section {
-                    NavigationLink("Headphone Audio Levels", destination: HeadphoneAudioLevelsView())
+                    Text("\("PRIVACY_DISCLOSURE_FOOTER".localize(table: healthTable)) \n[\("PRIVACY_DISCLOSURE_FOOTER_LEARN_MORE".localize(table: healthTable))](pref://)")
                 }
                 
                 Section {
-                    Text("None")
+                    NavigationLink("HEADPHONE_AUDIO_LEVELS".localize(table: healthTable), destination: HeadphoneAudioLevelsView())
+                }
+                
+                Section {
+                    Text("APPS_NONE", tableName: wellTable)
                         .foregroundStyle(.secondary)
                 } header: {
-                    Text("Apps")
+                    Text("APPS_LIST_HEADER", tableName: wellTable)
                 } footer: {
-                    Text("As apps request permission to update your Health data, they will be added to the list.")
+                    Text("APPS_LIST_EXPLANATION", tableName: wellTable)
                 }
                 
                 Section {
-                    Text("None")
+                    Text("NONE", tableName: wellTable)
                         .foregroundStyle(.secondary)
                 } header: {
-                    Text("Research Studies")
+                    Text("RESEARCH_STUDIES_LIST_HEADER", tableName: wellTable)
                 } footer: {
-                    Text("As research studies request permission to read your data, they will be added to the list. You can review and manage all of the studies you are enrolled in by going to the Research app.")
+                    Text("RESEARCH_STUDIES_LIST_EXPLANATION", tableName: wellTable)
                 }
             case "MOTION":
                 Section {
@@ -77,9 +83,9 @@ struct AppPermissionsView: View {
                 }
             case "Research Sensor & Usage Data":
                 Section {
-                    Button("Enable Sensor & Usage Data Collection") {}
+                    Button("ENABLE_SENSORKIT_BUTTON".localize(table: sensorTable)) {}
                 } footer: {
-                    Text("Sensor & Usage Data is sensitive research data that allows apps and studies to access certain important sources of information that are otherwise unavailable. [Learn more about Sensor & Usage Data...](#)")
+                    Text("\("DESCRIPTION_SENSORKIT".localize(table: sensorTable)) [\("LEARN_MORE".localize(table: sensorTable))](pref://)")
                 }
             default:
                 EmptyView()
@@ -88,27 +94,31 @@ struct AppPermissionsView: View {
             // Content and footer section
             Section {
                 if appClipsEligible.contains(permissionName) {
-                    SettingsLink(color: .white, iconColor: .blue, icon: "appclip", id: "App Clips") {
+                    SettingsLink(color: .white, iconColor: .blue, icon: "appclip", id: "App Clips", status: "0") {
                         AppPermissionsView(permissionName: "App Clips", appClipPermission: permissionName)
                     }
                 }
             } header: {
                 if permissionName == "FOCUS" {
-                    Text("Shared With")
+                    Text("AVAILABILITY_STATUS_SHARING_HEADER", tableName: "FocusSettings")
                 }
             } footer: {
                 switch permissionName {
-                case "ACCESSORY_SETUP", "BT_PERIPHERAL", "CAMERA", "LOCAL_NETWORK", "MEDIALIBRARY", "MICROPHONE", "MOTION", "NEARBY_INTERACTIONS", "PASSKEYS", "REMINDERS", "SPEECH_RECOGNITION", "WILLOW":
+                case "BT_PERIPHERAL", "CAMERA", "MEDIALIBRARY", "MICROPHONE", "MOTION", "NEARBY_INTERACTIONS", "PASSKEYS", "REMINDERS", "SPEECH_RECOGNITION", "WILLOW":
                     Text("\(permissionName)_FOOTER".localize(table: table))
                 case "App Clips":
                     switch appClipPermission {
-                    case "CAMERA", "MICROPHONE":
-                        Text("App clips that have requested access to the \(appClipPermission.lowercased()) will appear here.")
+                    case "BT_PERIPHERAL":
+                        Text("BT_PERIPHERAL_CLIPS_FOOTER", tableName: dsTable)
+                    case "CAMERA":
+                        Text("CAMERA_CLIPS_FOOTER", tableName: dsTable)
+                    case "MICROPHONE":
+                        Text("MICROPHONE_CLIPS_FOOTER", tableName: dsTable)
                     default:
                         Text("App clips that have requested access to use \(appClipPermission) will appear here.")
                     }
                 case "FOCUS":
-                    Text("Apps that have requested the ability to see and share your Focus status will appear here.")
+                    Text("AVAILABILITY_STATUS_APP_LIST_FOOTER", tableName: "FocusSettings")
                 case "HEALTH", "Research Sensor & Usage Data":
                     EmptyView()
                 default:
@@ -116,11 +126,26 @@ struct AppPermissionsView: View {
                 }
             }
         }
+        .onOpenURL { url in
+            if url.absoluteString == "pref://" {
+                showingSheet = true
+            }
+        }
+        .sheet(isPresented: $showingSheet) {
+            OnBoardingKitView(bundleID: "com.apple.onboarding.\(bundle)")
+                .ignoresSafeArea()
+        }
     }
 }
 
 #Preview("App Clips") {
     NavigationStack {
         AppPermissionsView(permissionName: "App Clips", appClipPermission: "CAMERA")
+    }
+}
+
+#Preview("Camera") {
+    NavigationStack {
+        AppPermissionsView(permissionName: "CAMERA")
     }
 }
