@@ -6,12 +6,15 @@ A view for displaying options regarding Privacy & Security based on the given pe
 import SwiftUI
 
 /// A `CustomList` container for displaying options regarding Privacy & Security based on the given `permissionName` String.
+///
 /// ```swift
-/// AppPermissionsView(permissionName: "Contacts")
+/// AppPermissionsView(permissionName: "App Clips")
 /// ```
+///
 /// ```swift
-/// AppPermissionsView(permissionName: "Camera", appClipPermission: "Camera")
+/// AppPermissionsView(permissionName: "App Clips", appClipPermission: "Camera")
 /// ```
+///
 /// - Parameter permissionName: The String to display as the navigation title.
 /// - Parameter appClipsPermission: The  optional String to use when relating to App Clips.
 struct AppPermissionsView: View {
@@ -31,73 +34,9 @@ struct AppPermissionsView: View {
                         Text("CAMERA_HEADER", tableName: table)
                     }
                 }
-            case "CALENDARS":
-                Section {
-                    VStack(alignment: .leading) {
-                        ZStack {
-                            RoundedRectangle(cornerSize: CGSize(width: 10, height: 10))
-                                .foregroundStyle(Color(UIColor.systemGray5))
-                                .shadow(radius: 1)
-                                .frame(width: 280, height: 75)
-                                .padding(.top, 40)
-                            RoundedRectangle(cornerSize: CGSize(width: 10, height: 10))
-                                .foregroundStyle(Color(UIColor.systemGray5))
-                                .shadow(radius: 1)
-                                .frame(width: 300, height: 75)
-                                .padding(.top, 20)
-                            RoundedRectangle(cornerSize: CGSize(width: 10, height: 10))
-                                .foregroundStyle(Color(UIColor.systemGray5))
-                                .shadow(radius: 1)
-                                .frame(width: 320, height: 75)
-                            HStack {
-                                VStack(alignment: .leading) {
-                                    Text("SUNDAY, MAR 10")
-                                        .foregroundColor(.red)
-                                        .font(.caption)
-                                        .fontWeight(.semibold)
-                                    HStack {
-                                        RoundedRectangle(cornerSize: CGSize(width: 10, height: 10))
-                                            .foregroundStyle(Color(UIColor.systemPurple))
-                                            .frame(width: 3, height: 30)
-                                        VStack(alignment: .leading) {
-                                            Text("**Daylight Saving Time**")
-                                                .font(.caption)
-                                                .foregroundStyle(.secondary)
-                                            Text("**all-day**")
-                                                .font(.caption)
-                                                .foregroundStyle(.secondary)
-                                        }
-                                    }
-                                }
-                                .padding(15)
-                                Spacer()
-                            }
-                        }
-                        .drawingGroup()
-                        .padding()
-                        .padding(.top, -30)
-                        Text("CALENDARS_PREVIEW_TABLE_TITLE", tableName: table)
-                            .bold()
-                            .font(.callout)
-                            .padding(.leading)
-                        Text("3 calendars, 50 events in the next year")
-                            .foregroundStyle(.secondary)
-                            .font(.subheadline)
-                            .padding(.leading)
-                    }
-                } footer: {
-                    Text("CALENDARS_PRIVACY_DESCRIPTION", tableName: table)
-                }
             case "CAMERA":
                 Section {} footer: {
                     Text("CAMERA_HEADER", tableName: table)
-                }
-            case "CONTACTS":
-                Section {
-                    Text("0 Contacts")
-                        .fontWeight(.semibold)
-                } footer: {
-                    Text("CONTACTS_PRIVACY_FOOTER", tableName: table)
                 }
             case "FOCUS":
                 Section {} footer: {
@@ -136,26 +75,11 @@ struct AppPermissionsView: View {
                 } footer: {
                     Text("FITNESS_TRACKING_PRIVACY", tableName: table)
                 }
-            case "PHOTOS":
-                Section {
-                    VStack(alignment: .leading) {
-                        Text("**Full Photo Library Access**")
-                        Text("No Items")
-                            .foregroundStyle(.secondary)
-                    }
-                    .padding(3)
-                } footer: {
-                    Text("PHOTOS_GRID_FOOTER", tableName: table)
-                }
             case "Research Sensor & Usage Data":
                 Section {
                     Button("Enable Sensor & Usage Data Collection") {}
                 } footer: {
                     Text("Sensor & Usage Data is sensitive research data that allows apps and studies to access certain important sources of information that are otherwise unavailable. [Learn more about Sensor & Usage Data...](#)")
-                }
-            case "WALLET":
-                Section {} footer: {
-                    Text("Your data is encrypted on your device and can only be shared with your permission.")
                 }
             default:
                 EmptyView()
@@ -174,7 +98,7 @@ struct AppPermissionsView: View {
                 }
             } footer: {
                 switch permissionName {
-                case "ACCESSORY_SETUP", "BT_PERIPHERAL", "CAMERA", "FILEACCESS", "LOCAL_NETWORK", "MEDIALIBRARY", "MICROPHONE", "MOTION", "NEARBY_INTERACTIONS", "PASSKEYS", "REMINDERS", "SPEECH_RECOGNITION", "WILLOW":
+                case "ACCESSORY_SETUP", "BT_PERIPHERAL", "CAMERA", "LOCAL_NETWORK", "MEDIALIBRARY", "MICROPHONE", "MOTION", "NEARBY_INTERACTIONS", "PASSKEYS", "REMINDERS", "SPEECH_RECOGNITION", "WILLOW":
                     Text("\(permissionName)_FOOTER".localize(table: table))
                 case "App Clips":
                     switch appClipPermission {
@@ -183,18 +107,10 @@ struct AppPermissionsView: View {
                     default:
                         Text("App clips that have requested access to use \(appClipPermission) will appear here.")
                     }
-                case "CALENDARS":
-                    Text("CALENDARS_NO_APP_FOOTER", tableName: table)
-                case "CONTACTS":
-                    Text("CONTACTS_NO_APP_FOOTER", tableName: table)
                 case "FOCUS":
                     Text("Apps that have requested the ability to see and share your Focus status will appear here.")
                 case "HEALTH", "Research Sensor & Usage Data":
                     EmptyView()
-                case "PHOTOS":
-                    Text("PHOTOS_NO_APP_FOOTER", tableName: table)
-                case "WALLET":
-                    Text("Apps that have requested access to your financial account will appear here.")
                 default:
                     Text("Applications that have requested the ability to use \(permissionName) will appear here.")
                 }
@@ -206,11 +122,5 @@ struct AppPermissionsView: View {
 #Preview("App Clips") {
     NavigationStack {
         AppPermissionsView(permissionName: "App Clips", appClipPermission: "CAMERA")
-    }
-}
-
-#Preview("Calendars") {
-    NavigationStack {
-        AppPermissionsView(permissionName: "CALENDARS")
     }
 }

@@ -33,13 +33,13 @@ struct PrivacySecurityView: View {
             // MARK: App Permissions
             Section {
                 SettingsLink(icon: "appleCalendar", id: "CALENDARS".localize(table: table), subtitle: "CALENDARS_NO_ACCESS_AUTHORIZATION".localize(table: table)) {
-                    AppPermissionsView(permissionName: "CALENDARS")
+                    BundleControllerView("/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework/PrivacySettingsUI", controller: "PUICalendarPrivacyController", title: "CALENDARS", table: table)
                 }
                 SettingsLink(icon: "appleContacts", id: "CONTACTS".localize(table: table), subtitle: "CONTACTS_NO_ACCESS_AUTHORIZATION".localize(table: table)) {
-                    AppPermissionsView(permissionName: "CONTACTS")
+                    BundleControllerView("/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework/PrivacySettingsUI", controller: "PUIContactsPrivacyController", title: "CONTACTS", table: table)
                 }
                 SettingsLink(icon: "appleFiles", id: "FILEACCESS".localize(table: table), subtitle: "None".localize(table: psTable)) {
-                    AppPermissionsView(permissionName: "FILEACCESS")
+                    BundleControllerView("/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework/PrivacySettingsUI", controller: "PUIFileAccessController", title: "FILEACCESS", table: table)
                 }
                 SettingsLink(color: .indigo, icon: "moon.fill", id: "FOCUS".localize(table: table), subtitle: "None".localize(table: psTable)) {
                     AppPermissionsView(permissionName: "FOCUS")
@@ -57,14 +57,14 @@ struct PrivacySecurityView: View {
                     AppPermissionsView(permissionName: "PASSKEYS")
                 }
                 SettingsLink(icon: "applePhotos", id: "PHOTOS".localize(table: table), subtitle: "PHOTOS_NO_ACCESS_AUTHORIZATION".localize(table: table)) {
-                    AppPermissionsView(permissionName: "PHOTOS")
+                    BundleControllerView("/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework/PrivacySettingsUI", controller: "PUIPhotosPrivacyController", title: "PHOTOS", table: table)
                 }
                 SettingsLink(icon: "appleReminders", id: "REMINDERS".localize(table: table), subtitle: "CONTACTS_NO_ACCESS_AUTHORIZATION".localize(table: table)) {
                     AppPermissionsView(permissionName: "REMINDERS")
                 }
                 if UIDevice.iPhone {
                     SettingsLink(icon: "appleWallet", id: "WALLET".localize(table: table), subtitle: "CONTACTS_NO_ACCESS_AUTHORIZATION".localize(table: table)) {
-                        AppPermissionsView(permissionName: "WALLET")
+                        BundleControllerView("/System/Library/PreferenceBundles/Privacy/WalletPrivacySettings.bundle/WalletPrivacySettings", controller: "WalletPrivacySettings.WalletPrivacySettingsController", title: "WALLET", table: table)
                     }
                 }
             }

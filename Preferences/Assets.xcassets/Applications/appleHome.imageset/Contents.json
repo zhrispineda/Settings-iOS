@@ -3,6 +3,16 @@
     {
       "filename" : "AppIcon60x60@2x.png",
       "idiom" : "universal"
+    },
+    {
+      "appearances" : [
+        {
+          "appearance" : "luminosity",
+          "value" : "dark"
+        }
+      ],
+      "filename" : "Home.svg",
+      "idiom" : "universal"
     }
   ],
   "info" : {
