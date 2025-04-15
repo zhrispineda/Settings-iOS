@@ -20,7 +20,8 @@ struct NameView: View {
                 TextField("Device_Name".localize(table: table), text: $deviceName, prompt: Text(UIDevice.current.model))
                     .focused($focusedName)
                     .onAppear {
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                        Task {
+                            try await Task.sleep(for: .seconds(1))
                             self.focusedName = true
                         }
                     }

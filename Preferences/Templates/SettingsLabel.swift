@@ -49,6 +49,5 @@ struct SettingsLabel: View {
 }
 
 #Preview {
-    ContentView()
-        .environmentObject(StateManager())
+    ContentView(stateManager: StateManager())
 }

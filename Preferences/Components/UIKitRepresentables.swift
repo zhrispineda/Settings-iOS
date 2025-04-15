@@ -73,7 +73,7 @@ struct OBCombinedSplashView: UIViewControllerRepresentable {
     func updateUIViewController(_ uiViewController: UIViewController, context: Context) {
         if showingSheet {
             context.coordinator.trigger()
-            DispatchQueue.main.async {
+            Task {
                 self.showingSheet = false
             }
         }

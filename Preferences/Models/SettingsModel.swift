@@ -17,10 +17,10 @@ let configuration = Configuration()
 
 // MARK: - State Manager
 /// Class for managing the state of the app's NavigationStack selection variable and destination view.
-class StateManager: ObservableObject {
-    @Published var destination = AnyView(GeneralView())
-    @Published var selection: SettingsModel? = .general
-    @Published var path: NavigationPath = NavigationPath()
+@Observable class StateManager {
+    var destination = AnyView(GeneralView())
+    var selection: SettingsModel? = .general
+    var path: NavigationPath = NavigationPath()
 }
 
 protocol Routable: Hashable {

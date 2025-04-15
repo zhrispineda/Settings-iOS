@@ -20,264 +20,262 @@ struct ContentView: View {
     @AppStorage("WiFi") private var wifiEnabled = true
     @AppStorage("Bluetooth") private var bluetoothEnabled = true
     @AppStorage("VPNToggle") private var VPNEnabled = true
-    @EnvironmentObject var stateManager: StateManager
+    @Bindable var stateManager: StateManager
     @State private var searchFocused = false
     @State private var searchText = String()
     @State private var showingSignInSheet = false
-    @State private var isOnLandscapeOrientation: Bool = UIDevice.current.orientation.isLandscape
+    @State private var isLandscape = false
     @State private var id = UUID()
-    @State private var preloadRect = false
+    @State private var preloadRect = true
     
-    init() {
+    init(stateManager: StateManager) {
+        self._stateManager = Bindable(stateManager)
         try? Tips.configure()
     }
     
     var body: some View {
-        ZStack {
-            Color.primary
-                .opacity(0.3)
-                .ignoresSafeArea()
-            HStack(spacing: 0.25) {
-                NavigationStack(path: $stateManager.path) {
-                    // MARK: - iPadOS Settings
-                    if UIDevice.iPad {
-                        List(selection: $stateManager.selection) {
-                            if !preloadRect {
-                                Section {
-                                    Rectangle()
-                                        .foregroundStyle(Color.clear)
-                                        .listRowBackground(Color.clear)
-                                        .frame(height: 25)
-                                }
-                            }
-                            
-                            Button {
-                                showingSignInSheet.toggle()
-                            } label: {
-                                AppleAccountSection()
-                            }
-                            .foregroundStyle(.primary)
-                            
-                            if siriEnabled && UIDevice.IntelligenceCapability {
-                                // MARK: TipKit Section
-                                Section {
-                                    ImageCreationTipView()
-                                }
-                            }
-                            
-                            if !followUpDismissed && !UIDevice.IsSimulator {
-                                Section {
-                                    Button {
-                                        id = UUID() // Reset destination
-                                        stateManager.selection = .followUp
-                                    } label: {
-                                        SettingsLabel(id: "FOLLOWUP_TITLE".localize(table: "FollowUp"), badgeCount: 1)
-                                            .foregroundStyle(Color(UIColor.label))
+        GeometryReader { geometry in
+            ZStack {
+                Color.primary
+                    .opacity(0.3)
+                    .ignoresSafeArea()
+                HStack(spacing: 0.25) {
+                    NavigationStack(path: $stateManager.path) {
+                        // MARK: - iPadOS Settings
+                        if UIDevice.iPad {
+                            List(selection: $stateManager.selection) {
+                                if !preloadRect {
+                                    Section {
+                                        Rectangle()
+                                            .foregroundStyle(Color.clear)
+                                            .listRowBackground(Color.clear)
+                                            .frame(height: 25)
                                     }
                                 }
-                            }
-                            
-                            // MARK: Radio Settings
-                            if !UIDevice.IsSimulator {
-                                Section {
-                                    IconToggle(enabled: $airplaneModeEnabled, color: Color.orange, icon: "airplane", title: "Airplane Mode")
-                                    ForEach(radioSettings) { setting in
-                                        if !phoneOnly.contains(setting.id) && requiredCapabilities(capability: setting.capability) {
-                                            Button {
-                                                id = UUID() // Reset destination
-                                                stateManager.selection = setting.type
-                                            } label: {
-                                                SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Wi-Fi" ? (wifiEnabled && !airplaneModeEnabled ? "Not Connected" : "Off") : setting.id == "Bluetooth" ? (bluetoothEnabled ? "On" : "Off") : "")
-                                            }
-                                            .foregroundColor(.primary)
-                                            .listRowBackground(stateManager.selection == setting.type ? (UIDevice.IsSimulator ? Color.blue : .selected) : nil)
-                                        }
-                                    }
-                                    if requiredCapabilities(capability: .vpn) {
-                                        IconToggle(enabled: $VPNEnabled, color: .blue, icon: "network.connected.to.line.below", title: "VPN")
-                                    }
-                                }
-                            }
-                            
-                            // MARK: Main
-                            SettingsLabelSection(selection: $stateManager.selection, id: $id, item: UIDevice.IsSimulator ? simulatorMainSettings : mainSettings)
-                            
-                            // MARK: Attention
-                            SettingsLabelSection(selection: $stateManager.selection, id: $id, item: UIDevice.IsSimulator ? attentionSimulatorSettings : attentionSettings)
-                            
-                            // MARK: Security
-                            SettingsLabelSection(selection: $stateManager.selection, id: $id, item: UIDevice.IsSimulator ? simulatorSecuritySettings : securitySettings)
-                            
-                            // MARK: Services
-                            SettingsLabelSection(selection: $stateManager.selection, id: $id, item: UIDevice.IsSimulator ? simulatorServiceSettings : serviceSettings)
-                            
-                            // MARK: Apps
-                            SettingsLabelSection(selection: $stateManager.selection, id: $id, item: appsSettings)
-                            
-                            // MARK: Developer
-                            SettingsLabelSection(selection: $stateManager.selection, id: $id, item: developerSettings)
-                        }
-                        .navigationTitle("Settings")
-                        .onAppear {
-                            Task {
-                                try await Task.sleep(nanoseconds: 500_000_000)
-                                withAnimation { preloadRect = true }
-                            }
-                        }
-                        .sheet(isPresented: $showingSignInSheet) {
-                            NavigationStack {
-                                SelectSignInOptionView()
-                                    .interactiveDismissDisabled()
-                            }
-                        }
-                        .searchable(text: $searchText, isPresented: $searchFocused, placement: .navigationBarDrawer(displayMode: .automatic))
-                        .overlay {
-                            if searchFocused {
-                                GeometryReader { geo in
-                                    List {
-                                        if searchText.isEmpty {
-                                            Section("Suggestions") {}
-                                        } else {
-                                            ContentUnavailableView.search(text: searchText)
-                                                .frame(minHeight: 0, idealHeight: geo.size.height, maxHeight: .infinity)
-                                                .edgesIgnoringSafeArea(.all)
-                                                .listRowSeparator(.hidden)
-                                        }
-                                    }
-                                    .scrollDisabled(!searchText.isEmpty)
-                                    .listStyle(.inset)
-                                }
-                            }
-                        }
-                        .onReceive(NotificationCenter.default.publisher(for: UIDevice.orientationDidChangeNotification)) { _ in
-                            if UIDevice.current.orientation.rawValue <= 4 {
-                                // Changes frame sizes when changing orientation on iPadOS
-                                isOnLandscapeOrientation = UIDevice.current.orientation.isLandscape
-                            }
-                        }
-                        .task {
-                            if UIDevice.current.orientation.rawValue <= 4 {
-                                isOnLandscapeOrientation = UIDevice.current.orientation.isLandscape
-                            }
-                        }
-                        .onChange(of: stateManager.selection) { // Change views when selecting sidebar navigation links
-                            if let selectedSettingsItem = combinedSettings.first(where: { $0.type == stateManager.selection }) {
-                                stateManager.destination = selectedSettingsItem.destination
-                            }
-                        }
-                    } else {
-                        // MARK: - iOS Settings
-                        List {
-                            Section { // Apple Account Section
+                                
                                 Button {
                                     showingSignInSheet.toggle()
                                 } label: {
-                                    NavigationLink{} label: {
-                                        AppleAccountSection()
-                                    }
+                                    AppleAccountSection()
                                 }
                                 .foregroundStyle(.primary)
-                                .sheet(isPresented: $showingSignInSheet) {
-                                    NavigationStack {
-                                        SelectSignInOptionView()
-                                            .interactiveDismissDisabled()
+                                
+                                if siriEnabled && UIDevice.IntelligenceCapability {
+                                    // MARK: TipKit Section
+                                    Section {
+                                        ImageCreationTipView()
                                     }
                                 }
-                            }
-                            
-                            if siriEnabled && UIDevice.IntelligenceCapability {
-                                // MARK: TipKit Section
-                                Section {
-                                    ImageCreationTipView()
-                                }
-                            }
-                            
-                            if !followUpDismissed && !UIDevice.IsSimulator {
-                                Section {
-                                    SettingsLink(icon: "None", id: "FOLLOWUP_TITLE".localize(table: "FollowUp"), badgeCount: 1) {
-                                        FollowUpView()
+                                
+                                if !followUpDismissed && !UIDevice.IsSimulator {
+                                    Section {
+                                        Button {
+                                            id = UUID() // Reset destination
+                                            stateManager.selection = .followUp
+                                        } label: {
+                                            SettingsLabel(id: "FOLLOWUP_TITLE".localize(table: "FollowUp"), badgeCount: 1)
+                                                .foregroundStyle(Color(UIColor.label))
+                                        }
                                     }
                                 }
-                            }
-                            
-                            if !UIDevice.IsSimulator {
+                                
                                 // MARK: Radio Settings
-                                Section {
-                                    IconToggle(enabled: $airplaneModeEnabled, color: Color.orange, icon: "airplane", title: "Airplane Mode")
-                                    ForEach(radioSettings) { setting in
-                                        if setting.capability == .none {
-                                            SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Wi-Fi" ? (wifiEnabled && !airplaneModeEnabled ? "Not Connected" : "Off") : setting.id == "Bluetooth" ? (bluetoothEnabled ? "On" : "Off") : "") {
-                                                setting.destination
+                                if !UIDevice.IsSimulator {
+                                    Section {
+                                        IconToggle(enabled: $airplaneModeEnabled, color: Color.orange, icon: "airplane", title: "Airplane Mode")
+                                        ForEach(radioSettings) { setting in
+                                            if !phoneOnly.contains(setting.id) && requiredCapabilities(capability: setting.capability) {
+                                                Button {
+                                                    id = UUID() // Reset destination
+                                                    stateManager.selection = setting.type
+                                                } label: {
+                                                    SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Wi-Fi" ? (wifiEnabled && !airplaneModeEnabled ? "Not Connected" : "Off") : setting.id == "Bluetooth" ? (bluetoothEnabled ? "On" : "Off") : "")
+                                                }
+                                                .foregroundColor(.primary)
+                                                .listRowBackground(stateManager.selection == setting.type ? (UIDevice.IsSimulator ? Color.blue : .selected) : nil)
                                             }
-                                            .accessibilityLabel(setting.id)
-                                        } else if requiredCapabilities(capability: setting.capability) {
-                                            SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Cellular" && airplaneModeEnabled ? "Airplane Mode" : setting.id == "Personal Hotspot" ? "Off" : "") {
-                                                setting.destination
-                                            }
-                                            .disabled(setting.id == "Personal Hotspot" && airplaneModeEnabled)
-                                            .accessibilityLabel(setting.id)
+                                        }
+                                        if requiredCapabilities(capability: .vpn) {
+                                            IconToggle(enabled: $VPNEnabled, color: .blue, icon: "network.connected.to.line.below", title: "VPN")
                                         }
                                     }
-                                    if requiredCapabilities(capability: .vpn) {
-                                        IconToggle(enabled: $VPNEnabled, color: .blue, icon: "network.connected.to.line.below", title: "VPN")
+                                }
+                                
+                                // MARK: Main
+                                SettingsLabelSection(selection: $stateManager.selection, id: $id, item: UIDevice.IsSimulator ? simulatorMainSettings : mainSettings)
+                                
+                                // MARK: Attention
+                                SettingsLabelSection(selection: $stateManager.selection, id: $id, item: UIDevice.IsSimulator ? attentionSimulatorSettings : attentionSettings)
+                                
+                                // MARK: Security
+                                SettingsLabelSection(selection: $stateManager.selection, id: $id, item: UIDevice.IsSimulator ? simulatorSecuritySettings : securitySettings)
+                                
+                                // MARK: Services
+                                SettingsLabelSection(selection: $stateManager.selection, id: $id, item: UIDevice.IsSimulator ? simulatorServiceSettings : serviceSettings)
+                                
+                                // MARK: Apps
+                                SettingsLabelSection(selection: $stateManager.selection, id: $id, item: appsSettings)
+                                
+                                // MARK: Developer
+                                SettingsLabelSection(selection: $stateManager.selection, id: $id, item: developerSettings)
+                            }
+                            .navigationTitle("Settings")
+                            .onAppear {
+                                isLandscape = geometry.size.width > 800
+                                
+                                Task {
+                                    withAnimation { preloadRect = false }
+                                    try await Task.sleep(for: .seconds(1))
+                                    withAnimation { preloadRect = true }
+                                }
+                            }
+                            .sheet(isPresented: $showingSignInSheet) {
+                                NavigationStack {
+                                    SelectSignInOptionView()
+                                        .interactiveDismissDisabled()
+                                }
+                            }
+                            .searchable(text: $searchText, isPresented: $searchFocused, placement: .navigationBarDrawer(displayMode: .automatic))
+                            .overlay {
+                                if searchFocused {
+                                    GeometryReader { geo in
+                                        List {
+                                            if searchText.isEmpty {
+                                                Section("Suggestions") {}
+                                            } else {
+                                                ContentUnavailableView.search(text: searchText)
+                                                    .frame(minHeight: 0, idealHeight: geo.size.height, maxHeight: .infinity)
+                                                    .edgesIgnoringSafeArea(.all)
+                                                    .listRowSeparator(.hidden)
+                                            }
+                                        }
+                                        .scrollDisabled(!searchText.isEmpty)
+                                        .listStyle(.inset)
                                     }
                                 }
                             }
-                            
-                            // MARK: Main Settings
-                            SettingsLinkSection(item: UIDevice.IsSimulator ? simulatorMainSettings : mainSettings)
-                            
-                            // MARK: Attention
-                            SettingsLinkSection(item: UIDevice.IsSimulator ? attentionSimulatorSettings : attentionSettings)
-                            
-                            // MARK: Security
-                            SettingsLinkSection(item: UIDevice.IsSimulator ? simulatorSecuritySettings : securitySettings)
-                            
-                            // MARK: Services
-                            SettingsLinkSection(item: UIDevice.IsSimulator ? simulatorServiceSettings : serviceSettings)
-                            
-                            // MARK: Apps
-                            SettingsLinkSection(item: appsSettings)
-                            
-                            // MARK: Developer
-                            if UIDevice.IsSimulator || configuration.developerMode {
-                                SettingsLinkSection(item: developerSettings)
+                            .onChange(of: geometry.size.width) {
+                                isLandscape = geometry.size.width > 800
                             }
-                        }
-                        .navigationDestination(for: AnyRoute.self) { route in
-                            route.destination()
-                        }
-                        .navigationTitle("Settings")
-                        .searchable(text: $searchText, isPresented: $searchFocused, placement: .navigationBarDrawer(displayMode: .automatic))
-                        .overlay {
-                            if searchFocused {
-                                GeometryReader { geo in
-                                    List {
-                                        if searchText.isEmpty {
-                                            SettingsSearchView()
-                                        } else {
-                                            ContentUnavailableView.search(text: searchText)
-                                                .frame(minHeight: 0, idealHeight: geo.size.height, maxHeight: .infinity)
-                                                .edgesIgnoringSafeArea(.all)
-                                                .listRowSeparator(.hidden)
-                                        }
-                                    }
-                                    .scrollDisabled(!searchText.isEmpty)
-                                    .listStyle(.inset)
+                            .onChange(of: stateManager.selection) { // Change views when selecting sidebar navigation links
+                                if let selectedSettingsItem = combinedSettings.first(where: { $0.type == stateManager.selection }) {
+                                    stateManager.destination = selectedSettingsItem.destination
                                 }
                             }
-                        }
-                    }
-                }
-                .frame(maxWidth: UIDevice.iPad ? (isOnLandscapeOrientation ? 415 : 320) : nil)
-                if UIDevice.iPad {
-                    NavigationStack(path: $stateManager.path) {
-                        stateManager.destination
+                        } else {
+                            // MARK: - iOS Settings
+                            List {
+                                Section { // Apple Account Section
+                                    Button {
+                                        showingSignInSheet.toggle()
+                                    } label: {
+                                        NavigationLink{} label: {
+                                            AppleAccountSection()
+                                        }
+                                    }
+                                    .foregroundStyle(.primary)
+                                    .sheet(isPresented: $showingSignInSheet) {
+                                        NavigationStack {
+                                            SelectSignInOptionView()
+                                                .interactiveDismissDisabled()
+                                        }
+                                    }
+                                }
+                                
+                                if siriEnabled && UIDevice.IntelligenceCapability {
+                                    // MARK: TipKit Section
+                                    Section {
+                                        ImageCreationTipView()
+                                    }
+                                }
+                                
+                                if !followUpDismissed && !UIDevice.IsSimulator {
+                                    Section {
+                                        SettingsLink(icon: "None", id: "FOLLOWUP_TITLE".localize(table: "FollowUp"), badgeCount: 1) {
+                                            FollowUpView()
+                                        }
+                                    }
+                                }
+                                
+                                if !UIDevice.IsSimulator {
+                                    // MARK: Radio Settings
+                                    Section {
+                                        IconToggle(enabled: $airplaneModeEnabled, color: Color.orange, icon: "airplane", title: "Airplane Mode")
+                                        ForEach(radioSettings) { setting in
+                                            if setting.capability == .none {
+                                                SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Wi-Fi" ? (wifiEnabled && !airplaneModeEnabled ? "Not Connected" : "Off") : setting.id == "Bluetooth" ? (bluetoothEnabled ? "On" : "Off") : "") {
+                                                    setting.destination
+                                                }
+                                                .accessibilityLabel(setting.id)
+                                            } else if requiredCapabilities(capability: setting.capability) {
+                                                SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Cellular" && airplaneModeEnabled ? "Airplane Mode" : setting.id == "Personal Hotspot" ? "Off" : "") {
+                                                    setting.destination
+                                                }
+                                                .disabled(setting.id == "Personal Hotspot" && airplaneModeEnabled)
+                                                .accessibilityLabel(setting.id)
+                                            }
+                                        }
+                                        if requiredCapabilities(capability: .vpn) {
+                                            IconToggle(enabled: $VPNEnabled, color: .blue, icon: "network.connected.to.line.below", title: "VPN")
+                                        }
+                                    }
+                                }
+                                
+                                // MARK: Main Settings
+                                SettingsLinkSection(item: UIDevice.IsSimulator ? simulatorMainSettings : mainSettings)
+                                
+                                // MARK: Attention
+                                SettingsLinkSection(item: UIDevice.IsSimulator ? attentionSimulatorSettings : attentionSettings)
+                                
+                                // MARK: Security
+                                SettingsLinkSection(item: UIDevice.IsSimulator ? simulatorSecuritySettings : securitySettings)
+                                
+                                // MARK: Services
+                                SettingsLinkSection(item: UIDevice.IsSimulator ? simulatorServiceSettings : serviceSettings)
+                                
+                                // MARK: Apps
+                                SettingsLinkSection(item: appsSettings)
+                                
+                                // MARK: Developer
+                                if UIDevice.IsSimulator || configuration.developerMode {
+                                    SettingsLinkSection(item: developerSettings)
+                                }
+                            }
                             .navigationDestination(for: AnyRoute.self) { route in
                                 route.destination()
                             }
+                            .navigationTitle("Settings")
+                            .searchable(text: $searchText, isPresented: $searchFocused, placement: .navigationBarDrawer(displayMode: .automatic))
+                            .overlay {
+                                if searchFocused {
+                                    GeometryReader { geo in
+                                        List {
+                                            if searchText.isEmpty {
+                                                SettingsSearchView()
+                                            } else {
+                                                ContentUnavailableView.search(text: searchText)
+                                                    .frame(minHeight: 0, idealHeight: geo.size.height, maxHeight: .infinity)
+                                                    .edgesIgnoringSafeArea(.all)
+                                                    .listRowSeparator(.hidden)
+                                            }
+                                        }
+                                        .scrollDisabled(!searchText.isEmpty)
+                                        .listStyle(.inset)
+                                    }
+                                }
+                            }
+                        }
                     }
-                    .id(id)
+                    .frame(maxWidth: UIDevice.iPad ? (isLandscape ? 415 : 320) : nil)
+                    if UIDevice.iPad {
+                        NavigationStack(path: $stateManager.path) {
+                            stateManager.destination
+                                .navigationDestination(for: AnyRoute.self) { route in
+                                    route.destination()
+                                }
+                        }
+                        .id(id)
+                    }
                 }
             }
         }
@@ -316,6 +314,5 @@ func requiredCapabilities(capability: Capabilities) -> Bool {
 }
 
 #Preview {
-    ContentView()
-        .environmentObject(StateManager())
+    ContentView(stateManager: StateManager())
 }

@@ -78,6 +78,5 @@ struct SettingsLink<Content: View>: View {
 }
 
 #Preview {
-    ContentView()
-        .environmentObject(StateManager())
+    ContentView(stateManager: StateManager())
 }

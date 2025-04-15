@@ -74,6 +74,5 @@ struct IconView: View {
 }
 
 #Preview {
-    ContentView()
-        .environmentObject(StateManager())
+    ContentView(stateManager: StateManager())
 }

@@ -55,21 +55,17 @@ struct SoftwareUpdateView: View {
                 .listRowBackground(Color.clear)
                 .frame(height: geometry.size.height/1.4)
                 .onAppear {
-                    checkUpdate(withDelay: Double.random(in: 0.1...5.0))
+                    Task {
+                        checkingForUpdates = true
+                        try await Task.sleep(for: .seconds(Double.random(in: 0.1...5.0)))
+                        withAnimation {
+                            checkingForUpdates.toggle()
+                        }
+                    }
                 }
             }
         }
         .refreshable {}
-    }
-    
-    // Functions
-    private func checkUpdate(withDelay delay: Double) {
-        checkingForUpdates = true
-        DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
-            withAnimation {
-                checkingForUpdates.toggle()
-            }
-        }
     }
 }
 
