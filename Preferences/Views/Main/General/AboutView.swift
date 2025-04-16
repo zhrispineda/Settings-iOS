@@ -31,7 +31,7 @@ struct AboutView: View {
                     CustomNavigationLink("Device_Name".localize(table: table), status: deviceName, destination: NameView())
                 }
                 
-                CustomNavigationLink("OS Version".localize(table: uiTable), status: UIDevice().systemVersion, destination: VersionView())
+                CustomNavigationLink("OS Version".localize(table: uiTable), status: UIDevice().systemVersion, destination: BundleControllerView("/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework/GeneralSettingsUI", controller: "PSGSoftwareVersionController", title: "OS Version", table: uiTable))
                     .textSelection(.enabled)
                 
                 LabeledContent("ProductModelName".localize(table: uiTable), value: UIDevice.fullModel)
