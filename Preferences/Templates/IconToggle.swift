@@ -6,6 +6,7 @@ A Toggle container with a rounded icon next to its label.
 import SwiftUI
 
 /// A Toggle container with a rounded icon next to its label.
+///
 /// ```swift
 /// var body: some View {
 ///     List {
@@ -13,6 +14,7 @@ import SwiftUI
 ///     }
 /// }
 /// ```
+///
 /// - Parameter color: The Color to use as the icon background.
 /// - Parameter icon: The String name of the image asset or symbol.
 /// - Parameter title: The String name of the label to display.
@@ -23,27 +25,25 @@ struct IconToggle: View {
     // Variables
     @Binding var enabled: Bool
     var color = Color.blue
-    var icon = String()
-    var title = String()
-    var subtitle = String()
+    var icon = ""
+    var title = ""
+    var subtitle = ""
     var iconColor = Color.white
     var table = "Localizable"
-    let lightOnlyIcons = ["airdrop", "shareplay"]
+    private let lightOnlyIcons: Set<String> = ["airdrop", "shareplay"]
     
     var body: some View {
         Toggle(isOn: $enabled) {
-            HStack(spacing: 15) {
-                IconView(id: title, icon: icon, color: color, iconColor: icon == "airdrop" ? Color.blue : iconColor, lightOnly: lightOnlyIcons.contains(icon))
+            Label {
+                Text(LocalizedStringKey(title.localize(table: table)))
                 
-                VStack(alignment: .leading, spacing: 0) {
-                    Text(LocalizedStringKey(title.localize(table: table)))
-                    
-                    if !subtitle.isEmpty {
-                        Text(subtitle.localize(table: table))
-                            .font(.footnote)
-                            .foregroundStyle(.secondary)
-                    }
+                if !subtitle.isEmpty {
+                    Text(subtitle.localize(table: table))
+                        .font(.footnote)
+                        .foregroundStyle(.secondary)
                 }
+            } icon: {
+                IconView(id: title, icon: icon, color: color, iconColor: icon == "airdrop" ? Color.blue : iconColor, lightOnly: lightOnlyIcons.contains(icon))
             }
         }
     }

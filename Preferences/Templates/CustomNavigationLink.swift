@@ -6,6 +6,7 @@ A NavigationLink container that displays an HStack with title, subtitle, and sta
 import SwiftUI
 
 /// A `NavigationLink` container that displays an `HStack` with title, subtitle, and status Text.
+///
 /// ```swift
 /// var body: some View {
 ///     List {
@@ -17,6 +18,7 @@ import SwiftUI
 ///     }
 /// }
 /// ```
+/// 
 /// - Parameter titleKey: The String to display as the description of the `NavigationLink`.
 /// - Parameter subtitle: The String text to display below the title.
 /// - Parameter status: The String displaying the state of the view within.

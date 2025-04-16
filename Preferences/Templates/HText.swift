@@ -6,6 +6,7 @@ An HStack container with title and status text on opposite sides for displaying 
 import SwiftUI
 
 /// An HStack container with title and status text on opposite sides for displaying information.
+///
 /// ```swift
 /// var body: some View {
 ///     List {
@@ -13,15 +14,16 @@ import SwiftUI
 ///     }
 /// }
 /// ```
+///
 /// - Parameter title: The String text identifying the label.
 /// - Parameter status: The String description of the title's state or information.
 /// - Parameter monospaced: The Bool for whether the `status` text is monospaced.
 struct HText: View {
-    var title = String()
-    var status = String()
+    var title = ""
+    var status = ""
     var monospaced = false
     
-    init(_ title: String = String(), status: String = String(), monospaced: Bool = false) {
+    init(_ title: String = "", status: String = "", monospaced: Bool = false) {
         self.title = title
         self.status = status
         self.monospaced = monospaced
@@ -41,5 +43,6 @@ struct HText: View {
 #Preview {
     List {
         HText("ABC", status: "123")
+        HText("XYZ", status: "789", monospaced: true)
     }
 }

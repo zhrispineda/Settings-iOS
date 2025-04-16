@@ -21,7 +21,7 @@ import SwiftUI
 struct CustomList<Content: View>: View {
     // Variables
     @State private var isLandscape = false
-    var title = String()
+    var title = ""
     var topPadding = false
     @ViewBuilder let content: Content
     
