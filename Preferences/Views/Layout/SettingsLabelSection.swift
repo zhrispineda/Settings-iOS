@@ -21,7 +21,7 @@ struct SettingsLabelSection: View {
                     Button {
                         showingSignInSheet.toggle()
                     } label: {
-                        SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id)
+                        SLabel(setting.id, color: setting.color, icon: setting.icon)
                     }
                     .foregroundStyle(.primary)
                     .sheet(isPresented: $showingSignInSheet) {
@@ -35,7 +35,7 @@ struct SettingsLabelSection: View {
                         id = UUID() // Reset destination
                         selection = setting.type
                     } label: {
-                        SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id)
+                        SLabel(setting.id, color: setting.color, icon: setting.icon)
                     }
                     .foregroundStyle(.primary)
                     .listRowBackground(selection == setting.type ? (UIDevice.IsSimulator ? Color.blue : .selected) : nil)

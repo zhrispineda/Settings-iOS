@@ -22,7 +22,7 @@ struct VPNDeviceManagementView: View {
         } else {
             CustomList(title: "VPN_DEVICE_MANAGEMENT".localize(table: "General")) {
                 Section {
-                    SettingsLabel(color: .blue, icon: "network.connected.to.line.below", id: "VPN", status: "Not Connected")
+                    SLabel("VPN", color: .blue, icon: "network.connected.to.line.below", status: "Not Connected")
                 }
                 
                 Button("Sign In to Work or School Account...") {}

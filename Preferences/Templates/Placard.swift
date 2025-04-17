@@ -1,14 +1,16 @@
 /*
 Abstract:
-A VStack container that is displayed at the top of lists to summarize common controls to be expected within.
+A VStack container that is displayed at the top of lists to summarize common controls to be expected below.
 */
 
 import SwiftUI
 
-/// A `VStack` container that is displayed at the top of lists to summarize common controls to be expected within.
+/// A `VStack` container that is displayed at the top of lists to summarize common controls to be expected below.
+///
 /// ```swift
 /// Placard(title: "General", color: Color.gray, icon: "gear", description: "Change common settings including checking for new updates.", frameY: .constant(0.0), opacity: .constant(0.0))
 /// ```
+///
 /// - Parameter title: The `String` to display as the navigation title of the `View`.
 /// - Parameter color: The `Color` of the icon background.
 /// - Parameter iconColor: The `Color` of the icon.
@@ -16,11 +18,11 @@ import SwiftUI
 /// - Parameter description: The `String` to display as the description below the title.
 struct Placard: View {
     // Variables
-    var title = String()
+    var title = ""
     var color = Color.blue
     var iconColor = Color.white
-    var icon = String()
-    var description = String()
+    var icon = ""
+    var description = ""
     var lightOnly = false
     @Binding var frameY: Double
     @Binding var opacity: Double

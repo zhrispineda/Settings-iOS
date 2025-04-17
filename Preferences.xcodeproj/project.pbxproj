@@ -120,7 +120,7 @@
 		835646082D9C480200DAB406 /* iPadOSReadMe.html in Resources */ = {isa = PBXBuildFile; fileRef = 835646072D9C480200DAB406 /* iPadOSReadMe.html */; };
 		8356460A2D9C4AB600DAB406 /* UIKitRepresentables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835646092D9C4AB600DAB406 /* UIKitRepresentables.swift */; };
 		835683922B753FDD000FB136 /* SettingsLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835683912B753FDD000FB136 /* SettingsLink.swift */; };
-		835683942B754623000FB136 /* SettingsLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835683932B754623000FB136 /* SettingsLabel.swift */; };
+		835683942B754623000FB136 /* SLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835683932B754623000FB136 /* SLabel.swift */; };
 		8356839B2B755AB3000FB136 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8356839A2B755AB3000FB136 /* KeyboardView.swift */; };
 		83585B712B88475A0046A0C3 /* DrivingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83585B702B88475A0046A0C3 /* DrivingView.swift */; };
 		83585B732B8847A70046A0C3 /* WalkingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83585B722B8847A70046A0C3 /* WalkingView.swift */; };
@@ -212,6 +212,8 @@
 		839C4CDD2D2B8E50007068BF /* LocalizedLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839C4CDC2D2B8E50007068BF /* LocalizedLink.swift */; };
 		839C6BCF2D9C612400F94C6E /* iOSReadMeSummary.html in Resources */ = {isa = PBXBuildFile; fileRef = 839C6BCE2D9C612400F94C6E /* iOSReadMeSummary.html */; };
 		839C6BEF2D9C6A3300F94C6E /* iPadOSReadMeSummary.html in Resources */ = {isa = PBXBuildFile; fileRef = 839C6BEE2D9C6A3300F94C6E /* iPadOSReadMeSummary.html */; };
+		839E0F0F2DB063A5009B26DB /* MusicSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 839E0F0E2DB063A5009B26DB /* MusicSettings.xcstrings */; };
+		839E0F472DB09C9E009B26DB /* ICBSettingsBundle.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 839E0F462DB09C9E009B26DB /* ICBSettingsBundle.xcstrings */; };
 		83A3E68F2CAB9743006F4643 /* AccessibilityTitles.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83A3E68E2CAB9743006F4643 /* AccessibilityTitles.xcstrings */; };
 		83A3E6932CAC2832006F4643 /* Accessibility-HapticMusic.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83A3E6922CAC2832006F4643 /* Accessibility-HapticMusic.xcstrings */; };
 		83A3E6952CAC3091006F4643 /* FocalLengthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A3E6942CAC3091006F4643 /* FocalLengthView.swift */; };
@@ -451,7 +453,7 @@
 		835646072D9C480200DAB406 /* iPadOSReadMe.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = iPadOSReadMe.html; sourceTree = "<group>"; };
 		835646092D9C4AB600DAB406 /* UIKitRepresentables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitRepresentables.swift; sourceTree = "<group>"; };
 		835683912B753FDD000FB136 /* SettingsLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLink.swift; sourceTree = "<group>"; };
-		835683932B754623000FB136 /* SettingsLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLabel.swift; sourceTree = "<group>"; };
+		835683932B754623000FB136 /* SLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLabel.swift; sourceTree = "<group>"; };
 		8356839A2B755AB3000FB136 /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
 		83585B702B88475A0046A0C3 /* DrivingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrivingView.swift; sourceTree = "<group>"; };
 		83585B722B8847A70046A0C3 /* WalkingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkingView.swift; sourceTree = "<group>"; };
@@ -545,6 +547,8 @@
 		839C4CDC2D2B8E50007068BF /* LocalizedLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedLink.swift; sourceTree = "<group>"; };
 		839C6BCE2D9C612400F94C6E /* iOSReadMeSummary.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = iOSReadMeSummary.html; sourceTree = "<group>"; };
 		839C6BEE2D9C6A3300F94C6E /* iPadOSReadMeSummary.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = iPadOSReadMeSummary.html; sourceTree = "<group>"; };
+		839E0F0E2DB063A5009B26DB /* MusicSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = MusicSettings.xcstrings; sourceTree = "<group>"; };
+		839E0F462DB09C9E009B26DB /* ICBSettingsBundle.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = ICBSettingsBundle.xcstrings; sourceTree = "<group>"; };
 		83A3E68E2CAB9743006F4643 /* AccessibilityTitles.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AccessibilityTitles.xcstrings; sourceTree = "<group>"; };
 		83A3E6922CAC2832006F4643 /* Accessibility-HapticMusic.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "Accessibility-HapticMusic.xcstrings"; sourceTree = "<group>"; };
 		83A3E6942CAC3091006F4643 /* FocalLengthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocalLengthView.swift; sourceTree = "<group>"; };
@@ -1209,7 +1213,7 @@
 				83A5DA502C2335580012ACB3 /* PermissionsView.swift */,
 				8361A2282C19308600A7D5CC /* Placard.swift */,
 				837C03082B7F1AE0004D6C71 /* SelectOptionList.swift */,
-				835683932B754623000FB136 /* SettingsLabel.swift */,
+				835683932B754623000FB136 /* SLabel.swift */,
 				835683912B753FDD000FB136 /* SettingsLink.swift */,
 				83DF95752B84266E00AEEB63 /* SiriDetailView.swift */,
 				833C6EB12C20CE7800A8D91C /* SearchDetailView.swift */,
@@ -1346,6 +1350,7 @@
 				8314482A2CD95F6500FFEE51 /* HealthUI-Localizable.xcstrings */,
 				831C1A4F2CCE9E3300866498 /* HomeScreenSettings.xcstrings */,
 				8317AB202CEE736B00989F15 /* iBooksSettings.xcstrings */,
+				839E0F462DB09C9E009B26DB /* ICBSettingsBundle.xcstrings */,
 				83F388642D0B777000085103 /* InstalledApps.xcstrings */,
 				83C79B922CE331A500F49B4F /* Localizable.xcstrings */,
 				83E748B12CC6BDDE0081D660 /* LocalizedStrings.xcstrings */,
@@ -1354,6 +1359,7 @@
 				830F2B312CD97C0A006F7F22 /* Messages.xcstrings */,
 				834A15072CD85B10004A0025 /* MobileCalSettings.xcstrings */,
 				83F3611D2CD2E48100041A72 /* MomentsOnboardingAndSettings.xcstrings */,
+				839E0F0E2DB063A5009B26DB /* MusicSettings.xcstrings */,
 				83F745B92CC18EC700FDB3BA /* NewDeviceOutreachUI.xcstrings */,
 				830F2B332CD9826E006F7F22 /* NewsSettings.xcstrings */,
 				83D241AC2D5CEC87002061F4 /* NotificationsSettings.xcstrings */,
@@ -1799,7 +1805,9 @@
 				83E50A0E2CDA7D7900BF4969 /* RemindersSettings.xcstrings in Resources */,
 				83C3F33D2CC2BA7800AE2402 /* GameControlleriOSSettings.xcstrings in Resources */,
 				83AA78922CCDA42400060BC2 /* AssistantAudioFeedback.xcstrings in Resources */,
+				839E0F0F2DB063A5009B26DB /* MusicSettings.xcstrings in Resources */,
 				837936162CDBE68B0020557B /* VideoSubscriberAccount.xcstrings in Resources */,
+				839E0F472DB09C9E009B26DB /* ICBSettingsBundle.xcstrings in Resources */,
 				832D84F22CD2B0A90075ECF0 /* DigitalSeparationUI.xcstrings in Resources */,
 				83C79B932CE331A500F49B4F /* Localizable.xcstrings in Resources */,
 				83F3611A2CD2D3E300041A72 /* CommunicationSafetySettingsUI.xcstrings in Resources */,
@@ -1918,7 +1926,7 @@
 				837C03072B7F192F004D6C71 /* AppInstallationsPurchasesView.swift in Sources */,
 				83815CE32B768D5800F53A0F /* PrivacySecurityView.swift in Sources */,
 				83898FD42B8AA25A0020C7BB /* ShortcutsAdvancedView.swift in Sources */,
-				835683942B754623000FB136 /* SettingsLabel.swift in Sources */,
+				835683942B754623000FB136 /* SLabel.swift in Sources */,
 				83F3F6A32B7D1454003CC310 /* VPNDeviceManagementView.swift in Sources */,
 				832EF38F2B814EC80066A1BF /* LocationPermissionsDetailView.swift in Sources */,
 				839C4CDD2D2B8E50007068BF /* LocalizedLink.swift in Sources */,

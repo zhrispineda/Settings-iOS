@@ -39,10 +39,10 @@ struct CustomList<Content: View>: View {
                 .padding(.top, topPadding ? 0 : -19)
             }
             .onAppear {
-                isLandscape = geo.size.width > 800
+                isLandscape = geo.size.width > geo.size.height
             }
             .onChange(of: geo.size.width) {
-                isLandscape = geo.size.width > 800
+                isLandscape = geo.size.width > geo.size.height
             }
         }
     }

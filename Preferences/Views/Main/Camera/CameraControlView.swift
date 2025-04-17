@@ -64,7 +64,7 @@ struct CameraControlView: View {
             Section {
                 Picker("CAPTURE_BUTTON_LAUNCH_APP_TITLE".localize(table: table), selection: $selectedApp) {
                     ForEach(apps) { app in
-                        SettingsLabel(color: .white, icon: app.icon, id: app.id.localize(table: table))
+                        SLabel(app.id.localize(table: table), color: .white, icon: app.icon)
                     }
                 }
                 .pickerStyle(.inline)

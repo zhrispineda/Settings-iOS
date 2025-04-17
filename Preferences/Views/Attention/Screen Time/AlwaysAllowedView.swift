@@ -19,9 +19,9 @@ struct AlwaysAllowedView: View {
     var body: some View {
         CustomList(title: "AlwaysAllowTitle".localize(table: table), topPadding: true) {
             Section {
-                SettingsLabel(icon: "applePhone", id: "Phone")
+                SLabel("Phone", icon: "applePhone")
                 ForEach($includedControls, id: \.self) { $control in
-                    SettingsLabel(icon: "apple\(control.localize(table: table))", id: control.localize(table: table))
+                    SLabel(control.localize(table: table), icon: "apple\(control.localize(table: table))")
                     // TODO: Figure out swipe controls (change from Delete to Remove) and alert for removing Messages
 //                        .swipeActions(edge: .trailing) {
 //                            Button(role: .destructive, action: {
@@ -94,7 +94,7 @@ struct AlwaysAllowedView: View {
                             }
                         }
                         .buttonStyle(.plain)
-                        SettingsLabel(icon: "apple\(control.localize(table: table))", id: control)
+                        SLabel(control, icon: "apple\(control.localize(table: table))")
                     }
                 }
             } header: {

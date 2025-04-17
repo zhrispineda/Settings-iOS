@@ -1,14 +1,16 @@
 /*
 Abstract:
-A CustomList container template for having options that can be selected and can also be customized.
+ A `CustomList` container template that has options that can be selected and customized.
 */
 
 import SwiftUI
 
-/// A `CustomList` container template for having options that can be selected and can also be customized.
+/// A `CustomList` container template that has options that can be selected and customized.
+///
 /// ```swift
 /// SelectOptionList(title: "Receive Updates", options: ["Yes", "No"], selected: "Yes")
 /// ```
+///
 /// - Parameter title: The `String` to display as the navigation title of the `View`.
 /// - Parameter options: The `String Array` of available options to pick from.
 /// - Parameter selectedBinding: The optional `String Binding` holding the currently selected value.
@@ -19,8 +21,8 @@ struct SelectOptionList: View {
     var title: String
     var options: [String] = []
     var selectedBinding: Binding<String>? = nil
-    @State var selected = String()
-    var table = String()
+    @State var selected = ""
+    var table = ""
     
     var body: some View {
         CustomList(title: title.localize(table: table)) {
@@ -58,10 +60,7 @@ struct SelectOptionList: View {
                         EmptyView()
                     }
                 case "ConnectWithFriendsSpecifierName":
-                    VStack(alignment: .leading) {
-                        Text("ConnectWithFriendsExplanatoryFooterText", tableName: table)
-                        Text("\n") + Text("ConnectWithFriendsContinuedExplanatoryText", tableName: table)
-                    }
+                    Text("\("ConnectWithFriendsExplanatoryFooterText".localize(table: table))\n\n\("ConnectWithFriendsContinuedExplanatoryText".localize(table: table))")
                 case "PrivateMessagingSpecifierName":
                     Text("PrivateMessagingFooter", tableName: table)
                 case "AUTOLOCK":
@@ -78,6 +77,6 @@ struct SelectOptionList: View {
 
 #Preview {
     NavigationStack {
-        SelectOptionList(title: "Receive Updates", options: ["Yes", "No"], selected: "Yes")
+        SelectOptionList(title: "Are you sure?", options: ["Yes", "No"], selected: "Yes")
     }
 }

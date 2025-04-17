@@ -73,7 +73,7 @@ struct ContentView: View {
                                             id = UUID() // Reset destination
                                             stateManager.selection = .followUp
                                         } label: {
-                                            SettingsLabel(id: "FOLLOWUP_TITLE".localize(table: "FollowUp"), badgeCount: 1)
+                                            SLabel("FOLLOWUP_TITLE".localize(table: "FollowUp"), badgeCount: 1)
                                                 .foregroundStyle(Color(UIColor.label))
                                         }
                                     }
@@ -89,7 +89,7 @@ struct ContentView: View {
                                                     id = UUID() // Reset destination
                                                     stateManager.selection = setting.type
                                                 } label: {
-                                                    SettingsLabel(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Wi-Fi" ? (wifiEnabled && !airplaneModeEnabled ? "Not Connected" : "Off") : setting.id == "Bluetooth" ? (bluetoothEnabled ? "On" : "Off") : "")
+                                                    SLabel(setting.id, color: setting.color, icon: setting.icon, status: setting.id == "Wi-Fi" ? (wifiEnabled && !airplaneModeEnabled ? "Not Connected" : "Off") : setting.id == "Bluetooth" ? (bluetoothEnabled ? "On" : "Off") : "")
                                                 }
                                                 .foregroundColor(.primary)
                                                 .listRowBackground(stateManager.selection == setting.type ? (UIDevice.IsSimulator ? Color.blue : .selected) : nil)
@@ -121,7 +121,7 @@ struct ContentView: View {
                             }
                             .navigationTitle("Settings")
                             .onAppear {
-                                isLandscape = geometry.size.width > 800
+                                isLandscape = geometry.size.width > geometry.size.height
                                 
                                 Task {
                                     withAnimation { preloadRect = false }
@@ -155,7 +155,7 @@ struct ContentView: View {
                                 }
                             }
                             .onChange(of: geometry.size.width) {
-                                isLandscape = geometry.size.width > 800
+                                isLandscape = geometry.size.width > geometry.size.height
                             }
                             .onChange(of: stateManager.selection) { // Change views when selecting sidebar navigation links
                                 if let selectedSettingsItem = combinedSettings.first(where: { $0.type == stateManager.selection }) {
@@ -266,7 +266,7 @@ struct ContentView: View {
                             }
                         }
                     }
-                    .frame(maxWidth: UIDevice.iPad ? (isLandscape ? 415 : 320) : nil)
+                    .frame(maxWidth: UIDevice.iPad ? (isLandscape ? 415 : 375) : nil)
                     if UIDevice.iPad {
                         NavigationStack(path: $stateManager.path) {
                             stateManager.destination
