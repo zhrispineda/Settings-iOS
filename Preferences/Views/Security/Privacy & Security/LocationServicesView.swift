@@ -29,15 +29,15 @@ struct LocationServicesView: View {
             
             if locationServicesEnabled {
                 Section {
-                    SettingsLink(color: .white, iconColor: .blue, icon: "appclip", id: "APP_CLIPS".localize(table: "Dim-Sum"), status: "0") { AppClipsView()
+                    SLink("APP_CLIPS".localize(table: "Dim-Sum"), color: .white, iconColor: .blue, icon: "appclip", status: "0") { AppClipsView()
                     }
-                    SettingsLink(icon: "Placeholder", id: "LOCATION_SHARING".localize(table: table), status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable)) {
+                    SLink("LOCATION_SHARING".localize(table: table), icon: "Placeholder", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable)) {
                         LocationPermissionsDetailView(title: "LOCATION_SHARING")
                     }
-                    SettingsLink(icon: "appleSiri", id: "Siri", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable)) {
+                    SLink("Siri", icon: "appleSiri", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable)) {
                         LocationPermissionsDetailView(title: "Siri")
                     }
-                    SettingsLink(color: .gray, icon: "gear", id: "SYSTEM_SERVICES".localize(table: table), status: "location.fill") {
+                    SLink("SYSTEM_SERVICES".localize(table: table), color: .gray, icon: "gear", status: "location.fill") {
                         SystemServicesView()
                     }
                 } footer: {

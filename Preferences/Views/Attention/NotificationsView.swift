@@ -132,7 +132,7 @@ struct NotificationsView: View {
             
             // MARK: App Notifications Section
             Section {
-                SettingsLink(icon: "applePhotos", id: "Photos", subtitle: "Banners, Sounds, Badges") {}
+                SLink("Photos", icon: "applePhotos", subtitle: "Banners, Sounds, Badges") {}
             } header: {
                 Text("NOTIFICATION_STYLE", tableName: table)
             }

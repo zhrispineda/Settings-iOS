@@ -25,13 +25,13 @@ struct AppleAccountView: View {
             .listRowBackground(Color.clear)
             
             Section {
-                SettingsLink(color: .gray, icon: "person.text.rectangle.fill", id: "SPYGLASS_SPECIFIER_PAYMENT_AND_SHIPPING".localize(table: table)) {}
-                SettingsLink(color: .gray, icon: "custom.key.shield.fill", id: "SPYGLASS_SPECIFIER_SIGNIN_AND_SECURITY".localize(table: table)) {}
+                SLink("SPYGLASS_SPECIFIER_PAYMENT_AND_SHIPPING".localize(table: table), color: .gray, icon: "person.text.rectangle.fill") {}
+                SLink("SPYGLASS_SPECIFIER_SIGNIN_AND_SECURITY".localize(table: table), color: .gray, icon: "custom.key.shield.fill") {}
             }
             
             Section {
                 Button {} label: {
-                    SettingsLink(icon: "iCloud", id: "ICLOUD_SERVICE_STORAGE_TITLE".localize(table: table), status: "Set Up") {}
+                    SLink("ICLOUD_SERVICE_STORAGE_TITLE".localize(table: table), icon: "iCloud", status: "Set Up") {}
                         .foregroundStyle(Color(.label))
                 }
             }

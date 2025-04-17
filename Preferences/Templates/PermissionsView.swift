@@ -61,10 +61,10 @@ struct PermissionsView: View {
                 IconToggle(enabled: $focusEnabled, color: .indigo, icon: "moon.fill", title: "FOCUS", table: table)
             }
             if location {
-                SettingsLink(color: .blue, icon: "location.fill", id: "LOCATION_SERVICES".localize(table: table), status: "NEVER_AUTHORIZATION".localize(table: "LocationServicesPrivacy")) {}
+                SLink("LOCATION_SERVICES".localize(table: table), color: .blue, icon: "location.fill", status: "NEVER_AUTHORIZATION".localize(table: "LocationServicesPrivacy")) {}
             }
             if photos {
-                SettingsLink(icon: "applePhotos", id: "PHOTOS".localize(table: table), status: "PHOTOS_LIMITED_AUTHORIZATION".localize(table: table)) {}
+                SLink("PHOTOS".localize(table: table), icon: "applePhotos", status: "PHOTOS_LIMITED_AUTHORIZATION".localize(table: table)) {}
             }
             if camera {
                 IconToggle(enabled: $cameraEnabled, color: .gray, icon: "camera.fill", title: "CAMERA", table: table)
@@ -74,23 +74,23 @@ struct PermissionsView: View {
             }
             if siri {
                 if UIDevice.IntelligenceCapability {
-                    SettingsLink(icon: "appleIntelligence", id: "Apple Intelligence & Siri") {
+                    SLink("Apple Intelligence & Siri", icon: "appleIntelligence") {
                         SiriDetailView(appName: appName)
                     }
                 } else {
-                    SettingsLink(icon: "appleSiri", id: "Siri") {
+                    SLink("Siri", icon: "appleSiri") {
                         SiriDetailView(appName: appName)
                     }
                 }
-                SettingsLink(color: .gray, icon: "magnifyingglass", id: "Search") {
+                SLink("Search", color: .gray, icon: "magnifyingglass") {
                     SearchDetailView(appName: appName, appTitle: false)
                 }
             }
             if notifications {
-                SettingsLink(color: .red, icon: "bell.badge.fill", id: "NOTIFICATIONS".localize(table: table), subtitle: appName == "Maps" ? "\("BANNER_ALERTS".localize(table: notifTable)), \("SOUNDS".localize(table: notifTable))" : "\("BANNER_ALERTS".localize(table: notifTable)), \("SOUNDS".localize(table: notifTable)), \("BADGES".localize(table: notifTable))") {}
+                SLink("NOTIFICATIONS".localize(table: table), color: .red, icon: "bell.badge.fill", subtitle: appName == "Maps" ? "\("BANNER_ALERTS".localize(table: notifTable)), \("SOUNDS".localize(table: notifTable))" : "\("BANNER_ALERTS".localize(table: notifTable)), \("SOUNDS".localize(table: notifTable)), \("BADGES".localize(table: notifTable))") {}
             }
             if liveActivity {
-                SettingsLink(color: .blue, icon: "clock.badge.fill", id: "LIVE_ACTIVITIES".localize(table: table)) {}
+                SLink("LIVE_ACTIVITIES".localize(table: table), color: .blue, icon: "clock.badge.fill") {}
             }
             if liveActivityToggle {
                 IconToggle(enabled: $liveActivityEnabled, color: .blue, icon: "clock.badge.fill", title: "LIVE_ACTIVITIES", table: table)
@@ -102,8 +102,8 @@ struct PermissionsView: View {
                 IconToggle(enabled: $cellularEnabled, color: .green, icon: "antenna.radiowaves.left.and.right", title: "CELLULAR_DATA", table: table)
             }
             if phone {
-                SettingsLink(color: .green, icon: "phone.arrow.down.left.fill", id: "INCOMING_CALL_STYLE_LIST_BANNER".localize(table: "ICBSettingsBundle"), status: "Banner") {}
-                SettingsLink(color: .red, icon: "phone.badge.waveform.fill", id: "ANNOUNCE_CALLS_TITLE".localize(table: "AssistantSettings"), status: "NEVER".localize(table: "MessagesSettings")) {}
+                SLink("INCOMING_CALL_STYLE_LIST_BANNER".localize(table: "ICBSettingsBundle"), color: .green, icon: "phone.arrow.down.left.fill", status: "Banner") {}
+                SLink("ANNOUNCE_CALLS_TITLE".localize(table: "AssistantSettings"), color: .red, icon: "phone.badge.waveform.fill", status: "NEVER".localize(table: "MessagesSettings")) {}
             }
         } header: {
             Text("ALLOW_ACCESS_FORMAT".localize(table: table, appName))

@@ -27,7 +27,7 @@ final class SettingsTopLevelPanesRenderTests: XCTestCase {
         app.launch()
         
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // MARK: Interact with SettingsLink buttons (Radio section)
+        // MARK: Interact with SLink buttons (Radio section)
         let buttons = ["Wi-Fi", "Bluetooth", "Cellular", "Battery"]
         
         for button in buttons {

@@ -47,20 +47,20 @@ struct ScreenTimeView: View {
             
             Section {
                 if appWebsiteActivityEnabled {
-                    SettingsLink(icon: "Downtime80x80", id: "AppAndWebsiteActivityEDUDowntimeTitle".localize(table: table), subtitle: "DeviceDowntimeDetailText".localize(table: table)) {
+                    SLink("AppAndWebsiteActivityEDUDowntimeTitle".localize(table: table), icon: "Downtime80x80", subtitle: "DeviceDowntimeDetailText".localize(table: table)) {
                         DowntimeView()
                     }
-                    SettingsLink(icon: "App Limits80x80", id: "AppAndWebsiteActivityEDUAppLimitsTitle".localize(table: table), subtitle: "AppLimitsDetailText".localize(table: table)) {
+                    SLink("AppAndWebsiteActivityEDUAppLimitsTitle".localize(table: table), icon: "App Limits80x80", subtitle: "AppLimitsDetailText".localize(table: table)) {
                         AppLimitsView()
                     }
-                    SettingsLink(icon: "AlwaysAllow29x29", id: "AlwaysAllowedSpecifierName".localize(table: table), subtitle: "AlwaysAllowDetailText".localize(table: table)) {
+                    SLink("AlwaysAllowedSpecifierName".localize(table: table), icon: "AlwaysAllow29x29", subtitle: "AlwaysAllowDetailText".localize(table: table)) {
                         AlwaysAllowedView()
                     }
                 } else {
                     Button {
                         showingAppWebsiteActivitySheet.toggle()
                     } label: {
-                        SettingsLink(color: Color.cyan, icon: "chart.bar.xaxis", lightOnly: true, id: "AppAndWebsiteActivitySpecifierName".localize(table: table), subtitle: "AppAndWebsiteActivitySpecifierSubtitleText".localize(table: table)) {}
+                        SLink("AppAndWebsiteActivitySpecifierName".localize(table: table), color: Color.cyan, icon: "chart.bar.xaxis", lightOnly: true, subtitle: "AppAndWebsiteActivitySpecifierSubtitleText".localize(table: table)) {}
                     }
                     .foregroundStyle(.primary)
                     .sheet(isPresented: $showingAppWebsiteActivitySheet) {
@@ -68,7 +68,7 @@ struct ScreenTimeView: View {
                             .frame(width: 400, height: 730)
                     }
                 }
-                SettingsLink(color: Color.white, iconColor: Color.blue, icon: "chevron.3.up.perspective", lightOnly: true, id: "ScreenDistanceSpecifierName".localize(table: table), subtitle: "ScreenDistanceSpecifierSubtitleText".localize(table: table)) {
+                SLink("ScreenDistanceSpecifierName".localize(table: table), color: Color.white, iconColor: Color.blue, icon: "chevron.3.up.perspective", lightOnly: true, subtitle: "ScreenDistanceSpecifierSubtitleText".localize(table: table)) {
                     ScreenDistanceView()
                         .onAppear {
                             showingScreenDistanceSheet.toggle()
@@ -84,10 +84,10 @@ struct ScreenTimeView: View {
             
             Section {
                 //CommunicationLimitsSpecifierName
-                SettingsLink(color: Color.green, icon: "person.crop.circle", lightOnly: true, id: "CommunicationLimitsSpecifierName".localize(table: table), subtitle: "AADC_CommunicationLimitsDetailText".localize(table: table)) {
+                SLink("CommunicationLimitsSpecifierName".localize(table: table), color: Color.green, icon: "person.crop.circle", lightOnly: true, subtitle: "AADC_CommunicationLimitsDetailText".localize(table: table)) {
                     EmptyView()
                 }
-                SettingsLink(color: Color.blue, icon: "bubble.left.and.exclamationmark.bubble.right.fill", lightOnly: true, id: "CommunicationSafetyTitle".localize(table: table), subtitle: "CommunicationSafetyOffSubtitle".localize(table: table)) {
+                SLink("CommunicationSafetyTitle".localize(table: table), color: Color.blue, icon: "bubble.left.and.exclamationmark.bubble.right.fill", lightOnly: true, subtitle: "CommunicationSafetyOffSubtitle".localize(table: table)) {
                     CommunicationSafetyView()
                         .onAppear {
                             showingCommunicationSafetySheet.toggle()
@@ -102,7 +102,7 @@ struct ScreenTimeView: View {
             }
             
             Section {
-                SettingsLink(color: Color.red, icon: "nosign", lightOnly: true, id: "ContentPrivacySpecifierName".localize(table: table), subtitle: "ContentPrivacyDetailText".localize(table: table)) {
+                SLink("ContentPrivacySpecifierName".localize(table: table), color: Color.red, icon: "nosign", lightOnly: true, subtitle: "ContentPrivacyDetailText".localize(table: table)) {
                     ContentPrivacyRestrictionsView()
                 }
             } header: {

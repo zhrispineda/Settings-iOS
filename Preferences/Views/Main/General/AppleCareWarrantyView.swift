@@ -14,7 +14,7 @@ struct AppleCareWarrantyView: View {
     var body: some View {
 //        CustomList(title: "AppleCare & Warranty", topPadding: true) {
 //            Section {
-//                SettingsLink(icon: UIDevice.current.model.lowercased(), id: UIDevice.current.model, subtitle: "Limited Warranty") {}
+//                SLink(icon: UIDevice.current.model.lowercased(), id: UIDevice.current.model, subtitle: "Limited Warranty") {}
 //            } header: {
 //                Text("This Device")
 //            } footer: {

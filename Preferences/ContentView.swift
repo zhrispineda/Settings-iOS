@@ -191,7 +191,7 @@ struct ContentView: View {
                                 
                                 if !followUpDismissed && !UIDevice.IsSimulator {
                                     Section {
-                                        SettingsLink(icon: "None", id: "FOLLOWUP_TITLE".localize(table: "FollowUp"), badgeCount: 1) {
+                                        SLink("FOLLOWUP_TITLE".localize(table: "FollowUp"), icon: "None", badgeCount: 1) {
                                             FollowUpView()
                                         }
                                     }
@@ -203,12 +203,12 @@ struct ContentView: View {
                                         IconToggle(enabled: $airplaneModeEnabled, color: Color.orange, icon: "airplane", title: "Airplane Mode")
                                         ForEach(radioSettings) { setting in
                                             if setting.capability == .none {
-                                                SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Wi-Fi" ? (wifiEnabled && !airplaneModeEnabled ? "Not Connected" : "Off") : setting.id == "Bluetooth" ? (bluetoothEnabled ? "On" : "Off") : "") {
+                                                SLink(setting.id, color: setting.color, icon: setting.icon, status: setting.id == "Wi-Fi" ? (wifiEnabled && !airplaneModeEnabled ? "Not Connected" : "Off") : setting.id == "Bluetooth" ? (bluetoothEnabled ? "On" : "Off") : "") {
                                                     setting.destination
                                                 }
                                                 .accessibilityLabel(setting.id)
                                             } else if requiredCapabilities(capability: setting.capability) {
-                                                SettingsLink(color: setting.color, icon: setting.icon, id: setting.id, status: setting.id == "Cellular" && airplaneModeEnabled ? "Airplane Mode" : setting.id == "Personal Hotspot" ? "Off" : "") {
+                                                SLink(setting.id, color: setting.color, icon: setting.icon, status: setting.id == "Cellular" && airplaneModeEnabled ? "Airplane Mode" : setting.id == "Personal Hotspot" ? "Off" : "") {
                                                     setting.destination
                                                 }
                                                 .disabled(setting.id == "Personal Hotspot" && airplaneModeEnabled)

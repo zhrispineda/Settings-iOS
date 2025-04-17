@@ -22,7 +22,7 @@ struct AppsView: View {
         ScrollViewReader { proxy in
             CustomList(title: "Apps".localize(table: table)) {
                 // MARK: Default Apps
-                SettingsLink(color: .gray, icon: "checkmark.rectangle.stack.fill", id: "Default Apps".localize(table: table), subtitle: "Manage default apps on device".localize(table: table)) {
+                SLink("Default Apps".localize(table: table), color: .gray, icon: "checkmark.rectangle.stack.fill", subtitle: "Manage default apps on device".localize(table: table)) {
                     DefaultAppsView()
                 }
                 
@@ -30,7 +30,7 @@ struct AppsView: View {
                 ForEach(groupedApps.keys.sorted(), id: \.self) { key in
                     Section(key) {
                         ForEach(groupedApps[key]!, id: \.self) { app in
-                            SettingsLink(icon: "apple\(app)", id: app) {
+                            SLink(app, icon: "apple\(app)") {
                                 switch app {
                                 case "App Store":
                                     AppStoreView()
@@ -79,11 +79,11 @@ struct AppsView: View {
                 // MARK: Hidden Apps
                 if UIDevice.IsSimulator {
                     Button {} label: {
-                        SettingsLink(color: .gray, icon: "square.dashed", id: "Hidden Apps".localize(table: table)) {}
+                        SLink("Hidden Apps".localize(table: table), color: .gray, icon: "square.dashed") {}
                     }
                     .foregroundStyle(.primary)
                 } else {
-                    SettingsLink(color: .gray, icon: "square.dashed", id: "Hidden Apps".localize(table: table)) {
+                    SLink("Hidden Apps".localize(table: table), color: .gray, icon: "square.dashed") {
                         ContentUnavailableView(
                             "No Hidden Apps".localize(table: table),
                             systemImage: "square.stack.3d.up.slash.fill",

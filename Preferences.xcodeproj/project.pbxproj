@@ -119,7 +119,7 @@
 		835646062D9C47F000DAB406 /* iOSReadMe.html in Resources */ = {isa = PBXBuildFile; fileRef = 835646052D9C47F000DAB406 /* iOSReadMe.html */; };
 		835646082D9C480200DAB406 /* iPadOSReadMe.html in Resources */ = {isa = PBXBuildFile; fileRef = 835646072D9C480200DAB406 /* iPadOSReadMe.html */; };
 		8356460A2D9C4AB600DAB406 /* UIKitRepresentables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835646092D9C4AB600DAB406 /* UIKitRepresentables.swift */; };
-		835683922B753FDD000FB136 /* SettingsLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835683912B753FDD000FB136 /* SettingsLink.swift */; };
+		835683922B753FDD000FB136 /* SLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835683912B753FDD000FB136 /* SLink.swift */; };
 		835683942B754623000FB136 /* SLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835683932B754623000FB136 /* SLabel.swift */; };
 		8356839B2B755AB3000FB136 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8356839A2B755AB3000FB136 /* KeyboardView.swift */; };
 		83585B712B88475A0046A0C3 /* DrivingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83585B702B88475A0046A0C3 /* DrivingView.swift */; };
@@ -452,7 +452,7 @@
 		835646052D9C47F000DAB406 /* iOSReadMe.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = iOSReadMe.html; sourceTree = "<group>"; };
 		835646072D9C480200DAB406 /* iPadOSReadMe.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = iPadOSReadMe.html; sourceTree = "<group>"; };
 		835646092D9C4AB600DAB406 /* UIKitRepresentables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitRepresentables.swift; sourceTree = "<group>"; };
-		835683912B753FDD000FB136 /* SettingsLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLink.swift; sourceTree = "<group>"; };
+		835683912B753FDD000FB136 /* SLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLink.swift; sourceTree = "<group>"; };
 		835683932B754623000FB136 /* SLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLabel.swift; sourceTree = "<group>"; };
 		8356839A2B755AB3000FB136 /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
 		83585B702B88475A0046A0C3 /* DrivingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrivingView.swift; sourceTree = "<group>"; };
@@ -1214,7 +1214,7 @@
 				8361A2282C19308600A7D5CC /* Placard.swift */,
 				837C03082B7F1AE0004D6C71 /* SelectOptionList.swift */,
 				835683932B754623000FB136 /* SLabel.swift */,
-				835683912B753FDD000FB136 /* SettingsLink.swift */,
+				835683912B753FDD000FB136 /* SLink.swift */,
 				83DF95752B84266E00AEEB63 /* SiriDetailView.swift */,
 				833C6EB12C20CE7800A8D91C /* SearchDetailView.swift */,
 				83A5DA522C234DCB0012ACB3 /* LanguageView.swift */,
@@ -1954,7 +1954,7 @@
 				8373E7362B91660F004285EA /* SensitivePhotosVideosProtectionSheetView.swift in Sources */,
 				838AF99C2D629138008FFA8B /* ScreenSharingView.swift in Sources */,
 				83441A8B2CAF73740022E193 /* JournalingSuggestionsView.swift in Sources */,
-				835683922B753FDD000FB136 /* SettingsLink.swift in Sources */,
+				835683922B753FDD000FB136 /* SLink.swift in Sources */,
 				83B550512C166AD2002DA622 /* BatteryHealthView.swift in Sources */,
 				83CB06972CA6283A00D7533A /* FormatsView.swift in Sources */,
 				83B12C122D65242800DF6EF6 /* AnnounceNotificationsView.swift in Sources */,

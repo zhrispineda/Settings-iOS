@@ -5,7 +5,7 @@ A Section container for displaying a Language settings link.
 
 import SwiftUI
 
-/// A `Section` container for displaying a `SettingsLink` for Language settings.
+/// A `Section` container for displaying a `SLink` for Language settings.
 /// ```swift
 /// LanguageView()
 /// ```
@@ -15,7 +15,7 @@ struct LanguageView: View {
     
     var body: some View {
         Section {
-            SettingsLink(color: .blue, icon: "globe", id: "LANGUAGE".localize(table: table), status: "English") {}
+            SLink("LANGUAGE".localize(table: table), color: .blue, icon: "globe", status: "English") {}
         } header: {
             Text("PREFERRED_LANGUAGE", tableName: table)
         }

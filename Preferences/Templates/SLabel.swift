@@ -22,12 +22,12 @@ import SwiftUI
 /// - Parameter badgeCount: The `Int` count to display as a badge.
 struct SLabel: View {
     var text: String
-    var color = Color.gray
-    var icon = ""
-    var status = ""
-    var badgeCount = 0
+    var color: Color
+    var icon: String
+    var status: String
+    var badgeCount: Int
     
-    init(_ text: String = "", color: Color = Color.gray, icon: String = "", status: String = "", badgeCount: Int = 0) {
+    init(_ text: String, color: Color = Color.accent, icon: String = "", status: String = "", badgeCount: Int = 0) {
         self.text = text
         self.color = color
         self.icon = icon
@@ -60,4 +60,13 @@ struct SLabel: View {
 
 #Preview {
     ContentView(stateManager: StateManager())
+}
+
+#Preview("SLabel Example") {
+    NavigationStack {
+        List {
+            SLabel("Example")
+            SLabel("Status", color: .green, icon: "checkmark", status: "Accepted")
+        }
+    }
 }

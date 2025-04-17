@@ -156,13 +156,13 @@ struct SiriView: View {
             
             // MARK: Apple Intelligence and Siri App Access Section
             Section {
-                SettingsLink(color: colorScheme == .dark ? .blue : .white, iconColor: .blue, icon: "appclip", id: "APP_CLIPS".localize(table: table)) {
+                SLink("APP_CLIPS".localize(table: table), color: colorScheme == .dark ? .blue : .white, iconColor: .blue, icon: "appclip") {
                     BundleControllerView("/System/Library/PrivateFrameworks/AssistantSettingsSupport.framework/AssistantSettingsSupport", controller: "AssistantAppClipSettingsController", title: "APP_CLIPS", table: table)
                 }
-                SettingsLink(color: .indigo, icon: "app.grid.3x3", id: "APPS_GROUP".localize(table: table)) {
+                SLink("APPS_GROUP".localize(table: table), color: .indigo, icon: "app.grid.3x3") {
                     CustomList(title: "APPS".localize(table: table)) {
                         ForEach(apps, id: \.self) { app in
-                            SettingsLink(icon: "apple\(app)", id: app) {
+                            SLink(app, icon: "apple\(app)") {
                                 SiriDetailView(appName: app, title: app)
                             }
                         }

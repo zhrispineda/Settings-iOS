@@ -19,7 +19,7 @@ struct SettingsLinkSection: View {
                     Button {
                         showingSignInSheet.toggle()
                     } label: {
-                        SettingsLink(color: setting.color, icon: setting.icon, id: setting.id) {
+                        SLink(setting.id, color: setting.color, icon: setting.icon) {
                             setting.destination
                         }
                     }
@@ -32,7 +32,7 @@ struct SettingsLinkSection: View {
                         }
                     }
                 } else if !tabletOnly.contains(setting.id) && requiredCapabilities(capability: setting.capability) {
-                    SettingsLink(color: setting.color, icon: setting.icon, id: setting.id) {
+                    SLink(setting.id, color: setting.color, icon: setting.icon) {
                         setting.destination
                     }
                     .accessibilityLabel(setting.id)

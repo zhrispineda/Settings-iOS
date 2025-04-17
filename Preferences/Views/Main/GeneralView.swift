@@ -22,14 +22,14 @@ struct GeneralView: View {
             }
             
             Section {
-                SettingsLink(color: .gray, icon: UIDevice.IsSimulator ? "questionmark.app.dashed" : UIDevice.iPhone ? "iphone.gen3" : "ipad.gen2", id: "About".localize(table: table)) {
+                SLink("About".localize(table: table), color: .gray, icon: UIDevice.IsSimulator ? "questionmark.app.dashed" : UIDevice.iPhone ? "iphone.gen3" : "ipad.gen2") {
                     AboutView()
                 }
                 if !UIDevice.IsSimulator {
-                    SettingsLink(color: .gray, icon: "gear.badge", id: "SOFTWARE_UPDATE".localize(table: table)) {
+                    SLink("SOFTWARE_UPDATE".localize(table: table), color: .gray, icon: "gear.badge") {
                         SoftwareUpdateView()
                     }
-                    SettingsLink(color: .gray, icon: "externaldrive.fill", id: "DEVICE_STORAGE".localize(table: table)) {
+                    SLink("DEVICE_STORAGE".localize(table: table), color: .gray, icon: "externaldrive.fill") {
                         BundleControllerView("StorageSettingsUI", controller: "StorageSettingsUIWrapper", title: "DEVICE_STORAGE", table: table)
                     }
                 }
@@ -37,7 +37,7 @@ struct GeneralView: View {
             
             if !UIDevice.IsSimulator {
                 Section {
-                    SettingsLink(color: colorScheme == .dark ? Color(red: 208/255, green: 30/255, blue: 42/255) : .white, iconColor: Color(red: 208/255, green: 30/255, blue: 42/255), icon: "apple.logo", id: "COVERAGE".localize(table: table)) {
+                    SLink("COVERAGE".localize(table: table), color: colorScheme == .dark ? Color(red: 208/255, green: 30/255, blue: 42/255) : .white, iconColor: Color(red: 208/255, green: 30/255, blue: 42/255), icon: "apple.logo") {
                         AppleCareWarrantyView()
                     }
                 }
@@ -45,17 +45,17 @@ struct GeneralView: View {
             
             if !UIDevice.IsSimulator {
                 Section {
-                    SettingsLink(color: colorScheme == .dark ? .blue : .white, iconColor: .blue, icon: "airdrop", id: "AIRDROP".localize(table: table)) {
+                    SLink("AIRDROP".localize(table: table), color: colorScheme == .dark ? .blue : .white, iconColor: .blue, icon: "airdrop") {
                         AirDropView()
                     }
-                    SettingsLink(color: .blue, icon: "airplay.video", id: "CONTINUITY".localize(table: table)) {
+                    SLink("CONTINUITY".localize(table: table), color: .blue, icon: "airplay.video") {
                         BundleControllerView("AirPlayAndHandoffSettings", controller: "AirPlayAndHandoffSettings.AirPlayAndHandoffSettingsRoot", title: "CONTINUITY", table: table)
                     }
                     if UIDevice.iPhone {
-                        SettingsLink(icon: "pip", id: "PiP".localize(table: table)) {
+                        SLink("PiP".localize(table: table), icon: "pip") {
                             BundleControllerView("PictureInPictureSettings", controller: "PictureInPictureSettings", title: "PiP", table: table)
                         }
-                        SettingsLink(color: .green, icon: "carplay", id: "CARPLAY".localize(table: table)) {
+                        SLink("CARPLAY".localize(table: table), color: .green, icon: "carplay") {
                             BundleControllerView("CarKitSettings", controller: "CRSettingsController", title: "CARPLAY", table: table)
                         }
                     }
@@ -66,66 +66,66 @@ struct GeneralView: View {
                 Button {
                     showingHomeButtonSheet = true
                 } label: {
-                    SettingsLink(color: .gray, icon: "iphone.gen1", id: "HOME_BUTTON".localize(table: table)) {}
+                    SLink("HOME_BUTTON".localize(table: table), color: .gray, icon: "iphone.gen1") {}
                 }
                 .foregroundStyle(.primary)
             }
             
             Section {
-                SettingsLink(color: .gray, icon: "key.dots.fill", id: "AUTOFILL".localize(table: table)) {
+                SLink("AUTOFILL".localize(table: table), color: .gray, icon: "key.dots.fill") {
                     AutoFillPasswordsView()
                 }
                 if !UIDevice.IsSimulator {
-                    SettingsLink(color: .gray, icon: "arrow.clockwise.app.stack.fill", id: "AUTO_CONTENT_DOWNLOAD".localize(table: table)) {
+                    SLink("AUTO_CONTENT_DOWNLOAD".localize(table: table), color: .gray, icon: "arrow.clockwise.app.stack.fill") {
                         BackgroundAppRefreshView()
                     }
-                    SettingsLink(color: .blue, icon: "calendar.badge.clock", id: "DATE_AND_TIME".localize(table: table)) {
+                    SLink("DATE_AND_TIME".localize(table: table), color: .blue, icon: "calendar.badge.clock") {
                         DateTimeView()
                     }
                 }
-                SettingsLink(color: .blue, icon: "text.book.closed.fill", id: "DICTIONARY".localize(table: table)) {
+                SLink("DICTIONARY".localize(table: table), color: .blue, icon: "text.book.closed.fill") {
                     DictionaryView()
                 }
-                SettingsLink(color: .gray, icon: "textformat", id: "FONT_SETTING".localize(table: table)) {
+                SLink("FONT_SETTING".localize(table: table), color: .gray, icon: "textformat") {
                     FontsView()
                 }
 //                if !UIDevice.isSimulator {
-//                    SettingsLink(color: .gray, icon: "gamecontroller.fill", id: "GAME_CONTROLLER".localize(table: table)) {
+//                    SLink("GAME_CONTROLLER".localize(table: table), color: .gray, icon: "gamecontroller.fill") {
 //                        GameControllerView()
 //                    }
 //                }
-                SettingsLink(color: .gray, icon: "keyboard.fill", id: "Keyboard".localize(table: table)) {
+                SLink("Keyboard".localize(table: table), color: .gray, icon: "keyboard.fill") {
                     KeyboardView()
                 }
-                SettingsLink(color: .blue, icon: "globe", id: "INTERNATIONAL".localize(table: table)) {
+                SLink("INTERNATIONAL".localize(table: table), color: .blue, icon: "globe") {
                     BundleControllerView("InternationalSettings", controller: "InternationalSettingsController", title: "INTERNATIONAL", table: table)
                 }
             }
             
             if !UIDevice.IsSimulator {
                 Section {
-                    SettingsLink(icon: "cable.coaxial", id: "TV_PROVIDER_LABEL".localize(table: table)) {
+                    SLink("TV_PROVIDER_LABEL".localize(table: table), icon: "cable.coaxial") {
                         TVProviderView()
                     }
                 }
             }
             
             Section {
-                SettingsLink(color: .gray, icon: "gear", id: "VPN_DEVICE_MANAGEMENT".localize(table: table)) {
+                SLink("VPN_DEVICE_MANAGEMENT".localize(table: table), color: .gray, icon: "gear") {
                     VPNDeviceManagementView()
                 }
             }
             
             if !UIDevice.IsSimulator {
                 Section {
-                    SettingsLink(color: .gray, icon: "checkmark.seal.text.page.fill", id: "LEGAL_AND_REGULATORY_TITLE".localize(table: table)) {
+                    SLink("LEGAL_AND_REGULATORY_TITLE".localize(table: table), color: .gray, icon: "checkmark.seal.text.page.fill") {
                         BundleControllerView("LegalAndRegulatorySettings", controller: "LegalAndRegulatorySettings.LegalAndRegulatorySettingsRoot", title: "LEGAL_AND_REGULATORY_TITLE", table: "General")
                     }
                 }
             }
             
             Section {
-                SettingsLink(color: .gray, icon: "arrow.counterclockwise", id: "TRANSFER_OR_RESET_TITLE".localize(table: table)) {
+                SLink("TRANSFER_OR_RESET_TITLE".localize(table: table), color: .gray, icon: "arrow.counterclockwise") {
                     if !UIDevice.IsSimulator {
                         TransferResetView()
                     } else {

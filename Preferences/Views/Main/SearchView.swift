@@ -39,11 +39,11 @@ struct SearchView: View {
             
             // MARK: App List Section
             Section {
-                SettingsLink(color: .white, iconColor: .blue, icon: "appclip", id: "APP_CLIPS".localize(table: table)) {
+                SLink("APP_CLIPS".localize(table: table), color: .white, iconColor: .blue, icon: "appclip") {
                     BundleControllerView("/System/Library/PrivateFrameworks/AssistantSettingsSupport.framework/AssistantSettingsSupport", controller: "AssistantAppClipSettingsController", title: "APP_CLIPS", table: table)
                 }
                 ForEach(apps, id: \.self) { app in
-                    SettingsLink(icon: "apple\(app)", id: app) {
+                    SLink(app, icon: "apple\(app)") {
                         SearchDetailView(appName: app)
                     }
                 }

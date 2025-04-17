@@ -54,7 +54,7 @@ struct CellularView: View {
 //            }
 //            
 //            Section {
-//                SettingsLink(color: .gray, icon: "gear", id: "System Services", status: "0 KB", content: {})
+//                SLink(color: .gray, icon: "gear", id: "System Services", status: "0 KB", content: {})
 //                NavigationLink("Show All") {
 //                    CustomList(title: "Cellular Data Usage") {
 //                        Picker("Billing Period", selection: $mode) {
@@ -71,7 +71,7 @@ struct CellularView: View {
 //                                .font(.system(size: 12))
 //                                .foregroundStyle(.blue)
 //                        }
-//                        SettingsLink(color: .gray, icon: "gear", id: "System Services", status: "0 KB", content: {})
+//                        SLink(color: .gray, icon: "gear", id: "System Services", status: "0 KB", content: {})
 //                    }
 //                }
 //            } header: {
