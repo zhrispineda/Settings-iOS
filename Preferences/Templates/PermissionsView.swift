@@ -58,7 +58,7 @@ struct PermissionsView: View {
     var body: some View {
         Section {
             if focus {
-                IconToggle(enabled: $focusEnabled, color: .indigo, icon: "moon.fill", title: "FOCUS", table: table)
+                IconToggle("FOCUS", isOn: $focusEnabled, color: .indigo, icon: "moon.fill", table: table)
             }
             if location {
                 SLink("LOCATION_SERVICES".localize(table: table), color: .blue, icon: "location.fill", status: "NEVER_AUTHORIZATION".localize(table: "LocationServicesPrivacy")) {}
@@ -67,10 +67,10 @@ struct PermissionsView: View {
                 SLink("PHOTOS".localize(table: table), icon: "applePhotos", status: "PHOTOS_LIMITED_AUTHORIZATION".localize(table: table)) {}
             }
             if camera {
-                IconToggle(enabled: $cameraEnabled, color: .gray, icon: "camera.fill", title: "CAMERA", table: table)
+                IconToggle("CAMERA", isOn: $cameraEnabled, color: .gray, icon: "camera.fill", table: table)
             }
             if faceID {
-                IconToggle(enabled: $faceIDEnabled, color: .green, icon: "faceid", title: "FACE_ID".localize(table: "Pearl"))
+                IconToggle("FACE_ID", isOn: $faceIDEnabled, color: .green, icon: "faceid", table: table)
             }
             if siri {
                 if UIDevice.IntelligenceCapability {
@@ -93,13 +93,13 @@ struct PermissionsView: View {
                 SLink("LIVE_ACTIVITIES".localize(table: table), color: .blue, icon: "clock.badge.fill") {}
             }
             if liveActivityToggle {
-                IconToggle(enabled: $liveActivityEnabled, color: .blue, icon: "clock.badge.fill", title: "LIVE_ACTIVITIES", table: table)
+                IconToggle("LIVE_ACTIVITIES", isOn: $liveActivityEnabled, color: .blue, icon: "clock.badge.fill", table: table)
             }
             if background {
-                IconToggle(enabled: $backgroundAppRefreshEnabled, color: .gray, icon: "arrow.clockwise.app.stack.fill", title: "BACKGROUND_APP_REFRESH", table: table)
+                IconToggle("BACKGROUND_APP_REFRESH", isOn: $backgroundAppRefreshEnabled, color: .gray, icon: "arrow.clockwise.app.stack.fill", table: table)
             }
             if cellular && UIDevice.CellularTelephonyCapability {
-                IconToggle(enabled: $cellularEnabled, color: .green, icon: "antenna.radiowaves.left.and.right", title: "CELLULAR_DATA", table: table)
+                IconToggle("CELLULAR_DATA", isOn: $cellularEnabled, color: .green, icon: "antenna.radiowaves.left.and.right", table: table)
             }
             if phone {
                 SLink("INCOMING_CALL_STYLE_LIST_BANNER".localize(table: "ICBSettingsBundle"), color: .green, icon: "phone.arrow.down.left.fill", status: "Banner") {}

@@ -19,9 +19,9 @@ import SwiftUI
 /// - Parameter status: The String description of the title's state or information.
 /// - Parameter monospaced: The Bool for whether the `status` text is monospaced.
 struct HText: View {
-    var title = ""
-    var status = ""
-    var monospaced = false
+    var title: String
+    var status: String
+    var monospaced: Bool
     
     init(_ title: String = "", status: String = "", monospaced: Bool = false) {
         self.title = title

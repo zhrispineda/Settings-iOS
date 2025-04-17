@@ -1,29 +1,31 @@
 /*
 Abstract:
-A view for displaying options regarding Privacy & Security based on the given permissionName String.
+A view for displaying options regarding Privacy & Security based on the given permission String.
 */
 
 import SwiftUI
 
-/// A `CustomList` container for displaying options regarding Privacy & Security based on the given `permissionName` String.
+/// A `CustomList` container for displaying options regarding Privacy & Security based on the given `permission` String.
 ///
 /// ```swift
-/// AppPermissionsView(permissionName: "App Clips")
+/// AppPermissionsView(permission: "App Clips")
 /// ```
 ///
 /// ```swift
-/// AppPermissionsView(permissionName: "App Clips", appClipPermission: "Camera")
+/// AppPermissionsView(permission: "App Clips", appClipPermission: "Camera")
 /// ```
 ///
-/// - Parameter permissionName: The String to display as the navigation title.
+/// - Parameter permission: The String to display as the navigation title.
 /// - Parameter appClipsPermission: The  optional String to use when relating to App Clips.
 struct AppPermissionsView: View {
     @AppStorage("PrivacyFitnessTrackingToggle") private var fitnessTracking = true
     @State private var showingSheet = false
-    var permissionName = ""
+    var permission: String
     var appClipPermission = ""
     let appClipsEligible = ["BT_PERIPHERAL", "CAMERA", "MICROPHONE"]
     var bundle = ""
+    
+    // Tables
     let table = "Privacy"
     let dsTable = "Dim-Sum"
     let focusTable = "FocusSettings"
@@ -32,12 +34,12 @@ struct AppPermissionsView: View {
     let wellTable = "WellnessDashboard-Localizable"
     
     var body: some View {
-        CustomList(title: permissionName.localize(table: table)) {
+        CustomList(title: permission.localize(table: table)) {
             // Primary explanation header
-            switch permissionName {
+            switch permission {
             case "App Clips":
                 Section {} footer: {
-                    if appClipPermission == "CAMERA" || permissionName == "CAMERA" {
+                    if appClipPermission == "CAMERA" || permission == "CAMERA" {
                         Text("CAMERA_HEADER", tableName: table)
                     }
                 }
@@ -93,19 +95,19 @@ struct AppPermissionsView: View {
             
             // Content and footer section
             Section {
-                if appClipsEligible.contains(permissionName) {
+                if appClipsEligible.contains(permission) {
                     SLink("App Clips", color: .white, iconColor: .blue, icon: "appclip", status: "0") {
-                        AppPermissionsView(permissionName: "App Clips", appClipPermission: permissionName)
+                        AppPermissionsView(permission: "App Clips", appClipPermission: permission)
                     }
                 }
             } header: {
-                if permissionName == "FOCUS" {
+                if permission == "FOCUS" {
                     Text("AVAILABILITY_STATUS_SHARING_HEADER", tableName: "FocusSettings")
                 }
             } footer: {
-                switch permissionName {
+                switch permission {
                 case "BT_PERIPHERAL", "CAMERA", "MEDIALIBRARY", "MICROPHONE", "MOTION", "NEARBY_INTERACTIONS", "PASSKEYS", "REMINDERS", "SPEECH_RECOGNITION", "WILLOW":
-                    Text("\(permissionName)_FOOTER".localize(table: table))
+                    Text("\(permission)_FOOTER".localize(table: table))
                 case "App Clips":
                     switch appClipPermission {
                     case "BT_PERIPHERAL":
@@ -122,7 +124,7 @@ struct AppPermissionsView: View {
                 case "HEALTH", "Research Sensor & Usage Data":
                     EmptyView()
                 default:
-                    Text("Applications that have requested the ability to use \(permissionName) will appear here.")
+                    Text("Applications that have requested the ability to use \(permission) will appear here.")
                 }
             }
         }
@@ -140,12 +142,12 @@ struct AppPermissionsView: View {
 
 #Preview("App Clips") {
     NavigationStack {
-        AppPermissionsView(permissionName: "App Clips", appClipPermission: "CAMERA")
+        AppPermissionsView(permission: "App Clips", appClipPermission: "CAMERA")
     }
 }
 
 #Preview("Camera") {
     NavigationStack {
-        AppPermissionsView(permissionName: "CAMERA")
+        AppPermissionsView(permission: "CAMERA")
     }
 }

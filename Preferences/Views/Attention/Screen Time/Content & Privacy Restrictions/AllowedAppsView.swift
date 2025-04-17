@@ -24,19 +24,19 @@ struct AllowedAppsView: View {
     var body: some View {
         CustomList(title: "AllowedAppsSpecifierName".localize(table: table)) {
             Section {
-                IconToggle(enabled: $mailEnabled, icon: "appleMail", title: "Mail")
-                IconToggle(enabled: $safariEnabled, icon: "appleSafari", title: "Safari")
-                IconToggle(enabled: $sharePlayEnabled, color: .green, icon: "shareplay", title: "SharePlaySpecifierName", table: table)
-                IconToggle(enabled: $siriEnabled, icon: "appleSiri", title: "SiriDictationSpecifierName", table: table)
-                IconToggle(enabled: $walletEnabled, icon: "appleWallet", title: "Wallet")
-                IconToggle(enabled: $airDropEnabled, color: .white, icon: "airdrop", title: "AirDropSpecifierName", table: table)
-                IconToggle(enabled: $carPlayEnabled, color: .green, icon: "appleCarPlay", title: "CarPlaySpecifierName", table: table)
+                IconToggle("Mail", isOn: $mailEnabled, icon: "appleMail")
+                IconToggle("Safari", isOn: $safariEnabled, icon: "appleSafari")
+                IconToggle("SharePlaySpecifierName", isOn: $sharePlayEnabled, color: .green, icon: "shareplay", table: table)
+                IconToggle("SiriDictationSpecifierName", isOn: $siriEnabled, icon: "appleSiri", table: table)
+                IconToggle("Wallet", isOn: $walletEnabled, icon: "appleWallet")
+                IconToggle("AirDropSpecifierName", isOn: $airDropEnabled, color: .white, icon: "airdrop", table: table)
+                IconToggle("CarPlaySpecifierName", isOn: $carPlayEnabled, color: .green, icon: "appleCarPlay", table: table)
             }
             
             Section {
-                IconToggle(enabled: $newsEnabled, icon: "appleNews", title: "News")
-                IconToggle(enabled: $healthEnabled, icon: "appleHealth", title: "Health")
-                IconToggle(enabled: $fitnessEnabled, icon: "appleFitness", title: "Fitness")
+                IconToggle("News", isOn: $newsEnabled, icon: "appleNews")
+                IconToggle("Health", isOn: $healthEnabled, icon: "appleHealth")
+                IconToggle("Fitness", isOn: $fitnessEnabled, icon: "appleFitness")
             }
         }
     }

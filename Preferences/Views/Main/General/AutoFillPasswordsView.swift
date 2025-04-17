@@ -24,7 +24,7 @@ struct AutoFillPasswordsView: View {
             }
             
             Section {
-                IconToggle(enabled: $keychainEnabled, color: .gray, icon: "applePasswords", title: "Passwords", subtitle: "Passkeys, passwords, and codes")
+                IconToggle("Passwords", isOn: $keychainEnabled, color: .gray, icon: "applePasswords", subtitle: "Passkeys, passwords, and codes")
             } header: {
                 Text("AutoFill From:")
             }

@@ -10,32 +10,42 @@ import SwiftUI
 /// ```swift
 /// var body: some View {
 ///     List {
-///         IconToggle(color: Color.gray, icon: "gear", title: "Automatic Updates")
+///         IconToggle("Automatic Updates", color: Color.gray, icon: "gear")
 ///     }
 /// }
 /// ```
 ///
+/// - Parameter text: The String name of the label to display.
 /// - Parameter color: The Color to use as the icon background.
 /// - Parameter icon: The String name of the image asset or symbol.
-/// - Parameter title: The String name of the label to display.
 /// - Parameter subtitle: The String text of the subtitle to display.
 /// - Parameter iconColor: The Color to use for the icon.
 /// - Parameter table: The localization table to use for text.
 struct IconToggle: View {
     // Variables
-    @Binding var enabled: Bool
-    var color = Color.blue
-    var icon = ""
-    var title = ""
-    var subtitle = ""
-    var iconColor = Color.white
-    var table = "Localizable"
+    var text: String
+    @Binding var isOn: Bool
+    var color: Color
+    var icon: String
+    var subtitle: String
+    var iconColor: Color
+    var table: String
     private let lightOnlyIcons: Set<String> = ["airdrop", "shareplay"]
     
+    init(_ text: String, isOn: Binding<Bool>, color: Color = Color.accent, icon: String = "", subtitle: String = "", iconColor: Color = Color.white, table: String = "Localizable") {
+        self.text = text
+        self._isOn = isOn
+        self.color = color
+        self.icon = icon
+        self.subtitle = subtitle
+        self.iconColor = iconColor
+        self.table = table
+    }
+    
     var body: some View {
-        Toggle(isOn: $enabled) {
+        Toggle(isOn: $isOn) {
             Label {
-                Text(LocalizedStringKey(title.localize(table: table)))
+                Text(LocalizedStringKey(text.localize(table: table)))
                 
                 if !subtitle.isEmpty {
                     Text(subtitle.localize(table: table))
@@ -43,7 +53,7 @@ struct IconToggle: View {
                         .foregroundStyle(.secondary)
                 }
             } icon: {
-                IconView(id: title, icon: icon, color: color, iconColor: icon == "airdrop" ? Color.blue : iconColor, lightOnly: lightOnlyIcons.contains(icon))
+                IconView(id: text.localize(table: table), icon: icon, color: color, iconColor: icon == "airdrop" ? Color.blue : iconColor, lightOnly: lightOnlyIcons.contains(icon))
             }
         }
     }
@@ -52,7 +62,7 @@ struct IconToggle: View {
 #Preview {
     NavigationStack {
         CustomList(title: "Networking") {
-            IconToggle(enabled: .constant(true), color: .blue, icon: "questionmark.circle", title: "LIVE_ACTIVITIES", subtitle: "Example", table: "PSSystemPolicy")
+            IconToggle("LIVE_ACTIVITIES", isOn: .constant(true), color: .blue, icon: "questionmark.circle", subtitle: "Example", table: "PSSystemPolicy")
         }
     }
 }

@@ -82,7 +82,7 @@ struct ContentView: View {
                                 // MARK: Radio Settings
                                 if !UIDevice.IsSimulator {
                                     Section {
-                                        IconToggle(enabled: $airplaneModeEnabled, color: Color.orange, icon: "airplane", title: "Airplane Mode")
+                                        IconToggle("Airplane Mode", isOn: $airplaneModeEnabled, color: Color.orange, icon: "airplane")
                                         ForEach(radioSettings) { setting in
                                             if !phoneOnly.contains(setting.id) && requiredCapabilities(capability: setting.capability) {
                                                 Button {
@@ -96,7 +96,7 @@ struct ContentView: View {
                                             }
                                         }
                                         if requiredCapabilities(capability: .vpn) {
-                                            IconToggle(enabled: $VPNEnabled, color: .blue, icon: "network.connected.to.line.below", title: "VPN")
+                                            IconToggle("VPN", isOn: $VPNEnabled, color: .blue, icon: "network.connected.to.line.below")
                                         }
                                     }
                                 }
@@ -200,7 +200,7 @@ struct ContentView: View {
                                 if !UIDevice.IsSimulator {
                                     // MARK: Radio Settings
                                     Section {
-                                        IconToggle(enabled: $airplaneModeEnabled, color: Color.orange, icon: "airplane", title: "Airplane Mode")
+                                        IconToggle("Airplane Mode", isOn: $airplaneModeEnabled, color: Color.orange, icon: "airplane")
                                         ForEach(radioSettings) { setting in
                                             if setting.capability == .none {
                                                 SLink(setting.id, color: setting.color, icon: setting.icon, status: setting.id == "Wi-Fi" ? (wifiEnabled && !airplaneModeEnabled ? "Not Connected" : "Off") : setting.id == "Bluetooth" ? (bluetoothEnabled ? "On" : "Off") : "") {
@@ -216,7 +216,7 @@ struct ContentView: View {
                                             }
                                         }
                                         if requiredCapabilities(capability: .vpn) {
-                                            IconToggle(enabled: $VPNEnabled, color: .blue, icon: "network.connected.to.line.below", title: "VPN")
+                                            IconToggle("VPN", isOn: $VPNEnabled, color: .blue, icon: "network.connected.to.line.below")
                                         }
                                     }
                                 }
