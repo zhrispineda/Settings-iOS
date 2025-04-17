@@ -1,21 +1,23 @@
 /*
 Abstract:
-A View container for displaying options regarding Search with apps.
+A CustomList container for displaying options regarding Search with apps.
 */
 
 import SwiftUI
 
-/// A `View` container for displaying options regarding Search with apps.
+/// A CustomList container for displaying options regarding Search with apps.
+///
 /// ```swift
 /// SearchDetailView(appName: "News")
 /// ```
+///
 /// - Parameter appName: The `String` to display as navigation title and for use in the Section footer.
 /// - Parameter appTitle: The `Bool` for whether to show the app name as the navigation title.
 struct SearchDetailView: View {
     // Variables
     @State private var showAppInSearchEnabled = true
     @State private var showContentInSearchEnabled = true
-    var appName: String = String()
+    var appName: String
     var appTitle = true
     let table = "AssistantSettings"
     

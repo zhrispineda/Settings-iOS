@@ -6,9 +6,11 @@ A View container for displaying options regarding Siri Suggestions and apps.
 import SwiftUI
 
 /// A `View` container for displaying options regarding Siri Suggestions and apps.
+///
 /// ```swift
 /// SiriDetailView(appName: "News", title: "News")
 /// ```
+///
 /// - Parameter appName: The `String` to display as the app name for the `View`.
 /// - Parameter title: The `String` of the navigation title.
 struct SiriDetailView: View {
@@ -18,10 +20,10 @@ struct SiriDetailView: View {
     @State private var showHomeScreenEnabled = true
     @State private var suggestAppEnabled = true
     @State private var suggestNotificationsEnabled = true
-    var appName = String()
-    var title = "Siri"
+    var appName = ""
+    var title = UIDevice.IntelligenceCapability ? "Apple Intelligence & Siri" : "Siri"
     let table = "AssistantSettings"
-    let showInAppApps = ["Calendar", "Contacts", "Maps", "Messages", "News", "Reminders", "Safari"]
+    let showInAppApps: Set<String> = ["Calendar", "Contacts", "Maps", "Messages", "News", "Reminders", "Safari"]
     
     var body: some View {
         CustomList(title: title) {
@@ -42,7 +44,7 @@ struct SiriDetailView: View {
             } header: {
                 Text("SIRIANDSEARCH_PERAPP_SUGGESTIONS_HEADER", tableName: table)
             } footer: {
-                Text(showInAppApps.contains(appName) ? "SIRIANDSEARCH_PERAPP_SUGGESTIONS_FOOTER_CONTACTSAPP_NONOTIFICATIONS".localize(table: table, appName) : "SIRIANDSEARCH_PERAPP_SUGGESTIONS_FOOTER_NOSHOW_NONOTIFICATIONS".localize(table: table, appName))
+                Text("\(showInAppApps.contains(appName) ? "SIRIANDSEARCH_PERAPP_SUGGESTIONS_FOOTER_CONTACTSAPP_NONOTIFICATIONS" : "SIRIANDSEARCH_PERAPP_SUGGESTIONS_FOOTER_NOSHOW_NONOTIFICATIONS")".localize(table: table, appName))
             }
         }
     }

@@ -115,7 +115,7 @@ struct NotificationsView: View {
             // MARK: Notification Options Section
             Section {
                 CustomNavigationLink("NOTIFICATION_DELIVERY_SCHEDULED".localize(table: table), status: "OFF".localize(table: table), destination: ScheduledSummaryView())
-                CustomNavigationLink("SHOW_PREVIEWS".localize(table: table), status: previewSelection.localize(table: table), destination: SelectOptionList(title: "SHOW_PREVIEWS", options: ["SHOW_PREVIEW_OPTION_ALWAYS", "SHOW_PREVIEW_OPTION_UNLOCKED", "SHOW_PREVIEW_OPTION_NEVER"], selectedBinding: $previewSelection, selected: "SHOW_PREVIEW_OPTION_UNLOCKED", table: table))
+                CustomNavigationLink("SHOW_PREVIEWS".localize(table: table), status: previewSelection.localize(table: table), destination: SelectOptionList("SHOW_PREVIEWS", options: ["SHOW_PREVIEW_OPTION_ALWAYS", "SHOW_PREVIEW_OPTION_UNLOCKED", "SHOW_PREVIEW_OPTION_NEVER"], selectedBinding: $previewSelection, selected: "SHOW_PREVIEW_OPTION_UNLOCKED", table: table))
                 CustomNavigationLink("SCREEN_SHARING".localize(table: table), status: (allowNotifications ? "SCREEN_SHARING_NOTIFICATIONS_ON" : "SCREEN_SHARING_NOTIFICATIONS_OFF").localize(table: table), destination: ScreenSharingView(allowNotifications: $allowNotifications))
                 if UIDevice.IntelligenceCapability {
                     CustomNavigationLink("SUMMARIZE_NOTIFICATIONS".localize(table: table), status: "OFF".localize(table: table), destination: SummarizeNotificationsView())

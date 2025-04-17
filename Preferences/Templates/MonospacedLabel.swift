@@ -6,6 +6,7 @@
 import SwiftUI
 
 /// An `HStack` container for displaying a label and information with a monospace-like format.
+///
 /// ```swift
 /// var body: some View {
 ///     List {
@@ -14,14 +15,15 @@ import SwiftUI
 ///     }
 /// }
 /// ```
+///
 /// - Parameter label: The `String` label text describing the label.
 /// - Parameter value: The `String` value to display on the opposing side of the label.
 struct MonospacedLabel: View {
-    var label = String()
-    var value = String()
+    var label: String
+    var value: String
     let ignoreChars = ["1", ":", ".", "/"]
     
-    init(_ label: String = String(), value: String = String()) {
+    init(_ label: String = "", value: String = "") {
         self.label = label
         self.value = value
     }
@@ -29,7 +31,9 @@ struct MonospacedLabel: View {
     var body: some View {
         HStack {
             Text(label)
+            
             Spacer()
+            
             HStack(spacing: 0) {
                 ForEach(Array(value.enumerated()), id: \.offset) { _, character in
                     let char = String(character)

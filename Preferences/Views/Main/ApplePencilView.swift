@@ -38,8 +38,8 @@ struct ApplePencilView: View {
             }
             
             Section {
-                CustomNavigationLink("Bottom Left Corner", status: "Screenshot", destination: SelectOptionList(title: "Bottom Left Corner", options: ["Quick Note", "Screenshot", "Off"], selected: "Screenshot"))
-                CustomNavigationLink("Bottom Right Corner", status: "Quick Note", destination: SelectOptionList(title: "Bottom Left Corner", options: ["Quick Note", "Screenshot", "Off"], selected: "Quick Note"))
+                CustomNavigationLink("Bottom Left Corner", status: "Screenshot", destination: SelectOptionList("Bottom Left Corner", options: ["Quick Note", "Screenshot", "Off"], selected: "Screenshot"))
+                CustomNavigationLink("Bottom Right Corner", status: "Quick Note", destination: SelectOptionList("Bottom Left Corner", options: ["Quick Note", "Screenshot", "Off"], selected: "Quick Note"))
             } header: {
                 Text("Pencil Gestures")
             } footer: {

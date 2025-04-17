@@ -31,11 +31,11 @@ struct ContentPrivacyRestrictionsView: View {
                 CustomNavigationLink("CalendarsSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: ContentPrivacyRestrictionsDetailView(title: "CalendarsSpecifierName"))
                 CustomNavigationLink("RemindersSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: ContentPrivacyRestrictionsDetailView(title: "RemindersSpecifierName"))
                 CustomNavigationLink("PhotosSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: ContentPrivacyRestrictionsDetailView(title: "PhotosSpecifierName"))
-                CustomNavigationLink("ShareLocationSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: SelectOptionList(title: "ShareLocationSpecifierName"))
+                CustomNavigationLink("ShareLocationSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: SelectOptionList("ShareLocationSpecifierName", table: table))
                 CustomNavigationLink("BluetoothSharingSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: ContentPrivacyRestrictionsDetailView(title: "BluetoothSharingSpecifierName"))
                 CustomNavigationLink("MicrophoneSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: ContentPrivacyRestrictionsDetailView(title: "MicrophoneSpecifierName"))
                 CustomNavigationLink("SpeechRecognitionSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: ContentPrivacyRestrictionsDetailView(title: "SpeechRecognitionSpecifierName"))
-                CustomNavigationLink("AdvertisingSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: SelectOptionList(title: "AdvertisingSpecifierName"))
+                CustomNavigationLink("AdvertisingSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: SelectOptionList("AdvertisingSpecifierName", table: table))
                 CustomNavigationLink("UserTrackingSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: ContentPrivacyRestrictionsDetailView(title: "UserTrackingSpecifierName"))
                 CustomNavigationLink("MediaAppleMusicSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: ContentPrivacyRestrictionsDetailView(title: "MediaAppleMusicSpecifierName"))
             } header: {
@@ -44,13 +44,13 @@ struct ContentPrivacyRestrictionsView: View {
             .disabled(!contentPrivacyRestrictionsEnabled)
             
             Section {
-                CustomNavigationLink("PasscodeChangesSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: SelectOptionList(title: "PasscodeChangesSpecifierName", table: table))
-                CustomNavigationLink("AccountChangesSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: SelectOptionList(title: "AccountChangesSpecifierName", table: table))
-                CustomNavigationLink("CellularChangesSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: SelectOptionList(title: "CellularChangesSpecifierName", table: table))
-                CustomNavigationLink("ReduceLoudSoundsSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: SelectOptionList(title: "ReduceLoudSoundsSpecifierName", table: table))
-                CustomNavigationLink("DrivingFocusSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: SelectOptionList(title: "DrivingFocusSpecifierName", table: table))
-                CustomNavigationLink("TVProviderSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: SelectOptionList(title: "TVProviderSpecifierName", table: table))
-                CustomNavigationLink("BackgroundAppActivitiesSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: SelectOptionList(title: "BackgroundAppActivitiesSpecifierName", table: table))
+                CustomNavigationLink("PasscodeChangesSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: SelectOptionList("PasscodeChangesSpecifierName", table: table))
+                CustomNavigationLink("AccountChangesSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: SelectOptionList("AccountChangesSpecifierName", table: table))
+                CustomNavigationLink("CellularChangesSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: SelectOptionList("CellularChangesSpecifierName", table: table))
+                CustomNavigationLink("ReduceLoudSoundsSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: SelectOptionList("ReduceLoudSoundsSpecifierName", table: table))
+                CustomNavigationLink("DrivingFocusSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: SelectOptionList("DrivingFocusSpecifierName", table: table))
+                CustomNavigationLink("TVProviderSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: SelectOptionList("TVProviderSpecifierName", table: table))
+                CustomNavigationLink("BackgroundAppActivitiesSpecifierName".localize(table: table), status: "AllowLabel".localize(table: table), destination: SelectOptionList("BackgroundAppActivitiesSpecifierName", table: table))
             } header: {
                 Text("AllowChangesLabel", tableName: table)
             }

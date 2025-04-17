@@ -8,7 +8,7 @@ import SwiftUI
 /// A `CustomList` container template that has options that can be selected and customized.
 ///
 /// ```swift
-/// SelectOptionList(title: "Receive Updates", options: ["Yes", "No"], selected: "Yes")
+/// SelectOptionList("Receive Updates", options: ["Yes", "No"], selected: "Yes")
 /// ```
 ///
 /// - Parameter title: The `String` to display as the navigation title of the `View`.
@@ -19,10 +19,18 @@ import SwiftUI
 struct SelectOptionList: View {
     // Variables
     var title: String
-    var options: [String] = []
+    var options: [String]
     var selectedBinding: Binding<String>? = nil
-    @State var selected = ""
-    var table = ""
+    @State var selected: String
+    var table: String
+    
+    init(_ title: String, options: [String] = [], selectedBinding: Binding<String>? = nil, selected: String = "", table: String = "Localizable") {
+        self.title = title
+        self.options = options
+        self.selectedBinding = selectedBinding
+        self.selected = selected
+        self.table = table
+    }
     
     var body: some View {
         CustomList(title: title.localize(table: table)) {
@@ -77,6 +85,6 @@ struct SelectOptionList: View {
 
 #Preview {
     NavigationStack {
-        SelectOptionList(title: "Are you sure?", options: ["Yes", "No"], selected: "Yes")
+        SelectOptionList("Are you sure?", options: ["Yes", "No"], selected: "Yes")
     }
 }

@@ -36,7 +36,7 @@ struct ContactsView: View {
             }
             
             Section {
-                CustomNavigationLink("Sort Order".localize(table: table), status: "LAST".localize(table: table), destination: SelectOptionList(title: "Sort Order", options: ["FIRST", "LAST"], selected: "LAST", table: table))
+                CustomNavigationLink("Sort Order".localize(table: table), status: "LAST".localize(table: table), destination: SelectOptionList("Sort Order", options: ["FIRST", "LAST"], selected: "LAST", table: table))
                 CustomNavigationLink("Display Order".localize(table: table), status: "LAST".localize(table: table), destination: EmptyView())
                 NavigationLink("Short Name".localize(table: table)) {}
                 Button {} label: {

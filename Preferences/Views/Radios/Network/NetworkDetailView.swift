@@ -41,7 +41,7 @@ struct NetworkDetailView: View {
             
             Section {
                 //Toggle("Private Wi-Fi Address", isOn: $privateWifiAddressEnabled)
-                CustomNavigationLink("KWFLocSettingRandomMACSwitchTitle".localize(table: table), status: "kWFLocRandomMACStaticOption".localize(table: table), destination: SelectOptionList(title: "KWFLocSettingRandomMACSwitchTitle", options: ["kWFLocRandomMACOffOption", "kWFLocRandomMACStaticOption", "kWFLocRandomMACRotatingOption"], selected: privateAddressOption, table: table))
+                CustomNavigationLink("KWFLocSettingRandomMACSwitchTitle".localize(table: table), status: "kWFLocRandomMACStaticOption".localize(table: table), destination: SelectOptionList("KWFLocSettingRandomMACSwitchTitle", options: ["kWFLocRandomMACOffOption", "kWFLocRandomMACStaticOption", "kWFLocRandomMACRotatingOption"], selected: privateAddressOption, table: table))
                 LabeledContent("MACAddress".localize(table: "GeneralSettingsUI"), value: generateRandomAddress())
             } footer: {
                 VStack(alignment: .leading) {

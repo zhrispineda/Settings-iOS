@@ -6,6 +6,7 @@ A Section container for displaying a Language settings link.
 import SwiftUI
 
 /// A `Section` container for displaying a `SLink` for Language settings.
+///
 /// ```swift
 /// LanguageView()
 /// ```

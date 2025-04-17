@@ -145,7 +145,7 @@ struct DisplayBrightnessView: View {
             
             // MARK: Auto-Lock
             Section {
-                CustomNavigationLink("AUTOLOCK".localize(table: table), status: autoLockDuration.localize(table: table), destination: SelectOptionList(title: "AUTOLOCK", options: UIDevice.iPhone ? phoneOptions : tabletOptions, selectedBinding: $autoLockDuration, table: "Display"))
+                CustomNavigationLink("AUTOLOCK".localize(table: table), status: autoLockDuration.localize(table: table), destination: SelectOptionList("AUTOLOCK", options: UIDevice.iPhone ? phoneOptions : tabletOptions, selectedBinding: $autoLockDuration, table: "Display"))
                     .disabled(lowPowerMode)
                 // Raise to Wake
                 if UIDevice.iPhone {
