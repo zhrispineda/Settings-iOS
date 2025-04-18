@@ -18,7 +18,7 @@ struct SelectSignInOptionView: View {
         List {
             // Animated Apple logo, title, and description
             VStack(spacing: 10) {
-                MicaView()
+                CustomView(path: "/System/Library/PrivateFrameworks/AppleIDSetupUI.framework/AppleIDSetupUI", controller: "AppleIDSetupUI.AISAppleIDMicaView")
                     .frame(height: 100)
                 Text("LOGIN_FORM_TITLE", tableName: table)
                     .font(.largeTitle)
@@ -31,10 +31,21 @@ struct SelectSignInOptionView: View {
             
             // Use Another Apple Device Button
             Section {
-                Button {
-                    dismiss()
-                } label: {
-                    SignInMethodButton(image: "ProximitySymbol-iPhone-iPad", title: "SIGN_IN_OPTION_ANOTHER_DEVICE_TITLE", subtitle: "SIGN_IN_OPTION_ANOTHER_DEVICE_SUBTITLE", table: table)
+                Group {
+                    if UIDevice.IsSimulator || UIDevice.checkDevice() == nil {
+                        Button {
+                            dismiss()
+                        } label: {
+                            SignInMethodButton(image: "ProximitySymbol-iPhone-iPad", title: "SIGN_IN_OPTION_ANOTHER_DEVICE_TITLE", subtitle: "SIGN_IN_OPTION_ANOTHER_DEVICE_SUBTITLE", table: table, chevron: true)
+                        }
+                    } else {
+                        NavigationLink {
+                            ProximityViewController()
+                                .ignoresSafeArea()
+                        } label: {
+                            SignInMethodButton(image: "ProximitySymbol-iPhone-iPad", title: "SIGN_IN_OPTION_ANOTHER_DEVICE_TITLE", subtitle: "SIGN_IN_OPTION_ANOTHER_DEVICE_SUBTITLE", table: table)
+                        }
+                    }
                 }
                 .foregroundStyle(.primary)
                 .listRowBackground(Color(colorScheme == .light ? UIColor.systemGray6 : UIColor.secondarySystemGroupedBackground))
@@ -86,29 +97,12 @@ struct SelectSignInOptionView: View {
     }
 }
 
-// Apple Account Mica View
-struct MicaView: UIViewRepresentable {
-    func makeUIView(context: Context) -> UIView {
-        guard dlopen("/System/Library/PrivateFrameworks/AppleIDSetupUI.framework/AppleIDSetupUI", RTLD_NOW) != nil else {
-            SettingsLogger.error("Could not load framework: AppleIDSetupUI")
-            return UIView()
-        }
-        guard let view = NSClassFromString("AppleIDSetupUI.AISAppleIDMicaView") as? UIView.Type else {
-            SettingsLogger.error("Could not load view: AISAppleIDMicaView")
-            return UIView()
-        }
-        
-        return view.init()
-    }
-    
-    func updateUIView(_ uiView: UIView, context: Context) {}
-}
-
 struct SignInMethodButton: View {
     let image: String
     let title: String
     let subtitle: String
     let table: String
+    var chevron = false
     
     var body: some View {
         HStack {
@@ -135,7 +129,7 @@ struct SignInMethodButton: View {
             }
             .padding(5)
             
-            if UIImage(systemName: image) == nil {
+            if chevron {
                 Spacer()
                 Image(systemName: "chevron.right")
                     .imageScale(.small)

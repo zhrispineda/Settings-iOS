@@ -127,6 +127,7 @@
 		83585B752B8848110046A0C3 /* TransitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83585B742B8848110046A0C3 /* TransitView.swift */; };
 		83585B772B8848430046A0C3 /* CyclingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83585B762B8848430046A0C3 /* CyclingView.swift */; };
 		83585FCA2C435B6700B11C91 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83585FC92C435B6700B11C91 /* StringExtensions.swift */; };
+		835874CC2DB2AE81005E4D01 /* AuthKitUI.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 835874CB2DB2AE81005E4D01 /* AuthKitUI.xcstrings */; };
 		835BF1372CC1AAB800F30DA1 /* AutomaticContentDownload.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 835BF1362CC1AAB800F30DA1 /* AutomaticContentDownload.xcstrings */; };
 		836000782BCC7A470034DDF5 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836000772BCC7A470034DDF5 /* NotificationsView.swift */; };
 		8360825D2D13B04E00902254 /* SettingsPhysical.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8360825C2D13B04E00902254 /* SettingsPhysical.gif */; };
@@ -460,6 +461,7 @@
 		83585B742B8848110046A0C3 /* TransitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitView.swift; sourceTree = "<group>"; };
 		83585B762B8848430046A0C3 /* CyclingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyclingView.swift; sourceTree = "<group>"; };
 		83585FC92C435B6700B11C91 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		835874CB2DB2AE81005E4D01 /* AuthKitUI.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AuthKitUI.xcstrings; sourceTree = "<group>"; };
 		835BF1362CC1AAB800F30DA1 /* AutomaticContentDownload.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AutomaticContentDownload.xcstrings; sourceTree = "<group>"; };
 		836000772BCC7A470034DDF5 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		8360825C2D13B04E00902254 /* SettingsPhysical.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SettingsPhysical.gif; sourceTree = "<group>"; };
@@ -1328,6 +1330,7 @@
 				832877DC2CAD95C300013B0B /* AppleAccountUI.xcstrings */,
 				83DB888E2CAC97BF008218E6 /* AppleID.xcstrings */,
 				832877DE2CAD987B00013B0B /* AppleIDSetup.xcstrings */,
+				835874CB2DB2AE81005E4D01 /* AuthKitUI.xcstrings */,
 				832877E02CAD9A2C00013B0B /* BatteryUI.xcstrings */,
 				834565732CAAE673002BE49D /* CameraEditKit.xcstrings */,
 				832877E82CAEE14400013B0B /* CameraUI-SmartStyles.xcstrings */,
@@ -1781,6 +1784,7 @@
 				83F3611C2CD2E25700041A72 /* AppleAdvertising.xcstrings in Resources */,
 				83F745BA2CC18EC700FDB3BA /* NewDeviceOutreachUI.xcstrings in Resources */,
 				837BCF332CD2E880009B1E33 /* Pearl.xcstrings in Resources */,
+				835874CC2DB2AE81005E4D01 /* AuthKitUI.xcstrings in Resources */,
 				8345656E2CAADFD6002BE49D /* CameraSettings.xcstrings in Resources */,
 				832877DB2CAD915400013B0B /* AmbientSettings.xcstrings in Resources */,
 				8388E5342CD034EB00A3066D /* Location Services.xcstrings in Resources */,

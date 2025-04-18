@@ -5,6 +5,49 @@
 
 import SwiftUI
 
+// MARK: - AuthKitUI
+/// Bring Device Nearby view for logging into Apple Accounts with a nearby device.
+struct ProximityViewController: UIViewControllerRepresentable {
+    func makeUIViewController(context: Context) -> UIViewController {
+        dlopen("/System/Library/PrivateFrameworks/AuthKitUI.framework/AuthKitUI", RTLD_NOW)
+
+        guard
+            let viewModelClass = NSClassFromString("AKProximityMessageViewModel") as? NSObject.Type,
+            let viewControllerClass = NSClassFromString("AKProximityAuthViewController") as? NSObject.Type
+        else {
+            return UIViewController()
+        }
+
+        let alloc = NSSelectorFromString("alloc")
+        let initWithType = Selector(("initWithType:"))
+        let initWithViewModel = Selector(("initWithViewModel:"))
+
+        let allocMethod = viewModelClass.method(for: alloc)
+        let initMethod = class_getMethodImplementation(viewModelClass, initWithType)
+
+        typealias AllocType = @convention(c) (AnyObject, Selector) -> AnyObject
+        typealias InitVMType = @convention(c) (AnyObject, Selector, UInt64) -> AnyObject
+
+        let vmAlloc = unsafeBitCast(allocMethod, to: AllocType.self)
+        let vmInit = unsafeBitCast(initMethod, to: InitVMType.self)
+
+        let viewModel = vmInit(vmAlloc(viewModelClass, alloc), initWithType, 0)
+        viewModel.setValue("PROXIMITY_AUTH_BROADCAST_TITLE".localize(table: "AuthKitUI"), forKey: "titleText")
+        viewModel.setValue(UIDevice.iPhone ? "PROXIMITY_AUTH_BROADCAST_DESCRIPTION_IPHONE".localize(table: "AuthKitUI") : "PROXIMITY_AUTH_BROADCAST_DESCRIPTION_IPAD".localize(table: "AuthKitUI"), forKey: "detailedText")
+
+        typealias InitVCType = @convention(c) (AnyObject, Selector, AnyObject) -> AnyObject
+
+        let vcAlloc = unsafeBitCast(viewControllerClass.method(for: alloc), to: AllocType.self)
+        let vcInit = unsafeBitCast(class_getMethodImplementation(viewControllerClass, initWithViewModel), to: InitVCType.self)
+
+        let controller = vcInit(vcAlloc(viewControllerClass, alloc), initWithViewModel, viewModel)
+
+        return controller as! UIViewController
+    }
+
+    func updateUIViewController(_ uiViewController: UIViewController, context: Context) {}
+}
+
 // MARK: - HelpKit
 /// HLPHelpViewController for displaying user guide information.
 struct HelpKitView: UIViewControllerRepresentable {
@@ -250,4 +293,29 @@ struct CustomViewController: UIViewControllerRepresentable {
     }
     
     func updateUIViewController(_ uiViewController: UIViewController, context: Context) {}
+}
+
+/// A view bridge based on a given path and class name.
+///
+/// - Parameter path: The path of the framework.
+/// - Parameter controller: The string name of the class.
+struct CustomView: UIViewRepresentable {
+    let path: String
+    let controller: String
+    
+    func makeUIView(context: Context) -> UIView {
+        guard dlopen(path, RTLD_NOW) != nil else {
+            SettingsLogger.error("Could not load framework: \(path)")
+            return UIView()
+        }
+        
+        guard let view = NSClassFromString(controller) as? UIView.Type else {
+            SettingsLogger.error("Could not load view: \(controller)")
+            return UIView()
+        }
+        
+        return view.init()
+    }
+    
+    func updateUIView(_ uiView: UIView, context: Context) {}
 }
