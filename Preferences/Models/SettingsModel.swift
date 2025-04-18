@@ -128,6 +128,10 @@ let multicolorIcons: Set<String> = ["app.grid.3x3", "faceid", "siri", "touchid"]
 
 // MARK: - Settings Layout
 
+/// Device-restricted views
+let phoneOnly: Set<String> = ["Action Button", "Emergency SOS", "Health", "Personal Hotspot", "StandBy"]
+let tabletOnly: Set<String> = ["Apple Pencil", "Multitasking & Gestures"]
+
 /// Follow Up Settings
 @MainActor
 let followUpSettings: [SettingsItem] = [

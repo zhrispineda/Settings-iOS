@@ -244,11 +244,9 @@ struct CustomViewController: UIViewControllerRepresentable {
             _ = class_addMethod(controller, iconSelector, imp, "v@:@@@@")
         }
         
-        let instance = controller.init()
-        
         SettingsLogger.info("Loading plugin with name '\(controller)' at location '{ directoryURL: 'file://\(path)'}'.")
         
-        return instance
+        return controller.init()
     }
     
     func updateUIViewController(_ uiViewController: UIViewController, context: Context) {}

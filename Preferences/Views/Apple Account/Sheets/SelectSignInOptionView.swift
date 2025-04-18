@@ -18,7 +18,7 @@ struct SelectSignInOptionView: View {
         List {
             // Animated Apple logo, title, and description
             VStack(spacing: 10) {
-                animatedHeader()
+                MicaView()
                     .frame(height: 100)
                 Text("LOGIN_FORM_TITLE", tableName: table)
                     .font(.largeTitle)
@@ -28,8 +28,6 @@ struct SelectSignInOptionView: View {
                     .padding(.horizontal)
             }
             .listRowBackground(Color.clear)
-            .frame(maxWidth: .infinity, alignment: .center)
-            .padding(.bottom, 0)
             
             // Use Another Apple Device Button
             Section {
@@ -88,70 +86,22 @@ struct SelectSignInOptionView: View {
     }
 }
 
-// Apple Account Dotted Ring Header
-struct animatedHeader: View {
-    var body: some View {
-        ZStack {
-            dottedRing
-            Image(systemName: "applelogo")
-                .foregroundStyle(.blue)
-                .font(.system(size: 25))
-                .offset(y: -2)
+// Apple Account Mica View
+struct MicaView: UIViewRepresentable {
+    func makeUIView(context: Context) -> UIView {
+        guard dlopen("/System/Library/PrivateFrameworks/AppleIDSetupUI.framework/AppleIDSetupUI", RTLD_NOW) != nil else {
+            SettingsLogger.error("Could not load framework: AppleIDSetupUI")
+            return UIView()
         }
+        guard let view = NSClassFromString("AppleIDSetupUI.AISAppleIDMicaView") as? UIView.Type else {
+            SettingsLogger.error("Could not load view: AISAppleIDMicaView")
+            return UIView()
+        }
+        
+        return view.init()
     }
     
-    var dottedRing: some View {
-        ZStack {
-            Color.blue.opacity(0.5)
-                .mask {
-                    ZStack {
-                        animatedDots(delay: 0.0)
-                            .scaleEffect(0.4)
-                            .rotationEffect(.degrees(2))
-                        animatedDots(delay: 0.25)
-                            .scaleEffect(0.3)
-                            .rotationEffect(.degrees(12))
-                    }
-                }
-        }
-    }
-}
-
-// Animated Apple Account Dots
-struct animatedDots: View {
-    let delay: Double
-    @State private var animating = false
-    @State private var rotation = 0.0
-    private let timer = Timer.publish(every: 3, on: .main, in: .common).autoconnect()
-    
-    var body: some View {
-        ring
-            .opacity(animating ? 1 : 0)
-            .scaleEffect(animating ? 1 : 0.5)
-            .rotationEffect(.degrees(rotation))
-            .onAppear {
-                if rotation == 0.0 {
-                    withAnimation(.easeInOut(duration: 1.0).delay(delay)) {
-                        rotation += 90
-                        animating = true
-                    }
-                }
-            }
-    }
-    
-    var ring: some View {
-        Canvas { context, size in
-            let dimensionOffset = size.width/2
-            let icon = context.resolve(Image(systemName: "circle.fill"))
-            var currentPoint = CGPoint(x: dimensionOffset - icon.size.width/0.2, y: 0)
-            
-            for _ in 0...20 {
-                currentPoint = currentPoint.applying(.init(rotationAngle: Angle.degrees(18).radians))
-                context.draw(icon, at: CGPoint(x: currentPoint.x + dimensionOffset, y: currentPoint.y + dimensionOffset))
-            }
-        }
-        .frame(width: 360, height: 360)
-    }
+    func updateUIView(_ uiView: UIView, context: Context) {}
 }
 
 struct SignInMethodButton: View {
@@ -195,8 +145,12 @@ struct SignInMethodButton: View {
     }
 }
 
-#Preview {
+#Preview("Sign In Options View") {
     NavigationStack {
         SelectSignInOptionView()
     }
+}
+
+#Preview("ContentView") {
+    ContentView(stateManager: StateManager())
 }

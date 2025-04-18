@@ -40,6 +40,7 @@ struct CustomList<Content: View>: View {
             }
             .onAppear {
                 isLandscape = geo.size.width > geo.size.height
+                SettingsLogger.info("Loaded view: \(title)")
             }
             .onChange(of: geo.size.width) {
                 isLandscape = geo.size.width > geo.size.height

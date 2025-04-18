@@ -6,9 +6,11 @@ A re-initalized Text that allows for using a localization table's keys in combin
 import SwiftUI
 
 /// A re-initalized Text that allows for using a localization table's keys in combination with markdown-formatted links within the same key.
+///
 /// ```swift
 /// LocalizedLink("FOOTER_EXPLANATION", table: "AppTable", link: "MORE_INFO_LINK", url: "https://example.com/info")
 /// ```
+///
 /// - Parameter text: The `String` value to use as the key.
 /// - Parameter table: The `String` value to use as the table.
 /// - Parameter link: The `String` key to display as a link.
@@ -20,7 +22,7 @@ struct LocalizedLink: View {
     let link: String
     let url: String
     
-    init(_ text: String, table: String, link: String, url: String = "#") {
+    init(_ text: String, table: String, link: String, url: String = "") {
         self.text = text
         self.table = table
         self.link = link

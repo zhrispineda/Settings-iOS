@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-/// Apple Account Button
+/// Apple Account Button Label
 struct AppleAccountSection: View {
     var body: some View {
         HStack {
@@ -15,6 +15,7 @@ struct AppleAccountSection: View {
                 .resizable()
                 .frame(width: 60, height: 60)
                 .offset(x: -2)
+            
             VStack(alignment: .leading, spacing: 3) {
                 Text("Apple Account")
                     .bold()

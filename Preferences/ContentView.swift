@@ -8,10 +8,6 @@
 import SwiftUI
 import TipKit
 
-// Variables
-let phoneOnly = ["Action Button", "Emergency SOS", "Health", "Personal Hotspot", "StandBy"]
-let tabletOnly = ["Apple Pencil", "Multitasking & Gestures"]
-
 struct ContentView: View {
     // Variables
     @AppStorage("SiriEnabled") private var siriEnabled = false

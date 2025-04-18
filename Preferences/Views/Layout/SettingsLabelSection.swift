@@ -9,9 +9,9 @@ import SwiftUI
 
 /// Settings Sidebar Label for iPadOS
 struct SettingsLabelSection: View {
-    @State private var showingSignInSheet = false
     @Binding var selection: SettingsModel?
     @Binding var id: UUID
+    @State private var showingSignInSheet = false
     var item: [SettingsItem<AnyView>]
     
     var body: some View {
