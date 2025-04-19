@@ -144,7 +144,7 @@ struct AppleAccountLoginView: View {
                 }
                 .listRowBackground(Color.clear)
             }
-            .padding(.top, -50)
+            .padding(.top, -45)
             .background(colorScheme == .light ? .white : Color(UIColor.systemBackground))
             .scrollContentBackground(.hidden)
             .navigationBarBackButtonHidden()

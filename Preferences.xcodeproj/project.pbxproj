@@ -179,7 +179,6 @@
 		83815CF12B768F0500F53A0F /* HealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83815CF02B768F0500F53A0F /* HealthView.swift */; };
 		83815CF32B768F1E00F53A0F /* SiriView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83815CF22B768F1E00F53A0F /* SiriView.swift */; };
 		83815CF52B768F3600F53A0F /* PhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83815CF42B768F3600F53A0F /* PhotosView.swift */; };
-		83815CF72B768F4800F53A0F /* GameCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83815CF62B768F4800F53A0F /* GameCenterView.swift */; };
 		8382739C2B7F21E4000F4228 /* AllowedAppsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8382739B2B7F21E4000F4228 /* AllowedAppsView.swift */; };
 		8382739E2B7F25D4000F4228 /* ContentRestrictionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8382739D2B7F25D4000F4228 /* ContentRestrictionsView.swift */; };
 		838273A12B7F28D6000F4228 /* MoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838273A02B7F28D6000F4228 /* MoviesView.swift */; };
@@ -307,7 +306,6 @@
 		83F6E26C2C8A2E300060187F /* RemindersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F6E26B2C8A2E300060187F /* RemindersView.swift */; };
 		83F745BA2CC18EC700FDB3BA /* NewDeviceOutreachUI.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83F745B92CC18EC700FDB3BA /* NewDeviceOutreachUI.xcstrings */; };
 		83F77D692CD3E51F0026B1AC /* StoreSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83F77D682CD3E51F0026B1AC /* StoreSettings.xcstrings */; };
-		83F77D6B2CD3ED940026B1AC /* GameCenterUICore.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83F77D6A2CD3ED940026B1AC /* GameCenterUICore.xcstrings */; };
 		83F77D6D2CD3F2180026B1AC /* PeerPayment_Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83F77D6C2CD3F2180026B1AC /* PeerPayment_Localizable.xcstrings */; };
 		83F77D702CD3F3A30026B1AC /* PaymentOffers_Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83F77D6F2CD3F3A30026B1AC /* PaymentOffers_Localizable.xcstrings */; };
 		83F77D722CD3F48D0026B1AC /* Payment_Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83F77D712CD3F48D0026B1AC /* Payment_Localizable.xcstrings */; };
@@ -477,6 +475,7 @@
 		8373E7352B91660F004285EA /* SensitivePhotosVideosProtectionSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensitivePhotosVideosProtectionSheetView.swift; sourceTree = "<group>"; };
 		8373E7372B9168C9004285EA /* CommunicationSafetyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicationSafetyView.swift; sourceTree = "<group>"; };
 		8374886E2D0A6EB400865CA8 /* AssistantSettings-ExternalAIModel.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "AssistantSettings-ExternalAIModel.xcstrings"; sourceTree = "<group>"; };
+		8374E2E42DB33AE70044AF50 /* Preferences.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Preferences.entitlements; sourceTree = "<group>"; };
 		837659732CDD7C5000616457 /* SecurityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityView.swift; sourceTree = "<group>"; };
 		837936152CDBE68B0020557B /* VideoSubscriberAccount.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = VideoSubscriberAccount.xcstrings; sourceTree = "<group>"; };
 		837B0F5A2B8989E000B22455 /* SiriLanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriLanguageView.swift; sourceTree = "<group>"; };
@@ -513,7 +512,6 @@
 		83815CF02B768F0500F53A0F /* HealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthView.swift; sourceTree = "<group>"; };
 		83815CF22B768F1E00F53A0F /* SiriView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriView.swift; sourceTree = "<group>"; };
 		83815CF42B768F3600F53A0F /* PhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosView.swift; sourceTree = "<group>"; };
-		83815CF62B768F4800F53A0F /* GameCenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCenterView.swift; sourceTree = "<group>"; };
 		8382739B2B7F21E4000F4228 /* AllowedAppsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowedAppsView.swift; sourceTree = "<group>"; };
 		8382739D2B7F25D4000F4228 /* ContentRestrictionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentRestrictionsView.swift; sourceTree = "<group>"; };
 		838273A02B7F28D6000F4228 /* MoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesView.swift; sourceTree = "<group>"; };
@@ -645,7 +643,6 @@
 		83F6E26B2C8A2E300060187F /* RemindersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersView.swift; sourceTree = "<group>"; };
 		83F745B92CC18EC700FDB3BA /* NewDeviceOutreachUI.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = NewDeviceOutreachUI.xcstrings; sourceTree = "<group>"; };
 		83F77D682CD3E51F0026B1AC /* StoreSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = StoreSettings.xcstrings; sourceTree = "<group>"; };
-		83F77D6A2CD3ED940026B1AC /* GameCenterUICore.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = GameCenterUICore.xcstrings; sourceTree = "<group>"; };
 		83F77D6C2CD3F2180026B1AC /* PeerPayment_Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = PeerPayment_Localizable.xcstrings; sourceTree = "<group>"; };
 		83F77D6F2CD3F3A30026B1AC /* PaymentOffers_Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = PaymentOffers_Localizable.xcstrings; sourceTree = "<group>"; };
 		83F77D712CD3F48D0026B1AC /* Payment_Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Payment_Localizable.xcstrings; sourceTree = "<group>"; };
@@ -914,6 +911,7 @@
 		833F0ACE2B744D180036EAD2 /* Preferences */ = {
 			isa = PBXGroup;
 			children = (
+				8374E2E42DB33AE70044AF50 /* Preferences.entitlements */,
 				83CC61982B7952B800DAF0C1 /* Info.plist */,
 				832999512CAF9302009AD115 /* Components */,
 				83585FC62C435A4600B11C91 /* Extensions */,
@@ -1346,7 +1344,6 @@
 				833101762CD17A9500C6C3B3 /* FocusSettings.xcstrings */,
 				830976CE2CDD19FF0087F1A1 /* FollowUp.xcstrings */,
 				83A7E1592CBF047B0037F1FB /* FontSettings.xcstrings */,
-				83F77D6A2CD3ED940026B1AC /* GameCenterUICore.xcstrings */,
 				83C3F33C2CC2BA7800AE2402 /* GameControlleriOSSettings.xcstrings */,
 				832D84EF2CD2A9DD0075ECF0 /* HealthPrivacySettings.xcstrings */,
 				8314482C2CD9652A00FFEE51 /* HealthSettingsSpecifiers.xcstrings */,
@@ -1531,7 +1528,6 @@
 			children = (
 				83096BD62BA232C30082DB61 /* Game Center */,
 				83F516BF2C21EA8C0004E87A /* AppStoreView.swift */,
-				83815CF62B768F4800F53A0F /* GameCenterView.swift */,
 				83F516C12C21EB1C0004E87A /* WalletView.swift */,
 			);
 			path = Services;
@@ -1723,7 +1719,6 @@
 				837D24292CD0293C00274D42 /* ScreenTimeSettingsUI.xcstrings in Resources */,
 				83F77D782CD3F7C70026B1AC /* WalletSettings_Localizable.xcstrings in Resources */,
 				834565742CAAE673002BE49D /* CameraEditKit.xcstrings in Resources */,
-				83F77D6B2CD3ED940026B1AC /* GameCenterUICore.xcstrings in Resources */,
 				832D84F02CD2A9DD0075ECF0 /* HealthPrivacySettings.xcstrings in Resources */,
 				83F77D7C2CD3F9740026B1AC /* ContactlessAndCredentialSettings_Localizable.xcstrings in Resources */,
 				83FE80032D2363B900F065EF /* Accessibility-D93.xcstrings in Resources */,
@@ -1880,7 +1875,6 @@
 				83F455B32C3C8CA5009DB157 /* LocationServicesView.swift in Sources */,
 				83FCEFEA2C07F0DE008BE814 /* NetworkDetailView.swift in Sources */,
 				83AE01D92D655F6500724A34 /* SettingsLinkSection.swift in Sources */,
-				83815CF72B768F4800F53A0F /* GameCenterView.swift in Sources */,
 				83F516BA2C21D88B0004E87A /* StandByView.swift in Sources */,
 				83815CF52B768F3600F53A0F /* PhotosView.swift in Sources */,
 				839092BB2C0D213200924849 /* OtherNetworkView.swift in Sources */,
@@ -2208,6 +2202,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Preferences/Preferences.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1308.2.502;
@@ -2254,6 +2249,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Preferences/Preferences.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1308.2.502;

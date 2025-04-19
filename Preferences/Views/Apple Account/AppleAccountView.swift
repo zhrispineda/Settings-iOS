@@ -25,8 +25,8 @@ struct AppleAccountView: View {
             .listRowBackground(Color.clear)
             
             Section {
-                SLink("SPYGLASS_SPECIFIER_PAYMENT_AND_SHIPPING".localize(table: table), color: .gray, icon: "person.text.rectangle.fill") {}
-                SLink("SPYGLASS_SPECIFIER_SIGNIN_AND_SECURITY".localize(table: table), color: .gray, icon: "custom.key.shield.fill") {}
+                SLink("SPYGLASS_SPECIFIER_PAYMENT_AND_SHIPPING".localize(table: table), color: .gray, icon: "person.text.rectangle.fill", lightOnly: true) {}
+                SLink("SPYGLASS_SPECIFIER_SIGNIN_AND_SECURITY".localize(table: table), color: .gray, icon: "custom.key.shield.fill", lightOnly: true) {}
             }
             
             Section {
