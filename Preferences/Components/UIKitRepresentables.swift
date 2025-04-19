@@ -287,6 +287,13 @@ struct CustomViewController: UIViewControllerRepresentable {
             _ = class_addMethod(controller, iconSelector, imp, "v@:@@@@")
         }
         
+        let actionSelector = Selector(("pe_registerUndoActionName:associatedDeepLink:undoAction:"))
+        if !(controller as AnyObject).responds(to: actionSelector) {
+            let methodImp: @convention(block) (AnyObject, Any?, Any?, @escaping () -> Void) -> Void = { _, _, _, _ in }
+            let imp = imp_implementationWithBlock(methodImp)
+            _ = class_addMethod(controller, actionSelector, imp, "v@:@@?")
+        }
+        
         SettingsLogger.info("Loading plugin with name '\(controller)' at location '{ directoryURL: 'file://\(path)'}'.")
         
         return controller.init()

@@ -87,7 +87,10 @@ struct SiriView: View {
                         Toggle("ASSISTANT_LOCK_SCREEN_ACCESS".localize(table: table), isOn: $allowSiriWhenLockedEnabled)
                     }
                     CustomNavigationLink("VOICE".localize(table: table), status: "\("REGION_en-US".localize(table: table)) (Voice 4)", destination: SiriVoiceView())
-                    NavigationLink("VOICE_FEEDBACK".localize(table: table), destination: SiriResponsesView())
+                    NavigationLink("VOICE_FEEDBACK".localize(table: table)) {
+                        CustomViewController("/System/Library/PrivateFrameworks/AssistantSettingsSupport.framework/AssistantSettingsSupport", controller: "AssistantAudioFeedbackController")
+                            .navigationTitle("VOICE_FEEDBACK".localize(table: table))
+                    }
                     if UIDevice.IsSimulator {
                         NavigationLink("ANNOUNCE_CALLS_TITLE".localize(table: table), destination: EmptyView())
                         NavigationLink("ANNOUNCE_MESSAGES_TITLE".localize(table: table), destination: EmptyView())
