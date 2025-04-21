@@ -98,7 +98,7 @@ struct CameraView: View {
                 
                 if UIDevice.iPhone {
                     NavigationLink("CAM_PRESERVE_SETTINGS_TITLE".localize(table: table)) {
-                        PreserveSettingsView()
+                        BundleControllerView("CameraSettings", controller: "CameraPreserveSettingsController", title: "CAM_PRESERVE_SETTINGS_TITLE", table: table)
                     }
                     Toggle("VOLUME_UP_BURST".localize(table: table), isOn: $useVolumeUpBurstEnabled)
                 }
@@ -108,7 +108,7 @@ struct CameraView: View {
                 
                 if UIDevice.iPad {
                     NavigationLink("CAM_PRESERVE_SETTINGS_TITLE".localize(table: table)) {
-                        PreserveSettingsView()
+                        BundleControllerView("CameraSettings", controller: "CameraPreserveSettingsController", title: "CAM_PRESERVE_SETTINGS_TITLE", table: table)
                     }
                 }
             }

@@ -13,6 +13,8 @@ struct CameraControlView: View {
     @AppStorage("CameraControlLockFocus") private var lockFocus = false
     @AppStorage("CameraControlGesture") private var selectedGesture = "CAPTURE_BUTTON_LAUNCH_SINGLE_CLICK"
     @AppStorage("CameraControlApp") private var selectedApp = "Camera"
+    @AppStorage("CameraControlRequireScreenOn") private var requireScreenOn = true
+    @AppStorage("CameraControlVisualIntelligence") private var visualIntelligence = true
     let table = "CameraSettings-CameraButton"
     let options = ["CAPTURE_BUTTON_LAUNCH_SINGLE_CLICK", "CAPTURE_BUTTON_LAUNCH_DOUBLE_CLICK"]
     let apps: [AppSelection] = [
@@ -45,6 +47,25 @@ struct CameraControlView: View {
                 Text("CAPTURE_BUTTON_LOCK_FOCUS_FOOTER", tableName: table)
             }
             
+            // MARK: App Selection Section
+            Section {
+                NavigationLink(selectedApp.localize(table: table)) {
+                    CustomList(title: selectedApp.localize(table: table)) {
+                        Picker("CAPTURE_BUTTON_LAUNCH_APP_TITLE".localize(table: table), selection: $selectedApp) {
+                            ForEach(apps) { app in
+                                SLabel(app.id.localize(table: table), color: .white, icon: app.icon)
+                            }
+                        }
+                        .pickerStyle(.inline)
+                        .labelsHidden()
+                    }
+                }
+            } header: {
+                Text("CAPTURE_BUTTON_LAUNCH_APP_TITLE", tableName: table)
+            } footer: {
+                Text("CAMERA_BUTTON_APP_LIST_FOOTER", tableName: table)
+            }
+            
             // MARK: Launch Camera Section
             Section {
                 Picker("CAPTURE_BUTTON_LAUNCH_APP_TITLE".localize(table: table), selection: $selectedGesture) {
@@ -60,17 +81,20 @@ struct CameraControlView: View {
                 Text("CAPTURE_BUTTON_APP_LAUNCH_FOOTER", tableName: table)
             }
             
-            // MARK: App Selection Section
+            // MARK: Require Screen On
             Section {
-                Picker("CAPTURE_BUTTON_LAUNCH_APP_TITLE".localize(table: table), selection: $selectedApp) {
-                    ForEach(apps) { app in
-                        SLabel(app.id.localize(table: table), color: .white, icon: app.icon)
-                    }
-                }
-                .pickerStyle(.inline)
-                .labelsHidden()
+                Toggle("CAPTURE_BUTTON_REQUIRES_SCREEN_ON".localize(table: table), isOn: $requireScreenOn)
             } footer: {
-                Text("CAMERA_BUTTON_APP_LIST_FOOTER", tableName: table)
+                Text("CAPTURE_BUTTON_REQUIRES_SCREEN_ON_FOOTER", tableName: table)
+            }
+            
+            // MARK: Launch Visual Intelligence
+            Section {
+                Toggle("CAPTURE_BUTTON_PRESS_AND_HOLD".localize(table: table), isOn: $visualIntelligence)
+            } header: {
+                Text("CAPTURE_BUTTON_LAUNCH_VISUAL_INTELLIGENCE_TITLE", tableName: table)
+            } footer: {
+                Text("CAPTURE_BUTTON_LAUNCH_VISUAL_INTELLIGENCE_FOOTER", tableName: table)
             }
             
             // MARK: Accessibility Section
