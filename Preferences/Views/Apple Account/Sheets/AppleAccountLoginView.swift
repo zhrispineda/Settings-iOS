@@ -25,7 +25,7 @@ struct AppleAccountLoginView: View {
         GeometryReader { geo in
             List {
                 Section {
-                    VStack(alignment: .center) {
+                    VStack(spacing: 15) {
                         Image("appleAccount") // Apple Account Logo
                             .resizable()
                             .scaledToFit()
@@ -33,24 +33,23 @@ struct AppleAccountLoginView: View {
                         Text("LOGIN_FORM_TITLE".localize(table: setupTable)) // Apple Account Title
                             .font(.largeTitle)
                             .fontWeight(.bold)
-                            .multilineTextAlignment(.center)
                         Text("SIGN_IN_SUBTITLE".localize(table: uiTable)) // Apple Account Subtitle
-                            .multilineTextAlignment(.center)
                     }
                     .frame(maxWidth: .infinity)
-                    .padding(.horizontal, 10)
+                    .padding(.horizontal, 20)
                 }
+                .multilineTextAlignment(.center)
                 .listRowBackground(Color.clear)
                 
                 Section {
                     VStack(alignment: .center) {
-                        // Email or Phone Number Text Field
+                        // MARK: Email or Phone Number Text Field
                         TextField("LOGIN_FORM_TEXTFIELD_NAME".localize(table: setupTable), text: $username)
                             .usernameTextStyle()
                         
                         Spacer()
                         
-                        // Forgot password? Button
+                        // MARK: Forgot password? Button
                         Button {
                             showingForgotPasswordSheet.toggle()
                         } label: {
@@ -61,77 +60,37 @@ struct AppleAccountLoginView: View {
                         }
                         .buttonStyle(.plain)
                         .disabled(showingOptionsAlert)
-                        
-                        // Sign in a child in my Family Button
-                        if !isMainSheet {
-                            ZStack(alignment: .leading) {
-                                Text("SIGN_IN_FOR_CHILD_BUTTON_TITLE".localize(table: uiTable))
-                                    .foregroundStyle(.accent)
-                                    .frame(maxWidth: .infinity)
-                                    .contentShape(Rectangle())
-                                
-                                NavigationLink(destination: ParentGuardianSignInView()) {}
-                                    .opacity(0)
-                                    .buttonStyle(.plain)
-                            }
-                            .padding(.top, 5)
-                        }
                     }
-                    .alert("SIGN_IN_HELP_ALERT_TITLE_FORGOT_OR_CREATE".localize(table: uiTable), isPresented: $showingOptionsAlert) {
-                        Button("IFORGOT_BUTTON_REBRAND".localize(table: table), role: .none) {
-                            showingForgotPasswordSheet.toggle()
-                        }
-                        Button("SIGN_IN_HELP_ALERT_BUTTON_CREATE".localize(table: uiTable), role: .none) {
-                            showingErrorAlert.toggle()
-                        }
-                        Button("SIGN_IN_HELP_ALERT_BUTTON_CANCEL".localize(table: uiTable), role: .cancel) {}
-                    }
-                    .alert("Could Not Create Apple Account", isPresented: $showingErrorAlert) {
-                        Link("Learn More", destination: URL(string: "https://support.apple.com/en-us/101661")!)
-                        Button("AUTHENTICATE_VIEW_BUTTON_TITLE".localize(table: setupTable)) {
-                            dismiss()
-                        }
-                    } message: {
-                        Text("This \(UIDevice.IsSimulator ? "iPhoneSimulator" : UIDevice.current.model) has been used to create too many new Apple Accounts. Contact Apple Support to request another Apple Account to use with this \(UIDevice.IsSimulator ? "iPhoneSimulator" : UIDevice.current.model).")
-                    }
-                    .sheet(isPresented: $showingForgotPasswordSheet) {
-                        NavigationStack {
-                            ForgotPasswordView()
-                        }
+                    
+                    // MARK: Sign in a child in my Family Button
+                    ZStack {
+                        NavigationLink("", destination: ParentGuardianSignInView())
+                            .opacity(0)
+                        Text("SIGN_IN_FOR_CHILD_BUTTON_TITLE", tableName: uiTable)
+                            .foregroundStyle(.accent)
                     }
                 }
                 .listRowBackground(Color.clear)
+                .listRowSeparator(.hidden)
                 
                 Section {
                     VStack {
                         if geo.size.height > 650 && UIDevice.iPhone {
-                            Spacer(minLength: geo.size.height * (geo.size.height > 750 ? 0.25 : 0.15))
+                            Spacer(minLength: geo.size.height * (geo.size.height > 750 ? 0.25 : 0.12))
                         }
-                        // Privacy Button
+                        // MARK: Privacy Button
                         OBPrivacyLinkView(bundleIdentifiers: ["com.apple.onboarding.appleid"])
                             .frame(minHeight: 100)
                         
-                        // Continue Button
+                        // MARK: Continue Button
                         Button {
                             signingIn.toggle()
                             showingAlert.toggle()
                         } label: {
                             if signingIn || showingOptionsAlert {
-                                ProgressView()
-                                    .fontWeight(.medium)
-                                    .font(.headline)
-                                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-                                    .background(Color(UIColor.systemGray5))
-                                    .foregroundStyle(Color(UIColor.systemGray))
-                                    .cornerRadius(15)
+                                ContinueButton(username: $username, loading: true)
                             } else {
-                                Text("LOGIN_FORM_BUTTON_CONTINUE".localize(table: setupTable))
-                                    .fontWeight(.medium)
-                                    .font(.headline)
-                                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-                                    .background(username.count < 1 ? Color(UIColor.systemGray5) : Color.blue)
-                                    .foregroundStyle(username.count < 1 ? Color(UIColor.systemGray) : Color.white)
-                                    .cornerRadius(15)
+                                ContinueButton(username: $username)
                             }
                         }
                         .frame(height: 50)
@@ -170,6 +129,28 @@ struct AppleAccountLoginView: View {
                             Image(systemName: "chevron.left")
                         }
                     }
+                }
+            }
+            .alert("SIGN_IN_HELP_ALERT_TITLE_FORGOT_OR_CREATE".localize(table: uiTable), isPresented: $showingOptionsAlert) {
+                Button("IFORGOT_BUTTON_REBRAND".localize(table: table), role: .none) {
+                    showingForgotPasswordSheet.toggle()
+                }
+                Button("SIGN_IN_HELP_ALERT_BUTTON_CREATE".localize(table: uiTable), role: .none) {
+                    showingErrorAlert.toggle()
+                }
+                Button("SIGN_IN_HELP_ALERT_BUTTON_CANCEL".localize(table: uiTable), role: .cancel) {}
+            }
+            .alert("Could Not Create Apple Account", isPresented: $showingErrorAlert) {
+                Link("Learn More", destination: URL(string: "https://support.apple.com/en-us/101661")!)
+                Button("AUTHENTICATE_VIEW_BUTTON_TITLE".localize(table: setupTable)) {
+                    dismiss()
+                }
+            } message: {
+                Text("This \(UIDevice.IsSimulator ? "iPhoneSimulator" : UIDevice.current.model) has been used to create too many new Apple Accounts. Contact Apple Support to request another Apple Account to use with this \(UIDevice.IsSimulator ? "iPhoneSimulator" : UIDevice.current.model).")
+            }
+            .sheet(isPresented: $showingForgotPasswordSheet) {
+                NavigationStack {
+                    ForgotPasswordView()
                 }
             }
         }

@@ -64,17 +64,10 @@ struct ForgotPasswordView: View {
                         Button {
                             showingFailedAlert.toggle()
                         } label: {
-                            Text("SIGN_IN_BUTTON_CONTINUE".localize(table: table))
-                                .fontWeight(.medium)
-                                .font(.headline)
-                                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                                .background(username.count < 1 ? Color(UIColor.systemGray5) : Color.blue)
-                                .clipShape(RoundedRectangle(cornerRadius: 15))
-                                .padding(.horizontal, 40)
-                                .frame(height: 50)
-                                .foregroundStyle(username.count < 1 ? Color(UIColor.systemGray) : Color.white)
-                                .disabled(username.count < 1)
+                            ContinueButton(username: $username)
                         }
+                        .frame(height: 50)
+                        .disabled(username.count < 1)
                         .alert("Cannot Reset Password", isPresented: $showingFailedAlert) {
                             Button("OK", role: .cancel) {}
                         } message: {
@@ -83,6 +76,7 @@ struct ForgotPasswordView: View {
                     }
                 }
                 .padding(.bottom, 50)
+                .padding(.horizontal, 25)
             }
         }
         .toolbar {

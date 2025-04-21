@@ -11,7 +11,6 @@
 		830293B92D28889600222762 /* ProblemReporting.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 830293B82D28889600222762 /* ProblemReporting.xcstrings */; };
 		8306AE6C2D0665A400D1AE5D /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8306AE6B2D0665A400D1AE5D /* ViewExtensions.swift */; };
 		83076D042C7E754600BFFAFE /* BackgroundAppRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83076D032C7E754600BFFAFE /* BackgroundAppRefreshView.swift */; };
-		83096BD82BA232D50082DB61 /* AppleAccountSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83096BD72BA232D50082DB61 /* AppleAccountSignInView.swift */; };
 		830976CF2CDD19FF0087F1A1 /* FollowUp.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 830976CE2CDD19FF0087F1A1 /* FollowUp.xcstrings */; };
 		830976D12CDD1A0E0087F1A1 /* CoreFollowUp.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 830976D02CDD1A0E0087F1A1 /* CoreFollowUp.xcstrings */; };
 		830976D32CDD1B2F0087F1A1 /* FollowUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830976D22CDD1B2F0087F1A1 /* FollowUpView.swift */; };
@@ -254,6 +253,7 @@
 		83CD35172D738CF50060AA83 /* Display.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83CD35162D738CF50060AA83 /* Display.xcstrings */; };
 		83CED5A82D6E5AAF00253D9C /* ZoomSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83CED5A72D6E5AAF00253D9C /* ZoomSettings.xcstrings */; };
 		83CED5AA2D6E5ACD00253D9C /* ZoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CED5A92D6E5ACD00253D9C /* ZoomView.swift */; };
+		83D0501A2DB6D343003D50AD /* ContinueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D050192DB6D343003D50AD /* ContinueButton.swift */; };
 		83D20AD12D875F6B000B26E6 /* DebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D20AD02D875F6B000B26E6 /* DebugView.swift */; };
 		83D241AD2D5CEC87002061F4 /* NotificationsSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83D241AC2D5CEC87002061F4 /* NotificationsSettings.xcstrings */; };
 		83D2687A2BD7303800A86DA9 /* DisplayBrightnessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D268792BD7303800A86DA9 /* DisplayBrightnessView.swift */; };
@@ -336,7 +336,6 @@
 		830293B82D28889600222762 /* ProblemReporting.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = ProblemReporting.xcstrings; sourceTree = "<group>"; };
 		8306AE6B2D0665A400D1AE5D /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		83076D032C7E754600BFFAFE /* BackgroundAppRefreshView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundAppRefreshView.swift; sourceTree = "<group>"; };
-		83096BD72BA232D50082DB61 /* AppleAccountSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAccountSignInView.swift; sourceTree = "<group>"; };
 		830976CE2CDD19FF0087F1A1 /* FollowUp.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = FollowUp.xcstrings; sourceTree = "<group>"; };
 		830976D02CDD1A0E0087F1A1 /* CoreFollowUp.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = CoreFollowUp.xcstrings; sourceTree = "<group>"; };
 		830976D22CDD1B2F0087F1A1 /* FollowUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowUpView.swift; sourceTree = "<group>"; };
@@ -585,6 +584,7 @@
 		83CD35162D738CF50060AA83 /* Display.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Display.xcstrings; sourceTree = "<group>"; };
 		83CED5A72D6E5AAF00253D9C /* ZoomSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = ZoomSettings.xcstrings; sourceTree = "<group>"; };
 		83CED5A92D6E5ACD00253D9C /* ZoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomView.swift; sourceTree = "<group>"; };
+		83D050192DB6D343003D50AD /* ContinueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinueButton.swift; sourceTree = "<group>"; };
 		83D20AD02D875F6B000B26E6 /* DebugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugView.swift; sourceTree = "<group>"; };
 		83D241AC2D5CEC87002061F4 /* NotificationsSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = NotificationsSettings.xcstrings; sourceTree = "<group>"; };
 		83D268792BD7303800A86DA9 /* DisplayBrightnessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayBrightnessView.swift; sourceTree = "<group>"; };
@@ -682,14 +682,6 @@
 				8360825C2D13B04E00902254 /* SettingsPhysical.gif */,
 			);
 			path = Assets;
-			sourceTree = "<group>";
-		};
-		83096BD62BA232C30082DB61 /* Game Center */ = {
-			isa = PBXGroup;
-			children = (
-				83096BD72BA232D50082DB61 /* AppleAccountSignInView.swift */,
-			);
-			path = "Game Center";
 			sourceTree = "<group>";
 		};
 		832877E22CAD9BB900013B0B /* AccessibilitySettings */ = {
@@ -1210,6 +1202,7 @@
 				83F388622D0B6E8500085103 /* IconView.swift */,
 				839C4CDC2D2B8E50007068BF /* LocalizedLink.swift */,
 				830A87CF2DA5895600789C20 /* BundleControllerView.swift */,
+				83D050192DB6D343003D50AD /* ContinueButton.swift */,
 			);
 			path = Templates;
 			sourceTree = "<group>";
@@ -1508,7 +1501,6 @@
 		83F516C72C21ECBD0004E87A /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				83096BD62BA232C30082DB61 /* Game Center */,
 				83F516BF2C21EA8C0004E87A /* AppStoreView.swift */,
 				83F516C12C21EB1C0004E87A /* WalletView.swift */,
 			);
@@ -1874,6 +1866,7 @@
 				833F20AE2CA4C93C00115E8F /* RecordCinematicView.swift in Sources */,
 				838A9EC42B7E823300ED261C /* CustomNavigationLink.swift in Sources */,
 				83CED5AA2D6E5ACD00253D9C /* ZoomView.swift in Sources */,
+				83D0501A2DB6D343003D50AD /* ContinueButton.swift in Sources */,
 				830A87D02DA5895600789C20 /* BundleControllerView.swift in Sources */,
 				830CFAC12C990DDA00733411 /* KeyboardDetailView.swift in Sources */,
 				832EF39B2B8192A90066A1BF /* DictationShortcutView.swift in Sources */,
@@ -1950,7 +1943,6 @@
 				833C6EB22C20CE7800A8D91C /* SearchDetailView.swift in Sources */,
 				8373E7382B9168C9004285EA /* CommunicationSafetyView.swift in Sources */,
 				833A44F12C6E768E003076F5 /* MyFontsView.swift in Sources */,
-				83096BD82BA232D50082DB61 /* AppleAccountSignInView.swift in Sources */,
 				83B5505A2C16A94C002DA622 /* BetaUpdatesView.swift in Sources */,
 				8329284B2B8578F4006611CF /* AppPermissionsView.swift in Sources */,
 				83815CED2B768E8300F53A0F /* MapsView.swift in Sources */,

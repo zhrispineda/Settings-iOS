@@ -51,7 +51,7 @@ struct ParentGuardianSignInView: View {
                 Section {
                     VStack {
                         if geo.size.height > 650 && UIDevice.iPhone {
-                            Spacer(minLength: geo.size.height * (geo.size.height > 750 ? 0.25 : 0.15))
+                            Spacer(minLength: geo.size.height * (geo.size.height > 750 ? 0.2 : 0.12))
                         }
                         // Privacy Button
                         OBPrivacyLinkView(bundleIdentifiers: ["com.apple.onboarding.appleid"])
@@ -62,21 +62,9 @@ struct ParentGuardianSignInView: View {
                             showingAlert.toggle()
                         } label: {
                             if signingIn || showingOptionsAlert {
-                                ProgressView()
-                                    .fontWeight(.medium)
-                                    .font(.headline)
-                                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-                                    .background(Color(UIColor.systemGray5))
-                                    .foregroundStyle(Color(UIColor.systemGray))
-                                    .cornerRadius(15)
+                                ContinueButton(username: $username, loading: true)
                             } else {
-                                Text("LOGIN_FORM_BUTTON_CONTINUE".localize(table: setupTable))
-                                    .fontWeight(.medium)
-                                    .font(.headline)
-                                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-                                    .background(username.count < 1 ? Color(UIColor.systemGray5) : Color.blue)
-                                    .foregroundStyle(username.count < 1 ? Color(UIColor.systemGray) : Color.white)
-                                    .cornerRadius(15)
+                                ContinueButton(username: $username)
                             }
                         }
                         .frame(height: 50)
