@@ -70,16 +70,11 @@ struct CameraView: View {
             if UIDevice.AdvancedPhotographicStylesCapability {
                 Section {
                     Button {
-                        showingPhotographicStylesView.toggle()
+                        showingPhotographicStylesView = true
                     } label: {
                         CustomNavigationLink("SYSTEM_STYLES_TITLE".localize(table: stylesTable), status: "SEMANTIC_STYLES_LABEL_STANDARD".localize(table: kitTable), destination: EmptyView())
                     }
                     .foregroundStyle(.primary)
-                    .fullScreenCover(isPresented: $showingPhotographicStylesView) {
-                        NavigationStack {
-                            PhotographicStylesView()
-                        }
-                    }
                 } header: {
                     if !UIDevice.IsSimulator {
                         Text("APP_SETTINGS_HEADER", tableName: stylesTable)
@@ -133,7 +128,9 @@ struct CameraView: View {
             // MARK: Photo Capture Section
             if UIDevice.PhotographicStylesCapability {
                 Section {
-                    Button("SEMANTIC_STYLES_ROW_TITLE".localize(table: table)) {}
+                    Button("SEMANTIC_STYLES_ROW_TITLE".localize(table: table)) {
+                        showingPhotographicStylesView = true
+                    }
                 } header: {
                     Text("CAM_PHOTO_CAPTURE_GROUP_TITLE", tableName: table)
                 } footer: {
@@ -216,8 +213,13 @@ struct CameraView: View {
             // MARK: Camera & ARKit Privacy Footer
             if UIDevice.LiDARCapability {
                 Section {} footer: {
-                    Text(.init("[\("About Camera and ARKit & Privacy…")](pref://privacy)"))
+                    Text("[\("ABOUT_PRIVACY".localize(table: "PrivacyDisclosureUI", "Camera and ARKit"))](pref://privacy)")
                 }
+            }
+        }
+        .fullScreenCover(isPresented: $showingPhotographicStylesView) {
+            NavigationStack {
+                BundleControllerView("/System/Library/PrivateFrameworks/CameraUI.framework/CameraUI", controller: UIDevice.PhotographicStylesCapability ? "CAMSemanticStyleSettingsController" : "CAMSmartStyleSettingsController")
             }
         }
         .onOpenURL { url in

@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct AppleAccountLoginView: View {
-    // Variables
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.dismiss) private var dismiss
     @State var isMainSheet = false
@@ -17,7 +16,7 @@ struct AppleAccountLoginView: View {
     @State private var showingOptionsAlert = false
     @State private var showingErrorAlert = false
     @State private var showingForgotPasswordSheet = false
-    @State private var username = String()
+    @State private var username = ""
     let setupTable = "AppleIDSetup"
     let table = "AppleID"
     let uiTable = "AppleAccountUI"
@@ -65,13 +64,17 @@ struct AppleAccountLoginView: View {
                         
                         // Sign in a child in my Family Button
                         if !isMainSheet {
-                            ZStack {
-                                NavigationLink(destination: ParentGuardianSignInView()) {}
-                                    .opacity(0)
+                            ZStack(alignment: .leading) {
                                 Text("SIGN_IN_FOR_CHILD_BUTTON_TITLE".localize(table: uiTable))
                                     .foregroundStyle(.accent)
+                                    .frame(maxWidth: .infinity)
+                                    .contentShape(Rectangle())
+                                
+                                NavigationLink(destination: ParentGuardianSignInView()) {}
+                                    .opacity(0)
+                                    .buttonStyle(.plain)
                             }
-                            .disabled(showingOptionsAlert)
+                            .padding(.top, 5)
                         }
                     }
                     .alert("SIGN_IN_HELP_ALERT_TITLE_FORGOT_OR_CREATE".localize(table: uiTable), isPresented: $showingOptionsAlert) {

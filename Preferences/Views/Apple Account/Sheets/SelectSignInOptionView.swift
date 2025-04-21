@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct SelectSignInOptionView: View {
-    // Variables
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.dismiss) private var dismiss
     @State private var showingAlert = false
@@ -83,7 +82,7 @@ struct SelectSignInOptionView: View {
                     Text("ACCOUNT_SETUP_CREATE_ACCOUNT_REBRAND", tableName: table)
                         .fontWeight(.semibold)
                 }
-                .padding(.bottom, UIDevice.iPad || UIDevice.HomeButtonCapability ? 5 : 60)
+                .padding(.bottom, UIDevice.iPad || UIDevice.HomeButtonCapability ? 5 : 20)
                 .alert("Could Not Create Apple Account", isPresented: $showingAlert) {
                     Link("Learn More", destination: URL(string: "https://support.apple.com/en-us/101661")!)
                     Button("OK".localize(table: table)) {
@@ -97,6 +96,7 @@ struct SelectSignInOptionView: View {
     }
 }
 
+/// Buttons for options when choosing an Apple Account sign in method.
 struct SignInMethodButton: View {
     let image: String
     let title: String
@@ -134,6 +134,7 @@ struct SignInMethodButton: View {
                 Image(systemName: "chevron.right")
                     .imageScale(.small)
                     .foregroundStyle(.tertiary)
+                    .fontWeight(.semibold)
             }
         }
     }

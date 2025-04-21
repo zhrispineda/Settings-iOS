@@ -75,7 +75,9 @@ struct CameraControlView: View {
             
             // MARK: Accessibility Section
             Section {
-                NavigationLink("CAMERA_BUTTON_ACCESSIBILITY".localize(table: table), destination: CameraControlAccessibilityView())
+                NavigationLink("CAMERA_BUTTON_ACCESSIBILITY".localize(table: table)) {
+                    BundleControllerView("/System/Library/PrivateFrameworks/AccessibilityUIUtilities.framework/AccessibilityUIUtilities", controller: "AXUICameraButtonController", title: "CAMERA_BUTTON_ACCESSIBILITY", table: table)
+                }
             }
         }
     }

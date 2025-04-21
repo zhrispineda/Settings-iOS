@@ -184,17 +184,6 @@ struct DisplayBrightnessView: View {
                 Text("DEFAULT_DISPLAY_ZOOMED_STANDARD_DESCRIPTION", tableName: table)
             }
             
-            if UIDevice.AdvancedPhotographicStylesCapability {
-                // MARK: Camera Control
-                Section {
-                    Toggle("REQUIRE_SCREEN_ON".localize(table: table), isOn: $requireScreenOnCameraControl)
-                } header: {
-                    Text("CAMERA_CONTROL", tableName: table)
-                } footer: {
-                    Text("LAUNCHING_CAMERA_REQUIRES_SCREEN_ON_FOOTER", tableName: table)
-                }
-            }
-            
             if UIDevice.ReferenceModeCapability {
                 // MARK: Reference Mode
                 NavigationLink("ADVANCED".localize(table: table)) {}
