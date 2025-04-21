@@ -310,8 +310,13 @@ struct CustomView: UIViewRepresentable {
     let path: String
     let controller: String
     
+    init(_ path: String, controller: String) {
+        self.path = path
+        self.controller = controller
+    }
+    
     func makeUIView(context: Context) -> UIView {
-        guard dlopen(path, RTLD_NOW) != nil else {
+        guard dlopen("/System/Library/PrivateFrameworks/\(path).framework/\(path)", RTLD_NOW) != nil else {
             SettingsLogger.error("Could not load framework: \(path)")
             return UIView()
         }

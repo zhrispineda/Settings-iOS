@@ -8,10 +8,9 @@
 import SwiftUI
 
 struct ForgotPasswordView: View {
-    // Variables
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.dismiss) private var dismiss
-    @State private var username = String()
+    @State private var username = ""
     @State private var showingFailedAlert = false
     @State var guardianMode = false
     let table = "AppleAccountUI"

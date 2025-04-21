@@ -17,7 +17,7 @@ struct SelectSignInOptionView: View {
         List {
             // Animated Apple logo, title, and description
             VStack(spacing: 10) {
-                CustomView(path: "/System/Library/PrivateFrameworks/AppleIDSetupUI.framework/AppleIDSetupUI", controller: "AppleIDSetupUI.AISAppleIDMicaView")
+                CustomView("AppleIDSetupUI", controller: "AppleIDSetupUI.AISAppleIDMicaView")
                     .frame(height: 100)
                 Text("LOGIN_FORM_TITLE", tableName: table)
                     .font(.largeTitle)
@@ -83,15 +83,15 @@ struct SelectSignInOptionView: View {
                         .fontWeight(.semibold)
                 }
                 .padding(.bottom, UIDevice.iPad || UIDevice.HomeButtonCapability ? 5 : 20)
-                .alert("Could Not Create Apple Account", isPresented: $showingAlert) {
-                    Link("Learn More", destination: URL(string: "https://support.apple.com/en-us/101661")!)
-                    Button("OK".localize(table: table)) {
-                        dismiss()
-                    }
-                } message: {
-                    Text("This \(UIDevice.IsSimulator ? "iPhoneSimulator" : UIDevice.current.model) has been used to create too many new Apple Accounts. Contact Apple Support to request another Apple Account to use with this \(UIDevice.IsSimulator ? "iPhoneSimulator" : UIDevice.current.model).")
-                }
             }
+        }
+        .alert("Could Not Create Apple Account", isPresented: $showingAlert) {
+            Link("Learn More", destination: URL(string: "https://support.apple.com/en-us/101661")!)
+            Button("OK".localize(table: table)) {
+                dismiss()
+            }
+        } message: {
+            Text("This \(UIDevice.IsSimulator ? "iPhoneSimulator" : UIDevice.current.model) has been used to create too many new Apple Accounts. Contact Apple Support to request another Apple Account to use with this \(UIDevice.IsSimulator ? "iPhoneSimulator" : UIDevice.current.model).")
         }
     }
 }

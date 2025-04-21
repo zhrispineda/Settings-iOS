@@ -26,8 +26,6 @@ struct CalendarView: View {
             
             PermissionsView(appName: "CalendarSettingsPlacard_Calendar".localize(table: table), cellular: false, location: false, notifications: false, cellularEnabled: .constant(false))
             
-            //LanguageView()
-            
             Section {
                 CustomNavigationLink("Time Zone Override".localize(table: table), status: "Off".localize(table: table), destination: EmptyView())
                 CustomNavigationLink("Alternate Calendars".localize(table: table), status: "Alternate Calendar Off".localize(table: table), destination: EmptyView())

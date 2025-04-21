@@ -5,6 +5,7 @@
 
 import SwiftUI
 
+/// Button labeled `Continue` that is used for logins. Replaces text with a ProgressView when loading is set to true.
 struct ContinueButton: View {
     @Binding var username: String
     var loading = false
@@ -14,7 +15,7 @@ struct ContinueButton: View {
             if loading {
                 ProgressView()
             } else {
-                Text("LOGIN_FORM_BUTTON_CONTINUE".localize(table: "AppleIDSetup"))
+                Text("LOGIN_FORM_BUTTON_CONTINUE", tableName: "AppleIDSetup")
             }
         }
         .fontWeight(.medium)

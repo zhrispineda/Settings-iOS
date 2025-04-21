@@ -8,15 +8,14 @@
 import SwiftUI
 
 struct ParentGuardianSignInView: View {
-    // Variables
     @Environment(\.colorScheme) private var colorScheme
     @State private var signingIn = false
     @State private var showingAlert = false
     @State private var showingOptionsAlert = false
-    @State private var username = String()
+    @State private var username = ""
     let setupTable = "AppleIDSetup"
     let table = "AppleID"
-    let uiTable = "AppleAccountUI"
+    let UITable = "AppleAccountUI"
     
     var body: some View {
         GeometryReader { geo in
@@ -69,12 +68,12 @@ struct ParentGuardianSignInView: View {
                         }
                         .frame(height: 50)
                         .disabled(username.count < 1)
-                        .alert("VERIFICATION_FAILED_TITLE".localize(table: uiTable), isPresented: $showingAlert) {
+                        .alert("VERIFICATION_FAILED_TITLE".localize(table: UITable), isPresented: $showingAlert) {
                             Button("SETUP_VIEW_BUTTON_OK".localize(table: setupTable)) {
                                 signingIn.toggle()
                             }
                         } message: {
-                            Text("BAD_NETWORK_ALERT_MESSAGE_REBRAND".localize(table: uiTable))
+                            Text("BAD_NETWORK_ALERT_MESSAGE_REBRAND".localize(table: UITable))
                         }
                     }
                 }

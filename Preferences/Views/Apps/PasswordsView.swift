@@ -27,8 +27,6 @@ struct PasswordsView: View {
                 PermissionsView(appName: "Passwords", cellular: false, location: false, notifications: false, cellularEnabled: .constant(true))
             } else {
                 PermissionsView(appName: "Passwords", location: false, cellularEnabled: .constant(true))
-                
-                //LanguageView()
             }
             
             Section {

@@ -214,7 +214,6 @@
 		83A3E6952CAC3091006F4643 /* FocalLengthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A3E6942CAC3091006F4643 /* FocalLengthView.swift */; };
 		83A422342CAC60B100EED538 /* CameraSettings-4k120.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83A422332CAC60B100EED538 /* CameraSettings-4k120.xcstrings */; };
 		83A5DA512C2335580012ACB3 /* PermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5DA502C2335580012ACB3 /* PermissionsView.swift */; };
-		83A5DA532C234DCB0012ACB3 /* LanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5DA522C234DCB0012ACB3 /* LanguageView.swift */; };
 		83A5DA552C2366A60012ACB3 /* TransferResetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5DA542C2366A60012ACB3 /* TransferResetView.swift */; };
 		83A7E15A2CBF047B0037F1FB /* FontSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83A7E1592CBF047B0037F1FB /* FontSettings.xcstrings */; };
 		83A915462CE1280D00F718AA /* SpotlightSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83A915452CE1280D00F718AA /* SpotlightSettings.xcstrings */; };
@@ -543,7 +542,6 @@
 		83A3E6942CAC3091006F4643 /* FocalLengthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocalLengthView.swift; sourceTree = "<group>"; };
 		83A422332CAC60B100EED538 /* CameraSettings-4k120.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "CameraSettings-4k120.xcstrings"; sourceTree = "<group>"; };
 		83A5DA502C2335580012ACB3 /* PermissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsView.swift; sourceTree = "<group>"; };
-		83A5DA522C234DCB0012ACB3 /* LanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageView.swift; sourceTree = "<group>"; };
 		83A5DA542C2366A60012ACB3 /* TransferResetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferResetView.swift; sourceTree = "<group>"; };
 		83A7E1592CBF047B0037F1FB /* FontSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = FontSettings.xcstrings; sourceTree = "<group>"; };
 		83A915452CE1280D00F718AA /* SpotlightSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = SpotlightSettings.xcstrings; sourceTree = "<group>"; };
@@ -1186,10 +1184,14 @@
 			isa = PBXGroup;
 			children = (
 				8329284A2B8578F4006611CF /* AppPermissionsView.swift */,
+				830A87CF2DA5895600789C20 /* BundleControllerView.swift */,
+				83D050192DB6D343003D50AD /* ContinueButton.swift */,
 				838C232A2B7492170053D4C5 /* CustomList.swift */,
 				838A9EC32B7E823300ED261C /* CustomNavigationLink.swift */,
 				838C232F2B74978C0053D4C5 /* HText.swift */,
 				83B98E2F2B7C087B007F6C94 /* IconToggle.swift */,
+				83F388622D0B6E8500085103 /* IconView.swift */,
+				839C4CDC2D2B8E50007068BF /* LocalizedLink.swift */,
 				83A5DA502C2335580012ACB3 /* PermissionsView.swift */,
 				8361A2282C19308600A7D5CC /* Placard.swift */,
 				837C03082B7F1AE0004D6C71 /* SelectOptionList.swift */,
@@ -1197,12 +1199,7 @@
 				835683912B753FDD000FB136 /* SLink.swift */,
 				83DF95752B84266E00AEEB63 /* SiriDetailView.swift */,
 				833C6EB12C20CE7800A8D91C /* SearchDetailView.swift */,
-				83A5DA522C234DCB0012ACB3 /* LanguageView.swift */,
 				8340A3C42CB0CEDC005ED66A /* MonospacedLabel.swift */,
-				83F388622D0B6E8500085103 /* IconView.swift */,
-				839C4CDC2D2B8E50007068BF /* LocalizedLink.swift */,
-				830A87CF2DA5895600789C20 /* BundleControllerView.swift */,
-				83D050192DB6D343003D50AD /* ContinueButton.swift */,
 			);
 			path = Templates;
 			sourceTree = "<group>";
@@ -1949,7 +1946,6 @@
 				836610662DAC67CD0040E05C /* SettingsLogger.swift in Sources */,
 				832EF3A22B8198570066A1BF /* AddTextReplacementView.swift in Sources */,
 				8372142D2D91C5E30027C51D /* UIWindowExtensions.swift in Sources */,
-				83A5DA532C234DCB0012ACB3 /* LanguageView.swift in Sources */,
 				83AE01DD2D65637C00724A34 /* AppleAccountSection.swift in Sources */,
 				833A44EF2C6E75BF003076F5 /* SystemFontsView.swift in Sources */,
 				8356460A2D9C4AB600DAB406 /* UIKitRepresentables.swift in Sources */,

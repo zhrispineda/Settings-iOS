@@ -8,14 +8,13 @@
 import SwiftUI
 
 struct AppleAccountView: View {
-    // Variables
     let table = "AppleAccountUI"
     
     var body: some View {
         CustomList(title: "APPLE_ID_REBRAND".localize(table: table)) {
             VStack {
                 Button {} label: {
-                    Image(_internalSystemName: "person.crop.circle.fill")
+                    Image(systemName: "person.crop.circle.fill")
                         .font(.system(size: 90))
                         .foregroundStyle(.white, .gray.gradient)
                 }
@@ -30,10 +29,7 @@ struct AppleAccountView: View {
             }
             
             Section {
-                Button {} label: {
-                    SLink("ICLOUD_SERVICE_STORAGE_TITLE".localize(table: table), icon: "iCloud", status: "Set Up") {}
-                        .foregroundStyle(Color(.label))
-                }
+                SLink("ICLOUD_SERVICE_STORAGE_TITLE".localize(table: table), icon: "iCloud", status: "Set Up") {}
             }
             
             Button("Sign Out") {}

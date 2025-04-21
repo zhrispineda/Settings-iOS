@@ -19,7 +19,7 @@ struct AppleAccountLoginView: View {
     @State private var username = ""
     let setupTable = "AppleIDSetup"
     let table = "AppleID"
-    let uiTable = "AppleAccountUI"
+    let UITable = "AppleAccountUI"
     
     var body: some View {
         GeometryReader { geo in
@@ -30,10 +30,10 @@ struct AppleAccountLoginView: View {
                             .resizable()
                             .scaledToFit()
                             .frame(width: 90)
-                        Text("LOGIN_FORM_TITLE".localize(table: setupTable)) // Apple Account Title
+                        Text("LOGIN_FORM_TITLE", tableName: setupTable) // Apple Account Title
                             .font(.largeTitle)
                             .fontWeight(.bold)
-                        Text("SIGN_IN_SUBTITLE".localize(table: uiTable)) // Apple Account Subtitle
+                        Text("SIGN_IN_SUBTITLE", tableName: UITable) // Apple Account Subtitle
                     }
                     .frame(maxWidth: .infinity)
                     .padding(.horizontal, 20)
@@ -53,7 +53,7 @@ struct AppleAccountLoginView: View {
                         Button {
                             showingForgotPasswordSheet.toggle()
                         } label: {
-                            Text("SIGN_IN_HELP_BUTTON_FORGOT".localize(table: uiTable))
+                            Text("SIGN_IN_HELP_BUTTON_FORGOT".localize(table: UITable))
                                 .foregroundStyle(.accent)
                                 .frame(maxWidth: .infinity)
                                 .contentShape(Rectangle())
@@ -66,7 +66,7 @@ struct AppleAccountLoginView: View {
                     ZStack {
                         NavigationLink("", destination: ParentGuardianSignInView())
                             .opacity(0)
-                        Text("SIGN_IN_FOR_CHILD_BUTTON_TITLE", tableName: uiTable)
+                        Text("SIGN_IN_FOR_CHILD_BUTTON_TITLE", tableName: UITable)
                             .foregroundStyle(.accent)
                     }
                 }
@@ -95,12 +95,12 @@ struct AppleAccountLoginView: View {
                         }
                         .frame(height: 50)
                         .disabled(username.count < 1)
-                        .alert("VERIFICATION_FAILED_TITLE".localize(table: uiTable), isPresented: $showingAlert) {
+                        .alert("VERIFICATION_FAILED_TITLE".localize(table: UITable), isPresented: $showingAlert) {
                             Button("AUTHENTICATE_VIEW_BUTTON_TITLE".localize(table: setupTable)) {
                                 signingIn.toggle()
                             }
                         } message: {
-                            Text("BAD_NETWORK_ALERT_MESSAGE_REBRAND".localize(table: uiTable))
+                            Text("BAD_NETWORK_ALERT_MESSAGE_REBRAND", tableName: UITable)
                         }
                     }
                 }
@@ -131,14 +131,14 @@ struct AppleAccountLoginView: View {
                     }
                 }
             }
-            .alert("SIGN_IN_HELP_ALERT_TITLE_FORGOT_OR_CREATE".localize(table: uiTable), isPresented: $showingOptionsAlert) {
+            .alert("SIGN_IN_HELP_ALERT_TITLE_FORGOT_OR_CREATE".localize(table: UITable), isPresented: $showingOptionsAlert) {
                 Button("IFORGOT_BUTTON_REBRAND".localize(table: table), role: .none) {
                     showingForgotPasswordSheet.toggle()
                 }
-                Button("SIGN_IN_HELP_ALERT_BUTTON_CREATE".localize(table: uiTable), role: .none) {
+                Button("SIGN_IN_HELP_ALERT_BUTTON_CREATE".localize(table: UITable), role: .none) {
                     showingErrorAlert.toggle()
                 }
-                Button("SIGN_IN_HELP_ALERT_BUTTON_CANCEL".localize(table: uiTable), role: .cancel) {}
+                Button("SIGN_IN_HELP_ALERT_BUTTON_CANCEL".localize(table: UITable), role: .cancel) {}
             }
             .alert("Could Not Create Apple Account", isPresented: $showingErrorAlert) {
                 Link("Learn More", destination: URL(string: "https://support.apple.com/en-us/101661")!)
