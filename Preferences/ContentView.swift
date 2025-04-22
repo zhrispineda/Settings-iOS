@@ -18,7 +18,7 @@ struct ContentView: View {
     @AppStorage("VPNToggle") private var VPNEnabled = true
     @Bindable var stateManager: StateManager
     @State private var searchFocused = false
-    @State private var searchText = String()
+    @State private var searchText = ""
     @State private var showingSignInSheet = false
     @State private var isLandscape = false
     @State private var id = UUID()

@@ -268,6 +268,7 @@
 		83D3FB232C8102B200268E54 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D3FB222C8102B200268E54 /* ContactsView.swift */; };
 		83D4CB762B7FF0B000D6087D /* WebContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D4CB752B7FF0B000D6087D /* WebContentView.swift */; };
 		83D5957B2CA5BF19003EF0CD /* RecordSoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D5957A2CA5BF19003EF0CD /* RecordSoundView.swift */; };
+		83D5BD542DB819F900F5B219 /* ConfigureIPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D5BD532DB819F900F5B219 /* ConfigureIPView.swift */; };
 		83DB888F2CAC97BF008218E6 /* AppleID.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83DB888E2CAC97BF008218E6 /* AppleID.xcstrings */; };
 		83DBCE062CCD957C00B33277 /* CameraSettings-TrueVideo.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83DBCE052CCD957C00B33277 /* CameraSettings-TrueVideo.xcstrings */; };
 		83DBCE092CCD9B0800B33277 /* AssistantMultilingualDetail.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83DBCE082CCD9B0800B33277 /* AssistantMultilingualDetail.xcstrings */; };
@@ -598,6 +599,7 @@
 		83D3FB222C8102B200268E54 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
 		83D4CB752B7FF0B000D6087D /* WebContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebContentView.swift; sourceTree = "<group>"; };
 		83D5957A2CA5BF19003EF0CD /* RecordSoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSoundView.swift; sourceTree = "<group>"; };
+		83D5BD532DB819F900F5B219 /* ConfigureIPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureIPView.swift; sourceTree = "<group>"; };
 		83DB888E2CAC97BF008218E6 /* AppleID.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AppleID.xcstrings; sourceTree = "<group>"; };
 		83DBCE052CCD957C00B33277 /* CameraSettings-TrueVideo.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "CameraSettings-TrueVideo.xcstrings"; sourceTree = "<group>"; };
 		83DBCE082CCD9B0800B33277 /* AssistantMultilingualDetail.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AssistantMultilingualDetail.xcstrings; sourceTree = "<group>"; };
@@ -771,6 +773,7 @@
 		832C5C082DB7669600DC0EF8 /* Network Detail */ = {
 			isa = PBXGroup;
 			children = (
+				83D5BD532DB819F900F5B219 /* ConfigureIPView.swift */,
 			);
 			path = "Network Detail";
 			sourceTree = "<group>";
@@ -1942,6 +1945,7 @@
 				83F516C22C21EB1C0004E87A /* WalletView.swift in Sources */,
 				8340A3C52CB0CEDC005ED66A /* MonospacedLabel.swift in Sources */,
 				83B12C142D6525A100DF6EF6 /* SiriSuggestionsView.swift in Sources */,
+				83D5BD542DB819F900F5B219 /* ConfigureIPView.swift in Sources */,
 				83D308692B8AD145002A9B7F /* SafariCameraView.swift in Sources */,
 				83815CF12B768F0500F53A0F /* HealthView.swift in Sources */,
 				83815CE72B768DF100F53A0F /* SafariView.swift in Sources */,

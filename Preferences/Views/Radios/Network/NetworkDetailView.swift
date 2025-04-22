@@ -10,6 +10,7 @@ import SwiftUI
 struct NetworkDetailView: View {
     @Environment(\.dismiss) private var dismiss
     @State private var privateAddressOption = "kWFLocRandomMACRotatingOption"
+    @State private var selectedIPV4AddressMethod = "kWFLocSettingsIPV4ConfigureAutomatic"
     let table = "WiFiKitUILocalizableStrings"
     let MACAddress = generateRandomAddress()
     var name = ""
@@ -55,7 +56,7 @@ struct NetworkDetailView: View {
             
             // IPv4 Address
             Section {
-                CustomNavigationLink("kWFLocSettingsIPConfigureTitle".localize(table: table), status: "kWFLocSettingsIPV4ConfigureAutomatic".localize(table: table), destination: EmptyView())
+                CustomNavigationLink("kWFLocSettingsIPConfigureTitle".localize(table: table), status: selectedIPV4AddressMethod.localize(table: table), destination: ConfigureIPView(selected: $selectedIPV4AddressMethod))
             } header: {
                 Text("kWFLocSettingsIPSectionTitle", tableName: table)
             }
