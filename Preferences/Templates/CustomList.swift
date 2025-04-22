@@ -19,7 +19,6 @@ import SwiftUI
 /// - Parameter topPadding: The optional Bool on whether to use default or reduced top padding.
 /// - Parameter content: The Content to display in the container.
 struct CustomList<Content: View>: View {
-    // Variables
     @State private var isLandscape = false
     var title = ""
     var topPadding = false

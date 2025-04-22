@@ -17,7 +17,6 @@ import SwiftUI
 /// - Parameter icon: The `String` name of the icon symbol.
 /// - Parameter description: The `String` to display as the description below the title.
 struct Placard: View {
-    // Variables
     var title: String
     var color = Color.accent
     var iconColor = Color.white

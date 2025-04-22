@@ -20,7 +20,7 @@ struct AboutView: View {
     @State private var eidValue = String()
     @AppStorage("DeviceName") private var deviceName = UIDevice.current.model
     let table = "General"
-    let uiTable = "GeneralSettingsUI"
+    let UITable = "GeneralSettingsUI"
     
     var body: some View {
         CustomList(title: "About".localize(table: table)) {
@@ -31,17 +31,17 @@ struct AboutView: View {
                     CustomNavigationLink("Device_Name".localize(table: table), status: deviceName, destination: NameView())
                 }
                 
-                CustomNavigationLink("OS Version".localize(table: uiTable), status: UIDevice().systemVersion, destination: BundleControllerView("/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework/GeneralSettingsUI", controller: "PSGSoftwareVersionController", title: "OS Version", table: uiTable))
+                CustomNavigationLink("OS Version".localize(table: UITable), status: UIDevice().systemVersion, destination: BundleControllerView("/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework/GeneralSettingsUI", controller: "PSGSoftwareVersionController", title: "OS Version", table: UITable))
                     .textSelection(.enabled)
                 
-                LabeledContent("ProductModelName".localize(table: uiTable), value: UIDevice.fullModel)
+                LabeledContent("ProductModelName".localize(table: UITable), value: UIDevice.fullModel)
                     .textSelection(.enabled)
-                MonospacedLabel("ProductModel".localize(table: uiTable), value: showingModelNumber ? regulatoryModelNumber : "\(modelNumber)\(getRegionInfo())")
+                MonospacedLabel("ProductModel".localize(table: UITable), value: showingModelNumber ? regulatoryModelNumber : "\(modelNumber)\(getRegionInfo())")
                     .contentShape(Rectangle())
                     .onTapGesture {
                       showingModelNumber.toggle()
                     }
-                LabeledContent("SerialNumber".localize(table: uiTable), value: serialNumber)
+                LabeledContent("SerialNumber".localize(table: UITable), value: serialNumber)
             }
             .task {
                 if serialNumber.isEmpty {
@@ -70,21 +70,21 @@ struct AboutView: View {
 //            }
             
             Section {
-                LabeledContent("SONGS".localize(table: uiTable), value: "0")
-                LabeledContent("VIDEOS".localize(table: uiTable), value: "0")
-                LabeledContent("PHOTOS".localize(table: uiTable), value: "6")
+                LabeledContent("SONGS".localize(table: UITable), value: "0")
+                LabeledContent("VIDEOS".localize(table: UITable), value: "0")
+                LabeledContent("PHOTOS".localize(table: UITable), value: "6")
                 if !UIDevice.IsSimulator {
-                    LabeledContent("APPLICATIONS".localize(table: uiTable), value: "1")
+                    LabeledContent("APPLICATIONS".localize(table: UITable), value: "1")
                 }
-                LabeledContent("User Data Capacity".localize(table: uiTable), value: capacityStorage)
-                LabeledContent("User Data Available".localize(table: uiTable), value: availableStorage)
+                LabeledContent("User Data Capacity".localize(table: UITable), value: capacityStorage)
+                LabeledContent("User Data Available".localize(table: UITable), value: availableStorage)
             }
             
             if !UIDevice.IsSimulator {
-                MonospacedLabel("MACAddress".localize(table: uiTable), value: wifiAddress)
-                MonospacedLabel("BTMACAddress".localize(table: uiTable), value: bluetoothAddress)
+                MonospacedLabel("MACAddress".localize(table: UITable), value: wifiAddress)
+                MonospacedLabel("BTMACAddress".localize(table: UITable), value: bluetoothAddress)
                 if UIDevice.CellularTelephonyCapability {
-                    MonospacedLabel("ModemVersion".localize(table: uiTable), value: "1.00.00")
+                    MonospacedLabel("ModemVersion".localize(table: UITable), value: "1.00.00")
                 }
                 NavigationLink("SEID", destination: SEIDView())
                 
@@ -120,7 +120,7 @@ struct AboutView: View {
                     //                }
                     
                     Section {
-                        MonospacedLabel("ModemIMEI".localize(table: uiTable), value: "00 000000 000000 0")
+                        MonospacedLabel("ModemIMEI".localize(table: UITable), value: "00 000000 000000 0")
                         MonospacedLabel("ModemIMEI2".localize(table: table), value: "00 000000 000000 0")
                     } header: {
                         Text("AVAILABLE_SIMS".localize(table: table))
@@ -129,7 +129,7 @@ struct AboutView: View {
             }
             
             Section {
-                NavigationLink("CERT_TRUST_SETTINGS".localize(table: uiTable), destination: BundleControllerView("/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework/GeneralSettingsUI", controller: "PSGCertTrustSettings", title: "CERT_TRUST_SETTINGS", table: uiTable))
+                NavigationLink("CERT_TRUST_SETTINGS".localize(table: UITable), destination: BundleControllerView("/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework/GeneralSettingsUI", controller: "PSGCertTrustSettings", title: "CERT_TRUST_SETTINGS", table: UITable))
             }
         }
     }

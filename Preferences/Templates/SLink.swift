@@ -26,7 +26,6 @@ import SwiftUI
 /// - Parameter badgeCount: An optional `Int` on the opposing side displaying a red badge with a number.
 /// - Parameter content: The destination `Content` for the `NavigationLink`.
 struct SLink<Content: View>: View {
-    // Variables
     var text: String
     var color: Color
     var iconColor: Color

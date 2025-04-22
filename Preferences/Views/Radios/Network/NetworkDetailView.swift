@@ -8,41 +8,35 @@
 import SwiftUI
 
 struct NetworkDetailView: View {
-    @State private var privateAddressOption = "kWFLocRandomMACStaticOption"
+    @Environment(\.dismiss) private var dismiss
+    @State private var privateAddressOption = "kWFLocRandomMACRotatingOption"
     let table = "WiFiKitUILocalizableStrings"
-    var name = String()
+    let MACAddress = generateRandomAddress()
+    var name = ""
     
     var body: some View {
         CustomList(title: name) {
-//            Section {
-//                Text("**Unsecured Network**")
-//                Text("Open networks provide no security and expose all network traffic.")
-//                    .foregroundStyle(.secondary)
-//                    .listRowSeparator(.hidden)
-//                Text("If this is your Wi-Fi network, configure the router to use WPA2 (AES) or WPA3 security type.")
-//                    .foregroundStyle(.secondary)
-//                Text("**Privacy Warning**")
-//                Text("Private Wi-Fi address is turned off for this network.")
-//                    .foregroundStyle(.secondary)
-//                    .listRowSeparator(.hidden)
-//                Text("Using a private address helps reduce tracking of your iPhone across different Wi-Fi networks.")
-//                    .foregroundStyle(.secondary)
-//            } footer: {
-//                Text("[Learn more about recommended settings for Wi-Fi...](#)")
-//            }
-            
             Section {
                 if name.isEmpty {
-                    Button("kWFLocSettingJoinNetworkTitle".localize(table: table)) {}
+                    // Join This Network
+                    Button("kWFLocSettingJoinNetworkTitle".localize(table: table)) {
+                        dismiss()
+                    }
                 } else {
+                    // Forget This Network
                     Button("kWFLocSettingForgetNetworkTitle".localize(table: table)) {}
                 }
             }
             
             Section {
-                //Toggle("Private Wi-Fi Address", isOn: $privateWifiAddressEnabled)
-                CustomNavigationLink("KWFLocSettingRandomMACSwitchTitle".localize(table: table), status: "kWFLocRandomMACStaticOption".localize(table: table), destination: SelectOptionList("KWFLocSettingRandomMACSwitchTitle", options: ["kWFLocRandomMACOffOption", "kWFLocRandomMACStaticOption", "kWFLocRandomMACRotatingOption"], selected: privateAddressOption, table: table))
-                LabeledContent("MACAddress".localize(table: "GeneralSettingsUI"), value: generateRandomAddress())
+                // Private Wi-Fi Address
+                CustomNavigationLink("KWFLocSettingRandomMACSwitchTitle".localize(table: table), status: "kWFLocRandomMACStaticOption".localize(table: table), destination: SelectOptionList("KWFLocSettingRandomMACSwitchTitle", options: [
+                    "kWFLocRandomMACOffOption",
+                    "kWFLocRandomMACStaticOption",
+                    "kWFLocRandomMACRotatingOption"
+                ], selected: privateAddressOption, table: table))
+                // Wi-Fi Address
+                LabeledContent("MACAddress".localize(table: "GeneralSettingsUI"), value: MACAddress)
             } footer: {
                 VStack(alignment: .leading) {
                     Text("kWFLocPirvateAddressFooterMainTitle", tableName: table)
@@ -59,18 +53,21 @@ struct NetworkDetailView: View {
                 }
             }
             
+            // IPv4 Address
             Section {
                 CustomNavigationLink("kWFLocSettingsIPConfigureTitle".localize(table: table), status: "kWFLocSettingsIPV4ConfigureAutomatic".localize(table: table), destination: EmptyView())
             } header: {
                 Text("kWFLocSettingsIPSectionTitle", tableName: table)
             }
             
+            // DNS
             Section {
                 CustomNavigationLink("kWFLocSettingsDNSConfigureButton".localize(table: table), status: "kWFLocSettingsDNSConfigureAutomatic".localize(table: table), destination: EmptyView())
             } header: {
                 Text("kWFLocSettingsDNSSectionTitle", tableName: table)
             }
             
+            // HTTP Proxy
             Section {
                 CustomNavigationLink("kWFLocSettingsProxyConfigureButton".localize(table: table), status: "kWFLocSettingsProxyConfigOffTitle".localize(table: table), destination: EmptyView())
             } header: {

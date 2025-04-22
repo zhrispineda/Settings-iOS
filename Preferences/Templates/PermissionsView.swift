@@ -29,7 +29,6 @@ import SwiftUI
 /// - Parameter photos: A Bool for if the Photos option is available.
 /// - Parameter siri: A Bool for if the Siri option is available.
 struct PermissionsView: View {
-    // Variables
     var appName: String
     var background = false
     var camera = false

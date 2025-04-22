@@ -22,7 +22,6 @@ import SwiftUI
 /// - Parameter iconColor: The Color to use for the icon.
 /// - Parameter table: The localization table to use for text.
 struct IconToggle: View {
-    // Variables
     var text: String
     @Binding var isOn: Bool
     var color: Color

@@ -16,7 +16,6 @@ import SwiftUI
 /// - Parameter link: The `String` key to display as a link.
 /// - Parameter url: The `String` key to use as the destination URL.
 struct LocalizedLink: View {
-    // Variables
     let text: String
     let table: String
     let link: String

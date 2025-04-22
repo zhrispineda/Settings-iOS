@@ -14,7 +14,6 @@ import SwiftUI
 /// - Parameter appName: The `String` to display as the app name for the `View`.
 /// - Parameter title: The `String` of the navigation title.
 struct SiriDetailView: View {
-    // Variables
     @State private var learnFromAppEnabled = true
     @State private var suggestInAppEnabled = true
     @State private var showHomeScreenEnabled = true

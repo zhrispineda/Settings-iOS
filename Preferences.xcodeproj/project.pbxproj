@@ -768,6 +768,13 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		832C5C082DB7669600DC0EF8 /* Network Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Network Detail";
+			sourceTree = "<group>";
+		};
 		832EF38D2B81268A0066A1BF /* Location Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -1544,6 +1551,7 @@
 		83FCEFE62C07F044008BE814 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				832C5C082DB7669600DC0EF8 /* Network Detail */,
 				837659722CDD7C4100616457 /* Other Network */,
 				83FCEFE92C07F0DE008BE814 /* NetworkDetailView.swift */,
 				839092BA2C0D213200924849 /* OtherNetworkView.swift */,

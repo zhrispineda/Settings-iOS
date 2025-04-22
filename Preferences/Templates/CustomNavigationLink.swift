@@ -25,7 +25,6 @@ import SwiftUI
 /// - Parameter location: The Bool for whether to display a location symbol.
 /// - Parameter destination: The Content destination view.
 struct CustomNavigationLink<Content: View>: View {
-    // Variables
     var titleKey: String
     var subtitle: String
     var status: String

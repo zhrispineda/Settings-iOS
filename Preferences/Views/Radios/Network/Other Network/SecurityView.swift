@@ -2,22 +2,34 @@
 //  SecurityView.swift
 //  Preferences
 //
-//  Settings > Wi-Fi > Other Network... > Security
+//  Settings > Wi-Fi > Other… > Security
 //
 
 import SwiftUI
 
 struct SecurityView: View {
-    // Variables
     @Binding var security: String
     @State private var selectedRotation = "kWFLocRandomMACOffOption"
     let table = "WiFiKitUILocalizableStrings"
-    let options = ["kWFLocSecurityNoneTitle", "kWFLocSecurityWEPTitle", "kWFLocSecurityWPATitle", "kWFLocSecurityWPA2WPA3Title", "kWFLocSecurityWPA3Title", "kWFLocSecurityWPAEnterpriseTitle", "kWFLocSecurityWPA2EnterpriseTitle", "kWFLocSecurityWPA3EnterpriseTitle"]
+    let options = [
+        "kWFLocSecurityNoneTitle",
+        "kWFLocSecurityWEPTitle",
+        "kWFLocSecurityWPATitle",
+        "kWFLocSecurityWPA2WPA3Title",
+        "kWFLocSecurityWPA3Title",
+        "kWFLocSecurityWPAEnterpriseTitle",
+        "kWFLocSecurityWPA2EnterpriseTitle",
+        "kWFLocSecurityWPA3EnterpriseTitle"
+    ]
     
     var body: some View {
         CustomList(title: "kWFLocOtherNetworkSecurityTitle".localize(table: table)) {
             Section {
-                CustomNavigationLink("KWFLocSettingRandomMACSwitchTitle".localize(table: table), status: selectedRotation.localize(table: table), destination: SelectOptionList("KWFLocSettingRandomMACSwitchTitle", options: ["kWFLocRandomMACOffOption","kWFLocRandomMACStaticOption","kWFLocRandomMACRotatingOption"], selectedBinding: $selectedRotation, table: table))
+                CustomNavigationLink("KWFLocSettingRandomMACSwitchTitle".localize(table: table),status: selectedRotation.localize(table: table), destination: SelectOptionList("KWFLocSettingRandomMACSwitchTitle", options: [
+                    "kWFLocRandomMACOffOption",
+                    "kWFLocRandomMACStaticOption",
+                    "kWFLocRandomMACRotatingOption"
+                ], selectedBinding: $selectedRotation, table: table))
             }
             
             Section {

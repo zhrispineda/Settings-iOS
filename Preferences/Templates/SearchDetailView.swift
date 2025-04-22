@@ -14,7 +14,6 @@ import SwiftUI
 /// - Parameter appName: The `String` to display as navigation title and for use in the Section footer.
 /// - Parameter appTitle: The `Bool` for whether to show the app name as the navigation title.
 struct SearchDetailView: View {
-    // Variables
     @State private var showAppInSearchEnabled = true
     @State private var showContentInSearchEnabled = true
     var appName: String

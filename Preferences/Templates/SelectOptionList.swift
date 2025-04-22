@@ -17,7 +17,6 @@ import SwiftUI
 /// - Parameter selected: The `String` holding the currently selected value.
 /// - Parameter table: The `String` table name to use for localization.
 struct SelectOptionList: View {
-    // Variables
     var title: String
     var options: [String]
     var selectedBinding: Binding<String>? = nil
