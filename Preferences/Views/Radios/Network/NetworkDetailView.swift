@@ -11,6 +11,7 @@ struct NetworkDetailView: View {
     @Environment(\.dismiss) private var dismiss
     @State private var privateAddressOption = "kWFLocRandomMACRotatingOption"
     @State private var selectedIPV4AddressMethod = "kWFLocSettingsIPV4ConfigureAutomatic"
+    @State private var selectedDNSMethod = "kWFLocSettingsDNSConfigureAutomatic"
     let table = "WiFiKitUILocalizableStrings"
     let MACAddress = generateRandomAddress()
     var name = ""
@@ -63,7 +64,7 @@ struct NetworkDetailView: View {
             
             // DNS
             Section {
-                CustomNavigationLink("kWFLocSettingsDNSConfigureButton".localize(table: table), status: "kWFLocSettingsDNSConfigureAutomatic".localize(table: table), destination: EmptyView())
+                CustomNavigationLink("kWFLocSettingsDNSConfigureButton".localize(table: table), status: "kWFLocSettingsDNSConfigureAutomatic".localize(table: table), destination: ConfigureDNSView(selected: $selectedDNSMethod))
             } header: {
                 Text("kWFLocSettingsDNSSectionTitle", tableName: table)
             }
