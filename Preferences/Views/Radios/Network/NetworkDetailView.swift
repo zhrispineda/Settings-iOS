@@ -12,6 +12,7 @@ struct NetworkDetailView: View {
     @State private var privateAddressOption = "kWFLocRandomMACRotatingOption"
     @State private var selectedIPV4AddressMethod = "kWFLocSettingsIPV4ConfigureAutomatic"
     @State private var selectedDNSMethod = "kWFLocSettingsDNSConfigureAutomatic"
+    @State private var selectedProxyMethod = "kWFLocSettingsProxyConfigOffTitle"
     let table = "WiFiKitUILocalizableStrings"
     let MACAddress = generateRandomAddress()
     var name = ""
@@ -64,14 +65,14 @@ struct NetworkDetailView: View {
             
             // DNS
             Section {
-                CustomNavigationLink("kWFLocSettingsDNSConfigureButton".localize(table: table), status: "kWFLocSettingsDNSConfigureAutomatic".localize(table: table), destination: ConfigureDNSView(selected: $selectedDNSMethod))
+                CustomNavigationLink("kWFLocSettingsDNSConfigureButton".localize(table: table), status: selectedDNSMethod.localize(table: table), destination: ConfigureDNSView(selected: $selectedDNSMethod))
             } header: {
                 Text("kWFLocSettingsDNSSectionTitle", tableName: table)
             }
             
             // HTTP Proxy
             Section {
-                CustomNavigationLink("kWFLocSettingsProxyConfigureButton".localize(table: table), status: "kWFLocSettingsProxyConfigOffTitle".localize(table: table), destination: EmptyView())
+                CustomNavigationLink("kWFLocSettingsProxyConfigureButton".localize(table: table), status: selectedProxyMethod.localize(table: table), destination: ConfigureProxyView(selected: $selectedProxyMethod))
             } header: {
                 Text("kWFLocSettingsProxySectionTitle", tableName: table)
             }

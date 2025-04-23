@@ -10,6 +10,7 @@ import SwiftUI
 struct ConfigureIPView: View {
     @Environment(\.dismiss) private var dismiss
     @Binding var selected: String
+    @FocusState private var focusedIP: Bool
     @State private var currentSelected = "kWFLocSettingsIPV4ConfigureAutomatic"
     @State private var clientID = ""
     @State private var IPAddress = ""
@@ -48,6 +49,10 @@ struct ConfigureIPView: View {
                     HStack {
                         Text("kWFLocSettingsIPV4AddressCell", tableName: table)
                         TextField(clientID, text: $clientID, prompt: Text("0.0.0.0"))
+                            .focused($focusedIP)
+                            .onAppear {
+                                self.focusedIP = true
+                            }
                     }
                     // MARK: Subnet Mask
                     HStack {
@@ -68,6 +73,7 @@ struct ConfigureIPView: View {
                 EmptyView()
             }
         }
+        .animation(.default, value: currentSelected)
         .onAppear {
             if selected != "kWFLocSettingsIPV4ConfigureAutomatic" {
                 currentSelected = selected
@@ -78,7 +84,6 @@ struct ConfigureIPView: View {
                 selected = currentSelected
                 dismiss()
             }
-            .disabled(currentSelected == "kWFLocSettingsIPV4ConfigureAutomatic" && clientID.isEmpty)
             .disabled(currentSelected == "kWFLocSettingsIPV4ConfigureManual" && !isValidIP(IPAddress) && !isValidIP(subnetMask))
             .disabled(currentSelected == selected && clientID.isEmpty)
         }

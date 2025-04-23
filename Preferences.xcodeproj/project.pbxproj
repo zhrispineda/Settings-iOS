@@ -210,6 +210,7 @@
 		839E0F0F2DB063A5009B26DB /* MusicSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 839E0F0E2DB063A5009B26DB /* MusicSettings.xcstrings */; };
 		839E0F472DB09C9E009B26DB /* ICBSettingsBundle.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 839E0F462DB09C9E009B26DB /* ICBSettingsBundle.xcstrings */; };
 		83A36C8D2DB95D7800378E45 /* ConfigureDNSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A36C8C2DB95D7800378E45 /* ConfigureDNSView.swift */; };
+		83A36C8F2DB96E4600378E45 /* ConfigureProxyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A36C8E2DB96E4600378E45 /* ConfigureProxyView.swift */; };
 		83A3E68F2CAB9743006F4643 /* AccessibilityTitles.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83A3E68E2CAB9743006F4643 /* AccessibilityTitles.xcstrings */; };
 		83A3E6932CAC2832006F4643 /* Accessibility-HapticMusic.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83A3E6922CAC2832006F4643 /* Accessibility-HapticMusic.xcstrings */; };
 		83A3E6952CAC3091006F4643 /* FocalLengthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A3E6942CAC3091006F4643 /* FocalLengthView.swift */; };
@@ -540,6 +541,7 @@
 		839E0F0E2DB063A5009B26DB /* MusicSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = MusicSettings.xcstrings; sourceTree = "<group>"; };
 		839E0F462DB09C9E009B26DB /* ICBSettingsBundle.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = ICBSettingsBundle.xcstrings; sourceTree = "<group>"; };
 		83A36C8C2DB95D7800378E45 /* ConfigureDNSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureDNSView.swift; sourceTree = "<group>"; };
+		83A36C8E2DB96E4600378E45 /* ConfigureProxyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureProxyView.swift; sourceTree = "<group>"; };
 		83A3E68E2CAB9743006F4643 /* AccessibilityTitles.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AccessibilityTitles.xcstrings; sourceTree = "<group>"; };
 		83A3E6922CAC2832006F4643 /* Accessibility-HapticMusic.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "Accessibility-HapticMusic.xcstrings"; sourceTree = "<group>"; };
 		83A3E6942CAC3091006F4643 /* FocalLengthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocalLengthView.swift; sourceTree = "<group>"; };
@@ -777,6 +779,7 @@
 			children = (
 				83D5BD532DB819F900F5B219 /* ConfigureIPView.swift */,
 				83A36C8C2DB95D7800378E45 /* ConfigureDNSView.swift */,
+				83A36C8E2DB96E4600378E45 /* ConfigureProxyView.swift */,
 			);
 			path = "Network Detail";
 			sourceTree = "<group>";
@@ -1828,6 +1831,7 @@
 				832EF3AB2B819C2A0066A1BF /* KeyboardsView.swift in Sources */,
 				83585B712B88475A0046A0C3 /* DrivingView.swift in Sources */,
 				831C80412CA4998500306574 /* RecordSlomoView.swift in Sources */,
+				83A36C8F2DB96E4600378E45 /* ConfigureProxyView.swift in Sources */,
 				83F6E26C2C8A2E300060187F /* RemindersView.swift in Sources */,
 				832EF3932B8179070066A1BF /* SystemServicesView.swift in Sources */,
 				83815CDF2B768C2200F53A0F /* AccessibilityView.swift in Sources */,
