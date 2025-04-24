@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct OtherNetworkView: View {
-    // Variables
     @Environment(\.dismiss) private var dismiss
     @FocusState private var networkFocused: Bool
     @State private var networkName = ""

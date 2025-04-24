@@ -1212,6 +1212,7 @@
 				83B98E2F2B7C087B007F6C94 /* IconToggle.swift */,
 				83F388622D0B6E8500085103 /* IconView.swift */,
 				839C4CDC2D2B8E50007068BF /* LocalizedLink.swift */,
+				83A36D2C2DB9C65700378E45 /* OnBoardingView.swift */,
 				83A5DA502C2335580012ACB3 /* PermissionsView.swift */,
 				8361A2282C19308600A7D5CC /* Placard.swift */,
 				837C03082B7F1AE0004D6C71 /* SelectOptionList.swift */,
@@ -1220,7 +1221,6 @@
 				83DF95752B84266E00AEEB63 /* SiriDetailView.swift */,
 				833C6EB12C20CE7800A8D91C /* SearchDetailView.swift */,
 				8340A3C42CB0CEDC005ED66A /* MonospacedLabel.swift */,
-				83A36D2C2DB9C65700378E45 /* OnBoardingView.swift */,
 			);
 			path = Templates;
 			sourceTree = "<group>";

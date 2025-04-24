@@ -58,9 +58,9 @@ struct BatteryHealthView: View {
         }
         .sheet(isPresented: $showingSheet) {
             if UIDevice.iPhone {
-                OnBoardingView(title: "BATTERY_WARRANTY_TITLE".localize(table: table), summary: "BATTERY_WARRANTY_P1_IPHONE".localize(table: table), footer: "BATTERY_WARRANTY_P2_IPHONE".localize(table: table, "80%", "1000", "[Learn more...](\("BW_LM_URL_2_IPHONE".localize(table: table))"), secondFooter: "BATTERY_WARRANTY_P3".localize(table: table, "[Learn more...](https://support.apple.com/en-us/106348)"))
+                OnBoardingView(title: "BATTERY_WARRANTY_TITLE".localize(table: table), summary: "BATTERY_WARRANTY_P1_IPHONE".localize(table: table), footer: "BATTERY_WARRANTY_P2_IPHONE".localize(table: table, "80%", "1000", "[\("LM_TEXT".localize(table: table))](\("BW_LM_URL_2_IPHONE".localize(table: table)))"), secondFooter: "BATTERY_WARRANTY_P3".localize(table: table, "[\("LM_TEXT".localize(table: table))](https://support.apple.com/en-us/106348)"))
             } else if UIDevice.iPad {
-                OnBoardingView(title: "BATTERY_WARRANTY_TITLE".localize(table: table), summary: "BATTERY_WARRANTY_P1_IPAD".localize(table: table), footer: "BATTERY_WARRANTY_P2_IPAD".localize(table: table, "80%", "1000", "[Learn more...](\("BW_LM_URL_2_IPHONE".localize(table: table))"))
+                OnBoardingView(title: "BATTERY_WARRANTY_TITLE".localize(table: table), summary: "BATTERY_WARRANTY_P1_IPAD".localize(table: table), footer: "BATTERY_WARRANTY_P2_IPAD".localize(table: table, "80%", "1000", "[\("LM_TEXT".localize(table: table))](\("BW_LM_URL_2_IPHONE".localize(table: table)))"))
             }
         }
     }
