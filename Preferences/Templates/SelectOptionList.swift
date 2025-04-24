@@ -56,7 +56,7 @@ struct SelectOptionList: View {
                 case "AccountChangesSpecifierName":
                     Text("AccountChangesFooterText", tableName: table)
                 case "kWFLocAskToJoinTitle":
-                    switch selected {
+                    switch selectedBinding?.wrappedValue {
                     case "kWFLocAskToJoinDetailOff":
                         Text("kWFLocAskToJoinOffFooter", tableName: table)
                     case "kWFLocAskToJoinDetailNotify":

@@ -54,6 +54,8 @@ struct HelpKitView: UIViewControllerRepresentable {
     let topicID: String
 
     func makeUIViewController(context: Context) -> UIViewController {
+        dlopen("/System/Library/PrivateFrameworks/HelpKit.framework/HelpKit", RTLD_NOW)
+        
         guard let helpViewController = NSClassFromString("HLPHelpViewController") as? UIViewController.Type else {
             SettingsLogger.error("Could not load HLPHelpViewController")
             return UIViewController()
