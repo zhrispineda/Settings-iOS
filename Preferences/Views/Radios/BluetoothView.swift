@@ -11,9 +11,9 @@ struct BluetoothView: View {
     // Variables
     @AppStorage("bluetooth") private var bluetoothEnabled = true
     @AppStorage("DeviceName") private var deviceName = UIDevice.current.model
-    @State private var opacity: Double = 0
     @State private var frameY: Double = 0
-    @State private var showingHelpSheet: Bool = false
+    @State private var opacity: Double = 0
+    @State private var showingHelpSheet = false
     let table = "Devices"
     
     var body: some View {

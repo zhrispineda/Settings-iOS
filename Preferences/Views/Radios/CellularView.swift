@@ -10,26 +10,34 @@ import SwiftUI
 struct CellularView: View {
     // Variables
     @State private var cellularDataEnabled = true
-    @State private var mode: Int = 0
+    @State private var mode = 0
     @State private var wifiAssistEnabled = true
     @State private var cellularUsageStatisticsEnabled = true
-    @State private var opacity: Double = 0
-    @State private var frameY: Double = 0
+    @State private var frameY = 0.0
+    @State private var opacity = 0.0
+    @State private var showingHelpSheet = false
     let table = UIDevice.iPhone ? "CellulariPhone" : "CellulariPad"
     
     var body: some View {
         CustomList {
-            Placard(title: "Cellular", color: .green, icon: "antenna.radiowaves.left.and.right", description: "CELLULAR_SETTINGS_SUBTITLE".localize(table: table), frameY: $frameY, opacity: $opacity)
+            Placard(title: "Cellular", color: .green, icon: "antenna.radiowaves.left.and.right", description: NSLocalizedString("CELLULAR_SETTINGS_SUBTITLE", tableName: table, comment: "").replacing("helpkit", with: "pref"), frameY: $frameY, opacity: $opacity)
             
             Section {
                 Button("SETUP_CELLULAR".localize(table: table)) {}
             }
         }
+        .onOpenURL {_ in
+            showingHelpSheet.toggle()
+        }
+        .sheet(isPresented: $showingHelpSheet) {
+            HelpKitView(topicID: UIDevice.iPhone ? "iph3dd5f213" : "ipadbfe780eb")
+        }
         .toolbar {
             ToolbarItem(placement: .principal) {
-                Text("**Cellular**")
+                Text("Cellular")
                     .font(.subheadline)
-                    .opacity(frameY < 50.0 ? opacity : 0) // Only fade when passing the help section title at the top
+                    .fontWeight(.semibold)
+                    .opacity(frameY < 50.0 ? opacity : 0)
             }
         }
     }
