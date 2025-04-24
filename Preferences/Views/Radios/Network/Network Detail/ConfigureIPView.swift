@@ -51,7 +51,7 @@ struct ConfigureIPView: View {
                         TextField(clientID, text: $clientID, prompt: Text("0.0.0.0"))
                             .focused($focusedIP)
                             .onAppear {
-                                self.focusedIP = true
+                                focusedIP = true
                             }
                     }
                     // MARK: Subnet Mask

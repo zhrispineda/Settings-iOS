@@ -10,12 +10,12 @@ import SwiftUI
 struct OtherNetworkView: View {
     // Variables
     @Environment(\.dismiss) private var dismiss
-    @State private var networkName = String()
+    @FocusState private var networkFocused: Bool
+    @State private var networkName = ""
     @State private var security = "kWFLocSecurityWPA2WPA3Title"
-    @State private var username = String()
-    @State private var password = String()
+    @State private var username = ""
+    @State private var password = ""
     @State var status = "kWFLocOtherNetworksPrompt"
-    @FocusState private var isFocused: Bool
     let table = "WiFiKitUILocalizableStrings"
     
     var body: some View {
@@ -25,8 +25,11 @@ struct OtherNetworkView: View {
                     HStack {
                         Text("kWFLocOtherNetworkNameTitle", tableName: table)
                         TextField("kWFLocOtherNetworkNamePlaceholder".localize(table: table), text: $networkName)
-                            .focused($isFocused)
+                            .focused($networkFocused)
                             .padding(.leading, 10)
+                            .onAppear {
+                                networkFocused = true
+                            }
                     }
                 }
                 .onAppear {
