@@ -31,5 +31,6 @@ As this is a personal project for learning Swift and SwiftUI, feel free to downl
 - If you have any questions or feedback, please contact me through the options listed on my GitHub profile.
 
 ## Other Settings Projects
+- **macOS System Settings** https://github.com/zhrispineda/System-Settings
 - **visionOS Settings** https://github.com/zhrispineda/Settings-visionOS
 - **watchOS Settings** https://github.com/zhrispineda/Settings-watchOS

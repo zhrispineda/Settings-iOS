@@ -13,8 +13,9 @@ struct NetworkView: View {
     @AppStorage("AutoJoinHotspotSelection") private var autoJoinHotspotSelection = "kWFLocAutoInstantHotspotJoinAskTitle"
     @State var editMode: EditMode = .inactive
     @State var isEditing = false
-    @State private var frameY = Double()
-    @State private var opacity = Double()
+    @State private var connected = false
+    @State private var frameY = 0.0
+    @State private var opacity = 0.0
     @State private var searching = true
     @State private var showingHelpSheet = false
     @State private var showingOtherNetwork = false
@@ -39,25 +40,29 @@ struct NetworkView: View {
                             Text("kWFLocWiFiPowerTitle", tableName: table)
                         }
                     }
-                    //                    ZStack {
-                    //                        HStack {
-                    //                            Image(systemName: "checkmark")
-                    //                                .foregroundStyle(.blue)
-                    //                                .fontWeight(.semibold)
-                    //                            Text("Network")
-                    //                            Spacer()
-                    //                            Image(systemName: "lock.fill")
-                    //                                .imageScale(.small)
-                    //                            Image(systemName: "wifi")
-                    //                                .imageScale(.small)
-                    //                            Button {} label: {
-                    //                                Image(systemName: "info.circle")
-                    //                                    .foregroundStyle(.blue)
-                    //                            }
-                    //                        }
-                    //                        NavigationLink(destination: NetworkDetailView(name: "Network")) {}
-                    //                            .opacity(0)
-                    //                    }
+                    
+                    if connected {
+                        ZStack {
+                            HStack {
+                                Image(systemName: "checkmark")
+                                    .foregroundStyle(.blue)
+                                    .fontWeight(.semibold)
+                                Text("Network")
+                                Spacer()
+                                Image(systemName: "lock.fill")
+                                    .imageScale(.small)
+                                Image(systemName: "wifi")
+                                    .imageScale(.small)
+                                Button {} label: {
+                                    Image(systemName: "info.circle")
+                                        .foregroundStyle(.blue)
+                                }
+                            }
+                            NavigationLink(destination: NetworkDetailView(name: "Network")) {}
+                                .opacity(0)
+                        }
+                    }
+                    
                 } footer: {
                     if !wifiEnabled {
                         Text(UIDevice.iPhone ? "kWFLocLocationServicesCellularWarning" : "kWFLocLocationServicesWarning", tableName: table)

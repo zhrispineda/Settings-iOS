@@ -104,7 +104,7 @@ struct GeneralView: View {
             
             if !UIDevice.IsSimulator {
                 Section {
-                    SLink("TV_PROVIDER_LABEL".localize(table: table), icon: "cable.coaxial") {
+                    SLink("TV_PROVIDER_LABEL".localize(table: table), color: .black, icon: "cable.coaxial") {
                         TVProviderView()
                     }
                 }

@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct PasswordsView: View {
-    // Variables
     @State private var detectCompromisedPasswordsEnabled = true
     @State private var showAccountsLabel: AccountDisplayMode = .titles
     @State private var suggestStrongPasswords = true
@@ -40,9 +39,9 @@ struct PasswordsView: View {
                 Toggle("Detect Compromised Passwords".localize(table: table), isOn: $detectCompromisedPasswordsEnabled)
             } footer: {
                 if UIDevice.iPhone {
-                    Text(.init("iPhone can securely monitor your passwords and alert you if they appear in known data leaks. %passwords-privacy-link%".localize(table: table).replacingOccurrences(of: "0x0asswords-privacy-link", with: "[\("BUTTON_TITLE".localize(table: "Passwords"))](pref://)")))
+                    Text(.init("iPhone can securely monitor your passwords and alert you if they appear in known data leaks. %passwords-privacy-link%".localize(table: table).replacing("0x0asswords-privacy-link", with: "[\("BUTTON_TITLE".localize(table: "Passwords"))](pref://)")))
                 } else if UIDevice.iPad {
-                    Text(.init("iPad can securely monitor your passwords and alert you if they appear in known data leaks. %passwords-privacy-link%".localize(table: table).replacingOccurrences(of: "0x0asswords-privacy-link", with: "[\("BUTTON_TITLE".localize(table: "Passwords"))](pref://)")))
+                    Text(.init("iPad can securely monitor your passwords and alert you if they appear in known data leaks. %passwords-privacy-link%".localize(table: table).replacing("0x0asswords-privacy-link", with: "[\("BUTTON_TITLE".localize(table: "Passwords"))](pref://)")))
                 }
             }
             
@@ -55,7 +54,7 @@ struct PasswordsView: View {
             Section {
                 Toggle("Allow Automatic Passkey Upgrades".localize(table: table), isOn: $autoPasskeyUpgrades)
             } footer: {
-                Text(.init("Allow websites and apps to automatically upgrade existing accounts to use passkeys when available. Passwords saved for upgraded accounts will not be affected. %learn-more-link%".localize(table: table).replacingOccurrences(of: "0.000000E+00arn-more-link", with: "[\("Learn more about passkeys…".localize(table: table))](#)")))
+                Text(.init("Allow websites and apps to automatically upgrade existing accounts to use passkeys when available. Passwords saved for upgraded accounts will not be affected. %learn-more-link%".localize(table: table).replacing("0.000000E+00arn-more-link", with: "[\("Learn more about passkeys…".localize(table: table))](#)")))
             }
             
             Section {

@@ -20,7 +20,7 @@ public extension UIDevice {
         let components = cleanedString.components(separatedBy: ", ")
         for (index, value) in components.enumerated() {
             if value.contains("TotalDiskCapacity") {
-                diskCapacity = value.replacingOccurrences(of: " ", with: "")
+                diskCapacity = value.replacing(" ", with: "")
                 formatted = diskCapacity.components(separatedBy: [":"])[1]
                 guard let byteCount = Int64(formatted) else { return nil }
                 return byteCount.formatted(.byteCount(style: .file))

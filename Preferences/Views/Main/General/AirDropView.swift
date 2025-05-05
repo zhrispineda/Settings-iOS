@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct AirDropView: View {
-    // Variables
     @AppStorage("AirDropSelection") private var selection = "Receiving Off"
     @AppStorage("AirDropNearbySharing") private var nearbySharingEnabled = true
     @AppStorage("AirDropCellularUsage") private var cellularUsageEnabled = true
@@ -28,7 +27,7 @@ struct AirDropView: View {
                 .pickerStyle(.inline)
                 .labelsHidden()
             } footer: {
-                Text(.init(NSLocalizedString("AirDrop Learn More Footer WIFI", tableName: table, comment: "").replacingOccurrences(of: "airDropSettingsOBK://", with: "pref://")))
+                Text(.init(NSLocalizedString("AirDrop Learn More Footer WIFI", tableName: table, comment: "").replacing( "airDropSettingsOBK", with: "pref")))
             }
             
             if UIDevice.iPhone {
