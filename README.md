@@ -2,7 +2,7 @@
 A **work-in-progress** SwiftUI recreation of the iOS & iPadOS Settings app (Preferences.app).
 
 ## Information
-- This personal project is a recreation of Apple's Settings app for iOS and iPadOS 18.4.1 **Release** (22E252).
+- This personal project is a recreation of Apple's Settings app for iOS and iPadOS 18.5 **Release** (22F76).
 - All features within the app are only simulations and have no effect on the device outside of the app.
 - Features available within the app vary depending on the device model and its capabilities to make this recreation as accurate as possible.
 - In some panes, the app will load actual preference bundles internally using a view controller bridge (functionality may vary).
