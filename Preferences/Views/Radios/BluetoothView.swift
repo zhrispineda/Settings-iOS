@@ -6,11 +6,39 @@
 //
 
 import SwiftUI
+import CoreBluetooth
+
+@Observable class BluetoothManager: NSObject, CBCentralManagerDelegate {
+    var discoveredPeripherals = [CBPeripheral]()
+    private var centralManager: CBCentralManager!
+    
+    override init() {
+        super.init()
+        centralManager = CBCentralManager(delegate: self, queue: nil)
+    }
+    
+    func centralManagerDidUpdateState(_ central: CBCentralManager) {
+        if central.state == .poweredOn {
+            centralManager.scanForPeripherals(withServices: nil, options: nil)
+        }
+    }
+    
+    func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
+        if !discoveredPeripherals.contains(peripheral) {
+            discoveredPeripherals.append(peripheral)
+        }
+    }
+    
+    func resetList() {
+        discoveredPeripherals = [CBPeripheral]()
+    }
+}
+
 
 struct BluetoothView: View {
-    // Variables
-    @AppStorage("bluetooth") private var bluetoothEnabled = true
+    @AppStorage("Bluetooth") private var bluetoothEnabled = true
     @AppStorage("DeviceName") private var deviceName = UIDevice.current.model
+    @State private var bluetoothManager = BluetoothManager()
     @State private var frameY = 0.0
     @State private var opacity = 0.0
     @State private var showingHelpSheet = false
@@ -31,7 +59,13 @@ struct BluetoothView: View {
             
             if bluetoothEnabled {
                 Section {
-                    EmptyView()
+                    ForEach(bluetoothManager.discoveredPeripherals, id: \.identifier) { peripheral in
+                        if let name = peripheral.name, name != "Unknown" {
+                            Button(name) {
+                                
+                            }.foregroundStyle(.primary)
+                        }
+                    }
                 } header: {
                     HStack {
                         Text("DEVICES", tableName: table)
@@ -44,6 +78,14 @@ struct BluetoothView: View {
                     }
                 }
             }
+        }
+        .onChange(of: bluetoothEnabled) {
+            if !bluetoothEnabled {
+                bluetoothManager.resetList()
+            }
+        }
+        .onDisappear {
+            bluetoothManager.resetList()
         }
         .onOpenURL { url in
             if url.absoluteString == "pref://helpkit" {
