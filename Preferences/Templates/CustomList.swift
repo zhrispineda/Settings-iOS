@@ -49,5 +49,5 @@ struct CustomList<Content: View>: View {
 }
 
 #Preview {
-    ContentView(stateManager: StateManager())
+    ContentView()
 }

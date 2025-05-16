@@ -16,18 +16,13 @@ struct ContentView: View {
     @AppStorage("WiFi") private var wifiEnabled = true
     @AppStorage("Bluetooth") private var bluetoothEnabled = true
     @AppStorage("VPNToggle") private var VPNEnabled = true
-    @Bindable var stateManager: StateManager
+    @State private var stateManager = StateManager()
     @State private var searchFocused = false
     @State private var searchText = ""
     @State private var showingSignInSheet = false
     @State private var isLandscape = false
     @State private var id = UUID()
     @State private var preloadRect = true
-    
-    init(stateManager: StateManager) {
-        self._stateManager = Bindable(stateManager)
-        try? Tips.configure()
-    }
     
     var body: some View {
         GeometryReader { geometry in
@@ -247,7 +242,7 @@ struct ContentView: View {
                                     GeometryReader { geo in
                                         List {
                                             if searchText.isEmpty {
-                                                SettingsSearchView()
+                                                SettingsSearchView(stateManager: stateManager)
                                             } else {
                                                 ContentUnavailableView.search(text: searchText)
                                                     .frame(minHeight: 0, idealHeight: geo.size.height, maxHeight: .infinity)
@@ -273,6 +268,9 @@ struct ContentView: View {
                         .id(id)
                     }
                 }
+            }
+            .onAppear {
+                try? Tips.configure()
             }
         }
     }
@@ -310,5 +308,5 @@ func requiredCapabilities(capability: Capabilities) -> Bool {
 }
 
 #Preview {
-    ContentView(stateManager: StateManager())
+    ContentView()
 }

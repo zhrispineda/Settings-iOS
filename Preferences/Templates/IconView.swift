@@ -74,5 +74,5 @@ struct IconView: View {
 }
 
 #Preview {
-    ContentView(stateManager: StateManager())
+    ContentView()
 }

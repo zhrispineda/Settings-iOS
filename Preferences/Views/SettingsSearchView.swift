@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SettingsSearchView: View {
-    @Environment(StateManager.self) private var stateManager
+    @Bindable var stateManager: StateManager
     
     var body: some View {
         Section("Suggestions") {
@@ -74,6 +74,6 @@ struct SuggestedIconView: View {
 }
 
 #Preview {
-    SettingsSearchView()
-        .environment(StateManager())
+    SettingsSearchView(stateManager: StateManager())
+        //.environment(StateManager())
 }
