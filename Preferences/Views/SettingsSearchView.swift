@@ -74,6 +74,12 @@ struct SuggestedIconView: View {
 }
 
 #Preview {
-    SettingsSearchView(stateManager: StateManager())
-        //.environment(StateManager())
+    @Previewable @State var stateManager = StateManager()
+    
+    NavigationStack(path: $stateManager.path) {
+        List {
+            SettingsSearchView(stateManager: stateManager)
+        }
+        .listStyle(.inset)
+    }
 }
