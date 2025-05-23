@@ -38,8 +38,13 @@ struct BatteryView: View {
             }
             
             Section {
-                ProgressView()
+                Text(UIDevice.iPhone ? "NOTENOUGHINFO_IPHONE" : "NOTENOUGHINFO_IPAD", tableName: "BatteryUI")
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
                     .frame(maxWidth: .infinity)
+                    .multilineTextAlignment(.center)
+                //ProgressView()
+                    //.frame(maxWidth: .infinity)
             }
         }
     }

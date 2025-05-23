@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct NameView: View {
-    // Variables
     @AppStorage("DeviceName") private var deviceName = UIDevice.current.model
     @Environment(\.dismiss) private var dismiss
     @FocusState private var focusedName: Bool
