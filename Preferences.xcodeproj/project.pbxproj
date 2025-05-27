@@ -237,7 +237,6 @@
 		83B1D5362D6BC66700C26010 /* DefaultAppsSettingsUI.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83B1D5352D6BC66700C26010 /* DefaultAppsSettingsUI.xcstrings */; };
 		83B5504E2C165A85002DA622 /* BatteryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B5504D2C165A85002DA622 /* BatteryView.swift */; };
 		83B550512C166AD2002DA622 /* BatteryHealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B550502C166AD2002DA622 /* BatteryHealthView.swift */; };
-		83B550532C169BE3002DA622 /* ChargingOptimizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B550522C169BE3002DA622 /* ChargingOptimizationView.swift */; };
 		83B550562C16A6A5002DA622 /* AutomaticUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B550552C16A6A5002DA622 /* AutomaticUpdateView.swift */; };
 		83B5505A2C16A94C002DA622 /* BetaUpdatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B550592C16A94C002DA622 /* BetaUpdatesView.swift */; };
 		83B619C92B93DEBD00EFEA90 /* ScreenDistanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B619C82B93DEBD00EFEA90 /* ScreenDistanceView.swift */; };
@@ -571,7 +570,6 @@
 		83B1D5352D6BC66700C26010 /* DefaultAppsSettingsUI.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = DefaultAppsSettingsUI.xcstrings; sourceTree = "<group>"; };
 		83B5504D2C165A85002DA622 /* BatteryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryView.swift; sourceTree = "<group>"; };
 		83B550502C166AD2002DA622 /* BatteryHealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryHealthView.swift; sourceTree = "<group>"; };
-		83B550522C169BE3002DA622 /* ChargingOptimizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingOptimizationView.swift; sourceTree = "<group>"; };
 		83B550552C16A6A5002DA622 /* AutomaticUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomaticUpdateView.swift; sourceTree = "<group>"; };
 		83B550592C16A94C002DA622 /* BetaUpdatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetaUpdatesView.swift; sourceTree = "<group>"; };
 		83B619C82B93DEBD00EFEA90 /* ScreenDistanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenDistanceView.swift; sourceTree = "<group>"; };
@@ -1304,7 +1302,6 @@
 			isa = PBXGroup;
 			children = (
 				83B550502C166AD2002DA622 /* BatteryHealthView.swift */,
-				83B550522C169BE3002DA622 /* ChargingOptimizationView.swift */,
 				8393425D2C18CE5B00B48679 /* BatteryHealthChargingView.swift */,
 			);
 			path = Battery;
@@ -1890,7 +1887,6 @@
 				83D3086D2B8AD2BC002A9B7F /* RequestDesktopWebsiteView.swift in Sources */,
 				832FD83F2BC22EB000E99DEB /* BluetoothView.swift in Sources */,
 				83D308652B8ACF48002A9B7F /* SafariLocationView.swift in Sources */,
-				83B550532C169BE3002DA622 /* ChargingOptimizationView.swift in Sources */,
 				837B62FE2BD457F10045B95C /* FocusView.swift in Sources */,
 				8352DEA42D70FB76004B2575 /* Tips.swift in Sources */,
 				83470D162C35A1BC00CE8613 /* AppleAccountView.swift in Sources */,

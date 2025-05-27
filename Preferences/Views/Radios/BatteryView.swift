@@ -30,7 +30,8 @@ struct BatteryView: View {
                 if UIDevice.DeviceSupportsBatteryInformation {
                     CustomNavigationLink("BATTERY_HEALTH_TITLE".localize(table: table), status: "NORMAL_STATE".localize(table: table), destination: BatteryHealthView())
                     if UIDevice.iPhone {
-                        NavigationLink("CHARGING_TITLE_CHARGING".localize(table: table), destination: ChargingOptimizationView())
+                        // View destination does not load in simulator and preview.
+                        NavigationLink("CHARGING_TITLE_CHARGING".localize(table: table), destination: BundleControllerView("BatteryUsageUI", controller: "BatteryChargingController", title: "CHARGING_TITLE_CHARGING".localize(table: table)))
                     }
                 } else if UIDevice.iPhone {
                     NavigationLink("BATTERY_HEALTH".localize(table: table), destination: BatteryHealthChargingView())
@@ -43,8 +44,6 @@ struct BatteryView: View {
                     .foregroundStyle(.secondary)
                     .frame(maxWidth: .infinity)
                     .multilineTextAlignment(.center)
-                //ProgressView()
-                    //.frame(maxWidth: .infinity)
             }
         }
     }
