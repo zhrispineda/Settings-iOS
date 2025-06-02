@@ -190,7 +190,7 @@
 		83898FD12B8A9F680020C7BB /* DataAccessDevicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83898FD02B8A9F680020C7BB /* DataAccessDevicesView.swift */; };
 		83898FD42B8AA25A0020C7BB /* ShortcutsAdvancedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83898FD32B8AA25A0020C7BB /* ShortcutsAdvancedView.swift */; };
 		838A9EC22B7E81EC00ED261C /* ContentPrivacyRestrictionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838A9EC12B7E81EC00ED261C /* ContentPrivacyRestrictionsView.swift */; };
-		838A9EC42B7E823300ED261C /* CustomNavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838A9EC32B7E823300ED261C /* CustomNavigationLink.swift */; };
+		838A9EC42B7E823300ED261C /* SettingsLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838A9EC32B7E823300ED261C /* SettingsLink.swift */; };
 		838AF99C2D629138008FFA8B /* ScreenSharingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838AF99B2D629138008FFA8B /* ScreenSharingView.swift */; };
 		838C23232B746CF90053D4C5 /* GeneralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838C23222B746CF90053D4C5 /* GeneralView.swift */; };
 		838C23262B746D290053D4C5 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838C23252B746D290053D4C5 /* SettingsModel.swift */; };
@@ -521,7 +521,7 @@
 		83898FD02B8A9F680020C7BB /* DataAccessDevicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAccessDevicesView.swift; sourceTree = "<group>"; };
 		83898FD32B8AA25A0020C7BB /* ShortcutsAdvancedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsAdvancedView.swift; sourceTree = "<group>"; };
 		838A9EC12B7E81EC00ED261C /* ContentPrivacyRestrictionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentPrivacyRestrictionsView.swift; sourceTree = "<group>"; };
-		838A9EC32B7E823300ED261C /* CustomNavigationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationLink.swift; sourceTree = "<group>"; };
+		838A9EC32B7E823300ED261C /* SettingsLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLink.swift; sourceTree = "<group>"; };
 		838AF99B2D629138008FFA8B /* ScreenSharingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenSharingView.swift; sourceTree = "<group>"; };
 		838C23222B746CF90053D4C5 /* GeneralView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralView.swift; sourceTree = "<group>"; };
 		838C23252B746D290053D4C5 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
@@ -1207,7 +1207,7 @@
 				830A87CF2DA5895600789C20 /* BundleControllerView.swift */,
 				83D050192DB6D343003D50AD /* ContinueButton.swift */,
 				838C232A2B7492170053D4C5 /* CustomList.swift */,
-				838A9EC32B7E823300ED261C /* CustomNavigationLink.swift */,
+				838A9EC32B7E823300ED261C /* SettingsLink.swift */,
 				838C232F2B74978C0053D4C5 /* HText.swift */,
 				83B98E2F2B7C087B007F6C94 /* IconToggle.swift */,
 				83F388622D0B6E8500085103 /* IconView.swift */,
@@ -1895,7 +1895,7 @@
 				83DFA56D2DA9E17E004C3DD5 /* UIViewControllerExtensions.swift in Sources */,
 				83AB1D5F2D5E687B005F0B63 /* ScheduledSummaryView.swift in Sources */,
 				833F20AE2CA4C93C00115E8F /* RecordCinematicView.swift in Sources */,
-				838A9EC42B7E823300ED261C /* CustomNavigationLink.swift in Sources */,
+				838A9EC42B7E823300ED261C /* SettingsLink.swift in Sources */,
 				83CED5AA2D6E5ACD00253D9C /* ZoomView.swift in Sources */,
 				83D0501A2DB6D343003D50AD /* ContinueButton.swift in Sources */,
 				830A87D02DA5895600789C20 /* BundleControllerView.swift in Sources */,

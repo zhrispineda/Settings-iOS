@@ -34,14 +34,14 @@ struct SafariView: View {
         CustomList(title: "Safari", topPadding: true) {
             PermissionsView(appName: "Safari", cellular: false, location: false, notifications: false, siri: true, cellularEnabled: .constant(false))
             
-            CustomNavigationLink("Default Browser App", status: "Safari", destination: EmptyView())
+            SettingsLink("Default Browser App", status: "Safari", destination: EmptyView())
             
             Section {
-                CustomNavigationLink("Search Engine", status: "Google", destination: SelectOptionList("Search Engine", options: ["Google", "Yahoo", "Bing", "DuckDuckGo", "Ecosia"], selected: "Google"))
+                SettingsLink("Search Engine", status: "Google", destination: SelectOptionList("Search Engine", options: ["Google", "Yahoo", "Bing", "DuckDuckGo", "Ecosia"], selected: "Google"))
                 Toggle("Also Use in Private Browsing", isOn: $alsoUsePrivateBrowsingEnabled)
                 Toggle("Search Engine Suggestions", isOn: $searchEngineSuggestionsEnabled)
                 Toggle("Safari Suggestions", isOn: $safariSuggestionsEnabled)
-                CustomNavigationLink("Quick Website Search", status: "On", destination: QuickWebsiteSearchView())
+                SettingsLink("Quick Website Search", status: "On", destination: QuickWebsiteSearchView())
                 Toggle("Preload Top Hit", isOn: $preloadTopHitEnabled)
             } header: {
                 Text("Search")
@@ -51,15 +51,15 @@ struct SafariView: View {
             
             Section {
                 NavigationLink("AutoFill", destination: AutoFillView())
-                CustomNavigationLink("Favorites", status: "Favorites", destination: FavoritesView())
+                SettingsLink("Favorites", status: "Favorites", destination: FavoritesView())
                 if UIDevice.iPad {
                     Toggle("Show Favorites Bar", isOn: $showFavoritesBarEnabled)
-                    CustomNavigationLink("Favorites Bar Appearance", status: "Show Icons and Text", destination: EmptyView())
+                    SettingsLink("Favorites Bar Appearance", status: "Show Icons and Text", destination: EmptyView())
                     Toggle("Show Links on Hover", isOn: $showLinksHoverEnabled)
                 }
                 Toggle("Block Pop-ups", isOn: $blockPopUpsEnabled)
                 NavigationLink("Extensions", destination: ExtensionsView())
-                CustomNavigationLink("Downloads", status: "On My \(UIDevice.current.model)", destination: DownloadsView())
+                SettingsLink("Downloads", status: "On My \(UIDevice.current.model)", destination: DownloadsView())
             } header: {
                 Text("General")
             }
@@ -119,8 +119,8 @@ struct SafariView: View {
                     Toggle("Landscape Tab Bar", isOn: $landscapeTabBarEnabled)
                 }
                 Toggle("Allow Website Tinting", isOn: $allowWebsiteTintingEnabled)
-                CustomNavigationLink("Open Links", status: "In New Tab", destination: SelectOptionList("Open Links", options: ["In New Tab", "In Background"], selected: "In New Tab"))
-                CustomNavigationLink("Close Tabs", status: "Manually", destination: SelectOptionList("Close Tabs", options: ["Manually", "After One Day", "After One Week", "After One Month"], selected: "Manually"))
+                SettingsLink("Open Links", status: "In New Tab", destination: SelectOptionList("Open Links", options: ["In New Tab", "In Background"], selected: "In New Tab"))
+                SettingsLink("Close Tabs", status: "Manually", destination: SelectOptionList("Close Tabs", options: ["Manually", "After One Day", "After One Week", "After One Month"], selected: "Manually"))
             } header: {
                 Text("Tabs")
             } footer: {
@@ -140,7 +140,7 @@ struct SafariView: View {
             
             Section {
                 Toggle("Prevent Cross-Site Tracking", isOn: $preventCrossSiteTrackingEnabled)
-                CustomNavigationLink("Hide IP Address", status: "Off", destination: HideAddressView())
+                SettingsLink("Hide IP Address", status: "Off", destination: HideAddressView())
                 Toggle("Require Passcode to Unlock Private Browsing", isOn: $requirePasscodeUnlockPrivateBrowsingEnabled)
                 Toggle("Fradulent Website Warning", isOn: $fradulentWebsiteWarningEnabled)
                 Toggle("Highlights", isOn: $highlightsEnabled)

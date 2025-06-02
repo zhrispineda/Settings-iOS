@@ -28,10 +28,10 @@ struct AboutView: View {
                 if UIDevice.IsSimulator {
                     LabeledContent("Device_Name".localize(table: table), value: UIDevice.current.model)
                 } else {
-                    CustomNavigationLink("Device_Name".localize(table: table), status: deviceName, destination: NameView())
+                    SettingsLink("Device_Name".localize(table: table), status: deviceName, destination: NameView())
                 }
                 
-                CustomNavigationLink("OS Version".localize(table: UITable), status: UIDevice().systemVersion, destination: BundleControllerView("/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework/GeneralSettingsUI", controller: "PSGSoftwareVersionController", title: "OS Version", table: UITable))
+                SettingsLink("OS Version".localize(table: UITable), status: UIDevice().systemVersion, destination: BundleControllerView("/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework/GeneralSettingsUI", controller: "PSGSoftwareVersionController", title: "OS Version", table: UITable))
                     .textSelection(.enabled)
                 
                 LabeledContent("ProductModelName".localize(table: UITable), value: UIDevice.fullModel)

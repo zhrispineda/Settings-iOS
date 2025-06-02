@@ -25,7 +25,7 @@ struct SecurityView: View {
     var body: some View {
         CustomList(title: "kWFLocOtherNetworkSecurityTitle".localize(table: table)) {
             Section {
-                CustomNavigationLink("KWFLocSettingRandomMACSwitchTitle".localize(table: table),status: selectedRotation.localize(table: table), destination: SelectOptionList("KWFLocSettingRandomMACSwitchTitle", options: [
+                SettingsLink("KWFLocSettingRandomMACSwitchTitle".localize(table: table),status: selectedRotation.localize(table: table), destination: SelectOptionList("KWFLocSettingRandomMACSwitchTitle", options: [
                     "kWFLocRandomMACOffOption",
                     "kWFLocRandomMACStaticOption",
                     "kWFLocRandomMACRotatingOption"

@@ -38,7 +38,7 @@ struct OtherNetworkView: View {
                 
                 // Security + Password/Username
                 Section {
-                    CustomNavigationLink("kWFLocOtherNetworkSecurityTitle".localize(table: table), status: security.localize(table: table), destination: SecurityView(security: $security))
+                    SettingsLink("kWFLocOtherNetworkSecurityTitle".localize(table: table), status: security.localize(table: table), destination: SecurityView(security: $security))
                     if security.contains("Enterprise") {
                         HStack {
                             Text("kWFLocOtherNetworkUsernameTitle", tableName: table)

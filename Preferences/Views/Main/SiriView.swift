@@ -75,18 +75,18 @@ struct SiriView: View {
             // MARK: Siri Requests Section
             Section {
                 if siriEnabled {
-                    CustomNavigationLink("VOICE".localize(table: table), status: "", destination: SiriVoiceView()) // \("REGION_en-US".localize(table: table)) (Voice 4)
+                    SettingsLink("VOICE".localize(table: table), status: "", destination: SiriVoiceView()) // \("REGION_en-US".localize(table: table)) (Voice 4)
                 } else {
-                    CustomNavigationLink("LANGUAGE".localize(table: table), status: "English (United States)", destination: SiriLanguageView())
+                    SettingsLink("LANGUAGE".localize(table: table), status: "English (United States)", destination: SiriLanguageView())
                 }
                 if !UIDevice.IsSimulator {
-                    CustomNavigationLink("ACTIVATION_COMPACT".localize(table: table), status: "ACTIVATION_OFF".localize(table: table), destination: EmptyView())
+                    SettingsLink("ACTIVATION_COMPACT".localize(table: table), status: "ACTIVATION_OFF".localize(table: table), destination: EmptyView())
                 }
                 if !siriEnabled {
                     if !UIDevice.IsSimulator {
                         Toggle("ASSISTANT_LOCK_SCREEN_ACCESS".localize(table: table), isOn: $allowSiriWhenLockedEnabled)
                     }
-                    CustomNavigationLink("VOICE".localize(table: table), status: "\("REGION_en-US".localize(table: table)) (Voice 4)", destination: SiriVoiceView())
+                    SettingsLink("VOICE".localize(table: table), status: "\("REGION_en-US".localize(table: table)) (Voice 4)", destination: SiriVoiceView())
                     NavigationLink("VOICE_FEEDBACK".localize(table: table)) {
                         CustomViewController("/System/Library/PrivateFrameworks/AssistantSettingsSupport.framework/AssistantSettingsSupport", controller: "AssistantAudioFeedbackController")
                             .navigationTitle("VOICE_FEEDBACK".localize(table: table))

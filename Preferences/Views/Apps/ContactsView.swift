@@ -24,7 +24,7 @@ struct ContactsView: View {
             
             Section {
                 Button {} label: {
-                    CustomNavigationLink("Share Name and Photo".localize(table: table), status: "NAME_AND_PHOTO_SHARING_OFF".localize(table: table), destination: EmptyView())
+                    SettingsLink("Share Name and Photo".localize(table: table), status: "NAME_AND_PHOTO_SHARING_OFF".localize(table: table), destination: EmptyView())
                 }
                 .foregroundStyle(.primary)
             } footer: {
@@ -36,8 +36,8 @@ struct ContactsView: View {
             }
             
             Section {
-                CustomNavigationLink("Sort Order".localize(table: table), status: "LAST".localize(table: table), destination: SelectOptionList("Sort Order", options: ["FIRST", "LAST"], selected: "LAST", table: table))
-                CustomNavigationLink("Display Order".localize(table: table), status: "LAST".localize(table: table), destination: EmptyView())
+                SettingsLink("Sort Order".localize(table: table), status: "LAST".localize(table: table), destination: SelectOptionList("Sort Order", options: ["FIRST", "LAST"], selected: "LAST", table: table))
+                SettingsLink("Display Order".localize(table: table), status: "LAST".localize(table: table), destination: EmptyView())
                 NavigationLink("Short Name".localize(table: table)) {}
                 Button {} label: {
                     NavigationLink("My Info".localize(table: table)) {}

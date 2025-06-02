@@ -16,7 +16,7 @@ struct HardwareKeyboardView: View {
     var body: some View {
         CustomList(title: "Hardware Keyboard") {
             Section {
-                CustomNavigationLink("English (US)", status: "Automatic — U.S.", destination: HardwareKeyboardLanguageView())
+                SettingsLink("English (US)", status: "Automatic — U.S.", destination: HardwareKeyboardLanguageView())
             }
             
             Section {
@@ -32,7 +32,7 @@ struct HardwareKeyboardView: View {
             }
             
             Section {
-                CustomNavigationLink("Keyboard Type", status: "ANSI", destination: SelectOptionList("Keyboard Type", options: ["ANSI (U.S.)", "ISO (International)", "JIS (Japan)"], selected: "ANSI (U.S.)"))
+                SettingsLink("Keyboard Type", status: "ANSI", destination: SelectOptionList("Keyboard Type", options: ["ANSI (U.S.)", "ISO (International)", "JIS (Japan)"], selected: "ANSI (U.S.)"))
             } footer: {
                 Text("Choose the correct type for your keyboard to ensure that all keys function correctly.")
             }

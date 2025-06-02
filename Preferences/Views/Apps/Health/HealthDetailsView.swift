@@ -25,14 +25,14 @@ struct HealthDetailsView: View {
             Section {
                 LabeledContent("FIRST_NAME".localize(table: table), value: "FIRST_NAME_NOT_SET".localize(table: table))
                 LabeledContent("LAST_NAME".localize(table: table), value: "LAST_NAME_NOT_SET".localize(table: table))
-                CustomNavigationLink("BIRTHDATE".localize(table: table), status: "BIRTHDATE_NOT_SET".localize(table: table), destination: HealthDetailsDataView(title: "BIRTHDATE".localize(table: table)))
-                CustomNavigationLink("BIOLOGICAL_SEX".localize(table: dataTable), status: "BIOLOGICAL_SEX_NOT_SET".localize(table: table), destination: HealthDetailsDataView(title: "BIOLOGICAL_SEX".localize(table: dataTable)))
-                CustomNavigationLink("BLOOD_TYPE".localize(table: dataTable), status: "BLOOD_TYPE_NOT_SET".localize(table: table), destination: HealthDetailsDataView(title: "BLOOD_TYPE_TITLE_EMBEDDED".localize(table: dataTable)))
-                CustomNavigationLink("FITZPATRICK_SKIN_TYPE".localize(table: dataTable), status: "FITZPATRICK_SKIN_TYPE_NOT_SET".localize(table: table), destination: HealthDetailsDataView(title: "FITZPATRICK_SKIN_TYPE"))
+                SettingsLink("BIRTHDATE".localize(table: table), status: "BIRTHDATE_NOT_SET".localize(table: table), destination: HealthDetailsDataView(title: "BIRTHDATE".localize(table: table)))
+                SettingsLink("BIOLOGICAL_SEX".localize(table: dataTable), status: "BIOLOGICAL_SEX_NOT_SET".localize(table: table), destination: HealthDetailsDataView(title: "BIOLOGICAL_SEX".localize(table: dataTable)))
+                SettingsLink("BLOOD_TYPE".localize(table: dataTable), status: "BLOOD_TYPE_NOT_SET".localize(table: table), destination: HealthDetailsDataView(title: "BLOOD_TYPE_TITLE_EMBEDDED".localize(table: dataTable)))
+                SettingsLink("FITZPATRICK_SKIN_TYPE".localize(table: dataTable), status: "FITZPATRICK_SKIN_TYPE_NOT_SET".localize(table: table), destination: HealthDetailsDataView(title: "FITZPATRICK_SKIN_TYPE"))
             }
             
             Section {
-                CustomNavigationLink("WHEELCHAIR_USE_TITLE_EMBEDDED".localize(table: dataTable), status: "WHEELCHAIR_USE_NOT_SET".localize(table: table), destination: HealthDetailsDataView(title: "WHEELCHAIR_USE_TITLE_EMBEDDED".localize(table: dataTable)))
+                SettingsLink("WHEELCHAIR_USE_TITLE_EMBEDDED".localize(table: dataTable), status: "WHEELCHAIR_USE_NOT_SET".localize(table: table), destination: HealthDetailsDataView(title: "WHEELCHAIR_USE_TITLE_EMBEDDED".localize(table: dataTable)))
             } footer: {
                 if UIDevice.iPhone {
                     Text("WHEELCHAIR_USE_COREMOTION_TEXT_IPHONE", tableName: table)
@@ -42,7 +42,7 @@ struct HealthDetailsView: View {
             }
             
             Section {
-                CustomNavigationLink("CARDIO_FITNESS_RELATED_MEDICATIONS".localize(table: table), status: "0", destination: HealthDetailsDataView(title: "CARDIO_FITNESS_RELATED_MEDICATIONS".localize(table: table)))
+                SettingsLink("CARDIO_FITNESS_RELATED_MEDICATIONS".localize(table: table), status: "0", destination: HealthDetailsDataView(title: "CARDIO_FITNESS_RELATED_MEDICATIONS".localize(table: table)))
             } footer: {
                 Text("CARDIO_FITNESS_RELATED_MEDICATIONS_FOOTER_TEXT", tableName: table)
             }

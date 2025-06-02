@@ -15,10 +15,10 @@ struct SoftwareUpdateView: View {
         GeometryReader { geometry in
             CustomList(title: "SOFTWARE_UPDATE".localize(table: table)) {
                 Section {
-                    CustomNavigationLink("AUTOMATIC_UPDATES".localize(table: table), status: "ON".localize(table: table), destination: AutomaticUpdateView())
+                    SettingsLink("AUTOMATIC_UPDATES".localize(table: table), status: "ON".localize(table: table), destination: AutomaticUpdateView())
                     
                     //                if !checkingForUpdates && !updateCheckFailed {
-                    //                    CustomNavigationLink("Beta Updates", status: "\(UIDevice().systemName) 18 Developer Beta", destination: BetaUpdatesView())
+                    //                    SettingsLink("Beta Updates", status: "\(UIDevice().systemName) 18 Developer Beta", destination: BetaUpdatesView())
                     //                }
                 }
                 VStack {

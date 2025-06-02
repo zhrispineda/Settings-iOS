@@ -108,7 +108,7 @@ struct RecordVideoView: View {
             }
             
             Section {
-                CustomNavigationLink("CAM_AUTO_FPS_TITLE".localize(table: table), status: "CAM_AUTO_FPS_VFR_30&60".localize(table: table), destination: EmptyView())
+                SettingsLink("CAM_AUTO_FPS_TITLE".localize(table: table), status: "CAM_AUTO_FPS_VFR_30&60".localize(table: table), destination: EmptyView())
             } footer: {
                 Text("CAM_AUTO_FPS_VFR_FOOTER".localize(table: table))
             }

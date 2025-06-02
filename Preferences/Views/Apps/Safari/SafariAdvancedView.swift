@@ -22,7 +22,7 @@ struct SafariAdvancedView: View {
             }
             
             Section {
-                CustomNavigationLink("Advanced Tracking and Fingerprinting Protection", status: "Private Browsing", destination: AdvancedTrackingFingerprintingProtectionView())
+                SettingsLink("Advanced Tracking and Fingerprinting Protection", status: "Private Browsing", destination: AdvancedTrackingFingerprintingProtectionView())
                 Toggle("Block All Cookies", isOn: $blockAllCookiesEnabled)
                     .onChange(of: blockAllCookiesEnabled) {
                         showingBlockCookiesAlert = blockAllCookiesEnabled

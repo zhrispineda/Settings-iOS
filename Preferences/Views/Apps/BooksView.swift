@@ -103,7 +103,7 @@ struct BooksView: View {
                     Text("Show Status Bar", tableName: table)
                     Text(UIDevice.iPhone ? "Always display current time, battery level, and other iPhone status info while reading." : "Always display current time, battery level, and other iPad status info while reading.", tableName: table)
                 }
-                CustomNavigationLink("Page Navigation".localize(table: table), status: pageNavigation.localize(table: table), destination: SelectOptionList("Page Navigation", options: ["Slide", "Curl", "Fast Fade", "Scroll"], selectedBinding: $pageNavigation, table: table))
+                SettingsLink("Page Navigation".localize(table: table), status: pageNavigation.localize(table: table), destination: SelectOptionList("Page Navigation", options: ["Slide", "Curl", "Fast Fade", "Scroll"], selectedBinding: $pageNavigation, table: table))
             }
             
             Section {
@@ -142,8 +142,8 @@ struct BooksView: View {
             }
             
             Section {
-                CustomNavigationLink("Skip Forward".localize(table: table), status: skipForward.localize(table: table), destination: SelectOptionList("Skip Forward", options: ["10 seconds", "15 seconds", "30 seconds", "45 seconds", "60 seconds"], selectedBinding: $skipForward, table: table))
-                CustomNavigationLink("Skip Back".localize(table: table), status: skipBack.localize(table: table), destination: SelectOptionList("Skip Back", options: ["10 seconds", "15 seconds", "30 seconds", "45 seconds", "60 seconds"], selectedBinding: $skipBack, table: table))
+                SettingsLink("Skip Forward".localize(table: table), status: skipForward.localize(table: table), destination: SelectOptionList("Skip Forward", options: ["10 seconds", "15 seconds", "30 seconds", "45 seconds", "60 seconds"], selectedBinding: $skipForward, table: table))
+                SettingsLink("Skip Back".localize(table: table), status: skipBack.localize(table: table), destination: SelectOptionList("Skip Back", options: ["10 seconds", "15 seconds", "30 seconds", "45 seconds", "60 seconds"], selectedBinding: $skipBack, table: table))
             } header: {
                 Text("Audiobooks", tableName: table)
             } footer: {

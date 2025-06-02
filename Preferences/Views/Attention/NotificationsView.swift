@@ -114,17 +114,17 @@ struct NotificationsView: View {
             
             // MARK: Notification Options Section
             Section {
-                CustomNavigationLink("NOTIFICATION_DELIVERY_SCHEDULED".localize(table: table), status: "OFF".localize(table: table), destination: ScheduledSummaryView())
-                CustomNavigationLink("SHOW_PREVIEWS".localize(table: table), status: previewSelection.localize(table: table), destination: SelectOptionList("SHOW_PREVIEWS", options: ["SHOW_PREVIEW_OPTION_ALWAYS", "SHOW_PREVIEW_OPTION_UNLOCKED", "SHOW_PREVIEW_OPTION_NEVER"], selectedBinding: $previewSelection, selected: "SHOW_PREVIEW_OPTION_UNLOCKED", table: table))
-                CustomNavigationLink("SCREEN_SHARING".localize(table: table), status: (allowNotifications ? "SCREEN_SHARING_NOTIFICATIONS_ON" : "SCREEN_SHARING_NOTIFICATIONS_OFF").localize(table: table), destination: ScreenSharingView(allowNotifications: $allowNotifications))
+                SettingsLink("NOTIFICATION_DELIVERY_SCHEDULED".localize(table: table), status: "OFF".localize(table: table), destination: ScheduledSummaryView())
+                SettingsLink("SHOW_PREVIEWS".localize(table: table), status: previewSelection.localize(table: table), destination: SelectOptionList("SHOW_PREVIEWS", options: ["SHOW_PREVIEW_OPTION_ALWAYS", "SHOW_PREVIEW_OPTION_UNLOCKED", "SHOW_PREVIEW_OPTION_NEVER"], selectedBinding: $previewSelection, selected: "SHOW_PREVIEW_OPTION_UNLOCKED", table: table))
+                SettingsLink("SCREEN_SHARING".localize(table: table), status: (allowNotifications ? "SCREEN_SHARING_NOTIFICATIONS_ON" : "SCREEN_SHARING_NOTIFICATIONS_OFF").localize(table: table), destination: ScreenSharingView(allowNotifications: $allowNotifications))
                 if UIDevice.IntelligenceCapability {
-                    CustomNavigationLink("SUMMARIZE_NOTIFICATIONS".localize(table: table), status: "OFF".localize(table: table), destination: SummarizeNotificationsView())
+                    SettingsLink("SUMMARIZE_NOTIFICATIONS".localize(table: table), status: "OFF".localize(table: table), destination: SummarizeNotificationsView())
                 }
             }
             
             // MARK: Siri Section
             Section {
-                CustomNavigationLink("SPOKEN_NOTIFICATIONS".localize(table: table), status: "OFF".localize(table: table), destination: AnnounceNotificationsView())
+                SettingsLink("SPOKEN_NOTIFICATIONS".localize(table: table), status: "OFF".localize(table: table), destination: AnnounceNotificationsView())
                 NavigationLink("SIRI_SUGGESTIONS".localize(table: table), destination: SiriSuggestionsView())
             } header: {
                 Text("SIRI", tableName: table)
@@ -141,7 +141,7 @@ struct NotificationsView: View {
             if UIDevice.iPhone {
                 Section {
                     Toggle("AMBER Alerts", isOn: $amberAlertsEnabled)
-                    CustomNavigationLink("Emergency Alerts", status: "On", destination: EmptyView())
+                    SettingsLink("Emergency Alerts", status: "On", destination: EmptyView())
                     Toggle("Public Safety Alerts", isOn: $publicSafetyAlertsEnabled)
                     Toggle("Test Alerts", isOn: $testAlertsEnabled)
                 } header: {

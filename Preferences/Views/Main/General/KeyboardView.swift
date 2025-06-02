@@ -37,13 +37,13 @@ struct KeyboardView: View {
     var body: some View {
         CustomList(title: "Keyboards") {
             Section {
-                CustomNavigationLink("Keyboards", status: "2", destination: KeyboardsView())
+                SettingsLink("Keyboards", status: "2", destination: KeyboardsView())
             }
             
             Section {
                 NavigationLink("Text Replacement", destination: TextReplacementView())
                 if UIDevice.iPhone {
-                    CustomNavigationLink("One-Handed Keyboard", status: "Off", destination: OneHandedKeyboardView())
+                    SettingsLink("One-Handed Keyboard", status: "Off", destination: OneHandedKeyboardView())
                 }
                 if UIDevice.IsSimulator {
                     NavigationLink("Hardware Keyboard", destination: HardwareKeyboardView())
@@ -111,7 +111,7 @@ struct KeyboardView: View {
                     })
                 Toggle("Auto-Punctuation", isOn: $autoPunctuationEnabled)
                 if dictationEnabled && UIDevice.IsSimulator {
-                    CustomNavigationLink("Dictation Shortcut", status: "⌃\tControl", destination: DictationShortcutView())
+                    SettingsLink("Dictation Shortcut", status: "⌃\tControl", destination: DictationShortcutView())
                 }
             } header: {
                 Text("Dictation")

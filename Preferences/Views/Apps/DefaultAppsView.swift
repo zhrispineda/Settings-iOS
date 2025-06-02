@@ -17,15 +17,15 @@ struct DefaultAppsView: View {
             Placard(title: "Default Apps".localize(table: table), color: .gray, iconColor: .white, icon: "checkmark.rectangle.stack.fill", description: "Placard Subtitle".localize(table: table), frameY: $frameY, opacity: $opacity)
             
             Section {
-                CustomNavigationLink("Email".localize(table: table), status: "None".localize(table: table), destination: EmptyView())
-                CustomNavigationLink("Messaging".localize(table: table), status: "Messages", destination: EmptyView())
-                CustomNavigationLink("Calling".localize(table: table), status: "None".localize(table: table), destination: EmptyView())
+                SettingsLink("Email".localize(table: table), status: "None".localize(table: table), destination: EmptyView())
+                SettingsLink("Messaging".localize(table: table), status: "Messages", destination: EmptyView())
+                SettingsLink("Calling".localize(table: table), status: "None".localize(table: table), destination: EmptyView())
             }
             
             Section {
-                CustomNavigationLink("Navigation", status: "Maps", destination: EmptyView())
-                CustomNavigationLink("Browser App".localize(table: table), status: "Safari", destination: EmptyView())
-                CustomNavigationLink("Translation", status: "None".localize(table: table), destination: EmptyView())
+                SettingsLink("Navigation", status: "Maps", destination: EmptyView())
+                SettingsLink("Browser App".localize(table: table), status: "Safari", destination: EmptyView())
+                SettingsLink("Translation", status: "None".localize(table: table), destination: EmptyView())
             }
         }
         .toolbar {

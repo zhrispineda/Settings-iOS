@@ -33,7 +33,7 @@ struct NetworkDetailView: View {
             
             Section {
                 // Private Wi-Fi Address
-                CustomNavigationLink("KWFLocSettingRandomMACSwitchTitle".localize(table: table), status: "kWFLocRandomMACStaticOption".localize(table: table), destination: SelectOptionList("KWFLocSettingRandomMACSwitchTitle", options: [
+                SettingsLink("KWFLocSettingRandomMACSwitchTitle".localize(table: table), status: "kWFLocRandomMACStaticOption".localize(table: table), destination: SelectOptionList("KWFLocSettingRandomMACSwitchTitle", options: [
                     "kWFLocRandomMACOffOption",
                     "kWFLocRandomMACStaticOption",
                     "kWFLocRandomMACRotatingOption"
@@ -58,21 +58,21 @@ struct NetworkDetailView: View {
             
             // IPv4 Address
             Section {
-                CustomNavigationLink("kWFLocSettingsIPConfigureTitle".localize(table: table), status: selectedIPV4AddressMethod.localize(table: table), destination: ConfigureIPView(selected: $selectedIPV4AddressMethod))
+                SettingsLink("kWFLocSettingsIPConfigureTitle".localize(table: table), status: selectedIPV4AddressMethod.localize(table: table), destination: ConfigureIPView(selected: $selectedIPV4AddressMethod))
             } header: {
                 Text("kWFLocSettingsIPSectionTitle", tableName: table)
             }
             
             // DNS
             Section {
-                CustomNavigationLink("kWFLocSettingsDNSConfigureButton".localize(table: table), status: selectedDNSMethod.localize(table: table), destination: ConfigureDNSView(selected: $selectedDNSMethod))
+                SettingsLink("kWFLocSettingsDNSConfigureButton".localize(table: table), status: selectedDNSMethod.localize(table: table), destination: ConfigureDNSView(selected: $selectedDNSMethod))
             } header: {
                 Text("kWFLocSettingsDNSSectionTitle", tableName: table)
             }
             
             // HTTP Proxy
             Section {
-                CustomNavigationLink("kWFLocSettingsProxyConfigureButton".localize(table: table), status: selectedProxyMethod.localize(table: table), destination: ConfigureProxyView(selected: $selectedProxyMethod))
+                SettingsLink("kWFLocSettingsProxyConfigureButton".localize(table: table), status: selectedProxyMethod.localize(table: table), destination: ConfigureProxyView(selected: $selectedProxyMethod))
             } header: {
                 Text("kWFLocSettingsProxySectionTitle", tableName: table)
             }

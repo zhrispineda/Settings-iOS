@@ -103,7 +103,7 @@ struct DisplayBrightnessView: View {
                 Toggle("AUTOMATIC".localize(table: table), isOn: $automaticEnabled.animation())
                 
                 if automaticEnabled {
-                    CustomNavigationLink("APPEARANCE_OPTIONS".localize(table: table), status: "LIGHT_UNTIL_SUNSET".localize(table: table), destination: EmptyView())
+                    SettingsLink("APPEARANCE_OPTIONS".localize(table: table), status: "LIGHT_UNTIL_SUNSET".localize(table: table), destination: EmptyView())
                 }
             } header: {
                 Text("APPEARANCE", tableName: table)
@@ -140,12 +140,12 @@ struct DisplayBrightnessView: View {
             
             // MARK: Night Shift
             Section {
-                CustomNavigationLink("BLUE_LIGHT_REDUCTION".localize(table: table), status: "OFF".localize(table: table), destination: EmptyView())
+                SettingsLink("BLUE_LIGHT_REDUCTION".localize(table: table), status: "OFF".localize(table: table), destination: EmptyView())
             }
             
             // MARK: Auto-Lock
             Section {
-                CustomNavigationLink("AUTOLOCK".localize(table: table), status: autoLockDuration.localize(table: table), destination: SelectOptionList("AUTOLOCK", options: UIDevice.iPhone ? phoneOptions : tabletOptions, selectedBinding: $autoLockDuration, table: "Display"))
+                SettingsLink("AUTOLOCK".localize(table: table), status: autoLockDuration.localize(table: table), destination: SelectOptionList("AUTOLOCK", options: UIDevice.iPhone ? phoneOptions : tabletOptions, selectedBinding: $autoLockDuration, table: "Display"))
                     .disabled(lowPowerMode)
                 // Raise to Wake
                 if UIDevice.iPhone {
@@ -169,7 +169,7 @@ struct DisplayBrightnessView: View {
             if UIDevice.AlwaysOnDisplayCapability {
                 // MARK: Always-On
                 Section {
-                    CustomNavigationLink("ALWAYS_ON_DISPLAY".localize(table: table), status: "ALWAYS_ON_ENABLED".localize(table: table), destination: EmptyView())
+                    SettingsLink("ALWAYS_ON_DISPLAY".localize(table: table), status: "ALWAYS_ON_ENABLED".localize(table: table), destination: EmptyView())
                 } footer: {
                     Text("ALWAYS_ON_DESCRIPTION", tableName: table)
                 }
@@ -177,7 +177,7 @@ struct DisplayBrightnessView: View {
             
             // MARK: Display
             Section {
-                CustomNavigationLink("VIEW".localize(table: table), status: "DEFAULT".localize(table: "Accessibility"), destination: EmptyView())
+                SettingsLink("VIEW".localize(table: table), status: "DEFAULT".localize(table: "Accessibility"), destination: EmptyView())
             } header: {
                 Text("DISPLAY_ONLY_TITLE", tableName: "Accessibility")
             } footer: {

@@ -27,16 +27,16 @@ struct CalendarView: View {
             PermissionsView(appName: "CalendarSettingsPlacard_Calendar".localize(table: table), cellular: false, location: false, notifications: false, cellularEnabled: .constant(false))
             
             Section {
-                CustomNavigationLink("Time Zone Override".localize(table: table), status: "Off".localize(table: table), destination: EmptyView())
-                CustomNavigationLink("Alternate Calendars".localize(table: table), status: "Alternate Calendar Off".localize(table: table), destination: EmptyView())
+                SettingsLink("Time Zone Override".localize(table: table), status: "Off".localize(table: table), destination: EmptyView())
+                SettingsLink("Alternate Calendars".localize(table: table), status: "Alternate Calendar Off".localize(table: table), destination: EmptyView())
                 Toggle("Week Numbers".localize(table: table), isOn: $weekNumbersEnabled)
                 Toggle("Week View Starts On Today".localize(table: table), isOn: $weekViewStartsTodayEnabled)
                 Toggle("Show Invitee Declines".localize(table: table), isOn: $showInviteeDeclinesEnabled)
                 if !UIDevice.IsSimulator {
-                    CustomNavigationLink("Sync Specifier Name".localize(table: table), status: "No Limit".localize(table: table), destination: EmptyView())
+                    SettingsLink("Sync Specifier Name".localize(table: table), status: "No Limit".localize(table: table), destination: EmptyView())
                 }
                 NavigationLink("Default Alert Times".localize(table: table)) {}
-                CustomNavigationLink("Duration for New Events".localize(table: table), status: "1 hour", destination: EmptyView())
+                SettingsLink("Duration for New Events".localize(table: table), status: "1 hour", destination: EmptyView())
                 NavigationLink("Start Week On".localize(table: table)) {}
                 //CustomNavigationLink("Default Calendar", status: "Personal", destination: EmptyView())
                 Toggle("Location Suggestions".localize(table: table), isOn: $locationSuggestionsEnabled)

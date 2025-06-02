@@ -36,13 +36,13 @@ struct MessagesView: View {
             }
             
             Section {
-                CustomNavigationLink("SHARE_NAME_AND_PHOTO".localize(table: table), status: "OFF".localize(table: table), destination: EmptyView())
+                SettingsLink("SHARE_NAME_AND_PHOTO".localize(table: table), status: "OFF".localize(table: table), destination: EmptyView())
             } footer: {
                 Text("NAME_AND_PHOTO_SHARING_NOT_SHARING_FOOTER", tableName: msgTable)
             }
             
             Section {
-                CustomNavigationLink("SHARED_WITH_YOU".localize(table: table), status: "ON".localize(table: table), destination: EmptyView())
+                SettingsLink("SHARED_WITH_YOU".localize(table: table), status: "ON".localize(table: table), destination: EmptyView())
             } footer: {
                 Text("SHARED_WITH_YOU_GROUP_DESCRIPTION", tableName: msgTable)
             }
@@ -61,7 +61,7 @@ struct MessagesView: View {
             }
             
             Section("MESSAGE_HISTORY".localize(table: msgTable)) {
-                CustomNavigationLink("KEEP_MESSAGES".localize(table: msgTable), status: "FOREVER".localize(table: table), destination: EmptyView())
+                SettingsLink("KEEP_MESSAGES".localize(table: msgTable), status: "FOREVER".localize(table: table), destination: EmptyView())
             }
             
             Section {

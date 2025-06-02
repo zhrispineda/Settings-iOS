@@ -14,9 +14,9 @@ struct AppInstallationsPurchasesView: View {
     var body: some View {
         CustomList(title: "AppsInstallationsAndPurchasesSpecifierName".localize(table: table), topPadding: true) {
             Section {
-                CustomNavigationLink("InstallingAppsSpecifierName".localize(table: table), status: "Allow".localize(table: table), destination: SelectOptionList("InstallingAppsSpecifierName", table: table))
-                CustomNavigationLink("InstallingUIAppsSpecifierName".localize(table: table), status: "Allow".localize(table: table), destination: SelectOptionList("InstallingUIAppsSpecifierName", table: table))
-                CustomNavigationLink("InstallingMarketplaceAppsSpecifierName".localize(table: table), status: "Allow".localize(table: table), destination: SelectOptionList("InstallingMarketplaceAppsSpecifierName", table: table))
+                SettingsLink("InstallingAppsSpecifierName".localize(table: table), status: "Allow".localize(table: table), destination: SelectOptionList("InstallingAppsSpecifierName", table: table))
+                SettingsLink("InstallingUIAppsSpecifierName".localize(table: table), status: "Allow".localize(table: table), destination: SelectOptionList("InstallingUIAppsSpecifierName", table: table))
+                SettingsLink("InstallingMarketplaceAppsSpecifierName".localize(table: table), status: "Allow".localize(table: table), destination: SelectOptionList("InstallingMarketplaceAppsSpecifierName", table: table))
             } header: {
                 Text("AppInstallationsLabel", tableName: table)
             } footer: {
@@ -24,14 +24,14 @@ struct AppInstallationsPurchasesView: View {
             }
             
             Section {
-                CustomNavigationLink("IAPSpecifierName".localize(table: table), status: "Allow".localize(table: table), destination: SelectOptionList("IAPSpecifierName", table: table))
-                CustomNavigationLink("RequirePasswordLabel".localize(table: table), status: "DontRequireSpecifierName".localize(table: table), destination: SelectOptionList("RequirePasswordLabel", options: ["AlwaysRequireSpecifierName", "DontRequireSpecifierName"], selected: "DontRequireSpecifierName", table: table))
+                SettingsLink("IAPSpecifierName".localize(table: table), status: "Allow".localize(table: table), destination: SelectOptionList("IAPSpecifierName", table: table))
+                SettingsLink("RequirePasswordLabel".localize(table: table), status: "DontRequireSpecifierName".localize(table: table), destination: SelectOptionList("RequirePasswordLabel", options: ["AlwaysRequireSpecifierName", "DontRequireSpecifierName"], selected: "DontRequireSpecifierName", table: table))
             } header: {
                 Text("PurchasesLabel", tableName: table)
             }
             
             Section {
-                CustomNavigationLink("DeletingAppsSpecifierName".localize(table: table), status: "Allow".localize(table: table), destination: SelectOptionList("DeletingAppsSpecifierName", table: table))
+                SettingsLink("DeletingAppsSpecifierName".localize(table: table), status: "Allow".localize(table: table), destination: SelectOptionList("DeletingAppsSpecifierName", table: table))
             } header: {
                 Text("AppManagementLabel", tableName: table)
             }
