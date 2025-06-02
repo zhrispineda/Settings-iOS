@@ -20,6 +20,7 @@ struct OtherNetworkView: View {
     var body: some View {
         NavigationStack {
             List {
+                // Name
                 Section {
                     HStack {
                         Text("kWFLocOtherNetworkNameTitle", tableName: table)
@@ -35,6 +36,7 @@ struct OtherNetworkView: View {
                     setNavigationPrompt()
                 }
                 
+                // Security + Password/Username
                 Section {
                     CustomNavigationLink("kWFLocOtherNetworkSecurityTitle".localize(table: table), status: security.localize(table: table), destination: SecurityView(security: $security))
                     if security.contains("Enterprise") {
@@ -57,6 +59,7 @@ struct OtherNetworkView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
+                    // Cancel
                     Button {
                         dismiss()
                     } label: {
@@ -65,12 +68,13 @@ struct OtherNetworkView: View {
                     }
                 }
                 ToolbarItem(placement: .topBarTrailing) {
+                    // Join
                     Button {} label: {
                         Text("kWFLocOtherNetworksJoinButton", tableName: table)
                             .fontWeight(.semibold)
                             .foregroundStyle(Color.accentColor)
                     }
-                    .disabled(networkName.count < 1 || (password.count < 8 && username.isEmpty) || username.count < 1 && password.count < 1)
+                    .disabled(security != "kWFLocSecurityNoneTitle" && (networkName.count < 1 || (password.count < 8 && username.isEmpty) || username.count < 1 && password.count < 1))
                 }
             }
         }
@@ -94,7 +98,8 @@ struct OtherNetworkView: View {
     private func getPresentedViewController(from viewController: UIViewController) -> UIViewController? {
         var currentVC = viewController
         while let presentedVC = currentVC.presentedViewController {
-            currentVC = presentedVC // Ensures the selected view controller is from OtherNetworkView (top view) when presented as a popover
+            // Ensure the selected view controller is from OtherNetworkView (top view) when presented as a popover
+            currentVC = presentedVC
         }
         return currentVC
     }

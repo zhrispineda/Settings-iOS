@@ -29,11 +29,7 @@ struct MonospacedLabel: View {
     }
     
     var body: some View {
-        HStack {
-            Text(label)
-            
-            Spacer()
-            
+        LabeledContent(label) {
             HStack(spacing: 0) {
                 ForEach(Array(value.enumerated()), id: \.offset) { _, character in
                     let char = String(character)
@@ -46,7 +42,6 @@ struct MonospacedLabel: View {
                     }
                 }
             }
-            .foregroundStyle(.secondary)
         }
     }
 }
