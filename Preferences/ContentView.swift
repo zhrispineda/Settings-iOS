@@ -236,7 +236,7 @@ struct ContentView: View {
                                 route.destination()
                             }
                             .navigationTitle("Settings")
-                            .searchable(text: $searchText, isPresented: $searchFocused, placement: .navigationBarDrawer(displayMode: .automatic))
+                            .searchable(text: $searchText, isPresented: $searchFocused, placement: .automatic)
                             .overlay {
                                 if searchFocused {
                                     GeometryReader { geo in
