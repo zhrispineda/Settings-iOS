@@ -17,6 +17,7 @@
 		8309893A2C44AA9C00535A8F /* UIDeviceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830989392C44AA9C00535A8F /* UIDeviceExtensions.swift */; };
 		830A87D02DA5895600789C20 /* BundleControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830A87CF2DA5895600789C20 /* BundleControllerView.swift */; };
 		830A87DA2DA58C3900789C20 /* ActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830A87D92DA58C3900789C20 /* ActionButtonView.swift */; };
+		830AE16A2DF7D5D50058C73A /* settings.icon in Resources */ = {isa = PBXBuildFile; fileRef = 830AE1692DF7D5D50058C73A /* settings.icon */; };
 		830CFAC12C990DDA00733411 /* KeyboardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830CFAC02C990DDA00733411 /* KeyboardDetailView.swift */; };
 		830DA8022B9BE17B001EE76F /* ParentGuardianSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830DA8012B9BE17B001EE76F /* ParentGuardianSignInView.swift */; };
 		830F2B302CD97A05006F7F22 /* MessagesSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 830F2B2F2CD97A05006F7F22 /* MessagesSettings.xcstrings */; };
@@ -346,6 +347,7 @@
 		830989392C44AA9C00535A8F /* UIDeviceExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtensions.swift; sourceTree = "<group>"; };
 		830A87CF2DA5895600789C20 /* BundleControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleControllerView.swift; sourceTree = "<group>"; };
 		830A87D92DA58C3900789C20 /* ActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonView.swift; sourceTree = "<group>"; };
+		830AE1692DF7D5D50058C73A /* settings.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = settings.icon; sourceTree = "<group>"; };
 		830CFAC02C990DDA00733411 /* KeyboardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardDetailView.swift; sourceTree = "<group>"; };
 		830DA8012B9BE17B001EE76F /* ParentGuardianSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentGuardianSignInView.swift; sourceTree = "<group>"; };
 		830F2B2F2CD97A05006F7F22 /* MessagesSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = MessagesSettings.xcstrings; sourceTree = "<group>"; };
@@ -888,6 +890,7 @@
 			children = (
 				83012BD62BFE516A00BF431C /* Assets */,
 				83B893C12B8FDD94005705A3 /* README.md */,
+				830AE1692DF7D5D50058C73A /* settings.icon */,
 				833F0ACE2B744D180036EAD2 /* Preferences */,
 				83937B7F2D8230A20049AB0E /* SettingsTopLevelPanesRenderTests */,
 				83937B922D8235310049AB0E /* SettingsTests */,
@@ -1717,6 +1720,7 @@
 				83F77D7C2CD3F9740026B1AC /* ContactlessAndCredentialSettings_Localizable.xcstrings in Resources */,
 				83FE80032D2363B900F065EF /* Accessibility-D93.xcstrings in Resources */,
 				834A15082CD85B10004A0025 /* MobileCalSettings.xcstrings in Resources */,
+				830AE16A2DF7D5D50058C73A /* settings.icon in Resources */,
 				83A915462CE1280D00F718AA /* SpotlightSettings.xcstrings in Resources */,
 				837BCF3C2CD30AF2009B1E33 /* PasscodeLock-DimpleKey.xcstrings in Resources */,
 				834CAE482D1DE94000F2E069 /* AirDropSettings.xcstrings in Resources */,
@@ -2192,7 +2196,7 @@
 		833F0ADB2B744D190036EAD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = settings;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Preferences/Preferences.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -2239,7 +2243,7 @@
 		833F0ADC2B744D190036EAD2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = settings;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Preferences/Preferences.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
