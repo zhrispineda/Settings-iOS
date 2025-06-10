@@ -26,17 +26,13 @@ struct CustomList<Content: View>: View {
     
     var body: some View {
         GeometryReader { geo in
-            ZStack {
-                Color(UIColor.systemGroupedBackground)
-                    .ignoresSafeArea()
-                List {
-                    content
-                }
-                .contentMargins(.horizontal, UIDevice.iPhone || geo.size.width < 600 ? nil : (isLandscape ? 175 : 50), for: .scrollContent)
-                .navigationTitle(LocalizedStringKey(title))
-                .navigationBarTitleDisplayMode(.inline)
-                .padding(.top, topPadding ? 0 : -19)
+            List {
+                content
             }
+            //.contentMargins(.horizontal, UIDevice.iPhone || geo.size.width < 600 ? nil : (isLandscape ? 175 : 50), for: .scrollContent)
+            .navigationTitle(LocalizedStringKey(title))
+            .navigationBarTitleDisplayMode(.inline)
+            .padding(.top, topPadding ? 0 : -19)
             .onAppear {
                 isLandscape = geo.size.width > geo.size.height
                 SettingsLogger.info("Loaded view: \(title.isEmpty ? "NO TITLE" : title)")

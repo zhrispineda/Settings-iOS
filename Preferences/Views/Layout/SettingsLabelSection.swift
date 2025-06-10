@@ -37,8 +37,11 @@ struct SettingsLabelSection: View {
                     } label: {
                         SLabel(setting.id, color: setting.color, icon: setting.icon)
                     }
-                    .foregroundStyle(.primary)
-                    .listRowBackground(selection == setting.type ? (UIDevice.IsSimulator ? Color.blue : .selected) : nil)
+                    .foregroundStyle(selection == setting.type ? .blue : .primary)
+                    .listRowBackground(
+                        Color(selection == setting.type ? (UIDevice.IsSimulator ? .blue : .selected) : .clear)
+                            .clipShape(RoundedRectangle(cornerRadius: 30, style: .circular))
+                    )
                 }
             }
         }
