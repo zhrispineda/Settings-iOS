@@ -25,7 +25,7 @@ struct ShortcutsView: View {
             Section {
                 Toggle("Private Sharing".localize(table: table), isOn: $privateSharingEnabled)
             } footer: {
-                Text("Allow receiving shortcuts directly from people in your contacts. Apple cannot verify the authenticity of shortcuts shared privately.", tableName: table) + Text(" [\("About Shortcuts Sharing & Privacy…".localize(table: table))](pref://)")
+                Text("\("Allow receiving shortcuts directly from people in your contacts. Apple cannot verify the authenticity of shortcuts shared privately.".localize(table: table)) [\("About Shortcuts Sharing & Privacy…".localize(table: table))](pref://)", tableName: table)
             }
             
             // Advanced

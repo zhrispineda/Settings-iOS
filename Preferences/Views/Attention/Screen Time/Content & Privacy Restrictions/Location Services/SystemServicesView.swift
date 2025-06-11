@@ -76,10 +76,10 @@ struct SystemServicesView: View {
                 Text("PRODUCT_IMPROVEMENT", tableName: table)
             } footer: {
                 VStack(alignment: .leading) {
-                    Text(.init("POLARIS_FOOTER".localize(table: table, "[\("LEARN_MORE".localize(table: table))](pref://)"))) + Text("\n")
+                    Text(.init("\("POLARIS_FOOTER".localize(table: table, "[\("LEARN_MORE".localize(table: table))](pref://)"))\n"))
                     
                     Group {
-                        Text("GENERAL_EXPLANATION_ITEM", tableName: table) + Text("\n")
+                        Text("\("GENERAL_EXPLANATION_ITEM".localize(table: table))\n")
                         HStack(spacing: 15) {
                             Image(systemName: "location.fill")
                                 .foregroundStyle(.purple)

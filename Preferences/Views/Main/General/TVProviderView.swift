@@ -32,7 +32,7 @@ struct TVProviderView: View {
                     Button("REGIONS_PICKER_OTHER_REGIONS_ROW_TITLE".localize(table: table)) {}
                         .foregroundStyle(.primary)
                 } footer: {
-                    Text("IDENTITY_PROVIDER_PICKER_SETTINGS_FOOTER", tableName: table) + Text("\n\n[\("BUTTON_TITLE".localize(table: "TVProvider"))](#)")
+                    Text("\("IDENTITY_PROVIDER_PICKER_SETTINGS_FOOTER".localize(table: table))\n\n[\("BUTTON_TITLE".localize(table: "About TV Provider & Privacy…"))](#)")
                 }
             }
             .searchable(text: $searchable, placement: .toolbar)

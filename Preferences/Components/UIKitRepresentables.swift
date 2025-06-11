@@ -195,7 +195,7 @@ struct OnBoardingKitView: UIViewControllerRepresentable {
             splashController.setValue(showLinkToPrivacyGateway, forKey: "showLinkToPrivacyGateway")
             splashController.setValue(showsLinkToUnifiedAbout, forKey: "showsLinkToUnifiedAbout")
             
-            let dismissButton = UIBarButtonItem(title: "Done", style: .done, target: splashController, action: #selector(UIViewController.dismissView))
+            let dismissButton = UIBarButtonItem(title: "Done", style: .prominent, target: splashController, action: #selector(UIViewController.dismissView))
             splashController.navigationItem.rightBarButtonItem = dismissButton
             
             let navController = UINavigationController(rootViewController: splashController)

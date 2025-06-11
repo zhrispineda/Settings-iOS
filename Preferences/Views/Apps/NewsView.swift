@@ -40,7 +40,7 @@ struct NewsView: View {
             } header: {
                 Text("GAME_CENTER_GROUP_TITLE", tableName: table)
             } footer: {
-                Text("GAME_CENTER_ENABLED_DESCRIPTION", tableName: table) + Text(" [\("GAME_CENTER_SETTINGS_GROUP_FOOTER_LINK".localize(table: table))](#)")
+                Text("\("GAME_CENTER_ENABLED_DESCRIPTION".localize(table: table)) [\("GAME_CENTER_SETTINGS_GROUP_FOOTER_LINK".localize(table: table))](#)")
             }
             
             Section {

@@ -34,13 +34,6 @@ struct ContentView: View {
                     }
                     .foregroundStyle(.primary)
                     
-                    if siriEnabled && UIDevice.IntelligenceCapability {
-                        // MARK: TipKit Section
-                        Section {
-                            ImageCreationTipView()
-                        }
-                    }
-                    
                     if !followUpDismissed && !UIDevice.IsSimulator {
                         Section {
                             Button {
@@ -154,13 +147,6 @@ struct ContentView: View {
                                 SelectSignInOptionView()
                                     .interactiveDismissDisabled()
                             }
-                        }
-                    }
-                    
-                    if siriEnabled && UIDevice.IntelligenceCapability {
-                        // MARK: TipKit Section
-                        Section {
-                            ImageCreationTipView()
                         }
                     }
                     

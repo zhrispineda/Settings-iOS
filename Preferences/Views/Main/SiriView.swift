@@ -10,7 +10,6 @@ import ContactsUI
 import TipKit
 
 struct SiriView: View {
-    // Variables
     @Environment(\.colorScheme) private var colorScheme
     let apps = ["Calendar", "Contacts", "Files", "Health", "Maps", "Messages", "News", "Photos", "Reminders", "Safari", "Settings", "Wallet", "Watch"]
     
@@ -178,7 +177,7 @@ struct SiriView: View {
             // MARK: Apple Intelligence Privacy Footer
             Section {} footer: {
                 if UIDevice.IntelligenceCapability {
-                    Text("GM_PRIVACY_FOOTER_TEXT", tableName: gmTable) + Text(" [\("GM_PRIVACY_FOOTER_LINK_TEXT".localize(table: gmTable))](#)")
+                    Text("\("GM_PRIVACY_FOOTER_TEXT".localize(table: gmTable)) [\("GM_PRIVACY_FOOTER_LINK_TEXT".localize(table: gmTable))](#)")
                 }
             }
         }

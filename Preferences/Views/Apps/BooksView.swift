@@ -193,7 +193,7 @@ struct BooksView: View {
                     Text("Reset Identifier", tableName: table)
                 }
             } footer: {
-                Text("Reset the identifier used to report aggregate app usage statistics to Apple.", tableName: table) + Text(" [\("BUTTON_TITLE".localize(table: "AppleBooks"))](pref://)")
+                Text("\("Reset the identifier used to report aggregate app usage statistics to Apple.".localize(table: table)) [\("See how your data is managed…")](pref://)")
             }
             
             NavigationLink("Acknowledgements".localize(table: table)) {

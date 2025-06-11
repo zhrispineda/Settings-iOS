@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct LocationServicesView: View {
-    // Variables
     @State private var locationServicesEnabled = true
     @State private var showingSheet = false
     let table = "Location Services"
@@ -20,12 +19,8 @@ struct LocationServicesView: View {
                 Toggle("LOCATION_SERVICES".localize(table: table), isOn: $locationServicesEnabled)
                 NavigationLink("PRIVACY_ALERTS".localize(table: table), destination: LocationAlertsView())
             } footer: {
-                Text(UIDevice.iPhone ? "DESCRIPTION_GPS_WIFI" : "DESCRIPTION_NOGPS_WIFI", tableName: table) + Text(" [\("ABOUT_LOCATION_AND_PRIVACY".localize(table: table))](pref://)")
+                Text("\(UIDevice.iPhone ? "DESCRIPTION_GPS_WIFI".localize(table: table) : "DESCRIPTION_NOGPS_WIFI".localize(table: table)) [\("ABOUT_LOCATION_AND_PRIVACY".localize(table: table))](pref://)")
             }
-            
-//            Section {
-//                NavigationLink("Share My Location") {}
-//            }
             
             if locationServicesEnabled {
                 Section {
@@ -42,7 +37,7 @@ struct LocationServicesView: View {
                     }
                 } footer: {
                     VStack(alignment: .leading) {
-                        Text("GENERAL_EXPLANATION_ITEM", tableName: table) + Text("\n")
+                        Text("\("GENERAL_EXPLANATION_ITEM".localize(table: table))\n")
                         HStack(spacing: 15) {
                             Image(systemName: "location.fill")
                                 .foregroundStyle(.purple)

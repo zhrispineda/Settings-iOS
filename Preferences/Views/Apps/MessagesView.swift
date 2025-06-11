@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct MessagesView: View {
-    // Variables
     @State private var messagesEnabled = false
     @State private var showContactPhoto = true
     @State private var mmsMessaging = true
@@ -28,7 +27,7 @@ struct MessagesView: View {
             Section {
                 Toggle("IMESSAGE".localize(table: table), isOn: $messagesEnabled)
             } footer: {
-                Text("MESSAGES_WIRELESS_DATA_DESCRIPTION", tableName: table) + Text("[\("MESSAGE_FACETIME_PRIVACY_BUTTON".localize(table: table))...](pref://)")
+                Text("\("MESSAGES_WIRELESS_DATA_DESCRIPTION".localize(table: table)) [\("MESSAGE_FACETIME_PRIVACY_BUTTON".localize(table: table))...](pref://)")
             }
             
             Section {

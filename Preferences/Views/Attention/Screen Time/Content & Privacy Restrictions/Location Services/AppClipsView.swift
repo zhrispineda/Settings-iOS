@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct AppClipsView: View {
-    // Variables
     @State private var confirmLocationEnabled = false
     var completeView = true
     var permission = String()
@@ -24,15 +23,16 @@ struct AppClipsView: View {
             } footer: {
                 VStack(alignment: .leading) {
                     if completeView {
-                        Text("CONFIRM_LOCATION_FOOTER", tableName: table) + Text("\n\n")
+                        Text("\("CONFIRM_LOCATION_FOOTER".localize(table: table))\n\n")
                     }
                     if permission == "MicrophoneSpecifierName" {
-                        Text("MICROPHONE_CLIPS_FOOTER", tableName: table) + Text("\n")
+                        Text("\("MICROPHONE_CLIPS_FOOTER".localize(table: table))\n")
                     } else if permission == "BluetoothSharingSpecifierName" {
-                        Text("BT_PERIPHERAL_CLIPS_FOOTER", tableName: table) + Text("\n")
+                        Text("\("BT_PERIPHERAL_CLIPS_FOOTER".localize(table: table))\n")
                     } else {
-                        Text("GENERAL_EXPLANATION_CLIPS_ITEM", tableName: locTable) + Text("\n")
+                        Text("\("GENERAL_EXPLANATION_CLIPS_ITEM".localize(table: locTable))\n")
                     }
+                    
                     if completeView {
                         HStack(spacing: 15) {
                             Image(systemName: "location.fill")

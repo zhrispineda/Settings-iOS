@@ -66,7 +66,7 @@ struct WalletView: View {
                     Text("SETTINGS_PAYMENT_CARDS_GROUP", tableName: payTable)
                 } footer: {
                     if !appleCashEnabled {
-                        Text(UIDevice.PearlIDCapability ? UIDevice.iPhone ? "SETTINGS_ABOUT_FOOTER_FACEID_IPHONE" : "SETTINGS_ABOUT_FOOTER_FACEID_IPAD" : UIDevice.iPad ? "SETTINGS_ABOUT_FOOTER_IPAD" : "SETTINGS_ABOUT_FOOTER_IPHONE", tableName: payTable) + Text(" [\("APPLE_PAY_PRIVACY".localize(table: walletTable))](#)")
+                        Text(.init("\(UIDevice.PearlIDCapability ? UIDevice.iPhone ? "SETTINGS_ABOUT_FOOTER_FACEID_IPHONE".localize(table: payTable) : "SETTINGS_ABOUT_FOOTER_FACEID_IPAD".localize(table: payTable) : UIDevice.iPad ? "SETTINGS_ABOUT_FOOTER_IPAD".localize(table: payTable) : "SETTINGS_ABOUT_FOOTER_IPHONE".localize(table: payTable)) [\("APPLE_PAY_PRIVACY".localize(table: walletTable))](#)"))
                     }
                 }
                 
@@ -98,7 +98,7 @@ struct WalletView: View {
                     } header: {
                         Text("SETTINGS_TRANSACTION_DEFAULTS_GROUP", tableName: payTable)
                     } footer: {
-                        Text("SETTINGS_TRANSACTION_DEFAULTS_FOOTER", tableName: payTable) + Text(" [\("APPLE_PAY_PRIVACY".localize(table: walletTable))](#)")
+                        Text("\("SETTINGS_TRANSACTION_DEFAULTS_FOOTER".localize(table: payTable)) [\("APPLE_PAY_PRIVACY".localize(table: walletTable))](#)")
                     }
                 }
             }
