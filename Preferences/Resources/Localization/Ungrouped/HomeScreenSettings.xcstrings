@@ -1,3688 +1,3425 @@
 {
-  "sourceLanguage": "en",
-  "strings": {
-    "": {
-      "extractionState": "manual",
-      "localizations": {
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": ""
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Add to Home Screen" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إضافة إلى الصفحة الرئيسية"
           }
         },
-        "he": {
-          "stringUnit": {
-            "state": "translated",
-            "value": ""
+        "bg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добави към Начален екран"
           }
         },
-        "id": {
-          "stringUnit": {
-            "state": "translated",
-            "value": ""
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Afegeix a la pantalla d’inici"
           }
         },
-        "fi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": ""
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přidat na plochu"
           }
         },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": ""
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Føj til hjemmeskærm"
           }
         },
-        "nl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": ""
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zum Home-Bildschirm"
           }
         },
-        "hu": {
-          "stringUnit": {
-            "state": "translated",
-            "value": ""
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Προσθήκη στην οθόνη Αφετηρίας"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": ""
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add to Home Screen"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": ""
+        "en_AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add to Home Screen"
           }
         },
-        "es_419": {
-          "stringUnit": {
-            "state": "translated",
-            "value": ""
+        "en_GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add to Home Screen"
           }
         },
-        "el": {
-          "stringUnit": {
-            "state": "translated",
-            "value": ""
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Añadir a pantalla de inicio"
           }
         },
-        "fr_CA": {
-          "stringUnit": {
-            "state": "translated",
-            "value": ""
+        "es_419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Agregar a pantalla de inicio"
           }
         },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": ""
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lisää Koti-valikkoon"
           }
         },
-        "zh_TW": {
-          "stringUnit": {
-            "state": "translated",
-            "value": ""
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sur l’écran d’accueil"
           }
         },
-        "zh_HK": {
-          "stringUnit": {
-            "state": "translated",
-            "value": ""
+        "fr_CA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sur l’écran d’accueil"
           }
         },
-        "sv": {
-          "stringUnit": {
-            "state": "translated",
-            "value": ""
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הוספה למסך הבית"
           }
         },
-        "no": {
-          "stringUnit": {
-            "state": "translated",
-            "value": ""
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "होम स्क्रीन पर जोड़ें"
           }
         },
-        "pl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": ""
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dodaj na početni zaslon"
           }
         },
-        "da": {
-          "stringUnit": {
-            "state": "translated",
-            "value": ""
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hozzáadás a Főképernyőhöz"
           }
         },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": ""
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tambah ke Layar Utama"
           }
         },
-        "ca": {
-          "stringUnit": {
-            "state": "translated",
-            "value": ""
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungi alla schermata Home"
           }
         },
-        "hi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": ""
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ホーム画面に追加"
           }
         },
-        "th": {
-          "stringUnit": {
-            "state": "translated",
-            "value": ""
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Басты экранға қосу"
           }
         },
-        "zh_CN": {
-          "stringUnit": {
-            "state": "translated",
-            "value": ""
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "홈 화면에 추가"
           }
         },
-        "en_GB": {
-          "stringUnit": {
-            "state": "translated",
-            "value": ""
+        "lt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Įtraukti į pradžios ekraną"
           }
         },
-        "lt": {
-          "stringUnit": {
-            "state": "translated",
-            "value": ""
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skrin Utama"
           }
         },
-        "ms": {
-          "stringUnit": {
-            "state": "translated",
-            "value": ""
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Legg til på Hjem-skjerm"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": ""
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zet op beginscherm"
           }
         },
-        "sk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": ""
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Do ekranu głównego"
           }
         },
-        "bg": {
-          "stringUnit": {
-            "state": "translated",
-            "value": ""
+        "pt_BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adicionar à Tela de Início"
           }
         },
-        "en_AU": {
-          "stringUnit": {
-            "state": "translated",
-            "value": ""
+        "pt_PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adicionar ao ecrã principal"
           }
         },
-        "sl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": ""
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adăugare la ecranul principal"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": ""
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добавить на экран «Домой»"
           }
         },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": ""
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pridať na plochu"
           }
         },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": ""
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dodaj na domači zaslon"
           }
         },
-        "pt_BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": ""
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lägg till på hemskärmen"
           }
         },
-        "uk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": ""
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เพิ่มไปยังหน้าจอโฮม"
           }
         },
-        "ro": {
-          "stringUnit": {
-            "state": "translated",
-            "value": ""
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ana Ekrana Ekle"
           }
         },
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": ""
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "На Початковий екран"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": ""
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thêm vào Màn hình chính"
           }
         },
-        "hr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": ""
+        "zh_CN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "添加到主屏幕"
           }
         },
-        "pt_PT": {
-          "stringUnit": {
-            "state": "translated",
-            "value": ""
+        "zh_HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "加至主畫面"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": ""
+        "zh_TW" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "加入主畫面"
           }
         }
       }
     },
-    "Use Large App Icons": {
-      "extractionState": "manual",
-      "localizations": {
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "큰 앱 아이콘 사용"
+    "App Library Only" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مكتبة التطبيقات فقط"
           }
         },
-        "he": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "שימוש באייקונים גדולים של יישומים"
+        "bg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Само Библиотека с приложения"
           }
         },
-        "id": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Gunakan Ikon App Besar"
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Només a la biblioteca d’apps"
           }
         },
-        "fi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Käytä isoja appikuvakkeita"
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ponechat jen v knihovně aplikací"
           }
         },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Büyük Uygulama Simgeleri Kullan"
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kun appbibliotek"
           }
         },
-        "nl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Gebruik grote appsymbolen"
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nur App-Mediathek"
           }
         },
-        "hu": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Nagy méretű appikonok használata"
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Βιβλιοθήκη εφαρμογών μόνο"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Крупные значки приложений"
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "App Library Only"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Utilizza icone app grandi"
+        "en_AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "App Library Only"
           }
         },
-        "es_419": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Usar íconos grandes de apps"
+        "en_GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "App Library Only"
           }
         },
-        "el": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Χρήση μεγάλων εικονιδίων εφαρμογών"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Solo en la biblioteca de apps"
           }
         },
-        "fr_CA": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Utiliser de grandes icônes d’app"
+        "es_419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sólo biblioteca de apps"
           }
         },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "استخدام أيقونات كبيرة للتطبيقات"
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vain appikirjasto"
           }
         },
-        "zh_TW": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "使用大型App圖像"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bibliothèque d’apps uniquement"
           }
         },
-        "zh_HK": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "使用大App圖像"
+        "fr_CA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bibliothèque d’apps uniquement"
           }
         },
-        "sv": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Använd stora appsymboler"
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ספריית היישומים בלבד"
           }
         },
-        "no": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Bruk store appsymboler"
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "केवल ऐप लाइब्रेरी"
           }
         },
-        "pl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Używaj dużych ikon aplikacji"
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Samo u medijateci aplikacija"
           }
         },
-        "da": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Brug store appsymboler"
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Csak az appkönyvtár"
           }
         },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Use Large App Icons"
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hanya Perpustakaan App"
           }
         },
-        "ca": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Utilitza icones d’apps grans"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Solo libreria app"
           }
         },
-        "hi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "बड़े ऐप आइकॉन इस्तेमाल करें"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アプリライブラリのみ"
           }
         },
-        "th": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ใช้ไอคอนขนาดใหญ่"
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тек қолданбалар каталогі"
           }
         },
-        "zh_CN": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "使用大App图标"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "앱 보관함에만"
           }
         },
-        "en_GB": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Use Large App Icons"
+        "lt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rodyti tik programų bibliotekoje"
           }
         },
-        "lt": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Didelės programų piktogramos"
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pustaka App Sahaja"
           }
         },
-        "ms": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Gunakan Ikon App Besar"
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kun i appbibliotek"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Použít velké ikony aplikací"
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alleen appbibliotheek"
           }
         },
-        "sk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Použiť veľké ikony apiek"
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tylko biblioteka aplikacji"
           }
         },
-        "bg": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Използвай големи икони на приложения"
+        "pt_BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apenas à Biblioteca de Apps"
           }
         },
-        "en_AU": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Use Large App Icons"
+        "pt_PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Só na biblioteca de aplicações"
           }
         },
-        "sl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Uporabi velike ikone aplikacij"
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Doar în biblioteca de aplicații"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Große App-Symbole verwenden"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Только библиотека приложений"
           }
         },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sử dụng biểu tượng ứng dụng lớn"
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pridať len do knižnice aplikácií"
           }
         },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Usar iconos de app grandes"
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dodaj samo v knjižnico aplikacij"
           }
         },
-        "pt_BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Usar Ícones Grandes de Apps"
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Endast appbiblioteket"
           }
         },
-        "uk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Використовувати великі іконки програм"
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "คลังแอปเท่านั้น"
           }
         },
-        "ro": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Utilizare pictograme mari aplicații"
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yalnızca Uygulama Arşivi"
           }
         },
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Үлкен қолданба белгішелерін пайдалану"
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Лише бібліотека програм"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Utiliser de grandes icônes d’app"
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chỉ Thư viện ứng dụng"
           }
         },
-        "hr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Koristi velike ikone aplikacija"
+        "zh_CN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "仅App资源库"
           }
         },
-        "pt_PT": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Usar ícones das aplicações grandes"
+        "zh_HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "只限App資料庫"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "大きいアプリアイコンを使用"
+        "zh_TW" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "只加入App資料庫"
           }
         }
       }
     },
-    "Show App Library in Dock": {
-      "extractionState": "manual",
-      "localizations": {
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dock에서 앱 보관함 보기"
+    "Dock" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "شريط الأيقونات"
           }
         },
-        "he": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "הצגת ספריית היישומים ב-Dock"
+        "bg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock"
           }
         },
-        "id": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tampilkan Perpustakaan App di Dock"
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock"
           }
         },
-        "fi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Näytä appikirjasto Dockissa"
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock"
           }
         },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Uygulama Arşivi’ni Dock’ta Göster"
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock"
           }
         },
-        "nl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Toon appbibliotheek in Dock"
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock"
           }
         },
-        "hu": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Appkönyvtár megjelenítése a Dockban"
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Показ библиотеки приложений в Dock"
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mostra libreria app nel Dock"
+        "en_AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock"
           }
         },
-        "es_419": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mostrar biblioteca de apps en el Dock"
+        "en_GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock"
           }
         },
-        "el": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Εμφάνιση της Βιβλιοθήκης εφαρμογών στο Dock"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock"
           }
         },
-        "fr_CA": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Afficher la bibliothèque d’apps dans le Dock"
+        "es_419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock"
           }
         },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "إظهار مكتبة التطبيقات في شريط الأيقونات"
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock"
           }
         },
-        "zh_TW": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "在Dock中顯示App資料庫"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock"
           }
         },
-        "zh_HK": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "在Dock上顯示App資料庫"
+        "fr_CA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock"
           }
         },
-        "sv": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Visa appbiblioteket i Dock"
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "‏Dock"
           }
         },
-        "no": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Vis appbiblioteket i Dock"
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock"
           }
         },
-        "pl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Pokazuj bibliotekę aplikacji w Docku"
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock"
           }
         },
-        "da": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Vis appbibliotek i Dock"
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock"
           }
         },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Show App Library in Dock"
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock"
           }
         },
-        "ca": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mostra la biblioteca d’apps al Dock"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock"
           }
         },
-        "hi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dock में ऐप लाइब्रेरी में दिखाएँ"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock"
           }
         },
-        "th": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "แสดงคลังแอปบน Dock"
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock"
           }
         },
-        "zh_CN": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "在程序坞中显示App资源库"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock"
           }
         },
-        "en_GB": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Show App Library in Dock"
+        "lt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock"
           }
         },
-        "lt": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Rodyti programų biblioteką „Dock“ juostoje"
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock"
           }
         },
-        "ms": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tunjukkan Pustaka App dalam Dock"
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Zobrazit knihovnu aplikací v Docku"
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock"
           }
         },
-        "sk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Zobraziť knižnicu aplikácií v Docku"
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock"
           }
         },
-        "bg": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Покажи Библиотека с приложения в Dock"
+        "pt_BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock"
           }
         },
-        "en_AU": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Show App Library in Dock"
+        "pt_PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock"
           }
         },
-        "sl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Prikaži knjižnico aplikacij v vrstici Dock"
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "App-Mediathek im Dock anzeigen"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock"
           }
         },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Hiển thị Thư viện ứng dụng trong Dock"
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock"
           }
         },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mostrar biblioteca de apps en el Dock"
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock"
           }
         },
-        "pt_BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mostrar Biblioteca de Apps no Dock"
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock"
           }
         },
-        "uk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Показувати Бібліотеку програм на панелі Dock"
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock"
           }
         },
-        "ro": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Afișare bibliotecă de aplicații în Dock"
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock"
           }
         },
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dock панелінде қолданбалар каталогін көрсету"
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Afficher la bibliothèque d’apps dans le Dock"
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock"
           }
         },
-        "hr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Prikaži medijateku aplikacija u Docku"
+        "zh_CN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "程序坞"
           }
         },
-        "pt_PT": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mostrar biblioteca de aplicações na Dock"
+        "zh_HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "アプリライブラリをDockに表示"
+        "zh_TW" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock"
           }
         }
       }
     },
-    "Add to Home Screen": {
-      "extractionState": "manual",
-      "localizations": {
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "홈 화면에 추가"
+    "Home Screen" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الشاشة الرئيسية"
           }
         },
-        "he": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "הוספה למסך הבית"
+        "bg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Начален екран"
           }
         },
-        "id": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tambah ke Layar Utama"
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pantalla d’inici"
           }
         },
-        "fi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Lisää Koti-valikkoon"
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plocha"
           }
         },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ana Ekrana Ekle"
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hjemmeskærm"
           }
         },
-        "nl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Zet op beginscherm"
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Home-Bildschirm"
           }
         },
-        "hu": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Hozzáadás a Főképernyőhöz"
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Οθόνη Αφετηρίας"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Добавить на экран «Домой»"
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Home Screen"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Aggiungi alla schermata Home"
+        "en_AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Home screen"
           }
         },
-        "es_419": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Agregar a pantalla de inicio"
+        "en_GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Home Screen"
           }
         },
-        "el": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Προσθήκη στην οθόνη Αφετηρίας"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pantalla de inicio"
           }
         },
-        "fr_CA": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sur l’écran d’accueil"
+        "es_419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pantalla de inicio"
           }
         },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "إضافة إلى الصفحة الرئيسية"
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Koti-valikko"
           }
         },
-        "zh_TW": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "加入主畫面"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Écran d’accueil"
           }
         },
-        "zh_HK": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "加至主畫面"
+        "fr_CA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Écran d’accueil"
           }
         },
-        "sv": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Lägg till på hemskärmen"
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מסך הבית"
           }
         },
-        "no": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Legg til på Hjem-skjerm"
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "होम स्क्रीन"
           }
         },
-        "pl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Do ekranu głównego"
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Početni zaslon"
           }
         },
-        "da": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Føj til hjemmeskærm"
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Főképernyő"
           }
         },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Add to Home Screen"
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Layar Utama"
           }
         },
-        "ca": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Afegeix a la pantalla d’inici"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schermata Home"
           }
         },
-        "hi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "होम स्क्रीन पर जोड़ें"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ホーム画面"
           }
         },
-        "th": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "เพิ่มไปยังหน้าจอโฮม"
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Басты экран"
           }
         },
-        "zh_CN": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "添加到主屏幕"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "홈 화면"
           }
         },
-        "en_GB": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Add to Home Screen"
+        "lt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pradžios ekranas"
           }
         },
-        "lt": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Įtraukti į pradžios ekraną"
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skrin Utama"
           }
         },
-        "ms": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Skrin Utama"
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hjem-skjerm"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Přidat na plochu"
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beginscherm"
           }
         },
-        "sk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Pridať na plochu"
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ekran główny"
           }
         },
-        "bg": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Добави към Начален екран"
+        "pt_BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tela de Início"
           }
         },
-        "en_AU": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Add to Home Screen"
+        "pt_PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ecrã principal"
           }
         },
-        "sl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dodaj na domači zaslon"
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ecran principal"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Zum Home-Bildschirm"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Экран «Домой»"
           }
         },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Thêm vào Màn hình chính"
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plocha"
           }
         },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Añadir a pantalla de inicio"
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Domači zaslon"
           }
         },
-        "pt_BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Adicionar à Tela de Início"
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hemskärm"
           }
         },
-        "uk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "На Початковий екран"
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "หน้าจอโฮม"
           }
         },
-        "ro": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Adăugare la ecranul principal"
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ana Ekran"
           }
         },
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Басты экранға қосу"
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Початковий екран"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sur l’écran d’accueil"
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Màn hình chính"
           }
         },
-        "hr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dodaj na početni zaslon"
+        "zh_CN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "主屏幕"
           }
         },
-        "pt_PT": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Adicionar ao ecrã principal"
+        "zh_HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "主畫面"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ホーム画面に追加"
+        "zh_TW" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "主畫面"
           }
         }
       }
     },
-    "Notification Badges": {
-      "extractionState": "manual",
-      "localizations": {
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "알림 배지"
+    "Home Screen & App Library" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الشاشة الرئيسية ومكتبة التطبيقات"
           }
         },
-        "he": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "תוויות עדכונים"
+        "bg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Начален екран и библиотека с приложения"
           }
         },
-        "id": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tanda Pemberitahuan"
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pantalla d’inici i biblioteca d’apps"
           }
         },
-        "fi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ilmoitusmerkit"
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plocha a knihovna aplikací"
           }
         },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Bildirim İşaretleri"
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hjemmeskærm & appbibliotek"
           }
         },
-        "nl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Meldingsbadges"
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Home-Bildschirm & App-Mediathek"
           }
         },
-        "hu": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Értesítési jelvények"
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Οθόνη Αφετηρίας και βιβλιοθήκη εφαρμογών"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Значки уведомлений"
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Home Screen & App Library"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Badge notifiche"
+        "en_AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Home Screen & App Library"
           }
         },
-        "es_419": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Contadores de notificaciones"
+        "en_GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Home Screen & App Library"
           }
         },
-        "el": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ταμπέλες γνωστοποιήσεων"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pantalla de inicio y biblioteca de apps"
           }
         },
-        "fr_CA": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Pastilles de notification"
+        "es_419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pantalla de Inicio y biblioteca de apps"
           }
         },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "شارات الإشعارات"
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Koti-valikko ja appikirjasto"
           }
         },
-        "zh_TW": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "通知標記"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Écran d’accueil et bibliothèque d’apps"
           }
         },
-        "zh_HK": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "通知標記"
+        "fr_CA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Écran d’accueil et bibliothèque d’apps"
           }
         },
-        "sv": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Notisbrickor"
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מסך הבית וספריית היישומים"
           }
         },
-        "no": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Varslingsmerker"
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "होम स्क्रीन और ऐप लाइब्रेरी"
           }
         },
-        "pl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Plakietki powiadomień"
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Početni zaslon i medijateka aplikacija"
           }
         },
-        "da": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Notifikationsetiketter"
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Főképernyő és appkönyvtár"
           }
         },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Notification Badges"
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Layar Utama & Perpustakaan App"
           }
         },
-        "ca": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Globus de notificació"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schermata Home e libreria app"
           }
         },
-        "hi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "सूचना बैज"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ホーム画面とアプリライブラリ"
           }
         },
-        "th": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ป้ายกำกับการแจ้งเตือน"
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Басты экран және қолданбалар каталогі"
           }
         },
-        "zh_CN": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "通知标记"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "홈 화면 및 앱 보관함"
           }
         },
-        "en_GB": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Notification Badges"
+        "lt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pradžios ekranas ir programų biblioteka"
           }
         },
-        "lt": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Pranešimų ženkleliai"
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skrin Utama & Pustaka App"
           }
         },
-        "ms": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Lencana Pemberitahuan"
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hjem-skjerm og appbibliotek"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Oznamovací odznaky"
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beginscherm en appbibliotheek"
           }
         },
-        "sk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Odznaky hlásení"
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ekran główny i biblioteka aplikacji"
           }
         },
-        "bg": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Значки за известия"
+        "pt_BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tela de Início e Biblioteca de Apps"
           }
         },
-        "en_AU": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Notification Badges"
+        "pt_PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ecrã principal e biblioteca de aplicações"
           }
         },
-        "sl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Značke obvestil"
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ecran principal și bibliotecă de aplicații"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mitteilungs-Badges"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Экран «Домой» и библиотека приложений"
           }
         },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Biểu tượng thông báo"
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plocha a Knižnica aplikácií"
           }
         },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Globos de notificación"
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Domači zaslon in knjižnica aplikacij"
           }
         },
-        "pt_BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Avisos de Notificações"
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hemskärm och appbibliotek"
           }
         },
-        "uk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Значки сповіщень"
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "หน้าจอโฮมและคลังแอป"
           }
         },
-        "ro": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Insigne de notificare"
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ana Ekran ve Uygulama Arşivi"
           }
         },
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Хабарландыру жапсырмалары"
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Початковий екран і бібліотека програм"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Pastilles de notification"
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Màn hình chính & Thư viện ứng dụng"
           }
         },
-        "hr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Bedževi obavijesti"
+        "zh_CN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "主屏幕与App资源库"
           }
         },
-        "pt_PT": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Emblemas de notificações"
+        "zh_HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "主畫面與App資料庫"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "通知バッジ"
+        "zh_TW" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "主畫面與App資料庫"
           }
         }
       }
     },
-    "Home Screen & App Library": {
-      "extractionState": "manual",
-      "localizations": {
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "홈 화면 및 앱 보관함"
+    "Newly Downloaded Apps" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "التطبيقات التي تم تنزيلها حديثًا"
           }
         },
-        "he": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "מסך הבית וספריית היישומים"
+        "bg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нови изтеглени приложения"
           }
         },
-        "id": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Layar Utama & Perpustakaan App"
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Noves apps descarregades"
           }
         },
-        "fi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Koti-valikko ja appikirjasto"
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nově stažené aplikace"
           }
         },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ana Ekran ve Uygulama Arşivi"
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apps, der er hentet for nylig"
           }
         },
-        "nl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Beginscherm en appbibliotheek"
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kürzlich geladene Apps"
           }
         },
-        "hu": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Főképernyő és appkönyvtár"
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Νεοληφθείσες εφαρμογές"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Экран «Домой» и библиотека приложений"
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Newly Downloaded Apps"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Schermata Home e libreria app"
+        "en_AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Newly Downloaded Apps"
           }
         },
-        "es_419": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Pantalla de Inicio y biblioteca de apps"
+        "en_GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Newly Downloaded Apps"
           }
         },
-        "el": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Οθόνη Αφετηρίας και βιβλιοθήκη εφαρμογών"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apps descargadas recientemente"
           }
         },
-        "fr_CA": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Écran d’accueil et bibliothèque d’apps"
+        "es_419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apps recién descargadas"
           }
         },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "الشاشة الرئيسية ومكتبة التطبيقات"
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Äskettäin ladatut apit"
           }
         },
-        "zh_TW": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "主畫面與App資料庫"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nouvelles apps téléchargées"
           }
         },
-        "zh_HK": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "主畫面與App資料庫"
+        "fr_CA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nouvelles apps téléchargées"
           }
         },
-        "sv": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Hemskärm och appbibliotek"
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "יישומים שהורדו לאחרונה"
           }
         },
-        "no": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Hjem-skjerm og appbibliotek"
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "नए डाउनलोड किए गए ऐप्स"
           }
         },
-        "pl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ekran główny i biblioteka aplikacji"
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Novopreuzete aplikacije"
           }
         },
-        "da": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Hjemmeskærm & appbibliotek"
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Újonnan letöltött appok"
           }
         },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Home Screen & App Library"
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "App yang Baru Diunduh"
           }
         },
-        "ca": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Pantalla d’inici i biblioteca d’apps"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nuove app scaricate"
           }
         },
-        "hi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "होम स्क्रीन और ऐप लाइब्रेरी"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新規ダウンロードアプリ"
           }
         },
-        "th": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "หน้าจอโฮมและคลังแอป"
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Жаңадан жүктеп алынған қолданбалар"
           }
         },
-        "zh_CN": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "主屏幕与App资源库"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "새로 다운로드된 앱"
           }
         },
-        "en_GB": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Home Screen & App Library"
+        "lt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Naujai atsisiųstos programos"
           }
         },
-        "lt": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Pradžios ekranas ir programų biblioteka"
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "App Terbaru Dimuat Turun"
           }
         },
-        "ms": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Skrin Utama & Pustaka App"
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nylig nedlastede apper"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Plocha a knihovna aplikací"
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nieuwe appdownloads"
           }
         },
-        "sk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Plocha a Knižnica aplikácií"
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nowe pobrane aplikacje"
           }
         },
-        "bg": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Начален екран и библиотека с приложения"
+        "pt_BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apps Recém-baixados"
           }
         },
-        "en_AU": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Home Screen & App Library"
+        "pt_PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aplicações recém‑descarregadas"
           }
         },
-        "sl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Domači zaslon in knjižnica aplikacij"
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aplicații nou‑descărcate"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Home-Bildschirm & App-Mediathek"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Недавно загруженные приложения"
           }
         },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Màn hình chính & Thư viện ứng dụng"
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nové stiahnuté apky"
           }
         },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Pantalla de inicio y biblioteca de apps"
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nedavno prenesene aplikacije"
           }
         },
-        "pt_BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tela de Início e Biblioteca de Apps"
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Senast hämtade appar"
           }
         },
-        "uk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Початковий екран і бібліотека програм"
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "แอปที่ดาวน์โหลดใหม่"
           }
         },
-        "ro": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ecran principal și bibliotecă de aplicații"
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yeni İndirilen Uygulamalar"
           }
         },
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Басты экран және қолданбалар каталогі"
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нові викачані програми"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Écran d’accueil et bibliothèque d’apps"
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ứng dụng mới tải về"
           }
         },
-        "hr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Početni zaslon i medijateka aplikacija"
+        "zh_CN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新下载的App"
           }
         },
-        "pt_PT": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ecrã principal e biblioteca de aplicações"
+        "zh_HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新下載的App"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ホーム画面とアプリライブラリ"
+        "zh_TW" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新下載的App"
           }
         }
       }
     },
-    "Newly Downloaded Apps": {
-      "extractionState": "manual",
-      "localizations": {
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "새로 다운로드된 앱"
+    "Notification Badges" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "شارات الإشعارات"
           }
         },
-        "he": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "יישומים שהורדו לאחרונה"
+        "bg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Значки за известия"
           }
         },
-        "id": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "App yang Baru Diunduh"
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Globus de notificació"
           }
         },
-        "fi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Äskettäin ladatut apit"
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oznamovací odznaky"
           }
         },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Yeni İndirilen Uygulamalar"
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notifikationsetiketter"
           }
         },
-        "nl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Nieuwe appdownloads"
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mitteilungs-Badges"
           }
         },
-        "hu": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Újonnan letöltött appok"
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ταμπέλες γνωστοποιήσεων"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Недавно загруженные приложения"
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notification Badges"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Nuove app scaricate"
+        "en_AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notification Badges"
           }
         },
-        "es_419": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Apps recién descargadas"
+        "en_GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notification Badges"
           }
         },
-        "el": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Νεοληφθείσες εφαρμογές"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Globos de notificación"
           }
         },
-        "fr_CA": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Nouvelles apps téléchargées"
+        "es_419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contadores de notificaciones"
           }
         },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "التطبيقات التي تم تنزيلها حديثًا"
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ilmoitusmerkit"
           }
         },
-        "zh_TW": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "新下載的App"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pastilles de notification"
           }
         },
-        "zh_HK": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "新下載的App"
+        "fr_CA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pastilles de notification"
           }
         },
-        "sv": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Senast hämtade appar"
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "תוויות עדכונים"
           }
         },
-        "no": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Nylig nedlastede apper"
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सूचना बैज"
           }
         },
-        "pl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Nowe pobrane aplikacje"
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bedževi obavijesti"
           }
         },
-        "da": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Apps, der er hentet for nylig"
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Értesítési jelvények"
           }
         },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Newly Downloaded Apps"
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tanda Pemberitahuan"
           }
         },
-        "ca": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Noves apps descarregades"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Badge notifiche"
           }
         },
-        "hi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "नए डाउनलोड किए गए ऐप्स"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通知バッジ"
           }
         },
-        "th": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "แอปที่ดาวน์โหลดใหม่"
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Хабарландыру жапсырмалары"
           }
         },
-        "zh_CN": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "新下载的App"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "알림 배지"
           }
         },
-        "en_GB": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Newly Downloaded Apps"
+        "lt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pranešimų ženkleliai"
           }
         },
-        "lt": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Naujai atsisiųstos programos"
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lencana Pemberitahuan"
           }
         },
-        "ms": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "App Terbaru Dimuat Turun"
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Varslingsmerker"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Nově stažené aplikace"
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meldingsbadges"
           }
         },
-        "sk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Nové stiahnuté apky"
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plakietki powiadomień"
           }
         },
-        "bg": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Нови изтеглени приложения"
+        "pt_BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avisos de Notificações"
           }
         },
-        "en_AU": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Newly Downloaded Apps"
+        "pt_PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Emblemas de notificações"
           }
         },
-        "sl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Nedavno prenesene aplikacije"
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Insigne de notificare"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Kürzlich geladene Apps"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Значки уведомлений"
           }
         },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ứng dụng mới tải về"
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Odznaky hlásení"
           }
         },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Apps descargadas recientemente"
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Značke obvestil"
           }
         },
-        "pt_BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Apps Recém-baixados"
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notisbrickor"
           }
         },
-        "uk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Нові викачані програми"
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ป้ายกำกับการแจ้งเตือน"
           }
         },
-        "ro": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Aplicații nou‑descărcate"
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bildirim İşaretleri"
           }
         },
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Жаңадан жүктеп алынған қолданбалар"
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Значки сповіщень"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Nouvelles apps téléchargées"
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Biểu tượng thông báo"
           }
         },
-        "hr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Novopreuzete aplikacije"
+        "zh_CN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通知标记"
           }
         },
-        "pt_PT": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Aplicações recém‑descarregadas"
+        "zh_HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通知標記"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "新規ダウンロードアプリ"
+        "zh_TW" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通知標記"
           }
         }
       }
     },
-    "Search": {
-      "extractionState": "manual",
-      "localizations": {
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "검색"
+    "Search" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بحث"
           }
         },
-        "he": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "חיפוש"
+        "bg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Търсене"
           }
         },
-        "id": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Cari"
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cerca"
           }
         },
-        "fi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Etsi"
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hledat"
           }
         },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Arayın"
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Søg"
           }
         },
-        "nl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Zoek"
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suchen"
           }
         },
-        "hu": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Keresés"
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αναζήτηση"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Поиск"
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Search"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Cerca"
+        "en_AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Search"
           }
         },
-        "es_419": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Buscar"
+        "en_GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Search"
           }
         },
-        "el": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Αναζήτηση"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buscar"
           }
         },
-        "fr_CA": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Rechercher"
+        "es_419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buscar"
           }
         },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "بحث"
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Etsi"
           }
         },
-        "zh_TW": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "搜尋"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recherche"
           }
         },
-        "zh_HK": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "搜尋"
+        "fr_CA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rechercher"
           }
         },
-        "sv": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sök"
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "חיפוש"
           }
         },
-        "no": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Søk"
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "खोजें"
           }
         },
-        "pl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Szukaj"
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Traži"
           }
         },
-        "da": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Søg"
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keresés"
           }
         },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Search"
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cari"
           }
         },
-        "ca": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Cerca"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cerca"
           }
         },
-        "hi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "खोजें"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "検索"
           }
         },
-        "th": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ค้นหา"
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Іздеу"
           }
         },
-        "zh_CN": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "搜索"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "검색"
           }
         },
-        "en_GB": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Search"
+        "lt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paieška"
           }
         },
-        "lt": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Paieška"
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cari"
           }
         },
-        "ms": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Cari"
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Søk"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Hledat"
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zoek"
           }
         },
-        "sk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Vyhľadávanie"
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Szukaj"
           }
         },
-        "bg": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Търсене"
+        "pt_BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buscar"
           }
         },
-        "en_AU": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Search"
+        "pt_PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pesquisar"
           }
         },
-        "sl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Iskanje"
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Căutare"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Suchen"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поиск"
           }
         },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tìm kiếm"
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vyhľadávanie"
           }
         },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Buscar"
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Iskanje"
           }
         },
-        "pt_BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Buscar"
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sök"
           }
         },
-        "uk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Пошук"
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ค้นหา"
           }
         },
-        "ro": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Căutare"
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arayın"
           }
         },
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Іздеу"
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пошук"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Recherche"
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tìm kiếm"
           }
         },
-        "hr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Traži"
+        "zh_CN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "搜索"
           }
         },
-        "pt_PT": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Pesquisar"
+        "zh_HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "搜尋"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "検索"
+        "zh_TW" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "搜尋"
           }
         }
       }
     },
-    "Dock": {
-      "extractionState": "manual",
-      "localizations": {
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dock"
+    "Show App Library in Dock" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إظهار مكتبة التطبيقات في شريط الأيقونات"
           }
         },
-        "he": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "‏Dock"
+        "bg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Покажи Библиотека с приложения в Dock"
           }
         },
-        "id": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dock"
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostra la biblioteca d’apps al Dock"
           }
         },
-        "fi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dock"
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zobrazit knihovnu aplikací v Docku"
           }
         },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dock"
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vis appbibliotek i Dock"
           }
         },
-        "nl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dock"
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "App-Mediathek im Dock anzeigen"
           }
         },
-        "hu": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dock"
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Εμφάνιση της Βιβλιοθήκης εφαρμογών στο Dock"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dock"
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Show App Library in Dock"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dock"
+        "en_AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Show App Library in Dock"
           }
         },
-        "es_419": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dock"
+        "en_GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Show App Library in Dock"
           }
         },
-        "el": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dock"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostrar biblioteca de apps en el Dock"
           }
         },
-        "fr_CA": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dock"
+        "es_419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostrar biblioteca de apps en el Dock"
           }
         },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "شريط الأيقونات"
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Näytä appikirjasto Dockissa"
           }
         },
-        "zh_TW": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dock"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Afficher la bibliothèque d’apps dans le Dock"
           }
         },
-        "zh_HK": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dock"
+        "fr_CA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Afficher la bibliothèque d’apps dans le Dock"
           }
         },
-        "sv": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dock"
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הצגת ספריית היישומים ב-Dock"
           }
         },
-        "no": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dock"
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock में ऐप लाइब्रेरी में दिखाएँ"
           }
         },
-        "pl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dock"
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prikaži medijateku aplikacija u Docku"
           }
         },
-        "da": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dock"
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Appkönyvtár megjelenítése a Dockban"
           }
         },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dock"
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tampilkan Perpustakaan App di Dock"
           }
         },
-        "ca": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dock"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostra libreria app nel Dock"
           }
         },
-        "hi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dock"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アプリライブラリをDockに表示"
           }
         },
-        "th": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dock"
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock панелінде қолданбалар каталогін көрсету"
           }
         },
-        "zh_CN": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "程序坞"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock에서 앱 보관함 보기"
           }
         },
-        "en_GB": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dock"
+        "lt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rodyti programų biblioteką „Dock“ juostoje"
           }
         },
-        "lt": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dock"
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tunjukkan Pustaka App dalam Dock"
           }
         },
-        "ms": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dock"
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vis appbiblioteket i Dock"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dock"
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toon appbibliotheek in Dock"
           }
         },
-        "sk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dock"
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pokazuj bibliotekę aplikacji w Docku"
           }
         },
-        "bg": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dock"
+        "pt_BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostrar Biblioteca de Apps no Dock"
           }
         },
-        "en_AU": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dock"
+        "pt_PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostrar biblioteca de aplicações na Dock"
           }
         },
-        "sl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dock"
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Afișare bibliotecă de aplicații în Dock"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dock"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Показ библиотеки приложений в Dock"
           }
         },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dock"
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zobraziť knižnicu aplikácií v Docku"
           }
         },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dock"
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prikaži knjižnico aplikacij v vrstici Dock"
           }
         },
-        "pt_BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dock"
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Visa appbiblioteket i Dock"
           }
         },
-        "uk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dock"
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "แสดงคลังแอปบน Dock"
           }
         },
-        "ro": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dock"
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uygulama Arşivi’ni Dock’ta Göster"
           }
         },
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dock"
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Показувати Бібліотеку програм на панелі Dock"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dock"
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hiển thị Thư viện ứng dụng trong Dock"
           }
         },
-        "hr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dock"
+        "zh_CN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在程序坞中显示App资源库"
           }
         },
-        "pt_PT": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dock"
+        "zh_HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在Dock上顯示App資料庫"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dock"
+        "zh_TW" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在Dock中顯示App資料庫"
           }
         }
       }
     },
-    "Home Screen": {
-      "extractionState": "manual",
-      "localizations": {
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "홈 화면"
+    "Show in App Library" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إظهار في مكتبة التطبيقات"
           }
         },
-        "he": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "מסך הבית"
+        "bg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Покажи в Библиотека с приложения"
           }
         },
-        "id": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Layar Utama"
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostra a la biblioteca d’apps"
           }
         },
-        "fi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Koti-valikko"
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zobrazovat v knihovně aplikací"
           }
         },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ana Ekran"
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vis i appbibliotek"
           }
         },
-        "nl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Beginscherm"
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In App-Mediathek anzeigen"
           }
         },
-        "hu": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Főképernyő"
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Στη Βιβλιοθήκη εφαρμογών"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Экран «Домой»"
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Show in App Library"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Schermata Home"
+        "en_AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Show in App Library"
           }
         },
-        "es_419": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Pantalla de inicio"
+        "en_GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Show in App Library"
           }
         },
-        "el": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Οθόνη Αφετηρίας"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostrar en la biblioteca de apps"
           }
         },
-        "fr_CA": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Écran d’accueil"
+        "es_419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostrar en la biblioteca de apps"
           }
         },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "الشاشة الرئيسية"
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Näytä appikirjastossa"
           }
         },
-        "zh_TW": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "主畫面"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Afficher dans la bibliothèque d’apps"
           }
         },
-        "zh_HK": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "主畫面"
+        "fr_CA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Afficher dans la bibliothèque d’apps"
           }
         },
-        "sv": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Hemskärm"
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הצגה בספריית היישומים"
           }
         },
-        "no": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Hjem-skjerm"
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ऐप लाइब्रेरी में दिखाएँ"
           }
         },
-        "pl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ekran główny"
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prikaži u medijateci aplikacija"
           }
         },
-        "da": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Hjemmeskærm"
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Megjelenítés az appkönyvtárban"
           }
         },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Home Screen"
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Di Perpustakaan App"
           }
         },
-        "ca": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Pantalla d’inici"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostra nella libreria app"
           }
         },
-        "hi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "होम स्क्रीन"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アプリライブラリに表示"
           }
         },
-        "th": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "หน้าจอโฮม"
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Қолданбалар каталогінде көрсету"
           }
         },
-        "zh_CN": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "主屏幕"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "앱 보관함에서 보기"
           }
         },
-        "en_GB": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Home Screen"
+        "lt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rodyti programų bibliotekoje"
           }
         },
-        "lt": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Pradžios ekranas"
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tunjukkan dalam Pustaka App"
           }
         },
-        "ms": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Skrin Utama"
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vis i appbiblioteket"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Plocha"
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toon in appbibliotheek"
           }
         },
-        "sk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Plocha"
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pokaż w bibliotece aplikacji"
           }
         },
-        "bg": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Начален екран"
+        "pt_BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostrar na Biblioteca de Apps"
           }
         },
-        "en_AU": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Home screen"
+        "pt_PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostrar na biblioteca de aplicações"
           }
         },
-        "sl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Domači zaslon"
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Afișare în biblioteca de aplicații"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Home-Bildschirm"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "В библиотеке приложений"
           }
         },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Màn hình chính"
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zobraziť v knižnici aplikácií"
           }
         },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Pantalla de inicio"
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prikaži v knjižnici aplikacij"
           }
         },
-        "pt_BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tela de Início"
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Visa i appbiblioteket"
           }
         },
-        "uk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Початковий екран"
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "แสดงในคลังแอป"
           }
         },
-        "ro": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ecran principal"
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uygulama Arşivi’nde Göster"
           }
         },
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Басты экран"
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Показувати в бібліотеці програм"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Écran d’accueil"
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trong Thư viện ứng dụng"
           }
         },
-        "hr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Početni zaslon"
+        "zh_CN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在App资源库中显示"
           }
         },
-        "pt_PT": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ecrã principal"
+        "zh_HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在App資料庫顯示"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ホーム画面"
+        "zh_TW" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "顯示於App資料庫"
           }
         }
       }
     },
-    "Show in App Library": {
-      "extractionState": "manual",
-      "localizations": {
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "앱 보관함에서 보기"
+    "Show on Home Screen" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إظهار على الشاشة الرئيسية"
           }
         },
-        "he": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "הצגה בספריית היישומים"
+        "bg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Покажи на Начален екран"
           }
         },
-        "id": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Di Perpustakaan App"
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostra a la pantalla d’inici"
           }
         },
-        "fi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Näytä appikirjastossa"
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zobrazovat na ploše"
           }
         },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Uygulama Arşivi’nde Göster"
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vis på hjemmeskærm"
           }
         },
-        "nl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Toon in appbibliotheek"
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Auf Home-Bildschirm anzeigen"
           }
         },
-        "hu": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Megjelenítés az appkönyvtárban"
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Εμφάνιση στην Αφετηρία"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "В библиотеке приложений"
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Show on Home Screen"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mostra nella libreria app"
+        "en_AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Show on Home Screen"
           }
         },
-        "es_419": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mostrar en la biblioteca de apps"
+        "en_GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Show on Home Screen"
           }
         },
-        "el": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Στη Βιβλιοθήκη εφαρμογών"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostrar en la pantalla de inicio"
           }
         },
-        "fr_CA": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Afficher dans la bibliothèque d’apps"
+        "es_419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostrar en pantalla de inicio"
           }
         },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "إظهار في مكتبة التطبيقات"
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Näytä Koti-valikossa"
           }
         },
-        "zh_TW": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "顯示於App資料庫"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Afficher sur l’écran d’accueil"
           }
         },
-        "zh_HK": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "在App資料庫顯示"
+        "fr_CA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Afficher sur l’écran d’accueil"
           }
         },
-        "sv": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Visa i appbiblioteket"
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הצגה במסך הבית"
           }
         },
-        "no": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Vis i appbiblioteket"
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "होम स्क्रीन पर दिखाएँ"
           }
         },
-        "pl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Pokaż w bibliotece aplikacji"
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prikaži na početnom zaslonu"
           }
         },
-        "da": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Vis i appbibliotek"
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Megjelenítés a Főképernyőn"
           }
         },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Show in App Library"
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tampilkan di Layar Utama"
           }
         },
-        "ca": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mostra a la biblioteca d’apps"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostra sulla schermata Home"
           }
         },
-        "hi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ऐप लाइब्रेरी में दिखाएँ"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ホーム画面に表示"
           }
         },
-        "th": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "แสดงในคลังแอป"
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Басты экранда көрсету"
           }
         },
-        "zh_CN": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "在App资源库中显示"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "홈 화면에서 보기"
           }
         },
-        "en_GB": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Show in App Library"
+        "lt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rodyti pradžios ekrane"
           }
         },
-        "lt": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Rodyti programų bibliotekoje"
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tunjukkan pada Skrin Utama"
           }
         },
-        "ms": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tunjukkan dalam Pustaka App"
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vis på Hjem-skjermen"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Zobrazovat v knihovně aplikací"
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toon op begin­scherm"
           }
         },
-        "sk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Zobraziť v knižnici aplikácií"
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Na ekranie głównym"
           }
         },
-        "bg": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Покажи в Библиотека с приложения"
+        "pt_BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostrar na Tela de Início"
           }
         },
-        "en_AU": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Show in App Library"
+        "pt_PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostrar no ecrã principal"
           }
         },
-        "sl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Prikaži v knjižnici aplikacij"
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Afișare pe ecranul principal"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "In App-Mediathek anzeigen"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Показ на экране «Домой»"
           }
         },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Trong Thư viện ứng dụng"
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zobrazovať na ploche"
           }
         },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mostrar en la biblioteca de apps"
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prikaži na domačem zaslonu"
           }
         },
-        "pt_BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mostrar na Biblioteca de Apps"
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Visa på hemskärmen"
           }
         },
-        "uk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Показувати в бібліотеці програм"
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "แสดงบนหน้าจอโฮม"
           }
         },
-        "ro": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Afișare în biblioteca de aplicații"
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ana Ekranda Göster"
           }
         },
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Қолданбалар каталогінде көрсету"
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "На початковому екрані"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Afficher dans la bibliothèque d’apps"
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hiển thị trên Màn hình chính"
           }
         },
-        "hr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Prikaži u medijateci aplikacija"
+        "zh_CN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在主屏幕上显示"
           }
         },
-        "pt_PT": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mostrar na biblioteca de aplicações"
+        "zh_HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在主畫面上顯示"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "アプリライブラリに表示"
+        "zh_TW" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在主畫面上顯示"
           }
         }
       }
     },
-    "Show Suggested and Recent Apps in Dock": {
-      "extractionState": "manual",
-      "localizations": {
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dock에서 제안된 앱 및 최근 앱 보기"
+    "Show Suggested and Recent Apps in Dock" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عرض التطبيقات المقترحة والحديثة في شريط الأيقونات"
           }
         },
-        "he": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "הצגת יישומים מומלצים ויישומים אחרונים ב-Dock"
+        "bg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Покажи Предложения и скорошни приложения в Dock"
           }
         },
-        "id": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tampilkan Saran App & Terbaru di Dock"
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostra les apps suggerides i les recents al Dock"
           }
         },
-        "fi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Näytä ehdotetut ja äskeiset apit Dockissa"
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zobrazit v Docku doporučené a poslední aplikace"
           }
         },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Önerilen ve Son Kullanılan Uygulamaları Dock’ta Göster"
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vis foreslåede og seneste apps i Dock"
           }
         },
-        "nl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Toon aanbevolen en recente apps in Dock"
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vorgeschlagene und letzte Apps im Dock anzeigen"
           }
         },
-        "hu": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Javasolt és legutóbbi appok megjelenítése a Dockban"
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Προτεινόμενες και πρόσφατες εφαρμογές στο Dock"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Недавние и предложенные приложения в Dock"
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Show Suggested and Recent Apps in Dock"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mostra le app suggerite e quelle recenti nel Dock"
+        "en_AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Show Suggested and Recent Apps in Dock"
           }
         },
-        "es_419": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mostrar apps recientes y sugerencias en el Dock"
+        "en_GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Show Suggested and Recent Apps in Dock"
           }
         },
-        "el": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Προτεινόμενες και πρόσφατες εφαρμογές στο Dock"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostrar apps recientes y sugeridas en el Dock"
           }
         },
-        "fr_CA": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Afficher les apps suggérées/récemment utilisées dans le Dock"
+        "es_419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostrar apps recientes y sugerencias en el Dock"
           }
         },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "عرض التطبيقات المقترحة والحديثة في شريط الأيقونات"
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Näytä ehdotetut ja äskeiset apit Dockissa"
           }
         },
-        "zh_TW": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "在Dock中顯示建議的App和最近使用的App"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Afficher les apps suggérées et récentes dans le Dock"
           }
         },
-        "zh_HK": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "在Dock中顯示建議和最近使用的App"
+        "fr_CA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Afficher les apps suggérées/récemment utilisées dans le Dock"
           }
         },
-        "sv": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Visa föreslagna och senaste appar i Dock"
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הצגת יישומים מומלצים ויישומים אחרונים ב-Dock"
           }
         },
-        "no": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Vis foreslåtte og nylig brukte apper i Dock"
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock में सुझाए गए और हालिया ऐप्स दिखाएँ"
           }
         },
-        "pl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Pokaż sugerowane i ostatnie aplikacje w Docku"
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prikaži predložene i nedavne aplikacije u Docku"
           }
         },
-        "da": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Vis foreslåede og seneste apps i Dock"
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Javasolt és legutóbbi appok megjelenítése a Dockban"
           }
         },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Show Suggested and Recent Apps in Dock"
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tampilkan Saran App & Terbaru di Dock"
           }
         },
-        "ca": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mostra les apps suggerides i les recents al Dock"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostra le app suggerite e quelle recenti nel Dock"
           }
         },
-        "hi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dock में सुझाए गए और हालिया ऐप्स दिखाएँ"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アプリの提案と最近使用したアプリをDockに表示"
           }
         },
-        "th": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "แสดงแอปที่แนะนำและแอปที่ใช้ล่าสุดบน Dock"
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock панелінде ұсынылған және соңғы қолданбаларды көрсету"
           }
         },
-        "zh_CN": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "在程序坞中显示建议App和最近使用App"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dock에서 제안된 앱 및 최근 앱 보기"
           }
         },
-        "en_GB": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Show Suggested and Recent Apps in Dock"
+        "lt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rodyti siūlomas ir vėliausiai naudotas programas „Dock“ juostoje"
           }
         },
-        "lt": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Rodyti siūlomas ir vėliausiai naudotas programas „Dock“ juostoje"
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "App Cadangan dan Terbaharu dalam Dock"
           }
         },
-        "ms": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "App Cadangan dan Terbaharu dalam Dock"
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vis foreslåtte og nylig brukte apper i Dock"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Zobrazit v Docku doporučené a poslední aplikace"
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toon aanbevolen en recente apps in Dock"
           }
         },
-        "sk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Zobraziť v Docku navrhované a posledné apky"
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pokaż sugerowane i ostatnie aplikacje w Docku"
           }
         },
-        "bg": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Покажи Предложения и скорошни приложения в Dock"
+        "pt_BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostrar Apps Sugeridos e Recentes no Dock"
           }
         },
-        "en_AU": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Show Suggested and Recent Apps in Dock"
+        "pt_PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostrar aplicações recentes e sugeridas na Dock"
           }
         },
-        "sl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Prikaži predlagane in nedavne aplikacije v vrstici Dock"
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Afișare aplicații sugerate și recente în Dock"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Vorgeschlagene und letzte Apps im Dock anzeigen"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Недавние и предложенные приложения в Dock"
           }
         },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Hiển thị ứng dụng được gợi ý và gần đây trên Dock"
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zobraziť v Docku navrhované a posledné apky"
           }
         },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mostrar apps recientes y sugeridas en el Dock"
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prikaži predlagane in nedavne aplikacije v vrstici Dock"
           }
         },
-        "pt_BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mostrar Apps Sugeridos e Recentes no Dock"
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Visa föreslagna och senaste appar i Dock"
           }
         },
-        "uk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Слушні й недавні програми в Dock"
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "แสดงแอปที่แนะนำและแอปที่ใช้ล่าสุดบน Dock"
           }
         },
-        "ro": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Afișare aplicații sugerate și recente în Dock"
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Önerilen ve Son Kullanılan Uygulamaları Dock’ta Göster"
           }
         },
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dock панелінде ұсынылған және соңғы қолданбаларды көрсету"
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Слушні й недавні програми в Dock"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Afficher les apps suggérées et récentes dans le Dock"
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hiển thị ứng dụng được gợi ý và gần đây trên Dock"
           }
         },
-        "hr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Prikaži predložene i nedavne aplikacije u Docku"
+        "zh_CN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在程序坞中显示建议App和最近使用App"
           }
         },
-        "pt_PT": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mostrar aplicações recentes e sugeridas na Dock"
+        "zh_HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在Dock中顯示建議和最近使用的App"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "アプリの提案と最近使用したアプリをDockに表示"
+        "zh_TW" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在Dock中顯示建議的App和最近使用的App"
           }
         }
       }
     },
-    "App Library Only": {
-      "extractionState": "manual",
-      "localizations": {
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "앱 보관함에만"
+    "Use Large App Icons" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "استخدام أيقونات كبيرة للتطبيقات"
           }
         },
-        "he": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ספריית היישומים בלבד"
+        "bg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Използвай големи икони на приложения"
           }
         },
-        "id": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Hanya Perpustakaan App"
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utilitza icones d’apps grans"
           }
         },
-        "fi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Vain appikirjasto"
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Použít velké ikony aplikací"
           }
         },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Yalnızca Uygulama Arşivi"
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brug store appsymboler"
           }
         },
-        "nl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Alleen appbibliotheek"
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Große App-Symbole verwenden"
           }
         },
-        "hu": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Csak az appkönyvtár"
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Χρήση μεγάλων εικονιδίων εφαρμογών"
           }
         },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Только библиотека приложений"
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Use Large App Icons"
           }
         },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Solo libreria app"
+        "en_AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Use Large App Icons"
           }
         },
-        "es_419": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sólo biblioteca de apps"
+        "en_GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Use Large App Icons"
           }
         },
-        "el": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Βιβλιοθήκη εφαρμογών μόνο"
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usar iconos de app grandes"
           }
         },
-        "fr_CA": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Bibliothèque d’apps uniquement"
+        "es_419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usar íconos grandes de apps"
           }
         },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "مكتبة التطبيقات فقط"
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Käytä isoja appikuvakkeita"
           }
         },
-        "zh_TW": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "只加入App資料庫"
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utiliser de grandes icônes d’app"
           }
         },
-        "zh_HK": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "只限App資料庫"
+        "fr_CA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utiliser de grandes icônes d’app"
           }
         },
-        "sv": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Endast appbiblioteket"
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "שימוש באייקונים גדולים של יישומים"
           }
         },
-        "no": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Kun i appbibliotek"
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "बड़े ऐप आइकॉन इस्तेमाल करें"
           }
         },
-        "pl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tylko biblioteka aplikacji"
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Koristi velike ikone aplikacija"
           }
         },
-        "da": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Kun appbibliotek"
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nagy méretű appikonok használata"
           }
         },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "App Library Only"
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gunakan Ikon App Besar"
           }
         },
-        "ca": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Només a la biblioteca d’apps"
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utilizza icone app grandi"
           }
         },
-        "hi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "केवल ऐप लाइब्रेरी"
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "大きいアプリアイコンを使用"
           }
         },
-        "th": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "คลังแอปเท่านั้น"
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Үлкен қолданба белгішелерін пайдалану"
           }
         },
-        "zh_CN": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "仅App资源库"
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "큰 앱 아이콘 사용"
           }
         },
-        "en_GB": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "App Library Only"
+        "lt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Didelės programų piktogramos"
           }
         },
-        "lt": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Rodyti tik programų bibliotekoje"
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gunakan Ikon App Besar"
           }
         },
-        "ms": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Pustaka App Sahaja"
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bruk store appsymboler"
           }
         },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ponechat jen v knihovně aplikací"
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gebruik grote appsymbolen"
           }
         },
-        "sk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Pridať len do knižnice aplikácií"
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Używaj dużych ikon aplikacji"
           }
         },
-        "bg": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Само Библиотека с приложения"
+        "pt_BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usar Ícones Grandes de Apps"
           }
         },
-        "en_AU": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "App Library Only"
+        "pt_PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usar ícones das aplicações grandes"
           }
         },
-        "sl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dodaj samo v knjižnico aplikacij"
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utilizare pictograme mari aplicații"
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Nur App-Mediathek"
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Крупные значки приложений"
           }
         },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Chỉ Thư viện ứng dụng"
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Použiť veľké ikony apiek"
           }
         },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Solo en la biblioteca de apps"
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uporabi velike ikone aplikacij"
           }
         },
-        "pt_BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Apenas à Biblioteca de Apps"
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Använd stora appsymboler"
           }
         },
-        "uk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Лише бібліотека програм"
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ใช้ไอคอนขนาดใหญ่"
           }
         },
-        "ro": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Doar în biblioteca de aplicații"
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Büyük Uygulama Simgeleri Kullan"
           }
         },
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Тек қолданбалар каталогі"
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Використовувати великі іконки програм"
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Bibliothèque d’apps uniquement"
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sử dụng biểu tượng ứng dụng lớn"
           }
         },
-        "hr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Samo u medijateci aplikacija"
+        "zh_CN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用大App图标"
           }
         },
-        "pt_PT": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Só na biblioteca de aplicações"
+        "zh_HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用大App圖像"
           }
         },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "アプリライブラリのみ"
-          }
-        }
-      }
-    },
-    "Show on Home Screen": {
-      "extractionState": "manual",
-      "localizations": {
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "홈 화면에서 보기"
-          }
-        },
-        "he": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "הצגה במסך הבית"
-          }
-        },
-        "id": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tampilkan di Layar Utama"
-          }
-        },
-        "fi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Näytä Koti-valikossa"
-          }
-        },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ana Ekranda Göster"
-          }
-        },
-        "nl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Toon op begin­scherm"
-          }
-        },
-        "hu": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Megjelenítés a Főképernyőn"
-          }
-        },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Показ на экране «Домой»"
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mostra sulla schermata Home"
-          }
-        },
-        "es_419": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mostrar en pantalla de inicio"
-          }
-        },
-        "el": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Εμφάνιση στην Αφετηρία"
-          }
-        },
-        "fr_CA": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Afficher sur l’écran d’accueil"
-          }
-        },
-        "ar": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "إظهار على الشاشة الرئيسية"
-          }
-        },
-        "zh_TW": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "在主畫面上顯示"
-          }
-        },
-        "zh_HK": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "在主畫面上顯示"
-          }
-        },
-        "sv": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Visa på hemskärmen"
-          }
-        },
-        "no": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Vis på Hjem-skjermen"
-          }
-        },
-        "pl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Na ekranie głównym"
-          }
-        },
-        "da": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Vis på hjemmeskærm"
-          }
-        },
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Show on Home Screen"
-          }
-        },
-        "ca": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mostra a la pantalla d’inici"
-          }
-        },
-        "hi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "होम स्क्रीन पर दिखाएँ"
-          }
-        },
-        "th": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "แสดงบนหน้าจอโฮม"
-          }
-        },
-        "zh_CN": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "在主屏幕上显示"
-          }
-        },
-        "en_GB": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Show on Home Screen"
-          }
-        },
-        "lt": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Rodyti pradžios ekrane"
-          }
-        },
-        "ms": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tunjukkan pada Skrin Utama"
-          }
-        },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Zobrazovat na ploše"
-          }
-        },
-        "sk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Zobrazovať na ploche"
-          }
-        },
-        "bg": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Покажи на Начален екран"
-          }
-        },
-        "en_AU": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Show on Home Screen"
-          }
-        },
-        "sl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Prikaži na domačem zaslonu"
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Auf Home-Bildschirm anzeigen"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Hiển thị trên Màn hình chính"
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mostrar en la pantalla de inicio"
-          }
-        },
-        "pt_BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mostrar na Tela de Início"
-          }
-        },
-        "uk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "На початковому екрані"
-          }
-        },
-        "ro": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Afișare pe ecranul principal"
-          }
-        },
-        "kk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Басты экранда көрсету"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Afficher sur l’écran d’accueil"
-          }
-        },
-        "hr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Prikaži na početnom zaslonu"
-          }
-        },
-        "pt_PT": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mostrar no ecrã principal"
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ホーム画面に表示"
+        "zh_TW" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用大型App圖像"
           }
         }
       }
     }
   },
-  "version": "1.0"
+  "version" : "1.0"
 }
