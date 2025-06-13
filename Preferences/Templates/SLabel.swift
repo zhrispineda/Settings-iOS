@@ -46,7 +46,7 @@ struct SLabel: View {
             
             if !status.isEmpty {
                 Text(.init(status))
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(.gray)
             }
             
             if badgeCount > 0 {

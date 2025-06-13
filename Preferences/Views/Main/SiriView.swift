@@ -39,9 +39,9 @@ struct SiriView: View {
     let exTable = "AssistantSettings-ExternalAIModel"
     let contactPickerDelegate = ContactPickerDelegate()
     
-    init() {
-        try? Tips.configure()
-    }
+//    init() {
+//        try? Tips.configure()
+//    }
     
     var body: some View {
         CustomList {
@@ -62,14 +62,14 @@ struct SiriView: View {
             }
             
             // MARK: TipKit Section
-            if !learnMoreTapped {
-                Section {
-                    AppleIntelligenceTipView()
-                        .onTapGesture {
-                            learnMoreTapped = true
-                        }
-                }
-            }
+//            if !learnMoreTapped {
+//                Section {
+//                    AppleIntelligenceTipView()
+//                        .onTapGesture {
+//                            learnMoreTapped = true
+//                        }
+//                }
+//            }
             
             // MARK: Siri Requests Section
             Section {
@@ -172,10 +172,7 @@ struct SiriView: View {
                 }
             } header: {
                 Text(UIDevice.IntelligenceCapability ? "GM_APP_ACCESS_GROUP" : "APP_ACCESS_GROUP", tableName: UIDevice.IntelligenceCapability ? gmTable : table)
-            }
-            
-            // MARK: Apple Intelligence Privacy Footer
-            Section {} footer: {
+            } footer: {
                 if UIDevice.IntelligenceCapability {
                     Text("\("GM_PRIVACY_FOOTER_TEXT".localize(table: gmTable)) [\("GM_PRIVACY_FOOTER_LINK_TEXT".localize(table: gmTable))](#)")
                 }

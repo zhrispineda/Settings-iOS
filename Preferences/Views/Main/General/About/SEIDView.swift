@@ -11,13 +11,10 @@ struct SEIDView: View {
     var body: some View {
         CustomList(title: "SEID") {
             Text(getRandomSEID(from: "040000000000000000000000000000000000000000000000"))
-                .monospaced()
-                .foregroundStyle(.tertiary)
-                .font(.system(size: 10))
+                .font(.callout)
         }
     }
 
-    // Functions
     private func getRandomSEID(from input: String) -> String {
         guard !input.isEmpty else { return "" }
         
