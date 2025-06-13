@@ -23,19 +23,19 @@ A **work-in-progress** SwiftUI recreation of the iOS & iPadOS Settings app (Pref
 <details open>
 <summary>iPadOS 26</summary>
   
-![An image displaying the project's Settings app in the canvas for iPad, matching the updated appearance of iPadOS 26.](Assets/26Phone.png)
+![An image displaying the project's Settings app in the canvas for iPad, matching the updated appearance of iPadOS 26.](Assets/26Pad.png)
 
 </details>
 
-<details open>
-<summary>iOS 18 Physical device mode</summary>
+<details>
+<summary>iOS 18 physical device mode</summary>
   
 ![A GIF displaying the project‘s Settings app on different devices including a Dynamic Island iPhone, iPhone with Touch ID, and an 11-inch iPad. It is similar to the Settings layout of a physical device.](Assets/SettingsPhysical.gif)
 
 </details>
 
-<details open>
-<summary>iOS 18 Simulator instance mode</summary>
+<details>
+<summary>iOS 18 simulator instance mode</summary>
   
 ![A GIF displaying the project‘s Settings app on different devices including a Dynamic Island iPhone, iPhone with Touch ID, and an 11-inch iPad. It is similar to the Settings layout of a Simulator instance.](Assets/SettingsSimulator.gif)
 
