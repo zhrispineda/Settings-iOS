@@ -2,7 +2,7 @@
 A **work-in-progress** SwiftUI recreation of the iOS & iPadOS Settings app (Preferences.app).
 
 > [!IMPORTANT]  
-> This project is currently focused on iOS & iPadOS 26 beta using Xcode 26 beta. Use an older branch to deploy this project on iOS & iPadOS 18.5 or earlier/Xcode 16.4 or earlier.
+> This project is currently focused on iOS & iPadOS 26 beta using Xcode 26 beta. Use an older branch to deploy this project on iOS & iPadOS 18.5/Xcode 16.4 or earlier.
 
 ## Information
 - This personal project is a recreation of Apple's Settings app for iOS and iPadOS 26 **beta** (23A5260n).
@@ -12,13 +12,34 @@ A **work-in-progress** SwiftUI recreation of the iOS & iPadOS Settings app (Pref
 - Previous versions are available as their own branches in this repository, going as far back as 17.4.
 
 ## Examples
-Physical device mode:
 
+<details open>
+<summary>iOS 26</summary>
+  
+![An image displaying the project's Settings app in the canvas for iPhone, matching the updated appearance of iOS 26.](Assets/26Phone.png)
+
+</details>
+
+<details open>
+<summary>iPadOS 26</summary>
+  
+![An image displaying the project's Settings app in the canvas for iPad, matching the updated appearance of iPadOS 26.](Assets/26Phone.png)
+
+</details>
+
+<details open>
+<summary>iOS 18 Physical device mode</summary>
+  
 ![A GIF displaying the project‘s Settings app on different devices including a Dynamic Island iPhone, iPhone with Touch ID, and an 11-inch iPad. It is similar to the Settings layout of a physical device.](Assets/SettingsPhysical.gif)
 
-Simulator instance mode:
+</details>
 
+<details open>
+<summary>iOS 18 Simulator instance mode</summary>
+  
 ![A GIF displaying the project‘s Settings app on different devices including a Dynamic Island iPhone, iPhone with Touch ID, and an 11-inch iPad. It is similar to the Settings layout of a Simulator instance.](Assets/SettingsSimulator.gif)
+
+</details>
 
 ## Usage
 Open the project in Xcode and run with either a Simulator instance or a physical device running iOS or iPadOS with Developer Mode enabled as a destination.

@@ -43,11 +43,11 @@ struct ContentView: View {
                         }
                     }
 
-                    if UIDevice.IntelligenceCapability {
-                        Button("Ready for Apple Intelligence") {
-                            stateManager.selection = .appleIntelligence
-                        }
-                    }
+//                    if UIDevice.IntelligenceCapability {
+//                        Button("Ready for Apple Intelligence") {
+//                            stateManager.selection = .appleIntelligence
+//                        }
+//                    }
 
                     // MARK: Radio Settings
                     if !UIDevice.IsSimulator {
@@ -162,9 +162,9 @@ struct ContentView: View {
                         }
                     }
 
-                    if UIDevice.IntelligenceCapability {
-                        NavigationLink("Ready for Apple Intelligence", destination: SiriView())
-                    }
+//                    if UIDevice.IntelligenceCapability {
+//                        NavigationLink("Ready for Apple Intelligence", destination: SiriView())
+//                    }
 
                     if !UIDevice.IsSimulator {
                         // MARK: Radio Settings

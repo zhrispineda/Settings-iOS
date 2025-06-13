@@ -55,6 +55,7 @@ struct GeneralView: View {
                         SLink("PiP".localize(table: table), icon: "pip") {
                             BundleControllerView("PictureInPictureSettings", controller: "PictureInPictureSettings", title: "PiP", table: table)
                         }
+                        SLink("Screen Capture".localize(table: table), icon: "camera.viewfinder") {}
                         SLink("CARPLAY".localize(table: table), color: .green, icon: "carplay") {
                             BundleControllerView("CarKitSettings", controller: "CRSettingsController", title: "CARPLAY", table: table)
                         }

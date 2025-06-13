@@ -10,16 +10,16 @@ import SwiftUI
 struct SoftwareUpdateView: View {
     @State private var checkingForUpdates = false
     let table = "Software Update"
-    
+
     var body: some View {
         GeometryReader { geometry in
             CustomList(title: "SOFTWARE_UPDATE".localize(table: table)) {
                 Section {
                     SettingsLink("AUTOMATIC_UPDATES".localize(table: table), status: "ON".localize(table: table), destination: AutomaticUpdateView())
-                    
-                    //                if !checkingForUpdates && !updateCheckFailed {
-                    //                    SettingsLink("Beta Updates", status: "\(UIDevice().systemName) 18 Developer Beta", destination: BetaUpdatesView())
-                    //                }
+
+//                    if !checkingForUpdates {
+//                        SettingsLink("Beta Updates", status: "\(UIDevice().systemName) 26 Developer Beta", destination: BetaUpdatesView())
+//                    }
                 }
                 VStack {
                     if checkingForUpdates {
@@ -27,7 +27,7 @@ struct SoftwareUpdateView: View {
                             .controlSize(.large)
                             .padding(.bottom, 1)
                     }
-                    
+
                     if checkingForUpdates {
                         withAnimation {
                             Text("CHECKING_FOR_UPDATES", tableName: table)
@@ -38,16 +38,28 @@ struct SoftwareUpdateView: View {
                     } else {
                         if UIDevice.iPhone {
                             ContentUnavailableView(
-                                "\("OS_PLATFORM_IPHONE".localize(table: table)) \(UIDevice().systemVersion)",
-                                systemImage: "",
-                                description: Text("UP_TO_DATE_IPHONE", tableName: table)
+                                "UP_TO_DATE_IPHONE".localize(table: table),
+                                systemImage: "checkmark.circle.fill",
+                                description: Text("\("OS_PLATFORM_IPHONE".localize(table: table)) \(UIDevice().systemVersion)")
                             )
+                            .frame(maxHeight: 170)
+                            NavigationLink("More Details") {
+                                BundleControllerView("/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework/GeneralSettingsUI", controller: "PSGSoftwareVersionController", title: "OS Version", table: "GeneralSettingsUI")
+                            }
+                            .navigationLinkIndicatorVisibility(.hidden)
+                            .foregroundStyle(.blue)
                         } else if UIDevice.iPad {
                             ContentUnavailableView(
-                                "\("OS_PLATFORM_IPAD".localize(table: table)) \(UIDevice().systemVersion)",
-                                systemImage: "",
-                                description: Text("UP_TO_DATE_IPAD", tableName: table)
+                                "UP_TO_DATE_IPAD".localize(table: table),
+                                systemImage: "checkmark.circle.fill",
+                                description: Text("\("OS_PLATFORM_IPAD".localize(table: table)) \(UIDevice().systemVersion)")
                             )
+                            .frame(maxHeight: 170)
+                            NavigationLink("More Details") {
+                                BundleControllerView("/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework/GeneralSettingsUI", controller: "PSGSoftwareVersionController", title: "OS Version", table: "GeneralSettingsUI")
+                            }
+                            .navigationLinkIndicatorVisibility(.hidden)
+                            .foregroundStyle(.blue)
                         }
                     }
                 }
@@ -57,7 +69,7 @@ struct SoftwareUpdateView: View {
                 .onAppear {
                     Task {
                         checkingForUpdates = true
-                        try await Task.sleep(for: .seconds(Double.random(in: 0.1...5.0)))
+                        try await Task.sleep(for: .seconds(Double.random(in: 0.1...3.0)))
                         withAnimation {
                             checkingForUpdates.toggle()
                         }
