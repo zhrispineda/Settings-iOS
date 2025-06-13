@@ -10,6 +10,7 @@ import SwiftUI
 struct OtherNetworkView: View {
     @Environment(\.dismiss) private var dismiss
     @FocusState private var networkFocused: Bool
+    @State private var animate = true
     @State private var networkName = ""
     @State private var security = "kWFLocSecurityWPA2WPA3Title"
     @State private var username = ""
@@ -31,9 +32,6 @@ struct OtherNetworkView: View {
                                 networkFocused = true
                             }
                     }
-                }
-                .onAppear {
-                    setNavigationPrompt()
                 }
                 
                 // Security + Password/Username
@@ -60,62 +58,20 @@ struct OtherNetworkView: View {
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
                     // Cancel
-                    Button {
+                    Button("kWFLocAdhocJoinCancelButton".localize(table: table), systemImage: "xmark") {
                         dismiss()
-                    } label: {
-                        Text("kWFLocAdhocJoinCancelButton", tableName: table)
-                            .foregroundStyle(Color.accentColor)
                     }
+                    .labelStyle(.iconOnly)
                 }
                 ToolbarItem(placement: .topBarTrailing) {
                     // Join
-                    Button {} label: {
-                        Text("kWFLocOtherNetworksJoinButton", tableName: table)
-                            .fontWeight(.semibold)
-                            .foregroundStyle(Color.accentColor)
+                    Button("kWFLocOtherNetworksJoinButton".localize(table: table), systemImage: "checkmark") {
+                        dismiss()
                     }
                     .disabled(security != "kWFLocSecurityNoneTitle" && (networkName.count < 1 || (password.count < 8 && username.isEmpty) || username.count < 1 && password.count < 1))
                 }
             }
         }
-    }
-    
-    // Workaround for accessing UINavigationItem prompt
-    private func setNavigationPrompt() {
-        guard let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
-              let window = scene.windows.first,
-              let rootVC = window.rootViewController else {
-            return
-        }
-        
-        if let presentedVC = getPresentedViewController(from: rootVC) {
-            if let navigationController = getNavigationController(from: presentedVC) {
-                navigationController.topViewController?.navigationItem.prompt = status.localize(table: table)
-            }
-        }
-    }
-    
-    private func getPresentedViewController(from viewController: UIViewController) -> UIViewController? {
-        var currentVC = viewController
-        while let presentedVC = currentVC.presentedViewController {
-            // Ensure the selected view controller is from OtherNetworkView (top view) when presented as a popover
-            currentVC = presentedVC
-        }
-        return currentVC
-    }
-    
-    private func getNavigationController(from viewController: UIViewController) -> UINavigationController? {
-        if let navigationController = viewController as? UINavigationController {
-            return navigationController
-        }
-        
-        for child in viewController.children {
-            if let navigationController = getNavigationController(from: child) {
-                return navigationController
-            }
-        }
-        
-        return nil
     }
 }
 
@@ -124,3 +80,4 @@ struct OtherNetworkView: View {
         OtherNetworkView()
     }
 }
+

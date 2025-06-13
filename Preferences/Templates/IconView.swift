@@ -37,7 +37,7 @@ struct IconView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 30)
-                    .foregroundStyle(color)
+                    .foregroundStyle(color.gradient)
             }
             
             // Check if icon is an SF Symbol or an image asset

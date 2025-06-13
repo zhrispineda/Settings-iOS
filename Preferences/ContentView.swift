@@ -24,6 +24,7 @@ struct ContentView: View {
     @State private var id = UUID()
     
     var body: some View {
+        // MARK: iPadOS Layout
         if UIDevice.iPad {
             NavigationSplitView {
                 List(selection: $stateManager.selection) {
@@ -131,6 +132,7 @@ struct ContentView: View {
                 .id(id)
             }
         } else {
+            // MARK: iOS Layout
             NavigationStack(path: $stateManager.path) {
                 List {
                     Section { // Apple Account Section

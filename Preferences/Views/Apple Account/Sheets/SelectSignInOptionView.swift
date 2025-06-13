@@ -16,15 +16,15 @@ struct SelectSignInOptionView: View {
     var body: some View {
         List {
             // Animated Apple logo, title, and description
-            VStack(spacing: 10) {
+            VStack(alignment: .leading, spacing: 10) {
                 CustomView("AppleIDSetupUI", controller: "AppleIDSetupUI.AISAppleIDMicaView")
                     .frame(height: 100)
                 Text("LOGIN_FORM_TITLE", tableName: table)
-                    .font(.largeTitle)
+                    .font(.title)
                     .bold()
                 Text("SIGN_IN_OPTIONS_DESCRIPTION", tableName: table)
-                    .multilineTextAlignment(.center)
-                    .padding(.horizontal)
+                    .font(.title2)
+                    .foregroundStyle(.secondary)
             }
             .listRowBackground(Color.clear)
             
@@ -35,7 +35,7 @@ struct SelectSignInOptionView: View {
                         Button {
                             dismiss()
                         } label: {
-                            SignInMethodButton(image: "ProximitySymbol-iPhone-iPad", title: "SIGN_IN_OPTION_ANOTHER_DEVICE_TITLE", subtitle: "SIGN_IN_OPTION_ANOTHER_DEVICE_SUBTITLE", table: table, chevron: true)
+                            SignInMethodButton(image: "ProximitySymbol-iPhone-iPad", title: "SIGN_IN_OPTION_ANOTHER_DEVICE_TITLE", subtitle: "SIGN_IN_OPTION_ANOTHER_DEVICE_SUBTITLE", table: table)
                         }
                     } else {
                         NavigationLink {
@@ -57,22 +57,17 @@ struct SelectSignInOptionView: View {
                 } label: {
                     SignInMethodButton(image: "ellipsis.rectangle", title: "DISCOVERING_VIEW_BUTTON_SIGN_IN_MANUAL", subtitle: "SIGN_IN_OPTION_ENTER_PASSWORD_SUBTITLE", table: table)
                 }
+                .navigationLinkIndicatorVisibility(.hidden)
                 .listRowBackground(Color(colorScheme == .light ? UIColor.systemGray6 : UIColor.secondarySystemGroupedBackground))
             }
         }
         .padding(.top, -25)
         .background(colorScheme == .light ? .white : Color(UIColor.systemBackground))
         .scrollContentBackground(.hidden)
-        .contentMargins(.horizontal, UIDevice.iPad ? 50 : 15, for: .scrollContent)
+        .contentMargins(.horizontal, UIDevice.iPad ? 50 : 30, for: .scrollContent)
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
-                Button {
-                    dismiss()
-                } label: {
-                    Image(systemName: "xmark.circle.fill")
-                        .font(.system(size: 24))
-                        .foregroundStyle(.gray, Color(UIColor.systemFill))
-                }
+                Button("Close") { dismiss() }
             }
             
             ToolbarItem(placement: .bottomBar) {
@@ -82,7 +77,6 @@ struct SelectSignInOptionView: View {
                     Text("ACCOUNT_SETUP_CREATE_ACCOUNT_REBRAND", tableName: table)
                         .fontWeight(.semibold)
                 }
-                .padding(.bottom, UIDevice.iPad || UIDevice.HomeButtonCapability ? 5 : 20)
             }
         }
         .alert("Could Not Create Apple Account", isPresented: $showingAlert) {

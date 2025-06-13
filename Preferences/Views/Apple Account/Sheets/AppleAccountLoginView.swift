@@ -25,63 +25,40 @@ struct AppleAccountLoginView: View {
         GeometryReader { geo in
             List {
                 Section {
-                    VStack(spacing: 15) {
+                    VStack(alignment: .leading, spacing: 10) {
                         Image("appleAccount") // Apple Account Logo
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 90)
+                            .frame(width: 90, height: 130)
+                            .frame(maxWidth: .infinity)
                         Text("LOGIN_FORM_TITLE", tableName: setupTable) // Apple Account Title
-                            .font(.largeTitle)
+                            .font(.title2)
                             .fontWeight(.bold)
                         Text("SIGN_IN_SUBTITLE", tableName: UITable) // Apple Account Subtitle
-                    }
-                    .frame(maxWidth: .infinity)
-                    .padding(.horizontal, 20)
-                }
-                .multilineTextAlignment(.center)
-                .listRowBackground(Color.clear)
-                
-                Section {
-                    VStack(alignment: .center) {
+                            .font(.title2)
+                            .foregroundStyle(.secondary)
+
                         // MARK: Email or Phone Number Text Field
                         TextField("LOGIN_FORM_TEXTFIELD_NAME".localize(table: setupTable), text: $username)
                             .usernameTextStyle()
-                        
-                        Spacer()
-                        
+                            .padding(.vertical)
+
                         // MARK: Forgot password? Button
-                        Button {
+                        Button(LocalizedStringResource.AppleAccountUI.accountAccessSummaryForgotPasswordTitle, systemImage: "info.circle.fill") {
                             showingForgotPasswordSheet.toggle()
-                        } label: {
-                            Text("SIGN_IN_HELP_BUTTON_FORGOT".localize(table: UITable))
-                                .foregroundStyle(.accent)
-                                .frame(maxWidth: .infinity)
-                                .contentShape(Rectangle())
                         }
-                        .buttonStyle(.plain)
                         .disabled(showingOptionsAlert)
                     }
-                    
-                    // MARK: Sign in a child in my Family Button
-                    ZStack {
-                        NavigationLink("", destination: ParentGuardianSignInView())
-                            .opacity(0)
-                        Text("SIGN_IN_FOR_CHILD_BUTTON_TITLE", tableName: UITable)
-                            .foregroundStyle(.accent)
-                    }
+                    .multilineTextAlignment(.leading)
                 }
                 .listRowBackground(Color.clear)
-                .listRowSeparator(.hidden)
-                
+
                 Section {
                     VStack {
-                        if geo.size.height > 650 && UIDevice.iPhone {
-                            Spacer(minLength: geo.size.height * (geo.size.height > 750 ? 0.25 : 0.12))
-                        }
-                        // MARK: Privacy Button
+                        // MARK: Privacy Link
                         OBPrivacyLinkView(bundleIdentifiers: ["com.apple.onboarding.appleid"])
-                            .frame(minHeight: 100)
-                        
+                            .frame(minHeight: 120)
+
                         // MARK: Continue Button
                         Button {
                             signingIn.toggle()
@@ -90,10 +67,12 @@ struct AppleAccountLoginView: View {
                             if signingIn || showingOptionsAlert {
                                 ContinueButton(username: $username, loading: true)
                             } else {
-                                ContinueButton(username: $username)
+                                OBBoldTrayButton("SIGN_IN_BUTTON_CONTINUE".localize(table: UITable)) {
+                                    signingIn.toggle()
+                                    showingAlert.toggle()
+                                }
                             }
                         }
-                        .frame(height: 50)
                         .disabled(username.count < 1)
                         .alert("VERIFICATION_FAILED_TITLE".localize(table: UITable), isPresented: $showingAlert) {
                             Button("AUTHENTICATE_VIEW_BUTTON_TITLE".localize(table: setupTable)) {
@@ -102,31 +81,32 @@ struct AppleAccountLoginView: View {
                         } message: {
                             Text("BAD_NETWORK_ALERT_MESSAGE_REBRAND", tableName: UITable)
                         }
+
+                        // MARK: Sign in a child in my Family Button
+                        if !isMainSheet {
+                            NavigationLink(destination: ParentGuardianSignInView()) {
+                                ZStack {
+                                    RoundedRectangle(cornerRadius: 25.0)
+                                        .foregroundStyle(Color(UIColor.secondarySystemBackground))
+                                        .frame(height: 50)
+                                    Text(LocalizedStringResource.AppleAccountUI.signInForChildButtonTitle)
+                                }
+                                .foregroundStyle(.primary)
+                            }
+                            .navigationLinkIndicatorVisibility(.hidden)
+                        }
                     }
                 }
                 .listRowBackground(Color.clear)
             }
-            .padding(.top, -45)
+            .padding(.top, -80)
             .background(colorScheme == .light ? .white : Color(UIColor.systemBackground))
             .scrollContentBackground(.hidden)
-            .navigationBarBackButtonHidden()
             .toolbar {
-                if isMainSheet {
-                    ToolbarItem(placement: .topBarTrailing) {
-                        Button {
+                ToolbarItem(placement: isMainSheet ? .topBarTrailing : .topBarLeading) {
+                    if isMainSheet {
+                        Button("Close", systemImage:  "xmark") {
                             dismiss()
-                        } label: {
-                            Image(systemName: "xmark.circle.fill")
-                                .font(.system(size: 24))
-                                .foregroundStyle(.gray, Color(UIColor.systemFill))
-                        }
-                    }
-                } else {
-                    ToolbarItem(placement: .topBarLeading) {
-                        Button {
-                            dismiss()
-                        } label: {
-                            Image(systemName: "chevron.left")
                         }
                     }
                 }
@@ -161,4 +141,8 @@ struct AppleAccountLoginView: View {
     NavigationStack {
         AppleAccountLoginView()
     }
+}
+
+#Preview("ContentView") {
+    ContentView()
 }
