@@ -141,5 +141,5 @@ struct SignInMethodButton: View {
 }
 
 #Preview("ContentView") {
-    ContentView()
+    ContentView(stateManager: StateManager())
 }

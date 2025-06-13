@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct SettingsSearchView: View {
-    @Bindable var stateManager: StateManager
-    
+    var stateManager: StateManager
+
     var body: some View {
         Section("Suggestions") {
             HStack(alignment: .top) {
@@ -74,12 +74,5 @@ struct SuggestedIconView: View {
 }
 
 #Preview {
-    @Previewable @State var stateManager = StateManager()
-    
-    NavigationStack(path: $stateManager.path) {
-        List {
-            SettingsSearchView(stateManager: stateManager)
-        }
-        .listStyle(.inset)
-    }
+    SettingsSearchView(stateManager: StateManager())
 }

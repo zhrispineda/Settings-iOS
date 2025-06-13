@@ -6,21 +6,17 @@
 //
 
 import SwiftUI
-import TipKit
 
 struct ContentView: View {
-    // Variables
-    @AppStorage("SiriEnabled") private var siriEnabled = false
     @AppStorage("FollowUpDismissed") private var followUpDismissed = false
     @AppStorage("AirplaneMode") private var airplaneModeEnabled = false
     @AppStorage("WiFi") private var wifiEnabled = true
     @AppStorage("Bluetooth") private var bluetoothEnabled = true
     @AppStorage("VPNToggle") private var VPNEnabled = true
-    @State private var stateManager = StateManager()
+    @Bindable var stateManager: StateManager
     @State private var searchFocused = false
     @State private var searchText = ""
     @State private var showingSignInSheet = false
-    @State private var isLandscape = false
     @State private var id = UUID()
     
     var body: some View {
@@ -46,7 +42,13 @@ struct ContentView: View {
                             }
                         }
                     }
-                    
+
+                    if UIDevice.IntelligenceCapability {
+                        Button("Ready for Apple Intelligence") {
+                            stateManager.selection = .appleIntelligence
+                        }
+                    }
+
                     // MARK: Radio Settings
                     if !UIDevice.IsSimulator {
                         Section {
@@ -100,7 +102,7 @@ struct ContentView: View {
                 }
                 .searchable(text: $searchText, isPresented: $searchFocused, placement: .navigationBarDrawer(displayMode: .always))
                 .overlay {
-                    if searchFocused {
+                    if searchFocused && !searchText.isEmpty {
                         GeometryReader { geo in
                             List {
                                 if searchText.isEmpty {
@@ -159,7 +161,11 @@ struct ContentView: View {
                             }
                         }
                     }
-                    
+
+                    if UIDevice.IntelligenceCapability {
+                        NavigationLink("Ready for Apple Intelligence", destination: SiriView())
+                    }
+
                     if !UIDevice.IsSimulator {
                         // MARK: Radio Settings
                         Section {
@@ -264,5 +270,5 @@ func requiredCapabilities(capability: Capabilities) -> Bool {
 }
 
 #Preview {
-    ContentView()
+    ContentView(stateManager: StateManager())
 }

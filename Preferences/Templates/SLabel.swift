@@ -59,7 +59,7 @@ struct SLabel: View {
 }
 
 #Preview {
-    ContentView()
+    ContentView(stateManager: StateManager())
 }
 
 #Preview("SLabel Example") {

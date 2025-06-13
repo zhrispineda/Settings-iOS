@@ -8,9 +8,8 @@
 import SwiftUI
 
 struct FollowUpView: View {
-    // Variables
     @Environment(\.dismiss) var dismiss
-    @State var stateManager = StateManager()
+    @Environment(StateManager.self) private var stateManager
     @AppStorage("FollowUpDismissed") private var followUpDismissed = false
     let coreTable = "CoreFollowUp"
     let table = "FollowUp"

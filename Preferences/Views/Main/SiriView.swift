@@ -190,7 +190,7 @@ struct SiriView: View {
             }
         }
     }
-    
+
     func openContactPicker() {
         let controller = CNContactPickerViewController()
         
@@ -208,6 +208,12 @@ class ContactPickerDelegate: NSObject, CNContactPickerDelegate {
     
     func contactPicker(_ picker: CNContactPickerViewController, didSelect contact: CNContact) {
         onSelectContact(contact)
+    }
+}
+
+struct SiriRoute: @preconcurrency Routable {
+    @MainActor func destination() -> AnyView {
+        AnyView(SiriView())
     }
 }
 
