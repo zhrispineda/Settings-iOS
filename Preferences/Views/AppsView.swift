@@ -91,7 +91,7 @@ struct AppsView: View {
                     }
                 }
             }
-            .searchable(text: $searchText, placement: UIDevice.iPhone ? .navigationBarDrawer(displayMode: .always) : .toolbar)
+            .searchable(text: $searchText, placement: UIDevice.iPhone ? .automatic : .toolbar, prompt: "Search Apps")
             .scrollIndicators(.hidden)
             .overlay {
                 HStack {

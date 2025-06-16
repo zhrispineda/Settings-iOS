@@ -22,6 +22,5 @@ struct UsernameTextStyle: ViewModifier {
             .padding(.leading, 20)
             .background(Color(colorScheme == .dark ? UIColor.systemGray5 : UIColor.systemGray6))
             .clipShape(RoundedRectangle(cornerRadius: 25))
-            .glassEffect()
     }
 }

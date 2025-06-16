@@ -19,31 +19,34 @@ struct ForgotPasswordView: View {
         NavigationStack {
             ZStack {
                 List {
-                    VStack {
+                    VStack(alignment: .leading, spacing: 0) {
+                        Image("appleAccount") // Apple Account Logo
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 70, height: 90)
+                            .frame(maxWidth: .infinity)
+                            .padding(.bottom, 30)
                         Text("SIGN_IN_HELP_ALERT_TITLE_FORGOT_PASSWORD", tableName: table)
+                            .font(.title2)
                             .fontWeight(.bold)
-                            .font(.largeTitle)
-                            .padding(.top, -20)
-                            .padding(.bottom, 5)
                         Text("Enter your email address or phone number that you use with your account to continue.")
-                            .padding(.horizontal, -5)
-                            .padding(.bottom, -10)
-                    }
-                    .frame(maxWidth: .infinity)
-                    .multilineTextAlignment(.center)
-                    .listRowBackground(Color.clear)
-                    .listRowSeparator(.hidden)
-                    
-                    Section {
+                            .font(.title2)
+                            .foregroundStyle(.secondary)
+                            .padding(.bottom, 20)
                         TextField("SIGN_IN_USERNAME_PLACEHOLDER".localize(table: table), text: $username)
                             .usernameTextStyle()
-                            .listRowBackground(Color.clear)
                             .onAppear {
                                 if !username.isEmpty {
                                     dismiss()
                                 }
                             }
-                    } footer: {
+                    }
+                    .frame(maxWidth: .infinity)
+                    .multilineTextAlignment(.leading)
+                    .listRowBackground(Color.clear)
+                    .listRowSeparator(.hidden)
+                    
+                    Section {} footer: {
                         if guardianMode {
                             Text("Your privacy is important. If you‘re resetting your password on someone else‘s device, your personal information will not be saved on their device.")
                                 .padding(.top, -10)
@@ -60,33 +63,27 @@ struct ForgotPasswordView: View {
                 VStack {
                     Spacer()
                     ZStack {
-                        Button {
+                        OBBoldTrayButton("SIGN_IN_BUTTON_CONTINUE".localize(table: table)) {
                             showingFailedAlert.toggle()
-                        } label: {
-                            ContinueButton(username: $username)
                         }
                         .frame(height: 50)
                         .disabled(username.count < 1)
-                        .alert("Cannot Reset Password", isPresented: $showingFailedAlert) {
-                            Button("OK", role: .cancel) {}
-                        } message: {
-                            Text("This Apple Account is not valid or not supported.")
-                        }
                     }
                 }
                 .padding(.bottom, 50)
                 .padding(.horizontal, 25)
             }
         }
+        .alert("Cannot Reset Password", isPresented: $showingFailedAlert) {
+            Button("OK", role: .cancel) {}
+        } message: {
+            Text("This Apple Account is not valid or not supported.")
+        }
         .toolbar {
-            ToolbarItem(placement: .topBarLeading) {
-                Button {
+            ToolbarItem(placement: .topBarTrailing) {
+                Button("SIGN_IN_ACTION_CANCEL".localize(table: table), systemImage: "xmark") {
                     dismiss()
-                } label: {
-                    Text("SIGN_IN_ACTION_CANCEL".localize(table: table))
-                        .foregroundStyle(.accent)
                 }
-                .buttonStyle(.plain)
             }
         }
     }

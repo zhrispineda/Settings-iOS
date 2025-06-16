@@ -261,4 +261,5 @@ func requiredCapabilities(capability: Capabilities) -> Bool {
 
 #Preview {
     ContentView(stateManager: StateManager())
+        .environment(StateManager())
 }
