@@ -35,6 +35,8 @@
 		8319CE512B86DF8A007EC822 /* AppleAdvertisingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319CE502B86DF8A007EC822 /* AppleAdvertisingView.swift */; };
 		831C1A502CCE9E3300866498 /* HomeScreenSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 831C1A4F2CCE9E3300866498 /* HomeScreenSettings.xcstrings */; };
 		831C80412CA4998500306574 /* RecordSlomoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831C80402CA4998500306574 /* RecordSlomoView.swift */; };
+		831E35552E00B5EF00B666AE /* 26Pad.png in Resources */ = {isa = PBXBuildFile; fileRef = 831E35532E00B5EF00B666AE /* 26Pad.png */; };
+		831E35562E00B5EF00B666AE /* 26Phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 831E35542E00B5EF00B666AE /* 26Phone.png */; };
 		832877D92CAD8C7100013B0B /* Accessibility.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 832877D82CAD8C7100013B0B /* Accessibility.xcstrings */; };
 		832877DB2CAD915400013B0B /* AmbientSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 832877DA2CAD915400013B0B /* AmbientSettings.xcstrings */; };
 		832877DD2CAD95C300013B0B /* AppleAccountUI.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 832877DC2CAD95C300013B0B /* AppleAccountUI.xcstrings */; };
@@ -273,8 +275,6 @@
 		83D4CB762B7FF0B000D6087D /* WebContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D4CB752B7FF0B000D6087D /* WebContentView.swift */; };
 		83D5957B2CA5BF19003EF0CD /* RecordSoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D5957A2CA5BF19003EF0CD /* RecordSoundView.swift */; };
 		83D5BD542DB819F900F5B219 /* ConfigureIPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D5BD532DB819F900F5B219 /* ConfigureIPView.swift */; };
-		83D7E6A72DFC4CE2000E0443 /* 26Phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D7E6A62DFC4CE2000E0443 /* 26Phone.png */; };
-		83D7E6A82DFC4CE2000E0443 /* 26Pad.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D7E6A52DFC4CE2000E0443 /* 26Pad.png */; };
 		83DB888F2CAC97BF008218E6 /* AppleID.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83DB888E2CAC97BF008218E6 /* AppleID.xcstrings */; };
 		83DBCE062CCD957C00B33277 /* CameraSettings-TrueVideo.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83DBCE052CCD957C00B33277 /* CameraSettings-TrueVideo.xcstrings */; };
 		83DBCE092CCD9B0800B33277 /* AssistantMultilingualDetail.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83DBCE082CCD9B0800B33277 /* AssistantMultilingualDetail.xcstrings */; };
@@ -366,6 +366,8 @@
 		8319CE502B86DF8A007EC822 /* AppleAdvertisingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAdvertisingView.swift; sourceTree = "<group>"; };
 		831C1A4F2CCE9E3300866498 /* HomeScreenSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = HomeScreenSettings.xcstrings; sourceTree = "<group>"; };
 		831C80402CA4998500306574 /* RecordSlomoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSlomoView.swift; sourceTree = "<group>"; };
+		831E35532E00B5EF00B666AE /* 26Pad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 26Pad.png; sourceTree = "<group>"; };
+		831E35542E00B5EF00B666AE /* 26Phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 26Phone.png; sourceTree = "<group>"; };
 		832877D82CAD8C7100013B0B /* Accessibility.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Accessibility.xcstrings; sourceTree = "<group>"; };
 		832877DA2CAD915400013B0B /* AmbientSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AmbientSettings.xcstrings; sourceTree = "<group>"; };
 		832877DC2CAD95C300013B0B /* AppleAccountUI.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AppleAccountUI.xcstrings; sourceTree = "<group>"; };
@@ -610,8 +612,6 @@
 		83D4CB752B7FF0B000D6087D /* WebContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebContentView.swift; sourceTree = "<group>"; };
 		83D5957A2CA5BF19003EF0CD /* RecordSoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSoundView.swift; sourceTree = "<group>"; };
 		83D5BD532DB819F900F5B219 /* ConfigureIPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureIPView.swift; sourceTree = "<group>"; };
-		83D7E6A52DFC4CE2000E0443 /* 26Pad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 26Pad.png; sourceTree = "<group>"; };
-		83D7E6A62DFC4CE2000E0443 /* 26Phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 26Phone.png; sourceTree = "<group>"; };
 		83DB888E2CAC97BF008218E6 /* AppleID.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AppleID.xcstrings; sourceTree = "<group>"; };
 		83DBCE052CCD957C00B33277 /* CameraSettings-TrueVideo.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "CameraSettings-TrueVideo.xcstrings"; sourceTree = "<group>"; };
 		83DBCE082CCD9B0800B33277 /* AssistantMultilingualDetail.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AssistantMultilingualDetail.xcstrings; sourceTree = "<group>"; };
@@ -692,8 +692,8 @@
 			children = (
 				834F2BF22D6570FC00AD85CF /* SettingsSimulator.gif */,
 				8360825C2D13B04E00902254 /* SettingsPhysical.gif */,
-				83D7E6A52DFC4CE2000E0443 /* 26Pad.png */,
-				83D7E6A62DFC4CE2000E0443 /* 26Phone.png */,
+				831E35532E00B5EF00B666AE /* 26Pad.png */,
+				831E35542E00B5EF00B666AE /* 26Phone.png */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -1769,8 +1769,6 @@
 				834718E42CDFD6D1002D9BC9 /* PrivacyDisclosureUI.xcstrings in Resources */,
 				830976D12CDD1A0E0087F1A1 /* CoreFollowUp.xcstrings in Resources */,
 				833F0AD42B744D190036EAD2 /* Assets.xcassets in Resources */,
-				83D7E6A72DFC4CE2000E0443 /* 26Phone.png in Resources */,
-				83D7E6A82DFC4CE2000E0443 /* 26Pad.png in Resources */,
 				83A7E15A2CBF047B0037F1FB /* FontSettings.xcstrings in Resources */,
 				832877E62CAD9C6000013B0B /* Devices.xcstrings in Resources */,
 				83ACE71F2CD5BA200061528C /* Localizable-DataTypes.xcstrings in Resources */,
@@ -1787,6 +1785,8 @@
 				835874CC2DB2AE81005E4D01 /* AuthKitUI.xcstrings in Resources */,
 				8345656E2CAADFD6002BE49D /* CameraSettings.xcstrings in Resources */,
 				83CD1FAD2DB68F6C00366987 /* CameraSettings-CameraButton.xcstrings in Resources */,
+				831E35552E00B5EF00B666AE /* 26Pad.png in Resources */,
+				831E35562E00B5EF00B666AE /* 26Phone.png in Resources */,
 				832877DB2CAD915400013B0B /* AmbientSettings.xcstrings in Resources */,
 				8388E5342CD034EB00A3066D /* Location Services.xcstrings in Resources */,
 				83441A892CAF2B6A0022E193 /* Privacy.xcstrings in Resources */,
