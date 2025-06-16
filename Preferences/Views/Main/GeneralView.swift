@@ -16,7 +16,7 @@ struct GeneralView: View {
     let table = "General"
     
     var body: some View {
-        CustomList(title: "back".localize(table: "AXUILocalizedStrings")) {
+        CustomList {
             Section {
                 Placard(title: "General".localize(table: table), color: Color.gray, icon: "gear", description: "PLACARD_SUBTITLE".localize(table: "GeneralSettingsUI"), frameY: $frameY, opacity: $opacity)
             }
@@ -128,7 +128,7 @@ struct GeneralView: View {
             Section {
                 SLink("TRANSFER_OR_RESET_TITLE".localize(table: table), color: .gray, icon: "arrow.counterclockwise") {
                     if !UIDevice.IsSimulator {
-                        TransferResetView()
+                        BundleControllerView("/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework/GeneralSettingsUI", controller: "PSGTransferOrResetController", title: "TRANSFER_OR_RESET_TITLE", table: table)
                     } else {
                         Text(String())
                             .onAppear {

@@ -43,12 +43,6 @@ struct ContentView: View {
                         }
                     }
 
-//                    if UIDevice.IntelligenceCapability {
-//                        Button("Ready for Apple Intelligence") {
-//                            stateManager.selection = .appleIntelligence
-//                        }
-//                    }
-
                     // MARK: Radio Settings
                     if !UIDevice.IsSimulator {
                         Section {
@@ -162,10 +156,6 @@ struct ContentView: View {
                         }
                     }
 
-//                    if UIDevice.IntelligenceCapability {
-//                        NavigationLink("Ready for Apple Intelligence", destination: SiriView())
-//                    }
-
                     if !UIDevice.IsSimulator {
                         // MARK: Radio Settings
                         Section {
@@ -220,7 +210,7 @@ struct ContentView: View {
                         GeometryReader { geo in
                             List {
                                 if searchText.isEmpty {
-                                    SettingsSearchView()
+                                    SettingsSearchView(stateManager: stateManager)
                                 } else {
                                     ContentUnavailableView.search(text: searchText)
                                         .frame(minHeight: 0, idealHeight: geo.size.height, maxHeight: .infinity)

@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct AboutView: View {
-    // Variables
     @State private var showingModelNumber = false
     @AppStorage("ModelNumber") private var modelNumber = String()
     @AppStorage("RegulatoryModelNumber") private var regulatoryModelNumber = String()
@@ -54,20 +53,6 @@ struct AboutView: View {
                     capacityStorage = UIDevice.storageCapacity ?? getTotalStorage()!
                 }
             }
-            
-//            if !UIDevice.IsSimulator {
-//                Section {
-//                    NavigationLink(destination: AppleCareWarrantyView()) {
-//                        LabeledContent("AppleCare+", value: "Expires: 9/21/25")
-//                    }
-//                }
-//                
-//                Section {
-//                    NavigationLink("PARTS_AND_SERVICE_HISTORY".localize(table: "CoreRepairKit")) {
-//                        
-//                    }
-//                }
-//            }
             
             Section {
                 LabeledContent("SONGS".localize(table: UITable), value: "0")
@@ -121,7 +106,15 @@ struct AboutView: View {
                     
                     Section {
                         MonospacedLabel("ModemIMEI".localize(table: UITable), value: "00 000000 000000 0")
+                            .contextMenu {
+                                Button("Copy", systemImage: "document.on.document") {}
+                                Button("Barcode", systemImage: "barcode") {}
+                            }
                         MonospacedLabel("ModemIMEI2".localize(table: table), value: "00 000000 000000 0")
+                            .contextMenu {
+                                Button("Copy", systemImage: "document.on.document") {}
+                                Button("Barcode", systemImage: "barcode") {}
+                            }
                     } header: {
                         Text("AVAILABLE_SIMS".localize(table: table))
                     }
@@ -204,6 +197,12 @@ struct AboutView: View {
         }
         
         return randomNumber
+    }
+}
+
+struct AboutRoute: @preconcurrency Routable {
+    @MainActor func destination() -> AnyView {
+        AnyView(AboutView())
     }
 }
 

@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct SettingsSearchView: View {
+    var stateManager: StateManager
+
     var body: some View {
         Section("Suggestions") {
             Group {
@@ -30,5 +32,5 @@ struct SettingsSearchView: View {
 }
 
 #Preview {
-    SettingsSearchView()
+    SettingsSearchView(stateManager: StateManager())
 }
