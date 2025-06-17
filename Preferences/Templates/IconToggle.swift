@@ -53,15 +53,13 @@ struct IconToggle: View {
                 }
             } icon: {
                 IconView(id: text.localize(table: table), icon: icon, color: color, iconColor: icon == "airdrop" ? Color.blue : iconColor, lightOnly: lightOnlyIcons.contains(icon))
+                    .padding(.leading, 1)
             }
+            .padding(.leading, 5)
         }
     }
 }
 
 #Preview {
-    NavigationStack {
-        CustomList(title: "Networking") {
-            IconToggle("LIVE_ACTIVITIES", isOn: .constant(true), color: .blue, icon: "questionmark.circle", subtitle: "Example", table: "PSSystemPolicy")
-        }
-    }
+    ContentView(stateManager: StateManager())
 }
