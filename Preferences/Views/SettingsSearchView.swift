@@ -17,13 +17,13 @@ struct SettingsSearchView: View {
                     BundleControllerView("/System/Library/PrivateFrameworks/Settings/SoundsAndHapticsSettings.framework/SoundsAndHapticsSettings", controller: "SHSSoundsPrefController", title: "Sounds & Haptics")
                 }
                 SLink("Notifications", color: .red, icon: "bell.badge.fill") {
-                    AirDropView()
+                    NotificationsView()
                 }
                 SLink("Focus", color: .indigo, icon: "moon.fill") {
-                    AirDropView()
+                    FocusView()
                 }
                 SLink("Screen Time", color: .indigo, icon: "hourglass") {
-                    AirDropView()
+                    ScreenTimeView()
                 }
             }
             .navigationLinkIndicatorVisibility(.hidden)
@@ -32,5 +32,9 @@ struct SettingsSearchView: View {
 }
 
 #Preview {
-    SettingsSearchView(stateManager: StateManager())
+    NavigationStack {
+        List {
+            SettingsSearchView(stateManager: StateManager())
+        }
+    }
 }
