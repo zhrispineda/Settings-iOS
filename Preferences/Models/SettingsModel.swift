@@ -218,7 +218,7 @@ let simulatorSecuritySettings: [SettingsItem] = [
 /// Services Settings
 @MainActor
 let serviceSettings: [SettingsItem] = [
-    SettingsItem(type: .gameCenter, icon: "appleGameCenter", destination: AnyView(BundleControllerView("/System/Library/PrivateFrameworks/GameCenterUI.framework/GameCenterUI", controller: "GameCenterUI.SettingsContainerViewController", title: "Game Center"))),
+    SettingsItem(type: .gameCenter, icon: "com.apple.gamecenter.bubbles", destination: AnyView(BundleControllerView("/System/Library/PrivateFrameworks/GameCenterUI.framework/GameCenterUI", controller: "GameCenterUI.SettingsContainerViewController", title: "Game Center"))),
     SettingsItem(type: .icloud, icon: "com.apple.application-icon.icloud", destination: AnyView(EmptyView())),
     SettingsItem(type: .wallet, icon: "com.apple.Passbook", destination: AnyView(WalletView()))
 ]
@@ -226,7 +226,7 @@ let serviceSettings: [SettingsItem] = [
 /// Simulator Service Settings
 @MainActor
 let simulatorServicesSettings: [SettingsItem] = [
-    SettingsItem(type: .gameCenter, icon: "com.example", color: .white, destination: AnyView(BundleControllerView("/System/Library/PrivateFrameworks/GameCenterUI.framework/GameCenterUI", controller: "GameCenterUI.SettingsContainerViewController", title: "Game Center"))),
+    SettingsItem(type: .gameCenter, icon: "com.apple.gamecenter.bubbles", color: .white, destination: AnyView(BundleControllerView("/System/Library/PrivateFrameworks/GameCenterUI.framework/GameCenterUI", controller: "GameCenterUI.SettingsContainerViewController", title: "Game Center"))),
     SettingsItem(type: .icloud, icon: "com.apple.application-icon.icloud", destination: AnyView(EmptyView()))
 ]
 
