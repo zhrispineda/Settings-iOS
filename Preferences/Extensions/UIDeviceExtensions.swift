@@ -248,7 +248,17 @@ public extension UIDevice {
         // Fallback
         return ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] != nil && !configuration.forcePhysical
     }()
-    
+
+    /// Returns a Bool on whether the host is on a simulator/Mac.
+    static let IsSimulated: Bool = {
+        if let answer = MGHelper.read(key: "ulMliLomP737aAOJ/w/evA") { // IsSimulator key
+            return Bool(answer)!
+        }
+
+        // Fallback
+        return ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] != nil && !configuration.forcePhysical
+    }()
+
     /// Returns a Bool on whether the device is capable of Always On Display.
     static let AlwaysOnDisplayCapability: Bool = {
         if let answer = MGHelper.read(key: "2OOJf1VhaM7NxfRok3HbWQ") { // DeviceSupportsAlwaysOnDisplay key

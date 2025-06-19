@@ -26,13 +26,13 @@ struct IconView: View {
     var body: some View {
         ZStack {
             // Icon Background
-            if (icon == "Placeholder" || colorScheme == .dark) && !UIDevice.IsSimulator && !lightOnly {
+            if colorScheme == .dark && !icon.contains("com.") {
                 Image(systemName: "app.fill")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 30)
                     .foregroundStyle(LinearGradient(gradient: Gradient(colors: [.gray.opacity(0.20), .black.opacity(0.25)]), startPoint: .top, endPoint: .bottom))
-            } else {
+            } else if colorScheme == .light && !icon.contains("com.") {
                 Image(systemName: "app.fill")
                     .resizable()
                     .scaledToFit()
@@ -49,7 +49,7 @@ struct IconView: View {
                     .symbolRenderingMode(hierarchyIcons.contains(icon) ? .hierarchical : multicolorIcons.contains(icon) ? .multicolor : .none)
                     .foregroundStyle(colorScheme == .dark && !UIDevice.IsSimulator && !lightOnly ? color == .black ? .white : color : iconColor)
                     .scaleEffect(CGSize(width: 1.0, height: id == "CAMERA_BUTTON_TITLE".localize(table: "Accessibility-D93") ? -1.0 : 1.0))
-            } else if icon.contains("com.apple.graphic") || icon.contains("com.apple.application-") || icon.contains("com.apple.gamecenter") {
+            } else if icon.contains("com.apple.graphic") || icon.contains("com.apple.application-") || (icon.contains("com.apple.gamecenter") && !UIDevice.IsSimulated) {
                 if let graphicIcon = UIImage.icon(forUTI: icon) {
                     Image(uiImage: graphicIcon)
                 }
