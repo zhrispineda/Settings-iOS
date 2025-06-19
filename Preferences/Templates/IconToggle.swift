@@ -31,7 +31,7 @@ struct IconToggle: View {
     var table: String
     private let lightOnlyIcons: Set<String> = ["airdrop", "shareplay"]
     
-    init(_ text: String, isOn: Binding<Bool>, color: Color = Color.accent, icon: String = "", subtitle: String = "", iconColor: Color = Color.white, table: String = "Localizable") {
+    init(_ text: String, isOn: Binding<Bool>, color: Color = Color.clear, icon: String = "", subtitle: String = "", iconColor: Color = Color.white, table: String = "Localizable") {
         self.text = text
         self._isOn = isOn
         self.color = color

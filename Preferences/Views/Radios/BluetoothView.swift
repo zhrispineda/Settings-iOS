@@ -47,7 +47,7 @@ struct BluetoothView: View {
     var body: some View {
         CustomList {
             Section {
-                Placard(title: "BLUETOOTH".localize(table: table), color: Color.blue, icon: "bluetooth", description: "\("BLUETOOTHPLACARDINFO".localize(table: table)) [\("LEARN_MORE".localize(table: table))](pref://helpkit)", frameY: $frameY, opacity: $opacity)
+                Placard(title: "BLUETOOTH".localize(table: table), icon: "com.apple.graphic-icon.bluetooth", description: "\("BLUETOOTHPLACARDINFO".localize(table: table)) [\("LEARN_MORE".localize(table: table))](pref://helpkit)", frameY: $frameY, opacity: $opacity)
                 Toggle("BLUETOOTH".localize(table: table), isOn: $bluetoothEnabled.animation())
             } footer: {
                 if bluetoothEnabled {
@@ -61,9 +61,7 @@ struct BluetoothView: View {
                 Section {
                     ForEach(bluetoothManager.discoveredPeripherals, id: \.identifier) { peripheral in
                         if let name = peripheral.name, name != "Unknown" {
-                            Button(name) {
-                                
-                            }.foregroundStyle(.primary)
+                            Button(name) {}.foregroundStyle(.primary)
                         }
                     }
                 } header: {

@@ -46,7 +46,7 @@ struct ContentView: View {
                     // MARK: Radio Settings
                     if !UIDevice.IsSimulator {
                         Section {
-                            IconToggle("Airplane Mode", isOn: $airplaneModeEnabled, color: Color.orange, icon: "airplane")
+                            IconToggle("Airplane Mode", isOn: $airplaneModeEnabled, color: Color.orange, icon: "com.apple.graphic-icon.airplane-mode")
                             ForEach(radioSettings) { setting in
                                 if !phoneOnly.contains(setting.id) && requiredCapabilities(capability: setting.capability) {
                                     Button {
@@ -159,7 +159,7 @@ struct ContentView: View {
                     if !UIDevice.IsSimulator {
                         // MARK: Radio Settings
                         Section {
-                            IconToggle("Airplane Mode", isOn: $airplaneModeEnabled, color: Color.orange, icon: "airplane")
+                            IconToggle("Airplane Mode", isOn: $airplaneModeEnabled, icon: "com.apple.graphic-icon.airplane-mode")
                             ForEach(radioSettings) { setting in
                                 if setting.capability == .none {
                                     SLink(setting.id, color: setting.color, icon: setting.icon, status: setting.id == "Wi-Fi" ? (wifiEnabled && !airplaneModeEnabled ? "Not Connected" : "Off") : setting.id == "Bluetooth" ? (bluetoothEnabled ? "On" : "Off") : "") {

@@ -31,8 +31,8 @@ struct NetworkView: View {
                 }
             } else {
                 Section {
-                    Placard(title: "kWFLocWiFiPlacardTitle".localize(table: table), color: Color.blue, icon: "wifi", description: NSLocalizedString("kWFLocWiFiPlacardSubtitle", tableName: table, comment: "").replacing("helpkit", with: "pref"), frameY: $frameY, opacity: $opacity)
-                    
+                    Placard(title: "kWFLocWiFiPlacardTitle".localize(table: table), icon: "com.apple.graphic-icon.wifi", description: NSLocalizedString("kWFLocWiFiPlacardSubtitle", tableName: table, comment: "").replacing("helpkit", with: "pref"), frameY: $frameY, opacity: $opacity)
+
                     Toggle(isOn: $wifiEnabled) {
                         HStack {
                             Image(systemName: "checkmark")

@@ -49,12 +49,14 @@ struct IconView: View {
                     .symbolRenderingMode(hierarchyIcons.contains(icon) ? .hierarchical : multicolorIcons.contains(icon) ? .multicolor : .none)
                     .foregroundStyle(colorScheme == .dark && !UIDevice.IsSimulator && !lightOnly ? color == .black ? .white : color : iconColor)
                     .scaleEffect(CGSize(width: 1.0, height: id == "CAMERA_BUTTON_TITLE".localize(table: "Accessibility-D93") ? -1.0 : 1.0))
-            } else if icon.contains("custom") {
-                Image(icon)
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: smallerIcons.contains(icon) ? 13 : 20)
-                    .foregroundStyle(.gray, .white)
+            } else if icon.contains("com.apple.graphic") || icon.contains("com.apple.application-") {
+                if let graphicIcon = UIImage.icon(forUTI: icon) {
+                    Image(uiImage: graphicIcon)
+                }
+            } else if icon.contains("com.") {
+                if let safariIcon = UIImage.icon(forBundleID: icon) {
+                    Image(uiImage: safariIcon)
+                }
             } else {
                 Image(icon)
                     .resizable()
@@ -65,7 +67,7 @@ struct IconView: View {
         }
         .overlay {
             // Add outline around icon background
-            if color == .white || color == .black || colorScheme == .dark {
+            if (color == .white || color == .black || colorScheme == .dark) && !icon.contains("com.") {
                 RoundedRectangle(cornerRadius: 7)
                     .stroke(colorScheme == .light && color == .white ? Color.black.opacity(0.5) : colorScheme == .dark ? Color.white.opacity(0.5) : Color.black.opacity(0.5), lineWidth: 0.25)
             }

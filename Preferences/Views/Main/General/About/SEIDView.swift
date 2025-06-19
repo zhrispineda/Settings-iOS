@@ -17,14 +17,14 @@ struct SEIDView: View {
 
     private func getRandomSEID(from input: String) -> String {
         guard !input.isEmpty else { return "" }
-        
+
         let allCharacters = "0123456789ABCDEF"
         var randomString = String(input.prefix(2))
-        
+
         for _ in 2..<input.count {
             randomString.append(allCharacters.randomElement()!)
         }
-        
+
         return randomString
     }
 }

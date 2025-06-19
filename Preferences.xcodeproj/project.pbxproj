@@ -183,6 +183,7 @@
 		838273A32B7FD37B000F4228 /* TVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838273A22B7FD37B000F4228 /* TVView.swift */; };
 		838273A52B7FD4CF000F4228 /* AppRestrictionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838273A42B7FD4CF000F4228 /* AppRestrictionsView.swift */; };
 		8383CD082C9C842A00BA06A0 /* SystemFontsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8383CD072C9C842A00BA06A0 /* SystemFontsDetailView.swift */; };
+		8383FDFA2E0370760021D274 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8383FDF92E0370760021D274 /* UIImageExtensions.swift */; };
 		8388C0B22CD473DB00FA7D4C /* WellnessDashboard-Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8388C0B12CD473DB00FA7D4C /* WellnessDashboard-Localizable.xcstrings */; };
 		8388E5342CD034EB00A3066D /* Location Services.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8388E5332CD034EB00A3066D /* Location Services.xcstrings */; };
 		8388E5372CD0733400A3066D /* LocationServicesPrivacy.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8388E5362CD0733400A3066D /* LocationServicesPrivacy.xcstrings */; };
@@ -516,6 +517,7 @@
 		838273A22B7FD37B000F4228 /* TVView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVView.swift; sourceTree = "<group>"; };
 		838273A42B7FD4CF000F4228 /* AppRestrictionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRestrictionsView.swift; sourceTree = "<group>"; };
 		8383CD072C9C842A00BA06A0 /* SystemFontsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemFontsDetailView.swift; sourceTree = "<group>"; };
+		8383FDF92E0370760021D274 /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
 		8388C0B12CD473DB00FA7D4C /* WellnessDashboard-Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "WellnessDashboard-Localizable.xcstrings"; sourceTree = "<group>"; };
 		8388E5332CD034EB00A3066D /* Location Services.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "Location Services.xcstrings"; sourceTree = "<group>"; };
 		8388E5362CD0733400A3066D /* LocationServicesPrivacy.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = LocationServicesPrivacy.xcstrings; sourceTree = "<group>"; };
@@ -993,6 +995,7 @@
 				83DFA56C2DA9E17E004C3DD5 /* UIViewControllerExtensions.swift */,
 				8372142C2D91C5E30027C51D /* UIWindowExtensions.swift */,
 				8306AE6B2D0665A400D1AE5D /* ViewExtensions.swift */,
+				8383FDF92E0370760021D274 /* UIImageExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1868,6 +1871,7 @@
 				83D3FB232C8102B200268E54 /* ContactsView.swift in Sources */,
 				83B5504E2C165A85002DA622 /* BatteryView.swift in Sources */,
 				83F388632D0B6E8500085103 /* IconView.swift in Sources */,
+				8383FDFA2E0370760021D274 /* UIImageExtensions.swift in Sources */,
 				8356839B2B755AB3000FB136 /* KeyboardView.swift in Sources */,
 				838C232E2B7497530053D4C5 /* AboutView.swift in Sources */,
 				837F1DCB2B8AEF1A00665EAB /* DownloadsView.swift in Sources */,

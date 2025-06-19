@@ -36,7 +36,7 @@ struct SLink<Content: View>: View {
     var badgeCount: Int
     var destination: Content
     
-    init(_ text: String, color: Color = Color.accent, iconColor: Color = Color.white, icon: String = "", lightOnly: Bool = false, subtitle: String = "", status: String = "", badgeCount: Int = 0, @ViewBuilder destination: @escaping () -> Content) {
+    init(_ text: String, color: Color = Color.clear, iconColor: Color = Color.white, icon: String = "", lightOnly: Bool = false, subtitle: String = "", status: String = "", badgeCount: Int = 0, @ViewBuilder destination: @escaping () -> Content) {
         self.text = text
         self.color = color
         self.iconColor = iconColor
@@ -48,7 +48,7 @@ struct SLink<Content: View>: View {
         self.destination = destination()
     }
     
-    init(_ text: String, color: Color = Color.accent, iconColor: Color = Color.white, icon: String = "", lightOnly: Bool = false, subtitle: String = "", status: String = "", badgeCount: Int = 0, destination: Content) {
+    init(_ text: String, color: Color = Color.clear, iconColor: Color = Color.white, icon: String = "", lightOnly: Bool = false, subtitle: String = "", status: String = "", badgeCount: Int = 0, destination: Content) {
         self.text = text
         self.color = color
         self.iconColor = iconColor

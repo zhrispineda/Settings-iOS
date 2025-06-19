@@ -141,108 +141,108 @@ let followUpSettings: [SettingsItem] = [
 /// Radio Settings
 @MainActor
 let radioSettings: [SettingsItem] = [
-    SettingsItem(type: .wifi, icon: "wifi", color: .blue, destination: AnyView(NetworkView())),
-    SettingsItem(type: .ethernet, icon: "ethernet", capability: .ethernet, color: .gray, destination: AnyView(EmptyView())),
-    SettingsItem(type: .bluetooth, icon: "bluetooth", color: .blue, destination: AnyView(BluetoothView())),
-    SettingsItem(type: .cellular, icon: "antenna.radiowaves.left.and.right", capability: .cellular, color: .green, destination: AnyView(CellularView())),
+    SettingsItem(type: .wifi, icon: "com.apple.graphic-icon.wifi", color: .blue, destination: AnyView(NetworkView())),
+    SettingsItem(type: .ethernet, icon: "com.apple.graphic-icon.ethernet", capability: .ethernet, color: .gray, destination: AnyView(EmptyView())),
+    SettingsItem(type: .bluetooth, icon: "com.apple.graphic-icon.bluetooth", color: .blue, destination: AnyView(BluetoothView())),
+    SettingsItem(type: .cellular, icon: "com.apple.graphic-icon.cellular-settings", capability: .cellular, color: .green, destination: AnyView(CellularView())),
     //SettingsItem(type: .personalHotspot, icon: "personalhotspot", capability: .cellular, color: .green, destination: AnyView(HotspotView())),
-    SettingsItem(type: .battery, icon: "battery.100percent", color: .green, destination: AnyView(BatteryView())),
+    SettingsItem(type: .battery, icon: "com.apple.graphic-icon.battery", color: .green, destination: AnyView(BatteryView())),
     //SettingsItem(type: .satellite, icon: "satellite.fill", color: .black, destination: AnyView(EmptyView())),
 ]
 
 /// Attention Settings
 @MainActor
 let attentionSettings: [SettingsItem] = [
-    SettingsItem(type: .notifications, icon: "bell.badge.fill", color: .red, destination: AnyView(NotificationsView())),
-    SettingsItem(type: .sounds, icon: "speaker.3.fill", capability: .sounds, color: .pink, destination: AnyView(BundleControllerView("/System/Library/PrivateFrameworks/Settings/SoundsAndHapticsSettings.framework/SoundsAndHapticsSettings", controller: "SHSSoundsPrefController", title: "Sounds"))),
-    SettingsItem(type: .soundsHaptics, icon: "speaker.3.fill", capability: .soundsHaptics, color: .pink, destination: AnyView(BundleControllerView("/System/Library/PrivateFrameworks/Settings/SoundsAndHapticsSettings.framework/SoundsAndHapticsSettings", controller: "SHSSoundsPrefController", title: "Sounds & Haptics"))),
-    SettingsItem(type: .focus, icon: "moon.fill", color: .indigo, destination: AnyView(FocusView())),
-    SettingsItem(type: .screenTime, icon: "hourglass", color: .indigo, destination: AnyView(ScreenTimeView())),
+    SettingsItem(type: .notifications, icon: "com.apple.graphic-icon.notifications", destination: AnyView(NotificationsView())),
+    SettingsItem(type: .sounds, icon: "com.apple.graphic-icon.sound", capability: .sounds, destination: AnyView(BundleControllerView("/System/Library/PrivateFrameworks/Settings/SoundsAndHapticsSettings.framework/SoundsAndHapticsSettings", controller: "SHSSoundsPrefController", title: "Sounds"))),
+    SettingsItem(type: .soundsHaptics, icon: "com.apple.graphic-icon.sound", capability: .soundsHaptics, destination: AnyView(BundleControllerView("/System/Library/PrivateFrameworks/Settings/SoundsAndHapticsSettings.framework/SoundsAndHapticsSettings", controller: "SHSSoundsPrefController", title: "Sounds & Haptics"))),
+    SettingsItem(type: .focus, icon: "com.apple.graphic-icon.focus", destination: AnyView(FocusView())),
+    SettingsItem(type: .screenTime, icon: "com.apple.graphic-icon.screen-time", destination: AnyView(ScreenTimeView())),
 ]
 
 /// Simulator Attention Settings
 @MainActor
 let attentionSimulatorSettings: [SettingsItem] = [
-    SettingsItem(type: .screenTime, icon: "hourglass", color: .indigo, destination: AnyView(ScreenTimeView())),
+    SettingsItem(type: .screenTime, icon: "com.apple.graphic-icon.screen-time", destination: AnyView(ScreenTimeView())),
 ]
 
 /// Main Settings
 @MainActor
 let mainSettings: [SettingsItem] = [
-    SettingsItem(type: .general, icon: "gear", color: .gray, destination: AnyView(GeneralView())),
-    SettingsItem(type: .accessibility, icon: "accessibility", color: .blue, destination: AnyView(AccessibilityView())),
-    SettingsItem(type: .actionButton, icon: "iphone.action.button.arrow.right", capability: .actionButton, color: .blue, destination: AnyView(BundleControllerView("ActionButtonSettings", controller: "ActionButtonSettings"))),
-    SettingsItem(type: .applePencil, icon: "pencil", color: .gray, destination: AnyView(ApplePencilView())),
-    SettingsItem(type: .appleIntelligence, icon: "appleIntelligence", capability: .appleIntelligence, color: Color(UIColor.systemBackground), destination: AnyView(SiriView())),
-    SettingsItem(type: .camera, icon: "camera.fill", color: .gray, destination: AnyView(CameraView())),
-    SettingsItem(type: .controlCenter, icon: "switch.2", color: .gray, destination: AnyView(BundleControllerView("ControlCenterSettings", controller: "ControlCenterSettingsViewController", title: "Control Center"))),
-    SettingsItem(type: .displayBrightness, icon: "sun.max.fill", color: .blue, destination: AnyView(DisplayBrightnessView())),
-    SettingsItem(type: .homeScreenAppLibrary, icon: UIDevice.iPhone ? "apps.iphone" : "apps.ipad", color: .blue, destination: AnyView(HomeScreenAppLibraryView())),
-    SettingsItem(type: .multitaskGestures, icon: "squares.leading.rectangle", color: .blue, destination: AnyView(BundleControllerView("MultitaskingAndGesturesSettings", controller: "MultitaskingAndGesturesSettings", title: "Multitasking & Gestures"))),
-    SettingsItem(type: .search, icon: "magnifyingglass", color: .gray, destination: AnyView(SearchView())),
-    SettingsItem(type: .siri, icon: "appleSiri", capability: .siri, color: Color(UIColor.systemBackground), destination: AnyView(SiriView())),
-    SettingsItem(type: .standby, icon: "clock.filled.and.widget.filled", color: .black, destination: AnyView(StandByView())),
-    SettingsItem(type: .wallpaper, icon: "apple.photos", color: .cyan, destination: AnyView(BundleControllerView("WallpaperSettings", controller: "WallpaperSettingsRootViewController"))),
+    SettingsItem(type: .general, icon: "com.apple.graphic-icon.gear", destination: AnyView(GeneralView())),
+    SettingsItem(type: .accessibility, icon: "com.apple.graphic-icon.accessibility", destination: AnyView(AccessibilityView())),
+    SettingsItem(type: .actionButton, icon: "com.apple.graphic-icon.iphone-action-button", capability: .actionButton, destination: AnyView(BundleControllerView("ActionButtonSettings", controller: "ActionButtonSettings"))),
+    SettingsItem(type: .applePencil, icon: "com.apple.graphic-icon.pencil", destination: AnyView(ApplePencilView())),
+    SettingsItem(type: .appleIntelligence, icon: "com.apple.graphic-icon.intelligence", capability: .appleIntelligence, destination: AnyView(SiriView())),
+    SettingsItem(type: .camera, icon: "com.apple.graphic-icon.camera", destination: AnyView(CameraView())),
+    SettingsItem(type: .controlCenter, icon: "com.apple.graphic-icon.control-center", destination: AnyView(BundleControllerView("ControlCenterSettings", controller: "ControlCenterSettingsViewController", title: "Control Center"))),
+    SettingsItem(type: .displayBrightness, icon: "com.apple.graphic-icon.display", destination: AnyView(DisplayBrightnessView())),
+    SettingsItem(type: .homeScreenAppLibrary, icon: UIDevice.iPhone ? "com.apple.graphic-icon.apps-on-iphone" : "com.apple.graphic-icon.apps-on-ipad", destination: AnyView(HomeScreenAppLibraryView())),
+    SettingsItem(type: .multitaskGestures, icon: "com.apple.graphic-icon.stage-manager", destination: AnyView(BundleControllerView("MultitaskingAndGesturesSettings", controller: "MultitaskingAndGesturesSettings", title: "Multitasking & Gestures"))),
+    SettingsItem(type: .search, icon: "com.apple.graphic-icon.search", destination: AnyView(SearchView())),
+    SettingsItem(type: .siri, icon: "com.apple.application-icon.siri", capability: .siri, destination: AnyView(SiriView())),
+    SettingsItem(type: .standby, icon: "com.apple.graphic-icon.standby", destination: AnyView(StandByView())),
+    SettingsItem(type: .wallpaper, icon: "com.apple.graphic-icon.wallpaper", destination: AnyView(BundleControllerView("WallpaperSettings", controller: "WallpaperSettingsRootViewController"))),
 ]
 
 /// Simulator Main Settings
 @MainActor
 let simulatorMainSettings: [SettingsItem] = [
-    SettingsItem(type: .general, icon: "gear", color: .gray, destination: AnyView(GeneralView())),
-    SettingsItem(type: .accessibility, icon: "accessibility", color: .blue, destination: AnyView(AccessibilityView())),
-    SettingsItem(type: .siri, icon: "appleIntelligenceSimulator", capability: .appleIntelligence, color: Color(UIColor.systemBackground), destination: AnyView(SiriView())),
-    SettingsItem(type: .actionButton, icon: "iphone.action.button.arrow.right", capability: .actionButton, color: .blue, destination: AnyView(BundleControllerView("ActionButtonSettings", controller: "ActionButtonSettings"))),
-    SettingsItem(type: .camera, icon: "camera.fill", color: .gray, destination: AnyView(CameraView())),
-    SettingsItem(type: .homeScreenAppLibrary, icon: "apps.iphone", color: .blue, destination: AnyView(HomeScreenAppLibraryView())),
-    SettingsItem(type: .multitaskGestures, icon: "squares.leading.rectangle", color: .blue, destination: AnyView(BundleControllerView("MultitaskingAndGesturesSettings", controller: "MultitaskingAndGesturesSettings", title: "Multitasking & Gestures"))),
-    SettingsItem(type: .search, icon: "magnifyingglass", color: .gray, destination: AnyView(SearchView())),
-    SettingsItem(type: .siri, icon: "appleSiri", capability: .siri, color: Color(UIColor.systemBackground), destination: AnyView(SiriView())),
-    SettingsItem(type: .standby, icon: "clock.filled.and.widget.filled", color: .black, destination: AnyView(StandByView())),
+    SettingsItem(type: .general, icon: "com.apple.graphic-icon.gear", destination: AnyView(GeneralView())),
+    SettingsItem(type: .accessibility, icon: "com.apple.graphic-icon.accessibility", destination: AnyView(AccessibilityView())),
+    SettingsItem(type: .siri, icon: "com.apple.graphic-icon.intelligence", capability: .appleIntelligence, destination: AnyView(SiriView())),
+    SettingsItem(type: .actionButton, icon: "com.apple.graphic-icon.iphone-action-button", capability: .actionButton, destination: AnyView(BundleControllerView("ActionButtonSettings", controller: "ActionButtonSettings"))),
+    SettingsItem(type: .camera, icon: "com.apple.graphic-icon.camera", destination: AnyView(CameraView())),
+    SettingsItem(type: .homeScreenAppLibrary, icon: UIDevice.iPhone ? "com.apple.graphic-icon.apps-on-iphone" : "com.apple.graphic-icon.apps-on-ipad", destination: AnyView(HomeScreenAppLibraryView())),
+    SettingsItem(type: .multitaskGestures, icon: "com.apple.graphic-icon.stage-manager", destination: AnyView(BundleControllerView("MultitaskingAndGesturesSettings", controller: "MultitaskingAndGesturesSettings", title: "Multitasking & Gestures"))),
+    SettingsItem(type: .search, icon: "com.apple.graphic-icon.search", destination: AnyView(SearchView())),
+    SettingsItem(type: .siri, icon: "com.apple.graphic-icon.intelligence", capability: .siri, destination: AnyView(SiriView())),
+    SettingsItem(type: .standby, icon: "com.apple.graphic-icon.standby", destination: AnyView(StandByView())),
 ]
 
 /// Security Settings
 @MainActor
 let securitySettings: [SettingsItem] = [
-    SettingsItem(type: .faceIDPasscode, icon: "faceid", capability: .faceID, color: .green, destination: AnyView(BiometricPasscodeView())),
-    SettingsItem(type: .touchIDPasscode, icon: "touchid", capability: .touchID, color: .white, destination: AnyView(BiometricPasscodeView())),
-    SettingsItem(type: .emergencySOS, icon: "sos", color: .red, destination: AnyView(BundleControllerView("SOSSettings", controller: "SOSSettingsController", title: "Emergency SOS"))),
-    SettingsItem(type: .privacySecurity, icon: "hand.raised.fill", color: .blue, destination: AnyView(PrivacySecurityView()))
+    SettingsItem(type: .faceIDPasscode, icon: "com.apple.graphic-icon.face-id", capability: .faceID, destination: AnyView(BiometricPasscodeView())),
+    SettingsItem(type: .touchIDPasscode, icon: "com.apple.graphic-icon.touch-id", capability: .touchID, destination: AnyView(BiometricPasscodeView())),
+    SettingsItem(type: .emergencySOS, icon: "com.apple.graphic-icon.emergency-sos", destination: AnyView(BundleControllerView("SOSSettings", controller: "SOSSettingsController", title: "Emergency SOS"))),
+    SettingsItem(type: .privacySecurity, icon: "com.apple.graphic-icon.privacy", destination: AnyView(PrivacySecurityView()))
 ]
 
 /// Simulator Security Settings
 @MainActor
 let simulatorSecuritySettings: [SettingsItem] = [
-    SettingsItem(type: .privacySecurity, icon: "hand.raised.fill", color: .blue, destination: AnyView(PrivacySecurityView()))
+    SettingsItem(type: .privacySecurity, icon: "com.apple.graphic-icon.privacy", destination: AnyView(PrivacySecurityView()))
 ]
 
 /// Services Settings
 @MainActor
 let serviceSettings: [SettingsItem] = [
     SettingsItem(type: .gameCenter, icon: "appleGameCenter", destination: AnyView(BundleControllerView("/System/Library/PrivateFrameworks/GameCenterUI.framework/GameCenterUI", controller: "GameCenterUI.SettingsContainerViewController", title: "Game Center"))),
-    SettingsItem(type: .icloud, icon: "iCloud", destination: AnyView(EmptyView())),
-    SettingsItem(type: .wallet, icon: "appleWallet", destination: AnyView(WalletView()))
+    SettingsItem(type: .icloud, icon: "com.apple.application-icon.icloud", destination: AnyView(EmptyView())),
+    SettingsItem(type: .wallet, icon: "com.apple.Passbook", destination: AnyView(WalletView()))
 ]
 
 /// Simulator Service Settings
 @MainActor
 let simulatorServiceSettings: [SettingsItem] = [
     SettingsItem(type: .gameCenter, icon: "Placeholder", color: .white, destination: AnyView(BundleControllerView("/System/Library/PrivateFrameworks/GameCenterUI.framework/GameCenterUI", controller: "GameCenterUI.SettingsContainerViewController", title: "Game Center"))),
-    SettingsItem(type: .icloud, icon: "iCloudSimulator", destination: AnyView(EmptyView())),
-    SettingsItem(type: .wallet, icon: "appleWallet", destination: AnyView(WalletView()))
+    SettingsItem(type: .icloud, icon: "com.apple.application-icon.icloud", destination: AnyView(EmptyView())),
+    SettingsItem(type: .wallet, icon: "com.apple.Passbook", destination: AnyView(WalletView()))
 ]
 
 /// App Settings
 @MainActor
 let appsSettings: [SettingsItem] = [
-    SettingsItem(type: .apps, icon: "app.grid.3x3", color: .indigo, destination: AnyView(AppsView()))
+    SettingsItem(type: .apps, icon: "com.apple.graphic-icon.home-screen", destination: AnyView(AppsView()))
 ]
 
 /// Developer Settings
 @MainActor
 let developerSettings: [SettingsItem] = [
-    SettingsItem(type: .developer, icon: "hammer.fill", color: .gray, destination: AnyView(BundleControllerView("DeveloperSettings", controller: "DTSettings", title: "Developer"))),
-    SettingsItem(type: .carrierSettings, icon: "phone.fill", capability: .isInternal, color: .blue, destination: AnyView(EmptyView())),
-    SettingsItem(type: .internalSettings, icon: "gear", capability: .isInternal, color: .blue, destination: AnyView(EmptyView()))
+    SettingsItem(type: .developer, icon: "com.apple.graphic-icon.developer-tools", destination: AnyView(BundleControllerView("DeveloperSettings", controller: "DTSettings", title: "Developer"))),
+    SettingsItem(type: .carrierSettings, icon: "com.apple.graphic-icon.carrier-settings", capability: .isInternal, destination: AnyView(EmptyView())),
+    SettingsItem(type: .internalSettings, icon: "com.apple.graphic-icon.internal-settings", capability: .isInternal, destination: AnyView(EmptyView()))
 ]
 
 /// Combined Settings

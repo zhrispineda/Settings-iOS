@@ -18,7 +18,7 @@ import SwiftUI
 /// - Parameter description: The `String` to display as the description below the title.
 struct Placard: View {
     var title: String
-    var color = Color.accent
+    var color = Color.clear
     var iconColor = Color.white
     var icon = ""
     var description = ""
