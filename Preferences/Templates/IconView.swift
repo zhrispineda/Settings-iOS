@@ -1,8 +1,3 @@
-/*
-Abstract:
-A ZStack structure for creating an icon view; building the background, icon, and overlay.
-*/
-
 import SwiftUI
 
 /// A ZStack structure for creating an icon view; building the background, icon, and overlay.
@@ -14,7 +9,7 @@ import SwiftUI
 /// - Parameter icon: The `String` name of the image asset or symbol.
 /// - Parameter color: The `Color` of the background.
 /// - Parameter iconColor: The `Color` of the icon itself.
-/// - Parameter lightonly: The `Bool` for whether the icon should always be a light mode icon.
+/// - Parameter lightOnly: The `Bool` for whether the icon should always be a light mode icon.
 struct IconView: View {
     @Environment(\.colorScheme) private var colorScheme
     let id: String
@@ -40,13 +35,13 @@ struct IconView: View {
                     .foregroundStyle(color.gradient)
             }
             
-            // Check if icon is an SF Symbol or an image asset
-            if UIImage(systemName: icon) != nil || internalIcons.contains(icon) {
-                Image(_internalSystemName: icon)
+            // Check if `icon` is an image asset, graphic/icon, or fallback to symbol
+            if UIImage(named: icon) != nil {
+                Image(icon)
                     .resizable()
                     .scaledToFit()
-                    .frame(width: smallerIcons.contains(icon) ? 13 : 20)
-                    .foregroundStyle(colorScheme == .dark && !lightOnly && color != .black ? color : iconColor)
+                    .frame(width: 30)
+                    .clipShape(RoundedRectangle(cornerRadius: 6))
             } else if icon.contains("com.apple.graphic") || icon.lowercased().contains("com.apple.a") || (icon.contains("com.apple.gamecenter") && !UIDevice.IsSimulated) {
                 if let graphicIcon = UIImage.icon(forUTI: icon) {
                     Image(uiImage: graphicIcon)
@@ -56,11 +51,9 @@ struct IconView: View {
                     Image(uiImage: safariIcon)
                 }
             } else {
-                Image(icon)
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 30)
-                    .clipShape(RoundedRectangle(cornerRadius: 6))
+                Image(_internalSystemName: icon)
+                    .font(.headline)
+                    .foregroundStyle(colorScheme == .dark && !lightOnly && color != .black ? color : iconColor)
             }
         }
         .overlay {

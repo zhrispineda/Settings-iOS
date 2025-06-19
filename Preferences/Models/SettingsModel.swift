@@ -119,10 +119,6 @@ struct SettingsItem<Content: View>: Identifiable {
     let destination: Content
 }
 
-// MARK: Icons
-let smallerIcons: Set<String> = ["apple.logo", "appletvremote.gen4.fill", "apps.iphone", "apps.ipad", "arrow.counterclockwise", "bluetooth", "checkmark.seal.text.page.fill", "ear", "hand.raised.fill", "hourglass", "ipad.gen2", "iphone.badge.dot.radiowaves.up.forward", "iphone.gen1", "iphone.gen3", "mic.fill", "network.connected.to.line.below", "text.book.closed.fill"]
-let internalIcons: Set<String> = ["airdrop", "app.grid.3x3", "arrow.clockwise.app.stack.fill", "arrowtriangles.up.right.down.left.magnifyingglass", "bluetooth", "carplay", "chevron.3.up.perspective", "clock.filled.and.widget.filled", "ethernet", "eye.tracking", "figure.run.motion", "ipad.top.button.arrow.down", "iphone.action.button.arrow.right", "iphone.badge.dot.radiowaves.up.forward", "iphone.side.button.arrow.left", "keyboard.badge.waveform.fill", "key.dots.fill", "lock.and.ring.2", "lock.square.dotted", "nearby.interactions", "network.connected.to.line.below", "pencil.and.sparkles", "person.badge.waveform.fill", "ring.radiowaves.right", "satellite.fill", "sensorkit", "siri", "speaker.eye.fill", "voice.control", "waveform.arrow.triangle.branch.right"]
-
 // MARK: - Settings Layout
 
 /// Device-restricted views
@@ -142,9 +138,9 @@ let radioSettings: [SettingsItem] = [
     SettingsItem(type: .ethernet, icon: "com.apple.graphic-icon.ethernet", capability: .ethernet, destination: AnyView(EmptyView())),
     SettingsItem(type: .bluetooth, icon: "com.apple.graphic-icon.bluetooth", destination: AnyView(BluetoothView())),
     SettingsItem(type: .cellular, icon: "com.apple.graphic-icon.cellular-settings", capability: .cellular, destination: AnyView(CellularView())),
-    //SettingsItem(type: .personalHotspot, icon: "personalhotspot", capability: .cellular, color: .green, destination: AnyView(HotspotView())),
+    //SettingsItem(type: .personalHotspot, icon: "com.apple.graphic-icon.personal-hotspot", capability: .cellular, destination: AnyView(HotspotView())),
     SettingsItem(type: .battery, icon: "com.apple.graphic-icon.battery", destination: AnyView(CustomViewController("/System/Library/PreferenceBundles/BatteryUsageUI.bundle/BatteryUsageUI", controller: "BatteryUIController"))),
-    //SettingsItem(type: .satellite, icon: "satellite.fill", color: .black, destination: AnyView(EmptyView())),
+    //SettingsItem(type: .satellite, icon: "com.apple.graphic-icon.satellite", destination: AnyView(EmptyView())),
 ]
 
 /// Attention Settings
@@ -223,7 +219,7 @@ let serviceSettings: [SettingsItem] = [
 /// Simulator Service Settings
 @MainActor
 let simulatorServicesSettings: [SettingsItem] = [
-    SettingsItem(type: .gameCenter, icon: "com.apple.gamecenter.bubbles", color: .white, destination: AnyView(BundleControllerView("/System/Library/PrivateFrameworks/GameCenterUI.framework/GameCenterUI", controller: "GameCenterUI.SettingsContainerViewController", title: "Game Center"))),
+    SettingsItem(type: .gameCenter, icon: "com.apple.gamecenter.bubbles", destination: AnyView(BundleControllerView("/System/Library/PrivateFrameworks/GameCenterUI.framework/GameCenterUI", controller: "GameCenterUI.SettingsContainerViewController", title: "Game Center"))),
     SettingsItem(type: .icloud, icon: "com.apple.application-icon.icloud", destination: AnyView(EmptyView()))
 ]
 

@@ -10,7 +10,6 @@ import SwiftUI
 struct AccessibilityView: View {
     // Variables
     @AppStorage("SiriEnabled") private var siriEnabled = false
-    @Environment(\.colorScheme) private var colorScheme
     @State private var opacity: Double = 0.0
     @State private var frameY: Double = 0.0
     @State private var showingHelpSheet = false
@@ -40,16 +39,16 @@ struct AccessibilityView: View {
                 }
                 if UIDevice.iPad {
                     // Hover Text
-                    SLink("HOVERTEXT_TITLE".localize(table: titleTable), color: .blue, icon: "character.magnify", status: "OFF".localize(table: table)) {
+                    SLink("HOVERTEXT_TITLE".localize(table: titleTable), icon: "com.apple.AccessibilityUIServer.hovertext", status: "OFF".localize(table: table)) {
                         BundleControllerView("AccessibilitySettings", controller: "HoverTextController", title: "HOVERTEXT_TITLE", table: titleTable)
                     }
                 }
                 // Display & Text Size
-                SLink("DISPLAY_AND_TEXT".localize(table: titleTable), color: .blue, icon: "textformat.size") {
+                SLink("DISPLAY_AND_TEXT".localize(table: titleTable), icon: "com.apple.AccessibilityUIServer.text.size") {
                     BundleControllerView("AccessibilitySettings", controller: "AXDisplayController", title: "DISPLAY_AND_TEXT", table: "Accessibility")
                 }
                 // Motion
-                SLink("MOTION_TITLE".localize(table: titleTable), color: .green, icon: "circle.dotted.and.circle") {
+                SLink("MOTION_TITLE".localize(table: titleTable), icon: "com.apple.AccessibilityUIServer.motion") {
                     BundleControllerView("AccessibilitySettings", controller: "AXMotionController", title: "MOTION_TITLE", table: titleTable)
                 }
                 // Spoken Content
@@ -58,7 +57,7 @@ struct AccessibilityView: View {
                 }
                 if !UIDevice.IsSimulator {
                     // Audio Descriptions
-                    SLink("DESCRIPTIVE_VIDEO_SETTING".localize(table: titleTable), color: .blue, icon: "quote.bubble.fill", status: "OFF".localize(table: table)) {}
+                    SLink("DESCRIPTIVE_VIDEO_SETTING".localize(table: titleTable), icon: "com.apple.AccessibilityUIServer.audio.descriptions", status: "OFF".localize(table: table)) {}
                 }
             } header: {
                 Text("VISION", tableName: titleTable)
@@ -68,13 +67,13 @@ struct AccessibilityView: View {
             Section {
                 if !UIDevice.IsSimulator {
                     // Touch
-                    SLink("TOUCH".localize(table: titleTable), color: .blue, icon: "hand.point.up.left.fill") {
+                    SLink("TOUCH".localize(table: titleTable), icon: "com.apple.AccessibilityUIServer.touch") {
                         BundleControllerView("AccessibilitySettings", controller: "AXTouchAndReachability", title: "TOUCH", table: titleTable)
                     }
                 }
                 if UIDevice.PearlIDCapability {
                     // Face ID & Attention
-                    SLink("FACE_ID".localize(table: titleTable), color: .green, icon: "faceid") {
+                    SLink("FACE_ID".localize(table: titleTable), icon: "com.apple.graphic-icon.face-id") {
                         FaceAttentionView()
                     }
                 }
@@ -82,28 +81,28 @@ struct AccessibilityView: View {
                     // Switch Control
                     SLink("ScannerSwitchTitle".localize(table: titleTable), icon: "com.apple.AccessibilityUIServer.switch.control", status: "OFF".localize(table: table)) {}
                     // Voice Control
-                    SLink("CommandAndControlTitle".localize(table: titleTable), color: .blue, icon: "voice.control", status: "OFF".localize(table: table)) {}
+                    SLink("CommandAndControlTitle".localize(table: titleTable), icon: "com.apple.AccessibilityUIServer.voice.control", status: "OFF".localize(table: table)) {}
                     // Eye Tracking
-                    SLink("Eye Tracking", color: .indigo, icon: "eye.tracking", status: "OFF".localize(table: table)) {}
+                    SLink("Eye Tracking", icon: "com.apple.AccessibilityUIServer.eye.tracking", status: "OFF".localize(table: table)) {}
                     if UIDevice.iPhone {
                         // Side Button
-                        SLink("SIDE_CLICK_TITLE".localize(table: titleTable), color: .blue, icon: "com.apple.AccessibilityUIServer.side.button") {}
+                        SLink("SIDE_CLICK_TITLE".localize(table: titleTable), icon: "com.apple.AccessibilityUIServer.side.button") {}
                         if UIDevice.AdvancedPhotographicStylesCapability {
                             // Camera Button
                             SLink("CAMERA_BUTTON_TITLE".localize(table: cameraTable), icon: "com.apple.AccessibilityUIServer.camera.button") {}
                         }
                         // Apple Watch Mirroring
-                        SLink("APPLE_WATCH_REMOTE_SCREEN".localize(table: table), color: .blue, icon: "inset.filled.applewatch.case") {}
+                        SLink("APPLE_WATCH_REMOTE_SCREEN".localize(table: table), icon: "com.apple.AccessibilityUIServer.applewatch.remote.mirroring") {}
                     } else {
                         // Top Button
-                        SLink("TOP_CLICK_TITLE".localize(table: table), color: .blue, icon: "ipad.top.button.arrow.down") {}
+                        SLink("TOP_CLICK_TITLE".localize(table: table), icon: "com.apple.AccessibilityUIServer.top.button") {}
                         // Apple Pencil
-                        SLink("PencilTitle".localize(table: table), color: .gray, icon: "pencil") {}
+                        SLink("PencilTitle".localize(table: table), icon: "com.apple.AccessibilityUIServer.pencil") {}
                     }
                 }
                 if UIDevice.iPhone {
                     // Control Nearby Devices
-                    SLink("CONTROL_NEARBY_DEVICES".localize(table: table), color: .blue, icon: "iphone.badge.dot.radiowaves.up.forward") {
+                    SLink("CONTROL_NEARBY_DEVICES".localize(table: table), icon: "com.apple.AccessibilityUIServer.control.nearby.devices") {
                         ControlNearbyDevicesView()
                     }
                 }
@@ -115,18 +114,18 @@ struct AccessibilityView: View {
             Section {
                 if !UIDevice.IsSimulator {
                     // Hearing Devices
-                    SLink("HEARING_AID_TITLE".localize(table: titleTable), color: .blue, icon: "ear") {}
+                    SLink("HEARING_AID_TITLE".localize(table: titleTable), icon: "com.apple.AccessibilityUIServer.hearing.devices") {}
                     // Hearing Control Center
-                    SLink("HEARING_CONTROL_CENTER_TITLE".localize(table: table), color: .gray, icon: "switch.2") {}
+                    SLink("HEARING_CONTROL_CENTER_TITLE".localize(table: table), icon: "com.apple.AccessibilityUIServer.hearing.control.center") {}
                     // Sound Recognition
                     SLink("SOUND_RECOGNITION_TITLE".localize(table: titleTable), icon: "com.apple.AccessibilityUIServer.sound.recognition", status: "OFF".localize(table: table)) {}
                     // RTT/TTY
-                    SLink("TTY_RTT_LABEL".localize(table: titleTable), color: .green, icon: "teletype", status: "OFF".localize(table: table)) {}
+                    SLink("TTY_RTT_LABEL".localize(table: titleTable), icon: "com.apple.AccessibilityUIServer.rtt.tty", status: "OFF".localize(table: table)) {}
                     // Audio & Visual
-                    SLink("AUDIO_VISUAL_TITLE".localize(table: titleTable), color: .blue, icon: "speaker.eye.fill") {}
+                    SLink("AUDIO_VISUAL_TITLE".localize(table: titleTable), icon: "com.apple.AccessibilityUIServer.audio.visual") {}
                 }
                 // Subtitles & Captioning
-                SLink("SUBTITLES_CAPTIONING".localize(table: titleTable), color: .blue, icon: "captions.bubble.fill") {
+                SLink("SUBTITLES_CAPTIONING".localize(table: titleTable), icon: "com.apple.AccessibilityUIServer.subtitles.captioning") {
                     BundleControllerView("AccessibilitySettings", controller: "AXCaptioningController", title: "SUBTITLES_CAPTIONING", table: titleTable)
                 }
                 if !UIDevice.IsSimulator {
@@ -134,7 +133,7 @@ struct AccessibilityView: View {
                     SLink("RTT_LIVE_TRANSCRIPTIONS_LABEL".localize(table: table), icon: "com.apple.AccessibilityUIServer.live.captions") {}
                     if UIDevice.iPhone {
                         // Music Haptics
-                        SLink("HAPTIC_MUSIC_TITLE".localize(table: hapticTable), color: .red, icon: "apple.haptics.and.music.note", status: "OFF".localize(table: table)) {}
+                        SLink("HAPTIC_MUSIC_TITLE".localize(table: hapticTable), icon: "com.apple.AccessibilityUIServer.music.haptics", status: "OFF".localize(table: table)) {}
                     }
                 }
             } header: {
@@ -159,7 +158,7 @@ struct AccessibilityView: View {
                     }
                 } else {
                     // Personal Voice
-                    SLink("PERSONAL_VOICE_TITLE".localize(table: titleTable), color: .blue, icon: "person.badge.waveform.fill") {}
+                    SLink("PERSONAL_VOICE_TITLE".localize(table: titleTable), icon: "com.apple.AccessibilityUIServer.personal.voice") {}
                     // Vocal Shortcuts
                     SLink("ADAPTIVE_VOICE_SHORTCUTS_TITLE".localize(table: titleTable), icon: "com.apple.AccessibilityUIServer.vocal.shortcuts", status: "OFF".localize(table: table)) {}
                 }
@@ -170,12 +169,12 @@ struct AccessibilityView: View {
             // MARK: Accessories
             Section {
                 // Keyboards & Typing
-                SLink("KEYBOARDS".localize(table: titleTable), color: .gray, icon: "keyboard.fill") {
+                SLink("KEYBOARDS".localize(table: titleTable), icon: "com.apple.graphic-icon.keyboard") {
                     BundleControllerView("AccessibilitySettings", controller: "AXKeyboardsController", title: "KEYBOARDS", table: titleTable)
                 }
                 if !UIDevice.IsSimulator {
                     // Apple TV Remote
-                    SLink("APPLE_TV_REMOTE".localize(table: titleTable), icon: "com.apple.apple-tv-siri-remote-gen2") {}
+                    SLink("APPLE_TV_REMOTE".localize(table: titleTable), icon: "com.apple.graphic-icon.apple-tv-remote-settings") {}
                 }
             } header: {
                 Text("ACCESSORIES_HEADING", tableName: titleTable)
@@ -190,12 +189,12 @@ struct AccessibilityView: View {
                     SLink("CLARITY_UI_TITLE".localize(table: titleTable), icon: "com.apple.AccessibilityUIServer.assistive.access") {}
                     // Siri
                     if siriEnabled {
-                        SLink("SIRI_SETTINGS_TITLE".localize(table: titleTable), color: .clear, icon: UIDevice.IntelligenceCapability ? colorScheme == .dark ? "siri" : "siriSymbolLight" : "appleSiri") {}
+                        SLink("SIRI_SETTINGS_TITLE".localize(table: titleTable), icon: UIDevice.IntelligenceCapability ? "com.apple.application-icon.siri-intelligence" : "com.apple.application-icon.siri") {}
                     }
                     // Accessibility Shortcut
-                    SLink("TRIPLE_CLICK_TITLE".localize(table: titleTable), color: .blue, icon: "accessibility", status: "OFF".localize(table: table)) {}
+                    SLink("TRIPLE_CLICK_TITLE".localize(table: titleTable), icon: "com.apple.graphic-icon.accessibility", status: "OFF".localize(table: table)) {}
                     // Per-App Settings
-                    SLink("APP_AX_SETTINGS_TITLE".localize(table: titleTable), color: .blue, icon: "app.badge.checkmark") {}
+                    SLink("APP_AX_SETTINGS_TITLE".localize(table: titleTable), icon: "com.apple.AccessibilityUIServer.per.app.settings") {}
                 }
             } header: {
                 Text("GENERAL_HEADING", tableName: titleTable)
