@@ -120,11 +120,8 @@ struct SettingsItem<Content: View>: Identifiable {
 }
 
 // MARK: Icons
-let smallerIcons: Set<String> = ["apple.logo", "appletvremote.gen4.fill", "apps.iphone", "apps.iphone.assistive.access", "apps.ipad", "arrow.counterclockwise", "bluetooth", "checkmark.seal.text.page.fill", "ear", "hand.raised.fill", "hourglass", "ipad.gen2", "iphone.badge.dot.radiowaves.up.forward", "iphone.gen1", "iphone.gen3", "mic.fill", "network.connected.to.line.below", "text.book.closed.fill"]
-let largerIcons: Set<String> = ["waveform.and.magnifyingglass"]
-let hierarchyIcons: Set<String> = ["faceid", "questionmark.app.dashed", "waveform.and.magnifyingglass"]
-let internalIcons: Set<String> = ["airdrop", "app.grid.3x3", "apple.photos", "apps.iphone.assistive.access", "arrow.clockwise.app.stack.fill", "arrowtriangles.up.right.down.left.magnifyingglass", "bluetooth", "carplay", "chevron.3.up.perspective", "clock.filled.and.widget.filled", "ethernet", "eye.tracking", "figure.run.motion", "ipad.top.button.arrow.down", "iphone.action.button.arrow.right", "iphone.badge.dot.radiowaves.up.forward", "iphone.side.button.arrow.left", "keyboard.badge.waveform.fill", "key.dots.fill", "lock.and.ring.2", "lock.square.dotted", "nearby.interactions", "network.connected.to.line.below", "pencil.and.sparkles", "person.badge.waveform.fill", "ring.radiowaves.right", "satellite.fill", "sensorkit", "siri", "speaker.eye.fill", "voice.control", "waveform.arrow.triangle.branch.right", "waveform.bubble.fill"]
-let multicolorIcons: Set<String> = ["app.grid.3x3", "faceid", "siri", "touchid"]
+let smallerIcons: Set<String> = ["apple.logo", "appletvremote.gen4.fill", "apps.iphone", "apps.ipad", "arrow.counterclockwise", "bluetooth", "checkmark.seal.text.page.fill", "ear", "hand.raised.fill", "hourglass", "ipad.gen2", "iphone.badge.dot.radiowaves.up.forward", "iphone.gen1", "iphone.gen3", "mic.fill", "network.connected.to.line.below", "text.book.closed.fill"]
+let internalIcons: Set<String> = ["airdrop", "app.grid.3x3", "arrow.clockwise.app.stack.fill", "arrowtriangles.up.right.down.left.magnifyingglass", "bluetooth", "carplay", "chevron.3.up.perspective", "clock.filled.and.widget.filled", "ethernet", "eye.tracking", "figure.run.motion", "ipad.top.button.arrow.down", "iphone.action.button.arrow.right", "iphone.badge.dot.radiowaves.up.forward", "iphone.side.button.arrow.left", "keyboard.badge.waveform.fill", "key.dots.fill", "lock.and.ring.2", "lock.square.dotted", "nearby.interactions", "network.connected.to.line.below", "pencil.and.sparkles", "person.badge.waveform.fill", "ring.radiowaves.right", "satellite.fill", "sensorkit", "siri", "speaker.eye.fill", "voice.control", "waveform.arrow.triangle.branch.right"]
 
 // MARK: - Settings Layout
 

@@ -26,13 +26,13 @@ struct IconView: View {
     var body: some View {
         ZStack {
             // Icon Background
-            if colorScheme == .dark && !icon.contains("com.") {
+            if !lightOnly && colorScheme == .dark && !icon.contains("com.") {
                 Image(systemName: "app.fill")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 30)
                     .foregroundStyle(LinearGradient(gradient: Gradient(colors: [.gray.opacity(0.20), .black.opacity(0.25)]), startPoint: .top, endPoint: .bottom))
-            } else if colorScheme == .light && !icon.contains("com.") {
+            } else if lightOnly || colorScheme == .light && !icon.contains("com.") {
                 Image(systemName: "app.fill")
                     .resizable()
                     .scaledToFit()
@@ -45,11 +45,9 @@ struct IconView: View {
                 Image(_internalSystemName: icon)
                     .resizable()
                     .scaledToFit()
-                    .frame(width: smallerIcons.contains(icon) ? (icon == "appletvremote.gen4.fill" ? 8 : 13) : 20)
-                    .symbolRenderingMode(hierarchyIcons.contains(icon) ? .hierarchical : multicolorIcons.contains(icon) ? .multicolor : .none)
-                    .foregroundStyle(colorScheme == .dark && !UIDevice.IsSimulator && !lightOnly ? color == .black ? .white : color : iconColor)
-                    .scaleEffect(CGSize(width: 1.0, height: id == "CAMERA_BUTTON_TITLE".localize(table: "Accessibility-D93") ? -1.0 : 1.0))
-            } else if icon.contains("com.apple.graphic") || icon.contains("com.apple.application-") || (icon.contains("com.apple.gamecenter") && !UIDevice.IsSimulated) {
+                    .frame(width: smallerIcons.contains(icon) ? 13 : 20)
+                    .foregroundStyle(colorScheme == .dark && !lightOnly && color != .black ? color : iconColor)
+            } else if icon.contains("com.apple.graphic") || icon.lowercased().contains("com.apple.a") || (icon.contains("com.apple.gamecenter") && !UIDevice.IsSimulated) {
                 if let graphicIcon = UIImage.icon(forUTI: icon) {
                     Image(uiImage: graphicIcon)
                 }
