@@ -44,39 +44,49 @@ final class SettingsTopLevelPanesRenderTests: XCTestCase {
     @MainActor
     func testSearchField() throws {
         let app = XCUIApplication()
-        app.launch()
-        
-        let searchField = app.navigationBars.searchFields["Search"]
+        app.activate()
+
+        let searchField = app.searchFields["Search"]
         XCTAssertTrue(searchField.exists, "Search field does not exist")
-        
-        searchField.tap()
-        searchField.typeText("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789")
-        let cancelButton = app.buttons["Cancel"]
-        cancelButton.firstMatch.tap()
+
+        searchField.firstMatch.tap()
+        app.searchFields["Search"].firstMatch.typeText("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789")
+        app.buttons["close"].firstMatch.tap()
     }
     
     // MARK: Search Suggestions Buttons
     @MainActor
     func testSearchSuggestions() throws {
         let app = XCUIApplication()
-        app.launch()
-        
-        app.searchFields["Search"].tap()
-        let cancelButton = app.buttons["Cancel"]
-        // Apps [by symbol image]
-        app.buttons.images["app.grid.3x3"].tap()
-        let settingsButton = app.buttons["Settings"]
-        settingsButton.tap()
-        // General [by symbol image]
-        app.images.matching(identifier: "gear").element(boundBy: 1).tap()
-        settingsButton.tap()
-        // Accessibility [by text]
-        app.staticTexts.matching(identifier: "Accessibility").element(boundBy: 1).tap()
-        settingsButton.tap()
-        // Privacy & Security [by text]
-        app.staticTexts["Privacy & Security"].tap()
-        settingsButton.tap()
-        cancelButton.tap()
+        app.activate()
+
+        let searchField = app.searchFields["Search"]
+        XCTAssertTrue(searchField.exists, "Search field does not exist")
+        searchField.firstMatch.tap()
+
+        let sound = app.staticTexts["Sounds & Haptics"].firstMatch
+        XCTAssertTrue(sound.exists, "Sounds & Haptics link does not exist")
+        sound.tap()
+
+        let back = app.buttons["BackButton"].firstMatch
+        XCTAssertTrue(back.exists, "Back button does not exist")
+        back.tap()
+
+        let notifications = app.staticTexts["Notifications"].firstMatch
+        XCTAssertTrue(notifications.exists, "Notifications link does not exist")
+        notifications.tap()
+        back.tap()
+
+        let focus = app.staticTexts["Focus"].firstMatch
+        XCTAssertTrue(focus.exists, "Focus link does not exist")
+        focus.tap()
+        back.tap()
+
+        let screenTime = app.staticTexts["Screen Time"].firstMatch
+        XCTAssertTrue(screenTime.exists, "Screen Time link does not exist")
+        screenTime.tap()
+        back.tap()
+        app.buttons["close"].firstMatch.tap()
     }
     
     // MARK: Settings > General [Scrolling]
@@ -130,7 +140,7 @@ final class SettingsTopLevelPanesRenderTests: XCTestCase {
         XCTAssertTrue(displayBrightnessButton.exists, "Display & Brightness link not found")
         displayBrightnessButton.tap()
         
-        let brightnessHeader = app.staticTexts["BRIGHTNESS"]
+        let brightnessHeader = app.staticTexts["Brightness"]
         brightnessHeader.swipeUp()
         
         let autoLockButton = app.buttons.containing(.staticText, identifier: "Auto-Lock").firstMatch
@@ -189,20 +199,23 @@ final class SettingsTopLevelPanesRenderTests: XCTestCase {
     @MainActor
     func testSettingsFocusNavigate() throws {
         let app = XCUIApplication()
-        app.launch()
-        
-        let accessibilityButton = app.buttons.containing(.image, identifier: "accessibility").firstMatch
-        if !accessibilityButton.exists {
-            let elementsQuery = app.otherElements
-            let element = elementsQuery.element(boundBy: 20)
-            element.swipeUp()
-        } else {
-            accessibilityButton.swipeUp()
-        }
-        
-        let focusButton = app.buttons["Focus"].staticTexts.firstMatch
-        XCTAssertTrue(focusButton.exists, "Focus link not found")
-        focusButton.tap()
+        app.activate()
+
+        let battery = app.buttons["Battery"]
+        XCTAssertTrue(battery.exists, "Battery link not found")
+        battery.firstMatch.swipeUp()
+
+        let homeScreen = app.buttons["Home Screen & App Library"]
+        XCTAssertTrue(homeScreen.exists, "Home Screen & App Library link not found")
+        homeScreen.firstMatch.swipeUp()
+
+        let focus = app.buttons["Focus"]
+        XCTAssertTrue(focus.exists, "Focus link not found")
+        focus.firstMatch.tap()
+
+        let back = app.buttons["BackButton"]
+        XCTAssertTrue(back.exists, "Back button not found")
+        back.firstMatch.tap()
     }
     
     @MainActor
