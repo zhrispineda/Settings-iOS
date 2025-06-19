@@ -141,12 +141,12 @@ let followUpSettings: [SettingsItem] = [
 /// Radio Settings
 @MainActor
 let radioSettings: [SettingsItem] = [
-    SettingsItem(type: .wifi, icon: "com.apple.graphic-icon.wifi", color: .blue, destination: AnyView(NetworkView())),
-    SettingsItem(type: .ethernet, icon: "com.apple.graphic-icon.ethernet", capability: .ethernet, color: .gray, destination: AnyView(EmptyView())),
-    SettingsItem(type: .bluetooth, icon: "com.apple.graphic-icon.bluetooth", color: .blue, destination: AnyView(BluetoothView())),
-    SettingsItem(type: .cellular, icon: "com.apple.graphic-icon.cellular-settings", capability: .cellular, color: .green, destination: AnyView(CellularView())),
+    SettingsItem(type: .wifi, icon: "com.apple.graphic-icon.wifi", destination: AnyView(NetworkView())),
+    SettingsItem(type: .ethernet, icon: "com.apple.graphic-icon.ethernet", capability: .ethernet, destination: AnyView(EmptyView())),
+    SettingsItem(type: .bluetooth, icon: "com.apple.graphic-icon.bluetooth", destination: AnyView(BluetoothView())),
+    SettingsItem(type: .cellular, icon: "com.apple.graphic-icon.cellular-settings", capability: .cellular, destination: AnyView(CellularView())),
     //SettingsItem(type: .personalHotspot, icon: "personalhotspot", capability: .cellular, color: .green, destination: AnyView(HotspotView())),
-    SettingsItem(type: .battery, icon: "com.apple.graphic-icon.battery", color: .green, destination: AnyView(BatteryView())),
+    SettingsItem(type: .battery, icon: "com.apple.graphic-icon.battery", destination: AnyView(CustomViewController("/System/Library/PreferenceBundles/BatteryUsageUI.bundle/BatteryUsageUI", controller: "BatteryUIController"))),
     //SettingsItem(type: .satellite, icon: "satellite.fill", color: .black, destination: AnyView(EmptyView())),
 ]
 
@@ -225,8 +225,8 @@ let serviceSettings: [SettingsItem] = [
 
 /// Simulator Service Settings
 @MainActor
-let simulatorServiceSettings: [SettingsItem] = [
-    SettingsItem(type: .gameCenter, icon: "Placeholder", color: .white, destination: AnyView(BundleControllerView("/System/Library/PrivateFrameworks/GameCenterUI.framework/GameCenterUI", controller: "GameCenterUI.SettingsContainerViewController", title: "Game Center"))),
+let simulatorServicesSettings: [SettingsItem] = [
+    SettingsItem(type: .gameCenter, icon: "com.example", color: .white, destination: AnyView(BundleControllerView("/System/Library/PrivateFrameworks/GameCenterUI.framework/GameCenterUI", controller: "GameCenterUI.SettingsContainerViewController", title: "Game Center"))),
     SettingsItem(type: .icloud, icon: "com.apple.application-icon.icloud", destination: AnyView(EmptyView()))
 ]
 
@@ -246,4 +246,4 @@ let developerSettings: [SettingsItem] = [
 
 /// Combined Settings
 @MainActor
-let combinedSettings = followUpSettings + radioSettings + attentionSettings + mainSettings + securitySettings + serviceSettings + appsSettings + developerSettings + simulatorMainSettings + simulatorSecuritySettings
+let combinedSettings = followUpSettings + radioSettings + attentionSettings + mainSettings + securitySettings + serviceSettings + simulatorServicesSettings + appsSettings + developerSettings + simulatorMainSettings + simulatorSecuritySettings

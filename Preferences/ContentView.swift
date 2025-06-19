@@ -78,8 +78,8 @@ struct ContentView: View {
                     SettingsLabelSection(selection: $stateManager.selection, id: $id, item: UIDevice.IsSimulator ? simulatorSecuritySettings : securitySettings)
                     
                     // MARK: Services
-                    SettingsLabelSection(selection: $stateManager.selection, id: $id, item: UIDevice.IsSimulator ? simulatorServiceSettings : serviceSettings)
-                    
+                    SettingsLabelSection(selection: $stateManager.selection, id: $id, item: UIDevice.IsSimulator ? simulatorServicesSettings : serviceSettings)
+
                     // MARK: Apps
                     SettingsLabelSection(selection: $stateManager.selection, id: $id, item: appsSettings)
                     
@@ -190,8 +190,8 @@ struct ContentView: View {
                     SettingsLinkSection(item: UIDevice.IsSimulator ? simulatorSecuritySettings : securitySettings)
                     
                     // MARK: Services
-                    SettingsLinkSection(item: UIDevice.IsSimulator ? simulatorServiceSettings : serviceSettings)
-                    
+                    SettingsLinkSection(item: UIDevice.IsSimulator ? simulatorServicesSettings : serviceSettings)
+
                     // MARK: Apps
                     SettingsLinkSection(item: appsSettings)
                     
