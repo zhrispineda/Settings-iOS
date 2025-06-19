@@ -23,7 +23,7 @@ struct AccessibilityView: View {
         CustomList(title: "Accessibility".localize(table: table)) {
             // MARK: Placard
             Section {
-                Placard(title: "PLACARD_TITLE".localize(table: table), color: .blue, icon: "accessibility", description: "\(UIDevice.iPhone ? "PLACARD_SUBTITLE_IPHONE".localize(table: table) : "PLACARD_SUBTITLE_IPAD".localize(table: table)) [\("PLACARD_LEARN_MORE".localize(table: table))](pref://helpkit)", frameY: $frameY, opacity: $opacity)
+                Placard(title: "PLACARD_TITLE".localize(table: table), color: .blue, icon: "com.apple.graphic-icon.accessibility", description: "\(UIDevice.iPhone ? "PLACARD_SUBTITLE_IPHONE".localize(table: table) : "PLACARD_SUBTITLE_IPAD".localize(table: table)) [\("PLACARD_LEARN_MORE".localize(table: table))](pref://helpkit)", frameY: $frameY, opacity: $opacity)
             }
             
             // MARK: Vision

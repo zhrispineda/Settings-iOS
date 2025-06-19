@@ -190,7 +190,7 @@ let mainSettings: [SettingsItem] = [
 let simulatorMainSettings: [SettingsItem] = [
     SettingsItem(type: .general, icon: "com.apple.graphic-icon.gear", destination: AnyView(GeneralView())),
     SettingsItem(type: .accessibility, icon: "com.apple.graphic-icon.accessibility", destination: AnyView(AccessibilityView())),
-    SettingsItem(type: .siri, icon: "com.apple.graphic-icon.intelligence", capability: .appleIntelligence, destination: AnyView(SiriView())),
+    SettingsItem(type: .appleIntelligence, icon: "com.apple.graphic-icon.intelligence", destination: AnyView(SiriView())),
     SettingsItem(type: .actionButton, icon: "com.apple.graphic-icon.iphone-action-button", capability: .actionButton, destination: AnyView(BundleControllerView("ActionButtonSettings", controller: "ActionButtonSettings"))),
     SettingsItem(type: .camera, icon: "com.apple.graphic-icon.camera", destination: AnyView(CameraView())),
     SettingsItem(type: .homeScreenAppLibrary, icon: UIDevice.iPhone ? "com.apple.graphic-icon.apps-on-iphone" : "com.apple.graphic-icon.apps-on-ipad", destination: AnyView(HomeScreenAppLibraryView())),
@@ -227,8 +227,7 @@ let serviceSettings: [SettingsItem] = [
 @MainActor
 let simulatorServiceSettings: [SettingsItem] = [
     SettingsItem(type: .gameCenter, icon: "Placeholder", color: .white, destination: AnyView(BundleControllerView("/System/Library/PrivateFrameworks/GameCenterUI.framework/GameCenterUI", controller: "GameCenterUI.SettingsContainerViewController", title: "Game Center"))),
-    SettingsItem(type: .icloud, icon: "com.apple.application-icon.icloud", destination: AnyView(EmptyView())),
-    SettingsItem(type: .wallet, icon: "com.apple.Passbook", destination: AnyView(WalletView()))
+    SettingsItem(type: .icloud, icon: "com.apple.application-icon.icloud", destination: AnyView(EmptyView()))
 ]
 
 /// App Settings
