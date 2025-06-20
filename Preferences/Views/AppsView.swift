@@ -68,7 +68,7 @@ struct AppsView: View {
                                 case "Files":
                                     FilesView()
                                 case "Fitness":
-                                    BundleControllerView("FitnessSettings", controller: "FitnessSettingsController", title: "Fitness")
+                                    EmptyView()
                                 case "Health":
                                     HealthView()
                                 case "Maps":

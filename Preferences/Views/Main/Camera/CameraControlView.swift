@@ -18,9 +18,9 @@ struct CameraControlView: View {
     let table = "CameraSettings-CameraButton"
     let options = ["CAPTURE_BUTTON_LAUNCH_SINGLE_CLICK", "CAPTURE_BUTTON_LAUNCH_DOUBLE_CLICK"]
     let apps: [AppSelection] = [
-        AppSelection(id: "Camera", icon: "appleCamera"),
-        AppSelection(id: "Code Scanner", icon: "appleScanner"),
-        AppSelection(id: "Magnifier", icon: "appleMagnifier"),
+        AppSelection(id: "Camera", icon: "com.apple.camera"),
+        AppSelection(id: "Code Scanner", icon: "com.apple.BarcodeScanner"),
+        AppSelection(id: "Magnifier", icon: "com.apple.Magnifier"),
         AppSelection(id: "CAMERA_BUTTON_APP_LIST_NO_ACTION", icon: "CSNoActionIcon")
     ]
     

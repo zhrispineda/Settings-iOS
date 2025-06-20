@@ -66,7 +66,7 @@ struct ContentPrivacyRestrictionsDetailView: View {
             
             Section {
                 if title == "BluetoothSharingSpecifierName" || title == "MicrophoneSpecifierName" {
-                    SLink("AppClipsSpecifierName".localize(table: table), color: .white, iconColor: .blue, icon: "appclip") {
+                    SLink("AppClipsSpecifierName".localize(table: table), icon: "com.apple.graphic-icon.app-clips") {
                         AppClipsView(completeView: false, permission: title)
                     }
                 }

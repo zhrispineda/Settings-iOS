@@ -96,7 +96,7 @@ struct AppPermissionsView: View {
             // Content and footer section
             Section {
                 if appClipsEligible.contains(permission) {
-                    SLink("App Clips", color: .white, iconColor: .blue, icon: "appclip", status: "0") {
+                    SLink("App Clips", icon: "com.apple.graphic-icon.app-clips", status: "0") {
                         AppPermissionsView(permission: "App Clips", appClipPermission: permission)
                     }
                 }

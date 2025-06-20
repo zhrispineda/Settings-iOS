@@ -8,14 +8,13 @@
 import SwiftUI
 
 struct SafetyCheckView: View {
-    // Variables
     @State private var showingAlert = false
     let table = "DigitalSeparationUI"
     
     var body: some View {
         CustomList(title: "SAFETY_CHECK".localize(table: table)) {
             Section {
-                Placard(title: "SAFETY_CHECK".localize(table: table), color: .white, iconColor: .blue, icon: "person.badge.shield.checkmark.fill", description: "WELCOME_DETAIL".localize(table: table), frameY: .constant(0.0), opacity: .constant(1.0))
+                Placard(title: "SAFETY_CHECK".localize(table: table), icon: "com.apple.graphic-icon.safety-check", description: "WELCOME_DETAIL".localize(table: table), frameY: .constant(0.0), opacity: .constant(1.0))
             }
             
             Section {
