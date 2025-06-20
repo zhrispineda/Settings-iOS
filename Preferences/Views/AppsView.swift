@@ -7,12 +7,36 @@
 
 import SwiftUI
 
+struct AppInfo {
+    let name: String
+    let icon: String
+    let showOnSimulator: Bool
+}
+
 struct AppsView: View {
     @State private var searchText = String()
-    let apps = ["App Store", "Books", "Calendar", "Contacts", "Files", "Fitness", "Health", "Maps", "Messages", "News", "Passwords", "Photos", "Reminders", "Safari", "Shortcuts", "Translate"]
-    let simulatorApps = ["Calendar", "Contacts", "Files", "Fitness", "Health", "Maps", "Messages", "News", "Passwords", "Photos", "Reminders", "Safari", "Shortcuts"]
-    var groupedApps: [String: [String]] {
-        Dictionary(grouping: UIDevice.IsSimulator ? simulatorApps : apps, by: { String($0.prefix(1)) })
+    let apps = [
+        AppInfo(name: "App Store", icon: "com.apple.AppStore", showOnSimulator: false),
+        AppInfo(name: "Books", icon: "com.apple.iBooks", showOnSimulator: false),
+        AppInfo(name: "Calendar", icon: "com.apple.mobilecal", showOnSimulator: true),
+        AppInfo(name: "Contacts", icon: "com.apple.MobileAddressBook", showOnSimulator: true),
+        AppInfo(name: "Files", icon: "com.apple.DocumentsApp", showOnSimulator: true),
+        AppInfo(name: "Fitness", icon: "com.apple.Fitness", showOnSimulator: true),
+        AppInfo(name: "Health", icon: "com.apple.Health", showOnSimulator: true),
+        AppInfo(name: "Maps", icon: "com.apple.Maps", showOnSimulator: true),
+        AppInfo(name: "Messages", icon: "com.apple.MobileSMS", showOnSimulator: true),
+        AppInfo(name: "News", icon: "com.apple.news", showOnSimulator: true),
+        AppInfo(name: "Passwords", icon: "com.apple.Passwords", showOnSimulator: true),
+        AppInfo(name: "Photos", icon: "com.apple.mobileslideshow", showOnSimulator: true),
+        AppInfo(name: "Reminders", icon: "com.apple.reminders", showOnSimulator: true),
+        AppInfo(name: "Safari", icon: "com.apple.mobilesafari", showOnSimulator: true),
+        AppInfo(name: "Shortcuts", icon: "com.apple.shortcuts", showOnSimulator: true),
+        AppInfo(name: "Wallet", icon: "com.apple.Passbook", showOnSimulator: true),
+        AppInfo(name: "Translate", icon: "com.apple.Translate", showOnSimulator: false)
+    ]
+    var groupedApps: [String: [AppInfo]] {
+        let filteredApps = UIDevice.IsSimulated ? apps.filter { $0.showOnSimulator } : apps
+        return Dictionary(grouping: filteredApps, by: { String($0.name.prefix(1)) })
     }
     let letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ#"
     let table = "InstalledApps"
@@ -21,16 +45,18 @@ struct AppsView: View {
         ScrollViewReader { proxy in
             CustomList(title: "Apps".localize(table: table)) {
                 // MARK: Default Apps
-                SLink("Default Apps".localize(table: table), color: .gray, icon: "checkmark.rectangle.stack.fill", subtitle: "Manage default apps on device".localize(table: table)) {
-                    DefaultAppsView()
+                Section {
+                    SLink("Default Apps".localize(table: table), color: .gray, icon: "checkmark.rectangle.stack.fill", subtitle: "Manage default apps on device".localize(table: table)) {
+                        DefaultAppsView()
+                    }
                 }
-                
+
                 // MARK: Apps
                 ForEach(groupedApps.keys.sorted(), id: \.self) { key in
                     Section(key) {
-                        ForEach(groupedApps[key]!, id: \.self) { app in
-                            SLink(app, icon: "apple\(app)") {
-                                switch app {
+                        ForEach(groupedApps[key]!, id: \.name) { app in
+                            SLink(app.name, icon: app.icon) {
+                                switch app.name {
                                 case "App Store":
                                     AppStoreView()
                                 case "Books":

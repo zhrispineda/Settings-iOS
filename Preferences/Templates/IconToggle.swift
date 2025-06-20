@@ -49,7 +49,6 @@ struct IconToggle: View {
                 if !subtitle.isEmpty {
                     Text(subtitle.localize(table: table))
                         .font(.footnote)
-                        .foregroundStyle(.secondary)
                 }
             } icon: {
                 IconView(id: text.localize(table: table), icon: icon, color: color, iconColor: icon == "airdrop" ? Color.blue : iconColor, lightOnly: lightOnlyIcons.contains(icon))

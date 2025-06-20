@@ -24,9 +24,9 @@ struct AutoFillPasswordsView: View {
             }
             
             Section {
-                IconToggle("Passwords", isOn: $keychainEnabled, color: .gray, icon: "applePasswords", subtitle: "Passkeys, passwords, and codes")
+                IconToggle("Passwords", isOn: $keychainEnabled, icon: "com.apple.Passwords", subtitle: "Passkeys, passwords, and codes")
             } header: {
-                Text("AutoFill From:")
+                Text("AutoFill from:")
             }
             
             Section {
@@ -45,7 +45,7 @@ struct AutoFillPasswordsView: View {
                         ForEach(options, id: \.self) { option in
                             HStack {
                                 Text(" " + option)
-                                Image("applePasswordsIcon")
+                                Image(uiImage: UIImage.icon(forBundleID: "com.apple.Passwords")!)
                             }
                         }
                     }
