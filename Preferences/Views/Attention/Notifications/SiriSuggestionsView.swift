@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct SiriSuggestionsView: View {
-    // Variables
     @AppStorage("AllowNotificationsToggle") private var allowNotifications = true
     let table = "NotificationsSettings"
     
@@ -20,38 +19,38 @@ struct SiriSuggestionsView: View {
             
             if allowNotifications {
                 if let url = URL(string: "ibooks://*"), UIApplication.shared.canOpenURL(url) {
-                    IconToggle("Books", isOn: .constant(true), icon: "appleBooks")
+                    IconToggle("Books", isOn: .constant(true), icon: "com.apple.iBooks")
                 }
                 if let url = URL(string: "freeform://*"), UIApplication.shared.canOpenURL(url) {
-                    IconToggle("Freeform", isOn: .constant(true), icon: "appleFreeform")
+                    IconToggle("Freeform", isOn: .constant(true), icon: "com.apple.freeform")
                 }
+                IconToggle("Maps", isOn: .constant(true), icon: "com.apple.Maps")
                 if let url = URL(string: "maps://*"), UIApplication.shared.canOpenURL(url) {
-                    IconToggle("Maps", isOn: .constant(true), icon: "appleMaps")
                 }
                 if let url = URL(string: "music://*"), UIApplication.shared.canOpenURL(url) {
-                    IconToggle("Music", isOn: .constant(true), icon: "appleMusic")
+                    IconToggle("Music", isOn: .constant(true), icon: "com.apple.Music")
                 }
                 if let url = URL(string: "applenews://*"), UIApplication.shared.canOpenURL(url) {
-                    IconToggle("News", isOn: .constant(true), icon: "appleNews")
+                    IconToggle("News", isOn: .constant(true), icon: "com.apple.news")
                 }
                 if let url = URL(string: "notes://*"), UIApplication.shared.canOpenURL(url) {
-                    IconToggle("Notes", isOn: .constant(true), icon: "appleNotes")
+                    IconToggle("Notes", isOn: .constant(true), icon: "com.apple.mobilenotes")
                 }
                 if let url = URL(string: "podcasts://*"), UIApplication.shared.canOpenURL(url) {
-                    IconToggle("Podcasts", isOn: .constant(true), icon: "applePodcasts")
+                    IconToggle("Podcasts", isOn: .constant(true), icon: "com.apple.podcasts")
                 }
                 if let url = URL(string: "shortcuts://*"), UIApplication.shared.canOpenURL(url) {
-                    IconToggle("Shortcuts", isOn: .constant(true), icon: "appleShortcuts")
+                    IconToggle("Shortcuts", isOn: .constant(true), icon: "com.apple.shortcuts")
                 }
-                IconToggle("Siri", isOn: .constant(true), icon: "appleSiri")
+                IconToggle("Siri", isOn: .constant(true), icon: "com.apple.application-icon.siri")
                 if let url = URL(string: "stocks://*"), UIApplication.shared.canOpenURL(url) {
-                    IconToggle("Stocks", isOn: .constant(true), icon: "appleStocks")
+                    IconToggle("Stocks", isOn: .constant(true), icon: "com.apple.stocks")
                 }
                 if let url = URL(string: "translate://*"), UIApplication.shared.canOpenURL(url) {
-                    IconToggle("Translate", isOn: .constant(true), icon: "appleTranslate")
+                    IconToggle("Translate", isOn: .constant(true), icon: "com.apple.Translate")
                 }
                 if let url = URL(string: "voicememos://*"), UIApplication.shared.canOpenURL(url) {
-                    IconToggle("Voice Memos", isOn: .constant(true), icon: "appleVoiceMemos")
+                    IconToggle("Voice Memos", isOn: .constant(true), icon: "com.apple.VoiceMemos")
                 }
             }
         }

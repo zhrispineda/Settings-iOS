@@ -48,7 +48,7 @@ struct SiriView: View {
             // MARK: Placard Section
             if UIDevice.IntelligenceCapability {
                 Section {
-                    Placard(title: "Apple Intelligence & Siri".localize(table: table), icon: "appleIntelligence", description: UIDevice.iPhone ? "PLACARD_DESCRIPTION_GM".localize(table: gmTable) : "PLACARD_DESCRIPTION_GM_IPAD".localize(table: gmTable), frameY: $frameY, opacity: $opacity)
+                    Placard(title: "Apple Intelligence & Siri".localize(table: table), icon: "com.apple.application-icon.apple-intelligence", description: UIDevice.iPhone ? "PLACARD_DESCRIPTION_GM".localize(table: gmTable) : "PLACARD_DESCRIPTION_GM_IPAD".localize(table: gmTable), frameY: $frameY, opacity: $opacity)
                     if !UIDevice.IsSimulator {
                         Button("GM_WAITLIST_SPECIFIER_TITLE".localize(table: gmTable)) {}
                     }
@@ -58,7 +58,7 @@ struct SiriView: View {
                     }
                 }
             } else {
-                Placard(title: "ASSISTANT".localize(table: table), icon: "appleSiri", description: "PLACARD_DESCRIPTION".localize(table: table), frameY: $frameY, opacity: $opacity)
+                Placard(title: "ASSISTANT".localize(table: table), icon: "com.apple.application-icon.siri", description: "PLACARD_DESCRIPTION".localize(table: table), frameY: $frameY, opacity: $opacity)
             }
             
             // MARK: TipKit Section

@@ -57,52 +57,52 @@ struct PermissionsView: View {
     var body: some View {
         Section {
             if focus {
-                IconToggle("FOCUS", isOn: $focusEnabled, color: .indigo, icon: "moon.fill", table: table)
+                IconToggle("FOCUS", isOn: $focusEnabled, icon: "com.apple.graphic-icon.focus", table: table)
             }
             if location {
-                SLink("LOCATION_SERVICES".localize(table: table), color: .blue, icon: "location.fill", status: "NEVER_AUTHORIZATION".localize(table: "LocationServicesPrivacy")) {}
+                SLink("LOCATION_SERVICES".localize(table: table), icon: "com.apple.graphic-icon.location", status: "NEVER_AUTHORIZATION".localize(table: "LocationServicesPrivacy")) {}
             }
             if photos {
-                SLink("PHOTOS".localize(table: table), icon: "applePhotos", status: "PHOTOS_LIMITED_AUTHORIZATION".localize(table: table)) {}
+                SLink("PHOTOS".localize(table: table), icon: "com.apple.mobileslideshow", status: "PHOTOS_LIMITED_AUTHORIZATION".localize(table: table)) {}
             }
             if camera {
-                IconToggle("CAMERA", isOn: $cameraEnabled, color: .gray, icon: "camera.fill", table: table)
+                IconToggle("CAMERA", isOn: $cameraEnabled, icon: "com.apple.graphic-icon.camera", table: table)
             }
             if faceID {
-                IconToggle("FACE_ID", isOn: $faceIDEnabled, color: .green, icon: "faceid", table: table)
+                IconToggle("FACE_ID", isOn: $faceIDEnabled, icon: "com.apple.graphic-icon.face-id", table: table)
             }
             if siri {
                 if UIDevice.IntelligenceCapability {
-                    SLink("Apple Intelligence & Siri", icon: "appleIntelligence") {
+                    SLink("Apple Intelligence & Siri", icon: "com.apple.graphic-icon.intelligence") {
                         SiriDetailView(appName: appName)
                     }
                 } else {
-                    SLink("Siri", icon: "appleSiri") {
+                    SLink("Siri", icon: "com.apple.application-icon.siri") {
                         SiriDetailView(appName: appName)
                     }
                 }
-                SLink("Search", color: .gray, icon: "magnifyingglass") {
+                SLink("Search", icon: "com.apple.graphic-icon.search") {
                     SearchDetailView(appName: appName, appTitle: false)
                 }
             }
             if notifications {
-                SLink("NOTIFICATIONS".localize(table: table), color: .red, icon: "bell.badge.fill", subtitle: appName == "Maps" ? "\("BANNER_ALERTS".localize(table: notifTable)), \("SOUNDS".localize(table: notifTable))" : "\("BANNER_ALERTS".localize(table: notifTable)), \("SOUNDS".localize(table: notifTable)), \("BADGES".localize(table: notifTable))") {}
+                SLink("NOTIFICATIONS".localize(table: table), icon: "com.apple.graphic-icon.notifications", subtitle: appName == "Maps" ? "\("BANNER_ALERTS".localize(table: notifTable)), \("SOUNDS".localize(table: notifTable))" : "\("BANNER_ALERTS".localize(table: notifTable)), \("SOUNDS".localize(table: notifTable)), \("BADGES".localize(table: notifTable))") {}
             }
             if liveActivity {
-                SLink("LIVE_ACTIVITIES".localize(table: table), color: .blue, icon: "clock.badge.fill") {}
+                SLink("LIVE_ACTIVITIES".localize(table: table), icon: "com.apple.graphic-icon.live-activities") {}
             }
             if liveActivityToggle {
-                IconToggle("LIVE_ACTIVITIES", isOn: $liveActivityEnabled, color: .blue, icon: "clock.badge.fill", table: table)
+                IconToggle("LIVE_ACTIVITIES", isOn: $liveActivityEnabled, icon: "com.apple.graphic-icon.live-activities", table: table)
             }
             if background {
-                IconToggle("BACKGROUND_APP_REFRESH", isOn: $backgroundAppRefreshEnabled, color: .gray, icon: "arrow.clockwise.app.stack.fill", table: table)
+                IconToggle("BACKGROUND_APP_REFRESH", isOn: $backgroundAppRefreshEnabled, icon: "com.apple.graphic-icon.background-app-refresh", table: table)
             }
             if cellular && UIDevice.CellularTelephonyCapability {
-                IconToggle("CELLULAR_DATA", isOn: $cellularEnabled, color: .green, icon: "antenna.radiowaves.left.and.right", table: table)
+                IconToggle("CELLULAR_DATA", isOn: $cellularEnabled, icon: "com.apple.graphic-icon.cellular-settings", table: table)
             }
             if phone {
-                SLink("INCOMING_CALL_STYLE_LIST_BANNER".localize(table: "ICBSettingsBundle"), color: .green, icon: "phone.arrow.down.left.fill", status: "Banner") {}
-                SLink("ANNOUNCE_CALLS_TITLE".localize(table: "AssistantSettings"), color: .red, icon: "phone.badge.waveform.fill", status: "NEVER".localize(table: "MessagesSettings")) {}
+                SLink("INCOMING_CALL_STYLE_LIST_BANNER".localize(table: "ICBSettingsBundle"), icon: "com.apple.graphic-icon.incoming-phone-calls", status: "Banner") {}
+                SLink("ANNOUNCE_CALLS_TITLE".localize(table: "AssistantSettings"), icon: "com.apple.graphic-icon.announce-phone-calls", status: "NEVER".localize(table: "MessagesSettings")) {}
             }
         } header: {
             Text("ALLOW_ACCESS_FORMAT".localize(table: table, appName))

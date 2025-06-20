@@ -18,7 +18,7 @@ struct ContentView: View {
     @State private var searchText = ""
     @State private var showingSignInSheet = false
     @State private var id = UUID()
-    
+
     var body: some View {
         // MARK: iPadOS Layout
         if UIDevice.iPad {

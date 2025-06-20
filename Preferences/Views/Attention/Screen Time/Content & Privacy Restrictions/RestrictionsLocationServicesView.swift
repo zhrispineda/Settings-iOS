@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct RestrictionsLocationServicesView: View {
-    // Variables
     @State private var selected = "AllowChangesSpecifierName"
     @State private var locationServicesEnabled = true
     @State private var showingDisableLocationServicesAlert = false
@@ -58,7 +57,7 @@ struct RestrictionsLocationServicesView: View {
             
             if locationServicesEnabled {
                 Section {
-                    SLink("AppClipsSpecifierName".localize(table: table), color: .white, iconColor: .blue, icon: "appclip") {
+                    SLink("AppClipsSpecifierName".localize(table: table), icon: "com.apple.graphic-icon.app-clips") {
                         AppClipsView()
                     }
                     SettingsLink("AppGenius.bundle", status: "NEVER_AUTHORIZATION".localize(table: privTable), destination: LocationPermissionsDetailView(title: "AppGenius.bundle", selected: "NEVER_AUTHORIZATION".localize(table: privTable)))
@@ -69,15 +68,15 @@ struct RestrictionsLocationServicesView: View {
                     SettingsLink("MobileWiFi.framework", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), destination: LocationPermissionsDetailView(title: "MobileWiFi.framework"))
                     SettingsLink("MotionCalibration.bundle", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), destination: LocationPermissionsDetailView(title: "MotionCalibration.bundle"))
                     SettingsLink("PassbookMerchantLookup.bundle", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), destination: LocationPermissionsDetailView(title: "PassbookMerchantLookup.bundle"))
-                    SLink("LOCATION_SHARING".localize(table: locTable), icon: "Placeholder", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable)) {
+                    SLink("LOCATION_SHARING".localize(table: locTable), icon: "com.", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable)) {
                         LocationPermissionsDetailView(title: "LOCATION_SHARING".localize(table: locTable))
                     }
-                    SLink("SiriDictationSpecifierName".localize(table: table), icon: "appleSiri", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable)) {
+                    SLink("SiriDictationSpecifierName".localize(table: table), icon: "com.apple.application-icon.siri", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable)) {
                         LocationPermissionsDetailView(title: "SiriDictationSpecifierName".localize(table: table))
                     }
                     SettingsLink("SystemCustomization.bundle", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), location: true, destination: LocationPermissionsDetailView(title: "SystemCustomization.bundle"))
                     SettingsLink("Traffic.bundle", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), destination: LocationPermissionsDetailView(title: "Traffic.bundle"))
-                    SLink("SYSTEM_SERVICES".localize(table: locTable), color: .gray, icon: "gear", status: "location.fill") {
+                    SLink("SYSTEM_SERVICES".localize(table: locTable), icon: "com.apple.graphic-icon.gear", status: "location.fill") {
                         SystemServicesView()
                     }
                 } footer: {

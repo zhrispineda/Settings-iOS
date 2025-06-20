@@ -7,7 +7,12 @@ import SwiftUI
 
 extension UIImage {
     static func icon(forUTI uti: String) -> UIImage? {
-        dlopen("/System/Library/PrivateFrameworks/Preferences.framework/Preferences", RTLD_NOW)
+        let path = "/System/Library/PrivateFrameworks/Preferences.framework/Preferences"
+
+        if dlopen(path, RTLD_NOLOAD) == nil {
+            dlopen(path, RTLD_NOW)
+        }
+        
         let selector = NSSelectorFromString("ps_synchronousIconWithTypeIdentifier:")
         guard UIImage.responds(to: selector) else {
             return nil
