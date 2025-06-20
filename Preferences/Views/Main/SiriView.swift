@@ -10,9 +10,6 @@ import ContactsUI
 import TipKit
 
 struct SiriView: View {
-    @Environment(\.colorScheme) private var colorScheme
-    let apps = ["Calendar", "Contacts", "Files", "Health", "Maps", "Messages", "News", "Photos", "Reminders", "Safari", "Settings", "Wallet", "Watch"]
-    
     @AppStorage("SiriEnabled") private var siriEnabled = false
     @AppStorage("SiriTipDismissed") private var learnMoreTapped = false
     @State private var showingDisableSiriAlert = false
@@ -38,11 +35,30 @@ struct SiriView: View {
     let gmTable = "AssistantSettings-GM"
     let exTable = "AssistantSettings-ExternalAIModel"
     let contactPickerDelegate = ContactPickerDelegate()
-    
-//    init() {
-//        try? Tips.configure()
-//    }
-    
+    let apps = [
+        AppInfo(name: "App Store", icon: "com.apple.AppStore", showOnSimulator: false),
+        AppInfo(name: "Books", icon: "com.apple.iBooks", showOnSimulator: false),
+        AppInfo(name: "Calendar", icon: "com.apple.mobilecal", showOnSimulator: true),
+        AppInfo(name: "Contacts", icon: "com.apple.MobileAddressBook", showOnSimulator: true),
+        AppInfo(name: "Files", icon: "com.apple.DocumentsApp", showOnSimulator: true),
+        AppInfo(name: "Fitness", icon: "com.apple.Fitness", showOnSimulator: true),
+        AppInfo(name: "Health", icon: "com.apple.Health", showOnSimulator: true),
+        AppInfo(name: "Maps", icon: "com.apple.Maps", showOnSimulator: true),
+        AppInfo(name: "Messages", icon: "com.apple.MobileSMS", showOnSimulator: true),
+        AppInfo(name: "News", icon: "com.apple.news", showOnSimulator: true),
+        AppInfo(name: "Passwords", icon: "com.apple.Passwords", showOnSimulator: true),
+        AppInfo(name: "Photos", icon: "com.apple.mobileslideshow", showOnSimulator: true),
+        AppInfo(name: "Reminders", icon: "com.apple.reminders", showOnSimulator: true),
+        AppInfo(name: "Safari", icon: "com.apple.mobilesafari", showOnSimulator: true),
+        AppInfo(name: "Shortcuts", icon: "com.apple.shortcuts", showOnSimulator: true),
+        AppInfo(name: "Wallet", icon: "com.apple.Passbook", showOnSimulator: true),
+        AppInfo(name: "Translate", icon: "com.apple.Translate", showOnSimulator: false)
+    ]
+    var groupedApps: [String: [AppInfo]] {
+        let filteredApps = UIDevice.IsSimulated ? apps.filter { $0.showOnSimulator } : apps
+        return Dictionary(grouping: filteredApps, by: { String($0.name.prefix(1)) })
+    }
+
     var body: some View {
         CustomList {
             // MARK: Placard Section
@@ -60,16 +76,6 @@ struct SiriView: View {
             } else {
                 Placard(title: "ASSISTANT".localize(table: table), icon: "com.apple.application-icon.siri", description: "PLACARD_DESCRIPTION".localize(table: table), frameY: $frameY, opacity: $opacity)
             }
-            
-            // MARK: TipKit Section
-//            if !learnMoreTapped {
-//                Section {
-//                    AppleIntelligenceTipView()
-//                        .onTapGesture {
-//                            learnMoreTapped = true
-//                        }
-//                }
-//            }
             
             // MARK: Siri Requests Section
             Section {
@@ -158,14 +164,16 @@ struct SiriView: View {
             
             // MARK: Apple Intelligence and Siri App Access Section
             Section {
-                SLink("APP_CLIPS".localize(table: table), color: colorScheme == .dark ? .blue : .white, iconColor: .blue, icon: "appclip") {
+                SLink("APP_CLIPS".localize(table: table), icon: "com.apple.graphic-icon.app-clips") {
                     BundleControllerView("/System/Library/PrivateFrameworks/AssistantSettingsSupport.framework/AssistantSettingsSupport", controller: "AssistantAppClipSettingsController", title: "APP_CLIPS", table: table)
                 }
-                SLink("APPS_GROUP".localize(table: table), color: .indigo, icon: "app.grid.3x3") {
+                SLink("APPS_GROUP".localize(table: table), icon: "com.apple.graphic-icon.home-screen") {
                     CustomList(title: "APPS".localize(table: table)) {
-                        ForEach(apps, id: \.self) { app in
-                            SLink(app, icon: "apple\(app)") {
-                                SiriDetailView(appName: app, title: app)
+                        ForEach(groupedApps.keys.sorted(), id: \.self) { key in
+                            ForEach(groupedApps[key]!, id: \.name) { app in
+                                SLink(app.name, icon: app.icon) {
+                                    SiriDetailView(appName: app.name, title: app.name)
+                                }
                             }
                         }
                     }

@@ -6,7 +6,6 @@
 import SwiftUI
 
 struct DebugView: View {
-    // Variables
     @Environment(\.dismiss) private var dismiss
     #if DEBUG
     let debugBuild = true
@@ -45,11 +44,7 @@ struct DebugView: View {
         .toolbar {
             ToolbarItem(placement: .principal) {
                 HStack {
-                    Image(.appleSettings)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 32)
-                        .clipShape(RoundedRectangle(cornerRadius: 6))
+                    IconView(icon: "com.apple.Preferences")
                     Text("Debug")
                 }
             }

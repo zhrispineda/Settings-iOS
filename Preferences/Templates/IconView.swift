@@ -12,10 +12,10 @@ import SwiftUI
 /// - Parameter lightOnly: The `Bool` for whether the icon should always be a light mode icon.
 struct IconView: View {
     @Environment(\.colorScheme) private var colorScheme
-    let id: String
-    let icon: String
-    let color: Color
-    let iconColor: Color
+    var id: String = ""
+    var icon: String = ""
+    var color: Color = .clear
+    var iconColor: Color = .clear
     var lightOnly: Bool = false
     
     var body: some View {
