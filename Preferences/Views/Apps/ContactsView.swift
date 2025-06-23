@@ -16,7 +16,7 @@ struct ContactsView: View {
     var body: some View {
         CustomList(title: "Back") {
             Section {
-                Placard(title: "CONTACTS".localize(table: table), icon: "appleContacts", description: "SETTINGS_SUBTITLE".localize(table: table) + " [\("LEARN_MORE".localize(table: table))](#)", frameY: $frameY, opacity: $opacity)
+                Placard(title: "CONTACTS".localize(table: table), icon: "com.apple.MobileAddressBook", description: "SETTINGS_SUBTITLE".localize(table: table) + " [\("LEARN_MORE".localize(table: table))](#)", frameY: $frameY, opacity: $opacity)
                 Button("ADD_ACCOUNT".localize(table: "PSSystemPolicy")) {}
             }
             

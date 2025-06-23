@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct RemindersView: View {
-    // Variables
     @State private var opacity = Double()
     @State private var frameY = Double()
     @State private var todayNotifications = true
@@ -23,7 +22,7 @@ struct RemindersView: View {
     var body: some View {
         CustomList(title: "Back") {
             Section {
-                Placard(title: "Reminders".localize(table: table), icon: "appleReminders", description: "SETTINGS_PLACARD_DESCRIPTION_TEXT".localize(table: table, "#"), frameY: $frameY, opacity: $opacity)
+                Placard(title: "Reminders".localize(table: table), icon: "com.apple.reminders", description: "SETTINGS_PLACARD_DESCRIPTION_TEXT".localize(table: table, "#"), frameY: $frameY, opacity: $opacity)
                 SettingsLink("Reminders Accounts".localize(table: table), status: "1", destination: EmptyView())
             }
             

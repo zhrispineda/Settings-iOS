@@ -20,7 +20,7 @@ struct CalendarView: View {
     var body: some View {
         CustomList(title: "CalendarSettingsPlacard_Calendar".localize(table: table)) {
             Section {
-                Placard(title: "CalendarSettingsPlacard_Calendar".localize(table: table), icon: "appleCalendar", description: "Add or remove accounts, manage Siri & Search, and customize how your calendar appears. [Learn more…](%@)".localize(table: table, UIDevice.iPhone ? "iphone/set-up-mail-contacts-and-calendar-accounts-ipha0d932e96/ios" : "ipad/set-up-mail-contacts-and-calendar-accounts-ipadee835d39/ipados"), frameY: $frameY, opacity: $opacity)
+                Placard(title: "CalendarSettingsPlacard_Calendar".localize(table: table), icon: "com.apple.mobilecal", description: "Add or remove accounts, manage Siri & Search, and customize how your calendar appears. [Learn more…](%@)".localize(table: table, UIDevice.iPhone ? "iphone/set-up-mail-contacts-and-calendar-accounts-ipha0d932e96/ios" : "ipad/set-up-mail-contacts-and-calendar-accounts-ipadee835d39/ipados"), frameY: $frameY, opacity: $opacity)
                 Button("ADD_ACCOUNT".localize(table: "PSSystemPolicy")) {}
             }
             
