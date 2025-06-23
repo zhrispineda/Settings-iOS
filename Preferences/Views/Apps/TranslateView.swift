@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct TranslateView: View {
-    // Variables
     @State private var onDeviceModeEnabled = false
     @State private var showingSheet = false
     let table = "TranslationUI"
@@ -30,11 +29,11 @@ struct TranslateView: View {
             }
             
             Section {} footer: {
-                Text("[\("PRIVACY_LINK".localize(table: table))](pref://)")
+                Text("[\("PRIVACY_LINK".localize(table: table))](pref://translate)")
             }
         }
         .onOpenURL { url in
-            if url.scheme == "pref" {
+            if url.absoluteString == "pref://translate" {
                 showingSheet = true
             }
         }

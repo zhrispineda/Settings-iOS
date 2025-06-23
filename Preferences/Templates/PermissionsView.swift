@@ -108,13 +108,13 @@ struct PermissionsView: View {
             Text("ALLOW_ACCESS_FORMAT".localize(table: table, appName))
         } footer: {
             if appName == "Maps" {
-                Text("[\("ABOUT_PRIVACY".localize(table: "PrivacyDisclosureUI", "Maps"))](pref://)")
+                Text("[\("ABOUT_PRIVACY".localize(table: "PrivacyDisclosureUI", "Maps"))](pref://maps)")
             } else if appName == "Music" && UIDevice.CellularTelephonyCapability {
                 Text("CELLULAR_FOOTER_DOWNLOADS_ONLY", tableName: "MusicSettings")
             }
         }
         .onOpenURL { url in
-            if url.scheme == "pref" {
+            if url.absoluteString == "pref://maps" {
                 showingSheet = true
             }
         }

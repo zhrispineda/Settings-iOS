@@ -238,10 +238,12 @@ struct OnBoardingKitView: UIViewControllerRepresentable {
         if let splashController = function(controller, selector, bundleID) as? UIViewController {
             splashController.setValue(showLinkToPrivacyGateway, forKey: "showLinkToPrivacyGateway")
             splashController.setValue(showsLinkToUnifiedAbout, forKey: "showsLinkToUnifiedAbout")
-            
-            let dismissButton = UIBarButtonItem(title: "Done", style: .prominent, target: splashController, action: #selector(UIViewController.dismissView))
+
+            let config = UIImage.SymbolConfiguration(pointSize: 18)
+            let checkmarkImage = UIImage(systemName: "checkmark", withConfiguration: config)
+            let dismissButton = UIBarButtonItem(image: checkmarkImage, style: .prominent, target: splashController, action: #selector(UIViewController.dismissView))
             splashController.navigationItem.rightBarButtonItem = dismissButton
-            
+
             let navController = UINavigationController(rootViewController: splashController)
             return navController
         }
