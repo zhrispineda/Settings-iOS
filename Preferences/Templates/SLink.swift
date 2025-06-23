@@ -98,6 +98,7 @@ struct SLink<Content: View>: View {
                         .imageScale(.large)
                 }
             }
+            .frame(height: 15)
         }
     }
 }
