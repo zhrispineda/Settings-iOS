@@ -70,7 +70,7 @@ struct ContentView: View {
                     
                     // MARK: Main
                     SettingsLabelSection(selection: $stateManager.selection, id: $id, item: UIDevice.IsSimulator ? simulatorMainSettings : mainSettings)
-                    
+
                     // MARK: Attention
                     SettingsLabelSection(selection: $stateManager.selection, id: $id, item: UIDevice.IsSimulator ? attentionSimulatorSettings : attentionSettings)
                     
