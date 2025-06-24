@@ -30,7 +30,9 @@ struct SiriView: View {
     
     @State private var opacity: Double = 0
     @State private var frameY: Double = 0
-    
+    @State private var siriPrivacySheet = false
+    @State private var intelligencePrivacySheet = false
+
     let table = "AssistantSettings"
     let gmTable = "AssistantSettings-GM"
     let exTable = "AssistantSettings-ExternalAIModel"
@@ -66,11 +68,11 @@ struct SiriView: View {
                 Section {
                     Placard(title: "Apple Intelligence & Siri".localize(table: table), icon: "com.apple.application-icon.apple-intelligence", description: UIDevice.iPhone ? "PLACARD_DESCRIPTION_GM".localize(table: gmTable) : "PLACARD_DESCRIPTION_GM_IPAD".localize(table: gmTable), frameY: $frameY, opacity: $opacity)
                     if !UIDevice.IsSimulator {
-                        Button("GM_WAITLIST_SPECIFIER_TITLE".localize(table: gmTable)) {}
+                        Button("GM_TURN_ON_GM_BUTTON_TITLE".localize(table: gmTable)) {}
                     }
                 } footer: {
                     if !UIDevice.IsSimulator {
-                        Text("GM_MODEL_NOT_YET_QUEUED", tableName: gmTable)
+                        Text(UIDevice.iPhone ? "GM_MODEL_TURN_ON_IPHONE" : "GM_MODEL_TURN_ON_IPAD", tableName: gmTable)
                     }
                 }
             } else {
@@ -87,7 +89,7 @@ struct SiriView: View {
                 if !UIDevice.IsSimulator {
                     SettingsLink("ACTIVATION_COMPACT".localize(table: table), status: "ACTIVATION_OFF".localize(table: table), destination: EmptyView())
                 }
-                if !siriEnabled {
+                if siriEnabled {
                     if !UIDevice.IsSimulator {
                         Toggle("ASSISTANT_LOCK_SCREEN_ACCESS".localize(table: table), isOn: $allowSiriWhenLockedEnabled)
                     }
@@ -124,7 +126,7 @@ struct SiriView: View {
             } header: {
                 Text("SIRI_REQUESTS", tableName: table)
             } footer: {
-                Text(.init(UIDevice.IsSimulator ? "[\("SIRI_REQUESTS_ABOUT_LINK_TEXT".localize(table: table))](#)" : "\("SIRI_REQUESTS_DEVICE_PROCESSING_FOOTER_TEXT_IPHONE".localize(table: table))" + " [\("SIRI_REQUESTS_ABOUT_LINK_TEXT".localize(table: table))](#)"))
+                Text(.init(UIDevice.IsSimulator ? "[\("SIRI_REQUESTS_ABOUT_LINK_TEXT".localize(table: table))](pref://siri)" : "\("SIRI_REQUESTS_DEVICE_PROCESSING_FOOTER_TEXT_IPHONE".localize(table: table))" + " [\("SIRI_REQUESTS_ABOUT_LINK_TEXT".localize(table: table))](pref://siri)"))
             }
             
             // MARK: Extensions Section
@@ -182,7 +184,7 @@ struct SiriView: View {
                 Text(UIDevice.IntelligenceCapability ? "GM_APP_ACCESS_GROUP" : "APP_ACCESS_GROUP", tableName: UIDevice.IntelligenceCapability ? gmTable : table)
             } footer: {
                 if UIDevice.IntelligenceCapability {
-                    Text("\("GM_PRIVACY_FOOTER_TEXT".localize(table: gmTable)) [\("GM_PRIVACY_FOOTER_LINK_TEXT".localize(table: gmTable))](#)")
+                    Text("\("GM_PRIVACY_FOOTER_TEXT".localize(table: gmTable)) [\("GM_PRIVACY_FOOTER_LINK_TEXT".localize(table: gmTable))](pref://intelligence)")
                 }
             }
         }
@@ -193,6 +195,21 @@ struct SiriView: View {
                     .font(.subheadline)
                     .opacity(frameY < 50.0 ? opacity : 0)
             }
+        }
+        .onOpenURL { url in
+            if url.absoluteString == "pref://siri" {
+                siriPrivacySheet.toggle()
+            } else if url.absoluteString == "pref://intelligence" {
+                intelligencePrivacySheet.toggle()
+            }
+        }
+        .sheet(isPresented: $siriPrivacySheet) {
+            OnBoardingKitView(bundleID: "com.apple.onboarding.siri")
+                .ignoresSafeArea()
+        }
+        .sheet(isPresented: $intelligencePrivacySheet) {
+            OnBoardingKitView(bundleID: "com.apple.onboarding.intelligenceengine")
+                .ignoresSafeArea()
         }
     }
 

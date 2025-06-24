@@ -46,7 +46,7 @@ struct AppsView: View {
             CustomList(title: "Apps".localize(table: table)) {
                 // MARK: Default Apps
                 Section {
-                    SLink("Default Apps".localize(table: table), color: .gray, icon: "checkmark.rectangle.stack.fill", subtitle: "Manage default apps on device".localize(table: table)) {
+                    SLink("Default Apps".localize(table: table), icon: "com.apple.graphic-icon.default-apps", subtitle: "Manage default apps on device".localize(table: table)) {
                         DefaultAppsView()
                     }
                 }
@@ -104,11 +104,11 @@ struct AppsView: View {
                 // MARK: Hidden Apps
                 if UIDevice.IsSimulator {
                     Button {} label: {
-                        SLink("Hidden Apps".localize(table: table), color: .gray, icon: "square.dashed") {}
+                        SLink("Hidden Apps".localize(table: table), icon: "com.apple.graphic-icon.hidden-apps") {}
                     }
                     .foregroundStyle(.primary)
                 } else {
-                    SLink("Hidden Apps".localize(table: table), color: .gray, icon: "square.dashed") {
+                    SLink("Hidden Apps".localize(table: table), icon: "com.apple.graphic-icon.hidden-apps") {
                         ContentUnavailableView(
                             "No Hidden Apps".localize(table: table),
                             systemImage: "square.stack.3d.up.slash.fill",
