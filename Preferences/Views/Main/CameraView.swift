@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct CameraView: View {
-    // Variables
     @AppStorage("CameraControlApp") private var selectedApp = "Camera"
     @AppStorage("CameraVideoSetting") private var selectedVideoSetting = "CAM_RECORD_VIDEO_1080p_30"
     @AppStorage("CameraSlomoSetting") private var selectedSlomoSetting = String()

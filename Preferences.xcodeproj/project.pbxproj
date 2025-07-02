@@ -92,8 +92,6 @@
 		83441A892CAF2B6A0022E193 /* Privacy.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83441A882CAF2B6A0022E193 /* Privacy.xcstrings */; };
 		83441A8B2CAF73740022E193 /* JournalingSuggestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83441A8A2CAF73740022E193 /* JournalingSuggestionsView.swift */; };
 		834540C52C9CE2E100091E79 /* AddLanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834540C42C9CE2E100091E79 /* AddLanguageView.swift */; };
-		8345656E2CAADFD6002BE49D /* CameraSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8345656D2CAADFD6002BE49D /* CameraSettings.xcstrings */; };
-		834565722CAAE313002BE49D /* CameraSettings-SmartStyles.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834565712CAAE313002BE49D /* CameraSettings-SmartStyles.xcstrings */; };
 		834565742CAAE673002BE49D /* CameraEditKit.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834565732CAAE673002BE49D /* CameraEditKit.xcstrings */; };
 		834565762CAAE7B8002BE49D /* CameraSettings-CinematicAudio.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834565752CAAE7B8002BE49D /* CameraSettings-CinematicAudio.xcstrings */; };
 		83470D162C35A1BC00CE8613 /* AppleAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83470D152C35A1BC00CE8613 /* AppleAccountView.swift */; };
@@ -243,6 +241,8 @@
 		83B619D12B941C4F00EFEA90 /* AlwaysAllowedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B619D02B941C4F00EFEA90 /* AlwaysAllowedView.swift */; };
 		83B893BD2B8FD82D005705A3 /* FaceAttentionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B893BC2B8FD82D005705A3 /* FaceAttentionView.swift */; };
 		83B98E302B7C087B007F6C94 /* IconToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B98E2F2B7C087B007F6C94 /* IconToggle.swift */; };
+		83BA35122E15B5A500CFA06C /* CameraSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83BA35112E15B5A500CFA06C /* CameraSettings.xcstrings */; };
+		83BA35142E15B61600CFA06C /* CameraSettings-SmartStyles.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83BA35132E15B61600CFA06C /* CameraSettings-SmartStyles.xcstrings */; };
 		83C3F33B2CC2B25100AE2402 /* Date & Time.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83C3F33A2CC2B25100AE2402 /* Date & Time.xcstrings */; };
 		83C3F33D2CC2BA7800AE2402 /* GameControlleriOSSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83C3F33C2CC2BA7800AE2402 /* GameControlleriOSSettings.xcstrings */; };
 		83C79B932CE331A500F49B4F /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83C79B922CE331A500F49B4F /* Localizable.xcstrings */; };
@@ -419,8 +419,6 @@
 		83441A882CAF2B6A0022E193 /* Privacy.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Privacy.xcstrings; sourceTree = "<group>"; };
 		83441A8A2CAF73740022E193 /* JournalingSuggestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalingSuggestionsView.swift; sourceTree = "<group>"; };
 		834540C42C9CE2E100091E79 /* AddLanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLanguageView.swift; sourceTree = "<group>"; };
-		8345656D2CAADFD6002BE49D /* CameraSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = CameraSettings.xcstrings; sourceTree = "<group>"; };
-		834565712CAAE313002BE49D /* CameraSettings-SmartStyles.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "CameraSettings-SmartStyles.xcstrings"; sourceTree = "<group>"; };
 		834565732CAAE673002BE49D /* CameraEditKit.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = CameraEditKit.xcstrings; sourceTree = "<group>"; };
 		834565752CAAE7B8002BE49D /* CameraSettings-CinematicAudio.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "CameraSettings-CinematicAudio.xcstrings"; sourceTree = "<group>"; };
 		83470D152C35A1BC00CE8613 /* AppleAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAccountView.swift; sourceTree = "<group>"; };
@@ -574,6 +572,8 @@
 		83B893BC2B8FD82D005705A3 /* FaceAttentionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceAttentionView.swift; sourceTree = "<group>"; };
 		83B893C12B8FDD94005705A3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		83B98E2F2B7C087B007F6C94 /* IconToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconToggle.swift; sourceTree = "<group>"; };
+		83BA35112E15B5A500CFA06C /* CameraSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = CameraSettings.xcstrings; sourceTree = "<group>"; };
+		83BA35132E15B61600CFA06C /* CameraSettings-SmartStyles.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "CameraSettings-SmartStyles.xcstrings"; sourceTree = "<group>"; };
 		83C3F33A2CC2B25100AE2402 /* Date & Time.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "Date & Time.xcstrings"; sourceTree = "<group>"; };
 		83C3F33C2CC2BA7800AE2402 /* GameControlleriOSSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = GameControlleriOSSettings.xcstrings; sourceTree = "<group>"; };
 		83C79B922CE331A500F49B4F /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
@@ -734,9 +734,9 @@
 				83A422332CAC60B100EED538 /* CameraSettings-4k120.xcstrings */,
 				83CD1FAC2DB68F6C00366987 /* CameraSettings-CameraButton.xcstrings */,
 				834565752CAAE7B8002BE49D /* CameraSettings-CinematicAudio.xcstrings */,
-				834565712CAAE313002BE49D /* CameraSettings-SmartStyles.xcstrings */,
 				83DBCE052CCD957C00B33277 /* CameraSettings-TrueVideo.xcstrings */,
-				8345656D2CAADFD6002BE49D /* CameraSettings.xcstrings */,
+				83BA35112E15B5A500CFA06C /* CameraSettings.xcstrings */,
+				83BA35132E15B61600CFA06C /* CameraSettings-SmartStyles.xcstrings */,
 			);
 			path = CameraSettings;
 			sourceTree = "<group>";
@@ -1724,6 +1724,7 @@
 				8341663F2DAED83A00F40719 /* SensorKitPrivacySettings.xcstrings in Resources */,
 				83DB888F2CAC97BF008218E6 /* AppleID.xcstrings in Resources */,
 				8388E5372CD0733400A3066D /* LocationServicesPrivacy.xcstrings in Resources */,
+				83BA35122E15B5A500CFA06C /* CameraSettings.xcstrings in Resources */,
 				83EF90242CD5C20000379263 /* MapsSettings.xcstrings in Resources */,
 				83B1D5362D6BC66700C26010 /* DefaultAppsSettingsUI.xcstrings in Resources */,
 				831448272CD9498D00FFEE51 /* Contacts.xcstrings in Resources */,
@@ -1743,6 +1744,7 @@
 				83ACE71F2CD5BA200061528C /* Localizable-DataTypes.xcstrings in Resources */,
 				832877DD2CAD95C300013B0B /* AppleAccountUI.xcstrings in Resources */,
 				833101772CD17A9500C6C3B3 /* FocusSettings.xcstrings in Resources */,
+				83BA35142E15B61600CFA06C /* CameraSettings-SmartStyles.xcstrings in Resources */,
 				83F77D762CD3F7C20026B1AC /* VirtualCard_Localizable.xcstrings in Resources */,
 				832877F62CAEE7C000013B0B /* Reset.xcstrings in Resources */,
 				834196272CB89D8F0038183D /* PSSystemPolicy.xcstrings in Resources */,
@@ -1752,7 +1754,6 @@
 				83F745BA2CC18EC700FDB3BA /* NewDeviceOutreachUI.xcstrings in Resources */,
 				837BCF332CD2E880009B1E33 /* Pearl.xcstrings in Resources */,
 				835874CC2DB2AE81005E4D01 /* AuthKitUI.xcstrings in Resources */,
-				8345656E2CAADFD6002BE49D /* CameraSettings.xcstrings in Resources */,
 				83CD1FAD2DB68F6C00366987 /* CameraSettings-CameraButton.xcstrings in Resources */,
 				832877DB2CAD915400013B0B /* AmbientSettings.xcstrings in Resources */,
 				8388E5342CD034EB00A3066D /* Location Services.xcstrings in Resources */,
@@ -1782,7 +1783,6 @@
 				83F3611A2CD2D3E300041A72 /* CommunicationSafetySettingsUI.xcstrings in Resources */,
 				837BCF392CD2F4A7009B1E33 /* Payment_Prefs.xcstrings in Resources */,
 				83F77D722CD3F48D0026B1AC /* Payment_Localizable.xcstrings in Resources */,
-				834565722CAAE313002BE49D /* CameraSettings-SmartStyles.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
