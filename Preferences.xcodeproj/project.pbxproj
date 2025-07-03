@@ -105,9 +105,7 @@
 		834CA6E82D62AB47006792AE /* SummarizeNotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834CA6E72D62AB47006792AE /* SummarizeNotificationsView.swift */; };
 		834CA6EA2D62AE93006792AE /* UserNotificationsKit.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834CA6E92D62AE93006792AE /* UserNotificationsKit.xcstrings */; };
 		834F2BF32D6570FC00AD85CF /* SettingsSimulator.gif in Resources */ = {isa = PBXBuildFile; fileRef = 834F2BF22D6570FC00AD85CF /* SettingsSimulator.gif */; };
-		8352C10A2D66C0140072B651 /* CloudSubscriptionFeatures.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8352C1092D66C0140072B651 /* CloudSubscriptionFeatures.xcstrings */; };
 		8352DEA22D70F716004B2575 /* SettingsSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8352DEA12D70F716004B2575 /* SettingsSearchView.swift */; };
-		8352DEA42D70FB76004B2575 /* Tips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8352DEA32D70FB76004B2575 /* Tips.swift */; };
 		83558CE12D416CB200D23945 /* AnalyticsDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83558CE02D416CB200D23945 /* AnalyticsDataView.swift */; };
 		835646062D9C47F000DAB406 /* iOSReadMe.html in Resources */ = {isa = PBXBuildFile; fileRef = 835646052D9C47F000DAB406 /* iOSReadMe.html */; };
 		835646082D9C480200DAB406 /* iPadOSReadMe.html in Resources */ = {isa = PBXBuildFile; fileRef = 835646072D9C480200DAB406 /* iPadOSReadMe.html */; };
@@ -241,7 +239,6 @@
 		83BA35122E15B5A500CFA06C /* CameraSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83BA35112E15B5A500CFA06C /* CameraSettings.xcstrings */; };
 		83BA35142E15B61600CFA06C /* CameraSettings-SmartStyles.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83BA35132E15B61600CFA06C /* CameraSettings-SmartStyles.xcstrings */; };
 		83C3F33B2CC2B25100AE2402 /* Date & Time.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83C3F33A2CC2B25100AE2402 /* Date & Time.xcstrings */; };
-		83C3F33D2CC2BA7800AE2402 /* GameControlleriOSSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83C3F33C2CC2BA7800AE2402 /* GameControlleriOSSettings.xcstrings */; };
 		83C79B932CE331A500F49B4F /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83C79B922CE331A500F49B4F /* Localizable.xcstrings */; };
 		83C94CA52C1E0192005EBBC5 /* AppleCareWarrantyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C94CA42C1E0192005EBBC5 /* AppleCareWarrantyView.swift */; };
 		83CB06972CA6283A00D7533A /* FormatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CB06962CA6283A00D7533A /* FormatsView.swift */; };
@@ -429,9 +426,7 @@
 		834CA6E72D62AB47006792AE /* SummarizeNotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummarizeNotificationsView.swift; sourceTree = "<group>"; };
 		834CA6E92D62AE93006792AE /* UserNotificationsKit.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = UserNotificationsKit.xcstrings; sourceTree = "<group>"; };
 		834F2BF22D6570FC00AD85CF /* SettingsSimulator.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SettingsSimulator.gif; sourceTree = "<group>"; };
-		8352C1092D66C0140072B651 /* CloudSubscriptionFeatures.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = CloudSubscriptionFeatures.xcstrings; sourceTree = "<group>"; };
 		8352DEA12D70F716004B2575 /* SettingsSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSearchView.swift; sourceTree = "<group>"; };
-		8352DEA32D70FB76004B2575 /* Tips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tips.swift; sourceTree = "<group>"; };
 		83558CE02D416CB200D23945 /* AnalyticsDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsDataView.swift; sourceTree = "<group>"; };
 		835646052D9C47F000DAB406 /* iOSReadMe.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = iOSReadMe.html; sourceTree = "<group>"; };
 		835646072D9C480200DAB406 /* iPadOSReadMe.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = iPadOSReadMe.html; sourceTree = "<group>"; };
@@ -569,7 +564,6 @@
 		83BA35112E15B5A500CFA06C /* CameraSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = CameraSettings.xcstrings; sourceTree = "<group>"; };
 		83BA35132E15B61600CFA06C /* CameraSettings-SmartStyles.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "CameraSettings-SmartStyles.xcstrings"; sourceTree = "<group>"; };
 		83C3F33A2CC2B25100AE2402 /* Date & Time.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "Date & Time.xcstrings"; sourceTree = "<group>"; };
-		83C3F33C2CC2BA7800AE2402 /* GameControlleriOSSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = GameControlleriOSSettings.xcstrings; sourceTree = "<group>"; };
 		83C79B922CE331A500F49B4F /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		83C94CA42C1E0192005EBBC5 /* AppleCareWarrantyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleCareWarrantyView.swift; sourceTree = "<group>"; };
 		83CB06962CA6283A00D7533A /* FormatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatsView.swift; sourceTree = "<group>"; };
@@ -1174,7 +1168,6 @@
 				83F516C72C21ECBD0004E87A /* Services */,
 				833C6EAA2C2087BB00A8D91C /* Apps */,
 				83F626D22B827EEC00ED343F /* Developer */,
-				8352DEA32D70FB76004B2575 /* Tips.swift */,
 				8352DEA12D70F716004B2575 /* SettingsSearchView.swift */,
 				830976D22CDD1B2F0087F1A1 /* FollowUpView.swift */,
 				83F516C32C21EB550004E87A /* AppsView.swift */,
@@ -1305,7 +1298,6 @@
 				832877DE2CAD987B00013B0B /* AppleIDSetup.xcstrings */,
 				835874CB2DB2AE81005E4D01 /* AuthKitUI.xcstrings */,
 				834565732CAAE673002BE49D /* CameraEditKit.xcstrings */,
-				8352C1092D66C0140072B651 /* CloudSubscriptionFeatures.xcstrings */,
 				83F361192CD2D3E300041A72 /* CommunicationSafetySettingsUI.xcstrings */,
 				83F77D7B2CD3F9740026B1AC /* ContactlessAndCredentialSettings_Localizable.xcstrings */,
 				831448262CD9498D00FFEE51 /* Contacts.xcstrings */,
@@ -1317,7 +1309,6 @@
 				833101762CD17A9500C6C3B3 /* FocusSettings.xcstrings */,
 				830976CE2CDD19FF0087F1A1 /* FollowUp.xcstrings */,
 				83A7E1592CBF047B0037F1FB /* FontSettings.xcstrings */,
-				83C3F33C2CC2BA7800AE2402 /* GameControlleriOSSettings.xcstrings */,
 				832D84EF2CD2A9DD0075ECF0 /* HealthPrivacySettings.xcstrings */,
 				8314482C2CD9652A00FFEE51 /* HealthSettingsSpecifiers.xcstrings */,
 				8314482A2CD95F6500FFEE51 /* HealthUI-Localizable.xcstrings */,
@@ -1748,7 +1739,6 @@
 				8388E5342CD034EB00A3066D /* Location Services.xcstrings in Resources */,
 				83441A892CAF2B6A0022E193 /* Privacy.xcstrings in Resources */,
 				83F77D702CD3F3A30026B1AC /* PaymentOffers_Localizable.xcstrings in Resources */,
-				8352C10A2D66C0140072B651 /* CloudSubscriptionFeatures.xcstrings in Resources */,
 				8314482D2CD9652A00FFEE51 /* HealthSettingsSpecifiers.xcstrings in Resources */,
 				83CD35172D738CF50060AA83 /* Display.xcstrings in Resources */,
 				838FE8CD2CB60A3300FDB1A8 /* AssistantSettings.xcstrings in Resources */,
@@ -1763,7 +1753,6 @@
 				832877DF2CAD987B00013B0B /* AppleIDSetup.xcstrings in Resources */,
 				832877F42CAEE7A200013B0B /* GeneralSettingsUI.xcstrings in Resources */,
 				83E50A0E2CDA7D7900BF4969 /* RemindersSettings.xcstrings in Resources */,
-				83C3F33D2CC2BA7800AE2402 /* GameControlleriOSSettings.xcstrings in Resources */,
 				839E0F0F2DB063A5009B26DB /* MusicSettings.xcstrings in Resources */,
 				839E0F472DB09C9E009B26DB /* ICBSettingsBundle.xcstrings in Resources */,
 				832D84F22CD2B0A90075ECF0 /* DigitalSeparationUI.xcstrings in Resources */,
@@ -1852,7 +1841,6 @@
 				832FD83F2BC22EB000E99DEB /* BluetoothView.swift in Sources */,
 				83D308652B8ACF48002A9B7F /* SafariLocationView.swift in Sources */,
 				837B62FE2BD457F10045B95C /* FocusView.swift in Sources */,
-				8352DEA42D70FB76004B2575 /* Tips.swift in Sources */,
 				83470D162C35A1BC00CE8613 /* AppleAccountView.swift in Sources */,
 				83D308632B8ACD22002A9B7F /* WebsiteDataView.swift in Sources */,
 				837F00E62C2CA2F500B98374 /* NameView.swift in Sources */,

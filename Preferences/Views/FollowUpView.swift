@@ -41,5 +41,6 @@ struct FollowUpView: View {
 #Preview {
     NavigationStack {
         FollowUpView()
+            .environment(StateManager())
     }
 }
