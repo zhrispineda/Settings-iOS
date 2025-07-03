@@ -35,7 +35,6 @@
 		831C1A502CCE9E3300866498 /* HomeScreenSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 831C1A4F2CCE9E3300866498 /* HomeScreenSettings.xcstrings */; };
 		831C80412CA4998500306574 /* RecordSlomoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831C80402CA4998500306574 /* RecordSlomoView.swift */; };
 		832877D92CAD8C7100013B0B /* Accessibility.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 832877D82CAD8C7100013B0B /* Accessibility.xcstrings */; };
-		832877DB2CAD915400013B0B /* AmbientSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 832877DA2CAD915400013B0B /* AmbientSettings.xcstrings */; };
 		832877DD2CAD95C300013B0B /* AppleAccountUI.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 832877DC2CAD95C300013B0B /* AppleAccountUI.xcstrings */; };
 		832877DF2CAD987B00013B0B /* AppleIDSetup.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 832877DE2CAD987B00013B0B /* AppleIDSetup.xcstrings */; };
 		832877E62CAD9C6000013B0B /* Devices.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 832877E52CAD9C6000013B0B /* Devices.xcstrings */; };
@@ -360,7 +359,6 @@
 		831C1A4F2CCE9E3300866498 /* HomeScreenSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = HomeScreenSettings.xcstrings; sourceTree = "<group>"; };
 		831C80402CA4998500306574 /* RecordSlomoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSlomoView.swift; sourceTree = "<group>"; };
 		832877D82CAD8C7100013B0B /* Accessibility.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Accessibility.xcstrings; sourceTree = "<group>"; };
-		832877DA2CAD915400013B0B /* AmbientSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AmbientSettings.xcstrings; sourceTree = "<group>"; };
 		832877DC2CAD95C300013B0B /* AppleAccountUI.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AppleAccountUI.xcstrings; sourceTree = "<group>"; };
 		832877DE2CAD987B00013B0B /* AppleIDSetup.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AppleIDSetup.xcstrings; sourceTree = "<group>"; };
 		832877E52CAD9C6000013B0B /* Devices.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Devices.xcstrings; sourceTree = "<group>"; };
@@ -1304,7 +1302,6 @@
 		83D0B1472CE2F9BA00DDEC69 /* Ungrouped */ = {
 			isa = PBXGroup;
 			children = (
-				832877DA2CAD915400013B0B /* AmbientSettings.xcstrings */,
 				832877DC2CAD95C300013B0B /* AppleAccountUI.xcstrings */,
 				83DB888E2CAC97BF008218E6 /* AppleID.xcstrings */,
 				832877DE2CAD987B00013B0B /* AppleIDSetup.xcstrings */,
@@ -1751,7 +1748,6 @@
 				837BCF332CD2E880009B1E33 /* Pearl.xcstrings in Resources */,
 				835874CC2DB2AE81005E4D01 /* AuthKitUI.xcstrings in Resources */,
 				83CD1FAD2DB68F6C00366987 /* CameraSettings-CameraButton.xcstrings in Resources */,
-				832877DB2CAD915400013B0B /* AmbientSettings.xcstrings in Resources */,
 				8388E5342CD034EB00A3066D /* Location Services.xcstrings in Resources */,
 				83441A892CAF2B6A0022E193 /* Privacy.xcstrings in Resources */,
 				83F77D702CD3F3A30026B1AC /* PaymentOffers_Localizable.xcstrings in Resources */,
