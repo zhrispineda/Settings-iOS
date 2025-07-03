@@ -49,6 +49,7 @@ struct PermissionsView: View {
     let table = "PSSystemPolicy"
     let notifTable = "NotificationsSettings"
     let ICBSettings = "/System/Library/PreferenceBundles/ICBSettingsBundle.bundle"
+    let privacy = "/System/Library/OnBoardingBundles/com.apple.onboarding.maps.bundle"
     
     var body: some View {
         Section {
@@ -104,7 +105,7 @@ struct PermissionsView: View {
             Text("ALLOW_ACCESS_FORMAT".localize(table: table, appName))
         } footer: {
             if appName == "Maps" {
-                Text("[\("ABOUT_PRIVACY".localize(table: "PrivacyDisclosureUI", "Maps"))](pref://maps)")
+                Text("[\("BUTTON_TITLE".localized(path: privacy, table: "Maps"))](pref://maps)")
             } else if appName == "Music" && UIDevice.CellularTelephonyCapability {
                 Text("CELLULAR_FOOTER_DOWNLOADS_ONLY", tableName: "MusicSettings")
             }

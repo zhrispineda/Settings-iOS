@@ -91,7 +91,6 @@
 		834565742CAAE673002BE49D /* CameraEditKit.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834565732CAAE673002BE49D /* CameraEditKit.xcstrings */; };
 		834565762CAAE7B8002BE49D /* CameraSettings-CinematicAudio.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834565752CAAE7B8002BE49D /* CameraSettings-CinematicAudio.xcstrings */; };
 		83470D162C35A1BC00CE8613 /* AppleAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83470D152C35A1BC00CE8613 /* AppleAccountView.swift */; };
-		834718E42CDFD6D1002D9BC9 /* PrivacyDisclosureUI.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834718E32CDFD6D1002D9BC9 /* PrivacyDisclosureUI.xcstrings */; };
 		8349E22C2C7514F6007416C5 /* ApplePencilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8349E22B2C7514F6007416C5 /* ApplePencilView.swift */; };
 		834A15022CD85538004A0025 /* ShortcutsAdvancedSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834A15012CD85538004A0025 /* ShortcutsAdvancedSettings.xcstrings */; };
 		834A15042CD85705004A0025 /* TranslationUI.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834A15032CD85705004A0025 /* TranslationUI.xcstrings */; };
@@ -277,7 +276,6 @@
 		83EF90242CD5C20000379263 /* MapsSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83EF90232CD5C20000379263 /* MapsSettings.xcstrings */; };
 		83F3611A2CD2D3E300041A72 /* CommunicationSafetySettingsUI.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83F361192CD2D3E300041A72 /* CommunicationSafetySettingsUI.xcstrings */; };
 		83F3611C2CD2E25700041A72 /* AppleAdvertising.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83F3611B2CD2E25700041A72 /* AppleAdvertising.xcstrings */; };
-		83F3611E2CD2E48100041A72 /* MomentsOnboardingAndSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83F3611D2CD2E48100041A72 /* MomentsOnboardingAndSettings.xcstrings */; };
 		83F388632D0B6E8500085103 /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F388622D0B6E8500085103 /* IconView.swift */; };
 		83F388652D0B777000085103 /* InstalledApps.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83F388642D0B777000085103 /* InstalledApps.xcstrings */; };
 		83F3F6A12B7D12B6003CC310 /* DictionaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3F6A02B7D12B6003CC310 /* DictionaryView.swift */; };
@@ -406,7 +404,6 @@
 		834565732CAAE673002BE49D /* CameraEditKit.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = CameraEditKit.xcstrings; sourceTree = "<group>"; };
 		834565752CAAE7B8002BE49D /* CameraSettings-CinematicAudio.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "CameraSettings-CinematicAudio.xcstrings"; sourceTree = "<group>"; };
 		83470D152C35A1BC00CE8613 /* AppleAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAccountView.swift; sourceTree = "<group>"; };
-		834718E32CDFD6D1002D9BC9 /* PrivacyDisclosureUI.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = PrivacyDisclosureUI.xcstrings; sourceTree = "<group>"; };
 		8349E22B2C7514F6007416C5 /* ApplePencilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePencilView.swift; sourceTree = "<group>"; };
 		834A15012CD85538004A0025 /* ShortcutsAdvancedSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = ShortcutsAdvancedSettings.xcstrings; sourceTree = "<group>"; };
 		834A15032CD85705004A0025 /* TranslationUI.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = TranslationUI.xcstrings; sourceTree = "<group>"; };
@@ -597,7 +594,6 @@
 		83EF90232CD5C20000379263 /* MapsSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = MapsSettings.xcstrings; sourceTree = "<group>"; };
 		83F361192CD2D3E300041A72 /* CommunicationSafetySettingsUI.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = CommunicationSafetySettingsUI.xcstrings; sourceTree = "<group>"; };
 		83F3611B2CD2E25700041A72 /* AppleAdvertising.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AppleAdvertising.xcstrings; sourceTree = "<group>"; };
-		83F3611D2CD2E48100041A72 /* MomentsOnboardingAndSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = MomentsOnboardingAndSettings.xcstrings; sourceTree = "<group>"; };
 		83F388622D0B6E8500085103 /* IconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
 		83F388642D0B777000085103 /* InstalledApps.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InstalledApps.xcstrings; sourceTree = "<group>"; };
 		83F3F6A02B7D12B6003CC310 /* DictionaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryView.swift; sourceTree = "<group>"; };
@@ -1305,7 +1301,6 @@
 				830F2B2F2CD97A05006F7F22 /* MessagesSettings.xcstrings */,
 				830F2B312CD97C0A006F7F22 /* Messages.xcstrings */,
 				834A15072CD85B10004A0025 /* MobileCalSettings.xcstrings */,
-				83F3611D2CD2E48100041A72 /* MomentsOnboardingAndSettings.xcstrings */,
 				839E0F0E2DB063A5009B26DB /* MusicSettings.xcstrings */,
 				830F2B332CD9826E006F7F22 /* NewsSettings.xcstrings */,
 				83D241AC2D5CEC87002061F4 /* NotificationsSettings.xcstrings */,
@@ -1313,7 +1308,6 @@
 				837BCF382CD2F4A7009B1E33 /* Payment_Prefs.xcstrings */,
 				837BCF322CD2E880009B1E33 /* Pearl.xcstrings */,
 				830F2B392CD98E5D006F7F22 /* Photos.xcstrings */,
-				834718E32CDFD6D1002D9BC9 /* PrivacyDisclosureUI.xcstrings */,
 				83441A882CAF2B6A0022E193 /* Privacy.xcstrings */,
 				834196262CB89D8F0038183D /* PSSystemPolicy.xcstrings */,
 				8331016C2CD14BDD00C6C3B3 /* RatingProviders.xcstrings */,
@@ -1668,7 +1662,6 @@
 				830F2B3A2CD98E5D006F7F22 /* Photos.xcstrings in Resources */,
 				8340F0C22D0D4D00009E71C0 /* PrivacyAndSecuritySettings.xcstrings in Resources */,
 				830F2B302CD97A05006F7F22 /* MessagesSettings.xcstrings in Resources */,
-				83F3611E2CD2E48100041A72 /* MomentsOnboardingAndSettings.xcstrings in Resources */,
 				83D241AD2D5CEC87002061F4 /* NotificationsSettings.xcstrings in Resources */,
 				834A15042CD85705004A0025 /* TranslationUI.xcstrings in Resources */,
 				835646082D9C480200DAB406 /* iPadOSReadMe.html in Resources */,
@@ -1697,7 +1690,6 @@
 				83F77D6D2CD3F2180026B1AC /* PeerPayment_Localizable.xcstrings in Resources */,
 				8360825D2D13B04E00902254 /* SettingsPhysical.gif in Resources */,
 				83DBCE062CCD957C00B33277 /* CameraSettings-TrueVideo.xcstrings in Resources */,
-				834718E42CDFD6D1002D9BC9 /* PrivacyDisclosureUI.xcstrings in Resources */,
 				830976D12CDD1A0E0087F1A1 /* CoreFollowUp.xcstrings in Resources */,
 				833F0AD42B744D190036EAD2 /* Assets.xcassets in Resources */,
 				83A7E15A2CBF047B0037F1FB /* FontSettings.xcstrings in Resources */,

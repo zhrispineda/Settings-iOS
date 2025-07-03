@@ -8,12 +8,11 @@
 import SwiftUI
 
 struct JournalingSuggestionsView: View {
-    // Variables
-    let table = "MomentsOnboardingAndSettings"
+    let path = "/System/Library/PrivateFrameworks/MomentsOnboardingAndSettings.framework"
     
     var body: some View {
         CustomList(title: "JOURNALING_SUGGESTIONS".localize(table: "Privacy")) {
-            Button("Turn On Journaling Suggestions".localize(table: table)) {}
+            Button("Turn On Journaling Suggestions".localized(path: path)) {}
         }
     }
 }

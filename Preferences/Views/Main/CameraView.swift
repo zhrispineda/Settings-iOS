@@ -37,6 +37,7 @@ struct CameraView: View {
     let stylesTable = "CameraSettings-SmartStyles"
     let kitTable = "CameraEditKit"
     let cineTable = "CameraSettings-CinematicAudio"
+    let privacy = "/System/Library/OnBoardingBundles/com.apple.onboarding.camera.bundle"
     
     init() {
         if selectedSlomoSetting.isEmpty && !UIDevice.ProDevice || UIDevice.iPad {
@@ -212,7 +213,7 @@ struct CameraView: View {
             // MARK: Camera & ARKit Privacy Footer
             if UIDevice.LiDARCapability {
                 Section {} footer: {
-                    Text("[\("ABOUT_PRIVACY".localize(table: "PrivacyDisclosureUI", "Camera and ARKit"))](pref://privacy)")
+                    Text("[\("BUTTON_TITLE".localized(path: privacy, table: "Camera"))](pref://privacy)")
                 }
             }
         }
