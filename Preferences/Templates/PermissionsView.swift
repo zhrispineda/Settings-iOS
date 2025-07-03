@@ -1,8 +1,3 @@
-/*
-Abstract:
-A Section container for displaying controls to manage what permission an app has.
-*/
-
 import SwiftUI
 
 /// A Section container for displaying controls to manage what permission an app has.
@@ -53,6 +48,7 @@ struct PermissionsView: View {
     
     let table = "PSSystemPolicy"
     let notifTable = "NotificationsSettings"
+    let ICBSettings = "/System/Library/PreferenceBundles/ICBSettingsBundle.bundle"
     
     var body: some View {
         Section {
@@ -101,7 +97,7 @@ struct PermissionsView: View {
                 IconToggle("CELLULAR_DATA", isOn: $cellularEnabled, icon: "com.apple.graphic-icon.cellular-settings", table: table)
             }
             if phone {
-                SLink("INCOMING_CALL_STYLE_LIST_BANNER".localize(table: "ICBSettingsBundle"), icon: "com.apple.graphic-icon.incoming-phone-calls", status: "Banner") {}
+                SLink("INCOMING_CALL_STYLE_LIST_BANNER".localized(path: ICBSettings, table: "ICBSettingsBundle"), icon: "com.apple.graphic-icon.incoming-phone-calls", status: "Banner") {}
                 SLink("ANNOUNCE_CALLS_TITLE".localize(table: "AssistantSettings"), icon: "com.apple.graphic-icon.announce-phone-calls", status: "NEVER".localize(table: "MessagesSettings")) {}
             }
         } header: {
