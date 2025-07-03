@@ -13,40 +13,40 @@ struct AirDropView: View {
     @AppStorage("AirDropCellularUsage") private var cellularUsageEnabled = true
     @State private var showingSheet = false
     let options = ["Receiving Off", "Contacts Only", "Everyone for 10 Minutes"]
-    let table = "AirDropSettings"
+    let path = "/System/Library/PreferenceBundles/AirDropSettings.bundle"
     
     var body: some View {
-        CustomList(title: "AirDrop".localize(table: table)) {
+        CustomList(title: "AirDrop".localized(path: path)) {
             // AirDrop Visibility Picker Section
             Section {
-                Picker("AirDrop Visibility", selection: $selection) {
+                Picker("AirDrop Visibility".localized(path: path), selection: $selection) {
                     ForEach(options, id: \.self) { option in
-                        Text(option.localize(table: table))
+                        Text(option.localized(path: path))
                     }
                 }
                 .pickerStyle(.inline)
                 .labelsHidden()
             } footer: {
-                Text(.init(NSLocalizedString("AirDrop Learn More Footer WIFI", tableName: table, comment: "").replacing( "airDropSettingsOBK", with: "pref")))
+                Text(.init("AirDrop Learn More Footer WIFI".localized(path: path).replacing("airDropSettingsOBK", with: "pref")))
             }
             
             if UIDevice.iPhone {
                 // Start Sharing By Section
                 Section {
-                    Toggle("Bringing Devices Together".localize(table: table), isOn: $nearbySharingEnabled)
+                    Toggle("Bringing Devices Together".localized(path: path), isOn: $nearbySharingEnabled)
                 } header: {
-                    Text("Start Sharing By", tableName: table)
+                    Text("Start Sharing By".localized(path: path))
                 } footer: {
-                    Text("Easily swap numbers with NameDrop, share photos, and more by holding the top of your iPhone close to another iPhone.", tableName: table)
+                    Text("Easily swap numbers with NameDrop, share photos, and more by holding the top of your iPhone close to another iPhone.".localized(path: path))
                 }
                 
                 // Out of Range Section
                 Section {
-                    Toggle("Use Cellular Data".localize(table: table), isOn: $cellularUsageEnabled)
+                    Toggle("Use Cellular Data".localized(path: path), isOn: $cellularUsageEnabled)
                 } header: {
-                    Text("Out of Range", tableName: table)
+                    Text("Out of Range".localized(path: path))
                 } footer: {
-                    Text("Continue to send and receive content when Wi-Fi is not available during AirDrop.", tableName: table)
+                    Text("Continue to send and receive content when Wi-Fi is not available during AirDrop.".localized(path: path))
                 }
             }
         }

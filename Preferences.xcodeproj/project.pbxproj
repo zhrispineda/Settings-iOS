@@ -105,7 +105,6 @@
 		834B5A242C4C1836003A6940 /* AirDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B5A232C4C1836003A6940 /* AirDropView.swift */; };
 		834CA6E82D62AB47006792AE /* SummarizeNotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834CA6E72D62AB47006792AE /* SummarizeNotificationsView.swift */; };
 		834CA6EA2D62AE93006792AE /* UserNotificationsKit.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834CA6E92D62AE93006792AE /* UserNotificationsKit.xcstrings */; };
-		834CAE482D1DE94000F2E069 /* AirDropSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834CAE472D1DE94000F2E069 /* AirDropSettings.xcstrings */; };
 		834F2BF32D6570FC00AD85CF /* SettingsSimulator.gif in Resources */ = {isa = PBXBuildFile; fileRef = 834F2BF22D6570FC00AD85CF /* SettingsSimulator.gif */; };
 		8352C10A2D66C0140072B651 /* CloudSubscriptionFeatures.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8352C1092D66C0140072B651 /* CloudSubscriptionFeatures.xcstrings */; };
 		8352DEA22D70F716004B2575 /* SettingsSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8352DEA12D70F716004B2575 /* SettingsSearchView.swift */; };
@@ -432,7 +431,6 @@
 		834B5A232C4C1836003A6940 /* AirDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirDropView.swift; sourceTree = "<group>"; };
 		834CA6E72D62AB47006792AE /* SummarizeNotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummarizeNotificationsView.swift; sourceTree = "<group>"; };
 		834CA6E92D62AE93006792AE /* UserNotificationsKit.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = UserNotificationsKit.xcstrings; sourceTree = "<group>"; };
-		834CAE472D1DE94000F2E069 /* AirDropSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AirDropSettings.xcstrings; sourceTree = "<group>"; };
 		834F2BF22D6570FC00AD85CF /* SettingsSimulator.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SettingsSimulator.gif; sourceTree = "<group>"; };
 		8352C1092D66C0140072B651 /* CloudSubscriptionFeatures.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = CloudSubscriptionFeatures.xcstrings; sourceTree = "<group>"; };
 		8352DEA12D70F716004B2575 /* SettingsSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSearchView.swift; sourceTree = "<group>"; };
@@ -1306,7 +1304,6 @@
 		83D0B1472CE2F9BA00DDEC69 /* Ungrouped */ = {
 			isa = PBXGroup;
 			children = (
-				834CAE472D1DE94000F2E069 /* AirDropSettings.xcstrings */,
 				832877DA2CAD915400013B0B /* AmbientSettings.xcstrings */,
 				832877DC2CAD95C300013B0B /* AppleAccountUI.xcstrings */,
 				83DB888E2CAC97BF008218E6 /* AppleID.xcstrings */,
@@ -1693,7 +1690,6 @@
 				834A15082CD85B10004A0025 /* MobileCalSettings.xcstrings in Resources */,
 				83A915462CE1280D00F718AA /* SpotlightSettings.xcstrings in Resources */,
 				837BCF3C2CD30AF2009B1E33 /* PasscodeLock-DimpleKey.xcstrings in Resources */,
-				834CAE482D1DE94000F2E069 /* AirDropSettings.xcstrings in Resources */,
 				834565762CAAE7B8002BE49D /* CameraSettings-CinematicAudio.xcstrings in Resources */,
 				836CDF932CB602B300B1C5B2 /* Restrictions.xcstrings in Resources */,
 				83A851BE2E0A4BD70041A3E6 /* SettingsApp.icon in Resources */,
