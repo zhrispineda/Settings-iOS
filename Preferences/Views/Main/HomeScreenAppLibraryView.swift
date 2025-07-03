@@ -8,45 +8,36 @@
 import SwiftUI
 
 struct HomeScreenAppLibraryView: View {
-    // Variables
-    var options = ["Add to Home Screen", "App Library Only"]
     @State private var selected = "App Library Only"
     @State private var showAppLibraryNotificationsEnabled = true
     @State private var showHomeScreenSearchEnabled = true
-    let table = "HomeScreenSettings"
+    let path = "/System/Library/PreferenceBundles/HomeScreenSettings.bundle"
+    var options = ["Add to Home Screen", "App Library Only"]
     
     var body: some View {
-        CustomList(title: "Home Screen & App Library".localize(table: table), topPadding: true) {
+        CustomList(title: "Home Screen & App Library".localized(path: path), topPadding: true) {
             Section {
-                ForEach(options, id: \.self) { option in
-                    Button {
-                        selected = option.localize(table: table)
-                    } label: {
-                        HStack {
-                            Text(option.localize(table: table))
-                            Spacer()
-                            if option.localize(table: table) == selected {
-                                Image(systemName: "checkmark")
-                                    .fontWeight(.medium)
-                            }
-                        }
+                Picker("Newly Downloaded Apps".localized(path: path), selection: $selected) {
+                    ForEach(options, id: \.self) { option in
+                        Text(option.localized(path: path))
                     }
-                    .foregroundStyle(.primary)
                 }
+                .pickerStyle(.inline)
+                .labelsHidden()
             } header: {
-                Text("Newly Downloaded Apps", tableName: table)
+                Text("Newly Downloaded Apps".localized(path: path))
             }
             
             Section {
-                Toggle("Show in App Library".localize(table: table), isOn: $showAppLibraryNotificationsEnabled)
+                Toggle("Show in App Library".localized(path: path), isOn: $showAppLibraryNotificationsEnabled)
             } header: {
-                Text("Notification Badges", tableName: table)
+                Text("Notification Badges".localized(path: path))
             }
             
             Section {
-                Toggle("Show on Home Screen".localize(table: table), isOn: $showHomeScreenSearchEnabled)
+                Toggle("Show on Home Screen".localized(path: path), isOn: $showHomeScreenSearchEnabled)
             } header: {
-                Text("Search", tableName: table)
+                Text("Search".localized(path: path))
             }
         }
     }
