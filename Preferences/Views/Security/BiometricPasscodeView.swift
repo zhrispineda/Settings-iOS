@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct BiometricPasscodeView: View {
-    // Variables
     @AppStorage("SiriEnabled") private var siriEnabled = false
     @State private var allowFingerprintForUnlock = false
     @State private var allowFingerprintForStore = false
@@ -48,7 +47,7 @@ struct BiometricPasscodeView: View {
     
     var body: some View {
         CustomList {
-            Placard(title: UIDevice.PearlIDCapability ? "PEARL_ID_AND_PASSCODE".localize(table: table) : "TOUCHID_PASSCODE".localize(table: oldTable), color: UIDevice.PearlIDCapability ? .green : .white, icon: UIDevice.PearlIDCapability ? "faceid" : "touchid", description: "\(UIDevice.PearlIDCapability ? "PASSCODE_PLACARD_SUBTITLE_FACE_ID".localize(table: lockTable) : "PASSCODE_PLACARD_SUBTITLE_TOUCH_ID".localize(table: lockTable)) [\("PASSCODE_RECOVERY_LEARN_MORE_TEXT".localize(table: lockTable))](pref://helpkit)", frameY: $frameY, opacity: $opacity)
+            Placard(title: UIDevice.PearlIDCapability ? "PEARL_ID_AND_PASSCODE".localize(table: table) : "TOUCHID_PASSCODE".localize(table: oldTable), icon: UIDevice.PearlIDCapability ? "com.apple.graphic-icon.face-id" : "com.apple.graphic-icon.touch-id", description: "\(UIDevice.PearlIDCapability ? "PASSCODE_PLACARD_SUBTITLE_FACE_ID".localize(table: lockTable) : "PASSCODE_PLACARD_SUBTITLE_TOUCH_ID".localize(table: lockTable)) [\("PASSCODE_RECOVERY_LEARN_MORE_TEXT".localize(table: lockTable))](pref://helpkit)", frameY: $frameY, opacity: $opacity)
             
             Section {
                 Toggle("TOUCHID_UNLOCK".localize(table: oldTable), isOn: $allowFingerprintForUnlock)

@@ -8,20 +8,17 @@
 import SwiftUI
 
 struct WalletView: View {
-    // Variables
     @State private var cellularEnabled = true
-    
     @AppStorage("AppleCashEnabled") private var appleCashEnabled = false
     @State private var doubleClickButtonEnabled = true
     @State private var hideExpiredPassesEnabled = true
-    
     @AppStorage("PayLaterEnabled") private var payLaterEnabled = true
     @AppStorage("RewardsEnabled") private var rewardsEnabled = true
     @AppStorage("CompatibleCardsEnabled") private var compatibleCardsEnabled = false
     @State private var addOrdersWalletEnabled = true
     @State private var orderNotificationsEnabled = true
     @AppStorage("OtherPayLaterEnabled") private var otherPayLaterOptionsEnabled = true
-    
+    let path = "/System/Library/Frameworks/PassKit.framework/"
     let nfcTable = "ContactlessAndCredentialSettings_Localizable"
     let offerTable = "PaymentOffers_Localizable"
     let payTable = "Payment_Localizable"
@@ -30,11 +27,11 @@ struct WalletView: View {
     let walletTable = "WalletSettings_Localizable"
     
     var body: some View {
-        CustomList(title: "WALLET_&_APPLE_PAY".localize(table: walletTable), topPadding: true) {
+        CustomList(title: "WALLET_&_APPLE_PAY".localized(path: path, table: walletTable), topPadding: true) {
             if UIDevice.IsSimulator {
                 PermissionsView(appName: "PASS_DETAILS_WALLET".localize(table: payTable), cellular: false, location: false, cellularEnabled: $cellularEnabled)
             } else {
-                PermissionsView(appName: "WALLET_&_APPLE_PAY".localize(table: walletTable), cellular: false, location: false, siri: false, cellularEnabled: $cellularEnabled)
+                PermissionsView(appName: "WALLET_&_APPLE_PAY".localized(path: path, table: walletTable), cellular: false, location: false, siri: false, cellularEnabled: $cellularEnabled)
             }
             
             if !UIDevice.IsSimulator {
@@ -66,7 +63,7 @@ struct WalletView: View {
                     Text("SETTINGS_PAYMENT_CARDS_GROUP", tableName: payTable)
                 } footer: {
                     if !appleCashEnabled {
-                        Text(.init("\(UIDevice.PearlIDCapability ? UIDevice.iPhone ? "SETTINGS_ABOUT_FOOTER_FACEID_IPHONE".localize(table: payTable) : "SETTINGS_ABOUT_FOOTER_FACEID_IPAD".localize(table: payTable) : UIDevice.iPad ? "SETTINGS_ABOUT_FOOTER_IPAD".localize(table: payTable) : "SETTINGS_ABOUT_FOOTER_IPHONE".localize(table: payTable)) [\("APPLE_PAY_PRIVACY".localize(table: walletTable))](#)"))
+                        Text(.init("\(UIDevice.PearlIDCapability ? UIDevice.iPhone ? "SETTINGS_ABOUT_FOOTER_FACEID_IPHONE".localize(table: payTable) : "SETTINGS_ABOUT_FOOTER_FACEID_IPAD".localize(table: payTable) : UIDevice.iPad ? "SETTINGS_ABOUT_FOOTER_IPAD".localize(table: payTable) : "SETTINGS_ABOUT_FOOTER_IPHONE".localize(table: payTable)) [\("APPLE_PAY_PRIVACY".localized(path: path, table: walletTable))](#)"))
                     }
                 }
                 
@@ -98,7 +95,7 @@ struct WalletView: View {
                     } header: {
                         Text("SETTINGS_TRANSACTION_DEFAULTS_GROUP", tableName: payTable)
                     } footer: {
-                        Text("\("SETTINGS_TRANSACTION_DEFAULTS_FOOTER".localize(table: payTable)) [\("APPLE_PAY_PRIVACY".localize(table: walletTable))](#)")
+                        Text("\("SETTINGS_TRANSACTION_DEFAULTS_FOOTER".localize(table: payTable)) [\("APPLE_PAY_PRIVACY".localized(path: path, table: walletTable))](#)")
                     }
                 }
             }
