@@ -288,10 +288,6 @@
 		83F516C42C21EB550004E87A /* AppsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F516C32C21EB550004E87A /* AppsView.swift */; };
 		83F6E26C2C8A2E300060187F /* RemindersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F6E26B2C8A2E300060187F /* RemindersView.swift */; };
 		83F77D692CD3E51F0026B1AC /* StoreSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83F77D682CD3E51F0026B1AC /* StoreSettings.xcstrings */; };
-		83F77D6D2CD3F2180026B1AC /* PeerPayment_Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83F77D6C2CD3F2180026B1AC /* PeerPayment_Localizable.xcstrings */; };
-		83F77D702CD3F3A30026B1AC /* PaymentOffers_Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83F77D6F2CD3F3A30026B1AC /* PaymentOffers_Localizable.xcstrings */; };
-		83F77D722CD3F48D0026B1AC /* Payment_Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83F77D712CD3F48D0026B1AC /* Payment_Localizable.xcstrings */; };
-		83F77D762CD3F7C20026B1AC /* VirtualCard_Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83F77D752CD3F7C20026B1AC /* VirtualCard_Localizable.xcstrings */; };
 		83F77D7C2CD3F9740026B1AC /* ContactlessAndCredentialSettings_Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83F77D7B2CD3F9740026B1AC /* ContactlessAndCredentialSettings_Localizable.xcstrings */; };
 		83F78A0F2B8E7D5000025062 /* ControlNearbyDevicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F78A0E2B8E7D5000025062 /* ControlNearbyDevicesView.swift */; };
 		83F78A2B2B8EA38300025062 /* PhrasesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F78A2A2B8EA38300025062 /* PhrasesView.swift */; };
@@ -605,10 +601,6 @@
 		83F516C32C21EB550004E87A /* AppsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsView.swift; sourceTree = "<group>"; };
 		83F6E26B2C8A2E300060187F /* RemindersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersView.swift; sourceTree = "<group>"; };
 		83F77D682CD3E51F0026B1AC /* StoreSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = StoreSettings.xcstrings; sourceTree = "<group>"; };
-		83F77D6C2CD3F2180026B1AC /* PeerPayment_Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = PeerPayment_Localizable.xcstrings; sourceTree = "<group>"; };
-		83F77D6F2CD3F3A30026B1AC /* PaymentOffers_Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = PaymentOffers_Localizable.xcstrings; sourceTree = "<group>"; };
-		83F77D712CD3F48D0026B1AC /* Payment_Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Payment_Localizable.xcstrings; sourceTree = "<group>"; };
-		83F77D752CD3F7C20026B1AC /* VirtualCard_Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = VirtualCard_Localizable.xcstrings; sourceTree = "<group>"; };
 		83F77D7B2CD3F9740026B1AC /* ContactlessAndCredentialSettings_Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = ContactlessAndCredentialSettings_Localizable.xcstrings; sourceTree = "<group>"; };
 		83F78A0E2B8E7D5000025062 /* ControlNearbyDevicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlNearbyDevicesView.swift; sourceTree = "<group>"; };
 		83F78A2A2B8EA38300025062 /* PhrasesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhrasesView.swift; sourceTree = "<group>"; };
@@ -1221,7 +1213,6 @@
 				832877F72CAEE80F00013B0B /* CameraSettings */,
 				832877F22CAEE78C00013B0B /* GeneralSettingsUI */,
 				83ACE7202CD5BA270061528C /* HealthKit */,
-				83F77D6E2CD3F3920026B1AC /* PassKit */,
 				8340F0C02D0D4CEC009E71C0 /* PreferenceBundles */,
 				837BCF3A2CD30AC7009B1E33 /* PreferencesUI */,
 				8388E5352CD072DD00A3066D /* PrivacySettingsUI */,
@@ -1473,17 +1464,6 @@
 			path = Developer;
 			sourceTree = "<group>";
 		};
-		83F77D6E2CD3F3920026B1AC /* PassKit */ = {
-			isa = PBXGroup;
-			children = (
-				83F77D712CD3F48D0026B1AC /* Payment_Localizable.xcstrings */,
-				83F77D6F2CD3F3A30026B1AC /* PaymentOffers_Localizable.xcstrings */,
-				83F77D6C2CD3F2180026B1AC /* PeerPayment_Localizable.xcstrings */,
-				83F77D752CD3F7C20026B1AC /* VirtualCard_Localizable.xcstrings */,
-			);
-			path = PassKit;
-			sourceTree = "<group>";
-		};
 		83F78A292B8EA37600025062 /* Live Speech */ = {
 			isa = PBXGroup;
 			children = (
@@ -1683,7 +1663,6 @@
 				83326C882CBEE8970034C0D8 /* Software Update.xcstrings in Resources */,
 				832877D92CAD8C7100013B0B /* Accessibility.xcstrings in Resources */,
 				832877ED2CAEE55B00013B0B /* General.xcstrings in Resources */,
-				83F77D6D2CD3F2180026B1AC /* PeerPayment_Localizable.xcstrings in Resources */,
 				8360825D2D13B04E00902254 /* SettingsPhysical.gif in Resources */,
 				83DBCE062CCD957C00B33277 /* CameraSettings-TrueVideo.xcstrings in Resources */,
 				830976D12CDD1A0E0087F1A1 /* CoreFollowUp.xcstrings in Resources */,
@@ -1694,7 +1673,6 @@
 				832877DD2CAD95C300013B0B /* AppleAccountUI.xcstrings in Resources */,
 				833101772CD17A9500C6C3B3 /* FocusSettings.xcstrings in Resources */,
 				83BA35142E15B61600CFA06C /* CameraSettings-SmartStyles.xcstrings in Resources */,
-				83F77D762CD3F7C20026B1AC /* VirtualCard_Localizable.xcstrings in Resources */,
 				832877F62CAEE7C000013B0B /* Reset.xcstrings in Resources */,
 				834196272CB89D8F0038183D /* PSSystemPolicy.xcstrings in Resources */,
 				83E542072D0E29DE00741DFE /* CellulariPad.xcstrings in Resources */,
@@ -1705,7 +1683,6 @@
 				83CD1FAD2DB68F6C00366987 /* CameraSettings-CameraButton.xcstrings in Resources */,
 				8388E5342CD034EB00A3066D /* Location Services.xcstrings in Resources */,
 				83441A892CAF2B6A0022E193 /* Privacy.xcstrings in Resources */,
-				83F77D702CD3F3A30026B1AC /* PaymentOffers_Localizable.xcstrings in Resources */,
 				8314482D2CD9652A00FFEE51 /* HealthSettingsSpecifiers.xcstrings in Resources */,
 				83CD35172D738CF50060AA83 /* Display.xcstrings in Resources */,
 				838FE8CD2CB60A3300FDB1A8 /* AssistantSettings.xcstrings in Resources */,
@@ -1725,7 +1702,6 @@
 				83C79B932CE331A500F49B4F /* Localizable.xcstrings in Resources */,
 				83F3611A2CD2D3E300041A72 /* CommunicationSafetySettingsUI.xcstrings in Resources */,
 				837BCF392CD2F4A7009B1E33 /* Payment_Prefs.xcstrings in Resources */,
-				83F77D722CD3F48D0026B1AC /* Payment_Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
