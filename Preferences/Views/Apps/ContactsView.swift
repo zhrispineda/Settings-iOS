@@ -8,50 +8,50 @@
 import SwiftUI
 
 struct ContactsView: View {
-    // Variables
     @State private var opacity = Double()
     @State private var frameY = Double()
+    let path = "/System/Library/PreferenceBundles/ContactsSettings.bundle"
     let table = "Contacts"
     
     var body: some View {
         CustomList(title: "Back") {
             Section {
-                Placard(title: "CONTACTS".localize(table: table), icon: "com.apple.MobileAddressBook", description: "SETTINGS_SUBTITLE".localize(table: table) + " [\("LEARN_MORE".localize(table: table))](#)", frameY: $frameY, opacity: $opacity)
-                Button("ADD_ACCOUNT".localize(table: "PSSystemPolicy")) {}
+                Placard(title: "CONTACTS".localized(path: path, table: table), icon: "com.apple.MobileAddressBook", description: "SETTINGS_SUBTITLE".localized(path: path, table: table) + " [\("LEARN_MORE".localized(path: path, table: table))](#)", frameY: $frameY, opacity: $opacity)
+                Button("ADD_ACCOUNT".localized(path: path, table: table)) {}
             }
             
-            PermissionsView(appName: "CONTACTS".localize(table: table), cellular: false, location: false, notifications: false, cellularEnabled: .constant(false))
+            PermissionsView(appName: "CONTACTS".localized(path: path, table: table), cellular: false, location: false, notifications: false, cellularEnabled: .constant(false))
             
             Section {
                 Button {} label: {
-                    SettingsLink("Share Name and Photo".localize(table: table), status: "NAME_AND_PHOTO_SHARING_OFF".localize(table: table), destination: EmptyView())
+                    SettingsLink("Share Name and Photo".localized(path: path, table: table), status: "NAME_AND_PHOTO_SHARING_OFF".localized(path: path, table: table), destination: EmptyView())
                 }
                 .foregroundStyle(.primary)
             } footer: {
-                Text("NAME_AND_PHOTO_SHARING_NOT_SHARING_FOOTER", tableName: table)
+                Text("NAME_AND_PHOTO_SHARING_NOT_SHARING_FOOTER".localized(path: path, table: table))
             }
             
             Section {
-                NavigationLink("Providers".localize(table: table)) {}
+                NavigationLink("Providers".localized(path: path, table: table)) {}
             }
             
             Section {
-                SettingsLink("Sort Order".localize(table: table), status: "LAST".localize(table: table), destination: SelectOptionList("Sort Order", options: ["FIRST", "LAST"], selected: "LAST", table: table))
-                SettingsLink("Display Order".localize(table: table), status: "LAST".localize(table: table), destination: EmptyView())
-                NavigationLink("Short Name".localize(table: table)) {}
+                SettingsLink("Sort Order".localized(path: path, table: table), status: "LAST".localized(path: path, table: table), destination: SelectOptionList("Sort Order", options: ["FIRST", "LAST"], selected: "LAST", table: table))
+                SettingsLink("Display Order".localized(path: path, table: table), status: "LAST".localized(path: path, table: table), destination: EmptyView())
+                NavigationLink("Short Name".localized(path: path, table: table)) {}
                 Button {} label: {
-                    NavigationLink("My Info".localize(table: table)) {}
+                    NavigationLink("My Info".localized(path: path, table: table)) {}
                 }
                 .foregroundStyle(.primary)
             }
             
             Section {
-                Button("Import SIM Contacts".localize(table: table)) {}
+                Button("Import SIM Contacts".localized(path: path, table: table)) {}
             }
         }
         .toolbar {
             ToolbarItem(placement: .principal) {
-                Text("CONTACTS", tableName: table)
+                Text("CONTACTS".localized(path: path, table: table))
                     .fontWeight(.semibold)
                     .font(.subheadline)
                     .opacity(frameY < 50.0 ? opacity : 0) // Only fade when passing the help section title at the top

@@ -37,7 +37,7 @@ struct ContentView: View {
                                 id = UUID() // Reset destination
                                 stateManager.selection = .followUp
                             } label: {
-                                SLabel("FOLLOWUP_TITLE".localize(table: "FollowUp"), badgeCount: 1)
+                                SLabel("FOLLOWUP_TITLE".localized(path: "/System/Library/PrivateFrameworks/SetupAssistant.framework", table: "FollowUp"), badgeCount: 1)
                                     .foregroundStyle(Color(UIColor.label))
                             }
                         }
@@ -150,7 +150,7 @@ struct ContentView: View {
                     
                     if !followUpDismissed && !UIDevice.IsSimulator {
                         Section {
-                            SLink("FOLLOWUP_TITLE".localize(table: "FollowUp"), icon: "None", badgeCount: 1) {
+                            SLink("FOLLOWUP_TITLE".localized(path: "/System/Library/PrivateFrameworks/SetupAssistant.framework", table: "FollowUp"), icon: "None", badgeCount: 1) {
                                 FollowUpView()
                             }
                         }

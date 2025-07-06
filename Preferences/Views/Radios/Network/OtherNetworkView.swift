@@ -94,14 +94,14 @@ struct OtherNetworkView: View {
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
                     // Cancel
-                    Button("kWFLocAdhocJoinCancelButton".localize(table: table), systemImage: "xmark") {
+                    Button(role: .cancel) {
                         dismiss()
                     }
                     .labelStyle(.iconOnly)
                 }
                 ToolbarItem(placement: .topBarTrailing) {
                     // Join
-                    Button("kWFLocOtherNetworksJoinButton".localize(table: table), systemImage: "checkmark") {
+                    Button(role: .confirm) {
                         dismiss()
                     }
                     .disabled(security != "kWFLocSecurityNoneTitle" && (networkName.count < 1 || (password.count < 8 && username.isEmpty) || username.count < 1 && password.count < 1))

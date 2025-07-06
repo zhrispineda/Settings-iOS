@@ -11,6 +11,7 @@ struct FollowUpView: View {
     @Environment(\.dismiss) var dismiss
     @Environment(StateManager.self) private var stateManager
     @AppStorage("FollowUpDismissed") private var followUpDismissed = false
+    let path = "/System/Library/PrivateFrameworks/SetupAssistant.framework"
     let coreTable = "CoreFollowUp"
     let table = "FollowUp"
     
@@ -18,11 +19,11 @@ struct FollowUpView: View {
         CustomList(title: "MULTI_FOLLOW_LIST_TITLE".localize(table: coreTable)) {
             Section {
                 VStack(alignment: .leading, spacing: 5) {
-                    Text("FOLLOWUP_TITLE", tableName: table)
+                    Text("FOLLOWUP_TITLE".localized(path: path, table: table))
                         .fontWeight(.semibold)
-                    Text(UIDevice.PearlIDCapability ? "FOLLOWUP_DETAIL_FACEID" : "FOLLOWUP_DETAIL_TOUCHID", tableName: table)
+                    Text(UIDevice.PearlIDCapability ? "FOLLOWUP_DETAIL_FACEID".localized(path: path, table: table) : "FOLLOWUP_DETAIL_TOUCHID".localized(path: path, table: table))
                 }
-                Button("FOLLOWUP_ACTION_LABEL_ALL".localize(table: table)) {
+                Button(UIDevice.PearlIDCapability ? "FOLLOWUP_ACTION_LABEL.faceID".localized(path: path, table: table) : "FOLLOWUP_ACTION_LABEL.touchID".localized(path: path, table: table)) {
                     if UIDevice.iPad {
                         stateManager.selection = .general
                         stateManager.destination = AnyView(GeneralView())
@@ -35,6 +36,7 @@ struct FollowUpView: View {
                 }
             }
         }
+        .animation(.default, value: followUpDismissed)
     }
 }
 

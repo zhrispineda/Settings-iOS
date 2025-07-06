@@ -16,10 +16,6 @@ struct SoftwareUpdateView: View {
             CustomList(title: "SOFTWARE_UPDATE".localize(table: table)) {
                 Section {
                     SettingsLink("AUTOMATIC_UPDATES".localize(table: table), status: "ON".localize(table: table), destination: AutomaticUpdateView())
-
-//                    if !checkingForUpdates {
-//                        SettingsLink("Beta Updates", status: "\(UIDevice().systemName) 26 Developer Beta", destination: BetaUpdatesView())
-//                    }
                 }
                 VStack {
                     if checkingForUpdates {
