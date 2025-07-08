@@ -24,14 +24,12 @@ struct IconView: View {
             if !lightOnly && colorScheme == .dark && !icon.contains("com.") {
                 Image(systemName: "app.fill")
                     .resizable()
-                    .scaledToFit()
-                    .frame(width: 30)
+                    .frame(width: 30, height: 30)
                     .foregroundStyle(LinearGradient(gradient: Gradient(colors: [.gray.opacity(0.20), .black.opacity(0.25)]), startPoint: .top, endPoint: .bottom))
             } else if lightOnly || colorScheme == .light && !icon.contains("com.") {
                 Image(systemName: "app.fill")
                     .resizable()
-                    .scaledToFit()
-                    .frame(width: 30)
+                    .frame(width: 30, height: 30)
                     .foregroundStyle(color.gradient)
             }
             
@@ -59,7 +57,7 @@ struct IconView: View {
         .overlay {
             // Add outline around icon background
             if (color == .white || color == .black || colorScheme == .dark) && !icon.contains("com.") {
-                RoundedRectangle(cornerRadius: 7)
+                RoundedRectangle(cornerRadius: 8)
                     .stroke(colorScheme == .light && color == .white ? Color.black.opacity(0.5) : colorScheme == .dark ? Color.white.opacity(0.5) : Color.black.opacity(0.5), lineWidth: 0.25)
             }
         }

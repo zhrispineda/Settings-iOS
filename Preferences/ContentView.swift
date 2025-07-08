@@ -87,7 +87,6 @@ struct ContentView: View {
                     SettingsLabelSection(selection: $stateManager.selection, id: $id, item: developerSettings)
                 }
                 .toolbar(removing: .sidebarToggle)
-                .navigationTitle("Settings")
                 .sheet(isPresented: $showingSignInSheet) {
                     NavigationStack {
                         SelectSignInOptionView()
