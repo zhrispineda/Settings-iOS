@@ -8,13 +8,12 @@
 import SwiftUI
 
 struct TransitView: View {
-    // Variables
     @State private var selectedOptions: [String] = ["Bus [Long transit mode]", "Subway & Light Rail [Long transit mode]", "Commuter Rail [Long transit mode]", "Ferry [Long transit mode]"]
     let options = ["Bus [Long transit mode]", "Subway & Light Rail [Long transit mode]", "Commuter Rail [Long transit mode]", "Ferry [Long transit mode]"]
-    let table = "MapsSettings"
+    let path = "/System/Library/PreferenceBundles/MapsSettings.bundle"
     
     var body: some View {
-        CustomList(title: "Transit Transportation Mode Label [Settings]".localize(table: table), topPadding: true) {
+        CustomList(title: "Transit Transportation Mode Label [Settings]".localized(path: path), topPadding: true) {
             Section {
                 ForEach(options, id: \.self) { option in
                     Button {
@@ -25,7 +24,7 @@ struct TransitView: View {
                         }
                     } label: {
                         HStack {
-                            Text(option.localize(table: table))
+                            Text(option.localized(path: path))
                                 .foregroundStyle(.text)
                             Spacer()
                             if selectedOptions.contains(option) {
@@ -36,9 +35,9 @@ struct TransitView: View {
                     .disabled(selectedOptions.contains(option) && selectedOptions.count < 2)
                 }
             } header: {
-                Text("Prefer Trips Using", tableName: table)
+                Text("Prefer Trips Using".localized(path: path))
             } footer: {
-                Text("Prefer these vehicles when planning transit trips.", tableName: table)
+                Text("Prefer these vehicles when planning transit trips.".localized(path: path))
             }
         }
     }
