@@ -39,14 +39,14 @@ struct AppsView: View {
         return Dictionary(grouping: filteredApps, by: { String($0.name.prefix(1)) })
     }
     let letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ#"
-    let table = "InstalledApps"
+    let path = "/System/Library/Settings/InstalledApps.settings"
     
     var body: some View {
         ScrollViewReader { proxy in
-            CustomList(title: "Apps".localize(table: table)) {
+            CustomList(title: "Apps".localized(path: path)) {
                 // MARK: Default Apps
                 Section {
-                    SLink("Default Apps".localize(table: table), icon: "com.apple.graphic-icon.default-apps", subtitle: "Manage default apps on device".localize(table: table)) {
+                    SLink("Default Apps".localized(path: path), icon: "com.apple.graphic-icon.default-apps", subtitle: "Manage default apps on device".localized(path: path)) {
                         DefaultAppsView()
                     }
                 }
@@ -104,20 +104,20 @@ struct AppsView: View {
                 // MARK: Hidden Apps
                 if UIDevice.IsSimulator {
                     Button {} label: {
-                        SLink("Hidden Apps".localize(table: table), icon: "com.apple.graphic-icon.hidden-apps") {}
+                        SLink("Hidden Apps".localized(path: path), icon: "com.apple.graphic-icon.hidden-apps") {}
                     }
                     .foregroundStyle(.primary)
                 } else {
-                    SLink("Hidden Apps".localize(table: table), icon: "com.apple.graphic-icon.hidden-apps") {
+                    SLink("Hidden Apps".localized(path: path), icon: "com.apple.graphic-icon.hidden-apps") {
                         ContentUnavailableView(
-                            "No Hidden Apps".localize(table: table),
+                            "No Hidden Apps".localized(path: path),
                             systemImage: "square.stack.3d.up.slash.fill",
-                            description: Text("No hidden apps found.", tableName: table)
+                            description: Text("No hidden apps found.".localized(path: path))
                         )
                     }
                 }
             }
-            .searchable(text: $searchText, placement: UIDevice.iPhone ? .automatic : .toolbar, prompt: "Search Apps")
+            .searchable(text: $searchText, placement: UIDevice.iPhone ? .automatic : .toolbar, prompt: "Search Apps".localized(path: path))
             .scrollIndicators(.hidden)
             .overlay {
                 HStack {
