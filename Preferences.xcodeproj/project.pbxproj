@@ -20,7 +20,6 @@
 		830DA8022B9BE17B001EE76F /* ParentGuardianSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830DA8012B9BE17B001EE76F /* ParentGuardianSignInView.swift */; };
 		830F2B302CD97A05006F7F22 /* MessagesSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 830F2B2F2CD97A05006F7F22 /* MessagesSettings.xcstrings */; };
 		830F2B322CD97C0A006F7F22 /* Messages.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 830F2B312CD97C0A006F7F22 /* Messages.xcstrings */; };
-		830F2B342CD9826E006F7F22 /* NewsSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 830F2B332CD9826E006F7F22 /* NewsSettings.xcstrings */; };
 		830F2B362CD984C0006F7F22 /* PasswordsSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 830F2B352CD984C0006F7F22 /* PasswordsSettings.xcstrings */; };
 		830F2B3A2CD98E5D006F7F22 /* Photos.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 830F2B392CD98E5D006F7F22 /* Photos.xcstrings */; };
 		8314482B2CD95F6500FFEE51 /* HealthUI-Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8314482A2CD95F6500FFEE51 /* HealthUI-Localizable.xcstrings */; };
@@ -314,7 +313,6 @@
 		830DA8012B9BE17B001EE76F /* ParentGuardianSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentGuardianSignInView.swift; sourceTree = "<group>"; };
 		830F2B2F2CD97A05006F7F22 /* MessagesSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = MessagesSettings.xcstrings; sourceTree = "<group>"; };
 		830F2B312CD97C0A006F7F22 /* Messages.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Messages.xcstrings; sourceTree = "<group>"; };
-		830F2B332CD9826E006F7F22 /* NewsSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = NewsSettings.xcstrings; sourceTree = "<group>"; };
 		830F2B352CD984C0006F7F22 /* PasswordsSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = PasswordsSettings.xcstrings; sourceTree = "<group>"; };
 		830F2B392CD98E5D006F7F22 /* Photos.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Photos.xcstrings; sourceTree = "<group>"; };
 		8314482A2CD95F6500FFEE51 /* HealthUI-Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "HealthUI-Localizable.xcstrings"; sourceTree = "<group>"; };
@@ -1256,7 +1254,6 @@
 				83E748B12CC6BDDE0081D660 /* LocalizedStrings.xcstrings */,
 				830F2B2F2CD97A05006F7F22 /* MessagesSettings.xcstrings */,
 				830F2B312CD97C0A006F7F22 /* Messages.xcstrings */,
-				830F2B332CD9826E006F7F22 /* NewsSettings.xcstrings */,
 				83D241AC2D5CEC87002061F4 /* NotificationsSettings.xcstrings */,
 				830F2B352CD984C0006F7F22 /* PasswordsSettings.xcstrings */,
 				837BCF382CD2F4A7009B1E33 /* Payment_Prefs.xcstrings */,
@@ -1575,7 +1572,6 @@
 				8374886F2D0A6EB400865CA8 /* AssistantSettings-ExternalAIModel.xcstrings in Resources */,
 				834CA6EA2D62AE93006792AE /* UserNotificationsKit.xcstrings in Resources */,
 				83AB1D612D5E7656005F0B63 /* UserNotificationsUIKit.xcstrings in Resources */,
-				830F2B342CD9826E006F7F22 /* NewsSettings.xcstrings in Resources */,
 				83E160762CD022170020DC85 /* AssistantSettings-GM.xcstrings in Resources */,
 				83DBCE092CCD9B0800B33277 /* AssistantMultilingualDetail.xcstrings in Resources */,
 				837D24292CD0293C00274D42 /* ScreenTimeSettingsUI.xcstrings in Resources */,

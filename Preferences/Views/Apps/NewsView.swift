@@ -8,54 +8,46 @@
 import SwiftUI
 
 struct NewsView: View {
-    // Variables
     @State private var gameCenterEnabled = true
     @State private var restrictStoriesTodayEnabled = false
     @State private var showingRestrictDialog = false
     @State private var showingRestrictAlert = false
     @State private var resetIdentifierEnabled = false
     @State private var showingSheet = false
+    let path = "/System/Library/PreferenceBundles/NewsSettings.bundle"
     let table = "NewsSettings"
     
     var body: some View {
-        CustomList(title: "NEWS_SETTINGS_TITLE".localize(table: table), topPadding: true) {
+        CustomList(title: "NEWS_SETTINGS_TITLE".localized(path: path), topPadding: true) {
             if UIDevice.IsSimulator {
-                PermissionsView(appName: "NEWS_SETTINGS_TITLE".localize(table: table), background: true, cellular: false, liveActivityToggle: true, location: false, notifications: false, cellularEnabled: .constant(true))
+                PermissionsView(appName: "NEWS_SETTINGS_TITLE".localized(path: path), background: true, cellular: false, liveActivityToggle: true, location: false, notifications: false, cellularEnabled: .constant(true))
             } else {
-                PermissionsView(appName: "NEWS_SETTINGS_TITLE".localize(table: table), background: true, cellular: true, liveActivityToggle: true, location: true, notifications: true, cellularEnabled: .constant(true))
+                PermissionsView(appName: "NEWS_SETTINGS_TITLE".localized(path: path), background: true, cellular: false, liveActivityToggle: true, location: false, notifications: false, cellularEnabled: .constant(true))
             }
             
             Section {
-                Link("SUBSCRIBE_NEWS_PLUS_TITLE".localize(table: table), destination: URL(string: "applenews://subscription")!)
-                NavigationLink("AUTOMATIC_DOWNLOADS_LINK_TITLE".localize(table: table)) {}
+                Link("SUBSCRIBE_NEWS_PLUS_TITLE".localized(path: path), destination: URL(string: "applenews://subscription")!)
+                NavigationLink("AUTOMATIC_DOWNLOADS_LINK_TITLE".localized(path: path)) {}
                     .disabled(true)
             } header: {
-                Text("NEWS_PLUS_OFFLINE_MODE_GROUP_TITLE", tableName: table)
+                Text("NEWS_PLUS_OFFLINE_MODE_GROUP_TITLE".localized(path: path))
             } footer: {
-                Text("NEWS_PLUS_OFFLINE_MODE_GROUP_DESCRIPTION_NON_SUBSCRIBER", tableName: table)
+                Text("NEWS_PLUS_OFFLINE_MODE_GROUP_DESCRIPTION_NON_SUBSCRIBER".localized(path: path))
             }
             
             Section {
-                Toggle("GAME_CENTER_ENABLED_TITLE".localize(table: table), isOn: $gameCenterEnabled)
-            } header: {
-                Text("GAME_CENTER_GROUP_TITLE", tableName: table)
-            } footer: {
-                Text("\("GAME_CENTER_ENABLED_DESCRIPTION".localize(table: table)) [\("GAME_CENTER_SETTINGS_GROUP_FOOTER_LINK".localize(table: table))](#)")
-            }
-            
-            Section {
-                Toggle("RESTRICT_STORIES_TITLE".localize(table: table), isOn: $restrictStoriesTodayEnabled)
-                    .alert("RESTRICT_STORIES_ALERT_TITLE_IPAD".localize(table: table), isPresented: $showingRestrictAlert) {
-                        Button("RESTRICT_STORIES_ALERT_TURN_ON_TITLE_IPAD".localize(table: table)) {}
-                        Button("RESTRICT_STORIES_ALERT_CANCEL_TITLE".localize(table: table), role: .cancel) {
+                Toggle("RESTRICT_STORIES_TITLE".localized(path: path), isOn: $restrictStoriesTodayEnabled)
+                    .alert("RESTRICT_STORIES_ALERT_TITLE_IPAD".localized(path: path), isPresented: $showingRestrictAlert) {
+                        Button("RESTRICT_STORIES_ALERT_TURN_ON_TITLE_IPAD".localized(path: path)) {}
+                        Button("RESTRICT_STORIES_ALERT_CANCEL_TITLE".localized(path: path), role: .cancel) {
                             restrictStoriesTodayEnabled.toggle()
                         }
                     } message: {
-                        Text("RESTRICT_STORIES_ALERT_DESCRIPTION", tableName: table)
+                        Text("RESTRICT_STORIES_ALERT_DESCRIPTION".localized(path: path))
                     }
-                    .confirmationDialog("RESTRICT_STORIES_ALERT_DESCRIPTION".localize(table: table), isPresented: $showingRestrictDialog, titleVisibility: .visible) {
-                        Button("RESTRICT_STORIES_ALERT_TITLE_IPHONE".localize(table: table)) {}
-                        Button("RESTRICT_STORIES_ALERT_CANCEL_TITLE".localize(table: table), role: .cancel) {
+                    .confirmationDialog("RESTRICT_STORIES_ALERT_DESCRIPTION".localized(path: path), isPresented: $showingRestrictDialog, titleVisibility: .visible) {
+                        Button("RESTRICT_STORIES_ALERT_TITLE_IPHONE".localized(path: path)) {}
+                        Button("RESTRICT_STORIES_ALERT_CANCEL_TITLE".localized(path: path), role: .cancel) {
                             restrictStoriesTodayEnabled.toggle()
                         }
                     }
@@ -65,20 +57,20 @@ struct NewsView: View {
                         }
                     }
             } header: {
-                Text("TODAY_FEED_GROUP_TITLE", tableName: table)
+                Text("TODAY_FEED_GROUP_TITLE".localized(path: path))
             } footer: {
-                Text("RESTRICT_STORIES_DESCRIPTION", tableName: table)
+                Text("RESTRICT_STORIES_DESCRIPTION".localized(path: path))
             }
             
             Section {
-                Button("PRIVACY_TITLE".localize(table: table)) {
+                Button("PRIVACY_TITLE".localized(path: path)) {
                     showingSheet = true
                 }
-                Toggle("RESET_IDENTIFIER_TITLE".localize(table: table), isOn: $resetIdentifierEnabled)
+                Toggle("RESET_IDENTIFIER_TITLE".localized(path: path), isOn: $resetIdentifierEnabled)
             } header: {
-                Text("PRIVACY_GROUP_TITLE", tableName: table)
+                Text("PRIVACY_GROUP_TITLE".localized(path: path))
             } footer: {
-                Text("RESET_IDENTIFIER_DESCRIPTION", tableName: table)
+                Text("RESET_IDENTIFIER_DESCRIPTION".localized(path: path))
             }
         }
         .background {
