@@ -28,7 +28,7 @@ struct AppPermissionsView: View {
     // Tables
     let table = "Privacy"
     let dsTable = "Dim-Sum"
-    let focusTable = "FocusSettings"
+    let focusTable = "/System/Library/PreferenceBundles/FocusSettings.bundle"
     let healthTable = "HealthPrivacySettings"
     let sensorkit = "/System/Library/PreferenceBundles/Privacy/SensorKitPrivacySettings.bundle"
     let wellTable = "WellnessDashboard-Localizable"
@@ -48,7 +48,7 @@ struct AppPermissionsView: View {
                 }
             case "FOCUS":
                 Section {} footer: {
-                    Text("AVAILABILITY_STATUS_EXPLANATION", tableName: focusTable)
+                    Text("AVAILABILITY_STATUS_EXPLANATION".localized(path: focusTable))
                 }
             case "HEALTH":
                 Section {} footer: {
@@ -101,7 +101,7 @@ struct AppPermissionsView: View {
                 }
             } header: {
                 if permission == "FOCUS" {
-                    Text("AVAILABILITY_STATUS_SHARING_HEADER", tableName: "FocusSettings")
+                    Text("AVAILABILITY_STATUS_SHARING_HEADER".localized(path: focusTable))
                 }
             } footer: {
                 switch permission {
@@ -119,7 +119,7 @@ struct AppPermissionsView: View {
                         Text("App clips that have requested access to use \(appClipPermission) will appear here.")
                     }
                 case "FOCUS":
-                    Text("AVAILABILITY_STATUS_APP_LIST_FOOTER", tableName: "FocusSettings")
+                    Text("AVAILABILITY_STATUS_APP_LIST_FOOTER".localized(path: focusTable))
                 case "HEALTH", "Research Sensor & Usage Data":
                     EmptyView()
                 default:
@@ -151,7 +151,13 @@ struct AppPermissionsView: View {
     }
 }
 
-#Preview {
+#Preview("Focus") {
+    NavigationStack {
+        AppPermissionsView(permission: "FOCUS")
+    }
+}
+
+#Preview("Research Sensor & Usage Data") {
     NavigationStack {
         AppPermissionsView(permission: "Research Sensor & Usage Data")
     }

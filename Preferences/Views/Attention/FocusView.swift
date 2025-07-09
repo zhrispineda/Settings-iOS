@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct FocusView: View {
-    // Variables
     @State private var shareAcrossDevicesEnabled = true
-    let table = "FocusSettings"
+    let path = "/System/Library/PreferenceBundles/FocusSettings.bundle"
+    let table = "FocusSettings!"
     
     var body: some View {
         CustomList(title: "Focus") {
@@ -21,7 +21,7 @@ struct FocusView: View {
                         Image(systemName: "moon.fill").imageScale(.large)
                             .frame(width: 30)
                             .foregroundColor(.indigo)
-                        Text("ONBOARDING_MODE_TITLE_DO_NOT_DISTURB", tableName: table)
+                        Text("ONBOARDING_MODE_TITLE_DO_NOT_DISTURB".localized(path: path))
                             .padding(.horizontal, 10)
                     }
                 }
@@ -32,10 +32,10 @@ struct FocusView: View {
                         Image(systemName: "person.fill").imageScale(.large)
                             .frame(width: 30)
                             .foregroundColor(.purple)
-                        Text("ONBOARDING_MODE_TITLE_PERSONAL", tableName: table)
+                        Text("ONBOARDING_MODE_TITLE_PERSONAL".localized(path: path))
                             .padding(.horizontal, 10)
                         Spacer()
-                        Text("SETUP", tableName: table)
+                        Text("SETUP".localized(path: path))
                             .foregroundStyle(.secondary)
                     }
                 }
@@ -46,10 +46,10 @@ struct FocusView: View {
                         Image(systemName: "bed.double.fill").imageScale(.large)
                             .frame(width: 30)
                             .foregroundColor(.cyan)
-                        Text("ONBOARDING_MODE_TITLE_SLEEP", tableName: table)
+                        Text("ONBOARDING_MODE_TITLE_SLEEP".localized(path: path))
                             .padding(.horizontal, 10)
                         Spacer()
-                        Text("SETUP", tableName: table)
+                        Text("SETUP".localized(path: path))
                             .foregroundStyle(.secondary)
                     }
                 }
@@ -60,27 +60,27 @@ struct FocusView: View {
                         Image(systemName: "person.crop.square.fill").imageScale(.large)
                             .frame(width: 30)
                             .foregroundColor(.cyan)
-                        Text("ONBOARDING_MODE_TITLE_WORK", tableName: table)
+                        Text("ONBOARDING_MODE_TITLE_WORK".localized(path: path))
                             .padding(.horizontal, 10)
                         Spacer()
-                        Text("SETUP", tableName: table)
+                        Text("SETUP".localized(path: path))
                             .foregroundStyle(.secondary)
                     }
                 }
             } footer: {
-                Text("FOCUS_MODES_FOOTER_TEXT", tableName: table)
+                Text("FOCUS_MODES_FOOTER_TEXT".localized(path: path))
             }
             
             Section {
-                Toggle("CLOUD_SYNCING".localize(table: table), isOn: $shareAcrossDevicesEnabled)
+                Toggle("CLOUD_SYNCING".localized(path: path), isOn: $shareAcrossDevicesEnabled)
             } footer: {
-                Text("CLOUD_SYNCING_FOOTER_TEXT", tableName: table)
+                Text("CLOUD_SYNCING_FOOTER_TEXT".localized(path: path))
             }
             
             Section {
-                SettingsLink("FOCUS_STATUS".localize(table: table), status: "OFF".localize(table: table), destination: EmptyView())
+                SettingsLink("FOCUS_STATUS".localized(path: path), status: "OFF".localized(path: path), destination: EmptyView())
             } footer: {
-                Text("FOCUS_STATUS_DESCRIPTION", tableName: table)
+                Text("FOCUS_STATUS_DESCRIPTION".localized(path: path))
             }
         }
         .toolbar {
@@ -88,6 +88,7 @@ struct FocusView: View {
                 Button {} label: {
                     Image(systemName: "plus")
                 }
+                Button("Add Focus", systemImage: "plus") {}
             }
         }
     }
