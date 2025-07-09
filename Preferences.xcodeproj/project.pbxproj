@@ -236,7 +236,6 @@
 		83CB06972CA6283A00D7533A /* FormatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CB06962CA6283A00D7533A /* FormatsView.swift */; };
 		83CCB7282C7FAD96003F51ED /* DateTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CCB7272C7FAD96003F51ED /* DateTimeView.swift */; };
 		83CD1FAD2DB68F6C00366987 /* CameraSettings-CameraButton.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83CD1FAC2DB68F6C00366987 /* CameraSettings-CameraButton.xcstrings */; };
-		83CD35172D738CF50060AA83 /* Display.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83CD35162D738CF50060AA83 /* Display.xcstrings */; };
 		83CED5A82D6E5AAF00253D9C /* ZoomSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83CED5A72D6E5AAF00253D9C /* ZoomSettings.xcstrings */; };
 		83CED5AA2D6E5ACD00253D9C /* ZoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CED5A92D6E5ACD00253D9C /* ZoomView.swift */; };
 		83D0501A2DB6D343003D50AD /* ContinueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D050192DB6D343003D50AD /* ContinueButton.swift */; };
@@ -544,7 +543,6 @@
 		83CC61982B7952B800DAF0C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83CCB7272C7FAD96003F51ED /* DateTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeView.swift; sourceTree = "<group>"; };
 		83CD1FAC2DB68F6C00366987 /* CameraSettings-CameraButton.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "CameraSettings-CameraButton.xcstrings"; sourceTree = "<group>"; };
-		83CD35162D738CF50060AA83 /* Display.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Display.xcstrings; sourceTree = "<group>"; };
 		83CED5A72D6E5AAF00253D9C /* ZoomSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = ZoomSettings.xcstrings; sourceTree = "<group>"; };
 		83CED5A92D6E5ACD00253D9C /* ZoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomView.swift; sourceTree = "<group>"; };
 		83D050192DB6D343003D50AD /* ContinueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinueButton.swift; sourceTree = "<group>"; };
@@ -1264,7 +1262,6 @@
 				830976D02CDD1A0E0087F1A1 /* CoreFollowUp.xcstrings */,
 				83B1D5352D6BC66700C26010 /* DefaultAppsSettingsUI.xcstrings */,
 				832D84F12CD2B0A90075ECF0 /* DigitalSeparationUI.xcstrings */,
-				83CD35162D738CF50060AA83 /* Display.xcstrings */,
 				833101762CD17A9500C6C3B3 /* FocusSettings.xcstrings */,
 				83A7E1592CBF047B0037F1FB /* FontSettings.xcstrings */,
 				832D84EF2CD2A9DD0075ECF0 /* HealthPrivacySettings.xcstrings */,
@@ -1667,7 +1664,6 @@
 				8388E5342CD034EB00A3066D /* Location Services.xcstrings in Resources */,
 				83441A892CAF2B6A0022E193 /* Privacy.xcstrings in Resources */,
 				8314482D2CD9652A00FFEE51 /* HealthSettingsSpecifiers.xcstrings in Resources */,
-				83CD35172D738CF50060AA83 /* Display.xcstrings in Resources */,
 				838FE8CD2CB60A3300FDB1A8 /* AssistantSettings.xcstrings in Resources */,
 				83E748B22CC6BDDE0081D660 /* LocalizedStrings.xcstrings in Resources */,
 				83A422342CAC60B100EED538 /* CameraSettings-4k120.xcstrings in Resources */,
