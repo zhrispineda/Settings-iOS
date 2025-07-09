@@ -8,8 +8,6 @@
 import SwiftUI
 
 struct BooksView: View {
-    // Variables
-    let table = "iBooksSettings"
     @AppStorage("ReadingMenuPosition") private var readingMenuPosition = "Right"
     @AppStorage("AutoHyphenationEnabled") private var autoHyphenation = true
     @AppStorage("BothMarginsAdvanceEnabled") private var bothMarginsAdvance = false
@@ -22,7 +20,6 @@ struct BooksView: View {
     @AppStorage("SkipForward") private var skipForward = "15 seconds"
     @AppStorage("SkipBack") private var skipBack = "15 seconds"
     @AppStorage("ExternalControl") private var externalControl = "Skip Forward/Back"
-    
     @State private var showingClearDataAlert = false
     @State private var dataCleared = false
     @State private var showingPermissionResetAlert = false
@@ -30,24 +27,25 @@ struct BooksView: View {
     @State private var showingResetIdAlert = false
     @State private var idReset = false
     @State private var showingSheet = false
-    
     let externalControlOptions = ["Next/Previous", "Skip Forward/Back"]
+    let path = "/System/Library/PreferenceBundles/iBooksSettings.bundle"
+    let table = "Settings"
     
     var body: some View {
-        CustomList(title: "Books", topPadding: true) {
-            PermissionsView(appName: "Books", background: true, cellular: false, location: false, notifications: false, cellularEnabled: .constant(false))
+        CustomList(title: "Books".localized(path: path, table: table), topPadding: true) {
+            PermissionsView(appName: "Books".localized(path: path, table: table), background: true, cellular: false, location: false, notifications: false, cellularEnabled: .constant(false))
             
             Section {
-                Toggle("Home".localize(table: table), isOn: .constant(false))
-                Toggle("iCloud Drive".localize(table: table), isOn: .constant(false))
+                Toggle("Home".localized(path: path, table: table), isOn: .constant(false))
+                Toggle("iCloud Drive".localized(path: path, table: table), isOn: .constant(false))
             } header: {
-                Text("Syncing", tableName: table)
+                Text("Syncing".localized(path: path, table: table))
             } footer: {
-                Text("To enable syncing across devices, sign in to iCloud and turn on iCloud Drive in Settings.", tableName: table)
+                Text("To enable syncing across devices, sign in to iCloud and turn on iCloud Drive in Settings.".localized(path: path, table: table))
             }
             .disabled(true)
             
-            Section("Reading Menu Position".localize(table: table)) {
+            Section("Reading Menu Position".localized(path: path, table: table)) {
                 HStack {
                     Spacer()
                     Button {
@@ -67,7 +65,9 @@ struct BooksView: View {
                         }
                     }
                     .buttonStyle(MenuPositionButton())
+                    
                     Spacer()
+                    
                     Button {
                         readingMenuPosition = "Right"
                     } label: {
@@ -85,120 +85,121 @@ struct BooksView: View {
                         }
                     }
                     .buttonStyle(MenuPositionButton())
+                    
                     Spacer()
                 }
             }
             
-            Section("Reading".localize(table: table)) {
-                Toggle("Auto-hyphenation".localize(table: table), isOn: $autoHyphenation)
+            Section("Reading".localized(path: path, table: table)) {
+                Toggle("Auto-hyphenation".localized(path: path, table: table), isOn: $autoHyphenation)
                 Toggle(isOn: $bothMarginsAdvance) {
-                    Text("Both Margins Advance", tableName: table)
-                    Text("Allow tapping either margin to advance the page, or to move the line guide forward when enabled in the reading menu.", tableName: table)
+                    Text("Both Margins Advance".localized(path: path, table: table))
+                    Text("Allow tapping either margin to advance the page, or to move the line guide forward when enabled in the reading menu.".localized(path: path, table: table))
                 }
                 Toggle(isOn: $autoInvertImages) {
-                    Text("Automatically Invert Images", tableName: table)
-                    Text("In darker themes, adjust black and white images to improve contrast.", tableName: table)
+                    Text("Automatically Invert Images".localized(path: path, table: table))
+                    Text("In darker themes, adjust black and white images to improve contrast.".localized(path: path, table: table))
                 }
                 Toggle(isOn: $showStatusBar) {
-                    Text("Show Status Bar", tableName: table)
-                    Text(UIDevice.iPhone ? "Always display current time, battery level, and other iPhone status info while reading." : "Always display current time, battery level, and other iPad status info while reading.", tableName: table)
+                    Text("Show Status Bar".localized(path: path, table: table))
+                    Text(UIDevice.iPhone ? "Always display current time, battery level, and other iPhone status info while reading.".localized(path: path, table: table) : "Always display current time, battery level, and other iPad status info while reading.".localized(path: path, table: table))
                 }
-                SettingsLink("Page Navigation".localize(table: table), status: pageNavigation.localize(table: table), destination: SelectOptionList("Page Navigation", options: ["Slide", "Curl", "Fast Fade", "Scroll"], selectedBinding: $pageNavigation, table: table))
+                SettingsLink("Page Navigation".localized(path: path, table: table), status: pageNavigation.localized(path: path, table: table), destination: SelectOptionList("Page Navigation", options: ["Slide", "Curl", "Fast Fade", "Scroll"], selectedBinding: $pageNavigation, table: table))
             }
             
             Section {
-                Toggle("Reading Goals".localize(table: table), isOn: $readingGoals)
+                Toggle("Reading Goals".localized(path: path, table: table), isOn: $readingGoals)
                 if readingGoals {
-                    Toggle("Include PDFs".localize(table: table), isOn: $includePdfGoals)
+                    Toggle("Include PDFs".localized(path: path, table: table), isOn: $includePdfGoals)
                 }
             } header: {
-                Text("Reading Goals", tableName: table)
+                Text("Reading Goals".localized(path: path, table: table))
             } footer: {
-                Text(readingGoals ? "Show time spent reading and other achievements in Apple Books. Include time spent reading PDFs" : "Show time spent reading and other achievements in Apple Books.", tableName: table)
+                Text(readingGoals ? "Show time spent reading and other achievements in Apple Books. Include time spent reading PDFs".localized(path: path, table: table) : "Show time spent reading and other achievements in Apple Books.".localized(path: path, table: table))
             }
             
             Section {
-                Button("Clear Reading Goals Data".localize(table: table)) {
+                Button("Clear Reading Goals Data".localized(path: path, table: table)) {
                     showingClearDataAlert.toggle()
                 }
-                .confirmationDialog("Clear Reading Goals Data".localize(table: table), isPresented: $showingClearDataAlert) {
-                    Button("Clear Reading Goals Data".localize(table: table), role: .destructive) {
+                .confirmationDialog("Clear Reading Goals Data".localized(path: path, table: table), isPresented: $showingClearDataAlert) {
+                    Button("Clear Reading Goals Data".localized(path: path, table: table), role: .destructive) {
                         dataCleared.toggle()
                     }
                 } message: {
-                    Text("Do you want to clear reading goals data from all of your devices using this iCloud account?", tableName: table)
+                    Text("Do you want to clear reading goals data from all of your devices using this iCloud account?".localized(path: path, table: table))
                 }
             } footer: {
-                Text("Time spent reading and reading streak data will be cleared the next time you open Apple Books.", tableName: table)
+                Text("Time spent reading and reading streak data will be cleared the next time you open Apple Books.".localized(path: path, table: table))
             }
             .disabled(dataCleared)
             
             Section {
-                Toggle("Book Store".localize(table: table), isOn: $bookStore)
+                Toggle("Book Store".localized(path: path, table: table), isOn: $bookStore)
             } header: {
-                Text("Searching", tableName: table)
+                Text("Searching".localized(path: path, table: table))
             } footer: {
-                Text("Include Book Store results when searching.", tableName: table)
+                Text("Include Book Store results when searching.".localized(path: path, table: table))
             }
             
             Section {
-                SettingsLink("Skip Forward".localize(table: table), status: skipForward.localize(table: table), destination: SelectOptionList("Skip Forward", options: ["10 seconds", "15 seconds", "30 seconds", "45 seconds", "60 seconds"], selectedBinding: $skipForward, table: table))
-                SettingsLink("Skip Back".localize(table: table), status: skipBack.localize(table: table), destination: SelectOptionList("Skip Back", options: ["10 seconds", "15 seconds", "30 seconds", "45 seconds", "60 seconds"], selectedBinding: $skipBack, table: table))
+                SettingsLink("Skip Forward".localized(path: path, table: table), status: skipForward.localized(path: path, table: table), destination: SelectOptionList("Skip Forward", options: ["10 seconds", "15 seconds", "30 seconds", "45 seconds", "60 seconds"], selectedBinding: $skipForward, table: table))
+                SettingsLink("Skip Back".localized(path: path, table: table), status: skipBack.localized(path: path, table: table), destination: SelectOptionList("Skip Back", options: ["10 seconds", "15 seconds", "30 seconds", "45 seconds", "60 seconds"], selectedBinding: $skipBack, table: table))
             } header: {
-                Text("Audiobooks", tableName: table)
+                Text("Audiobooks".localized(path: path, table: table))
             } footer: {
-                Text("Set the number of seconds to skip when you swipe the cover or tap the skip button.", tableName: table)
+                Text("Set the number of seconds to skip when you swipe the cover or tap the skip button.".localized(path: path, table: table))
             }
             
             Section {
-                Picker("External Controls".localize(table: table), selection: $externalControl) {
+                Picker("External Controls".localized(path: path, table: table), selection: $externalControl) {
                     ForEach(externalControlOptions, id: \.self) { option in
-                        Text(option.localize(table: table))
+                        Text(option.localized(path: path, table: table))
                     }
                 }
                 .labelsHidden()
                 .pickerStyle(.inline)
             } header: {
-                Text("External Controls", tableName: table)
+                Text("External Controls".localized(path: path, table: table))
             } footer: {
-                Text("Headphones and car controls can be used to play the next/previous chapter, or skip forward/back within the audiobook.", tableName: table)
+                Text("Headphones and car controls can be used to play the next/previous chapter, or skip forward/back within the audiobook.".localized(path: path, table: table))
             }
             
             Section {
-                Button("Reset Access to Online Content".localize(table: table)) {
+                Button("Reset Access to Online Content".localized(path: path, table: table)) {
                     showingPermissionResetAlert.toggle()
                 }
-                .confirmationDialog("Clear permission for books to access publisher\u{2019}s content from the Internet.".localize(table: table), isPresented: $showingPermissionResetAlert) {
-                    Button("Reset Access to Online Content".localize(table: table), role: .destructive) {
+                .confirmationDialog("Clear permission for books to access publisher\u{2019}s content from the Internet.".localized(path: path, table: table), isPresented: $showingPermissionResetAlert) {
+                    Button("Reset Access to Online Content".localized(path: path, table: table), role: .destructive) {
                         permissionsCleared.toggle()
                     }
                 } message: {
-                    Text("Clear permission for books to access publisher\u{2019}s content from the Internet.", tableName: table)
+                    Text("Clear permission for books to access publisher\u{2019}s content from the Internet.".localized(path: path, table: table))
                 }
             } header: {
-                Text("Online Content & Privacy", tableName: table)
+                Text("Online Content & Privacy".localized(path: path, table: table))
             } footer: {
-                Text("Clear permission for books to access publisher\u{2019}s content from the Internet.", tableName: table)
+                Text("Clear permission for books to access publisher\u{2019}s content from the Internet.".localized(path: path, table: table))
             }
             
             Section {
-                Button("Reset Identifier".localize(table: table)) {
+                Button("Reset Identifier".localized(path: path, table: table)) {
                     showingResetIdAlert.toggle()
                 }
-                .confirmationDialog("Reset Identifier".localize(table: table), isPresented: $showingResetIdAlert) {
-                    Button("Reset Identifier".localize(table: table), role: .destructive) {
+                .confirmationDialog("Reset Identifier".localized(path: path, table: table), isPresented: $showingResetIdAlert) {
+                    Button("Reset Identifier".localized(path: path, table: table), role: .destructive) {
                         idReset.toggle()
                     }
                 } message: {
-                    Text("Reset Identifier", tableName: table)
+                    Text("Reset Identifier".localized(path: path, table: table))
                 }
             } footer: {
-                Text("\("Reset the identifier used to report aggregate app usage statistics to Apple.".localize(table: table)) [\("See how your data is managed…")](pref://)")
+                Text("\("Reset the identifier used to report aggregate app usage statistics to Apple.".localized(path: path, table: table)) [\("See how your data is managed…".localized(path: path, table: table))](pref://)")
             }
             
-            NavigationLink("Acknowledgements".localize(table: table)) {
-                Text(String())
-                    .navigationTitle("Acknowledgements".localize(table: table))
+            NavigationLink("Acknowledgements".localized(path: path, table: table)) {
+                Text("")
+                    .navigationTitle("Acknowledgements".localized(path: path, table: table))
                     .navigationBarTitleDisplayMode(.inline)
             }
         }

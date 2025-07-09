@@ -26,7 +26,6 @@
 		831448272CD9498D00FFEE51 /* Contacts.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 831448262CD9498D00FFEE51 /* Contacts.xcstrings */; };
 		8314482B2CD95F6500FFEE51 /* HealthUI-Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8314482A2CD95F6500FFEE51 /* HealthUI-Localizable.xcstrings */; };
 		8314482D2CD9652A00FFEE51 /* HealthSettingsSpecifiers.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8314482C2CD9652A00FFEE51 /* HealthSettingsSpecifiers.xcstrings */; };
-		8317AB212CEE736C00989F15 /* iBooksSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8317AB202CEE736B00989F15 /* iBooksSettings.xcstrings */; };
 		8319CE492B86D198007EC822 /* PasswordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319CE482B86D198007EC822 /* PasswordsView.swift */; };
 		8319CE4B2B86D22E007EC822 /* AutoFillPasswordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319CE4A2B86D22E007EC822 /* AutoFillPasswordsView.swift */; };
 		8319CE4D2B86D380007EC822 /* SafetyCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319CE4C2B86D380007EC822 /* SafetyCheckView.swift */; };
@@ -330,7 +329,6 @@
 		831448262CD9498D00FFEE51 /* Contacts.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Contacts.xcstrings; sourceTree = "<group>"; };
 		8314482A2CD95F6500FFEE51 /* HealthUI-Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "HealthUI-Localizable.xcstrings"; sourceTree = "<group>"; };
 		8314482C2CD9652A00FFEE51 /* HealthSettingsSpecifiers.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = HealthSettingsSpecifiers.xcstrings; sourceTree = "<group>"; };
-		8317AB202CEE736B00989F15 /* iBooksSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = iBooksSettings.xcstrings; sourceTree = "<group>"; };
 		8319CE482B86D198007EC822 /* PasswordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordsView.swift; sourceTree = "<group>"; };
 		8319CE4A2B86D22E007EC822 /* AutoFillPasswordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoFillPasswordsView.swift; sourceTree = "<group>"; };
 		8319CE4C2B86D380007EC822 /* SafetyCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyCheckView.swift; sourceTree = "<group>"; };
@@ -1274,7 +1272,6 @@
 				832D84EF2CD2A9DD0075ECF0 /* HealthPrivacySettings.xcstrings */,
 				8314482C2CD9652A00FFEE51 /* HealthSettingsSpecifiers.xcstrings */,
 				8314482A2CD95F6500FFEE51 /* HealthUI-Localizable.xcstrings */,
-				8317AB202CEE736B00989F15 /* iBooksSettings.xcstrings */,
 				83C79B922CE331A500F49B4F /* Localizable.xcstrings */,
 				83E748B12CC6BDDE0081D660 /* LocalizedStrings.xcstrings */,
 				83EF90232CD5C20000379263 /* MapsSettings.xcstrings */,
@@ -1622,7 +1619,6 @@
 				83E50A102CDA800000BF4969 /* ShortcutsSettings.xcstrings in Resources */,
 				8388C0B22CD473DB00FA7D4C /* WellnessDashboard-Localizable.xcstrings in Resources */,
 				83CED5A82D6E5AAF00253D9C /* ZoomSettings.xcstrings in Resources */,
-				8317AB212CEE736C00989F15 /* iBooksSettings.xcstrings in Resources */,
 				830293B92D28889600222762 /* ProblemReporting.xcstrings in Resources */,
 				839C6BEF2D9C6A3300F94C6E /* iPadOSReadMeSummary.html in Resources */,
 				830F2B3A2CD98E5D006F7F22 /* Photos.xcstrings in Resources */,
