@@ -30,9 +30,8 @@ struct AppPermissionsView: View {
     let dsTable = "Dim-Sum"
     let focusTable = "FocusSettings"
     let healthTable = "HealthPrivacySettings"
-    let sensorTable = "SensorKitPrivacySettings"
+    let sensorkit = "/System/Library/PreferenceBundles/Privacy/SensorKitPrivacySettings.bundle"
     let wellTable = "WellnessDashboard-Localizable"
-    
     var body: some View {
         CustomList(title: permission.localize(table: table)) {
             // Primary explanation header
@@ -85,9 +84,9 @@ struct AppPermissionsView: View {
                 }
             case "Research Sensor & Usage Data":
                 Section {
-                    Button("ENABLE_SENSORKIT_BUTTON".localize(table: sensorTable)) {}
+                    Button("ENABLE_SENSORKIT_BUTTON".localized(path: sensorkit)) {}
                 } footer: {
-                    Text("\("DESCRIPTION_SENSORKIT".localize(table: sensorTable)) [\("LEARN_MORE".localize(table: sensorTable))](pref://)")
+                    Text("\("DESCRIPTION_SENSORKIT".localized(path: sensorkit)) [\("LEARN_MORE".localized(path: sensorkit))](pref://)")
                 }
             default:
                 EmptyView()
@@ -149,5 +148,11 @@ struct AppPermissionsView: View {
 #Preview("Camera") {
     NavigationStack {
         AppPermissionsView(permission: "CAMERA")
+    }
+}
+
+#Preview {
+    NavigationStack {
+        AppPermissionsView(permission: "Research Sensor & Usage Data")
     }
 }

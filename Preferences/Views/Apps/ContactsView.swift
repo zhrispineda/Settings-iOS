@@ -10,13 +10,14 @@ import SwiftUI
 struct ContactsView: View {
     @State private var opacity = Double()
     @State private var frameY = Double()
+    @State private var showingHelpSheet = false
     let path = "/System/Library/PreferenceBundles/ContactsSettings.bundle"
     let table = "Contacts"
     
     var body: some View {
         CustomList(title: "Back") {
             Section {
-                Placard(title: "CONTACTS".localized(path: path, table: table), icon: "com.apple.MobileAddressBook", description: "SETTINGS_SUBTITLE".localized(path: path, table: table) + " [\("LEARN_MORE".localized(path: path, table: table))](#)", frameY: $frameY, opacity: $opacity)
+                Placard(title: "CONTACTS".localized(path: path, table: table), icon: "com.apple.MobileAddressBook", description: "SETTINGS_SUBTITLE".localized(path: path, table: table) + " [\("LEARN_MORE".localized(path: path, table: table))](pref://helpkit)", frameY: $frameY, opacity: $opacity)
                 Button("ADD_ACCOUNT".localized(path: path, table: table)) {}
             }
             
@@ -54,8 +55,18 @@ struct ContactsView: View {
                 Text("CONTACTS".localized(path: path, table: table))
                     .fontWeight(.semibold)
                     .font(.subheadline)
-                    .opacity(frameY < 50.0 ? opacity : 0) // Only fade when passing the help section title at the top
+                    .opacity(frameY < 50.0 ? opacity : 0)
             }
+        }
+        .onOpenURL { url in
+            if url.absoluteString == "pref://helpkit" {
+                showingHelpSheet = true
+            }
+        }
+        .sheet(isPresented: $showingHelpSheet) {
+            HelpKitView(topicID: UIDevice.iPhone ? "iph7edacccf9" : "ipad99df07d1")
+                .ignoresSafeArea(edges: .bottom)
+                .interactiveDismissDisabled()
         }
     }
 }
