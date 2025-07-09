@@ -50,6 +50,7 @@ struct PermissionsView: View {
     let notifTable = "NotificationsSettings"
     let ICBSettings = "/System/Library/PreferenceBundles/ICBSettingsBundle.bundle"
     let privacy = "/System/Library/OnBoardingBundles/com.apple.onboarding.maps.bundle"
+    let music = "/System/Library/PreferenceBundles/MusicSettings.bundle"
     
     var body: some View {
         Section {
@@ -107,7 +108,7 @@ struct PermissionsView: View {
             if appName == "Maps" {
                 Text("[\("BUTTON_TITLE".localized(path: privacy, table: "Maps"))](pref://maps)")
             } else if appName == "Music" && UIDevice.CellularTelephonyCapability {
-                Text("CELLULAR_FOOTER_DOWNLOADS_ONLY", tableName: "MusicSettings")
+                Text("CELLULAR_FOOTER_DOWNLOADS_ONLY".localized(path: music, table: "MusicSettings"))
             }
         }
         .onOpenURL { url in

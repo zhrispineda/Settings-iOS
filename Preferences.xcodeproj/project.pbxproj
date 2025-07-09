@@ -195,7 +195,6 @@
 		839C4CDD2D2B8E50007068BF /* LocalizedLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839C4CDC2D2B8E50007068BF /* LocalizedLink.swift */; };
 		839C6BCF2D9C612400F94C6E /* iOSReadMeSummary.html in Resources */ = {isa = PBXBuildFile; fileRef = 839C6BCE2D9C612400F94C6E /* iOSReadMeSummary.html */; };
 		839C6BEF2D9C6A3300F94C6E /* iPadOSReadMeSummary.html in Resources */ = {isa = PBXBuildFile; fileRef = 839C6BEE2D9C6A3300F94C6E /* iPadOSReadMeSummary.html */; };
-		839E0F0F2DB063A5009B26DB /* MusicSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 839E0F0E2DB063A5009B26DB /* MusicSettings.xcstrings */; };
 		83A160282DD7C9BF00CEFE0C /* WirelessModemSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83A160272DD7C9BF00CEFE0C /* WirelessModemSettings.xcstrings */; };
 		83A36C8D2DB95D7800378E45 /* ConfigureDNSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A36C8C2DB95D7800378E45 /* ConfigureDNSView.swift */; };
 		83A36C8F2DB96E4600378E45 /* ConfigureProxyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A36C8E2DB96E4600378E45 /* ConfigureProxyView.swift */; };
@@ -500,7 +499,6 @@
 		839C4CDC2D2B8E50007068BF /* LocalizedLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedLink.swift; sourceTree = "<group>"; };
 		839C6BCE2D9C612400F94C6E /* iOSReadMeSummary.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = iOSReadMeSummary.html; sourceTree = "<group>"; };
 		839C6BEE2D9C6A3300F94C6E /* iPadOSReadMeSummary.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = iPadOSReadMeSummary.html; sourceTree = "<group>"; };
-		839E0F0E2DB063A5009B26DB /* MusicSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = MusicSettings.xcstrings; sourceTree = "<group>"; };
 		83A160272DD7C9BF00CEFE0C /* WirelessModemSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = WirelessModemSettings.xcstrings; sourceTree = "<group>"; };
 		83A36C8C2DB95D7800378E45 /* ConfigureDNSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureDNSView.swift; sourceTree = "<group>"; };
 		83A36C8E2DB96E4600378E45 /* ConfigureProxyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureProxyView.swift; sourceTree = "<group>"; };
@@ -1273,7 +1271,6 @@
 				830F2B2F2CD97A05006F7F22 /* MessagesSettings.xcstrings */,
 				830F2B312CD97C0A006F7F22 /* Messages.xcstrings */,
 				834A15072CD85B10004A0025 /* MobileCalSettings.xcstrings */,
-				839E0F0E2DB063A5009B26DB /* MusicSettings.xcstrings */,
 				830F2B332CD9826E006F7F22 /* NewsSettings.xcstrings */,
 				83D241AC2D5CEC87002061F4 /* NotificationsSettings.xcstrings */,
 				830F2B352CD984C0006F7F22 /* PasswordsSettings.xcstrings */,
@@ -1674,7 +1671,6 @@
 				835BF1372CC1AAB800F30DA1 /* AutomaticContentDownload.xcstrings in Resources */,
 				832877DF2CAD987B00013B0B /* AppleIDSetup.xcstrings in Resources */,
 				832877F42CAEE7A200013B0B /* GeneralSettingsUI.xcstrings in Resources */,
-				839E0F0F2DB063A5009B26DB /* MusicSettings.xcstrings in Resources */,
 				832D84F22CD2B0A90075ECF0 /* DigitalSeparationUI.xcstrings in Resources */,
 				83C79B932CE331A500F49B4F /* Localizable.xcstrings in Resources */,
 				83F3611A2CD2D3E300041A72 /* CommunicationSafetySettingsUI.xcstrings in Resources */,
