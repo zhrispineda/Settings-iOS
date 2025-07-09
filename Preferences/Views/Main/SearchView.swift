@@ -35,31 +35,32 @@ struct SearchView: View {
         let filteredApps = UIDevice.IsSimulated ? apps.filter { $0.showOnSimulator } : apps
         return Dictionary(grouping: filteredApps, by: { String($0.name.prefix(1)) })
     }
+    let path = "/System/Library/PrivateFrameworks/SpotlightSettingsSupport.framework"
+    let privacy = "/System/Library/OnBoardingBundles/com.apple.onboarding.sirisuggestions.bundle"
     let table = "SpotlightSettings"
-    let assistTable = "AssistantSettings"
     
     var body: some View {
-        CustomList(title: "SEARCH".localize(table: table), topPadding: true) {
+        CustomList(title: "SEARCH".localized(path: path, table: table), topPadding: true) {
             // MARK: Search  and Look Up Section
             Section {
-                Toggle("SEARCH_AND_LOOKUP_SHOW_RECENTS".localize(table: table), isOn: $showRecentSearches)
-                Toggle("SEARCH_AND_LOOKUP_SHOW_RELATED_CONTENT".localize(table: table), isOn: $showRelatedContent)
+                Toggle("SEARCH_AND_LOOKUP_SHOW_RECENTS".localized(path: path, table: table), isOn: $showRecentSearches)
+                Toggle("SEARCH_AND_LOOKUP_SHOW_RELATED_CONTENT".localized(path: path, table: table), isOn: $showRelatedContent)
             } header: {
-                Text("SEARCH_AND_LOOKUP_GROUP", tableName: table)
+                Text("SEARCH_AND_LOOKUP_GROUP".localized(path: path, table: table))
             } footer: {
-                Text("\("SEARCH_AND_LOOKUP_FOOTER".localize(table: table)) [\("About Search & Privacy…".localize(table: "SiriSuggestions"))](pref://)")
+                Text("\("SEARCH_AND_LOOKUP_FOOTER".localized(path: path, table: table)) [\("BUTTON_TITLE".localized(path: privacy, table: "SiriSuggestions"))](pref://)")
             }
             
             // MARK: Help Apple Improve Search Section
             Section {
-                Toggle("SEARCH_ALLOW_ANONYMOUS_RECORDS".localize(table: table), isOn: $helpImproveSearch)
+                Toggle("SEARCH_ALLOW_ANONYMOUS_RECORDS".localized(path: path, table: table), isOn: $helpImproveSearch)
             } footer: {
-                Text("\("SEARCH_ALLOW_ANONYMOUS_RECORDS_FOOTER".localize(table: table)) [\("About Search & Privacy…".localize(table: "SiriSuggestions"))](pref://)")
+                Text("\("SEARCH_ALLOW_ANONYMOUS_RECORDS_FOOTER".localized(path: path, table: table)) [\("BUTTON_TITLE".localized(path: privacy, table: "SiriSuggestions"))](pref://)")
             }
             
             // MARK: App List Section
             Section {
-                SLink("APP_CLIPS".localize(table: table), icon: "com.apple.graphic-icon.app-clips") {
+                SLink("APP_CLIPS".localized(path: path, table: table), icon: "com.apple.graphic-icon.app-clips") {
                     BundleControllerView("/System/Library/PrivateFrameworks/AssistantSettingsSupport.framework/AssistantSettingsSupport", controller: "AssistantAppClipSettingsController", title: "APP_CLIPS", table: table)
                 }
                 ForEach(groupedApps.keys.sorted(), id: \.self) { key in

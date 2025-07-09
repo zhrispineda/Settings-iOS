@@ -90,7 +90,6 @@
 		8349E22C2C7514F6007416C5 /* ApplePencilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8349E22B2C7514F6007416C5 /* ApplePencilView.swift */; };
 		834A15022CD85538004A0025 /* ShortcutsAdvancedSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834A15012CD85538004A0025 /* ShortcutsAdvancedSettings.xcstrings */; };
 		834A15042CD85705004A0025 /* TranslationUI.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834A15032CD85705004A0025 /* TranslationUI.xcstrings */; };
-		834A15082CD85B10004A0025 /* MobileCalSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834A15072CD85B10004A0025 /* MobileCalSettings.xcstrings */; };
 		834AADB42E071D400034702B /* 26Pad.png in Resources */ = {isa = PBXBuildFile; fileRef = 834AADB22E071D400034702B /* 26Pad.png */; };
 		834AADB52E071D400034702B /* 26Phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 834AADB32E071D400034702B /* 26Phone.png */; };
 		834B5A242C4C1836003A6940 /* AirDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B5A232C4C1836003A6940 /* AirDropView.swift */; };
@@ -203,7 +202,6 @@
 		83A5DA512C2335580012ACB3 /* PermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5DA502C2335580012ACB3 /* PermissionsView.swift */; };
 		83A7E15A2CBF047B0037F1FB /* FontSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83A7E1592CBF047B0037F1FB /* FontSettings.xcstrings */; };
 		83A851BE2E0A4BD70041A3E6 /* SettingsApp.icon in Resources */ = {isa = PBXBuildFile; fileRef = 83A851BD2E0A4BD70041A3E6 /* SettingsApp.icon */; };
-		83A915462CE1280D00F718AA /* SpotlightSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83A915452CE1280D00F718AA /* SpotlightSettings.xcstrings */; };
 		83AB1D5F2D5E687B005F0B63 /* ScheduledSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AB1D5E2D5E687B005F0B63 /* ScheduledSummaryView.swift */; };
 		83AB1D612D5E7656005F0B63 /* UserNotificationsUIKit.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83AB1D602D5E7656005F0B63 /* UserNotificationsUIKit.xcstrings */; };
 		83ACE71F2CD5BA200061528C /* Localizable-DataTypes.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83ACE71E2CD5BA200061528C /* Localizable-DataTypes.xcstrings */; };
@@ -387,7 +385,6 @@
 		8349E22B2C7514F6007416C5 /* ApplePencilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePencilView.swift; sourceTree = "<group>"; };
 		834A15012CD85538004A0025 /* ShortcutsAdvancedSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = ShortcutsAdvancedSettings.xcstrings; sourceTree = "<group>"; };
 		834A15032CD85705004A0025 /* TranslationUI.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = TranslationUI.xcstrings; sourceTree = "<group>"; };
-		834A15072CD85B10004A0025 /* MobileCalSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = MobileCalSettings.xcstrings; sourceTree = "<group>"; };
 		834AADB22E071D400034702B /* 26Pad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 26Pad.png; sourceTree = "<group>"; };
 		834AADB32E071D400034702B /* 26Phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 26Phone.png; sourceTree = "<group>"; };
 		834B5A232C4C1836003A6940 /* AirDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirDropView.swift; sourceTree = "<group>"; };
@@ -503,7 +500,6 @@
 		83A5DA502C2335580012ACB3 /* PermissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsView.swift; sourceTree = "<group>"; };
 		83A7E1592CBF047B0037F1FB /* FontSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = FontSettings.xcstrings; sourceTree = "<group>"; };
 		83A851BD2E0A4BD70041A3E6 /* SettingsApp.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = SettingsApp.icon; sourceTree = "<group>"; };
-		83A915452CE1280D00F718AA /* SpotlightSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = SpotlightSettings.xcstrings; sourceTree = "<group>"; };
 		83AB1D5E2D5E687B005F0B63 /* ScheduledSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduledSummaryView.swift; sourceTree = "<group>"; };
 		83AB1D602D5E7656005F0B63 /* UserNotificationsUIKit.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = UserNotificationsUIKit.xcstrings; sourceTree = "<group>"; };
 		83ACE71E2CD5BA200061528C /* Localizable-DataTypes.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "Localizable-DataTypes.xcstrings"; sourceTree = "<group>"; };
@@ -1260,7 +1256,6 @@
 				83E748B12CC6BDDE0081D660 /* LocalizedStrings.xcstrings */,
 				830F2B2F2CD97A05006F7F22 /* MessagesSettings.xcstrings */,
 				830F2B312CD97C0A006F7F22 /* Messages.xcstrings */,
-				834A15072CD85B10004A0025 /* MobileCalSettings.xcstrings */,
 				830F2B332CD9826E006F7F22 /* NewsSettings.xcstrings */,
 				83D241AC2D5CEC87002061F4 /* NotificationsSettings.xcstrings */,
 				830F2B352CD984C0006F7F22 /* PasswordsSettings.xcstrings */,
@@ -1275,7 +1270,6 @@
 				834A15012CD85538004A0025 /* ShortcutsAdvancedSettings.xcstrings */,
 				83E50A0F2CDA800000BF4969 /* ShortcutsSettings.xcstrings */,
 				83326C872CBEE8970034C0D8 /* Software Update.xcstrings */,
-				83A915452CE1280D00F718AA /* SpotlightSettings.xcstrings */,
 				837BCF342CD2EAC8009B1E33 /* TouchID.xcstrings */,
 				834A15032CD85705004A0025 /* TranslationUI.xcstrings */,
 				834CA6E92D62AE93006792AE /* UserNotificationsKit.xcstrings */,
@@ -1589,8 +1583,6 @@
 				832D84F02CD2A9DD0075ECF0 /* HealthPrivacySettings.xcstrings in Resources */,
 				83F77D7C2CD3F9740026B1AC /* ContactlessAndCredentialSettings_Localizable.xcstrings in Resources */,
 				83FE80032D2363B900F065EF /* Accessibility-D93.xcstrings in Resources */,
-				834A15082CD85B10004A0025 /* MobileCalSettings.xcstrings in Resources */,
-				83A915462CE1280D00F718AA /* SpotlightSettings.xcstrings in Resources */,
 				837BCF3C2CD30AF2009B1E33 /* PasscodeLock-DimpleKey.xcstrings in Resources */,
 				834565762CAAE7B8002BE49D /* CameraSettings-CinematicAudio.xcstrings in Resources */,
 				836CDF932CB602B300B1C5B2 /* Restrictions.xcstrings in Resources */,
