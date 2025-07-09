@@ -264,7 +264,6 @@
 		83DFA56D2DA9E17E004C3DD5 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DFA56C2DA9E17E004C3DD5 /* UIViewControllerExtensions.swift */; };
 		83E160762CD022170020DC85 /* AssistantSettings-GM.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83E160752CD022170020DC85 /* AssistantSettings-GM.xcstrings */; };
 		83E2ADA72CA1D80A00DFED0C /* RecordVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E2ADA62CA1D80A00DFED0C /* RecordVideoView.swift */; };
-		83E50A0E2CDA7D7900BF4969 /* RemindersSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83E50A0D2CDA7D7900BF4969 /* RemindersSettings.xcstrings */; };
 		83E50A102CDA800000BF4969 /* ShortcutsSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83E50A0F2CDA800000BF4969 /* ShortcutsSettings.xcstrings */; };
 		83E542072D0E29DE00741DFE /* CellulariPad.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83E542062D0E29DE00741DFE /* CellulariPad.xcstrings */; };
 		83E542092D0E2A3E00741DFE /* CellulariPhone.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83E542082D0E2A3E00741DFE /* CellulariPhone.xcstrings */; };
@@ -573,7 +572,6 @@
 		83DFA56C2DA9E17E004C3DD5 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		83E160752CD022170020DC85 /* AssistantSettings-GM.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "AssistantSettings-GM.xcstrings"; sourceTree = "<group>"; };
 		83E2ADA62CA1D80A00DFED0C /* RecordVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordVideoView.swift; sourceTree = "<group>"; };
-		83E50A0D2CDA7D7900BF4969 /* RemindersSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = RemindersSettings.xcstrings; sourceTree = "<group>"; };
 		83E50A0F2CDA800000BF4969 /* ShortcutsSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = ShortcutsSettings.xcstrings; sourceTree = "<group>"; };
 		83E542062D0E29DE00741DFE /* CellulariPad.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = CellulariPad.xcstrings; sourceTree = "<group>"; };
 		83E542082D0E2A3E00741DFE /* CellulariPhone.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = CellulariPhone.xcstrings; sourceTree = "<group>"; };
@@ -1288,7 +1286,6 @@
 				83441A882CAF2B6A0022E193 /* Privacy.xcstrings */,
 				834196262CB89D8F0038183D /* PSSystemPolicy.xcstrings */,
 				8331016C2CD14BDD00C6C3B3 /* RatingProviders.xcstrings */,
-				83E50A0D2CDA7D7900BF4969 /* RemindersSettings.xcstrings */,
 				836CDF922CB602B300B1C5B2 /* Restrictions.xcstrings */,
 				837D24282CD0293C00274D42 /* ScreenTimeSettingsUI.xcstrings */,
 				8341663E2DAED83A00F40719 /* SensorKitPrivacySettings.xcstrings */,
@@ -1681,7 +1678,6 @@
 				835BF1372CC1AAB800F30DA1 /* AutomaticContentDownload.xcstrings in Resources */,
 				832877DF2CAD987B00013B0B /* AppleIDSetup.xcstrings in Resources */,
 				832877F42CAEE7A200013B0B /* GeneralSettingsUI.xcstrings in Resources */,
-				83E50A0E2CDA7D7900BF4969 /* RemindersSettings.xcstrings in Resources */,
 				839E0F0F2DB063A5009B26DB /* MusicSettings.xcstrings in Resources */,
 				832D84F22CD2B0A90075ECF0 /* DigitalSeparationUI.xcstrings in Resources */,
 				83C79B932CE331A500F49B4F /* Localizable.xcstrings in Resources */,
