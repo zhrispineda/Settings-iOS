@@ -12,12 +12,12 @@ struct DownloadedLanguagesView: View {
     var originalLanguagesOrder = ["Arabic", "Chinese (Mandarin, Simplified)", "Chinese (Mandarin, Traditional)", "Dutch", "English (UK)", "English (US)", "French", "German", "Indonesian", "Italian", "Japanese", "Korean", "Polish", "Portuguese (Brazil)", "Russian", "Spanish (Spain)", "Thai", "Turkish", "Ukrainian", "Vietnamese"]
     @State private var downloaded: [String] = []
     @State private var languages = ["Arabic", "Chinese (Mandarin, Simplified)", "Chinese (Mandarin, Traditional)", "Dutch", "English (UK)", "English (US)", "French", "German", "Indonesian", "Italian", "Japanese", "Korean", "Polish", "Portuguese (Brazil)", "Russian", "Spanish (Spain)", "Thai", "Turkish", "Ukrainian", "Vietnamese"]
-    let table = "TranslationUI"
+    let path = "/System/Library/PrivateFrameworks/TranslationUI.framework"
     
     var body: some View {
-        CustomList(title: "Manage Languages".localize(table: table)) {
+        CustomList(title: "Manage Languages".localized(path: path)) {
             Section {} footer: {
-                Text("TRANSLATIONS_DOWNLOAD_LANGUAGE_PAIR_TITLE", tableName: table)
+                Text("TRANSLATIONS_DOWNLOAD_LANGUAGE_PAIR_TITLE".localized(path: path))
             }
             
             if !downloaded.isEmpty {
@@ -39,7 +39,7 @@ struct DownloadedLanguagesView: View {
                         }
                     }
                 } header: {
-                    Text("TRANSLATIONS_INSTALLED_TITLE", tableName: table)
+                    Text("TRANSLATIONS_INSTALLED_TITLE".localized(path: path))
                 }
             }
             
@@ -62,13 +62,13 @@ struct DownloadedLanguagesView: View {
                     }
                 }
             } header: {
-                Text("TRANSLATIONS_DOWNLOADABLE_TITLE", tableName: table)
+                Text("TRANSLATIONS_DOWNLOADABLE_TITLE".localized(path: path))
             }
         }
         .toolbar {
-            if !downloaded.isEmpty {
-                //EditButton()
-                    //.bold()
+            if downloaded.isEmpty {
+                EditButton()
+                    .bold()
             }
         }
     }

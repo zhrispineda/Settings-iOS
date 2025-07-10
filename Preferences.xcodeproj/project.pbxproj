@@ -85,7 +85,6 @@
 		834565762CAAE7B8002BE49D /* CameraSettings-CinematicAudio.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834565752CAAE7B8002BE49D /* CameraSettings-CinematicAudio.xcstrings */; };
 		83470D162C35A1BC00CE8613 /* AppleAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83470D152C35A1BC00CE8613 /* AppleAccountView.swift */; };
 		8349E22C2C7514F6007416C5 /* ApplePencilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8349E22B2C7514F6007416C5 /* ApplePencilView.swift */; };
-		834A15042CD85705004A0025 /* TranslationUI.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834A15032CD85705004A0025 /* TranslationUI.xcstrings */; };
 		834AADB42E071D400034702B /* 26Pad.png in Resources */ = {isa = PBXBuildFile; fileRef = 834AADB22E071D400034702B /* 26Pad.png */; };
 		834AADB52E071D400034702B /* 26Phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 834AADB32E071D400034702B /* 26Phone.png */; };
 		834B5A242C4C1836003A6940 /* AirDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B5A232C4C1836003A6940 /* AirDropView.swift */; };
@@ -375,7 +374,6 @@
 		834565752CAAE7B8002BE49D /* CameraSettings-CinematicAudio.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "CameraSettings-CinematicAudio.xcstrings"; sourceTree = "<group>"; };
 		83470D152C35A1BC00CE8613 /* AppleAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAccountView.swift; sourceTree = "<group>"; };
 		8349E22B2C7514F6007416C5 /* ApplePencilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePencilView.swift; sourceTree = "<group>"; };
-		834A15032CD85705004A0025 /* TranslationUI.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = TranslationUI.xcstrings; sourceTree = "<group>"; };
 		834AADB22E071D400034702B /* 26Pad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 26Pad.png; sourceTree = "<group>"; };
 		834AADB32E071D400034702B /* 26Phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 26Phone.png; sourceTree = "<group>"; };
 		834B5A232C4C1836003A6940 /* AirDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirDropView.swift; sourceTree = "<group>"; };
@@ -1256,7 +1254,6 @@
 				837D24282CD0293C00274D42 /* ScreenTimeSettingsUI.xcstrings */,
 				83326C872CBEE8970034C0D8 /* Software Update.xcstrings */,
 				837BCF342CD2EAC8009B1E33 /* TouchID.xcstrings */,
-				834A15032CD85705004A0025 /* TranslationUI.xcstrings */,
 				834CA6E92D62AE93006792AE /* UserNotificationsKit.xcstrings */,
 				83AB1D602D5E7656005F0B63 /* UserNotificationsUIKit.xcstrings */,
 				8388C0B12CD473DB00FA7D4C /* WellnessDashboard-Localizable.xcstrings */,
@@ -1578,7 +1575,6 @@
 				8340F0C22D0D4D00009E71C0 /* PrivacyAndSecuritySettings.xcstrings in Resources */,
 				830F2B302CD97A05006F7F22 /* MessagesSettings.xcstrings in Resources */,
 				83D241AD2D5CEC87002061F4 /* NotificationsSettings.xcstrings in Resources */,
-				834A15042CD85705004A0025 /* TranslationUI.xcstrings in Resources */,
 				835646082D9C480200DAB406 /* iPadOSReadMe.html in Resources */,
 				83A3E6932CAC2832006F4643 /* Accessibility-HapticMusic.xcstrings in Resources */,
 				83E542092D0E2A3E00741DFE /* CellulariPhone.xcstrings in Resources */,
