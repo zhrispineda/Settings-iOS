@@ -8,24 +8,23 @@
 import SwiftUI
 
 struct BackgroundAppRefreshView: View {
-    // Variables
     @AppStorage("BackgroundAppRefreshToggle") private var backgroundAppRefreshToggle = true
-    @AppStorage("BackgroundAppRefreshPicker") private var backgroundAppRefreshPicker = "NONE"
-    let table = "AutomaticContentDownload"
+    @AppStorage("BackgroundAppRefreshPicker") private var backgroundAppRefreshPicker = "Wi-Fi & Cellular Data"
+    let path = "/System/Library/PreferenceBundles/BackgroundAppRefresh.bundle"
     
     var body: some View {
-        CustomList(title: "AUTO_CONTENT_DOWNLOAD".localize(table: table)) {
+        CustomList(title: "Background App Refresh".localized(path: path)) {
             if UIDevice.CellularTelephonyCapability {
                 Section {
-                    SettingsLink("AUTO_CONTENT_DOWNLOAD".localize(table: table), status: backgroundAppRefreshPicker.localize(table: table), destination: SelectOptionList("AUTO_CONTENT_DOWNLOAD", options: ["NONE", "WIFI_ONLY", "WIFI_AND_CELLULAR"], selected: "WIFI_AND_CELLULAR", table: table))
+                    SettingsLink("Background App Refresh".localized(path: path), status: backgroundAppRefreshPicker.localized(path: path), destination: SelectOptionList("Background App Refresh".localized(path: path), options: ["Off", "Wi-Fi", "Wi-Fi & Cellular Data"], selected: "Wi-Fi & Cellular Data"))
                 } footer: {
-                    Text("FOOTER_WIFI_AND_CELLULAR", tableName: table)
+                    Text("Allow apps to refresh their content when on Wi-Fi or cellular in the background. Turning off apps may help preserve battery life.".localized(path: path))
                 }
             } else {
                 Section {
-                    Toggle("AUTO_CONTENT_DOWNLOAD".localize(table: table), isOn: $backgroundAppRefreshToggle)
+                    Toggle("Background App Refresh".localized(path: path), isOn: $backgroundAppRefreshToggle)
                 } footer: {
-                    Text("FOOTER_WIFI", tableName: table)
+                    Text("Allow apps to refresh their content when on Wi-Fi in the background. Turning off apps may help preserve battery life.".localized(path: path))
                 }
             }
             

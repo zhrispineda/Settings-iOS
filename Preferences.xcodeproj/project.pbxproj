@@ -101,7 +101,6 @@
 		83585B772B8848430046A0C3 /* CyclingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83585B762B8848430046A0C3 /* CyclingView.swift */; };
 		83585FCA2C435B6700B11C91 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83585FC92C435B6700B11C91 /* StringExtensions.swift */; };
 		835874CC2DB2AE81005E4D01 /* AuthKitUI.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 835874CB2DB2AE81005E4D01 /* AuthKitUI.xcstrings */; };
-		835BF1372CC1AAB800F30DA1 /* AutomaticContentDownload.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 835BF1362CC1AAB800F30DA1 /* AutomaticContentDownload.xcstrings */; };
 		836000782BCC7A470034DDF5 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836000772BCC7A470034DDF5 /* NotificationsView.swift */; };
 		8360825D2D13B04E00902254 /* SettingsPhysical.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8360825C2D13B04E00902254 /* SettingsPhysical.gif */; };
 		836167D82C25FA3A00458CD8 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836167D72C25FA3A00458CD8 /* CalendarView.swift */; };
@@ -209,7 +208,6 @@
 		83B98E302B7C087B007F6C94 /* IconToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B98E2F2B7C087B007F6C94 /* IconToggle.swift */; };
 		83BA35122E15B5A500CFA06C /* CameraSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83BA35112E15B5A500CFA06C /* CameraSettings.xcstrings */; };
 		83BA35142E15B61600CFA06C /* CameraSettings-SmartStyles.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83BA35132E15B61600CFA06C /* CameraSettings-SmartStyles.xcstrings */; };
-		83C3F33B2CC2B25100AE2402 /* Date & Time.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83C3F33A2CC2B25100AE2402 /* Date & Time.xcstrings */; };
 		83C79B932CE331A500F49B4F /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83C79B922CE331A500F49B4F /* Localizable.xcstrings */; };
 		83C94CA52C1E0192005EBBC5 /* AppleCareWarrantyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C94CA42C1E0192005EBBC5 /* AppleCareWarrantyView.swift */; };
 		83CB06972CA6283A00D7533A /* FormatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CB06962CA6283A00D7533A /* FormatsView.swift */; };
@@ -375,7 +373,6 @@
 		83585B762B8848430046A0C3 /* CyclingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyclingView.swift; sourceTree = "<group>"; };
 		83585FC92C435B6700B11C91 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		835874CB2DB2AE81005E4D01 /* AuthKitUI.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AuthKitUI.xcstrings; sourceTree = "<group>"; };
-		835BF1362CC1AAB800F30DA1 /* AutomaticContentDownload.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AutomaticContentDownload.xcstrings; sourceTree = "<group>"; };
 		836000772BCC7A470034DDF5 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		8360825C2D13B04E00902254 /* SettingsPhysical.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SettingsPhysical.gif; sourceTree = "<group>"; };
 		836167D72C25FA3A00458CD8 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
@@ -487,7 +484,6 @@
 		83B98E2F2B7C087B007F6C94 /* IconToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconToggle.swift; sourceTree = "<group>"; };
 		83BA35112E15B5A500CFA06C /* CameraSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = CameraSettings.xcstrings; sourceTree = "<group>"; };
 		83BA35132E15B61600CFA06C /* CameraSettings-SmartStyles.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "CameraSettings-SmartStyles.xcstrings"; sourceTree = "<group>"; };
-		83C3F33A2CC2B25100AE2402 /* Date & Time.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "Date & Time.xcstrings"; sourceTree = "<group>"; };
 		83C79B922CE331A500F49B4F /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		83C94CA42C1E0192005EBBC5 /* AppleCareWarrantyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleCareWarrantyView.swift; sourceTree = "<group>"; };
 		83CB06962CA6283A00D7533A /* FormatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatsView.swift; sourceTree = "<group>"; };
@@ -605,8 +601,6 @@
 		832877F22CAEE78C00013B0B /* GeneralSettingsUI */ = {
 			isa = PBXGroup;
 			children = (
-				835BF1362CC1AAB800F30DA1 /* AutomaticContentDownload.xcstrings */,
-				83C3F33A2CC2B25100AE2402 /* Date & Time.xcstrings */,
 				832877EC2CAEE55B00013B0B /* General.xcstrings */,
 				832877F32CAEE7A200013B0B /* GeneralSettingsUI.xcstrings */,
 			);
@@ -1536,10 +1530,8 @@
 				838FE8CD2CB60A3300FDB1A8 /* AssistantSettings.xcstrings in Resources */,
 				83E748B22CC6BDDE0081D660 /* LocalizedStrings.xcstrings in Resources */,
 				83A422342CAC60B100EED538 /* CameraSettings-4k120.xcstrings in Resources */,
-				83C3F33B2CC2B25100AE2402 /* Date & Time.xcstrings in Resources */,
 				832877FB2CAEEA7E00013B0B /* WiFiKitUILocalizableStrings.xcstrings in Resources */,
 				835646062D9C47F000DAB406 /* iOSReadMe.html in Resources */,
-				835BF1372CC1AAB800F30DA1 /* AutomaticContentDownload.xcstrings in Resources */,
 				832877DF2CAD987B00013B0B /* AppleIDSetup.xcstrings in Resources */,
 				832877F42CAEE7A200013B0B /* GeneralSettingsUI.xcstrings in Resources */,
 				83C79B932CE331A500F49B4F /* Localizable.xcstrings in Resources */,
