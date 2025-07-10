@@ -27,120 +27,131 @@ struct BiometricPasscodeView: View {
     @State private var allowHomeControlWhileLocked = true
     @State private var allowPassbookWhileLocked = false
     @State private var allowReturnCallsWhileLocked = true
-    @State private var allowUSBRestrictedMode = false
+    @State private var workoutHealthData = false
     @State private var allowEraseAfterFailedAttempts = false
     @State private var showingEraseConfirmation = false
     @State private var opacity: Double = 0
     @State private var frameY: Double = 0
     @State private var showingHelpSheet = false
     @State private var showingPrivacySheet = false
-    let path = "/System/Library/PrivateFrameworks/PasscodeAndBiometricsSettings.framework/"
-    let table = "Pearl"
-    let lockTable = "Passcode Lock"
-    let payTable = "Payment_Prefs"
-    let oldTable = "TouchID"
+    let path = "/System/Library/PrivateFrameworks/PasscodeAndBiometricsSettings.framework"
+    let pref = "/System/Library/PrivateFrameworks/Preferences.framework"
+    let pearl = "Pearl"
+    let passcode = "Passcode Lock"
+    let pay = "/System/Library/PreferenceBundles/PaymentContactlessSettingsUIPlugin.bundle"
+    let payment = "Payment_Prefs"
+    let facePrivacy = "/System/Library/OnBoardingBundles/com.apple.onboarding.faceid.bundle"
+    let touchID = "TouchID"
+    let touchPrivacy = "/System/Library/OnBoardingBundles/com.apple.onboarding.touchid.bundle"
     
     var body: some View {
         CustomList {
-            Placard(title: UIDevice.PearlIDCapability ? "PASSCODE_PLACARD_TITLE_FACE_ID".localized(path: path, table: lockTable) : "PASSCODE_PLACARD_TITLE_TOUCH_ID".localized(path: path, table: lockTable), icon: UIDevice.PearlIDCapability ? "com.apple.graphic-icon.face-id" : "com.apple.graphic-icon.touch-id", description: "\(UIDevice.PearlIDCapability ? "PASSCODE_PLACARD_SUBTITLE_FACE_ID".localize(table: lockTable) : "PASSCODE_PLACARD_SUBTITLE_TOUCH_ID".localize(table: lockTable)) [\("PASSCODE_RECOVERY_LEARN_MORE_TEXT".localize(table: lockTable))](pref://helpkit)", frameY: $frameY, opacity: $opacity)
+            Placard(title: UIDevice.PearlIDCapability ? "PASSCODE_PLACARD_TITLE_FACE_ID".localized(path: path, table: passcode) : "PASSCODE_PLACARD_TITLE_TOUCH_ID".localized(path: path, table: passcode), icon: UIDevice.PearlIDCapability ? "com.apple.graphic-icon.face-id" : "com.apple.graphic-icon.touch-id", description: "\(UIDevice.PearlIDCapability ? "PASSCODE_PLACARD_SUBTITLE_FACE_ID".localized(path: path, table: passcode) : "PASSCODE_PLACARD_SUBTITLE_TOUCH_ID".localized(path: path, table: passcode)) [\("PASSCODE_RECOVERY_LEARN_MORE_TEXT".localized(path: path, table: passcode))](pref://helpkit)", frameY: $frameY, opacity: $opacity)
             
             Section {
-                Toggle("TOUCHID_UNLOCK".localize(table: oldTable), isOn: $allowFingerprintForUnlock)
-                Toggle("TOUCHID_PURCHASES".localize(table: oldTable), isOn: $allowFingerprintForStore)
-                Toggle("TOUCHID_STOCKHOLM".localize(table: payTable), isOn: $allowFingerprintForContactlessPayment)
-                Toggle("SAFARI_AUTOFILL".localize(table: oldTable), isOn: $forceAuthenticationBeforeAutoFill)
+                Toggle("TOUCHID_UNLOCK".localized(path: path, table: passcode), isOn: $allowFingerprintForUnlock)
+                if UIDevice.iPad {
+                    Toggle("Wallet & Apple Pay".localized(path: pay), isOn: $allowFingerprintForContactlessPayment)
+                }
+                Toggle("TOUCHID_PURCHASES".localized(path: path, table: passcode), isOn: $allowFingerprintForStore)
+                if UIDevice.iPhone {
+                    Toggle("TOUCHID_STOCKHOLM".localized(path: pref, table: payment), isOn: $allowFingerprintForContactlessPayment)
+                }
+                Toggle("SAFARI_AUTOFILL".localized(path: path, table: passcode), isOn: $forceAuthenticationBeforeAutoFill)
             } header: {
-                Text(UIDevice.PearlIDCapability ? "PEARL_HEADER".localized(path: path, table: lockTable) : "USE_TOUCHID_FOR".localize(table: oldTable))
+                Text(UIDevice.PearlIDCapability ? "PEARL_HEADER".localized(path: path, table: passcode) : "USE_TOUCHID_FOR".localized(path: path, table: passcode))
             } footer: {
-                Text(.init(UIDevice.PearlIDCapability ? "PEARL_FOOTER".localize(table: table, "[\("PEARL_FOOTER_LINK".localize(table: table))](pref://privacy)") : "Touch ID lets you use your fingerprint to unlock your device and make purchases with Apple Pay, App Store, and Apple Books. [About Touch ID & Privacy…](pref://privacy)"))
+                Text(.init(UIDevice.PearlIDCapability ? "PEARL_FOOTER".localized(path: path, table: passcode, "[\("BUTTON_TITLE".localized(path: facePrivacy, table: "FaceID"))](pref://privacy)") : "USE_TOUCHID_FOR_GROUP_FOOTER_PREFIX".localized(path: path, table: passcode, "[\("BUTTON_TITLE".localized(path: touchPrivacy, table: "TouchID"))](pref://privacy)")))
             }
             
             if UIDevice.PearlIDCapability {
                 Section {
-                    Button("SET_UP_FACE_ID".localized(path: path, table: lockTable)) {}
+                    Button("SET_UP_FACE_ID".localized(path: path, table: passcode)) {}
                 }
                 
                 Section {
-                    Toggle("PEARL_UNLOCK_ATTENTION_TITLE".localized(path: path, table: lockTable), isOn: $requireAttentionForUnlock)
+                    Toggle("PEARL_UNLOCK_ATTENTION_TITLE".localized(path: path, table: passcode), isOn: $requireAttentionForUnlock)
                 } header: {
-                    Text("ATTENTION_HEADER".localized(path: path, table: lockTable))
+                    Text("ATTENTION_HEADER".localized(path: path, table: passcode))
                 } footer: {
-                    Text("PEARL_ATTENTION_FOOTER".localize(table: table) + "\(UIDevice.iPhone ? " Face ID will always require attention when you‘re wearing a mask." : "")")
+                    Text("PEARL_ATTENTION_FOOTER".localized(path: path, table: passcode))
                 }
                 
                 Section {
-                    Toggle("PEARL_ATTENTION_TITLE".localized(path: path, table: lockTable), isOn: $attentionAwareFeatures)
+                    Toggle("PEARL_ATTENTION_TITLE".localized(path: path, table: passcode), isOn: $attentionAwareFeatures)
                 } footer: {
-                    Text("PEARL_ATTENTION_FEATURES_FOOTER", tableName: table)
+                    Text("PEARL_ATTENTION_FEATURES_FOOTER".localized(path: path, table: passcode))
                 }
                 
                 if UIDevice.iPhone {
                     Section {
-                        SettingsLink("DTO_STATUS_LABEL_DESCRIPTION".localized(path: path, table: lockTable), status: "DTO_STATUS_LABEL_DESCRIPTION_STATE_OFF".localized(path: path, table: lockTable), destination: EmptyView())
+                        SettingsLink("DTO_STATUS_LABEL_DESCRIPTION".localized(path: path, table: passcode), status: "DTO_STATUS_LABEL_DESCRIPTION_STATE_OFF".localized(path: path, table: passcode), destination: EmptyView())
                             .disabled(true)
                     } footer: {
-                        Text(UIDevice.PearlIDCapability ? "DTO_GROUP_DISABLED_REASON_FOOTER_DESCRIPTION_FACE_ID".localized(path: path, table: lockTable) : "DTO_GROUP_DISABLED_REASON_FOOTER_DESCRIPTION_TOUCH_ID".localized(path: path, table: lockTable))
+                        Text(UIDevice.PearlIDCapability ? "DTO_GROUP_DISABLED_REASON_FOOTER_DESCRIPTION_FACE_ID".localized(path: path, table: passcode) : "DTO_GROUP_DISABLED_REASON_FOOTER_DESCRIPTION_TOUCH_ID".localized(path: path, table: passcode))
                     }
                 }
             } else {
-                Section("FINGERPRINTS".localized(path: path, table: oldTable)) {
-                    Button("ADD_FINGERPRINT".localized(path: path, table: oldTable)) {}
+                Section("FINGERPRINTS".localized(path: path, table: passcode)) {
+                    Button("ADD_FINGERPRINT".localized(path: path, table: passcode)) {}
                 }
             }
             
             Section {
-                Button("PASSCODE_ON".localized(path: path, table: lockTable)) {}
-                Button("CHANGE_PASSCODE".localized(path: path, table: lockTable)) {}
+                Button("PASSCODE_ON".localized(path: path, table: passcode)) {}
+                Button("CHANGE_PASSCODE".localized(path: path, table: passcode)) {}
                     .disabled(true)
             }
             
             Section {
-                SettingsLink("PASSCODE_REQ".localize(table: lockTable), status: "ALWAYS".localize(table: lockTable), destination: EmptyView())
+                SettingsLink("PASSCODE_REQ".localized(path: path, table: passcode), status: "ALWAYS".localized(path: path, table: passcode), destination: EmptyView())
                     .disabled(true)
             }
             
             Section {
-                Toggle("VOICE_DIAL".localized(path: path, table: lockTable), isOn: $voiceDial)
+                Toggle("VOICE_DIAL".localized(path: path, table: passcode), isOn: $voiceDial)
                     .disabled(true)
             } footer: {
-                Text("VOICE_DIAL_TEXT".localized(path: path, table: lockTable))
+                Text("VOICE_DIAL_TEXT".localized(path: path, table: passcode))
             }
             
             Section {
-                Toggle("TODAY_VIEW".localized(path: path, table: lockTable), isOn: $allowLockScreenTodayView)
-                Toggle("NOTIFICATIONS_VIEW".localized(path: path, table: lockTable), isOn: $allowLockScreenNotificationsView)
-                Toggle("CONTROL_CENTER".localized(path: path, table: lockTable), isOn: $allowLockScreenControlCenter)
-                Toggle("COMPLICATIONS".localized(path: path, table: lockTable), isOn: $allowLockScreenWidgets)
-                Toggle("LIVE_ACTIVITIES".localized(path: path, table: lockTable), isOn: $allowLockScreenLiveActivities)
+                Toggle("TODAY_VIEW".localized(path: path, table: passcode), isOn: $allowLockScreenTodayView)
+                Toggle("NOTIFICATIONS_VIEW".localized(path: path, table: passcode), isOn: $allowLockScreenNotificationsView)
+                Toggle("CONTROL_CENTER".localized(path: path, table: passcode), isOn: $allowLockScreenControlCenter)
+                Toggle("COMPLICATIONS".localized(path: path, table: passcode), isOn: $allowLockScreenWidgets)
+                Toggle("LIVE_ACTIVITIES".localized(path: path, table: passcode), isOn: $allowLockScreenLiveActivities)
                 if siriEnabled {
-                    Toggle("SIRI".localized(path: path, table: lockTable), isOn: $allowAssistantWhileLocked)
+                    Toggle("SIRI".localized(path: path, table: passcode), isOn: $allowAssistantWhileLocked)
                 }
                 if UIDevice.iPhone {
-                    Toggle("REPLY_WITH_MESSAGE".localized(path: path, table: lockTable), isOn: $allowReplyWhileLocked)
+                    Toggle("REPLY_WITH_MESSAGE".localized(path: path, table: passcode), isOn: $allowReplyWhileLocked)
                 }
-                Toggle("HOME_CONTROL".localized(path: path, table: lockTable), isOn: $allowHomeControlWhileLocked)
+                Toggle("HOME_CONTROL".localized(path: path, table: passcode), isOn: $allowHomeControlWhileLocked)
                 if UIDevice.iPhone {
-                    Toggle("WALLET".localized(path: path, table: lockTable), isOn: $allowPassbookWhileLocked)
+                    Toggle("WALLET".localized(path: path, table: passcode), isOn: $allowPassbookWhileLocked)
                 }
-                Toggle("RETURN_MISSED_CALLS".localized(path: path, table: lockTable), isOn: $allowReturnCallsWhileLocked)
-                Toggle("ACCESSORIES".localized(path: path, table: lockTable), isOn: $allowUSBRestrictedMode.animation())
+                Toggle("RETURN_MISSED_CALLS".localized(path: path, table: passcode), isOn: $allowReturnCallsWhileLocked)
+                Toggle("WORKOUT_HEALTH_DATA".localized(path: path, table: passcode), isOn: $workoutHealthData)
             } header: {
-                Text("ALLOW_ACCESS_WHEN_LOCKED".localized(path: path, table: lockTable))
+                Text("ALLOW_ACCESS_WHEN_LOCKED".localized(path: path, table: passcode))
             } footer: {
-                Text(allowUSBRestrictedMode ? "ACCESSORIES_ON" : "ACCESSORIES_OFF", tableName: lockTable)
+                if UIDevice.iPhone {
+                    Text("WALLET_FOOTER_TEXT".localized(path: path, table: passcode))
+                }
             }
             .disabled(true)
             
             Section {
-                Toggle("WIPE_DEVICE".localized(path: path, table: lockTable), isOn: $allowEraseAfterFailedAttempts)
+                Toggle("WIPE_DEVICE".localized(path: path, table: passcode), isOn: $allowEraseAfterFailedAttempts)
                     .disabled(true)
                     .confirmationDialog(
-                        "WIPE_DEVICE_ALERT_TITLE".localize(table: lockTable),
+                        "WIPE_DEVICE_ALERT_TITLE".localize(table: passcode),
                         isPresented: $showingEraseConfirmation,
                         titleVisibility: .visible
                     ) {
-                        Button("WIPE_DEVICE_ALERT_OK".localized(path: path, table: lockTable), role: .destructive) {}
-                        Button("WIPE_DEVICE_ALERT_CANCEL".localized(path: path, table: lockTable), role: .cancel) {
+                        Button("WIPE_DEVICE_ALERT_OK".localized(path: path, table: passcode), role: .destructive) {}
+                        Button("WIPE_DEVICE_ALERT_CANCEL".localized(path: path, table: passcode), role: .cancel) {
                             allowEraseAfterFailedAttempts = false
                         }
                     }
@@ -148,15 +159,15 @@ struct BiometricPasscodeView: View {
                         showingEraseConfirmation = allowEraseAfterFailedAttempts
                     }
             } footer: {
-                Text("WIPE_DEVICE_TEXT".localize(table: lockTable, "10"))
+                Text("WIPE_DEVICE_TEXT".localized(path: path, table: passcode, "10"))
             }
         }
         .toolbar {
             ToolbarItem(placement: .principal) {
-                Text(UIDevice.PearlIDCapability ? "PEARL_ID_AND_PASSCODE".localize(table: table) : "TOUCHID_PASSCODE".localize(table: oldTable))
+                Text(UIDevice.PearlIDCapability ? "PASSCODE_PLACARD_TITLE_FACE_ID".localized(path: path, table: passcode) : "PASSCODE_PLACARD_TITLE_TOUCH_ID".localized(path: path, table: passcode))
                     .fontWeight(.semibold)
                     .font(.subheadline)
-                    .opacity(frameY < 50.0 ? opacity : 0) // Only fade when passing the help section title at the top
+                    .opacity(frameY < 50.0 ? opacity : 0)
             }
         }
         .onOpenURL { url in
