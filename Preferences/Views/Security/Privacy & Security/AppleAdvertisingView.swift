@@ -8,26 +8,35 @@
 import SwiftUI
 
 struct AppleAdvertisingView: View {
-    // Variables
+    @State private var showingPrivacySheet = false
+    let path = "/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework"
     let table = "AppleAdvertising"
     
     var body: some View {
         CustomList(title: "ADVERTISING".localize(table: "Privacy"), topPadding: true) {
             Section {} header: {
-                Text("APPLE_DELIVERED_ADVERTISING", tableName: table)
+                Text("APPLE_DELIVERED_ADVERTISING".localized(path: path, table: table))
             } footer: {
-                Text(.init("AD_PRIVACY_FOOTER".localize(table: table, "[\("AD_PRIVACY_FOOTER_LINK".localize(table: table))](#)")))
+                Text(.init("AD_PRIVACY_FOOTER".localized(path: path, table: table, "[\("AD_PRIVACY_FOOTER_LINK".localized(path: path, table: table))](pref://privacy)")))
             }
             
             Section {
-                Button("VIEW_AD_TARGETING_INFORMATION".localize(table: table)) {}
+                Button("VIEW_AD_TARGETING_INFORMATION".localized(path: path, table: table)) {}
             } footer: {
-                Text("VIEW_AD_TARGETING_INFORMATION_FOOTER", tableName: table)
+                Text("VIEW_AD_TARGETING_INFORMATION_FOOTER".localized(path: path, table: table))
             }
             
             Section {} footer: {
-                Text("PERSONALIZED_ADS_NO_CONSENT", tableName: table)
+                Text("PERSONALIZED_ADS_NO_CONSENT".localized(path: path, table: table))
             }
+        }
+        .onOpenURL { url in
+            if url.absoluteString == "pref://privacy" {
+                showingPrivacySheet.toggle()
+            }
+        }
+        .sheet(isPresented: $showingPrivacySheet) {
+            OnBoardingKitView(bundleID: "com.apple.onboarding.advertising")
         }
     }
 }
