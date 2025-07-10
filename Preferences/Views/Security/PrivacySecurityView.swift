@@ -141,7 +141,9 @@ struct PrivacySecurityView: View {
             // MARK: Analytics & Improvements, Advertising
             Section {
                 SLink("PROBLEM_REPORTING".localize(table: table), icon: "com.apple.graphic-icon.analytics-and-improvements") {
-                    AnalyticsImprovementsView()
+                    CustomViewController("/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework/PrivacySettingsUI", controller: "PUIProblemReportingController")
+                        .ignoresSafeArea()
+                        .navigationTitle("PROBLEM_REPORTING".localize(table: table))
                 }
                 SLink("ADVERTISING".localize(table: table), icon: "com.apple.graphic-icon.apple-advertising") {
                     AppleAdvertisingView()

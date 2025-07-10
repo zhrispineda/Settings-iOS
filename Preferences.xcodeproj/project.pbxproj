@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		830293B72D28853500222762 /* AnalyticsImprovementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830293B62D28853500222762 /* AnalyticsImprovementsView.swift */; };
-		830293B92D28889600222762 /* ProblemReporting.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 830293B82D28889600222762 /* ProblemReporting.xcstrings */; };
 		8306AE6C2D0665A400D1AE5D /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8306AE6B2D0665A400D1AE5D /* ViewExtensions.swift */; };
 		83076D042C7E754600BFFAFE /* BackgroundAppRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83076D032C7E754600BFFAFE /* BackgroundAppRefreshView.swift */; };
 		830976D12CDD1A0E0087F1A1 /* CoreFollowUp.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 830976D02CDD1A0E0087F1A1 /* CoreFollowUp.xcstrings */; };
@@ -88,7 +86,6 @@
 		834CA6EA2D62AE93006792AE /* UserNotificationsKit.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834CA6E92D62AE93006792AE /* UserNotificationsKit.xcstrings */; };
 		834F2BF32D6570FC00AD85CF /* SettingsSimulator.gif in Resources */ = {isa = PBXBuildFile; fileRef = 834F2BF22D6570FC00AD85CF /* SettingsSimulator.gif */; };
 		8352DEA22D70F716004B2575 /* SettingsSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8352DEA12D70F716004B2575 /* SettingsSearchView.swift */; };
-		83558CE12D416CB200D23945 /* AnalyticsDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83558CE02D416CB200D23945 /* AnalyticsDataView.swift */; };
 		835646062D9C47F000DAB406 /* iOSReadMe.html in Resources */ = {isa = PBXBuildFile; fileRef = 835646052D9C47F000DAB406 /* iOSReadMe.html */; };
 		835646082D9C480200DAB406 /* iPadOSReadMe.html in Resources */ = {isa = PBXBuildFile; fileRef = 835646072D9C480200DAB406 /* iPadOSReadMe.html */; };
 		8356460A2D9C4AB600DAB406 /* UIKitRepresentables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835646092D9C4AB600DAB406 /* UIKitRepresentables.swift */; };
@@ -274,8 +271,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		830293B62D28853500222762 /* AnalyticsImprovementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsImprovementsView.swift; sourceTree = "<group>"; };
-		830293B82D28889600222762 /* ProblemReporting.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = ProblemReporting.xcstrings; sourceTree = "<group>"; };
 		8306AE6B2D0665A400D1AE5D /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		83076D032C7E754600BFFAFE /* BackgroundAppRefreshView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundAppRefreshView.swift; sourceTree = "<group>"; };
 		830976D02CDD1A0E0087F1A1 /* CoreFollowUp.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = CoreFollowUp.xcstrings; sourceTree = "<group>"; };
@@ -356,7 +351,6 @@
 		834CA6E92D62AE93006792AE /* UserNotificationsKit.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = UserNotificationsKit.xcstrings; sourceTree = "<group>"; };
 		834F2BF22D6570FC00AD85CF /* SettingsSimulator.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SettingsSimulator.gif; sourceTree = "<group>"; };
 		8352DEA12D70F716004B2575 /* SettingsSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSearchView.swift; sourceTree = "<group>"; };
-		83558CE02D416CB200D23945 /* AnalyticsDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsDataView.swift; sourceTree = "<group>"; };
 		835646052D9C47F000DAB406 /* iOSReadMe.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = iOSReadMe.html; sourceTree = "<group>"; };
 		835646072D9C480200DAB406 /* iPadOSReadMe.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = iPadOSReadMe.html; sourceTree = "<group>"; };
 		835646092D9C4AB600DAB406 /* UIKitRepresentables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitRepresentables.swift; sourceTree = "<group>"; };
@@ -615,12 +609,10 @@
 		832928472B857763006611CF /* Privacy & Security */ = {
 			isa = PBXGroup;
 			children = (
-				83558CDF2D416C9900D23945 /* Analytics & Improvements */,
 				8329284C2B8580AA006611CF /* Health */,
 				83F455B22C3C8CA5009DB157 /* LocationServicesView.swift */,
 				832928482B85779D006611CF /* TrackingView.swift */,
 				8319CE4C2B86D380007EC822 /* SafetyCheckView.swift */,
-				830293B62D28853500222762 /* AnalyticsImprovementsView.swift */,
 				8319CE502B86DF8A007EC822 /* AppleAdvertisingView.swift */,
 				83441A8A2CAF73740022E193 /* JournalingSuggestionsView.swift */,
 			);
@@ -815,14 +807,6 @@
 			path = Language;
 			sourceTree = "<group>";
 		};
-		83558CDF2D416C9900D23945 /* Analytics & Improvements */ = {
-			isa = PBXGroup;
-			children = (
-				83558CE02D416CB200D23945 /* AnalyticsDataView.swift */,
-			);
-			path = "Analytics & Improvements";
-			sourceTree = "<group>";
-		};
 		835683952B754ED3000FB136 /* About */ = {
 			isa = PBXGroup;
 			children = (
@@ -980,7 +964,6 @@
 				83F3611B2CD2E25700041A72 /* AppleAdvertising.xcstrings */,
 				8388E5332CD034EB00A3066D /* Location Services.xcstrings */,
 				8388E5362CD0733400A3066D /* LocationServicesPrivacy.xcstrings */,
-				830293B82D28889600222762 /* ProblemReporting.xcstrings */,
 			);
 			path = PrivacySettingsUI;
 			sourceTree = "<group>";
@@ -1468,7 +1451,6 @@
 				83A851BE2E0A4BD70041A3E6 /* SettingsApp.icon in Resources */,
 				8388C0B22CD473DB00FA7D4C /* WellnessDashboard-Localizable.xcstrings in Resources */,
 				83CED5A82D6E5AAF00253D9C /* ZoomSettings.xcstrings in Resources */,
-				830293B92D28889600222762 /* ProblemReporting.xcstrings in Resources */,
 				839C6BEF2D9C6A3300F94C6E /* iPadOSReadMeSummary.html in Resources */,
 				8340F0C22D0D4D00009E71C0 /* PrivacyAndSecuritySettings.xcstrings in Resources */,
 				830F2B302CD97A05006F7F22 /* MessagesSettings.xcstrings in Resources */,
@@ -1688,7 +1670,6 @@
 				838F37EA2C82865B008C9909 /* FilesView.swift in Sources */,
 				8319CE512B86DF8A007EC822 /* AppleAdvertisingView.swift in Sources */,
 				83B1CFB72C1D56C900C2263C /* BiometricPasscodeView.swift in Sources */,
-				83558CE12D416CB200D23945 /* AnalyticsDataView.swift in Sources */,
 				83D4CB762B7FF0B000D6087D /* WebContentView.swift in Sources */,
 				8319CE4D2B86D380007EC822 /* SafetyCheckView.swift in Sources */,
 				834540C52C9CE2E100091E79 /* AddLanguageView.swift in Sources */,
@@ -1705,7 +1686,6 @@
 				83EC895F2CA0F8B500389F3B /* CameraControlView.swift in Sources */,
 				834CA6E82D62AB47006792AE /* SummarizeNotificationsView.swift in Sources */,
 				832F517F2BBF4DC900335E5E /* NetworkView.swift in Sources */,
-				830293B72D28853500222762 /* AnalyticsImprovementsView.swift in Sources */,
 				8309893A2C44AA9C00535A8F /* UIDeviceExtensions.swift in Sources */,
 				8349E22C2C7514F6007416C5 /* ApplePencilView.swift in Sources */,
 				837F1DCD2B8AF0D400665EAB /* ExtensionsView.swift in Sources */,
