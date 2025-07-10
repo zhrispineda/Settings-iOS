@@ -32,10 +32,10 @@ struct SiriView: View {
     @State private var frameY: Double = 0
     @State private var siriPrivacySheet = false
     @State private var intelligencePrivacySheet = false
-
+    
+    let path = "/System/Library/PrivateFrameworks/AssistantSettingsSupport.framework"
     let table = "AssistantSettings"
     let gmTable = "AssistantSettings-GM"
-    let exTable = "AssistantSettings-ExternalAIModel"
     let contactPickerDelegate = ContactPickerDelegate()
     let apps = [
         AppInfo(name: "App Store", icon: "com.apple.AppStore", showOnSimulator: false),
@@ -66,50 +66,50 @@ struct SiriView: View {
             // MARK: Placard Section
             if UIDevice.IntelligenceCapability {
                 Section {
-                    Placard(title: "Apple Intelligence & Siri".localize(table: table), icon: "com.apple.application-icon.apple-intelligence", description: UIDevice.iPhone ? "PLACARD_DESCRIPTION_GM".localize(table: gmTable) : "PLACARD_DESCRIPTION_GM_IPAD".localize(table: gmTable), frameY: $frameY, opacity: $opacity)
+                    Placard(title: "ASSISTANT_AND_GM".localized(path: path, table: gmTable), icon: "com.apple.application-icon.apple-intelligence", description: UIDevice.iPhone ? "PLACARD_DESCRIPTION_GM".localized(path: path, table: gmTable) : "PLACARD_DESCRIPTION_GM_IPAD".localized(path: path, table: gmTable), beta: true, frameY: $frameY, opacity: $opacity)
                     if !UIDevice.IsSimulator {
-                        Button("GM_TURN_ON_GM_BUTTON_TITLE".localize(table: gmTable)) {}
+                        Button("GM_TURN_ON_GM_BUTTON_TITLE".localized(path: path, table: gmTable)) {}
                     }
                 } footer: {
                     if !UIDevice.IsSimulator {
-                        Text(UIDevice.iPhone ? "GM_MODEL_TURN_ON_IPHONE" : "GM_MODEL_TURN_ON_IPAD", tableName: gmTable)
+                        Text(UIDevice.iPhone ? "GM_MODEL_TURN_ON_IPHONE".localized(path: path, table: gmTable) : "GM_MODEL_TURN_ON_IPAD".localized(path: path, table: gmTable))
                     }
                 }
             } else {
-                Placard(title: "ASSISTANT".localize(table: table), icon: "com.apple.application-icon.siri", description: "PLACARD_DESCRIPTION".localize(table: table), frameY: $frameY, opacity: $opacity)
+                Placard(title: "ASSISTANT".localized(path: path, table: table), icon: "com.apple.application-icon.siri", description: "PLACARD_DESCRIPTION".localized(path: path, table: table), frameY: $frameY, opacity: $opacity)
             }
             
             // MARK: Siri Requests Section
             Section {
                 if siriEnabled {
-                    SettingsLink("VOICE".localize(table: table), status: "", destination: SiriVoiceView()) // \("REGION_en-US".localize(table: table)) (Voice 4)
+                    SettingsLink("VOICE".localized(path: path, table: table), status: "", destination: SiriVoiceView())
                 } else {
-                    SettingsLink("LANGUAGE".localize(table: table), status: "English (United States)", destination: SiriLanguageView())
+                    SettingsLink("LANGUAGE".localized(path: path, table: table), status: "English (United States)", destination: SiriLanguageView())
                 }
                 if !UIDevice.IsSimulator {
-                    SettingsLink("ACTIVATION_COMPACT".localize(table: table), status: "ACTIVATION_OFF".localize(table: table), destination: EmptyView())
+                    SettingsLink("ACTIVATION_COMPACT".localized(path: path, table: table), status: "ACTIVATION_OFF".localized(path: path, table: table), destination: EmptyView())
                 }
                 if siriEnabled {
                     if !UIDevice.IsSimulator {
-                        Toggle("ASSISTANT_LOCK_SCREEN_ACCESS".localize(table: table), isOn: $allowSiriWhenLockedEnabled)
+                        Toggle("ASSISTANT_LOCK_SCREEN_ACCESS".localized(path: path, table: table), isOn: $allowSiriWhenLockedEnabled)
                     }
-                    SettingsLink("VOICE".localize(table: table), status: "\("REGION_en-US".localize(table: table)) (Voice 4)", destination: SiriVoiceView())
-                    NavigationLink("VOICE_FEEDBACK".localize(table: table)) {
+                    SettingsLink("VOICE".localized(path: path, table: table), status: "\("REGION_en-US".localized(path: path, table: table)) (Voice 4)", destination: SiriVoiceView())
+                    NavigationLink("VOICE_FEEDBACK".localized(path: path, table: table)) {
                         CustomViewController("/System/Library/PrivateFrameworks/AssistantSettingsSupport.framework/AssistantSettingsSupport", controller: "AssistantAudioFeedbackController")
-                            .navigationTitle("VOICE_FEEDBACK".localize(table: table))
+                            .navigationTitle("VOICE_FEEDBACK".localized(path: path, table: table))
                     }
                     if UIDevice.IsSimulator {
-                        NavigationLink("ANNOUNCE_CALLS_TITLE".localize(table: table), destination: EmptyView())
-                        NavigationLink("ANNOUNCE_MESSAGES_TITLE".localize(table: table), destination: EmptyView())
+                        NavigationLink("ANNOUNCE_CALLS_TITLE".localized(path: path, table: table), destination: EmptyView())
+                        NavigationLink("ANNOUNCE_MESSAGES_TITLE".localized(path: path, table: table), destination: EmptyView())
                     }
                     // My Information
                     Button {
                         openContactPicker()
                     } label: {
                         HStack {
-                            Text("MyInfo", tableName: table)
+                            Text("MyInfo".localized(path: path, table: table))
                             Spacer()
-                            Text(myInfoContact.isEmpty ? "None".localize(table: table) : myInfoContact)
+                            Text(myInfoContact.isEmpty ? "None".localized(path: path, table: table) : myInfoContact)
                                 .foregroundStyle(Color(UIColor.secondaryLabel))
                             Image(systemName: "chevron.right")
                                 .foregroundStyle(Color(UIColor.tertiaryLabel))
@@ -117,60 +117,46 @@ struct SiriView: View {
                     }
                     .foregroundStyle(.primary)
                 }
-                NavigationLink("ASSISTANT_HISTORY_LABEL".localize(table: table)) {
+                NavigationLink("ASSISTANT_HISTORY_LABEL".localized(path: path, table: table)) {
                     BundleControllerView("/System/Library/PrivateFrameworks/AssistantSettingsSupport.framework/AssistantSettingsSupport", controller: "AssistantHistoryViewController", title: "ASSISTANT_HISTORY_LABEL", table: table)
                 }
-//                NavigationLink("MESSAGE_TITLE".localize(table: table), destination: {
-//                    CustomList(title: "MESSAGE_TITLE".localize(table: table)) {}
-//                })
             } header: {
-                Text("SIRI_REQUESTS", tableName: table)
+                Text("SIRI_REQUESTS".localized(path: path, table: table))
             } footer: {
-                Text(.init(UIDevice.IsSimulator ? "[\("SIRI_REQUESTS_ABOUT_LINK_TEXT".localize(table: table))](pref://siri)" : "\("SIRI_REQUESTS_DEVICE_PROCESSING_FOOTER_TEXT_IPHONE".localize(table: table))" + " [\("SIRI_REQUESTS_ABOUT_LINK_TEXT".localize(table: table))](pref://siri)"))
+                Text(.init(UIDevice.IsSimulator ? "[\("SIRI_REQUESTS_ABOUT_LINK_TEXT".localized(path: path, table: table))](pref://siri)" : "\(UIDevice.iPhone ? "SIRI_REQUESTS_DEVICE_PROCESSING_FOOTER_TEXT_IPHONE".localized(path: path, table: table) : "SIRI_REQUESTS_DEVICE_PROCESSING_FOOTER_TEXT_IPAD".localized(path: path, table: table))" + " [\("SIRI_REQUESTS_ABOUT_LINK_TEXT".localized(path: path, table: table))](pref://siri)"))
             }
-            
-            // MARK: Extensions Section
-//            if UIDevice.IntelligenceCapability {
-//                Section {
-//                    NavigationLink("EXTERNAL_AI_MODEL_NAME".localize(table: exTable)) {}
-//                } header: {
-//                    Text("EXTERNAL_AI_MODEL_GROUP", tableName: exTable)
-//                } footer: {
-//                    Text(UIDevice.iPhone ? "EXTERNAL_AI_MODEL_FOOTER_IPHONE" : "EXTERNAL_AI_MODEL_FOOTER_IPAD", tableName: exTable)
-//                }
-//            }
             
             // MARK: Suggestions Section
             Section {
-                Toggle("SUGGESTIONS_SHOW_BEFORE_SEARCHING".localize(table: table), isOn: $showSuggestionsEnabled)
-                Button("SUGGESTIONS_RESET_HIDDEN_NAME".localize(table: table)) { UIDevice.iPhone ? showingResetHiddenSuggestionsAlert.toggle() : showingResetHiddenSuggestionsPopup.toggle() }
-                    .alert("SUGGESTIONS_RESET_HIDDEN_TITLE".localize(table: table), isPresented: $showingResetHiddenSuggestionsPopup) {
-                        Button("SUGGESTIONS_RESET_HIDDEN_TITLE".localize(table: table), role: .destructive) {}
-                        Button("SUGGESTIONS_RESET_HIDDEN_CANCEL".localize(table: table), role: .cancel) {}
+                Toggle("SUGGESTIONS_SHOW_BEFORE_SEARCHING".localized(path: path, table: table), isOn: $showSuggestionsEnabled)
+                Button("SUGGESTIONS_RESET_HIDDEN_NAME".localized(path: path, table: table)) { UIDevice.iPhone ? showingResetHiddenSuggestionsAlert.toggle() : showingResetHiddenSuggestionsPopup.toggle() }
+                    .alert("SUGGESTIONS_RESET_HIDDEN_TITLE".localized(path: path, table: table), isPresented: $showingResetHiddenSuggestionsPopup) {
+                        Button("SUGGESTIONS_RESET_HIDDEN_TITLE".localized(path: path, table: table), role: .destructive) {}
+                        Button("SUGGESTIONS_RESET_HIDDEN_CANCEL".localized(path: path, table: table), role: .cancel) {}
                     } message: {
-                        Text("SUGGESTIONS_RESET_HIDDEN_PROMPT", tableName: table)
+                        Text("SUGGESTIONS_RESET_HIDDEN_PROMPT".localized(path: path, table: table))
                     }
-                    .confirmationDialog("SUGGESTIONS_RESET_HIDDEN_PROMPT".localize(table: table), isPresented: $showingResetHiddenSuggestionsAlert, titleVisibility: .visible) {
-                        Button("SUGGESTIONS_RESET_HIDDEN_TITLE".localize(table: table), role: .destructive) {}
-                        Button("SUGGESTIONS_RESET_HIDDEN_CANCEL".localize(table: table), role: .cancel) {}
+                    .confirmationDialog("SUGGESTIONS_RESET_HIDDEN_PROMPT".localized(path: path, table: table), isPresented: $showingResetHiddenSuggestionsAlert, titleVisibility: .visible) {
+                        Button("SUGGESTIONS_RESET_HIDDEN_TITLE".localized(path: path, table: table), role: .destructive) {}
+                        Button("SUGGESTIONS_RESET_HIDDEN_CANCEL".localized(path: path, table: table), role: .cancel) {}
                     }
-                Toggle("SUGGESTIONS_ALLOW_NOTIFICATIONS".localize(table: table), isOn: $allowNotificationsEnabled)
-                Toggle("SUGGESTIONS_SHOW_IN_APPLIBRARY".localize(table: table), isOn: $showAppLibraryEnabled)
-                Toggle("SUGGESTIONS_SHOW_WHEN_SHARING".localize(table: table), isOn: $showWhenSharingEnabled)
-                Toggle("SUGGESTIONS_SHOW_WHEN_LISTENING".localize(table: table), isOn: $showWhenListeningEnabled)
+                Toggle("SUGGESTIONS_ALLOW_NOTIFICATIONS".localized(path: path, table: table), isOn: $allowNotificationsEnabled)
+                Toggle("SUGGESTIONS_SHOW_IN_APPLIBRARY".localized(path: path, table: table), isOn: $showAppLibraryEnabled)
+                Toggle("SUGGESTIONS_SHOW_WHEN_SHARING".localized(path: path, table: table), isOn: $showWhenSharingEnabled)
+                Toggle("SUGGESTIONS_SHOW_WHEN_LISTENING".localized(path: path, table: table), isOn: $showWhenListeningEnabled)
             } header: {
-                Text("SUGGESTIONS_GROUP", tableName: table)
+                Text("SUGGESTIONS_GROUP".localized(path: path, table: table))
             } footer: {
-                Text("SUGGESTIONS_FOOTER", tableName: table)
+                Text("SUGGESTIONS_FOOTER".localized(path: path, table: table))
             }
             
             // MARK: Apple Intelligence and Siri App Access Section
             Section {
-                SLink("APP_CLIPS".localize(table: table), icon: "com.apple.graphic-icon.app-clips") {
+                SLink("APP_CLIPS".localized(path: path, table: table), icon: "com.apple.graphic-icon.app-clips") {
                     BundleControllerView("/System/Library/PrivateFrameworks/AssistantSettingsSupport.framework/AssistantSettingsSupport", controller: "AssistantAppClipSettingsController", title: "APP_CLIPS", table: table)
                 }
-                SLink("APPS_GROUP".localize(table: table), icon: "com.apple.graphic-icon.home-screen") {
-                    CustomList(title: "APPS".localize(table: table)) {
+                SLink("APPS_GROUP".localized(path: path, table: table), icon: "com.apple.graphic-icon.home-screen") {
+                    CustomList(title: "APPS".localized(path: path, table: table)) {
                         ForEach(groupedApps.keys.sorted(), id: \.self) { key in
                             ForEach(groupedApps[key]!, id: \.name) { app in
                                 SLink(app.name, icon: app.icon) {
@@ -181,16 +167,16 @@ struct SiriView: View {
                     }
                 }
             } header: {
-                Text(UIDevice.IntelligenceCapability ? "GM_APP_ACCESS_GROUP" : "APP_ACCESS_GROUP", tableName: UIDevice.IntelligenceCapability ? gmTable : table)
+                Text(UIDevice.IntelligenceCapability ? "GM_APP_ACCESS_GROUP".localized(path: path, table: gmTable) : "APP_ACCESS_GROUP".localized(path: path, table: table))
             } footer: {
                 if UIDevice.IntelligenceCapability {
-                    Text("\("GM_PRIVACY_FOOTER_TEXT".localize(table: gmTable)) [\("GM_PRIVACY_FOOTER_LINK_TEXT".localize(table: gmTable))](pref://intelligence)")
+                    Text("\("GM_PRIVACY_FOOTER_TEXT".localized(path: path, table: gmTable)) [\("GM_PRIVACY_FOOTER_LINK_TEXT".localized(path: path, table: gmTable))](pref://intelligence)")
                 }
             }
         }
         .toolbar {
             ToolbarItem(placement: .principal) {
-                Text(UIDevice.IntelligenceCapability ? "ASSISTANT_AND_GM".localize(table: gmTable) : "ASSISTANT".localize(table: table))
+                Text(UIDevice.IntelligenceCapability ? "ASSISTANT_AND_GM".localized(path: path, table: gmTable) : "ASSISTANT".localized(path: path, table: table))
                     .fontWeight(.semibold)
                     .font(.subheadline)
                     .opacity(frameY < 50.0 ? opacity : 0)

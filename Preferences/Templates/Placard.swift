@@ -23,6 +23,7 @@ struct Placard: View {
     var icon = ""
     var description = ""
     var lightOnly = false
+    var beta = false
     @Binding var frameY: Double
     @Binding var opacity: Double
     
@@ -33,7 +34,7 @@ struct Placard: View {
                     .scaleEffect(2.1)
                     .frame(width: 64, height: 64)
                 
-                if title == "Apple Intelligence & Siri" {
+                if beta {
                     ZStack {
                         RoundedRectangle(cornerRadius: 25.0)
                             .frame(width: 40, height: 15)
