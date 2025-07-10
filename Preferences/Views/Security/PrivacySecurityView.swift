@@ -13,6 +13,7 @@ struct PrivacySecurityView: View {
     @State private var opacity: Double = 0
     @State private var frameY: Double = 0
     let communication = "/System/Library/PrivateFrameworks/CommunicationSafetySettingsUI.framework"
+    let safety = "/System/Library/PreferenceBundles/DigitalSeparationSettings.bundle"
     let table = "Privacy"
     let psTable = "PrivacyAndSecuritySettings"
     
@@ -120,7 +121,7 @@ struct PrivacySecurityView: View {
             // MARK: Safety Check
             if UIDevice.iPhone {
                 Section {
-                    SLink("SAFETY_CHECK".localize(table: "DigitalSeparationUI"), icon: "com.apple.graphic-icon.safety-check") {
+                    SLink("SAFETY_CHECK".localized(path: safety), icon: "com.apple.graphic-icon.safety-check") {
                         SafetyCheckView()
                     }
                 } footer: {
