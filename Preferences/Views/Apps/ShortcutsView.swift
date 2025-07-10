@@ -8,35 +8,34 @@
 import SwiftUI
 
 struct ShortcutsView: View {
-    // Variables
     @State private var cloudSyncEnabled = true
     @State private var privateSharingEnabled = false
     @State private var showingSheet = false
-    let table = "ShortcutsSettings"
+    let path = "/System/Library/PreferenceBundles/ShortcutsSettings.bundle"
     
     var body: some View {
-        CustomList(title: "Shortcuts") {
+        CustomList(title: "Shortcuts".localized(path: path)) {
             // iCloud Sync
             Section {
-                Toggle("iCloud Sync".localize(table: table), isOn: $cloudSyncEnabled)
+                Toggle("iCloud Sync".localized(path: path), isOn: $cloudSyncEnabled)
             }
             
             // Private Sharing
             Section {
-                Toggle("Private Sharing".localize(table: table), isOn: $privateSharingEnabled)
+                Toggle("Private Sharing".localized(path: path), isOn: $privateSharingEnabled)
             } footer: {
-                Text("\("Allow receiving shortcuts directly from people in your contacts. Apple cannot verify the authenticity of shortcuts shared privately.".localize(table: table)) [\("About Shortcuts Sharing & Privacy…".localize(table: table))](pref://)", tableName: table)
+                Text("\("Allow receiving shortcuts directly from people in your contacts. Apple cannot verify the authenticity of shortcuts shared privately.".localized(path: path)) [\("About Shortcuts Sharing & Privacy…".localized(path: path))](pref://)")
             }
             
             // Advanced
             Section {
-                NavigationLink("Advanced".localize(table: table), destination: ShortcutsAdvancedView())
+                NavigationLink("Advanced".localized(path: path), destination: ShortcutsAdvancedView())
             }
             
             // Legal Notices
             Section {
-                NavigationLink("Legal Notices".localize(table: table)) {
-                    CustomList(title: "Legal Notices".localize(table: table)) {}
+                NavigationLink("Legal Notices".localized(path: path)) {
+                    CustomList(title: "Legal Notices".localized(path: path)) {}
                 }
             }
         }

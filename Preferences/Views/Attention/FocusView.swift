@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct FocusView: View {
-    @State private var shareAcrossDevicesEnabled = true
     let path = "/System/Library/PreferenceBundles/FocusSettings.bundle"
     let table = "FocusSettings!"
     
@@ -71,12 +70,15 @@ struct FocusView: View {
                 Text("FOCUS_MODES_FOOTER_TEXT".localized(path: path))
             }
             
+            // MARK: Share Across Devices
             Section {
-                Toggle("CLOUD_SYNCING".localized(path: path), isOn: $shareAcrossDevicesEnabled)
+                Toggle("CLOUD_SYNCING".localized(path: path), isOn: .constant(false))
+                    .disabled(true)
             } footer: {
-                Text("CLOUD_SYNCING_FOOTER_TEXT".localized(path: path))
+                Text("CLOUD_SYNCING_MISSING_ACCOUNT_TEXT".localized(path: path))
             }
             
+            // MARK: Focus Status
             Section {
                 SettingsLink("FOCUS_STATUS".localized(path: path), status: "OFF".localized(path: path), destination: EmptyView())
             } footer: {
