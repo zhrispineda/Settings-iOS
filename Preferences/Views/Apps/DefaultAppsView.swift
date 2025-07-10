@@ -10,30 +10,30 @@ import SwiftUI
 struct DefaultAppsView: View {
     @State private var frameY = Double()
     @State private var opacity = Double()
-    let table = "DefaultAppsSettingsUI"
+    let path = "/System/Library/PrivateFrameworks/DefaultAppsSettingsUI.framework"
     
     var body: some View {
-        CustomList(title: "Default Apps".localize(table: table)) {
-            Placard(title: "Default Apps".localize(table: table), color: .gray, iconColor: .white, icon: "checkmark.rectangle.stack.fill", description: "Placard Subtitle".localize(table: table), frameY: $frameY, opacity: $opacity)
+        CustomList(title: "Default Apps".localized(path: path)) {
+            Placard(title: "Default Apps".localized(path: path), color: .gray, iconColor: .white, icon: "checkmark.rectangle.stack.fill", description: "Placard Subtitle".localized(path: path), frameY: $frameY, opacity: $opacity)
             
             Section {
-                SettingsLink("Email".localize(table: table), status: "None".localize(table: table), destination: EmptyView())
-                SettingsLink("Messaging".localize(table: table), status: "Messages", destination: EmptyView())
-                SettingsLink("Calling".localize(table: table), status: "None".localize(table: table), destination: EmptyView())
+                SettingsLink("Email".localized(path: path), status: "None".localized(path: path), destination: EmptyView())
+                SettingsLink("Messaging".localized(path: path), status: "Messages", destination: EmptyView())
+                SettingsLink("Calling".localized(path: path), status: "None".localized(path: path), destination: EmptyView())
             }
             
             Section {
                 SettingsLink("Navigation", status: "Maps", destination: EmptyView())
-                SettingsLink("Browser App".localize(table: table), status: "Safari", destination: EmptyView())
-                SettingsLink("Translation", status: "None".localize(table: table), destination: EmptyView())
+                SettingsLink("Browser App".localized(path: path), status: "Safari", destination: EmptyView())
+                SettingsLink("Translation", status: "None".localized(path: path), destination: EmptyView())
             }
         }
         .toolbar {
             ToolbarItem(placement: .principal) {
-                Text("Default Apps", tableName: table)
+                Text("Default Apps".localized(path: path))
                     .fontWeight(.semibold)
                     .font(.subheadline)
-                    .opacity(frameY < 50.0 ? opacity : 0) // Only fade when passing the help section title at the top
+                    .opacity(frameY < 50.0 ? opacity : 0)
             }
         }
     }

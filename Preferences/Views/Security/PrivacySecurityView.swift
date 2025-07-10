@@ -12,6 +12,7 @@ struct PrivacySecurityView: View {
     @Environment(\.colorScheme) private var colorScheme
     @State private var opacity: Double = 0
     @State private var frameY: Double = 0
+    let communication = "/System/Library/PrivateFrameworks/CommunicationSafetySettingsUI.framework"
     let table = "Privacy"
     let psTable = "PrivacyAndSecuritySettings"
     
@@ -133,7 +134,7 @@ struct PrivacySecurityView: View {
                     BundleControllerView("CommunicationSafetySettings", controller: "CommunicationSafetySettings", title: "Sensitive Content Warning", table: "PrivacyAndSecuritySettings")
                 }
             } footer: {
-                Text(.init("Detect nude photos and videos before they are viewed on your Device, and receive guidance to help make a safe choice. Apple does not have access to the photos or videos. [Learn more…](%@)".localize(table: "CommunicationSafetySettingsUI", "https://support.apple.com/en-us/105071")))
+                Text(.init("Detect nude photos and videos before they are viewed on your Device, and receive guidance to help make a safe choice. Apple does not have access to the photos or videos. [Learn more…](%@)".localized(path: communication, "https://support.apple.com/en-us/105071")))
             }
             
             // MARK: Analytics & Improvements, Advertising
