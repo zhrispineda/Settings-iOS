@@ -42,18 +42,19 @@ struct BluetoothView: View {
     @State private var frameY = 0.0
     @State private var opacity = 0.0
     @State private var showingHelpSheet = false
+    let path = "/System/Library/PreferenceBundles/BluetoothSettings.bundle"
     let table = "Devices"
     
     var body: some View {
         CustomList {
             Section {
-                Placard(title: "BLUETOOTH".localize(table: table), icon: "com.apple.graphic-icon.bluetooth", description: "\("BLUETOOTHPLACARDINFO".localize(table: table)) [\("LEARN_MORE".localize(table: table))](pref://helpkit)", frameY: $frameY, opacity: $opacity)
-                Toggle("BLUETOOTH".localize(table: table), isOn: $bluetoothEnabled.animation())
+                Placard(title: "BLUETOOTH".localized(path: path, table: table), icon: "com.apple.graphic-icon.bluetooth", description: "\("BLUETOOTHPLACARDINFO".localized(path: path, table: table)) [\("LEARN_MORE".localized(path: path, table: table))](pref://helpkit)", frameY: $frameY, opacity: $opacity)
+                Toggle("BLUETOOTH".localized(path: path, table: table), isOn: $bluetoothEnabled.animation())
             } footer: {
                 if bluetoothEnabled {
-                    Text("DISCOVERABLE".localize(table: table, deviceName))
+                    Text("DISCOVERABLE".localized(path: path, table: table, deviceName))
                 } else {
-                    Text("POWER_OFF_WARNING", tableName: table)
+                    Text("POWER_OFF_WARNING".localized(path: path, table: table))
                 }
             }
             
@@ -66,13 +67,13 @@ struct BluetoothView: View {
                     }
                 } header: {
                     HStack {
-                        Text("DEVICES", tableName: table)
+                        Text("DEVICES".localized(path: path, table: table))
                         ProgressView()
                             .padding(.horizontal, 1)
                     }
                 } footer: {
                     if UIDevice.iPhone {
-                        Text(.init("APPLE_WATCH_FOOTER_TEXT".localize(table: table, "[\("APPLE_WATCH_APP_LINK".localize(table: table))](itms-watchs://)")))
+                        Text(.init("APPLE_WATCH_FOOTER_TEXT".localized(path: path, table: table,  "[\("APPLE_WATCH_APP_LINK".localized(path: path, table: table))](itms-watchs://)")))
                     }
                 }
             }
@@ -97,10 +98,10 @@ struct BluetoothView: View {
         }
         .toolbar {
             ToolbarItem(placement: .principal) {
-                Text("BLUETOOTH", tableName: table)
+                Text("BLUETOOTH".localized(path: path, table: table))
                     .fontWeight(.semibold)
                     .font(.subheadline)
-                    .opacity(frameY < 50.0 ? opacity : 0) // Only fade when passing the help section title at the top
+                    .opacity(frameY < 50.0 ? opacity : 0)
             }
         }
     }
