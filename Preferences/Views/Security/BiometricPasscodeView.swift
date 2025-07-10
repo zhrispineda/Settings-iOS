@@ -41,7 +41,6 @@ struct BiometricPasscodeView: View {
     let pay = "/System/Library/PreferenceBundles/PaymentContactlessSettingsUIPlugin.bundle"
     let payment = "Payment_Prefs"
     let facePrivacy = "/System/Library/OnBoardingBundles/com.apple.onboarding.faceid.bundle"
-    let touchID = "TouchID"
     let touchPrivacy = "/System/Library/OnBoardingBundles/com.apple.onboarding.touchid.bundle"
     
     var body: some View {

@@ -157,7 +157,6 @@
 		8388C0B22CD473DB00FA7D4C /* WellnessDashboard-Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8388C0B12CD473DB00FA7D4C /* WellnessDashboard-Localizable.xcstrings */; };
 		8388E5342CD034EB00A3066D /* Location Services.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8388E5332CD034EB00A3066D /* Location Services.xcstrings */; };
 		8388E5372CD0733400A3066D /* LocationServicesPrivacy.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8388E5362CD0733400A3066D /* LocationServicesPrivacy.xcstrings */; };
-		8388E5392CD0785800A3066D /* Dim-Sum.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8388E5382CD0785800A3066D /* Dim-Sum.xcstrings */; };
 		83898FCA2B8A8F210020C7BB /* HealthDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83898FC92B8A8F210020C7BB /* HealthDetailsView.swift */; };
 		83898FCD2B8A94BE0020C7BB /* HealthDetailsDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83898FCC2B8A94BE0020C7BB /* HealthDetailsDataView.swift */; };
 		83898FCF2B8A9A1F0020C7BB /* MedicalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83898FCE2B8A9A1F0020C7BB /* MedicalView.swift */; };
@@ -437,7 +436,6 @@
 		8388C0B12CD473DB00FA7D4C /* WellnessDashboard-Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "WellnessDashboard-Localizable.xcstrings"; sourceTree = "<group>"; };
 		8388E5332CD034EB00A3066D /* Location Services.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "Location Services.xcstrings"; sourceTree = "<group>"; };
 		8388E5362CD0733400A3066D /* LocationServicesPrivacy.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = LocationServicesPrivacy.xcstrings; sourceTree = "<group>"; };
-		8388E5382CD0785800A3066D /* Dim-Sum.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "Dim-Sum.xcstrings"; sourceTree = "<group>"; };
 		83898FC92B8A8F210020C7BB /* HealthDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDetailsView.swift; sourceTree = "<group>"; };
 		83898FCC2B8A94BE0020C7BB /* HealthDetailsDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDetailsDataView.swift; sourceTree = "<group>"; };
 		83898FCE2B8A9A1F0020C7BB /* MedicalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalView.swift; sourceTree = "<group>"; };
@@ -927,13 +925,6 @@
 			path = Language;
 			sourceTree = "<group>";
 		};
-		837BCF3A2CD30AC7009B1E33 /* PreferencesUI */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = PreferencesUI;
-			sourceTree = "<group>";
-		};
 		837C03052B7F1917004D6C71 /* Content & Privacy Restrictions */ = {
 			isa = PBXGroup;
 			children = (
@@ -1018,7 +1009,6 @@
 			isa = PBXGroup;
 			children = (
 				83F3611B2CD2E25700041A72 /* AppleAdvertising.xcstrings */,
-				8388E5382CD0785800A3066D /* Dim-Sum.xcstrings */,
 				8388E5332CD034EB00A3066D /* Location Services.xcstrings */,
 				8388E5362CD0733400A3066D /* LocationServicesPrivacy.xcstrings */,
 				830293B82D28889600222762 /* ProblemReporting.xcstrings */,
@@ -1154,7 +1144,6 @@
 				832877F22CAEE78C00013B0B /* GeneralSettingsUI */,
 				83ACE7202CD5BA270061528C /* HealthKit */,
 				8340F0C02D0D4CEC009E71C0 /* PreferenceBundles */,
-				837BCF3A2CD30AC7009B1E33 /* PreferencesUI */,
 				8388E5352CD072DD00A3066D /* PrivacySettingsUI */,
 				83E5420A2D0E2A4700741DFE /* SettingsCellularUI */,
 				83D0B1472CE2F9BA00DDEC69 /* Ungrouped */,
@@ -1520,7 +1509,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				83A3E68F2CAB9743006F4643 /* AccessibilityTitles.xcstrings in Resources */,
-				8388E5392CD0785800A3066D /* Dim-Sum.xcstrings in Resources */,
 				8314482B2CD95F6500FFEE51 /* HealthUI-Localizable.xcstrings in Resources */,
 				834F2BF32D6570FC00AD85CF /* SettingsSimulator.gif in Resources */,
 				8374886F2D0A6EB400865CA8 /* AssistantSettings-ExternalAIModel.xcstrings in Resources */,

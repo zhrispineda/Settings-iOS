@@ -10,25 +10,26 @@ import SwiftUI
 struct AppClipsView: View {
     @State private var confirmLocationEnabled = false
     var completeView = true
-    var permission = String()
+    var permission = ""
+    let path = "/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework"
     let table = "Dim-Sum"
     let locTable = "Location Services"
     
     var body: some View {
-        CustomList(title: "APP_CLIPS".localize(table: table)) {
+        CustomList(title: "APP_CLIPS".localized(path: path, table: table)) {
             Section {
                 if completeView {
-                    Toggle("CONFIRM_LOCATION".localize(table: table), isOn: $confirmLocationEnabled)
+                    Toggle("CONFIRM_LOCATION".localized(path: path, table: table), isOn: $confirmLocationEnabled)
                 }
             } footer: {
                 VStack(alignment: .leading) {
                     if completeView {
-                        Text("\("CONFIRM_LOCATION_FOOTER".localize(table: table))\n\n")
+                        Text("\("CONFIRM_LOCATION_FOOTER".localized(path: path, table: table))\n\n")
                     }
                     if permission == "MicrophoneSpecifierName" {
-                        Text("\("MICROPHONE_CLIPS_FOOTER".localize(table: table))\n")
+                        Text("\("MICROPHONE_CLIPS_FOOTER".localized(path: path, table: table))\n")
                     } else if permission == "BluetoothSharingSpecifierName" {
-                        Text("\("BT_PERIPHERAL_CLIPS_FOOTER".localize(table: table))\n")
+                        Text("\("BT_PERIPHERAL_CLIPS_FOOTER".localized(path: path, table: table))\n")
                     } else {
                         Text("\("GENERAL_EXPLANATION_CLIPS_ITEM".localize(table: locTable))\n")
                     }

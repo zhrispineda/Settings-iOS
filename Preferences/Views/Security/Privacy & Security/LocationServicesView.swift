@@ -24,7 +24,7 @@ struct LocationServicesView: View {
             
             if locationServicesEnabled {
                 Section {
-                    SLink("APP_CLIPS".localize(table: "Dim-Sum"), icon: "com.apple.graphic-icon.app-clips", status: "0") { AppClipsView()
+                    SLink("APP_CLIPS".localized(path: "/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework", table: "Dim-Sum"), icon: "com.apple.graphic-icon.app-clips", status: "0") { AppClipsView()
                     }
                     SLink("LOCATION_SHARING".localize(table: table), icon: "com.", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable)) {
                         LocationPermissionsDetailView(title: "LOCATION_SHARING")

@@ -27,6 +27,7 @@ struct AppPermissionsView: View {
     
     // Tables
     let table = "Privacy"
+    let privacy = "/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework"
     let dsTable = "Dim-Sum"
     let focusTable = "/System/Library/PreferenceBundles/FocusSettings.bundle"
     let healthTable = "HealthPrivacySettings"
@@ -110,11 +111,11 @@ struct AppPermissionsView: View {
                 case "App Clips":
                     switch appClipPermission {
                     case "BT_PERIPHERAL":
-                        Text("BT_PERIPHERAL_CLIPS_FOOTER", tableName: dsTable)
+                        Text("BT_PERIPHERAL_CLIPS_FOOTER".localized(path: privacy, table: dsTable))
                     case "CAMERA":
-                        Text("CAMERA_CLIPS_FOOTER", tableName: dsTable)
+                        Text("CAMERA_CLIPS_FOOTER".localized(path: privacy, table: dsTable))
                     case "MICROPHONE":
-                        Text("MICROPHONE_CLIPS_FOOTER", tableName: dsTable)
+                        Text("MICROPHONE_CLIPS_FOOTER".localized(path: privacy, table: dsTable))
                     default:
                         Text("App clips that have requested access to use \(appClipPermission) will appear here.")
                     }
