@@ -11,12 +11,12 @@ struct FollowUpView: View {
     @Environment(\.dismiss) var dismiss
     @Environment(StateManager.self) private var stateManager
     @AppStorage("FollowUpDismissed") private var followUpDismissed = false
+    let core = "/System/Library/PrivateFrameworks/CoreFollowUp.framework"
     let path = "/System/Library/PrivateFrameworks/SetupAssistant.framework"
-    let coreTable = "CoreFollowUp"
     let table = "FollowUp"
     
     var body: some View {
-        CustomList(title: "MULTI_FOLLOW_LIST_TITLE".localize(table: coreTable)) {
+        CustomList(title: "MULTI_FOLLOW_LIST_TITLE".localized(path: core)) {
             Section {
                 VStack(alignment: .leading, spacing: 5) {
                     Text("FOLLOWUP_TITLE".localized(path: path, table: table))

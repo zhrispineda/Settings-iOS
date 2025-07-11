@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		8306AE6C2D0665A400D1AE5D /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8306AE6B2D0665A400D1AE5D /* ViewExtensions.swift */; };
 		83076D042C7E754600BFFAFE /* BackgroundAppRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83076D032C7E754600BFFAFE /* BackgroundAppRefreshView.swift */; };
-		830976D12CDD1A0E0087F1A1 /* CoreFollowUp.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 830976D02CDD1A0E0087F1A1 /* CoreFollowUp.xcstrings */; };
 		830976D32CDD1B2F0087F1A1 /* FollowUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830976D22CDD1B2F0087F1A1 /* FollowUpView.swift */; };
 		8309893A2C44AA9C00535A8F /* UIDeviceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830989392C44AA9C00535A8F /* UIDeviceExtensions.swift */; };
 		830A87D02DA5895600789C20 /* BundleControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830A87CF2DA5895600789C20 /* BundleControllerView.swift */; };
@@ -205,7 +204,6 @@
 		83CB06972CA6283A00D7533A /* FormatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CB06962CA6283A00D7533A /* FormatsView.swift */; };
 		83CCB7282C7FAD96003F51ED /* DateTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CCB7272C7FAD96003F51ED /* DateTimeView.swift */; };
 		83CD1FAD2DB68F6C00366987 /* CameraSettings-CameraButton.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83CD1FAC2DB68F6C00366987 /* CameraSettings-CameraButton.xcstrings */; };
-		83CED5A82D6E5AAF00253D9C /* ZoomSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83CED5A72D6E5AAF00253D9C /* ZoomSettings.xcstrings */; };
 		83CED5AA2D6E5ACD00253D9C /* ZoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CED5A92D6E5ACD00253D9C /* ZoomView.swift */; };
 		83D0501A2DB6D343003D50AD /* ContinueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D050192DB6D343003D50AD /* ContinueButton.swift */; };
 		83D20AD12D875F6B000B26E6 /* DebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D20AD02D875F6B000B26E6 /* DebugView.swift */; };
@@ -268,7 +266,6 @@
 /* Begin PBXFileReference section */
 		8306AE6B2D0665A400D1AE5D /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		83076D032C7E754600BFFAFE /* BackgroundAppRefreshView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundAppRefreshView.swift; sourceTree = "<group>"; };
-		830976D02CDD1A0E0087F1A1 /* CoreFollowUp.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = CoreFollowUp.xcstrings; sourceTree = "<group>"; };
 		830976D22CDD1B2F0087F1A1 /* FollowUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowUpView.swift; sourceTree = "<group>"; };
 		830989392C44AA9C00535A8F /* UIDeviceExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeviceExtensions.swift; sourceTree = "<group>"; };
 		830A87CF2DA5895600789C20 /* BundleControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleControllerView.swift; sourceTree = "<group>"; };
@@ -470,7 +467,6 @@
 		83CC61982B7952B800DAF0C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83CCB7272C7FAD96003F51ED /* DateTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeView.swift; sourceTree = "<group>"; };
 		83CD1FAC2DB68F6C00366987 /* CameraSettings-CameraButton.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "CameraSettings-CameraButton.xcstrings"; sourceTree = "<group>"; };
-		83CED5A72D6E5AAF00253D9C /* ZoomSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = ZoomSettings.xcstrings; sourceTree = "<group>"; };
 		83CED5A92D6E5ACD00253D9C /* ZoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomView.swift; sourceTree = "<group>"; };
 		83D050192DB6D343003D50AD /* ContinueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinueButton.swift; sourceTree = "<group>"; };
 		83D20AD02D875F6B000B26E6 /* DebugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugView.swift; sourceTree = "<group>"; };
@@ -558,7 +554,6 @@
 			isa = PBXGroup;
 			children = (
 				832877D82CAD8C7100013B0B /* Accessibility.xcstrings */,
-				83CED5A72D6E5AAF00253D9C /* ZoomSettings.xcstrings */,
 			);
 			path = AccessibilitySettings;
 			sourceTree = "<group>";
@@ -1132,7 +1127,6 @@
 				832877DE2CAD987B00013B0B /* AppleIDSetup.xcstrings */,
 				835874CB2DB2AE81005E4D01 /* AuthKitUI.xcstrings */,
 				834565732CAAE673002BE49D /* CameraEditKit.xcstrings */,
-				830976D02CDD1A0E0087F1A1 /* CoreFollowUp.xcstrings */,
 				83A7E1592CBF047B0037F1FB /* FontSettings.xcstrings */,
 				832D84EF2CD2A9DD0075ECF0 /* HealthPrivacySettings.xcstrings */,
 				8314482C2CD9652A00FFEE51 /* HealthSettingsSpecifiers.xcstrings */,
@@ -1433,7 +1427,6 @@
 				836CDF932CB602B300B1C5B2 /* Restrictions.xcstrings in Resources */,
 				83A851BE2E0A4BD70041A3E6 /* SettingsApp.icon in Resources */,
 				8388C0B22CD473DB00FA7D4C /* WellnessDashboard-Localizable.xcstrings in Resources */,
-				83CED5A82D6E5AAF00253D9C /* ZoomSettings.xcstrings in Resources */,
 				839C6BEF2D9C6A3300F94C6E /* iPadOSReadMeSummary.html in Resources */,
 				8340F0C22D0D4D00009E71C0 /* PrivacyAndSecuritySettings.xcstrings in Resources */,
 				830F2B302CD97A05006F7F22 /* MessagesSettings.xcstrings in Resources */,
@@ -1453,7 +1446,6 @@
 				832877ED2CAEE55B00013B0B /* General.xcstrings in Resources */,
 				8360825D2D13B04E00902254 /* SettingsPhysical.gif in Resources */,
 				83DBCE062CCD957C00B33277 /* CameraSettings-TrueVideo.xcstrings in Resources */,
-				830976D12CDD1A0E0087F1A1 /* CoreFollowUp.xcstrings in Resources */,
 				833F0AD42B744D190036EAD2 /* Assets.xcassets in Resources */,
 				83A7E15A2CBF047B0037F1FB /* FontSettings.xcstrings in Resources */,
 				83ACE71F2CD5BA200061528C /* Localizable-DataTypes.xcstrings in Resources */,
@@ -1903,7 +1895,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1341;
 				DEVELOPMENT_ASSET_PATHS = "\"Preferences/Preview Content\"";
-				DEVELOPMENT_TEAM = 6Q4MRN2FMC;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Preferences/Info.plist;
