@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct ControlNearbyDevicesView: View {
-    // Variables
+    let path = "/System/Library/PreferenceBundles/AccessibilitySettings.bundle"
     let table = "Accessibility"
     
     var body: some View {
-        CustomList(title: "CONTROL_NEARBY_DEVICES".localize(table: table)) {
+        CustomList(title: "CONTROL_NEARBY_DEVICES".localized(path: path, table: table)) {
             Section {
-                Button("CONTROL_NEARBY_DEVICES_BUTTON".localize(table: table)) {}
+                Button("CONTROL_NEARBY_DEVICES_BUTTON".localized(path: path, table: table)) {}
             } footer: {
-                Text("CONTROL_NEARBY_DEVICES_FOOTER", tableName: table)
+                Text("CONTROL_NEARBY_DEVICES_FOOTER".localized(path: path, table: table))
             }
         }
     }

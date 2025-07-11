@@ -24,7 +24,6 @@
 		8319CE4D2B86D380007EC822 /* SafetyCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319CE4C2B86D380007EC822 /* SafetyCheckView.swift */; };
 		8319CE512B86DF8A007EC822 /* AppleAdvertisingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319CE502B86DF8A007EC822 /* AppleAdvertisingView.swift */; };
 		831C80412CA4998500306574 /* RecordSlomoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831C80402CA4998500306574 /* RecordSlomoView.swift */; };
-		832877D92CAD8C7100013B0B /* Accessibility.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 832877D82CAD8C7100013B0B /* Accessibility.xcstrings */; };
 		832877DD2CAD95C300013B0B /* AppleAccountUI.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 832877DC2CAD95C300013B0B /* AppleAccountUI.xcstrings */; };
 		832877DF2CAD987B00013B0B /* AppleIDSetup.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 832877DE2CAD987B00013B0B /* AppleIDSetup.xcstrings */; };
 		832877ED2CAEE55B00013B0B /* General.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 832877EC2CAEE55B00013B0B /* General.xcstrings */; };
@@ -267,7 +266,6 @@
 		8319CE4C2B86D380007EC822 /* SafetyCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyCheckView.swift; sourceTree = "<group>"; };
 		8319CE502B86DF8A007EC822 /* AppleAdvertisingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAdvertisingView.swift; sourceTree = "<group>"; };
 		831C80402CA4998500306574 /* RecordSlomoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSlomoView.swift; sourceTree = "<group>"; };
-		832877D82CAD8C7100013B0B /* Accessibility.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Accessibility.xcstrings; sourceTree = "<group>"; };
 		832877DC2CAD95C300013B0B /* AppleAccountUI.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AppleAccountUI.xcstrings; sourceTree = "<group>"; };
 		832877DE2CAD987B00013B0B /* AppleIDSetup.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AppleIDSetup.xcstrings; sourceTree = "<group>"; };
 		832877EC2CAEE55B00013B0B /* General.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = General.xcstrings; sourceTree = "<group>"; };
@@ -520,14 +518,6 @@
 				834AADB32E071D400034702B /* 26Phone.png */,
 			);
 			path = Assets;
-			sourceTree = "<group>";
-		};
-		832877E22CAD9BB900013B0B /* AccessibilitySettings */ = {
-			isa = PBXGroup;
-			children = (
-				832877D82CAD8C7100013B0B /* Accessibility.xcstrings */,
-			);
-			path = AccessibilitySettings;
 			sourceTree = "<group>";
 		};
 		832877F22CAEE78C00013B0B /* GeneralSettingsUI */ = {
@@ -1003,7 +993,6 @@
 		83AC4BE22C456E6B006C7D13 /* Localization */ = {
 			isa = PBXGroup;
 			children = (
-				832877E22CAD9BB900013B0B /* AccessibilitySettings */,
 				832877F22CAEE78C00013B0B /* GeneralSettingsUI */,
 				83D0B1472CE2F9BA00DDEC69 /* Ungrouped */,
 			);
@@ -1353,7 +1342,6 @@
 				83DB888F2CAC97BF008218E6 /* AppleID.xcstrings in Resources */,
 				83A160282DD7C9BF00CEFE0C /* WirelessModemSettings.xcstrings in Resources */,
 				833F0AD72B744D190036EAD2 /* Preview Assets.xcassets in Resources */,
-				832877D92CAD8C7100013B0B /* Accessibility.xcstrings in Resources */,
 				832877ED2CAEE55B00013B0B /* General.xcstrings in Resources */,
 				8360825D2D13B04E00902254 /* SettingsPhysical.gif in Resources */,
 				833F0AD42B744D190036EAD2 /* Assets.xcassets in Resources */,

@@ -23,7 +23,7 @@ struct AccessibilityView: View {
         CustomList(title: "Accessibility".localize(table: table)) {
             // MARK: Placard
             Section {
-                Placard(title: "PLACARD_TITLE".localize(table: table), icon: "com.apple.graphic-icon.accessibility", description: "\(UIDevice.iPhone ? "PLACARD_SUBTITLE_IPHONE".localize(table: table) : "PLACARD_SUBTITLE_IPAD".localize(table: table)) [\("PLACARD_LEARN_MORE".localize(table: table))](pref://helpkit)", frameY: $frameY, opacity: $opacity)
+                Placard(title: "PLACARD_TITLE".localized(path: settings, table: table), icon: "com.apple.graphic-icon.accessibility", description: "\(UIDevice.iPhone ? "PLACARD_SUBTITLE_IPHONE".localized(path: settings, table: table) : "PLACARD_SUBTITLE_IPAD".localized(path: settings, table: table)) [\("PLACARD_LEARN_MORE".localized(path: settings, table: table))](pref://helpkit)", frameY: $frameY, opacity: $opacity)
             }
             
             // MARK: Vision
@@ -144,14 +144,14 @@ struct AccessibilityView: View {
             // MARK: Speech
             Section {
                 // Live Speech
-                SLink("LIVE_SPEECH_TITLE".localized(path: settings, table: table), icon: "com.apple.AccessibilityUIServer.live.speech", status: "OFF".localize(table: table)) {
+                SLink("LIVE_SPEECH_TITLE".localized(path: settings, table: table), icon: "com.apple.AccessibilityUIServer.live.speech", status: "OFF".localized(path: settings, table: table)) {
                     BundleControllerView("AccessibilitySettings", controller: "LiveSpeechController", title: "LIVE_SPEECH_TITLE", table: titleTable)
                 }
                 if !UIDevice.IsSimulator {
                     // Personal Voice
                     SLink("PERSONAL_VOICE_TITLE".localized(path: settings, table: table), icon: "com.apple.AccessibilityUIServer.personal.voice") {}
                     // Vocal Shortcuts
-                    SLink("ADAPTIVE_VOICE_SHORTCUTS_TITLE".localized(path: settings, table: table), icon: "com.apple.AccessibilityUIServer.vocal.shortcuts", status: "OFF".localize(table: table)) {}
+                    SLink("ADAPTIVE_VOICE_SHORTCUTS_TITLE".localized(path: settings, table: table), icon: "com.apple.AccessibilityUIServer.vocal.shortcuts", status: "OFF".localized(path: settings, table: table)) {}
                 }
             } header: {
                 Text("SPEECH_HEADING".localized(path: settings, table: table))
@@ -203,10 +203,10 @@ struct AccessibilityView: View {
         }
         .toolbar {
             ToolbarItem(placement: .principal) {
-                Text("ROOT_LEVEL_TITLE", tableName: table)
+                Text("ROOT_LEVEL_TITLE".localized(path: settings, table: table))
                     .fontWeight(.semibold)
                     .font(.subheadline)
-                    .opacity(frameY < 50.0 ? opacity : 0) // Only fade when passing the help section title at the top
+                    .opacity(frameY < 50.0 ? opacity : 0)
             }
         }
     }
