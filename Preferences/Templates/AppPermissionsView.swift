@@ -32,6 +32,7 @@ struct AppPermissionsView: View {
     let focusTable = "/System/Library/PreferenceBundles/FocusSettings.bundle"
     let healthTable = "HealthPrivacySettings"
     let sensorkit = "/System/Library/PreferenceBundles/Privacy/SensorKitPrivacySettings.bundle"
+    let wellness = "/System/Library/PrivateFrameworks/HealthToolbox.framework"
     let wellTable = "WellnessDashboard-Localizable"
     var body: some View {
         CustomList(title: permission.localized(path: privacy, table: table)) {
@@ -61,21 +62,21 @@ struct AppPermissionsView: View {
                 }
                 
                 Section {
-                    Text("APPS_NONE", tableName: wellTable)
+                    Text("APPS_NONE".localized(path: wellness, table: wellTable))
                         .foregroundStyle(.secondary)
                 } header: {
-                    Text("APPS_LIST_HEADER", tableName: wellTable)
+                    Text("APPS_LIST_HEADER".localized(path: wellness, table: wellTable))
                 } footer: {
-                    Text("APPS_LIST_EXPLANATION", tableName: wellTable)
+                    Text("APPS_LIST_EXPLANATION".localized(path: wellness, table: wellTable))
                 }
                 
                 Section {
-                    Text("NONE", tableName: wellTable)
+                    Text("NONE".localized(path: wellness, table: wellTable))
                         .foregroundStyle(.secondary)
                 } header: {
-                    Text("RESEARCH_STUDIES_LIST_HEADER", tableName: wellTable)
+                    Text("RESEARCH_STUDIES_LIST_HEADER".localized(path: wellness, table: wellTable))
                 } footer: {
-                    Text("RESEARCH_STUDIES_LIST_EXPLANATION", tableName: wellTable)
+                    Text("RESEARCH_STUDIES_LIST_EXPLANATION".localized(path: wellness, table: wellTable))
                 }
             case "MOTION":
                 Section {
@@ -155,6 +156,12 @@ struct AppPermissionsView: View {
 #Preview("Focus") {
     NavigationStack {
         AppPermissionsView(permission: "FOCUS")
+    }
+}
+
+#Preview("Health") {
+    NavigationStack {
+        AppPermissionsView(permission: "HEALTH")
     }
 }
 

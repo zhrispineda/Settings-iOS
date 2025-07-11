@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct HealthView: View {
-    // Variables
     let table = "HealthUI-Localizable"
     let wellTable = "WellnessDashboard-Localizable"
+    let wellness = "/System/Library/PrivateFrameworks/HealthToolbox.framework"
     let specTable = "HealthSettingsSpecifiers"
     
     var body: some View {
@@ -18,9 +18,9 @@ struct HealthView: View {
             PermissionsView(appName: "HEALTH".localize(table: table), cellular: false, location: false, cellularEnabled: .constant(false))
             
             Section {
-                NavigationLink("HEALTH_PROFILE_TITLE".localize(table: wellTable), destination: HealthDetailsView())
+                NavigationLink("HEALTH_PROFILE_TITLE".localized(path: wellness, table: wellTable), destination: HealthDetailsView())
                 if UIDevice.iPhone {
-                    NavigationLink("MEDICAL_ID".localize(table: wellTable), destination: MedicalView())
+                    NavigationLink("MEDICAL_ID".localized(path: wellness, table: wellTable), destination: MedicalView())
                 }
             } header: {
                 Text("DETAILS_GROUP_TITLE", tableName: specTable)

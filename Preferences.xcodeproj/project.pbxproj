@@ -142,7 +142,6 @@
 		838273A52B7FD4CF000F4228 /* AppRestrictionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838273A42B7FD4CF000F4228 /* AppRestrictionsView.swift */; };
 		8383CD082C9C842A00BA06A0 /* SystemFontsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8383CD072C9C842A00BA06A0 /* SystemFontsDetailView.swift */; };
 		8383FDFA2E0370760021D274 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8383FDF92E0370760021D274 /* UIImageExtensions.swift */; };
-		8388C0B22CD473DB00FA7D4C /* WellnessDashboard-Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8388C0B12CD473DB00FA7D4C /* WellnessDashboard-Localizable.xcstrings */; };
 		8388E5342CD034EB00A3066D /* Location Services.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8388E5332CD034EB00A3066D /* Location Services.xcstrings */; };
 		8388E5372CD0733400A3066D /* LocationServicesPrivacy.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8388E5362CD0733400A3066D /* LocationServicesPrivacy.xcstrings */; };
 		83898FCA2B8A8F210020C7BB /* HealthDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83898FC92B8A8F210020C7BB /* HealthDetailsView.swift */; };
@@ -397,7 +396,6 @@
 		838273A42B7FD4CF000F4228 /* AppRestrictionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRestrictionsView.swift; sourceTree = "<group>"; };
 		8383CD072C9C842A00BA06A0 /* SystemFontsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemFontsDetailView.swift; sourceTree = "<group>"; };
 		8383FDF92E0370760021D274 /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
-		8388C0B12CD473DB00FA7D4C /* WellnessDashboard-Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "WellnessDashboard-Localizable.xcstrings"; sourceTree = "<group>"; };
 		8388E5332CD034EB00A3066D /* Location Services.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "Location Services.xcstrings"; sourceTree = "<group>"; };
 		8388E5362CD0733400A3066D /* LocationServicesPrivacy.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = LocationServicesPrivacy.xcstrings; sourceTree = "<group>"; };
 		83898FC92B8A8F210020C7BB /* HealthDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDetailsView.swift; sourceTree = "<group>"; };
@@ -1107,7 +1105,6 @@
 				837D24282CD0293C00274D42 /* ScreenTimeSettingsUI.xcstrings */,
 				834CA6E92D62AE93006792AE /* UserNotificationsKit.xcstrings */,
 				83AB1D602D5E7656005F0B63 /* UserNotificationsUIKit.xcstrings */,
-				8388C0B12CD473DB00FA7D4C /* WellnessDashboard-Localizable.xcstrings */,
 				832877FA2CAEEA7E00013B0B /* WiFiKitUILocalizableStrings.xcstrings */,
 				83A160272DD7C9BF00CEFE0C /* WirelessModemSettings.xcstrings */,
 			);
@@ -1390,7 +1387,6 @@
 				834565762CAAE7B8002BE49D /* CameraSettings-CinematicAudio.xcstrings in Resources */,
 				836CDF932CB602B300B1C5B2 /* Restrictions.xcstrings in Resources */,
 				83A851BE2E0A4BD70041A3E6 /* SettingsApp.icon in Resources */,
-				8388C0B22CD473DB00FA7D4C /* WellnessDashboard-Localizable.xcstrings in Resources */,
 				839C6BEF2D9C6A3300F94C6E /* iPadOSReadMeSummary.html in Resources */,
 				830F2B302CD97A05006F7F22 /* MessagesSettings.xcstrings in Resources */,
 				83D241AD2D5CEC87002061F4 /* NotificationsSettings.xcstrings in Resources */,
