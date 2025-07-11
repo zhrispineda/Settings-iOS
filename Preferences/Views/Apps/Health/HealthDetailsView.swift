@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct HealthDetailsView: View {
-    // Variables
+    let path = "/System/Library/Frameworks/HealthKit.framework"
+    let health = "/System/Library/PrivateFrameworks/HealthUI.framework"
     let table = "WellnessDashboard-Localizable"
     let dataTable = "Localizable-DataTypes"
     
@@ -26,19 +27,23 @@ struct HealthDetailsView: View {
                 LabeledContent("FIRST_NAME".localize(table: table), value: "FIRST_NAME_NOT_SET".localize(table: table))
                 LabeledContent("LAST_NAME".localize(table: table), value: "LAST_NAME_NOT_SET".localize(table: table))
                 SettingsLink("BIRTHDATE".localize(table: table), status: "BIRTHDATE_NOT_SET".localize(table: table), destination: HealthDetailsDataView(title: "BIRTHDATE".localize(table: table)))
-                SettingsLink("BIOLOGICAL_SEX".localize(table: dataTable), status: "BIOLOGICAL_SEX_NOT_SET".localize(table: table), destination: HealthDetailsDataView(title: "BIOLOGICAL_SEX".localize(table: dataTable)))
-                SettingsLink("BLOOD_TYPE".localize(table: dataTable), status: "BLOOD_TYPE_NOT_SET".localize(table: table), destination: HealthDetailsDataView(title: "BLOOD_TYPE_TITLE_EMBEDDED".localize(table: dataTable)))
-                SettingsLink("FITZPATRICK_SKIN_TYPE".localize(table: dataTable), status: "FITZPATRICK_SKIN_TYPE_NOT_SET".localize(table: table), destination: HealthDetailsDataView(title: "FITZPATRICK_SKIN_TYPE"))
+                SettingsLink("BIOLOGICAL_SEX".localized(path: path, table: dataTable), status: "BIOLOGICAL_SEX_NOT_SET".localize(table: table), destination: HealthDetailsDataView(title: "BIOLOGICAL_SEX".localized(path: path, table: dataTable)))
+                SettingsLink("BLOOD_TYPE".localized(path: path, table: dataTable), status: "BLOOD_TYPE_NOT_SET".localize(table: table), destination: HealthDetailsDataView(title: "BLOOD_TYPE_TITLE_EMBEDDED".localized(path: path, table: dataTable)))
+                SettingsLink("FITZPATRICK_SKIN_TYPE".localized(path: path, table: dataTable), status: "FITZPATRICK_SKIN_TYPE_NOT_SET".localize(table: table), destination: HealthDetailsDataView(title: "FITZPATRICK_SKIN_TYPE"))
             }
             
             Section {
-                SettingsLink("WHEELCHAIR_USE_TITLE_EMBEDDED".localize(table: dataTable), status: "WHEELCHAIR_USE_NOT_SET".localize(table: table), destination: HealthDetailsDataView(title: "WHEELCHAIR_USE_TITLE_EMBEDDED".localize(table: dataTable)))
+                SettingsLink("WHEELCHAIR_USE_TITLE_EMBEDDED".localized(path: path, table: dataTable), status: "WHEELCHAIR_USE_NOT_SET".localize(table: table), destination: HealthDetailsDataView(title: "WHEELCHAIR_USE_TITLE_EMBEDDED".localize(table: dataTable)))
             } footer: {
                 if UIDevice.iPhone {
                     Text("WHEELCHAIR_USE_COREMOTION_TEXT_IPHONE", tableName: table)
                 } else if UIDevice.iPad {
                     Text("WHEELCHAIR_USE_COREMOTION_TEXT_IPAD", tableName: table)
                 }
+            }
+            
+            Section {
+                Button("HEALTH_DETAILS_ADD_PREGNANCY".localized(path: health, table: "HealthUI-Localizable-Pregnancy")) {}
             }
             
             Section {

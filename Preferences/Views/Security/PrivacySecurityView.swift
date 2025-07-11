@@ -16,7 +16,7 @@ struct PrivacySecurityView: View {
     let privacy = "/System/Library/PreferenceBundles/PrivacyAndSecuritySettings.bundle"
     
     var body: some View {
-        CustomList(title: "back".localize(table: "AXUILocalizedStrings")) {
+        CustomList(title: "Privacy & Security".localized(path: privacy)) {
             // MARK: Placard
             Placard(title: "Privacy & Security".localized(path: privacy), icon: "com.apple.graphic-icon.privacy", description: "Placard Subtitle".localized(path: privacy), frameY: $frameY, opacity: $opacity)
             
@@ -33,7 +33,7 @@ struct PrivacySecurityView: View {
             // MARK: App Permissions
             Section {
                 SLink("Calendars".localized(path: privacy), icon: "com.apple.mobilecal", subtitle: "None".localized(path: privacy)) {
-                    BundleControllerView("/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework/PrivacySettingsUI", controller: "PUICalendarPrivacyController", title: "CALENDARS")
+                    BundleControllerView("/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework/PrivacySettingsUI", controller: "PUICalendarPrivacyController", title: "Calendars".localized(path: privacy))
                 }
                 SLink("Contacts".localized(path: privacy), icon: "com.apple.MobileAddressBook", subtitle: "None".localized(path: privacy)) {
                     BundleControllerView("/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework/PrivacySettingsUI", controller: "PUIContactsPrivacyController", title: "Contacts".localized(path: privacy))
@@ -73,7 +73,7 @@ struct PrivacySecurityView: View {
             Section {
                 if !UIDevice.IsSimulator {
                     SLink("Accessories".localized(path: privacy), icon: "com.apple.graphic-icon.accessories", status: "0") {
-                        BundleControllerView("/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework/PrivacySettingsUI", controller: "PUIAccessoriesController", title: "ACCESSORY_SETUP")
+                        BundleControllerView("/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework/PrivacySettingsUI", controller: "PUIAccessoriesController", title: "Accessories".localized(path: privacy))
                     }
                 }
                 SLink("Bluetooth".localized(path: privacy), icon: "com.apple.graphic-icon.bluetooth", status: "0") {
@@ -184,7 +184,7 @@ struct PrivacySecurityView: View {
                 Text("Privacy & Security".localized(path: privacy))
                     .fontWeight(.semibold)
                     .font(.subheadline)
-                    .opacity(frameY < 50.0 ? opacity : 0) // Only fade when passing the help section title at the top
+                    .opacity(frameY < 50.0 ? opacity : 0)
             }
         }
     }
