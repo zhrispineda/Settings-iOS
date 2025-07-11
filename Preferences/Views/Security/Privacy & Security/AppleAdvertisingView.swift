@@ -9,11 +9,12 @@ import SwiftUI
 
 struct AppleAdvertisingView: View {
     @State private var showingPrivacySheet = false
+    let privacy = "/System/Library/PreferenceBundles/PrivacyAndSecuritySettings.bundle"
     let path = "/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework"
     let table = "AppleAdvertising"
     
     var body: some View {
-        CustomList(title: "ADVERTISING".localize(table: "Privacy"), topPadding: true) {
+        CustomList(title: "Apple Advertising".localized(path: privacy), topPadding: true) {
             Section {} header: {
                 Text("APPLE_DELIVERED_ADVERTISING".localized(path: path, table: table))
             } footer: {

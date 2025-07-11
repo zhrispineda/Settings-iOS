@@ -8,65 +8,63 @@
 import SwiftUI
 
 struct PrivacySecurityView: View {
-    // Variables
     @Environment(\.colorScheme) private var colorScheme
     @State private var opacity: Double = 0
     @State private var frameY: Double = 0
     let communication = "/System/Library/PrivateFrameworks/CommunicationSafetySettingsUI.framework"
     let safety = "/System/Library/PreferenceBundles/DigitalSeparationSettings.bundle"
-    let table = "Privacy"
-    let psTable = "PrivacyAndSecuritySettings"
+    let privacy = "/System/Library/PreferenceBundles/PrivacyAndSecuritySettings.bundle"
     
     var body: some View {
         CustomList(title: "back".localize(table: "AXUILocalizedStrings")) {
             // MARK: Placard
-            Placard(title: "PRIVACY".localize(table: table), icon: "com.apple.graphic-icon.privacy", description: "Placard Subtitle".localize(table: psTable), frameY: $frameY, opacity: $opacity)
+            Placard(title: "Privacy & Security".localized(path: privacy), icon: "com.apple.graphic-icon.privacy", description: "Placard Subtitle".localized(path: privacy), frameY: $frameY, opacity: $opacity)
             
             // MARK: Location Services, Tracking Section
             Section {
-                SLink("LOCATION_SERVICES".localize(table: table), icon: "com.apple.graphic-icon.location", subtitle: "CONTACTS_NO_ACCESS_AUTHORIZATION".localize(table: table)) {
+                SLink("Location Services".localized(path: privacy), icon: "com.apple.graphic-icon.location", subtitle: "None".localized(path: privacy)) {
                     LocationServicesView()
                 }
-                SLink("TRACKERS".localize(table: table), icon: "com.apple.graphic-icon.app-tracking-transparency", status: "0") {
+                SLink("Tracking".localized(path: privacy), icon: "com.apple.graphic-icon.app-tracking-transparency", status: "0") {
                     TrackingView()
                 }
             }
             
             // MARK: App Permissions
             Section {
-                SLink("CALENDARS".localize(table: table), icon: "com.apple.mobilecal", subtitle: "CALENDARS_NO_ACCESS_AUTHORIZATION".localize(table: table)) {
-                    BundleControllerView("/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework/PrivacySettingsUI", controller: "PUICalendarPrivacyController", title: "CALENDARS", table: table)
+                SLink("Calendars".localized(path: privacy), icon: "com.apple.mobilecal", subtitle: "None".localized(path: privacy)) {
+                    BundleControllerView("/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework/PrivacySettingsUI", controller: "PUICalendarPrivacyController", title: "CALENDARS")
                 }
-                SLink("CONTACTS".localize(table: table), icon: "com.apple.MobileAddressBook", subtitle: "CONTACTS_NO_ACCESS_AUTHORIZATION".localize(table: table)) {
-                    BundleControllerView("/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework/PrivacySettingsUI", controller: "PUIContactsPrivacyController", title: "CONTACTS", table: table)
+                SLink("Contacts".localized(path: privacy), icon: "com.apple.MobileAddressBook", subtitle: "None".localized(path: privacy)) {
+                    BundleControllerView("/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework/PrivacySettingsUI", controller: "PUIContactsPrivacyController", title: "Contacts".localized(path: privacy))
                 }
-                SLink("FILEACCESS".localize(table: table), icon: "com.apple.DocumentsApp", subtitle: "None".localize(table: psTable)) {
-                    BundleControllerView("/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework/PrivacySettingsUI", controller: "PUIFileAccessController", title: "FILEACCESS", table: table)
+                SLink("Files & Folders".localized(path: privacy), icon: "com.apple.DocumentsApp", subtitle: "None".localized(path: privacy)) {
+                    BundleControllerView("/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework/PrivacySettingsUI", controller: "PUIFileAccessController", title: "Files & Folders".localized(path: privacy))
                 }
-                SLink("FOCUS".localize(table: table), icon: "com.apple.graphic-icon.focus", subtitle: "None".localize(table: psTable)) {
+                SLink("Focus".localized(path: privacy), icon: "com.apple.graphic-icon.focus", subtitle: "None".localized(path: privacy)) {
                     AppPermissionsView(permission: "FOCUS")
                 }
-                SLink("HEALTH".localize(table: table), icon: "com.apple.Health", subtitle: "None".localize(table: psTable)) {
+                SLink("Health".localized(path: privacy), icon: "com.apple.Health", subtitle: "None".localized(path: privacy)) {
                     AppPermissionsView(permission: "HEALTH", bundle: "healthapp")
                 }
-                SLink("WILLOW".localize(table: table), icon: "com.apple.Home.HomeControlService", subtitle: "None".localize(table: psTable)) {
+                SLink("Home Accessories".localized(path: privacy), icon: "com.apple.Home.HomeControlService", subtitle: "None".localized(path: privacy)) {
                     AppPermissionsView(permission: "WILLOW")
                 }
-                SLink("MEDIALIBRARY".localize(table: table), icon: "com.apple.Music", subtitle: "None".localize(table: psTable)) {
+                SLink("Media & Apple Music".localized(path: privacy), icon: "com.apple.Music", subtitle: "None".localized(path: privacy)) {
                     AppPermissionsView(permission: "MEDIALIBRARY")
                 }
-                SLink("PASSKEYS".localize(table: table), icon: "com.apple.graphic-icon.person-passkey", subtitle: "None".localize(table: psTable)) {
+                SLink("Passkeys Access for Web Browsers".localized(path: privacy), icon: "com.apple.graphic-icon.person-passkey", subtitle: "None".localized(path: privacy)) {
                     AppPermissionsView(permission: "PASSKEYS")
                 }
-                SLink("PHOTOS".localize(table: table), icon: "com.apple.mobileslideshow", subtitle: "PHOTOS_NO_ACCESS_AUTHORIZATION".localize(table: table)) {
-                    BundleControllerView("/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework/PrivacySettingsUI", controller: "PUIPhotosPrivacyController", title: "PHOTOS", table: table)
+                SLink("Photos".localized(path: privacy), icon: "com.apple.mobileslideshow", subtitle: "None".localized(path: privacy)) {
+                    BundleControllerView("/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework/PrivacySettingsUI", controller: "PUIPhotosPrivacyController", title: "Photos".localized(path: privacy))
                 }
-                SLink("REMINDERS".localize(table: table), icon: "com.apple.reminders", subtitle: "CONTACTS_NO_ACCESS_AUTHORIZATION".localize(table: table)) {
+                SLink("Reminders".localized(path: privacy), icon: "com.apple.reminders", subtitle: "None".localized(path: privacy)) {
                     AppPermissionsView(permission: "REMINDERS")
                 }
                 if UIDevice.iPhone {
-                    SLink("WALLET".localize(table: table), icon: "com.apple.Passbook", subtitle: "CONTACTS_NO_ACCESS_AUTHORIZATION".localize(table: table)) {
-                        BundleControllerView("/System/Library/PreferenceBundles/Privacy/WalletPrivacySettings.bundle/WalletPrivacySettings", controller: "WalletPrivacySettings.WalletPrivacySettingsController", title: "WALLET", table: table)
+                    SLink("Wallet".localized(path: privacy), icon: "com.apple.Passbook", subtitle: "None".localized(path: privacy)) {
+                        BundleControllerView("/System/Library/PreferenceBundles/Privacy/WalletPrivacySettings.bundle/WalletPrivacySettings", controller: "WalletPrivacySettings.WalletPrivacySettingsController", title: "Wallet".localized(path: privacy))
                     }
                 }
             }
@@ -74,36 +72,36 @@ struct PrivacySecurityView: View {
             // MARK: Sensor Permissions
             Section {
                 if !UIDevice.IsSimulator {
-                    SLink("ACCESSORY_SETUP".localize(table: table), icon: "com.apple.graphic-icon.accessories", status: "0") {
-                        BundleControllerView("/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework/PrivacySettingsUI", controller: "PUIAccessoriesController", title: "ACCESSORY_SETUP", table: table)
+                    SLink("Accessories".localized(path: privacy), icon: "com.apple.graphic-icon.accessories", status: "0") {
+                        BundleControllerView("/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework/PrivacySettingsUI", controller: "PUIAccessoriesController", title: "ACCESSORY_SETUP")
                     }
                 }
-                SLink("BT_PERIPHERAL".localize(table: table), icon: "com.apple.graphic-icon.bluetooth", status: "0") {
+                SLink("Bluetooth".localized(path: privacy), icon: "com.apple.graphic-icon.bluetooth", status: "0") {
                     AppPermissionsView(permission: "BT_PERIPHERAL")
                 }
-                SLink("CAMERA".localize(table: table), icon: "com.apple.graphic-icon.camera", status: "0") {
+                SLink("Camera".localized(path: privacy), icon: "com.apple.graphic-icon.camera", status: "0") {
                     AppPermissionsView(permission: "CAMERA")
                 }
-                SLink("Critical Messages".localize(table: psTable), icon: "com.apple.graphic-icon.critical-messages", status: "0") {
-                    BundleControllerView("/System/Library/PrivateFrameworks/MessagesSettingsUI.framework/MessagesSettingsUI", controller: "CKSettingsCriticalMessagesViewController", title: "Critical Messages", table: psTable)
+                SLink("Critical Messages".localized(path: privacy), icon: "com.apple.graphic-icon.critical-messages", status: "0") {
+                    BundleControllerView("/System/Library/PrivateFrameworks/MessagesSettingsUI.framework/MessagesSettingsUI", controller: "CKSettingsCriticalMessagesViewController", title: "Critical Messages".localized(path: privacy))
                 }
-                SLink("LOCAL_NETWORK".localize(table: table), icon: "com.apple.graphic-icon.local-network", status: "0") {
-                    BundleControllerView("/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework/PrivacySettingsUI", controller: "PUINetworkController", title: "LOCAL_NETWORK", table: table)
+                SLink("Local Network".localized(path: privacy), icon: "com.apple.graphic-icon.local-network", status: "0") {
+                    BundleControllerView("/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework/PrivacySettingsUI", controller: "PUINetworkController", title: "LOCAL_NETWORK")
                 }
-                SLink("MICROPHONE".localize(table: table), icon: "com.apple.graphic-icon.microphone-access", status: "0") {
+                SLink("Microphone".localized(path: privacy), icon: "com.apple.graphic-icon.microphone-access", status: "0") {
                     AppPermissionsView(permission: "MICROPHONE")
                 }
-                SLink("MOTION".localize(table: table), icon: "com.apple.graphic-icon.motion-and-fitness", status: "0") {
+                SLink("Motion".localized(path: privacy), icon: "com.apple.graphic-icon.motion-and-fitness", status: "0") {
                     AppPermissionsView(permission: "MOTION")
                 }
-                SLink("NEARBY_INTERACTIONS".localize(table: table), icon: "com.apple.graphic-icon.nearby-interactions", status: "0") {
+                SLink("Nearby Interactions".localized(path: privacy), icon: "com.apple.graphic-icon.nearby-interactions", status: "0") {
                     AppPermissionsView(permission: "NEARBY_INTERACTIONS")
                 }
                 if UIDevice.iPhone {
-                    SLink("Research Sensor & Usage Data".localize(table: psTable), icon: "com.apple.graphic-icon.research-sensor-and-usage-data", status: "0") {
+                    SLink("Research Sensor & Usage Data".localized(path: privacy), icon: "com.apple.graphic-icon.research-sensor-and-usage-data", status: "0") {
                         AppPermissionsView(permission: "Research Sensor & Usage Data", bundle: "sensorusage")
                     }
-                    SLink("SPEECH_RECOGNITION".localize(table: table), icon: "com.apple.graphic-icon.waveform", status: "0") {
+                    SLink("Speech Recognition".localized(path: privacy), icon: "com.apple.graphic-icon.waveform", status: "0") {
                         AppPermissionsView(permission: "SPEECH_RECOGNITION")
                     }
                 }
@@ -112,7 +110,7 @@ struct PrivacySecurityView: View {
             // MARK: Journaling Suggestions
             if UIDevice.iPhone && !UIDevice.IsSimulator {
                 Section {
-                    SLink("JOURNALING_SUGGESTIONS".localize(table: table), icon: "com.apple.graphic-icon.journaling-suggestions") {
+                    SLink("Journaling Suggestions".localized(path: privacy), icon: "com.apple.graphic-icon.journaling-suggestions") {
                         JournalingSuggestionsView()
                     }
                 }
@@ -125,27 +123,27 @@ struct PrivacySecurityView: View {
                         SafetyCheckView()
                     }
                 } footer: {
-                    Text("Protect your personal safety by staying aware of which people, apps, and devices have access to your information.", tableName: psTable)
+                    Text("Protect your personal safety by staying aware of which people, apps, and devices have access to your information.".localized(path: privacy))
                 }
             }
             
             // MARK: Sensitive Content Warning
             Section {
-                SLink("Sensitive Content Warning".localize(table: "PrivacyAndSecuritySettings"), icon: "com.apple.graphic-icon.sensitive-media-check", status: "Off".localize(table: table)) {
-                    BundleControllerView("CommunicationSafetySettings", controller: "CommunicationSafetySettings", title: "Sensitive Content Warning", table: "PrivacyAndSecuritySettings")
+                SLink("Sensitive Content Warning".localized(path: privacy), icon: "com.apple.graphic-icon.sensitive-media-check", status: "Off".localized(path: privacy)) {
+                    BundleControllerView("CommunicationSafetySettings", controller: "CommunicationSafetySettings", title: "Sensitive Content Warning".localized(path: privacy))
                 }
             } footer: {
-                Text(.init("Detect nude photos and videos before they are viewed on your Device, and receive guidance to help make a safe choice. Apple does not have access to the photos or videos. [Learn more…](%@)".localized(path: communication, "https://support.apple.com/en-us/105071")))
+                Text(.init("Detect nude photos and videos before they are viewed on your Device, and receive guidance to help make a safe choice. Apple does not have access to the photos or videos. [Learn more…](%@)".localized(path: communication, "https://support.apple.com/105071")))
             }
             
             // MARK: Analytics & Improvements, Advertising
             Section {
-                SLink("PROBLEM_REPORTING".localize(table: table), icon: "com.apple.graphic-icon.analytics-and-improvements") {
+                SLink("Analytics & Improvements".localized(path: privacy), icon: "com.apple.graphic-icon.analytics-and-improvements") {
                     CustomViewController("/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework/PrivacySettingsUI", controller: "PUIProblemReportingController")
                         .ignoresSafeArea()
-                        .navigationTitle("PROBLEM_REPORTING".localize(table: table))
+                        .navigationTitle("PROBLEM_REPORTING".localized(path: privacy))
                 }
-                SLink("ADVERTISING".localize(table: table), icon: "com.apple.graphic-icon.apple-advertising") {
+                SLink("Apple Advertising".localized(path: privacy), icon: "com.apple.graphic-icon.apple-advertising") {
                     AppleAdvertisingView()
                 }
             }
@@ -153,37 +151,37 @@ struct PrivacySecurityView: View {
             if !UIDevice.IsSimulator {
                 // MARK: Transparency Logs
                 Section {
-                    SLink("APP_PRIVACY_REPORT".localize(table: table), icon: "com.apple.graphic-icon.app-privacy-report", status: "Off".localize(table: table)) {}
+                    SLink("App Privacy Report".localized(path: privacy), icon: "com.apple.graphic-icon.app-privacy-report", status: "Off".localized(path: privacy)) {}
                     if UIDevice.IntelligenceCapability {
-                        SLink("Apple Intelligence Report".localize(table: psTable), icon: "com.apple.application-icon.apple-intelligence", status: "Off".localize(table: psTable).localize(table: psTable)) {}
+                        SLink("Apple Intelligence Report".localized(path: privacy), icon: "com.apple.application-icon.apple-intelligence", status: "Off".localized(path: privacy)) {}
                     }
                 } header: {
-                    Text("Transparency Logs", tableName: psTable)
+                    Text("Transparency Logs".localized(path: privacy))
                 }
                 
                 // MARK: Security
                 Section {
                     if configuration.developerMode {
-                        SLink("DEVELOPER_MODE".localize(table: table), icon: "com.apple.graphic-icon.developer-tools", status: "Off".localize(table: table)) {
+                        SLink("Developer Mode".localized(path: privacy), icon: "com.apple.graphic-icon.developer-tools", status: "Off".localized(path: privacy)) {
                             EmptyView()
                         }
                     }
                     if UIDevice.iPhone {
-                        SLink("Stolen Device Protection".localize(table: psTable), icon: "com.apple.graphic-icon.stolen-device-protection", status: "Off".localize(table: table)) {
+                        SLink("Stolen Device Protection".localized(path: privacy), icon: "com.apple.graphic-icon.stolen-device-protection", status: "Off".localized(path: privacy)) {
                             EmptyView()
                         }
                     }
-                    SLink("Lockdown Mode".localize(table: psTable), icon: "com.apple.graphic-icon.privacy", status: "Off".localize(table: table)) {
+                    SLink("Lockdown Mode".localized(path: privacy), icon: "com.apple.graphic-icon.privacy", status: "Off".localized(path: privacy)) {
                         EmptyView()
                     }
                 } header: {
-                    Text("Security", tableName: psTable)
+                    Text("Security".localized(path: privacy))
                 }
             }
         }
         .toolbar {
             ToolbarItem(placement: .principal) {
-                Text("Privacy & Security")
+                Text("Privacy & Security".localized(path: privacy))
                     .fontWeight(.semibold)
                     .font(.subheadline)
                     .opacity(frameY < 50.0 ? opacity : 0) // Only fade when passing the help section title at the top

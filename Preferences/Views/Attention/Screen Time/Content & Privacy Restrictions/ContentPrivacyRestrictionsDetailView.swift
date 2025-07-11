@@ -8,12 +8,11 @@
 import SwiftUI
 
 struct ContentPrivacyRestrictionsDetailView: View {
-    // Variables
-    var title = String()
     @State private var selected = "AllowChangesSpecifierName"
+    var title = ""
     let options = ["AllowChangesSpecifierName", "DontAllowChangesSpecifierName"]
     let table = "Restrictions"
-    let privTable = "Privacy"
+    let privacy = "/System/Library/PreferenceBundles/PrivacyAndSecuritySettings.bundle"
     
     var body: some View {
         CustomList(title: title.localize(table: table)) {
@@ -60,7 +59,7 @@ struct ContentPrivacyRestrictionsDetailView: View {
                     }
                     .padding(3)
                 } footer: {
-                    Text("PHOTOS_AUTH_PHOTOKIT_FOOTER", tableName: privTable)
+                    Text("PHOTOS_AUTH_PHOTOKIT_FOOTER".localized(path: privacy))
                 }
             }
             
@@ -73,23 +72,23 @@ struct ContentPrivacyRestrictionsDetailView: View {
             } footer: {
                 switch title {
                 case "ContactsSpecifierName":
-                    Text("CONTACTS_FOOTER", tableName: privTable)
+                    Text("CONTACTS_FOOTER".localized(path: privacy))
                 case "CalendarsSpecifierName":
-                    Text("CALENDARS_FOOTER", tableName: privTable)
+                    Text("CALENDARS_FOOTER".localized(path: privacy))
                 case "RemindersSpecifierName":
-                    Text("REMINDERS_FOOTER", tableName: privTable)
+                    Text("REMINDERS_FOOTER".localized(path: privacy))
                 case "MediaAppleMusicSpecifierName":
-                    Text("MEDIALIBRARY_EXPLANATION", tableName: privTable)
+                    Text("MEDIALIBRARY_EXPLANATION".localized(path: privacy))
                 case "UserTrackingSpecifierName":
-                    Text("USER_TRACKING_EXPLANATION", tableName: privTable)
+                    Text("USER_TRACKING_EXPLANATION".localized(path: privacy))
                 case "SpeechRecognitionSpecifierName":
-                    Text("SPEECH_RECOGNITION_FOOTER", tableName: privTable)
+                    Text("SPEECH_RECOGNITION_FOOTER".localized(path: privacy))
                 case "MicrophoneSpecifierName":
-                    Text("MICROPHONE_FOOTER", tableName: privTable)
+                    Text("MICROPHONE_FOOTER".localized(path: privacy))
                 case "BluetoothSharingSpecifierName":
-                    Text("BT_PERIPHERAL_FOOTER", tableName: privTable)
+                    Text("BT_PERIPHERAL_FOOTER".localized(path: privacy))
                 case "PhotosSpecifierName":
-                    Text("PHOTOS_NO_APP_FOOTER", tableName: privTable)
+                    Text("PHOTOS_NO_APP_FOOTER".localized(path: privacy))
                 default:
                     Text("Applications that have requested access to your \(title.lowercased()) will appear here.")
                 }

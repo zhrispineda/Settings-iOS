@@ -68,9 +68,7 @@
 		833F20AE2CA4C93C00115E8F /* RecordCinematicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833F20AD2CA4C93C00115E8F /* RecordCinematicView.swift */; };
 		8340A3C32CB0C723005ED66A /* SEIDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8340A3C22CB0C723005ED66A /* SEIDView.swift */; };
 		8340A3C52CB0CEDC005ED66A /* MonospacedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8340A3C42CB0CEDC005ED66A /* MonospacedLabel.swift */; };
-		8340F0C22D0D4D00009E71C0 /* PrivacyAndSecuritySettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8340F0C12D0D4D00009E71C0 /* PrivacyAndSecuritySettings.xcstrings */; };
 		834196272CB89D8F0038183D /* PSSystemPolicy.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834196262CB89D8F0038183D /* PSSystemPolicy.xcstrings */; };
-		83441A892CAF2B6A0022E193 /* Privacy.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83441A882CAF2B6A0022E193 /* Privacy.xcstrings */; };
 		83441A8B2CAF73740022E193 /* JournalingSuggestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83441A8A2CAF73740022E193 /* JournalingSuggestionsView.swift */; };
 		834540C52C9CE2E100091E79 /* AddLanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834540C42C9CE2E100091E79 /* AddLanguageView.swift */; };
 		834565742CAAE673002BE49D /* CameraEditKit.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834565732CAAE673002BE49D /* CameraEditKit.xcstrings */; };
@@ -326,9 +324,7 @@
 		833F20AD2CA4C93C00115E8F /* RecordCinematicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordCinematicView.swift; sourceTree = "<group>"; };
 		8340A3C22CB0C723005ED66A /* SEIDView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SEIDView.swift; sourceTree = "<group>"; };
 		8340A3C42CB0CEDC005ED66A /* MonospacedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonospacedLabel.swift; sourceTree = "<group>"; };
-		8340F0C12D0D4D00009E71C0 /* PrivacyAndSecuritySettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = PrivacyAndSecuritySettings.xcstrings; sourceTree = "<group>"; };
 		834196262CB89D8F0038183D /* PSSystemPolicy.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = PSSystemPolicy.xcstrings; sourceTree = "<group>"; };
-		83441A882CAF2B6A0022E193 /* Privacy.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Privacy.xcstrings; sourceTree = "<group>"; };
 		83441A8A2CAF73740022E193 /* JournalingSuggestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalingSuggestionsView.swift; sourceTree = "<group>"; };
 		834540C42C9CE2E100091E79 /* AddLanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLanguageView.swift; sourceTree = "<group>"; };
 		834565732CAAE673002BE49D /* CameraEditKit.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = CameraEditKit.xcstrings; sourceTree = "<group>"; };
@@ -773,14 +769,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		8340F0C02D0D4CEC009E71C0 /* PreferenceBundles */ = {
-			isa = PBXGroup;
-			children = (
-				8340F0C12D0D4D00009E71C0 /* PrivacyAndSecuritySettings.xcstrings */,
-			);
-			path = PreferenceBundles;
-			sourceTree = "<group>";
-		};
 		834540C32C9CE2CF00091E79 /* Language */ = {
 			isa = PBXGroup;
 			children = (
@@ -1074,7 +1062,6 @@
 				832877F72CAEE80F00013B0B /* CameraSettings */,
 				832877F22CAEE78C00013B0B /* GeneralSettingsUI */,
 				83ACE7202CD5BA270061528C /* HealthKit */,
-				8340F0C02D0D4CEC009E71C0 /* PreferenceBundles */,
 				8388E5352CD072DD00A3066D /* PrivacySettingsUI */,
 				83D0B1472CE2F9BA00DDEC69 /* Ungrouped */,
 			);
@@ -1136,7 +1123,6 @@
 				830F2B2F2CD97A05006F7F22 /* MessagesSettings.xcstrings */,
 				830F2B312CD97C0A006F7F22 /* Messages.xcstrings */,
 				83D241AC2D5CEC87002061F4 /* NotificationsSettings.xcstrings */,
-				83441A882CAF2B6A0022E193 /* Privacy.xcstrings */,
 				834196262CB89D8F0038183D /* PSSystemPolicy.xcstrings */,
 				8331016C2CD14BDD00C6C3B3 /* RatingProviders.xcstrings */,
 				836CDF922CB602B300B1C5B2 /* Restrictions.xcstrings */,
@@ -1428,7 +1414,6 @@
 				83A851BE2E0A4BD70041A3E6 /* SettingsApp.icon in Resources */,
 				8388C0B22CD473DB00FA7D4C /* WellnessDashboard-Localizable.xcstrings in Resources */,
 				839C6BEF2D9C6A3300F94C6E /* iPadOSReadMeSummary.html in Resources */,
-				8340F0C22D0D4D00009E71C0 /* PrivacyAndSecuritySettings.xcstrings in Resources */,
 				830F2B302CD97A05006F7F22 /* MessagesSettings.xcstrings in Resources */,
 				83D241AD2D5CEC87002061F4 /* NotificationsSettings.xcstrings in Resources */,
 				835646082D9C480200DAB406 /* iPadOSReadMe.html in Resources */,
@@ -1456,7 +1441,6 @@
 				835874CC2DB2AE81005E4D01 /* AuthKitUI.xcstrings in Resources */,
 				83CD1FAD2DB68F6C00366987 /* CameraSettings-CameraButton.xcstrings in Resources */,
 				8388E5342CD034EB00A3066D /* Location Services.xcstrings in Resources */,
-				83441A892CAF2B6A0022E193 /* Privacy.xcstrings in Resources */,
 				8314482D2CD9652A00FFEE51 /* HealthSettingsSpecifiers.xcstrings in Resources */,
 				83E748B22CC6BDDE0081D660 /* LocalizedStrings.xcstrings in Resources */,
 				83A422342CAC60B100EED538 /* CameraSettings-4k120.xcstrings in Resources */,

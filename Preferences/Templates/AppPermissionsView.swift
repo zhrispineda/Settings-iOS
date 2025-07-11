@@ -34,18 +34,18 @@ struct AppPermissionsView: View {
     let sensorkit = "/System/Library/PreferenceBundles/Privacy/SensorKitPrivacySettings.bundle"
     let wellTable = "WellnessDashboard-Localizable"
     var body: some View {
-        CustomList(title: permission.localize(table: table)) {
+        CustomList(title: permission.localized(path: privacy, table: table)) {
             // Primary explanation header
             switch permission {
             case "App Clips":
                 Section {} footer: {
                     if appClipPermission == "CAMERA" || permission == "CAMERA" {
-                        Text("CAMERA_HEADER", tableName: table)
+                        Text("CAMERA_HEADER".localized(path: privacy, table: table))
                     }
                 }
             case "CAMERA":
                 Section {} footer: {
-                    Text("CAMERA_HEADER", tableName: table)
+                    Text("CAMERA_HEADER".localized(path: privacy, table: table))
                 }
             case "FOCUS":
                 Section {} footer: {
@@ -79,7 +79,7 @@ struct AppPermissionsView: View {
                 }
             case "MOTION":
                 Section {
-                    Toggle("FITNESS_TRACKING".localize(table: table), isOn: $fitnessTracking)
+                    Toggle("FITNESS_TRACKING".localized(path: privacy, table: table), isOn: $fitnessTracking)
                 } footer: {
                     Text("FITNESS_TRACKING_PRIVACY", tableName: table)
                 }
@@ -107,7 +107,7 @@ struct AppPermissionsView: View {
             } footer: {
                 switch permission {
                 case "BT_PERIPHERAL", "CAMERA", "MEDIALIBRARY", "MICROPHONE", "MOTION", "NEARBY_INTERACTIONS", "PASSKEYS", "REMINDERS", "SPEECH_RECOGNITION", "WILLOW":
-                    Text("\(permission)_FOOTER".localize(table: table))
+                    Text("\(permission)_FOOTER".localized(path: privacy, table: table))
                 case "App Clips":
                     switch appClipPermission {
                     case "BT_PERIPHERAL":

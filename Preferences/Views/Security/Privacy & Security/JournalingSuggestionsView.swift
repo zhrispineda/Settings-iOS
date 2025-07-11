@@ -9,9 +9,10 @@ import SwiftUI
 
 struct JournalingSuggestionsView: View {
     let path = "/System/Library/PrivateFrameworks/MomentsOnboardingAndSettings.framework"
+    let privacy = "/System/Library/PreferenceBundles/PrivacyAndSecuritySettings.bundle"
     
     var body: some View {
-        CustomList(title: "JOURNALING_SUGGESTIONS".localize(table: "Privacy")) {
+        CustomList(title: "Journaling Suggestions".localize(table: privacy)) {
             Button("Turn On Journaling Suggestions".localized(path: path)) {}
         }
     }
