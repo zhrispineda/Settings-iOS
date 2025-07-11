@@ -54,6 +54,7 @@ struct SettingsLink<Content: View>: View {
                                 .foregroundStyle(.purple)
                         }
                         Text(status)
+                            .foregroundStyle(.secondary)
                     }
                 }
             } label: {

@@ -71,8 +71,6 @@
 		834196272CB89D8F0038183D /* PSSystemPolicy.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834196262CB89D8F0038183D /* PSSystemPolicy.xcstrings */; };
 		83441A8B2CAF73740022E193 /* JournalingSuggestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83441A8A2CAF73740022E193 /* JournalingSuggestionsView.swift */; };
 		834540C52C9CE2E100091E79 /* AddLanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834540C42C9CE2E100091E79 /* AddLanguageView.swift */; };
-		834565742CAAE673002BE49D /* CameraEditKit.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834565732CAAE673002BE49D /* CameraEditKit.xcstrings */; };
-		834565762CAAE7B8002BE49D /* CameraSettings-CinematicAudio.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 834565752CAAE7B8002BE49D /* CameraSettings-CinematicAudio.xcstrings */; };
 		83470D162C35A1BC00CE8613 /* AppleAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83470D152C35A1BC00CE8613 /* AppleAccountView.swift */; };
 		8349E22C2C7514F6007416C5 /* ApplePencilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8349E22B2C7514F6007416C5 /* ApplePencilView.swift */; };
 		834AADB42E071D400034702B /* 26Pad.png in Resources */ = {isa = PBXBuildFile; fileRef = 834AADB22E071D400034702B /* 26Pad.png */; };
@@ -167,7 +165,6 @@
 		83A36C8D2DB95D7800378E45 /* ConfigureDNSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A36C8C2DB95D7800378E45 /* ConfigureDNSView.swift */; };
 		83A36C8F2DB96E4600378E45 /* ConfigureProxyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A36C8E2DB96E4600378E45 /* ConfigureProxyView.swift */; };
 		83A3E6952CAC3091006F4643 /* FocalLengthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A3E6942CAC3091006F4643 /* FocalLengthView.swift */; };
-		83A422342CAC60B100EED538 /* CameraSettings-4k120.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83A422332CAC60B100EED538 /* CameraSettings-4k120.xcstrings */; };
 		83A5DA512C2335580012ACB3 /* PermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5DA502C2335580012ACB3 /* PermissionsView.swift */; };
 		83A7E15A2CBF047B0037F1FB /* FontSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83A7E1592CBF047B0037F1FB /* FontSettings.xcstrings */; };
 		83A851BE2E0A4BD70041A3E6 /* SettingsApp.icon in Resources */ = {isa = PBXBuildFile; fileRef = 83A851BD2E0A4BD70041A3E6 /* SettingsApp.icon */; };
@@ -190,13 +187,10 @@
 		83B619D12B941C4F00EFEA90 /* AlwaysAllowedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B619D02B941C4F00EFEA90 /* AlwaysAllowedView.swift */; };
 		83B893BD2B8FD82D005705A3 /* FaceAttentionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B893BC2B8FD82D005705A3 /* FaceAttentionView.swift */; };
 		83B98E302B7C087B007F6C94 /* IconToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B98E2F2B7C087B007F6C94 /* IconToggle.swift */; };
-		83BA35122E15B5A500CFA06C /* CameraSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83BA35112E15B5A500CFA06C /* CameraSettings.xcstrings */; };
-		83BA35142E15B61600CFA06C /* CameraSettings-SmartStyles.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83BA35132E15B61600CFA06C /* CameraSettings-SmartStyles.xcstrings */; };
 		83C79B932CE331A500F49B4F /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83C79B922CE331A500F49B4F /* Localizable.xcstrings */; };
 		83C94CA52C1E0192005EBBC5 /* AppleCareWarrantyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C94CA42C1E0192005EBBC5 /* AppleCareWarrantyView.swift */; };
 		83CB06972CA6283A00D7533A /* FormatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CB06962CA6283A00D7533A /* FormatsView.swift */; };
 		83CCB7282C7FAD96003F51ED /* DateTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CCB7272C7FAD96003F51ED /* DateTimeView.swift */; };
-		83CD1FAD2DB68F6C00366987 /* CameraSettings-CameraButton.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83CD1FAC2DB68F6C00366987 /* CameraSettings-CameraButton.xcstrings */; };
 		83CED5AA2D6E5ACD00253D9C /* ZoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CED5A92D6E5ACD00253D9C /* ZoomView.swift */; };
 		83D0501A2DB6D343003D50AD /* ContinueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D050192DB6D343003D50AD /* ContinueButton.swift */; };
 		83D20AD12D875F6B000B26E6 /* DebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D20AD02D875F6B000B26E6 /* DebugView.swift */; };
@@ -216,7 +210,6 @@
 		83D5957B2CA5BF19003EF0CD /* RecordSoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D5957A2CA5BF19003EF0CD /* RecordSoundView.swift */; };
 		83D5BD542DB819F900F5B219 /* ConfigureIPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D5BD532DB819F900F5B219 /* ConfigureIPView.swift */; };
 		83DB888F2CAC97BF008218E6 /* AppleID.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83DB888E2CAC97BF008218E6 /* AppleID.xcstrings */; };
-		83DBCE062CCD957C00B33277 /* CameraSettings-TrueVideo.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83DBCE052CCD957C00B33277 /* CameraSettings-TrueVideo.xcstrings */; };
 		83DF95742B841F0900AEEB63 /* DownloadedLanguagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DF95732B841F0900AEEB63 /* DownloadedLanguagesView.swift */; };
 		83DF95762B84266E00AEEB63 /* SiriDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DF95752B84266E00AEEB63 /* SiriDetailView.swift */; };
 		83DFA56D2DA9E17E004C3DD5 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DFA56C2DA9E17E004C3DD5 /* UIViewControllerExtensions.swift */; };
@@ -322,8 +315,6 @@
 		834196262CB89D8F0038183D /* PSSystemPolicy.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = PSSystemPolicy.xcstrings; sourceTree = "<group>"; };
 		83441A8A2CAF73740022E193 /* JournalingSuggestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalingSuggestionsView.swift; sourceTree = "<group>"; };
 		834540C42C9CE2E100091E79 /* AddLanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLanguageView.swift; sourceTree = "<group>"; };
-		834565732CAAE673002BE49D /* CameraEditKit.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = CameraEditKit.xcstrings; sourceTree = "<group>"; };
-		834565752CAAE7B8002BE49D /* CameraSettings-CinematicAudio.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "CameraSettings-CinematicAudio.xcstrings"; sourceTree = "<group>"; };
 		83470D152C35A1BC00CE8613 /* AppleAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAccountView.swift; sourceTree = "<group>"; };
 		8349E22B2C7514F6007416C5 /* ApplePencilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePencilView.swift; sourceTree = "<group>"; };
 		834AADB22E071D400034702B /* 26Pad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 26Pad.png; sourceTree = "<group>"; };
@@ -421,7 +412,6 @@
 		83A36C8C2DB95D7800378E45 /* ConfigureDNSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureDNSView.swift; sourceTree = "<group>"; };
 		83A36C8E2DB96E4600378E45 /* ConfigureProxyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureProxyView.swift; sourceTree = "<group>"; };
 		83A3E6942CAC3091006F4643 /* FocalLengthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocalLengthView.swift; sourceTree = "<group>"; };
-		83A422332CAC60B100EED538 /* CameraSettings-4k120.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "CameraSettings-4k120.xcstrings"; sourceTree = "<group>"; };
 		83A5DA502C2335580012ACB3 /* PermissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsView.swift; sourceTree = "<group>"; };
 		83A7E1592CBF047B0037F1FB /* FontSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = FontSettings.xcstrings; sourceTree = "<group>"; };
 		83A851BD2E0A4BD70041A3E6 /* SettingsApp.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = SettingsApp.icon; sourceTree = "<group>"; };
@@ -445,14 +435,11 @@
 		83B893BC2B8FD82D005705A3 /* FaceAttentionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceAttentionView.swift; sourceTree = "<group>"; };
 		83B893C12B8FDD94005705A3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		83B98E2F2B7C087B007F6C94 /* IconToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconToggle.swift; sourceTree = "<group>"; };
-		83BA35112E15B5A500CFA06C /* CameraSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = CameraSettings.xcstrings; sourceTree = "<group>"; };
-		83BA35132E15B61600CFA06C /* CameraSettings-SmartStyles.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "CameraSettings-SmartStyles.xcstrings"; sourceTree = "<group>"; };
 		83C79B922CE331A500F49B4F /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		83C94CA42C1E0192005EBBC5 /* AppleCareWarrantyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleCareWarrantyView.swift; sourceTree = "<group>"; };
 		83CB06962CA6283A00D7533A /* FormatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatsView.swift; sourceTree = "<group>"; };
 		83CC61982B7952B800DAF0C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83CCB7272C7FAD96003F51ED /* DateTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeView.swift; sourceTree = "<group>"; };
-		83CD1FAC2DB68F6C00366987 /* CameraSettings-CameraButton.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "CameraSettings-CameraButton.xcstrings"; sourceTree = "<group>"; };
 		83CED5A92D6E5ACD00253D9C /* ZoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomView.swift; sourceTree = "<group>"; };
 		83D050192DB6D343003D50AD /* ContinueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinueButton.swift; sourceTree = "<group>"; };
 		83D20AD02D875F6B000B26E6 /* DebugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugView.swift; sourceTree = "<group>"; };
@@ -472,7 +459,6 @@
 		83D5957A2CA5BF19003EF0CD /* RecordSoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSoundView.swift; sourceTree = "<group>"; };
 		83D5BD532DB819F900F5B219 /* ConfigureIPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureIPView.swift; sourceTree = "<group>"; };
 		83DB888E2CAC97BF008218E6 /* AppleID.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AppleID.xcstrings; sourceTree = "<group>"; };
-		83DBCE052CCD957C00B33277 /* CameraSettings-TrueVideo.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "CameraSettings-TrueVideo.xcstrings"; sourceTree = "<group>"; };
 		83DF95732B841F0900AEEB63 /* DownloadedLanguagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadedLanguagesView.swift; sourceTree = "<group>"; };
 		83DF95752B84266E00AEEB63 /* SiriDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriDetailView.swift; sourceTree = "<group>"; };
 		83DFA56C2DA9E17E004C3DD5 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
@@ -551,19 +537,6 @@
 				832877F32CAEE7A200013B0B /* GeneralSettingsUI.xcstrings */,
 			);
 			path = GeneralSettingsUI;
-			sourceTree = "<group>";
-		};
-		832877F72CAEE80F00013B0B /* CameraSettings */ = {
-			isa = PBXGroup;
-			children = (
-				83A422332CAC60B100EED538 /* CameraSettings-4k120.xcstrings */,
-				83CD1FAC2DB68F6C00366987 /* CameraSettings-CameraButton.xcstrings */,
-				834565752CAAE7B8002BE49D /* CameraSettings-CinematicAudio.xcstrings */,
-				83DBCE052CCD957C00B33277 /* CameraSettings-TrueVideo.xcstrings */,
-				83BA35112E15B5A500CFA06C /* CameraSettings.xcstrings */,
-				83BA35132E15B61600CFA06C /* CameraSettings-SmartStyles.xcstrings */,
-			);
-			path = CameraSettings;
 			sourceTree = "<group>";
 		};
 		832928472B857763006611CF /* Privacy & Security */ = {
@@ -1031,7 +1004,6 @@
 			isa = PBXGroup;
 			children = (
 				832877E22CAD9BB900013B0B /* AccessibilitySettings */,
-				832877F72CAEE80F00013B0B /* CameraSettings */,
 				832877F22CAEE78C00013B0B /* GeneralSettingsUI */,
 				83D0B1472CE2F9BA00DDEC69 /* Ungrouped */,
 			);
@@ -1075,7 +1047,6 @@
 				83DB888E2CAC97BF008218E6 /* AppleID.xcstrings */,
 				832877DE2CAD987B00013B0B /* AppleIDSetup.xcstrings */,
 				835874CB2DB2AE81005E4D01 /* AuthKitUI.xcstrings */,
-				834565732CAAE673002BE49D /* CameraEditKit.xcstrings */,
 				83A7E1592CBF047B0037F1FB /* FontSettings.xcstrings */,
 				832D84EF2CD2A9DD0075ECF0 /* HealthPrivacySettings.xcstrings */,
 				8314482C2CD9652A00FFEE51 /* HealthSettingsSpecifiers.xcstrings */,
@@ -1368,9 +1339,7 @@
 				834CA6EA2D62AE93006792AE /* UserNotificationsKit.xcstrings in Resources */,
 				83AB1D612D5E7656005F0B63 /* UserNotificationsUIKit.xcstrings in Resources */,
 				837D24292CD0293C00274D42 /* ScreenTimeSettingsUI.xcstrings in Resources */,
-				834565742CAAE673002BE49D /* CameraEditKit.xcstrings in Resources */,
 				832D84F02CD2A9DD0075ECF0 /* HealthPrivacySettings.xcstrings in Resources */,
-				834565762CAAE7B8002BE49D /* CameraSettings-CinematicAudio.xcstrings in Resources */,
 				836CDF932CB602B300B1C5B2 /* Restrictions.xcstrings in Resources */,
 				83A851BE2E0A4BD70041A3E6 /* SettingsApp.icon in Resources */,
 				839C6BEF2D9C6A3300F94C6E /* iPadOSReadMeSummary.html in Resources */,
@@ -1382,24 +1351,19 @@
 				834AADB42E071D400034702B /* 26Pad.png in Resources */,
 				834AADB52E071D400034702B /* 26Phone.png in Resources */,
 				83DB888F2CAC97BF008218E6 /* AppleID.xcstrings in Resources */,
-				83BA35122E15B5A500CFA06C /* CameraSettings.xcstrings in Resources */,
 				83A160282DD7C9BF00CEFE0C /* WirelessModemSettings.xcstrings in Resources */,
 				833F0AD72B744D190036EAD2 /* Preview Assets.xcassets in Resources */,
 				832877D92CAD8C7100013B0B /* Accessibility.xcstrings in Resources */,
 				832877ED2CAEE55B00013B0B /* General.xcstrings in Resources */,
 				8360825D2D13B04E00902254 /* SettingsPhysical.gif in Resources */,
-				83DBCE062CCD957C00B33277 /* CameraSettings-TrueVideo.xcstrings in Resources */,
 				833F0AD42B744D190036EAD2 /* Assets.xcassets in Resources */,
 				83A7E15A2CBF047B0037F1FB /* FontSettings.xcstrings in Resources */,
 				832877DD2CAD95C300013B0B /* AppleAccountUI.xcstrings in Resources */,
-				83BA35142E15B61600CFA06C /* CameraSettings-SmartStyles.xcstrings in Resources */,
 				834196272CB89D8F0038183D /* PSSystemPolicy.xcstrings in Resources */,
 				8331016D2CD14BDE00C6C3B3 /* RatingProviders.xcstrings in Resources */,
 				835874CC2DB2AE81005E4D01 /* AuthKitUI.xcstrings in Resources */,
-				83CD1FAD2DB68F6C00366987 /* CameraSettings-CameraButton.xcstrings in Resources */,
 				8314482D2CD9652A00FFEE51 /* HealthSettingsSpecifiers.xcstrings in Resources */,
 				83E748B22CC6BDDE0081D660 /* LocalizedStrings.xcstrings in Resources */,
-				83A422342CAC60B100EED538 /* CameraSettings-4k120.xcstrings in Resources */,
 				832877FB2CAEEA7E00013B0B /* WiFiKitUILocalizableStrings.xcstrings in Resources */,
 				835646062D9C47F000DAB406 /* iOSReadMe.html in Resources */,
 				832877DF2CAD987B00013B0B /* AppleIDSetup.xcstrings in Resources */,
