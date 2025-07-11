@@ -41,7 +41,7 @@ struct SoftwareUpdateView: View {
                         )
                         .frame(maxHeight: 170)
                         NavigationLink("More Details".localized(path: update)) {
-                            BundleControllerView("/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework/GeneralSettingsUI", controller: "PSGSoftwareVersionController", title: "OS Version", table: "GeneralSettingsUI")
+                            BundleControllerView("/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework/GeneralSettingsUI", controller: "PSGSoftwareVersionController", title: "OS Version".localized(path: "/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework"))
                         }
                         .navigationLinkIndicatorVisibility(.hidden)
                         .foregroundStyle(.blue)

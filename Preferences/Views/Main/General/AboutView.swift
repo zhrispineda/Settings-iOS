@@ -11,36 +11,36 @@ struct AboutView: View {
     @State private var showingModelNumber = false
     @AppStorage("ModelNumber") private var modelNumber = String()
     @AppStorage("RegulatoryModelNumber") private var regulatoryModelNumber = String()
-    @State private var serialNumber = String()
+    @State private var serialNumber = ""
     @State private var availableStorage: String = getAvailableStorage() ?? "Error"
-    @State private var capacityStorage = String()
-    @State private var wifiAddress = String()
-    @State private var bluetoothAddress = String()
-    @State private var eidValue = String()
+    @State private var capacityStorage = ""
+    @State private var wifiAddress = ""
+    @State private var bluetoothAddress = ""
+    @State private var eidValue = ""
     @AppStorage("DeviceName") private var deviceName = UIDevice.current.model
+    let path = "/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework"
     let table = "General"
-    let UITable = "GeneralSettingsUI"
     
     var body: some View {
         CustomList(title: "About".localize(table: table)) {
             Section {
                 if UIDevice.IsSimulator {
-                    LabeledContent("Device_Name".localize(table: table), value: UIDevice.current.model)
+                    LabeledContent("Device_Name".localized(path: path, table: table), value: UIDevice.current.model)
                 } else {
-                    SettingsLink("Device_Name".localize(table: table), status: deviceName, destination: NameView())
+                    SettingsLink("Device_Name".localized(path: path, table: table), status: deviceName, destination: NameView())
                 }
                 
-                SettingsLink("OS Version".localize(table: UITable), status: UIDevice().systemVersion, destination: BundleControllerView("/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework/GeneralSettingsUI", controller: "PSGSoftwareVersionController", title: "OS Version", table: UITable))
+                SettingsLink("OS Version".localized(path: path), status: UIDevice().systemVersion, destination: BundleControllerView("/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework/GeneralSettingsUI", controller: "PSGSoftwareVersionController", title: "OS Version".localized(path: path)))
                     .textSelection(.enabled)
                 
-                LabeledContent("ProductModelName".localize(table: UITable), value: UIDevice.fullModel)
+                LabeledContent("ProductModelName".localized(path: path), value: UIDevice.fullModel)
                     .textSelection(.enabled)
-                MonospacedLabel("ProductModel".localize(table: UITable), value: showingModelNumber ? regulatoryModelNumber : "\(modelNumber)\(getRegionInfo())")
+                MonospacedLabel("ProductModel".localized(path: path), value: showingModelNumber ? regulatoryModelNumber : "\(modelNumber)\(getRegionInfo())")
                     .contentShape(Rectangle())
                     .onTapGesture {
                       showingModelNumber.toggle()
                     }
-                LabeledContent("SerialNumber".localize(table: UITable), value: serialNumber)
+                LabeledContent("SerialNumber".localized(path: path), value: serialNumber)
             }
             .task {
                 if serialNumber.isEmpty {
@@ -55,27 +55,27 @@ struct AboutView: View {
             }
             
             Section {
-                LabeledContent("SONGS".localize(table: UITable), value: "0")
-                LabeledContent("VIDEOS".localize(table: UITable), value: "0")
-                LabeledContent("PHOTOS".localize(table: UITable), value: "6")
+                LabeledContent("SONGS".localized(path: path), value: "0")
+                LabeledContent("VIDEOS".localized(path: path), value: "0")
+                LabeledContent("PHOTOS".localized(path: path), value: "6")
                 if !UIDevice.IsSimulator {
-                    LabeledContent("APPLICATIONS".localize(table: UITable), value: "1")
+                    LabeledContent("APPLICATIONS".localized(path: path), value: "1")
                 }
-                LabeledContent("User Data Capacity".localize(table: UITable), value: capacityStorage)
-                LabeledContent("User Data Available".localize(table: UITable), value: availableStorage)
+                LabeledContent("User Data Capacity".localized(path: path), value: capacityStorage)
+                LabeledContent("User Data Available".localized(path: path), value: availableStorage)
             }
             
             if !UIDevice.IsSimulator {
-                MonospacedLabel("MACAddress".localize(table: UITable), value: wifiAddress)
-                MonospacedLabel("BTMACAddress".localize(table: UITable), value: bluetoothAddress)
+                MonospacedLabel("MACAddress".localized(path: path), value: wifiAddress)
+                MonospacedLabel("BTMACAddress".localized(path: path), value: bluetoothAddress)
                 if UIDevice.CellularTelephonyCapability {
-                    MonospacedLabel("ModemVersion".localize(table: UITable), value: "1.00.00")
+                    MonospacedLabel("ModemVersion".localized(path: path), value: "1.00.00")
                 }
                 NavigationLink("SEID", destination: SEIDView())
                 
                 if UIDevice.CellularTelephonyCapability {
                     VStack {
-                        Text("EID", tableName: table)
+                        Text("EID".localized(path: path))
                             .frame(maxWidth: .infinity, alignment: .leading)
                         HStack(spacing: 0) {
                             ForEach(Array(eidValue.enumerated()), id: \.offset) { _, character in
@@ -93,36 +93,29 @@ struct AboutView: View {
                         .foregroundStyle(.secondary)
                         .font(.subheadline)
                     }
-                    LabeledContent("CARRIER_LOCK".localize(table: table), value: "CARRIER_LOCK_UNLOCKED".localize(table: table))
-                    
-                    //                Section {
-                    //                    LabeledContent("Network", value: "Not Available")
-                    //                    LabeledContent("Carrier", value: "Carrier 0.0")
-                    //                    HText("IMEI", status: "00 000000 000000 0", monospaced: true)
-                    //                    HText("ICCID", status: getRandomICCID(), monospaced: true)
-                    //                } header: {
-                    //                    Text(UIDevice.HomeButtonCapability && UIDevice.iPhone ? "Physical SIM" : "eSIM")
-                    //                }
+                    LabeledContent("CARRIER_LOCK".localized(path: path, table: table), value: "CARRIER_LOCK_UNLOCKED".localized(path: path, table: table))
                     
                     Section {
-                        MonospacedLabel("ModemIMEI".localize(table: UITable), value: "00 000000 000000 0")
+                        MonospacedLabel("ModemIMEI".localized(path: path), value: "00 000000 000000 0")
                             .contextMenu {
-                                Button("Copy", systemImage: "document.on.document") {}
-                                Button("Barcode", systemImage: "barcode") {}
+                                Button("COPY".localized(path: path, table: table), systemImage: "document.on.document") {}
+                                Button("BARCODE".localized(path: path, table: table), systemImage: "barcode") {}
+                                Button("SHARE_IDENTITY".localized(path: path, table: table), systemImage: "iphone.gen3.crop.circle") {}
                             }
-                        MonospacedLabel("ModemIMEI2".localize(table: table), value: "00 000000 000000 0")
+                        MonospacedLabel("ModemIMEI2".localized(path: path, table: table), value: "00 000000 000000 0")
                             .contextMenu {
-                                Button("Copy", systemImage: "document.on.document") {}
-                                Button("Barcode", systemImage: "barcode") {}
+                                Button("COPY".localized(path: path, table: table), systemImage: "document.on.document") {}
+                                Button("BARCODE".localized(path: path, table: table), systemImage: "barcode") {}
+                                Button("SHARE_IDENTITY".localized(path: path, table: table), systemImage: "iphone.gen3.crop.circle") {}
                             }
                     } header: {
-                        Text("AVAILABLE_SIMS".localize(table: table))
+                        Text("AVAILABLE_SIMS".localized(path: path, table: table))
                     }
                 }
             }
             
             Section {
-                NavigationLink("CERT_TRUST_SETTINGS".localize(table: UITable), destination: BundleControllerView("/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework/GeneralSettingsUI", controller: "PSGCertTrustSettings", title: "CERT_TRUST_SETTINGS", table: UITable))
+                NavigationLink("CERT_TRUST_SETTINGS".localized(path: path), destination: BundleControllerView("/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework/GeneralSettingsUI", controller: "PSGCertTrustSettings", title: "CERT_TRUST_SETTINGS".localized(path: path)))
             }
         }
     }

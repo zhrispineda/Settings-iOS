@@ -39,7 +39,7 @@ struct NetworkDetailView: View {
                     "kWFLocRandomMACRotatingOption"
                 ], selected: privateAddressOption, table: table))
                 // Wi-Fi Address
-                LabeledContent("MACAddress".localize(table: "GeneralSettingsUI"), value: MACAddress)
+                LabeledContent("MACAddress".localized(path: "/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework"), value: MACAddress)
             } footer: {
                 VStack(alignment: .leading) {
                     Text("kWFLocPirvateAddressFooterMainTitle", tableName: table)
