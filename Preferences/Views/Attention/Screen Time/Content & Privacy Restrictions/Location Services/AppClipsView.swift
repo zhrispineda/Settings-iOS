@@ -31,7 +31,7 @@ struct AppClipsView: View {
                     } else if permission == "BluetoothSharingSpecifierName" {
                         Text("\("BT_PERIPHERAL_CLIPS_FOOTER".localized(path: path, table: table))\n")
                     } else {
-                        Text("\("GENERAL_EXPLANATION_CLIPS_ITEM".localize(table: locTable))\n")
+                        Text("\("GENERAL_EXPLANATION_CLIPS_ITEM".localized(path: path, table: locTable))\n")
                     }
                     
                     if completeView {
@@ -39,7 +39,7 @@ struct AppClipsView: View {
                             Image(systemName: "location.fill")
                                 .foregroundStyle(.purple)
                                 .font(.headline)
-                            Text("ACTIVE_EXPLANATION_ITEM", tableName: locTable)
+                            Text("ACTIVE_EXPLANATION_ITEM".localized(path: path, table: locTable))
                         }
                         .padding(.trailing)
                         .padding(.bottom, 5)
@@ -48,7 +48,7 @@ struct AppClipsView: View {
                             Image(systemName: "location.fill")
                                 .foregroundStyle(.gray)
                                 .font(.headline)
-                            Text("RECENT_EXPLANATION_ITEM", tableName: locTable)
+                            Text("RECENT_EXPLANATION_ITEM".localized(path: path, table: locTable))
                         }
                         .padding(.trailing)
                     }

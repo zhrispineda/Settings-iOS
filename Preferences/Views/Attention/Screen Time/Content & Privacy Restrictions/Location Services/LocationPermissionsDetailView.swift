@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct LocationPermissionsDetailView: View {
-    // Variables
-    var title = String()
+    var title = ""
     @State var selected = "NOT_DETERMINED_AUTHORIZATION"
     let options = ["NEVER_AUTHORIZATION", "NOT_DETERMINED_AUTHORIZATION", "ALWAYS_AUTHORIZATION"]
     @State private var preciseLocationEnabled = true
+    let path = "/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework"
     let table = "LocationServicesPrivacy"
     
     var body: some View {
@@ -20,24 +20,24 @@ struct LocationPermissionsDetailView: View {
             Section {
                 Picker("", selection: $selected) {
                     ForEach(options, id: \.self) {
-                        Text($0.localize(table: table))
+                        Text($0.localized(path: path, table: table))
                     }
                 }
                 .pickerStyle(.inline)
                 .labelsHidden()
             } header: {
-                Text("ALLOW_LOCATION_SERVICES_HEADER", tableName: table)
+                Text("ALLOW_LOCATION_SERVICES_HEADER".localized(path: path, table: table))
             } footer: {
                 if title == "Siri & Dictation" {
-                    Text("PURPOSE_STRING".localize(table: table, "Siri uses your location for things like answering questions and offering suggestions about what‘s nearby."))
+                    Text("PURPOSE_STRING".localized(path: path, table: table, "Siri uses your location for things like answering questions and offering suggestions about what‘s nearby."))
                 }
             }
             
             if selected != "NEVER_AUTHORIZATION" {
                 Section {
-                    Toggle("PRECISE_LOCATION".localize(table: table), isOn: $preciseLocationEnabled)
+                    Toggle("PRECISE_LOCATION".localized(path: path, table: table), isOn: $preciseLocationEnabled)
                 } footer: {
-                    Text("PRECISE_LOCATION_FOOTER", tableName: table)
+                    Text("PRECISE_LOCATION_FOOTER".localized(path: path, table: table))
                 }
             }
         }

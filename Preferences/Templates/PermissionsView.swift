@@ -58,7 +58,7 @@ struct PermissionsView: View {
                 IconToggle("FOCUS", isOn: $focusEnabled, icon: "com.apple.graphic-icon.focus", table: table)
             }
             if location {
-                SLink("LOCATION_SERVICES".localize(table: table), icon: "com.apple.graphic-icon.location", status: "NEVER_AUTHORIZATION".localize(table: "LocationServicesPrivacy")) {}
+                SLink("LOCATION_SERVICES".localize(table: table), icon: "com.apple.graphic-icon.location", status: "NEVER_AUTHORIZATION".localized(path: "/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework", table: "LocationServicesPrivacy")) {}
             }
             if photos {
                 SLink("PHOTOS".localize(table: table), icon: "com.apple.mobileslideshow", status: "PHOTOS_LIMITED_AUTHORIZATION".localize(table: table)) {}

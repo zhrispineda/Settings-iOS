@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct LocationAlertsView: View {
-    // Variables
     @State private var showMapLocationAlertsEnabled = true
+    let path = "/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework"
     let table = "Location Services"
     
     var body: some View {
-        CustomList(title: "PRIVACY_ALERTS".localize(table: table)) {
+        CustomList(title: "PRIVACY_ALERTS".localized(path: path, table: table)) {
             Section {
-                Toggle("MAP_DISPLAY".localize(table: table), isOn: $showMapLocationAlertsEnabled)
+                Toggle("MAP_DISPLAY".localized(path: path, table: table), isOn: $showMapLocationAlertsEnabled)
             }
         }
     }

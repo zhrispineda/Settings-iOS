@@ -142,8 +142,6 @@
 		838273A52B7FD4CF000F4228 /* AppRestrictionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838273A42B7FD4CF000F4228 /* AppRestrictionsView.swift */; };
 		8383CD082C9C842A00BA06A0 /* SystemFontsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8383CD072C9C842A00BA06A0 /* SystemFontsDetailView.swift */; };
 		8383FDFA2E0370760021D274 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8383FDF92E0370760021D274 /* UIImageExtensions.swift */; };
-		8388E5342CD034EB00A3066D /* Location Services.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8388E5332CD034EB00A3066D /* Location Services.xcstrings */; };
-		8388E5372CD0733400A3066D /* LocationServicesPrivacy.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8388E5362CD0733400A3066D /* LocationServicesPrivacy.xcstrings */; };
 		83898FCA2B8A8F210020C7BB /* HealthDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83898FC92B8A8F210020C7BB /* HealthDetailsView.swift */; };
 		83898FCD2B8A94BE0020C7BB /* HealthDetailsDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83898FCC2B8A94BE0020C7BB /* HealthDetailsDataView.swift */; };
 		83898FCF2B8A9A1F0020C7BB /* MedicalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83898FCE2B8A9A1F0020C7BB /* MedicalView.swift */; };
@@ -396,8 +394,6 @@
 		838273A42B7FD4CF000F4228 /* AppRestrictionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRestrictionsView.swift; sourceTree = "<group>"; };
 		8383CD072C9C842A00BA06A0 /* SystemFontsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemFontsDetailView.swift; sourceTree = "<group>"; };
 		8383FDF92E0370760021D274 /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
-		8388E5332CD034EB00A3066D /* Location Services.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "Location Services.xcstrings"; sourceTree = "<group>"; };
-		8388E5362CD0733400A3066D /* LocationServicesPrivacy.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = LocationServicesPrivacy.xcstrings; sourceTree = "<group>"; };
 		83898FC92B8A8F210020C7BB /* HealthDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDetailsView.swift; sourceTree = "<group>"; };
 		83898FCC2B8A94BE0020C7BB /* HealthDetailsDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDetailsDataView.swift; sourceTree = "<group>"; };
 		83898FCE2B8A9A1F0020C7BB /* MedicalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalView.swift; sourceTree = "<group>"; };
@@ -914,15 +910,6 @@
 			path = "System Fonts";
 			sourceTree = "<group>";
 		};
-		8388E5352CD072DD00A3066D /* PrivacySettingsUI */ = {
-			isa = PBXGroup;
-			children = (
-				8388E5332CD034EB00A3066D /* Location Services.xcstrings */,
-				8388E5362CD0733400A3066D /* LocationServicesPrivacy.xcstrings */,
-			);
-			path = PrivacySettingsUI;
-			sourceTree = "<group>";
-		};
 		83898FC82B8A8EF20020C7BB /* Health */ = {
 			isa = PBXGroup;
 			children = (
@@ -1046,7 +1033,6 @@
 				832877E22CAD9BB900013B0B /* AccessibilitySettings */,
 				832877F72CAEE80F00013B0B /* CameraSettings */,
 				832877F22CAEE78C00013B0B /* GeneralSettingsUI */,
-				8388E5352CD072DD00A3066D /* PrivacySettingsUI */,
 				83D0B1472CE2F9BA00DDEC69 /* Ungrouped */,
 			);
 			path = Localization;
@@ -1396,7 +1382,6 @@
 				834AADB42E071D400034702B /* 26Pad.png in Resources */,
 				834AADB52E071D400034702B /* 26Phone.png in Resources */,
 				83DB888F2CAC97BF008218E6 /* AppleID.xcstrings in Resources */,
-				8388E5372CD0733400A3066D /* LocationServicesPrivacy.xcstrings in Resources */,
 				83BA35122E15B5A500CFA06C /* CameraSettings.xcstrings in Resources */,
 				83A160282DD7C9BF00CEFE0C /* WirelessModemSettings.xcstrings in Resources */,
 				833F0AD72B744D190036EAD2 /* Preview Assets.xcassets in Resources */,
@@ -1412,7 +1397,6 @@
 				8331016D2CD14BDE00C6C3B3 /* RatingProviders.xcstrings in Resources */,
 				835874CC2DB2AE81005E4D01 /* AuthKitUI.xcstrings in Resources */,
 				83CD1FAD2DB68F6C00366987 /* CameraSettings-CameraButton.xcstrings in Resources */,
-				8388E5342CD034EB00A3066D /* Location Services.xcstrings in Resources */,
 				8314482D2CD9652A00FFEE51 /* HealthSettingsSpecifiers.xcstrings in Resources */,
 				83E748B22CC6BDDE0081D660 /* LocalizedStrings.xcstrings in Resources */,
 				83A422342CAC60B100EED538 /* CameraSettings-4k120.xcstrings in Resources */,

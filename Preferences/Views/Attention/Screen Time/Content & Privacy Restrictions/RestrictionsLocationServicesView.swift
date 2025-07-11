@@ -12,6 +12,7 @@ struct RestrictionsLocationServicesView: View {
     @State private var locationServicesEnabled = true
     @State private var showingDisableLocationServicesAlert = false
     @State private var showingDisableLocationServicesDialog = false
+    let path = "/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework"
     let options = ["AllowChangesSpecifierName", "DontAllowChangesSpecifierName"]
     let table = "Restrictions"
     let locTable = "Location Services"
@@ -28,31 +29,31 @@ struct RestrictionsLocationServicesView: View {
                 .pickerStyle(.inline)
                 .labelsHidden()
             } footer: {
-                Text("LOCATION_EXPLANATION", tableName: table)
+                Text("LOCATION_EXPLANATION".localized(path: path, table: table))
             }
             
             Section {
                 Toggle("LocationServicesSpecifierName".localize(table: table), isOn: $locationServicesEnabled.animation())
                     .alert("LocationServicesSpecifierName".localize(table: table), isPresented: $showingDisableLocationServicesAlert) {
-                        Button("CONFIRM_LOCATION_TURN_OFF".localize(table: locTable), role: .none) {}
-                        Button("CANCEL".localize(table: locTable), role: .cancel) { locationServicesEnabled.toggle() }
+                        Button("CONFIRM_LOCATION_TURN_OFF".localized(path: path, table: locTable), role: .none) {}
+                        Button("CANCEL".localized(path: path, table: locTable), role: .cancel) { locationServicesEnabled.toggle() }
                     } message: {
                         Text("CONFIRM_LOCATION_TITLE", tableName: locTable)
                     }
-                    .confirmationDialog("CONFIRM_LOCATION_TITLE".localize(table: locTable), isPresented: $showingDisableLocationServicesDialog,
+                    .confirmationDialog("CONFIRM_LOCATION_TITLE".localized(path: path, table: locTable), isPresented: $showingDisableLocationServicesDialog,
                                         titleVisibility: .visible,
                                         actions: {
-                        Button("CONFIRM_LOCATION_TURN_OFF".localize(table: locTable), role: .destructive) {}
-                        Button("CANCEL".localize(table: locTable), role: .cancel) { locationServicesEnabled.toggle() }
+                        Button("CONFIRM_LOCATION_TURN_OFF".localized(path: path, table: locTable), role: .destructive) {}
+                        Button("CANCEL".localized(path: path, table: locTable), role: .cancel) { locationServicesEnabled.toggle() }
                     })
                     .onChange(of: locationServicesEnabled) {
                         if !locationServicesEnabled {
                             UIDevice.iPhone ? showingDisableLocationServicesDialog.toggle() : showingDisableLocationServicesAlert.toggle()
                         }
                     }
-                NavigationLink("PRIVACY_ALERTS".localize(table: locTable), destination: LocationAlertsView())
+                NavigationLink("PRIVACY_ALERTS".localized(path: path, table: locTable), destination: LocationAlertsView())
             } footer: {
-                Text("\(UIDevice.iPad ? "DISABLED_WARNING_WIFI".localize(table: locTable) + "\n\n" : "")\(UIDevice.iPad ? "DESCRIPTION_NOGPS_WIFI".localize(table: locTable) : "DESCRIPTION_GPS_WIFI".localize(table: locTable)) [\("ABOUT_LOCATION_AND_PRIVACY".localize(table: locTable))](#)")
+                Text("\(UIDevice.iPad ? "DISABLED_WARNING_WIFI".localize(table: locTable) + "\n\n" : "")\(UIDevice.iPad ? "DESCRIPTION_NOGPS_WIFI".localized(path: path, table: locTable) : "DESCRIPTION_GPS_WIFI".localized(path: path, table: locTable)) [\("ABOUT_LOCATION_AND_PRIVACY".localized(path: path, table: locTable))](#)")
             }
             
             if locationServicesEnabled {
@@ -60,33 +61,33 @@ struct RestrictionsLocationServicesView: View {
                     SLink("AppClipsSpecifierName".localize(table: table), icon: "com.apple.graphic-icon.app-clips") {
                         AppClipsView()
                     }
-                    SettingsLink("AppGenius.bundle", status: "NEVER_AUTHORIZATION".localize(table: privTable), destination: LocationPermissionsDetailView(title: "AppGenius.bundle", selected: "NEVER_AUTHORIZATION".localize(table: privTable)))
-                    SettingsLink("AssistantServices.framework", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), destination: LocationPermissionsDetailView(title: "AssistantServices.framework"))
-                    SettingsLink("BulletinBoard.framework", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), destination: LocationPermissionsDetailView(title: "BulletinBoard.framework"))
-                    SettingsLink("CompassCalibration.bundle", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), destination: LocationPermissionsDetailView(title: "CompassCalibration.bundle"))
-                    SettingsLink("Emergency SOS.bundle", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), destination: LocationPermissionsDetailView(title: "Emergency SOS.bundle"))
-                    SettingsLink("MobileWiFi.framework", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), destination: LocationPermissionsDetailView(title: "MobileWiFi.framework"))
-                    SettingsLink("MotionCalibration.bundle", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), destination: LocationPermissionsDetailView(title: "MotionCalibration.bundle"))
-                    SettingsLink("PassbookMerchantLookup.bundle", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), destination: LocationPermissionsDetailView(title: "PassbookMerchantLookup.bundle"))
-                    SLink("LOCATION_SHARING".localize(table: locTable), icon: "com.", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable)) {
-                        LocationPermissionsDetailView(title: "LOCATION_SHARING".localize(table: locTable))
+                    SettingsLink("AppGenius.bundle", status: "NEVER_AUTHORIZATION".localized(path: path, table: privTable), destination: LocationPermissionsDetailView(title: "AppGenius.bundle", selected: "NEVER_AUTHORIZATION".localize(table: privTable)))
+                    SettingsLink("AssistantServices.framework", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localized(path: path, table: privTable), destination: LocationPermissionsDetailView(title: "AssistantServices.framework"))
+                    SettingsLink("BulletinBoard.framework", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localized(path: path, table: privTable), destination: LocationPermissionsDetailView(title: "BulletinBoard.framework"))
+                    SettingsLink("CompassCalibration.bundle", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localized(path: path, table: privTable), destination: LocationPermissionsDetailView(title: "CompassCalibration.bundle"))
+                    SettingsLink("Emergency SOS.bundle", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localized(path: path, table: privTable), destination: LocationPermissionsDetailView(title: "Emergency SOS.bundle"))
+                    SettingsLink("MobileWiFi.framework", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localized(path: path, table: privTable), destination: LocationPermissionsDetailView(title: "MobileWiFi.framework"))
+                    SettingsLink("MotionCalibration.bundle", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localized(path: path, table: privTable), destination: LocationPermissionsDetailView(title: "MotionCalibration.bundle"))
+                    SettingsLink("PassbookMerchantLookup.bundle", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localized(path: path, table: privTable), destination: LocationPermissionsDetailView(title: "PassbookMerchantLookup.bundle"))
+                    SLink("LOCATION_SHARING".localized(path: path, table: locTable), icon: "com.", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localized(path: path, table: privTable)) {
+                        LocationPermissionsDetailView(title: "LOCATION_SHARING".localized(path: path, table: locTable))
                     }
-                    SLink("SiriDictationSpecifierName".localize(table: table), icon: "com.apple.application-icon.siri", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable)) {
+                    SLink("SiriDictationSpecifierName".localize(table: table), icon: "com.apple.application-icon.siri", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localized(path: path, table: privTable)) {
                         LocationPermissionsDetailView(title: "SiriDictationSpecifierName".localize(table: table))
                     }
-                    SettingsLink("SystemCustomization.bundle", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), location: true, destination: LocationPermissionsDetailView(title: "SystemCustomization.bundle"))
-                    SettingsLink("Traffic.bundle", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localize(table: privTable), destination: LocationPermissionsDetailView(title: "Traffic.bundle"))
-                    SLink("SYSTEM_SERVICES".localize(table: locTable), icon: "com.apple.graphic-icon.gear", status: "location.fill") {
+                    SettingsLink("SystemCustomization.bundle", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localized(path: path, table: privTable), location: true, destination: LocationPermissionsDetailView(title: "SystemCustomization.bundle"))
+                    SettingsLink("Traffic.bundle", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localized(path: path, table: privTable), destination: LocationPermissionsDetailView(title: "Traffic.bundle"))
+                    SLink("SYSTEM_SERVICES".localized(path: path, table: locTable), icon: "com.apple.graphic-icon.gear", status: "location.fill") {
                         SystemServicesView()
                     }
                 } footer: {
                     VStack(alignment: .leading) {
-                        Text("GENERAL_EXPLANATION_ITEM".localize(table: locTable) + "\n")
+                        Text("GENERAL_EXPLANATION_ITEM".localized(path: path, table: locTable) + "\n")
                         HStack(spacing: 15) {
                             Image(systemName: "location.fill")
                                 .foregroundStyle(.purple)
                                 .font(.headline)
-                            Text("ACTIVE_EXPLANATION_ITEM", tableName: locTable)
+                            Text("ACTIVE_EXPLANATION_ITEM".localized(path: path, table: locTable))
                         }
                         .padding(.trailing)
                         .padding(.bottom, 5)
@@ -95,7 +96,7 @@ struct RestrictionsLocationServicesView: View {
                             Image(systemName: "location.fill")
                                 .foregroundStyle(.gray)
                                 .font(.headline)
-                            Text("RECENT_EXPLANATION_ITEM", tableName: locTable)
+                            Text("RECENT_EXPLANATION_ITEM".localized(path: path, table: locTable))
                         }
                         .padding(.trailing)
                     }
