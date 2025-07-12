@@ -21,23 +21,24 @@ struct NetworkView: View {
     @State private var showingOtherNetwork = false
     @State private var timer: Timer? = nil
     @State private var currentTopicID = ""
+    let path = "/System/Library/PrivateFrameworks/WiFiKitUI.framework"
     let table = "WiFiKitUILocalizableStrings"
-    
+
     var body: some View {
-        CustomList(title: "kWFLocWiFiPowerTitle".localize(table: table), topPadding: true) {
+        CustomList(title: "kWFLocWiFiPowerTitle".localized(path: path, table: table), topPadding: true) {
             if isEditing {
                 Section {} header: {
-                    Text("kWFLocAllEditableKnownSectionTitle", tableName: table)
+                    Text("kWFLocAllEditableKnownSectionTitle".localized(path: path, table: table))
                 }
             } else {
                 Section {
-                    Placard(title: "kWFLocWiFiPlacardTitle".localize(table: table), icon: "com.apple.graphic-icon.wifi", description: NSLocalizedString("kWFLocWiFiPlacardSubtitle", tableName: table, comment: "").replacing("helpkit", with: "pref"), frameY: $frameY, opacity: $opacity)
+                    Placard(title: "kWFLocWiFiPlacardTitle".localized(path: path, table: table), icon: "com.apple.graphic-icon.wifi", description: "kWFLocWiFiPlacardSubtitle".localized(path: path, table: table).replacing("helpkit", with: "pref"), frameY: $frameY, opacity: $opacity)
 
                     Toggle(isOn: $wifiEnabled) {
                         HStack {
                             Image(systemName: "checkmark")
                                 .foregroundStyle(.clear)
-                            Text("kWFLocWiFiPowerTitle", tableName: table)
+                            Text("kWFLocWiFiPowerTitle".localized(path: path, table: table))
                         }
                     }
                     
@@ -65,7 +66,7 @@ struct NetworkView: View {
                     
                 } footer: {
                     if !wifiEnabled {
-                        Text(UIDevice.iPhone ? "kWFLocLocationServicesCellularWarning" : "kWFLocLocationServicesWarning", tableName: table)
+                        Text(UIDevice.iPhone ? "kWFLocLocationServicesCellularWarning".localized(path: path, table: table) : "kWFLocLocationServicesWarning".localized(path: path, table: table))
                     }
                 }
                 
@@ -78,13 +79,13 @@ struct NetworkView: View {
                             HStack {
                                 Image(systemName: "checkmark")
                                     .foregroundStyle(.clear)
-                                Text("kWFLocOtherNetworkTitle", tableName: table)
+                                Text("kWFLocOtherNetworkTitle".localized(path: path, table: table))
                             }
                         }
                         .foregroundStyle(.primary)
                     } header: {
                         HStack {
-                            Text("kWFLocChooseNetworkSectionSingleTitle", tableName: table)
+                            Text("kWFLocChooseNetworkSectionSingleTitle".localized(path: path, table: table))
                             if searching {
                                 ProgressView()
                                     .frame(height: 0) // Prevent changing header frame height
@@ -109,20 +110,21 @@ struct NetworkView: View {
                     
                     // Ask to Join
                     Section {
-                        SettingsLink("kWFLocAskToJoinTitle".localize(table: table), status: askJoinNetworkSelection.localize(table: table), destination: SelectOptionList("kWFLocAskToJoinTitle", options: ["kWFLocAskToJoinDetailOff", "kWFLocAskToJoinDetailNotify", "kWFLocAskToJoinDetailAsk"], selectedBinding: $askJoinNetworkSelection, table: table))
+                        SettingsLink("kWFLocAskToJoinTitle".localized(path: path, table: table), status: askJoinNetworkSelection.localized(path: path, table: table), destination: SelectOptionList("kWFLocAskToJoinTitle", options: ["kWFLocAskToJoinDetailOff", "kWFLocAskToJoinDetailNotify", "kWFLocAskToJoinDetailAsk"], selectedBinding: $askJoinNetworkSelection, table: table))
                     } footer: {
-                        Text("kWFLocAskToJoinNotifyFooter", tableName: table)
+                        Text("kWFLocAskToJoinNotifyFooter".localized(path: path, table: table))
                     }
                     
                     // Auto-Join Hotspot
                     Section {
-                        SettingsLink("kWFLocAutoInstantHotspotTitle".localize(table: table), status: autoJoinHotspotSelection.localize(table: table), destination: SelectOptionList("kWFLocAutoInstantHotspotTitle", options: ["kWFLocAutoInstantHotspotJoinNeverTitle", "kWFLocAutoInstantHotspotJoinAskTitle", "kWFLocAutoInstantHotspotJoinAutoTitle"], selectedBinding: $autoJoinHotspotSelection, table: table))
+                        SettingsLink("kWFLocAutoInstantHotspotTitle".localized(path: path, table: table), status: autoJoinHotspotSelection.localized(path: path, table: table), destination: SelectOptionList("kWFLocAutoInstantHotspotTitle", options: ["kWFLocAutoInstantHotspotJoinNeverTitle", "kWFLocAutoInstantHotspotJoinAskTitle", "kWFLocAutoInstantHotspotJoinAutoTitle"], selectedBinding: $autoJoinHotspotSelection, table: table))
                     } footer: {
-                        Text("kWFLocAutoInstantHotspotFooter", tableName: table)
+                        Text("kWFLocAutoInstantHotspotFooter".localized(path: path, table: table))
                     }
                 }
             }
         }
+        .animation(.default, value: isEditing)
         .onOpenURL {_ in
             showingHelpSheet.toggle()
         }
@@ -139,7 +141,7 @@ struct NetworkView: View {
             if isEditing {
                 // Cancel Button
                 ToolbarItem(placement: .topBarLeading) {
-                    Button("kWFLocAdhocJoinCancelButton".localize(table: table)) {
+                    Button(role: .cancel) {
                         withAnimation {
                             isEditing.toggle()
                         }
@@ -149,7 +151,7 @@ struct NetworkView: View {
             
             // Navigation Title
             ToolbarItem(placement: .principal) {
-                Text("kWFLocWiFiPlacardTitle", tableName: table)
+                Text("kWFLocWiFiPlacardTitle".localized(path: path, table: table))
                     .fontWeight(.semibold)
                     .font(.subheadline)
                     .opacity(frameY < 50.0 ? opacity : 0)
@@ -157,13 +159,17 @@ struct NetworkView: View {
             
             // Edit/Done Button
             ToolbarItem(placement: .topBarTrailing) {
-                Button(isEditing ? "Done" : "kWFLocEditListButtonTitle".localize(table: table)) {
-                    withAnimation {
+                if isEditing {
+                    Button(role: .confirm) {
                         isEditing.toggle()
                     }
+                } else {
+                    Button("kWFLocEditListButtonTitle".localized(path: path, table: table)) {
+                        withAnimation {
+                            isEditing.toggle()
+                        }
+                    }
                 }
-                .fontWeight(isEditing ? .bold : .regular)
-                .disabled(isEditing)
             }
         }
     }

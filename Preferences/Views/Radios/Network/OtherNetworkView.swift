@@ -2,7 +2,7 @@
 //  OtherNetworkView.swift
 //  Preferences
 //
-//  Settings > Wi-Fi > Other...
+//  Settings > Wi-Fi > Other…
 //
 
 import SwiftUI
@@ -17,6 +17,7 @@ struct OtherNetworkView: View {
     @State private var password = ""
     @State var status = "kWFLocOtherNetworksPrompt"
     @State private var frameY = 100.0
+    let path = "/System/Library/PrivateFrameworks/WiFiKitUI.framework"
     let table = "WiFiKitUILocalizableStrings"
 
     var body: some View {
@@ -59,8 +60,8 @@ struct OtherNetworkView: View {
                 // Name
                 Section {
                     HStack {
-                        Text("kWFLocOtherNetworkNameTitle", tableName: table)
-                        TextField("kWFLocOtherNetworkNamePlaceholder".localize(table: table), text: $networkName)
+                        Text("kWFLocOtherNetworkNameTitle".localized(path: path, table: table))
+                        TextField("kWFLocOtherNetworkNamePlaceholder".localized(path: path, table: table), text: $networkName)
                             .focused($networkFocused)
                             .padding(.leading, 10)
                             .onAppear {
@@ -71,17 +72,17 @@ struct OtherNetworkView: View {
                 
                 // Security + Password/Username
                 Section {
-                    SettingsLink("kWFLocOtherNetworkSecurityTitle".localize(table: table), status: security.localize(table: table), destination: SecurityView(security: $security))
+                    SettingsLink("kWFLocOtherNetworkSecurityTitle".localized(path: path, table: table), status: security.localized(path: path, table: table), destination: SecurityView(security: $security))
                     if security.contains("Enterprise") {
                         HStack {
-                            Text("kWFLocOtherNetworkUsernameTitle", tableName: table)
+                            Text("kWFLocOtherNetworkUsernameTitle".localized(path: path, table: table))
                             TextField("", text: $username)
                                 .padding(.leading, 10)
                         }
                     }
                     if security != "kWFLocSecurityNoneTitle" {
                         HStack {
-                            Text("kWFLocOtherNetworkPasswordTitle", tableName: table)
+                            Text("kWFLocOtherNetworkPasswordTitle".localized(path: path, table: table))
                             SecureField("", text: $password)
                                 .padding(.leading, 10)
                         }

@@ -22,7 +22,6 @@
 		8319CE4D2B86D380007EC822 /* SafetyCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319CE4C2B86D380007EC822 /* SafetyCheckView.swift */; };
 		8319CE512B86DF8A007EC822 /* AppleAdvertisingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319CE502B86DF8A007EC822 /* AppleAdvertisingView.swift */; };
 		831C80412CA4998500306574 /* RecordSlomoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831C80402CA4998500306574 /* RecordSlomoView.swift */; };
-		832877FB2CAEEA7E00013B0B /* WiFiKitUILocalizableStrings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 832877FA2CAEEA7E00013B0B /* WiFiKitUILocalizableStrings.xcstrings */; };
 		832928492B85779D006611CF /* TrackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832928482B85779D006611CF /* TrackingView.swift */; };
 		8329284B2B8578F4006611CF /* AppPermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8329284A2B8578F4006611CF /* AppPermissionsView.swift */; };
 		8329284E2B8580B3006611CF /* HeadphoneAudioLevelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8329284D2B8580B3006611CF /* HeadphoneAudioLevelsView.swift */; };
@@ -254,7 +253,6 @@
 		8319CE4C2B86D380007EC822 /* SafetyCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyCheckView.swift; sourceTree = "<group>"; };
 		8319CE502B86DF8A007EC822 /* AppleAdvertisingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAdvertisingView.swift; sourceTree = "<group>"; };
 		831C80402CA4998500306574 /* RecordSlomoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSlomoView.swift; sourceTree = "<group>"; };
-		832877FA2CAEEA7E00013B0B /* WiFiKitUILocalizableStrings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = WiFiKitUILocalizableStrings.xcstrings; sourceTree = "<group>"; };
 		832928482B85779D006611CF /* TrackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingView.swift; sourceTree = "<group>"; };
 		8329284A2B8578F4006611CF /* AppPermissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPermissionsView.swift; sourceTree = "<group>"; };
 		8329284D2B8580B3006611CF /* HeadphoneAudioLevelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadphoneAudioLevelsView.swift; sourceTree = "<group>"; };
@@ -1005,7 +1003,6 @@
 				836CDF922CB602B300B1C5B2 /* Restrictions.xcstrings */,
 				834CA6E92D62AE93006792AE /* UserNotificationsKit.xcstrings */,
 				83AB1D602D5E7656005F0B63 /* UserNotificationsUIKit.xcstrings */,
-				832877FA2CAEEA7E00013B0B /* WiFiKitUILocalizableStrings.xcstrings */,
 				83A160272DD7C9BF00CEFE0C /* WirelessModemSettings.xcstrings */,
 			);
 			path = Localization;
@@ -1298,7 +1295,6 @@
 				834196272CB89D8F0038183D /* PSSystemPolicy.xcstrings in Resources */,
 				8331016D2CD14BDE00C6C3B3 /* RatingProviders.xcstrings in Resources */,
 				83E748B22CC6BDDE0081D660 /* LocalizedStrings.xcstrings in Resources */,
-				832877FB2CAEEA7E00013B0B /* WiFiKitUILocalizableStrings.xcstrings in Resources */,
 				835646062D9C47F000DAB406 /* iOSReadMe.html in Resources */,
 				83C79B932CE331A500F49B4F /* Localizable.xcstrings in Resources */,
 			);

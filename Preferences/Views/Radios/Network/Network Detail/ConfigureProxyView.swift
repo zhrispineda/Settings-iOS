@@ -18,14 +18,15 @@ struct ConfigureProxyView: View {
     @State private var password = ""
     @State private var proxyURL = ""
     let options = ["kWFLocSettingsProxyConfigOffTitle", "kWFLocSettingsIPV4ConfigureManual", "kWFLocSettingsProxyConfigAutomaticTitle"]
+    let path = "/System/Library/PrivateFrameworks/WiFiKitUI.framework"
     let table = "WiFiKitUILocalizableStrings"
     
     var body: some View {
-        CustomList(title: "kWFLocSettingsProxyConfigureTitle".localize(table: table)) {
+        CustomList(title: "kWFLocSettingsProxyConfigureTitle".localized(path: path, table: table)) {
             Section {
-                Picker("kWFLocSettingsIPConfigureTitle".localize(table: table), selection: $currentSelected) {
+                Picker("kWFLocSettingsIPConfigureTitle".localized(path: path, table: table), selection: $currentSelected) {
                     ForEach(options, id: \.self) { option in
-                        Text(option.localize(table: table))
+                        Text(option.localized(path: path, table: table))
                     }
                 }
                 .pickerStyle(.inline)
@@ -37,7 +38,7 @@ struct ConfigureProxyView: View {
                 Section {
                     // Server
                     HStack {
-                        Text("kWFLocSettingsProxyServerCell", tableName: table)
+                        Text("kWFLocSettingsProxyServerCell".localized(path: path, table: table))
                         TextField(server, text: $server)
                             .autocorrectionDisabled()
                             .keyboardType(.URL)
@@ -46,18 +47,18 @@ struct ConfigureProxyView: View {
                     }
                     // Port
                     HStack {
-                        Text("kWFLocSettingsProxyPortCell", tableName: table)
+                        Text("kWFLocSettingsProxyPortCell".localized(path: path, table: table))
                         TextField(port, text: $port)
                             .keyboardType(.numberPad)
                             .multilineTextAlignment(.trailing)
                     }
                     // Authentication
-                    Toggle("kWFLocSettingsProxyAuthenticationCell".localize(table: table), isOn: $authentication)
+                    Toggle("kWFLocSettingsProxyAuthenticationCell".localized(path: path, table: table), isOn: $authentication)
                     
                     if authentication {
                         // Username
                         HStack {
-                            Text("kWFLocSettingsProxyUsernameCell", tableName: table)
+                            Text("kWFLocSettingsProxyUsernameCell".localized(path: path, table: table))
                             TextField(username, text: $username)
                                 .autocorrectionDisabled()
                                 .multilineTextAlignment(.trailing)
@@ -65,20 +66,20 @@ struct ConfigureProxyView: View {
                         }
                         // Password
                         HStack {
-                            Text("kWFLocSettingsProxyPasswordCell", tableName: table)
+                            Text("kWFLocSettingsProxyPasswordCell".localized(path: path, table: table))
                             SecureField(password, text: $password)
                                 .multilineTextAlignment(.trailing)
                         }
                     }
                 } footer: {
                     if authentication {
-                        Text("kWFLocProxyAuthenticationWarningFooter", tableName: table)
+                        Text("kWFLocProxyAuthenticationWarningFooter".localized(path: path, table: table))
                     }
                 }
             case "kWFLocSettingsProxyConfigAutomaticTitle": // Automatic
                 // URL
                 HStack {
-                    Text("kWFLocSettingsProxyURLCell", tableName: table)
+                    Text("kWFLocSettingsProxyURLCell".localized(path: path, table: table))
                     TextField(proxyURL, text: $proxyURL)
                         .autocorrectionDisabled()
                         .keyboardType(.URL)
@@ -96,7 +97,7 @@ struct ConfigureProxyView: View {
             }
         }
         .toolbar {
-            Button("OK".localize(table: "General")) {
+            Button("kWFGlobalProxyCredSave".localized(path: path, table: table)) {
                 selected = currentSelected
                 dismiss()
             }

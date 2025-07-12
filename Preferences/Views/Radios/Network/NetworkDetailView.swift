@@ -13,6 +13,7 @@ struct NetworkDetailView: View {
     @State private var selectedIPV4AddressMethod = "kWFLocSettingsIPV4ConfigureAutomatic"
     @State private var selectedDNSMethod = "kWFLocSettingsDNSConfigureAutomatic"
     @State private var selectedProxyMethod = "kWFLocSettingsProxyConfigOffTitle"
+    let path = "/System/Library/PrivateFrameworks/WiFiKitUI.framework"
     let table = "WiFiKitUILocalizableStrings"
     let MACAddress = generateRandomAddress()
     var name = ""
@@ -22,18 +23,18 @@ struct NetworkDetailView: View {
             Section {
                 if name.isEmpty {
                     // Join This Network
-                    Button("kWFLocSettingJoinNetworkTitle".localize(table: table)) {
+                    Button("kWFLocSettingJoinNetworkTitle".localized(path: path, table: table)) {
                         dismiss()
                     }
                 } else {
                     // Forget This Network
-                    Button("kWFLocSettingForgetNetworkTitle".localize(table: table)) {}
+                    Button("kWFLocSettingForgetNetworkTitle".localized(path: path, table: table)) {}
                 }
             }
             
             Section {
                 // Private Wi-Fi Address
-                SettingsLink("KWFLocSettingRandomMACSwitchTitle".localize(table: table), status: "kWFLocRandomMACStaticOption".localize(table: table), destination: SelectOptionList("KWFLocSettingRandomMACSwitchTitle", options: [
+                SettingsLink("KWFLocSettingRandomMACSwitchTitle".localized(path: path, table: table), status: "kWFLocRandomMACStaticOption".localized(path: path, table: table), destination: SelectOptionList("KWFLocSettingRandomMACSwitchTitle", options: [
                     "kWFLocRandomMACOffOption",
                     "kWFLocRandomMACStaticOption",
                     "kWFLocRandomMACRotatingOption"
@@ -42,14 +43,14 @@ struct NetworkDetailView: View {
                 LabeledContent("MACAddress".localized(path: "/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework"), value: MACAddress)
             } footer: {
                 VStack(alignment: .leading) {
-                    Text("kWFLocPirvateAddressFooterMainTitle", tableName: table)
+                    Text("kWFLocPrivateAddressFooterMainTitle".localized(path: path, table: table))
                     switch privateAddressOption {
                     case "kWFLocRandomMACOffOption":
-                        Text("kWFLocPirvateAddressFooterOffDetail", tableName: table)
+                        Text("kWFLocPrivateAddressFooterOffDetail".localized(path: path, table: table))
                     case "kWFLocRandomMACStaticOption":
-                        Text("kWFLocPirvateAddressFooterStaticDetail", tableName: table)
+                        Text("kWFLocPrivateAddressFooterStaticDetail".localized(path: path, table: table))
                     case "kWFLocRandomMACRotatingOption":
-                        Text("kWFLocPirvateAddressFooterRotatingDetail", tableName: table)
+                        Text("kWFLocPrivateAddressFooterRotatingDetail".localized(path: path, table: table))
                     default:
                         EmptyView()
                     }
@@ -58,23 +59,23 @@ struct NetworkDetailView: View {
             
             // IPv4 Address
             Section {
-                SettingsLink("kWFLocSettingsIPConfigureTitle".localize(table: table), status: selectedIPV4AddressMethod.localize(table: table), destination: ConfigureIPView(selected: $selectedIPV4AddressMethod))
+                SettingsLink("kWFLocSettingsIPConfigureTitle".localized(path: path, table: table), status: selectedIPV4AddressMethod.localize(table: table), destination: ConfigureIPView(selected: $selectedIPV4AddressMethod))
             } header: {
-                Text("kWFLocSettingsIPSectionTitle", tableName: table)
+                Text("kWFLocSettingsIPSectionTitle".localized(path: path, table: table))
             }
             
             // DNS
             Section {
-                SettingsLink("kWFLocSettingsDNSConfigureButton".localize(table: table), status: selectedDNSMethod.localize(table: table), destination: ConfigureDNSView(selected: $selectedDNSMethod))
+                SettingsLink("kWFLocSettingsDNSConfigureButton".localized(path: path, table: table), status: selectedDNSMethod.localized(path: path, table: table), destination: ConfigureDNSView(selected: $selectedDNSMethod))
             } header: {
-                Text("kWFLocSettingsDNSSectionTitle", tableName: table)
+                Text("kWFLocSettingsDNSSectionTitle".localized(path: path, table: table))
             }
             
             // HTTP Proxy
             Section {
-                SettingsLink("kWFLocSettingsProxyConfigureButton".localize(table: table), status: selectedProxyMethod.localize(table: table), destination: ConfigureProxyView(selected: $selectedProxyMethod))
+                SettingsLink("kWFLocSettingsProxyConfigureButton".localized(path: path, table: table), status: selectedProxyMethod.localized(path: path, table: table), destination: ConfigureProxyView(selected: $selectedProxyMethod))
             } header: {
-                Text("kWFLocSettingsProxySectionTitle", tableName: table)
+                Text("kWFLocSettingsProxySectionTitle".localized(path: path, table: table))
             }
         }
     }

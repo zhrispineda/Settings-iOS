@@ -10,6 +10,7 @@ import SwiftUI
 struct SecurityView: View {
     @Binding var security: String
     @State private var selectedRotation = "kWFLocRandomMACOffOption"
+    let path = "/System/Library/PrivateFrameworks/WiFiKitUI.framework"
     let table = "WiFiKitUILocalizableStrings"
     let options = [
         "kWFLocSecurityNoneTitle",
@@ -23,9 +24,9 @@ struct SecurityView: View {
     ]
     
     var body: some View {
-        CustomList(title: "kWFLocOtherNetworkSecurityTitle".localize(table: table)) {
+        CustomList(title: "kWFLocOtherNetworkSecurityTitle".localized(path: path, table: table)) {
             Section {
-                SettingsLink("KWFLocSettingRandomMACSwitchTitle".localize(table: table),status: selectedRotation.localize(table: table), destination: SelectOptionList("KWFLocSettingRandomMACSwitchTitle", options: [
+                SettingsLink("KWFLocSettingRandomMACSwitchTitle".localized(path: path, table: table),status: selectedRotation.localized(path: path, table: table), destination: SelectOptionList("KWFLocSettingRandomMACSwitchTitle", options: [
                     "kWFLocRandomMACOffOption",
                     "kWFLocRandomMACStaticOption",
                     "kWFLocRandomMACRotatingOption"
@@ -35,7 +36,7 @@ struct SecurityView: View {
             Section {
                 Picker("", selection: $security) {
                     ForEach(options, id: \.self) { option in
-                        Text(option.localize(table: table))
+                        Text(option.localized(path: path, table: table))
                     }
                 }
                 .pickerStyle(.inline)

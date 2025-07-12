@@ -17,14 +17,15 @@ struct ConfigureIPView: View {
     @State private var subnetMask = ""
     @State private var router = ""
     let options = ["kWFLocSettingsIPV4ConfigureAutomatic", "kWFLocSettingsIPV4ConfigureManual", "kWFLocSettingsIPV4ConfigureBootP"]
+    let path = "/System/Library/PrivateFrameworks/WiFiKitUI.framework"
     let table = "WiFiKitUILocalizableStrings"
     
     var body: some View {
-        CustomList(title: "kWFLocSettingsIPConfigureTitle".localize(table: table)) {
+        CustomList(title: "kWFLocSettingsIPConfigureTitle".localized(path: path, table: table)) {
             Section {
-                Picker("kWFLocSettingsIPConfigureTitle".localize(table: table), selection: $currentSelected) {
+                Picker("kWFLocSettingsIPConfigureTitle".localized(path: path, table: table), selection: $currentSelected) {
                     ForEach(options, id: \.self) { option in
-                        Text(option.localize(table: table))
+                        Text(option.localized(path: path, table: table))
                     }
                 }
                 .pickerStyle(.inline)
@@ -36,7 +37,7 @@ struct ConfigureIPView: View {
                 Section {
                     // MARK: Client ID
                     HStack {
-                        Text("kWFLocSettingsClientIDCell", tableName: table)
+                        Text("kWFLocSettingsClientIDCell".localized(path: path, table: table))
                         TextField(clientID, text: $clientID)
                             .autocorrectionDisabled()
                             .textInputAutocapitalization(.never)
@@ -44,10 +45,10 @@ struct ConfigureIPView: View {
                     }
                 }
             case "kWFLocSettingsIPV4ConfigureManual":
-                Section("kWFLocSettingsIPV4ConfigureManualSectionHeader".localize(table: table)) {
+                Section("kWFLocSettingsIPV4ConfigureManualSectionHeader".localized(path: path, table: table)) {
                     // MARK: IP Address
                     HStack {
-                        Text("kWFLocSettingsIPV4AddressCell", tableName: table)
+                        Text("kWFLocSettingsIPV4AddressCell".localized(path: path, table: table))
                         TextField(clientID, text: $clientID, prompt: Text("0.0.0.0"))
                             .focused($focusedIP)
                             .onAppear {
@@ -56,12 +57,12 @@ struct ConfigureIPView: View {
                     }
                     // MARK: Subnet Mask
                     HStack {
-                        Text("kWFLocSettingsSubnetMaskCell", tableName: table)
+                        Text("kWFLocSettingsSubnetMaskCell".localized(path: path, table: table))
                         TextField(subnetMask, text: $subnetMask, prompt: Text("255.255.0.0"))
                     }
                     // MARK: Router
                     HStack {
-                        Text("kWFLocSettingsIPV4RouterCell", tableName: table)
+                        Text("kWFLocSettingsIPV4RouterCell".localized(path: path, table: table))
                         TextField(router, text: $router)
                     }
                 }
@@ -80,7 +81,7 @@ struct ConfigureIPView: View {
             }
         }
         .toolbar {
-            Button("OK".localize(table: "General")) {
+            Button("kWFGlobalProxyCredSave".localized(path: path, table: table)) {
                 selected = currentSelected
                 dismiss()
             }

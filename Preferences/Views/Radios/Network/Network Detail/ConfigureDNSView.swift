@@ -16,14 +16,15 @@ struct ConfigureDNSView: View {
     @State private var DNSServers: [DNSServer] = []
     @State private var searchDomains: [SearchDomain] = []
     let options = ["kWFLocSettingsDNSConfigureAutomatic", "kWFLocSettingsDNSConfigureManual"]
+    let path = "/System/Library/PrivateFrameworks/WiFiKitUI.framework"
     let table = "WiFiKitUILocalizableStrings"
     
     var body: some View {
-        CustomList(title: "kWFLocSettingsDNSConfigureTitle".localize(table: table)) {
+        CustomList(title: "kWFLocSettingsDNSConfigureTitle".localized(path: path, table: table)) {
             Section {
-                Picker("kWFLocSettingsDNSConfigureTitle".localize(table: table), selection: $currentSelected) {
+                Picker("kWFLocSettingsDNSConfigureTitle".localized(path: path, table: table), selection: $currentSelected) {
                     ForEach(options, id: \.self) { option in
-                        Text(option.localize(table: table))
+                        Text(option.localized(path: path, table: table))
                     }
                 }
                 .pickerStyle(.inline)
@@ -31,7 +32,7 @@ struct ConfigureDNSView: View {
             }
             
             // MARK: DNS Servers
-            Section("kWFLocSettingsDNSSectionHeader".localize(table: table)) {
+            Section("kWFLocSettingsDNSSectionHeader".localized(path: path, table: table)) {
                 ForEach(DNSServers) { server in
                     TextField("0.0.0.0", text: serverBinding(for: server))
                         .textInputAutocapitalization(.never)
@@ -53,7 +54,7 @@ struct ConfigureDNSView: View {
                                 Image(systemName: "plus.circle.fill")
                                     .foregroundStyle(.white, .green)
                                     .imageScale(.large)
-                                Text("kWFLocSettingsDNSAddServer", tableName: table)
+                                Text("kWFLocSettingsDNSAddServer".localized(path: path, table: table))
                             }
                         }
                         .foregroundStyle(.primary)
@@ -62,7 +63,7 @@ struct ConfigureDNSView: View {
             }
             
             // MARK: Add Search Domain
-            Section("kWFLocSettingsDNSAddSearchDomain".localize(table: table)) {
+            Section("kWFLocSettingsDNSAddSearchDomain".localized(path: path, table: table)) {
                 ForEach(searchDomains) { domain in
                     TextField("domain.com", text: domainBinding(for: domain))
                         .textInputAutocapitalization(.never)
@@ -84,7 +85,7 @@ struct ConfigureDNSView: View {
                                 Image(systemName: "plus.circle.fill")
                                     .foregroundStyle(.white, .green)
                                     .imageScale(.large)
-                                Text("kWFLocSettingsDNSAddSearchDomain", tableName: table)
+                                Text("kWFLocSettingsDNSAddSearchDomain".localized(path: path, table: table))
                             }
                         }
                         .foregroundStyle(.primary)
@@ -100,7 +101,7 @@ struct ConfigureDNSView: View {
             }
         }
         .toolbar {
-            Button("OK".localize(table: "General")) {
+            Button("kWFGlobalProxyCredSave".localized(path: path, table: table)) {
                 selected = currentSelected
                 dismiss()
             }
