@@ -30,7 +30,7 @@ struct AppPermissionsView: View {
     let privacy = "/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework"
     let dsTable = "Dim-Sum"
     let focusTable = "/System/Library/PreferenceBundles/FocusSettings.bundle"
-    let healthTable = "HealthPrivacySettings"
+    let health = "/System/Library/PreferenceBundles/Privacy/HealthPrivacySettings.bundle"
     let sensorkit = "/System/Library/PreferenceBundles/Privacy/SensorKitPrivacySettings.bundle"
     let wellness = "/System/Library/PrivateFrameworks/HealthToolbox.framework"
     let wellTable = "WellnessDashboard-Localizable"
@@ -54,11 +54,11 @@ struct AppPermissionsView: View {
                 }
             case "HEALTH":
                 Section {} footer: {
-                    Text("\("PRIVACY_DISCLOSURE_FOOTER".localize(table: healthTable)) \n[\("PRIVACY_DISCLOSURE_FOOTER_LEARN_MORE".localize(table: healthTable))](pref://)")
+                    Text("\("PRIVACY_DISCLOSURE_FOOTER".localized(path: health)) \n[\("PRIVACY_DISCLOSURE_FOOTER_LEARN_MORE".localized(path: health))](pref://)")
                 }
                 
                 Section {
-                    NavigationLink("HEADPHONE_AUDIO_LEVELS".localize(table: healthTable), destination: HeadphoneAudioLevelsView())
+                    NavigationLink("HEADPHONE_AUDIO_LEVELS".localized(path: health), destination: HeadphoneAudioLevelsView())
                 }
                 
                 Section {
