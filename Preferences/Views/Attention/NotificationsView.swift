@@ -15,6 +15,7 @@ struct NotificationsView: View {
     @State private var amberAlertsEnabled = true
     @State private var publicSafetyAlertsEnabled = true
     @State private var testAlertsEnabled = false
+    let path = "/System/Library/PreferenceBundles/NotificationsSettings.bundle"
     let table = "NotificationsSettings"
     
     enum NotificationStyle {
@@ -24,7 +25,7 @@ struct NotificationsView: View {
     }
     
     var body: some View {
-        CustomList(title: "TITLE".localize(table: table), topPadding: true) {
+        CustomList(title: "TITLE".localized(path: path, table: table), topPadding: true) {
             // MARK: Display As Section
             Section {
                 HStack {
@@ -45,7 +46,7 @@ struct NotificationsView: View {
                                 RoundedRectangle(cornerRadius: 50.0)
                                     .frame(width: 50, height: 20)
                                     .foregroundStyle(notificationStyle == .count ? .blue : .clear)
-                                Text("NOTIFICATION_LIST_DISPLAY_STYLE_COUNT", tableName: table)
+                                Text("NOTIFICATION_LIST_DISPLAY_STYLE_COUNT".localized(path: path, table: table))
                                     .font(.caption)
                                     .foregroundStyle(notificationStyle == .count ? Color(UIColor.systemBackground) : .primary)
                             }
@@ -71,7 +72,7 @@ struct NotificationsView: View {
                                 RoundedRectangle(cornerRadius: 50.0)
                                     .frame(width: 50, height: 20)
                                     .foregroundStyle(notificationStyle == .stack ? .blue : .clear)
-                                Text("NOTIFICATION_LIST_DISPLAY_STYLE_STACK", tableName: table)
+                                Text("NOTIFICATION_LIST_DISPLAY_STYLE_STACK".localized(path: path, table: table))
                                     .font(.caption)
                                     .foregroundStyle(notificationStyle == .stack ? Color(UIColor.systemBackground) : .primary)
                             }
@@ -97,7 +98,7 @@ struct NotificationsView: View {
                                 RoundedRectangle(cornerRadius: 50.0)
                                     .frame(width: 50, height: 20)
                                     .foregroundStyle(notificationStyle == .list ? .blue : .clear)
-                                Text("NOTIFICATION_LIST_DISPLAY_STYLE_LIST", tableName: table)
+                                Text("NOTIFICATION_LIST_DISPLAY_STYLE_LIST".localized(path: path, table: table))
                                     .font(.caption)
                                     .foregroundStyle(notificationStyle == .list ? Color(UIColor.systemBackground) : .primary)
                             }
@@ -107,34 +108,34 @@ struct NotificationsView: View {
                     Spacer()
                 }
             } header: {
-                Text("NOTIFICATION_LIST_DISPLAY_STYLE_TITLE", tableName: table)
+                Text("NOTIFICATION_LIST_DISPLAY_STYLE_TITLE".localized(path: path, table: table))
             } footer: {
-                Text("NOTIFICATION_LIST_DISPLAY_STYLE_FOOTER", tableName: table)
+                Text("NOTIFICATION_LIST_DISPLAY_STYLE_FOOTER".localized(path: path, table: table))
             }
             
             // MARK: Notification Options Section
             Section {
-                SettingsLink("NOTIFICATION_DELIVERY_SCHEDULED".localize(table: table), status: "OFF".localize(table: table), destination: ScheduledSummaryView())
-                SettingsLink("SHOW_PREVIEWS".localize(table: table), status: previewSelection.localize(table: table), destination: SelectOptionList("SHOW_PREVIEWS", options: ["SHOW_PREVIEW_OPTION_ALWAYS", "SHOW_PREVIEW_OPTION_UNLOCKED", "SHOW_PREVIEW_OPTION_NEVER"], selectedBinding: $previewSelection, selected: "SHOW_PREVIEW_OPTION_UNLOCKED", table: table))
-                SettingsLink("SCREEN_SHARING".localize(table: table), status: (allowNotifications ? "SCREEN_SHARING_NOTIFICATIONS_ON" : "SCREEN_SHARING_NOTIFICATIONS_OFF").localize(table: table), destination: ScreenSharingView(allowNotifications: $allowNotifications))
+                SettingsLink("NOTIFICATION_DELIVERY_SCHEDULED".localized(path: path, table: table), status: "OFF".localized(path: path, table: table), destination: ScheduledSummaryView())
+                SettingsLink("SHOW_PREVIEWS".localized(path: path, table: table), status: previewSelection.localized(path: path, table: table), destination: SelectOptionList("SHOW_PREVIEWS", options: ["SHOW_PREVIEW_OPTION_ALWAYS", "SHOW_PREVIEW_OPTION_UNLOCKED", "SHOW_PREVIEW_OPTION_NEVER"], selectedBinding: $previewSelection, selected: "SHOW_PREVIEW_OPTION_UNLOCKED", table: table))
+                SettingsLink("SCREEN_SHARING".localized(path: path, table: table), status: (allowNotifications ? "SCREEN_SHARING_NOTIFICATIONS_ON" : "SCREEN_SHARING_NOTIFICATIONS_OFF").localized(path: path, table: table), destination: ScreenSharingView(allowNotifications: $allowNotifications))
                 if UIDevice.IntelligenceCapability {
-                    SettingsLink("SUMMARIZE_NOTIFICATIONS".localize(table: table), status: "OFF".localize(table: table), destination: SummarizeNotificationsView())
+                    SettingsLink("SUMMARIZE_NOTIFICATIONS".localized(path: path, table: table), status: "OFF".localized(path: path, table: table), destination: SummarizeNotificationsView())
                 }
             }
             
             // MARK: Siri Section
             Section {
-                SettingsLink("SPOKEN_NOTIFICATIONS".localize(table: table), status: "OFF".localize(table: table), destination: AnnounceNotificationsView())
-                NavigationLink("SIRI_SUGGESTIONS".localize(table: table), destination: SiriSuggestionsView())
+                SettingsLink("SPOKEN_NOTIFICATIONS".localized(path: path, table: table), status: "OFF".localized(path: path, table: table), destination: AnnounceNotificationsView())
+                NavigationLink("SIRI_SUGGESTIONS".localized(path: path, table: table), destination: SiriSuggestionsView())
             } header: {
-                Text("SIRI", tableName: table)
+                Text("SIRI".localized(path: path, table: table))
             }
             
             // MARK: App Notifications Section
             Section {
                 SLink("Photos", icon: "applePhotos", subtitle: "Banners, Sounds, Badges") {}
             } header: {
-                Text("NOTIFICATION_STYLE", tableName: table)
+                Text("NOTIFICATION_STYLE".localized(path: path, table: table))
             }
             
             // MARK: Government Alerts Section

@@ -8,16 +8,16 @@
 import SwiftUI
 
 struct ScreenSharingView: View {
-    // Variables
     @Binding var allowNotifications: Bool
+    let path = "/System/Library/PreferenceBundles/NotificationsSettings.bundle"
     let table = "NotificationsSettings"
     
     var body: some View {
-        CustomList(title: "SCREEN_SHARING".localize(table: table)) {
+        CustomList(title: "SCREEN_SHARING".localized(path: path, table: table)) {
             Section {
-                Toggle("ALLOW_NOTIFICATIONS".localize(table: table), isOn: $allowNotifications)
+                Toggle("ALLOW_NOTIFICATIONS".localized(path: path, table: table), isOn: $allowNotifications)
             } footer: {
-                Text("SCREEN_SHARING_ALLOW_NOTIFICATIONS_FOOTER", tableName: table)
+                Text("SCREEN_SHARING_ALLOW_NOTIFICATIONS_FOOTER".localized(path: path, table: table))
             }
         }
     }

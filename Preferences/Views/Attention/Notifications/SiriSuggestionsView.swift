@@ -9,12 +9,13 @@ import SwiftUI
 
 struct SiriSuggestionsView: View {
     @AppStorage("AllowNotificationsToggle") private var allowNotifications = true
+    let path = "/System/Library/PreferenceBundles/NotificationsSettings.bundle"
     let table = "NotificationsSettings"
     
     var body: some View {
-        CustomList(title: "SIRI_SUGGESTIONS".localize(table: table)) {
+        CustomList(title: "SIRI_SUGGESTIONS".localized(path: path, table: table)) {
             Section {
-                Toggle("ALLOW_NOTIFICATIONS".localize(table: table), isOn: $allowNotifications.animation())
+                Toggle("ALLOW_NOTIFICATIONS".localized(path: path, table: table), isOn: $allowNotifications.animation())
             }
             
             if allowNotifications {

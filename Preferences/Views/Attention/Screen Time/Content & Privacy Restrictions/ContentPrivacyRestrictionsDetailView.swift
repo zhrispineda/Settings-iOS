@@ -54,12 +54,12 @@ struct ContentPrivacyRestrictionsDetailView: View {
                     VStack(alignment: .leading) {
                         Text("Full Photo Library Access")
                             .fontWeight(.semibold)
-                        Text("NO_ITEMS", tableName: "LocalizedStrings")
+                        Text("PLLocalizedCountDescriptionNoItemsTitleCase".localized(path: "/System/Library/PrivateFrameworks/PhotoLibraryServicesCore.framework", table: "AssetsLibraryServices"))
                             .foregroundStyle(.secondary)
                     }
                     .padding(3)
                 } footer: {
-                    Text("PHOTOS_AUTH_PHOTOKIT_FOOTER".localized(path: privacy))
+                    Text("PHOTOS_AUTH_PHOTOKIT_FOOTER".localized(path: "/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework", table: "Privacy"))
                 }
             }
             

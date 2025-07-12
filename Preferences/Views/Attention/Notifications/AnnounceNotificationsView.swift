@@ -8,16 +8,16 @@
 import SwiftUI
 
 struct AnnounceNotificationsView: View {
-    // Variables
     @AppStorage("AnnounceNotificationsToggle") private var announceNotifications = false
+    let path = "/System/Library/PreferenceBundles/NotificationsSettings.bundle"
     let table = "NotificationsSettings"
     
     var body: some View {
-        CustomList(title: "SPOKEN_NOTIFICATIONS".localize(table: table)) {
+        CustomList(title: "SPOKEN_NOTIFICATIONS".localized(path: path, table: table)) {
             Section {
-                Toggle("SPOKEN_NOTIFICATIONS".localize(table: table), isOn: .constant(false))
+                Toggle("SPOKEN_NOTIFICATIONS".localized(path: path, table: table), isOn: .constant(false))
             } footer: {
-                Text("SPOKEN_NOTIFICATIONS_FOOTER", tableName: table)
+                Text("SPOKEN_NOTIFICATIONS_FOOTER".localized(path: path, table: table))
             }
         }
     }

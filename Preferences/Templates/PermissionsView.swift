@@ -47,6 +47,7 @@ struct PermissionsView: View {
     @State private var showingSheet = false
     
     let table = "PSSystemPolicy"
+    let notifPath = "/System/Library/PreferenceBundles/NotificationsSettings.bundle"
     let notifTable = "NotificationsSettings"
     let ICBSettings = "/System/Library/PreferenceBundles/ICBSettingsBundle.bundle"
     let privacy = "/System/Library/OnBoardingBundles/com.apple.onboarding.maps.bundle"
@@ -84,7 +85,7 @@ struct PermissionsView: View {
                 }
             }
             if notifications {
-                SLink("NOTIFICATIONS".localize(table: table), icon: "com.apple.graphic-icon.notifications", subtitle: appName == "Maps" ? "\("BANNER_ALERTS".localize(table: notifTable)), \("SOUNDS".localize(table: notifTable))" : "\("BANNER_ALERTS".localize(table: notifTable)), \("SOUNDS".localize(table: notifTable)), \("BADGES".localize(table: notifTable))") {}
+                SLink("TITLE".localized(path: notifPath, table: notifTable), icon: "com.apple.graphic-icon.notifications", subtitle: appName == "Maps" ? "\("BANNER_ALERTS".localized(path: notifPath, table: notifTable)), \("SOUNDS".localized(path: notifPath, table: notifTable))" : "\("BANNER_ALERTS".localized(path: notifPath, table: notifTable)), \("SOUNDS".localized(path: notifPath, table: notifTable)), \("BADGES".localized(path: notifPath, table: notifTable))") {}
             }
             if liveActivity {
                 SLink("LIVE_ACTIVITIES".localize(table: table), icon: "com.apple.graphic-icon.live-activities") {}

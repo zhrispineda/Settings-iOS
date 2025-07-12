@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct ScheduledSummaryView: View {
-    // Variables
     @State private var scheduledSummary = false
+    let path = "/System/Library/PrivateFrameworks/UserNotificationsUIKit.framework"
+    let notif = "/System/Library/PreferenceBundles/NotificationsSettings.bundle"
     let table = "NotificationsSettings"
-    let obTable = "UserNotificationsUIKit"
     
     var body: some View {
-        CustomList(title: "SCHEDULED_DELIVERY".localize(table: "NotificationsSettings")) {
-            Toggle("SCHEDULED_DELIVERY".localize(table: "NotificationsSettings"), isOn: $scheduledSummary)
+        CustomList(title: "SCHEDULED_DELIVERY".localized(path: notif, table: table)) {
+            Toggle("SCHEDULED_DELIVERY".localized(path: notif, table: table), isOn: $scheduledSummary)
         }
         .popover(isPresented: $scheduledSummary) {
             // MARK: Header Image
@@ -31,27 +31,27 @@ struct ScheduledSummaryView: View {
             
             // MARK: Title and Description
             Group {
-                Text("NOTIFICATION_DIGEST_ONBOARDING_INTRODUCTION_TITLE", tableName: obTable)
+                Text("NOTIFICATION_DIGEST_ONBOARDING_INTRODUCTION_TITLE".localized(path: path))
                     .fontWeight(.bold)
                     .font(.title)
                     .padding(.vertical, 10)
-                Text("NOTIFICATION_DIGEST_ONBOARDING_INTRODUCTION_DESCRIPTION", tableName: obTable)
+                Text("NOTIFICATION_DIGEST_ONBOARDING_INTRODUCTION_DESCRIPTION".localized(path: path))
                     .font(.subheadline)
             }
             .multilineTextAlignment(.center)
             .padding(.horizontal, 50)
             
             // MARK: 1st Explainer Title and Body
-            ExplainerView(symbol: "deskclock", color: Color.red, title: "NOTIFICATION_DIGEST_ONBOARDING_INTRODUCTION_EXPLAINER_1_TITLE", message: "NOTIFICATION_DIGEST_ONBOARDING_INTRODUCTION_EXPLAINER_1_BODY", table: obTable)
+            ExplainerView(symbol: "deskclock", color: Color.red, title: "NOTIFICATION_DIGEST_ONBOARDING_INTRODUCTION_EXPLAINER_1_TITLE".localized(path: path), message: "NOTIFICATION_DIGEST_ONBOARDING_INTRODUCTION_EXPLAINER_1_BODY".localized(path: path))
             
             // MARK: 2nd Explainer Title and Body
-            ExplainerView(symbol: "exclamationmark.bubble", color: Color.blue, title: "NOTIFICATION_DIGEST_ONBOARDING_INTRODUCTION_EXPLAINER_2_TITLE", message: "NOTIFICATION_DIGEST_ONBOARDING_INTRODUCTION_EXPLAINER_2_BODY", table: obTable)
+            ExplainerView(symbol: "exclamationmark.bubble", color: Color.blue, title: "NOTIFICATION_DIGEST_ONBOARDING_INTRODUCTION_EXPLAINER_2_TITLE".localized(path: path), message: "NOTIFICATION_DIGEST_ONBOARDING_INTRODUCTION_EXPLAINER_2_BODY".localized(path: path))
             
             Spacer()
             
             // MARK: Continue Button
             Button {} label: {
-                Text("Continue", tableName: table)
+                Text("Continue".localized(path: notif, table: table))
                     .font(.subheadline)
                     .fontWeight(.semibold)
                     .frame(maxWidth: 300, maxHeight: 15)
@@ -63,7 +63,7 @@ struct ScheduledSummaryView: View {
             Button {
                 scheduledSummary.toggle()
             } label: {
-                Text("Set Up Later", tableName: table)
+                Text("Set Up Later".localized(path: notif, table: table))
                     .font(.subheadline)
                     .fontWeight(.semibold)
                     .frame(maxWidth: 300, maxHeight: 15)
@@ -82,7 +82,6 @@ struct ExplainerView: View {
     var color: Color
     var title: String
     var message: String
-    var table: String
     
     var body: some View {
         HStack {
@@ -91,9 +90,9 @@ struct ExplainerView: View {
                 .fontWeight(.semibold)
                 .font(.title)
             VStack(alignment: .leading, spacing: 0) {
-                Text(title.localize(table: table))
+                Text(title)
                     .fontWeight(.semibold)
-                Text(message.localize(table: table))
+                Text(message)
                     .foregroundStyle(.secondary)
             }
             .font(.footnote)
