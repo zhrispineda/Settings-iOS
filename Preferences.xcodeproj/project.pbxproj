@@ -105,7 +105,6 @@
 		837C03092B7F1AE0004D6C71 /* SelectOptionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837C03082B7F1AE0004D6C71 /* SelectOptionList.swift */; };
 		837CDF1F2C2F257F0099402B /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837CDF1E2C2F257F0099402B /* DisplayView.swift */; };
 		837D1E282B96BF9B00EDA7ED /* SelectSignInOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837D1E272B96BF9B00EDA7ED /* SelectSignInOptionView.swift */; };
-		837D24292CD0293C00274D42 /* ScreenTimeSettingsUI.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 837D24282CD0293C00274D42 /* ScreenTimeSettingsUI.xcstrings */; };
 		837F00E62C2CA2F500B98374 /* NameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837F00E52C2CA2F500B98374 /* NameView.swift */; };
 		837F1DC52B8AEC1E00665EAB /* HideAddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837F1DC42B8AEC1E00665EAB /* HideAddressView.swift */; };
 		837F1DCB2B8AEF1A00665EAB /* DownloadsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837F1DCA2B8AEF1A00665EAB /* DownloadsView.swift */; };
@@ -340,7 +339,6 @@
 		837C03082B7F1AE0004D6C71 /* SelectOptionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectOptionList.swift; sourceTree = "<group>"; };
 		837CDF1E2C2F257F0099402B /* DisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
 		837D1E272B96BF9B00EDA7ED /* SelectSignInOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSignInOptionView.swift; sourceTree = "<group>"; };
-		837D24282CD0293C00274D42 /* ScreenTimeSettingsUI.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = ScreenTimeSettingsUI.xcstrings; sourceTree = "<group>"; };
 		837F00E52C2CA2F500B98374 /* NameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameView.swift; sourceTree = "<group>"; };
 		837F1DC42B8AEC1E00665EAB /* HideAddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideAddressView.swift; sourceTree = "<group>"; };
 		837F1DCA2B8AEF1A00665EAB /* DownloadsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsView.swift; sourceTree = "<group>"; };
@@ -1005,7 +1003,6 @@
 				834196262CB89D8F0038183D /* PSSystemPolicy.xcstrings */,
 				8331016C2CD14BDD00C6C3B3 /* RatingProviders.xcstrings */,
 				836CDF922CB602B300B1C5B2 /* Restrictions.xcstrings */,
-				837D24282CD0293C00274D42 /* ScreenTimeSettingsUI.xcstrings */,
 				834CA6E92D62AE93006792AE /* UserNotificationsKit.xcstrings */,
 				83AB1D602D5E7656005F0B63 /* UserNotificationsUIKit.xcstrings */,
 				832877FA2CAEEA7E00013B0B /* WiFiKitUILocalizableStrings.xcstrings */,
@@ -1283,7 +1280,6 @@
 				834F2BF32D6570FC00AD85CF /* SettingsSimulator.gif in Resources */,
 				834CA6EA2D62AE93006792AE /* UserNotificationsKit.xcstrings in Resources */,
 				83AB1D612D5E7656005F0B63 /* UserNotificationsUIKit.xcstrings in Resources */,
-				837D24292CD0293C00274D42 /* ScreenTimeSettingsUI.xcstrings in Resources */,
 				836CDF932CB602B300B1C5B2 /* Restrictions.xcstrings in Resources */,
 				83A851BE2E0A4BD70041A3E6 /* SettingsApp.icon in Resources */,
 				839C6BEF2D9C6A3300F94C6E /* iPadOSReadMeSummary.html in Resources */,

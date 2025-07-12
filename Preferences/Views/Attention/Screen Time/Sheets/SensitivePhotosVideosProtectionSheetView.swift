@@ -8,9 +8,8 @@
 import SwiftUI
 
 struct SensitivePhotosVideosProtectionSheetView: View {
-    // Variables
     @Environment(\.dismiss) private var dismiss
-    let table = "ScreenTimeSettingsUI"
+    let path = "/System/Library/PrivateFrameworks/ScreenTimeSettingsUI.framework"
     
     var body: some View {
         ZStack {
@@ -19,22 +18,23 @@ struct SensitivePhotosVideosProtectionSheetView: View {
                     .font(.system(size: 56))
                     .foregroundStyle(.blue)
                     .symbolRenderingMode(.hierarchical)
-                Text("IntroCommunicationSafetyTitle", tableName: table)
+                Text("IntroCommunicationSafetyTitle".localized(path: path))
                     .fontWeight(.bold)
                     .font(.largeTitle)
                     .padding(.top, 30)
                     .multilineTextAlignment(.center)
-                Text("CommunicationSafetyEDUFeatureDetails", tableName: table)
+                Text("CommunicationSafetyEDUFeatureDetails".localized(path: path))
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 20)
-                Text("[\("IntroCommunicationSafetyLearnMoreButton".localize(table: table))](https://support.apple.com/en-us/HT212850)")
+                Text("[\("IntroCommunicationSafetyLearnMoreButton".localized(path: path))](https://support.apple.com/HT212850)")
                 Spacer()
             }
             .padding(.top, 75)
             .padding(.horizontal, 30)
+            
             VStack(spacing: 20) {
                 Spacer()
-                Button("IntroCommunicationSafetyTurnOnButton".localize(table: table)) {
+                Button("IntroCommunicationSafetyTurnOnButton".localized(path: path)) {
                     dismiss()
                 }
                 .fontWeight(.semibold)
@@ -43,7 +43,7 @@ struct SensitivePhotosVideosProtectionSheetView: View {
                 .background(.blue)
                 .foregroundStyle(.white)
                 .clipShape(RoundedRectangle(cornerRadius: 15.0))
-                Button("CommunicationSafetyEDUNotNow".localize(table: table)) {
+                Button("CommunicationSafetyEDUNotNow".localized(path: path)) {
                     dismiss()
                 }
                 .fontWeight(.semibold)

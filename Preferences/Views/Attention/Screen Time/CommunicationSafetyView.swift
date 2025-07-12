@@ -8,36 +8,46 @@
 import SwiftUI
 
 struct CommunicationSafetyView: View {
-    // Variables
     @State private var communicationSafetyEnabled = false
     @State private var improveCommunicationSafety = false
+    @State private var showingPrivacySheet = false
+    let path = "/System/Library/PrivateFrameworks/ScreenTimeSettingsUI.framework"
+    let privacy = "/System/Library/OnBoardingBundles/com.apple.onboarding.improveCommSafety.bundle"
     let table = "ScreenTimeSettingsUI"
     let onTable = "ImproveSensitiveContentWarning"
     
     var body: some View {
-        CustomList(title: "CommunicationSafetyTitle".localize(table: table), topPadding: true) {
+        CustomList(title: "CommunicationSafetyTitle".localized(path: path), topPadding: true) {
             Section {
-                Toggle("CommunicationSafetyEnableFeatureSpecifierTitle".localize(table: table), isOn: $communicationSafetyEnabled)
+                Toggle("CommunicationSafetyEnableFeatureSpecifierTitle".localized(path: path), isOn: $communicationSafetyEnabled)
             } header: {
-                Text("CommunicationSafetyEnableFeatureGroupSpecifierTitle", tableName: table)
+                Text("CommunicationSafetyEnableFeatureGroupSpecifierTitle".localized(path: path))
             } footer: {
-                Text(.init("CommunicationSafetyEnableFeatureGroupSpecifierFooter".localize(table: table, "[\("CommunicationSafetyLearnMoreFooterLink".localize(table: table))](#)")))
+                Text(.init("CommunicationSafetyEnableFeatureGroupSpecifierFooter".localized(path: path, "[\("CommunicationSafetyLearnMoreFooterLink".localized(path: path))](https://support.apple.com/105069)")))
             }
             
             Section {
-                Button("CommunicationSafetyViewResourcesSpecifierTitle".localize(table: table)) {}
+                Button("CommunicationSafetyViewResourcesSpecifierTitle".localized(path: path)) {}
             } footer: {
-                Text("CommunicationSafetyViewResourcesGroupSpecifierFooter", tableName: table)
+                Text("CommunicationSafetyViewResourcesGroupSpecifierFooter".localized(path: path))
             }
             
             Section {
-                Toggle("CommunicationSafetyEnableAnalyticsSpecifierTitle".localize(table: table), isOn: $improveCommunicationSafety)
+                Toggle("CommunicationSafetyEnableAnalyticsSpecifierTitle".localized(path: path), isOn: $improveCommunicationSafety)
                     .disabled(!communicationSafetyEnabled)
             } header: {
-                Text("CommunicationSafetyAnalyticsGroupSpecifierTitle", tableName: table)
+                Text("CommunicationSafetyAnalyticsGroupSpecifierTitle".localized(path: path))
             } footer: {
-                Text(.init("CommunicationSafetyAnalyticsGroupSpecifierFooter".localize(table: table, "[\("BUTTON_TITLE".localize(table: onTable))](#)")))
+                Text(.init("CommunicationSafetyAnalyticsGroupSpecifierFooter".localized(path: path, "[\("BUTTON_TITLE".localized(path: privacy, table: "ImproveCommunicationSafety"))](pref://privacy)")))
             }
+        }
+        .onOpenURL { url in
+            if url.absoluteString == "pref://privacy" {
+                showingPrivacySheet.toggle()
+            }
+        }
+        .sheet(isPresented: $showingPrivacySheet) {
+            OnBoardingKitView(bundleID: "com.apple.onboarding.improveCommSafety")
         }
     }
 }

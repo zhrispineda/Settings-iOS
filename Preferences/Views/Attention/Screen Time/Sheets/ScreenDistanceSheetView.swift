@@ -8,9 +8,8 @@
 import SwiftUI
 
 struct ScreenDistanceSheetView: View {
-    // Variables
     @Environment(\.dismiss) private var dismiss
-    let table = "ScreenTimeSettingsUI"
+    let path = "/System/Library/PrivateFrameworks/ScreenTimeSettingsUI.framework"
     
     var body: some View {
         ZStack {
@@ -21,23 +20,23 @@ struct ScreenDistanceSheetView: View {
                 Spacer()
             }
             VStack(spacing: 15) {
-                Text("ScreenDistanceViewControllerTitle", tableName: table)
+                Text("ScreenDistanceViewControllerTitle".localized(path: path))
                     .fontWeight(.bold)
                     .multilineTextAlignment(.center)
                     .font(.largeTitle)
                     .padding(.top, 30)
-                Text("ScreenDistanceEnableFeatureGroupSpecifierFooterText", tableName: table)
+                Text("ScreenDistanceEnableFeatureGroupSpecifierFooterText".localized(path: path))
                     .multilineTextAlignment(.center)
             }
             .padding(.horizontal, 40)
             .padding(.top, -50)
             VStack(spacing: 20) {
                 Spacer()
-                Text("ScreenDistanceEDUFeatureButtonTrayCaption", tableName: table)
+                Text("ScreenDistanceEDUFeatureButtonTrayCaption".localized(path: path))
                     .multilineTextAlignment(.center)
                     .font(.caption)
                     .foregroundStyle(.secondary)
-                Button("ScreenDistanceEDUFeatureHowItWorksEnablementButton".localize(table: table)) {
+                Button("ScreenDistanceEDUFeatureHowItWorksEnablementButton".localized(path: path)) {
                     dismiss()
                 }
                 .fontWeight(.semibold)
@@ -46,7 +45,7 @@ struct ScreenDistanceSheetView: View {
                 .background(.blue)
                 .foregroundStyle(.white)
                 .clipShape(RoundedRectangle(cornerRadius: 15.0))
-                Button("ScreenDistanceEDUFeatureNotNowButton".localize(table: table)) {
+                Button("ScreenDistanceEDUFeatureNotNowButton".localized(path: path)) {
                     dismiss()
                 }
                 .fontWeight(.semibold)

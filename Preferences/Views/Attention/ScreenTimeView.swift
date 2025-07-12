@@ -15,14 +15,14 @@ struct ScreenTimeView: View {
     @State private var showingScreenDistanceSheet = false
     @State private var showingCommunicationSafetySheet = false
     @State private var showingAppleAccountSheet = false
-    let table = "ScreenTimeSettingsUI"
+    let path = "/System/Library/PrivateFrameworks/ScreenTimeSettingsUI.framework"
     
     var body: some View {
-        CustomList(title: "AboutScreenTimeTitle".localize(table: table), topPadding: appWebsiteActivityEnabled) {
+        CustomList(title: "AboutScreenTimeTitle".localized(path: path), topPadding: appWebsiteActivityEnabled) {
             if appWebsiteActivityEnabled {
                 Section {
                     VStack {
-                        Text(UIDevice.iPhone ? "NoDataDetailTextLabel_IPHONE" : "NoDataDetailTextLabel_IPAD", tableName: table)
+                        Text(UIDevice.iPhone ? "NoDataDetailTextLabel_IPHONE".localized(path: path) : "NoDataDetailTextLabel_IPAD".localized(path: path))
                             .font(.subheadline)
                             .foregroundStyle(.secondary)
                             .multilineTextAlignment(.center)
@@ -30,37 +30,36 @@ struct ScreenTimeView: View {
                     }
                     .padding(.vertical)
                     .padding(.horizontal, 0)
-                    NavigationLink("SeeAllAppAndWebsiteActivityControlTitle".localize(table: table), destination: AppWebsiteActivityView())
+                    NavigationLink("SeeAllAppAndWebsiteActivityControlTitle".localized(path: path), destination: AppWebsiteActivityView())
                 } header: {
                     Text(UIDevice.current.model)
                 } footer: {
                     HStack(spacing: 5) {
                         Text("Updated today at \(Date.now, format: .dateTime.hour().minute())")
-                        //ProgressView()
                     }
                 }
             } else {
                 Section {
-                    Placard(title: "ScreenTimeGroupSpecifierName".localize(table: table), color: Color.indigo, icon: "hourglass", description: "AboutScreenTimeDetailText".localize(table: table), lightOnly: true, frameY: .constant(0.0), opacity: .constant(1.0))
+                    Placard(title: "ScreenTimeGroupSpecifierName".localized(path: path), color: Color.indigo, icon: "hourglass", description: "AboutScreenTimeDetailText".localized(path: path), lightOnly: true, frameY: .constant(0.0), opacity: .constant(1.0))
                 }
             }
             
             Section {
                 if appWebsiteActivityEnabled {
-                    SLink("AppAndWebsiteActivityEDUDowntimeTitle".localize(table: table), icon: "Downtime80x80", subtitle: "DeviceDowntimeDetailText".localize(table: table)) {
+                    SLink("AppAndWebsiteActivityEDUDowntimeTitle".localized(path: path), icon: "Downtime80x80", subtitle: "DeviceDowntimeDetailText".localized(path: path)) {
                         DowntimeView()
                     }
-                    SLink("AppAndWebsiteActivityEDUAppLimitsTitle".localize(table: table), icon: "App Limits80x80", subtitle: "AppLimitsDetailText".localize(table: table)) {
+                    SLink("AppAndWebsiteActivityEDUAppLimitsTitle".localized(path: path), icon: "App Limits80x80", subtitle: "AppLimitsDetailText".localized(path: path)) {
                         AppLimitsView()
                     }
-                    SLink("AlwaysAllowedSpecifierName".localize(table: table), icon: "AlwaysAllow29x29", subtitle: "AlwaysAllowDetailText".localize(table: table)) {
+                    SLink("AlwaysAllowedSpecifierName".localized(path: path), icon: "AlwaysAllow29x29", subtitle: "AlwaysAllowDetailText".localized(path: path)) {
                         AlwaysAllowedView()
                     }
                 } else {
                     Button {
                         showingAppWebsiteActivitySheet.toggle()
                     } label: {
-                        SLink("AppAndWebsiteActivitySpecifierName".localize(table: table), color: Color.cyan, icon: "chart.bar.xaxis", lightOnly: true, subtitle: "AppAndWebsiteActivitySpecifierSubtitleText".localize(table: table)) {}
+                        SLink("AppAndWebsiteActivitySpecifierName".localized(path: path), color: Color.cyan, icon: "chart.bar.xaxis", lightOnly: true, subtitle: "AppAndWebsiteActivitySpecifierSubtitleText".localized(path: path)) {}
                     }
                     .foregroundStyle(.primary)
                     .sheet(isPresented: $showingAppWebsiteActivitySheet) {
@@ -68,7 +67,7 @@ struct ScreenTimeView: View {
                             .frame(width: 400, height: 730)
                     }
                 }
-                SLink("ScreenDistanceSpecifierName".localize(table: table), color: Color.white, iconColor: Color.blue, icon: "chevron.3.up.perspective", lightOnly: true, subtitle: "ScreenDistanceSpecifierSubtitleText".localize(table: table)) {
+                SLink("ScreenDistanceSpecifierName".localized(path: path), color: Color.white, iconColor: Color.blue, icon: "chevron.3.up.perspective", lightOnly: true, subtitle: "ScreenDistanceSpecifierSubtitleText".localized(path: path)) {
                     ScreenDistanceView()
                         .onAppear {
                             showingScreenDistanceSheet.toggle()
@@ -79,15 +78,14 @@ struct ScreenTimeView: View {
                         .frame(width: 400, height: 730)
                 }
             } header: {
-                Text("LimitUsageGroupSpecifierName", tableName: table)
+                Text("LimitUsageGroupSpecifierName".localized(path: path))
             }
             
             Section {
-                //CommunicationLimitsSpecifierName
-                SLink("CommunicationLimitsSpecifierName".localize(table: table), color: Color.green, icon: "person.crop.circle", lightOnly: true, subtitle: "AADC_CommunicationLimitsDetailText".localize(table: table)) {
+                SLink("CommunicationLimitsSpecifierName".localized(path: path), color: Color.green, icon: "person.crop.circle", lightOnly: true, subtitle: "AADC_CommunicationLimitsDetailText".localized(path: path)) {
                     EmptyView()
                 }
-                SLink("CommunicationSafetyTitle".localize(table: table), color: Color.blue, icon: "bubble.left.and.exclamationmark.bubble.right.fill", lightOnly: true, subtitle: "CommunicationSafetyOffSubtitle".localize(table: table)) {
+                SLink("CommunicationSafetyTitle".localized(path: path), color: Color.blue, icon: "bubble.left.and.exclamationmark.bubble.right.fill", lightOnly: true, subtitle: "CommunicationSafetyOffSubtitle".localized(path: path)) {
                     CommunicationSafetyView()
                         .onAppear {
                             showingCommunicationSafetySheet.toggle()
@@ -98,25 +96,25 @@ struct ScreenTimeView: View {
                         .frame(width: 400, height: 730)
                 }
             } header: {
-                Text("CommunicationGroupSpecifierName", tableName: table)
+                Text("CommunicationGroupSpecifierName".localized(path: path))
             }
             
             Section {
-                SLink("ContentPrivacySpecifierName".localize(table: table), color: Color.red, icon: "nosign", lightOnly: true, subtitle: "ContentPrivacyDetailText".localize(table: table)) {
+                SLink("ContentPrivacySpecifierName".localized(path: path), color: Color.red, icon: "nosign", lightOnly: true, subtitle: "ContentPrivacyDetailText".localized(path: path)) {
                     ContentPrivacyRestrictionsView()
                 }
             } header: {
-                Text("RestrictionsGroupSpecifierName", tableName: table)
+                Text("RestrictionsGroupSpecifierName".localized(path: path))
             }
             
             Section {
-                Button("LockScreenTimeSettingsButtonName".localize(table: table)) {}
+                Button("LockScreenTimeSettingsButtonName".localized(path: path)) {}
             } footer: {
-                Text("EnableScreenTimePasscodeFooterText", tableName: table)
+                Text("EnableScreenTimePasscodeFooterText".localized(path: path))
             }
             
             Section {
-                Button("SignInToiCloudButtonName".localize(table: table)) {
+                Button("SignInToiCloudButtonName".localized(path: path)) {
                     showingAppleAccountSheet.toggle()
                 }
                 .sheet(isPresented: $showingAppleAccountSheet) {
@@ -125,24 +123,24 @@ struct ScreenTimeView: View {
                     }
                 }
             } footer: {
-                Text("SignInToiCloudFooterText", tableName: table)
+                Text("SignInToiCloudFooterText".localized(path: path))
             }
             
             if appWebsiteActivityEnabled {
                 Section {
-                    Button("DisableAppAndWebsiteActivityButtonName".localize(table: table)) {
+                    Button("DisableAppAndWebsiteActivityButtonName".localized(path: path)) {
                         showingDisableScreenTimeDialog.toggle()
                     }
                     .foregroundStyle(.red)
-                    .confirmationDialog("DisableAppAndWebsiteActivityConfirmPrompt".localize(table: table), isPresented: $showingDisableScreenTimeDialog, titleVisibility: .visible) {
-                        Button("DisableAppAndWebsiteActivityButtonName".localize(table: table), role: .destructive) {
+                    .confirmationDialog("DisableAppAndWebsiteActivityConfirmPrompt".localized(path: path), isPresented: $showingDisableScreenTimeDialog, titleVisibility: .visible) {
+                        Button("DisableAppAndWebsiteActivityButtonName".localized(path: path), role: .destructive) {
                             withAnimation {
                                 appWebsiteActivityEnabled.toggle()
                             }
                         }
                     }
                 } footer: {
-                    Text("DisableAppAndWebsiteActivityFooterText", tableName: table)
+                    Text("DisableAppAndWebsiteActivityFooterText".localized(path: path))
                 }
             }
         }

@@ -8,39 +8,38 @@
 import SwiftUI
 
 struct DowntimeView: View {
-    // Variables
     @State private var downtimeEnabled = false
     @State private var scheduledEnabled = false
     @State private var selected = "DeviceDowntimeEveryDaySpecifierName"
     let options = ["DeviceDowntimeEveryDaySpecifierName", "DeviceDowntimeCustomizeDaysSpecifierName"]
     let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-    let table = "ScreenTimeSettingsUI"
+    let path = "/System/Library/PrivateFrameworks/ScreenTimeSettingsUI.framework"
     
     var body: some View {
-        CustomList(title: "AppAndWebsiteActivityEDUDowntimeTitle".localize(table: table)) {
+        CustomList(title: "AppAndWebsiteActivityEDUDowntimeTitle".localized(path: path)) {
             Section {} footer: {
-                Text("DeviceDowntimeTitleFooterText", tableName: table)
+                Text("DeviceDowntimeTitleFooterText".localized(path: path))
             }
             
             Section {
-                Button(downtimeEnabled ? (scheduledEnabled ? "DeviceDowntimeDisableButtonWithScheduleName".localize(table: table) : "DeviceDowntimeDisableButtonWithoutScheduleName".localize(table: table)) : scheduledEnabled ? "DeviceDowntimeEnableButtonWithScheduleName".localize(table: table) : "DeviceDowntimeEnableButtonWithoutScheduleName".localize(table: table)) {
+                Button(downtimeEnabled ? (scheduledEnabled ? "DeviceDowntimeDisableButtonWithScheduleName".localized(path: path) : "DeviceDowntimeDisableButtonWithoutScheduleName".localized(path: path)) : scheduledEnabled ? "DeviceDowntimeEnableButtonWithScheduleName".localized(path: path) : "DeviceDowntimeEnableButtonWithoutScheduleName".localized(path: path)) {
                     downtimeEnabled.toggle()
                 }
                 .tint(downtimeEnabled ? .red : .accent)
             } footer: {
-                Text(downtimeEnabled ? (scheduledEnabled ? "DeviceDowntimeDisableButtonLocalUserWithScheduleFooter".localize(table: table) : "DeviceDowntimeDisableButtonLocalUserWithoutScheduleFooter".localize(table: table)) : scheduledEnabled ? "DeviceDowntimeEnableButtonUnblockedUserWithScheduleFooter".localize(table: table) : "DeviceDowntimeEnableButtonUnblockedUserWithoutScheduleFooter".localize(table: table))
+                Text(downtimeEnabled ? (scheduledEnabled ? "DeviceDowntimeDisableButtonLocalUserWithScheduleFooter".localized(path: path) : "DeviceDowntimeDisableButtonLocalUserWithoutScheduleFooter".localized(path: path)) : scheduledEnabled ? "DeviceDowntimeEnableButtonUnblockedUserWithScheduleFooter".localized(path: path) : "DeviceDowntimeEnableButtonUnblockedUserWithoutScheduleFooter".localized(path: path))
             }
             
             Section {
-                Toggle("DeviceDowntimeScheduledSpecifierName".localize(table: table), isOn: $scheduledEnabled)
+                Toggle("DeviceDowntimeScheduledSpecifierName".localized(path: path), isOn: $scheduledEnabled)
             } footer: {
-                Text("DeviceDowntimeScheduledFooterText", tableName: table)
+                Text("DeviceDowntimeScheduledFooterText".localized(path: path))
             }
             
             if scheduledEnabled {
                 Picker("", selection: $selected) {
                     ForEach(options, id: \.self) {
-                        Text($0.localize(table: table))
+                        Text($0.localized(path: path))
                     }
                 }
                 .pickerStyle(.inline)
@@ -48,7 +47,7 @@ struct DowntimeView: View {
                 Section {
                     if selected == "DeviceDowntimeEveryDaySpecifierName" {
                         Button {} label: {
-                            SettingsLink("AllowanceTimeSpecifierName".localize(table: table), status: "10:00 PM–7:00 AM", destination: EmptyView())
+                            SettingsLink("AllowanceTimeSpecifierName".localized(path: path), status: "10:00 PM–7:00 AM", destination: EmptyView())
                         }
                         .foregroundStyle(.primary)
                     } else {
@@ -60,7 +59,7 @@ struct DowntimeView: View {
                         }
                     }
                 } footer: {
-                    Text("DeviceDowntimeScheduleFooterTextLocal", tableName: table)
+                    Text("DeviceDowntimeScheduleFooterTextLocal".localized(path: path))
                 }
             }
         }

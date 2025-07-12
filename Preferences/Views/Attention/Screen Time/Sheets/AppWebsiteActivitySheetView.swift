@@ -8,10 +8,9 @@
 import SwiftUI
 
 struct AppWebsiteActivitySheetView: View {
-    // Variables
     @Environment(\.dismiss) private var dismiss
     @Binding var appWebsiteActivityEnabled: Bool
-    let table = "ScreenTimeSettingsUI"
+    let path = "/System/Library/PrivateFrameworks/ScreenTimeSettingsUI.framework"
     
     var body: some View {
         ZStack {
@@ -23,11 +22,11 @@ struct AppWebsiteActivitySheetView: View {
                         .symbolRenderingMode(.hierarchical)
                         .scaledToFit()
                         .frame(height: 70)
-                    Text("AppAndWebsiteActivitySpecifierName", tableName: table)
+                    Text("AppAndWebsiteActivitySpecifierName".localized(path: path))
                         .font(.largeTitle)
                         .bold()
                         .multilineTextAlignment(.center)
-                    Text("IntroWelcomeDetail", tableName: table)
+                    Text("IntroWelcomeDetail".localized(path: path))
                 }
                 .padding(40)
                 VStack(alignment: .leading) {
@@ -37,10 +36,10 @@ struct AppWebsiteActivitySheetView: View {
                             .foregroundStyle(.blue)
                             .frame(minWidth: 50)
                         VStack(alignment: .leading) {
-                            Text("IntroWelcomeWeeklyReportsTitle", tableName: table)
+                            Text("IntroWelcomeWeeklyReportsTitle".localized(path: path))
                                 .fontWeight(.semibold)
                                 .font(.subheadline)
-                            Text("IntroWelcomeWeeklyReportsDetail", tableName: table)
+                            Text("IntroWelcomeWeeklyReportsDetail".localized(path: path))
                                 .font(.subheadline)
                                 .foregroundStyle(.secondary)
                         }
@@ -58,10 +57,10 @@ struct AppWebsiteActivitySheetView: View {
                             .frame(width: 34)
                             .frame(minWidth: 50)
                         VStack(alignment: .leading) {
-                            Text("DeviceDowntimeSpecifierName", tableName: table)
+                            Text("DeviceDowntimeSpecifierName".localized(path: path))
                                 .fontWeight(.semibold)
                                 .font(.subheadline)
-                            Text("IntroAppAndWebsiteActivityScheduledDowntimeDetail", tableName: table)
+                            Text("IntroAppAndWebsiteActivityScheduledDowntimeDetail".localized(path: path))
                                 .font(.subheadline)
                                 .foregroundStyle(.secondary)
                         }
@@ -77,10 +76,10 @@ struct AppWebsiteActivitySheetView: View {
                             .foregroundStyle(.blue)
                             .frame(minWidth: 50)
                         VStack(alignment: .leading) {
-                            Text("AppLimitsSpecifierName", tableName: table)
+                            Text("AppLimitsSpecifierName".localized(path: path))
                                 .fontWeight(.semibold)
                                 .font(.subheadline)
-                            Text("AppAndWebsiteActivityEDUAppLimitsDetail", tableName: table)
+                            Text("AppAndWebsiteActivityEDUAppLimitsDetail".localized(path: path))
                                 .font(.subheadline)
                                 .foregroundStyle(.secondary)
                         }
@@ -93,7 +92,7 @@ struct AppWebsiteActivitySheetView: View {
             .padding(.top, -100)
             VStack(spacing: 20) {
                 Spacer()
-                Button("IntroAppAndWebsiteActivityTurnOnButton".localize(table: table)) {
+                Button("IntroAppAndWebsiteActivityTurnOnButton".localized(path: path)) {
                     withAnimation {
                         appWebsiteActivityEnabled.toggle()
                     }
@@ -105,7 +104,7 @@ struct AppWebsiteActivitySheetView: View {
                 .background(.blue)
                 .foregroundStyle(.white)
                 .clipShape(RoundedRectangle(cornerRadius: 15.0))
-                Button("AppAndWebsiteActivityEDUNotNowButton".localize(table: table)) {
+                Button("AppAndWebsiteActivityEDUNotNowButton".localized(path: path)) {
                     dismiss()
                 }
                 .fontWeight(.semibold)

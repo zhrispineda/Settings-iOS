@@ -78,7 +78,7 @@ struct SelectSignInOptionView: View {
             }
         }
         .alert("Could Not Create Apple Account", isPresented: $showingAlert) {
-            Link("Learn More", destination: URL(string: "https://support.apple.com/en-us/101661")!)
+            Link("Learn More", destination: URL(string: "https://support.apple.com/101661")!)
             Button("OK".localized(path: path)) {
                 dismiss()
             }

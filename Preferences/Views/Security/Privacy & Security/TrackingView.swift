@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TrackingView: View {
     @State private var allowAppsRequestTrackingEnabled = true
-    @State private var showingSheet = true
+    @State private var showingSheet = false
     let privacy = "/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework"
     let table = "Privacy"
     

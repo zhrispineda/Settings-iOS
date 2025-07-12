@@ -8,17 +8,16 @@
 import SwiftUI
 
 struct AppLimitsView: View {
-    // Variables
-    let table = "ScreenTimeSettingsUI"
+    let path = "/System/Library/PrivateFrameworks/ScreenTimeSettingsUI.framework"
     
     var body: some View {
-        CustomList(title: "AppAndWebsiteActivityEDUAppLimitsTitle".localize(table: table)) {
+        CustomList(title: "AppAndWebsiteActivityEDUAppLimitsTitle".localized(path: path)) {
             Section {} footer: {
-                Text("AppLimitsFooterText", tableName: table)
+                Text("AppLimitsFooterText".localized(path: path))
             }
             
             Section {
-                Button("AddLimitSpecifierName".localize(table: table)) {}
+                Button("AddLimitSpecifierName".localized(path: path)) {}
             }
         }
     }

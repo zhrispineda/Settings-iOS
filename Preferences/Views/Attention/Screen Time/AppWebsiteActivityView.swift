@@ -8,9 +8,8 @@
 import SwiftUI
 
 struct AppWebsiteActivityView: View {
-    // Variables
     @State private var currentTab: Tab = .week
-    let table = "ScreenTimeSettingsUI"
+    let path = "/System/Library/PrivateFrameworks/ScreenTimeSettingsUI.framework"
     
     enum Tab {
         case week
@@ -20,13 +19,13 @@ struct AppWebsiteActivityView: View {
     var body: some View {
         VStack {
             Picker("Picker", selection: $currentTab) {
-                Text("WeekTitle", tableName: table).tag(Tab.week)
-                Text("DayTitle", tableName: table).tag(Tab.day)
+                Text("WeekTitle".localized(path: path)).tag(Tab.week)
+                Text("DayTitle".localized(path: path)).tag(Tab.day)
             }
             .pickerStyle(SegmentedPickerStyle())
             .padding(20)
             Spacer()
-            Text(UIDevice.iPhone ? "NoDataDetailTextLabel_IPHONE".localize(table: table) : "NoDataDetailTextLabel_IPAD".localize(table: table))
+            Text(UIDevice.iPhone ? "NoDataDetailTextLabel_IPHONE".localized(path: path) : "NoDataDetailTextLabel_IPAD".localized(path: path))
                 .multilineTextAlignment(.center)
                 .foregroundStyle(.secondary)
             Spacer()

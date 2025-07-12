@@ -8,16 +8,15 @@
 import SwiftUI
 
 struct ScreenDistanceView: View {
-    // Variables
     @State private var screenDistanceEnabled = false
-    let table = "ScreenTimeSettingsUI"
+    let path = "/System/Library/PrivateFrameworks/ScreenTimeSettingsUI.framework"
     
     var body: some View {
-        CustomList(title: "ScreenDistanceEDUFeatureTitle".localize(table: table)) {
+        CustomList(title: "ScreenDistanceEDUFeatureTitle".localized(path: path)) {
             Section {
-                Toggle("ScreenDistanceEDUFeatureTitle".localize(table: table), isOn: $screenDistanceEnabled)
+                Toggle("ScreenDistanceEDUFeatureTitle".localized(path: path), isOn: $screenDistanceEnabled)
             } footer: {
-                Text("ScreenDistanceEnableFeatureGroupSpecifierFooterText", tableName: table)
+                Text("ScreenDistanceEnableFeatureGroupSpecifierFooterText".localized(path: path))
             }
         }
     }
