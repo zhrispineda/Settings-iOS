@@ -101,7 +101,7 @@ struct PermissionsView: View {
             }
             if phone {
                 SLink("INCOMING_CALL_STYLE_LIST_BANNER".localized(path: ICBSettings, table: "ICBSettingsBundle"), icon: "com.apple.graphic-icon.incoming-phone-calls", status: "Banner") {}
-                SLink("ANNOUNCE_CALLS_TITLE".localize(table: "AssistantSettings"), icon: "com.apple.graphic-icon.announce-phone-calls", status: "NEVER".localize(table: "MessagesSettings")) {}
+                SLink("ANNOUNCE_CALLS_TITLE".localized(path: "/System/Library/PrivateFrameworks/AssistantSettingsSupport.framework", table: "AssistantSettings"), icon: "com.apple.graphic-icon.announce-phone-calls", status: "NEVER".localized(path: "/System/Library/PrivateFrameworks/MessagesSettingsUI.framework", table: "MessagesSettings")) {}
             }
         } header: {
             Text("ALLOW_ACCESS_FORMAT".localized(path: path, table: table, appName))
