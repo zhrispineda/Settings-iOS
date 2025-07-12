@@ -13,9 +13,8 @@ struct ParentGuardianSignInView: View {
     @State private var showingAlert = false
     @State private var showingOptionsAlert = false
     @State private var username = ""
-    let setupTable = "AppleIDSetup"
-    let table = "AppleID"
-    let UITable = "AppleAccountUI"
+    let setupTable = "/System/Library/PrivateFrameworks/AppleIDSetup.framework"
+    let UITable = "/System/Library/PrivateFrameworks/AppleAccountUI.framework"
     
     var body: some View {
         GeometryReader { geo in
@@ -26,14 +25,14 @@ struct ParentGuardianSignInView: View {
                             .foregroundStyle(.blue)
                             .font(.system(size: 64))
                             .frame(maxWidth: .infinity)
-                        Text("PARENT_SIGN_IN_TITLE".localize(table: setupTable))
+                        Text("PARENT_SIGN_IN_TITLE".localized(path: setupTable))
                             .fixedSize(horizontal: false, vertical: true)
                             .font(.title2)
                             .fontWeight(.bold)
-                        Text("PARENT_SIGN_IN_REASON_REBRAND".localize(table: setupTable, "12"))
+                        Text("PARENT_SIGN_IN_REASON_REBRAND".localized(path: setupTable, "12"))
                             .font(.title2)
                             .foregroundStyle(.secondary)
-                        TextField("LOGIN_FORM_TEXTFIELD_NAME".localize(table: setupTable), text: $username)
+                        TextField("LOGIN_FORM_TEXTFIELD_NAME".localized(path: setupTable), text: $username)
                             .usernameTextStyle()
                     }
                     .padding(.horizontal, 10)
@@ -58,10 +57,11 @@ struct ParentGuardianSignInView: View {
                             }
                             .frame(height: 50)
                         } else {
-                            OBBoldTrayButton("SIGN_IN_BUTTON_CONTINUE".localize(table: UITable)) {
+                            OBBoldTrayButton("SIGN_IN_BUTTON_CONTINUE".localized(path: UITable)) {
                                 signingIn.toggle()
                                 showingAlert.toggle()
                             }
+                            .frame(height: 50)
                             .disabled(username.count < 1)
                         }
                     }
@@ -70,12 +70,12 @@ struct ParentGuardianSignInView: View {
             }
             .background(colorScheme == .light ? .white : Color(UIColor.systemBackground))
             .scrollContentBackground(.hidden)
-            .alert("VERIFICATION_FAILED_TITLE".localize(table: UITable), isPresented: $showingAlert) {
-                Button("SETUP_VIEW_BUTTON_OK".localize(table: setupTable)) {
+            .alert("VERIFICATION_FAILED_TITLE".localized(path: UITable), isPresented: $showingAlert) {
+                Button("SETUP_VIEW_BUTTON_OK".localized(path: setupTable)) {
                     signingIn.toggle()
                 }
             } message: {
-                Text("BAD_NETWORK_ALERT_MESSAGE_REBRAND".localize(table: UITable))
+                Text("BAD_NETWORK_ALERT_MESSAGE_REBRAND".localized(path: UITable))
             }
         }
     }

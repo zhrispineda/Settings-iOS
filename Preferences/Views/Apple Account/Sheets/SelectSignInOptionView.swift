@@ -11,7 +11,7 @@ struct SelectSignInOptionView: View {
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.dismiss) private var dismiss
     @State private var showingAlert = false
-    let table = "AppleIDSetup"
+    let path = "/System/Library/PrivateFrameworks/AppleIDSetup.framework"
     
     var body: some View {
         List {
@@ -19,12 +19,16 @@ struct SelectSignInOptionView: View {
             VStack(alignment: .leading, spacing: 10) {
                 CustomView("AppleIDSetupUI", controller: "AppleIDSetupUI.AISAppleIDMicaView")
                     .frame(height: 100)
-                Text("LOGIN_FORM_TITLE", tableName: table)
+                Text("LOGIN_FORM_TITLE".localized(path: path))
                     .font(.title)
                     .bold()
-                Text("SIGN_IN_OPTIONS_DESCRIPTION", tableName: table)
+                Text("SIGN_IN_OPTIONS_DESCRIPTION".localized(path: path))
                     .font(.title2)
                     .foregroundStyle(.secondary)
+                Button("ACCOUNT_SETUP_CREATE_ACCOUNT_REBRAND".localized(path: path), systemImage: "info.circle.fill") {
+                    showingAlert.toggle()
+                }
+                .labelIconToTitleSpacing(10)
             }
             .listRowBackground(Color.clear)
             
@@ -35,14 +39,16 @@ struct SelectSignInOptionView: View {
                         Button {
                             dismiss()
                         } label: {
-                            SignInMethodButton(image: "ProximitySymbol-iPhone-iPad", title: "SIGN_IN_OPTION_ANOTHER_DEVICE_TITLE", subtitle: "SIGN_IN_OPTION_ANOTHER_DEVICE_SUBTITLE", table: table)
+                            NavigationLink {} label: {
+                                SignInMethodButton(image: "ProximitySymbol-iPhone-iPad", title: "SIGN_IN_OPTION_ANOTHER_DEVICE_TITLE".localized(path: path), subtitle: "SIGN_IN_OPTION_ANOTHER_DEVICE_SUBTITLE".localized(path: path))
+                            }
                         }
                     } else {
                         NavigationLink {
                             ProximityViewController()
                                 .ignoresSafeArea()
                         } label: {
-                            SignInMethodButton(image: "ProximitySymbol-iPhone-iPad", title: "SIGN_IN_OPTION_ANOTHER_DEVICE_TITLE", subtitle: "SIGN_IN_OPTION_ANOTHER_DEVICE_SUBTITLE", table: table)
+                            SignInMethodButton(image: "ProximitySymbol-iPhone-iPad", title: "SIGN_IN_OPTION_ANOTHER_DEVICE_TITLE".localized(path: path), subtitle: "SIGN_IN_OPTION_ANOTHER_DEVICE_SUBTITLE".localized(path: path))
                         }
                     }
                 }
@@ -55,9 +61,8 @@ struct SelectSignInOptionView: View {
                 NavigationLink {
                     AppleAccountLoginView()
                 } label: {
-                    SignInMethodButton(image: "ellipsis.rectangle", title: "DISCOVERING_VIEW_BUTTON_SIGN_IN_MANUAL", subtitle: "SIGN_IN_OPTION_ENTER_PASSWORD_SUBTITLE", table: table)
+                    SignInMethodButton(image: "ellipsis.rectangle", title: "DISCOVERING_VIEW_BUTTON_SIGN_IN_MANUAL".localized(path: path), subtitle: "SIGN_IN_OPTION_ENTER_PASSWORD_SUBTITLE".localized(path: path))
                 }
-                .navigationLinkIndicatorVisibility(.hidden)
                 .listRowBackground(Color(colorScheme == .light ? UIColor.systemGray6 : UIColor.secondarySystemGroupedBackground))
             }
         }
@@ -67,21 +72,14 @@ struct SelectSignInOptionView: View {
         .contentMargins(.horizontal, UIDevice.iPad ? 50 : 30, for: .scrollContent)
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
-                Button("Close") { dismiss() }
-            }
-            
-            ToolbarItem(placement: .bottomBar) {
-                Button {
-                    showingAlert.toggle()
-                } label: {
-                    Text("ACCOUNT_SETUP_CREATE_ACCOUNT_REBRAND", tableName: table)
-                        .fontWeight(.semibold)
+                Button(role: .close) {
+                    dismiss()
                 }
             }
         }
         .alert("Could Not Create Apple Account", isPresented: $showingAlert) {
             Link("Learn More", destination: URL(string: "https://support.apple.com/en-us/101661")!)
-            Button("OK".localize(table: table)) {
+            Button("OK".localized(path: path)) {
                 dismiss()
             }
         } message: {
@@ -95,7 +93,6 @@ struct SignInMethodButton: View {
     let image: String
     let title: String
     let subtitle: String
-    let table: String
     var chevron = false
     
     var body: some View {
@@ -115,9 +112,9 @@ struct SignInMethodButton: View {
             }
             
             VStack(alignment: .leading) {
-                Text(title.localize(table: table))
+                Text(title)
                     .bold()
-                Text(subtitle.localize(table: table))
+                Text(subtitle)
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
             }

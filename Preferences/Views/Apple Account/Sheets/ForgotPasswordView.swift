@@ -13,7 +13,7 @@ struct ForgotPasswordView: View {
     @State private var username = ""
     @State private var showingFailedAlert = false
     @State var guardianMode = false
-    let table = "AppleAccountUI"
+    let path = "/System/Library/PrivateFrameworks/AppleAccountUI.framework"
     
     var body: some View {
         NavigationStack {
@@ -26,14 +26,14 @@ struct ForgotPasswordView: View {
                             .frame(width: 70, height: 90)
                             .frame(maxWidth: .infinity)
                             .padding(.bottom, 30)
-                        Text("SIGN_IN_HELP_ALERT_TITLE_FORGOT_PASSWORD", tableName: table)
+                        Text("SIGN_IN_HELP_ALERT_TITLE_FORGOT_PASSWORD".localized(path: path))
                             .font(.title2)
                             .fontWeight(.bold)
                         Text("Enter your email address or phone number that you use with your account to continue.")
                             .font(.title2)
                             .foregroundStyle(.secondary)
                             .padding(.bottom, 20)
-                        TextField("SIGN_IN_USERNAME_PLACEHOLDER".localize(table: table), text: $username)
+                        TextField("SIGN_IN_USERNAME_PLACEHOLDER".localized(path: path), text: $username)
                             .usernameTextStyle()
                             .onAppear {
                                 if !username.isEmpty {
@@ -62,13 +62,11 @@ struct ForgotPasswordView: View {
                 
                 VStack {
                     Spacer()
-                    ZStack {
-                        OBBoldTrayButton("SIGN_IN_BUTTON_CONTINUE".localize(table: table)) {
-                            showingFailedAlert.toggle()
-                        }
-                        .frame(height: 50)
-                        .disabled(username.count < 1)
+                    OBBoldTrayButton("SIGN_IN_BUTTON_CONTINUE".localized(path: path)) {
+                        showingFailedAlert.toggle()
                     }
+                    .frame(height: 50)
+                    .disabled(username.count < 1)
                 }
                 .padding(.bottom, 50)
                 .padding(.horizontal, 25)
@@ -81,7 +79,7 @@ struct ForgotPasswordView: View {
         }
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
-                Button("SIGN_IN_ACTION_CANCEL".localize(table: table), systemImage: "xmark") {
+                Button(role: .close) {
                     dismiss()
                 }
             }
