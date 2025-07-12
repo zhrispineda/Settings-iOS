@@ -22,7 +22,7 @@ struct CalendarView: View {
         CustomList(title: "CalendarSettingsPlacard_Calendar".localized(path: path, table: table)) {
             Section {
                 Placard(title: "CalendarSettingsPlacard_Calendar".localized(path: path, table: table), icon: "com.apple.mobilecal", description: "Add or remove accounts, manage Siri & Search, and customize how your calendar appears. [Learn more…](%@)".localized(path: path, table: table, "pref://helpkit"), frameY: $frameY, opacity: $opacity)
-                Button("ADD_ACCOUNT".localize(table: "PSSystemPolicy")) {}
+                Button("ADD_ACCOUNT".localized(path: "/System/Library/PrivateFrameworks/Preferences.framework", table: "PSSystemPolicy")) {}
             }
             
             PermissionsView(appName: "CalendarSettingsPlacard_Calendar".localized(path: path, table: table), cellular: false, location: false, notifications: false, cellularEnabled: .constant(false))

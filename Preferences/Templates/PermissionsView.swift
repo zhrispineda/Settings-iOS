@@ -45,7 +45,7 @@ struct PermissionsView: View {
     @State private var faceIDEnabled = true
     @State private var liveActivityEnabled = true
     @State private var showingSheet = false
-    
+    let path = "/System/Library/PrivateFrameworks/Preferences.framework"
     let table = "PSSystemPolicy"
     let notifPath = "/System/Library/PreferenceBundles/NotificationsSettings.bundle"
     let notifTable = "NotificationsSettings"
@@ -56,19 +56,19 @@ struct PermissionsView: View {
     var body: some View {
         Section {
             if focus {
-                IconToggle("FOCUS", isOn: $focusEnabled, icon: "com.apple.graphic-icon.focus", table: table)
+                IconToggle("FOCUS".localized(path: path, table: table), isOn: $focusEnabled, icon: "com.apple.graphic-icon.focus")
             }
             if location {
-                SLink("LOCATION_SERVICES".localize(table: table), icon: "com.apple.graphic-icon.location", status: "NEVER_AUTHORIZATION".localized(path: "/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework", table: "LocationServicesPrivacy")) {}
+                SLink("LOCATION_SERVICES".localized(path: path, table: table), icon: "com.apple.graphic-icon.location", status: "NEVER_AUTHORIZATION".localized(path: "/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework", table: "LocationServicesPrivacy")) {}
             }
             if photos {
-                SLink("PHOTOS".localize(table: table), icon: "com.apple.mobileslideshow", status: "PHOTOS_LIMITED_AUTHORIZATION".localize(table: table)) {}
+                SLink("PHOTOS".localized(path: path, table: table), icon: "com.apple.mobileslideshow", status: "PHOTOS_LIMITED_AUTHORIZATION".localized(path: path, table: table)) {}
             }
             if camera {
-                IconToggle("CAMERA", isOn: $cameraEnabled, icon: "com.apple.graphic-icon.camera", table: table)
+                IconToggle("CAMERA".localized(path: path, table: table), isOn: $cameraEnabled, icon: "com.apple.graphic-icon.camera")
             }
             if faceID {
-                IconToggle("FACE_ID", isOn: $faceIDEnabled, icon: "com.apple.graphic-icon.face-id", table: table)
+                IconToggle("FACE_ID".localized(path: path, table: table), isOn: $faceIDEnabled, icon: "com.apple.graphic-icon.face-id")
             }
             if siri {
                 if UIDevice.IntelligenceCapability {
@@ -88,23 +88,23 @@ struct PermissionsView: View {
                 SLink("TITLE".localized(path: notifPath, table: notifTable), icon: "com.apple.graphic-icon.notifications", subtitle: appName == "Maps" ? "\("BANNER_ALERTS".localized(path: notifPath, table: notifTable)), \("SOUNDS".localized(path: notifPath, table: notifTable))" : "\("BANNER_ALERTS".localized(path: notifPath, table: notifTable)), \("SOUNDS".localized(path: notifPath, table: notifTable)), \("BADGES".localized(path: notifPath, table: notifTable))") {}
             }
             if liveActivity {
-                SLink("LIVE_ACTIVITIES".localize(table: table), icon: "com.apple.graphic-icon.live-activities") {}
+                SLink("LIVE_ACTIVITIES".localized(path: path, table: table), icon: "com.apple.graphic-icon.live-activities") {}
             }
             if liveActivityToggle {
-                IconToggle("LIVE_ACTIVITIES", isOn: $liveActivityEnabled, icon: "com.apple.graphic-icon.live-activities", table: table)
+                IconToggle("LIVE_ACTIVITIES".localized(path: path, table: table), isOn: $liveActivityEnabled, icon: "com.apple.graphic-icon.live-activities")
             }
             if background {
-                IconToggle("BACKGROUND_APP_REFRESH", isOn: $backgroundAppRefreshEnabled, icon: "com.apple.graphic-icon.background-app-refresh", table: table)
+                IconToggle("BACKGROUND_APP_REFRESH", isOn: $backgroundAppRefreshEnabled, icon: "com.apple.graphic-icon.background-app-refresh".localized(path: path, table: table))
             }
             if cellular && UIDevice.CellularTelephonyCapability {
-                IconToggle("CELLULAR_DATA", isOn: $cellularEnabled, icon: "com.apple.graphic-icon.cellular-settings", table: table)
+                IconToggle("CELLULAR_DATA".localized(path: path, table: table), isOn: $cellularEnabled, icon: "com.apple.graphic-icon.cellular-settings")
             }
             if phone {
                 SLink("INCOMING_CALL_STYLE_LIST_BANNER".localized(path: ICBSettings, table: "ICBSettingsBundle"), icon: "com.apple.graphic-icon.incoming-phone-calls", status: "Banner") {}
                 SLink("ANNOUNCE_CALLS_TITLE".localize(table: "AssistantSettings"), icon: "com.apple.graphic-icon.announce-phone-calls", status: "NEVER".localize(table: "MessagesSettings")) {}
             }
         } header: {
-            Text("ALLOW_ACCESS_FORMAT".localize(table: table, appName))
+            Text("ALLOW_ACCESS_FORMAT".localized(path: path, table: table, appName))
         } footer: {
             if appName == "Maps" {
                 Text("[\("BUTTON_TITLE".localized(path: privacy, table: "Maps"))](pref://maps)")
