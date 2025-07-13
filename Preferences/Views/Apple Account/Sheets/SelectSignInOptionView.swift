@@ -40,7 +40,7 @@ struct SelectSignInOptionView: View {
                             dismiss()
                         } label: {
                             NavigationLink {} label: {
-                                SignInMethodButton(image: "ProximitySymbol-iPhone-iPad", title: "SIGN_IN_OPTION_ANOTHER_DEVICE_TITLE".localized(path: path), subtitle: "SIGN_IN_OPTION_ANOTHER_DEVICE_SUBTITLE".localized(path: path))
+                                SignInMethodButton(image: "ProximitySymbol-iPhone-iPad-2", title: "SIGN_IN_OPTION_ANOTHER_DEVICE_TITLE".localized(path: path), subtitle: "SIGN_IN_OPTION_ANOTHER_DEVICE_SUBTITLE_SOLARIUM".localized(path: path))
                             }
                         }
                     } else {
@@ -48,7 +48,7 @@ struct SelectSignInOptionView: View {
                             ProximityViewController()
                                 .ignoresSafeArea()
                         } label: {
-                            SignInMethodButton(image: "ProximitySymbol-iPhone-iPad", title: "SIGN_IN_OPTION_ANOTHER_DEVICE_TITLE".localized(path: path), subtitle: "SIGN_IN_OPTION_ANOTHER_DEVICE_SUBTITLE".localized(path: path))
+                            SignInMethodButton(image: "ProximitySymbol-iPhone-iPad-2", title: "SIGN_IN_OPTION_ANOTHER_DEVICE_TITLE".localized(path: path), subtitle: "SIGN_IN_OPTION_ANOTHER_DEVICE_SUBTITLE_SOLARIUM".localized(path: path))
                         }
                     }
                 }
@@ -94,6 +94,7 @@ struct SignInMethodButton: View {
     let title: String
     let subtitle: String
     var chevron = false
+    let path = "/System/Library/PrivateFrameworks/AppleIDSetupUI.framework"
     
     var body: some View {
         HStack {
@@ -103,12 +104,14 @@ struct SignInMethodButton: View {
                     .foregroundStyle(.blue)
                     .font(.system(size: 40))
                     .frame(width: 65)
-            } else {
-                Image(image)
-                    .resizable()
-                    .scaledToFit()
-                    .foregroundStyle(.blue)
-                    .frame(width: 64)
+            } else if image == "ProximitySymbol-iPhone-iPad-2" {
+                if let asset = UIImage.asset(path: path, name: "ProximitySymbol-iPhone-iPad-2") {
+                    Image(uiImage: asset)
+                        .renderingMode(.template)
+                        .foregroundStyle(.blue)
+                        .font(.system(size: 40))
+                        .frame(width: 65)
+                }
             }
             
             VStack(alignment: .leading) {
