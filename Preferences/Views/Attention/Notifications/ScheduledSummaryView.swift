@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ScheduledSummaryView: View {
+    @Environment(\.colorScheme) private var colorScheme
     @State private var scheduledSummary = false
     let path = "/System/Library/PrivateFrameworks/UserNotificationsUIKit.framework"
     let notif = "/System/Library/PreferenceBundles/NotificationsSettings.bundle"
@@ -23,10 +24,21 @@ struct ScheduledSummaryView: View {
                 Rectangle()
                     .foregroundStyle(.gray)
                     .frame(height: 350)
-                Image(.digestOnboardingIntroductionForeground)
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 150)
+                if let asset = UIImage.asset(path: path, name: "DigestOnboardingIntroduction-Background") {
+                    Image(uiImage: asset)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 175)
+                        .offset(y: 41)
+                        .opacity(0.5)
+                }
+                if let asset = UIImage.asset(path: path, name: colorScheme == .dark ? "DigestOnboardingIntroduction-Dark-Foreground" : "DigestOnboardingIntroduction-Light-Foreground") {
+                    Image(uiImage: asset)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 150)
+                        .offset(y: 45)
+                }
             }
             
             // MARK: Title and Description
