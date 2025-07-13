@@ -8,25 +8,25 @@
 import SwiftUI
 
 struct MoviesView: View {
-    // Variables
     @State private var selected = "Allow All"
     let options = ["Don't Allow", "NR", "G", "PG", "PG-13", "R", "NC-17", "Unrated", "Allow All"]
+    let path = "/System/Library/PrivateFrameworks/ScreenTimeSettingsUI.framework"
     let table = "Restrictions"
     
     @State private var showMoviesCloudEnabled = true
     
     var body: some View {
-        CustomList(title: "MoviesSpecifierName".localize(table: table)) {
+        CustomList(title: "MoviesSpecifierName".localized(path: path, table: table)) {
             Picker("", selection: $selected) {
                 ForEach(options, id: \.self) {
-                    Text($0)
+                    Text($0.localized(path: path, table: table))
                 }
             }
             .pickerStyle(.inline)
             .labelsHidden()
             
             Section {
-                Toggle("UndownloadedMoviesSpecifierName".localize(table: table), isOn: $showMoviesCloudEnabled)
+                Toggle("UndownloadedMoviesSpecifierName".localized(path: path, table: table), isOn: $showMoviesCloudEnabled)
             }
         }
     }

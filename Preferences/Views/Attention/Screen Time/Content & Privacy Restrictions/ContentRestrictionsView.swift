@@ -8,49 +8,49 @@
 import SwiftUI
 
 struct ContentRestrictionsView: View {
-    // Variables
+    let path = "/System/Library/PrivateFrameworks/ScreenTimeSettingsUI.framework"
     let table = "Restrictions"
     let rateTable = "RatingProviders"
     
     var body: some View {
-        CustomList(title: "ContentRestrictionsSpecifierName".localize(table: table), topPadding: true) {
+        CustomList(title: "ContentRestrictionsSpecifierName".localized(path: path, table: table), topPadding: true) {
             Section {
-                SettingsLink("MusicPodcastsNewsWorkoutsSpecifierName".localize(table: table), status: "ExplicitLabel".localize(table: table), destination: SelectOptionList("MusicPodcastsNewsWorkoutsSpecifierName", options: ["CleanLabel", "ExplicitLabel"], selected: "ExplicitLabel", table: table))
-                SettingsLink("MusicVideosSpecifierName".localize(table: table), status: "OnLabel".localize(table: table), destination: SelectOptionList("MusicVideosSpecifierName", options: ["OffLabel", "OnLabel"], selected: "OnLabel", table: table))
-                SettingsLink("MusicProfilesSpecifierName".localize(table: table), status: "OnLabel".localize(table: table), destination: SelectOptionList("Music Videos", options: ["OffLabel", "OnLabel"], selected: "OnLabel", table: table))
-                SettingsLink("MoviesSpecifierName".localize(table: table), status: "AllowAll".localize(table: rateTable), destination: MoviesView())
-                SettingsLink("TVSpecifierName".localize(table: table), status: "AllowAll".localize(table: rateTable), destination: TVView())
-                SettingsLink("BooksSpecifierName".localize(table: table), status: "ExplicitLabel".localize(table: table), destination: SelectOptionList("BooksSpecifierName", options: ["CleanLabel", "ExplicitLabel"], selected: "ExplicitLabel", table: table))
-                SettingsLink("AppsSpecifierName".localize(table: table), status: "17+", destination: AppRestrictionsView())
-                SettingsLink("AppClipsSpecifierName".localize(table: table), status: "Allow".localize(table: table), destination: SelectOptionList("AppClipsSpecifierName", table: table))
+                SettingsLink("MusicPodcastsNewsWorkoutsSpecifierName".localized(path: path, table: table), status: "ExplicitLabel".localized(path: path, table: table), destination: SelectOptionList("MusicPodcastsNewsWorkoutsSpecifierName", options: ["CleanLabel", "ExplicitLabel"], selected: "ExplicitLabel", table: table))
+                SettingsLink("MusicVideosSpecifierName".localized(path: path, table: table), status: "OnLabel".localized(path: path, table: table), destination: SelectOptionList("MusicVideosSpecifierName", options: ["OffLabel", "OnLabel"], selected: "OnLabel", table: table))
+                SettingsLink("MusicProfilesSpecifierName".localized(path: path, table: table), status: "OnLabel".localized(path: path, table: table), destination: SelectOptionList("Music Videos", options: ["OffLabel", "OnLabel"], selected: "OnLabel", table: table))
+                SettingsLink("MoviesSpecifierName".localized(path: path, table: table), status: "AllowAll".localized(path: path, table: rateTable), destination: MoviesView())
+                SettingsLink("TVSpecifierName".localize(table: table), status: "AllowAll".localized(path: path, table: rateTable), destination: TVView())
+                SettingsLink("BooksSpecifierName".localized(path: path, table: table), status: "ExplicitLabel".localized(path: path, table: table), destination: SelectOptionList("BooksSpecifierName", options: ["CleanLabel", "ExplicitLabel"], selected: "ExplicitLabel", table: table))
+                SettingsLink("AppsSpecifierName".localized(path: path, table: table), status: "17+", destination: AppRestrictionsView())
+                SettingsLink("AppClipsSpecifierName".localized(path: path, table: table), status: "Allow".localized(path: path, table: table), destination: SelectOptionList("AppClipsSpecifierName", table: table))
             } header: {
-                Text("AllowedContentLabel", tableName: table)
+                Text("AllowedContentLabel".localized(path: path, table: table))
             }
             
             Section {
-                SettingsLink("WebContentSpecifierName".localize(table: table), status: "UnrestrictedAccessSpecifierName".localize(table: table), destination: WebContentView())
+                SettingsLink("WebContentSpecifierName".localized(path: path, table: table), status: "UnrestrictedAccessSpecifierName".localized(path: path, table: table), destination: WebContentView())
             } header: {
-                Text("WebContentSpecifierName", tableName: table)
+                Text("WebContentSpecifierName".localized(path: path, table: table))
             }
             
             Section {
-                SettingsLink("WebSearchContentSpecifierName".localize(table: table), status: "Allow".localize(table: table), destination: SelectOptionList("Web Search Content", table: table))
-                SettingsLink("ExplicitLanguageSpecifierName".localize(table: table), status: "Allow".localize(table: table), destination: SelectOptionList("ExplicitLanguageSpecifierName", table: table))
+                SettingsLink("WebSearchContentSpecifierName".localized(path: path, table: table), status: "Allow".localized(path: path, table: table), destination: SelectOptionList("Web Search Content", table: table))
+                SettingsLink("ExplicitLanguageSpecifierName".localized(path: path, table: table), status: "Allow".localized(path: path, table: table), destination: SelectOptionList("ExplicitLanguageSpecifierName", table: table))
             } header: {
-                Text("SiriLabel", tableName: table)
+                Text("SiriLabel".localized(path: path, table: table))
             }
             
             Section {
-                SettingsLink("MultiplayerGamesSpecifierName".localize(table: table), status: "AllowWithEveryoneSpecifierName".localize(table: table), destination: SelectOptionList("MultiplayerGamesSpecifierName", options: ["DontAllowLabel", "AllowWithFriendsOnlySpecifierName", "AllowWithEveryoneSpecifierName"], selected: "AllowWithEveryoneSpecifierName", table: table))
-                SettingsLink("AddingFriendsSpecifierName".localize(table: table), status: "Allow".localize(table: table), destination: SelectOptionList("AddingFriendsSpecifierName", table: table))
-                SettingsLink("ConnectWithFriendsSpecifierName".localize(table: table), status: "Allow".localize(table: table), destination: SelectOptionList("ConnectWithFriendsSpecifierName", table: table))
-                SettingsLink("ScreenRecordingSpecifierName".localize(table: table), status: "Allow".localize(table: table), destination: SelectOptionList("ScreenRecordingSpecifierName", table: table))
-                SettingsLink("NearbyMultiplayerSpecifierName".localize(table: table), status: "Allow".localize(table: table), destination: SelectOptionList("NearbyMultiplayerSpecifierName", table: table))
-                SettingsLink("PrivateMessagingSpecifierName".localize(table: table), status: "Allow".localize(table: table), destination: SelectOptionList("PrivateMessagingSpecifierName", table: table))
-                SettingsLink("ProfilePrivacyChangesSpecifierName".localize(table: table), status: "Allow".localize(table: table), destination: SelectOptionList("ProfilePrivacyChangesSpecifierName", table: table))
-                SettingsLink("AvatarNicknameChangesSpecifierName".localize(table: table), status: "Allow".localize(table: table), destination: SelectOptionList("AvatarNicknameChangesSpecifierName", table: table))
+                SettingsLink("MultiplayerGamesSpecifierName".localized(path: path, table: table), status: "AllowWithEveryoneSpecifierName".localized(path: path, table: table), destination: SelectOptionList("MultiplayerGamesSpecifierName", options: ["DontAllowLabel", "AllowWithFriendsOnlySpecifierName", "AllowWithEveryoneSpecifierName"], selected: "AllowWithEveryoneSpecifierName", table: table))
+                SettingsLink("AddingFriendsSpecifierName".localized(path: path, table: table), status: "Allow".localized(path: path, table: table), destination: SelectOptionList("AddingFriendsSpecifierName", table: table))
+                SettingsLink("ConnectWithFriendsSpecifierName".localized(path: path, table: table), status: "Allow".localized(path: path, table: table), destination: SelectOptionList("ConnectWithFriendsSpecifierName", table: table))
+                SettingsLink("ScreenRecordingSpecifierName".localized(path: path, table: table), status: "Allow".localized(path: path, table: table), destination: SelectOptionList("ScreenRecordingSpecifierName", table: table))
+                SettingsLink("NearbyMultiplayerSpecifierName".localized(path: path, table: table), status: "Allow".localized(path: path, table: table), destination: SelectOptionList("NearbyMultiplayerSpecifierName", table: table))
+                SettingsLink("PrivateMessagingSpecifierName".localized(path: path, table: table), status: "Allow".localized(path: path, table: table), destination: SelectOptionList("PrivateMessagingSpecifierName", table: table))
+                SettingsLink("ProfilePrivacyChangesSpecifierName".localized(path: path, table: table), status: "Allow".localized(path: path, table: table), destination: SelectOptionList("ProfilePrivacyChangesSpecifierName", table: table))
+                SettingsLink("AvatarNicknameChangesSpecifierName".localized(path: path, table: table), status: "Allow".localized(path: path, table: table), destination: SelectOptionList("AvatarNicknameChangesSpecifierName", table: table))
             } header: {
-                Text("GameCenterLabel", tableName: table)
+                Text("GameCenterLabel".localized(path: path, table: table))
             }
             
         }

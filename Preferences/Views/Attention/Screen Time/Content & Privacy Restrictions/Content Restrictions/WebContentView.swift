@@ -8,30 +8,29 @@
 import SwiftUI
 
 struct WebContentView: View {
-    // Variables
     @State private var selected = "UnrestrictedAccessSpecifierName"
-    let options = ["UnrestrictedAccessSpecifierName", "LimitAdultWebsitesSpecifierName", "AllowedWebsitesSpecifierName"]
-    
     @State private var allowedWebsites = ["Apple – Start", "CBeebies (by BBC", "Disney", "HowStuffWorks", "National Geographic - Kids", "PBS Kids", "Scholastic.com", "Smithsonian Institution", "Time for Kids"]
+    let options = ["UnrestrictedAccessSpecifierName", "LimitAdultWebsitesSpecifierName", "AllowedWebsitesSpecifierName"]
+    let path = "/System/Library/PrivateFrameworks/ScreenTimeSettingsUI.framework"
     let table = "Restrictions"
     
     var body: some View {
-        CustomList(title: "WebContentSpecifierName".localize(table: table), topPadding: true) {
+        CustomList(title: "WebContentSpecifierName".localized(path: path, table: table), topPadding: true) {
             Section {
                 Picker("", selection: $selected) {
                     ForEach(options, id: \.self) {
-                        Text($0.localize(table: table))
+                        Text($0.localized(path: path, table: table))
                     }
                 }
                 .pickerStyle(.inline)
                 .labelsHidden()
             } header: {
-                Text("WebContentSpecifierName", tableName: table)
+                Text("WebContentSpecifierName".localized(path: path, table: table))
             } footer: {
                 if selected == "AllowedWebsitesSpecifierName" {
-                    Text("WebContentCustomFilterFooterText", tableName: table)
+                    Text("WebContentCustomFilterFooterText".localized(path: path, table: table))
                 } else if selected == "LimitAdultWebsitesSpecifierName" {
-                    Text("WebContentAutoFilterFooterText", tableName: table)
+                    Text("WebContentAutoFilterFooterText".localized(path: path, table: table))
                 }
             }
             
@@ -43,11 +42,11 @@ struct WebContentView: View {
                     ZStack(alignment: .leading) {
                         NavigationLink("", destination: {})
                             .opacity(0)
-                        Text("AddWebsiteButton", tableName: table)
+                        Text("AddWebsiteButton".localized(path: path, table: table))
                             .foregroundStyle(.blue)
                     }
                 } header: {
-                    Text("OnlyAllowLabel", tableName: table)
+                    Text("OnlyAllowLabel".localized(path: path, table: table))
                 }
             }
             
@@ -56,22 +55,22 @@ struct WebContentView: View {
                     ZStack(alignment: .leading) {
                         NavigationLink("", destination: {})
                             .opacity(0)
-                        Text("AddWebsiteButton", tableName: table)
+                        Text("AddWebsiteButton".localized(path: path, table: table))
                             .foregroundStyle(.blue)
                     }
                 } header: {
-                    Text("AlwaysAllowLabel", tableName: table)
+                    Text("AlwaysAllowLabel".localized(path: path, table: table))
                 }
                 
                 Section {
                     ZStack(alignment: .leading) {
                         NavigationLink("", destination: {})
                             .opacity(0)
-                        Text("AddWebsiteButton", tableName: table)
+                        Text("AddWebsiteButton".localized(path: path, table: table))
                             .foregroundStyle(.blue)
                     }
                 } header: {
-                    Text("NeverAllowLabel", tableName: table)
+                    Text("NeverAllowLabel".localized(path: path, table: table))
                 }
             }
         }

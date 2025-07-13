@@ -14,16 +14,17 @@ struct RestrictionsLocationServicesView: View {
     @State private var showingDisableLocationServicesDialog = false
     let path = "/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework"
     let options = ["AllowChangesSpecifierName", "DontAllowChangesSpecifierName"]
+    let restrict = "/System/Library/PrivateFrameworks/ScreenTimeSettingsUI.framework"
     let table = "Restrictions"
     let locTable = "Location Services"
     let privTable = "LocationServicesPrivacy"
     
     var body: some View {
-        CustomList(title: "LocationServicesSpecifierName".localize(table: table)) {
+        CustomList(title: "LocationServicesSpecifierName".localized(path: restrict, table: table)) {
             Section {
-                Picker("AllowChangesLabel".localize(table: table), selection: $selected) {
+                Picker("AllowChangesLabel".localized(path: path, table: table), selection: $selected) {
                     ForEach(options, id: \.self) {
-                        Text($0.localize(table: table))
+                        Text($0.localized(path: restrict, table: table))
                     }
                 }
                 .pickerStyle(.inline)
@@ -33,12 +34,12 @@ struct RestrictionsLocationServicesView: View {
             }
             
             Section {
-                Toggle("LocationServicesSpecifierName".localize(table: table), isOn: $locationServicesEnabled.animation())
-                    .alert("LocationServicesSpecifierName".localize(table: table), isPresented: $showingDisableLocationServicesAlert) {
+                Toggle("LocationServicesSpecifierName".localized(path: restrict, table: table), isOn: $locationServicesEnabled.animation())
+                    .alert("LocationServicesSpecifierName".localized(path: restrict, table: table), isPresented: $showingDisableLocationServicesAlert) {
                         Button("CONFIRM_LOCATION_TURN_OFF".localized(path: path, table: locTable), role: .none) {}
                         Button("CANCEL".localized(path: path, table: locTable), role: .cancel) { locationServicesEnabled.toggle() }
                     } message: {
-                        Text("CONFIRM_LOCATION_TITLE", tableName: locTable)
+                        Text("CONFIRM_LOCATION_TITLE".localized(path: path, table: locTable))
                     }
                     .confirmationDialog("CONFIRM_LOCATION_TITLE".localized(path: path, table: locTable), isPresented: $showingDisableLocationServicesDialog,
                                         titleVisibility: .visible,
@@ -58,7 +59,7 @@ struct RestrictionsLocationServicesView: View {
             
             if locationServicesEnabled {
                 Section {
-                    SLink("AppClipsSpecifierName".localize(table: table), icon: "com.apple.graphic-icon.app-clips") {
+                    SLink("AppClipsSpecifierName".localized(path: restrict, table: table), icon: "com.apple.graphic-icon.app-clips") {
                         AppClipsView()
                     }
                     SettingsLink("AppGenius.bundle", status: "NEVER_AUTHORIZATION".localized(path: path, table: privTable), destination: LocationPermissionsDetailView(title: "AppGenius.bundle", selected: "NEVER_AUTHORIZATION".localize(table: privTable)))
@@ -72,8 +73,8 @@ struct RestrictionsLocationServicesView: View {
                     SLink("LOCATION_SHARING".localized(path: path, table: locTable), icon: "com.", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localized(path: path, table: privTable)) {
                         LocationPermissionsDetailView(title: "LOCATION_SHARING".localized(path: path, table: locTable))
                     }
-                    SLink("SiriDictationSpecifierName".localize(table: table), icon: "com.apple.application-icon.siri", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localized(path: path, table: privTable)) {
-                        LocationPermissionsDetailView(title: "SiriDictationSpecifierName".localize(table: table))
+                    SLink("SiriDictationSpecifierName".localized(path: restrict, table: table), icon: "com.apple.application-icon.siri", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localized(path: path, table: privTable)) {
+                        LocationPermissionsDetailView(title: "SiriDictationSpecifierName".localized(path: restrict, table: table))
                     }
                     SettingsLink("SystemCustomization.bundle", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localized(path: path, table: privTable), location: true, destination: LocationPermissionsDetailView(title: "SystemCustomization.bundle"))
                     SettingsLink("Traffic.bundle", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localized(path: path, table: privTable), destination: LocationPermissionsDetailView(title: "Traffic.bundle"))

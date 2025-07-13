@@ -8,25 +8,24 @@
 import SwiftUI
 
 struct TVView: View {
-    // Variables
     @State private var selected = "Allow All"
+    @State private var showMoviesCloudEnabled = true
     let options = ["DontAllowLabel", "TV-Y", "TV-Y7", "TV-Y7-FV", "TV-G", "TV-PG", "TV-14", "TV-MA", "Allow All"]
+    let path = "/System/Library/PrivateFrameworks/ScreenTimeSettingsUI.framework"
     let table = "Restrictions"
     
-    @State private var showMoviesCloudEnabled = true
-    
     var body: some View {
-        CustomList(title: "TV") {
+        CustomList(title: "TV".localized(path: path, table: table)) {
             Picker("", selection: $selected) {
                 ForEach(options, id: \.self) {
-                    Text($0.localize(table: table))
+                    Text($0.localized(path: path, table: table))
                 }
             }
             .pickerStyle(.inline)
             .labelsHidden()
             
             Section {
-                Toggle("UndownloadedTVSpecifierName".localize(table: table), isOn: $showMoviesCloudEnabled)
+                Toggle("UndownloadedTVSpecifierName".localized(path: path, table: table), isOn: $showMoviesCloudEnabled)
             }
         }
     }

@@ -8,32 +8,32 @@
 import SwiftUI
 
 struct AppInstallationsPurchasesView: View {
-    // Variables
+    let path = "/System/Library/PrivateFrameworks/ScreenTimeSettingsUI.framework"
     let table = "Restrictions"
     
     var body: some View {
-        CustomList(title: "AppsInstallationsAndPurchasesSpecifierName".localize(table: table), topPadding: true) {
+        CustomList(title: "AppsInstallationsAndPurchasesSpecifierName".localized(path: path, table: table), topPadding: true) {
             Section {
-                SettingsLink("InstallingAppsSpecifierName".localize(table: table), status: "Allow".localize(table: table), destination: SelectOptionList("InstallingAppsSpecifierName", table: table))
-                SettingsLink("InstallingUIAppsSpecifierName".localize(table: table), status: "Allow".localize(table: table), destination: SelectOptionList("InstallingUIAppsSpecifierName", table: table))
-                SettingsLink("InstallingMarketplaceAppsSpecifierName".localize(table: table), status: "Allow".localize(table: table), destination: SelectOptionList("InstallingMarketplaceAppsSpecifierName", table: table))
+                SettingsLink("InstallingAppsSpecifierName".localized(path: path, table: table), status: "Allow".localized(path: path, table: table), destination: SelectOptionList("InstallingAppsSpecifierName", table: table))
+                SettingsLink("InstallingUIAppsSpecifierName".localized(path: path, table: table), status: "Allow".localized(path: path, table: table), destination: SelectOptionList("InstallingUIAppsSpecifierName", table: table))
+                SettingsLink("InstallingMarketplaceAppsSpecifierName".localized(path: path, table: table), status: "Allow".localized(path: path, table: table), destination: SelectOptionList("InstallingMarketplaceAppsSpecifierName", table: table))
             } header: {
-                Text("AppInstallationsLabel", tableName: table)
+                Text("AppInstallationsLabel".localized(path: path, table: table))
             } footer: {
-                Text("AppInstallationsDetailText", tableName: table)
+                Text("AppInstallationsDetailText".localized(path: path, table: table))
             }
             
             Section {
-                SettingsLink("IAPSpecifierName".localize(table: table), status: "Allow".localize(table: table), destination: SelectOptionList("IAPSpecifierName", table: table))
-                SettingsLink("RequirePasswordLabel".localize(table: table), status: "DontRequireSpecifierName".localize(table: table), destination: SelectOptionList("RequirePasswordLabel", options: ["AlwaysRequireSpecifierName", "DontRequireSpecifierName"], selected: "DontRequireSpecifierName", table: table))
+                SettingsLink("IAPSpecifierName".localized(path: path, table: table), status: "Allow".localized(path: path, table: table), destination: SelectOptionList("IAPSpecifierName", table: table))
+                SettingsLink("RequirePasswordLabel".localized(path: path, table: table), status: "DontRequireSpecifierName".localized(path: path, table: table), destination: SelectOptionList("RequirePasswordLabel", options: ["AlwaysRequireSpecifierName", "DontRequireSpecifierName"], selected: "DontRequireSpecifierName", table: table))
             } header: {
-                Text("PurchasesLabel", tableName: table)
+                Text("PurchasesLabel".localized(path: path, table: table))
             }
             
             Section {
-                SettingsLink("DeletingAppsSpecifierName".localize(table: table), status: "Allow".localize(table: table), destination: SelectOptionList("DeletingAppsSpecifierName", table: table))
+                SettingsLink("DeletingAppsSpecifierName".localized(path: path, table: table), status: "Allow".localized(path: path, table: table), destination: SelectOptionList("DeletingAppsSpecifierName", table: table))
             } header: {
-                Text("AppManagementLabel", tableName: table)
+                Text("AppManagementLabel".localized(path: path, table: table))
             }
         }
     }

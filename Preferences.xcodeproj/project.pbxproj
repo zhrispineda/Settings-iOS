@@ -40,7 +40,6 @@
 		832EF3AB2B819C2A0066A1BF /* KeyboardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832EF3AA2B819C2A0066A1BF /* KeyboardsView.swift */; };
 		832F517F2BBF4DC900335E5E /* NetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832F517E2BBF4DC900335E5E /* NetworkView.swift */; };
 		832FD83F2BC22EB000E99DEB /* BluetoothView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832FD83E2BC22EB000E99DEB /* BluetoothView.swift */; };
-		8331016D2CD14BDE00C6C3B3 /* RatingProviders.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8331016C2CD14BDD00C6C3B3 /* RatingProviders.xcstrings */; };
 		8335A70C2BC358E8001E199D /* CellularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8335A70B2BC358E8001E199D /* CellularView.swift */; };
 		833854F72C1648CD00339C4F /* SoftwareUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833854F62C1648CD00339C4F /* SoftwareUpdateView.swift */; };
 		833A44EF2C6E75BF003076F5 /* SystemFontsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833A44EE2C6E75BF003076F5 /* SystemFontsView.swift */; };
@@ -85,7 +84,6 @@
 		836610662DAC67CD0040E05C /* SettingsLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836610652DAC67CD0040E05C /* SettingsLogger.swift */; };
 		836A7E892B981D8E00FA3223 /* AppleAccountLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836A7E882B981D8E00FA3223 /* AppleAccountLoginView.swift */; };
 		836A7E8B2B995E4000FA3223 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836A7E8A2B995E4000FA3223 /* ForgotPasswordView.swift */; };
-		836CDF932CB602B300B1C5B2 /* Restrictions.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 836CDF922CB602B300B1C5B2 /* Restrictions.xcstrings */; };
 		8372142D2D91C5E30027C51D /* UIWindowExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8372142C2D91C5E30027C51D /* UIWindowExtensions.swift */; };
 		8373E7322B910AF8004285EA /* AppWebsiteActivitySheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8373E7312B910AF8004285EA /* AppWebsiteActivitySheetView.swift */; };
 		8373E7342B9162BD004285EA /* ScreenDistanceSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8373E7332B9162BD004285EA /* ScreenDistanceSheetView.swift */; };
@@ -264,7 +262,6 @@
 		832EF3AA2B819C2A0066A1BF /* KeyboardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardsView.swift; sourceTree = "<group>"; };
 		832F517E2BBF4DC900335E5E /* NetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkView.swift; sourceTree = "<group>"; };
 		832FD83E2BC22EB000E99DEB /* BluetoothView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothView.swift; sourceTree = "<group>"; };
-		8331016C2CD14BDD00C6C3B3 /* RatingProviders.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = RatingProviders.xcstrings; sourceTree = "<group>"; };
 		8335A70B2BC358E8001E199D /* CellularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellularView.swift; sourceTree = "<group>"; };
 		833854F62C1648CD00339C4F /* SoftwareUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftwareUpdateView.swift; sourceTree = "<group>"; };
 		833A44EE2C6E75BF003076F5 /* SystemFontsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemFontsView.swift; sourceTree = "<group>"; };
@@ -310,7 +307,6 @@
 		836610652DAC67CD0040E05C /* SettingsLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLogger.swift; sourceTree = "<group>"; };
 		836A7E882B981D8E00FA3223 /* AppleAccountLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAccountLoginView.swift; sourceTree = "<group>"; };
 		836A7E8A2B995E4000FA3223 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
-		836CDF922CB602B300B1C5B2 /* Restrictions.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Restrictions.xcstrings; sourceTree = "<group>"; };
 		8372142C2D91C5E30027C51D /* UIWindowExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindowExtensions.swift; sourceTree = "<group>"; };
 		8373E7312B910AF8004285EA /* AppWebsiteActivitySheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWebsiteActivitySheetView.swift; sourceTree = "<group>"; };
 		8373E7332B9162BD004285EA /* ScreenDistanceSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenDistanceSheetView.swift; sourceTree = "<group>"; };
@@ -980,8 +976,6 @@
 			children = (
 				83A7E1592CBF047B0037F1FB /* FontSettings.xcstrings */,
 				83C79B922CE331A500F49B4F /* Localizable.xcstrings */,
-				8331016C2CD14BDD00C6C3B3 /* RatingProviders.xcstrings */,
-				836CDF922CB602B300B1C5B2 /* Restrictions.xcstrings */,
 				83A160272DD7C9BF00CEFE0C /* WirelessModemSettings.xcstrings */,
 			);
 			path = Localization;
@@ -1254,7 +1248,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				834F2BF32D6570FC00AD85CF /* SettingsSimulator.gif in Resources */,
-				836CDF932CB602B300B1C5B2 /* Restrictions.xcstrings in Resources */,
 				83A851BE2E0A4BD70041A3E6 /* SettingsApp.icon in Resources */,
 				839C6BEF2D9C6A3300F94C6E /* iPadOSReadMeSummary.html in Resources */,
 				835646082D9C480200DAB406 /* iPadOSReadMe.html in Resources */,
@@ -1266,7 +1259,6 @@
 				8360825D2D13B04E00902254 /* SettingsPhysical.gif in Resources */,
 				833F0AD42B744D190036EAD2 /* Assets.xcassets in Resources */,
 				83A7E15A2CBF047B0037F1FB /* FontSettings.xcstrings in Resources */,
-				8331016D2CD14BDE00C6C3B3 /* RatingProviders.xcstrings in Resources */,
 				835646062D9C47F000DAB406 /* iOSReadMe.html in Resources */,
 				83C79B932CE331A500F49B4F /* Localizable.xcstrings in Resources */,
 			);
