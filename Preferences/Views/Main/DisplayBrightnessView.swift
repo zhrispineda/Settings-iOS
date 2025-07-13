@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct DisplayBrightnessView: View {
-    // Variables
     @Environment(\.colorScheme) var colorScheme
     @AppStorage("AutomaticAppearanceToggle") private var automaticEnabled = false
     @AppStorage("BoldTextToggle") private var boldTextEnabled = false
@@ -45,16 +44,18 @@ struct DisplayBrightnessView: View {
                     } label: {
                         VStack(spacing: 15) {
                             ZStack {
-                                Image(.appearanceLight)
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: UIDevice.iPhone ? 60 : 90)
-                                    .padding(.top, 5)
+                                if let asset = UIImage.asset(path: path, name: "AppearanceLight") {
+                                    Image(uiImage: asset)
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: UIDevice.iPhone ? 60 : 90)
+                                        .padding(.top, 5)
+                                }
                                 Text("9:41")
                                     .font(.footnote)
                                     .fontWeight(.semibold)
                                     .foregroundStyle(.white)
-                                    .padding(.bottom, UIDevice.iPhone ? 70 : 80)
+                                    .padding(.bottom, UIDevice.iPhone ? 75 : 80)
                             }
                             Text("COMPATIBLE_APPEARANCE_CHOICE_LIGHT".localized(path: path, table: table))
                                 .font(.subheadline)
@@ -74,16 +75,18 @@ struct DisplayBrightnessView: View {
                     } label: {
                         VStack(spacing: 15) {
                             ZStack {
-                                Image(.appearanceDark)
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: UIDevice.iPhone ? 60 : 90)
-                                    .padding(.top, 5)
+                                if let asset = UIImage.asset(path: path, name: "AppearanceDark") {
+                                    Image(uiImage: asset)
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: UIDevice.iPhone ? 60 : 90)
+                                        .padding(.top, 5)
+                                }
                                 Text("9:41")
                                     .font(.footnote)
                                     .fontWeight(.semibold)
                                     .foregroundStyle(.white)
-                                    .padding(.bottom, UIDevice.iPhone ? 70 : 80)
+                                    .padding(.bottom, UIDevice.iPhone ? 75 : 80)
                             }
                             Text("COMPATIBLE_APPEARANCE_CHOICE_DARK".localized(path: path, table: table))
                                 .font(.subheadline)

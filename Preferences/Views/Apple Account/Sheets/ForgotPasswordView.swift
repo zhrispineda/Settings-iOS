@@ -20,12 +20,14 @@ struct ForgotPasswordView: View {
             ZStack {
                 List {
                     VStack(alignment: .leading, spacing: 0) {
-                        Image("appleAccount") // Apple Account Logo
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 70, height: 90)
-                            .frame(maxWidth: .infinity)
-                            .padding(.bottom, 30)
+                        if let asset = UIImage.asset(path: path, name: "AppleAccount_Icon_Blue") {
+                            Image(uiImage: asset)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 70, height: 90)
+                                .frame(maxWidth: .infinity)
+                                .padding(.bottom, 30)
+                        }
                         Text("SIGN_IN_HELP_ALERT_TITLE_FORGOT_PASSWORD".localized(path: path))
                             .font(.title2)
                             .fontWeight(.bold)

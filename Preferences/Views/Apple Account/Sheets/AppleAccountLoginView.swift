@@ -23,11 +23,14 @@ struct AppleAccountLoginView: View {
             List {
                 Section {
                     VStack(alignment: .leading, spacing: 10) {
-                        Image("appleAccount") // Apple Account Logo
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 90, height: 130)
-                            .frame(maxWidth: .infinity)
+                        // Apple Account Logo
+                        if let asset = UIImage.asset(path: UITable, name: "AppleAccount_Icon_Blue") {
+                            Image(uiImage: asset)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 90, height: 130)
+                                .frame(maxWidth: .infinity)
+                        }
                         Text("LOGIN_FORM_TITLE".localized(path: setupTable)) // Apple Account Title
                             .font(.title2)
                             .fontWeight(.bold)
