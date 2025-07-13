@@ -21,7 +21,7 @@ struct CameraControlView: View {
         AppSelection(id: "Camera", icon: "com.apple.camera"),
         AppSelection(id: "Code Scanner", icon: "com.apple.BarcodeScanner"),
         AppSelection(id: "Magnifier", icon: "com.apple.Magnifier"),
-        AppSelection(id: "CAMERA_BUTTON_APP_LIST_NO_ACTION", icon: "CSNoActionIcon")
+        AppSelection(id: "CAMERA_BUTTON_APP_LIST_NO_ACTION", icon: "no-action-icon")
     ]
     
     var body: some View {
@@ -53,7 +53,11 @@ struct CameraControlView: View {
                     CustomList(title: selectedApp.localize(table: table)) {
                         Picker("CAPTURE_BUTTON_LAUNCH_APP_TITLE".localized(path: path, table: table), selection: $selectedApp) {
                             ForEach(apps) { app in
-                                SLabel(app.id.localized(path: path, table: table), color: .white, icon: app.icon)
+                                if app.icon == "no-action-icon" {
+                                    SLabel(app.id.localized(path: path, table: table), color: .white, path: path, icon: app.icon)
+                                } else {
+                                    SLabel(app.id.localized(path: path, table: table), color: .white, icon: app.icon)
+                                }
                             }
                         }
                         .pickerStyle(.inline)

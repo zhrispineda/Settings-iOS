@@ -23,13 +23,15 @@ import SwiftUI
 struct SLabel: View {
     var text: String
     var color: Color
+    var path: String
     var icon: String
     var status: String
     var badgeCount: Int
     
-    init(_ text: String, color: Color = Color.accent, icon: String = "", status: String = "", badgeCount: Int = 0) {
+    init(_ text: String, color: Color = Color.accent, path: String = "", icon: String = "", status: String = "", badgeCount: Int = 0) {
         self.text = text
         self.color = color
+        self.path = path
         self.icon = icon
         self.status = status
         self.badgeCount = badgeCount
@@ -38,7 +40,7 @@ struct SLabel: View {
     var body: some View {
         HStack(spacing: 15) {
             if badgeCount == 0 {
-                IconView(id: text, icon: icon, color: color, iconColor: .white)
+                IconView(id: text, path: path, icon: icon, color: color, iconColor: .white)
             }
             
             Text(text)
