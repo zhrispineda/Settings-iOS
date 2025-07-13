@@ -31,4 +31,25 @@ extension UIImage {
         let image = UIImage.perform(selector, with: bundleID)
         return image?.takeUnretainedValue() as? UIImage
     }
+    
+    // MARK: - Experimental
+    @MainActor static func asset(path: String, name: String) -> UIImage? {
+        var newPath = ""
+
+        if UIDevice.IsSimulated {
+            guard let newBuild = MGHelper.read(key: "mZfUC7qo4pURNhyMHZ62RQ") else {
+                return nil
+            }
+            newPath = "/Library/Developer/CoreSimulator/Volumes/iOS_\(newBuild)/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS \(UIDevice.current.systemVersion).simruntime/Contents/Resources/RuntimeRoot\(path)"
+        } else {
+            newPath = path
+        }
+
+        if let bundle = Bundle(path: newPath) {
+            let image = UIImage(named: name, in: bundle, compatibleWith: nil)
+            return image
+        }
+        
+        return nil
+    }
 }

@@ -45,14 +45,28 @@ struct ScreenTimeView: View {
             }
             
             Section {
-                if appWebsiteActivityEnabled {
-                    SLink("AppAndWebsiteActivityEDUDowntimeTitle".localized(path: path), icon: "Downtime80x80", subtitle: "DeviceDowntimeDetailText".localized(path: path)) {
+                if !appWebsiteActivityEnabled {
+                    SLink(
+                        "AppAndWebsiteActivityEDUDowntimeTitle".localized(path: path),
+                        path: path,
+                        icon: "Downtime",
+                        subtitle: "DeviceDowntimeDetailText".localized(path: path)
+                    ) {
                         DowntimeView()
                     }
-                    SLink("AppAndWebsiteActivityEDUAppLimitsTitle".localized(path: path), icon: "App Limits80x80", subtitle: "AppLimitsDetailText".localized(path: path)) {
+                    SLink(
+                        "AppAndWebsiteActivityEDUAppLimitsTitle".localized(path: path),
+                        path: path,
+                        icon: "AppLimits",
+                        subtitle: "AppLimitsDetailText".localized(path: path)
+                    ) {
                         AppLimitsView()
                     }
-                    SLink("AlwaysAllowedSpecifierName".localized(path: path), icon: "AlwaysAllow29x29", subtitle: "AlwaysAllowDetailText".localized(path: path)) {
+                    SLink("AlwaysAllowedSpecifierName".localized(path: path),
+                          path: path,
+                          icon: "AlwaysAllow",
+                          subtitle: "AlwaysAllowDetailText".localized(path: path)
+                    ) {
                         AlwaysAllowedView()
                     }
                 } else {

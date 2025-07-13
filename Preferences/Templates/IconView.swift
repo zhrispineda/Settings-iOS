@@ -13,6 +13,7 @@ import SwiftUI
 struct IconView: View {
     @Environment(\.colorScheme) private var colorScheme
     var id: String = ""
+    var path: String = ""
     var icon: String = ""
     var color: Color = .clear
     var iconColor: Color = .clear
@@ -34,7 +35,15 @@ struct IconView: View {
             }
             
             // Check if `icon` is an image asset, graphic/icon, or fallback to symbol
-            if UIImage(named: icon) != nil {
+            if !path.isEmpty {
+                if let asset = UIImage.asset(path: path, name: icon) {
+                    Image(uiImage: asset)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 30)
+                        .clipShape(RoundedRectangle(cornerRadius: 6))
+                }
+            } else if UIImage(named: icon) != nil {
                 Image(icon)
                     .resizable()
                     .scaledToFit()

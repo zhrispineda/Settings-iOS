@@ -29,6 +29,7 @@ struct SLink<Content: View>: View {
     var text: String
     var color: Color
     var iconColor: Color
+    var path: String
     var icon: String
     var lightOnly: Bool
     var subtitle: String
@@ -36,10 +37,11 @@ struct SLink<Content: View>: View {
     var badgeCount: Int
     var destination: Content
     
-    init(_ text: String, color: Color = Color.clear, iconColor: Color = Color.white, icon: String = "", lightOnly: Bool = false, subtitle: String = "", status: String = "", badgeCount: Int = 0, @ViewBuilder destination: @escaping () -> Content) {
+    init(_ text: String, color: Color = Color.clear, iconColor: Color = Color.white, path: String = "", icon: String = "", lightOnly: Bool = false, subtitle: String = "", status: String = "", badgeCount: Int = 0, @ViewBuilder destination: @escaping () -> Content) {
         self.text = text
         self.color = color
         self.iconColor = iconColor
+        self.path = path
         self.icon = icon
         self.lightOnly = lightOnly
         self.subtitle = subtitle
@@ -48,10 +50,11 @@ struct SLink<Content: View>: View {
         self.destination = destination()
     }
     
-    init(_ text: String, color: Color = Color.clear, iconColor: Color = Color.white, icon: String = "", lightOnly: Bool = false, subtitle: String = "", status: String = "", badgeCount: Int = 0, destination: Content) {
+    init(_ text: String, color: Color = Color.clear, iconColor: Color = Color.white, path: String = "", icon: String = "", lightOnly: Bool = false, subtitle: String = "", status: String = "", badgeCount: Int = 0, destination: Content) {
         self.text = text
         self.color = color
         self.iconColor = iconColor
+        self.path = path
         self.icon = icon
         self.lightOnly = lightOnly
         self.subtitle = subtitle
@@ -65,7 +68,7 @@ struct SLink<Content: View>: View {
             HStack(spacing: 15) {
                 // Icon
                 if icon != "None" {
-                    IconView(id: text, icon: icon, color: color, iconColor: iconColor, lightOnly: lightOnly)
+                    IconView(id: text, path: path, icon: icon, color: color, iconColor: iconColor, lightOnly: lightOnly)
                 }
                 
                 // Title and subtitle text
