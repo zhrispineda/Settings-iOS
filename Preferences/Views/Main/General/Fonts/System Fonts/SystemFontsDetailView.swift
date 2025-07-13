@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SystemFontsDetailView: View {
     var fontName = "Font"
-    let table = "FontSettings"
+    let path = "/System/Library/PreferenceBundles/FontSettings.bundle"
     
     var body: some View {
         CustomList(title: fontName) {
@@ -18,23 +18,23 @@ struct SystemFontsDetailView: View {
                     Text(fontName)
                         .font(.title2)
                         .fontWeight(.semibold)
-                    Text("COPYRIGHT_TITLE", tableName: table)
+                    Text("Copyright".localized(path: path))
                         .font(.caption)
                         .fontWeight(.semibold)
-                    Text("VERSION_TITLE", tableName: table)
+                    Text("Version".localized(path: path))
                         .font(.caption)
                         .fontWeight(.semibold)
                 }
             }
             
-            Section("FACES_PLURAL".localize(table: table)) {
+            Section("%lld typefaces".localized(path: path, 1)) {
                 NavigationLink("Plain") {
                     TabView {
-                        Text("ALPHABET", tableName: table)
+                        Text("ALPHABET".localized(path: path))
                             .padding()
-                        Text("LOREM_IPSUM", tableName: table)
+                        Text("LOREM_IPSUM".localized(path: path))
                             .padding()
-                        Text(String())
+                        Text("")
                     }
                     .tabViewStyle(.page)
                     .indexViewStyle(.page(backgroundDisplayMode: .always))

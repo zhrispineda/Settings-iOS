@@ -8,13 +8,22 @@
 import SwiftUI
 
 struct FontsView: View {
-    // Variables
-    let table = "FontSettings"
+    let path = "/System/Library/PreferenceBundles/FontSettings.bundle"
     
     var body: some View {
-        CustomList(title: "FONT_SETTING_TITLE_PLURAL".localize(table: table)) {
-            NavigationLink("SYSTEM_FONTS".localize(table: table), destination: SystemFontsView())
-            NavigationLink("MY_FONTS".localize(table: table), destination: MyFontsView())
+        CustomList(title: "Fonts".localized(path: path)) {
+            Section {
+                NavigationLink("System Fonts".localized(path: path), destination: SystemFontsView())
+                NavigationLink("My Fonts".localized(path: path), destination: MyFontsView())
+            } footer: {
+                Text("INSTALLED_FONTS_CLARIFICATION".localized(path: path))
+            }
+            
+            Section {
+                Text("More Fonts".localized(path: path))
+            } footer: {
+                Text("MORE_FONTS_CLARIFICATION".localized(path: path))
+            }
         }
     }
 }

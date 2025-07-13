@@ -8,13 +8,12 @@
 import SwiftUI
 
 struct SystemFontsView: View {
-    // Variables
-    @State private var searchText = String()
-    let table = "FontSettings"
+    @State private var searchText = ""
+    let path = "/System/Library/PreferenceBundles/FontSettings.bundle"
     
     var body: some View {
-        CustomList(title: "SYSTEM_FONTS".localize(table: table), topPadding: true) {
-            Section("INSTALLED FONTS".localize(table: table)) {
+        CustomList(title: "System Fonts".localized(path: path), topPadding: true) {
+            Section {
                 ForEach(UIFont.familyNames, id: \.self) { font in
                     NavigationLink(font) {
                         SystemFontsDetailView(fontName: font)
@@ -22,11 +21,7 @@ struct SystemFontsView: View {
                 }
             }
         }
-        .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always))
-        .toolbar {
-            EditButton()
-                .disabled(true)
-        }
+        .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .automatic))
     }
 }
 
