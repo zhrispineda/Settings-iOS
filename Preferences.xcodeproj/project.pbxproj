@@ -144,7 +144,6 @@
 		839C4CDD2D2B8E50007068BF /* LocalizedLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839C4CDC2D2B8E50007068BF /* LocalizedLink.swift */; };
 		839C6BCF2D9C612400F94C6E /* iOSReadMeSummary.html in Resources */ = {isa = PBXBuildFile; fileRef = 839C6BCE2D9C612400F94C6E /* iOSReadMeSummary.html */; };
 		839C6BEF2D9C6A3300F94C6E /* iPadOSReadMeSummary.html in Resources */ = {isa = PBXBuildFile; fileRef = 839C6BEE2D9C6A3300F94C6E /* iPadOSReadMeSummary.html */; };
-		83A160282DD7C9BF00CEFE0C /* WirelessModemSettings.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83A160272DD7C9BF00CEFE0C /* WirelessModemSettings.xcstrings */; };
 		83A36C8D2DB95D7800378E45 /* ConfigureDNSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A36C8C2DB95D7800378E45 /* ConfigureDNSView.swift */; };
 		83A36C8F2DB96E4600378E45 /* ConfigureProxyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A36C8E2DB96E4600378E45 /* ConfigureProxyView.swift */; };
 		83A3E6952CAC3091006F4643 /* FocalLengthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A3E6942CAC3091006F4643 /* FocalLengthView.swift */; };
@@ -370,7 +369,6 @@
 		839C4CDC2D2B8E50007068BF /* LocalizedLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedLink.swift; sourceTree = "<group>"; };
 		839C6BCE2D9C612400F94C6E /* iOSReadMeSummary.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = iOSReadMeSummary.html; sourceTree = "<group>"; };
 		839C6BEE2D9C6A3300F94C6E /* iPadOSReadMeSummary.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = iPadOSReadMeSummary.html; sourceTree = "<group>"; };
-		83A160272DD7C9BF00CEFE0C /* WirelessModemSettings.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = WirelessModemSettings.xcstrings; sourceTree = "<group>"; };
 		83A36C8C2DB95D7800378E45 /* ConfigureDNSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureDNSView.swift; sourceTree = "<group>"; };
 		83A36C8E2DB96E4600378E45 /* ConfigureProxyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureProxyView.swift; sourceTree = "<group>"; };
 		83A3E6942CAC3091006F4643 /* FocalLengthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocalLengthView.swift; sourceTree = "<group>"; };
@@ -962,23 +960,14 @@
 		83B893BE2B8FDBDB005705A3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				83D0B1472CE2F9BA00DDEC69 /* Localization */,
 				835646052D9C47F000DAB406 /* iOSReadMe.html */,
 				835646072D9C480200DAB406 /* iPadOSReadMe.html */,
 				839C6BCE2D9C612400F94C6E /* iOSReadMeSummary.html */,
 				839C6BEE2D9C6A3300F94C6E /* iPadOSReadMeSummary.html */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		83D0B1472CE2F9BA00DDEC69 /* Localization */ = {
-			isa = PBXGroup;
-			children = (
 				83A7E1592CBF047B0037F1FB /* FontSettings.xcstrings */,
 				83C79B922CE331A500F49B4F /* Localizable.xcstrings */,
-				83A160272DD7C9BF00CEFE0C /* WirelessModemSettings.xcstrings */,
 			);
-			path = Localization;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		83D241AB2D5CE70E002061F4 /* Notifications */ = {
@@ -1254,7 +1243,6 @@
 				839C6BCF2D9C612400F94C6E /* iOSReadMeSummary.html in Resources */,
 				834AADB42E071D400034702B /* 26Pad.png in Resources */,
 				834AADB52E071D400034702B /* 26Phone.png in Resources */,
-				83A160282DD7C9BF00CEFE0C /* WirelessModemSettings.xcstrings in Resources */,
 				833F0AD72B744D190036EAD2 /* Preview Assets.xcassets in Resources */,
 				8360825D2D13B04E00902254 /* SettingsPhysical.gif in Resources */,
 				833F0AD42B744D190036EAD2 /* Assets.xcassets in Resources */,

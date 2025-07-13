@@ -15,31 +15,32 @@ struct HotspotView: View {
     @State private var opacity = 0.0
     @State private var showingHelpSheet = false
     @State private var password = ""
+    let path = "/System/Library/PreferenceBundles/WirelessModemSettings.bundle"
     let table = "WirelessModemSettings"
     
     var body: some View {
         CustomList {
-            Placard(title: "MAIN_SPEC_PROVISIONED".localize(table: table), color: .green, icon: "personalhotspot", description: NSLocalizedString("PLACARD_SUBTITLE", tableName: table, comment: "").replacing("helpkit", with: "pref"), frameY: $frameY, opacity: $opacity)
+            Placard(title: "MAIN_SPEC_PROVISIONED".localized(path: path, table: table), icon: "com.apple.graphic-icon.personal-hotspot", description: "PLACARD_SUBTITLE".localized(path: path, table: table).replacing("helpkit", with: "pref"), frameY: $frameY, opacity: $opacity)
             
             // Allow Others to Join
             // Wi-Fi Password
             Section {
-                Toggle("ALLOW_OTHERS".localize(table: table), isOn: $allowOthersJoinEnabled)
-                SettingsLink("WIFI_PASSWORD".localize(table: table, "WIFI"), status: password, destination: EmptyView())
+                Toggle("ALLOW_OTHERS".localized(path: path, table: table), isOn: $allowOthersJoinEnabled)
+                SettingsLink("WIFI_PASSWORD".localized(path: path, table: table, "WIFI"), status: password, destination: EmptyView())
                     .onAppear {
                         password = randomPassword()
                     }
             }
             
             Section {} footer: {
-                Text("TETHERING_TEXT_DEFAULT".localize(table: table, deviceName))
+                Text("TETHERING_TEXT_DEFAULT".localized(path: path, table: table, deviceName))
             }
             
             // Maximize Compatibility
             Section {
-                Toggle("MAXIMIZE_COMPATIBILITY".localize(table: table), isOn: $maximizeCompatibility)
+                Toggle("MAXIMIZE_COMPATIBILITY".localized(path: path, table: table), isOn: $maximizeCompatibility)
             } footer: {
-                Text("MAXIMIZE_COMPATIBILITY_FOOTER", tableName: table)
+                Text("MAXIMIZE_COMPATIBILITY_FOOTER".localized(path: path, table: table))
             }
             
             // To connect using [Wi-Fi/Bluetooth/USB]
@@ -49,9 +50,9 @@ struct HotspotView: View {
                         .font(.title)
                         .frame(width: 50)
                     Text("""
-                        \("CONNECT_OVER_WIFI_LABEL".localize(table: table, "WIFI"))
-                        \("STEP_1".localize(table: table)) \("CONNECT_OVER_WIFI_STEP_1".localize(table: table, deviceName, "WIFI"))
-                        \("STEP_2".localize(table: table)) \("CONNECT_OVER_WIFI_STEP_2".localize(table: table, deviceName, "WIFI"))
+                        \("CONNECT_OVER_WIFI_LABEL".localized(path: path, table: table, "WIFI"))
+                        \("STEP_1".localized(path: path, table: table)) \("CONNECT_OVER_WIFI_STEP_1".localized(path: path, table: table, deviceName, "WIFI"))
+                        \("STEP_2".localized(path: path, table: table)) \("CONNECT_OVER_WIFI_STEP_2".localized(path: path, table: table, "WIFI"))
                         """)
                         .foregroundStyle(.secondary)
                         .font(.footnote)
@@ -64,10 +65,10 @@ struct HotspotView: View {
                         .font(.title)
                         .frame(width: 50)
                     Text("""
-                        \("CONNECT_OVER_BLUETOOTH_LABEL".localize(table: table))
-                        \("STEP_1".localize(table: table)) \("\(UIDevice.iPhone ? "CONNECT_OVER_BLUETOOTH_STEP_1_IPHONE" : "CONNECT_OVER_BLUETOOTH_STEP_1_IPAD")".localize(table: table))
-                        \("STEP_2".localize(table: table)) \("\(UIDevice.iPhone ? "CONNECT_OVER_BLUETOOTH_STEP_2_IPHONE" : "CONNECT_OVER_BLUETOOTH_STEP_2_IPAD")".localize(table: table))
-                        \("STEP_3".localize(table: table)) \("\(UIDevice.iPhone ? "CONNECT_OVER_BLUETOOTH_STEP_3_IPHONE" : "CONNECT_OVER_BLUETOOTH_STEP_3_IPAD")".localize(table: table))
+                        \("CONNECT_OVER_BLUETOOTH_LABEL".localized(path: path, table: table))
+                        \("STEP_1".localized(path: path, table: table)) \("\(UIDevice.iPhone ? "CONNECT_OVER_BLUETOOTH_STEP_1_IPHONE" : "CONNECT_OVER_BLUETOOTH_STEP_1_IPAD")".localized(path: path, table: table))
+                        \("STEP_2".localized(path: path, table: table)) \("\(UIDevice.iPhone ? "CONNECT_OVER_BLUETOOTH_STEP_2_IPHONE" : "CONNECT_OVER_BLUETOOTH_STEP_2_IPAD")".localized(path: path, table: table))
+                        \("STEP_3".localized(path: path, table: table)) \("\(UIDevice.iPhone ? "CONNECT_OVER_BLUETOOTH_STEP_3_IPHONE" : "CONNECT_OVER_BLUETOOTH_STEP_3_IPAD")".localized(path: path, table: table))
                         """)
                         .foregroundStyle(.secondary)
                         .font(.footnote)
@@ -80,9 +81,9 @@ struct HotspotView: View {
                         .font(.title)
                         .frame(width: 50)
                     Text("""
-                        \("CONNECT_OVER_USB_LABEL".localize(table: table))
-                        \("STEP_1".localize(table: table)) \("\(UIDevice.iPhone ? "CONNECT_OVER_USB_STEP_1_IPHONE" : "CONNECT_OVER_USB_STEP_1_IPAD")".localize(table: table))
-                        \("STEP_2".localize(table: table)) \("\(UIDevice.iPhone ? "CONNECT_OVER_USB_STEP_2_IPHONE" : "CONNECT_OVER_USB_STEP_2_IPAD")".localize(table: table))
+                        \("CONNECT_OVER_USB_LABEL".localized(path: path, table: table))
+                        \("STEP_1".localized(path: path, table: table)) \("\(UIDevice.iPhone ? "CONNECT_OVER_USB_STEP_1_IPHONE" : "CONNECT_OVER_USB_STEP_1_IPAD")".localized(path: path, table: table))
+                        \("STEP_2".localized(path: path, table: table)) \("\(UIDevice.iPhone ? "CONNECT_OVER_USB_STEP_2_IPHONE" : "CONNECT_OVER_USB_STEP_2_IPAD")".localized(path: path, table: table))
                         """)
                         .foregroundStyle(.secondary)
                         .font(.footnote)
@@ -94,10 +95,10 @@ struct HotspotView: View {
         }
         .toolbar {
             ToolbarItem(placement: .principal) {
-                Text("MAIN_SPEC_PROVISIONED", tableName: table)
+                Text("MAIN_SPEC_PROVISIONED".localized(path: path, table: table))
                     .font(.subheadline)
                     .fontWeight(.semibold)
-                    .opacity(frameY < 50.0 ? opacity : 0) // Only fade when passing the help section title at the top
+                    .opacity(frameY < 50.0 ? opacity : 0)
             }
         }
         .onOpenURL {_ in
