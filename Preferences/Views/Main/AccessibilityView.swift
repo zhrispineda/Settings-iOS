@@ -186,6 +186,8 @@ struct AccessibilityView: View {
                     SLink("TRIPLE_CLICK_TITLE".localized(path: settings, table: table), icon: "com.apple.graphic-icon.accessibility", status: "OFF".localized(path: settings, table: table)) {}
                     // Per-App Settings
                     SLink("APP_AX_SETTINGS_TITLE".localized(path: settings, table: titleTable), icon: "com.apple.AccessibilityUIServer.per.app.settings") {}
+                    // Share Accessibility Settings
+                    SLink("GUEST_PASS_TITLE".localized(path: settings, table: titleTable), icon: "com.apple.AccessibilityUIServer.guestpass", destination: ShareAccessibilitySettingsView())
                 }
             } header: {
                 Text("GENERAL_HEADING".localized(path: settings, table: table))

@@ -26,7 +26,7 @@ struct HotspotView: View {
             // Wi-Fi Password
             Section {
                 Toggle("ALLOW_OTHERS".localized(path: path, table: table), isOn: $allowOthersJoinEnabled)
-                SettingsLink("WIFI_PASSWORD".localized(path: path, table: table, "WIFI"), status: password, destination: EmptyView())
+                SettingsLink("WIFI_PASSWORD".localized(path: path, table: table, "WIFI".localized(path: path, table: table)), status: password, destination: EmptyView())
                     .onAppear {
                         password = randomPassword()
                     }

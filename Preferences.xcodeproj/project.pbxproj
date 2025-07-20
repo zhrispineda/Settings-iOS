@@ -188,6 +188,7 @@
 		83D4CB762B7FF0B000D6087D /* WebContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D4CB752B7FF0B000D6087D /* WebContentView.swift */; };
 		83D5957B2CA5BF19003EF0CD /* RecordSoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D5957A2CA5BF19003EF0CD /* RecordSoundView.swift */; };
 		83D5BD542DB819F900F5B219 /* ConfigureIPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D5BD532DB819F900F5B219 /* ConfigureIPView.swift */; };
+		83DCCBB92E2D34C1009B4B27 /* ShareAccessibilitySettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DCCBB82E2D34C1009B4B27 /* ShareAccessibilitySettingsView.swift */; };
 		83DF95742B841F0900AEEB63 /* DownloadedLanguagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DF95732B841F0900AEEB63 /* DownloadedLanguagesView.swift */; };
 		83DF95762B84266E00AEEB63 /* SiriDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DF95752B84266E00AEEB63 /* SiriDetailView.swift */; };
 		83DFA56D2DA9E17E004C3DD5 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DFA56C2DA9E17E004C3DD5 /* UIViewControllerExtensions.swift */; };
@@ -414,6 +415,7 @@
 		83D4CB752B7FF0B000D6087D /* WebContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebContentView.swift; sourceTree = "<group>"; };
 		83D5957A2CA5BF19003EF0CD /* RecordSoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSoundView.swift; sourceTree = "<group>"; };
 		83D5BD532DB819F900F5B219 /* ConfigureIPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureIPView.swift; sourceTree = "<group>"; };
+		83DCCBB82E2D34C1009B4B27 /* ShareAccessibilitySettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareAccessibilitySettingsView.swift; sourceTree = "<group>"; };
 		83DF95732B841F0900AEEB63 /* DownloadedLanguagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadedLanguagesView.swift; sourceTree = "<group>"; };
 		83DF95752B84266E00AEEB63 /* SiriDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriDetailView.swift; sourceTree = "<group>"; };
 		83DFA56C2DA9E17E004C3DD5 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
@@ -797,6 +799,7 @@
 				83CED5A92D6E5ACD00253D9C /* ZoomView.swift */,
 				83B893BC2B8FD82D005705A3 /* FaceAttentionView.swift */,
 				83F78A0E2B8E7D5000025062 /* ControlNearbyDevicesView.swift */,
+				83DCCBB82E2D34C1009B4B27 /* ShareAccessibilitySettingsView.swift */,
 			);
 			path = Accessibility;
 			sourceTree = "<group>";
@@ -1284,6 +1287,7 @@
 				832EF3AB2B819C2A0066A1BF /* KeyboardsView.swift in Sources */,
 				83585B712B88475A0046A0C3 /* DrivingView.swift in Sources */,
 				831C80412CA4998500306574 /* RecordSlomoView.swift in Sources */,
+				83DCCBB92E2D34C1009B4B27 /* ShareAccessibilitySettingsView.swift in Sources */,
 				83A36C8F2DB96E4600378E45 /* ConfigureProxyView.swift in Sources */,
 				83F6E26C2C8A2E300060187F /* RemindersView.swift in Sources */,
 				832EF3932B8179070066A1BF /* SystemServicesView.swift in Sources */,
