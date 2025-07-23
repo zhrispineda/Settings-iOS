@@ -21,7 +21,6 @@ struct AppleCareWarrantyView: View {
                 )
             }
         }
-        .navigationTitle("COVERAGE".localize(table: "General"))
         .navigationBarTitleDisplayMode(.inline)
     }
 }

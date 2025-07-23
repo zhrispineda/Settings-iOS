@@ -52,16 +52,6 @@ struct WalletView: View {
             
             SLink("FPAN_ADD_TO_APPLE_PAY_TITLE".localized(path: path, table: payTable), icon: "None", status: "0") {}
             
-            if !UIDevice.IsSimulator && UIDevice.iPhone {
-                Section {
-                    SettingsLink("SETTINGS_EXPRESS_TRANSIT_CARDS_SECTION_HEADER".localized(path: path, table: payTable), status: "NONE".localized(path: path, table: payTable), destination: EmptyView())
-                } header: {
-                    Text("SETTINGS_EXPRESS_TRANSIT_CARD_CATEGORY_SECTION_HEADER".localized(path: path, table: payTable))
-                } footer: {
-                    Text(UIDevice.PearlIDCapability ? "SETTINGS_EXPRESS_TRANSIT_SECTION_FOOTER_IPHONE_LPEM_FACEID".localized(path: path, table: payTable) : "SETTINGS_EXPRESS_TRANSIT_SECTION_FOOTER_IPHONE_LPEM_TOUCHID".localized(path: path, table: payTable))
-                }
-            }
-            
             Section {
                 Toggle("ALLOW_EXPIRED_PASSES_TITLE".localized(path: path), isOn: $hideExpiredPassesEnabled)
             }
