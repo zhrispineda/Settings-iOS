@@ -27,14 +27,16 @@ struct SLabel: View {
     var icon: String
     var status: String
     var badgeCount: Int
+    var selected: Bool
     
-    init(_ text: String, color: Color = Color.accent, path: String = "", icon: String = "", status: String = "", badgeCount: Int = 0) {
+    init(_ text: String, color: Color = Color.accent, path: String = "", icon: String = "", status: String = "", badgeCount: Int = 0, selected: Bool = false) {
         self.text = text
         self.color = color
         self.path = path
         self.icon = icon
         self.status = status
         self.badgeCount = badgeCount
+        self.selected = selected
     }
     
     var body: some View {
@@ -50,6 +52,7 @@ struct SLabel: View {
             if !status.isEmpty {
                 Text(.init(status))
                     .foregroundStyle(.gray)
+                    .fontWeight(selected ? .semibold : .none)
             }
             
             if badgeCount > 0 {

@@ -53,7 +53,13 @@ struct ContentView: View {
                                         id = UUID() // Reset destination
                                         stateManager.selection = setting.type
                                     } label: {
-                                        SLabel(setting.id, color: setting.color, icon: setting.icon, status: setting.id == "Wi-Fi" ? (wifiEnabled && !airplaneModeEnabled ? "Not Connected" : "Off") : setting.id == "Bluetooth" ? (bluetoothEnabled ? "On" : "Off") : "")
+                                        SLabel(
+                                            setting.id,
+                                            color: setting.color,
+                                            icon: setting.icon,
+                                            status: setting.id == "Wi-Fi" ? (wifiEnabled && !airplaneModeEnabled ? "Not Connected" : "Off") : setting.id == "Bluetooth" ? (bluetoothEnabled ? "On" : "Off") : "",
+                                            selected: setting.id == "Wi-Fi" ? stateManager.selection == .wifi : stateManager.selection == .bluetooth
+                                        )
                                     }
                                     .foregroundStyle(stateManager.selection == setting.type ? .blue : .primary)
                                     .listRowBackground(
@@ -86,7 +92,6 @@ struct ContentView: View {
                     // MARK: Developer
                     SettingsLabelSection(selection: $stateManager.selection, id: $id, item: developerSettings)
                 }
-                .toolbar(removing: .sidebarToggle)
                 .sheet(isPresented: $showingSignInSheet) {
                     NavigationStack {
                         SelectSignInOptionView()
