@@ -29,6 +29,9 @@ struct CameraView: View {
     @AppStorage("CameraLensCorrectionToggle") private var lensCorrectionEnabled = true
     @AppStorage("CameraKeepNormalPhotoToggle") private var keepNormalPhoto = true
     @AppStorage("CameraMacroControlToggle") private var macroControlEnabled = true
+    @AppStorage("CameraSmudgeDetectionToggle") private var smudgeDetection = true
+    @AppStorage("CameraSaveMessagesPhotosToggle") private var saveMessagesPhotos = true
+    @AppStorage("CameraClassicModeSwitchToggle") private var classicModeSwitching = false
     @State private var showingHelpSheet = false
     @State private var showingPrivacySheet = false
     
@@ -37,6 +40,7 @@ struct CameraView: View {
     let buttonTable = "CameraSettings-CameraButton"
     let stylesTable = "CameraSettings-SmartStyles"
     let privacy = "/System/Library/OnBoardingBundles/com.apple.onboarding.camera.bundle"
+    let smudgeTable = "CameraSettings-SmudgeDetection"
     
     init() {
         if selectedSlomoSetting.isEmpty && !UIDevice.ProDevice || UIDevice.iPad {
@@ -120,6 +124,7 @@ struct CameraView: View {
                 if UIDevice.ViewOutsideFrameCapability && UIDevice.iPhone {
                     Toggle("OVER_CAPTURE_VIEW_OUTSIDE_THE_FRAME_SWITCH".localized(path: path, table: table), isOn: $viewOutsideFrameEnabled)
                 }
+                NavigationLink("CAM_INDICATORS_TITLE".localized(path: path, table: table)) {}
             } header: {
                 Text("COMPOSITION_GROUP_TITLE".localized(path: path, table: table))
             }
@@ -165,15 +170,6 @@ struct CameraView: View {
                 }
             }
             
-            // MARK: Prioritize Faster Shooting
-            if UIDevice.iPhone && !UIDevice.IsSimulator {
-                Section {
-                    Toggle("CAM_CAPTURE_DYNAMIC_SHUTTER_SWITCH".localized(path: path, table: table), isOn: $prioritizeFasterShootingEnabled)
-                } footer: {
-                    Text("CAM_CAPTURE_GROUP_FOOTER".localized(path: path, table: table))
-                }
-            }
-            
             // MARK: Lens Correction Section
             if UIDevice.LensCorrectionCapability {
                 Section {
@@ -183,6 +179,15 @@ struct CameraView: View {
                 } footer: {
                     Text(UIDevice.LimitedLensCorrectionCapability ? "IDC_FOOTER_FRONT_ONLY".localized(path: path, table: table) : "IDC_FOOTER".localized(path: path, table: table))
                     
+                }
+            }
+            
+            // MARK: Prioritize Faster Shooting
+            if UIDevice.iPhone && !UIDevice.IsSimulator {
+                Section {
+                    Toggle("CAM_CAPTURE_DYNAMIC_SHUTTER_SWITCH".localized(path: path, table: table), isOn: $prioritizeFasterShootingEnabled)
+                } footer: {
+                    Text("CAM_CAPTURE_GROUP_FOOTER".localized(path: path, table: table))
                 }
             }
             
@@ -207,6 +212,32 @@ struct CameraView: View {
                 } footer: {
                     Text("AUTO_MACRO_GROUP_FOOTER".localized(path: path, table: table))
                 }
+            }
+            
+            // MARK: Lens Cleaning Section
+            Section {
+                Toggle("SMUDGE_DETECTION_SWITCH".localized(path: path, table: smudgeTable), isOn: $smudgeDetection)
+            } footer: {
+                Text("SMUDGE_DETECTION_FOOTER".localized(path: path, table: smudgeTable))
+            }
+            
+            // MARK: - Messages
+            // MARK: Save Captures to Photo Library
+            Section {
+                Toggle("CAM_SAVE_MESSAGES_ASSETS_PHOTO_LIBRARY_SWITCH".localized(path: path, table: table), isOn: $saveMessagesPhotos)
+            } header: {
+                Text("CAM_SAVE_MESSAGES_ASSETS_PHOTO_LIBRARY_TITLE".localized(path: path, table: table))
+            } footer: {
+                Text("CAM_SAVE_MESSAGES_ASSETS_PHOTO_LIBRARY_FOOTER".localized(path: path, table: table))
+            }
+            
+            // MARK: - Mode Switching
+            Section {
+                Toggle("CAM_CLASSIC_MODE_SWITCHING_SWITCH".localized(path: path, table: table), isOn: $classicModeSwitching)
+            } header: {
+                Text("CAM_CLASSIC_MODE_SWITCHING_TITLE".localized(path: path, table: table))
+            } footer: {
+                Text("CAM_CLASSIC_MODE_SWITCHING_FOOTER".localized(path: path, table: table))
             }
             
             // MARK: Camera & ARKit Privacy Footer
