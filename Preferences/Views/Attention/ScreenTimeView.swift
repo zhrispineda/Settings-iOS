@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ScreenTimeView: View {
-    // Variables
+    @Environment(\.colorScheme) private var colorScheme
     @State private var appWebsiteActivityEnabled = false
     @State private var showingDisableScreenTimeDialog = false
     @State private var showingAppWebsiteActivitySheet = false
@@ -40,35 +40,38 @@ struct ScreenTimeView: View {
                 }
             } else {
                 Section {
-                    Placard(title: "ScreenTimeGroupSpecifierName".localized(path: path), color: Color.indigo, icon: "hourglass", description: "AboutScreenTimeDetailText".localized(path: path), lightOnly: true, frameY: .constant(0.0), opacity: .constant(1.0))
+                    Button {} label: {
+                        Placard(title: "ScreenTimeGroupSpecifierName".localized(path: path), icon: "com.apple.graphic-icon.screen-time", description: "AboutScreenTimeDetailText".localized(path: path), frameY: .constant(0.0), opacity: .constant(1.0))
+                    }
+                    .foregroundStyle(.primary)
                 }
             }
             
             Section {
                 if !appWebsiteActivityEnabled {
                     SLink(
-                        "AppAndWebsiteActivityEDUDowntimeTitle".localized(path: path),
+                        "AppAndWebsiteActivitySpecifierName".localized(path: path),
                         path: path,
-                        icon: "Downtime",
-                        subtitle: "DeviceDowntimeDetailText".localized(path: path)
+                        icon: "com.apple.graphic-icon.analytics-and-improvements",
+                        subtitle: "AppAndWebsiteActivitySpecifierSubtitleText".localized(path: path)
                     ) {
                         DowntimeView()
                     }
-                    SLink(
-                        "AppAndWebsiteActivityEDUAppLimitsTitle".localized(path: path),
-                        path: path,
-                        icon: "AppLimits",
-                        subtitle: "AppLimitsDetailText".localized(path: path)
-                    ) {
-                        AppLimitsView()
-                    }
-                    SLink("AlwaysAllowedSpecifierName".localized(path: path),
-                          path: path,
-                          icon: "AlwaysAllow",
-                          subtitle: "AlwaysAllowDetailText".localized(path: path)
-                    ) {
-                        AlwaysAllowedView()
-                    }
+//                    SLink(
+//                        "AppAndWebsiteActivityEDUAppLimitsTitle".localized(path: path),
+//                        path: path,
+//                        icon: "AppLimits",
+//                        subtitle: "AppLimitsDetailText".localized(path: path)
+//                    ) {
+//                        AppLimitsView()
+//                    }
+//                    SLink("AlwaysAllowedSpecifierName".localized(path: path),
+//                          path: path,
+//                          icon: "AlwaysAllow",
+//                          subtitle: "AlwaysAllowDetailText".localized(path: path)
+//                    ) {
+//                        AlwaysAllowedView()
+//                    }
                 } else {
                     Button {
                         showingAppWebsiteActivitySheet.toggle()
@@ -81,7 +84,7 @@ struct ScreenTimeView: View {
                             .frame(width: 400, height: 730)
                     }
                 }
-                SLink("ScreenDistanceSpecifierName".localized(path: path), color: Color.white, iconColor: Color.blue, icon: "chevron.3.up.perspective", lightOnly: true, subtitle: "ScreenDistanceSpecifierSubtitleText".localized(path: path)) {
+                SLink("ScreenDistanceSpecifierName".localized(path: path), color: colorScheme == .dark ? Color.blue : Color.white, iconColor: Color.blue, icon: "chevron.3.up.perspective", subtitle: "ScreenDistanceSpecifierSubtitleText".localized(path: path)) {
                     ScreenDistanceView()
                         .onAppear {
                             showingScreenDistanceSheet.toggle()
@@ -96,10 +99,10 @@ struct ScreenTimeView: View {
             }
             
             Section {
-                SLink("CommunicationLimitsSpecifierName".localized(path: path), color: Color.green, icon: "person.crop.circle", lightOnly: true, subtitle: "AADC_CommunicationLimitsDetailText".localized(path: path)) {
-                    EmptyView()
-                }
-                SLink("CommunicationSafetyTitle".localized(path: path), color: Color.blue, icon: "bubble.left.and.exclamationmark.bubble.right.fill", lightOnly: true, subtitle: "CommunicationSafetyOffSubtitle".localized(path: path)) {
+//                SLink("CommunicationLimitsSpecifierName".localized(path: path), color: Color.green, icon: "person.crop.circle", lightOnly: true, subtitle: "AADC_CommunicationLimitsDetailText".localized(path: path)) {
+//                    EmptyView()
+//                }
+                SLink("CommunicationSafetyTitle".localized(path: path), icon: "com.apple.graphic-icon.communication-safety", subtitle: "CommunicationSafetyOffSubtitle".localized(path: path)) {
                     CommunicationSafetyView()
                         .onAppear {
                             showingCommunicationSafetySheet.toggle()
@@ -114,7 +117,7 @@ struct ScreenTimeView: View {
             }
             
             Section {
-                SLink("ContentPrivacySpecifierName".localized(path: path), color: Color.red, icon: "nosign", lightOnly: true, subtitle: "ContentPrivacyDetailText".localized(path: path)) {
+                SLink("ContentPrivacySpecifierName".localized(path: path), icon: "com.apple.graphic-icon.content-and-privacy-restrictions", subtitle: "ContentPrivacyDetailText".localized(path: path)) {
                     ContentPrivacyRestrictionsView()
                 }
             } header: {

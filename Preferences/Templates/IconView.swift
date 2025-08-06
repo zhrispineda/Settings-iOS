@@ -35,7 +35,7 @@ struct IconView: View {
             }
             
             // Check if `icon` is an image asset, graphic/icon, or fallback to symbol
-            if !path.isEmpty {
+            if !path.isEmpty && !icon.contains("com.") {
                 if let asset = UIImage.asset(path: path, name: icon) {
                     Image(uiImage: asset)
                         .resizable()
@@ -54,8 +54,8 @@ struct IconView: View {
                     Image(uiImage: graphicIcon)
                 }
             } else if icon.contains("com.") {
-                if let safariIcon = UIImage.icon(forBundleID: icon) {
-                    Image(uiImage: safariIcon)
+                if let asset = UIImage.icon(forBundleID: icon) {
+                    Image(uiImage: asset)
                 }
             } else {
                 Image(_internalSystemName: icon)
