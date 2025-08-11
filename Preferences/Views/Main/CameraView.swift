@@ -170,24 +170,22 @@ struct CameraView: View {
                 }
             }
             
-            // MARK: Lens Correction Section
-            if UIDevice.LensCorrectionCapability {
-                Section {
-                    Toggle("IDC_SWITCH".localized(path: path, table: table), isOn: $lensCorrectionEnabled)
-                } header: {
-                    Text("CAM_PHOTO_CAPTURE_GROUP_TITLE".localized(path: path, table: table))
-                } footer: {
-                    Text(UIDevice.LimitedLensCorrectionCapability ? "IDC_FOOTER_FRONT_ONLY".localized(path: path, table: table) : "IDC_FOOTER".localized(path: path, table: table))
-                    
-                }
-            }
-            
             // MARK: Prioritize Faster Shooting
             if UIDevice.iPhone && !UIDevice.IsSimulator {
                 Section {
                     Toggle("CAM_CAPTURE_DYNAMIC_SHUTTER_SWITCH".localized(path: path, table: table), isOn: $prioritizeFasterShootingEnabled)
                 } footer: {
                     Text("CAM_CAPTURE_GROUP_FOOTER".localized(path: path, table: table))
+                }
+            }
+            
+            // MARK: Lens Correction Section
+            if UIDevice.LensCorrectionCapability {
+                Section {
+                    Toggle("IDC_SWITCH".localized(path: path, table: table), isOn: $lensCorrectionEnabled)
+                } footer: {
+                    Text(UIDevice.LimitedLensCorrectionCapability ? "IDC_FOOTER_FRONT_ONLY".localized(path: path, table: table) : "IDC_FOOTER".localized(path: path, table: table))
+                    
                 }
             }
             
@@ -232,13 +230,13 @@ struct CameraView: View {
             }
             
             // MARK: - Mode Switching
-            Section {
-                Toggle("CAM_CLASSIC_MODE_SWITCHING_SWITCH".localized(path: path, table: table), isOn: $classicModeSwitching)
-            } header: {
-                Text("CAM_CLASSIC_MODE_SWITCHING_TITLE".localized(path: path, table: table))
-            } footer: {
-                Text("CAM_CLASSIC_MODE_SWITCHING_FOOTER".localized(path: path, table: table))
-            }
+//            Section {
+//                Toggle("CAM_CLASSIC_MODE_SWITCHING_SWITCH".localized(path: path, table: table), isOn: $classicModeSwitching)
+//            } header: {
+//                Text("CAM_CLASSIC_MODE_SWITCHING_TITLE".localized(path: path, table: table))
+//            } footer: {
+//                Text("CAM_CLASSIC_MODE_SWITCHING_FOOTER".localized(path: path, table: table))
+//            }
             
             // MARK: Camera & ARKit Privacy Footer
             if UIDevice.LiDARCapability {
