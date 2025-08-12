@@ -128,7 +128,7 @@ final class SettingsTopLevelPanesRenderTests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
         
-        let accessibilityButton = app.buttons.containing(.image, identifier: "accessibility").firstMatch
+        let accessibilityButton = app.buttons["Accessibility"].firstMatch
         if !accessibilityButton.exists {
             let elementsQuery = app.otherElements
             let element = elementsQuery.element(boundBy: 20)
@@ -154,7 +154,7 @@ final class SettingsTopLevelPanesRenderTests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
         
-        let accessibilityButton = app.buttons.containing(.image, identifier: "accessibility").firstMatch
+        let accessibilityButton = app.buttons["Accessibility"].firstMatch
         if !accessibilityButton.exists {
             let elementsQuery = app.otherElements
             let element = elementsQuery.element(boundBy: 20)
@@ -177,7 +177,7 @@ final class SettingsTopLevelPanesRenderTests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
         
-        let accessibilityButton = app.buttons.containing(.image, identifier: "accessibility").firstMatch
+        let accessibilityButton = app.buttons["Accessibility"].firstMatch
         if !accessibilityButton.exists {
             let elementsQuery = app.otherElements
             let element = elementsQuery.element(boundBy: 20)
