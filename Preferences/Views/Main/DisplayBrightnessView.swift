@@ -196,9 +196,9 @@ struct DisplayBrightnessView: View {
             
             // MARK: Display
             Section {
-                SettingsLink("VIEW".localized(path: path, table: table), status: "DEFAULT".localize(table: "Accessibility"), destination: EmptyView())
+                SettingsLink("VIEW".localized(path: path, table: table), status: "DEFAULT".localized(path: "/System/Library/PreferenceBundles/AccessibilitySettings.bundle", table: "Accessibility"), destination: EmptyView())
             } header: {
-                Text("DISPLAY_ONLY_TITLE", tableName: "Accessibility")
+                Text("DISPLAY_ZOOM_PRO".localized(path: path, table: table))
             } footer: {
                 Text("DEFAULT_DISPLAY_ZOOMED_STANDARD_DESCRIPTION".localized(path: path, table: table))
             }

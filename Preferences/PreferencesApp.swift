@@ -16,5 +16,10 @@ struct PreferencesApp: App {
             ContentView(stateManager: stateManager)
                 .environment(stateManager)
         }
+        .commands {
+            CommandGroup(replacing: .appSettings) {
+                Button("About This iPad", systemImage: "ipad") {}
+            }
+        }
     }
 }
