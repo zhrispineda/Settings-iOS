@@ -9,7 +9,8 @@ import SwiftUI
 /// Bring Device Nearby view for logging into Apple Accounts with a nearby device.
 struct ProximityViewController: UIViewControllerRepresentable {
     func makeUIViewController(context: Context) -> UIViewController {
-        dlopen("/System/Library/PrivateFrameworks/AuthKitUI.framework/AuthKitUI", RTLD_NOW)
+        var path = "/System/Library/PrivateFrameworks/AuthKitUI.framework/AuthKitUI"
+        dlopen(path, RTLD_NOW)
 
         guard
             let viewModelClass = NSClassFromString("AKProximityMessageViewModel") as? NSObject.Type,
@@ -32,8 +33,9 @@ struct ProximityViewController: UIViewControllerRepresentable {
         let vmInit = unsafeBitCast(initMethod, to: InitVMType.self)
 
         let viewModel = vmInit(vmAlloc(viewModelClass, alloc), initWithType, 0)
-        viewModel.setValue("PROXIMITY_AUTH_BROADCAST_TITLE".localize(table: "AuthKitUI"), forKey: "titleText")
-        viewModel.setValue(UIDevice.iPhone ? "PROXIMITY_AUTH_BROADCAST_DESCRIPTION_IPHONE".localize(table: "AuthKitUI") : "PROXIMITY_AUTH_BROADCAST_DESCRIPTION_IPAD".localize(table: "AuthKitUI"), forKey: "detailedText")
+        path = "/System/Library/PrivateFrameworks/AuthKitUI.framework"
+        viewModel.setValue("PROXIMITY_AUTH_BROADCAST_TITLE".localized(path: path), forKey: "titleText")
+        viewModel.setValue(UIDevice.iPhone ? "PROXIMITY_AUTH_BROADCAST_DESCRIPTION_IPHONE".localized(path: path) : "PROXIMITY_AUTH_BROADCAST_DESCRIPTION_IPAD".localized(path: path), forKey: "detailedText")
 
         typealias InitVCType = @convention(c) (AnyObject, Selector, AnyObject) -> AnyObject
 
