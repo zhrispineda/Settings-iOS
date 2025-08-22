@@ -8,28 +8,40 @@
 import SwiftUI
 
 struct FollowUpView: View {
+    @AppStorage("FollowUpDismissed") private var followUpDismissed = false
     @Environment(\.dismiss) var dismiss
     @Environment(StateManager.self) private var stateManager
-    @AppStorage("FollowUpDismissed") private var followUpDismissed = false
-    let core = "/System/Library/PrivateFrameworks/CoreFollowUp.framework"
-    let path = "/System/Library/PrivateFrameworks/SetupAssistant.framework"
+    let coreFollowUp = "/System/Library/PrivateFrameworks/CoreFollowUp.framework"
+    let setupAssistant = "/System/Library/PrivateFrameworks/SetupAssistant.framework"
     let table = "FollowUp"
     
     var body: some View {
-        CustomList(title: "MULTI_FOLLOW_LIST_TITLE".localized(path: core)) {
+        // MULTI_FOLLOW_LIST_TITLE (en, iphone): More for Your iPhone
+        CustomList(title: "MULTI_FOLLOW_LIST_TITLE".localized(path: coreFollowUp)) {
             Section {
                 VStack(alignment: .leading, spacing: 5) {
-                    Text("FOLLOWUP_TITLE".localized(path: path, table: table))
+                    // FOLLOWUP_TITLE (en, iphone): Finish Setting Up Your iPhone
+                    Text("FOLLOWUP_TITLE".localized(path: setupAssistant, table: table))
                         .fontWeight(.semibold)
-                    Text(UIDevice.PearlIDCapability ? "FOLLOWUP_DETAIL_FACEID".localized(path: path, table: table) : "FOLLOWUP_DETAIL_TOUCHID".localized(path: path, table: table))
+                    if UIDevice.PearlIDCapability {
+                        // FOLLOWUP_DETAIL_FACEID (en, iphone): Get the most out of your iPhone with features like Apple Account, Siri, Face ID, and Apple Pay.
+                        Text("FOLLOWUP_DETAIL_FACEID".localized(path: setupAssistant, table: table))
+                    } else {
+                        // FOLLOWUP_DETAIL_TOUCHID (en, iphone): Get the most out of your iPhone with features like Apple Account, Siri, Touch ID, and Apple Pay.
+                        Text("FOLLOWUP_DETAIL_TOUCHID".localized(path: setupAssistant, table: table))
+                    }
                 }
-                Button(UIDevice.PearlIDCapability ? "FOLLOWUP_ACTION_LABEL.faceID".localized(path: path, table: table) : "FOLLOWUP_ACTION_LABEL.touchID".localized(path: path, table: table)) {
+                
+                // FOLLOWUP_ACTION_LABEL_ALL (en, iphone): Finish Setting Up
+                Button("FOLLOWUP_ACTION_LABEL_ALL".localized(path: setupAssistant, table: table)) {
+                    SettingsLogger.log("Attempting to dismiss FollowUpView")
                     if UIDevice.iPad {
                         stateManager.selection = .general
                         stateManager.destination = AnyView(GeneralView())
                     } else if UIDevice.iPhone {
                         dismiss()
                     }
+                    SettingsLogger.log("Updating FollowUpDismissed to true")
                     withAnimation {
                         followUpDismissed = true
                     }
