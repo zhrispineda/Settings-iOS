@@ -8,24 +8,24 @@
 import SwiftUI
 
 struct VPNDeviceManagementView: View {
-    // Variables
     @Environment(\.dismiss) private var dismiss
-    
+    let path = "/System/Library/ExtensionKit/Extensions/MCUIAppIntents.appex"
+
     var body: some View {
         if UIDevice.IsSimulator {
             Color(UIColor.systemGroupedBackground)
                 .ignoresSafeArea()
-                .navigationTitle("VPN_DEVICE_MANAGEMENT".localize(table: "General"))
+                .navigationTitle("VPN & Device Management".localized(path: path))
                 .onAppear {
                     dismiss()
                 }
         } else {
-            CustomList(title: "VPN_DEVICE_MANAGEMENT".localize(table: "General")) {
+            CustomList(title: "VPN & Device Management".localized(path: path)) {
                 Section {
-                    SLabel("VPN", color: .blue, icon: "network.connected.to.line.below", status: "Not Connected")
+                    SLabel("VPN", icon: "com.apple.graphic-icon.vpn", status: "Not Connected")
                 }
                 
-                Button("Sign In to Work or School Account...") {}
+                Button("Sign In to Work or School Account".localized(path: path) + "…") {}
             }
         }
     }
