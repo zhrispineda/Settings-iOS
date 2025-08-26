@@ -55,7 +55,9 @@ struct GeneralView: View {
                         SLink("PiP".localized(path: path, table: table), icon: "com.apple.graphic-icon.picture-in-picture") {
                             BundleControllerView("PictureInPictureSettings", controller: "PictureInPictureSettings", title: "PiP".localized(path: path, table: table))
                         }
-                        SLink("Screen Capture".localized(path: path, table: table), icon: "com.apple.graphic-icon.screenshots") {}
+                        SLink("Screen Capture".localized(path: path, table: table), icon: "com.apple.graphic-icon.screenshots") {
+                            ScreenCaptureView()
+                        }
                         SLink("CARPLAY".localized(path: path, table: table), icon: "com.apple.graphic-icon.carplay") {
                             BundleControllerView("CarKitSettings", controller: "CRSettingsController", title: "CARPLAY".localized(path: path, table: table))
                         }

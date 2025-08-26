@@ -82,6 +82,7 @@
 		836167D82C25FA3A00458CD8 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836167D72C25FA3A00458CD8 /* CalendarView.swift */; };
 		8361A2292C19308600A7D5CC /* Placard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8361A2282C19308600A7D5CC /* Placard.swift */; };
 		836610662DAC67CD0040E05C /* SettingsLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836610652DAC67CD0040E05C /* SettingsLogger.swift */; };
+		836814452E5E649100F0E14D /* ScreenCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836814442E5E649100F0E14D /* ScreenCaptureView.swift */; };
 		836A7E892B981D8E00FA3223 /* AppleAccountLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836A7E882B981D8E00FA3223 /* AppleAccountLoginView.swift */; };
 		836A7E8B2B995E4000FA3223 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836A7E8A2B995E4000FA3223 /* ForgotPasswordView.swift */; };
 		8372142D2D91C5E30027C51D /* UIWindowExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8372142C2D91C5E30027C51D /* UIWindowExtensions.swift */; };
@@ -304,6 +305,7 @@
 		836167D72C25FA3A00458CD8 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		8361A2282C19308600A7D5CC /* Placard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placard.swift; sourceTree = "<group>"; };
 		836610652DAC67CD0040E05C /* SettingsLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLogger.swift; sourceTree = "<group>"; };
+		836814442E5E649100F0E14D /* ScreenCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenCaptureView.swift; sourceTree = "<group>"; };
 		836A7E882B981D8E00FA3223 /* AppleAccountLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAccountLoginView.swift; sourceTree = "<group>"; };
 		836A7E8A2B995E4000FA3223 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		8372142C2D91C5E30027C51D /* UIWindowExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindowExtensions.swift; sourceTree = "<group>"; };
@@ -928,6 +930,7 @@
 				833854F62C1648CD00339C4F /* SoftwareUpdateView.swift */,
 				83C94CA42C1E0192005EBBC5 /* AppleCareWarrantyView.swift */,
 				834B5A232C4C1836003A6940 /* AirDropView.swift */,
+				836814442E5E649100F0E14D /* ScreenCaptureView.swift */,
 				8319CE4A2B86D22E007EC822 /* AutoFillPasswordsView.swift */,
 				83076D032C7E754600BFFAFE /* BackgroundAppRefreshView.swift */,
 				83CCB7272C7FAD96003F51ED /* DateTimeView.swift */,
@@ -1395,6 +1398,7 @@
 				83B893BD2B8FD82D005705A3 /* FaceAttentionView.swift in Sources */,
 				83898FCD2B8A94BE0020C7BB /* HealthDetailsDataView.swift in Sources */,
 				837B0F602B89B22900B22455 /* SiriVoiceView.swift in Sources */,
+				836814452E5E649100F0E14D /* ScreenCaptureView.swift in Sources */,
 				833C6EAC2C208A3900A8D91C /* CameraView.swift in Sources */,
 				834B5A242C4C1836003A6940 /* AirDropView.swift in Sources */,
 				83DF95742B841F0900AEEB63 /* DownloadedLanguagesView.swift in Sources */,
