@@ -139,7 +139,7 @@ let radioSettings: [SettingsItem] = [
     SettingsItem(type: .bluetooth, icon: "com.apple.graphic-icon.bluetooth", destination: AnyView(BluetoothView())),
     SettingsItem(type: .cellular, icon: "com.apple.graphic-icon.cellular-settings", capability: .cellular, destination: AnyView(CellularView())),
     //SettingsItem(type: .personalHotspot, icon: "com.apple.graphic-icon.personal-hotspot", capability: .cellular, destination: AnyView(HotspotView())),
-    SettingsItem(type: .battery, icon: "com.apple.graphic-icon.battery", destination: AnyView(CustomViewController("/System/Library/PreferenceBundles/BatteryUsageUI.bundle/BatteryUsageUI", controller: "BatteryUIController"))),
+    SettingsItem(type: .battery, icon: "com.apple.graphic-icon.battery", destination: AnyView(BatteryView())),
     //SettingsItem(type: .satellite, icon: "com.apple.graphic-icon.satellite", destination: AnyView(EmptyView())),
 ]
 
