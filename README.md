@@ -5,7 +5,7 @@ A **work-in-progress** SwiftUI recreation of the iOS & iPadOS Settings app (Pref
 > This project is currently focused on iOS & iPadOS 26 beta using Xcode 26 beta. Use an older branch to deploy this project on iOS & iPadOS 18/Xcode 16 or earlier.
 
 ## Information
-- This personal project is a recreation of Apple's Settings app for iOS and iPadOS 26 **beta 9** (23A5336a).
+- This personal project is a recreation of Apple's Settings app for iOS and iPadOS 26 **RC** (23A340).
 - All features within the app are only simulations and have no effect on the device outside of the app.
 - Features available within the app vary depending on the device model and its capabilities to make this recreation as accurate as possible.
 - In some panes, the app will load actual preference bundles internally using a view controller bridge (functionality may vary).
