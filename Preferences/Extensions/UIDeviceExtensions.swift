@@ -121,7 +121,7 @@ public extension UIDevice {
     
     /// Returns a Bool on whether the device is capable of Apple Intelligence.
     static let IntelligenceCapability: Bool = {
-        let capableDevices: Set<String> = ["iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4", "iPhone17,5", "iPad13,4", "iPad13,5", "iPad13,6", "iPad13,7", "iPad13,8", "iPad13,9", "iPad13,10", "iPad13,11", "iPad13,16", "iPad13,17", "iPad14,3", "iPad14,4", "iPad14,5", "iPad14,6", "iPad14,8", "iPad14,9", "iPad14,10", "iPad14,11", "iPad15,3", "iPad15,4", "iPad15,5", "iPad15,6", "iPad16,1", "iPad16,2", "iPad16,3", "iPad16,4", "iPad16,5", "iPad16,6"]
+        let capableDevices: Set<String> = ["iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4", "iPhone17,5", "iPhone18,1", "iPhone18,2", "iPhone18,3", "iPhone18,4", "iPad13,4", "iPad13,5", "iPad13,6", "iPad13,7", "iPad13,8", "iPad13,9", "iPad13,10", "iPad13,11", "iPad13,16", "iPad13,17", "iPad14,3", "iPad14,4", "iPad14,5", "iPad14,6", "iPad14,8", "iPad14,9", "iPad14,10", "iPad14,11", "iPad15,3", "iPad15,4", "iPad15,5", "iPad15,6", "iPad16,1", "iPad16,2", "iPad16,3", "iPad16,4", "iPad16,5", "iPad16,6"]
         return capableDevices.contains(identifier)
     }()
     
@@ -236,7 +236,7 @@ public extension UIDevice {
     
     /// Returns a Bool on whether the device has an Action Button.
     static let RingerButtonCapability: Bool = {
-        return fullModel.contains("15 Pro") || fullModel.contains("16")
+        return fullModel.contains("15 Pro") || fullModel.contains("16") || fullModel.contains("17") || fullModel.contains("Air")
     }()
     
     /// Returns a Bool on whether the host is a Simulator instance.
