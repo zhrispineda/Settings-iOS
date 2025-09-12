@@ -18,6 +18,10 @@
 		8310DD7F2E5FE7F700BB9308 /* BatteryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8310DD7E2E5FE7F700BB9308 /* BatteryView.swift */; };
 		831658A32E74A7290028C8D5 /* 26Pad.png in Resources */ = {isa = PBXBuildFile; fileRef = 831658A12E74A7290028C8D5 /* 26Pad.png */; };
 		831658A42E74A7290028C8D5 /* 26Phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 831658A22E74A7290028C8D5 /* 26Phone.png */; };
+		831658A92E74AA810028C8D5 /* iPadOSReadMe.html in Resources */ = {isa = PBXBuildFile; fileRef = 831658A72E74AA810028C8D5 /* iPadOSReadMe.html */; };
+		831658AA2E74AA810028C8D5 /* iOSReadMe.html in Resources */ = {isa = PBXBuildFile; fileRef = 831658A52E74AA810028C8D5 /* iOSReadMe.html */; };
+		831658AB2E74AA810028C8D5 /* iPadOSReadMeSummary.html in Resources */ = {isa = PBXBuildFile; fileRef = 831658A82E74AA810028C8D5 /* iPadOSReadMeSummary.html */; };
+		831658AC2E74AA810028C8D5 /* iOSReadMeSummary.html in Resources */ = {isa = PBXBuildFile; fileRef = 831658A62E74AA810028C8D5 /* iOSReadMeSummary.html */; };
 		8319CE492B86D198007EC822 /* PasswordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319CE482B86D198007EC822 /* PasswordsView.swift */; };
 		8319CE4B2B86D22E007EC822 /* AutoFillPasswordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319CE4A2B86D22E007EC822 /* AutoFillPasswordsView.swift */; };
 		8319CE4D2B86D380007EC822 /* SafetyCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319CE4C2B86D380007EC822 /* SafetyCheckView.swift */; };
@@ -66,8 +70,6 @@
 		834B5A242C4C1836003A6940 /* AirDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B5A232C4C1836003A6940 /* AirDropView.swift */; };
 		834CA6E82D62AB47006792AE /* SummarizeNotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834CA6E72D62AB47006792AE /* SummarizeNotificationsView.swift */; };
 		8352DEA22D70F716004B2575 /* SettingsSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8352DEA12D70F716004B2575 /* SettingsSearchView.swift */; };
-		835646062D9C47F000DAB406 /* iOSReadMe.html in Resources */ = {isa = PBXBuildFile; fileRef = 835646052D9C47F000DAB406 /* iOSReadMe.html */; };
-		835646082D9C480200DAB406 /* iPadOSReadMe.html in Resources */ = {isa = PBXBuildFile; fileRef = 835646072D9C480200DAB406 /* iPadOSReadMe.html */; };
 		8356460A2D9C4AB600DAB406 /* UIKitRepresentables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835646092D9C4AB600DAB406 /* UIKitRepresentables.swift */; };
 		835683922B753FDD000FB136 /* SLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835683912B753FDD000FB136 /* SLink.swift */; };
 		835683942B754623000FB136 /* SLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835683932B754623000FB136 /* SLabel.swift */; };
@@ -142,8 +144,6 @@
 		83937B8A2D82315A0049AB0E /* SettingsTests.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = 83937B892D82315A0049AB0E /* SettingsTests.xctestplan */; };
 		8397F9E92CDF20E9004DFE2F /* BooksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397F9E82CDF20E9004DFE2F /* BooksView.swift */; };
 		839C4CDD2D2B8E50007068BF /* LocalizedLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839C4CDC2D2B8E50007068BF /* LocalizedLink.swift */; };
-		839C6BCF2D9C612400F94C6E /* iOSReadMeSummary.html in Resources */ = {isa = PBXBuildFile; fileRef = 839C6BCE2D9C612400F94C6E /* iOSReadMeSummary.html */; };
-		839C6BEF2D9C6A3300F94C6E /* iPadOSReadMeSummary.html in Resources */ = {isa = PBXBuildFile; fileRef = 839C6BEE2D9C6A3300F94C6E /* iPadOSReadMeSummary.html */; };
 		83A36C8D2DB95D7800378E45 /* ConfigureDNSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A36C8C2DB95D7800378E45 /* ConfigureDNSView.swift */; };
 		83A36C8F2DB96E4600378E45 /* ConfigureProxyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A36C8E2DB96E4600378E45 /* ConfigureProxyView.swift */; };
 		83A3E6952CAC3091006F4643 /* FocalLengthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A3E6942CAC3091006F4643 /* FocalLengthView.swift */; };
@@ -239,6 +239,10 @@
 		8310DD7E2E5FE7F700BB9308 /* BatteryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryView.swift; sourceTree = "<group>"; };
 		831658A12E74A7290028C8D5 /* 26Pad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 26Pad.png; sourceTree = "<group>"; };
 		831658A22E74A7290028C8D5 /* 26Phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 26Phone.png; sourceTree = "<group>"; };
+		831658A52E74AA810028C8D5 /* iOSReadMe.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = iOSReadMe.html; sourceTree = "<group>"; };
+		831658A62E74AA810028C8D5 /* iOSReadMeSummary.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = iOSReadMeSummary.html; sourceTree = "<group>"; };
+		831658A72E74AA810028C8D5 /* iPadOSReadMe.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = iPadOSReadMe.html; sourceTree = "<group>"; };
+		831658A82E74AA810028C8D5 /* iPadOSReadMeSummary.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = iPadOSReadMeSummary.html; sourceTree = "<group>"; };
 		8319CE482B86D198007EC822 /* PasswordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordsView.swift; sourceTree = "<group>"; };
 		8319CE4A2B86D22E007EC822 /* AutoFillPasswordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoFillPasswordsView.swift; sourceTree = "<group>"; };
 		8319CE4C2B86D380007EC822 /* SafetyCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyCheckView.swift; sourceTree = "<group>"; };
@@ -288,8 +292,6 @@
 		834B5A232C4C1836003A6940 /* AirDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirDropView.swift; sourceTree = "<group>"; };
 		834CA6E72D62AB47006792AE /* SummarizeNotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummarizeNotificationsView.swift; sourceTree = "<group>"; };
 		8352DEA12D70F716004B2575 /* SettingsSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSearchView.swift; sourceTree = "<group>"; };
-		835646052D9C47F000DAB406 /* iOSReadMe.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = iOSReadMe.html; sourceTree = "<group>"; };
-		835646072D9C480200DAB406 /* iPadOSReadMe.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = iPadOSReadMe.html; sourceTree = "<group>"; };
 		835646092D9C4AB600DAB406 /* UIKitRepresentables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitRepresentables.swift; sourceTree = "<group>"; };
 		835683912B753FDD000FB136 /* SLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLink.swift; sourceTree = "<group>"; };
 		835683932B754623000FB136 /* SLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SLabel.swift; sourceTree = "<group>"; };
@@ -367,8 +369,6 @@
 		83937B912D8235310049AB0E /* SettingsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SettingsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8397F9E82CDF20E9004DFE2F /* BooksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksView.swift; sourceTree = "<group>"; };
 		839C4CDC2D2B8E50007068BF /* LocalizedLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedLink.swift; sourceTree = "<group>"; };
-		839C6BCE2D9C612400F94C6E /* iOSReadMeSummary.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = iOSReadMeSummary.html; sourceTree = "<group>"; };
-		839C6BEE2D9C6A3300F94C6E /* iPadOSReadMeSummary.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = iPadOSReadMeSummary.html; sourceTree = "<group>"; };
 		83A36C8C2DB95D7800378E45 /* ConfigureDNSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureDNSView.swift; sourceTree = "<group>"; };
 		83A36C8E2DB96E4600378E45 /* ConfigureProxyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureProxyView.swift; sourceTree = "<group>"; };
 		83A3E6942CAC3091006F4643 /* FocalLengthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocalLengthView.swift; sourceTree = "<group>"; };
@@ -961,11 +961,11 @@
 		83B893BE2B8FDBDB005705A3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				835646052D9C47F000DAB406 /* iOSReadMe.html */,
-				835646072D9C480200DAB406 /* iPadOSReadMe.html */,
-				839C6BCE2D9C612400F94C6E /* iOSReadMeSummary.html */,
-				839C6BEE2D9C6A3300F94C6E /* iPadOSReadMeSummary.html */,
 				83E1B1692E4C111500A816BF /* Localizable.xcstrings */,
+				831658A52E74AA810028C8D5 /* iOSReadMe.html */,
+				831658A62E74AA810028C8D5 /* iOSReadMeSummary.html */,
+				831658A72E74AA810028C8D5 /* iPadOSReadMe.html */,
+				831658A82E74AA810028C8D5 /* iPadOSReadMeSummary.html */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -1240,12 +1240,12 @@
 				831658A42E74A7290028C8D5 /* 26Phone.png in Resources */,
 				83A851BE2E0A4BD70041A3E6 /* SettingsApp.icon in Resources */,
 				83E1B16A2E4C111500A816BF /* Localizable.xcstrings in Resources */,
-				839C6BEF2D9C6A3300F94C6E /* iPadOSReadMeSummary.html in Resources */,
-				835646082D9C480200DAB406 /* iPadOSReadMe.html in Resources */,
-				839C6BCF2D9C612400F94C6E /* iOSReadMeSummary.html in Resources */,
+				831658A92E74AA810028C8D5 /* iPadOSReadMe.html in Resources */,
+				831658AA2E74AA810028C8D5 /* iOSReadMe.html in Resources */,
+				831658AB2E74AA810028C8D5 /* iPadOSReadMeSummary.html in Resources */,
+				831658AC2E74AA810028C8D5 /* iOSReadMeSummary.html in Resources */,
 				833F0AD72B744D190036EAD2 /* Preview Assets.xcassets in Resources */,
 				833F0AD42B744D190036EAD2 /* Assets.xcassets in Resources */,
-				835646062D9C47F000DAB406 /* iOSReadMe.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
