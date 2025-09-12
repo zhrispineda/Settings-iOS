@@ -50,54 +50,43 @@ struct AppsView: View {
                         DefaultAppsView()
                     }
                 }
-
+                
                 // MARK: Apps
-                ForEach(groupedApps.keys.sorted(), id: \.self) { key in
-                    Section(key) {
-                        ForEach(groupedApps[key]!, id: \.name) { app in
-                            SLink(app.name, icon: app.icon) {
-                                switch app.name {
-                                case "App Store":
-                                    AppStoreView()
-                                case "Books":
-                                    BooksView()
-                                case "Calendar":
-                                    CalendarView()
-                                case "Contacts":
-                                    ContactsView()
-                                case "Files":
-                                    FilesView()
-                                case "Fitness":
-                                    EmptyView()
-                                case "Health":
-                                    HealthView()
-                                case "Maps":
-                                    MapsView()
-                                case "Messages":
-                                    MessagesView()
-                                case "News":
-                                    NewsView()
-                                case "Passwords":
-                                    PasswordsView()
-                                case "Photos":
-                                    PhotosView()
-                                case "Reminders":
-                                    if UIDevice.IsSimulator {
-                                        EmptyView()
-                                    } else {
-                                        RemindersView()
+                ForEach(Array(letters), id: \.self) { letter in
+                    let key = String(letter)
+                    
+                    if let apps = groupedApps[key], !apps.isEmpty {
+                        Section(key) {
+                            ForEach(apps, id: \.name) { app in
+                                SLink(app.name, icon: app.icon) {
+                                    switch app.name {
+                                    case "App Store": AppStoreView()
+                                    case "Books": BooksView()
+                                    case "Calendar": CalendarView()
+                                    case "Contacts": ContactsView()
+                                    case "Files": FilesView()
+                                    case "Fitness": EmptyView()
+                                    case "Health": HealthView()
+                                    case "Maps": MapsView()
+                                    case "Messages": MessagesView()
+                                    case "News": NewsView()
+                                    case "Passwords": PasswordsView()
+                                    case "Photos": PhotosView()
+                                    case "Reminders":
+                                        if UIDevice.IsSimulator {
+                                            EmptyView()
+                                        } else {
+                                            RemindersView()
+                                        }
+                                    case "Safari": SafariView()
+                                    case "Shortcuts": ShortcutsView()
+                                    case "Translate": TranslateView()
+                                    default: EmptyView()
                                     }
-                                case "Safari":
-                                    SafariView()
-                                case "Shortcuts":
-                                    ShortcutsView()
-                                case "Translate":
-                                    TranslateView()
-                                default:
-                                    EmptyView()
                                 }
                             }
                         }
+                        .sectionIndexLabel(key)
                     }
                 }
                 
@@ -119,26 +108,6 @@ struct AppsView: View {
             }
             .searchable(text: $searchText, placement: UIDevice.iPhone ? .automatic : .toolbar, prompt: "Search Apps".localized(path: path))
             .scrollIndicators(.hidden)
-            .overlay {
-                HStack {
-                    Spacer()
-                    VStack(spacing: 0) {
-                        ForEach(Array(letters), id: \.self) { letter in
-                            Text(String(letter))
-                                .font(.caption)
-                                .fontWeight(.medium)
-                                .foregroundColor(.blue)
-                                .frame(width: 20, height: 15)
-                                .contentShape(Rectangle())
-                                .onTapGesture {
-                                    if groupedApps[String(letter)] != nil {
-                                        proxy.scrollTo(String(letter), anchor: .top)
-                                    }
-                                }
-                        }
-                    }
-                }
-            }
         }
     }
 }
