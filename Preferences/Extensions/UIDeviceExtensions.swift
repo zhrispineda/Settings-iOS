@@ -66,7 +66,7 @@ public extension UIDevice {
         }
         
         // Fallback
-        let capableDevices: Set<String> = ["iPad7,12", "iPad8,3", "iPad8,4", "iPad8,7", "iPad8,8", "iPad8,10", "iPad8,12", "iPad11,2", "iPad11,4", "iPad11,7", "iPad12,2", "iPad13,5", "iPad13,6", "iPad13,7", "iPad13,9", "iPad 13,10", "iPad13,11", "iPad13,2", "iPad13,17", "iPad13,19", "iPad14,2", "iPad14,4", "iPad14,6", "iPad14,9", "iPad14,11", "iPad16,4", "iPad16,6"]
+        let capableDevices: Set<String> = ["iPad8,3", "iPad8,4", "iPad8,7", "iPad8,8", "iPad8,10", "iPad8,12", "iPad11,2", "iPad11,4", "iPad11,7", "iPad12,2", "iPad13,5", "iPad13,6", "iPad13,7", "iPad13,9", "iPad 13,10", "iPad13,11", "iPad13,2", "iPad13,17", "iPad13,19", "iPad14,2", "iPad14,4", "iPad14,6", "iPad14,9", "iPad14,11", "iPad16,4", "iPad16,6"]
         return capableDevices.contains(identifier) || UIDevice.iPhone || configuration.forceCellular
     }()
     
@@ -142,7 +142,7 @@ public extension UIDevice {
         }
         
         // Fallback
-        let capableDevices: Set<String> = ["iPhone12,8", "iPhone14,6", "iPad11,3", "iPad7,11", "iPad7,12", "iPad11,1", "iPad11,2", "iPad11,6", "iPad11,7", "iPad12,1", "iPad12,2"]
+        let capableDevices: Set<String> = ["iPhone12,8", "iPhone14,6", "iPad11,3", "iPad11,1", "iPad11,2", "iPad11,6", "iPad11,7", "iPad12,1", "iPad12,2"]
         return capableDevices.contains(identifier)
     }()
     
@@ -201,7 +201,7 @@ public extension UIDevice {
         }
         
         // Fallback
-        let capableDevices: Set<String> = ["iPhone12,8", "iPhone14,6", "iPad7,11", "iPad7,12", "iPad11,1", "iPad11,2", "iPad11,3", "iPad11,4", "iPad11,6", "iPad11,7", "iPad12,1", "iPad12,2", "iPad13,1", "iPad13,2", "iPad13,16", "iPad13,17", "iPad14,8", "iPad14,9", "iPad14,10", "iPad14,11", "iPad15,3", "iPad15,4", "iPad15,5", "iPad15,6", "iPad15,7", "iPad15,8"]
+        let capableDevices: Set<String> = ["iPhone12,8", "iPhone14,6", "iPad11,1", "iPad11,2", "iPad11,3", "iPad11,4", "iPad11,6", "iPad11,7", "iPad12,1", "iPad12,2", "iPad13,1", "iPad13,2", "iPad13,16", "iPad13,17", "iPad14,8", "iPad14,9", "iPad14,10", "iPad14,11", "iPad15,3", "iPad15,4", "iPad15,5", "iPad15,6", "iPad15,7", "iPad15,8"]
         return !capableDevices.contains(identifier)
     }()
     
@@ -272,7 +272,7 @@ public extension UIDevice {
     
     /// Returns a Bool on whether the device is capable of Night Mode.
     static let NightModeCapability: Bool = {
-        let capableDevices: Set<String> = ["iPhone11,2", "iPhone11,4", "iPhone11,6", "iPhone11,8", "iPhone12,8", "iPhone14,6"]
+        let capableDevices: Set<String> = ["iPhone12,8", "iPhone14,6"]
         return capableDevices.contains(identifier)
     }()
     
@@ -290,13 +290,13 @@ public extension UIDevice {
     
     /// Returns a Bool on whether the device is capable of displaying the camera view outside of the frame in the Camera app.
     static let ViewOutsideFrameCapability: Bool = {
-        let capableDevices: Set<String> = ["iPhone11,2", "iPhone11,8", "iPhone11,4", "iPhone11,6", "iPhone12,8", "iPhone14,6"]
+        let capableDevices: Set<String> = ["iPhone12,8", "iPhone14,6"]
         return !capableDevices.contains(identifier)
     }()
     
     /// Returns a Bool on whether the device has a wide notch. (iPhone XR, XS, XS Max, 11, 11 Pro, 11 Pro Max, 12, 12 mini, 12 Pro, 12 Pro Max)
     static let WideNotch: Bool = {
-        let capableDevices: Set<String> = ["iPhone11,8", "iPhone11,2", "iPhone11,6", "iPhone11,4", "iPhone12,1", "iPhone12,3", "iPhone12,5", "iPhone13,1", "iPhone13,2", "iPhone13,3", "iPhone13,4"]
+        let capableDevices: Set<String> = ["iPhone12,1", "iPhone12,3", "iPhone12,5", "iPhone13,1", "iPhone13,2", "iPhone13,3", "iPhone13,4"]
         return capableDevices.contains(identifier)
     }()
     
