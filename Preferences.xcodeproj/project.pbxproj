@@ -65,7 +65,6 @@
 		8349E22C2C7514F6007416C5 /* ApplePencilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8349E22B2C7514F6007416C5 /* ApplePencilView.swift */; };
 		834B5A242C4C1836003A6940 /* AirDropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B5A232C4C1836003A6940 /* AirDropView.swift */; };
 		834CA6E82D62AB47006792AE /* SummarizeNotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834CA6E72D62AB47006792AE /* SummarizeNotificationsView.swift */; };
-		834F2BF32D6570FC00AD85CF /* SettingsSimulator.gif in Resources */ = {isa = PBXBuildFile; fileRef = 834F2BF22D6570FC00AD85CF /* SettingsSimulator.gif */; };
 		8352DEA22D70F716004B2575 /* SettingsSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8352DEA12D70F716004B2575 /* SettingsSearchView.swift */; };
 		835646062D9C47F000DAB406 /* iOSReadMe.html in Resources */ = {isa = PBXBuildFile; fileRef = 835646052D9C47F000DAB406 /* iOSReadMe.html */; };
 		835646082D9C480200DAB406 /* iPadOSReadMe.html in Resources */ = {isa = PBXBuildFile; fileRef = 835646072D9C480200DAB406 /* iPadOSReadMe.html */; };
@@ -79,7 +78,6 @@
 		83585B772B8848430046A0C3 /* CyclingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83585B762B8848430046A0C3 /* CyclingView.swift */; };
 		83585FCA2C435B6700B11C91 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83585FC92C435B6700B11C91 /* StringExtensions.swift */; };
 		836000782BCC7A470034DDF5 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836000772BCC7A470034DDF5 /* NotificationsView.swift */; };
-		8360825D2D13B04E00902254 /* SettingsPhysical.gif in Resources */ = {isa = PBXBuildFile; fileRef = 8360825C2D13B04E00902254 /* SettingsPhysical.gif */; };
 		836167D82C25FA3A00458CD8 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836167D72C25FA3A00458CD8 /* CalendarView.swift */; };
 		8361A2292C19308600A7D5CC /* Placard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8361A2282C19308600A7D5CC /* Placard.swift */; };
 		836610662DAC67CD0040E05C /* SettingsLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836610652DAC67CD0040E05C /* SettingsLogger.swift */; };
@@ -289,7 +287,6 @@
 		8349E22B2C7514F6007416C5 /* ApplePencilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePencilView.swift; sourceTree = "<group>"; };
 		834B5A232C4C1836003A6940 /* AirDropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirDropView.swift; sourceTree = "<group>"; };
 		834CA6E72D62AB47006792AE /* SummarizeNotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummarizeNotificationsView.swift; sourceTree = "<group>"; };
-		834F2BF22D6570FC00AD85CF /* SettingsSimulator.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SettingsSimulator.gif; sourceTree = "<group>"; };
 		8352DEA12D70F716004B2575 /* SettingsSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSearchView.swift; sourceTree = "<group>"; };
 		835646052D9C47F000DAB406 /* iOSReadMe.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = iOSReadMe.html; sourceTree = "<group>"; };
 		835646072D9C480200DAB406 /* iPadOSReadMe.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = iPadOSReadMe.html; sourceTree = "<group>"; };
@@ -303,7 +300,6 @@
 		83585B762B8848430046A0C3 /* CyclingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyclingView.swift; sourceTree = "<group>"; };
 		83585FC92C435B6700B11C91 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		836000772BCC7A470034DDF5 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
-		8360825C2D13B04E00902254 /* SettingsPhysical.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SettingsPhysical.gif; sourceTree = "<group>"; };
 		836167D72C25FA3A00458CD8 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		8361A2282C19308600A7D5CC /* Placard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placard.swift; sourceTree = "<group>"; };
 		836610652DAC67CD0040E05C /* SettingsLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLogger.swift; sourceTree = "<group>"; };
@@ -474,8 +470,6 @@
 		83012BD62BFE516A00BF431C /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				834F2BF22D6570FC00AD85CF /* SettingsSimulator.gif */,
-				8360825C2D13B04E00902254 /* SettingsPhysical.gif */,
 				831658A12E74A7290028C8D5 /* 26Pad.png */,
 				831658A22E74A7290028C8D5 /* 26Phone.png */,
 			);
@@ -1244,14 +1238,12 @@
 			files = (
 				831658A32E74A7290028C8D5 /* 26Pad.png in Resources */,
 				831658A42E74A7290028C8D5 /* 26Phone.png in Resources */,
-				834F2BF32D6570FC00AD85CF /* SettingsSimulator.gif in Resources */,
 				83A851BE2E0A4BD70041A3E6 /* SettingsApp.icon in Resources */,
 				83E1B16A2E4C111500A816BF /* Localizable.xcstrings in Resources */,
 				839C6BEF2D9C6A3300F94C6E /* iPadOSReadMeSummary.html in Resources */,
 				835646082D9C480200DAB406 /* iPadOSReadMe.html in Resources */,
 				839C6BCF2D9C612400F94C6E /* iOSReadMeSummary.html in Resources */,
 				833F0AD72B744D190036EAD2 /* Preview Assets.xcassets in Resources */,
-				8360825D2D13B04E00902254 /* SettingsPhysical.gif in Resources */,
 				833F0AD42B744D190036EAD2 /* Assets.xcassets in Resources */,
 				835646062D9C47F000DAB406 /* iOSReadMe.html in Resources */,
 			);
