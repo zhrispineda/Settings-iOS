@@ -148,10 +148,9 @@ struct GeneralView: View {
                 CustomViewController("/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework/GeneralSettingsUI", controller: "PSGHomeButtonCustomizeController")
                     .toolbar {
                         ToolbarItem(placement: .topBarTrailing) {
-                            Button("Done") {
+                            Button(role: .confirm) {
                                 showingHomeButtonSheet = false
                             }
-                            .bold()
                         }
                     }
             }
