@@ -31,7 +31,7 @@ struct AccessibilityView: View {
                 if !UIDevice.IsSimulator {
                     // VoiceOver
                     SLink("VOICEOVER_TITLE".localized(path: settings, table: titleTable), icon: "com.apple.graphic-icon.voice-over", status: "OFF".localized(path: settings, table: table)) {
-                        BundleControllerView("AccessibilitySettings", controller: "VoiceOverController", title: "VOICEOVER_TITLE", table: table)
+                        BundleControllerView("AccessibilitySettings", controller: "VoiceOverController", title: "VOICEOVER_TITLE", path: settings, table: titleTable)
                     }
                     // Zoom
                     SLink("ZOOM_TITLE".localized(path: settings, table: titleTable), icon: "com.apple.AccessibilityUIServer.zoom", status: "OFF".localized(path: settings, table: table)) {
@@ -46,15 +46,15 @@ struct AccessibilityView: View {
                 }
                 // Display & Text Size
                 SLink("DISPLAY_AND_TEXT".localized(path: settings, table: titleTable), icon: "com.apple.AccessibilityUIServer.text.size") {
-                    BundleControllerView("AccessibilitySettings", controller: "AXDisplayController", title: "DISPLAY_AND_TEXT", table: "Accessibility")
+                    BundleControllerView("AccessibilitySettings", controller: "AXDisplayController", title: "DISPLAY_AND_TEXT", path: settings , table: titleTable)
                 }
                 // Motion
                 SLink("MOTION_TITLE".localized(path: settings, table: titleTable), icon: "com.apple.AccessibilityUIServer.motion") {
-                    BundleControllerView("AccessibilitySettings", controller: "AXMotionController", title: "MOTION_TITLE", table: titleTable)
+                    BundleControllerView("AccessibilitySettings", controller: "AXMotionController", title: "MOTION_TITLE", path: settings , table: titleTable)
                 }
                 // Spoken Content
                 SLink("SPEECH_TITLE".localized(path: settings, table: titleTable), icon: "com.apple.graphic-icon.spoken-content") {
-                    BundleControllerView("AccessibilitySettings", controller: "SpeechController", title: "SPEECH_TITLE", table: titleTable)
+                    BundleControllerView("AccessibilitySettings", controller: "SpeechController", title: "SPEECH_TITLE", path: settings , table: titleTable)
                 }
                 if !UIDevice.IsSimulator {
                     // Audio Descriptions

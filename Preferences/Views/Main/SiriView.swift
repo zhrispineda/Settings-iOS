@@ -89,11 +89,11 @@ struct SiriView: View {
                 if !UIDevice.IsSimulator {
                     SettingsLink("ACTIVATION_COMPACT".localized(path: path, table: table), status: "ACTIVATION_OFF".localized(path: path, table: table), destination: EmptyView())
                 }
+                SettingsLink("VOICE".localized(path: path, table: table), status: "\("REGION_en-US".localized(path: path, table: table)) (Voice 4)", destination: SiriVoiceView())
                 if siriEnabled {
                     if !UIDevice.IsSimulator {
                         Toggle("ASSISTANT_LOCK_SCREEN_ACCESS".localized(path: path, table: table), isOn: $allowSiriWhenLockedEnabled)
                     }
-                    SettingsLink("VOICE".localized(path: path, table: table), status: "\("REGION_en-US".localized(path: path, table: table)) (Voice 4)", destination: SiriVoiceView())
                     NavigationLink("VOICE_FEEDBACK".localized(path: path, table: table)) {
                         CustomViewController("/System/Library/PrivateFrameworks/AssistantSettingsSupport.framework/AssistantSettingsSupport", controller: "AssistantAudioFeedbackController")
                             .navigationTitle("VOICE_FEEDBACK".localized(path: path, table: table))

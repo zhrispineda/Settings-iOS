@@ -9,19 +9,21 @@ struct BundleControllerView: View {
     let bundle: String
     let controller: String
     var title: String = ""
+    var path: String = ""
     var table: String = ""
     
-    init(_ bundle: String, controller: String, title: String = "", table: String = "") {
+    init(_ bundle: String, controller: String, title: String = "", path: String = "", table: String = "") {
         self.bundle = bundle
         self.controller = controller
         self.title = title
+        self.path = path
         self.table = table
     }
     
     var body: some View {
         CustomViewController(bundle.contains("/") ? bundle : "/System/Library/PreferenceBundles/\(bundle).bundle/\(bundle)", controller: controller)
             .ignoresSafeArea()
-            .navigationTitle(title.localize(table: table))
+            .navigationTitle(path.isEmpty ? title.localize(table: table) : title.localized(path: path, table: table))
             .navigationBarTitleDisplayMode(.inline)
     }
 }
