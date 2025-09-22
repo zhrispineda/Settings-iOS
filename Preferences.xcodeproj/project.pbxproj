@@ -1641,6 +1641,7 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSAppleMusicUsageDescription = "To simulate storage-related functionality.";
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "To simulate Bluetooth-related functionality.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "To simulate camera-related functionality.";
 				INFOPLIST_KEY_NSContactsUsageDescription = "To simulate Contacts-related functionality.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "To simulate storage-related functionality.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1687,6 +1688,7 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSAppleMusicUsageDescription = "To simulate storage-related functionality.";
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "To simulate Bluetooth-related functionality.";
+				INFOPLIST_KEY_NSCameraUsageDescription = "To simulate camera-related functionality.";
 				INFOPLIST_KEY_NSContactsUsageDescription = "To simulate Contacts-related functionality.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "To simulate storage-related functionality.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

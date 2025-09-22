@@ -15,6 +15,7 @@ struct BiometricPasscodeView: View {
     @State private var forceAuthenticationBeforeAutoFill = false
     @State private var allowMaskUnlock = false
     @State private var requireAttentionForUnlock = true
+    @State private var showingPearlSetupPopover = false
     @State private var attentionAwareFeatures = true
     @State private var voiceDial = true
     @State private var allowLockScreenTodayView = true
@@ -65,7 +66,9 @@ struct BiometricPasscodeView: View {
             
             if UIDevice.PearlIDCapability {
                 Section {
-                    Button("SET_UP_FACE_ID".localized(path: path, table: passcode)) {}
+                    Button("SET_UP_FACE_ID".localized(path: path, table: passcode)) {
+                        showingPearlSetupPopover = true
+                    }
                 }
                 
                 Section {
@@ -184,6 +187,21 @@ struct BiometricPasscodeView: View {
         .sheet(isPresented: $showingPrivacySheet) {
             OnBoardingKitView(bundleID: UIDevice.PearlIDCapability ? "com.apple.onboarding.faceid" : "com.apple.onboarding.touchid")
                 .ignoresSafeArea()
+        }
+        .fullScreenCover(isPresented: $showingPearlSetupPopover) {
+            NavigationStack {
+                // FIXME: Extremely experimental; may cause app to freeze
+                // BiometricKitUI is not available in preview/simulator
+                CustomViewController("/System/Library/PrivateFrameworks/BiometricKitUI.framework/BiometricKitUI", controller: "BKUIPearlEnrollController")
+                    .ignoresSafeArea()
+                    .toolbar {
+                        ToolbarItem(placement: .topBarLeading) {
+                            Button("Back", systemImage: "chevron.left", role: .close) {
+                                showingPearlSetupPopover.toggle()
+                            }
+                        }
+                    }
+            }
         }
     }
 }
