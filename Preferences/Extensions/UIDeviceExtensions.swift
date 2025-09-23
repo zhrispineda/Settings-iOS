@@ -72,19 +72,19 @@ public extension UIDevice {
     
     /// Returns a Bool on whether the device is capable of Cinematic Mode.
     static let CinematicModeCapability: Bool = {
-        let capableDevices: Set<String> = ["iPhone14,2", "iPhone14,3", "iPhone14,4", "iPhone14,5", "iPhone14,7", "iPhone14,8", "iPhone15,2", "iPhone15,3", "iPhone15,4", "iPhone15,5", "iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4", "iPhone17,5"]
+        let capableDevices: Set<String> = ["iPhone14,2", "iPhone14,3", "iPhone14,4", "iPhone14,5", "iPhone14,7", "iPhone14,8", "iPhone15,2", "iPhone15,3", "iPhone15,4", "iPhone15,5", "iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4", "iPhone17,5", "iPhone18,1", "iPhone18,2", "iPhone18,3", "iPhone18,4"]
         return capableDevices.contains(identifier)
     }()
     
     /// Returns a Bool on whether the device is capable of 4K Cinematic Mode.
     static let HigherResolutionCinematicModeCapability: Bool = {
-        let capableDevices: Set<String> = ["iPhone14,7", "iPhone14,8", "iPhone15,2", "iPhone15,3", "iPhone15,4", "iPhone15,5", "iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4", "iPhone17,5"]
+        let capableDevices: Set<String> = ["iPhone14,7", "iPhone14,8", "iPhone15,2", "iPhone15,3", "iPhone15,4", "iPhone15,5", "iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4", "iPhone17,5", "iPhone18,1", "iPhone18,2", "iPhone18,3", "iPhone18,4"]
         return capableDevices.contains(identifier)
     }()
     
     /// Returns a Bool on whether the device is capable of advanced charge cycles information.
     static let DeviceSupportsBatteryInformation: Bool = {
-        let capableDevices: Set<String> = ["iPhone15,4", "iPhone15,5", "iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4", "iPhone17,5", "iPad14,8", "iPad14,9", "iPad14,10", "iPad14,11", "iPad15,3", "iPad15,4", "iPad15,5", "iPad15,6", "iPad15,7", "iPad15,8", "iPad16,3", "iPad16,5", "iPad16,6"]
+        let capableDevices: Set<String> = ["iPhone15,4", "iPhone15,5", "iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4", "iPhone17,5", "iPhone18,1", "iPhone18,2", "iPhone18,3", "iPhone18,4", "iPad14,8", "iPad14,9", "iPad14,10", "iPad14,11", "iPad15,3", "iPad15,4", "iPad15,5", "iPad15,6", "iPad15,7", "iPad15,8", "iPad16,3", "iPad16,5", "iPad16,6"]
         return capableDevices.contains(identifier)
     }()
     
@@ -184,7 +184,7 @@ public extension UIDevice {
     
     /// Returns a Bool on whether the device has Macro Lens capability.
     static let MacroLensCapability: Bool = {
-        let capableDevices: Set<String> = ["iPhone14,2", "iPhone14,3", "iPhone15,2", "iPhone15,3", "iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4"]
+        let capableDevices: Set<String> = ["iPhone14,2", "iPhone14,3", "iPhone15,2", "iPhone15,3", "iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4", "iPhone18,1", "iPhone18,2", "iPhone18,3"]
         return capableDevices.contains(identifier)
     }()
     
@@ -207,19 +207,19 @@ public extension UIDevice {
     
     /// Returns a Bool on whether the device is capable of Action Mode.
     static let ActionModeCapability: Bool = {
-        let capableDevices: Set<String> = ["iPhone14,7", "iPhone14,8", "iPhone15,2", "iPhone15,3", "iPhone15,4", "iPhone15,5", "iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4"]
+        let capableDevices: Set<String> = ["iPhone14,7", "iPhone14,8", "iPhone15,2", "iPhone15,3", "iPhone15,4", "iPhone15,5", "iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4", "iPhone18,1", "iPhone18,2", "iPhone18,3", "iPhone18,4"]
         return capableDevices.contains(identifier)
     }()
     
     /// Returns a Bool on whether the device is capable of Advanced Photographic Styles.
     static let AdvancedPhotographicStylesCapability: Bool = {
-        let capableDevices: Set<String> = ["iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4"]
+        let capableDevices: Set<String> = ["iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4", "iPhone18,1", "iPhone18,2", "iPhone18,3", "iPhone18,4"]
         return capableDevices.contains(identifier)
     }()
     
     /// Returns a Bool on whether the device is capable of Photographic Styles.
     static let PhotographicStylesCapability: Bool = {
-        let capableDevices: Set<String> = ["iPhone14,2", "iPhone14,3", "iPhone14,4", "iPhone14,5", "iPhone14,6", "iPhone14,7", "iPhone14,8", "iPhone15,2", "iPhone15,3", "iPhone15,4", "iPhone15,5", "iPhone16,1", "iPhone16,2", "iPhone17,5"]
+        let capableDevices: Set<String> = ["iPhone14,2", "iPhone14,3", "iPhone14,4", "iPhone14,5", "iPhone14,6", "iPhone14,7", "iPhone14,8", "iPhone15,2", "iPhone15,3", "iPhone15,4", "iPhone15,5", "iPhone16,1", "iPhone16,2", "iPhone17,5", "iPhone18,1", "iPhone18,2", "iPhone18,3", "iPhone18,4"]
         return capableDevices.contains(identifier)
     }()
     
@@ -266,19 +266,19 @@ public extension UIDevice {
         }
         
         // Fallback
-        let capableDevices: Set<String> = ["iPhone15,2", "iPhone15,3", "iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2"]
+        let capableDevices: Set<String> = ["iPhone15,2", "iPhone15,3", "iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone18,1", "iPhone18,2", "iPhone18,3", "iPhone18,4"]
         return capableDevices.contains(identifier)
     }()
     
     /// Returns a Bool on whether the device is capable of Night Mode.
     static let NightModeCapability: Bool = {
         let capableDevices: Set<String> = ["iPhone12,8", "iPhone14,6"]
-        return capableDevices.contains(identifier)
+        return !capableDevices.contains(identifier)
     }()
     
     /// Returns a Bool on whether the device is capable of HDR capture.
     static let RearFacingCameraHDRCapability: Bool = {
-        let capableDevices: Set<String> = ["iPhone13,1", "iPhone13,2", "iPhone13,3", "iPhone13,4", "iPhone14,2", "iPhone14,3", "iPhone14,4", "iPhone14,5", "iPhone14,7", "iPhone14,8", "iPhone15,2", "iPhone15,3", "iPhone15,4", "iPhone15,5", "iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4"]
+        let capableDevices: Set<String> = ["iPhone13,1", "iPhone13,2", "iPhone13,3", "iPhone13,4", "iPhone14,2", "iPhone14,3", "iPhone14,4", "iPhone14,5", "iPhone14,7", "iPhone14,8", "iPhone15,2", "iPhone15,3", "iPhone15,4", "iPhone15,5", "iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4", "iPhone18,1", "iPhone18,2", "iPhone18,3", "iPhone18,4"]
         return capableDevices.contains(identifier)
     }()
     
