@@ -35,7 +35,7 @@ struct AboutView: View {
                 
                 LabeledContent("ProductModelName".localized(path: path), value: UIDevice.fullModel)
                     .textSelection(.enabled)
-                MonospacedLabel("ProductModel".localized(path: path), value: showingModelNumber ? regulatoryModelNumber : "\(modelNumber)\(getRegionInfo())")
+                LabeledContent("ProductModel".localized(path: path), value: showingModelNumber ? regulatoryModelNumber : "\(modelNumber)\(getRegionInfo())")
                     .contentShape(Rectangle())
                     .onTapGesture {
                       showingModelNumber.toggle()
@@ -66,10 +66,10 @@ struct AboutView: View {
             }
             
             if !UIDevice.IsSimulator {
-                MonospacedLabel("MACAddress".localized(path: path), value: wifiAddress)
-                MonospacedLabel("BTMACAddress".localized(path: path), value: bluetoothAddress)
+                LabeledContent("MACAddress".localized(path: path), value: wifiAddress)
+                LabeledContent("BTMACAddress".localized(path: path), value: bluetoothAddress)
                 if UIDevice.CellularTelephonyCapability {
-                    MonospacedLabel("ModemVersion".localized(path: path), value: "1.00.00")
+                    LabeledContent("ModemVersion".localized(path: path), value: "1.00.00")
                 }
                 NavigationLink("SEID", destination: SEIDView())
                 
@@ -77,32 +77,22 @@ struct AboutView: View {
                     VStack {
                         Text("EID".localized(path: path))
                             .frame(maxWidth: .infinity, alignment: .leading)
-                        HStack(spacing: 0) {
-                            ForEach(Array(eidValue.enumerated()), id: \.offset) { _, character in
-                                let char = String(character)
-                                if character == "1" {
-                                    Text(char)
-                                } else {
-                                    Text(char)
-                                        .fontDesign(.monospaced)
-                                        .kerning(-1)
-                                }
-                            }
-                        }
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .foregroundStyle(.secondary)
-                        .font(.subheadline)
+                        Text(eidValue)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .foregroundStyle(.secondary)
+                            .font(.caption)
+                            .lineLimit(1)
                     }
                     LabeledContent("CARRIER_LOCK".localized(path: path, table: table), value: "CARRIER_LOCK_UNLOCKED".localized(path: path, table: table))
                     
                     Section {
-                        MonospacedLabel("ModemIMEI".localized(path: path), value: "00 000000 000000 0")
+                        LabeledContent("ModemIMEI".localized(path: path), value: "00 000000 000000 0")
                             .contextMenu {
                                 Button("COPY".localized(path: path, table: table), systemImage: "document.on.document") {}
                                 Button("BARCODE".localized(path: path, table: table), systemImage: "barcode") {}
                                 Button("SHARE_IDENTITY".localized(path: path, table: table), systemImage: "iphone.gen3.crop.circle") {}
                             }
-                        MonospacedLabel("ModemIMEI2".localized(path: path, table: table), value: "00 000000 000000 0")
+                        LabeledContent("ModemIMEI2".localized(path: path, table: table), value: "00 000000 000000 0")
                             .contextMenu {
                                 Button("COPY".localized(path: path, table: table), systemImage: "document.on.document") {}
                                 Button("BARCODE".localized(path: path, table: table), systemImage: "barcode") {}
