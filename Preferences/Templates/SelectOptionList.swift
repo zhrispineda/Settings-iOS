@@ -21,23 +21,25 @@ struct SelectOptionList: View {
     var options: [String]
     var selectedBinding: Binding<String>? = nil
     @State var selected: String
+    var path: String
     var table: String
     
-    init(_ title: String, options: [String] = [], selectedBinding: Binding<String>? = nil, selected: String = "", table: String = "Localizable") {
+    init(_ title: String, options: [String] = [], selectedBinding: Binding<String>? = nil, selected: String = "", path: String = "", table: String = "Localizable") {
         self.title = title
         self.options = options
         self.selectedBinding = selectedBinding
         self.selected = selected
+        self.path = path
         self.table = table
     }
     
     var body: some View {
-        CustomList(title: title.localize(table: table)) {
+        CustomList(title: path.isEmpty ? title.localize(table: table) : title.localized(path: path, table: table)) {
             Section {
                 if let selectedBinding = selectedBinding {
                     Picker(title, selection: selectedBinding) {
                         ForEach(options, id: \.self) { option in
-                            Text(option.localize(table: table))
+                            Text(path.isEmpty ? option.localize(table: table) : option.localized(path: path, table: table))
                         }
                     }
                     .pickerStyle(.inline)
@@ -45,7 +47,7 @@ struct SelectOptionList: View {
                 } else {
                     Picker(title, selection: $selected) {
                         ForEach(options, id: \.self) { option in
-                            Text(option.localize(table: table))
+                            Text(path.isEmpty ? option.localize(table: table) : option.localized(path: path, table: table))
                         }
                     }
                     .pickerStyle(.inline)
@@ -58,11 +60,11 @@ struct SelectOptionList: View {
                 case "kWFLocAskToJoinTitle":
                     switch selectedBinding?.wrappedValue {
                     case "kWFLocAskToJoinDetailOff":
-                        Text("kWFLocAskToJoinOffFooter", tableName: table)
+                        Text("kWFLocAskToJoinOffFooter".localized(path: path, table: table))
                     case "kWFLocAskToJoinDetailNotify":
-                        Text("kWFLocAskToJoinNotifyFooter", tableName: table)
+                        Text("kWFLocAskToJoinNotifyFooter".localized(path: path, table: table))
                     case "kWFLocAskToJoinDetailAsk":
-                        Text("kWFLocAskToJoinAskFooter", tableName: table)
+                        Text("kWFLocAskToJoinAskFooter".localized(path: path, table: table))
                     default:
                         EmptyView()
                     }
