@@ -26,11 +26,27 @@ struct SecurityView: View {
     var body: some View {
         CustomList(title: "kWFLocOtherNetworkSecurityTitle".localized(path: path, table: table)) {
             Section {
-                SettingsLink("KWFLocSettingRandomMACSwitchTitle".localized(path: path, table: table),status: selectedRotation.localized(path: path, table: table), destination: SelectOptionList("KWFLocSettingRandomMACSwitchTitle", options: [
-                    "kWFLocRandomMACOffOption",
-                    "kWFLocRandomMACStaticOption",
-                    "kWFLocRandomMACRotatingOption"
-                ], selectedBinding: $selectedRotation, table: table))
+                SettingsLink(
+                    "KWFLocSettingRandomMACSwitchTitle".localized(
+                        path: path,
+                        table: table
+                    ),
+                    status: selectedRotation.localized(
+                        path: path,
+                        table: table
+                    ),
+                    destination: SelectOptionList(
+                        "KWFLocSettingRandomMACSwitchTitle",
+                        options: [
+                            "kWFLocRandomMACOffOption",
+                            "kWFLocRandomMACStaticOption",
+                            "kWFLocRandomMACRotatingOption"
+                        ],
+                        selectedBinding: $selectedRotation,
+                        path: path,
+                        table: table
+                    )
+                )
             }
             
             Section {
