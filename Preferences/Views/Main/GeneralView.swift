@@ -16,7 +16,7 @@ struct GeneralView: View {
     let table = "General"
     
     var body: some View {
-        CustomList {
+        CustomList(title: "General".localized(path: path, table: table)) {
             Section {
                 Placard(title: "General".localized(path: path, table: table), icon: "com.apple.graphic-icon.gear", description: "PLACARD_SUBTITLE".localized(path: path), frameY: $frameY, opacity: $opacity)
             }
