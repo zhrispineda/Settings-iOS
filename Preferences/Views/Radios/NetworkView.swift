@@ -23,7 +23,7 @@ struct NetworkView: View {
     @State private var currentTopicID = ""
     let path = "/System/Library/PrivateFrameworks/WiFiKitUI.framework"
     let table = "WiFiKitUILocalizableStrings"
-
+    
     var body: some View {
         CustomList(title: "kWFLocWiFiPowerTitle".localized(path: path, table: table), topPadding: true) {
             if isEditing {
@@ -33,7 +33,7 @@ struct NetworkView: View {
             } else {
                 Section {
                     Placard(title: "kWFLocWiFiPlacardTitle".localized(path: path, table: table), icon: "com.apple.graphic-icon.wifi", description: "kWFLocWiFiPlacardSubtitle".localized(path: path, table: table).replacing("helpkit", with: "pref"), frameY: $frameY, opacity: $opacity)
-
+                    
                     Toggle(isOn: $wifiEnabled) {
                         HStack {
                             Image(systemName: "checkmark")
@@ -110,14 +110,54 @@ struct NetworkView: View {
                     
                     // Ask to Join
                     Section {
-                        SettingsLink("kWFLocAskToJoinTitle".localized(path: path, table: table), status: askJoinNetworkSelection.localized(path: path, table: table), destination: SelectOptionList("kWFLocAskToJoinTitle", options: ["kWFLocAskToJoinDetailOff", "kWFLocAskToJoinDetailNotify", "kWFLocAskToJoinDetailAsk"], selectedBinding: $askJoinNetworkSelection, table: table))
+                        SettingsLink(
+                            "kWFLocAskToJoinTitle".localized(
+                                path: path,
+                                table: table
+                            ),
+                            status: askJoinNetworkSelection.localized(
+                                path: path,
+                                table: table
+                            ),
+                            destination: SelectOptionList(
+                                "kWFLocAskToJoinTitle",
+                                options: [
+                                    "kWFLocAskToJoinDetailOff",
+                                    "kWFLocAskToJoinDetailNotify",
+                                    "kWFLocAskToJoinDetailAsk"
+                                ],
+                                selectedBinding: $askJoinNetworkSelection,
+                                path: path,
+                                table: table
+                            )
+                        )
                     } footer: {
                         Text("kWFLocAskToJoinNotifyFooter".localized(path: path, table: table))
                     }
                     
                     // Auto-Join Hotspot
                     Section {
-                        SettingsLink("kWFLocAutoInstantHotspotTitle".localized(path: path, table: table), status: autoJoinHotspotSelection.localized(path: path, table: table), destination: SelectOptionList("kWFLocAutoInstantHotspotTitle", options: ["kWFLocAutoInstantHotspotJoinNeverTitle", "kWFLocAutoInstantHotspotJoinAskTitle", "kWFLocAutoInstantHotspotJoinAutoTitle"], selectedBinding: $autoJoinHotspotSelection, table: table))
+                        SettingsLink(
+                            "kWFLocAutoInstantHotspotTitle".localized(
+                                path: path,
+                                table: table
+                            ),
+                            status: autoJoinHotspotSelection.localized(
+                                path: path,
+                                table: table
+                            ),
+                            destination: SelectOptionList(
+                                "kWFLocAutoInstantHotspotTitle",
+                                options: [
+                                    "kWFLocAutoInstantHotspotJoinNeverTitle",
+                                    "kWFLocAutoInstantHotspotJoinAskTitle",
+                                    "kWFLocAutoInstantHotspotJoinAutoTitle"
+                                ],
+                                selectedBinding: $autoJoinHotspotSelection,
+                                path: path,
+                                table: table
+                            )
+                        )
                     } footer: {
                         Text("kWFLocAutoInstantHotspotFooter".localized(path: path, table: table))
                     }
