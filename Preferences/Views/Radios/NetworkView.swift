@@ -32,7 +32,22 @@ struct NetworkView: View {
                 }
             } else {
                 Section {
-                    Placard(title: "kWFLocWiFiPlacardTitle".localized(path: path, table: table), icon: "com.apple.graphic-icon.wifi", description: "kWFLocWiFiPlacardSubtitle".localized(path: path, table: table).replacing("helpkit", with: "pref"), frameY: $frameY, opacity: $opacity)
+                    Placard(
+                        title: "kWFLocWiFiPlacardTitle".localized(
+                            path: path,
+                            table: table
+                        ),
+                        icon: "com.apple.graphic-icon.wifi",
+                        description: "kWFLocWiFiPlacardSubtitle".localized(
+                            path: path,
+                            table: table
+                        ).replacing(
+                            "helpkit",
+                            with: "pref"
+                        ),
+                        frameY: $frameY,
+                        opacity: $opacity
+                    )
                     
                     Toggle(isOn: $wifiEnabled) {
                         HStack {
