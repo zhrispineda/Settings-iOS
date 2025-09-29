@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @AppStorage("FollowUpDismissed") private var followUpDismissed = false
+    @AppStorage("FollowUpDismissed1") private var followUpDismissed = false
     @AppStorage("AirplaneMode") private var airplaneModeEnabled = false
     @AppStorage("WiFi") private var wifiEnabled = true
     @AppStorage("Bluetooth") private var bluetoothEnabled = true
