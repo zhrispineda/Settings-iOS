@@ -19,7 +19,7 @@ let configuration = Configuration()
 /// Class for managing the state of the app's NavigationStack selection variable and destination view.
 @Observable class StateManager {
     var destination = AnyView(GeneralView())
-    var selection: SettingsModel? = .general
+    var selection: SettingsOptions? = .general
     var path: NavigationPath = NavigationPath()
 }
 
@@ -51,7 +51,7 @@ struct AnyRoute: Hashable {
 
 // MARK: - SettingsModel data
 /// Stores the title of each enum variable for use in navigation.
-enum SettingsModel: String, CaseIterable {
+enum SettingsOptions: String, CaseIterable {
     case accessibility = "Accessibility"
     case actionButton = "Action Button"
     case appleIntelligence = "Apple Intelligence & Siri"
@@ -109,14 +109,30 @@ enum Capabilities {
 }
 
 /// A struct for defining custom navigation links for use with sections of the app.
-struct SettingsItem<Content: View>: Identifiable {
+struct SettingsItem: Identifiable, Hashable {
     var id: String { title }
-    let type: SettingsModel
+    let type: SettingsOptions
     var title: String { type.rawValue }
     let icon: String
-    var capability: Capabilities = .none
-    var color: Color = Color.white
-    let destination: Content
+    var capability: Capabilities
+    var color: Color
+    let destination: AnyView
+    
+    init(type: SettingsOptions, icon: String, capability: Capabilities = .none, color: Color = .white, destination: AnyView) {
+        self.type = type
+        self.icon = icon
+        self.capability = capability
+        self.color = color
+        self.destination = destination
+    }
+    
+    static func == (lhs: SettingsItem, rhs: SettingsItem) -> Bool {
+        lhs.id == rhs.id
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
 }
 
 // MARK: - Settings Layout

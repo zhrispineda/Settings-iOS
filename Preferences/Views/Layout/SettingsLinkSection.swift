@@ -10,7 +10,7 @@ import SwiftUI
 /// Settings Link for iOS
 struct SettingsLinkSection: View {
     @State private var showingSignInSheet = false
-    var item: [SettingsItem<AnyView>]
+    var item: [SettingsItem]
     
     var body: some View {
         Section {
