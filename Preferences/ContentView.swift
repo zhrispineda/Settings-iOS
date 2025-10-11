@@ -31,14 +31,12 @@ struct ContentView: View {
                     }
                     .foregroundStyle(.primary)
                     
-                    if !followUpDismissed && !UIDevice.IsSimulator {
+                    if followUpDismissed && !UIDevice.IsSimulator {
                         Section {
                             Button {
-                                id = UUID() // Reset destination
                                 stateManager.selection = .followUp
                             } label: {
                                 SLabel("FOLLOWUP_TITLE".localized(path: "/System/Library/PrivateFrameworks/SetupAssistant.framework", table: "FollowUp"), badgeCount: 1)
-                                    .foregroundStyle(Color(UIColor.label))
                             }
                         }
                     }
@@ -51,7 +49,6 @@ struct ContentView: View {
                                 if !phoneOnly.contains(setting.id) && requiredCapabilities(capability: setting.capability) {
                                     Button {
                                         if stateManager.selection != setting.type {
-                                            id = UUID() // Reset destination
                                             stateManager.selection = setting.type
                                         }
                                     } label: {
