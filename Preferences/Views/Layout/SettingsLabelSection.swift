@@ -32,8 +32,10 @@ struct SettingsLabelSection: View {
                     }
                 } else if !phoneOnly.contains(setting.id) && requiredCapabilities(capability: setting.capability) {
                     Button {
-                        id = UUID() // Reset destination
-                        selection = setting.type
+                        if selection ?? .general != setting.type {
+                            id = UUID() // Reset destination
+                            selection = setting.type
+                        }
                     } label: {
                         SLabel(setting.id, color: setting.color, icon: setting.icon)
                     }

@@ -50,8 +50,10 @@ struct ContentView: View {
                             ForEach(radioSettings) { setting in
                                 if !phoneOnly.contains(setting.id) && requiredCapabilities(capability: setting.capability) {
                                     Button {
-                                        id = UUID() // Reset destination
-                                        stateManager.selection = setting.type
+                                        if stateManager.selection != setting.type {
+                                            id = UUID() // Reset destination
+                                            stateManager.selection = setting.type
+                                        }
                                     } label: {
                                         SLabel(
                                             setting.id,
@@ -126,9 +128,6 @@ struct ContentView: View {
             } detail: {
                 NavigationStack(path: $stateManager.path) {
                     stateManager.destination
-                        .navigationDestination(for: AnyRoute.self) { route in
-                            route.destination()
-                        }
                 }
                 .id(id)
             }
