@@ -13,7 +13,7 @@ struct PreferencesApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView(stateManager: stateManager)
+            ContentView()
                 .environment(stateManager)
         }
         .commands {

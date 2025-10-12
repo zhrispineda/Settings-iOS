@@ -13,13 +13,15 @@ struct ContentView: View {
     @AppStorage("WiFi") private var wifiEnabled = true
     @AppStorage("Bluetooth") private var bluetoothEnabled = true
     @AppStorage("VPNToggle") private var VPNEnabled = true
-    @Bindable var stateManager: StateManager
+    @Environment(StateManager.self) private var stateManager
     @State private var searchFocused = false
     @State private var searchText = ""
     @State private var showingSignInSheet = false
     @State private var id = UUID()
 
     var body: some View {
+        @Bindable var stateManager = stateManager
+        
         // MARK: iPadOS Layout
         if UIDevice.iPad {
             NavigationSplitView {
@@ -29,7 +31,6 @@ struct ContentView: View {
                     } label: {
                         AppleAccountSection()
                     }
-                    .foregroundStyle(.primary)
                     
                     if followUpDismissed && !UIDevice.IsSimulator {
                         Section {
@@ -44,7 +45,12 @@ struct ContentView: View {
                     // MARK: Radio Settings
                     if !UIDevice.IsSimulator {
                         Section {
-                            IconToggle("Airplane Mode", isOn: $airplaneModeEnabled, color: Color.orange, icon: "com.apple.graphic-icon.airplane-mode")
+                            IconToggle(
+                                "Airplane Mode",
+                                isOn: $airplaneModeEnabled,
+                                color: Color.orange,
+                                icon: "com.apple.graphic-icon.airplane-mode"
+                            )
                             ForEach(radioSettings) { setting in
                                 if !phoneOnly.contains(setting.id) && requiredCapabilities(capability: setting.capability) {
                                     Button {
@@ -126,7 +132,6 @@ struct ContentView: View {
                 NavigationStack(path: $stateManager.path) {
                     stateManager.destination
                 }
-                .id(id)
             }
         } else {
             // MARK: iOS Layout
@@ -279,6 +284,6 @@ func requiredCapabilities(capability: Capabilities) -> Bool {
 }
 
 #Preview {
-    ContentView(stateManager: StateManager())
+    ContentView()
         .environment(StateManager())
 }

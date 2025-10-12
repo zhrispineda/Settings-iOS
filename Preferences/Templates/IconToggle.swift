@@ -60,5 +60,5 @@ struct IconToggle: View {
 }
 
 #Preview {
-    ContentView(stateManager: StateManager())
+    ContentView()
 }

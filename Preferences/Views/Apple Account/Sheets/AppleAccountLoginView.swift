@@ -124,5 +124,5 @@ struct AppleAccountLoginView: View {
 }
 
 #Preview("ContentView") {
-    ContentView(stateManager: StateManager())
+    ContentView()
 }

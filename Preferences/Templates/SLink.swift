@@ -107,7 +107,7 @@ struct SLink<Content: View>: View {
 }
 
 #Preview("ContentView") {
-    ContentView(stateManager: StateManager())
+    ContentView()
 }
 
 #Preview("SLink Example") {
