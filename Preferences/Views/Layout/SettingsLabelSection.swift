@@ -11,7 +11,6 @@ import SwiftUI
 struct SettingsLabelSection: View {
     @Environment(StateManager.self) private var stateManager
     @Binding var selection: SettingsItem?
-    @Binding var id: UUID
     @State private var showingSignInSheet = false
     let item: [SettingsItem]
     

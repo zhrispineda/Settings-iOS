@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @AppStorage("FollowUpDismissed1") private var followUpDismissed = false
+    @AppStorage("FollowUpDismissed") private var followUpDismissed = false
     @AppStorage("AirplaneMode") private var airplaneModeEnabled = false
     @AppStorage("WiFi") private var wifiEnabled = true
     @AppStorage("Bluetooth") private var bluetoothEnabled = true
@@ -19,7 +19,6 @@ struct ContentView: View {
     @State private var searchFocused = false
     @State private var searchText = ""
     @State private var showingSignInSheet = false
-    @State private var id = UUID()
 
     var body: some View {
         @Bindable var stateManager = stateManager
@@ -80,22 +79,22 @@ struct ContentView: View {
                     }
                     
                     // MARK: Main
-                    SettingsLabelSection(selection: $selection, id: $id, item: UIDevice.IsSimulator ? stateManager.simulatorMainSettings : stateManager.mainSettings)
+                    SettingsLabelSection(selection: $selection, item: UIDevice.IsSimulator ? stateManager.simulatorMainSettings : stateManager.mainSettings)
 
                     // MARK: Attention
-                    SettingsLabelSection(selection: $selection, id: $id, item: UIDevice.IsSimulator ? stateManager.attentionSimulatorSettings : stateManager.attentionSettings)
+                    SettingsLabelSection(selection: $selection, item: UIDevice.IsSimulator ? stateManager.attentionSimulatorSettings : stateManager.attentionSettings)
                     
                     // MARK: Security
-                    SettingsLabelSection(selection: $selection, id: $id, item: UIDevice.IsSimulator ? stateManager.simulatorSecuritySettings : stateManager.securitySettings)
+                    SettingsLabelSection(selection: $selection, item: UIDevice.IsSimulator ? stateManager.simulatorSecuritySettings : stateManager.securitySettings)
                     
                     // MARK: Services
-                    SettingsLabelSection(selection: $selection, id: $id, item: UIDevice.IsSimulator ? stateManager.simulatorServicesSettings : stateManager.serviceSettings)
+                    SettingsLabelSection(selection: $selection, item: UIDevice.IsSimulator ? stateManager.simulatorServicesSettings : stateManager.serviceSettings)
 
                     // MARK: Apps
-                    SettingsLabelSection(selection: $selection, id: $id, item: stateManager.appsSettings)
+                    SettingsLabelSection(selection: $selection, item: stateManager.appsSettings)
                     
                     // MARK: Developer
-                    SettingsLabelSection(selection: $selection, id: $id, item: stateManager.developerSettings)
+                    SettingsLabelSection(selection: $selection, item: stateManager.developerSettings)
                 }
                 .toolbar(removing: .sidebarToggle)
                 .sheet(isPresented: $showingSignInSheet) {
