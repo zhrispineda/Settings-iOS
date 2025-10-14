@@ -13,20 +13,21 @@ struct SettingsSearchView: View {
     var body: some View {
         Section("Suggestions") {
             Group {
-                SLink("Sounds & Haptics", color: .pink, icon: "speaker.3.fill") {
+                SLink("Sounds & Haptics", icon: "com.apple.graphic-icon.sound") {
                     BundleControllerView("/System/Library/PrivateFrameworks/Settings/SoundsAndHapticsSettings.framework/SoundsAndHapticsSettings", controller: "SHSSoundsPrefController", title: "Sounds & Haptics")
                 }
-                SLink("Notifications", color: .red, icon: "bell.badge.fill") {
+                SLink("Notifications", icon: "com.apple.graphic-icon.notifications") {
                     NotificationsView()
                 }
-                SLink("Focus", color: .indigo, icon: "moon.fill") {
+                SLink("Focus", icon: "com.apple.graphic-icon.focus") {
                     FocusView()
                 }
-                SLink("Screen Time", color: .indigo, icon: "hourglass") {
+                SLink("Screen Time", icon: "com.apple.graphic-icon.screen-time") {
                     ScreenTimeView()
                 }
             }
             .navigationLinkIndicatorVisibility(.hidden)
+            .padding(.vertical, 5)
         }
     }
 }
