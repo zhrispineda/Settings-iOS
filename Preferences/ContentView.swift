@@ -14,6 +14,8 @@ struct ContentView: View {
     @AppStorage("Bluetooth") private var bluetoothEnabled = true
     @AppStorage("VPNToggle") private var VPNEnabled = true
     @Environment(StateManager.self) private var stateManager
+    @State private var selection: SettingsItem? = nil
+    @State private var path = NavigationPath()
     @State private var searchFocused = false
     @State private var searchText = ""
     @State private var showingSignInSheet = false
@@ -25,7 +27,7 @@ struct ContentView: View {
         // MARK: iPadOS Layout
         if UIDevice.iPad {
             NavigationSplitView {
-                List(selection: $stateManager.selection) {
+                List(selection: $selection) {
                     Button {
                         showingSignInSheet.toggle()
                     } label: {
@@ -50,23 +52,23 @@ struct ContentView: View {
                                 isOn: $airplaneModeEnabled,
                                 icon: "com.apple.graphic-icon.airplane-mode"
                             )
-                            ForEach(radioSettings) { setting in
-                                if !phoneOnly.contains(setting.id) && requiredCapabilities(capability: setting.capability) {
+                            ForEach(stateManager.radioSettings) { setting in
+                                if !stateManager.phoneOnly.contains(setting.title) && requiredCapabilities(capability: setting.capability) {
                                     Button {
-                                        if stateManager.selection != setting.type {
-                                            stateManager.selection = setting.type
+                                        if selection != setting {
+                                            selection = setting
                                         }
                                     } label: {
                                         SLabel(
-                                            setting.id,
+                                            setting.title,
                                             icon: setting.icon,
-                                            status: setting.id == "Wi-Fi" ? (wifiEnabled && !airplaneModeEnabled ? "Not Connected" : "Off") : setting.id == "Bluetooth" ? (bluetoothEnabled ? "On" : "Off") : "",
-                                            selected: setting.id == "Wi-Fi" ? stateManager.selection == .wifi : stateManager.selection == .bluetooth
+                                            status: setting.title == "Wi-Fi" ? (wifiEnabled && !airplaneModeEnabled ? "Not Connected" : "Off") : setting.title == "Bluetooth" ? (bluetoothEnabled ? "On" : "Off") : "",
+                                            selected: setting.title == "Wi-Fi" ? selection?.type == .wifi : selection?.type == .bluetooth
                                         )
                                     }
-                                    .foregroundStyle(stateManager.selection == setting.type ? .blue : .primary)
+                                    .foregroundStyle(selection == setting ? .blue : .primary)
                                     .listRowBackground(
-                                        Color(stateManager.selection == setting.type ? (UIDevice.IsSimulator ? .blue : .selected) : .clear)
+                                        Color(selection == setting ? (UIDevice.IsSimulator ? .blue : .selected) : .clear)
                                             .clipShape(RoundedRectangle(cornerRadius: 30, style: .circular))
                                     )
                                 }
@@ -78,22 +80,22 @@ struct ContentView: View {
                     }
                     
                     // MARK: Main
-                    SettingsLabelSection(selection: $stateManager.selection, id: $id, item: UIDevice.IsSimulator ? simulatorMainSettings : mainSettings)
+                    SettingsLabelSection(selection: $selection, id: $id, item: UIDevice.IsSimulator ? stateManager.simulatorMainSettings : stateManager.mainSettings)
 
                     // MARK: Attention
-                    SettingsLabelSection(selection: $stateManager.selection, id: $id, item: UIDevice.IsSimulator ? attentionSimulatorSettings : attentionSettings)
+                    SettingsLabelSection(selection: $selection, id: $id, item: UIDevice.IsSimulator ? stateManager.attentionSimulatorSettings : stateManager.attentionSettings)
                     
                     // MARK: Security
-                    SettingsLabelSection(selection: $stateManager.selection, id: $id, item: UIDevice.IsSimulator ? simulatorSecuritySettings : securitySettings)
+                    SettingsLabelSection(selection: $selection, id: $id, item: UIDevice.IsSimulator ? stateManager.simulatorSecuritySettings : stateManager.securitySettings)
                     
                     // MARK: Services
-                    SettingsLabelSection(selection: $stateManager.selection, id: $id, item: UIDevice.IsSimulator ? simulatorServicesSettings : serviceSettings)
+                    SettingsLabelSection(selection: $selection, id: $id, item: UIDevice.IsSimulator ? stateManager.simulatorServicesSettings : stateManager.serviceSettings)
 
                     // MARK: Apps
-                    SettingsLabelSection(selection: $stateManager.selection, id: $id, item: appsSettings)
+                    SettingsLabelSection(selection: $selection, id: $id, item: stateManager.appsSettings)
                     
                     // MARK: Developer
-                    SettingsLabelSection(selection: $stateManager.selection, id: $id, item: developerSettings)
+                    SettingsLabelSection(selection: $selection, id: $id, item: stateManager.developerSettings)
                 }
                 .toolbar(removing: .sidebarToggle)
                 .sheet(isPresented: $showingSignInSheet) {
@@ -121,14 +123,14 @@ struct ContentView: View {
                         }
                     }
                 }
-                .onChange(of: stateManager.selection) { // Change views when selecting sidebar navigation links
-                    if let selectedSettingsItem = combinedSettings.first(where: { $0.type == stateManager.selection }) {
-                        stateManager.destination = selectedSettingsItem.destination
+                .onAppear {
+                    if selection == nil {
+                        selection = stateManager.mainSettings.first
                     }
                 }
             } detail: {
-                NavigationStack(path: $stateManager.path) {
-                    stateManager.destination
+                NavigationStack(path: $path) {
+                    selection?.destination
                 }
             }
         } else {
@@ -186,26 +188,26 @@ struct ContentView: View {
                                 isOn: $airplaneModeEnabled,
                                 icon: "com.apple.graphic-icon.airplane-mode"
                             )
-                            ForEach(radioSettings) { setting in
+                            ForEach(stateManager.radioSettings) { setting in
                                 if setting.capability == .none {
                                     SLink(
-                                        setting.id,
+                                        setting.title,
                                         icon: setting.icon,
-                                        status: setting.id == "Wi-Fi" ? (wifiEnabled && !airplaneModeEnabled ? "Not Connected" : "Off") : setting.id == "Bluetooth" ? (bluetoothEnabled ? "On" : "Off") : ""
+                                        status: setting.title == "Wi-Fi" ? (wifiEnabled && !airplaneModeEnabled ? "Not Connected" : "Off") : setting.title == "Bluetooth" ? (bluetoothEnabled ? "On" : "Off") : ""
                                     ) {
                                         setting.destination
                                     }
-                                    .accessibilityLabel(setting.id)
+                                    .accessibilityLabel(setting.title)
                                 } else if requiredCapabilities(capability: setting.capability) {
                                     SLink(
-                                        setting.id,
+                                        setting.title,
                                         icon: setting.icon,
-                                        status: setting.id == "Cellular" && airplaneModeEnabled ? "Airplane Mode" : setting.id == "Personal Hotspot" ? "Off" : ""
+                                        status: setting.title == "Cellular" && airplaneModeEnabled ? "Airplane Mode" : setting.title == "Personal Hotspot" ? "Off" : ""
                                     ) {
                                         setting.destination
                                     }
-                                    .disabled(setting.id == "Personal Hotspot" && airplaneModeEnabled)
-                                    .accessibilityLabel(setting.id)
+                                    .disabled(setting.title == "Personal Hotspot" && airplaneModeEnabled)
+                                    .accessibilityLabel(setting.title)
                                 }
                             }
                             if requiredCapabilities(capability: .vpn) {
@@ -215,23 +217,23 @@ struct ContentView: View {
                     }
                     
                     // MARK: Main Settings
-                    SettingsLinkSection(item: UIDevice.IsSimulator ? simulatorMainSettings : mainSettings)
+                    SettingsLinkSection(item: UIDevice.IsSimulator ? stateManager.simulatorMainSettings : stateManager.mainSettings)
                     
                     // MARK: Attention
-                    SettingsLinkSection(item: UIDevice.IsSimulator ? attentionSimulatorSettings : attentionSettings)
+                    SettingsLinkSection(item: UIDevice.IsSimulator ? stateManager.attentionSimulatorSettings : stateManager.attentionSettings)
                     
                     // MARK: Security
-                    SettingsLinkSection(item: UIDevice.IsSimulator ? simulatorSecuritySettings : securitySettings)
+                    SettingsLinkSection(item: UIDevice.IsSimulator ? stateManager.simulatorSecuritySettings : stateManager.securitySettings)
                     
                     // MARK: Services
-                    SettingsLinkSection(item: UIDevice.IsSimulator ? simulatorServicesSettings : serviceSettings)
+                    SettingsLinkSection(item: UIDevice.IsSimulator ? stateManager.simulatorServicesSettings : stateManager.serviceSettings)
 
                     // MARK: Apps
-                    SettingsLinkSection(item: appsSettings)
+                    SettingsLinkSection(item: stateManager.appsSettings)
                     
                     // MARK: Developer
                     if UIDevice.IsSimulator || configuration.developerMode {
-                        SettingsLinkSection(item: developerSettings)
+                        SettingsLinkSection(item: stateManager.developerSettings)
                     }
                 }
                 .navigationTitle("Settings")

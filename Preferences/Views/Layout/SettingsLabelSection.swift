@@ -9,19 +9,20 @@ import SwiftUI
 
 /// Settings Sidebar Label for iPadOS
 struct SettingsLabelSection: View {
-    @Binding var selection: SettingsOptions?
+    @Environment(StateManager.self) private var stateManager
+    @Binding var selection: SettingsItem?
     @Binding var id: UUID
     @State private var showingSignInSheet = false
-    var item: [SettingsItem]
+    let item: [SettingsItem]
     
     var body: some View {
         Section {
             ForEach(item) { setting in
-                if setting.id == "iCloud" {
+                if setting.type == .icloud {
                     Button {
                         showingSignInSheet.toggle()
                     } label: {
-                        SLabel(setting.id, color: setting.color, icon: setting.icon)
+                        SLabel(setting.title, color: setting.color, icon: setting.icon)
                     }
                     .foregroundStyle(.primary)
                     .sheet(isPresented: $showingSignInSheet) {
@@ -30,17 +31,17 @@ struct SettingsLabelSection: View {
                                 .interactiveDismissDisabled()
                         }
                     }
-                } else if !phoneOnly.contains(setting.id) && requiredCapabilities(capability: setting.capability) {
+                } else if !stateManager.phoneOnly.contains(setting.title) && requiredCapabilities(capability: setting.capability) {
                     Button {
-                        if selection ?? .general != setting.type {
-                            selection = setting.type
+                        if selection != setting {
+                            selection = setting
                         }
                     } label: {
-                        SLabel(setting.id, color: setting.color, icon: setting.icon)
+                        SLabel(setting.title, color: setting.color, icon: setting.icon)
                     }
-                    .foregroundStyle(selection == setting.type ? .blue : .primary)
+                    .foregroundStyle(selection == setting ? .blue : .primary)
                     .listRowBackground(
-                        Color(selection == setting.type ? (UIDevice.IsSimulator ? .blue : .selected) : .clear)
+                        Color(selection == setting ? (UIDevice.IsSimulator ? .blue : .selected) : .clear)
                             .clipShape(RoundedRectangle(cornerRadius: 30, style: .circular))
                     )
                 }

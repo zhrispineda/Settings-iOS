@@ -9,21 +9,22 @@ import SwiftUI
 
 /// Settings Link for iOS
 struct SettingsLinkSection: View {
+    @Environment(StateManager.self) private var stateManager
     @State private var showingSignInSheet = false
     var item: [SettingsItem]
     
     var body: some View {
         Section {
             ForEach(item) { setting in
-                if setting.id == "iCloud" {
+                if setting.type == .icloud {
                     Button {
                         showingSignInSheet.toggle()
                     } label: {
-                        SLink(setting.id, color: setting.color, icon: setting.icon) {
+                        SLink(setting.title, color: setting.color, icon: setting.icon) {
                             setting.destination
                         }
                     }
-                    .accessibilityLabel(setting.id)
+                    .accessibilityLabel(setting.title)
                     .foregroundStyle(.primary)
                     .sheet(isPresented: $showingSignInSheet) {
                         NavigationStack {
@@ -31,11 +32,11 @@ struct SettingsLinkSection: View {
                                 .interactiveDismissDisabled()
                         }
                     }
-                } else if !tabletOnly.contains(setting.id) && requiredCapabilities(capability: setting.capability) {
-                    SLink(setting.id, color: setting.color, icon: setting.icon) {
+                } else if !stateManager.tabletOnly.contains(setting.title) && requiredCapabilities(capability: setting.capability) {
+                    SLink(setting.title, color: setting.color, icon: setting.icon) {
                         setting.destination
                     }
-                    .accessibilityLabel(setting.id)
+                    .accessibilityLabel(setting.title)
                 }
             }
         }
