@@ -14,8 +14,6 @@ struct ContentView: View {
     @AppStorage("Bluetooth") private var bluetoothEnabled = true
     @AppStorage("VPNToggle") private var VPNEnabled = true
     @Environment(StateManager.self) private var stateManager
-    @State private var selection: SettingsItem? = nil
-    @State private var path = NavigationPath()
     @State private var searchFocused = false
     @State private var searchText = ""
     @State private var showingSignInSheet = false
@@ -26,17 +24,17 @@ struct ContentView: View {
         // MARK: iPadOS Layout
         if UIDevice.iPad {
             NavigationSplitView {
-                List(selection: $selection) {
+                List(selection: $stateManager.selection) {
                     Button {
                         showingSignInSheet.toggle()
                     } label: {
                         AppleAccountSection()
                     }
                     
-                    if followUpDismissed && !UIDevice.IsSimulator {
+                    if !followUpDismissed && !UIDevice.IsSimulator {
                         Section {
                             Button {
-                                stateManager.selection = .followUp
+                                stateManager.selection = stateManager.followUpSettings.first
                             } label: {
                                 SLabel("FOLLOWUP_TITLE".localized(path: "/System/Library/PrivateFrameworks/SetupAssistant.framework", table: "FollowUp"), badgeCount: 1)
                             }
@@ -54,20 +52,20 @@ struct ContentView: View {
                             ForEach(stateManager.radioSettings) { setting in
                                 if !stateManager.phoneOnly.contains(setting.title) && requiredCapabilities(capability: setting.capability) {
                                     Button {
-                                        if selection != setting {
-                                            selection = setting
+                                        if stateManager.selection != setting {
+                                            stateManager.selection = setting
                                         }
                                     } label: {
                                         SLabel(
                                             setting.title,
                                             icon: setting.icon,
                                             status: setting.title == "Wi-Fi" ? (wifiEnabled && !airplaneModeEnabled ? "Not Connected" : "Off") : setting.title == "Bluetooth" ? (bluetoothEnabled ? "On" : "Off") : "",
-                                            selected: setting.title == "Wi-Fi" ? selection?.type == .wifi : selection?.type == .bluetooth
+                                            selected: setting.title == "Wi-Fi" ? stateManager.selection?.type == .wifi : stateManager.selection?.type == .bluetooth
                                         )
                                     }
-                                    .foregroundStyle(selection == setting ? .blue : .primary)
+                                    .foregroundStyle(stateManager.selection == setting ? .blue : .primary)
                                     .listRowBackground(
-                                        Color(selection == setting ? (UIDevice.IsSimulator ? .blue : .selected) : .clear)
+                                        Color(stateManager.selection == setting ? (UIDevice.IsSimulator ? .blue : .selected) : .clear)
                                             .clipShape(RoundedRectangle(cornerRadius: 30, style: .circular))
                                     )
                                 }
@@ -79,22 +77,22 @@ struct ContentView: View {
                     }
                     
                     // MARK: Main
-                    SettingsLabelSection(selection: $selection, item: UIDevice.IsSimulator ? stateManager.simulatorMainSettings : stateManager.mainSettings)
+                    SettingsLabelSection(selection: $stateManager.selection, item: UIDevice.IsSimulator ? stateManager.simulatorMainSettings : stateManager.mainSettings)
 
                     // MARK: Attention
-                    SettingsLabelSection(selection: $selection, item: UIDevice.IsSimulator ? stateManager.attentionSimulatorSettings : stateManager.attentionSettings)
+                    SettingsLabelSection(selection: $stateManager.selection, item: UIDevice.IsSimulator ? stateManager.attentionSimulatorSettings : stateManager.attentionSettings)
                     
                     // MARK: Security
-                    SettingsLabelSection(selection: $selection, item: UIDevice.IsSimulator ? stateManager.simulatorSecuritySettings : stateManager.securitySettings)
+                    SettingsLabelSection(selection: $stateManager.selection, item: UIDevice.IsSimulator ? stateManager.simulatorSecuritySettings : stateManager.securitySettings)
                     
                     // MARK: Services
-                    SettingsLabelSection(selection: $selection, item: UIDevice.IsSimulator ? stateManager.simulatorServicesSettings : stateManager.serviceSettings)
+                    SettingsLabelSection(selection: $stateManager.selection, item: UIDevice.IsSimulator ? stateManager.simulatorServicesSettings : stateManager.serviceSettings)
 
                     // MARK: Apps
-                    SettingsLabelSection(selection: $selection, item: stateManager.appsSettings)
+                    SettingsLabelSection(selection: $stateManager.selection, item: stateManager.appsSettings)
                     
                     // MARK: Developer
-                    SettingsLabelSection(selection: $selection, item: stateManager.developerSettings)
+                    SettingsLabelSection(selection: $stateManager.selection, item: stateManager.developerSettings)
                 }
                 .toolbar(removing: .sidebarToggle)
                 .sheet(isPresented: $showingSignInSheet) {
@@ -123,13 +121,13 @@ struct ContentView: View {
                     }
                 }
                 .onAppear {
-                    if selection == nil {
-                        selection = stateManager.mainSettings.first
+                    if stateManager.selection == nil {
+                        stateManager.selection = stateManager.mainSettings.first
                     }
                 }
             } detail: {
-                NavigationStack(path: $path) {
-                    selection?.destination
+                NavigationStack(path: $stateManager.path) {
+                    stateManager.selection?.destination
                 }
             }
         } else {
@@ -153,7 +151,7 @@ struct ContentView: View {
                         }
                     }
                     
-                    if followUpDismissed && !UIDevice.IsSimulator {
+                    if !followUpDismissed && !UIDevice.IsSimulator {
                         Section {
                             SLink("FOLLOWUP_TITLE".localized(path: "/System/Library/PrivateFrameworks/SetupAssistant.framework", table: "FollowUp"), icon: "None", badgeCount: 1) {
                                 FollowUpView()

@@ -34,16 +34,15 @@ struct FollowUpView: View {
                 
                 // FOLLOWUP_ACTION_LABEL_ALL (en, iphone): Finish Setting Up
                 Button("FOLLOWUP_ACTION_LABEL_ALL".localized(path: setupAssistant, table: table)) {
-                    SettingsLogger.log("Attempting to dismiss FollowUpView")
-                    if UIDevice.iPad {
-                        stateManager.selection = .general
-                        stateManager.destination = AnyView(GeneralView())
-                    } else if UIDevice.iPhone {
-                        dismiss()
-                    }
                     SettingsLogger.log("Updating FollowUpDismissed to true")
                     withAnimation {
                         followUpDismissed = true
+                    }
+                    SettingsLogger.log("Attempting to dismiss FollowUpView")
+                    if UIDevice.iPad {
+                        stateManager.selection = stateManager.mainSettings.first
+                    } else if UIDevice.iPhone {
+                        dismiss()
                     }
                 }
             }

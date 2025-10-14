@@ -18,9 +18,8 @@ let configuration = Configuration()
 // MARK: - State Manager
 /// Class for managing the state of the app's NavigationStack selection variable and destination view.
 @Observable final class StateManager {
-    var destination = AnyView(GeneralView())
-    var selection: SettingsOptions? = nil
     var path: NavigationPath = NavigationPath()
+    var selection: SettingsItem? = nil
     
     /// Device-restricted views
     let phoneOnly: Set<String> = ["Action Button", "Emergency SOS", "Health", "Personal Hotspot", "StandBy"]
