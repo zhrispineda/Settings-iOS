@@ -48,7 +48,6 @@ struct ContentView: View {
                             IconToggle(
                                 "Airplane Mode",
                                 isOn: $airplaneModeEnabled,
-                                color: Color.orange,
                                 icon: "com.apple.graphic-icon.airplane-mode"
                             )
                             ForEach(radioSettings) { setting in
@@ -60,7 +59,6 @@ struct ContentView: View {
                                     } label: {
                                         SLabel(
                                             setting.id,
-                                            color: setting.color,
                                             icon: setting.icon,
                                             status: setting.id == "Wi-Fi" ? (wifiEnabled && !airplaneModeEnabled ? "Not Connected" : "Off") : setting.id == "Bluetooth" ? (bluetoothEnabled ? "On" : "Off") : "",
                                             selected: setting.id == "Wi-Fi" ? stateManager.selection == .wifi : stateManager.selection == .bluetooth
@@ -154,7 +152,7 @@ struct ContentView: View {
                         }
                     }
                     
-                    if !followUpDismissed && !UIDevice.IsSimulator {
+                    if followUpDismissed && !UIDevice.IsSimulator {
                         Section {
                             SLink("FOLLOWUP_TITLE".localized(path: "/System/Library/PrivateFrameworks/SetupAssistant.framework", table: "FollowUp"), icon: "None", badgeCount: 1) {
                                 FollowUpView()
@@ -183,15 +181,27 @@ struct ContentView: View {
                     if !UIDevice.IsSimulator {
                         // MARK: Radio Settings
                         Section {
-                            IconToggle("Airplane Mode", isOn: $airplaneModeEnabled, icon: "com.apple.graphic-icon.airplane-mode")
+                            IconToggle(
+                                "Airplane Mode",
+                                isOn: $airplaneModeEnabled,
+                                icon: "com.apple.graphic-icon.airplane-mode"
+                            )
                             ForEach(radioSettings) { setting in
                                 if setting.capability == .none {
-                                    SLink(setting.id, color: setting.color, icon: setting.icon, status: setting.id == "Wi-Fi" ? (wifiEnabled && !airplaneModeEnabled ? "Not Connected" : "Off") : setting.id == "Bluetooth" ? (bluetoothEnabled ? "On" : "Off") : "") {
+                                    SLink(
+                                        setting.id,
+                                        icon: setting.icon,
+                                        status: setting.id == "Wi-Fi" ? (wifiEnabled && !airplaneModeEnabled ? "Not Connected" : "Off") : setting.id == "Bluetooth" ? (bluetoothEnabled ? "On" : "Off") : ""
+                                    ) {
                                         setting.destination
                                     }
                                     .accessibilityLabel(setting.id)
                                 } else if requiredCapabilities(capability: setting.capability) {
-                                    SLink(setting.id, color: setting.color, icon: setting.icon, status: setting.id == "Cellular" && airplaneModeEnabled ? "Airplane Mode" : setting.id == "Personal Hotspot" ? "Off" : "") {
+                                    SLink(
+                                        setting.id,
+                                        icon: setting.icon,
+                                        status: setting.id == "Cellular" && airplaneModeEnabled ? "Airplane Mode" : setting.id == "Personal Hotspot" ? "Off" : ""
+                                    ) {
                                         setting.destination
                                     }
                                     .disabled(setting.id == "Personal Hotspot" && airplaneModeEnabled)
@@ -223,9 +233,6 @@ struct ContentView: View {
                     if UIDevice.IsSimulator || configuration.developerMode {
                         SettingsLinkSection(item: developerSettings)
                     }
-                }
-                .navigationDestination(for: AnyRoute.self) { route in
-                    route.destination()
                 }
                 .navigationTitle("Settings")
                 .searchable(text: $searchText, isPresented: $searchFocused, placement: .automatic)
