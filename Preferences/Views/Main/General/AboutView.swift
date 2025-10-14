@@ -183,12 +183,6 @@ struct AboutView: View {
     }
 }
 
-struct AboutRoute: @preconcurrency Routable {
-    @MainActor func destination() -> AnyView {
-        AnyView(AboutView())
-    }
-}
-
 // Generate random address
 func generateRandomAddress() -> String {
     let characters = "0123456789ABCDEF"

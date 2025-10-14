@@ -17,6 +17,7 @@ let configuration = Configuration()
 
 // MARK: - State Manager
 /// Class for managing the state of the app's NavigationStack selection variable and destination view.
+@MainActor
 @Observable final class StateManager {
     var path: NavigationPath = NavigationPath()
     var selection: SettingsItem? = nil
@@ -37,7 +38,6 @@ let configuration = Configuration()
     let appsSettings: [SettingsItem]
     let developerSettings: [SettingsItem]
 
-    @MainActor
     init() {
         followUpSettings = [
             SettingsItem(
@@ -484,32 +484,6 @@ let configuration = Configuration()
                 )
             )
         ]
-    }
-}
-
-protocol Routable: Hashable {
-    func destination() -> AnyView
-}
-
-struct AnyRoute: Hashable {
-    private let _destination: () -> AnyView
-    private let base: AnyHashable
-    
-    init<R: Routable>(_ route: R) {
-        self._destination = { AnyView(route.destination()) }
-        self.base = AnyHashable(route)
-    }
-    
-    func destination() -> AnyView {
-        _destination()
-    }
-    
-    static func == (lhs: AnyRoute, rhs: AnyRoute) -> Bool {
-        return lhs.base == rhs.base
-    }
-
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(base)
     }
 }
 

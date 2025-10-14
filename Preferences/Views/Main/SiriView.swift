@@ -219,12 +219,6 @@ class ContactPickerDelegate: NSObject, CNContactPickerDelegate {
     }
 }
 
-struct SiriRoute: @preconcurrency Routable {
-    @MainActor func destination() -> AnyView {
-        AnyView(SiriView())
-    }
-}
-
 #Preview {
     NavigationStack {
         SiriView()

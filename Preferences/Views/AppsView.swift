@@ -112,12 +112,6 @@ struct AppsView: View {
     }
 }
 
-struct AppsRoute: Routable {
-    func destination() -> AnyView {
-        AnyView(AppsView())
-    }
-}
-
 #Preview {
     NavigationStack {
         AppsView()

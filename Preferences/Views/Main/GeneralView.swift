@@ -177,12 +177,6 @@ struct GeneralView: View {
     }
 }
 
-struct GeneralRoute: Routable {
-    func destination() -> AnyView {
-        AnyView(GeneralView())
-    }
-}
-
 #Preview {
     NavigationStack {
         GeneralView()

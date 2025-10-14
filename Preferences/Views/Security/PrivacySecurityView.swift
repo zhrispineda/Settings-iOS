@@ -190,12 +190,6 @@ struct PrivacySecurityView: View {
     }
 }
 
-struct PrivacySecurityRoute: Routable {
-    func destination() -> AnyView {
-        AnyView(PrivacySecurityView())
-    }
-}
-
 #Preview {
     NavigationStack {
         PrivacySecurityView()
