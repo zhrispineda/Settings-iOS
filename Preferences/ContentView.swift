@@ -11,6 +11,7 @@ struct ContentView: View {
     @AppStorage("AirplaneMode") private var airplaneModeEnabled = false
     @AppStorage("FollowUpDismissed") private var followUpDismissed = false
     @AppStorage("VPNToggle") private var VPNEnabled = true
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass
     @Environment(StateManager.self) private var stateManager
     @State private var searchFocused = false
     @State private var showingSignInSheet = false
@@ -127,16 +128,13 @@ struct ContentView: View {
                 }
             }
             .onAppear {
-                if stateManager.selection == nil && UIDevice.iPad {
+                if stateManager.selection == nil && UIDevice.iPad && horizontalSizeClass == .regular {
                     stateManager.selection = stateManager.mainSettings.first
                 }
             }
         } detail: {
             NavigationStack(path: $stateManager.path) {
                 stateManager.selection?.destination
-                    .navigationDestination(for: String.self) { key in
-                        RouteRegistry.shared.view(for: key) ?? AnyView(Text("Unknown: \(key)"))
-                    }
             }
         }
         .onChange(of: stateManager.path) { oldValue, newValue in

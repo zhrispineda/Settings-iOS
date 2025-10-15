@@ -13,6 +13,7 @@ struct SettingsLabelSection: View {
     @AppStorage("WiFi") private var wifiEnabled = true
     @AppStorage("Bluetooth") private var bluetoothEnabled = true
     @Environment(StateManager.self) private var stateManager
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass
     @Binding var selection: SettingsItem?
     @State private var showingSignInSheet = false
     let item: [SettingsItem]
@@ -68,7 +69,7 @@ struct SettingsLabelSection: View {
                             }
                             .foregroundStyle(selection == setting ? .blue : .primary)
                             .modifier(listRowBackgroundEffect(
-                                isActive: UIDevice.iPad,
+                                isActive: UIDevice.iPad && horizontalSizeClass == .compact,
                                 isSelected: selection == setting
                             ))
                         }
