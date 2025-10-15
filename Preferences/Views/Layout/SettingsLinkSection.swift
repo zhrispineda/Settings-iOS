@@ -36,10 +36,19 @@ struct SettingsLinkSection: View {
                         }
                     }
                 } else if !stateManager.tabletOnly.contains(setting.title) && requiredCapabilities(capability: setting.capability) {
-                    SLink(setting.title, color: setting.color, icon: setting.icon, status: status(for: setting)) {
-                        setting.destination
+                    switch setting.kind {
+                    case .link:
+                        SLink(setting.title, color: setting.color, icon: setting.icon, status: status(for: setting)) {
+                            setting.destination
+                        }
+                        .accessibilityLabel(setting.title)
+                    case .toggle(let key):
+                        IconToggle(
+                            setting.title,
+                            isOn: appStorageBinding(forKey: key),
+                            icon: setting.icon
+                        )
                     }
-                    .accessibilityLabel(setting.title)
                 }
             }
         }
@@ -57,4 +66,12 @@ struct SettingsLinkSection: View {
             return ""
         }
     }
+    
+    private func appStorageBinding(forKey key: String) -> Binding<Bool> {
+        Binding(
+            get: { UserDefaults.standard.bool(forKey: key) },
+            set: { UserDefaults.standard.set($0, forKey: key) }
+        )
+    }
 }
+

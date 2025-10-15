@@ -34,25 +34,34 @@ struct SettingsLabelSection: View {
                         }
                     }
                 } else if !stateManager.phoneOnly.contains(setting.title) && requiredCapabilities(capability: setting.capability) {
-                    Button {
-                        if selection != setting {
-                            selection = setting
-                        } else {
-                            stateManager.path = []
+                    switch setting.kind {
+                    case .link:
+                        Button {
+                            if selection != setting {
+                                selection = setting
+                            } else {
+                                stateManager.path = []
+                            }
+                        } label: {
+                            SLabel(
+                                setting.title,
+                                icon: setting.icon,
+                                status: status(for: setting),
+                                selected: isSelected(setting)
+                            )
                         }
-                    } label: {
-                        SLabel(
+                        .foregroundStyle(selection == setting ? .blue : .primary)
+                        .listRowBackground(
+                            Color(selection == setting ? (UIDevice.IsSimulator ? .blue : .selected) : .clear)
+                                .clipShape(RoundedRectangle(cornerRadius: 30, style: .circular))
+                        )
+                    case .toggle(let key):
+                        IconToggle(
                             setting.title,
-                            icon: setting.icon,
-                            status: status(for: setting),
-                            selected: isSelected(setting)
+                            isOn: appStorageBinding(forKey: key),
+                            icon: setting.icon
                         )
                     }
-                    .foregroundStyle(selection == setting ? .blue : .primary)
-                    .listRowBackground(
-                        Color(selection == setting ? (UIDevice.IsSimulator ? .blue : .selected) : .clear)
-                            .clipShape(RoundedRectangle(cornerRadius: 30, style: .circular))
-                    )
                 }
             }
         }
@@ -81,4 +90,12 @@ struct SettingsLabelSection: View {
             return false
         }
     }
+    
+    private func appStorageBinding(forKey key: String) -> Binding<Bool> {
+        Binding(
+            get: { UserDefaults.standard.bool(forKey: key) },
+            set: { UserDefaults.standard.set($0, forKey: key) }
+        )
+    }
 }
+

@@ -71,6 +71,11 @@ final class RouteRegistry {
         
         radioSettings = [
             SettingsItem(
+                type: .airplaneMode,
+                icon: "com.apple.graphic-icon.airplane-mode",
+                kind: .toggle(key: "AirplaneMode")
+            ),
+            SettingsItem(
                 type: .wifi,
                 icon: "com.apple.graphic-icon.wifi",
                 destination: AnyView(
@@ -526,6 +531,7 @@ final class RouteRegistry {
 enum SettingsOptions: String, CaseIterable {
     case accessibility = "Accessibility"
     case actionButton = "Action Button"
+    case airplaneMode = "Airplane Mode"
     case appleIntelligence = "Apple Intelligence & Siri"
     case applePencil = "Apple Pencil"
     case apps = "Apps"
@@ -582,6 +588,11 @@ enum Capabilities {
     case isInternal
 }
 
+enum RowKind: Hashable {
+    case link
+    case toggle(key: String)
+}
+
 /// A struct for defining custom navigation links for use with sections of the app.
 struct SettingsItem: Identifiable, Hashable {
     var id: SettingsOptions { type }
@@ -591,13 +602,15 @@ struct SettingsItem: Identifiable, Hashable {
     var capability: Capabilities
     var color: Color
     let destination: AnyView
+    var kind: RowKind = .link
     
-    init(type: SettingsOptions, icon: String, capability: Capabilities = .none, color: Color = .white, destination: AnyView) {
+    init(type: SettingsOptions, icon: String, capability: Capabilities = .none, color: Color = .white, destination: AnyView = AnyView(EmptyView()), kind: RowKind = .link) {
         self.type = type
         self.icon = icon
         self.capability = capability
         self.color = color
         self.destination = destination
+        self.kind = kind
     }
     
     static func == (lhs: SettingsItem, rhs: SettingsItem) -> Bool {

@@ -42,11 +42,6 @@ struct ContentView: View {
                     // MARK: Radio Settings
                     if !UIDevice.IsSimulator {
                         Section {
-                            IconToggle(
-                                "Airplane Mode",
-                                isOn: $airplaneModeEnabled,
-                                icon: "com.apple.graphic-icon.airplane-mode"
-                            )
                             SettingsLabelSection(selection: $stateManager.selection, item: stateManager.radioSettings)
                             if requiredCapabilities(capability: .vpn) {
                                 IconToggle("VPN", isOn: $VPNEnabled, color: .blue, icon: "network.connected.to.line.below")
@@ -161,11 +156,6 @@ struct ContentView: View {
                     if !UIDevice.IsSimulator {
                         // MARK: Radio Settings
                         Section {
-                            IconToggle(
-                                "Airplane Mode",
-                                isOn: $airplaneModeEnabled,
-                                icon: "com.apple.graphic-icon.airplane-mode"
-                            )
                             SettingsLinkSection(item: stateManager.radioSettings)
                             if requiredCapabilities(capability: .vpn) {
                                 IconToggle("VPN", isOn: $VPNEnabled, color: .blue, icon: "network.connected.to.line.below")
