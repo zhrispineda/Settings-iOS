@@ -46,7 +46,7 @@ struct SLabel: View {
             }
             
             Text(text)
-                .padding(.leading, -6)
+                .padding(.leading, icon.isEmpty ? 0 : -6)
             Spacer()
             
             if !status.isEmpty {

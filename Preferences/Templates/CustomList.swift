@@ -39,6 +39,9 @@ struct CustomList<Content: View>: View {
             .onChange(of: geo.size.width) {
                 isLandscape = geo.size.width > geo.size.height
             }
+            .navigationDestination(for: String.self) { key in
+                RouteRegistry.shared.view(for: key) ?? AnyView(Text("Unknown: \(key)"))
+            }
         }
     }
 }

@@ -13,17 +13,25 @@ struct SettingsSearchView: View {
     var body: some View {
         Section("Suggestions") {
             Group {
-                SLink("Sounds & Haptics", icon: "com.apple.graphic-icon.sound") {
+                NavigationLink {
                     BundleControllerView("/System/Library/PrivateFrameworks/Settings/SoundsAndHapticsSettings.framework/SoundsAndHapticsSettings", controller: "SHSSoundsPrefController", title: "Sounds & Haptics")
+                } label: {
+                    SLabel("Sounds & Haptics", icon: "com.apple.graphic-icon.sound")
                 }
-                SLink("Notifications", icon: "com.apple.graphic-icon.notifications") {
+                NavigationLink {
                     NotificationsView()
+                } label: {
+                    SLabel("Notifications", icon: "com.apple.graphic-icon.notifications")
                 }
-                SLink("Focus", icon: "com.apple.graphic-icon.focus") {
+                NavigationLink {
                     FocusView()
+                } label: {
+                    SLabel("Focus", icon: "com.apple.graphic-icon.focus")
                 }
-                SLink("Screen Time", icon: "com.apple.graphic-icon.screen-time") {
+                NavigationLink {
                     ScreenTimeView()
+                } label: {
+                    SLabel("Screen Time", icon: "com.apple.graphic-icon.screen-time")
                 }
             }
             .navigationLinkIndicatorVisibility(.hidden)

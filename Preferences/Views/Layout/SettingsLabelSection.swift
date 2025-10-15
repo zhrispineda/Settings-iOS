@@ -36,25 +36,42 @@ struct SettingsLabelSection: View {
                 } else if !stateManager.phoneOnly.contains(setting.title) && requiredCapabilities(capability: setting.capability) {
                     switch setting.kind {
                     case .link:
-                        Button {
-                            if selection != setting {
-                                selection = setting
-                            } else {
-                                stateManager.path = []
+                        if UIDevice.iPhone {
+                            NavigationLink {
+                                setting.destination
+                            } label: {
+                                SLabel(
+                                    setting.title,
+                                    icon: setting.icon,
+                                    status: status(for: setting),
+                                    badgeCount: setting.badgeCount,
+                                    selected: false
+                                )
                             }
-                        } label: {
-                            SLabel(
-                                setting.title,
-                                icon: setting.icon,
-                                status: status(for: setting),
-                                selected: isSelected(setting)
-                            )
+                            .navigationLinkIndicatorVisibility(.visible)
+                            .foregroundStyle(.primary)
+                        } else {
+                            Button {
+                                if selection != setting {
+                                    selection = setting
+                                } else {
+                                    stateManager.path = []
+                                }
+                            } label: {
+                                SLabel(
+                                    setting.title,
+                                    icon: setting.icon,
+                                    status: status(for: setting),
+                                    badgeCount: setting.badgeCount,
+                                    selected: isSelected(setting)
+                                )
+                            }
+                            .foregroundStyle(selection == setting ? .blue : .primary)
+                            .modifier(listRowBackgroundEffect(
+                                isActive: UIDevice.iPad,
+                                isSelected: selection == setting
+                            ))
                         }
-                        .foregroundStyle(selection == setting ? .blue : .primary)
-                        .listRowBackground(
-                            Color(selection == setting ? (UIDevice.IsSimulator ? .blue : .selected) : .clear)
-                                .clipShape(RoundedRectangle(cornerRadius: 30, style: .circular))
-                        )
                     case .toggle(let key):
                         IconToggle(
                             setting.title,
@@ -99,3 +116,19 @@ struct SettingsLabelSection: View {
     }
 }
 
+private struct listRowBackgroundEffect: ViewModifier {
+    let isActive: Bool
+    let isSelected: Bool
+    
+    func body(content: Content) -> some View {
+        if isActive {
+            content
+                .listRowBackground(
+                    Color(isSelected ? (UIDevice.IsSimulator ? .blue : .selected) : .clear)
+                        .clipShape(RoundedRectangle(cornerRadius: 30, style: .circular))
+                )
+        } else {
+            content
+        }
+    }
+}

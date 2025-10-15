@@ -37,9 +37,6 @@ final class RouteRegistry {
 @MainActor
 @Observable final class StateManager {
     var path: [String] = []
-    var breadcrumb: String {
-        path.joined(separator: " → ")
-    }
     var selection: SettingsItem? = nil
     
     /// Device-restricted views
@@ -61,8 +58,17 @@ final class RouteRegistry {
     init() {
         followUpSettings = [
             SettingsItem(
-                type: .followUp,
-                icon: "None",
+                type: .followUpPhone,
+                capability: .phone,
+                badgeCount: 1,
+                destination: AnyView(
+                    FollowUpView()
+                )
+            ),
+            SettingsItem(
+                type: .followUpPad,
+                capability: .tablet,
+                badgeCount: 1,
                 destination: AnyView(
                     FollowUpView()
                 )
@@ -547,7 +553,8 @@ enum SettingsOptions: String, CaseIterable {
     case emergencySOS = "Emergency SOS"
     case ethernet = "Ethernet"
     case focus = "Focus"
-    case followUp = "Follow Up"
+    case followUpPad = "Finish Setting Up Your iPad"
+    case followUpPhone = "Finish Setting Up Your iPhone"
     case gameCenter = "Game Center"
     case general = "General"
     case homeScreenAppLibrary = "Home Screen & App Library"
@@ -579,6 +586,8 @@ enum Capabilities {
     case faceID
     case hotspot
     case vpn
+    case phone
+    case tablet
     case satellite
     case siri
     case sounds
@@ -601,14 +610,26 @@ struct SettingsItem: Identifiable, Hashable {
     let icon: String
     var capability: Capabilities
     var color: Color
+    var badgeCount: Int
     let destination: AnyView
     var kind: RowKind = .link
     
-    init(type: SettingsOptions, icon: String, capability: Capabilities = .none, color: Color = .white, destination: AnyView = AnyView(EmptyView()), kind: RowKind = .link) {
+    init(
+        type: SettingsOptions,
+        icon: String = "",
+        capability: Capabilities = .none,
+        color: Color = .white,
+        badgeCount: Int = 0,
+        destination: AnyView = AnyView(
+            EmptyView()
+        ),
+        kind: RowKind = .link
+    ) {
         self.type = type
         self.icon = icon
         self.capability = capability
         self.color = color
+        self.badgeCount = badgeCount
         self.destination = destination
         self.kind = kind
     }
