@@ -100,7 +100,14 @@ final class RouteRegistry {
                     CellularView()
                 )
             ),
-            //SettingsItem(type: .personalHotspot, icon: "com.apple.graphic-icon.personal-hotspot", capability: .cellular, destination: AnyView(HotspotView())),
+            SettingsItem(
+                type: .personalHotspot,
+                icon: "com.apple.graphic-icon.personal-hotspot",
+                capability: .hotspot,
+                destination: AnyView(
+                    HotspotView()
+                )
+            ),
             SettingsItem(
                 type: .battery,
                 icon: "com.apple.graphic-icon.battery",
@@ -108,7 +115,14 @@ final class RouteRegistry {
                     BatteryView()
                 )
             ),
-            //SettingsItem(type: .satellite, icon: "com.apple.graphic-icon.satellite", destination: AnyView(EmptyView()))
+            SettingsItem(
+                type: .satellite,
+                icon: "com.apple.graphic-icon.satellite",
+                capability: .satellite,
+                destination: AnyView(
+                    EmptyView()
+                )
+            )
         ]
         
         attentionSettings = [
@@ -557,7 +571,9 @@ enum Capabilities {
     case cellular
     case ethernet
     case faceID
+    case hotspot
     case vpn
+    case satellite
     case siri
     case sounds
     case soundsHaptics

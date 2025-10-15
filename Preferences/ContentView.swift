@@ -254,6 +254,10 @@ func requiredCapabilities(capability: Capabilities) -> Bool {
         return !UIDevice.PearlIDCapability
     case .vpn:
         return false
+    case .hotspot:
+        return false
+    case .satellite:
+        return false
     }
 }
 
