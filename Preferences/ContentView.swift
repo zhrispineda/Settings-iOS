@@ -55,12 +55,13 @@ struct ContentView: View {
                                         if stateManager.selection != setting {
                                             stateManager.selection = setting
                                         }
+                                        stateManager.path = []
                                     } label: {
                                         SLabel(
                                             setting.title,
                                             icon: setting.icon,
-                                            status: setting.title == "Wi-Fi" ? (wifiEnabled && !airplaneModeEnabled ? "Not Connected" : "Off") : setting.title == "Bluetooth" ? (bluetoothEnabled ? "On" : "Off") : "",
-                                            selected: setting.title == "Wi-Fi" ? stateManager.selection?.type == .wifi : stateManager.selection?.type == .bluetooth
+                                            status: status(for: setting),
+                                            selected: isSelected(setting)
                                         )
                                     }
                                     .foregroundStyle(stateManager.selection == setting ? .blue : .primary)
@@ -128,6 +129,9 @@ struct ContentView: View {
             } detail: {
                 NavigationStack(path: $stateManager.path) {
                     stateManager.selection?.destination
+                        .navigationDestination(for: String.self) { key in
+                            RouteRegistry.shared.view(for: key) ?? AnyView(Text("Unknown: \(key)"))
+                        }
                 }
             }
         } else {
@@ -186,25 +190,16 @@ struct ContentView: View {
                                 icon: "com.apple.graphic-icon.airplane-mode"
                             )
                             ForEach(stateManager.radioSettings) { setting in
-                                if setting.capability == .none {
+                                if requiredCapabilities(capability: setting.capability) {
                                     SLink(
                                         setting.title,
                                         icon: setting.icon,
-                                        status: setting.title == "Wi-Fi" ? (wifiEnabled && !airplaneModeEnabled ? "Not Connected" : "Off") : setting.title == "Bluetooth" ? (bluetoothEnabled ? "On" : "Off") : ""
+                                        status: status(for: setting)
                                     ) {
                                         setting.destination
                                     }
                                     .accessibilityLabel(setting.title)
-                                } else if requiredCapabilities(capability: setting.capability) {
-                                    SLink(
-                                        setting.title,
-                                        icon: setting.icon,
-                                        status: setting.title == "Cellular" && airplaneModeEnabled ? "Airplane Mode" : setting.title == "Personal Hotspot" ? "Off" : ""
-                                    ) {
-                                        setting.destination
-                                    }
                                     .disabled(setting.title == "Personal Hotspot" && airplaneModeEnabled)
-                                    .accessibilityLabel(setting.title)
                                 }
                             }
                             if requiredCapabilities(capability: .vpn) {
@@ -233,6 +228,9 @@ struct ContentView: View {
                         SettingsLinkSection(item: stateManager.developerSettings)
                     }
                 }
+                .navigationDestination(for: String.self) { key in
+                    RouteRegistry.shared.view(for: key) ?? AnyView(Text("Unknown: \(key)"))
+                }
                 .navigationTitle("Settings")
                 .searchable(text: $searchText, isPresented: $searchFocused, placement: .automatic)
                 .overlay {
@@ -254,6 +252,38 @@ struct ContentView: View {
                     }
                 }
             }
+            .onChange(of: stateManager.path) {
+                if !stateManager.path.isEmpty {
+                    SettingsLogger.log("Last Navigation Event: \(stateManager.breadcrumb)")
+                }
+            }
+        }
+    }
+}
+
+// MARK: - Radio section helpers
+private extension ContentView {
+    func status(for setting: SettingsItem) -> String {
+        switch setting.type {
+        case .wifi:
+            return (wifiEnabled && !airplaneModeEnabled) ? "Not Connected" : "Off"
+        case .bluetooth:
+            return bluetoothEnabled ? "On" : "Off"
+        case .cellular:
+            return airplaneModeEnabled ? "Airplane Mode" : ""
+        default:
+            return ""
+        }
+    }
+    
+    func isSelected(_ setting: SettingsItem) -> Bool {
+        switch setting.type {
+        case .wifi:
+            return stateManager.selection?.type == .wifi
+        case .bluetooth:
+            return stateManager.selection?.type == .bluetooth
+        default:
+            return false
         }
     }
 }

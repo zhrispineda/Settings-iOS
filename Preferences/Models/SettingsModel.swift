@@ -15,11 +15,31 @@ struct Configuration {
 
 let configuration = Configuration()
 
+final class RouteRegistry {
+    @MainActor static let shared = RouteRegistry()
+    private var registry: [String: () -> AnyView] = [:]
+    
+    func register(_ path: String, builder: @escaping () -> AnyView) {
+        registry[path] = builder
+    }
+    
+    func register<V: View>(_ path: String, builder: @escaping () -> V) {
+        registry[path] = { AnyView(builder()) }
+    }
+    
+    func view(for path: String) -> AnyView? {
+        registry[path]?()
+    }
+}
+
 // MARK: - State Manager
 /// Class for managing the state of the app's NavigationStack selection variable and destination view.
 @MainActor
 @Observable final class StateManager {
-    var path: NavigationPath = NavigationPath()
+    var path: [String] = []
+    var breadcrumb: String {
+        path.joined(separator: " → ")
+    }
     var selection: SettingsItem? = nil
     
     /// Device-restricted views
@@ -572,3 +592,4 @@ struct SettingsItem: Identifiable, Hashable {
         hasher.combine(id)
     }
 }
+

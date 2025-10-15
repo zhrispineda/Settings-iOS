@@ -7,26 +7,20 @@ import SwiftUI
 
 /// A template for displaying a NavigationLink with a rounded icon and quick information.
 ///
-/// ```swift
-/// var body: some View {
-///     List {
-///         SLink("Settings", color: .gray, icon: "gear") {
-///             Text("My Settings")
-///         }
-///     }
-/// }
-/// ```
-///
 /// - Parameter text: The `String` name of the link to display.
+/// - Parameter routeKey: Optional key to register this destination in RouteRegistry (defaults to `text`).
 /// - Parameter color: The `Color` of the icon's background.
 /// - Parameter iconColor: The `Color` of the icon.
+/// - Parameter path: The `String` bundle path for image lookup (if needed).
 /// - Parameter icon: The `String` name of the image asset or symbol.
+/// - Parameter lightOnly: If true, force light appearance for the icon.
 /// - Parameter subtitle: An optional `String` below the id displaying a short summary.
 /// - Parameter status: An optional `String` on the opposing side displaying its current state.
 /// - Parameter badgeCount: An optional `Int` on the opposing side displaying a red badge with a number.
-/// - Parameter content: The destination `Content` for the `NavigationLink`.
+/// - Parameter content: The destination `Content` for the route (registered and resolved via RouteRegistry).
 struct SLink<Content: View>: View {
     var text: String
+    var routeKey: String?
     var color: Color
     var iconColor: Color
     var path: String
@@ -35,10 +29,23 @@ struct SLink<Content: View>: View {
     var subtitle: String
     var status: String
     var badgeCount: Int
-    var destination: Content
+    private let destinationBuilder: () -> Content
     
-    init(_ text: String, color: Color = Color.clear, iconColor: Color = Color.white, path: String = "", icon: String = "", lightOnly: Bool = false, subtitle: String = "", status: String = "", badgeCount: Int = 0, @ViewBuilder destination: @escaping () -> Content) {
+    init(
+        _ text: String,
+        routeKey: String? = nil,
+        color: Color = Color.clear,
+        iconColor: Color = Color.white,
+        path: String = "",
+        icon: String = "",
+        lightOnly: Bool = false,
+        subtitle: String = "",
+        status: String = "",
+        badgeCount: Int = 0,
+        @ViewBuilder destination: @escaping () -> Content
+    ) {
         self.text = text
+        self.routeKey = routeKey
         self.color = color
         self.iconColor = iconColor
         self.path = path
@@ -47,11 +54,24 @@ struct SLink<Content: View>: View {
         self.subtitle = subtitle
         self.status = status
         self.badgeCount = badgeCount
-        self.destination = destination()
+        self.destinationBuilder = destination
     }
     
-    init(_ text: String, color: Color = Color.clear, iconColor: Color = Color.white, path: String = "", icon: String = "", lightOnly: Bool = false, subtitle: String = "", status: String = "", badgeCount: Int = 0, destination: Content) {
+    init(
+        _ text: String,
+        routeKey: String? = nil,
+        color: Color = Color.clear,
+        iconColor: Color = Color.white,
+        path: String = "",
+        icon: String = "",
+        lightOnly: Bool = false,
+        subtitle: String = "",
+        status: String = "",
+        badgeCount: Int = 0,
+        destination: Content
+    ) {
         self.text = text
+        self.routeKey = routeKey
         self.color = color
         self.iconColor = iconColor
         self.path = path
@@ -60,11 +80,13 @@ struct SLink<Content: View>: View {
         self.subtitle = subtitle
         self.status = status
         self.badgeCount = badgeCount
-        self.destination = destination
+        self.destinationBuilder = { destination }
     }
     
     var body: some View {
-        NavigationLink(destination: destination) {
+        let key = routeKey ?? text
+        
+        NavigationLink(value: key) {
             HStack(spacing: 15) {
                 // Icon
                 if icon != "None" {
@@ -103,19 +125,26 @@ struct SLink<Content: View>: View {
             }
             .frame(height: 15)
         }
+        .onAppear {
+            RouteRegistry.shared.register(key) { destinationBuilder() }
+        }
     }
 }
 
 #Preview("ContentView") {
     ContentView()
+        .environment(StateManager())
 }
 
 #Preview("SLink Example") {
     NavigationStack {
         List {
-            SLink("First") {}
-            SLink("Second", destination: {})
-            SLink("Third", destination: EmptyView())
+            SLink("First") { EmptyView() }
+            SLink("Second", destination: EmptyView())
+            SLink("Third", routeKey: "ThirdRoute") { EmptyView() }
+        }
+        .navigationDestination(for: String.self) { key in
+            RouteRegistry.shared.view(for: key) ?? AnyView(Text("Unknown: \(key)"))
         }
     }
 }

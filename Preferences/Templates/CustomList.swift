@@ -35,7 +35,6 @@ struct CustomList<Content: View>: View {
             .padding(.top, topPadding ? 0 : -19)
             .onAppear {
                 isLandscape = geo.size.width > geo.size.height
-                SettingsLogger.info("Loaded view: \(title.isEmpty ? "NO TITLE" : title)")
             }
             .onChange(of: geo.size.width) {
                 isLandscape = geo.size.width > geo.size.height
@@ -46,4 +45,5 @@ struct CustomList<Content: View>: View {
 
 #Preview {
     ContentView()
+        .environment(StateManager())
 }

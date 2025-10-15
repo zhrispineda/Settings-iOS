@@ -1,51 +1,51 @@
 import SwiftUI
 
-/// A NavigationLink container that displays a LabeledContent container with title, subtitle, and status text.
-///
-/// ```swift
-/// var body: some View {
-///     List {
-///         SettingsLink("Title") {}
-///         SettingsLink("Title", destination: EmptyView())
-///         SettingsLink("Title", subtitle: "Subtitle", destination: EmptyView())
-///         SettingsLink("Title", status: "Status", destination: EmptyView())
-///         SettingsLink("Title", subtitle: "Subtitle", status: "Status", destination: EmptyView())
-///     }
-/// }
-/// ```
-/// 
-/// - Parameter titleKey: The String to display as the description of the `NavigationLink`.
-/// - Parameter subtitle: The String text to display below the title.
-/// - Parameter status: The String displaying the state of the view within.
-/// - Parameter location: The Bool for whether to display a location symbol.
-/// - Parameter destination: The Content destination view.
+/// A NavigationLink container that displays a LabeledContent with title, subtitle, and status.
+/// Now value-based: registers its destination with RouteRegistry and pushes a key into the NavigationStack path.
 struct SettingsLink<Content: View>: View {
     var titleKey: String
+    var routeKey: String?
     var subtitle: String
     var status: String
     var location: Bool
-    var destination: Content
+    private let destinationBuilder: () -> Content
     
-    init(_ titleKey: String, subtitle: String = "", status: String = "", location: Bool = false, @ViewBuilder destination: @escaping () -> Content) {
+    init(
+        _ titleKey: String,
+        routeKey: String? = nil,
+        subtitle: String = "",
+        status: String = "",
+        location: Bool = false,
+        @ViewBuilder destination: @escaping () -> Content
+    ) {
         self.titleKey = titleKey
+        self.routeKey = routeKey
         self.subtitle = subtitle
         self.status = status
         self.location = location
-        self.destination = destination()
+        self.destinationBuilder = destination
     }
     
-    init(_ titleKey: String, subtitle: String = "", status: String = "", location: Bool = false, destination: Content) {
+    init(
+        _ titleKey: String,
+        routeKey: String? = nil,
+        subtitle: String = "",
+        status: String = "",
+        location: Bool = false,
+        destination: Content
+    ) {
         self.titleKey = titleKey
+        self.routeKey = routeKey
         self.subtitle = subtitle
         self.status = status
         self.location = location
-        self.destination = destination
+        self.destinationBuilder = { destination }
     }
     
     var body: some View {
-        NavigationLink {
-            destination
-        } label: {
+        let key = routeKey ?? titleKey
+        
+        NavigationLink(value: key) {
             LabeledContent {
                 if !status.isEmpty {
                     HStack {
@@ -64,16 +64,22 @@ struct SettingsLink<Content: View>: View {
                 }
             }
         }
+        .onAppear {
+            RouteRegistry.shared.register(key) { destinationBuilder() }
+        }
     }
 }
 
 #Preview {
     NavigationStack {
         List {
-            SettingsLink("Title") {}
-            SettingsLink("Title", subtitle: "Subtitle", destination: EmptyView())
-            SettingsLink("Title", status: "Status", destination: EmptyView())
-            SettingsLink("Title", subtitle: "Subtitle", status: "Status", destination: EmptyView())
+            SettingsLink("Title") { EmptyView() }
+            SettingsLink("Title", subtitle: "Subtitle") { EmptyView() }
+            SettingsLink("Title", status: "Status") { EmptyView() }
+            SettingsLink("Title", subtitle: "Subtitle", status: "Status") { EmptyView() }
+        }
+        .navigationDestination(for: String.self) { key in
+            RouteRegistry.shared.view(for: key) ?? AnyView(Text("Unknown: \(key)"))
         }
     }
 }

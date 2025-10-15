@@ -34,6 +34,8 @@ struct SettingsLabelSection: View {
                     Button {
                         if selection != setting {
                             selection = setting
+                        } else {
+                            stateManager.path = []
                         }
                     } label: {
                         SLabel(setting.title, color: setting.color, icon: setting.icon)
