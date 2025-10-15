@@ -10,8 +10,6 @@ import SwiftUI
 struct ContentView: View {
     @AppStorage("FollowUpDismissed") private var followUpDismissed = false
     @AppStorage("AirplaneMode") private var airplaneModeEnabled = false
-    @AppStorage("WiFi") private var wifiEnabled = true
-    @AppStorage("Bluetooth") private var bluetoothEnabled = true
     @AppStorage("VPNToggle") private var VPNEnabled = true
     @Environment(StateManager.self) private var stateManager
     @State private var searchFocused = false
@@ -49,28 +47,7 @@ struct ContentView: View {
                                 isOn: $airplaneModeEnabled,
                                 icon: "com.apple.graphic-icon.airplane-mode"
                             )
-                            ForEach(stateManager.radioSettings) { setting in
-                                if !stateManager.phoneOnly.contains(setting.title) && requiredCapabilities(capability: setting.capability) {
-                                    Button {
-                                        if stateManager.selection != setting {
-                                            stateManager.selection = setting
-                                        }
-                                        stateManager.path = []
-                                    } label: {
-                                        SLabel(
-                                            setting.title,
-                                            icon: setting.icon,
-                                            status: status(for: setting),
-                                            selected: isSelected(setting)
-                                        )
-                                    }
-                                    .foregroundStyle(stateManager.selection == setting ? .blue : .primary)
-                                    .listRowBackground(
-                                        Color(stateManager.selection == setting ? (UIDevice.IsSimulator ? .blue : .selected) : .clear)
-                                            .clipShape(RoundedRectangle(cornerRadius: 30, style: .circular))
-                                    )
-                                }
-                            }
+                            SettingsLabelSection(selection: $stateManager.selection, item: stateManager.radioSettings)
                             if requiredCapabilities(capability: .vpn) {
                                 IconToggle("VPN", isOn: $VPNEnabled, color: .blue, icon: "network.connected.to.line.below")
                             }
@@ -189,19 +166,7 @@ struct ContentView: View {
                                 isOn: $airplaneModeEnabled,
                                 icon: "com.apple.graphic-icon.airplane-mode"
                             )
-                            ForEach(stateManager.radioSettings) { setting in
-                                if requiredCapabilities(capability: setting.capability) {
-                                    SLink(
-                                        setting.title,
-                                        icon: setting.icon,
-                                        status: status(for: setting)
-                                    ) {
-                                        setting.destination
-                                    }
-                                    .accessibilityLabel(setting.title)
-                                    .disabled(setting.title == "Personal Hotspot" && airplaneModeEnabled)
-                                }
-                            }
+                            SettingsLinkSection(item: stateManager.radioSettings)
                             if requiredCapabilities(capability: .vpn) {
                                 IconToggle("VPN", isOn: $VPNEnabled, color: .blue, icon: "network.connected.to.line.below")
                             }
@@ -257,33 +222,6 @@ struct ContentView: View {
                     SettingsLogger.log("Last Navigation Event: \(stateManager.breadcrumb)")
                 }
             }
-        }
-    }
-}
-
-// MARK: - Radio section helpers
-private extension ContentView {
-    func status(for setting: SettingsItem) -> String {
-        switch setting.type {
-        case .wifi:
-            return (wifiEnabled && !airplaneModeEnabled) ? "Not Connected" : "Off"
-        case .bluetooth:
-            return bluetoothEnabled ? "On" : "Off"
-        case .cellular:
-            return airplaneModeEnabled ? "Airplane Mode" : ""
-        default:
-            return ""
-        }
-    }
-    
-    func isSelected(_ setting: SettingsItem) -> Bool {
-        switch setting.type {
-        case .wifi:
-            return stateManager.selection?.type == .wifi
-        case .bluetooth:
-            return stateManager.selection?.type == .bluetooth
-        default:
-            return false
         }
     }
 }
