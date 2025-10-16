@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ContentView: View {
-    @AppStorage("AirplaneMode") private var airplaneModeEnabled = false
     @AppStorage("FollowUpDismissed") private var followUpDismissed = false
     @AppStorage("VPNToggle") private var VPNEnabled = true
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
@@ -136,7 +135,6 @@ struct ContentView: View {
             NavigationStack(path: $stateManager.path) {
                 stateManager.selection?.destination
             }
-                
         }
         .onChange(of: stateManager.path) { oldValue, newValue in
             if !oldValue.isEmpty {

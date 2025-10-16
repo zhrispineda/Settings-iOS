@@ -12,9 +12,9 @@ struct SettingsLabelSection: View {
     @AppStorage("AirplaneMode") private var airplaneModeEnabled = false
     @AppStorage("WiFi") private var wifiEnabled = true
     @AppStorage("Bluetooth") private var bluetoothEnabled = true
+    @Binding var selection: SettingsItem?
     @Environment(StateManager.self) private var stateManager
     @Environment(\.horizontalSizeClass) var horizontalSizeClass
-    @Binding var selection: SettingsItem?
     @State private var showingSignInSheet = false
     let item: [SettingsItem]
     
@@ -25,9 +25,11 @@ struct SettingsLabelSection: View {
                     Button {
                         showingSignInSheet.toggle()
                     } label: {
-                        SLabel(setting.title, color: setting.color, icon: setting.icon)
+                        NavigationLink {} label: {
+                            SLabel(setting.title, color: setting.color, icon: setting.icon)
+                        }
+                        .navigationLinkIndicatorVisibility(UIDevice.iPad ? .hidden : .visible)
                     }
-                    .foregroundStyle(.primary)
                     .sheet(isPresented: $showingSignInSheet) {
                         NavigationStack {
                             SelectSignInOptionView()
@@ -86,7 +88,7 @@ struct SettingsLabelSection: View {
         }
     }
     
-    func status(for setting: SettingsItem) -> String {
+    private func status(for setting: SettingsItem) -> String {
         switch setting.type {
         case .wifi:
             return (wifiEnabled && !airplaneModeEnabled) ? "Not Connected" : "Off"
@@ -99,7 +101,7 @@ struct SettingsLabelSection: View {
         }
     }
     
-    func isSelected(_ setting: SettingsItem) -> Bool {
+    private func isSelected(_ setting: SettingsItem) -> Bool {
         switch setting.type {
         case .wifi:
             return stateManager.selection?.type == .wifi
