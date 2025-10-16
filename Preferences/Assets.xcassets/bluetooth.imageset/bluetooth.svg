@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Generator: Apple Native CoreSVG 341-->
+<!DOCTYPE svg
+PUBLIC "-//W3C//DTD SVG 1.1//EN"
+       "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 9.90686 17.1081">
+ <defs>
+  <style>.defaults{-sfsymbols-draw-reverses-motion-groups:true;-sfsymbols-variable-value-mode:color;}.hierarchical-0:primary{-sfsymbols-layer-tags:bluetooth;-sfsymbols-motion-group:0;}.monochrome-0{-sfsymbols-layer-tags:bluetooth;-sfsymbols-motion-group:0;}.multicolor-0:systemBlueColor{-sfsymbols-layer-tags:bluetooth;-sfsymbols-motion-group:0;}</style>
+ </defs>
+ <g id="s" transform="matrix(0.00634765 0 0 0.00634765 -2.71351 16.1244)">
+  <path class="monochrome-0 multicolor-0:systemBlueColor hierarchical-0:primary" d="M1069.56 42.8612C1069.56 130.384 1181.75 154.977 1244 100.781L1929.42-480.336C1971.05-514.52 1986.37-555.72 1986.37-595.883C1986.37-637.693 1968.97-679.932 1927.34-711.002L1330.89-1190.02L1930.21-1670.08C1970.8-1700.11 1988.2-1744 1988.2-1783.55C1988.2-1823.71 1973.48-1865.52 1931.24-1900.74L1244-2481.86C1172.41-2540.21 1069.56-2511.04 1069.56-2422.9L1069.56-1403.87L583.664-1795.35C561.936-1813.36 537.523-1823.49 513.109-1823.49C462.455-1823.49 427.482-1786.26 427.482-1741.16C427.482-1710.76 438.222-1686.53 460.379-1669.56L1063.34-1191.06L460.379-711.516C438.222-693.511 427.482-669.278 427.482-638.885C427.482-594.819 462.455-555.943 513.109-555.943C537.523-555.943 561.936-567.721 583.664-584.689L1069.56-976.597ZM1245.83-146.827L1245.83-1026.87L1792.6-594.416ZM1245.83-1353.79L1245.83-2234.25L1795.03-1785.63Z"/>
+ </g>
+</svg>

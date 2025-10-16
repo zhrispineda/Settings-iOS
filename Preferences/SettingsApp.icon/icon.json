@@ -23,6 +23,7 @@
               }
             }
           ],
+          "hidden" : false,
           "image-name" : "3.top.cog.svg",
           "name" : "3.top.cog",
           "opacity-specializations" : [
@@ -36,6 +37,7 @@
           ]
         },
         {
+          "hidden" : false,
           "image-name" : "2.low.cog.svg",
           "name" : "2.low.cog",
           "opacity-specializations" : [

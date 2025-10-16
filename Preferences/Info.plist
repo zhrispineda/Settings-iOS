@@ -23,7 +23,7 @@
 	<key>UIApplicationShortcutItems</key>
 	<array>
 		<dict>
-			<key>UIApplicationShortcutItemIconSymbolName</key>
+			<key>UIApplicationShortcutItemIconFile</key>
 			<string>bluetooth</string>
 			<key>UIApplicationShortcutItemTitle</key>
 			<string>Bluetooth</string>
