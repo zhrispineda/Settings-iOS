@@ -14,6 +14,7 @@
 		830A87D02DA5895600789C20 /* BundleControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830A87CF2DA5895600789C20 /* BundleControllerView.swift */; };
 		830CFAC12C990DDA00733411 /* KeyboardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830CFAC02C990DDA00733411 /* KeyboardDetailView.swift */; };
 		830DA8022B9BE17B001EE76F /* ParentGuardianSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830DA8012B9BE17B001EE76F /* ParentGuardianSignInView.swift */; };
+		8310C70E2EA179CA00C0B749 /* UIApplicationShortcutIconHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8310C70D2EA179C600C0B749 /* UIApplicationShortcutIconHelper.m */; };
 		8310DD7F2E5FE7F700BB9308 /* BatteryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8310DD7E2E5FE7F700BB9308 /* BatteryView.swift */; };
 		831658A32E74A7290028C8D5 /* 26Pad.png in Resources */ = {isa = PBXBuildFile; fileRef = 831658A12E74A7290028C8D5 /* 26Pad.png */; };
 		831658A42E74A7290028C8D5 /* 26Phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 831658A22E74A7290028C8D5 /* 26Phone.png */; };
@@ -232,6 +233,8 @@
 		830A87CF2DA5895600789C20 /* BundleControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleControllerView.swift; sourceTree = "<group>"; };
 		830CFAC02C990DDA00733411 /* KeyboardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardDetailView.swift; sourceTree = "<group>"; };
 		830DA8012B9BE17B001EE76F /* ParentGuardianSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentGuardianSignInView.swift; sourceTree = "<group>"; };
+		8310C70C2EA1786A00C0B749 /* Preferences-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Preferences-Bridging-Header.h"; sourceTree = "<group>"; };
+		8310C70D2EA179C600C0B749 /* UIApplicationShortcutIconHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIApplicationShortcutIconHelper.m; sourceTree = "<group>"; };
 		8310DD7E2E5FE7F700BB9308 /* BatteryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryView.swift; sourceTree = "<group>"; };
 		831658A12E74A7290028C8D5 /* 26Pad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 26Pad.png; sourceTree = "<group>"; };
 		831658A22E74A7290028C8D5 /* 26Phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 26Phone.png; sourceTree = "<group>"; };
@@ -494,9 +497,11 @@
 		832999512CAF9302009AD115 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				8310C70D2EA179C600C0B749 /* UIApplicationShortcutIconHelper.m */,
 				832999522CAF93BA009AD115 /* MGHelper.swift */,
 				836610652DAC67CD0040E05C /* SettingsLogger.swift */,
 				835646092D9C4AB600DAB406 /* UIKitRepresentables.swift */,
+				8310C70C2EA1786A00C0B749 /* Preferences-Bridging-Header.h */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -1433,6 +1438,7 @@
 				8349E22C2C7514F6007416C5 /* ApplePencilView.swift in Sources */,
 				837F1DCD2B8AF0D400665EAB /* ExtensionsView.swift in Sources */,
 				833C6EAE2C20C88000A8D91C /* HomeScreenAppLibraryView.swift in Sources */,
+				8310C70E2EA179CA00C0B749 /* UIApplicationShortcutIconHelper.m in Sources */,
 				83D5957B2CA5BF19003EF0CD /* RecordSoundView.swift in Sources */,
 				83D20AD12D875F6B000B26E6 /* DebugView.swift in Sources */,
 				8310DD7F2E5FE7F700BB9308 /* BatteryView.swift in Sources */,
@@ -1672,6 +1678,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "Preferences/Components/Preferences-Bridging-Header.h";
 				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1719,6 +1726,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "Preferences/Components/Preferences-Bridging-Header.h";
 				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

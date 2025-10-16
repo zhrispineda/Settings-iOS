@@ -20,40 +20,5 @@
 		<key>UIApplicationSupportsMultipleScenes</key>
 		<false/>
 	</dict>
-	<key>UIApplicationShortcutItems</key>
-	<array>
-		<dict>
-			<key>UIApplicationShortcutItemIconFile</key>
-			<string>bluetooth</string>
-			<key>UIApplicationShortcutItemTitle</key>
-			<string>Bluetooth</string>
-			<key>UIApplicationShortcutItemType</key>
-			<string>com.example.bluetooth</string>
-		</dict>
-		<dict>
-			<key>UIApplicationShortcutItemIconSymbolName</key>
-			<string>wifi</string>
-			<key>UIApplicationShortcutItemTitle</key>
-			<string>Wi-Fi</string>
-			<key>UIApplicationShortcutItemType</key>
-			<string>com.example.wifi</string>
-		</dict>
-		<dict>
-			<key>UIApplicationShortcutItemIconSymbolName</key>
-			<string>antenna.radiowaves.left.and.right</string>
-			<key>UIApplicationShortcutItemTitle</key>
-			<string>Cellular</string>
-			<key>UIApplicationShortcutItemType</key>
-			<string>com.example.cellular</string>
-		</dict>
-		<dict>
-			<key>UIApplicationShortcutItemIconSymbolName</key>
-			<string>battery.100percent</string>
-			<key>UIApplicationShortcutItemTitle</key>
-			<string>Battery</string>
-			<key>UIApplicationShortcutItemType</key>
-			<string>com.example.battery</string>
-		</dict>
-	</array>
 </dict>
 </plist>
