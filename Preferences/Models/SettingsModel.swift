@@ -36,6 +36,8 @@ final class RouteRegistry {
 /// Class for managing the state of the app's NavigationStack selection variable and destination view.
 @MainActor
 @Observable final class StateManager {
+    static let shared = StateManager()
+    
     var path: [String] = []
     var selection: SettingsItem? = nil
     
