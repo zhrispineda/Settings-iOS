@@ -31,7 +31,7 @@ final class SettingsTopLevelPanesRenderTests: XCTestCase {
         let buttons = ["Wi-Fi", "Bluetooth", "Cellular", "Battery"]
         
         for button in buttons {
-            let btn = app.buttons[button]
+            let btn = app.buttons.containing(.staticText, identifier: button).firstMatch
             if !btn.exists {
                 XCTAssertTrue(btn.exists, "\(button) does not exist")
             }
@@ -59,33 +59,27 @@ final class SettingsTopLevelPanesRenderTests: XCTestCase {
     func testSearchSuggestions() throws {
         let app = XCUIApplication()
         app.activate()
+        
+        let buttons = ["Sounds & Haptics", "Notifications", "Focus", "Screen Time"]
 
         let searchField = app.searchFields["Search"]
         XCTAssertTrue(searchField.exists, "Search field does not exist")
         searchField.firstMatch.tap()
-
-        let sound = app.staticTexts["Sounds & Haptics"].firstMatch
-        XCTAssertTrue(sound.exists, "Sounds & Haptics link does not exist")
-        sound.tap()
-
-        let back = app.buttons["BackButton"].firstMatch
-        XCTAssertTrue(back.exists, "Back button does not exist")
-        back.tap()
-
-        let notifications = app.staticTexts["Notifications"].firstMatch
-        XCTAssertTrue(notifications.exists, "Notifications link does not exist")
-        notifications.tap()
-        back.tap()
-
-        let focus = app.staticTexts["Focus"].firstMatch
-        XCTAssertTrue(focus.exists, "Focus link does not exist")
-        focus.tap()
-        back.tap()
-
-        let screenTime = app.staticTexts["Screen Time"].firstMatch
-        XCTAssertTrue(screenTime.exists, "Screen Time link does not exist")
-        screenTime.tap()
-        back.tap()
+        
+        for button in buttons {
+            let btn = app.buttons.containing(.staticText, identifier: button).firstMatch
+            
+            if !btn.exists {
+                XCTAssertTrue(btn.exists, "\(button) does not exist")
+            }
+            
+            btn.tap()
+            
+            let back = app.buttons["BackButton"].firstMatch
+            XCTAssertTrue(back.exists, "Back button does not exist")
+            back.tap()
+        }
+        
         app.buttons["close"].firstMatch.tap()
     }
     
