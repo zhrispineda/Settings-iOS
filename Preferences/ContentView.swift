@@ -136,6 +136,7 @@ struct ContentView: View {
             NavigationStack(path: $stateManager.path) {
                 stateManager.selection?.destination
             }
+                
         }
         .onChange(of: stateManager.path) { oldValue, newValue in
             if !oldValue.isEmpty {

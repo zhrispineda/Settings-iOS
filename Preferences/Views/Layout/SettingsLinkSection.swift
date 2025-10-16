@@ -35,7 +35,7 @@ struct SettingsLinkSection: View {
                                 .interactiveDismissDisabled()
                         }
                     }
-                } else if !stateManager.tabletOnly.contains(setting.title) && requiredCapabilities(capability: setting.capability) {
+                } else if requiredCapabilities(capability: setting.capability) {
                     switch setting.kind {
                     case .link:
                         SLink(setting.title, color: setting.color, icon: setting.icon, status: status(for: setting)) {

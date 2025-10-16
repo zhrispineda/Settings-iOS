@@ -34,7 +34,7 @@ struct SettingsLabelSection: View {
                                 .interactiveDismissDisabled()
                         }
                     }
-                } else if !stateManager.phoneOnly.contains(setting.title) && requiredCapabilities(capability: setting.capability) {
+                } else if requiredCapabilities(capability: setting.capability) {
                     switch setting.kind {
                     case .link:
                         if UIDevice.iPhone {

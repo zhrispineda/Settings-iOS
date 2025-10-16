@@ -39,9 +39,6 @@ final class RouteRegistry {
     var path: [String] = []
     var selection: SettingsItem? = nil
     
-    /// Device-restricted views
-    let phoneOnly: Set<String> = ["Action Button", "Emergency SOS", "Health", "Personal Hotspot", "StandBy"]
-    let tabletOnly: Set<String> = ["Apple Pencil", "Multitasking & Gestures"]
     let followUpSettings: [SettingsItem]
     let radioSettings: [SettingsItem]
     let attentionSettings: [SettingsItem]
@@ -223,6 +220,7 @@ final class RouteRegistry {
             SettingsItem(
                 type: .applePencil,
                 icon: "com.apple.graphic-icon.pencil",
+                capability: .tablet,
                 destination: AnyView(
                     ApplePencilView()
                 )
@@ -270,6 +268,7 @@ final class RouteRegistry {
             SettingsItem(
                 type: .multitaskGestures,
                 icon: "com.apple.graphic-icon.stage-manager",
+                capability: .tablet,
                 destination: AnyView(
                     BundleControllerView(
                         "MultitaskingAndGesturesSettings",
@@ -296,6 +295,7 @@ final class RouteRegistry {
             SettingsItem(
                 type: .standby,
                 icon: "com.apple.graphic-icon.standby",
+                capability: .phone,
                 destination: AnyView(
                     StandByView()
                 )
@@ -414,6 +414,7 @@ final class RouteRegistry {
             SettingsItem(
                 type: .emergencySOS,
                 icon: "com.apple.graphic-icon.emergency-sos",
+                capability: .phone,
                 destination: AnyView(
                     BundleControllerView(
                         "SOSSettings",
