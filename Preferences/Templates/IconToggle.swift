@@ -45,7 +45,7 @@ struct IconToggle: View {
         Toggle(isOn: $isOn) {
             Label {
                 Text(LocalizedStringKey(text.localize(table: table)))
-                    .padding(.leading, UIDevice.iPhone ? -7 : -1)
+                    .padding(.leading, UIDevice.iPhone ? -7 : -6)
                 
                 if !subtitle.isEmpty {
                     Text(subtitle.localize(table: table))
@@ -53,7 +53,7 @@ struct IconToggle: View {
                 }
             } icon: {
                 IconView(id: text.localize(table: table), icon: icon, color: color, iconColor: icon == "airdrop" ? Color.blue : iconColor, lightOnly: lightOnlyIcons.contains(icon))
-                    .padding(.leading, 1)
+                    .padding(.leading, -6)
             }
             .padding(.leading, 5)
         }

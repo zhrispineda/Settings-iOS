@@ -51,6 +51,7 @@ struct SettingsLabelSection: View {
                             }
                             .navigationLinkIndicatorVisibility(.visible)
                             .foregroundStyle(.primary)
+                            .padding(.vertical, -5)
                         } else {
                             Button {
                                 if selection != setting {

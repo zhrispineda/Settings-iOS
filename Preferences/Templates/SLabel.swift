@@ -40,13 +40,14 @@ struct SLabel: View {
     }
     
     var body: some View {
-        HStack(spacing: 15) {
+        HStack(spacing: 20) {
             if badgeCount == 0 {
                 IconView(id: text, path: path, icon: icon, color: color, iconColor: .white)
+                    .padding(.leading, -3)
             }
             
             Text(text)
-                .padding(.leading, icon.isEmpty ? 0 : -6)
+                .padding(.leading, icon.isEmpty ? 0 : UIDevice.iPhone ? -6 : -12)
             Spacer()
             
             if !status.isEmpty {
