@@ -22,6 +22,7 @@
 		8319CE4D2B86D380007EC822 /* SafetyCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319CE4C2B86D380007EC822 /* SafetyCheckView.swift */; };
 		8319CE512B86DF8A007EC822 /* AppleAdvertisingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319CE502B86DF8A007EC822 /* AppleAdvertisingView.swift */; };
 		831C80412CA4998500306574 /* RecordSlomoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831C80402CA4998500306574 /* RecordSlomoView.swift */; };
+		832679D52EA14BC7006ECE46 /* PrepareFollowUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832679D42EA14BC7006ECE46 /* PrepareFollowUpView.swift */; };
 		832928492B85779D006611CF /* TrackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832928482B85779D006611CF /* TrackingView.swift */; };
 		8329284B2B8578F4006611CF /* AppPermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8329284A2B8578F4006611CF /* AppPermissionsView.swift */; };
 		8329284E2B8580B3006611CF /* HeadphoneAudioLevelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8329284D2B8580B3006611CF /* HeadphoneAudioLevelsView.swift */; };
@@ -239,6 +240,7 @@
 		8319CE4C2B86D380007EC822 /* SafetyCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyCheckView.swift; sourceTree = "<group>"; };
 		8319CE502B86DF8A007EC822 /* AppleAdvertisingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAdvertisingView.swift; sourceTree = "<group>"; };
 		831C80402CA4998500306574 /* RecordSlomoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordSlomoView.swift; sourceTree = "<group>"; };
+		832679D42EA14BC7006ECE46 /* PrepareFollowUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepareFollowUpView.swift; sourceTree = "<group>"; };
 		832928482B85779D006611CF /* TrackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingView.swift; sourceTree = "<group>"; };
 		8329284A2B8578F4006611CF /* AppPermissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPermissionsView.swift; sourceTree = "<group>"; };
 		8329284D2B8580B3006611CF /* HeadphoneAudioLevelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadphoneAudioLevelsView.swift; sourceTree = "<group>"; };
@@ -872,6 +874,7 @@
 				8352DEA12D70F716004B2575 /* SettingsSearchView.swift */,
 				830976D22CDD1B2F0087F1A1 /* FollowUpView.swift */,
 				83F516C32C21EB550004E87A /* AppsView.swift */,
+				832679D42EA14BC7006ECE46 /* PrepareFollowUpView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1317,6 +1320,7 @@
 				83D308632B8ACD22002A9B7F /* WebsiteDataView.swift in Sources */,
 				837F00E62C2CA2F500B98374 /* NameView.swift in Sources */,
 				83DFA56D2DA9E17E004C3DD5 /* UIViewControllerExtensions.swift in Sources */,
+				832679D52EA14BC7006ECE46 /* PrepareFollowUpView.swift in Sources */,
 				83AB1D5F2D5E687B005F0B63 /* ScheduledSummaryView.swift in Sources */,
 				833F20AE2CA4C93C00115E8F /* RecordCinematicView.swift in Sources */,
 				838A9EC42B7E823300ED261C /* SettingsLink.swift in Sources */,
