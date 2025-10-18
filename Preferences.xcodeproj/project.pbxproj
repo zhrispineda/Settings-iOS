@@ -148,7 +148,6 @@
 		83A5DA512C2335580012ACB3 /* PermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5DA502C2335580012ACB3 /* PermissionsView.swift */; };
 		83A851BE2E0A4BD70041A3E6 /* SettingsApp.icon in Resources */ = {isa = PBXBuildFile; fileRef = 83A851BD2E0A4BD70041A3E6 /* SettingsApp.icon */; };
 		83AB1D5F2D5E687B005F0B63 /* ScheduledSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AB1D5E2D5E687B005F0B63 /* ScheduledSummaryView.swift */; };
-		83AE01D92D655F6500724A34 /* SettingsLinkSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AE01D82D655F6500724A34 /* SettingsLinkSection.swift */; };
 		83AE01DB2D65628700724A34 /* SettingsLabelSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AE01DA2D65628700724A34 /* SettingsLabelSection.swift */; };
 		83AE01DD2D65637C00724A34 /* AppleAccountSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AE01DC2D65637C00724A34 /* AppleAccountSection.swift */; };
 		83AFA1022BC87FC8008D4E57 /* HotspotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AFA1012BC87FC8008D4E57 /* HotspotView.swift */; };
@@ -372,7 +371,6 @@
 		83A5DA502C2335580012ACB3 /* PermissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsView.swift; sourceTree = "<group>"; };
 		83A851BD2E0A4BD70041A3E6 /* SettingsApp.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = SettingsApp.icon; sourceTree = "<group>"; };
 		83AB1D5E2D5E687B005F0B63 /* ScheduledSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduledSummaryView.swift; sourceTree = "<group>"; };
-		83AE01D82D655F6500724A34 /* SettingsLinkSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLinkSection.swift; sourceTree = "<group>"; };
 		83AE01DA2D65628700724A34 /* SettingsLabelSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLabelSection.swift; sourceTree = "<group>"; };
 		83AE01DC2D65637C00724A34 /* AppleAccountSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAccountSection.swift; sourceTree = "<group>"; };
 		83AFA1012BC87FC8008D4E57 /* HotspotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotspotView.swift; sourceTree = "<group>"; };
@@ -944,7 +942,6 @@
 			children = (
 				83AE01DC2D65637C00724A34 /* AppleAccountSection.swift */,
 				83AE01DA2D65628700724A34 /* SettingsLabelSection.swift */,
-				83AE01D82D655F6500724A34 /* SettingsLinkSection.swift */,
 			);
 			path = Layout;
 			sourceTree = "<group>";
@@ -1302,7 +1299,6 @@
 				838C23292B748F3B0053D4C5 /* ScreenTimeView.swift in Sources */,
 				83F455B32C3C8CA5009DB157 /* LocationServicesView.swift in Sources */,
 				83FCEFEA2C07F0DE008BE814 /* NetworkDetailView.swift in Sources */,
-				83AE01D92D655F6500724A34 /* SettingsLinkSection.swift in Sources */,
 				83F516BA2C21D88B0004E87A /* StandByView.swift in Sources */,
 				83815CF52B768F3600F53A0F /* PhotosView.swift in Sources */,
 				83A36C8D2DB95D7800378E45 /* ConfigureDNSView.swift in Sources */,
