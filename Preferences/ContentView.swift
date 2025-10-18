@@ -66,7 +66,7 @@ struct ContentView: View {
                     SettingsLabelSection(selection: $stateManager.selection, item: stateManager.developerSettings)
                 }
             }
-            .navigationTitle(UIDevice.iPad ? "" : "Settings")
+            .navigationTitle(UIDevice.iPhone || horizontalSizeClass == .compact ? "Settings" : "")
             .toolbar(removing: .sidebarToggle)
             .sheet(isPresented: $showingSignInSheet) {
                 NavigationStack {
