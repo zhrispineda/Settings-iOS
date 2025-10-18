@@ -134,7 +134,6 @@
 		838C23292B748F3B0053D4C5 /* ScreenTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838C23282B748F3B0053D4C5 /* ScreenTimeView.swift */; };
 		838C232B2B7492170053D4C5 /* CustomList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838C232A2B7492170053D4C5 /* CustomList.swift */; };
 		838C232E2B7497530053D4C5 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838C232D2B7497530053D4C5 /* AboutView.swift */; };
-		838C23302B74978C0053D4C5 /* HText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838C232F2B74978C0053D4C5 /* HText.swift */; };
 		838F37EA2C82865B008C9909 /* FilesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838F37E92C82865B008C9909 /* FilesView.swift */; };
 		839092BB2C0D213200924849 /* OtherNetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839092BA2C0D213200924849 /* OtherNetworkView.swift */; };
 		83937B8A2D82315A0049AB0E /* SettingsTests.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = 83937B892D82315A0049AB0E /* SettingsTests.xctestplan */; };
@@ -355,7 +354,6 @@
 		838C23282B748F3B0053D4C5 /* ScreenTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTimeView.swift; sourceTree = "<group>"; };
 		838C232A2B7492170053D4C5 /* CustomList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomList.swift; sourceTree = "<group>"; };
 		838C232D2B7497530053D4C5 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
-		838C232F2B74978C0053D4C5 /* HText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HText.swift; sourceTree = "<group>"; };
 		838F37E92C82865B008C9909 /* FilesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesView.swift; sourceTree = "<group>"; };
 		839092BA2C0D213200924849 /* OtherNetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherNetworkView.swift; sourceTree = "<group>"; };
 		83937B7E2D8230A20049AB0E /* SettingsTopLevelPanesRenderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SettingsTopLevelPanesRenderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -898,7 +896,6 @@
 				83D050192DB6D343003D50AD /* ContinueButton.swift */,
 				838C232A2B7492170053D4C5 /* CustomList.swift */,
 				838A9EC32B7E823300ED261C /* SettingsLink.swift */,
-				838C232F2B74978C0053D4C5 /* HText.swift */,
 				83B98E2F2B7C087B007F6C94 /* IconToggle.swift */,
 				83F388622D0B6E8500085103 /* IconView.swift */,
 				839C4CDC2D2B8E50007068BF /* LocalizedLink.swift */,
@@ -1440,7 +1437,6 @@
 				8310DD7F2E5FE7F700BB9308 /* BatteryView.swift in Sources */,
 				83CCB7282C7FAD96003F51ED /* DateTimeView.swift in Sources */,
 				838C232B2B7492170053D4C5 /* CustomList.swift in Sources */,
-				838C23302B74978C0053D4C5 /* HText.swift in Sources */,
 				83585B752B8848110046A0C3 /* TransitView.swift in Sources */,
 				836000782BCC7A470034DDF5 /* NotificationsView.swift in Sources */,
 				833F0AD02B744D180036EAD2 /* PreferencesApp.swift in Sources */,

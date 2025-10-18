@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-/// Settings Sidebar Label for iPadOS
+/// Settings Sidebar Template
 struct SettingsLabelSection: View {
     @AppStorage("AirplaneMode") private var airplaneModeEnabled = false
     @AppStorage("WiFi") private var wifiEnabled = true
