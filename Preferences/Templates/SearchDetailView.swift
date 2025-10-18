@@ -18,19 +18,20 @@ struct SearchDetailView: View {
     @State private var showContentInSearchEnabled = true
     var appName: String
     var appTitle = true
+    let path = "/System/Library/PrivateFrameworks/AssistantSettingsSupport.framework"
     let table = "AssistantSettings"
     
     var body: some View {
         CustomList(title: appTitle ? appName : "Search", topPadding: true) {
             Section {
-                Toggle("SIRIANDSEARCH_PERAPP_WHILESEARCHING_SHOWAPP_TOGGLE".localize(table: table), isOn: $showAppInSearchEnabled)
+                Toggle("SIRIANDSEARCH_PERAPP_WHILESEARCHING_SHOWAPP_TOGGLE".localized(path: path, table: table), isOn: $showAppInSearchEnabled)
                 if showAppInSearchEnabled {
-                    Toggle("SIRIANDSEARCH_PERAPP_WHILESEARCHING_SHOWCONTENT_TOGGLE".localize(table: table), isOn: $showContentInSearchEnabled)
+                    Toggle("SIRIANDSEARCH_PERAPP_WHILESEARCHING_SHOWCONTENT_TOGGLE".localized(path: path, table: table), isOn: $showContentInSearchEnabled)
                 }
             } header: {
-                Text("SIRIANDSEARCH_PERAPP_WHILESEARCHING_HEADER", tableName: table)
+                Text("SIRIANDSEARCH_PERAPP_WHILESEARCHING_HEADER".localized(path: path, table: table))
             } footer: {
-                Text("SIRIANDSEARCH_PERAPP_WHILESEARCHING_FOOTER".localize(table: table, appName))
+                Text("SIRIANDSEARCH_PERAPP_WHILESEARCHING_FOOTER".localized(path: path, table: table, appName))
             }
         }
     }
