@@ -39,7 +39,7 @@ struct SettingsLabelSection: View {
                 } else if requiredCapabilities(capability: setting.capability) {
                     switch setting.kind {
                     case .link:
-                        if UIDevice.iPhone || horizontalSizeClass == .compact {
+                        if UIDevice.iPhone {
                             NavigationLink {
                                 setting.destination
                             } label: {
@@ -72,7 +72,7 @@ struct SettingsLabelSection: View {
                             }
                             .foregroundStyle(selection == setting ? .blue : .primary)
                             .modifier(listRowBackgroundEffect(
-                                isActive: UIDevice.iPad && horizontalSizeClass == .regular,
+                                isActive: UIDevice.iPad,
                                 isSelected: selection == setting
                             ))
                         }

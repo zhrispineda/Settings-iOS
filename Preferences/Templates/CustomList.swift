@@ -40,7 +40,7 @@ struct CustomList<Content: View>: View {
                 isLandscape = geo.size.width > geo.size.height
             }
             .navigationDestination(for: String.self) { key in
-                RouteRegistry.shared.view(for: key) ?? AnyView(Text("Unknown: \(key)"))
+                RouteRegistry.shared.view(for: key)
             }
         }
     }
