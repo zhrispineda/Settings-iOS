@@ -37,9 +37,9 @@ final class RouteRegistry {
 @MainActor
 @Observable final class StateManager {
     static let shared = StateManager()
-    
     var path: [String] = []
     var selection: SettingsItem? = nil
+    var isCompact = false
     
     let followUpSettings: [SettingsItem]
     let radioSettings: [SettingsItem]

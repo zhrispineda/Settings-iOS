@@ -14,7 +14,6 @@ struct SettingsLabelSection: View {
     @AppStorage("Bluetooth") private var bluetoothEnabled = true
     @Binding var selection: SettingsItem?
     @Environment(StateManager.self) private var stateManager
-    @Environment(\.horizontalSizeClass) var horizontalSizeClass
     @State private var showingSignInSheet = false
     let item: [SettingsItem]
     
@@ -28,7 +27,7 @@ struct SettingsLabelSection: View {
                         NavigationLink {} label: {
                             SLabel(setting.title, color: setting.color, icon: setting.icon)
                         }
-                        .navigationLinkIndicatorVisibility(UIDevice.iPad ? .hidden : .visible)
+                        .navigationLinkIndicatorVisibility(UIDevice.iPad && !stateManager.isCompact ? .hidden : .visible)
                     }
                     .sheet(isPresented: $showingSignInSheet) {
                         NavigationStack {
@@ -39,7 +38,7 @@ struct SettingsLabelSection: View {
                 } else if requiredCapabilities(capability: setting.capability) {
                     switch setting.kind {
                     case .link:
-                        if UIDevice.iPhone {
+                        if UIDevice.iPhone || stateManager.isCompact {
                             NavigationLink {
                                 setting.destination
                             } label: {
@@ -72,7 +71,7 @@ struct SettingsLabelSection: View {
                             }
                             .foregroundStyle(selection == setting ? .blue : .primary)
                             .modifier(listRowBackgroundEffect(
-                                isActive: UIDevice.iPad,
+                                isActive: UIDevice.iPad && !stateManager.isCompact,
                                 isSelected: selection == setting
                             ))
                         }
