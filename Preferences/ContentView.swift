@@ -72,10 +72,10 @@ struct ContentView: View {
                     SettingsLabelSection(selection: $stateManager.selection, item: stateManager.developerSettings)
                 }
             }
-            .navigationTitle(UIDevice.iPhone || stateManager.isCompact ? "Settings" : "")
+            .navigationTitle(UIDevice.iPhone || stateManager.isCompact ? .settings : "")
             .toolbar(removing: .sidebarToggle)
-            .alert("Connect to the Internet to sign in to your Device.", isPresented: $showingSignInError) {
-                Button("Ok") {}
+            .alert(.connectToTheInternetToSignInToYourDevice, isPresented: $showingSignInError) {
+                Button(.ok) {}
             }
             .sheet(isPresented: $showingSignInSheet) {
                 NavigationStack {
