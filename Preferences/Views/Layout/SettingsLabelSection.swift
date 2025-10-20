@@ -26,6 +26,7 @@ struct SettingsLabelSection: View {
                         if stateManager.isConnected {
                             showingSignInSheet.toggle()
                         } else {
+                            SettingsLogger.info("Presenting Network Alert.")
                             showingSignInError.toggle()
                         }
                     } label: {
