@@ -13,7 +13,7 @@ struct SettingsLabelSection: View {
     @AppStorage("WiFi") private var wifiEnabled = true
     @AppStorage("Bluetooth") private var bluetoothEnabled = true
     @Binding var selection: SettingsItem?
-    @Environment(StateManager.self) private var stateManager
+    @Environment(PrimarySettingsListModel.self) private var stateManager
     @State private var showingSignInError = false
     @State private var showingSignInSheet = false
     let item: [SettingsItem]

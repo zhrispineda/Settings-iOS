@@ -11,7 +11,7 @@ import SwiftUI
 struct PreferencesApp: App {
     @Environment(\.scenePhase) private var scenePhase
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-    private let stateManager = StateManager.shared
+    private let stateManager = PrimarySettingsListModel.shared
 
     var body: some Scene {
         WindowGroup {
@@ -95,7 +95,7 @@ class SceneDelegate: NSObject, UIWindowSceneDelegate {
     }
 
     func handleShortcutItem(_ shortcutItem: UIApplicationShortcutItem) {
-        let stateManager = StateManager.shared
+        let stateManager = PrimarySettingsListModel.shared
         switch shortcutItem.type {
         case "com.example.Preferences.bluetooth":
             stateManager.selection = stateManager.radioSettings[3]

@@ -19,14 +19,14 @@ struct SettingsTests {
     // MARK: Check Accessibility Settings
     @MainActor
     @Test func testSettingsAccessibilitySettingsExistence() throws {
-        let accessibility = StateManager().mainSettings.contains(where: { $0.title == "Accessibility" })
+        let accessibility = PrimarySettingsListModel().mainSettings.contains(where: { $0.title == "Accessibility" })
         #expect(accessibility)
     }
     
     // MARK: Check Accessibility Link
     @MainActor
     @Test func testSettingsAccessibilityShortcutSettingsExistence() throws {
-        let accessibility = StateManager().mainSettings.contains(where: { $0.title == "Accessibility" })
+        let accessibility = PrimarySettingsListModel().mainSettings.contains(where: { $0.title == "Accessibility" })
         #expect(accessibility)
     }
 }

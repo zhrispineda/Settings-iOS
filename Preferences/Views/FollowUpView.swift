@@ -10,7 +10,7 @@ import SwiftUI
 struct FollowUpView: View {
     @AppStorage("FollowUpDismissed") private var followUpDismissed = false
     @Environment(\.dismiss) var dismiss
-    @Environment(StateManager.self) private var stateManager
+    @Environment(PrimarySettingsListModel.self) private var stateManager
     let coreFollowUp = "/System/Library/PrivateFrameworks/CoreFollowUp.framework"
     let setupAssistant = "/System/Library/PrivateFrameworks/SetupAssistant.framework"
     let table = "FollowUp"
@@ -54,6 +54,6 @@ struct FollowUpView: View {
 #Preview {
     NavigationStack {
         FollowUpView()
-            .environment(StateManager())
+            .environment(PrimarySettingsListModel())
     }
 }

@@ -33,7 +33,7 @@ Open the project in Xcode and run with either a Simulator instance or a physical
 > [!IMPORTANT]  
 > You may need to change the bundle identifier of the app to be able to sign it with Xcode for use on a physical device.
 
-To switch between the simulator and physical-like layout of Settings in Simulator or Preview, modify the `forcePhysical` variable on line 12 of `SettingsModel.swift` under `Preferences/Models`.
+To switch between the simulator and physical-like layout of Settings in Simulator or Preview, modify the `forcePhysical` variable on line 12 of `PrimarySettingsListModel.swift` under `Preferences/Models`.
 
 As this is a project for learning Swift and SwiftUI, feel free to download or fork and modify the project for your own personal use.
 

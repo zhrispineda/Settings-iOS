@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SettingsSearchView: View {
-    var stateManager: StateManager
+    var stateManager: PrimarySettingsListModel
 
     var body: some View {
         Section("Suggestions") {
@@ -43,7 +43,7 @@ struct SettingsSearchView: View {
 #Preview {
     NavigationStack {
         List {
-            SettingsSearchView(stateManager: StateManager())
+            SettingsSearchView(stateManager: PrimarySettingsListModel())
         }
     }
 }

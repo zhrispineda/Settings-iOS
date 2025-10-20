@@ -62,5 +62,5 @@ struct IconToggle: View {
 
 #Preview {
     ContentView()
-        .environment(StateManager())
+        .environment(PrimarySettingsListModel())
 }

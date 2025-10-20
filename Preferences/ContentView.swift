@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @AppStorage("FollowUpDismissed") private var followUpDismissed = false
     @AppStorage("VPNToggle") private var VPNEnabled = true
-    @Environment(StateManager.self) private var stateManager
+    @Environment(PrimarySettingsListModel.self) private var stateManager
     @State private var searchFocused = false
     @State private var showingSignInError = false
     @State private var showingSignInSheet = false
@@ -183,5 +183,5 @@ func requiredCapabilities(capability: Capabilities) -> Bool {
 
 #Preview {
     ContentView()
-        .environment(StateManager())
+        .environment(PrimarySettingsListModel())
 }

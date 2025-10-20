@@ -133,7 +133,7 @@ struct SLink<Content: View>: View {
 
 #Preview("ContentView") {
     ContentView()
-        .environment(StateManager())
+        .environment(PrimarySettingsListModel())
 }
 
 #Preview("SLink Example") {

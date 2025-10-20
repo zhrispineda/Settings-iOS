@@ -39,5 +39,5 @@ struct CustomList<Content: View>: View {
 
 #Preview {
     ContentView()
-        .environment(StateManager())
+        .environment(PrimarySettingsListModel())
 }

@@ -36,8 +36,8 @@ final class RouteRegistry {
 // MARK: - State Manager
 /// Class for managing the state of the app's NavigationStack selection variable and destination view.
 @MainActor
-@Observable final class StateManager {
-    static let shared = StateManager()
+@Observable final class PrimarySettingsListModel {
+    static let shared = PrimarySettingsListModel()
     var path: [String] = []
     var selection: SettingsItem? = nil
     var isCompact = false
@@ -547,7 +547,7 @@ final class RouteRegistry {
     }
 }
 
-// MARK: - SettingsModel data
+// MARK: - PrimarySettingsListModel data
 /// Stores the title of each enum variable for use in navigation.
 enum SettingsOptions: String, CaseIterable {
     case accessibility = "Accessibility"
