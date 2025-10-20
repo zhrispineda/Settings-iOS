@@ -25,13 +25,13 @@ struct PreferencesApp: App {
         }
         .onChange(of: scenePhase) { _, newPhase in
             if newPhase == .background {
-                quickActionShortcutItems()
+                handleSceneDidEnterBackground()
             }
         }
     }
     
-    private func quickActionShortcutItems() {
-        UIApplication.shared.shortcutItems = [
+    private func handleSceneDidEnterBackground() {
+        var items: [UIApplicationShortcutItem] = [
             UIApplicationShortcutItem(
                 type: "com.example.Preferences.bluetooth",
                 localizedTitle: "Bluetooth",
@@ -43,20 +43,30 @@ struct PreferencesApp: App {
                 localizedTitle: "Wi-Fi",
                 localizedSubtitle: nil,
                 icon: UIApplicationShortcutIcon(systemImageName: "wifi")
-            ),
-            UIApplicationShortcutItem(
-                type: "com.example.Preferences.cellularData",
-                localizedTitle: "Cellular",
-                localizedSubtitle: nil,
-                icon: UIApplicationShortcutIcon(systemImageName: "antenna.radiowaves.left.and.right")
-            ),
+            )
+        ]
+        
+        if UIDevice.CellularTelephonyCapability {
+            items.append(
+                UIApplicationShortcutItem(
+                    type: "com.example.Preferences.cellularData",
+                    localizedTitle: "Cellular",
+                    localizedSubtitle: nil,
+                    icon: UIApplicationShortcutIcon(systemImageName: "antenna.radiowaves.left.and.right")
+                )
+            )
+        }
+
+        items.append(
             UIApplicationShortcutItem(
                 type: "com.example.Preferences.power",
                 localizedTitle: "Battery",
                 localizedSubtitle: nil,
                 icon: UIApplicationShortcutIcon(systemImageName: "battery.100")
             )
-        ]
+        )
+
+        UIApplication.shared.shortcutItems = items
     }
 }
 

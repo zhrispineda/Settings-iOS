@@ -29,6 +29,7 @@ struct SettingsLabelSection: View {
                         }
                         .navigationLinkIndicatorVisibility(UIDevice.iPad && !stateManager.isCompact ? .hidden : .visible)
                     }
+                    .padding(.vertical, -5)
                     .sheet(isPresented: $showingSignInSheet) {
                         NavigationStack {
                             SelectSignInOptionView()
