@@ -16,6 +16,7 @@
 		830DA8022B9BE17B001EE76F /* ParentGuardianSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830DA8012B9BE17B001EE76F /* ParentGuardianSignInView.swift */; };
 		8310C70E2EA179CA00C0B749 /* UIApplicationShortcutIconHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8310C70D2EA179C600C0B749 /* UIApplicationShortcutIconHelper.m */; };
 		8310DD7F2E5FE7F700BB9308 /* BatteryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8310DD7E2E5FE7F700BB9308 /* BatteryView.swift */; };
+		8311D3AA2EA6B7BC00915C49 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8311D3A92EA6B7BC00915C49 /* Localizable.xcstrings */; };
 		831658A32E74A7290028C8D5 /* 26Pad.png in Resources */ = {isa = PBXBuildFile; fileRef = 831658A12E74A7290028C8D5 /* 26Pad.png */; };
 		831658A42E74A7290028C8D5 /* 26Phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 831658A22E74A7290028C8D5 /* 26Phone.png */; };
 		8319CE492B86D198007EC822 /* PasswordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319CE482B86D198007EC822 /* PasswordsView.swift */; };
@@ -187,7 +188,6 @@
 		83DF95742B841F0900AEEB63 /* DownloadedLanguagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DF95732B841F0900AEEB63 /* DownloadedLanguagesView.swift */; };
 		83DF95762B84266E00AEEB63 /* SiriDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DF95752B84266E00AEEB63 /* SiriDetailView.swift */; };
 		83DFA56D2DA9E17E004C3DD5 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DFA56C2DA9E17E004C3DD5 /* UIViewControllerExtensions.swift */; };
-		83E1B16A2E4C111500A816BF /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83E1B1692E4C111500A816BF /* Localizable.xcstrings */; };
 		83E2ADA72CA1D80A00DFED0C /* RecordVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E2ADA62CA1D80A00DFED0C /* RecordVideoView.swift */; };
 		83EC895F2CA0F8B500389F3B /* CameraControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EC895E2CA0F8B500389F3B /* CameraControlView.swift */; };
 		83F388632D0B6E8500085103 /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F388622D0B6E8500085103 /* IconView.swift */; };
@@ -234,6 +234,7 @@
 		8310C70C2EA1786A00C0B749 /* Preferences-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Preferences-Bridging-Header.h"; sourceTree = "<group>"; };
 		8310C70D2EA179C600C0B749 /* UIApplicationShortcutIconHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIApplicationShortcutIconHelper.m; sourceTree = "<group>"; };
 		8310DD7E2E5FE7F700BB9308 /* BatteryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryView.swift; sourceTree = "<group>"; };
+		8311D3A92EA6B7BC00915C49 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		831658A12E74A7290028C8D5 /* 26Pad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 26Pad.png; sourceTree = "<group>"; };
 		831658A22E74A7290028C8D5 /* 26Phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 26Phone.png; sourceTree = "<group>"; };
 		8319CE482B86D198007EC822 /* PasswordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordsView.swift; sourceTree = "<group>"; };
@@ -411,7 +412,6 @@
 		83DF95732B841F0900AEEB63 /* DownloadedLanguagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadedLanguagesView.swift; sourceTree = "<group>"; };
 		83DF95752B84266E00AEEB63 /* SiriDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriDetailView.swift; sourceTree = "<group>"; };
 		83DFA56C2DA9E17E004C3DD5 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
-		83E1B1692E4C111500A816BF /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		83E2ADA62CA1D80A00DFED0C /* RecordVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordVideoView.swift; sourceTree = "<group>"; };
 		83EC895E2CA0F8B500389F3B /* CameraControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraControlView.swift; sourceTree = "<group>"; };
 		83F388622D0B6E8500085103 /* IconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
@@ -954,9 +954,9 @@
 		83B893BE2B8FDBDB005705A3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				83E1B1692E4C111500A816BF /* Localizable.xcstrings */,
 				839AD33A2E8AFC6A00DDD069 /* iOSReadMeSummary.html */,
 				839AD33D2E8AFC7300DDD069 /* iPadOSReadMeSummary.html */,
+				8311D3A92EA6B7BC00915C49 /* Localizable.xcstrings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -1228,9 +1228,9 @@
 			files = (
 				831658A32E74A7290028C8D5 /* 26Pad.png in Resources */,
 				839AD33F2E8AFC7300DDD069 /* iPadOSReadMeSummary.html in Resources */,
+				8311D3AA2EA6B7BC00915C49 /* Localizable.xcstrings in Resources */,
 				831658A42E74A7290028C8D5 /* 26Phone.png in Resources */,
 				83A851BE2E0A4BD70041A3E6 /* SettingsApp.icon in Resources */,
-				83E1B16A2E4C111500A816BF /* Localizable.xcstrings in Resources */,
 				833F0AD72B744D190036EAD2 /* Preview Assets.xcassets in Resources */,
 				839AD33C2E8AFC6A00DDD069 /* iOSReadMeSummary.html in Resources */,
 				833F0AD42B744D190036EAD2 /* Assets.xcassets in Resources */,

@@ -36,7 +36,7 @@ struct SettingsLabelSection: View {
                         .navigationLinkIndicatorVisibility(UIDevice.iPad && !stateManager.isCompact ? .hidden : .visible)
                     }
                     .padding(.vertical, -5)
-                    .alert("Connect to the Internet to sign in to your \(UIDevice.current.localizedModel).", isPresented: $showingSignInError) {
+                    .alert("Connect to the Internet to sign in to your Device.", isPresented: $showingSignInError) {
                         Button("Ok") {}
                     }
                     .sheet(isPresented: $showingSignInSheet) {

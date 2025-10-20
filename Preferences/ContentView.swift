@@ -74,7 +74,7 @@ struct ContentView: View {
             }
             .navigationTitle(UIDevice.iPhone || stateManager.isCompact ? "Settings" : "")
             .toolbar(removing: .sidebarToggle)
-            .alert("Connect to the Internet to sign in to your \(UIDevice.current.localizedModel).", isPresented: $showingSignInError) {
+            .alert("Connect to the Internet to sign in to your Device.", isPresented: $showingSignInError) {
                 Button("Ok") {}
             }
             .sheet(isPresented: $showingSignInSheet) {
