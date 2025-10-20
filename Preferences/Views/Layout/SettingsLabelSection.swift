@@ -14,6 +14,7 @@ struct SettingsLabelSection: View {
     @AppStorage("Bluetooth") private var bluetoothEnabled = true
     @Binding var selection: SettingsItem?
     @Environment(StateManager.self) private var stateManager
+    @State private var showingSignInError = false
     @State private var showingSignInSheet = false
     let item: [SettingsItem]
     
@@ -22,7 +23,11 @@ struct SettingsLabelSection: View {
             ForEach(item) { setting in
                 if setting.type == .icloud {
                     Button {
-                        showingSignInSheet.toggle()
+                        if stateManager.isConnected {
+                            showingSignInSheet.toggle()
+                        } else {
+                            showingSignInError.toggle()
+                        }
                     } label: {
                         NavigationLink {} label: {
                             SLabel(setting.title, color: setting.color, icon: setting.icon)
@@ -30,6 +35,9 @@ struct SettingsLabelSection: View {
                         .navigationLinkIndicatorVisibility(UIDevice.iPad && !stateManager.isCompact ? .hidden : .visible)
                     }
                     .padding(.vertical, -5)
+                    .alert("Connect to the Internet to sign in to your \(UIDevice.current.localizedModel).", isPresented: $showingSignInError) {
+                        Button("Ok") {}
+                    }
                     .sheet(isPresented: $showingSignInSheet) {
                         NavigationStack {
                             SelectSignInOptionView()

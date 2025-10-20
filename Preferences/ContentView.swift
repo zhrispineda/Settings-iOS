@@ -12,6 +12,7 @@ struct ContentView: View {
     @AppStorage("VPNToggle") private var VPNEnabled = true
     @Environment(StateManager.self) private var stateManager
     @State private var searchFocused = false
+    @State private var showingSignInError = false
     @State private var showingSignInSheet = false
     @State private var searchText = ""
     @State private var splitViewVisibility = NavigationSplitViewVisibility.all
@@ -24,7 +25,11 @@ struct ContentView: View {
                 List(selection: $stateManager.selection) {
                     Section {
                         Button {
-                            showingSignInSheet.toggle()
+                            if stateManager.isConnected {
+                                showingSignInSheet.toggle()
+                            } else {
+                                showingSignInError.toggle()
+                            }
                         } label: {
                             NavigationLink {} label: {
                                 AppleAccountSection()
@@ -69,6 +74,9 @@ struct ContentView: View {
                 }
                 .navigationTitle(UIDevice.iPhone || stateManager.isCompact ? "Settings" : "")
                 .toolbar(removing: .sidebarToggle)
+                .alert("Connect to the Internet to sign in to your \(UIDevice.current.localizedModel).", isPresented: $showingSignInError) {
+                    Button("Ok") {}
+                }
                 .sheet(isPresented: $showingSignInSheet) {
                     NavigationStack {
                         SelectSignInOptionView()

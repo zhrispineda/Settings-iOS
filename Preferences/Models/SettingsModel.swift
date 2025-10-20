@@ -4,6 +4,7 @@ A combination of structs, enums, and classes to define the structure of the app.
 */
 
 import SwiftUI
+import Network
 
 // MARK: - Global variables
 /// Global variables for access across views. (forceCellular, forcePhysical, developerMode)
@@ -40,6 +41,10 @@ final class RouteRegistry {
     var path: [String] = []
     var selection: SettingsItem? = nil
     var isCompact = false
+    
+    private let monitor = NWPathMonitor()
+    private let queue = DispatchQueue.global(qos: .userInitiated)
+    private(set) var isConnected: Bool = false
     
     let followUpSettings: [SettingsItem]
     let radioSettings: [SettingsItem]
@@ -532,6 +537,13 @@ final class RouteRegistry {
                 )
             )
         ]
+        
+        monitor.pathUpdateHandler = { [weak self] path in
+            Task { @MainActor in
+                self?.isConnected = path.status == .satisfied
+            }
+        }
+        monitor.start(queue: queue)
     }
 }
 
