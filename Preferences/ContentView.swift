@@ -20,124 +20,122 @@ struct ContentView: View {
     var body: some View {
         @Bindable var stateManager = stateManager
         
-        GeometryReader { geo in
-            NavigationSplitView(columnVisibility: $splitViewVisibility) {
-                List(selection: $stateManager.selection) {
+        NavigationSplitView(columnVisibility: $splitViewVisibility) {
+            List(selection: $stateManager.selection) {
+                Section {
+                    Button {
+                        if stateManager.isConnected {
+                            showingSignInSheet.toggle()
+                        } else {
+                            showingSignInError.toggle()
+                        }
+                    } label: {
+                        NavigationLink {} label: {
+                            AppleAccountSection()
+                        }
+                        .navigationLinkIndicatorVisibility(UIDevice.iPad && !stateManager.isCompact ? .hidden : .visible)
+                    }
+                }
+                
+                if !UIDevice.IsSimulator && !followUpDismissed {
+                    SettingsLabelSection(selection: $stateManager.selection, item: stateManager.followUpSettings)
+                }
+                
+                // MARK: Radio Settings
+                if !UIDevice.IsSimulator {
                     Section {
-                        Button {
-                            if stateManager.isConnected {
-                                showingSignInSheet.toggle()
+                        SettingsLabelSection(selection: $stateManager.selection, item: stateManager.radioSettings)
+                        if requiredCapabilities(capability: .vpn) {
+                            IconToggle("VPN", isOn: $VPNEnabled, color: .blue, icon: "network.connected.to.line.below")
+                        }
+                    }
+                }
+                
+                // MARK: Main
+                SettingsLabelSection(selection: $stateManager.selection, item: UIDevice.IsSimulator ? stateManager.simulatorMainSettings : stateManager.mainSettings)
+                
+                // MARK: Attention
+                SettingsLabelSection(selection: $stateManager.selection, item: UIDevice.IsSimulator ? stateManager.attentionSimulatorSettings : stateManager.attentionSettings)
+                
+                // MARK: Security
+                SettingsLabelSection(selection: $stateManager.selection, item: UIDevice.IsSimulator ? stateManager.simulatorSecuritySettings : stateManager.securitySettings)
+                
+                // MARK: Services
+                SettingsLabelSection(selection: $stateManager.selection, item: UIDevice.IsSimulator ? stateManager.simulatorServicesSettings : stateManager.serviceSettings)
+                
+                // MARK: Apps
+                SettingsLabelSection(selection: $stateManager.selection, item: stateManager.appsSettings)
+                
+                // MARK: Developer
+                if UIDevice.IsSimulator || configuration.developerMode {
+                    SettingsLabelSection(selection: $stateManager.selection, item: stateManager.developerSettings)
+                }
+            }
+            .navigationTitle(UIDevice.iPhone || stateManager.isCompact ? "Settings" : "")
+            .toolbar(removing: .sidebarToggle)
+            .alert("Connect to the Internet to sign in to your \(UIDevice.current.localizedModel).", isPresented: $showingSignInError) {
+                Button("Ok") {}
+            }
+            .sheet(isPresented: $showingSignInSheet) {
+                NavigationStack {
+                    SelectSignInOptionView()
+                        .interactiveDismissDisabled()
+                }
+            }
+            .searchable(text: $searchText, isPresented: $searchFocused, placement: UIDevice.iPad ? .navigationBarDrawer(displayMode: .always) : .automatic)
+            .overlay {
+                if UIDevice.iPad && searchFocused && !searchText.isEmpty {
+                    GeometryReader { geo in
+                        List {
+                            if searchText.isEmpty {
+                                Section("Suggestions") {}
                             } else {
-                                showingSignInError.toggle()
-                            }
-                        } label: {
-                            NavigationLink {} label: {
-                                AppleAccountSection()
-                            }
-                            .navigationLinkIndicatorVisibility(UIDevice.iPad && !stateManager.isCompact ? .hidden : .visible)
-                        }
-                    }
-                    
-                    if !UIDevice.IsSimulator && !followUpDismissed {
-                        SettingsLabelSection(selection: $stateManager.selection, item: stateManager.followUpSettings)
-                    }
-                    
-                    // MARK: Radio Settings
-                    if !UIDevice.IsSimulator {
-                        Section {
-                            SettingsLabelSection(selection: $stateManager.selection, item: stateManager.radioSettings)
-                            if requiredCapabilities(capability: .vpn) {
-                                IconToggle("VPN", isOn: $VPNEnabled, color: .blue, icon: "network.connected.to.line.below")
+                                ContentUnavailableView.search(text: searchText)
+                                    .frame(minHeight: 0, idealHeight: geo.size.height, maxHeight: .infinity)
+                                    .edgesIgnoringSafeArea(.all)
+                                    .listRowSeparator(.hidden)
                             }
                         }
+                        .scrollDisabled(!searchText.isEmpty)
+                        .listStyle(.inset)
                     }
-                    
-                    // MARK: Main
-                    SettingsLabelSection(selection: $stateManager.selection, item: UIDevice.IsSimulator ? stateManager.simulatorMainSettings : stateManager.mainSettings)
-                    
-                    // MARK: Attention
-                    SettingsLabelSection(selection: $stateManager.selection, item: UIDevice.IsSimulator ? stateManager.attentionSimulatorSettings : stateManager.attentionSettings)
-                    
-                    // MARK: Security
-                    SettingsLabelSection(selection: $stateManager.selection, item: UIDevice.IsSimulator ? stateManager.simulatorSecuritySettings : stateManager.securitySettings)
-                    
-                    // MARK: Services
-                    SettingsLabelSection(selection: $stateManager.selection, item: UIDevice.IsSimulator ? stateManager.simulatorServicesSettings : stateManager.serviceSettings)
-                    
-                    // MARK: Apps
-                    SettingsLabelSection(selection: $stateManager.selection, item: stateManager.appsSettings)
-                    
-                    // MARK: Developer
-                    if UIDevice.IsSimulator || configuration.developerMode {
-                        SettingsLabelSection(selection: $stateManager.selection, item: stateManager.developerSettings)
-                    }
-                }
-                .navigationTitle(UIDevice.iPhone || stateManager.isCompact ? "Settings" : "")
-                .toolbar(removing: .sidebarToggle)
-                .alert("Connect to the Internet to sign in to your \(UIDevice.current.localizedModel).", isPresented: $showingSignInError) {
-                    Button("Ok") {}
-                }
-                .sheet(isPresented: $showingSignInSheet) {
-                    NavigationStack {
-                        SelectSignInOptionView()
-                            .interactiveDismissDisabled()
-                    }
-                }
-                .searchable(text: $searchText, isPresented: $searchFocused, placement: UIDevice.iPad ? .navigationBarDrawer(displayMode: .always) : .automatic)
-                .overlay {
-                    if UIDevice.iPad && searchFocused && !searchText.isEmpty {
-                        GeometryReader { geo in
-                            List {
-                                if searchText.isEmpty {
-                                    Section("Suggestions") {}
-                                } else {
-                                    ContentUnavailableView.search(text: searchText)
-                                        .frame(minHeight: 0, idealHeight: geo.size.height, maxHeight: .infinity)
-                                        .edgesIgnoringSafeArea(.all)
-                                        .listRowSeparator(.hidden)
-                                }
+                } else if UIDevice.iPhone && searchFocused {
+                    GeometryReader { geo in
+                        List {
+                            if searchText.isEmpty {
+                                SettingsSearchView(stateManager: stateManager)
+                            } else {
+                                ContentUnavailableView.search(text: searchText)
+                                    .frame(minHeight: 0, idealHeight: geo.size.height, maxHeight: .infinity)
+                                    .edgesIgnoringSafeArea(.all)
+                                    .listRowSeparator(.hidden)
                             }
-                            .scrollDisabled(!searchText.isEmpty)
-                            .listStyle(.inset)
                         }
-                    } else if UIDevice.iPhone && searchFocused {
-                        GeometryReader { geo in
-                            List {
-                                if searchText.isEmpty {
-                                    SettingsSearchView(stateManager: stateManager)
-                                } else {
-                                    ContentUnavailableView.search(text: searchText)
-                                        .frame(minHeight: 0, idealHeight: geo.size.height, maxHeight: .infinity)
-                                        .edgesIgnoringSafeArea(.all)
-                                        .listRowSeparator(.hidden)
-                                }
-                            }
-                            .scrollDisabled(!searchText.isEmpty)
-                            .listStyle(.inset)
-                        }
+                        .scrollDisabled(!searchText.isEmpty)
+                        .listStyle(.inset)
                     }
-                }
-            } detail: {
-                NavigationStack(path: $stateManager.path) {
-                    stateManager.selection?.destination
                 }
             }
-            .onAppear {
-                stateManager.isCompact = splitViewVisibility == .detailOnly
-                if stateManager.selection == nil && UIDevice.iPad && !stateManager.isCompact {
-                    stateManager.selection = stateManager.mainSettings.first
-                }
+        } detail: {
+            NavigationStack(path: $stateManager.path) {
+                stateManager.selection?.destination
             }
-            .onChange(of: stateManager.path) { oldValue, newValue in
-                if !oldValue.isEmpty {
-                    SettingsLogger.log("Last Navigation Event: \(oldValue.joined(separator: " → "))")
-                }
+        }
+        .onAppear {
+            stateManager.isCompact = splitViewVisibility == .detailOnly
+            if stateManager.selection == nil && UIDevice.iPad && !stateManager.isCompact {
+                stateManager.selection = stateManager.mainSettings.first
             }
-            .onChange(of: splitViewVisibility) {
-                stateManager.isCompact = splitViewVisibility == .detailOnly
-                if !stateManager.isCompact && stateManager.selection == nil {
-                    stateManager.selection = stateManager.mainSettings.first
-                }
+        }
+        .onChange(of: stateManager.path) { oldValue, newValue in
+            if !oldValue.isEmpty {
+                SettingsLogger.log("Last Navigation Event: \(oldValue.joined(separator: " → "))")
+            }
+        }
+        .onChange(of: splitViewVisibility) {
+            stateManager.isCompact = splitViewVisibility == .detailOnly
+            if !stateManager.isCompact && stateManager.selection == nil {
+                stateManager.selection = stateManager.mainSettings.first
             }
         }
     }
