@@ -13,7 +13,7 @@
 #pragma mark - Helpers
 /// An implementation of the internal SBSApplicationShortcutSystemPrivateIcon object from SpringBoardServices for use with UIApplicationShortcutIcon, allowing for private symbol usage in Home Screen quick actions.
 ///
-/// - Warning: Do not use this method for public App Store apps. This method's usage is not encouraged as it is not publicly supported and may be unstable.
+/// - Warning: Do not use this method for public apps. Usage is not recommended as it is not publicly supported and may be unstable.
 @interface UIApplicationShortcutIconHelper : NSObject
 + (UIApplicationShortcutIcon *)iconWithSystemImageName:(NSString *)systemImageName;
 @end

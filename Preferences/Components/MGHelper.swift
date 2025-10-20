@@ -5,11 +5,14 @@
 
 import Foundation
 
+/// Helper functions for interacting with MobileGestalt, an internal system for device characteristics lookup.
 class MGHelper {
-    /// Returns the value of the given key.
-    /// 
+    /// Returns the value of the given key from MobileGestalt.
+    ///
     /// - Parameter key: The key as a String
     /// - Returns: The value of the key as either a String value or nil
+    ///
+    /// - Warning: Do not use this method for public apps. Usage is not recommended as it is not publicly supported and may be unstable.
     static func read(key: String) -> String? {
         typealias MGKey = (@convention(c) (CFString) -> CFTypeRef?)
         var mgKey: MGKey?
@@ -18,6 +21,7 @@ class MGHelper {
         
         // Initialize libMobileGestalt.dylib
         guard let gestalt = dlopen("/usr/lib/libMobileGestalt.dylib", RTLD_LAZY) else {
+            SettingsLogger.info("Could not interact with libMobileGestalt.dylib")
             return nil
         }
         
@@ -29,7 +33,7 @@ class MGHelper {
         
         mgKey = unsafeBitCast(dlsym(gestalt, "MGCopyAnswer"), to: MGKey.self)
         
-        // Attempt to get value from key
+        // Get value from key
         guard let value = mgKey?(key) else {
             SettingsLogger.error("Could not get value for key: \(key)")
             return nil
@@ -60,10 +64,9 @@ class MGHelper {
             SettingsLogger.log("Found value for \(key): \(value)")
             return data.map { String($0) }.joined(separator: " ")
         default:
+            SettingsLogger.error("Could not get typeID for key: \(key)")
             return nil
         }
-        
-        SettingsLogger.error("Could not get typeID for key: \(key)")
         
         return nil
     }
