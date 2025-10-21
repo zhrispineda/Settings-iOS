@@ -525,7 +525,7 @@ final class RouteRegistry {
                 icon: "com.apple.graphic-icon.carrier-settings",
                 capability: .isInternal,
                 destination: AnyView(
-                    EmptyView()
+                    CarrierSettingsView()
                 )
             ),
             SettingsItem(
@@ -533,7 +533,7 @@ final class RouteRegistry {
                 icon: "com.apple.graphic-icon.internal-settings",
                 capability: .isInternal,
                 destination: AnyView(
-                    EmptyView()
+                    InternalSettingsView()
                 )
             )
         ]

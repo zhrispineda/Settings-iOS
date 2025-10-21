@@ -17,6 +17,8 @@
 		8310C70E2EA179CA00C0B749 /* UIApplicationShortcutIconHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8310C70D2EA179C600C0B749 /* UIApplicationShortcutIconHelper.m */; };
 		8310DD7F2E5FE7F700BB9308 /* BatteryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8310DD7E2E5FE7F700BB9308 /* BatteryView.swift */; };
 		8311D3AA2EA6B7BC00915C49 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8311D3A92EA6B7BC00915C49 /* Localizable.xcstrings */; };
+		8311D3B22EA716E300915C49 /* InternalSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8311D3B12EA716E300915C49 /* InternalSettingsView.swift */; };
+		8311D3B42EA7170500915C49 /* CarrierSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8311D3B32EA7170500915C49 /* CarrierSettingsView.swift */; };
 		831658A32E74A7290028C8D5 /* 26Pad.png in Resources */ = {isa = PBXBuildFile; fileRef = 831658A12E74A7290028C8D5 /* 26Pad.png */; };
 		831658A42E74A7290028C8D5 /* 26Phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 831658A22E74A7290028C8D5 /* 26Phone.png */; };
 		8319CE492B86D198007EC822 /* PasswordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319CE482B86D198007EC822 /* PasswordsView.swift */; };
@@ -235,6 +237,8 @@
 		8310C70D2EA179C600C0B749 /* UIApplicationShortcutIconHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIApplicationShortcutIconHelper.m; sourceTree = "<group>"; };
 		8310DD7E2E5FE7F700BB9308 /* BatteryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryView.swift; sourceTree = "<group>"; };
 		8311D3A92EA6B7BC00915C49 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		8311D3B12EA716E300915C49 /* InternalSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalSettingsView.swift; sourceTree = "<group>"; };
+		8311D3B32EA7170500915C49 /* CarrierSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierSettingsView.swift; sourceTree = "<group>"; };
 		831658A12E74A7290028C8D5 /* 26Pad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 26Pad.png; sourceTree = "<group>"; };
 		831658A22E74A7290028C8D5 /* 26Phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 26Phone.png; sourceTree = "<group>"; };
 		8319CE482B86D198007EC822 /* PasswordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordsView.swift; sourceTree = "<group>"; };
@@ -1080,6 +1084,8 @@
 			isa = PBXGroup;
 			children = (
 				83D20AD02D875F6B000B26E6 /* DebugView.swift */,
+				8311D3B12EA716E300915C49 /* InternalSettingsView.swift */,
+				8311D3B32EA7170500915C49 /* CarrierSettingsView.swift */,
 			);
 			path = Developer;
 			sourceTree = "<group>";
@@ -1272,6 +1278,7 @@
 				832EF39D2B8193B50066A1BF /* OneHandedKeyboardView.swift in Sources */,
 				832EF3AB2B819C2A0066A1BF /* KeyboardsView.swift in Sources */,
 				83585B712B88475A0046A0C3 /* DrivingView.swift in Sources */,
+				8311D3B22EA716E300915C49 /* InternalSettingsView.swift in Sources */,
 				831C80412CA4998500306574 /* RecordSlomoView.swift in Sources */,
 				83DCCBB92E2D34C1009B4B27 /* ShareAccessibilitySettingsView.swift in Sources */,
 				83A36C8F2DB96E4600378E45 /* ConfigureProxyView.swift in Sources */,
@@ -1368,6 +1375,7 @@
 				83898FCA2B8A8F210020C7BB /* HealthDetailsView.swift in Sources */,
 				8335A70C2BC358E8001E199D /* CellularView.swift in Sources */,
 				832EF3952B8182550066A1BF /* ContentPrivacyRestrictionsDetailView.swift in Sources */,
+				8311D3B42EA7170500915C49 /* CarrierSettingsView.swift in Sources */,
 				8373E7362B91660F004285EA /* SensitivePhotosVideosProtectionSheetView.swift in Sources */,
 				838AF99C2D629138008FFA8B /* ScreenSharingView.swift in Sources */,
 				83441A8B2CAF73740022E193 /* JournalingSuggestionsView.swift in Sources */,
