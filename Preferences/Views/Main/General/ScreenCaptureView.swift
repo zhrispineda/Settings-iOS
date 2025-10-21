@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ScreenCaptureView: View {
-    @State private var fullScreenPreviews = true
+    @State private var fullScreenPreviews = false
     @State private var autoVisualLookup = true
     @State private var carPlayScreenshots = false
     @State private var format = "SCREEN_CAPTURE_SDR_ITEM"
@@ -23,30 +23,34 @@ struct ScreenCaptureView: View {
                 Text("ENABLE_PIP_FOOTER_TEXT".localized(path: path))
             }
             
-            Section {
-                Toggle("ENABLE_VI_LABEL".localized(path: path), isOn: $autoVisualLookup)
-            } footer: {
-                Text("ENABLE_VI_FOOTER_TEXT".localized(path: path))
-            }
-            
-            Section {
-                Toggle("ENABLE_CARPLAYSCREENSHOTS_TEXT".localized(path: path), isOn: $carPlayScreenshots)
-            } footer: {
-                Text("ENABLE_CARPLAYSCREENSHOTS_FOOTER_TEXT".localized(path: path))
-            }
-            
-            Section {
-                Picker("Format", selection: $format) {
-                    ForEach(options, id: \.self) { option in
-                        Text(option.localized(path: path))
-                    }
+            if UIDevice.iPhone {
+                Section {
+                    Toggle("ENABLE_VI_LABEL".localized(path: path), isOn: $autoVisualLookup)
+                } footer: {
+                    Text("ENABLE_VI_FOOTER_TEXT".localized(path: path))
                 }
-                .pickerStyle(.inline)
-                .labelsHidden()
-            } header: {
-                Text("SCREEN_CAPTURE_LABEL".localized(path: path))
-            } footer: {
-                Text("SCREEN_CAPTURE_FOOTER_TEXT".localized(path: path))
+                
+                Section {
+                    Toggle("ENABLE_CARPLAYSCREENSHOTS_TEXT".localized(path: path), isOn: $carPlayScreenshots)
+                } footer: {
+                    Text("ENABLE_CARPLAYSCREENSHOTS_FOOTER_TEXT".localized(path: path))
+                }
+            }
+            
+            if !UIDevice.IsSimulator {
+                Section {
+                    Picker("Format", selection: $format) {
+                        ForEach(options, id: \.self) { option in
+                            Text(option.localized(path: path))
+                        }
+                    }
+                    .pickerStyle(.inline)
+                    .labelsHidden()
+                } header: {
+                    Text("SCREEN_CAPTURE_LABEL".localized(path: path))
+                } footer: {
+                    Text("SCREEN_CAPTURE_FOOTER_TEXT".localized(path: path))
+                }
             }
         }
     }
