@@ -9,11 +9,8 @@ import SwiftUI
 ///
 /// - Parameter text: The `String` name of the link to display.
 /// - Parameter routeKey: Optional key to register this destination in RouteRegistry (defaults to `text`).
-/// - Parameter color: The `Color` of the icon's background.
-/// - Parameter iconColor: The `Color` of the icon.
 /// - Parameter path: The `String` bundle path for image lookup (if needed).
 /// - Parameter icon: The `String` name of the image asset or symbol.
-/// - Parameter lightOnly: If true, force light appearance for the icon.
 /// - Parameter subtitle: An optional `String` below the id displaying a short summary.
 /// - Parameter status: An optional `String` on the opposing side displaying its current state.
 /// - Parameter badgeCount: An optional `Int` on the opposing side displaying a red badge with a number.
@@ -21,11 +18,8 @@ import SwiftUI
 struct SLink<Content: View>: View {
     var text: String
     var routeKey: String?
-    var color: Color
-    var iconColor: Color
     var path: String
     var icon: String
-    var lightOnly: Bool
     var subtitle: String
     var status: String
     var badgeCount: Int
@@ -34,11 +28,8 @@ struct SLink<Content: View>: View {
     init(
         _ text: String,
         routeKey: String? = nil,
-        color: Color = Color.clear,
-        iconColor: Color = Color.white,
         path: String = "",
         icon: String = "",
-        lightOnly: Bool = false,
         subtitle: String = "",
         status: String = "",
         badgeCount: Int = 0,
@@ -46,11 +37,8 @@ struct SLink<Content: View>: View {
     ) {
         self.text = text
         self.routeKey = routeKey
-        self.color = color
-        self.iconColor = iconColor
         self.path = path
         self.icon = icon
-        self.lightOnly = lightOnly
         self.subtitle = subtitle
         self.status = status
         self.badgeCount = badgeCount
@@ -60,11 +48,8 @@ struct SLink<Content: View>: View {
     init(
         _ text: String,
         routeKey: String? = nil,
-        color: Color = Color.clear,
-        iconColor: Color = Color.white,
         path: String = "",
         icon: String = "",
-        lightOnly: Bool = false,
         subtitle: String = "",
         status: String = "",
         badgeCount: Int = 0,
@@ -72,11 +57,8 @@ struct SLink<Content: View>: View {
     ) {
         self.text = text
         self.routeKey = routeKey
-        self.color = color
-        self.iconColor = iconColor
         self.path = path
         self.icon = icon
-        self.lightOnly = lightOnly
         self.subtitle = subtitle
         self.status = status
         self.badgeCount = badgeCount
@@ -90,7 +72,7 @@ struct SLink<Content: View>: View {
             HStack(spacing: 15) {
                 // Icon
                 if icon != "None" {
-                    IconView(id: text, path: path, icon: icon, color: color, iconColor: iconColor, lightOnly: lightOnly)
+                    IconView(id: text, path: path, icon: icon)
                 }
                 
                 // Title and subtitle text
