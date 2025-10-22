@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ScreenTimeView: View {
-    @Environment(\.colorScheme) private var colorScheme
     @State private var appWebsiteActivityEnabled = false
     @State private var showingDisableScreenTimeDialog = false
     @State private var showingAppWebsiteActivitySheet = false
@@ -48,7 +47,7 @@ struct ScreenTimeView: View {
             }
             
             Section {
-                if !appWebsiteActivityEnabled {
+                if appWebsiteActivityEnabled {
                     SLink(
                         "AppAndWebsiteActivitySpecifierName".localized(path: path),
                         path: path,
@@ -76,7 +75,12 @@ struct ScreenTimeView: View {
                     Button {
                         showingAppWebsiteActivitySheet.toggle()
                     } label: {
-                        SLink("AppAndWebsiteActivitySpecifierName".localized(path: path), color: Color.cyan, icon: "chart.bar.xaxis", lightOnly: true, subtitle: "AppAndWebsiteActivitySpecifierSubtitleText".localized(path: path)) {}
+                        SLink(
+                            "AppAndWebsiteActivitySpecifierName".localized(path: path),
+                            path: path,
+                            icon: "com.apple.graphic-icon.analytics-and-improvements",
+                            subtitle: "AppAndWebsiteActivitySpecifierSubtitleText".localized(path: path)
+                        ) {}
                     }
                     .foregroundStyle(.primary)
                     .sheet(isPresented: $showingAppWebsiteActivitySheet) {
@@ -84,7 +88,7 @@ struct ScreenTimeView: View {
                             .frame(width: 400, height: 730)
                     }
                 }
-                SLink("ScreenDistanceSpecifierName".localized(path: path), color: colorScheme == .dark ? Color.blue : Color.white, iconColor: Color.blue, icon: "chevron.3.up.perspective", subtitle: "ScreenDistanceSpecifierSubtitleText".localized(path: path)) {
+                SLink("ScreenDistanceSpecifierName".localized(path: path), icon: "chevron.3.up.perspective", subtitle: "ScreenDistanceSpecifierSubtitleText".localized(path: path)) {
                     ScreenDistanceView()
                         .onAppear {
                             showingScreenDistanceSheet.toggle()
@@ -99,9 +103,6 @@ struct ScreenTimeView: View {
             }
             
             Section {
-//                SLink("CommunicationLimitsSpecifierName".localized(path: path), color: Color.green, icon: "person.crop.circle", lightOnly: true, subtitle: "AADC_CommunicationLimitsDetailText".localized(path: path)) {
-//                    EmptyView()
-//                }
                 SLink("CommunicationSafetyTitle".localized(path: path), icon: "com.apple.graphic-icon.communication-safety", subtitle: "CommunicationSafetyOffSubtitle".localized(path: path)) {
                     CommunicationSafetyView()
                         .onAppear {
