@@ -104,7 +104,7 @@ struct ContentView: View {
                     GeometryReader { geo in
                         List {
                             if searchText.isEmpty {
-                                SettingsSearchView(stateManager: model)
+                                SettingsSearchView()
                             } else {
                                 ContentUnavailableView.search(text: searchText)
                                     .frame(minHeight: 0, idealHeight: geo.size.height, maxHeight: .infinity)

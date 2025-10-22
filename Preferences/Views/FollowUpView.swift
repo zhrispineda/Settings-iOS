@@ -10,7 +10,7 @@ import SwiftUI
 struct FollowUpView: View {
     @AppStorage("FollowUpDismissed") private var followUpDismissed = false
     @Environment(\.dismiss) var dismiss
-    @Environment(PrimarySettingsListModel.self) private var stateManager
+    @Environment(PrimarySettingsListModel.self) private var model
     let coreFollowUp = "/System/Library/PrivateFrameworks/CoreFollowUp.framework"
     let setupAssistant = "/System/Library/PrivateFrameworks/SetupAssistant.framework"
     let table = "FollowUp"
@@ -40,7 +40,7 @@ struct FollowUpView: View {
                     }
                     SettingsLogger.log("Attempting to dismiss FollowUpView")
                     if UIDevice.iPad {
-                        stateManager.selection = stateManager.mainSettings.first
+                        model.selection = model.mainSettings.first
                     } else if UIDevice.iPhone {
                         dismiss()
                     }

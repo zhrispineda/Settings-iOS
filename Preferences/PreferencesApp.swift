@@ -11,12 +11,12 @@ import SwiftUI
 struct PreferencesApp: App {
     @Environment(\.scenePhase) private var scenePhase
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-    private let stateManager = PrimarySettingsListModel.shared
+    private let model = PrimarySettingsListModel.shared
 
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(stateManager)
+                .environment(model)
         }
         .commands {
             CommandGroup(replacing: .appSettings) {
@@ -95,16 +95,17 @@ class SceneDelegate: NSObject, UIWindowSceneDelegate {
     }
 
     func handleShortcutItem(_ shortcutItem: UIApplicationShortcutItem) {
-        let stateManager = PrimarySettingsListModel.shared
+        let model = PrimarySettingsListModel.shared
+        
         switch shortcutItem.type {
         case "com.example.Preferences.bluetooth":
-            stateManager.selection = stateManager.radioSettings[3]
+            model.selection = model.radioSettings[3]
         case "com.example.Preferences.wifi":
-            stateManager.selection = stateManager.radioSettings[1]
+            model.selection = model.radioSettings[1]
         case "com.example.Preferences.cellularData":
-            stateManager.selection = stateManager.radioSettings[4]
+            model.selection = model.radioSettings[4]
         default:
-            stateManager.selection = stateManager.radioSettings[6]
+            model.selection = model.radioSettings[6]
         }
     }
 }

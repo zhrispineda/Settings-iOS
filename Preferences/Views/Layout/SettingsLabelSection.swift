@@ -13,7 +13,7 @@ struct SettingsLabelSection: View {
     @AppStorage("WiFi") private var wifiEnabled = true
     @AppStorage("Bluetooth") private var bluetoothEnabled = true
     @Binding var selection: SettingsItem?
-    @Environment(PrimarySettingsListModel.self) private var stateManager
+    @Environment(PrimarySettingsListModel.self) private var model
     @State private var showingSignInError = false
     @State private var showingSignInSheet = false
     let item: [SettingsItem]
@@ -23,7 +23,7 @@ struct SettingsLabelSection: View {
             ForEach(item) { setting in
                 if setting.type == .icloud {
                     Button {
-                        if stateManager.isConnected {
+                        if model.isConnected {
                             showingSignInSheet.toggle()
                         } else {
                             SettingsLogger.info("Presenting Network Alert.")
@@ -33,7 +33,7 @@ struct SettingsLabelSection: View {
                         NavigationLink {} label: {
                             SLabel(setting.title, color: setting.color, icon: setting.icon)
                         }
-                        .navigationLinkIndicatorVisibility(UIDevice.iPad && !stateManager.isCompact ? .hidden : .visible)
+                        .navigationLinkIndicatorVisibility(UIDevice.iPad && !model.isCompact ? .hidden : .visible)
                     }
                     .padding(.vertical, -5)
                     .alert(.connectToTheInternetToSignInToYourDevice, isPresented: $showingSignInError) {
@@ -48,7 +48,7 @@ struct SettingsLabelSection: View {
                 } else if requiredCapabilities(capability: setting.capability) {
                     switch setting.kind {
                     case .link:
-                        if UIDevice.iPhone || stateManager.isCompact {
+                        if UIDevice.iPhone || model.isCompact {
                             NavigationLink {
                                 setting.destination
                             } label: {
@@ -68,7 +68,7 @@ struct SettingsLabelSection: View {
                                 if selection != setting {
                                     selection = setting
                                 } else {
-                                    stateManager.path = []
+                                    model.path = []
                                 }
                             } label: {
                                 SLabel(
@@ -81,7 +81,7 @@ struct SettingsLabelSection: View {
                             }
                             .foregroundStyle(selection == setting ? .blue : .primary)
                             .modifier(listRowBackgroundEffect(
-                                isActive: UIDevice.iPad && !stateManager.isCompact,
+                                isActive: UIDevice.iPad && !model.isCompact,
                                 isSelected: selection == setting
                             ))
                         }
@@ -113,9 +113,9 @@ struct SettingsLabelSection: View {
     private func isSelected(_ setting: SettingsItem) -> Bool {
         switch setting.type {
         case .wifi:
-            return stateManager.selection?.type == .wifi
+            return model.selection?.type == .wifi
         case .bluetooth:
-            return stateManager.selection?.type == .bluetooth
+            return model.selection?.type == .bluetooth
         default:
             return false
         }
