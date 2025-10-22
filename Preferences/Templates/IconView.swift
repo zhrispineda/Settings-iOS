@@ -6,35 +6,18 @@ import SwiftUI
 /// IconView(icon: "wifi", color: Color.blue, iconColor: Color.white)
 /// ```
 ///
+/// - Parameter path: The `String` path of a bundle that contains an icon.
 /// - Parameter icon: The `String` name of the image asset or symbol.
 /// - Parameter color: The `Color` of the background.
 /// - Parameter iconColor: The `Color` of the icon itself.
-/// - Parameter lightOnly: The `Bool` for whether the icon should always be a light mode icon.
 struct IconView: View {
-    @Environment(\.colorScheme) private var colorScheme
     var id: String = ""
     var path: String = ""
     var icon: String = ""
-    var color: Color = .clear
-    var iconColor: Color = .clear
-    var lightOnly: Bool = false
     
     var body: some View {
         ZStack {
-            // Icon Background
-            if !lightOnly && colorScheme == .dark && !icon.contains("com.") {
-                Image(systemName: "app.fill")
-                    .resizable()
-                    .frame(width: 30, height: 30)
-                    .foregroundStyle(LinearGradient(gradient: Gradient(colors: [.gray.opacity(0.20), .black.opacity(0.25)]), startPoint: .top, endPoint: .bottom))
-            } else if lightOnly || colorScheme == .light && !icon.contains("com.") {
-                Image(systemName: "app.fill")
-                    .resizable()
-                    .frame(width: 30, height: 30)
-                    .foregroundStyle(color.gradient)
-            }
-            
-            // Check if `icon` is an image asset, graphic/icon, or fallback to symbol
+            // Check if `icon` is an image asset or graphic/icon
             if !path.isEmpty && !icon.contains("com.") {
                 if let asset = UIImage.asset(path: path, name: icon) {
                     Image(uiImage: asset)
@@ -57,17 +40,6 @@ struct IconView: View {
                 if let asset = UIImage.icon(forBundleID: icon) {
                     Image(uiImage: asset)
                 }
-            } else {
-                Image(_internalSystemName: icon)
-                    .font(.headline)
-                    .foregroundStyle(colorScheme == .dark && !lightOnly && color != .black ? color : iconColor)
-            }
-        }
-        .overlay {
-            // Add outline around icon background
-            if (color == .white || color == .black || colorScheme == .dark) && !icon.contains("com.") {
-                RoundedRectangle(cornerRadius: 8)
-                    .stroke(colorScheme == .light && color == .white ? Color.black.opacity(0.5) : colorScheme == .dark ? Color.white.opacity(0.5) : Color.black.opacity(0.5), lineWidth: 0.25)
             }
         }
     }
