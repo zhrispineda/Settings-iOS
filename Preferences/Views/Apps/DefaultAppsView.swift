@@ -14,7 +14,7 @@ struct DefaultAppsView: View {
     
     var body: some View {
         CustomList(title: "Default Apps".localized(path: path)) {
-            Placard(title: "Default Apps".localized(path: path), color: .gray, iconColor: .white, icon: "checkmark.rectangle.stack.fill", description: "Placard Subtitle".localized(path: path), frameY: $frameY, opacity: $opacity)
+            Placard(title: "Default Apps".localized(path: path), icon: "com.apple.graphic-icon.default-apps", description: "Placard Subtitle".localized(path: path), frameY: $frameY, opacity: $opacity)
             
             Section {
                 SettingsLink("Email".localized(path: path), status: "None".localized(path: path), destination: EmptyView())
