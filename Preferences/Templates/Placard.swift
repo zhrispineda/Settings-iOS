@@ -1,28 +1,20 @@
-/*
-Abstract:
-A VStack container that is displayed at the top of lists to summarize common controls to be expected below.
-*/
-
 import SwiftUI
 
 /// A `VStack` container that is displayed at the top of lists to summarize common controls to be expected below.
 ///
 /// ```swift
-/// Placard(title: "General", color: Color.gray, icon: "gear", description: "Change common settings including checking for new updates.", frameY: .constant(0.0), opacity: .constant(0.0))
+/// Placard(title: "General", icon: "com.apple.graphic-icon.gear", description: "Manage common options such as checking for new updates.", frameY: $frameY, opacity: $opacity)
 /// ```
 ///
 /// - Parameter title: The `String` to display as the navigation title of the `View`.
-/// - Parameter color: The `Color` of the icon background.
-/// - Parameter iconColor: The `Color` of the icon.
 /// - Parameter icon: The `String` name of the icon symbol.
 /// - Parameter description: The `String` to display as the description below the title.
+/// - Parameter frameY: The `Binding` `Double` value to use for calculating the current Y position in the scroll view.
+/// - Parameter opacity: The `Binding` `Double` value to use for calculating the opacity of the navigation title.
 struct Placard: View {
     var title: String
-    var color = Color.clear
-    var iconColor = Color.white
     var icon = ""
     var description = ""
-    var lightOnly = false
     var beta = false
     @Binding var frameY: Double
     @Binding var opacity: Double
@@ -30,7 +22,7 @@ struct Placard: View {
     var body: some View {
         VStack(spacing: 15) {
             ZStack {
-                IconView(id: title, icon: icon, color: color, iconColor: iconColor, lightOnly: lightOnly)
+                IconView(id: title, icon: icon)
                     .scaleEffect(2)
                     .padding(.top, 25)
                 
