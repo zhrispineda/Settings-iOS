@@ -28,11 +28,11 @@ struct Placard: View {
     @Binding var opacity: Double
     
     var body: some View {
-        VStack(spacing: 10) {
+        VStack(spacing: 15) {
             ZStack {
                 IconView(id: title, icon: icon, color: color, iconColor: iconColor, lightOnly: lightOnly)
-                    .scaleEffect(2.1)
-                    .frame(width: 64, height: 64)
+                    .scaleEffect(2)
+                    .padding(.top, 25)
                 
                 if beta {
                     ZStack {
@@ -43,20 +43,21 @@ struct Placard: View {
                             .font(.caption)
                             .foregroundStyle(.white)
                     }
-                    .offset(x: 25, y: 26)
+                    .offset(x: 20, y: 38)
                 }
             }
             .accessibilityHidden(true)
             
             Text(title)
                 .fontWeight(.bold)
-                .font(.title3)
+                .font(.title2)
+                .padding(.top, 13)
+                .padding(.bottom, -4)
             Text(.init(description))
-                .font(.footnote)
-                .padding(.bottom, -10)
+                .font(.system(size: 15))
+                .padding(.bottom, 10)
                 .padding(.horizontal, -10)
         }
-        .padding()
         .multilineTextAlignment(.center)
         .frame(maxWidth: .infinity)
         .fixedSize(horizontal: false, vertical: true)
@@ -76,7 +77,7 @@ struct Placard: View {
     NavigationStack {
         CustomList(title: "General") {
             Section {
-                Placard(title: "General", color: Color.gray, icon: "gear", description: "Change common settings including checking for new updates.", frameY: .constant(0.0), opacity: .constant(0.0))
+                Placard(title: "General", icon: "com.apple.graphic-icon.gear", description: "Manage your overall setup and preferences for iPad, such as software updates, AirDrop, and more.", frameY: .constant(0.0), opacity: .constant(0.0))
             }
         }
     }

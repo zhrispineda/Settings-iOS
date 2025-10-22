@@ -75,4 +75,5 @@ struct IconView: View {
 
 #Preview {
     ContentView()
+        .environment(PrimarySettingsListModel())
 }
