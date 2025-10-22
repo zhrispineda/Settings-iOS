@@ -29,7 +29,6 @@ struct IconToggle: View {
     var subtitle: String
     var iconColor: Color
     var table: String
-    private let lightOnlyIcons: Set<String> = ["airdrop", "shareplay"]
     
     init(_ text: String, isOn: Binding<Bool>, color: Color = Color.clear, icon: String = "", subtitle: String = "", iconColor: Color = Color.white, table: String = "Localizable") {
         self.text = text
@@ -52,7 +51,7 @@ struct IconToggle: View {
                         .font(.footnote)
                 }
             } icon: {
-                IconView(id: text.localize(table: table), icon: icon, color: color, iconColor: icon == "airdrop" ? Color.blue : iconColor, lightOnly: lightOnlyIcons.contains(icon))
+                IconView(id: text.localize(table: table), icon: icon)
                     .padding(.leading, -6)
             }
             .padding(.leading, 5)
