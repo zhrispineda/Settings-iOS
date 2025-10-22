@@ -46,9 +46,6 @@ struct ContentView: View {
                 if !UIDevice.IsSimulator {
                     Section {
                         SettingsLabelSection(selection: $model.selection, item: model.radioSettings)
-                        if requiredCapabilities(capability: .vpn) {
-                            IconToggle("VPN", isOn: $VPNEnabled, color: .blue, icon: "network.connected.to.line.below")
-                        }
                     }
                 }
                 
