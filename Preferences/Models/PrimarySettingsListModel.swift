@@ -137,6 +137,12 @@ final class RouteRegistry {
                 destination: AnyView(
                     EmptyView()
                 )
+            ),
+            SettingsItem(
+                type: .vpn,
+                icon: "com.apple.graphic-icon.vpn",
+                capability: .vpn,
+                kind: .toggle(key: "VPN")
             )
         ]
         
@@ -587,6 +593,7 @@ enum SettingsOptions: String, CaseIterable {
     case soundsHaptics = "Sounds & Haptics"
     case standby = "StandBy"
     case touchIDPasscode = "Touch ID & Passcode"
+    case vpn = "VPN"
     case wallet = "Wallet"
     case wallpaper = "Wallpaper"
     case wifi = "Wi-Fi"
