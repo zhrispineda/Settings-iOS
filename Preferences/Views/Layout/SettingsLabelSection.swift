@@ -12,7 +12,6 @@ struct SettingsLabelSection: View {
     @AppStorage("AirplaneMode") private var airplaneModeEnabled = false
     @AppStorage("WiFi") private var wifiEnabled = true
     @AppStorage("Bluetooth") private var bluetoothEnabled = true
-    @Binding var selection: SettingsItem?
     @Environment(PrimarySettingsListModel.self) private var model
     @State private var showingSignInError = false
     @State private var showingSignInSheet = false
@@ -65,8 +64,8 @@ struct SettingsLabelSection: View {
                             .padding(.vertical, -5)
                         } else {
                             Button {
-                                if selection != setting {
-                                    selection = setting
+                                if model.selection != setting {
+                                    model.selection = setting
                                 } else {
                                     model.path = []
                                 }
@@ -79,10 +78,10 @@ struct SettingsLabelSection: View {
                                     selected: isSelected(setting)
                                 )
                             }
-                            .foregroundStyle(selection == setting ? .blue : .primary)
+                            .foregroundStyle(model.selection == setting ? .blue : .primary)
                             .modifier(listRowBackgroundEffect(
                                 isActive: UIDevice.iPad && !model.isCompact,
-                                isSelected: selection == setting
+                                isSelected: model.selection == setting
                             ))
                         }
                     case .toggle(let key):

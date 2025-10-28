@@ -39,34 +39,24 @@ struct ContentView: View {
                 }
                 
                 if !UIDevice.IsSimulator && !followUpDismissed {
-                    SettingsLabelSection(selection: $model.selection, item: model.followUpSettings)
+                    SettingsLabelSection(item: model.followUpSettings)
                 }
                 
                 // MARK: Radio Settings
                 if !UIDevice.IsSimulator {
                     Section {
-                        SettingsLabelSection(selection: $model.selection, item: model.radioSettings)
+                        SettingsLabelSection(item: model.radioSettings)
                     }
                 }
                 
-                // MARK: Main
-                SettingsLabelSection(selection: $model.selection, item: UIDevice.IsSimulator ? model.simulatorMainSettings : model.mainSettings)
+                SettingsLabelSection(item: UIDevice.IsSimulator ? model.simulatorMainSettings : model.mainSettings)
+                SettingsLabelSection(item: UIDevice.IsSimulator ? model.attentionSimulatorSettings : model.attentionSettings)
+                SettingsLabelSection(item: UIDevice.IsSimulator ? model.simulatorSecuritySettings : model.securitySettings)
+                SettingsLabelSection(item: UIDevice.IsSimulator ? model.simulatorServicesSettings : model.serviceSettings)
+                SettingsLabelSection(item: model.appsSettings)
                 
-                // MARK: Attention
-                SettingsLabelSection(selection: $model.selection, item: UIDevice.IsSimulator ? model.attentionSimulatorSettings : model.attentionSettings)
-                
-                // MARK: Security
-                SettingsLabelSection(selection: $model.selection, item: UIDevice.IsSimulator ? model.simulatorSecuritySettings : model.securitySettings)
-                
-                // MARK: Services
-                SettingsLabelSection(selection: $model.selection, item: UIDevice.IsSimulator ? model.simulatorServicesSettings : model.serviceSettings)
-                
-                // MARK: Apps
-                SettingsLabelSection(selection: $model.selection, item: model.appsSettings)
-                
-                // MARK: Developer
                 if UIDevice.IsSimulator || configuration.developerMode {
-                    SettingsLabelSection(selection: $model.selection, item: model.developerSettings)
+                    SettingsLabelSection(item: model.developerSettings)
                 }
             }
             .navigationTitle(UIDevice.iPhone || model.isCompact ? .settings : "")
