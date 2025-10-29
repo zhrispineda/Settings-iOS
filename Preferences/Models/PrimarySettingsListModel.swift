@@ -10,7 +10,7 @@ import Network
 /// Global variables for access across views. (forceCellular, forcePhysical, developerMode)
 struct Configuration {
     let forceCellular = false
-    let forcePhysical = false
+    let forcePhysical = true
     let developerMode = true
 }
 
@@ -33,6 +33,51 @@ final class RouteRegistry {
     }
 }
 
+// MARK: - PrimarySettingsListModel data
+/// Stores the title of each enum variable for use in navigation.
+enum SettingsOptions: String, CaseIterable {
+    case accessibility = "Accessibility"
+    case actionButton = "Action Button"
+    case airplaneMode = "Airplane Mode"
+    case appleIntelligence = "Apple Intelligence & Siri"
+    case applePencil = "Apple Pencil"
+    case apps = "Apps"
+    case battery = "Battery"
+    case faceIDPasscode = "Face ID & Passcode"
+    case bluetooth = "Bluetooth"
+    case camera = "Camera"
+    case carrierSettings = "Carrier Settings"
+    case cellular = "Cellular"
+    case controlCenter = "Control Center"
+    case developer = "Developer"
+    case displayBrightness = "Display & Brightness"
+    case emergencySOS = "Emergency SOS"
+    case ethernet = "Ethernet"
+    case focus = "Focus"
+    case followUp = "FOLLOWUP_TITLE"
+    case gameCenter = "Game Center"
+    case general = "General"
+    case homeScreenAppLibrary = "Home Screen & App Library"
+    case icloud = "iCloud"
+    case internalSettings = "Internal Settings"
+    case multitaskGestures = "Multitasking & Gestures"
+    case notifications = "Notifications"
+    case personalHotspot = "Personal Hotspot"
+    case privacySecurity = "Privacy & Security"
+    case satellite = "Satellite"
+    case screenTime = "Screen Time"
+    case search = "Search"
+    case siri = "Siri"
+    case sounds = "Sounds"
+    case soundsHaptics = "Sounds & Haptics"
+    case standby = "StandBy"
+    case touchIDPasscode = "Touch ID & Passcode"
+    case vpn = "VPN"
+    case wallet = "Wallet"
+    case wallpaper = "Wallpaper"
+    case wifi = "Wi-Fi"
+}
+
 /// Common device capabilities that are checked based on the current device.
 enum Capabilities {
     case none
@@ -52,6 +97,7 @@ enum Capabilities {
     case appleIntelligence
     case isInternal
     case isPhysical
+    case developerMode
 }
 
 enum RowKind: Hashable {
@@ -115,14 +161,10 @@ struct SettingsItem: Identifiable, Hashable {
     
     let followUpSettings: [SettingsItem]
     let radioSettings: [SettingsItem]
-    let attentionSettings: [SettingsItem]
-    let attentionSimulatorSettings: [SettingsItem]
     let mainSettings: [SettingsItem]
-    let simulatorMainSettings: [SettingsItem]
+    let attentionSettings: [SettingsItem]
     let securitySettings: [SettingsItem]
-    let simulatorSecuritySettings: [SettingsItem]
     let serviceSettings: [SettingsItem]
-    let simulatorServicesSettings: [SettingsItem]
     let appsSettings: [SettingsItem]
     let developerSettings: [SettingsItem]
 
@@ -130,6 +172,7 @@ struct SettingsItem: Identifiable, Hashable {
         followUpSettings = [
             SettingsItem(
                 type: .followUp,
+                capabilities: [.isPhysical],
                 badgeCount: 1,
                 destination: AnyView(FollowUpView())
             )
@@ -192,52 +235,6 @@ struct SettingsItem: Identifiable, Hashable {
             )
         ]
         
-        attentionSettings = [
-            SettingsItem(
-                type: .notifications,
-                icon: "com.apple.graphic-icon.notifications",
-                destination: AnyView(NotificationsView())
-            ),
-            SettingsItem(
-                type: .sounds,
-                icon: "com.apple.graphic-icon.sound",
-                capabilities: [.sounds],
-                destination: AnyView(BundleControllerView(
-                        "/System/Library/PrivateFrameworks/Settings/SoundsAndHapticsSettings.framework/SoundsAndHapticsSettings",
-                        controller: "SHSSoundsPrefController",
-                        title: "Sounds"
-                    ))
-            ),
-            SettingsItem(
-                type: .soundsHaptics,
-                icon: "com.apple.graphic-icon.sound",
-                capabilities: [.soundsHaptics],
-                destination: AnyView(BundleControllerView(
-                        "/System/Library/PrivateFrameworks/Settings/SoundsAndHapticsSettings.framework/SoundsAndHapticsSettings",
-                        controller: "SHSSoundsPrefController",
-                        title: "Sounds & Haptics"
-                    ))
-            ),
-            SettingsItem(
-                type: .focus,
-                icon: "com.apple.graphic-icon.focus",
-                destination: AnyView(FocusView())
-            ),
-            SettingsItem(
-                type: .screenTime,
-                icon: "com.apple.graphic-icon.screen-time",
-                destination: AnyView(ScreenTimeView())
-            ),
-        ]
-        
-        attentionSimulatorSettings = [
-            SettingsItem(
-                type: .screenTime,
-                icon: "com.apple.graphic-icon.screen-time",
-                destination: AnyView(ScreenTimeView())
-            ),
-        ]
-        
         mainSettings = [
             SettingsItem(
                 type: .general,
@@ -278,6 +275,7 @@ struct SettingsItem: Identifiable, Hashable {
             SettingsItem(
                 type: .controlCenter,
                 icon: "com.apple.graphic-icon.control-center",
+                capabilities: [.isPhysical],
                 destination: AnyView(BundleControllerView(
                         "ControlCenterSettings",
                         controller: "ControlCenterSettingsViewController",
@@ -287,6 +285,7 @@ struct SettingsItem: Identifiable, Hashable {
             SettingsItem(
                 type: .displayBrightness,
                 icon: "com.apple.graphic-icon.display",
+                capabilities: [.isPhysical],
                 destination: AnyView(DisplayBrightnessView())
             ),
             SettingsItem(
@@ -324,6 +323,7 @@ struct SettingsItem: Identifiable, Hashable {
             SettingsItem(
                 type: .wallpaper,
                 icon: "com.apple.graphic-icon.wallpaper",
+                capabilities: [.isPhysical],
                 destination: AnyView(BundleControllerView(
                         "WallpaperSettings",
                         controller: "WallpaperSettingsRootViewController"
@@ -331,101 +331,69 @@ struct SettingsItem: Identifiable, Hashable {
             ),
         ]
         
-        simulatorMainSettings = [
+        attentionSettings = [
             SettingsItem(
-                type: .general,
-                icon: "com.apple.graphic-icon.gear",
-                destination: AnyView(GeneralView())
+                type: .notifications,
+                icon: "com.apple.graphic-icon.notifications",
+                capabilities: [.isPhysical],
+                destination: AnyView(NotificationsView())
             ),
             SettingsItem(
-                type: .accessibility,
-                icon: "com.apple.graphic-icon.accessibility",
-                destination: AnyView(AccessibilityView())
-            ),
-            SettingsItem(
-                type: .appleIntelligence,
-                icon: "com.apple.graphic-icon.intelligence",
-                destination: AnyView(
-                    SiriView()
-                )
-            ),
-            SettingsItem(
-                type: .actionButton,
-                icon: "com.apple.graphic-icon.iphone-action-button",
-                capabilities: [.actionButton],
+                type: .sounds,
+                icon: "com.apple.graphic-icon.sound",
+                capabilities: [.sounds, .isPhysical],
                 destination: AnyView(BundleControllerView(
-                        "ActionButtonSettings",
-                        controller: "ActionButtonSettings"
+                        "/System/Library/PrivateFrameworks/Settings/SoundsAndHapticsSettings.framework/SoundsAndHapticsSettings",
+                        controller: "SHSSoundsPrefController",
+                        title: "Sounds"
                     ))
             ),
             SettingsItem(
-                type: .camera,
-                icon: "com.apple.graphic-icon.camera",
-                destination: AnyView(CameraView())
-            ),
-            SettingsItem(
-                type: .homeScreenAppLibrary,
-                icon: UIDevice.iPhone ? "com.apple.graphic-icon.apps-on-iphone" : "com.apple.graphic-icon.apps-on-ipad",
-                destination: AnyView(HomeScreenAppLibraryView())
-            ),
-            SettingsItem(
-                type: .multitaskGestures,
-                icon: "com.apple.graphic-icon.stage-manager",
+                type: .soundsHaptics,
+                icon: "com.apple.graphic-icon.sound",
+                capabilities: [.soundsHaptics, .isPhysical],
                 destination: AnyView(BundleControllerView(
-                        "MultitaskingAndGesturesSettings",
-                        controller: "MultitaskingAndGesturesSettings",
-                        title: "Multitasking & Gestures"
+                        "/System/Library/PrivateFrameworks/Settings/SoundsAndHapticsSettings.framework/SoundsAndHapticsSettings",
+                        controller: "SHSSoundsPrefController",
+                        title: "Sounds & Haptics"
                     ))
             ),
             SettingsItem(
-                type: .search,
-                icon: "com.apple.graphic-icon.search",
-                destination: AnyView(SearchView())
+                type: .focus,
+                icon: "com.apple.graphic-icon.focus",
+                capabilities: [.isPhysical],
+                destination: AnyView(FocusView())
             ),
             SettingsItem(
-                type: .siri,
-                icon: "com.apple.graphic-icon.intelligence",
-                capabilities: [.siri],
-                destination: AnyView(SiriView())
+                type: .screenTime,
+                icon: "com.apple.graphic-icon.screen-time",
+                destination: AnyView(ScreenTimeView())
             ),
-            SettingsItem(
-                type: .standby,
-                icon: "com.apple.graphic-icon.standby",
-                destination: AnyView(StandByView())
-            )
         ]
         
         securitySettings = [
             SettingsItem(
                 type: .faceIDPasscode,
                 icon: "com.apple.graphic-icon.face-id",
-                capabilities: [.faceID],
+                capabilities: [.faceID, .isPhysical],
                 destination: AnyView(BiometricPasscodeView())
             ),
             SettingsItem(
                 type: .touchIDPasscode,
                 icon: "com.apple.graphic-icon.touch-id",
-                capabilities: [.touchID],
+                capabilities: [.touchID, .isPhysical],
                 destination: AnyView(BiometricPasscodeView())
             ),
             SettingsItem(
                 type: .emergencySOS,
                 icon: "com.apple.graphic-icon.emergency-sos",
-                capabilities: [.phone],
+                capabilities: [.phone, .isPhysical],
                 destination: AnyView(BundleControllerView(
                         "SOSSettings",
                         controller: "SOSSettingsController",
                         title: "Emergency SOS"
                     ))
             ),
-            SettingsItem(
-                type: .privacySecurity,
-                icon: "com.apple.graphic-icon.privacy",
-                destination: AnyView(PrivacySecurityView())
-            )
-        ]
-        
-        simulatorSecuritySettings = [
             SettingsItem(
                 type: .privacySecurity,
                 icon: "com.apple.graphic-icon.privacy",
@@ -451,24 +419,8 @@ struct SettingsItem: Identifiable, Hashable {
             SettingsItem(
                 type: .wallet,
                 icon: "com.apple.Passbook",
+                capabilities: [.isPhysical],
                 destination: AnyView(WalletView())
-            )
-        ]
-        
-        simulatorServicesSettings = [
-            SettingsItem(
-                type: .gameCenter,
-                icon: "com.apple.gamecenter.bubbles",
-                destination: AnyView(BundleControllerView(
-                        "/System/Library/PrivateFrameworks/GameCenterUI.framework/GameCenterUI",
-                        controller: "GameCenterUI.SettingsContainerViewController",
-                        title: "Game Center"
-                    ))
-            ),
-            SettingsItem(
-                type: .icloud,
-                icon: "com.apple.application-icon.icloud",
-                destination: AnyView(EmptyView())
             )
         ]
         
@@ -511,49 +463,4 @@ struct SettingsItem: Identifiable, Hashable {
         }
         monitor.start(queue: queue)
     }
-}
-
-// MARK: - PrimarySettingsListModel data
-/// Stores the title of each enum variable for use in navigation.
-enum SettingsOptions: String, CaseIterable {
-    case accessibility = "Accessibility"
-    case actionButton = "Action Button"
-    case airplaneMode = "Airplane Mode"
-    case appleIntelligence = "Apple Intelligence & Siri"
-    case applePencil = "Apple Pencil"
-    case apps = "Apps"
-    case battery = "Battery"
-    case faceIDPasscode = "Face ID & Passcode"
-    case bluetooth = "Bluetooth"
-    case camera = "Camera"
-    case carrierSettings = "Carrier Settings"
-    case cellular = "Cellular"
-    case controlCenter = "Control Center"
-    case developer = "Developer"
-    case displayBrightness = "Display & Brightness"
-    case emergencySOS = "Emergency SOS"
-    case ethernet = "Ethernet"
-    case focus = "Focus"
-    case followUp = "FOLLOWUP_TITLE"
-    case gameCenter = "Game Center"
-    case general = "General"
-    case homeScreenAppLibrary = "Home Screen & App Library"
-    case icloud = "iCloud"
-    case internalSettings = "Internal Settings"
-    case multitaskGestures = "Multitasking & Gestures"
-    case notifications = "Notifications"
-    case personalHotspot = "Personal Hotspot"
-    case privacySecurity = "Privacy & Security"
-    case satellite = "Satellite"
-    case screenTime = "Screen Time"
-    case search = "Search"
-    case siri = "Siri"
-    case sounds = "Sounds"
-    case soundsHaptics = "Sounds & Haptics"
-    case standby = "StandBy"
-    case touchIDPasscode = "Touch ID & Passcode"
-    case vpn = "VPN"
-    case wallet = "Wallet"
-    case wallpaper = "Wallpaper"
-    case wifi = "Wi-Fi"
 }

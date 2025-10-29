@@ -131,11 +131,11 @@ struct SettingsLabelSection: View {
         if capabilities.isEmpty { return true }
         
         return capabilities.allSatisfy { requiredCapability in
-            deviceHasCapability(requiredCapability)
+            hasCapability(requiredCapability)
         }
     }
 
-    private func deviceHasCapability(_ capability: Capabilities) -> Bool {
+    private func hasCapability(_ capability: Capabilities) -> Bool {
         switch capability {
         case .none:
             return true
@@ -158,19 +158,21 @@ struct SettingsLabelSection: View {
         case .satellite:
             return false
         case .siri:
-            return true
+            return !UIDevice.IntelligenceCapability
         case .sounds:
-            return UIDevice.iPhone || UIDevice.iPad
+            return UIDevice.iPad
         case .soundsHaptics:
             return UIDevice.iPhone
         case .touchID:
             return !UIDevice.PearlIDCapability
         case .appleIntelligence:
-            return true
+            return UIDevice.IntelligenceCapability
         case .isInternal:
             return false
         case .isPhysical:
-            return !UIDevice.IsSimulator
+            return !UIDevice.IsSimulator || configuration.forcePhysical
+        case .developerMode:
+            return UIDevice.IsSimulator || configuration.developerMode
         }
     }
 }

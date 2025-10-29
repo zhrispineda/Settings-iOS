@@ -38,20 +38,17 @@ struct ContentView: View {
                     }
                 }
                 
-                if !UIDevice.IsSimulator && !followUpDismissed {
+                if !followUpDismissed {
                     SettingsLabelSection(item: model.followUpSettings)
                 }
                 
                 SettingsLabelSection(item: model.radioSettings)
-                SettingsLabelSection(item: UIDevice.IsSimulator ? model.simulatorMainSettings : model.mainSettings)
-                SettingsLabelSection(item: UIDevice.IsSimulator ? model.attentionSimulatorSettings : model.attentionSettings)
-                SettingsLabelSection(item: UIDevice.IsSimulator ? model.simulatorSecuritySettings : model.securitySettings)
-                SettingsLabelSection(item: UIDevice.IsSimulator ? model.simulatorServicesSettings : model.serviceSettings)
+                SettingsLabelSection(item: model.mainSettings)
+                SettingsLabelSection(item: model.attentionSettings)
+                SettingsLabelSection(item: model.securitySettings)
+                SettingsLabelSection(item: model.serviceSettings)
                 SettingsLabelSection(item: model.appsSettings)
-                
-                if UIDevice.IsSimulator || configuration.developerMode {
-                    SettingsLabelSection(item: model.developerSettings)
-                }
+                SettingsLabelSection(item: model.developerSettings)
             }
             .navigationTitle(UIDevice.iPhone || model.isCompact ? .settings : "")
             .toolbar(removing: .sidebarToggle)
@@ -120,47 +117,6 @@ struct ContentView: View {
                 model.selection = model.mainSettings.first
             }
         }
-    }
-}
-
-// MARK: - Required Capabilities Check
-@MainActor
-func requiredCapabilities(capability: Capabilities) -> Bool {
-    switch capability {
-    case .actionButton:
-        return UIDevice.RingerButtonCapability
-    case .appleIntelligence:
-        return UIDevice.IntelligenceCapability
-    case .cellular:
-        return UIDevice.CellularTelephonyCapability
-    case .ethernet:
-        return false
-    case .faceID:
-        return UIDevice.PearlIDCapability
-    case .isInternal:
-        return false
-    case .none:
-        return true
-    case .siri:
-        return !UIDevice.IntelligenceCapability
-    case .sounds:
-        return UIDevice.iPad
-    case .soundsHaptics:
-        return UIDevice.iPhone
-    case .touchID:
-        return !UIDevice.PearlIDCapability
-    case .vpn:
-        return false
-    case .hotspot:
-        return false
-    case .satellite:
-        return false
-    case .phone:
-        return UIDevice.iPhone
-    case .tablet:
-        return UIDevice.iPad
-    case .isPhysical:
-        return configuration.forcePhysical || !UIDevice.IsSimulator
     }
 }
 
