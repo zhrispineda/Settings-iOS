@@ -44,7 +44,7 @@ struct SettingsLabelSection: View {
                                 .interactiveDismissDisabled()
                         }
                     }
-                } else if requiredCapabilities(capability: setting.capability) {
+                } else if requiredCapabilities(capabilities: setting.capabilities) {
                     switch setting.kind {
                     case .link:
                         if UIDevice.iPhone || model.isCompact {
@@ -125,6 +125,53 @@ struct SettingsLabelSection: View {
             get: { UserDefaults.standard.bool(forKey: key) },
             set: { UserDefaults.standard.set($0, forKey: key) }
         )
+    }
+    
+    private func requiredCapabilities(capabilities: [Capabilities]) -> Bool {
+        if capabilities.isEmpty { return true }
+        
+        return capabilities.allSatisfy { requiredCapability in
+            deviceHasCapability(requiredCapability)
+        }
+    }
+
+    private func deviceHasCapability(_ capability: Capabilities) -> Bool {
+        switch capability {
+        case .none:
+            return true
+        case .actionButton:
+            return UIDevice.ActionModeCapability
+        case .cellular:
+            return UIDevice.CellularTelephonyCapability || configuration.forceCellular
+        case .ethernet:
+            return false
+        case .faceID:
+            return UIDevice.PearlIDCapability
+        case .hotspot:
+            return UIDevice.CellularTelephonyCapability || configuration.forceCellular
+        case .vpn:
+            return false
+        case .phone:
+            return UIDevice.iPhone
+        case .tablet:
+            return UIDevice.iPad
+        case .satellite:
+            return false
+        case .siri:
+            return true
+        case .sounds:
+            return UIDevice.iPhone || UIDevice.iPad
+        case .soundsHaptics:
+            return UIDevice.iPhone
+        case .touchID:
+            return !UIDevice.PearlIDCapability
+        case .appleIntelligence:
+            return true
+        case .isInternal:
+            return false
+        case .isPhysical:
+            return !UIDevice.IsSimulator
+        }
     }
 }
 

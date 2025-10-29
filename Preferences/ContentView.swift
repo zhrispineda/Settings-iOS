@@ -42,13 +42,7 @@ struct ContentView: View {
                     SettingsLabelSection(item: model.followUpSettings)
                 }
                 
-                // MARK: Radio Settings
-                if !UIDevice.IsSimulator {
-                    Section {
-                        SettingsLabelSection(item: model.radioSettings)
-                    }
-                }
-                
+                SettingsLabelSection(item: model.radioSettings)
                 SettingsLabelSection(item: UIDevice.IsSimulator ? model.simulatorMainSettings : model.mainSettings)
                 SettingsLabelSection(item: UIDevice.IsSimulator ? model.attentionSimulatorSettings : model.attentionSettings)
                 SettingsLabelSection(item: UIDevice.IsSimulator ? model.simulatorSecuritySettings : model.securitySettings)
@@ -165,6 +159,8 @@ func requiredCapabilities(capability: Capabilities) -> Bool {
         return UIDevice.iPhone
     case .tablet:
         return UIDevice.iPad
+    case .isPhysical:
+        return configuration.forcePhysical || !UIDevice.IsSimulator
     }
 }
 

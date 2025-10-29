@@ -10,7 +10,7 @@ import Network
 /// Global variables for access across views. (forceCellular, forcePhysical, developerMode)
 struct Configuration {
     let forceCellular = false
-    let forcePhysical = true
+    let forcePhysical = false
     let developerMode = true
 }
 
@@ -30,6 +30,73 @@ final class RouteRegistry {
     
     func view(for path: String) -> AnyView? {
         registry[path]?()
+    }
+}
+
+/// Common device capabilities that are checked based on the current device.
+enum Capabilities {
+    case none
+    case actionButton
+    case cellular
+    case ethernet
+    case faceID
+    case hotspot
+    case vpn
+    case phone
+    case tablet
+    case satellite
+    case siri
+    case sounds
+    case soundsHaptics
+    case touchID
+    case appleIntelligence
+    case isInternal
+    case isPhysical
+}
+
+enum RowKind: Hashable {
+    case link
+    case toggle(key: String)
+}
+
+/// A struct for defining custom navigation links for use with sections of the app.
+struct SettingsItem: Identifiable, Hashable {
+    var id: SettingsOptions { type }
+    let type: SettingsOptions
+    var title: String { type.rawValue }
+    let icon: String
+    var capabilities: [Capabilities]
+    var color: Color
+    var badgeCount: Int
+    let destination: AnyView
+    var kind: RowKind = .link
+    
+    init(
+        type: SettingsOptions,
+        icon: String = "",
+        capabilities: [Capabilities] = [],
+        color: Color = .white,
+        badgeCount: Int = 0,
+        destination: AnyView = AnyView(
+            EmptyView()
+        ),
+        kind: RowKind = .link
+    ) {
+        self.type = type
+        self.icon = icon
+        self.capabilities = capabilities
+        self.color = color
+        self.badgeCount = badgeCount
+        self.destination = destination
+        self.kind = kind
+    }
+    
+    static func == (lhs: SettingsItem, rhs: SettingsItem) -> Bool {
+        lhs.id == rhs.id
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
     }
 }
 
@@ -72,51 +139,55 @@ final class RouteRegistry {
             SettingsItem(
                 type: .airplaneMode,
                 icon: "com.apple.graphic-icon.airplane-mode",
+                capabilities: [.isPhysical],
                 kind: .toggle(key: "AirplaneMode")
             ),
             SettingsItem(
                 type: .wifi,
                 icon: "com.apple.graphic-icon.wifi",
+                capabilities: [.isPhysical],
                 destination: AnyView(NetworkView())
             ),
             SettingsItem(
                 type: .ethernet,
                 icon: "com.apple.graphic-icon.ethernet",
-                capability: .ethernet,
+                capabilities: [.ethernet],
                 destination: AnyView(EmptyView())
             ),
             SettingsItem(
                 type: .bluetooth,
                 icon: "com.apple.graphic-icon.bluetooth",
+                capabilities: [.isPhysical],
                 destination: AnyView(BluetoothView())
             ),
             SettingsItem(
                 type: .cellular,
                 icon: "com.apple.graphic-icon.cellular-settings",
-                capability: .cellular,
+                capabilities: [.cellular, .isPhysical],
                 destination: AnyView(CellularView())
             ),
             SettingsItem(
                 type: .personalHotspot,
                 icon: "com.apple.graphic-icon.personal-hotspot",
-                capability: .hotspot,
+                capabilities: [.hotspot, .isPhysical],
                 destination: AnyView(HotspotView())
             ),
             SettingsItem(
                 type: .battery,
                 icon: "com.apple.graphic-icon.battery",
+                capabilities: [.isPhysical],
                 destination: AnyView(BatteryView())
             ),
             SettingsItem(
                 type: .satellite,
                 icon: "com.apple.graphic-icon.satellite",
-                capability: .satellite,
+                capabilities: [.satellite],
                 destination: AnyView(EmptyView())
             ),
             SettingsItem(
                 type: .vpn,
                 icon: "com.apple.graphic-icon.vpn",
-                capability: .vpn,
+                capabilities: [.vpn],
                 kind: .toggle(key: "VPN")
             )
         ]
@@ -130,7 +201,7 @@ final class RouteRegistry {
             SettingsItem(
                 type: .sounds,
                 icon: "com.apple.graphic-icon.sound",
-                capability: .sounds,
+                capabilities: [.sounds],
                 destination: AnyView(BundleControllerView(
                         "/System/Library/PrivateFrameworks/Settings/SoundsAndHapticsSettings.framework/SoundsAndHapticsSettings",
                         controller: "SHSSoundsPrefController",
@@ -140,7 +211,7 @@ final class RouteRegistry {
             SettingsItem(
                 type: .soundsHaptics,
                 icon: "com.apple.graphic-icon.sound",
-                capability: .soundsHaptics,
+                capabilities: [.soundsHaptics],
                 destination: AnyView(BundleControllerView(
                         "/System/Library/PrivateFrameworks/Settings/SoundsAndHapticsSettings.framework/SoundsAndHapticsSettings",
                         controller: "SHSSoundsPrefController",
@@ -181,7 +252,7 @@ final class RouteRegistry {
             SettingsItem(
                 type: .actionButton,
                 icon: "com.apple.graphic-icon.iphone-action-button",
-                capability: .actionButton,
+                capabilities: [.actionButton],
                 destination: AnyView(BundleControllerView(
                         "ActionButtonSettings",
                         controller: "ActionButtonSettings"
@@ -190,13 +261,13 @@ final class RouteRegistry {
             SettingsItem(
                 type: .applePencil,
                 icon: "com.apple.graphic-icon.pencil",
-                capability: .tablet,
+                capabilities: [.tablet],
                 destination: AnyView(ApplePencilView())
             ),
             SettingsItem(
                 type: .appleIntelligence,
                 icon: "com.apple.graphic-icon.intelligence",
-                capability: .appleIntelligence,
+                capabilities: [.appleIntelligence],
                 destination: AnyView(SiriView())
             ),
             SettingsItem(
@@ -226,7 +297,7 @@ final class RouteRegistry {
             SettingsItem(
                 type: .multitaskGestures,
                 icon: "com.apple.graphic-icon.stage-manager",
-                capability: .tablet,
+                capabilities: [.tablet],
                 destination: AnyView(BundleControllerView(
                         "MultitaskingAndGesturesSettings",
                         controller: "MultitaskingAndGesturesSettings",
@@ -241,13 +312,13 @@ final class RouteRegistry {
             SettingsItem(
                 type: .siri,
                 icon: "com.apple.application-icon.siri",
-                capability: .siri,
+                capabilities: [.siri],
                 destination: AnyView(SiriView())
             ),
             SettingsItem(
                 type: .standby,
                 icon: "com.apple.graphic-icon.standby",
-                capability: .phone,
+                capabilities: [.phone],
                 destination: AnyView(StandByView())
             ),
             SettingsItem(
@@ -281,7 +352,7 @@ final class RouteRegistry {
             SettingsItem(
                 type: .actionButton,
                 icon: "com.apple.graphic-icon.iphone-action-button",
-                capability: .actionButton,
+                capabilities: [.actionButton],
                 destination: AnyView(BundleControllerView(
                         "ActionButtonSettings",
                         controller: "ActionButtonSettings"
@@ -314,7 +385,7 @@ final class RouteRegistry {
             SettingsItem(
                 type: .siri,
                 icon: "com.apple.graphic-icon.intelligence",
-                capability: .siri,
+                capabilities: [.siri],
                 destination: AnyView(SiriView())
             ),
             SettingsItem(
@@ -328,19 +399,19 @@ final class RouteRegistry {
             SettingsItem(
                 type: .faceIDPasscode,
                 icon: "com.apple.graphic-icon.face-id",
-                capability: .faceID,
+                capabilities: [.faceID],
                 destination: AnyView(BiometricPasscodeView())
             ),
             SettingsItem(
                 type: .touchIDPasscode,
                 icon: "com.apple.graphic-icon.touch-id",
-                capability: .touchID,
+                capabilities: [.touchID],
                 destination: AnyView(BiometricPasscodeView())
             ),
             SettingsItem(
                 type: .emergencySOS,
                 icon: "com.apple.graphic-icon.emergency-sos",
-                capability: .phone,
+                capabilities: [.phone],
                 destination: AnyView(BundleControllerView(
                         "SOSSettings",
                         controller: "SOSSettingsController",
@@ -422,13 +493,13 @@ final class RouteRegistry {
             SettingsItem(
                 type: .carrierSettings,
                 icon: "com.apple.graphic-icon.carrier-settings",
-                capability: .isInternal,
+                capabilities: [.isInternal],
                 destination: AnyView(CarrierSettingsView())
             ),
             SettingsItem(
                 type: .internalSettings,
                 icon: "com.apple.graphic-icon.internal-settings",
-                capability: .isInternal,
+                capabilities: [.isInternal],
                 destination: AnyView(InternalSettingsView())
             )
         ]
@@ -486,70 +557,3 @@ enum SettingsOptions: String, CaseIterable {
     case wallpaper = "Wallpaper"
     case wifi = "Wi-Fi"
 }
-
-/// Common device capabilities that are checked based on the current device.
-enum Capabilities {
-    case none
-    case actionButton
-    case cellular
-    case ethernet
-    case faceID
-    case hotspot
-    case vpn
-    case phone
-    case tablet
-    case satellite
-    case siri
-    case sounds
-    case soundsHaptics
-    case touchID
-    case appleIntelligence
-    case isInternal
-}
-
-enum RowKind: Hashable {
-    case link
-    case toggle(key: String)
-}
-
-/// A struct for defining custom navigation links for use with sections of the app.
-struct SettingsItem: Identifiable, Hashable {
-    var id: SettingsOptions { type }
-    let type: SettingsOptions
-    var title: String { type.rawValue }
-    let icon: String
-    var capability: Capabilities
-    var color: Color
-    var badgeCount: Int
-    let destination: AnyView
-    var kind: RowKind = .link
-    
-    init(
-        type: SettingsOptions,
-        icon: String = "",
-        capability: Capabilities = .none,
-        color: Color = .white,
-        badgeCount: Int = 0,
-        destination: AnyView = AnyView(
-            EmptyView()
-        ),
-        kind: RowKind = .link
-    ) {
-        self.type = type
-        self.icon = icon
-        self.capability = capability
-        self.color = color
-        self.badgeCount = badgeCount
-        self.destination = destination
-        self.kind = kind
-    }
-    
-    static func == (lhs: SettingsItem, rhs: SettingsItem) -> Bool {
-        lhs.id == rhs.id
-    }
-    
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(id)
-    }
-}
-
