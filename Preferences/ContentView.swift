@@ -39,16 +39,16 @@ struct ContentView: View {
                 }
                 
                 if !followUpDismissed {
-                    SettingsLabelSection(item: model.followUpSettings)
+                    SettingsGroup(model.followUpSettings)
                 }
                 
-                SettingsLabelSection(item: model.radioSettings)
-                SettingsLabelSection(item: model.mainSettings)
-                SettingsLabelSection(item: model.attentionSettings)
-                SettingsLabelSection(item: model.securitySettings)
-                SettingsLabelSection(item: model.serviceSettings)
-                SettingsLabelSection(item: model.appsSettings)
-                SettingsLabelSection(item: model.developerSettings)
+                SettingsGroup(model.radioSettings)
+                SettingsGroup(model.mainSettings)
+                SettingsGroup(model.attentionSettings)
+                SettingsGroup(model.securitySettings)
+                SettingsGroup(model.serviceSettings)
+                SettingsGroup(model.appsSettings)
+                SettingsGroup(model.developerSettings)
             }
             .navigationTitle(UIDevice.iPhone || model.isCompact ? .settings : "")
             .toolbar(removing: .sidebarToggle)

@@ -1,5 +1,5 @@
 //
-//  SettingsLabelSection.swift
+//  SettingsGroup.swift
 //  Preferences
 //
 //  Settings
@@ -8,18 +8,22 @@
 import SwiftUI
 
 /// Settings Sidebar Template
-struct SettingsLabelSection: View {
+struct SettingsGroup: View {
     @AppStorage("AirplaneMode") private var airplaneModeEnabled = false
     @AppStorage("WiFi") private var wifiEnabled = true
     @AppStorage("Bluetooth") private var bluetoothEnabled = true
     @Environment(PrimarySettingsListModel.self) private var model
     @State private var showingSignInError = false
     @State private var showingSignInSheet = false
-    let item: [SettingsItem]
+    let group: [SettingsItem]
+    
+    init(_ item: [SettingsItem]) {
+        self.group = item
+    }
     
     var body: some View {
         Section {
-            ForEach(item) { setting in
+            ForEach(group) { setting in
                 if setting.type == .icloud {
                     Button {
                         if model.isConnected {
