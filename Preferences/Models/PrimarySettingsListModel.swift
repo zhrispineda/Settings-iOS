@@ -62,20 +62,9 @@ final class RouteRegistry {
     init() {
         followUpSettings = [
             SettingsItem(
-                type: .followUpPhone,
-                capability: .phone,
+                type: .followUp,
                 badgeCount: 1,
-                destination: AnyView(
-                    FollowUpView()
-                )
-            ),
-            SettingsItem(
-                type: .followUpPad,
-                capability: .tablet,
-                badgeCount: 1,
-                destination: AnyView(
-                    FollowUpView()
-                )
+                destination: AnyView(FollowUpView())
             )
         ]
         
@@ -88,55 +77,41 @@ final class RouteRegistry {
             SettingsItem(
                 type: .wifi,
                 icon: "com.apple.graphic-icon.wifi",
-                destination: AnyView(
-                    NetworkView()
-                )
+                destination: AnyView(NetworkView())
             ),
             SettingsItem(
                 type: .ethernet,
                 icon: "com.apple.graphic-icon.ethernet",
                 capability: .ethernet,
-                destination: AnyView(
-                    EmptyView()
-                )
+                destination: AnyView(EmptyView())
             ),
             SettingsItem(
                 type: .bluetooth,
                 icon: "com.apple.graphic-icon.bluetooth",
-                destination: AnyView(
-                    BluetoothView()
-                )
+                destination: AnyView(BluetoothView())
             ),
             SettingsItem(
                 type: .cellular,
                 icon: "com.apple.graphic-icon.cellular-settings",
                 capability: .cellular,
-                destination: AnyView(
-                    CellularView()
-                )
+                destination: AnyView(CellularView())
             ),
             SettingsItem(
                 type: .personalHotspot,
                 icon: "com.apple.graphic-icon.personal-hotspot",
                 capability: .hotspot,
-                destination: AnyView(
-                    HotspotView()
-                )
+                destination: AnyView(HotspotView())
             ),
             SettingsItem(
                 type: .battery,
                 icon: "com.apple.graphic-icon.battery",
-                destination: AnyView(
-                    BatteryView()
-                )
+                destination: AnyView(BatteryView())
             ),
             SettingsItem(
                 type: .satellite,
                 icon: "com.apple.graphic-icon.satellite",
                 capability: .satellite,
-                destination: AnyView(
-                    EmptyView()
-                )
+                destination: AnyView(EmptyView())
             ),
             SettingsItem(
                 type: .vpn,
@@ -150,47 +125,37 @@ final class RouteRegistry {
             SettingsItem(
                 type: .notifications,
                 icon: "com.apple.graphic-icon.notifications",
-                destination: AnyView(
-                    NotificationsView()
-                )
+                destination: AnyView(NotificationsView())
             ),
             SettingsItem(
                 type: .sounds,
                 icon: "com.apple.graphic-icon.sound",
                 capability: .sounds,
-                destination: AnyView(
-                    BundleControllerView(
+                destination: AnyView(BundleControllerView(
                         "/System/Library/PrivateFrameworks/Settings/SoundsAndHapticsSettings.framework/SoundsAndHapticsSettings",
                         controller: "SHSSoundsPrefController",
                         title: "Sounds"
-                    )
-                )
+                    ))
             ),
             SettingsItem(
                 type: .soundsHaptics,
                 icon: "com.apple.graphic-icon.sound",
                 capability: .soundsHaptics,
-                destination: AnyView(
-                    BundleControllerView(
+                destination: AnyView(BundleControllerView(
                         "/System/Library/PrivateFrameworks/Settings/SoundsAndHapticsSettings.framework/SoundsAndHapticsSettings",
                         controller: "SHSSoundsPrefController",
                         title: "Sounds & Haptics"
-                    )
-                )
+                    ))
             ),
             SettingsItem(
                 type: .focus,
                 icon: "com.apple.graphic-icon.focus",
-                destination: AnyView(
-                    FocusView()
-                )
+                destination: AnyView(FocusView())
             ),
             SettingsItem(
                 type: .screenTime,
                 icon: "com.apple.graphic-icon.screen-time",
-                destination: AnyView(
-                    ScreenTimeView()
-                )
+                destination: AnyView(ScreenTimeView())
             ),
         ]
         
@@ -198,9 +163,7 @@ final class RouteRegistry {
             SettingsItem(
                 type: .screenTime,
                 icon: "com.apple.graphic-icon.screen-time",
-                destination: AnyView(
-                    ScreenTimeView()
-                )
+                destination: AnyView(ScreenTimeView())
             ),
         ]
         
@@ -208,120 +171,92 @@ final class RouteRegistry {
             SettingsItem(
                 type: .general,
                 icon: "com.apple.graphic-icon.gear",
-                destination: AnyView(
-                    GeneralView()
-                )
+                destination: AnyView(GeneralView())
             ),
             SettingsItem(
                 type: .accessibility,
                 icon: "com.apple.graphic-icon.accessibility",
-                destination: AnyView(
-                    AccessibilityView()
-                )
+                destination: AnyView(AccessibilityView())
             ),
             SettingsItem(
                 type: .actionButton,
                 icon: "com.apple.graphic-icon.iphone-action-button",
                 capability: .actionButton,
-                destination: AnyView(
-                    BundleControllerView(
+                destination: AnyView(BundleControllerView(
                         "ActionButtonSettings",
                         controller: "ActionButtonSettings"
-                    )
-                )
+                    ))
             ),
             SettingsItem(
                 type: .applePencil,
                 icon: "com.apple.graphic-icon.pencil",
                 capability: .tablet,
-                destination: AnyView(
-                    ApplePencilView()
-                )
+                destination: AnyView(ApplePencilView())
             ),
             SettingsItem(
                 type: .appleIntelligence,
                 icon: "com.apple.graphic-icon.intelligence",
                 capability: .appleIntelligence,
-                destination: AnyView(
-                    SiriView()
-                )
+                destination: AnyView(SiriView())
             ),
             SettingsItem(
                 type: .camera,
                 icon: "com.apple.graphic-icon.camera",
-                destination: AnyView(
-                    CameraView()
-                )
+                destination: AnyView(CameraView())
             ),
             SettingsItem(
                 type: .controlCenter,
                 icon: "com.apple.graphic-icon.control-center",
-                destination: AnyView(
-                    BundleControllerView(
+                destination: AnyView(BundleControllerView(
                         "ControlCenterSettings",
                         controller: "ControlCenterSettingsViewController",
                         title: "Control Center"
-                    )
-                )
+                    ))
             ),
             SettingsItem(
                 type: .displayBrightness,
                 icon: "com.apple.graphic-icon.display",
-                destination: AnyView(
-                    DisplayBrightnessView()
-                )
+                destination: AnyView(DisplayBrightnessView())
             ),
             SettingsItem(
                 type: .homeScreenAppLibrary,
                 icon: UIDevice.iPhone ? "com.apple.graphic-icon.apps-on-iphone" : "com.apple.graphic-icon.apps-on-ipad",
-                destination: AnyView(
-                    HomeScreenAppLibraryView()
-                )
+                destination: AnyView(HomeScreenAppLibraryView())
             ),
             SettingsItem(
                 type: .multitaskGestures,
                 icon: "com.apple.graphic-icon.stage-manager",
                 capability: .tablet,
-                destination: AnyView(
-                    BundleControllerView(
+                destination: AnyView(BundleControllerView(
                         "MultitaskingAndGesturesSettings",
                         controller: "MultitaskingAndGesturesSettings",
                         title: "Multitasking & Gestures"
-                    )
-                )
+                    ))
             ),
             SettingsItem(
                 type: .search,
                 icon: "com.apple.graphic-icon.search",
-                destination: AnyView(
-                    SearchView()
-                )
+                destination: AnyView(SearchView())
             ),
             SettingsItem(
                 type: .siri,
                 icon: "com.apple.application-icon.siri",
                 capability: .siri,
-                destination: AnyView(
-                    SiriView()
-                )
+                destination: AnyView(SiriView())
             ),
             SettingsItem(
                 type: .standby,
                 icon: "com.apple.graphic-icon.standby",
                 capability: .phone,
-                destination: AnyView(
-                    StandByView()
-                )
+                destination: AnyView(StandByView())
             ),
             SettingsItem(
                 type: .wallpaper,
                 icon: "com.apple.graphic-icon.wallpaper",
-                destination: AnyView(
-                    BundleControllerView(
+                destination: AnyView(BundleControllerView(
                         "WallpaperSettings",
                         controller: "WallpaperSettingsRootViewController"
-                    )
-                )
+                    ))
             ),
         ]
         
@@ -329,16 +264,12 @@ final class RouteRegistry {
             SettingsItem(
                 type: .general,
                 icon: "com.apple.graphic-icon.gear",
-                destination: AnyView(
-                    GeneralView()
-                )
+                destination: AnyView(GeneralView())
             ),
             SettingsItem(
                 type: .accessibility,
                 icon: "com.apple.graphic-icon.accessibility",
-                destination: AnyView(
-                    AccessibilityView()
-                )
+                destination: AnyView(AccessibilityView())
             ),
             SettingsItem(
                 type: .appleIntelligence,
@@ -351,59 +282,45 @@ final class RouteRegistry {
                 type: .actionButton,
                 icon: "com.apple.graphic-icon.iphone-action-button",
                 capability: .actionButton,
-                destination: AnyView(
-                    BundleControllerView(
+                destination: AnyView(BundleControllerView(
                         "ActionButtonSettings",
                         controller: "ActionButtonSettings"
-                    )
-                )
+                    ))
             ),
             SettingsItem(
                 type: .camera,
                 icon: "com.apple.graphic-icon.camera",
-                destination: AnyView(
-                    CameraView()
-                )
+                destination: AnyView(CameraView())
             ),
             SettingsItem(
                 type: .homeScreenAppLibrary,
                 icon: UIDevice.iPhone ? "com.apple.graphic-icon.apps-on-iphone" : "com.apple.graphic-icon.apps-on-ipad",
-                destination: AnyView(
-                    HomeScreenAppLibraryView()
-                )
+                destination: AnyView(HomeScreenAppLibraryView())
             ),
             SettingsItem(
                 type: .multitaskGestures,
                 icon: "com.apple.graphic-icon.stage-manager",
-                destination: AnyView(
-                    BundleControllerView(
+                destination: AnyView(BundleControllerView(
                         "MultitaskingAndGesturesSettings",
                         controller: "MultitaskingAndGesturesSettings",
                         title: "Multitasking & Gestures"
-                    )
-                )
+                    ))
             ),
             SettingsItem(
                 type: .search,
                 icon: "com.apple.graphic-icon.search",
-                destination: AnyView(
-                    SearchView()
-                )
+                destination: AnyView(SearchView())
             ),
             SettingsItem(
                 type: .siri,
                 icon: "com.apple.graphic-icon.intelligence",
                 capability: .siri,
-                destination: AnyView(
-                    SiriView()
-                )
+                destination: AnyView(SiriView())
             ),
             SettingsItem(
                 type: .standby,
                 icon: "com.apple.graphic-icon.standby",
-                destination: AnyView(
-                    StandByView()
-                )
+                destination: AnyView(StandByView())
             )
         ]
         
@@ -412,36 +329,28 @@ final class RouteRegistry {
                 type: .faceIDPasscode,
                 icon: "com.apple.graphic-icon.face-id",
                 capability: .faceID,
-                destination: AnyView(
-                    BiometricPasscodeView()
-                )
+                destination: AnyView(BiometricPasscodeView())
             ),
             SettingsItem(
                 type: .touchIDPasscode,
                 icon: "com.apple.graphic-icon.touch-id",
                 capability: .touchID,
-                destination: AnyView(
-                    BiometricPasscodeView()
-                )
+                destination: AnyView(BiometricPasscodeView())
             ),
             SettingsItem(
                 type: .emergencySOS,
                 icon: "com.apple.graphic-icon.emergency-sos",
                 capability: .phone,
-                destination: AnyView(
-                    BundleControllerView(
+                destination: AnyView(BundleControllerView(
                         "SOSSettings",
                         controller: "SOSSettingsController",
                         title: "Emergency SOS"
-                    )
-                )
+                    ))
             ),
             SettingsItem(
                 type: .privacySecurity,
                 icon: "com.apple.graphic-icon.privacy",
-                destination: AnyView(
-                    PrivacySecurityView()
-                )
+                destination: AnyView(PrivacySecurityView())
             )
         ]
         
@@ -449,9 +358,7 @@ final class RouteRegistry {
             SettingsItem(
                 type: .privacySecurity,
                 icon: "com.apple.graphic-icon.privacy",
-                destination: AnyView(
-                    PrivacySecurityView()
-                )
+                destination: AnyView(PrivacySecurityView())
             )
         ]
         
@@ -459,27 +366,21 @@ final class RouteRegistry {
             SettingsItem(
                 type: .gameCenter,
                 icon: "com.apple.gamecenter.bubbles",
-                destination: AnyView(
-                    BundleControllerView(
+                destination: AnyView(BundleControllerView(
                         "/System/Library/PrivateFrameworks/GameCenterUI.framework/GameCenterUI",
                         controller: "GameCenterUI.SettingsContainerViewController",
                         title: "Game Center"
-                    )
-                )
+                    ))
             ),
             SettingsItem(
                 type: .icloud,
                 icon: "com.apple.application-icon.icloud",
-                destination: AnyView(
-                    EmptyView()
-                )
+                destination: AnyView(EmptyView())
             ),
             SettingsItem(
                 type: .wallet,
                 icon: "com.apple.Passbook",
-                destination: AnyView(
-                    WalletView()
-                )
+                destination: AnyView(WalletView())
             )
         ]
         
@@ -487,20 +388,16 @@ final class RouteRegistry {
             SettingsItem(
                 type: .gameCenter,
                 icon: "com.apple.gamecenter.bubbles",
-                destination: AnyView(
-                    BundleControllerView(
+                destination: AnyView(BundleControllerView(
                         "/System/Library/PrivateFrameworks/GameCenterUI.framework/GameCenterUI",
                         controller: "GameCenterUI.SettingsContainerViewController",
                         title: "Game Center"
-                    )
-                )
+                    ))
             ),
             SettingsItem(
                 type: .icloud,
                 icon: "com.apple.application-icon.icloud",
-                destination: AnyView(
-                    EmptyView()
-                )
+                destination: AnyView(EmptyView())
             )
         ]
         
@@ -508,9 +405,7 @@ final class RouteRegistry {
             SettingsItem(
                 type: .apps,
                 icon: "com.apple.graphic-icon.home-screen",
-                destination: AnyView(
-                    AppsView()
-                )
+                destination: AnyView(AppsView())
             )
         ]
         
@@ -518,29 +413,23 @@ final class RouteRegistry {
             SettingsItem(
                 type: .developer,
                 icon: "com.apple.graphic-icon.developer-tools",
-                destination: AnyView(
-                    BundleControllerView(
+                destination: AnyView(BundleControllerView(
                         "DeveloperSettings",
                         controller: "DTSettings",
                         title: "Developer"
-                    )
-                )
+                    ))
             ),
             SettingsItem(
                 type: .carrierSettings,
                 icon: "com.apple.graphic-icon.carrier-settings",
                 capability: .isInternal,
-                destination: AnyView(
-                    CarrierSettingsView()
-                )
+                destination: AnyView(CarrierSettingsView())
             ),
             SettingsItem(
                 type: .internalSettings,
                 icon: "com.apple.graphic-icon.internal-settings",
                 capability: .isInternal,
-                destination: AnyView(
-                    InternalSettingsView()
-                )
+                destination: AnyView(InternalSettingsView())
             )
         ]
         
@@ -574,8 +463,7 @@ enum SettingsOptions: String, CaseIterable {
     case emergencySOS = "Emergency SOS"
     case ethernet = "Ethernet"
     case focus = "Focus"
-    case followUpPad = "Finish Setting Up Your iPad"
-    case followUpPhone = "Finish Setting Up Your iPhone"
+    case followUp = "FOLLOWUP_TITLE"
     case gameCenter = "Game Center"
     case general = "General"
     case homeScreenAppLibrary = "Home Screen & App Library"

@@ -46,8 +46,12 @@ struct SLabel: View {
                     .padding(.leading, -3)
             }
             
-            Text(text)
-                .padding(.leading, icon.isEmpty ? 0 : UIDevice.iPhone ? -6 : -12)
+            if text == "FOLLOWUP_TITLE" {
+                Text(text.localized(path: "/System/Library/PrivateFrameworks/SetupAssistant.framework", table: "FollowUp"))
+            } else {
+                Text(.init(text))
+                    .padding(.leading, icon.isEmpty ? 0 : UIDevice.iPhone ? -6 : -12)
+            }
             Spacer()
             
             if !status.isEmpty {
