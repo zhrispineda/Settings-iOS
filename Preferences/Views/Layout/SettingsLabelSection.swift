@@ -91,6 +91,8 @@ struct SettingsLabelSection: View {
                             icon: setting.icon
                         )
                     }
+                } else {
+                    let _ = SettingsLogger.log("Not including \(setting.type) due to being hidden.")
                 }
             }
         }

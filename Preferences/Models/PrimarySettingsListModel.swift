@@ -40,7 +40,7 @@ enum SettingsOptions: String, CaseIterable {
     case actionButton = "Action Button"
     case airplaneMode = "Airplane Mode"
     case appleIntelligence = "Apple Intelligence & Siri"
-    case applePencil = "Apple Pencil"
+    case pencil = "Apple Pencil"
     case apps = "Apps"
     case battery = "Battery"
     case faceIDPasscode = "Face ID & Passcode"
@@ -50,7 +50,7 @@ enum SettingsOptions: String, CaseIterable {
     case cellular = "Cellular"
     case controlCenter = "Control Center"
     case developer = "Developer"
-    case displayBrightness = "Display & Brightness"
+    case displayAndBrightness = "Display & Brightness"
     case emergencySOS = "Emergency SOS"
     case ethernet = "Ethernet"
     case focus = "Focus"
@@ -60,7 +60,7 @@ enum SettingsOptions: String, CaseIterable {
     case homeScreenAppLibrary = "Home Screen & App Library"
     case icloud = "iCloud"
     case internalSettings = "Internal Settings"
-    case multitaskGestures = "Multitasking & Gestures"
+    case multitaskingAndGestures = "Multitasking & Gestures"
     case notifications = "Notifications"
     case personalHotspot = "Personal Hotspot"
     case privacySecurity = "Privacy & Security"
@@ -256,7 +256,7 @@ struct SettingsItem: Identifiable, Hashable {
                     ))
             ),
             SettingsItem(
-                type: .applePencil,
+                type: .pencil,
                 icon: "com.apple.graphic-icon.pencil",
                 capabilities: [.tablet],
                 destination: AnyView(ApplePencilView())
@@ -283,7 +283,7 @@ struct SettingsItem: Identifiable, Hashable {
                     ))
             ),
             SettingsItem(
-                type: .displayBrightness,
+                type: .displayAndBrightness,
                 icon: "com.apple.graphic-icon.display",
                 capabilities: [.isPhysical],
                 destination: AnyView(DisplayBrightnessView())
@@ -294,7 +294,7 @@ struct SettingsItem: Identifiable, Hashable {
                 destination: AnyView(HomeScreenAppLibraryView())
             ),
             SettingsItem(
-                type: .multitaskGestures,
+                type: .multitaskingAndGestures,
                 icon: "com.apple.graphic-icon.stage-manager",
                 capabilities: [.tablet],
                 destination: AnyView(BundleControllerView(
