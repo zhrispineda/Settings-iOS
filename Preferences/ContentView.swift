@@ -23,8 +23,6 @@ struct ContentView: View {
         NavigationSplitView {
             List(selection: $model.selection) {
                 Section {
-                    IconView()
-                    
                     Button {
                         if model.isConnected {
                             showingSignInSheet.toggle()
