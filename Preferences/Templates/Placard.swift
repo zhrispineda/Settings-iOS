@@ -46,9 +46,8 @@ struct Placard: View {
                 .padding(.top, 13)
                 .padding(.bottom, -4)
             Text(.init(description))
-                .font(.system(size: 15))
+                .font(.footnote)
                 .padding(.bottom, 10)
-                .padding(.horizontal, -10)
         }
         .multilineTextAlignment(.center)
         .frame(maxWidth: .infinity)
