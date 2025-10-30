@@ -44,7 +44,7 @@ struct DebugView: View {
         .toolbar {
             ToolbarItem(placement: .principal) {
                 HStack {
-                    IconView(icon: "com.apple.Preferences")
+                    IconView("com.apple.Preferences")
                     Text("Debug")
                 }
             }
