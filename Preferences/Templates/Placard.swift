@@ -22,7 +22,7 @@ struct Placard: View {
     var body: some View {
         VStack(spacing: 15) {
             ZStack {
-                IconView(id: title, icon: icon)
+                IconView(icon: icon)
                     .scaleEffect(2)
                     .padding(.top, 25)
                 

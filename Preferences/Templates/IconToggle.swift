@@ -40,7 +40,7 @@ struct IconToggle: View {
                         .font(.footnote)
                 }
             } icon: {
-                IconView(id: text.localize(table: table), icon: icon)
+                IconView(icon: icon)
                     .padding(.leading, -6)
             }
             .padding(.leading, 5)

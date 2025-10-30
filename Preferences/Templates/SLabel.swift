@@ -42,7 +42,7 @@ struct SLabel: View {
     var body: some View {
         HStack(spacing: 20) {
             if badgeCount == 0 {
-                IconView(id: text, path: path, icon: icon)
+                IconView(path: path, icon: icon)
                     .padding(.leading, -3)
             }
             
