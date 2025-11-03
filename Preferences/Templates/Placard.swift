@@ -20,11 +20,11 @@ struct Placard: View {
     @Binding var opacity: Double
     
     var body: some View {
-        VStack(spacing: 15) {
+        VStack(spacing: 10) {
             ZStack {
                 IconView(icon)
                     .scaleEffect(2)
-                    .padding(.top, 25)
+                    .padding([.top, .leading], 15)
                 
                 if beta {
                     ZStack {
@@ -38,18 +38,22 @@ struct Placard: View {
                     .offset(x: 20, y: 38)
                 }
             }
+            .frame(maxWidth: .infinity, alignment: .leading)
             .accessibilityHidden(true)
             
             Text(title)
                 .fontWeight(.bold)
                 .font(.title2)
+                .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.top, 13)
                 .padding(.bottom, -4)
             Text(.init(description))
-                .font(.footnote)
-                .padding(.bottom, 10)
+                .font(.headline)
+                .fontWeight(.regular)
+                .foregroundStyle(.secondary)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.bottom, 5)
         }
-        .multilineTextAlignment(.center)
         .frame(maxWidth: .infinity)
         .fixedSize(horizontal: false, vertical: true)
         .overlay { // For calculating opacity of the principal toolbar item
