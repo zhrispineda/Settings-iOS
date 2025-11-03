@@ -6,6 +6,7 @@
 import SwiftUI
 
 struct DebugView: View {
+    @Environment(PrimarySettingsListModel.self) private var model
     @Environment(\.dismiss) private var dismiss
     #if DEBUG
     let debugBuild = true
@@ -16,7 +17,10 @@ struct DebugView: View {
     var body: some View {
         List {
             Section {
-                Button("Reset app navigation state.") {}
+                Button("Reset app navigation state.") {
+                    model.path = []
+                    model.selection = model.mainSettings.first
+                }
             }
             
             Section {
@@ -61,5 +65,6 @@ struct DebugView: View {
 #Preview {
     NavigationStack {
         DebugView()
+            .environment(PrimarySettingsListModel())
     }
 }

@@ -309,6 +309,10 @@ public extension UIDevice {
         return capableDevices.contains(identifier)
     }()
     
+    static let InternalInstallCapability: Bool = {
+       return false
+    }()
+    
     /// Checks if a device has an accessible MobileGestalt.plist cache.
     /// - Returns: The contents of MobileGestalt.plist as a dictionary.
     static func checkDevice() -> [String: Any]? {

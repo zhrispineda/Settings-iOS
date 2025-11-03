@@ -13,6 +13,7 @@ struct ContentView: View {
     @Environment(\.horizontalSizeClass) private var horizontalSizeClass
     @Environment(PrimarySettingsListModel.self) private var model
     @State private var searchFocused = false
+    @State private var showingDebugMenu = false
     @State private var showingSignInError = false
     @State private var showingSignInSheet = false
     @State private var searchText = ""
@@ -100,6 +101,18 @@ struct ContentView: View {
                 model.selection?.destination
             }
         }
+        .overlay {
+            if UIDevice.InternalInstallCapability {
+                VStack {
+                    DebugMenuGestureView {
+                        showingDebugMenu.toggle()
+                    }
+                    .frame(height: UIDevice.iPad ? 50 : 75, alignment: .top)
+                    Spacer()
+                }
+                .ignoresSafeArea()
+            }
+        }
         .onAppear {
             model.isCompact = horizontalSizeClass == .compact
             if model.selection == nil && UIDevice.iPad && !model.isCompact {
@@ -115,6 +128,11 @@ struct ContentView: View {
             model.isCompact = horizontalSizeClass == .compact
             if !model.isCompact && model.selection == nil {
                 model.selection = model.mainSettings.first
+            }
+        }
+        .sheet(isPresented: $showingDebugMenu) {
+            NavigationStack {
+                DebugView()
             }
         }
     }
