@@ -20,29 +20,30 @@ struct DebugView: View {
                 Button("Reset app navigation state.") {
                     model.path = []
                     model.selection = model.mainSettings.first
+                    dismiss()
                 }
             }
-            
+
             Section {
                 NavigationLink("Search") {}
                 NavigationLink("Debug Settings") {}
             }
             
             Section("Info") {
-                LabeledContent("Version", value: "1308.2.502 (1)")
+                LabeledContent("Version", value: getBundleVersion(at: "/Applications/Preferences.app"))
                 LabeledContent("Compiled With Debug", value: debugBuild ? "Yes" : "No")
             }
             
             Section("Bundles") {
-                LabeledContent("GeneralSettingsUI", value: "1200.2.500 (1.0)")
-                LabeledContent("LegalAndRegulatorySettings", value: "1044.2.2 (1044.2.2)")
-                LabeledContent("Preferences Framework", value: "5264.2.4 (1)")
-                LabeledContent("Preferences UI Framework", value: "1308.2.502 (1)")
-                LabeledContent("PrivacySettingsUI", value: "1203.2.501 (1.0)")
-                LabeledContent("Settings", value: "207.2.501 (207.2.501)")
-                LabeledContent("SettingsFoundation", value: "1080.2.7.500 (1.0)")
-                LabeledContent("SettingsUIKitPrivate", value: "1066.2.6 (1.0)")
-                LabeledContent("SoundsAndHapticsSettings", value: "1098.2.8 (1.0)")
+                LabeledContent("GeneralSettingsUI", value: getBundleVersion(at: "/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework"))
+                LabeledContent("LegalAndRegulatorySettings", value: getBundleVersion(at: "/System/Library/PreferenceBundles/LegalAndRegulatorySettings.bundle"))
+                LabeledContent("Preferences Framework", value: getBundleVersion(at: "/System/Library/PrivateFrameworks/Preferences.framework"))
+                LabeledContent("Preferences UI Framework", value: getBundleVersion(at: "/Applications/Preferences.app"))
+                LabeledContent("PrivacySettingsUI", value: getBundleVersion(at: "/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework"))
+                LabeledContent("Settings", value: getBundleVersion(at: "/System/Library/PrivateFrameworks/Settings.framework"))
+                LabeledContent("SettingsFoundation", value: getBundleVersion(at: "/System/Library/PrivateFrameworks/SettingsFoundation.framework"))
+                LabeledContent("SettingsUIKitPrivate", value: getBundleVersion(at: "/System/Library/PrivateFrameworks/Settings/SettingsUIKitPrivate.framework"))
+                LabeledContent("SoundsAndHapticsSettings", value: getBundleVersion(at: "/System/Library/PrivateFrameworks/Settings/SoundsAndHapticsSettings.framework"))
             }
         }
         .toolbar {
@@ -59,6 +60,26 @@ struct DebugView: View {
                 }
             }
         }
+    }
+    
+    private func getBundleVersion(at path: String) -> String {
+        var bundlePath = ""
+
+        if UIDevice.IsSimulated {
+            let build = MGHelper.read(key: "mZfUC7qo4pURNhyMHZ62RQ") ?? ""
+            
+            bundlePath = "/Library/Developer/CoreSimulator/Volumes/iOS_\(build)/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS \(UIDevice.current.systemVersion == "26.0.1" ? "26.0" : UIDevice.current.systemVersion).simruntime/Contents/Resources/RuntimeRoot\(path)"
+        } else {
+            bundlePath = path
+        }
+        
+        guard let bundle = Bundle(path: bundlePath),
+              let buildVersion = bundle.infoDictionary?["CFBundleVersion"] as? String,
+              let shortVersion = bundle.infoDictionary?["CFBundleShortVersionString"] as? String else {
+            return "Error"
+        }
+        
+        return "\(buildVersion) (\(shortVersion))"
     }
 }
 
