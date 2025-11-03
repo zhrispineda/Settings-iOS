@@ -25,8 +25,8 @@ struct HotspotView: View {
             // Allow Others to Join
             // Wi-Fi Password
             Section {
-                Toggle("ALLOW_OTHERS".localized(path: path, table: table), isOn: $allowOthersJoinEnabled)
-                SettingsLink("WIFI_PASSWORD".localized(path: path, table: table, "WIFI".localized(path: path, table: table)), status: password, destination: EmptyView())
+                Toggle("ALLOW_OTHERS".localized(path: path, table: table), isOn: $allowOthersJoinEnabled.animation())
+                SettingsLink("WIFI_PASSWORD".localized(path: path, table: table, "WIFI".localized(path: path, table: table)), status: password) {}
                     .onAppear {
                         password = randomPassword()
                     }
@@ -42,54 +42,56 @@ struct HotspotView: View {
             }
             
             // To connect using [Wi-Fi/Bluetooth/USB]
-            VStack(alignment: .leading, spacing: 20) {
-                HStack(alignment: .top) {
-                    Image(systemName: "wifi")
-                        .font(.title)
-                        .frame(width: 50)
-                    Text("""
-                                    \("CONNECT_OVER_WIFI_LABEL".localized(path: path, table: table, "WIFI"))
-                                    \("STEP_1".localized(path: path, table: table)) \("CONNECT_OVER_WIFI_STEP_1".localized(path: path, table: table, deviceName, "WIFI"))
-                                    \("STEP_2".localized(path: path, table: table)) \("CONNECT_OVER_WIFI_STEP_2".localized(path: path, table: table, "WIFI"))
-                                    """)
-                    .foregroundStyle(.secondary)
-                    .font(.footnote)
-                    Spacer()
+            if allowOthersJoinEnabled {
+                VStack(alignment: .leading, spacing: 20) {
+                    HStack(alignment: .top) {
+                        Image(systemName: "wifi")
+                            .font(.title)
+                            .frame(width: 50)
+                        Text("""
+                                        \("CONNECT_OVER_WIFI_LABEL".localized(path: path, table: table, "WIFI"))
+                                        \("STEP_1".localized(path: path, table: table)) \("CONNECT_OVER_WIFI_STEP_1".localized(path: path, table: table, deviceName, "WIFI"))
+                                        \("STEP_2".localized(path: path, table: table)) \("CONNECT_OVER_WIFI_STEP_2".localized(path: path, table: table, "WIFI"))
+                                        """)
+                        .foregroundStyle(.secondary)
+                        .font(.footnote)
+                        Spacer()
+                    }
+                    .frame(maxWidth: .infinity)
+                    
+                    HStack(alignment: .top) {
+                        Image(_internalSystemName: "bluetooth")
+                            .font(.title)
+                            .frame(width: 50)
+                        Text("""
+                            \("CONNECT_OVER_BLUETOOTH_LABEL".localized(path: path, table: table))
+                            \("STEP_1".localized(path: path, table: table)) \("\(UIDevice.iPhone ? "CONNECT_OVER_BLUETOOTH_STEP_1_IPHONE" : "CONNECT_OVER_BLUETOOTH_STEP_1_IPAD")".localized(path: path, table: table))
+                            \("STEP_2".localized(path: path, table: table)) \("\(UIDevice.iPhone ? "CONNECT_OVER_BLUETOOTH_STEP_2_IPHONE" : "CONNECT_OVER_BLUETOOTH_STEP_2_IPAD")".localized(path: path, table: table))
+                            \("STEP_3".localized(path: path, table: table)) \("\(UIDevice.iPhone ? "CONNECT_OVER_BLUETOOTH_STEP_3_IPHONE" : "CONNECT_OVER_BLUETOOTH_STEP_3_IPAD")".localized(path: path, table: table))
+                            """)
+                        .foregroundStyle(.secondary)
+                        .font(.footnote)
+                        Spacer()
+                    }
+                    .frame(maxWidth: .infinity)
+                    
+                    HStack(alignment: .top) {
+                        Image(_internalSystemName: "usb")
+                            .font(.title)
+                            .frame(width: 50)
+                        Text("""
+                            \("CONNECT_OVER_USB_LABEL".localized(path: path, table: table))
+                            \("STEP_1".localized(path: path, table: table)) \("\(UIDevice.iPhone ? "CONNECT_OVER_USB_STEP_1_IPHONE" : "CONNECT_OVER_USB_STEP_1_IPAD")".localized(path: path, table: table))
+                            \("STEP_2".localized(path: path, table: table)) \("\(UIDevice.iPhone ? "CONNECT_OVER_USB_STEP_2_IPHONE" : "CONNECT_OVER_USB_STEP_2_IPAD")".localized(path: path, table: table))
+                            """)
+                        .foregroundStyle(.secondary)
+                        .font(.footnote)
+                        Spacer()
+                    }
+                    .frame(maxWidth: .infinity)
                 }
-                .frame(maxWidth: .infinity)
-                
-                HStack(alignment: .top) {
-                    Image(_internalSystemName: "bluetooth")
-                        .font(.title)
-                        .frame(width: 50)
-                    Text("""
-                        \("CONNECT_OVER_BLUETOOTH_LABEL".localized(path: path, table: table))
-                        \("STEP_1".localized(path: path, table: table)) \("\(UIDevice.iPhone ? "CONNECT_OVER_BLUETOOTH_STEP_1_IPHONE" : "CONNECT_OVER_BLUETOOTH_STEP_1_IPAD")".localized(path: path, table: table))
-                        \("STEP_2".localized(path: path, table: table)) \("\(UIDevice.iPhone ? "CONNECT_OVER_BLUETOOTH_STEP_2_IPHONE" : "CONNECT_OVER_BLUETOOTH_STEP_2_IPAD")".localized(path: path, table: table))
-                        \("STEP_3".localized(path: path, table: table)) \("\(UIDevice.iPhone ? "CONNECT_OVER_BLUETOOTH_STEP_3_IPHONE" : "CONNECT_OVER_BLUETOOTH_STEP_3_IPAD")".localized(path: path, table: table))
-                        """)
-                    .foregroundStyle(.secondary)
-                    .font(.footnote)
-                    Spacer()
-                }
-                .frame(maxWidth: .infinity)
-                
-                HStack(alignment: .top) {
-                    Image(_internalSystemName: "usb")
-                        .font(.title)
-                        .frame(width: 50)
-                    Text("""
-                        \("CONNECT_OVER_USB_LABEL".localized(path: path, table: table))
-                        \("STEP_1".localized(path: path, table: table)) \("\(UIDevice.iPhone ? "CONNECT_OVER_USB_STEP_1_IPHONE" : "CONNECT_OVER_USB_STEP_1_IPAD")".localized(path: path, table: table))
-                        \("STEP_2".localized(path: path, table: table)) \("\(UIDevice.iPhone ? "CONNECT_OVER_USB_STEP_2_IPHONE" : "CONNECT_OVER_USB_STEP_2_IPAD")".localized(path: path, table: table))
-                        """)
-                    .foregroundStyle(.secondary)
-                    .font(.footnote)
-                    Spacer()
-                }
-                .frame(maxWidth: .infinity)
+                .listRowBackground(Color.clear)
             }
-            .listRowBackground(Color.clear)
         }
         .toolbar {
             ToolbarItem(placement: .principal) {
@@ -109,7 +111,10 @@ struct HotspotView: View {
         }
     }
     
-    func randomPassword(length: Int = 20, separatorIndices: Set<Int> = [6, 13]) -> String {
+    private func randomPassword(
+        length: Int = 20,
+        separatorIndices: Set<Int> = [6, 13]
+    ) -> String {
         let letters = Array("abcdefghjkmnopqrstuvwxyz")
         var password = ""
         
