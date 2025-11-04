@@ -55,7 +55,7 @@ public extension UIDevice {
     
     /// Returns a Bool on whether the device is capable of Always Capture Depth Information capability.
     static let AlwaysCaptureDepthCapability: Bool = {
-        let capableDevices: Set<String> = ["iPhone15,4", "iPhone15,5", "iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4"]
+        let capableDevices: Set<String> = ["iPhone15,4", "iPhone15,5", "iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4", "iPhone18,1", "iPhone18,2", "iPhone18,3", "iPhone18,4"]
         return capableDevices.contains(identifier)
     }()
     
@@ -228,7 +228,7 @@ public extension UIDevice {
     
     /// Returns a Bool on whether the device is capable of Photographic Styles.
     static let PhotographicStylesCapability: Bool = {
-        let capableDevices: Set<String> = ["iPhone14,2", "iPhone14,3", "iPhone14,4", "iPhone14,5", "iPhone14,6", "iPhone14,7", "iPhone14,8", "iPhone15,2", "iPhone15,3", "iPhone15,4", "iPhone15,5", "iPhone16,1", "iPhone16,2", "iPhone17,5", "iPhone18,1", "iPhone18,2", "iPhone18,3", "iPhone18,4"]
+        let capableDevices: Set<String> = ["iPhone14,2", "iPhone14,3", "iPhone14,4", "iPhone14,5", "iPhone14,6", "iPhone14,7", "iPhone14,8", "iPhone15,2", "iPhone15,3", "iPhone15,4", "iPhone15,5", "iPhone16,1", "iPhone16,2", "iPhone17,5"]
         return capableDevices.contains(identifier)
     }()
     

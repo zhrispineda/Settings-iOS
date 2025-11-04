@@ -30,6 +30,7 @@ struct CameraView: View {
     @AppStorage("CameraKeepNormalPhotoToggle") private var keepNormalPhoto = true
     @AppStorage("CameraMacroControlToggle") private var macroControlEnabled = true
     @AppStorage("CameraSmudgeDetectionToggle") private var smudgeDetection = true
+    @AppStorage("CameraLockScreenSwipeToggle") private var lockScreenSwipe = true
     @AppStorage("CameraSaveMessagesPhotosToggle") private var saveMessagesPhotos = true
     @AppStorage("CameraClassicModeSwitchToggle") private var classicModeSwitching = false
     @State private var showingHelpSheet = false
@@ -40,7 +41,6 @@ struct CameraView: View {
     let buttonTable = "CameraSettings-CameraButton"
     let stylesTable = "CameraSettings-SmartStyles"
     let privacy = "/System/Library/OnBoardingBundles/com.apple.onboarding.camera.bundle"
-    let smudgeTable = "CameraSettings-SmudgeDetection"
     
     init() {
         if selectedSlomoSetting.isEmpty && !UIDevice.ProDevice || UIDevice.iPad {
@@ -58,7 +58,7 @@ struct CameraView: View {
     
     var body: some View {
         CustomList(title: "CAMERA_SETTINGS_TITLE".localized(path: path, table: table), topPadding: true) {
-            // MARK: System Settings Section
+            // MARK: - System Settings
             if !UIDevice.IsSimulator && UIDevice.AdvancedPhotographicStylesCapability {
                 Section {
                     SettingsLink("CAMERA_BUTTON_TITLE".localized(path: path, table: buttonTable), status: selectedApp.localize(table: buttonTable), destination: CameraControlView())
@@ -69,7 +69,7 @@ struct CameraView: View {
                 }
             }
             
-            // MARK: App Settings Section
+            // MARK: - App Settings
             if UIDevice.AdvancedPhotographicStylesCapability {
                 Section {
                     Button {
@@ -87,7 +87,7 @@ struct CameraView: View {
                 }
             }
             
-            // MARK: Camera Options Section
+            // MARK: - Camera Options
             Section {
                 SettingsLink("CAM_RECORD_VIDEO_TITLE".localized(path: path, table: table), status: "\(selectedVideoSetting)_SHORT".localized(path: path, table: table), destination: RecordVideoView())
                 SettingsLink("CAM_RECORD_SLOMO_TITLE".localized(path: path, table: table), status: "\(selectedSlomoSetting)_SHORT".localized(path: path, table: table), destination: RecordSlomoView())
@@ -116,7 +116,7 @@ struct CameraView: View {
                 }
             }
             
-            // MARK: Composition Section
+            // MARK: - Composition
             Section {
                 Toggle("Grid".localized(path: path, table: table), isOn: $gridEnabled)
                 Toggle("HORIZON_LEVEL".localized(path: path, table: table), isOn: $levelEnabled)
@@ -129,7 +129,7 @@ struct CameraView: View {
                 Text("COMPOSITION_GROUP_TITLE".localized(path: path, table: table))
             }
             
-            // MARK: Photo Capture Section
+            // MARK: - Photo Capture
             if UIDevice.PhotographicStylesCapability {
                 Section {
                     Button("SEMANTIC_STYLES_ROW_TITLE".localized(path: path, table: table)) {
@@ -162,6 +162,7 @@ struct CameraView: View {
                 }
             }
             
+            // MARK: - Portraits in Photo Mode
             if UIDevice.AlwaysCaptureDepthCapability {
                 Section {
                     Toggle("PHOTO_MODE_DEPTH_SWITCH".localized(path: path, table: table), isOn: $portraitsPhotoModeEnabled)
@@ -170,7 +171,7 @@ struct CameraView: View {
                 }
             }
             
-            // MARK: Prioritize Faster Shooting
+            // MARK: - Prioritize Faster Shooting
             if UIDevice.iPhone && !UIDevice.IsSimulator {
                 Section {
                     Toggle("CAM_CAPTURE_DYNAMIC_SHUTTER_SWITCH".localized(path: path, table: table), isOn: $prioritizeFasterShootingEnabled)
@@ -179,7 +180,7 @@ struct CameraView: View {
                 }
             }
             
-            // MARK: Lens Correction Section
+            // MARK: - Lens Correction
             if UIDevice.LensCorrectionCapability {
                 Section {
                     Toggle("IDC_SWITCH".localized(path: path, table: table), isOn: $lensCorrectionEnabled)
@@ -203,7 +204,7 @@ struct CameraView: View {
                 }
             }
             
-            // MARK: Macro Control Section
+            // MARK: - Macro Control
             if UIDevice.MacroLensCapability {
                 Section {
                     Toggle("AUTO_MACRO_SWITCH".localized(path: path, table: table), isOn: $macroControlEnabled)
@@ -212,11 +213,24 @@ struct CameraView: View {
                 }
             }
             
-            // MARK: Lens Cleaning Section
+            // MARK: - Lens Cleaning
             Section {
-                Toggle("SMUDGE_DETECTION_SWITCH".localized(path: path, table: smudgeTable), isOn: $smudgeDetection)
+                Toggle("SMUDGE_DETECTION_SWITCH".localized(path: path, table: table), isOn: $smudgeDetection)
             } footer: {
-                Text("SMUDGE_DETECTION_FOOTER".localized(path: path, table: smudgeTable))
+                Text("SMUDGE_DETECTION_FOOTER".localized(path: path, table: table))
+            }
+            
+            // MARK: - Lock Screen Swipe to Open Camera
+            Section {
+                Toggle("LOCK_SCREEN_SWIPE_SWITCH".localized(path: path, table: table), isOn: $lockScreenSwipe)
+            } footer: {
+                Text(
+                    "LOCK_SCREEN_SWIPE_%@_FOOTER".localized(
+                        path: path,
+                        table: table,
+                        "SWIPE_LEFT".localized(path: path, table: table)
+                    )
+                )
             }
             
             // MARK: - Messages
@@ -229,16 +243,7 @@ struct CameraView: View {
                 Text("CAM_SAVE_MESSAGES_ASSETS_PHOTO_LIBRARY_FOOTER".localized(path: path, table: table))
             }
             
-            // MARK: - Mode Switching
-//            Section {
-//                Toggle("CAM_CLASSIC_MODE_SWITCHING_SWITCH".localized(path: path, table: table), isOn: $classicModeSwitching)
-//            } header: {
-//                Text("CAM_CLASSIC_MODE_SWITCHING_TITLE".localized(path: path, table: table))
-//            } footer: {
-//                Text("CAM_CLASSIC_MODE_SWITCHING_FOOTER".localized(path: path, table: table))
-//            }
-            
-            // MARK: Camera & ARKit Privacy Footer
+            // MARK: - Camera & ARKit Privacy Footer
             if UIDevice.LiDARCapability {
                 Section {} footer: {
                     Text("[\("BUTTON_TITLE".localized(path: privacy, table: "Camera"))](pref://privacy)")
