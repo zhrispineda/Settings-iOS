@@ -70,6 +70,7 @@ struct GeneralView: View {
                     SLink("Screen Capture".localized(path: path, table: table), icon: "com.apple.graphic-icon.screenshots") {
                         ScreenCaptureView()
                     }
+                    SLink("Local Capture".localized(path: path, table: table), icon: "com.apple.graphic-icon.localcapture") {}
                     if UIDevice.iPhone {
                         SLink("CARPLAY".localized(path: path, table: table), icon: "com.apple.graphic-icon.carplay") {
                             BundleControllerView("CarKitSettings", controller: "CRSettingsController", title: "CARPLAY".localized(path: path, table: table))

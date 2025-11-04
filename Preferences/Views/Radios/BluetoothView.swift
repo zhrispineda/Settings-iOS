@@ -39,8 +39,6 @@ struct BluetoothView: View {
     @AppStorage("Bluetooth") private var bluetoothEnabled = true
     @AppStorage("DeviceName") private var deviceName = UIDevice.current.model
     @State private var bluetoothManager = BluetoothManager()
-    @State private var frameY = 0.0
-    @State private var opacity = 0.0
     @State private var showingHelpSheet = false
     let path = "/System/Library/PreferenceBundles/BluetoothSettings.bundle"
     let table = "Devices"
@@ -48,7 +46,18 @@ struct BluetoothView: View {
     var body: some View {
         CustomList {
             Section {
-                Placard(title: "BLUETOOTH".localized(path: path, table: table), icon: "com.apple.graphic-icon.bluetooth", description: "\("BLUETOOTHPLACARDINFO".localized(path: path, table: table)) [\("LEARN_MORE".localized(path: path, table: table))](pref://helpkit)", frameY: $frameY, opacity: $opacity)
+                Button {} label: {
+                    Placard(
+                        title: "BLUETOOTH".localized(path: path, table: table),
+                        icon: "com.apple.graphic-icon.bluetooth",
+                        description: """
+                                    \("BLUETOOTHPLACARDINFO".localized(path: path, table: table))
+                                    [\("LEARN_MORE".localized(path: path, table: table))](pref://helpkit)
+                                    """,
+                        frameY: .constant(0.0),
+                        opacity: .constant(0.0))
+                }
+                .foregroundStyle(.primary)
                 Toggle("BLUETOOTH".localized(path: path, table: table), isOn: $bluetoothEnabled.animation())
             } footer: {
                 if bluetoothEnabled {
@@ -101,7 +110,7 @@ struct BluetoothView: View {
                 Text("BLUETOOTH".localized(path: path, table: table))
                     .fontWeight(.semibold)
                     .font(.subheadline)
-                    .opacity(frameY < 50.0 ? opacity : 0)
+                    //.opacity(frameY < 50.0 ? opacity : 0)
             }
         }
     }

@@ -39,10 +39,7 @@ struct ScreenTimeView: View {
                 }
             } else {
                 Section {
-                    Button {} label: {
-                        Placard(title: "ScreenTimeGroupSpecifierName".localized(path: path), icon: "com.apple.graphic-icon.screen-time", description: "AboutScreenTimeDetailText".localized(path: path), frameY: .constant(0.0), opacity: .constant(1.0))
-                    }
-                    .foregroundStyle(.primary)
+                    Placard(title: "ScreenTimeGroupSpecifierName".localized(path: path), icon: "com.apple.graphic-icon.screen-time", description: "AboutScreenTimeDetailText".localized(path: path), frameY: .constant(0.0), opacity: .constant(1.0))
                 }
             }
             
