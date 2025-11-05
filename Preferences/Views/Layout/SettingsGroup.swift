@@ -179,6 +179,8 @@ struct SettingsGroup: View {
             return !UIDevice.IsSimulator || configuration.forcePhysical
         case .developerMode:
             return UIDevice.IsSimulator || configuration.developerMode
+        case .isSimulator:
+            return UIDevice.IsSimulator
         }
     }
 }

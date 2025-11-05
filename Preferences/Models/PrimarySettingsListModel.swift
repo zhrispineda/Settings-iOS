@@ -62,6 +62,7 @@ enum SettingsOptions: String, CaseIterable {
     case internalSettings = "Internal Settings"
     case multitaskingAndGestures = "Multitasking & Gestures"
     case notifications = "Notifications"
+    case passcodeAndBiometrics = "Passcode"
     case personalHotspot = "Personal Hotspot"
     case privacySecurity = "Privacy & Security"
     case satellite = "Satellite"
@@ -97,6 +98,7 @@ enum Capabilities {
     case appleIntelligence
     case isInternal
     case isPhysical
+    case isSimulator
     case developerMode
 }
 
@@ -383,6 +385,12 @@ struct SettingsItem: Identifiable, Hashable {
                 icon: "com.apple.graphic-icon.touch-id",
                 capabilities: [.touchID, .isPhysical],
                 destination: AnyView(BiometricPasscodeView())
+            ),
+            SettingsItem(
+                type: .passcodeAndBiometrics,
+                icon: "com.apple.graphic-icon.passcode",
+                capabilities: [.isSimulator],
+                destination: AnyView(EmptyView())
             ),
             SettingsItem(
                 type: .emergencySOS,
