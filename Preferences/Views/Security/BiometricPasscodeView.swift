@@ -46,7 +46,14 @@ struct BiometricPasscodeView: View {
     
     var body: some View {
         CustomList {
-            Placard(title: UIDevice.PearlIDCapability ? "PASSCODE_PLACARD_TITLE_FACE_ID".localized(path: path, table: passcode) : "PASSCODE_PLACARD_TITLE_TOUCH_ID".localized(path: path, table: passcode), icon: UIDevice.PearlIDCapability ? "com.apple.graphic-icon.face-id" : "com.apple.graphic-icon.touch-id", description: "\(UIDevice.PearlIDCapability ? "PASSCODE_PLACARD_SUBTITLE_FACE_ID".localized(path: path, table: passcode) : "PASSCODE_PLACARD_SUBTITLE_TOUCH_ID".localized(path: path, table: passcode)) [\("PASSCODE_RECOVERY_LEARN_MORE_TEXT".localized(path: path, table: passcode))](pref://helpkit)", frameY: $frameY, opacity: $opacity)
+            Placard(
+                title: UIDevice.PearlIDCapability ? "PASSCODE_PLACARD_TITLE_FACE_ID".localized(path: path, table: passcode) : "PASSCODE_PLACARD_TITLE_TOUCH_ID".localized(path: path, table: passcode),
+                icon: UIDevice.PearlIDCapability ? "com.apple.graphic-icon.face-id" : "com.apple.graphic-icon.touch-id", description: "\(UIDevice.PearlIDCapability ? "PASSCODE_PLACARD_SUBTITLE_FACE_ID".localized(path: path, table: passcode).replacing("helpkit://open", with: "pref://helpkit") : "PASSCODE_PLACARD_SUBTITLE_TOUCH_ID".localized(path: path, table: passcode).replacing("helpkit://open", with: "pref://helpkit"))",
+                frameY: $frameY,
+                opacity: $opacity
+            )
+            
+            let _ = print("PASSCODE_PLACARD_SUBTITLE_FACE_ID".localized(path: path, table: passcode).replacing("helpkit://open", with: "pref://helpkit"))
             
             Section {
                 Toggle("TOUCHID_UNLOCK".localized(path: path, table: passcode), isOn: $allowFingerprintForUnlock)
@@ -173,9 +180,9 @@ struct BiometricPasscodeView: View {
             }
         }
         .onOpenURL { url in
-            if url.absoluteString == "pref://helpkit" {
+            if url.absoluteString.hasPrefix("pref://helpkit") {
                 showingHelpSheet = true
-            } else if url.absoluteString == "pref://privacy" {
+            } else if url.absoluteString.hasPrefix("pref://privacy") {
                 showingPrivacySheet = true
             }
         }
