@@ -53,8 +53,6 @@ struct BiometricPasscodeView: View {
                 opacity: $opacity
             )
             
-            let _ = print("PASSCODE_PLACARD_SUBTITLE_FACE_ID".localized(path: path, table: passcode).replacing("helpkit://open", with: "pref://helpkit"))
-            
             Section {
                 Toggle("TOUCHID_UNLOCK".localized(path: path, table: passcode), isOn: $allowFingerprintForUnlock)
                 if UIDevice.iPad {
