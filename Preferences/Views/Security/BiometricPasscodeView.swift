@@ -195,7 +195,6 @@ struct BiometricPasscodeView: View {
         }
         .fullScreenCover(isPresented: $showingPearlSetupPopover) {
             NavigationStack {
-                // FIXME: Extremely experimental; may cause app to freeze
                 // BiometricKitUI is not available in preview/simulator
                 CustomViewController("/System/Library/PrivateFrameworks/BiometricKitUI.framework/BiometricKitUI", controller: "BKUIPearlEnrollController")
                     .ignoresSafeArea()

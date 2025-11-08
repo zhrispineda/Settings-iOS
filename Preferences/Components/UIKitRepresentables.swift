@@ -11,42 +11,42 @@ struct ProximityViewController: UIViewControllerRepresentable {
     func makeUIViewController(context: Context) -> UIViewController {
         var path = "/System/Library/PrivateFrameworks/AuthKitUI.framework/AuthKitUI"
         dlopen(path, RTLD_NOW)
-
+        
         guard
             let viewModelClass = NSClassFromString("AKProximityMessageViewModel") as? NSObject.Type,
             let viewControllerClass = NSClassFromString("AKProximityAuthViewController") as? NSObject.Type
         else {
             return UIViewController()
         }
-
+        
         let alloc = NSSelectorFromString("alloc")
         let initWithType = Selector(("initWithType:"))
         let initWithViewModel = Selector(("initWithViewModel:"))
-
+        
         let allocMethod = viewModelClass.method(for: alloc)
         let initMethod = class_getMethodImplementation(viewModelClass, initWithType)
-
+        
         typealias AllocType = @convention(c) (AnyObject, Selector) -> AnyObject
         typealias InitVMType = @convention(c) (AnyObject, Selector, UInt64) -> AnyObject
-
+        
         let vmAlloc = unsafeBitCast(allocMethod, to: AllocType.self)
         let vmInit = unsafeBitCast(initMethod, to: InitVMType.self)
-
+        
         let viewModel = vmInit(vmAlloc(viewModelClass, alloc), initWithType, 0)
         path = "/System/Library/PrivateFrameworks/AuthKitUI.framework"
         viewModel.setValue("PROXIMITY_AUTH_BROADCAST_TITLE".localized(path: path), forKey: "titleText")
         viewModel.setValue(UIDevice.iPhone ? "PROXIMITY_AUTH_BROADCAST_DESCRIPTION_IPHONE".localized(path: path) : "PROXIMITY_AUTH_BROADCAST_DESCRIPTION_IPAD".localized(path: path), forKey: "detailedText")
-
+        
         typealias InitVCType = @convention(c) (AnyObject, Selector, AnyObject) -> AnyObject
-
+        
         let vcAlloc = unsafeBitCast(viewControllerClass.method(for: alloc), to: AllocType.self)
         let vcInit = unsafeBitCast(class_getMethodImplementation(viewControllerClass, initWithViewModel), to: InitVCType.self)
-
+        
         let controller = vcInit(vcAlloc(viewControllerClass, alloc), initWithViewModel, viewModel)
-
+        
         return controller as! UIViewController
     }
-
+    
     func updateUIViewController(_ uiViewController: UIViewController, context: Context) {}
 }
 
@@ -54,7 +54,7 @@ struct ProximityViewController: UIViewControllerRepresentable {
 /// HLPHelpViewController for displaying user guide information.
 struct HelpKitView: UIViewControllerRepresentable {
     let topicID: String
-
+    
     func makeUIViewController(context: Context) -> UIViewController {
         dlopen("/System/Library/PrivateFrameworks/HelpKit.framework/HelpKit", RTLD_NOW)
         
@@ -62,14 +62,14 @@ struct HelpKitView: UIViewControllerRepresentable {
             SettingsLogger.error("Could not load HLPHelpViewController")
             return UIViewController()
         }
-
+        
         let instance = helpViewController.init()
         
         instance.setValue(topicID, forKey: "selectedHelpTopicID")
-
+        
         return UINavigationController(rootViewController: instance)
     }
-
+    
     func updateUIViewController(_ uiViewController: UIViewController, context: Context) {}
 }
 
@@ -77,41 +77,41 @@ struct HelpKitView: UIViewControllerRepresentable {
 struct OBBoldTrayButton: UIViewRepresentable {
     var titleKey: String
     let action: () -> Void
-
+    
     init(_ titleKey: String, action: @escaping () -> Void = {}) {
         self.titleKey = titleKey
         self.action = action
     }
-
+    
     func makeUIView(context: Context) -> UIButton {
         guard dlopen("/System/Library/PrivateFrameworks/OnBoardingKit.framework/OnBoardingKit", RTLD_NOW) != nil else {
             return UIButton()
         }
-
+        
         guard let buttonClass = NSClassFromString("OBBoldTrayButton") as? NSObject.Type,
               let button = buttonClass.perform(NSSelectorFromString("boldButton"))?.takeUnretainedValue() as? UIButton else {
             return UIButton()
         }
-
+        
         button.setTitle(titleKey, for: .normal)
         button.addTarget(context.coordinator, action: #selector(Coordinator.didTap), for: .touchUpInside)
-
+        
         return button
     }
-
+    
     func updateUIView(_ uiView: UIButton, context: Context) {}
-
+    
     func makeCoordinator() -> Coordinator {
         Coordinator(action: action)
     }
-
+    
     class Coordinator {
         let action: () -> Void
-
+        
         init(action: @escaping () -> Void) {
             self.action = action
         }
-
+        
         @objc func didTap() {
             action()
         }
@@ -240,12 +240,12 @@ struct OnBoardingKitView: UIViewControllerRepresentable {
         if let splashController = function(controller, selector, bundleID) as? UIViewController {
             splashController.setValue(showLinkToPrivacyGateway, forKey: "showLinkToPrivacyGateway")
             splashController.setValue(showsLinkToUnifiedAbout, forKey: "showsLinkToUnifiedAbout")
-
+            
             let config = UIImage.SymbolConfiguration(pointSize: 18)
             let checkmarkImage = UIImage(systemName: "checkmark", withConfiguration: config)
             let dismissButton = UIBarButtonItem(image: checkmarkImage, style: .prominent, target: splashController, action: #selector(UIViewController.dismissView))
             splashController.navigationItem.rightBarButtonItem = dismissButton
-
+            
             let navController = UINavigationController(rootViewController: splashController)
             return navController
         }
@@ -279,7 +279,7 @@ struct ReleaseNotesViewController: UIViewControllerRepresentable {
     }
     
     func updateUIViewController(_ uiViewController: UIViewController, context: Context) {}
-
+    
     private func loadReadMe(named fileName: String) -> String? {
         guard let filePath = Bundle.main.path(forResource: fileName, ofType: "html") else {
             SettingsLogger.error("Could not find ReadMe: \(fileName)")
@@ -346,7 +346,14 @@ struct CustomViewController: UIViewControllerRepresentable {
         
         SettingsLogger.info("Loading plugin with name '\(controller)' at location '{ directoryURL: 'file://\(path)'}'.")
         
-        return controller.init()
+        let vc = controller.init()
+        
+        // If accessing Face ID enrollment controller, disable `Get Started` button for now
+        if let enrollVC = (vc as NSObject).value(forKey: "enrollViewController") as? NSObject {
+            enrollVC.perform(Selector(("cancelEnroll")))
+        }
+        
+        return vc
     }
     
     func updateUIViewController(_ uiViewController: UIViewController, context: Context) {}
