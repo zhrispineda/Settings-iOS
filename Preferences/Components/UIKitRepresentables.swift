@@ -349,8 +349,10 @@ struct CustomViewController: UIViewControllerRepresentable {
         let vc = controller.init()
         
         // If accessing Face ID enrollment controller, disable `Get Started` button for now
-        if let enrollVC = (vc as NSObject).value(forKey: "enrollViewController") as? NSObject {
-            enrollVC.perform(Selector(("cancelEnroll")))
+        if self.controller == "BKUIPearlEnrollController" {
+            if let enrollVC = (vc as NSObject).value(forKey: "enrollViewController") as? NSObject {
+                enrollVC.perform(Selector(("cancelEnroll")))
+            }
         }
         
         return vc
