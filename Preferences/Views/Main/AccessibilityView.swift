@@ -18,12 +18,20 @@ struct AccessibilityView: View {
     let titleTable = "AccessibilityTitles"
     let cameraTable = "Accessibility-D93"
     let hapticTable = "Accessibility-HapticMusic"
+    var placardDescription: String {
+        return UIDevice.iPhone ? "PLACARD_SUBTITLE_IPHONE".localized(path: settings, table: table) : "PLACARD_SUBTITLE_IPAD".localized(path: settings, table: table)
+    }
     
     var body: some View {
         CustomList(title: "Accessibility".localize(table: table)) {
             // MARK: Placard
             Section {
-                Placard(title: "PLACARD_TITLE".localized(path: settings, table: table), icon: "com.apple.graphic-icon.accessibility", description: "\(UIDevice.iPhone ? "PLACARD_SUBTITLE_IPHONE".localized(path: settings, table: table) : "PLACARD_SUBTITLE_IPAD".localized(path: settings, table: table)) [\("PLACARD_LEARN_MORE".localized(path: settings, table: table))](pref://helpkit)", frameY: $frameY, opacity: $opacity)
+                Placard(
+                    title: "PLACARD_TITLE".localized(path: settings, table: table),
+                    icon: "com.apple.graphic-icon.accessibility",
+                    description: placardDescription,
+                    frameY: $frameY,
+                    opacity: $opacity)
             }
             
             // MARK: Vision
