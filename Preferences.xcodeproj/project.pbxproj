@@ -47,6 +47,7 @@
 		832EF3AB2B819C2A0066A1BF /* KeyboardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832EF3AA2B819C2A0066A1BF /* KeyboardsView.swift */; };
 		832F517F2BBF4DC900335E5E /* NetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832F517E2BBF4DC900335E5E /* NetworkView.swift */; };
 		832FD83F2BC22EB000E99DEB /* BluetoothView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832FD83E2BC22EB000E99DEB /* BluetoothView.swift */; };
+		833438CC2EC507FB0013FF3A /* ControlCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833438CB2EC507FB0013FF3A /* ControlCenterView.swift */; };
 		8335A70C2BC358E8001E199D /* CellularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8335A70B2BC358E8001E199D /* CellularView.swift */; };
 		833854F72C1648CD00339C4F /* SoftwareUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833854F62C1648CD00339C4F /* SoftwareUpdateView.swift */; };
 		833A44EF2C6E75BF003076F5 /* SystemFontsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833A44EE2C6E75BF003076F5 /* SystemFontsView.swift */; };
@@ -267,6 +268,7 @@
 		832EF3AA2B819C2A0066A1BF /* KeyboardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardsView.swift; sourceTree = "<group>"; };
 		832F517E2BBF4DC900335E5E /* NetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkView.swift; sourceTree = "<group>"; };
 		832FD83E2BC22EB000E99DEB /* BluetoothView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothView.swift; sourceTree = "<group>"; };
+		833438CB2EC507FB0013FF3A /* ControlCenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlCenterView.swift; sourceTree = "<group>"; };
 		8335A70B2BC358E8001E199D /* CellularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellularView.swift; sourceTree = "<group>"; };
 		833854F62C1648CD00339C4F /* SoftwareUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftwareUpdateView.swift; sourceTree = "<group>"; };
 		833A44EE2C6E75BF003076F5 /* SystemFontsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemFontsView.swift; sourceTree = "<group>"; };
@@ -1052,6 +1054,7 @@
 				83815CDE2B768C2200F53A0F /* AccessibilityView.swift */,
 				8349E22B2C7514F6007416C5 /* ApplePencilView.swift */,
 				833C6EAB2C208A3900A8D91C /* CameraView.swift */,
+				833438CB2EC507FB0013FF3A /* ControlCenterView.swift */,
 				83D268792BD7303800A86DA9 /* DisplayBrightnessView.swift */,
 				833C6EAD2C20C88000A8D91C /* HomeScreenAppLibraryView.swift */,
 				833C6EAF2C20CCEF00A8D91C /* SearchView.swift */,
@@ -1305,6 +1308,7 @@
 				83FCEFEA2C07F0DE008BE814 /* NetworkDetailView.swift in Sources */,
 				83F516BA2C21D88B0004E87A /* StandByView.swift in Sources */,
 				83815CF52B768F3600F53A0F /* PhotosView.swift in Sources */,
+				833438CC2EC507FB0013FF3A /* ControlCenterView.swift in Sources */,
 				83A36C8D2DB95D7800378E45 /* ConfigureDNSView.swift in Sources */,
 				839092BB2C0D213200924849 /* OtherNetworkView.swift in Sources */,
 				83AE01DB2D65628700724A34 /* SettingsGroup.swift in Sources */,

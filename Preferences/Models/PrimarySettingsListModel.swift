@@ -278,11 +278,7 @@ struct SettingsItem: Identifiable, Hashable {
                 type: .controlCenter,
                 icon: "com.apple.graphic-icon.control-center",
                 capabilities: [.isPhysical],
-                destination: AnyView(BundleControllerView(
-                        "ControlCenterSettings",
-                        controller: "ControlCenterSettingsViewController",
-                        title: "Control Center"
-                    ))
+                destination: AnyView(ControlCenterView())
             ),
             SettingsItem(
                 type: .displayAndBrightness,
