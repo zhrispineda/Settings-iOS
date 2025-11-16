@@ -30,7 +30,7 @@ struct DebugView: View {
             }
             
             Section("Info") {
-                LabeledContent("Version", value: getBundleVersion(at: "/Applications/Preferences.app"))
+                LabeledContent("Version", value: getBundleVersion())
                 LabeledContent("Compiled With Debug", value: debugBuild ? "Yes" : "No")
             }
             
@@ -38,7 +38,6 @@ struct DebugView: View {
                 LabeledContent("GeneralSettingsUI", value: getBundleVersion(at: "/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework"))
                 LabeledContent("LegalAndRegulatorySettings", value: getBundleVersion(at: "/System/Library/PreferenceBundles/LegalAndRegulatorySettings.bundle"))
                 LabeledContent("Preferences Framework", value: getBundleVersion(at: "/System/Library/PrivateFrameworks/Preferences.framework"))
-                LabeledContent("Preferences UI Framework", value: getBundleVersion(at: "/Applications/Preferences.app"))
                 LabeledContent("PrivacySettingsUI", value: getBundleVersion(at: "/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework"))
                 LabeledContent("Settings", value: getBundleVersion(at: "/System/Library/PrivateFrameworks/Settings.framework"))
                 LabeledContent("SettingsFoundation", value: getBundleVersion(at: "/System/Library/PrivateFrameworks/SettingsFoundation.framework"))
@@ -46,6 +45,7 @@ struct DebugView: View {
                 LabeledContent("SoundsAndHapticsSettings", value: getBundleVersion(at: "/System/Library/PrivateFrameworks/Settings/SoundsAndHapticsSettings.framework"))
             }
         }
+        .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .principal) {
                 HStack {
@@ -62,15 +62,21 @@ struct DebugView: View {
         }
     }
     
-    private func getBundleVersion(at path: String) -> String {
+    private func getBundleVersion(at path: String = "") -> String {
         var bundlePath = ""
 
         if UIDevice.IsSimulated {
             let build = MGHelper.read(key: "mZfUC7qo4pURNhyMHZ62RQ") ?? ""
             
-            bundlePath = "/Library/Developer/CoreSimulator/Volumes/iOS_\(build)/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS \(UIDevice.current.systemVersion == "26.0.1" ? "26.0" : UIDevice.current.systemVersion).simruntime/Contents/Resources/RuntimeRoot\(path)"
+            bundlePath = "/Library/Developer/CoreSimulator/Volumes/iOS_\(build)/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS \(UIDevice.current.systemVersion).simruntime/Contents/Resources/RuntimeRoot\(path)"
         } else {
             bundlePath = path
+        }
+        
+        if bundlePath.isEmpty {
+            let buildVersion = Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? "Error"
+            let shortVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "Error"
+            return "\(buildVersion) (\(shortVersion))"
         }
         
         guard let bundle = Bundle(path: bundlePath),
