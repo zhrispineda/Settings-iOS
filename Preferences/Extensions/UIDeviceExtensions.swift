@@ -310,7 +310,18 @@ public extension UIDevice {
     }()
     
     static let InternalInstallCapability: Bool = {
+        if let answer = MGHelper.read(key: "EqrsVvjcYDdxHBiQmGhAWw") {
+            return Bool(answer)!
+        }
        return false
+    }()
+    
+    static let ResearchFuse: Bool = {
+        if let answer = MGHelper.read(key: "XYlJKKkj2hztRP1NWWnhlw") {
+            return Bool(answer)!
+        }
+        
+        return false
     }()
     
     /// Checks if a device has an accessible MobileGestalt.plist cache.
