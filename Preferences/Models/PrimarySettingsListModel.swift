@@ -151,7 +151,8 @@ struct SettingsItem: Identifiable, Hashable {
 // MARK: - State Manager
 /// Class for managing the state of the app's NavigationStack selection variable and destination view.
 @MainActor
-@Observable final class PrimarySettingsListModel {
+@Observable
+final class PrimarySettingsListModel {
     static let shared = PrimarySettingsListModel()
     var path: [String] = []
     var selection: SettingsItem? = nil

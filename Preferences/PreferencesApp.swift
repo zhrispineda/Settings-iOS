@@ -11,12 +11,11 @@ import SwiftUI
 struct PreferencesApp: App {
     @Environment(\.scenePhase) private var scenePhase
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-    private let model = PrimarySettingsListModel.shared
 
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(model)
+                .environment(PrimarySettingsListModel.shared)
         }
         .commands {
             CommandGroup(replacing: .appSettings) {

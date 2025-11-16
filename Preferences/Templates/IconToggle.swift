@@ -21,7 +21,13 @@ struct IconToggle: View {
     var subtitle: String
     var table: String
     
-    init(_ text: String, isOn: Binding<Bool>, icon: String = "", subtitle: String = "", table: String = "Localizable") {
+    init(
+        _ text: String,
+        isOn: Binding<Bool>,
+        icon: String,
+        subtitle: String = "",
+        table: String = "Localizable"
+    ) {
         self.text = text
         self._isOn = isOn
         self.icon = icon
@@ -33,7 +39,7 @@ struct IconToggle: View {
         Toggle(isOn: $isOn) {
             Label {
                 Text(LocalizedStringKey(text.localize(table: table)))
-                    .padding(.leading, UIDevice.iPhone ? -7 : -6)
+                    .padding(.leading, UIDevice.iPhone ? -7 : -1)
                 
                 if !subtitle.isEmpty {
                     Text(subtitle.localize(table: table))
