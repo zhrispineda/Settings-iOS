@@ -157,6 +157,7 @@ final class PrimarySettingsListModel {
     var path: [String] = []
     var selection: SettingsItem? = nil
     var isCompact = false
+    var showingDebugMenu = false
     
     private let monitor = NWPathMonitor()
     private let queue = DispatchQueue.global(qos: .userInitiated)

@@ -13,7 +13,6 @@ struct ContentView: View {
     @Environment(\.horizontalSizeClass) private var horizontalSizeClass
     @Environment(PrimarySettingsListModel.self) private var model
     @State private var searchFocused = false
-    @State private var showingDebugMenu = false
     @State private var showingSignInError = false
     @State private var showingSignInSheet = false
     @State private var searchText = ""
@@ -23,6 +22,9 @@ struct ContentView: View {
         
         NavigationSplitView {
             List(selection: $model.selection) {
+                if UIDevice.ResearchFuse {
+                    Section {} footer: { Text("SECURITY_RESEARCH_DEVICE_FOOTER") }
+                }
                 Section {
                     Button {
                         if model.isConnected {
@@ -105,7 +107,7 @@ struct ContentView: View {
             if UIDevice.InternalInstallCapability {
                 VStack {
                     DebugMenuGestureView {
-                        showingDebugMenu.toggle()
+                        model.showingDebugMenu.toggle()
                     }
                     .frame(height: UIDevice.iPad ? 50 : 75, alignment: .top)
                     Spacer()
@@ -130,7 +132,7 @@ struct ContentView: View {
                 model.selection = model.mainSettings.first
             }
         }
-        .sheet(isPresented: $showingDebugMenu) {
+        .sheet(isPresented: $model.showingDebugMenu) {
             NavigationStack {
                 DebugView()
             }
