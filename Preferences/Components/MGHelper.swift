@@ -17,15 +17,13 @@ class MGHelper {
         typealias MGKey = (@convention(c) (CFString) -> CFTypeRef?)
         var mgKey: MGKey?
         
-        SettingsLogger.info("Attempting to get value for key: \(key)")
-        
-        // Initialize libMobileGestalt.dylib
+        // Initialize
         guard let gestalt = dlopen("/usr/lib/libMobileGestalt.dylib", RTLD_LAZY) else {
             SettingsLogger.info("Could not interact with libMobileGestalt.dylib")
             return nil
         }
         
-        // Encode the key
+        // Encode key
         guard let key = CFStringCreateWithCString(nil, key, CFStringBuiltInEncodings.ASCII.rawValue) else {
             SettingsLogger.error("Unable to encode key: \(key)")
             return nil
@@ -33,7 +31,7 @@ class MGHelper {
         
         mgKey = unsafeBitCast(dlsym(gestalt, "MGCopyAnswer"), to: MGKey.self)
         
-        // Get value from key
+        // Get key value
         guard let value = mgKey?(key) else {
             SettingsLogger.error("Could not get value for key: \(key)")
             return nil
@@ -41,7 +39,7 @@ class MGHelper {
         
         let typeID = CFGetTypeID(value)
         
-        // Based on data type, return as a casted String
+        // Return as a casted String
         switch typeID {
         case CFBooleanGetTypeID():
             SettingsLogger.log("Found value for \(key): \(value)")

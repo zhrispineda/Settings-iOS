@@ -2,12 +2,11 @@
 //  SiriView.swift
 //  Preferences
 //
-//  Settings > Siri
+//  Settings > [Apple Intelligence & Siri/Siri]
 //
 
 import SwiftUI
 import ContactsUI
-import TipKit
 
 struct SiriView: View {
     @AppStorage("SiriEnabled") private var siriEnabled = false
@@ -17,7 +16,7 @@ struct SiriView: View {
     @State private var showingEnableSiriAlert = false
     @State private var showingEnableSiriPopup = false
     @State private var allowSiriWhenLockedEnabled = true
-    @AppStorage("SiriMyInfoContact") private var myInfoContact = String()
+    @AppStorage("SiriMyInfoContact") private var myInfoContact = ""
     
     @AppStorage("SuggestAppsBeforeSearching") private var showSuggestionsEnabled = true
     @State private var showingResetHiddenSuggestionsAlert = false
@@ -32,6 +31,8 @@ struct SiriView: View {
     @State private var frameY: Double = 0
     @State private var siriPrivacySheet = false
     @State private var intelligencePrivacySheet = false
+    @State private var showingSiriHelpSheet = false
+    @State private var showingIntelligenceHelpSheet = false
     
     let path = "/System/Library/PrivateFrameworks/AssistantSettingsSupport.framework"
     let table = "AssistantSettings"
@@ -66,7 +67,16 @@ struct SiriView: View {
             // MARK: Placard Section
             if UIDevice.IntelligenceCapability {
                 Section {
-                    Placard(title: "ASSISTANT_AND_GM".localized(path: path, table: gmTable), icon: "com.apple.application-icon.apple-intelligence", description: UIDevice.iPhone ? "PLACARD_DESCRIPTION_GM".localized(path: path, table: gmTable) : "PLACARD_DESCRIPTION_GM_IPAD".localized(path: path, table: gmTable), beta: true, frameY: $frameY, opacity: $opacity)
+                    Placard(
+                        title: "ASSISTANT_AND_GM".localized(path: path, table: gmTable),
+                        icon: "com.apple.application-icon.apple-intelligence",
+                        description: UIDevice.iPhone
+                        ? "PLACARD_DESCRIPTION_GM".localized(path: path, table: gmTable).replacing("]", with: "](pref://helpkit)")
+                        : "PLACARD_DESCRIPTION_GM_IPAD".localized(path: path, table: gmTable).replacing("]", with: "](pref://helpkit)"),
+                        beta: true,
+                        frameY: $frameY,
+                        opacity: $opacity
+                    )
                     if !UIDevice.IsSimulator {
                         Button("GM_TURN_ON_GM_BUTTON_TITLE".localized(path: path, table: gmTable)) {}
                     }
@@ -76,7 +86,13 @@ struct SiriView: View {
                     }
                 }
             } else {
-                Placard(title: "ASSISTANT".localized(path: path, table: table), icon: "com.apple.application-icon.siri", description: "PLACARD_DESCRIPTION".localized(path: path, table: table), frameY: $frameY, opacity: $opacity)
+                Placard(
+                    title: "ASSISTANT".localized(path: path, table: table),
+                    icon: "com.apple.application-icon.siri",
+                    description: "PLACARD_DESCRIPTION".localized(path: path, table: table).replacing("]", with: "](pref://helpkit)"),
+                    frameY: $frameY,
+                    opacity: $opacity
+                )
             }
             
             // MARK: Siri Requests Section
@@ -129,17 +145,19 @@ struct SiriView: View {
             // MARK: Suggestions Section
             Section {
                 Toggle("SUGGESTIONS_SHOW_BEFORE_SEARCHING".localized(path: path, table: table), isOn: $showSuggestionsEnabled)
-                Button("SUGGESTIONS_RESET_HIDDEN_NAME".localized(path: path, table: table)) { UIDevice.iPhone ? showingResetHiddenSuggestionsAlert.toggle() : showingResetHiddenSuggestionsPopup.toggle() }
-                    .alert("SUGGESTIONS_RESET_HIDDEN_TITLE".localized(path: path, table: table), isPresented: $showingResetHiddenSuggestionsPopup) {
-                        Button("SUGGESTIONS_RESET_HIDDEN_TITLE".localized(path: path, table: table), role: .destructive) {}
-                        Button("SUGGESTIONS_RESET_HIDDEN_CANCEL".localized(path: path, table: table), role: .cancel) {}
-                    } message: {
-                        Text("SUGGESTIONS_RESET_HIDDEN_PROMPT".localized(path: path, table: table))
-                    }
-                    .confirmationDialog("SUGGESTIONS_RESET_HIDDEN_PROMPT".localized(path: path, table: table), isPresented: $showingResetHiddenSuggestionsAlert, titleVisibility: .visible) {
-                        Button("SUGGESTIONS_RESET_HIDDEN_TITLE".localized(path: path, table: table), role: .destructive) {}
-                        Button("SUGGESTIONS_RESET_HIDDEN_CANCEL".localized(path: path, table: table), role: .cancel) {}
-                    }
+                Button("SUGGESTIONS_RESET_HIDDEN_NAME".localized(path: path, table: table)) {
+                    UIDevice.iPhone ? showingResetHiddenSuggestionsAlert.toggle() : showingResetHiddenSuggestionsPopup.toggle()
+                }
+                .alert("SUGGESTIONS_RESET_HIDDEN_TITLE".localized(path: path, table: table), isPresented: $showingResetHiddenSuggestionsPopup) {
+                    Button("SUGGESTIONS_RESET_HIDDEN_TITLE".localized(path: path, table: table), role: .destructive) {}
+                    Button("SUGGESTIONS_RESET_HIDDEN_CANCEL".localized(path: path, table: table), role: .cancel) {}
+                } message: {
+                    Text("SUGGESTIONS_RESET_HIDDEN_PROMPT".localized(path: path, table: table))
+                }
+                .confirmationDialog("SUGGESTIONS_RESET_HIDDEN_PROMPT".localized(path: path, table: table), isPresented: $showingResetHiddenSuggestionsAlert, titleVisibility: .visible) {
+                    Button("SUGGESTIONS_RESET_HIDDEN_TITLE".localized(path: path, table: table), role: .destructive) {}
+                    Button("SUGGESTIONS_RESET_HIDDEN_CANCEL".localized(path: path, table: table), role: .cancel) {}
+                }
                 Toggle("SUGGESTIONS_ALLOW_NOTIFICATIONS".localized(path: path, table: table), isOn: $allowNotificationsEnabled)
                 Toggle("SUGGESTIONS_SHOW_IN_APPLIBRARY".localized(path: path, table: table), isOn: $showAppLibraryEnabled)
                 Toggle("SUGGESTIONS_SHOW_WHEN_SHARING".localized(path: path, table: table), isOn: $showWhenSharingEnabled)
@@ -183,10 +201,19 @@ struct SiriView: View {
             }
         }
         .onOpenURL { url in
-            if url.absoluteString == "pref://siri" {
+            switch url.absoluteString {
+            case "pref://siri":
                 siriPrivacySheet.toggle()
-            } else if url.absoluteString == "pref://intelligence" {
+            case "pref://intelligence":
                 intelligencePrivacySheet.toggle()
+            case "pref://helpkit":
+                if UIDevice.IntelligenceCapability {
+                    showingIntelligenceHelpSheet.toggle()
+                } else {
+                    showingSiriHelpSheet.toggle()
+                }
+            default:
+                SettingsLogger.info("Called onOpenURL with no defined action: \(url)")
             }
         }
         .sheet(isPresented: $siriPrivacySheet) {
@@ -196,6 +223,16 @@ struct SiriView: View {
         .sheet(isPresented: $intelligencePrivacySheet) {
             OnBoardingKitView(bundleID: "com.apple.onboarding.intelligenceengine")
                 .ignoresSafeArea()
+        }
+        .sheet(isPresented: $showingSiriHelpSheet) {
+            HelpKitView(topicID: UIDevice.iPhone ? "ipha48873ed6" : "ipadf4e2ae5b")
+                .ignoresSafeArea(edges: .bottom)
+                .interactiveDismissDisabled()
+        }
+        .sheet(isPresented: $showingIntelligenceHelpSheet) {
+            HelpKitView(topicID: UIDevice.iPhone ? "iphc28624b81" : "ipade5045bb1")
+                .ignoresSafeArea(edges: .bottom)
+                .interactiveDismissDisabled()
         }
     }
 

@@ -23,7 +23,6 @@ extension String {
         return String(format: format, locale: .current, arguments: localizedVariables)
     }
     
-    // MARK: - Experimental
     @MainActor
     func localized(path: String, table: String = "Localizable", _ variables: CVarArg...) -> String {
         var newPath = ""
@@ -32,7 +31,7 @@ extension String {
             guard let newBuild = MGHelper.read(key: "mZfUC7qo4pURNhyMHZ62RQ") else {
                 return self
             }
-            newPath = "/Library/Developer/CoreSimulator/Volumes/iOS_\(newBuild)/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS \(UIDevice.current.systemVersion == "26.0.1" ? "26.0" : UIDevice.current.systemVersion).simruntime/Contents/Resources/RuntimeRoot\(path)"
+            newPath = "/Library/Developer/CoreSimulator/Volumes/iOS_\(newBuild)/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS \(UIDevice.current.systemVersion).simruntime/Contents/Resources/RuntimeRoot\(path)"
         } else {
             newPath = path
         }
