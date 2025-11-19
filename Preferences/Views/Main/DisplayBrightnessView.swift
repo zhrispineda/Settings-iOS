@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DisplayBrightnessView: View {
-    @Environment(\.colorScheme) var colorScheme
+    @Environment(\.colorScheme) private var colorScheme
     @AppStorage("AutomaticAppearanceToggle") private var automaticEnabled = false
     @AppStorage("BoldTextToggle") private var boldTextEnabled = false
     @AppStorage("TrueToneToggle") private var trueToneEnabled = true
@@ -107,7 +107,16 @@ struct DisplayBrightnessView: View {
                 Toggle("AUTOMATIC".localized(path: path, table: table), isOn: $automaticEnabled.animation())
                 
                 if automaticEnabled {
-                    SettingsLink("APPEARANCE_OPTIONS".localized(path: path, table: table), status: "LIGHT_UNTIL_SUNSET".localized(path: path, table: table), destination: EmptyView())
+                    SettingsLink(
+                        "APPEARANCE_OPTIONS".localized(path: path, table: table),
+                        status: "LIGHT_UNTIL_SUNSET".localized(path: path, table: table)
+                    ) {
+                        BundleControllerView(
+                            "/System/Library/PrivateFrameworks/Settings/DisplayAndBrightnessSettings.framework/DisplayAndBrightnessSettings",
+                            controller: "DBSDeviceAppearanceScheduleController",
+                            title: "APPEARANCE_SCHEDULE".localized(path: path, table: "DeviceAppearanceSchedule")
+                        )
+                    }
                 }
             } header: {
                 Text("APPEARANCE".localized(path: path, table: table))
@@ -131,7 +140,14 @@ struct DisplayBrightnessView: View {
             
             // MARK: Text
             Section {
-                NavigationLink("TEXT_SIZE".localized(path: path, table: table), destination: BundleControllerView("/System/Library/PrivateFrameworks/Settings/DisplayAndBrightnessSettings.framework/DisplayAndBrightnessSettings", controller: "DBSLargeTextController", title: "TEXT_SIZE", table: table))
+                NavigationLink(
+                    "TEXT_SIZE".localized(path: path, table: table),
+                    destination: BundleControllerView(
+                        "/System/Library/PrivateFrameworks/Settings/DisplayAndBrightnessSettings.framework/DisplayAndBrightnessSettings",
+                        controller: "DBSLargeTextController",
+                        title: "TEXT_SIZE".localized(path: path, table: table)
+                    )
+                )
                 Toggle("BOLD_TEXT".localized(path: path, table: table), isOn: $boldTextEnabled)
             }
             
@@ -166,16 +182,10 @@ struct DisplayBrightnessView: View {
             // MARK: Auto-Lock
             Section {
                 SettingsLink(
-                    "AUTOLOCK".localized(
-                        path: path,
-                        table: table
-                    ),
-                    status: autoLockDuration.localized(
-                        path: path,
-                        table: table
-                    ),
+                    "AUTOLOCK".localized(path: path, table: table),
+                    status: autoLockDuration.localized(path: path, table: table),
                     destination: SelectOptionList(
-                        "AUTOLOCK",
+                        "AUTOLOCK".localized(path: path, table: table),
                         options: UIDevice.iPhone ? phoneOptions : tabletOptions,
                         selectedBinding: $autoLockDuration,
                         table: "Display"
@@ -221,7 +231,16 @@ struct DisplayBrightnessView: View {
             
             // MARK: Display
             Section {
-                SettingsLink("VIEW".localized(path: path, table: table), status: "DEFAULT".localized(path: "/System/Library/PreferenceBundles/AccessibilitySettings.bundle", table: "Accessibility"), destination: EmptyView())
+                SettingsLink(
+                    "VIEW".localized(path: path, table: table),
+                    status: "DEFAULT".localized(path: "/System/Library/PreferenceBundles/AccessibilitySettings.bundle", table: "Accessibility")
+                ) {
+                    BundleControllerView(
+                        "/System/Library/PrivateFrameworks/Settings/DisplayAndBrightnessSettings.framework/DisplayAndBrightnessSettings",
+                        controller: "DBSDisplayZoomSelectionListController",
+                        title: "VIEW".localized(path: path, table: table)
+                    )
+                }
             } header: {
                 Text("DISPLAY_ZOOM_PRO".localized(path: path, table: table))
             } footer: {
