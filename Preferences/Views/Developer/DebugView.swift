@@ -71,9 +71,7 @@ struct DebugView: View {
         var bundlePath = ""
 
         if UIDevice.IsSimulated {
-            let build = MGHelper.read(key: "mZfUC7qo4pURNhyMHZ62RQ") ?? ""
-            
-            bundlePath = "/Library/Developer/CoreSimulator/Volumes/iOS_\(build)/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS \(UIDevice.current.systemVersion).simruntime/Contents/Resources/RuntimeRoot\(path)"
+            bundlePath = "/Library/Developer/CoreSimulator/Volumes/iOS_\(UIDevice.buildVersion)/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS \(UIDevice.current.systemVersion).simruntime/Contents/Resources/RuntimeRoot\(path)"
         } else {
             bundlePath = path
         }

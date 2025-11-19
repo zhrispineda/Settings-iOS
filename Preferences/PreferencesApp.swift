@@ -20,7 +20,7 @@ struct PreferencesApp: App {
         .commands {
             CommandGroup(replacing: .appSettings) {
                 Button("About This iPad", systemImage: "ipad") {}
-                if UIDevice.InternalInstallCapability {
+                if UIDevice.`apple-internal-install` {
                     Button("Debug Menu") {
                         PrimarySettingsListModel.shared.showingDebugMenu.toggle()
                     }.keyboardShortcut("/")

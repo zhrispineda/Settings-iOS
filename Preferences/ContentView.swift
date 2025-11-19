@@ -104,7 +104,7 @@ struct ContentView: View {
             }
         }
         .overlay {
-            if UIDevice.InternalInstallCapability {
+            if UIDevice.`apple-internal-install` {
                 VStack {
                     DebugMenuGestureView {
                         model.showingDebugMenu.toggle()

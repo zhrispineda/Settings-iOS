@@ -174,7 +174,7 @@ struct SettingsGroup: View {
         case .appleIntelligence:
             return UIDevice.IntelligenceCapability
         case .isInternal:
-            return UIDevice.InternalInstallCapability
+            return UIDevice.`apple-internal-install`
         case .isPhysical:
             return !UIDevice.IsSimulator || configuration.forcePhysical
         case .developerMode:

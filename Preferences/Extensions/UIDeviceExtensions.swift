@@ -31,6 +31,17 @@ extension UIDevice {
         MGHelper.read(key: key).flatMap(Bool.init) ?? fallback
     }
     
+    /// A helper function to better simplify key responses that return `String` values.
+    ///
+    /// - Parameters:
+    ///   - key: The key to query.
+    ///   - fallback: The default value to fallback to. Set to "" by default.
+    ///
+    /// - Returns: The `key`'s `String` response or `fallback`'s value if nil.
+    private static func MGGetStringAnswer(key: String, fallback: String = "") -> String {
+        MGHelper.read(key: key) ?? fallback
+    }
+    
     /// Returns the device storage capacity as an optional String. (e.g. "32 GB", "512 GB", "2 TB")
     static let storageCapacity: String? = {
         var diskCapacity = ""
@@ -334,7 +345,10 @@ extension UIDevice {
     }()
     
     /// A Boolean value that indicates whether the device is on an internal install.
-    static let InternalInstallCapability = MGGetBoolAnswer(key: "EqrsVvjcYDdxHBiQmGhAWw")
+    static let `apple-internal-install` = MGGetBoolAnswer(key: "EqrsVvjcYDdxHBiQmGhAWw")
+    
+    /// The current build of the operating system.
+    static let buildVersion = MGGetStringAnswer(key: "mZfUC7qo4pURNhyMHZ62RQ")
     
     /// A Boolean value that indicates whether the device is a security research device.
     static let ResearchFuse = MGGetBoolAnswer(key: "XYlJKKkj2hztRP1NWWnhlw")
