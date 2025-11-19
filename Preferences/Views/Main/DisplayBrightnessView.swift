@@ -55,7 +55,7 @@ struct DisplayBrightnessView: View {
                                     .font(.footnote)
                                     .fontWeight(.semibold)
                                     .foregroundStyle(.white)
-                                    .padding(.bottom, UIDevice.iPhone ? 75 : 80)
+                                    .padding(.bottom, UIDevice.iPhone ? 75 : 25)
                             }
                             Text("COMPATIBLE_APPEARANCE_CHOICE_LIGHT".localized(path: path, table: table))
                                 .font(.subheadline)
@@ -86,7 +86,7 @@ struct DisplayBrightnessView: View {
                                     .font(.footnote)
                                     .fontWeight(.semibold)
                                     .foregroundStyle(.white)
-                                    .padding(.bottom, UIDevice.iPhone ? 75 : 80)
+                                    .padding(.bottom, UIDevice.iPhone ? 75 : 25)
                             }
                             Text("COMPATIBLE_APPEARANCE_CHOICE_DARK".localized(path: path, table: table))
                                 .font(.subheadline)
@@ -111,6 +111,22 @@ struct DisplayBrightnessView: View {
                 }
             } header: {
                 Text("APPEARANCE".localized(path: path, table: table))
+            }
+            
+            // MARK: Liquid Glass
+            Section {
+                SettingsLink(
+                    "LIQUID_GLASS".localized(path: path, table: table),
+                    status: "CLEAR".localized(path: path, table: table)
+                ) {
+                    BundleControllerView(
+                        "/System/Library/PrivateFrameworks/Settings/DisplayAndBrightnessSettings.framework/DisplayAndBrightnessSettings",
+                        controller: "DBSLiquidGlassController",
+                        title: "LIQUID_GLASS".localized(path: path, table: table)
+                    )
+                }
+            } footer: {
+                Text("LIQUID_GLASS_ROOT_FOOTER".localized(path: path, table: table))
             }
             
             // MARK: Text
