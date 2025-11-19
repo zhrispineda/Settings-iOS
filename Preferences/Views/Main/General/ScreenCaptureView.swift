@@ -37,7 +37,7 @@ struct ScreenCaptureView: View {
                 }
             }
             
-            if !UIDevice.IsSimulator {
+            if !UIDevice.IsSimulator && UIDevice.`hdr-image-capture` {
                 Section {
                     Picker("Format", selection: $format) {
                         ForEach(options, id: \.self) { option in

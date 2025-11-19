@@ -187,12 +187,12 @@ struct DisplayBrightnessView: View {
                     Toggle("RAISE_TO_WAKE".localized(path: path, table: table), isOn: $raiseToWakeEnabled)
                 }
                 // Lock / Unlock
-                if UIDevice.HallEffectCapability {
+                if UIDevice.`hall-effect-sensor` {
                     Toggle("SMART_CASE_LOCK".localized(path: path, table: table), isOn: $smartCoverEnabled)
                 }
             } footer: {
                 VStack(alignment: .leading) {
-                    if UIDevice.HallEffectCapability {
+                    if UIDevice.`hall-effect-sensor` {
                         Text(lowPowerMode ? "SMART_CASE_LOCK_FOOTER".localized(path: path, table: table) + "\n" : "SMART_CASE_LOCK_FOOTER".localized(path: path, table: table))
                     }
                     if lowPowerMode {

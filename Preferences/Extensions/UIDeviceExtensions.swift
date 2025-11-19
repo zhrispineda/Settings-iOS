@@ -169,16 +169,6 @@ extension UIDevice {
         }
     }()
     
-    /// Returns a Bool on whether the device has a hall effect sensor.
-    static let HallEffectCapability: Bool = {
-        if let answer = MGHelper.read(key: "Pop5T2XQdDA60MRyxQJdQ") { // hall-effect-sensor key
-            return Bool(answer)!
-        }
-        
-        // Fallback
-        return false
-    }()
-    
     /// Returns a Bool on whether the device has a Home Button.
     static let HomeButtonCapability: Bool = {
         if let answer = MGHelper.read(key: "JwLB44/jEB8aFDpXQ16Tuw") { // HomeButtonType key
@@ -216,16 +206,6 @@ extension UIDevice {
         return !capableDevices.contains(identifier)
     }()
     
-    /// Returns a Bool on whether the device has the hdr-image-capture capability.
-    static let HDRImageCaptureCapability: Bool = {
-        if let answer = MGHelper.read(key: "fh6DnnDGDVZ5kZ9nYn/GrQ") { // hdr-image-capture key
-            return Bool(answer)!
-        }
-        
-        // Fallback
-        return false
-    }()
-    
     /// Returns a Bool on whether the device has Macro Lens capability.
     static let MacroLensCapability: Bool = {
         let capableDevices: Set<String> = ["iPhone14,2", "iPhone14,3", "iPhone15,2", "iPhone15,3", "iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4", "iPhone18,1", "iPhone18,2", "iPhone18,3"]
@@ -236,17 +216,6 @@ extension UIDevice {
     static let NarrowNotch = {
         let capableDevices: Set<String> = ["iPhone14,2", "iPhone14,3", "iPhone14,4", "iPhone14,5", "iPhone14,7", "iPhone14,8", "iPhone17,5"]
         return capableDevices.contains(identifier)
-    }()
-    
-    /// Returns a Bool on whether the device is capable of Face ID.
-    static let PearlIDCapability: Bool = {
-        if let answer = MGHelper.read(key: "8olRm6C1xqr7AJGpLRnpSw") { // PearlIDCapability key
-            return Bool(answer)!
-        }
-        
-        // Fallback
-        let capableDevices: Set<String> = ["iPhone12,8", "iPhone14,6", "iPad11,1", "iPad11,2", "iPad11,3", "iPad11,4", "iPad11,6", "iPad11,7", "iPad12,1", "iPad12,2", "iPad13,1", "iPad13,2", "iPad13,16", "iPad13,17", "iPad14,8", "iPad14,9", "iPad14,10", "iPad14,11", "iPad15,3", "iPad15,4", "iPad15,5", "iPad15,6", "iPad15,7", "iPad15,8"]
-        return !capableDevices.contains(identifier)
     }()
     
     /// Returns a Bool on whether the device is capable of Action Mode.
@@ -349,6 +318,15 @@ extension UIDevice {
     
     /// The current build of the operating system.
     static let buildVersion = MGGetStringAnswer(key: "mZfUC7qo4pURNhyMHZ62RQ")
+    
+    /// A Boolean value that indicates whether the device supports a Hall effect sensor.
+    static let `hall-effect-sensor` = MGGetBoolAnswer(key: "Pop5T2XQdDA60MRyxQJdQ")
+    
+    /// A Boolean value that indicates whether the device supports HDR image capture.
+    static let `hdr-image-capture` = MGGetBoolAnswer(key: "fh6DnnDGDVZ5kZ9nYn/GrQ")
+    
+    /// A Boolean value that indicates whether the device supports Face ID.
+    static let PearlIDCapability = MGGetBoolAnswer(key: "8olRm6C1xqr7AJGpLRnpSw")
     
     /// A Boolean value that indicates whether the device is a security research device.
     static let ResearchFuse = MGGetBoolAnswer(key: "XYlJKKkj2hztRP1NWWnhlw")
