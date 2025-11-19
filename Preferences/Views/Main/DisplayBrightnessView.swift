@@ -202,9 +202,18 @@ struct DisplayBrightnessView: View {
             }
             
             if UIDevice.AlwaysOnDisplayCapability {
-                // MARK: Always-On
+                // MARK: Always On Display
                 Section {
-                    SettingsLink("ALWAYS_ON_DISPLAY".localized(path: path, table: table), status: "ALWAYS_ON_ENABLED".localized(path: path, table: table), destination: EmptyView())
+                    SettingsLink(
+                        "ALWAYS_ON_DISPLAY".localized(path: path, table: table),
+                        status: "ALWAYS_ON_ENABLED".localized(path: path, table: table)
+                    ) {
+                        BundleControllerView(
+                            "/System/Library/PrivateFrameworks/Settings/DisplayAndBrightnessSettings.framework/DisplayAndBrightnessSettings",
+                            controller: "DBSAlwaysOnViewController",
+                            title: "ALWAYS_ON_DISPLAY".localized(path: path, table: table)
+                        )
+                    }
                 } footer: {
                     Text("ALWAYS_ON_DESCRIPTION".localized(path: path, table: table))
                 }
