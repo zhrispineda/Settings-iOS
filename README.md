@@ -1,15 +1,20 @@
 # Settings-iOS
 A **work-in-progress** SwiftUI recreation of the iOS & iPadOS Settings app (Preferences.app).
 
-> [!IMPORTANT]  
-> This project is focused on iOS & iPadOS 26 using Xcode 26. Use an older branch to deploy this project on iOS & iPadOS 18/Xcode 16 or earlier.
+> [!NOTE]  
+> This project is focused on the latest public releases of iOS, iPadOS, and Xcode. Use an older branch to use older versions.
 
 ## Information
-- This personal project is a recreation of Apple's Settings app for iOS and iPadOS 26.1 (23B85).
+- Recreation of Apple's Settings app for iOS and iPadOS 26.1 (23B85).
 - All features within the app are only simulations and have no effect on the device outside of the app.
 - Features available within the app vary depending on the device model and its capabilities to make this recreation as accurate as possible.
 - In some panes, the app will load actual preference bundles internally using a view controller bridge (functionality and stability may vary).
 - Previous versions are available as their own branches in this repository, going as far back as 17.4.
+
+> [!CAUTION]
+> This project uses some private APIs that are not intended or supported for public use for demonstration purposes only.
+>
+> **Do not reuse any code in this project that has been identified as relying on private methods.**
 
 ## Preview
 
@@ -39,7 +44,7 @@ As this is a project for learning Swift and SwiftUI, feel free to download or fo
 
 ## Disclaimers
 - All assets including icons and images are not my own in any way.
-- This app is a recreation of Apple's own apps and designs for educational purposes only.
+- This app is a personal, educational recreation of Apple's apps and designs, created in appreciation of the teams who built them.
 - Feel free to look through the commit history to see the project evolve from a single view to its current state.
 - If you have any questions or feedback, please contact me through the options listed on my profile.
 
