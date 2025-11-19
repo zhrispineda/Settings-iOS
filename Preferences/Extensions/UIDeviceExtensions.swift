@@ -145,16 +145,6 @@ extension UIDevice {
         return identifier.contains("iPhone")
     }()
     
-    /// Returns a Bool on whether the device has the cameraRestriction capability.
-    static let cameraRestrictionCapability: Bool = {
-        if let answer = MGHelper.read(key: "2pxKjejpRGpWvUE+3yp5mQ") { // cameraRestriction key
-            return Bool(answer)!
-        }
-        
-        // Fallback
-        return false
-    }()
-    
     /// Returns a Bool on whether the device is capable of Apple Intelligence.
     ///
     /// This uses FoundationModels as an easy public way to check for Apple Intelligence availability.
@@ -199,8 +189,8 @@ extension UIDevice {
     }()
     
     /// Returns a Bool on whether the device is capable of Lens Correction.
-    /// iPhone: https://support.apple.com/guide/iphone/aside/iph4ecb9a67f/18.0/ios/18.0
-    /// iPad: https://support.apple.com/guide/ipad/aside/ipad71aac361/18.0/ipados/18.0
+    /// iPhone: https://support.apple.com/guide/iphone/aside/iph4ecb9a67f
+    /// iPad: https://support.apple.com/guide/ipad/aside/ipad71aac361
     static let LensCorrectionCapability: Bool = {
         let capableDevices: Set<String> = ["iPhone12,8", "iPhone14,6", "iPhone17,5", "iPad8,1", "iPad8,2", "iPad8,3", "iPad8,4", "iPad8,5", "iPad8,6", "iPad8,7", "iPad8,8", "iPad8,9", "iPad8,10", "iPad8,11", "iPad8,12", "iPad11,1", "iPad11,2", "iPad11,3", "iPad11,4", "iPad11,6", "iPad11,7", "iPad13,4", "iPad13,5", "iPad13,6", "iPad13,7", "iPad13,8", "iPad13,9", "iPad13,10", "iPad13,11", "iPad14,3", "iPad14,4", "iPad14,5", "iPad14,6", "iPad15,3", "iPad15,4", "iPad15,5", "iPad15,6", "iPad16,3", "iPad16,4", "iPad16,5", "iPad16,6"]
         return !capableDevices.contains(identifier)
@@ -318,6 +308,9 @@ extension UIDevice {
     
     /// The current build of the operating system.
     static let buildVersion = MGGetStringAnswer(key: "mZfUC7qo4pURNhyMHZ62RQ")
+    
+    /// A Boolean value that indicates whether the device has camera restrictions.
+    static let cameraRestriction = MGGetBoolAnswer(key: "2pxKjejpRGpWvUE+3yp5mQ")
     
     /// A Boolean value that indicates whether the device supports a Hall effect sensor.
     static let `hall-effect-sensor` = MGGetBoolAnswer(key: "Pop5T2XQdDA60MRyxQJdQ")

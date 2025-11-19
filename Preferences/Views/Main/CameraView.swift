@@ -194,7 +194,7 @@ struct CameraView: View {
             // MARK: REQUIRED CAPABILITIES:
             // - cameraRestriction: false
             // - hdr-image-capture: true
-            if UIDevice.cameraRestrictionCapability && UIDevice.`hdr-image-capture` {
+            if UIDevice.cameraRestriction && UIDevice.`hdr-image-capture` {
                 Section {
                     Toggle("HDR_KEEP_ORIGINAL_PHOTO".localized(path: path, table: table), isOn: $keepNormalPhoto)
                 } header: {
