@@ -22,6 +22,11 @@ struct DebugView: View {
                     model.selection = model.mainSettings.first
                     dismiss()
                 }
+                if model.path.count > 0 {
+                    Button("\(model.path.count) items on path") {
+                        let _ = model.path.popLast()
+                    }
+                }
             }
 
             Section {
