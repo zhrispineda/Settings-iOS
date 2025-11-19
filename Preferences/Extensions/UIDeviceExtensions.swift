@@ -7,6 +7,19 @@ import SwiftUI
 import FoundationModels
 
 extension UIDevice {
+    /// Checks if the device has an accessible MobileGestalt cache.
+    /// - Returns: The contents of com.apple.MobileGestalt.plist as a dictionary.
+    static func checkDevice() -> [String: Any]? {
+        let fileURL = URL(fileURLWithPath: "/private/var/containers/Shared/SystemGroup/systemgroup.com.apple.mobilegestaltcache/Library/Caches/com.apple.MobileGestalt.plist")
+        
+        guard FileManager.default.fileExists(atPath: fileURL.path),
+            let dict = NSDictionary(contentsOf: fileURL) as? [String: Any] else {
+                return nil // Preview/Simulator instance
+        }
+        
+        return dict // Physical device
+    }
+    
     /// A helper function to better simplify key responses that return `Bool` values.
     ///
     /// - Parameters:
@@ -320,28 +333,9 @@ extension UIDevice {
         return capableDevices.contains(identifier)
     }()
     
-    static let InternalInstallCapability: Bool = {
-        if let answer = MGHelper.read(key: "EqrsVvjcYDdxHBiQmGhAWw") {
-            return Bool(answer)!
-        }
-       return false
-    }()
+    /// A Boolean value that indicates whether the device is on an internal install.
+    static let InternalInstallCapability = MGGetBoolAnswer(key: "EqrsVvjcYDdxHBiQmGhAWw")
     
     /// A Boolean value that indicates whether the device is a security research device.
     static let ResearchFuse = MGGetBoolAnswer(key: "XYlJKKkj2hztRP1NWWnhlw")
-    
-    /// Checks if a device has an accessible MobileGestalt.plist cache.
-    /// - Returns: The contents of MobileGestalt.plist as a dictionary.
-    static func checkDevice() -> [String: Any]? {
-        let fileURL = URL(fileURLWithPath: "/private/var/containers/Shared/SystemGroup/systemgroup.com.apple.mobilegestaltcache/Library/Caches/com.apple.MobileGestalt.plist")
-        
-        if FileManager.default.fileExists(atPath: fileURL.path) { // Physical device
-            guard let dict = NSDictionary(contentsOf: fileURL) as? [String: Any] else {
-                print("Failed to load file: \(fileURL.path)")
-                return nil
-            }
-            return dict
-        }
-        return nil // Preview/Simulator instance
-    }
 }
