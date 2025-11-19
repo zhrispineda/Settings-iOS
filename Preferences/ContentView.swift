@@ -136,6 +136,7 @@ struct ContentView: View {
             NavigationStack {
                 DebugView()
             }
+            .presentationDetents(UIDevice.iPhone ? [.medium, .large] : [.large])
         }
     }
 }
