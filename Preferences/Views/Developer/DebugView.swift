@@ -25,7 +25,7 @@ struct DebugView: View {
             }
 
             Section {
-                NavigationLink("Search") {}
+                NavigationLink("Search", destination: DebugSearchView())
                 NavigationLink("Debug Settings") {}
             }
             
@@ -73,7 +73,7 @@ struct DebugView: View {
             bundlePath = path
         }
         
-        if bundlePath.isEmpty {
+        if path.isEmpty {
             let buildVersion = Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? "Error"
             let shortVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "Error"
             return "\(buildVersion) (\(shortVersion))"

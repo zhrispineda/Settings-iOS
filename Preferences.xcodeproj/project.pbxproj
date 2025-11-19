@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8302AD272ECD4052001BC32D /* DebugSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302AD262ECD4052001BC32D /* DebugSearchView.swift */; };
 		8306AE6C2D0665A400D1AE5D /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8306AE6B2D0665A400D1AE5D /* ViewExtensions.swift */; };
 		83076D042C7E754600BFFAFE /* BackgroundAppRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83076D032C7E754600BFFAFE /* BackgroundAppRefreshView.swift */; };
 		830976D32CDD1B2F0087F1A1 /* FollowUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830976D22CDD1B2F0087F1A1 /* FollowUpView.swift */; };
@@ -227,6 +228,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8302AD262ECD4052001BC32D /* DebugSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugSearchView.swift; sourceTree = "<group>"; };
 		8306AE6B2D0665A400D1AE5D /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		83076D032C7E754600BFFAFE /* BackgroundAppRefreshView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundAppRefreshView.swift; sourceTree = "<group>"; };
 		830976D22CDD1B2F0087F1A1 /* FollowUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowUpView.swift; sourceTree = "<group>"; };
@@ -473,6 +475,14 @@
 				831658A22E74A7290028C8D5 /* 26Phone.png */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		8302AD252ECD4038001BC32D /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				8302AD262ECD4052001BC32D /* DebugSearchView.swift */,
+			);
+			path = Debug;
 			sourceTree = "<group>";
 		};
 		832928472B857763006611CF /* Privacy & Security */ = {
@@ -1086,6 +1096,7 @@
 		83F626D22B827EEC00ED343F /* Developer */ = {
 			isa = PBXGroup;
 			children = (
+				8302AD252ECD4038001BC32D /* Debug */,
 				83D20AD02D875F6B000B26E6 /* DebugView.swift */,
 				8311D3B12EA716E300915C49 /* InternalSettingsView.swift */,
 				8311D3B32EA7170500915C49 /* CarrierSettingsView.swift */,
@@ -1404,6 +1415,7 @@
 				83B12C142D6525A100DF6EF6 /* SiriSuggestionsView.swift in Sources */,
 				83D5BD542DB819F900F5B219 /* ConfigureIPView.swift in Sources */,
 				83D308692B8AD145002A9B7F /* SafariCameraView.swift in Sources */,
+				8302AD272ECD4052001BC32D /* DebugSearchView.swift in Sources */,
 				83815CF12B768F0500F53A0F /* HealthView.swift in Sources */,
 				83815CE72B768DF100F53A0F /* SafariView.swift in Sources */,
 				833C6EB22C20CE7800A8D91C /* SearchDetailView.swift in Sources */,
