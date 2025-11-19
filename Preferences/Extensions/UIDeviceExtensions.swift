@@ -6,7 +6,18 @@ An extension of UIDevice to add custom functions for getting device information.
 import SwiftUI
 import FoundationModels
 
-public extension UIDevice {
+extension UIDevice {
+    /// A helper function to better simplify key responses that return `Bool` values.
+    ///
+    /// - Parameters:
+    ///   - key: The key to query.
+    ///   - fallback: The default value to fallback to. Set to false by default.
+    ///
+    /// - Returns: The `key`'s `Bool` response or `fallback`'s value if nil.
+    private static func MGGetBoolAnswer(key: String, fallback: Bool = false) -> Bool {
+        MGHelper.read(key: key).flatMap(Bool.init) ?? fallback
+    }
+    
     /// Returns the device storage capacity as an optional String. (e.g. "32 GB", "512 GB", "2 TB")
     static let storageCapacity: String? = {
         var diskCapacity = ""
@@ -316,13 +327,8 @@ public extension UIDevice {
        return false
     }()
     
-    static let ResearchFuse: Bool = {
-        if let answer = MGHelper.read(key: "XYlJKKkj2hztRP1NWWnhlw") {
-            return Bool(answer)!
-        }
-        
-        return false
-    }()
+    /// A Boolean value that indicates whether the device is a security research device.
+    static let ResearchFuse = MGGetBoolAnswer(key: "XYlJKKkj2hztRP1NWWnhlw")
     
     /// Checks if a device has an accessible MobileGestalt.plist cache.
     /// - Returns: The contents of MobileGestalt.plist as a dictionary.
