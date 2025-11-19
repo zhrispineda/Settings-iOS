@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8302AD272ECD4052001BC32D /* DebugSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302AD262ECD4052001BC32D /* DebugSearchView.swift */; };
+		8302AD292ECD42A5001BC32D /* DebugSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302AD282ECD42A5001BC32D /* DebugSettingsView.swift */; };
 		8306AE6C2D0665A400D1AE5D /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8306AE6B2D0665A400D1AE5D /* ViewExtensions.swift */; };
 		83076D042C7E754600BFFAFE /* BackgroundAppRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83076D032C7E754600BFFAFE /* BackgroundAppRefreshView.swift */; };
 		830976D32CDD1B2F0087F1A1 /* FollowUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830976D22CDD1B2F0087F1A1 /* FollowUpView.swift */; };
@@ -229,6 +230,7 @@
 
 /* Begin PBXFileReference section */
 		8302AD262ECD4052001BC32D /* DebugSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugSearchView.swift; sourceTree = "<group>"; };
+		8302AD282ECD42A5001BC32D /* DebugSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugSettingsView.swift; sourceTree = "<group>"; };
 		8306AE6B2D0665A400D1AE5D /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		83076D032C7E754600BFFAFE /* BackgroundAppRefreshView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundAppRefreshView.swift; sourceTree = "<group>"; };
 		830976D22CDD1B2F0087F1A1 /* FollowUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowUpView.swift; sourceTree = "<group>"; };
@@ -481,6 +483,7 @@
 			isa = PBXGroup;
 			children = (
 				8302AD262ECD4052001BC32D /* DebugSearchView.swift */,
+				8302AD282ECD42A5001BC32D /* DebugSettingsView.swift */,
 			);
 			path = Debug;
 			sourceTree = "<group>";
@@ -1415,6 +1418,7 @@
 				83B12C142D6525A100DF6EF6 /* SiriSuggestionsView.swift in Sources */,
 				83D5BD542DB819F900F5B219 /* ConfigureIPView.swift in Sources */,
 				83D308692B8AD145002A9B7F /* SafariCameraView.swift in Sources */,
+				8302AD292ECD42A5001BC32D /* DebugSettingsView.swift in Sources */,
 				8302AD272ECD4052001BC32D /* DebugSearchView.swift in Sources */,
 				83815CF12B768F0500F53A0F /* HealthView.swift in Sources */,
 				83815CE72B768DF100F53A0F /* SafariView.swift in Sources */,

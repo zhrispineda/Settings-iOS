@@ -26,7 +26,7 @@ struct DebugView: View {
 
             Section {
                 NavigationLink("Search", destination: DebugSearchView())
-                NavigationLink("Debug Settings") {}
+                NavigationLink("Debug Settings", destination: DebugSettingsView())
             }
             
             Section("Info") {
