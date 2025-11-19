@@ -13,7 +13,7 @@ A **work-in-progress** recreation of the iOS & iPadOS Settings app (Preferences.
 
 > [!CAUTION]
 > This project uses some private APIs that are not intended or supported for public use and is for demonstration purposes only.
-
+>
 > **Do not reuse any code from this project that depends on private methods.** Consider public alternatives instead.
 
 ## Preview
