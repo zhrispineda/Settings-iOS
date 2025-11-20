@@ -19,7 +19,9 @@ struct DebugView: View {
             Section {
                 Button("Reset app navigation state.") {
                     model.path = []
-                    model.selection = model.mainSettings.first
+                    if UIDevice.iPad {
+                        model.selection = model.mainSettings.first
+                    }
                     dismiss()
                 }
                 if model.path.count > 0 {
