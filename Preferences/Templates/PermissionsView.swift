@@ -68,7 +68,7 @@ struct PermissionsView: View {
                 IconToggle("CAMERA".localized(path: path, table: table), isOn: $cameraEnabled, icon: "com.apple.graphic-icon.camera")
             }
             if faceID {
-                IconToggle("FACE_ID".localized(path: path, table: table), isOn: $faceIDEnabled, icon: "com.apple.graphic-icon.face-id")
+                IconToggle("FACE_ID".localized(path: path, table: "Pearl"), isOn: $faceIDEnabled, icon: "com.apple.graphic-icon.face-id")
             }
             if siri {
                 if UIDevice.IntelligenceCapability {
@@ -94,7 +94,7 @@ struct PermissionsView: View {
                 IconToggle("LIVE_ACTIVITIES".localized(path: path, table: table), isOn: $liveActivityEnabled, icon: "com.apple.graphic-icon.live-activities")
             }
             if background {
-                IconToggle("BACKGROUND_APP_REFRESH", isOn: $backgroundAppRefreshEnabled, icon: "com.apple.graphic-icon.background-app-refresh".localized(path: path, table: table))
+                IconToggle("BACKGROUND_APP_REFRESH".localized(path: path, table: table), isOn: $backgroundAppRefreshEnabled, icon: "com.apple.graphic-icon.background-app-refresh".localized(path: path, table: table))
             }
             if cellular && UIDevice.CellularTelephonyCapability {
                 IconToggle("CELLULAR_DATA".localized(path: path, table: table), isOn: $cellularEnabled, icon: "com.apple.graphic-icon.cellular-settings")
