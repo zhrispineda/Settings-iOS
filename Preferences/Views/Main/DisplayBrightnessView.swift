@@ -211,7 +211,7 @@ struct DisplayBrightnessView: View {
                 }
             }
             
-            if UIDevice.AlwaysOnDisplayCapability {
+            if UIDevice.DeviceSupportsAlwaysOnTime {
                 // MARK: Always On Display
                 Section {
                     SettingsLink(
@@ -249,7 +249,13 @@ struct DisplayBrightnessView: View {
             
             if UIDevice.ReferenceModeCapability {
                 // MARK: Reference Mode
-                NavigationLink("ADVANCED".localized(path: path, table: table)) {}
+                NavigationLink("ADVANCED".localized(path: path, table: table)) {
+                    BundleControllerView(
+                        "/System/Library/PrivateFrameworks/Settings/DisplayAndBrightnessSettings.framework/DisplayAndBrightnessSettings",
+                        controller: "DBSReferenceAndCalibrationController",
+                        title: "ADVANCED".localized(path: path, table: table)
+                    )
+                }
             }
         }
         .animation(.default, value: automaticEnabled)

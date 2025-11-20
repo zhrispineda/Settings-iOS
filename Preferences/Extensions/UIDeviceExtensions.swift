@@ -261,17 +261,6 @@ extension UIDevice {
         // Fallback
         return ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] != nil && !configuration.forcePhysical
     }()
-
-    /// Returns a Bool on whether the device is capable of Always On Display.
-    static let AlwaysOnDisplayCapability: Bool = {
-        if let answer = MGHelper.read(key: "2OOJf1VhaM7NxfRok3HbWQ") { // DeviceSupportsAlwaysOnDisplay key
-            return Bool(answer)!
-        }
-        
-        // Fallback
-        let capableDevices: Set<String> = ["iPhone15,2", "iPhone15,3", "iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone18,1", "iPhone18,2", "iPhone18,3", "iPhone18,4"]
-        return capableDevices.contains(identifier)
-    }()
     
     /// Returns a Bool on whether the device is capable of Night Mode.
     static let NightModeCapability: Bool = {
@@ -311,6 +300,9 @@ extension UIDevice {
     
     /// A Boolean value that indicates whether the device has camera restrictions.
     static let cameraRestriction = MGGetBoolAnswer(key: "2pxKjejpRGpWvUE+3yp5mQ")
+    
+    /// A Boolean value that indicates whether the device supports Always On Display.
+    static let DeviceSupportsAlwaysOnTime = MGGetBoolAnswer(key: "j8/Omm6s1lsmTDFsXjsBfA")
     
     /// A Boolean value that indicates whether the device supports a Hall effect sensor.
     static let `hall-effect-sensor` = MGGetBoolAnswer(key: "Pop5T2XQdDA60MRyxQJdQ")

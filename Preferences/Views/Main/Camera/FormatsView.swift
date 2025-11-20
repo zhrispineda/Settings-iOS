@@ -59,7 +59,7 @@ struct FormatsView: View {
                 
                 if UIDevice.RearFacingCameraHDRCapability {
                     Section {
-                        if UIDevice.AlwaysOnDisplayCapability {
+                        if UIDevice.DeviceSupportsAlwaysOnTime {
                             Toggle("CAM_PRESERVE_PRO_RAW_48MP_SWITCH".localized(path: path, table: table), isOn: $proRawResolutionControl)
                         } else if UIDevice.AlwaysCaptureDepthCapability {
                             Toggle("CAM_PRESERVE_48MP_CONTROL_SWITCH".localized(path: path, table: table), isOn: $resolutionControl)

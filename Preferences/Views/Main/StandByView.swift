@@ -24,7 +24,7 @@ struct StandByView: View {
             }
             
             if standByEnabled {
-                if UIDevice.AlwaysOnDisplayCapability {
+                if UIDevice.DeviceSupportsAlwaysOnTime {
                     NavigationLink("ALWAYS_ON_DISPLAY_OPTIONS".localized(path: path, table: table), destination: DisplayView())
                 } else {
                     Section {
