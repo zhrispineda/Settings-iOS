@@ -117,7 +117,16 @@ struct NotificationsView: View {
             
             if UIDevice.IntelligenceCapability {
                 Section {
-                    SettingsLink("PRIORITIZE_NOTIFICATIONS".localized(path: path, table: table), status: "OFF".localized(path: path, table: table), destination: EmptyView())
+                    SettingsLink(
+                        "PRIORITIZE_NOTIFICATIONS".localized(path: path, table: table),
+                        status: "OFF".localized(path: path, table: table)
+                    ) {
+                        BundleControllerView(
+                            "/System/Library/PreferenceBundles/NotificationsSettings.bundle/NotificationsSettings",
+                            controller: "NCPriorityNotificationsDetailController",
+                            title: "PRIORITIZE_NOTIFICATIONS".localized(path: path, table: table)
+                        )
+                    }
                     SettingsLink("SUMMARIZE_NOTIFICATIONS".localized(path: path, table: table), status: "OFF".localized(path: path, table: table), destination: SummarizeNotificationsView())
                 } header: {
                     Text("APPLE_INTELLIGENCE".localized(path: path, table: table))
