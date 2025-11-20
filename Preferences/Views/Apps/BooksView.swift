@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct BooksView: View {
-    @AppStorage("ReadingMenuPosition") private var readingMenuPosition = "Right"
     @AppStorage("AutoHyphenationEnabled") private var autoHyphenation = true
     @AppStorage("BothMarginsAdvanceEnabled") private var bothMarginsAdvance = false
     @AppStorage("AutoInvertImages") private var autoInvertImages = true
@@ -46,48 +45,8 @@ struct BooksView: View {
             .disabled(true)
             
             Section("Reading Menu Position".localized(path: path, table: table)) {
-                HStack {
-                    Spacer()
-                    Button {
-                        readingMenuPosition = "Left"
-                    } label: {
-                        VStack(spacing: 15) {
-                            Image("LeftAlignUI-iPhone")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 60)
-                                .padding(.top, 5)
-                            Text("Left", tableName: table)
-                                .padding(.bottom, -5)
-                            Image(systemName: readingMenuPosition == "Left" ? "checkmark.circle.fill": "circle")
-                                .foregroundStyle(readingMenuPosition == "Left" ? Color.white : .blue, .blue)
-                                .font(.title2)
-                        }
-                    }
-                    .buttonStyle(MenuPositionButton())
-                    
-                    Spacer()
-                    
-                    Button {
-                        readingMenuPosition = "Right"
-                    } label: {
-                        VStack(spacing: 15) {
-                            Image("RightAlignUI-\(UIDevice.current.model)")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 60)
-                                .padding(.top, 5)
-                            Text("Right", tableName: table)
-                                .padding(.bottom, -5)
-                            Image(systemName: readingMenuPosition == "Right" ? "checkmark.circle.fill": "circle")
-                                .foregroundStyle(readingMenuPosition == "Right" ? Color.white : .blue, .blue)
-                                .font(.title2)
-                        }
-                    }
-                    .buttonStyle(MenuPositionButton())
-                    
-                    Spacer()
-                }
+                CustomView("\(path)/iBooksSettings", controller: "BKActionMenuPositionCell")
+                    .frame(minHeight: 200)
             }
             
             Section("Reading".localized(path: path, table: table)) {
