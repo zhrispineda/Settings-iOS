@@ -181,6 +181,8 @@ struct SettingsGroup: View {
             return UIDevice.IsSimulator || configuration.developerMode
         case .isSimulator:
             return UIDevice.IsSimulator
+        case .carrierInstall:
+            return false
         }
     }
 }
