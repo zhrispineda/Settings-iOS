@@ -96,6 +96,7 @@ enum Capabilities {
     case soundsHaptics
     case touchID
     case appleIntelligence
+    case carrierInstall
     case isInternal
     case isPhysical
     case isSimulator
@@ -451,7 +452,7 @@ final class PrimarySettingsListModel {
             SettingsItem(
                 type: .carrierSettings,
                 icon: "com.apple.graphic-icon.carrier-settings",
-                capabilities: [.isInternal],
+                capabilities: [.carrierInstall, .isInternal],
                 destination: AnyView(CarrierSettingsView())
             ),
             SettingsItem(
