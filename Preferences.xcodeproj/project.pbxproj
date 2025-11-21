@@ -120,7 +120,6 @@
 		83898FCD2B8A94BE0020C7BB /* HealthDetailsDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83898FCC2B8A94BE0020C7BB /* HealthDetailsDataView.swift */; };
 		83898FCF2B8A9A1F0020C7BB /* MedicalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83898FCE2B8A9A1F0020C7BB /* MedicalView.swift */; };
 		83898FD12B8A9F680020C7BB /* DataAccessDevicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83898FD02B8A9F680020C7BB /* DataAccessDevicesView.swift */; };
-		83898FD42B8AA25A0020C7BB /* ShortcutsAdvancedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83898FD32B8AA25A0020C7BB /* ShortcutsAdvancedView.swift */; };
 		838A9EC22B7E81EC00ED261C /* ContentPrivacyRestrictionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838A9EC12B7E81EC00ED261C /* ContentPrivacyRestrictionsView.swift */; };
 		838A9EC42B7E823300ED261C /* SettingsLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838A9EC32B7E823300ED261C /* SettingsLink.swift */; };
 		838AF99C2D629138008FFA8B /* ScreenSharingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838AF99B2D629138008FFA8B /* ScreenSharingView.swift */; };
@@ -328,7 +327,6 @@
 		83898FCC2B8A94BE0020C7BB /* HealthDetailsDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDetailsDataView.swift; sourceTree = "<group>"; };
 		83898FCE2B8A9A1F0020C7BB /* MedicalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalView.swift; sourceTree = "<group>"; };
 		83898FD02B8A9F680020C7BB /* DataAccessDevicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAccessDevicesView.swift; sourceTree = "<group>"; };
-		83898FD32B8AA25A0020C7BB /* ShortcutsAdvancedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutsAdvancedView.swift; sourceTree = "<group>"; };
 		838A9EC12B7E81EC00ED261C /* ContentPrivacyRestrictionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentPrivacyRestrictionsView.swift; sourceTree = "<group>"; };
 		838A9EC32B7E823300ED261C /* SettingsLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLink.swift; sourceTree = "<group>"; };
 		838AF99B2D629138008FFA8B /* ScreenSharingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenSharingView.swift; sourceTree = "<group>"; };
@@ -568,7 +566,6 @@
 			isa = PBXGroup;
 			children = (
 				83898FC82B8A8EF20020C7BB /* Health */,
-				83898FD22B8AA2240020C7BB /* Shortcuts */,
 				83B1D5332D6BC3C800C26010 /* DefaultAppsView.swift */,
 				8397F9E82CDF20E9004DFE2F /* BooksView.swift */,
 				836167D72C25FA3A00458CD8 /* CalendarView.swift */,
@@ -797,14 +794,6 @@
 				83898FCC2B8A94BE0020C7BB /* HealthDetailsDataView.swift */,
 			);
 			path = "Health Details";
-			sourceTree = "<group>";
-		};
-		83898FD22B8AA2240020C7BB /* Shortcuts */ = {
-			isa = PBXGroup;
-			children = (
-				83898FD32B8AA25A0020C7BB /* ShortcutsAdvancedView.swift */,
-			);
-			path = Shortcuts;
 			sourceTree = "<group>";
 		};
 		838A9EC02B7E81D900ED261C /* Screen Time */ = {
@@ -1270,7 +1259,6 @@
 				83B619C92B93DEBD00EFEA90 /* ScreenDistanceView.swift in Sources */,
 				837C03072B7F192F004D6C71 /* AppInstallationsPurchasesView.swift in Sources */,
 				83815CE32B768D5800F53A0F /* PrivacySecurityView.swift in Sources */,
-				83898FD42B8AA25A0020C7BB /* ShortcutsAdvancedView.swift in Sources */,
 				835683942B754623000FB136 /* SLabel.swift in Sources */,
 				83F3F6A32B7D1454003CC310 /* VPNDeviceManagementView.swift in Sources */,
 				832EF38F2B814EC80066A1BF /* LocationPermissionsDetailView.swift in Sources */,
