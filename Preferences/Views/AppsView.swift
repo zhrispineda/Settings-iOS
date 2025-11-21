@@ -77,12 +77,7 @@ struct AppsView: View {
                                     case "News": NewsView()
                                     case "Passwords": PasswordsView()
                                     case "Photos": PhotosView()
-                                    case "Reminders":
-                                        if UIDevice.IsSimulator {
-                                            EmptyView()
-                                        } else {
-                                            RemindersView()
-                                        }
+                                    case "Reminders": RemindersView()
                                     case "Safari": SafariView()
                                     case "Shortcuts": ShortcutsView()
                                     case "Translate": TranslateView()
