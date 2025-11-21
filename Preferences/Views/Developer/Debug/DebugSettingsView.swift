@@ -12,7 +12,7 @@ struct DebugSettingsView: View {
     @State private var faceTimeDebugging = false
     @State private var messageDebugging = false
     @State private var continuityDebugging = false
-    @State private var accessoryDebugging = false
+    @State private var accessoryDeveloper = false
     
     var body: some View {
         CustomList(title: "Debug Settings", topPadding: true) {
@@ -24,7 +24,7 @@ struct DebugSettingsView: View {
                 Toggle("Facetime Debugging", isOn: $faceTimeDebugging)
                 Toggle("iMessage Debugging", isOn: $messageDebugging)
                 Toggle("Facetime Debugging", isOn: $continuityDebugging)
-                Toggle("Accessory Debugging", isOn: $accessoryDebugging)
+                Toggle("Accessory Developer", isOn: $accessoryDeveloper)
             }
         }
     }
