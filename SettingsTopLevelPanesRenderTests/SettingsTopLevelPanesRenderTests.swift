@@ -122,13 +122,13 @@ final class SettingsTopLevelPanesRenderTests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
         
-        let accessibilityButton = app.buttons["Accessibility"].firstMatch
-        if !accessibilityButton.exists {
+        let cameraButton = app.buttons["Camera"].firstMatch
+        if !cameraButton.exists {
             let elementsQuery = app.otherElements
             let element = elementsQuery.element(boundBy: 20)
             element.swipeUp()
         } else {
-            accessibilityButton.swipeUp()
+            cameraButton.swipeUp()
         }
         let displayBrightnessButton = app.buttons["Display & Brightness"].staticTexts.firstMatch
         XCTAssertTrue(displayBrightnessButton.exists, "Display & Brightness link not found")
@@ -148,13 +148,13 @@ final class SettingsTopLevelPanesRenderTests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
         
-        let accessibilityButton = app.buttons["Accessibility"].firstMatch
-        if !accessibilityButton.exists {
+        let cameraButton = app.buttons["Camera"].firstMatch
+        if !cameraButton.exists {
             let elementsQuery = app.otherElements
             let element = elementsQuery.element(boundBy: 20)
             element.swipeUp()
         } else {
-            accessibilityButton.swipeUp()
+            cameraButton.swipeUp()
         }
         
         let controlCenterButton = app.buttons["Control Center"].staticTexts.firstMatch
@@ -171,13 +171,13 @@ final class SettingsTopLevelPanesRenderTests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
         
-        let accessibilityButton = app.buttons["Accessibility"].firstMatch
-        if !accessibilityButton.exists {
+        let cameraButton = app.buttons["Camera"].firstMatch
+        if !cameraButton.exists {
             let elementsQuery = app.otherElements
             let element = elementsQuery.element(boundBy: 20)
             element.swipeUp()
         } else {
-            accessibilityButton.swipeUp()
+            cameraButton.swipeUp()
         }
         
         let displayBrightnessButton = app.buttons["Display & Brightness"].staticTexts.firstMatch
