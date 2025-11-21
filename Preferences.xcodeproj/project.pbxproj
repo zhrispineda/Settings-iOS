@@ -177,6 +177,7 @@
 		83F3F7BF2ED00BBF00CC1444 /* iMessageDebuggingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3F7BE2ED00BBF00CC1444 /* iMessageDebuggingView.swift */; };
 		83F3F7C12ED00C4600CC1444 /* ContinuityDebuggingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3F7C02ED00C4600CC1444 /* ContinuityDebuggingView.swift */; };
 		83F3F7C32ED00D7900CC1444 /* AccessoryDeveloperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3F7C22ED00D7900CC1444 /* AccessoryDeveloperView.swift */; };
+		83F3F80B2ED10E1200CC1444 /* FitnessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3F80A2ED10E1200CC1444 /* FitnessView.swift */; };
 		83F455B32C3C8CA5009DB157 /* LocationServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F455B22C3C8CA5009DB157 /* LocationServicesView.swift */; };
 		83F516BA2C21D88B0004E87A /* StandByView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F516B92C21D88B0004E87A /* StandByView.swift */; };
 		83F516C02C21EA8C0004E87A /* AppStoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F516BF2C21EA8C0004E87A /* AppStoreView.swift */; };
@@ -384,6 +385,7 @@
 		83F3F7BE2ED00BBF00CC1444 /* iMessageDebuggingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMessageDebuggingView.swift; sourceTree = "<group>"; };
 		83F3F7C02ED00C4600CC1444 /* ContinuityDebuggingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinuityDebuggingView.swift; sourceTree = "<group>"; };
 		83F3F7C22ED00D7900CC1444 /* AccessoryDeveloperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessoryDeveloperView.swift; sourceTree = "<group>"; };
+		83F3F80A2ED10E1200CC1444 /* FitnessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessView.swift; sourceTree = "<group>"; };
 		83F455B22C3C8CA5009DB157 /* LocationServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServicesView.swift; sourceTree = "<group>"; };
 		83F516B92C21D88B0004E87A /* StandByView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandByView.swift; sourceTree = "<group>"; };
 		83F516BF2C21EA8C0004E87A /* AppStoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreView.swift; sourceTree = "<group>"; };
@@ -572,6 +574,7 @@
 				83815CE62B768DF100F53A0F /* SafariView.swift */,
 				83815CEE2B768EF000F53A0F /* ShortcutsView.swift */,
 				83815CEA2B768E4A00F53A0F /* TranslateView.swift */,
+				83F3F80A2ED10E1200CC1444 /* FitnessView.swift */,
 			);
 			path = Apps;
 			sourceTree = "<group>";
@@ -1219,6 +1222,7 @@
 				832EF39B2B8192A90066A1BF /* DictationShortcutView.swift in Sources */,
 				83F3F7C32ED00D7900CC1444 /* AccessoryDeveloperView.swift in Sources */,
 				8383CD082C9C842A00BA06A0 /* SystemFontsDetailView.swift in Sources */,
+				83F3F80B2ED10E1200CC1444 /* FitnessView.swift in Sources */,
 				83F3F6A72B7D2BAA003CC310 /* FontsView.swift in Sources */,
 				8361A2292C19308600A7D5CC /* Placard.swift in Sources */,
 				830DA8022B9BE17B001EE76F /* ParentGuardianSignInView.swift in Sources */,
