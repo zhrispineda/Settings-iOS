@@ -37,6 +37,7 @@ final class RouteRegistry {
 /// Stores the title of each enum variable for use in navigation.
 enum SettingsOptions: String, CaseIterable {
     case accessibility = "Accessibility"
+    case accessoryDeveloper = "Accessory Developer"
     case actionButton = "Action Button"
     case airplaneMode = "Airplane Mode"
     case appleIntelligence = "Apple Intelligence & Siri"
@@ -48,17 +49,20 @@ enum SettingsOptions: String, CaseIterable {
     case camera = "Camera"
     case carrierSettings = "Carrier Settings"
     case cellular = "Cellular"
+    case continuityDebugging = "Continuity Debugging"
     case controlCenter = "Control Center"
     case developer = "Developer"
     case displayAndBrightness = "Display & Brightness"
     case emergencySOS = "Emergency SOS"
     case ethernet = "Ethernet"
+    case facetimeDebugging = "FaceTime Debugging"
     case focus = "Focus"
     case followUp = "FOLLOWUP_TITLE"
     case gameCenter = "Game Center"
     case general = "General"
     case homeScreenAppLibrary = "Home Screen & App Library"
     case icloud = "iCloud"
+    case iMessageDebugging = "iMessage Debugging"
     case internalSettings = "Internal Settings"
     case multitaskingAndGestures = "Multitasking & Gestures"
     case notifications = "Notifications"
@@ -101,6 +105,10 @@ enum Capabilities {
     case isPhysical
     case isSimulator
     case developerMode
+    case faceTimeDebugging
+    case iMessageDebugging
+    case continuityDebugging
+    case accessoryDeveloper
 }
 
 enum RowKind: Hashable {
@@ -159,6 +167,11 @@ final class PrimarySettingsListModel {
     var selection: SettingsItem? = nil
     var isCompact = false
     var showingDebugMenu = false
+    var showingDebugOverlays = false
+    var showingFaceTimeDebugging = false
+    var showingMessageDebugging = false
+    var showingContinuityDebugging = false
+    var showingAccessoryDeveloper = false
     
     private let monitor = NWPathMonitor()
     private let queue = DispatchQueue.global(qos: .userInitiated)
@@ -460,6 +473,30 @@ final class PrimarySettingsListModel {
                 icon: "com.apple.graphic-icon.internal-settings",
                 capabilities: [.isInternal],
                 destination: AnyView(InternalSettingsView())
+            ),
+            SettingsItem(
+                type: .facetimeDebugging,
+                icon: "com.apple.graphic-icon.tap-to-radar",
+                capabilities: [.faceTimeDebugging],
+                destination: AnyView(FaceTimeDebuggingView())
+            ),
+            SettingsItem(
+                type: .iMessageDebugging,
+                icon: "com.apple.graphic-icon.tap-to-radar",
+                capabilities: [.iMessageDebugging],
+                destination: AnyView(iMessageDebuggingView())
+            ),
+            SettingsItem(
+                type: .continuityDebugging,
+                icon: "com.apple.graphic-icon.tap-to-radar",
+                capabilities: [.continuityDebugging],
+                destination: AnyView(ContinuityDebuggingView())
+            ),
+            SettingsItem(
+                type: .accessoryDeveloper,
+                icon: "com.apple.graphic-icon.tap-to-radar",
+                capabilities: [.accessoryDeveloper],
+                destination: AnyView(AccessoryDeveloperView())
             )
         ]
         

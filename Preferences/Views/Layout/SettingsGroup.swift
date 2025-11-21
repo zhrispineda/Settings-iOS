@@ -174,7 +174,7 @@ struct SettingsGroup: View {
         case .appleIntelligence:
             return UIDevice.IntelligenceCapability
         case .isInternal:
-            return UIDevice.`apple-internal-install`
+            return false
         case .isPhysical:
             return !UIDevice.IsSimulator || configuration.forcePhysical
         case .developerMode:
@@ -183,6 +183,14 @@ struct SettingsGroup: View {
             return UIDevice.IsSimulator
         case .carrierInstall:
             return false
+        case .faceTimeDebugging:
+            return model.showingFaceTimeDebugging
+        case .iMessageDebugging:
+            return model.showingMessageDebugging
+        case .continuityDebugging:
+            return model.showingContinuityDebugging
+        case .accessoryDeveloper:
+            return model.showingAccessoryDeveloper
         }
     }
 }

@@ -8,23 +8,21 @@
 import SwiftUI
 
 struct DebugSettingsView: View {
-    @State private var debugOverlays = false
-    @State private var faceTimeDebugging = false
-    @State private var messageDebugging = false
-    @State private var continuityDebugging = false
-    @State private var accessoryDeveloper = false
+    @Environment(PrimarySettingsListModel.self) private var model
     
     var body: some View {
+        @Bindable var model = model
+        
         CustomList(title: "Debug Settings", topPadding: true) {
             Section("Debug Overlays") {
-                Toggle("List Controller and Cell Class Names", isOn: $debugOverlays)
+                Toggle("List Controller and Cell Class Names", isOn: $model.showingDebugOverlays)
             }
             
             Section {
-                Toggle("Facetime Debugging", isOn: $faceTimeDebugging)
-                Toggle("iMessage Debugging", isOn: $messageDebugging)
-                Toggle("Facetime Debugging", isOn: $continuityDebugging)
-                Toggle("Accessory Developer", isOn: $accessoryDeveloper)
+                Toggle("Facetime Debugging", isOn: $model.showingFaceTimeDebugging.animation())
+                Toggle("iMessage Debugging", isOn: $model.showingMessageDebugging.animation())
+                Toggle("Facetime Debugging", isOn: $model.showingContinuityDebugging.animation())
+                Toggle("Accessory Developer", isOn: $model.showingAccessoryDeveloper.animation())
             }
         }
     }
