@@ -116,10 +116,6 @@
 		838273A52B7FD4CF000F4228 /* AppRestrictionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838273A42B7FD4CF000F4228 /* AppRestrictionsView.swift */; };
 		8383CD082C9C842A00BA06A0 /* SystemFontsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8383CD072C9C842A00BA06A0 /* SystemFontsDetailView.swift */; };
 		8383FDFA2E0370760021D274 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8383FDF92E0370760021D274 /* UIImageExtensions.swift */; };
-		83898FCA2B8A8F210020C7BB /* HealthDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83898FC92B8A8F210020C7BB /* HealthDetailsView.swift */; };
-		83898FCD2B8A94BE0020C7BB /* HealthDetailsDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83898FCC2B8A94BE0020C7BB /* HealthDetailsDataView.swift */; };
-		83898FCF2B8A9A1F0020C7BB /* MedicalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83898FCE2B8A9A1F0020C7BB /* MedicalView.swift */; };
-		83898FD12B8A9F680020C7BB /* DataAccessDevicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83898FD02B8A9F680020C7BB /* DataAccessDevicesView.swift */; };
 		838A9EC22B7E81EC00ED261C /* ContentPrivacyRestrictionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838A9EC12B7E81EC00ED261C /* ContentPrivacyRestrictionsView.swift */; };
 		838A9EC42B7E823300ED261C /* SettingsLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838A9EC32B7E823300ED261C /* SettingsLink.swift */; };
 		838AF99C2D629138008FFA8B /* ScreenSharingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838AF99B2D629138008FFA8B /* ScreenSharingView.swift */; };
@@ -323,10 +319,6 @@
 		838273A42B7FD4CF000F4228 /* AppRestrictionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRestrictionsView.swift; sourceTree = "<group>"; };
 		8383CD072C9C842A00BA06A0 /* SystemFontsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemFontsDetailView.swift; sourceTree = "<group>"; };
 		8383FDF92E0370760021D274 /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
-		83898FC92B8A8F210020C7BB /* HealthDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDetailsView.swift; sourceTree = "<group>"; };
-		83898FCC2B8A94BE0020C7BB /* HealthDetailsDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDetailsDataView.swift; sourceTree = "<group>"; };
-		83898FCE2B8A9A1F0020C7BB /* MedicalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalView.swift; sourceTree = "<group>"; };
-		83898FD02B8A9F680020C7BB /* DataAccessDevicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAccessDevicesView.swift; sourceTree = "<group>"; };
 		838A9EC12B7E81EC00ED261C /* ContentPrivacyRestrictionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentPrivacyRestrictionsView.swift; sourceTree = "<group>"; };
 		838A9EC32B7E823300ED261C /* SettingsLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLink.swift; sourceTree = "<group>"; };
 		838AF99B2D629138008FFA8B /* ScreenSharingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenSharingView.swift; sourceTree = "<group>"; };
@@ -565,7 +557,6 @@
 		833C6EAA2C2087BB00A8D91C /* Apps */ = {
 			isa = PBXGroup;
 			children = (
-				83898FC82B8A8EF20020C7BB /* Health */,
 				83B1D5332D6BC3C800C26010 /* DefaultAppsView.swift */,
 				8397F9E82CDF20E9004DFE2F /* BooksView.swift */,
 				836167D72C25FA3A00458CD8 /* CalendarView.swift */,
@@ -775,25 +766,6 @@
 				8383CD072C9C842A00BA06A0 /* SystemFontsDetailView.swift */,
 			);
 			path = "System Fonts";
-			sourceTree = "<group>";
-		};
-		83898FC82B8A8EF20020C7BB /* Health */ = {
-			isa = PBXGroup;
-			children = (
-				83898FCB2B8A94A20020C7BB /* Health Details */,
-				83898FC92B8A8F210020C7BB /* HealthDetailsView.swift */,
-				83898FCE2B8A9A1F0020C7BB /* MedicalView.swift */,
-				83898FD02B8A9F680020C7BB /* DataAccessDevicesView.swift */,
-			);
-			path = Health;
-			sourceTree = "<group>";
-		};
-		83898FCB2B8A94A20020C7BB /* Health Details */ = {
-			isa = PBXGroup;
-			children = (
-				83898FCC2B8A94BE0020C7BB /* HealthDetailsDataView.swift */,
-			);
-			path = "Health Details";
 			sourceTree = "<group>";
 		};
 		838A9EC02B7E81D900ED261C /* Screen Time */ = {
@@ -1246,14 +1218,12 @@
 				830CFAC12C990DDA00733411 /* KeyboardDetailView.swift in Sources */,
 				832EF39B2B8192A90066A1BF /* DictationShortcutView.swift in Sources */,
 				83F3F7C32ED00D7900CC1444 /* AccessoryDeveloperView.swift in Sources */,
-				83898FCF2B8A9A1F0020C7BB /* MedicalView.swift in Sources */,
 				8383CD082C9C842A00BA06A0 /* SystemFontsDetailView.swift in Sources */,
 				83F3F6A72B7D2BAA003CC310 /* FontsView.swift in Sources */,
 				8361A2292C19308600A7D5CC /* Placard.swift in Sources */,
 				830DA8022B9BE17B001EE76F /* ParentGuardianSignInView.swift in Sources */,
 				83D2687A2BD7303800A86DA9 /* DisplayBrightnessView.swift in Sources */,
 				837D1E282B96BF9B00EDA7ED /* SelectSignInOptionView.swift in Sources */,
-				83898FD12B8A9F680020C7BB /* DataAccessDevicesView.swift in Sources */,
 				83B619D12B941C4F00EFEA90 /* AlwaysAllowedView.swift in Sources */,
 				832EF3A92B819BB90066A1BF /* HardwareKeyboardLanguageView.swift in Sources */,
 				83B619C92B93DEBD00EFEA90 /* ScreenDistanceView.swift in Sources */,
@@ -1279,7 +1249,6 @@
 				83815CE92B768E3600F53A0F /* NewsView.swift in Sources */,
 				8397F9E92CDF20E9004DFE2F /* BooksView.swift in Sources */,
 				83B1D5342D6BC3C800C26010 /* DefaultAppsView.swift in Sources */,
-				83898FCA2B8A8F210020C7BB /* HealthDetailsView.swift in Sources */,
 				8335A70C2BC358E8001E199D /* CellularView.swift in Sources */,
 				832EF3952B8182550066A1BF /* ContentPrivacyRestrictionsDetailView.swift in Sources */,
 				8311D3B42EA7170500915C49 /* CarrierSettingsView.swift in Sources */,
@@ -1294,7 +1263,6 @@
 				83F78A2B2B8EA38300025062 /* PhrasesView.swift in Sources */,
 				8306AE6C2D0665A400D1AE5D /* ViewExtensions.swift in Sources */,
 				83B893BD2B8FD82D005705A3 /* FaceAttentionView.swift in Sources */,
-				83898FCD2B8A94BE0020C7BB /* HealthDetailsDataView.swift in Sources */,
 				837B0F602B89B22900B22455 /* SiriVoiceView.swift in Sources */,
 				836814452E5E649100F0E14D /* ScreenCaptureView.swift in Sources */,
 				833C6EAC2C208A3900A8D91C /* CameraView.swift in Sources */,
