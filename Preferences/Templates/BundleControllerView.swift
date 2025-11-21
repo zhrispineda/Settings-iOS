@@ -25,6 +25,18 @@ struct BundleControllerView: View {
             .ignoresSafeArea()
             .navigationTitle(path.isEmpty ? title.localize(table: table) : title.localized(path: path, table: table))
             .navigationBarTitleDisplayMode(.inline)
+            .border(PrimarySettingsListModel.shared.showingDebugOverlays ? Color.green.opacity(0.5) : .clear)
+            .overlay(alignment: .topLeading) {
+                if PrimarySettingsListModel.shared.showingDebugOverlays {
+                    Text(controller)
+                        .font(.caption2)
+                        .padding(.horizontal, 6)
+                        .padding(.vertical, 3)
+                        .background(Color.green.colorMultiply(.gray))
+                        .cornerRadius(0)
+                        .offset(x: 1, y: 1)
+                }
+            }
     }
 }
 
