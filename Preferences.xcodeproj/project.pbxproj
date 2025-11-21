@@ -183,6 +183,10 @@
 		83F3F6A12B7D12B6003CC310 /* DictionaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3F6A02B7D12B6003CC310 /* DictionaryView.swift */; };
 		83F3F6A32B7D1454003CC310 /* VPNDeviceManagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3F6A22B7D1454003CC310 /* VPNDeviceManagementView.swift */; };
 		83F3F6A72B7D2BAA003CC310 /* FontsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3F6A62B7D2BAA003CC310 /* FontsView.swift */; };
+		83F3F7BD2ED00A3D00CC1444 /* FaceTimeDebuggingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3F7BC2ED00A3D00CC1444 /* FaceTimeDebuggingView.swift */; };
+		83F3F7BF2ED00BBF00CC1444 /* iMessageDebuggingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3F7BE2ED00BBF00CC1444 /* iMessageDebuggingView.swift */; };
+		83F3F7C12ED00C4600CC1444 /* ContinuityDebuggingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3F7C02ED00C4600CC1444 /* ContinuityDebuggingView.swift */; };
+		83F3F7C32ED00D7900CC1444 /* AccessoryDeveloperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3F7C22ED00D7900CC1444 /* AccessoryDeveloperView.swift */; };
 		83F455B32C3C8CA5009DB157 /* LocationServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F455B22C3C8CA5009DB157 /* LocationServicesView.swift */; };
 		83F516BA2C21D88B0004E87A /* StandByView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F516B92C21D88B0004E87A /* StandByView.swift */; };
 		83F516C02C21EA8C0004E87A /* AppStoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F516BF2C21EA8C0004E87A /* AppStoreView.swift */; };
@@ -396,6 +400,10 @@
 		83F3F6A02B7D12B6003CC310 /* DictionaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryView.swift; sourceTree = "<group>"; };
 		83F3F6A22B7D1454003CC310 /* VPNDeviceManagementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNDeviceManagementView.swift; sourceTree = "<group>"; };
 		83F3F6A62B7D2BAA003CC310 /* FontsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsView.swift; sourceTree = "<group>"; };
+		83F3F7BC2ED00A3D00CC1444 /* FaceTimeDebuggingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceTimeDebuggingView.swift; sourceTree = "<group>"; };
+		83F3F7BE2ED00BBF00CC1444 /* iMessageDebuggingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMessageDebuggingView.swift; sourceTree = "<group>"; };
+		83F3F7C02ED00C4600CC1444 /* ContinuityDebuggingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinuityDebuggingView.swift; sourceTree = "<group>"; };
+		83F3F7C22ED00D7900CC1444 /* AccessoryDeveloperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessoryDeveloperView.swift; sourceTree = "<group>"; };
 		83F455B22C3C8CA5009DB157 /* LocationServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServicesView.swift; sourceTree = "<group>"; };
 		83F516B92C21D88B0004E87A /* StandByView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandByView.swift; sourceTree = "<group>"; };
 		83F516BF2C21EA8C0004E87A /* AppStoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreView.swift; sourceTree = "<group>"; };
@@ -1031,6 +1039,10 @@
 				83D20AD02D875F6B000B26E6 /* DebugView.swift */,
 				8311D3B12EA716E300915C49 /* InternalSettingsView.swift */,
 				8311D3B32EA7170500915C49 /* CarrierSettingsView.swift */,
+				83F3F7BC2ED00A3D00CC1444 /* FaceTimeDebuggingView.swift */,
+				83F3F7BE2ED00BBF00CC1444 /* iMessageDebuggingView.swift */,
+				83F3F7C02ED00C4600CC1444 /* ContinuityDebuggingView.swift */,
+				83F3F7C22ED00D7900CC1444 /* AccessoryDeveloperView.swift */,
 			);
 			path = Developer;
 			sourceTree = "<group>";
@@ -1215,6 +1227,7 @@
 				83B98E302B7C087B007F6C94 /* IconToggle.swift in Sources */,
 				838A9EC22B7E81EC00ED261C /* ContentPrivacyRestrictionsView.swift in Sources */,
 				8352DEA22D70F716004B2575 /* SettingsSearchView.swift in Sources */,
+				83F3F7C12ED00C4600CC1444 /* ContinuityDebuggingView.swift in Sources */,
 				832EF3A72B819B2E0066A1BF /* ModifierKeysView.swift in Sources */,
 				83F78A0F2B8E7D5000025062 /* ControlNearbyDevicesView.swift in Sources */,
 				83076D042C7E754600BFFAFE /* BackgroundAppRefreshView.swift in Sources */,
@@ -1247,6 +1260,7 @@
 				83F455B32C3C8CA5009DB157 /* LocationServicesView.swift in Sources */,
 				83FCEFEA2C07F0DE008BE814 /* NetworkDetailView.swift in Sources */,
 				83F516BA2C21D88B0004E87A /* StandByView.swift in Sources */,
+				83F3F7BF2ED00BBF00CC1444 /* iMessageDebuggingView.swift in Sources */,
 				83815CF52B768F3600F53A0F /* PhotosView.swift in Sources */,
 				833438CC2EC507FB0013FF3A /* ControlCenterView.swift in Sources */,
 				83A36C8D2DB95D7800378E45 /* ConfigureDNSView.swift in Sources */,
@@ -1274,6 +1288,7 @@
 				830A87D02DA5895600789C20 /* BundleControllerView.swift in Sources */,
 				830CFAC12C990DDA00733411 /* KeyboardDetailView.swift in Sources */,
 				832EF39B2B8192A90066A1BF /* DictationShortcutView.swift in Sources */,
+				83F3F7C32ED00D7900CC1444 /* AccessoryDeveloperView.swift in Sources */,
 				83898FCF2B8A9A1F0020C7BB /* MedicalView.swift in Sources */,
 				83585B772B8848430046A0C3 /* CyclingView.swift in Sources */,
 				8383CD082C9C842A00BA06A0 /* SystemFontsDetailView.swift in Sources */,
@@ -1317,6 +1332,7 @@
 				838AF99C2D629138008FFA8B /* ScreenSharingView.swift in Sources */,
 				83441A8B2CAF73740022E193 /* JournalingSuggestionsView.swift in Sources */,
 				835683922B753FDD000FB136 /* SLink.swift in Sources */,
+				83F3F7BD2ED00A3D00CC1444 /* FaceTimeDebuggingView.swift in Sources */,
 				83CB06972CA6283A00D7533A /* FormatsView.swift in Sources */,
 				83B12C122D65242800DF6EF6 /* AnnounceNotificationsView.swift in Sources */,
 				83F516C42C21EB550004E87A /* AppsView.swift in Sources */,
