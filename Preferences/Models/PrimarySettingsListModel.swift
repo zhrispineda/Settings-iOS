@@ -268,10 +268,7 @@ final class PrimarySettingsListModel {
                 type: .actionButton,
                 icon: "com.apple.graphic-icon.iphone-action-button",
                 capabilities: [.actionButton],
-                destination: AnyView(BundleControllerView(
-                        "ActionButtonSettings",
-                        controller: "ActionButtonSettings"
-                    ))
+                destination: AnyView(ActionButtonView())
             ),
             SettingsItem(
                 type: .pencil,

@@ -51,6 +51,7 @@
 		832FD83F2BC22EB000E99DEB /* BluetoothView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832FD83E2BC22EB000E99DEB /* BluetoothView.swift */; };
 		833438CC2EC507FB0013FF3A /* ControlCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833438CB2EC507FB0013FF3A /* ControlCenterView.swift */; };
 		8335A70C2BC358E8001E199D /* CellularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8335A70B2BC358E8001E199D /* CellularView.swift */; };
+		833768FD2ED137E20002822F /* ActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833768FC2ED137E20002822F /* ActionButtonView.swift */; };
 		833854F72C1648CD00339C4F /* SoftwareUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833854F62C1648CD00339C4F /* SoftwareUpdateView.swift */; };
 		833A44EF2C6E75BF003076F5 /* SystemFontsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833A44EE2C6E75BF003076F5 /* SystemFontsView.swift */; };
 		833A44F12C6E768E003076F5 /* MyFontsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833A44F02C6E768E003076F5 /* MyFontsView.swift */; };
@@ -253,6 +254,7 @@
 		832FD83E2BC22EB000E99DEB /* BluetoothView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothView.swift; sourceTree = "<group>"; };
 		833438CB2EC507FB0013FF3A /* ControlCenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlCenterView.swift; sourceTree = "<group>"; };
 		8335A70B2BC358E8001E199D /* CellularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellularView.swift; sourceTree = "<group>"; };
+		833768FC2ED137E20002822F /* ActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonView.swift; sourceTree = "<group>"; };
 		833854F62C1648CD00339C4F /* SoftwareUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftwareUpdateView.swift; sourceTree = "<group>"; };
 		833A44EE2C6E75BF003076F5 /* SystemFontsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemFontsView.swift; sourceTree = "<group>"; };
 		833A44F02C6E768E003076F5 /* MyFontsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFontsView.swift; sourceTree = "<group>"; };
@@ -934,6 +936,7 @@
 				837CDF1C2C2F25670099402B /* StandBy */,
 				838C23222B746CF90053D4C5 /* GeneralView.swift */,
 				83815CDE2B768C2200F53A0F /* AccessibilityView.swift */,
+				833768FC2ED137E20002822F /* ActionButtonView.swift */,
 				8349E22B2C7514F6007416C5 /* ApplePencilView.swift */,
 				833C6EAB2C208A3900A8D91C /* CameraView.swift */,
 				833438CB2EC507FB0013FF3A /* ControlCenterView.swift */,
@@ -1223,6 +1226,7 @@
 				83F3F7C32ED00D7900CC1444 /* AccessoryDeveloperView.swift in Sources */,
 				8383CD082C9C842A00BA06A0 /* SystemFontsDetailView.swift in Sources */,
 				83F3F80B2ED10E1200CC1444 /* FitnessView.swift in Sources */,
+				833768FD2ED137E20002822F /* ActionButtonView.swift in Sources */,
 				83F3F6A72B7D2BAA003CC310 /* FontsView.swift in Sources */,
 				8361A2292C19308600A7D5CC /* Placard.swift in Sources */,
 				830DA8022B9BE17B001EE76F /* ParentGuardianSignInView.swift in Sources */,
