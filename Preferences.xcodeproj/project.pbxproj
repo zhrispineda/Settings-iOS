@@ -570,6 +570,7 @@
 			isa = PBXGroup;
 			children = (
 				83B1D5332D6BC3C800C26010 /* DefaultAppsView.swift */,
+				83F516BF2C21EA8C0004E87A /* AppStoreView.swift */,
 				8397F9E82CDF20E9004DFE2F /* BooksView.swift */,
 				836167D72C25FA3A00458CD8 /* CalendarView.swift */,
 				83D3FB222C8102B200268E54 /* ContactsView.swift */,
@@ -973,7 +974,6 @@
 		83F516C72C21ECBD0004E87A /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				83F516BF2C21EA8C0004E87A /* AppStoreView.swift */,
 				833769042ED2612D0002822F /* GameCenterView.swift */,
 				83F516C12C21EB1C0004E87A /* WalletView.swift */,
 			);
