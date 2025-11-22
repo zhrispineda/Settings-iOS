@@ -2,19 +2,19 @@
 A **work-in-progress** recreation of the iOS & iPadOS Settings app (Preferences.app).
 
 > [!NOTE]  
-> This project is focused on the latest public releases of iOS, iPadOS, and Xcode. Use an older branch to use older versions.
+> This project is focused on the latest public releases of iOS, iPadOS, and Xcode. Use an older branch for older versions.
 
 ## Information
-- Recreation of Apple's Settings app for iOS and iPadOS 26.1 (23B85).
+- Based on iOS and iPadOS 26.1 (23B85).
 - All features within the app are only simulations and have no effect on the device outside of the app.
 - Features available within the app vary depending on the device model and its capabilities to make this recreation as accurate as possible.
 - In some panes, the app will load actual preference bundles internally using a view controller bridge (functionality and stability may vary).
 - Previous versions are available as their own branches, going as far back as 17.4. Less features are available in earlier versions.
 
 > [!CAUTION]
-> This project uses some private APIs that are not intended or supported for public use and is for demonstration purposes only.
+> Some of the code in this project may rely on private APIs. It is strictly for demonstration purposes only.
 >
-> **Do not reuse any code from this project that depends on private methods.** Consider public alternatives instead.
+> **Do not reuse any code from this project that relies on private methods.** Consider publicly supported alternatives instead.
 
 ## Preview
 
@@ -33,7 +33,7 @@ A **work-in-progress** recreation of the iOS & iPadOS Settings app (Preferences.
 </details>
 
 ## Usage
-Open the project in Xcode and run with either a Simulator instance or a physical device running iOS or iPadOS with Developer Mode enabled as a destination.
+Open in Xcode and run with either Simulator or a physical device running iOS or iPadOS with Developer Mode enabled as a destination.
 
 > [!IMPORTANT]  
 > You may need to change the bundle identifier of the app to be able to sign it with Xcode for use on a physical device.
