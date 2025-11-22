@@ -53,6 +53,7 @@
 		8335A70C2BC358E8001E199D /* CellularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8335A70B2BC358E8001E199D /* CellularView.swift */; };
 		833768FD2ED137E20002822F /* ActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833768FC2ED137E20002822F /* ActionButtonView.swift */; };
 		833768FF2ED251B50002822F /* MultitaskingAndGesturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833768FE2ED251B50002822F /* MultitaskingAndGesturesView.swift */; };
+		833769012ED25D050002822F /* SoundsAndHapticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833769002ED25D050002822F /* SoundsAndHapticsView.swift */; };
 		833854F72C1648CD00339C4F /* SoftwareUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833854F62C1648CD00339C4F /* SoftwareUpdateView.swift */; };
 		833A44EF2C6E75BF003076F5 /* SystemFontsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833A44EE2C6E75BF003076F5 /* SystemFontsView.swift */; };
 		833A44F12C6E768E003076F5 /* MyFontsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833A44F02C6E768E003076F5 /* MyFontsView.swift */; };
@@ -257,6 +258,7 @@
 		8335A70B2BC358E8001E199D /* CellularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellularView.swift; sourceTree = "<group>"; };
 		833768FC2ED137E20002822F /* ActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonView.swift; sourceTree = "<group>"; };
 		833768FE2ED251B50002822F /* MultitaskingAndGesturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultitaskingAndGesturesView.swift; sourceTree = "<group>"; };
+		833769002ED25D050002822F /* SoundsAndHapticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsAndHapticsView.swift; sourceTree = "<group>"; };
 		833854F62C1648CD00339C4F /* SoftwareUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftwareUpdateView.swift; sourceTree = "<group>"; };
 		833A44EE2C6E75BF003076F5 /* SystemFontsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemFontsView.swift; sourceTree = "<group>"; };
 		833A44F02C6E768E003076F5 /* MyFontsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFontsView.swift; sourceTree = "<group>"; };
@@ -670,6 +672,7 @@
 				83D241AB2D5CE70E002061F4 /* Notifications */,
 				838A9EC02B7E81D900ED261C /* Screen Time */,
 				836000772BCC7A470034DDF5 /* NotificationsView.swift */,
+				833769002ED25D050002822F /* SoundsAndHapticsView.swift */,
 				837B62FD2BD457F10045B95C /* FocusView.swift */,
 				838C23282B748F3B0053D4C5 /* ScreenTimeView.swift */,
 			);
@@ -1301,6 +1304,7 @@
 				833A44EF2C6E75BF003076F5 /* SystemFontsView.swift in Sources */,
 				8356460A2D9C4AB600DAB406 /* UIKitRepresentables.swift in Sources */,
 				838C23232B746CF90053D4C5 /* GeneralView.swift in Sources */,
+				833769012ED25D050002822F /* SoundsAndHapticsView.swift in Sources */,
 				833F0AD22B744D180036EAD2 /* ContentView.swift in Sources */,
 				838F37EA2C82865B008C9909 /* FilesView.swift in Sources */,
 				8319CE512B86DF8A007EC822 /* AppleAdvertisingView.swift in Sources */,

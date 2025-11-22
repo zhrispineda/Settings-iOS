@@ -349,21 +349,13 @@ final class PrimarySettingsListModel {
                 type: .sounds,
                 icon: "com.apple.graphic-icon.sound",
                 capabilities: [.sounds, .isPhysical],
-                destination: AnyView(BundleControllerView(
-                        "/System/Library/PrivateFrameworks/Settings/SoundsAndHapticsSettings.framework/SoundsAndHapticsSettings",
-                        controller: "SHSSoundsPrefController",
-                        title: "Sounds"
-                    ))
+                destination: AnyView(SoundsAndHapticsView())
             ),
             SettingsItem(
                 type: .soundsHaptics,
                 icon: "com.apple.graphic-icon.sound",
                 capabilities: [.soundsHaptics, .isPhysical],
-                destination: AnyView(BundleControllerView(
-                        "/System/Library/PrivateFrameworks/Settings/SoundsAndHapticsSettings.framework/SoundsAndHapticsSettings",
-                        controller: "SHSSoundsPrefController",
-                        title: "Sounds & Haptics"
-                    ))
+                destination: AnyView(SoundsAndHapticsView())
             ),
             SettingsItem(
                 type: .focus,
