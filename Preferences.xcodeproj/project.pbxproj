@@ -52,6 +52,7 @@
 		833438CC2EC507FB0013FF3A /* ControlCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833438CB2EC507FB0013FF3A /* ControlCenterView.swift */; };
 		8335A70C2BC358E8001E199D /* CellularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8335A70B2BC358E8001E199D /* CellularView.swift */; };
 		833768FD2ED137E20002822F /* ActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833768FC2ED137E20002822F /* ActionButtonView.swift */; };
+		833768FF2ED251B50002822F /* MultitaskingAndGesturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833768FE2ED251B50002822F /* MultitaskingAndGesturesView.swift */; };
 		833854F72C1648CD00339C4F /* SoftwareUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833854F62C1648CD00339C4F /* SoftwareUpdateView.swift */; };
 		833A44EF2C6E75BF003076F5 /* SystemFontsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833A44EE2C6E75BF003076F5 /* SystemFontsView.swift */; };
 		833A44F12C6E768E003076F5 /* MyFontsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833A44F02C6E768E003076F5 /* MyFontsView.swift */; };
@@ -255,6 +256,7 @@
 		833438CB2EC507FB0013FF3A /* ControlCenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlCenterView.swift; sourceTree = "<group>"; };
 		8335A70B2BC358E8001E199D /* CellularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellularView.swift; sourceTree = "<group>"; };
 		833768FC2ED137E20002822F /* ActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonView.swift; sourceTree = "<group>"; };
+		833768FE2ED251B50002822F /* MultitaskingAndGesturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultitaskingAndGesturesView.swift; sourceTree = "<group>"; };
 		833854F62C1648CD00339C4F /* SoftwareUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftwareUpdateView.swift; sourceTree = "<group>"; };
 		833A44EE2C6E75BF003076F5 /* SystemFontsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemFontsView.swift; sourceTree = "<group>"; };
 		833A44F02C6E768E003076F5 /* MyFontsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFontsView.swift; sourceTree = "<group>"; };
@@ -942,6 +944,7 @@
 				833438CB2EC507FB0013FF3A /* ControlCenterView.swift */,
 				83D268792BD7303800A86DA9 /* DisplayBrightnessView.swift */,
 				833C6EAD2C20C88000A8D91C /* HomeScreenAppLibraryView.swift */,
+				833768FE2ED251B50002822F /* MultitaskingAndGesturesView.swift */,
 				833C6EAF2C20CCEF00A8D91C /* SearchView.swift */,
 				83815CF22B768F1E00F53A0F /* SiriView.swift */,
 				83F516B92C21D88B0004E87A /* StandByView.swift */,
@@ -1274,6 +1277,7 @@
 				837B0F602B89B22900B22455 /* SiriVoiceView.swift in Sources */,
 				836814452E5E649100F0E14D /* ScreenCaptureView.swift in Sources */,
 				833C6EAC2C208A3900A8D91C /* CameraView.swift in Sources */,
+				833768FF2ED251B50002822F /* MultitaskingAndGesturesView.swift in Sources */,
 				834B5A242C4C1836003A6940 /* AirDropView.swift in Sources */,
 				832EF38C2B81264E0066A1BF /* LocationAlertsView.swift in Sources */,
 				832EF39F2B8197980066A1BF /* TextReplacementView.swift in Sources */,

@@ -308,11 +308,7 @@ final class PrimarySettingsListModel {
                 type: .multitaskingAndGestures,
                 icon: "com.apple.graphic-icon.stage-manager",
                 capabilities: [.tablet],
-                destination: AnyView(BundleControllerView(
-                        "MultitaskingAndGesturesSettings",
-                        controller: "MultitaskingAndGesturesSettings",
-                        title: "Multitasking & Gestures"
-                    ))
+                destination: AnyView(MultitaskingAndGesturesView())
             ),
             SettingsItem(
                 type: .search,
