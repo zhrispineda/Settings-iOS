@@ -331,10 +331,7 @@ final class PrimarySettingsListModel {
                 type: .wallpaper,
                 icon: "com.apple.graphic-icon.wallpaper",
                 capabilities: [.isPhysical],
-                destination: AnyView(BundleControllerView(
-                        "WallpaperSettings",
-                        controller: "WallpaperSettingsRootViewController"
-                    ))
+                destination: AnyView(WallpaperView())
             ),
         ]
         
