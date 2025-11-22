@@ -55,6 +55,7 @@
 		833768FF2ED251B50002822F /* MultitaskingAndGesturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833768FE2ED251B50002822F /* MultitaskingAndGesturesView.swift */; };
 		833769012ED25D050002822F /* SoundsAndHapticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833769002ED25D050002822F /* SoundsAndHapticsView.swift */; };
 		833769032ED260AF0002822F /* EmergencySOSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833769022ED260AF0002822F /* EmergencySOSView.swift */; };
+		833769052ED2612D0002822F /* GameCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833769042ED2612D0002822F /* GameCenterView.swift */; };
 		833854F72C1648CD00339C4F /* SoftwareUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833854F62C1648CD00339C4F /* SoftwareUpdateView.swift */; };
 		833A44EF2C6E75BF003076F5 /* SystemFontsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833A44EE2C6E75BF003076F5 /* SystemFontsView.swift */; };
 		833A44F12C6E768E003076F5 /* MyFontsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833A44F02C6E768E003076F5 /* MyFontsView.swift */; };
@@ -261,6 +262,7 @@
 		833768FE2ED251B50002822F /* MultitaskingAndGesturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultitaskingAndGesturesView.swift; sourceTree = "<group>"; };
 		833769002ED25D050002822F /* SoundsAndHapticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsAndHapticsView.swift; sourceTree = "<group>"; };
 		833769022ED260AF0002822F /* EmergencySOSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencySOSView.swift; sourceTree = "<group>"; };
+		833769042ED2612D0002822F /* GameCenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCenterView.swift; sourceTree = "<group>"; };
 		833854F62C1648CD00339C4F /* SoftwareUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftwareUpdateView.swift; sourceTree = "<group>"; };
 		833A44EE2C6E75BF003076F5 /* SystemFontsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemFontsView.swift; sourceTree = "<group>"; };
 		833A44F02C6E768E003076F5 /* MyFontsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFontsView.swift; sourceTree = "<group>"; };
@@ -972,6 +974,7 @@
 			isa = PBXGroup;
 			children = (
 				83F516BF2C21EA8C0004E87A /* AppStoreView.swift */,
+				833769042ED2612D0002822F /* GameCenterView.swift */,
 				83F516C12C21EB1C0004E87A /* WalletView.swift */,
 			);
 			path = Services;
@@ -1266,6 +1269,7 @@
 				83815CE92B768E3600F53A0F /* NewsView.swift in Sources */,
 				8397F9E92CDF20E9004DFE2F /* BooksView.swift in Sources */,
 				83B1D5342D6BC3C800C26010 /* DefaultAppsView.swift in Sources */,
+				833769052ED2612D0002822F /* GameCenterView.swift in Sources */,
 				8335A70C2BC358E8001E199D /* CellularView.swift in Sources */,
 				832EF3952B8182550066A1BF /* ContentPrivacyRestrictionsDetailView.swift in Sources */,
 				8311D3B42EA7170500915C49 /* CarrierSettingsView.swift in Sources */,

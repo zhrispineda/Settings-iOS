@@ -406,11 +406,7 @@ final class PrimarySettingsListModel {
             SettingsItem(
                 type: .gameCenter,
                 icon: "com.apple.gamecenter.bubbles",
-                destination: AnyView(BundleControllerView(
-                        "/System/Library/PrivateFrameworks/GameCenterUI.framework/GameCenterUI",
-                        controller: "GameCenterUI.SettingsContainerViewController",
-                        title: "Game Center"
-                    ))
+                destination: AnyView(GameCenterView())
             ),
             SettingsItem(
                 type: .icloud,
