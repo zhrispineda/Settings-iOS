@@ -433,11 +433,7 @@ final class PrimarySettingsListModel {
             SettingsItem(
                 type: .developer,
                 icon: "com.apple.graphic-icon.developer-tools",
-                destination: AnyView(BundleControllerView(
-                        "DeveloperSettings",
-                        controller: "DTSettings",
-                        title: "Developer"
-                    ))
+                destination: AnyView(DeveloperView())
             ),
             SettingsItem(
                 type: .carrierSettings,
