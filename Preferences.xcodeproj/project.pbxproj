@@ -54,6 +54,7 @@
 		833768FD2ED137E20002822F /* ActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833768FC2ED137E20002822F /* ActionButtonView.swift */; };
 		833768FF2ED251B50002822F /* MultitaskingAndGesturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833768FE2ED251B50002822F /* MultitaskingAndGesturesView.swift */; };
 		833769012ED25D050002822F /* SoundsAndHapticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833769002ED25D050002822F /* SoundsAndHapticsView.swift */; };
+		833769032ED260AF0002822F /* EmergencySOSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833769022ED260AF0002822F /* EmergencySOSView.swift */; };
 		833854F72C1648CD00339C4F /* SoftwareUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833854F62C1648CD00339C4F /* SoftwareUpdateView.swift */; };
 		833A44EF2C6E75BF003076F5 /* SystemFontsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833A44EE2C6E75BF003076F5 /* SystemFontsView.swift */; };
 		833A44F12C6E768E003076F5 /* MyFontsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833A44F02C6E768E003076F5 /* MyFontsView.swift */; };
@@ -259,6 +260,7 @@
 		833768FC2ED137E20002822F /* ActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonView.swift; sourceTree = "<group>"; };
 		833768FE2ED251B50002822F /* MultitaskingAndGesturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultitaskingAndGesturesView.swift; sourceTree = "<group>"; };
 		833769002ED25D050002822F /* SoundsAndHapticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsAndHapticsView.swift; sourceTree = "<group>"; };
+		833769022ED260AF0002822F /* EmergencySOSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencySOSView.swift; sourceTree = "<group>"; };
 		833854F62C1648CD00339C4F /* SoftwareUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftwareUpdateView.swift; sourceTree = "<group>"; };
 		833A44EE2C6E75BF003076F5 /* SystemFontsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemFontsView.swift; sourceTree = "<group>"; };
 		833A44F02C6E768E003076F5 /* MyFontsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFontsView.swift; sourceTree = "<group>"; };
@@ -960,6 +962,7 @@
 			children = (
 				832928472B857763006611CF /* Privacy & Security */,
 				83B1CFB62C1D56C900C2263C /* BiometricPasscodeView.swift */,
+				833769022ED260AF0002822F /* EmergencySOSView.swift */,
 				83815CE22B768D5800F53A0F /* PrivacySecurityView.swift */,
 			);
 			path = Security;
@@ -1276,6 +1279,7 @@
 				83F516C42C21EB550004E87A /* AppsView.swift in Sources */,
 				83F78A2B2B8EA38300025062 /* PhrasesView.swift in Sources */,
 				8306AE6C2D0665A400D1AE5D /* ViewExtensions.swift in Sources */,
+				833769032ED260AF0002822F /* EmergencySOSView.swift in Sources */,
 				83B893BD2B8FD82D005705A3 /* FaceAttentionView.swift in Sources */,
 				837B0F602B89B22900B22455 /* SiriVoiceView.swift in Sources */,
 				836814452E5E649100F0E14D /* ScreenCaptureView.swift in Sources */,

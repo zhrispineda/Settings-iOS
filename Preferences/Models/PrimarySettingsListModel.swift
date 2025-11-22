@@ -393,11 +393,7 @@ final class PrimarySettingsListModel {
                 type: .emergencySOS,
                 icon: "com.apple.graphic-icon.emergency-sos",
                 capabilities: [.phone, .isPhysical],
-                destination: AnyView(BundleControllerView(
-                        "SOSSettings",
-                        controller: "SOSSettingsController",
-                        title: "Emergency SOS"
-                    ))
+                destination: AnyView(EmergencySOSView())
             ),
             SettingsItem(
                 type: .privacySecurity,
