@@ -32,14 +32,14 @@ struct SoftwareUpdateView: View {
                             .padding(.bottom, 1)
                     }
 
-                    if checkingForUpdates {
+                    if checkingForUpdates && PrimarySettingsListModel.shared.isConnected {
                         withAnimation {
                             Text("CHECKING_FOR_UPDATES".localized(path: path, table: table))
                                 .font(.system(size: 12))
                                 .foregroundStyle(.gray)
                                 .padding(.bottom, 10)
                         }
-                    } else {
+                    } else if PrimarySettingsListModel.shared.isConnected {
                         if UIDevice.`apple-internal-install` {
                             ContentUnavailableView {
                                 Label(
@@ -81,14 +81,31 @@ struct SoftwareUpdateView: View {
                                 .navigationLinkIndicatorVisibility(.hidden)
                                 .foregroundStyle(.blue)
                             }
+                            .frame(width: geometry.size.width)
                         }
+                    } else {
+                        ContentUnavailableView(
+                            "Unable to Check for Update".localized(path: update),
+                            systemImage: "exclamationmark.circle.fill",
+                            description: Text(
+                                "Checking for a software update failed because you are not connected to the internet.".localized(path: update)
+                            )
+                        )
+                        .frame(width: geometry.size.width)
                     }
                 }
                 .frame(maxWidth: .infinity)
                 .listRowBackground(Color.clear)
                 .frame(height: geometry.size.height/1.4)
                 .onAppear {
-                    checkForUpdates()
+                    if PrimarySettingsListModel.shared.isConnected {
+                        checkForUpdates()
+                    }
+                }
+                .onChange(of: PrimarySettingsListModel.shared.isConnected) {
+                    if PrimarySettingsListModel.shared.isConnected {
+                        checkForUpdates()
+                    }
                 }
             }
         }
