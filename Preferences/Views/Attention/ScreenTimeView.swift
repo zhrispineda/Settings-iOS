@@ -85,7 +85,7 @@ struct ScreenTimeView: View {
                             .frame(width: 400, height: 730)
                     }
                 }
-                SLink("ScreenDistanceSpecifierName".localized(path: path), icon: "chevron.3.up.perspective", subtitle: "ScreenDistanceSpecifierSubtitleText".localized(path: path)) {
+                SLink("ScreenDistanceSpecifierName".localized(path: path), icon: "com.apple.screen-time.screen-distance", subtitle: "ScreenDistanceSpecifierSubtitleText".localized(path: path)) {
                     ScreenDistanceView()
                         .onAppear {
                             showingScreenDistanceSheet.toggle()

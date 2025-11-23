@@ -26,6 +26,7 @@ struct IconView: View {
         
         if icon.hasPrefix("com.apple.graphic")
             || lowercased.hasPrefix("com.apple.a")
+            || lowercased.hasPrefix("com.apple.s")
             || (icon.hasPrefix("com.apple.gamecenter") && !UIDevice.IsSimulated) {
             if let graphicIcon = UIImage.icon(forUTI: icon) {
                 Image(uiImage: graphicIcon)
