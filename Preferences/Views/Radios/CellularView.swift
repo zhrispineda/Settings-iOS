@@ -16,7 +16,13 @@ struct CellularView: View {
     
     var body: some View {
         CustomList {
-            Placard(title: "CELLULAR_TITLE".localized(path: path, table: table), icon: "com.apple.graphic-icon.cellular-settings", description: "CELLULAR_SETTINGS_SUBTITLE".localized(path: path, table: table).replacing("helpkit", with: "pref"), frameY: $frameY, opacity: $opacity)
+            Placard(
+                title: "CELLULAR_TITLE".localized(path: path, table: table),
+                icon: "com.apple.graphic-icon.cellular-settings",
+                description: "CELLULAR_SETTINGS_SUBTITLE".localized(path: path, table: table).replacing("helpkit", with: "pref"),
+                frameY: $frameY,
+                opacity: $opacity
+            )
             
             Section {
                 Button("SETUP_CELLULAR".localized(path: path, table: table)) {}
