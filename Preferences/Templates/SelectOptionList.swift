@@ -14,7 +14,7 @@ import SwiftUI
 /// - Parameter title: The `String` to display as the navigation title of the `View`.
 /// - Parameter options: The `String Array` of available options to pick from.
 /// - Parameter selectedBinding: The `String` `Binding` holding the currently selected value.
-/// - Parameter table: The `String` path to use for localization.
+/// - Parameter path: The `String` path to use for localization.
 /// - Parameter table: The `String` table name to use for localization.
 struct SelectOptionList: View {
     var title: String
