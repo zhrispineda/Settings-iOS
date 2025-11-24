@@ -111,7 +111,7 @@ struct NotificationsView: View {
             // MARK: Notification Options Section
             Section {
                 SettingsLink("NOTIFICATION_DELIVERY_SCHEDULED".localized(path: path, table: table), status: "OFF".localized(path: path, table: table), destination: ScheduledSummaryView())
-                SettingsLink("SHOW_PREVIEWS".localized(path: path, table: table), status: previewSelection.localized(path: path, table: table), destination: SelectOptionList("SHOW_PREVIEWS", options: ["SHOW_PREVIEW_OPTION_ALWAYS", "SHOW_PREVIEW_OPTION_UNLOCKED", "SHOW_PREVIEW_OPTION_NEVER"], selectedBinding: $previewSelection, selected: "SHOW_PREVIEW_OPTION_UNLOCKED", table: table))
+                SettingsLink("SHOW_PREVIEWS".localized(path: path, table: table), status: previewSelection.localized(path: path, table: table), destination: SelectOptionList("SHOW_PREVIEWS", options: ["SHOW_PREVIEW_OPTION_ALWAYS", "SHOW_PREVIEW_OPTION_UNLOCKED", "SHOW_PREVIEW_OPTION_NEVER"], selected: $previewSelection, table: table))
                 SettingsLink("SCREEN_SHARING".localized(path: path, table: table), status: (allowNotifications ? "SCREEN_SHARING_NOTIFICATIONS_ON" : "SCREEN_SHARING_NOTIFICATIONS_OFF").localized(path: path, table: table), destination: ScreenSharingView(allowNotifications: $allowNotifications))
             }
             

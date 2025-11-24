@@ -16,7 +16,7 @@ struct BackgroundAppRefreshView: View {
         CustomList(title: "Background App Refresh".localized(path: path)) {
             if UIDevice.CellularTelephonyCapability {
                 Section {
-                    SettingsLink("Background App Refresh".localized(path: path), status: backgroundAppRefreshPicker.localized(path: path), destination: SelectOptionList("Background App Refresh".localized(path: path), options: ["Off", "Wi-Fi", "Wi-Fi & Cellular Data"], selected: "Wi-Fi & Cellular Data"))
+                    SettingsLink("Background App Refresh".localized(path: path), status: backgroundAppRefreshPicker.localized(path: path), destination: SelectOptionList("Background App Refresh".localized(path: path), options: ["Off", "Wi-Fi", "Wi-Fi & Cellular Data"], selected: $backgroundAppRefreshPicker))
                 } footer: {
                     Text("Allow apps to refresh their content when on Wi-Fi or cellular in the background. Turning off apps may help preserve battery life.".localized(path: path))
                 }

@@ -141,7 +141,7 @@ struct NetworkView: View {
                                     "kWFLocAskToJoinDetailNotify",
                                     "kWFLocAskToJoinDetailAsk"
                                 ],
-                                selectedBinding: $askJoinNetworkSelection,
+                                selected: $askJoinNetworkSelection,
                                 path: path,
                                 table: table
                             )
@@ -168,7 +168,7 @@ struct NetworkView: View {
                                     "kWFLocAutoInstantHotspotJoinAskTitle",
                                     "kWFLocAutoInstantHotspotJoinAutoTitle"
                                 ],
-                                selectedBinding: $autoJoinHotspotSelection,
+                                selected: $autoJoinHotspotSelection,
                                 path: path,
                                 table: table
                             )

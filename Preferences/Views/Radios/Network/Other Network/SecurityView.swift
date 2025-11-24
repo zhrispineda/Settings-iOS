@@ -42,7 +42,7 @@ struct SecurityView: View {
                             "kWFLocRandomMACStaticOption",
                             "kWFLocRandomMACRotatingOption"
                         ],
-                        selectedBinding: $selectedRotation,
+                        selected: $selectedRotation,
                         path: path,
                         table: table
                     )

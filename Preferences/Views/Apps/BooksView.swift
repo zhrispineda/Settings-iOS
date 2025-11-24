@@ -63,7 +63,7 @@ struct BooksView: View {
                     Text("Show Status Bar".localized(path: path, table: table))
                     Text(UIDevice.iPhone ? "Always display current time, battery level, and other iPhone status info while reading.".localized(path: path, table: table) : "Always display current time, battery level, and other iPad status info while reading.".localized(path: path, table: table))
                 }
-                SettingsLink("Page Navigation".localized(path: path, table: table), status: pageNavigation.localized(path: path, table: table), destination: SelectOptionList("Page Navigation", options: ["Slide", "Curl", "Fast Fade", "Scroll"], selectedBinding: $pageNavigation, table: table))
+                SettingsLink("Page Navigation".localized(path: path, table: table), status: pageNavigation.localized(path: path, table: table), destination: SelectOptionList("Page Navigation", options: ["Slide", "Curl", "Fast Fade", "Scroll"], selected: $pageNavigation, table: table))
             }
             
             Section {
@@ -102,8 +102,8 @@ struct BooksView: View {
             }
             
             Section {
-                SettingsLink("Skip Forward".localized(path: path, table: table), status: skipForward.localized(path: path, table: table), destination: SelectOptionList("Skip Forward", options: ["10 seconds", "15 seconds", "30 seconds", "45 seconds", "60 seconds"], selectedBinding: $skipForward, table: table))
-                SettingsLink("Skip Back".localized(path: path, table: table), status: skipBack.localized(path: path, table: table), destination: SelectOptionList("Skip Back", options: ["10 seconds", "15 seconds", "30 seconds", "45 seconds", "60 seconds"], selectedBinding: $skipBack, table: table))
+                SettingsLink("Skip Forward".localized(path: path, table: table), status: skipForward.localized(path: path, table: table), destination: SelectOptionList("Skip Forward", options: ["10 seconds", "15 seconds", "30 seconds", "45 seconds", "60 seconds"], selected: $skipForward, table: table))
+                SettingsLink("Skip Back".localized(path: path, table: table), status: skipBack.localized(path: path, table: table), destination: SelectOptionList("Skip Back", options: ["10 seconds", "15 seconds", "30 seconds", "45 seconds", "60 seconds"], selected: $skipBack, table: table))
             } header: {
                 Text("Audiobooks".localized(path: path, table: table))
             } footer: {

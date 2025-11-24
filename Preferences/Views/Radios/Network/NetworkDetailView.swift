@@ -38,7 +38,7 @@ struct NetworkDetailView: View {
                     "kWFLocRandomMACOffOption",
                     "kWFLocRandomMACStaticOption",
                     "kWFLocRandomMACRotatingOption"
-                ], selected: privateAddressOption, table: table))
+                ], selected: $privateAddressOption, table: table))
                 // Wi-Fi Address
                 LabeledContent("MACAddress".localized(path: "/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework"), value: MACAddress)
             } footer: {

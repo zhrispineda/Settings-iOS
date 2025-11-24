@@ -187,7 +187,7 @@ struct DisplayBrightnessView: View {
                     destination: SelectOptionList(
                         "AUTOLOCK".localized(path: path, table: table),
                         options: UIDevice.iPhone ? phoneOptions : tabletOptions,
-                        selectedBinding: $autoLockDuration,
+                        selected: $autoLockDuration,
                         table: "Display"
                     )
                 )

@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct ApplePencilView: View {
-    // Variables
     @AppStorage("OnlyDrawApplePencilToggle") private var onlyDrawPencil = false
     @AppStorage("ScribbleToggle") private var scribbleEnabled = true
+    @State private var bottomLeftCornerSelection = "Screenshot"
+    @State private var bottomRightCornerSelection = "Quick Note"
     @State private var showingSheet: Bool = false
     
     var body: some View {
@@ -38,8 +39,8 @@ struct ApplePencilView: View {
             }
             
             Section {
-                SettingsLink("Bottom Left Corner", status: "Screenshot", destination: SelectOptionList("Bottom Left Corner", options: ["Quick Note", "Screenshot", "Off"], selected: "Screenshot"))
-                SettingsLink("Bottom Right Corner", status: "Quick Note", destination: SelectOptionList("Bottom Left Corner", options: ["Quick Note", "Screenshot", "Off"], selected: "Quick Note"))
+                SettingsLink("Bottom Left Corner", status: "Screenshot", destination: SelectOptionList("Bottom Left Corner", options: ["Quick Note", "Screenshot", "Off"], selected: $bottomLeftCornerSelection))
+                SettingsLink("Bottom Right Corner", status: "Quick Note", destination: SelectOptionList("Bottom Right Corner", options: ["Quick Note", "Screenshot", "Off"], selected: $bottomRightCornerSelection))
             } header: {
                 Text("Pencil Gestures")
             } footer: {

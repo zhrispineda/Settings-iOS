@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HardwareKeyboardView: View {
-    // Variables
+    @State private var keyboardType = "ANSI (U.S.)"
     @State private var autoCapitalizationEnabled = true
     @State private var autoCorrectionEnabled = true
     @State private var periodShortcutEnabled = true
@@ -32,7 +32,7 @@ struct HardwareKeyboardView: View {
             }
             
             Section {
-                SettingsLink("Keyboard Type", status: "ANSI", destination: SelectOptionList("Keyboard Type", options: ["ANSI (U.S.)", "ISO (International)", "JIS (Japan)"], selected: "ANSI (U.S.)"))
+                SettingsLink("Keyboard Type", status: "ANSI", destination: SelectOptionList("Keyboard Type", options: ["ANSI (U.S.)", "ISO (International)", "JIS (Japan)"], selected: $keyboardType))
             } footer: {
                 Text("Choose the correct type for your keyboard to ensure that all keys function correctly.")
             }
