@@ -11,18 +11,26 @@ import SwiftUI
 struct PreferencesApp: App {
     @Environment(\.scenePhase) private var scenePhase
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    let model = PrimarySettingsListModel.shared
 
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(PrimarySettingsListModel.shared)
+                .environment(model)
         }
         .commands {
             CommandGroup(replacing: .appSettings) {
-                Button("About This iPad", systemImage: "ipad") {}
+                Button("About This iPad", systemImage: "ipad") {
+                    Task { @MainActor in
+                        model.selection = model.mainSettings.first
+                        model.path = [""]
+                        try? await Task.sleep(for: .seconds(0.1))
+                        model.path = ["About"]
+                    }
+                }
                 if UIDevice.`apple-internal-install` {
                     Button("Debug Menu") {
-                        PrimarySettingsListModel.shared.showingDebugMenu.toggle()
+                        model.showingDebugMenu.toggle()
                     }.keyboardShortcut("/")
                 }
             }
