@@ -9,13 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     @AppStorage("FollowUpDismissed") private var followUpDismissed = false
-    @AppStorage("VPNToggle") private var VPNEnabled = true
     @Environment(\.horizontalSizeClass) private var horizontalSizeClass
     @Environment(PrimarySettingsListModel.self) private var model
     @State private var searchFocused = false
+    @State private var searchText = ""
     @State private var showingSignInError = false
     @State private var showingSignInSheet = false
-    @State private var searchText = ""
     
     var body: some View {
         @Bindable var model = model
