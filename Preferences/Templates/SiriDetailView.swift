@@ -1,18 +1,18 @@
-/*
-Abstract:
-A View container for displaying options regarding Siri Suggestions and apps.
-*/
+//
+//  SiriDetailView.swift
+//  Preferences
+//
 
 import SwiftUI
 
-/// A `View` container for displaying options regarding Siri Suggestions and apps.
+/// A `CustomList` container for displaying options regarding Siri Suggestions and apps.
 ///
 /// ```swift
 /// SiriDetailView(appName: "News", title: "News")
 /// ```
 ///
-/// - Parameter appName: The `String` to display as the app name for the `View`.
-/// - Parameter title: The `String` of the navigation title.
+/// - Parameter appName: The `String` app name.
+/// - Parameter title: The `String` navigation title.
 struct SiriDetailView: View {
     @State private var learnFromAppEnabled = true
     @State private var suggestInAppEnabled = true
@@ -21,29 +21,37 @@ struct SiriDetailView: View {
     @State private var suggestNotificationsEnabled = true
     var appName = ""
     var title = UIDevice.IntelligenceCapability ? "Apple Intelligence & Siri" : "Siri"
+    let path = "/System/Library/PrivateFrameworks/AssistantSettingsSupport.framework"
     let table = "AssistantSettings"
     let showInAppApps: Set<String> = ["Calendar", "Contacts", "Maps", "Messages", "News", "Reminders", "Safari"]
     
     var body: some View {
         CustomList(title: title) {
             Section {
-                Toggle("SIRIANDSEARCH_PERAPP_INAPP_LEARNFROMAPP_TOGGLE".localize(table: table, appName), isOn: $learnFromAppEnabled)
+                Toggle("SIRIANDSEARCH_PERAPP_INAPP_LEARNFROMAPP_TOGGLE".localized(path: path, table: table), isOn: $learnFromAppEnabled)
             } footer: {
-                Text("SIRIANDSEARCH_PERAPP_INAPP_FOOTER".localize(table: table, appName))
+                Text("SIRIANDSEARCH_PERAPP_INAPP_FOOTER".localized(path: path, table: table, appName))
             }
             
             Section {
                 if showInAppApps.contains(appName) {
-                    Toggle("Suggest in App", isOn: $suggestInAppEnabled)
+                    switch appName {
+                    case "Contacts":
+                        Toggle("SIRIANDSEARCH_PERAPP_SUGGESTIONS_SHOWINAPP_TOGGLE_CONTACTSAPP".localized(path: path, table: table), isOn: $suggestInAppEnabled)
+                    case "Phone":
+                        Toggle("SIRIANDSEARCH_PERAPP_SUGGESTIONS_SHOWINAPP_TOGGLE_PHONEAPP".localized(path: path, table: table), isOn: $suggestInAppEnabled)
+                    default:
+                        Toggle("SIRIANDSEARCH_PERAPP_SUGGESTIONS_SHOWINAPP_TOGGLE".localized(path: path, table: table), isOn: $suggestInAppEnabled)
+                    }
                 }
                 
-                Toggle("Suggest on Home Screen", isOn: $showHomeScreenEnabled)
-                Toggle("SIRIANDSEARCH_PERAPP_SUGGESTIONS_SUGGESTAPP_TOGGLE".localize(table: table), isOn: $suggestAppEnabled)
-                Toggle("Suggest Notifications", isOn: $suggestNotificationsEnabled)
+                Toggle("SIRIANDSEARCH_PERAPP_SUGGESTIONS_SHOWONHOMESCREEN_TOGGLE".localized(path: path, table: table), isOn: $showHomeScreenEnabled)
+                Toggle("SIRIANDSEARCH_PERAPP_SUGGESTIONS_SUGGESTAPP_TOGGLE".localized(path: path, table: table), isOn: $suggestAppEnabled)
+                Toggle("SIRIANDSEARCH_PERAPP_SUGGESTIONS_SUGGESTION_NOTIFICATIONS_TOGGLE".localized(path: path, table: table), isOn: $suggestNotificationsEnabled)
             } header: {
-                Text("SIRIANDSEARCH_PERAPP_SUGGESTIONS_HEADER", tableName: table)
+                Text("SIRIANDSEARCH_PERAPP_SUGGESTIONS_HEADER".localized(path: path, table: table))
             } footer: {
-                Text("\(showInAppApps.contains(appName) ? "SIRIANDSEARCH_PERAPP_SUGGESTIONS_FOOTER_CONTACTSAPP_NONOTIFICATIONS" : "SIRIANDSEARCH_PERAPP_SUGGESTIONS_FOOTER_NOSHOW_NONOTIFICATIONS")".localize(table: table, appName))
+                Text("\(showInAppApps.contains(appName) ? "SIRIANDSEARCH_PERAPP_SUGGESTIONS_FOOTER_CONTACTSAPP_NONOTIFICATIONS" : "SIRIANDSEARCH_PERAPP_SUGGESTIONS_FOOTER_NOSHOW_NONOTIFICATIONS")".localized(path: path, table: table, appName))
             }
         }
     }
