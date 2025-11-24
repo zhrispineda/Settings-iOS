@@ -39,7 +39,7 @@ struct OtherNetworkView: View {
 
                 // Join Wi-Fi Network
                 Section {
-                    Text("Join Wi-Fi Network")
+                    Text("kWFLocOtherNetworksTitleOBK".localized(path: path, table: table))
                         .padding(.horizontal, -15)
                         .font(.title3)
                         .fontWeight(.bold)
@@ -90,8 +90,11 @@ struct OtherNetworkView: View {
                 }
             }
             .contentMargins(30, for: .scrollContent)
-            .navigationTitle(frameY < 100.0 ? "Join Wi-Fi Network" : "")
+            .navigationTitle(frameY < 100.0 ? "kWFLocOtherNetworksTitleOBK".localized(path: path, table: table) : "")
             .navigationBarTitleDisplayMode(.inline)
+            .navigationDestination(for: String.self) { key in
+                RouteRegistry.shared.view(for: key)
+            }
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
                     // Cancel
