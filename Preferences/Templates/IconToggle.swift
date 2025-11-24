@@ -40,10 +40,12 @@ struct IconToggle: View {
             Label {
                 Text(LocalizedStringKey(text.localize(table: table)))
                     .padding(.leading, UIDevice.iPhone ? -7 : -5)
+                    .lineHeight(.tight)
                 
                 if !subtitle.isEmpty {
                     Text(subtitle.localize(table: table))
                         .font(.footnote)
+                        .padding(.leading, UIDevice.iPhone ? -7 : -5)
                 }
             } icon: {
                 IconView(icon)
