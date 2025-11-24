@@ -11,7 +11,8 @@ struct WallpaperView: View {
     var body: some View {
         BundleControllerView(
             "WallpaperSettings",
-            controller: "WallpaperSettingsRootViewController"
+            controller: "WallpaperSettingsRootViewController",
+            title: "Wallpaper"
         )
     }
 }
