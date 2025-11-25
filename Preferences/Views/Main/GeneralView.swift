@@ -2,18 +2,16 @@
 //  GeneralView.swift
 //  Preferences
 //
-//  Settings > General
-//
 
 import SwiftUI
 
+/// The view located at `Settings > General`.
 struct GeneralView: View {
-    @Environment(\.colorScheme) private var colorScheme
-    @State private var opacity: Double = 0
-    @State private var frameY: Double = 0
-    @State private var showingHomeButtonSheet: Bool = false
-    let path = "/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework"
-    let table = "General"
+    @State private var frameY = 0.0
+    @State private var opacity = 0.0
+    @State private var showingHomeButtonSheet = false
+    private let path = "/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework"
+    private let table = "General"
     
     var body: some View {
         CustomList(title: "General".localized(path: path, table: table)) {
@@ -28,33 +26,51 @@ struct GeneralView: View {
             }
             
             Section {
-                SLink("About".localized(path: path, table: table), icon: "com.apple.graphic-icon.about-current-device") {
-                    AboutView()
-                }
+                SLink(
+                    "About".localized(path: path, table: table),
+                    icon: "com.apple.graphic-icon.about-current-device",
+                    destination: AboutView()
+                )
                 if !UIDevice.IsSimulator {
-                    SLink("SOFTWARE_UPDATE".localized(path: path, table: table), icon: "com.apple.graphic-icon.software-update") {
-                        SoftwareUpdateView()
-                    }
-                    SLink("DEVICE_STORAGE".localized(path: path, table: table), icon: "com.apple.graphic-icon.external-drive") {
-                        BundleControllerView("StorageSettingsUI", controller: "StorageSettingsUIWrapper", title: "DEVICE_STORAGE".localized(path: path, table: table))
+                    SLink(
+                        "SOFTWARE_UPDATE".localized(path: path, table: table),
+                        icon: "com.apple.graphic-icon.software-update",
+                        destination: SoftwareUpdateView()
+                    )
+                    SLink(
+                        "DEVICE_STORAGE".localized(path: path, table: table),
+                        icon: "com.apple.graphic-icon.external-drive"
+                    ) {
+                        BundleControllerView(
+                            "StorageSettingsUI",
+                            controller: "StorageSettingsUIWrapper",
+                            title: "DEVICE_STORAGE".localized(path: path, table: table)
+                        )
                     }
                 }
             }
             
             if !UIDevice.IsSimulator {
                 Section {
-                    SLink("COVERAGE".localized(path: path, table: table), icon: "com.apple.graphic-icon.applecare") {
-                        AppleCareWarrantyView()
-                    }
+                    SLink(
+                        "COVERAGE".localized(path: path, table: table),
+                        icon: "com.apple.graphic-icon.applecare",
+                        destination: AppleCareWarrantyView()
+                    )
                 }
             }
             
             if !UIDevice.IsSimulator {
                 Section {
-                    SLink("AIRDROP".localized(path: path, table: table), icon: "com.apple.graphic-icon.airdrop") {
-                        AirDropView()
-                    }
-                    SLink("CONTINUITY".localized(path: path, table: table), icon: "com.apple.graphic-icon.airplay-video") {
+                    SLink(
+                        "AIRDROP".localized(path: path, table: table),
+                        icon: "com.apple.graphic-icon.airdrop",
+                        destination: AirDropView()
+                    )
+                    SLink(
+                        "CONTINUITY".localized(path: path, table: table),
+                        icon: "com.apple.graphic-icon.airplay-video"
+                    ) {
                         BundleControllerView(
                             "AirPlayAndHandoffSettings",
                             controller: "AirPlayAndHandoffSettings.AirPlayAndHandoffSettingsRoot",
@@ -62,7 +78,10 @@ struct GeneralView: View {
                         )
                     }
                     if UIDevice.iPhone {
-                        SLink("PiP".localized(path: path, table: table), icon: "com.apple.graphic-icon.picture-in-picture") {
+                        SLink(
+                            "PiP".localized(path: path, table: table),
+                            icon: "com.apple.graphic-icon.picture-in-picture"
+                        ) {
                             BundleControllerView(
                                 "PictureInPictureSettings",
                                 controller: "PictureInPictureSettings",
@@ -70,10 +89,15 @@ struct GeneralView: View {
                             )
                         }
                     }
-                    SLink("SCREENSHOT_SERVICES_SETTINGS_TITLE".localized(path: "/System/Library/PreferenceBundles/ScreenshotServicesSettings.bundle"), icon: "com.apple.graphic-icon.screenshots") {
-                        ScreenCaptureView()
-                    }
-                    SLink("HQLR_STATUSBAR_TAPPED_ALERT_TITLE".localized(path: "/System/Library/PreferenceBundles/ReplayKitLocalCaptureSettings.bundle"), icon: "com.apple.graphic-icon.localcapture") {
+                    SLink(
+                        "SCREENSHOT_SERVICES_SETTINGS_TITLE".localized(path: "/System/Library/PreferenceBundles/ScreenshotServicesSettings.bundle"),
+                        icon: "com.apple.graphic-icon.screenshots",
+                        destination: ScreenCaptureView()
+                    )
+                    SLink(
+                        "HQLR_STATUSBAR_TAPPED_ALERT_TITLE".localized(path: "/System/Library/PreferenceBundles/ReplayKitLocalCaptureSettings.bundle"),
+                        icon: "com.apple.graphic-icon.localcapture"
+                    ) {
                         BundleControllerView(
                             "ReplayKitLocalCaptureSettings",
                             controller: "LocalCaptureSettingsController",
@@ -81,7 +105,10 @@ struct GeneralView: View {
                         )
                     }
                     if UIDevice.iPhone {
-                        SLink("CARPLAY".localized(path: path, table: table), icon: "com.apple.graphic-icon.carplay") {
+                        SLink(
+                            "CARPLAY".localized(path: path, table: table),
+                            icon: "com.apple.graphic-icon.carplay"
+                        ) {
                             BundleControllerView(
                                 "CarKitSettings",
                                 controller: "CRSettingsController",
@@ -96,33 +123,51 @@ struct GeneralView: View {
                 Button {
                     showingHomeButtonSheet = true
                 } label: {
-                    SLink("HOME_BUTTON".localized(path: path, table: table), icon: "com.apple.graphic-icon.iphone-home-button") {}
+                    SLink(
+                        "HOME_BUTTON".localized(path: path, table: table),
+                        icon: "com.apple.graphic-icon.iphone-home-button"
+                    ) {}
                 }
                 .foregroundStyle(.primary)
             }
             
             Section {
-                SLink("AUTOFILL".localized(path: path, table: table), icon: "com.apple.graphic-icon.autofill") {
-                    AutoFillPasswordsView()
-                }
+                SLink(
+                    "AUTOFILL".localized(path: path, table: table),
+                    icon: "com.apple.graphic-icon.autofill",
+                    destination: AutoFillPasswordsView()
+                )
                 if !UIDevice.IsSimulator {
-                    SLink("AUTO_CONTENT_DOWNLOAD".localized(path: path, table: table), icon: "com.apple.graphic-icon.background-app-refresh") {
-                        BackgroundAppRefreshView()
-                    }
-                    SLink("DATE_AND_TIME".localized(path: path, table: table), icon: "com.apple.graphic-icon.date-and-time") {
-                        DateTimeView()
-                    }
+                    SLink(
+                        "AUTO_CONTENT_DOWNLOAD".localized(path: path, table: table),
+                        icon: "com.apple.graphic-icon.background-app-refresh",
+                        destination: BackgroundAppRefreshView()
+                    )
+                    SLink(
+                        "DATE_AND_TIME".localized(path: path, table: table),
+                        icon: "com.apple.graphic-icon.date-and-time",
+                        destination: DateTimeView()
+                    )
                 }
-                SLink("DICTIONARY".localized(path: path, table: table), icon: "com.apple.graphic-icon.dictionary") {
-                    DictionaryView()
-                }
-                SLink("FONT_SETTING".localized(path: path, table: table), icon: "com.apple.graphic-icon.fonts") {
-                    FontsView()
-                }
-                SLink("Keyboard".localized(path: path, table: table), icon: "com.apple.graphic-icon.keyboard") {
-                    KeyboardView()
-                }
-                SLink("INTERNATIONAL".localized(path: path, table: table), icon: "com.apple.graphic-icon.language") {
+                SLink(
+                    "DICTIONARY".localized(path: path, table: table),
+                    icon: "com.apple.graphic-icon.dictionary",
+                    destination: DictionaryView()
+                )
+                SLink(
+                    "FONT_SETTING".localized(path: path, table: table),
+                    icon: "com.apple.graphic-icon.fonts",
+                    destination: FontsView()
+                )
+                SLink(
+                    "Keyboard".localized(path: path, table: table),
+                    icon: "com.apple.graphic-icon.keyboard",
+                    destination: KeyboardView()
+                )
+                SLink(
+                    "INTERNATIONAL".localized(path: path, table: table),
+                    icon: "com.apple.graphic-icon.language"
+                ) {
                     BundleControllerView(
                         "InternationalSettings",
                         controller: "InternationalSettingsController",
@@ -133,21 +178,28 @@ struct GeneralView: View {
             
             if !UIDevice.IsSimulator {
                 Section {
-                    SLink("TV_PROVIDER_LABEL".localized(path: path, table: table), icon: "com.apple.graphic-icon.tv-provider") {
-                        TVProviderView()
-                    }
+                    SLink(
+                        "TV_PROVIDER_LABEL".localized(path: path, table: table),
+                        icon: "com.apple.graphic-icon.tv-provider",
+                        destination: TVProviderView()
+                    )
                 }
             }
             
             Section {
-                SLink("VPN_DEVICE_MANAGEMENT".localized(path: path, table: table), icon: "com.apple.graphic-icon.device-management") {
-                    VPNDeviceManagementView()
-                }
+                SLink(
+                    "VPN_DEVICE_MANAGEMENT".localized(path: path, table: table),
+                    icon: "com.apple.graphic-icon.device-management",
+                    destination: VPNDeviceManagementView()
+                )
             }
             
             if !UIDevice.IsSimulator {
                 Section {
-                    SLink("LEGAL_AND_REGULATORY_TITLE".localized(path: path, table: table), icon: "com.apple.graphic-icon.legal-and-regulatory") {
+                    SLink(
+                        "LEGAL_AND_REGULATORY_TITLE".localized(path: path, table: table),
+                        icon: "com.apple.graphic-icon.legal-and-regulatory"
+                    ) {
                         BundleControllerView(
                             "LegalAndRegulatorySettings",
                             controller: "LegalAndRegulatorySettings.LegalAndRegulatorySettingsRoot",
@@ -155,26 +207,19 @@ struct GeneralView: View {
                         )
                     }
                 }
-            }
-            
-            Section {
-                SLink("TRANSFER_OR_RESET_TITLE".localized(path: path, table: table), icon: UIDevice.iPhone ? "com.apple.graphic-icon.transfer-or-reset-iphone" : "com.apple.graphic-icon.transfer-or-reset-ipad") {
-                    if !UIDevice.IsSimulator {
+                
+                Section {
+                    SLink(
+                        "TRANSFER_OR_RESET_TITLE".localized(path: path, table: table),
+                        icon: UIDevice.iPhone ? "com.apple.graphic-icon.transfer-or-reset-iphone" : "com.apple.graphic-icon.transfer-or-reset-ipad") {
                         BundleControllerView(
-                            "/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework/GeneralSettingsUI",
+                            "\(path)/GeneralSettingsUI",
                             controller: "PSGTransferOrResetController",
                             title: "TRANSFER_OR_RESET_TITLE".localized(path: path, table: table)
                         )
-                    } else {
-                        Text("")
-                            .onAppear {
-                                exit(0)
-                            }
                     }
                 }
-            }
-            
-            if !UIDevice.IsSimulator {
+                
                 Section {
                     Button("SHUTDOWN_LABEL".localized(path: path, table: table)) {}
                 }
@@ -183,7 +228,7 @@ struct GeneralView: View {
         .fullScreenCover(isPresented: $showingHomeButtonSheet) {
             NavigationStack {
                 CustomViewController(
-                    "/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework/GeneralSettingsUI",
+                    "\(path)/GeneralSettingsUI",
                     controller: "PSGHomeButtonCustomizeController"
                 )
                 .toolbar {
