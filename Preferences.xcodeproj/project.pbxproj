@@ -50,8 +50,6 @@
 		833769072ED2622E0002822F /* DeveloperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833769062ED2622E0002822F /* DeveloperView.swift */; };
 		833769092ED262BB0002822F /* WallpaperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833769082ED262BB0002822F /* WallpaperView.swift */; };
 		833854F72C1648CD00339C4F /* SoftwareUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833854F62C1648CD00339C4F /* SoftwareUpdateView.swift */; };
-		833A44EF2C6E75BF003076F5 /* SystemFontsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833A44EE2C6E75BF003076F5 /* SystemFontsView.swift */; };
-		833A44F12C6E768E003076F5 /* MyFontsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833A44F02C6E768E003076F5 /* MyFontsView.swift */; };
 		833C124B2C99AA1400CAEB36 /* TVProviderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C124A2C99AA1400CAEB36 /* TVProviderView.swift */; };
 		833C6EAC2C208A3900A8D91C /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C6EAB2C208A3900A8D91C /* CameraView.swift */; };
 		833C6EAE2C20C88000A8D91C /* HomeScreenAppLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C6EAD2C20C88000A8D91C /* HomeScreenAppLibraryView.swift */; };
@@ -111,7 +109,6 @@
 		838273A12B7F28D6000F4228 /* MoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838273A02B7F28D6000F4228 /* MoviesView.swift */; };
 		838273A32B7FD37B000F4228 /* TVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838273A22B7FD37B000F4228 /* TVView.swift */; };
 		838273A52B7FD4CF000F4228 /* AppRestrictionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838273A42B7FD4CF000F4228 /* AppRestrictionsView.swift */; };
-		8383CD082C9C842A00BA06A0 /* SystemFontsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8383CD072C9C842A00BA06A0 /* SystemFontsDetailView.swift */; };
 		8383FDFA2E0370760021D274 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8383FDF92E0370760021D274 /* UIImageExtensions.swift */; };
 		838A9EC22B7E81EC00ED261C /* ContentPrivacyRestrictionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838A9EC12B7E81EC00ED261C /* ContentPrivacyRestrictionsView.swift */; };
 		838A9EC42B7E823300ED261C /* SettingsLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838A9EC32B7E823300ED261C /* SettingsLink.swift */; };
@@ -249,8 +246,6 @@
 		833769062ED2622E0002822F /* DeveloperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperView.swift; sourceTree = "<group>"; };
 		833769082ED262BB0002822F /* WallpaperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperView.swift; sourceTree = "<group>"; };
 		833854F62C1648CD00339C4F /* SoftwareUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoftwareUpdateView.swift; sourceTree = "<group>"; };
-		833A44EE2C6E75BF003076F5 /* SystemFontsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemFontsView.swift; sourceTree = "<group>"; };
-		833A44F02C6E768E003076F5 /* MyFontsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFontsView.swift; sourceTree = "<group>"; };
 		833C124A2C99AA1400CAEB36 /* TVProviderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVProviderView.swift; sourceTree = "<group>"; };
 		833C6EAB2C208A3900A8D91C /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		833C6EAD2C20C88000A8D91C /* HomeScreenAppLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenAppLibraryView.swift; sourceTree = "<group>"; };
@@ -312,7 +307,6 @@
 		838273A02B7F28D6000F4228 /* MoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesView.swift; sourceTree = "<group>"; };
 		838273A22B7FD37B000F4228 /* TVView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVView.swift; sourceTree = "<group>"; };
 		838273A42B7FD4CF000F4228 /* AppRestrictionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRestrictionsView.swift; sourceTree = "<group>"; };
-		8383CD072C9C842A00BA06A0 /* SystemFontsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemFontsDetailView.swift; sourceTree = "<group>"; };
 		8383FDF92E0370760021D274 /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
 		838A9EC12B7E81EC00ED261C /* ContentPrivacyRestrictionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentPrivacyRestrictionsView.swift; sourceTree = "<group>"; };
 		838A9EC32B7E823300ED261C /* SettingsLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLink.swift; sourceTree = "<group>"; };
@@ -505,16 +499,6 @@
 				8310DD7E2E5FE7F700BB9308 /* BatteryView.swift */,
 			);
 			path = Radios;
-			sourceTree = "<group>";
-		};
-		833A44ED2C6E7589003076F5 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				8383CD062C9C841D00BA06A0 /* System Fonts */,
-				833A44EE2C6E75BF003076F5 /* SystemFontsView.swift */,
-				833A44F02C6E768E003076F5 /* MyFontsView.swift */,
-			);
-			path = Fonts;
 			sourceTree = "<group>";
 		};
 		833C6EAA2C2087BB00A8D91C /* Apps */ = {
@@ -718,14 +702,6 @@
 			path = "Content Restrictions";
 			sourceTree = "<group>";
 		};
-		8383CD062C9C841D00BA06A0 /* System Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				8383CD072C9C842A00BA06A0 /* SystemFontsDetailView.swift */,
-			);
-			path = "System Fonts";
-			sourceTree = "<group>";
-		};
 		838A9EC02B7E81D900ED261C /* Screen Time */ = {
 			isa = PBXGroup;
 			children = (
@@ -797,7 +773,6 @@
 			children = (
 				835683952B754ED3000FB136 /* About */,
 				83B550542C16A67E002DA622 /* Software Update */,
-				833A44ED2C6E7589003076F5 /* Fonts */,
 				838C232D2B7497530053D4C5 /* AboutView.swift */,
 				833854F62C1648CD00339C4F /* SoftwareUpdateView.swift */,
 				83C94CA42C1E0192005EBBC5 /* AppleCareWarrantyView.swift */,
@@ -1176,7 +1151,6 @@
 				83D0501A2DB6D343003D50AD /* ContinueButton.swift in Sources */,
 				830A87D02DA5895600789C20 /* BundleControllerView.swift in Sources */,
 				83F3F7C32ED00D7900CC1444 /* AccessoryDeveloperView.swift in Sources */,
-				8383CD082C9C842A00BA06A0 /* SystemFontsDetailView.swift in Sources */,
 				83F3F80B2ED10E1200CC1444 /* FitnessView.swift in Sources */,
 				833768FD2ED137E20002822F /* ActionButtonView.swift in Sources */,
 				83F3F6A72B7D2BAA003CC310 /* FontsView.swift in Sources */,
@@ -1240,13 +1214,11 @@
 				83815CE72B768DF100F53A0F /* SafariView.swift in Sources */,
 				833C6EB22C20CE7800A8D91C /* SearchDetailView.swift in Sources */,
 				8373E7382B9168C9004285EA /* CommunicationSafetyView.swift in Sources */,
-				833A44F12C6E768E003076F5 /* MyFontsView.swift in Sources */,
 				8329284B2B8578F4006611CF /* AppPermissionsView.swift in Sources */,
 				83815CED2B768E8300F53A0F /* MapsView.swift in Sources */,
 				836610662DAC67CD0040E05C /* SettingsLogger.swift in Sources */,
 				8372142D2D91C5E30027C51D /* UIWindowExtensions.swift in Sources */,
 				83AE01DD2D65637C00724A34 /* AppleAccountSection.swift in Sources */,
-				833A44EF2C6E75BF003076F5 /* SystemFontsView.swift in Sources */,
 				8356460A2D9C4AB600DAB406 /* UIKitRepresentables.swift in Sources */,
 				838C23232B746CF90053D4C5 /* GeneralView.swift in Sources */,
 				833769012ED25D050002822F /* SoundsAndHapticsView.swift in Sources */,
