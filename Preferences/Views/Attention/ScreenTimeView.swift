@@ -21,11 +21,14 @@ struct ScreenTimeView: View {
             if appWebsiteActivityEnabled {
                 Section {
                     VStack {
-                        Text(UIDevice.iPhone ? "NoDataDetailTextLabel_IPHONE".localized(path: path) : "NoDataDetailTextLabel_IPAD".localized(path: path))
-                            .font(.subheadline)
-                            .foregroundStyle(.secondary)
-                            .multilineTextAlignment(.center)
-                            .frame(maxWidth: .infinity, idealHeight: 150)
+                        Text(UIDevice.iPhone
+                             ? "NoDataDetailTextLabel_IPHONE".localized(path: path)
+                             : "NoDataDetailTextLabel_IPAD".localized(path: path)
+                        )
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                        .multilineTextAlignment(.center)
+                        .frame(maxWidth: .infinity, idealHeight: 150)
                     }
                     .padding(.vertical)
                     .padding(.horizontal, 0)
@@ -39,7 +42,13 @@ struct ScreenTimeView: View {
                 }
             } else {
                 Section {
-                    Placard(title: "ScreenTimeGroupSpecifierName".localized(path: path), icon: "com.apple.graphic-icon.screen-time", description: "AboutScreenTimeDetailText".localized(path: path), frameY: .constant(0.0), opacity: .constant(1.0))
+                    Placard(
+                        title: "ScreenTimeGroupSpecifierName".localized(path: path),
+                        icon: "com.apple.graphic-icon.screen-time",
+                        description: "AboutScreenTimeDetailText".localized(path: path),
+                        frameY: .constant(0.0),
+                        opacity: .constant(1.0)
+                    )
                 }
             }
             
@@ -85,7 +94,11 @@ struct ScreenTimeView: View {
                             .frame(width: 400, height: 730)
                     }
                 }
-                SLink("ScreenDistanceSpecifierName".localized(path: path), icon: "com.apple.screen-time.screen-distance", subtitle: "ScreenDistanceSpecifierSubtitleText".localized(path: path)) {
+                SLink(
+                    "ScreenDistanceSpecifierName".localized(path: path),
+                    icon: "com.apple.screen-time.screen-distance",
+                    subtitle: "ScreenDistanceSpecifierSubtitleText".localized(path: path)
+                ) {
                     ScreenDistanceView()
                         .onAppear {
                             showingScreenDistanceSheet.toggle()
@@ -100,7 +113,11 @@ struct ScreenTimeView: View {
             }
             
             Section {
-                SLink("CommunicationSafetyTitle".localized(path: path), icon: "com.apple.graphic-icon.communication-safety", subtitle: "CommunicationSafetyOffSubtitle".localized(path: path)) {
+                SLink(
+                    "CommunicationSafetyTitle".localized(path: path),
+                    icon: "com.apple.graphic-icon.communication-safety",
+                    subtitle: "CommunicationSafetyOffSubtitle".localized(path: path)
+                ) {
                     CommunicationSafetyView()
                         .onAppear {
                             showingCommunicationSafetySheet.toggle()
@@ -115,9 +132,12 @@ struct ScreenTimeView: View {
             }
             
             Section {
-                SLink("ContentPrivacySpecifierName".localized(path: path), icon: "com.apple.graphic-icon.content-and-privacy-restrictions", subtitle: "ContentPrivacyDetailText".localized(path: path)) {
-                    ContentPrivacyRestrictionsView()
-                }
+                SLink(
+                    "ContentPrivacySpecifierName".localized(path: path),
+                    icon: "com.apple.graphic-icon.content-and-privacy-restrictions",
+                    subtitle: "ContentPrivacyDetailText".localized(path: path),
+                    destination: ContentPrivacyRestrictionsView()
+                )
             } header: {
                 Text("RestrictionsGroupSpecifierName".localized(path: path))
             }
