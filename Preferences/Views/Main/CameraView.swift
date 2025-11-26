@@ -10,9 +10,9 @@ import SwiftUI
 struct CameraView: View {
     @AppStorage("CameraControlApp") private var selectedApp = "Camera"
     @AppStorage("CameraVideoSetting") private var selectedVideoSetting = "CAM_RECORD_VIDEO_1080p_30"
-    @AppStorage("CameraSlomoSetting") private var selectedSlomoSetting = String()
+    @AppStorage("CameraSlomoSetting") private var selectedSlomoSetting = ""
     @AppStorage("CameraCinematicSetting") private var selectedCinematicSetting = "CAM_RECORD_VIDEO_1080p_30"
-    @AppStorage("CameraSoundSetting") private var selectedSoundSetting = String()
+    @AppStorage("CameraSoundSetting") private var selectedSoundSetting = ""
     @State private var showingPhotographicStylesView = false
     @AppStorage("CameraBurstToggle") private var useVolumeUpBurstEnabled = false
     @AppStorage("CameraQRCodesToggle") private var scanQRCodesEnabled = true
@@ -124,7 +124,15 @@ struct CameraView: View {
                 if UIDevice.ViewOutsideFrameCapability && UIDevice.iPhone {
                     Toggle("OVER_CAPTURE_VIEW_OUTSIDE_THE_FRAME_SWITCH".localized(path: path, table: table), isOn: $viewOutsideFrameEnabled)
                 }
-                NavigationLink("CAM_INDICATORS_TITLE".localized(path: path, table: table)) {}
+                NavigationLink(
+                    "CAM_INDICATORS_TITLE".localized(path: path, table: table)
+                ) {
+                    BundleControllerView(
+                        "CameraSettings",
+                        controller: "CameraIndicatorSettingsController",
+                        title: "CAM_INDICATORS_TITLE".localized(path: path, table: table)
+                    )
+                }
             } header: {
                 Text("COMPOSITION_GROUP_TITLE".localized(path: path, table: table))
             }
