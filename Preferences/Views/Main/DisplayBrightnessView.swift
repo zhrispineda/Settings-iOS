@@ -7,6 +7,51 @@
 
 import SwiftUI
 
+enum Theme {
+    case dark
+    case light
+}
+
+struct DisplayAppearanceOptionView: View {
+    let option: Theme
+    @Binding var appearance: Theme
+    let asset: String
+    let text: String
+    let path: String
+    let table: String
+    
+    var body: some View {
+        Button {
+            appearance = option
+        } label: {
+            VStack(spacing: 15) {
+                ZStack {
+                    if let asset = UIImage.asset(path: path, name: asset) {
+                        Image(uiImage: asset)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: UIDevice.iPhone ? 60 : 90)
+                            .padding(.top, 5)
+                    }
+                    Text("9:41")
+                        .font(.callout)
+                        .fontWeight(.semibold)
+                        .kerning(-1.25)
+                        .foregroundStyle(.white)
+                        .padding(.bottom, UIDevice.iPhone ? 75 : 25)
+                }
+                Text(text.localized(path: path, table: table))
+                    .padding(.vertical, -5)
+                Image(systemName: appearance == option ? "checkmark.circle.fill": "circle")
+                    .imageScale(.large)
+                    .foregroundStyle(appearance == option ? Color(UIColor.systemBackground) : Color.secondary, .blue)
+                    .fontWeight(.light)
+            }
+        }
+        .buttonStyle(.plain)
+    }
+}
+
 struct DisplayBrightnessView: View {
     @Environment(\.colorScheme) private var colorScheme
     @AppStorage("AutomaticAppearanceToggle") private var automaticEnabled = false
@@ -24,11 +69,6 @@ struct DisplayBrightnessView: View {
     let phoneOptions = ["30 seconds", "1 minute", "2 minutes", "3 minutes", "4 minutes", "5 minutes", "NEVER"]
     let tabletOptions = ["2 minutes", "5 minutes", "10 minutes", "15 minutes", "NEVER"]
     
-    enum Theme {
-        case dark
-        case light
-    }
-    
     var body: some View {
         CustomList(title: "DISPLAY_AND_BRIGHTNESS".localized(path: path, table: table), topPadding: true) {
             // MARK: Appearance
@@ -39,64 +79,27 @@ struct DisplayBrightnessView: View {
                     Spacer()
                     
                     // Light
-                    Button {
-                        appearance = .light
-                    } label: {
-                        VStack(spacing: 15) {
-                            ZStack {
-                                if let asset = UIImage.asset(path: path, name: "AppearanceLight") {
-                                    Image(uiImage: asset)
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: UIDevice.iPhone ? 60 : 90)
-                                        .padding(.top, 5)
-                                }
-                                Text("9:41")
-                                    .font(.footnote)
-                                    .fontWeight(.semibold)
-                                    .foregroundStyle(.white)
-                                    .padding(.bottom, UIDevice.iPhone ? 75 : 25)
-                            }
-                            Text("COMPATIBLE_APPEARANCE_CHOICE_LIGHT".localized(path: path, table: table))
-                                .font(.subheadline)
-                                .padding(.bottom, -5)
-                            Image(systemName: appearance == .light ? "checkmark.circle.fill": "circle")
-                                .foregroundStyle(appearance == .light ? Color.white : Color.secondary, .blue)
-                                .fontWeight(.light)
-                        }
-                    }
-                    .buttonStyle(.plain)
+                    DisplayAppearanceOptionView(
+                        option: .light,
+                        appearance: $appearance,
+                        asset: "AppearanceLight",
+                        text: "COMPATIBLE_APPEARANCE_CHOICE_LIGHT",
+                        path: path,
+                        table: table
+                    )
                     
                     Spacer()
                     
                     // Dark
-                    Button {
-                        appearance = .dark
-                    } label: {
-                        VStack(spacing: 15) {
-                            ZStack {
-                                if let asset = UIImage.asset(path: path, name: "AppearanceDark") {
-                                    Image(uiImage: asset)
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: UIDevice.iPhone ? 60 : 90)
-                                        .padding(.top, 5)
-                                }
-                                Text("9:41")
-                                    .font(.footnote)
-                                    .fontWeight(.semibold)
-                                    .foregroundStyle(.white)
-                                    .padding(.bottom, UIDevice.iPhone ? 75 : 25)
-                            }
-                            Text("COMPATIBLE_APPEARANCE_CHOICE_DARK".localized(path: path, table: table))
-                                .font(.subheadline)
-                                .padding(.bottom, -5)
-                            Image(systemName: appearance == .dark ? "checkmark.circle.fill": "circle")
-                                .foregroundStyle(appearance == .dark ? Color.white : Color.secondary, .blue)
-                                .fontWeight(.light)
-                        }
-                    }
-                    .buttonStyle(.plain)
+                    DisplayAppearanceOptionView(
+                        option: .dark,
+                        appearance: $appearance,
+                        asset: "AppearanceDark",
+                        text: "COMPATIBLE_APPEARANCE_CHOICE_DARK",
+                        path: path,
+                        table: table
+                    )
+                    
                     Spacer()
                 }
                 .onAppear {
@@ -114,7 +117,10 @@ struct DisplayBrightnessView: View {
                         BundleControllerView(
                             "/System/Library/PrivateFrameworks/Settings/DisplayAndBrightnessSettings.framework/DisplayAndBrightnessSettings",
                             controller: "DBSDeviceAppearanceScheduleController",
-                            title: "APPEARANCE_SCHEDULE".localized(path: path, table: "DeviceAppearanceSchedule")
+                            title: "APPEARANCE_SCHEDULE".localized(
+                                path: path,
+                                table: "DeviceAppearanceSchedule"
+                            )
                         )
                     }
                 }
@@ -176,7 +182,10 @@ struct DisplayBrightnessView: View {
             
             // MARK: Night Shift
             Section {
-                SettingsLink("BLUE_LIGHT_REDUCTION".localized(path: path, table: table), status: "OFF".localized(path: path, table: table), destination: EmptyView())
+                SettingsLink(
+                    "BLUE_LIGHT_REDUCTION".localized(path: path, table: table),
+                    status: "OFF".localized(path: path, table: table)
+                ) {}
             }
             
             // MARK: Auto-Lock
@@ -185,9 +194,10 @@ struct DisplayBrightnessView: View {
                     "AUTOLOCK".localized(path: path, table: table),
                     status: autoLockDuration.localized(path: path, table: table),
                     destination: SelectOptionList(
-                        "AUTOLOCK".localized(path: path, table: table),
+                        "AUTOLOCK",
                         options: UIDevice.iPhone ? phoneOptions : tabletOptions,
                         selected: $autoLockDuration,
+                        path: path,
                         table: "Display"
                     )
                 )
@@ -203,7 +213,10 @@ struct DisplayBrightnessView: View {
             } footer: {
                 VStack(alignment: .leading) {
                     if UIDevice.`hall-effect-sensor` {
-                        Text(lowPowerMode ? "SMART_CASE_LOCK_FOOTER".localized(path: path, table: table) + "\n" : "SMART_CASE_LOCK_FOOTER".localized(path: path, table: table))
+                        Text(lowPowerMode
+                             ? "SMART_CASE_LOCK_FOOTER".localized(path: path, table: table) + "\n"
+                             : "SMART_CASE_LOCK_FOOTER".localized(path: path, table: table)
+                        )
                     }
                     if lowPowerMode {
                         Text("AUTOLOCK_LPM_FOOTER".localized(path: path, table: table))
