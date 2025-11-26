@@ -50,7 +50,7 @@ struct SelectOptionList: View {
             } footer: {
                 switch title {
                 case "AccountChangesSpecifierName":
-                    Text("AccountChangesFooterText", tableName: table)
+                    Text("AccountChangesFooterText".localized(path: path, table: table))
                 case "kWFLocAskToJoinTitle":
                     switch selected.wrappedValue {
                     case "kWFLocAskToJoinDetailOff":
@@ -65,10 +65,10 @@ struct SelectOptionList: View {
                 case "ConnectWithFriendsSpecifierName":
                     Text("\("ConnectWithFriendsExplanatoryFooterText".localize(table: table))\n\n\("ConnectWithFriendsContinuedExplanatoryText".localize(table: table))")
                 case "PrivateMessagingSpecifierName":
-                    Text("PrivateMessagingFooter", tableName: table)
+                    Text("PrivateMessagingFooter".localized(path: path, table: table))
                 case "AUTOLOCK":
                     if selected.wrappedValue == "NEVER" {
-                        Text("DNB_AUTOLOCK_NEVER_WARNING_DESCRIPTION", tableName: table)
+                        Text("DNB_AUTOLOCK_NEVER_WARNING_DESCRIPTION".localized(path: path, table: table))
                     }
                 default:
                     EmptyView()
