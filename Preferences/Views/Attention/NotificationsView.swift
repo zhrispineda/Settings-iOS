@@ -164,7 +164,11 @@ struct NotificationsView: View {
                     SettingsLink(
                         "SUMMARIZE_NOTIFICATIONS".localized(path: path, table: table),
                         status: "OFF".localized(path: path, table: table),
-                        destination: SummarizeNotificationsView()
+                        destination: BundleControllerView(
+                            "NotificationsSettings",
+                            controller: "NCSummarizePreviewsDetailController",
+                            title: "SUMMARIZE_NOTIFICATIONS".localized(path: path, table: table)
+                        )
                     )
                 } header: {
                     Text("APPLE_INTELLIGENCE".localized(path: path, table: table))
