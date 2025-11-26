@@ -16,14 +16,22 @@ struct NotificationStyleButton: View {
     var body: some View {
         Button(action: action) {
             VStack {
-                Image(uiImage: icon)
-                    .renderingMode(.template)
-                    .foregroundStyle(isSelected ? .blue : .secondary)
+                ZStack {
+                    Image(uiImage: icon)
+                        .renderingMode(.template)
+                        .foregroundStyle(isSelected ? .blue : .secondary)
+                    Text("9:41")
+                        .font(.caption2)
+                        .fontWeight(.semibold)
+                        .foregroundStyle(isSelected ? .blue : .primary.opacity(0.5))
+                        .offset(y: UIDevice.iPhone ? -20 : -25)
+                        .kerning(-1.0)
+                }
                 Text(label)
                     .font(.caption)
                     .foregroundStyle(isSelected ? Color(UIColor.systemBackground) : .primary)
-                    .padding(.horizontal, 8)
-                    .padding(.vertical, 4)
+                    .padding(.horizontal, 10)
+                    .padding(.vertical, 5)
                     .background {
                         RoundedRectangle(cornerRadius: 50)
                             .foregroundStyle(isSelected ? .blue : .clear)
@@ -71,7 +79,9 @@ struct NotificationsView: View {
                             label: "NOTIFICATION_LIST_DISPLAY_STYLE_COUNT".localized(path: path, table: table),
                             isSelected: notificationStyle == .count
                         ) {
-                            notificationStyle = .count
+                            withAnimation {
+                                notificationStyle = .count
+                            }
                         }
                     }
                     
@@ -84,7 +94,9 @@ struct NotificationsView: View {
                             label: "NOTIFICATION_LIST_DISPLAY_STYLE_STACK".localized(path: path, table: table),
                             isSelected: notificationStyle == .stack
                         ) {
-                            notificationStyle = .stack
+                            withAnimation {
+                                notificationStyle = .stack
+                            }
                         }
                     }
                     
@@ -97,7 +109,9 @@ struct NotificationsView: View {
                             label: "NOTIFICATION_LIST_DISPLAY_STYLE_LIST".localized(path: path, table: table),
                             isSelected: notificationStyle == .list
                         ) {
-                            notificationStyle = .list
+                            withAnimation {
+                                notificationStyle = .list
+                            }
                         }
                     }
                     Spacer()
@@ -110,9 +124,29 @@ struct NotificationsView: View {
             
             // MARK: Notification Options Section
             Section {
-                SettingsLink("NOTIFICATION_DELIVERY_SCHEDULED".localized(path: path, table: table), status: "OFF".localized(path: path, table: table), destination: ScheduledSummaryView())
-                SettingsLink("SHOW_PREVIEWS".localized(path: path, table: table), status: previewSelection.localized(path: path, table: table), destination: SelectOptionList("SHOW_PREVIEWS", options: ["SHOW_PREVIEW_OPTION_ALWAYS", "SHOW_PREVIEW_OPTION_UNLOCKED", "SHOW_PREVIEW_OPTION_NEVER"], selected: $previewSelection, table: table))
-                SettingsLink("SCREEN_SHARING".localized(path: path, table: table), status: (allowNotifications ? "SCREEN_SHARING_NOTIFICATIONS_ON" : "SCREEN_SHARING_NOTIFICATIONS_OFF").localized(path: path, table: table), destination: ScreenSharingView(allowNotifications: $allowNotifications))
+                SettingsLink(
+                    "NOTIFICATION_DELIVERY_SCHEDULED".localized(path: path, table: table),
+                    status: "OFF".localized(path: path, table: table),
+                    destination: ScheduledSummaryView()
+                )
+                SettingsLink(
+                    "SHOW_PREVIEWS".localized(path: path, table: table),
+                    status: previewSelection.localized(path: path, table: table),
+                    destination: SelectOptionList(
+                        "SHOW_PREVIEWS",
+                        options: ["SHOW_PREVIEW_OPTION_ALWAYS", "SHOW_PREVIEW_OPTION_UNLOCKED", "SHOW_PREVIEW_OPTION_NEVER"],
+                        selected: $previewSelection,
+                        path: path,
+                        table: table
+                    )
+                )
+                SettingsLink(
+                    "SCREEN_SHARING".localized(path: path, table: table),
+                    status: (allowNotifications
+                             ? "SCREEN_SHARING_NOTIFICATIONS_ON"
+                             : "SCREEN_SHARING_NOTIFICATIONS_OFF").localized(path: path, table: table),
+                    destination: ScreenSharingView(allowNotifications: $allowNotifications)
+                )
             }
             
             if UIDevice.IntelligenceCapability {
@@ -127,7 +161,11 @@ struct NotificationsView: View {
                             title: "PRIORITIZE_NOTIFICATIONS".localized(path: path, table: table)
                         )
                     }
-                    SettingsLink("SUMMARIZE_NOTIFICATIONS".localized(path: path, table: table), status: "OFF".localized(path: path, table: table), destination: SummarizeNotificationsView())
+                    SettingsLink(
+                        "SUMMARIZE_NOTIFICATIONS".localized(path: path, table: table),
+                        status: "OFF".localized(path: path, table: table),
+                        destination: SummarizeNotificationsView()
+                    )
                 } header: {
                     Text("APPLE_INTELLIGENCE".localized(path: path, table: table))
                 } footer: {
@@ -137,8 +175,15 @@ struct NotificationsView: View {
             
             // MARK: Siri Section
             Section {
-                SettingsLink("SPOKEN_NOTIFICATIONS".localized(path: path, table: table), status: "OFF".localized(path: path, table: table), destination: AnnounceNotificationsView())
-                NavigationLink("SIRI_SUGGESTIONS".localized(path: path, table: table), destination: SiriSuggestionsView())
+                SettingsLink(
+                    "SPOKEN_NOTIFICATIONS".localized(path: path, table: table),
+                    status: "OFF".localized(path: path, table: table),
+                    destination: AnnounceNotificationsView()
+                )
+                NavigationLink(
+                    "SIRI_SUGGESTIONS".localized(path: path, table: table),
+                    destination: SiriSuggestionsView()
+                )
             } header: {
                 Text("SIRI".localized(path: path, table: table))
             }
