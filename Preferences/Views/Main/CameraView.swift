@@ -61,11 +61,21 @@ struct CameraView: View {
             // MARK: - System Settings
             if !UIDevice.IsSimulator && UIDevice.AdvancedPhotographicStylesCapability {
                 Section {
-                    SettingsLink("CAMERA_BUTTON_TITLE".localized(path: path, table: buttonTable), status: selectedApp.localize(table: buttonTable), destination: CameraControlView())
+                    SettingsLink(
+                        "CAMERA_BUTTON_TITLE".localized(path: path, table: buttonTable),
+                        status: selectedApp.localize(table: buttonTable),
+                        destination: CameraControlView()
+                    )
                 } header: {
                     Text("SYSTEM_SETTINGS_HEADER".localized(path: path, table: stylesTable))
                 } footer: {
-                    Text(.init("CAMERA_BUTTON_%@_FOOTER".localized(path: path, table: buttonTable, "[\("CAMERA_BUTTON_LEARN_MORE_TITLE".localized(path: path, table: buttonTable))](pref://helpkit)")))
+                    Text(.init(
+                        "CAMERA_BUTTON_%@_FOOTER".localized(
+                            path: path,
+                            table: buttonTable,
+                            "[\("CAMERA_BUTTON_LEARN_MORE_TITLE".localized(path: path, table: buttonTable))](pref://helpkit)"
+                        )
+                    ))
                 }
             }
             
@@ -75,7 +85,13 @@ struct CameraView: View {
                     Button {
                         showingPhotographicStylesView = true
                     } label: {
-                        SettingsLink("SYSTEM_STYLES_TITLE".localized(path: path, table: stylesTable), status: "SEMANTIC_STYLES_LABEL_STANDARD".localized(path: "/System/Library/PrivateFrameworks/CameraEditKit.framework", table: "CameraEditKit"), destination: EmptyView())
+                        SettingsLink(
+                            "SYSTEM_STYLES_TITLE".localized(path: path, table: stylesTable),
+                            status: "SEMANTIC_STYLES_LABEL_STANDARD".localized(
+                                path: "/System/Library/PrivateFrameworks/CameraEditKit.framework",
+                                table: "CameraEditKit"
+                            )
+                        ) {}
                     }
                     .foregroundStyle(.primary)
                 } header: {
@@ -89,40 +105,90 @@ struct CameraView: View {
             
             // MARK: - Camera Options
             Section {
-                SettingsLink("CAM_RECORD_VIDEO_TITLE".localized(path: path, table: table), status: "\(selectedVideoSetting)_SHORT".localized(path: path, table: table), destination: RecordVideoView())
-                SettingsLink("CAM_RECORD_SLOMO_TITLE".localized(path: path, table: table), status: "\(selectedSlomoSetting)_SHORT".localized(path: path, table: table), destination: RecordSlomoView())
+                SettingsLink(
+                    "CAM_RECORD_VIDEO_TITLE".localized(path: path, table: table),
+                    status: "\(selectedVideoSetting)_SHORT".localized(path: path, table: table),
+                    destination: RecordVideoView()
+                )
+                SettingsLink(
+                    "CAM_RECORD_SLOMO_TITLE".localized(path: path, table: table),
+                    status: "\(selectedSlomoSetting)_SHORT".localized(path: path, table: table),
+                    destination: RecordSlomoView()
+                )
                 if UIDevice.HigherResolutionCinematicModeCapability {
-                    SettingsLink("CAM_RECORD_CINEMATIC_TITLE".localized(path: path, table: table), status: "\(selectedCinematicSetting)_SHORT".localized(path: path, table: table), destination: RecordCinematicView())
+                    SettingsLink(
+                        "CAM_RECORD_CINEMATIC_TITLE".localized(path: path, table: table),
+                        status: "\(selectedCinematicSetting)_SHORT".localized(path: path, table: table),
+                        destination: RecordCinematicView()
+                    )
                 }
-                SettingsLink("CAM_AUDIO_CONFIGURATION_TITLE".localized(path: path, table: table), status: selectedSoundSetting.localized(path: path, table: table), destination: RecordSoundView())
-                NavigationLink("CAM_FORMATS_TITLE".localized(path: path, table: table)) {
+                SettingsLink(
+                    "CAM_AUDIO_CONFIGURATION_TITLE".localized(path: path, table: table),
+                    status: selectedSoundSetting.localized(path: path, table: table),
+                    destination: RecordSoundView()
+                )
+                NavigationLink(
+                    "CAM_FORMATS_TITLE".localized(path: path, table: table)
+                ) {
                     FormatsView()
                 }
-                
                 if UIDevice.iPhone {
-                    NavigationLink("CAM_PRESERVE_SETTINGS_TITLE".localized(path: path, table: table)) {
-                        BundleControllerView("CameraSettings", controller: "CameraPreserveSettingsController", title: "CAM_PRESERVE_SETTINGS_TITLE".localized(path: path, table: table))
+                    NavigationLink(
+                        "CAM_PRESERVE_SETTINGS_TITLE".localized(path: path, table: table)
+                    ) {
+                        BundleControllerView(
+                            "CameraSettings",
+                            controller: "CameraPreserveSettingsController",
+                            title: "CAM_PRESERVE_SETTINGS_TITLE".localized(path: path, table: table)
+                        )
                     }
-                    Toggle("VOLUME_UP_BURST".localized(path: path, table: table), isOn: $useVolumeUpBurstEnabled)
+                    Toggle(
+                        "VOLUME_UP_BURST".localized(path: path, table: table),
+                        isOn: $useVolumeUpBurstEnabled
+                    )
                 }
                 
-                Toggle("QR_CODES".localized(path: path, table: table), isOn: $scanQRCodesEnabled)
-                Toggle("TEXT_ANALYSIS".localized(path: path, table: table), isOn: $showDetectedTextEnabled)
+                Toggle(
+                    "QR_CODES".localized(path: path, table: table),
+                    isOn: $scanQRCodesEnabled
+                )
+                Toggle(
+                    "TEXT_ANALYSIS".localized(path: path, table: table),
+                    isOn: $showDetectedTextEnabled
+                )
                 
                 if UIDevice.iPad {
-                    NavigationLink("CAM_PRESERVE_SETTINGS_TITLE".localized(path: path, table: table)) {
-                        BundleControllerView("CameraSettings", controller: "CameraPreserveSettingsController", title: "CAM_PRESERVE_SETTINGS_TITLE".localized(path: path, table: table))
+                    NavigationLink(
+                        "CAM_PRESERVE_SETTINGS_TITLE".localized(path: path, table: table)
+                    ) {
+                        BundleControllerView(
+                            "CameraSettings",
+                            controller: "CameraPreserveSettingsController",
+                            title: "CAM_PRESERVE_SETTINGS_TITLE".localized(path: path, table: table)
+                        )
                     }
                 }
             }
             
             // MARK: - Composition
             Section {
-                Toggle("Grid".localized(path: path, table: table), isOn: $gridEnabled)
-                Toggle("HORIZON_LEVEL".localized(path: path, table: table), isOn: $levelEnabled)
-                Toggle("MIRROR_FRONT_CAPTURES".localized(path: path, table: table), isOn: $mirrorFrontCameraEnabled)
+                Toggle(
+                    "Grid".localized(path: path, table: table),
+                    isOn: $gridEnabled
+                )
+                Toggle(
+                    "HORIZON_LEVEL".localized(path: path, table: table),
+                    isOn: $levelEnabled
+                )
+                Toggle(
+                    "MIRROR_FRONT_CAPTURES".localized(path: path, table: table),
+                    isOn: $mirrorFrontCameraEnabled
+                )
                 if UIDevice.ViewOutsideFrameCapability && UIDevice.iPhone {
-                    Toggle("OVER_CAPTURE_VIEW_OUTSIDE_THE_FRAME_SWITCH".localized(path: path, table: table), isOn: $viewOutsideFrameEnabled)
+                    Toggle(
+                        "OVER_CAPTURE_VIEW_OUTSIDE_THE_FRAME_SWITCH".localized(path: path, table: table),
+                        isOn: $viewOutsideFrameEnabled
+                    )
                 }
                 NavigationLink(
                     "CAM_INDICATORS_TITLE".localized(path: path, table: table)
@@ -160,7 +226,13 @@ struct CameraView: View {
             
             if UIDevice.ProDevice && UIDevice.iPhone {
                 Section {
-                    SettingsLink(UIDevice.AdvancedPhotographicStylesCapability && !UIDevice.IsSimulator ? "FOCAL_LENGTH_ROW_TITLE_CAMERA_BUTTON".localized(path: path, table: buttonTable) : "FOCAL_LENGTH_ROW_TITLE".localized(path: path, table: table), status: "FOCAL_LENGTH_GROUP_%@_AND_%@_AND_%@_MM".localized(path: path, table: table, "24", "28", "35"), destination: FocalLengthView())
+                    SettingsLink(
+                        UIDevice.AdvancedPhotographicStylesCapability && !UIDevice.IsSimulator
+                        ? "FOCAL_LENGTH_ROW_TITLE_CAMERA_BUTTON".localized(path: path, table: buttonTable)
+                        : "FOCAL_LENGTH_ROW_TITLE".localized(path: path, table: table),
+                        status: "FOCAL_LENGTH_GROUP_%@_AND_%@_AND_%@_MM".localized(path: path, table: table, "24", "28", "35"),
+                        destination: FocalLengthView()
+                    )
                 } header: {
                     if UIDevice.AdvancedPhotographicStylesCapability {
                         Text("CAM_PHOTO_CAPTURE_HEADER".localized(path: path, table: table))
@@ -173,7 +245,10 @@ struct CameraView: View {
             // MARK: - Portraits in Photo Mode
             if UIDevice.AlwaysCaptureDepthCapability {
                 Section {
-                    Toggle("PHOTO_MODE_DEPTH_SWITCH".localized(path: path, table: table), isOn: $portraitsPhotoModeEnabled)
+                    Toggle(
+                        "PHOTO_MODE_DEPTH_SWITCH".localized(path: path, table: table),
+                        isOn: $portraitsPhotoModeEnabled
+                    )
                 } footer: {
                     Text("PHOTO_MODE_DEPTH_GROUP_FOOTER".localized(path: path, table: table))
                 }
@@ -182,7 +257,10 @@ struct CameraView: View {
             // MARK: - Prioritize Faster Shooting
             if UIDevice.iPhone && !UIDevice.IsSimulator {
                 Section {
-                    Toggle("CAM_CAPTURE_DYNAMIC_SHUTTER_SWITCH".localized(path: path, table: table), isOn: $prioritizeFasterShootingEnabled)
+                    Toggle(
+                        "CAM_CAPTURE_DYNAMIC_SHUTTER_SWITCH".localized(path: path, table: table),
+                        isOn: $prioritizeFasterShootingEnabled
+                    )
                 } footer: {
                     Text("CAM_CAPTURE_GROUP_FOOTER".localized(path: path, table: table))
                 }
@@ -191,9 +269,16 @@ struct CameraView: View {
             // MARK: - Lens Correction
             if UIDevice.LensCorrectionCapability {
                 Section {
-                    Toggle("IDC_SWITCH".localized(path: path, table: table), isOn: $lensCorrectionEnabled)
+                    Toggle(
+                        "IDC_SWITCH".localized(path: path, table: table),
+                        isOn: $lensCorrectionEnabled
+                    )
                 } footer: {
-                    Text(UIDevice.LimitedLensCorrectionCapability ? "IDC_FOOTER_FRONT_ONLY".localized(path: path, table: table) : "IDC_FOOTER".localized(path: path, table: table))
+                    Text(
+                        UIDevice.LimitedLensCorrectionCapability
+                        ? "IDC_FOOTER_FRONT_ONLY".localized(path: path, table: table)
+                        : "IDC_FOOTER".localized(path: path, table: table)
+                    )
                     
                 }
             }
@@ -204,7 +289,10 @@ struct CameraView: View {
             // - hdr-image-capture: true
             if UIDevice.cameraRestriction && UIDevice.`hdr-image-capture` {
                 Section {
-                    Toggle("HDR_KEEP_ORIGINAL_PHOTO".localized(path: path, table: table), isOn: $keepNormalPhoto)
+                    Toggle(
+                        "HDR_KEEP_ORIGINAL_PHOTO".localized(path: path, table: table),
+                        isOn: $keepNormalPhoto
+                    )
                 } header: {
                     Text("HDR_TITLE".localized(path: path, table: table))
                 } footer: {
@@ -215,7 +303,10 @@ struct CameraView: View {
             // MARK: - Macro Control
             if UIDevice.MacroLensCapability {
                 Section {
-                    Toggle("AUTO_MACRO_SWITCH".localized(path: path, table: table), isOn: $macroControlEnabled)
+                    Toggle(
+                        "AUTO_MACRO_SWITCH".localized(path: path, table: table),
+                        isOn: $macroControlEnabled
+                    )
                 } footer: {
                     Text("AUTO_MACRO_GROUP_FOOTER".localized(path: path, table: table))
                 }
@@ -223,14 +314,20 @@ struct CameraView: View {
             
             // MARK: - Lens Cleaning
             Section {
-                Toggle("SMUDGE_DETECTION_SWITCH".localized(path: path, table: table), isOn: $smudgeDetection)
+                Toggle(
+                    "SMUDGE_DETECTION_SWITCH".localized(path: path, table: table),
+                    isOn: $smudgeDetection
+                )
             } footer: {
                 Text("SMUDGE_DETECTION_FOOTER".localized(path: path, table: table))
             }
             
             // MARK: - Lock Screen Swipe to Open Camera
             Section {
-                Toggle("LOCK_SCREEN_SWIPE_SWITCH".localized(path: path, table: table), isOn: $lockScreenSwipe)
+                Toggle(
+                    "LOCK_SCREEN_SWIPE_SWITCH".localized(path: path, table: table),
+                    isOn: $lockScreenSwipe
+                )
             } footer: {
                 Text(
                     "LOCK_SCREEN_SWIPE_%@_FOOTER".localized(
@@ -244,7 +341,10 @@ struct CameraView: View {
             // MARK: - Messages
             // MARK: Save Captures to Photo Library
             Section {
-                Toggle("CAM_SAVE_MESSAGES_ASSETS_PHOTO_LIBRARY_SWITCH".localized(path: path, table: table), isOn: $saveMessagesPhotos)
+                Toggle(
+                    "CAM_SAVE_MESSAGES_ASSETS_PHOTO_LIBRARY_SWITCH".localized(path: path, table: table),
+                    isOn: $saveMessagesPhotos
+                )
             } header: {
                 Text("CAM_SAVE_MESSAGES_ASSETS_PHOTO_LIBRARY_TITLE".localized(path: path, table: table))
             } footer: {
@@ -260,7 +360,12 @@ struct CameraView: View {
         }
         .fullScreenCover(isPresented: $showingPhotographicStylesView) {
             NavigationStack {
-                BundleControllerView("/System/Library/PrivateFrameworks/CameraUI.framework/CameraUI", controller: UIDevice.PhotographicStylesCapability ? "CAMSemanticStyleSettingsController" : "CAMSmartStyleSettingsController")
+                BundleControllerView(
+                    "/System/Library/PrivateFrameworks/CameraUI.framework/CameraUI",
+                    controller: UIDevice.PhotographicStylesCapability
+                    ? "CAMSemanticStyleSettingsController"
+                    : "CAMSmartStyleSettingsController"
+                )
             }
         }
         .onOpenURL { url in
