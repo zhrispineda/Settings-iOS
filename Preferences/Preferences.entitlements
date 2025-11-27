@@ -4,5 +4,7 @@
 <dict>
 	<key>com.apple.developer.game-center</key>
 	<true/>
+	<key>com.apple.developer.homekit</key>
+	<true/>
 </dict>
 </plist>
