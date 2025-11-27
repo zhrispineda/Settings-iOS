@@ -18,5 +18,7 @@ struct FitnessView: View {
 }
 
 #Preview {
-    FitnessView()
+    NavigationStack {
+        FitnessView()
+    }
 }

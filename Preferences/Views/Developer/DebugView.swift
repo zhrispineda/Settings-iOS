@@ -33,7 +33,7 @@ struct DebugView: View {
 
             Section {
                 NavigationLink("Search", destination: DebugSearchView())
-                NavigationLink("Debug Settings", destination: DebugSettingsView())
+                NavigationLink("Debug Settings", destination: DebugSettingsView().environment(model))
             }
             
             Section("Info") {
@@ -42,14 +42,40 @@ struct DebugView: View {
             }
             
             Section("Bundles") {
-                LabeledContent("GeneralSettingsUI", value: getBundleVersion(at: "/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework"))
-                LabeledContent("LegalAndRegulatorySettings", value: getBundleVersion(at: "/System/Library/PreferenceBundles/LegalAndRegulatorySettings.bundle"))
-                LabeledContent("Preferences Framework", value: getBundleVersion(at: "/System/Library/PrivateFrameworks/Preferences.framework"))
-                LabeledContent("PrivacySettingsUI", value: getBundleVersion(at: "/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework"))
-                LabeledContent("Settings", value: getBundleVersion(at: "/System/Library/PrivateFrameworks/Settings.framework"))
-                LabeledContent("SettingsFoundation", value: getBundleVersion(at: "/System/Library/PrivateFrameworks/SettingsFoundation.framework"))
-                LabeledContent("SettingsUIKitPrivate", value: getBundleVersion(at: "/System/Library/PrivateFrameworks/Settings/SettingsUIKitPrivate.framework"))
-                LabeledContent("SoundsAndHapticsSettings", value: getBundleVersion(at: "/System/Library/PrivateFrameworks/Settings/SoundsAndHapticsSettings.framework"))
+                LabeledContent(
+                    "GeneralSettingsUI",
+                    value: getBundleVersion(
+                        at: "/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework"
+                    )
+                )
+                LabeledContent(
+                    "LegalAndRegulatorySettings",
+                    value: getBundleVersion(at: "/System/Library/PreferenceBundles/LegalAndRegulatorySettings.bundle")
+                )
+                LabeledContent(
+                    "Preferences Framework",
+                    value: getBundleVersion(at: "/System/Library/PrivateFrameworks/Preferences.framework")
+                )
+                LabeledContent(
+                    "PrivacySettingsUI",
+                    value: getBundleVersion(at: "/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework")
+                )
+                LabeledContent(
+                    "Settings",
+                    value: getBundleVersion(at: "/System/Library/PrivateFrameworks/Settings.framework")
+                )
+                LabeledContent(
+                    "SettingsFoundation",
+                    value: getBundleVersion(at: "/System/Library/PrivateFrameworks/SettingsFoundation.framework")
+                )
+                LabeledContent(
+                    "SettingsUIKitPrivate",
+                    value: getBundleVersion(at: "/System/Library/PrivateFrameworks/Settings/SettingsUIKitPrivate.framework")
+                )
+                LabeledContent(
+                    "SoundsAndHapticsSettings",
+                    value: getBundleVersion(at: "/System/Library/PrivateFrameworks/Settings/SoundsAndHapticsSettings.framework")
+                )
             }
         }
         .navigationBarTitleDisplayMode(.inline)

@@ -31,5 +31,6 @@ struct DebugSettingsView: View {
 #Preview {
     NavigationStack {
         DebugSettingsView()
+            .environment(PrimarySettingsListModel())
     }
 }
