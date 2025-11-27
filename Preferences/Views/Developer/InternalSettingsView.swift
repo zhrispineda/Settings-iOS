@@ -12,6 +12,16 @@ struct InternalSettingsView: View {
                 NavigationLink("About") {}
                 Button("Set Up VPN") {}
             }
+            
+            Section("General Debugging") {
+                NavigationLink("Application Debugging") {}
+                NavigationLink("Installed App Info") {}
+                NavigationLink("Logging") {}
+                NavigationLink("Power HUD") {}
+                NavigationLink("UI Debugging") {}
+                NavigationLink("Auto Bug Capture") {}
+                NavigationLink("Prototyping") {}
+            }
         }
     }
 }
