@@ -29,7 +29,7 @@ struct SLabel: View {
     var badgeCount: Int
     var selected: Bool
     
-    init(_ text: String, color: Color = Color.accent, path: String = "", icon: String = "", status: String = "", badgeCount: Int = 0, selected: Bool = false) {
+    init(_ text: String, color: Color = Color.accentColor, path: String = "", icon: String = "", status: String = "", badgeCount: Int = 0, selected: Bool = false) {
         self.text = text
         self.color = color
         self.path = path
@@ -69,15 +69,10 @@ struct SLabel: View {
     }
 }
 
-#Preview {
-    ContentView()
-}
-
 #Preview("SLabel Example") {
     NavigationStack {
         List {
-            SLabel("Example")
-            SLabel("Status", color: .green, icon: "checkmark", status: "Accepted")
+            SLabel("Safari", icon: "com.apple.mobilesafari", status: "Installed")
         }
     }
 }

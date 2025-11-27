@@ -203,11 +203,16 @@ private struct listRowBackgroundEffect: ViewModifier {
         if isActive {
             content
                 .listRowBackground(
-                    Color(isSelected ? (UIDevice.IsSimulator ? .blue : .selected) : .clear)
+                    Color(isSelected ? (UIDevice.IsSimulator ? .blue : Color(UIColor.systemFill)) : .clear)
                         .clipShape(RoundedRectangle(cornerRadius: 30, style: .circular))
                 )
         } else {
             content
         }
     }
+}
+
+#Preview {
+    ContentView()
+        .environment(PrimarySettingsListModel())
 }

@@ -25,7 +25,7 @@ struct DowntimeView: View {
                 Button(downtimeEnabled ? (scheduledEnabled ? "DeviceDowntimeDisableButtonWithScheduleName".localized(path: path) : "DeviceDowntimeDisableButtonWithoutScheduleName".localized(path: path)) : scheduledEnabled ? "DeviceDowntimeEnableButtonWithScheduleName".localized(path: path) : "DeviceDowntimeEnableButtonWithoutScheduleName".localized(path: path)) {
                     downtimeEnabled.toggle()
                 }
-                .tint(downtimeEnabled ? .red : .accent)
+                .tint(downtimeEnabled ? .red : .accentColor)
             } footer: {
                 Text(downtimeEnabled ? (scheduledEnabled ? "DeviceDowntimeDisableButtonLocalUserWithScheduleFooter".localized(path: path) : "DeviceDowntimeDisableButtonLocalUserWithoutScheduleFooter".localized(path: path)) : scheduledEnabled ? "DeviceDowntimeEnableButtonUnblockedUserWithScheduleFooter".localized(path: path) : "DeviceDowntimeEnableButtonUnblockedUserWithoutScheduleFooter".localized(path: path))
             }
