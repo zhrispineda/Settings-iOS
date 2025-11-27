@@ -121,6 +121,16 @@ struct NotificationsView: View {
             } footer: {
                 Text("NOTIFICATION_LIST_DISPLAY_STYLE_FOOTER".localized(path: path, table: table))
             }
+            .onAppear {
+                let country = getDeviceCountry() ?? "Unknown"
+                let fileURL = URL(fileURLWithPath: "/System/Library/CountryBundles/iPhone/\(country)/carrier.plist")
+                
+                if let dict = NSDictionary(contentsOf: fileURL) as? [String: Any] {
+                    SettingsLogger.info("Found carrier.plist: \(dict)")
+                } else {
+                    SettingsLogger.error("Could not locate carrier.plist at: \(fileURL)")
+                }
+            }
             
             // MARK: Notification Options Section
             Section {
@@ -211,6 +221,19 @@ struct NotificationsView: View {
                 }
             }
         }
+    }
+    
+    private func getDeviceCountry() -> String? {
+        guard let code = Locale.current.region?.identifier else { return nil }
+        
+        let name = Locale(identifier: "en_US")
+            .localizedString(forRegionCode: code)
+        
+        return name?
+            .components(separatedBy: CharacterSet.alphanumerics.inverted)
+            .filter { !$0.isEmpty }
+            .map { $0.capitalized }
+            .joined()
     }
 }
 
