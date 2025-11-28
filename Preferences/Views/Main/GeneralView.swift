@@ -5,23 +5,21 @@
 
 import SwiftUI
 
-/// The view located at `Settings > General`.
+/// Settings > General
 struct GeneralView: View {
-    @State private var frameY = 0.0
-    @State private var opacity = 0.0
+    @State private var titleVisible = false
     @State private var showingHomeButtonSheet = false
     private let path = "/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework"
     private let table = "General"
     
     var body: some View {
-        CustomList(title: "General".localized(path: path, table: table)) {
+        CustomList(title: titleVisible ? "General".localized(path: path, table: table) : "") {
             Section {
                 Placard(
                     title: "General".localized(path: path, table: table),
                     icon: "com.apple.graphic-icon.gear",
                     description: "PLACARD_SUBTITLE".localized(path: path),
-                    frameY: $frameY,
-                    opacity: $opacity
+                    isVisible: $titleVisible
                 )
             }
             
@@ -238,14 +236,6 @@ struct GeneralView: View {
                         }
                     }
                 }
-            }
-        }
-        .toolbar {
-            ToolbarItem(placement: .principal) {
-                Text("General".localized(path: path, table: table))
-                    .fontWeight(.semibold)
-                    .font(.subheadline)
-                    .opacity(frameY < 50.0 ? opacity : 0)
             }
         }
     }

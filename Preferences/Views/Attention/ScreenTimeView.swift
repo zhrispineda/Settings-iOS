@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ScreenTimeView: View {
+    @State private var titleVisible = false
     @State private var appWebsiteActivityEnabled = false
     @State private var showingDisableScreenTimeDialog = false
     @State private var showingAppWebsiteActivitySheet = false
@@ -46,8 +47,7 @@ struct ScreenTimeView: View {
                         title: "ScreenTimeGroupSpecifierName".localized(path: path),
                         icon: "com.apple.graphic-icon.screen-time",
                         description: "AboutScreenTimeDetailText".localized(path: path),
-                        frameY: .constant(0.0),
-                        opacity: .constant(1.0)
+                        isVisible: $titleVisible
                     )
                 }
             }

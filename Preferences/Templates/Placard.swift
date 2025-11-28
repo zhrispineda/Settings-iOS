@@ -3,25 +3,30 @@ import SwiftUI
 /// A `VStack` container that is displayed at the top of lists to summarize common controls to be expected below.
 ///
 /// ```swift
-/// Placard(title: "General", icon: "com.apple.graphic-icon.gear", description: "Manage common options such as checking for new updates.", frameY: $frameY, opacity: $opacity)
+/// Placard(
+///     title: "General",
+///     icon: "com.apple.graphic-icon.gear",
+///     description: "Manage common options.",
+///     isVisible: $isVisible
+/// )
 /// ```
 ///
-/// - Parameter title: The `String` to display as the navigation title of the `View`.
-/// - Parameter icon: The `String` name of the icon symbol.
-/// - Parameter description: The `String` to display as the description below the title.
-/// - Parameter frameY: The `Binding` `Double` value to use for calculating the current Y position in the scroll view.
-/// - Parameter opacity: The `Binding` `Double` value to use for calculating the opacity of the navigation title.
+/// - Parameter title: The `String` to display as the navigation title.
+/// - Parameter icon: The `String` identifier of an icon.
+/// - Parameter description: The `String` to display as the description below the placard title.
+/// - Parameter isVisible: The `Binding` `Bool` value to use for displaying or hiding the navigationTitle.
 struct Placard: View {
+    @State private var opacity = 0.0
+    @State private var frameY = 0.0
     var title: String
     var icon = ""
     var description = ""
     var beta = false
-    @Binding var frameY: Double
-    @Binding var opacity: Double
+    @Binding var isVisible: Bool
     
     var body: some View {
-        VStack(spacing: 10) {
-            ZStack {
+        VStack(alignment: .leading, spacing: 10) {
+            ZStack(alignment: .topLeading) {
                 IconView(icon)
                     .scaleEffect(2)
                     .padding([.top, .leading], 15)
@@ -35,44 +40,62 @@ struct Placard: View {
                             .font(.caption)
                             .foregroundStyle(.white)
                     }
-                    .offset(x: 20, y: 38)
+                    .offset(x: 20, y: 50)
                 }
             }
-            .frame(maxWidth: .infinity, alignment: .leading)
             .accessibilityHidden(true)
             
             Text(title)
-                .fontWeight(.bold)
-                .font(.title2)
-                .frame(maxWidth: .infinity, alignment: .leading)
+                .font(.title2.bold())
                 .padding(.top, 13)
                 .padding(.bottom, -4)
             Text(.init(description))
                 .font(.headline)
                 .fontWeight(.regular)
                 .foregroundStyle(.secondary)
-                .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.bottom, 5)
         }
-        .frame(maxWidth: .infinity)
+        .frame(maxWidth: .infinity, alignment: .leading)
         .fixedSize(horizontal: false, vertical: true)
-        .overlay { // For calculating opacity of the principal toolbar item
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                Text(title)
+                    .fontWeight(.semibold)
+                    .opacity(frameY < 50.0 ? opacity : 0)
+            }
+        }
+        .overlay {
             GeometryReader { geo in
                 Color.clear
                     .onChange(of: geo.frame(in: .scrollView).minY) {
                         frameY = geo.frame(in: .scrollView).minY
-                        opacity = frameY / -30
+                        opacity = (frameY - 50) / -30
                     }
             }
         }
+        .onAppear { isVisible = false }
+        .onDisappear { isVisible = true }
     }
 }
 
 #Preview {
+    @Previewable @State var isVisible = false
+    
     NavigationStack {
         CustomList(title: "General") {
             Section {
-                Placard(title: "General", icon: "com.apple.graphic-icon.gear", description: "Manage your overall setup and preferences for iPad, such as software updates, AirDrop, and more.", frameY: .constant(0.0), opacity: .constant(0.0))
+                Placard(
+                    title: "General",
+                    icon: "com.apple.graphic-icon.gear",
+                    description: "Manage your overall setup and preferences for iPad, such as software updates, AirDrop, and more.",
+                    isVisible: $isVisible
+                )
+            }
+            
+            Section {
+                ForEach(0...20, id: \.self) { item in
+                    Text("\(item)")
+                }
             }
         }
     }

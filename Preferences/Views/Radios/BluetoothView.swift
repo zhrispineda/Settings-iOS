@@ -40,11 +40,12 @@ struct BluetoothView: View {
     @AppStorage("DeviceName") private var deviceName = UIDevice.current.model
     @State private var bluetoothManager = BluetoothManager()
     @State private var showingHelpSheet = false
+    @State private var titleVisible = false
     let path = "/System/Library/PreferenceBundles/BluetoothSettings.bundle"
     let table = "Devices"
     
     var body: some View {
-        CustomList {
+        CustomList(title: titleVisible ? "BLUETOOTH".localized(path: path, table: table) : "") {
             Section {
                 Button {} label: {
                     Placard(
@@ -54,10 +55,11 @@ struct BluetoothView: View {
                                     \("BLUETOOTHPLACARDINFO".localized(path: path, table: table))
                                     [\("LEARN_MORE".localized(path: path, table: table))](pref://helpkit)
                                     """,
-                        frameY: .constant(0.0),
-                        opacity: .constant(0.0))
+                        isVisible: $titleVisible
+                    )
                 }
                 .foregroundStyle(.primary)
+                
                 Toggle("BLUETOOTH".localized(path: path, table: table), isOn: $bluetoothEnabled.animation())
             } footer: {
                 if bluetoothEnabled {
@@ -104,14 +106,6 @@ struct BluetoothView: View {
             HelpKitView(topicID: UIDevice.iPhone ? "iph3c50f191" : "ipad997da4cf")
                 .ignoresSafeArea(edges: .bottom)
                 .interactiveDismissDisabled()
-        }
-        .toolbar {
-            ToolbarItem(placement: .principal) {
-                Text("BLUETOOTH".localized(path: path, table: table))
-                    .fontWeight(.semibold)
-                    .font(.subheadline)
-                    //.opacity(frameY < 50.0 ? opacity : 0)
-            }
         }
     }
 }

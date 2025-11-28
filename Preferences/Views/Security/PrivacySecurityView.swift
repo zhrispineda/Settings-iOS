@@ -8,22 +8,19 @@
 import SwiftUI
 
 struct PrivacySecurityView: View {
-    @Environment(\.colorScheme) private var colorScheme
-    @State private var opacity: Double = 0
-    @State private var frameY: Double = 0
+    @State private var titleVisible = false
     let communication = "/System/Library/PrivateFrameworks/CommunicationSafetySettingsUI.framework"
     let safety = "/System/Library/PreferenceBundles/DigitalSeparationSettings.bundle"
     let privacy = "/System/Library/PreferenceBundles/PrivacyAndSecuritySettings.bundle"
     
     var body: some View {
-        CustomList(title: "Privacy & Security".localized(path: privacy)) {
+        CustomList(title: titleVisible ? "Privacy & Security".localized(path: privacy) : "") {
             // MARK: Placard
             Placard(
                 title: "Privacy & Security".localized(path: privacy),
                 icon: "com.apple.graphic-icon.privacy",
                 description: "Placard Subtitle".localized(path: privacy),
-                frameY: $frameY,
-                opacity: $opacity
+                isVisible: $titleVisible
             )
             
             // MARK: Location Services, Tracking Section
@@ -332,14 +329,6 @@ struct PrivacySecurityView: View {
                 } header: {
                     Text("Security".localized(path: privacy))
                 }
-            }
-        }
-        .toolbar {
-            ToolbarItem(placement: .principal) {
-                Text("Privacy & Security".localized(path: privacy))
-                    .fontWeight(.semibold)
-                    .font(.subheadline)
-                    .opacity(frameY < 50.0 ? opacity : 0)
             }
         }
     }

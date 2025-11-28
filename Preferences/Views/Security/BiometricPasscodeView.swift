@@ -31,8 +31,7 @@ struct BiometricPasscodeView: View {
     @State private var workoutHealthData = false
     @State private var allowEraseAfterFailedAttempts = false
     @State private var showingEraseConfirmation = false
-    @State private var opacity: Double = 0
-    @State private var frameY: Double = 0
+    @State private var titleVisible = false
     @State private var showingHelpSheet = false
     @State private var showingPrivacySheet = false
     let path = "/System/Library/PrivateFrameworks/PasscodeAndBiometricsSettings.framework"
@@ -43,14 +42,18 @@ struct BiometricPasscodeView: View {
     let payment = "Payment_Prefs"
     let facePrivacy = "/System/Library/OnBoardingBundles/com.apple.onboarding.faceid.bundle"
     let touchPrivacy = "/System/Library/OnBoardingBundles/com.apple.onboarding.touchid.bundle"
+    var title: String {
+        return UIDevice.PearlIDCapability
+        ? "PASSCODE_PLACARD_TITLE_FACE_ID".localized(path: path, table: passcode)
+        : "PASSCODE_PLACARD_TITLE_TOUCH_ID".localized(path: path, table: passcode)
+    }
     
     var body: some View {
-        CustomList {
+        CustomList(title: titleVisible ? title : "") {
             Placard(
                 title: UIDevice.PearlIDCapability ? "PASSCODE_PLACARD_TITLE_FACE_ID".localized(path: path, table: passcode) : "PASSCODE_PLACARD_TITLE_TOUCH_ID".localized(path: path, table: passcode),
                 icon: UIDevice.PearlIDCapability ? "com.apple.graphic-icon.face-id" : "com.apple.graphic-icon.touch-id", description: "\(UIDevice.PearlIDCapability ? "PASSCODE_PLACARD_SUBTITLE_FACE_ID".localized(path: path, table: passcode).replacing("helpkit://open", with: "pref://helpkit") : "PASSCODE_PLACARD_SUBTITLE_TOUCH_ID".localized(path: path, table: passcode).replacing("helpkit://open", with: "pref://helpkit"))",
-                frameY: $frameY,
-                opacity: $opacity
+                isVisible: $titleVisible
             )
             
             Section {
@@ -167,14 +170,6 @@ struct BiometricPasscodeView: View {
                     }
             } footer: {
                 Text("WIPE_DEVICE_TEXT".localized(path: path, table: passcode, "10"))
-            }
-        }
-        .toolbar {
-            ToolbarItem(placement: .principal) {
-                Text(UIDevice.PearlIDCapability ? "PASSCODE_PLACARD_TITLE_FACE_ID".localized(path: path, table: passcode) : "PASSCODE_PLACARD_TITLE_TOUCH_ID".localized(path: path, table: passcode))
-                    .fontWeight(.semibold)
-                    .font(.subheadline)
-                    .opacity(frameY < 50.0 ? opacity : 0)
             }
         }
         .onOpenURL { url in

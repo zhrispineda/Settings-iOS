@@ -14,8 +14,7 @@ struct NetworkView: View {
     @State var editMode: EditMode = .inactive
     @State var isEditing = false
     @State private var connected = false
-    @State private var frameY = 0.0
-    @State private var opacity = 0.0
+    @State private var titleVisible = false
     @State private var searching = true
     @State private var showingHelpSheet = false
     @State private var showingOtherNetwork = false
@@ -25,7 +24,10 @@ struct NetworkView: View {
     let table = "WiFiKitUILocalizableStrings"
     
     var body: some View {
-        CustomList(title: "kWFLocWiFiPowerTitle".localized(path: path, table: table), topPadding: true) {
+        CustomList(
+            title: titleVisible ? "kWFLocWiFiPowerTitle".localized(path: path, table: table) : "",
+            topPadding: true
+        ) {
             if isEditing {
                 Section {} header: {
                     Text("kWFLocAllEditableKnownSectionTitle".localized(path: path, table: table))
@@ -33,20 +35,13 @@ struct NetworkView: View {
             } else {
                 Section {
                     Placard(
-                        title: "kWFLocWiFiPlacardTitle".localized(
-                            path: path,
-                            table: table
-                        ),
+                        title: "kWFLocWiFiPlacardTitle".localized(path: path, table: table),
                         icon: "com.apple.graphic-icon.wifi",
                         description: "kWFLocWiFiPlacardSubtitle".localized(
                             path: path,
                             table: table
-                        ).replacing(
-                            "helpkit",
-                            with: "pref"
-                        ),
-                        frameY: $frameY,
-                        opacity: $opacity
+                        ).replacing("helpkit", with: "pref"),
+                        isVisible: $titleVisible
                     )
                     
                     Toggle(isOn: $wifiEnabled) {
@@ -202,14 +197,6 @@ struct NetworkView: View {
                         }
                     }
                 }
-            }
-            
-            // Navigation Title
-            ToolbarItem(placement: .principal) {
-                Text("kWFLocWiFiPlacardTitle".localized(path: path, table: table))
-                    .fontWeight(.semibold)
-                    .font(.subheadline)
-                    .opacity(frameY < 50.0 ? opacity : 0)
             }
             
             // Edit/Done Button

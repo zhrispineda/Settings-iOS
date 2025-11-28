@@ -27,8 +27,7 @@ struct SiriView: View {
     @AppStorage("SuggestionsShowWhenSharing") private var showWhenSharingEnabled = true
     @AppStorage("SuggestionsShowWhenListening") private var showWhenListeningEnabled = true
     
-    @State private var opacity: Double = 0
-    @State private var frameY: Double = 0
+    @State private var titleVisible = false
     @State private var siriPrivacySheet = false
     @State private var intelligencePrivacySheet = false
     @State private var showingSiriHelpSheet = false
@@ -57,13 +56,18 @@ struct SiriView: View {
         AppInfo(name: "Wallet", icon: "com.apple.Passbook", showOnSimulator: true),
         AppInfo(name: "Translate", icon: "com.apple.Translate", showOnSimulator: false)
     ]
+    var title: String {
+        return UIDevice.IntelligenceCapability
+        ? "ASSISTANT_AND_GM".localized(path: path, table: gmTable)
+        : "ASSISTANT".localized(path: path, table: table)
+    }
     var groupedApps: [String: [AppInfo]] {
         let filteredApps = UIDevice.IsSimulated ? apps.filter { $0.showOnSimulator } : apps
         return Dictionary(grouping: filteredApps, by: { String($0.name.prefix(1)) })
     }
-
+    
     var body: some View {
-        CustomList {
+        CustomList(title: titleVisible ? title : "") {
             // MARK: Placard Section
             if UIDevice.IntelligenceCapability {
                 Section {
@@ -74,8 +78,7 @@ struct SiriView: View {
                         ? "PLACARD_DESCRIPTION_GM".localized(path: path, table: gmTable).replacing("]", with: "](pref://helpkit)")
                         : "PLACARD_DESCRIPTION_GM_IPAD".localized(path: path, table: gmTable).replacing("]", with: "](pref://helpkit)"),
                         beta: true,
-                        frameY: $frameY,
-                        opacity: $opacity
+                        isVisible: $titleVisible
                     )
                     if !UIDevice.IsSimulator {
                         Button("GM_TURN_ON_GM_BUTTON_TITLE".localized(path: path, table: gmTable)) {}
@@ -90,8 +93,7 @@ struct SiriView: View {
                     title: "ASSISTANT".localized(path: path, table: table),
                     icon: "com.apple.application-icon.siri",
                     description: "PLACARD_DESCRIPTION".localized(path: path, table: table).replacing("]", with: "](pref://helpkit)"),
-                    frameY: $frameY,
-                    opacity: $opacity
+                    isVisible: $titleVisible
                 )
             }
             
@@ -190,14 +192,6 @@ struct SiriView: View {
                 if UIDevice.IntelligenceCapability {
                     Text("\("GM_PRIVACY_FOOTER_TEXT".localized(path: path, table: gmTable)) [\("GM_PRIVACY_FOOTER_LINK_TEXT".localized(path: path, table: gmTable))](pref://intelligence)")
                 }
-            }
-        }
-        .toolbar {
-            ToolbarItem(placement: .principal) {
-                Text(UIDevice.IntelligenceCapability ? "ASSISTANT_AND_GM".localized(path: path, table: gmTable) : "ASSISTANT".localized(path: path, table: table))
-                    .fontWeight(.semibold)
-                    .font(.subheadline)
-                    .opacity(frameY < 50.0 ? opacity : 0)
             }
         }
         .onOpenURL { url in
