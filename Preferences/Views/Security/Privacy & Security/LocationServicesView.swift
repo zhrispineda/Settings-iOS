@@ -13,6 +13,11 @@ struct LocationServicesView: View {
     let path = "/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework"
     let table = "Location Services"
     let privTable = "LocationServicesPrivacy"
+    var servicesFooter: String {
+        UIDevice.CellularTelephonyCapability
+            ? "DESCRIPTION_GPS_WIFI".localized(path: path, table: table)
+            : "DESCRIPTION_NOGPS_WIFI".localized(path: path, table: table)
+    }
     
     var body: some View {
         CustomList(title: "LOCATION_SERVICES".localized(path: path, table: table)) {
@@ -20,23 +25,44 @@ struct LocationServicesView: View {
                 Toggle("LOCATION_SERVICES".localized(path: path, table: table), isOn: $locationServicesEnabled)
                 NavigationLink("PRIVACY_ALERTS".localized(path: path, table: table), destination: LocationAlertsView())
             } footer: {
-                Text("\(UIDevice.iPhone ? "DESCRIPTION_GPS_WIFI".localized(path: path, table: table) : "DESCRIPTION_NOGPS_WIFI".localize(table: table)) [\("ABOUT_LOCATION_AND_PRIVACY".localized(path: path, table: table))](pref://)")
+                PSFooterHyperlinkView(
+                    footerText: "\(servicesFooter) \("ABOUT_LOCATION_AND_PRIVACY".localized(path: path, table: table))",
+                    linkText: "ABOUT_LOCATION_AND_PRIVACY".localized(path: path, table: table),
+                    onLinkTap: {
+                        showingSheet = true
+                    }
+                )
             }
             
             if locationServicesEnabled {
                 Section {
-                    SLink("APP_CLIPS".localized(path: "/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework", table: "Dim-Sum"), icon: "com.apple.graphic-icon.app-clips", status: "0") {
-                        AppClipsView()
-                    }
-                    SLink("LOCATION_SHARING".localized(path: path, table: table), icon: "com.", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localized(path: path, table: privTable)) {
-                        LocationPermissionsDetailView(title: "LOCATION_SHARING")
-                    }
-                    SLink("Siri", icon: "com.apple.application-icon.siri", status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localized(path: path, table: privTable)) {
-                        LocationPermissionsDetailView(title: "Siri")
-                    }
-                    SLink("SYSTEM_SERVICES".localized(path: path, table: table), icon: "com.apple.graphic-icon.gear", status: "location.fill") {
-                        SystemServicesView()
-                    }
+                    SLink(
+                        "APP_CLIPS".localized(
+                            path: "/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework",
+                            table: "Dim-Sum"
+                        ),
+                        icon: "com.apple.graphic-icon.app-clips",
+                        status: "0",
+                        destination: AppClipsView()
+                    )
+                    SLink(
+                        "LOCATION_SHARING".localized(path: path, table: table),
+                        icon: "com.",
+                        status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localized(path: path, table: privTable),
+                        destination: LocationPermissionsDetailView(title: "LOCATION_SHARING".localized(path: path, table: table))
+                    )
+                    SLink(
+                        "Siri",
+                        icon: "com.apple.application-icon.siri",
+                        status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localized(path: path, table: privTable),
+                        destination: LocationPermissionsDetailView(title: "Siri")
+                    )
+                    SLink(
+                        "SYSTEM_SERVICES".localized(path: path, table: table),
+                        icon: "com.apple.graphic-icon.gear",
+                        status: "location.fill",
+                        destination: SystemServicesView()
+                    )
                 } footer: {
                     VStack(alignment: .leading) {
                         Text("\("GENERAL_EXPLANATION_ITEM".localized(path: path, table: table))\n")
