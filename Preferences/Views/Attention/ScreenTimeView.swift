@@ -56,7 +56,6 @@ struct ScreenTimeView: View {
                 if appWebsiteActivityEnabled {
                     SLink(
                         "AppAndWebsiteActivitySpecifierName".localized(path: path),
-                        path: path,
                         icon: "com.apple.graphic-icon.analytics-and-improvements",
                         subtitle: "AppAndWebsiteActivitySpecifierSubtitleText".localized(path: path)
                     ) {
@@ -83,12 +82,11 @@ struct ScreenTimeView: View {
                     } label: {
                         SLink(
                             "AppAndWebsiteActivitySpecifierName".localized(path: path),
-                            path: path,
                             icon: "com.apple.graphic-icon.analytics-and-improvements",
                             subtitle: "AppAndWebsiteActivitySpecifierSubtitleText".localized(path: path)
                         ) {}
                     }
-                    .foregroundStyle(.primary)
+                    .tint(.primary)
                     .sheet(isPresented: $showingAppWebsiteActivitySheet) {
                         AppWebsiteActivitySheetView(appWebsiteActivityEnabled: $appWebsiteActivityEnabled)
                             .frame(width: 400, height: 730)
