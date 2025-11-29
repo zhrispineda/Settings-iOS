@@ -9,6 +9,7 @@ import SwiftUI
 
 struct PrivacySecurityView: View {
     @State private var titleVisible = false
+    @State private var showingHelpSheet = false
     let communication = "/System/Library/PrivateFrameworks/CommunicationSafetySettingsUI.framework"
     let safety = "/System/Library/PreferenceBundles/DigitalSeparationSettings.bundle"
     let privacy = "/System/Library/PreferenceBundles/PrivacyAndSecuritySettings.bundle"
@@ -19,7 +20,7 @@ struct PrivacySecurityView: View {
             Placard(
                 title: "Privacy & Security".localized(path: privacy),
                 icon: "com.apple.graphic-icon.privacy",
-                description: "Placard Subtitle".localized(path: privacy),
+                description: "Placard Subtitle".localized(path: privacy).replacing("helpkit", with: "pref"),
                 isVisible: $titleVisible
             )
             
@@ -330,6 +331,15 @@ struct PrivacySecurityView: View {
                     Text("Security".localized(path: privacy))
                 }
             }
+        }
+        .onOpenURL { url in
+            if url.scheme == "pref" {
+                showingHelpSheet.toggle()
+            }
+        }
+        .sheet(isPresented: $showingHelpSheet) {
+            HelpKitView(topicID: UIDevice.iPhone ? "iph6e7d349d1" : "ipad9ae59af9")
+                .ignoresSafeArea()
         }
     }
 }
