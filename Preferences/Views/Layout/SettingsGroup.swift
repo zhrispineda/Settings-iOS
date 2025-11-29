@@ -34,7 +34,7 @@ struct SettingsGroup: View {
                         }
                     } label: {
                         NavigationLink {} label: {
-                            SLabel(setting.title, color: setting.color, icon: setting.icon)
+                            SLabel(setting.title, icon: setting.icon)
                         }
                         .navigationLinkIndicatorVisibility(UIDevice.iPad && !model.isCompact ? .hidden : .visible)
                     }
