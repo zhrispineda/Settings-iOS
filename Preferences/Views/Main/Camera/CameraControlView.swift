@@ -49,14 +49,13 @@ struct CameraControlView: View {
             
             // MARK: App Selection Section
             Section {
-                NavigationLink(selectedApp.localize(table: table)) {
-                    CustomList(title: selectedApp.localize(table: table)) {
+                NavigationLink(selectedApp.localized(path: path, table: table)) {
+                    CustomList(title: selectedApp.localized(path: path, table: table)) {
                         Picker("CAPTURE_BUTTON_LAUNCH_APP_TITLE".localized(path: path, table: table), selection: $selectedApp) {
                             ForEach(apps) { app in
-                                if app.icon == "no-action-icon" {
-                                    SLabel(app.id.localized(path: path, table: table), color: .white, path: path, icon: app.icon)
-                                } else {
-                                    SLabel(app.id.localized(path: path, table: table), color: .white, icon: app.icon)
+                                HStack {
+                                    IconView(app.icon)
+                                    Text(app.id.localized(path: path, table: table))
                                 }
                             }
                         }
