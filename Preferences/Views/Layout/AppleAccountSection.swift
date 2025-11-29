@@ -12,15 +12,14 @@ struct AppleAccountSection: View {
     let path = "/System/Library/PrivateFrameworks/AppleAccountUI.framework"
     
     var body: some View {
-        HStack {
+        HStack(alignment: .top) {
             if let asset = UIImage.asset(path: path, name: "AppleAccount_Icon_Blue") {
                 Image(uiImage: asset)
                     .resizable()
                     .frame(width: 60, height: 60)
-                    .offset(x: -2)
             }
             
-            VStack(alignment: .leading, spacing: 3) {
+            VStack(alignment: .leading) {
                 Text("Apple Account")
                     .bold()
                     .font(.title3)
