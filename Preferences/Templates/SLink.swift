@@ -1,111 +1,80 @@
-/*
-Abstract:
-A template for displaying a NavigationLink with a rounded icon and quick information.
-*/
-
 import SwiftUI
 
 /// A template for displaying a NavigationLink with a rounded icon and quick information.
 ///
-/// - Parameter text: The `String` name of the link to display.
-/// - Parameter routeKey: Optional key to register this destination in RouteRegistry (defaults to `text`).
-/// - Parameter path: The `String` bundle path for image lookup (if needed).
+/// - Parameter title: The label of the link.
+/// - Parameter routeKey: Optional key to register this destination in RouteRegistry (defaults to the value of `title`).
 /// - Parameter icon: The `String` name of the image asset or symbol.
 /// - Parameter subtitle: An optional `String` below the id displaying a short summary.
 /// - Parameter status: An optional `String` on the opposing side displaying its current state.
-/// - Parameter badgeCount: An optional `Int` on the opposing side displaying a red badge with a number.
-/// - Parameter content: The destination `Content` for the route (registered and resolved via RouteRegistry).
+/// - Parameter destination: The destination `Content` for the route (registered and resolved via RouteRegistry).
 struct SLink<Content: View>: View {
-    var text: String
+    var title: String
     var routeKey: String?
-    var path: String
     var icon: String
     var subtitle: String
     var status: String
-    var badgeCount: Int
     private let destinationBuilder: () -> Content
     
     init(
-        _ text: String,
+        _ title: String,
         routeKey: String? = nil,
-        path: String = "",
         icon: String = "",
         subtitle: String = "",
         status: String = "",
-        badgeCount: Int = 0,
         @ViewBuilder destination: @escaping () -> Content
     ) {
-        self.text = text
+        self.title = title
         self.routeKey = routeKey
-        self.path = path
         self.icon = icon
         self.subtitle = subtitle
         self.status = status
-        self.badgeCount = badgeCount
         self.destinationBuilder = destination
     }
     
     init(
-        _ text: String,
+        _ title: String,
         routeKey: String? = nil,
-        path: String = "",
         icon: String = "",
         subtitle: String = "",
         status: String = "",
-        badgeCount: Int = 0,
         destination: Content
     ) {
-        self.text = text
+        self.title = title
         self.routeKey = routeKey
-        self.path = path
         self.icon = icon
         self.subtitle = subtitle
         self.status = status
-        self.badgeCount = badgeCount
         self.destinationBuilder = { destination }
     }
     
     var body: some View {
-        let key = routeKey ?? text
+        let key = routeKey ?? title
         
         NavigationLink(value: key) {
             HStack(spacing: 15) {
                 // Icon
-                if icon != "None" {
+                if !icon.isEmpty {
                     IconView(icon)
                 }
                 
                 // Title and subtitle text
-                VStack(alignment: .leading, spacing: 0) {
-                    Text(.init(text))
+                LabeledContent {
+                    HStack {
+                        if status == "location.fill"{
+                            Image(systemName: status)
+                        } else {
+                            Text(status)
+                        }
+                    }
+                } label: {
+                    Text(title)
                     if !subtitle.isEmpty {
                         Text(subtitle)
-                            .font(.footnote)
-                            .foregroundStyle(.secondary)
                     }
-                }
-                
-                // Status text
-                if !status.isEmpty {
-                    Spacer()
-                    if status == "location.fill" {
-                        Image(systemName: "location.fill")
-                            .foregroundStyle(.gray)
-                    } else {
-                        Text(.init(status))
-                            .foregroundStyle(.secondary)
-                    }
-                }
-                
-                // Badge count
-                if badgeCount > 0 {
-                    Spacer()
-                    Image(systemName: "\(badgeCount).circle.fill")
-                        .foregroundStyle(.white, .red)
-                        .imageScale(.large)
                 }
             }
-            .frame(height: 15)
+            .frame(height: 20)
         }
         .onAppear {
             RouteRegistry.shared.register(key) { destinationBuilder() }
