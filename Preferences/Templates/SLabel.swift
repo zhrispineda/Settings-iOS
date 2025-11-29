@@ -1,38 +1,34 @@
-/*
-Abstract:
-An HStack container for displaying a label with a rounded icon and text.
-*/
-
 import SwiftUI
 
-/// An HStack container for displaying a label with a rounded icon and text.
+/// An HStack plus LabeledContent container for displaying a label with a rounded icon and text.
 /// 
 /// ```swift
 /// var body: some View {
 ///     List {
-///         SLabel("Settings", color: Color.gray, icon: "gear")
+///         SLabel("Settings", icon: "com.apple.graphic-icon.gear")
 ///     }
 /// }
 /// ```
 ///
-/// - Parameter text: The `String` name of the label to display.
-/// - Parameter color: The `Color` to use as the icon background.
+/// - Parameter title: The `String` name of the label to display.
 /// - Parameter icon: The `String` name of the image asset or symbol.
 /// - Parameter status: The `String` text of the status to display.
 /// - Parameter badgeCount: The `Int` count to display as a badge.
 struct SLabel: View {
-    var text: String
-    var color: Color
-    var path: String
+    var title: String
     var icon: String
     var status: String
     var badgeCount: Int
     var selected: Bool
     
-    init(_ text: String, color: Color = Color.accentColor, path: String = "", icon: String = "", status: String = "", badgeCount: Int = 0, selected: Bool = false) {
-        self.text = text
-        self.color = color
-        self.path = path
+    init(
+        _ title: String,
+        icon: String = "",
+        status: String = "",
+        badgeCount: Int = 0,
+        selected: Bool = false
+    ) {
+        self.title = title
         self.icon = icon
         self.status = status
         self.badgeCount = badgeCount
@@ -40,24 +36,24 @@ struct SLabel: View {
     }
     
     var body: some View {
-        HStack(spacing: 20) {
+        HStack(spacing: UIDevice.iPhone ? 13.5 : 7.5) {
             if badgeCount == 0 {
                 IconView(icon)
-                    .padding(.leading, -3)
+                    .padding(.leading, -2.5)
             }
             
-            if text == "FOLLOWUP_TITLE" {
-                Text(text.localized(path: "/System/Library/PrivateFrameworks/SetupAssistant.framework", table: "FollowUp"))
-            } else {
-                Text(.init(text))
-                    .padding(.leading, icon.isEmpty ? 0 : UIDevice.iPhone ? -6 : -12)
-            }
-            Spacer()
-            
-            if !status.isEmpty {
-                Text(.init(status))
-                    .foregroundStyle(.gray)
-                    .fontWeight(selected ? .semibold : .none)
+            LabeledContent {
+                if !status.isEmpty {
+                    Text(status)
+                        .foregroundStyle(.gray)
+                        .fontWeight(selected ? .semibold : .none)
+                }
+            } label: {
+                if title == "FOLLOWUP_TITLE" {
+                    Text(title.localized(path: "/System/Library/PrivateFrameworks/SetupAssistant.framework", table: "FollowUp"))
+                } else {
+                    Text(title)
+                }
             }
             
             if badgeCount > 0 {
