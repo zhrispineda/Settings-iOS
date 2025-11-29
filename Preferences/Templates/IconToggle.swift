@@ -1,6 +1,6 @@
 import SwiftUI
 
-/// A Toggle container with a rounded icon next to its label.
+/// A Toggle container with an icon and optional subtitle text.
 ///
 /// ```swift
 /// var body: some View {
@@ -10,48 +10,41 @@ import SwiftUI
 /// }
 /// ```
 ///
-/// - Parameter text: The String name of the label to display.
-/// - Parameter icon: The String name of the image asset or symbol.
-/// - Parameter subtitle: The String text of the subtitle to display.
-/// - Parameter table: The localization table to use for text.
+/// - Parameter title: The label to display.
+/// - Parameter icon: The identifier of the icon to display.
+/// - Parameter subtitle: The text to display under the title.
 struct IconToggle: View {
-    var text: String
+    var title: String
     @Binding var isOn: Bool
     var icon: String
     var subtitle: String
-    var table: String
     
     init(
-        _ text: String,
+        _ title: String,
         isOn: Binding<Bool>,
         icon: String,
-        subtitle: String = "",
-        table: String = "Localizable"
+        subtitle: String = ""
     ) {
-        self.text = text
+        self.title = title
         self._isOn = isOn
         self.icon = icon
         self.subtitle = subtitle
-        self.table = table
     }
     
     var body: some View {
         Toggle(isOn: $isOn) {
-            Label {
-                Text(LocalizedStringKey(text.localize(table: table)))
-                    .padding(.leading, UIDevice.iPhone ? -7 : -5)
-                    .lineHeight(.tight)
-                
-                if !subtitle.isEmpty {
-                    Text(subtitle.localize(table: table))
-                        .font(.footnote)
-                        .padding(.leading, UIDevice.iPhone ? -7 : -5)
-                }
-            } icon: {
+            HStack(spacing: UIDevice.iPhone ? 14 : 8) {
                 IconView(icon)
-                    .padding(.leading, -6)
+                    .padding(.leading, -3)
+                
+                LabeledContent {} label: {
+                    Text(title)
+                    if !subtitle.isEmpty {
+                        Text(subtitle)
+                    }
+                }
             }
-            .padding(.leading, 5)
+            .frame(height: 20)
         }
     }
 }
