@@ -26,11 +26,11 @@ struct AllowedAppsView: View {
             Section {
                 IconToggle("Mail", isOn: $mailEnabled, icon: "com.apple.mobilemail")
                 IconToggle("Safari", isOn: $safariEnabled, icon: "com.apple.mobilesafari")
-                IconToggle("SharePlaySpecifierName".localized(path: path, table: table), isOn: $sharePlayEnabled, icon: "com.apple.graphic-icon.shareplay", table: table)
-                IconToggle("SiriDictationSpecifierName".localized(path: path, table: table), isOn: $siriEnabled, icon: "com.apple.application-icon.siri", table: table)
+                IconToggle("SharePlaySpecifierName".localized(path: path, table: table), isOn: $sharePlayEnabled, icon: "com.apple.graphic-icon.shareplay")
+                IconToggle("SiriDictationSpecifierName".localized(path: path, table: table), isOn: $siriEnabled, icon: "com.apple.application-icon.siri")
                 IconToggle("Wallet", isOn: $walletEnabled, icon: "com.apple.Passbook")
-                IconToggle("AirDropSpecifierName".localized(path: path, table: table), isOn: $airDropEnabled, icon: "com.apple.graphic-icon.airdrop", table: table)
-                IconToggle("CarPlaySpecifierName".localized(path: path, table: table), isOn: $carPlayEnabled, icon: "com.apple.graphic-icon.carplay", table: table)
+                IconToggle("AirDropSpecifierName".localized(path: path, table: table), isOn: $airDropEnabled, icon: "com.apple.graphic-icon.airdrop")
+                IconToggle("CarPlaySpecifierName".localized(path: path, table: table), isOn: $carPlayEnabled, icon: "com.apple.graphic-icon.carplay")
             }
             
             Section {
