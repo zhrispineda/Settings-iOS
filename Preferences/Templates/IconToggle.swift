@@ -33,10 +33,9 @@ struct IconToggle: View {
     
     var body: some View {
         Toggle(isOn: $isOn) {
-            HStack(spacing: UIDevice.iPhone ? 14 : 8) {
+            HStack(spacing: UIDevice.iPhone ? 13.5 : 7.5) {
                 IconView(icon)
-                    .padding(.leading, -3)
-                
+                    .padding(.leading, -2.5)
                 LabeledContent {} label: {
                     Text(title)
                     if !subtitle.isEmpty {
