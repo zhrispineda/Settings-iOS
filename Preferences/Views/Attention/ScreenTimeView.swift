@@ -18,7 +18,7 @@ struct ScreenTimeView: View {
     let path = "/System/Library/PrivateFrameworks/ScreenTimeSettingsUI.framework"
     
     var body: some View {
-        CustomList(title: "AboutScreenTimeTitle".localized(path: path), topPadding: appWebsiteActivityEnabled) {
+        CustomList(title: titleVisible ? "AboutScreenTimeTitle".localized(path: path) : "", topPadding: appWebsiteActivityEnabled) {
             if appWebsiteActivityEnabled {
                 Section {
                     VStack {
