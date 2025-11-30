@@ -10,24 +10,25 @@ import SwiftUI
 struct TrackingView: View {
     @State private var allowAppsRequestTrackingEnabled = true
     @State private var showingSheet = false
-    let privacy = "/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework"
+    let path = "/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework"
     let table = "Privacy"
     
     var body: some View {
-        CustomList(title: "Tracking".localized(path: privacy)) {
+        CustomList(title: "Tracking".localized(path: path)) {
             Section {
-                Toggle("ALLOW_ASK".localized(path: privacy, table: table), isOn: $allowAppsRequestTrackingEnabled)
+                Toggle("ALLOW_ASK".localized(path: path, table: table), isOn: $allowAppsRequestTrackingEnabled)
             } footer: {
-                Text(.init("APP_TRACKING_HEADER_TEXT".localized(path: privacy, table: table) + " [\("APP_TRACKING_LINK_TEXT".localized(path: privacy, table: table))](pref://privacy)"))
+                PSFooterHyperlinkView(
+                    footerText: "\("APP_TRACKING_HEADER_TEXT".localized(path: path, table: table)) \("APP_TRACKING_LINK_TEXT".localized(path: path, table: table))",
+                    linkText: "APP_TRACKING_LINK_TEXT".localized(path: path, table: table),
+                    onLinkTap: {
+                        showingSheet = true
+                    }
+                )
             }
             
             Section {} footer: {
-                Text("TRACKING_HEADER".localized(path: privacy, table: table))
-            }
-        }
-        .onOpenURL { url in
-            if url.absoluteString == "pref://privacy" {
-                showingSheet = true
+                Text("TRACKING_HEADER".localized(path: path, table: table))
             }
         }
         .sheet(isPresented: $showingSheet) {
