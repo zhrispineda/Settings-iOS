@@ -23,7 +23,7 @@ struct BundleControllerView: View {
     var body: some View {
         CustomViewController(bundle.contains("/") ? bundle : "/System/Library/PreferenceBundles/\(bundle).bundle/\(bundle)", controller: controller)
             .ignoresSafeArea()
-            .navigationTitle(path.isEmpty ? title.localize(table: table) : title.localized(path: path, table: table))
+            .navigationTitle(path.isEmpty ? title.localized(path: path, table: table) : title.localized(path: path, table: table))
             .navigationBarTitleDisplayMode(.inline)
             .border(PrimarySettingsListModel.shared.showingDebugOverlays ? Color.green.opacity(0.5) : .clear)
             .overlay(alignment: .topLeading) {
@@ -37,11 +37,5 @@ struct BundleControllerView: View {
                         .offset(x: 1, y: 1)
                 }
             }
-    }
-}
-
-#Preview {
-    NavigationStack {
-        BundleControllerView("AccessibilitySettings", controller: "AXDisplayController", title: "DISPLAY_AND_TEXT", table: "Accessibility")
     }
 }
