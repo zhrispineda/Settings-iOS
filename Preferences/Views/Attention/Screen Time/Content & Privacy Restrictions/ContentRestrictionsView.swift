@@ -29,26 +29,92 @@ struct ContentRestrictionsView: View {
     var body: some View {
         CustomList(title: "ContentRestrictionsSpecifierName".localized(path: path, table: table), topPadding: true) {
             Section {
-                SettingsLink("MusicPodcastsNewsWorkoutsSpecifierName".localized(path: path, table: table), status: "ExplicitLabel".localized(path: path, table: table), destination: SelectOptionList("MusicPodcastsNewsWorkoutsSpecifierName", options: ["CleanLabel", "ExplicitLabel"], selected: $musicPodcastsNewsWorkoutsSelection, table: table))
-                SettingsLink("MusicVideosSpecifierName".localized(path: path, table: table), status: "OnLabel".localized(path: path, table: table), destination: SelectOptionList("MusicVideosSpecifierName", options: ["OffLabel", "OnLabel"], selected: $musicVideoSelection, table: table))
-                SettingsLink("MusicProfilesSpecifierName".localized(path: path, table: table), status: "OnLabel".localized(path: path, table: table), destination: SelectOptionList("Music Videos", options: ["OffLabel", "OnLabel"], selected: $musicProfileSelection, table: table))
-                SettingsLink("MoviesSpecifierName".localized(path: path, table: table), status: "AllowAll".localized(path: path, table: rateTable), destination: MoviesView())
-                SettingsLink("TVSpecifierName".localize(table: table), status: "AllowAll".localized(path: path, table: rateTable), destination: TVView())
-                SettingsLink("BooksSpecifierName".localized(path: path, table: table), status: "ExplicitLabel".localized(path: path, table: table), destination: SelectOptionList("BooksSpecifierName", options: ["CleanLabel", "ExplicitLabel"], selected: $explicitSelection, table: table))
-                SettingsLink("AppsSpecifierName".localized(path: path, table: table), status: "17+", destination: AppRestrictionsView())
-                SettingsLink("AppClipsSpecifierName".localized(path: path, table: table), status: "Allow".localized(path: path, table: table), destination: SelectOptionList("AppClipsSpecifierName", selected: $appClipsSelection, table: table))
+                SettingsLink(
+                    "MusicPodcastsNewsWorkoutsSpecifierName".localized(path: path, table: table),
+                    status: "ExplicitLabel".localized(path: path, table: table),
+                    destination: SelectOptionList(
+                        "MusicPodcastsNewsWorkoutsSpecifierName",
+                        options: ["CleanLabel", "ExplicitLabel"],
+                        selected: $musicPodcastsNewsWorkoutsSelection,
+                        path: path,
+                        table: table
+                    )
+                )
+                SettingsLink(
+                    "MusicVideosSpecifierName".localized(path: path, table: table),
+                    status: "OnLabel".localized(path: path, table: table),
+                    destination: SelectOptionList(
+                        "MusicVideosSpecifierName",
+                        options: ["OffLabel", "OnLabel"],
+                        selected: $musicVideoSelection,
+                        path: path,
+                        table: table
+                    )
+                )
+                SettingsLink(
+                    "MusicProfilesSpecifierName".localized(path: path, table: table),
+                    status: "OnLabel".localized(path: path, table: table),
+                    destination: SelectOptionList(
+                        "Music Videos",
+                        options: ["OffLabel", "OnLabel"],
+                        selected: $musicProfileSelection,
+                        path: path,
+                        table: table
+                    )
+                )
+                SettingsLink(
+                    "MoviesSpecifierName".localized(path: path, table: table),
+                    status: "AllowAll".localized(path: path, table: rateTable),
+                    destination: MoviesView()
+                )
+                SettingsLink(
+                    "TVSpecifierName".localized(path: path, table: table),
+                    status: "AllowAll".localized(path: path, table: rateTable),
+                    destination: TVView()
+                )
+                SettingsLink(
+                    "BooksSpecifierName".localized(path: path, table: table),
+                    status: "ExplicitLabel".localized(path: path, table: table),
+                    destination: SelectOptionList(
+                        "BooksSpecifierName",
+                        options: ["CleanLabel", "ExplicitLabel"],
+                        selected: $explicitSelection,
+                        path: path,
+                        table: table
+                    )
+                )
+                SettingsLink(
+                    "AppsSpecifierName".localized(path: path, table: table),
+                    status: "17+",
+                    destination: AppRestrictionsView()
+                )
+                SettingsLink(
+                    "AppClipsSpecifierName".localized(path: path, table: table),
+                    status: "Allow".localized(path: path, table: table),
+                    destination: SelectOptionList(
+                        "AppClipsSpecifierName",
+                        selected: $appClipsSelection,
+                        path: path,
+                        table: table)
+                )
             } header: {
                 Text("AllowedContentLabel".localized(path: path, table: table))
             }
             
             Section {
-                SettingsLink("WebContentSpecifierName".localized(path: path, table: table), status: "UnrestrictedAccessSpecifierName".localized(path: path, table: table), destination: WebContentView())
+                SettingsLink(
+                    "WebContentSpecifierName".localized(path: path, table: table),
+                    status: "UnrestrictedAccessSpecifierName".localized(path: path, table: table),
+                    destination: WebContentView()
+                )
             } header: {
                 Text("WebContentSpecifierName".localized(path: path, table: table))
             }
             
             Section {
-                SettingsLink("WebSearchContentSpecifierName".localized(path: path, table: table), status: "Allow".localized(path: path, table: table), destination: SelectOptionList("Web Search Content", selected: $webSearchSelection, table: table))
+                SettingsLink(
+                    "WebSearchContentSpecifierName".localized(path: path, table: table),
+                    status: "Allow".localized(path: path, table: table), destination: SelectOptionList("Web Search Content", selected: $webSearchSelection, table: table))
                 SettingsLink("ExplicitLanguageSpecifierName".localized(path: path, table: table), status: "Allow".localized(path: path, table: table), destination: SelectOptionList("ExplicitLanguageSpecifierName", selected: $explicitLanguageSelection, table: table))
             } header: {
                 Text("SiriLabel".localized(path: path, table: table))
