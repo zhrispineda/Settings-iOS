@@ -22,7 +22,7 @@ struct FormatsView: View {
     var body: some View {
         CustomList(title: "CAM_FORMATS_TITLE".localized(path: path, table: table), topPadding: true) {
             Section {
-                Picker("CAM_FORMATS_TITLE".localize(table: table), selection: $cameraFormat) {
+                Picker("CAM_FORMATS_TITLE".localized(path: path, table: table), selection: $cameraFormat) {
                     ForEach(options, id: \.self) { option in
                         Text(option.localized(path: path, table: table))
                     }

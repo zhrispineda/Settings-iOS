@@ -16,7 +16,7 @@ struct RecordCinematicView: View {
     var body: some View {
         CustomList(title: "CAM_RECORD_CINEMATIC_TITLE".localized(path: path, table: table)) {
             Section {
-                Picker("CAM_RECORD_CINEMATIC_TITLE".localize(table: table), selection: $selected) {
+                Picker("CAM_RECORD_CINEMATIC_TITLE".localized(path: path, table: table), selection: $selected) {
                     ForEach(options, id: \.self) { option in
                         Text(option.localized(path: path, table: table))
                     }

@@ -63,7 +63,7 @@ struct CameraView: View {
                 Section {
                     SettingsLink(
                         "CAMERA_BUTTON_TITLE".localized(path: path, table: buttonTable),
-                        status: selectedApp.localize(table: buttonTable),
+                        status: selectedApp.localized(path: path, table: buttonTable),
                         destination: CameraControlView()
                     )
                 } header: {
