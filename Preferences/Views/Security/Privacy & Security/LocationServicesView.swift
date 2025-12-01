@@ -86,11 +86,6 @@ struct LocationServicesView: View {
                 }
             }
         }
-        .onOpenURL { url in
-            if url.absoluteString == "pref://" {
-                showingSheet = true
-            }
-        }
         .sheet(isPresented: $showingSheet) {
             OnBoardingKitView(bundleID: "com.apple.onboarding.locationservices")
                 .ignoresSafeArea()
