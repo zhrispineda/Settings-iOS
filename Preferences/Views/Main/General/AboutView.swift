@@ -22,7 +22,7 @@ struct AboutView: View {
     let table = "General"
     
     var body: some View {
-        CustomList(title: "About".localize(table: table)) {
+        CustomList(title: "About".localized(path: path, table: table)) {
             Section {
                 if UIDevice.IsSimulator {
                     LabeledContent("Device_Name".localized(path: path, table: table), value: UIDevice.current.model)
@@ -30,16 +30,26 @@ struct AboutView: View {
                     SettingsLink("Device_Name".localized(path: path, table: table), status: deviceName, destination: NameView())
                 }
                 
-                SettingsLink("OS Version".localized(path: path), status: UIDevice().systemVersion, destination: BundleControllerView("/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework/GeneralSettingsUI", controller: "PSGSoftwareVersionController", title: "OS Version".localized(path: path)))
-                    .textSelection(.enabled)
+                SettingsLink(
+                    "OS Version".localized(path: path),
+                    status: UIDevice().systemVersion,
+                    destination: BundleControllerView(
+                        "/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework/GeneralSettingsUI",
+                        controller: "PSGSoftwareVersionController",
+                        title: "OS Version".localized(path: path)
+                    )
+                )
                 
                 LabeledContent("ProductModelName".localized(path: path), value: UIDevice.fullModel)
                     .textSelection(.enabled)
-                LabeledContent("ProductModel".localized(path: path), value: showingModelNumber ? regulatoryModelNumber : "\(modelNumber)\(getRegionInfo())")
-                    .contentShape(Rectangle())
-                    .onTapGesture {
-                      showingModelNumber.toggle()
-                    }
+                LabeledContent(
+                    "ProductModel".localized(path: path),
+                    value: showingModelNumber ? regulatoryModelNumber : "\(modelNumber)\(getRegionInfo())"
+                )
+                .contentShape(Rectangle())
+                .onTapGesture {
+                    showingModelNumber.toggle()
+                }
                 LabeledContent("SerialNumber".localized(path: path), value: serialNumber)
             }
             .task {
