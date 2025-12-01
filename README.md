@@ -21,14 +21,20 @@ A **work-in-progress** recreation of the iOS & iPadOS Settings app (Preferences.
 <details open>
 <summary>iOS 26</summary>
   
-![An image displaying the project's Settings app in the canvas for iPhone, matching the updated appearance of iOS 26.](Assets/26Phone.png)
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="Assets/iOS26Dark.png">
+    <img src="Assets/iOS26Light.png" alt="The project's Settings app in the Xcode Previews canvas for iPhone, matching the layout and appearance of iOS 26.">
+  </picture>
 
 </details>
 
 <details open>
 <summary>iPadOS 26</summary>
   
-![An image displaying the project's Settings app in the canvas for iPad, matching the updated appearance of iPadOS 26.](Assets/26Pad.png)
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="Assets/iPadOS26Dark.png">
+    <img src="Assets/iPadOS26Light.png" alt="The project's Settings app in the Xcode Previews canvas for iPad, matching the layout and appearance of iPadOS 26.">
+  </picture>
 
 </details>
 
