@@ -9,31 +9,36 @@ import SwiftUI
 
 struct AppleAdvertisingView: View {
     @State private var showingPrivacySheet = false
-    let privacy = "/System/Library/PreferenceBundles/PrivacyAndSecuritySettings.bundle"
-    let path = "/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework"
-    let table = "AppleAdvertising"
+    private let passPath = "/System/Library/PreferenceBundles/PrivacyAndSecuritySettings.bundle"
+    private let psuPath = "/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework"
+    private let adTable = "AppleAdvertising"
     
     var body: some View {
-        CustomList(title: "Apple Advertising".localized(path: privacy), topPadding: true) {
+        CustomList(title: "Apple Advertising".localized(path: passPath), topPadding: true) {
             Section {} header: {
-                Text("APPLE_DELIVERED_ADVERTISING".localized(path: path, table: table))
+                Text("APPLE_DELIVERED_ADVERTISING".localized(path: psuPath, table: adTable))
             } footer: {
-                Text(.init("AD_PRIVACY_FOOTER".localized(path: path, table: table, "[\("AD_PRIVACY_FOOTER_LINK".localized(path: path, table: table))](pref://privacy)")))
+                PSFooterHyperlinkView(
+                    footerText: "AD_PRIVACY_FOOTER".localized(
+                        path: psuPath,
+                        table: adTable,
+                        "AD_PRIVACY_FOOTER_LINK".localized(path: psuPath, table: adTable)
+                    ),
+                    linkText: "AD_PRIVACY_FOOTER_LINK".localized(path: psuPath, table: adTable),
+                    onLinkTap: {
+                        showingPrivacySheet = true
+                    }
+                )
             }
             
             Section {
-                Button("VIEW_AD_TARGETING_INFORMATION".localized(path: path, table: table)) {}
+                Button("VIEW_AD_TARGETING_INFORMATION".localized(path: psuPath, table: adTable)) {}
             } footer: {
-                Text("VIEW_AD_TARGETING_INFORMATION_FOOTER".localized(path: path, table: table))
+                Text("VIEW_AD_TARGETING_INFORMATION_FOOTER".localized(path: psuPath, table: adTable))
             }
             
             Section {} footer: {
-                Text("PERSONALIZED_ADS_NO_CONSENT".localized(path: path, table: table))
-            }
-        }
-        .onOpenURL { url in
-            if url.absoluteString == "pref://privacy" {
-                showingPrivacySheet.toggle()
+                Text("PERSONALIZED_ADS_NO_CONSENT".localized(path: psuPath, table: adTable))
             }
         }
         .sheet(isPresented: $showingPrivacySheet) {
