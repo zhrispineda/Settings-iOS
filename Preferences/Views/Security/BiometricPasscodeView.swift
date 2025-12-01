@@ -2,7 +2,7 @@
 //  BiometricPasscodeView.swift
 //  Preferences
 //
-//  Settings > [Face ID/Touch ID] & Passcode
+//  Settings > [[Face ID/Touch ID] & Passcode/Passcode]
 //
 
 import SwiftUI
@@ -47,12 +47,23 @@ struct BiometricPasscodeView: View {
         ? "PASSCODE_PLACARD_TITLE_FACE_ID".localized(path: path, table: passcode)
         : "PASSCODE_PLACARD_TITLE_TOUCH_ID".localized(path: path, table: passcode)
     }
+    var footer: String {
+        return UIDevice.PearlIDCapability
+        ? "PEARL_FOOTER".localized(path: path, table: passcode, "BUTTON_TITLE".localized(path: facePrivacy, table: "FaceID"))
+        : "USE_TOUCHID_FOR_GROUP_FOOTER_PREFIX".localized(path: path, table: passcode, "BUTTON_TITLE".localized(path: touchPrivacy, table: "TouchID"))
+    }
+    var footerLink: String {
+        return UIDevice.PearlIDCapability
+        ? "BUTTON_TITLE".localized(path: facePrivacy, table: "FaceID")
+        : "BUTTON_TITLE".localized(path: touchPrivacy, table: "TouchID")
+    }
     
     var body: some View {
         CustomList(title: titleVisible ? title : "") {
             Placard(
-                title: UIDevice.PearlIDCapability ? "PASSCODE_PLACARD_TITLE_FACE_ID".localized(path: path, table: passcode) : "PASSCODE_PLACARD_TITLE_TOUCH_ID".localized(path: path, table: passcode),
-                icon: UIDevice.PearlIDCapability ? "com.apple.graphic-icon.face-id" : "com.apple.graphic-icon.touch-id", description: "\(UIDevice.PearlIDCapability ? "PASSCODE_PLACARD_SUBTITLE_FACE_ID".localized(path: path, table: passcode).replacing("helpkit://open", with: "pref://helpkit") : "PASSCODE_PLACARD_SUBTITLE_TOUCH_ID".localized(path: path, table: passcode).replacing("helpkit://open", with: "pref://helpkit"))",
+                title: title,
+                icon: UIDevice.PearlIDCapability ? "com.apple.graphic-icon.face-id" : "com.apple.graphic-icon.touch-id",
+                description: "\(UIDevice.PearlIDCapability ? "PASSCODE_PLACARD_SUBTITLE_FACE_ID".localized(path: path, table: passcode).replacing("helpkit://open", with: "pref://helpkit") : "PASSCODE_PLACARD_SUBTITLE_TOUCH_ID".localized(path: path, table: passcode).replacing("helpkit://open", with: "pref://helpkit"))",
                 isVisible: $titleVisible
             )
             
@@ -69,7 +80,13 @@ struct BiometricPasscodeView: View {
             } header: {
                 Text(UIDevice.PearlIDCapability ? "PEARL_HEADER".localized(path: path, table: passcode) : "USE_TOUCHID_FOR".localized(path: path, table: passcode))
             } footer: {
-                Text(.init(UIDevice.PearlIDCapability ? "PEARL_FOOTER".localized(path: path, table: passcode, "[\("BUTTON_TITLE".localized(path: facePrivacy, table: "FaceID"))](pref://privacy)") : "USE_TOUCHID_FOR_GROUP_FOOTER_PREFIX".localized(path: path, table: passcode, "[\("BUTTON_TITLE".localized(path: touchPrivacy, table: "TouchID"))](pref://privacy)")))
+                PSFooterHyperlinkView(
+                    footerText: footer,
+                    linkText: footerLink,
+                    onLinkTap: {
+                        showingPrivacySheet = true
+                    }
+                )
             }
             
             if UIDevice.PearlIDCapability {
@@ -95,10 +112,16 @@ struct BiometricPasscodeView: View {
                 
                 if UIDevice.iPhone {
                     Section {
-                        SettingsLink("DTO_STATUS_LABEL_DESCRIPTION".localized(path: path, table: passcode), status: "DTO_STATUS_LABEL_DESCRIPTION_STATE_OFF".localized(path: path, table: passcode), destination: EmptyView())
-                            .disabled(true)
+                        SettingsLink(
+                            "DTO_STATUS_LABEL_DESCRIPTION".localized(path: path, table: passcode),
+                            status: "DTO_STATUS_LABEL_DESCRIPTION_STATE_OFF".localized(path: path, table: passcode),
+                            destination: EmptyView()
+                        )
+                        .disabled(true)
                     } footer: {
-                        Text(UIDevice.PearlIDCapability ? "DTO_GROUP_DISABLED_REASON_FOOTER_DESCRIPTION_FACE_ID".localized(path: path, table: passcode) : "DTO_GROUP_DISABLED_REASON_FOOTER_DESCRIPTION_TOUCH_ID".localized(path: path, table: passcode))
+                        Text(UIDevice.PearlIDCapability
+                             ? "DTO_GROUP_DISABLED_REASON_FOOTER_DESCRIPTION_FACE_ID".localized(path: path, table: passcode)
+                             : "DTO_GROUP_DISABLED_REASON_FOOTER_DESCRIPTION_TOUCH_ID".localized(path: path, table: passcode))
                     }
                 }
             } else {
@@ -114,8 +137,12 @@ struct BiometricPasscodeView: View {
             }
             
             Section {
-                SettingsLink("PASSCODE_REQ".localized(path: path, table: passcode), status: "ALWAYS".localized(path: path, table: passcode), destination: EmptyView())
-                    .disabled(true)
+                SettingsLink(
+                    "PASSCODE_REQ".localized(path: path, table: passcode),
+                    status: "ALWAYS".localized(path: path, table: passcode),
+                    destination: EmptyView()
+                )
+                .disabled(true)
             }
             
             Section {
@@ -155,10 +182,9 @@ struct BiometricPasscodeView: View {
             Section {
                 Toggle("WIPE_DEVICE".localized(path: path, table: passcode), isOn: $allowEraseAfterFailedAttempts)
                     .disabled(true)
-                    .confirmationDialog(
-                        "WIPE_DEVICE_ALERT_TITLE".localize(table: passcode),
-                        isPresented: $showingEraseConfirmation,
-                        titleVisibility: .visible
+                    .alert(
+                        "WIPE_DEVICE_ALERT_TITLE".localized(path: path, table: passcode, "10"),
+                        isPresented: $showingEraseConfirmation
                     ) {
                         Button("WIPE_DEVICE_ALERT_OK".localized(path: path, table: passcode), role: .destructive) {}
                         Button("WIPE_DEVICE_ALERT_CANCEL".localized(path: path, table: passcode), role: .cancel) {
@@ -175,18 +201,23 @@ struct BiometricPasscodeView: View {
         .onOpenURL { url in
             if url.absoluteString.hasPrefix("pref://helpkit") {
                 showingHelpSheet = true
-            } else if url.absoluteString.hasPrefix("pref://privacy") {
-                showingPrivacySheet = true
             }
         }
         .sheet(isPresented: $showingHelpSheet) {
-            HelpKitView(topicID: UIDevice.iPhone ? UIDevice.PearlIDCapability ? "iph6d162927a" : "iph672384a0b" : UIDevice.PearlIDCapability ? "ipad66441e44" : "ipadcb11e17d")
-                .ignoresSafeArea(edges: .bottom)
-                .interactiveDismissDisabled()
+            HelpKitView(
+                topicID: UIDevice.iPhone
+                ? UIDevice.PearlIDCapability ? "iph6d162927a" : "iph672384a0b"
+                : UIDevice.PearlIDCapability ? "ipad66441e44" : "ipadcb11e17d"
+            )
+            .ignoresSafeArea(edges: .bottom)
+            .interactiveDismissDisabled()
         }
         .sheet(isPresented: $showingPrivacySheet) {
-            OnBoardingKitView(bundleID: UIDevice.PearlIDCapability ? "com.apple.onboarding.faceid" : "com.apple.onboarding.touchid")
-                .ignoresSafeArea()
+            OnBoardingKitView(bundleID: UIDevice.PearlIDCapability
+                              ? "com.apple.onboarding.faceid"
+                              : "com.apple.onboarding.touchid"
+            )
+            .ignoresSafeArea()
         }
         .fullScreenCover(isPresented: $showingPearlSetupPopover) {
             NavigationStack {
