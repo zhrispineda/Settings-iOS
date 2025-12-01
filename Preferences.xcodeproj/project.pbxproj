@@ -127,6 +127,10 @@
 		83A3E6952CAC3091006F4643 /* FocalLengthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A3E6942CAC3091006F4643 /* FocalLengthView.swift */; };
 		83A5DA512C2335580012ACB3 /* PermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5DA502C2335580012ACB3 /* PermissionsView.swift */; };
 		83A851BE2E0A4BD70041A3E6 /* SettingsApp.icon in Resources */ = {isa = PBXBuildFile; fileRef = 83A851BD2E0A4BD70041A3E6 /* SettingsApp.icon */; };
+		83AA2B032EDE2596003A924A /* iOS26Light.png in Resources */ = {isa = PBXBuildFile; fileRef = 83AA2B002EDE2596003A924A /* iOS26Light.png */; };
+		83AA2B042EDE2596003A924A /* iPadOS26Light.png in Resources */ = {isa = PBXBuildFile; fileRef = 83AA2B022EDE2596003A924A /* iPadOS26Light.png */; };
+		83AA2B052EDE2596003A924A /* iPadOS26Dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 83AA2B012EDE2596003A924A /* iPadOS26Dark.png */; };
+		83AA2B062EDE2596003A924A /* iOS26Dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 83AA2AFF2EDE2596003A924A /* iOS26Dark.png */; };
 		83AB1D5F2D5E687B005F0B63 /* ScheduledSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AB1D5E2D5E687B005F0B63 /* ScheduledSummaryView.swift */; };
 		83AE01DB2D65628700724A34 /* SettingsGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AE01DA2D65628700724A34 /* SettingsGroup.swift */; };
 		83AE01DD2D65637C00724A34 /* AppleAccountSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AE01DC2D65637C00724A34 /* AppleAccountSection.swift */; };
@@ -318,6 +322,10 @@
 		83A3E6942CAC3091006F4643 /* FocalLengthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocalLengthView.swift; sourceTree = "<group>"; };
 		83A5DA502C2335580012ACB3 /* PermissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsView.swift; sourceTree = "<group>"; };
 		83A851BD2E0A4BD70041A3E6 /* SettingsApp.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = SettingsApp.icon; sourceTree = "<group>"; };
+		83AA2AFF2EDE2596003A924A /* iOS26Dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iOS26Dark.png; sourceTree = "<group>"; };
+		83AA2B002EDE2596003A924A /* iOS26Light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iOS26Light.png; sourceTree = "<group>"; };
+		83AA2B012EDE2596003A924A /* iPadOS26Dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPadOS26Dark.png; sourceTree = "<group>"; };
+		83AA2B022EDE2596003A924A /* iPadOS26Light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPadOS26Light.png; sourceTree = "<group>"; };
 		83AB1D5E2D5E687B005F0B63 /* ScheduledSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduledSummaryView.swift; sourceTree = "<group>"; };
 		83AE01DA2D65628700724A34 /* SettingsGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsGroup.swift; sourceTree = "<group>"; };
 		83AE01DC2D65637C00724A34 /* AppleAccountSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAccountSection.swift; sourceTree = "<group>"; };
@@ -403,6 +411,10 @@
 			children = (
 				831658A12E74A7290028C8D5 /* 26Pad.png */,
 				831658A22E74A7290028C8D5 /* 26Phone.png */,
+				83AA2AFF2EDE2596003A924A /* iOS26Dark.png */,
+				83AA2B002EDE2596003A924A /* iOS26Light.png */,
+				83AA2B012EDE2596003A924A /* iPadOS26Dark.png */,
+				83AA2B022EDE2596003A924A /* iPadOS26Light.png */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -1003,6 +1015,10 @@
 				831658A42E74A7290028C8D5 /* 26Phone.png in Resources */,
 				83A851BE2E0A4BD70041A3E6 /* SettingsApp.icon in Resources */,
 				833F0AD72B744D190036EAD2 /* Preview Assets.xcassets in Resources */,
+				83AA2B032EDE2596003A924A /* iOS26Light.png in Resources */,
+				83AA2B042EDE2596003A924A /* iPadOS26Light.png in Resources */,
+				83AA2B052EDE2596003A924A /* iPadOS26Dark.png in Resources */,
+				83AA2B062EDE2596003A924A /* iOS26Dark.png in Resources */,
 				839AD33C2E8AFC6A00DDD069 /* iOSReadMeSummary.html in Resources */,
 				833F0AD42B744D190036EAD2 /* Assets.xcassets in Resources */,
 			);
