@@ -38,11 +38,11 @@ struct SelectOptionList: View {
     }
     
     var body: some View {
-        CustomList(title: path.isEmpty ? title.localize(table: table) : title.localized(path: path, table: table)) {
+        CustomList(title: path.isEmpty ? title.localized(path: path, table: table) : title.localized(path: path, table: table)) {
             Section {
                 Picker(title, selection: selected) {
                     ForEach(options, id: \.self) { option in
-                        Text(path.isEmpty ? option.localize(table: table) : option.localized(path: path, table: table))
+                        Text(path.isEmpty ? option.localized(path: path, table: table) : option.localized(path: path, table: table))
                     }
                 }
                 .pickerStyle(.inline)
@@ -63,7 +63,7 @@ struct SelectOptionList: View {
                         EmptyView()
                     }
                 case "ConnectWithFriendsSpecifierName":
-                    Text("\("ConnectWithFriendsExplanatoryFooterText".localize(table: table))\n\n\("ConnectWithFriendsContinuedExplanatoryText".localize(table: table))")
+                    Text("\("ConnectWithFriendsExplanatoryFooterText".localized(path: path, table: table))\n\n\("ConnectWithFriendsContinuedExplanatoryText".localized(path: path, table: table))")
                 case "PrivateMessagingSpecifierName":
                     Text("PrivateMessagingFooter".localized(path: path, table: table))
                 case "AUTOLOCK":
