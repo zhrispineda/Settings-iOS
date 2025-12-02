@@ -82,7 +82,11 @@ struct PrivacySecurityView: View {
                     "Health".localized(path: privacy),
                     icon: "com.apple.Health",
                     subtitle: "None".localized(path: privacy),
-                    destination: AppPermissionsView(permission: "HEALTH", bundle: "healthapp")
+                    destination: BundleControllerView(
+                        "/System/Library/PreferenceBundles/Privacy/HealthPrivacySettings.bundle/HealthPrivacySettings",
+                        controller: "HKHealthPrivacySettingsSourcesViewController",
+                        title: "Health".localized(path: privacy)
+                    )
                 )
                 SLink(
                     "Home Accessories".localized(path: privacy),

@@ -52,32 +52,6 @@ struct AppPermissionsView: View {
                 Section {} footer: {
                     Text("AVAILABILITY_STATUS_EXPLANATION".localized(path: focusTable))
                 }
-            case "HEALTH":
-                Section {} footer: {
-                    Text("\("PRIVACY_DISCLOSURE_FOOTER".localized(path: health)) \n[\("PRIVACY_DISCLOSURE_FOOTER_LEARN_MORE".localized(path: health))](pref://)")
-                }
-                
-                Section {
-                    NavigationLink("HEADPHONE_AUDIO_LEVELS".localized(path: health), destination: HeadphoneAudioLevelsView())
-                }
-                
-                Section {
-                    Text("APPS_NONE".localized(path: wellness, table: wellTable))
-                        .foregroundStyle(.secondary)
-                } header: {
-                    Text("APPS_LIST_HEADER".localized(path: wellness, table: wellTable))
-                } footer: {
-                    Text("APPS_LIST_EXPLANATION".localized(path: wellness, table: wellTable))
-                }
-                
-                Section {
-                    Text("NONE".localized(path: wellness, table: wellTable))
-                        .foregroundStyle(.secondary)
-                } header: {
-                    Text("RESEARCH_STUDIES_LIST_HEADER".localized(path: wellness, table: wellTable))
-                } footer: {
-                    Text("RESEARCH_STUDIES_LIST_EXPLANATION".localized(path: wellness, table: wellTable))
-                }
             case "MOTION":
                 Section {
                     Toggle("FITNESS_TRACKING".localized(path: privacy, table: table), isOn: $fitnessTracking)
@@ -122,7 +96,7 @@ struct AppPermissionsView: View {
                     }
                 case "FOCUS":
                     Text("AVAILABILITY_STATUS_APP_LIST_FOOTER".localized(path: focusTable))
-                case "HEALTH", "Research Sensor & Usage Data":
+                case "Research Sensor & Usage Data":
                     EmptyView()
                 default:
                     Text("Applications that have requested the ability to use \(permission) will appear here.")
@@ -156,12 +130,6 @@ struct AppPermissionsView: View {
 #Preview("Focus") {
     NavigationStack {
         AppPermissionsView(permission: "FOCUS")
-    }
-}
-
-#Preview("Health") {
-    NavigationStack {
-        AppPermissionsView(permission: "HEALTH")
     }
 }
 
