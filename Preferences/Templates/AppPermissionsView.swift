@@ -19,7 +19,6 @@ import SwiftUI
 /// - Parameter appClipsPermission: The  optional String to use when relating to App Clips.
 struct AppPermissionsView: View {
     @AppStorage("PrivacyFitnessTrackingToggle") private var fitnessTracking = true
-    @State private var showingSheet = false
     var permission: String
     var appClipPermission = ""
     let appClipsEligible = ["BT_PERIPHERAL", "CAMERA", "MICROPHONE"]
@@ -58,12 +57,6 @@ struct AppPermissionsView: View {
                 } footer: {
                     Text("FITNESS_TRACKING_PRIVACY", tableName: table)
                 }
-            case "Research Sensor & Usage Data":
-                Section {
-                    Button("ENABLE_SENSORKIT_BUTTON".localized(path: sensorkit)) {}
-                } footer: {
-                    Text("\("DESCRIPTION_SENSORKIT".localized(path: sensorkit)) [\("LEARN_MORE".localized(path: sensorkit))](pref://)")
-                }
             default:
                 EmptyView()
             }
@@ -96,21 +89,10 @@ struct AppPermissionsView: View {
                     }
                 case "FOCUS":
                     Text("AVAILABILITY_STATUS_APP_LIST_FOOTER".localized(path: focusTable))
-                case "Research Sensor & Usage Data":
-                    EmptyView()
                 default:
                     Text("Applications that have requested the ability to use \(permission) will appear here.")
                 }
             }
-        }
-        .onOpenURL { url in
-            if url.absoluteString == "pref://" {
-                showingSheet = true
-            }
-        }
-        .sheet(isPresented: $showingSheet) {
-            OnBoardingKitView(bundleID: "com.apple.onboarding.\(bundle)")
-                .ignoresSafeArea()
         }
     }
 }
@@ -130,11 +112,5 @@ struct AppPermissionsView: View {
 #Preview("Focus") {
     NavigationStack {
         AppPermissionsView(permission: "FOCUS")
-    }
-}
-
-#Preview("Research Sensor & Usage Data") {
-    NavigationStack {
-        AppPermissionsView(permission: "Research Sensor & Usage Data")
     }
 }

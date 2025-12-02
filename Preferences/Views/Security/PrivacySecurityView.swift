@@ -205,7 +205,11 @@ struct PrivacySecurityView: View {
                         "Research Sensor & Usage Data".localized(path: privacy),
                         icon: "com.apple.graphic-icon.research-sensor-and-usage-data",
                         status: "0",
-                        destination: AppPermissionsView(permission: "Research Sensor & Usage Data", bundle: "sensorusage")
+                        destination: BundleControllerView(
+                            "/System/Library/PreferenceBundles/Privacy/SensorKitPrivacySettings.bundle/SensorKitPrivacySettings",
+                            controller: "SensorKitPrivacySettingsController",
+                            title: "Research Sensor & Usage Data".localized(path: privacy)
+                        )
                     )
                     SLink(
                         "Speech Recognition".localized(path: privacy),
