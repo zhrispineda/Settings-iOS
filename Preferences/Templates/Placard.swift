@@ -47,7 +47,7 @@ struct Placard: View {
             
             Text(title)
                 .font(.title2.bold())
-                .padding(.top, 13)
+                .padding(.top, 20)
                 .padding(.bottom, -4)
             Text(.init(description))
                 .font(.headline)
