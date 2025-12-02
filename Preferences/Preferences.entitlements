@@ -4,6 +4,12 @@
 <dict>
 	<key>com.apple.developer.game-center</key>
 	<true/>
+	<key>com.apple.developer.healthkit</key>
+	<true/>
+	<key>com.apple.developer.healthkit.access</key>
+	<array>
+		<string>health-records</string>
+	</array>
 	<key>com.apple.developer.homekit</key>
 	<true/>
 </dict>
