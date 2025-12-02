@@ -80,27 +80,15 @@ struct SystemServicesView: View {
                 Text("PRODUCT_IMPROVEMENT".localized(path: path, table: table))
             } footer: {
                 VStack(alignment: .leading) {
-                    Text(.init("\("POLARIS_FOOTER".localized(path: path, table: table, "[\("LEARN_MORE".localized(path: path, table: table))](pref://)"))\n"))
+                    PSFooterHyperlinkView(
+                        footerText: "POLARIS_FOOTER".localized(path: path, table: table, "LEARN_MORE".localized(path: path, table: table)),
+                        linkText: "LEARN_MORE".localized(path: path, table: table),
+                        onLinkTap: {
+                            showingSheet = true
+                        }
+                    )
                     
-                    Group {
-                        Text("\("GENERAL_EXPLANATION_ITEM".localized(path: path, table: table))\n")
-                        HStack(spacing: 15) {
-                            Image(systemName: "location.fill")
-                                .foregroundStyle(.purple)
-                                .font(.headline)
-                            Text("ACTIVE_EXPLANATION_ITEM".localized(path: path, table: table))
-                        }
-                        .padding(.trailing)
-                        .padding(.bottom, 5)
-                        
-                        HStack(spacing: 15) {
-                            Image(systemName: "location.fill")
-                                .foregroundStyle(.gray)
-                                .font(.headline)
-                            Text("RECENT_EXPLANATION_ITEM".localized(path: path, table: table))
-                        }
-                        .padding(.trailing)
-                    }
+                    PUILocationIndicatorSystemExplanationView(path: path, table: table)
                 }
             }
             
@@ -110,15 +98,35 @@ struct SystemServicesView: View {
                 Text("SYSTEM_SERVICES_STATUS_BAR_ICON_EXPLANATION".localized(path: path, table: table))
             }
         }
-        .onOpenURL { url in
-            if url.scheme == "pref" {
-                showingSheet = true
-            }
-        }
         .sheet(isPresented: $showingSheet) {
             OnBoardingKitView(bundleID: "com.apple.onboarding.maps")
                 .ignoresSafeArea()
         }
+    }
+}
+
+struct PUILocationIndicatorSystemExplanationView: View {
+    let path: String
+    let table: String
+    
+    var body: some View {
+        Text("\("GENERAL_EXPLANATION_ITEM".localized(path: path, table: table))\n")
+        HStack(spacing: 15) {
+            Image(systemName: "location.fill")
+                .foregroundStyle(.purple)
+                .font(.headline)
+            Text("ACTIVE_EXPLANATION_ITEM".localized(path: path, table: table))
+        }
+        .padding(.trailing)
+        .padding(.bottom, 5)
+        
+        HStack(spacing: 15) {
+            Image(systemName: "location.fill")
+                .foregroundStyle(.gray)
+                .font(.headline)
+            Text("RECENT_EXPLANATION_ITEM".localized(path: path, table: table))
+        }
+        .padding(.trailing)
     }
 }
 
