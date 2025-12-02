@@ -63,7 +63,7 @@ struct SLink<Content: View>: View {
                     HStack {
                         if status == "location.fill"{
                             Image(systemName: status)
-                        } else {
+                        } else if !status.isEmpty {
                             Text(status)
                         }
                     }
