@@ -12,7 +12,7 @@ struct AppleAccountSection: View {
     let path = "/System/Library/PrivateFrameworks/AppleAccountUI.framework"
     
     var body: some View {
-        HStack(alignment: .top) {
+        HStack {
             if let asset = UIImage.asset(path: path, name: "AppleAccount_Icon_Blue") {
                 Image(uiImage: asset)
                     .resizable()
