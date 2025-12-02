@@ -26,13 +26,27 @@ struct BooksView: View {
     @State private var showingResetIdAlert = false
     @State private var idReset = false
     @State private var showingSheet = false
-    let externalControlOptions = ["Next/Previous", "Skip Forward/Back"]
-    let path = "/System/Library/PreferenceBundles/iBooksSettings.bundle"
-    let table = "Settings"
+    private let externalControlOptions = ["Next/Previous", "Skip Forward/Back"]
+    private let path = "/System/Library/PreferenceBundles/iBooksSettings.bundle"
+    private let table = "Settings"
+    private var footerLink: String {
+        "BUTTON_TITLE".localized(path: "/System/Library/OnBoardingBundles/com.apple.onboarding.ibooks.bundle", table: "AppleBooks")
+    }
+    private var footer: String {
+        "Reset the identifier used to report aggregate app usage statistics to Apple.".localized(path: path, table: table)
+        + " \(footerLink)"
+    }
     
     var body: some View {
         CustomList(title: "Books".localized(path: path, table: table), topPadding: true) {
-            PermissionsView(appName: "Books".localized(path: path, table: table), background: true, cellular: false, location: false, notifications: false, cellularEnabled: .constant(false))
+            PermissionsView(
+                appName: "Books".localized(path: path, table: table),
+                background: true,
+                cellular: false,
+                location: false,
+                notifications: false,
+                cellularEnabled: .constant(false)
+            )
             
             Section {
                 Toggle("Home".localized(path: path, table: table), isOn: .constant(false))
@@ -128,17 +142,17 @@ struct BooksView: View {
                 Button("Reset Access to Online Content".localized(path: path, table: table)) {
                     showingPermissionResetAlert.toggle()
                 }
-                .confirmationDialog("Clear permission for books to access publisher\u{2019}s content from the Internet.".localized(path: path, table: table), isPresented: $showingPermissionResetAlert) {
+                .confirmationDialog("Clear permission for books to access publisher\\U2019s content from the Internet.".localized(path: path, table: table), isPresented: $showingPermissionResetAlert) {
                     Button("Reset Access to Online Content".localized(path: path, table: table), role: .destructive) {
                         permissionsCleared.toggle()
                     }
                 } message: {
-                    Text("Clear permission for books to access publisher\u{2019}s content from the Internet.".localized(path: path, table: table))
+                    Text("Clear permission for books to access publisher\\U2019s content from the Internet.".localized(path: path, table: table))
                 }
             } header: {
                 Text("Online Content & Privacy".localized(path: path, table: table))
             } footer: {
-                Text("Clear permission for books to access publisher\u{2019}s content from the Internet.".localized(path: path, table: table))
+                Text("Clear permission for books to access publisher\\U2019s content from the Internet.".localized(path: path, table: table))
             }
             
             Section {
@@ -153,31 +167,27 @@ struct BooksView: View {
                     Text("Reset Identifier".localized(path: path, table: table))
                 }
             } footer: {
-                Text("\("Reset the identifier used to report aggregate app usage statistics to Apple.".localized(path: path, table: table)) [\("See how your data is managed…".localized(path: path, table: table))](pref://)")
+                PSFooterHyperlinkView(
+                    footerText: footer,
+                    linkText: footerLink,
+                    onLinkTap: {
+                        showingSheet = true
+                    }
+                )
             }
             
             NavigationLink("Acknowledgements".localized(path: path, table: table)) {
-                Text("")
-                    .navigationTitle("Acknowledgements".localized(path: path, table: table))
-                    .navigationBarTitleDisplayMode(.inline)
-            }
-        }
-        .onOpenURL { url in
-            if url.scheme == "pref" {
-                showingSheet = true
+                BundleControllerView(
+                    "iBooksSettings",
+                    controller: "BKSettingsAcknowledgementsController",
+                    title: "Acknowledgements".localized(path: path, table: table)
+                )
             }
         }
         .sheet(isPresented: $showingSheet) {
             OnBoardingKitView(bundleID: "com.apple.onboarding.ibooks")
                 .ignoresSafeArea()
         }
-    }
-}
-
-struct MenuPositionButton: ButtonStyle {
-    func makeBody(configuration: ButtonStyle.Configuration) -> some View {
-        configuration.label
-            .scaleEffect(configuration.isPressed ? 0.95 : 1.0)
     }
 }
 
