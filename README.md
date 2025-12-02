@@ -14,6 +14,17 @@ A **work-in-progress** recreation of the iOS & iPadOS Settings app (Preferences.
 > [!CAUTION]
 > Some of the code in this project may rely on private APIs. It is strictly for demonstration purposes only.
 >
+> <details closed>
+>  <summary>List</summary>
+>  - AuthKitUI<br/>
+>  - HelpKit<br/>
+>  - MobileGestalt<br/>
+>  - OnBoardingKit<br/>
+>  - Preferences<br/>
+>  - SoftwareUpdateSettings<br/>
+>  - SpringBoardServices<br/>
+> </details>
+>
 > **Do not reuse any code from this project that relies on private methods.** Consider publicly supported alternatives instead.
 
 ## Preview
