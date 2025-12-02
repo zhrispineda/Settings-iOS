@@ -69,13 +69,17 @@ struct CameraView: View {
                 } header: {
                     Text("SYSTEM_SETTINGS_HEADER".localized(path: path, table: stylesTable))
                 } footer: {
-                    Text(.init(
-                        "CAMERA_BUTTON_%@_FOOTER".localized(
+                    PSFooterHyperlinkView(
+                        footerText: "CAMERA_BUTTON_%@_FOOTER".localized(
                             path: path,
                             table: buttonTable,
-                            "[\("CAMERA_BUTTON_LEARN_MORE_TITLE".localized(path: path, table: buttonTable))](pref://helpkit)"
-                        )
-                    ))
+                            "CAMERA_BUTTON_LEARN_MORE_TITLE".localized(path: path, table: buttonTable)
+                        ),
+                        linkText: "CAMERA_BUTTON_LEARN_MORE_TITLE".localized(path: path, table: buttonTable),
+                        onLinkTap: {
+                            showingHelpSheet = true
+                        }
+                    )
                 }
             }
             
@@ -354,7 +358,13 @@ struct CameraView: View {
             // MARK: - Camera & ARKit Privacy Footer
             if UIDevice.LiDARCapability {
                 Section {} footer: {
-                    Text("[\("BUTTON_TITLE".localized(path: privacy, table: "Camera"))](pref://privacy)")
+                    PSFooterHyperlinkView(
+                        footerText: "BUTTON_TITLE".localized(path: privacy, table: "Camera"),
+                        linkText: "BUTTON_TITLE".localized(path: privacy, table: "Camera"),
+                        onLinkTap: {
+                            showingPrivacySheet = true
+                        }
+                    )
                 }
             }
         }
@@ -363,16 +373,9 @@ struct CameraView: View {
                 BundleControllerView(
                     "/System/Library/PrivateFrameworks/CameraUI.framework/CameraUI",
                     controller: UIDevice.PhotographicStylesCapability
-                    ? "CAMSemanticStyleSettingsController"
-                    : "CAMSmartStyleSettingsController"
+                        ? "CAMSemanticStyleSettingsController"
+                        : "CAMSmartStyleSettingsController"
                 )
-            }
-        }
-        .onOpenURL { url in
-            if url.absoluteString == "pref://helpkit" {
-                showingHelpSheet = true
-            } else if url.absoluteString == "pref://privacy" {
-                showingPrivacySheet = true
             }
         }
         .sheet(isPresented: $showingHelpSheet) {
