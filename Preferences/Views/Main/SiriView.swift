@@ -65,6 +65,11 @@ struct SiriView: View {
         let filteredApps = UIDevice.IsSimulated ? apps.filter { $0.showOnSimulator } : apps
         return Dictionary(grouping: filteredApps, by: { String($0.name.prefix(1)) })
     }
+    private var privacyFooter: String {
+        UIDevice.iPhone
+            ? "SIRI_REQUESTS_DEVICE_PROCESSING_FOOTER_TEXT_IPHONE".localized(path: path, table: table)
+            : "SIRI_REQUESTS_DEVICE_PROCESSING_FOOTER_TEXT_IPAD".localized(path: path, table: table)
+    }
     
     var body: some View {
         CustomList(title: titleVisible ? title : "") {
@@ -113,8 +118,11 @@ struct SiriView: View {
                         Toggle("ASSISTANT_LOCK_SCREEN_ACCESS".localized(path: path, table: table), isOn: $allowSiriWhenLockedEnabled)
                     }
                     NavigationLink("VOICE_FEEDBACK".localized(path: path, table: table)) {
-                        CustomViewController("/System/Library/PrivateFrameworks/AssistantSettingsSupport.framework/AssistantSettingsSupport", controller: "AssistantAudioFeedbackController")
-                            .navigationTitle("VOICE_FEEDBACK".localized(path: path, table: table))
+                        CustomViewController(
+                            "/System/Library/PrivateFrameworks/AssistantSettingsSupport.framework/AssistantSettingsSupport",
+                            controller: "AssistantAudioFeedbackController"
+                        )
+                        .navigationTitle("VOICE_FEEDBACK".localized(path: path, table: table))
                     }
                     if UIDevice.IsSimulator {
                         NavigationLink("ANNOUNCE_CALLS_TITLE".localized(path: path, table: table), destination: EmptyView())
@@ -136,12 +144,22 @@ struct SiriView: View {
                     .foregroundStyle(.primary)
                 }
                 NavigationLink("ASSISTANT_HISTORY_LABEL".localized(path: path, table: table)) {
-                    BundleControllerView("/System/Library/PrivateFrameworks/AssistantSettingsSupport.framework/AssistantSettingsSupport", controller: "AssistantHistoryViewController", title: "ASSISTANT_HISTORY_LABEL", table: table)
+                    BundleControllerView(
+                        "/System/Library/PrivateFrameworks/AssistantSettingsSupport.framework/AssistantSettingsSupport",
+                        controller: "AssistantHistoryViewController",
+                        title: "ASSISTANT_HISTORY_LABEL", table: table
+                    )
                 }
             } header: {
                 Text("SIRI_REQUESTS".localized(path: path, table: table))
             } footer: {
-                Text(.init(UIDevice.IsSimulator ? "[\("SIRI_REQUESTS_ABOUT_LINK_TEXT".localized(path: path, table: table))](pref://siri)" : "\(UIDevice.iPhone ? "SIRI_REQUESTS_DEVICE_PROCESSING_FOOTER_TEXT_IPHONE".localized(path: path, table: table) : "SIRI_REQUESTS_DEVICE_PROCESSING_FOOTER_TEXT_IPAD".localized(path: path, table: table))" + " [\("SIRI_REQUESTS_ABOUT_LINK_TEXT".localized(path: path, table: table))](pref://siri)"))
+                PSFooterHyperlinkView(
+                    footerText: "\(privacyFooter) \("SIRI_REQUESTS_ABOUT_LINK_TEXT".localized(path: path, table: table))",
+                    linkText: "SIRI_REQUESTS_ABOUT_LINK_TEXT".localized(path: path, table: table),
+                    onLinkTap: {
+                        siriPrivacySheet = true
+                    }
+                )
             }
             
             // MARK: Suggestions Section
@@ -172,9 +190,17 @@ struct SiriView: View {
             
             // MARK: Apple Intelligence and Siri App Access Section
             Section {
-                SLink("APP_CLIPS".localized(path: path, table: table), icon: "com.apple.graphic-icon.app-clips") {
-                    BundleControllerView("/System/Library/PrivateFrameworks/AssistantSettingsSupport.framework/AssistantSettingsSupport", controller: "AssistantAppClipSettingsController", title: "APP_CLIPS", table: table)
-                }
+                SLink(
+                    "APP_CLIPS".localized(path: path, table: table),
+                    icon: "com.apple.graphic-icon.app-clips",
+                    destination: BundleControllerView(
+                        "/System/Library/PrivateFrameworks/AssistantSettingsSupport.framework/AssistantSettingsSupport",
+                        controller: "AssistantAppClipSettingsController",
+                        title: "APP_CLIPS",
+                        path: path,
+                        table: table
+                    )
+                )
                 SLink("APPS_GROUP".localized(path: path, table: table), icon: "com.apple.graphic-icon.home-screen") {
                     CustomList(title: "APPS".localized(path: path, table: table)) {
                         ForEach(groupedApps.keys.sorted(), id: \.self) { key in
@@ -190,24 +216,23 @@ struct SiriView: View {
                 Text(UIDevice.IntelligenceCapability ? "GM_APP_ACCESS_GROUP".localized(path: path, table: gmTable) : "APP_ACCESS_GROUP".localized(path: path, table: table))
             } footer: {
                 if UIDevice.IntelligenceCapability {
-                    Text("\("GM_PRIVACY_FOOTER_TEXT".localized(path: path, table: gmTable)) [\("GM_PRIVACY_FOOTER_LINK_TEXT".localized(path: path, table: gmTable))](pref://intelligence)")
+                    PSFooterHyperlinkView(
+                        footerText: "\("GM_PRIVACY_FOOTER_TEXT".localized(path: path, table: gmTable)) \("GM_PRIVACY_FOOTER_LINK_TEXT".localized(path: path, table: gmTable))",
+                        linkText: "GM_PRIVACY_FOOTER_LINK_TEXT".localized(path: path, table: gmTable),
+                        onLinkTap: {
+                            intelligencePrivacySheet = true
+                        }
+                    )
                 }
             }
         }
         .onOpenURL { url in
-            switch url.absoluteString {
-            case "pref://siri":
-                siriPrivacySheet.toggle()
-            case "pref://intelligence":
-                intelligencePrivacySheet.toggle()
-            case "pref://helpkit":
+            if url.absoluteString == "pref://helpkit" {
                 if UIDevice.IntelligenceCapability {
                     showingIntelligenceHelpSheet.toggle()
                 } else {
                     showingSiriHelpSheet.toggle()
                 }
-            default:
-                SettingsLogger.info("Called onOpenURL with no defined action: \(url)")
             }
         }
         .sheet(isPresented: $siriPrivacySheet) {
