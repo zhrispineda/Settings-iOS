@@ -114,17 +114,13 @@ struct ScreenTimeView: View {
                 SLink(
                     "CommunicationSafetyTitle".localized(path: path),
                     icon: "com.apple.graphic-icon.communication-safety",
-                    subtitle: "CommunicationSafetyOffSubtitle".localized(path: path)
-                ) {
-                    CommunicationSafetyView()
-                        .onAppear {
-                            showingCommunicationSafetySheet.toggle()
-                        }
-                }
-                .sheet(isPresented: $showingCommunicationSafetySheet) {
-                    SensitivePhotosVideosProtectionSheetView()
-                        .frame(width: 400, height: 730)
-                }
+                    subtitle: "CommunicationSafetyOffSubtitle".localized(path: path),
+                    destination: BundleControllerView(
+                        "\(path)/ScreenTimeSettingsUI",
+                        controller: "STCommunicationSafetyListController",
+                        title: "CommunicationSafetyTitle".localized(path: path)
+                    )
+                )
             } header: {
                 Text("CommunicationGroupSpecifierName".localized(path: path))
             }
