@@ -27,10 +27,10 @@ struct CustomList<Content: View>: View {
         List {
             content
         }
-        //.contentMargins(.horizontal, UIDevice.iPhone || geo.size.width < 600 ? nil : (isLandscape ? 175 : 50), for: .scrollContent)
         .navigationTitle(LocalizedStringKey(title))
         .navigationBarTitleDisplayMode(.inline)
-        .padding(.top, topPadding ? 0 : -19)
+        .padding(.top, topPadding ? 0 : -17.5)
+        .padding(.horizontal, UIDevice.iPad ? -4 : 0)
         .navigationDestination(for: String.self) { key in
             RouteRegistry.shared.view(for: key)
         }
@@ -38,6 +38,7 @@ struct CustomList<Content: View>: View {
 }
 
 #Preview {
-    ContentView()
-        .environment(PrimarySettingsListModel())
+    NavigationStack {
+        GeneralView()
+    }
 }
