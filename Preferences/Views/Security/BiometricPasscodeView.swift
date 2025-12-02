@@ -34,28 +34,33 @@ struct BiometricPasscodeView: View {
     @State private var titleVisible = false
     @State private var showingHelpSheet = false
     @State private var showingPrivacySheet = false
-    let path = "/System/Library/PrivateFrameworks/PasscodeAndBiometricsSettings.framework"
-    let pref = "/System/Library/PrivateFrameworks/Preferences.framework"
-    let pearl = "Pearl"
-    let passcode = "Passcode Lock"
-    let pay = "/System/Library/PreferenceBundles/PaymentContactlessSettingsUIPlugin.bundle"
-    let payment = "Payment_Prefs"
-    let facePrivacy = "/System/Library/OnBoardingBundles/com.apple.onboarding.faceid.bundle"
-    let touchPrivacy = "/System/Library/OnBoardingBundles/com.apple.onboarding.touchid.bundle"
-    var title: String {
-        return UIDevice.PearlIDCapability
-        ? "PASSCODE_PLACARD_TITLE_FACE_ID".localized(path: path, table: passcode)
-        : "PASSCODE_PLACARD_TITLE_TOUCH_ID".localized(path: path, table: passcode)
+    private let path = "/System/Library/PrivateFrameworks/PasscodeAndBiometricsSettings.framework"
+    private let pref = "/System/Library/PrivateFrameworks/Preferences.framework"
+    private let pearl = "Pearl"
+    private let passcode = "Passcode Lock"
+    private let pay = "/System/Library/PreferenceBundles/PaymentContactlessSettingsUIPlugin.bundle"
+    private let payment = "Payment_Prefs"
+    private let facePrivacy = "/System/Library/OnBoardingBundles/com.apple.onboarding.faceid.bundle"
+    private let touchPrivacy = "/System/Library/OnBoardingBundles/com.apple.onboarding.touchid.bundle"
+    private var title: String {
+        UIDevice.PearlIDCapability
+            ? "PASSCODE_PLACARD_TITLE_FACE_ID".localized(path: path, table: passcode)
+            : "PASSCODE_PLACARD_TITLE_TOUCH_ID".localized(path: path, table: passcode)
     }
-    var footer: String {
-        return UIDevice.PearlIDCapability
-        ? "PEARL_FOOTER".localized(path: path, table: passcode, "BUTTON_TITLE".localized(path: facePrivacy, table: "FaceID"))
-        : "USE_TOUCHID_FOR_GROUP_FOOTER_PREFIX".localized(path: path, table: passcode, "BUTTON_TITLE".localized(path: touchPrivacy, table: "TouchID"))
+    private var description: String {
+        UIDevice.PearlIDCapability
+            ? "PASSCODE_PLACARD_SUBTITLE_FACE_ID".localized(path: path, table: passcode).replacing("helpkit://open", with: "pref://helpkit")
+            : "PASSCODE_PLACARD_SUBTITLE_TOUCH_ID".localized(path: path, table: passcode).replacing("helpkit://open", with: "pref://helpkit")
     }
-    var footerLink: String {
-        return UIDevice.PearlIDCapability
-        ? "BUTTON_TITLE".localized(path: facePrivacy, table: "FaceID")
-        : "BUTTON_TITLE".localized(path: touchPrivacy, table: "TouchID")
+    private var footer: String {
+        UIDevice.PearlIDCapability
+            ? "PEARL_FOOTER".localized(path: path, table: passcode, "BUTTON_TITLE".localized(path: facePrivacy, table: "FaceID"))
+            : "USE_TOUCHID_FOR_GROUP_FOOTER_PREFIX".localized(path: path, table: passcode, "BUTTON_TITLE".localized(path: touchPrivacy, table: "TouchID"))
+    }
+    private var footerLink: String {
+        UIDevice.PearlIDCapability
+            ? "BUTTON_TITLE".localized(path: facePrivacy, table: "FaceID")
+            : "BUTTON_TITLE".localized(path: touchPrivacy, table: "TouchID")
     }
     
     var body: some View {
@@ -63,7 +68,7 @@ struct BiometricPasscodeView: View {
             Placard(
                 title: title,
                 icon: UIDevice.PearlIDCapability ? "com.apple.graphic-icon.face-id" : "com.apple.graphic-icon.touch-id",
-                description: "\(UIDevice.PearlIDCapability ? "PASSCODE_PLACARD_SUBTITLE_FACE_ID".localized(path: path, table: passcode).replacing("helpkit://open", with: "pref://helpkit") : "PASSCODE_PLACARD_SUBTITLE_TOUCH_ID".localized(path: path, table: passcode).replacing("helpkit://open", with: "pref://helpkit"))",
+                description: description,
                 isVisible: $titleVisible
             )
             
@@ -199,38 +204,41 @@ struct BiometricPasscodeView: View {
             }
         }
         .onOpenURL { url in
-            if url.absoluteString.hasPrefix("pref://helpkit") {
+            if url.absoluteString.hasPrefix("pref") {
                 showingHelpSheet = true
             }
         }
         .sheet(isPresented: $showingHelpSheet) {
             HelpKitView(
                 topicID: UIDevice.iPhone
-                ? UIDevice.PearlIDCapability ? "iph6d162927a" : "iph672384a0b"
-                : UIDevice.PearlIDCapability ? "ipad66441e44" : "ipadcb11e17d"
+                    ? UIDevice.PearlIDCapability ? "iph6d162927a" : "iph672384a0b"
+                    : UIDevice.PearlIDCapability ? "ipad66441e44" : "ipadcb11e17d"
             )
             .ignoresSafeArea(edges: .bottom)
             .interactiveDismissDisabled()
         }
         .sheet(isPresented: $showingPrivacySheet) {
             OnBoardingKitView(bundleID: UIDevice.PearlIDCapability
-                              ? "com.apple.onboarding.faceid"
-                              : "com.apple.onboarding.touchid"
+                ? "com.apple.onboarding.faceid"
+                : "com.apple.onboarding.touchid"
             )
             .ignoresSafeArea()
         }
         .fullScreenCover(isPresented: $showingPearlSetupPopover) {
             NavigationStack {
                 // BiometricKitUI is not available in preview/simulator
-                CustomViewController("/System/Library/PrivateFrameworks/BiometricKitUI.framework/BiometricKitUI", controller: "BKUIPearlEnrollController")
-                    .ignoresSafeArea()
-                    .toolbar {
-                        ToolbarItem(placement: .topBarLeading) {
-                            Button("Back", systemImage: "chevron.left", role: .close) {
-                                showingPearlSetupPopover.toggle()
-                            }
+                CustomViewController(
+                    "/System/Library/PrivateFrameworks/BiometricKitUI.framework/BiometricKitUI",
+                    controller: "BKUIPearlEnrollController"
+                )
+                .ignoresSafeArea()
+                .toolbar {
+                    ToolbarItem(placement: .topBarLeading) {
+                        Button("Back", systemImage: "chevron.left", role: .close) {
+                            showingPearlSetupPopover.toggle()
                         }
                     }
+                }
             }
         }
     }
