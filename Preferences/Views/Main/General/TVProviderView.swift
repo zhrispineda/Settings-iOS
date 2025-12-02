@@ -7,32 +7,6 @@
 
 import SwiftUI
 
-struct StorefrontInfo: Codable {
-    let sortOrdinal: Int?
-    let isFeatured: Bool?
-}
-
-struct ProviderAttributes: Codable {
-    let name: String
-    let supportedStorefronts: [String: StorefrontInfo]?
-}
-
-struct ProviderItem: Codable {
-    let id: String
-    let attributes: ProviderAttributes
-}
-
-struct APIResponse: Codable {
-    let data: [ProviderItem]
-}
-
-struct ProviderData {
-    let id: String
-    let name: String
-    let sortOrdinal: Int?
-    let isFeatured: Bool?
-}
-
 struct TVProviderView: View {
     @State private var allProviders: [ProviderData] = []
     @State private var errorMessage: String?
@@ -106,21 +80,18 @@ struct TVProviderView: View {
                     Button("REGIONS_PICKER_OTHER_REGIONS_ROW_TITLE".localized(path: path)) {}
                         .foregroundStyle(.primary)
                 } footer: {
-                    Text("IDENTITY_PROVIDER_PICKER_SETTINGS_FOOTER".localized(path: path))
-                }
-                
-                Section {} footer: {
-                    Text("[\("BUTTON_TITLE".localized(path: privacyPath, table: "TVProvider"))](pref://)")
+                    PSFooterHyperlinkView(
+                        footerText: "\("IDENTITY_PROVIDER_PICKER_SETTINGS_FOOTER".localized(path: path))\n\n\("BUTTON_TITLE".localized(path: privacyPath, table: "TVProvider"))\n",
+                        linkText: "BUTTON_TITLE".localized(path: privacyPath, table: "TVProvider"),
+                        onLinkTap: {
+                            showingSheet = true
+                        }
+                    )
                 }
             }
             .searchable(text: $searchable, placement: .toolbar)
             .searchPresentationToolbarBehavior(.avoidHidingContent)
             .scrollIndicators(.hidden)
-            .onOpenURL { url in
-                if url.absoluteString == "pref://" {
-                    showingSheet = true
-                }
-            }
             .sheet(isPresented: $showingSheet) {
                 OnBoardingKitView(bundleID: "com.apple.onboarding.tvprovider")
                     .ignoresSafeArea()
@@ -169,6 +140,32 @@ struct TVProviderView: View {
             SettingsLogger.error(message)
         }
     }
+}
+
+struct StorefrontInfo: Codable {
+    let sortOrdinal: Int?
+    let isFeatured: Bool?
+}
+
+struct ProviderAttributes: Codable {
+    let name: String
+    let supportedStorefronts: [String: StorefrontInfo]?
+}
+
+struct ProviderItem: Codable {
+    let id: String
+    let attributes: ProviderAttributes
+}
+
+struct APIResponse: Codable {
+    let data: [ProviderItem]
+}
+
+struct ProviderData {
+    let id: String
+    let name: String
+    let sortOrdinal: Int?
+    let isFeatured: Bool?
 }
 
 #Preview {
