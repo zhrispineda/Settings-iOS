@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MessagesView: View {
     var body: some View {
-        BundleControllerView(
+        ControllerBridgeView(
             "/System/Library/PrivateFrameworks/CommunicationsSetupUI.framework/CommunicationsSetupUI",
             controller: "CKSettingsMessagesController",
             title: "MESSAGES".localized(

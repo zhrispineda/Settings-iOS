@@ -115,7 +115,7 @@ struct ScreenTimeView: View {
                     "CommunicationSafetyTitle".localized(path: path),
                     icon: "com.apple.graphic-icon.communication-safety",
                     subtitle: "CommunicationSafetyOffSubtitle".localized(path: path),
-                    destination: BundleControllerView(
+                    destination: ControllerBridgeView(
                         "\(path)/ScreenTimeSettingsUI",
                         controller: "STCommunicationSafetyListController",
                         title: "CommunicationSafetyTitle".localized(path: path)

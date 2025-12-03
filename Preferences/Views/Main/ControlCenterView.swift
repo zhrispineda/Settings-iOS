@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ControlCenterView: View {
     var body: some View {
-        BundleControllerView(
+        ControllerBridgeView(
             "ControlCenterSettings",
             controller: "ControlCenterSettingsViewController",
             title: "Control Center"

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FitnessView: View {
     var body: some View {
-        BundleControllerView(
+        ControllerBridgeView(
             "FitnessSettings",
             controller: "FitnessSettingsController",
             title: "Fitness"

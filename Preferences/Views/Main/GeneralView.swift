@@ -39,7 +39,7 @@ struct GeneralView: View {
                         "DEVICE_STORAGE".localized(path: path, table: table),
                         icon: "com.apple.graphic-icon.external-drive"
                     ) {
-                        BundleControllerView(
+                        ControllerBridgeView(
                             "StorageSettingsUI",
                             controller: "StorageSettingsUIWrapper",
                             title: "DEVICE_STORAGE".localized(path: path, table: table)
@@ -69,7 +69,7 @@ struct GeneralView: View {
                         "CONTINUITY".localized(path: path, table: table),
                         icon: "com.apple.graphic-icon.airplay-video"
                     ) {
-                        BundleControllerView(
+                        ControllerBridgeView(
                             "AirPlayAndHandoffSettings",
                             controller: "AirPlayAndHandoffSettings.AirPlayAndHandoffSettingsRoot",
                             title: "CONTINUITY".localized(path: path, table: table)
@@ -80,7 +80,7 @@ struct GeneralView: View {
                             "PiP".localized(path: path, table: table),
                             icon: "com.apple.graphic-icon.picture-in-picture"
                         ) {
-                            BundleControllerView(
+                            ControllerBridgeView(
                                 "PictureInPictureSettings",
                                 controller: "PictureInPictureSettings",
                                 title: "PiP".localized(path: path, table: table)
@@ -96,7 +96,7 @@ struct GeneralView: View {
                         "HQLR_STATUSBAR_TAPPED_ALERT_TITLE".localized(path: "/System/Library/PreferenceBundles/ReplayKitLocalCaptureSettings.bundle"),
                         icon: "com.apple.graphic-icon.localcapture"
                     ) {
-                        BundleControllerView(
+                        ControllerBridgeView(
                             "ReplayKitLocalCaptureSettings",
                             controller: "LocalCaptureSettingsController",
                             title: "HQLR_STATUSBAR_TAPPED_ALERT_TITLE".localized(path: "/System/Library/PreferenceBundles/ReplayKitLocalCaptureSettings.bundle")
@@ -107,7 +107,7 @@ struct GeneralView: View {
                             "CARPLAY".localized(path: path, table: table),
                             icon: "com.apple.graphic-icon.carplay"
                         ) {
-                            BundleControllerView(
+                            ControllerBridgeView(
                                 "CarKitSettings",
                                 controller: "CRSettingsController",
                                 title: "CARPLAY".localized(path: path, table: table)
@@ -166,7 +166,7 @@ struct GeneralView: View {
                     "INTERNATIONAL".localized(path: path, table: table),
                     icon: "com.apple.graphic-icon.language"
                 ) {
-                    BundleControllerView(
+                    ControllerBridgeView(
                         "InternationalSettings",
                         controller: "InternationalSettingsController",
                         title: "INTERNATIONAL".localized(path: path, table: table)
@@ -198,7 +198,7 @@ struct GeneralView: View {
                         "LEGAL_AND_REGULATORY_TITLE".localized(path: path, table: table),
                         icon: "com.apple.graphic-icon.legal-and-regulatory"
                     ) {
-                        BundleControllerView(
+                        ControllerBridgeView(
                             "LegalAndRegulatorySettings",
                             controller: "LegalAndRegulatorySettings.LegalAndRegulatorySettingsRoot",
                             title: "LEGAL_AND_REGULATORY_TITLE".localized(path: path, table: table)
@@ -210,7 +210,7 @@ struct GeneralView: View {
                     SLink(
                         "TRANSFER_OR_RESET_TITLE".localized(path: path, table: table),
                         icon: UIDevice.iPhone ? "com.apple.graphic-icon.transfer-or-reset-iphone" : "com.apple.graphic-icon.transfer-or-reset-ipad") {
-                        BundleControllerView(
+                        ControllerBridgeView(
                             "\(path)/GeneralSettingsUI",
                             controller: "PSGTransferOrResetController",
                             title: "TRANSFER_OR_RESET_TITLE".localized(path: path, table: table)

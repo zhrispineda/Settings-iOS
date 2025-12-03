@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ActionButtonView: View {
     var body: some View {
-        BundleControllerView(
+        ControllerBridgeView(
             "ActionButtonSettings",
             controller: "ActionButtonSettings"
         )

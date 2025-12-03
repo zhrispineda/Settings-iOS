@@ -11,7 +11,7 @@ struct TranslateView: View {
     private let path = "/System/Library/PrivateFrameworks/TranslationUI.framework"
     
     var body: some View {
-        BundleControllerView(
+        ControllerBridgeView(
             "\(path)/TranslationUI",
             controller: "LTUITranslateSettingsController",
             title: "TRANSLATE".localized(path: path)

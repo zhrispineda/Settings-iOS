@@ -140,7 +140,7 @@ struct CameraView: View {
                     NavigationLink(
                         "CAM_PRESERVE_SETTINGS_TITLE".localized(path: path, table: table)
                     ) {
-                        BundleControllerView(
+                        ControllerBridgeView(
                             "CameraSettings",
                             controller: "CameraPreserveSettingsController",
                             title: "CAM_PRESERVE_SETTINGS_TITLE".localized(path: path, table: table)
@@ -165,7 +165,7 @@ struct CameraView: View {
                     NavigationLink(
                         "CAM_PRESERVE_SETTINGS_TITLE".localized(path: path, table: table)
                     ) {
-                        BundleControllerView(
+                        ControllerBridgeView(
                             "CameraSettings",
                             controller: "CameraPreserveSettingsController",
                             title: "CAM_PRESERVE_SETTINGS_TITLE".localized(path: path, table: table)
@@ -197,7 +197,7 @@ struct CameraView: View {
                 NavigationLink(
                     "CAM_INDICATORS_TITLE".localized(path: path, table: table)
                 ) {
-                    BundleControllerView(
+                    ControllerBridgeView(
                         "CameraSettings",
                         controller: "CameraIndicatorSettingsController",
                         title: "CAM_INDICATORS_TITLE".localized(path: path, table: table)
@@ -370,7 +370,7 @@ struct CameraView: View {
         }
         .fullScreenCover(isPresented: $showingPhotographicStylesView) {
             NavigationStack {
-                BundleControllerView(
+                ControllerBridgeView(
                     "/System/Library/PrivateFrameworks/CameraUI.framework/CameraUI",
                     controller: UIDevice.PhotographicStylesCapability
                         ? "CAMSemanticStyleSettingsController"

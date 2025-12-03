@@ -177,7 +177,7 @@ struct BooksView: View {
             }
             
             NavigationLink("Acknowledgements".localized(path: path, table: table)) {
-                BundleControllerView(
+                ControllerBridgeView(
                     "iBooksSettings",
                     controller: "BKSettingsAcknowledgementsController",
                     title: "Acknowledgements".localized(path: path, table: table)

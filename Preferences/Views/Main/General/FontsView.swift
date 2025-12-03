@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FontsView: View {
     var body: some View {
-        BundleControllerView(
+        ControllerBridgeView(
             "FontSettings",
             controller: "TopNavigationController",
             title: "Fonts".localized(path: "/System/Library/PreferenceBundles/FontSettings.bundle")

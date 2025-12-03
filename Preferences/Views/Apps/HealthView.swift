@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HealthView: View {
     var body: some View {
-        BundleControllerView(
+        ControllerBridgeView(
             "HealthSettings",
             controller: "HKHealthSettingsController",
             title: "HEALTH".localized(

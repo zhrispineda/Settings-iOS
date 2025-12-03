@@ -9,7 +9,7 @@ import SwiftUI
 
 struct GameCenterView: View {
     var body: some View {
-        BundleControllerView(
+        ControllerBridgeView(
             "/System/Library/PrivateFrameworks/GameCenterUI.framework/GameCenterUI",
             controller: "GameCenterUI.SettingsContainerViewController",
             title: "Game Center"

@@ -12,7 +12,7 @@ struct SettingsSearchView: View {
         Section("Suggestions") {
             Group {
                 NavigationLink {
-                    BundleControllerView("/System/Library/PrivateFrameworks/Settings/SoundsAndHapticsSettings.framework/SoundsAndHapticsSettings", controller: "SHSSoundsPrefController", title: "Sounds & Haptics")
+                    ControllerBridgeView("/System/Library/PrivateFrameworks/Settings/SoundsAndHapticsSettings.framework/SoundsAndHapticsSettings", controller: "SHSSoundsPrefController", title: "Sounds & Haptics")
                 } label: {
                     SLabel("Sounds & Haptics", icon: "com.apple.graphic-icon.sound")
                 }

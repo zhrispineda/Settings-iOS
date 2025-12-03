@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RemindersView: View {
     var body: some View {
-        BundleControllerView(
+        ControllerBridgeView(
             "RemindersSettings",
             controller: "REMSettingsController",
             title: "Reminders".localized(path: "/System/Library/PreferenceBundles/RemindersSettings.bundle")

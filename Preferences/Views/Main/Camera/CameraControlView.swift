@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CameraControlView: View {
     var body: some View {
-        BundleControllerView(
+        ControllerBridgeView(
             "CameraSettings",
             controller: "CameraButtonSettingsController",
             title: "CAMERA_BUTTON_TITLE".localized(

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SoundsAndHapticsView: View {
     var body: some View {
-        BundleControllerView(
+        ControllerBridgeView(
             "/System/Library/PrivateFrameworks/Settings/SoundsAndHapticsSettings.framework/SoundsAndHapticsSettings",
             controller: "SHSSoundsPrefController",
             title: UIDevice.iPhone ? "Sounds & Haptics" : "Sounds"

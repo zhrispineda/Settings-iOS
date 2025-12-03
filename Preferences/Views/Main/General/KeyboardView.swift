@@ -9,7 +9,7 @@ import SwiftUI
 
 struct KeyboardView: View {
     var body: some View {
-        BundleControllerView(
+        ControllerBridgeView(
             "KeyboardSettings",
             controller: "KeyboardController",
             title: "KEYBOARDS_SHORT".localized(

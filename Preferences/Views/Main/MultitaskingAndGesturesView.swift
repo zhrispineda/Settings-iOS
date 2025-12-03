@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MultitaskingAndGesturesView: View {
     var body: some View {
-        BundleControllerView(
+        ControllerBridgeView(
                 "MultitaskingAndGesturesSettings",
                 controller: "MultitaskingAndGesturesSettings",
                 title: "Multitasking & Gestures"

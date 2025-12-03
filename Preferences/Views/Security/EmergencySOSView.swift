@@ -9,7 +9,7 @@ import SwiftUI
 
 struct EmergencySOSView: View {
     var body: some View {
-        BundleControllerView(
+        ControllerBridgeView(
             "SOSSettings",
             controller: "SOSSettingsController",
             title: "Emergency SOS"

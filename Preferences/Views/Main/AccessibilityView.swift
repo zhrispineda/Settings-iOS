@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AccessibilityView: View {
     var body: some View {
-        BundleControllerView(
+        ControllerBridgeView(
             "AccessibilitySettings",
             controller: "AccessibilitySettingsController",
             title: "Accessibility"

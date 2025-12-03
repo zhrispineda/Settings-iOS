@@ -11,7 +11,7 @@ struct SafetyCheckView: View {
     let path = "/System/Library/PreferenceBundles/DigitalSeparationSettings.bundle"
     
     var body: some View {
-        BundleControllerView(
+        ControllerBridgeView(
             "DigitalSeparationSettings",
             controller: "DSSafetyCheckWelcomeController",
             title: "SAFETY_CHECK".localized(path: path)

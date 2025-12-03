@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AccessoryDeveloperView: View {
     var body: some View {
-        BundleControllerView(
+        ControllerBridgeView(
             "AccessoryDeveloperSettings",
             controller: "AccessoryDeveloperSettingsController",
             title: "Accessory Developer"

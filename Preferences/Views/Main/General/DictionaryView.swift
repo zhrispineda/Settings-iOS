@@ -11,7 +11,7 @@ struct DictionaryView: View {
     let path = "/System/Library/PreferenceBundles/DictionarySettings.bundle"
     
     var body: some View {
-        BundleControllerView(
+        ControllerBridgeView(
             "\(path)/DictionarySettings",
             controller: "DictionarySettingsController",
             title: "Dictionary".localized(path: path, table: "DictionarySettings")

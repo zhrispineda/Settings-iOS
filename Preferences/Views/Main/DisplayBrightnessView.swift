@@ -114,7 +114,7 @@ struct DisplayBrightnessView: View {
                         "APPEARANCE_OPTIONS".localized(path: path, table: table),
                         status: "LIGHT_UNTIL_SUNSET".localized(path: path, table: table)
                     ) {
-                        BundleControllerView(
+                        ControllerBridgeView(
                             "/System/Library/PrivateFrameworks/Settings/DisplayAndBrightnessSettings.framework/DisplayAndBrightnessSettings",
                             controller: "DBSDeviceAppearanceScheduleController",
                             title: "APPEARANCE_SCHEDULE".localized(
@@ -134,7 +134,7 @@ struct DisplayBrightnessView: View {
                     "LIQUID_GLASS".localized(path: path, table: table),
                     status: "CLEAR".localized(path: path, table: table)
                 ) {
-                    BundleControllerView(
+                    ControllerBridgeView(
                         "/System/Library/PrivateFrameworks/Settings/DisplayAndBrightnessSettings.framework/DisplayAndBrightnessSettings",
                         controller: "DBSLiquidGlassController",
                         title: "LIQUID_GLASS".localized(path: path, table: table)
@@ -148,7 +148,7 @@ struct DisplayBrightnessView: View {
             Section {
                 NavigationLink(
                     "TEXT_SIZE".localized(path: path, table: table),
-                    destination: BundleControllerView(
+                    destination: ControllerBridgeView(
                         "/System/Library/PrivateFrameworks/Settings/DisplayAndBrightnessSettings.framework/DisplayAndBrightnessSettings",
                         controller: "DBSLargeTextController",
                         title: "TEXT_SIZE".localized(path: path, table: table)
@@ -231,7 +231,7 @@ struct DisplayBrightnessView: View {
                         "ALWAYS_ON_DISPLAY".localized(path: path, table: table),
                         status: "ALWAYS_ON_ENABLED".localized(path: path, table: table)
                     ) {
-                        BundleControllerView(
+                        ControllerBridgeView(
                             "/System/Library/PrivateFrameworks/Settings/DisplayAndBrightnessSettings.framework/DisplayAndBrightnessSettings",
                             controller: "DBSAlwaysOnViewController",
                             title: "ALWAYS_ON_DISPLAY".localized(path: path, table: table)
@@ -248,7 +248,7 @@ struct DisplayBrightnessView: View {
                     "VIEW".localized(path: path, table: table),
                     status: "DEFAULT".localized(path: "/System/Library/PreferenceBundles/AccessibilitySettings.bundle", table: "Accessibility")
                 ) {
-                    BundleControllerView(
+                    ControllerBridgeView(
                         "/System/Library/PrivateFrameworks/Settings/DisplayAndBrightnessSettings.framework/DisplayAndBrightnessSettings",
                         controller: "DBSDisplayZoomSelectionListController",
                         title: "VIEW".localized(path: path, table: table)
@@ -263,7 +263,7 @@ struct DisplayBrightnessView: View {
             if UIDevice.ReferenceModeCapability {
                 // MARK: Reference Mode
                 NavigationLink("ADVANCED".localized(path: path, table: table)) {
-                    BundleControllerView(
+                    ControllerBridgeView(
                         "/System/Library/PrivateFrameworks/Settings/DisplayAndBrightnessSettings.framework/DisplayAndBrightnessSettings",
                         controller: "DBSReferenceAndCalibrationController",
                         title: "ADVANCED".localized(path: path, table: table)

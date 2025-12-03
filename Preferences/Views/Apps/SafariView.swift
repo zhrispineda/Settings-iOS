@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SafariView: View {
     var body: some View {
-        BundleControllerView(
+        ControllerBridgeView(
             "MobileSafariSettings",
             controller: "SafariSettingsController",
             title: "Safari"

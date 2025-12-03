@@ -9,7 +9,7 @@ import SwiftUI
 
 struct iMessageDebuggingView: View {
     var body: some View {
-        BundleControllerView(
+        ControllerBridgeView(
             "MadridExternalSettings",
             controller: "MadridExternalListController",
             title: "iMessage Debugging"

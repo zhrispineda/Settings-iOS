@@ -9,7 +9,7 @@ import SwiftUI
 
 struct FaceTimeDebuggingView: View {
     var body: some View {
-        BundleControllerView(
+        ControllerBridgeView(
             "ConferenceExternalSettings",
             controller: "CNFExternalListController",
             title: "FaceTime Debugging"

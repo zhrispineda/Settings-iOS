@@ -13,7 +13,7 @@ import SwiftUI
 /// **Workaround:** Use the app in Simulator or a physical device.
 struct PhotosView: View {
     var body: some View {
-        BundleControllerView(
+        ControllerBridgeView(
             "MobileSlideShowSettings",
             controller: "SettingsBaseController",
             title: "PHOTOS_SETTINGS_TITLE".localized(

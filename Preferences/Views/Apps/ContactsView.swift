@@ -13,7 +13,7 @@ import SwiftUI
 /// **Workaround:** Use the app in Simulator or a physical device.
 struct ContactsView: View {
     var body: some View {
-        BundleControllerView(
+        ControllerBridgeView(
             "ContactsSettings",
             controller: "ContactsSettingsPlugin",
             title: "CONTACTS".localized(

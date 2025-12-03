@@ -33,7 +33,7 @@ struct AboutView: View {
                 SettingsLink(
                     "OS Version".localized(path: path),
                     status: UIDevice().systemVersion,
-                    destination: BundleControllerView(
+                    destination: ControllerBridgeView(
                         "/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework/GeneralSettingsUI",
                         controller: "PSGSoftwareVersionController",
                         title: "OS Version".localized(path: path)
@@ -115,7 +115,7 @@ struct AboutView: View {
             }
             
             Section {
-                NavigationLink("CERT_TRUST_SETTINGS".localized(path: path), destination: BundleControllerView("/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework/GeneralSettingsUI", controller: "PSGCertTrustSettings", title: "CERT_TRUST_SETTINGS".localized(path: path)))
+                NavigationLink("CERT_TRUST_SETTINGS".localized(path: path), destination: ControllerBridgeView("/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework/GeneralSettingsUI", controller: "PSGCertTrustSettings", title: "CERT_TRUST_SETTINGS".localized(path: path)))
             }
         }
     }

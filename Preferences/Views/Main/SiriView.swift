@@ -144,7 +144,7 @@ struct SiriView: View {
                     .foregroundStyle(.primary)
                 }
                 NavigationLink("ASSISTANT_HISTORY_LABEL".localized(path: path, table: table)) {
-                    BundleControllerView(
+                    ControllerBridgeView(
                         "/System/Library/PrivateFrameworks/AssistantSettingsSupport.framework/AssistantSettingsSupport",
                         controller: "AssistantHistoryViewController",
                         title: "ASSISTANT_HISTORY_LABEL", table: table
@@ -193,7 +193,7 @@ struct SiriView: View {
                 SLink(
                     "APP_CLIPS".localized(path: path, table: table),
                     icon: "com.apple.graphic-icon.app-clips",
-                    destination: BundleControllerView(
+                    destination: ControllerBridgeView(
                         "/System/Library/PrivateFrameworks/AssistantSettingsSupport.framework/AssistantSettingsSupport",
                         controller: "AssistantAppClipSettingsController",
                         title: "APP_CLIPS",

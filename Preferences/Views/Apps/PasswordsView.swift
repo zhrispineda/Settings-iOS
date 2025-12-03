@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PasswordsView: View {
     var body: some View {
-        BundleControllerView(
+        ControllerBridgeView(
             "PasswordsSettings",
             controller: "PMSettingsController",
             title: "Passwords (app name)".localized(path: "/System/Library/PreferenceBundles/PasswordsSettings.bundle")

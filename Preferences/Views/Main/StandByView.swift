@@ -9,7 +9,7 @@ import SwiftUI
 
 struct StandByView: View {
     var body: some View {
-        BundleControllerView(
+        ControllerBridgeView(
             "AmbientSettings",
             controller: "AMAmbientSettingsDetailController",
             title: "StandBy"

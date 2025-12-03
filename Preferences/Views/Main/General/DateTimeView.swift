@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DateTimeView: View {
     var body: some View {
-        BundleControllerView(
+        ControllerBridgeView(
             "DateAndTime",
             controller: "DateAndTime.DateAndTimeSettingsController",
             title: "Date & Time".localized(path: "/System/Library/PreferenceBundles/DateAndTime.bundle")

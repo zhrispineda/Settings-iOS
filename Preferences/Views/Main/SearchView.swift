@@ -11,7 +11,7 @@ struct SearchView: View {
     private let path = "/System/Library/PrivateFrameworks/SpotlightSettingsSupport.framework"
     
     var body: some View {
-        BundleControllerView(
+        ControllerBridgeView(
             "\(path)/SpotlightSettingsSupport",
             controller: "SpotlightSettingsController",
             title: "SEARCH".localized(path: path, table: "SpotlightSettings")

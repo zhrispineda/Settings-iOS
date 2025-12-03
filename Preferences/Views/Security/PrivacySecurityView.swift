@@ -46,7 +46,7 @@ struct PrivacySecurityView: View {
                     "Calendars".localized(path: privacy),
                     icon: "com.apple.mobilecal",
                     subtitle: "None".localized(path: privacy),
-                    destination: BundleControllerView(
+                    destination: ControllerBridgeView(
                         "/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework/PrivacySettingsUI",
                         controller: "PUICalendarPrivacyController",
                         title: "Calendars".localized(path: privacy)
@@ -56,7 +56,7 @@ struct PrivacySecurityView: View {
                     "Contacts".localized(path: privacy),
                     icon: "com.apple.MobileAddressBook",
                     subtitle: "None".localized(path: privacy),
-                    destination: BundleControllerView(
+                    destination: ControllerBridgeView(
                         "/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework/PrivacySettingsUI",
                         controller: "PUIContactsPrivacyController",
                         title: "Contacts".localized(path: privacy)
@@ -66,7 +66,7 @@ struct PrivacySecurityView: View {
                     "Files & Folders".localized(path: privacy),
                     icon: "com.apple.DocumentsApp",
                     subtitle: "None".localized(path: privacy),
-                    destination: BundleControllerView(
+                    destination: ControllerBridgeView(
                         "/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework/PrivacySettingsUI",
                         controller: "PUIFileAccessController",
                         title: "Files & Folders".localized(path: privacy)
@@ -82,7 +82,7 @@ struct PrivacySecurityView: View {
                     "Health".localized(path: privacy),
                     icon: "com.apple.Health",
                     subtitle: "None".localized(path: privacy),
-                    destination: BundleControllerView(
+                    destination: ControllerBridgeView(
                         "/System/Library/PreferenceBundles/Privacy/HealthPrivacySettings.bundle/HealthPrivacySettings",
                         controller: "HKHealthPrivacySettingsSourcesViewController",
                         title: "Health".localized(path: privacy)
@@ -110,7 +110,7 @@ struct PrivacySecurityView: View {
                     "Photos".localized(path: privacy),
                     icon: "com.apple.mobileslideshow",
                     subtitle: "None".localized(path: privacy),
-                    destination: BundleControllerView(
+                    destination: ControllerBridgeView(
                         "/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework/PrivacySettingsUI",
                         controller: "PUIPhotosPrivacyController",
                         title: "Photos".localized(path: privacy)
@@ -139,7 +139,7 @@ struct PrivacySecurityView: View {
                         "Accessories".localized(path: privacy),
                         icon: "com.apple.graphic-icon.accessories",
                         status: "0",
-                        destination: BundleControllerView(
+                        destination: ControllerBridgeView(
                             "/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework/PrivacySettingsUI",
                             controller: "PUIAccessoriesController",
                             title: "Accessories".localized(path: privacy)
@@ -162,7 +162,7 @@ struct PrivacySecurityView: View {
                     "Critical Messages".localized(path: privacy),
                     icon: "com.apple.graphic-icon.critical-messages",
                     status: "0",
-                    destination: BundleControllerView(
+                    destination: ControllerBridgeView(
                         "/System/Library/PrivateFrameworks/MessagesSettingsUI.framework/MessagesSettingsUI",
                         controller: "CKSettingsCriticalMessagesViewController",
                         title: "Critical Messages".localized(path: privacy)
@@ -172,7 +172,7 @@ struct PrivacySecurityView: View {
                     "Local Network".localized(path: privacy),
                     icon: "com.apple.graphic-icon.local-network",
                     status: "0",
-                    destination: BundleControllerView(
+                    destination: ControllerBridgeView(
                         "/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework/PrivacySettingsUI",
                         controller: "PUINetworkController",
                         title: "Local Network".localized(path: privacy)
@@ -201,7 +201,7 @@ struct PrivacySecurityView: View {
                         "Research Sensor & Usage Data".localized(path: privacy),
                         icon: "com.apple.graphic-icon.research-sensor-and-usage-data",
                         status: "0",
-                        destination: BundleControllerView(
+                        destination: ControllerBridgeView(
                             "/System/Library/PreferenceBundles/Privacy/SensorKitPrivacySettings.bundle/SensorKitPrivacySettings",
                             controller: "SensorKitPrivacySettingsController",
                             title: "Research Sensor & Usage Data".localized(path: privacy)
@@ -254,7 +254,7 @@ struct PrivacySecurityView: View {
                     "Sensitive Content Warning".localized(path: privacy),
                     icon: "com.apple.graphic-icon.sensitive-media-check",
                     status: "Off".localized(path: privacy),
-                    destination: BundleControllerView(
+                    destination: ControllerBridgeView(
                         "CommunicationSafetySettings",
                         controller: "CommunicationSafetySettings",
                         title: "Sensitive Content Warning".localized(path: privacy)
@@ -269,7 +269,7 @@ struct PrivacySecurityView: View {
                 SLink(
                     "Analytics & Improvements".localized(path: privacy),
                     icon: "com.apple.graphic-icon.analytics-and-improvements") {
-                    BundleControllerView(
+                    ControllerBridgeView(
                         "/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework/PrivacySettingsUI",
                         controller: "PUIProblemReportingController",
                         title: "Analytics & Improvements".localized(path: privacy)
@@ -289,7 +289,7 @@ struct PrivacySecurityView: View {
                         "App Privacy Report".localized(path: privacy),
                         icon: "com.apple.graphic-icon.app-privacy-report",
                         status: "Off".localized(path: privacy),
-                        destination: BundleControllerView(
+                        destination: ControllerBridgeView(
                             "/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework/PrivacySettingsUI",
                             controller: "PUIReportController",
                             title: "App Privacy Report".localized(path: privacy)
@@ -313,7 +313,7 @@ struct PrivacySecurityView: View {
                             "Developer Mode".localized(path: privacy),
                             icon: "com.apple.graphic-icon.developer-tools",
                             status: "Off".localized(path: privacy),
-                            destination: BundleControllerView(
+                            destination: ControllerBridgeView(
                                 "SecuritySettings",
                                 controller: "DeveloperModeViewController",
                                 title: "Developer Mode".localized(path: privacy)
@@ -340,7 +340,7 @@ struct PrivacySecurityView: View {
                         "Lockdown Mode".localized(path: privacy),
                         icon: "com.apple.graphic-icon.privacy",
                         status: "Off".localized(path: privacy),
-                        destination: BundleControllerView(
+                        destination: ControllerBridgeView(
                             "/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework/PrivacySettingsUI",
                             controller: "PUILockdownModeController",
                             title: "Lockdown Mode".localized(path: privacy)

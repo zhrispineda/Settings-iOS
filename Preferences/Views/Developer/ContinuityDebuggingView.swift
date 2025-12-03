@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContinuityDebuggingView: View {
     var body: some View {
-        BundleControllerView(
+        ControllerBridgeView(
             "IDSExternalSettings",
             controller: "IDSExternalListController",
             title: "Continuity Debugging"

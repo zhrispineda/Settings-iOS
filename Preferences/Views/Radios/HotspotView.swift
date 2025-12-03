@@ -17,7 +17,7 @@ import SwiftUI
 /// If the system language is set to English, it will cause `.localizedString` to fall back to the last item. (`ur.lproj`, Urdu in this case)
 struct HotspotView: View {
     var body: some View {
-        BundleControllerView(
+        ControllerBridgeView(
             "WirelessModemSettings",
             controller: "WirelessModemController",
             title: "MAIN_SPEC_PROVISIONED".localized(

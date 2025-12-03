@@ -9,7 +9,7 @@ import SwiftUI
 
 struct WallpaperView: View {
     var body: some View {
-        BundleControllerView(
+        ControllerBridgeView(
             "WallpaperSettings",
             controller: "WallpaperSettingsRootViewController",
             title: "Wallpaper"

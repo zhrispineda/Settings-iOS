@@ -11,7 +11,7 @@ struct VPNDeviceManagementView: View {
     let path = "/System/Library/PrivateFrameworks/ManagedConfigurationUI.framework"
 
     var body: some View {
-        BundleControllerView(
+        ControllerBridgeView(
             "\(path)/ManagedConfigurationUI",
             controller: "MCUIListController",
             title: "DEVICE_MANAGEMENT_VPN".localized(

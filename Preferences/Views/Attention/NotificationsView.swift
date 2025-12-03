@@ -123,7 +123,7 @@ struct NotificationsView: View {
                         "PRIORITIZE_NOTIFICATIONS".localized(path: path, table: table),
                         status: "OFF".localized(path: path, table: table)
                     ) {
-                        BundleControllerView(
+                        ControllerBridgeView(
                             "/System/Library/PreferenceBundles/NotificationsSettings.bundle/NotificationsSettings",
                             controller: "NCPriorityNotificationsDetailController",
                             title: "PRIORITIZE_NOTIFICATIONS".localized(path: path, table: table)
@@ -132,7 +132,7 @@ struct NotificationsView: View {
                     SettingsLink(
                         "SUMMARIZE_NOTIFICATIONS".localized(path: path, table: table),
                         status: "OFF".localized(path: path, table: table),
-                        destination: BundleControllerView(
+                        destination: ControllerBridgeView(
                             "NotificationsSettings",
                             controller: "NCSummarizePreviewsDetailController",
                             title: "SUMMARIZE_NOTIFICATIONS".localized(path: path, table: table)

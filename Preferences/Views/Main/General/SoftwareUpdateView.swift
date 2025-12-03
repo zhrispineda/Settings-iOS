@@ -72,7 +72,7 @@ struct SoftwareUpdateView: View {
                                 Text("\("\(UIDevice.iPhone ? "OS_PLATFORM_IPHONE" : "OS_PLATFORM_IPAD")".localized(path: path, table: table)) \(UIDevice().systemVersion)")
                             } actions: {
                                 NavigationLink("More Details".localized(path: update)) {
-                                    BundleControllerView(
+                                    ControllerBridgeView(
                                         "\(general)/GeneralSettingsUI",
                                         controller: "PSGSoftwareVersionController",
                                         title: "OS Version".localized(path: general)

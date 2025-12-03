@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CalendarView: View {
     var body: some View {
-        BundleControllerView(
+        ControllerBridgeView(
             "MobileCalSettings",
             controller: "CalendarSettingsPlugin",
             title: "CalendarSettingsPlacard_Calendar".localized(

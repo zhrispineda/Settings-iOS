@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ShortcutsView: View {
     var body: some View {
-        BundleControllerView(
+        ControllerBridgeView(
             "ShortcutsSettings",
             controller: "WFShortcutsSettingsController",
             title: "Shortcuts".localized(path: "/System/Library/PreferenceBundles/ShortcutsSettings.bundle")
