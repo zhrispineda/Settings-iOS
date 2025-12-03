@@ -22,6 +22,17 @@ struct InternalSettingsView: View {
                 NavigationLink("Auto Bug Capture") {}
                 NavigationLink("Prototyping") {}
             }
+            
+            Section("Demo Helpers") {
+                NavigationLink("Networking") {}
+                NavigationLink("TetheredDemo") {}
+            }
+            
+            Section("SpringBoard") {
+                NavigationLink("Features") {}
+                NavigationLink("SpringBoard") {}
+                NavigationLink("Status Bar Overrides") {}
+            }
         }
     }
 }
