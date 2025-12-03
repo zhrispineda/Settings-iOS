@@ -19,9 +19,28 @@ struct SafetyCheckView: View {
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Button("QUICK_EXIT".localized(path: path)) {
-                    exit(0)
+                    prepareQuickExit()
                 }
             }
+        }
+    }
+    
+    private func prepareQuickExit() {
+        guard
+            let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+            let root = scene.windows.first?.rootViewController
+        else { return }
+
+        quickExit(in: root)
+    }
+
+    private func quickExit(in vc: UIViewController) {
+        if vc.responds(to: Selector(("quickExit"))) {
+            vc.perform(Selector(("quickExit")))
+        }
+
+        for child in vc.children {
+            quickExit(in: child)
         }
     }
 }
