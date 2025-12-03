@@ -147,7 +147,7 @@ struct SiriView: View {
                     ControllerBridgeView(
                         "/System/Library/PrivateFrameworks/AssistantSettingsSupport.framework/AssistantSettingsSupport",
                         controller: "AssistantHistoryViewController",
-                        title: "ASSISTANT_HISTORY_LABEL", table: table
+                        title: "ASSISTANT_HISTORY_LABEL".localized(path: path, table: table)
                     )
                 }
             } header: {
@@ -196,9 +196,7 @@ struct SiriView: View {
                     destination: ControllerBridgeView(
                         "/System/Library/PrivateFrameworks/AssistantSettingsSupport.framework/AssistantSettingsSupport",
                         controller: "AssistantAppClipSettingsController",
-                        title: "APP_CLIPS",
-                        path: path,
-                        table: table
+                        title: "APP_CLIPS".localized(path: path, table: table)
                     )
                 )
                 SLink("APPS_GROUP".localized(path: path, table: table), icon: "com.apple.graphic-icon.home-screen") {
