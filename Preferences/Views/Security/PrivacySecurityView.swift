@@ -127,11 +127,7 @@ struct PrivacySecurityView: View {
                         "Wallet".localized(path: privacy),
                         icon: "com.apple.Passbook",
                         subtitle: "None".localized(path: privacy),
-                        destination: BundleControllerView(
-                            "/System/Library/PreferenceBundles/Privacy/WalletPrivacySettings.bundle/WalletPrivacySettings",
-                            controller: "WalletPrivacySettings.WalletPrivacySettingsController",
-                            title: "Wallet".localized(path: privacy)
-                        )
+                        destination: AppPermissionsView(permission: "WALLET")
                     )
                 }
             }
@@ -179,7 +175,7 @@ struct PrivacySecurityView: View {
                     destination: BundleControllerView(
                         "/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework/PrivacySettingsUI",
                         controller: "PUINetworkController",
-                        title: "LOCAL_NETWORK"
+                        title: "Local Network".localized(path: privacy)
                     )
                 )
                 SLink(
@@ -273,11 +269,11 @@ struct PrivacySecurityView: View {
                 SLink(
                     "Analytics & Improvements".localized(path: privacy),
                     icon: "com.apple.graphic-icon.analytics-and-improvements") {
-                    CustomViewController(
+                    BundleControllerView(
                         "/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework/PrivacySettingsUI",
-                        controller: "PUIProblemReportingController")
-                        .ignoresSafeArea()
-                        .navigationTitle("PROBLEM_REPORTING".localized(path: privacy))
+                        controller: "PUIProblemReportingController",
+                        title: "Analytics & Improvements".localized(path: privacy)
+                    )
                 }
                 SLink(
                     "Apple Advertising".localized(path: privacy),
@@ -292,8 +288,13 @@ struct PrivacySecurityView: View {
                     SLink(
                         "App Privacy Report".localized(path: privacy),
                         icon: "com.apple.graphic-icon.app-privacy-report",
-                        status: "Off".localized(path: privacy)
-                    ) {}
+                        status: "Off".localized(path: privacy),
+                        destination: BundleControllerView(
+                            "/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework/PrivacySettingsUI",
+                            controller: "PUIReportController",
+                            title: "App Privacy Report".localized(path: privacy)
+                        )
+                    )
                     if UIDevice.IntelligenceCapability {
                         SLink(
                             "Apple Intelligence Report".localized(path: privacy),
@@ -304,15 +305,20 @@ struct PrivacySecurityView: View {
                 } header: {
                     Text("Transparency Logs".localized(path: privacy))
                 }
-                
+
                 // MARK: Security
                 Section {
                     if configuration.developerMode {
                         SLink(
                             "Developer Mode".localized(path: privacy),
                             icon: "com.apple.graphic-icon.developer-tools",
-                            status: "Off".localized(path: privacy)
-                        ) {}
+                            status: "Off".localized(path: privacy),
+                            destination: BundleControllerView(
+                                "SecuritySettings",
+                                controller: "DeveloperModeViewController",
+                                title: "Developer Mode".localized(path: privacy)
+                            )
+                        )
                     }
                     SLink(
                         "Wired Accessories".localized(path: privacy),
@@ -333,8 +339,13 @@ struct PrivacySecurityView: View {
                     SLink(
                         "Lockdown Mode".localized(path: privacy),
                         icon: "com.apple.graphic-icon.privacy",
-                        status: "Off".localized(path: privacy)
-                    ) {}
+                        status: "Off".localized(path: privacy),
+                        destination: BundleControllerView(
+                            "/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework/PrivacySettingsUI",
+                            controller: "PUILockdownModeController",
+                            title: "Lockdown Mode".localized(path: privacy)
+                        )
+                    )
                 } header: {
                     Text("Security".localized(path: privacy))
                 }
