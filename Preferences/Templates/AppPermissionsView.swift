@@ -1,8 +1,3 @@
-/*
-Abstract:
-A view for displaying options regarding Privacy & Security based on the given permission String.
-*/
-
 import SwiftUI
 
 /// A `CustomList` container for displaying options regarding Privacy & Security based on the given `permission` String.
@@ -21,31 +16,27 @@ struct AppPermissionsView: View {
     @AppStorage("PrivacyFitnessTrackingToggle") private var fitnessTracking = true
     var permission: String
     var appClipPermission = ""
-    let appClipsEligible = ["BT_PERIPHERAL", "CAMERA", "MICROPHONE"]
-    var bundle = ""
+    private let appClipsEligible = ["BT_PERIPHERAL", "CAMERA", "MICROPHONE"]
     
     // Tables
-    let table = "Privacy"
-    let privacy = "/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework"
-    let dsTable = "Dim-Sum"
-    let focusTable = "/System/Library/PreferenceBundles/FocusSettings.bundle"
-    let health = "/System/Library/PreferenceBundles/Privacy/HealthPrivacySettings.bundle"
-    let sensorkit = "/System/Library/PreferenceBundles/Privacy/SensorKitPrivacySettings.bundle"
-    let wellness = "/System/Library/PrivateFrameworks/HealthToolbox.framework"
-    let wellTable = "WellnessDashboard-Localizable"
+    private let table = "Privacy"
+    private let privacyPath = "/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework"
+    private let clipsTable = "Dim-Sum"
+    private let focusTable = "/System/Library/PreferenceBundles/FocusSettings.bundle"
+    
     var body: some View {
-        CustomList(title: permission.localized(path: privacy, table: table)) {
+        CustomList(title: permission.localized(path: privacyPath, table: table)) {
             // Primary explanation header
             switch permission {
             case "App Clips":
                 Section {} footer: {
                     if appClipPermission == "CAMERA" || permission == "CAMERA" {
-                        Text("CAMERA_HEADER".localized(path: privacy, table: table))
+                        Text("CAMERA_HEADER".localized(path: privacyPath, table: table))
                     }
                 }
             case "CAMERA":
                 Section {} footer: {
-                    Text("CAMERA_HEADER".localized(path: privacy, table: table))
+                    Text("CAMERA_HEADER".localized(path: privacyPath, table: table))
                 }
             case "FOCUS":
                 Section {} footer: {
@@ -53,9 +44,9 @@ struct AppPermissionsView: View {
                 }
             case "MOTION":
                 Section {
-                    Toggle("FITNESS_TRACKING".localized(path: privacy, table: table), isOn: $fitnessTracking)
+                    Toggle("FITNESS_TRACKING".localized(path: privacyPath, table: table), isOn: $fitnessTracking)
                 } footer: {
-                    Text("FITNESS_TRACKING_PRIVACY", tableName: table)
+                    Text("FITNESS_TRACKING_PRIVACY".localized(path: privacyPath, table: table))
                 }
             default:
                 EmptyView()
@@ -64,9 +55,12 @@ struct AppPermissionsView: View {
             // Content and footer section
             Section {
                 if appClipsEligible.contains(permission) {
-                    SLink("App Clips", icon: "com.apple.graphic-icon.app-clips", status: "0") {
-                        AppPermissionsView(permission: "App Clips", appClipPermission: permission)
-                    }
+                    SLink(
+                        "App Clips",
+                        icon: "com.apple.graphic-icon.app-clips",
+                        status: "0",
+                        destination: AppPermissionsView(permission: "App Clips", appClipPermission: permission)
+                    )
                 }
             } header: {
                 if permission == "FOCUS" {
@@ -75,22 +69,22 @@ struct AppPermissionsView: View {
             } footer: {
                 switch permission {
                 case "BT_PERIPHERAL", "CAMERA", "MEDIALIBRARY", "MICROPHONE", "MOTION", "NEARBY_INTERACTIONS", "PASSKEYS", "REMINDERS", "SPEECH_RECOGNITION", "WILLOW":
-                    Text("\(permission)_FOOTER".localized(path: privacy, table: table))
+                    Text("\(permission)_FOOTER".localized(path: privacyPath, table: table))
                 case "App Clips":
                     switch appClipPermission {
                     case "BT_PERIPHERAL":
-                        Text("BT_PERIPHERAL_CLIPS_FOOTER".localized(path: privacy, table: dsTable))
+                        Text("BT_PERIPHERAL_CLIPS_FOOTER".localized(path: privacyPath, table: clipsTable))
                     case "CAMERA":
-                        Text("CAMERA_CLIPS_FOOTER".localized(path: privacy, table: dsTable))
+                        Text("CAMERA_CLIPS_FOOTER".localized(path: privacyPath, table: clipsTable))
                     case "MICROPHONE":
-                        Text("MICROPHONE_CLIPS_FOOTER".localized(path: privacy, table: dsTable))
+                        Text("MICROPHONE_CLIPS_FOOTER".localized(path: privacyPath, table: clipsTable))
                     default:
-                        Text("App clips that have requested access to use \(appClipPermission) will appear here.")
+                        EmptyView()
                     }
                 case "FOCUS":
                     Text("AVAILABILITY_STATUS_APP_LIST_FOOTER".localized(path: focusTable))
                 default:
-                    Text("Applications that have requested the ability to use \(permission) will appear here.")
+                    EmptyView()
                 }
             }
         }
