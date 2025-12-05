@@ -1,8 +1,3 @@
-/*
-Abstract:
-A List container that already includes commonly used modifiers.
-*/
-
 import SwiftUI
 
 /// A `List` container that includes commonly used properties and adjustments.
