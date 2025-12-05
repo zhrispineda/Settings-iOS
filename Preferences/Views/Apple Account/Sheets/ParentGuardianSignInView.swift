@@ -53,7 +53,7 @@ struct ParentGuardianSignInView: View {
                                 signingIn.toggle()
                                 showingAlert.toggle()
                             } label: {
-                                ContinueButton(username: $username, loading: true)
+                                ProgressButton()
                             }
                             .frame(height: 50)
                         } else {

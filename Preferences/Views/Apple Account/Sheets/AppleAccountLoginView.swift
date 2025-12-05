@@ -65,7 +65,7 @@ struct AppleAccountLoginView: View {
                             showingAlert.toggle()
                         } label: {
                             if signingIn {
-                                ContinueButton(username: $username, loading: true)
+                                ProgressButton()
                             } else {
                                 OBBoldTrayButton("SIGN_IN_BUTTON_CONTINUE".localized(path: UITable)) {
                                     signingIn.toggle()
