@@ -1,8 +1,3 @@
-/*
-Abstract:
-A CustomList container for displaying options regarding Search with apps.
-*/
-
 import SwiftUI
 
 /// A CustomList container for displaying options regarding Search with apps.
@@ -24,9 +19,11 @@ struct SearchDetailView: View {
     var body: some View {
         CustomList(title: appTitle ? appName : "Search", topPadding: true) {
             Section {
-                Toggle("SIRIANDSEARCH_PERAPP_WHILESEARCHING_SHOWAPP_TOGGLE".localized(path: path, table: table), isOn: $showAppInSearchEnabled)
+                Toggle("SIRIANDSEARCH_PERAPP_WHILESEARCHING_SHOWAPP_TOGGLE".localized(path: path, table: table),
+                       isOn: $showAppInSearchEnabled)
                 if showAppInSearchEnabled {
-                    Toggle("SIRIANDSEARCH_PERAPP_WHILESEARCHING_SHOWCONTENT_TOGGLE".localized(path: path, table: table), isOn: $showContentInSearchEnabled)
+                    Toggle("SIRIANDSEARCH_PERAPP_WHILESEARCHING_SHOWCONTENT_TOGGLE".localized(path: path, table: table),
+                           isOn: $showContentInSearchEnabled)
                 }
             } header: {
                 Text("SIRIANDSEARCH_PERAPP_WHILESEARCHING_HEADER".localized(path: path, table: table))
