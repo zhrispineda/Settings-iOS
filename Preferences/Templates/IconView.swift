@@ -16,25 +16,26 @@ import SwiftUI
 /// - Warning: This view makes use of private methods. It is not recommended for public use.
 struct IconView: View {
     let icon: String
+    private var knownUTIPrefix: Bool {
+        let lower = icon.lowercased()
+        
+        return icon.hasPrefix("com.apple.graphic")
+            || lower.hasPrefix("com.apple.a")
+            || lower.hasPrefix("com.apple.screen-time")
+            || (icon.hasPrefix("com.apple.gamecenter") && !UIDevice.IsSimulated)
+    }
     
     init(_ icon: String = "") {
         self.icon = icon
     }
     
     var body: some View {
-        let lowercased = icon.lowercased()
-        
-        if icon.hasPrefix("com.apple.graphic")
-            || lowercased.hasPrefix("com.apple.a")
-            || lowercased.hasPrefix("com.apple.screen-time")
-            || (icon.hasPrefix("com.apple.gamecenter") && !UIDevice.IsSimulated) {
+        if knownUTIPrefix {
             if let graphicIcon = UIImage.icon(forUTI: icon) {
                 Image(uiImage: graphicIcon)
             }
-        } else {
-            if let asset = UIImage.icon(forBundleID: icon) {
-                Image(uiImage: asset)
-            }
+        } else if let asset = UIImage.icon(forBundleID: icon) {
+            Image(uiImage: asset)
         }
     }
 }
