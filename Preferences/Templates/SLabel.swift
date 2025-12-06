@@ -1,7 +1,7 @@
 import SwiftUI
 
-/// An HStack plus LabeledContent container for displaying a label with a rounded icon and text.
-/// 
+/// An HStack-aligned LabeledContent container for displaying a title, icon, status, and badge count.
+///
 /// ```swift
 /// var body: some View {
 ///     List {
@@ -37,7 +37,7 @@ struct SLabel: View {
     
     var body: some View {
         HStack(spacing: UIDevice.iPhone ? 13.5 : 7.5) {
-            if badgeCount == 0 {
+            if title != "FOLLOWUP_TITLE" {
                 IconView(icon)
                     .padding(.leading, -2.5)
             }
@@ -50,18 +50,17 @@ struct SLabel: View {
                 }
             } label: {
                 if title == "FOLLOWUP_TITLE" {
-                    Text(title.localized(path: "/System/Library/PrivateFrameworks/SetupAssistant.framework", table: "FollowUp"))
+                    Text(title.localized(
+                        path: "/System/Library/PrivateFrameworks/SetupAssistant.framework",
+                        table: "FollowUp")
+                    )
                 } else {
                     Text(title)
                 }
             }
-            
-            if badgeCount > 0 {
-                Image(systemName: "\(badgeCount).circle.fill")
-                    .foregroundStyle(.white, .red)
-                    .imageScale(.large)
-            }
         }
+        .badge(badgeCount)
+        .badgeProminence(.increased)
     }
 }
 
@@ -69,6 +68,7 @@ struct SLabel: View {
     NavigationStack {
         List {
             SLabel("Safari", icon: "com.apple.mobilesafari", status: "Installed")
+            SLabel("General", icon: "com.apple.Preferences", badgeCount: 1)
         }
     }
 }
