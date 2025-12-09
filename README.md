@@ -55,12 +55,11 @@ Open in Xcode and run with either Simulator or a physical device running iOS or 
 > [!IMPORTANT]  
 > You may need to change the bundle identifier of the app to be able to sign it with Xcode for use on a physical device.
 
-To switch between the simulator and physical-like layout of Settings in Simulator or Xcode Preview, modify the `forcePhysical` variable on line 13 of `PrimarySettingsListModel.swift` under `Preferences/Models`.
+To switch between Simulator and physical-like layout of Settings, modify the `forcePhysical` variable on line 13 of `PrimarySettingsListModel.swift` under `Preferences/Models`.
 
 ## Disclaimers
-- All assets including icons, images, localization strings, and other resources are not my own in any way.
 - This app is a personal and educational recreation of Apple's apps and designs, made in appreciation of the teams that built and maintain them.
-- Feel free to look through the commit history to see the project evolve from a single view to its current state.
+- All assets including icons, images, localization strings, and other resources are not my own in any way.
 - If you have any questions or feedback, please contact me through the options listed on my profile.
 
 ## Other Settings Projects
