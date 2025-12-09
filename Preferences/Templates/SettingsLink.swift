@@ -7,7 +7,6 @@ struct SettingsLink<Content: View>: View {
     var routeKey: String?
     var subtitle: String
     var status: String
-    var location: Bool
     private let destinationBuilder: () -> Content
     
     init(
@@ -15,14 +14,12 @@ struct SettingsLink<Content: View>: View {
         routeKey: String? = nil,
         subtitle: String = "",
         status: String = "",
-        location: Bool = false,
         @ViewBuilder destination: @escaping () -> Content
     ) {
         self.titleKey = titleKey
         self.routeKey = routeKey
         self.subtitle = subtitle
         self.status = status
-        self.location = location
         self.destinationBuilder = destination
     }
     
@@ -38,7 +35,6 @@ struct SettingsLink<Content: View>: View {
         self.routeKey = routeKey
         self.subtitle = subtitle
         self.status = status
-        self.location = location
         self.destinationBuilder = { destination }
     }
     
@@ -49,10 +45,6 @@ struct SettingsLink<Content: View>: View {
             LabeledContent {
                 if !status.isEmpty {
                     HStack {
-                        if location {
-                            Image(systemName: "location.fill")
-                                .foregroundStyle(.purple)
-                        }
                         Text(status)
                             .foregroundStyle(.secondary)
                     }
