@@ -357,7 +357,7 @@ struct PrivacySecurityView: View {
             }
         }
         .sheet(isPresented: $showingHelpSheet) {
-            HelpKitView(topicID: UIDevice.iPhone ? "iph6e7d349d1" : "ipad9ae59af9")
+            HLPHelpViewController(topicID: UIDevice.iPhone ? "iph6e7d349d1" : "ipad9ae59af9")
                 .ignoresSafeArea()
         }
     }

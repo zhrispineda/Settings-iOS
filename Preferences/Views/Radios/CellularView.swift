@@ -30,7 +30,7 @@ struct CellularView: View {
             showingHelpSheet.toggle()
         }
         .sheet(isPresented: $showingHelpSheet) {
-            HelpKitView(topicID: UIDevice.iPhone ? "iph3dd5f213" : "ipadbfe780eb")
+            HLPHelpViewController(topicID: UIDevice.iPhone ? "iph3dd5f213" : "ipadbfe780eb")
                 .ignoresSafeArea()
         }
     }

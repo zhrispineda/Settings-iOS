@@ -209,7 +209,7 @@ struct BiometricPasscodeView: View {
             }
         }
         .sheet(isPresented: $showingHelpSheet) {
-            HelpKitView(
+            HLPHelpViewController(
                 topicID: UIDevice.iPhone
                     ? UIDevice.PearlIDCapability ? "iph6d162927a" : "iph672384a0b"
                     : UIDevice.PearlIDCapability ? "ipad66441e44" : "ipadcb11e17d"

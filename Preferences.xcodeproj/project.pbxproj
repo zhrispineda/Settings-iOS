@@ -140,6 +140,7 @@
 		83B3573E2EE8CB940066A2BA /* PSFooterHyperlinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B3573D2EE8CB940066A2BA /* PSFooterHyperlinkView.swift */; };
 		83B357402EE8DA510066A2BA /* SettingsAppDebugMenuGestureProxyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B3573F2EE8DA510066A2BA /* SettingsAppDebugMenuGestureProxyView.swift */; };
 		83B357422EE8DD370066A2BA /* SUSSoftwareUpdateReleaseNotesDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B357412EE8DD370066A2BA /* SUSSoftwareUpdateReleaseNotesDetail.swift */; };
+		83B357442EE8DF780066A2BA /* HLPHelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B357432EE8DF780066A2BA /* HLPHelpViewController.swift */; };
 		83B550562C16A6A5002DA622 /* AutomaticUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B550552C16A6A5002DA622 /* AutomaticUpdateView.swift */; };
 		83B619C92B93DEBD00EFEA90 /* ScreenDistanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B619C82B93DEBD00EFEA90 /* ScreenDistanceView.swift */; };
 		83B619CB2B93EE2400EFEA90 /* AppWebsiteActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B619CA2B93EE2400EFEA90 /* AppWebsiteActivityView.swift */; };
@@ -335,6 +336,7 @@
 		83B3573D2EE8CB940066A2BA /* PSFooterHyperlinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSFooterHyperlinkView.swift; sourceTree = "<group>"; };
 		83B3573F2EE8DA510066A2BA /* SettingsAppDebugMenuGestureProxyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAppDebugMenuGestureProxyView.swift; sourceTree = "<group>"; };
 		83B357412EE8DD370066A2BA /* SUSSoftwareUpdateReleaseNotesDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUSSoftwareUpdateReleaseNotesDetail.swift; sourceTree = "<group>"; };
+		83B357432EE8DF780066A2BA /* HLPHelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HLPHelpViewController.swift; sourceTree = "<group>"; };
 		83B550552C16A6A5002DA622 /* AutomaticUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomaticUpdateView.swift; sourceTree = "<group>"; };
 		83B619C82B93DEBD00EFEA90 /* ScreenDistanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenDistanceView.swift; sourceTree = "<group>"; };
 		83B619CA2B93EE2400EFEA90 /* AppWebsiteActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWebsiteActivityView.swift; sourceTree = "<group>"; };
@@ -776,6 +778,7 @@
 				83B3573D2EE8CB940066A2BA /* PSFooterHyperlinkView.swift */,
 				83B3573F2EE8DA510066A2BA /* SettingsAppDebugMenuGestureProxyView.swift */,
 				83B357412EE8DD370066A2BA /* SUSSoftwareUpdateReleaseNotesDetail.swift */,
+				83B357432EE8DF780066A2BA /* HLPHelpViewController.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -1182,6 +1185,7 @@
 				83B1CFB72C1D56C900C2263C /* BiometricPasscodeView.swift in Sources */,
 				83D4CB762B7FF0B000D6087D /* WebContentView.swift in Sources */,
 				8319CE4D2B86D380007EC822 /* SafetyCheckView.swift in Sources */,
+				83B357442EE8DF780066A2BA /* HLPHelpViewController.swift in Sources */,
 				837C03092B7F1AE0004D6C71 /* SelectOptionList.swift in Sources */,
 				83B619CF2B941B9C00EFEA90 /* AppLimitsView.swift in Sources */,
 				837659742CDD7C5000616457 /* SecurityView.swift in Sources */,

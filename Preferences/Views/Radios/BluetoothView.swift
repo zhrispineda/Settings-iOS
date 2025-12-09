@@ -103,7 +103,7 @@ struct BluetoothView: View {
             }
         }
         .sheet(isPresented: $showingHelpSheet) {
-            HelpKitView(topicID: UIDevice.iPhone ? "iph3c50f191" : "ipad997da4cf")
+            HLPHelpViewController(topicID: UIDevice.iPhone ? "iph3c50f191" : "ipad997da4cf")
                 .ignoresSafeArea(edges: .bottom)
                 .interactiveDismissDisabled()
         }

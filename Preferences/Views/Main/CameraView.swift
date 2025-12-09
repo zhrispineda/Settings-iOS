@@ -379,7 +379,7 @@ struct CameraView: View {
             }
         }
         .sheet(isPresented: $showingHelpSheet) {
-            HelpKitView(topicID: "iph0c397b154")
+            HLPHelpViewController(topicID: "iph0c397b154")
                 .ignoresSafeArea(edges: .bottom)
                 .interactiveDismissDisabled()
         }

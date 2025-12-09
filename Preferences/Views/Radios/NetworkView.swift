@@ -179,7 +179,7 @@ struct NetworkView: View {
             showingHelpSheet.toggle()
         }
         .sheet(isPresented: $showingHelpSheet) {
-            HelpKitView(topicID: UIDevice.iPhone ? "iphd1cf4268" : "ipad2db29c3a")
+            HLPHelpViewController(topicID: UIDevice.iPhone ? "iphd1cf4268" : "ipad2db29c3a")
                 .ignoresSafeArea(edges: .bottom)
                 .interactiveDismissDisabled()
         }

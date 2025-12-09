@@ -242,12 +242,12 @@ struct SiriView: View {
                 .ignoresSafeArea()
         }
         .sheet(isPresented: $showingSiriHelpSheet) {
-            HelpKitView(topicID: UIDevice.iPhone ? "ipha48873ed6" : "ipadf4e2ae5b")
+            HLPHelpViewController(topicID: UIDevice.iPhone ? "ipha48873ed6" : "ipadf4e2ae5b")
                 .ignoresSafeArea(edges: .bottom)
                 .interactiveDismissDisabled()
         }
         .sheet(isPresented: $showingIntelligenceHelpSheet) {
-            HelpKitView(topicID: UIDevice.iPhone ? "iphc28624b81" : "ipade5045bb1")
+            HLPHelpViewController(topicID: UIDevice.iPhone ? "iphc28624b81" : "ipade5045bb1")
                 .ignoresSafeArea(edges: .bottom)
                 .interactiveDismissDisabled()
         }
