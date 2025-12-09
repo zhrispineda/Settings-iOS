@@ -1,8 +1,3 @@
-/*
-Abstract:
-A combination of structs, enums, and classes to define the structure of the app.
-*/
-
 import SwiftUI
 import Network
 
