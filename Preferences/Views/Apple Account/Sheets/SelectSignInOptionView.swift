@@ -45,7 +45,7 @@ struct SelectSignInOptionView: View {
                         }
                     } else {
                         NavigationLink {
-                            ProximityViewController()
+                            AKProximityAuthViewController()
                                 .ignoresSafeArea()
                         } label: {
                             SignInMethodButton(image: "ProximitySymbol-iPhone-iPad-2", title: "SIGN_IN_OPTION_ANOTHER_DEVICE_TITLE".localized(path: path), subtitle: "SIGN_IN_OPTION_ANOTHER_DEVICE_SUBTITLE_SOLARIUM".localized(path: path))
@@ -142,4 +142,5 @@ struct SignInMethodButton: View {
 
 #Preview("ContentView") {
     ContentView()
+        .environment(PrimarySettingsListModel())
 }

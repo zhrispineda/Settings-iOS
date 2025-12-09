@@ -8,6 +8,8 @@ import SwiftUI
 /// A UIViewRepresentable instance for `HLPHelpViewController` from the HelpKit framework.
 ///
 /// - Parameter topicID: The topic ID to display.
+///
+/// - Warning: Do not use this method for public applications. It is not publicly supported.
 struct HLPHelpViewController: UIViewControllerRepresentable {
     let topicID: String
     

@@ -8,6 +8,8 @@ import SwiftUI
 /// A UIViewRepresentable instance for `SUSSoftwareUpdateReleaseNotesDetail` from the SoftwareUpdateSettings framework.
 ///
 /// - Parameter readMeName: The name of the ReadMe file.
+///
+/// - Warning: Do not use this method for public applications. It is not publicly supported.
 struct SUSSoftwareUpdateReleaseNotesDetail: UIViewControllerRepresentable {
     let readMeName: String
     
