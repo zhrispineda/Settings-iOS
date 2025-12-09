@@ -40,7 +40,7 @@ struct SLabel: View {
             LabeledContent {
                 if !status.isEmpty {
                     Text(status)
-                        .foregroundStyle(.gray)
+                        .foregroundStyle(.placeholder)
                         .fontWeight(selected ? .semibold : .none)
                 }
             } label: {
