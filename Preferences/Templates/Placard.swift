@@ -47,13 +47,13 @@ struct Placard: View {
             
             Text(title)
                 .font(.title2.bold())
-                .padding(.top, 20)
-                .padding(.bottom, -4)
+                .padding(.top, 19)
+                .padding(.bottom, -5)
             Text(.init(description))
                 .font(.headline)
                 .fontWeight(.regular)
                 .foregroundStyle(.secondary)
-                .padding(.bottom, 5)
+                .padding(.bottom, 2)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .fixedSize(horizontal: false, vertical: true)
