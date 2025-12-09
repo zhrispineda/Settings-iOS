@@ -33,5 +33,7 @@ struct PrepareFollowUpView: View {
 }
 
 #Preview {
-    PrepareFollowUpView()
+    List {
+        PrepareFollowUpView()
+    }
 }
