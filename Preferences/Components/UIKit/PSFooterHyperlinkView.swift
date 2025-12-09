@@ -5,6 +5,13 @@
 
 import SwiftUI
 
+/// A UIViewRepresentable instance for `PSFooterHyperlinkView` from the Preferences framework.
+///
+/// - Parameter footerText: Footer text to display.
+/// - Parameter linkText: Footer text to match and set as a link.
+/// - Parameter onLinkTap: Code to run as an action when `linkText` is tapped.
+///
+/// - Warning: Do not use this method for public applications. It is not publicly supported.
 struct PSFooterHyperlinkView: UIViewRepresentable {
     let footerText: String
     let linkText: String
