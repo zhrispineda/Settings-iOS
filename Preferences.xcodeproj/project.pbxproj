@@ -138,6 +138,7 @@
 		83B1CFB72C1D56C900C2263C /* BiometricPasscodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B1CFB62C1D56C900C2263C /* BiometricPasscodeView.swift */; };
 		83B1D5342D6BC3C800C26010 /* DefaultAppsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B1D5332D6BC3C800C26010 /* DefaultAppsView.swift */; };
 		83B3573E2EE8CB940066A2BA /* PSFooterHyperlinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B3573D2EE8CB940066A2BA /* PSFooterHyperlinkView.swift */; };
+		83B357402EE8DA510066A2BA /* SettingsAppDebugMenuGestureProxyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B3573F2EE8DA510066A2BA /* SettingsAppDebugMenuGestureProxyView.swift */; };
 		83B550562C16A6A5002DA622 /* AutomaticUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B550552C16A6A5002DA622 /* AutomaticUpdateView.swift */; };
 		83B619C92B93DEBD00EFEA90 /* ScreenDistanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B619C82B93DEBD00EFEA90 /* ScreenDistanceView.swift */; };
 		83B619CB2B93EE2400EFEA90 /* AppWebsiteActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B619CA2B93EE2400EFEA90 /* AppWebsiteActivityView.swift */; };
@@ -331,6 +332,7 @@
 		83B1CFB62C1D56C900C2263C /* BiometricPasscodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricPasscodeView.swift; sourceTree = "<group>"; };
 		83B1D5332D6BC3C800C26010 /* DefaultAppsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAppsView.swift; sourceTree = "<group>"; };
 		83B3573D2EE8CB940066A2BA /* PSFooterHyperlinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSFooterHyperlinkView.swift; sourceTree = "<group>"; };
+		83B3573F2EE8DA510066A2BA /* SettingsAppDebugMenuGestureProxyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAppDebugMenuGestureProxyView.swift; sourceTree = "<group>"; };
 		83B550552C16A6A5002DA622 /* AutomaticUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomaticUpdateView.swift; sourceTree = "<group>"; };
 		83B619C82B93DEBD00EFEA90 /* ScreenDistanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenDistanceView.swift; sourceTree = "<group>"; };
 		83B619CA2B93EE2400EFEA90 /* AppWebsiteActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWebsiteActivityView.swift; sourceTree = "<group>"; };
@@ -770,6 +772,7 @@
 			isa = PBXGroup;
 			children = (
 				83B3573D2EE8CB940066A2BA /* PSFooterHyperlinkView.swift */,
+				83B3573F2EE8DA510066A2BA /* SettingsAppDebugMenuGestureProxyView.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -1197,6 +1200,7 @@
 				836000782BCC7A470034DDF5 /* NotificationsView.swift in Sources */,
 				83B3573E2EE8CB940066A2BA /* PSFooterHyperlinkView.swift in Sources */,
 				833F0AD02B744D180036EAD2 /* PreferencesApp.swift in Sources */,
+				83B357402EE8DA510066A2BA /* SettingsAppDebugMenuGestureProxyView.swift in Sources */,
 				83A5DA512C2335580012ACB3 /* PermissionsView.swift in Sources */,
 				833769072ED2622E0002822F /* DeveloperView.swift in Sources */,
 				833C6EB02C20CCEF00A8D91C /* SearchView.swift in Sources */,

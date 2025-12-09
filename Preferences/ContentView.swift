@@ -105,7 +105,7 @@ struct ContentView: View {
         .overlay {
             if UIDevice.`apple-internal-install` {
                 VStack {
-                    DebugMenuGestureView {
+                    SettingsAppDebugMenuGestureProxyView {
                         model.showingDebugMenu.toggle()
                     }
                     .frame(height: UIDevice.iPad ? 50 : 75, alignment: .top)
