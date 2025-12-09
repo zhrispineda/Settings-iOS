@@ -1,6 +1,6 @@
 import SwiftUI
 
-/// An HStack-aligned LabeledContent container for displaying a title, icon, status, and badge count.
+/// A Label plus LabeledContent container for displaying a title, icon, status, and badge count.
 ///
 /// ```swift
 /// var body: some View {
@@ -36,12 +36,7 @@ struct SLabel: View {
     }
     
     var body: some View {
-        HStack(spacing: UIDevice.iPhone ? 13.5 : 7.5) {
-            if title != "FOLLOWUP_TITLE" {
-                IconView(icon)
-                    .padding(.leading, -2.5)
-            }
-            
+        Label {
             LabeledContent {
                 if !status.isEmpty {
                     Text(status)
@@ -58,6 +53,10 @@ struct SLabel: View {
                     Text(title)
                 }
             }
+        } icon: {
+            if title != "FOLLOWUP_TITLE" {
+                IconView(icon)
+            }
         }
         .badge(badgeCount)
         .badgeProminence(.increased)
@@ -71,4 +70,9 @@ struct SLabel: View {
             SLabel("General", icon: "com.apple.Preferences", badgeCount: 1)
         }
     }
+}
+
+#Preview {
+    ContentView()
+        .environment(PrimarySettingsListModel())
 }
