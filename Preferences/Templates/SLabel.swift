@@ -39,7 +39,7 @@ struct SLabel: View {
         Label {
             LabeledContent {
                 if !status.isEmpty {
-                    Text(status)
+                    Text(.init(status))
                         .foregroundStyle(.placeholder)
                         .fontWeight(selected ? .semibold : .none)
                 }
@@ -50,7 +50,7 @@ struct SLabel: View {
                         table: "FollowUp")
                     )
                 } else {
-                    Text(title)
+                    Text(.init(title))
                 }
             }
         } icon: {

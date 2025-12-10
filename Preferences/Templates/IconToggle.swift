@@ -37,7 +37,7 @@ struct IconToggle: View {
                 IconView(icon)
                     .padding(.leading, -2.5)
                 LabeledContent {} label: {
-                    Text(title)
+                    Text(.init(title))
                     if !subtitle.isEmpty {
                         Text(subtitle)
                     }

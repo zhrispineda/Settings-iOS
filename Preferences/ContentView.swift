@@ -15,6 +15,7 @@ struct ContentView: View {
     @State private var searchText = ""
     @State private var showingSignInError = false
     @State private var showingSignInSheet = false
+    @State private var showingResearchSheet = false
     
     var body: some View {
         @Bindable var model = model
@@ -131,11 +132,31 @@ struct ContentView: View {
                 model.selection = model.mainSettings.first
             }
         }
+        .onOpenURL { url in
+            if url.absoluteString == "pref://" {
+                showingResearchSheet = true
+            }
+        }
         .sheet(isPresented: $model.showingDebugMenu) {
             NavigationStack {
                 DebugView()
             }
             .presentationDetents(UIDevice.iPhone ? [.medium, .large] : [.large])
+        }
+        .sheet(isPresented: $showingResearchSheet) {
+            NavigationStack {
+                OBWelcomeView(
+                    title: String(localized: .aboutSecurityResearchDevice),
+                    detailText: String(localized: .securityResearchText)
+                )
+                .toolbar {
+                    ToolbarItem(placement: .topBarTrailing) {
+                        Button(.done) {
+                            showingResearchSheet = false
+                        }
+                    }
+                }
+            }
         }
     }
 }
