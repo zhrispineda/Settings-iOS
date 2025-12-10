@@ -119,6 +119,7 @@
 		8397F9E92CDF20E9004DFE2F /* BooksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397F9E82CDF20E9004DFE2F /* BooksView.swift */; };
 		839AD33C2E8AFC6A00DDD069 /* iOSReadMeSummary.html in Resources */ = {isa = PBXBuildFile; fileRef = 839AD33A2E8AFC6A00DDD069 /* iOSReadMeSummary.html */; };
 		839AD33F2E8AFC7300DDD069 /* iPadOSReadMeSummary.html in Resources */ = {isa = PBXBuildFile; fileRef = 839AD33D2E8AFC7300DDD069 /* iPadOSReadMeSummary.html */; };
+		839C2BC42EE9FCAE002E8389 /* OBWelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839C2BC32EE9FCAE002E8389 /* OBWelcomeController.swift */; };
 		83A36C8D2DB95D7800378E45 /* ConfigureDNSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A36C8C2DB95D7800378E45 /* ConfigureDNSView.swift */; };
 		83A36C8F2DB96E4600378E45 /* ConfigureProxyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A36C8E2DB96E4600378E45 /* ConfigureProxyView.swift */; };
 		83A3E6952CAC3091006F4643 /* FocalLengthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A3E6942CAC3091006F4643 /* FocalLengthView.swift */; };
@@ -316,6 +317,7 @@
 		8397F9E82CDF20E9004DFE2F /* BooksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksView.swift; sourceTree = "<group>"; };
 		839AD33B2E8AFC6A00DDD069 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = en; path = en.lproj/iOSReadMeSummary.html; sourceTree = "<group>"; };
 		839AD33E2E8AFC7300DDD069 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = en; path = en.lproj/iPadOSReadMeSummary.html; sourceTree = "<group>"; };
+		839C2BC32EE9FCAE002E8389 /* OBWelcomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBWelcomeController.swift; sourceTree = "<group>"; };
 		83A36C8C2DB95D7800378E45 /* ConfigureDNSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureDNSView.swift; sourceTree = "<group>"; };
 		83A36C8E2DB96E4600378E45 /* ConfigureProxyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureProxyView.swift; sourceTree = "<group>"; };
 		83A3E6942CAC3091006F4643 /* FocalLengthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocalLengthView.swift; sourceTree = "<group>"; };
@@ -782,6 +784,7 @@
 				83B357412EE8DD370066A2BA /* SUSSoftwareUpdateReleaseNotesDetail.swift */,
 				83B357432EE8DF780066A2BA /* HLPHelpViewController.swift */,
 				83B357452EE8E1710066A2BA /* AKProximityAuthViewController.swift */,
+				839C2BC32EE9FCAE002E8389 /* OBWelcomeController.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -1189,6 +1192,7 @@
 				83B1CFB72C1D56C900C2263C /* BiometricPasscodeView.swift in Sources */,
 				83D4CB762B7FF0B000D6087D /* WebContentView.swift in Sources */,
 				8319CE4D2B86D380007EC822 /* SafetyCheckView.swift in Sources */,
+				839C2BC42EE9FCAE002E8389 /* OBWelcomeController.swift in Sources */,
 				83B357442EE8DF780066A2BA /* HLPHelpViewController.swift in Sources */,
 				837C03092B7F1AE0004D6C71 /* SelectOptionList.swift in Sources */,
 				83B619CF2B941B9C00EFEA90 /* AppLimitsView.swift in Sources */,
