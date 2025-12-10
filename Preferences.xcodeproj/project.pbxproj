@@ -454,12 +454,12 @@
 		832999512CAF9302009AD115 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				83B3573C2EE8CB7E0066A2BA /* UIKit */,
+				8310C70C2EA1786A00C0B749 /* Preferences-Bridging-Header.h */,
 				8310C70D2EA179C600C0B749 /* UIApplicationShortcutIconHelper.m */,
 				832999522CAF93BA009AD115 /* MGHelper.swift */,
 				836610652DAC67CD0040E05C /* SettingsLogger.swift */,
 				835646092D9C4AB600DAB406 /* UIKitRepresentables.swift */,
-				8310C70C2EA1786A00C0B749 /* Preferences-Bridging-Header.h */,
+				83B3573C2EE8CB7E0066A2BA /* UIKit */,
 			);
 			path = Components;
 			sourceTree = "<group>";

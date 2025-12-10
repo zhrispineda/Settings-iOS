@@ -30,52 +30,54 @@ final class RouteRegistry {
 
 // MARK: - PrimarySettingsListModel data
 /// Stores the title of each enum variable for use in navigation.
-enum SettingsOptions: String, CaseIterable {
-    case accessibility = "Accessibility"
-    case accessoryDeveloper = "Accessory Developer"
-    case actionButton = "Action Button"
+enum PrimarySettingsListItemIdentifier: String {
+    case followUpItem = "FOLLOWUP_TITLE"
+    case primaryAppleAccount = "Apple Account"
+    case family = "Family"
     case airplaneMode = "Airplane Mode"
-    case appleIntelligence = "Apple Intelligence & Siri"
-    case pencil = "Apple Pencil"
-    case apps = "Apps"
-    case battery = "Battery"
-    case faceIDPasscode = "Face ID & Passcode"
-    case bluetooth = "Bluetooth"
-    case camera = "Camera"
-    case carrierSettings = "Carrier Settings"
-    case cellular = "Cellular"
-    case continuityDebugging = "Continuity Debugging"
-    case controlCenter = "Control Center"
-    case developer = "Developer"
-    case displayAndBrightness = "Display & Brightness"
-    case emergencySOS = "Emergency SOS"
-    case ethernet = "Ethernet"
-    case facetimeDebugging = "FaceTime Debugging"
-    case focus = "Focus"
-    case followUp = "FOLLOWUP_TITLE"
-    case gameCenter = "Game Center"
-    case general = "General"
-    case homeScreenAppLibrary = "Home Screen & App Library"
-    case icloud = "iCloud"
-    case iMessageDebugging = "iMessage Debugging"
-    case internalSettings = "Internal Settings"
-    case multitaskingAndGestures = "Multitasking & Gestures"
-    case notifications = "Notifications"
-    case passcodeAndBiometrics = "Passcode"
-    case personalHotspot = "Personal Hotspot"
-    case privacySecurity = "Privacy & Security"
-    case satellite = "Satellite"
-    case screenTime = "Screen Time"
-    case search = "Search"
-    case siri = "Siri"
-    case sounds = "Sounds"
-    case soundsHaptics = "Sounds & Haptics"
-    case standby = "StandBy"
-    case touchIDPasscode = "Touch ID & Passcode"
-    case vpn = "VPN"
-    case wallet = "Wallet"
-    case wallpaper = "Wallpaper"
     case wifi = "Wi-Fi"
+    case ethernet = "Ethernet"
+    case bluetooth = "Bluetooth"
+    case cellular = "Cellular"
+    case personalHotspot = "Personal Hotspot"
+    case vpn = "VPN"
+    case classroom = "Classroom"
+    case satellite = "Satellite"
+    case notifications = "Notifications"
+    case sounds = "Sounds"
+    case focus = "Focus"
+    case screenTime = "Screen Time"
+    case general = "General"
+    case controlCenter = "Control Center"
+    case actionButton = "Action Button"
+    case displayAndBrightness = "Display & Brightness"
+    case homeScreen = "Home Screen & App Library"
+    case multitaskingAndGestures = "Multitasking & Gestures"
+    case accessibility = "Accessibility"
+    case wallpaper = "Wallpaper"
+    case standBy = "StandBy"
+    case siri = "Siri"
+    case search = "Search"
+    case pencil = "Apple Pencil"
+    case passcodeAndBiometrics = "Passcode"
+    case sos = "Emergency SOS"
+    case exposureNotifications = "Exposure Notifications"
+    case battery = "Battery"
+    case privacySecurity = "Privacy & Security"
+    case walletAndApplePay = "Wallet"
+    case paymentAndContactless = "Payment & Contactless"
+    case classKit = "ClassKit"
+    case camera = "Camera"
+    case gameCenter = "Game Center"
+    case iCloud = "iCloud"
+    case developer = "Developer"
+    case carrier = "Carrier Settings"
+    case `internal` = "Internal Settings"
+    case faceTimeDebugging = "FaceTime Debugging"
+    case iMessageDebugging = "iMessage Debugging"
+    case continuityDebugging = "Continuity Debugging"
+    case accessoryDeveloper = "Accessory Developer"
+    case apps = "Apps"
 }
 
 /// Common device capabilities that are checked based on the current device.
@@ -113,31 +115,32 @@ enum RowKind: Hashable {
 
 /// A struct for defining custom navigation links for use with sections of the app.
 struct SettingsItem: Identifiable, Hashable {
-    var id: SettingsOptions { type }
-    let type: SettingsOptions
-    var title: String { type.rawValue }
+    var id: UUID
+    var customTitle: String?
+    let type: PrimarySettingsListItemIdentifier
+    var title: String { customTitle ?? type.rawValue }
     let icon: String
     var capabilities: [Capabilities]
-    var color: Color
     var badgeCount: Int
     let destination: AnyView
     var kind: RowKind = .link
     
     init(
-        type: SettingsOptions,
+        customTitle: String? = nil,
+        type: PrimarySettingsListItemIdentifier,
         icon: String = "",
         capabilities: [Capabilities] = [],
-        color: Color = .white,
         badgeCount: Int = 0,
         destination: AnyView = AnyView(
             EmptyView()
         ),
         kind: RowKind = .link
     ) {
+        self.id = UUID()
+        self.customTitle = customTitle
         self.type = type
         self.icon = icon
         self.capabilities = capabilities
-        self.color = color
         self.badgeCount = badgeCount
         self.destination = destination
         self.kind = kind
@@ -184,7 +187,7 @@ final class PrimarySettingsListModel {
     init() {
         followUpSettings = [
             SettingsItem(
-                type: .followUp,
+                type: .followUpItem,
                 capabilities: [.isPhysical],
                 badgeCount: 1,
                 destination: AnyView(FollowUpView())
@@ -272,7 +275,8 @@ final class PrimarySettingsListModel {
                 destination: AnyView(ApplePencilView())
             ),
             SettingsItem(
-                type: .appleIntelligence,
+                customTitle: "Apple Intelligence",
+                type: .siri,
                 icon: "com.apple.graphic-icon.intelligence",
                 capabilities: [.appleIntelligence],
                 destination: AnyView(SiriView())
@@ -295,7 +299,7 @@ final class PrimarySettingsListModel {
                 destination: AnyView(DisplayBrightnessView())
             ),
             SettingsItem(
-                type: .homeScreenAppLibrary,
+                type: .homeScreen,
                 icon: UIDevice.iPhone ? "com.apple.graphic-icon.apps-on-iphone" : "com.apple.graphic-icon.apps-on-ipad",
                 destination: AnyView(HomeScreenAppLibraryView())
             ),
@@ -317,7 +321,7 @@ final class PrimarySettingsListModel {
                 destination: AnyView(SiriView())
             ),
             SettingsItem(
-                type: .standby,
+                type: .standBy,
                 icon: "com.apple.graphic-icon.standby",
                 capabilities: [.phone],
                 destination: AnyView(StandByView())
@@ -338,15 +342,10 @@ final class PrimarySettingsListModel {
                 destination: AnyView(NotificationsView())
             ),
             SettingsItem(
+                customTitle: UIDevice.iPhone ? "Sounds & Haptics" : "Sounds",
                 type: .sounds,
                 icon: "com.apple.graphic-icon.sound",
-                capabilities: [.sounds, .isPhysical],
-                destination: AnyView(SoundsAndHapticsView())
-            ),
-            SettingsItem(
-                type: .soundsHaptics,
-                icon: "com.apple.graphic-icon.sound",
-                capabilities: [.soundsHaptics, .isPhysical],
+                capabilities: [.isPhysical],
                 destination: AnyView(SoundsAndHapticsView())
             ),
             SettingsItem(
@@ -364,13 +363,15 @@ final class PrimarySettingsListModel {
         
         securitySettings = [
             SettingsItem(
-                type: .faceIDPasscode,
+                customTitle: "Face ID & Passcode",
+                type: .passcodeAndBiometrics,
                 icon: "com.apple.graphic-icon.face-id",
                 capabilities: [.faceID, .isPhysical],
                 destination: AnyView(BiometricPasscodeView())
             ),
             SettingsItem(
-                type: .touchIDPasscode,
+                customTitle: "Touch ID & Passcode",
+                type: .passcodeAndBiometrics,
                 icon: "com.apple.graphic-icon.touch-id",
                 capabilities: [.touchID, .isPhysical],
                 destination: AnyView(BiometricPasscodeView())
@@ -382,7 +383,7 @@ final class PrimarySettingsListModel {
                 destination: AnyView(EmptyView())
             ),
             SettingsItem(
-                type: .emergencySOS,
+                type: .sos,
                 icon: "com.apple.graphic-icon.emergency-sos",
                 capabilities: [.phone, .isPhysical],
                 destination: AnyView(EmergencySOSView())
@@ -401,12 +402,12 @@ final class PrimarySettingsListModel {
                 destination: AnyView(GameCenterView())
             ),
             SettingsItem(
-                type: .icloud,
+                type: .iCloud,
                 icon: "com.apple.application-icon.icloud",
                 destination: AnyView(EmptyView())
             ),
             SettingsItem(
-                type: .wallet,
+                type: .walletAndApplePay,
                 icon: "com.apple.Passbook",
                 capabilities: [.isPhysical],
                 destination: AnyView(WalletView())
@@ -428,19 +429,19 @@ final class PrimarySettingsListModel {
                 destination: AnyView(DeveloperView())
             ),
             SettingsItem(
-                type: .carrierSettings,
+                type: .carrier,
                 icon: "com.apple.graphic-icon.carrier-settings",
                 capabilities: [.carrierInstall, .isInternal],
                 destination: AnyView(CarrierSettingsView())
             ),
             SettingsItem(
-                type: .internalSettings,
+                type: .`internal`,
                 icon: "com.apple.graphic-icon.internal-settings",
                 capabilities: [.isInternal],
                 destination: AnyView(InternalSettingsView())
             ),
             SettingsItem(
-                type: .facetimeDebugging,
+                type: .faceTimeDebugging,
                 icon: "com.apple.graphic-icon.tap-to-radar",
                 capabilities: [.faceTimeDebugging],
                 destination: AnyView(FaceTimeDebuggingView())

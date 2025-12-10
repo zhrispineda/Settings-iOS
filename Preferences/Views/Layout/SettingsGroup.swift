@@ -24,7 +24,7 @@ struct SettingsGroup: View {
     var body: some View {
         Section {
             ForEach(group) { setting in
-                if setting.type == .icloud {
+                if setting.type == .iCloud {
                     Button {
                         if model.isConnected {
                             showingSignInSheet.toggle()
