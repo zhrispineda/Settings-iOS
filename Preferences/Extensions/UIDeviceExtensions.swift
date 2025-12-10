@@ -1,8 +1,3 @@
-/*
-Abstract:
-An extension of UIDevice to add custom functions for getting device information.
-*/
-
 import SwiftUI
 import FoundationModels
 
@@ -102,8 +97,7 @@ extension UIDevice {
         }
         
         // Fallback
-        let capableDevices: Set<String> = ["iPad8,3", "iPad8,4", "iPad8,7", "iPad8,8", "iPad8,10", "iPad8,12", "iPad11,2", "iPad11,4", "iPad11,7", "iPad12,2", "iPad13,5", "iPad13,6", "iPad13,7", "iPad13,9", "iPad 13,10", "iPad13,11", "iPad13,2", "iPad13,17", "iPad13,19", "iPad14,2", "iPad14,4", "iPad14,6", "iPad14,9", "iPad14,11", "iPad16,4", "iPad16,6"]
-        return capableDevices.contains(identifier) || UIDevice.iPhone || configuration.forceCellular
+        return UIDevice.iPhone || configuration.forceCellular
     }()
     
     /// Returns a Bool on whether the device is capable of Cinematic Mode.
@@ -118,21 +112,13 @@ extension UIDevice {
         return capableDevices.contains(identifier)
     }()
     
-    /// Returns a Bool on whether the device is capable of advanced charge cycles information.
-    static let DeviceSupportsBatteryInformation: Bool = {
-        let capableDevices: Set<String> = ["iPhone15,4", "iPhone15,5", "iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4", "iPhone17,5", "iPhone18,1", "iPhone18,2", "iPhone18,3", "iPhone18,4", "iPad14,8", "iPad14,9", "iPad14,10", "iPad14,11", "iPad15,3", "iPad15,4", "iPad15,5", "iPad15,6", "iPad15,7", "iPad15,8", "iPad16,3", "iPad16,5", "iPad16,6"]
-        return capableDevices.contains(identifier)
-    }()
-    
     /// Returns a Bool on whether the device is capable of Stage Manager.
     static let DeviceSupportsEnhancedMultitasking: Bool = {
         if let answer = MGHelper.read(key: "qeaj75wk3HF4DwQ8qbIi7g") { // DeviceSupportsEnhancedMultitasking key
             return Bool(answer)!
         }
         
-        // Fallback
-        let capableDevices: Set<String> = ["iPad8,1", "iPad8,2", "iPad8,3", "iPad8,4", "iPad8,5", "iPad8,6", "iPad8,7", "iPad8,8", "iPad8,9", "iPad8,10", "iPad8,11", "iPad8,12", "iPad13,4", "iPad13,5", "iPad13,6", "iPad13,7", "iPad13,8", "iPad13,9", "iPad13,10", "iPad13,11", "iPad13,16", "iPad13,17", "iPad14,5", "iPad14,8", "iPad14,9", "iPad14,10", "iPad14,11", "iPad15,3", "iPad15,4", "iPad15,5", "iPad15,6", "iPad16,3", "iPad16,4", "iPad16,5", "iPad16,6"]
-        return capableDevices.contains(identifier)
+        return false
     }()
     
     /// Returns a Bool on whether the device is an iPad.
@@ -170,12 +156,6 @@ extension UIDevice {
         return capableDevices.contains(identifier)
     }()
     
-    /// Returns a Bool on whether the device has a 12.9 or 13-inch display.
-    static let LargerSize: Bool = {
-        let capableDevices: Set<String> = ["iPad8,5", "iPad8,6", "iPad8,7", "iPad8,8", "iPad8,11", "iPad8,12", "iPad13,8", "iPad13,9", "iPad13,10", "iPad13,11", "iPad14,10", "iPad14,11", "iPad15,5", "iPad15,6", "iPad16,5", "iPad16,6"]
-        return capableDevices.contains(identifier)
-    }()
-    
     /// Returns a Bool on whether the device has a LiDAR sensor.
     static let LiDARCapability: Bool = {
         let incapableDevices: Set<String> = ["iPhone12,3", "iPhone12,5", "iPad8,1", "iPad8,2", "iPad8,3", "iPad8,4", "iPad8,5", "iPad8,6", "iPad8,7", "iPad8,8"]
@@ -192,7 +172,7 @@ extension UIDevice {
     /// iPhone: https://support.apple.com/guide/iphone/aside/iph4ecb9a67f
     /// iPad: https://support.apple.com/guide/ipad/aside/ipad71aac361
     static let LensCorrectionCapability: Bool = {
-        let capableDevices: Set<String> = ["iPhone12,8", "iPhone14,6", "iPhone17,5", "iPad8,1", "iPad8,2", "iPad8,3", "iPad8,4", "iPad8,5", "iPad8,6", "iPad8,7", "iPad8,8", "iPad8,9", "iPad8,10", "iPad8,11", "iPad8,12", "iPad11,1", "iPad11,2", "iPad11,3", "iPad11,4", "iPad11,6", "iPad11,7", "iPad13,4", "iPad13,5", "iPad13,6", "iPad13,7", "iPad13,8", "iPad13,9", "iPad13,10", "iPad13,11", "iPad14,3", "iPad14,4", "iPad14,5", "iPad14,6", "iPad15,3", "iPad15,4", "iPad15,5", "iPad15,6", "iPad16,3", "iPad16,4", "iPad16,5", "iPad16,6"]
+        let capableDevices: Set<String> = ["iPhone12,8", "iPhone14,6", "iPhone17,5", "iPad8,1", "iPad8,2", "iPad8,3", "iPad8,4", "iPad8,5", "iPad8,6", "iPad8,7", "iPad8,8", "iPad8,9", "iPad8,10", "iPad8,11", "iPad8,12", "iPad11,1", "iPad11,2", "iPad11,3", "iPad11,4", "iPad11,6", "iPad11,7", "iPad13,4", "iPad13,5", "iPad13,6", "iPad13,7", "iPad13,8", "iPad13,9", "iPad13,10", "iPad13,11", "iPad14,3", "iPad14,4", "iPad14,5", "iPad14,6", "iPad15,3", "iPad15,4", "iPad15,5", "iPad15,6", "iPad16,3", "iPad16,4", "iPad16,5", "iPad16,6", "iPad17,1", "iPad17,2", "iPad17,3", "iPad17,4"]
         return !capableDevices.contains(identifier)
     }()
     
@@ -233,7 +213,7 @@ extension UIDevice {
     
     /// Returns a Bool on whether the device is capable of Reference Mode.
     static let ReferenceModeCapability: Bool = {
-        let capableDevices: Set<String> = ["iPad13,8", "iPad13,9", "iPad13,10", "iPad13,11", "iPad14,5", "iPad14,6", "iPad16,3", "iPad16,4", "iPad16,5", "iPad16,6"]
+        let capableDevices: Set<String> = ["iPad13,8", "iPad13,9", "iPad13,10", "iPad13,11", "iPad14,5", "iPad14,6", "iPad16,3", "iPad16,4", "iPad16,5", "iPad16,6", "iPad17,1", "iPad17,2", "iPad17,3", "iPad17,4"]
         return capableDevices.contains(identifier)
     }()
     
