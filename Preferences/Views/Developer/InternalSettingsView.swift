@@ -18,6 +18,8 @@ struct InternalSettingsView: View {
                 NavigationLink("Installed App Info") {}
                 NavigationLink("Logging") {}
                 NavigationLink("Power HUD") {}
+                NavigationLink("HangTracer HUD") {}
+                NavigationLink("Process Terminations HUD") {}
                 NavigationLink("UI Debugging") {}
                 NavigationLink("Auto Bug Capture") {}
                 NavigationLink("Prototyping") {}
@@ -32,6 +34,46 @@ struct InternalSettingsView: View {
                 NavigationLink("Features") {}
                 NavigationLink("SpringBoard") {}
                 NavigationLink("Status Bar Overrides") {}
+            }
+            
+            Section("System") {
+                NavigationLink("Feature Flags") {}
+                NavigationLink("Carry") {}
+                NavigationLink("Software Update Self Services") {}
+                NavigationLink("Device Management") {}
+                NavigationLink("Keyboards") {}
+                NavigationLink("Text") {}
+                NavigationLink("Media") {}
+                NavigationLink("Battery Center") {}
+                NavigationLink("Pasteboard") {}
+                NavigationLink("Localization") {}
+            }
+            
+            Section("Low Level") {
+                NavigationLink("Accessories") {}
+                NavigationLink("Accessories Firmware Update") {}
+                NavigationLink("AFC") {}
+                NavigationLink("BackgroundTaskAgent") {}
+                NavigationLink("Baseband") {}
+                NavigationLink("Core OS") {}
+                NavigationLink("Display Port") {}
+                NavigationLink("Location") {}
+                NavigationLink("Power") {}
+                NavigationLink("Radios") {}
+            }
+            
+            Section {
+                Button("Kill SpringBoard") {}
+                Button("Reboot Device") {}
+                Button("Erase All Content and Settings", role: .destructive) {}
+            } footer: {
+                Text("Note: Erasing All Content and Settings this way will NOT disassociate this device from Find My iPhone.")
+            }
+            
+            Section("Applications") {
+                NavigationLink("Phone") {}
+                NavigationLink("Settings App") {}
+                NavigationLink("RemoteUI") {}
             }
         }
     }
