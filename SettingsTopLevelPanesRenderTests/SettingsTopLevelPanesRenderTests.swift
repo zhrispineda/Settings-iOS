@@ -44,7 +44,7 @@ final class SettingsTopLevelPanesRenderTests: XCTestCase {
     @MainActor
     func testSearchField() throws {
         let app = XCUIApplication()
-        app.activate()
+        app.launch()
 
         let searchField = app.searchFields["Search"]
         XCTAssertTrue(searchField.exists, "Search field does not exist")
@@ -58,7 +58,7 @@ final class SettingsTopLevelPanesRenderTests: XCTestCase {
     @MainActor
     func testSearchSuggestions() throws {
         let app = XCUIApplication()
-        app.activate()
+        app.launch()
         
         let buttons = ["Sounds & Haptics", "Notifications", "Focus", "Screen Time"]
 
@@ -193,7 +193,7 @@ final class SettingsTopLevelPanesRenderTests: XCTestCase {
     @MainActor
     func testSettingsFocusNavigate() throws {
         let app = XCUIApplication()
-        app.activate()
+        app.launch()
 
         let battery = app.buttons["Battery"]
         XCTAssertTrue(battery.exists, "Battery link not found")
