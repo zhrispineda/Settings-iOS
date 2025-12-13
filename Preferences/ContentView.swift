@@ -103,6 +103,7 @@ struct ContentView: View {
                 model.selection?.destination
             }
         }
+        .accessibilityIdentifier("SettingsList")
         .overlay {
             if UIDevice.`apple-internal-install` {
                 VStack {

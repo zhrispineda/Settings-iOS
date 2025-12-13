@@ -63,6 +63,7 @@ struct SettingsGroup: View {
                                     selected: false
                                 )
                             }
+                            .accessibilityIdentifier("com.apple.settings.\(setting.type)")
                             .navigationLinkIndicatorVisibility(.visible)
                             .foregroundStyle(.primary)
                             .padding(.vertical, -5)

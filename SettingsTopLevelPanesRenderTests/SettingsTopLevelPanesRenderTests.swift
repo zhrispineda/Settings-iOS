@@ -20,24 +20,24 @@ final class SettingsTopLevelPanesRenderTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
     
-    @MainActor
-    func testExample() throws {
-        // UI tests must launch the application that they test.
+    /// Checks if Settings > Camera is available
+    func testSettingsAppsCameraIsRendered() throws {
         let app = XCUIApplication()
         app.launch()
         
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // MARK: Interact with SLink buttons (Radio section)
-        let buttons = ["Wi-Fi", "Bluetooth", "Cellular", "Battery"]
+        let list = app.otherElements["SettingsList"]
+        XCTAssertTrue(list.exists, "Settings list not found")
         
-        for button in buttons {
-            let btn = app.buttons.containing(.staticText, identifier: button).firstMatch
-            if !btn.exists {
-                XCTAssertTrue(btn.exists, "\(button) does not exist")
-            }
-            btn.tap()
-            app.navigationBars.buttons.element(boundBy: 0).tap()
+        let cameraButton = app.buttons["com.apple.settings.camera"]
+        var swipeCount = 0
+        
+        while !cameraButton.exists && swipeCount < 5 {
+            list.swipeUp(velocity: .slow)
+            swipeCount += 1
         }
+        
+        XCTAssertTrue(cameraButton.exists, "Camera link not found")
+        cameraButton.tap()
     }
     
     // MARK: Search TextField
@@ -88,9 +88,11 @@ final class SettingsTopLevelPanesRenderTests: XCTestCase {
     func testGeneral() throws {
         let app = XCUIApplication()
         app.launch()
+        
         let elementsQuery = app.otherElements
         var element = elementsQuery.element(boundBy: 20)
         element.swipeUp()
+        
         let generalButton = app.buttons["General"]
         XCTAssertTrue(generalButton.exists, "General link not found")
         generalButton.tap()
