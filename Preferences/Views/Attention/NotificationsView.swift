@@ -167,8 +167,11 @@ struct NotificationsView: View {
                 Text("NOTIFICATION_STYLE".localized(path: path, table: table))
             }
             
-            // MARK: Government Alerts Section
             if UIDevice.iPhone {
+                Section("Enhanced Alerts") {
+                    NavigationLink("Enhanced Safety Alerts", destination: EnhancedSafetyAlertsView())
+                }
+                
                 Section("Government Alerts".localized(path: extensionPath)) {
                     ForEach(alertCells) { alert in
                         let binding = Binding(
@@ -186,8 +189,12 @@ struct NotificationsView: View {
                                     isOn: binding
                                 )
                             ) {
-                                LabeledContent(alert.name.localized(path: extensionPath),
-                                               value: binding.wrappedValue ? "On" : "Off")
+                                LabeledContent(
+                                    alert.name.localized(path: extensionPath),
+                                    value: binding.wrappedValue
+                                        ? "ON".localized(path: path, table: table)
+                                        : "OFF".localized(path: path, table: table)
+                                )
                             }
                         } else {
                             Toggle(alert.name, isOn: binding)
@@ -269,12 +276,10 @@ struct NotificationsView: View {
 
 /// The view for Settings > Notifications > Emergency Alerts
 private struct AlertsDetailView: View {
-    @AppStorage("LocalAwarenessToggle") private var localAwareness = true
     @AppStorage("AlwaysPlaySoundToggle") private var alwaysPlaySound = false
     let label: String
     @Binding var isOn: Bool
     private let path = "/System/Library/PreferenceBundles/EmergencyAlertExtension.bundle"
-    private let table = "Localizable~IGNEOUS"
 
     var body: some View {
         CustomList(title: label) {
@@ -283,12 +288,6 @@ private struct AlertsDetailView: View {
             }
             
             if isOn {
-                Section {
-                    Toggle("ENHANCED_DELIVERY_SWITCH_NAME".localized(path: path, table: table), isOn: $localAwareness)
-                } footer: {
-                    Text("ENHANCED_DELIVERY_DESCRIPTION".localized(path: path, table: table))
-                }
-                
                 Section {
                     Toggle("ALWAYS_DELIVER".localized(path: path), isOn: $alwaysPlaySound)
                 } footer: {
