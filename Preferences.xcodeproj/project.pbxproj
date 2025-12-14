@@ -163,6 +163,7 @@
 		83DF95762B84266E00AEEB63 /* SiriDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DF95752B84266E00AEEB63 /* SiriDetailView.swift */; };
 		83DFA56D2DA9E17E004C3DD5 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DFA56C2DA9E17E004C3DD5 /* UIViewControllerExtensions.swift */; };
 		83E2ADA72CA1D80A00DFED0C /* RecordVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E2ADA62CA1D80A00DFED0C /* RecordVideoView.swift */; };
+		83EAC9042EEE4565007362F9 /* EnhancedSafetyAlertsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EAC9032EEE4565007362F9 /* EnhancedSafetyAlertsView.swift */; };
 		83EC895F2CA0F8B500389F3B /* CameraControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EC895E2CA0F8B500389F3B /* CameraControlView.swift */; };
 		83F388632D0B6E8500085103 /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F388622D0B6E8500085103 /* IconView.swift */; };
 		83F3F6A12B7D12B6003CC310 /* DictionaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3F6A02B7D12B6003CC310 /* DictionaryView.swift */; };
@@ -363,6 +364,7 @@
 		83DF95752B84266E00AEEB63 /* SiriDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriDetailView.swift; sourceTree = "<group>"; };
 		83DFA56C2DA9E17E004C3DD5 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		83E2ADA62CA1D80A00DFED0C /* RecordVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordVideoView.swift; sourceTree = "<group>"; };
+		83EAC9032EEE4565007362F9 /* EnhancedSafetyAlertsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnhancedSafetyAlertsView.swift; sourceTree = "<group>"; };
 		83EC895E2CA0F8B500389F3B /* CameraControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraControlView.swift; sourceTree = "<group>"; };
 		83F388622D0B6E8500085103 /* IconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
 		83F3F6A02B7D12B6003CC310 /* DictionaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryView.swift; sourceTree = "<group>"; };
@@ -814,6 +816,7 @@
 				838AF99B2D629138008FFA8B /* ScreenSharingView.swift */,
 				83B12C112D65242800DF6EF6 /* AnnounceNotificationsView.swift */,
 				83B12C132D6525A100DF6EF6 /* SiriSuggestionsView.swift */,
+				83EAC9032EEE4565007362F9 /* EnhancedSafetyAlertsView.swift */,
 			);
 			path = Notifications;
 			sourceTree = "<group>";
@@ -1125,6 +1128,7 @@
 				8361A2292C19308600A7D5CC /* Placard.swift in Sources */,
 				830DA8022B9BE17B001EE76F /* ParentGuardianSignInView.swift in Sources */,
 				83D2687A2BD7303800A86DA9 /* DisplayBrightnessView.swift in Sources */,
+				83EAC9042EEE4565007362F9 /* EnhancedSafetyAlertsView.swift in Sources */,
 				837D1E282B96BF9B00EDA7ED /* SelectSignInOptionView.swift in Sources */,
 				83B619D12B941C4F00EFEA90 /* AlwaysAllowedView.swift in Sources */,
 				83B619C92B93DEBD00EFEA90 /* ScreenDistanceView.swift in Sources */,
@@ -1466,7 +1470,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1353.1.11.100;
 				DEVELOPMENT_ASSET_PATHS = "\"Preferences/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 46J8C783K4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Preferences/Info.plist;
