@@ -16,6 +16,7 @@ struct ContentView: View {
     @State private var showingSignInError = false
     @State private var showingSignInSheet = false
     @State private var showingResearchSheet = false
+    @State private var showingSupervisedSheet = false
     
     var body: some View {
         @Bindable var model = model
@@ -30,6 +31,14 @@ struct ContentView: View {
                         )
                     }
                 }
+                
+//                Section {} footer: {
+//                    Text(.init(String(localized: "Device Supervision Footer with Organization Name: %@").replacing(
+//                        "supervisedDevice://",
+//                        with: "pref://supervisedDevice"))
+//                    )
+//                }
+                
                 Section {
                     Button {
                         if model.isConnected {
@@ -141,6 +150,8 @@ struct ContentView: View {
         .onOpenURL { url in
             if url.absoluteString == "pref://securityResearchDevice" {
                 showingResearchSheet = true
+            } else if url.absoluteString == "pref://supervisedDevice" {
+                showingSupervisedSheet = true
             }
         }
         .sheet(isPresented: $model.showingDebugMenu) {
@@ -163,6 +174,9 @@ struct ContentView: View {
                     }
                 }
             }
+        }
+        .sheet(isPresented: $showingSupervisedSheet) {
+            DeviceSupervisionView()
         }
     }
 }
