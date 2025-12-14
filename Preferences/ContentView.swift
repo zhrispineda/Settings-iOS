@@ -23,7 +23,12 @@ struct ContentView: View {
         NavigationSplitView {
             List(selection: $model.selection) {
                 if UIDevice.ResearchFuse {
-                    Section {} footer: { Text("SECURITY_RESEARCH_DEVICE_FOOTER") }
+                    Section {} footer: {
+                        Text(.init(String(localized: "SECURITY_RESEARCH_DEVICE_FOOTER").replacing(
+                            "securityResearchDevice://",
+                            with: "pref://securityResearchDevice"))
+                        )
+                    }
                 }
                 Section {
                     Button {
