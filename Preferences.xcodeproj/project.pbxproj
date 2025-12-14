@@ -17,7 +17,6 @@
 		830DA8022B9BE17B001EE76F /* ParentGuardianSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830DA8012B9BE17B001EE76F /* ParentGuardianSignInView.swift */; };
 		8310C70E2EA179CA00C0B749 /* UIApplicationShortcutIconHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8310C70D2EA179C600C0B749 /* UIApplicationShortcutIconHelper.m */; };
 		8310DD7F2E5FE7F700BB9308 /* BatteryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8310DD7E2E5FE7F700BB9308 /* BatteryView.swift */; };
-		8311D3AA2EA6B7BC00915C49 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 8311D3A92EA6B7BC00915C49 /* Localizable.xcstrings */; };
 		8311D3B22EA716E300915C49 /* InternalSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8311D3B12EA716E300915C49 /* InternalSettingsView.swift */; };
 		8311D3B42EA7170500915C49 /* CarrierSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8311D3B32EA7170500915C49 /* CarrierSettingsView.swift */; };
 		8319CE492B86D198007EC822 /* PasswordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8319CE482B86D198007EC822 /* PasswordsView.swift */; };
@@ -174,6 +173,7 @@
 		83F3F7C12ED00C4600CC1444 /* ContinuityDebuggingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3F7C02ED00C4600CC1444 /* ContinuityDebuggingView.swift */; };
 		83F3F7C32ED00D7900CC1444 /* AccessoryDeveloperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3F7C22ED00D7900CC1444 /* AccessoryDeveloperView.swift */; };
 		83F3F80B2ED10E1200CC1444 /* FitnessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F3F80A2ED10E1200CC1444 /* FitnessView.swift */; };
+		83F40FA62EEE9F5D0029D88C /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 83F40FA52EEE9F5D0029D88C /* Localizable.xcstrings */; };
 		83F455B32C3C8CA5009DB157 /* LocationServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F455B22C3C8CA5009DB157 /* LocationServicesView.swift */; };
 		83F516BA2C21D88B0004E87A /* StandByView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F516B92C21D88B0004E87A /* StandByView.swift */; };
 		83F516C02C21EA8C0004E87A /* AppStoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F516BF2C21EA8C0004E87A /* AppStoreView.swift */; };
@@ -212,7 +212,6 @@
 		8310C70C2EA1786A00C0B749 /* Preferences-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Preferences-Bridging-Header.h"; sourceTree = "<group>"; };
 		8310C70D2EA179C600C0B749 /* UIApplicationShortcutIconHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIApplicationShortcutIconHelper.m; sourceTree = "<group>"; };
 		8310DD7E2E5FE7F700BB9308 /* BatteryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryView.swift; sourceTree = "<group>"; };
-		8311D3A92EA6B7BC00915C49 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		8311D3B12EA716E300915C49 /* InternalSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalSettingsView.swift; sourceTree = "<group>"; };
 		8311D3B32EA7170500915C49 /* CarrierSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrierSettingsView.swift; sourceTree = "<group>"; };
 		8319CE482B86D198007EC822 /* PasswordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordsView.swift; sourceTree = "<group>"; };
@@ -375,6 +374,7 @@
 		83F3F7C02ED00C4600CC1444 /* ContinuityDebuggingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinuityDebuggingView.swift; sourceTree = "<group>"; };
 		83F3F7C22ED00D7900CC1444 /* AccessoryDeveloperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessoryDeveloperView.swift; sourceTree = "<group>"; };
 		83F3F80A2ED10E1200CC1444 /* FitnessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessView.swift; sourceTree = "<group>"; };
+		83F40FA52EEE9F5D0029D88C /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		83F455B22C3C8CA5009DB157 /* LocationServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServicesView.swift; sourceTree = "<group>"; };
 		83F516B92C21D88B0004E87A /* StandByView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandByView.swift; sourceTree = "<group>"; };
 		83F516BF2C21EA8C0004E87A /* AppStoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreView.swift; sourceTree = "<group>"; };
@@ -804,7 +804,7 @@
 			children = (
 				839AD33A2E8AFC6A00DDD069 /* iOSReadMeSummary.html */,
 				839AD33D2E8AFC7300DDD069 /* iPadOSReadMeSummary.html */,
-				8311D3A92EA6B7BC00915C49 /* Localizable.xcstrings */,
+				83F40FA52EEE9F5D0029D88C /* Localizable.xcstrings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -1030,12 +1030,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				839AD33F2E8AFC7300DDD069 /* iPadOSReadMeSummary.html in Resources */,
-				8311D3AA2EA6B7BC00915C49 /* Localizable.xcstrings in Resources */,
 				83A851BE2E0A4BD70041A3E6 /* SettingsApp.icon in Resources */,
 				833F0AD72B744D190036EAD2 /* Preview Assets.xcassets in Resources */,
 				83AA2B032EDE2596003A924A /* iOS26Light.png in Resources */,
 				83AA2B042EDE2596003A924A /* iPadOS26Light.png in Resources */,
 				83AA2B052EDE2596003A924A /* iPadOS26Dark.png in Resources */,
+				83F40FA62EEE9F5D0029D88C /* Localizable.xcstrings in Resources */,
 				83AA2B062EDE2596003A924A /* iOS26Dark.png in Resources */,
 				839AD33C2E8AFC6A00DDD069 /* iOSReadMeSummary.html in Resources */,
 				833F0AD42B744D190036EAD2 /* Assets.xcassets in Resources */,

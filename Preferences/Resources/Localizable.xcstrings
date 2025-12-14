@@ -12639,7 +12639,7 @@
         "te" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "డిస్‌కనెక్ట్ చేస్తోంది…"
+            "value" : "డిస్‌కనెక్ట్ చేయబడుతోంది…"
           }
         },
         "th" : {
@@ -13265,6 +13265,12 @@
                 "stringUnit" : {
                   "state" : "translated",
                   "value" : "Concluído"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "OK"
                 }
               }
             }
@@ -26106,13 +26112,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "هذا الـ iPad هو جهاز بحث أمني. [معرفة المزيد…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "هذا الـ iPhone هو جهاز بحث أمني. [معرفة المزيد…](securityResearchDevice://)"
                 }
               }
@@ -26124,13 +26130,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Този iPad е предназначен за проучване на безопасността. [Научете повече…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Този iPhone е предназначен за проучване на безопасността. [Научете повече…](securityResearchDevice://)"
                 }
               }
@@ -26142,13 +26148,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "এই iPad-টি একটি সুরক্ষা সম্পর্কিত গবেষণার ডিভাইস। [আরও জানুন…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "এই iPhone-টি একটি সুরক্ষা সম্পর্কিত গবেষণার ডিভাইস। [আরও জানুন…](securityResearchDevice://)"
                 }
               }
@@ -26160,13 +26166,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Aquest iPad és un dispositiu de recerca de seguretat. [Més informació…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Aquest iPhone és un dispositiu de recerca de seguretat. [Més informació…](securityResearchDevice://)"
                 }
               }
@@ -26178,13 +26184,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Tento iPad je zařízení vyhrazené pro výzkum zabezpečení. [Další informace…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Tento iPhone je zařízení vyhrazené pro výzkum zabezpečení. [Další informace…](securityResearchDevice://)"
                 }
               }
@@ -26196,13 +26202,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Denne iPad er en enhed til sikkerhedsforskning. [Læs mere…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Denne iPhone er en enhed til sikkerhedsforskning. [Læs mere…](securityResearchDevice://)"
                 }
               }
@@ -26214,13 +26220,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Dieses iPad ist ein Sicherheitsforschungsgerät. [Weitere Infos …](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Dieses iPhone ist ein Sicherheitsforschungsgerät. [Weitere Infos …](securityResearchDevice://)"
                 }
               }
@@ -26232,13 +26238,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Αυτό το iPad είναι συσκευή έρευνας ασφάλειας. [Μάθετε περισσότερα…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Αυτό το iPhone είναι συσκευή έρευνας ασφάλειας. [Μάθετε περισσότερα…](securityResearchDevice://)"
                 }
               }
@@ -26251,13 +26257,13 @@
               "ipad" : {
                 "stringUnit" : {
                   "state" : "translated",
-                  "value" : "This iPad is a security research device. [Learn more…](pref://securityResearchDevice)"
+                  "value" : "This iPad is a security research device. [Learn more…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
                   "state" : "translated",
-                  "value" : "This iPhone is a security research device. [Learn more…](pref://securityResearchDevice)"
+                  "value" : "This iPhone is a security research device. [Learn more…](securityResearchDevice://)"
                 }
               }
             }
@@ -26268,13 +26274,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "This iPad is a security research device. [Learn more…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "This iPhone is a security research device. [Learn more…](securityResearchDevice://)"
                 }
               }
@@ -26286,13 +26292,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "This iPad is a security research device. [Learn more…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "This iPhone is a security research device. [Learn more…](securityResearchDevice://)"
                 }
               }
@@ -26304,13 +26310,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "This iPad is a security research device. [Learn more…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "This iPhone is a security research device. [Learn more…](securityResearchDevice://)"
                 }
               }
@@ -26322,13 +26328,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Este iPad es un dispositivo de investigación de seguridad. [Más información…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Este iPhone es un dispositivo de investigación de seguridad. [Más información…](securityResearchDevice://)"
                 }
               }
@@ -26340,13 +26346,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Este iPad es un dispositivo de investigación de seguridad. [Obtén detalles…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Este iPhone es un dispositivo de investigación de seguridad. [Obtén detalles…](securityResearchDevice://)"
                 }
               }
@@ -26358,13 +26364,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Este iPad es un dispositivo de investigación de seguridad. [Obtén detalles…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Este iPhone es un dispositivo de investigación de seguridad. [Obtén detalles…](securityResearchDevice://)"
                 }
               }
@@ -26376,13 +26382,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Tämä iPad on laite, jolla tutkitaan suojausta. [Lisätietoja…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Tämä iPhone on laite, jolla tutkitaan suojausta. [Lisätietoja…](securityResearchDevice://)"
                 }
               }
@@ -26394,13 +26400,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Cet iPad est un appareil du programme de recherche sur la sécurité. [En savoir plus…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Cet iPhone est un appareil du programme de recherche sur la sécurité. [En savoir plus…](securityResearchDevice://)"
                 }
               }
@@ -26412,13 +26418,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Cet iPad est un appareil destiné à la recherche sur la sécurité. [En savoir plus…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Cet iPhone est un appareil destiné à la recherche sur la sécurité. [En savoir plus…](securityResearchDevice://)"
                 }
               }
@@ -26430,13 +26436,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "આ iPad સુરક્ષા સંશોધન ડિવાઇસ છે. [વધુ જાણો…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "આ iPhone સુરક્ષા સંશોધન ડિવાઇસ છે. [વધુ જાણો…](securityResearchDevice://)"
                 }
               }
@@ -26448,13 +26454,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "‏iPad זה משמש למטרות מחקרי אבטחה. [פרטים נוספים…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "‏iPhone זה משמש למטרות מחקרי אבטחה. [פרטים נוספים…](securityResearchDevice://)"
                 }
               }
@@ -26466,13 +26472,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "यह iPad एक सुरक्षा शोध डिवाइस है। [अधिक जानें…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "यह iPhone एक सुरक्षा शोध डिवाइस है। [अधिक जानें…](securityResearchDevice://)"
                 }
               }
@@ -26484,13 +26490,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Ovaj iPad je uređaj za sigurnosno istraživanje. [Saznajte više…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Ovaj iPhone je uređaj za sigurnosno istraživanje. [Saznajte više…](securityResearchDevice://)"
                 }
               }
@@ -26502,13 +26508,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Ez az iPad egy biztonsági kutatási célra használt eszköz. [Bővebben…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Ez az iPhone egy biztonsági kutatási célra használt eszköz. [Bővebben…](securityResearchDevice://)"
                 }
               }
@@ -26520,13 +26526,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "iPad ini adalah perangkat riset keamanan. [Lebih lanjut…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "iPhone ini adalah perangkat riset keamanan. [Lebih lanjut…](securityResearchDevice://)"
                 }
               }
@@ -26538,13 +26544,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Questo iPad è un dispositivo di ricerca sulla sicurezza. [Scopri di più…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Questo iPhone è un dispositivo di ricerca sulla sicurezza. [Scopri di più…](securityResearchDevice://)"
                 }
               }
@@ -26556,13 +26562,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "このiPadはセキュリティ研究用のデバイスです。[詳しい情報…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "このiPhoneはセキュリティ研究用のデバイスです。[詳しい情報…](securityResearchDevice://)"
                 }
               }
@@ -26574,13 +26580,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Бұл iPad — қауіпсіздікті зерттеу құрылғысы. [Толығырақ ақпарат алу…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Бұл iPhone — қауіпсіздікті зерттеу құрылғысы. [Толығырақ ақпарат алу…](securityResearchDevice://)"
                 }
               }
@@ -26592,13 +26598,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "ಈ iPad ಒಂದು ಭದ್ರತಾ ಸಂಶೋಧನೆಯ ಸಾಧನವಾಗಿದೆ. [ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "ಈ iPhone ಒಂದು ಭದ್ರತಾ ಸಂಶೋಧನೆಯ ಸಾಧನವಾಗಿದೆ. [ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ…](securityResearchDevice://)"
                 }
               }
@@ -26610,13 +26616,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "이 iPad는 보안 리서치 기기입니다. [더 알⁠아⁠보⁠기…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "이 iPhone은 보안 리서치 기기입니다. [더 알⁠아⁠보⁠기…](securityResearchDevice://)"
                 }
               }
@@ -26628,13 +26634,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Šis „iPad“ yra saugos tyrimų įrenginys. [Sužinokite daugiau…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Šis „iPhone“ yra saugos tyrimų įrenginys. [Sužinokite daugiau…](securityResearchDevice://)"
                 }
               }
@@ -26646,13 +26652,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "ഈ iPad ഒരു സുരക്ഷാ ഗവേഷണ ഡിവൈസാണ് [കൂടുതൽ അറിയൂ…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "ഈ iPhone ഒരു സുരക്ഷാ ഗവേഷണ ഡിവൈസാണ്. [കൂടുതൽ അറിയൂ…](securityResearchDevice://)"
                 }
               }
@@ -26664,13 +26670,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "हा iPad सिक्युरिटी रीसर्च डिव्हाइस आहे. [अधिक जाणून घ्या…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "हा iPhone सिक्युरिटी रीसर्च डिव्हाइस आहे. [अधिक जाणून घ्या…](securityResearchDevice://)"
                 }
               }
@@ -26682,13 +26688,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "iPad ini ialah peranti penyelidikan keselamatan. [Ketahui lebih lanjut…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "iPhone ini ialah peranti penyelidikan keselamatan. [Ketahui lebih lanjut…](securityResearchDevice://)"
                 }
               }
@@ -26700,13 +26706,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Denne iPaden er en SRD-enhet. [Finn ut mer…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Denne iPhonen er en SRD-enhet. [Finn ut mer…](securityResearchDevice://)"
                 }
               }
@@ -26718,13 +26724,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Deze iPad is een apparaat voor veiligheidsonderzoek. [Meer informatie…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Deze iPhone is een apparaat voor veiligheidsonderzoek. [Meer informatie…](securityResearchDevice://)"
                 }
               }
@@ -26736,13 +26742,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "ଏହି iPad ହେଉଛି ଏକ ସୁରକ୍ଷା ରିସର୍ଚ୍ଚ୍ ଡିଭାଇସ୍। [ଅଧିକ ଜାଣନ୍ତୁ…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "ଏହି iPhone ହେଉଛି ଏକ ସୁରକ୍ଷା ରିସର୍ଚ୍ଚ୍ ଡିଭାଇସ୍। [ଅଧିକ ଜାଣନ୍ତୁ…](securityResearchDevice://)"
                 }
               }
@@ -26754,13 +26760,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "ਇਹ iPad ਇੱਕ ਸੁਰੱਖਿਆ ਖੋਜ ਡਿਵਾਈਸ ਹੈ। [ਹੋਰ ਜਾਣੋ…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "ਇਹ iPhone ਇੱਕ ਸੁਰੱਖਿਆ ਖੋਜ ਡਿਵਾਈਸ ਹੈ। [ਹੋਰ ਜਾਣੋ…](securityResearchDevice://)"
                 }
               }
@@ -26772,13 +26778,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Ten iPad jest używany w badaniach dotyczących bezpieczeństwa. [Więcej informacji…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Ten iPhone jest używany w badaniach dotyczących bezpieczeństwa. [Więcej informacji…](securityResearchDevice://)"
                 }
               }
@@ -26790,13 +26796,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Este iPad é um dispositivo de pesquisa de segurança. [Saiba mais…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Este iPhone é um dispositivo de pesquisa de segurança. [Saiba mais…](securityResearchDevice://)"
                 }
               }
@@ -26808,13 +26814,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Este iPad é um dispositivo de investigação de segurança. [Saiba mais…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Este iPhone é um dispositivo de investigação de segurança. [Saiba mais…](securityResearchDevice://)"
                 }
               }
@@ -26826,13 +26832,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Acest iPad este un dispozitiv de cercetare în domeniul securității. [Mai multe…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Acest iPhone este un dispozitiv de cercetare în domeniul securității. [Mai multe…](securityResearchDevice://)"
                 }
               }
@@ -26844,13 +26850,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Этот iPad предназначен для исследования защиты и безопасности. [Подробнее…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Этот iPhone предназначен для исследования защиты и безопасности. [Подробнее…](securityResearchDevice://)"
                 }
               }
@@ -26862,13 +26868,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Tento iPad je určený na výskum bezpečnosti. [Viac informácií…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Tento iPhone je určený na výskum bezpečnosti. [Viac informácií…](securityResearchDevice://)"
                 }
               }
@@ -26880,13 +26886,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Ta iPad je naprava za varnostne raziskave. [Več o tem …](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Ta iPhone je naprava za varnostne raziskave. [Več o tem …](securityResearchDevice://)"
                 }
               }
@@ -26898,13 +26904,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Denna iPad är en enhet för säkerhetsforskning. [Läs mer…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Denna iPhone är en enhet för säkerhetsforskning. [Läs mer…](securityResearchDevice://)"
                 }
               }
@@ -26916,13 +26922,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "இந்த iPad ஒரு பாதுகாப்பு ஆராய்ச்சி சாதனம். [மேலும் அறிக…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "இந்த iPhone ஒரு பாதுகாப்பு ஆராய்ச்சி சாதனம். [மேலும் அறிக…](securityResearchDevice://)"
                 }
               }
@@ -26934,13 +26940,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "ఈ iPad అనేది భద్రతా పరిశోధన డివైజ్. [మరింత తెలుసుకోండి…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "ఈ iPhone అనేది భద్రతా పరిశోధన డివైజ్. [మరింత తెలుసుకోండి…](securityResearchDevice://)"
                 }
               }
@@ -26952,13 +26958,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "iPad เครื่องนี้เป็นอุปกรณ์การวิจัยความปลอดภัย [เรียนรู้เพิ่มเติม…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "iPhone เครื่องนี้เป็นอุปกรณ์การวิจัยความปลอดภัย [เรียนรู้เพิ่มเติม…](securityResearchDevice://)"
                 }
               }
@@ -26970,13 +26976,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Bu iPad bir güvenlik araştırma aygıtı. [Daha fazla bilgi…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Bu iPhone bir güvenlik araştırma aygıtı. [Daha fazla bilgi…](securityResearchDevice://)"
                 }
               }
@@ -26988,13 +26994,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Цей iPad використовується для пошуку проблем безпеки. [Докладніше…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "Цей iPhone використовується для пошуку проблем безпеки. [Докладніше…](securityResearchDevice://)"
                 }
               }
@@ -27006,13 +27012,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "یہ ‏iPad سیکورٹی کی تحقیق کرنے والا ڈیوائس ہے۔ ‏[مزید جانیں…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "یہ ‏iPhone سیکورٹی کی تحقیق کرنے والا ڈیوائس ہے۔ ‏[مزید جانیں…](securityResearchDevice://)"
                 }
               }
@@ -27024,13 +27030,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "iPad này là một thiết bị nghiên cứu bảo mật. [Tìm hiểu thêm…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "iPhone này là một thiết bị nghiên cứu bảo mật. [Tìm hiểu thêm…](securityResearchDevice://)"
                 }
               }
@@ -27042,13 +27048,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "此iPad为安全性研究设备。[进一步了解…](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "此iPhone为安全性研究设备。[进一步了解…](securityResearchDevice://)"
                 }
               }
@@ -27060,13 +27066,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "此iPad是保安研究裝置。[進一步了解⋯](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "此iPhone是保安研究裝置。[進一步了解⋯](securityResearchDevice://)"
                 }
               }
@@ -27078,13 +27084,13 @@
             "device" : {
               "ipad" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "此iPad為安全研究裝置。[更多內容⋯](securityResearchDevice://)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
+                  "state" : "translated",
                   "value" : "此iPhone為安全研究裝置。[更多內容⋯](securityResearchDevice://)"
                 }
               }
@@ -27759,6 +27765,341 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "設定"
+          }
+        }
+      }
+    },
+    "Side Button" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الزر الجانبي"
+          }
+        },
+        "bg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Страничен бутон"
+          }
+        },
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "সাইড বাটন"
+          }
+        },
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Botó lateral"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Postranní tlačítko"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sideknap"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seitentaste"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πλευρικό κουμπί"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Side Button"
+          }
+        },
+        "en_AU" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Side Button"
+          }
+        },
+        "en_GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Side Button"
+          }
+        },
+        "en_IN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Side Button"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Botón lateral"
+          }
+        },
+        "es_419" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Botón lateral"
+          }
+        },
+        "es_US" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Botón lateral"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sivupainike"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bouton latéral"
+          }
+        },
+        "fr_CA" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bouton latéral"
+          }
+        },
+        "gu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "સાઇડ બટન"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "כפתור הצד"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "साइड बटन"
+          }
+        },
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bočna tipka"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oldalsó gomb"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tombol Samping"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tasto laterale"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "サイドボタン"
+          }
+        },
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Бүйірлік түйме"
+          }
+        },
+        "kn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ಸೈಡ್ ಬಟನ್"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "측면 버튼"
+          }
+        },
+        "lt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Šoninis mygtukas"
+          }
+        },
+        "ml" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "സൈഡ് ബട്ടൺ"
+          }
+        },
+        "mr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Side साइड बटण"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Butang Sisi"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sideknapp"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zijknop"
+          }
+        },
+        "or" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ସାଇଡ୍ ବଟନ୍‌"
+          }
+        },
+        "pa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ਸਾਈਡ ਬਟਨ"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Przycisk boczny"
+          }
+        },
+        "pt_BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Botão Lateral"
+          }
+        },
+        "pt_PT" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Botão lateral"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buton lateral"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Боковая кнопка"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bočné tlačidlo"
+          }
+        },
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stranski gumb"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sidoknapp"
+          }
+        },
+        "ta" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "பக்கவாட்டு பட்டன்"
+          }
+        },
+        "te" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "సైడ్ బటన్"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ปุ่มด้านข้าง"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yan Düğme"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Бічна кнопка"
+          }
+        },
+        "ur" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سائیڈ بٹن"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nút sườn"
+          }
+        },
+        "zh_CN" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "侧边按钮"
+          }
+        },
+        "zh_HK" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "側邊按鈕"
+          }
+        },
+        "zh_TW" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "側邊按鈕"
           }
         }
       }
