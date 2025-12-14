@@ -124,6 +124,7 @@
 		83A3E6952CAC3091006F4643 /* FocalLengthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A3E6942CAC3091006F4643 /* FocalLengthView.swift */; };
 		83A5DA512C2335580012ACB3 /* PermissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5DA502C2335580012ACB3 /* PermissionsView.swift */; };
 		83A851BE2E0A4BD70041A3E6 /* SettingsApp.icon in Resources */ = {isa = PBXBuildFile; fileRef = 83A851BD2E0A4BD70041A3E6 /* SettingsApp.icon */; };
+		83A9B3082EEF7134000903F9 /* DeviceSupervisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A9B3072EEF7134000903F9 /* DeviceSupervisionView.swift */; };
 		83AA2B032EDE2596003A924A /* iOS26Light.png in Resources */ = {isa = PBXBuildFile; fileRef = 83AA2B002EDE2596003A924A /* iOS26Light.png */; };
 		83AA2B042EDE2596003A924A /* iPadOS26Light.png in Resources */ = {isa = PBXBuildFile; fileRef = 83AA2B022EDE2596003A924A /* iPadOS26Light.png */; };
 		83AA2B052EDE2596003A924A /* iPadOS26Dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 83AA2B012EDE2596003A924A /* iPadOS26Dark.png */; };
@@ -323,6 +324,7 @@
 		83A3E6942CAC3091006F4643 /* FocalLengthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocalLengthView.swift; sourceTree = "<group>"; };
 		83A5DA502C2335580012ACB3 /* PermissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsView.swift; sourceTree = "<group>"; };
 		83A851BD2E0A4BD70041A3E6 /* SettingsApp.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = SettingsApp.icon; sourceTree = "<group>"; };
+		83A9B3072EEF7134000903F9 /* DeviceSupervisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSupervisionView.swift; sourceTree = "<group>"; };
 		83AA2AFF2EDE2596003A924A /* iOS26Dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iOS26Dark.png; sourceTree = "<group>"; };
 		83AA2B002EDE2596003A924A /* iOS26Light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iOS26Light.png; sourceTree = "<group>"; };
 		83AA2B012EDE2596003A924A /* iPadOS26Dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPadOS26Dark.png; sourceTree = "<group>"; };
@@ -774,6 +776,7 @@
 			children = (
 				83AE01DC2D65637C00724A34 /* AppleAccountSection.swift */,
 				83AE01DA2D65628700724A34 /* SettingsGroup.swift */,
+				83A9B3072EEF7134000903F9 /* DeviceSupervisionView.swift */,
 			);
 			path = Layout;
 			sourceTree = "<group>";
@@ -1144,6 +1147,7 @@
 				833854F72C1648CD00339C4F /* SoftwareUpdateView.swift in Sources */,
 				8373E7342B9162BD004285EA /* ScreenDistanceSheetView.swift in Sources */,
 				836A7E8B2B995E4000FA3223 /* ForgotPasswordView.swift in Sources */,
+				83A9B3082EEF7134000903F9 /* DeviceSupervisionView.swift in Sources */,
 				838273A52B7FD4CF000F4228 /* AppRestrictionsView.swift in Sources */,
 				8382739E2B7F25D4000F4228 /* ContentRestrictionsView.swift in Sources */,
 				8329284E2B8580B3006611CF /* HeadphoneAudioLevelsView.swift in Sources */,
