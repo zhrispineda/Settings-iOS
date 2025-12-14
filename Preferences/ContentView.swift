@@ -134,7 +134,7 @@ struct ContentView: View {
             }
         }
         .onOpenURL { url in
-            if url.absoluteString == "pref://" {
+            if url.absoluteString == "pref://securityResearchDevice" {
                 showingResearchSheet = true
             }
         }

@@ -26251,13 +26251,13 @@
               "ipad" : {
                 "stringUnit" : {
                   "state" : "translated",
-                  "value" : "This iPad is a security research device. [Learn more…](pref://)"
+                  "value" : "This iPad is a security research device. [Learn more…](pref://securityResearchDevice)"
                 }
               },
               "iphone" : {
                 "stringUnit" : {
                   "state" : "translated",
-                  "value" : "This iPhone is a security research device. [Learn more…](pref://)"
+                  "value" : "This iPhone is a security research device. [Learn more…](pref://securityResearchDevice)"
                 }
               }
             }

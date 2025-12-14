@@ -48,6 +48,14 @@ struct AirDropView: View {
                 } footer: {
                     Text("Continue to send and receive content when Wi-Fi is not available during AirDrop.".localized(path: path))
                 }
+                
+            }
+            
+            Section {
+                // Missing entitlements to open: contacts-sensitive:///list/other-known
+                Button("Manage Known AirDrop Contacts".localized(path: path)) {}
+            } footer: {
+                Text("You will automatically appear for 30 days to people you have shared a one-time code with.".localized(path: path))
             }
         }
         .onOpenURL { url in
