@@ -40,6 +40,66 @@ final class SettingsTopLevelPanesRenderTests: XCTestCase {
         cameraButton.tap()
     }
     
+    /// Checks if Settings > Bluetooth is available
+    func testSettingsBluetoothNavigation() throws {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let list = app.otherElements["SettingsList"]
+        XCTAssertTrue(list.exists, "Settings list not found")
+        
+        let bluetoothButton = app.buttons["com.apple.settings.bluetooth"]
+        var swipeCount = 0
+        
+        while !bluetoothButton.exists && swipeCount < 5 {
+            list.swipeUp(velocity: .slow)
+            swipeCount += 1
+        }
+        
+        XCTAssertTrue(bluetoothButton.exists, "Bluetooth link not found")
+        bluetoothButton.tap()
+    }
+    
+    /// Checks if Settings > Accessibility is available
+    func testSettingsTopLevelAccessibilityIsRendered() throws {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let list = app.otherElements["SettingsList"]
+        XCTAssertTrue(list.exists, "Settings list not found")
+        
+        let accessibilityButton = app.buttons["com.apple.settings.accessibility"]
+        var swipeCount = 0
+        
+        while !accessibilityButton.exists && swipeCount < 5 {
+            list.swipeUp(velocity: .slow)
+            swipeCount += 1
+        }
+        
+        XCTAssertTrue(accessibilityButton.exists, "Accessibility link not found")
+        accessibilityButton.tap()
+    }
+    
+    /// Checks if Settings > Action Button is available
+    func testSettingsTopLevelActionButtonIsRendered() throws {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let list = app.otherElements["SettingsList"]
+        XCTAssertTrue(list.exists, "Settings list not found")
+        
+        let actionButtonLink = app.buttons["com.apple.settings.actionButton"]
+        var swipeCount = 0
+        
+        while !actionButtonLink.exists && swipeCount < 5 {
+            list.swipeUp(velocity: .slow)
+            swipeCount += 1
+        }
+        
+        XCTAssertTrue(actionButtonLink.exists, "Action Button link not found")
+        actionButtonLink.tap()
+    }
+    
     // MARK: Search TextField
     @MainActor
     func testSearchField() throws {
@@ -212,12 +272,6 @@ final class SettingsTopLevelPanesRenderTests: XCTestCase {
         let back = app.buttons["BackButton"]
         XCTAssertTrue(back.exists, "Back button not found")
         back.firstMatch.tap()
-    }
-    
-    @MainActor
-    func testSettingsTopLevelAccessibilityIsRendered() throws {
-        let app = XCUIApplication()
-        app.launch()
     }
     
     @MainActor
