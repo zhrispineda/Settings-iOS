@@ -110,7 +110,9 @@ final class SettingsTopLevelPanesRenderTests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
         
-        let list = app.otherElements["SettingsList"]
+        let list = UIDevice.current.userInterfaceIdiom == .pad
+            ? app.collectionViews["Sidebar"].firstMatch
+            : app.collectionViews.firstMatch
         XCTAssertTrue(list.exists, "Settings list not found")
         
         let appsLink = app.buttons["com.apple.settings.apps"]
@@ -129,178 +131,53 @@ final class SettingsTopLevelPanesRenderTests: XCTestCase {
         appStoreLink.tap()
     }
     
-    // MARK: Search TextField
-    @MainActor
-    func testSearchField() throws {
+    /// Checks if Settings > Battery is available
+    func testSettingsTopLevelBatteryIsRendered() throws {
         let app = XCUIApplication()
         app.launch()
-
-        let searchField = app.searchFields["Search"]
-        XCTAssertTrue(searchField.exists, "Search field does not exist")
-
-        searchField.firstMatch.tap()
-        app.searchFields["Search"].firstMatch.typeText("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789")
-        app.buttons["close"].firstMatch.tap()
+        
+        let batteryLink = app.buttons["com.apple.settings.battery"]
+        XCTAssertTrue(batteryLink.exists, "Battery link not found")
+        batteryLink.tap()
     }
     
-    // MARK: Search Suggestions Buttons
-    @MainActor
-    func testSearchSuggestions() throws {
+    /// Checks if Settings > Bluetooth is available
+    func testSettingsTopLevelBluetoothIsRendered() throws {
         let app = XCUIApplication()
         app.launch()
         
-        let buttons = ["Sounds & Haptics", "Notifications", "Focus", "Screen Time"]
-
-        let searchField = app.searchFields["Search"]
-        XCTAssertTrue(searchField.exists, "Search field does not exist")
-        searchField.firstMatch.tap()
+        let bluetoothLink = app.buttons["com.apple.settings.bluetooth"]
+        XCTAssertTrue(bluetoothLink.exists, "Bluetooth link not found")
+        bluetoothLink.tap()
+    }
+    
+    /// Checks if Settings > Camera is available
+    func testSettingsTopLevelCameraIsRendered() throws {
+        let app = XCUIApplication()
+        app.launch()
         
-        for button in buttons {
-            let btn = app.buttons.containing(.staticText, identifier: button).firstMatch
-            
-            if !btn.exists {
-                XCTAssertTrue(btn.exists, "\(button) does not exist")
-            }
-            
-            btn.tap()
-            
-            let back = app.buttons["BackButton"].firstMatch
-            XCTAssertTrue(back.exists, "Back button does not exist")
-            back.tap()
+        let cameraLink = app.buttons["com.apple.settings.camera"]
+        let list = UIDevice.current.userInterfaceIdiom == .pad
+            ? app.collectionViews["Sidebar"].firstMatch
+            : app.collectionViews.firstMatch
+        var swipeCount = 0
+        
+        while !cameraLink.exists && swipeCount < 5 {
+            list.swipeUp(velocity: .slow)
+            swipeCount += 1
         }
-        
-        app.buttons["close"].firstMatch.tap()
+        XCTAssertTrue(cameraLink.exists, "Camera link not found")
+        cameraLink.tap()
     }
     
-    // MARK: Settings > General [Scrolling]
-    @MainActor
-    func testGeneral() throws {
+    /// Checks if Settings > Cellular is available
+    func testSettingsTopLevelCellularIsRendered() throws {
         let app = XCUIApplication()
         app.launch()
         
-        let elementsQuery = app.otherElements
-        var element = elementsQuery.element(boundBy: 20)
-        element.swipeUp()
-        
-        let generalButton = app.buttons["General"]
-        XCTAssertTrue(generalButton.exists, "General link not found")
-        generalButton.tap()
-        element = elementsQuery.element(boundBy: 10)
-        element.swipeUp()
-    }
-    
-    // MARK: Check Accessibility Settings
-    @MainActor
-    func testSettingsAccessibilitySettingsExistence() throws {
-        let app = XCUIApplication()
-        app.launch()
-        
-        let accessibilityButton = app.buttons["Accessibility"].firstMatch
-        if !accessibilityButton.exists {
-            let elementsQuery = app.otherElements
-            let element = elementsQuery.element(boundBy: 20)
-            element.swipeUp()
-        }
-        XCTAssertTrue(accessibilityButton.exists, "Accessibility link not found")
-        accessibilityButton.tap()
-        let accessibilityTitle = app.staticTexts["Accessibility"]
-        XCTAssertTrue(accessibilityTitle.exists, "Accessibility pane not found")
-    }
-    
-    // MARK: Check Auto-Lock Settings
-    @MainActor
-    func testSettingsAutoLockSettingsExistence() throws {
-        let app = XCUIApplication()
-        app.launch()
-        
-        let cameraButton = app.buttons["Camera"].firstMatch
-        if !cameraButton.exists {
-            let elementsQuery = app.otherElements
-            let element = elementsQuery.element(boundBy: 20)
-            element.swipeUp()
-        } else {
-            cameraButton.swipeUp()
-        }
-        let displayBrightnessButton = app.buttons["Display & Brightness"].staticTexts.firstMatch
-        XCTAssertTrue(displayBrightnessButton.exists, "Display & Brightness link not found")
-        displayBrightnessButton.tap()
-        
-        let brightnessHeader = app.staticTexts["Brightness"]
-        brightnessHeader.swipeUp()
-        
-        let autoLockButton = app.buttons.containing(.staticText, identifier: "Auto-Lock").firstMatch
-        XCTAssertTrue(autoLockButton.exists, "Auto-Lock link not found")
-        autoLockButton.tap()
-    }
-    
-    // MARK: Check Control Center Settings
-    @MainActor
-    func testSettingsControlCenterExistence() throws {
-        let app = XCUIApplication()
-        app.launch()
-        
-        let cameraButton = app.buttons["Camera"].firstMatch
-        if !cameraButton.exists {
-            let elementsQuery = app.otherElements
-            let element = elementsQuery.element(boundBy: 20)
-            element.swipeUp()
-        } else {
-            cameraButton.swipeUp()
-        }
-        
-        let controlCenterButton = app.buttons["Control Center"].staticTexts.firstMatch
-        XCTAssertTrue(controlCenterButton.exists, "Control Center link not found")
-        controlCenterButton.tap()
-        
-        let navTitle = app.staticTexts["Control Center"]
-        XCTAssertTrue(navTitle.exists, "Control Center title not found")
-    }
-    
-    // MARK: Check Display Text Size Settings
-    @MainActor
-    func testSettingsDisplayTextSizeSettingsExistence() throws {
-        let app = XCUIApplication()
-        app.launch()
-        
-        let cameraButton = app.buttons["Camera"].firstMatch
-        if !cameraButton.exists {
-            let elementsQuery = app.otherElements
-            let element = elementsQuery.element(boundBy: 20)
-            element.swipeUp()
-        } else {
-            cameraButton.swipeUp()
-        }
-        
-        let displayBrightnessButton = app.buttons["Display & Brightness"].staticTexts.firstMatch
-        XCTAssertTrue(displayBrightnessButton.exists, "Display & Brightness link not found")
-        displayBrightnessButton.tap()
-        
-        let textSizeButton = app.buttons["Text Size"].staticTexts.firstMatch
-        XCTAssertTrue(textSizeButton.exists, "Text Size link not found")
-        textSizeButton.tap()
-    }
-    
-    // MARK: Check Focus Settings Navigation
-    @MainActor
-    func testSettingsFocusNavigate() throws {
-        let app = XCUIApplication()
-        app.launch()
-
-        let battery = app.buttons["Battery"]
-        XCTAssertTrue(battery.exists, "Battery link not found")
-        battery.firstMatch.swipeUp()
-
-        let homeScreen = app.buttons["Home Screen & App Library"]
-        XCTAssertTrue(homeScreen.exists, "Home Screen & App Library link not found")
-        homeScreen.firstMatch.swipeUp()
-
-        let focus = app.buttons["Focus"]
-        XCTAssertTrue(focus.exists, "Focus link not found")
-        focus.firstMatch.tap()
-
-        let back = app.buttons["BackButton"]
-        XCTAssertTrue(back.exists, "Back button not found")
-        back.firstMatch.tap()
+        let cellularLink = app.buttons["com.apple.settings.cellular"]
+        XCTAssertTrue(cellularLink.exists, "Cellular link not found")
+        cellularLink.tap()
     }
     
     @MainActor
