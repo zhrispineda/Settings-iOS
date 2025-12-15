@@ -25,8 +25,9 @@ final class SettingsTopLevelPanesRenderTests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
         
-        let list = app.otherElements["SettingsList"]
-        XCTAssertTrue(list.exists, "Settings list not found")
+        let list = UIDevice.current.userInterfaceIdiom == .pad
+            ? app.collectionViews["Sidebar"].firstMatch
+            : app.collectionViews.firstMatch
         
         let cameraButton = app.buttons["com.apple.settings.camera"]
         var swipeCount = 0
@@ -82,6 +83,8 @@ final class SettingsTopLevelPanesRenderTests: XCTestCase {
     
     /// Checks if Settings > Action Button is available
     func testSettingsTopLevelActionButtonIsRendered() throws {
+        try XCTSkipIf(UIDevice.current.userInterfaceIdiom == .pad, "iPad not suppported")
+        
         let app = XCUIApplication()
         app.launch()
         
@@ -98,6 +101,32 @@ final class SettingsTopLevelPanesRenderTests: XCTestCase {
         
         XCTAssertTrue(actionButtonLink.exists, "Action Button link not found")
         actionButtonLink.tap()
+    }
+    
+    /// Checks if Settings > Apps > App Store is available
+    func testSettingsTopLevelAppStoreIsRendered() throws {
+        try XCTSkipIf(ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] != nil, "Simulator not supported")
+        
+        let app = XCUIApplication()
+        app.launch()
+        
+        let list = app.otherElements["SettingsList"]
+        XCTAssertTrue(list.exists, "Settings list not found")
+        
+        let appsLink = app.buttons["com.apple.settings.apps"]
+        var swipeCount = 0
+        
+        while !appsLink.exists && swipeCount < 10 {
+            list.swipeUp(velocity: .slow)
+            swipeCount += 1
+        }
+        
+        XCTAssertTrue(appsLink.exists, "Apps link not found")
+        appsLink.tap()
+        
+        let appStoreLink = app.buttons["App Store"]
+        XCTAssertTrue(appStoreLink.exists, "App Store link not found")
+        appStoreLink.tap()
     }
     
     // MARK: Search TextField

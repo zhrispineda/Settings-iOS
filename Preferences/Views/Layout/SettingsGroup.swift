@@ -83,6 +83,7 @@ struct SettingsGroup: View {
                                     selected: isSelected(setting)
                                 )
                             }
+                            .accessibilityIdentifier("com.apple.settings.\(setting.type)")
                             .foregroundStyle(model.selection == setting ? .blue : .primary)
                             .modifier(listRowBackgroundEffect(
                                 isActive: UIDevice.iPad && !model.isCompact,
@@ -95,6 +96,7 @@ struct SettingsGroup: View {
                             isOn: appStorageBinding(forKey: key),
                             icon: setting.icon
                         )
+                        .accessibilityIdentifier("com.apple.settings.\(setting.type)")
                     }
                 } else {
                     let _ = SettingsLogger.log("Not including \(setting.type) due to being hidden.")
