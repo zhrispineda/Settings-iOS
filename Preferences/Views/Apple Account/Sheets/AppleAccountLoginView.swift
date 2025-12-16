@@ -8,121 +8,126 @@
 import SwiftUI
 
 struct AppleAccountLoginView: View {
-    @Environment(\.colorScheme) private var colorScheme
     @Environment(\.dismiss) private var dismiss
     @State var isMainSheet = false
     @State private var signingIn = false
     @State private var showingAlert = false
     @State private var showingForgotPasswordSheet = false
     @State private var username = ""
-    let setupTable = "/System/Library/PrivateFrameworks/AppleIDSetup.framework"
-    let UITable = "/System/Library/PrivateFrameworks/AppleAccountUI.framework"
+    private let setupTable = "/System/Library/PrivateFrameworks/AppleIDSetup.framework"
+    private let uiTable = "/System/Library/PrivateFrameworks/AppleAccountUI.framework"
     
     var body: some View {
-        GeometryReader { geo in
-            List {
-                Section {
-                    VStack(alignment: .leading, spacing: 10) {
-                        // Apple Account Logo
-                        if let asset = UIImage.asset(path: UITable, name: "AppleAccount_Icon_Blue") {
-                            Image(uiImage: asset)
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 90, height: 130)
-                                .frame(maxWidth: .infinity)
-                        }
-                        Text("LOGIN_FORM_TITLE".localized(path: setupTable)) // Apple Account Title
-                            .font(.title2)
-                            .fontWeight(.bold)
-                        Text("SIGN_IN_SUBTITLE".localized(path: UITable)) // Apple Account Subtitle
-                            .font(.title2)
-                            .foregroundStyle(.secondary)
-
-                        // MARK: Email or Phone Number Text Field
-                        TextField("LOGIN_FORM_TEXTFIELD_NAME".localized(path: setupTable), text: $username)
-                            .usernameTextStyle()
-                            .padding(.vertical)
-
-                        // MARK: Forgot password? Button
-                        Button("SIGN_IN_HELP_BUTTON_FORGOT_SOLARIUM".localized(path: UITable), systemImage: "info.circle.fill") {
-                            showingForgotPasswordSheet.toggle()
-                        }
-                        .labelIconToTitleSpacing(10)
-                    }
-                    .multilineTextAlignment(.leading)
+        ScrollView {
+            VStack(alignment: .leading, spacing: 0) {
+                if let asset = UIImage.asset(path: uiTable, name: "AppleAccount_Icon_Blue") {
+                    Image(uiImage: asset)
+                        .frame(height: 20)
+                        .frame(maxWidth: .infinity)
+                        .padding(.bottom, 60)
                 }
-                .listRowBackground(Color.clear)
+                Text("LOGIN_FORM_TITLE".localized(path: setupTable))
+                    .font(.title2)
+                    .fontWeight(.bold)
+                Text("SIGN_IN_SUBTITLE".localized(path: uiTable))
+                    .font(.title2)
+                    .foregroundStyle(.secondary)
 
-                Section {
-                    VStack {
-                        // MARK: Privacy Link
-                        OBPrivacyLinkView(bundleIdentifiers: ["com.apple.onboarding.appleid"])
-                            .frame(minHeight: 120)
+                // Email or Phone Number
+                TextField("LOGIN_FORM_TEXTFIELD_NAME".localized(path: setupTable), text: $username)
+                    .usernameTextStyle()
+                    .padding(.vertical)
 
-                        // MARK: Continue Button
-                        Button {
+                // Forgot password?
+                Button("SIGN_IN_HELP_BUTTON_FORGOT_SOLARIUM".localized(path: uiTable), systemImage: "info.circle.fill") {
+                    showingForgotPasswordSheet.toggle()
+                }
+                .foregroundStyle(.blue)
+                .imageScale(.small)
+                .buttonStyle(.plain)
+                .labelIconToTitleSpacing(10)
+                .padding(.bottom, 30)
+                
+                // Privacy
+                OBPrivacyLinkView(bundleIdentifiers: ["com.apple.onboarding.appleid"])
+
+                // Continue
+                Button {
+                    signingIn.toggle()
+                    showingAlert.toggle()
+                } label: {
+                    if signingIn {
+                        ProgressButton()
+                    } else {
+                        OBBoldTrayButton("SIGN_IN_BUTTON_CONTINUE".localized(path: uiTable)) {
                             signingIn.toggle()
                             showingAlert.toggle()
-                        } label: {
-                            if signingIn {
-                                ProgressButton()
-                            } else {
-                                OBBoldTrayButton("SIGN_IN_BUTTON_CONTINUE".localized(path: UITable)) {
-                                    signingIn.toggle()
-                                    showingAlert.toggle()
-                                }
-                                .frame(height: 50)
-                            }
                         }
-                        .disabled(username.count < 1)
-                        .alert("VERIFICATION_FAILED_TITLE".localized(path: UITable), isPresented: $showingAlert) {
-                            Button("AUTHENTICATE_VIEW_BUTTON_TITLE".localized(path: setupTable)) {
-                                signingIn.toggle()
-                            }
-                        } message: {
-                            Text("BAD_NETWORK_ALERT_MESSAGE_REBRAND".localized(path: UITable))
-                        }
+                        .frame(height: 50)
+                    }
+                }
+                .disabled(username.count < 1)
+                .alert("VERIFICATION_FAILED_TITLE".localized(path: uiTable), isPresented: $showingAlert) {
+                    Button("AUTHENTICATE_VIEW_BUTTON_TITLE".localized(path: setupTable)) {
+                        signingIn.toggle()
+                    }
+                } message: {
+                    Text("BAD_NETWORK_ALERT_MESSAGE_REBRAND".localized(path: uiTable))
+                }
 
-                        // MARK: Sign in a child in my Family Button
-                        if !isMainSheet {
-                            NavigationLink(destination: ParentGuardianSignInView()) {
-                                Text("SIGN_IN_FOR_CHILD_BUTTON_TITLE_SOLARIUM".localized(path: UITable))
-                                    .padding(.top)
-                                    .foregroundStyle(.primary)
-                            }
-                            .navigationLinkIndicatorVisibility(.hidden)
-                        }
+                // Sign in a child in my Family
+                if !isMainSheet {
+                    NavigationLink(destination: ParentGuardianSignInView()) {
+                        Text("SIGN_IN_FOR_CHILD_BUTTON_TITLE_SOLARIUM".localized(path: uiTable))
+                    }
+                    .foregroundStyle(.primary)
+                    .navigationLinkIndicatorVisibility(.hidden)
+                    .frame(maxWidth: .infinity)
+                    .padding(.top, 25)
+                }
+                
+                Spacer(minLength: 40)
+            }
+            .containerRelativeFrame(.vertical)
+        }
+        .contentMargins(35, for: .scrollContent)
+        //.padding(.horizontal, 35)
+        .toolbar {
+            ToolbarItem(placement: isMainSheet ? .topBarTrailing : .topBarLeading) {
+                if isMainSheet {
+                    Button(role: .close) {
+                        dismiss()
                     }
                 }
-                .listRowBackground(Color.clear)
             }
-            .padding(.top, -80)
-            .background(colorScheme == .light ? .white : Color(UIColor.systemBackground))
-            .scrollContentBackground(.hidden)
-            .toolbar {
-                ToolbarItem(placement: isMainSheet ? .topBarTrailing : .topBarLeading) {
-                    if isMainSheet {
-                        Button(role: .close) {
-                            dismiss()
-                        }
-                    }
-                }
-            }
-            .sheet(isPresented: $showingForgotPasswordSheet) {
-                NavigationStack {
-                    ForgotPasswordView()
-                }
+        }
+        .sheet(isPresented: $showingForgotPasswordSheet) {
+            NavigationStack {
+                ForgotPasswordView()
             }
         }
     }
 }
 
 #Preview {
-    NavigationStack {
-        AppleAccountLoginView()
-    }
+    AppleAccountLoginView()
+}
+
+#Preview("Sheet View") {
+    Text("Example")
+        .sheet(isPresented: .constant(true)) {
+            NavigationStack {
+                AppleAccountLoginView()
+                    .toolbar {
+                        ToolbarItem(placement: .topBarLeading) {
+                            Button("Back", systemImage: "chevron.left") {}
+                        }
+                    }
+            }
+        }
 }
 
 #Preview("ContentView") {
     ContentView()
+        .environment(PrimarySettingsListModel())
 }
