@@ -18,9 +18,9 @@ struct UsernameTextStyle: ViewModifier {
         content
             .textInputAutocapitalization(.never)
             .autocorrectionDisabled()
-            .frame(height: 45)
-            .padding(.leading, 20)
-            .background(Color(colorScheme == .dark ? UIColor.systemGray5 : UIColor.systemGray6))
-            .clipShape(RoundedRectangle(cornerRadius: 25))
+            .frame(height: 50)
+            .padding(.leading, 15)
+            .background(.fill)
+            .clipShape(RoundedRectangle(cornerRadius: 30))
     }
 }
