@@ -32,6 +32,7 @@ struct AppleAccountLoginView: View {
                 Text("SIGN_IN_SUBTITLE".localized(path: uiTable))
                     .font(.title2)
                     .foregroundStyle(.secondary)
+                    .fixedSize(horizontal: false, vertical: true)
 
                 // Email or Phone Number
                 TextField("LOGIN_FORM_TEXTFIELD_NAME".localized(path: setupTable), text: $username)
@@ -46,12 +47,12 @@ struct AppleAccountLoginView: View {
                 .imageScale(.small)
                 .buttonStyle(.plain)
                 .labelIconToTitleSpacing(10)
-                .padding(.bottom, 30)
+                .padding(.bottom, 20)
                 
                 // Privacy
                 OBPrivacyLinkView(bundleIdentifiers: ["com.apple.onboarding.appleid"])
-                    .frame(minHeight: 100)
-
+                    .frame(minHeight: 130)
+                
                 // Continue
                 Button {
                     signingIn.toggle()
