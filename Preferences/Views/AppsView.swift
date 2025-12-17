@@ -19,6 +19,7 @@ struct AppsView: View {
         AppInfo(name: "App Store", icon: "com.apple.AppStore", showOnSimulator: false),
         AppInfo(name: "Books", icon: "com.apple.iBooks", showOnSimulator: false),
         AppInfo(name: "Calendar", icon: "com.apple.mobilecal", showOnSimulator: true),
+        AppInfo(name: "Compass", icon: "com.apple.compass", showOnSimulator: false),
         AppInfo(name: "Contacts", icon: "com.apple.MobileAddressBook", showOnSimulator: true),
         AppInfo(name: "Files", icon: "com.apple.DocumentsApp", showOnSimulator: true),
         AppInfo(name: "Fitness", icon: "com.apple.Fitness", showOnSimulator: true),
@@ -63,6 +64,11 @@ struct AppsView: View {
                                     case "App Store": AppStoreView()
                                     case "Books": BooksView()
                                     case "Calendar": CalendarView()
+                                    case "Compass": ControllerBridgeView(
+                                        "CompassSettings",
+                                        controller: "CompassSettingsController",
+                                        title: "Compass"
+                                    )
                                     case "Contacts": ContactsView()
                                     case "Files": FilesView()
                                     case "Fitness": FitnessView()
