@@ -50,6 +50,7 @@ struct AppleAccountLoginView: View {
                 
                 // Privacy
                 OBPrivacyLinkView(bundleIdentifiers: ["com.apple.onboarding.appleid"])
+                    .frame(minHeight: 100)
 
                 // Continue
                 Button {
@@ -91,7 +92,7 @@ struct AppleAccountLoginView: View {
             .containerRelativeFrame(.vertical)
         }
         .contentMargins(35, for: .scrollContent)
-        //.padding(.horizontal, 35)
+        .ignoresSafeArea(.keyboard, edges: .bottom)
         .toolbar {
             ToolbarItem(placement: isMainSheet ? .topBarTrailing : .topBarLeading) {
                 if isMainSheet {
