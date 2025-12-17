@@ -180,6 +180,31 @@ final class SettingsTopLevelPanesRenderTests: XCTestCase {
         cellularLink.tap()
     }
     
+    /// Checks if Settings > Apps > Compass is available
+    func testSettingsTopLevelCompassIsRendered() throws {
+        try XCTSkipIf(ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] != nil, "Simulator not supported")
+        
+        let app = XCUIApplication()
+        app.launch()
+        
+        let appsLink = app.buttons["com.apple.settings.apps"]
+        let list = UIDevice.current.userInterfaceIdiom == .pad
+            ? app.collectionViews["Sidebar"].firstMatch
+            : app.collectionViews.firstMatch
+        var swipeCount = 0
+        
+        while !appsLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(appsLink.exists, "Apps link not found")
+        appsLink.tap()
+        
+        let compassLink = app.buttons["Compass"]
+        XCTAssertTrue(compassLink.exists, "Compass link not found")
+        compassLink.tap()
+    }
+    
     @MainActor
     func testLaunchPerformance() throws {
         // This measures how long it takes to launch your application.
