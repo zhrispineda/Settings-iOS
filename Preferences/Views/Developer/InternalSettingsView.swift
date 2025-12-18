@@ -9,7 +9,7 @@ struct InternalSettingsView: View {
     var body: some View {
         CustomList(title: "Internal Settings", topPadding: true) {
             Section("Device Info") {
-                NavigationLink("About") {}
+                NavigationLink("About", destination: InternalAboutView())
                 Button("Set Up VPN") {}
             }
             
@@ -74,6 +74,8 @@ struct InternalSettingsView: View {
                 NavigationLink("Phone") {}
                 NavigationLink("Settings App") {}
                 NavigationLink("RemoteUI") {}
+                NavigationLink("Clock App") {}
+                NavigationLink("International 🇺🇳") {}
             }
         }
     }
