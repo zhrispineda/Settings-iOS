@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @AppStorage("FollowUpDismissed") private var followUpDismissed = false
+    @AppStorage("ForceQueryError") private var forceQueryError = false
     @Environment(\.horizontalSizeClass) private var horizontalSizeClass
     @Environment(PrimarySettingsListModel.self) private var model
     @State private var searchFocused = false
@@ -17,6 +18,7 @@ struct ContentView: View {
     @State private var showingSignInSheet = false
     @State private var showingResearchSheet = false
     @State private var showingSupervisedSheet = false
+    @State private var showingSearchQueryError = false
     
     var body: some View {
         @Bindable var model = model
@@ -118,6 +120,15 @@ struct ContentView: View {
             }
         }
         .accessibilityIdentifier("SettingsList")
+        .alert(
+            .tapToRadar,
+            isPresented: $showingSearchQueryError
+        ) {
+            Button(role: .cancel) {}
+            Button(.fileRadar) {}
+        } message: {
+            Text("Settings encountered an error while querying search content. This can result in missing search items. Please file a Radar.")
+        }
         .overlay {
             if UIDevice.`apple-internal-install` {
                 VStack {
@@ -145,6 +156,11 @@ struct ContentView: View {
             model.isCompact = horizontalSizeClass == .compact
             if !model.isCompact && model.selection == nil {
                 model.selection = model.mainSettings.first
+            }
+        }
+        .onChange(of: searchText) {
+            if !searchText.isEmpty && forceQueryError {
+                forceQueryError = false
             }
         }
         .onOpenURL { url in
