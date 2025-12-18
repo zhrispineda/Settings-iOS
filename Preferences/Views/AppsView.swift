@@ -25,7 +25,9 @@ struct AppsView: View {
         AppInfo(name: "FaceTime", icon: "com.apple.facetime", showOnSimulator: true),
         AppInfo(name: "Files", icon: "com.apple.DocumentsApp", showOnSimulator: true),
         AppInfo(name: "Fitness", icon: "com.apple.Fitness", showOnSimulator: true),
+        AppInfo(name: "Freeform", icon: "com.apple.freeform", showOnSimulator: true),
         AppInfo(name: "Health", icon: "com.apple.Health", showOnSimulator: true),
+        AppInfo(name: "Mail", icon: "com.apple.mobilemail", showOnSimulator: true),
         AppInfo(name: "Maps", icon: "com.apple.Maps", showOnSimulator: true),
         AppInfo(name: "Messages", icon: "com.apple.MobileSMS", showOnSimulator: true),
         AppInfo(name: "News", icon: "com.apple.news", showOnSimulator: true),
@@ -93,7 +95,19 @@ struct AppsView: View {
                                     )
                                 case "Files": FilesView()
                                 case "Fitness": FitnessView()
+                                case "Freeform":
+                                    ControllerBridgeView(
+                                        "FreeformSettings",
+                                        controller: "CRLSettingsController",
+                                        title: "Freeform"
+                                    )
                                 case "Health": HealthView()
+                                case "Mail":
+                                    ControllerBridgeView(
+                                        "MobileMailSettings",
+                                        controller: "MailSettingsPlugin",
+                                        title: "Mail"
+                                    )
                                 case "Maps": MapsView()
                                 case "Messages": MessagesView()
                                 case "News": NewsView()

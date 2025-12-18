@@ -290,6 +290,149 @@ final class SettingsTopLevelPanesRenderTests: XCTestCase {
         faceTimeLink.tap()
     }
     
+    /// Checks if Settings > Focus is available
+    func testSettingsTopLevelFocusIsRendered() {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let focusLink = app.buttons["com.apple.settings.focus"]
+        let list = UIDevice.current.userInterfaceIdiom == .pad
+            ? app.collectionViews["Sidebar"].firstMatch
+            : app.collectionViews.firstMatch
+        var swipeCount = 0
+        
+        while !focusLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(focusLink.exists, "Focus link not found")
+        focusLink.tap()
+    }
+    
+    /// Checks if Settings > Apps > Freeform is available
+    func testSettingsTopLevelFreeformIsRendered() {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let appsLink = app.buttons["com.apple.settings.apps"]
+        let list = UIDevice.current.userInterfaceIdiom == .pad
+            ? app.collectionViews["Sidebar"].firstMatch
+            : app.collectionViews.firstMatch
+        var swipeCount = 0
+        
+        while !appsLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(appsLink.exists, "Apps link not found")
+        appsLink.tap()
+        
+        let freeformLink = app.buttons["Freeform"]
+        XCTAssertTrue(freeformLink.exists, "Freeform link not found")
+        freeformLink.tap()
+    }
+    
+    /// Checks if Settings > General is available
+    func testSettingsTopLevelGeneralIsRendered() {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let generalLink = app.buttons["com.apple.settings.general"]
+        let list = UIDevice.current.userInterfaceIdiom == .pad
+            ? app.collectionViews["Sidebar"].firstMatch
+            : app.collectionViews.firstMatch
+        var swipeCount = 0
+        
+        while !generalLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(generalLink.exists, "General link not found")
+        generalLink.tap()
+    }
+    
+    /// Checks if Settings > Apps > Health is available
+    func testSettingsTopLevelHealthIsRendered() {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let appsLink = app.buttons["com.apple.settings.apps"]
+        let list = UIDevice.current.userInterfaceIdiom == .pad
+            ? app.collectionViews["Sidebar"].firstMatch
+            : app.collectionViews.firstMatch
+        var swipeCount = 0
+        
+        while !appsLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(appsLink.exists, "Apps link not found")
+        appsLink.tap()
+        
+        let healthLink = app.buttons["Health"]
+        swipeCount = 0
+        
+        while !healthLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(healthLink.exists, "Health link not found")
+        healthLink.tap()
+    }
+    
+    /// Checks if Settings > Home Screen & App Library is available
+    func testSettingsTopLevelHomeScreenIsRendered() {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let homeScreenLink = app.buttons["com.apple.settings.homeScreen"]
+        let list = UIDevice.current.userInterfaceIdiom == .pad
+            ? app.collectionViews["Sidebar"].firstMatch
+            : app.collectionViews.firstMatch
+        var swipeCount = 0
+        
+        while !homeScreenLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(homeScreenLink.exists, "Home Screen & App Library link not found")
+        homeScreenLink.tap()
+    }
+    
+    /// Checks if Settings > Internal Settings is available
+    func testSettingsTopLevelInternalSettingsIsRendered() throws {
+        try XCTSkipIf(true, "Not implemented")
+    }
+    
+    /// Checks if Settings > Apps > Mail is available
+    func testSettingsTopLevelMailIsRendered() {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let appsLink = app.buttons["com.apple.settings.apps"]
+        let list = UIDevice.current.userInterfaceIdiom == .pad
+            ? app.collectionViews["Sidebar"].firstMatch
+            : app.collectionViews.firstMatch
+        var swipeCount = 0
+        
+        while !appsLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(appsLink.exists, "Apps link not found")
+        appsLink.tap()
+        
+        let mailLink = app.buttons["Mail"]
+        swipeCount = 0
+        
+        while !mailLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(mailLink.exists, "Mail link not found")
+        mailLink.tap()
+    }
+    
     @MainActor
     func testLaunchPerformance() throws {
         // This measures how long it takes to launch your application.
