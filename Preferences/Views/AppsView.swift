@@ -18,7 +18,7 @@ struct AppsView: View {
     @State private var searchText = String()
     private let apps = [
         AppInfo(name: "App Store", icon: "com.apple.AppStore", showOnSimulator: false),
-        AppInfo(name: "Books", icon: "com.apple.iBooks", showOnSimulator: false),
+        AppInfo(name: "Books", icon: "com.apple.iBooks", showOnSimulator: true),
         AppInfo(name: "Calendar", icon: "com.apple.mobilecal", showOnSimulator: true),
         AppInfo(name: "Compass", icon: "com.apple.compass", showOnSimulator: false),
         AppInfo(name: "Contacts", icon: "com.apple.MobileAddressBook", showOnSimulator: true),
@@ -29,15 +29,23 @@ struct AppsView: View {
         AppInfo(name: "Health", icon: "com.apple.Health", showOnSimulator: true),
         AppInfo(name: "Mail", icon: "com.apple.mobilemail", showOnSimulator: true),
         AppInfo(name: "Maps", icon: "com.apple.Maps", showOnSimulator: true),
+        AppInfo(name: "Measure", icon: "com.apple.measure", showOnSimulator: true),
         AppInfo(name: "Messages", icon: "com.apple.MobileSMS", showOnSimulator: true),
+        AppInfo(name: "Music", icon: "com.apple.Music", showOnSimulator: true),
         AppInfo(name: "News", icon: "com.apple.news", showOnSimulator: true),
+        AppInfo(name: "Notes", icon: "com.apple.mobilenotes", showOnSimulator: true),
         AppInfo(name: "Passwords", icon: "com.apple.Passwords", showOnSimulator: true),
         AppInfo(name: "Photos", icon: "com.apple.mobileslideshow", showOnSimulator: true),
+        AppInfo(name: "Podcasts", icon: "com.apple.podcasts", showOnSimulator: true),
         AppInfo(name: "Reminders", icon: "com.apple.reminders", showOnSimulator: true),
         AppInfo(name: "Safari", icon: "com.apple.mobilesafari", showOnSimulator: true),
         AppInfo(name: "Shortcuts", icon: "com.apple.shortcuts", showOnSimulator: true),
+        AppInfo(name: "Stocks", icon: "com.apple.stocks", showOnSimulator: true),
+        AppInfo(name: "Translate", icon: "com.apple.Translate", showOnSimulator: true),
+        AppInfo(name: "TV", icon: "com.apple.tv", showOnSimulator: true),
+        AppInfo(name: "Voice Memos", icon: "com.apple.VoiceMemos", showOnSimulator: true),
         AppInfo(name: "Wallet", icon: "com.apple.Passbook", showOnSimulator: true),
-        AppInfo(name: "Translate", icon: "com.apple.Translate", showOnSimulator: false)
+        AppInfo(name: "Weather", icon: "com.apple.weather", showOnSimulator: true)
     ]
     private let path = "/System/Library/Settings/InstalledApps.settings"
     private var visibleApps: [AppInfo] {
@@ -109,14 +117,61 @@ struct AppsView: View {
                                         title: "Mail"
                                     )
                                 case "Maps": MapsView()
-                                case "Messages": MessagesView()
+                                case "Measure":
+                                    ControllerBridgeView(
+                                        "MeasureSettings",
+                                        controller: "MeasureSettingsController",
+                                        title: "Measure"
+                                    )
+                                case "Messages": //MessagesView()
+                                    ControllerBridgeView(
+                                        "/System/Library/PrivateFrameworks/CommunicationsSetupUI.framework/CommunicationsSetupUI",
+                                        controller: "CNFRegAppleIDSplashViewController",
+                                        title: "Messages"
+                                    )
+                                case "Music":
+                                    ControllerBridgeView(
+                                        "MusicSettings",
+                                        controller: "MusicSettingsController",
+                                        title: "Music"
+                                    )
                                 case "News": NewsView()
+                                case "Notes":
+                                    ControllerBridgeView(
+                                        "NotesSettings",
+                                        controller: "ICSettingsPlugin",
+                                        title: "Notes"
+                                    )
                                 case "Passwords": PasswordsView()
                                 case "Photos": PhotosView()
                                 case "Reminders": RemindersView()
                                 case "Safari": SafariView()
                                 case "Shortcuts": ShortcutsView()
+                                case "Stocks":
+                                    ControllerBridgeView(
+                                        "StocksSettings",
+                                        controller: "SUStocksSettingsController",
+                                        title: "Stocks"
+                                    )
                                 case "Translate": TranslateView()
+                                case "TV":
+                                    ControllerBridgeView(
+                                        "TVSettings",
+                                        controller: "TopLevelSettingsController",
+                                        title: "TV"
+                                    )
+                                case "Voice Memos":
+                                    ControllerBridgeView(
+                                        "VoiceMemosSettings",
+                                        controller: "RCVoiceMemosSettingsController",
+                                        title: "Voice Memos"
+                                    )
+                                case "Weather":
+                                    ControllerBridgeView(
+                                        "WeatherSettings",
+                                        controller: "WSWeatherSettingsController",
+                                        title: "Weather"
+                                    )
                                 default: EmptyView()
                                 }
                             }
