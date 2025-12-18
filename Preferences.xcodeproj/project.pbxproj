@@ -162,6 +162,7 @@
 		83D5BD542DB819F900F5B219 /* ConfigureIPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D5BD532DB819F900F5B219 /* ConfigureIPView.swift */; };
 		83DF95762B84266E00AEEB63 /* SiriDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DF95752B84266E00AEEB63 /* SiriDetailView.swift */; };
 		83DFA56D2DA9E17E004C3DD5 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83DFA56C2DA9E17E004C3DD5 /* UIViewControllerExtensions.swift */; };
+		83E03CA72EF4A44C00BF2D5A /* InternalAboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E03CA62EF4A44C00BF2D5A /* InternalAboutView.swift */; };
 		83E2ADA72CA1D80A00DFED0C /* RecordVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E2ADA62CA1D80A00DFED0C /* RecordVideoView.swift */; };
 		83EAC9042EEE4565007362F9 /* EnhancedSafetyAlertsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EAC9032EEE4565007362F9 /* EnhancedSafetyAlertsView.swift */; };
 		83EC895F2CA0F8B500389F3B /* CameraControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EC895E2CA0F8B500389F3B /* CameraControlView.swift */; };
@@ -364,6 +365,7 @@
 		83D5BD532DB819F900F5B219 /* ConfigureIPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureIPView.swift; sourceTree = "<group>"; };
 		83DF95752B84266E00AEEB63 /* SiriDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriDetailView.swift; sourceTree = "<group>"; };
 		83DFA56C2DA9E17E004C3DD5 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		83E03CA62EF4A44C00BF2D5A /* InternalAboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalAboutView.swift; sourceTree = "<group>"; };
 		83E2ADA62CA1D80A00DFED0C /* RecordVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordVideoView.swift; sourceTree = "<group>"; };
 		83EAC9032EEE4565007362F9 /* EnhancedSafetyAlertsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnhancedSafetyAlertsView.swift; sourceTree = "<group>"; };
 		83EC895E2CA0F8B500389F3B /* CameraControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraControlView.swift; sourceTree = "<group>"; };
@@ -848,6 +850,14 @@
 			path = Siri;
 			sourceTree = "<group>";
 		};
+		83E03CA52EF4A3FD00BF2D5A /* Internal Settings */ = {
+			isa = PBXGroup;
+			children = (
+				83E03CA62EF4A44C00BF2D5A /* InternalAboutView.swift */,
+			);
+			path = "Internal Settings";
+			sourceTree = "<group>";
+		};
 		83F516C52C21EC570004E87A /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -894,6 +904,7 @@
 		83F626D22B827EEC00ED343F /* Developer */ = {
 			isa = PBXGroup;
 			children = (
+				83E03CA52EF4A3FD00BF2D5A /* Internal Settings */,
 				8302AD252ECD4038001BC32D /* Debug */,
 				83D20AD02D875F6B000B26E6 /* DebugView.swift */,
 				8311D3B32EA7170500915C49 /* CarrierSettingsView.swift */,
@@ -1194,6 +1205,7 @@
 				8356460A2D9C4AB600DAB406 /* UIKitRepresentables.swift in Sources */,
 				838C23232B746CF90053D4C5 /* GeneralView.swift in Sources */,
 				833769012ED25D050002822F /* SoundsAndHapticsView.swift in Sources */,
+				83E03CA72EF4A44C00BF2D5A /* InternalAboutView.swift in Sources */,
 				833F0AD22B744D180036EAD2 /* ContentView.swift in Sources */,
 				838F37EA2C82865B008C9909 /* FilesView.swift in Sources */,
 				8319CE512B86DF8A007EC822 /* AppleAdvertisingView.swift in Sources */,
