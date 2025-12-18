@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct DebugSearchView: View {
-    @State private var linkIndexNextLaunch = false
-    @State private var manifestIndexNextLaunch = false
-    @State private var alwaysIndexOnLaunch = false
-    @State private var neverIndex = false
-    @State private var forceQueryError = false
+    @AppStorage("LinkIndexNextLaunch") private var linkIndexNextLaunch = false
+    @AppStorage("ManifestIndexNextLaunch") private var manifestIndexNextLaunch = false
+    @AppStorage("AlwaysIndexLaunch") private var alwaysIndexOnLaunch = false
+    @AppStorage("NeverIndex") private var neverIndex = false
+    @AppStorage("ForceQueryError") private var forceQueryError = false
     
     var body: some View {
         CustomList(title: "Search", topPadding: true) {
