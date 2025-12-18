@@ -433,11 +433,591 @@ final class SettingsTopLevelPanesRenderTests: XCTestCase {
         mailLink.tap()
     }
     
-    @MainActor
-    func testLaunchPerformance() throws {
-        // This measures how long it takes to launch your application.
-        measure(metrics: [XCTApplicationLaunchMetric()]) {
-            XCUIApplication().launch()
+    /// Checks if Settings > Apps > Maps is available
+    func testSettingsTopLevelMapsIsRendered() {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let appsLink = app.buttons["com.apple.settings.apps"]
+        let list = UIDevice.current.userInterfaceIdiom == .pad
+            ? app.collectionViews["Sidebar"].firstMatch
+            : app.collectionViews.firstMatch
+        var swipeCount = 0
+        
+        while !appsLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
         }
+        XCTAssertTrue(appsLink.exists, "Apps link not found")
+        appsLink.tap()
+        
+        let mapsLink = app.buttons["Maps"]
+        swipeCount = 0
+        
+        while !mapsLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(mapsLink.exists, "Maps link not found")
+        mapsLink.tap()
+    }
+    
+    /// Checks if Settings > Apps > Measure is available
+    func testSettingsTopLevelMeasuresIsRendered() {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let appsLink = app.buttons["com.apple.settings.apps"]
+        let list = UIDevice.current.userInterfaceIdiom == .pad
+            ? app.collectionViews["Sidebar"].firstMatch
+            : app.collectionViews.firstMatch
+        var swipeCount = 0
+        
+        while !appsLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(appsLink.exists, "Apps link not found")
+        appsLink.tap()
+        
+        let measureLink = app.buttons["Measure"]
+        swipeCount = 0
+        
+        while !measureLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(measureLink.exists, "Measure link not found")
+        measureLink.tap()
+    }
+    
+    /// Checks if Settings > Apps > Messages is available
+    func testSettingsTopLevelMessagesIsRendered() {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let appsLink = app.buttons["com.apple.settings.apps"]
+        let list = UIDevice.current.userInterfaceIdiom == .pad
+            ? app.collectionViews["Sidebar"].firstMatch
+            : app.collectionViews.firstMatch
+        var swipeCount = 0
+        
+        while !appsLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(appsLink.exists, "Apps link not found")
+        appsLink.tap()
+        
+        let messagesLink = app.buttons["Messages"]
+        swipeCount = 0
+        
+        while !messagesLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(messagesLink.exists, "Messages link not found")
+        messagesLink.tap()
+    }
+    
+    /// Checks if Settings > Apps > Music is available
+    func testSettingsTopLevelMusicIsRendered() {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let appsLink = app.buttons["com.apple.settings.apps"]
+        let list = UIDevice.current.userInterfaceIdiom == .pad
+            ? app.collectionViews["Sidebar"].firstMatch
+            : app.collectionViews.firstMatch
+        var swipeCount = 0
+        
+        while !appsLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(appsLink.exists, "Apps link not found")
+        appsLink.tap()
+        
+        let musicLink = app.buttons["Music"]
+        swipeCount = 0
+        
+        while !musicLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(musicLink.exists, "Music link not found")
+        musicLink.tap()
+    }
+    
+    /// Checks if Settings > Apps > Notes is available
+    func testSettingsTopLevelNotesIsRendered() {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let appsLink = app.buttons["com.apple.settings.apps"]
+        let list = UIDevice.current.userInterfaceIdiom == .pad
+            ? app.collectionViews["Sidebar"].firstMatch
+            : app.collectionViews.firstMatch
+        var swipeCount = 0
+        
+        while !appsLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(appsLink.exists, "Apps link not found")
+        appsLink.tap()
+        
+        let notesLink = app.buttons["Notes"]
+        swipeCount = 0
+        
+        while !notesLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(notesLink.exists, "Notes link not found")
+        notesLink.tap()
+    }
+    
+    /// Checks if Settings > Notifications is available
+    func testSettingsTopLevelNotificationsIsRendered() {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let notificationsLink = app.buttons["com.apple.settings.notifications"]
+        let list = UIDevice.current.userInterfaceIdiom == .pad
+            ? app.collectionViews["Sidebar"].firstMatch
+            : app.collectionViews.firstMatch
+        var swipeCount = 0
+        
+        while !notificationsLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(notificationsLink.exists, "Apps link not found")
+        notificationsLink.tap()
+    }
+    
+    /// Checks if Settings > Apps > Photos is available
+    func testSettingsTopLevelPhotosIsRendered() {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let appsLink = app.buttons["com.apple.settings.apps"]
+        let list = UIDevice.current.userInterfaceIdiom == .pad
+            ? app.collectionViews["Sidebar"].firstMatch
+            : app.collectionViews.firstMatch
+        var swipeCount = 0
+        
+        while !appsLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(appsLink.exists, "Apps link not found")
+        appsLink.tap()
+        
+        let photosLink = app.buttons["Photos"]
+        swipeCount = 0
+        
+        while !photosLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(photosLink.exists, "Photos link not found")
+        photosLink.tap()
+    }
+    
+    /// Checks if Settings > Apps > Podcasts is available
+    func testSettingsTopLevelPodcastsIsRendered() {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let appsLink = app.buttons["com.apple.settings.apps"]
+        let list = UIDevice.current.userInterfaceIdiom == .pad
+            ? app.collectionViews["Sidebar"].firstMatch
+            : app.collectionViews.firstMatch
+        var swipeCount = 0
+        
+        while !appsLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(appsLink.exists, "Apps link not found")
+        appsLink.tap()
+        
+        let podcasts = app.buttons["Podcasts"]
+        swipeCount = 0
+        
+        while !podcasts.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(podcasts.exists, "Podcasts link not found")
+        podcasts.tap()
+    }
+    
+    /// Checks if Settings > Privacy & Security is available
+    func testSettingsTopLevelPrivacyIsRendered() {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let privacyLink = app.buttons["com.apple.settings.privacySecurity"]
+        let list = UIDevice.current.userInterfaceIdiom == .pad
+            ? app.collectionViews["Sidebar"].firstMatch
+            : app.collectionViews.firstMatch
+        var swipeCount = 0
+        
+        while !privacyLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(privacyLink.exists, "Privacy & Security link not found")
+        privacyLink.tap()
+    }
+    
+    /// Checks if Settings > Apps > Reminders is available
+    func testSettingsTopLevelRemindersIsRendered() {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let appsLink = app.buttons["com.apple.settings.apps"]
+        let list = UIDevice.current.userInterfaceIdiom == .pad
+            ? app.collectionViews["Sidebar"].firstMatch
+            : app.collectionViews.firstMatch
+        var swipeCount = 0
+        
+        while !appsLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(appsLink.exists, "Apps link not found")
+        appsLink.tap()
+        
+        let remindersLink = app.buttons["Reminders"]
+        swipeCount = 0
+        
+        while !remindersLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(remindersLink.exists, "Reminders link not found")
+        remindersLink.tap()
+    }
+    
+    /// Checks if Settings > Apps > Safari is available
+    func testSettingsTopLevelSafariIsRendered() {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let appsLink = app.buttons["com.apple.settings.apps"]
+        let list = UIDevice.current.userInterfaceIdiom == .pad
+            ? app.collectionViews["Sidebar"].firstMatch
+            : app.collectionViews.firstMatch
+        var swipeCount = 0
+        
+        while !appsLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(appsLink.exists, "Apps link not found")
+        appsLink.tap()
+        
+        let safariLink = app.buttons["Safari"]
+        swipeCount = 0
+        
+        while !safariLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(safariLink.exists, "Safari link not found")
+        safariLink.tap()
+    }
+    
+    /// Checks if Settings > Screen Time is available
+    func testSettingsTopLevelScreenTimeIsRendered() {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let screenTimeLink = app.buttons["com.apple.settings.screenTime"]
+        let list = UIDevice.current.userInterfaceIdiom == .pad
+            ? app.collectionViews["Sidebar"].firstMatch
+            : app.collectionViews.firstMatch
+        var swipeCount = 0
+        
+        while !screenTimeLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(screenTimeLink.exists, "Screen Time link not found")
+        screenTimeLink.tap()
+    }
+    
+    /// Checks if Settings search is available
+    func testSettingsTopLevelSearchPaneIsRendered() {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let searchField = app.searchFields.firstMatch
+        XCTAssertTrue(searchField.exists, "Search field not found")
+        searchField.tap()
+    }
+    
+    /// Checks if Settings > Apps > Shortcuts is available
+    func testSettingsTopLevelShortcutsIsRendered() {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let appsLink = app.buttons["com.apple.settings.apps"]
+        let list = UIDevice.current.userInterfaceIdiom == .pad
+            ? app.collectionViews["Sidebar"].firstMatch
+            : app.collectionViews.firstMatch
+        var swipeCount = 0
+        
+        while !appsLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(appsLink.exists, "Apps link not found")
+        appsLink.tap()
+        
+        let shortcutsLink = app.buttons["Shortcuts"]
+        swipeCount = 0
+        
+        while !shortcutsLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(shortcutsLink.exists, "Shortcuts link not found")
+        shortcutsLink.tap()
+    }
+    
+    /// Checks if Settings > Siri or Settings > Apple Intelligence & Siri is available
+    func testSettingsTopLevelSiriIsRendered() {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let siriLink = app.buttons["com.apple.settings.siri"]
+        let list = UIDevice.current.userInterfaceIdiom == .pad
+            ? app.collectionViews["Sidebar"].firstMatch
+            : app.collectionViews.firstMatch
+        var swipeCount = 0
+        
+        while !siriLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(siriLink.exists, "Siri link not found")
+        siriLink.tap()
+    }
+    
+    /// Checks if Settings > Apps > Stocks is available
+    func testSettingsTopLevelStocksIsRendered() {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let appsLink = app.buttons["com.apple.settings.apps"]
+        let list = UIDevice.current.userInterfaceIdiom == .pad
+            ? app.collectionViews["Sidebar"].firstMatch
+            : app.collectionViews.firstMatch
+        var swipeCount = 0
+        
+        while !appsLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(appsLink.exists, "Apps link not found")
+        appsLink.tap()
+        
+        let stocksLink = app.buttons["Stocks"]
+        swipeCount = 0
+        
+        while !stocksLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(stocksLink.exists, "Stocks link not found")
+        stocksLink.tap()
+    }
+    
+    /// Checks if Settings > Apps > Translate is available
+    func testSettingsTopLevelTranslateIsRendered() {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let appsLink = app.buttons["com.apple.settings.apps"]
+        let list = UIDevice.current.userInterfaceIdiom == .pad
+            ? app.collectionViews["Sidebar"].firstMatch
+            : app.collectionViews.firstMatch
+        var swipeCount = 0
+        
+        while !appsLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(appsLink.exists, "Apps link not found")
+        appsLink.tap()
+        
+        let translateLink = app.buttons["Translate"]
+        swipeCount = 0
+        
+        while !translateLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(translateLink.exists, "Translate link not found")
+        translateLink.tap()
+    }
+    
+    /// Checks if Settings > Apps > TV is available
+    func testSettingsTopLevelVideosIsRendered() throws {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let appsLink = app.buttons["com.apple.settings.apps"]
+        let list = UIDevice.current.userInterfaceIdiom == .pad
+            ? app.collectionViews["Sidebar"].firstMatch
+            : app.collectionViews.firstMatch
+        var swipeCount = 0
+        
+        while !appsLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(appsLink.exists, "Apps link not found")
+        appsLink.tap()
+        
+        let tvLink = app.buttons["TV"]
+        swipeCount = 0
+        
+        while !tvLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(tvLink.exists, "TV link not found")
+        tvLink.tap()
+    }
+    
+    /// Checks if Settings > Apps > Voice Memos is available
+    func testSettingsTopLevelVoiceMemosIsRendered() {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let appsLink = app.buttons["com.apple.settings.apps"]
+        let list = UIDevice.current.userInterfaceIdiom == .pad
+            ? app.collectionViews["Sidebar"].firstMatch
+            : app.collectionViews.firstMatch
+        var swipeCount = 0
+        
+        while !appsLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(appsLink.exists, "Apps link not found")
+        appsLink.tap()
+        
+        let voiceMemosLink = app.buttons["Voice Memos"]
+        swipeCount = 0
+        
+        while !voiceMemosLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(voiceMemosLink.exists, "Voice Memos link not found")
+        voiceMemosLink.tap()
+    }
+    
+    /// Checks if Settings > Wallpaper is available
+    func testSettingsTopLevelWallpaperIsRendered() {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let wallpaperLink = app.buttons["com.apple.settings.wallpaper"]
+        let list = UIDevice.current.userInterfaceIdiom == .pad
+            ? app.collectionViews["Sidebar"].firstMatch
+            : app.collectionViews.firstMatch
+        var swipeCount = 0
+        
+        while !wallpaperLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(wallpaperLink.exists, "Wallpaper link not found")
+        wallpaperLink.tap()
+    }
+    
+    /// Checks if Settings > Apps > Weather is available
+    func testSettingsTopLevelWeatherIsRendered() {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let appsLink = app.buttons["com.apple.settings.apps"]
+        let list = UIDevice.current.userInterfaceIdiom == .pad
+            ? app.collectionViews["Sidebar"].firstMatch
+            : app.collectionViews.firstMatch
+        var swipeCount = 0
+        
+        while !appsLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(appsLink.exists, "Apps link not found")
+        appsLink.tap()
+        
+        let weatherLink = app.buttons["Weather"]
+        swipeCount = 0
+        
+        while !weatherLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(weatherLink.exists, "Weather link not found")
+        weatherLink.tap()
+    }
+    
+    /// Checks if Settings > Wi-Fi is available
+    func testSettingsTopLevelWifiIsRendered() {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let wifiLink = app.buttons["com.apple.settings.wifi"]
+        let list = UIDevice.current.userInterfaceIdiom == .pad
+            ? app.collectionViews["Sidebar"].firstMatch
+            : app.collectionViews.firstMatch
+        var swipeCount = 0
+        
+        while !wifiLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(wifiLink.exists, "Wi-Fi link not found")
+        wifiLink.tap()
+    }
+    
+    /// Checks if Settings > Apps > Books is available
+    func testSettingsTopLeveliBooksIsRendered() {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let appsLink = app.buttons["com.apple.settings.apps"]
+        let list = UIDevice.current.userInterfaceIdiom == .pad
+            ? app.collectionViews["Sidebar"].firstMatch
+            : app.collectionViews.firstMatch
+        var swipeCount = 0
+        
+        while !appsLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(appsLink.exists, "Apps link not found")
+        appsLink.tap()
+        
+        let booksLink = app.buttons["Books"]
+        swipeCount = 0
+        
+        while !booksLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(booksLink.exists, "Books link not found")
+        booksLink.tap()
     }
 }
