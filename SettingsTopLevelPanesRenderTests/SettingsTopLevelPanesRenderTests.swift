@@ -205,6 +205,91 @@ final class SettingsTopLevelPanesRenderTests: XCTestCase {
         compassLink.tap()
     }
     
+    /// Checks if Settings > Control Center is available
+    func testSettingsTopLevelControlCenterIsRendered() throws {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let controlCenterLink = app.buttons["com.apple.settings.controlCenter"]
+        let list = UIDevice.current.userInterfaceIdiom == .pad
+            ? app.collectionViews["Sidebar"].firstMatch
+            : app.collectionViews.firstMatch
+        var swipeCount = 0
+        
+        while !controlCenterLink.exists && swipeCount < 5 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(controlCenterLink.exists, "Control Center link not found")
+        controlCenterLink.tap()
+    }
+    
+    /// Checks if Settings > Display & Brightness is available
+    func testSettingsTopLevelDisplayAndBrightnessIsRendered() throws {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let displayBrightnessLink = app.buttons["com.apple.settings.displayAndBrightness"]
+        let list = UIDevice.current.userInterfaceIdiom == .pad
+            ? app.collectionViews["Sidebar"].firstMatch
+            : app.collectionViews.firstMatch
+        var swipeCount = 0
+        
+        while !displayBrightnessLink.exists && swipeCount < 5 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(displayBrightnessLink.exists, "Display & Brightness link not found")
+        displayBrightnessLink.tap()
+    }
+    
+    /// Checks if Settings > Emergency SOS is available
+    func testSettingsTopLevelEmergencySOSIsRendered() throws {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let emergencyLink = app.buttons["com.apple.settings.sos"]
+        let list = UIDevice.current.userInterfaceIdiom == .pad
+            ? app.collectionViews["Sidebar"].firstMatch
+            : app.collectionViews.firstMatch
+        var swipeCount = 0
+        
+        while !emergencyLink.exists && swipeCount < 5 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(emergencyLink.exists, "Emergency SOS link not found")
+        emergencyLink.tap()
+    }
+    
+    /// Checks if Settings > Exposure Notifications is available
+    func testSettingsTopLevelExposureNotificationsIsRendered() throws {
+        try XCTSkipIf(true, "Exposure Notifications not implemented")
+    }
+    
+    /// Checks if Settings > Apps > FaceTime is available
+    func testSettingsTopLevelFaceTimeIsRendered() {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let appsLink = app.buttons["com.apple.settings.apps"]
+        let list = UIDevice.current.userInterfaceIdiom == .pad
+            ? app.collectionViews["Sidebar"].firstMatch
+            : app.collectionViews.firstMatch
+        var swipeCount = 0
+        
+        while !appsLink.exists && swipeCount < 10 {
+            list.swipeUp()
+            swipeCount += 1
+        }
+        XCTAssertTrue(appsLink.exists, "Apps link not found")
+        appsLink.tap()
+        
+        let faceTimeLink = app.buttons["FaceTime"]
+        XCTAssertTrue(faceTimeLink.exists, "FaceTime link not found")
+        faceTimeLink.tap()
+    }
+    
     @MainActor
     func testLaunchPerformance() throws {
         // This measures how long it takes to launch your application.
