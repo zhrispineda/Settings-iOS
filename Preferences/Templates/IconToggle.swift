@@ -1,16 +1,22 @@
 import SwiftUI
 
-/// A Toggle container with an icon and optional subtitle text.
+/// A Toggle and Label container with an icon, title, and optional subtitle text.
 ///
 /// ```swift
 /// var body: some View {
 ///     List {
-///         IconToggle("Software Updates", icon: "com.apple.graphic-icon.software-update")
+///         IconToggle(
+///             "Software Updates",
+///             isOn: $enabled,
+///             icon: "com.apple.graphic-icon.software-update",
+///             subtitle: "Keeps your device up to date and secure."
+///         )
 ///     }
 /// }
 /// ```
 ///
 /// - Parameter title: The label to display.
+/// - Parameter isOn: Binding for the toggle.
 /// - Parameter icon: The identifier of the icon to display.
 /// - Parameter subtitle: The text to display under the title.
 struct IconToggle: View {
@@ -33,17 +39,16 @@ struct IconToggle: View {
     
     var body: some View {
         Toggle(isOn: $isOn) {
-            HStack(spacing: UIDevice.iPhone ? 13.5 : 7.5) {
-                IconView(icon)
-                    .padding(.leading, -2.5)
-                LabeledContent {} label: {
-                    Text(.init(title))
-                    if !subtitle.isEmpty {
-                        Text(subtitle)
-                    }
+            Label {
+                Text(.init(title))
+                if !subtitle.isEmpty {
+                    Text(.init(subtitle))
+                }
+            } icon: {
+                if !icon.isEmpty {
+                    IconView(icon)
                 }
             }
-            .frame(height: 20)
         }
     }
 }
