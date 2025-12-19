@@ -7,45 +7,42 @@
 
 import SwiftUI
 
-struct AppInfo {
-    let id = UUID()
-    let name: String
-    let icon: String
-    let showOnSimulator: Bool
-}
-
+/// View for Settings > Apps
+///
+/// Only hides app links in Simulator/Preview, even if the corresponding bundles exist in the filesystem for Simulator.
 struct AppsView: View {
-    @State private var searchText = String()
+    @State private var searchText = ""
     private let apps = [
         AppInfo(name: "App Store", icon: "com.apple.AppStore", showOnSimulator: false),
-        AppInfo(name: "Books", icon: "com.apple.iBooks", showOnSimulator: true),
+        AppInfo(name: "Books", icon: "com.apple.iBooks", showOnSimulator: false),
         AppInfo(name: "Calendar", icon: "com.apple.mobilecal", showOnSimulator: true),
         AppInfo(name: "Compass", icon: "com.apple.compass", showOnSimulator: false),
         AppInfo(name: "Contacts", icon: "com.apple.MobileAddressBook", showOnSimulator: true),
-        AppInfo(name: "FaceTime", icon: "com.apple.facetime", showOnSimulator: true),
+        AppInfo(name: "FaceTime", icon: "com.apple.facetime", showOnSimulator: false),
         AppInfo(name: "Files", icon: "com.apple.DocumentsApp", showOnSimulator: true),
         AppInfo(name: "Fitness", icon: "com.apple.Fitness", showOnSimulator: true),
-        AppInfo(name: "Freeform", icon: "com.apple.freeform", showOnSimulator: true),
+        AppInfo(name: "Freeform", icon: "com.apple.freeform", showOnSimulator: false),
         AppInfo(name: "Health", icon: "com.apple.Health", showOnSimulator: true),
-        AppInfo(name: "Mail", icon: "com.apple.mobilemail", showOnSimulator: true),
+        AppInfo(name: "Mail", icon: "com.apple.mobilemail", showOnSimulator: false),
         AppInfo(name: "Maps", icon: "com.apple.Maps", showOnSimulator: true),
-        AppInfo(name: "Measure", icon: "com.apple.measure", showOnSimulator: true),
+        AppInfo(name: "Measure", icon: "com.apple.measure", showOnSimulator: false),
         AppInfo(name: "Messages", icon: "com.apple.MobileSMS", showOnSimulator: true),
-        AppInfo(name: "Music", icon: "com.apple.Music", showOnSimulator: true),
+        AppInfo(name: "Music", icon: "com.apple.Music", showOnSimulator: false),
         AppInfo(name: "News", icon: "com.apple.news", showOnSimulator: true),
-        AppInfo(name: "Notes", icon: "com.apple.mobilenotes", showOnSimulator: true),
+        AppInfo(name: "Notes", icon: "com.apple.mobilenotes", showOnSimulator: false),
         AppInfo(name: "Passwords", icon: "com.apple.Passwords", showOnSimulator: true),
         AppInfo(name: "Photos", icon: "com.apple.mobileslideshow", showOnSimulator: true),
-        AppInfo(name: "Podcasts", icon: "com.apple.podcasts", showOnSimulator: true),
+        AppInfo(name: "Preview", icon: "com.apple.Preview", showOnSimulator: true),
+        AppInfo(name: "Podcasts", icon: "com.apple.podcasts", showOnSimulator: false),
         AppInfo(name: "Reminders", icon: "com.apple.reminders", showOnSimulator: true),
         AppInfo(name: "Safari", icon: "com.apple.mobilesafari", showOnSimulator: true),
         AppInfo(name: "Shortcuts", icon: "com.apple.shortcuts", showOnSimulator: true),
-        AppInfo(name: "Stocks", icon: "com.apple.stocks", showOnSimulator: true),
-        AppInfo(name: "Translate", icon: "com.apple.Translate", showOnSimulator: true),
-        AppInfo(name: "TV", icon: "com.apple.tv", showOnSimulator: true),
-        AppInfo(name: "Voice Memos", icon: "com.apple.VoiceMemos", showOnSimulator: true),
+        AppInfo(name: "Stocks", icon: "com.apple.stocks", showOnSimulator: false),
+        AppInfo(name: "Translate", icon: "com.apple.Translate", showOnSimulator: false),
+        AppInfo(name: "TV", icon: "com.apple.tv", showOnSimulator: false),
+        AppInfo(name: "Voice Memos", icon: "com.apple.VoiceMemos", showOnSimulator: false),
         AppInfo(name: "Wallet", icon: "com.apple.Passbook", showOnSimulator: true),
-        AppInfo(name: "Weather", icon: "com.apple.weather", showOnSimulator: true)
+        AppInfo(name: "Weather", icon: "com.apple.weather", showOnSimulator: false)
     ]
     private let path = "/System/Library/Settings/InstalledApps.settings"
     private var visibleApps: [AppInfo] {
@@ -123,12 +120,7 @@ struct AppsView: View {
                                         controller: "MeasureSettingsController",
                                         title: "Measure"
                                     )
-                                case "Messages": //MessagesView()
-                                    ControllerBridgeView(
-                                        "/System/Library/PrivateFrameworks/CommunicationsSetupUI.framework/CommunicationsSetupUI",
-                                        controller: "CNFRegAppleIDSplashViewController",
-                                        title: "Messages"
-                                    )
+                                case "Messages": MessagesView()
                                 case "Music":
                                     ControllerBridgeView(
                                         "MusicSettings",
@@ -200,9 +192,20 @@ struct AppsView: View {
                 }
             }
         }
-        .searchable(text: $searchText, placement: UIDevice.iPhone ? .automatic : .toolbar, prompt: "Search Apps".localized(path: path))
+        .searchable(
+            text: $searchText,
+            placement: UIDevice.iPhone ? .automatic : .toolbar,
+            prompt: "Search Apps".localized(path: path)
+        )
         .scrollIndicators(.hidden)
     }
+}
+
+struct AppInfo {
+    let id = UUID()
+    let name: String
+    let icon: String
+    let showOnSimulator: Bool
 }
 
 #Preview {
