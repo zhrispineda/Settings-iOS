@@ -12,7 +12,6 @@ struct ContentView: View {
     @AppStorage("ForceQueryError") private var forceQueryError = false
     @Environment(\.horizontalSizeClass) private var horizontalSizeClass
     @Environment(PrimarySettingsListModel.self) private var model
-    @State private var searchFocused = false
     @State private var searchText = ""
     @State private var showingSignInError = false
     @State private var showingSignInSheet = false
@@ -84,9 +83,13 @@ struct ContentView: View {
                         .interactiveDismissDisabled()
                 }
             }
-            .searchable(text: $searchText, isPresented: $searchFocused, placement: UIDevice.iPad ? .navigationBarDrawer(displayMode: .always) : .automatic)
+            .searchable(
+                text: $searchText,
+                isPresented: $model.searchFocused,
+                placement: UIDevice.iPad ? .navigationBarDrawer(displayMode: .always) : .automatic
+            )
             .overlay {
-                if UIDevice.iPad && searchFocused && !searchText.isEmpty {
+                if UIDevice.iPad && model.searchFocused && !searchText.isEmpty {
                     GeometryReader { geo in
                         List {
                             if searchText.isEmpty {
@@ -101,7 +104,7 @@ struct ContentView: View {
                         .scrollDisabled(!searchText.isEmpty)
                         .listStyle(.inset)
                     }
-                } else if UIDevice.iPhone && searchFocused {
+                } else if UIDevice.iPhone && model.searchFocused {
                     GeometryReader { geo in
                         List {
                             if searchText.isEmpty {

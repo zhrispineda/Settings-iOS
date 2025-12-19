@@ -163,6 +163,7 @@ struct SettingsItem: Identifiable, Hashable {
 final class PrimarySettingsListModel {
     static let shared = PrimarySettingsListModel()
     var path: [String] = []
+    var searchFocused = false
     var selection: SettingsItem? = nil
     var isCompact = false
     var showingDebugMenu = false

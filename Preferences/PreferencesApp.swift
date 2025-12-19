@@ -21,11 +21,13 @@ struct PreferencesApp: App {
         .commands {
             CommandGroup(replacing: .appSettings) {
                 Button("About This iPad", systemImage: "ipad") {
-                    Task { @MainActor in
-                        model.selection = model.mainSettings.first
-                        model.path = [""]
-                        try? await Task.sleep(for: .seconds(0.1))
-                        model.path = ["About"]
+                    if model.path != ["About"] {
+                        Task { @MainActor in
+                            model.selection = model.mainSettings.first
+                            model.path = [""]
+                            try? await Task.sleep(for: .seconds(0.1))
+                            model.path = ["About"]
+                        }
                     }
                 }
                 if UIDevice.`apple-internal-install` {
@@ -33,6 +35,13 @@ struct PreferencesApp: App {
                         model.showingDebugMenu.toggle()
                     }.keyboardShortcut("/")
                 }
+            }
+            
+            CommandGroup(before: .toolbar) {
+                Button("Search") {
+                    model.searchFocused = true
+                }
+                .keyboardShortcut("F", modifiers: .command)
             }
         }
         .onChange(of: scenePhase) { _, newPhase in
