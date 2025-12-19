@@ -272,6 +272,8 @@ extension UIDevice {
         return capableDevices.contains(identifier)
     }()
     
+    // MARK: - Keys
+    
     /// A Boolean value that indicates whether the device is on an internal install.
     static let `apple-internal-install` = MGGetBoolAnswer(key: "EqrsVvjcYDdxHBiQmGhAWw")
     
@@ -298,4 +300,9 @@ extension UIDevice {
     
     /// A Boolean value that indicates whether the device is a security research device.
     static let ResearchFuse = MGGetBoolAnswer(key: "XYlJKKkj2hztRP1NWWnhlw")
+    
+    // MARK: - Paths
+    static let RuntimePath = UIDevice.IsSimulated
+        ? "/Library/Developer/CoreSimulator/Volumes/iOS_\(UIDevice.buildVersion)/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS \(UIDevice.current.systemVersion).simruntime/Contents/Resources/RuntimeRoot"
+        : ""
 }

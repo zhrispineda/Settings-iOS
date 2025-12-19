@@ -16,15 +16,7 @@ extension String {
     /// - Returns: The localized String using the provided path, table, and variables.
     @MainActor
     func localized(path: String, table: String = "Localizable", _ variables: CVarArg...) -> String {
-        var newPath = ""
-
-        if UIDevice.IsSimulated {
-            newPath = "/Library/Developer/CoreSimulator/Volumes/iOS_\(UIDevice.buildVersion)/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS \(UIDevice.current.systemVersion).simruntime/Contents/Resources/RuntimeRoot\(path)"
-        } else {
-            newPath = path
-        }
-
-        if let bundle = Bundle(path: newPath) {
+        if let bundle = Bundle(path: UIDevice.RuntimePath + "\(path)") {
             let format = bundle.localizedString(forKey: self, value: nil, table: table)
             return String(format: format, locale: .current, arguments: variables)
         }
