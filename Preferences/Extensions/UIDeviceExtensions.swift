@@ -284,6 +284,9 @@ extension UIDevice {
     /// A Boolean value that indicates whether the device supports Always On Display.
     static let DeviceSupportsAlwaysOnTime = MGGetBoolAnswer(key: "j8/Omm6s1lsmTDFsXjsBfA")
     
+    /// A Boolean value that indicates whether the device is managed by an organization.
+    static let isSupervised = false
+    
     /// A Boolean value that indicates whether the device supports a Hall effect sensor.
     static let `hall-effect-sensor` = MGGetBoolAnswer(key: "Pop5T2XQdDA60MRyxQJdQ")
     

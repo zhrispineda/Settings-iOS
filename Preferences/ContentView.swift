@@ -25,49 +25,53 @@ struct ContentView: View {
         
         NavigationSplitView {
             List(selection: $model.selection) {
-                if UIDevice.ResearchFuse {
-                    Section {} footer: {
-                        Text(.init(String(localized: "SECURITY_RESEARCH_DEVICE_FOOTER").replacing(
-                            "securityResearchDevice://",
-                            with: "pref://securityResearchDevice"))
-                        )
-                    }
-                }
-                
-//                Section {} footer: {
-//                    Text(.init(String(localized: "Device Supervision Footer with Organization Name: %@").replacing(
-//                        "supervisedDevice://",
-//                        with: "pref://supervisedDevice"))
-//                    )
-//                }
-                
-                Section {
-                    Button {
-                        if model.isConnected {
-                            showingSignInSheet.toggle()
-                        } else {
-                            SettingsLogger.info("Presenting Network Alert.")
-                            showingSignInError.toggle()
+                if searchText.isEmpty {
+                    if UIDevice.ResearchFuse {
+                        Section {} footer: {
+                            Text(.init(String(localized: "SECURITY_RESEARCH_DEVICE_FOOTER").replacing(
+                                "securityResearchDevice://",
+                                with: "pref://securityResearchDevice"))
+                            )
                         }
-                    } label: {
-                        NavigationLink {} label: {
-                            AppleAccountSection()
-                        }
-                        .navigationLinkIndicatorVisibility(UIDevice.iPad && !model.isCompact ? .hidden : .visible)
                     }
+                    
+                    if UIDevice.isSupervised {
+                        Section {} footer: {
+                            Text(.init(String(localized: "Device Supervision Footer with Organization Name: %@").replacing(
+                                "supervisedDevice://",
+                                with: "pref://supervisedDevice"))
+                            )
+                        }
+                    }
+                    
+                    Section {
+                        Button {
+                            if model.isConnected {
+                                showingSignInSheet.toggle()
+                            } else {
+                                SettingsLogger.info("Presenting Network Alert.")
+                                showingSignInError.toggle()
+                            }
+                        } label: {
+                            NavigationLink {} label: {
+                                AppleAccountSection()
+                            }
+                            .navigationLinkIndicatorVisibility(UIDevice.iPad && !model.isCompact ? .hidden : .visible)
+                        }
+                    }
+                    
+                    if !followUpDismissed {
+                        SettingsGroup(model.followUpSettings)
+                    }
+                    
+                    SettingsGroup(model.radioSettings)
+                    SettingsGroup(model.mainSettings)
+                    SettingsGroup(model.attentionSettings)
+                    SettingsGroup(model.securitySettings)
+                    SettingsGroup(model.serviceSettings)
+                    SettingsGroup(model.appsSettings)
+                    SettingsGroup(model.developerSettings)
                 }
-                
-                if !followUpDismissed {
-                    SettingsGroup(model.followUpSettings)
-                }
-                
-                SettingsGroup(model.radioSettings)
-                SettingsGroup(model.mainSettings)
-                SettingsGroup(model.attentionSettings)
-                SettingsGroup(model.securitySettings)
-                SettingsGroup(model.serviceSettings)
-                SettingsGroup(model.appsSettings)
-                SettingsGroup(model.developerSettings)
             }
             .navigationTitle(UIDevice.iPhone || model.isCompact ? .settings : "")
             .toolbar(removing: .sidebarToggle)
