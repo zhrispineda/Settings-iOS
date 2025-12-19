@@ -7,9 +7,11 @@ import SwiftUI
 
 struct CarrierSettingsView: View {
     var body: some View {
-        CustomList(title: "Carrier Settings") {
-            
-        }
+        ControllerBridgeView(
+            "/AppleInternal/Library/PreferenceBundles/Carrier Settings.bundle/Carrier Settings",
+            controller: "CSCarrierSettingsController",
+            title: "Carrier Settings"
+        )
     }
 }
 
