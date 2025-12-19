@@ -164,6 +164,7 @@ struct ContentView: View {
         }
         .onChange(of: searchText) {
             if !searchText.isEmpty && forceQueryError {
+                showingSearchQueryError = true
                 forceQueryError = false
             }
         }

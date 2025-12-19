@@ -80,7 +80,6 @@ struct WalletView: View {
             
             SLink(
                 "FPAN_ADD_TO_APPLE_PAY_TITLE".localized(path: path, table: payTable),
-                icon: "None",
                 status: "0"
             ) {}
             
