@@ -155,6 +155,7 @@
 		83CCB7282C7FAD96003F51ED /* DateTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CCB7272C7FAD96003F51ED /* DateTimeView.swift */; };
 		83D0501A2DB6D343003D50AD /* ProgressButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D050192DB6D343003D50AD /* ProgressButton.swift */; };
 		83D0A51E2EF7224900DDFF4E /* OBBoldTrayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D0A51D2EF7224900DDFF4E /* OBBoldTrayButton.swift */; };
+		83D0A5202EF726F000DDFF4E /* OBPrivacyLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D0A51F2EF726F000DDFF4E /* OBPrivacyLinkView.swift */; };
 		83D20AD12D875F6B000B26E6 /* DebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D20AD02D875F6B000B26E6 /* DebugView.swift */; };
 		83D2687A2BD7303800A86DA9 /* DisplayBrightnessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D268792BD7303800A86DA9 /* DisplayBrightnessView.swift */; };
 		83D3FB232C8102B200268E54 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D3FB222C8102B200268E54 /* ContactsView.swift */; };
@@ -358,6 +359,7 @@
 		83CCB7272C7FAD96003F51ED /* DateTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeView.swift; sourceTree = "<group>"; };
 		83D050192DB6D343003D50AD /* ProgressButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressButton.swift; sourceTree = "<group>"; };
 		83D0A51D2EF7224900DDFF4E /* OBBoldTrayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBBoldTrayButton.swift; sourceTree = "<group>"; };
+		83D0A51F2EF726F000DDFF4E /* OBPrivacyLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBPrivacyLinkView.swift; sourceTree = "<group>"; };
 		83D20AD02D875F6B000B26E6 /* DebugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugView.swift; sourceTree = "<group>"; };
 		83D268792BD7303800A86DA9 /* DisplayBrightnessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayBrightnessView.swift; sourceTree = "<group>"; };
 		83D3FB222C8102B200268E54 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
@@ -819,6 +821,7 @@
 			children = (
 				839C2BC32EE9FCAE002E8389 /* OBWelcomeController.swift */,
 				83D0A51D2EF7224900DDFF4E /* OBBoldTrayButton.swift */,
+				83D0A51F2EF726F000DDFF4E /* OBPrivacyLinkView.swift */,
 			);
 			path = OnBoardingKit;
 			sourceTree = "<group>";
@@ -1208,6 +1211,7 @@
 				833769012ED25D050002822F /* SoundsAndHapticsView.swift in Sources */,
 				833F0AD22B744D180036EAD2 /* ContentView.swift in Sources */,
 				838F37EA2C82865B008C9909 /* FilesView.swift in Sources */,
+				83D0A5202EF726F000DDFF4E /* OBPrivacyLinkView.swift in Sources */,
 				8319CE512B86DF8A007EC822 /* AppleAdvertisingView.swift in Sources */,
 				83B1CFB72C1D56C900C2263C /* BiometricPasscodeView.swift in Sources */,
 				83D4CB762B7FF0B000D6087D /* WebContentView.swift in Sources */,

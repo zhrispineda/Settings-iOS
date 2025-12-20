@@ -6,29 +6,6 @@
 import SwiftUI
 
 // MARK: - OnBoardingKit
-/// OBPrivacyLinkController for displaying a privacy splash link.
-struct OBPrivacyLinkView: UIViewControllerRepresentable {
-    let bundleIdentifiers: [String]
-    
-    func makeUIViewController(context: Context) -> UIViewController {
-        guard let controller = NSClassFromString("OBPrivacyLinkController") as? NSObject.Type else {
-            return UIViewController()
-        }
-        
-        if bundleIdentifiers.count > 1 {
-            let selector = NSSelectorFromString("linkWithBundleIdentifiers:")
-            let result = (controller.perform(selector, with: bundleIdentifiers)?.takeUnretainedValue() as? UIViewController)!
-            return result
-        } else {
-            let selector = NSSelectorFromString("linkWithBundleIdentifier:")
-            let result = (controller.perform(selector, with: bundleIdentifiers[0])?.takeUnretainedValue() as? UIViewController)!
-            return result
-        }
-    }
-    
-    func updateUIViewController(_ uiViewController: UIViewController, context: Context) {}
-}
-
 /// OBPrivacyLinkController for displaying several bundles in one view.
 struct OBCombinedSplashView: UIViewControllerRepresentable {
     let bundleIdentifiers: [String]
