@@ -26,13 +26,10 @@ struct DisplayAppearanceOptionView: View {
         } label: {
             VStack(spacing: 15) {
                 ZStack {
-                    if let asset = UIImage.asset(path: path, name: asset) {
-                        Image(uiImage: asset)
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: UIDevice.iPhone ? 60 : 90)
-                            .padding(.top, 5)
-                    }
+                    Image(
+                        asset,
+                        bundle: Bundle(path: UIDevice.RuntimePath + path)
+                    )
                     Text("9:41")
                         .font(.callout)
                         .fontWeight(.semibold)

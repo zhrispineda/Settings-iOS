@@ -104,14 +104,13 @@ struct SignInMethodButton: View {
                     .foregroundStyle(.blue)
                     .font(.system(size: 40))
                     .frame(width: 65)
-            } else if image == "ProximitySymbol-iPhone-iPad-2" {
-                if let asset = UIImage.asset(path: path, name: "ProximitySymbol-iPhone-iPad-2") {
-                    Image(uiImage: asset)
-                        .renderingMode(.template)
-                        .foregroundStyle(.blue)
-                        .font(.system(size: 40))
-                        .frame(width: 65)
-                }
+            } else {
+                Image(
+                    image,
+                    bundle: Bundle(path: UIDevice.RuntimePath + path)
+                )
+                .renderingMode(.template)
+                .foregroundStyle(.blue)
             }
             
             VStack(alignment: .leading) {

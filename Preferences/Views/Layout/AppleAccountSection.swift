@@ -9,15 +9,14 @@ import SwiftUI
 
 /// Apple Account Button Label
 struct AppleAccountSection: View {
-    let path = "/System/Library/PrivateFrameworks/AppleAccountUI.framework"
-    
     var body: some View {
         HStack {
-            if let asset = UIImage.asset(path: path, name: "AppleAccount_Icon_Blue") {
-                Image(uiImage: asset)
-                    .resizable()
-                    .frame(width: 60, height: 60)
-            }
+            Image(
+                "AppleAccount_Icon_Blue",
+                bundle: Bundle(path: "\(UIDevice.RuntimePath)/System/Library/PrivateFrameworks/AppleAccountUI.framework")
+            )
+            .resizable()
+            .frame(width: 60, height: 60)
             
             VStack(alignment: .leading) {
                 Text("Apple Account")

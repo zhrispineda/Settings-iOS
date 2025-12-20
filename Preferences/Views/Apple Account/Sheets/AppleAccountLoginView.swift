@@ -14,33 +14,34 @@ struct AppleAccountLoginView: View {
     @State private var showingAlert = false
     @State private var showingForgotPasswordSheet = false
     @State private var username = ""
-    private let setupTable = "/System/Library/PrivateFrameworks/AppleIDSetup.framework"
-    private let uiTable = "/System/Library/PrivateFrameworks/AppleAccountUI.framework"
+    private let setupPath = "/System/Library/PrivateFrameworks/AppleIDSetup.framework"
+    private let accountPath = "/System/Library/PrivateFrameworks/AppleAccountUI.framework"
     
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 0) {
-                if let asset = UIImage.asset(path: uiTable, name: "AppleAccount_Icon_Blue") {
-                    Image(uiImage: asset)
-                        .frame(height: 20)
-                        .frame(maxWidth: .infinity)
-                        .padding(.bottom, 60)
-                }
-                Text("LOGIN_FORM_TITLE".localized(path: setupTable))
+                Image(
+                    "AppleAccount_Icon_Blue",
+                    bundle: Bundle(path: UIDevice.RuntimePath + accountPath)
+                )
+                .frame(height: 20)
+                .frame(maxWidth: .infinity)
+                .padding(.bottom, 60)
+                Text("LOGIN_FORM_TITLE".localized(path: setupPath))
                     .font(.title2)
                     .fontWeight(.bold)
-                Text("SIGN_IN_SUBTITLE".localized(path: uiTable))
+                Text("SIGN_IN_SUBTITLE".localized(path: accountPath))
                     .font(.title2)
                     .foregroundStyle(.secondary)
                     .fixedSize(horizontal: false, vertical: true)
 
                 // Email or Phone Number
-                TextField("LOGIN_FORM_TEXTFIELD_NAME".localized(path: setupTable), text: $username)
+                TextField("LOGIN_FORM_TEXTFIELD_NAME".localized(path: setupPath), text: $username)
                     .usernameTextStyle()
                     .padding(.vertical)
 
                 // Forgot password?
-                Button("SIGN_IN_HELP_BUTTON_FORGOT_SOLARIUM".localized(path: uiTable), systemImage: "info.circle.fill") {
+                Button("SIGN_IN_HELP_BUTTON_FORGOT_SOLARIUM".localized(path: accountPath), systemImage: "info.circle.fill") {
                     showingForgotPasswordSheet.toggle()
                 }
                 .foregroundStyle(.blue)
@@ -61,7 +62,7 @@ struct AppleAccountLoginView: View {
                     if signingIn {
                         ProgressButton()
                     } else {
-                        OBBoldTrayButton("SIGN_IN_BUTTON_CONTINUE".localized(path: uiTable)) {
+                        OBBoldTrayButton("SIGN_IN_BUTTON_CONTINUE".localized(path: accountPath)) {
                             signingIn.toggle()
                             showingAlert.toggle()
                         }
@@ -69,18 +70,18 @@ struct AppleAccountLoginView: View {
                     }
                 }
                 .disabled(username.count < 1)
-                .alert("VERIFICATION_FAILED_TITLE".localized(path: uiTable), isPresented: $showingAlert) {
-                    Button("AUTHENTICATE_VIEW_BUTTON_TITLE".localized(path: setupTable)) {
+                .alert("VERIFICATION_FAILED_TITLE".localized(path: accountPath), isPresented: $showingAlert) {
+                    Button("AUTHENTICATE_VIEW_BUTTON_TITLE".localized(path: setupPath)) {
                         signingIn.toggle()
                     }
                 } message: {
-                    Text("BAD_NETWORK_ALERT_MESSAGE_REBRAND".localized(path: uiTable))
+                    Text("BAD_NETWORK_ALERT_MESSAGE_REBRAND".localized(path: accountPath))
                 }
 
                 // Sign in a child in my Family
                 if !isMainSheet {
                     NavigationLink(destination: ParentGuardianSignInView()) {
-                        Text("SIGN_IN_FOR_CHILD_BUTTON_TITLE_SOLARIUM".localized(path: uiTable))
+                        Text("SIGN_IN_FOR_CHILD_BUTTON_TITLE_SOLARIUM".localized(path: accountPath))
                     }
                     .foregroundStyle(.primary)
                     .navigationLinkIndicatorVisibility(.hidden)

@@ -41,47 +41,43 @@ struct NotificationsView: View {
             Section {
                 HStack {
                     Spacer()
-                    if let displayIcon = UIImage.asset(path: path, name: countImage) {
-                        NotificationStyleButton(
-                            icon: displayIcon,
-                            label: "NOTIFICATION_LIST_DISPLAY_STYLE_COUNT".localized(path: path, table: table),
-                            isSelected: notificationStyle == .count
-                        ) {
-                            withAnimation {
-                                notificationStyle = .count
-                            }
+                    
+                    NotificationStyleButton(
+                        icon: UIImage(named: countImage, in: Bundle(path: UIDevice.RuntimePath + path), with: nil) ?? UIImage(),
+                        label: "NOTIFICATION_LIST_DISPLAY_STYLE_COUNT".localized(path: path, table: table),
+                        isSelected: notificationStyle == .count
+                    ) {
+                        withAnimation {
+                            notificationStyle = .count
                         }
                     }
                     
                     Spacer()
                     Spacer()
                     
-                    if let displayIcon = UIImage.asset(path: path, name: stackImage) {
-                        NotificationStyleButton(
-                            icon: displayIcon,
-                            label: "NOTIFICATION_LIST_DISPLAY_STYLE_STACK".localized(path: path, table: table),
-                            isSelected: notificationStyle == .stack
-                        ) {
-                            withAnimation {
-                                notificationStyle = .stack
-                            }
+                    NotificationStyleButton(
+                        icon: UIImage(named: stackImage, in: Bundle(path: UIDevice.RuntimePath + path), with: nil) ?? UIImage(),
+                        label: "NOTIFICATION_LIST_DISPLAY_STYLE_STACK".localized(path: path, table: table),
+                        isSelected: notificationStyle == .stack
+                    ) {
+                        withAnimation {
+                            notificationStyle = .stack
                         }
                     }
                     
                     Spacer()
                     Spacer()
                     
-                    if let displayIcon = UIImage.asset(path: path, name: listImage) {
-                        NotificationStyleButton(
-                            icon: displayIcon,
-                            label: "NOTIFICATION_LIST_DISPLAY_STYLE_LIST".localized(path: path, table: table),
-                            isSelected: notificationStyle == .list
-                        ) {
-                            withAnimation {
-                                notificationStyle = .list
-                            }
+                    NotificationStyleButton(
+                        icon: UIImage(named: listImage, in: Bundle(path: UIDevice.RuntimePath + path), with: nil) ?? UIImage(),
+                        label: "NOTIFICATION_LIST_DISPLAY_STYLE_LIST".localized(path: path, table: table),
+                        isSelected: notificationStyle == .list
+                    ) {
+                        withAnimation {
+                            notificationStyle = .list
                         }
                     }
+                    
                     Spacer()
                 }
             } header: {
