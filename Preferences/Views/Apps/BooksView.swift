@@ -82,7 +82,14 @@ struct BooksView: View {
                          : "Always display current time, battery level, and other iPad status info while reading.".localized(path: path, table: table)
                     )
                 }
-                SettingsLink("Page Navigation".localized(path: path, table: table), status: pageNavigation.localized(path: path, table: table), destination: SelectOptionList("Page Navigation", options: ["Slide", "Curl", "Fast Fade", "Scroll"], selected: $pageNavigation, table: table))
+                SLink(
+                    "Page Navigation".localized(path: path, table: table),
+                    status: pageNavigation.localized(path: path, table: table),
+                    destination: SelectOptionList(
+                        "Page Navigation",
+                        options: ["Slide", "Curl", "Fast Fade", "Scroll"],
+                        selected: $pageNavigation, table: table)
+                )
             }
             
             Section {
@@ -93,7 +100,10 @@ struct BooksView: View {
             } header: {
                 Text("Reading Goals".localized(path: path, table: table))
             } footer: {
-                Text(readingGoals ? "Show time spent reading and other achievements in Apple Books. Include time spent reading PDFs".localized(path: path, table: table) : "Show time spent reading and other achievements in Apple Books.".localized(path: path, table: table))
+                Text(readingGoals
+                     ? "Show time spent reading and other achievements in Apple Books. Include time spent reading PDFs".localized(path: path, table: table)
+                     : "Show time spent reading and other achievements in Apple Books.".localized(path: path, table: table)
+                )
             }
             
             Section {
