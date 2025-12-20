@@ -116,8 +116,6 @@
 		839092BB2C0D213200924849 /* OtherNetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839092BA2C0D213200924849 /* OtherNetworkView.swift */; };
 		83937B8A2D82315A0049AB0E /* SettingsTests.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = 83937B892D82315A0049AB0E /* SettingsTests.xctestplan */; };
 		8397F9E92CDF20E9004DFE2F /* BooksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397F9E82CDF20E9004DFE2F /* BooksView.swift */; };
-		839AD33C2E8AFC6A00DDD069 /* iOSReadMeSummary.html in Resources */ = {isa = PBXBuildFile; fileRef = 839AD33A2E8AFC6A00DDD069 /* iOSReadMeSummary.html */; };
-		839AD33F2E8AFC7300DDD069 /* iPadOSReadMeSummary.html in Resources */ = {isa = PBXBuildFile; fileRef = 839AD33D2E8AFC7300DDD069 /* iPadOSReadMeSummary.html */; };
 		839C2BC42EE9FCAE002E8389 /* OBWelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839C2BC32EE9FCAE002E8389 /* OBWelcomeController.swift */; };
 		83A36C8D2DB95D7800378E45 /* ConfigureDNSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A36C8C2DB95D7800378E45 /* ConfigureDNSView.swift */; };
 		83A36C8F2DB96E4600378E45 /* ConfigureProxyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A36C8E2DB96E4600378E45 /* ConfigureProxyView.swift */; };
@@ -140,7 +138,6 @@
 		83B1D5342D6BC3C800C26010 /* DefaultAppsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B1D5332D6BC3C800C26010 /* DefaultAppsView.swift */; };
 		83B3573E2EE8CB940066A2BA /* PSFooterHyperlinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B3573D2EE8CB940066A2BA /* PSFooterHyperlinkView.swift */; };
 		83B357402EE8DA510066A2BA /* SettingsAppDebugMenuGestureProxyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B3573F2EE8DA510066A2BA /* SettingsAppDebugMenuGestureProxyView.swift */; };
-		83B357422EE8DD370066A2BA /* SUSSoftwareUpdateReleaseNotesDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B357412EE8DD370066A2BA /* SUSSoftwareUpdateReleaseNotesDetail.swift */; };
 		83B357442EE8DF780066A2BA /* HLPHelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B357432EE8DF780066A2BA /* HLPHelpViewController.swift */; };
 		83B357462EE8E1710066A2BA /* AKProximityAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B357452EE8E1710066A2BA /* AKProximityAuthViewController.swift */; };
 		83B550562C16A6A5002DA622 /* AutomaticUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B550552C16A6A5002DA622 /* AutomaticUpdateView.swift */; };
@@ -320,8 +317,6 @@
 		83937B892D82315A0049AB0E /* SettingsTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = SettingsTests.xctestplan; sourceTree = "<group>"; };
 		83937B912D8235310049AB0E /* SettingsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SettingsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8397F9E82CDF20E9004DFE2F /* BooksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksView.swift; sourceTree = "<group>"; };
-		839AD33B2E8AFC6A00DDD069 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = en; path = en.lproj/iOSReadMeSummary.html; sourceTree = "<group>"; };
-		839AD33E2E8AFC7300DDD069 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = en; path = en.lproj/iPadOSReadMeSummary.html; sourceTree = "<group>"; };
 		839C2BC32EE9FCAE002E8389 /* OBWelcomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBWelcomeController.swift; sourceTree = "<group>"; };
 		83A36C8C2DB95D7800378E45 /* ConfigureDNSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureDNSView.swift; sourceTree = "<group>"; };
 		83A36C8E2DB96E4600378E45 /* ConfigureProxyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureProxyView.swift; sourceTree = "<group>"; };
@@ -344,7 +339,6 @@
 		83B1D5332D6BC3C800C26010 /* DefaultAppsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAppsView.swift; sourceTree = "<group>"; };
 		83B3573D2EE8CB940066A2BA /* PSFooterHyperlinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSFooterHyperlinkView.swift; sourceTree = "<group>"; };
 		83B3573F2EE8DA510066A2BA /* SettingsAppDebugMenuGestureProxyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAppDebugMenuGestureProxyView.swift; sourceTree = "<group>"; };
-		83B357412EE8DD370066A2BA /* SUSSoftwareUpdateReleaseNotesDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUSSoftwareUpdateReleaseNotesDetail.swift; sourceTree = "<group>"; };
 		83B357432EE8DF780066A2BA /* HLPHelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HLPHelpViewController.swift; sourceTree = "<group>"; };
 		83B357452EE8E1710066A2BA /* AKProximityAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKProximityAuthViewController.swift; sourceTree = "<group>"; };
 		83B550552C16A6A5002DA622 /* AutomaticUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutomaticUpdateView.swift; sourceTree = "<group>"; };
@@ -794,7 +788,6 @@
 				83D0A51C2EF721D300DDFF4E /* OnBoardingKit */,
 				83B3573D2EE8CB940066A2BA /* PSFooterHyperlinkView.swift */,
 				83B3573F2EE8DA510066A2BA /* SettingsAppDebugMenuGestureProxyView.swift */,
-				83B357412EE8DD370066A2BA /* SUSSoftwareUpdateReleaseNotesDetail.swift */,
 				83B357432EE8DF780066A2BA /* HLPHelpViewController.swift */,
 				83B357452EE8E1710066A2BA /* AKProximityAuthViewController.swift */,
 				835646092D9C4AB600DAB406 /* UIKitRepresentables.swift */,
@@ -813,8 +806,6 @@
 		83B893BE2B8FDBDB005705A3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				839AD33A2E8AFC6A00DDD069 /* iOSReadMeSummary.html */,
-				839AD33D2E8AFC7300DDD069 /* iPadOSReadMeSummary.html */,
 				83F40FA52EEE9F5D0029D88C /* Localizable.xcstrings */,
 			);
 			path = Resources;
@@ -1052,7 +1043,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				839AD33F2E8AFC7300DDD069 /* iPadOSReadMeSummary.html in Resources */,
 				83A851BE2E0A4BD70041A3E6 /* SettingsApp.icon in Resources */,
 				833F0AD72B744D190036EAD2 /* Preview Assets.xcassets in Resources */,
 				83AA2B032EDE2596003A924A /* iOS26Light.png in Resources */,
@@ -1060,7 +1050,6 @@
 				83AA2B052EDE2596003A924A /* iPadOS26Dark.png in Resources */,
 				83F40FA62EEE9F5D0029D88C /* Localizable.xcstrings in Resources */,
 				83AA2B062EDE2596003A924A /* iOS26Dark.png in Resources */,
-				839AD33C2E8AFC6A00DDD069 /* iOSReadMeSummary.html in Resources */,
 				833F0AD42B744D190036EAD2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1240,7 +1229,6 @@
 				833C6EAE2C20C88000A8D91C /* HomeScreenAppLibraryView.swift in Sources */,
 				8310C70E2EA179CA00C0B749 /* UIApplicationShortcutIconHelper.m in Sources */,
 				83D5957B2CA5BF19003EF0CD /* RecordSoundView.swift in Sources */,
-				83B357422EE8DD370066A2BA /* SUSSoftwareUpdateReleaseNotesDetail.swift in Sources */,
 				83D20AD12D875F6B000B26E6 /* DebugView.swift in Sources */,
 				8310DD7F2E5FE7F700BB9308 /* BatteryView.swift in Sources */,
 				83CCB7282C7FAD96003F51ED /* DateTimeView.swift in Sources */,
@@ -1286,25 +1274,6 @@
 			targetProxy = 83937B952D8235310049AB0E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		839AD33A2E8AFC6A00DDD069 /* iOSReadMeSummary.html */ = {
-			isa = PBXVariantGroup;
-			children = (
-				839AD33B2E8AFC6A00DDD069 /* en */,
-			);
-			name = iOSReadMeSummary.html;
-			sourceTree = "<group>";
-		};
-		839AD33D2E8AFC7300DDD069 /* iPadOSReadMeSummary.html */ = {
-			isa = PBXVariantGroup;
-			children = (
-				839AD33E2E8AFC7300DDD069 /* en */,
-			);
-			name = iPadOSReadMeSummary.html;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		833F0AD82B744D190036EAD2 /* Debug */ = {

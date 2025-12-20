@@ -21,7 +21,6 @@ A **work-in-progress** recreation of the iOS & iPadOS Settings app (Preferences.
 >  - MobileGestalt<br/>
 >  - OnBoardingKit<br/>
 >  - Preferences<br/>
->  - SoftwareUpdateSettings<br/>
 >  - SpringBoardServices<br/>
 > </details>
 >
