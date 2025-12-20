@@ -472,7 +472,6 @@
 				8310C70D2EA179C600C0B749 /* UIApplicationShortcutIconHelper.m */,
 				832999522CAF93BA009AD115 /* MGHelper.swift */,
 				836610652DAC67CD0040E05C /* SettingsLogger.swift */,
-				835646092D9C4AB600DAB406 /* UIKitRepresentables.swift */,
 				83B3573C2EE8CB7E0066A2BA /* UIKit */,
 			);
 			path = Components;
@@ -798,6 +797,7 @@
 				83B357412EE8DD370066A2BA /* SUSSoftwareUpdateReleaseNotesDetail.swift */,
 				83B357432EE8DF780066A2BA /* HLPHelpViewController.swift */,
 				83B357452EE8E1710066A2BA /* AKProximityAuthViewController.swift */,
+				835646092D9C4AB600DAB406 /* UIKitRepresentables.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";

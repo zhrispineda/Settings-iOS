@@ -5,10 +5,11 @@
 
 import SwiftUI
 
-/// A view controller bridge based on a given path and class name.
+/// A UIViewControllerRepresentable instance for a given path and class name.
 ///
-/// - Parameter path: The path of the framework.
-/// - Parameter controller: The string name of the class.
+/// - Parameters:
+///    - path: The path of the framework.
+///    - controller: The string name of the class.
 struct CustomViewController: UIViewControllerRepresentable {
     let path: String
     let controller: String
@@ -69,10 +70,11 @@ struct CustomViewController: UIViewControllerRepresentable {
     func updateUIViewController(_ uiViewController: UIViewController, context: Context) {}
 }
 
-/// A view bridge based on a given path and class name.
+/// A UIViewRepresentable instance for a given path and class name.
 ///
-/// - Parameter path: The path of the framework.
-/// - Parameter controller: The string name of the class.
+/// - Parameters:
+///    - path: The path of the framework.
+///    - controller: The string name of the class.
 struct CustomView: UIViewRepresentable {
     let path: String
     let controller: String

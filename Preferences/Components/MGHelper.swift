@@ -10,6 +10,7 @@ class MGHelper {
     /// Returns the value of a given key from MobileGestalt.
     ///
     /// - Parameter key: The key to query as a String.
+    /// 
     /// - Returns: The value of the key as either a String value or nil.
     ///
     /// - Warning: Do not use this for public applications. It is not publicly supported.
