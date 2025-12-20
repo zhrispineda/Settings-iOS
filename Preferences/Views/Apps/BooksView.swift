@@ -185,7 +185,7 @@ struct BooksView: View {
             }
         }
         .sheet(isPresented: $showingSheet) {
-            OnBoardingKitView(bundleID: "com.apple.onboarding.ibooks")
+            OBPrivacySplashController(bundleID: "com.apple.onboarding.ibooks")
                 .ignoresSafeArea()
         }
     }

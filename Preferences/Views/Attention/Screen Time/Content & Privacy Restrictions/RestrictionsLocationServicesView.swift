@@ -176,7 +176,7 @@ struct RestrictionsLocationServicesView: View {
             }
         }
         .sheet(isPresented: $showingPrivacySheet) {
-            OnBoardingKitView(bundleID: "com.apple.onboarding.locationservices")
+            OBPrivacySplashController(bundleID: "com.apple.onboarding.locationservices")
                 .ignoresSafeArea()
         }
     }

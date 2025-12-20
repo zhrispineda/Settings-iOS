@@ -87,7 +87,7 @@ struct LocationServicesView: View {
             }
         }
         .sheet(isPresented: $showingSheet) {
-            OnBoardingKitView(bundleID: "com.apple.onboarding.locationservices")
+            OBPrivacySplashController(bundleID: "com.apple.onboarding.locationservices")
                 .ignoresSafeArea()
         }
     }

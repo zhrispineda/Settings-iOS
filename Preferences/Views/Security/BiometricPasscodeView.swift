@@ -218,7 +218,7 @@ struct BiometricPasscodeView: View {
             .interactiveDismissDisabled()
         }
         .sheet(isPresented: $showingPrivacySheet) {
-            OnBoardingKitView(bundleID: UIDevice.PearlIDCapability
+            OBPrivacySplashController(bundleID: UIDevice.PearlIDCapability
                 ? "com.apple.onboarding.faceid"
                 : "com.apple.onboarding.touchid"
             )

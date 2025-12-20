@@ -42,7 +42,7 @@ struct AppleAdvertisingView: View {
             }
         }
         .sheet(isPresented: $showingPrivacySheet) {
-            OnBoardingKitView(bundleID: "com.apple.onboarding.advertising")
+            OBPrivacySplashController(bundleID: "com.apple.onboarding.advertising")
         }
     }
 }

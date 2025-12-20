@@ -157,6 +157,7 @@
 		83D0A51E2EF7224900DDFF4E /* OBBoldTrayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D0A51D2EF7224900DDFF4E /* OBBoldTrayButton.swift */; };
 		83D0A5202EF726F000DDFF4E /* OBPrivacyLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D0A51F2EF726F000DDFF4E /* OBPrivacyLinkView.swift */; };
 		83D0A5222EF72ACB00DDFF4E /* OBCombinedSplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D0A5212EF72ACB00DDFF4E /* OBCombinedSplashController.swift */; };
+		83D0A5242EF72C0700DDFF4E /* OBPrivacySplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D0A5232EF72C0700DDFF4E /* OBPrivacySplashController.swift */; };
 		83D20AD12D875F6B000B26E6 /* DebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D20AD02D875F6B000B26E6 /* DebugView.swift */; };
 		83D2687A2BD7303800A86DA9 /* DisplayBrightnessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D268792BD7303800A86DA9 /* DisplayBrightnessView.swift */; };
 		83D3FB232C8102B200268E54 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D3FB222C8102B200268E54 /* ContactsView.swift */; };
@@ -362,6 +363,7 @@
 		83D0A51D2EF7224900DDFF4E /* OBBoldTrayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBBoldTrayButton.swift; sourceTree = "<group>"; };
 		83D0A51F2EF726F000DDFF4E /* OBPrivacyLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBPrivacyLinkView.swift; sourceTree = "<group>"; };
 		83D0A5212EF72ACB00DDFF4E /* OBCombinedSplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBCombinedSplashController.swift; sourceTree = "<group>"; };
+		83D0A5232EF72C0700DDFF4E /* OBPrivacySplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBPrivacySplashController.swift; sourceTree = "<group>"; };
 		83D20AD02D875F6B000B26E6 /* DebugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugView.swift; sourceTree = "<group>"; };
 		83D268792BD7303800A86DA9 /* DisplayBrightnessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayBrightnessView.swift; sourceTree = "<group>"; };
 		83D3FB222C8102B200268E54 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
@@ -825,6 +827,7 @@
 				83D0A51D2EF7224900DDFF4E /* OBBoldTrayButton.swift */,
 				83D0A51F2EF726F000DDFF4E /* OBPrivacyLinkView.swift */,
 				83D0A5212EF72ACB00DDFF4E /* OBCombinedSplashController.swift */,
+				83D0A5232EF72C0700DDFF4E /* OBPrivacySplashController.swift */,
 			);
 			path = OnBoardingKit;
 			sourceTree = "<group>";
@@ -1172,6 +1175,7 @@
 				8329284E2B8580B3006611CF /* HeadphoneAudioLevelsView.swift in Sources */,
 				838273A32B7FD37B000F4228 /* TVView.swift in Sources */,
 				837B0F5B2B8989E000B22455 /* SiriLanguageView.swift in Sources */,
+				83D0A5242EF72C0700DDFF4E /* OBPrivacySplashController.swift in Sources */,
 				8340A3C32CB0C723005ED66A /* SEIDView.swift in Sources */,
 				83815CE92B768E3600F53A0F /* NewsView.swift in Sources */,
 				8397F9E92CDF20E9004DFE2F /* BooksView.swift in Sources */,

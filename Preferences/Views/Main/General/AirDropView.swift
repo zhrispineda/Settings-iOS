@@ -64,7 +64,7 @@ struct AirDropView: View {
             }
         }
         .sheet(isPresented: $showingSheet) {
-            OnBoardingKitView(bundleID: "com.apple.onboarding.airdrop")
+            OBPrivacySplashController(bundleID: "com.apple.onboarding.airdrop")
                 .ignoresSafeArea()
         }
     }

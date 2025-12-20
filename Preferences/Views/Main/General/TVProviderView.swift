@@ -93,7 +93,7 @@ struct TVProviderView: View {
             .searchPresentationToolbarBehavior(.avoidHidingContent)
             .scrollIndicators(.hidden)
             .sheet(isPresented: $showingSheet) {
-                OnBoardingKitView(bundleID: "com.apple.onboarding.tvprovider")
+                OBPrivacySplashController(bundleID: "com.apple.onboarding.tvprovider")
                     .ignoresSafeArea()
             }
         }

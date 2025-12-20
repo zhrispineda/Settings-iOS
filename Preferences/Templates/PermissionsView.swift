@@ -183,7 +183,7 @@ struct PermissionsView: View {
             }
         }
         .sheet(isPresented: $showingSheet) {
-            OnBoardingKitView(bundleID: "com.apple.onboarding.maps")
+            OBPrivacySplashController(bundleID: "com.apple.onboarding.maps")
                 .ignoresSafeArea()
         }
     }

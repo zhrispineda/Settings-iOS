@@ -384,7 +384,7 @@ struct CameraView: View {
                 .interactiveDismissDisabled()
         }
         .sheet(isPresented: $showingPrivacySheet) {
-            OnBoardingKitView(bundleID: "com.apple.onboarding.camera")
+            OBPrivacySplashController(bundleID: "com.apple.onboarding.camera")
                 .ignoresSafeArea()
         }
     }

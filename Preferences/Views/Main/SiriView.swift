@@ -234,11 +234,11 @@ struct SiriView: View {
             }
         }
         .sheet(isPresented: $siriPrivacySheet) {
-            OnBoardingKitView(bundleID: "com.apple.onboarding.siri")
+            OBPrivacySplashController(bundleID: "com.apple.onboarding.siri")
                 .ignoresSafeArea()
         }
         .sheet(isPresented: $intelligencePrivacySheet) {
-            OnBoardingKitView(bundleID: "com.apple.onboarding.intelligenceengine")
+            OBPrivacySplashController(bundleID: "com.apple.onboarding.intelligenceengine")
                 .ignoresSafeArea()
         }
         .sheet(isPresented: $showingSiriHelpSheet) {
