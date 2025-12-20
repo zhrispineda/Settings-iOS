@@ -5,7 +5,7 @@
 
 import SwiftUI
 
-/// A UIViewRepresentable instance for `AKProximityAuthViewController` from the AuthKitUI framework.
+/// A UIViewControllerRepresentable instance for `AKProximityAuthViewController` from the AuthKitUI framework.
 ///
 /// - Warning: Do not use this method for public applications. It is not publicly supported.
 /// - Warning: This class is not present in Simulator/Xcode Previews.

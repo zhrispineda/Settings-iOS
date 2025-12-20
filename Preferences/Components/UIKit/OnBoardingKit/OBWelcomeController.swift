@@ -5,7 +5,7 @@
 
 import SwiftUI
 
-/// A UIViewRepresentable instance for `OBWelcomeController` from the OnBoardingKit framework.
+/// A UIViewControllerRepresentable instance for `OBWelcomeController` from the OnBoardingKit framework.
 ///
 /// - Parameter title: The title header to display.
 /// - Parameter detailText: The detail text to display under the title.

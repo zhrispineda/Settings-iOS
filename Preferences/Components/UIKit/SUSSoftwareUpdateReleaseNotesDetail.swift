@@ -5,7 +5,7 @@
 
 import SwiftUI
 
-/// A UIViewRepresentable instance for `SUSSoftwareUpdateReleaseNotesDetail` from the SoftwareUpdateSettings framework.
+/// A UIViewControllerRepresentable instance for `SUSSoftwareUpdateReleaseNotesDetail` from the SoftwareUpdateSettings framework.
 ///
 /// - Parameter readMeName: The name of the ReadMe file.
 ///

@@ -5,7 +5,7 @@
 
 import SwiftUI
 
-/// A UIViewRepresentable instance for `HLPHelpViewController` from the HelpKit framework.
+/// A UIViewControllerRepresentable instance for `HLPHelpViewController` from the HelpKit framework.
 ///
 /// - Parameter topicID: The topic ID to display.
 ///
