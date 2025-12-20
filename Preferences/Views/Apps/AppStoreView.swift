@@ -2,11 +2,10 @@
 //  AppStoreView.swift
 //  Preferences
 //
-//  Settings > Apps > App Store
-//
 
 import SwiftUI
 
+/// View for Settings > Apps > App Store
 struct AppStoreView: View {
     @State private var cellularEnabled = true
     @State private var appDownloadsEnabled = false
@@ -16,13 +15,16 @@ struct AppStoreView: View {
     @State private var inAppRatingsReviewEnabled = true
     @State private var offloadUnusedAppsEnabled = false
     @State private var showingSheet = false
-    let path = "/System/Library/PreferenceBundles/MobileStoreSettings.bundle"
-    let table = "StoreSettings"
+    private let path = "/System/Library/PreferenceBundles/MobileStoreSettings.bundle"
+    private let table = "StoreSettings"
     
     var body: some View {
         CustomList(title: "STORE_SETTINGS_TITLE".localized(path: path, table: table), topPadding: true) {
             // Allow App Store to Access
-            PermissionsView(appName: "STORE_SETTINGS_TITLE".localized(path: path, table: table), cellularEnabled: $cellularEnabled)
+            PermissionsView(
+                appName: "STORE_SETTINGS_TITLE".localized(path: path, table: table),
+                cellularEnabled: $cellularEnabled
+            )
             
             // Automatic Downloads
             Section("AUTO_DOWNLOAD_ON_CELL".localized(path: path, table: table)) {
@@ -47,7 +49,10 @@ struct AppStoreView: View {
             if UIDevice.CellularTelephonyCapability {
                 Section {
                     Toggle("AUTO_DOWNLOAD_ON_CELL".localized(path: path, table: table), isOn: $automaticDownloadsEnabled)
-                    SettingsLink("AUTO_DOWNLOAD_APPS".localized(path: path, table: table), status: "ALWAYS_ALLOW".localized(path: path, table: table), destination: EmptyView())
+                    SLink(
+                        "AUTO_DOWNLOAD_APPS".localized(path: path, table: table),
+                        status: "ALWAYS_ALLOW".localized(path: path, table: table)
+                    ) {}
                 } header: {
                     Text("CELLULAR_DATA_HEADER".localized(path: path, table: table))
                 } footer: {
@@ -58,7 +63,10 @@ struct AppStoreView: View {
             
             // Video Autoplay
             Section {
-                SettingsLink("AUTO_PLAY_VIDEO_SETTINGS_TITLE".localized(path: path, table: table), status: "AUTO_PLAY_VIDEO_MODE_ON".localized(path: path, table: table), destination: EmptyView())
+                SLink(
+                    "AUTO_PLAY_VIDEO_SETTINGS_TITLE".localized(path: path, table: table),
+                    status: "AUTO_PLAY_VIDEO_MODE_ON".localized(path: path, table: table)
+                ) {}
             } footer: {
                 Text("AUTO_PLAY_VIDEO_SETTINGS_DESCRIPTION".localized(path: path, table: table))
             }
