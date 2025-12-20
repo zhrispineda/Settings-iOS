@@ -88,7 +88,10 @@ struct AppStoreView: View {
             }
         }
         .background {
-            OBCombinedSplashView(["com.apple.onboarding.appstore", "com.apple.onboarding.applearcade"], showingSheet: $showingSheet)
+            OBCombinedSplashController(
+                ["com.apple.onboarding.appstore", "com.apple.onboarding.applearcade"],
+                showingSheet: $showingSheet
+            )
         }
     }
 }

@@ -156,6 +156,7 @@
 		83D0501A2DB6D343003D50AD /* ProgressButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D050192DB6D343003D50AD /* ProgressButton.swift */; };
 		83D0A51E2EF7224900DDFF4E /* OBBoldTrayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D0A51D2EF7224900DDFF4E /* OBBoldTrayButton.swift */; };
 		83D0A5202EF726F000DDFF4E /* OBPrivacyLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D0A51F2EF726F000DDFF4E /* OBPrivacyLinkView.swift */; };
+		83D0A5222EF72ACB00DDFF4E /* OBCombinedSplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D0A5212EF72ACB00DDFF4E /* OBCombinedSplashController.swift */; };
 		83D20AD12D875F6B000B26E6 /* DebugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D20AD02D875F6B000B26E6 /* DebugView.swift */; };
 		83D2687A2BD7303800A86DA9 /* DisplayBrightnessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D268792BD7303800A86DA9 /* DisplayBrightnessView.swift */; };
 		83D3FB232C8102B200268E54 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D3FB222C8102B200268E54 /* ContactsView.swift */; };
@@ -360,6 +361,7 @@
 		83D050192DB6D343003D50AD /* ProgressButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressButton.swift; sourceTree = "<group>"; };
 		83D0A51D2EF7224900DDFF4E /* OBBoldTrayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBBoldTrayButton.swift; sourceTree = "<group>"; };
 		83D0A51F2EF726F000DDFF4E /* OBPrivacyLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBPrivacyLinkView.swift; sourceTree = "<group>"; };
+		83D0A5212EF72ACB00DDFF4E /* OBCombinedSplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBCombinedSplashController.swift; sourceTree = "<group>"; };
 		83D20AD02D875F6B000B26E6 /* DebugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugView.swift; sourceTree = "<group>"; };
 		83D268792BD7303800A86DA9 /* DisplayBrightnessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayBrightnessView.swift; sourceTree = "<group>"; };
 		83D3FB222C8102B200268E54 /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
@@ -822,6 +824,7 @@
 				839C2BC32EE9FCAE002E8389 /* OBWelcomeController.swift */,
 				83D0A51D2EF7224900DDFF4E /* OBBoldTrayButton.swift */,
 				83D0A51F2EF726F000DDFF4E /* OBPrivacyLinkView.swift */,
+				83D0A5212EF72ACB00DDFF4E /* OBCombinedSplashController.swift */,
 			);
 			path = OnBoardingKit;
 			sourceTree = "<group>";
@@ -1082,6 +1085,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				830976D32CDD1B2F0087F1A1 /* FollowUpView.swift in Sources */,
+				83D0A5222EF72ACB00DDFF4E /* OBCombinedSplashController.swift in Sources */,
 				832999532CAF93BA009AD115 /* MGHelper.swift in Sources */,
 				83B98E302B7C087B007F6C94 /* IconToggle.swift in Sources */,
 				838A9EC22B7E81EC00ED261C /* ContentPrivacyRestrictionsView.swift in Sources */,
