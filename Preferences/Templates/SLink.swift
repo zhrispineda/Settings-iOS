@@ -49,35 +49,38 @@ struct SLink<Content: View>: View {
     }
     
     var body: some View {
-        let key = routeKey ?? title
-        
-        NavigationLink(value: key) {
-            HStack(spacing: 15) {
-                // Icon
+        NavigationLink(value: routeKey ?? title) {
+            Label {
+                LabeledContent {
+                    if status == "location.fill"{
+                        Image(systemName: status)
+                    } else if !status.isEmpty {
+                        Text(status)
+                            .foregroundStyle(.placeholder)
+                    }
+                } label: {
+                    if title == "FOLLOWUP_TITLE" {
+                        Text(title.localized(
+                            path: "/System/Library/PrivateFrameworks/SetupAssistant.framework",
+                            table: "FollowUp")
+                        )
+                    } else {
+                        Text(title)
+                        if !subtitle.isEmpty {
+                            Text(subtitle)
+                        }
+                    }
+                }
+            } icon: {
                 if !icon.isEmpty {
                     IconView(icon)
                 }
-                
-                // Title and subtitle text
-                LabeledContent {
-                    HStack {
-                        if status == "location.fill"{
-                            Image(systemName: status)
-                        } else if !status.isEmpty {
-                            Text(status)
-                        }
-                    }
-                } label: {
-                    Text(title)
-                    if !subtitle.isEmpty {
-                        Text(subtitle)
-                    }
-                }
             }
-            .frame(height: 20)
+            .badge(0)
+            .badgeProminence(.increased)
         }
         .onAppear {
-            RouteRegistry.shared.register(key) { destinationBuilder() }
+            RouteRegistry.shared.register(routeKey ?? title) { destinationBuilder() }
         }
     }
 }
