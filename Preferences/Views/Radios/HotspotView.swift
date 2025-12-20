@@ -14,7 +14,7 @@ import SwiftUI
 /// - Warning: This bridge is not functional, missing entitlements including `com.apple.wifi.manager-access`.
 ///
 /// - Note: This bundle contains an incomplete catalog of localized strings.
-/// If the system language is set to English, it will cause `.localizedString` to fall back to the last item. (`ur.lproj`, Urdu in this case)
+/// If the system language is set to a missing language such as English, it will cause `.localizedString` to fall back to the last item. (ur.lproj, Urdu, in this case)
 struct HotspotView: View {
     var body: some View {
         ControllerBridgeView(

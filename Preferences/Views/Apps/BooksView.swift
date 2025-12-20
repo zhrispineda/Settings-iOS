@@ -2,11 +2,13 @@
 //  BooksView.swift
 //  Preferences
 //
-//  Settings > Apps > Books
-//
 
 import SwiftUI
 
+/// View for Settings > Apps > Books
+///
+/// - Note: This bundle contains an incomplete catalog of localized strings.
+/// If the system language is set to a missing language such as English, it will cause `.localizedString` to fall back to the last item. (ur.lproj, Urdu, in this case)
 struct BooksView: View {
     @AppStorage("AutoHyphenationEnabled") private var autoHyphenation = true
     @AppStorage("BothMarginsAdvanceEnabled") private var bothMarginsAdvance = false
@@ -75,7 +77,10 @@ struct BooksView: View {
                 }
                 Toggle(isOn: $showStatusBar) {
                     Text("Show Status Bar".localized(path: path, table: table))
-                    Text(UIDevice.iPhone ? "Always display current time, battery level, and other iPhone status info while reading.".localized(path: path, table: table) : "Always display current time, battery level, and other iPad status info while reading.".localized(path: path, table: table))
+                    Text(UIDevice.iPhone
+                         ? "Always display current time, battery level, and other iPhone status info while reading.".localized(path: path, table: table)
+                         : "Always display current time, battery level, and other iPad status info while reading.".localized(path: path, table: table)
+                    )
                 }
                 SettingsLink("Page Navigation".localized(path: path, table: table), status: pageNavigation.localized(path: path, table: table), destination: SelectOptionList("Page Navigation", options: ["Slide", "Curl", "Fast Fade", "Scroll"], selected: $pageNavigation, table: table))
             }
@@ -116,8 +121,26 @@ struct BooksView: View {
             }
             
             Section {
-                SettingsLink("Skip Forward".localized(path: path, table: table), status: skipForward.localized(path: path, table: table), destination: SelectOptionList("Skip Forward", options: ["10 seconds", "15 seconds", "30 seconds", "45 seconds", "60 seconds"], selected: $skipForward, table: table))
-                SettingsLink("Skip Back".localized(path: path, table: table), status: skipBack.localized(path: path, table: table), destination: SelectOptionList("Skip Back", options: ["10 seconds", "15 seconds", "30 seconds", "45 seconds", "60 seconds"], selected: $skipBack, table: table))
+                SLink(
+                    "Skip Forward".localized(path: path, table: table),
+                    status: skipForward.localized(path: path, table: table),
+                    destination: SelectOptionList(
+                        "Skip Forward",
+                        options: ["10 seconds", "15 seconds", "30 seconds", "45 seconds", "60 seconds"],
+                        selected: $skipForward,
+                        table: table
+                    )
+                )
+                SLink(
+                    "Skip Back".localized(path: path, table: table),
+                    status: skipBack.localized(path: path, table: table),
+                    destination: SelectOptionList(
+                        "Skip Back",
+                        options: ["10 seconds", "15 seconds", "30 seconds", "45 seconds", "60 seconds"],
+                        selected: $skipBack,
+                        table: table
+                    )
+                )
             } header: {
                 Text("Audiobooks".localized(path: path, table: table))
             } footer: {
