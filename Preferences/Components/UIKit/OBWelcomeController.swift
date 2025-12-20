@@ -5,7 +5,14 @@
 
 import SwiftUI
 
-struct OBWelcomeView: UIViewControllerRepresentable {
+/// A UIViewRepresentable instance for `OBWelcomeController` from the OnBoardingKit framework.
+///
+/// - Parameter title: The title header to display.
+/// - Parameter detailText: The detail text to display under the title.
+/// - Parameter contentLayout: The layout type to use. (Default value: 2)
+///
+/// - Warning: Do not use this method for public applications. It is not publicly supported.
+struct OBWelcomeController: UIViewControllerRepresentable {
     let title: String
     let detailText: String
     var contentLayout: Int64 = 2

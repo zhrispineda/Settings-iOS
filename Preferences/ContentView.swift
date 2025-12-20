@@ -186,7 +186,7 @@ struct ContentView: View {
         }
         .sheet(isPresented: $showingResearchSheet) {
             NavigationStack {
-                OBWelcomeView(
+                OBWelcomeController(
                     title: String(localized: .aboutSecurityResearchDevice),
                     detailText: String(localized: .securityResearchText)
                 )
