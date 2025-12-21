@@ -56,7 +56,6 @@ struct SLink<Content: View>: View {
                         Image(systemName: status)
                     } else if !status.isEmpty {
                         Text(status)
-                            .foregroundStyle(.placeholder)
                     }
                 } label: {
                     if title == "FOLLOWUP_TITLE" {
@@ -94,8 +93,8 @@ struct SLink<Content: View>: View {
     NavigationStack {
         List {
             SLink("First") { EmptyView() }
-            SLink("Second", destination: EmptyView())
-            SLink("Third", routeKey: "ThirdRoute") { EmptyView() }
+            SLink("Second", status: "Second", destination: EmptyView())
+            SLink("Third", icon: "com.apple.Preferences", subtitle: "Third", status: "Third") { EmptyView() }
         }
         .navigationDestination(for: String.self) { key in
             RouteRegistry.shared.view(for: key) ?? AnyView(Text("Unknown: \(key)"))

@@ -105,7 +105,6 @@
 		838273A52B7FD4CF000F4228 /* AppRestrictionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838273A42B7FD4CF000F4228 /* AppRestrictionsView.swift */; };
 		8383FDFA2E0370760021D274 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8383FDF92E0370760021D274 /* UIImageExtensions.swift */; };
 		838A9EC22B7E81EC00ED261C /* ContentPrivacyRestrictionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838A9EC12B7E81EC00ED261C /* ContentPrivacyRestrictionsView.swift */; };
-		838A9EC42B7E823300ED261C /* SettingsLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838A9EC32B7E823300ED261C /* SettingsLink.swift */; };
 		838AF99C2D629138008FFA8B /* ScreenSharingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838AF99B2D629138008FFA8B /* ScreenSharingView.swift */; };
 		838C23232B746CF90053D4C5 /* GeneralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838C23222B746CF90053D4C5 /* GeneralView.swift */; };
 		838C23262B746D290053D4C5 /* PrimarySettingsListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838C23252B746D290053D4C5 /* PrimarySettingsListModel.swift */; };
@@ -304,7 +303,6 @@
 		838273A42B7FD4CF000F4228 /* AppRestrictionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRestrictionsView.swift; sourceTree = "<group>"; };
 		8383FDF92E0370760021D274 /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
 		838A9EC12B7E81EC00ED261C /* ContentPrivacyRestrictionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentPrivacyRestrictionsView.swift; sourceTree = "<group>"; };
-		838A9EC32B7E823300ED261C /* SettingsLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLink.swift; sourceTree = "<group>"; };
 		838AF99B2D629138008FFA8B /* ScreenSharingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenSharingView.swift; sourceTree = "<group>"; };
 		838C23222B746CF90053D4C5 /* GeneralView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralView.swift; sourceTree = "<group>"; };
 		838C23252B746D290053D4C5 /* PrimarySettingsListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimarySettingsListModel.swift; sourceTree = "<group>"; };
@@ -742,7 +740,6 @@
 				83D050192DB6D343003D50AD /* ProgressButton.swift */,
 				833C6EB12C20CE7800A8D91C /* SearchDetailView.swift */,
 				837C03082B7F1AE0004D6C71 /* SelectOptionList.swift */,
-				838A9EC32B7E823300ED261C /* SettingsLink.swift */,
 				83DF95752B84266E00AEEB63 /* SiriDetailView.swift */,
 				835683932B754623000FB136 /* SLabel.swift */,
 				835683912B753FDD000FB136 /* SLink.swift */,
@@ -1132,7 +1129,6 @@
 				832679D52EA14BC7006ECE46 /* FollowUpItems.swift in Sources */,
 				83AB1D5F2D5E687B005F0B63 /* ScheduledSummaryView.swift in Sources */,
 				833F20AE2CA4C93C00115E8F /* RecordCinematicView.swift in Sources */,
-				838A9EC42B7E823300ED261C /* SettingsLink.swift in Sources */,
 				83D0501A2DB6D343003D50AD /* ProgressButton.swift in Sources */,
 				830A87D02DA5895600789C20 /* ControllerBridgeView.swift in Sources */,
 				83F3F7C32ED00D7900CC1444 /* AccessoryDeveloperView.swift in Sources */,
