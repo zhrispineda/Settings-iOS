@@ -2,11 +2,10 @@
 //  RestrictionsLocationServicesView.swift
 //  Preferences
 //
-//  Settings > Screen Time > Content & Privacy Restrictions > Location Services
-//
 
 import SwiftUI
 
+/// View for Settings > Screen Time > Content & Privacy Restrictions > Location Services
 struct RestrictionsLocationServicesView: View {
     @State private var selected = "AllowChangesSpecifierName"
     @State private var locationServicesEnabled = true
@@ -80,7 +79,7 @@ struct RestrictionsLocationServicesView: View {
                         icon: "com.apple.graphic-icon.app-clips",
                         destination: AppClipsView()
                     )
-                    SettingsLink(
+                    SLink(
                         "AppGenius.bundle",
                         status: "NEVER_AUTHORIZATION".localized(path: path, table: privTable),
                         destination: LocationPermissionsDetailView(
@@ -88,37 +87,37 @@ struct RestrictionsLocationServicesView: View {
                             selected: "NEVER_AUTHORIZATION"
                         )
                     )
-                    SettingsLink(
+                    SLink(
                         "AssistantServices.framework",
                         status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localized(path: path, table: privTable),
                         destination: LocationPermissionsDetailView(title: "AssistantServices.framework")
                     )
-                    SettingsLink(
+                    SLink(
                         "BulletinBoard.framework",
                         status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localized(path: path, table: privTable),
                         destination: LocationPermissionsDetailView(title: "BulletinBoard.framework")
                     )
-                    SettingsLink(
+                    SLink(
                         "CompassCalibration.bundle",
                         status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localized(path: path, table: privTable),
                         destination: LocationPermissionsDetailView(title: "CompassCalibration.bundle")
                     )
-                    SettingsLink(
+                    SLink(
                         "Emergency SOS.bundle",
                         status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localized(path: path, table: privTable),
                         destination: LocationPermissionsDetailView(title: "Emergency SOS.bundle")
                     )
-                    SettingsLink(
+                    SLink(
                         "MobileWiFi.framework",
                         status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localized(path: path, table: privTable),
                         destination: LocationPermissionsDetailView(title: "MobileWiFi.framework")
                     )
-                    SettingsLink(
+                    SLink(
                         "MotionCalibration.bundle",
                         status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localized(path: path, table: privTable),
                         destination: LocationPermissionsDetailView(title: "MotionCalibration.bundle")
                     )
-                    SettingsLink(
+                    SLink(
                         "PassbookMerchantLookup.bundle",
                         status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localized(path: path, table: privTable),
                         destination: LocationPermissionsDetailView(title: "PassbookMerchantLookup.bundle")
@@ -135,13 +134,12 @@ struct RestrictionsLocationServicesView: View {
                         status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localized(path: path, table: privTable),
                         destination: LocationPermissionsDetailView(title: "SiriDictationSpecifierName".localized(path: restrict, table: table))
                     )
-                    SettingsLink(
+                    SLink(
                         "SystemCustomization.bundle",
                         status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localized(path: path, table: privTable),
-                        location: true,
                         destination: LocationPermissionsDetailView(title: "SystemCustomization.bundle")
                     )
-                    SettingsLink(
+                    SLink(
                         "Traffic.bundle",
                         status: "NOT_DETERMINED_AUTHORIZATION_SHORT".localized(path: path, table: privTable),
                         destination: LocationPermissionsDetailView(title: "Traffic.bundle")
