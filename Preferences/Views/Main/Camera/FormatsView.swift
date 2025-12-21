@@ -45,7 +45,10 @@ struct FormatsView: View {
             if UIDevice.iPhone {
                 if UIDevice.RingerButtonCapability && UIDevice.ProDevice || UIDevice.fullModel.contains("iPhone 16") {
                     Section {
-                        SettingsLink("ENHANCED_RESOLUTION_TITLE".localized(path: path, table: table), status: "CAM_PHOTO_RESOLUTION_24MP".localized(path: path, table: table), destination: EmptyView())
+                        SLink(
+                            "ENHANCED_RESOLUTION_TITLE".localized(path: path, table: table),
+                            status: "CAM_PHOTO_RESOLUTION_24MP".localized(path: path, table: table)
+                        ) {}
                     } header: {
                         Text("CAM_PHOTO_CAPTURE_HEADER".localized(path: path, table: table))
                     } footer: {
@@ -67,7 +70,10 @@ struct FormatsView: View {
                             Toggle("CAM_LINEAR_DNG_TITLE".localized(path: path, table: table), isOn: $proRawEnabled)
                         }
                         if proRawResolutionControl {
-                            SettingsLink("CAM_SECONDARY_PHOTO_FORMAT_TITLE".localized(path: path, table: table), status: "CAM_SECONDARY_PHOTO_FORMAT_RAW48_SHORT".localized(path: path, table: table), destination: EmptyView())
+                            SLink(
+                                "CAM_SECONDARY_PHOTO_FORMAT_TITLE".localized(path: path, table: table),
+                                status: "CAM_SECONDARY_PHOTO_FORMAT_RAW48_SHORT".localized(path: path, table: table)
+                            ) {}
                         }
                     } footer: {
                         Text("\(UIDevice.AlwaysCaptureDepthCapability ? "48MP_CONTROL_FOOTER".localized(path: path, table: table) : "CAM_PRO_RAW_48MP_FOOTER")".localized(path: path, table: table))
@@ -79,7 +85,10 @@ struct FormatsView: View {
                     Section {
                         Toggle("CAM_PRESERVE_PRO_RES_SWITCH".localized(path: path, table: table), isOn: $proResCapture)
                         if proResCapture && UIDevice.RingerButtonCapability && UIDevice.ProDevice {
-                            SettingsLink("PRO_RES_COLOR_SPACE_TITLE".localized(path: path, table: table), status: "PRO_RES_COLOR_SPACE_HDR".localized(path: path, table: table), destination: EmptyView())
+                            SLink(
+                                "PRO_RES_COLOR_SPACE_TITLE".localized(path: path, table: table),
+                                status: "PRO_RES_COLOR_SPACE_HDR".localized(path: path, table: table)
+                            ) {}
                         }
                     } header: {
                         Text("CAM_FORMATS_VIDEO_CAPTURE_GROUP_TITLE".localized(path: path, table: table))
