@@ -217,11 +217,6 @@ extension UIDevice {
         return capableDevices.contains(identifier)
     }()
     
-    /// Returns a Bool on whether the device has an Action Button.
-    static let RingerButtonCapability: Bool = {
-        return fullModel.contains("15 Pro") || fullModel.contains("16") || fullModel.contains("17") || fullModel.contains("Air")
-    }()
-    
     /// Returns a Bool on whether the host is a Simulator instance.
     static let IsSimulator: Bool = {
         if let answer = MGHelper.read(key: "ulMliLomP737aAOJ/w/evA") { // IsSimulator key
@@ -242,12 +237,6 @@ extension UIDevice {
         return ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] != nil && !configuration.forcePhysical
     }()
     
-    /// Returns a Bool on whether the device is capable of Night Mode.
-    static let NightModeCapability: Bool = {
-        let capableDevices: Set<String> = ["iPhone12,8", "iPhone14,6"]
-        return !capableDevices.contains(identifier)
-    }()
-    
     /// Returns a Bool on whether the device is capable of HDR capture.
     static let RearFacingCameraHDRCapability: Bool = {
         let capableDevices: Set<String> = ["iPhone13,1", "iPhone13,2", "iPhone13,3", "iPhone13,4", "iPhone14,2", "iPhone14,3", "iPhone14,4", "iPhone14,5", "iPhone14,7", "iPhone14,8", "iPhone15,2", "iPhone15,3", "iPhone15,4", "iPhone15,5", "iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4", "iPhone18,1", "iPhone18,2", "iPhone18,3", "iPhone18,4"]
@@ -264,12 +253,6 @@ extension UIDevice {
     static let ViewOutsideFrameCapability: Bool = {
         let capableDevices: Set<String> = ["iPhone12,8", "iPhone14,6"]
         return !capableDevices.contains(identifier)
-    }()
-    
-    /// Returns a Bool on whether the device has a wide notch. (iPhone XR, XS, XS Max, 11, 11 Pro, 11 Pro Max, 12, 12 mini, 12 Pro, 12 Pro Max)
-    static let WideNotch: Bool = {
-        let capableDevices: Set<String> = ["iPhone12,1", "iPhone12,3", "iPhone12,5", "iPhone13,1", "iPhone13,2", "iPhone13,3", "iPhone13,4"]
-        return capableDevices.contains(identifier)
     }()
     
     // MARK: - Keys
@@ -300,6 +283,9 @@ extension UIDevice {
     
     /// A Boolean value that indicates whether the device is a security research device.
     static let ResearchFuse = MGGetBoolAnswer(key: "XYlJKKkj2hztRP1NWWnhlw")
+    
+    /// A Boolean value that indicates whether the device has an Action Button.
+    static let RingerButtonCapability = MGGetBoolAnswer(key: "cT44WE1EohiwRzhsZ8xEsw")
     
     // MARK: - Paths
     static let RuntimePath = UIDevice.IsSimulated

@@ -2,8 +2,6 @@
 //  SettingsGroup.swift
 //  Preferences
 //
-//  Settings
-//
 
 import SwiftUI
 
@@ -16,7 +14,19 @@ struct SettingsGroup: View {
     @State private var showingSignInError = false
     @State private var showingSignInSheet = false
     let group: [SettingsItem]
-    
+    private static var loggedHiddenItems = Set<String>()
+    private static let skipTypesBase: Set<PrimarySettingsListItemIdentifier> = [
+        .accessoryDeveloper,
+        .carrier,
+        .continuityDebugging,
+        .ethernet,
+        .faceTimeDebugging,
+        .iMessageDebugging,
+        .satellite,
+        .siri,
+        .vpn
+    ]
+    private static let skipTypesWithInternal = skipTypesBase.union([.internal])
     init(_ item: [SettingsItem]) {
         self.group = item
     }
@@ -99,7 +109,14 @@ struct SettingsGroup: View {
                         .accessibilityIdentifier("com.apple.settings.\(setting.type)")
                     }
                 } else {
-                    let _ = SettingsLogger.log("Not including \(setting.type) due to being hidden.")
+                    let _ = {
+                        let skipTypes = hasCapability(.isInternal) ? Self.skipTypesBase : Self.skipTypesWithInternal
+                        
+                        if !skipTypes.contains(setting.type) && !Self.loggedHiddenItems.contains(setting.type.rawValue) {
+                            Self.loggedHiddenItems.insert(setting.type.rawValue)
+                            SettingsLogger.log("Not including \(setting.type) due to being hidden.")
+                        }
+                    }()
                 }
             }
         }
@@ -143,13 +160,13 @@ struct SettingsGroup: View {
             hasCapability(requiredCapability)
         }
     }
-
+    
     private func hasCapability(_ capability: Capabilities) -> Bool {
         switch capability {
         case .none:
             return true
         case .actionButton:
-            return UIDevice.ActionModeCapability
+            return UIDevice.RingerButtonCapability
         case .cellular:
             return UIDevice.CellularTelephonyCapability || configuration.forceCellular
         case .ethernet:
