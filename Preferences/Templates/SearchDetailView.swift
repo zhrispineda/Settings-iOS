@@ -13,8 +13,8 @@ struct SearchDetailView: View {
     @State private var showContentInSearchEnabled = true
     var appName: String
     var appTitle = true
-    let path = "/System/Library/PrivateFrameworks/AssistantSettingsSupport.framework"
-    let table = "AssistantSettings"
+    private let path = "/System/Library/PrivateFrameworks/AssistantSettingsSupport.framework"
+    private let table = "AssistantSettings"
     
     var body: some View {
         CustomList(title: appTitle ? appName : "Search", topPadding: true) {
