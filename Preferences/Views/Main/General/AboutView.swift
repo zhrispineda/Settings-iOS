@@ -18,8 +18,8 @@ struct AboutView: View {
     @State private var bluetoothAddress = ""
     @State private var eidValue = ""
     @AppStorage("DeviceName") private var deviceName = UIDevice.current.model
-    let path = "/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework"
-    let table = "General"
+    private let path = "/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework"
+    private let table = "General"
     
     var body: some View {
         CustomList(title: "About".localized(path: path, table: table)) {
@@ -27,10 +27,14 @@ struct AboutView: View {
                 if UIDevice.IsSimulator {
                     LabeledContent("Device_Name".localized(path: path, table: table), value: UIDevice.current.model)
                 } else {
-                    SettingsLink("Device_Name".localized(path: path, table: table), status: deviceName, destination: NameView())
+                    SLink(
+                        "Device_Name".localized(path: path, table: table),
+                        status: deviceName,
+                        destination: NameView()
+                    )
                 }
                 
-                SettingsLink(
+                SLink(
                     "OS Version".localized(path: path),
                     status: UIDevice().systemVersion,
                     destination: ControllerBridgeView(

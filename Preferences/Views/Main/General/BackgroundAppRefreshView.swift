@@ -2,22 +2,22 @@
 //  BackgroundAppRefreshView.swift
 //  Preferences
 //
-//  Settings > General > Background App Refresh
-//
 
 import SwiftUI
 
+/// View for Settings > General > Background App Refresh
 struct BackgroundAppRefreshView: View {
     @AppStorage("BackgroundAppRefreshToggle") private var backgroundAppRefreshToggle = true
     @AppStorage("BackgroundAppRefreshPicker") private var backgroundAppRefreshPicker = "Wi-Fi & Cellular Data"
-    let path = "/System/Library/PreferenceBundles/BackgroundAppRefresh.bundle"
+    private let path = "/System/Library/PreferenceBundles/BackgroundAppRefresh.bundle"
     
     var body: some View {
         CustomList(title: "Background App Refresh".localized(path: path)) {
             if UIDevice.CellularTelephonyCapability {
                 Section {
-                    SettingsLink(
+                    SLink(
                         "Background App Refresh".localized(path: path),
+                        routeKey: "Background App Refresh ",
                         status: backgroundAppRefreshPicker.localized(path: path),
                         destination: SelectOptionList(
                             "Background App Refresh".localized(path: path),

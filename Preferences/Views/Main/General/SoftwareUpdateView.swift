@@ -2,23 +2,22 @@
 //  SoftwareUpdateView.swift
 //  Preferences
 //
-//  Settings > General > Software Update
-//
 
 import SwiftUI
 
+/// View for Settings > General > Software Update
 struct SoftwareUpdateView: View {
     @State private var checkingForUpdates = false
-    let path = "/System/Library/PrivateFrameworks/SoftwareUpdateSettings.framework"
-    let general = "/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework"
-    let update = "/System/Library/PrivateFrameworks/SoftwareUpdateUIKit.framework"
-    let table = "Software Update"
+    private let path = "/System/Library/PrivateFrameworks/SoftwareUpdateSettings.framework"
+    private let general = "/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework"
+    private let update = "/System/Library/PrivateFrameworks/SoftwareUpdateUIKit.framework"
+    private let table = "Software Update"
 
     var body: some View {
         GeometryReader { geometry in
             CustomList(title: "SOFTWARE_UPDATE".localized(path: path, table: table)) {
                 Section {
-                    SettingsLink(
+                    SLink(
                         "AUTOMATIC_UPDATES".localized(path: path, table: table),
                         status: "ON".localized(path: path, table: table),
                         destination: AutomaticUpdateView()
