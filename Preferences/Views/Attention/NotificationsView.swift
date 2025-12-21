@@ -88,12 +88,12 @@ struct NotificationsView: View {
             
             // MARK: Notification Options Section
             Section {
-                SettingsLink(
+                SLink(
                     "NOTIFICATION_DELIVERY_SCHEDULED".localized(path: path, table: table),
                     status: "OFF".localized(path: path, table: table),
                     destination: ScheduledSummaryView()
                 )
-                SettingsLink(
+                SLink(
                     "SHOW_PREVIEWS".localized(path: path, table: table),
                     status: previewSelection.localized(path: path, table: table),
                     destination: SelectOptionList(
@@ -104,7 +104,7 @@ struct NotificationsView: View {
                         table: table
                     )
                 )
-                SettingsLink(
+                SLink(
                     "SCREEN_SHARING".localized(path: path, table: table),
                     status: (allowNotifications
                              ? "SCREEN_SHARING_NOTIFICATIONS_ON"
@@ -115,7 +115,7 @@ struct NotificationsView: View {
             
             if UIDevice.IntelligenceCapability {
                 Section {
-                    SettingsLink(
+                    SLink(
                         "PRIORITIZE_NOTIFICATIONS".localized(path: path, table: table),
                         status: "OFF".localized(path: path, table: table)
                     ) {
@@ -125,7 +125,7 @@ struct NotificationsView: View {
                             title: "PRIORITIZE_NOTIFICATIONS".localized(path: path, table: table)
                         )
                     }
-                    SettingsLink(
+                    SLink(
                         "SUMMARIZE_NOTIFICATIONS".localized(path: path, table: table),
                         status: "OFF".localized(path: path, table: table),
                         destination: ControllerBridgeView(
@@ -143,7 +143,7 @@ struct NotificationsView: View {
             
             // MARK: Siri Section
             Section {
-                SettingsLink(
+                SLink(
                     "SPOKEN_NOTIFICATIONS".localized(path: path, table: table),
                     status: "OFF".localized(path: path, table: table),
                     destination: AnnounceNotificationsView()
