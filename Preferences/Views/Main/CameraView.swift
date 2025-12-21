@@ -61,7 +61,7 @@ struct CameraView: View {
             // MARK: - System Settings
             if !UIDevice.IsSimulator && UIDevice.AdvancedPhotographicStylesCapability {
                 Section {
-                    SettingsLink(
+                    SLink(
                         "CAMERA_BUTTON_TITLE".localized(path: path, table: buttonTable),
                         status: selectedApp.localized(path: path, table: buttonTable),
                         destination: CameraControlView()
@@ -89,7 +89,7 @@ struct CameraView: View {
                     Button {
                         showingPhotographicStylesView = true
                     } label: {
-                        SettingsLink(
+                        SLink(
                             "SYSTEM_STYLES_TITLE".localized(path: path, table: stylesTable),
                             status: "SEMANTIC_STYLES_LABEL_STANDARD".localized(
                                 path: "/System/Library/PrivateFrameworks/CameraEditKit.framework",
@@ -109,24 +109,24 @@ struct CameraView: View {
             
             // MARK: - Camera Options
             Section {
-                SettingsLink(
+                SLink(
                     "CAM_RECORD_VIDEO_TITLE".localized(path: path, table: table),
                     status: "\(selectedVideoSetting)_SHORT".localized(path: path, table: table),
                     destination: RecordVideoView()
                 )
-                SettingsLink(
+                SLink(
                     "CAM_RECORD_SLOMO_TITLE".localized(path: path, table: table),
                     status: "\(selectedSlomoSetting)_SHORT".localized(path: path, table: table),
                     destination: RecordSlomoView()
                 )
                 if UIDevice.HigherResolutionCinematicModeCapability {
-                    SettingsLink(
+                    SLink(
                         "CAM_RECORD_CINEMATIC_TITLE".localized(path: path, table: table),
                         status: "\(selectedCinematicSetting)_SHORT".localized(path: path, table: table),
                         destination: RecordCinematicView()
                     )
                 }
-                SettingsLink(
+                SLink(
                     "CAM_AUDIO_CONFIGURATION_TITLE".localized(path: path, table: table),
                     status: selectedSoundSetting.localized(path: path, table: table),
                     destination: RecordSoundView()
@@ -230,10 +230,10 @@ struct CameraView: View {
             
             if UIDevice.ProDevice && UIDevice.iPhone {
                 Section {
-                    SettingsLink(
+                    SLink(
                         UIDevice.AdvancedPhotographicStylesCapability && !UIDevice.IsSimulator
-                        ? "FOCAL_LENGTH_ROW_TITLE_CAMERA_BUTTON".localized(path: path, table: buttonTable)
-                        : "FOCAL_LENGTH_ROW_TITLE".localized(path: path, table: table),
+                            ? "FOCAL_LENGTH_ROW_TITLE_CAMERA_BUTTON".localized(path: path, table: buttonTable)
+                            : "FOCAL_LENGTH_ROW_TITLE".localized(path: path, table: table),
                         status: "FOCAL_LENGTH_GROUP_%@_AND_%@_AND_%@_MM".localized(path: path, table: table, "24", "28", "35"),
                         destination: FocalLengthView()
                     )
