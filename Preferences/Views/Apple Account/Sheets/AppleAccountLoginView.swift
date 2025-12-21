@@ -55,24 +55,12 @@ struct AppleAccountLoginView: View {
                     .frame(minHeight: 130)
                 
                 // Continue
-                Button {
+                OBBoldTrayButton("SIGN_IN_BUTTON_CONTINUE".localized(path: accountPath), isLoading: $signingIn) {
                     signingIn.toggle()
                     showingAlert.toggle()
-                } label: {
-                    OBBoldTrayButton("SIGN_IN_BUTTON_CONTINUE".localized(path: accountPath), isLoading: $signingIn) {
-                        signingIn.toggle()
-                        showingAlert.toggle()
-                    }
-                    .frame(height: 50)
                 }
+                .frame(height: 50)
                 .disabled(username.count < 1)
-                .alert("VERIFICATION_FAILED_TITLE".localized(path: accountPath), isPresented: $showingAlert) {
-                    Button("AUTHENTICATE_VIEW_BUTTON_TITLE".localized(path: setupPath)) {
-                        signingIn.toggle()
-                    }
-                } message: {
-                    Text("BAD_NETWORK_ALERT_MESSAGE_REBRAND".localized(path: accountPath))
-                }
 
                 // Sign in a child in my Family
                 if !isMainSheet {
@@ -104,6 +92,13 @@ struct AppleAccountLoginView: View {
             NavigationStack {
                 ForgotPasswordView()
             }
+        }
+        .alert("VERIFICATION_FAILED_TITLE".localized(path: accountPath), isPresented: $showingAlert) {
+            Button("AUTHENTICATE_VIEW_BUTTON_TITLE".localized(path: setupPath)) {
+                signingIn.toggle()
+            }
+        } message: {
+            Text("BAD_NETWORK_ALERT_MESSAGE_REBRAND".localized(path: accountPath))
         }
     }
 }
