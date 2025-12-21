@@ -38,11 +38,11 @@ struct SelectOptionList: View {
     }
     
     var body: some View {
-        CustomList(title: path.isEmpty ? title.localized(path: path, table: table) : title.localized(path: path, table: table)) {
+        CustomList(title: title.localized(path: path, table: table)) {
             Section {
                 Picker(title, selection: selected) {
                     ForEach(options, id: \.self) { option in
-                        Text(path.isEmpty ? option.localized(path: path, table: table) : option.localized(path: path, table: table))
+                        Text(option.localized(path: path, table: table))
                     }
                 }
                 .pickerStyle(.inline)
