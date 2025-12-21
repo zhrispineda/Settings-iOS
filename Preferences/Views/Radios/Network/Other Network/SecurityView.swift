@@ -10,9 +10,9 @@ import SwiftUI
 struct SecurityView: View {
     @Binding var security: String
     @State private var selectedRotation = "kWFLocRandomMACOffOption"
-    let path = "/System/Library/PrivateFrameworks/WiFiKitUI.framework"
-    let table = "WiFiKitUILocalizableStrings"
-    let options = [
+    private let path = "/System/Library/PrivateFrameworks/WiFiKitUI.framework"
+    private let table = "WiFiKitUILocalizableStrings"
+    private let options = [
         "kWFLocSecurityNoneTitle",
         "kWFLocSecurityWEPTitle",
         "kWFLocSecurityWPATitle",
@@ -26,15 +26,9 @@ struct SecurityView: View {
     var body: some View {
         CustomList(title: "kWFLocOtherNetworkSecurityTitle".localized(path: path, table: table)) {
             Section {
-                SettingsLink(
-                    "KWFLocSettingRandomMACSwitchTitle".localized(
-                        path: path,
-                        table: table
-                    ),
-                    status: selectedRotation.localized(
-                        path: path,
-                        table: table
-                    ),
+                SLink(
+                    "KWFLocSettingRandomMACSwitchTitle".localized(path: path, table: table),
+                    status: selectedRotation.localized(path: path, table: table),
                     destination: SelectOptionList(
                         "KWFLocSettingRandomMACSwitchTitle",
                         options: [

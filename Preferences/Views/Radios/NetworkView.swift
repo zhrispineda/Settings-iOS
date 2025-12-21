@@ -2,11 +2,10 @@
 //  NetworkView.swift
 //  Preferences
 //
-//  Settings > Wi-Fi
-//
 
 import SwiftUI
 
+/// View for Settings > Wi-Fi
 struct NetworkView: View {
     @AppStorage("wifi") private var wifiEnabled = true
     @AppStorage("AskJoinNetworkSelection") private var askJoinNetworkSelection = "kWFLocAskToJoinDetailNotify"
@@ -20,8 +19,8 @@ struct NetworkView: View {
     @State private var showingOtherNetwork = false
     @State private var timer: Timer? = nil
     @State private var currentTopicID = ""
-    let path = "/System/Library/PrivateFrameworks/WiFiKitUI.framework"
-    let table = "WiFiKitUILocalizableStrings"
+    private let path = "/System/Library/PrivateFrameworks/WiFiKitUI.framework"
+    private let table = "WiFiKitUILocalizableStrings"
     
     var body: some View {
         CustomList(
@@ -120,15 +119,9 @@ struct NetworkView: View {
                     
                     // Ask to Join
                     Section {
-                        SettingsLink(
-                            "kWFLocAskToJoinTitle".localized(
-                                path: path,
-                                table: table
-                            ),
-                            status: askJoinNetworkSelection.localized(
-                                path: path,
-                                table: table
-                            ),
+                        SLink(
+                            "kWFLocAskToJoinTitle".localized(path: path, table: table),
+                            status: askJoinNetworkSelection.localized(path: path, table: table),
                             destination: SelectOptionList(
                                 "kWFLocAskToJoinTitle",
                                 options: [
@@ -147,15 +140,9 @@ struct NetworkView: View {
                     
                     // Auto-Join Hotspot
                     Section {
-                        SettingsLink(
-                            "kWFLocAutoInstantHotspotTitle".localized(
-                                path: path,
-                                table: table
-                            ),
-                            status: autoJoinHotspotSelection.localized(
-                                path: path,
-                                table: table
-                            ),
+                        SLink(
+                            "kWFLocAutoInstantHotspotTitle".localized(path: path, table: table),
+                            status: autoJoinHotspotSelection.localized(path: path, table: table),
                             destination: SelectOptionList(
                                 "kWFLocAutoInstantHotspotTitle",
                                 options: [

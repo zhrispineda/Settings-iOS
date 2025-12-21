@@ -2,11 +2,10 @@
 //  OtherNetworkView.swift
 //  Preferences
 //
-//  Settings > Wi-Fi > Other…
-//
 
 import SwiftUI
 
+/// View for Settings > Wi-Fi > Other…
 struct OtherNetworkView: View {
     @Environment(\.dismiss) private var dismiss
     @FocusState private var networkFocused: Bool
@@ -72,7 +71,11 @@ struct OtherNetworkView: View {
                 
                 // Security + Password/Username
                 Section {
-                    SettingsLink("kWFLocOtherNetworkSecurityTitle".localized(path: path, table: table), status: security.localized(path: path, table: table), destination: SecurityView(security: $security))
+                    SLink(
+                        "kWFLocOtherNetworkSecurityTitle".localized(path: path, table: table),
+                        status: security.localized(path: path, table: table),
+                        destination: SecurityView(security: $security)
+                    )
                     if security.contains("Enterprise") {
                         HStack {
                             Text("kWFLocOtherNetworkUsernameTitle".localized(path: path, table: table))

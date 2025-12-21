@@ -34,7 +34,7 @@ struct NetworkDetailView: View {
             
             Section {
                 // Private Wi-Fi Address
-                SettingsLink(
+                SLink(
                     "KWFLocSettingRandomMACSwitchTitle".localized(path: path, table: table),
                     status: "kWFLocRandomMACStaticOption".localized(path: path, table: table),
                     destination: SelectOptionList("KWFLocSettingRandomMACSwitchTitle",
@@ -68,7 +68,7 @@ struct NetworkDetailView: View {
             
             // IPv4 Address
             Section {
-                SettingsLink(
+                SLink(
                     "kWFLocSettingsIPConfigureTitle".localized(path: path, table: table),
                     status: selectedIPV4AddressMethod.localized(path: path, table: table),
                     destination: ConfigureIPView(selected: $selectedIPV4AddressMethod)
@@ -79,7 +79,7 @@ struct NetworkDetailView: View {
             
             // DNS
             Section {
-                SettingsLink(
+                SLink(
                     "kWFLocSettingsDNSConfigureButton".localized(path: path, table: table),
                     status: selectedDNSMethod.localized(path: path, table: table),
                     destination: ConfigureDNSView(selected: $selectedDNSMethod)
@@ -90,7 +90,7 @@ struct NetworkDetailView: View {
             
             // HTTP Proxy
             Section {
-                SettingsLink(
+                SLink(
                     "kWFLocSettingsProxyConfigureButton".localized(path: path, table: table),
                     status: selectedProxyMethod.localized(path: path, table: table),
                     destination: ConfigureProxyView(selected: $selectedProxyMethod)
