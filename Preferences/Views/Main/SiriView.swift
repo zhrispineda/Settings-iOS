@@ -2,12 +2,11 @@
 //  SiriView.swift
 //  Preferences
 //
-//  Settings > [Apple Intelligence & Siri/Siri]
-//
 
 import SwiftUI
 import ContactsUI
 
+/// View for Settings > [Apple Intelligence/Siri]
 struct SiriView: View {
     @AppStorage("SiriEnabled") private var siriEnabled = false
     @AppStorage("SiriTipDismissed") private var learnMoreTapped = false
@@ -33,11 +32,11 @@ struct SiriView: View {
     @State private var showingSiriHelpSheet = false
     @State private var showingIntelligenceHelpSheet = false
     
-    let path = "/System/Library/PrivateFrameworks/AssistantSettingsSupport.framework"
-    let table = "AssistantSettings"
-    let gmTable = "AssistantSettings-GM"
-    let contactPickerDelegate = ContactPickerDelegate()
-    let apps = [
+    private let path = "/System/Library/PrivateFrameworks/AssistantSettingsSupport.framework"
+    private let table = "AssistantSettings"
+    private let gmTable = "AssistantSettings-GM"
+    private let contactPickerDelegate = ContactPickerDelegate()
+    private let apps = [
         AppInfo(name: "App Store", icon: "com.apple.AppStore", showOnSimulator: false),
         AppInfo(name: "Books", icon: "com.apple.iBooks", showOnSimulator: false),
         AppInfo(name: "Calendar", icon: "com.apple.mobilecal", showOnSimulator: true),
@@ -56,12 +55,12 @@ struct SiriView: View {
         AppInfo(name: "Wallet", icon: "com.apple.Passbook", showOnSimulator: true),
         AppInfo(name: "Translate", icon: "com.apple.Translate", showOnSimulator: false)
     ]
-    var title: String {
+    private var title: String {
         return UIDevice.IntelligenceCapability
-        ? "ASSISTANT_AND_GM".localized(path: path, table: gmTable)
-        : "ASSISTANT".localized(path: path, table: table)
+            ? "ASSISTANT_AND_GM".localized(path: path, table: gmTable)
+            : "ASSISTANT".localized(path: path, table: table)
     }
-    var groupedApps: [String: [AppInfo]] {
+    private var groupedApps: [String: [AppInfo]] {
         let filteredApps = UIDevice.IsSimulated ? apps.filter { $0.showOnSimulator } : apps
         return Dictionary(grouping: filteredApps, by: { String($0.name.prefix(1)) })
     }
@@ -80,8 +79,8 @@ struct SiriView: View {
                         title: "ASSISTANT_AND_GM".localized(path: path, table: gmTable),
                         icon: "com.apple.application-icon.apple-intelligence",
                         description: UIDevice.iPhone
-                        ? "PLACARD_DESCRIPTION_GM".localized(path: path, table: gmTable).replacing("]", with: "](pref://helpkit)")
-                        : "PLACARD_DESCRIPTION_GM_IPAD".localized(path: path, table: gmTable).replacing("]", with: "](pref://helpkit)"),
+                            ? "PLACARD_DESCRIPTION_GM".localized(path: path, table: gmTable).replacing("]", with: "](pref://helpkit)")
+                            : "PLACARD_DESCRIPTION_GM_IPAD".localized(path: path, table: gmTable).replacing("]", with: "](pref://helpkit)"),
                         beta: true,
                         isVisible: $titleVisible
                     )
@@ -105,14 +104,28 @@ struct SiriView: View {
             // MARK: Siri Requests Section
             Section {
                 if siriEnabled {
-                    SettingsLink("VOICE".localized(path: path, table: table), status: "", destination: SiriVoiceView())
+                    SLink(
+                        "VOICE".localized(path: path, table: table),
+                        destination: SiriVoiceView()
+                    )
                 } else {
-                    SettingsLink("LANGUAGE".localized(path: path, table: table), status: "English (United States)", destination: SiriLanguageView())
+                    SLink(
+                        "LANGUAGE".localized(path: path, table: table),
+                        status: "English (United States)",
+                        destination: SiriLanguageView()
+                    )
                 }
                 if !UIDevice.IsSimulator {
-                    SettingsLink("ACTIVATION_COMPACT".localized(path: path, table: table), status: "ACTIVATION_OFF".localized(path: path, table: table), destination: EmptyView())
+                    SLink(
+                        "ACTIVATION_COMPACT".localized(path: path, table: table),
+                        status: "ACTIVATION_OFF".localized(path: path, table: table),
+                    ) {}
                 }
-                SettingsLink("VOICE".localized(path: path, table: table), status: "\("REGION_en-US".localized(path: path, table: table)) (Voice 4)", destination: SiriVoiceView())
+                SLink(
+                    "VOICE".localized(path: path, table: table),
+                    status: "\("REGION_en-US".localized(path: path, table: table)) (Voice 4)",
+                    destination: SiriVoiceView()
+                )
                 if siriEnabled {
                     if !UIDevice.IsSimulator {
                         Toggle("ASSISTANT_LOCK_SCREEN_ACCESS".localized(path: path, table: table), isOn: $allowSiriWhenLockedEnabled)
