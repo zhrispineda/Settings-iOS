@@ -107,11 +107,10 @@ struct DisplayBrightnessView: View {
                 Toggle("AUTOMATIC".localized(path: path, table: table), isOn: $automaticEnabled.animation())
                 
                 if automaticEnabled {
-                    SettingsLink(
+                    SLink(
                         "APPEARANCE_OPTIONS".localized(path: path, table: table),
-                        status: "LIGHT_UNTIL_SUNSET".localized(path: path, table: table)
-                    ) {
-                        ControllerBridgeView(
+                        status: "LIGHT_UNTIL_SUNSET".localized(path: path, table: table),
+                        destination: ControllerBridgeView(
                             "/System/Library/PrivateFrameworks/Settings/DisplayAndBrightnessSettings.framework/DisplayAndBrightnessSettings",
                             controller: "DBSDeviceAppearanceScheduleController",
                             title: "APPEARANCE_SCHEDULE".localized(
@@ -119,7 +118,7 @@ struct DisplayBrightnessView: View {
                                 table: "DeviceAppearanceSchedule"
                             )
                         )
-                    }
+                    )
                 }
             } header: {
                 Text("APPEARANCE".localized(path: path, table: table))
@@ -127,16 +126,15 @@ struct DisplayBrightnessView: View {
             
             // MARK: Liquid Glass
             Section {
-                SettingsLink(
+                SLink(
                     "LIQUID_GLASS".localized(path: path, table: table),
-                    status: "CLEAR".localized(path: path, table: table)
-                ) {
-                    ControllerBridgeView(
+                    status: "CLEAR".localized(path: path, table: table),
+                    destination: ControllerBridgeView(
                         "/System/Library/PrivateFrameworks/Settings/DisplayAndBrightnessSettings.framework/DisplayAndBrightnessSettings",
                         controller: "DBSLiquidGlassController",
                         title: "LIQUID_GLASS".localized(path: path, table: table)
                     )
-                }
+                )
             } footer: {
                 Text("LIQUID_GLASS_ROOT_FOOTER".localized(path: path, table: table))
             }
@@ -179,7 +177,7 @@ struct DisplayBrightnessView: View {
             
             // MARK: Night Shift
             Section {
-                SettingsLink(
+                SLink(
                     "BLUE_LIGHT_REDUCTION".localized(path: path, table: table),
                     status: "OFF".localized(path: path, table: table)
                 ) {}
@@ -187,7 +185,7 @@ struct DisplayBrightnessView: View {
             
             // MARK: Auto-Lock
             Section {
-                SettingsLink(
+                SLink(
                     "AUTOLOCK".localized(path: path, table: table),
                     status: autoLockDuration.localized(path: path, table: table),
                     destination: SelectOptionList(
@@ -224,16 +222,15 @@ struct DisplayBrightnessView: View {
             if UIDevice.DeviceSupportsAlwaysOnTime {
                 // MARK: Always On Display
                 Section {
-                    SettingsLink(
+                    SLink(
                         "ALWAYS_ON_DISPLAY".localized(path: path, table: table),
-                        status: "ALWAYS_ON_ENABLED".localized(path: path, table: table)
-                    ) {
-                        ControllerBridgeView(
+                        status: "ALWAYS_ON_ENABLED".localized(path: path, table: table),
+                        destination: ControllerBridgeView(
                             "/System/Library/PrivateFrameworks/Settings/DisplayAndBrightnessSettings.framework/DisplayAndBrightnessSettings",
                             controller: "DBSAlwaysOnViewController",
                             title: "ALWAYS_ON_DISPLAY".localized(path: path, table: table)
                         )
-                    }
+                    )
                 } footer: {
                     Text("ALWAYS_ON_DESCRIPTION".localized(path: path, table: table))
                 }
@@ -241,16 +238,15 @@ struct DisplayBrightnessView: View {
             
             // MARK: Display
             Section {
-                SettingsLink(
+                SLink(
                     "VIEW".localized(path: path, table: table),
-                    status: "DEFAULT".localized(path: "/System/Library/PreferenceBundles/AccessibilitySettings.bundle", table: "Accessibility")
-                ) {
-                    ControllerBridgeView(
+                    status: "DEFAULT".localized(path: "/System/Library/PreferenceBundles/AccessibilitySettings.bundle", table: "Accessibility"),
+                    destination: ControllerBridgeView(
                         "/System/Library/PrivateFrameworks/Settings/DisplayAndBrightnessSettings.framework/DisplayAndBrightnessSettings",
                         controller: "DBSDisplayZoomSelectionListController",
                         title: "VIEW".localized(path: path, table: table)
                     )
-                }
+                )
             } header: {
                 Text("DISPLAY_ZOOM_PRO".localized(path: path, table: table))
             } footer: {
