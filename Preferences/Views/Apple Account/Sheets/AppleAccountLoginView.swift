@@ -59,15 +59,11 @@ struct AppleAccountLoginView: View {
                     signingIn.toggle()
                     showingAlert.toggle()
                 } label: {
-                    if signingIn {
-                        ProgressButton()
-                    } else {
-                        OBBoldTrayButton("SIGN_IN_BUTTON_CONTINUE".localized(path: accountPath)) {
-                            signingIn.toggle()
-                            showingAlert.toggle()
-                        }
-                        .frame(height: 50)
+                    OBBoldTrayButton("SIGN_IN_BUTTON_CONTINUE".localized(path: accountPath), isLoading: $signingIn) {
+                        signingIn.toggle()
+                        showingAlert.toggle()
                     }
+                    .frame(height: 50)
                 }
                 .disabled(username.count < 1)
                 .alert("VERIFICATION_FAILED_TITLE".localized(path: accountPath), isPresented: $showingAlert) {

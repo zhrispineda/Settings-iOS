@@ -2,11 +2,10 @@
 //  ParentGuardianSignInView.swift
 //  Preferences
 //
-//  Settings > Sign in > Sign in Manually > Sign in a child in my Family
-//
 
 import SwiftUI
 
+/// View for Settings > Sign in > Sign in Manually > Sign in a child in my Family
 struct ParentGuardianSignInView: View {
     @Environment(\.colorScheme) private var colorScheme
     @State private var signingIn = false
@@ -48,22 +47,12 @@ struct ParentGuardianSignInView: View {
                         OBPrivacyLinkView(bundleIdentifiers: ["com.apple.onboarding.appleid"])
                             .frame(minHeight: 140)
 
-                        if signingIn || showingOptionsAlert {
-                            Button {
-                                signingIn.toggle()
-                                showingAlert.toggle()
-                            } label: {
-                                ProgressButton()
-                            }
-                            .frame(height: 50)
-                        } else {
-                            OBBoldTrayButton("SIGN_IN_BUTTON_CONTINUE".localized(path: UITable)) {
-                                signingIn.toggle()
-                                showingAlert.toggle()
-                            }
-                            .frame(height: 50)
-                            .disabled(username.count < 1)
+                        OBBoldTrayButton("SIGN_IN_BUTTON_CONTINUE".localized(path: UITable), isLoading: $signingIn) {
+                            signingIn.toggle()
+                            showingAlert.toggle()
                         }
+                        .frame(height: 50)
+                        .disabled(username.count < 1)
                     }
                 }
                 .listRowBackground(Color.clear)

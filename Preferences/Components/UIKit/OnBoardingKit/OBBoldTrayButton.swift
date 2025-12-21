@@ -14,9 +14,15 @@ import SwiftUI
 struct OBBoldTrayButton: UIViewRepresentable {
     var titleKey: String
     let action: () -> Void
+    @Binding var isLoading: Bool
     
-    init(_ titleKey: String, action: @escaping () -> Void = {}) {
+    init(
+        _ titleKey: String,
+        isLoading: Binding<Bool> = .constant(false),
+        action: @escaping () -> Void = {}
+    ) {
         self.titleKey = titleKey
+        self._isLoading = isLoading
         self.action = action
     }
     
@@ -32,7 +38,13 @@ struct OBBoldTrayButton: UIViewRepresentable {
         return button
     }
     
-    func updateUIView(_ uiView: UIButton, context: Context) {}
+    func updateUIView(_ uiView: UIButton, context: Context) {
+        if isLoading {
+            uiView.perform(NSSelectorFromString("showsBusyIndicator"))
+        } else {
+            uiView.perform(NSSelectorFromString("hidesBusyIndicator"))
+        }
+    }
     
     func makeCoordinator() -> Coordinator {
         Coordinator(action: action)

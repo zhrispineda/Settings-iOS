@@ -149,7 +149,6 @@
 		83C94CA52C1E0192005EBBC5 /* AppleCareWarrantyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C94CA42C1E0192005EBBC5 /* AppleCareWarrantyView.swift */; };
 		83CB06972CA6283A00D7533A /* FormatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CB06962CA6283A00D7533A /* FormatsView.swift */; };
 		83CCB7282C7FAD96003F51ED /* DateTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CCB7272C7FAD96003F51ED /* DateTimeView.swift */; };
-		83D0501A2DB6D343003D50AD /* ProgressButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D050192DB6D343003D50AD /* ProgressButton.swift */; };
 		83D0A51E2EF7224900DDFF4E /* OBBoldTrayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D0A51D2EF7224900DDFF4E /* OBBoldTrayButton.swift */; };
 		83D0A5202EF726F000DDFF4E /* OBPrivacyLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D0A51F2EF726F000DDFF4E /* OBPrivacyLinkView.swift */; };
 		83D0A5222EF72ACB00DDFF4E /* OBCombinedSplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D0A5212EF72ACB00DDFF4E /* OBCombinedSplashController.swift */; };
@@ -351,7 +350,6 @@
 		83CB06962CA6283A00D7533A /* FormatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatsView.swift; sourceTree = "<group>"; };
 		83CC61982B7952B800DAF0C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83CCB7272C7FAD96003F51ED /* DateTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeView.swift; sourceTree = "<group>"; };
-		83D050192DB6D343003D50AD /* ProgressButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressButton.swift; sourceTree = "<group>"; };
 		83D0A51D2EF7224900DDFF4E /* OBBoldTrayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBBoldTrayButton.swift; sourceTree = "<group>"; };
 		83D0A51F2EF726F000DDFF4E /* OBPrivacyLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBPrivacyLinkView.swift; sourceTree = "<group>"; };
 		83D0A5212EF72ACB00DDFF4E /* OBCombinedSplashController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBCombinedSplashController.swift; sourceTree = "<group>"; };
@@ -737,7 +735,6 @@
 				83F388622D0B6E8500085103 /* IconView.swift */,
 				83A5DA502C2335580012ACB3 /* PermissionsView.swift */,
 				8361A2282C19308600A7D5CC /* Placard.swift */,
-				83D050192DB6D343003D50AD /* ProgressButton.swift */,
 				833C6EB12C20CE7800A8D91C /* SearchDetailView.swift */,
 				837C03082B7F1AE0004D6C71 /* SelectOptionList.swift */,
 				83DF95752B84266E00AEEB63 /* SiriDetailView.swift */,
@@ -1129,7 +1126,6 @@
 				832679D52EA14BC7006ECE46 /* FollowUpItems.swift in Sources */,
 				83AB1D5F2D5E687B005F0B63 /* ScheduledSummaryView.swift in Sources */,
 				833F20AE2CA4C93C00115E8F /* RecordCinematicView.swift in Sources */,
-				83D0501A2DB6D343003D50AD /* ProgressButton.swift in Sources */,
 				830A87D02DA5895600789C20 /* ControllerBridgeView.swift in Sources */,
 				83F3F7C32ED00D7900CC1444 /* AccessoryDeveloperView.swift in Sources */,
 				83F3F80B2ED10E1200CC1444 /* FitnessView.swift in Sources */,
