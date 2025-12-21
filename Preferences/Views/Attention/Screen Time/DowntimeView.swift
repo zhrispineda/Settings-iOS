@@ -2,18 +2,17 @@
 //  DowntimeView.swift
 //  Preferences
 //
-//  Settings > Screen Time > Downtime
-//
 
 import SwiftUI
 
+/// View for Settings > Screen Time > Downtime
 struct DowntimeView: View {
     @State private var downtimeEnabled = false
     @State private var scheduledEnabled = false
     @State private var selected = "DeviceDowntimeEveryDaySpecifierName"
-    let options = ["DeviceDowntimeEveryDaySpecifierName", "DeviceDowntimeCustomizeDaysSpecifierName"]
-    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-    let path = "/System/Library/PrivateFrameworks/ScreenTimeSettingsUI.framework"
+    private let options = ["DeviceDowntimeEveryDaySpecifierName", "DeviceDowntimeCustomizeDaysSpecifierName"]
+    private let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+    private let path = "/System/Library/PrivateFrameworks/ScreenTimeSettingsUI.framework"
     
     var body: some View {
         CustomList(title: "AppAndWebsiteActivityEDUDowntimeTitle".localized(path: path)) {
@@ -22,12 +21,28 @@ struct DowntimeView: View {
             }
             
             Section {
-                Button(downtimeEnabled ? (scheduledEnabled ? "DeviceDowntimeDisableButtonWithScheduleName".localized(path: path) : "DeviceDowntimeDisableButtonWithoutScheduleName".localized(path: path)) : scheduledEnabled ? "DeviceDowntimeEnableButtonWithScheduleName".localized(path: path) : "DeviceDowntimeEnableButtonWithoutScheduleName".localized(path: path)) {
+                Button(
+                    downtimeEnabled
+                        ? (scheduledEnabled
+                           ? "DeviceDowntimeDisableButtonWithScheduleName".localized(path: path)
+                           : "DeviceDowntimeDisableButtonWithoutScheduleName".localized(path: path))
+                        : scheduledEnabled
+                            ? "DeviceDowntimeEnableButtonWithScheduleName".localized(path: path)
+                            : "DeviceDowntimeEnableButtonWithoutScheduleName".localized(path: path)
+                ) {
                     downtimeEnabled.toggle()
                 }
                 .tint(downtimeEnabled ? .red : .accentColor)
             } footer: {
-                Text(downtimeEnabled ? (scheduledEnabled ? "DeviceDowntimeDisableButtonLocalUserWithScheduleFooter".localized(path: path) : "DeviceDowntimeDisableButtonLocalUserWithoutScheduleFooter".localized(path: path)) : scheduledEnabled ? "DeviceDowntimeEnableButtonUnblockedUserWithScheduleFooter".localized(path: path) : "DeviceDowntimeEnableButtonUnblockedUserWithoutScheduleFooter".localized(path: path))
+                Text(
+                    downtimeEnabled
+                        ? (scheduledEnabled
+                           ? "DeviceDowntimeDisableButtonLocalUserWithScheduleFooter".localized(path: path)
+                           : "DeviceDowntimeDisableButtonLocalUserWithoutScheduleFooter".localized(path: path))
+                        : scheduledEnabled
+                            ? "DeviceDowntimeEnableButtonUnblockedUserWithScheduleFooter".localized(path: path)
+                            : "DeviceDowntimeEnableButtonUnblockedUserWithoutScheduleFooter".localized(path: path)
+                )
             }
             
             Section {
@@ -47,13 +62,13 @@ struct DowntimeView: View {
                 Section {
                     if selected == "DeviceDowntimeEveryDaySpecifierName" {
                         Button {} label: {
-                            SettingsLink("AllowanceTimeSpecifierName".localized(path: path), status: "10:00 PM–7:00 AM", destination: EmptyView())
+                            SLink("AllowanceTimeSpecifierName".localized(path: path), status: "10:00 PM–7:00 AM") {}
                         }
                         .foregroundStyle(.primary)
                     } else {
                         ForEach(days, id: \.self) { day in
                             Button {} label: {
-                                SettingsLink(day, status: "10:00 PM–7:00 AM", destination: EmptyView())
+                                SLink(day, status: "10:00 PM–7:00 AM") {}
                             }
                             .foregroundStyle(.primary)
                         }

@@ -2,11 +2,10 @@
 //  ContentRestrictionsView.swift
 //  Preferences
 //
-//  Settings > Screen Time > Content & Privacy Restrictions > Content Restrictions
-//
 
 import SwiftUI
 
+/// View for Settings > Screen Time > Content & Privacy Restrictions > Content Restrictions
 struct ContentRestrictionsView: View {
     @State private var musicPodcastsNewsWorkoutsSelection = "ExplicitLabel"
     @State private var musicVideoSelection = "OnLabel"
@@ -22,14 +21,14 @@ struct ContentRestrictionsView: View {
     @State private var privateMessagingSelection = "Allow"
     @State private var profilePrivacySelection = "Allow"
     @State private var avatarNicknameSelection = "Allow"
-    let path = "/System/Library/PrivateFrameworks/ScreenTimeSettingsUI.framework"
-    let table = "Restrictions"
-    let rateTable = "RatingProviders"
+    private let path = "/System/Library/PrivateFrameworks/ScreenTimeSettingsUI.framework"
+    private let table = "Restrictions"
+    private let rateTable = "RatingProviders"
     
     var body: some View {
         CustomList(title: "ContentRestrictionsSpecifierName".localized(path: path, table: table), topPadding: true) {
             Section {
-                SettingsLink(
+                SLink(
                     "MusicPodcastsNewsWorkoutsSpecifierName".localized(path: path, table: table),
                     status: "ExplicitLabel".localized(path: path, table: table),
                     destination: SelectOptionList(
@@ -40,7 +39,7 @@ struct ContentRestrictionsView: View {
                         table: table
                     )
                 )
-                SettingsLink(
+                SLink(
                     "MusicVideosSpecifierName".localized(path: path, table: table),
                     status: "OnLabel".localized(path: path, table: table),
                     destination: SelectOptionList(
@@ -51,7 +50,7 @@ struct ContentRestrictionsView: View {
                         table: table
                     )
                 )
-                SettingsLink(
+                SLink(
                     "MusicProfilesSpecifierName".localized(path: path, table: table),
                     status: "OnLabel".localized(path: path, table: table),
                     destination: SelectOptionList(
@@ -62,17 +61,17 @@ struct ContentRestrictionsView: View {
                         table: table
                     )
                 )
-                SettingsLink(
+                SLink(
                     "MoviesSpecifierName".localized(path: path, table: table),
                     status: "AllowAll".localized(path: path, table: rateTable),
                     destination: MoviesView()
                 )
-                SettingsLink(
+                SLink(
                     "TVSpecifierName".localized(path: path, table: table),
                     status: "AllowAll".localized(path: path, table: rateTable),
                     destination: TVView()
                 )
-                SettingsLink(
+                SLink(
                     "BooksSpecifierName".localized(path: path, table: table),
                     status: "ExplicitLabel".localized(path: path, table: table),
                     destination: SelectOptionList(
@@ -83,12 +82,12 @@ struct ContentRestrictionsView: View {
                         table: table
                     )
                 )
-                SettingsLink(
+                SLink(
                     "AppsSpecifierName".localized(path: path, table: table),
                     status: "17+",
                     destination: AppRestrictionsView()
                 )
-                SettingsLink(
+                SLink(
                     "AppClipsSpecifierName".localized(path: path, table: table),
                     status: "Allow".localized(path: path, table: table),
                     destination: SelectOptionList(
@@ -102,7 +101,7 @@ struct ContentRestrictionsView: View {
             }
             
             Section {
-                SettingsLink(
+                SLink(
                     "WebContentSpecifierName".localized(path: path, table: table),
                     status: "UnrestrictedAccessSpecifierName".localized(path: path, table: table),
                     destination: WebContentView()
@@ -112,23 +111,102 @@ struct ContentRestrictionsView: View {
             }
             
             Section {
-                SettingsLink(
+                SLink(
                     "WebSearchContentSpecifierName".localized(path: path, table: table),
-                    status: "Allow".localized(path: path, table: table), destination: SelectOptionList("Web Search Content", selected: $webSearchSelection, table: table))
-                SettingsLink("ExplicitLanguageSpecifierName".localized(path: path, table: table), status: "Allow".localized(path: path, table: table), destination: SelectOptionList("ExplicitLanguageSpecifierName", selected: $explicitLanguageSelection, table: table))
+                    status: "Allow".localized(path: path, table: table),
+                    destination: SelectOptionList(
+                        "Web Search Content",
+                        selected: $webSearchSelection,
+                        table: table
+                    )
+                )
+                SLink(
+                    "ExplicitLanguageSpecifierName".localized(path: path, table: table),
+                    status: "Allow".localized(path: path, table: table),
+                    destination: SelectOptionList(
+                        "ExplicitLanguageSpecifierName",
+                        selected: $explicitLanguageSelection,
+                        table: table
+                    )
+                )
             } header: {
                 Text("SiriLabel".localized(path: path, table: table))
             }
             
             Section {
-                SettingsLink("MultiplayerGamesSpecifierName".localized(path: path, table: table), status: "AllowWithEveryoneSpecifierName".localized(path: path, table: table), destination: SelectOptionList("MultiplayerGamesSpecifierName", options: ["DontAllowLabel", "AllowWithFriendsOnlySpecifierName", "AllowWithEveryoneSpecifierName"], selected: $multiplayerSelection, table: table))
-                SettingsLink("AddingFriendsSpecifierName".localized(path: path, table: table), status: "Allow".localized(path: path, table: table), destination: SelectOptionList("AddingFriendsSpecifierName", selected: $addingFriendSelection, table: table))
-                SettingsLink("ConnectWithFriendsSpecifierName".localized(path: path, table: table), status: "Allow".localized(path: path, table: table), destination: SelectOptionList("ConnectWithFriendsSpecifierName", selected: $addingFriendSelection, table: table))
-                SettingsLink("ScreenRecordingSpecifierName".localized(path: path, table: table), status: "Allow".localized(path: path, table: table), destination: SelectOptionList("ScreenRecordingSpecifierName", selected: $screenRecordingSelection, table: table))
-                SettingsLink("NearbyMultiplayerSpecifierName".localized(path: path, table: table), status: "Allow".localized(path: path, table: table), destination: SelectOptionList("NearbyMultiplayerSpecifierName", selected: $nearbyMultiplayerSelection, table: table))
-                SettingsLink("PrivateMessagingSpecifierName".localized(path: path, table: table), status: "Allow".localized(path: path, table: table), destination: SelectOptionList("PrivateMessagingSpecifierName", selected: $privateMessagingSelection, table: table))
-                SettingsLink("ProfilePrivacyChangesSpecifierName".localized(path: path, table: table), status: "Allow".localized(path: path, table: table), destination: SelectOptionList("ProfilePrivacyChangesSpecifierName", selected: $profilePrivacySelection, table: table))
-                SettingsLink("AvatarNicknameChangesSpecifierName".localized(path: path, table: table), status: "Allow".localized(path: path, table: table), destination: SelectOptionList("AvatarNicknameChangesSpecifierName", selected: $avatarNicknameSelection, table: table))
+                SLink(
+                    "MultiplayerGamesSpecifierName".localized(path: path, table: table),
+                    status: "AllowWithEveryoneSpecifierName".localized(path: path, table: table),
+                    destination: SelectOptionList(
+                        "MultiplayerGamesSpecifierName",
+                        options: ["DontAllowLabel", "AllowWithFriendsOnlySpecifierName", "AllowWithEveryoneSpecifierName"],
+                        selected: $multiplayerSelection,
+                        table: table
+                    )
+                )
+                SLink(
+                    "AddingFriendsSpecifierName".localized(path: path, table: table),
+                    status: "Allow".localized(path: path, table: table),
+                    destination: SelectOptionList(
+                        "AddingFriendsSpecifierName",
+                        selected: $addingFriendSelection,
+                        table: table
+                    )
+                )
+                SLink(
+                    "ConnectWithFriendsSpecifierName".localized(path: path, table: table),
+                    status: "Allow".localized(path: path, table: table),
+                    destination: SelectOptionList(
+                        "ConnectWithFriendsSpecifierName",
+                        selected: $addingFriendSelection,
+                        table: table
+                    )
+                )
+                SLink(
+                    "ScreenRecordingSpecifierName".localized(path: path, table: table),
+                    status: "Allow".localized(path: path, table: table),
+                    destination: SelectOptionList(
+                        "ScreenRecordingSpecifierName",
+                        selected: $screenRecordingSelection,
+                        table: table
+                    )
+                )
+                SLink(
+                    "NearbyMultiplayerSpecifierName".localized(path: path, table: table),
+                    status: "Allow".localized(path: path, table: table),
+                    destination: SelectOptionList(
+                        "NearbyMultiplayerSpecifierName",
+                        selected: $nearbyMultiplayerSelection,
+                        table: table
+                    )
+                )
+                SLink(
+                    "PrivateMessagingSpecifierName".localized(path: path, table: table),
+                    status: "Allow".localized(path: path, table: table),
+                    destination: SelectOptionList(
+                        "PrivateMessagingSpecifierName",
+                        selected: $privateMessagingSelection,
+                        table: table
+                    )
+                )
+                SLink(
+                    "ProfilePrivacyChangesSpecifierName".localized(path: path, table: table),
+                    status: "Allow".localized(path: path, table: table),
+                    destination: SelectOptionList(
+                        "ProfilePrivacyChangesSpecifierName",
+                        selected: $profilePrivacySelection,
+                        table: table
+                    )
+                )
+                SLink(
+                    "AvatarNicknameChangesSpecifierName".localized(path: path, table: table),
+                    status: "Allow".localized(path: path, table: table),
+                    destination: SelectOptionList(
+                        "AvatarNicknameChangesSpecifierName",
+                        selected: $avatarNicknameSelection,
+                        table: table
+                    )
+                )
             } header: {
                 Text("GameCenterLabel".localized(path: path, table: table))
             }
