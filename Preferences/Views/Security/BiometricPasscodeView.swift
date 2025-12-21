@@ -117,11 +117,10 @@ struct BiometricPasscodeView: View {
                 
                 if UIDevice.iPhone {
                     Section {
-                        SettingsLink(
+                        SLink(
                             "DTO_STATUS_LABEL_DESCRIPTION".localized(path: path, table: passcode),
-                            status: "DTO_STATUS_LABEL_DESCRIPTION_STATE_OFF".localized(path: path, table: passcode),
-                            destination: EmptyView()
-                        )
+                            status: "DTO_STATUS_LABEL_DESCRIPTION_STATE_OFF".localized(path: path, table: passcode)
+                        ) {}
                         .disabled(true)
                     } footer: {
                         Text(UIDevice.PearlIDCapability
@@ -142,11 +141,10 @@ struct BiometricPasscodeView: View {
             }
             
             Section {
-                SettingsLink(
+                SLink(
                     "PASSCODE_REQ".localized(path: path, table: passcode),
-                    status: "ALWAYS".localized(path: path, table: passcode),
-                    destination: EmptyView()
-                )
+                    status: "ALWAYS".localized(path: path, table: passcode)
+                ) {}
                 .disabled(true)
             }
             

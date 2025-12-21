@@ -80,7 +80,7 @@ struct FocusView: View {
             
             // MARK: Focus Status
             Section {
-                SettingsLink("FOCUS_STATUS".localized(path: path), status: "OFF".localized(path: path), destination: EmptyView())
+                SLink("FOCUS_STATUS".localized(path: path), status: "OFF".localized(path: path)) {}
             } footer: {
                 Text("FOCUS_STATUS_DESCRIPTION".localized(path: path))
             }
