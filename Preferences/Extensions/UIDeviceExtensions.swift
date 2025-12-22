@@ -128,12 +128,6 @@ extension UIDevice {
         }
     }()
     
-    /// Returns a Bool on whether the device has a LiDAR sensor.
-    static let LiDARCapability: Bool = {
-        let incapableDevices: Set<String> = ["iPhone12,3", "iPhone12,5", "iPad8,1", "iPad8,2", "iPad8,3", "iPad8,4", "iPad8,5", "iPad8,6", "iPad8,7", "iPad8,8"]
-        return !incapableDevices.contains(identifier) && UIDevice.ProDevice
-    }()
-    
     /// Returns a Bool on whether the device has Lens Correction available but only for the front camera.
     static let LimitedLensCorrectionCapability: Bool = {
         let capableDevices: Set<String> = ["iPhone17,5", "iPad13,1", "iPad13,2", "iPad13,16", "iPad13,17", "iPad14,1", "iPad14,2", "iPad14,8", "iPad14,9", "iPad14,10", "iPad14,11", "iPad8,1", "iPad8,2", "iPad8,3", "iPad8,4", "iPad16,1", "iPad16,2"]
@@ -252,6 +246,9 @@ extension UIDevice {
     
     /// A Boolean value that indicates whether the device is managed by an organization.
     static let isSupervised = false
+    
+    /// A Boolean value that indicates whether the device has a LiDAR camera.
+    static let LiDARCapability = queryCameraCapability("_backTimeOfFlightSupported")
     
     /// The device model name.
     static let `marketing-name` = MGGetStringAnswer(key: "Z/dqyWS6OZTRy10UcmUAhw")
