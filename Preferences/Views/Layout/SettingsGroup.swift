@@ -179,8 +179,10 @@ struct SettingsGroup: View {
             return false
         case .phone:
             return UIDevice.iPhone
-        case .tablet:
-            return UIDevice.iPad
+        case .enhancedMultitasking:
+            return UIDevice.DeviceSupportsEnhancedMultitasking
+        case .pencil:
+            return UIDevice.DeviceSupportsApplePencil
         case .satellite:
             return false
         case .siri:

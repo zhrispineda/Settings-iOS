@@ -91,7 +91,8 @@ enum Capabilities {
     case hotspot
     case vpn
     case phone
-    case tablet
+    case enhancedMultitasking
+    case pencil
     case satellite
     case siri
     case sounds
@@ -273,7 +274,7 @@ final class PrimarySettingsListModel {
             SettingsItem(
                 type: .pencil,
                 icon: "com.apple.graphic-icon.pencil",
-                capabilities: [.tablet],
+                capabilities: [.pencil],
                 destination: AnyView(ApplePencilView())
             ),
             SettingsItem(
@@ -308,7 +309,7 @@ final class PrimarySettingsListModel {
             SettingsItem(
                 type: .multitaskingAndGestures,
                 icon: "com.apple.graphic-icon.stage-manager",
-                capabilities: [.tablet],
+                capabilities: [.enhancedMultitasking],
                 destination: AnyView(MultitaskingAndGesturesView())
             ),
             SettingsItem(

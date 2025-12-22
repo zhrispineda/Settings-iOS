@@ -44,7 +44,7 @@ struct AboutView: View {
                     )
                 )
                 
-                LabeledContent("ProductModelName".localized(path: path), value: UIDevice.fullModel)
+                LabeledContent("ProductModelName".localized(path: path), value: UIDevice.`marketing-name`)
                     .textSelection(.enabled)
                 LabeledContent(
                     "ProductModel".localized(path: path),
