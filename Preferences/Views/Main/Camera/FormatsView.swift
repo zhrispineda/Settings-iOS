@@ -43,7 +43,7 @@ struct FormatsView: View {
             }
             
             if UIDevice.iPhone {
-                if UIDevice.RingerButtonCapability && UIDevice.ProDevice || UIDevice.fullModel.contains("iPhone 16") {
+                if UIDevice.RingerButtonCapability && UIDevice.ProDevice {
                     Section {
                         SLink(
                             "ENHANCED_RESOLUTION_TITLE".localized(path: path, table: table),

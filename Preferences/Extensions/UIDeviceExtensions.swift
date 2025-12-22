@@ -3,6 +3,7 @@ import FoundationModels
 
 extension UIDevice {
     /// Checks if the device has an accessible MobileGestalt cache.
+    ///
     /// - Returns: The contents of com.apple.MobileGestalt.plist as a dictionary.
     static func checkDevice() -> [String: Any]? {
         let fileURL = URL(fileURLWithPath: "/private/var/containers/Shared/SystemGroup/systemgroup.com.apple.mobilegestaltcache/Library/Caches/com.apple.MobileGestalt.plist")
@@ -60,22 +61,6 @@ extension UIDevice {
         
         return nil
     }()
-    
-    /// Returns the marketing-name value of the device.
-    static let fullModel: String = {
-        if let answer = MGHelper.read(key: "Z/dqyWS6OZTRy10UcmUAhw") { // Get value of marketing-name key
-            return answer
-        }
-        
-        // Fallback to ArtworkTraits key
-        if let mobileGestalt = UIDevice.checkDevice() {
-            let cacheExtra = mobileGestalt["CacheExtra"] as! [String : AnyObject]
-            return cacheExtra["oPeik/9e8lQWMszEjbPzng"]?["ArtworkDeviceProductDescription"] as! String // ArtworkTraits key
-        } else {
-            SettingsLogger.error("Could not get marketing-name and ArtworkTraits key")
-            return "Error"
-        }
-    }()
 
     /// Returns the ProductType value if the device is not a Simulator instance. Otherwise returns `SIMULATOR_MODEL_IDENTIFIER` value.
     static let identifier: String = {
@@ -112,25 +97,6 @@ extension UIDevice {
         return capableDevices.contains(identifier)
     }()
     
-    /// Returns a Bool on whether the device is capable of Stage Manager.
-    static let DeviceSupportsEnhancedMultitasking: Bool = {
-        if let answer = MGHelper.read(key: "qeaj75wk3HF4DwQ8qbIi7g") { // DeviceSupportsEnhancedMultitasking key
-            return Bool(answer)!
-        }
-        
-        return false
-    }()
-    
-    /// Returns a Bool on whether the device is an iPad.
-    static let iPad: Bool = {
-        return identifier.contains("iPad")
-    }()
-    
-    /// Returns a Bool on whether the device is an iPhone.
-    static let iPhone: Bool = {
-        return identifier.contains("iPhone")
-    }()
-    
     /// Returns a Bool on whether the device is capable of Apple Intelligence.
     ///
     /// This uses FoundationModels as an easy public way to check for Apple Intelligence availability.
@@ -143,17 +109,6 @@ extension UIDevice {
         default:
             return false
         }
-    }()
-    
-    /// Returns a Bool on whether the device has a Home Button.
-    static let HomeButtonCapability: Bool = {
-        if let answer = MGHelper.read(key: "JwLB44/jEB8aFDpXQ16Tuw") { // HomeButtonType key
-            return answer == "1" ? true : false // 1 = true; 2 = false
-        }
-        
-        // Fallback
-        let capableDevices: Set<String> = ["iPhone12,8", "iPhone14,6", "iPad11,3", "iPad11,1", "iPad11,2", "iPad11,6", "iPad11,7", "iPad12,1", "iPad12,2"]
-        return capableDevices.contains(identifier)
     }()
     
     /// Returns a Bool on whether the device has a LiDAR sensor.
@@ -182,12 +137,6 @@ extension UIDevice {
         return capableDevices.contains(identifier)
     }()
     
-    /// Returns a Bool on whether the device has a narrow notch. (iPhone 13, 13 mini, 13 Pro, 13 Pro Max, 14, 14 Plus, 16e)
-    static let NarrowNotch = {
-        let capableDevices: Set<String> = ["iPhone14,2", "iPhone14,3", "iPhone14,4", "iPhone14,5", "iPhone14,7", "iPhone14,8", "iPhone17,5"]
-        return capableDevices.contains(identifier)
-    }()
-    
     /// Returns a Bool on whether the device is capable of Action Mode.
     static let ActionModeCapability: Bool = {
         let capableDevices: Set<String> = ["iPhone14,7", "iPhone14,8", "iPhone15,2", "iPhone15,3", "iPhone15,4", "iPhone15,5", "iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4", "iPhone18,1", "iPhone18,2", "iPhone18,3", "iPhone18,4"]
@@ -208,7 +157,7 @@ extension UIDevice {
     
     /// Returns a Bool on whether the device is a Pro model.
     static let ProDevice: Bool = {
-        return fullModel.contains("Pro")
+        return `marketing-name`.contains("Pro")
     }()
     
     /// Returns a Bool on whether the device is capable of Reference Mode.
@@ -269,14 +218,32 @@ extension UIDevice {
     /// A Boolean value that indicates whether the device supports Always On Display.
     static let DeviceSupportsAlwaysOnTime = MGGetBoolAnswer(key: "j8/Omm6s1lsmTDFsXjsBfA")
     
-    /// A Boolean value that indicates whether the device is managed by an organization.
-    static let isSupervised = false
+    /// A Boolean value that indicates whether the device supports Apple Pencil.
+    static let DeviceSupportsApplePencil = MGGetBoolAnswer(key: "yhHcB0iH0d1XzPO/CFd3ow")
+    
+    /// A Boolean value that indicates whether the device supports Stage Manager and Windowed Apps.
+    static let DeviceSupportsEnhancedMultitasking = MGGetBoolAnswer(key: "qeaj75wk3HF4DwQ8qbIi7g")
     
     /// A Boolean value that indicates whether the device supports a Hall effect sensor.
     static let `hall-effect-sensor` = MGGetBoolAnswer(key: "Pop5T2XQdDA60MRyxQJdQ")
     
     /// A Boolean value that indicates whether the device supports HDR image capture.
     static let `hdr-image-capture` = MGGetBoolAnswer(key: "fh6DnnDGDVZ5kZ9nYn/GrQ")
+    
+    /// A Boolean value that indicates whether the device has a Home Button.
+    static let HomeButtonCapability = MGGetStringAnswer(key: "JwLB44/jEB8aFDpXQ16Tuw") == "1"
+    
+    /// A Boolean value that indicates whether the device is an iPad.
+    static let iPad = UIDevice.current.userInterfaceIdiom == .pad
+    
+    /// A Boolean value that indicates whether the device is an iPhone.
+    static let iPhone = UIDevice.current.userInterfaceIdiom == .phone
+    
+    /// A Boolean value that indicates whether the device is managed by an organization.
+    static let isSupervised = false
+    
+    /// The device model name.
+    static let `marketing-name` = MGGetStringAnswer(key: "Z/dqyWS6OZTRy10UcmUAhw")
     
     /// A Boolean value that indicates whether the device supports Face ID.
     static let PearlIDCapability = MGGetBoolAnswer(key: "8olRm6C1xqr7AJGpLRnpSw")
