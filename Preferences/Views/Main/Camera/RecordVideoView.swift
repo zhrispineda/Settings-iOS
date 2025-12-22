@@ -79,7 +79,7 @@ struct RecordVideoView: View {
                 Text("CAM_PAL_VIDEO_FORMATS_FOOTER".localized(path: path, table: table))
             }
             
-            if UIDevice.ActionModeCapability {
+            if UIDevice.queryCameraCapability("_actionModeControlSupported") {
                 Section {
                     Toggle("CAM_ENABLE_VIDEO_STABILIZATION_SWITCH".localized(path: path, table: table), isOn: $enhancedStabilization)
                 } footer: {
