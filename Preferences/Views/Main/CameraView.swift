@@ -271,7 +271,7 @@ struct CameraView: View {
             }
             
             // MARK: - Lens Correction
-            if UIDevice.LensCorrectionCapability {
+            if UIDevice.queryCameraCapability("_contentAwareDistortionCorrectionSupported") {
                 Section {
                     Toggle(
                         "IDC_SWITCH".localized(path: path, table: table),
@@ -279,7 +279,7 @@ struct CameraView: View {
                     )
                 } footer: {
                     Text(
-                        UIDevice.LimitedLensCorrectionCapability
+                        UIDevice.queryCameraCapability("_backSuperWideSupported")
                         ? "IDC_FOOTER_FRONT_ONLY".localized(path: path, table: table)
                         : "IDC_FOOTER".localized(path: path, table: table)
                     )
