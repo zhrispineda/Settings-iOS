@@ -148,12 +148,6 @@ extension UIDevice {
         return !capableDevices.contains(identifier)
     }()
     
-    /// Returns a Bool on whether the device has Macro Lens capability.
-    static let MacroLensCapability: Bool = {
-        let capableDevices: Set<String> = ["iPhone14,2", "iPhone14,3", "iPhone15,2", "iPhone15,3", "iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4", "iPhone18,1", "iPhone18,2", "iPhone18,3"]
-        return capableDevices.contains(identifier)
-    }()
-    
     /// Returns a Bool on whether the device is capable of Action Mode.
     static let ActionModeCapability: Bool = {
         let capableDevices: Set<String> = ["iPhone14,7", "iPhone14,8", "iPhone15,2", "iPhone15,3", "iPhone15,4", "iPhone15,5", "iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4", "iPhone18,1", "iPhone18,2", "iPhone18,3", "iPhone18,4"]
@@ -261,6 +255,9 @@ extension UIDevice {
     
     /// The device model name.
     static let `marketing-name` = MGGetStringAnswer(key: "Z/dqyWS6OZTRy10UcmUAhw")
+    
+    /// Returns a Bool on whether the device supports macro photography.
+    static let MacroLensCapability = queryCameraCapability("_superWideAutoMacroSupported")
     
     /// A Boolean value that indicates whether the device supports Face ID.
     static let PearlIDCapability = MGGetBoolAnswer(key: "8olRm6C1xqr7AJGpLRnpSw")
