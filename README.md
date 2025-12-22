@@ -17,6 +17,7 @@ A **work-in-progress** recreation of the iOS & iPadOS Settings app (Preferences.
 > <details closed>
 >  <summary>List</summary>
 >  - AuthKitUI<br/>
+>  - CameraUI<br/>
 >  - HelpKit<br/>
 >  - MobileGestalt<br/>
 >  - OnBoardingKit<br/>

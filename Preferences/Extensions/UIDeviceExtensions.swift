@@ -38,6 +38,23 @@ extension UIDevice {
         MGHelper.read(key: key) ?? fallback
     }
     
+    // MARK: - Experimental
+    static func queryCameraCapability(_ key: String) -> Bool {
+        let path = "/System/Library/PrivateFrameworks/CameraUI.framework/CameraUI"
+        guard let handle = dlopen(path, RTLD_NOW) else { return false }
+        defer { dlclose(handle) }
+        
+        guard let cls = NSClassFromString("CAMCaptureCapabilities") as? NSObject.Type else { return false }
+        
+        let selector = NSSelectorFromString("capabilities")
+        guard cls.responds(to: selector) else { return false }
+        guard let capabilities = cls.perform(selector)?.takeUnretainedValue() as? NSObject else { return false }
+        
+        guard let value = capabilities.value(forKey: key) as? Bool else { return false }
+        
+        return value
+    }
+    
     /// Returns the device storage capacity as an optional String. (e.g. "32 GB", "512 GB", "2 TB")
     static let storageCapacity: String? = {
         var diskCapacity = ""
