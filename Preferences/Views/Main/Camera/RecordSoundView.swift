@@ -45,7 +45,7 @@ struct RecordSoundView: View {
                 }
             }
             
-            if UIDevice.identifier == "iPhone17,5" || UIDevice.AdvancedPhotographicStylesCapability && selected != "CAM_AUDIO_CONFIGURATION_MONO" {
+            if UIDevice.queryCameraCapability("_windRemovalSupported") && selected != "CAM_AUDIO_CONFIGURATION_MONO" {
                 Section {
                     Toggle("CAM_AUDIO_WIND_REMOVAL_TITLE".localized(path: path, table: table), isOn: $windNoiseReduction)
                 } footer: {
