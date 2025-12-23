@@ -317,13 +317,15 @@ struct CameraView: View {
             }
             
             // MARK: - Lens Cleaning
-            Section {
-                Toggle(
-                    "SMUDGE_DETECTION_SWITCH".localized(path: path, table: table),
-                    isOn: $smudgeDetection
-                )
-            } footer: {
-                Text("SMUDGE_DETECTION_FOOTER".localized(path: path, table: table))
+            if UIDevice.queryCameraCapability("_smudgeDetectionSupported") {
+                Section {
+                    Toggle(
+                        "SMUDGE_DETECTION_SWITCH".localized(path: path, table: table),
+                        isOn: $smudgeDetection
+                    )
+                } footer: {
+                    Text("SMUDGE_DETECTION_FOOTER".localized(path: path, table: table))
+                }
             }
             
             // MARK: - Lock Screen Swipe to Open Camera
