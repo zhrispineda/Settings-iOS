@@ -85,12 +85,6 @@ extension UIDevice {
         return ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] != nil ? ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"]! : answer
     }()
     
-    /// Returns a Bool on whether the device is capable of Always Capture Depth Information capability.
-    static let AlwaysCaptureDepthCapability: Bool = {
-        let capableDevices: Set<String> = ["iPhone15,4", "iPhone15,5", "iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4", "iPhone18,1", "iPhone18,2", "iPhone18,3", "iPhone18,4"]
-        return capableDevices.contains(identifier)
-    }()
-    
     /// Returns a Bool on whether the device is capable of cellular connectivity.
     static let CellularTelephonyCapability: Bool = {
         if let mobileGestalt = UIDevice.checkDevice() {
@@ -133,12 +127,6 @@ extension UIDevice {
         return `marketing-name`.contains("Pro")
     }()
     
-    /// Returns a Bool on whether the device is capable of Reference Mode.
-    static let ReferenceModeCapability: Bool = {
-        let capableDevices: Set<String> = ["iPad13,8", "iPad13,9", "iPad13,10", "iPad13,11", "iPad14,5", "iPad14,6", "iPad16,3", "iPad16,4", "iPad16,5", "iPad16,6", "iPad17,1", "iPad17,2", "iPad17,3", "iPad17,4"]
-        return capableDevices.contains(identifier)
-    }()
-    
     /// Returns a Bool on whether the host is a Simulator instance.
     static let IsSimulator: Bool = {
         if let answer = MGHelper.read(key: "ulMliLomP737aAOJ/w/evA") { // IsSimulator key
@@ -163,6 +151,9 @@ extension UIDevice {
     
     /// A Boolean value that indicates whether the device supports Advanced Photographic Styles.
     static let AdvancedPhotographicStylesCapability = queryCameraCapability("__rearPortraitSemanticStylesSupported")
+    
+    /// Returns a Bool on whether the device is capable of Always Capture Depth Information capability.
+    static let AlwaysCaptureDepthCapability = queryCameraCapability("_continuousZoomSupportedForCinematicMode") || identifier == "iPhone18,4"
     
     /// A Boolean value that indicates whether the device is on an internal install.
     static let `apple-internal-install` = MGGetBoolAnswer(key: "EqrsVvjcYDdxHBiQmGhAWw")
@@ -216,6 +207,9 @@ extension UIDevice {
     
     /// A Boolean value that indicates whether the device supports Face ID.
     static let PearlIDCapability = MGGetBoolAnswer(key: "8olRm6C1xqr7AJGpLRnpSw")
+    
+    /// A Boolean value that indicates whether the device supports Reference Mode.
+    static let ReferenceModeCapability = MGGetBoolAnswer(key: "TqtrpIdOXIIlhOraMmq/pQ") && LiDARCapability
     
     /// A Boolean value that indicates whether the device is a security research device.
     static let ResearchFuse = MGGetBoolAnswer(key: "XYlJKKkj2hztRP1NWWnhlw")
