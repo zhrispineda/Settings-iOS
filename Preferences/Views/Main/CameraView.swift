@@ -43,10 +43,10 @@ struct CameraView: View {
     let privacy = "/System/Library/OnBoardingBundles/com.apple.onboarding.camera.bundle"
     
     init() {
-        if selectedSlomoSetting.isEmpty && !UIDevice.ProDevice || UIDevice.iPad {
-            selectedSlomoSetting = "CAM_RECORD_SLOMO_1080p_240"
-        } else if selectedSlomoSetting.isEmpty && UIDevice.AdvancedPhotographicStylesCapability && UIDevice.ProDevice {
+        if selectedSlomoSetting.isEmpty && UIDevice.AdvancedPhotographicStylesCapability && UIDevice.ProDevice {
             selectedSlomoSetting = "CAM_RECORD_SLOMO_1080p_120"
+        } else if selectedSlomoSetting.isEmpty || UIDevice.iPad {
+            selectedSlomoSetting = "CAM_RECORD_SLOMO_1080p_240"
         }
         
         if selectedSoundSetting.isEmpty && UIDevice.AdvancedPhotographicStylesCapability || UIDevice.identifier == "iPhone17,5" {
@@ -188,7 +188,7 @@ struct CameraView: View {
                     "MIRROR_FRONT_CAPTURES".localized(path: path, table: table),
                     isOn: $mirrorFrontCameraEnabled
                 )
-                if UIDevice.ViewOutsideFrameCapability && UIDevice.iPhone {
+                if !UIDevice.HomeButtonCapability && UIDevice.iPhone {
                     Toggle(
                         "OVER_CAPTURE_VIEW_OUTSIDE_THE_FRAME_SWITCH".localized(path: path, table: table),
                         isOn: $viewOutsideFrameEnabled

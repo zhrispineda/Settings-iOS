@@ -108,12 +108,6 @@ extension UIDevice {
         return capableDevices.contains(identifier)
     }()
     
-    /// Returns a Bool on whether the device is capable of 4K Cinematic Mode.
-    static let HigherResolutionCinematicModeCapability: Bool = {
-        let capableDevices: Set<String> = ["iPhone14,7", "iPhone14,8", "iPhone15,2", "iPhone15,3", "iPhone15,4", "iPhone15,5", "iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4", "iPhone17,5", "iPhone18,1", "iPhone18,2", "iPhone18,3", "iPhone18,4"]
-        return capableDevices.contains(identifier)
-    }()
-    
     /// Returns a Bool on whether the device is capable of Apple Intelligence.
     ///
     /// This uses FoundationModels as an easy public way to check for Apple Intelligence availability.
@@ -165,18 +159,6 @@ extension UIDevice {
         return ProcessInfo().environment["SIMULATOR_MODEL_IDENTIFIER"] != nil && !configuration.forcePhysical
     }()
     
-    /// Returns a Bool on whether the device is capable of HDR capture.
-    static let RearFacingCameraHDRCapability: Bool = {
-        let capableDevices: Set<String> = ["iPhone13,1", "iPhone13,2", "iPhone13,3", "iPhone13,4", "iPhone14,2", "iPhone14,3", "iPhone14,4", "iPhone14,5", "iPhone14,7", "iPhone14,8", "iPhone15,2", "iPhone15,3", "iPhone15,4", "iPhone15,5", "iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4", "iPhone18,1", "iPhone18,2", "iPhone18,3", "iPhone18,4"]
-        return capableDevices.contains(identifier)
-    }()
-    
-    /// Returns a Bool on whether the device is capable of displaying the camera view outside of the frame in the Camera app.
-    static let ViewOutsideFrameCapability: Bool = {
-        let capableDevices: Set<String> = ["iPhone12,8", "iPhone14,6"]
-        return !capableDevices.contains(identifier)
-    }()
-    
     // MARK: - Keys
     
     /// A Boolean value that indicates whether the device supports Advanced Photographic Styles.
@@ -208,6 +190,9 @@ extension UIDevice {
     /// A Boolean value that indicates whether the device supports HDR image capture.
     static let `hdr-image-capture` = MGGetBoolAnswer(key: "fh6DnnDGDVZ5kZ9nYn/GrQ")
     
+    /// A Boolean value that indicates whether the device supports 4K Cinematic Mode.
+    static let HigherResolutionCinematicModeCapability = queryCameraCapability("_actionModeControlSupported") && identifier != "iPhone18,4"
+    
     /// A Boolean value that indicates whether the device has a Home Button.
     static let HomeButtonCapability = MGGetStringAnswer(key: "JwLB44/jEB8aFDpXQ16Tuw") == "1"
     
@@ -237,6 +222,9 @@ extension UIDevice {
     
     /// A Boolean value that indicates whether the device has an Action Button.
     static let RingerButtonCapability = MGGetBoolAnswer(key: "cT44WE1EohiwRzhsZ8xEsw")
+    
+    /// A Boolean value that indicates whether the device is capable of HDR video capture.
+    static let VariableFramerateVideo = queryCameraCapability("_variableFramerateVideoSupported")
     
     // MARK: - Paths
     static let RuntimePath = UIDevice.IsSimulated

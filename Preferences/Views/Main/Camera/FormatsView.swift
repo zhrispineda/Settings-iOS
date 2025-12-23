@@ -60,7 +60,7 @@ struct FormatsView: View {
                     }
                 }
                 
-                if UIDevice.RearFacingCameraHDRCapability {
+                if UIDevice.VariableFramerateVideo {
                     Section {
                         if UIDevice.DeviceSupportsAlwaysOnTime {
                             Toggle("CAM_PRESERVE_PRO_RAW_48MP_SWITCH".localized(path: path, table: table), isOn: $proRawResolutionControl)

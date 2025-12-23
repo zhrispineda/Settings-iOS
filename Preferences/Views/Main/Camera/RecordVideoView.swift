@@ -92,12 +92,14 @@ struct RecordVideoView: View {
                     Text("CAM_ACTION_MODE_LOW_LIGHT_FOOTER".localized(path: path, table: table))
                 }
             }
-            
-            if UIDevice.RearFacingCameraHDRCapability {
+            if UIDevice.VariableFramerateVideo {
                 Section {
                     Toggle("CAM_HDR_VIDEO_TITLE".localized(path: path, table: table), isOn: $hdrVideo)
                 } footer: {
-                    Text(UIDevice.AdvancedPhotographicStylesCapability ? "CAM_HDR_VIDEO_FOOTER_4k120".localized(path: path, table: table) : "CAM_HDR_VIDEO_FOOTER".localized(path: path, table: table))
+                    Text(UIDevice.AdvancedPhotographicStylesCapability
+                         ? "CAM_HDR_VIDEO_FOOTER_4k120".localized(path: path, table: table)
+                         : "CAM_HDR_VIDEO_FOOTER".localized(path: path, table: table)
+                    )
                 }
             }
             
