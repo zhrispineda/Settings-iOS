@@ -171,12 +171,6 @@ extension UIDevice {
         return capableDevices.contains(identifier)
     }()
     
-    /// Returns a Bool on whether the device is capable of Scene Detection.
-    static let SceneDetectionCapability: Bool = {
-        let capableDevices: Set<String> = ["iPhone13,1", "iPhone13,2", "iPhone13,3", "iPhone13,4"]
-        return capableDevices.contains(identifier)
-    }()
-    
     /// Returns a Bool on whether the device is capable of displaying the camera view outside of the frame in the Camera app.
     static let ViewOutsideFrameCapability: Bool = {
         let capableDevices: Set<String> = ["iPhone12,8", "iPhone14,6"]

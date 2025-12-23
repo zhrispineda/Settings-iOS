@@ -218,7 +218,7 @@ struct CameraView: View {
                 } footer: {
                     Text("SEMANTIC_STYLES_ROW_FOOTER".localized(path: path, table: table))
                 }
-            } else if UIDevice.SceneDetectionCapability {
+            } else if UIDevice.queryCameraCapability("semanticDevelopmentSupported") {
                 Section {
                     Toggle("SEM_DEV_SWITCH".localized(path: path, table: table), isOn: $sceneDetectionEnabled)
                 } header: {
