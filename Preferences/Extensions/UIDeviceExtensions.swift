@@ -141,7 +141,7 @@ extension UIDevice {
     static let AdvancedPhotographicStylesCapability = queryCameraCapability("__rearPortraitSemanticStylesSupported")
     
     /// Returns a Bool on whether the device is capable of Always Capture Depth Information capability.
-    static let AlwaysCaptureDepthCapability = queryCameraCapability("_continuousZoomSupportedForCinematicMode") || identifier == "iPhone18,4"
+    static let AlwaysCaptureDepthCapability = queryCameraCapability("_continuousZoomSupportedForCinematicMode")
     
     /// A Boolean value that indicates whether the device is on an internal install.
     static let `apple-internal-install` = MGGetBoolAnswer(key: "EqrsVvjcYDdxHBiQmGhAWw")
@@ -173,7 +173,7 @@ extension UIDevice {
     static let `hdr-image-capture` = MGGetBoolAnswer(key: "fh6DnnDGDVZ5kZ9nYn/GrQ")
     
     /// A Boolean value that indicates whether the device supports 4K Cinematic Mode.
-    static let HigherResolutionCinematicModeCapability = queryCameraCapability("_actionModeControlSupported") && identifier != "iPhone18,4"
+    static let HigherResolutionCinematicModeCapability = queryCameraCapability("_actionModeControlSupported") && queryCameraCapability("continuousZoomSupportedForCinematicMode")
     
     /// A Boolean value that indicates whether the device has a Home Button.
     static let HomeButtonCapability = MGGetStringAnswer(key: "JwLB44/jEB8aFDpXQ16Tuw") == "1"
