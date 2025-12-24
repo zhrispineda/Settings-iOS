@@ -96,12 +96,6 @@ extension UIDevice {
         return UIDevice.iPhone || configuration.forceCellular
     }()
     
-    /// Returns a Bool on whether the device is capable of Cinematic Mode.
-    static let CinematicModeCapability: Bool = {
-        let capableDevices: Set<String> = ["iPhone14,2", "iPhone14,3", "iPhone14,4", "iPhone14,5", "iPhone14,7", "iPhone14,8", "iPhone15,2", "iPhone15,3", "iPhone15,4", "iPhone15,5", "iPhone16,1", "iPhone16,2", "iPhone17,1", "iPhone17,2", "iPhone17,3", "iPhone17,4", "iPhone17,5", "iPhone18,1", "iPhone18,2", "iPhone18,3", "iPhone18,4"]
-        return capableDevices.contains(identifier)
-    }()
-    
     /// Returns a Bool on whether the device is capable of Apple Intelligence.
     ///
     /// This uses FoundationModels as an easy public way to check for Apple Intelligence availability.
@@ -114,12 +108,6 @@ extension UIDevice {
         default:
             return false
         }
-    }()
-    
-    /// Returns a Bool on whether the device is capable of Photographic Styles.
-    static let PhotographicStylesCapability: Bool = {
-        let capableDevices: Set<String> = ["iPhone14,2", "iPhone14,3", "iPhone14,4", "iPhone14,5", "iPhone14,6", "iPhone14,7", "iPhone14,8", "iPhone15,2", "iPhone15,3", "iPhone15,4", "iPhone15,5", "iPhone16,1", "iPhone16,2", "iPhone17,5"]
-        return capableDevices.contains(identifier)
     }()
     
     /// Returns a Bool on whether the device is a Pro model.
@@ -164,6 +152,9 @@ extension UIDevice {
     /// A Boolean value that indicates whether the device has camera restrictions.
     static let cameraRestriction = MGGetBoolAnswer(key: "2pxKjejpRGpWvUE+3yp5mQ")
     
+    /// A Boolean value that indicates whether the device supports Cinematic Mode.
+    static let CinematicModeCapability = !queryCameraCapability("allowPortraitDescriptionOverlay")
+    
     /// A Boolean value that indicates whether the device supports Always On Display.
     static let DeviceSupportsAlwaysOnTime = MGGetBoolAnswer(key: "j8/Omm6s1lsmTDFsXjsBfA")
     
@@ -207,6 +198,9 @@ extension UIDevice {
     
     /// A Boolean value that indicates whether the device supports Face ID.
     static let PearlIDCapability = MGGetBoolAnswer(key: "8olRm6C1xqr7AJGpLRnpSw")
+    
+    /// A Boolean value that indicates whether the device supports Photographic Styles.
+    static let PhotographicStylesCapability = !queryCameraCapability("allowPortraitDescriptionOverlay")
     
     /// A Boolean value that indicates whether the device supports Reference Mode.
     static let ReferenceModeCapability = MGGetBoolAnswer(key: "TqtrpIdOXIIlhOraMmq/pQ") && LiDARCapability
