@@ -38,7 +38,12 @@ extension UIDevice {
         MGHelper.read(key: key) ?? fallback
     }
     
-    // MARK: - Experimental
+    
+    /// Checks keys with CAMCaptureCapabilities (AVFCapture + MobileGestalt) from CameraUI.
+    ///
+    /// - Parameter key: Capability to query.
+    ///
+    /// - Returns: Boolean value. Defaults to false when a key is not accessible.
     static func queryCameraCapability(_ key: String) -> Bool {
         let path = "/System/Library/PrivateFrameworks/CameraUI.framework/CameraUI"
         guard let handle = dlopen(path, RTLD_NOW) else { return false }
