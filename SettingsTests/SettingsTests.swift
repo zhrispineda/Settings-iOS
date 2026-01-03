@@ -7,6 +7,14 @@ import Testing
 @testable import Preferences
 
 struct SettingsTests {
+    enum TestErrors: Error {
+        case castFailed
+        case invalidClass
+        case invalidFramework
+        case invalidSelector
+        case invalidValue
+    }
+    
     // MARK: - MobileGestalt
     
     /// This tests MobileGestalt to check if the keys currently used are still available.
@@ -39,6 +47,54 @@ struct SettingsTests {
     func testMGKey(key: String) async throws {
         let result = MGHelper.read(key: key) ?? ""
         #expect(result.isEmpty == false)
+    }
+    
+    // MARK: - CameraUI Capabilities
+    @Test(arguments: [
+        "smudgeDetectionSupported",
+        "backSuperWideSupported",
+        "contentAwareDistortionCorrectionSupported",
+        "semanticDevelopmentSupported",
+        "windRemovalSupported",
+        "actionModeControlSupported",
+        "variableFramerateVideoSupported",
+        "allowPortraitDescriptionOverlay",
+        "superWideAutoMacroSupported",
+        "backTimeOfFlightSupported",
+        "continuousZoomSupportedForCinematicMode",
+        "HDRSettingAllowed",
+        "allowPortraitDescriptionOverlay",
+        "rearPortraitSemanticStylesSupported"
+    ])
+    func testCameraCapability(capability: String) throws {
+        guard let handle = dlopen("/System/Library/PrivateFrameworks/CameraUI.framework/CameraUI", RTLD_NOW) else {
+            Issue.record("Could not dlopen CameraUI")
+            throw TestErrors.invalidFramework
+        }
+        defer { dlclose(handle) }
+        
+        guard let cls = NSClassFromString("CAMCaptureCapabilities") as? NSObject.Type else {
+            Issue.record("Could not access CAMCaptureCapabilities class")
+            throw TestErrors.invalidClass
+        }
+        
+        let selector = NSSelectorFromString("capabilities")
+        guard cls.responds(to: selector) else {
+            Issue.record("No response for capabilities from CAMCaptureCapabilities")
+            throw TestErrors.invalidSelector
+        }
+        
+        guard let capabilities = cls.perform(selector)?.takeUnretainedValue() as? NSObject else {
+            Issue.record("Could not cast capabilities selector")
+            throw TestErrors.castFailed
+        }
+        
+        guard let result = capabilities.value(forKey: capability) as? Bool else {
+            Issue.record("Capability \(capability) returned nil")
+            throw TestErrors.invalidValue
+        }
+
+        #expect(result == true || result == false)
     }
     
     // MARK: - Accessibility Settings
