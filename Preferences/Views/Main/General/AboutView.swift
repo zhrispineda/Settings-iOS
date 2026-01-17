@@ -63,7 +63,7 @@ struct AboutView: View {
                     wifiAddress = generateRandomAddress()
                     bluetoothAddress = generateRandomAddress()
                     eidValue = getRandomEID()
-                    capacityStorage = UIDevice.storageCapacity ?? getTotalStorage()!
+                    capacityStorage = UIDevice.storageCapacity ?? getTotalStorage()
                 }
             }
             
@@ -198,40 +198,26 @@ struct AboutView: View {
         return randomNumber
     }
     
-    private func getTotalStorage() -> String? {
+    private func getTotalStorage() -> String {
         let fileManager = FileManager.default
-        do {
-            let systemAttributes = try fileManager.attributesOfFileSystem(forPath: NSHomeDirectory() as String)
-            
-            if let totalSize = systemAttributes[.systemSize] as? NSNumber {
-                let bytes = totalSize.int64Value
-                let formatter = ByteCountFormatter()
-                formatter.allowedUnits = [.useGB]
-                formatter.countStyle = .file
-                return formatter.string(fromByteCount: bytes)
-            }
-        } catch {
-            print("Error: \(error.localizedDescription)")
+        guard let systemAttributes = try? fileManager.attributesOfFileSystem(forPath: NSHomeDirectory()),
+              let totalSize = systemAttributes[.systemSize] as? NSNumber else {
+            return "Error"
         }
-        return "Error"
+        
+        let formatter = ByteCountFormatter()
+        formatter.allowedUnits = [.useGB]
+        formatter.countStyle = .file
+        return formatter.string(fromByteCount: totalSize.int64Value)
     }
     
     private func getAvailableStorage() -> String? {
-        let fileManager = FileManager.default
-        do {
-            let systemAttributes = try fileManager.attributesOfFileSystem(forPath: NSHomeDirectory() as String)
-            
-            if let freeSize = systemAttributes[.systemFreeSize] as? NSNumber {
-                let bytes = freeSize.int64Value
-                let formatter = ByteCountFormatter()
-                formatter.allowedUnits = [.useGB]
-                formatter.countStyle = .file
-                return formatter.string(fromByteCount: bytes)
-            }
-        } catch {
-            print("Error: \(error.localizedDescription)")
+        guard let attributes = try? FileManager.default.attributesOfFileSystem(forPath: NSHomeDirectory()),
+              let freeSize = attributes[.systemFreeSize] as? NSNumber else {
+            return nil
         }
-        return nil
+        
+        return ByteCountFormatter.string(fromByteCount: freeSize.int64Value, countStyle: .file)
     }
 }
 
