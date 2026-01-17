@@ -2,17 +2,16 @@
 //  AboutView.swift
 //  Preferences
 //
-//  Settings > General > About
-//
 
 import SwiftUI
 
+/// View for Settings > General > About
 struct AboutView: View {
     @State private var showingModelNumber = false
-    @AppStorage("ModelNumber") private var modelNumber = String()
-    @AppStorage("RegulatoryModelNumber") private var regulatoryModelNumber = String()
+    @AppStorage("ModelNumber") private var modelNumber = ""
+    @AppStorage("RegulatoryModelNumber") private var regulatoryModelNumber = ""
     @State private var serialNumber = ""
-    @State private var availableStorage: String = getAvailableStorage() ?? "Error"
+    @State private var availableStorage = "Error"
     @State private var capacityStorage = ""
     @State private var wifiAddress = ""
     @State private var bluetoothAddress = ""
@@ -122,6 +121,9 @@ struct AboutView: View {
                 NavigationLink("CERT_TRUST_SETTINGS".localized(path: path), destination: ControllerBridgeView("/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework/GeneralSettingsUI", controller: "PSGCertTrustSettings", title: "CERT_TRUST_SETTINGS".localized(path: path)))
             }
         }
+        .task {
+            availableStorage = getAvailableStorage() ?? "Error"
+        }
     }
     
     // Functions
@@ -195,60 +197,48 @@ struct AboutView: View {
         
         return randomNumber
     }
+    
+    private func getTotalStorage() -> String? {
+        let fileManager = FileManager.default
+        do {
+            let systemAttributes = try fileManager.attributesOfFileSystem(forPath: NSHomeDirectory() as String)
+            
+            if let totalSize = systemAttributes[.systemSize] as? NSNumber {
+                let bytes = totalSize.int64Value
+                let formatter = ByteCountFormatter()
+                formatter.allowedUnits = [.useGB]
+                formatter.countStyle = .file
+                return formatter.string(fromByteCount: bytes)
+            }
+        } catch {
+            print("Error: \(error.localizedDescription)")
+        }
+        return "Error"
+    }
+    
+    private func getAvailableStorage() -> String? {
+        let fileManager = FileManager.default
+        do {
+            let systemAttributes = try fileManager.attributesOfFileSystem(forPath: NSHomeDirectory() as String)
+            
+            if let freeSize = systemAttributes[.systemFreeSize] as? NSNumber {
+                let bytes = freeSize.int64Value
+                let formatter = ByteCountFormatter()
+                formatter.allowedUnits = [.useGB]
+                formatter.countStyle = .file
+                return formatter.string(fromByteCount: bytes)
+            }
+        } catch {
+            print("Error: \(error.localizedDescription)")
+        }
+        return nil
+    }
 }
 
-// Generate random address
 func generateRandomAddress() -> String {
-    let characters = "0123456789ABCDEF"
-    var address = String()
-    
-    for i in 0..<6 {
-        if i > 0 {
-            address += ":"
-        }
-        let byte = (0..<2).map { _ in characters.randomElement()! }
-        address += String(byte)
-    }
-    
-    return address
-}
-
-// Get available storage
-func getAvailableStorage() -> String? {
-    let fileManager = FileManager.default
-    do {
-        let systemAttributes = try fileManager.attributesOfFileSystem(forPath: NSHomeDirectory() as String)
-        
-        if let freeSize = systemAttributes[.systemFreeSize] as? NSNumber {
-            let bytes = freeSize.int64Value
-            let formatter = ByteCountFormatter()
-            formatter.allowedUnits = [.useGB]
-            formatter.countStyle = .file
-            return formatter.string(fromByteCount: bytes)
-        }
-    } catch {
-        print("Error: \(error.localizedDescription)")
-    }
-    return nil
-}
-
-// Get total storage
-func getTotalStorage() -> String? {
-    let fileManager = FileManager.default
-    do {
-        let systemAttributes = try fileManager.attributesOfFileSystem(forPath: NSHomeDirectory() as String)
-        
-        if let totalSize = systemAttributes[.systemSize] as? NSNumber {
-            let bytes = totalSize.int64Value
-            let formatter = ByteCountFormatter()
-            formatter.allowedUnits = [.useGB]
-            formatter.countStyle = .file
-            return formatter.string(fromByteCount: bytes)
-        }
-    } catch {
-        print("Error: \(error.localizedDescription)")
-    }
-    return "Error"
+    (0..<6)
+        .map { _ in String(format: "%02X", Int.random(in: 0...255)) }
+        .joined(separator: ":")
 }
 
 #Preview {
