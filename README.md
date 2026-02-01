@@ -28,7 +28,6 @@ A **work-in-progress** recreation of the iOS & iPadOS Settings app (Preferences.
 > **Do not reuse any code from this project that relies on private methods.** Consider publicly supported alternatives instead.
 
 ## Preview
-
 <details open>
 <summary>iOS 26</summary>
   
@@ -56,6 +55,13 @@ Open in Xcode and run with either Simulator or a physical device running iOS or 
 > You may need to change the bundle identifier of the app to be able to sign it with Xcode for use on a physical device.
 
 To switch between Simulator and physical-like layout of Settings, modify the `forcePhysical` variable on line 13 of `PrimarySettingsListModel.swift` under `Preferences/Models`.
+
+## Insight
+While most of the project is based on a simple list design in most views, some elements required thorough research to recreate. Note that these explanations may not accurately reflect the actual implementation of original components. This section reflects my own findings and assumptions into how parts of Settings **might** work.
+<details closed>
+  <summary>Home Screen Quick Actions</summary>
+  Quick actions are not implemented through Info.plist but more likely through UIApplicationDelegate. You can observe this behavior on a fresh install (physical and Simulator), where if Settings has never been launched before, no quick actions are available. After launching the app and backgrounding to the Home Screen, the quick actions are now always populated. When it comes to the icons in UIApplicationShortcutItem, SF Symbols such as the one for Bluetooth are private and do not render by default. In such cases, SBSApplicationShortcutSystemPrivateIcon from SpringBoardServices is used to display private symbols.
+</details>
 
 ## Disclaimers
 - This app is a personal and educational recreation of Apple's apps and designs, made in appreciation of the teams that built and maintain them.
