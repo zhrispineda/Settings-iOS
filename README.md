@@ -58,10 +58,18 @@ To switch between Simulator and physical-like layout of Settings, modify the `fo
 
 ## Insight
 While most of the project is based on a simple list design in most views, some elements required thorough research to recreate. Note that these explanations may not accurately reflect the actual implementation of original components. This section reflects my own findings and assumptions into how parts of Settings **might** work.
-<details closed>
-  <summary>Home Screen Quick Actions</summary>
-  Quick actions are not implemented through Info.plist but more likely through UIApplicationDelegate. You can observe this behavior on a fresh install (physical and Simulator), where if Settings has never been launched before, no quick actions are available. After launching the app and backgrounding to the Home Screen, the quick actions are now always populated. When it comes to the icons in UIApplicationShortcutItem, SF Symbols such as the one for Bluetooth are private and do not render by default. In such cases, SBSApplicationShortcutSystemPrivateIcon from SpringBoardServices is used to display private symbols.
-</details>
+
+### Home Screen Quick Actions
+Quick actions are not implemented through `Info.plist` but more likely through `UIApplicationDelegate`. You can observe this behavior on a fresh install (physical and Simulator), where if Settings has never been launched before, no quick actions are available. After launching the app and backgrounding to the Home Screen, the quick actions are now always populated.
+
+When it comes to the icons in `UIApplicationShortcutItem`, SF Symbols such as the one for Bluetooth are private and do not render by default. In such cases, `SBSApplicationShortcutSystemPrivateIcon` from `SpringBoardServices` is used to display private symbols.
+
+### HelpKit Support Articles
+When tapping some `Learn more…` links such as the one in `Settings > Wi-Fi`, a popover with relevant help information appears. This is from `HelpKit`, and it works with the online User Guide to display information.
+    
+Each article is tagged with a topic ID such as (iPhone) `iphd1cf4268` or (iPad) `ipad2db29c3a`, which is needed for `HLPHelpViewController` to load a topic page using `selectedHelpTopicID`. These identifiers can be found on the online User Guide as part of a page's link. (https://support.apple.com/guide/iphone/connect-to-the-internet-iphd1cf4268/ios >> `iphd1cf4268`)
+
+An invalid or empty topic ID will cause the popover to fall back to the welcome cover page.
 
 ## Disclaimers
 - This app is a personal and educational recreation of Apple's apps and designs, made in appreciation of the teams that built and maintain them.
