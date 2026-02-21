@@ -5,7 +5,7 @@ A **work-in-progress** recreation of the iOS & iPadOS Settings app (Preferences.
 > This project is focused on the latest public releases of iOS, iPadOS, and Xcode. Use an older branch for older versions.
 
 ## Information
-- Based on iOS & iPadOS 26.2.1 (23C71).
+- Based on iOS & iPadOS 26.3 (23D127).
 - All features within the app are only simulations and have no effect on the device outside of the app.
 - Features available within the app vary depending on the device model and its capabilities to maximize accuracy.
 - In some panes, actual preference bundles will be loaded internally using a view controller bridge (functionality and stability may vary).
