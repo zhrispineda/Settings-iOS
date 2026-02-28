@@ -71,6 +71,13 @@ Each article is tagged with a topic ID such as (iPhone) `iphd1cf4268` or (iPad) 
 
 An invalid or empty topic ID will cause the popover to fall back to the welcome cover page.
 
+### Enhanced Alerts & Government Alerts
+In `Settings > Notifications`, the bottom section includes options provided by carrier bundles, an example path includes `/System/Library/CountryBundles/iPhone/UnitedStates.bundle/carrier.plist`.
+
+This carrier property list file includes alert sound names, vibration file names, alert names, emergency numbers, and default toggle options.
+
+The alert audio and vibration files, localization, and related resources can be found in `/System/Library/Carrier Bundles/iPhone/Default.bundle`.
+
 ## Disclaimers
 - This app is a personal and educational recreation of Apple's apps and designs, made in appreciation of the teams that built and maintain them.
 - All assets including icons, images, localization strings, and other resources are not my own in any way.
