@@ -220,7 +220,39 @@ extension UIDevice {
     static let VariableFramerateVideo = queryCameraCapability("_variableFramerateVideoSupported")
     
     // MARK: - Paths
-    static let RuntimePath = UIDevice.IsSimulated
-        ? "/Library/Developer/CoreSimulator/Volumes/iOS_\(UIDevice.buildVersion)/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS \(UIDevice.current.systemVersion).simruntime/Contents/Resources/RuntimeRoot"
-        : ""
+    /// Experimental runtime path for anyAppleOS 27+ simulators
+    private static func newRuntimePath() -> String? {
+        let fm = FileManager.default
+        let cryptexBase = "/private/var/run/com.apple.security.cryptexd/mnt/"
+            
+        guard let mounts = try? fm.contentsOfDirectory(atPath: cryptexBase),
+            let osMount = mounts.first(where: { $0.contains("iPhoneOS") }) else {
+            return nil
+        }
+
+        let runtimesDir = "\(cryptexBase)\(osMount)/Library/Developer/CoreSimulator/Profiles/Runtimes/"
+            
+        guard let runtimes = try? fm.contentsOfDirectory(atPath: runtimesDir),
+        let runtimeBundle = runtimes.first(where: { $0.hasSuffix(".simruntime") }) else {
+            return nil
+        }
+            
+        let fullPath = "\(runtimesDir)\(runtimeBundle)/Contents/Resources/RuntimeRoot"
+        
+        return fm.fileExists(atPath: fullPath) ? fullPath : nil
+    }
+    
+    private static let legacyRuntimePath: String = {
+        "/Library/Developer/CoreSimulator/Volumes/iOS_\(UIDevice.buildVersion)/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS \(UIDevice.current.systemVersion).simruntime/Contents/Resources/RuntimeRoot"
+    }()
+    
+    static let RuntimePath: String = {
+        guard IsSimulated else { return "" }
+            
+        if let newPath = newRuntimePath() {
+            return newPath
+        }
+            
+        return legacyRuntimePath
+    }()
 }
