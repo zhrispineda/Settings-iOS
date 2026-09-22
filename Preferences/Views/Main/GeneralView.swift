@@ -13,36 +13,36 @@ struct GeneralView: View {
     private let table = "General"
     
     var body: some View {
-        CustomList(title: titleVisible ? "General".localized(path: path, table: table) : "") {
+        CustomList(title: titleVisible ? "General".localized(path: path) : "") {
             Section {
                 Placard(
-                    title: "General".localized(path: path, table: table),
+                    title: "General".localized(path: path),
                     icon: "com.apple.graphic-icon.gear",
-                    description: "PLACARD_SUBTITLE".localized(path: path),
+                    description: "Manage your overall setup and preferences for Device, such as software updates, device language, CarPlay, AirDrop, and more.".localized(path: path),
                     isVisible: $titleVisible
                 )
             }
             
             Section {
                 SLink(
-                    "About".localized(path: path, table: table),
+                    "About".localized(path: path),
                     icon: "com.apple.graphic-icon.about-current-device",
                     destination: AboutView()
                 )
                 if !UIDevice.IsSimulator {
                     SLink(
-                        "SOFTWARE_UPDATE".localized(path: path, table: table),
+                        "Software Update".localized(path: path),
                         icon: "com.apple.graphic-icon.software-update",
                         destination: SoftwareUpdateView()
                     )
                     SLink(
-                        "DEVICE_STORAGE".localized(path: path, table: table),
+                        "Device Storage".localized(path: path),
                         icon: "com.apple.graphic-icon.external-drive"
                     ) {
                         ControllerBridgeView(
                             "StorageSettingsUI",
                             controller: "StorageSettingsUIWrapper",
-                            title: "DEVICE_STORAGE".localized(path: path, table: table)
+                            title: "Device Storage".localized(path: path)
                         )
                     }
                 }
@@ -51,7 +51,7 @@ struct GeneralView: View {
             if !UIDevice.IsSimulator {
                 Section {
                     SLink(
-                        "COVERAGE".localized(path: path, table: table),
+                        "AppleCare & Warranty".localized(path: path),
                         icon: "com.apple.graphic-icon.applecare",
                         destination: AppleCareWarrantyView()
                     )
@@ -61,12 +61,12 @@ struct GeneralView: View {
             if !UIDevice.IsSimulator {
                 Section {
                     SLink(
-                        "AIRDROP".localized(path: path, table: table),
+                        "AirDrop".localized(path: path),
                         icon: "com.apple.graphic-icon.airdrop",
                         destination: AirDropView()
                     )
                     SLink(
-                        "CONTINUITY".localized(path: path, table: table),
+                        "AirPlay & Continuity".localized(path: path),
                         icon: "com.apple.graphic-icon.airplay-video"
                     ) {
                         ControllerBridgeView(
@@ -77,7 +77,7 @@ struct GeneralView: View {
                     }
                     if UIDevice.iPhone {
                         SLink(
-                            "PiP".localized(path: path, table: table),
+                            "Picture in Picture".localized(path: path),
                             icon: "com.apple.graphic-icon.picture-in-picture"
                         ) {
                             ControllerBridgeView(
@@ -104,13 +104,13 @@ struct GeneralView: View {
                     }
                     if UIDevice.iPhone {
                         SLink(
-                            "CARPLAY".localized(path: path, table: table),
+                            "CarPlay".localized(path: path),
                             icon: "com.apple.graphic-icon.carplay"
                         ) {
                             ControllerBridgeView(
                                 "CarKitSettings",
                                 controller: "CRSettingsController",
-                                title: "CARPLAY".localized(path: path, table: table)
+                                title: "CarPlay".localized(path: path)
                             )
                         }
                     }
@@ -122,7 +122,7 @@ struct GeneralView: View {
                     showingHomeButtonSheet = true
                 } label: {
                     SLink(
-                        "HOME_BUTTON".localized(path: path, table: table),
+                        "Home Button".localized(path: path),
                         icon: "com.apple.graphic-icon.iphone-home-button"
                     ) {}
                 }
@@ -131,45 +131,45 @@ struct GeneralView: View {
             
             Section {
                 SLink(
-                    "AUTOFILL".localized(path: path, table: table),
+                    "AutoFill & Passwords".localized(path: path),
                     icon: "com.apple.graphic-icon.autofill",
                     destination: AutoFillPasswordsView()
                 )
                 if !UIDevice.IsSimulator {
                     SLink(
-                        "AUTO_CONTENT_DOWNLOAD".localized(path: path, table: table),
+                        "Background App Refresh".localized(path: path),
                         icon: "com.apple.graphic-icon.background-app-refresh",
                         destination: BackgroundAppRefreshView()
                     )
                     SLink(
-                        "DATE_AND_TIME".localized(path: path, table: table),
+                        "Date & Time".localized(path: path),
                         icon: "com.apple.graphic-icon.date-and-time",
                         destination: DateTimeView()
                     )
                 }
                 SLink(
-                    "DICTIONARY".localized(path: path, table: table),
+                    "Dictionary".localized(path: path),
                     icon: "com.apple.graphic-icon.dictionary",
                     destination: DictionaryView()
                 )
                 SLink(
-                    "FONT_SETTING".localized(path: path, table: table),
+                    "Fonts".localized(path: path),
                     icon: "com.apple.graphic-icon.fonts",
                     destination: FontsView()
                 )
                 SLink(
-                    "Keyboard".localized(path: path, table: table),
+                    "Keyboard".localized(path: path),
                     icon: "com.apple.graphic-icon.keyboard",
                     destination: KeyboardView()
                 )
                 SLink(
-                    "INTERNATIONAL".localized(path: path, table: table),
+                    "Language & Region".localized(path: path),
                     icon: "com.apple.graphic-icon.language"
                 ) {
                     ControllerBridgeView(
                         "InternationalSettings",
                         controller: "InternationalSettingsController",
-                        title: "INTERNATIONAL".localized(path: path, table: table)
+                        title: "Language & Region".localized(path: path)
                     )
                 }
             }
@@ -177,7 +177,7 @@ struct GeneralView: View {
             if !UIDevice.IsSimulator {
                 Section {
                     SLink(
-                        "TV_PROVIDER_LABEL".localized(path: path, table: table),
+                        "TV Provider".localized(path: path),
                         icon: "com.apple.graphic-icon.tv-provider",
                         destination: TVProviderView()
                     )
@@ -186,7 +186,7 @@ struct GeneralView: View {
             
             Section {
                 SLink(
-                    "VPN_DEVICE_MANAGEMENT".localized(path: path, table: table),
+                    "VPN & Device Management".localized(path: path),
                     icon: "com.apple.graphic-icon.device-management",
                     destination: VPNDeviceManagementView()
                 )
@@ -195,7 +195,7 @@ struct GeneralView: View {
             if !UIDevice.IsSimulator {
                 Section {
                     SLink(
-                        "LEGAL_AND_REGULATORY_TITLE".localized(path: path, table: table),
+                        "Legal & Regulatory".localized(path: path),
                         icon: "com.apple.graphic-icon.legal-and-regulatory"
                     ) {
                         ControllerBridgeView(
@@ -208,18 +208,18 @@ struct GeneralView: View {
                 
                 Section {
                     SLink(
-                        "TRANSFER_OR_RESET_TITLE".localized(path: path, table: table),
+                        "Transfer or Reset Device".localized(path: path),
                         icon: UIDevice.iPhone ? "com.apple.graphic-icon.transfer-or-reset-iphone" : "com.apple.graphic-icon.transfer-or-reset-ipad") {
                         ControllerBridgeView(
                             "\(path)/GeneralSettingsUI",
                             controller: "PSGTransferOrResetController",
-                            title: "TRANSFER_OR_RESET_TITLE".localized(path: path, table: table)
+                            title: "Transfer or Reset Device".localized(path: path)
                         )
                     }
                 }
                 
                 Section {
-                    Button("SHUTDOWN_LABEL".localized(path: path, table: table)) {}
+                    Button("Shut Down".localized(path: path)) {}
                 }
             }
         }
