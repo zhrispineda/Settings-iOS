@@ -17,17 +17,16 @@ struct AboutView: View {
     @State private var bluetoothAddress = ""
     @State private var eidValue = ""
     @AppStorage("DeviceName") private var deviceName = UIDevice.current.model
-    private let path = "/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework"
-    private let table = "General"
+    private let path = "/System/Library/PreferenceBundles/AboutSettings.bundle"
     
     var body: some View {
-        CustomList(title: "About".localized(path: path, table: table)) {
+        CustomList(title: "About".localized(path: path)) {
             Section {
                 if UIDevice.IsSimulator {
-                    LabeledContent("Device_Name".localized(path: path, table: table), value: UIDevice.current.model)
+                    LabeledContent("Device Name".localized(path: path), value: UIDevice.current.model)
                 } else {
                     SLink(
-                        "Device_Name".localized(path: path, table: table),
+                        "Device_Name".localized(path: path),
                         status: deviceName,
                         destination: NameView()
                     )
@@ -53,7 +52,7 @@ struct AboutView: View {
                 .onTapGesture {
                     showingModelNumber.toggle()
                 }
-                LabeledContent("SerialNumber".localized(path: path), value: serialNumber)
+                LabeledContent("SERIALNUMBER".localized(path: path), value: serialNumber)
             }
             .task {
                 if serialNumber.isEmpty {
@@ -96,23 +95,23 @@ struct AboutView: View {
                             .font(.caption)
                             .lineLimit(1)
                     }
-                    LabeledContent("CARRIER_LOCK".localized(path: path, table: table), value: "CARRIER_LOCK_UNLOCKED".localized(path: path, table: table))
+                    LabeledContent("CARRIER_LOCK".localized(path: path), value: "CARRIER_LOCK_UNLOCKED".localized(path: path))
                     
                     Section {
                         LabeledContent("ModemIMEI".localized(path: path), value: "00 000000 000000 0")
                             .contextMenu {
-                                Button("COPY".localized(path: path, table: table), systemImage: "document.on.document") {}
-                                Button("BARCODE".localized(path: path, table: table), systemImage: "barcode") {}
-                                Button("SHARE_IDENTITY".localized(path: path, table: table), systemImage: "iphone.gen3.crop.circle") {}
+                                Button("COPY".localized(path: path), systemImage: "document.on.document") {}
+                                Button("BARCODE".localized(path: path), systemImage: "barcode") {}
+                                Button("SHARE_IDENTITY".localized(path: path), systemImage: "iphone.gen3.crop.circle") {}
                             }
-                        LabeledContent("ModemIMEI2".localized(path: path, table: table), value: "00 000000 000000 0")
+                        LabeledContent("ModemIMEI2".localized(path: path), value: "00 000000 000000 0")
                             .contextMenu {
-                                Button("COPY".localized(path: path, table: table), systemImage: "document.on.document") {}
-                                Button("BARCODE".localized(path: path, table: table), systemImage: "barcode") {}
-                                Button("SHARE_IDENTITY".localized(path: path, table: table), systemImage: "iphone.gen3.crop.circle") {}
+                                Button("COPY".localized(path: path), systemImage: "document.on.document") {}
+                                Button("BARCODE".localized(path: path), systemImage: "barcode") {}
+                                Button("SHARE_IDENTITY".localized(path: path), systemImage: "iphone.gen3.crop.circle") {}
                             }
                     } header: {
-                        Text("AVAILABLE_SIMS".localized(path: path, table: table))
+                        Text("AVAILABLE_SIMS".localized(path: path))
                     }
                 }
             }
@@ -130,7 +129,9 @@ struct AboutView: View {
     private func getRegionInfo() -> String {
         if let mobileGestalt = UIDevice.checkDevice() {
             let cacheExtra = mobileGestalt["CacheExtra"] as! [String : AnyObject]
-            return cacheExtra["zHeENZu+wbg7PUprwNwBWg"] as! String // RegionInfo check
+            // yK+xavymRGZ3xWc1tb8XDg (RegionInfoFromSysconfig) added as of 26.4
+            // zHeENZu+wbg7PUprwNwBWg (RegionInfo) no longer in CacheExtra
+            return cacheExtra["yK+xavymRGZ3xWc1tb8XDg"] as! String // RegionInfoFromSysconfig
         }
         return "LL/A" // Fallback
     }
