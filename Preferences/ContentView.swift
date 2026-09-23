@@ -59,6 +59,13 @@ struct ContentView: View {
                         }
                     }
                     
+                    NavigationLink {
+                        IndexingView()
+                    } label: {
+                        IconView("com.apple.graphic-icon.indexing-progress")
+                        Text("Optimizing Search and Siri".localized(path: "/System/Library/PreferenceBundles/SpotlightIndexingProgressSettings.bundle"))
+                    }
+                    
                     if !followUpDismissed {
                         SettingsGroup(model.followUpSettings)
                     }

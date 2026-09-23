@@ -24,7 +24,6 @@ struct CustomList<Content: View>: View {
         }
         .navigationTitle(LocalizedStringKey(title))
         .navigationBarTitleDisplayMode(.inline)
-        .padding(.top, topPadding ? 0 : -17.5)
         .padding(.horizontal, UIDevice.iPad ? -4 : 0)
         .navigationDestination(for: String.self) { key in
             RouteRegistry.shared.view(for: key)
