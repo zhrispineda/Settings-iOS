@@ -221,7 +221,7 @@ extension UIDevice {
     
     // MARK: - Paths
     /// Experimental runtime path for anyAppleOS 27+ simulators
-    private static func newRuntimePath() -> String? {
+    static func newRuntimePath() -> String? {
         let fm = FileManager.default
         let cryptexBase = "/private/var/run/com.apple.security.cryptexd/mnt/"
             

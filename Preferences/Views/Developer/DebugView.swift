@@ -87,8 +87,8 @@ struct DebugView: View {
                 }
             }
             
-            ToolbarItem(placement: .topBarTrailing) {
-                Button("Dismiss") {
+            ToolbarItem(placement: .topBarLeading) {
+                Button(role: .close) {
                     dismiss()
                 }
             }
@@ -99,7 +99,7 @@ struct DebugView: View {
         var bundlePath = ""
 
         if UIDevice.IsSimulated {
-            bundlePath = "/Library/Developer/CoreSimulator/Volumes/iOS_\(UIDevice.buildVersion)/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS \(UIDevice.current.systemVersion).simruntime/Contents/Resources/RuntimeRoot\(path)"
+            bundlePath = "\(UIDevice.RuntimePath)\(path)"
         } else {
             bundlePath = path
         }

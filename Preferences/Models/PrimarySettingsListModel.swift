@@ -278,9 +278,9 @@ final class PrimarySettingsListModel {
                 destination: AnyView(ApplePencilView())
             ),
             SettingsItem(
-                customTitle: "Apple Intelligence",
+                customTitle: "Siri",
                 type: .siri,
-                icon: "com.apple.graphic-icon.intelligence",
+                icon: "com.apple.application-icon.siri-gen2",
                 capabilities: [.appleIntelligence],
                 destination: AnyView(SiriView())
             ),

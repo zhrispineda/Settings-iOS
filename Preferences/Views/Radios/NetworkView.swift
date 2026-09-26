@@ -19,8 +19,15 @@ struct NetworkView: View {
     @State private var showingOtherNetwork = false
     @State private var timer: Timer? = nil
     @State private var currentTopicID = ""
+    @State private var connectivityAssist = true
     private let path = "/System/Library/PrivateFrameworks/WiFiKitUI.framework"
+    private let kitPath = "/System/Library/PrivateFrameworks/WiFiSettingsKit.framework"
     private let table = "WiFiKitUILocalizableStrings"
+    private var formattedDate: String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMM d, yyyy 'at' h:mm a"
+        return formatter.string(from: Date())
+    }
     
     var body: some View {
         CustomList(
@@ -115,6 +122,27 @@ struct NetworkView: View {
                     .onDisappear {
                         timer?.invalidate()
                         timer = nil
+                    }
+
+                    // Connectivity Assist (iOS 27.0+)
+                    if UIDevice.CellularTelephonyCapability {
+                        Section {
+                            Toggle(isOn: .constant(true)) {
+                                Text("Connectivity Assist".localized(path: kitPath))
+                                Text("0 B")
+                            }
+                            Button("Reset Data Usage".localized(path: kitPath)) {}
+                        } footer: {
+                            VStack(alignment: .leading) {
+                                Text("""
+                                    Use cellular data in addition to Wi‑Fi for a more reliable internet connection.
+
+                                    %@ keeps track of how much cellular data is used for Connectivity Assist. You can view your overall cellular data usage in Cellular settings.
+                                    """.localized(path: kitPath, UIDevice.current.model))
+                                Text("")
+                                Text("Last Reset: %@".localized(path: kitPath, formattedDate))
+                            }
+                        }
                     }
                     
                     // Ask to Join
