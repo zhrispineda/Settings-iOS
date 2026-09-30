@@ -35,6 +35,15 @@ struct IndexingView: View {
                 }
             }
         }
+        .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                if !UIDevice.`apple-internal-install` {
+                    Button {} label: {
+                        Image(_internalSystemName: "radar")
+                    }
+                }
+            }
+        }
     }
 }
 

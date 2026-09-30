@@ -116,6 +116,7 @@
 		83937B8A2D82315A0049AB0E /* SettingsTests.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = 83937B892D82315A0049AB0E /* SettingsTests.xctestplan */; };
 		8397F9E92CDF20E9004DFE2F /* BooksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397F9E82CDF20E9004DFE2F /* BooksView.swift */; };
 		839C2BC42EE9FCAE002E8389 /* OBWelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839C2BC32EE9FCAE002E8389 /* OBWelcomeController.swift */; };
+		839E3B2B306D9D3B008AB20A /* DebugOverridesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839E3B2A306D9D3B008AB20A /* DebugOverridesView.swift */; };
 		83A36C8D2DB95D7800378E45 /* ConfigureDNSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A36C8C2DB95D7800378E45 /* ConfigureDNSView.swift */; };
 		83A36C8F2DB96E4600378E45 /* ConfigureProxyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A36C8E2DB96E4600378E45 /* ConfigureProxyView.swift */; };
 		83A3E6952CAC3091006F4643 /* FocalLengthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A3E6942CAC3091006F4643 /* FocalLengthView.swift */; };
@@ -316,6 +317,7 @@
 		83937B912D8235310049AB0E /* SettingsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SettingsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8397F9E82CDF20E9004DFE2F /* BooksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksView.swift; sourceTree = "<group>"; };
 		839C2BC32EE9FCAE002E8389 /* OBWelcomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBWelcomeController.swift; sourceTree = "<group>"; };
+		839E3B2A306D9D3B008AB20A /* DebugOverridesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugOverridesView.swift; sourceTree = "<group>"; };
 		83A36C8C2DB95D7800378E45 /* ConfigureDNSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureDNSView.swift; sourceTree = "<group>"; };
 		83A36C8E2DB96E4600378E45 /* ConfigureProxyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureProxyView.swift; sourceTree = "<group>"; };
 		83A3E6942CAC3091006F4643 /* FocalLengthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocalLengthView.swift; sourceTree = "<group>"; };
@@ -432,6 +434,7 @@
 			children = (
 				8302AD262ECD4052001BC32D /* DebugSearchView.swift */,
 				8302AD282ECD42A5001BC32D /* DebugSettingsView.swift */,
+				839E3B2A306D9D3B008AB20A /* DebugOverridesView.swift */,
 			);
 			path = Debug;
 			sourceTree = "<group>";
@@ -1196,6 +1199,7 @@
 				833C6EB22C20CE7800A8D91C /* SearchDetailView.swift in Sources */,
 				8329284B2B8578F4006611CF /* AppPermissionsView.swift in Sources */,
 				83815CED2B768E8300F53A0F /* MapsView.swift in Sources */,
+				839E3B2B306D9D3B008AB20A /* DebugOverridesView.swift in Sources */,
 				836610662DAC67CD0040E05C /* SettingsLogger.swift in Sources */,
 				8372142D2D91C5E30027C51D /* UIWindowExtensions.swift in Sources */,
 				83AE01DD2D65637C00724A34 /* AppleAccountSection.swift in Sources */,

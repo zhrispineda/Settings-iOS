@@ -8,6 +8,21 @@ import SwiftUI
 struct DebugView: View {
     @Environment(PrimarySettingsListModel.self) private var model
     @Environment(\.dismiss) private var dismiss
+    @State private var presentationItem = "applicationDebugSettings"
+    private let presentationItems = [
+        "None",
+        "securityResearchDevice",
+        "supervisedDevice",
+        "primaryAppleAccountSignIn",
+        "applicationDebugSettings",
+        "appleAccountNetworkReachabilityAlert",
+        "followUpNetworkReachabilityAlert",
+        "followUpModal",
+        "engagementLink",
+        "finishSetup",
+        "protoAccountSignIn",
+        "tapToRadarAlert"
+    ]
     #if DEBUG
     let debugBuild = true
     #else
@@ -16,65 +31,75 @@ struct DebugView: View {
     
     var body: some View {
         List {
-            Section {
-                Button("Reset app navigation state.") {
-                    model.path = []
-                    if UIDevice.iPad {
-                        model.selection = model.mainSettings.first
-                    }
-                    dismiss()
+            Section("Device Quick Actions") {
+                Picker("", selection: .constant(0)) {
+                    Button("", systemImage: "power") {}.labelStyle(.iconOnly)
+                    Button("", systemImage: "restart") {}.labelStyle(.iconOnly)
+                    Button("", systemImage: "arrow.trianglehead.counterclockwise.rotate.90") {}.labelStyle(.iconOnly)
                 }
-                if model.path.count > 0 {
-                    Button("\(model.path.count) items on path") {
-                        let _ = model.path.popLast()
+                .pickerStyle(.segmented)
+            }
+            .listRowBackground(Color.clear)
+            
+            Section("Navigation") {
+                NavigationLink("Default Settings App") {
+                    CustomList(title: "Default Settings App") {
+                        Picker("", selection: .constant(1)) {
+                            Text("Settings").tag(1)
+                            Text("Old Settings").tag(2)
+                        }
+                        .pickerStyle(.inline)
+                    }
+                }
+                NavigationLink("Navigation State") {
+                    CustomList(title: "Navigation State") {
+                        Section("Actions") {
+                            Button("Reset to Default Navigation State") {
+                                model.path = []
+                                if UIDevice.iPad {
+                                    model.selection = model.mainSettings.first
+                                }
+                                dismiss()
+                            }
+                        }
+                        
+                        Section {
+                            Picker("Presented Item", selection: $presentationItem) {
+                                ForEach(presentationItems, id: \.self) {
+                                    Text($0)
+                                }
+                            }
+                            .onChange(of: presentationItem) {
+                                dismiss()
+                            }
+                        } header: {
+                            Text("Presentations")
+                        } footer: {
+                            Text("Drives navigationSplitView.presentedItem. Cases with associated values use dummy data.")
+                        }
+                        
+                        Section("Current State") {
+                            LabeledContent("Sidebar Selection", value: "None")
+                            LabeledContent("Navigation Path Item Count", value: "\(model.path.count)")
+                        }
                     }
                 }
             }
-
-            Section {
+            
+            Section("Application/Framework Debugging") {
+                NavigationLink("Sidebar Content Overrides", destination: DebugOverridesView().environment(model))
+                NavigationLink("Preferences Debug", destination: DebugSettingsView().environment(model))
                 NavigationLink("Search", destination: DebugSearchView())
-                NavigationLink("Debug Settings", destination: DebugSettingsView().environment(model))
             }
             
-            Section("Info") {
-                LabeledContent("Version", value: getBundleVersion())
-                LabeledContent("Compiled With Debug", value: debugBuild ? "Yes" : "No")
-            }
-            
-            Section("Bundles") {
+            Section("Application Info") {
                 LabeledContent(
-                    "GeneralSettingsUI",
-                    value: getBundleVersion(
-                        at: "/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework"
-                    )
-                )
-                LabeledContent(
-                    "LegalAndRegulatorySettings",
-                    value: getBundleVersion(at: "/System/Library/PreferenceBundles/LegalAndRegulatorySettings.bundle")
-                )
-                LabeledContent(
-                    "Preferences Framework",
-                    value: getBundleVersion(at: "/System/Library/PrivateFrameworks/Preferences.framework")
-                )
-                LabeledContent(
-                    "PrivacySettingsUI",
-                    value: getBundleVersion(at: "/System/Library/PrivateFrameworks/Settings/PrivacySettingsUI.framework")
-                )
-                LabeledContent(
-                    "Settings",
+                    "Version",
                     value: getBundleVersion(at: "/System/Library/PrivateFrameworks/Settings.framework")
                 )
                 LabeledContent(
-                    "SettingsFoundation",
-                    value: getBundleVersion(at: "/System/Library/PrivateFrameworks/SettingsFoundation.framework")
-                )
-                LabeledContent(
-                    "SettingsUIKitPrivate",
-                    value: getBundleVersion(at: "/System/Library/PrivateFrameworks/Settings/SettingsUIKitPrivate.framework")
-                )
-                LabeledContent(
-                    "SoundsAndHapticsSettings",
-                    value: getBundleVersion(at: "/System/Library/PrivateFrameworks/Settings/SoundsAndHapticsSettings.framework")
+                    "Compiled With Debug",
+                    value: debugBuild ? "Yes" : "No"
                 )
             }
         }

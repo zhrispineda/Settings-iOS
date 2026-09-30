@@ -280,7 +280,7 @@ final class PrimarySettingsListModel {
             SettingsItem(
                 customTitle: "Siri",
                 type: .siri,
-                icon: "com.apple.application-icon.siri-gen2",
+                icon: "com.apple.application-icon.siri-intelligence",
                 capabilities: [.appleIntelligence],
                 destination: AnyView(SiriView())
             ),
