@@ -62,6 +62,8 @@ struct SelectOptionList: View {
                     default:
                         EmptyView()
                     }
+                case "kWFLocAutoInstantHotspotTitle":
+                    Text("kWFLocAutoInstantHotspotFooter".localized(path: path, table: table))
                 case "ConnectWithFriendsSpecifierName":
                     Text("\("ConnectWithFriendsExplanatoryFooterText".localized(path: path, table: table))\n\n\("ConnectWithFriendsContinuedExplanatoryText".localized(path: path, table: table))")
                 case "PrivateMessagingSpecifierName":

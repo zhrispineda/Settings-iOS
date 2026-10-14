@@ -7,11 +7,24 @@ import SwiftUI
 
 /// View for Settings > General > Software Update
 struct SoftwareUpdateView: View {
+    @AppStorage("AutomaticUpdatesEnabled") private var automaticUpdatesEnabled = true
+    @AppStorage("AutomaticUpdatesAutoDownload") private var autoDownload = true
+    @AppStorage("AutomaticUpdatesAutoInstallSysFiles") private var autoInstallSysFiles = true
     @State private var checkingForUpdates = false
     private let path = "/System/Library/PrivateFrameworks/SoftwareUpdateSettings.framework"
     private let general = "/System/Library/PrivateFrameworks/Settings/GeneralSettingsUI.framework"
     private let update = "/System/Library/PrivateFrameworks/SoftwareUpdateUIKit.framework"
     private let table = "Software Update"
+    
+    private var automaticUpdatesStatus: String {
+        if automaticUpdatesEnabled {
+            "ON"
+        } else if autoDownload || autoInstallSysFiles {
+            "DOWNLOAD_ONLY"
+        } else {
+            "OFF"
+        }
+    }
 
     var body: some View {
         GeometryReader { geometry in
@@ -19,7 +32,7 @@ struct SoftwareUpdateView: View {
                 Section {
                     SLink(
                         "AUTOMATIC_UPDATES".localized(path: path, table: table),
-                        status: "ON".localized(path: path, table: table),
+                        status: automaticUpdatesStatus.localized(path: path, table: table),
                         destination: AutomaticUpdateView()
                     )
                 }
@@ -112,11 +125,11 @@ struct SoftwareUpdateView: View {
             checkForUpdates()
         }
     }
-    
+
     private func checkForUpdates() {
         Task {
             checkingForUpdates = true
-            try await Task.sleep(for: .seconds(Double.random(in: 0.1...3.0)))
+            try? await Task.sleep(for: .seconds(Double.random(in: 0.1...3.0)))
             withAnimation {
                 checkingForUpdates.toggle()
             }

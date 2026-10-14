@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ScreenCaptureView: View {
     @State private var fullScreenPreviews = false
-    @State private var autoVisualLookup = true
     @State private var carPlayScreenshots = false
     @State private var format = "SCREEN_CAPTURE_SDR_ITEM"
     let options = ["SCREEN_CAPTURE_HDR_ITEM", "SCREEN_CAPTURE_SDR_ITEM"]
@@ -24,12 +23,6 @@ struct ScreenCaptureView: View {
             }
             
             if UIDevice.iPhone {
-                Section {
-                    Toggle("ENABLE_VI_LABEL".localized(path: path), isOn: $autoVisualLookup)
-                } footer: {
-                    Text("ENABLE_VI_FOOTER_TEXT".localized(path: path))
-                }
-                
                 Section {
                     Toggle("ENABLE_CARPLAYSCREENSHOTS_TEXT".localized(path: path), isOn: $carPlayScreenshots)
                 } footer: {

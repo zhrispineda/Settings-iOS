@@ -47,18 +47,15 @@ struct BluetoothView: View {
     var body: some View {
         CustomList(title: titleVisible ? "BLUETOOTH".localized(path: path, table: table) : "") {
             Section {
-                Button {} label: {
-                    Placard(
-                        title: "BLUETOOTH".localized(path: path, table: table),
-                        icon: "com.apple.graphic-icon.bluetooth",
-                        description: """
-                                    \("BLUETOOTHPLACARDINFO".localized(path: path, table: table))
-                                    [\("LEARN_MORE".localized(path: path, table: table))](pref://helpkit)
-                                    """,
-                        isVisible: $titleVisible
-                    )
-                }
-                .foregroundStyle(.primary)
+                Placard(
+                    title: "BLUETOOTH".localized(path: path, table: table),
+                    icon: "com.apple.graphic-icon.bluetooth",
+                    description: """
+                                \("BLUETOOTHPLACARDINFO".localized(path: path, table: table))
+                                [\("LEARN_MORE".localized(path: path, table: table))](pref://helpkit)
+                                """,
+                    isVisible: $titleVisible
+                )
                 
                 Toggle("BLUETOOTH".localized(path: path, table: table), isOn: $bluetoothEnabled.animation())
             } footer: {

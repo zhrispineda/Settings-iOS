@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct AutomaticUpdateView: View {
-    @State private var automaticUpdatesEnabled = true
-    @State private var autoDownload = true
-    @State private var autoInstallSysFiles = true
+    @AppStorage("AutomaticUpdatesEnabled") private var automaticUpdatesEnabled = true
+    @AppStorage("AutomaticUpdatesAutoDownload") private var autoDownload = true
+    @AppStorage("AutomaticUpdatesAutoInstallSysFiles") private var autoInstallSysFiles = true
     let path = "/System/Library/PrivateFrameworks/SoftwareUpdateSettings.framework"
     let table = "Software Update"
     
