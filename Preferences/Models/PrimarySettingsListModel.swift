@@ -49,6 +49,7 @@ enum PrimarySettingsListItemIdentifier: String {
     case screenTime = "Screen Time"
     case general = "General"
     case controlCenter = "Control Center"
+    case appearance = "Appearance"
     case actionButton = "Action Button"
     case displayAndBrightness = "Display & Brightness"
     case homeScreen = "Home Screen & App Library"
@@ -270,6 +271,11 @@ final class PrimarySettingsListModel {
                 icon: "com.apple.graphic-icon.iphone-action-button",
                 capabilities: [.actionButton],
                 destination: AnyView(ActionButtonView())
+            ),
+            SettingsItem(
+                type: .appearance,
+                icon: "com.apple.graphic-icon.dark-mode",
+                destination: AnyView(AppearanceView())
             ),
             SettingsItem(
                 type: .pencil,

@@ -75,6 +75,7 @@
 		836814452E5E649100F0E14D /* ScreenCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836814442E5E649100F0E14D /* ScreenCaptureView.swift */; };
 		836A7E892B981D8E00FA3223 /* AppleAccountLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836A7E882B981D8E00FA3223 /* AppleAccountLoginView.swift */; };
 		836A7E8B2B995E4000FA3223 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836A7E8A2B995E4000FA3223 /* ForgotPasswordView.swift */; };
+		836BE3A8307F2CA400F319DF /* AppearanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836BE3A7307F2CA400F319DF /* AppearanceView.swift */; };
 		8372142D2D91C5E30027C51D /* UIWindowExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8372142C2D91C5E30027C51D /* UIWindowExtensions.swift */; };
 		8373E7322B910AF8004285EA /* AppWebsiteActivitySheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8373E7312B910AF8004285EA /* AppWebsiteActivitySheetView.swift */; };
 		8373E7342B9162BD004285EA /* ScreenDistanceSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8373E7332B9162BD004285EA /* ScreenDistanceSheetView.swift */; };
@@ -273,6 +274,7 @@
 		836814442E5E649100F0E14D /* ScreenCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenCaptureView.swift; sourceTree = "<group>"; };
 		836A7E882B981D8E00FA3223 /* AppleAccountLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleAccountLoginView.swift; sourceTree = "<group>"; };
 		836A7E8A2B995E4000FA3223 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		836BE3A7307F2CA400F319DF /* AppearanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceView.swift; sourceTree = "<group>"; };
 		8372142C2D91C5E30027C51D /* UIWindowExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindowExtensions.swift; sourceTree = "<group>"; };
 		8373E7312B910AF8004285EA /* AppWebsiteActivitySheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWebsiteActivitySheetView.swift; sourceTree = "<group>"; };
 		8373E7332B9162BD004285EA /* ScreenDistanceSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenDistanceSheetView.swift; sourceTree = "<group>"; };
@@ -868,6 +870,7 @@
 				838C23222B746CF90053D4C5 /* GeneralView.swift */,
 				83815CDE2B768C2200F53A0F /* AccessibilityView.swift */,
 				833768FC2ED137E20002822F /* ActionButtonView.swift */,
+				836BE3A7307F2CA400F319DF /* AppearanceView.swift */,
 				8349E22B2C7514F6007416C5 /* ApplePencilView.swift */,
 				833C6EAB2C208A3900A8D91C /* CameraView.swift */,
 				833438CB2EC507FB0013FF3A /* ControlCenterView.swift */,
@@ -1086,6 +1089,7 @@
 				83F3F7C12ED00C4600CC1444 /* ContinuityDebuggingView.swift in Sources */,
 				83076D042C7E754600BFFAFE /* BackgroundAppRefreshView.swift in Sources */,
 				838C23262B746D290053D4C5 /* PrimarySettingsListModel.swift in Sources */,
+				836BE3A8307F2CA400F319DF /* AppearanceView.swift in Sources */,
 				8373E7322B910AF8004285EA /* AppWebsiteActivitySheetView.swift in Sources */,
 				8311D3B22EA716E300915C49 /* InternalSettingsView.swift in Sources */,
 				831C80412CA4998500306574 /* RecordSlomoView.swift in Sources */,

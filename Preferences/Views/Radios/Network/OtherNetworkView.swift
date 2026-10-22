@@ -27,11 +27,9 @@ struct OtherNetworkView: View {
                     .font(.system(size: 64))
                     .foregroundStyle(.blue.gradient)
                     .symbolEffect(.drawOn, isActive: animatingSymbol)
-                    .onAppear {
-                        Task {
-                            try await Task.sleep(for: .seconds(0.5))
-                            animatingSymbol = false
-                        }
+                    .task {
+                        try? await Task.sleep(for: .seconds(0.5))
+                        animatingSymbol = false
                     }
                     .frame(maxWidth: .infinity, alignment: .center)
                     .listRowBackground(Color.clear)

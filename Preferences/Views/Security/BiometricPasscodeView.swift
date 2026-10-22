@@ -49,8 +49,8 @@ struct BiometricPasscodeView: View {
     }
     private var description: String {
         UIDevice.PearlIDCapability
-            ? "PASSCODE_PLACARD_SUBTITLE_FACE_ID".localized(path: path, table: passcode).replacing("helpkit://open", with: "pref://helpkit")
-            : "PASSCODE_PLACARD_SUBTITLE_TOUCH_ID".localized(path: path, table: passcode).replacing("helpkit://open", with: "pref://helpkit")
+            ? "PLACARD_SUBTITLE_FACEID".localized(path: path, table: passcode).replacing("helpkit://open", with: "pref://helpkit")
+            : "PLACARD_SUBTITLE_TOUCHID".localized(path: path, table: passcode).replacing("helpkit://open", with: "pref://helpkit")
     }
     private var footer: String {
         UIDevice.PearlIDCapability
